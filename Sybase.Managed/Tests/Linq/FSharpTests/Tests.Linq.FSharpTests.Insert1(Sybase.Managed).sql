@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 DELETE FROM [Child]
 FROM
 	[Child] [c_1]
@@ -24,7 +23,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT
 	COUNT(*)
 FROM
@@ -33,7 +31,6 @@ WHERE
 	[c_1].[ChildID] = 1001
 
 -- Sybase.Managed Sybase
-
 DELETE FROM [Child]
 FROM
 	[Child] [c_1]

@@ -1,15 +1,12 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 DELETE FROM
 	"Parent" t1
 
 -- Oracle.11.Managed Oracle11
-
 DELETE FROM
 	"Child" t1
 
 -- Oracle.11.Managed Oracle11
-
 DELETE FROM
 	"GrandChild" t1
 
@@ -87,7 +84,6 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 MERGE INTO "GrandChild" Target
 USING (
 	SELECT
@@ -115,7 +111,6 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."GrandChildID",
 	t1."ParentID",

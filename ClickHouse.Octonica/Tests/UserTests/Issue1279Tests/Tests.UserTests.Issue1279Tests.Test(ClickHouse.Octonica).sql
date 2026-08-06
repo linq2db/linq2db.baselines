@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 INSERT INTO Issue1279Table
 (
 	CharFld
@@ -10,7 +9,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.CharFld

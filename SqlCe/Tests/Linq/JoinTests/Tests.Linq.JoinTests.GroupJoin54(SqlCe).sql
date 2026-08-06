@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[t2].[p1],
 	[t1].[ParentID],

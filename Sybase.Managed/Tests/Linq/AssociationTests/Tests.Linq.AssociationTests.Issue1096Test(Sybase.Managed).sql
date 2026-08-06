@@ -41,7 +41,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT DISTINCT
 	[t].[Pk],
 	[t].[Id],

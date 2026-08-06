@@ -3,7 +3,7 @@ DECLARE @p Int32
 SET     @p = 1
 
 SELECT
-	p."PersonID" as ID,
+	p."PersonID",
 	p."FirstName",
 	p."MiddleName",
 	p."LastName",

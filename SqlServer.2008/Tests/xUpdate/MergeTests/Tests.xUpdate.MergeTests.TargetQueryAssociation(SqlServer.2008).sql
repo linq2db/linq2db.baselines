@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008
-
 MERGE INTO [Person] [Target]
 USING (
 	SELECT
@@ -26,7 +25,6 @@ WHEN NOT MATCHED BY SOURCE AND (
 ;
 
 -- SqlServer.2008
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

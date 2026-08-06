@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	MAX([id].[ChildID])
 FROM

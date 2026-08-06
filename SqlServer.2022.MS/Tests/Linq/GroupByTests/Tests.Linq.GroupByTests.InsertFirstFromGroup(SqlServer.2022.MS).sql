@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
-
 CREATE TABLE [temp_table_1]
 (
 	[ID]    Int            NOT NULL,
@@ -11,7 +10,6 @@ CREATE TABLE [temp_table_1]
 INSERT BULK [temp_table_1](ID, Value)
 
 -- SqlServer.2022.MS SqlServer.2022
-
 CREATE TABLE [temp_table_2]
 (
 	[Value] NVarChar(50) NOT NULL,
@@ -20,7 +18,6 @@ CREATE TABLE [temp_table_2]
 )
 
 -- SqlServer.2022.MS SqlServer.2022
-
 INSERT INTO [temp_table_2]
 (
 	[Value]
@@ -39,10 +36,8 @@ FROM
 		) [t1]
 
 -- SqlServer.2022.MS SqlServer.2022
-
 DROP TABLE IF EXISTS [temp_table_2]
 
 -- SqlServer.2022.MS SqlServer.2022
-
 DROP TABLE IF EXISTS [temp_table_1]
 

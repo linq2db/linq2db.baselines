@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	g_1.Id,
 	SUM(Coalesce(CAST(a_Values."Value" AS INTEGER), 0))
@@ -10,7 +9,6 @@ GROUP BY
 	g_1.Id
 
 -- DuckDB
-
 SELECT
 	m_1.Id,
 	d.Id,
@@ -22,7 +20,6 @@ FROM
 		INNER JOIN ItemValue d ON m_1.Id = d.ItemId
 
 -- DuckDB
-
 SELECT
 	t1.Id,
 	t1.Name

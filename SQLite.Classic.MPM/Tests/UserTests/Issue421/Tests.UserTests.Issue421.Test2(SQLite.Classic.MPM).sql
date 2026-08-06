@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 INSERT INTO [BlobClass]
 (
 	[Id],
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[BlobValue]
@@ -23,7 +21,6 @@ WHERE
 LIMIT 1
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 UPDATE
 	[BlobClass]
 SET
@@ -32,7 +29,6 @@ WHERE
 	[BlobClass].[Id] = 1
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[BlobValue]

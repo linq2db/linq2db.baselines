@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	p.FirstName,
 	p.PersonID,
@@ -13,7 +12,6 @@ FROM
 		) n("item") ON p.LastName = n."item"
 
 -- DuckDB
-
 SELECT
 	p.FirstName,
 	p.PersonID,

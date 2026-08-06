@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name Text(4) -- String
@@ -17,8 +17,7 @@ VALUES
 ON CONFLICT ("Id") DO UPDATE SET
 	"Name" = :Name
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t."Id",
 	t."Name",
@@ -29,7 +28,7 @@ WHERE
 	t."Id" = 1
 LIMIT 1
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name Text(4) -- String
@@ -48,8 +47,7 @@ VALUES
 ON CONFLICT ("Id") DO UPDATE SET
 	"Name" = :Name
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t."Id",
 	t."Name",

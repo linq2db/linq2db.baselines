@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	p.ParentID,
 	p.Value1
@@ -12,7 +11,6 @@ ORDER BY
 LIMIT 1
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	p.ParentID,
 	p.Value1

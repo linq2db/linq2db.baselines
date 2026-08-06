@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	g_2."Key_1",
 	COUNT(*)
@@ -13,8 +12,7 @@ FROM
 GROUP BY
 	g_2."Key_1"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -24,8 +22,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	g_2."Key_1",
 	COUNT(*)
@@ -39,8 +36,7 @@ FROM
 GROUP BY
 	g_2."Key_1"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -50,8 +46,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	g_2."Key_1",
 	COUNT(*)
@@ -65,8 +60,7 @@ FROM
 GROUP BY
 	g_2."Key_1"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -76,8 +70,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	g_2."Key_1",
 	COUNT(*)
@@ -91,8 +84,7 @@ FROM
 GROUP BY
 	g_2."Key_1"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -102,8 +94,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	g_2."Key_1",
 	COUNT(*)
@@ -117,8 +108,7 @@ FROM
 GROUP BY
 	g_2."Key_1"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -128,8 +118,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	g_2."Key_1",
 	COUNT(*)
@@ -143,8 +132,7 @@ FROM
 GROUP BY
 	g_2."Key_1"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -154,8 +142,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	g_2."Key_1",
 	COUNT(*)
@@ -173,8 +160,7 @@ FROM
 GROUP BY
 	g_2."Key_1"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -184,8 +170,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	g_2."Key_1",
 	COUNT(*)
@@ -203,8 +188,7 @@ FROM
 GROUP BY
 	g_2."Key_1"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -214,8 +198,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	g_2."Key_1",
 	COUNT(*)
@@ -232,8 +215,7 @@ FROM
 GROUP BY
 	g_2."Key_1"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -243,8 +225,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	g_2."Key_1",
 	COUNT(*)
@@ -261,8 +242,7 @@ FROM
 GROUP BY
 	g_2."Key_1"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -272,8 +252,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	g_2."Key_1",
 	COUNT(*)
@@ -290,8 +269,7 @@ FROM
 GROUP BY
 	g_2."Key_1"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -301,8 +279,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	g_2."Key_1",
 	COUNT(*)
@@ -319,8 +296,7 @@ FROM
 GROUP BY
 	g_2."Key_1"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -330,8 +306,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	g_2."Key_1",
 	COUNT(*)
@@ -348,8 +323,7 @@ FROM
 GROUP BY
 	g_2."Key_1"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -359,8 +333,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	g_2."Key_1",
 	COUNT(*)
@@ -374,8 +347,7 @@ FROM
 GROUP BY
 	g_2."Key_1"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -385,8 +357,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	g_2."Key_1",
 	COUNT(*)
@@ -403,8 +374,7 @@ FROM
 GROUP BY
 	g_2."Key_1"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -414,8 +384,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	g_2."Key_1",
 	COUNT(*)
@@ -432,8 +401,7 @@ FROM
 GROUP BY
 	g_2."Key_1"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -443,8 +411,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	g_2."Key_1",
 	COUNT(*)
@@ -461,8 +428,7 @@ FROM
 GROUP BY
 	g_2."Key_1"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -472,8 +438,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	g_2."Key_1",
 	COUNT(*)
@@ -490,8 +455,7 @@ FROM
 GROUP BY
 	g_2."Key_1"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -501,8 +465,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	g_2."Key_1",
 	COUNT(*)
@@ -519,8 +482,7 @@ FROM
 GROUP BY
 	g_2."Key_1"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -530,8 +492,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	g_2."Key_1",
 	COUNT(*)
@@ -545,8 +506,7 @@ FROM
 GROUP BY
 	g_2."Key_1"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -556,8 +516,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	g_2."Key_1",
 	COUNT(*)
@@ -574,8 +533,7 @@ FROM
 GROUP BY
 	g_2."Key_1"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -585,8 +543,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	g_2."Key_1",
 	COUNT(*)
@@ -603,8 +560,7 @@ FROM
 GROUP BY
 	g_2."Key_1"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -614,8 +570,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	g_2."Key_1",
 	COUNT(*)
@@ -632,8 +587,7 @@ FROM
 GROUP BY
 	g_2."Key_1"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -643,8 +597,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	g_2."Key_1",
 	COUNT(*)
@@ -661,8 +614,7 @@ FROM
 GROUP BY
 	g_2."Key_1"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",

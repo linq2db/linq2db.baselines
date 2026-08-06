@@ -10,7 +10,6 @@ FROM
 	Child g_1
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.ParentID,
 	t1.ChildID

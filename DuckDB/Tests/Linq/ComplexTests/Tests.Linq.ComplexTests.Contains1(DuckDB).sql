@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	p.ParentID,
 	gc3_1.not_null,

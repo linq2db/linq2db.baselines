@@ -1,5 +1,4 @@
 ﻿-- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	x."Color",
 	x."Kind",
@@ -32,7 +31,6 @@ WHERE
 	NOT (x."Color" = 1 AND x."Color_1" = 1 OR x."Color" = 0)
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."ItemId",
 	t1."Kind",
@@ -43,7 +41,6 @@ FROM
 	"Item" t1
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	x."Color",
 	x."ItemCode",
@@ -72,7 +69,6 @@ WHERE
 	x."Color" = 1
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."ItemId",
 	t1."Kind",
@@ -83,7 +79,6 @@ FROM
 	"Item" t1
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Top",
 	t1."Color",
@@ -151,7 +146,6 @@ WHERE
 	t2."Bottom" = 1
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."ItemId",
 	t1."Kind",
@@ -162,7 +156,6 @@ FROM
 	"Item" t1
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	x_1."Color",
 	x_1."Color_1",
@@ -247,7 +240,6 @@ WHERE
 	NOT (x_1."Color" = 1 AND x_1."Color_1" IS NOT NULL AND x_1."Color_1" = 1 OR x_1."Color" = 0)
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."ItemId",
 	t1."Kind",
@@ -258,7 +250,6 @@ FROM
 	"Item" t1
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	x_1."Color",
 	x_1."Color_1",
@@ -343,7 +334,6 @@ WHERE
 	x_1."Color" = 1 AND x_1."Color_1" = 1 OR x_1."Color" = 0
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."ItemId",
 	t1."Kind",
@@ -354,7 +344,6 @@ FROM
 	"Item" t1
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	x_1."Size_1",
 	x_1."Color",
@@ -439,7 +428,6 @@ WHERE
 	NOT (x_1."Size_1" = 1 AND x_1."Color" IS NULL AND x_1."Size_2" = 1 OR x_1."Size_1" = 0)
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."ItemId",
 	t1."Kind",
@@ -450,7 +438,6 @@ FROM
 	"Item" t1
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	x_1."Size_1",
 	x_1."Color",
@@ -536,7 +523,6 @@ WHERE
 	x_1."Size_1" = 0
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."ItemId",
 	t1."Kind",

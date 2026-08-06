@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 SELECT
 	DATETIME2FROMPARTS(2010, [t].[ID], 1, 0, 0, 0, 0, 3)
 FROM

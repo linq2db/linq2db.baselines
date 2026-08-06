@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	p."PersonID",
 	p."FirstName",
@@ -15,8 +14,7 @@ WHERE
 	p."PersonID" = 1
 LIMIT 2
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	p."PersonID",
 	p."FirstName",

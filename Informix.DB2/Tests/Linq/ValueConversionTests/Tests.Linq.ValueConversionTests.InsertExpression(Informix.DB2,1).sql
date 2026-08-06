@@ -23,10 +23,10 @@ INSERT INTO ValueConversion
 )
 VALUES
 (
-	@iteration::Int,
-	@Value1::NVarChar(2),
-	@Enum::NVarChar(6),
-	@inserted::NVarChar(22),
+	@iteration,
+	@Value1,
+	@Enum,
+	@inserted,
 	@boolValue::VarChar(1),
 	@boolValue_1::VarChar(1)
 )

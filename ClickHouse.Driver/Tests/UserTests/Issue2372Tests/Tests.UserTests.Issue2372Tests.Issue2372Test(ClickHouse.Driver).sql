@@ -1,9 +1,7 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 DROP TABLE IF EXISTS InventoryResource
 
 -- ClickHouse.Driver ClickHouse
-
 INSERT INTO InventoryResource
 (
 	Id,

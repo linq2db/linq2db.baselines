@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	CASE
 		WHEN "p"."ParentID" - 1 IN (

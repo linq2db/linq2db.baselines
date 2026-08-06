@@ -20,7 +20,6 @@ VALUES
 )
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Stamp],
@@ -45,7 +44,6 @@ WHERE
 	[r].[Id] = 2 AND [r].[Id] = ? AND [r].[Stamp] = ?
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Stamp],
@@ -70,7 +68,6 @@ WHERE
 	[r].[Id] = 1 AND [r].[Id] = ? AND [r].[Stamp] = ?
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Stamp],
@@ -90,7 +87,6 @@ WHERE
 	[r].[Id] = 2 AND [r].[Id] = ? AND [r].[Stamp] = ?
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Stamp],
@@ -110,7 +106,6 @@ WHERE
 	[r].[Id] = 1 AND [r].[Id] = ? AND [r].[Stamp] = ?
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Stamp],

@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	t2.Id,
 	t2.ResourceID,

@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."FirstName",
 	t1."LastName",
@@ -19,8 +18,7 @@ ORDER BY
 	t1."FirstName",
 	t1."LastName"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."FirstName",
 	t1."PersonID",

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
-
 SELECT
 	[e].[Id],
 	[e].[GuidValue],
@@ -11,7 +10,6 @@ WHERE
 	(Coalesce([e].[StringValue], N'') + N'1') = N'StrValue1'
 
 -- SqlServer.2022.MS SqlServer.2022
-
 SELECT
 	[t1].[Id],
 	[t1].[GuidValue],

@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	MAX(IIF([g_1].[ParentID] < 3, [g_1].[ChildID], NULL))
 FROM

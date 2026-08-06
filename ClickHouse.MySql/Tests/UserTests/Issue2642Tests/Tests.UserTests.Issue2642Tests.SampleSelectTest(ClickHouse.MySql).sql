@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	m_1.Id,
 	d.Id,
@@ -18,7 +17,6 @@ FROM
 		INNER JOIN EmailAttachments d ON m_1.Id = d.EmailId
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	p.Id,
 	p.AddTime

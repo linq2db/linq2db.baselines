@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[p].[ParentID],
 	[q1].[GrandChildID]

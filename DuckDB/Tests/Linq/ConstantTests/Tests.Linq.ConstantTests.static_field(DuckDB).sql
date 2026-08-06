@@ -13,7 +13,6 @@ WHERE
 	e.GuidValue = $GuidNonReadonly AND e.GuidNullableValue = $GuidNonReadonly
 
 -- DuckDB
-
 SELECT
 	t1.Id,
 	t1.GuidValue,

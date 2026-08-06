@@ -1,7 +1,6 @@
 ﻿-- SqlCe
-
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[LinqDataTypes] [t1]
 
@@ -26,7 +25,6 @@ WHERE
 	@param = [t1].[BigIntValue]
 
 -- SqlCe
-
 SELECT
 	[t1].[ID],
 	[t1].[MoneyValue],

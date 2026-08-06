@@ -29,9 +29,8 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[LinqDataTypes] [r]
 WHERE

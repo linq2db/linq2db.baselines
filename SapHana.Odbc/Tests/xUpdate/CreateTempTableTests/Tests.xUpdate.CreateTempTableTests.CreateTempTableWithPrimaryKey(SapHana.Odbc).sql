@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 CREATE COLUMN TABLE "TableWithPrimaryKey"
 (
 	"Key" Integer NOT NULL,
@@ -8,7 +7,6 @@ CREATE COLUMN TABLE "TableWithPrimaryKey"
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 DO BEGIN
 	DECLARE EXIT HANDLER FOR SQL_ERROR_CODE 259 BEGIN END;
 	EXECUTE IMMEDIATE 'DROP TABLE "TableWithPrimaryKey"';

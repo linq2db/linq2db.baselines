@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 CREATE COLUMN TABLE "tmptbl1"
 (
 	"ID"    Integer       NOT NULL,
@@ -43,7 +42,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 CREATE COLUMN TABLE "tmptbl2"
 (
 	"ID"    Integer       NOT NULL,
@@ -87,7 +85,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 CREATE COLUMN TABLE "tmptbl3"
 (
 	"ID"    Integer       NOT NULL,
@@ -131,7 +128,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t4"."ID",
 	"t4"."Value"
@@ -141,7 +137,6 @@ FROM
 		LEFT JOIN "tmptbl3" "t4" ON Coalesce("t3"."Value", "t2"."Value") = "t4"."Value" OR "t3"."Value" IS NULL AND "t2"."Value" IS NULL AND "t4"."Value" IS NULL
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."ID",
 	"t1"."Value"
@@ -149,7 +144,6 @@ FROM
 	"tmptbl1" "t1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."ID",
 	"t1"."Value"
@@ -157,7 +151,6 @@ FROM
 	"tmptbl2" "t1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."ID",
 	"t1"."Value"
@@ -165,21 +158,18 @@ FROM
 	"tmptbl3" "t1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 DO BEGIN
 	DECLARE EXIT HANDLER FOR SQL_ERROR_CODE 259 BEGIN END;
 	EXECUTE IMMEDIATE 'DROP TABLE "tmptbl3"';
 END
 
 -- SapHana.Odbc SapHanaOdbc
-
 DO BEGIN
 	DECLARE EXIT HANDLER FOR SQL_ERROR_CODE 259 BEGIN END;
 	EXECUTE IMMEDIATE 'DROP TABLE "tmptbl2"';
 END
 
 -- SapHana.Odbc SapHanaOdbc
-
 DO BEGIN
 	DECLARE EXIT HANDLER FOR SQL_ERROR_CODE 259 BEGIN END;
 	EXECUTE IMMEDIATE 'DROP TABLE "tmptbl1"';

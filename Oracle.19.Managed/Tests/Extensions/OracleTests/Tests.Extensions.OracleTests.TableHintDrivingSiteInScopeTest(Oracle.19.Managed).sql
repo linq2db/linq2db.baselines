@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT /*+ DRIVING_SITE(p) DRIVING_SITE(c_1) */
 	p."ParentID",
 	p."Value1"

@@ -16,7 +16,6 @@ VALUES
 )
 
 -- SqlServer.2012.MS SqlServer.2012
-
 UPDATE
 	[Parent]
 SET
@@ -25,7 +24,6 @@ WHERE
 	[Parent].[ParentID] = 1010
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT TOP (1)
 	[t].[ParentID],
 	[t].[Value1]

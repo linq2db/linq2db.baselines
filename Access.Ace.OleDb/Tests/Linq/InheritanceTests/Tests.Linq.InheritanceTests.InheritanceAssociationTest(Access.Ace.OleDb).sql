@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t1].[ID],
 	[t1].[MoneyValue],
@@ -13,10 +12,9 @@ FROM
 	[LinqDataTypes] [t1]
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[a_A1].[ID],
-	[a_A2].[ID]
+	[a_A2].[ID] as [TC2_1]
 FROM
 	([LinqDataTypes] [ia]
 		LEFT JOIN [LinqDataTypes] [a_A1] ON ([ia].[GuidValue] = [a_A1].[GuidValue] AND [a_A1].[ID] = 2))

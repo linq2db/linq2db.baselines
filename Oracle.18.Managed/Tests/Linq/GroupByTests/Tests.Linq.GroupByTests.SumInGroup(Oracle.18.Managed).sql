@@ -1,5 +1,4 @@
 ﻿-- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	g_1."GroupId",
 	SUM(g_1."DataValue"),
@@ -27,7 +26,6 @@ GROUP BY
 	g_1."GroupId"
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."GroupId",

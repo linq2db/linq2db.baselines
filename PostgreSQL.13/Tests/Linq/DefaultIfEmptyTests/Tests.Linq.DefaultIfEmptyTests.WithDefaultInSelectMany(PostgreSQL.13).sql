@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
-
+﻿-- PostgreSQL.13 PostgreSQL12
 SELECT
 	s."ParentID",
 	c_1."ParentID",
@@ -10,8 +9,7 @@ FROM
 WHERE
 	c_1."ChildID" < 0 OR c_1."ParentID" IS NULL
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	m_1."ParentID",
 	d."ParentID",
@@ -25,8 +23,7 @@ FROM
 	) m_1
 		INNER JOIN "Child" d ON m_1."ParentID" = d."ParentID"
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."ParentID",
 	t1."Value1"

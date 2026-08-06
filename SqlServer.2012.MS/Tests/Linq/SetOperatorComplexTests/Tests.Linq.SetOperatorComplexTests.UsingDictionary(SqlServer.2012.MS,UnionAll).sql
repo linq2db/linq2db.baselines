@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	CAST(N'Discriminator' AS NVarChar(4000)),
 	[a_Book].[Discriminator],
@@ -25,7 +24,6 @@ WHERE
 	[a_Book_1].[Discriminator] = N'Novel'
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[m_1].[BookId],
 	[m_1].[AuthorId],
@@ -45,7 +43,6 @@ FROM
 		LEFT JOIN [Author] [a_Author] ON [d_1].[FkAuthorId] = [a_Author].[AuthorId]
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[m_1].[AuthorId],
 	[a_Book].[BookId],
@@ -59,7 +56,6 @@ FROM
 		LEFT JOIN [Book] [a_Book] ON [d].[FkBookId] = [a_Book].[BookId]
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[t1].[AuthorId],
 	[t1].[AuthorName]

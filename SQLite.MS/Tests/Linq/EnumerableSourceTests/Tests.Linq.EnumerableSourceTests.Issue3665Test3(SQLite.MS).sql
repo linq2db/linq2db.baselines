@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[x].[PersonID] + [y].[item]
 FROM
@@ -12,7 +11,6 @@ FROM
 			) [y]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

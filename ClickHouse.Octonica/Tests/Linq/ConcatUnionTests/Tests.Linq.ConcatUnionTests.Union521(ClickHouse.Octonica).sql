@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	p_1.Value1
 FROM

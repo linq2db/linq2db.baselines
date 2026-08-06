@@ -36,7 +36,6 @@ WHERE
 	[TrimTestTable].[Data] = @p
 
 -- SQLite.MS SQLite
-
 SELECT
 	[r].[ID],
 	[r].[Data]
@@ -46,7 +45,6 @@ ORDER BY
 	[r].[ID]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[r].[ID],
 	[r].[Data]

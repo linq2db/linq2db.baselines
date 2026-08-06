@@ -24,7 +24,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 1
 	[t].[Id],
 	[t].[Name],
@@ -55,7 +54,6 @@ WHERE
 	[PR_1598_Update_Enum_Table].[Id] = @Id
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 1
 	[t].[Id],
 	[t].[Name],
@@ -83,7 +81,6 @@ WHERE
 	[PR_1598_Update_Enum_Table].[Id] = @Id
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 1
 	[t].[Id],
 	[t].[Name],

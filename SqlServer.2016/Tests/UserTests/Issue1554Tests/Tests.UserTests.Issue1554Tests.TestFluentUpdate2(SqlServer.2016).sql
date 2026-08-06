@@ -34,7 +34,6 @@ WHERE
 	[Issue1554FluentTable].[Id] = 0
 
 -- SqlServer.2016
-
 SELECT TOP (2)
 	[t1].[Id],
 	[t1].[ClaimedKeyType],

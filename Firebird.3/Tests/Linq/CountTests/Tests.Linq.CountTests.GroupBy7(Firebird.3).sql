@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	COUNT(*),
 	MAX("g_1"."ChildID")

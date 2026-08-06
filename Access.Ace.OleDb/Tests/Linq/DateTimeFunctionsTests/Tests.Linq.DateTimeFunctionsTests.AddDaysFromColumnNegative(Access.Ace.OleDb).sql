@@ -40,7 +40,6 @@ VALUES
 )
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	COUNT(*)
 FROM
@@ -49,7 +48,6 @@ WHERE
 	[t].[ID] = 5000 AND DateAdd('d', [t].[SmallIntValue], [t].[DateTimeValue]) < DateSerial(2018, 1, 2)
 
 -- Access.Ace.OleDb AccessOleDb
-
 DELETE FROM
 	[LinqDataTypes] [t]
 WHERE

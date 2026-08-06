@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 SELECT
 	[m_1].[ParentID],
 	[d_1].[Key_1],
@@ -24,7 +23,6 @@ FROM
 		) [d_1]
 
 -- SqlServer.2017
-
 SELECT
 	[c_1].[ParentID]
 FROM

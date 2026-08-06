@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	it.ID
 FROM

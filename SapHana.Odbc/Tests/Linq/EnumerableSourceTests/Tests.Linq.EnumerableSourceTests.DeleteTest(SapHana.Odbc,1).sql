@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 DELETE FROM
 	"TableToInsert" "t1"
 WHERE

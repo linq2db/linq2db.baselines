@@ -1,5 +1,4 @@
 ﻿-- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."TestId"
@@ -20,7 +19,6 @@ ORDER BY
 	t1."Id" DESC
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."TestId"

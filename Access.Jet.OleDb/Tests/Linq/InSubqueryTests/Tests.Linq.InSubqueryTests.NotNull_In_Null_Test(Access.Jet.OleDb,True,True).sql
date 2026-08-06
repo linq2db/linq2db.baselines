@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t].[PK],
 	[t].[ID]
@@ -16,7 +15,6 @@ WHERE
 	)
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[PK],
 	[t1].[ID]
@@ -24,7 +22,6 @@ FROM
 	[test_in_1] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[PK],
 	[t1].[ID],

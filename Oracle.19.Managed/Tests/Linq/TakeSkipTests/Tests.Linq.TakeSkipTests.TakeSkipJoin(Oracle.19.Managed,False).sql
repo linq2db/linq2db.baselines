@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1.ID,
 	t1."MoneyValue",
@@ -13,7 +12,6 @@ FROM
 	"LinqDataTypes" t1
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	e.ID,
 	p."SmallIntValue"

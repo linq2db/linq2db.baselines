@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	CASE
 		WHEN t1."EnumNullable" IS NOT NULL THEN To_NChar(t1."EnumNullable")

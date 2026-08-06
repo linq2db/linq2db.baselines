@@ -1,5 +1,4 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."FirstName",
 	t1."PersonID",
@@ -15,7 +14,6 @@ ORDER BY
 	END
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."FirstName",
 	t1."PersonID",

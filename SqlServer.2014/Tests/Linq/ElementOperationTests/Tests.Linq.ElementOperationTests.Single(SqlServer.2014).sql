@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014
-
 SELECT TOP (2)
 	[p].[ParentID],
 	[p].[Value1]

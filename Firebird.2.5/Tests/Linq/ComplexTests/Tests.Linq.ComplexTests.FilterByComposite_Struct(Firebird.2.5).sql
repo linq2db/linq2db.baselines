@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT FIRST 2
 	"u"."Id",
 	"u"."user_name",

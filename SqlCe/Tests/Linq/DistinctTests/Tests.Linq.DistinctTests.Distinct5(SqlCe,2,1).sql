@@ -3,13 +3,12 @@ DECLARE @Value1 Int -- Int32
 SET     @Value1 = 3
 
 SELECT DISTINCT
-	Coalesce([p].[Value1], [p].[ParentID] % 2) as [ParentID],
-	@Value1 as [Value1]
+	Coalesce([p].[Value1], [p].[ParentID] % 2),
+	@Value1
 FROM
 	[Parent] [p]
 
 -- SqlCe
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]
@@ -21,13 +20,12 @@ DECLARE @Value1 Int -- Int32
 SET     @Value1 = 3
 
 SELECT DISTINCT
-	Coalesce([p].[Value1], [p].[ParentID] % 2) as [ParentID],
-	@Value1 as [Value1]
+	Coalesce([p].[Value1], [p].[ParentID] % 2),
+	@Value1
 FROM
 	[Parent] [p]
 
 -- SqlCe
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

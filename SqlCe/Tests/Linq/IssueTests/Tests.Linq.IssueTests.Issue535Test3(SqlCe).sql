@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[cb].[Id],
 	[cb].[Name],

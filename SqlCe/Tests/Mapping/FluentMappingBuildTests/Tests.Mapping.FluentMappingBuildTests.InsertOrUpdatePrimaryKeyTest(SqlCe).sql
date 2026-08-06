@@ -1,9 +1,7 @@
 ﻿-- SqlCe
-
 DROP TABLE [FluentTemp_InsertOrUpdate]
 
 -- SqlCe
-
 CREATE TABLE [FluentTemp_InsertOrUpdate]
 (
 	[ID]   Int          NOT NULL,
@@ -30,7 +28,6 @@ VALUES
 )
 
 -- SqlCe
-
 UPDATE
 	[FluentTemp_InsertOrUpdate]
 SET
@@ -40,6 +37,5 @@ WHERE
 	[FluentTemp_InsertOrUpdate].[ID] = 1
 
 -- SqlCe
-
 DROP TABLE [FluentTemp_InsertOrUpdate]
 

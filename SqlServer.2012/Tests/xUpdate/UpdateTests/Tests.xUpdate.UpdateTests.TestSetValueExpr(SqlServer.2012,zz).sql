@@ -13,7 +13,6 @@ WHERE
 	[TextData].[Id] >= @id
 
 -- SqlServer.2012
-
 SELECT
 	[t1].[Id],
 	[t1].[Items1],

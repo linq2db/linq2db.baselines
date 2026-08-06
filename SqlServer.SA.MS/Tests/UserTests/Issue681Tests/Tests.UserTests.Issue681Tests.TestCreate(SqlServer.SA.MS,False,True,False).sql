@@ -1,16 +1,13 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
-
 SELECT TOP (1)
 	DB_NAME()
 FROM
 	[LinqDataTypes] [t1]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [Issue681Table2]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 CREATE TABLE [TestDataMSSA]..[Issue681Table2]
 (
 	[ID]    Int NOT NULL,
@@ -20,6 +17,5 @@ CREATE TABLE [TestDataMSSA]..[Issue681Table2]
 )
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [Issue681Table2]
 

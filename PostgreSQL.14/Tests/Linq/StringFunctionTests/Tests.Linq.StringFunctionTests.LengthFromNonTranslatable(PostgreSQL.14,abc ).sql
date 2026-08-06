@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t."Str",
 	Length(t."Str"),
@@ -7,8 +6,7 @@ SELECT
 FROM
 	"TestLengthModel" t
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Str"

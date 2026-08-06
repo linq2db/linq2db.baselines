@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[e].[Id],
 	[e].[GuidValue],
@@ -8,10 +7,9 @@ SELECT
 FROM
 	[TestConstantsData] [e]
 WHERE
-	(Coalesce([e].[StringValue], '') + '1') = 'StrValue1'
+	(Coalesce([e].[StringValue], '') || '1') = 'StrValue1'
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[GuidValue],

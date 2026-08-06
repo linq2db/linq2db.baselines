@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @IntClassRequired Integer -- Int32
@@ -75,7 +75,7 @@ VALUES
 	:IntStructNullableWithNull
 )
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @IntClassRequired Integer -- Int32
@@ -152,8 +152,7 @@ VALUES
 	:IntStructNullableWithNull
 )
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."IntClassRequired",

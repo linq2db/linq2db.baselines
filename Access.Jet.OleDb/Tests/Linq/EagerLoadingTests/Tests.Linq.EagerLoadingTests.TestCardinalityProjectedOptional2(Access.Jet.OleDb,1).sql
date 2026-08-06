@@ -1,9 +1,8 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[m_1].[Id],
 	[m_1].[Id_1],
-	[d_1].[Id],
+	[d_1].[Id] as [Id_2],
 	[d_1].[FK]
 FROM
 	(
@@ -17,16 +16,14 @@ FROM
 		INNER JOIN [EntityMC] [d_1] ON ([m_1].[Id] = [d_1].[FK])
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[m_1].[Id],
-	[d].[Id]
+	[d].[Id] as [Id_1]
 FROM
 	[EntityMA] [m_1]
 		INNER JOIN [EntityMB] [d] ON ([m_1].[Id] = [d].[FK])
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[e].[Id]
 FROM

@@ -54,7 +54,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[p].[Id],
 	[p].[TargetName],
@@ -66,7 +65,6 @@ WHERE
 	[p].[TargetName] = 'bda.Requests'
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[p].[TargetName],
 	[p].[Id],

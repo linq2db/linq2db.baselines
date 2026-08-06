@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 SELECT DISTINCT
 	"r"."Value1"
 FROM

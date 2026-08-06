@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[x_1].[Id],
 	[x_1].[Triggers_1]

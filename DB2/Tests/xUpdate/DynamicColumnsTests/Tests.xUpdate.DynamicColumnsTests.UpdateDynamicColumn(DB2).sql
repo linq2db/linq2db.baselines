@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 INSERT INTO "Person"
 (
 	"FirstName",
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	COUNT(*)
 FROM
@@ -23,7 +21,6 @@ WHERE
 	"c_1"."LastName" = 'Limonadovy'
 
 -- DB2 DB2.LUW DB2LUW
-
 UPDATE
 	"Person" "c_1"
 SET
@@ -32,7 +29,6 @@ WHERE
 	"c_1"."LastName" = 'Limonadovy'
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	COUNT(*)
 FROM

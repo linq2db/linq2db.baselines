@@ -9,7 +9,6 @@ FROM
 	[Parent] [p]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]
@@ -27,7 +26,6 @@ FROM
 	[Parent] [p]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

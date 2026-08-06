@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	c_1.Value1,
 	toInt32(NULL) as ParentID

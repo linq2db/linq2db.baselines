@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT /*+ PARALLEL(c_1, 5) */
 	p."ParentID",
 	p."Value1"

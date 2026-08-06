@@ -1,8 +1,7 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[fact_1].[Id],
-	[leftTag].[Id],
+	[leftTag].[Id] as [Id_1],
 	[leftTag].[FactId],
 	[leftTag].[Name]
 FROM

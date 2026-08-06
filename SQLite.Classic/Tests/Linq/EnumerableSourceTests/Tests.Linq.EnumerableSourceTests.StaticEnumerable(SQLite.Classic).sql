@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],
@@ -24,7 +23,6 @@ WHERE
 	)
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

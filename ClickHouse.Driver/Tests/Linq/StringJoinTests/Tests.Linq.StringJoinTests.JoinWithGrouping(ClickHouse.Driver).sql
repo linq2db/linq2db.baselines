@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	g_1.Id,
 	arrayStringConcat(groupArray(toString(Coalesce(g_1.NullableValue, ''))), ', '),
@@ -12,7 +11,6 @@ ORDER BY
 	g_1.Id
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.PK,
 	t1.Id,

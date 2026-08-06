@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t].[VarCharColumn]
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	[t].[Id]
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t].[VarCharColumn]
 FROM

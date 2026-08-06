@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"p"."Id",
 	Coalesce((
@@ -16,7 +15,6 @@ ORDER BY
 	"p"."Id"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"m_1"."Id",
 	"d"."Id",
@@ -27,7 +25,6 @@ FROM
 		INNER JOIN "ConcatChild" "d" ON "m_1"."Id" = "d"."ParentId"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Name"

@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	t.ParentID,
 	t.ChildID
@@ -19,7 +18,6 @@ WHERE
 	)
 
 -- DuckDB
-
 SELECT
 	t1.ParentID,
 	t1.ChildID

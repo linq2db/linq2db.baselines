@@ -1,9 +1,7 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT Cast('2012-12-12' as date)
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT Cast('2012-12-12' as date)
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57

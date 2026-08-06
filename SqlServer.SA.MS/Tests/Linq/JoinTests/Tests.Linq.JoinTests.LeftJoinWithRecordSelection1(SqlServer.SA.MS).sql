@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	[fact_1].[Id],
 	[leftTag].[Id],

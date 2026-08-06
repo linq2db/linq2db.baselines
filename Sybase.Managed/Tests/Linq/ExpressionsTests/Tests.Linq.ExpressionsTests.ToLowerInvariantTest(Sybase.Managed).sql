@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	Lower([p].[Taxonomy])
 FROM

@@ -1,5 +1,4 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 WITH "cte" ("FirstName")
 AS
 (

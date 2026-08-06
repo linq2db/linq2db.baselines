@@ -16,7 +16,6 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 UPDATE
 	"Parent" t
 SET
@@ -26,7 +25,6 @@ WHERE
 
 RollbackTransaction
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t."ParentID",
 	t."Value1"

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008
-
 SELECT
 	[p].[ParentID],
 	[p].[Value1]
@@ -9,7 +8,6 @@ WHERE
 	[p].[ParentID] IN (1, 2)
 
 -- SqlServer.2008
-
 SELECT
 	[p].[ParentID],
 	[p].[Value1]

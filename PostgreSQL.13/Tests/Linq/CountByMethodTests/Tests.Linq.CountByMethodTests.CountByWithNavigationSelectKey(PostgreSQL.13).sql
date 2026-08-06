@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
-
+﻿-- PostgreSQL.13 PostgreSQL12
 SELECT
 	p."ParentID",
 	c_2."Value_1"
@@ -20,8 +19,7 @@ ORDER BY
 	c_2."Key_1",
 	c_2."Value_1"
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	m_1."ParentID",
 	d."ParentID",
@@ -35,8 +33,7 @@ FROM
 	) m_1
 		INNER JOIN "Child" d ON m_1."ParentID" = d."ParentID"
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."ParentID",
 	t1."Value1"

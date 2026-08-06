@@ -1,5 +1,4 @@
 ﻿-- Northwind.SQLite.MS SQLite.MS SQLite
-
 SELECT
 	[m_1].[CustomerID],
 	[d_1].[OrderID],
@@ -42,7 +41,6 @@ ORDER BY
 	[d_1].[OrderDate] DESC
 
 -- Northwind.SQLite.MS SQLite.MS SQLite
-
 SELECT
 	[c_1].[CustomerID],
 	[c_1].[CompanyName],

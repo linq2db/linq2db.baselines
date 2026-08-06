@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 SELECT
 	"m_1"."Id",
 	"d"."Id",
@@ -29,7 +28,6 @@ WHERE
 	)
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"x"."Id",
 	"x"."ValidOn"

@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	COUNT(CASE
 		WHEN "g_1"."ChildID" > 20 THEN 1

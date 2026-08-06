@@ -7,7 +7,6 @@ FROM
 ----
 
 -- SqlServer.2005
-
 SELECT
 	[p].[ParentID],
 	[p].[Value1]
@@ -24,7 +23,6 @@ FROM
 ---
 
 -- SqlServer.2005
-
 SELECT
 	[p].[ParentID],
 	[p].[Value1]

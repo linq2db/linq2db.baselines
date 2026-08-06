@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT DISTINCT
 	t1.Value_1
 FROM

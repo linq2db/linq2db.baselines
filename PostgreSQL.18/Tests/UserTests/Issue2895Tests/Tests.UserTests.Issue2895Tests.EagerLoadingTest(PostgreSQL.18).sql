@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
-
+﻿-- PostgreSQL.18 PostgreSQL12
 SELECT
 	m_1."Id",
 	"a_Documents"."Name"
@@ -27,8 +26,7 @@ FROM
 		INNER JOIN "Attachment" "a_Attachment" ON d."AttachmentId" = "a_Attachment"."Id"
 		INNER JOIN "Document" "a_Documents" ON "a_Attachment"."Id" = "a_Documents"."AttachmentId"
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	t1.not_null,
 	t1."Id"

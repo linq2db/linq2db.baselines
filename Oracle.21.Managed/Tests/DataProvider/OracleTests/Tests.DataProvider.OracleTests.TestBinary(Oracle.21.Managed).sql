@@ -1,9 +1,7 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT to_blob('3039')     FROM sys.dual
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT to_blob('00003039') FROM sys.dual
 
 -- Oracle.21.Managed Oracle.Managed Oracle12

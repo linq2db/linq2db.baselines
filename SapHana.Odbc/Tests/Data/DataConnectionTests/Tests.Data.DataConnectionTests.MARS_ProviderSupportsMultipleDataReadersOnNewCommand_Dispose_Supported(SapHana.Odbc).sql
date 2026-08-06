@@ -1,12 +1,10 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	COUNT(*)
 FROM
 	"Person" "t1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."FirstName",
 	"t1"."PersonID",

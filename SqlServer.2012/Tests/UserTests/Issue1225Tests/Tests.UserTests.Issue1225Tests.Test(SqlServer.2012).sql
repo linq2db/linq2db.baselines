@@ -46,7 +46,6 @@ VALUES
 )
 
 -- SqlServer.2012
-
 SELECT
 	N'Id',
 	[it].[Id],

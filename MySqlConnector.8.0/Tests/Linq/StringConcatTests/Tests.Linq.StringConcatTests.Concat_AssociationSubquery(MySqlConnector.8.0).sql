@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`p`.`Id`,
 	Coalesce((
@@ -16,7 +15,6 @@ ORDER BY
 	`p`.`Id`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`m_1`.`Id`,
 	`d`.`Id`,
@@ -27,7 +25,6 @@ FROM
 		INNER JOIN `ConcatChild` `d` ON `m_1`.`Id` = `d`.`ParentId`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Name`

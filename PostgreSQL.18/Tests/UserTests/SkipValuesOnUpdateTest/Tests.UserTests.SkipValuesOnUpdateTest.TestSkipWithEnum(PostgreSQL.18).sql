@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name Text(3) -- String
@@ -23,8 +23,7 @@ VALUES
 	:Gender
 )
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	t."Id",
 	t."Name",
@@ -36,7 +35,7 @@ WHERE
 	t."Id" = 1
 LIMIT 1
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL12
 DECLARE @Name Text(4) -- String
 SET     @Name = 'Jack'
 DECLARE @Age Integer -- Int32
@@ -55,8 +54,7 @@ SET
 WHERE
 	"PR_1598_Update_Enum_Table"."Id" = :Id
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	t."Id",
 	t."Name",
@@ -68,7 +66,7 @@ WHERE
 	t."Id" = 1
 LIMIT 1
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL12
 DECLARE @Name Text(8) -- String
 SET     @Name = 'Francine'
 DECLARE @Age Integer -- Int32
@@ -84,8 +82,7 @@ SET
 WHERE
 	"PR_1598_Update_Enum_Table"."Id" = :Id
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	t."Id",
 	t."Name",

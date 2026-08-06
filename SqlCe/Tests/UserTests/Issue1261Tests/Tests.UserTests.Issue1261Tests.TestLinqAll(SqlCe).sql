@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	CASE
 		WHEN NOT EXISTS(
@@ -12,10 +11,9 @@ SELECT
 		)
 			THEN 1
 		ELSE 0
-	END as [c1]
+	END
 
 -- SqlCe
-
 SELECT
 	CASE
 		WHEN NOT EXISTS(
@@ -28,5 +26,5 @@ SELECT
 		)
 			THEN 1
 		ELSE 0
-	END as [c1]
+	END
 

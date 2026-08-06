@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	COUNT(*)
 FROM
@@ -78,7 +77,6 @@ WHERE
 	END IS NULL
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -159,7 +157,6 @@ WHERE
 	END IS NULL
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -210,7 +207,6 @@ WHERE
 	END
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -261,7 +257,6 @@ WHERE
 	END
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -348,7 +343,6 @@ WHERE
 	END
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -435,7 +429,6 @@ WHERE
 	END
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -493,7 +486,6 @@ WHERE
 	END
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -551,7 +543,6 @@ WHERE
 	END
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -661,7 +652,6 @@ WHERE
 	END IS NULL
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -771,7 +761,6 @@ WHERE
 	END IS NULL
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -826,7 +815,6 @@ WHERE
 	END = 1
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -881,7 +869,6 @@ WHERE
 	END = 1
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -996,7 +983,6 @@ WHERE
 	END
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -1111,7 +1097,6 @@ WHERE
 	END
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -1169,7 +1154,6 @@ WHERE
 	END
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -1227,7 +1211,6 @@ WHERE
 	END
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -1260,7 +1243,6 @@ WHERE
 	) + "r"."Value5")
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -1293,7 +1275,6 @@ WHERE
 	) + "r"."Value5")
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -1326,7 +1307,6 @@ WHERE
 	) + "r"."Value5")
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -1359,7 +1339,6 @@ WHERE
 	) + "r"."Value5")
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -1392,7 +1371,6 @@ WHERE
 	) + "r"."Value5")
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -1425,7 +1403,6 @@ WHERE
 	) + "r"."Value5")
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -1458,7 +1435,6 @@ WHERE
 	) + "r"."Value5")
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -1491,7 +1467,6 @@ WHERE
 	) + "r"."Value5")
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -1531,7 +1506,6 @@ WHERE
 	END
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -1571,7 +1545,6 @@ WHERE
 	END
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -1611,7 +1584,6 @@ WHERE
 	END
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -1651,7 +1623,6 @@ WHERE
 	END
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -1691,7 +1662,6 @@ WHERE
 	END
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -1731,7 +1701,6 @@ WHERE
 	END
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -1771,7 +1740,6 @@ WHERE
 	END
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -1811,7 +1779,6 @@ WHERE
 	END
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",

@@ -48,7 +48,6 @@ VALUES
 )
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t1".ID,
 	"t1"."MoneyValue",
@@ -65,7 +64,6 @@ WHERE
 FETCH NEXT 1 ROWS ONLY
 
 -- Firebird.3 Firebird3
-
 DELETE FROM
 	"LinqDataTypes" "t1"
 WHERE

@@ -1,14 +1,12 @@
 ﻿-- SqlCe
-
 SELECT
-	[t].[Value1] + [t].[Value2] as [c1]
+	[t].[Value1] + [t].[Value2]
 FROM
 	[StringConcatNullEntity] [t]
 ORDER BY
 	[t].[ID]
 
 -- SqlCe
-
 SELECT
 	[t1].[ID],
 	[t1].[Value1],

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 CREATE TABLE [tempdb]..[#TestMergeTVPTable]
 (
 	[Id]   Int            NOT NULL,
@@ -40,7 +39,6 @@ VALUES
 ;
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Name]
@@ -50,6 +48,5 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlServer.Contained SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#TestMergeTVPTable]
 

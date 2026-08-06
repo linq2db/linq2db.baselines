@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[m_1].[Id],
 	[d].[ItemId],
@@ -22,7 +21,6 @@ ORDER BY
 	[d].[UserId]
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[i].[Id],
 	(
@@ -48,14 +46,12 @@ WHERE
 	)
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[t1].[Id]
 FROM
 	[Issue4458Item] [t1]
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[t1].[ItemId],
 	[t1].[QuantityAvailable],
@@ -64,7 +60,6 @@ FROM
 	[WarehouseStock] [t1]
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[t1].[ItemId],
 	[t1].[UserId],

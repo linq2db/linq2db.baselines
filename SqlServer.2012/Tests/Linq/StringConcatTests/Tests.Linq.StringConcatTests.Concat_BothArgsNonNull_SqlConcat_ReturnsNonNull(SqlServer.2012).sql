@@ -1,14 +1,12 @@
 ﻿-- SqlServer.2012
-
 SELECT
 	[e].[Id]
 FROM
 	[ConcatTestEntity] [e]
 WHERE
-	([e].[StrReq] + [e].[StrReq]) IS NOT NULL
+	[e].[StrReq] IS NOT NULL
 
 -- SqlServer.2012
-
 SELECT
 	[t1].[Id],
 	[t1].[Str1],

@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 /* query 1
 query 2 */
 SELECT

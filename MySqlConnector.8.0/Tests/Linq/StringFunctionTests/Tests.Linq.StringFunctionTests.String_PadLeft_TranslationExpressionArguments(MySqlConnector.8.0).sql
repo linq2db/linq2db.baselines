@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`s`.`ID`,
 	`s`.`FirstName`
@@ -18,7 +17,6 @@ WHERE
 	`s`.`FirstName` <> ''
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`FirstName`,
 	`t1`.`PersonID`,

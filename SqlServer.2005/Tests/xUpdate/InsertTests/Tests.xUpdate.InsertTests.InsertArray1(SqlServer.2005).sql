@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 DELETE [t]
 FROM
 	[LinqDataTypes] [t]
@@ -7,7 +6,6 @@ WHERE
 	[t].[ID] > 1000
 
 -- SqlServer.2005
-
 INSERT INTO [LinqDataTypes]
 (
 	[ID],
@@ -22,7 +20,6 @@ VALUES
 )
 
 -- SqlServer.2005
-
 SELECT TOP (2)
 	[t].[ID],
 	[t].[MoneyValue],
@@ -37,7 +34,6 @@ WHERE
 	[t].[ID] = 1001
 
 -- SqlServer.2005
-
 DELETE [t]
 FROM
 	[LinqDataTypes] [t]

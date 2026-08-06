@@ -7,7 +7,6 @@ SET     @:p2 = {10,20}
 INSERT INTO "BulkCopyTable" ("Id", "Value") VALUES (:p1, :p2)
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -17,7 +16,6 @@ ORDER BY
 	t1."Id"
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
@@ -30,7 +28,6 @@ SET     @:p2 = {10,20}
 INSERT INTO "BulkCopyTable" ("Id", "Value") VALUES (:p1, :p2)
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -40,7 +37,6 @@ ORDER BY
 	t1."Id"
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
@@ -53,7 +49,6 @@ SET     @:p2 = {10,20}
 INSERT INTO "BulkCopyTable" ("Id", "Value") VALUES (:p1, :p2)
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -63,7 +58,6 @@ ORDER BY
 	t1."Id"
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
@@ -76,7 +70,6 @@ SET     @:p2 = {10,20}
 INSERT INTO "BulkCopyTable" ("Id", "Value") VALUES (:p1, :p2)
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -86,7 +79,6 @@ ORDER BY
 	t1."Id"
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
@@ -99,7 +91,6 @@ SET     @:p2 = {10,20}
 INSERT INTO "BulkCopyTable" ("Id", "Value") VALUES (:p1, :p2)
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -109,7 +100,6 @@ ORDER BY
 	t1."Id"
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
@@ -122,7 +112,6 @@ SET     @:p2 = {10,20}
 INSERT INTO "BulkCopyTable" ("Id", "Value") VALUES (:p1, :p2)
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -132,7 +121,6 @@ ORDER BY
 	t1."Id"
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
@@ -145,7 +133,6 @@ SET     @:p2 = {10,20}
 INSERT INTO "BulkCopyTable" ("Id", "Value") VALUES (:p1, :p2)
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -155,7 +142,6 @@ ORDER BY
 	t1."Id"
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
@@ -168,7 +154,6 @@ SET     @:p2 = {10,20}
 INSERT INTO "BulkCopyTable" ("Id", "Value") VALUES (:p1, :p2)
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -178,7 +163,6 @@ ORDER BY
 	t1."Id"
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
@@ -191,7 +175,6 @@ SET     @:p2 = {10,20}
 INSERT INTO "BulkCopyTable" ("Id", "Value") VALUES (:p1, :p2)
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -201,7 +184,6 @@ ORDER BY
 	t1."Id"
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
@@ -214,7 +196,6 @@ SET     @:p2 = {10,20}
 INSERT INTO "BulkCopyTable" ("Id", "Value") VALUES (:p1, :p2)
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -224,7 +205,6 @@ ORDER BY
 	t1."Id"
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
@@ -237,7 +217,6 @@ SET     @:p2 = {10,20}
 INSERT INTO "BulkCopyTable" ("Id", "Value") VALUES (:p1, :p2)
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -247,7 +226,6 @@ ORDER BY
 	t1."Id"
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
@@ -260,7 +238,6 @@ SET     @:p2 = {10,20}
 INSERT INTO "BulkCopyTable" ("Id", "Value") VALUES (:p1, :p2)
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -270,7 +247,6 @@ ORDER BY
 	t1."Id"
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
@@ -283,7 +259,6 @@ SET     @:p2 = {10,20}
 INSERT INTO "BulkCopyTable" ("Id", "Value") VALUES (:p1, :p2)
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -293,7 +268,6 @@ ORDER BY
 	t1."Id"
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
@@ -306,7 +280,6 @@ SET     @:p2 = {10,20}
 INSERT INTO "BulkCopyTable" ("Id", "Value") VALUES (:p1, :p2)
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -316,7 +289,6 @@ ORDER BY
 	t1."Id"
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
@@ -329,7 +301,6 @@ SET     @:p2 = {10,20}
 INSERT INTO "BulkCopyTable" ("Id", "Value") VALUES (:p1, :p2)
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -339,7 +310,6 @@ ORDER BY
 	t1."Id"
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
@@ -352,7 +322,6 @@ SET     @:p2 = {10,20}
 INSERT INTO "BulkCopyTable" ("Id", "Value") VALUES (:p1, :p2)
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -362,7 +331,6 @@ ORDER BY
 	t1."Id"
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
@@ -375,7 +343,6 @@ SET     @:p2 = {10,20}
 INSERT INTO "BulkCopyTable" ("Id", "Value") VALUES (:p1, :p2)
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -385,7 +352,6 @@ ORDER BY
 	t1."Id"
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
@@ -398,7 +364,6 @@ SET     @:p2 = {10,20}
 INSERT INTO "BulkCopyTable" ("Id", "Value") VALUES (:p1, :p2)
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -408,7 +373,6 @@ ORDER BY
 	t1."Id"
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"BulkCopyTable" t1
 

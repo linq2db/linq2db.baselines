@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012.MS SqlServer.2012
-
 SELECT DISTINCT
 	[c_1].[ParentID],
 	[c_1].[ChildID]
@@ -11,7 +10,6 @@ ORDER BY
 	[c_1].[ChildID]
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT DISTINCT
 	[c_1].[ParentID],
 	[c_1].[ChildID]

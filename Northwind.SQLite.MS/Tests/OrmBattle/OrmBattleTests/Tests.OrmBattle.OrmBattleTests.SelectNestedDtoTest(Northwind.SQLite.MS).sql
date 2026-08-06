@@ -1,5 +1,4 @@
 ﻿-- Northwind.SQLite.MS SQLite.MS SQLite
-
 SELECT
 	[r].[OrderID],
 	[a_Customer].[CustomerID],

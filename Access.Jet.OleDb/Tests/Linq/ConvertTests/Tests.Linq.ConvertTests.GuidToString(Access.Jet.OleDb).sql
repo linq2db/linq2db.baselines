@@ -7,5 +7,5 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	LCase(LCase(Mid(CStr([t].[GuidValue]), 2, 36))) = @guid
+	LCase(Mid(CStr([t].[GuidValue]), 2, 36)) = @guid
 

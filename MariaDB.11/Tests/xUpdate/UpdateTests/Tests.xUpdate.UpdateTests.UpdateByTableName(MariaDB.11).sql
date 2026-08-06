@@ -24,14 +24,12 @@ VALUES
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	COUNT(*)
 FROM
 	`xxPerson` `t1`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`FirstName`,
 	`t1`.`PersonID`,
@@ -65,7 +63,6 @@ WHERE
 	`t1`.`PersonID` = @ID
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`FirstName`,
 	`t1`.`PersonID`,

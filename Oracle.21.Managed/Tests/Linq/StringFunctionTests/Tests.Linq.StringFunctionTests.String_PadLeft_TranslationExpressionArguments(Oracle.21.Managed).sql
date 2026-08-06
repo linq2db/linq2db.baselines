@@ -1,5 +1,4 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	s.ID,
 	s."FirstName"
@@ -18,7 +17,6 @@ WHERE
 	s."FirstName" IS NOT NULL
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."FirstName",
 	t1."PersonID",

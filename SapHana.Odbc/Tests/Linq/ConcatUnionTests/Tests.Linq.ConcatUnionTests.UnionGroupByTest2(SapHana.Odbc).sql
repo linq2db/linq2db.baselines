@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."SmallIntValue",
 	"t1"."SmallIntValue",

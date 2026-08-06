@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	[v].[inId],
 	[t].[inIdState]

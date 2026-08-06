@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	p."FirstName",
 	p."PersonID",
@@ -11,8 +10,7 @@ FROM
 WHERE
 	p."PersonID" = 1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	p."FirstName",
 	p."PersonID",

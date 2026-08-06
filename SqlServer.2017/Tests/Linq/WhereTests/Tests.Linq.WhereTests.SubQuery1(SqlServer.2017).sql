@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 SELECT
 	[pp].[Value_1]
 FROM

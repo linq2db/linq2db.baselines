@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
-
+﻿-- PostgreSQL.18 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -16,8 +15,7 @@ WHERE
 			y."Nil" IS NULL
 	)
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -34,8 +32,7 @@ WHERE
 			y."Nil" IS NULL
 	)
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -52,8 +49,7 @@ WHERE
 			y."Nil" IS NULL
 	)
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM

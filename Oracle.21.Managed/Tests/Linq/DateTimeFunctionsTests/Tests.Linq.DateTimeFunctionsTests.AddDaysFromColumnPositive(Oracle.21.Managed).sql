@@ -40,7 +40,6 @@ VALUES
 )
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(*)
 FROM
@@ -49,7 +48,6 @@ WHERE
 	t.ID = 5000 AND t."DateTimeValue" + t."SmallIntValue" * INTERVAL '1' DAY > TO_TIMESTAMP('2018-01-02 00:00:00.000', 'YYYY-MM-DD HH24:MI:SS.FF3')
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"LinqDataTypes" t
 WHERE

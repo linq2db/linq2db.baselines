@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[t_1].[Id],
 	[t_1].[Value],

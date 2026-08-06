@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 INSERT INTO [TestBool]
 (
 	[Id],
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT TOP 2
 	[t1].[Id],
 	[t1].[Value]
@@ -20,14 +18,12 @@ FROM
 	[TestBool] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 UPDATE
 	[TestBool] [t1]
 SET
 	[t1].[Value] = NOT [t1].[Value]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT TOP 2
 	[t1].[Id],
 	[t1].[Value]
@@ -35,7 +31,6 @@ FROM
 	[TestBool] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 UPDATE
 	[TestBool] [r]
 SET
@@ -44,7 +39,6 @@ WHERE
 	[r].[Id] = 1
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT TOP 2
 	[t1].[Id],
 	[t1].[Value]

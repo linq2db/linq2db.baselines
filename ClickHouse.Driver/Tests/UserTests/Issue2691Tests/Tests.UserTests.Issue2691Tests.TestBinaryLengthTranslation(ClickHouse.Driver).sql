@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 INSERT INTO Issue2691Table
 (
 	Id,
@@ -14,28 +13,24 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	Length(x.Data)
 FROM
 	Issue2691Table x
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	Length(x.Data)
 FROM
 	Issue2691Table x
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	Length(x.DataB)
 FROM
 	Issue2691Table x
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	Length(x.DataB)
 FROM

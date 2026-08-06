@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.15 PostgreSQL12
 WITH "CTE_1"
 (
 	"entry_FirstName",
@@ -54,8 +53,7 @@ FROM
 	"CTE_1" t1
 LIMIT 1
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."FirstName",
 	t1."ID",

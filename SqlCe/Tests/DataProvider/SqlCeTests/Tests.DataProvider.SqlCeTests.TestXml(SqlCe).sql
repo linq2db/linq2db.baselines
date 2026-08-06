@@ -1,13 +1,10 @@
 ﻿-- SqlCe
-
 SELECT Cast('<xml/>' as nvarchar)
 
 -- SqlCe
-
 SELECT Cast('<xml/>' as nvarchar)
 
 -- SqlCe
-
 SELECT Cast('<xml/>' as nvarchar)
 
 -- SqlCe

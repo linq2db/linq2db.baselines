@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[x].[ParentID]
 FROM
@@ -7,7 +6,6 @@ FROM
 		INNER JOIN [Child] [y] ON [x].[ParentID] = [y].[ParentID]
 
 -- Sybase.Managed Sybase
-
 SELECT DISTINCT
 	[g_1].[ParentID]
 FROM

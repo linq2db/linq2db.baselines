@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
-
 SELECT
 	[t1].[Key_1],
 	[t1].[Sum_1],

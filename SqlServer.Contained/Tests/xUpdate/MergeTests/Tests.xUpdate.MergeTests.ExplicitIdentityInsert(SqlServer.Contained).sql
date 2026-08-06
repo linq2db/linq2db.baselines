@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 SELECT
 	MAX([t1].[PersonID])
 FROM
@@ -44,7 +43,6 @@ VALUES
 SET IDENTITY_INSERT [Person] OFF
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

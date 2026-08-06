@@ -12,11 +12,9 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT @@IDENTITY
 
 -- SqlCe
-
 SELECT
 	[t1].[Id]
 FROM
@@ -34,7 +32,6 @@ WHERE
 	[u].[Id] = @userId
 
 -- SqlCe
-
 SELECT TOP (1)
 	[u].[Id]
 FROM

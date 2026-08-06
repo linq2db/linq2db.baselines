@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[t].[GroupId],
 	COUNT(*),
@@ -38,7 +37,6 @@ GROUP BY
 	[t].[GroupId]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[GroupId],

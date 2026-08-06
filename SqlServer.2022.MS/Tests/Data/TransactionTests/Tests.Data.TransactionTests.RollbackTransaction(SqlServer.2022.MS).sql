@@ -16,7 +16,6 @@ VALUES
 )
 
 -- SqlServer.2022.MS SqlServer.2022
-
 UPDATE
 	[Parent]
 SET
@@ -26,7 +25,6 @@ WHERE
 
 RollbackTransaction
 -- SqlServer.2022.MS SqlServer.2022
-
 SELECT TOP (1)
 	[t].[ParentID],
 	[t].[Value1]

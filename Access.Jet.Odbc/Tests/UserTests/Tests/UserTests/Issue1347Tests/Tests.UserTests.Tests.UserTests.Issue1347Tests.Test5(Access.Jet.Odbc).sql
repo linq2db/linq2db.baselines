@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[t3].[Id],
 	[t3].[ResourceID],
@@ -9,7 +8,7 @@ SELECT
 	[t3].[RPDestinationID],
 	[t3].[RPOrigDestinationID],
 	[t3].[OutfeedTransportOrderID],
-	[res_1].[Id]
+	[res_1].[Id] as [Id_1]
 FROM
 	(
 		SELECT

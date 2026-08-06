@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t."ID",
 	t."MoneyValue",
@@ -12,7 +11,7 @@ SELECT
 FROM
 	"LinqDataTypes" t
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL12
 DECLARE @param Boolean
 SET     @param = True
 

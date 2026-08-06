@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT
 	[u_1].[Id],
 	[u_1].[Value1],

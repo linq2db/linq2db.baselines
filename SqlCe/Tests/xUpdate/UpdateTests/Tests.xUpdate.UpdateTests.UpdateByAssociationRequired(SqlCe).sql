@@ -19,7 +19,6 @@ WHERE
 	)
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Field]

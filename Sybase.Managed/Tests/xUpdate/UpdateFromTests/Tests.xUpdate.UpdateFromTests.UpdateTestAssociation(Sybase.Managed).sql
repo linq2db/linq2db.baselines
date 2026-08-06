@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 UPDATE
 	[UpdatedEntities]
 SET
@@ -10,7 +9,6 @@ WHERE
 	[a_Relation].[RelatedValue1] = 11 AND [UpdatedEntities].[RelationId] = [a_Relation].[id]
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 1
 	[v].[Value1]
 FROM

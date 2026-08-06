@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[a_Patient].[Diagnosis],
 	COUNT(*)

@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 WITH [CTE_1]
 (
 	[ID],
@@ -38,7 +37,6 @@ WHERE
 	[r].[ID] = 2
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 WITH [CTE_1] ([c1])
 AS
 (

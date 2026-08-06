@@ -33,7 +33,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT
 	NVL(e.Id, NULL),
 	e.AOnly,

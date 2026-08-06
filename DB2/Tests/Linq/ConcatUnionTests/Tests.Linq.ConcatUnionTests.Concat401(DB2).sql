@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"c_3"."ParentID",
 	"c_3"."ChildID"

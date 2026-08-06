@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	"t2"."Count1" + "t2"."Count1"
 FROM

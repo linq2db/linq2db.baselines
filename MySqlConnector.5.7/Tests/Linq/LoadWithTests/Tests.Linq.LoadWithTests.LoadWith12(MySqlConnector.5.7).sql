@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`m_1`.`ParentID`,
 	`m_1`.`ParentID_1`,
@@ -26,7 +25,6 @@ FROM
 		INNER JOIN `Child` `d_1` ON `m_1`.`ParentID` = `d_1`.`ParentID`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`m_1`.`ParentID`,
 	`d`.`ParentID`,
@@ -47,7 +45,6 @@ FROM
 		LEFT JOIN `Parent` `a_Parent` ON `d`.`ParentID` = `a_Parent`.`ParentID`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`p`.`ParentID`,
 	`p`.`Value1`

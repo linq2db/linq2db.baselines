@@ -1,9 +1,7 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 SELECT Cast('2012-12-12 12:12:12.0120001' as datetime2)
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT Cast('2012-12-12 12:12:12.0120001' as datetime2)
 
 -- SqlServer.SA SqlServer.2019

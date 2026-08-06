@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	a_QueryableParent.ParentID,
 	a_QueryableParent.Value1

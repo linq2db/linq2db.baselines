@@ -1,9 +1,7 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 DROP TABLE [TestTrun]
 
 -- Access.Ace.Odbc AccessODBC
-
 CREATE TABLE [TestTrun]
 (
 	[ID]     Int             NOT NULL,
@@ -13,10 +11,8 @@ CREATE TABLE [TestTrun]
 )
 
 -- Access.Ace.Odbc AccessODBC
-
 DELETE FROM [TestTrun]
 
 -- Access.Ace.Odbc AccessODBC
-
 DROP TABLE [TestTrun]
 

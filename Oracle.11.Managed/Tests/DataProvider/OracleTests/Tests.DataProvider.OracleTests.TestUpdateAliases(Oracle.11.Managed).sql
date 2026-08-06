@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	COUNT(*)
 FROM
@@ -9,7 +8,6 @@ WHERE
 	parent_1."ParentID" < 5
 
 -- Oracle.11.Managed Oracle11
-
 UPDATE
 	"Child"
 SET

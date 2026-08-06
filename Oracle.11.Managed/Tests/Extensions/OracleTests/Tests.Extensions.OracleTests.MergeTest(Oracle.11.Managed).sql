@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 MERGE /*+ FULL(c_1) ALL_ROWS FIRST_ROWS(10) */ INTO "Parent" Target
 USING (
 	SELECT

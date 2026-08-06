@@ -76,7 +76,6 @@ VALUES
 )
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"r".ID,
 	"r"."StringValue"
@@ -88,7 +87,6 @@ ORDER BY
 	"r".ID
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"r".ID,
 	"r"."IntValue",

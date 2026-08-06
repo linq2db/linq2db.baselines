@@ -1,12 +1,10 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	RTRIM(t."NVarCharColumn" || '...++', '.+')
 FROM
 	"StringTrimTable" t
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."CharColumn",

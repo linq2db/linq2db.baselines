@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	m_1."ParentID",
 	d_1."Key_1"
@@ -19,8 +18,7 @@ FROM
 				m_1."ParentID" = d."ParentID"
 		) d_1 ON 1=1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	p."ParentID"
 FROM

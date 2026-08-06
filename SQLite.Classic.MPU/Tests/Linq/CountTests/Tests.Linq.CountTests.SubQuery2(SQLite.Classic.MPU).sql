@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	CASE
 		WHEN [p].[Value1] IS NULL THEN (

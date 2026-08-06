@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	p."ParentID",
 	p."Value1"
@@ -8,7 +7,7 @@ FROM
 WHERE
 	p."ParentID" = 2
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DECLARE @id Integer -- Int32
 SET     @id = 2
 

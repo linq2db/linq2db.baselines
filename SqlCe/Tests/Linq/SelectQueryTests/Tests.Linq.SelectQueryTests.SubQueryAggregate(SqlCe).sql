@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT TOP (2)
 	[t2].[Parents],
 	[t4].[Children]

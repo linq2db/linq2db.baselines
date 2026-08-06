@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	"t1"."Key_1",
 	Coalesce((
@@ -82,7 +81,6 @@ ORDER BY
 	"t1"."Key_1"
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t1".PK,
 	"t1"."Id",

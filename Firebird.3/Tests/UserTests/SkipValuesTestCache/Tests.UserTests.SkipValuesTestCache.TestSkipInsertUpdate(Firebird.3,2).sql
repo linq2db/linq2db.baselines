@@ -20,7 +20,6 @@ VALUES
 )
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t"."Id",
 	"t"."Name",
@@ -48,7 +47,6 @@ WHERE
 	"t1"."Id" = @Id
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t"."Id",
 	"t"."Name",

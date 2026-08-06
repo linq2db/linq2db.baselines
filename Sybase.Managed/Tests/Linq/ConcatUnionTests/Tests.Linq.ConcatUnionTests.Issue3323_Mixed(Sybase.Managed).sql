@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 INSERT INTO [Issue3323Table]
 (
 	[Id],
@@ -16,10 +15,9 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[r].[Id],
-	Coalesce([r].[FirstName], '') + ' ' + Coalesce([r].[LastName], '')
+	Coalesce([r].[FirstName], '') || ' ' || Coalesce([r].[LastName], '')
 FROM
 	[Issue3323Table] [r]
 UNION ALL
@@ -30,7 +28,6 @@ FROM
 	[Issue3323Table] [r_1]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[r].[Id] + 1,
 	[r].[Text]
@@ -39,7 +36,7 @@ FROM
 UNION ALL
 SELECT
 	[r_1].[Id],
-	Coalesce([r_1].[FirstName], '') + ' ' + Coalesce([r_1].[LastName], '')
+	Coalesce([r_1].[FirstName], '') || ' ' || Coalesce([r_1].[LastName], '')
 FROM
 	[Issue3323Table] [r_1]
 

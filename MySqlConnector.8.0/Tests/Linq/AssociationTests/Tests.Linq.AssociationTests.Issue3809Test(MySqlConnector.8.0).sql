@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`m_1`.`ParentID`,
 	`d`.`ParentID`,
@@ -26,7 +25,6 @@ ORDER BY
 	`d`.`ChildID`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`a`.`ParentID`,
 	`a_ParentTest`.`ParentID`

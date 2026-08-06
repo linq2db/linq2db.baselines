@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 INSERT INTO [MessageEventDTOTb2]
 (
 	[Id]

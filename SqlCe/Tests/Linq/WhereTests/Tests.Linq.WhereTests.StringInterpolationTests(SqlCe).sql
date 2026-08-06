@@ -1,7 +1,6 @@
 ﻿-- SqlCe
-
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Person] [p]
 WHERE
@@ -12,9 +11,8 @@ WHERE
 	('{}' + [p].[LastName]) = ('{}' + [p].[LastName])
 
 -- SqlCe
-
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Person] [t1]
 

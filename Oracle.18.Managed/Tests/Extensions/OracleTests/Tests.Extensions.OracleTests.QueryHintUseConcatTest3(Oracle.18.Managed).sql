@@ -1,5 +1,4 @@
 ﻿-- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT /*+ QB_NAME(qb) USE_CONCAT(@qb) */
 	p."ParentID",
 	p."Value1"

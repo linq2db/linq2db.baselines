@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 INSERT INTO [InsertEntity]
 (
 	[Id],
@@ -16,7 +15,6 @@ WHERE
 	NOT [e].[IsDeleted]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[e].[Id],
 	[e].[Name],

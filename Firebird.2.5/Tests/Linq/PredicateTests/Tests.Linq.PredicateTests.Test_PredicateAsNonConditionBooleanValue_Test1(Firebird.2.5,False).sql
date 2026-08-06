@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	"r"."Id",
 	CASE
@@ -108,7 +107,6 @@ WHERE
 	"r"."Id" <> -1
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",

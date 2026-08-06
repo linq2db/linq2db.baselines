@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[g_2].[ChildId],
 	[g_2].[ParentId],
@@ -19,7 +18,6 @@ GROUP BY
 	[g_2].[ParentId]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID]

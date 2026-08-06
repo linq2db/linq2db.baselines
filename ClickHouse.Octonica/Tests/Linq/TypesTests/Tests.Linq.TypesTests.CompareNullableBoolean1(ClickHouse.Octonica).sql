@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t.ID,
 	t.MoneyValue,
@@ -13,7 +12,6 @@ FROM
 	LinqDataTypes t
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t.ID,
 	t.MoneyValue,

@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1" = r."Value2",
@@ -81,8 +80,7 @@ FROM
 WHERE
 	r."Id" <> -1
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",

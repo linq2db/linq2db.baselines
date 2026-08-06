@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	"fact_1"."Id",
 	"t1"."Id",

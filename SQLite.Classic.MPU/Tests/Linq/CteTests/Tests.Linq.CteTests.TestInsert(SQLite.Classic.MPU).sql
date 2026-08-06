@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 WITH [CTE1_] ([ParentID])
 AS
 (
@@ -34,7 +33,6 @@ FROM
 		INNER JOIN [LAST0] [c4_1] ON [c4_1].[ParentID] = [t1].[ParentID]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[ChildID],
 	[t1].[ParentID]
@@ -45,7 +43,6 @@ ORDER BY
 	[t1].[ParentID]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT DISTINCT
 	[c4].[ChildID],
 	[c4].[ParentID]

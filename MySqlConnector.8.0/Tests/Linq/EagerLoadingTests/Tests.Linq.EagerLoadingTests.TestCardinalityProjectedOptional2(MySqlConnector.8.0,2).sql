@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`m_1`.`Id`,
 	`d`.`Id`,
@@ -11,7 +10,6 @@ FROM
 		LEFT JOIN `EntityMD` `a_ObjectD` ON `d`.`FKD` = `a_ObjectD`.`Id`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`e`.`Id`
 FROM

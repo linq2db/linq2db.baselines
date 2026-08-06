@@ -12,7 +12,6 @@ VALUES
 )
 
 -- DuckDB
-
 UPDATE
 	TableWithIdentity
 SET
@@ -20,7 +19,6 @@ SET
 	"Value" = 123
 
 -- DuckDB
-
 SELECT
 	t1.Id,
 	t1."Value"

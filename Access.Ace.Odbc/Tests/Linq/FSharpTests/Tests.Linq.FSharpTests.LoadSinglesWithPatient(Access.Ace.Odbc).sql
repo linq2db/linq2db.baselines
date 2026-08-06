@@ -1,12 +1,11 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT TOP 2
 	[p].[PersonID],
 	[p].[FirstName],
 	[p].[LastName],
 	[p].[MiddleName],
 	[p].[Gender],
-	[a_Patient].[PersonID],
+	[a_Patient].[PersonID] as [PersonID_1],
 	[a_Patient].[Diagnosis]
 FROM
 	[Person] [p]
@@ -15,14 +14,13 @@ WHERE
 	[p].[PersonID] = 1
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT TOP 2
 	[p].[PersonID],
 	[p].[FirstName],
 	[p].[LastName],
 	[p].[MiddleName],
 	[p].[Gender],
-	[a_Patient].[PersonID],
+	[a_Patient].[PersonID] as [PersonID_1],
 	[a_Patient].[Diagnosis]
 FROM
 	[Person] [p]

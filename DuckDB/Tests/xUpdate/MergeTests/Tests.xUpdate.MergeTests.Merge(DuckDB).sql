@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 MERGE INTO LinqDataTypes Target
 USING (
 	SELECT

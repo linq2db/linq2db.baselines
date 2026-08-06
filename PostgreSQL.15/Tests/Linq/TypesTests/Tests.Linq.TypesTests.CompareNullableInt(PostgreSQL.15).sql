@@ -1,12 +1,11 @@
-﻿-- PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t."ParentID",
 	t."Value1"
 FROM
 	"Parent" t
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL12
 DECLARE @param Integer -- Int32
 SET     @param = 1
 

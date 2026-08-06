@@ -32,7 +32,6 @@ VALUES
 )
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	e."Id",
 	e."Value1",
@@ -84,7 +83,6 @@ VALUES
 )
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	e."Id",
 	e."Value1",
@@ -152,7 +150,6 @@ VALUES
 )
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	e."Id",
 	e."Value1",
@@ -171,7 +168,6 @@ WHERE
 FETCH NEXT 1 ROWS ONLY
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(*)
 FROM

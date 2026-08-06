@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 INSERT INTO `IgnoreConflictsTable`
 (
 	`ID`,
@@ -10,7 +9,6 @@ VALUES
 (2,'original2')
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 INSERT IGNORE INTO `IgnoreConflictsTable`
 (
 	`ID`,
@@ -22,7 +20,6 @@ VALUES
 (3,'new3')
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`t1`.`ID`,
 	`t1`.`Value`

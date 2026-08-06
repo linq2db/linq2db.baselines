@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	CASE
 		WHEN [t].[Kind] = 1 OR [t].[Kind] = 2 THEN 1
@@ -20,7 +19,6 @@ FROM
 	[Item] [t]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[t1].[ItemId],
 	[t1].[Kind],
@@ -31,7 +29,6 @@ FROM
 	[Item] [t1]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[x_1].[Color_1],
 	[x_1].[Kind],
@@ -75,7 +72,6 @@ WHERE
 	NOT ([x_1].[Color] = 1 AND ([x_1].[Color_1] = 1 AND [x_1].[Color_2] = 1 OR [x_1].[Color_1] = 0) OR [x_1].[Color] = 0 AND [x_1].[Color_4] = 0)
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[t1].[ItemId],
 	[t1].[Kind],
@@ -86,7 +82,6 @@ FROM
 	[Item] [t1]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[x_1].[Color_1],
 	[x_1].[Kind],
@@ -131,7 +126,6 @@ WHERE
 	[x_1].[Color] = 0 AND [x_1].[Color_4] = 0
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[t1].[ItemId],
 	[t1].[Kind],
@@ -142,7 +136,6 @@ FROM
 	[Item] [t1]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[x_1].[Size_2],
 	[x_1].[Kind],
@@ -186,7 +179,6 @@ WHERE
 	NOT ([x_1].[Size_1] = 1 AND [x_1].[Size_2] = 0 OR [x_1].[Size_1] = 0 AND ([x_1].[Size_3] = 1 AND [x_1].[Size_4] = 1 OR [x_1].[Size_3] = 0))
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[t1].[ItemId],
 	[t1].[Kind],
@@ -197,7 +189,6 @@ FROM
 	[Item] [t1]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[x_1].[Size_2],
 	[x_1].[Kind],
@@ -241,7 +232,6 @@ WHERE
 	[x_1].[Size_1] = 1 AND [x_1].[Size_2] = 0 OR [x_1].[Size_1] = 0 AND ([x_1].[Size_3] = 1 AND [x_1].[Size_4] = 1 OR [x_1].[Size_3] = 0)
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[t1].[ItemId],
 	[t1].[Kind],

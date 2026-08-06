@@ -20,7 +20,6 @@ VALUES
 )
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Stamp",
@@ -45,7 +44,6 @@ WHERE
 	r."Id" = 2 AND r."Id" = :Id AND r."Stamp" = :Stamp
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Stamp",
@@ -70,7 +68,6 @@ WHERE
 	r."Id" = 1 AND r."Id" = :Id AND r."Stamp" = :Stamp
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Stamp",
@@ -90,7 +87,6 @@ WHERE
 	r."Id" = 2 AND r."Id" = :Id AND r."Stamp" = :Stamp
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Stamp",
@@ -110,7 +106,6 @@ WHERE
 	r."Id" = 1 AND r."Id" = :Id AND r."Stamp" = :Stamp
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Stamp",

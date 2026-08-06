@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT /*+ GROUPING */
 	p."ParentID",
 	p."Value1"

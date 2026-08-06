@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 MERGE INTO "MyChildClass" "Target"
 USING (VALUES
 	(1,10), (2,20), (3,30), (4,40)

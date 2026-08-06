@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[tt].[Key_1],
 	SUM([tt].[ChildID])

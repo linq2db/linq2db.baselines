@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DECLARE @Value1 Integer -- Int32
 SET     @Value1 = 3
 
@@ -8,15 +8,14 @@ SELECT DISTINCT
 FROM
 	"Parent" p
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."ParentID",
 	t1."Value1"
 FROM
 	"Parent" t1
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DECLARE @Value1 Integer -- Int32
 SET     @Value1 = 3
 
@@ -26,8 +25,7 @@ SELECT DISTINCT
 FROM
 	"Parent" p
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."ParentID",
 	t1."Value1"

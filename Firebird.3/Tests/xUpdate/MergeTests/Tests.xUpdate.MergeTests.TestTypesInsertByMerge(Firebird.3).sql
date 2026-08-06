@@ -1,15 +1,12 @@
 ﻿-- Firebird.3 Firebird3
-
 DELETE FROM
 	"TestMerge1" "t1"
 
 -- Firebird.3 Firebird3
-
 DELETE FROM
 	"TestMerge2" "t1"
 
 -- Firebird.3 Firebird3
-
 MERGE INTO "TestMerge1" "Target"
 USING (
 	SELECT 1 AS "Id", CAST(NULL AS Int) AS "FieldInt32", CAST(NULL AS BigInt) AS "FieldInt64", CAST(NULL AS BOOLEAN) AS "FieldBoolean", NULL AS "FieldString", NULL AS "FieldNString", CAST(NULL AS CHAR(1)) AS "FieldChar", CAST(NULL AS CHAR(1)) AS "FieldNChar", CAST(NULL AS Real) AS "FieldFloat", CAST(NULL AS TimeStamp) AS "FieldDateTime", CAST(NULL AS CHAR(16) CHARACTER SET OCTETS) AS "FieldGuid", CAST(NULL AS Decimal(18, 10)) AS "FieldDecimal", CAST(NULL AS TimeStamp) AS "FieldDate", NULL AS "FieldEnumString", CAST(NULL AS Int) AS "FieldEnumNumber" FROM rdb$database
@@ -79,7 +76,6 @@ VALUES
 )
 
 -- Firebird.3 Firebird3
-
 MERGE INTO "TestMerge2" "Target"
 USING (
 	SELECT 3 AS "Id", -123 AS "FieldInt32", CAST(987 AS BigInt) AS "FieldInt64", CAST(NULL AS BOOLEAN) AS "FieldBoolean", CAST('<>?/.,;''zZ":' AS VARCHAR(12)) AS "FieldString", CAST('`~!@#$%^&*()_+{}|[]\' AS VARCHAR(20)) AS "FieldNString", '' AS "FieldChar", '' AS "FieldNChar", CAST(-1.17549996E-38 AS Real) AS "FieldFloat", TIMESTAMP '2098-10-12 21:14:15.9070' AS "FieldDateTime", X'FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF' AS "FieldGuid", CAST(-0.123 AS Decimal(3, 3)) AS "FieldDecimal", TIMESTAMP '2111-11-23 00:00:00.0000' AS "FieldDate", NULL AS "FieldEnumString", -2147483647 AS "FieldEnumNumber" FROM rdb$database
@@ -149,7 +145,6 @@ VALUES
 )
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t1"."Id",
 	"t1"."Field1",
@@ -172,7 +167,6 @@ ORDER BY
 	"t1"."Id"
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t1"."Id",
 	"t1"."Field1",

@@ -1,5 +1,4 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(*)
 FROM
@@ -8,7 +7,6 @@ WHERE
 	s."Enum" IS NULL
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(*)
 FROM

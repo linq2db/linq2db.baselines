@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 INSERT INTO [BlobClass]
 (
 	[Id],
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT TOP (1)
 	[t1].[Id],
 	[t1].[BlobValue]
@@ -22,7 +20,6 @@ WHERE
 	[t1].[Id] = 1
 
 -- SqlCe
-
 UPDATE
 	[BlobClass]
 SET
@@ -31,7 +28,6 @@ WHERE
 	[BlobClass].[Id] = 1
 
 -- SqlCe
-
 SELECT TOP (1)
 	[t1].[Id],
 	[t1].[BlobValue]

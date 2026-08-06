@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
-
 IF (OBJECT_ID(N'[DisposableTable]', N'U') IS NULL)
 	CREATE TABLE [DisposableTable]
 	(
@@ -9,6 +8,5 @@ IF (OBJECT_ID(N'[DisposableTable]', N'U') IS NULL)
 	)
 
 -- SqlServer.2016.MS SqlServer.2016
-
 DROP TABLE IF EXISTS [DisposableTable]
 

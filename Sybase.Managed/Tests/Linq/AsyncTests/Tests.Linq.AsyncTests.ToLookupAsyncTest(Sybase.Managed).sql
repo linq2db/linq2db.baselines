@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID]
@@ -10,7 +9,6 @@ ORDER BY
 	[t1].[ChildID]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID]

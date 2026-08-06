@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.15 PostgreSQL12
 SELECT
 	product_1."Id",
 	(
@@ -20,16 +19,14 @@ SELECT
 FROM
 	"Product" product_1
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Name"
 FROM
 	"Product" t1
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."ProductId",

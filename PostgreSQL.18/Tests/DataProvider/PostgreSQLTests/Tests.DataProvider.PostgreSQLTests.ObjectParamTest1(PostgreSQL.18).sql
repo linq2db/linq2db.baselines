@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL12
 DECLARE @categoryParam Integer -- Int32
 SET     @categoryParam = 1
 

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[t2].[c2],
 	[t2].[c1],

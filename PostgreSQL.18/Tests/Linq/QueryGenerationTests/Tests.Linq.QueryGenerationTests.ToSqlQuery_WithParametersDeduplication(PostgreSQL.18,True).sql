@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
-
+﻿-- PostgreSQL.18 PostgreSQL12
 SELECT
 	p."FirstName",
 	p."PersonID",
@@ -11,7 +10,7 @@ FROM
 WHERE
 	p."FirstName" = 'John' OR p."LastName" = 'John'
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL12
 DECLARE @firstName Text(4) -- String
 SET     @firstName = 'John'
 

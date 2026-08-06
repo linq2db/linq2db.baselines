@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 CREATE TEMPORARY TABLE `TestTable`
 (
 	`Id`    INT NOT NULL,
@@ -9,6 +8,5 @@ CREATE TEMPORARY TABLE `TestTable`
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DROP TEMPORARY TABLE IF EXISTS `TestTable`
 

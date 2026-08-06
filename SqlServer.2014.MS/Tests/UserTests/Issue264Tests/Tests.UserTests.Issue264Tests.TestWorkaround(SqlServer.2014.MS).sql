@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	COUNT(*)
 FROM
@@ -12,7 +11,6 @@ FROM
 	) [t2]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 SELECT DISTINCT
 	MONTH([t1].[DateTimeValue]),
 	YEAR([t1].[DateTimeValue])

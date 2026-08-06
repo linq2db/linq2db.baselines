@@ -1,14 +1,12 @@
-﻿-- PostgreSQL.13 PostgreSQL
-
+﻿-- PostgreSQL.13 PostgreSQL12
 SELECT
 	e."Id"
 FROM
 	"ConcatTestEntity" e
 WHERE
-	(e."StrReq" || e."StrReq") IS NOT NULL
+	e."StrReq" IS NOT NULL
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Str1",

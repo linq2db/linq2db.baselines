@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	COUNT(*),
 	COUNT(c_1.ChildID),
@@ -13,28 +12,24 @@ GROUP BY
 	g_1.ParentID
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	COUNT(*)
 FROM
 	Child t1
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	COUNT(t1.ParentID)
 FROM
 	Child t1
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	COUNT(ALL t1.ParentID)
 FROM
 	Child t1
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	COUNT(DISTINCT t1.ParentID)
 FROM

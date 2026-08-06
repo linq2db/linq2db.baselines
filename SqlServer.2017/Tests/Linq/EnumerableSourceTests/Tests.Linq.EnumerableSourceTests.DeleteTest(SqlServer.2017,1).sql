@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 DELETE [t]
 FROM
 	[TableToInsert] [t]

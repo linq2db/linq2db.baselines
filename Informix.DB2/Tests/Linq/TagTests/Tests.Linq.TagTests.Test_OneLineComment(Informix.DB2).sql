@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 /* My Test */
 SELECT
 	x.FirstName,

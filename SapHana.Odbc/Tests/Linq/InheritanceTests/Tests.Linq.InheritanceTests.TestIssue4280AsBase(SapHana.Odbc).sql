@@ -45,7 +45,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."DeviceType",
 	"t1"."Id",
@@ -92,7 +91,6 @@ WHERE
 	"t1"."Id" = ?
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."DeviceType",
 	"t1"."Id",

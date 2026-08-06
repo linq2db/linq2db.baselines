@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 SELECT
 	RTRIM([t].[VarCharColumn], '.+')
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	[t].[Id]
 
 -- SqlServer.2022
-
 SELECT
 	RTRIM([t].[VarCharColumn], '.+')
 FROM

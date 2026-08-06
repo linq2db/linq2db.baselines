@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	m_1.Id,
 	a_Author.AuthorId,
@@ -37,7 +36,6 @@ FROM
 		LEFT JOIN Author a_Author ON d.FkAuthorId = a_Author.AuthorId
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	m_1.Id,
 	a_Author.AuthorId,
@@ -77,9 +75,8 @@ WHERE
 	a_Author.AuthorName <> 'A' OR a_Author.AuthorName IS NULL
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
-	a_Book.BookId as Id,
+	a_Book.BookId,
 	a_Book.BookName,
 	toInt32(0) as projection__set_id__
 FROM
@@ -90,7 +87,7 @@ WHERE
 	a_Book.Discriminator = 'Roman'
 UNION ALL
 SELECT
-	a_Book_1.BookId as Id,
+	a_Book_1.BookId as BookId,
 	a_Book_1.BookName as BookName,
 	toInt32(1) as projection__set_id__
 FROM
@@ -101,7 +98,6 @@ WHERE
 	a_Book_1.Discriminator = 'Novel'
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	m_1.BookId,
 	m_1.AuthorId,
@@ -121,7 +117,6 @@ FROM
 		LEFT JOIN Author a_Author ON d_1.FkAuthorId = a_Author.AuthorId
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	m_1.AuthorId,
 	a_Book.BookId,
@@ -135,7 +130,6 @@ FROM
 		LEFT JOIN Book a_Book ON d.FkBookId = a_Book.BookId
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.AuthorId,
 	t1.AuthorName

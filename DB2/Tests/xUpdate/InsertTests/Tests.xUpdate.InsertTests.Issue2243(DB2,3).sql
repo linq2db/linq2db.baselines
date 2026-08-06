@@ -33,7 +33,6 @@ WHEN NOT MATCHED THEN
 	)
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."id",
 	"t1"."name",
@@ -78,7 +77,6 @@ WHEN NOT MATCHED THEN
 	)
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."id",
 	"t1"."name",

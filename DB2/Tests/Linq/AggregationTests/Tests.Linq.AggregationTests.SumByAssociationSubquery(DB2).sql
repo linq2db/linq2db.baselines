@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"g_1"."Id",
 	SUM(Coalesce(CAST("a_Values"."Value" AS Int), 0))
@@ -10,7 +9,6 @@ GROUP BY
 	"g_1"."Id"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"m_1"."Id",
 	"d"."Id",
@@ -22,7 +20,6 @@ FROM
 		INNER JOIN "ItemValue" "d" ON "m_1"."Id" = "d"."ItemId"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Name"

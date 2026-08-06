@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	MIN([t2].[ParentID])
 FROM

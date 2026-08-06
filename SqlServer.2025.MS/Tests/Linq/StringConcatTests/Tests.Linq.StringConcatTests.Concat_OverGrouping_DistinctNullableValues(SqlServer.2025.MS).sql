@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[g_2].[Key_1],
 	Coalesce((
@@ -26,7 +25,6 @@ ORDER BY
 	[g_2].[Key_1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[PK],
 	[t1].[GrpId],

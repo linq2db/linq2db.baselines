@@ -1,26 +1,22 @@
 ﻿-- DuckDB
-
 DELETE FROM
 	GrandChild c_1
 WHERE
 	c_1.ParentID >= 1000
 
 -- DuckDB
-
 DELETE FROM
 	Child c_1
 WHERE
 	c_1.ParentID >= 1000
 
 -- DuckDB
-
 DELETE FROM
 	Parent c_1
 WHERE
 	c_1.ParentID >= 1000
 
 -- DuckDB
-
 INSERT INTO Parent
 (
 	ParentID
@@ -31,7 +27,6 @@ VALUES
 )
 
 -- DuckDB
-
 INSERT INTO Child
 (
 	ParentID,
@@ -44,7 +39,6 @@ VALUES
 )
 
 -- DuckDB
-
 INSERT INTO GrandChild
 (
 	ParentID,
@@ -59,7 +53,6 @@ VALUES
 )
 
 -- DuckDB
-
 INSERT INTO GrandChild
 (
 	ParentID,
@@ -74,7 +67,6 @@ VALUES
 )
 
 -- DuckDB
-
 DELETE FROM
 	GrandChild t1
 WHERE
@@ -94,21 +86,18 @@ WHERE
 	)
 
 -- DuckDB
-
 DELETE FROM
 	GrandChild c_1
 WHERE
 	c_1.ParentID >= 1000
 
 -- DuckDB
-
 DELETE FROM
 	Child c_1
 WHERE
 	c_1.ParentID >= 1000
 
 -- DuckDB
-
 DELETE FROM
 	Parent c_1
 WHERE

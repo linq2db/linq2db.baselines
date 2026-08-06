@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 SELECT
 	[a_1].[Id],
 	[a_1].[NullValue]

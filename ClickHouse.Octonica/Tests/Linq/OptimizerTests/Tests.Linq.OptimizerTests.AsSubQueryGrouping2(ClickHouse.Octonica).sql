@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	COUNT(x_1.Key2),
 	COUNT(x_1.Key1)

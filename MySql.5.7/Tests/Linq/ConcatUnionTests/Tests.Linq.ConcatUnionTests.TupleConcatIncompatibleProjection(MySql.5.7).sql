@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`x`.`Value1`,
 	`x`.`ParentID`
@@ -17,7 +16,6 @@ WHERE
 	`p2`.`ParentID` <= 3
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`t1`.`ParentID`,
 	`t1`.`Value1`

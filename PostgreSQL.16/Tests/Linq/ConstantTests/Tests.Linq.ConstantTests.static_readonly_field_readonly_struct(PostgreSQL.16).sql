@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	e."Id",
 	e."GuidValue",
@@ -10,8 +9,7 @@ FROM
 WHERE
 	e."Id" = 1 AND e."Id" = 2
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."GuidValue",
@@ -20,8 +18,7 @@ SELECT
 FROM
 	"TestConstantsData" t1
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	e."Id",
 	e."GuidValue",
@@ -32,8 +29,7 @@ FROM
 WHERE
 	e."Id" = 1 AND e."Id" = 2
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."GuidValue",

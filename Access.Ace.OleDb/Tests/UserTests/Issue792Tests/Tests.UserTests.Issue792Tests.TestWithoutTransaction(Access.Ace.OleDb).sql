@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	COUNT(*)
 FROM
@@ -74,19 +73,16 @@ SET     @Gender = chr(0)
 [Person_Update]
 
 -- Access.Ace.OleDb AccessOleDb
-
 [ThisProcedureNotVisibleFromODBC]
 
 RollbackTransaction
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	COUNT(*)
 FROM
 	[AllTypes] [t1]
 
 -- Access.Ace.OleDb AccessOleDb
-
 DELETE FROM
 	[AllTypes] [t1]
 WHERE

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
-
 SELECT
 	COUNT([x_1].[Key2]),
 	COUNT([x_1].[Key1])

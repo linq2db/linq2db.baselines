@@ -1,11 +1,9 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
-
 DELETE [t1]
 FROM
 	[TestMerge1] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 MERGE INTO [TestMerge1] [Target]
 USING (VALUES
 	(0,1,2,4)
@@ -36,7 +34,6 @@ VALUES
 ;
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Field1],
@@ -50,13 +47,11 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 DELETE [t1]
 FROM
 	[TestMerge1] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 MERGE INTO [TestMerge1] [Target]
 USING (VALUES
 	(10,11,12,14)
@@ -87,7 +82,6 @@ VALUES
 ;
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Field1],
@@ -101,13 +95,11 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 DELETE [t1]
 FROM
 	[TestMerge1] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 MERGE INTO [TestMerge1] [Target]
 USING (VALUES
 	(20,21,22,24), (30,31,32,34)
@@ -138,7 +130,6 @@ VALUES
 ;
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Field1],

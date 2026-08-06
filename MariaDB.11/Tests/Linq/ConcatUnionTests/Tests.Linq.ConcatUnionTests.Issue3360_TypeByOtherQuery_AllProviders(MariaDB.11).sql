@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`p`.`Id`,
 	`p`.`Str`
@@ -13,7 +12,6 @@ FROM
 	`Issue3360Table` `p_1`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`p`.`Id`,
 	CAST('str' AS CHAR(255))

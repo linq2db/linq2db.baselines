@@ -27,7 +27,6 @@ END
 
 
 -- SqlServer.2017
-
 SELECT
 	[e].[IsDeleted],
 	[e].[ProductID],
@@ -48,7 +47,6 @@ WHERE
 
 
 -- SqlServer.2017
-
 SELECT
 	[e].[IsDeleted],
 	[e].[ProductID],
@@ -69,7 +67,6 @@ WHERE
 
 
 -- SqlServer.2017
-
 SELECT
 	[e].[IsDeleted],
 	[e].[ProductID],
@@ -90,7 +87,6 @@ WHERE
 
 
 -- SqlServer.2017
-
 SELECT
 	IIF(EXISTS(
 		SELECT

@@ -1,9 +1,7 @@
 ﻿-- SqlServer.Contained.MS SqlServer.2019
-
 SELECT Cast('2012-12-12 12:12:00' as smalldatetime)
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT Cast('2012-12-12 12:12:00' as smalldatetime)
 
 -- SqlServer.Contained.MS SqlServer.2019

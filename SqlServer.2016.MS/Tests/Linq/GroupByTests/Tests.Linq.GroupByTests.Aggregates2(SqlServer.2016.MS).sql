@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	SUM([g_1].[ChildID]),
 	MIN([g_1].[ChildID]),

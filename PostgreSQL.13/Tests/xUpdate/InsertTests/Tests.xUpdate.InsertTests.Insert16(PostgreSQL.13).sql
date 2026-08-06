@@ -1,11 +1,10 @@
-﻿-- PostgreSQL.13 PostgreSQL
-
+﻿-- PostgreSQL.13 PostgreSQL12
 DELETE FROM
 	"Person" t1
 WHERE
 	t1."FirstName" LIKE 'Insert16%' ESCAPE '~'
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL12
 DECLARE @name Integer -- Int32
 SET     @name = 8
 DECLARE @idx Integer -- Int32
@@ -24,8 +23,7 @@ VALUES
 	'M'
 )
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -33,8 +31,7 @@ FROM
 WHERE
 	t1."FirstName" LIKE 'Insert16%' ESCAPE '~'
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 DELETE FROM
 	"Person" t1
 WHERE

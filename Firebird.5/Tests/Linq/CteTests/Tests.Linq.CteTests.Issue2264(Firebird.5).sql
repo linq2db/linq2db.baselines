@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 WITH RECURSIVE CTE
 (
 	"Level_1",

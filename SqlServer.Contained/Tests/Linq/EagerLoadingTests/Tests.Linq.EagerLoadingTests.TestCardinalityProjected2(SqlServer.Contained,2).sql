@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -11,7 +10,6 @@ FROM
 		LEFT JOIN [EntityMD] [a_ObjectD] ON [d].[FKD] = [a_ObjectD].[Id]
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[e].[Id]
 FROM

@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 INSERT INTO "ValueItem"
 (
 	"Value"
@@ -10,7 +9,6 @@ VALUES
 )
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"row_1"."Value"
 FROM

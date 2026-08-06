@@ -1,5 +1,4 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	p."FirstName"
 FROM
@@ -9,7 +8,6 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(*)
 FROM
@@ -18,7 +16,6 @@ WHERE
 	Lower(p."FirstName") LIKE 'joh%' ESCAPE '~' AND p."PersonID" = 1
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(*)
 FROM

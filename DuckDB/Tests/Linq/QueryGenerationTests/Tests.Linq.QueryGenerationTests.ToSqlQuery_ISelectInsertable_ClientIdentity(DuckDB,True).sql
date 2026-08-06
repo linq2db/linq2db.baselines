@@ -12,7 +12,6 @@ VALUES
 )
 
 -- DuckDB
-
 INSERT INTO TableWithIdentity
 (
 	Id,
@@ -25,7 +24,6 @@ FROM
 	TableWithIdentitySrc t1
 
 -- DuckDB
-
 SELECT
 	t1.Id,
 	t1."Value"

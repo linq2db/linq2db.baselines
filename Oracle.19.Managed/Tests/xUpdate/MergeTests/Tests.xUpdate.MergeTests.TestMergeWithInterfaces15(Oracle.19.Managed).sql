@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 MERGE INTO "ReviewIndexes" Target
 USING (
 	SELECT 1 AS "Id", '2' AS "Value_1" FROM sys.dual) "Source"

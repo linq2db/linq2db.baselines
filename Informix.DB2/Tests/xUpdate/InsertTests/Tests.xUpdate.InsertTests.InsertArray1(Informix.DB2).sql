@@ -1,12 +1,10 @@
 ﻿-- Informix.DB2 Informix
-
 DELETE FROM
 	LinqDataTypes
 WHERE
 	LinqDataTypes.ID > 1000
 
 -- Informix.DB2 Informix
-
 INSERT INTO LinqDataTypes
 (
 	ID,
@@ -21,7 +19,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT FIRST 2
 	t.ID,
 	t.MoneyValue,
@@ -36,7 +33,6 @@ WHERE
 	t.ID = 1001
 
 -- Informix.DB2 Informix
-
 DELETE FROM
 	LinqDataTypes
 WHERE

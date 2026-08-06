@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[m_1].[Id],
 	[d].[ItemId],
@@ -19,7 +18,6 @@ WHERE
 	)
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[i].[Id],
 	[stock_1].[TotalAvailable]

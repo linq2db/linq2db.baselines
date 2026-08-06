@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
-
 SELECT TOP (1)
 	CASE
 		WHEN [t].[EnumValue] = N'F' THEN N'First'

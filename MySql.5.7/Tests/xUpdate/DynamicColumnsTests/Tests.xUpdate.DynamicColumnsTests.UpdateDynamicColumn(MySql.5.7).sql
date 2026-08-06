@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 INSERT INTO `Person`
 (
 	`FirstName`,
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	COUNT(*)
 FROM
@@ -23,7 +21,6 @@ WHERE
 	`c_1`.`LastName` = 'Limonadovy'
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 UPDATE
 	`Person` `c_1`
 SET
@@ -32,7 +29,6 @@ WHERE
 	`c_1`.`LastName` = 'Limonadovy'
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	COUNT(*)
 FROM

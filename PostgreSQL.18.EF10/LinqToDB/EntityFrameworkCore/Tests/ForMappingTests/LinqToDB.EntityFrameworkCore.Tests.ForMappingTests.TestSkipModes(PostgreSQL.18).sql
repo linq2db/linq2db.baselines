@@ -5,7 +5,7 @@ INSERT INTO "SkipModes" ("Id", "InsertOnly")
 VALUES (@p0, @p1);
 
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @InsertOnly Integer -- Int32
@@ -24,8 +24,7 @@ VALUES
 
 
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."InsertOnly",
@@ -45,7 +44,7 @@ UPDATE "SkipModes" SET "UpdateOnly" = @p0
 WHERE "Id" = @p1;
 
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL12
 DECLARE @UpdateOnly Integer -- Int32
 SET     @UpdateOnly = 12
 DECLARE @Id Integer -- Int32
@@ -60,8 +59,7 @@ WHERE
 
 
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."InsertOnly",

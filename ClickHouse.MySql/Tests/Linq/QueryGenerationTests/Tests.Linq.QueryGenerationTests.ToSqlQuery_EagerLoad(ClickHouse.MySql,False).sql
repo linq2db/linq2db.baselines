@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	p.ParentID,
 	p.Value1
@@ -9,7 +8,6 @@ WHERE
 	p.ParentID = 2
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	p.FirstName,
 	p.PersonID,

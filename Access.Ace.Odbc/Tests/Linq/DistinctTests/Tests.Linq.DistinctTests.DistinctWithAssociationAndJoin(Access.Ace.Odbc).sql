@@ -1,9 +1,8 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[ChildID],
 	[a_Parent_1].[ParentID],
-	[p].[ParentID]
+	[p].[ParentID] as [ParentID_1]
 FROM
 	((
 		SELECT DISTINCT
@@ -21,18 +20,16 @@ ORDER BY
 	[t1].[ChildID]
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID],
-	[a_Parent].[ParentID],
+	[a_Parent].[ParentID] as [ParentID_1],
 	[a_Parent].[Value1]
 FROM
 	[Child] [t1]
 		LEFT JOIN [Parent] [a_Parent] ON ([t1].[ParentID] = [a_Parent].[ParentID])
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

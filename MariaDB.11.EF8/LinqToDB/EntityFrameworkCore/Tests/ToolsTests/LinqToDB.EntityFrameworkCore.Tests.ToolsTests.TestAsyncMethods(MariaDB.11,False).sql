@@ -24,7 +24,6 @@ SELECT EXISTS (
 
 
 -- MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`e`.`IsDeleted`,
 	`e`.`ProductID`,
@@ -45,7 +44,6 @@ WHERE
 
 
 -- MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`e`.`IsDeleted`,
 	`e`.`ProductID`,
@@ -66,7 +64,6 @@ WHERE
 
 
 -- MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`e`.`IsDeleted`,
 	`e`.`ProductID`,
@@ -87,7 +84,6 @@ WHERE
 
 
 -- MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	EXISTS(
 		SELECT

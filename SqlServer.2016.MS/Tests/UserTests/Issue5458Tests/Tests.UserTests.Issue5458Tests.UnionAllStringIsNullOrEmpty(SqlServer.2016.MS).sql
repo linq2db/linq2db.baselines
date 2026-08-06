@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	[t1].[Id],
 	IIF([t1].[Value_1] IS NULL OR LEN([t1].[Value_1] + N'.') = 1, 1, 0)

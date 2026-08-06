@@ -53,7 +53,6 @@ WHEN NOT MATCHED THEN
 	);
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	COUNT(*)
 FROM
@@ -114,7 +113,6 @@ WHEN NOT MATCHED THEN
 	);
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	COUNT(*)
 FROM

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 SELECT
 	[t].[PK],
 	[t].[ID]
@@ -16,7 +15,6 @@ WHERE
 	)
 
 -- SqlServer.2005
-
 SELECT
 	[t1].[PK],
 	[t1].[ID]
@@ -24,7 +22,6 @@ FROM
 	[test_in_1] [t1]
 
 -- SqlServer.2005
-
 SELECT
 	[t1].[PK],
 	[t1].[ID],

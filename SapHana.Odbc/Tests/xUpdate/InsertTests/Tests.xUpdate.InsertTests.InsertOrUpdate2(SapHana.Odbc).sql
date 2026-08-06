@@ -24,7 +24,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT CURRENT_IDENTITY_VALUE() FROM DUMMY
 
 -- SapHana.Odbc SapHanaOdbc

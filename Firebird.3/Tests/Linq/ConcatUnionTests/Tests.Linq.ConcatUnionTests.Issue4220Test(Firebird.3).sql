@@ -33,7 +33,6 @@ VALUES
 )
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"e"."Id",
 	"e"."AOnly",

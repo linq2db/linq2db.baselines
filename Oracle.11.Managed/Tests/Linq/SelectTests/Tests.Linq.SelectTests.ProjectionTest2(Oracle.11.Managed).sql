@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	a_Patient."PersonID",
 	a_Patient."Diagnosis"

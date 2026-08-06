@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 INSERT INTO Person
 (
 	FirstName,
@@ -18,7 +17,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	x.FirstName,
 	x.PersonID,
@@ -32,7 +30,6 @@ WHERE
 LIMIT 1
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	Person
 DELETE WHERE

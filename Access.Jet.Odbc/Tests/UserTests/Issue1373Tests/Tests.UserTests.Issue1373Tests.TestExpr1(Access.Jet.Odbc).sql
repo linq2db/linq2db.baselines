@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 INSERT INTO [Issue1373Tests]
 (
 	[Id],
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- Access.Jet.Odbc AccessODBC
-
 INSERT INTO [Issue1373Tests]
 (
 	[Id],
@@ -25,7 +23,6 @@ VALUES
 )
 
 -- Access.Jet.Odbc AccessODBC
-
 INSERT INTO [Issue1373Tests]
 (
 	[Id],
@@ -38,7 +35,6 @@ VALUES
 )
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Field1]

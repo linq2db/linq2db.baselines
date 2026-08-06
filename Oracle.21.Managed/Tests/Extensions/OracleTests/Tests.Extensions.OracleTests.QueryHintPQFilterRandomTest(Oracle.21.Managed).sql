@@ -1,5 +1,4 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT /*+ PQ_FILTER(RANDOM) */
 	p."ParentID",
 	p."Value1"

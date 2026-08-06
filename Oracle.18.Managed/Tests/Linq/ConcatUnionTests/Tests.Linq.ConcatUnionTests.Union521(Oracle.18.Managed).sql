@@ -1,5 +1,4 @@
 ﻿-- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	p_1."Value1"
 FROM

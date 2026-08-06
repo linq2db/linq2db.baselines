@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	x.ParentID
 FROM
@@ -7,7 +6,6 @@ FROM
 		INNER JOIN Child y ON x.ParentID = y.ParentID
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT DISTINCT
 	g_1.ParentID
 FROM

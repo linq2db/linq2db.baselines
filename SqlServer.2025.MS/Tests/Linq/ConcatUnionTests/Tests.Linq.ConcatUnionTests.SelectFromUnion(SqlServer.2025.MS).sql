@@ -1,8 +1,7 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t_1].[ID],
-	DENSE_RANK() OVER(ORDER BY [t_1].[ID])
+	DENSE_RANK() OVER (ORDER BY [t_1].[ID])
 FROM
 	(
 		SELECT

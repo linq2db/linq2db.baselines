@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[r].[Id],
 	[r].[Value1] = [r].[Value2],
@@ -32,7 +31,6 @@ WHERE
 	[r].[Id] <> -1
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],

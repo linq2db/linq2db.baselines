@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
-
 IF (OBJECT_ID(N'[FluentTemp_Update]', N'U') IS NULL)
 	CREATE TABLE [FluentTemp_Update]
 	(
@@ -46,6 +45,5 @@ WHERE
 	[FluentTemp_Update].[ID] = 1
 
 -- SqlServer.2016.MS SqlServer.2016
-
 DROP TABLE IF EXISTS [FluentTemp_Update]
 

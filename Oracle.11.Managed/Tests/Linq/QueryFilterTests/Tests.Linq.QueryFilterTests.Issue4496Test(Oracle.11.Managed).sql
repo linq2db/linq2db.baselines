@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT DISTINCT
 	x."ParentID",
 	x."ChildID"
@@ -10,7 +9,6 @@ WHERE
 	x."ChildID" > 30
 
 -- Oracle.11.Managed Oracle11
-
 SELECT DISTINCT
 	x."ParentID",
 	x."ChildID"

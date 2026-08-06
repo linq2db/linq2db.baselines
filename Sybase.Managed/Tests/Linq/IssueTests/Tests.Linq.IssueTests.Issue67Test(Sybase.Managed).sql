@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[t_1].[ParentID],
 	[t_1].[count_1]

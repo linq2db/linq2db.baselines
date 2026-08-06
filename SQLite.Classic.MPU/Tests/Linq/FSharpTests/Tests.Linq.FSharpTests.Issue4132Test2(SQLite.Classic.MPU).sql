@@ -1,11 +1,33 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
+INSERT INTO [Issue4132Table]
+(
+	[Id],
+	[Number],
+	[Text]
+)
+VALUES
+(
+	1,
+	1,
+	'before'
+)
 
+-- SQLite.Classic.MPU SQLite.Classic SQLite
 UPDATE
 	[Issue4132Table]
 SET
-	[Id] = [Issue4132Table].[Id],
-	[Number] = [Issue4132Table].[Number],
 	[Text] = 'updated recently'
 WHERE
 	[Issue4132Table].[Number] = 1
+
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+SELECT
+	[r].[Id],
+	[r].[Number],
+	[r].[Text]
+FROM
+	[Issue4132Table] [r]
+WHERE
+	[r].[Id] = 1
+LIMIT 2
 

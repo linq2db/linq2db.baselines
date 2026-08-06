@@ -1,9 +1,7 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 Patient_SelectAll
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[a_Person].[PersonID],
 	[a_Person].[FirstName],

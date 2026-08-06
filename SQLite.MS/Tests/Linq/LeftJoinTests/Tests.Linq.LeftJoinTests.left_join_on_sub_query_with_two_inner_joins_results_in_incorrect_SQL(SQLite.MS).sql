@@ -12,7 +12,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	[a_1].[Id],
 	[bc].[AId],

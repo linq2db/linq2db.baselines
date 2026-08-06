@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	[person_1].[PersonID],
 	[t1].[PersonID]

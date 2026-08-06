@@ -77,7 +77,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT last_insert_rowid()
 
 -- SQLite.MS SQLite
@@ -107,7 +106,6 @@ WHERE
 	[SampleClass].[Id] = @Id AND [SampleClass].[KeyValue2] = @StrKey
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[KeyValue2],

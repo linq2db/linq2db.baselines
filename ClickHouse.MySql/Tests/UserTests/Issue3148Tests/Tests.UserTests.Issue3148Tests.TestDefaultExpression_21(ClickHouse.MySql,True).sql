@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Field1,
@@ -11,7 +10,6 @@ FROM
 	) t1
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Field1,

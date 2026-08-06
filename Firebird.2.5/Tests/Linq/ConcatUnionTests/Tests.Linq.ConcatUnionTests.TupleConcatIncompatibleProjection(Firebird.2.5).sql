@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	"x"."Value1",
 	"x"."ParentID"
@@ -17,7 +16,6 @@ WHERE
 	"p2"."ParentID" <= 3
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1"."ParentID",
 	"t1"."Value1"

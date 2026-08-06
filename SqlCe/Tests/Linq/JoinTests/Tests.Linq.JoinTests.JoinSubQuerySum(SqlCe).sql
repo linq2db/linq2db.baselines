@@ -1,8 +1,7 @@
 ﻿-- SqlCe
-
 SELECT
 	[p].[ParentID],
-	Coalesce([t1].[count_1], 0) as [count_1]
+	Coalesce([t1].[count_1], 0)
 FROM
 	[Parent] [p]
 		OUTER APPLY (

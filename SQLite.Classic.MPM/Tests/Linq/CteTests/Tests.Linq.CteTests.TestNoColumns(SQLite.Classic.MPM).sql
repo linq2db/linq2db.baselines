@@ -1,12 +1,10 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	COUNT(*)
 FROM
 	[Child] [t1]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 WITH [CTE1_] ([c1])
 AS
 (
@@ -21,7 +19,6 @@ FROM
 	[CTE1_] [t2]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 WITH [CTE1_] ([c1])
 AS
 (
@@ -36,7 +33,6 @@ FROM
 	[CTE1_] [t1]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 WITH [CTE1_] ([c1])
 AS
 (

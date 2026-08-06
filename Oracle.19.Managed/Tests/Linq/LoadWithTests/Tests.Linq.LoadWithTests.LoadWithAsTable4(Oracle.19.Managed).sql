@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	m_1."ParentID",
 	d."ParentID",
@@ -18,7 +17,6 @@ FROM
 		LEFT JOIN "Parent" a_Parent ON d."ParentID" = a_Parent."ParentID"
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	t."ParentID",
 	t."Value1"

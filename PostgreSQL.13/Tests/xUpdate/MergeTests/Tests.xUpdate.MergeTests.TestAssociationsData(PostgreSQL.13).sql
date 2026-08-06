@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
-
+﻿-- PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."PersonID",
 	t1."Diagnosis"
@@ -8,8 +7,7 @@ FROM
 ORDER BY
 	t1."PersonID"
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."PersonID",
 	t1."Taxonomy"
@@ -18,8 +16,7 @@ FROM
 ORDER BY
 	t1."PersonID"
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."FirstName",
 	t1."PersonID",

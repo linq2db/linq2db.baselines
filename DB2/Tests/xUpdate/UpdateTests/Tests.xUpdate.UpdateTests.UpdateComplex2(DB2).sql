@@ -30,7 +30,6 @@ FROM
 	)
 
 -- DB2 DB2.LUW DB2LUW
-
 UPDATE
 	"Person" "t1"
 SET

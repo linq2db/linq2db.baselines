@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"p"."PersonID",
 	"p"."FirstName",
@@ -16,7 +15,6 @@ WHERE
 LIMIT 2
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"p"."PersonID",
 	"p"."FirstName",

@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[p].[Id],
 	CStr('str1')
@@ -13,7 +12,6 @@ FROM
 	[Issue3360Table] [p_1]
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[p].[Id],
 	CStr('str2')

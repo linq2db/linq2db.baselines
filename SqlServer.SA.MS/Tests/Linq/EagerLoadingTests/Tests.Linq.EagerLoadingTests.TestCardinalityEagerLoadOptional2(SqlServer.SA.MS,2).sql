@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -13,7 +12,6 @@ FROM
 		LEFT JOIN [EntityMD] [a_ObjectD] ON [d].[FKD] = [a_ObjectD].[Id]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[FK],

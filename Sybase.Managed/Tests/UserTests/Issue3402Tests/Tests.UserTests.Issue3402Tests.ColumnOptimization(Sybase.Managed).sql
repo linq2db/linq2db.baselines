@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[ess].[ID]
 FROM
@@ -15,7 +14,6 @@ WHERE
 	)
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[ess].[ID]
 FROM

@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 CREATE TABLE [temp_table_1]
 (
 	[ID]    INTEGER       NOT NULL,
@@ -9,7 +8,6 @@ CREATE TABLE [temp_table_1]
 )
 
 -- SQLite.Classic SQLite
-
 INSERT INTO [temp_table_1]
 (
 	[ID],
@@ -19,7 +17,6 @@ VALUES
 (1,'Value')
 
 -- SQLite.Classic SQLite
-
 CREATE TABLE [temp_table_2]
 (
 	[Value] NVarChar(50) NOT NULL,
@@ -28,7 +25,6 @@ CREATE TABLE [temp_table_2]
 )
 
 -- SQLite.Classic SQLite
-
 INSERT INTO [temp_table_2]
 (
 	[Value]
@@ -47,10 +43,8 @@ FROM
 		) [t1] ON [gr].[ID] = [t1].[ID] AND [t1].[rn] = 1
 
 -- SQLite.Classic SQLite
-
 DROP TABLE IF EXISTS [temp_table_2]
 
 -- SQLite.Classic SQLite
-
 DROP TABLE IF EXISTS [temp_table_1]
 

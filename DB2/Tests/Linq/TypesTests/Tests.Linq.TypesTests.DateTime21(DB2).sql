@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t".ID,
 	"t"."MoneyValue",
@@ -29,7 +28,6 @@ WHERE
 	"t".ID = 1
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t".ID,
 	"t"."MoneyValue",

@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	a_Child.ParentID,
 	a_Child.ChildID
@@ -17,7 +16,6 @@ WHERE
 	sub.ParentID = g_1.ParentID
 
 -- Informix.DB2 Informix
-
 SELECT
 	a_Child.ParentID,
 	a_Child.ChildID

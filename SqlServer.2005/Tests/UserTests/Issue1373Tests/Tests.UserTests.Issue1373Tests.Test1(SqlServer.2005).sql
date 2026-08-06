@@ -50,7 +50,6 @@ VALUES
 )
 
 -- SqlServer.2005
-
 SELECT
 	[t1].[Id],
 	[t1].[Field1]

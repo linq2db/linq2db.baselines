@@ -3,7 +3,7 @@ DECLARE @p Int -- Int32
 SET     @p = 1
 
 SELECT TOP (2)
-	[p].[LastName] as [Value_1]
+	[p].[LastName]
 FROM
 	[Person] [p]
 WHERE

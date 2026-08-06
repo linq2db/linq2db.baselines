@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 INSERT INTO "Issue1107TB"
 (
 	"Id",

@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 DELETE FROM
 	[Child] [c_1]
 WHERE
@@ -32,7 +31,6 @@ WHERE
 	[c_1].[ChildID] = @id
 
 -- Access.Ace.OleDb AccessOleDb
-
 DELETE FROM
 	[Child] [c_1]
 WHERE

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
-
 CREATE TABLE [tempdb]..[#I1721Model]
 (
 	[TestDateTime2]           DateTime2      NOT NULL,
@@ -11,7 +10,6 @@ CREATE TABLE [tempdb]..[#I1721Model]
 )
 
 -- SqlServer.2008.MS SqlServer.2008
-
 IF (OBJECT_ID(N'[tempdb]..[#I1721Model]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#I1721Model]
 

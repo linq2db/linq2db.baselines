@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	t.c1
 FROM

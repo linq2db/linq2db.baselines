@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT * FROM (
 	SELECT
 		NULL                                                    AS PackageName,
@@ -21,7 +20,6 @@ SELECT * FROM (
 ) ORDER BY ProcedureName
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	NULL                                                 AS PackageName,
 	p.RDB$PROCEDURE_NAME                                 AS ProcedureName,
@@ -58,7 +56,6 @@ FROM RDB$FUNCTION_ARGUMENTS p
 
 RollbackTransaction
 -- Firebird.2.5 Firebird
-
 SELECT * FROM (
 	SELECT
 		NULL                                                    AS PackageName,
@@ -80,7 +77,6 @@ SELECT * FROM (
 ) ORDER BY ProcedureName
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	NULL                                                 AS PackageName,
 	p.RDB$PROCEDURE_NAME                                 AS ProcedureName,
@@ -117,7 +113,6 @@ FROM RDB$FUNCTION_ARGUMENTS p
 
 RollbackTransaction
 -- Firebird.2.5 Firebird
-
 SELECT * FROM (
 	SELECT
 		NULL                                                    AS PackageName,
@@ -139,7 +134,6 @@ SELECT * FROM (
 ) ORDER BY ProcedureName
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	NULL                                                 AS PackageName,
 	p.RDB$PROCEDURE_NAME                                 AS ProcedureName,

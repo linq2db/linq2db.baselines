@@ -1,7 +1,6 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
-	a_Book.BookId as Id,
+	a_Book.BookId,
 	a_Book.BookName
 FROM
 	Author t1
@@ -11,7 +10,7 @@ WHERE
 	a_Book.Discriminator = 'Roman'
 INTERSECT DISTINCT
 SELECT
-	a_Book_1.BookId as Id,
+	a_Book_1.BookId as BookId,
 	a_Book_1.BookName as BookName
 FROM
 	Author t2
@@ -21,7 +20,6 @@ WHERE
 	a_Book_1.Discriminator = 'Novel'
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	m_1.AuthorId,
 	a_Book.BookId,
@@ -35,7 +33,6 @@ FROM
 		LEFT JOIN Book a_Book ON d.FkBookId = a_Book.BookId
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.AuthorId,
 	t1.AuthorName

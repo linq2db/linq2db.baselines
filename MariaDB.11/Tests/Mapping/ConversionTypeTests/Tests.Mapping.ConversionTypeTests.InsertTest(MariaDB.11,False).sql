@@ -33,7 +33,6 @@ VALUES
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `TrimTestTable`
 (
 	`ID`,
@@ -46,7 +45,6 @@ VALUES
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`r`.`ID`,
 	`r`.`Data`
@@ -56,7 +54,6 @@ ORDER BY
 	`r`.`ID`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`r`.`ID`,
 	`r`.`Data`

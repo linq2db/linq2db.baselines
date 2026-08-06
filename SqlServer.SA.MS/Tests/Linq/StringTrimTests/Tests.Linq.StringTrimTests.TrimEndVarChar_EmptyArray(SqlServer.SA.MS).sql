@@ -1,12 +1,10 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	RTRIM(Coalesce([t].[VarCharColumn], '') + N'   ')
 FROM
 	[StringTrimTable] [t]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[CharColumn],

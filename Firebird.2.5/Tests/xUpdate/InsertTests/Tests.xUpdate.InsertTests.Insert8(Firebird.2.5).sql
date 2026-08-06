@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 DELETE FROM
 	"Child" "c_1"
 WHERE
@@ -18,8 +17,8 @@ INSERT INTO "Child"
 )
 VALUES
 (
-	CAST(@ParentID AS Int),
-	CAST(@id AS Int)
+	@ParentID,
+	@id
 )
 
 -- Firebird.2.5 Firebird
@@ -34,7 +33,6 @@ WHERE
 	"c_1"."ChildID" = @id
 
 -- Firebird.2.5 Firebird
-
 DELETE FROM
 	"Child" "c_1"
 WHERE

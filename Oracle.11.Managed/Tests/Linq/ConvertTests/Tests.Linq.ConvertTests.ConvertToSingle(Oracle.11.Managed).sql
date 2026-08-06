@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	CAST(p."MoneyValue" AS Real)
 FROM

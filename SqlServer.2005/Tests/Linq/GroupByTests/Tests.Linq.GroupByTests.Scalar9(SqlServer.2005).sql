@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 SELECT
 	COUNT(CASE
 		WHEN [g_1].[ChildID] < 30 THEN 1

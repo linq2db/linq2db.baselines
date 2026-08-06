@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[g_2].[Key_1]
 FROM

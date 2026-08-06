@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2019.MS SqlServer.2019
-
 /* x => x.IntVlaue == 1 ? 3 : 4 == 3 */
 SELECT
 	[x].[Id],
@@ -15,7 +14,6 @@ WHERE
 	[x].[IntVlaue] = 1
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -28,7 +26,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* x_with_not => !(x_with_not.IntVlaue == 1 ? 3 : 4 == 3) */
 SELECT
 	[x_with_not].[Id],
@@ -44,7 +41,6 @@ WHERE
 	[x_with_not].[IntVlaue] <> 1
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -57,7 +53,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* swap => 3 == swap.IntVlaue == 1 ? 3 : 4 */
 SELECT
 	[swap].[Id],
@@ -73,7 +68,6 @@ WHERE
 	[swap].[IntVlaue] = 1
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -86,7 +80,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* swap_with_not => !(3 == swap_with_not.IntVlaue == 1 ? 3 : 4) */
 SELECT
 	[swap_with_not].[Id],
@@ -102,7 +95,6 @@ WHERE
 	[swap_with_not].[IntVlaue] <> 1
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -115,7 +107,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* x => x.IntVlaue == 1 ? null : (bool?)False == (bool?)True */
 SELECT
 	[x].[Id],
@@ -131,7 +122,6 @@ WHERE
 	1 = 0
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -144,7 +134,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* x_with_not => !(x_with_not.IntVlaue == 1 ? null : (bool?)False == (bool?)True) */
 SELECT
 	[x_with_not].[Id],
@@ -158,7 +147,6 @@ FROM
 	[OptimizationData] [x_with_not]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -171,7 +159,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* swap => (bool?)True == swap.IntVlaue == 1 ? null : (bool?)False */
 SELECT
 	[swap].[Id],
@@ -187,7 +174,6 @@ WHERE
 	1 = 0
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -200,7 +186,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* swap_with_not => !((bool?)True == swap_with_not.IntVlaue == 1 ? null : (bool?)False) */
 SELECT
 	[swap_with_not].[Id],
@@ -214,7 +199,6 @@ FROM
 	[OptimizationData] [swap_with_not]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -227,7 +211,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* x => x.IntVlaue == 1 ? null : (bool?)True == (bool?)True */
 SELECT
 	[x].[Id],
@@ -243,7 +226,6 @@ WHERE
 	[x].[IntVlaue] <> 1
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -256,7 +238,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* x_with_not => !(x_with_not.IntVlaue == 1 ? null : (bool?)True == (bool?)True) */
 SELECT
 	[x_with_not].[Id],
@@ -272,7 +253,6 @@ WHERE
 	[x_with_not].[IntVlaue] = 1
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -285,7 +265,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* swap => (bool?)True == swap.IntVlaue == 1 ? null : (bool?)True */
 SELECT
 	[swap].[Id],
@@ -301,7 +280,6 @@ WHERE
 	[swap].[IntVlaue] <> 1
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -314,7 +292,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* swap_with_not => !((bool?)True == swap_with_not.IntVlaue == 1 ? null : (bool?)True) */
 SELECT
 	[swap_with_not].[Id],
@@ -330,7 +307,6 @@ WHERE
 	[swap_with_not].[IntVlaue] = 1
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -343,7 +319,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* x => x.BoolValue ? True : False == True */
 SELECT
 	[x].[Id],
@@ -359,7 +334,6 @@ WHERE
 	[x].[BoolValue] = 1
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -372,7 +346,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* x_with_not => !(x_with_not.BoolValue ? True : False == True) */
 SELECT
 	[x_with_not].[Id],
@@ -388,7 +361,6 @@ WHERE
 	[x_with_not].[BoolValue] = 0
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -401,7 +373,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* swap => True == swap.BoolValue ? True : False */
 SELECT
 	[swap].[Id],
@@ -417,7 +388,6 @@ WHERE
 	[swap].[BoolValue] = 1
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -430,7 +400,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* swap_with_not => !(True == swap_with_not.BoolValue ? True : False) */
 SELECT
 	[swap_with_not].[Id],
@@ -446,7 +415,6 @@ WHERE
 	[swap_with_not].[BoolValue] = 0
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -459,7 +427,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* x => x.BoolValue == True ? null : (bool?)True == (bool?)True */
 SELECT
 	[x].[Id],
@@ -475,7 +442,6 @@ WHERE
 	[x].[BoolValue] = 0
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -488,7 +454,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* x_with_not => !(x_with_not.BoolValue == True ? null : (bool?)True == (bool?)True) */
 SELECT
 	[x_with_not].[Id],
@@ -504,7 +469,6 @@ WHERE
 	[x_with_not].[BoolValue] = 1
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -517,7 +481,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* swap => (bool?)True == swap.BoolValue == True ? null : (bool?)True */
 SELECT
 	[swap].[Id],
@@ -533,7 +496,6 @@ WHERE
 	[swap].[BoolValue] = 0
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -546,7 +508,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* swap_with_not => !((bool?)True == swap_with_not.BoolValue == True ? null : (bool?)True) */
 SELECT
 	[swap_with_not].[Id],
@@ -562,7 +523,6 @@ WHERE
 	[swap_with_not].[BoolValue] = 1
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -575,7 +535,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* x => x.BoolValue == True ? True : False == True */
 SELECT
 	[x].[Id],
@@ -591,7 +550,6 @@ WHERE
 	[x].[BoolValue] = 1
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -604,7 +562,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* x_with_not => !(x_with_not.BoolValue == True ? True : False == True) */
 SELECT
 	[x_with_not].[Id],
@@ -620,7 +577,6 @@ WHERE
 	[x_with_not].[BoolValue] = 0
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -633,7 +589,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* swap => True == swap.BoolValue == True ? True : False */
 SELECT
 	[swap].[Id],
@@ -649,7 +604,6 @@ WHERE
 	[swap].[BoolValue] = 1
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -662,7 +616,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* swap_with_not => !(True == swap_with_not.BoolValue == True ? True : False) */
 SELECT
 	[swap_with_not].[Id],
@@ -678,7 +631,6 @@ WHERE
 	[swap_with_not].[BoolValue] = 0
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -691,7 +643,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* x => x.StringValueNullable ==   String.op_Equality(...)  null ? 1 : x.StringValueNullable !=   String.op_Inequality(...)  null ? 2 : 3 == 2 */
 SELECT
 	[x].[Id],
@@ -707,7 +658,6 @@ WHERE
 	[x].[StringValueNullable] IS NOT NULL
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -720,7 +670,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* x_with_not => !(x_with_not.StringValueNullable ==   String.op_Equality(...)  null ? 1 : x_with_not.StringValueNullable !=   String.op_Inequality(...)  null ? 2 : 3 == 2) */
 SELECT
 	[x_with_not].[Id],
@@ -736,7 +685,6 @@ WHERE
 	[x_with_not].[StringValueNullable] IS NULL
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -749,7 +697,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* swap => 2 == swap.StringValueNullable ==   String.op_Equality(...)  null ? 1 : swap.StringValueNullable !=   String.op_Inequality(...)  null ? 2 : 3 */
 SELECT
 	[swap].[Id],
@@ -765,7 +712,6 @@ WHERE
 	[swap].[StringValueNullable] IS NOT NULL
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -778,7 +724,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* swap_with_not => !(2 == swap_with_not.StringValueNullable ==   String.op_Equality(...)  null ? 1 : swap_with_not.StringValueNullable !=   String.op_Inequality(...)  null ? 2 : 3) */
 SELECT
 	[swap_with_not].[Id],
@@ -794,7 +739,6 @@ WHERE
 	[swap_with_not].[StringValueNullable] IS NULL
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -807,7 +751,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* x => x.StringValueNullable ==   String.op_Equality(...)  null ? 2 : x.StringValueNullable !=   String.op_Inequality(...)  null ? 1 : 3 == 2 */
 SELECT
 	[x].[Id],
@@ -823,7 +766,6 @@ WHERE
 	[x].[StringValueNullable] IS NULL
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -836,7 +778,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* x_with_not => !(x_with_not.StringValueNullable ==   String.op_Equality(...)  null ? 2 : x_with_not.StringValueNullable !=   String.op_Inequality(...)  null ? 1 : 3 == 2) */
 SELECT
 	[x_with_not].[Id],
@@ -852,7 +793,6 @@ WHERE
 	[x_with_not].[StringValueNullable] IS NOT NULL
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -865,7 +805,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* swap => 2 == swap.StringValueNullable ==   String.op_Equality(...)  null ? 2 : swap.StringValueNullable !=   String.op_Inequality(...)  null ? 1 : 3 */
 SELECT
 	[swap].[Id],
@@ -881,7 +820,6 @@ WHERE
 	[swap].[StringValueNullable] IS NULL
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -894,7 +832,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* swap_with_not => !(2 == swap_with_not.StringValueNullable ==   String.op_Equality(...)  null ? 2 : swap_with_not.StringValueNullable !=   String.op_Inequality(...)  null ? 1 : 3) */
 SELECT
 	[swap_with_not].[Id],
@@ -910,7 +847,6 @@ WHERE
 	[swap_with_not].[StringValueNullable] IS NOT NULL
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -923,7 +859,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* x => x.StringValueNullable ==   String.op_Equality(...)  null ? 2 : x.StringValueNullable !=   String.op_Inequality(...)  null ? 1 : 3 > 3 */
 SELECT
 	[x].[Id],
@@ -939,7 +874,6 @@ WHERE
 	1 = 0
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -952,7 +886,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* x_with_not => !(x_with_not.StringValueNullable ==   String.op_Equality(...)  null ? 2 : x_with_not.StringValueNullable !=   String.op_Inequality(...)  null ? 1 : 3 > 3) */
 SELECT
 	[x_with_not].[Id],
@@ -966,7 +899,6 @@ FROM
 	[OptimizationData] [x_with_not]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -979,7 +911,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* x => x.StringValueNullable ==   String.op_Equality(...)  null ? 2 : x.StringValueNullable !=   String.op_Inequality(...)  null ? 1 : 3 >= 1 */
 SELECT
 	[x].[Id],
@@ -993,7 +924,6 @@ FROM
 	[OptimizationData] [x]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1006,7 +936,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* x_with_not => !(x_with_not.StringValueNullable ==   String.op_Equality(...)  null ? 2 : x_with_not.StringValueNullable !=   String.op_Inequality(...)  null ? 1 : 3 >= 1) */
 SELECT
 	[x_with_not].[Id],
@@ -1022,7 +951,6 @@ WHERE
 	1 = 0
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1035,7 +963,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* x => x.StringValueNullable ==   String.op_Equality(...)  null ? 2 : x.StringValueNullable !=   String.op_Inequality(...)  null ? 1 : 3 > 1 */
 SELECT
 	[x].[Id],
@@ -1051,7 +978,6 @@ WHERE
 	[x].[StringValueNullable] IS NULL
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1064,7 +990,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* x_with_not => !(x_with_not.StringValueNullable ==   String.op_Equality(...)  null ? 2 : x_with_not.StringValueNullable !=   String.op_Inequality(...)  null ? 1 : 3 > 1) */
 SELECT
 	[x_with_not].[Id],
@@ -1080,7 +1005,6 @@ WHERE
 	[x_with_not].[StringValueNullable] IS NOT NULL
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1093,7 +1017,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* x => x.StringValueNullable ==   String.op_Equality(...)  null ? 1 : x.StringValueNullable !=   String.op_Inequality(...)  null ? 2 : 3 != 2 */
 SELECT
 	[x].[Id],
@@ -1109,7 +1032,6 @@ WHERE
 	[x].[StringValueNullable] IS NULL
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1122,7 +1044,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* x_with_not => !(x_with_not.StringValueNullable ==   String.op_Equality(...)  null ? 1 : x_with_not.StringValueNullable !=   String.op_Inequality(...)  null ? 2 : 3 != 2) */
 SELECT
 	[x_with_not].[Id],
@@ -1138,7 +1059,6 @@ WHERE
 	[x_with_not].[StringValueNullable] IS NOT NULL
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1151,7 +1071,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* swap => 2 != swap.StringValueNullable ==   String.op_Equality(...)  null ? 1 : swap.StringValueNullable !=   String.op_Inequality(...)  null ? 2 : 3 */
 SELECT
 	[swap].[Id],
@@ -1167,7 +1086,6 @@ WHERE
 	[swap].[StringValueNullable] IS NULL
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1180,7 +1098,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* swap_with_not => !(2 != swap_with_not.StringValueNullable ==   String.op_Equality(...)  null ? 1 : swap_with_not.StringValueNullable !=   String.op_Inequality(...)  null ? 2 : 3) */
 SELECT
 	[swap_with_not].[Id],
@@ -1196,7 +1113,6 @@ WHERE
 	[swap_with_not].[StringValueNullable] IS NOT NULL
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1209,7 +1125,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* x => x.StringValueNullable !=   String.op_Inequality(...)  null ? x.StringValueNullable ==   String.op_Equality(...)  "2" ? 2 : 10 : x.StringValueNullable ==   String.op_Equality(...)  null ? 3 : 1 == 2 */
 SELECT
 	[x].[Id],
@@ -1229,7 +1144,6 @@ WHERE
 	END = 2
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1242,7 +1156,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* x_with_not => !(x_with_not.StringValueNullable !=   String.op_Inequality(...)  null ? x_with_not.StringValueNullable ==   String.op_Equality(...)  "2" ? 2 : 10 : x_with_not.StringValueNullable ==   String.op_Equality(...)  null ? 3 : 1 == 2) */
 SELECT
 	[x_with_not].[Id],
@@ -1262,7 +1175,6 @@ WHERE
 	END <> 2
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1275,7 +1187,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* swap => 2 == swap.StringValueNullable !=   String.op_Inequality(...)  null ? swap.StringValueNullable ==   String.op_Equality(...)  "2" ? 2 : 10 : swap.StringValueNullable ==   String.op_Equality(...)  null ? 3 : 1 */
 SELECT
 	[swap].[Id],
@@ -1295,7 +1206,6 @@ WHERE
 	END
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1308,7 +1218,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* swap_with_not => !(2 == swap_with_not.StringValueNullable !=   String.op_Inequality(...)  null ? swap_with_not.StringValueNullable ==   String.op_Equality(...)  "2" ? 2 : 10 : swap_with_not.StringValueNullable ==   String.op_Equality(...)  null ? 3 : 1) */
 SELECT
 	[swap_with_not].[Id],
@@ -1328,7 +1237,6 @@ WHERE
 	END
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1341,7 +1249,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* x => x.IntVlaue < 4 ? 4 : x.IntVlaue == 0 */
 SELECT
 	[x].[Id],
@@ -1357,7 +1264,6 @@ WHERE
 	[x].[IntVlaue] = 0 AND [x].[IntVlaue] >= 4
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1370,7 +1276,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* x => x.IntVlaue < 4 ? 4 : x.IntVlaue != 0 */
 SELECT
 	[x].[Id],
@@ -1386,7 +1291,6 @@ WHERE
 	[x].[IntVlaue] < 4 OR [x].[IntVlaue] <> 0 AND [x].[IntVlaue] >= 4
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1399,7 +1303,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* x_with_not => !(x_with_not.IntVlaue < 4 ? 4 : x_with_not.IntVlaue != 0) */
 SELECT
 	[x_with_not].[Id],
@@ -1415,7 +1318,6 @@ WHERE
 	NOT ([x_with_not].[IntVlaue] < 4 OR [x_with_not].[IntVlaue] <> 0 AND [x_with_not].[IntVlaue] >= 4)
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1428,7 +1330,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* swap => 0 != swap.IntVlaue < 4 ? 4 : swap.IntVlaue */
 SELECT
 	[swap].[Id],
@@ -1444,7 +1345,6 @@ WHERE
 	[swap].[IntVlaue] < 4 OR [swap].[IntVlaue] <> 0 AND [swap].[IntVlaue] >= 4
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1457,7 +1357,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* swap_with_not => !(0 != swap_with_not.IntVlaue < 4 ? 4 : swap_with_not.IntVlaue) */
 SELECT
 	[swap_with_not].[Id],
@@ -1473,7 +1372,6 @@ WHERE
 	NOT ([swap_with_not].[IntVlaue] < 4 OR [swap_with_not].[IntVlaue] <> 0 AND [swap_with_not].[IntVlaue] >= 4)
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1486,7 +1384,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* x => x.IntVlaue < 4 ? 4 : x.IntVlaue > 0 */
 SELECT
 	[x].[Id],
@@ -1502,7 +1399,6 @@ WHERE
 	[x].[IntVlaue] < 4 OR [x].[IntVlaue] > 0 AND [x].[IntVlaue] >= 4
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1515,7 +1411,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* x_with_not => !(x_with_not.IntVlaue < 4 ? 4 : x_with_not.IntVlaue > 0) */
 SELECT
 	[x_with_not].[Id],
@@ -1531,7 +1426,6 @@ WHERE
 	NOT ([x_with_not].[IntVlaue] < 4 OR [x_with_not].[IntVlaue] > 0 AND [x_with_not].[IntVlaue] >= 4)
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1544,7 +1438,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* x => x.IntVlaue < 4 ? 4 : x.IntVlaue < 0 */
 SELECT
 	[x].[Id],
@@ -1560,7 +1453,6 @@ WHERE
 	[x].[IntVlaue] < 0 AND [x].[IntVlaue] >= 4
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1573,7 +1465,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* x_with_not => !(x_with_not.IntVlaue < 4 ? 4 : x_with_not.IntVlaue < 0) */
 SELECT
 	[x_with_not].[Id],
@@ -1589,7 +1480,6 @@ WHERE
 	NOT ([x_with_not].[IntVlaue] < 0 AND [x_with_not].[IntVlaue] >= 4)
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1602,7 +1492,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* x => x.IntVlaue < 4 ? 4 : x.IntVlaue >= 0 */
 SELECT
 	[x].[Id],
@@ -1618,7 +1507,6 @@ WHERE
 	[x].[IntVlaue] < 4 OR [x].[IntVlaue] >= 0 AND [x].[IntVlaue] >= 4
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1631,7 +1519,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* x_with_not => !(x_with_not.IntVlaue < 4 ? 4 : x_with_not.IntVlaue >= 0) */
 SELECT
 	[x_with_not].[Id],
@@ -1647,7 +1534,6 @@ WHERE
 	NOT ([x_with_not].[IntVlaue] < 4 OR [x_with_not].[IntVlaue] >= 0 AND [x_with_not].[IntVlaue] >= 4)
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1660,7 +1546,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* x => x.IntVlaue < 4 ? 4 : x.IntVlaue <= 0 */
 SELECT
 	[x].[Id],
@@ -1676,7 +1561,6 @@ WHERE
 	[x].[IntVlaue] <= 0 AND [x].[IntVlaue] >= 4
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1689,7 +1573,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* x_with_not => !(x_with_not.IntVlaue < 4 ? 4 : x_with_not.IntVlaue <= 0) */
 SELECT
 	[x_with_not].[Id],
@@ -1705,7 +1588,6 @@ WHERE
 	NOT ([x_with_not].[IntVlaue] <= 0 AND [x_with_not].[IntVlaue] >= 4)
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1718,7 +1600,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* x => x.IntVlaue >= 4 ? x.IntVlaue : 4 == 0 */
 SELECT
 	[x].[Id],
@@ -1734,7 +1615,6 @@ WHERE
 	[x].[IntVlaue] = 0 AND [x].[IntVlaue] >= 4
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1747,7 +1627,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* x_with_not => !(x_with_not.IntVlaue >= 4 ? x_with_not.IntVlaue : 4 == 0) */
 SELECT
 	[x_with_not].[Id],
@@ -1763,7 +1642,6 @@ WHERE
 	NOT ([x_with_not].[IntVlaue] = 0 AND [x_with_not].[IntVlaue] >= 4)
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1776,7 +1654,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* swap => 0 == swap.IntVlaue >= 4 ? swap.IntVlaue : 4 */
 SELECT
 	[swap].[Id],
@@ -1792,7 +1669,6 @@ WHERE
 	[swap].[IntVlaue] = 0 AND [swap].[IntVlaue] >= 4
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1805,7 +1681,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* swap_with_not => !(0 == swap_with_not.IntVlaue >= 4 ? swap_with_not.IntVlaue : 4) */
 SELECT
 	[swap_with_not].[Id],
@@ -1821,7 +1696,6 @@ WHERE
 	NOT ([swap_with_not].[IntVlaue] = 0 AND [swap_with_not].[IntVlaue] >= 4)
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1834,7 +1708,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* x => x.IntVlaue >= 4 ? x.IntVlaue : 4 != 0 */
 SELECT
 	[x].[Id],
@@ -1850,7 +1723,6 @@ WHERE
 	[x].[IntVlaue] <> 0 AND [x].[IntVlaue] >= 4 OR [x].[IntVlaue] < 4
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1863,7 +1735,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* x_with_not => !(x_with_not.IntVlaue >= 4 ? x_with_not.IntVlaue : 4 != 0) */
 SELECT
 	[x_with_not].[Id],
@@ -1879,7 +1750,6 @@ WHERE
 	NOT ([x_with_not].[IntVlaue] <> 0 AND [x_with_not].[IntVlaue] >= 4 OR [x_with_not].[IntVlaue] < 4)
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1892,7 +1762,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* swap => 0 != swap.IntVlaue >= 4 ? swap.IntVlaue : 4 */
 SELECT
 	[swap].[Id],
@@ -1909,7 +1778,6 @@ WHERE
 	[swap].[IntVlaue] < 4
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1922,7 +1790,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* swap_with_not => !(0 != swap_with_not.IntVlaue >= 4 ? swap_with_not.IntVlaue : 4) */
 SELECT
 	[swap_with_not].[Id],
@@ -1938,7 +1805,6 @@ WHERE
 	NOT ([swap_with_not].[IntVlaue] <> 0 AND [swap_with_not].[IntVlaue] >= 4 OR [swap_with_not].[IntVlaue] < 4)
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1951,7 +1817,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* x => x.IntVlaue >= 4 ? x.IntVlaue : 4 > 0 */
 SELECT
 	[x].[Id],
@@ -1967,7 +1832,6 @@ WHERE
 	[x].[IntVlaue] > 0 AND [x].[IntVlaue] >= 4 OR [x].[IntVlaue] < 4
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1980,7 +1844,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* x_with_not => !(x_with_not.IntVlaue >= 4 ? x_with_not.IntVlaue : 4 > 0) */
 SELECT
 	[x_with_not].[Id],
@@ -1996,7 +1859,6 @@ WHERE
 	NOT ([x_with_not].[IntVlaue] > 0 AND [x_with_not].[IntVlaue] >= 4 OR [x_with_not].[IntVlaue] < 4)
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -2009,7 +1871,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* x => x.IntVlaue >= 4 ? x.IntVlaue : 4 < 0 */
 SELECT
 	[x].[Id],
@@ -2025,7 +1886,6 @@ WHERE
 	[x].[IntVlaue] < 0 AND [x].[IntVlaue] >= 4
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -2038,7 +1898,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* x_with_not => !(x_with_not.IntVlaue >= 4 ? x_with_not.IntVlaue : 4 < 0) */
 SELECT
 	[x_with_not].[Id],
@@ -2054,7 +1913,6 @@ WHERE
 	NOT ([x_with_not].[IntVlaue] < 0 AND [x_with_not].[IntVlaue] >= 4)
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -2067,7 +1925,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* x => x.IntVlaue >= 4 ? x.IntVlaue : 4 >= 0 */
 SELECT
 	[x].[Id],
@@ -2083,7 +1940,6 @@ WHERE
 	[x].[IntVlaue] >= 0 AND [x].[IntVlaue] >= 4 OR [x].[IntVlaue] < 4
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -2096,7 +1952,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* x_with_not => !(x_with_not.IntVlaue >= 4 ? x_with_not.IntVlaue : 4 >= 0) */
 SELECT
 	[x_with_not].[Id],
@@ -2112,7 +1967,6 @@ WHERE
 	NOT ([x_with_not].[IntVlaue] >= 0 AND [x_with_not].[IntVlaue] >= 4 OR [x_with_not].[IntVlaue] < 4)
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -2125,7 +1979,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* x => x.IntVlaue >= 4 ? x.IntVlaue : 4 <= 0 */
 SELECT
 	[x].[Id],
@@ -2141,7 +1994,6 @@ WHERE
 	[x].[IntVlaue] <= 0 AND [x].[IntVlaue] >= 4
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -2154,7 +2006,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 /* x_with_not => !(x_with_not.IntVlaue >= 4 ? x_with_not.IntVlaue : 4 <= 0) */
 SELECT
 	[x_with_not].[Id],
@@ -2170,7 +2021,6 @@ WHERE
 	NOT ([x_with_not].[IntVlaue] <= 0 AND [x_with_not].[IntVlaue] >= 4)
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],

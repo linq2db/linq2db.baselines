@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 INSERT INTO [TableToInsert]
 (
 	[Id],
@@ -17,7 +16,6 @@ WHERE
 	[t].[Id] IS NULL
 
 -- SqlServer.2022
-
 INSERT INTO [TableToInsert]
 (
 	[Id],

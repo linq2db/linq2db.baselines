@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	trim(TRAILING 'ab' FROM t.VarCharColumn)
 FROM

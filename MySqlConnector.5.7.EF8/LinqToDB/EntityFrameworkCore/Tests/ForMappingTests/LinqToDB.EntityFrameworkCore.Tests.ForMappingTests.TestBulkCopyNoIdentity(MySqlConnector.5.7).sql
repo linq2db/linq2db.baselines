@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7.MySqlConnector MySql57
-
 CREATE TEMPORARY TABLE `NoIdentity`
 (
 	`Id`   char(36) NOT NULL,
@@ -11,7 +10,6 @@ CREATE TEMPORARY TABLE `NoIdentity`
 
 
 -- MySql.5.7.MySqlConnector MySql57
-
 INSERT INTO `NoIdentity`
 (
 	`Id`,
@@ -24,7 +22,6 @@ VALUES
 
 
 -- MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Name`
@@ -34,7 +31,6 @@ FROM
 
 
 -- MySql.5.7.MySqlConnector MySql57
-
 DROP TEMPORARY TABLE IF EXISTS `NoIdentity`
 
 

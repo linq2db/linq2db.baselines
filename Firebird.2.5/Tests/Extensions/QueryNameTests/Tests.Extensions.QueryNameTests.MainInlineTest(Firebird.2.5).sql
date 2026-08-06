@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT /* Main */
 	"p"."ParentID",
 	"p"."Value1",

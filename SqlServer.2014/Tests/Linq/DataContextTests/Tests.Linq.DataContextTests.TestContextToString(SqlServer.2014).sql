@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],
@@ -10,7 +9,6 @@ FROM
 	[Person] [t1]
 
 -- SqlServer.2014
-
 SELECT
 	[s].[FirstName]
 FROM

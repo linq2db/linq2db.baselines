@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -26,7 +25,6 @@ WHERE
 	)
 
 -- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	[x].[Id],
 	[x].[ValidOn]

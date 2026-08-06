@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012
-
 DELETE [a_GrandChildren]
 FROM
 	[Parent] [x]

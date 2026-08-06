@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016
-
 SELECT
 	COUNT(*),
 	COUNT([c_1].[ChildID]),
@@ -13,28 +12,24 @@ GROUP BY
 	[g_1].[ParentID]
 
 -- SqlServer.2016
-
 SELECT
 	COUNT(*)
 FROM
 	[Child] [t1]
 
 -- SqlServer.2016
-
 SELECT
 	COUNT([t1].[ParentID])
 FROM
 	[Child] [t1]
 
 -- SqlServer.2016
-
 SELECT
 	COUNT(ALL [t1].[ParentID])
 FROM
 	[Child] [t1]
 
 -- SqlServer.2016
-
 SELECT
 	COUNT(DISTINCT [t1].[ParentID])
 FROM

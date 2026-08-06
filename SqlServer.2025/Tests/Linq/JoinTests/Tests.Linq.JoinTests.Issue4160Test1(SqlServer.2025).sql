@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025
-
 SELECT DISTINCT
 	(
 		SELECT TOP (1)

@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT FIRST 1
 	entity1.FirstName,
 	entity1.PersonID,

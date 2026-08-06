@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 INSERT INTO [Person]
 (
 	[FirstName],
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	COUNT(*)
 FROM
@@ -23,7 +21,6 @@ WHERE
 	[c_1].[LastName] = 'Limonadovy'
 
 -- Access.Jet.Odbc AccessODBC
-
 UPDATE
 	[Person] [c_1]
 SET
@@ -32,7 +29,6 @@ WHERE
 	[c_1].[LastName] = 'Limonadovy'
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	COUNT(*)
 FROM

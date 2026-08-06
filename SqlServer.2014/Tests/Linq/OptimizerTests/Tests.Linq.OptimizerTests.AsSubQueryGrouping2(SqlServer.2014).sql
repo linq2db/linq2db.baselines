@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014
-
 SELECT
 	COUNT([x_1].[Key2]),
 	COUNT([x_1].[Key1])

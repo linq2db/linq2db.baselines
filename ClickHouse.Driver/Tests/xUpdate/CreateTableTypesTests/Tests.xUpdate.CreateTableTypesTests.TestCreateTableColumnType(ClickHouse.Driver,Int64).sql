@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 INSERT INTO CreateTableTypes
 (
 	Id,
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 INSERT INTO CreateTableTypes
 (
 	Id,
@@ -25,7 +23,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Int64

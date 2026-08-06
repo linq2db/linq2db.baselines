@@ -194,7 +194,6 @@ WHERE
 	`u`.`ParentID` = `t1`.`ParentID` AND (`u`.`Value1` = `t1`.`Value1` OR `u`.`Value1` IS NULL AND `t1`.`Value1` IS NULL)
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`r`.`Value1`
 FROM

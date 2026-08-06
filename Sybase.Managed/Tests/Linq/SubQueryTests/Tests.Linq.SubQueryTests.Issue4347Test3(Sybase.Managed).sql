@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -10,7 +9,6 @@ FROM
 		INNER JOIN [LineEntity] [d] ON [m_1].[Id] = [d].[TransactionId]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[x].[Id],
 	[x].[ValidOn]

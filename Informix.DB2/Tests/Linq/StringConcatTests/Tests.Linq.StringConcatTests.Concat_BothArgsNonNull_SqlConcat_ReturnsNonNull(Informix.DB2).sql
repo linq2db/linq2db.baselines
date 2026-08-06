@@ -1,14 +1,12 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	e.Id
 FROM
 	ConcatTestEntity e
 WHERE
-	(e.StrReq || e.StrReq) IS NOT NULL
+	e.StrReq IS NOT NULL
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1.Str1,

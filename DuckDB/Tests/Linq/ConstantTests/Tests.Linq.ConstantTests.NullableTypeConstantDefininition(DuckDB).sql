@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	1
 LIMIT 1

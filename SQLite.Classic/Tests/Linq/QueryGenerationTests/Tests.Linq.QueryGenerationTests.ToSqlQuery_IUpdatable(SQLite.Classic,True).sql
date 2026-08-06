@@ -12,14 +12,12 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-
 UPDATE
 	[TableWithIdentity]
 SET
 	[Value] = 123
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]

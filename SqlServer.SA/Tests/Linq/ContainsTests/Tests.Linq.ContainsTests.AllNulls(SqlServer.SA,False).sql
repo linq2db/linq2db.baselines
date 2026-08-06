@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 SELECT
 	COUNT(*)
 FROM
@@ -8,7 +7,6 @@ WHERE
 	[s].[Int] IN (NULL, NULL)
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	COUNT(*)
 FROM

@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id"
 FROM
@@ -8,8 +7,7 @@ WHERE
 	t1."Id" = 2
 LIMIT 2
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id"
 FROM
@@ -18,7 +16,7 @@ WHERE
 	t1."Id" = 2
 LIMIT 2
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL12
 DECLARE @UserId Integer -- Int32
 SET     @UserId = 2
 
@@ -30,7 +28,7 @@ WHERE
 	x."Id" = :UserId
 LIMIT 2
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL12
 DECLARE @UserId Integer -- Int32
 SET     @UserId = 2
 

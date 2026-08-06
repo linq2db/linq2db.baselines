@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 SELECT /* qb */
 	"t"."PersonID",
 	"t"."Diagnosis"

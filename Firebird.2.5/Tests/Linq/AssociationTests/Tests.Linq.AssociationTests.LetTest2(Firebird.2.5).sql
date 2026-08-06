@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	"t"."ParentID",
 	(
@@ -14,7 +13,6 @@ FROM
 	"Parent" "t"
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t"."ParentID",
 	(

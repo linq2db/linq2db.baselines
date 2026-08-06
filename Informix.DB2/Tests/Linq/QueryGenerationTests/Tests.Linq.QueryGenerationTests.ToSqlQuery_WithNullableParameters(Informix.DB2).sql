@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	p.FirstName,
 	p.PersonID,
@@ -12,7 +11,6 @@ WHERE
 	p.MiddleName IS NOT NULL
 
 -- Informix.DB2 Informix
-
 SELECT FIRST 2
 	p.FirstName,
 	p.PersonID,

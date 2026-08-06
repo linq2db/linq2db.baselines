@@ -50,7 +50,6 @@ VALUES
 )
 
 -- Access.Ace.OleDb AccessOleDb
-
 DELETE FROM
 	(
 		SELECT TOP 2
@@ -71,7 +70,6 @@ WHERE
 	)
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	COUNT(*)
 FROM
@@ -80,7 +78,6 @@ WHERE
 	[c_1].[ParentID] > 1000
 
 -- Access.Ace.OleDb AccessOleDb
-
 DELETE FROM
 	[Parent] [c_1]
 WHERE

@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.TypeDiscriminator,
 	t1.InheritanceParentId,
@@ -8,7 +7,6 @@ FROM
 	InheritanceParent t1
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.TypeDiscriminator,
 	t1.InheritanceChildId,

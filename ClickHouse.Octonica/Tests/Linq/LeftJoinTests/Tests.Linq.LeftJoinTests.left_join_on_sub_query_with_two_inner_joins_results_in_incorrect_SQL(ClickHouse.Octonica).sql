@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 INSERT INTO A
 (
 	Id
@@ -10,7 +9,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	a_1.Id,
 	t1.AId,

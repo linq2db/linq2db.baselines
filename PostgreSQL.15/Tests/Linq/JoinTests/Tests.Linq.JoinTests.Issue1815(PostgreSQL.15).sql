@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."InId",
 	CASE
@@ -17,8 +16,7 @@ WHERE
 	t1."InId" = 1
 LIMIT 2
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."InId",
 	CASE

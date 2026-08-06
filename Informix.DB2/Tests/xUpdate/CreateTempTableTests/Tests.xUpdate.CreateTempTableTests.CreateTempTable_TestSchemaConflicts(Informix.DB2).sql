@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 INSERT INTO TestTempTable
 (
 	Id,
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 CREATE TABLE IF NOT EXISTS TempTable
 (
 	Id      Int           NOT NULL,
@@ -22,7 +20,6 @@ CREATE TABLE IF NOT EXISTS TempTable
 )
 
 -- Informix.DB2 Informix
-
 INSERT INTO TempTable
 (
 	Id,
@@ -35,7 +32,6 @@ FROM
 	TestTempTable t1
 
 -- Informix.DB2 Informix
-
 INSERT INTO TestTempTable
 (
 	Id,
@@ -48,7 +44,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 INSERT INTO TempTable
 (
 	Id,
@@ -61,7 +56,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1."Value"
@@ -71,7 +65,6 @@ ORDER BY
 	t1.Id
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1.Renamed
@@ -81,6 +74,5 @@ ORDER BY
 	t1.Id
 
 -- Informix.DB2 Informix
-
 DROP TABLE IF EXISTS TempTable
 

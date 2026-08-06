@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 SELECT
 	[p].[PersonID],
 	[p].[FirstName]
@@ -9,7 +8,6 @@ WHERE
 	[p].[PersonID] = 1
 
 -- SqlServer.2022
-
 SELECT
 	[p].[PersonID],
 	[p].[FirstName]

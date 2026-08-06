@@ -14,7 +14,6 @@ WHERE
 	[r].[FirstName] = @p
 
 -- SqlServer.2008
-
 SELECT
 	[r].[FirstName],
 	[r].[PersonID],

@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[c_1].[ParentID],
 	[c_1].[ChildID]
@@ -16,7 +15,6 @@ WHERE
 	)
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[c_1].[ParentID],
 	[c_1].[ChildID]

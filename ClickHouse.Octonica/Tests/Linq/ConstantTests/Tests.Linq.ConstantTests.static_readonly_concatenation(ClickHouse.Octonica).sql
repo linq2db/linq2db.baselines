@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	e.Id,
 	e.GuidValue,
@@ -8,10 +7,9 @@ SELECT
 FROM
 	TestConstantsData e
 WHERE
-	concat(e.StringValue, '1') = 'StrValue1'
+	(concat(Coalesce(e.StringValue, ''), '1')) = 'StrValue1'
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.GuidValue,

@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 100
 DECLARE @CharColumn Char -- String
@@ -27,8 +27,7 @@ VALUES
 	:NVarCharColumn
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	CASE
 		WHEN t."VarCharColumn" IS NOT NULL THEN LTRIM(t."VarCharColumn", '.+')

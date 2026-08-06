@@ -1,12 +1,10 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	COUNT(*)
 FROM
 	Person t1
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.FirstName,
 	t1.PersonID,

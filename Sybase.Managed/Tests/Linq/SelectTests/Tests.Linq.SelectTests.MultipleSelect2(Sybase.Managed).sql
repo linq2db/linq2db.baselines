@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[pp].[PersonID],
 	[pp].[FirstName]

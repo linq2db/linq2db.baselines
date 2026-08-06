@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025
-
 MERGE INTO [TestTable] [Target]
 USING (
 	SELECT

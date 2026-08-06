@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	COUNT(*)
 FROM
@@ -8,7 +7,6 @@ WHERE
 	startsWith(p.FirstName, 'Jo') AND p.PersonID = 1
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	COUNT(*)
 FROM
@@ -17,7 +15,6 @@ WHERE
 	startsWith(p.FirstName, 'jo') AND p.PersonID = 1
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	COUNT(*)
 FROM

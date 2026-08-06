@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	r_1.ID,
 	r_1.LastName
@@ -19,7 +18,6 @@ ORDER BY
 LIMIT 1, 2
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.FirstName,
 	t1.PersonID,

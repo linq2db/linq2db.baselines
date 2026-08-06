@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL12
 DECLARE @p Integer -- Int32
 SET     @p = 1
 

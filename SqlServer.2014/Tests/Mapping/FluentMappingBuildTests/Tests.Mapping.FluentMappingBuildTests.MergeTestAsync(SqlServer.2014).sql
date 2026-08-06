@@ -1,10 +1,8 @@
 ﻿-- SqlServer.2014
-
 IF (OBJECT_ID(N'[FluentTemp_Merge]', N'U') IS NOT NULL)
 	DROP TABLE [FluentTemp_Merge]
 
 -- SqlServer.2014
-
 IF (OBJECT_ID(N'[FluentTemp_Merge]', N'U') IS NULL)
 	CREATE TABLE [FluentTemp_Merge]
 	(
@@ -32,7 +30,6 @@ VALUES
 )
 
 -- SqlServer.2014
-
 MERGE INTO [FluentTemp_Merge] [Target]
 USING (VALUES
 	(1,N'John II')
@@ -62,7 +59,6 @@ VALUES
 ;
 
 -- SqlServer.2014
-
 IF (OBJECT_ID(N'[FluentTemp_Merge]', N'U') IS NOT NULL)
 	DROP TABLE [FluentTemp_Merge]
 

@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 UPDATE
 	"TableWithConverterValue"
 SET
@@ -10,8 +9,7 @@ SET
 WHERE
 	"TableWithConverterValue"."Id" = 1
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	x."Id",
 	x."NoConversion",

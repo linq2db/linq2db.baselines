@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008
-
 DELETE [t1]
 FROM
 	[Person] [t1]
@@ -7,7 +6,6 @@ WHERE
 	[t1].[PersonID] > 4
 
 -- SqlServer.2008
-
 UPDATE
 	[x]
 SET
@@ -26,7 +24,6 @@ WHERE
 	[x].[Id] = 1
 
 -- SqlServer.2008
-
 SELECT
 	[t1].[Id],
 	[t1].[FirstName],
@@ -37,7 +34,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlServer.2008
-
 DELETE [t1]
 FROM
 	[Person] [t1]

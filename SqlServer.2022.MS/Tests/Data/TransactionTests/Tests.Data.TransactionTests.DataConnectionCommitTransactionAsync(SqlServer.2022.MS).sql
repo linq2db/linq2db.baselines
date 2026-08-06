@@ -18,7 +18,6 @@ VALUES
 
 CommitTransactionAsync
 -- SqlServer.2022.MS SqlServer.2022
-
 DELETE [t1]
 FROM
 	[Parent] [t1]

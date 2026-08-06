@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	e."StrReq"
 FROM
@@ -7,8 +6,7 @@ FROM
 WHERE
 	(Coalesce(e."StrReq", '') || ' 1') = 'Programmer 1'
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Str1",

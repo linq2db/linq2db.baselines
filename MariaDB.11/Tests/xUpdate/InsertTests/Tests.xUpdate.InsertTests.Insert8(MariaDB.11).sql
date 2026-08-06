@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DELETE  
 FROM
 	`Child`
@@ -35,7 +34,6 @@ WHERE
 	`c_1`.`ChildID` = @id
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DELETE  
 FROM
 	`Child`

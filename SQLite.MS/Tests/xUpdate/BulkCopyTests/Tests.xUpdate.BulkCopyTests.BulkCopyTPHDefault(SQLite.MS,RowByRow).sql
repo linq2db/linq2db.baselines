@@ -62,7 +62,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Discriminator],
 	[t1].[Id],
@@ -75,7 +74,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[x].[Discriminator],
 	[x].[Id],
@@ -89,7 +87,6 @@ WHERE
 LIMIT 2
 
 -- SQLite.MS SQLite
-
 SELECT
 	[x].[Discriminator],
 	[x].[Id],
@@ -103,7 +100,6 @@ WHERE
 LIMIT 2
 
 -- SQLite.MS SQLite
-
 SELECT
 	[x].[Discriminator],
 	[x].[Id],
@@ -117,7 +113,6 @@ WHERE
 LIMIT 2
 
 -- SQLite.MS SQLite
-
 SELECT
 	[x].[Discriminator],
 	[x].[Id],
@@ -131,7 +126,6 @@ WHERE
 LIMIT 2
 
 -- SQLite.MS SQLite
-
 SELECT
 	[x].[Discriminator],
 	[x].[Id],
@@ -145,7 +139,6 @@ WHERE
 LIMIT 2
 
 -- SQLite.MS SQLite
-
 SELECT
 	[x].[Discriminator],
 	[x].[Id],

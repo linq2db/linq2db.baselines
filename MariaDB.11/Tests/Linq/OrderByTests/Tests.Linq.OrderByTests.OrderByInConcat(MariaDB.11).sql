@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t2`.`ParentID`,
 	`t2`.`ChildID`
@@ -29,7 +28,6 @@ FROM
 	) `t4`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`ParentID`,
 	`t1`.`ChildID`
@@ -51,7 +49,6 @@ FROM
 	) `t3`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t5`.`ParentID`,
 	`t5`.`ChildID`

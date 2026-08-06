@@ -1,9 +1,7 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 DROP TABLE IF EXISTS TempTable
 
 -- ClickHouse.Driver ClickHouse
-
 CREATE TEMPORARY TABLE TempTable
 (
 	ID Int32,
@@ -14,7 +12,6 @@ ENGINE = MergeTree()
 ORDER BY ID
 
 -- ClickHouse.Driver ClickHouse
-
 INSERT INTO TempTable
 (
 	ID
@@ -25,10 +22,8 @@ FROM
 	Parent p
 
 -- ClickHouse.Driver ClickHouse
-
 DROP TABLE IF EXISTS TempTable
 
 -- ClickHouse.Driver ClickHouse
-
 DROP TABLE TempTable
 

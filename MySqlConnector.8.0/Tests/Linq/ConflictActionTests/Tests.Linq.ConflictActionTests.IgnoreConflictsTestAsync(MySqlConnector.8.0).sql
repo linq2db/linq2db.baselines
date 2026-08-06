@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 INSERT INTO `IgnoreConflictsTable`
 (
 	`ID`,
@@ -10,7 +9,6 @@ VALUES
 (2,'original2')
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 INSERT IGNORE INTO `IgnoreConflictsTable`
 (
 	`ID`,
@@ -22,7 +20,6 @@ VALUES
 (3,'new3')
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`ID`,
 	`t1`.`Value`

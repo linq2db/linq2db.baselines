@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
-
 INSERT INTO [SampleClass]
 (
 	[Id],
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- SqlServer.2005.MS SqlServer.2005
-
 INSERT INTO [SampleClass]
 (
 	[Id],

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2019
-
 SELECT
 	MAX([g_1].[ChildID]),
 	MAX([g_1].[ChildID] + [g_1].[ParentID])

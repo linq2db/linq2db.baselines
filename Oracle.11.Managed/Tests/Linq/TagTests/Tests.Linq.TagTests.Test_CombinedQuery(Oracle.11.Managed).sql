@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 /* query 1
 query 2 */
 SELECT

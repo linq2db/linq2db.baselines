@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	x.PersonID
 FROM
@@ -8,7 +7,6 @@ WHERE
 	x.FirstName IN ('John')
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	x.PersonID
 FROM

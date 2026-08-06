@@ -10,9 +10,8 @@ WHERE
 	[LinqDataTypes].[ID] = 1
 
 -- SqlCe
-
 SELECT TOP (1)
-	DataLength([t].[BinaryValue]) as [Value_1]
+	DataLength([t].[BinaryValue])
 FROM
 	[LinqDataTypes] [t]
 WHERE

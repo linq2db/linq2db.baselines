@@ -55,7 +55,6 @@ ORDER BY
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
 -- Firebird.4 Firebird4
-
 SELECT
 	COUNT(*)
 FROM

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014
-
 SELECT
 	[o_1].[Id],
 	[o_1].[StrValue],

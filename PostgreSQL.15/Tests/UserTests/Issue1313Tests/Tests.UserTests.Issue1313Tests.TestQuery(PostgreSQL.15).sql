@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.15 PostgreSQL12
 INSERT INTO "ValueItem"
 (
 	"Value"
@@ -9,8 +8,7 @@ VALUES
 	123
 )
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	row_1."Value"
 FROM

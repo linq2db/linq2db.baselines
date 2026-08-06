@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[p].[PK],
 	[p].[Id],
@@ -26,7 +25,6 @@ WHERE
 	[t2].[Max_1] > CAST('2023-01-01' AS DateTime)
 
 -- SqlCe
-
 SELECT
 	[p].[PK],
 	[p].[Id],

@@ -1,6 +1,8 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
+DECLARE @p Int32
+SET     @p = 5
 
 SELECT
-	5
+	:p
 FROM SYS.DUAL
 

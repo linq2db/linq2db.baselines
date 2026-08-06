@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	[t1].[ChildID],
 	[a_Parent_1].[ParentID],
@@ -21,7 +20,6 @@ ORDER BY
 	[t1].[ChildID]
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID],
@@ -32,7 +30,6 @@ FROM
 		LEFT JOIN [Parent] [a_Parent] ON [t1].[ParentID] = [a_Parent].[ParentID]
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

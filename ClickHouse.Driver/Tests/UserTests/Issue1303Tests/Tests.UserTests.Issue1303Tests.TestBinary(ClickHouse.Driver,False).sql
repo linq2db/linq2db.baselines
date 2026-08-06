@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 INSERT INTO Issue1303
 (
 	ID,
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.ID,
 	t1.Array,
@@ -26,7 +24,6 @@ WHERE
 LIMIT 2
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.ID,
 	t1.Array,
@@ -38,7 +35,6 @@ WHERE
 LIMIT 2
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.ID,
 	t1.Array,

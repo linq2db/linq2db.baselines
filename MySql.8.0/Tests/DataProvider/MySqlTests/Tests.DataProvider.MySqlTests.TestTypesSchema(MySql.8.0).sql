@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	TABLE_SCHEMA,
 	TABLE_NAME,
@@ -9,7 +8,6 @@ FROM INFORMATION_SCHEMA.TABLES
 WHERE TABLE_SCHEMA = DATABASE()
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	CONCAT(lower(k.CONSTRAINT_SCHEMA),'..',k.TABLE_NAME) as TableID,
 	k.CONSTRAINT_NAME                                    as PrimaryKeyName,
@@ -29,7 +27,6 @@ WHERE
 	c.CONSTRAINT_SCHEMA = database()
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	DATA_TYPE,
 	COLUMN_TYPE,
@@ -47,7 +44,6 @@ FROM INFORMATION_SCHEMA.COLUMNS
 WHERE TABLE_SCHEMA = DATABASE()
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	c.TABLE_SCHEMA,
 	c.TABLE_NAME,

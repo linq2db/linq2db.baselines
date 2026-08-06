@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 INSERT INTO TrimTestTable
 (
 	ID,
@@ -9,7 +8,6 @@ VALUES
 (1,'***OOO***')
 
 -- DuckDB
-
 SELECT
 	r.ID,
 	r."Data"
@@ -19,7 +17,6 @@ ORDER BY
 	r.ID
 
 -- DuckDB
-
 SELECT
 	r.ID,
 	r."Data"

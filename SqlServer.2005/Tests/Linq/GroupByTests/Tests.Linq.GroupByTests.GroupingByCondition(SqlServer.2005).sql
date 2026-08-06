@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 SELECT
 	[g_1].[isValueAvailable],
 	[g_1].[ParentID],
@@ -25,7 +24,6 @@ GROUP BY
 	[g_1].[Value_1]
 
 -- SqlServer.2005
-
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID]

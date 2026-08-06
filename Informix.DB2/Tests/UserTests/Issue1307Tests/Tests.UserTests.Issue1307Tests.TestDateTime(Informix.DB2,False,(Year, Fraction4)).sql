@@ -8,11 +8,10 @@ INSERT INTO DateTimeTestTable
 )
 VALUES
 (
-	@input::datetime Year to fraction(4)
+	@input
 )
 
 -- Informix.DB2 Informix
-
 SELECT FIRST 2
 	t1.DateTimeField
 FROM

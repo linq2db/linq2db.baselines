@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2019
-
 SELECT
 	[g_1].[GrpId],
 	Coalesce(STRING_AGG([g_1].[Value], N'') WITHIN GROUP (ORDER BY [g_1].[PK]), N'')
@@ -11,7 +10,6 @@ ORDER BY
 	[g_1].[GrpId]
 
 -- SqlServer.2019
-
 SELECT
 	[t1].[PK],
 	[t1].[GrpId],

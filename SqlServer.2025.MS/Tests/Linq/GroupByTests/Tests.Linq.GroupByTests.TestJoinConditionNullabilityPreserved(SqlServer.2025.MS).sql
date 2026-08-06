@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
-
 SELECT TOP (2)
 	[a_Ref_1].[Prop]
 FROM

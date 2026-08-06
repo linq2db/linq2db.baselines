@@ -8,7 +8,6 @@ WHERE
 	LinqDataTypes.ID >= 101 AND LinqDataTypes.ID < @p
 
 -- Informix.DB2 Informix
-
 INSERT INTO LinqDataTypes
 (
 	ID,
@@ -27,12 +26,11 @@ SET     @TestField = 12
 UPDATE
 	LinqDataTypes r
 SET
-	BigIntValue = @TestField::BigInt
+	BigIntValue = @TestField
 WHERE
 	r.ID = 101 AND r.BigIntValue = 11
 
 -- Informix.DB2 Informix
-
 SELECT FIRST 1
 	r.BigIntValue
 FROM

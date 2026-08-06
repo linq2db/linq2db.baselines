@@ -19,7 +19,6 @@ ORDER BY `p`.`ProductID`
 
 
 -- MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`e`.`IsDeleted`,
 	`e`.`ProductID`,

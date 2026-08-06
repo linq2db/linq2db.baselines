@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016
-
 /* My Test */
 INSERT INTO [TestTable]
 (

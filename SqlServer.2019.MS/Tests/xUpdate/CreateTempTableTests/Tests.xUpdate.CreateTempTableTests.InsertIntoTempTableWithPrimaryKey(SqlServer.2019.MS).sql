@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2019.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#TableWithPrimaryKey2]
 (
 	[Key] Int NOT NULL,
@@ -10,6 +9,5 @@ CREATE TABLE [tempdb]..[#TableWithPrimaryKey2]
 INSERT BULK [tempdb]..[#TableWithPrimaryKey2](Key)
 
 -- SqlServer.2019.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#TableWithPrimaryKey2]
 

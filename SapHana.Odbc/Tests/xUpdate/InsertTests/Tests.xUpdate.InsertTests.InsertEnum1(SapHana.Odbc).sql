@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 DELETE FROM
 	"Parent" "t1"
 WHERE
@@ -34,7 +33,6 @@ WHERE
 	"t1"."ParentID" = ? AND "t1"."Value1" = ?
 
 -- SapHana.Odbc SapHanaOdbc
-
 DELETE FROM
 	"Parent" "t1"
 WHERE

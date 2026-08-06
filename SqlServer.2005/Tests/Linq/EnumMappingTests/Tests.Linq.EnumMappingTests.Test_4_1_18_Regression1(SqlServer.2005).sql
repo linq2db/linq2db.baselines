@@ -9,7 +9,6 @@ WHERE
 	[r].[ID] >= 101 AND [r].[ID] < @p
 
 -- SqlServer.2005
-
 INSERT INTO [LinqDataTypes]
 (
 	[ID],
@@ -24,7 +23,6 @@ VALUES
 )
 
 -- SqlServer.2005
-
 SELECT
 	CASE
 		WHEN [t1].[BigIntValue] IS NOT NULL AND [t1].[IntValue] IS NOT NULL

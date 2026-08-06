@@ -13,7 +13,6 @@ WHERE
 	(CONCAT(Coalesce(`e`.`StringValue`, ''), '1')) = @p
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`GuidValue`,

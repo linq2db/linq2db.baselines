@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	t.ID,
 	t.MoneyValue,
@@ -29,7 +28,6 @@ WHERE
 	LinqDataTypes.ID = 1
 
 -- DuckDB
-
 SELECT
 	t.ID,
 	t.MoneyValue,

@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	CASE
 		WHEN NOT EXISTS(
@@ -16,7 +15,6 @@ SELECT
 FROM DUMMY
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	CASE
 		WHEN NOT EXISTS(

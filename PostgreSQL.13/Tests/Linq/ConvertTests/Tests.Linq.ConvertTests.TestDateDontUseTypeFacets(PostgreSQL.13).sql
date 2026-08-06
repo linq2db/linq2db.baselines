@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
-
+﻿-- PostgreSQL.13 PostgreSQL12
 SELECT
 	g_2."Date_1",
 	COUNT(*)
@@ -13,8 +12,7 @@ FROM
 GROUP BY
 	g_2."Date_1"
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."CreatedOnUtc"
 FROM

@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	MAX(CASE
 		WHEN g_1.ChildID > 0 THEN g_1.ChildID

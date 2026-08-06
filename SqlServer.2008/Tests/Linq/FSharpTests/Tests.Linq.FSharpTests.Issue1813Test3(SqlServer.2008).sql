@@ -50,7 +50,6 @@ VALUES
 )
 
 -- SqlServer.2008
-
 SELECT
 	[after_1].[Id],
 	[after_1].[Name],

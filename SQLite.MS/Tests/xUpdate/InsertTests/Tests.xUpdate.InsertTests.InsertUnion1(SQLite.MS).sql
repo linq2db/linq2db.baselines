@@ -1,12 +1,10 @@
 ﻿-- SQLite.MS SQLite
-
 DELETE FROM
 	[Parent]
 WHERE
 	[Parent].[ParentID] > 1000
 
 -- SQLite.MS SQLite
-
 INSERT INTO [Parent]
 (
 	[ParentID],
@@ -38,7 +36,6 @@ FROM
 	) [t1]
 
 -- SQLite.MS SQLite
-
 SELECT
 	COUNT(*)
 FROM
@@ -47,7 +44,6 @@ WHERE
 	[c_1].[ParentID] > 1000
 
 -- SQLite.MS SQLite
-
 DELETE FROM
 	[Parent]
 WHERE

@@ -1,9 +1,7 @@
 ﻿-- SqlServer.2014.MS SqlServer.2014
-
 SELECT Cast('2012-12-12 12:12:00' as smalldatetime)
 
 -- SqlServer.2014.MS SqlServer.2014
-
 SELECT Cast('2012-12-12 12:12:00' as smalldatetime)
 
 -- SqlServer.2014.MS SqlServer.2014

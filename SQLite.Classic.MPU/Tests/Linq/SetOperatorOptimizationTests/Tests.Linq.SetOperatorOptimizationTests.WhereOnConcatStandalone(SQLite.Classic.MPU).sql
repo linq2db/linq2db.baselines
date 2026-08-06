@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[ItemNumber]
 FROM
@@ -26,7 +25,6 @@ ORDER BY
 	[t1].[ItemNumber]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[ItemId],
@@ -35,7 +33,6 @@ FROM
 	[Thing] [t1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[ItemId],
 	[t1].[AltItemId],

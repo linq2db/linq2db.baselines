@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 INSERT INTO Person
 (
 	PersonID,
@@ -18,7 +17,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t.PersonID,
 	t.FirstName,
@@ -32,7 +30,6 @@ WHERE
 LIMIT 1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t.PersonID,
 	t.FirstName,

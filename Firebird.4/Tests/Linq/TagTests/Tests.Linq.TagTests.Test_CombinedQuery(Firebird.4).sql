@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 /* query 1
 query 2 */
 SELECT

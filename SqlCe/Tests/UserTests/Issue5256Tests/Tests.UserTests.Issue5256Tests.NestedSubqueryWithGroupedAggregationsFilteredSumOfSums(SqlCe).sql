@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[product_1].[Id],
 	[t2].[OnOrder]
@@ -22,7 +21,6 @@ FROM
 		) [t2]
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Name]
@@ -30,7 +28,6 @@ FROM
 	[Product] [t1]
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[ProductId],

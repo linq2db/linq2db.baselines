@@ -1,5 +1,4 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
-
 UPDATE
 	"TableWithConverterValue" x
 SET
@@ -11,7 +10,6 @@ WHERE
 	x."Id" = 1
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	x."Id",
 	x."NoConversion",

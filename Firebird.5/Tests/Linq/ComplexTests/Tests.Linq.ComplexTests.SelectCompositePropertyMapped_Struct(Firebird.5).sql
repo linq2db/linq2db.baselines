@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 SELECT DISTINCT
 	"u"."city",
 	"u"."street",

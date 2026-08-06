@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT
 	[t1].[FirstName],
 	[t1].[LastName]
@@ -7,7 +6,6 @@ FROM
 	[Person] [t1]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[p].[FirstName],
 	[p].[LastName]
@@ -17,7 +15,6 @@ WHERE
 	Coalesce([p].[PersonID], 0) >= 2
 
 -- SQLite.Classic SQLite
-
 SELECT
 	NOT EXISTS(
 		SELECT
@@ -29,7 +26,6 @@ SELECT
 	)
 
 -- SQLite.Classic SQLite
-
 SELECT
 	NOT EXISTS(
 		SELECT

@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"m_1"."Id",
 	"d"."Id",
@@ -10,7 +9,6 @@ FROM
 		INNER JOIN "LineEntity" "d" ON "m_1"."Id" = "d"."TransactionId"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"x"."Id",
 	"x"."ValidOn"

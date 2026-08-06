@@ -16,7 +16,6 @@ VALUES
 )
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"e"."Id",
 	"e"."SomeText"
@@ -27,7 +26,6 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"e"."Id",
 	"e"."SomeText"

@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 SELECT
 	MAX([p].[ParentID])
 FROM

@@ -37,7 +37,6 @@ WHERE
 	`t1`.`FirstName` LIKE 'Update14%' ESCAPE '~'
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	COUNT(*)
 FROM

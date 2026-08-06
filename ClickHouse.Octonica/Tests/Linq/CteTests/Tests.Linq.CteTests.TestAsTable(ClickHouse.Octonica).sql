@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 WITH CTE1_ AS
 (
 	SELECT
@@ -15,7 +14,6 @@ FROM
 	CTE1_ t2
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.ParentID,
 	t1.ChildID

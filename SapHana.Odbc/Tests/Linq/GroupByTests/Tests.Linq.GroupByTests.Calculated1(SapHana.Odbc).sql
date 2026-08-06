@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"m_1"."Key_1",
 	"d"."ParentID",
@@ -26,7 +25,6 @@ FROM
 		END
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT DISTINCT
 	CASE
 		WHEN "g_1"."ParentID" > 2 THEN CASE

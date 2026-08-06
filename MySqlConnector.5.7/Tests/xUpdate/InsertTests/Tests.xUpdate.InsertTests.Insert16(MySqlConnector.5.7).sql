@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 DELETE  
 FROM
 	`Person`
@@ -26,7 +25,6 @@ VALUES
 )
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	COUNT(*)
 FROM
@@ -35,7 +33,6 @@ WHERE
 	`t1`.`FirstName` LIKE 'Insert16%' ESCAPE '~'
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 DELETE  
 FROM
 	`Person`

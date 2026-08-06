@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT /*+ CURSOR_SHARING_EXACT */
 	p."ParentID",
 	p."Value1"

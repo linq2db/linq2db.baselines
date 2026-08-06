@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	currentDatabase()
 FROM
@@ -7,7 +6,6 @@ FROM
 LIMIT 1
 
 -- ClickHouse.Driver ClickHouse
-
 ALTER TABLE
 	testdb2.Issue681Table
 UPDATE

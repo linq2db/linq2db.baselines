@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	a_Table2.ID,
 	a_Table2.ID3,

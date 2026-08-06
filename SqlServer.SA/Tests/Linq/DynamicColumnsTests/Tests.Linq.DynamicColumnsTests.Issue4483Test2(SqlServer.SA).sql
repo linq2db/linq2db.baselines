@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	JSON_VALUE(JsonData, '$."0"') AS '0',

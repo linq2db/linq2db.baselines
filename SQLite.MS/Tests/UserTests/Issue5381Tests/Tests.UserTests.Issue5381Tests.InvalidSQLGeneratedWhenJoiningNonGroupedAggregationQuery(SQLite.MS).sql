@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[t].[Year]
 FROM
@@ -13,14 +12,12 @@ FROM
 		INNER JOIN [SmallerDateRanges] [t] ON [a].[MinYear] <= [t].[Year] AND [a].[MaxYear] >= [t].[Year]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Year]
 FROM
 	[DateRanges] [t1]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Year]
 FROM

@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
-
+﻿-- PostgreSQL.13 PostgreSQL12
 SELECT
 	p."FirstName",
 	p."PersonID",
@@ -11,8 +10,7 @@ FROM
 WHERE
 	p."MiddleName" IS NOT NULL
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	p."FirstName",
 	p."PersonID",

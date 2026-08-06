@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 DELETE  
 FROM
 	`Person`
@@ -28,11 +27,9 @@ VALUES
 )
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT LAST_INSERT_ID()
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`p`.`FirstName`,
 	`p`.`PersonID`,
@@ -46,7 +43,6 @@ WHERE
 LIMIT 2
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 DELETE  
 FROM
 	`Person`

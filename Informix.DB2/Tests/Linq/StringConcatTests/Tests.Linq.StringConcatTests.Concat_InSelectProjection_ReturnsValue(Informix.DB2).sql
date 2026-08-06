@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	Nvl(e.Str1, '') || '/' || Nvl(e.StrReq, '')
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	e.Id
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1.Str1,

@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 DELETE FROM
 	[CollatedTable]
 
@@ -25,36 +24,32 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[CollatedTable] [r]
 WHERE
 	Convert(VARBINARY(8000), SUBSTRING([r].[CaseSensitive], 1, 6)) = Convert(VARBINARY(8000), 'TestSt')
 
 -- SqlCe
-
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[CollatedTable] [r]
 WHERE
 	Convert(VARBINARY(8000), SUBSTRING([r].[CaseInsensitive], 1, 6)) = Convert(VARBINARY(8000), 'TestSt')
 
 -- SqlCe
-
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[CollatedTable] [r]
 WHERE
 	Convert(VARBINARY(8000), SUBSTRING([r].[CaseSensitive], 1, 6)) = Convert(VARBINARY(8000), 'testst')
 
 -- SqlCe
-
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[CollatedTable] [r]
 WHERE

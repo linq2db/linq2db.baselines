@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT
 	[r].[Id],
 	[r].[Value]
@@ -11,7 +10,6 @@ ORDER BY
 	[r].[Id]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]

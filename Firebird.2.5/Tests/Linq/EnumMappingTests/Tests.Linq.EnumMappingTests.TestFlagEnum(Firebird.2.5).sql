@@ -1,10 +1,9 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	"t".ID,
 	"t"."IntValue"
 FROM
-	"LinqDataTypes" "t"
+	"TestTable5" "t"
 WHERE
 	Bin_And("t"."IntValue", 1) <> 0
 

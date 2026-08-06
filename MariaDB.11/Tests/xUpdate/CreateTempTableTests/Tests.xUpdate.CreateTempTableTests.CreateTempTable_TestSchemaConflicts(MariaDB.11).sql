@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `TestTempTable`
 (
 	`Id`,
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 CREATE TABLE IF NOT EXISTS `TempTable`
 (
 	`Id`      INT           NOT NULL,
@@ -22,7 +20,6 @@ CREATE TABLE IF NOT EXISTS `TempTable`
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `TempTable`
 (
 	`Id`,
@@ -35,7 +32,6 @@ FROM
 	`TestTempTable` `t1`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `TestTempTable`
 (
 	`Id`,
@@ -48,7 +44,6 @@ VALUES
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `TempTable`
 (
 	`Id`,
@@ -61,7 +56,6 @@ VALUES
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value`
@@ -71,7 +65,6 @@ ORDER BY
 	`t1`.`Id`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Renamed`
@@ -81,6 +74,5 @@ ORDER BY
 	`t1`.`Id`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DROP TABLE IF EXISTS `TempTable`
 

@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT DISTINCT
 	[c_1].[ChildID]
 FROM

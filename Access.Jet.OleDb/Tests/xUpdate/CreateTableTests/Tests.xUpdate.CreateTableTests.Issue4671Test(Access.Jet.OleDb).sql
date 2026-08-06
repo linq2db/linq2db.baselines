@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 CREATE TABLE [Issue4671EntityTMP]
 (
 	[Id]    Int  NOT NULL IDENTITY,
@@ -9,7 +8,6 @@ CREATE TABLE [Issue4671EntityTMP]
 )
 
 -- Access.Jet.OleDb AccessOleDb
-
 INSERT INTO [Issue4671Entity]
 (
 	[Value]
@@ -20,7 +18,6 @@ VALUES
 )
 
 -- Access.Jet.OleDb AccessOleDb
-
 INSERT INTO [Issue4671EntityTMP]
 (
 	[Value]
@@ -31,7 +28,6 @@ VALUES
 )
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT TOP 2
 	[t1].[Id],
 	[t1].[Value]
@@ -39,7 +35,6 @@ FROM
 	[Issue4671Entity] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT TOP 2
 	[t1].[Id],
 	[t1].[Value]
@@ -47,6 +42,5 @@ FROM
 	[Issue4671EntityTMP] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 DROP TABLE [Issue4671EntityTMP]
 

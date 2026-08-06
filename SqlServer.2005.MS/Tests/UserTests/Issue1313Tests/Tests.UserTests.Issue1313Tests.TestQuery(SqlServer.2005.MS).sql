@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
-
 INSERT INTO [ValueItem]
 (
 	[Value]
@@ -10,7 +9,6 @@ VALUES
 )
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[row_1].[Value]
 FROM

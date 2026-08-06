@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 SELECT
 	"t"."Id",
 	"t"."Value"
@@ -9,7 +8,6 @@ WHERE
 	"t"."Value" = TRUE
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t"."Id",
 	"t"."Value"
@@ -19,7 +17,6 @@ WHERE
 	"t"."Value" = TRUE
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t"."Id",
 	"t"."Value"
@@ -29,7 +26,6 @@ WHERE
 	"t"."Value" = FALSE OR "t"."Value" IS NULL
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t"."Id",
 	"t"."Value"

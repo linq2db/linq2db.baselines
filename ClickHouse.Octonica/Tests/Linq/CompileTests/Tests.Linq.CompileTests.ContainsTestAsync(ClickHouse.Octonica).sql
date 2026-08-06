@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	CASE
 		WHEN 1 IN (
@@ -13,7 +12,6 @@ SELECT
 	END
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	CASE
 		WHEN -1 IN (

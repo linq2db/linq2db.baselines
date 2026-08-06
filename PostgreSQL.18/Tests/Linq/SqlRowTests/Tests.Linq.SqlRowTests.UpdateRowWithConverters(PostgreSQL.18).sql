@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL12
 DECLARE @Cents Integer -- Int32
 SET     @Cents = 100
 
@@ -12,8 +12,7 @@ FROM
 WHERE
 	x."Id" = 2 AND "ConvertedInts"."Id" = x."Id"
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	x."Id",
 	x."Cents",

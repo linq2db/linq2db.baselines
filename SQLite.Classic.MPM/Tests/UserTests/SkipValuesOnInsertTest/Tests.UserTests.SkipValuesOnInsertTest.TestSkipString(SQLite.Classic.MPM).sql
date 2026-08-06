@@ -16,7 +16,6 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t].[Id],
 	[t].[Name],
@@ -45,7 +44,6 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t].[Id],
 	[t].[Name],

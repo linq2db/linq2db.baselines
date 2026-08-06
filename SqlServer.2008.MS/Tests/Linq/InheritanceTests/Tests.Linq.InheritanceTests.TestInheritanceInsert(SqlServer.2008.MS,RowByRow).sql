@@ -141,7 +141,6 @@ VALUES
 )
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[t1].[Code],
 	[t1].[Id],

@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[a_Patient].[PersonID],
 	[a_Patient].[Diagnosis]

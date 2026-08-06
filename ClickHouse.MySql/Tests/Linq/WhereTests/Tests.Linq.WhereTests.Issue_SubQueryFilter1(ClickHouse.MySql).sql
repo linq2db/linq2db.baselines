@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.PersonID,
 	t1.Diagnosis
@@ -38,7 +37,6 @@ ORDER BY
 	t1.PersonID
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.PersonID,
 	t1.Diagnosis
@@ -46,7 +44,6 @@ FROM
 	Patient t1
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.FirstName,
 	t1.PersonID,

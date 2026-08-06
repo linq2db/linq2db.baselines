@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	IIF([t1].[EnumNullable] IS NULL, [t1].[Enum], [t1].[EnumNullable])
 FROM

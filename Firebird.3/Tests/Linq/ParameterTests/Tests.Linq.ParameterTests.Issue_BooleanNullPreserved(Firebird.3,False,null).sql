@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 INSERT INTO "TestBool"
 (
 	"Id",
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"
@@ -21,14 +19,12 @@ FROM
 FETCH NEXT 2 ROWS ONLY
 
 -- Firebird.3 Firebird3
-
 UPDATE
 	"TestBool" "t1"
 SET
 	"Value" = NOT "t1"."Value"
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"
@@ -37,7 +33,6 @@ FROM
 FETCH NEXT 2 ROWS ONLY
 
 -- Firebird.3 Firebird3
-
 UPDATE
 	"TestBool" "r"
 SET
@@ -46,7 +41,6 @@ WHERE
 	"r"."Id" = 1
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"

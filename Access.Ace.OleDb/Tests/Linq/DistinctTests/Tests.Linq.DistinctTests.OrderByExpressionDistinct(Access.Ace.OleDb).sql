@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[x_1].[MiddleName],
 	[x_1].[LastName]
@@ -12,10 +11,10 @@ FROM
 			[Person] [x]
 	) [x_1]
 ORDER BY
-	IIF([x_1].[MiddleName] IS NULL, '-2', [x_1].[MiddleName]) DESC
+	IIF([x_1].[MiddleName] IS NULL, '-2', [x_1].[MiddleName]) DESC,
+	IIF([x_1].[LastName] IS NULL, '-1', [x_1].[LastName])
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

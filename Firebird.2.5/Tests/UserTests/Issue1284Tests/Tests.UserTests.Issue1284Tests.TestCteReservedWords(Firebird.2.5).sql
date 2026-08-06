@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 WITH CTE_1 ("Obj_Operator")
 AS
 (
@@ -14,7 +13,6 @@ FROM
 	CTE_1 "t1"
 
 -- Firebird.2.5 Firebird
-
 SELECT FIRST 1
 	"person_1"."LastName"
 FROM

@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp_Merge"';
 EXCEPTION
@@ -10,7 +9,6 @@ EXCEPTION
 END;
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE TABLE "FluentTemp_Merge"
@@ -46,7 +44,6 @@ VALUES
 )
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 MERGE INTO "FluentTemp_Merge" Target
 USING (
 	SELECT 1 AS ID, 'John II' AS "Name" FROM sys.dual) "Source"
@@ -70,7 +67,6 @@ VALUES
 )
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp_Merge"';
 EXCEPTION

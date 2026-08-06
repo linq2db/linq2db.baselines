@@ -9,7 +9,6 @@ WHERE
 	`LinqDataTypes`.`ID` >= 101 AND `LinqDataTypes`.`ID` < @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 INSERT INTO `LinqDataTypes`
 (
 	`ID`,
@@ -24,7 +23,6 @@ VALUES
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`BigIntValue` IS NOT NULL AND `t1`.`IntValue` IS NOT NULL,
 	`t1`.`BigIntValue`,

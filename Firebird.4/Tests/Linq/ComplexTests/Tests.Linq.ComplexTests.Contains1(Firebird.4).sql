@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 SELECT
 	"p"."ParentID",
 	"gc3_1"."not_null",

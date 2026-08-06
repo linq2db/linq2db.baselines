@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT DISTINCT
 	"c_1"."ChildID"
 FROM

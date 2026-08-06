@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[y].[item]
 FROM
@@ -12,7 +11,6 @@ FROM
 			) [y]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

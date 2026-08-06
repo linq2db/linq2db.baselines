@@ -1,12 +1,10 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
 	"Src" s
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -14,8 +12,7 @@ FROM
 WHERE
 	s."NullableInt" IS NOT NULL
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -23,8 +20,7 @@ FROM
 WHERE
 	1 = 0
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM

@@ -4,7 +4,7 @@ SET     @ID = 1
 
 SELECT
 	[c_1].[FirstName],
-	[c_1].[PersonID] as [ID],
+	[c_1].[PersonID],
 	[c_1].[LastName],
 	[c_1].[MiddleName],
 	[c_1].[Gender]

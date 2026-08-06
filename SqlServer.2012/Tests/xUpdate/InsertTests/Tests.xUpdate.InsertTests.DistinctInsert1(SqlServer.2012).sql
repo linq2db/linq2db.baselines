@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012
-
 DELETE [c_1]
 FROM
 	[LinqDataTypes] [c_1]
@@ -7,7 +6,6 @@ WHERE
 	[c_1].[ID] > 1000
 
 -- SqlServer.2012
-
 INSERT INTO [LinqDataTypes]
 (
 	[ID],
@@ -27,7 +25,6 @@ FROM
 	) [t2]
 
 -- SqlServer.2012
-
 DELETE [c_1]
 FROM
 	[LinqDataTypes] [c_1]

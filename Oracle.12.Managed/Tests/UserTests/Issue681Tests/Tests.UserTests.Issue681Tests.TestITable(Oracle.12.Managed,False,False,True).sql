@@ -1,5 +1,4 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	sys_context('userenv', 'current_schema') as "c1"
 FROM
@@ -7,7 +6,6 @@ FROM
 FETCH NEXT 1 ROWS ONLY
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1.ID,
 	t1."Value"

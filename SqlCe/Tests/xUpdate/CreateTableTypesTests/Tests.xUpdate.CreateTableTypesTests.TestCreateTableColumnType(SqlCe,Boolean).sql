@@ -33,10 +33,9 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
-	[t1].[Boolean] as [Boolean_1]
+	[t1].[Boolean]
 FROM
 	[CreateTableTypes] [t1]
 ORDER BY

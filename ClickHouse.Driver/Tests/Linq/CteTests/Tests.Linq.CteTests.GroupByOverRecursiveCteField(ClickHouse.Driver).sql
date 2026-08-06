@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 WITH RECURSIVE cte AS
 (
 	SELECT
@@ -35,7 +34,6 @@ FROM
 		INNER JOIN cte d ON m_1.Key_1 = Coalesce(d.ParentID, -1)
 
 -- ClickHouse.Driver ClickHouse
-
 WITH RECURSIVE cte AS
 (
 	SELECT

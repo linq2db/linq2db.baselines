@@ -24,7 +24,6 @@ VALUES
 )
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT TOP 2
 	[p].[FirstName],
 	[p].[PersonID],

@@ -1,25 +1,19 @@
 ﻿-- SqlServer.2012.MS SqlServer.2012
-
 SELECT Cast(12345 as binary(2))
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT Cast(12345 as binary(4))
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT Cast(12345 as varbinary(2))
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT Cast(12345 as varbinary(4))
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT Cast(NULL as image)
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT Cast(12345 as varbinary(max))
 
 -- SqlServer.2012.MS SqlServer.2012

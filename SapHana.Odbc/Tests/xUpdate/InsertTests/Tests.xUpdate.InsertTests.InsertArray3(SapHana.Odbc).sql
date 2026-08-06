@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 DELETE FROM
 	"LinqDataTypes" "t"
 WHERE
@@ -23,7 +22,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t"."ID",
 	"t"."MoneyValue",
@@ -39,7 +37,6 @@ WHERE
 LIMIT 2
 
 -- SapHana.Odbc SapHanaOdbc
-
 DELETE FROM
 	"LinqDataTypes" "t"
 WHERE

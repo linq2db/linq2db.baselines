@@ -1,11 +1,10 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DELETE FROM
 	"Person" t1
 WHERE
 	t1."FirstName" LIKE 'Insert15%' ESCAPE '~'
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DECLARE @Gender Text(1) -- String
 SET     @Gender = 'M'
 DECLARE @Name_FirstName Text(8) -- String
@@ -30,8 +29,7 @@ VALUES
 	:Name_LastName
 )
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -39,8 +37,7 @@ FROM
 WHERE
 	t1."FirstName" LIKE 'Insert15%' ESCAPE '~'
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DELETE FROM
 	"Person" t1
 WHERE

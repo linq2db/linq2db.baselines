@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[data_1].[ParentID],
 	[data_1].[ChildID],

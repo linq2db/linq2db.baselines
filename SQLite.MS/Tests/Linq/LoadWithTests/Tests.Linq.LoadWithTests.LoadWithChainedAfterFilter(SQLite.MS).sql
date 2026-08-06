@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[m_1].[Id],
 	[m_1].[Id_1],
@@ -33,7 +32,6 @@ FROM
 		INNER JOIN [PeopleForLoadWith] [d_1] ON [m_1].[Id] = [d_1].[ParentId]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -59,7 +57,6 @@ FROM
 		INNER JOIN [PeopleForLoadWith] [d] ON [m_1].[Id] = [d].[ParentId]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[p].[Id],
 	[p].[Name],

@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t].[ParentID],
 	(
@@ -14,7 +13,6 @@ FROM
 	[Parent] [t]
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t].[ParentID],
 	(

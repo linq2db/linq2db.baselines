@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 UPDATE
 	Parent
 SET

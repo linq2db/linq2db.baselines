@@ -24,7 +24,6 @@ VALUES
 )
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t1"."FirstName",
 	"t1"."PersonID",
@@ -78,7 +77,7 @@ USING (
 		"Person" "t"
 			INNER JOIN "Patient" "a_Patient" ON "t"."PersonID" = "a_Patient"."PersonID"
 	WHERE
-		"a_Patient"."PersonID" = CAST(@patient AS Int)
+		"a_Patient"."PersonID" = @patient
 ) "Source"
 (
 	ID,
@@ -138,7 +137,7 @@ USING (
 		"Person" "t"
 			INNER JOIN "Patient" "a_Patient" ON "t"."PersonID" = "a_Patient"."PersonID"
 	WHERE
-		"a_Patient"."PersonID" = CAST(@patient AS Int)
+		"a_Patient"."PersonID" = @patient
 ) "Source"
 (
 	ID,

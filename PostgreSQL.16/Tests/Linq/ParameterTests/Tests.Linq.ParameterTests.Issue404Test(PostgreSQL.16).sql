@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	m_1."Id",
 	d."Id",
@@ -9,14 +8,13 @@ FROM
 	"Table404One" m_1
 		INNER JOIN "Table404Two" d ON m_1."Id" = d."FirstTableId"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id"
 FROM
 	"Table404One" t1
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DECLARE @Usage Integer -- Int32
 SET     @Usage = 0
 
@@ -31,14 +29,13 @@ FROM
 WHERE
 	d."Usage" = :Usage
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id"
 FROM
 	"Table404One" t1
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DECLARE @Usage Integer -- Int32
 SET     @Usage = 1
 
@@ -53,15 +50,13 @@ FROM
 WHERE
 	d."Usage" = :Usage
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id"
 FROM
 	"Table404One" t1
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	m_1."Id",
 	d."Id",
@@ -71,14 +66,13 @@ FROM
 	"Table404One" m_1
 		INNER JOIN "Table404Two" d ON m_1."Id" = d."FirstTableId"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id"
 FROM
 	"Table404One" t1
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DECLARE @Usage Integer -- Int32
 SET     @Usage = 0
 
@@ -93,14 +87,13 @@ FROM
 WHERE
 	d."Usage" = :Usage
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id"
 FROM
 	"Table404One" t1
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DECLARE @Usage Integer -- Int32
 SET     @Usage = 1
 
@@ -115,8 +108,7 @@ FROM
 WHERE
 	d."Usage" = :Usage
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id"
 FROM

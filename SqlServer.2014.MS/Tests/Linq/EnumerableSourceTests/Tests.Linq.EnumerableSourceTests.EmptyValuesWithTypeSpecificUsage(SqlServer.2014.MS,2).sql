@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	[g_1].[Id],
 	SUM([g_1].[Id])

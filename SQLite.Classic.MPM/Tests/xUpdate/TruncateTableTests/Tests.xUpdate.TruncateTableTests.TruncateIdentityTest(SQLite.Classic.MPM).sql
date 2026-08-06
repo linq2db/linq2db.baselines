@@ -1,9 +1,7 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 DROP TABLE IF EXISTS [TestIdTrun]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 CREATE TABLE [TestIdTrun]
 (
 	[ID]     INTEGER  NOT NULL PRIMARY KEY AUTOINCREMENT,
@@ -11,7 +9,6 @@ CREATE TABLE [TestIdTrun]
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 INSERT INTO [TestIdTrun]
 (
 	[Field1]
@@ -22,7 +19,6 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 INSERT INTO [TestIdTrun]
 (
 	[Field1]
@@ -46,15 +42,12 @@ ORDER BY
 LIMIT 2 OFFSET @skip
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 DELETE FROM [TestIdTrun]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 UPDATE SQLITE_SEQUENCE SET SEQ=0 WHERE NAME='TestIdTrun'
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 INSERT INTO [TestIdTrun]
 (
 	[Field1]
@@ -65,7 +58,6 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 INSERT INTO [TestIdTrun]
 (
 	[Field1]
@@ -89,6 +81,5 @@ ORDER BY
 LIMIT 2 OFFSET @skip
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 DROP TABLE [TestIdTrun]
 

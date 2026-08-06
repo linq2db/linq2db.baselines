@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT DISTINCT
 	i.FirstName,
 	i.PersonID,

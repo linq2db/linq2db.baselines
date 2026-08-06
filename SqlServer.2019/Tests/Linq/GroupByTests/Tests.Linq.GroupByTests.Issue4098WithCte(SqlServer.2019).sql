@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2019
-
 WITH [CTE_1] ([InvestorId], [SecurityClass], [Units])
 AS
 (

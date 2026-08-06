@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 /* My Test */
 MERGE INTO TestMerge1 Target
 USING (

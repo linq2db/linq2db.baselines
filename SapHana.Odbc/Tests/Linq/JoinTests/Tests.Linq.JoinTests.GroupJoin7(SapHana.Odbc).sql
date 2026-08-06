@@ -18,7 +18,6 @@ FROM
 		INNER JOIN "Child" "d" ON "m_1"."ParentID" = "d"."ParentID" - ?
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"p"."ParentID",
 	"p"."Value1"

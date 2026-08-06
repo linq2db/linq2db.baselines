@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 DELETE FROM
 	"LinqDataTypes" "t"
 WHERE
@@ -19,11 +18,10 @@ VALUES
 (
 	1001,
 	'1',
-	CAST(@arr AS VARCHAR(4) CHARACTER SET OCTETS)
+	@arr
 )
 
 -- Firebird.2.5 Firebird
-
 SELECT FIRST 2
 	"t".ID,
 	"t"."MoneyValue",
@@ -38,7 +36,6 @@ WHERE
 	"t".ID = 1001
 
 -- Firebird.2.5 Firebird
-
 DELETE FROM
 	"LinqDataTypes" "t"
 WHERE

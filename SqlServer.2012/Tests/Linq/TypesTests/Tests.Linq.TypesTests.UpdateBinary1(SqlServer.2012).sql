@@ -10,7 +10,6 @@ WHERE
 	[LinqDataTypes].[ID] = 1
 
 -- SqlServer.2012
-
 SELECT
 	[t].[BinaryValue]
 FROM

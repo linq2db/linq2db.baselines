@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 WITH [CTE_1] ([ParentID])
 AS
 (
@@ -19,7 +18,6 @@ FROM
 		INNER JOIN [CTE_1] [ct] ON [ct].[ParentID] = [c_2].[ParentID]
 
 -- SqlServer.2017
-
 SELECT
 	[c_1].[ChildID],
 	[c_1].[ParentID]
@@ -29,7 +27,6 @@ WHERE
 	[c_1].[ParentID] % 2 = 0
 
 -- SqlServer.2017
-
 SELECT
 	[c_1].[ChildID]
 FROM

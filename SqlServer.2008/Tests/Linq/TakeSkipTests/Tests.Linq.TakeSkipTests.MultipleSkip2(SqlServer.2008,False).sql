@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008
-
 SELECT
 	[t2].[Id],
 	[t2].[Value_1]
@@ -18,7 +17,6 @@ ORDER BY
 	[t2].[Value_1]
 
 -- SqlServer.2008
-
 SELECT
 	[t2].[Id],
 	[t2].[Value_1]

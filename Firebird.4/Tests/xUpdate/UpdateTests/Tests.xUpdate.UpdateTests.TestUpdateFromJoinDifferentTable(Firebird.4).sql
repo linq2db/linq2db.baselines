@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 UPDATE
 	"gt_s_one_target"
 SET

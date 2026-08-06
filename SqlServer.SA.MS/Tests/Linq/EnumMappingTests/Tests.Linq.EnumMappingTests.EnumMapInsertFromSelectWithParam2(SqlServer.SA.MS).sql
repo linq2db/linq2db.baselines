@@ -1,6 +1,6 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
 DECLARE @p Int -- Int32
-SET     @p = 102
+SET     @p = 103
 
 DELETE [r]
 FROM
@@ -9,7 +9,6 @@ WHERE
 	[r].[ID] >= 101 AND [r].[ID] < @p
 
 -- SqlServer.SA.MS SqlServer.2019
-
 INSERT INTO [LinqDataTypes]
 (
 	[ID],
@@ -31,7 +30,7 @@ INSERT INTO [LinqDataTypes]
 	[BigIntValue]
 )
 SELECT
-	[r].[ID],
+	[r].[ID] + 1,
 	@param
 FROM
 	[LinqDataTypes] [r]
@@ -39,17 +38,16 @@ WHERE
 	[r].[ID] = 101 AND [r].[BigIntValue] = 12
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	COUNT(*)
 FROM
 	[LinqDataTypes] [r]
 WHERE
-	[r].[ID] = 101 AND [r].[BigIntValue] = 11
+	[r].[ID] = 102 AND [r].[BigIntValue] = 11
 
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @p Int -- Int32
-SET     @p = 102
+SET     @p = 103
 
 DELETE [r]
 FROM

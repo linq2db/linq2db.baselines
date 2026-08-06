@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[p_].[ParentID],
 	[p_].[Value1]

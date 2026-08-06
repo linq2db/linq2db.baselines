@@ -1,25 +1,22 @@
 ﻿-- SqlCe
-
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Ints] [i]
 WHERE
 	1 = 0
 
 -- SqlCe
-
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Ints] [i]
 WHERE
 	1 = 0
 
 -- SqlCe
-
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Ints] [i]
 WHERE

@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL12
 DECLARE @value Integer -- Int32
 SET     @value = 2
 

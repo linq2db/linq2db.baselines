@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 INSERT INTO "TrimTestTable"
 (
 	ID,
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"r".ID,
 	"r"."Data"
@@ -22,7 +20,6 @@ ORDER BY
 	"r".ID
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"r".ID,
 	"r"."Data"

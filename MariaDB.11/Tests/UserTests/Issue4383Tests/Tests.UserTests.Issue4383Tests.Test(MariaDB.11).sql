@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`m_1`.`Id`,
 	`m_1`.`Id`,
@@ -25,7 +24,6 @@ ORDER BY
 	`m_1`.`Id_1`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`m_1`.`LINE_ID`,
 	`d`.`LINE_ID`,
@@ -40,7 +38,6 @@ ORDER BY
 	`m_1`.`LINE_ID`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`LINE_ID`,
 	`t1`.`LINE_ID`

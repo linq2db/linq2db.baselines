@@ -1,12 +1,10 @@
 ﻿-- Firebird.2.5 Firebird
-
 DELETE FROM
 	"LinqDataTypes" "t"
 WHERE
 	"t".ID > 1000
 
 -- Firebird.2.5 Firebird
-
 INSERT INTO "LinqDataTypes"
 (
 	ID,
@@ -21,7 +19,6 @@ VALUES
 )
 
 -- Firebird.2.5 Firebird
-
 SELECT FIRST 2
 	"t".ID,
 	"t"."MoneyValue",
@@ -36,7 +33,6 @@ WHERE
 	"t".ID = 1001
 
 -- Firebird.2.5 Firebird
-
 DELETE FROM
 	"LinqDataTypes" "t"
 WHERE

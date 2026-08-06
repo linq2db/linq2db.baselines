@@ -33,7 +33,6 @@ VALUES
 )
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Id],
 	[t1].[Double]

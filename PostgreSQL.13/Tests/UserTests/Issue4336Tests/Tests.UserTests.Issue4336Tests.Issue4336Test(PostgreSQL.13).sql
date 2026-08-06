@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL12
 DECLARE @take Integer -- Int32
 SET     @take = 10
 

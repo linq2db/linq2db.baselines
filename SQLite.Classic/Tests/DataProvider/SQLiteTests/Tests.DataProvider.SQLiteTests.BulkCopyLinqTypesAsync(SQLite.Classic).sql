@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 INSERT INTO [LinqDataTypes]
 (
 	[ID],
@@ -24,14 +23,12 @@ VALUES
 (4009,1009,'2001-01-11 01:11:21.100',1,X'99F33B231097794E873D2EC7BF1E0009',NULL,9,NULL)
 
 -- SQLite.Classic SQLite
-
 DELETE FROM
 	[LinqDataTypes]
 WHERE
 	[LinqDataTypes].[ID] >= 4000
 
 -- SQLite.Classic SQLite
-
 INSERT INTO [LinqDataTypes]
 (
 	[ID],
@@ -56,7 +53,6 @@ VALUES
 (4009,1009,'2001-01-11 01:11:21.100',1,X'99F33B231097794E873D2EC7BF1E0009',NULL,9,NULL)
 
 -- SQLite.Classic SQLite
-
 DELETE FROM
 	[LinqDataTypes]
 WHERE

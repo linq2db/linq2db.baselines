@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT DISTINCT
 	`p`.`ParentID`,
 	(
@@ -16,7 +15,6 @@ ORDER BY
 	`p`.`ParentID`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`m_1`.`ParentID`,
 	`d`.`ParentID`,
@@ -31,7 +29,6 @@ FROM
 		INNER JOIN `Child` `d` ON `m_1`.`ParentID` = `d`.`ParentID`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`t1`.`ParentID`,
 	`t1`.`Value1`

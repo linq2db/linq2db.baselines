@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 SELECT
 	COUNT(*)
 FROM
@@ -8,7 +7,6 @@ WHERE
 	[s].[CEnum] IS NULL
 
 -- SqlServer.2017
-
 SELECT
 	COUNT(*)
 FROM

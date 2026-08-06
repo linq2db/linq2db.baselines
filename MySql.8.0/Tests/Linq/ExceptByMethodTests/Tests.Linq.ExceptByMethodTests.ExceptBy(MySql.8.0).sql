@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`e_1`.`Id`,
 	`e_1`.`TestId`
@@ -20,7 +19,6 @@ ORDER BY
 	`e_1`.`Id`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`TestId`

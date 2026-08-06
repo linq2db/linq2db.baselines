@@ -1,8 +1,7 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[m_1].[ParentID],
-	[d].[ParentID],
+	[d].[ParentID] as [ParentID_1],
 	[d].[ChildID]
 FROM
 	(
@@ -15,7 +14,6 @@ FROM
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[r_2].[ParentID],
 	[r_2].[ChildID],
@@ -53,10 +51,9 @@ ORDER BY
 	[r_2].[Count_1]
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[m_1].[ParentID],
-	[d].[ParentID],
+	[d].[ParentID] as [ParentID_1],
 	[d].[ChildID]
 FROM
 	(
@@ -69,11 +66,10 @@ FROM
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID],
-	[a_Parent].[ParentID],
+	[a_Parent].[ParentID] as [ParentID_1],
 	[a_Parent].[Value1]
 FROM
 	[Child] [t1]

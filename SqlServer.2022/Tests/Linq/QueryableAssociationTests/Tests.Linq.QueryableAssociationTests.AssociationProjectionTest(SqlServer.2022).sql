@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 SELECT
 	Coalesce([t1].[StrValue], N'') + N'_B',
 	Coalesce([t1].[StrValue], N'') + N'_C',

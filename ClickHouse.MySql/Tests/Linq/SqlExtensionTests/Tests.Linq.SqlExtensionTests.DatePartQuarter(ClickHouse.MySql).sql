@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	QUARTER(t.DateTimeValue)
 FROM

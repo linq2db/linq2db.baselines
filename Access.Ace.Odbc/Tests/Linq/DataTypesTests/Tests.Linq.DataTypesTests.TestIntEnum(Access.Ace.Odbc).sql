@@ -14,7 +14,6 @@ WHERE
 	[r].[Column] = ? AND [r].[ColumnNullable] = ?
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[r].[Id],
 	[r].[Column],
@@ -25,7 +24,6 @@ WHERE
 	[r].[Column] = 2 AND [r].[ColumnNullable] = 3
 
 -- Access.Ace.Odbc AccessODBC
-
 DELETE FROM
 	[IntEnumTable] [t1]
 
@@ -72,7 +70,6 @@ VALUES
 )
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],
@@ -83,7 +80,6 @@ ORDER BY
 	[t1].[Id]
 
 -- Access.Ace.Odbc AccessODBC
-
 DELETE FROM
 	[IntEnumTable] [t1]
 
@@ -130,7 +126,6 @@ VALUES
 )
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],
@@ -141,7 +136,6 @@ ORDER BY
 	[t1].[Id]
 
 -- Access.Ace.Odbc AccessODBC
-
 DELETE FROM
 	[IntEnumTable] [t1]
 
@@ -188,7 +182,6 @@ VALUES
 )
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],

@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 UPDATE
 	[OuterTable]
 SET
@@ -16,7 +15,6 @@ SET
 	)
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Field1],

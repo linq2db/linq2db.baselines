@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"al_group_3"."Id",
 	"t2"."LastUpdate",

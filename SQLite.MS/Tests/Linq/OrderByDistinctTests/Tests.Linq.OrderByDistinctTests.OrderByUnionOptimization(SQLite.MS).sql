@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT DISTINCT
 	[t1].[Id]
 FROM

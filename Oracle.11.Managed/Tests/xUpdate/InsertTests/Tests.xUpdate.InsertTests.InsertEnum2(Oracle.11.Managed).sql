@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 DELETE FROM
 	"Parent" t1
 WHERE
@@ -34,7 +33,6 @@ WHERE
 	t1."ParentID" = :id
 
 -- Oracle.11.Managed Oracle11
-
 DELETE FROM
 	"Parent" t1
 WHERE

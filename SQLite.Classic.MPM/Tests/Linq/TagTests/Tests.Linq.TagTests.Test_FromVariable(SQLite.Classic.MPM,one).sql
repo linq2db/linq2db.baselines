@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 /* one */
 SELECT
 	[x].[FirstName],

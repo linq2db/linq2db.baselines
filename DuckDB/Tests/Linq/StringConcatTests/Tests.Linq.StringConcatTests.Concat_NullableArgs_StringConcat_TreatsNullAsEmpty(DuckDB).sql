@@ -1,12 +1,10 @@
 ﻿-- DuckDB
-
 SELECT
 	e.Id
 FROM
 	ConcatTestEntity e
 
 -- DuckDB
-
 SELECT
 	t1.Id,
 	t1.Str1,

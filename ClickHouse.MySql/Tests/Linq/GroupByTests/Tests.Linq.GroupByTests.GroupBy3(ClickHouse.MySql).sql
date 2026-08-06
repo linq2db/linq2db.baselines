@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT DISTINCT
 	Coalesce(gr.Value1, c_1.ChildID)
 FROM

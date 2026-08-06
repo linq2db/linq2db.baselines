@@ -1,7 +1,6 @@
 ﻿-- SqlCe
-
 SELECT
-	[t1].[value] as [value_1]
+	[t1].[value]
 FROM
 	(
 		SELECT 1 as value

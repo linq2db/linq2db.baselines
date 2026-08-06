@@ -1,10 +1,8 @@
 ﻿-- Sybase.Managed Sybase
-
 IF (OBJECT_ID(N'FluentTemp_Merge') IS NOT NULL)
 	DROP TABLE [FluentTemp_Merge]
 
 -- Sybase.Managed Sybase
-
 IF (OBJECT_ID(N'FluentTemp_Merge') IS NULL)
 	EXECUTE('
 		CREATE TABLE [FluentTemp_Merge]
@@ -34,7 +32,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 MERGE INTO [FluentTemp_Merge] [Target]
 USING (
 	SELECT 1 AS [ID], 'John II' AS [Name]) [Source]
@@ -62,7 +59,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 IF (OBJECT_ID(N'FluentTemp_Merge') IS NOT NULL)
 	DROP TABLE [FluentTemp_Merge]
 

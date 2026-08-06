@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 INSERT INTO WithInitOnly
 (
 	Id,
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 INSERT INTO WithInitOnly
 (
 	Id,
@@ -29,7 +27,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.Id,
 	t1.BaseValue,
@@ -40,7 +37,6 @@ ORDER BY
 	t1.Id
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	r.Id,
 	r.Value,

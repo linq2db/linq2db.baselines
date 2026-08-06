@@ -1,9 +1,7 @@
 ﻿-- SQLite.MS SQLite
-
 DROP TABLE IF EXISTS [FluentTemp_InsertOrUpdate]
 
 -- SQLite.MS SQLite
-
 CREATE TABLE IF NOT EXISTS [FluentTemp_InsertOrUpdate]
 (
 	[ID]   INTEGER      NOT NULL,
@@ -30,7 +28,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 INSERT INTO [FluentTemp_InsertOrUpdate] AS [t1]
 (
 	[ID],
@@ -46,6 +43,5 @@ ON CONFLICT ([ID]) DO UPDATE SET
 	[Name] = [t1].[Name]
 
 -- SQLite.MS SQLite
-
 DROP TABLE IF EXISTS [FluentTemp_InsertOrUpdate]
 

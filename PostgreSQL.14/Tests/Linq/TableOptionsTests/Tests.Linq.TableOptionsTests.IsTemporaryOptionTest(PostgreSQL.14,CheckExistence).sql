@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 CREATE TEMPORARY TABLE IF NOT EXISTS temp_table1
 (
 	"ID"    Int NOT NULL,
@@ -9,8 +8,7 @@ CREATE TEMPORARY TABLE IF NOT EXISTS temp_table1
 )
 ON COMMIT PRESERVE ROWS
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 INSERT INTO temp_table1
 (
 	"ID",
@@ -19,8 +17,7 @@ INSERT INTO temp_table1
 VALUES
 (1,2)
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 CREATE TEMPORARY TABLE IF NOT EXISTS temp_table2
 (
 	"ID"    Int NOT NULL,
@@ -30,8 +27,7 @@ CREATE TEMPORARY TABLE IF NOT EXISTS temp_table2
 )
 ON COMMIT PRESERVE ROWS
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 INSERT INTO temp_table2
 (
 	"ID",
@@ -43,24 +39,21 @@ SELECT
 FROM
 	temp_table1 t1
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."ID",
 	t1."Value"
 FROM
 	temp_table1 t1
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."ID",
 	t1."Value"
 FROM
 	temp_table2 t1
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 INSERT INTO temp_table1
 (
 	"ID",
@@ -69,7 +62,7 @@ INSERT INTO temp_table1
 VALUES
 (2,3)
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DECLARE @ID Integer -- Int32
 SET     @ID = 3
 DECLARE @Value Integer -- Int32
@@ -88,19 +81,15 @@ VALUES
 
 INSERT BULK temp_table1(ID, Value)
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 TRUNCATE TABLE temp_table1
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 TRUNCATE TABLE temp_table2
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DROP TABLE IF EXISTS temp_table2
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DROP TABLE IF EXISTS temp_table1
 

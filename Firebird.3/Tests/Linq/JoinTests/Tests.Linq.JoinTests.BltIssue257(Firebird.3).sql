@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	"b_1"."Date_1",
 	COUNT(*)

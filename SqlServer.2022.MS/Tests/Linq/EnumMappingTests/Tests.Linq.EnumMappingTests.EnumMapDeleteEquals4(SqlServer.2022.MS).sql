@@ -9,7 +9,6 @@ WHERE
 	[r].[ID] >= 101 AND [r].[ID] < @p
 
 -- SqlServer.2022.MS SqlServer.2022
-
 INSERT INTO [LinqDataTypes]
 (
 	[ID],
@@ -22,7 +21,6 @@ VALUES
 )
 
 -- SqlServer.2022.MS SqlServer.2022
-
 DELETE [r]
 FROM
 	[LinqDataTypes] [r]

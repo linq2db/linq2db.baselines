@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`g_2`.`ChildId`,
 	`g_2`.`ParentId`,
@@ -17,7 +16,6 @@ GROUP BY
 	`g_2`.`ParentId`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t1`.`ParentID`,
 	`t1`.`ChildID`

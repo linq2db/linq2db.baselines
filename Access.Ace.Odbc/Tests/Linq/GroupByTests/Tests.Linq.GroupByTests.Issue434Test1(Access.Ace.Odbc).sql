@@ -4,7 +4,7 @@ SET     @input = '%test%'
 
 SELECT
 	[m_1].[PersonID],
-	[d].[PersonID],
+	[d].[PersonID] as [PersonID_1],
 	[d].[Diagnosis]
 FROM
 	[Person] [m_1]

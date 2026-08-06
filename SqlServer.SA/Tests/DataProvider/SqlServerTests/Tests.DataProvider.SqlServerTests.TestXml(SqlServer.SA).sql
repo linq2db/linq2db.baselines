@@ -1,13 +1,10 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 SELECT Cast('<xml/>' as xml)
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT Cast('<xml/>' as xml)
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT Cast('<xml/>' as xml)
 
 -- SqlServer.SA SqlServer.2019

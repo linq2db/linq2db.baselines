@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
-
+﻿-- PostgreSQL.13 PostgreSQL12
 INSERT INTO "Parent"
 (
 	"ParentID",
@@ -11,8 +10,7 @@ VALUES
 	20000
 )
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 INSERT INTO "Child"
 (
 	"ChildID",
@@ -24,8 +22,7 @@ VALUES
 	20000
 )
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 UPDATE
 	"Parent"
 SET

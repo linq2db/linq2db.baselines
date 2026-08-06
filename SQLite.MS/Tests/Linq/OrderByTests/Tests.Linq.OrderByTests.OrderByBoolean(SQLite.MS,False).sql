@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],
@@ -12,7 +11,6 @@ ORDER BY
 	Length([t1].[FirstName]) > 4
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[a_PersonDoctor].[FirstName]
 FROM

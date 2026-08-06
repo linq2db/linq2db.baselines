@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`o`.`ParentID`,
 	(
@@ -22,14 +21,12 @@ FROM
 	`Parent` `o`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	COUNT(*)
 FROM
 	`Parent` `o`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`x`.`ParentID`,
 	`x`.`CountResult`,

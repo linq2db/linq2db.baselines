@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT /*+ PX_JOIN_FILTER(p) PX_JOIN_FILTER(c_1) */
 	p."ParentID",
 	p."Value1"

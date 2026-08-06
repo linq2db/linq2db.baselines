@@ -54,7 +54,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT
 	p.Id,
 	p.TargetName,

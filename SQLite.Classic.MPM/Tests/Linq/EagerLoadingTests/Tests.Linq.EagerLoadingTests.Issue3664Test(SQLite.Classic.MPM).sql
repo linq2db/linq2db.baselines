@@ -26,7 +26,6 @@ WHERE
 	[d].[Id] = @id
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id]
 FROM
@@ -47,7 +46,6 @@ WHERE
 	[d].[Id] = @id
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id]
 FROM

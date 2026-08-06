@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[t].[ParentID],
 	[t].[ChildID]
@@ -18,7 +17,6 @@ WHERE
 	)
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID]

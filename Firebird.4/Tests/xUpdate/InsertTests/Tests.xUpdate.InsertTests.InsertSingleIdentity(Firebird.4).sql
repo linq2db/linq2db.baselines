@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 DELETE FROM
 	"TestIdentity" "t1"
 
@@ -12,7 +11,6 @@ RETURNING
 	ID
 
 -- Firebird.4 Firebird4
-
 DELETE FROM
 	"TestIdentity" "t1"
 

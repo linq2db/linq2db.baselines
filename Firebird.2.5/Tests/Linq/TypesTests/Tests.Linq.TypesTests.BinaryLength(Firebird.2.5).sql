@@ -10,7 +10,6 @@ WHERE
 	"t".ID = 1
 
 -- Firebird.2.5 Firebird
-
 SELECT FIRST 1
 	Octet_Length("t"."BinaryValue")
 FROM

@@ -1,9 +1,7 @@
 ﻿-- DuckDB
-
 DROP TABLE IF EXISTS TempTable
 
 -- DuckDB
-
 CREATE TEMPORARY TABLE TempTable
 (
 	ID INTEGER,
@@ -12,7 +10,6 @@ CREATE TEMPORARY TABLE TempTable
 )
 
 -- DuckDB
-
 INSERT INTO TempTable
 (
 	ID
@@ -23,10 +20,8 @@ FROM
 	Parent p
 
 -- DuckDB
-
 DROP TABLE IF EXISTS TempTable
 
 -- DuckDB
-
 DROP TABLE TempTable
 

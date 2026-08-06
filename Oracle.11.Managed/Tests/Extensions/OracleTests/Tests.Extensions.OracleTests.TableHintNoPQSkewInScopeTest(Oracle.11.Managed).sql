@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT /*+ NO_PQ_SKEW(p) NO_PQ_SKEW(c_1) */
 	p."ParentID",
 	p."Value1"

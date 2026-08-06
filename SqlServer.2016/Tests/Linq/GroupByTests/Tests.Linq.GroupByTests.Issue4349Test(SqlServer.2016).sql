@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016
-
 SELECT
 	0,
 	[f1].[ParentID]

@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`g_2`.`Key_1`,
 	SUM(`g_2`.`c1`)

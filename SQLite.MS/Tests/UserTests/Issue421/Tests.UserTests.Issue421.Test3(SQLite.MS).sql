@@ -16,7 +16,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[BlobValue]
@@ -27,7 +26,6 @@ WHERE
 LIMIT 1
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[BlobValue]

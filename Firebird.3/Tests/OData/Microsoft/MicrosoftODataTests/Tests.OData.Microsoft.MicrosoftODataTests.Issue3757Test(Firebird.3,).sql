@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	"m_1".ID,
 	"m_1"."ValS",
@@ -11,7 +10,6 @@ FROM
 		INNER JOIN "Issue3757Level2" "d" ON "m_1".ID = "d"."ParentId"
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"l1".ID,
 	"l1"."ValB",

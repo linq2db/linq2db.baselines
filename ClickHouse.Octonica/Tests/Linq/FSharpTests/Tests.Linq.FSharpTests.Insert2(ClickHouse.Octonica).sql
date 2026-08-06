@@ -1,12 +1,10 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	maxOrNull(t1.PersonID)
 FROM
 	Person t1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO Person
 (
 	PersonID,
@@ -25,7 +23,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	p.PersonID,
 	p.FirstName,
@@ -39,7 +36,6 @@ WHERE
 LIMIT 2
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	Person
 DELETE WHERE

@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL12
 DECLARE @Date Date
 SET     @Date = '2021-01-01'::date
 
@@ -11,10 +11,8 @@ VALUES
 	:Date
 )
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
-	t1."Id",
 	t1."Date"
 FROM
 	"DateOnlyTable" t1

@@ -49,7 +49,6 @@ VALUES
 )
 
 -- SqlServer.2016
-
 SELECT
 	COUNT(*)
 FROM
@@ -58,7 +57,6 @@ WHERE
 	[t1].[BoolValue] = 'N'
 
 -- SqlServer.2016
-
 SELECT
 	COUNT(*)
 FROM
@@ -78,7 +76,6 @@ WHERE
 	[t1].[GuidValue] = @GuidValue
 
 -- SqlServer.2016
-
 SELECT TOP (1)
 	[t1].[Id],
 	[t1].[Name],
@@ -90,7 +87,6 @@ WHERE
 	[t1].[BoolValue] = 'N'
 
 -- SqlServer.2016
-
 SELECT TOP (1)
 	[t1].[Id],
 	[t1].[Name],
@@ -102,7 +98,6 @@ WHERE
 	[t1].[BoolValue] = 'Y'
 
 -- SqlServer.2016
-
 SELECT TOP (1)
 	[t1].[Id],
 	[t1].[Name],
@@ -114,7 +109,6 @@ WHERE
 	[t1].[BoolValue] = 'N'
 
 -- SqlServer.2016
-
 SELECT TOP (1)
 	[t1].[Id],
 	[t1].[Name],
@@ -126,7 +120,6 @@ WHERE
 	[t1].[BoolValue] = 'Y'
 
 -- SqlServer.2016
-
 SELECT TOP (1)
 	[t1].[Id],
 	[t1].[Name],
@@ -138,7 +131,6 @@ WHERE
 	[t1].[BoolValue] = 'N'
 
 -- SqlServer.2016
-
 SELECT TOP (1)
 	[t1].[Id],
 	[t1].[Name],
@@ -150,7 +142,6 @@ WHERE
 	[t1].[BoolValue] = 'Y'
 
 -- SqlServer.2016
-
 SELECT TOP (1)
 	[t1].[Id],
 	[t1].[Name],
@@ -162,7 +153,6 @@ WHERE
 	[t1].[BoolValue] = 'N'
 
 -- SqlServer.2016
-
 SELECT TOP (1)
 	[t1].[Id],
 	[t1].[Name],
@@ -174,7 +164,6 @@ WHERE
 	[t1].[BoolValue] = 'Y'
 
 -- SqlServer.2016
-
 SELECT TOP (1)
 	[t1].[Id],
 	[t1].[Name],
@@ -186,7 +175,6 @@ WHERE
 	[t1].[BoolValue] = 'N'
 
 -- SqlServer.2016
-
 SELECT TOP (1)
 	[t1].[Id],
 	[t1].[Name],

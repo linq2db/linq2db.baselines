@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	"g_1"."isValueAvailable",
 	"g_1"."ParentID",
@@ -25,7 +24,6 @@ GROUP BY
 	"g_1"."Value_1"
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1"."ParentID",
 	"t1"."ChildID"

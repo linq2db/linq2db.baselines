@@ -1,9 +1,7 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT Max([Id]) FROM [Issue4702Table]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 INSERT INTO [Issue4702Table]
 (
 	[Id],
@@ -14,7 +12,6 @@ VALUES
 (2,'Text 2')
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 INSERT INTO [Issue4702Table]
 (
 	[Text]

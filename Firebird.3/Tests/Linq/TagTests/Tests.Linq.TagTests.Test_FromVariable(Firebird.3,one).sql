@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 /* one */
 SELECT
 	"x"."FirstName",

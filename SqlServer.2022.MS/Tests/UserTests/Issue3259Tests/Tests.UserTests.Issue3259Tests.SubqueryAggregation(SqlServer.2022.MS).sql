@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
-
 SELECT
 	[t9].[WithParentReference],
 	[t9].[WithParentReferenceCustom1],

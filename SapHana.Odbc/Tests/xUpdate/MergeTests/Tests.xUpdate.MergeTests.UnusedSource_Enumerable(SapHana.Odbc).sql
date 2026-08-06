@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 MERGE INTO "UnusedSourceTable" "Target"
 USING (
 	SELECT 1 FROM DUMMY) "Source"
@@ -18,7 +17,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"r"."Id",
 	"r"."Value"

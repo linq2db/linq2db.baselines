@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[e].[Id]
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	Coalesce([e].[StrReq], N'') || N'X'
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Str1],

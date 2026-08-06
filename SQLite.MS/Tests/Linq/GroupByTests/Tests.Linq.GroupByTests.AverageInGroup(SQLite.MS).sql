@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[g_1].[GroupId],
 	AVG([g_1].[DataValue]),
@@ -29,7 +28,6 @@ GROUP BY
 	[g_1].[GroupId]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[GroupId],

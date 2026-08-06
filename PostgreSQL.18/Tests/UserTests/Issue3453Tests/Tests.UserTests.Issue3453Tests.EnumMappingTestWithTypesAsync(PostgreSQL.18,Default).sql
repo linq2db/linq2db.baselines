@@ -1,12 +1,10 @@
-﻿-- PostgreSQL.18 PostgreSQL
-
+﻿-- PostgreSQL.18 PostgreSQL12
 
 DROP TABLE IF EXISTS schedule;
 DROP TYPE IF EXISTS time_unit;
 CREATE TYPE time_unit AS ENUM ('hour', 'day');
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 INSERT INTO public.schedule
 (
 	unit,
@@ -19,8 +17,7 @@ VALUES
 ('day','day',3),
 ('hour',NULL,1)
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	t1.id,
 	t1.unit,
@@ -29,7 +26,7 @@ SELECT
 FROM
 	public.schedule t1
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL12
 DECLARE @unit Enum -- Object
 SET     @unit = 'day'
 
@@ -43,7 +40,7 @@ FROM
 WHERE
 	x.unit = :unit
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL12
 DECLARE @unit Enum -- Object
 SET     @unit = 'day'
 
@@ -57,7 +54,7 @@ FROM
 WHERE
 	x.unit_nullable = :unit
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL12
 DECLARE @unitNullable Enum -- Object
 SET     @unitNullable = 'day'
 
@@ -71,8 +68,7 @@ FROM
 WHERE
 	x.unit_nullable = :unitNullable
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	x.id,
 	x.unit,
@@ -83,8 +79,7 @@ FROM
 WHERE
 	x.unit_nullable = 'day'
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	x.id,
 	x.unit,
@@ -95,8 +90,7 @@ FROM
 WHERE
 	x.unit_nullable IS NULL
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	t1.id,
 	t1.unit,

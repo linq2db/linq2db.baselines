@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
-
+﻿-- PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."ID",
 	t1."Value_1"
@@ -12,8 +11,7 @@ FROM
 			"Person" r
 	) t1
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."ID",
 	t1."Value_1"

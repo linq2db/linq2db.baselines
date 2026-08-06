@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 CREATE COLUMN TABLE "FluentTemp_UpdateAsync"
 (
 	"ID"       Integer      NOT NULL,
@@ -45,7 +44,6 @@ WHERE
 	"t"."ID" = 1
 
 -- SapHana.Odbc SapHanaOdbc
-
 DO BEGIN
 	DECLARE EXIT HANDLER FOR SQL_ERROR_CODE 259 BEGIN END;
 	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp_UpdateAsync"';

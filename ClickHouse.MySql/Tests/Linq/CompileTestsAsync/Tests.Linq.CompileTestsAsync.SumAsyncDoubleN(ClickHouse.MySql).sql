@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	sumOrNull(toFloat64(c_1.Id))
 FROM

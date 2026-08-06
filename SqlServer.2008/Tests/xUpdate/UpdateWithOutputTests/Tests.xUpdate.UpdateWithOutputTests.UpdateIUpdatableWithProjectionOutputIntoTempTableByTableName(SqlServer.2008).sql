@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008
-
 CREATE TABLE [tempdb]..[#DestinationTable_destination]
 (
 	[Id]       Int          NOT NULL,
@@ -10,7 +9,6 @@ CREATE TABLE [tempdb]..[#DestinationTable_destination]
 )
 
 -- SqlServer.2008
-
 UPDATE
 	[TableWithData_source]
 SET
@@ -30,7 +28,6 @@ WHERE
 	[TableWithData_source].[Id] > 3
 
 -- SqlServer.2008
-
 SELECT
 	[t1].[Id],
 	[t1].[Value],
@@ -39,7 +36,6 @@ FROM
 	[tempdb]..[#DestinationTable_destination] [t1]
 
 -- SqlServer.2008
-
 IF (OBJECT_ID(N'[tempdb]..[#DestinationTable_destination]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#DestinationTable_destination]
 

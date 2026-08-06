@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	COUNT(*)
 FROM
@@ -9,7 +8,6 @@ WHERE
 	[a_Parent].[ParentID] = 1
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	COUNT(*)
 FROM
@@ -19,7 +17,6 @@ WHERE
 	[a_Parent].[ParentID] = 1
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[a_Parent].[ParentID]
 FROM

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
@@ -14,7 +13,6 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT TOP (1)
 	[t1].[ParentID]
 FROM

@@ -12,7 +12,6 @@ VALUES
 )
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 INSERT INTO `TableWithIdentity`
 (
 	`Id`,
@@ -25,7 +24,6 @@ FROM
 	`TableWithIdentitySrc` `t1`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value`

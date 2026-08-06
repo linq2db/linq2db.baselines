@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[t3].[ColorName],
 	[t3].[StyleName],
@@ -46,7 +45,6 @@ ORDER BY
 	[t3].[StrValue]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[t1].[Id],
 	[t1].[ColorId],
@@ -61,7 +59,6 @@ FROM
 		LEFT JOIN [SomeStyle] [a_Style] ON [t1].[StyleId] = [a_Style].[Id]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[t1].[Id],
 	[t1].[ColorId],

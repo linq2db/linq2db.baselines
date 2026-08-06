@@ -1,12 +1,10 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(*)
 FROM
 	"Person" t1
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."FirstName",
 	t1."PersonID",

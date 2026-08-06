@@ -23,7 +23,6 @@ ORDER BY
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	p.PersonID,
 	concat('123', p.FirstName, '456')

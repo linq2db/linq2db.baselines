@@ -1,7 +1,6 @@
 ﻿
 
 -- SqlServer.2022
-
 SELECT
 	[m_1].[OrderID],
 	[d].[IsDeleted],
@@ -31,7 +30,6 @@ FROM
 
 
 -- SqlServer.2022
-
 SELECT
 	[e].[IsDeleted],
 	[e].[OrderID],

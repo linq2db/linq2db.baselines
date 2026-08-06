@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	current server
 FROM
@@ -7,7 +6,6 @@ FROM
 FETCH NEXT 1 ROWS ONLY
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	current schema
 FROM

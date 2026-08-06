@@ -1,9 +1,8 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT TOP 1
 	[t].[ParentID],
 	[t].[ChildID],
-	[a_Parent].[ParentID],
+	[a_Parent].[ParentID] as [ParentID_1],
 	[a_Parent].[Value1]
 FROM
 	[Child] [t]

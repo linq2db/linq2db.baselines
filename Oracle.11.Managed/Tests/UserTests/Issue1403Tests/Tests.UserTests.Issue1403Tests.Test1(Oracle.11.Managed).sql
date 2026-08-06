@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 INSERT INTO "Issue1403Tests_1"
 (
 	"event_id",
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."event_id",
 	t1."event_description"

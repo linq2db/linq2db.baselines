@@ -28,7 +28,6 @@ VALUES
 )
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t].[VarCharColumn]
 FROM

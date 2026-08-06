@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014
-
 SELECT
 	N' ' + CAST(Coalesce([f].[Value1], 0) AS NVarChar(11)),
 	Coalesce([t2].[SubSum], 0),

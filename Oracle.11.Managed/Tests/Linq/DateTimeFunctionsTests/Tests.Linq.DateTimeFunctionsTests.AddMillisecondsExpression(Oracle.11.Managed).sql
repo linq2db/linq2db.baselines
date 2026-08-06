@@ -8,7 +8,6 @@ FROM
 	"LinqDataTypes" t
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t."DateTimeValue"
 FROM

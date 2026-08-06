@@ -1,12 +1,10 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 DELETE FROM
 	[Child] [c_1]
 WHERE
 	[c_1].[ParentID] > 1000
 
 -- Access.Jet.Odbc AccessODBC
-
 DELETE FROM
 	[Parent] [p]
 WHERE
@@ -40,7 +38,7 @@ INSERT INTO [Child]
 )
 SELECT
 	[p].[ParentID],
-	[p].[ParentID]
+	[p].[ParentID] as [ParentID_1]
 FROM
 	[Parent] [p]
 WHERE
@@ -58,14 +56,12 @@ WHERE
 	[c_1].[ParentID] = ?
 
 -- Access.Jet.Odbc AccessODBC
-
 DELETE FROM
 	[Child] [c_1]
 WHERE
 	[c_1].[ParentID] > 1000
 
 -- Access.Jet.Odbc AccessODBC
-
 DELETE FROM
 	[Parent] [p]
 WHERE

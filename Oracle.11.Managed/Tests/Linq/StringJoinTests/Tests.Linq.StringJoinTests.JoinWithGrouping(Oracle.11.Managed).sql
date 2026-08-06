@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	g_1."Id",
 	LISTAGG(Coalesce(g_1."NullableValue", ''), ', ') WITHIN GROUP (ORDER BY g_1."NullableValue"),
@@ -12,7 +11,6 @@ ORDER BY
 	g_1."Id"
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1.PK,
 	t1."Id",

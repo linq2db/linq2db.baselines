@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012
-
 SELECT
 	MAX([t1].[Count_1])
 FROM

@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 INSERT INTO UserIssue3128
 (
 	Id
@@ -10,7 +9,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO UserDetailsIssue3128
 (
 	UserId,
@@ -23,7 +21,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	a_Details.UserId,

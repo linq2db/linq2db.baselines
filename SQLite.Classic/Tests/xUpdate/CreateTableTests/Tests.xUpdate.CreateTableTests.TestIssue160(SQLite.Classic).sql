@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 CREATE TABLE [aa]
 (
 	[bb] INTEGER       NOT NULL,
@@ -26,7 +25,6 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[bb],
 	[t1].[cc]
@@ -34,6 +32,5 @@ FROM
 	[aa] [t1]
 
 -- SQLite.Classic SQLite
-
 DROP TABLE [aa]
 

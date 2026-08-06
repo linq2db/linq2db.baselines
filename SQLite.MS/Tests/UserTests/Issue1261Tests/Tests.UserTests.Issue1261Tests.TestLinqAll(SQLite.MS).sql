@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	NOT EXISTS(
 		SELECT
@@ -11,7 +10,6 @@ SELECT
 	)
 
 -- SQLite.MS SQLite
-
 SELECT
 	NOT EXISTS(
 		SELECT

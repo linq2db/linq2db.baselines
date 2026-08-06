@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[tp12].[Id],
 	[tp12].[ResourceID],

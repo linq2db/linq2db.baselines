@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 WITH CTE_1
 (
 	"entry_FirstName",
@@ -33,7 +32,6 @@ FROM
 FETCH NEXT 1 ROWS ONLY
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"person_1"."FirstName",
 	"person_1"."PersonID",

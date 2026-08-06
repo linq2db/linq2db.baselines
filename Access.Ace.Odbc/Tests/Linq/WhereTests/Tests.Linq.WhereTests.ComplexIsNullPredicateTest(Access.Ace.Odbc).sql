@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[r].[Id],
 	[r].[Value]
@@ -11,7 +10,6 @@ ORDER BY
 	[r].[Id]
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]

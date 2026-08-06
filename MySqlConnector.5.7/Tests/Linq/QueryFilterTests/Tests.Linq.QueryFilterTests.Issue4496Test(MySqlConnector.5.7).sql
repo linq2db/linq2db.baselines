@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT DISTINCT
 	`x`.`ParentID`,
 	`x`.`ChildID`
@@ -10,7 +9,6 @@ WHERE
 	`x`.`ChildID` > 30
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT DISTINCT
 	`x`.`ParentID`,
 	`x`.`ChildID`

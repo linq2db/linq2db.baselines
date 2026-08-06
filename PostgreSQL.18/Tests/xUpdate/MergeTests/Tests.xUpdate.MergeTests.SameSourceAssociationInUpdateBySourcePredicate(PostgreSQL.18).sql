@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
-
+﻿-- PostgreSQL.18 PostgreSQL12
 MERGE INTO "Person" "Target"
 USING (
 	SELECT
@@ -26,8 +25,7 @@ WHEN NOT MATCHED BY SOURCE AND (
 SET
 	"FirstName" = 'Updated'
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	t1."FirstName",
 	t1."PersonID",

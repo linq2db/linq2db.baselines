@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 INSERT INTO [Issue3323Table]
 (
 	[Id],
@@ -16,7 +15,6 @@ VALUES
 )
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[Text],

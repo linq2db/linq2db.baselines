@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Data Jsonb -- Object
@@ -15,8 +15,7 @@ VALUES
 	:Data
 )
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 UPDATE
 	"Issue5505Table"
 SET
@@ -24,8 +23,7 @@ SET
 WHERE
 	"Issue5505Table"."Id" = 1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	x."Id",
 	x."Data"

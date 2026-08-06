@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	t.Str,
 	Length(t.Str)

@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 INSERT INTO InsertTestClassDest
 (
 	Id,
@@ -14,7 +13,6 @@ FROM
 	InsertTestClass x
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value,
@@ -24,7 +22,6 @@ FROM
 LIMIT 2
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value,

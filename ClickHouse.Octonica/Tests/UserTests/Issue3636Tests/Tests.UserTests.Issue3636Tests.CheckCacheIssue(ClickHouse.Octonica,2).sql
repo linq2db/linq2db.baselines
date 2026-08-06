@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	m_1.Key_1,
 	d.id,
@@ -26,7 +25,6 @@ WHERE
 	d.id2 = 2
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT DISTINCT
 	x.id
 FROM

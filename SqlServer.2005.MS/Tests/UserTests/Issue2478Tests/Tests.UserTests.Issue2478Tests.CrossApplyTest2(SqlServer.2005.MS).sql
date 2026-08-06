@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[p].[ParentID],
 	[c_2].[Count_1],
@@ -17,7 +16,6 @@ FROM
 		) [c_2]
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	COUNT(*)
 FROM

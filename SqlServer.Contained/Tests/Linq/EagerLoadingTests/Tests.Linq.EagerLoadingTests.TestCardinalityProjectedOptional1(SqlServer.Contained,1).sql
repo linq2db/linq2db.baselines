@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[e].[Id],
 	[a_ObjectBOptional].[Id],

@@ -1,14 +1,12 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[e].[Id]
 FROM
 	[ConcatTestEntity] [e]
 WHERE
-	(Coalesce([e].[StrReq], '') + ' I') = 'Programmer I'
+	(Coalesce([e].[StrReq], '') || ' I') = 'Programmer I'
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[Str1],

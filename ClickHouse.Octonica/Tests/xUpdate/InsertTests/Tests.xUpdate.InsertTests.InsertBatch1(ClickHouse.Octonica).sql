@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	LinqDataTypes
 DELETE WHERE
@@ -10,7 +9,6 @@ INSERT INTO LinqDataTypes(ID, MoneyValue, DateTimeValue, DateTimeValue2, BoolVal
 INSERT INTO LinqDataTypes(ID, MoneyValue, DateTimeValue, DateTimeValue2, BoolValue, GuidValue, SmallIntValue, IntValue, BigIntValue, StringValue) VALUES
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	LinqDataTypes
 DELETE WHERE

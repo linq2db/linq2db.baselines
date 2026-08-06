@@ -1,11 +1,11 @@
-﻿-- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL12
 DECLARE @take Integer -- Int32
 SET     @take = 1
 DECLARE @skip Integer -- Int32
 SET     @skip = 1
 
 SELECT
-	COUNT(*) OVER(),
+	COUNT(*) OVER (),
 	x."Key_1",
 	x."Count_1",
 	x."HighestFirstName"

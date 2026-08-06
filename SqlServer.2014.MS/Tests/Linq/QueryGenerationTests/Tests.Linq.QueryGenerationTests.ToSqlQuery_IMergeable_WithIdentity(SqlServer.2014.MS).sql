@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014.MS SqlServer.2014
-
 MERGE INTO [TableWithIdentity] [Target]
 USING (VALUES
 	(1,2)

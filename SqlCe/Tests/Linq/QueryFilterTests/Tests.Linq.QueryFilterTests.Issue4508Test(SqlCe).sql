@@ -4,7 +4,7 @@ SET     @idCopy = 0
 
 SELECT
 	[p].[FirstName],
-	[p].[PersonID] as [ID],
+	[p].[PersonID],
 	[p].[LastName],
 	[p].[MiddleName],
 	[p].[Gender]
@@ -19,7 +19,7 @@ SET     @idCopy = 1
 
 SELECT
 	[p].[FirstName],
-	[p].[PersonID] as [ID],
+	[p].[PersonID],
 	[p].[LastName],
 	[p].[MiddleName],
 	[p].[Gender]
@@ -34,7 +34,7 @@ SET     @idCopy = 0
 
 SELECT
 	[p].[FirstName],
-	[p].[PersonID] as [ID],
+	[p].[PersonID],
 	[p].[LastName],
 	[p].[MiddleName],
 	[p].[Gender]
@@ -49,7 +49,7 @@ SET     @idCopy = 1
 
 SELECT
 	[p].[FirstName],
-	[p].[PersonID] as [ID],
+	[p].[PersonID],
 	[p].[LastName],
 	[p].[MiddleName],
 	[p].[Gender]
@@ -64,7 +64,7 @@ SET     @idCopy = 0
 
 SELECT
 	[p].[FirstName],
-	[p].[PersonID] as [ID],
+	[p].[PersonID],
 	[p].[LastName],
 	[p].[MiddleName],
 	[p].[Gender]
@@ -79,7 +79,7 @@ SET     @idCopy = 1
 
 SELECT
 	[p].[FirstName],
-	[p].[PersonID] as [ID],
+	[p].[PersonID],
 	[p].[LastName],
 	[p].[MiddleName],
 	[p].[Gender]
@@ -94,7 +94,7 @@ SET     @idCopy = 0
 
 SELECT
 	[p].[FirstName],
-	[p].[PersonID] as [ID],
+	[p].[PersonID],
 	[p].[LastName],
 	[p].[MiddleName],
 	[p].[Gender]
@@ -109,7 +109,7 @@ SET     @idCopy = 1
 
 SELECT
 	[p].[FirstName],
-	[p].[PersonID] as [ID],
+	[p].[PersonID],
 	[p].[LastName],
 	[p].[MiddleName],
 	[p].[Gender]

@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	tupledArg.ParentID,
 	tupledArg.Value1,

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 SELECT
 	[g_1].[GrpId],
 	STRING_AGG(Lower(CAST([g_1].[GuidV] AS Char(36))), '') WITHIN GROUP (ORDER BY [g_1].[PK])
@@ -11,7 +10,6 @@ ORDER BY
 	[g_1].[GrpId]
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[PK],
 	[t1].[GrpId],

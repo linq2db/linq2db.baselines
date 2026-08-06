@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 CREATE TEMPORARY TABLE `TableWithPrimaryKey`
 (
 	`Key` INT NOT NULL,
@@ -8,6 +7,5 @@ CREATE TEMPORARY TABLE `TableWithPrimaryKey`
 )
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 DROP TEMPORARY TABLE IF EXISTS `TableWithPrimaryKey`
 

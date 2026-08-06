@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	lowerUTF8(p.Taxonomy)
 FROM

@@ -23,7 +23,6 @@ ORDER BY
 LIMIT @skip, @take
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`FirstName`,
 	`t1`.`PersonID`,

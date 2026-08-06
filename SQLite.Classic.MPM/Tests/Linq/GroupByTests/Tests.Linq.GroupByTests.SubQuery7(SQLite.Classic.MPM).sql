@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT DISTINCT
 	[c_1].[ChildID]
 FROM

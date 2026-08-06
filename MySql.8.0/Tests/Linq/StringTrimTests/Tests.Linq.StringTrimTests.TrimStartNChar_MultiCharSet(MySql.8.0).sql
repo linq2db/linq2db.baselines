@@ -1,12 +1,10 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	REGEXP_REPLACE(`t`.`NCharColumn`, '(?-i)^[.+]+', '')
 FROM
 	`StringTrimTable` `t`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`CharColumn`,

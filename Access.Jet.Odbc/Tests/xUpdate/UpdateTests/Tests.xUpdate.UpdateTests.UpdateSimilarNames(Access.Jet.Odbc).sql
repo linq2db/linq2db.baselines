@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 INSERT INTO [Parent]
 (
 	[ParentID],
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- Access.Jet.Odbc AccessODBC
-
 INSERT INTO [Child]
 (
 	[ChildID],

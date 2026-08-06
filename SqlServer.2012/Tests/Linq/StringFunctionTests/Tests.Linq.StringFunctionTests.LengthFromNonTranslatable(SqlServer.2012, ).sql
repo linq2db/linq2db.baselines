@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012
-
 SELECT
 	[t].[Str],
 	LEN([t].[Str] + N'.') - 1,
@@ -8,7 +7,6 @@ FROM
 	[TestLengthModel] [t]
 
 -- SqlServer.2012
-
 SELECT
 	[t1].[Id],
 	[t1].[Str]

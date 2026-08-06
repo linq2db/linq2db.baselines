@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
-
 DROP TABLE IF EXISTS [InventoryResource]
 
 -- SqlServer.2022.MS SqlServer.2022

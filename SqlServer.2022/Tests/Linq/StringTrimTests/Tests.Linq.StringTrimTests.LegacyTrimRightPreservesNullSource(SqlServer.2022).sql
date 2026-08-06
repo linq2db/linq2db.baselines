@@ -28,7 +28,6 @@ VALUES
 )
 
 -- SqlServer.2022
-
 SELECT
 	IIF([t].[VarCharColumn] IS NOT NULL, RTRIM([t].[VarCharColumn], '.+'), NULL)
 FROM

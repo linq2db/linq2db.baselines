@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 WITH RECURSIVE cte AS
 (
 	SELECT
@@ -32,7 +31,6 @@ FROM
 		INNER JOIN Person d ON d.PersonID = m_1.Id
 
 -- ClickHouse.Octonica ClickHouse
-
 WITH RECURSIVE cte AS
 (
 	SELECT

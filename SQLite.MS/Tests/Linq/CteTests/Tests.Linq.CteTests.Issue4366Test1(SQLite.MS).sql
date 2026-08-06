@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 WITH [d]
 (
 	[FullName],

@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 INSERT INTO TPHTable
 (
 	Id,
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO TPHTable
 (
 	Id,
@@ -29,7 +27,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO TPHTable
 (
 	Id,
@@ -46,7 +43,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Discriminator,
 	t1.Id,
@@ -60,7 +56,6 @@ ORDER BY
 	t1.Id
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	x.Discriminator,
 	x.Id,
@@ -75,7 +70,6 @@ WHERE
 LIMIT 2
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	x.Discriminator,
 	x.Id,
@@ -90,7 +84,6 @@ WHERE
 LIMIT 2
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	x.Discriminator,
 	x.Id,
@@ -105,7 +98,6 @@ WHERE
 LIMIT 2
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	x.Discriminator,
 	x.Id,
@@ -120,7 +112,6 @@ WHERE
 LIMIT 2
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	x.Discriminator,
 	x.Id,
@@ -135,7 +126,6 @@ WHERE
 LIMIT 2
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	x.Discriminator,
 	x.Id,

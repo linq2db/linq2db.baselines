@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 DELETE [t1]
 FROM
 	[Person] [t1]
@@ -91,7 +90,6 @@ WHERE
 	[p].[FirstName] = @p AND [p].[LastName] = N'Shepard'
 
 -- SqlServer.Contained SqlServer.2019
-
 DELETE [t1]
 FROM
 	[Person] [t1]

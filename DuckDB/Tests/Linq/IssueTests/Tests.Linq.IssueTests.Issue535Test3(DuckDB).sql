@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	cb.Id,
 	cb.Name,

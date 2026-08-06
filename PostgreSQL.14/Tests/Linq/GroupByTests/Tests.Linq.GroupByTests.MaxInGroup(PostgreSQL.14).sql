@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	g_1."GroupId",
 	MAX(g_1."DataValue"),
@@ -14,8 +13,7 @@ FROM
 GROUP BY
 	g_1."GroupId"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."GroupId",

@@ -16,7 +16,6 @@ VALUES
 )
 
 -- SqlServer.2008.MS SqlServer.2008
-
 UPDATE
 	[Parent]
 SET
@@ -26,7 +25,6 @@ WHERE
 
 CommitTransaction
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT TOP (1)
 	[t].[ParentID],
 	[t].[Value1]

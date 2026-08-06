@@ -16,7 +16,6 @@ VALUES
 )
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 UPDATE
 	`Parent` `t`
 SET
@@ -25,7 +24,6 @@ WHERE
 	`t`.`ParentID` = 1010
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`t`.`ParentID`,
 	`t`.`Value1`

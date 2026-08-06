@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 CREATE TABLE [Table]
 (
 	[ID] Int NOT NULL,
@@ -8,6 +7,5 @@ CREATE TABLE [Table]
 )
 
 -- SqlServer.SA SqlServer.2019
-
 DROP TABLE [Table]
 

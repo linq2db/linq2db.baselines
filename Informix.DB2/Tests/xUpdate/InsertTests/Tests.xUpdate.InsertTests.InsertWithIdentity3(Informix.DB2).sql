@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 DELETE FROM
 	Person
 WHERE
@@ -21,17 +20,15 @@ INSERT INTO Person
 )
 VALUES
 (
-	@FirstName::NVarChar(4),
-	@LastName::NVarChar(7),
-	@Gender::Char(1)
+	@FirstName,
+	@LastName,
+	@Gender
 )
 
 -- Informix.DB2 Informix
-
 SELECT DBINFO('sqlca.sqlerrd1') FROM systables where tabid = 1
 
 -- Informix.DB2 Informix
-
 SELECT FIRST 2
 	p.FirstName,
 	p.PersonID,
@@ -44,7 +41,6 @@ WHERE
 	p.FirstName = 'John' AND p.LastName = 'Shepard'
 
 -- Informix.DB2 Informix
-
 DELETE FROM
 	Person
 WHERE

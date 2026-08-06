@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
-
 UPDATE
 	[a_Parent]
 SET
@@ -11,7 +10,6 @@ WHERE
 	[a_Parent].[Id] = 2
 
 -- SqlServer.2022.MS SqlServer.2022
-
 SELECT TOP (1)
 	[p].[Id],
 	[p].[Value]

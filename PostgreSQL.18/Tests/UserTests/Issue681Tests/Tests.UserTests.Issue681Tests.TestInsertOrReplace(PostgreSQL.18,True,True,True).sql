@@ -1,20 +1,18 @@
-﻿-- PostgreSQL.18 PostgreSQL
-
+﻿-- PostgreSQL.18 PostgreSQL12
 SELECT
 	current_database()
 FROM
 	"LinqDataTypes" t1
 LIMIT 1
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	current_schema()
 FROM
 	"LinqDataTypes" t1
 LIMIT 1
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL12
 DECLARE @ID Integer -- Int32
 SET     @ID = 5
 DECLARE @Value Integer -- Int32
@@ -33,7 +31,7 @@ VALUES
 ON CONFLICT ("ID") DO UPDATE SET
 	"Value" = :Value
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL12
 DECLARE @ID Integer -- Int32
 SET     @ID = 5
 DECLARE @Value Integer -- Int32

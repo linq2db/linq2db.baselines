@@ -1,7 +1,6 @@
 ﻿-- SqlCe
-
 SELECT
-	[t].[MoneyValue] * 1000 as [c1]
+	[t].[MoneyValue] * 1000
 FROM
 	[LinqDataTypes] [t]
 

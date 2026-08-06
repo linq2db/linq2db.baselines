@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[p].[Id],
 	Coalesce((
@@ -23,7 +22,6 @@ ORDER BY
 	[p].[Id]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -34,7 +32,6 @@ FROM
 		INNER JOIN [ConcatChild] [d] ON [m_1].[Id] = [d].[ParentId]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Name]

@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 WITH CTE_1
 (
 	"entry_FirstName",
@@ -54,7 +53,6 @@ FROM
 	CTE_1 "t1"
 
 -- Firebird.2.5 Firebird
-
 SELECT FIRST 1
 	"t1"."FirstName",
 	"t1".ID,

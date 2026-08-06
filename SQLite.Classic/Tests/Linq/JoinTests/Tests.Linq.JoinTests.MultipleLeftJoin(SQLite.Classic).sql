@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT
 	[parent_1].[ParentID],
 	[childLeftJoin].[ChildID],

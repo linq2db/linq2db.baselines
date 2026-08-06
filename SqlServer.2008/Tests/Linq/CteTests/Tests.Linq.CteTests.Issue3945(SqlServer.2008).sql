@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008
-
 WITH [CTE] ([ParentId], [Label])
 AS
 (

@@ -8,7 +8,6 @@ WHERE
 	[LinqDataTypes].[ID] >= 101 AND [LinqDataTypes].[ID] < @p
 
 -- SqlCe
-
 INSERT INTO [LinqDataTypes]
 (
 	[ID]
@@ -19,9 +18,8 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT TOP (1)
-	[r].[BigIntValue] as [TestField]
+	[r].[BigIntValue]
 FROM
 	[LinqDataTypes] [r]
 WHERE

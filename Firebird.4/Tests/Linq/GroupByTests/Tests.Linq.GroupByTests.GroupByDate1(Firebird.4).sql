@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 SELECT
 	SUM("grp_1"."MoneyValue"),
 	"grp_1"."Year_1",

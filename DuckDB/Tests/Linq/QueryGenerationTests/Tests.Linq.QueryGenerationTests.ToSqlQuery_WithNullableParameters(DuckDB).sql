@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	p.FirstName,
 	p.PersonID,
@@ -12,7 +11,6 @@ WHERE
 	p.MiddleName IS NOT NULL
 
 -- DuckDB
-
 SELECT
 	p.FirstName,
 	p.PersonID,

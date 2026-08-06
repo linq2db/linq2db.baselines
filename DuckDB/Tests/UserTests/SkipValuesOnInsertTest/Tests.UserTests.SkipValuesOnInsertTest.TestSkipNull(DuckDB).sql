@@ -16,7 +16,6 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	t.Id,
 	t.Name,

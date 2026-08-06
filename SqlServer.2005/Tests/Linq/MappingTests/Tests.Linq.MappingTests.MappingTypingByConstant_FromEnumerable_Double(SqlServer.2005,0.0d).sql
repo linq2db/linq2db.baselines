@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 SELECT
 	[arg].[Id],
 	[arg].[Value]
@@ -9,7 +8,6 @@ FROM
 			SELECT 1 AS [Id], CAST(0 AS Float) AS [Value]) [arg] ON [entity].[PersonID] = [arg].[Id]
 
 -- SqlServer.2005
-
 SELECT
 	[arg].[Id],
 	[arg].[Value]

@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL12
 DECLARE @p Integer -- Int32
 SET     @p = 102
 
@@ -7,8 +7,7 @@ DELETE FROM
 WHERE
 	r."ID" >= 101 AND r."ID" < :p
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 INSERT INTO "LinqDataTypes"
 (
 	"ID",
@@ -20,8 +19,7 @@ VALUES
 	12
 )
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	r."BigIntValue"
 FROM
@@ -30,7 +28,7 @@ WHERE
 	r."ID" = 101 AND r."BigIntValue" = 12
 LIMIT 1
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL12
 DECLARE @p Integer -- Int32
 SET     @p = 102
 

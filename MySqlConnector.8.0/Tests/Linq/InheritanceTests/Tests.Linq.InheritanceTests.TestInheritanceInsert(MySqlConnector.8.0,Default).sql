@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 INSERT INTO `InheritanceFilter`
 (
 	`Id`,
@@ -20,7 +19,6 @@ VALUES
 (6,22,0,26,0,0,0,16)
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`Code`,
 	`t1`.`Id`,

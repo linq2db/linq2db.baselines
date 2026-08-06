@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	c_1.ChildID,
 	testaLi_asParent.Value1

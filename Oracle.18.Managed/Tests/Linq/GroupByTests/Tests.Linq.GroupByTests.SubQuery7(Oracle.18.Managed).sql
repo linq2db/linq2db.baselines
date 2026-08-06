@@ -1,5 +1,4 @@
 ﻿-- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT DISTINCT
 	c_1."ChildID"
 FROM

@@ -1,11 +1,9 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	sys_context('userenv','service_name')
 FROM SYS.DUAL
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	sys_context('userenv', 'current_schema') as "c1"
 FROM
@@ -13,7 +11,6 @@ FROM
 FETCH NEXT 1 ROWS ONLY
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1.ID,
 	t1."Value"

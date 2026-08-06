@@ -1,5 +1,4 @@
 ﻿-- Oracle.18.Managed Oracle.Managed Oracle12
-
 WITH MY_CTE ("ChildID", "ParentID", "GrandChildID")
 AS
 (

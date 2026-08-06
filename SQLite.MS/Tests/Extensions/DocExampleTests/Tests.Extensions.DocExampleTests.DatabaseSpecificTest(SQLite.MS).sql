@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT /* qb */
 	[t].[PersonID],
 	[t].[Diagnosis]

@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	nm.MiddleName
 FROM
@@ -8,7 +7,6 @@ WHERE
 	nm.MiddleName IS NOT NULL
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.FirstName,
 	t1.PersonID,

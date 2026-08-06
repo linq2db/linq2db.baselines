@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012
-
 SELECT DISTINCT
 	[r].[F1],
 	[r].[F2]

@@ -55,7 +55,6 @@ ORDER BY
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
 -- SqlServer.2012
-
 SELECT
 	COUNT(*)
 FROM

@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 WITH `CTE_1` (`Id`)
 AS
 (
@@ -43,7 +42,6 @@ FROM
 		INNER JOIN `CteTable` `d_1` ON `m_1`.`Id` = `d_1`.`Value3`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 WITH `CTE_1`
 (
 	`Id`,

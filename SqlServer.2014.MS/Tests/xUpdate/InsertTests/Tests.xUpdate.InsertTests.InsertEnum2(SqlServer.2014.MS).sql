@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014.MS SqlServer.2014
-
 DELETE [t1]
 FROM
 	[Parent] [t1]
@@ -35,7 +34,6 @@ WHERE
 	[t1].[ParentID] = @id
 
 -- SqlServer.2014.MS SqlServer.2014
-
 DELETE [t1]
 FROM
 	[Parent] [t1]

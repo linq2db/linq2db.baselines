@@ -28,12 +28,11 @@ INSERT INTO "TrimTestTable"
 )
 VALUES
 (
-	CAST(@ID AS Int),
-	CAST(@Data AS VARCHAR(9))
+	@ID,
+	@Data
 )
 
 -- Firebird.2.5 Firebird
-
 INSERT INTO "TrimTestTable"
 (
 	ID,
@@ -46,7 +45,6 @@ VALUES
 )
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"r".ID,
 	"r"."Data"
@@ -56,7 +54,6 @@ ORDER BY
 	"r".ID
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"r".ID,
 	"r"."Data"

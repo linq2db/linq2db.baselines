@@ -1,9 +1,7 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 DROP TABLE IF EXISTS DropTableTest
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	currentDatabase()
 FROM
@@ -11,7 +9,6 @@ FROM
 LIMIT 1
 
 -- ClickHouse.Driver ClickHouse
-
 CREATE TABLE DropTableTest
 (
 	ID Int32,
@@ -22,7 +19,6 @@ ENGINE = MergeTree()
 ORDER BY ID
 
 -- ClickHouse.Driver ClickHouse
-
 INSERT INTO testdb2.DropTableTest
 (
 	ID
@@ -33,18 +29,15 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.ID
 FROM
 	testdb2.DropTableTest t1
 
 -- ClickHouse.Driver ClickHouse
-
 DROP TABLE testdb2.DropTableTest
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.ID
 FROM

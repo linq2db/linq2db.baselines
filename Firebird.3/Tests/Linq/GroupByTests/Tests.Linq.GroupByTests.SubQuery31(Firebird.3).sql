@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	"g_2"."Key_1",
 	SUM("g_2"."ParentID")

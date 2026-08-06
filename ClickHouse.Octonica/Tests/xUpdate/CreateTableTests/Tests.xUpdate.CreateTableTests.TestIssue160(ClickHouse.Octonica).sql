@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 CREATE TABLE aa
 (
 	bb Int32,
@@ -11,7 +10,6 @@ ENGINE = MergeTree()
 ORDER BY bb
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO aa
 (
 	bb,
@@ -24,7 +22,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.bb,
 	t1.cc
@@ -32,6 +29,5 @@ FROM
 	aa t1
 
 -- ClickHouse.Octonica ClickHouse
-
 DROP TABLE aa
 

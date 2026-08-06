@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 INSERT INTO Parent
 (
 	ParentID,
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	COUNT(*)
 FROM
@@ -21,7 +19,6 @@ WHERE
 	p.ParentID = 1001 AND p.Value1 = 1
 
 -- ClickHouse.MySql ClickHouse
-
 ALTER TABLE
 	Parent
 UPDATE
@@ -30,7 +27,6 @@ WHERE
 	ParentID = 1001
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	COUNT(*)
 FROM

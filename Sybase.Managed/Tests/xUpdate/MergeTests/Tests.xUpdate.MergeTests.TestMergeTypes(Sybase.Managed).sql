@@ -1,11 +1,9 @@
 ﻿-- Sybase.Managed Sybase
-
 DELETE FROM [TestMerge1]
 FROM
 	[TestMerge1] [t1]
 
 -- Sybase.Managed Sybase
-
 DELETE FROM [TestMerge2]
 FROM
 	[TestMerge2] [t1]
@@ -634,7 +632,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[Field1],
@@ -659,7 +656,6 @@ ORDER BY
 	[t1].[Id]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[Field1],

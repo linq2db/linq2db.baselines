@@ -14,7 +14,6 @@ WHERE
 	[sr].[id] = 'TestProcessService' AND [component_categories].[id] = [ct].[id]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[x].[id],
 	[x].[service_id],
@@ -25,7 +24,6 @@ WHERE
 	[x].[is_deleted] AND [x].[service_id] = 'TestProcessService'
 
 -- SQLite.MS SQLite
-
 SELECT
 	[x].[id],
 	[x].[service_id],

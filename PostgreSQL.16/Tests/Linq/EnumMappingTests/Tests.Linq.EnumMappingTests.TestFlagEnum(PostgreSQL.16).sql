@@ -1,10 +1,9 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	t."ID",
 	t."IntValue"
 FROM
-	"LinqDataTypes" t
+	"TestTable5" t
 WHERE
 	(t."IntValue" & 1) <> 0
 

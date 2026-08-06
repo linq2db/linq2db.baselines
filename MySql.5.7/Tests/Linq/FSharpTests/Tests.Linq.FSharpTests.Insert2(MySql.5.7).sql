@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	MAX(`t1`.`PersonID`)
 FROM
@@ -31,7 +30,6 @@ VALUES
 )
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`p`.`PersonID`,
 	`p`.`FirstName`,
@@ -45,7 +43,6 @@ WHERE
 LIMIT 2
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 DELETE  
 FROM
 	`Person`

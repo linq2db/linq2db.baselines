@@ -1,10 +1,8 @@
 ﻿-- DuckDB
-
 DELETE FROM
 	InheritanceParent t1
 
 -- DuckDB
-
 MERGE INTO InheritanceParent Target
 USING (VALUES
 	(143,NULL,1)
@@ -36,14 +34,12 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	COUNT(*)
 FROM
 	InheritanceParent t1
 
 -- DuckDB
-
 MERGE INTO InheritanceParent Target
 USING (VALUES
 	(143,NULL,1)
@@ -75,7 +71,6 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	COUNT(*)
 FROM

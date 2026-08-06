@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 DELETE FROM
 	"TestMerge1" t1
 
@@ -104,7 +103,6 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 DELETE FROM
 	"TestMerge2" t1
 
@@ -209,7 +207,6 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 MERGE INTO "TestMerge1" Target
 USING (
 	SELECT
@@ -237,7 +234,6 @@ DELETE WHERE
 	Target."Field1" = 10
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Field1",

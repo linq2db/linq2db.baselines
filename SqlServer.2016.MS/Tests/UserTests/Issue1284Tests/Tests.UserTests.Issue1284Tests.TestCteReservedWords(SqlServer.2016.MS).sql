@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
-
 WITH [CTE_1] ([Obj_Operator])
 AS
 (
@@ -14,7 +13,6 @@ FROM
 	[CTE_1] [t1]
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT TOP (1)
 	[person_1].[LastName]
 FROM

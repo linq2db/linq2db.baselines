@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 UPDATE
 	[Parent] [p2],
 	[Parent] [p1]

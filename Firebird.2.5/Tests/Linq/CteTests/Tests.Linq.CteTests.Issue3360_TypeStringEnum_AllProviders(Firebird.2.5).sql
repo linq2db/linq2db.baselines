@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 WITH RECURSIVE "cte" ("Id", "Str")
 AS
 (

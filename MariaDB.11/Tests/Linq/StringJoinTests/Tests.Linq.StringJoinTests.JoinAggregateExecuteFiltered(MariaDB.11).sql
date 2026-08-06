@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	GROUP_CONCAT(CASE
 		WHEN `t1`.`NullableValue` IN ('A', 'B') THEN `t1`.`NullableValue`

@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 INSERT INTO Person
 (
 	FirstName,
@@ -16,7 +15,6 @@ VALUES
 )
 
 -- DuckDB
-
 DELETE FROM
 	Person p
 WHERE

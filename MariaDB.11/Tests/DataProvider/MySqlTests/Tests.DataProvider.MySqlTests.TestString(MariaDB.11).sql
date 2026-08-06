@@ -1,9 +1,7 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT Cast('12345' as char(20))
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT Cast(NULL    as char(20))
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB

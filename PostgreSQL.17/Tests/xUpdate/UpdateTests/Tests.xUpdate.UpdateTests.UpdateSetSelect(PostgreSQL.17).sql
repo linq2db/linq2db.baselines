@@ -1,12 +1,10 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 DELETE FROM
 	"Parent" t1
 WHERE
 	t1."ParentID" > 1000
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 UPDATE
 	"Parent"
 SET
@@ -23,7 +21,7 @@ FROM
 WHERE
 	"Parent"."ParentID" = 1 AND "Parent"."ParentID" = c_1."ParentID"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1
 

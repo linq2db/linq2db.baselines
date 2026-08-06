@@ -50,7 +50,6 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -62,7 +61,6 @@ ORDER BY
 	[m_1].[Id]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[after_1].[Id],
 	[after_1].[Name]

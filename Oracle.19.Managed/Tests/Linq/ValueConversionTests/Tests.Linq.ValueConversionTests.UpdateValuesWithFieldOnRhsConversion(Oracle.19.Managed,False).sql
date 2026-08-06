@@ -15,7 +15,6 @@ WHERE
 	x."Id" = 1
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	x."Id",
 	x."NoConversion",
@@ -28,7 +27,6 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	x."Id",
 	x."NoConversion",

@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT FIRST 2
 	p.PersonID,
 	p.FirstName,
@@ -15,7 +14,6 @@ WHERE
 	p.PersonID = 1
 
 -- Informix.DB2 Informix
-
 SELECT FIRST 2
 	p.PersonID,
 	p.FirstName,

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	COUNT(*)
 FROM
@@ -8,7 +7,6 @@ WHERE
 	[s].[Enum] IN (NULL, NULL)
 
 -- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	COUNT(*)
 FROM

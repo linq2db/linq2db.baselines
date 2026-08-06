@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.15 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -7,8 +6,7 @@ FROM
 WHERE
 	r."Text"::jsonb = r."Json"::jsonb OR r."Text" IS NULL AND r."Json" IS NULL
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -16,15 +14,13 @@ FROM
 WHERE
 	r."Text"::jsonb = r."Jsonb" OR r."Text" IS NULL AND r."Jsonb" IS NULL
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
 	"JsonComparisonTable1" r
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -32,15 +28,13 @@ FROM
 WHERE
 	r."Json"::jsonb = r."Jsonb" OR r."Json" IS NULL AND r."Jsonb" IS NULL
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
 	"JsonComparisonTable1" r
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -48,8 +42,7 @@ FROM
 WHERE
 	r."Json"::jsonb = r."Text"::jsonb OR r."Json" IS NULL AND r."Text" IS NULL
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -57,8 +50,7 @@ FROM
 WHERE
 	r."Jsonb" = r."Text"::jsonb OR r."Jsonb" IS NULL AND r."Text" IS NULL
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM

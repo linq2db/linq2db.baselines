@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[Count1] + [t1].[Count1]
 FROM

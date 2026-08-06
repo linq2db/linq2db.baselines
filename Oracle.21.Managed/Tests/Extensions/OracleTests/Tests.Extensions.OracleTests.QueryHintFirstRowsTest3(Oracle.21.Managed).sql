@@ -1,5 +1,4 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT /*+ FIRST_ROWS(25) */
 	p."ParentID",
 	p."Value1"

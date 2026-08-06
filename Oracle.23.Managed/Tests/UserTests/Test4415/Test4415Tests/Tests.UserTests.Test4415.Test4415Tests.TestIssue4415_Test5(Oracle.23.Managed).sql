@@ -1,5 +1,4 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."LanguageID",
 	t1."Name"
@@ -7,7 +6,6 @@ FROM
 	"Common_Language" t1
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	x."LanguageID",
 	x."Name"

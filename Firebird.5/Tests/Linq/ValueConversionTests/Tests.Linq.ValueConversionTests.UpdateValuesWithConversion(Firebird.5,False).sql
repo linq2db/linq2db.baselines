@@ -10,7 +10,6 @@ WHERE
 	"x"."Id" = 1
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"x"."Id",
 	"x"."NoConversion",
@@ -34,7 +33,6 @@ WHERE
 	"x"."Id" = 2
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"x"."Id",
 	"x"."NoConversion",

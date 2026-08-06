@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 INSERT INTO [Table2]
 (
 	[ID]
@@ -10,7 +9,6 @@ FROM
 	[Table1] [t]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[ID],
 	[t1].[Date]

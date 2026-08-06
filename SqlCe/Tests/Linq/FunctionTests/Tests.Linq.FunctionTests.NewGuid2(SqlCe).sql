@@ -1,7 +1,6 @@
 ﻿-- SqlCe
-
 SELECT TOP (1)
-	NewID() as [c1]
+	NewID()
 FROM
 	[LinqDataTypes] [p]
 

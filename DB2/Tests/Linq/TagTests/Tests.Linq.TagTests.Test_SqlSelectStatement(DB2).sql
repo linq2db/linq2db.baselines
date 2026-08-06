@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 /* My Test */
 SELECT
 	"t1"."Id",

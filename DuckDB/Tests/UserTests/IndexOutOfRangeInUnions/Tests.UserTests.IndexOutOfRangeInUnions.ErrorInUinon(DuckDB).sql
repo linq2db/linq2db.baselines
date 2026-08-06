@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	doSap.DocEntry,
 	CASE

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014
-
 SELECT
 	Coalesce((
 		SELECT TOP (1)

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[g_2].[Key_1],
 	SUM([g_2].[ParentID])

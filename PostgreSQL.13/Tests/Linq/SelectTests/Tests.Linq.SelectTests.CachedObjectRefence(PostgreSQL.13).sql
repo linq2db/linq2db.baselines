@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
-
+﻿-- PostgreSQL.13 PostgreSQL12
 SELECT
 	p."FirstName",
 	p."PersonID",
@@ -9,8 +8,7 @@ SELECT
 FROM
 	"Person" p
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	p."FirstName",
 	p."PersonID",

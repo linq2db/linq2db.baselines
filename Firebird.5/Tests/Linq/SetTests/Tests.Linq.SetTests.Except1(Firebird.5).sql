@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 SELECT DISTINCT
 	"t1"."ParentID",
 	"t1"."ChildID"

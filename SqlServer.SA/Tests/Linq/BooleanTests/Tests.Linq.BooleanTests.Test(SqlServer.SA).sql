@@ -18,7 +18,6 @@ WHERE
 	[r].[Boolean] = @True
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -52,7 +51,6 @@ WHERE
 	[r].[Boolean] = @False
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -86,7 +84,6 @@ WHERE
 	[r].[Boolean] = @TrueN
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -120,7 +117,6 @@ WHERE
 	[r].[Boolean] = @FalseN
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -135,7 +131,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[r].[Id],
 	[r].[Boolean],
@@ -152,7 +147,6 @@ WHERE
 	1 = 0
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -186,7 +180,6 @@ WHERE
 	[r].[BooleanN] = @True
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -220,7 +213,6 @@ WHERE
 	[r].[BooleanN] = @False
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -254,7 +246,6 @@ WHERE
 	[r].[BooleanN] = @TrueN
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -288,7 +279,6 @@ WHERE
 	[r].[BooleanN] = @FalseN
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -303,7 +293,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[r].[Id],
 	[r].[Boolean],
@@ -320,7 +309,6 @@ WHERE
 	[r].[BooleanN] IS NULL
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -354,7 +342,6 @@ WHERE
 	[r].[Boolean] <> @True
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -388,7 +375,6 @@ WHERE
 	[r].[Boolean] <> @False
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -422,7 +408,6 @@ WHERE
 	[r].[Boolean] <> @TrueN
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -456,7 +441,6 @@ WHERE
 	[r].[Boolean] <> @FalseN
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -471,7 +455,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[r].[Id],
 	[r].[Boolean],
@@ -486,7 +469,6 @@ FROM
 	[BooleanTable] [r]
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -520,7 +502,6 @@ WHERE
 	[r].[BooleanN] <> @True OR [r].[BooleanN] IS NULL
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -554,7 +535,6 @@ WHERE
 	[r].[BooleanN] <> @False OR [r].[BooleanN] IS NULL
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -588,7 +568,6 @@ WHERE
 	[r].[BooleanN] <> @TrueN OR [r].[BooleanN] IS NULL
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -622,7 +601,6 @@ WHERE
 	[r].[BooleanN] <> @FalseN OR [r].[BooleanN] IS NULL
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -637,7 +615,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[r].[Id],
 	[r].[Boolean],
@@ -654,7 +631,6 @@ WHERE
 	[r].[BooleanN] IS NOT NULL
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -669,7 +645,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[g_1].[Id],
 	COUNT(IIF([g_1].[Boolean] = 1, 1, NULL)),
@@ -723,7 +698,6 @@ GROUP BY
 	[g_1].[Id]
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -738,7 +712,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[r].[Id],
 	IIF([r].[Int32] = 0, 1, 0),
@@ -900,7 +873,6 @@ FROM
 	[BooleanTable] [r_1]
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -915,7 +887,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[r].[Id],
 	[r].[Boolean],
@@ -932,7 +903,6 @@ WHERE
 	[r].[Boolean] = 1
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -947,7 +917,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[r].[Id],
 	[r].[Boolean],
@@ -964,7 +933,6 @@ WHERE
 	[r].[Boolean] = 0
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -979,7 +947,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[r].[Id],
 	[r].[Boolean],
@@ -996,7 +963,6 @@ WHERE
 	[r].[Boolean] = 1
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -1011,7 +977,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[r].[Id],
 	[r].[Boolean],
@@ -1028,7 +993,6 @@ WHERE
 	[r].[Boolean] = 0
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -1043,7 +1007,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[r].[Id],
 	[r].[Boolean],
@@ -1060,7 +1023,6 @@ WHERE
 	1 = 0
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -1075,7 +1037,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[r].[Id],
 	[r].[Boolean],
@@ -1092,7 +1053,6 @@ WHERE
 	[r].[BooleanN] = 1
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -1107,7 +1067,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[r].[Id],
 	[r].[Boolean],
@@ -1124,7 +1083,6 @@ WHERE
 	[r].[BooleanN] = 0
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -1139,7 +1097,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[r].[Id],
 	[r].[Boolean],
@@ -1156,7 +1113,6 @@ WHERE
 	[r].[BooleanN] = 1
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -1171,7 +1127,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[r].[Id],
 	[r].[Boolean],
@@ -1188,7 +1143,6 @@ WHERE
 	[r].[BooleanN] = 0
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -1203,7 +1157,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[r].[Id],
 	[r].[Boolean],
@@ -1220,7 +1173,6 @@ WHERE
 	[r].[BooleanN] IS NULL
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -1235,7 +1187,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[r].[Id],
 	[r].[Boolean],
@@ -1252,7 +1203,6 @@ WHERE
 	[r].[Boolean] <> 1
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -1267,7 +1217,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[r].[Id],
 	[r].[Boolean],
@@ -1284,7 +1233,6 @@ WHERE
 	[r].[Boolean] <> 0
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -1299,7 +1247,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[r].[Id],
 	[r].[Boolean],
@@ -1316,7 +1263,6 @@ WHERE
 	[r].[Boolean] <> 1
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -1331,7 +1277,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[r].[Id],
 	[r].[Boolean],
@@ -1348,7 +1293,6 @@ WHERE
 	[r].[Boolean] <> 0
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -1363,7 +1307,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[r].[Id],
 	[r].[Boolean],
@@ -1378,7 +1321,6 @@ FROM
 	[BooleanTable] [r]
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -1393,71 +1335,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.SA SqlServer.2019
-
-SELECT
-	[r].[Id],
-	[r].[Boolean],
-	[r].[BooleanN],
-	[r].[Int32],
-	[r].[Int32N],
-	[r].[Decimal],
-	[r].[DecimalN],
-	[r].[Double],
-	[r].[DoubleN]
-FROM
-	[BooleanTable] [r]
-WHERE
-	[r].[BooleanN] <> 1 OR [r].[BooleanN] IS NULL
-
--- SqlServer.SA SqlServer.2019
-
-SELECT
-	[t1].[Id],
-	[t1].[Boolean],
-	[t1].[BooleanN],
-	[t1].[Int32],
-	[t1].[Int32N],
-	[t1].[Decimal],
-	[t1].[DecimalN],
-	[t1].[Double],
-	[t1].[DoubleN]
-FROM
-	[BooleanTable] [t1]
-
--- SqlServer.SA SqlServer.2019
-
-SELECT
-	[r].[Id],
-	[r].[Boolean],
-	[r].[BooleanN],
-	[r].[Int32],
-	[r].[Int32N],
-	[r].[Decimal],
-	[r].[DecimalN],
-	[r].[Double],
-	[r].[DoubleN]
-FROM
-	[BooleanTable] [r]
-WHERE
-	[r].[BooleanN] <> 0 OR [r].[BooleanN] IS NULL
-
--- SqlServer.SA SqlServer.2019
-
-SELECT
-	[t1].[Id],
-	[t1].[Boolean],
-	[t1].[BooleanN],
-	[t1].[Int32],
-	[t1].[Int32N],
-	[t1].[Decimal],
-	[t1].[DecimalN],
-	[t1].[Double],
-	[t1].[DoubleN]
-FROM
-	[BooleanTable] [t1]
-
--- SqlServer.SA SqlServer.2019
-
 SELECT
 	[r].[Id],
 	[r].[Boolean],
@@ -1474,7 +1351,6 @@ WHERE
 	[r].[BooleanN] <> 1 OR [r].[BooleanN] IS NULL
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -1489,7 +1365,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[r].[Id],
 	[r].[Boolean],
@@ -1506,7 +1381,6 @@ WHERE
 	[r].[BooleanN] <> 0 OR [r].[BooleanN] IS NULL
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -1521,7 +1395,66 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.SA SqlServer.2019
+SELECT
+	[r].[Id],
+	[r].[Boolean],
+	[r].[BooleanN],
+	[r].[Int32],
+	[r].[Int32N],
+	[r].[Decimal],
+	[r].[DecimalN],
+	[r].[Double],
+	[r].[DoubleN]
+FROM
+	[BooleanTable] [r]
+WHERE
+	[r].[BooleanN] <> 1 OR [r].[BooleanN] IS NULL
 
+-- SqlServer.SA SqlServer.2019
+SELECT
+	[t1].[Id],
+	[t1].[Boolean],
+	[t1].[BooleanN],
+	[t1].[Int32],
+	[t1].[Int32N],
+	[t1].[Decimal],
+	[t1].[DecimalN],
+	[t1].[Double],
+	[t1].[DoubleN]
+FROM
+	[BooleanTable] [t1]
+
+-- SqlServer.SA SqlServer.2019
+SELECT
+	[r].[Id],
+	[r].[Boolean],
+	[r].[BooleanN],
+	[r].[Int32],
+	[r].[Int32N],
+	[r].[Decimal],
+	[r].[DecimalN],
+	[r].[Double],
+	[r].[DoubleN]
+FROM
+	[BooleanTable] [r]
+WHERE
+	[r].[BooleanN] <> 0 OR [r].[BooleanN] IS NULL
+
+-- SqlServer.SA SqlServer.2019
+SELECT
+	[t1].[Id],
+	[t1].[Boolean],
+	[t1].[BooleanN],
+	[t1].[Int32],
+	[t1].[Int32N],
+	[t1].[Decimal],
+	[t1].[DecimalN],
+	[t1].[Double],
+	[t1].[DoubleN]
+FROM
+	[BooleanTable] [t1]
+
+-- SqlServer.SA SqlServer.2019
 SELECT
 	[r].[Id],
 	[r].[Boolean],
@@ -1538,7 +1471,6 @@ WHERE
 	[r].[BooleanN] IS NOT NULL
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -1553,7 +1485,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[g_1].[Id],
 	COUNT(IIF([g_1].[Boolean] = 1, 1, NULL)),
@@ -1607,7 +1538,6 @@ GROUP BY
 	[g_1].[Id]
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -1622,7 +1552,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[r].[Id],
 	IIF([r].[Int32] = 0, 1, 0),
@@ -1784,7 +1713,6 @@ FROM
 	[BooleanTable] [r_1]
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],

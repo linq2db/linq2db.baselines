@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name Text(5) -- String
@@ -24,8 +24,7 @@ ON CONFLICT (id) DO UPDATE SET
 	name = :Name,
 	updated_by = :UpdatedBy
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	t1.id,
 	t1.name,
@@ -35,7 +34,7 @@ FROM
 	test_insert_or_replace t1
 LIMIT 2
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name Text(5) -- String
@@ -61,8 +60,7 @@ ON CONFLICT (id) DO UPDATE SET
 	name = :Name,
 	updated_by = :UpdatedBy
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	t1.id,
 	t1.name,

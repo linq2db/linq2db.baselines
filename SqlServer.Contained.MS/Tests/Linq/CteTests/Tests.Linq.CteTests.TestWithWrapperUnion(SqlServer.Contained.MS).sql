@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained.MS SqlServer.2019
-
 WITH [CTE_1]
 (
 	[Child_ParentID],
@@ -38,7 +37,6 @@ FROM
 	[CTE_1] [t1]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 WITH [CTE_1]
 (
 	[Child_ParentID],

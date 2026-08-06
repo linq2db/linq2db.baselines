@@ -1,11 +1,9 @@
 ﻿-- SQLite.Classic SQLite
 
-
 DROP TABLE IF EXISTS dataFTS;
 CREATE VIRTUAL TABLE dataFTS USING fts4(`ID` INTEGER, `FirstName` TEXT, `LastName` TEXT, `MidName` TEXT )
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[result_1].[FirstName],
 	[result_1].[MidName],
@@ -16,7 +14,6 @@ WHERE
 	[dataFTS] match 'John*'
 
 -- SQLite.Classic SQLite
-
 INSERT INTO [dataFTS]
 (
 	[FirstName]
@@ -27,7 +24,6 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-
 INSERT INTO [dataFTS]
 (
 	[FirstName]
@@ -38,7 +34,6 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[result_1].[FirstName],
 	[result_1].[MidName],
@@ -49,6 +44,5 @@ WHERE
 	[dataFTS] match 'John*'
 
 -- SQLite.Classic SQLite
-
 DROP TABLE dataFTS
 

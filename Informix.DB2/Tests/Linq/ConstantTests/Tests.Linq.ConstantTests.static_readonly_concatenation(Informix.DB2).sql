@@ -13,7 +13,6 @@ WHERE
 	(Nvl(e.StringValue, '') || '1') = @p
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1.GuidValue,

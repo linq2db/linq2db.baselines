@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	x."ParentID",
 	x."ChildID",
@@ -9,8 +8,7 @@ FROM
 WHERE
 	x."ParentID" IN (2)
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	x."ParentID",
 	x."ChildID",

@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[t3].[projection__set_id__],
 	[t3].[ID],

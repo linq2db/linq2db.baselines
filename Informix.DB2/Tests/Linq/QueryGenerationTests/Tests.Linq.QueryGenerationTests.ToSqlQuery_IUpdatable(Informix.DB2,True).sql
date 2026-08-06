@@ -12,14 +12,12 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 UPDATE
 	TableWithIdentity t1
 SET
 	"Value" = 123
 
 -- Informix.DB2 Informix
-
 SELECT FIRST 2
 	t1.Id,
 	t1."Value"

@@ -1,16 +1,14 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
-	STDDEV_POP(p.Value1) OVER(PARTITION BY p.Value1, c_1.ChildID),
-	STDDEV_POP(p.Value1) OVER(ORDER BY p.Value1),
-	STDDEV_POP(p.Value1) OVER(),
-	STDDEV_POP(p.Value1) OVER(PARTITION BY c_1.ChildID ORDER BY p.Value1 RANGE BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW)
+	STDDEV_POP(p.Value1) OVER (PARTITION BY p.Value1, c_1.ChildID),
+	STDDEV_POP(p.Value1) OVER (ORDER BY p.Value1),
+	STDDEV_POP(p.Value1) OVER (),
+	STDDEV_POP(p.Value1) OVER (PARTITION BY c_1.ChildID ORDER BY p.Value1 RANGE BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW)
 FROM
 	Parent p
 		INNER JOIN Child c_1 ON p.ParentID = c_1.ParentID
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	STDDEV_POP(c_1.ParentID)
 FROM
@@ -20,7 +18,6 @@ GROUP BY
 	g_1.ParentID
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	STDDEV_POP(t1.ParentID)
 FROM

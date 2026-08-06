@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 CREATE TABLE aa
 (
 	bb Int  NOT NULL,
@@ -8,7 +7,7 @@ CREATE TABLE aa
 	CONSTRAINT "PK_aa" PRIMARY KEY (bb)
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DECLARE @bb Integer -- Int32
 SET     @bb = 99
 DECLARE @cc Text(5) -- String
@@ -25,15 +24,13 @@ VALUES
 	:cc
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1.bb,
 	t1.cc
 FROM
 	aa t1
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DROP TABLE aa
 

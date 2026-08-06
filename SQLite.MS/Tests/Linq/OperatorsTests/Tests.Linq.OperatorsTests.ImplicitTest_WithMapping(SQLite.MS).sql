@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[r].[StringData1],
 	[r].[StringData2],
@@ -10,7 +9,6 @@ FROM
 LIMIT 2
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[StringData1],
 	[t1].[StringData2],

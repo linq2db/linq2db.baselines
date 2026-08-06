@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
-
 CREATE TABLE [tempdb]..[#TableWithData_destination]
 (
 	[Id]       Int          NOT NULL,
@@ -10,7 +9,6 @@ CREATE TABLE [tempdb]..[#TableWithData_destination]
 )
 
 -- SqlServer.2016.MS SqlServer.2016
-
 UPDATE
 	[TableWithData_source]
 SET
@@ -31,7 +29,6 @@ WHERE
 	[TableWithData_source].[Id] > 3
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	[t1].[Id],
 	[t1].[Value],
@@ -40,6 +37,5 @@ FROM
 	[tempdb]..[#TableWithData_destination] [t1]
 
 -- SqlServer.2016.MS SqlServer.2016
-
 DROP TABLE IF EXISTS [tempdb]..[#TableWithData_destination]
 

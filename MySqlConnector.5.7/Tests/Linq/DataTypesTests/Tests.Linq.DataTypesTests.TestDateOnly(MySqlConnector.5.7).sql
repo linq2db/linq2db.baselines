@@ -14,7 +14,6 @@ WHERE
 	`r`.`Column` = @Column AND `r`.`ColumnNullable` = @ColumnNullable
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`r`.`Id`,
 	`r`.`Column`,
@@ -25,7 +24,6 @@ WHERE
 	`r`.`Column` = '2020-02-29' AND `r`.`ColumnNullable` = '2020-01-01'
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 DELETE  
 FROM
 	`DateOnlyTable`
@@ -73,7 +71,6 @@ VALUES
 )
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Column`,
@@ -84,13 +81,11 @@ ORDER BY
 	`t1`.`Id`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 DELETE  
 FROM
 	`DateOnlyTable`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 INSERT INTO `DateOnlyTable`
 (
 	`Id`,
@@ -102,7 +97,6 @@ VALUES
 (2,'2020-02-29','2020-01-01')
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Column`,
@@ -113,7 +107,6 @@ ORDER BY
 	`t1`.`Id`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 DELETE  
 FROM
 	`DateOnlyTable`
@@ -121,7 +114,6 @@ FROM
 INSERT BULK `DateOnlyTable`(Id, Column, ColumnNullable)
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Column`,

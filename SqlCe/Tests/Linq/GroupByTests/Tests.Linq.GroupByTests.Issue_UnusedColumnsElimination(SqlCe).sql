@@ -1,7 +1,6 @@
 ﻿-- SqlCe
-
 SELECT
-	COUNT(*) as [LongCount]
+	COUNT(*)
 FROM
 	[Person] [r]
 

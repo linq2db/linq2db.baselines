@@ -28,7 +28,6 @@ VALUES
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Type`,
 	`t1`.`Id`,
@@ -62,7 +61,6 @@ WHERE
 	`t1`.`Id` = @Id
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Type`,
 	`t1`.`Id`,

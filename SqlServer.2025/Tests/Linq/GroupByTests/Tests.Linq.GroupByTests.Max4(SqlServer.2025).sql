@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025
-
 SELECT
 	[t1_1].[MoneyValue]
 FROM

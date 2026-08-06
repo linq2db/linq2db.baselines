@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
-
 DELETE [t1]
 FROM
 	[TestMerge1] [t1]
@@ -105,7 +104,6 @@ VALUES
 )
 
 -- SqlServer.2022.MS SqlServer.2022
-
 DELETE [t1]
 FROM
 	[TestMerge2] [t1]
@@ -211,7 +209,6 @@ VALUES
 )
 
 -- SqlServer.2022.MS SqlServer.2022
-
 MERGE INTO [TestMerge1] [Target]
 USING (
 	SELECT
@@ -227,7 +224,6 @@ WHEN MATCHED AND [Source].[select_1] = 4 THEN DELETE
 ;
 
 -- SqlServer.2022.MS SqlServer.2022
-
 SELECT
 	[t1].[Id],
 	[t1].[Field1],

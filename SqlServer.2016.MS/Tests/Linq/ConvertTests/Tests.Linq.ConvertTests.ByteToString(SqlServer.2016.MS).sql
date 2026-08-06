@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	CAST(CAST([p].[ID] AS TinyInt) AS NVarChar(3))
 FROM

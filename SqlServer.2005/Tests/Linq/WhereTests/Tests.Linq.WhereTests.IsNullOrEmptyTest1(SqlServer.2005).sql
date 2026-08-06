@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 SELECT
 	[nm].[MiddleName]
 FROM
@@ -8,7 +7,6 @@ WHERE
 	NOT ([nm].[MiddleName] IS NULL OR LEN([nm].[MiddleName] + N'.') = 1)
 
 -- SqlServer.2005
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

@@ -1,12 +1,10 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
-
 SELECT
 	MAX([t1].[ID])
 FROM
 	[AllTypes] [t1]
 
 -- SqlServer.2022.MS SqlServer.2022
-
 MERGE INTO [AllTypes] [Target]
 USING (VALUES
 	(3,char(0),char(0),N'test' + char(0) + N'it')

@@ -1,5 +1,4 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
-
 INSERT INTO "TestBool"
 (
 	"Id",
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Value" as "Value_1"
@@ -21,7 +19,6 @@ FROM
 FETCH NEXT 2 ROWS ONLY
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 UPDATE
 	"TestBool" t1
 SET
@@ -32,7 +29,6 @@ SET
 	END
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Value" as "Value_1"
@@ -41,7 +37,6 @@ FROM
 FETCH NEXT 2 ROWS ONLY
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 UPDATE
 	"TestBool" r
 SET
@@ -50,7 +45,6 @@ WHERE
 	r."Id" = 1
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Value" as "Value_1"

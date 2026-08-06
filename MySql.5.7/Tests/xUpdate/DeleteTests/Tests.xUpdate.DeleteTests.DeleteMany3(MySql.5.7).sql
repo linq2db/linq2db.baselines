@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 DELETE  
 FROM
 	`GrandChild`
@@ -7,7 +6,6 @@ WHERE
 	`GrandChild`.`ParentID` >= 1000
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 DELETE  
 FROM
 	`Child`
@@ -15,7 +13,6 @@ WHERE
 	`Child`.`ParentID` >= 1000
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 DELETE  
 FROM
 	`Parent`
@@ -23,7 +20,6 @@ WHERE
 	`Parent`.`ParentID` >= 1000
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 INSERT INTO `Parent`
 (
 	`ParentID`
@@ -34,7 +30,6 @@ VALUES
 )
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 INSERT INTO `Child`
 (
 	`ParentID`,
@@ -47,7 +42,6 @@ VALUES
 )
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 INSERT INTO `GrandChild`
 (
 	`ParentID`,
@@ -62,7 +56,6 @@ VALUES
 )
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 INSERT INTO `GrandChild`
 (
 	`ParentID`,
@@ -77,7 +70,6 @@ VALUES
 )
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 DELETE   `a_GrandChildren`
 FROM
 	`Parent` `gc`
@@ -87,7 +79,6 @@ WHERE
 	`gc`.`ParentID` IN (1001)
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 DELETE  
 FROM
 	`GrandChild`
@@ -95,7 +86,6 @@ WHERE
 	`GrandChild`.`ParentID` >= 1000
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 DELETE  
 FROM
 	`Child`
@@ -103,7 +93,6 @@ WHERE
 	`Child`.`ParentID` >= 1000
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 DELETE  
 FROM
 	`Parent`

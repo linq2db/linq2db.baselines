@@ -1,12 +1,10 @@
 ﻿-- Firebird.5 Firebird4
-
 DELETE FROM
 	"Parent" "p"
 WHERE
 	"p"."ParentID" > 1000
 
 -- Firebird.5 Firebird4
-
 INSERT INTO "Parent"
 (
 	"ParentID",
@@ -31,7 +29,6 @@ FROM
 	) "t1"
 
 -- Firebird.5 Firebird4
-
 SELECT
 	COUNT(*)
 FROM
@@ -40,7 +37,6 @@ WHERE
 	"c_1"."ParentID" > 1000
 
 -- Firebird.5 Firebird4
-
 DELETE FROM
 	"Parent" "p"
 WHERE

@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 DELETE FROM
 	"LinqDataTypes" "t"
 WHERE
@@ -19,11 +18,10 @@ VALUES
 (
 	1001,
 	1,
-	CAST(@arr AS VARBINARY(4))
+	@arr
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t".ID,
 	"t"."MoneyValue",
@@ -39,7 +37,6 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 -- DB2 DB2.LUW DB2LUW
-
 DELETE FROM
 	"LinqDataTypes" "t"
 WHERE

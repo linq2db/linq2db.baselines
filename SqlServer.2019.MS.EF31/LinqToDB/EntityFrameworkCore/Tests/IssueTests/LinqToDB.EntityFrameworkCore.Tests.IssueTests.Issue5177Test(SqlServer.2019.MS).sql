@@ -7,7 +7,6 @@ VALUES (@p0, @p1);
 
 
 -- SqlServer.2019
-
 SELECT TOP (2)
 	[r].[Id],
 	[r].[Value]

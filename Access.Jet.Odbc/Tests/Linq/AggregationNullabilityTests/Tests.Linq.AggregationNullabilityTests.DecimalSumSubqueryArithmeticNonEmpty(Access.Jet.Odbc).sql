@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 SELECT TOP 1
 	[t1].[Anchor] - IIF([t1].[Sum_1] IS NULL, 0, [t1].[Sum_1])
 FROM

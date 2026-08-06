@@ -7,7 +7,6 @@ VALUES (@p0, @p1);
 
 
 -- MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`r`.`Id`,
 	`r`.`Value`

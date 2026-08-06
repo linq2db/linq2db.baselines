@@ -1,5 +1,4 @@
 ﻿-- Northwind.SQLite SQLite.Classic SQLite
-
 SELECT
 	[m_1].[Key_1],
 	[d].[OrderID],
@@ -35,7 +34,6 @@ FROM
 		INNER JOIN [Orders] [d] ON strftime('%Y-%m-%d %H:%M:%f', [m_1].[Key_1]) = strftime('%Y-%m-%d %H:%M:%f', [d].[OrderDate]) OR [m_1].[Key_1] IS NULL AND [d].[OrderDate] IS NULL
 
 -- Northwind.SQLite SQLite.Classic SQLite
-
 SELECT
 	[g_1].[OrderDate]
 FROM

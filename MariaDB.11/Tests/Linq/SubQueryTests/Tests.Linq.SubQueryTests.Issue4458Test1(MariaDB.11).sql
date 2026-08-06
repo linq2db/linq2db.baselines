@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`m_1`.`Id`,
 	`d`.`ItemId`,
@@ -22,7 +21,6 @@ ORDER BY
 	`d`.`UserId`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`i`.`Id`,
 	`stock_1`.`TotalAvailable`
@@ -48,14 +46,12 @@ WHERE
 	)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`
 FROM
 	`Issue4458Item` `t1`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`ItemId`,
 	`t1`.`QuantityAvailable`,
@@ -64,7 +60,6 @@ FROM
 	`WarehouseStock` `t1`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`ItemId`,
 	`t1`.`UserId`,

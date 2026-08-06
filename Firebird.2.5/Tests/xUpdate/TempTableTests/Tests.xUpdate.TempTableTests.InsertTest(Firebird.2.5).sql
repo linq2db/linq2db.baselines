@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 INSERT INTO "Table2"
 (
 	ID
@@ -10,7 +9,6 @@ FROM
 	"Table1" "t"
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1".ID,
 	"t1"."Date"

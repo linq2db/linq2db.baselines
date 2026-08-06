@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 UPDATE
 	"OuterTable"
 SET
@@ -20,7 +19,6 @@ SET
 	)
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Field1",

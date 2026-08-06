@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 UPDATE
 	OuterTable
 SET
@@ -20,7 +19,6 @@ SET
 	)
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1.Field1,

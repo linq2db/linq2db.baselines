@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 INSERT INTO "TableToInsert"
 (
 	"Id",
@@ -18,7 +17,6 @@ WHERE
 	"t"."Id" IS NULL
 
 -- Firebird.2.5 Firebird
-
 INSERT INTO "TableToInsert"
 (
 	"Id",

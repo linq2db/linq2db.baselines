@@ -21,7 +21,6 @@ WHERE
 	[t].[id] <> @someId
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[v].[id],
 	[v].[Value1],

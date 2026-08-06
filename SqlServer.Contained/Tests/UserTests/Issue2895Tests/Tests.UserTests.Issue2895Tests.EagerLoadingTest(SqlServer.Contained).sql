@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[m_1].[Id],
 	[a_Documents].[Name]
@@ -27,7 +26,6 @@ FROM
 		INNER JOIN [Document] [a_Documents] ON [a_Attachment].[Id] = [a_Documents].[AttachmentId]
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[t1].[not_null],
 	[t1].[Id]

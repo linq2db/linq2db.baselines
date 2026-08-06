@@ -12,7 +12,6 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT TOP (1)
 	[t1].[Id],
 	[t1].[CharFld]

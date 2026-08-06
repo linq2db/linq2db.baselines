@@ -1,5 +1,4 @@
 ﻿-- Northwind.SQLite SQLite.Classic SQLite
-
 SELECT
 	[od].[OrderID],
 	[o1].[OrderDate],
@@ -14,7 +13,6 @@ ORDER BY
 	[od].[OrderID]
 
 -- Northwind.SQLite SQLite.Classic SQLite
-
 SELECT
 	[v].[OrderID]
 FROM

@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	IIF([t1].[Reason] IS NULL, '', [t1].[Reason])

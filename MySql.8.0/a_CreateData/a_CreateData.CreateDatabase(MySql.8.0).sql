@@ -1,29 +1,22 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 DROP SCHEMA IF EXISTS `testdata`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 CREATE SCHEMA `testdata`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 ALTER DATABASE `testdata` CHARACTER SET utf8 COLLATE utf8_general_ci
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 USE `testdata`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SET GLOBAL local_infile=ON;
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SET @@global.sql_mode=(SELECT REPLACE(@@global.sql_mode, 'ONLY_FULL_GROUP_BY', ''))
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 CREATE TABLE InheritanceParent
 (
 	InheritanceParentId int          NOT NULL,
@@ -34,7 +27,6 @@ CREATE TABLE InheritanceParent
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 CREATE TABLE InheritanceChild
 (
 	InheritanceChildId  int          NOT NULL,
@@ -46,7 +38,6 @@ CREATE TABLE InheritanceChild
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 -- Person Table
 
 CREATE TABLE Person
@@ -60,27 +51,21 @@ CREATE TABLE Person
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 INSERT INTO Person (FirstName, LastName, Gender) VALUES ('John',   'Pupkin',    'M')
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 INSERT INTO Person (FirstName, LastName, Gender) VALUES ('Tester', 'Testerson', 'M')
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 INSERT INTO Person (FirstName, LastName, Gender) VALUES ('Jane',   'Doe',       'F')
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 INSERT INTO Person (FirstName, LastName, MiddleName, Gender) VALUES ('Jürgen', 'König', 'Ko', 'M')
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 CREATE OR REPLACE VIEW PersonView AS SELECT * FROM Person
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 -- Doctor Table Extension
 
 CREATE TABLE Doctor
@@ -93,11 +78,9 @@ CREATE TABLE Doctor
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 INSERT INTO Doctor (PersonID, Taxonomy) VALUES (1, 'Psychiatry')
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 -- Patient Table Extension
 
 CREATE TABLE Patient
@@ -110,11 +93,9 @@ CREATE TABLE Patient
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 INSERT INTO Patient (PersonID, Diagnosis) VALUES (2, 'Hallucination with Paranoid Bugs'' Delirium of Persecution')
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 -- Data Types test
 
 CREATE TABLE DataTypeTest
@@ -145,27 +126,21 @@ CREATE TABLE DataTypeTest
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 CREATE TABLE Parent     (ParentID int, Value1 int)
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 CREATE TABLE Child      (ParentID int, ChildID int)
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 CREATE INDEX IX_ChildIndex ON Child (ParentID)
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 CREATE INDEX IX_ChildIndex2 ON Child (ParentID DESC)
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 CREATE TABLE GrandChild (ParentID int, ChildID int, GrandChildID int)
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 CREATE TABLE LinqDataTypes
 (
 	ID             int,
@@ -182,14 +157,12 @@ CREATE TABLE LinqDataTypes
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 CREATE TABLE TestIdentity (
 	ID int AUTO_INCREMENT NOT NULL,
 	CONSTRAINT PK_TestIdentity PRIMARY KEY CLUSTERED (ID)
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 CREATE TABLE `AllTypes`
 (
 	ID                  int AUTO_INCREMENT       NOT NULL,
@@ -229,7 +202,6 @@ CREATE TABLE `AllTypes`
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 INSERT INTO `AllTypes`
 (
 	bigintDataType,
@@ -322,7 +294,6 @@ SELECT
 	1
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 CREATE TABLE `AllTypesNoYear`
 (
 	ID                  int AUTO_INCREMENT       NOT NULL,
@@ -361,29 +332,24 @@ CREATE TABLE `AllTypesNoYear`
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 DROP SCHEMA IF EXISTS test_schema
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 CREATE SCHEMA test_schema
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 CREATE TABLE test_schema.TestSameName
 (
 	ID int NOT NULL PRIMARY KEY
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 CREATE TABLE TestSameName
 (
 	ID int NOT NULL PRIMARY KEY
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 CREATE OR REPLACE
 VIEW PersonView
 AS
@@ -392,7 +358,6 @@ AS
 	WHERE (`Person`.`Gender` = 'M')
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 -- merge test tables
 CREATE TABLE TestMerge1
 (
@@ -430,7 +395,6 @@ CREATE TABLE TestMerge1
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 CREATE TABLE TestMerge2
 (
 	Id       int          NOT NULL,
@@ -467,7 +431,6 @@ CREATE TABLE TestMerge2
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 CREATE PROCEDURE TestProcedure(IN param3 INT, INOUT param2 INT, OUT param1 INT)
 BEGIN
 	SELECT param2 + param2 INTO param2;
@@ -476,11 +439,9 @@ BEGIN
 END
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SET GLOBAL log_bin_trust_function_creators = 1;
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 CREATE FUNCTION TestFunction(param INT)
 RETURNS VARCHAR(10)
 BEGIN
@@ -488,14 +449,12 @@ BEGIN
 END
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 CREATE PROCEDURE AddIssue792Record()
 BEGIN
 	INSERT INTO `AllTypes`(char20DataType) VALUES('issue792');
 END
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 CREATE PROCEDURE `TestOutputParametersWithoutTableProcedure`(
 	IN `aInParam` VARCHAR(256),
 	OUT `aOutParam` TINYINT(1)
@@ -505,7 +464,6 @@ BEGIN
 END
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 CREATE TABLE FullTextIndexTest (
 	id int UNSIGNED AUTO_INCREMENT NOT NULL PRIMARY KEY,
 	TestField1 TEXT(100),
@@ -516,20 +474,17 @@ CREATE TABLE FullTextIndexTest (
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 INSERT INTO FullTextIndexTest(TestField1, TestField2) VALUES('this is text1', 'this is text2');
 INSERT INTO FullTextIndexTest(TestField1, TestField2) VALUES('looking for something?', 'found it!');
 INSERT INTO FullTextIndexTest(TestField1, TestField2) VALUES('record not found', 'empty');
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 CREATE TABLE Issue1993 (
 	id			INTEGER UNSIGNED	NOT NULL   AUTO_INCREMENT,
 	description	VARCHAR(100)		NULL,
 PRIMARY KEY(id));
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 CREATE PROCEDURE `Issue2313Parameters`(
 	IN `VarCharDefault` VARCHAR(255),
 	IN `VarChar1` VARCHAR(1),
@@ -638,7 +593,6 @@ BEGIN
 END
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 CREATE PROCEDURE `Issue2313Results`(
 	IN `VarCharDefault` VARCHAR(4000),
 	IN `VarChar1` VARCHAR(1),
@@ -739,11 +693,9 @@ BEGIN
 END
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 DROP TABLE `CollatedTable`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 CREATE TABLE `CollatedTable`
 (
 	`Id`				INT NOT NULL,
@@ -752,7 +704,6 @@ CREATE TABLE `CollatedTable`
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 CREATE TABLE KeepIdentityTest (
 	ID    INT AUTO_INCREMENT NOT NULL,
 	Value INT NULL,
@@ -760,7 +711,6 @@ CREATE TABLE KeepIdentityTest (
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 INSERT INTO `LinqDataTypes`
 (
 	`ID`,
@@ -789,7 +739,6 @@ VALUES
 (12,11.45,'2012-11-07 19:19:29.090',NULL,1,'03021d18-97f0-4dc0-98d0-f0c7df4a1230',12,NULL,NULL,'0')
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 INSERT INTO `Parent`
 (
 	`ParentID`,
@@ -805,7 +754,6 @@ VALUES
 (7,1)
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 INSERT INTO `Child`
 (
 	`ParentID`,
@@ -831,7 +779,6 @@ VALUES
 (7,77)
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 INSERT INTO `GrandChild`
 (
 	`ParentID`,
@@ -863,7 +810,6 @@ VALUES
 (4,42,424)
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 INSERT INTO `InheritanceParent`
 (
 	`InheritanceParentId`,
@@ -876,7 +822,6 @@ VALUES
 (3,2,'InheritanceParent2')
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 INSERT INTO `InheritanceChild`
 (
 	`InheritanceChildId`,

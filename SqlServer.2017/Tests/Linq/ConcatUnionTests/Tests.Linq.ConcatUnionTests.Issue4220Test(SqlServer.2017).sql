@@ -33,7 +33,6 @@ VALUES
 )
 
 -- SqlServer.2017
-
 SELECT
 	[e].[Id],
 	[e].[AOnly],

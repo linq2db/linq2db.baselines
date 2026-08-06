@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 WITH RECURSIVE cte AS
 (
 	SELECT
@@ -34,7 +33,6 @@ FROM
 		INNER JOIN CteTable d_1 ON m_1.Id = d_1.Value3
 
 -- ClickHouse.Driver ClickHouse
-
 WITH RECURSIVE cte AS
 (
 	SELECT

@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	MAX([t1].[PersonID])
 FROM
@@ -31,7 +30,6 @@ VALUES
 )
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT TOP 2
 	[p].[PersonID],
 	[p].[FirstName],
@@ -44,7 +42,6 @@ WHERE
 	[p].[PersonID] > 4
 
 -- Access.Ace.Odbc AccessODBC
-
 DELETE FROM
 	[Person] [t]
 WHERE

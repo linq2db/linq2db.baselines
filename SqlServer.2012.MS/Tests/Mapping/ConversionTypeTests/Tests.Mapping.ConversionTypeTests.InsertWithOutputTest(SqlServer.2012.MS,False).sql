@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012.MS SqlServer.2012
-
 INSERT INTO [TrimTestTable]
 (
 	[ID],
@@ -15,7 +14,6 @@ FROM
 	[TrimTestTable] [t1]
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[r].[ID],
 	[r].[Data]
@@ -25,7 +23,6 @@ ORDER BY
 	[r].[ID]
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[r].[ID],
 	[r].[Data]

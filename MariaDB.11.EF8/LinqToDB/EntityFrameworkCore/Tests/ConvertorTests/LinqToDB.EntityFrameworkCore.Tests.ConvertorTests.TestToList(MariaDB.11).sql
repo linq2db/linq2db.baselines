@@ -30,7 +30,6 @@ VALUES
 
 
 -- MariaDB.10.MySqlConnector MariaDB
-
 SELECT LAST_INSERT_ID()
 
 
@@ -67,7 +66,6 @@ VALUES
 
 
 -- MariaDB.10.MySqlConnector MariaDB
-
 SELECT LAST_INSERT_ID()
 
 
@@ -104,7 +102,6 @@ VALUES
 
 
 -- MariaDB.10.MySqlConnector MariaDB
-
 SELECT LAST_INSERT_ID()
 
 
@@ -149,7 +146,6 @@ WHERE
 
 
 -- MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`s`.`Id`,
 	`s`.`PermanentId`,
@@ -164,7 +160,6 @@ WHERE
 
 
 -- MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`PermanentId`,

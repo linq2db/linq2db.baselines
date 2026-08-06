@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	BITAND("k_1"."StatusBitmask", 128),
 	BITAND("g_1"."StatusBitmask", 128)

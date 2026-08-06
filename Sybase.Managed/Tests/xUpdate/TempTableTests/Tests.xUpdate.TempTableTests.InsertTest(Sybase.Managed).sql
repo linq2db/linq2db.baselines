@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 INSERT INTO [Table2]
 (
 	[ID]
@@ -10,7 +9,6 @@ FROM
 	[Table1] [t]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[ID],
 	[t1].[Date]

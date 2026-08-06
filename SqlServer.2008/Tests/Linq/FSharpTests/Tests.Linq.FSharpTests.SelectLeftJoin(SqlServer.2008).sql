@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008
-
 SELECT TOP (1)
 	[Item1].[ParentID],
 	[Item1].[ChildID]

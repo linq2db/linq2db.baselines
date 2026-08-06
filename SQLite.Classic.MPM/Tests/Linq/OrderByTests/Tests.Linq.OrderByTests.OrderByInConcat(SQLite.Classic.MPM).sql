@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t2].[ParentID],
 	[t2].[ChildID]
@@ -29,7 +28,6 @@ FROM
 	) [t4]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID]
@@ -51,7 +49,6 @@ FROM
 	) [t3]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t5].[ParentID],
 	[t5].[ChildID]

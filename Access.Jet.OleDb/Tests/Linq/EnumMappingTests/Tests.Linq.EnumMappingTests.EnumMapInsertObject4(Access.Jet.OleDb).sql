@@ -29,7 +29,6 @@ VALUES
 )
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	COUNT(*)
 FROM

@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 WITH CTE_1
 (
 	"entry_ID",
@@ -31,7 +30,6 @@ WHERE
 	x."entry_ID" = 1
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	x."FirstName",
 	x."PersonID",

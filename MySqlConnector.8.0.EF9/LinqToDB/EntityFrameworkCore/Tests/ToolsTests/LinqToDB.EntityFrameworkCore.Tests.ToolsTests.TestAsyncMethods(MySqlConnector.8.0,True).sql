@@ -24,7 +24,6 @@ SELECT EXISTS (
 
 
 -- MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`e`.`IsDeleted`,
 	`e`.`ProductID`,
@@ -45,7 +44,6 @@ WHERE
 
 
 -- MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`e`.`IsDeleted`,
 	`e`.`ProductID`,
@@ -66,7 +64,6 @@ WHERE
 
 
 -- MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`e`.`IsDeleted`,
 	`e`.`ProductID`,
@@ -87,7 +84,6 @@ WHERE
 
 
 -- MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	EXISTS(
 		SELECT

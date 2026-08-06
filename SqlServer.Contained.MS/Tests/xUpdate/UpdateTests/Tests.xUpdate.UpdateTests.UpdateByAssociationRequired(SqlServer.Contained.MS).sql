@@ -14,7 +14,6 @@ WHERE
 	[t1].[Id] = @id
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Field]

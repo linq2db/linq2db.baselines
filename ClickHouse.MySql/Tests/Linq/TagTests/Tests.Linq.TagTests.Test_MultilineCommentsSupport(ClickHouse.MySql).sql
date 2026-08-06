@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 /* My custom
 wonderful multiline
 query tag */

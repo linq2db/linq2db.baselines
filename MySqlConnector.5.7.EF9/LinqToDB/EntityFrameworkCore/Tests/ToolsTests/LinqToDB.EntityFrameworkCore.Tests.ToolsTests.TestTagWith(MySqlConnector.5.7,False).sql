@@ -14,7 +14,6 @@ WHERE (@__ef_filter__p_0 OR NOT (`e`.`IsDeleted`)) OR NOT (`e`.`IsDeleted`)
 
 
 -- MySql.5.7.MySqlConnector MySql57
-
 /* Tagged query */
 SELECT
 	`e`.`IsDeleted`,

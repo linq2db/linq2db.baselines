@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 INSERT INTO "Person"
 (
 	"FirstName",
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(*)
 FROM

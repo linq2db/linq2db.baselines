@@ -4,13 +4,13 @@ SET     @take = 1000
 
 SELECT
 	t1."Diagnosis",
-	t1."id",
+	t1."PersonID",
 	t1."y"
 FROM
 	(
 		SELECT
 			a_Patient."Diagnosis",
-			a_Patient."PersonID" as "id",
+			a_Patient."PersonID",
 			AVG(auto16031."PersonID") as "y"
 		FROM
 			"Person" auto16031

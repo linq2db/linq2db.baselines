@@ -9,7 +9,7 @@ FROM
 	(
 		SELECT TOP (@take)
 			[r].[PersonID] as [ID],
-			ROW_NUMBER() OVER(ORDER BY (
+			ROW_NUMBER() OVER (ORDER BY (
 				SELECT
 					N'unordered'
 			)) as [RowNumber]

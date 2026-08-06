@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT DISTINCT
 	[p1].[PersonID],
 	[p1].[Gender],

@@ -28,13 +28,12 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT TOP (2)
-	[t1].[Type] as [Type_1],
+	[t1].[Type],
 	[t1].[Id],
-	[t1].[Test_ChildId] as [ChildId],
-	[t1].[Name_First] as [First_1],
-	[t1].[Name_Second] as [Second_1]
+	[t1].[Test_ChildId],
+	[t1].[Name_First],
+	[t1].[Name_Second]
 FROM
 	[Base] [t1]
 
@@ -61,13 +60,12 @@ WHERE
 	[Base].[Id] = @Id
 
 -- SqlCe
-
 SELECT TOP (2)
-	[t1].[Type] as [Type_1],
+	[t1].[Type],
 	[t1].[Id],
-	[t1].[Test_ChildId] as [ChildId],
-	[t1].[Name_First] as [First_1],
-	[t1].[Name_Second] as [Second_1]
+	[t1].[Test_ChildId],
+	[t1].[Name_First],
+	[t1].[Name_Second]
 FROM
 	[Base] [t1]
 

@@ -12,14 +12,12 @@ VALUES
 )
 
 -- SqlServer.SA.MS SqlServer.2019
-
 UPDATE
 	[TableWithIdentity]
 SET
 	[Value] = 123
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT TOP (2)
 	[t1].[Id],
 	[t1].[Value]

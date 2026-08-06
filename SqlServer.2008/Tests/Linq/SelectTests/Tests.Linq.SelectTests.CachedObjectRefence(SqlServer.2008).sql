@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008
-
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],
@@ -10,7 +9,6 @@ FROM
 	[Person] [p]
 
 -- SqlServer.2008
-
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],

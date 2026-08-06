@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL12
 DECLARE @take Integer -- Int32
 SET     @take = 10
 
@@ -12,7 +12,7 @@ FROM
 		SELECT
 			x."EventUser" as "User_1",
 			x."ProcessID",
-			EXTRACT(EPOCH FROM (x."EventTime"::timestamp - LAG(x."EventTime") OVER(PARTITION BY x."EventUser", x."ProcessID" ORDER BY x."EventTime")::timestamp)) / 60 as "Diff"
+			EXTRACT(EPOCH FROM (x."EventTime"::timestamp - LAG(x."EventTime") OVER (PARTITION BY x."EventUser", x."ProcessID" ORDER BY x."EventTime")::timestamp)) / 60 as "Diff"
 		FROM
 			"Issue1799Table1" x
 	) g_1

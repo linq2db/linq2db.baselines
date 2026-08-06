@@ -7,5 +7,5 @@ SELECT
 FROM
 	"LinqDataTypes" t
 WHERE
-	Lower(Lower(SUBSTR(RAWTOHEX(t."GuidValue"), 7, 2) || SUBSTR(RAWTOHEX(t."GuidValue"), 5, 2) || SUBSTR(RAWTOHEX(t."GuidValue"), 3, 2) || SUBSTR(RAWTOHEX(t."GuidValue"), 1, 2) || '-' || SUBSTR(RAWTOHEX(t."GuidValue"), 11, 2) || SUBSTR(RAWTOHEX(t."GuidValue"), 9, 2) || '-' || SUBSTR(RAWTOHEX(t."GuidValue"), 15, 2) || SUBSTR(RAWTOHEX(t."GuidValue"), 13, 2) || '-' || SUBSTR(RAWTOHEX(t."GuidValue"), 17, 4) || '-' || SUBSTR(RAWTOHEX(t."GuidValue"), 21, 12))) = :guid
+	Lower(SUBSTR(RAWTOHEX(t."GuidValue"), 7, 2) || SUBSTR(RAWTOHEX(t."GuidValue"), 5, 2) || SUBSTR(RAWTOHEX(t."GuidValue"), 3, 2) || SUBSTR(RAWTOHEX(t."GuidValue"), 1, 2) || '-' || SUBSTR(RAWTOHEX(t."GuidValue"), 11, 2) || SUBSTR(RAWTOHEX(t."GuidValue"), 9, 2) || '-' || SUBSTR(RAWTOHEX(t."GuidValue"), 15, 2) || SUBSTR(RAWTOHEX(t."GuidValue"), 13, 2) || '-' || SUBSTR(RAWTOHEX(t."GuidValue"), 17, 4) || '-' || SUBSTR(RAWTOHEX(t."GuidValue"), 21, 12)) = :guid
 

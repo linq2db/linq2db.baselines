@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
-
 SELECT DISTINCT
 	[p1].[PersonID],
 	[p1].[Gender],

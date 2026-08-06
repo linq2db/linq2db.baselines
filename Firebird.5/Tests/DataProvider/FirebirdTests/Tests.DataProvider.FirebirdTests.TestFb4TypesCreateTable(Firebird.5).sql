@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 EXECUTE BLOCK AS BEGIN
 	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TestFbTypesTable')) THEN
 		EXECUTE STATEMENT '
@@ -21,7 +20,6 @@ EXECUTE BLOCK AS BEGIN
 END
 
 -- Firebird.5 Firebird4
-
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TestFbTypesTable')) THEN
 		EXECUTE STATEMENT 'DROP TABLE "TestFbTypesTable"';

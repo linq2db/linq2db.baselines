@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 INSERT INTO PR_1598_Insert_Table
 (
 	Id,
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t.Id,
 	t.Name,
@@ -26,7 +24,6 @@ WHERE
 LIMIT 1
 
 -- ClickHouse.Driver ClickHouse
-
 INSERT INTO PR_1598_Insert_Table
 (
 	Id,
@@ -41,7 +38,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t.Id,
 	t.Name,

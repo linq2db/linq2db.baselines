@@ -1,13 +1,10 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
-
 SELECT Cast('<xml/>' as xml)
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT Cast('<xml/>' as xml)
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT Cast('<xml/>' as xml)
 
 -- SqlServer.2016.MS SqlServer.2016

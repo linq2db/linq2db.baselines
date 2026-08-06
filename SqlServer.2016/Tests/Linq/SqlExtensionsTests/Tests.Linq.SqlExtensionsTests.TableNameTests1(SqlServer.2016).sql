@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016
-
 SELECT TOP (1)
 	N'[database].[schema].[table_name]',
 	N'[database].[schema].[table_name]',

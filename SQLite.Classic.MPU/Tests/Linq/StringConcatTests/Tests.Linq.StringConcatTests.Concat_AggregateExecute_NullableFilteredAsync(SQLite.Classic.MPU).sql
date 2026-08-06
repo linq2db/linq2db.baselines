@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	GROUP_CONCAT([t2].[Value_1], '')
 FROM

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 SELECT
 	[left_1].[ParentID],
 	[right_1].[ParentID]

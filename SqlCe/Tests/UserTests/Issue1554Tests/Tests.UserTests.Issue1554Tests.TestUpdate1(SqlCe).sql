@@ -34,7 +34,6 @@ WHERE
 	[Issue1554Table].[Id] = 0
 
 -- SqlCe
-
 SELECT TOP (2)
 	[t1].[Id],
 	[t1].[ClaimedKeyType],

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 SELECT
 	DateAdd(dd, DateDiff(dd, 0, [d].[DateTimeValue]), 0)
 FROM

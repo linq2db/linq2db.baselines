@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 INSERT INTO [Table2]
 (
 	[ID]
@@ -10,10 +9,9 @@ FROM
 	[Table1] [t]
 
 -- SqlCe
-
 SELECT
 	[t1].[ID],
-	[t1].[Date] as [Date_1]
+	[t1].[Date]
 FROM
 	[Table2] [t1]
 

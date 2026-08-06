@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014
-
 MERGE INTO [Child] [Target]
 USING (
 	SELECT

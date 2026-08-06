@@ -20,7 +20,6 @@ VALUES
 )
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Stamp],
@@ -45,7 +44,6 @@ WHERE
 	[ConcurrencyAutoIncrement].[Id] = @Id AND [ConcurrencyAutoIncrement].[Stamp] = @Stamp
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Stamp],
@@ -70,7 +68,6 @@ WHERE
 	[ConcurrencyAutoIncrement].[Id] = @Id AND [ConcurrencyAutoIncrement].[Stamp] = @Stamp
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Stamp],
@@ -95,7 +92,6 @@ WHERE
 	[ConcurrencyAutoIncrement].[Id] = @Id AND [ConcurrencyAutoIncrement].[Stamp] = @Stamp
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Stamp],
@@ -116,7 +112,6 @@ WHERE
 	[obj].[Id] = @Id AND [obj].[Stamp] = @Stamp
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Stamp],
@@ -137,7 +132,6 @@ WHERE
 	[obj].[Id] = @Id AND [obj].[Stamp] = @Stamp
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Stamp],

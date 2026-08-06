@@ -26,7 +26,6 @@ VALUES
 SELECT SCOPE_IDENTITY()
 
 -- SqlServer.2022.MS SqlServer.2022
-
 UPDATE
 	[Person]
 SET

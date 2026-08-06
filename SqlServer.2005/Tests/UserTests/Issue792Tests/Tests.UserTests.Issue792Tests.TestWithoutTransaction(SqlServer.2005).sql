@@ -1,27 +1,22 @@
 ﻿-- SqlServer.2005
-
 SELECT
 	COUNT(*)
 FROM
 	[AllTypes] [t1]
 
 -- SqlServer.2005
-
 SELECT TOP (1)
 	SCHEMA_NAME()
 FROM
 	[LinqDataTypes] [t1]
 
 -- SqlServer.2005
-
 select @@version
 
 -- SqlServer.2005
-
 SELECT compatibility_level FROM sys.databases WHERE name = db_name()
 
 -- SqlServer.2005
-
 SELECT
 	SPECIFIC_CATALOG COLLATE DATABASE_DEFAULT + '.' + SPECIFIC_SCHEMA + '.' + SPECIFIC_NAME as ProcedureID,
 	SPECIFIC_CATALOG                                                                        as CatalogName,
@@ -41,7 +36,6 @@ FROM
 ORDER BY SPECIFIC_CATALOG, SPECIFIC_SCHEMA, SPECIFIC_NAME
 
 -- SqlServer.2005
-
 SELECT
 	SPECIFIC_CATALOG COLLATE DATABASE_DEFAULT + '.' + SPECIFIC_SCHEMA + '.' + SPECIFIC_NAME as ProcedureID,
 	ORDINAL_POSITION                                                                        as Ordinal,
@@ -67,11 +61,9 @@ FROM
 			x.name = 'MS_Description' AND x.class = 2
 
 -- SqlServer.2005
-
 [TestData].[dbo].[AddIssue792Record]
 
 -- SqlServer.2005
-
 [TestData].[dbo].[DuplicateColumnNames]
 
 -- SqlServer.2005
@@ -91,15 +83,12 @@ SET     @output = 0
 [TestData].[dbo].[ExecuteProcStringParameters]
 
 -- SqlServer.2005
-
 SELECT * FROM [TestData].[dbo].[GetParentByID](NULL)
 
 -- SqlServer.2005
-
 [TestData].[dbo].[Issue1897]
 
 -- SqlServer.2005
-
 SELECT * FROM [TestData].[dbo].[Issue1921]()
 
 -- SqlServer.2005
@@ -129,7 +118,6 @@ SET     @inputOutputStr = N''
 [TestData].[dbo].[OutRefTest]
 
 -- SqlServer.2005
-
 [TestData].[dbo].[Patient_SelectAll]
 
 -- SqlServer.2005
@@ -173,7 +161,6 @@ SET     @PersonID = 0
 [TestData].[dbo].[Person_Insert_OutputParameter]
 
 -- SqlServer.2005
-
 [TestData].[dbo].[Person_SelectAll]
 
 -- SqlServer.2005
@@ -247,7 +234,6 @@ SET     @output2 = 0
 [TestData].[dbo].[QueryProcParameters]
 
 -- SqlServer.2005
-
 [TestData].[dbo].[SelectImplicitColumn]
 
 -- SqlServer.2005
@@ -258,14 +244,12 @@ SET     @ReturnFullRow = 0
 
 RollbackTransaction
 -- SqlServer.2005
-
 SELECT
 	COUNT(*)
 FROM
 	[AllTypes] [t1]
 
 -- SqlServer.2005
-
 DELETE [t1]
 FROM
 	[AllTypes] [t1]

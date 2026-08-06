@@ -10,7 +10,6 @@ WHERE
 	[LinqDataTypes].[ID] = 1
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t].[BinaryValue]
 FROM

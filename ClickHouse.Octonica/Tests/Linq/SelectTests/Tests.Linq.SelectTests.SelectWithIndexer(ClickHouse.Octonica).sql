@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	x.FirstName,
 	x.LastName,
@@ -20,7 +19,6 @@ ORDER BY
 	x.PersonID DESC
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.FirstName,
 	t1.PersonID,

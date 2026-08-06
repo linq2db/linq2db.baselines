@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	g_1."isValueAvailable",
 	g_1."ParentID",
@@ -25,7 +24,6 @@ GROUP BY
 	g_1."Value_1"
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."ParentID",
 	t1."ChildID"

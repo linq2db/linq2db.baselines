@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	t."Id",
 	t."Value"
@@ -9,7 +8,6 @@ WHERE
 	t."Value" = 1
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t."Id",
 	t."Value"
@@ -19,7 +17,6 @@ WHERE
 	t."Value" = 1
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t."Id",
 	t."Value"
@@ -29,7 +26,6 @@ WHERE
 	t."Value" = 0
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t."Id",
 	t."Value"
@@ -39,7 +35,6 @@ WHERE
 	t."Value" = 0
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t."Id",
 	t."Value"
@@ -49,7 +44,6 @@ WHERE
 	t."Value" = 0
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t."Id",
 	t."Value"

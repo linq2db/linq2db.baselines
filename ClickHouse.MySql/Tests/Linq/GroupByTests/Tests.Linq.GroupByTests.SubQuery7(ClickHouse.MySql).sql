@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT DISTINCT
 	c_1.ChildID
 FROM

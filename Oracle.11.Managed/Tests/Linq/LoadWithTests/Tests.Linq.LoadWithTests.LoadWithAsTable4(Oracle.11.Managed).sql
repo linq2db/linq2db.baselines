@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	m_1."ParentID",
 	d."ParentID",
@@ -19,7 +18,6 @@ FROM
 		LEFT JOIN "Parent" a_Parent ON d."ParentID" = a_Parent."ParentID"
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t."ParentID",
 	t."Value1"

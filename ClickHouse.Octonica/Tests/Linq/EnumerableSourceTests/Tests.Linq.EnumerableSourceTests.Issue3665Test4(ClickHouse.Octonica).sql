@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	x.PersonID + y.item
 FROM
@@ -10,7 +9,6 @@ FROM
 			SELECT 3) y
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.FirstName,
 	t1.PersonID,

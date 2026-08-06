@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[x].[Value1],
 	[x].[ParentID]
@@ -17,7 +16,6 @@ WHERE
 	[p2].[ParentID] <= 3
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

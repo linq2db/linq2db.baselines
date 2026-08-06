@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	m_1.Id1,
 	d.DetailId,
@@ -15,7 +14,6 @@ FROM
 		INNER JOIN DetailClass d ON m_1.Id1 = d.MasterId
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	x.Id1,
 	x.Id2,
@@ -25,7 +23,6 @@ FROM
 	MasterClass x
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	m_1.Id1,
 	d.DetailId,
@@ -41,7 +38,6 @@ FROM
 		INNER JOIN DetailClass d ON m_1.Id1 = d.MasterId
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	x.Id1,
 	x.Id2,

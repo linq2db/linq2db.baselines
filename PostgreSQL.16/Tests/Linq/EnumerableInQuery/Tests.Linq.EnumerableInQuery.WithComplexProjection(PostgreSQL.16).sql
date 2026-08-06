@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	it_1.not_null,
 	it_1."ColorName",
@@ -41,8 +40,7 @@ FROM
 WHERE
 	it_1."ColorName" = 'Red' OR it_1."Count_1" = 0
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."ColorId",
@@ -56,8 +54,7 @@ FROM
 		LEFT JOIN "SomeColor" "a_Color" ON t1."ColorId" = "a_Color"."Id"
 		LEFT JOIN "SomeStyle" "a_Style" ON t1."StyleId" = "a_Style"."Id"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."ColorId",
@@ -65,8 +62,7 @@ SELECT
 FROM
 	"SomeItem" t1
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT DISTINCT
 	it."Conditional"
 FROM
@@ -88,8 +84,7 @@ FROM
 WHERE
 	it."ColorName" = 'Red' OR it."Count" = 0
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."ColorId",
@@ -103,8 +98,7 @@ FROM
 		LEFT JOIN "SomeColor" "a_Color" ON t1."ColorId" = "a_Color"."Id"
 		LEFT JOIN "SomeStyle" "a_Style" ON t1."StyleId" = "a_Style"."Id"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."ColorId",

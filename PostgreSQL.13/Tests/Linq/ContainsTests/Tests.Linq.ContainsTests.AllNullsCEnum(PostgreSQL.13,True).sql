@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
-
+﻿-- PostgreSQL.13 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -7,8 +6,7 @@ FROM
 WHERE
 	s."CEnum" IS NULL
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM

@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[ess].[ID]
 FROM
@@ -15,7 +14,6 @@ WHERE
 	)
 
 -- SQLite.MS SQLite
-
 SELECT
 	[ess].[ID]
 FROM

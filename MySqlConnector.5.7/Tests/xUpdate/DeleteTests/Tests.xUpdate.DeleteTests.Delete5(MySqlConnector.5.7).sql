@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 DELETE  
 FROM
 	`Parent`
@@ -7,7 +6,6 @@ WHERE
 	`Parent`.`ParentID` > 1000
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 DELETE  
 FROM
 	`Parent`
@@ -45,7 +43,6 @@ VALUES
 )
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	COUNT(*)
 FROM
@@ -54,7 +51,6 @@ WHERE
 	`t1`.`ParentID` > 1000
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 DELETE  
 FROM
 	`Parent`
@@ -62,7 +58,6 @@ WHERE
 	`Parent`.`ParentID` IN (1001, 1002)
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	COUNT(*)
 FROM

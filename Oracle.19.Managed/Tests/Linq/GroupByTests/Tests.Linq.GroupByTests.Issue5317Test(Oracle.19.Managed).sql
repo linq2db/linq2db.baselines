@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	t2."ReferenceName"
 FROM
@@ -16,7 +15,6 @@ FROM
 		) t2
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Name",
@@ -28,7 +26,6 @@ FROM
 		INNER JOIN "Reference" a_Reference ON t1."ReferenceId" = a_Reference."Id"
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Name",

@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 SELECT DISTINCT
 	(
 		SELECT TOP 1

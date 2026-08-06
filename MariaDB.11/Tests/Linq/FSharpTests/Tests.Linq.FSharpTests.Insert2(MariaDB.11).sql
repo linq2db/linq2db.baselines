@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	MAX(`t1`.`PersonID`)
 FROM
@@ -31,7 +30,6 @@ VALUES
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`p`.`PersonID`,
 	`p`.`FirstName`,
@@ -45,7 +43,6 @@ WHERE
 LIMIT 2
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DELETE  
 FROM
 	`Person`

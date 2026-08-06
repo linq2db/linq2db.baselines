@@ -12,7 +12,6 @@ WHERE
 	`sr`.`id` = 'TestProcessService'
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`x`.`id`,
 	`x`.`service_id`,
@@ -23,7 +22,6 @@ WHERE
 	`x`.`is_deleted` AND `x`.`service_id` = 'TestProcessService'
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`x`.`id`,
 	`x`.`service_id`,

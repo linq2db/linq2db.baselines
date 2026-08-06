@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	[k_1].[StatusBitmask] & 128,
 	[g_1].[StatusBitmask] & 128

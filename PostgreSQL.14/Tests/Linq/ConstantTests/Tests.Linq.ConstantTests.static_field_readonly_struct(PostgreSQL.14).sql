@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @p Integer -- Int32
@@ -14,8 +14,7 @@ FROM
 WHERE
 	e."Id" = :Id AND e."Id" = :p
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."GuidValue",
@@ -24,7 +23,7 @@ SELECT
 FROM
 	"TestConstantsData" t1
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @p Integer -- Int32
@@ -40,8 +39,7 @@ FROM
 WHERE
 	e."Id" = :Id AND e."Id" = :p
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."GuidValue",

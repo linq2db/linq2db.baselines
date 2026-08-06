@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	p1.ParentID,
 	p1.Value1
@@ -17,7 +16,6 @@ WHERE
 	p2.ParentID <= 3
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.ParentID,
 	t1.Value1

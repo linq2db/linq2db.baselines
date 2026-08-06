@@ -1,5 +1,4 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
-
 CREATE GLOBAL TEMPORARY TABLE "TestTable"
 (
 	"Id"    Int NOT NULL,
@@ -10,7 +9,6 @@ CREATE GLOBAL TEMPORARY TABLE "TestTable"
 ON COMMIT DELETE ROWS
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 BEGIN
 	BEGIN
 		EXECUTE IMMEDIATE 'TRUNCATE TABLE "TestTable"';

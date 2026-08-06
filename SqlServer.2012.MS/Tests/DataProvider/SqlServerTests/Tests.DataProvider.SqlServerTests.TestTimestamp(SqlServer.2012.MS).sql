@@ -1,9 +1,7 @@
 ﻿-- SqlServer.2012.MS SqlServer.2012
-
 SELECT Cast(1 as timestamp)
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT Cast(1 as rowversion)
 
 -- SqlServer.2012.MS SqlServer.2012

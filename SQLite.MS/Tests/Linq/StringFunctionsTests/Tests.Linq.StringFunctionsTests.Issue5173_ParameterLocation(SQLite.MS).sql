@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	GROUP_CONCAT('test:' || CAST([grp_1].[ch] AS NVarChar(11)), ';')
 FROM

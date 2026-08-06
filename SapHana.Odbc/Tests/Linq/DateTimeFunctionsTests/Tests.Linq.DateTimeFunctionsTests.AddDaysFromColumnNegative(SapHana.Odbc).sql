@@ -40,7 +40,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	COUNT(*)
 FROM
@@ -49,7 +48,6 @@ WHERE
 	"t"."ID" = 5000 AND Add_Days("t"."DateTimeValue", "t"."SmallIntValue") < To_Timestamp('2018-01-02 00:00:00.000')
 
 -- SapHana.Odbc SapHanaOdbc
-
 DELETE FROM
 	"LinqDataTypes" "t"
 WHERE

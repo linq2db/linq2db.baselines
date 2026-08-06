@@ -12,7 +12,6 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable IS NULL
 
 -- DuckDB
-
 SELECT
 	r.Id,
 	r."Column",
@@ -23,7 +22,6 @@ WHERE
 	r."Column" = '00:00:00+00:00'::TIMETZ AND r.ColumnNullable IS NULL
 
 -- DuckDB
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -62,7 +60,6 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable IS NULL
 
 -- DuckDB
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -95,7 +92,6 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable IS NULL
 
 -- DuckDB
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -128,7 +124,6 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable IS NULL
 
 -- DuckDB
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -176,7 +171,6 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable = $nullableValue
 
 -- DuckDB
-
 SELECT
 	r.Id,
 	r."Column",
@@ -187,7 +181,6 @@ WHERE
 	r."Column" = '01:02:03+00:00'::TIMETZ AND r.ColumnNullable = '23:59:59.999999+00:00'::TIMETZ
 
 -- DuckDB
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -228,7 +221,6 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable = $nullableValue
 
 -- DuckDB
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -265,7 +257,6 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable = $nullableValue
 
 -- DuckDB
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -300,7 +291,6 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable = $nullableValue
 
 -- DuckDB
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -348,7 +338,6 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable IS NULL
 
 -- DuckDB
-
 SELECT
 	r.Id,
 	r."Column",
@@ -359,7 +348,6 @@ WHERE
 	r."Column" = '00:00:00.000000+00:00'::TIMETZ AND r.ColumnNullable IS NULL
 
 -- DuckDB
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -398,7 +386,6 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable IS NULL
 
 -- DuckDB
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -431,7 +418,6 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable IS NULL
 
 -- DuckDB
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -464,7 +450,6 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable IS NULL
 
 -- DuckDB
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -512,7 +497,6 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable = $nullableValue
 
 -- DuckDB
-
 SELECT
 	r.Id,
 	r."Column",
@@ -523,7 +507,6 @@ WHERE
 	r."Column" = '01:02:03.456789+00:45'::TIMETZ AND r.ColumnNullable = '05:02:03.456789-00:45'::TIMETZ
 
 -- DuckDB
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -564,7 +547,6 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable = $nullableValue
 
 -- DuckDB
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -601,7 +583,6 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable = $nullableValue
 
 -- DuckDB
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -636,7 +617,6 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable = $nullableValue
 
 -- DuckDB
-
 DELETE FROM
 	"TypeTable`2" t1
 

@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	RIGHT([p].[FirstName], 3)
 FROM

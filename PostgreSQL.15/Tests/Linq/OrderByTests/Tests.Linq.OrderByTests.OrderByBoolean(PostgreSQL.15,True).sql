@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."FirstName",
 	t1."PersonID",
@@ -11,8 +10,7 @@ FROM
 ORDER BY
 	Length(t1."FirstName") > 1
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."FirstName",
 	t1."PersonID",

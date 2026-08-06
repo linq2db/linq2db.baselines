@@ -40,7 +40,6 @@ VALUES
 )
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	COUNT(*)
 FROM
@@ -49,7 +48,6 @@ WHERE
 	[t].[ID] = 5000 AND DateAdd('d', [t].[SmallIntValue], [t].[DateTimeValue]) < DateSerial(2018, 1, 2)
 
 -- Access.Jet.Odbc AccessODBC
-
 DELETE FROM
 	[LinqDataTypes] [t]
 WHERE

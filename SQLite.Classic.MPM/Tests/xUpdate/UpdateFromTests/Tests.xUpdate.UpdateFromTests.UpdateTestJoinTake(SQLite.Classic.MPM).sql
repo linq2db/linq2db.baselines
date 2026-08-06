@@ -34,7 +34,6 @@ WHERE
 	[UpdatedEntities].[id] = [t1].[id]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[v].[id],
 	[v].[Value1],

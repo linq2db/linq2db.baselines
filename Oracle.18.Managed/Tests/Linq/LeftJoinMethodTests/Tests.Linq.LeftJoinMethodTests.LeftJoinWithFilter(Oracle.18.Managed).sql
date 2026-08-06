@@ -1,5 +1,4 @@
 ﻿-- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	c_1."Name",
 	o."Name"
@@ -10,7 +9,6 @@ WHERE
 	c_1."Id" >= 2
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Name"
@@ -18,7 +16,6 @@ FROM
 	"Customer" t1
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."CustomerId",

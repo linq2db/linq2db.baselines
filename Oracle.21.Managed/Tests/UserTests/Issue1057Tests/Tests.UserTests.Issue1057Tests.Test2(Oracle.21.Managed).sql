@@ -54,7 +54,6 @@ VALUES
 )
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	p."Id",
 	p."TargetName",
@@ -66,7 +65,6 @@ WHERE
 	p."TargetName" = 'bda.Requests'
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	p."TargetName",
 	p."Id",

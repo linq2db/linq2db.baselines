@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 INSERT INTO Issue1403Tests_3
 (
 	event_id,
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.event_id,
 	t1.event_description

@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.15 PostgreSQL12
 SELECT
 	g_2."Key_1",
 	COUNT(*)
@@ -16,8 +15,7 @@ FROM
 GROUP BY
 	g_2."Key_1"
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."ParentID",
 	t1."ChildID"

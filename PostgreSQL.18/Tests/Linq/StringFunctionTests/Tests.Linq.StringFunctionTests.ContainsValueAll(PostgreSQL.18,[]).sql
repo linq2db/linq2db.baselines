@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
-
+﻿-- PostgreSQL.18 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -7,8 +6,7 @@ FROM
 WHERE
 	p."PersonID" = 1 AND '123[]456' LIKE '%~[~]%' ESCAPE '~'
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM

@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	COUNT(*)
 FROM
@@ -9,7 +8,6 @@ WHERE
 	Substr([r].[Diagnosis], -11) = 'Persecution'
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	COUNT(*)
 FROM
@@ -19,7 +17,6 @@ WHERE
 	Substr([r].[Diagnosis], -11) = 'persecution'
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	COUNT(*)
 FROM
@@ -28,7 +25,6 @@ WHERE
 	[r].[Diagnosis] LIKE '%persecution' ESCAPE '~'
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	COUNT(*)
 FROM

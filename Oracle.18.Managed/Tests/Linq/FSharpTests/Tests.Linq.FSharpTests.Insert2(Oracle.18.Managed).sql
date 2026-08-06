@@ -1,5 +1,4 @@
 ﻿-- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	MAX(t1."PersonID")
 FROM
@@ -31,9 +30,8 @@ VALUES
 )
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
-	p."PersonID" as ID,
+	p."PersonID",
 	p."FirstName",
 	p."MiddleName",
 	p."LastName",
@@ -45,7 +43,6 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"Person" t
 WHERE

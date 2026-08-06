@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`r`.`Id`,
 	`r`.`Column`,
@@ -10,7 +9,6 @@ WHERE
 	`r`.`ColumnNullable` IS NULL
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`r`.`Id`,
 	`r`.`Column`,
@@ -21,7 +19,6 @@ WHERE
 	`r`.`ColumnNullable` IS NULL
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DELETE  
 FROM
 	`TypeTable``2`
@@ -48,7 +45,6 @@ VALUES
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`r`.`Id`,
 	`r`.`Column`,
@@ -59,7 +55,6 @@ WHERE
 	`r`.`ColumnNullable` IS NULL
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DELETE  
 FROM
 	`TypeTable``2`
@@ -82,7 +77,6 @@ VALUES
 (@p1,@p2,@p3)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`r`.`Id`,
 	`r`.`Column`,
@@ -93,7 +87,6 @@ WHERE
 	`r`.`ColumnNullable` IS NULL
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DELETE  
 FROM
 	`TypeTable``2`
@@ -101,7 +94,6 @@ FROM
 INSERT BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`r`.`Id`,
 	`r`.`Column`,
@@ -112,7 +104,6 @@ WHERE
 	`r`.`ColumnNullable` IS NULL
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DELETE  
 FROM
 	`TypeTable``2`
@@ -120,7 +111,6 @@ FROM
 INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`r`.`Id`,
 	`r`.`Column`,
@@ -131,7 +121,6 @@ WHERE
 	`r`.`ColumnNullable` IS NULL
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Column`,
@@ -140,7 +129,6 @@ FROM
 	`TypeTable``2` `t1`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Column`,
@@ -149,7 +137,6 @@ FROM
 	`TypeTable``2` `t1`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DELETE  
 FROM
 	`TypeTable``2`
@@ -176,7 +163,6 @@ VALUES
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Column`,
@@ -185,7 +171,6 @@ FROM
 	`TypeTable``2` `t1`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DELETE  
 FROM
 	`TypeTable``2`
@@ -208,7 +193,6 @@ VALUES
 (@p1,@p2,@p3)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Column`,
@@ -217,7 +201,6 @@ FROM
 	`TypeTable``2` `t1`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DELETE  
 FROM
 	`TypeTable``2`
@@ -225,7 +208,6 @@ FROM
 INSERT BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Column`,
@@ -234,7 +216,6 @@ FROM
 	`TypeTable``2` `t1`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DELETE  
 FROM
 	`TypeTable``2`
@@ -242,7 +223,6 @@ FROM
 INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Column`,
@@ -251,7 +231,6 @@ FROM
 	`TypeTable``2` `t1`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`r`.`Id`,
 	`r`.`Column`,
@@ -262,7 +241,6 @@ WHERE
 	`r`.`ColumnNullable` IS NULL
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`r`.`Id`,
 	`r`.`Column`,
@@ -273,7 +251,6 @@ WHERE
 	`r`.`ColumnNullable` IS NULL
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DELETE  
 FROM
 	`TypeTable``2`
@@ -300,7 +277,6 @@ VALUES
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`r`.`Id`,
 	`r`.`Column`,
@@ -311,7 +287,6 @@ WHERE
 	`r`.`ColumnNullable` IS NULL
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DELETE  
 FROM
 	`TypeTable``2`
@@ -334,7 +309,6 @@ VALUES
 (@p1,@p2,@p3)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`r`.`Id`,
 	`r`.`Column`,
@@ -345,7 +319,6 @@ WHERE
 	`r`.`ColumnNullable` IS NULL
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DELETE  
 FROM
 	`TypeTable``2`
@@ -353,7 +326,6 @@ FROM
 INSERT BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`r`.`Id`,
 	`r`.`Column`,
@@ -364,7 +336,6 @@ WHERE
 	`r`.`ColumnNullable` IS NULL
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DELETE  
 FROM
 	`TypeTable``2`
@@ -372,7 +343,6 @@ FROM
 INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`r`.`Id`,
 	`r`.`Column`,
@@ -383,7 +353,6 @@ WHERE
 	`r`.`ColumnNullable` IS NULL
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Column`,
@@ -392,7 +361,6 @@ FROM
 	`TypeTable``2` `t1`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Column`,
@@ -401,7 +369,6 @@ FROM
 	`TypeTable``2` `t1`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DELETE  
 FROM
 	`TypeTable``2`
@@ -428,7 +395,6 @@ VALUES
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Column`,
@@ -437,7 +403,6 @@ FROM
 	`TypeTable``2` `t1`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DELETE  
 FROM
 	`TypeTable``2`
@@ -460,7 +425,6 @@ VALUES
 (@p1,@p2,@p3)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Column`,
@@ -469,7 +433,6 @@ FROM
 	`TypeTable``2` `t1`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DELETE  
 FROM
 	`TypeTable``2`
@@ -477,7 +440,6 @@ FROM
 INSERT BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Column`,
@@ -486,7 +448,6 @@ FROM
 	`TypeTable``2` `t1`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DELETE  
 FROM
 	`TypeTable``2`
@@ -494,7 +455,6 @@ FROM
 INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Column`,

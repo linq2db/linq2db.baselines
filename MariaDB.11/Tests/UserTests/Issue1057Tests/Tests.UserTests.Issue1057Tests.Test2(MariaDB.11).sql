@@ -54,7 +54,6 @@ VALUES
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`p`.`Id`,
 	`p`.`TargetName`,
@@ -66,7 +65,6 @@ WHERE
 	`p`.`TargetName` = 'bda.Requests'
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`p`.`TargetName`,
 	`p`.`Id`,

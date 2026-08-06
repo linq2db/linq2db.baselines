@@ -1,7 +1,6 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
-	p."PersonID" as ID,
+	p."PersonID",
 	p."FirstName",
 	p."LastName"
 FROM

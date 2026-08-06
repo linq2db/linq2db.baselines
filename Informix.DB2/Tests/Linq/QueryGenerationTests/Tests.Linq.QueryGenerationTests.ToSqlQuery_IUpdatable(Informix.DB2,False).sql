@@ -18,10 +18,9 @@ SET     @newValue = 123
 UPDATE
 	TableWithIdentity t1
 SET
-	"Value" = @newValue::Int
+	"Value" = @newValue
 
 -- Informix.DB2 Informix
-
 SELECT FIRST 2
 	t1.Id,
 	t1."Value"

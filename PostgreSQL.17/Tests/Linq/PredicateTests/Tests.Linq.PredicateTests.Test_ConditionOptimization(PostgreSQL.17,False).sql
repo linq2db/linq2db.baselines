@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1",
@@ -11,8 +10,7 @@ FROM
 WHERE
 	r."Value5" = 0 AND r."Value1" > r."Value4"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -22,8 +20,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1",
@@ -36,8 +33,7 @@ WHERE
 	(r."Value5" <> 0 OR r."Value5" IS NULL) AND r."Value1" > r."Value4" OR
 	r."Value1" <= r."Value4" OR r."Value4" IS NULL
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -47,8 +43,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1",
@@ -61,8 +56,7 @@ WHERE
 	r."Value5" > 0 AND r."Value1" > r."Value4" OR r."Value1" <= r."Value4" OR
 	r."Value4" IS NULL
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -72,8 +66,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1",
@@ -86,8 +79,7 @@ WHERE
 	r."Value5" >= 0 AND r."Value1" > r."Value4" OR r."Value1" <= r."Value4" OR
 	r."Value4" IS NULL
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -97,8 +89,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1",
@@ -110,8 +101,7 @@ FROM
 WHERE
 	r."Value5" < 0 AND r."Value1" > r."Value4"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -121,8 +111,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1",
@@ -134,8 +123,7 @@ FROM
 WHERE
 	r."Value5" <= 0 AND r."Value1" > r."Value4"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -145,8 +133,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1",
@@ -158,8 +145,7 @@ FROM
 WHERE
 	r."Value1" <= r."Value4" OR r."Value4" IS NULL OR r."Value5" = 1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -169,8 +155,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1",
@@ -182,8 +167,7 @@ FROM
 WHERE
 	r."Value1" > r."Value4" AND (r."Value5" <> 1 OR r."Value5" IS NULL)
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -193,8 +177,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1",
@@ -206,8 +189,7 @@ FROM
 WHERE
 	r."Value1" > r."Value4" AND r."Value5" > 1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -217,8 +199,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1",
@@ -230,8 +211,7 @@ FROM
 WHERE
 	r."Value1" <= r."Value4" OR r."Value4" IS NULL OR r."Value5" >= 1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -241,8 +221,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1",
@@ -254,8 +233,7 @@ FROM
 WHERE
 	r."Value1" > r."Value4" AND r."Value5" < 1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -265,8 +243,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1",
@@ -278,8 +255,7 @@ FROM
 WHERE
 	r."Value1" <= r."Value4" OR r."Value4" IS NULL OR r."Value5" <= 1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -289,8 +265,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1",
@@ -302,8 +277,7 @@ FROM
 WHERE
 	r."Value5" = 0 AND r."Value1" > r."Value4"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -313,8 +287,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1",
@@ -327,8 +300,7 @@ WHERE
 	(r."Value5" <> 0 OR r."Value5" IS NULL) AND r."Value1" > r."Value4" OR
 	r."Value1" <= r."Value4" OR r."Value4" IS NULL
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -338,8 +310,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1",
@@ -351,8 +322,7 @@ FROM
 WHERE
 	r."Value5" > 0 AND r."Value1" > r."Value4"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -362,8 +332,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1",
@@ -375,8 +344,7 @@ FROM
 WHERE
 	r."Value5" >= 0 AND r."Value1" > r."Value4"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -386,8 +354,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1",
@@ -399,8 +366,7 @@ FROM
 WHERE
 	r."Value5" < 0 AND r."Value1" > r."Value4"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -410,8 +376,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1",
@@ -423,8 +388,7 @@ FROM
 WHERE
 	r."Value5" <= 0 AND r."Value1" > r."Value4"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -434,8 +398,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1",
@@ -447,8 +410,7 @@ FROM
 WHERE
 	r."Value5" IS NULL OR r."Value1" <= r."Value4" OR r."Value4" IS NULL
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -458,8 +420,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1",
@@ -471,8 +432,7 @@ FROM
 WHERE
 	NOT (r."Value5" IS NULL OR r."Value1" <= r."Value4" OR r."Value4" IS NULL)
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -482,8 +442,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1",
@@ -495,8 +454,7 @@ FROM
 WHERE
 	1 = 0
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -506,8 +464,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1",
@@ -519,8 +476,7 @@ FROM
 WHERE
 	1 = 0
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -530,8 +486,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1",
@@ -543,8 +498,7 @@ FROM
 WHERE
 	1 = 0
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -554,8 +508,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1",
@@ -567,8 +520,7 @@ FROM
 WHERE
 	1 = 0
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -578,8 +530,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1",
@@ -594,8 +545,7 @@ WHERE
 		ELSE 0
 	END IS NULL
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -605,8 +555,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1",
@@ -621,8 +570,7 @@ WHERE
 		ELSE 0
 	END IS NOT NULL
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -632,8 +580,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1",
@@ -645,8 +592,7 @@ FROM
 WHERE
 	1 = 0
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -656,8 +602,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1",
@@ -669,8 +614,7 @@ FROM
 WHERE
 	1 = 0
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -680,8 +624,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1",
@@ -693,8 +636,7 @@ FROM
 WHERE
 	1 = 0
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -704,8 +646,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1",
@@ -717,8 +658,7 @@ FROM
 WHERE
 	1 = 0
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -728,8 +668,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1",
@@ -741,8 +680,7 @@ FROM
 WHERE
 	r."Value5" = 0 AND (r."Value1" <= r."Value4" OR r."Value4" IS NULL)
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -752,8 +690,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1",
@@ -765,8 +702,7 @@ FROM
 WHERE
 	r."Value1" > r."Value4" OR (r."Value5" <> 0 OR r."Value5" IS NULL) AND (r."Value1" <= r."Value4" OR r."Value4" IS NULL)
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -776,8 +712,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1",
@@ -789,8 +724,7 @@ FROM
 WHERE
 	r."Value1" > r."Value4" OR r."Value5" > 0 AND (r."Value1" <= r."Value4" OR r."Value4" IS NULL)
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -800,8 +734,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1",
@@ -813,8 +746,7 @@ FROM
 WHERE
 	r."Value1" > r."Value4" OR r."Value5" >= 0 AND (r."Value1" <= r."Value4" OR r."Value4" IS NULL)
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -824,8 +756,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1",
@@ -837,8 +768,7 @@ FROM
 WHERE
 	r."Value5" < 0 AND (r."Value1" <= r."Value4" OR r."Value4" IS NULL)
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -848,8 +778,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1",
@@ -861,8 +790,7 @@ FROM
 WHERE
 	r."Value5" <= 0 AND (r."Value1" <= r."Value4" OR r."Value4" IS NULL)
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -872,8 +800,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1",
@@ -885,8 +812,7 @@ FROM
 WHERE
 	r."Value1" > r."Value4" OR r."Value5" = 1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -896,8 +822,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1",
@@ -910,8 +835,7 @@ WHERE
 	(r."Value1" <= r."Value4" OR r."Value4" IS NULL) AND
 	(r."Value5" <> 1 OR r."Value5" IS NULL)
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -921,8 +845,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1",
@@ -935,8 +858,7 @@ WHERE
 	(r."Value1" <= r."Value4" OR r."Value4" IS NULL) AND
 	r."Value5" > 1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -946,8 +868,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1",
@@ -959,8 +880,7 @@ FROM
 WHERE
 	r."Value1" > r."Value4" OR r."Value5" >= 1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -970,8 +890,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1",
@@ -984,8 +903,7 @@ WHERE
 	(r."Value1" <= r."Value4" OR r."Value4" IS NULL) AND
 	r."Value5" < 1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -995,8 +913,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1",
@@ -1008,8 +925,7 @@ FROM
 WHERE
 	r."Value1" > r."Value4" OR r."Value5" <= 1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -1019,8 +935,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1",
@@ -1032,8 +947,7 @@ FROM
 WHERE
 	r."Value5" = 0 AND (r."Value1" <= r."Value4" OR r."Value4" IS NULL)
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -1043,8 +957,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1",
@@ -1056,8 +969,7 @@ FROM
 WHERE
 	r."Value1" > r."Value4" OR (r."Value5" <> 0 OR r."Value5" IS NULL) AND (r."Value1" <= r."Value4" OR r."Value4" IS NULL)
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -1067,8 +979,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1",
@@ -1080,8 +991,7 @@ FROM
 WHERE
 	r."Value5" > 0 AND (r."Value1" <= r."Value4" OR r."Value4" IS NULL)
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -1091,8 +1001,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1",
@@ -1104,8 +1013,7 @@ FROM
 WHERE
 	r."Value5" >= 0 AND (r."Value1" <= r."Value4" OR r."Value4" IS NULL)
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -1115,8 +1023,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1",
@@ -1128,8 +1035,7 @@ FROM
 WHERE
 	r."Value5" < 0 AND (r."Value1" <= r."Value4" OR r."Value4" IS NULL)
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -1139,8 +1045,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1",
@@ -1152,8 +1057,7 @@ FROM
 WHERE
 	r."Value5" <= 0 AND (r."Value1" <= r."Value4" OR r."Value4" IS NULL)
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -1163,8 +1067,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1",
@@ -1176,8 +1079,7 @@ FROM
 WHERE
 	r."Value1" > r."Value4" OR r."Value5" IS NULL
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -1187,8 +1089,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1",
@@ -1200,8 +1101,7 @@ FROM
 WHERE
 	NOT (r."Value1" > r."Value4" AND r."Value4" IS NOT NULL OR r."Value5" IS NULL)
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -1211,8 +1111,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1",
@@ -1224,8 +1123,7 @@ FROM
 WHERE
 	1 = 0
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -1235,8 +1133,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1",
@@ -1248,8 +1145,7 @@ FROM
 WHERE
 	1 = 0
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -1259,8 +1155,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1",
@@ -1272,8 +1167,7 @@ FROM
 WHERE
 	1 = 0
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -1283,8 +1177,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1",
@@ -1296,8 +1189,7 @@ FROM
 WHERE
 	1 = 0
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -1307,8 +1199,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1",
@@ -1323,8 +1214,7 @@ WHERE
 		ELSE r."Value5"
 	END IS NULL
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -1334,8 +1224,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1",
@@ -1350,8 +1239,7 @@ WHERE
 		ELSE r."Value5"
 	END IS NOT NULL
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -1361,8 +1249,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1",
@@ -1374,8 +1261,7 @@ FROM
 WHERE
 	1 = 0
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -1385,8 +1271,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1",
@@ -1398,8 +1283,7 @@ FROM
 WHERE
 	1 = 0
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -1409,8 +1293,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1",
@@ -1422,8 +1305,7 @@ FROM
 WHERE
 	1 = 0
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -1433,8 +1315,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value1",
@@ -1446,8 +1327,7 @@ FROM
 WHERE
 	1 = 0
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",

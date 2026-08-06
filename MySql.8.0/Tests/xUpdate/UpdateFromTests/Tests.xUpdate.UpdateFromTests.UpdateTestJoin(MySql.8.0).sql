@@ -19,7 +19,6 @@ WHERE
 	`t`.`id` <> @someId
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`v`.`id`,
 	`v`.`Value1`,

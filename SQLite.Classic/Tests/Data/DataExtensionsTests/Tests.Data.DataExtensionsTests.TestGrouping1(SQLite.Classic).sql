@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT
 	[m_1].[Key_1],
 	[d].[FirstName],
@@ -17,7 +16,6 @@ FROM
 		INNER JOIN [Person] [d] ON [m_1].[Key_1] = [d].[FirstName]
 
 -- SQLite.Classic SQLite
-
 SELECT DISTINCT
 	[t1].[FirstName]
 FROM

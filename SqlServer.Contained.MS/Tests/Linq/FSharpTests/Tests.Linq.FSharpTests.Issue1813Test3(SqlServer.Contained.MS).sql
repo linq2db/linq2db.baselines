@@ -50,7 +50,6 @@ VALUES
 )
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[after_1].[Id],
 	[after_1].[Name],

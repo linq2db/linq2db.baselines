@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 SELECT
 	"task_1"."Description",
 	"party_1"."Name"

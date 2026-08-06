@@ -19,7 +19,6 @@ WHERE
 	)
 
 -- SqlCe
-
 SELECT
 	[x].[id],
 	[x].[service_id],
@@ -30,7 +29,6 @@ WHERE
 	[x].[is_deleted] = 1 AND [x].[service_id] = 'TestProcessService'
 
 -- SqlCe
-
 SELECT
 	[x].[id],
 	[x].[service_id],

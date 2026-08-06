@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016
-
 /* query 1
 query 2 */
 SELECT

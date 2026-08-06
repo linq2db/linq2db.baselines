@@ -1,5 +1,4 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
-
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "Drop''ApostropheTest"';
 EXCEPTION

@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	CAST("p"."MoneyValue" AS Double)
 FROM

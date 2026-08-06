@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	e.Id
 FROM
@@ -8,7 +7,6 @@ WHERE
 	(concat(Coalesce(e.Str1, ''), ' ', Coalesce(e.StrReq, ''), '!')) = 'John Programmer!'
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Str1,

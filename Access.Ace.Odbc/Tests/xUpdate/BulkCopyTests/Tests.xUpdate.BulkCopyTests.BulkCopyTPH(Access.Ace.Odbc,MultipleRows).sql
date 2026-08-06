@@ -66,7 +66,6 @@ VALUES
 )
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Discriminator],
 	[t1].[Id],
@@ -80,7 +79,6 @@ ORDER BY
 	[t1].[Id]
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT TOP 2
 	[x].[Discriminator],
 	[x].[Id],
@@ -94,7 +92,6 @@ WHERE
 	[x].[Discriminator] = 1
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT TOP 2
 	[x].[Discriminator],
 	[x].[Id],
@@ -108,7 +105,6 @@ WHERE
 	[x].[Discriminator] = 2
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT TOP 2
 	[x].[Discriminator],
 	[x].[Id],
@@ -122,7 +118,6 @@ WHERE
 	[x].[Discriminator] = 3
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT TOP 2
 	[x].[Discriminator],
 	[x].[Id],
@@ -136,7 +131,6 @@ WHERE
 	[x].[Value1] = 'Str1'
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT TOP 2
 	[x].[Discriminator],
 	[x].[Id],
@@ -150,7 +144,6 @@ WHERE
 	[x].[Value2] = 'Str2'
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT TOP 2
 	[x].[Discriminator],
 	[x].[Id],

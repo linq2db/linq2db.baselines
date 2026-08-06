@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 WITH CTE_1 (Obj_Operator)
 AS
 (
@@ -15,7 +14,6 @@ FROM
 LIMIT 1
 
 -- DuckDB
-
 SELECT
 	person_1.LastName
 FROM

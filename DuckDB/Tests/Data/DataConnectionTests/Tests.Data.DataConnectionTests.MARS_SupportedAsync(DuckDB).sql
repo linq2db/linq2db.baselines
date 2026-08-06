@@ -1,12 +1,10 @@
 ﻿-- DuckDB
-
 SELECT
 	COUNT(*)
 FROM
 	Person t1
 
 -- DuckDB
-
 SELECT
 	t1.FirstName,
 	t1.PersonID,

@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`g_1`.`Id`,
 	GROUP_CONCAT(DISTINCT Coalesce(`g_1`.`NullableValue`, '') SEPARATOR ', '),
@@ -15,7 +14,6 @@ ORDER BY
 	`g_1`.`Id`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`t1`.`PK`,
 	`t1`.`Id`,

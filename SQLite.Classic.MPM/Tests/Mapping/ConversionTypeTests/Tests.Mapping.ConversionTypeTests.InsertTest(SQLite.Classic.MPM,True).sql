@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 INSERT INTO [TrimTestTable]
 (
 	[ID],
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 INSERT INTO [TrimTestTable]
 (
 	[ID],
@@ -25,7 +23,6 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 INSERT INTO [TrimTestTable]
 (
 	[ID],
@@ -38,7 +35,6 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[r].[ID],
 	[r].[Data]
@@ -48,7 +44,6 @@ ORDER BY
 	[r].[ID]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[r].[ID],
 	[r].[Data]

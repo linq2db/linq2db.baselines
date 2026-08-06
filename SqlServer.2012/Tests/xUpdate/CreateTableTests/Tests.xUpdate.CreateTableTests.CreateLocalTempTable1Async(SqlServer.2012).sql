@@ -1,9 +1,7 @@
 ﻿-- SqlServer.2012
-
 DROP TABLE [tempdb]..[#TestTable]
 
 -- SqlServer.2012
-
 CREATE TABLE [tempdb]..[#TestTable]
 (
 	[ID]        Int            NOT NULL,
@@ -13,7 +11,6 @@ CREATE TABLE [tempdb]..[#TestTable]
 )
 
 -- SqlServer.2012
-
 SELECT
 	[t1].[ID],
 	[t1].[Field1],
@@ -23,6 +20,5 @@ FROM
 	[tempdb]..[#TestTable] [t1]
 
 -- SqlServer.2012
-
 DROP TABLE [tempdb]..[#TestTable]
 

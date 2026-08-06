@@ -1,12 +1,10 @@
 ﻿-- DuckDB
-
 DELETE FROM
 	Person t1
 WHERE
 	t1.PersonID > 4
 
 -- DuckDB
-
 INSERT INTO Person
 (
 	FirstName,
@@ -23,7 +21,6 @@ RETURNING
 	PersonID
 
 -- DuckDB
-
 SELECT
 	p.FirstName,
 	p.PersonID,
@@ -37,7 +34,6 @@ WHERE
 LIMIT 2
 
 -- DuckDB
-
 DELETE FROM
 	Person t1
 WHERE

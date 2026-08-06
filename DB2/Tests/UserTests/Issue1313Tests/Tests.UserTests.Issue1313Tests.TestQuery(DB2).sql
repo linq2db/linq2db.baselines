@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 INSERT INTO "ValueItem"
 (
 	"Value"
@@ -10,7 +9,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"row_1"."Value"
 FROM

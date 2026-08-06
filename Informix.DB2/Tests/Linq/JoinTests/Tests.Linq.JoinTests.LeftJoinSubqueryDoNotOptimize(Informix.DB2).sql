@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	p.PersonID,
 	Nvl(m_2.MiddleName, 'default2')
@@ -14,7 +13,6 @@ FROM
 		) m_2 ON p.PersonID = m_2.c1
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.FirstName,
 	t1.PersonID,

@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 CREATE TABLE [FluentTemp_UpdateAsync]
 (
 	[ID]       Int          NOT NULL,
@@ -45,6 +44,5 @@ WHERE
 	[t].[ID] = 1
 
 -- Access.Jet.Odbc AccessODBC
-
 DROP TABLE [FluentTemp_UpdateAsync]
 

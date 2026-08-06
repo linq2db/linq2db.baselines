@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	m_1.Id,
 	d.EventSchedulePersonId,
@@ -13,7 +12,6 @@ WHERE
 	m_1.EventId = 1 AND m_1.IsActive
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	p.Id
 FROM

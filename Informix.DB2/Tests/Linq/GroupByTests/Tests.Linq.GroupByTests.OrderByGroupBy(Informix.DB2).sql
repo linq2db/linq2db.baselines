@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT DISTINCT
 	c2.ParentID
 FROM

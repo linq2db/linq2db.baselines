@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -10,7 +9,6 @@ FROM
 		INNER JOIN [LineEntity] [d] ON [m_1].[Id] = [d].[TransactionId]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[x].[Id],
 	[x].[ValidOn]

@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	p.PersonID,
 	pt.PersonID,

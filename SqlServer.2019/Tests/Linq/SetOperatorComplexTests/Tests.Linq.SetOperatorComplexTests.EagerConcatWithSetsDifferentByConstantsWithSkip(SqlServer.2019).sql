@@ -74,7 +74,6 @@ ORDER BY
 OFFSET @skip ROWS
 
 -- SqlServer.2019
-
 SELECT
 	[m_1].[BookId],
 	[a_Author].[AuthorId],
@@ -85,7 +84,6 @@ FROM
 		LEFT JOIN [Author] [a_Author] ON [d].[FkAuthorId] = [a_Author].[AuthorId]
 
 -- SqlServer.2019
-
 SELECT
 	[t1].[Discriminator],
 	[t1].[BookId],

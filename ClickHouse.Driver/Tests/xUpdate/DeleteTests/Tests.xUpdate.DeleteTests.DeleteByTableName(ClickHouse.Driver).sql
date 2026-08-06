@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 INSERT INTO xxPerson
 (
 	FirstName,
@@ -18,14 +17,12 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	COUNT(*)
 FROM
 	xxPerson t1
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.FirstName,
 	t1.PersonID,
@@ -37,14 +34,12 @@ FROM
 LIMIT 2
 
 -- ClickHouse.Driver ClickHouse
-
 ALTER TABLE
 	xxPerson
 DELETE WHERE
 	PersonID = 0
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	COUNT(*)
 FROM

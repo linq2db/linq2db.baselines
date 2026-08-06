@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	s.Id
 FROM
@@ -9,7 +8,6 @@ WHERE
 LIMIT 1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	s.Id
 FROM
@@ -19,7 +17,6 @@ WHERE
 LIMIT 1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	s.Id
 FROM
@@ -29,7 +26,6 @@ WHERE
 LIMIT 1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	s.Id
 FROM
@@ -39,7 +35,6 @@ WHERE
 LIMIT 1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	s.Id
 FROM

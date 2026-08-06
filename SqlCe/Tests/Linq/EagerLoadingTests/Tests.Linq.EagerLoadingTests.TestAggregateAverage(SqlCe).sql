@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[t3].[Average]
 FROM
@@ -32,7 +31,6 @@ WHERE
 	[t1].[Count_1] > 1
 
 -- SqlCe
-
 SELECT
 	[m_1].[Id1],
 	[d].[DetailId],
@@ -48,11 +46,10 @@ FROM
 		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
 
 -- SqlCe
-
 SELECT
 	[t1].[Id1],
 	[t1].[Id2],
-	[t1].[Value] as [Value_1],
+	[t1].[Value],
 	[t1].[ByteValues]
 FROM
 	[MasterClass] [t1]

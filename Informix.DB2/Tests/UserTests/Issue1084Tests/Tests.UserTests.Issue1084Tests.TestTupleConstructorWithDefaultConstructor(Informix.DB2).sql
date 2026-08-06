@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	BitAnd(k_1.StatusBitmask, 128),
 	BitAnd(g_1.StatusBitmask, 128)

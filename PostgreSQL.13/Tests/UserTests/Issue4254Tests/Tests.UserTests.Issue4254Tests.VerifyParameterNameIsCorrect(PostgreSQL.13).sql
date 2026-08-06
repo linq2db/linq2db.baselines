@@ -1,17 +1,13 @@
-﻿-- PostgreSQL.13 PostgreSQL
-
+﻿-- PostgreSQL.13 PostgreSQL12
 DROP TABLE IF EXISTS issue_4254_media_item_to_media_item_categories
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 DROP TABLE IF EXISTS issue_4254_media_item_user_share
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 DROP TABLE IF EXISTS issue_4254_media_items
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 CREATE TABLE issue_4254_media_items
 (
 	id uuid NOT NULL,
@@ -19,8 +15,7 @@ CREATE TABLE issue_4254_media_items
 	CONSTRAINT "PK_issue_4254_media_items" PRIMARY KEY (id)
 )
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 CREATE TABLE issue_4254_media_item_user_share
 (
 	id            uuid      NOT NULL,
@@ -32,8 +27,7 @@ CREATE TABLE issue_4254_media_item_user_share
 	CONSTRAINT "PK_issue_4254_media_item_user_share" PRIMARY KEY (id)
 )
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 CREATE TABLE issue_4254_media_item_to_media_item_categories
 (
 	id            uuid NOT NULL,
@@ -43,7 +37,7 @@ CREATE TABLE issue_4254_media_item_to_media_item_categories
 	CONSTRAINT "PK_issue_4254_media_item_to_media_item_categories" PRIMARY KEY (id)
 )
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL12
 DECLARE @userId Uuid -- Guid
 SET     @userId = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'::uuid
 DECLARE @now Timestamp -- DateTime2
@@ -75,7 +69,7 @@ WHERE
 			y_1.expires_at > :now
 	)
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL12
 DECLARE @now Timestamp -- DateTime2
 SET     @now = '2020-02-29 17:54:55.123'::timestamp
 DECLARE @userId Uuid -- Guid
@@ -113,7 +107,7 @@ WHERE
 			y_2.expires_at > :now
 	)
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL12
 DECLARE @userId Uuid -- Guid
 SET     @userId = 'a948600d-de21-4f74-8ac2-9516b287076e'::uuid
 DECLARE @now Timestamp -- DateTime2
@@ -145,7 +139,7 @@ WHERE
 			y_1.expires_at > :now
 	)
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL12
 DECLARE @now Timestamp -- DateTime2
 SET     @now = '2020-02-29 17:54:55.123'::timestamp
 DECLARE @userId Uuid -- Guid
@@ -183,15 +177,12 @@ WHERE
 			y_2.expires_at > :now
 	)
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 DROP TABLE IF EXISTS issue_4254_media_item_to_media_item_categories
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 DROP TABLE IF EXISTS issue_4254_media_item_user_share
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 DROP TABLE IF EXISTS issue_4254_media_items
 

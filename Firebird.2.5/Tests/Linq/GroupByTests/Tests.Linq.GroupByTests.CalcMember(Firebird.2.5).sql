@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	"groupedData_1"."Key_1",
 	COUNT(*)

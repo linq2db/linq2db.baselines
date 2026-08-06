@@ -7,7 +7,7 @@ SET     @p = 1
 UPDATE
 	LinqDataTypes t
 SET
-	BinaryValue = @BinaryValue::BYTE
+	BinaryValue = @BinaryValue
 WHERE
 	t.ID = @p
 
@@ -20,12 +20,11 @@ SET     @p = 2
 UPDATE
 	LinqDataTypes t
 SET
-	BinaryValue = @BinaryValue::BYTE
+	BinaryValue = @BinaryValue
 WHERE
 	t.ID = @p
 
 -- Informix.DB2 Informix
-
 SELECT
 	t.ID,
 	t.MoneyValue,

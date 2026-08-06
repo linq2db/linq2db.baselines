@@ -1,5 +1,4 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	CAST(c_1."Id" AS VarChar(255)),
 	c_1."Name"

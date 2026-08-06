@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	maxOrNull(c_1.ParentID)
 FROM
@@ -8,7 +7,6 @@ WHERE
 	c_1.ParentID = 1
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	maxOrNull(c_1.ParentID)
 FROM

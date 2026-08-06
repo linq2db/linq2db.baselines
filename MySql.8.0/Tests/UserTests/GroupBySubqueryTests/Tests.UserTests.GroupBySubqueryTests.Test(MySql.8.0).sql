@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT DISTINCT
 	`a_Ref4`.`Field6`,
 	`a_Ref3`.`Field4`,
@@ -15,7 +14,6 @@ WHERE
 	`t1`.`Field3` IS NOT NULL
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`g_2`.`Field6`,
 	`g_2`.`Field4`,

@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 INSERT INTO SimpleBulkCopyTable
 (
 	Id
@@ -10,7 +9,6 @@ VALUES
 )
 
 -- ClickHouse.MySql ClickHouse
-
 INSERT INTO SimpleBulkCopyTable
 (
 	Id

@@ -1,9 +1,7 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DROP TABLE IF EXISTS `DropTableTest`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	DATABASE()
 FROM
@@ -11,7 +9,6 @@ FROM
 LIMIT 1
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 CREATE TABLE `DropTableTest`
 (
 	`ID` INT NOT NULL,
@@ -20,7 +17,6 @@ CREATE TABLE `DropTableTest`
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `testdata`.`DropTableTest`
 (
 	`ID`
@@ -31,18 +27,15 @@ VALUES
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`ID`
 FROM
 	`testdata`.`DropTableTest` `t1`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DROP TABLE `testdata`.`DropTableTest`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`ID`
 FROM

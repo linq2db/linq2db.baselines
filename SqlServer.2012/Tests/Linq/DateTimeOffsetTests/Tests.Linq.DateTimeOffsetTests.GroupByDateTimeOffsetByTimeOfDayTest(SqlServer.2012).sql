@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012
-
 SELECT
 	[t1].[Key_1],
 	COUNT(*)

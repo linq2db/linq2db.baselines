@@ -16,7 +16,6 @@ VALUES
 )
 
 -- SqlCe
-
 UPDATE
 	[Parent]
 SET
@@ -25,7 +24,6 @@ WHERE
 	[Parent].[ParentID] = 1010
 
 -- SqlCe
-
 SELECT TOP (1)
 	[t].[ParentID],
 	[t].[Value1]

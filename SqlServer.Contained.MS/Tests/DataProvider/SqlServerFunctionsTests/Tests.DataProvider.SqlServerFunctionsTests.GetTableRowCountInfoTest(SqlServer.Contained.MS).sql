@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[p].[object_id],
 	OBJECT_SCHEMA_NAME([p].[object_id]),
@@ -33,7 +32,6 @@ VALUES
 )
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[p].[object_id],
 	OBJECT_SCHEMA_NAME([p].[object_id]),
@@ -51,7 +49,6 @@ ORDER BY
 
 RollbackTransaction
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[p].[object_id],
 	OBJECT_SCHEMA_NAME([p].[object_id]),

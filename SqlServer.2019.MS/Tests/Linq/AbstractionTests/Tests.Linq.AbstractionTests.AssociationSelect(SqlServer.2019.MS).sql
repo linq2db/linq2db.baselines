@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[m_1].[Id],
 	[d_1].[Id_1],
@@ -31,7 +30,6 @@ FROM
 		) [d_1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -39,7 +37,6 @@ FROM
 	[SampleClass1] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[m_1].[Id],
 	[d_1].[Id_1],
@@ -71,7 +68,6 @@ FROM
 		) [d_1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]

@@ -1,9 +1,8 @@
 ﻿-- SqlCe
-
 SELECT
 	[e].[Id],
 	[e].[RecSrc],
-	[e].[Value] as [Value_1]
+	[e].[Value]
 FROM
 	[Entry] [e]
 WHERE

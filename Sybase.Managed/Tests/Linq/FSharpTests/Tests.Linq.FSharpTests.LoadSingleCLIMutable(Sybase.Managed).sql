@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT TOP 2
 	[p].[PersonID],
 	[p].[FirstName],
@@ -15,7 +14,6 @@ WHERE
 	[p].[PersonID] = 1
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 2
 	[p].[PersonID],
 	[p].[FirstName],

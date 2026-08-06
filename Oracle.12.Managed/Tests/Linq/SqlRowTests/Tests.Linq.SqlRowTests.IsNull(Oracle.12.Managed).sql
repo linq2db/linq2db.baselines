@@ -1,5 +1,4 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(*)
 FROM
@@ -8,7 +7,6 @@ WHERE
 	1 = 0
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(*)
 FROM
@@ -17,7 +15,6 @@ WHERE
 	1 = 0
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(*)
 FROM

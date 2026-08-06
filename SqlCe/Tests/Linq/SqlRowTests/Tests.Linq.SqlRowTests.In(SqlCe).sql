@@ -1,16 +1,14 @@
 ﻿-- SqlCe
-
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Ints] [i]
 WHERE
 	[i].[One] = 1 AND [i].[Two] = [i].[One] * 2
 
 -- SqlCe
-
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Ints] [i]
 WHERE
@@ -19,9 +17,8 @@ WHERE
 	[i].[One] >= NULL AND [i].[Two] = -1 AND [i].[Three] = [i].[Four]
 
 -- SqlCe
-
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Ints] [i]
 WHERE
@@ -30,9 +27,8 @@ WHERE
 	[i].[One] >= NULL AND [i].[Two] = 2
 
 -- SqlCe
-
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Ints] [i]
 WHERE

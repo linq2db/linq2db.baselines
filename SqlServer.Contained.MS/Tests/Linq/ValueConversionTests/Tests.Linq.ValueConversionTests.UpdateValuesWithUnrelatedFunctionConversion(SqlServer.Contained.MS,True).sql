@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained.MS SqlServer.2019
-
 UPDATE
 	[TableWithConverterValue]
 SET
@@ -8,7 +7,6 @@ WHERE
 	[TableWithConverterValue].[Id] = 1
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT TOP (2)
 	[x].[Id],
 	[x].[NoConversion],

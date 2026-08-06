@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name Text(5) -- String
@@ -19,8 +19,7 @@ VALUES
 	:Age
 )
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t."Id",
 	t."Name",
@@ -31,7 +30,7 @@ WHERE
 	t."Id" = 1
 LIMIT 1
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL12
 DECLARE @Name Text(6) -- String
 SET     @Name = 'Franki'
 DECLARE @Age Integer -- Int32
@@ -47,8 +46,7 @@ SET
 WHERE
 	"PR_1598_Update_Table"."Id" = :Id
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t."Id",
 	t."Name",
@@ -59,7 +57,7 @@ WHERE
 	t."Id" = 1
 LIMIT 1
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL12
 DECLARE @Name Text(4) -- String
 SET     @Name = 'Jack'
 DECLARE @Id Integer -- Int32
@@ -72,8 +70,7 @@ SET
 WHERE
 	"PR_1598_Update_Table"."Id" = :Id
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t."Id",
 	t."Name",

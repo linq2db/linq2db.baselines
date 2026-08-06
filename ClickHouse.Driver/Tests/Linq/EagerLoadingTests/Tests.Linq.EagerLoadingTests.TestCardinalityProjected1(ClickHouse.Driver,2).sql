@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	m_1.Id,
 	d.Id,
@@ -15,7 +14,6 @@ FROM
 		INNER JOIN EntityD d ON m_1.Id = d.FK
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	e.Id,
 	a_ObjectB.Id

@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	tupledArg.ParentID,
 	tupledArg.Value1,

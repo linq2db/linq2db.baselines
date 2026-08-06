@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."ID",
 	"t1"."Value_1"
@@ -13,7 +12,6 @@ FROM
 	) "t1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."ID",
 	"t1"."Value_1"

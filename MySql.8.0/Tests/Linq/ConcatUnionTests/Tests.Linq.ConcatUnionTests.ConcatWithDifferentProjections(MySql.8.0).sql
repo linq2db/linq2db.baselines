@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`p1`.`ParentID`,
 	`p1`.`ParentID`,
@@ -15,7 +14,6 @@ FROM
 	`Parent` `p2`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`ParentID`,
 	`t1`.`Value1`

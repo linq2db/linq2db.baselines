@@ -1,65 +1,49 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 SELECT Cast('1' as char)
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT Cast('1' as char)
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT Cast('1' as char(1))
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT Cast('1' as char(1))
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT Cast('1' as varchar)
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT Cast('1' as varchar)
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT Cast('1' as varchar(20))
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT Cast('1' as varchar(20))
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT Cast('1' as nchar)
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT Cast('1' as nchar)
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT Cast('1' as nchar(20))
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT Cast('1' as nchar(20))
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT Cast('1' as nvarchar)
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT Cast('1' as nvarchar)
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT Cast('1' as nvarchar(20))
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT Cast('1' as nvarchar(20))
 
 -- SqlServer.SA SqlServer.2019

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[t1].[ID],
 	[t1].[MoneyValue],
@@ -13,7 +12,6 @@ FROM
 	[LinqDataTypes] [t1]
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[e].[ID],
 	[p].[SmallIntValue]

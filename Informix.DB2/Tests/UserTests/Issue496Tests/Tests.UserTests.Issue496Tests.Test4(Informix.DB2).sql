@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	m_1.ParentID,
 	d.ChildID,
@@ -14,7 +13,6 @@ FROM
 		INNER JOIN Child d ON m_1.ParentID::BigInt = d.ParentID
 
 -- Informix.DB2 Informix
-
 SELECT
 	p.ParentID
 FROM

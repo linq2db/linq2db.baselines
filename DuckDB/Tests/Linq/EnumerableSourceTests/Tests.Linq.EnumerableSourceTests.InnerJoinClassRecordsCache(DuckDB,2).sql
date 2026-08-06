@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	p.FirstName,
 	p.PersonID,
@@ -13,7 +12,6 @@ FROM
 		) n(ID) ON p.PersonID = n.ID
 
 -- DuckDB
-
 SELECT
 	p.FirstName,
 	p.PersonID,

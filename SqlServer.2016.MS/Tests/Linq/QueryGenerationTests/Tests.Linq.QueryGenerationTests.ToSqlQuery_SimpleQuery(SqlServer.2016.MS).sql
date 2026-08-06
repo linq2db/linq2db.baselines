@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],
@@ -12,7 +11,6 @@ WHERE
 	[p].[PersonID] = 1
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT TOP (2)
 	[p].[FirstName],
 	[p].[PersonID],

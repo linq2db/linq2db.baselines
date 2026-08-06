@@ -1,13 +1,12 @@
 ﻿-- SqlCe
-
 SELECT
 	[t2].[PersonID],
 	[t2].[FirstName],
 	[t2].[LastName],
 	[t2].[MiddleName],
 	[t2].[Gender],
-	[t2].[LastName] + ', ' + [t2].[FirstName] as [FullName],
-	[t2].[LastName] + ', ' + [t2].[FirstName] as [AsSqlFullName],
+	[t2].[LastName] + ', ' + [t2].[FirstName],
+	[t2].[LastName] + ', ' + [t2].[FirstName],
 	[t1].[DoctorCount]
 FROM
 	[Person] [t2]
@@ -21,7 +20,6 @@ FROM
 		) [t1]
 
 -- SqlCe
-
 SELECT
 	[i_1].[PersonID],
 	[i_1].[FirstName],

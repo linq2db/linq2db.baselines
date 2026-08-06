@@ -91,7 +91,6 @@ ORDER BY
 	[d].[count_1] DESC
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[group_1].[key_1]
 FROM

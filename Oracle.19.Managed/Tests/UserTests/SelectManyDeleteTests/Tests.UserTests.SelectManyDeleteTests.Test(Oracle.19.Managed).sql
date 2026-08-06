@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"GrandChild" t1
 WHERE

@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	COUNT(*)
 FROM
@@ -8,7 +7,6 @@ WHERE
 	"i"."Two" > "i"."One" * 2 OR "i"."Two" = "i"."One" * 2 AND "i"."Three" >= "i"."Four" - 1
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	COUNT(*)
 FROM
@@ -17,7 +15,6 @@ WHERE
 	"i"."Four" >= "i"."Three"
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	COUNT(*)
 FROM
@@ -26,7 +23,6 @@ WHERE
 	"i"."Two" > "i"."Five" OR "i"."Two" = "i"."Five" AND "i"."Four" >= "i"."Three"
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	COUNT(*)
 FROM
@@ -35,7 +31,6 @@ WHERE
 	"i"."Nil" > "i"."Two" OR "i"."Nil" = "i"."Two" AND "i"."Four" >= "i"."Three"
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	COUNT(*)
 FROM

@@ -1,12 +1,10 @@
 ﻿-- Firebird.3 Firebird3
-
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TempTable')) THEN
 		EXECUTE STATEMENT 'DROP TABLE "TempTable"';
 END
 
 -- Firebird.3 Firebird3
-
 EXECUTE BLOCK AS BEGIN
 	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TempTable')) THEN
 		EXECUTE STATEMENT '
@@ -20,7 +18,6 @@ EXECUTE BLOCK AS BEGIN
 END
 
 -- Firebird.3 Firebird3
-
 INSERT INTO "TempTable"
 (
 	ID
@@ -31,14 +28,12 @@ FROM
 	"Parent" "p"
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t1".ID
 FROM
 	"TempTable" "t1"
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t".ID
 FROM
@@ -46,7 +41,6 @@ FROM
 		INNER JOIN "TempTable" "t" ON "p"."ParentID" = "t".ID
 
 -- Firebird.3 Firebird3
-
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TempTable')) THEN
 		EXECUTE STATEMENT 'DROP TABLE "TempTable"';

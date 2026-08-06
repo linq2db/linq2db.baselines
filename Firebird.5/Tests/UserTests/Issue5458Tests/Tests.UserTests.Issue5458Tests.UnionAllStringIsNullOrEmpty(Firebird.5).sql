@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Value_1" IS NULL OR CHAR_LENGTH("t1"."Value_1") = 0

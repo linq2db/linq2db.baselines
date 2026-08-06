@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT
 	[g_1].[Title],
 	COUNT(DISTINCT [g_1].[Title])

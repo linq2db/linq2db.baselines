@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],
@@ -18,7 +17,6 @@ FROM
 			SELECT 'Doe') [n] ON [p].[LastName] = [n].[item]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],

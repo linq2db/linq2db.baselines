@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 DECLARE @Value2 Varchar(21) -- String
 SET     @Value2 = '[{"Value":"updated"}]'
 DECLARE @EnumWithNull Varchar -- String
@@ -16,8 +16,7 @@ SET
 WHERE
 	"ValueConversion"."Id" = 1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	e."Id",
 	e."Value1",
@@ -35,7 +34,7 @@ WHERE
 	e."Id" = 1
 LIMIT 1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 DECLARE @Value1 Varchar(20) -- String
 SET     @Value1 = '{"some":"updated2}"}'
 DECLARE @Value2 Varchar(22) -- String
@@ -72,8 +71,7 @@ SET
 WHERE
 	"ValueConversion"."Id" = :Id
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	e."Id",
 	e."Value1",
@@ -91,7 +89,7 @@ WHERE
 	e."Id" = 2
 LIMIT 1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 DECLARE @Value1 Varchar -- String
 SET     @Value1 = NULL
 DECLARE @Value2 Varchar -- String
@@ -128,8 +126,7 @@ SET
 WHERE
 	"ValueConversion"."Id" = :Id
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	e."Id",
 	e."Value1",

@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 DELETE FROM
 	[Child]
 WHERE

@@ -14,7 +14,7 @@ FROM
 			(
 				SELECT
 					r."PersonID" as ID,
-					ROW_NUMBER() OVER(ORDER BY (
+					ROW_NUMBER() OVER (ORDER BY (
 						SELECT
 							'unordered'
 						FROM SYS.DUAL

@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	DateSerial(2010, [t].[ID], 1)
 FROM

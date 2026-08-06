@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008
-
 SELECT
 	[m_1].[ParentID],
 	[m_1].[Value1]
@@ -22,7 +21,6 @@ FROM
 		) [t1] ON [m_1].[ParentID] = [t1].[ParentID]
 
 -- SqlServer.2008
-
 SELECT
 	[m_1].[ParentID],
 	[m_1].[Value1]

@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 DELETE FROM
 	"GrandChild" "t1"
 WHERE

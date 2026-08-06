@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 /* My Test */
 INSERT INTO TestTable AS t1
 (

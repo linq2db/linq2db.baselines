@@ -14,7 +14,6 @@ WHERE
 	`r`.`Column` = @Column AND `r`.`ColumnNullable` = @ColumnNullable
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`r`.`Id`,
 	`r`.`Column`,
@@ -25,7 +24,6 @@ WHERE
 	`r`.`Column` = 2 AND `r`.`ColumnNullable` = 3
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 DELETE  
 FROM
 	`IntEnumTable`
@@ -73,7 +71,6 @@ VALUES
 )
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Column`,
@@ -84,13 +81,11 @@ ORDER BY
 	`t1`.`Id`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 DELETE  
 FROM
 	`IntEnumTable`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 INSERT INTO `IntEnumTable`
 (
 	`Id`,
@@ -102,7 +97,6 @@ VALUES
 (2,2,3)
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Column`,
@@ -113,13 +107,11 @@ ORDER BY
 	`t1`.`Id`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 DELETE  
 FROM
 	`IntEnumTable`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 INSERT INTO `IntEnumTable`
 (
 	`Id`,
@@ -131,7 +123,6 @@ VALUES
 (2,2,3)
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Column`,

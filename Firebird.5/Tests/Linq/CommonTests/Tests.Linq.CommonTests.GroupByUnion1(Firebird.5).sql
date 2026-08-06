@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 SELECT
 	"tt"."Key_1",
 	SUM("tt"."ChildID")

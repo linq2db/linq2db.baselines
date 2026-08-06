@@ -14,7 +14,6 @@ WHERE
 	[r].[Column] = @Column AND [r].[ColumnNullable] = @ColumnNullable
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[r].[Id],
 	[r].[Column],
@@ -26,7 +25,6 @@ WHERE
 	[r].[ColumnNullable] = X'A57339BD2343D84D9F4FDF9F93E2A627'
 
 -- SQLite.Classic SQLite
-
 DELETE FROM
 	[GuidTable]
 
@@ -73,7 +71,6 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],
@@ -84,12 +81,10 @@ ORDER BY
 	[t1].[Id]
 
 -- SQLite.Classic SQLite
-
 DELETE FROM
 	[GuidTable]
 
 -- SQLite.Classic SQLite
-
 INSERT INTO [GuidTable]
 (
 	[Id],
@@ -101,7 +96,6 @@ VALUES
 (2,X'0D6048A921DE744F8AC29516B287076E',X'A57339BD2343D84D9F4FDF9F93E2A627')
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],
@@ -112,12 +106,10 @@ ORDER BY
 	[t1].[Id]
 
 -- SQLite.Classic SQLite
-
 DELETE FROM
 	[GuidTable]
 
 -- SQLite.Classic SQLite
-
 INSERT INTO [GuidTable]
 (
 	[Id],
@@ -129,7 +121,6 @@ VALUES
 (2,X'0D6048A921DE744F8AC29516B287076E',X'A57339BD2343D84D9F4FDF9F93E2A627')
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],

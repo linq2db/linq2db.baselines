@@ -1,9 +1,7 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 DROP TABLE IF EXISTS `TestTable`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 CREATE TABLE `TestTable`
 (
 	`ID`        INT           AUTO_INCREMENT NOT NULL,
@@ -15,7 +13,6 @@ CREATE TABLE `TestTable`
 )
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t1`.`ID`,
 	`t1`.`Field1`,
@@ -25,6 +22,5 @@ FROM
 	`TestTable` `t1`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 DROP TABLE `TestTable`
 

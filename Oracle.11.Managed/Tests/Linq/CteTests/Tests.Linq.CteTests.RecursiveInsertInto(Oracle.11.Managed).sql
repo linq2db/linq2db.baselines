@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 INSERT INTO "HierarchyData"
 (
 	"Id",
@@ -47,7 +46,6 @@ FROM
 	"hierarchyDown" t4
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Level"

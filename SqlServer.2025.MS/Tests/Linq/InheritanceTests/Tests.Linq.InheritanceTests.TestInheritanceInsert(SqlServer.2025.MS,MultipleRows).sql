@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
-
 INSERT INTO [InheritanceFilter]
 (
 	[Id],
@@ -20,7 +19,6 @@ VALUES
 (6,22,0,26,0,0,0,16)
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Code],
 	[t1].[Id],

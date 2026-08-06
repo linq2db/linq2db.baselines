@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[ip].[InvestorId],
 	[t1].[Units],

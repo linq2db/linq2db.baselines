@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[cu].[Id],
 	(
@@ -14,7 +13,6 @@ FROM
 	[Issue1983Person] [cu]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[cu].[Id],
 	[cu].[Name],
@@ -39,7 +37,6 @@ FROM
 	[Issue1983Person] [cu]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[cu].[Id],
 	[cu].[Name],

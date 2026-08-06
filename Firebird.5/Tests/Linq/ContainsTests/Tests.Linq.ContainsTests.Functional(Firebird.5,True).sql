@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 SELECT
 	"s"."Id"
 FROM
@@ -9,7 +8,6 @@ WHERE
 FETCH NEXT 1 ROWS ONLY
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"s"."Id"
 FROM
@@ -19,7 +17,6 @@ WHERE
 FETCH NEXT 1 ROWS ONLY
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"s"."Id"
 FROM
@@ -29,7 +26,6 @@ WHERE
 FETCH NEXT 1 ROWS ONLY
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"s"."Id"
 FROM
@@ -39,7 +35,6 @@ WHERE
 FETCH NEXT 1 ROWS ONLY
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"s"."Id"
 FROM

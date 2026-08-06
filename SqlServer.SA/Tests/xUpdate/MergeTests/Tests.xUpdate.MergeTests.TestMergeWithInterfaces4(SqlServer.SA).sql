@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 MERGE INTO [ReviewIndexes] [Target]
 USING (VALUES
 	(1,N'2')

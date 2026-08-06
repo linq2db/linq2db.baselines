@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`c_1`.`ParentID`,
 	`g_1`.`GrandChildID`
@@ -10,7 +9,6 @@ FROM
 		ON `c_1`.`ParentID` = `a_Child`.`ParentID` AND `c_1`.`ChildID` = `a_Child`.`ChildID`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`c_1`.`ParentID`,
 	`g_1`.`GrandChildID`

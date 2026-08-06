@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014
-
 SELECT
 	[ess].[ID]
 FROM
@@ -15,7 +14,6 @@ WHERE
 	)
 
 -- SqlServer.2014
-
 SELECT
 	[ess].[ID]
 FROM

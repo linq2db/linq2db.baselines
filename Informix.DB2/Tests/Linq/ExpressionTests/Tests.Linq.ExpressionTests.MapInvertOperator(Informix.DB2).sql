@@ -10,7 +10,6 @@ SET
 	"Value" = BitAnd(BitOr(t1."Value", @addMask::Int), BITNOT(@removeMask::Int))
 
 -- Informix.DB2 Informix
-
 SELECT FIRST 2
 	t1.Id,
 	t1."Value"

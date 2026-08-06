@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 SELECT DISTINCT
 	[t2].[FirstName],
 	[t2].[ID],

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
-
 INSERT INTO [BlobClass]
 (
 	[Id],
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT TOP (1)
 	[t1].[Id],
 	[t1].[BlobValue]
@@ -22,7 +20,6 @@ WHERE
 	[t1].[Id] = 1
 
 -- SqlServer.2017.MS SqlServer.2017
-
 UPDATE
 	[BlobClass]
 SET
@@ -31,7 +28,6 @@ WHERE
 	[BlobClass].[Id] = 1
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT TOP (1)
 	[t1].[Id],
 	[t1].[BlobValue]

@@ -1,6 +1,5 @@
 ﻿-- SQLite.MS SQLite
 
-
 				SELECT
 					t.schema || '..' || t.name AS TableID,
 					''                         AS CatalogName,
@@ -10,10 +9,10 @@
 					t.type = 'view'            AS IsView
 				FROM pragma_table_list() t
 				WHERE t.type IN ('table', 'view') AND t.name NOT IN ('sqlite_sequence', 'sqlite_schema') AND t.schema = 'main'
+				ORDER BY t.schema, t.name
 			
 
 -- SQLite.MS SQLite
-
 
 				SELECT
 					t.schema || '..' || t.name AS TableID,
@@ -27,7 +26,6 @@
 			
 
 -- SQLite.MS SQLite
-
 
 					WITH pk_counts AS (
 						SELECT
@@ -58,20 +56,18 @@
 
 -- SQLite.MS SQLite
 
-
 				SELECT
 					t.schema AS SchemaName,
 					t.name   AS TableName
 				FROM pragma_table_list() t
 				WHERE t.type IN ('view') AND t.name NOT IN ('sqlite_sequence', 'sqlite_schema') AND t.schema = 'main'
+				ORDER BY t.schema, t.name
 			
 
 -- SQLite.MS SQLite
-
 SELECT * FROM [AllTypesView]
 
 -- SQLite.MS SQLite
-
 
 				SELECT
 					'FK_' || tThis.name || '_' || f.id   AS Name,
@@ -89,7 +85,6 @@ SELECT * FROM [AllTypesView]
 
 -- SQLite.MS SQLite
 
-
 				SELECT
 					t.schema || '..' || t.name AS TableID,
 					''                         AS CatalogName,
@@ -99,10 +94,10 @@ SELECT * FROM [AllTypesView]
 					t.type = 'view'            AS IsView
 				FROM pragma_table_list() t
 				WHERE t.type IN ('table', 'view') AND t.name NOT IN ('sqlite_sequence', 'sqlite_schema') AND t.schema = 'main'
+				ORDER BY t.schema, t.name
 			
 
 -- SQLite.MS SQLite
-
 
 				SELECT
 					t.schema || '..' || t.name AS TableID,
@@ -116,7 +111,6 @@ SELECT * FROM [AllTypesView]
 			
 
 -- SQLite.MS SQLite
-
 
 					WITH pk_counts AS (
 						SELECT
@@ -147,20 +141,18 @@ SELECT * FROM [AllTypesView]
 
 -- SQLite.MS SQLite
 
-
 				SELECT
 					t.schema AS SchemaName,
 					t.name   AS TableName
 				FROM pragma_table_list() t
 				WHERE t.type IN ('view') AND t.name NOT IN ('sqlite_sequence', 'sqlite_schema') AND t.schema = 'main'
+				ORDER BY t.schema, t.name
 			
 
 -- SQLite.MS SQLite
-
 SELECT * FROM [AllTypesView]
 
 -- SQLite.MS SQLite
-
 
 				SELECT
 					'FK_' || tThis.name || '_' || f.id   AS Name,
@@ -178,7 +170,6 @@ SELECT * FROM [AllTypesView]
 
 -- SQLite.MS SQLite
 
-
 				SELECT
 					t.schema || '..' || t.name AS TableID,
 					''                         AS CatalogName,
@@ -188,10 +179,10 @@ SELECT * FROM [AllTypesView]
 					t.type = 'view'            AS IsView
 				FROM pragma_table_list() t
 				WHERE t.type IN ('table', 'view') AND t.name NOT IN ('sqlite_sequence', 'sqlite_schema') AND t.schema = 'main'
+				ORDER BY t.schema, t.name
 			
 
 -- SQLite.MS SQLite
-
 
 				SELECT
 					t.schema || '..' || t.name AS TableID,
@@ -205,7 +196,6 @@ SELECT * FROM [AllTypesView]
 			
 
 -- SQLite.MS SQLite
-
 
 					WITH pk_counts AS (
 						SELECT
@@ -236,20 +226,18 @@ SELECT * FROM [AllTypesView]
 
 -- SQLite.MS SQLite
 
-
 				SELECT
 					t.schema AS SchemaName,
 					t.name   AS TableName
 				FROM pragma_table_list() t
 				WHERE t.type IN ('view') AND t.name NOT IN ('sqlite_sequence', 'sqlite_schema') AND t.schema = 'main'
+				ORDER BY t.schema, t.name
 			
 
 -- SQLite.MS SQLite
-
 SELECT * FROM [AllTypesView]
 
 -- SQLite.MS SQLite
-
 
 				SELECT
 					'FK_' || tThis.name || '_' || f.id   AS Name,

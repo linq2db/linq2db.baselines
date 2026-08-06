@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 INSERT INTO "Parent"
 (
 	"ParentID",
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- Firebird.4 Firebird4
-
 INSERT INTO "Child"
 (
 	"ChildID",
@@ -25,7 +23,6 @@ VALUES
 )
 
 -- Firebird.4 Firebird4
-
 UPDATE
 	"Parent"
 SET

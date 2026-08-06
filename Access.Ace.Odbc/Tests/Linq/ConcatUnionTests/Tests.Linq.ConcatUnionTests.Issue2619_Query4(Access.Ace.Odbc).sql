@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[item_1].[FirstName],
 	[item_1].[PersonID],

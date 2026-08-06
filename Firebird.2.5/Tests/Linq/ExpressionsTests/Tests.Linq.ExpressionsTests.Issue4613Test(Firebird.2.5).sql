@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	"contract"."Id",
 	"servProj"."IdContract"

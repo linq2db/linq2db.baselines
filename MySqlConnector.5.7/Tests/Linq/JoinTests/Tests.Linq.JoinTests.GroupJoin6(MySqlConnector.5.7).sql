@@ -18,7 +18,6 @@ FROM
 		INNER JOIN `Child` `d` ON `m_1`.`ParentID` + @n = `d`.`ParentID`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`p`.`ParentID`,
 	`p`.`Value1`

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
-
 MERGE INTO [Person] [Target]
 USING (
 	SELECT
@@ -31,7 +30,6 @@ VALUES
 ;
 
 -- SqlServer.2022.MS SqlServer.2022
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

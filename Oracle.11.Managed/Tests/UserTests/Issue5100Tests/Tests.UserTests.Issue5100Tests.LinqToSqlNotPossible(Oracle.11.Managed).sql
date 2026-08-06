@@ -66,7 +66,6 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t2."LanguageId",
 	t2."TextId",

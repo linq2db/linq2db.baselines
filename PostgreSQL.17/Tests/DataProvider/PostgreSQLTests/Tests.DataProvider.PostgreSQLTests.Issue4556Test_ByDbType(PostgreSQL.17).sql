@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 MERGE INTO "Issue4556Table2" "Target"
 USING (
 	SELECT NULL::Int, NULL::json, NULL::jsonb, NULL::json, NULL::jsonb
@@ -31,7 +30,7 @@ VALUES
 	"Source"."HeadersJsonB"
 )
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 DECLARE @value Json -- Object
 SET     @value = {[key1, value1]}
 DECLARE @value_1 Jsonb -- Object

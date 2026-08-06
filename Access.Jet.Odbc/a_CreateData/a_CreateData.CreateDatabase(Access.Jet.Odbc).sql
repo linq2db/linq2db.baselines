@@ -1,73 +1,55 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 DROP Procedure AddIssue792Record
 
 -- Access.Jet.Odbc AccessODBC
-
 DROP Procedure ThisProcedureNotVisibleFromODBC
 
 -- Access.Jet.Odbc AccessODBC
-
 DROP Procedure Person_SelectByKey
 
 -- Access.Jet.Odbc AccessODBC
-
 DROP Procedure Person_SelectAll
 
 -- Access.Jet.Odbc AccessODBC
-
 DROP Procedure Person_SelectByName
 
 -- Access.Jet.Odbc AccessODBC
-
 DROP Procedure Person_SelectListByName
 
 -- Access.Jet.Odbc AccessODBC
-
 DROP Procedure Person_Insert
 
 -- Access.Jet.Odbc AccessODBC
-
 DROP Procedure Person_Update
 
 -- Access.Jet.Odbc AccessODBC
-
 DROP Procedure Person_Delete
 
 -- Access.Jet.Odbc AccessODBC
-
 DROP Procedure Patient_SelectAll
 
 -- Access.Jet.Odbc AccessODBC
-
 DROP Procedure Patient_SelectByName
 
 -- Access.Jet.Odbc AccessODBC
-
 DROP Procedure Scalar_DataReader
 
 -- Access.Jet.Odbc AccessODBC
-
 DROP TABLE Doctor
 
 -- Access.Jet.Odbc AccessODBC
-
 DROP TABLE Patient
 
 -- Access.Jet.Odbc AccessODBC
-
 DROP TABLE Person
 
 -- Access.Jet.Odbc AccessODBC
-
 DROP TABLE RelationsTable
 
 -- Access.Jet.Odbc AccessODBC
-
 DROP TABLE InheritanceParent
 
 -- Access.Jet.Odbc AccessODBC
-
 CREATE TABLE InheritanceParent
 (
 	InheritanceParentId Int      NOT NULL CONSTRAINT PK_InheritanceParent PRIMARY KEY,
@@ -76,11 +58,9 @@ CREATE TABLE InheritanceParent
 )
 
 -- Access.Jet.Odbc AccessODBC
-
 DROP TABLE InheritanceChild
 
 -- Access.Jet.Odbc AccessODBC
-
 CREATE TABLE InheritanceChild
 (
 	InheritanceChildId  Int      NOT NULL CONSTRAINT PK_InheritanceChild PRIMARY KEY,
@@ -90,7 +70,6 @@ CREATE TABLE InheritanceChild
 )
 
 -- Access.Jet.Odbc AccessODBC
-
 CREATE TABLE Person
 (
 	PersonID   Int IDENTITY,
@@ -103,7 +82,6 @@ CREATE TABLE Person
 )
 
 -- Access.Jet.Odbc AccessODBC
-
 CREATE TABLE Doctor
 (
 	PersonID Int NOT NULL,
@@ -113,7 +91,6 @@ CREATE TABLE Doctor
 )
 
 -- Access.Jet.Odbc AccessODBC
-
 CREATE TABLE Patient
 (
 	PersonID  Int NOT NULL,
@@ -123,78 +100,61 @@ CREATE TABLE Patient
 )
 
 -- Access.Jet.Odbc AccessODBC
-
 ALTER TABLE Doctor
 	ADD CONSTRAINT PersonDoctor FOREIGN KEY (PersonID) REFERENCES Person ON UPDATE CASCADE ON DELETE CASCADE;
 
 -- Access.Jet.Odbc AccessODBC
-
 ALTER TABLE Patient
 	ADD CONSTRAINT PersonPatient FOREIGN KEY (PersonID) REFERENCES Person ON UPDATE CASCADE ON DELETE CASCADE;
 
 -- Access.Jet.Odbc AccessODBC
-
 INSERT INTO Person (FirstName, LastName, Gender) VALUES ('John',   'Pupkin',    'M')
 
 -- Access.Jet.Odbc AccessODBC
-
 INSERT INTO Person (FirstName, LastName, Gender) VALUES ('Tester', 'Testerson', 'M')
 
 -- Access.Jet.Odbc AccessODBC
-
 INSERT INTO Person (FirstName, LastName, Gender) VALUES ('Jane',   'Doe',       'F')
 
 -- Access.Jet.Odbc AccessODBC
-
 INSERT INTO Person (FirstName, LastName, MiddleName, Gender) VALUES ('Jürgen', 'König', 'Ko', 'M')
 
 -- Access.Jet.Odbc AccessODBC
-
 INSERT INTO Doctor (PersonID, Taxonomy)   VALUES (1, 'Psychiatry')
 
 -- Access.Jet.Odbc AccessODBC
-
 INSERT INTO Patient (PersonID, Diagnosis) VALUES (2, 'Hallucination with Paranoid Bugs'' Delirium of Persecution')
 
 -- Access.Jet.Odbc AccessODBC
-
 DROP TABLE Parent
 
 -- Access.Jet.Odbc AccessODBC
-
 DROP TABLE Child
 
 -- Access.Jet.Odbc AccessODBC
-
 DROP TABLE GrandChild
 
 -- Access.Jet.Odbc AccessODBC
-
 CREATE TABLE Parent     (ParentID int, Value1 int NULL)
 
 -- Access.Jet.Odbc AccessODBC
-
 CREATE TABLE Child      (ParentID int, ChildID int)
 
 -- Access.Jet.Odbc AccessODBC
-
 CREATE TABLE GrandChild (ParentID int, ChildID int, GrandChildID int)
 
 -- Access.Jet.Odbc AccessODBC
-
 CREATE Procedure Person_SelectByKey(
 	[@id] Long)
 AS
 	SELECT * FROM Person WHERE PersonID = [@id];
 
 -- Access.Jet.Odbc AccessODBC
-
 CREATE Procedure Person_SelectAll
 AS
 	SELECT * FROM Person;
 
 -- Access.Jet.Odbc AccessODBC
-
 CREATE Procedure Person_SelectByName(
 	[@firstName] Text(50),
 	[@lastName]  Text(50))
@@ -207,7 +167,6 @@ WHERE
 	FirstName = [@firstName] AND LastName = [@lastName];
 
 -- Access.Jet.Odbc AccessODBC
-
 CREATE Procedure Person_SelectListByName(
 	[@firstName] Text(50),
 	[@lastName]  Text(50))
@@ -220,7 +179,6 @@ WHERE
 	FirstName like [@firstName] AND LastName like [@lastName];
 
 -- Access.Jet.Odbc AccessODBC
-
 CREATE Procedure Person_Insert(
 	[@FirstName]  Text(50),
 	[@MiddleName] Text(50),
@@ -233,7 +191,6 @@ VALUES
 	([@FirstName], [@MiddleName], [@LastName], [@Gender]);
 
 -- Access.Jet.Odbc AccessODBC
-
 CREATE Procedure Person_Update(
 	[@id]         Long,
 	[@FirstName]  Text(50),
@@ -252,14 +209,12 @@ WHERE
 	PersonID = [@id];
 
 -- Access.Jet.Odbc AccessODBC
-
 CREATE Procedure Person_Delete(
 	[@PersonID] Long)
 AS
 DELETE FROM Person WHERE PersonID = [@PersonID];
 
 -- Access.Jet.Odbc AccessODBC
-
 CREATE Procedure Patient_SelectAll
 AS
 SELECT
@@ -270,7 +225,6 @@ WHERE
 	Patient.PersonID = Person.PersonID;
 
 -- Access.Jet.Odbc AccessODBC
-
 CREATE Procedure Patient_SelectByName(
 	[@firstName] Text(50),
 	[@lastName]  Text(50))
@@ -284,17 +238,14 @@ WHERE
 	AND FirstName = [@firstName] AND LastName = [@lastName];
 
 -- Access.Jet.Odbc AccessODBC
-
 CREATE Procedure Scalar_DataReader
 AS
 	SELECT 12345 AS intField, '54321' AS stringField;
 
 -- Access.Jet.Odbc AccessODBC
-
 DROP TABLE LinqDataTypes
 
 -- Access.Jet.Odbc AccessODBC
-
 CREATE TABLE LinqDataTypes
 (
 	ID             int,
@@ -311,11 +262,9 @@ CREATE TABLE LinqDataTypes
 )
 
 -- Access.Jet.Odbc AccessODBC
-
 DROP TABLE TestIdentity
 
 -- Access.Jet.Odbc AccessODBC
-
 CREATE TABLE TestIdentity
 (
 	ID Int IDENTITY,
@@ -323,11 +272,9 @@ CREATE TABLE TestIdentity
 )
 
 -- Access.Jet.Odbc AccessODBC
-
 DROP TABLE AllTypes
 
 -- Access.Jet.Odbc AccessODBC
-
 CREATE TABLE AllTypes
 (
 	ID                       counter      NOT NULL,
@@ -360,20 +307,16 @@ CREATE TABLE AllTypes
 )
 
 -- Access.Jet.Odbc AccessODBC
-
 INSERT INTO AllTypes (binaryDataType)
 VALUES (NULL)
 
 -- Access.Jet.Odbc AccessODBC
-
 DROP TABLE TestMerge1
 
 -- Access.Jet.Odbc AccessODBC
-
 DROP TABLE TestMerge2
 
 -- Access.Jet.Odbc AccessODBC
-
 CREATE TABLE TestMerge1
 (
 	Id       Int      NOT NULL CONSTRAINT PK_TestMerge1 PRIMARY KEY,
@@ -401,7 +344,6 @@ CREATE TABLE TestMerge1
 )
 
 -- Access.Jet.Odbc AccessODBC
-
 CREATE TABLE TestMerge2
 (
 	Id       Int      NOT NULL CONSTRAINT PK_TestMerge2 PRIMARY KEY,
@@ -429,19 +371,16 @@ CREATE TABLE TestMerge2
 )
 
 -- Access.Jet.Odbc AccessODBC
-
 CREATE Procedure AddIssue792Record(@id INT)
 AS
 	INSERT INTO AllTypes(char20DataType) VALUES('issue792');
 
 -- Access.Jet.Odbc AccessODBC
-
 CREATE Procedure ThisProcedureNotVisibleFromODBC
 AS
 	INSERT INTO AllTypes(char20DataType) VALUES('issue792');
 
 -- Access.Jet.Odbc AccessODBC
-
 CREATE TABLE RelationsTable
 (
 	ID1		INT NOT NULL,
@@ -455,35 +394,27 @@ CREATE TABLE RelationsTable
 )
 
 -- Access.Jet.Odbc AccessODBC
-
 CREATE INDEX PK_RelationsTable ON RelationsTable(ID1, ID2) WITH PRIMARY;
 
 -- Access.Jet.Odbc AccessODBC
-
 CREATE INDEX IX_Index ON RelationsTable(Int1, IntN1);
 
 -- Access.Jet.Odbc AccessODBC
-
 CREATE UNIQUE INDEX UX_Index1 ON RelationsTable(Int1);
 
 -- Access.Jet.Odbc AccessODBC
-
 CREATE UNIQUE INDEX UX_Index2 ON RelationsTable(IntN1);
 
 -- Access.Jet.Odbc AccessODBC
-
 ALTER TABLE RelationsTable ADD CONSTRAINT FK_Nullable FOREIGN KEY (IntN1, IntN2) REFERENCES RelationsTable(ID1, ID2);
 
 -- Access.Jet.Odbc AccessODBC
-
 ALTER TABLE RelationsTable ADD CONSTRAINT FK_NotNullable FOREIGN KEY (Int1, Int2) REFERENCES RelationsTable(ID1, ID2);
 
 -- Access.Jet.Odbc AccessODBC
-
 DROP TABLE CollatedTable
 
 -- Access.Jet.Odbc AccessODBC
-
 CREATE TABLE CollatedTable
 (
 	Id				INT NOT NULL,
@@ -2120,75 +2051,57 @@ SET     @uniqueidentifierDataType = '{6f9619ff-8b86-d011-b42d-00c04fc964ff}'
 				)
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 DROP Procedure AddIssue792Record
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 DROP Procedure ThisProcedureNotVisibleFromODBC
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 DROP Procedure Person_SelectByKey
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 DROP Procedure Person_SelectAll
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 DROP Procedure Person_SelectByName
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 DROP Procedure Person_SelectListByName
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 DROP Procedure Person_Insert
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 DROP Procedure Person_Update
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 DROP Procedure Person_Delete
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 DROP Procedure Patient_SelectAll
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 DROP Procedure Patient_SelectByName
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 DROP Procedure Scalar_DataReader
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 DROP TABLE Doctor
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 DROP TABLE Patient
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 DROP TABLE Person
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 DROP TABLE RelationsTable
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 DROP TABLE InheritanceParent
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 CREATE TABLE InheritanceParent
 (
 	InheritanceParentId Int      NOT NULL CONSTRAINT PK_InheritanceParent PRIMARY KEY,
@@ -2197,11 +2110,9 @@ CREATE TABLE InheritanceParent
 )
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 DROP TABLE InheritanceChild
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 CREATE TABLE InheritanceChild
 (
 	InheritanceChildId  Int      NOT NULL CONSTRAINT PK_InheritanceChild PRIMARY KEY,
@@ -2211,7 +2122,6 @@ CREATE TABLE InheritanceChild
 )
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 CREATE TABLE Person
 (
 	PersonID   Int IDENTITY,
@@ -2224,7 +2134,6 @@ CREATE TABLE Person
 )
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 CREATE TABLE Doctor
 (
 	PersonID Int NOT NULL,
@@ -2234,7 +2143,6 @@ CREATE TABLE Doctor
 )
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 CREATE TABLE Patient
 (
 	PersonID  Int NOT NULL,
@@ -2244,78 +2152,61 @@ CREATE TABLE Patient
 )
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 ALTER TABLE Doctor
 	ADD CONSTRAINT PersonDoctor FOREIGN KEY (PersonID) REFERENCES Person ON UPDATE CASCADE ON DELETE CASCADE;
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 ALTER TABLE Patient
 	ADD CONSTRAINT PersonPatient FOREIGN KEY (PersonID) REFERENCES Person ON UPDATE CASCADE ON DELETE CASCADE;
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 INSERT INTO Person (FirstName, LastName, Gender) VALUES ('John',   'Pupkin',    'M')
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 INSERT INTO Person (FirstName, LastName, Gender) VALUES ('Tester', 'Testerson', 'M')
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 INSERT INTO Person (FirstName, LastName, Gender) VALUES ('Jane',   'Doe',       'F')
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 INSERT INTO Person (FirstName, LastName, MiddleName, Gender) VALUES ('Jürgen', 'König', 'Ko', 'M')
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 INSERT INTO Doctor (PersonID, Taxonomy)   VALUES (1, 'Psychiatry')
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 INSERT INTO Patient (PersonID, Diagnosis) VALUES (2, 'Hallucination with Paranoid Bugs'' Delirium of Persecution')
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 DROP TABLE Parent
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 DROP TABLE Child
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 DROP TABLE GrandChild
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 CREATE TABLE Parent     (ParentID int, Value1 int NULL)
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 CREATE TABLE Child      (ParentID int, ChildID int)
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 CREATE TABLE GrandChild (ParentID int, ChildID int, GrandChildID int)
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 CREATE Procedure Person_SelectByKey(
 	[@id] Long)
 AS
 	SELECT * FROM Person WHERE PersonID = [@id];
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 CREATE Procedure Person_SelectAll
 AS
 	SELECT * FROM Person;
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 CREATE Procedure Person_SelectByName(
 	[@firstName] Text(50),
 	[@lastName]  Text(50))
@@ -2328,7 +2219,6 @@ WHERE
 	FirstName = [@firstName] AND LastName = [@lastName];
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 CREATE Procedure Person_SelectListByName(
 	[@firstName] Text(50),
 	[@lastName]  Text(50))
@@ -2341,7 +2231,6 @@ WHERE
 	FirstName like [@firstName] AND LastName like [@lastName];
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 CREATE Procedure Person_Insert(
 	[@FirstName]  Text(50),
 	[@MiddleName] Text(50),
@@ -2354,7 +2243,6 @@ VALUES
 	([@FirstName], [@MiddleName], [@LastName], [@Gender]);
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 CREATE Procedure Person_Update(
 	[@id]         Long,
 	[@FirstName]  Text(50),
@@ -2373,14 +2261,12 @@ WHERE
 	PersonID = [@id];
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 CREATE Procedure Person_Delete(
 	[@PersonID] Long)
 AS
 DELETE FROM Person WHERE PersonID = [@PersonID];
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 CREATE Procedure Patient_SelectAll
 AS
 SELECT
@@ -2391,7 +2277,6 @@ WHERE
 	Patient.PersonID = Person.PersonID;
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 CREATE Procedure Patient_SelectByName(
 	[@firstName] Text(50),
 	[@lastName]  Text(50))
@@ -2405,17 +2290,14 @@ WHERE
 	AND FirstName = [@firstName] AND LastName = [@lastName];
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 CREATE Procedure Scalar_DataReader
 AS
 	SELECT 12345 AS intField, '54321' AS stringField;
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 DROP TABLE LinqDataTypes
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 CREATE TABLE LinqDataTypes
 (
 	ID             int,
@@ -2432,11 +2314,9 @@ CREATE TABLE LinqDataTypes
 )
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 DROP TABLE TestIdentity
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 CREATE TABLE TestIdentity
 (
 	ID Int IDENTITY,
@@ -2444,11 +2324,9 @@ CREATE TABLE TestIdentity
 )
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 DROP TABLE AllTypes
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 CREATE TABLE AllTypes
 (
 	ID                       counter      NOT NULL,
@@ -2481,20 +2359,16 @@ CREATE TABLE AllTypes
 )
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 INSERT INTO AllTypes (binaryDataType)
 VALUES (NULL)
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 DROP TABLE TestMerge1
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 DROP TABLE TestMerge2
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 CREATE TABLE TestMerge1
 (
 	Id       Int      NOT NULL CONSTRAINT PK_TestMerge1 PRIMARY KEY,
@@ -2522,7 +2396,6 @@ CREATE TABLE TestMerge1
 )
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 CREATE TABLE TestMerge2
 (
 	Id       Int      NOT NULL CONSTRAINT PK_TestMerge2 PRIMARY KEY,
@@ -2550,19 +2423,16 @@ CREATE TABLE TestMerge2
 )
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 CREATE Procedure AddIssue792Record(@id INT)
 AS
 	INSERT INTO AllTypes(char20DataType) VALUES('issue792');
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 CREATE Procedure ThisProcedureNotVisibleFromODBC
 AS
 	INSERT INTO AllTypes(char20DataType) VALUES('issue792');
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 CREATE TABLE RelationsTable
 (
 	ID1		INT NOT NULL,
@@ -2576,35 +2446,27 @@ CREATE TABLE RelationsTable
 )
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 CREATE INDEX PK_RelationsTable ON RelationsTable(ID1, ID2) WITH PRIMARY;
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 CREATE INDEX IX_Index ON RelationsTable(Int1, IntN1);
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 CREATE UNIQUE INDEX UX_Index1 ON RelationsTable(Int1);
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 CREATE UNIQUE INDEX UX_Index2 ON RelationsTable(IntN1);
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 ALTER TABLE RelationsTable ADD CONSTRAINT FK_Nullable FOREIGN KEY (IntN1, IntN2) REFERENCES RelationsTable(ID1, ID2);
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 ALTER TABLE RelationsTable ADD CONSTRAINT FK_NotNullable FOREIGN KEY (Int1, Int2) REFERENCES RelationsTable(ID1, ID2);
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 DROP TABLE CollatedTable
 
 -- Access.Jet.Odbc.Data Access.Jet.Odbc AccessODBC
-
 CREATE TABLE CollatedTable
 (
 	Id				INT NOT NULL,

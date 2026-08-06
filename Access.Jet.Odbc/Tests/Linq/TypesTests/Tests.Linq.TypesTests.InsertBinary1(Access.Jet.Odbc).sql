@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 DELETE FROM
 	[LinqDataTypes] [t1]
 WHERE
@@ -23,7 +22,6 @@ VALUES
 )
 
 -- Access.Jet.Odbc AccessODBC
-
 DELETE FROM
 	[LinqDataTypes] [t1]
 WHERE

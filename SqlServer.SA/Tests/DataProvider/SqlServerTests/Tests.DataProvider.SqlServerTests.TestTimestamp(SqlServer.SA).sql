@@ -1,9 +1,7 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 SELECT Cast(1 as timestamp)
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT Cast(1 as rowversion)
 
 -- SqlServer.SA SqlServer.2019

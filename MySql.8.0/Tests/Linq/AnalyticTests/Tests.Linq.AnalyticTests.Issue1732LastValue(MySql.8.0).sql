@@ -4,7 +4,7 @@ SET     @group = 7
 
 SELECT
 	`p`.`Id`,
-	LAST_VALUE(`p`.`Id`) OVER(ORDER BY `p`.`Order`)
+	LAST_VALUE(`p`.`Id`) OVER (ORDER BY `p`.`Order`)
 FROM
 	`Position` `p`
 WHERE

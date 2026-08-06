@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 DELETE FROM
 	"TestMerge1" "t1"
 
@@ -104,7 +103,6 @@ VALUES
 )
 
 -- Firebird.4 Firebird4
-
 DELETE FROM
 	"TestMerge2" "t1"
 
@@ -209,7 +207,6 @@ VALUES
 )
 
 -- Firebird.4 Firebird4
-
 MERGE INTO "TestMerge1" "Target"
 USING (
 	SELECT
@@ -255,7 +252,6 @@ SET
 WHEN MATCHED AND "Source"."Id" = 4 THEN DELETE
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Field1",

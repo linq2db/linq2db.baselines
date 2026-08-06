@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 INSERT INTO DefaultValuesTable
 (
 	Id,
@@ -42,7 +41,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 INSERT INTO DefaultValuesTable
 (
 	Id,
@@ -85,7 +83,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.Id,
 	t1.IntClassRequired,

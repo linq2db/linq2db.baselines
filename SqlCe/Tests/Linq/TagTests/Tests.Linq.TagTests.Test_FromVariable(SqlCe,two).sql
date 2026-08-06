@@ -1,9 +1,8 @@
 ﻿-- SqlCe
-
 /* two */
 SELECT
 	[x].[FirstName],
-	[x].[PersonID] as [ID],
+	[x].[PersonID],
 	[x].[LastName],
 	[x].[MiddleName],
 	[x].[Gender]

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014
-
 DELETE [r]
 FROM
 	[LinqDataTypes] [r]
@@ -22,7 +21,6 @@ VALUES
 )
 
 -- SqlServer.2014
-
 SELECT TOP (1)
 	[t].[ID],
 	[t].[BigIntValue]
@@ -32,7 +30,6 @@ WHERE
 	[t].[ID] = 1001
 
 -- SqlServer.2014
-
 DELETE [r]
 FROM
 	[LinqDataTypes] [r]

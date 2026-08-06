@@ -20,10 +20,9 @@ VALUES
 )
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[m_1].[Id],
-	[d].[Id]
+	[d].[Id] as [Id_1]
 FROM
 	(
 		SELECT TOP 1
@@ -36,7 +35,6 @@ FROM
 		INNER JOIN [Message] [d] ON ([m_1].[Id] = [d].[TopicId])
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT TOP 1
 	[x].[Id],
 	[x].[Title],

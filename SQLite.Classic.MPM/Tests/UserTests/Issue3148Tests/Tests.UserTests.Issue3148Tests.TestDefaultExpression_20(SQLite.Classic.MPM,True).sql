@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[r].[FirstName],
 	[r].[PersonID],
@@ -12,7 +11,6 @@ WHERE
 	[r].[LastName] LIKE '%x' ESCAPE '~' AND Substr([r].[LastName], -1) = 'x'
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[r].[FirstName],
 	[r].[PersonID],

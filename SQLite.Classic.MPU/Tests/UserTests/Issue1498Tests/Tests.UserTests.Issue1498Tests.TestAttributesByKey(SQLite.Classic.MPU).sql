@@ -20,7 +20,6 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[m_1].[Id],
 	[d].[Id]
@@ -37,7 +36,6 @@ FROM
 		INNER JOIN [Message] [d] ON [m_1].[Id] = [d].[TopicId]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[x].[Id],
 	[x].[Title],

@@ -16,7 +16,6 @@ RETURNING
 	ID INTO :IDENTITY_PARAMETER
 
 -- Oracle.11.Managed Oracle11
-
 INSERT ALL
 	INTO "AllTypes" ("intDataType") VALUES (200)
 	INTO "AllTypes" ("intDataType") VALUES (300)

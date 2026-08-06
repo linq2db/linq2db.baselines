@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025
-
 SELECT
 	MAX([g_1].[ParentID])
 FROM

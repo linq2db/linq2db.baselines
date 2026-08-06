@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 DELETE FROM
 	"LinqDataTypes" "r"
 WHERE
@@ -17,11 +16,10 @@ INSERT INTO "LinqDataTypes"
 VALUES
 (
 	1001,
-	CAST(@tt AS BigInt)
+	@tt
 )
 
 -- Firebird.2.5 Firebird
-
 SELECT FIRST 1
 	"t".ID,
 	"t"."BigIntValue"
@@ -31,7 +29,6 @@ WHERE
 	"t".ID = 1001
 
 -- Firebird.2.5 Firebird
-
 DELETE FROM
 	"LinqDataTypes" "r"
 WHERE

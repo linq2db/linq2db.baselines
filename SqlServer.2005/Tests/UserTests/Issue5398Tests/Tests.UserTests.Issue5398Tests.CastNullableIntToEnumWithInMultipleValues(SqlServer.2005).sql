@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 SELECT
 	[i].[Id]
 FROM

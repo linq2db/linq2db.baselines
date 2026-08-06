@@ -16,7 +16,6 @@ VALUES
 )
 
 -- SqlServer.2017
-
 UPDATE
 	[Parent]
 SET
@@ -25,7 +24,6 @@ WHERE
 	[Parent].[ParentID] = 1010
 
 -- SqlServer.2017
-
 SELECT TOP (1)
 	[t].[ParentID],
 	[t].[Value1]

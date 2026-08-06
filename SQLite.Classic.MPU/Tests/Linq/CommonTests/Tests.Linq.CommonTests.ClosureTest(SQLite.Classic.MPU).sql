@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	1
 FROM
@@ -7,7 +6,6 @@ FROM
 LIMIT 1
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	1
 FROM

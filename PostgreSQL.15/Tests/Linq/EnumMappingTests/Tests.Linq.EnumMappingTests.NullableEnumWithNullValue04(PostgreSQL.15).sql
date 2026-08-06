@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL12
 DECLARE @p Integer -- Int32
 SET     @p = 105
 
@@ -7,7 +7,7 @@ DELETE FROM
 WHERE
 	r."ID" >= 101 AND r."ID" < :p
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 101
 DECLARE @Value Text(2) -- String
@@ -24,7 +24,7 @@ VALUES
 	:Value
 )
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 102
 DECLARE @Value Text(2) -- String
@@ -41,7 +41,7 @@ VALUES
 	:Value
 )
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 103
 DECLARE @Value Text -- String
@@ -58,7 +58,7 @@ VALUES
 	:Value
 )
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 104
 DECLARE @Value Text -- String
@@ -75,8 +75,7 @@ VALUES
 	:Value
 )
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	r."ID",
 	r."StringValue"
@@ -87,8 +86,7 @@ WHERE
 ORDER BY
 	r."ID"
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	r."ID",
 	r."IntValue",
@@ -100,7 +98,7 @@ WHERE
 ORDER BY
 	r."ID"
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL12
 DECLARE @p Integer -- Int32
 SET     @p = 105
 

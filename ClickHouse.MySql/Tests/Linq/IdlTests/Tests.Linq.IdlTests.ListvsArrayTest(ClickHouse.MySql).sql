@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	x.PersonID
 FROM
@@ -8,7 +7,6 @@ WHERE
 	x.FirstName IN ('John')
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	x.PersonID
 FROM

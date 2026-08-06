@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -7,8 +6,7 @@ FROM
 WHERE
 	r."Diagnosis" LIKE '%Paranoid%' ESCAPE '~'
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -16,8 +14,7 @@ FROM
 WHERE
 	r."Diagnosis" LIKE '%paranoid%' ESCAPE '~'
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -25,8 +22,7 @@ FROM
 WHERE
 	r."Diagnosis" ILIKE '%paranoid%' ESCAPE '~'
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM

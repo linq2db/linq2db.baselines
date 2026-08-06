@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained.MS SqlServer.2019
-
 WITH [cte]
 (
 	[FirstName],
@@ -29,7 +28,6 @@ FROM
 	[cte] [t1]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[x].[FirstName],
 	[x].[PersonID],

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014
-
 CREATE TABLE [tempdb]..[#MergeTemp]
 (
 	[ID]   Int          NOT NULL,
@@ -11,7 +10,6 @@ CREATE TABLE [tempdb]..[#MergeTemp]
 INSERT BULK [tempdb]..[#MergeTemp](ID, Name)
 
 -- SqlServer.2014
-
 MERGE INTO [tempdb]..[#MergeTemp] [t1]
 USING (SELECT (
 	SELECT
@@ -49,7 +47,6 @@ WHEN NOT MATCHED THEN
 	);
 
 -- SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#MergeTemp]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#MergeTemp]
 

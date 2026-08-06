@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 WITH [CTE_1] ([Id], [Value_1], [OtherValue])
 AS
 (
@@ -24,7 +23,6 @@ FROM
 	[CTE_1] [t2]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value],
@@ -34,7 +32,6 @@ FROM
 LIMIT 2
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value],

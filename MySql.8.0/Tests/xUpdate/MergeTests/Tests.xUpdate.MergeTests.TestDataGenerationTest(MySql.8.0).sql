@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 DELETE  
 FROM
 	`TestMerge1`
@@ -105,7 +104,6 @@ VALUES
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 DELETE  
 FROM
 	`TestMerge2`
@@ -211,7 +209,6 @@ VALUES
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Field1`,
@@ -225,7 +222,6 @@ ORDER BY
 	`t1`.`Id`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Field1`,

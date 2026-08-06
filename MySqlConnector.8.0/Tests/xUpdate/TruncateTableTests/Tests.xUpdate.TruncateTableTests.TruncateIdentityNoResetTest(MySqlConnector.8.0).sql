@@ -1,9 +1,7 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 DELETE FROM `test_temp`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 INSERT INTO `test_temp`
 (
 	`Field1`
@@ -14,7 +12,6 @@ VALUES
 )
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 INSERT INTO `test_temp`
 (
 	`Field1`
@@ -38,11 +35,9 @@ ORDER BY
 LIMIT @skip, 2
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 DELETE FROM `test_temp`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 INSERT INTO `test_temp`
 (
 	`Field1`
@@ -53,7 +48,6 @@ VALUES
 )
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 INSERT INTO `test_temp`
 (
 	`Field1`

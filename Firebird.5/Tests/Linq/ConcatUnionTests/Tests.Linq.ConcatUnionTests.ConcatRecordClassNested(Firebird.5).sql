@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 SELECT
 	"p"."PersonID",
 	"p"."FirstName",
@@ -15,7 +14,6 @@ FROM
 	"Person" "p_1"
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t1"."FirstName",
 	"t1"."PersonID",

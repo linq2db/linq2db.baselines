@@ -1,9 +1,7 @@
 ﻿-- SqlServer.2008
-
 DROP TABLE [AllType2CreateTest]
 
 -- SqlServer.2008
-
 CREATE TABLE [AllType2CreateTest]
 (
 	[ID]                     int                NOT NULL IDENTITY,
@@ -19,7 +17,6 @@ CREATE TABLE [AllType2CreateTest]
 )
 
 -- SqlServer.2008
-
 SELECT
 	[t1].[ID],
 	[t1].[dateDataType],
@@ -33,6 +30,5 @@ FROM
 	[AllType2CreateTest] [t1]
 
 -- SqlServer.2008
-
 DROP TABLE [AllType2CreateTest]
 

@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[x].[ParentID]
 FROM
@@ -7,9 +6,8 @@ FROM
 		INNER JOIN [Child] [y] ON [x].[ParentID] = [y].[ParentID]
 
 -- SqlCe
-
 SELECT DISTINCT
-	[g_1].[ParentID] as [Key_1]
+	[g_1].[ParentID]
 FROM
 	[Parent] [g_1]
 		INNER JOIN [Child] [y] ON [g_1].[ParentID] = [y].[ParentID]

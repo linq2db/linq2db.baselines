@@ -1,5 +1,4 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT /*+ QB_NAME(qb) NO_MERGE(@qb) */
 	p."ParentID",
 	p."Value1"

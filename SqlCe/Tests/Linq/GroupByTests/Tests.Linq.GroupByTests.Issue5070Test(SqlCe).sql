@@ -1,9 +1,8 @@
 ﻿-- SqlCe
-
 SELECT
 	[t_1].[FinalCustomerId],
 	[t_1].[IsActive],
-	SUM([t_1].[c1]) as [Amount]
+	SUM([t_1].[c1])
 FROM
 	(
 		SELECT

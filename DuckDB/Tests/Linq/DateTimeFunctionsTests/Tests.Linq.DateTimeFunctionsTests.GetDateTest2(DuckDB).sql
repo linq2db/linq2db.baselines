@@ -8,7 +8,7 @@ SELECT
 FROM
 	(
 		SELECT
-			CAST(CURRENT_TIMESTAMP AS DATE) as Key_1
+			CAST(now() AS DATE) as Key_1
 		FROM
 			Parent g_1
 				INNER JOIN Child s ON g_1.ParentID = s.ParentID

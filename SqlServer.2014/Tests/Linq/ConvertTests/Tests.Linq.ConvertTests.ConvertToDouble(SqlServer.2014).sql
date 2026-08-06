@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014
-
 SELECT
 	CAST([p].[MoneyValue] AS Float)
 FROM

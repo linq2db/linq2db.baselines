@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`g_1`.`Id`,
 	GROUP_CONCAT(Coalesce(`g_1`.`NullableValue`, '') ORDER BY `g_1`.`NotNullableValue`, `g_1`.`NullableValue` DESC SEPARATOR ', '),
@@ -22,7 +21,6 @@ ORDER BY
 	`g_1`.`Id`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t1`.`PK`,
 	`t1`.`Id`,

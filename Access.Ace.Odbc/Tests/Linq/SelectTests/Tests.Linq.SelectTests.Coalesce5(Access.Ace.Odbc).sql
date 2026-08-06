@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	IIF([t1].[Max_1] IS NULL, [t1].[Value1], [t1].[Max_1])
 FROM

@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Field1",
 	t1."Field2",
@@ -8,7 +7,6 @@ FROM
 	"UseMappingSchemaTestTable" t1
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Column1",
 	t1."Field2",
@@ -17,7 +15,6 @@ FROM
 	"UseMappingSchemaTestTable" t1
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Field1",
 	t1."Field2",

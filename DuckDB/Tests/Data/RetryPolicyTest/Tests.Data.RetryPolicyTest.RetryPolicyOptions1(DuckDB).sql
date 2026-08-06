@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	1
 FROM

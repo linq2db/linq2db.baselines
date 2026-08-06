@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012
-
 SELECT
 	COUNT([t3].[PersonID])
 FROM

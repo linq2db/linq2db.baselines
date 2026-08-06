@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025
-
 DELETE [t1]
 FROM
 	[TestMergeIdentity] [t1]
@@ -18,14 +17,12 @@ VALUES
 )
 
 -- SqlServer.2025
-
 SELECT
 	MAX([t1].[Id])
 FROM
 	[TestMergeIdentity] [t1]
 
 -- SqlServer.2025
-
 MERGE INTO [TestMergeIdentity] [Target]
 USING (VALUES
 	(22), (23)
@@ -47,7 +44,6 @@ VALUES
 ;
 
 -- SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Field]

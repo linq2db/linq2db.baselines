@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT TOP 2
 	[t1].[Id]
 FROM
@@ -8,7 +7,6 @@ WHERE
 	[t1].[Id] = 2
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT TOP 2
 	[t1].[Id]
 FROM

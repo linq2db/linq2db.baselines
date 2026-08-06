@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	m_1.ParentID,
 	d.ChildID,
@@ -14,7 +13,6 @@ FROM
 		INNER JOIN Child d ON CAST(m_1.ParentID AS BIGINT) = d.ParentID
 
 -- DuckDB
-
 SELECT
 	p.ParentID
 FROM

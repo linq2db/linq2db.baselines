@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	CONVERT(Date, [d].[DateTimeValue])
 FROM

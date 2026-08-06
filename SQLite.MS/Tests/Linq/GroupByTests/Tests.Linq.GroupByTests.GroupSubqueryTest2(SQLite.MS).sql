@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[pmp1].[ChildID]
 FROM
@@ -12,7 +11,6 @@ FROM
 		) [pmp_1]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID]

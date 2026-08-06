@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 DROP TABLE IF EXISTS [InventoryResource]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite

@@ -25,7 +25,6 @@ ORDER BY "o"."OrderID", "s"."OrderID", "s"."ProductID", "s"."ProductID0", "s"."O
 
 
 -- SQLite.MS SQLite
-
 SELECT
 	[m_1].[ProductId],
 	[m_1].[OrderId],
@@ -50,7 +49,6 @@ FROM
 
 
 -- SQLite.MS SQLite
-
 SELECT
 	[m_1].[OrderID],
 	[d].[IsDeleted],
@@ -77,10 +75,7 @@ FROM
 
 
 
-
-
 -- SQLite.MS SQLite
-
 SELECT
 	[e].[IsDeleted],
 	[e].[OrderID],

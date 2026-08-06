@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 CREATE TABLE "ClobEntity"
 (
 	"Id"         Int   NOT NULL,
@@ -20,7 +19,6 @@ SET     @:p3 = {'NClob1111111111111111111111111111111111111111111111111111111111
 INSERT INTO "ClobEntity" ("Id", "ClobValue", "NClobValue") VALUES (:p1, :p2, :p3)
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."ClobValue",
@@ -29,6 +27,5 @@ FROM
 	"ClobEntity" t1
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 DROP TABLE "ClobEntity"
 

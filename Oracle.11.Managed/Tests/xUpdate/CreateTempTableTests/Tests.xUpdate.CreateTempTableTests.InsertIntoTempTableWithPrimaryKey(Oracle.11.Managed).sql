@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE GLOBAL TEMPORARY TABLE "TableWithPrimaryKey2"
@@ -18,13 +17,11 @@ EXCEPTION
 END;
 
 -- Oracle.11.Managed Oracle11
-
 INSERT ALL
 	INTO "TableWithPrimaryKey2" ("Key") VALUES (1)
 SELECT * FROM dual
 
 -- Oracle.11.Managed Oracle11
-
 BEGIN
 	BEGIN
 		EXECUTE IMMEDIATE 'TRUNCATE TABLE "TableWithPrimaryKey2"';

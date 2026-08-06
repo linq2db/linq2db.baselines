@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	current_database()
 
@@ -9,7 +8,7 @@ SET     $ID = 5
 DECLARE $Value  -- Int32
 SET     $Value = 10
 
-INSERT INTO TestData.Issue681Table AS t1
+INSERT INTO memory.Issue681Table AS t1
 (
 	ID,
 	"Value"
@@ -28,7 +27,7 @@ SET     $ID = 5
 DECLARE $Value  -- Int32
 SET     $Value = 10
 
-INSERT INTO TestData.Issue681Table AS t1
+INSERT INTO memory.Issue681Table AS t1
 (
 	ID,
 	"Value"

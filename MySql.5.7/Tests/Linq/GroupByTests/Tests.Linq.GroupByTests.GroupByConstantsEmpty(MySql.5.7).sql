@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`g_2`.`ChildId`,
 	`g_2`.`ParentId`,
@@ -19,7 +18,6 @@ GROUP BY
 	`g_2`.`ParentId`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`t1`.`ParentID`,
 	`t1`.`ChildID`

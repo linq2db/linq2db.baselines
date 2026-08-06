@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[a_Parent_1].[ParentID],
 	COUNT(*)
@@ -21,7 +20,6 @@ ORDER BY
 	[a_Parent_1].[ParentID]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID],

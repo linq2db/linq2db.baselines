@@ -16,7 +16,6 @@ VALUES
 )
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT TOP 2
 	[e].[Id],
 	[e].[SomeText]
@@ -26,7 +25,6 @@ WHERE
 	[e].[SomeText] = 'Value1_suffix'
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT TOP 2
 	[e].[Id],
 	[e].[SomeText]

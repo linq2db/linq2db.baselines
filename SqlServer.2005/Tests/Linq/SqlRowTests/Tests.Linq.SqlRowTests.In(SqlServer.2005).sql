@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 SELECT
 	COUNT(*)
 FROM
@@ -8,7 +7,6 @@ WHERE
 	[i].[One] = 1 AND [i].[Two] = [i].[One] * 2
 
 -- SqlServer.2005
-
 SELECT
 	COUNT(*)
 FROM
@@ -19,7 +17,6 @@ WHERE
 	[i].[One] >= NULL AND [i].[Two] = -1 AND [i].[Three] = [i].[Four]
 
 -- SqlServer.2005
-
 SELECT
 	COUNT(*)
 FROM
@@ -30,7 +27,6 @@ WHERE
 	[i].[One] >= NULL AND [i].[Two] = 2
 
 -- SqlServer.2005
-
 SELECT
 	COUNT(*)
 FROM

@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 SELECT
 	CASE
 		WHEN "t"."EnumValue" = 'S' THEN 'Second'

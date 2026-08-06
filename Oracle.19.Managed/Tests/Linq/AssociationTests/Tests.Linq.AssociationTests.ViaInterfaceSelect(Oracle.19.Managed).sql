@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	m_1."Id",
 	d."Id",
@@ -9,7 +8,6 @@ FROM
 		INNER JOIN "SubEntity" d ON m_1."Id" = d."MainEntityId"
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	x."Id"
 FROM

@@ -1,7 +1,6 @@
 ﻿
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	m_1."Key_1",
 	d."CfAllowValue",
@@ -20,15 +19,12 @@ ORDER BY
 
 
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	p."AclNameId"
 FROM
 	"Issue4624Items" p
 LIMIT 1
-
-
 
 
 

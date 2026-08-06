@@ -1,11 +1,9 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DELETE  
 FROM
 	`InheritanceParent`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `InheritanceParent`
 (
 	`InheritanceParentId`,
@@ -22,14 +20,12 @@ ON DUPLICATE KEY UPDATE
 	`TypeDiscriminator` = 1
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	COUNT(*)
 FROM
 	`InheritanceParent` `t1`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `InheritanceParent`
 (
 	`InheritanceParentId`,
@@ -46,7 +42,6 @@ ON DUPLICATE KEY UPDATE
 	`TypeDiscriminator` = 1
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	COUNT(*)
 FROM

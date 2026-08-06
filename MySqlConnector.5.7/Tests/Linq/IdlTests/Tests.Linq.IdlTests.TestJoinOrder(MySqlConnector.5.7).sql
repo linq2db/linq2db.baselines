@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`x`.`ChildID`,
 	`x`.`ParentID`,
@@ -11,7 +10,6 @@ FROM
 		INNER JOIN `Person` `p3` ON `x`.`ChildID` = `p3`.`PersonID`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`x`.`ChildID`,
 	`x`.`ParentID`,

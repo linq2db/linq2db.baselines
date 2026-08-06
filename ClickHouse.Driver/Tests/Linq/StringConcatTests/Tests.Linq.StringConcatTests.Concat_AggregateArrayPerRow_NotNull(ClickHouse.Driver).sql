@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	t.Id,
 	arrayStringConcat([t.Str1, t.Str2, t.StrReq], '')
@@ -9,7 +8,6 @@ ORDER BY
 	t.Id
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Str1,

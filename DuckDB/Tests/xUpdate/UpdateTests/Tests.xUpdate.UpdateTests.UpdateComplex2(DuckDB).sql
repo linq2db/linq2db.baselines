@@ -26,7 +26,6 @@ RETURNING
 	PersonID
 
 -- DuckDB
-
 UPDATE
 	Person
 SET

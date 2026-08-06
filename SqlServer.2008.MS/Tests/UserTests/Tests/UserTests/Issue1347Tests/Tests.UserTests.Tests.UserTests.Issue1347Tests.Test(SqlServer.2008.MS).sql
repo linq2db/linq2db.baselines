@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[tp12].[Id],
 	[tp12].[ResourceID],

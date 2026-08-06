@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
-	20 as [Divide]
+	20
 

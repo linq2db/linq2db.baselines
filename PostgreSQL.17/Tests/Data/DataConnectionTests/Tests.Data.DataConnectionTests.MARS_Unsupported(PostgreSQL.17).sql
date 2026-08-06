@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."FirstName",
 	t1."PersonID",
@@ -9,7 +8,7 @@ SELECT
 FROM
 	"Person" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
 

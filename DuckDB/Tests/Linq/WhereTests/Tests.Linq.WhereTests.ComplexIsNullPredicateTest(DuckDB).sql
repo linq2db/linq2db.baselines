@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	r.Id,
 	r."Value"
@@ -11,7 +10,6 @@ ORDER BY
 	r.Id
 
 -- DuckDB
-
 SELECT
 	t1.Id,
 	t1."Value"

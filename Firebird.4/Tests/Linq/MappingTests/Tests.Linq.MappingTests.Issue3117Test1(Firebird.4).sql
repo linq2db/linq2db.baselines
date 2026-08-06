@@ -16,7 +16,6 @@ RETURNING
 	"Id"
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id"
 FROM

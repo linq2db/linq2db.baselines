@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Northwind.MS SqlServer.2019
-
 SELECT
 	[od].[OrderID],
 	[o1].[OrderID],
@@ -19,7 +18,6 @@ ORDER BY
 	[od].[OrderID]
 
 -- SqlServer.Northwind.MS SqlServer.2019
-
 SELECT
 	[t1].[OrderID],
 	[t1].[ProductID],
@@ -30,7 +28,6 @@ FROM
 	[Order Details] [t1]
 
 -- SqlServer.Northwind.MS SqlServer.2019
-
 SELECT
 	[t1].[OrderID],
 	[t1].[CustomerID],
@@ -50,7 +47,6 @@ FROM
 	[Orders] [t1]
 
 -- SqlServer.Northwind.MS SqlServer.2019
-
 SELECT
 	[t1].[EmployeeID],
 	[t1].[LastName],

@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 SELECT
 	"parent_1"."ParentID",
 	"childLeftJoin"."ChildID",

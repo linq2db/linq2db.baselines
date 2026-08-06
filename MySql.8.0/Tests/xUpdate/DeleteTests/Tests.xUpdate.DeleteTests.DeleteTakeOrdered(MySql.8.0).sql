@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 DELETE  
 FROM
 	`Parent`
@@ -190,7 +189,6 @@ ORDER BY
 LIMIT @take
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`r`.`Value1`
 FROM
@@ -201,7 +199,6 @@ ORDER BY
 	`r`.`ParentID`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 DELETE  
 FROM
 	`Parent`

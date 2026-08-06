@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 INSERT INTO Issue1554FluentTable
 (
 	Id,
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	Issue1554FluentTable
 UPDATE
@@ -24,7 +22,6 @@ WHERE
 	Id = 0
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.ClaimedKeyType,

@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -16,8 +15,7 @@ FROM
 ORDER BY
 	t1."Id"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	t."Id",
 	t."Value1",
@@ -27,8 +25,7 @@ FROM
 ORDER BY
 	t."Id"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -45,8 +42,7 @@ FROM
 ORDER BY
 	t1."Id"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	t2."Id",
 	t2."Value1",
@@ -77,7 +73,7 @@ FROM
 ORDER BY
 	t2."Id"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DECLARE @skip Integer -- Int32
 SET     @skip = 1
 

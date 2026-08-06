@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 INSERT INTO R
 (
 	MetadataVersion,
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.MetadataVersion,
 	t1.DictionaryKey

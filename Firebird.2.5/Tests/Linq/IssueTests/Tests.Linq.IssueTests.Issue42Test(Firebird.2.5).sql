@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT FIRST 1
 	"r".ID,
 	"r"."MoneyValue",
@@ -17,7 +16,6 @@ WHERE
 	"r".ID = 1
 
 -- Firebird.2.5 Firebird
-
 SELECT FIRST 1
 	"r".ID,
 	"r"."MoneyValue",
@@ -129,7 +127,6 @@ WHERE
 	"t1".ID = @ID
 
 -- Firebird.2.5 Firebird
-
 SELECT FIRST 1
 	"r".ID,
 	"r"."MoneyValue",

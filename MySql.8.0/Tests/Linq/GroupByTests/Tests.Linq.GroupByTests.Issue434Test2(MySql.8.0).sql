@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`m_1`.`PersonID`,
 	`d`.`PersonID`,
@@ -11,7 +10,6 @@ WHERE
 	LOCATE('test', Lower(`m_1`.`FirstName`)) > 0
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`p`.`FirstName`,
 	`p`.`PersonID`

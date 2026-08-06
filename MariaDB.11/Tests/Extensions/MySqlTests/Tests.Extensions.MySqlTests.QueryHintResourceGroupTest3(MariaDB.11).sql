@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT /*+ RESOURCE_GROUP(aaa) */
 	`p`.`ParentID`,
 	`p`.`Value1`

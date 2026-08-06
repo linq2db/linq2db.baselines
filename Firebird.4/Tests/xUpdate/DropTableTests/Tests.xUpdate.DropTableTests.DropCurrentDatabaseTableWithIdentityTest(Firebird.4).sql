@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$triggers WHERE rdb$trigger_name = 'TIDENTITY_DropTableTestID')) THEN
 		EXECUTE STATEMENT 'DROP TRIGGER "TIDENTITY_DropTableTestID"';
@@ -10,7 +9,6 @@ EXECUTE BLOCK AS BEGIN
 END
 
 -- Firebird.4 Firebird4
-
 EXECUTE BLOCK AS BEGIN
 	EXECUTE STATEMENT '
 		CREATE TABLE "DropTableTestID"
@@ -34,7 +32,6 @@ EXECUTE BLOCK AS BEGIN
 END
 
 -- Firebird.4 Firebird4
-
 INSERT INTO "DropTableTestID"
 (
 	ID1
@@ -45,7 +42,6 @@ VALUES
 )
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t".ID,
 	"t".ID1
@@ -53,7 +49,6 @@ FROM
 	"DropTableTestID" "t"
 
 -- Firebird.4 Firebird4
-
 EXECUTE BLOCK AS BEGIN
 	EXECUTE STATEMENT 'DROP TRIGGER "TIDENTITY_DropTableTestID"';
 	EXECUTE STATEMENT 'DROP GENERATOR "GIDENTITY_DropTableTestID"';
@@ -61,7 +56,6 @@ EXECUTE BLOCK AS BEGIN
 END
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1".ID,
 	"t1".ID1

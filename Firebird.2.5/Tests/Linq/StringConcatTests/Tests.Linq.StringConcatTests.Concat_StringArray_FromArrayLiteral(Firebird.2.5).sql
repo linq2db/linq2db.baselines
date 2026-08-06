@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	"e"."Id"
 FROM
@@ -8,7 +7,6 @@ WHERE
 	(Coalesce("e"."StrReq", '') || ' I') = 'Programmer I'
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1"."Id",
 	"t1"."Str1",

@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	CASE
 		WHEN [p].[ParentID] = 1 THEN CASE
@@ -7,7 +6,7 @@ SELECT
 			ELSE '2'
 		END
 		ELSE '3'
-	END as [a]
+	END
 FROM
 	[Parent] [p]
 		LEFT JOIN (

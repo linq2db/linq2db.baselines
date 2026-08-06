@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `SimpleBulkCopyTable`
 (
 	`Id`
@@ -8,7 +7,6 @@ VALUES
 (1)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `SimpleBulkCopyTable`
 (
 	`Id`
@@ -19,7 +17,6 @@ VALUES
 INSERT ASYNC BULK `SimpleBulkCopyTable`(Id)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `SimpleBulkCopyTable`
 (
 	`Id`
@@ -28,7 +25,6 @@ VALUES
 (10)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `SimpleBulkCopyTable`
 (
 	`Id`

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 SELECT
 	[a_Middle].[ParentID],
 	[a_Bottom].[ParentID],

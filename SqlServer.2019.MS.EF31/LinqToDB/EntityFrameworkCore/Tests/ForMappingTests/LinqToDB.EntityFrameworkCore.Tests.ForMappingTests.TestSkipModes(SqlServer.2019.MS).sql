@@ -26,7 +26,6 @@ VALUES
 
 
 -- SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[InsertOnly],
@@ -64,7 +63,6 @@ WHERE
 
 
 -- SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[InsertOnly],

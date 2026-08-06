@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	"m_1"."Id",
 	"d"."Value"
@@ -8,7 +7,6 @@ FROM
 		INNER JOIN "ItemValue" "d" ON "m_1"."Id" = "d"."ItemId"
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"x"."Id",
 	"x"."Text"

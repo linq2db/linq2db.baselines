@@ -1,5 +1,4 @@
 ﻿-- Northwind.SQLite.MS SQLite.MS SQLite
-
 SELECT
 	CASE
 		WHEN [o].[ShipRegion] = 'WA' THEN 1

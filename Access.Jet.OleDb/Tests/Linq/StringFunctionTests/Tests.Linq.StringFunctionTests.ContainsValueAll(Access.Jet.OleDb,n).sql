@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	COUNT(*)
 FROM
@@ -8,7 +7,6 @@ WHERE
 	[p].[PersonID] = 1 AND '123n456' LIKE '%n%'
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	COUNT(*)
 FROM

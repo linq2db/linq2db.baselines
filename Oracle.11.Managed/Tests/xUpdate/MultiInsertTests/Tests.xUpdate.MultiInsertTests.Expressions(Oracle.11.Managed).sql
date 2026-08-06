@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 INSERT ALL
 WHEN N < 0 THEN
 	INTO "Dest1"
@@ -29,14 +28,12 @@ SELECT
 FROM SYS.DUAL
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	COUNT(*)
 FROM
 	"Dest1" t1
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	COUNT(*)
 FROM
@@ -45,7 +42,6 @@ WHERE
 	x.ID = 3002
 
 -- Oracle.11.Managed Oracle11
-
 INSERT ALL
 WHEN 1 = 1 THEN
 	INTO "Dest1"
@@ -75,7 +71,6 @@ SELECT
 FROM SYS.DUAL
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	COUNT(*)
 FROM

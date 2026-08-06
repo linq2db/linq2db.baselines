@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -10,7 +9,6 @@ WHERE
 	r.Column = false AND r.ColumnNullable = true
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -21,13 +19,11 @@ WHERE
 	r.Column = false AND r.ColumnNullable = true
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	BooleanTable
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BooleanTable
 (
 	Id,
@@ -42,7 +38,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BooleanTable
 (
 	Id,
@@ -57,7 +52,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Column,
@@ -68,13 +62,11 @@ ORDER BY
 	t1.Id
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	BooleanTable
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BooleanTable
 (
 	Id,
@@ -86,7 +78,6 @@ VALUES
 (2,false,true)
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Column,
@@ -97,7 +88,6 @@ ORDER BY
 	t1.Id
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	BooleanTable
 DELETE WHERE 1
@@ -105,7 +95,6 @@ DELETE WHERE 1
 INSERT INTO BooleanTable(Id, Column, ColumnNullable) VALUES
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Column,

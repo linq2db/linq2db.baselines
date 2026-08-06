@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 INSERT INTO [TestBool]
 (
 	[Id],
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -21,14 +19,12 @@ FROM
 LIMIT 2
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 UPDATE
 	[TestBool]
 SET
 	[Value] = NOT [TestBool].[Value]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -37,7 +33,6 @@ FROM
 LIMIT 2
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 UPDATE
 	[TestBool]
 SET
@@ -46,7 +41,6 @@ WHERE
 	[TestBool].[Id] = 1
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]

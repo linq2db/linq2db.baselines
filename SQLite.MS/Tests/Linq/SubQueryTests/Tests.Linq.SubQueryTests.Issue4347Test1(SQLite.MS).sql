@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -29,7 +28,6 @@ WHERE
 	)
 
 -- SQLite.MS SQLite
-
 SELECT
 	[x].[Id],
 	[x].[ValidOn]

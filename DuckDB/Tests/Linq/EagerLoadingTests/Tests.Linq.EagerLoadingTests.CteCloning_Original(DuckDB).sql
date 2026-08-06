@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 WITH RECURSIVE cte (Value2, Value4)
 AS
 (
@@ -35,7 +34,6 @@ FROM
 		INNER JOIN CteTable d_1 ON m_1.Id = d_1.Value3
 
 -- DuckDB
-
 WITH RECURSIVE cte
 (
 	Id,

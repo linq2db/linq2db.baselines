@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`gr_1`.`ID`,
 	`gr_1`.`ID` + 1

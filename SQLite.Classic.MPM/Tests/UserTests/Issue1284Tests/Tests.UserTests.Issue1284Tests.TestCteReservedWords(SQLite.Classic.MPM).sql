@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 WITH [CTE_1] ([Obj_Operator])
 AS
 (
@@ -15,7 +14,6 @@ FROM
 LIMIT 1
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[person_1].[LastName]
 FROM

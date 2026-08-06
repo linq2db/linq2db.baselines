@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[t3].[Id],
 	[t1].[ExpressionMethod],

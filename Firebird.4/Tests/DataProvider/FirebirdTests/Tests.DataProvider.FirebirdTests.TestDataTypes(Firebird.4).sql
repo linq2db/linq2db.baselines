@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 SELECT "bigintDataType" FROM "AllTypes" WHERE ID = 1
 
 -- Firebird.4 Firebird4
@@ -21,7 +20,6 @@ SET     @p = NULL
 SELECT ID FROM "AllTypes" WHERE @p IS NULL AND "bigintDataType" IS NULL OR @p IS NOT NULL AND "bigintDataType" = @p
 
 -- Firebird.4 Firebird4
-
 SELECT "bigintDataType" FROM "AllTypes" WHERE ID = 2
 
 -- Firebird.4 Firebird4
@@ -43,7 +41,6 @@ SET     @p = 1000000
 SELECT ID FROM "AllTypes" WHERE "bigintDataType" = @p
 
 -- Firebird.4 Firebird4
-
 SELECT "smallintDataType" FROM "AllTypes" WHERE ID = 1
 
 -- Firebird.4 Firebird4
@@ -65,7 +62,6 @@ SET     @p = NULL
 SELECT ID FROM "AllTypes" WHERE @p IS NULL AND "smallintDataType" IS NULL OR @p IS NOT NULL AND "smallintDataType" = @p
 
 -- Firebird.4 Firebird4
-
 SELECT "smallintDataType" FROM "AllTypes" WHERE ID = 2
 
 -- Firebird.4 Firebird4
@@ -87,7 +83,6 @@ SET     @p = 25555
 SELECT ID FROM "AllTypes" WHERE "smallintDataType" = @p
 
 -- Firebird.4 Firebird4
-
 SELECT "decimalDataType" FROM "AllTypes" WHERE ID = 1
 
 -- Firebird.4 Firebird4
@@ -109,7 +104,6 @@ SET     @p = NULL
 SELECT ID FROM "AllTypes" WHERE @p IS NULL AND "decimalDataType" IS NULL OR @p IS NOT NULL AND "decimalDataType" = @p
 
 -- Firebird.4 Firebird4
-
 SELECT "decimalDataType" FROM "AllTypes" WHERE ID = 2
 
 -- Firebird.4 Firebird4
@@ -131,7 +125,6 @@ SET     @p = 2222222
 SELECT ID FROM "AllTypes" WHERE "decimalDataType" = @p
 
 -- Firebird.4 Firebird4
-
 SELECT "intDataType" FROM "AllTypes" WHERE ID = 1
 
 -- Firebird.4 Firebird4
@@ -153,7 +146,6 @@ SET     @p = NULL
 SELECT ID FROM "AllTypes" WHERE @p IS NULL AND "intDataType" IS NULL OR @p IS NOT NULL AND "intDataType" = @p
 
 -- Firebird.4 Firebird4
-
 SELECT "intDataType" FROM "AllTypes" WHERE ID = 2
 
 -- Firebird.4 Firebird4
@@ -175,7 +167,6 @@ SET     @p = 7777777
 SELECT ID FROM "AllTypes" WHERE "intDataType" = @p
 
 -- Firebird.4 Firebird4
-
 SELECT "floatDataType" FROM "AllTypes" WHERE ID = 1
 
 -- Firebird.4 Firebird4
@@ -197,7 +188,6 @@ SET     @p = NULL
 SELECT ID FROM "AllTypes" WHERE @p IS NULL AND "floatDataType" IS NULL OR @p IS NOT NULL AND "floatDataType" = @p
 
 -- Firebird.4 Firebird4
-
 SELECT "floatDataType" FROM "AllTypes" WHERE ID = 2
 
 -- Firebird.4 Firebird4
@@ -219,7 +209,6 @@ SET     @p = 20.3099995
 SELECT ID FROM "AllTypes" WHERE "floatDataType" = @p
 
 -- Firebird.4 Firebird4
-
 SELECT "realDataType" FROM "AllTypes" WHERE ID = 1
 
 -- Firebird.4 Firebird4
@@ -241,7 +230,6 @@ SET     @p = NULL
 SELECT ID FROM "AllTypes" WHERE @p IS NULL AND "realDataType" IS NULL OR @p IS NOT NULL AND "realDataType" = @p
 
 -- Firebird.4 Firebird4
-
 SELECT "realDataType" FROM "AllTypes" WHERE ID = 2
 
 -- Firebird.4 Firebird4
@@ -263,7 +251,6 @@ SET     @p = 16
 SELECT ID FROM "AllTypes" WHERE "realDataType" = @p
 
 -- Firebird.4 Firebird4
-
 SELECT "timestampDataType" FROM "AllTypes" WHERE ID = 1
 
 -- Firebird.4 Firebird4
@@ -285,7 +272,6 @@ SET     @p = NULL
 SELECT ID FROM "AllTypes" WHERE @p IS NULL AND "timestampDataType" IS NULL OR @p IS NOT NULL AND "timestampDataType" = @p
 
 -- Firebird.4 Firebird4
-
 SELECT "timestampDataType" FROM "AllTypes" WHERE ID = 2
 
 -- Firebird.4 Firebird4
@@ -307,7 +293,6 @@ SET     @p = TIMESTAMP '2012-12-12 12:12:12.0000'
 SELECT ID FROM "AllTypes" WHERE "timestampDataType" = @p
 
 -- Firebird.4 Firebird4
-
 SELECT "charDataType" FROM "AllTypes" WHERE ID = 1
 
 -- Firebird.4 Firebird4
@@ -329,7 +314,6 @@ SET     @p = NULL
 SELECT ID FROM "AllTypes" WHERE @p IS NULL AND "charDataType" IS NULL OR @p IS NOT NULL AND "charDataType" = @p
 
 -- Firebird.4 Firebird4
-
 SELECT "charDataType" FROM "AllTypes" WHERE ID = 2
 
 -- Firebird.4 Firebird4
@@ -351,7 +335,6 @@ SET     @p = '1'
 SELECT ID FROM "AllTypes" WHERE "charDataType" = @p
 
 -- Firebird.4 Firebird4
-
 SELECT "varcharDataType" FROM "AllTypes" WHERE ID = 1
 
 -- Firebird.4 Firebird4
@@ -373,7 +356,6 @@ SET     @p = NULL
 SELECT ID FROM "AllTypes" WHERE @p IS NULL AND "varcharDataType" IS NULL OR @p IS NOT NULL AND "varcharDataType" = @p
 
 -- Firebird.4 Firebird4
-
 SELECT "varcharDataType" FROM "AllTypes" WHERE ID = 2
 
 -- Firebird.4 Firebird4
@@ -395,7 +377,6 @@ SET     @p = '234'
 SELECT ID FROM "AllTypes" WHERE "varcharDataType" = @p
 
 -- Firebird.4 Firebird4
-
 SELECT "textDataType" FROM "AllTypes" WHERE ID = 1
 
 -- Firebird.4 Firebird4
@@ -417,7 +398,6 @@ SET     @p = NULL
 SELECT ID FROM "AllTypes" WHERE @p IS NULL AND "textDataType" IS NULL OR @p IS NOT NULL AND "textDataType" = @p
 
 -- Firebird.4 Firebird4
-
 SELECT "textDataType" FROM "AllTypes" WHERE ID = 2
 
 -- Firebird.4 Firebird4
@@ -439,7 +419,6 @@ SET     @p = '567'
 SELECT ID FROM "AllTypes" WHERE "textDataType" = @p
 
 -- Firebird.4 Firebird4
-
 SELECT "ncharDataType" FROM "AllTypes" WHERE ID = 1
 
 -- Firebird.4 Firebird4
@@ -461,7 +440,6 @@ SET     @p = NULL
 SELECT ID FROM "AllTypes" WHERE @p IS NULL AND "ncharDataType" IS NULL OR @p IS NOT NULL AND "ncharDataType" = @p
 
 -- Firebird.4 Firebird4
-
 SELECT "ncharDataType" FROM "AllTypes" WHERE ID = 2
 
 -- Firebird.4 Firebird4
@@ -483,7 +461,6 @@ SET     @p = '23233'
 SELECT ID FROM "AllTypes" WHERE "ncharDataType" = @p
 
 -- Firebird.4 Firebird4
-
 SELECT "nvarcharDataType" FROM "AllTypes" WHERE ID = 1
 
 -- Firebird.4 Firebird4
@@ -505,7 +482,6 @@ SET     @p = NULL
 SELECT ID FROM "AllTypes" WHERE @p IS NULL AND "nvarcharDataType" IS NULL OR @p IS NOT NULL AND "nvarcharDataType" = @p
 
 -- Firebird.4 Firebird4
-
 SELECT "nvarcharDataType" FROM "AllTypes" WHERE ID = 2
 
 -- Firebird.4 Firebird4
@@ -527,7 +503,6 @@ SET     @p = '3323'
 SELECT ID FROM "AllTypes" WHERE "nvarcharDataType" = @p
 
 -- Firebird.4 Firebird4
-
 SELECT "textDataType" FROM "AllTypes" WHERE ID = 1
 
 -- Firebird.4 Firebird4
@@ -549,7 +524,6 @@ SET     @p = NULL
 SELECT ID FROM "AllTypes" WHERE @p IS NULL AND "textDataType" IS NULL OR @p IS NOT NULL AND "textDataType" = @p
 
 -- Firebird.4 Firebird4
-
 SELECT "textDataType" FROM "AllTypes" WHERE ID = 2
 
 -- Firebird.4 Firebird4
@@ -571,7 +545,6 @@ SET     @p = '567'
 SELECT ID FROM "AllTypes" WHERE "textDataType" = @p
 
 -- Firebird.4 Firebird4
-
 SELECT "blobDataType" FROM "AllTypes" WHERE ID = 1
 
 -- Firebird.4 Firebird4
@@ -593,7 +566,6 @@ SET     @p = NULL
 SELECT ID FROM "AllTypes" WHERE @p IS NULL AND "blobDataType" IS NULL OR @p IS NOT NULL AND "blobDataType" = @p
 
 -- Firebird.4 Firebird4
-
 SELECT "blobDataType" FROM "AllTypes" WHERE ID = 2
 
 -- Firebird.4 Firebird4
@@ -615,7 +587,6 @@ SET     @p = X'3132333435'
 SELECT ID FROM "AllTypes" WHERE "blobDataType" = @p
 
 -- Firebird.4 Firebird4
-
 SELECT "decfloat16DataType" FROM "AllTypes" WHERE ID = 1
 
 -- Firebird.4 Firebird4
@@ -637,7 +608,6 @@ SET     @p = NULL
 SELECT ID FROM "AllTypes" WHERE @p IS NULL AND "decfloat16DataType" IS NULL OR @p IS NOT NULL AND "decfloat16DataType" = @p
 
 -- Firebird.4 Firebird4
-
 SELECT "decfloat16DataType" FROM "AllTypes" WHERE ID = 2
 
 -- Firebird.4 Firebird4
@@ -659,7 +629,6 @@ SET     @p = 1234567890123456E-6
 SELECT ID FROM "AllTypes" WHERE "decfloat16DataType" = @p
 
 -- Firebird.4 Firebird4
-
 SELECT "decfloat34DataType" FROM "AllTypes" WHERE ID = 1
 
 -- Firebird.4 Firebird4
@@ -681,7 +650,6 @@ SET     @p = NULL
 SELECT ID FROM "AllTypes" WHERE @p IS NULL AND "decfloat34DataType" IS NULL OR @p IS NOT NULL AND "decfloat34DataType" = @p
 
 -- Firebird.4 Firebird4
-
 SELECT "decfloat34DataType" FROM "AllTypes" WHERE ID = 2
 
 -- Firebird.4 Firebird4
@@ -703,7 +671,6 @@ SET     @p = 1234567890123456789012345678901234E-4
 SELECT ID FROM "AllTypes" WHERE "decfloat34DataType" = @p
 
 -- Firebird.4 Firebird4
-
 SELECT "int128DataType" FROM "AllTypes" WHERE ID = 1
 
 -- Firebird.4 Firebird4
@@ -725,7 +692,6 @@ SET     @p = NULL
 SELECT ID FROM "AllTypes" WHERE @p IS NULL AND "int128DataType" IS NULL OR @p IS NOT NULL AND "int128DataType" = @p
 
 -- Firebird.4 Firebird4
-
 SELECT "int128DataType" FROM "AllTypes" WHERE ID = 2
 
 -- Firebird.4 Firebird4
@@ -747,7 +713,6 @@ SET     @p = 170141183460469231731687303715884105727
 SELECT ID FROM "AllTypes" WHERE "int128DataType" = @p
 
 -- Firebird.4 Firebird4
-
 SELECT "timestampTZDataType" FROM "AllTypes" WHERE ID = 1
 
 -- Firebird.4 Firebird4
@@ -769,7 +734,6 @@ SET     @p = NULL
 SELECT ID FROM "AllTypes" WHERE @p IS NULL AND "timestampTZDataType" IS NULL OR @p IS NOT NULL AND "timestampTZDataType" = @p
 
 -- Firebird.4 Firebird4
-
 SELECT "timestampTZDataType" FROM "AllTypes" WHERE ID = 2
 
 -- Firebird.4 Firebird4
@@ -791,7 +755,6 @@ SET     @p = 12/12/2020 11:24:35 Europe/Andorra
 SELECT ID FROM "AllTypes" WHERE "timestampTZDataType" = @p
 
 -- Firebird.4 Firebird4
-
 SELECT "timeTZDataType" FROM "AllTypes" WHERE ID = 1
 
 -- Firebird.4 Firebird4
@@ -813,7 +776,6 @@ SET     @p = NULL
 SELECT ID FROM "AllTypes" WHERE @p IS NULL AND "timeTZDataType" IS NULL OR @p IS NOT NULL AND "timeTZDataType" = @p
 
 -- Firebird.4 Firebird4
-
 SELECT "timeTZDataType" FROM "AllTypes" WHERE ID = 2
 
 -- Firebird.4 Firebird4

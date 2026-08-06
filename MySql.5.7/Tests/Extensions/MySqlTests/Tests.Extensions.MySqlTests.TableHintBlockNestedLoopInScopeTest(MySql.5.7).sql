@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT /*+ BNL(p) BNL(c_1) */
 	`p`.`ParentID`,
 	`p`.`Value1`

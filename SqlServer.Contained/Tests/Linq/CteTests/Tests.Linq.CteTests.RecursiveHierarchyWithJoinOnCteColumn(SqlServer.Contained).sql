@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 WITH [cte] ([ParentID], [ChildID], [Level_1])
 AS
 (

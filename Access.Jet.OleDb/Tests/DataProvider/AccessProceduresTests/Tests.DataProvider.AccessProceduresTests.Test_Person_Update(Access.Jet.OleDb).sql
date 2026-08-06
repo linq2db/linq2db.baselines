@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 INSERT INTO [Person]
 (
 	[FirstName],

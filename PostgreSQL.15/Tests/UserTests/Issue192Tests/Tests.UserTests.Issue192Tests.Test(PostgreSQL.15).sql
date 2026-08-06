@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name Text(11) -- String
@@ -23,7 +23,7 @@ VALUES
 	:GuidValue
 )
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Name Text(8) -- String
@@ -48,8 +48,7 @@ VALUES
 	:GuidValue
 )
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -57,8 +56,7 @@ FROM
 WHERE
 	t1."BoolValue" = 'N'
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -66,7 +64,7 @@ FROM
 WHERE
 	t1."BoolValue" = 'Y'
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL12
 DECLARE @GuidValue Varchar(36) -- String
 SET     @GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
@@ -77,8 +75,7 @@ FROM
 WHERE
 	t1."GuidValue" = :GuidValue
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Name",
@@ -90,8 +87,7 @@ WHERE
 	t1."BoolValue" = 'N'
 LIMIT 1
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Name",
@@ -103,8 +99,7 @@ WHERE
 	t1."BoolValue" = 'Y'
 LIMIT 1
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Name",
@@ -116,8 +111,7 @@ WHERE
 	t1."BoolValue" = 'N'
 LIMIT 1
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Name",
@@ -129,8 +123,7 @@ WHERE
 	t1."BoolValue" = 'Y'
 LIMIT 1
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Name",
@@ -142,8 +135,7 @@ WHERE
 	t1."BoolValue" = 'N'
 LIMIT 1
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Name",
@@ -155,8 +147,7 @@ WHERE
 	t1."BoolValue" = 'Y'
 LIMIT 1
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Name",
@@ -168,8 +159,7 @@ WHERE
 	t1."BoolValue" = 'N'
 LIMIT 1
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Name",
@@ -181,8 +171,7 @@ WHERE
 	t1."BoolValue" = 'Y'
 LIMIT 1
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Name",
@@ -194,8 +183,7 @@ WHERE
 	t1."BoolValue" = 'N'
 LIMIT 1
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Name",
@@ -207,7 +195,7 @@ WHERE
 	t1."BoolValue" = 'Y'
 LIMIT 1
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL12
 DECLARE @GuidValue Varchar(36) -- String
 SET     @GuidValue = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
@@ -222,7 +210,7 @@ WHERE
 	t1."GuidValue" = :GuidValue
 LIMIT 1
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL12
 DECLARE @GuidValue Varchar(36) -- String
 SET     @GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
 

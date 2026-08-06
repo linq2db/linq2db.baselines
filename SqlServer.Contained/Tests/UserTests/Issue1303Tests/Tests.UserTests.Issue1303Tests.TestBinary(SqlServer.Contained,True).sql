@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 INSERT INTO [Issue1303]
 (
 	[ID],
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT TOP (2)
 	[t1].[ID],
 	[t1].[Array],
@@ -25,7 +23,6 @@ WHERE
 	[t1].[ID] = 1
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT TOP (2)
 	[t1].[ID],
 	[t1].[Array],
@@ -36,7 +33,6 @@ WHERE
 	[t1].[Array] = 0x010203
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT TOP (2)
 	[t1].[ID],
 	[t1].[Array],

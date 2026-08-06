@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[i].[Id],
 	IIF([a_SubData].[Id] IS NULL, NULL, (

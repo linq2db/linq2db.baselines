@@ -1,5 +1,4 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT /*+ NO_UNNEST(@Parent) */
 	p_1."ParentID",
 	p_1."Value1"

@@ -14,7 +14,6 @@ WHERE
 	"r"."Column" = ? AND "r"."ColumnNullable" = ?
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"r"."Id",
 	"r"."Column",
@@ -25,7 +24,6 @@ WHERE
 	"r"."Column" = 'value=2' AND "r"."ColumnNullable" = 'value=33'
 
 -- SapHana.Odbc SapHanaOdbc
-
 DELETE FROM
 	"StringEnumTable" "t1"
 
@@ -72,7 +70,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Column",
@@ -83,7 +80,6 @@ ORDER BY
 	"t1"."Id"
 
 -- SapHana.Odbc SapHanaOdbc
-
 DELETE FROM
 	"StringEnumTable" "t1"
 
@@ -130,7 +126,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Column",
@@ -141,7 +136,6 @@ ORDER BY
 	"t1"."Id"
 
 -- SapHana.Odbc SapHanaOdbc
-
 DELETE FROM
 	"StringEnumTable" "t1"
 
@@ -188,7 +182,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Column",

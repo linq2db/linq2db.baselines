@@ -20,7 +20,6 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t].[Id],
 	[t].[Name],
@@ -48,7 +47,6 @@ WHERE
 	[PR_1598_Insert_Table_Cache].[Id] = @Id
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t].[Id],
 	[t].[Name],

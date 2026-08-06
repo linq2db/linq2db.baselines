@@ -1,5 +1,4 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
-
 CREATE TABLE "UseAlternativeBulkCopy"
 (
 	"Id"    Int NOT NULL,
@@ -7,7 +6,6 @@ CREATE TABLE "UseAlternativeBulkCopy"
 )
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 INSERT INTO "UseAlternativeBulkCopy"
 (
 	"Id",
@@ -41,7 +39,6 @@ INSERT INTO "UseAlternativeBulkCopy"
 	SELECT 24,24 FROM DUAL 
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 INSERT INTO "UseAlternativeBulkCopy"
 (
 	"Id",
@@ -75,7 +72,6 @@ INSERT INTO "UseAlternativeBulkCopy"
 	SELECT 49,49 FROM DUAL 
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 INSERT INTO "UseAlternativeBulkCopy"
 (
 	"Id",
@@ -109,7 +105,6 @@ INSERT INTO "UseAlternativeBulkCopy"
 	SELECT 74,74 FROM DUAL 
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 INSERT INTO "UseAlternativeBulkCopy"
 (
 	"Id",
@@ -143,7 +138,6 @@ INSERT INTO "UseAlternativeBulkCopy"
 	SELECT 99,99 FROM DUAL 
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -151,6 +145,5 @@ FROM
 	"UseAlternativeBulkCopy" t1
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 DROP TABLE "UseAlternativeBulkCopy"
 

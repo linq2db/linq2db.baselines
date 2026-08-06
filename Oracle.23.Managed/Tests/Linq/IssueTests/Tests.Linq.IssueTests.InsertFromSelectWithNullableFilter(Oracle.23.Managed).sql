@@ -1,5 +1,4 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 INSERT INTO "InsertIssueTest"
 (
 	"Pk",
@@ -47,7 +46,6 @@ FROM
 	) t2
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Pk",
 	t1.ID,

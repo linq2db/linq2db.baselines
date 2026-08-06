@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[t].[ParentID],
 	(
@@ -14,7 +13,6 @@ FROM
 	[Parent] [t]
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[t].[ParentID],
 	(

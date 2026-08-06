@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 SELECT
 	"p"."PersonID",
 	"p2"."FirstName"
@@ -11,7 +10,6 @@ WHERE
 	"p"."PersonID" = "p2"."PersonID"
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"p"."PersonID",
 	"p2"."FirstName"

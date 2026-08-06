@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 UPDATE
 	`Parent` `w`
 		INNER JOIN `Child` `b` ON `w`.`ParentID` = `b`.`ParentID`

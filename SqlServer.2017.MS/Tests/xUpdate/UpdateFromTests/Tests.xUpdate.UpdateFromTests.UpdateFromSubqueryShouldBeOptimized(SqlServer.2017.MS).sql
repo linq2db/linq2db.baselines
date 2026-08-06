@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
-
 DELETE [t1]
 FROM
 	[Person] [t1]
@@ -7,7 +6,6 @@ WHERE
 	[t1].[PersonID] > 4
 
 -- SqlServer.2017.MS SqlServer.2017
-
 UPDATE
 	[x]
 SET
@@ -20,7 +18,6 @@ WHERE
 	[x].[Id] = 1
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t1].[Id],
 	[t1].[FirstName],
@@ -31,7 +28,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlServer.2017.MS SqlServer.2017
-
 DELETE [t1]
 FROM
 	[Person] [t1]

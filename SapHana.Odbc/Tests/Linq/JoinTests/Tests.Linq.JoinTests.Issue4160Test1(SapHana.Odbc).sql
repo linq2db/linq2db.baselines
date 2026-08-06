@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT DISTINCT
 	"t1"."Value_1"
 FROM

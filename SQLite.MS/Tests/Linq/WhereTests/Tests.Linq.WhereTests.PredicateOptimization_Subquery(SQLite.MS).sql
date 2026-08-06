@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[p].[PK],
 	[p].[Id],
@@ -23,7 +22,6 @@ WHERE
 	) > strftime('%Y-%m-%d %H:%M:%f', '2023-01-01 00:00:00.000')
 
 -- SQLite.MS SQLite
-
 SELECT
 	[p].[PK],
 	[p].[Id],

@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT
 	[t1].[Key_1],
 	Coalesce((
@@ -82,7 +81,6 @@ ORDER BY
 	[t1].[Key_1]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[PK],
 	[t1].[Id],

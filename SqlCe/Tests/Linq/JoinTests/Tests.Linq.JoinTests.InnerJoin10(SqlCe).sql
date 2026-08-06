@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[p].[ParentID],
 	[q1].[GrandChildID]

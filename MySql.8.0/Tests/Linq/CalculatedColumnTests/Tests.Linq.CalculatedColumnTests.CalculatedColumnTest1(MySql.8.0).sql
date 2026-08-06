@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`i_1`.`PersonID`,
 	`i_1`.`FirstName`,

@@ -1,5 +1,4 @@
 ﻿-- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	MAX(t1."PersonID")
 FROM
@@ -35,7 +34,7 @@ DECLARE @id Int32
 SET     @id = 4
 
 SELECT
-	p2."PersonID" as ID,
+	p2."PersonID",
 	p2."Gender",
 	p2."FirstName",
 	p2."MiddleName",

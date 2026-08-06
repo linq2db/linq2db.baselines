@@ -1,9 +1,7 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DELETE FROM `test_temp`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `test_temp`
 (
 	`Field1`
@@ -14,7 +12,6 @@ VALUES
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `test_temp`
 (
 	`Field1`
@@ -38,11 +35,9 @@ ORDER BY
 LIMIT @skip, 2
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DELETE FROM `test_temp`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `test_temp`
 (
 	`Field1`
@@ -53,7 +48,6 @@ VALUES
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `test_temp`
 (
 	`Field1`

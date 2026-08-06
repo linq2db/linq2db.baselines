@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 INSERT INTO [Issue1107TB]
 (
 	[Id],

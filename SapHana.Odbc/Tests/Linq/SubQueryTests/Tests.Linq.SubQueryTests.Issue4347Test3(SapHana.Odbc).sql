@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"m_1"."Id",
 	"d"."Id",
@@ -10,7 +9,6 @@ FROM
 		INNER JOIN "LineEntity" "d" ON "m_1"."Id" = "d"."TransactionId"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"x"."Id",
 	"x"."ValidOn"

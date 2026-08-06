@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[e].[Id],
 	[a_ObjectBOptional].[Id],

@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 WITH "CTE_1"
 (
 	"entry_ID",
@@ -31,7 +30,6 @@ WHERE
 	"x"."entry_ID" = 1
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"x"."FirstName",
 	"x"."PersonID",

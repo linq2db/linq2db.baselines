@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 CREATE TABLE [tempdb]..[#TableWithData_target]
 (
 	[Id]       Int          NOT NULL,
@@ -10,7 +9,6 @@ CREATE TABLE [tempdb]..[#TableWithData_target]
 )
 
 -- SqlServer.2017
-
 SELECT
 	[s].[Id],
 	[s].[Value],
@@ -21,7 +19,6 @@ WHERE
 	[s].[Id] > 3
 
 -- SqlServer.2017
-
 DELETE [s]
 OUTPUT
 	DELETED.[Id],
@@ -39,7 +36,6 @@ WHERE
 	[s].[Id] > 3
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Id],
 	[t1].[Value],
@@ -48,6 +44,5 @@ FROM
 	[tempdb]..[#TableWithData_target] [t1]
 
 -- SqlServer.2017
-
 DROP TABLE IF EXISTS [tempdb]..[#TableWithData_target]
 

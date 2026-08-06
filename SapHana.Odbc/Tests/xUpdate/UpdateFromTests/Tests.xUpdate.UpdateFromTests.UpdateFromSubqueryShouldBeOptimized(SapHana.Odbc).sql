@@ -1,12 +1,10 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 DELETE FROM
 	"Person" "t1"
 WHERE
 	"t1"."PersonID" > 4
 
 -- SapHana.Odbc SapHanaOdbc
-
 UPDATE
 	"UpdateSubquerySourceTable"
 SET
@@ -30,7 +28,6 @@ WHERE
 	"UpdateSubquerySourceTable"."Id" = 1
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."FirstName",
@@ -41,7 +38,6 @@ ORDER BY
 	"t1"."Id"
 
 -- SapHana.Odbc SapHanaOdbc
-
 DELETE FROM
 	"Person" "t1"
 WHERE

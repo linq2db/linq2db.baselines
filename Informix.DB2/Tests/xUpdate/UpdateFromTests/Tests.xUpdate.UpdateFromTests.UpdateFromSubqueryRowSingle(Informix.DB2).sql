@@ -1,7 +1,6 @@
 ﻿-- Informix.DB2 Informix
-
 UPDATE
-	NewEntities
+	NewEntities u1
 SET
 	Value1 = (
 		SELECT
@@ -9,7 +8,7 @@ SET
 		FROM
 			(
 				SELECT
-					NewEntities.Value3 + 10 as c1
+					u1.Value3 + 10 as c1
 				FROM table(set{1})
 			) t1
 				LEFT JOIN UpdatedEntities n2 ON n2.id = t1.c1
@@ -23,7 +22,7 @@ SET
 		FROM
 			(
 				SELECT
-					NewEntities.Value3 + 10 as c1
+					u1.Value3 + 10 as c1
 				FROM table(set{1})
 			) t2
 				LEFT JOIN UpdatedEntities n2_1 ON n2_1.id = t2.c1
@@ -32,5 +31,5 @@ SET
 			n3_1.RelatedValue3 < 1000
 	)
 WHERE
-	NewEntities.id = 7
+	u1.id = 7
 

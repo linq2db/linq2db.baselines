@@ -4,7 +4,7 @@ SET     @testedList = '[{"Value":"Value1"}]'
 
 SELECT
 	[m_1].[Id],
-	[m_1].[Id],
+	[m_1].[Id] as [Id_1],
 	[m_1].[Value1],
 	[m_1].[Value2],
 	[m_1].[Enum],

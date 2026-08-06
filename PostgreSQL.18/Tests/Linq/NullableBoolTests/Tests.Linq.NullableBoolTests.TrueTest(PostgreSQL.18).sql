@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
-
+﻿-- PostgreSQL.18 PostgreSQL12
 SELECT
 	t."Id",
 	t."Value"
@@ -8,8 +7,7 @@ FROM
 WHERE
 	t."Value" = True
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	t."Id",
 	t."Value"
@@ -18,8 +16,7 @@ FROM
 WHERE
 	t."Value" = True
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	t."Id",
 	t."Value"
@@ -28,8 +25,7 @@ FROM
 WHERE
 	t."Value" = False OR t."Value" IS NULL
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	t."Id",
 	t."Value"

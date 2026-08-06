@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	currentDatabase()
 FROM
@@ -7,7 +6,6 @@ FROM
 LIMIT 1
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	testdb1.Issue681Table
 DELETE WHERE

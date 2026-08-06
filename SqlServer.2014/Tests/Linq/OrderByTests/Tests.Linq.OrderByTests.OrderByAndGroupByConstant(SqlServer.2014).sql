@@ -10,7 +10,6 @@ FROM
 	[Child] [g_1]
 
 -- SqlServer.2014
-
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID]

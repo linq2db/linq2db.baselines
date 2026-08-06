@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.15 PostgreSQL12
 SELECT
 	Coalesce(e."Str1", '') || '/' || Coalesce(e."StrReq", '')
 FROM
@@ -7,8 +6,7 @@ FROM
 ORDER BY
 	e."Id"
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Str1",

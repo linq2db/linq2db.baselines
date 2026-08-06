@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`m_1`.`ID`,
 	`m_1`.`ValS`,
@@ -11,7 +10,6 @@ FROM
 		INNER JOIN `Issue3757Level2` `d` ON `m_1`.`ID` = `d`.`ParentId`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`l1`.`ID`,
 	`l1`.`ValB`,

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[t3].[NAME3],
 	[t2].[not_null_1],

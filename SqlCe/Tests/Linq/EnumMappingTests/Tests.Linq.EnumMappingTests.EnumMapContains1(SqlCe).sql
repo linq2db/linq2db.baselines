@@ -8,7 +8,6 @@ WHERE
 	[LinqDataTypes].[ID] >= 101 AND [LinqDataTypes].[ID] < @p
 
 -- SqlCe
-
 INSERT INTO [LinqDataTypes]
 (
 	[ID],
@@ -21,9 +20,8 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[LinqDataTypes] [r]
 WHERE

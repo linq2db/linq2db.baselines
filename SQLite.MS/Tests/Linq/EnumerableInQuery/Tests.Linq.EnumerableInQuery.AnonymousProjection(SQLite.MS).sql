@@ -1,12 +1,10 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[t1].[ParentID]
 FROM
 	[Parent] [t1]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID]
@@ -25,14 +23,12 @@ FROM
 			) [d] ON [d].[ParentID] = [m_1].[ParentID]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[ParentID]
 FROM
 	[Parent] [t1]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

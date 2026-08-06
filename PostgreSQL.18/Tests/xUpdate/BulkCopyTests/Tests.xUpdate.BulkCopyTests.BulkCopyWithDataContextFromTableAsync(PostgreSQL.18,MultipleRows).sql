@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
-
+﻿-- PostgreSQL.18 PostgreSQL12
 INSERT INTO "SimpleBulkCopyTable"
 (
 	"Id"
@@ -7,8 +6,7 @@ INSERT INTO "SimpleBulkCopyTable"
 VALUES
 (1)
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 INSERT INTO "SimpleBulkCopyTable"
 (
 	"Id"
@@ -16,8 +14,7 @@ INSERT INTO "SimpleBulkCopyTable"
 VALUES
 (2)
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 INSERT INTO "SimpleBulkCopyTable"
 (
 	"Id"
@@ -25,8 +22,7 @@ INSERT INTO "SimpleBulkCopyTable"
 VALUES
 (3)
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 INSERT INTO "SimpleBulkCopyTable"
 (
 	"Id"
@@ -34,8 +30,7 @@ INSERT INTO "SimpleBulkCopyTable"
 VALUES
 (10)
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 INSERT INTO "SimpleBulkCopyTable"
 (
 	"Id"
@@ -43,8 +38,7 @@ INSERT INTO "SimpleBulkCopyTable"
 VALUES
 (20)
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 INSERT INTO "SimpleBulkCopyTable"
 (
 	"Id"

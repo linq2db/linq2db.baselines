@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[x].[FirstName],
 	[x].[PersonID],
@@ -13,7 +12,6 @@ WHERE
 	1 = 0
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[x].[FirstName],
 	[x].[PersonID],

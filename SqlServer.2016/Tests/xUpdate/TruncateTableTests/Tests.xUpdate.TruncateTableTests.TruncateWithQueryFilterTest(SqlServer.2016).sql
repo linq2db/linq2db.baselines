@@ -1,13 +1,10 @@
 ﻿-- SqlServer.2016
-
 DROP TABLE IF EXISTS [TestTrun]
 
 -- SqlServer.2016
-
 DROP TABLE IF EXISTS [TestTrunDetail]
 
 -- SqlServer.2016
-
 CREATE TABLE [TestTrunDetail]
 (
 	[ID]         Int NOT NULL,
@@ -18,7 +15,6 @@ CREATE TABLE [TestTrunDetail]
 )
 
 -- SqlServer.2016
-
 CREATE TABLE [TestTrun]
 (
 	[ID]     Int             NOT NULL,
@@ -28,14 +24,11 @@ CREATE TABLE [TestTrun]
 )
 
 -- SqlServer.2016
-
 TRUNCATE TABLE [TestTrun]
 
 -- SqlServer.2016
-
 DROP TABLE [TestTrun]
 
 -- SqlServer.2016
-
 DROP TABLE [TestTrunDetail]
 

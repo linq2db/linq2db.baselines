@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"g_2"."ChildId",
 	"g_2"."ParentId",
@@ -19,7 +18,6 @@ GROUP BY
 	"g_2"."ParentId"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."ParentID",
 	"t1"."ChildID"

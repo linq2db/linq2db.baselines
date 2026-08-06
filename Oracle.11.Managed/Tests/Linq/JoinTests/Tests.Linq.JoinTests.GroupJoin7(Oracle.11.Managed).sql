@@ -18,7 +18,6 @@ FROM
 		INNER JOIN "Child" d ON m_1."ParentID" = d."ParentID" - :n
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	p."ParentID",
 	p."Value1"

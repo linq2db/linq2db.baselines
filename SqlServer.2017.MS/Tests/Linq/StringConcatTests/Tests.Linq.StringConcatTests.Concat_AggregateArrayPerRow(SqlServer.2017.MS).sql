@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t].[Id],
 	CONCAT_WS(N'', Coalesce([t].[Str1], N''), Coalesce([t].[Str2], N''), Coalesce([t].[StrReq], N''))
@@ -9,7 +8,6 @@ ORDER BY
 	[t].[Id]
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t1].[Id],
 	[t1].[Str1],

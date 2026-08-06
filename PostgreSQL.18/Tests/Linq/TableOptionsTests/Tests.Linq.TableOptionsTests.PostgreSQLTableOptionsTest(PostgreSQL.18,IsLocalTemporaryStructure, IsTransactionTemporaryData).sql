@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
-
+﻿-- PostgreSQL.18 PostgreSQL12
 CREATE TEMPORARY TABLE "TestTable"
 (
 	"Id"    Int NOT NULL,
@@ -9,7 +8,6 @@ CREATE TEMPORARY TABLE "TestTable"
 )
 ON COMMIT DELETE ROWS
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 DROP TABLE IF EXISTS "TestTable"
 

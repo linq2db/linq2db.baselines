@@ -1,9 +1,8 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[m_1].[Id],
 	[m_1].[Id_1],
-	[d_1].[Id],
+	[d_1].[Id] as [Id_2],
 	[d_1].[FK]
 FROM
 	(
@@ -17,11 +16,10 @@ FROM
 		INNER JOIN [EntityMC] [d_1] ON ([m_1].[Id] = [d_1].[FK])
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[m_1].[Id],
-	[d].[Id],
-	[a_ObjectD].[Id],
+	[d].[Id] as [Id_1],
+	[a_ObjectD].[Id] as [Id_2],
 	[a_ObjectD].[FK]
 FROM
 	([EntityMA] [m_1]
@@ -29,7 +27,6 @@ FROM
 		LEFT JOIN [EntityMD] [a_ObjectD] ON ([d].[FKD] = [a_ObjectD].[Id])
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[e].[Id]
 FROM

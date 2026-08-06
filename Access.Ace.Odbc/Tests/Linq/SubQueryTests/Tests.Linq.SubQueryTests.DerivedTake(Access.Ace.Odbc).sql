@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t2].[ParentID],
 	[t2].[Value1]
@@ -13,7 +12,6 @@ FROM
 	) [t2]
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

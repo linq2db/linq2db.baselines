@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
-
 DELETE [p]
 FROM
 	[AllTypes] [p]
@@ -7,11 +6,9 @@ WHERE
 	[p].[ID] >= 700
 
 -- SqlServer.2022.MS SqlServer.2022
-
 SET IDENTITY_INSERT [AllTypes] ON
 
 -- SqlServer.2022.MS SqlServer.2022
-
 INSERT INTO [AllTypes]
 (
 	[ID],
@@ -61,11 +58,9 @@ VALUES
 (701,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
 
 -- SqlServer.2022.MS SqlServer.2022
-
 SET IDENTITY_INSERT [AllTypes] OFF
 
 -- SqlServer.2022.MS SqlServer.2022
-
 SELECT
 	[t].[ID],
 	[t].[bigintDataType],
@@ -117,7 +112,6 @@ ORDER BY
 	[t].[ID]
 
 -- SqlServer.2022.MS SqlServer.2022
-
 DELETE [p]
 FROM
 	[AllTypes] [p]

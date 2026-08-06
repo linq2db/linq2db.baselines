@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT DISTINCT
 	Extract(year from "a_Types"."DateTimeValue")
 FROM

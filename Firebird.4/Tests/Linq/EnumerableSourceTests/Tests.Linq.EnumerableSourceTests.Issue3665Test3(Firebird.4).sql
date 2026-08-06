@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 SELECT
 	"x"."PersonID" + "y"."item"
 FROM
@@ -10,7 +9,6 @@ FROM
 			SELECT 3 FROM rdb$database) "y"
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."FirstName",
 	"t1"."PersonID",

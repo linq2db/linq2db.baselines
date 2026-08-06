@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT SKIP 6
 	"t1"."Id",
 	"t1"."Value"

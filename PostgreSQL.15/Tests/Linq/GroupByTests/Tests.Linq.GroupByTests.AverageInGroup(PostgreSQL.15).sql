@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.15 PostgreSQL12
 SELECT
 	g_1."GroupId",
 	AVG(g_1."DataValue"),
@@ -16,8 +15,7 @@ WHERE
 GROUP BY
 	g_1."GroupId"
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."GroupId",

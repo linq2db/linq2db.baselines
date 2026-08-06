@@ -6,7 +6,7 @@ SET     @Data_1 = 'Data 7778'
 
 SELECT
 	[t1].[Id],
-	[t1].[Data] as [Data_1]
+	[t1].[Data]
 FROM
 	(
 		SELECT 7777 AS [Id], @Data AS [Data]

@@ -16,7 +16,6 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	r.ID,
 	r."Data"
@@ -26,7 +25,6 @@ ORDER BY
 	r.ID
 
 -- DuckDB
-
 SELECT
 	r.ID,
 	r."Data"

@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
-
+﻿-- PostgreSQL.18 PostgreSQL12
 INSERT INTO "Issue1303"
 (
 	"ID",
@@ -13,8 +12,7 @@ VALUES
 	E'\\x0405'::bytea
 )
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	t1."ID",
 	t1."Array",
@@ -25,8 +23,7 @@ WHERE
 	t1."ID" = 1
 LIMIT 2
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	t1."ID",
 	t1."Array",
@@ -37,8 +34,7 @@ WHERE
 	t1."Array" = E'\\x010203'::bytea
 LIMIT 2
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	t1."ID",
 	t1."Array",

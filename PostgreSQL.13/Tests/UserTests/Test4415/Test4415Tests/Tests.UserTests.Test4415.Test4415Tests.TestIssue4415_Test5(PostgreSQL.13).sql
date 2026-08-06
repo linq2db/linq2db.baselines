@@ -1,13 +1,11 @@
-﻿-- PostgreSQL.13 PostgreSQL
-
+﻿-- PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."LanguageID",
 	t1."Name"
 FROM
 	"Common_Language" t1
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	x."LanguageID",
 	x."Name"

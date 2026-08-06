@@ -1,5 +1,4 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT /*+ PQ_SKEW(p) */
 	p."ParentID",
 	p."Value1"

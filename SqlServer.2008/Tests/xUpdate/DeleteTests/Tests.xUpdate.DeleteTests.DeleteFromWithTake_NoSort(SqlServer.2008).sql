@@ -74,7 +74,6 @@ WHERE
 	)
 
 -- SqlServer.2008
-
 SELECT
 	COUNT(*)
 FROM
@@ -83,7 +82,6 @@ WHERE
 	[c_1].[ParentID] > 1000
 
 -- SqlServer.2008
-
 DELETE [c_1]
 FROM
 	[Parent] [c_1]

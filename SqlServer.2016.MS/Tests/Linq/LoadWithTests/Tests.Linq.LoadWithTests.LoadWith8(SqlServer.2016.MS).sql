@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
-
 SELECT TOP (1)
 	[a_GrandChildren].[ParentID],
 	[a_GrandChildren].[ChildID],

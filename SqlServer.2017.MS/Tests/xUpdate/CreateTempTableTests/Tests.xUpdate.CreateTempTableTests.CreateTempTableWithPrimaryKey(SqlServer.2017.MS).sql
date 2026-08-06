@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
-
 CREATE TABLE [tempdb]..[#TableWithPrimaryKey]
 (
 	[Key] Int NOT NULL,
@@ -8,6 +7,5 @@ CREATE TABLE [tempdb]..[#TableWithPrimaryKey]
 )
 
 -- SqlServer.2017.MS SqlServer.2017
-
 DROP TABLE IF EXISTS [tempdb]..[#TableWithPrimaryKey]
 

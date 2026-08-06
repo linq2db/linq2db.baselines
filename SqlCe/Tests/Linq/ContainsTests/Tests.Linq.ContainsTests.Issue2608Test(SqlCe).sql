@@ -5,7 +5,7 @@ DECLARE @site Int -- Int32
 SET     @site = 2
 
 SELECT
-	CAST([f].[StringValue] AS SmallInt) as [StatusPhase]
+	CAST([f].[StringValue] AS SmallInt)
 FROM
 	[LinqDataTypes] [x]
 		INNER JOIN [LinqDataTypes] [o] ON [x].[IntValue] = [o].[IntValue] OR [x].[IntValue] IS NULL AND [o].[IntValue] IS NULL

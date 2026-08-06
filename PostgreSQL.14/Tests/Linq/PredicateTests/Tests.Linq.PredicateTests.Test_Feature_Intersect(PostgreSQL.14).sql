@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -13,8 +12,7 @@ WHERE
 			r."One"
 	)
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -28,8 +26,7 @@ WHERE
 			r."Zero"
 	)
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -43,8 +40,7 @@ WHERE
 			r."Null"
 	)
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -58,8 +54,7 @@ WHERE
 			r."Zero"
 	)
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -73,8 +68,7 @@ WHERE
 			r."Null"
 	)
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -88,8 +82,7 @@ WHERE
 			r."Null"
 	)
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -103,8 +96,7 @@ WHERE
 			r."One"
 	)
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -118,8 +110,7 @@ WHERE
 			r."Zero"
 	)
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -133,8 +124,7 @@ WHERE
 			r."Null"
 	)
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -148,8 +138,7 @@ WHERE
 			r."Zero"
 	)
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -163,8 +152,7 @@ WHERE
 			r."Null"
 	)
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM

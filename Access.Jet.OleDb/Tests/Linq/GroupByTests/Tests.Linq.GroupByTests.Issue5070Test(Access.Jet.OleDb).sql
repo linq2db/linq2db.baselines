@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t_1].[FinalCustomerId],
 	[t_1].[IsActive],

@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT DISTINCT
 	[p].[ParentID],
 	[p].[Value1]
@@ -17,7 +16,6 @@ ORDER BY
 	[p].[ParentID]
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]
@@ -25,11 +23,10 @@ FROM
 	[Parent] [t1]
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID],
-	[a_Parent].[ParentID],
+	[a_Parent].[ParentID] as [ParentID_1],
 	[a_Parent].[Value1]
 FROM
 	[Child] [t1]

@@ -1,17 +1,13 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT Cast('1' as char)
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT Cast('1' as char)
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT Cast('1' as char(1))
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT Cast('1' as char(1))
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57

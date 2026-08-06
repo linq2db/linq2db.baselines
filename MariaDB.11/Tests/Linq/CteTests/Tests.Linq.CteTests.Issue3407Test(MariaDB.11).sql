@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 WITH `CTE_1`
 (
 	`ID`,
@@ -38,7 +37,6 @@ WHERE
 	`r`.`ID` = 2
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 WITH `CTE_1` (`c1`)
 AS
 (

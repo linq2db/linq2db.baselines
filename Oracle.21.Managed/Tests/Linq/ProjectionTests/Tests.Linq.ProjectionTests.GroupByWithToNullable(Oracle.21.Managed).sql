@@ -4,7 +4,7 @@ SET     @take = 1000
 
 SELECT
 	a_Patient."Diagnosis",
-	a_Patient."PersonID" as "id",
+	a_Patient."PersonID",
 	AVG(auto16031."PersonID") as "y"
 FROM
 	"Person" auto16031

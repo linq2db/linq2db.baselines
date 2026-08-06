@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.15 PostgreSQL12
 INSERT INTO "SimpleBulkCopyTable"
 (
 	"Id"
@@ -7,8 +6,7 @@ INSERT INTO "SimpleBulkCopyTable"
 VALUES
 (1)
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 INSERT INTO "SimpleBulkCopyTable"
 (
 	"Id"
@@ -16,8 +14,7 @@ INSERT INTO "SimpleBulkCopyTable"
 VALUES
 (2)
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 INSERT INTO "SimpleBulkCopyTable"
 (
 	"Id"

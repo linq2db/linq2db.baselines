@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 SELECT
 	IIF([p].[ParentID] IN (
 		SELECT

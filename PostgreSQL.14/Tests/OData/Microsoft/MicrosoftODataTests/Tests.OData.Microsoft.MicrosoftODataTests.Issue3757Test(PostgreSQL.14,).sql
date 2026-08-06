@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	m_1."ID",
 	m_1."ValS",
@@ -10,8 +9,7 @@ FROM
 	"Issue3757Level1" m_1
 		INNER JOIN "Issue3757Level2" d ON m_1."ID" = d."ParentId"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	l1."ID",
 	l1."ValB",

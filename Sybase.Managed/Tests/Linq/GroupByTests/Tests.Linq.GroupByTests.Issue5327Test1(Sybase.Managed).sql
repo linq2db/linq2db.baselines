@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[c_1].[Key]
 FROM
@@ -10,7 +9,6 @@ ORDER BY
 	SUM([c_1].[Value]) DESC
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[Key],

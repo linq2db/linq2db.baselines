@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 UPDATE
 	`ParentTable` `a_Parent`,
 	`ChildTable` `c_1`
@@ -9,7 +8,6 @@ WHERE
 	`a_Parent`.`Id` = 2 AND `c_1`.`ParentId` = `a_Parent`.`Id`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`p`.`Id`,
 	`p`.`Value`

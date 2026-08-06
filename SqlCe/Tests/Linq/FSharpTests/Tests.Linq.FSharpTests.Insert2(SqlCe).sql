@@ -1,7 +1,6 @@
 ﻿-- SqlCe
-
 SELECT
-	MAX([t1].[PersonID]) as [Max_1]
+	MAX([t1].[PersonID])
 FROM
 	[Person] [t1]
 
@@ -31,9 +30,8 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT TOP (2)
-	[p].[PersonID] as [ID],
+	[p].[PersonID],
 	[p].[FirstName],
 	[p].[MiddleName],
 	[p].[LastName],
@@ -44,7 +42,6 @@ WHERE
 	[p].[PersonID] > 4
 
 -- SqlCe
-
 DELETE FROM
 	[Person]
 WHERE

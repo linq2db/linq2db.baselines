@@ -12,7 +12,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT FIRST 1
 	t1.Id,
 	t1.CharFld

@@ -1,12 +1,10 @@
 ﻿-- SqlServer.2008
-
 SELECT
 	N'...' + Coalesce([t].[VarCharColumn], '')
 FROM
 	[StringTrimTable] [t]
 
 -- SqlServer.2008
-
 SELECT
 	[t1].[Id],
 	[t1].[CharColumn],

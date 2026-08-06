@@ -1,19 +1,17 @@
 ﻿-- SqlCe
-
 SELECT
 	[p].[FirstName]
 FROM
 	[Person] [p]
 UNION ALL
 SELECT
-	[p_1].[FirstName] + '/' + [p_1].[LastName] as [FirstName]
+	[p_1].[FirstName] + '/' + [p_1].[LastName]
 FROM
 	[Person] [p_1]
 
 -- SqlCe
-
 SELECT
-	[p].[FirstName] + '/' + [p].[LastName] as [FirstName]
+	[p].[FirstName] + '/' + [p].[LastName]
 FROM
 	[Person] [p]
 UNION ALL

@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -7,8 +6,7 @@ FROM
 WHERE
 	p."FirstName" ILIKE 'joH%' ESCAPE '~' AND p."PersonID" = 1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM

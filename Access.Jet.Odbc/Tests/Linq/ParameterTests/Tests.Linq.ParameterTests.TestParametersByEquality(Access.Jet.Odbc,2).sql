@@ -10,11 +10,11 @@ SELECT
 	[p].[LastName],
 	[p].[MiddleName],
 	[p].[Gender],
-	[p].[FirstName],
-	[p].[PersonID],
-	[p].[LastName],
-	[p].[MiddleName],
-	[p].[Gender]
+	[p].[FirstName] as [FirstName_1],
+	[p].[PersonID] as [ID_1],
+	[p].[LastName] as [LastName_1],
+	[p].[MiddleName] as [MiddleName_1],
+	[p].[Gender] as [Gender_1]
 FROM
 	[Person] [p]
 WHERE
@@ -32,11 +32,11 @@ SELECT
 	[p].[LastName],
 	[p].[MiddleName],
 	[p].[Gender],
-	[p].[FirstName],
-	[p].[PersonID],
-	[p].[LastName],
-	[p].[MiddleName],
-	[p].[Gender]
+	[p].[FirstName] as [FirstName_1],
+	[p].[PersonID] as [ID_1],
+	[p].[LastName] as [LastName_1],
+	[p].[MiddleName] as [MiddleName_1],
+	[p].[Gender] as [Gender_1]
 FROM
 	[Person] [p]
 WHERE

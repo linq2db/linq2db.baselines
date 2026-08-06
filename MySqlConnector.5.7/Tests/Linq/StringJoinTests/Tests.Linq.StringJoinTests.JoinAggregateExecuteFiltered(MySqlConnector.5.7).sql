@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	GROUP_CONCAT(CASE
 		WHEN `t1`.`NullableValue` IN ('A', 'B') THEN `t1`.`NullableValue`

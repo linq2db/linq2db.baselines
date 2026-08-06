@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT TOP (2)
 	[t1].[Id]
 FROM
@@ -8,7 +7,6 @@ WHERE
 	[t1].[Id] = 2
 
 -- SqlCe
-
 SELECT TOP (2)
 	[t1].[Id]
 FROM
@@ -21,7 +19,7 @@ DECLARE @UserId Int -- Int32
 SET     @UserId = 2
 
 SELECT TOP (2)
-	[x].[Id] as [UserId]
+	[x].[Id]
 FROM
 	[TransactionLine] [x]
 WHERE

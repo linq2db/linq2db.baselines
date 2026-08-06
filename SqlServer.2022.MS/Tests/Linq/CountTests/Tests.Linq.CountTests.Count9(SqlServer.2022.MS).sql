@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
-
 SELECT
 	COUNT(*)
 FROM
@@ -9,7 +8,6 @@ WHERE
 	[a_Parent].[ParentID] = 1
 
 -- SqlServer.2022.MS SqlServer.2022
-
 SELECT
 	[a_Parent].[ParentID]
 FROM

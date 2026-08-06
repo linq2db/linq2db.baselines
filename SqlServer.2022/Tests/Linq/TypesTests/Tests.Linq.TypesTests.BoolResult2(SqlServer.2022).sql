@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 SELECT
 	IIF([a_Patient].[PersonID] IS NOT NULL, 1, 0)
 FROM

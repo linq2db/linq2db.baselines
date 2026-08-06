@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[ParentID],
 	IIF([t1].[count_1] IS NULL, 0, [t1].[count_1])

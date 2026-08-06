@@ -1,10 +1,9 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT
-	CStr('Discriminator'),
+	CStr('Discriminator') as [c1],
 	[a_Book].[Discriminator],
 	[a_Book].[BookName],
-	[a_Book].[BookName]
+	[a_Book].[BookName] as [BookName_1]
 FROM
 	([Author] [t1]
 		INNER JOIN [BookAuthor] [b] ON ([b].[FkAuthorId] = [t1].[AuthorId]))
@@ -13,10 +12,10 @@ WHERE
 	[a_Book].[Discriminator] = 'Roman'
 UNION
 SELECT
-	CStr('Discriminator'),
+	CStr('Discriminator') as [c1],
 	[a_Book_1].[Discriminator],
 	[a_Book_1].[BookName],
-	[a_Book_1].[BookName]
+	[a_Book_1].[BookName] as [BookName_1]
 FROM
 	([Author] [t2]
 		INNER JOIN [BookAuthor] [b_1] ON ([b_1].[FkAuthorId] = [t2].[AuthorId]))
@@ -25,11 +24,10 @@ WHERE
 	[a_Book_1].[Discriminator] = 'Novel'
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[m_1].[BookId],
 	[m_1].[AuthorId],
-	[a_Author].[AuthorId],
+	[a_Author].[AuthorId] as [AuthorId_1],
 	[a_Author].[AuthorName]
 FROM
 	((
@@ -45,7 +43,6 @@ FROM
 		LEFT JOIN [Author] [a_Author] ON ([d_1].[FkAuthorId] = [a_Author].[AuthorId])
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[m_1].[AuthorId],
 	[a_Book].[BookId],
@@ -59,7 +56,6 @@ FROM
 		LEFT JOIN [Book] [a_Book] ON ([d].[FkBookId] = [a_Book].[BookId])
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[AuthorId],
 	[t1].[AuthorName]

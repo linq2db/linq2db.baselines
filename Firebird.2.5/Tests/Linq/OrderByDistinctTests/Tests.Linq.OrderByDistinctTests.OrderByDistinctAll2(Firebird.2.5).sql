@@ -23,7 +23,6 @@ ORDER BY
 	"r_1"."FirstName"
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1"."FirstName",
 	"t1"."PersonID",

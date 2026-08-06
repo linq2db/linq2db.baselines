@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 INSERT INTO [Parent]
 (
 	[ParentID]
@@ -10,7 +9,6 @@ VALUES
 )
 
 -- Access.Ace.OleDb AccessOleDb
-
 INSERT INTO [Child]
 (
 	[ChildID],
@@ -35,14 +33,12 @@ WHERE
 	[child_1].[ChildID] = 10000 AND [child_1].[ParentID] = [a_Parent].[ParentID]
 
 -- Access.Ace.OleDb AccessOleDb
-
 DELETE FROM
 	[Child] [x]
 WHERE
 	[x].[ChildID] = 10000
 
 -- Access.Ace.OleDb AccessOleDb
-
 DELETE FROM
 	[Parent] [x]
 WHERE

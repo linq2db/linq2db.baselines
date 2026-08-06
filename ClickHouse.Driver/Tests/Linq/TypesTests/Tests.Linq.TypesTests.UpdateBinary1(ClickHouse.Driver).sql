@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 ALTER TABLE
 	LinqDataTypes
 UPDATE
@@ -8,7 +7,6 @@ WHERE
 	ID = 1
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t.BinaryValue
 FROM

@@ -1,10 +1,8 @@
 ﻿-- SqlCe
-
 DELETE FROM
 	[InheritanceParent]
 
 -- SqlCe
-
 UPDATE
 	[InheritanceParent]
 SET
@@ -14,7 +12,6 @@ WHERE
 	[InheritanceParent].[Name] IS NULL
 
 -- SqlCe
-
 INSERT INTO [InheritanceParent]
 (
 	[InheritanceParentId],
@@ -29,14 +26,12 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[InheritanceParent] [t1]
 
 -- SqlCe
-
 UPDATE
 	[InheritanceParent]
 SET
@@ -46,9 +41,8 @@ WHERE
 	[InheritanceParent].[Name] IS NULL
 
 -- SqlCe
-
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[InheritanceParent] [t1]
 

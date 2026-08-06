@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`tt`.`Key_1`,
 	SUM(`tt`.`ChildID`)

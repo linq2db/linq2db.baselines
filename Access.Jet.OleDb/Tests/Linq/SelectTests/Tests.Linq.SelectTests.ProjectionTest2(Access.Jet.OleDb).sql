@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[a_Patient].[PersonID],
 	[a_Patient].[Diagnosis]

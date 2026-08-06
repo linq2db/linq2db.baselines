@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	nm.FirstName
 FROM
@@ -8,7 +7,6 @@ WHERE
 	lengthUTF8(nm.FirstName) <> 0
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.FirstName,
 	t1.PersonID,

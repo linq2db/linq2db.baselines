@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"patient_1"."PersonID",
 	"person_1"."FirstName",

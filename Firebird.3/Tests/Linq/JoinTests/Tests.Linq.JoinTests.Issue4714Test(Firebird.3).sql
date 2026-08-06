@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	"source_2"."Id",
 	"year_1"."Year",

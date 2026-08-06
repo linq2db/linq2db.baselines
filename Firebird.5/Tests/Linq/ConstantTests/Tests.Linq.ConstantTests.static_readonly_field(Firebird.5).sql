@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 SELECT
 	"e"."Id",
 	"e"."GuidValue",
@@ -12,7 +11,6 @@ WHERE
 	"e"."GuidNullableValue" = X'BC7B663D0FDE43278F925D8CC3A11D11'
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."GuidValue",

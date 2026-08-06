@@ -12,7 +12,6 @@ VALUES
 )
 
 -- Access.Jet.Odbc AccessODBC
-
 INSERT INTO [TableWithIdentity]
 (
 	[Value]
@@ -23,7 +22,6 @@ FROM
 	[TableWithIdentitySrc] [t1]
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]

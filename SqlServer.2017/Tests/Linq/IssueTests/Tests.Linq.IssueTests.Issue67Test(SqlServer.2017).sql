@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 SELECT
 	[t_1].[ParentID],
 	[t_1].[count_1]

@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t].[Value1] + [t].[Value2]
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	[t].[ID]
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[ID],
 	[t1].[Value1],

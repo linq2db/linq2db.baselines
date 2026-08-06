@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	CASE
 		WHEN [p].[ParentID] IN (

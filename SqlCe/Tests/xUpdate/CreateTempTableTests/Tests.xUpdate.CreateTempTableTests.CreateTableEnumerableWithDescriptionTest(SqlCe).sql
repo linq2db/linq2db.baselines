@@ -1,9 +1,7 @@
 ﻿-- SqlCe
-
 DROP TABLE [TempTable]
 
 -- SqlCe
-
 CREATE TABLE [TempTable]
 (
 	[Name] NVarChar(20) NOT NULL,
@@ -12,7 +10,6 @@ CREATE TABLE [TempTable]
 )
 
 -- SqlCe
-
 INSERT INTO [TempTable]
 (
 	[Name]
@@ -20,7 +17,6 @@ INSERT INTO [TempTable]
 SELECT 'John'
 
 -- SqlCe
-
 SELECT
 	[t].[Name]
 FROM
@@ -28,6 +24,5 @@ FROM
 		INNER JOIN [TempTable] [t] ON [p].[FirstName] = [t].[Name]
 
 -- SqlCe
-
 DROP TABLE [TempTable]
 

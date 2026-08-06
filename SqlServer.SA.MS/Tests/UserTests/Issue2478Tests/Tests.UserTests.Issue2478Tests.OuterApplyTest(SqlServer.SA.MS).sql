@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	[p].[ParentID],
 	IIF([c_2].[Count_1] IS NULL, 0, [c_2].[Count_1])
@@ -15,7 +14,6 @@ FROM
 		) [c_2]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	COUNT(*)
 FROM

@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	t1.ID,
 	t1."Value_1"
@@ -13,7 +12,6 @@ FROM
 	) t1
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1.ID,
 	t1."Value_1"

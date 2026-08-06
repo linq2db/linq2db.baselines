@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `Parent`
 (
 	`ParentID`,
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `Child`
 (
 	`ChildID`,
@@ -25,7 +23,6 @@ VALUES
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 UPDATE
 	`Parent` `a_Parent`,
 	`Child` `child_1`

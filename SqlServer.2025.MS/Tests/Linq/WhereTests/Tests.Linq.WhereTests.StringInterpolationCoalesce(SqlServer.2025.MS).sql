@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[FirstName],
 	[t1].[LastName],
@@ -21,7 +20,6 @@ ORDER BY
 	[t1].[LastName]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

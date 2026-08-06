@@ -1,12 +1,10 @@
 ﻿-- Firebird.4 Firebird4
-
 DELETE FROM
 	"Parent" "p"
 WHERE
 	"p"."Value1" = 11
 
 -- Firebird.4 Firebird4
-
 INSERT INTO "Parent"
 (
 	"ParentID",
@@ -21,7 +19,6 @@ WHERE
 	"c_1"."ChildID" = 11
 
 -- Firebird.4 Firebird4
-
 SELECT
 	COUNT(*)
 FROM
@@ -30,7 +27,6 @@ WHERE
 	"p"."Value1" = 11
 
 -- Firebird.4 Firebird4
-
 DELETE FROM
 	"Parent" "p"
 WHERE

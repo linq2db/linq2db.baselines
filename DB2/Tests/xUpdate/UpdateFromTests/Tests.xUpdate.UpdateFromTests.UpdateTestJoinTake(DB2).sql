@@ -56,7 +56,6 @@ WHERE
 	)
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"v"."id",
 	"v"."Value1",

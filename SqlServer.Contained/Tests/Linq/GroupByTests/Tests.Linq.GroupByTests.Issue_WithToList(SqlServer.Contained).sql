@@ -41,7 +41,6 @@ VALUES
 )
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT DISTINCT
 	[a_Reference].[Id],
 	[t1].[ReferenceId]

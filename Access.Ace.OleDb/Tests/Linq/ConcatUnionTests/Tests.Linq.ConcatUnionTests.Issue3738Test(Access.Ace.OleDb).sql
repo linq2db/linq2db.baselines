@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	'I-' + CStr([x].[PersonID]),
 	[x].[FirstName]

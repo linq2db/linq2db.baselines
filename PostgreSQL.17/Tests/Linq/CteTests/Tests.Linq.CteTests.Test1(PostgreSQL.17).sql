@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 WITH "CTE_1" ("ParentID")
 AS
 (
@@ -18,8 +17,7 @@ FROM
 		INNER JOIN "CTE_1" c_2 ON p."ParentID" = c_2."ParentID"
 		INNER JOIN "CTE_1" c2 ON p."ParentID" = c2."ParentID"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	p."ParentID",
 	p."Value1"

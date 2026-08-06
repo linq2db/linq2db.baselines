@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 CREATE TEMPORARY TABLE temp.[TableWithPrimaryKey2]
 (
 	[Key] INTEGER NOT NULL,
@@ -8,7 +7,6 @@ CREATE TEMPORARY TABLE temp.[TableWithPrimaryKey2]
 )
 
 -- SQLite.MS SQLite
-
 INSERT INTO temp.[TableWithPrimaryKey2]
 (
 	[Key]
@@ -17,6 +15,5 @@ VALUES
 (1)
 
 -- SQLite.MS SQLite
-
 DROP TABLE IF EXISTS temp.[TableWithPrimaryKey2]
 

@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @BlobValue Bytea(3) -- Binary
@@ -15,8 +15,7 @@ VALUES
 	:BlobValue
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."BlobValue"
@@ -26,7 +25,7 @@ WHERE
 	t1."Id" = 1
 LIMIT 1
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DECLARE @BlobValue Bytea(3) -- Binary
 SET     @BlobValue = E'\\x030201'::bytea
 
@@ -37,8 +36,7 @@ SET
 WHERE
 	"BlobClass"."Id" = 1
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."BlobValue"

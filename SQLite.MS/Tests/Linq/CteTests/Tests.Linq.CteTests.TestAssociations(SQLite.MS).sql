@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 WITH [BooksCte] ([AuthorId], [Title])
 AS
 (

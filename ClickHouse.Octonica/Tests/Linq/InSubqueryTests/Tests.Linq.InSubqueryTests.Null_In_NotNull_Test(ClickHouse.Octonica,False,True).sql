@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t.PK,
 	t.ID,
@@ -15,7 +14,6 @@ WHERE
 	)
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.PK,
 	t1.ID,
@@ -24,7 +22,6 @@ FROM
 	test_in_1 t1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.PK,
 	t1.ID

@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[g_1].[GroupId],
 	MAX([g_1].[DataValue]),
@@ -27,7 +26,6 @@ GROUP BY
 	[g_1].[GroupId]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[GroupId],

@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	o.Anchor - Coalesce((
 		SELECT

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	[user_1].[Id],
 	[user_1].[FirstName],

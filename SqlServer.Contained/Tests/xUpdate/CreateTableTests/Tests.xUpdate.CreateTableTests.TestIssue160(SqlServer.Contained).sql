@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 CREATE TABLE [aa]
 (
 	[bb] Int            NOT NULL,
@@ -26,7 +25,6 @@ VALUES
 )
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[t1].[bb],
 	[t1].[cc]
@@ -34,6 +32,5 @@ FROM
 	[aa] [t1]
 
 -- SqlServer.Contained SqlServer.2019
-
 DROP TABLE [aa]
 

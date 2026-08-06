@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	m_1."Id",
 	m_1."Id",
@@ -24,8 +23,7 @@ FROM
 ORDER BY
 	m_1."Id_1"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	m_1."LINE_ID",
 	d."LINE_ID",
@@ -39,8 +37,7 @@ FROM
 ORDER BY
 	m_1."LINE_ID"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."LINE_ID",
 	t1."LINE_ID"

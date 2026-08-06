@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	DateSerial(2010, [t].[ID], 1)
 FROM

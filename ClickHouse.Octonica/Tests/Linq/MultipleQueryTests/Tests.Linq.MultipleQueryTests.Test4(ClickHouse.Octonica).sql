@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	m_1.ParentID,
 	d.ChildID
@@ -15,7 +14,6 @@ ORDER BY
 	m_1.ParentID
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	p.ParentID
 FROM

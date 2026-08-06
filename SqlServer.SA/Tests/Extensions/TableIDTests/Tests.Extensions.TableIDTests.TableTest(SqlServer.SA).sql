@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 SELECT
 	'*** p ***' + N'4',
 	'*** p ***',

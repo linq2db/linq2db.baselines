@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 SELECT
 	"r"."Id",
 	"r"."Value1" = "r"."Value2",
@@ -82,7 +81,6 @@ WHERE
 	"r"."Id" <> -1
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",

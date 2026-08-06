@@ -10,11 +10,10 @@ INSERT INTO "TestFbTypesTable"
 VALUES
 (
 	1,
-	CAST(@Int128 AS INT128)
+	@Int128
 )
 
 -- Firebird.4 Firebird4
-
 SELECT
 	COUNT(*)
 FROM

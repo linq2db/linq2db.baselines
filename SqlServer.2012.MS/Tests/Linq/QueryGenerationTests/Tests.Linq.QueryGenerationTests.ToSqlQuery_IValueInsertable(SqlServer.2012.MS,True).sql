@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012.MS SqlServer.2012
-
 INSERT INTO [TableWithIdentity]
 (
 	[Value]
@@ -10,7 +9,6 @@ VALUES
 )
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT TOP (2)
 	[t1].[Id],
 	[t1].[Value]

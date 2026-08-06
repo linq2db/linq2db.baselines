@@ -14,7 +14,6 @@ WHERE
 	[r].[Column] = @Column AND [r].[ColumnNullable] = @ColumnNullable
 
 -- SqlServer.2012
-
 SELECT
 	[r].[Id],
 	[r].[Column],
@@ -25,7 +24,6 @@ WHERE
 	[r].[Column] = N'value=2' AND [r].[ColumnNullable] = N'value=33'
 
 -- SqlServer.2012
-
 DELETE [t1]
 FROM
 	[StringEnumTable] [t1]
@@ -73,7 +71,6 @@ VALUES
 )
 
 -- SqlServer.2012
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],
@@ -84,13 +81,11 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlServer.2012
-
 DELETE [t1]
 FROM
 	[StringEnumTable] [t1]
 
 -- SqlServer.2012
-
 INSERT INTO [StringEnumTable]
 (
 	[Id],
@@ -102,7 +97,6 @@ VALUES
 (2,N'value=2',N'value=33')
 
 -- SqlServer.2012
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],
@@ -113,7 +107,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlServer.2012
-
 DELETE [t1]
 FROM
 	[StringEnumTable] [t1]
@@ -121,7 +114,6 @@ FROM
 INSERT BULK [StringEnumTable](Id, Column, ColumnNullable)
 
 -- SqlServer.2012
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],

@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	"g_1"."StatsTypeId",
 	"st"."FullName",

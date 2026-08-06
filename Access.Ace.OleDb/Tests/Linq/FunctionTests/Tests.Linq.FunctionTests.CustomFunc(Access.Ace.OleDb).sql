@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[p].[LastName] + ', ' + [p].[FirstName]
 FROM

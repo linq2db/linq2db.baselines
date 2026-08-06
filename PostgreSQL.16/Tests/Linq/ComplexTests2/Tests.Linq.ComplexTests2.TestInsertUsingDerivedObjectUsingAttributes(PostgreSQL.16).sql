@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DECLARE @FirstName Text(21) -- String
 SET     @FirstName = 'test_inherited_insert'
 DECLARE @LastName Text(4) -- String
@@ -25,8 +25,7 @@ VALUES
 RETURNING 
 	"PersonID"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."FirstName",
 	t1."PersonID",
@@ -39,7 +38,7 @@ WHERE
 	t1."FirstName" = 'test_inherited_insert'
 LIMIT 1
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DECLARE @FirstName Text(21) -- String
 SET     @FirstName = 'test_inherited_insert'
 DECLARE @LastName Text(4) -- String
@@ -61,8 +60,7 @@ SET
 WHERE
 	"Person"."PersonID" = :ID
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."FirstName",
 	t1."PersonID",
@@ -75,7 +73,7 @@ WHERE
 	t1."FirstName" = 'test_inherited_insert'
 LIMIT 1
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DECLARE @ID Integer -- Int32
 SET     @ID = 5
 

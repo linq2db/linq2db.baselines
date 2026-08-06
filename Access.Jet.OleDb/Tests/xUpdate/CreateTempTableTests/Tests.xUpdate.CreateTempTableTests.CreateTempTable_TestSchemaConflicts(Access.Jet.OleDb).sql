@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 INSERT INTO [TestTempTable]
 (
 	[Id],
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- Access.Jet.OleDb AccessOleDb
-
 CREATE TABLE [TempTable]
 (
 	[Id]      Int           NOT NULL,
@@ -22,7 +20,6 @@ CREATE TABLE [TempTable]
 )
 
 -- Access.Jet.OleDb AccessOleDb
-
 INSERT INTO [TempTable]
 (
 	[Id],
@@ -35,7 +32,6 @@ FROM
 	[TestTempTable] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 INSERT INTO [TestTempTable]
 (
 	[Id],
@@ -48,7 +44,6 @@ VALUES
 )
 
 -- Access.Jet.OleDb AccessOleDb
-
 INSERT INTO [TempTable]
 (
 	[Id],
@@ -61,7 +56,6 @@ VALUES
 )
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -71,7 +65,6 @@ ORDER BY
 	[t1].[Id]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[Renamed]
@@ -81,6 +74,5 @@ ORDER BY
 	[t1].[Id]
 
 -- Access.Jet.OleDb AccessOleDb
-
 DROP TABLE [TempTable]
 

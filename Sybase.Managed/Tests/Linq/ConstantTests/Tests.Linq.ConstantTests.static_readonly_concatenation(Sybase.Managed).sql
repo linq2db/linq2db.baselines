@@ -10,10 +10,9 @@ SELECT
 FROM
 	[TestConstantsData] [e]
 WHERE
-	(Coalesce([e].[StringValue], '') + '1') = @p
+	(Coalesce([e].[StringValue], '') || '1') = @p
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[GuidValue],

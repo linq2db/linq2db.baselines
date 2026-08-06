@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[g_2].[Date_1],
 	COUNT(*)
@@ -14,7 +13,6 @@ GROUP BY
 	[g_2].[Date_1]
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t1].[CreatedOnUtc]
 FROM

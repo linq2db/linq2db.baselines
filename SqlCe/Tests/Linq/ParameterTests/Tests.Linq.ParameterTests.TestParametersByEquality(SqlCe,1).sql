@@ -6,7 +6,7 @@ SET     @personId_1 = 1
 
 SELECT
 	[p].[FirstName],
-	[p].[PersonID] as [ID],
+	[p].[PersonID],
 	[p].[LastName],
 	[p].[MiddleName],
 	[p].[Gender],
@@ -28,7 +28,7 @@ SET     @personId_1 = 2
 
 SELECT
 	[p].[FirstName],
-	[p].[PersonID] as [ID],
+	[p].[PersonID],
 	[p].[LastName],
 	[p].[MiddleName],
 	[p].[Gender],

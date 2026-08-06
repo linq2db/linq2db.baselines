@@ -54,7 +54,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"p"."Id",
 	"p"."TargetName",

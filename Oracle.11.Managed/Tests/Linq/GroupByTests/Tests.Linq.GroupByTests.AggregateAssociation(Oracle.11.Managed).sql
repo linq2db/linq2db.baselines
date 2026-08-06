@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	SUM(Coalesce(a_Parent."Value1", 0))
 FROM

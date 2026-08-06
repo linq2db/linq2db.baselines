@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 DELETE FROM
 	"Person" "t1"
 WHERE
@@ -26,14 +25,13 @@ FROM
 		)
 		VALUES
 		(
-			CAST(@FirstName AS NVarChar(4)),
-			CAST(@LastName AS NVarChar(7)),
-			CAST(@Gender AS Char(1))
+			@FirstName,
+			@LastName,
+			@Gender
 		)
 	)
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"p"."FirstName",
 	"p"."PersonID",
@@ -47,7 +45,6 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 -- DB2 DB2.LUW DB2LUW
-
 DELETE FROM
 	"Person" "t1"
 WHERE

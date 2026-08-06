@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	COUNT(*),
 	SUM(g_1.ChildID),

@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	a_ChildPredicate.ParentID,
 	a_ChildPredicate.ChildID

@@ -10,7 +10,6 @@ WHERE
 	Coalesce([x].[Value1], @Value1) > 10
 
 -- SqlServer.2014
-
 SELECT
 	[p].[Value1]
 FROM

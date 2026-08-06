@@ -1,16 +1,14 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[m_1].[Id],
-	[d].[Id],
-	[d].[Usage],
+	[d].[Id] as [Id_1],
+	[d].[Usage] as [Usage_1],
 	[d].[FirstTableId]
 FROM
 	[Table404One] [m_1]
 		INNER JOIN [Table404Two] [d] ON ([m_1].[Id] = [d].[FirstTableId])
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id]
 FROM
@@ -22,8 +20,8 @@ SET     @Usage = 0
 
 SELECT
 	[m_1].[Id],
-	[d].[Id],
-	[d].[Usage],
+	[d].[Id] as [Id_1],
+	[d].[Usage] as [Usage_1],
 	[d].[FirstTableId]
 FROM
 	[Table404One] [m_1]
@@ -32,7 +30,6 @@ WHERE
 	[d].[Usage] = @Usage
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id]
 FROM
@@ -44,8 +41,8 @@ SET     @Usage = 1
 
 SELECT
 	[m_1].[Id],
-	[d].[Id],
-	[d].[Usage],
+	[d].[Id] as [Id_1],
+	[d].[Usage] as [Usage_1],
 	[d].[FirstTableId]
 FROM
 	[Table404One] [m_1]
@@ -54,25 +51,22 @@ WHERE
 	[d].[Usage] = @Usage
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id]
 FROM
 	[Table404One] [t1]
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[m_1].[Id],
-	[d].[Id],
-	[d].[Usage],
+	[d].[Id] as [Id_1],
+	[d].[Usage] as [Usage_1],
 	[d].[FirstTableId]
 FROM
 	[Table404One] [m_1]
 		INNER JOIN [Table404Two] [d] ON ([m_1].[Id] = [d].[FirstTableId])
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id]
 FROM
@@ -84,8 +78,8 @@ SET     @Usage = 0
 
 SELECT
 	[m_1].[Id],
-	[d].[Id],
-	[d].[Usage],
+	[d].[Id] as [Id_1],
+	[d].[Usage] as [Usage_1],
 	[d].[FirstTableId]
 FROM
 	[Table404One] [m_1]
@@ -94,7 +88,6 @@ WHERE
 	[d].[Usage] = @Usage
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id]
 FROM
@@ -106,8 +99,8 @@ SET     @Usage = 1
 
 SELECT
 	[m_1].[Id],
-	[d].[Id],
-	[d].[Usage],
+	[d].[Id] as [Id_1],
+	[d].[Usage] as [Usage_1],
 	[d].[FirstTableId]
 FROM
 	[Table404One] [m_1]
@@ -116,7 +109,6 @@ WHERE
 	[d].[Usage] = @Usage
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id]
 FROM

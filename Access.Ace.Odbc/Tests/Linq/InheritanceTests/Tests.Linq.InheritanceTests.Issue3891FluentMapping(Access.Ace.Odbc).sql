@@ -28,7 +28,6 @@ VALUES
 )
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT TOP 2
 	[t1].[Type],
 	[t1].[Id],
@@ -61,7 +60,6 @@ WHERE
 	[t1].[Id] = ?
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT TOP 2
 	[t1].[Type],
 	[t1].[Id],

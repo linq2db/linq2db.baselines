@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	p."Id",
 	Coalesce((
@@ -16,7 +15,6 @@ ORDER BY
 	p."Id"
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	m_1."Id",
 	d."Id",
@@ -27,7 +25,6 @@ FROM
 		INNER JOIN "ConcatChild" d ON m_1."Id" = d."ParentId"
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Name"

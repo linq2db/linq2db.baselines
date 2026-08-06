@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	t.GroupId,
 	COUNT(*),
@@ -38,7 +37,6 @@ GROUP BY
 	t.GroupId
 
 -- DuckDB
-
 SELECT
 	t1.Id,
 	t1.GroupId,

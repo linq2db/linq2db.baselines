@@ -30,7 +30,6 @@ VALUES
 
 
 -- MySql.5.7.MySqlConnector MySql57
-
 SELECT LAST_INSERT_ID()
 
 
@@ -67,7 +66,6 @@ VALUES
 
 
 -- MySql.5.7.MySqlConnector MySql57
-
 SELECT LAST_INSERT_ID()
 
 
@@ -104,7 +102,6 @@ VALUES
 
 
 -- MySql.5.7.MySqlConnector MySql57
-
 SELECT LAST_INSERT_ID()
 
 
@@ -149,7 +146,6 @@ WHERE
 
 
 -- MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`s`.`Id`,
 	`s`.`PermanentId`,
@@ -164,7 +160,6 @@ WHERE
 
 
 -- MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`PermanentId`,

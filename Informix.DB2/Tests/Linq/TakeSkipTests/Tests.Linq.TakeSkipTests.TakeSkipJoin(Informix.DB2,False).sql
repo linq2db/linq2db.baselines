@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	t1.ID,
 	t1.MoneyValue,
@@ -13,7 +12,6 @@ FROM
 	LinqDataTypes t1
 
 -- Informix.DB2 Informix
-
 SELECT
 	e.ID,
 	p.SmallIntValue

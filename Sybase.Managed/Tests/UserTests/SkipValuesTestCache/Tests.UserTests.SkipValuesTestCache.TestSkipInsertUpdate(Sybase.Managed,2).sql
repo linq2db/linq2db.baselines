@@ -20,7 +20,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 1
 	[t].[Id],
 	[t].[Name],
@@ -47,7 +46,6 @@ WHERE
 	[PR_1598_Insert_Table_Cache].[Id] = @Id
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 1
 	[t].[Id],
 	[t].[Name],

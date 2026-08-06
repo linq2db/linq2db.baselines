@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"ch1"."ParentID",
 	"ch1"."ChildID"
@@ -9,7 +8,6 @@ FROM
 		INNER JOIN "Child" "ch1" ON "ch"."ChildID" = "ch1"."ChildID"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."ParentID",
 	"t1"."Value1"
@@ -17,7 +15,6 @@ FROM
 	"Parent" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."ParentID",
 	"t1"."ChildID"

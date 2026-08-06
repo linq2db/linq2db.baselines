@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 SELECT
 	"x_1"."Id",
 	"x_1"."Association"

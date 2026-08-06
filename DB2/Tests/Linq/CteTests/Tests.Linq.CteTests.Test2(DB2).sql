@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 WITH CTE1_ ("ParentID")
 AS
 (
@@ -66,7 +65,6 @@ FROM
 		INNER JOIN LATEST "c4_1" ON "c4_1"."ParentID" = "c3"."ParentID"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"c3"."ParentID",
 	"c3"."Value1"

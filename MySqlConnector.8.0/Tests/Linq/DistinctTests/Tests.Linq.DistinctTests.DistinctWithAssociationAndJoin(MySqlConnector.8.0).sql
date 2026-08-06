@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`ChildID`,
 	`a_Parent_1`.`ParentID`,
@@ -21,7 +20,6 @@ ORDER BY
 	`t1`.`ChildID`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`ParentID`,
 	`t1`.`ChildID`,
@@ -32,7 +30,6 @@ FROM
 		LEFT JOIN `Parent` `a_Parent` ON `t1`.`ParentID` = `a_Parent`.`ParentID`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`ParentID`,
 	`t1`.`Value1`

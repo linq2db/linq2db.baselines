@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	r.Id,
 	r."Boolean",
@@ -16,7 +15,6 @@ WHERE
 	Nvl(r.BooleanN, 't'::BOOLEAN)
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1."Boolean",
@@ -31,7 +29,6 @@ FROM
 	BooleanTable t1
 
 -- Informix.DB2 Informix
-
 SELECT
 	r.Id,
 	r."Boolean",
@@ -48,7 +45,6 @@ WHERE
 	Nvl(r.BooleanN, 'f'::BOOLEAN)
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1."Boolean",
@@ -63,7 +59,6 @@ FROM
 	BooleanTable t1
 
 -- Informix.DB2 Informix
-
 SELECT
 	r.Id,
 	r."Boolean",
@@ -83,7 +78,6 @@ WHERE
 	END)
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1."Boolean",

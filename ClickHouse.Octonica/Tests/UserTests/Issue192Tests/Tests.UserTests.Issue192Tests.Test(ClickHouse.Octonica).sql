@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 INSERT INTO TypeConvertTable
 (
 	Id,
@@ -16,7 +15,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO TypeConvertTable
 (
 	Id,
@@ -33,7 +31,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	COUNT(*)
 FROM
@@ -42,7 +39,6 @@ WHERE
 	t1.BoolValue = 'N'
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	COUNT(*)
 FROM
@@ -51,7 +47,6 @@ WHERE
 	t1.BoolValue = 'Y'
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	COUNT(*)
 FROM
@@ -60,7 +55,6 @@ WHERE
 	t1.GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Name,
@@ -73,7 +67,6 @@ WHERE
 LIMIT 1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Name,
@@ -86,7 +79,6 @@ WHERE
 LIMIT 1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Name,
@@ -99,7 +91,6 @@ WHERE
 LIMIT 1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Name,
@@ -112,7 +103,6 @@ WHERE
 LIMIT 1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Name,
@@ -125,7 +115,6 @@ WHERE
 LIMIT 1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Name,
@@ -138,7 +127,6 @@ WHERE
 LIMIT 1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Name,
@@ -151,7 +139,6 @@ WHERE
 LIMIT 1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Name,
@@ -164,7 +151,6 @@ WHERE
 LIMIT 1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Name,
@@ -177,7 +163,6 @@ WHERE
 LIMIT 1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Name,
@@ -190,7 +175,6 @@ WHERE
 LIMIT 1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Name,
@@ -203,7 +187,6 @@ WHERE
 LIMIT 1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Name,

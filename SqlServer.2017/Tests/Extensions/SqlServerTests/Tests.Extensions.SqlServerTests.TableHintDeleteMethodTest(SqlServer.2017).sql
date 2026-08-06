@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 DELETE [p]
 FROM
 	[Child] [p] WITH (NoLock)

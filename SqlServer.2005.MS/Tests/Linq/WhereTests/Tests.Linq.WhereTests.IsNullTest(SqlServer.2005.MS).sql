@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[nm].[MiddleName]
 FROM
@@ -8,7 +7,6 @@ WHERE
 	[nm].[MiddleName] IS NOT NULL
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

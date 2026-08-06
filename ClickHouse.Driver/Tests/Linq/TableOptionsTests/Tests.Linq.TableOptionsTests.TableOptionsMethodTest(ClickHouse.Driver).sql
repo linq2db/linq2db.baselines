@@ -1,9 +1,7 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 DROP TABLE IF EXISTS TestTable
 
 -- ClickHouse.Driver ClickHouse
-
 CREATE TEMPORARY TABLE TestTable
 (
 	Id    Int32,
@@ -15,7 +13,6 @@ ENGINE = MergeTree()
 ORDER BY Id
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value,
@@ -31,6 +28,5 @@ WHERE
 	t1.Id = t2.Id
 
 -- ClickHouse.Driver ClickHouse
-
 DROP TABLE IF EXISTS TestTable
 

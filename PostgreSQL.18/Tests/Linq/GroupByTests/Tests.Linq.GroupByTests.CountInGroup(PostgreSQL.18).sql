@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
-
+﻿-- PostgreSQL.18 PostgreSQL12
 SELECT
 	t."GroupId",
 	COUNT(*),
@@ -19,8 +18,7 @@ WHERE
 GROUP BY
 	t."GroupId"
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."GroupId",

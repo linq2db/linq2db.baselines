@@ -1,4 +1,3 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 DROP TABLE "Table"
 

@@ -62,7 +62,6 @@ VALUES
 )
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"m_1"."Id",
 	"d"."Id"
@@ -79,7 +78,6 @@ FROM
 		INNER JOIN "Message" "d" ON "d"."TopicId" = "m_1"."Id"
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"x"."Id",
 	"x"."Title",

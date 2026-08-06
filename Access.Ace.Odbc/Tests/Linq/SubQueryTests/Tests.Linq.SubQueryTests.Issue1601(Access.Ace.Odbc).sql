@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	IIF([t3].[x] < 0, 9, [t3].[x] + 8),
 	[t3].[x] + [t3].[x]

@@ -34,7 +34,6 @@ SELECT
 FROM SYS.DUAL
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1.ID,
 	t1."Value" as "Value_1",

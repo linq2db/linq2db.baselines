@@ -1,12 +1,10 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	COUNT(*)
 FROM
 	Src s
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	COUNT(*)
 FROM
@@ -15,7 +13,6 @@ WHERE
 	s.NullableInt IS NOT NULL
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	COUNT(*)
 FROM
@@ -24,7 +21,6 @@ WHERE
 	1 = 0
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	COUNT(*)
 FROM

@@ -1,8 +1,7 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[m_1].[ParentID],
-	[d].[ParentID],
+	[d].[ParentID] as [ParentID_1],
 	[d].[ChildID]
 FROM
 	(
@@ -16,7 +15,6 @@ FROM
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT TOP 1
 	[x].[ParentID],
 	[x].[Value1]
@@ -26,10 +24,9 @@ WHERE
 	[x].[ParentID] = 3
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[m_1].[ParentID],
-	[d].[ParentID],
+	[d].[ParentID] as [ParentID_1],
 	[d].[ChildID]
 FROM
 	(
@@ -43,7 +40,6 @@ FROM
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT TOP 1
 	[x].[ParentID],
 	[x].[Value1]
@@ -53,10 +49,9 @@ WHERE
 	[x].[ParentID] = 3
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[m_1].[ParentID],
-	[d].[ParentID],
+	[d].[ParentID] as [ParentID_1],
 	[d].[ChildID]
 FROM
 	(
@@ -70,7 +65,6 @@ FROM
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT TOP 1
 	[x].[ParentID],
 	[x].[Value1]

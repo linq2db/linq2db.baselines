@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	p.FirstName
 FROM
@@ -9,7 +8,6 @@ WHERE
 LIMIT 1
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	p.FirstName
 FROM

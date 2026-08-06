@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[p].[ParentID],
 	[p].[Value1]
@@ -9,10 +8,9 @@ WHERE
 	[p].[ParentID] = 1
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[m_1].[ParentID],
-	[d].[ParentID],
+	[d].[ParentID] as [ParentID_1],
 	[d].[ChildID]
 FROM
 	(
@@ -31,7 +29,6 @@ FROM
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT TOP 2
 	[p].[ParentID],
 	[p].[Value1]

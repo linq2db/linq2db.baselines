@@ -9,7 +9,7 @@ VALUES (@p1)
 RETURNING "Id";
 
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL12
 DECLARE @IsArchived Smallint -- Int16
 SET     @IsArchived = 0
 

@@ -1,6 +1,6 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @p  -- Int32
-SET     @p = 102
+SET     @p = 103
 
 DELETE FROM
 	[LinqDataTypes]
@@ -8,7 +8,6 @@ WHERE
 	[LinqDataTypes].[ID] >= 101 AND [LinqDataTypes].[ID] < @p
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 INSERT INTO [LinqDataTypes]
 (
 	[ID],
@@ -30,7 +29,7 @@ INSERT INTO [LinqDataTypes]
 	[BigIntValue]
 )
 SELECT
-	[r].[ID],
+	[r].[ID] + 1,
 	@param
 FROM
 	[LinqDataTypes] [r]
@@ -38,17 +37,16 @@ WHERE
 	[r].[ID] = 101 AND [r].[BigIntValue] = 12
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	COUNT(*)
 FROM
 	[LinqDataTypes] [r]
 WHERE
-	[r].[ID] = 101 AND [r].[BigIntValue] = 11
+	[r].[ID] = 102 AND [r].[BigIntValue] = 11
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @p  -- Int32
-SET     @p = 102
+SET     @p = 103
 
 DELETE FROM
 	[LinqDataTypes]

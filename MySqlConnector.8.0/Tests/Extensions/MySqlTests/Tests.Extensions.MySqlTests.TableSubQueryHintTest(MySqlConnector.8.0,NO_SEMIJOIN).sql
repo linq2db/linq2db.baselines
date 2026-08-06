@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT /*+ NO_SEMIJOIN(@qq FIRSTMATCH, LOOSESCAN) */
 	`p_1`.`ParentID`,
 	`p_1`.`Value1`

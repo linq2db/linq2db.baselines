@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	SUM(Coalesce(a_Parent.Value1, 0))
 FROM

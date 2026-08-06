@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 DELETE  
 FROM
 	`Child`
@@ -7,7 +6,6 @@ WHERE
 	`Child`.`ParentID` > 1000
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 DELETE  
 FROM
 	`Parent`
@@ -60,7 +58,6 @@ WHERE
 	`c_1`.`ParentID` = @id
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 DELETE  
 FROM
 	`Child`
@@ -68,7 +65,6 @@ WHERE
 	`Child`.`ParentID` > 1000
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 DELETE  
 FROM
 	`Parent`

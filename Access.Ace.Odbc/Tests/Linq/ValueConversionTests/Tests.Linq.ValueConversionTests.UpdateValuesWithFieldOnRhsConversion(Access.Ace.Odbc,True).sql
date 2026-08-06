@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 UPDATE
 	[TableWithConverterValue] [x]
 SET
@@ -8,7 +7,6 @@ WHERE
 	[x].[Id] = 1
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT TOP 2
 	[x].[Id],
 	[x].[NoConversion],
@@ -20,7 +18,6 @@ WHERE
 	[x].[Id] = 1
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT TOP 2
 	[x].[Id],
 	[x].[NoConversion],

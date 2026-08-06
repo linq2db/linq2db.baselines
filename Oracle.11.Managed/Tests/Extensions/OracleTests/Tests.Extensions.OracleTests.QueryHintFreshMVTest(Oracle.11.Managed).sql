@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT /*+ FRESH_MV */
 	p."ParentID",
 	p."Value1"

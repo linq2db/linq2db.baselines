@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	g_1.GroupId,
 	avgOrNull(g_1.DataValue),
@@ -29,7 +28,6 @@ GROUP BY
 	g_1.GroupId
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.Id,
 	t1.GroupId,

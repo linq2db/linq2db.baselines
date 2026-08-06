@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID] as [ParentID_1],
@@ -16,7 +15,6 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 -- SqlCe
-
 SELECT TOP (1)
 	[x].[ParentID],
 	[x].[Value1]
@@ -26,7 +24,6 @@ WHERE
 	[x].[ParentID] = 3
 
 -- SqlCe
-
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID] as [ParentID_1],
@@ -43,7 +40,6 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 -- SqlCe
-
 SELECT TOP (1)
 	[x].[ParentID],
 	[x].[Value1]
@@ -53,7 +49,6 @@ WHERE
 	[x].[ParentID] = 3
 
 -- SqlCe
-
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID] as [ParentID_1],
@@ -70,7 +65,6 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 -- SqlCe
-
 SELECT TOP (1)
 	[x].[ParentID],
 	[x].[Value1]

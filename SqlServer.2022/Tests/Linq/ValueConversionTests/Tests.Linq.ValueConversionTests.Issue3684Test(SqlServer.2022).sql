@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 INSERT INTO [Issue3684Table] DEFAULT VALUES
 
 -- SqlServer.2022
@@ -20,7 +19,6 @@ VALUES
 )
 
 -- SqlServer.2022
-
 SELECT
 	[t1].[Id],
 	[t1].[FirstAppointmentTime],

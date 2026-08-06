@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	a_Bottom.ParentID,
 	a_Bottom.ChildID,

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	[m_1].[ParentID],
 	[d].[ChildID],
@@ -14,7 +13,6 @@ FROM
 		INNER JOIN [Child] [d] ON CAST([m_1].[ParentID] AS BigInt) = [d].[ParentID]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	[p].[ParentID]
 FROM

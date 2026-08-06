@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 SELECT
 	[a_Patient].[Diagnosis],
 	COUNT(*)

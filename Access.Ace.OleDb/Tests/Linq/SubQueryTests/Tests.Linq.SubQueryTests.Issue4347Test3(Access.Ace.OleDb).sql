@@ -1,8 +1,7 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[m_1].[Id],
-	[d].[Id],
+	[d].[Id] as [Id_1],
 	[d].[Amount],
 	[d].[Currency]
 FROM
@@ -10,7 +9,6 @@ FROM
 		INNER JOIN [LineEntity] [d] ON ([m_1].[Id] = [d].[TransactionId])
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[x].[Id],
 	[x].[ValidOn]

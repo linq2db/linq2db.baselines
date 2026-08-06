@@ -28,7 +28,6 @@ VALUES
 )
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT TOP (2)
 	[t1].[Type],
 	[t1].[Id],
@@ -61,7 +60,6 @@ WHERE
 	[Base].[Id] = @Id
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT TOP (2)
 	[t1].[Type],
 	[t1].[Id],

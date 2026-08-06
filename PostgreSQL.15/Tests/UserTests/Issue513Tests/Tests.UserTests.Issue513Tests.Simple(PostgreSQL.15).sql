@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."TypeDiscriminator",
 	t1."InheritanceParentId",
@@ -7,8 +6,7 @@ SELECT
 FROM
 	"InheritanceParent" t1
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."TypeDiscriminator",
 	t1."InheritanceChildId",

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 SELECT
 	COUNT(*)
 FROM
@@ -9,7 +8,6 @@ WHERE
 	[p].[PersonID] = 1
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT
 	COUNT(*)
 FROM

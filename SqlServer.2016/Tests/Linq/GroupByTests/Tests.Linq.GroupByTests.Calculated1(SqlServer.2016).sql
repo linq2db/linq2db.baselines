@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016
-
 SELECT
 	[m_1].[Key_1],
 	[d].[ParentID],
@@ -14,7 +13,6 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[Key_1] = IIF([d].[ParentID] > 2, IIF([d].[ParentID] > 3, N'1', N'2'), N'3')
 
 -- SqlServer.2016
-
 SELECT DISTINCT
 	IIF([g_1].[ParentID] > 2, IIF([g_1].[ParentID] > 3, N'1', N'2'), N'3')
 FROM

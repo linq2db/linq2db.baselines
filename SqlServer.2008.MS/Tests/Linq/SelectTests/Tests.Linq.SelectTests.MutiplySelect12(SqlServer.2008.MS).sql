@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[grandChild_1].[ParentID],
 	[grandChild_1].[ChildID],

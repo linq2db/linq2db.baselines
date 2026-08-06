@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 /* My Test */
 MERGE INTO "TestTable" "t1"
 USING (SELECT 1 AS "Id" FROM rdb$database) "s" ON

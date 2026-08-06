@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	CAST("r"."Value1" = "r"."Value2" AS smallint),
@@ -82,7 +81,6 @@ WHERE
 	"r"."Id" <> -1
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",

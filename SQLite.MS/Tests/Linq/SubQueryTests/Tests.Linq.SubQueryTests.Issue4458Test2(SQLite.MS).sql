@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[m_1].[Id],
 	[d].[ItemId],
@@ -19,7 +18,6 @@ WHERE
 	)
 
 -- SQLite.MS SQLite
-
 SELECT
 	[i].[Id],
 	[stock_1].[TotalAvailable]

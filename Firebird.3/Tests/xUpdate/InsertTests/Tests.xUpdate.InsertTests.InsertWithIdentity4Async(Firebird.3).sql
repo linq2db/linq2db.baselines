@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 DELETE FROM
 	"Person" "t1"
 WHERE
@@ -96,7 +95,6 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 -- Firebird.3 Firebird3
-
 DELETE FROM
 	"Person" "t1"
 WHERE

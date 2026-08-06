@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`c_1`.`Key`
 FROM
@@ -10,7 +9,6 @@ ORDER BY
 	SUM(`c_1`.`Value`) DESC
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Key`,

@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT /*+ USE_CONCAT */
 	p."ParentID",
 	p."Value1"

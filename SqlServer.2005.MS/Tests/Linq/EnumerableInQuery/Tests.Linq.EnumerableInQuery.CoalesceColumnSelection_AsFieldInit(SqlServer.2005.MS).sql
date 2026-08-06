@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[t3].[ColorName],
 	[t3].[StyleName],
@@ -25,7 +24,7 @@ FROM
 					SELECT [a_Color].[Name] AS [ColorName], [a_Style].[Name] AS [StyleName], Coalesce(CASE
 					WHEN [a_Color_1].[Id] IS NULL THEN NULL
 					ELSE [t2].[ColorId]
-				END, 0) AS [ColorId], [a_Color].[Name] AS [ColorName0], [a_Style].[Name] AS [StyleName0], CASE
+				END, 0) AS [ColorId], CASE
 					WHEN [a_Color].[Name] = N'Red' THEN (
 						SELECT
 							COUNT(*) as [Conditional]
@@ -33,12 +32,12 @@ FROM
 							[SomeItem] [t1]
 					)
 					ELSE 0
-				END AS [Conditional], [a_Style].[Name] AS [StyleName1]
+				END AS [Conditional]
 					UNION ALL
 					SELECT NULL, [a_Style].[Name], Coalesce(CASE
 					WHEN [a_Color_1].[Id] IS NULL THEN NULL
 					ELSE [t2].[ColorId]
-				END, 0), NULL, [a_Style].[Name], 0, [a_Style].[Name]) [it]
+				END, 0), 0) [it]
 		WHERE
 			[it].[ColorName] = N'Red'
 	) [t3]
@@ -46,7 +45,6 @@ ORDER BY
 	[t3].[StrValue]
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[t1].[Id],
 	[t1].[ColorId],
@@ -61,7 +59,6 @@ FROM
 		LEFT JOIN [SomeStyle] [a_Style] ON [t1].[StyleId] = [a_Style].[Id]
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[t1].[Id],
 	[t1].[ColorId],

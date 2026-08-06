@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012.MS SqlServer.2012
-
 DELETE [t1]
 FROM
 	[CollatedTable] [t1]
@@ -26,7 +25,6 @@ VALUES
 )
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	COUNT(*)
 FROM
@@ -36,7 +34,6 @@ WHERE
 	CHARINDEX(Convert(VarBinary(8000), N'stSt'), Convert(VarBinary(8000), [r].[CaseSensitive])) > 0
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	COUNT(*)
 FROM
@@ -46,7 +43,6 @@ WHERE
 	CHARINDEX(Convert(VarBinary(8000), N'stSt'), Convert(VarBinary(8000), [r].[CaseInsensitive])) > 0
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	COUNT(*)
 FROM
@@ -56,7 +52,6 @@ WHERE
 	CHARINDEX(Convert(VarBinary(8000), N'stst'), Convert(VarBinary(8000), [r].[CaseSensitive])) > 0
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	COUNT(*)
 FROM

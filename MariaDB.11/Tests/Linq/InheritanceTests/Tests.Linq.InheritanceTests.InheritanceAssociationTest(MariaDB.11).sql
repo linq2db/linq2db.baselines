@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`ID`,
 	`t1`.`MoneyValue`,
@@ -13,7 +12,6 @@ FROM
 	`LinqDataTypes` `t1`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`a_A1`.`ID`,
 	`a_A2`.`ID`

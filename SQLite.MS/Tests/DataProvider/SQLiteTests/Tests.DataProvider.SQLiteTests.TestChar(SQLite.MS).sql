@@ -1,65 +1,49 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT Cast('1' as char)
 
 -- SQLite.MS SQLite
-
 SELECT Cast('1' as char)
 
 -- SQLite.MS SQLite
-
 SELECT Cast('1' as char(1))
 
 -- SQLite.MS SQLite
-
 SELECT Cast('1' as char(1))
 
 -- SQLite.MS SQLite
-
 SELECT Cast('1' as varchar)
 
 -- SQLite.MS SQLite
-
 SELECT Cast('1' as varchar)
 
 -- SQLite.MS SQLite
-
 SELECT Cast('1' as varchar(20))
 
 -- SQLite.MS SQLite
-
 SELECT Cast('1' as varchar(20))
 
 -- SQLite.MS SQLite
-
 SELECT Cast('1' as nchar)
 
 -- SQLite.MS SQLite
-
 SELECT Cast('1' as nchar)
 
 -- SQLite.MS SQLite
-
 SELECT Cast('1' as nchar(20))
 
 -- SQLite.MS SQLite
-
 SELECT Cast('1' as nchar(20))
 
 -- SQLite.MS SQLite
-
 SELECT Cast('1' as nvarchar)
 
 -- SQLite.MS SQLite
-
 SELECT Cast('1' as nvarchar)
 
 -- SQLite.MS SQLite
-
 SELECT Cast('1' as nvarchar(20))
 
 -- SQLite.MS SQLite
-
 SELECT Cast('1' as nvarchar(20))
 
 -- SQLite.MS SQLite

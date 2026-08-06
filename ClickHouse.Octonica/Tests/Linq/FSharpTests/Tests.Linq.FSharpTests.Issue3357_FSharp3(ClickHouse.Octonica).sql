@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	p.PersonID,
 	p.FirstName
@@ -7,14 +6,12 @@ FROM
 	Person p
 WHERE
 	p.PersonID = 1
-
--- ClickHouse.Octonica ClickHouse
-
+UNION ALL
 SELECT
-	p.PersonID,
-	p.FirstName
+	p_1.PersonID as PersonID,
+	p_1.FirstName as FirstName
 FROM
-	Person p
+	Person p_1
 WHERE
-	p.PersonID = 1
+	p_1.PersonID = 1
 

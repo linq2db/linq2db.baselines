@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	MAX(t1.PersonID)
 FROM
@@ -31,7 +30,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT FIRST 2
 	p.PersonID,
 	p.FirstName,
@@ -44,7 +42,6 @@ WHERE
 	p.PersonID > 4
 
 -- Informix.DB2 Informix
-
 DELETE FROM
 	Person
 WHERE

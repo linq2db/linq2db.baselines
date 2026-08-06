@@ -33,7 +33,6 @@ VALUES
 )
 
 -- SqlServer.2019
-
 SELECT
 	[e].[Id],
 	[e].[AOnly],

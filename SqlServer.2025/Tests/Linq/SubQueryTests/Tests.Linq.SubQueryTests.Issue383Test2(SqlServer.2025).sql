@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025
-
 SELECT
 	[a].[First_Name],
 	[a].[Last_Name],

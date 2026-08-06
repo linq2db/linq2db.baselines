@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.15 PostgreSQL12
 CREATE TEMPORARY TABLE issue_4940_temp_table
 (
 	"Id"             integer                     NOT NULL,
@@ -11,8 +10,7 @@ ON COMMIT PRESERVE ROWS
 
 
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 INSERT INTO issue_4940_temp_table
 (
 	"Id",
@@ -26,7 +24,7 @@ VALUES
 
 
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Source Text(6) -- String
@@ -53,7 +51,7 @@ VALUES
 
 
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Source Text(6) -- String
@@ -84,8 +82,7 @@ INSERT BULK "Issue4940DBRecords"(Id, Source, Status, NullableStatus)
 
 
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 MERGE INTO "Issue4940DBRecords" "Target"
 USING (VALUES
 	('Merge',5,'open'::issue4940db_status,'open'::issue4940db_nullable_status),
@@ -125,8 +122,7 @@ SET
 
 
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Source",
@@ -139,8 +135,7 @@ ORDER BY
 
 
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Source",
@@ -153,8 +148,7 @@ ORDER BY
 
 
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 DROP TABLE IF EXISTS issue_4940_temp_table
 
 

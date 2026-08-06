@@ -1,9 +1,7 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT CStr('1')
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT CStr('1')
 
 -- Access.Jet.OleDb AccessOleDb

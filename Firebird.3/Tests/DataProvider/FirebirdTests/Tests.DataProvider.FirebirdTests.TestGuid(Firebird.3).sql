@@ -1,9 +1,7 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT Cast('6F9619FF-8B86-D011-B42D-00C04FC964FF' as char(38)) FROM "Dual"
 
 -- Firebird.3 Firebird3
-
 SELECT Cast('6F9619FF-8B86-D011-B42D-00C04FC964FF' as char(38)) FROM "Dual"
 
 -- Firebird.3 Firebird3

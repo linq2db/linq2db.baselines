@@ -19,7 +19,6 @@ WHERE
 	:param = t1."BigIntValue"
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1.ID,
 	t1."MoneyValue",

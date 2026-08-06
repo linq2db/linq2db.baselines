@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
-
 DELETE [t1]
 FROM
 	[TestMerge1] [t1]
@@ -105,7 +104,6 @@ VALUES
 )
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DELETE [t1]
 FROM
 	[TestMerge2] [t1]
@@ -211,7 +209,6 @@ VALUES
 )
 
 -- SqlServer.SA.MS SqlServer.2019
-
 MERGE INTO [TestMerge1] [Target]
 USING (
 	SELECT
@@ -260,7 +257,6 @@ INTO [InsertTempTable]
 ;
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	[t1].[Action],
 	[t1].[NewId],

@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 INSERT INTO Issue1403Tests_3
 (
 	event_id,
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT FIRST 1
 	t1.event_id,
 	t1.event_description

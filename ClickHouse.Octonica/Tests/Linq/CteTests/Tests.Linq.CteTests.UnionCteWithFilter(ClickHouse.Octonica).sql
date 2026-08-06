@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 WITH BooksCte AS
 (
 	SELECT

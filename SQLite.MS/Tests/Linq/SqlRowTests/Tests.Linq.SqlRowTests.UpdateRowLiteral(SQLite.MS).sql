@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 UPDATE
 	[Ints]
 SET
@@ -10,7 +9,6 @@ WHERE
 	[Ints].[One] = 10
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[One],

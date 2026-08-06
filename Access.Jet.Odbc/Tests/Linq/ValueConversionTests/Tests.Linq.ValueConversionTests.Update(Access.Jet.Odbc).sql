@@ -17,7 +17,6 @@ WHERE
 	[e].[Id] = 1
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT TOP 1
 	[e].[Id],
 	[e].[Value1],
@@ -72,7 +71,6 @@ WHERE
 	[t1].[Id] = ?
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT TOP 1
 	[e].[Id],
 	[e].[Value1],
@@ -127,7 +125,6 @@ WHERE
 	[t1].[Id] = ?
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT TOP 1
 	[e].[Id],
 	[e].[Value1],

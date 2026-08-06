@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT
 	[source_2].[Id],
 	[year_1].[Year],

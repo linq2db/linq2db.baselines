@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`t`.`Id`,
 	CONCAT_WS('', Coalesce(`t`.`Str1`, ''), Coalesce(`t`.`Str2`, ''), Coalesce(`t`.`StrReq`, ''))
@@ -9,7 +8,6 @@ ORDER BY
 	`t`.`Id`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Str1`,

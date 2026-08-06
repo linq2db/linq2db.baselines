@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 ALTER TABLE
 	testparams
 UPDATE

@@ -7,7 +7,6 @@ WHERE ((@__ef_filter__p_0 OR NOT (`p`.`IsDeleted`)) OR NOT (`p`.`IsDeleted`)) AN
 
 
 -- MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	MAX(`e`.`QuantityPerUnit`)
 FROM
@@ -18,7 +17,6 @@ WHERE
 
 
 -- MySql.8.0.MySqlConnector MySql80
-
 DELETE  
 FROM
 	`Products`

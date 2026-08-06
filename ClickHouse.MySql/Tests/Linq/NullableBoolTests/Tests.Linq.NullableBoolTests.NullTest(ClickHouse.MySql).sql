@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	t.Id,
 	t.Value
@@ -9,7 +8,6 @@ WHERE
 	t.Value IS NULL
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t.Id,
 	t.Value

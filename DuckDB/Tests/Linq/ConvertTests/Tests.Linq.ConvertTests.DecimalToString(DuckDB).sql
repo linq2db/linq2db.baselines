@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	RTRIM(Replace(CAST(p.MoneyValue AS VARCHAR), ',', '.'), '0.')
 FROM

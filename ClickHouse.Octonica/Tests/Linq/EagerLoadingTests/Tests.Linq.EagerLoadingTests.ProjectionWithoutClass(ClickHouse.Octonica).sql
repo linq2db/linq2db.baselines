@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	m_1.Id1,
 	d.DetailValue
@@ -13,7 +12,6 @@ FROM
 		INNER JOIN DetailClass d ON m_1.Id1 = d.MasterId
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	m_1.Id1
 FROM

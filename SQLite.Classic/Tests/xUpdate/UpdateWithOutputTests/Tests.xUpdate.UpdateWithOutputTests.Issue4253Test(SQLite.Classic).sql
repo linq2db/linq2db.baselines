@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 UPDATE
 	[Issue4193Person]
 SET

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
-
 DELETE [t]
 FROM
 	[LinqDataTypes] [t]
@@ -44,7 +43,6 @@ VALUES
 )
 
 -- SqlServer.2022.MS SqlServer.2022
-
 SELECT TOP (2)
 	[t].[ID],
 	[t].[MoneyValue],
@@ -59,7 +57,6 @@ WHERE
 	[t].[ID] = 1001
 
 -- SqlServer.2022.MS SqlServer.2022
-
 DELETE [t]
 FROM
 	[LinqDataTypes] [t]

@@ -1,9 +1,7 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT CStr('12345')
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT NULL
 
 -- Access.Ace.OleDb AccessOleDb

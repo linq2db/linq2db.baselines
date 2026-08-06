@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[r].[StringData1],
 	[r].[StringData2],
@@ -10,7 +9,6 @@ FROM
 LIMIT 2
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t1].[StringData1],
 	[t1].[StringData2],

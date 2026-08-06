@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014
-
 WITH [cte] ([FirstName], [LastName])
 AS
 (

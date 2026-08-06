@@ -76,7 +76,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"r"."ID",
 	"r"."StringValue"
@@ -88,7 +87,6 @@ ORDER BY
 	"r"."ID"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"r"."ID",
 	"r"."IntValue",

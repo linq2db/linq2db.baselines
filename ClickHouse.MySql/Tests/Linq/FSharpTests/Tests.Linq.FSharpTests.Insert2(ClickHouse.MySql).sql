@@ -1,12 +1,10 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	maxOrNull(t1.PersonID)
 FROM
 	Person t1
 
 -- ClickHouse.MySql ClickHouse
-
 INSERT INTO Person
 (
 	PersonID,
@@ -25,7 +23,6 @@ VALUES
 )
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	p.PersonID,
 	p.FirstName,
@@ -39,7 +36,6 @@ WHERE
 LIMIT 2
 
 -- ClickHouse.MySql ClickHouse
-
 ALTER TABLE
 	Person
 DELETE WHERE

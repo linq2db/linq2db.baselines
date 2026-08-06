@@ -1,9 +1,7 @@
 ﻿-- SqlCe
-
 DROP TABLE [DropTableTestID]
 
 -- SqlCe
-
 CREATE TABLE [DropTableTestID]
 (
 	[ID]  Int  NOT NULL IDENTITY,
@@ -13,7 +11,6 @@ CREATE TABLE [DropTableTestID]
 )
 
 -- SqlCe
-
 INSERT INTO [DropTableTestID]
 (
 	[ID1]
@@ -24,7 +21,6 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT
 	[t].[ID],
 	[t].[ID1]
@@ -32,11 +28,9 @@ FROM
 	[DropTableTestID] [t]
 
 -- SqlCe
-
 DROP TABLE [DropTableTestID]
 
 -- SqlCe
-
 SELECT
 	[t1].[ID],
 	[t1].[ID1]

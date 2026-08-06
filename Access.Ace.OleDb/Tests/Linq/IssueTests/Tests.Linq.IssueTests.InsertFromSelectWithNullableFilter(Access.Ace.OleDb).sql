@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 INSERT INTO [InsertIssueTest]
 (
 	[Pk],
@@ -8,8 +7,8 @@ INSERT INTO [InsertIssueTest]
 )
 SELECT
 	[t2].[ID],
-	123,
-	[t2].[ID]
+	123 as [c1],
+	[t2].[ID] as [ID_1]
 FROM
 	(
 		SELECT DISTINCT
@@ -33,8 +32,8 @@ INSERT INTO [InsertIssueTest]
 )
 SELECT
 	[t2].[ID],
-	123,
-	[t2].[ID]
+	123 as [c1],
+	[t2].[ID] as [ID_1]
 FROM
 	(
 		SELECT DISTINCT
@@ -47,7 +46,6 @@ FROM
 	) [t2]
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t1].[Pk],
 	[t1].[ID],

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016
-
 SELECT
 	[g_1].[Count_1]
 FROM

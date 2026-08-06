@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	"i_1"."ReceiptNo",
 	"a_Customer".BILLGROUP

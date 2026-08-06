@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
-
+﻿-- PostgreSQL.18 PostgreSQL12
 SELECT
 	t1."ID",
 	t1."MoneyValue",
@@ -12,8 +11,7 @@ SELECT
 FROM
 	"LinqDataTypes" t1
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	e."ID",
 	p."SmallIntValue"

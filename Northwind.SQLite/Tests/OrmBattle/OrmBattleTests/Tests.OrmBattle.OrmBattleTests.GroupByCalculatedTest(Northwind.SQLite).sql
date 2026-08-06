@@ -1,5 +1,4 @@
 ﻿-- Northwind.SQLite SQLite.Classic SQLite
-
 SELECT
 	[m_1].[Key_1],
 	[d].[OrderID],
@@ -38,7 +37,6 @@ FROM
 		END
 
 -- Northwind.SQLite SQLite.Classic SQLite
-
 SELECT DISTINCT
 	CASE
 		WHEN [g_1].[Freight] > 50 THEN CASE

@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 DELETE FROM
 	[Child] [c_1]
 WHERE

@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 MERGE INTO "UnusedSourceTable" "Target"
 USING (
 	SELECT 1 AS "Unused"
@@ -24,7 +23,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value"

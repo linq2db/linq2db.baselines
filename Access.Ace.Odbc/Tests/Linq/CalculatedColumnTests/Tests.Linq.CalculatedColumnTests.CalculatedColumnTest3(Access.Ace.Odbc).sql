@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	(
 		SELECT
@@ -8,14 +7,14 @@ SELECT
 			[Doctor] [d_1]
 		WHERE
 			[d_1].[PersonID] = [t].[PersonID]
-	),
+	) as [cnt],
 	[t].[PersonID],
 	[t].[FirstName],
 	[t].[LastName],
 	[t].[MiddleName],
 	[t].[Gender],
 	[t].[FullName],
-	[t].[FullName],
+	[t].[FullName] as [AsSqlFullName],
 	[t].[DoctorCount]
 FROM
 	(

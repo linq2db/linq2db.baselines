@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	EXISTS(
 		SELECT
@@ -9,7 +8,6 @@ SELECT
 	)
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	EXISTS(
 		SELECT

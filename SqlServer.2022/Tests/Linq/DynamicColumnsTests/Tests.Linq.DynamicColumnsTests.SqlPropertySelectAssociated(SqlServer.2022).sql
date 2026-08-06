@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 SELECT
 	[a_Patient].[Diagnosis]
 FROM

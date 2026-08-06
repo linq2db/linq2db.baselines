@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[t1].[ID],
 	[t1].[MoneyValue],
@@ -15,7 +14,6 @@ FROM
 	[LinqDataTypes] [t1]
 
 -- SQLite.MS SQLite
-
 SELECT
 	COUNT(*)
 FROM

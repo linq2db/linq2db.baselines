@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 INSERT INTO TestTempTable
 (
 	Id,
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 CREATE TABLE IF NOT EXISTS TempTable
 (
 	Id      Int32,
@@ -24,7 +22,6 @@ ENGINE = MergeTree()
 ORDER BY Id
 
 -- ClickHouse.Driver ClickHouse
-
 INSERT INTO TempTable
 (
 	Id,
@@ -37,7 +34,6 @@ FROM
 	TestTempTable t1
 
 -- ClickHouse.Driver ClickHouse
-
 INSERT INTO TestTempTable
 (
 	Id,
@@ -50,7 +46,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 INSERT INTO TempTable
 (
 	Id,
@@ -63,7 +58,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value
@@ -73,7 +67,6 @@ ORDER BY
 	t1.Id
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Renamed
@@ -83,6 +76,5 @@ ORDER BY
 	t1.Id
 
 -- ClickHouse.Driver ClickHouse
-
 DROP TABLE IF EXISTS TempTable
 

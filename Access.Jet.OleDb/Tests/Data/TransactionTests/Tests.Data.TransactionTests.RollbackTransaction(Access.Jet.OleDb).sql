@@ -16,7 +16,6 @@ VALUES
 )
 
 -- Access.Jet.OleDb AccessOleDb
-
 UPDATE
 	[Parent] [t]
 SET
@@ -26,7 +25,6 @@ WHERE
 
 RollbackTransaction
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT TOP 1
 	[t].[ParentID],
 	[t].[Value1]

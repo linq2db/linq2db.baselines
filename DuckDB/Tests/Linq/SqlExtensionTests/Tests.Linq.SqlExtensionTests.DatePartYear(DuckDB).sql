@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	Extract(year from t.DateTimeValue)
 FROM

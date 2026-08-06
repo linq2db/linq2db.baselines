@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	m_1.Id,
 	d.Id,
@@ -10,7 +9,6 @@ FROM
 		INNER JOIN LineEntity d ON m_1.Id = d.TransactionId
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	x.Id,
 	x.ValidOn

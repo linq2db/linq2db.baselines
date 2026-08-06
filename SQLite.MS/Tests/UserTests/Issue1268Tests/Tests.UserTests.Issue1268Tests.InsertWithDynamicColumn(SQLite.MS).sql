@@ -41,7 +41,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	[e].[Id],
 	[e].[Name],
@@ -53,7 +52,6 @@ WHERE
 LIMIT 1
 
 -- SQLite.MS SQLite
-
 SELECT
 	[e].[Id],
 	[e].[Name],

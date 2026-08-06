@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 DELETE FROM
 	[CollatedTable] [t1]
 
@@ -25,7 +24,6 @@ VALUES
 )
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	COUNT(*)
 FROM
@@ -34,7 +32,6 @@ WHERE
 	[r].[CaseSensitive] LIKE 'TestSt%'
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	COUNT(*)
 FROM
@@ -43,7 +40,6 @@ WHERE
 	[r].[CaseInsensitive] LIKE 'TestSt%'
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	COUNT(*)
 FROM
@@ -52,7 +48,6 @@ WHERE
 	[r].[CaseSensitive] LIKE 'testst%'
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	COUNT(*)
 FROM

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
-
 SELECT TOP (2)
 	[p].[PersonID],
 	[p].[FirstName],
@@ -15,7 +14,6 @@ WHERE
 	[p].[PersonID] = 1
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT TOP (2)
 	[p].[PersonID],
 	[p].[FirstName],

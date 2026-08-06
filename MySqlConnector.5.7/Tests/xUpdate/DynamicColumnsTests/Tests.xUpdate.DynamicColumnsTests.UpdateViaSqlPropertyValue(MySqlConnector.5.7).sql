@@ -39,7 +39,6 @@ WHERE
 	`c_1`.`ChildID` = @id AND `a_Parent`.`Value1` = 1
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	COUNT(*)
 FROM

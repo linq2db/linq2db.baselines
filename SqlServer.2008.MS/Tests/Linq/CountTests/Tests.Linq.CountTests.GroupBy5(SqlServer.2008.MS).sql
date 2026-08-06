@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[g_2].[ID1],
 	[g_2].[ID2] + 1,

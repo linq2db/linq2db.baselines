@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"m_1"."ParentID",
 	"d"."ParentID",
@@ -15,7 +14,6 @@ FROM
 		INNER JOIN "Parent" "d" ON "d"."ParentID" = "m_1"."ParentID"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"a_Parent"."ParentID"
 FROM

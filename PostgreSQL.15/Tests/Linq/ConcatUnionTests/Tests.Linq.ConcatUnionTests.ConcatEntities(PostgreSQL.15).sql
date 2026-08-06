@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.15 PostgreSQL12
 SELECT
 	p."ParentID",
 	p."Value1"
@@ -16,8 +15,7 @@ FROM
 WHERE
 	p_1."ParentID" = 2
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."ParentID",
 	t1."Value1"

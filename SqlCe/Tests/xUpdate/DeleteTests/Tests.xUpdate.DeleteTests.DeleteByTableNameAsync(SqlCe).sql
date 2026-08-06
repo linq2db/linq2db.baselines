@@ -24,17 +24,15 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[xxPerson] [t1]
 
 -- SqlCe
-
 SELECT TOP (2)
 	[t1].[FirstName],
-	[t1].[PersonID] as [ID],
+	[t1].[PersonID],
 	[t1].[LastName],
 	[t1].[MiddleName],
 	[t1].[Gender]
@@ -51,9 +49,8 @@ WHERE
 	[xxPerson].[PersonID] = @ID
 
 -- SqlCe
-
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[xxPerson] [t1]
 

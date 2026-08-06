@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`e`.`Id`,
 	`e`.`GuidValue`,
@@ -12,7 +11,6 @@ WHERE
 	`e`.`GuidNullableValue` = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`GuidValue`,

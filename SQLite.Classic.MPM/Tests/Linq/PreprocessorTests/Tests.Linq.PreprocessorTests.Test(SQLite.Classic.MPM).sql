@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[p].[ParentID]
 FROM
@@ -9,7 +8,6 @@ WHERE
 LIMIT 1
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[p].[ParentID]
 FROM
@@ -19,7 +17,6 @@ WHERE
 LIMIT 1
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[p].[ParentID]
 FROM

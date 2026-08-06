@@ -28,7 +28,6 @@ VALUES
 )
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	CASE
 		WHEN t."VarCharColumn" IS NOT NULL THEN RTRIM(t."VarCharColumn", '.+')

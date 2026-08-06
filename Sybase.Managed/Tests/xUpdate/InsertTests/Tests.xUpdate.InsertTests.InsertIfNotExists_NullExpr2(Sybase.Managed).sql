@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 IF NOT EXISTS(
 	SELECT 1 
 	FROM
@@ -21,7 +20,6 @@ BEGIN
 END
 
 -- Sybase.Managed Sybase
-
 IF NOT EXISTS(
 	SELECT 1 
 	FROM

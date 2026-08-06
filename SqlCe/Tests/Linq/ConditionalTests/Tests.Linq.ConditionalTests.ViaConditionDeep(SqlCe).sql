@@ -1,19 +1,18 @@
 ﻿-- SqlCe
-
 SELECT
 	[x].[Id],
 	CASE
 		WHEN [x].[StringProp] = '1' OR [x].[StringProp] IS NULL THEN 1
 		ELSE 0
-	END as [child],
+	END,
 	CASE
 		WHEN [x].[StringProp] = '2' THEN 1
 		ELSE 0
-	END as [child_1],
+	END,
 	[x].[StringProp],
-	1 as [IntProp],
-	Coalesce([x].[StringProp], '') + '2' as [StringProp_1],
-	2 as [IntProp_1]
+	1,
+	Coalesce([x].[StringProp], '') + '2',
+	2
 FROM
 	[ConditionalData] [x]
 WHERE
@@ -29,7 +28,6 @@ WHERE
 	END = 2
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[StringProp]

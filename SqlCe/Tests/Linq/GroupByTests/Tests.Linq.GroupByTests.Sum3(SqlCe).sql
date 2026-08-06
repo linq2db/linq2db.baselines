@@ -1,7 +1,6 @@
 ﻿-- SqlCe
-
 SELECT
-	Coalesce([t1].[Sum_1], 0) as [Sum_1]
+	Coalesce([t1].[Sum_1], 0)
 FROM
 	(
 		SELECT DISTINCT

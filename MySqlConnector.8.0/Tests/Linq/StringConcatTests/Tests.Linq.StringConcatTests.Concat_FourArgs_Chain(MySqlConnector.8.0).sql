@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`e`.`Id`
 FROM
@@ -8,7 +7,6 @@ WHERE
 	(CONCAT(Coalesce(`e`.`Str1`, ''), ' ', Coalesce(`e`.`StrReq`, ''), '!')) = 'John Programmer!'
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Str1`,

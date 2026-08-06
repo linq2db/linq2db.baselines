@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 MERGE INTO [Person] [Target]
 USING (
 	SELECT
@@ -30,7 +29,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

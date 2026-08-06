@@ -14,7 +14,6 @@ WHERE
 	r."Column" = :Column_1 AND r."ColumnNullable" = :ColumnNullable
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	r."Id",
 	r."Column",
@@ -25,7 +24,6 @@ WHERE
 	r."Column" = 0 AND r."ColumnNullable" = 1
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"BooleanTable" t1
 
@@ -72,7 +70,6 @@ VALUES
 )
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Column",
@@ -83,19 +80,16 @@ ORDER BY
 	t1."Id"
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"BooleanTable" t1
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 INSERT ALL
 	INTO "BooleanTable" ("Id", "Column", "ColumnNullable") VALUES (1,1,NULL)
 	INTO "BooleanTable" ("Id", "Column", "ColumnNullable") VALUES (2,0,1)
 SELECT * FROM dual
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Column",
@@ -106,19 +100,16 @@ ORDER BY
 	t1."Id"
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"BooleanTable" t1
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 INSERT ALL
 	INTO "BooleanTable" ("Id", "Column", "ColumnNullable") VALUES (1,1,NULL)
 	INTO "BooleanTable" ("Id", "Column", "ColumnNullable") VALUES (2,0,1)
 SELECT * FROM dual
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Column",

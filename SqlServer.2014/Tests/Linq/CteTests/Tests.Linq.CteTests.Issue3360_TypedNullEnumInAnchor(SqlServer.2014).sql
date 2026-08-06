@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014
-
 WITH [cte] ([Id], [Value_1])
 AS
 (

@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 DELETE FROM
 	TestMerge1 t1
 
@@ -104,7 +103,6 @@ VALUES
 )
 
 -- DuckDB
-
 DELETE FROM
 	TestMerge2 t1
 

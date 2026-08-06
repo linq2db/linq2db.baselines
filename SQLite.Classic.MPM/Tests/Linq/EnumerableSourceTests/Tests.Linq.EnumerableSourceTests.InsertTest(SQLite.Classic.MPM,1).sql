@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 INSERT INTO [TableToInsert]
 (
 	[Id],
@@ -20,7 +19,6 @@ WHERE
 	[t].[Id] IS NULL
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 INSERT INTO [TableToInsert]
 (
 	[Id],

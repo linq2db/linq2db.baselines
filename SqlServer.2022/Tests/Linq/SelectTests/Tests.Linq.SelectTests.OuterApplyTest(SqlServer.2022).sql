@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 SELECT DISTINCT
 	[p].[ParentID],
 	[p].[Value1],

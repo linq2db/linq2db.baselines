@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
-
+﻿-- PostgreSQL.18 PostgreSQL12
 SELECT
 	x."ParentID",
 	x."ChildID"
@@ -15,8 +14,7 @@ WHERE
 			x_1."ParentID"
 	)
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	x."ParentID",
 	x."ChildID"

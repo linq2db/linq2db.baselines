@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	"a_Patient"."PersonID",
 	"a_Patient"."Diagnosis"

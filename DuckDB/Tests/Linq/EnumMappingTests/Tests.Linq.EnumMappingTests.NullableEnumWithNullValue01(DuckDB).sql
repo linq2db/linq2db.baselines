@@ -59,7 +59,6 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	r.ID,
 	r.IntValue
@@ -71,7 +70,6 @@ ORDER BY
 	r.ID
 
 -- DuckDB
-
 SELECT
 	r.ID,
 	r.IntValue,

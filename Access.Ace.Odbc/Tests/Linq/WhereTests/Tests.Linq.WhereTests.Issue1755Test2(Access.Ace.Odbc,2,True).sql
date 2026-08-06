@@ -11,7 +11,6 @@ WHERE
 	[c_1].[ParentID] = ? AND [c_1].[Value1] IS NULL
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

@@ -1,85 +1,64 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
-
 SELECT Cast('12345' as char)
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT Cast('12345' as char(20))
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT Cast(NULL    as char(20))
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT Cast('12345' as varchar)
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT Cast('12345' as varchar(20))
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT Cast(NULL    as varchar(20))
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT COUNT(*) FROM sys.databases WHERE database_id = DB_ID() AND collation_name LIKE '%_SC'
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT Cast('12345' as text)
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT Cast(NULL    as text)
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT Cast('12345' as varchar(max))
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT Cast(NULL    as varchar(max))
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT Cast('12345' as nchar)
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT Cast('12345' as nchar(20))
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT Cast(NULL    as nchar(20))
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT Cast('12345' as nvarchar)
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT Cast('12345' as nvarchar(20))
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT Cast(NULL    as nvarchar(20))
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT Cast('12345' as ntext)
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT Cast(NULL    as ntext)
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT Cast('12345' as nvarchar(max))
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT Cast(NULL    as nvarchar(max))
 
 -- SqlServer.2008.MS SqlServer.2008

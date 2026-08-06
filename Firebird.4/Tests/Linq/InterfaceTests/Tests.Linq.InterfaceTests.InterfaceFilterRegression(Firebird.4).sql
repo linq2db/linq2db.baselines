@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id"
 FROM
@@ -9,7 +8,6 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id"
 FROM

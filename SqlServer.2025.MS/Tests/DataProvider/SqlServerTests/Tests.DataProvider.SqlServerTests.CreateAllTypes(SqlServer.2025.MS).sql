@@ -1,9 +1,7 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
-
 DROP TABLE IF EXISTS [AllTypeCreateTest]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 CREATE TABLE [AllTypeCreateTest]
 (
 	[ID]                       Int               NOT NULL IDENTITY,
@@ -51,7 +49,6 @@ CREATE TABLE [AllTypeCreateTest]
 )
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[ID],
 	[t1].[bigintDataType],
@@ -99,6 +96,5 @@ FROM
 	[AllTypeCreateTest] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 DROP TABLE [AllTypeCreateTest]
 

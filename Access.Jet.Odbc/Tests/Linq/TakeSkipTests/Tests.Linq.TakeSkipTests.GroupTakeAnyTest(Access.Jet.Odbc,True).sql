@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 SELECT TOP 1
 	COUNT(*) > 0
 FROM

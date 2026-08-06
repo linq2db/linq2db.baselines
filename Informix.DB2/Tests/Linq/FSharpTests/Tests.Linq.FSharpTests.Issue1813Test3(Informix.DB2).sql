@@ -50,7 +50,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT
 	after_1.Id,
 	after_1.Name,

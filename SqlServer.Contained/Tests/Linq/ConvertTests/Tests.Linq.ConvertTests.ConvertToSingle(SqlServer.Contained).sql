@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 SELECT
 	CAST([p].[MoneyValue] AS Real)
 FROM

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025
-
 SELECT
 	[x].[SByte],
 	[x].[Byte],

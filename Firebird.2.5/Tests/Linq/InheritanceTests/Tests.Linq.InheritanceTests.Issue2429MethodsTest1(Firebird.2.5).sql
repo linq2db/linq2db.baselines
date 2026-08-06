@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT FIRST 1
 	"x"."Id",
 	"x"."Value"
@@ -9,7 +8,6 @@ WHERE
 	"x"."Id" = 1
 
 -- Firebird.2.5 Firebird
-
 SELECT FIRST 1
 	"x"."Id",
 	"x"."Value"

@@ -15,7 +15,6 @@ WHERE
 	"x"."Id" = 1
 
 -- Firebird.2.5 Firebird
-
 SELECT FIRST 2
 	"x"."Id",
 	"x"."NoConversion",

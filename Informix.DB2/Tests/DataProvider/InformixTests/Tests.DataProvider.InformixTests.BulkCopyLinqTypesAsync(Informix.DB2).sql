@@ -409,7 +409,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 DELETE FROM
 	LinqDataTypes
 WHERE
@@ -418,7 +417,6 @@ WHERE
 INSERT BULK LinqDataTypes
 
 -- Informix.DB2 Informix
-
 DELETE FROM
 	LinqDataTypes
 WHERE

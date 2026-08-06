@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],
@@ -10,7 +9,6 @@ FROM
 	[Person] [t1]
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[PersonID],
 	[t1].[Diagnosis]
@@ -18,7 +16,6 @@ FROM
 	[Patient] [t1]
 
 -- SqlServer.SA SqlServer.2019
-
 MERGE INTO [Person] [Target]
 USING (
 	SELECT

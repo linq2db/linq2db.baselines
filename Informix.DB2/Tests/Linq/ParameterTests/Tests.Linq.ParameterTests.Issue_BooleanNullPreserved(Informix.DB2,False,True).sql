@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 INSERT INTO TestBool
 (
 	Id,
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT FIRST 2
 	t1.Id,
 	t1."Value"
@@ -20,7 +18,6 @@ FROM
 	TestBool t1
 
 -- Informix.DB2 Informix
-
 UPDATE
 	TestBool t1
 SET
@@ -31,7 +28,6 @@ SET
 	END
 
 -- Informix.DB2 Informix
-
 SELECT FIRST 2
 	t1.Id,
 	t1."Value"
@@ -39,7 +35,6 @@ FROM
 	TestBool t1
 
 -- Informix.DB2 Informix
-
 UPDATE
 	TestBool r
 SET
@@ -48,7 +43,6 @@ WHERE
 	r.Id = 1
 
 -- Informix.DB2 Informix
-
 SELECT FIRST 2
 	t1.Id,
 	t1."Value"

@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	m_1.Id,
 	m_1.Id,
@@ -25,7 +24,6 @@ ORDER BY
 	m_1.Id_1
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	m_1.LINE_ID,
 	d.LINE_ID,
@@ -40,7 +38,6 @@ ORDER BY
 	m_1.LINE_ID
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.LINE_ID,
 	t1.LINE_ID

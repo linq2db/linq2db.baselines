@@ -35,7 +35,6 @@ ORDER BY [o].[OrderID], [e0].[EmployeeID], [s].[EmployeeID], [s].[TerritoryID], 
 
 
 -- SqlServer.2022
-
 SELECT
 	[m_1].[EmployeeId],
 	[d].[IsDeleted],
@@ -59,7 +58,6 @@ FROM
 
 
 -- SqlServer.2022
-
 SELECT
 	[m_1].[OrderId],
 	[d].[IsDeleted],
@@ -91,10 +89,7 @@ FROM
 
 
 
-
-
 -- SqlServer.2022
-
 SELECT
 	[e].[IsDeleted],
 	[e].[OrderID],

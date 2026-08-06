@@ -1,5 +1,4 @@
 ﻿-- Oracle.18.Managed Oracle.Managed Oracle12
-
 INSERT INTO "Parent"
 (
 	"ParentID",
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 INSERT INTO "Child"
 (
 	"ChildID",

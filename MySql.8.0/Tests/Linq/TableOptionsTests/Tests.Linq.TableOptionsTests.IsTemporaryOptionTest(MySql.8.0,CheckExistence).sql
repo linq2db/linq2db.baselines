@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 CREATE TEMPORARY TABLE IF NOT EXISTS `temp_table1`
 (
 	`ID`    INT NOT NULL,
@@ -9,7 +8,6 @@ CREATE TEMPORARY TABLE IF NOT EXISTS `temp_table1`
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 INSERT INTO `temp_table1`
 (
 	`ID`,
@@ -19,7 +17,6 @@ VALUES
 (1,2)
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 CREATE TEMPORARY TABLE IF NOT EXISTS `temp_table2`
 (
 	`ID`    INT NOT NULL,
@@ -29,7 +26,6 @@ CREATE TEMPORARY TABLE IF NOT EXISTS `temp_table2`
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 INSERT INTO `temp_table2`
 (
 	`ID`,
@@ -42,7 +38,6 @@ FROM
 	`temp_table1` `t1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`ID`,
 	`t1`.`Value`
@@ -50,7 +45,6 @@ FROM
 	`temp_table1` `t1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`ID`,
 	`t1`.`Value`
@@ -58,7 +52,6 @@ FROM
 	`temp_table2` `t1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 INSERT INTO `temp_table1`
 (
 	`ID`,
@@ -85,7 +78,6 @@ VALUES
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 INSERT INTO `temp_table1`
 (
 	`ID`,
@@ -95,18 +87,14 @@ VALUES
 (4,5)
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 TRUNCATE TABLE `temp_table1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 TRUNCATE TABLE `temp_table2`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 DROP TEMPORARY TABLE IF EXISTS `temp_table2`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 DROP TEMPORARY TABLE IF EXISTS `temp_table1`
 

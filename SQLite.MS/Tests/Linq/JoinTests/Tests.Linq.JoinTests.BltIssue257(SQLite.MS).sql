@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[b_1].[Date_1],
 	COUNT(*)

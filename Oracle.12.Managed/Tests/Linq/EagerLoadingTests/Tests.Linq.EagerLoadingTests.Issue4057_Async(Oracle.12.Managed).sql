@@ -1,5 +1,4 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	m_1."ParentID",
 	d."ParentID",
@@ -17,7 +16,6 @@ FROM
 		INNER JOIN "Child" d ON m_1."ParentID" = d."ParentID"
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	x."ParentID",
 	x."Value1"
@@ -28,7 +26,6 @@ WHERE
 FETCH NEXT 1 ROWS ONLY
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	m_1."ParentID",
 	d."ParentID",
@@ -46,7 +43,6 @@ FROM
 		INNER JOIN "Child" d ON m_1."ParentID" = d."ParentID"
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	x."ParentID",
 	x."Value1"
@@ -57,7 +53,6 @@ WHERE
 FETCH NEXT 1 ROWS ONLY
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	m_1."ParentID",
 	d."ParentID",
@@ -75,7 +70,6 @@ FROM
 		INNER JOIN "Child" d ON m_1."ParentID" = d."ParentID"
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	x."ParentID",
 	x."Value1"

@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Discriminator Integer -- Int32
@@ -19,7 +19,7 @@ VALUES
 	:Value1
 )
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Discriminator Integer -- Int32
@@ -40,7 +40,7 @@ VALUES
 	:Value2
 )
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 3
 DECLARE @Discriminator Integer -- Int32
@@ -65,8 +65,7 @@ VALUES
 	:NullableBool
 )
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Discriminator",
 	t1."Id",
@@ -79,8 +78,7 @@ FROM
 ORDER BY
 	t1."Id"
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	x."Discriminator",
 	x."Id",
@@ -94,8 +92,7 @@ WHERE
 	x."Discriminator" = 1
 LIMIT 2
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	x."Discriminator",
 	x."Id",
@@ -109,8 +106,7 @@ WHERE
 	x."Discriminator" = 2
 LIMIT 2
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	x."Discriminator",
 	x."Id",
@@ -124,8 +120,7 @@ WHERE
 	x."Discriminator" = 3
 LIMIT 2
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	x."Discriminator",
 	x."Id",
@@ -139,8 +134,7 @@ WHERE
 	x."Value1" = 'Str1'
 LIMIT 2
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	x."Discriminator",
 	x."Id",
@@ -154,8 +148,7 @@ WHERE
 	x."Value2" = 'Str2'
 LIMIT 2
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	x."Discriminator",
 	x."Id",

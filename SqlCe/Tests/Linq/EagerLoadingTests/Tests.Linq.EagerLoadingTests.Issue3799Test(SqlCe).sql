@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[m_1].[Id],
 	[d].[Name]
@@ -21,7 +20,6 @@ FROM
 		INNER JOIN [Test3799Item] [d] ON [m_1].[Id] = [d].[ParentId]
 
 -- SqlCe
-
 SELECT
 	[item_1].[Name],
 	[t1].[Name] as [Name_1],

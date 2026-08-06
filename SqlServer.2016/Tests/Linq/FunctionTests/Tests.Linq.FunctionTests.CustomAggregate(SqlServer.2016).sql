@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016
-
 SELECT
 	SUM([g_1].[Value1]),
 	SUM([g_1].[Value1])

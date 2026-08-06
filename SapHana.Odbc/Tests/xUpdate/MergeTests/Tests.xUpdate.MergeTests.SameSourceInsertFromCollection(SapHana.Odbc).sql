@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 DELETE FROM
 	"TestMerge1" "t1"
 
@@ -104,7 +103,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 DELETE FROM
 	"TestMerge2" "t1"
 
@@ -209,7 +207,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 MERGE INTO "TestMerge1" "Target"
 USING (
 	SELECT 3 AS "Id", NULL AS "Field1", 3 AS "Field2", NULL AS "Field4" FROM DUMMY
@@ -238,7 +235,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Field1",

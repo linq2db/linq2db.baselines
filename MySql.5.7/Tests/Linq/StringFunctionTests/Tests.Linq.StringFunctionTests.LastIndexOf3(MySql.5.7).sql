@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`p`.`PersonID`,
 	CONCAT('123', `p`.`FirstName`, '0123451234')

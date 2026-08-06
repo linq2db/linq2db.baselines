@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID],
@@ -24,7 +23,6 @@ ORDER BY
 	[t1].[ChildID]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID],

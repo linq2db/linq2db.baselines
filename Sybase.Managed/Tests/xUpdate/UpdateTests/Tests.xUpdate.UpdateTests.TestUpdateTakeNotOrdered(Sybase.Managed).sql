@@ -169,7 +169,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 UPDATE TOP 5
 	[Parent]
 SET

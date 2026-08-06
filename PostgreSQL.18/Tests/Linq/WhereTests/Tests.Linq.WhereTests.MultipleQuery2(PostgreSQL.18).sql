@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
-
+﻿-- PostgreSQL.18 PostgreSQL12
 SELECT
 	p."FirstName",
 	p."PersonID",
@@ -11,7 +10,7 @@ FROM
 WHERE
 	p."MiddleName" IS NULL
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL12
 DECLARE @str Text(3) -- String
 SET     @str = '123'
 

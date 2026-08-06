@@ -1,13 +1,10 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
-
 select @@version
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT compatibility_level FROM sys.databases WHERE name = db_name()
 
 -- SqlServer.2025.MS SqlServer.2025
-
 
 SELECT
 	TABLE_CATALOG COLLATE DATABASE_DEFAULT + '.' + TABLE_SCHEMA + '.' + TABLE_NAME as TableID,
@@ -45,7 +42,6 @@ WHERE
 			) IS NULL
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	k.TABLE_CATALOG COLLATE DATABASE_DEFAULT + '.' + k.TABLE_SCHEMA + '.' + k.TABLE_NAME as TableID,
 	k.CONSTRAINT_NAME                                                                    as PrimaryKeyName,
@@ -63,7 +59,6 @@ WHERE
 		c.CONSTRAINT_TYPE='PRIMARY KEY'
 
 -- SqlServer.2025.MS SqlServer.2025
-
 
 SELECT
 	TABLE_CATALOG COLLATE DATABASE_DEFAULT + '.' + TABLE_SCHEMA + '.' + TABLE_NAME                      as TableID,
@@ -100,7 +95,6 @@ FROM
 					LEFT JOIN sys.tables t ON OBJECT_ID('[' + TABLE_CATALOG + '].[' + TABLE_SCHEMA + '].[' + TABLE_NAME + ']') = t.object_id
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	fk.name                                                     as Name,
 	DB_NAME() + '.' + SCHEMA_NAME(po.schema_id) + '.' + po.name as ThisTableID,

@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 WITH RECURSIVE cte (Id, FirstName, LastName)
 AS
 (

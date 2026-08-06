@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	"t1".ID,
 	"t1"."MoneyValue",
@@ -15,7 +14,6 @@ FROM
 	"LinqDataTypes" "t1"
 
 -- Firebird.3 Firebird3
-
 MERGE INTO "LinqDataTypes" "Target"
 USING (
 	SELECT

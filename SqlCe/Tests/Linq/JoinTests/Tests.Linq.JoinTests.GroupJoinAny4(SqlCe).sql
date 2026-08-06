@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[p].[ParentID],
 	CASE
@@ -13,7 +12,7 @@ SELECT
 		)
 			THEN 1
 		ELSE 0
-	END as [n]
+	END
 FROM
 	[Parent] [p]
 

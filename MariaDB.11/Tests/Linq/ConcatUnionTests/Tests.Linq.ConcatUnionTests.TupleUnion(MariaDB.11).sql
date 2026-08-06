@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`p1`.`ParentID`,
 	`p1`.`Value1`
@@ -17,7 +16,6 @@ WHERE
 	`p2`.`ParentID` <= 3
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`ParentID`,
 	`t1`.`Value1`

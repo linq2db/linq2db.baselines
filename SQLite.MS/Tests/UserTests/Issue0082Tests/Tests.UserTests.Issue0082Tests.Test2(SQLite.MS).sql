@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[o].[ParentID],
 	(
@@ -22,14 +21,12 @@ FROM
 	[Parent] [o]
 
 -- SQLite.MS SQLite
-
 SELECT
 	COUNT(*)
 FROM
 	[Parent] [o]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[x].[ParentID],
 	[x].[CountResult],

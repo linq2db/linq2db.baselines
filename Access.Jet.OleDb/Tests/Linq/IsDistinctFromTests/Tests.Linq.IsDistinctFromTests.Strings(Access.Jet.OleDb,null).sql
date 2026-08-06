@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	COUNT(*)
 FROM
@@ -8,7 +7,6 @@ WHERE
 	[s].[String] IS NOT NULL
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	COUNT(*)
 FROM
@@ -17,7 +15,6 @@ WHERE
 	[s].[NullableString] IS NOT NULL
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	COUNT(*)
 FROM
@@ -26,7 +23,6 @@ WHERE
 	[s].[String] IS NULL
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	COUNT(*)
 FROM

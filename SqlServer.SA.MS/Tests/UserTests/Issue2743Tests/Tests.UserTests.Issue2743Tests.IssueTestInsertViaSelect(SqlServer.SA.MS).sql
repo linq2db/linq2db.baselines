@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
-
 INSERT INTO [MessageEventDTOTb2]
 (
 	[Id]

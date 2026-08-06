@@ -9,7 +9,7 @@ INSERT INTO [Child]
 )
 SELECT
 	[c_1].[ParentID],
-	@id as [c1]
+	@id
 FROM
 	[Child] [c_1]
 WHERE

@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	CONCAT(`t`.`Value1`, CAST(`t`.`Value2` AS CHAR(11)), Lower(CAST(`t`.`Value3` AS CHAR(36))))
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	`t`.`ID`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`ID`,
 	`t1`.`Value1`,

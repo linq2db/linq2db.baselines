@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2019
-
 DELETE [p]
 FROM
 	[AllTypes2] [p]
@@ -7,7 +6,6 @@ WHERE
 	[p].[ID] >= 3
 
 -- SqlServer.2019
-
 SET IDENTITY_INSERT [AllTypes2] ON
 
 -- SqlServer.2019
@@ -96,11 +94,9 @@ VALUES
 (12,DATETIME2FROMPARTS(2020, 3, 9, 0, 0, 0, 0, 7),DATETIMEOFFSETFROMPARTS(2020, 2, 29, 18, 3, 55, 1231234, 0, 0, 7),DATETIME2FROMPARTS(2020, 3, 9, 0, 0, 0, 0, 7),TIMEFROMPARTS(0, 0, 9, 0, 7),@p28,@p29,@p30)
 
 -- SqlServer.2019
-
 SET IDENTITY_INSERT [AllTypes2] OFF
 
 -- SqlServer.2019
-
 SELECT
 	[p].[ID],
 	[p].[dateDataType],

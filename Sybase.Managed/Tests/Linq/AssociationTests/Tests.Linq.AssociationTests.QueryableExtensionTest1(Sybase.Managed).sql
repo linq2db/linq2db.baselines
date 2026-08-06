@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[a_QueryableChildren].[ParentID],
 	[a_QueryableChildren].[ChildID]

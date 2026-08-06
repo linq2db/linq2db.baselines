@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	DateAdd(day, [t].[Value], GetDate()),
 	DateAdd(day, 2, GetDate())
@@ -13,7 +12,6 @@ SELECT
 	DateAdd(day, 4, GetDate())
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[v_1].[Value2]
 FROM

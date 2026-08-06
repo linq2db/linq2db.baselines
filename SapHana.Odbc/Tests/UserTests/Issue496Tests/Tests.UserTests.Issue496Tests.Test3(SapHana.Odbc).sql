@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"a_Children"."ChildID",
 	"a_Children"."ParentID"

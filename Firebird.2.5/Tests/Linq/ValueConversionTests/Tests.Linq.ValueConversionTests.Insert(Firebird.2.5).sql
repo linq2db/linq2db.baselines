@@ -23,16 +23,15 @@ INSERT INTO "ValueConversion"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Value1 AS VARCHAR(2)),
-	CAST(@Enum AS VARCHAR(6)),
-	CAST(@Value2 AS VARCHAR(22)),
-	CAST(@BoolValue AS VarChar(1) CHARACTER SET UNICODE_FSS),
-	CAST(@AnotherBoolValue AS VarChar(1) CHARACTER SET UNICODE_FSS)
+	@Id,
+	@Value1,
+	@Enum,
+	@Value2,
+	@BoolValue,
+	@AnotherBoolValue
 )
 
 -- Firebird.2.5 Firebird
-
 SELECT FIRST 1
 	"e"."Id",
 	"e"."Value1",
@@ -74,16 +73,15 @@ INSERT INTO "ValueConversion"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Value1 AS VARCHAR(1)),
-	CAST(@Value2 AS VARCHAR(1)),
-	CAST(@Enum AS VARCHAR(6)),
-	CAST(@BoolValue AS VarChar(1) CHARACTER SET UNICODE_FSS),
-	CAST(@AnotherBoolValue AS VarChar(1) CHARACTER SET UNICODE_FSS)
+	@Id,
+	@Value1,
+	@Value2,
+	@Enum,
+	@BoolValue,
+	@AnotherBoolValue
 )
 
 -- Firebird.2.5 Firebird
-
 SELECT FIRST 1
 	"e"."Id",
 	"e"."Value1",
@@ -150,7 +148,6 @@ VALUES
 )
 
 -- Firebird.2.5 Firebird
-
 SELECT FIRST 1
 	"e"."Id",
 	"e"."Value1",
@@ -168,7 +165,6 @@ WHERE
 	"e"."Id" = 3
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	COUNT(*)
 FROM

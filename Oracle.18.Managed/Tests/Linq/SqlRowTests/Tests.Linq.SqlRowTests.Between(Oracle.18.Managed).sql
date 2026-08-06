@@ -1,5 +1,4 @@
 ﻿-- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(*)
 FROM
@@ -8,7 +7,6 @@ WHERE
 	i."Two" >= i."One" * 2 AND i."Two" <= i."One" + i."One"
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(*)
 FROM
@@ -17,7 +15,6 @@ WHERE
 	i."Three" >= i."One" AND i."Three" <= i."Four"
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(*)
 FROM
@@ -26,7 +23,6 @@ WHERE
 	i."Two" >= i."Three"
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(*)
 FROM
@@ -36,7 +32,6 @@ WHERE
 	(i."Two" < i."Three" OR i."Two" = i."Three" AND i."Five" <= i."Two")
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(*)
 FROM
@@ -46,7 +41,6 @@ WHERE
 	i."Five" <= i."Two"
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(*)
 FROM
@@ -56,7 +50,6 @@ WHERE
 	(i."Two" < i."Three" OR i."Two" = i."Three" AND i."Nil" <= i."One")
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(*)
 FROM
@@ -65,7 +58,6 @@ WHERE
 	i."Nil" >= i."One" AND i."Nil" <= i."Three"
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(*)
 FROM
@@ -75,7 +67,6 @@ WHERE
 	(i."Two" < i."Three" OR i."Two" = i."Three" AND i."Five" <= i."Nil")
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(*)
 FROM
@@ -85,7 +76,6 @@ WHERE
 	(i."Two" < i."Three" OR i."Two" = i."Three" AND i."Nil" <= i."Nil")
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(*)
 FROM

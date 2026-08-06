@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 SELECT
 	' ' || Coalesce("f"."Value1", 0),
 	Coalesce("t1"."SubSum", 0),

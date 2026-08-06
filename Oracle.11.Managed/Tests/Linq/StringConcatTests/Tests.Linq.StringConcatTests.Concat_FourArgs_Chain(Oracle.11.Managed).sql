@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	e."Id"
 FROM
@@ -8,7 +7,6 @@ WHERE
 	(e."Str1" || ' ' || e."StrReq" || '!') = 'John Programmer!'
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Str1",

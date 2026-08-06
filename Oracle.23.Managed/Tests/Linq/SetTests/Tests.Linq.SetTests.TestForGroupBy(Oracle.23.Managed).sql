@@ -1,5 +1,4 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	x."ParentID",
 	x."ChildID",
@@ -10,7 +9,6 @@ WHERE
 	x."ParentID" IN (2)
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	x."ParentID",
 	x."ChildID",

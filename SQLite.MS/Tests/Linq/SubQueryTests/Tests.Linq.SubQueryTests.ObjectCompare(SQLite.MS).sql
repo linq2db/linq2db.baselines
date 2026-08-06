@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[p].[ParentID],
 	[c_1].[ChildID] + 1

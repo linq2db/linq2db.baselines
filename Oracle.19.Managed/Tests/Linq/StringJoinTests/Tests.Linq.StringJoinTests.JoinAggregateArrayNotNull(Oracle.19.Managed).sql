@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	SUBSTR(CASE
 		WHEN t."NullableValue" IS NULL THEN N''
@@ -35,7 +34,6 @@ FROM
 	"SampleClass" t
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1.PK,
 	t1."Id",

@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 CREATE TEMP TABLE MergeTemp
 (
 	ID   Int          NOT NULL,
@@ -26,7 +25,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 UPDATE
 	MergeTemp t1
 SET
@@ -43,6 +41,5 @@ WHERE
 	)
 
 -- Informix.DB2 Informix
-
 DROP TABLE IF EXISTS MergeTemp
 

@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT /*+ PARALLEL(10) */
 	p."ParentID",
 	p."Value1"

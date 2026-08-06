@@ -1,8 +1,7 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[s].[ParentID],
-	[c_1].[ParentID],
+	[c_1].[ParentID] as [ParentID_1],
 	[c_1].[ChildID]
 FROM
 	[Parent] [s]
@@ -11,10 +10,9 @@ WHERE
 	[c_1].[ChildID] < 0 OR [c_1].[ParentID] IS NULL
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[m_1].[ParentID],
-	[d].[ParentID],
+	[d].[ParentID] as [ParentID_1],
 	[d].[ChildID]
 FROM
 	(
@@ -26,7 +24,6 @@ FROM
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

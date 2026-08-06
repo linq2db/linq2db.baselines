@@ -1,12 +1,10 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 DELETE FROM
 	[Parent] [p]
 WHERE
 	[p].[ParentID] > 1000
 
 -- Access.Ace.OleDb AccessOleDb
-
 INSERT INTO [Parent]
 (
 	[ParentID],
@@ -31,7 +29,6 @@ FROM
 	) [t1]
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	COUNT(*)
 FROM
@@ -40,7 +37,6 @@ WHERE
 	[c_1].[ParentID] > 1000
 
 -- Access.Ace.OleDb AccessOleDb
-
 DELETE FROM
 	[Parent] [p]
 WHERE

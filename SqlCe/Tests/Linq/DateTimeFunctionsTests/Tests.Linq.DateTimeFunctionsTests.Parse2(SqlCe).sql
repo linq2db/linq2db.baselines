@@ -1,7 +1,6 @@
 ﻿-- SqlCe
-
 SELECT
-	CAST(CAST(DatePart(year, [d].[DateTimeValue]) AS NVarChar(11)) + '-02-24 00:00:00' AS DateTime) as [Day_1]
+	CAST(CAST(DatePart(year, [d].[DateTimeValue]) AS NVarChar(11)) + '-02-24 00:00:00' AS DateTime)
 FROM
 	[LinqDataTypes] [d]
 WHERE

@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[g_1].[TestId],
 	COUNT(*)
@@ -11,7 +10,6 @@ ORDER BY
 	[g_1].[TestId]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[TestId]

@@ -1,10 +1,8 @@
 ﻿-- SqlCe
-
 DELETE FROM
 	[TestMerge1]
 
 -- SqlCe
-
 DELETE FROM
 	[TestMerge2]
 
@@ -600,10 +598,9 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
-	[t1].[Field1] as [FieldInt32],
+	[t1].[Field1],
 	[t1].[FieldInt64],
 	[t1].[FieldBoolean],
 	[t1].[FieldString],
@@ -624,10 +621,9 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
-	[t1].[Field1] as [FieldInt32],
+	[t1].[Field1],
 	[t1].[FieldInt64],
 	[t1].[FieldBoolean],
 	[t1].[FieldString],

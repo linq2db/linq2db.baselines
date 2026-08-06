@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT
 	[gr].[FirstName],
 	[gr].[LastName],

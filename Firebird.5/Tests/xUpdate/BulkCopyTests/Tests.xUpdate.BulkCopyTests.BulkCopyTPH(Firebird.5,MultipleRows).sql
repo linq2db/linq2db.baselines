@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 INSERT INTO "TPHTable"
 (
 	"Id",
@@ -14,7 +13,6 @@ SELECT 2,2,NULL,'Str2',NULL,NULL FROM rdb$database UNION ALL
 SELECT 3,3,NULL,NULL,'Str3','Y' FROM rdb$database
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t1"."Discriminator",
 	"t1"."Id",
@@ -28,7 +26,6 @@ ORDER BY
 	"t1"."Id"
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"x"."Discriminator",
 	"x"."Id",
@@ -43,7 +40,6 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"x"."Discriminator",
 	"x"."Id",
@@ -58,7 +54,6 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"x"."Discriminator",
 	"x"."Id",
@@ -73,7 +68,6 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"x"."Discriminator",
 	"x"."Id",
@@ -88,7 +82,6 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"x"."Discriminator",
 	"x"."Id",
@@ -103,7 +96,6 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"x"."Discriminator",
 	"x"."Id",

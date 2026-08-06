@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[a_Table2].[ID],
 	[a_Table2].[ID3],

@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],
@@ -12,7 +11,6 @@ WHERE
 	[t1].[PersonID] = 1 AND [t1].[Gender] = 'M'
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

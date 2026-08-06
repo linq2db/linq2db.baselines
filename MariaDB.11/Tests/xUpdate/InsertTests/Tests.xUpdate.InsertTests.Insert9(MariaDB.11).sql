@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DELETE  
 FROM
 	`Child`
@@ -7,7 +6,6 @@ WHERE
 	`Child`.`ParentID` > 1000
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DELETE  
 FROM
 	`Parent`
@@ -60,7 +58,6 @@ WHERE
 	`c_1`.`ParentID` = @id
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DELETE  
 FROM
 	`Child`
@@ -68,7 +65,6 @@ WHERE
 	`Child`.`ParentID` > 1000
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DELETE  
 FROM
 	`Parent`

@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	i_1."PersonID",
 	i_1."FirstName",

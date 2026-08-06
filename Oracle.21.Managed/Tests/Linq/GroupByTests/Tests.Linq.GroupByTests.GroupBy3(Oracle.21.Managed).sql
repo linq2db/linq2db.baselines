@@ -1,5 +1,4 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT DISTINCT
 	Coalesce(gr."Value1", c_1."ChildID")
 FROM

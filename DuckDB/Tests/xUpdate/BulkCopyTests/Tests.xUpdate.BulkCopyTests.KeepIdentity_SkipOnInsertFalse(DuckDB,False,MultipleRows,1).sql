@@ -14,7 +14,6 @@ RETURNING
 	ID
 
 -- DuckDB
-
 INSERT INTO AllTypes
 (
 	intDataType

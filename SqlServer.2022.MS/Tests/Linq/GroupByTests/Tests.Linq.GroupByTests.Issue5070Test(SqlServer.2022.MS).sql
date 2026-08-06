@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
-
 SELECT
 	[t_1].[FinalCustomerId],
 	[t_1].[IsActive],

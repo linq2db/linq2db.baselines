@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 MERGE INTO "Person" "Target"
 USING (
 	SELECT
@@ -30,7 +29,6 @@ VALUES
 )
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."FirstName",
 	"t1"."PersonID",

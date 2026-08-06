@@ -1,15 +1,12 @@
 ﻿-- DuckDB
-
 SELECT
 	current_database()
 
 -- DuckDB
-
 DROP TABLE IF EXISTS Issue681Table2
 
 -- DuckDB
-
-CREATE TABLE TestData.Issue681Table2
+CREATE TABLE memory.Issue681Table2
 (
 	ID      INTEGER,
 	"Value" INTEGER NOT NULL,
@@ -18,6 +15,5 @@ CREATE TABLE TestData.Issue681Table2
 )
 
 -- DuckDB
-
 DROP TABLE IF EXISTS Issue681Table2
 

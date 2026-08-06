@@ -1,9 +1,8 @@
 ﻿-- SqlCe
-
 SELECT
 	[m_1].[Key_1],
 	[d].[FirstName],
-	[d].[PersonID] as [ID],
+	[d].[PersonID],
 	[d].[LastName],
 	[d].[MiddleName],
 	[d].[Gender]
@@ -17,7 +16,6 @@ FROM
 		INNER JOIN [Person] [d] ON [m_1].[Key_1] = [d].[FirstName]
 
 -- SqlCe
-
 SELECT
 	[t2].[Key_1],
 	[t2].[Key_1] as [Key_2]

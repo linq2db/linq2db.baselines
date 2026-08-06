@@ -1,15 +1,12 @@
 ﻿-- Firebird.2.5 Firebird
-
 DELETE FROM
 	"Parent" "t1"
 
 -- Firebird.2.5 Firebird
-
 DELETE FROM
 	"Child" "t1"
 
 -- Firebird.2.5 Firebird
-
 DELETE FROM
 	"GrandChild" "t1"
 
@@ -87,7 +84,6 @@ VALUES
 )
 
 -- Firebird.2.5 Firebird
-
 MERGE INTO "GrandChild" "Target"
 USING (
 	SELECT
@@ -112,7 +108,6 @@ VALUES
 )
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1"."GrandChildID",
 	"t1"."ParentID",

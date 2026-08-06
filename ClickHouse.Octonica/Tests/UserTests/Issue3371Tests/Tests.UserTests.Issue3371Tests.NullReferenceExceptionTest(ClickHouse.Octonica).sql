@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	item_1.Id,
 	a_PayRate.Id,
@@ -11,7 +10,6 @@ WHERE
 	a_PayRate.Name = 'test'
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	item_1.Id,
 	item_1.PayRateId,

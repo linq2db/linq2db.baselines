@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 INSERT INTO `Parent`
 (
 	`ParentID`
@@ -10,7 +9,6 @@ VALUES
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 INSERT INTO `Child`
 (
 	`ChildID`,
@@ -35,7 +33,6 @@ WHERE
 	`child_1`.`ChildID` = 10000 AND `child_1`.`ParentID` = `a_Parent`.`ParentID`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 DELETE  
 FROM
 	`Child`
@@ -43,7 +40,6 @@ WHERE
 	`Child`.`ChildID` = 10000
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 DELETE  
 FROM
 	`Parent`

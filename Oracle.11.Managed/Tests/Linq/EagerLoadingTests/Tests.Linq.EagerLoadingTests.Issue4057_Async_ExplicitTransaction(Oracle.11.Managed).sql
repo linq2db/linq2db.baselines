@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	m_1."ParentID",
 	d."ParentID",
@@ -16,7 +15,6 @@ FROM
 		INNER JOIN "Child" d ON m_1."ParentID" = d."ParentID"
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	x."ParentID",
 	x."Value1"
@@ -26,7 +24,6 @@ WHERE
 	x."ParentID" = 3 AND ROWNUM <= 1
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	m_1."ParentID",
 	d."ParentID",
@@ -43,7 +40,6 @@ FROM
 		INNER JOIN "Child" d ON m_1."ParentID" = d."ParentID"
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	x."ParentID",
 	x."Value1"
@@ -53,7 +49,6 @@ WHERE
 	x."ParentID" = 3 AND ROWNUM <= 1
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	m_1."ParentID",
 	d."ParentID",
@@ -70,7 +65,6 @@ FROM
 		INNER JOIN "Child" d ON m_1."ParentID" = d."ParentID"
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	x."ParentID",
 	x."Value1"

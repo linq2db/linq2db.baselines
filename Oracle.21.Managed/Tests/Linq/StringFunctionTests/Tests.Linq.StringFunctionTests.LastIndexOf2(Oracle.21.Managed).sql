@@ -1,5 +1,4 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	p."PersonID",
 	'123' || p."FirstName" || '012345'

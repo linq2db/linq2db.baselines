@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`p`.`FirstName`,
 	`p`.`PersonID`,
@@ -14,7 +13,6 @@ FROM
 			SELECT 3) `n` ON `p`.`PersonID` = `n`.`ID`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`p`.`FirstName`,
 	`p`.`PersonID`,

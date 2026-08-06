@@ -1,65 +1,49 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
-
 SELECT Cast('1' as char)
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT Cast('1' as char)
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT Cast('1' as char(1))
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT Cast('1' as char(1))
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT Cast('1' as varchar)
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT Cast('1' as varchar)
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT Cast('1' as varchar(20))
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT Cast('1' as varchar(20))
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT Cast('1' as nchar)
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT Cast('1' as nchar)
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT Cast('1' as nchar(20))
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT Cast('1' as nchar(20))
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT Cast('1' as nvarchar)
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT Cast('1' as nvarchar)
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT Cast('1' as nvarchar(20))
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT Cast('1' as nvarchar(20))
 
 -- SqlServer.2025.MS SqlServer.2025

@@ -1,5 +1,4 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 UPDATE
 	"UpdatedEntities"
 SET
@@ -18,7 +17,6 @@ WHERE
 	)
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	v."Value1",
 	v."Value2",

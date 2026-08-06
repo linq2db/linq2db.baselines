@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT
 	[fact_1].[Id],
 	[leftTag].[Id],

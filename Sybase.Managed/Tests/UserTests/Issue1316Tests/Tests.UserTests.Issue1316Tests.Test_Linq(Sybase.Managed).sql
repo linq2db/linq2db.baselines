@@ -12,7 +12,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 2
 	[t1].[ID]
 FROM

@@ -10,5 +10,5 @@ SELECT TOP 1
 FROM
 	[AsyncDataTable] [c_1]
 WHERE
-	[c_1].[Id] = CVar(?)
+	[c_1].[Id] = ?
 

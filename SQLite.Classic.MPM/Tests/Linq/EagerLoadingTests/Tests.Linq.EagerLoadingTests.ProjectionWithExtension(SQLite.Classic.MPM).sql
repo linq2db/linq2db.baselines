@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[m_1].[Id1],
 	[d].[DetailId],
@@ -15,7 +14,6 @@ FROM
 		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[x].[Id1],
 	[x].[Id2],
@@ -25,7 +23,6 @@ FROM
 	[MasterClass] [x]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[m_1].[Id1],
 	[d].[DetailId],
@@ -41,7 +38,6 @@ FROM
 		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[x].[Id1],
 	[x].[Id2],

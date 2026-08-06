@@ -1,12 +1,10 @@
 ﻿-- SqlCe
-
 SELECT
 	[e].[Id]
 FROM
 	[ConcatTestEntity] [e]
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Str1],

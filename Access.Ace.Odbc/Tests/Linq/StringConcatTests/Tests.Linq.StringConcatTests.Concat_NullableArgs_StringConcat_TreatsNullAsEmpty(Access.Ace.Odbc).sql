@@ -1,12 +1,10 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[e].[Id]
 FROM
 	[ConcatTestEntity] [e]
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Str1],

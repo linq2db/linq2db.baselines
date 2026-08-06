@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 MERGE INTO TrimTestTable Target
 USING (
 	SELECT 1::Int AS ID, '***OOO***'::NVarChar(50) AS Data_1 FROM table(set{1})
@@ -29,7 +28,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 MERGE INTO TrimTestTable Target
 USING (
 	SELECT 3::Int AS ID, '***III***'::NVarChar(50) AS Data_1 FROM table(set{1})) Source
@@ -57,7 +55,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT
 	r.ID,
 	r."Data"
@@ -67,7 +64,6 @@ ORDER BY
 	r.ID
 
 -- Informix.DB2 Informix
-
 SELECT
 	r.ID,
 	r."Data"

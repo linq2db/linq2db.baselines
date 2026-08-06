@@ -60,7 +60,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[r].[ID],
 	[r].[IntValue]
@@ -72,7 +71,6 @@ ORDER BY
 	[r].[ID]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[r].[ID],
 	[r].[IntValue],

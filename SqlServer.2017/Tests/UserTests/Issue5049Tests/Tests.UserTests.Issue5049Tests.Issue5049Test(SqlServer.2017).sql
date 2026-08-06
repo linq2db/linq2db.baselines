@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 SELECT
 	[p].[Id],
 	[p].[Name],

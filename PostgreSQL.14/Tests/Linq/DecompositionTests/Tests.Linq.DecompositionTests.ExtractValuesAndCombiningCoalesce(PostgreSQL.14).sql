@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t."Kind" = 1 OR t."Kind" = 2,
 	t."Kind",
@@ -13,8 +12,7 @@ SELECT
 FROM
 	"Item" t
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."ItemId",
 	t1."Kind",
@@ -24,8 +22,7 @@ SELECT
 FROM
 	"Item" t1
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	x_1."Color_1",
 	x_1."Kind",
@@ -56,8 +53,7 @@ FROM
 WHERE
 	NOT (x_1."Color" AND (x_1."Color_1" AND x_1."Color_2" OR NOT x_1."Color_1") OR NOT x_1."Color" AND NOT x_1."Color_4")
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."ItemId",
 	t1."Kind",
@@ -67,8 +63,7 @@ SELECT
 FROM
 	"Item" t1
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	x_1."Color_1",
 	x_1."Kind",
@@ -100,8 +95,7 @@ WHERE
 	x_1."Color" AND (x_1."Color_1" AND x_1."Color_2" OR NOT x_1."Color_1") OR
 	NOT x_1."Color" AND NOT x_1."Color_4"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."ItemId",
 	t1."Kind",
@@ -111,8 +105,7 @@ SELECT
 FROM
 	"Item" t1
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	x_1."Size_2",
 	x_1."Kind",
@@ -143,8 +136,7 @@ FROM
 WHERE
 	NOT (NOT x_1."Size_1" AND (x_1."Size_3" AND x_1."Size_4" OR NOT x_1."Size_3"))
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."ItemId",
 	t1."Kind",
@@ -154,8 +146,7 @@ SELECT
 FROM
 	"Item" t1
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	x_1."Size_2",
 	x_1."Kind",
@@ -186,8 +177,7 @@ FROM
 WHERE
 	NOT x_1."Size_1" AND (x_1."Size_3" AND x_1."Size_4" OR NOT x_1."Size_3")
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."ItemId",
 	t1."Kind",

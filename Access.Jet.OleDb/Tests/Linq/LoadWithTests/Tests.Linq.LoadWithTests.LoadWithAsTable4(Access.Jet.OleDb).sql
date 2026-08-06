@@ -1,10 +1,9 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[m_1].[ParentID],
-	[d].[ParentID],
+	[d].[ParentID] as [ParentID_1],
 	[d].[ChildID],
-	[a_Parent].[ParentID],
+	[a_Parent].[ParentID] as [ParentID_2],
 	[a_Parent].[Value1]
 FROM
 	((
@@ -17,7 +16,6 @@ FROM
 		LEFT JOIN [Parent] [a_Parent] ON ([d].[ParentID] = [a_Parent].[ParentID])
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT TOP 1
 	[t].[ParentID],
 	[t].[Value1]

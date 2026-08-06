@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	CASE
 		WHEN [t1].[ParentID] IS NOT NULL THEN [t1].[ChildID]

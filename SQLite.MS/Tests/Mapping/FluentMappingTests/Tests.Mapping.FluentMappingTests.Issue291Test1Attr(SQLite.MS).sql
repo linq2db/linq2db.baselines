@@ -41,7 +41,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	[o].[my_col1],
 	[o].[itemType],
@@ -53,7 +52,6 @@ WHERE
 LIMIT 1
 
 -- SQLite.MS SQLite
-
 SELECT
 	COUNT(*)
 FROM

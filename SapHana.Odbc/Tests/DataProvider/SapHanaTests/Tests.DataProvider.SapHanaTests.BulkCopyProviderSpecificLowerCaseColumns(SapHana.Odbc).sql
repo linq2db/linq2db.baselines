@@ -409,7 +409,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 DELETE FROM
 	"BulkInsertLowerCaseColumns" "p"
 WHERE

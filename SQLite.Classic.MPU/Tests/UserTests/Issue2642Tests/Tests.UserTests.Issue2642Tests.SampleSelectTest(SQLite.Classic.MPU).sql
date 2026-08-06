@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -18,7 +17,6 @@ FROM
 		INNER JOIN [EmailAttachments] [d] ON [m_1].[Id] = [d].[EmailId]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[p].[Id],
 	[p].[AddTime]

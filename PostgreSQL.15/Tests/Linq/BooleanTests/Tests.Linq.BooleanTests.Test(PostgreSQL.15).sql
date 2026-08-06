@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL12
 DECLARE @True Boolean
 SET     @True = True
 
@@ -17,8 +17,7 @@ FROM
 WHERE
 	r."Boolean" = :True
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Boolean",
@@ -32,7 +31,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL12
 DECLARE @False Boolean
 SET     @False = False
 
@@ -51,8 +50,7 @@ FROM
 WHERE
 	r."Boolean" = :False
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Boolean",
@@ -66,7 +64,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL12
 DECLARE @TrueN Boolean
 SET     @TrueN = True
 
@@ -85,8 +83,7 @@ FROM
 WHERE
 	r."Boolean" = :TrueN
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Boolean",
@@ -100,7 +97,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL12
 DECLARE @FalseN Boolean
 SET     @FalseN = False
 
@@ -119,8 +116,7 @@ FROM
 WHERE
 	r."Boolean" = :FalseN
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Boolean",
@@ -134,8 +130,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Boolean",
@@ -151,8 +146,7 @@ FROM
 WHERE
 	1 = 0
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Boolean",
@@ -166,7 +160,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL12
 DECLARE @True Boolean
 SET     @True = True
 
@@ -185,8 +179,7 @@ FROM
 WHERE
 	r."BooleanN" = :True
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Boolean",
@@ -200,7 +193,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL12
 DECLARE @False Boolean
 SET     @False = False
 
@@ -219,8 +212,7 @@ FROM
 WHERE
 	r."BooleanN" = :False
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Boolean",
@@ -234,7 +226,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL12
 DECLARE @TrueN Boolean
 SET     @TrueN = True
 
@@ -253,8 +245,7 @@ FROM
 WHERE
 	r."BooleanN" = :TrueN
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Boolean",
@@ -268,7 +259,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL12
 DECLARE @FalseN Boolean
 SET     @FalseN = False
 
@@ -287,8 +278,7 @@ FROM
 WHERE
 	r."BooleanN" = :FalseN
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Boolean",
@@ -302,8 +292,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Boolean",
@@ -319,8 +308,7 @@ FROM
 WHERE
 	r."BooleanN" IS NULL
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Boolean",
@@ -334,7 +322,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL12
 DECLARE @True Boolean
 SET     @True = True
 
@@ -353,8 +341,7 @@ FROM
 WHERE
 	r."Boolean" <> :True
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Boolean",
@@ -368,7 +355,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL12
 DECLARE @False Boolean
 SET     @False = False
 
@@ -387,8 +374,7 @@ FROM
 WHERE
 	r."Boolean" <> :False
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Boolean",
@@ -402,7 +388,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL12
 DECLARE @TrueN Boolean
 SET     @TrueN = True
 
@@ -421,8 +407,7 @@ FROM
 WHERE
 	r."Boolean" <> :TrueN
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Boolean",
@@ -436,7 +421,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL12
 DECLARE @FalseN Boolean
 SET     @FalseN = False
 
@@ -455,8 +440,7 @@ FROM
 WHERE
 	r."Boolean" <> :FalseN
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Boolean",
@@ -470,8 +454,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Boolean",
@@ -485,8 +468,7 @@ SELECT
 FROM
 	"BooleanTable" r
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Boolean",
@@ -500,7 +482,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL12
 DECLARE @True Boolean
 SET     @True = True
 
@@ -519,8 +501,7 @@ FROM
 WHERE
 	r."BooleanN" <> :True OR r."BooleanN" IS NULL
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Boolean",
@@ -534,7 +515,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL12
 DECLARE @False Boolean
 SET     @False = False
 
@@ -553,8 +534,7 @@ FROM
 WHERE
 	r."BooleanN" <> :False OR r."BooleanN" IS NULL
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Boolean",
@@ -568,7 +548,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL12
 DECLARE @TrueN Boolean
 SET     @TrueN = True
 
@@ -587,8 +567,7 @@ FROM
 WHERE
 	r."BooleanN" <> :TrueN OR r."BooleanN" IS NULL
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Boolean",
@@ -602,7 +581,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL12
 DECLARE @FalseN Boolean
 SET     @FalseN = False
 
@@ -621,8 +600,7 @@ FROM
 WHERE
 	r."BooleanN" <> :FalseN OR r."BooleanN" IS NULL
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Boolean",
@@ -636,8 +614,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Boolean",
@@ -653,8 +630,7 @@ FROM
 WHERE
 	r."BooleanN" IS NOT NULL
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Boolean",
@@ -668,8 +644,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	g_1."Id",
 	COUNT(*) FILTER (WHERE g_1."Boolean"),
@@ -722,8 +697,7 @@ FROM
 GROUP BY
 	g_1."Id"
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Boolean",
@@ -737,8 +711,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Int32" = 0,
@@ -1409,8 +1382,7 @@ SELECT
 FROM
 	"BooleanTable" r_1
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Boolean",
@@ -1424,8 +1396,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Boolean",
@@ -1441,8 +1412,7 @@ FROM
 WHERE
 	r."Boolean" = True
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Boolean",
@@ -1456,8 +1426,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Boolean",
@@ -1473,8 +1442,7 @@ FROM
 WHERE
 	r."Boolean" = False
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Boolean",
@@ -1488,8 +1456,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Boolean",
@@ -1505,8 +1472,7 @@ FROM
 WHERE
 	r."Boolean" = True
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Boolean",
@@ -1520,8 +1486,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Boolean",
@@ -1537,8 +1502,7 @@ FROM
 WHERE
 	r."Boolean" = False
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Boolean",
@@ -1552,8 +1516,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Boolean",
@@ -1569,8 +1532,7 @@ FROM
 WHERE
 	1 = 0
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Boolean",
@@ -1584,8 +1546,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Boolean",
@@ -1601,8 +1562,7 @@ FROM
 WHERE
 	r."BooleanN" = True
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Boolean",
@@ -1616,8 +1576,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Boolean",
@@ -1633,8 +1592,7 @@ FROM
 WHERE
 	r."BooleanN" = False
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Boolean",
@@ -1648,8 +1606,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Boolean",
@@ -1665,8 +1622,7 @@ FROM
 WHERE
 	r."BooleanN" = True
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Boolean",
@@ -1680,8 +1636,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Boolean",
@@ -1697,8 +1652,7 @@ FROM
 WHERE
 	r."BooleanN" = False
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Boolean",
@@ -1712,8 +1666,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Boolean",
@@ -1729,8 +1682,7 @@ FROM
 WHERE
 	r."BooleanN" IS NULL
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Boolean",
@@ -1744,8 +1696,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Boolean",
@@ -1761,8 +1712,7 @@ FROM
 WHERE
 	r."Boolean" <> True
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Boolean",
@@ -1776,8 +1726,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Boolean",
@@ -1793,8 +1742,7 @@ FROM
 WHERE
 	r."Boolean" <> False
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Boolean",
@@ -1808,8 +1756,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Boolean",
@@ -1825,8 +1772,7 @@ FROM
 WHERE
 	r."Boolean" <> True
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Boolean",
@@ -1840,8 +1786,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Boolean",
@@ -1857,8 +1802,7 @@ FROM
 WHERE
 	r."Boolean" <> False
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Boolean",
@@ -1872,8 +1816,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Boolean",
@@ -1887,8 +1830,7 @@ SELECT
 FROM
 	"BooleanTable" r
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Boolean",
@@ -1902,72 +1844,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.15 PostgreSQL
-
-SELECT
-	r."Id",
-	r."Boolean",
-	r."BooleanN",
-	r."Int32",
-	r."Int32N",
-	r."Decimal",
-	r."DecimalN",
-	r."Double",
-	r."DoubleN"
-FROM
-	"BooleanTable" r
-WHERE
-	r."BooleanN" <> True OR r."BooleanN" IS NULL
-
--- PostgreSQL.15 PostgreSQL
-
-SELECT
-	t1."Id",
-	t1."Boolean",
-	t1."BooleanN",
-	t1."Int32",
-	t1."Int32N",
-	t1."Decimal",
-	t1."DecimalN",
-	t1."Double",
-	t1."DoubleN"
-FROM
-	"BooleanTable" t1
-
--- PostgreSQL.15 PostgreSQL
-
-SELECT
-	r."Id",
-	r."Boolean",
-	r."BooleanN",
-	r."Int32",
-	r."Int32N",
-	r."Decimal",
-	r."DecimalN",
-	r."Double",
-	r."DoubleN"
-FROM
-	"BooleanTable" r
-WHERE
-	r."BooleanN" <> False OR r."BooleanN" IS NULL
-
--- PostgreSQL.15 PostgreSQL
-
-SELECT
-	t1."Id",
-	t1."Boolean",
-	t1."BooleanN",
-	t1."Int32",
-	t1."Int32N",
-	t1."Decimal",
-	t1."DecimalN",
-	t1."Double",
-	t1."DoubleN"
-FROM
-	"BooleanTable" t1
-
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Boolean",
@@ -1983,8 +1860,7 @@ FROM
 WHERE
 	r."BooleanN" <> True OR r."BooleanN" IS NULL
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Boolean",
@@ -1998,8 +1874,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Boolean",
@@ -2015,8 +1890,7 @@ FROM
 WHERE
 	r."BooleanN" <> False OR r."BooleanN" IS NULL
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Boolean",
@@ -2030,8 +1904,67 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL12
+SELECT
+	r."Id",
+	r."Boolean",
+	r."BooleanN",
+	r."Int32",
+	r."Int32N",
+	r."Decimal",
+	r."DecimalN",
+	r."Double",
+	r."DoubleN"
+FROM
+	"BooleanTable" r
+WHERE
+	r."BooleanN" <> True OR r."BooleanN" IS NULL
 
+-- PostgreSQL.15 PostgreSQL12
+SELECT
+	t1."Id",
+	t1."Boolean",
+	t1."BooleanN",
+	t1."Int32",
+	t1."Int32N",
+	t1."Decimal",
+	t1."DecimalN",
+	t1."Double",
+	t1."DoubleN"
+FROM
+	"BooleanTable" t1
+
+-- PostgreSQL.15 PostgreSQL12
+SELECT
+	r."Id",
+	r."Boolean",
+	r."BooleanN",
+	r."Int32",
+	r."Int32N",
+	r."Decimal",
+	r."DecimalN",
+	r."Double",
+	r."DoubleN"
+FROM
+	"BooleanTable" r
+WHERE
+	r."BooleanN" <> False OR r."BooleanN" IS NULL
+
+-- PostgreSQL.15 PostgreSQL12
+SELECT
+	t1."Id",
+	t1."Boolean",
+	t1."BooleanN",
+	t1."Int32",
+	t1."Int32N",
+	t1."Decimal",
+	t1."DecimalN",
+	t1."Double",
+	t1."DoubleN"
+FROM
+	"BooleanTable" t1
+
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Boolean",
@@ -2047,8 +1980,7 @@ FROM
 WHERE
 	r."BooleanN" IS NOT NULL
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Boolean",
@@ -2062,8 +1994,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	g_1."Id",
 	COUNT(*) FILTER (WHERE g_1."Boolean"),
@@ -2116,8 +2047,7 @@ FROM
 GROUP BY
 	g_1."Id"
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Boolean",
@@ -2131,8 +2061,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Int32" = 0,
@@ -2803,8 +2732,7 @@ SELECT
 FROM
 	"BooleanTable" r_1
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Boolean",

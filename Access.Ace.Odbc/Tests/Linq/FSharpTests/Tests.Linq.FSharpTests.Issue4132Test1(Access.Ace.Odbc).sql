@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 INSERT INTO [Issue4132Table]
 (
 	[Id],

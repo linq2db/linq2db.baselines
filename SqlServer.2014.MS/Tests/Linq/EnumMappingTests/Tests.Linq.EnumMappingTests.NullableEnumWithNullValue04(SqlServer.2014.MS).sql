@@ -77,7 +77,6 @@ VALUES
 )
 
 -- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	[r].[ID],
 	[r].[StringValue]
@@ -89,7 +88,6 @@ ORDER BY
 	[r].[ID]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	[r].[ID],
 	[r].[IntValue],

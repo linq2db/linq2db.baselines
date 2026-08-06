@@ -11,7 +11,6 @@ ORDER BY
 	[t1].[ParentID]
 
 -- SqlCe
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

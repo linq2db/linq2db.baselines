@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`p`.`ParentID`,
 	`IndexedParent_1`.`Item1`,
@@ -20,7 +19,6 @@ ORDER BY
 	`IndexedParent_1`.`ParentID`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`ParentID`,
 	`t1`.`Value1`

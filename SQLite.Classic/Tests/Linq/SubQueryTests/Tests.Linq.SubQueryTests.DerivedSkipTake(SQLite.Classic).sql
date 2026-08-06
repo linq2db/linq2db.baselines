@@ -18,7 +18,6 @@ FROM
 	) [t2]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

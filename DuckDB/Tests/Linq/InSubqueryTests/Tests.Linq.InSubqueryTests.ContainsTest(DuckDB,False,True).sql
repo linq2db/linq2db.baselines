@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	CASE
 		WHEN 1 IN (

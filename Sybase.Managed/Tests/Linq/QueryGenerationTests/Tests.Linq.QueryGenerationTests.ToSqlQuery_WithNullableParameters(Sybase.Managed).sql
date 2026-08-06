@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],
@@ -12,7 +11,6 @@ WHERE
 	[p].[MiddleName] IS NOT NULL
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 2
 	[p].[FirstName],
 	[p].[PersonID],

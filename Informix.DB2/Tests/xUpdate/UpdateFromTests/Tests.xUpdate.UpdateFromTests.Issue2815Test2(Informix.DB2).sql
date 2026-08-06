@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 UPDATE
 	Issue2815Table1
 SET
@@ -63,7 +62,6 @@ WHERE
 	)
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1.SRC_BIC,

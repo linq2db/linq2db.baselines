@@ -28,7 +28,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	CASE
 		WHEN [t].[VarCharColumn] IS NOT NULL THEN RTRIM([t].[VarCharColumn], '.+')

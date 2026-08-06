@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"tt"."Key_1",
 	SUM("tt"."ChildID")

@@ -1,7 +1,6 @@
 ﻿-- SqlCe
-
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Person] [p]
 WHERE
@@ -9,9 +8,8 @@ WHERE
 	[p].[PersonID] = 1
 
 -- SqlCe
-
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Person] [p]
 WHERE
@@ -19,9 +17,8 @@ WHERE
 	[p].[PersonID] = 1
 
 -- SqlCe
-
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Person] [p]
 WHERE

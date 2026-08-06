@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	g_1."GroupId",
 	MIN(g_1."DataValue"),
@@ -27,7 +26,6 @@ GROUP BY
 	g_1."GroupId"
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."GroupId",

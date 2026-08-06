@@ -1,9 +1,7 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
-
 SELECT Cast(1 as timestamp)
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT Cast(1 as rowversion)
 
 -- SqlServer.2005.MS SqlServer.2005

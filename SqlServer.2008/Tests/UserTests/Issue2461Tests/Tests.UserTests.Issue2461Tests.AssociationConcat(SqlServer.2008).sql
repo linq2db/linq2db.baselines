@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008
-
 SELECT
 	[i_1].[ReceiptNo],
 	[a_Customer].[BILLGROUP]

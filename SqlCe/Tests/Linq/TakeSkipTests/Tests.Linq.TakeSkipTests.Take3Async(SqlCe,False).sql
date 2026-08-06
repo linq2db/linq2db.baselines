@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT TOP (3)
 	[ch].[ParentID],
 	[ch].[ChildID]

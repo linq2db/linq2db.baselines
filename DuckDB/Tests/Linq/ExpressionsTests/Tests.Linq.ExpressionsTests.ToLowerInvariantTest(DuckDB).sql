@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	Lower(p.Taxonomy)
 FROM

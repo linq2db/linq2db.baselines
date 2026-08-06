@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT DISTINCT
 	`a_Book`.`BookId`,
 	`a_Book`.`Discriminator`,
@@ -28,7 +27,6 @@ WHERE
 	)
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`m_1`.`AuthorId`,
 	`a_Book`.`BookId`,
@@ -42,7 +40,6 @@ FROM
 		LEFT JOIN `Book` `a_Book` ON `d`.`FkBookId` = `a_Book`.`BookId`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t1`.`AuthorId`,
 	`t1`.`AuthorName`

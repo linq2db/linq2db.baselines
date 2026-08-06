@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 DELETE FROM
 	GrandChild t1
 WHERE

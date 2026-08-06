@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 INSERT INTO Person
 (
 	FirstName,
@@ -16,7 +15,6 @@ VALUES
 )
 
 -- ClickHouse.MySql ClickHouse
-
 ALTER TABLE
 	Person
 DELETE WHERE

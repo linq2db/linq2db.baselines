@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[p].[PersonID],
 	N'123' + [p].[FirstName] + N'012345'

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
-
 WITH [CTE1_] ([ParentID])
 AS
 (
@@ -66,7 +65,6 @@ FROM
 		INNER JOIN [LATEST] [c4_1] ON [c4_1].[ParentID] = [c3].[ParentID]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[c3].[ParentID],
 	[c3].[Value1]

@@ -16,7 +16,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"e"."Id",
 	"e"."SomeText"
@@ -27,7 +26,6 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"e"."Id",
 	"e"."SomeText"

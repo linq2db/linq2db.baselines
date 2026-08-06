@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 INSERT INTO ValuesTable
 (
 	Id,
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.SomeValue1,
@@ -24,7 +22,6 @@ FROM
 LIMIT 2
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	ValuesTable
 UPDATE
@@ -34,7 +31,6 @@ WHERE
 	Id = toInt64(1)
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.SomeValue1,

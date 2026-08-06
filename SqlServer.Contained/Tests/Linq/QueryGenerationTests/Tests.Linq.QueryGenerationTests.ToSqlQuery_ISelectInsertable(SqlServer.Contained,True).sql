@@ -12,7 +12,6 @@ VALUES
 )
 
 -- SqlServer.Contained SqlServer.2019
-
 INSERT INTO [TableWithIdentity]
 (
 	[Value]
@@ -23,7 +22,6 @@ FROM
 	[TableWithIdentitySrc] [t1]
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]

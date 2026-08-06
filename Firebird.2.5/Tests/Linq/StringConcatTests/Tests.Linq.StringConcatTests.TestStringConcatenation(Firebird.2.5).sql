@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	"r"."Id",
 	'Element ' || Coalesce("r"."VarCharTextNullable", '') || ' Text1',

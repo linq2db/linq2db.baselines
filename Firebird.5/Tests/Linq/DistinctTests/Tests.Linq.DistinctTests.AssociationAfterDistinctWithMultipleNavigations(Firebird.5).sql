@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 SELECT
 	"t1"."GrandChildID",
 	"a_Child_1"."ParentID",
@@ -25,7 +24,6 @@ ORDER BY
 	"t1"."GrandChildID"
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t1"."ParentID",
 	"t1"."ChildID",

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	IIF([p].[ParentID] - 1 IN (
 		SELECT

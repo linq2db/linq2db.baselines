@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	CASE
 		WHEN "i"."BoolValue" = '0' AND ("i"."IntValue" = (

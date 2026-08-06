@@ -1,5 +1,4 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT /*+ NO_XML_QUERY_REWRITE */
 	p."ParentID",
 	p."Value1"

@@ -17,7 +17,7 @@ SET     @id = 11
 
 SELECT
 	[m_1].[Id],
-	[d].[Id],
+	[d].[Id] as [Id_1],
 	[d].[TestId]
 FROM
 	[Test3664] [m_1]
@@ -26,7 +26,6 @@ WHERE
 	[d].[Id] = ?
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[t1].[Id]
 FROM
@@ -38,7 +37,7 @@ SET     @id = 12
 
 SELECT
 	[m_1].[Id],
-	[d].[Id],
+	[d].[Id] as [Id_1],
 	[d].[TestId]
 FROM
 	[Test3664] [m_1]
@@ -47,7 +46,6 @@ WHERE
 	[d].[Id] = ?
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[t1].[Id]
 FROM

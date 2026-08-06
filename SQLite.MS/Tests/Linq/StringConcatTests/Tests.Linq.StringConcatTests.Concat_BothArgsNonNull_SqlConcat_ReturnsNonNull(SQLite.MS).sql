@@ -1,14 +1,12 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[e].[Id]
 FROM
 	[ConcatTestEntity] [e]
 WHERE
-	([e].[StrReq] || [e].[StrReq]) IS NOT NULL
+	[e].[StrReq] IS NOT NULL
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Str1],

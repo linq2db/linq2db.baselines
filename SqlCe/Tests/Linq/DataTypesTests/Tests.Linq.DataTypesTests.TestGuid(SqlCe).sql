@@ -6,7 +6,7 @@ SET     @ColumnNullable = 'bd3973a5-4323-4dd8-9f4f-df9f93e2a627'
 
 SELECT
 	[r].[Id],
-	[r].[Column] as [Column_1],
+	[r].[Column],
 	[r].[ColumnNullable]
 FROM
 	[GuidTable] [r]
@@ -14,10 +14,9 @@ WHERE
 	[r].[Column] = @Column AND [r].[ColumnNullable] = @ColumnNullable
 
 -- SqlCe
-
 SELECT
 	[r].[Id],
-	[r].[Column] as [Column_1],
+	[r].[Column],
 	[r].[ColumnNullable]
 FROM
 	[GuidTable] [r]
@@ -26,7 +25,6 @@ WHERE
 	[r].[ColumnNullable] = 'bd3973a5-4323-4dd8-9f4f-df9f93e2a627'
 
 -- SqlCe
-
 DELETE FROM
 	[GuidTable]
 
@@ -73,10 +71,9 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
-	[t1].[Column] as [Column_1],
+	[t1].[Column],
 	[t1].[ColumnNullable]
 FROM
 	[GuidTable] [t1]
@@ -84,12 +81,10 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlCe
-
 DELETE FROM
 	[GuidTable]
 
 -- SqlCe
-
 INSERT INTO [GuidTable]
 (
 	[Id],
@@ -100,10 +95,9 @@ SELECT 1,'bc7b663d-0fde-4327-8f92-5d8cc3a11d11',NULL UNION ALL
 SELECT 2,'a948600d-de21-4f74-8ac2-9516b287076e','bd3973a5-4323-4dd8-9f4f-df9f93e2a627'
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
-	[t1].[Column] as [Column_1],
+	[t1].[Column],
 	[t1].[ColumnNullable]
 FROM
 	[GuidTable] [t1]
@@ -111,12 +105,10 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlCe
-
 DELETE FROM
 	[GuidTable]
 
 -- SqlCe
-
 INSERT INTO [GuidTable]
 (
 	[Id],
@@ -127,10 +119,9 @@ SELECT 1,'bc7b663d-0fde-4327-8f92-5d8cc3a11d11',NULL UNION ALL
 SELECT 2,'a948600d-de21-4f74-8ac2-9516b287076e','bd3973a5-4323-4dd8-9f4f-df9f93e2a627'
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
-	[t1].[Column] as [Column_1],
+	[t1].[Column],
 	[t1].[ColumnNullable]
 FROM
 	[GuidTable] [t1]

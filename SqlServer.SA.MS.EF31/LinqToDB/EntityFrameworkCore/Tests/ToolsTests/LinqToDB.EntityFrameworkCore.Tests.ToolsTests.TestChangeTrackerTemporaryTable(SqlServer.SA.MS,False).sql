@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2019
-
 CREATE TABLE [tempdb]..[#Orders]
 (
 	[IsDeleted]      bit          NOT NULL,
@@ -24,7 +23,6 @@ CREATE TABLE [tempdb]..[#Orders]
 
 
 -- SqlServer.2019
-
 INSERT INTO [tempdb]..[#Orders]
 (
 	[IsDeleted],
@@ -90,7 +88,6 @@ FROM
 
 
 -- SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#Orders]
 
 

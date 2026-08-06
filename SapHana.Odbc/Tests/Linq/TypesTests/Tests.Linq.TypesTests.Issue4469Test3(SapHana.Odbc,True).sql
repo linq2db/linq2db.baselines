@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	CAST("v"."Integer" AS Double) / 33,
 	CAST("v"."Decimal" AS Double) / 33,

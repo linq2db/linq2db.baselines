@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"tupledArg"."ParentID",
 	"tupledArg"."Value1",

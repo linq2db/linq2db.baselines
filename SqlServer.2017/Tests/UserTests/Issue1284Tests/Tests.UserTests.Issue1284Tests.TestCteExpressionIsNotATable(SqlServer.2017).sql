@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 WITH [CTE_1]
 (
 	[entry_ID],
@@ -31,7 +30,6 @@ WHERE
 	[x].[entry_ID] = 1
 
 -- SqlServer.2017
-
 SELECT
 	[x].[FirstName],
 	[x].[PersonID],

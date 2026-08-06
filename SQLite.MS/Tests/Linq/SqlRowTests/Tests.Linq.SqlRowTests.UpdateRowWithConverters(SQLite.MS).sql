@@ -13,7 +13,6 @@ WHERE
 	[x].[Id] = 2 AND [ConvertedInts].[Id] = [x].[Id]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[x].[Id],
 	[x].[Cents],

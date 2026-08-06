@@ -24,7 +24,6 @@ VALUES
 )
 
 -- SqlServer.2008
-
 SELECT TOP (1)
 	[t].[Id],
 	[t].[Name],
@@ -57,7 +56,6 @@ VALUES
 )
 
 -- SqlServer.2008
-
 SELECT TOP (1)
 	[t].[Id],
 	[t].[Name],

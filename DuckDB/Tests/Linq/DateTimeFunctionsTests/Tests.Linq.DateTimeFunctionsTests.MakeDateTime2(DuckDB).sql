@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	make_timestamp(2010, t.ID, 1, 20, 35, CAST(44 AS DOUBLE))
 FROM

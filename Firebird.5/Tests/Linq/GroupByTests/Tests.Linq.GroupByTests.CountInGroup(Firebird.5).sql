@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 SELECT
 	"t"."GroupId",
 	COUNT(*),
@@ -38,7 +37,6 @@ GROUP BY
 	"t"."GroupId"
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."GroupId",

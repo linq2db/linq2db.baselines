@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	m_1.Id,
 	d.Value
@@ -8,7 +7,6 @@ FROM
 		INNER JOIN ItemValue d ON m_1.Id = d.ItemId
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	x.Id,
 	x.Text

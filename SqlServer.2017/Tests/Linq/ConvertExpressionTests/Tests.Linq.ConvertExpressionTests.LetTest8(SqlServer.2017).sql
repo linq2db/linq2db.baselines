@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 SELECT
 	IIF([t1].[ParentID] IS NULL, 0, [t1].[ParentID]),
 	IIF(EXISTS(

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	Coalesce([t].[Value1], N'') + [t].[Value2] + [t].[Value3]
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	[t].[ID]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[t1].[ID],
 	[t1].[Value1],

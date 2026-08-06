@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
-
 SELECT DISTINCT
 	[t1].[Id]
 FROM

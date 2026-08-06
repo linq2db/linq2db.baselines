@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT TOP 2
 	COUNT([p].[PersonID])
 FROM
@@ -15,7 +14,6 @@ WHERE
 	)
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT TOP 2
 	COUNT([p].[PersonID])
 FROM

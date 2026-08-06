@@ -1,9 +1,13 @@
 ﻿-- Firebird.5 Firebird4
-
 SELECT
 	"t"."Id",
 	"t"."Value",
-	1
+	"s"."c1"
 FROM
 	"SampleClass" "t"
+		INNER JOIN (
+			SELECT
+				1 as "c1"
+			FROM rdb$database
+		) "s" ON 1 = "t"."Id"
 

@@ -59,7 +59,6 @@ VALUES
 )
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	COUNT(*)
 FROM
@@ -92,7 +91,6 @@ WHERE
 	[t1].[PersonID] = ?
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	COUNT(*)
 FROM

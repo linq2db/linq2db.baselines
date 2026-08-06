@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	m_1."Id",
 	d."Name"
@@ -20,8 +19,7 @@ FROM
 	) m_1
 		INNER JOIN "Test3799Item" d ON m_1."Id" = d."ParentId"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	item_1."Name",
 	t1."Name",

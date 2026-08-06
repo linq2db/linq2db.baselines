@@ -28,7 +28,6 @@ VALUES
 )
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT TOP 2
 	[t1].[Id],
 	[t1].[Prop1],

@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[r].[ID],
 	[r].[MoneyValue],
@@ -18,7 +17,6 @@ WHERE
 LIMIT 1
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[r].[ID],
 	[r].[MoneyValue],
@@ -132,7 +130,6 @@ WHERE
 	[LinqDataTypes].[ID] = @ID
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[r].[ID],
 	[r].[MoneyValue],

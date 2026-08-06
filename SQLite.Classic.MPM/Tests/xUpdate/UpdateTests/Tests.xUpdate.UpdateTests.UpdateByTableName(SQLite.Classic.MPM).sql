@@ -24,14 +24,12 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	COUNT(*)
 FROM
 	[xxPerson] [t1]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],
@@ -65,7 +63,6 @@ WHERE
 	[xxPerson].[PersonID] = @ID
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

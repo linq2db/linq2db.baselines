@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	t1.ID,
 	t1.TestField,
@@ -10,7 +9,6 @@ WHERE
 	t1.TestField = 0
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.ID,
 	t1.TestField,

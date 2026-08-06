@@ -1,16 +1,14 @@
 ﻿-- SqlCe
-
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Src] [s]
 WHERE
 	[s].[Int] IS NULL
 
 -- SqlCe
-
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Src] [s]
 WHERE

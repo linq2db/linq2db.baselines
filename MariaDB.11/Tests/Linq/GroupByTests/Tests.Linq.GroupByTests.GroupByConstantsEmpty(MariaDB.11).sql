@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`g_2`.`ChildId`,
 	`g_2`.`ParentId`,
@@ -19,7 +18,6 @@ GROUP BY
 	`g_2`.`ParentId`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`ParentID`,
 	`t1`.`ChildID`

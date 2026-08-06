@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[t_1].[FinalCustomerId],
 	[t_1].[IsActive],

@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT DISTINCT
 	`p`.`LastName`
 FROM
@@ -7,7 +6,6 @@ FROM
 		INNER JOIN `Person` `p` ON `g_1`.`PersonID` = `p`.`PersonID`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`t1`.`PersonID`,
 	`t1`.`Taxonomy`
@@ -15,7 +13,6 @@ FROM
 	`Doctor` `t1`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`t1`.`FirstName`,
 	`t1`.`PersonID`,

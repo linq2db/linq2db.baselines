@@ -1,16 +1,14 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	p.Id,
 	p.Text
 FROM
 	Issue2816Table p
 WHERE
-	empty(replaceRegexpAll(coalesce(p.Text, ''), '	|
-|||| || | | | | | | | | | | | | | | | |　', ''))
+	empty(replaceRegexpAll(Coalesce(p.Text, ''), '	|
+|||| || | | | | | | | | | | | | | | | | |　', ''))
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Text

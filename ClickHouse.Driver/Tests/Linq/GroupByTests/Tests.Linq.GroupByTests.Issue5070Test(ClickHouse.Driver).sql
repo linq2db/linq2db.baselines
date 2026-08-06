@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	t_1.FinalCustomerId,
 	t_1.IsActive,

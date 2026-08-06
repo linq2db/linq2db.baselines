@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 SELECT
 	[e].[Id],
 	[a_Department].[Name]

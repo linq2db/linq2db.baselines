@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 SELECT TOP (2)
 	[r].[Id]
 FROM
@@ -8,7 +7,6 @@ WHERE
 	[r].[Value] LIKE N'%~]' ESCAPE N'~'
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT TOP (2)
 	[r].[Id]
 FROM
@@ -17,7 +15,6 @@ WHERE
 	[r].[Value] LIKE N'~]%' ESCAPE N'~'
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT TOP (2)
 	[r].[Id]
 FROM
@@ -26,7 +23,6 @@ WHERE
 	[r].[Value] LIKE N'%-%' ESCAPE N'~'
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[r].[Id],
 	[r].[Value]
@@ -36,7 +32,6 @@ WHERE
 	[r].[Value] LIKE N'%~[~]%' ESCAPE N'~'
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[r].[Id],
 	[r].[Value]
@@ -58,7 +53,6 @@ WHERE
 	[r].[Value] LIKE @asParamUnterm ESCAPE N'~'
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[r].[Id],
 	[r].[Value]
@@ -68,7 +62,6 @@ WHERE
 	[r].[Value] LIKE N'%~[0-9~]%' ESCAPE N'~'
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[r].[Id],
 	[r].[Value]
@@ -78,7 +71,6 @@ WHERE
 	[r].[Value] LIKE N'%6%' ESCAPE N'~'
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[r].[Id],
 	[r].[Value]
@@ -100,7 +92,6 @@ WHERE
 	[r].[Value] LIKE @asParamUnterm
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[r].[Id],
 	[r].[Value]

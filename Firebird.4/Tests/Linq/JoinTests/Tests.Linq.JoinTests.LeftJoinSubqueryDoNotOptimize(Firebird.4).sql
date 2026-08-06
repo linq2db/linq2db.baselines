@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 SELECT
 	"p"."PersonID",
 	Coalesce("m_2"."MiddleName", 'default2')
@@ -14,7 +13,6 @@ FROM
 		) "m_2" ON "p"."PersonID" = "m_2"."c1"
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."FirstName",
 	"t1"."PersonID",

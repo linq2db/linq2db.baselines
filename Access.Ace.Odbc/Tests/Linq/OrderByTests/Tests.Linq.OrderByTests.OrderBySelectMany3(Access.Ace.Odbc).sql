@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[cross_1].[ParentID_1],
 	[cross_1].[ChildID]

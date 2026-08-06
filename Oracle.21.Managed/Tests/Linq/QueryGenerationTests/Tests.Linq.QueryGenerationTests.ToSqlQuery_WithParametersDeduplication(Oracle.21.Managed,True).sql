@@ -1,5 +1,4 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	p."FirstName",
 	p."PersonID",
@@ -17,7 +16,7 @@ SET     @firstName = 'John'
 
 SELECT
 	p."FirstName",
-	p."PersonID" as ID,
+	p."PersonID",
 	p."LastName",
 	p."MiddleName",
 	p."Gender"

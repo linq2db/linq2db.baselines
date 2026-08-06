@@ -1,5 +1,4 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	p."ParentID",
 	p."Value1"
@@ -14,7 +13,7 @@ SET     @id = 2
 
 SELECT
 	p."FirstName",
-	p."PersonID" as ID,
+	p."PersonID",
 	p."LastName",
 	p."MiddleName",
 	p."Gender"

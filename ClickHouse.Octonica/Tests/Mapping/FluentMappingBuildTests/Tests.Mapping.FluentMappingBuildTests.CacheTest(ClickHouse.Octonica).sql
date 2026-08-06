@@ -1,6 +1,5 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
-CREATE TABLE IF NOT EXISTS FluentTemp
+CREATE TABLE IF NOT EXISTS FluentTemp_Cache
 (
 	ID       Int32,
 	Value    Nullable(String),
@@ -12,8 +11,7 @@ ENGINE = MergeTree()
 ORDER BY ID
 
 -- ClickHouse.Octonica ClickHouse
-
-INSERT INTO FluentTemp
+INSERT INTO FluentTemp_Cache
 (
 	ID,
 	Value,
@@ -27,23 +25,20 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t.ID,
 	t.Value,
 	t.LastName
 FROM
-	FluentTemp t
+	FluentTemp_Cache t
 WHERE
 	t.ID = 1
 
 -- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS FluentTemp
+DROP TABLE IF EXISTS FluentTemp_Cache
 
 -- ClickHouse.Octonica ClickHouse
-
-CREATE TABLE IF NOT EXISTS FluentTemp
+CREATE TABLE IF NOT EXISTS FluentTemp_Cache
 (
 	ID       Int32,
 	Value    Nullable(String),
@@ -55,8 +50,7 @@ ENGINE = MergeTree()
 ORDER BY ID
 
 -- ClickHouse.Octonica ClickHouse
-
-INSERT INTO FluentTemp
+INSERT INTO FluentTemp_Cache
 (
 	ID,
 	Value,
@@ -70,23 +64,20 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t.ID,
 	t.Value,
 	t.LastName
 FROM
-	FluentTemp t
+	FluentTemp_Cache t
 WHERE
 	t.ID = 1
 
 -- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS FluentTemp
+DROP TABLE IF EXISTS FluentTemp_Cache
 
 -- ClickHouse.Octonica ClickHouse
-
-CREATE TABLE IF NOT EXISTS FluentTemp
+CREATE TABLE IF NOT EXISTS FluentTemp_Cache
 (
 	ID       Int32,
 	Column   Nullable(String),
@@ -98,8 +89,7 @@ ENGINE = MergeTree()
 ORDER BY ID
 
 -- ClickHouse.Octonica ClickHouse
-
-INSERT INTO FluentTemp
+INSERT INTO FluentTemp_Cache
 (
 	ID,
 	Column,
@@ -113,23 +103,20 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t.ID,
 	t.Column,
 	t.LastName
 FROM
-	FluentTemp t
+	FluentTemp_Cache t
 WHERE
 	t.ID = 1
 
 -- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS FluentTemp
+DROP TABLE IF EXISTS FluentTemp_Cache
 
 -- ClickHouse.Octonica ClickHouse
-
-CREATE TABLE IF NOT EXISTS FluentTemp
+CREATE TABLE IF NOT EXISTS FluentTemp_Cache
 (
 	ID       Int32,
 	Column   Nullable(String),
@@ -141,8 +128,7 @@ ENGINE = MergeTree()
 ORDER BY ID
 
 -- ClickHouse.Octonica ClickHouse
-
-INSERT INTO FluentTemp
+INSERT INTO FluentTemp_Cache
 (
 	ID,
 	Column,
@@ -156,17 +142,15 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t.ID,
 	t.Column,
 	t.LastName
 FROM
-	FluentTemp t
+	FluentTemp_Cache t
 WHERE
 	t.ID = 1
 
 -- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS FluentTemp
+DROP TABLE IF EXISTS FluentTemp_Cache
 

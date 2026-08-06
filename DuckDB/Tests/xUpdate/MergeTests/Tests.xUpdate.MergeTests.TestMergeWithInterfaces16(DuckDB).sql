@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 MERGE INTO ReviewIndexes Target
 USING (VALUES
 	(1)

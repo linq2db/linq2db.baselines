@@ -1,5 +1,4 @@
 ﻿-- Northwind.SQLite SQLite.Classic SQLite
-
 SELECT
 	[t1].[Discontinued],
 	[t1].[ProductID],
@@ -17,7 +16,6 @@ WHERE
 	[t1].[Discontinued] = 1
 
 -- Northwind.SQLite SQLite.Classic SQLite
-
 SELECT
 	[product].[ProductName]
 FROM

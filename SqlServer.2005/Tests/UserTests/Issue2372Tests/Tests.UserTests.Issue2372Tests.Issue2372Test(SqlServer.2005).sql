@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 IF (OBJECT_ID(N'[InventoryResource]', N'U') IS NOT NULL)
 	DROP TABLE [InventoryResource]
 

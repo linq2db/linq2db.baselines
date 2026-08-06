@@ -77,7 +77,6 @@ VALUES
 )
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[r].[ID],
 	[r].[IntValue]
@@ -89,7 +88,6 @@ ORDER BY
 	[r].[ID]
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[r].[ID],
 	[r].[IntValue],

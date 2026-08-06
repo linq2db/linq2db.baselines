@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025
-
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -26,7 +25,6 @@ WHERE
 	)
 
 -- SqlServer.2025
-
 SELECT
 	[x].[Id],
 	[x].[ValidOn]

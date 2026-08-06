@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`m_1`.`Key_1`,
 	`d`.`ParentID`,
@@ -26,7 +25,6 @@ FROM
 		END
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT DISTINCT
 	CASE
 		WHEN `g_1`.`ParentID` > 2 THEN CASE

@@ -37,7 +37,6 @@ ON CONFLICT (PersonID) DO UPDATE SET
 	Diagnosis = $Diagnosis
 
 -- DuckDB
-
 SELECT
 	COUNT(*)
 FROM
@@ -82,7 +81,6 @@ ON CONFLICT (PersonID) DO UPDATE SET
 	Diagnosis = $Diagnosis
 
 -- DuckDB
-
 SELECT
 	COUNT(*)
 FROM

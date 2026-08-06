@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 WITH "CTE_1" ("PersonID")
 AS
 (
@@ -27,7 +26,6 @@ FROM
 		INNER JOIN "Person" "d" ON "d"."PersonID" = "m_1"."PersonID"
 
 -- SapHana.Odbc SapHanaOdbc
-
 WITH "CTE_1" ("PersonID")
 AS
 (

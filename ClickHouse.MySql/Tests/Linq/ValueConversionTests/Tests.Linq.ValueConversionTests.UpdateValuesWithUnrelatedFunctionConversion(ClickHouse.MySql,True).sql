@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 ALTER TABLE
 	TableWithConverterValue
 UPDATE
@@ -11,7 +10,6 @@ WHERE
 	Id = 1
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	x.Id,
 	x.NoConversion,

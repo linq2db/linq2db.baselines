@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	ka.PersonId,
 	ka.ValidationEnd,

@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	"t1"."Id",
 	"t1"."TestId"
@@ -20,7 +19,6 @@ ORDER BY
 	"t1"."TestId"
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t1"."Id",
 	"t1"."TestId"

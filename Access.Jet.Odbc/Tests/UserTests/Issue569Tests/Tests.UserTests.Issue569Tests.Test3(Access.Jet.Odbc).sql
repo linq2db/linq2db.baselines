@@ -1,8 +1,7 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[p].[PersonID],
-	[pt].[PersonID],
+	[pt].[PersonID] as [PersonID_1],
 	[d].[Taxonomy]
 FROM
 	[Person] [p],

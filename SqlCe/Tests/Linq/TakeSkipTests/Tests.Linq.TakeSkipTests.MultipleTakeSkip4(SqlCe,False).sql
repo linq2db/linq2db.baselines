@@ -1,8 +1,7 @@
 ﻿-- SqlCe
-
 SELECT
 	[t1].[Id],
-	[t1].[Value] as [Value_1]
+	[t1].[Value]
 FROM
 	[TakeSkipClass] [t1]
 ORDER BY

@@ -9,7 +9,6 @@ WHERE
 	[r].[ID] >= 101 AND [r].[ID] < @p
 
 -- SqlServer.2017
-
 INSERT INTO [LinqDataTypes]
 (
 	[ID],
@@ -22,7 +21,6 @@ VALUES
 )
 
 -- SqlServer.2017
-
 SELECT
 	[r].[ID],
 	[r].[BigIntValue]

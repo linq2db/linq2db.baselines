@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 SELECT
 	CASE
 		WHEN [a_Patient].[PersonID] IS NOT NULL THEN 1

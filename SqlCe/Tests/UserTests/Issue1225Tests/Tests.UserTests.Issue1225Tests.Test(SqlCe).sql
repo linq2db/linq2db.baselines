@@ -46,11 +46,10 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT
-	'Id' as [Name],
+	'Id',
 	[it].[Id],
-	SUM([a_ActualStage].[Id]) as [Value_1]
+	SUM([a_ActualStage].[Id])
 FROM
 	[Task] [it]
 		LEFT JOIN [TaskStage] [a_ActualStage] ON [it].[Id] = [a_ActualStage].[TaskId] AND [a_ActualStage].[Actual] = 1

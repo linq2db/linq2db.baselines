@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	([t].[ParentID] * 1000) / 1000
 FROM

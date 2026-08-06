@@ -4,12 +4,12 @@ SET     @take = 2
 
 SELECT
 	[t1].[FirstName],
-	[t1].[PersonID] as [ID],
+	[t1].[PersonID],
 	[t1].[LastName],
 	[t1].[MiddleName],
 	[t1].[Gender],
-	[a_Patient].[PersonID],
 	[a_Patient].[PersonID] as [PersonID_1],
+	[a_Patient].[PersonID] as [PersonID_2],
 	[a_Patient].[Diagnosis]
 FROM
 	[Person] [t1]
@@ -17,12 +17,12 @@ FROM
 UNION ALL
 SELECT
 	[t3].[FirstName],
-	[t3].[ID],
+	[t3].[ID] as [PersonID],
 	[t3].[LastName],
 	[t3].[MiddleName],
 	[t3].[Gender],
-	[t3].[PersonID],
 	[t3].[PersonID] as [PersonID_1],
+	[t3].[PersonID] as [PersonID_2],
 	[t3].[Diagnosis]
 FROM
 	(

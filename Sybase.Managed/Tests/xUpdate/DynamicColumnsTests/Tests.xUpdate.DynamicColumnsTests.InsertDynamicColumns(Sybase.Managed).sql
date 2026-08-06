@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 INSERT INTO [Person]
 (
 	[FirstName],
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT
 	COUNT(*)
 FROM

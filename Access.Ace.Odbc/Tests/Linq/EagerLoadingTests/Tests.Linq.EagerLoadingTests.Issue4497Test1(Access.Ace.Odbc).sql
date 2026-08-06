@@ -1,12 +1,11 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[i].[FirstName],
 	[i].[PersonID],
 	[i].[LastName],
 	[i].[MiddleName],
 	[i].[Gender],
-	[p].[PersonID],
+	[p].[PersonID] as [PersonID_1],
 	[p].[Diagnosis]
 FROM
 	[Person] [i]

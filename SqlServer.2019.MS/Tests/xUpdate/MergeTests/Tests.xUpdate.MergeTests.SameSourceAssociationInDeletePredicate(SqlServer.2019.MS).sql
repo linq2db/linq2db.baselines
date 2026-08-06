@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2019.MS SqlServer.2019
-
 MERGE INTO [Patient] [Target]
 USING (
 	SELECT
@@ -24,7 +23,6 @@ WHEN MATCHED AND [Source].[Person_FirstName] = N'first 4' AND [Source].[Person_F
 ;
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[PersonID],
 	[t1].[Diagnosis]

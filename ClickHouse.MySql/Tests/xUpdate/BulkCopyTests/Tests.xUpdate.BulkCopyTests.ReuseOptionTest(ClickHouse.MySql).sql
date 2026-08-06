@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 INSERT INTO Parent
 (
 	ParentID,
@@ -9,7 +8,6 @@ VALUES
 (111001,NULL)
 
 -- ClickHouse.MySql ClickHouse
-
 INSERT INTO Child
 (
 	ParentID,

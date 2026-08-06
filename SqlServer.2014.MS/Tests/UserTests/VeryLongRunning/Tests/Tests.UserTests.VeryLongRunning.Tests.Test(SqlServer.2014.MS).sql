@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [tempdb]..[#tbl0101]
 (
 	[Column1] Int           NOT NULL IDENTITY,
@@ -15,7 +14,6 @@ CREATE TABLE [tempdb]..[#tbl0101]
 )
 
 -- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [tempdb]..[#tbl0202]
 (
 	[Column1] Int           NOT NULL,
@@ -28,7 +26,6 @@ CREATE TABLE [tempdb]..[#tbl0202]
 )
 
 -- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [tempdb]..[#tbl3333]
 (
 	[Column1] Int          NOT NULL,
@@ -39,7 +36,6 @@ CREATE TABLE [tempdb]..[#tbl3333]
 )
 
 -- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [tempdb]..[#tbl4444]
 (
 	[Column1] Date NOT NULL,
@@ -49,7 +45,6 @@ CREATE TABLE [tempdb]..[#tbl4444]
 )
 
 -- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [tempdb]..[#tbl5555]
 (
 	[Column1] BigInt        NOT NULL,
@@ -61,7 +56,6 @@ CREATE TABLE [tempdb]..[#tbl5555]
 )
 
 -- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [tempdb]..[#tbl6666]
 (
 	[Column1] Int    NOT NULL,
@@ -74,7 +68,6 @@ CREATE TABLE [tempdb]..[#tbl6666]
 )
 
 -- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [tempdb]..[#tbl7777]
 (
 	[Column1] Date           NOT NULL,
@@ -89,7 +82,6 @@ CREATE TABLE [tempdb]..[#tbl7777]
 )
 
 -- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [tempdb]..[#tbl9999]
 (
 	[Column1]  Int             NOT NULL,
@@ -107,7 +99,6 @@ CREATE TABLE [tempdb]..[#tbl9999]
 )
 
 -- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [tempdb]..[#tbl1010]
 (
 	[Column1] Date           NOT NULL,
@@ -121,7 +112,6 @@ CREATE TABLE [tempdb]..[#tbl1010]
 )
 
 -- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [tempdb]..[#tbl1212]
 (
 	[Column1] Int           NOT NULL,
@@ -135,7 +125,6 @@ CREATE TABLE [tempdb]..[#tbl1212]
 )
 
 -- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [tempdb]..[#tbl1313]
 (
 	[Column1] BigInt     NOT NULL,
@@ -147,7 +136,6 @@ CREATE TABLE [tempdb]..[#tbl1313]
 )
 
 -- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [tempdb]..[#tbl1515]
 (
 	[Column1] Int         NOT NULL,
@@ -161,7 +149,6 @@ CREATE TABLE [tempdb]..[#tbl1515]
 )
 
 -- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [tempdb]..[#tbl1414]
 (
 	[Column1] Int NOT NULL,
@@ -234,12 +221,10 @@ FROM
 		INNER JOIN [tempdb]..[#tbl1414] [t] ON [i].[Column1] = [t].[Column1]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#tbl1414]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tbl1414]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [tempdb]..[#tmp001]
 (
 	[Column6] BigInt NOT NULL
@@ -267,7 +252,6 @@ WHERE
 	[ex].[Column4] <= @date AND ([ex].[Column5] IS NULL OR [ex].[Column5] > @date)
 
 -- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [tempdb]..[#tmp002]
 (
 	[Column2] NVarChar(20)   NOT NULL,
@@ -312,7 +296,6 @@ WHERE
 	([e].[Column2] IS NOT NULL OR [be].[Column2] IS NOT NULL)
 
 -- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [tempdb]..[#tmp003]
 (
 	[Column2] NVarChar(20)   NOT NULL,
@@ -324,7 +307,6 @@ CREATE TABLE [tempdb]..[#tmp003]
 )
 
 -- SqlServer.2014.MS SqlServer.2014
-
 INSERT INTO [tempdb]..[#tmp003]
 (
 	[Column2],
@@ -363,14 +345,12 @@ FROM
 OPTION (RECOMPILE)
 
 -- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [tempdb]..[#tmp004]
 (
 	[Column2] NVarChar(4000) NOT NULL
 )
 
 -- SqlServer.2014.MS SqlServer.2014
-
 INSERT INTO [tempdb]..[#tmp004]
 (
 	[Column2]
@@ -381,7 +361,6 @@ FROM
 	[tempdb]..[#tmp003] [t]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [tempdb]..[#tbl8888]
 (
 	[Column1] DateTime2      NOT NULL,
@@ -446,39 +425,32 @@ WHERE
 	[pc].[Column1] = @date
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#tbl8888]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tbl8888]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#tmp004]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tmp004]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#tmp003]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tmp003]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#tmp002]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tmp002]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#tmp001]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tmp001]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [tempdb]..[#tmp005]
 (
 	[Column4] Int NOT NULL
 )
 
 -- SqlServer.2014.MS SqlServer.2014
-
 INSERT INTO [tempdb]..[#tmp005]
 (
 	[Column4]
@@ -489,7 +461,6 @@ FROM
 	[tempdb]..[#tbl7777] [pc]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [tempdb]..[#tmp002]
 (
 	[Column2] NVarChar(20)   NOT NULL,
@@ -537,7 +508,6 @@ WHERE
 	[i].[Column2] = 1
 
 -- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [tempdb]..[#tmp003]
 (
 	[Column2] NVarChar(20)   NOT NULL,
@@ -549,7 +519,6 @@ CREATE TABLE [tempdb]..[#tmp003]
 )
 
 -- SqlServer.2014.MS SqlServer.2014
-
 INSERT INTO [tempdb]..[#tmp003]
 (
 	[Column2],
@@ -588,14 +557,12 @@ FROM
 OPTION (RECOMPILE)
 
 -- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [tempdb]..[#tmp004]
 (
 	[Column2] NVarChar(4000) NOT NULL
 )
 
 -- SqlServer.2014.MS SqlServer.2014
-
 INSERT INTO [tempdb]..[#tmp004]
 (
 	[Column2]
@@ -606,7 +573,6 @@ FROM
 	[tempdb]..[#tmp003] [t]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [tempdb]..[#tbl8888]
 (
 	[Column1] DateTime2      NOT NULL,
@@ -671,27 +637,22 @@ WHERE
 	[pc].[Column1] = @date
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#tbl8888]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tbl8888]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#tmp004]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tmp004]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#tmp003]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tmp003]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#tmp002]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tmp002]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [tempdb]..[#tmp006]
 (
 	[Column3] NVarChar(20)   NOT NULL,
@@ -738,7 +699,6 @@ WHERE
 	([t].[Column7] <> 0 OR [t].[Column7] IS NULL)
 
 -- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [tempdb]..[#tmp007]
 (
 	[Column3] NVarChar(20)   NOT NULL,
@@ -750,7 +710,6 @@ CREATE TABLE [tempdb]..[#tmp007]
 )
 
 -- SqlServer.2014.MS SqlServer.2014
-
 INSERT INTO [tempdb]..[#tmp007]
 (
 	[Column3],
@@ -789,14 +748,12 @@ FROM
 OPTION (RECOMPILE)
 
 -- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [tempdb]..[#tmp008]
 (
 	[ISIN] NVarChar(4000) NOT NULL
 )
 
 -- SqlServer.2014.MS SqlServer.2014
-
 INSERT INTO [tempdb]..[#tmp008]
 (
 	[ISIN]
@@ -807,7 +764,6 @@ FROM
 	[tempdb]..[#tmp007] [t]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [tempdb]..[#tbl8888]
 (
 	[Column1] DateTime2      NOT NULL,
@@ -890,27 +846,22 @@ WHERE
 	[u].[Column2] = [r_1].[Column2]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#tbl8888]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tbl8888]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#tmp008]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tmp008]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#tmp007]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tmp007]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#tmp006]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tmp006]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [tempdb]..[#tmp006]
 (
 	[Column3] NVarChar(20)   NOT NULL,
@@ -957,7 +908,6 @@ WHERE
 	([t].[Column7] <> 0 OR [t].[Column7] IS NULL)
 
 -- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [tempdb]..[#tmp007]
 (
 	[Column3] NVarChar(20)   NOT NULL,
@@ -969,7 +919,6 @@ CREATE TABLE [tempdb]..[#tmp007]
 )
 
 -- SqlServer.2014.MS SqlServer.2014
-
 INSERT INTO [tempdb]..[#tmp007]
 (
 	[Column3],
@@ -1008,14 +957,12 @@ FROM
 OPTION (RECOMPILE)
 
 -- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [tempdb]..[#tmp008]
 (
 	[ISIN] NVarChar(4000) NOT NULL
 )
 
 -- SqlServer.2014.MS SqlServer.2014
-
 INSERT INTO [tempdb]..[#tmp008]
 (
 	[ISIN]
@@ -1026,7 +973,6 @@ FROM
 	[tempdb]..[#tmp007] [t]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [tempdb]..[#tbl8888]
 (
 	[Column1] DateTime2      NOT NULL,
@@ -1109,27 +1055,22 @@ WHERE
 	[u].[Column2] = [r_1].[Column2]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#tbl8888]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tbl8888]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#tmp008]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tmp008]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#tmp007]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tmp007]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#tmp006]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tmp006]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [tempdb]..[#tmp006]
 (
 	[Column3] NVarChar(20)   NOT NULL,
@@ -1181,7 +1122,6 @@ WHERE
 	([t].[Column7] <> 0 OR [t].[Column7] IS NULL)
 
 -- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [tempdb]..[#tmp007]
 (
 	[Column3] NVarChar(20)   NOT NULL,
@@ -1193,7 +1133,6 @@ CREATE TABLE [tempdb]..[#tmp007]
 )
 
 -- SqlServer.2014.MS SqlServer.2014
-
 INSERT INTO [tempdb]..[#tmp007]
 (
 	[Column3],
@@ -1232,14 +1171,12 @@ FROM
 OPTION (RECOMPILE)
 
 -- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [tempdb]..[#tmp008]
 (
 	[ISIN] NVarChar(4000) NOT NULL
 )
 
 -- SqlServer.2014.MS SqlServer.2014
-
 INSERT INTO [tempdb]..[#tmp008]
 (
 	[ISIN]
@@ -1250,7 +1187,6 @@ FROM
 	[tempdb]..[#tmp007] [t]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [tempdb]..[#tbl8888]
 (
 	[Column1] DateTime2      NOT NULL,
@@ -1333,32 +1269,26 @@ WHERE
 	[u].[Column2] = [r_1].[Column2]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#tbl8888]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tbl8888]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#tmp008]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tmp008]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#tmp007]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tmp007]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#tmp006]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tmp006]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#tmp005]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tmp005]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [tempdb]..[#tbl1414]
 (
 	[Column1] Int NOT NULL,
@@ -1431,12 +1361,10 @@ FROM
 		INNER JOIN [tempdb]..[#tbl1414] [t] ON [i].[Column1] = [t].[Column1]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#tbl1414]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tbl1414]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [tempdb]..[#tmp001]
 (
 	[Column6] BigInt NOT NULL
@@ -1464,7 +1392,6 @@ WHERE
 	[ex].[Column4] <= @date AND ([ex].[Column5] IS NULL OR [ex].[Column5] > @date)
 
 -- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [tempdb]..[#tmp002]
 (
 	[Column2] NVarChar(20)   NOT NULL,
@@ -1509,7 +1436,6 @@ WHERE
 	([e].[Column2] IS NOT NULL OR [be].[Column2] IS NOT NULL)
 
 -- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [tempdb]..[#tmp003]
 (
 	[Column2] NVarChar(20)   NOT NULL,
@@ -1521,7 +1447,6 @@ CREATE TABLE [tempdb]..[#tmp003]
 )
 
 -- SqlServer.2014.MS SqlServer.2014
-
 INSERT INTO [tempdb]..[#tmp003]
 (
 	[Column2],
@@ -1560,14 +1485,12 @@ FROM
 OPTION (RECOMPILE)
 
 -- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [tempdb]..[#tmp004]
 (
 	[Column2] NVarChar(4000) NOT NULL
 )
 
 -- SqlServer.2014.MS SqlServer.2014
-
 INSERT INTO [tempdb]..[#tmp004]
 (
 	[Column2]
@@ -1578,7 +1501,6 @@ FROM
 	[tempdb]..[#tmp003] [t]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [tempdb]..[#tbl8888]
 (
 	[Column1] DateTime2      NOT NULL,
@@ -1643,39 +1565,32 @@ WHERE
 	[pc].[Column1] = @date
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#tbl8888]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tbl8888]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#tmp004]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tmp004]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#tmp003]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tmp003]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#tmp002]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tmp002]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#tmp001]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tmp001]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [tempdb]..[#tmp005]
 (
 	[Column4] Int NOT NULL
 )
 
 -- SqlServer.2014.MS SqlServer.2014
-
 INSERT INTO [tempdb]..[#tmp005]
 (
 	[Column4]
@@ -1686,7 +1601,6 @@ FROM
 	[tempdb]..[#tbl7777] [pc]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [tempdb]..[#tmp002]
 (
 	[Column2] NVarChar(20)   NOT NULL,
@@ -1734,7 +1648,6 @@ WHERE
 	[i].[Column2] = 1
 
 -- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [tempdb]..[#tmp003]
 (
 	[Column2] NVarChar(20)   NOT NULL,
@@ -1746,7 +1659,6 @@ CREATE TABLE [tempdb]..[#tmp003]
 )
 
 -- SqlServer.2014.MS SqlServer.2014
-
 INSERT INTO [tempdb]..[#tmp003]
 (
 	[Column2],
@@ -1785,14 +1697,12 @@ FROM
 OPTION (RECOMPILE)
 
 -- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [tempdb]..[#tmp004]
 (
 	[Column2] NVarChar(4000) NOT NULL
 )
 
 -- SqlServer.2014.MS SqlServer.2014
-
 INSERT INTO [tempdb]..[#tmp004]
 (
 	[Column2]
@@ -1803,7 +1713,6 @@ FROM
 	[tempdb]..[#tmp003] [t]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [tempdb]..[#tbl8888]
 (
 	[Column1] DateTime2      NOT NULL,
@@ -1868,27 +1777,22 @@ WHERE
 	[pc].[Column1] = @date
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#tbl8888]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tbl8888]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#tmp004]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tmp004]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#tmp003]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tmp003]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#tmp002]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tmp002]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [tempdb]..[#tmp006]
 (
 	[Column3] NVarChar(20)   NOT NULL,
@@ -1935,7 +1839,6 @@ WHERE
 	([t].[Column7] <> 0 OR [t].[Column7] IS NULL)
 
 -- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [tempdb]..[#tmp007]
 (
 	[Column3] NVarChar(20)   NOT NULL,
@@ -1947,7 +1850,6 @@ CREATE TABLE [tempdb]..[#tmp007]
 )
 
 -- SqlServer.2014.MS SqlServer.2014
-
 INSERT INTO [tempdb]..[#tmp007]
 (
 	[Column3],
@@ -1986,14 +1888,12 @@ FROM
 OPTION (RECOMPILE)
 
 -- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [tempdb]..[#tmp008]
 (
 	[ISIN] NVarChar(4000) NOT NULL
 )
 
 -- SqlServer.2014.MS SqlServer.2014
-
 INSERT INTO [tempdb]..[#tmp008]
 (
 	[ISIN]
@@ -2004,7 +1904,6 @@ FROM
 	[tempdb]..[#tmp007] [t]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [tempdb]..[#tbl8888]
 (
 	[Column1] DateTime2      NOT NULL,
@@ -2087,27 +1986,22 @@ WHERE
 	[u].[Column2] = [r_1].[Column2]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#tbl8888]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tbl8888]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#tmp008]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tmp008]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#tmp007]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tmp007]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#tmp006]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tmp006]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [tempdb]..[#tmp006]
 (
 	[Column3] NVarChar(20)   NOT NULL,
@@ -2154,7 +2048,6 @@ WHERE
 	([t].[Column7] <> 0 OR [t].[Column7] IS NULL)
 
 -- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [tempdb]..[#tmp007]
 (
 	[Column3] NVarChar(20)   NOT NULL,
@@ -2166,7 +2059,6 @@ CREATE TABLE [tempdb]..[#tmp007]
 )
 
 -- SqlServer.2014.MS SqlServer.2014
-
 INSERT INTO [tempdb]..[#tmp007]
 (
 	[Column3],
@@ -2205,14 +2097,12 @@ FROM
 OPTION (RECOMPILE)
 
 -- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [tempdb]..[#tmp008]
 (
 	[ISIN] NVarChar(4000) NOT NULL
 )
 
 -- SqlServer.2014.MS SqlServer.2014
-
 INSERT INTO [tempdb]..[#tmp008]
 (
 	[ISIN]
@@ -2223,7 +2113,6 @@ FROM
 	[tempdb]..[#tmp007] [t]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [tempdb]..[#tbl8888]
 (
 	[Column1] DateTime2      NOT NULL,
@@ -2306,27 +2195,22 @@ WHERE
 	[u].[Column2] = [r_1].[Column2]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#tbl8888]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tbl8888]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#tmp008]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tmp008]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#tmp007]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tmp007]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#tmp006]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tmp006]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [tempdb]..[#tmp006]
 (
 	[Column3] NVarChar(20)   NOT NULL,
@@ -2378,7 +2262,6 @@ WHERE
 	([t].[Column7] <> 0 OR [t].[Column7] IS NULL)
 
 -- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [tempdb]..[#tmp007]
 (
 	[Column3] NVarChar(20)   NOT NULL,
@@ -2390,7 +2273,6 @@ CREATE TABLE [tempdb]..[#tmp007]
 )
 
 -- SqlServer.2014.MS SqlServer.2014
-
 INSERT INTO [tempdb]..[#tmp007]
 (
 	[Column3],
@@ -2429,14 +2311,12 @@ FROM
 OPTION (RECOMPILE)
 
 -- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [tempdb]..[#tmp008]
 (
 	[ISIN] NVarChar(4000) NOT NULL
 )
 
 -- SqlServer.2014.MS SqlServer.2014
-
 INSERT INTO [tempdb]..[#tmp008]
 (
 	[ISIN]
@@ -2447,7 +2327,6 @@ FROM
 	[tempdb]..[#tmp007] [t]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [tempdb]..[#tbl8888]
 (
 	[Column1] DateTime2      NOT NULL,
@@ -2530,87 +2409,70 @@ WHERE
 	[u].[Column2] = [r_1].[Column2]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#tbl8888]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tbl8888]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#tmp008]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tmp008]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#tmp007]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tmp007]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#tmp006]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tmp006]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#tmp005]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tmp005]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#tbl1515]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tbl1515]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#tbl1313]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tbl1313]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#tbl1212]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tbl1212]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#tbl1010]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tbl1010]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#tbl9999]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tbl9999]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#tbl7777]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tbl7777]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#tbl6666]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tbl6666]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#tbl5555]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tbl5555]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#tbl4444]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tbl4444]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#tbl3333]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tbl3333]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#tbl0202]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tbl0202]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#tbl0101]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tbl0101]
 

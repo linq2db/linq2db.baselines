@@ -34,7 +34,6 @@ WHERE
 	[p].[Id] = 0
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT TOP 2
 	[t1].[Id],
 	[t1].[ClaimedKeyType],

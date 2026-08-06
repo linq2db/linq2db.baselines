@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 /* My Test */
 SELECT
 	"t1"."Id",

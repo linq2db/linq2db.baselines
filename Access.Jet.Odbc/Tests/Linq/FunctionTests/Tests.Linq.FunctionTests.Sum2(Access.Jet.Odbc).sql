@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 SELECT
 	IIF([t1].[ChildCount] IS NULL, 0, [t1].[ChildCount])
 FROM

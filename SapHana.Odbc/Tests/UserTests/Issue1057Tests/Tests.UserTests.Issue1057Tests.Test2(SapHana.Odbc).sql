@@ -54,7 +54,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"p"."Id",
 	"p"."TargetName",
@@ -66,7 +65,6 @@ WHERE
 	"p"."TargetName" = 'bda.Requests'
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"p"."TargetName",
 	"p"."Id",

@@ -24,7 +24,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t].[Id],
 	[t].[Name],
@@ -56,7 +55,6 @@ WHERE
 	[PR_1598_Update_Enum_Table].[Id] = @Id
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t].[Id],
 	[t].[Name],
@@ -85,7 +83,6 @@ WHERE
 	[PR_1598_Update_Enum_Table].[Id] = @Id
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t].[Id],
 	[t].[Name],

@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 MERGE INTO "Person" Target
 USING (
 	SELECT
@@ -27,7 +26,6 @@ SET
 	"MiddleName" = 'R.I.P.'
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."FirstName",
 	t1."PersonID",

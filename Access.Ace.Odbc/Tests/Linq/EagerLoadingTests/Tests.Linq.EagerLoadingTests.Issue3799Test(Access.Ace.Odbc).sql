@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[m_1].[Id],
 	[d].[Name]
@@ -20,7 +19,6 @@ FROM
 		INNER JOIN [Test3799Item] [d] ON ([m_1].[Id] = [d].[ParentId])
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[item_1].[Name],
 	(

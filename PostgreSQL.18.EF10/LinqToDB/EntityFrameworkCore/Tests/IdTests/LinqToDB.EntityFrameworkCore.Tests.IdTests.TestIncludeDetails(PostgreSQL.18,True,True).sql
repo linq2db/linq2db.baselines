@@ -1,7 +1,6 @@
 ﻿
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	m_1."Id",
 	m_1."Id_1",
@@ -23,8 +22,7 @@ FROM
 
 
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	m_1.id,
 	d.id,
@@ -38,8 +36,7 @@ WHERE
 
 
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	m_1.id,
 	d.id,
@@ -53,10 +50,7 @@ WHERE
 
 
 
-
-
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	e.id,
 	e.name

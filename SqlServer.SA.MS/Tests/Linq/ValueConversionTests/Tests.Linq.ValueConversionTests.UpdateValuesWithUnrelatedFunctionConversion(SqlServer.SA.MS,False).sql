@@ -12,7 +12,6 @@ WHERE
 	[TableWithConverterValue].[Id] = 1
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT TOP (2)
 	[x].[Id],
 	[x].[NoConversion],

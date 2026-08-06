@@ -12,21 +12,19 @@ VALUES
 )
 
 -- SqlCe
-
 INSERT INTO [TableWithIdentity]
 (
 	[Value]
 )
 SELECT
-	[t1].[Value] + 123 as [c1]
+	[t1].[Value] + 123
 FROM
 	[TableWithIdentitySrc] [t1]
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
-	[t1].[Value] as [Value_1]
+	[t1].[Value]
 FROM
 	[TableWithIdentity] [t1]
 

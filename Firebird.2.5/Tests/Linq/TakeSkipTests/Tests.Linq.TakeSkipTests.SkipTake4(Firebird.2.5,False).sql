@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT SKIP 2
 	"t2"."ParentID",
 	"t2"."ChildID"

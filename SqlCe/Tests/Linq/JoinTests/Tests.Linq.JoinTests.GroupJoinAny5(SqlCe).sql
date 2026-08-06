@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	CASE
 		WHEN EXISTS(
@@ -12,7 +11,7 @@ SELECT
 		)
 			THEN 1
 		ELSE 0
-	END as [n]
+	END
 FROM
 	[Parent] [t1]
 

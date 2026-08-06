@@ -8,7 +8,6 @@ WHERE
 	"r".ID >= 101 AND "r".ID < @p
 
 -- DB2 DB2.LUW DB2LUW
-
 INSERT INTO "LinqDataTypes"
 (
 	ID,
@@ -21,7 +20,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"entity".ID,
 	"entity"."BigIntValue"

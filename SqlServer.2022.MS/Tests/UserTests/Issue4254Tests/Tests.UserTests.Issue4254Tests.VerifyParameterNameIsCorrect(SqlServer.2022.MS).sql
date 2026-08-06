@@ -1,17 +1,13 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
-
 DROP TABLE IF EXISTS [issue_4254_media_item_to_media_item_categories]
 
 -- SqlServer.2022.MS SqlServer.2022
-
 DROP TABLE IF EXISTS [issue_4254_media_item_user_share]
 
 -- SqlServer.2022.MS SqlServer.2022
-
 DROP TABLE IF EXISTS [issue_4254_media_items]
 
 -- SqlServer.2022.MS SqlServer.2022
-
 CREATE TABLE [issue_4254_media_items]
 (
 	[id] UniqueIdentifier NOT NULL,
@@ -20,7 +16,6 @@ CREATE TABLE [issue_4254_media_items]
 )
 
 -- SqlServer.2022.MS SqlServer.2022
-
 CREATE TABLE [issue_4254_media_item_user_share]
 (
 	[id]            UniqueIdentifier NOT NULL,
@@ -33,7 +28,6 @@ CREATE TABLE [issue_4254_media_item_user_share]
 )
 
 -- SqlServer.2022.MS SqlServer.2022
-
 CREATE TABLE [issue_4254_media_item_to_media_item_categories]
 (
 	[id]            UniqueIdentifier NOT NULL,
@@ -184,14 +178,11 @@ WHERE
 	)
 
 -- SqlServer.2022.MS SqlServer.2022
-
 DROP TABLE IF EXISTS [issue_4254_media_item_to_media_item_categories]
 
 -- SqlServer.2022.MS SqlServer.2022
-
 DROP TABLE IF EXISTS [issue_4254_media_item_user_share]
 
 -- SqlServer.2022.MS SqlServer.2022
-
 DROP TABLE IF EXISTS [issue_4254_media_items]
 

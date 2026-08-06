@@ -5,8 +5,7 @@ INSERT INTO "Issue5177" ("Id", "Value")
 VALUES (@p0, @p1);
 
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value"

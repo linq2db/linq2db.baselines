@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
-
 DECLARE @GuidID2Output TABLE ([ID] UniqueIdentifier)
 
 INSERT INTO [GuidID2] OUTPUT [INSERTED].[ID]

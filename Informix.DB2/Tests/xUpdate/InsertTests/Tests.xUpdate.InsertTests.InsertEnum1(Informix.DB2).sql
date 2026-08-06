@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 DELETE FROM
 	Parent
 WHERE
@@ -17,7 +16,7 @@ INSERT INTO Parent
 VALUES
 (
 	1001,
-	@Value1::Int
+	@Value1
 )
 
 -- Informix.DB2 Informix
@@ -34,7 +33,6 @@ WHERE
 	t1.ParentID = @id AND t1.Value1 = @Value1
 
 -- Informix.DB2 Informix
-
 DELETE FROM
 	Parent
 WHERE

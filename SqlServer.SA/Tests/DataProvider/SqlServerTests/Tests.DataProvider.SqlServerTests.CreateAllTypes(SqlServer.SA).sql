@@ -1,9 +1,7 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 DROP TABLE IF EXISTS [AllTypeCreateTest]
 
 -- SqlServer.SA SqlServer.2019
-
 CREATE TABLE [AllTypeCreateTest]
 (
 	[ID]                       Int               NOT NULL IDENTITY,
@@ -51,7 +49,6 @@ CREATE TABLE [AllTypeCreateTest]
 )
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[ID],
 	[t1].[bigintDataType],
@@ -99,6 +96,5 @@ FROM
 	[AllTypeCreateTest] [t1]
 
 -- SqlServer.SA SqlServer.2019
-
 DROP TABLE [AllTypeCreateTest]
 

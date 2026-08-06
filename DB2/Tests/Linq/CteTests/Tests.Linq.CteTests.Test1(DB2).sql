@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 WITH CTE_1 ("ParentID")
 AS
 (
@@ -19,7 +18,6 @@ FROM
 		INNER JOIN CTE_1 "c2" ON "p"."ParentID" = "c2"."ParentID"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"p"."ParentID",
 	"p"."Value1"

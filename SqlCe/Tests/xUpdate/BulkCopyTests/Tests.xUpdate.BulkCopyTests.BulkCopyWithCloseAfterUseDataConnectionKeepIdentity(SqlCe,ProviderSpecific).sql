@@ -1,9 +1,7 @@
 ﻿-- SqlCe
-
 SET IDENTITY_INSERT [IdentitySimpleBulkCopyTable] ON
 
 -- SqlCe
-
 INSERT INTO [IdentitySimpleBulkCopyTable]
 (
 	[Id]
@@ -11,6 +9,5 @@ INSERT INTO [IdentitySimpleBulkCopyTable]
 SELECT 1
 
 -- SqlCe
-
 SET IDENTITY_INSERT [IdentitySimpleBulkCopyTable] OFF
 

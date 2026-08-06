@@ -1,9 +1,7 @@
 ﻿-- SQLite.MS SQLite
-
 select sqlite_version();
 
 -- SQLite.MS SQLite
-
 WITH [cte] ([FirstName], [LastName])
 AS
 (

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025
-
 SELECT dateDataType FROM [AllTypes2] WHERE ID = 1
 
 -- SqlServer.2025
@@ -21,7 +20,6 @@ SET     @p = NULL
 SELECT ID FROM [AllTypes2] WHERE @p IS NULL AND dateDataType IS NULL OR @p IS NOT NULL AND dateDataType = @p
 
 -- SqlServer.2025
-
 SELECT dateDataType FROM [AllTypes2] WHERE ID = 2
 
 -- SqlServer.2025
@@ -43,7 +41,6 @@ SET     @p = DATETIME2FROMPARTS(2012, 12, 12, 0, 0, 0, 0, 7)
 SELECT ID FROM [AllTypes2] WHERE dateDataType = @p
 
 -- SqlServer.2025
-
 SELECT datetimeoffsetDataType FROM [AllTypes2] WHERE ID = 1
 
 -- SqlServer.2025
@@ -65,7 +62,6 @@ SET     @p = NULL
 SELECT ID FROM [AllTypes2] WHERE @p IS NULL AND datetimeoffsetDataType IS NULL OR @p IS NOT NULL AND datetimeoffsetDataType = @p
 
 -- SqlServer.2025
-
 SELECT datetimeoffsetDataType FROM [AllTypes2] WHERE ID = 2
 
 -- SqlServer.2025
@@ -87,7 +83,6 @@ SET     @p = DATETIMEOFFSETFROMPARTS(2012, 12, 12, 12, 12, 12, 120000, 5, 0, 7)
 SELECT ID FROM [AllTypes2] WHERE datetimeoffsetDataType = @p
 
 -- SqlServer.2025
-
 SELECT datetime2DataType FROM [AllTypes2] WHERE ID = 1
 
 -- SqlServer.2025
@@ -109,7 +104,6 @@ SET     @p = NULL
 SELECT ID FROM [AllTypes2] WHERE @p IS NULL AND datetime2DataType IS NULL OR @p IS NOT NULL AND datetime2DataType = @p
 
 -- SqlServer.2025
-
 SELECT datetime2DataType FROM [AllTypes2] WHERE ID = 2
 
 -- SqlServer.2025
@@ -131,7 +125,6 @@ SET     @p = DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 120000, 7)
 SELECT ID FROM [AllTypes2] WHERE datetime2DataType = @p
 
 -- SqlServer.2025
-
 SELECT timeDataType FROM [AllTypes2] WHERE ID = 1
 
 -- SqlServer.2025
@@ -153,7 +146,6 @@ SET     @p = NULL
 SELECT ID FROM [AllTypes2] WHERE @p IS NULL AND timeDataType IS NULL OR @p IS NOT NULL AND timeDataType = @p
 
 -- SqlServer.2025
-
 SELECT timeDataType FROM [AllTypes2] WHERE ID = 2
 
 -- SqlServer.2025
@@ -175,7 +167,6 @@ SET     @p = TIMEFROMPARTS(12, 12, 12, 120000, 7)
 SELECT ID FROM [AllTypes2] WHERE timeDataType = @p
 
 -- SqlServer.2025
-
 SELECT hierarchyidDataType FROM [AllTypes2] WHERE ID = 1
 
 -- SqlServer.2025
@@ -191,7 +182,6 @@ SET     @p = NULL
 SELECT ID FROM [AllTypes2] WHERE @p IS NULL AND hierarchyidDataType IS NULL OR @p IS NOT NULL AND hierarchyidDataType = @p
 
 -- SqlServer.2025
-
 SELECT hierarchyidDataType FROM [AllTypes2] WHERE ID = 2
 
 -- SqlServer.2025
@@ -207,18 +197,14 @@ SET     @p = /1/3/
 SELECT ID FROM [AllTypes2] WHERE hierarchyidDataType = @p
 
 -- SqlServer.2025
-
 SELECT geographyDataType FROM [AllTypes2] WHERE ID = 1
 
 -- SqlServer.2025
-
 SELECT geographyDataType FROM [AllTypes2] WHERE ID = 2
 
 -- SqlServer.2025
-
 SELECT geometryDataType FROM [AllTypes2] WHERE ID = 1
 
 -- SqlServer.2025
-
 SELECT geometryDataType FROM [AllTypes2] WHERE ID = 2
 

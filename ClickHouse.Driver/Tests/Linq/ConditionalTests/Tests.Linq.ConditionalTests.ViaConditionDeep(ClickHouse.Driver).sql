@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	x.Id,
 	x.StringProp = '1' OR x.StringProp IS NULL,
@@ -26,7 +25,6 @@ WHERE
 	END = 2
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.Id,
 	t1.StringProp

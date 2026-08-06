@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[m_1].[ParentID],
 	[d].[ChildID],
@@ -14,7 +13,6 @@ FROM
 		INNER JOIN [Child] [d] ON CAST([m_1].[ParentID] AS BigInt) = [d].[ParentID]
 
 -- SqlCe
-
 SELECT
 	[p].[ParentID]
 FROM

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	SUM([g_1].[ChildID]),
 	MIN([g_1].[ChildID]),

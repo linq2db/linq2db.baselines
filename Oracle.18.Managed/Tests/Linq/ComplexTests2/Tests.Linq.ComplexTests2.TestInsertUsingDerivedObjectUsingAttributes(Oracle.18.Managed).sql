@@ -28,10 +28,9 @@ RETURNING
 	"PersonID" INTO :IDENTITY_PARAMETER
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."FirstName",
-	t1."PersonID" as ID,
+	t1."PersonID",
 	t1."LastName",
 	t1."MiddleName",
 	t1."Gender"
@@ -64,10 +63,9 @@ WHERE
 	t1."PersonID" = :ID
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."FirstName",
-	t1."PersonID" as ID,
+	t1."PersonID",
 	t1."LastName",
 	t1."MiddleName",
 	t1."Gender"

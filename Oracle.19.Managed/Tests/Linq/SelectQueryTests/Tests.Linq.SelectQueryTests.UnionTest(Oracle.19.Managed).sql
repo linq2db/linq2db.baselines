@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	CURRENT_TIMESTAMP + t."Value" * INTERVAL '1' DAY,
 	CURRENT_TIMESTAMP + 2 * INTERVAL '1' DAY
@@ -14,7 +13,6 @@ SELECT
 FROM SYS.DUAL
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	v_1."Value2"
 FROM

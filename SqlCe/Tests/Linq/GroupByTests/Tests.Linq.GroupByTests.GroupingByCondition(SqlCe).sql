@@ -1,10 +1,9 @@
 ﻿-- SqlCe
-
 SELECT
 	[g_1].[isValueAvailable],
 	[g_1].[ParentID],
 	[g_1].[Value_1],
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	(
 		SELECT
@@ -25,7 +24,6 @@ GROUP BY
 	[g_1].[Value_1]
 
 -- SqlCe
-
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID]

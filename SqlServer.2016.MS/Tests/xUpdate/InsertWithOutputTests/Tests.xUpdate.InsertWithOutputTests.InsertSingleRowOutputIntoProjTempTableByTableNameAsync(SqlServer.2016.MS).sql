@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
-
 CREATE TABLE [tempdb]..[#DestinationTable_output]
 (
 	[Id]       Int          NOT NULL,
@@ -10,7 +9,6 @@ CREATE TABLE [tempdb]..[#DestinationTable_output]
 )
 
 -- SqlServer.2016.MS SqlServer.2016
-
 INSERT INTO [TableWithData_source]
 (
 	[Value],
@@ -35,7 +33,6 @@ VALUES
 )
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	[t1].[Id],
 	[t1].[Value],
@@ -44,7 +41,6 @@ FROM
 	[TableWithData_source] [t1]
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	[t1].[Id],
 	[t1].[Value],
@@ -53,6 +49,5 @@ FROM
 	[tempdb]..[#DestinationTable_output] [t1]
 
 -- SqlServer.2016.MS SqlServer.2016
-
 DROP TABLE IF EXISTS [tempdb]..[#DestinationTable_output]
 

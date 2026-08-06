@@ -1,12 +1,10 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 ALTER TABLE
 	LinqDataTypes
 DELETE WHERE
 	ID >= 101 AND ID < 102
 
 -- ClickHouse.Driver ClickHouse
-
 INSERT INTO LinqDataTypes
 (
 	ID
@@ -17,7 +15,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	r.BigIntValue
 FROM
@@ -27,7 +24,6 @@ WHERE
 LIMIT 1
 
 -- ClickHouse.Driver ClickHouse
-
 ALTER TABLE
 	LinqDataTypes
 DELETE WHERE

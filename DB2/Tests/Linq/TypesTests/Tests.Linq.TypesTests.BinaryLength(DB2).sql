@@ -10,7 +10,6 @@ WHERE
 	"t".ID = 1
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	Length("t"."BinaryValue")
 FROM

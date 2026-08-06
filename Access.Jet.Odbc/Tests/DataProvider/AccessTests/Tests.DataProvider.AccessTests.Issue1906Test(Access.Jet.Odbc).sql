@@ -1,11 +1,10 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[t1].[ResultId],
 	[t1].[DefinitionId],
-	[a_Definition].[DefinitionId],
+	[a_Definition].[DefinitionId] as [DefinitionId_1],
 	[a_Definition].[SetId],
-	[a_Set].[SetId],
+	[a_Set].[SetId] as [SetId_1],
 	[a_Set].[SectorId],
 	[a_Sector].[Id]
 FROM

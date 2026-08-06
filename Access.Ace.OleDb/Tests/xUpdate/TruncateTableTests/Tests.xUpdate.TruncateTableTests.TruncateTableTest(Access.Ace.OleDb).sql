@@ -1,9 +1,7 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 DROP TABLE [TestTrun]
 
 -- Access.Ace.OleDb AccessOleDb
-
 CREATE TABLE [TestTrun]
 (
 	[ID]     Int             NOT NULL,
@@ -13,10 +11,8 @@ CREATE TABLE [TestTrun]
 )
 
 -- Access.Ace.OleDb AccessOleDb
-
 DELETE FROM [TestTrun]
 
 -- Access.Ace.OleDb AccessOleDb
-
 DROP TABLE [TestTrun]
 

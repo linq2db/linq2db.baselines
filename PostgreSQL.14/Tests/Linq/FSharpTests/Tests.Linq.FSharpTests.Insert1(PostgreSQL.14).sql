@@ -1,11 +1,10 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DELETE FROM
 	"Child" c_1
 WHERE
 	c_1."ChildID" > 1000
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1
 DECLARE @ChildID Integer -- Int32
@@ -22,8 +21,7 @@ VALUES
 	:ChildID
 )
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -31,8 +29,7 @@ FROM
 WHERE
 	c_1."ChildID" = 1001
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DELETE FROM
 	"Child" c_1
 WHERE

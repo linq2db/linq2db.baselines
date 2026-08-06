@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 UPDATE
 	[TrimTestTable]
 SET
@@ -8,7 +7,6 @@ WHERE
 	[TrimTestTable].[ID] = 3
 
 -- SqlCe
-
 UPDATE
 	[TrimTestTable]
 SET
@@ -17,7 +15,6 @@ WHERE
 	[TrimTestTable].[Data] = '***XXX***'
 
 -- SqlCe
-
 UPDATE
 	[TrimTestTable]
 SET
@@ -26,20 +23,18 @@ WHERE
 	[TrimTestTable].[Data] = '***HHH***'
 
 -- SqlCe
-
 SELECT
 	[r].[ID],
-	[r].[Data] as [Data_1]
+	[r].[Data]
 FROM
 	[TrimTestTable] [r]
 ORDER BY
 	[r].[ID]
 
 -- SqlCe
-
 SELECT
 	[r].[ID],
-	[r].[Data] as [Data_1]
+	[r].[Data]
 FROM
 	[TrimTestTable] [r]
 ORDER BY

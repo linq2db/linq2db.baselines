@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT DISTINCT
 	i.FirstName,
 	i.PersonID,

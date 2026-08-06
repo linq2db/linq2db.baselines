@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 SELECT
 	Coalesce((
 		SELECT TOP (1)

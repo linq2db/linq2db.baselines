@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT /*+ PUSH_PRED */
 	p."ParentID",
 	p."Value1"

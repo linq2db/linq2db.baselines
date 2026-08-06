@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 WITH [CTE_1] ([Id])
 AS
 (
@@ -47,7 +46,6 @@ FROM
 	[hierarchyDown] [t4]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Level]

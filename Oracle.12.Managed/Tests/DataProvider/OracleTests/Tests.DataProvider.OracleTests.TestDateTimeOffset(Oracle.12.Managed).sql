@@ -1,33 +1,25 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT timestamp '2012-12-12 12:12:12.012' FROM sys.dual
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT timestamp '2012-12-12 12:12:12.012' FROM sys.dual
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT timestamp '2012-12-12 12:12:12.012 -04:00' FROM sys.dual
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT timestamp '2012-12-12 12:12:12.012 -04:00' FROM sys.dual
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT timestamp '2012-12-12 12:12:12.012 +05:00' FROM sys.dual
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT timestamp '2012-12-12 12:12:12.012 +05:00' FROM sys.dual
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT "datetimeoffsetDataType" FROM "AllTypes" WHERE ID = 1
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT "datetimeoffsetDataType" FROM "AllTypes" WHERE ID = 1
 
 -- Oracle.12.Managed Oracle.Managed Oracle12

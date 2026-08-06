@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 INSERT INTO qwerty
 (
 	Id,
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 INSERT INTO qwerty
 (
 	Id,
@@ -25,7 +23,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 INSERT INTO mega_composites
 (
 	ref1,
@@ -38,7 +35,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 INSERT INTO mega_composites
 (
 	ref1,
@@ -51,7 +47,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 INSERT INTO mega_composites
 (
 	ref1,
@@ -64,7 +59,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	x.`y1.q1.ref1`,
 	t1.face_y1_q1_ref1

@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 INSERT INTO "BlobClass"
 (
 	"Id",
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."BlobValue"
@@ -22,7 +20,6 @@ WHERE
 	t1."Id" = 1 AND ROWNUM <= 1
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."BlobValue"

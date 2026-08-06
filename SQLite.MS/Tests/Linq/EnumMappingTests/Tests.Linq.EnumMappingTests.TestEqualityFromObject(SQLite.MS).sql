@@ -39,7 +39,6 @@ WHERE
 	@doubleValue = [t].[DoubleValue]
 
 -- SQLite.MS SQLite
-
 SELECT
 	COUNT(*)
 FROM
@@ -49,7 +48,6 @@ WHERE
 	[t].[DoubleValue] IS NULL
 
 -- SQLite.MS SQLite
-
 SELECT
 	COUNT(*)
 FROM

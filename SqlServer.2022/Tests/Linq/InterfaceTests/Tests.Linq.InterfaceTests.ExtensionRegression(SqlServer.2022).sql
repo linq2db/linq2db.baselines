@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 SELECT DISTINCT
 	[a_Child].[ID]
 FROM

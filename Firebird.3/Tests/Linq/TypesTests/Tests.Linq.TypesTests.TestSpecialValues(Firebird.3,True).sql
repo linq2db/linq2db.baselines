@@ -1,12 +1,10 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	MAX("t1".ID)
 FROM
 	"AllTypes" "t1"
 
 -- Firebird.3 Firebird3
-
 INSERT INTO "AllTypes"
 (
 	ID,
@@ -21,7 +19,6 @@ VALUES
 )
 
 -- Firebird.3 Firebird3
-
 INSERT INTO "AllTypes"
 (
 	ID,
@@ -36,7 +33,6 @@ VALUES
 )
 
 -- Firebird.3 Firebird3
-
 INSERT INTO "AllTypes"
 (
 	ID,
@@ -51,7 +47,6 @@ VALUES
 )
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t1"."floatDataType",
 	"t1"."doubleDataType"

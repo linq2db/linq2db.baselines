@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	g_2.Date_1,
 	COUNT(*)
@@ -14,7 +13,6 @@ GROUP BY
 	g_2.Date_1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.CreatedOnUtc
 FROM

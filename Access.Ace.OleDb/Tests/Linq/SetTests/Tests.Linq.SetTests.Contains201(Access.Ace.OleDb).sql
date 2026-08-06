@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	IIF([p].[ParentID] - 1 IN (
 		SELECT

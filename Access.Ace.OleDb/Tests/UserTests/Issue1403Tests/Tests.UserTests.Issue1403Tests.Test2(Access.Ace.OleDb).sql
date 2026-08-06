@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 INSERT INTO [Issue1403Tests_2]
 (
 	[event_id],
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT TOP 1
 	[t1].[event_id],
 	[t1].[event_description]

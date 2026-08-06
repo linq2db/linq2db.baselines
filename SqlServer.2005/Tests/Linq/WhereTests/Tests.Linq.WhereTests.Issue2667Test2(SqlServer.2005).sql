@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 SELECT
 	[a_Ref].[Id],
 	[a_Ref].[Bit01]

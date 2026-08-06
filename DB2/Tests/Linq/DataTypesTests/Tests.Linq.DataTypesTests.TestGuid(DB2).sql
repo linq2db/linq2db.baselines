@@ -14,7 +14,6 @@ WHERE
 	"r"."Column" = @Column AND "r"."ColumnNullable" = @ColumnNullable
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Column",
@@ -26,7 +25,6 @@ WHERE
 	"r"."ColumnNullable" = BX'A57339BD2343D84D9F4FDF9F93E2A627'
 
 -- DB2 DB2.LUW DB2LUW
-
 DELETE FROM
 	"GuidTable" "t1"
 
@@ -73,7 +71,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Column",
@@ -84,12 +81,10 @@ ORDER BY
 	"t1"."Id"
 
 -- DB2 DB2.LUW DB2LUW
-
 DELETE FROM
 	"GuidTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 INSERT INTO "GuidTable"
 (
 	"Id",
@@ -101,7 +96,6 @@ VALUES
 (2,BX'0D6048A921DE744F8AC29516B287076E',BX'A57339BD2343D84D9F4FDF9F93E2A627')
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Column",
@@ -112,14 +106,12 @@ ORDER BY
 	"t1"."Id"
 
 -- DB2 DB2.LUW DB2LUW
-
 DELETE FROM
 	"GuidTable" "t1"
 
 INSERT BULK "GuidTable"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Column",

@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 DELETE FROM
 	[Person] INDEXED BY IX_PersonDesc
 WHERE

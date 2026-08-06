@@ -1,10 +1,8 @@
 ﻿-- DuckDB
-
 SELECT
 	current_database()
 
 -- DuckDB
-
 SELECT
 	current_schema()
 FROM
@@ -18,9 +16,9 @@ DECLARE $ID  -- Int32
 SET     $ID = 5
 
 UPDATE
-	TestData.main.Issue681Table
+	memory.main.Issue681Table
 SET
 	"Value" = $Value
 WHERE
-	TestData.main.Issue681Table.ID = $ID
+	memory.main.Issue681Table.ID = $ID
 

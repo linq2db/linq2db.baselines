@@ -1,9 +1,7 @@
 ﻿-- SqlCe
-
 DROP TABLE [TestTrun]
 
 -- SqlCe
-
 CREATE TABLE [TestTrun]
 (
 	[ID]     Int             NOT NULL,
@@ -13,10 +11,8 @@ CREATE TABLE [TestTrun]
 )
 
 -- SqlCe
-
 DELETE FROM [TestTrun]
 
 -- SqlCe
-
 DROP TABLE [TestTrun]
 

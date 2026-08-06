@@ -46,7 +46,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	'Id',
 	"it"."Id",

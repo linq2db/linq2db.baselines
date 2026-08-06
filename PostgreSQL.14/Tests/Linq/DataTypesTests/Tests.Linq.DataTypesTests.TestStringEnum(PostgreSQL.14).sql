@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DECLARE @Column Text(7) -- String
 SET     @Column = 'value=2'
 DECLARE @ColumnNullable Text(8) -- String
@@ -13,8 +13,7 @@ FROM
 WHERE
 	r."Column" = :Column AND r."ColumnNullable" = :ColumnNullable
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	r."Id",
 	r."Column",
@@ -24,12 +23,11 @@ FROM
 WHERE
 	r."Column" = 'value=2' AND r."ColumnNullable" = 'value=33'
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DELETE FROM
 	"StringEnumTable" t1
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Column Text(5) -- String
@@ -50,7 +48,7 @@ VALUES
 	:ColumnNullable
 )
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Column Text(7) -- String
@@ -71,8 +69,7 @@ VALUES
 	:ColumnNullable
 )
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Column",
@@ -82,13 +79,11 @@ FROM
 ORDER BY
 	t1."Id"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DELETE FROM
 	"StringEnumTable" t1
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 INSERT INTO "StringEnumTable"
 (
 	"Id",
@@ -99,8 +94,7 @@ VALUES
 (1,'val=1',NULL),
 (2,'value=2','value=33')
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Column",
@@ -110,15 +104,13 @@ FROM
 ORDER BY
 	t1."Id"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DELETE FROM
 	"StringEnumTable" t1
 
 INSERT BULK "StringEnumTable"(Id, Column, ColumnNullable)
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Column",

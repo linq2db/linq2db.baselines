@@ -86,7 +86,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -106,7 +105,6 @@ FROM
 		INNER JOIN [Faculty] [d] ON [m_1].[Id] = [d].[UniversityId]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[m_2].[Id],
 	[d].[SubjectId],
@@ -131,7 +129,6 @@ FROM
 		)
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Name],

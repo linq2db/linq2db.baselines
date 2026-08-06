@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT DISTINCT
 	[a_Child].[ID]
 FROM

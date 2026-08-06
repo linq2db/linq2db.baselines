@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	s.Id,
 	s."Value",
@@ -10,7 +9,6 @@ WHERE
 	s.Id = 3
 
 -- DuckDB
-
 DELETE FROM
 	TableWithData s
 WHERE

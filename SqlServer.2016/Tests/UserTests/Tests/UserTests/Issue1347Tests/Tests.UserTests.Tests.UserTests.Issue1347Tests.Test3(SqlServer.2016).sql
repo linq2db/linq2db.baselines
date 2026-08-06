@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016
-
 SELECT
 	[t2].[Id],
 	[t2].[ResourceID],

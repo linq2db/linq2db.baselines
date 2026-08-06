@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	MAX(CASE
 		WHEN "t1"."ChildID" > 20 THEN 1

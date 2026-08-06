@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
-
+﻿-- PostgreSQL.13 PostgreSQL12
 SELECT
 	x."ParentID",
 	x."ChildID"
@@ -56,8 +55,7 @@ WHERE
 		ELSE True
 	END
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	x."ParentID",
 	x."ChildID"

@@ -16,7 +16,6 @@ VALUES
 )
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[r].[ID],
 	[r].[Data]
@@ -26,7 +25,6 @@ ORDER BY
 	[r].[ID]
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[r].[ID],
 	[r].[Data]

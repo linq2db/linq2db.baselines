@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 CREATE TABLE temp_table_1
 (
 	ID    Int32,
@@ -13,7 +12,6 @@ ORDER BY ID
 INSERT INTO temp_table_1(ID, Value) VALUES
 
 -- ClickHouse.Octonica ClickHouse
-
 CREATE TABLE temp_table_2
 (
 	Value String,
@@ -24,7 +22,6 @@ ENGINE = MergeTree()
 ORDER BY Value
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO temp_table_2
 (
 	Value
@@ -43,10 +40,8 @@ FROM
 		) t1 ON gr.ID = t1.ID AND t1.rn = 1
 
 -- ClickHouse.Octonica ClickHouse
-
 DROP TABLE IF EXISTS temp_table_2
 
 -- ClickHouse.Octonica ClickHouse
-
 DROP TABLE IF EXISTS temp_table_1
 

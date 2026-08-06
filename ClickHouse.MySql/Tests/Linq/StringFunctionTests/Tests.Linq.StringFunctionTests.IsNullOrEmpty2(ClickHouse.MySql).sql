@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	lengthUTF8(p.FirstName) = 0
 FROM

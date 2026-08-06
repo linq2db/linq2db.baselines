@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[m_1].[Id],
 	[m_1].[Id],
@@ -16,7 +15,6 @@ FROM
 		INNER JOIN [EntityD] [d] ON [m_1].[Id] = [d].[FK]
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[e].[Id],
 	[a_ObjectBOptional].[Id],

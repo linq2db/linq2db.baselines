@@ -1,9 +1,7 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
-
 SELECT Cast('2012-12-12 12:12:12.0120001' as datetime2)
 
 -- SqlServer.2022.MS SqlServer.2022
-
 SELECT Cast('2012-12-12 12:12:12.0120001' as datetime2)
 
 -- SqlServer.2022.MS SqlServer.2022

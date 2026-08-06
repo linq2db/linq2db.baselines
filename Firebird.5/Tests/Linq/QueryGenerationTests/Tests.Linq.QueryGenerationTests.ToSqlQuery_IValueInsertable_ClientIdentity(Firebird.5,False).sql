@@ -10,11 +10,10 @@ INSERT INTO "TableWithIdentity"
 VALUES
 (
 	543,
-	CAST(@value AS Int)
+	@value
 )
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"

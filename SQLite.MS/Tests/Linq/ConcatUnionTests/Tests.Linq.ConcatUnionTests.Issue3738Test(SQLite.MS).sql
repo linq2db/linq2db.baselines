@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	'I-' || CAST([x].[PersonID] AS NVarChar(11)),
 	[x].[FirstName]

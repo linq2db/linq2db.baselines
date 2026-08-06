@@ -1,12 +1,10 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 DELETE FROM
 	"AllTypes" t
 WHERE
 	t.ID > 2
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t."longDataType"
 FROM
@@ -71,7 +69,6 @@ WHERE
 	t.ID = :id2
 
 -- Oracle.11.Managed Oracle11
-
 DELETE FROM
 	"AllTypes" t
 WHERE

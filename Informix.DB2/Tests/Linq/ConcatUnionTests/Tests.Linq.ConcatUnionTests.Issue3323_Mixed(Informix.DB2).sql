@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 INSERT INTO Issue3323Table
 (
 	Id,
@@ -16,7 +15,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT
 	r.Id,
 	Nvl(r.FirstName, '') || ' ' || Nvl(r.LastName, '')
@@ -30,7 +28,6 @@ FROM
 	Issue3323Table r_1
 
 -- Informix.DB2 Informix
-
 SELECT
 	r.Id + 1,
 	r.Text

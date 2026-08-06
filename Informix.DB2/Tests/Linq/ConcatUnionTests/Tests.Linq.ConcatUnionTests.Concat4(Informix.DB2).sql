@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	c_3.ParentID,
 	c_3.ChildID

@@ -409,7 +409,6 @@ VALUES
 )
 
 -- Access.Jet.Odbc AccessODBC
-
 DELETE FROM
 	[LinqDataTypes] [p]
 WHERE
@@ -826,7 +825,6 @@ VALUES
 )
 
 -- Access.Jet.Odbc AccessODBC
-
 DELETE FROM
 	[LinqDataTypes] [p]
 WHERE

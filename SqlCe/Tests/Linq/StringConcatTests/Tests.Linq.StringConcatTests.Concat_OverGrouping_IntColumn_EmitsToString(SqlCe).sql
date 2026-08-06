@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[m_1].[Key_1],
 	[d].[IntV]
@@ -16,16 +15,14 @@ ORDER BY
 	[m_1].[Key_1]
 
 -- SqlCe
-
 SELECT DISTINCT
-	[g_1].[GrpId] as [Key_1]
+	[g_1].[GrpId]
 FROM
 	[ConcatGroupedTypedEntity] [g_1]
 ORDER BY
 	[g_1].[GrpId]
 
 -- SqlCe
-
 SELECT
 	[t1].[PK],
 	[t1].[GrpId],

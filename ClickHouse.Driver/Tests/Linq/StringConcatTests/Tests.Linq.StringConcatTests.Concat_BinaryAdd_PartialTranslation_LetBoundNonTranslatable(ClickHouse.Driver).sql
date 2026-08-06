@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	t.Value1
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	t.ID
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.ID,
 	t1.Value1,

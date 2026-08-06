@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -29,7 +28,6 @@ WHERE
 	)
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[x].[Id],
 	[x].[ValidOn]

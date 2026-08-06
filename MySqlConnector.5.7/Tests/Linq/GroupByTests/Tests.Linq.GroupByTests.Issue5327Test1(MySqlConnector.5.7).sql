@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`c_1`.`Key`
 FROM
@@ -10,7 +9,6 @@ ORDER BY
 	SUM(`c_1`.`Value`) DESC
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Key`,

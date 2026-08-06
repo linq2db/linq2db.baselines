@@ -1,13 +1,11 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t."Id"::VarChar(36)
 FROM
 	"TableWithGuid" t
 LIMIT 1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t."Id",
 	t."NullableGuid"
@@ -16,8 +14,7 @@ FROM
 WHERE
 	t."Id"::VarChar(36) LIKE '%63d-0f%' ESCAPE '~'
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t."Id",
 	t."NullableGuid"
@@ -26,8 +23,7 @@ FROM
 WHERE
 	t."Id"::VarChar(36) LIKE 'bc7b6%' ESCAPE '~'
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t."Id",
 	t."NullableGuid"
@@ -36,8 +32,7 @@ FROM
 WHERE
 	t."Id"::VarChar(36) LIKE '%8f4-53%' ESCAPE '~'
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t."Id",
 	t."NullableGuid"

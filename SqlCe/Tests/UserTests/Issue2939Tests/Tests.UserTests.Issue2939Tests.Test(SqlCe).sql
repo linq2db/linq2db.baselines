@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[serv].[Id]
 FROM

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[i].[Id]
 FROM
@@ -10,7 +9,6 @@ ORDER BY
 	[i].[Id]
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]

@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 DELETE FROM
 	[GrandChild] [t1]
 WHERE

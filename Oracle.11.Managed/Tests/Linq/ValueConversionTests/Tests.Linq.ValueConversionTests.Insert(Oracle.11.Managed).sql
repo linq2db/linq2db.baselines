@@ -32,7 +32,6 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	e."Id",
 	e."Value1",
@@ -83,7 +82,6 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	e."Id",
 	e."Value1",
@@ -150,7 +148,6 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	e."Id",
 	e."Value1",
@@ -168,7 +165,6 @@ WHERE
 	e."Id" = 3 AND ROWNUM <= 1
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	COUNT(*)
 FROM

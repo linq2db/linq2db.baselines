@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 SELECT TOP 1
 	[Item1].[ParentID],
 	[Item1].[ChildID]

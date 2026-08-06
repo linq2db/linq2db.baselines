@@ -50,7 +50,6 @@ VALUES
 )
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"m_1"."Id",
 	"d"."Id",
@@ -62,7 +61,6 @@ ORDER BY
 	"m_1"."Id"
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"after_1"."Id",
 	"after_1"."Name"

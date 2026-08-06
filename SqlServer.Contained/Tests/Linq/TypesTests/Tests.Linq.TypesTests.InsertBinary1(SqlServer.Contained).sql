@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 DELETE [t1]
 FROM
 	[LinqDataTypes] [t1]
@@ -24,7 +23,6 @@ VALUES
 )
 
 -- SqlServer.Contained SqlServer.2019
-
 DELETE [t1]
 FROM
 	[LinqDataTypes] [t1]

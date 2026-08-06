@@ -54,7 +54,6 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[p].[Id],
 	[p].[TargetName],
@@ -66,7 +65,6 @@ WHERE
 	[p].[TargetName] = 'bda.Requests'
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[p].[TargetName],
 	[p].[Id],

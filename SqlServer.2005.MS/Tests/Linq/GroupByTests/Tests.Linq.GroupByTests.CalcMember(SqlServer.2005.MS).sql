@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[groupedData_1].[Key_1],
 	COUNT(*)

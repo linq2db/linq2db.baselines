@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"m_1"."ParentID",
 	"d"."ParentID",
@@ -26,7 +25,6 @@ ORDER BY
 	"d"."ChildID"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"a"."ParentID",
 	"a_ParentTest"."ParentID"

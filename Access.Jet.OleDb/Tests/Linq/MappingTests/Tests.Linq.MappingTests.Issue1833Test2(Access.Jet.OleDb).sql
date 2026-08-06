@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT TOP 2
 	[e].[PersonID],
 	[e].[FirstName],

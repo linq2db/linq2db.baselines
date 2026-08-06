@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [tempdb]..[#InsertTempTable_42]
 (
 	[Action]    NVarChar(4000)     NULL,
@@ -9,7 +8,6 @@ CREATE TABLE [tempdb]..[#InsertTempTable_42]
 )
 
 -- SqlServer.2014.MS SqlServer.2014
-
 DELETE [t1]
 FROM
 	[TestMerge1] [t1]
@@ -115,7 +113,6 @@ VALUES
 )
 
 -- SqlServer.2014.MS SqlServer.2014
-
 DELETE [t1]
 FROM
 	[TestMerge2] [t1]
@@ -221,7 +218,6 @@ VALUES
 )
 
 -- SqlServer.2014.MS SqlServer.2014
-
 MERGE INTO [TestMerge1] [Target]
 USING (
 	SELECT
@@ -270,7 +266,6 @@ INTO [tempdb]..[#InsertTempTable_42]
 ;
 
 -- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	[t1].[Action],
 	[t1].[NewId],
@@ -280,7 +275,6 @@ FROM
 	[tempdb]..[#InsertTempTable_42] [t1]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#InsertTempTable_42]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#InsertTempTable_42]
 

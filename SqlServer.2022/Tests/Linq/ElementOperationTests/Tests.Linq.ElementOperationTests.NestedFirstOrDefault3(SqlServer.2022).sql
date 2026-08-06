@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 SELECT
 	(
 		SELECT DISTINCT TOP (1)

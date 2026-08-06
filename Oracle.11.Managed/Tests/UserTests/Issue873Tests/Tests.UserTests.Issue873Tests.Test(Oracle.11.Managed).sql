@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	' ' || CAST(Coalesce(t1."Value1", 0) AS VarChar(255)),
 	Coalesce(t1."SubSum", 0),

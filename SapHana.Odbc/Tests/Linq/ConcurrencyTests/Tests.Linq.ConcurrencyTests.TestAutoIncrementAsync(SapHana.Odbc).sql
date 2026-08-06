@@ -20,7 +20,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Stamp",
@@ -45,7 +44,6 @@ WHERE
 	"obj"."Id" = ? AND "obj"."Stamp" = ?
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Stamp",
@@ -70,7 +68,6 @@ WHERE
 	"obj"."Id" = ? AND "obj"."Stamp" = ?
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Stamp",
@@ -95,7 +92,6 @@ WHERE
 	"obj"."Id" = ? AND "obj"."Stamp" = ?
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Stamp",
@@ -115,7 +111,6 @@ WHERE
 	"obj"."Id" = ? AND "obj"."Stamp" = ?
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Stamp",
@@ -135,7 +130,6 @@ WHERE
 	"obj"."Id" = ? AND "obj"."Stamp" = ?
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Stamp",

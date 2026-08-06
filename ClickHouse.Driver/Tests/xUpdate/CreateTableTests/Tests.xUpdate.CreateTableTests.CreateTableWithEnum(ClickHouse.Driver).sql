@@ -1,9 +1,7 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 DROP TABLE TestEnumTable
 
 -- ClickHouse.Driver ClickHouse
-
 CREATE TABLE TestEnumTable
 (
 	Field1  Int32,
@@ -15,7 +13,6 @@ CREATE TABLE TestEnumTable
 ENGINE = Memory()
 
 -- ClickHouse.Driver ClickHouse
-
 INSERT INTO TestEnumTable
 (
 	Field1,
@@ -34,7 +31,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.Field1,
 	t1.Field11,
@@ -45,6 +41,5 @@ FROM
 	TestEnumTable t1
 
 -- ClickHouse.Driver ClickHouse
-
 DROP TABLE TestEnumTable
 

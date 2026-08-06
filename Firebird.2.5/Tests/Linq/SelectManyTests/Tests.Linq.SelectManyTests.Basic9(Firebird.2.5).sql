@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	"a_GrandChildren"."ParentID",
 	"a_GrandChildren"."ChildID",

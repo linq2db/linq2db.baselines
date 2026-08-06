@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	COUNT(*)
 FROM
@@ -31,7 +30,6 @@ WHERE
 	`r`.`Value4` IS NULL AND `r`.`Value5` IS NULL
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value1`,
@@ -65,7 +63,6 @@ WHERE
 	`r`.`Value4` IS NULL AND `r`.`Value5` IS NULL
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value1`,
@@ -98,7 +95,6 @@ WHERE
 	) = (`r`.`Value5` + @cnt))
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value1`,
@@ -131,7 +127,6 @@ WHERE
 	) = (`r`.`Value5` + @cnt))
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value1`,
@@ -164,7 +159,6 @@ WHERE
 	) = (`r`.`Value5` + @cnt)) OR `r`.`Value4` IS NULL AND `r`.`Value5` IS NULL) AND NOT (`r`.`Value4` IS NULL AND `r`.`Value5` IS NOT NULL) AND NOT (`r`.`Value4` IS NOT NULL AND `r`.`Value5` IS NULL))
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value1`,
@@ -197,7 +191,6 @@ WHERE
 	) = (`r`.`Value5` + @cnt)) OR `r`.`Value4` IS NULL AND `r`.`Value5` IS NULL) AND NOT (`r`.`Value4` IS NULL AND `r`.`Value5` IS NOT NULL) AND NOT (`r`.`Value4` IS NOT NULL AND `r`.`Value5` IS NULL))
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value1`,
@@ -234,7 +227,6 @@ WHERE
 	END)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value1`,
@@ -271,7 +263,6 @@ WHERE
 	END)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value1`,
@@ -306,7 +297,6 @@ WHERE
 	`r`.`Value4` IS NOT NULL AND `r`.`Value5` IS NULL
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value1`,
@@ -341,7 +331,6 @@ WHERE
 	`r`.`Value4` IS NOT NULL AND `r`.`Value5` IS NULL
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value1`,
@@ -378,7 +367,6 @@ WHERE
 	END
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value1`,
@@ -415,7 +403,6 @@ WHERE
 	END
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value1`,
@@ -448,7 +435,6 @@ WHERE
 	) = (`r`.`Value5` + @cnt)) OR `r`.`Value4` IS NULL AND `r`.`Value5` IS NOT NULL OR `r`.`Value4` IS NOT NULL AND `r`.`Value5` IS NULL) AND NOT (`r`.`Value4` IS NULL AND `r`.`Value5` IS NULL))
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value1`,
@@ -481,7 +467,6 @@ WHERE
 	) = (`r`.`Value5` + @cnt)) OR `r`.`Value4` IS NULL AND `r`.`Value5` IS NOT NULL OR `r`.`Value4` IS NOT NULL AND `r`.`Value5` IS NULL) AND NOT (`r`.`Value4` IS NULL AND `r`.`Value5` IS NULL))
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value1`,
@@ -518,7 +503,6 @@ WHERE
 	END)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value1`,
@@ -555,7 +539,6 @@ WHERE
 	END)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value1`,
@@ -588,7 +571,6 @@ WHERE
 	) + `r`.`Value5`)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value1`,
@@ -621,7 +603,6 @@ WHERE
 	) + `r`.`Value5`)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value1`,
@@ -654,7 +635,6 @@ WHERE
 	) + `r`.`Value5`)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value1`,
@@ -687,7 +667,6 @@ WHERE
 	) + `r`.`Value5`)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value1`,
@@ -720,7 +699,6 @@ WHERE
 	) + `r`.`Value5`)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value1`,
@@ -753,7 +731,6 @@ WHERE
 	) + `r`.`Value5`)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value1`,
@@ -786,7 +763,6 @@ WHERE
 	) + `r`.`Value5`)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value1`,
@@ -819,7 +795,6 @@ WHERE
 	) + `r`.`Value5`)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value1`,
@@ -856,7 +831,6 @@ WHERE
 	END)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value1`,
@@ -893,7 +867,6 @@ WHERE
 	END)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value1`,
@@ -930,7 +903,6 @@ WHERE
 	END)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value1`,
@@ -967,7 +939,6 @@ WHERE
 	END)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value1`,
@@ -1004,7 +975,6 @@ WHERE
 	END)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value1`,
@@ -1041,7 +1011,6 @@ WHERE
 	END)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value1`,
@@ -1078,7 +1047,6 @@ WHERE
 	END)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value1`,
@@ -1115,7 +1083,6 @@ WHERE
 	END)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value1`,

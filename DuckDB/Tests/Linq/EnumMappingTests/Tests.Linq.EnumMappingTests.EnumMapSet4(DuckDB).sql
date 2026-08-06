@@ -8,7 +8,6 @@ WHERE
 	r.ID >= 101 AND r.ID < $p
 
 -- DuckDB
-
 INSERT INTO LinqDataTypes
 (
 	ID,
@@ -32,7 +31,6 @@ WHERE
 	LinqDataTypes.ID = 101 AND LinqDataTypes.BigIntValue = 11
 
 -- DuckDB
-
 SELECT
 	r.BigIntValue
 FROM

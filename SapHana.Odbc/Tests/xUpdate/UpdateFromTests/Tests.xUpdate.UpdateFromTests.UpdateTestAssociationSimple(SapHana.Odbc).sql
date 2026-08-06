@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 UPDATE
 	"UpdatedEntities"
 SET
@@ -18,7 +17,6 @@ WHERE
 	)
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"v"."Value1",
 	"v"."Value2",

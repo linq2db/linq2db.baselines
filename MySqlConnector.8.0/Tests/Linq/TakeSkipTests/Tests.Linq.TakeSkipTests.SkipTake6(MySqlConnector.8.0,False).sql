@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`c_1`.`ParentID`,
 	`c_1`.`ChildID`
@@ -16,7 +15,6 @@ WHERE
 	`c_1`.`ParentID` = `p_1`.`ParentID`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`c_1`.`ParentID`,
 	`c_1`.`ChildID`

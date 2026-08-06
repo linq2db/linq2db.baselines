@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT
 	[e].[Id],
 	[e].[GuidValue],
@@ -11,7 +10,6 @@ WHERE
 	(Coalesce([e].[StringValue], '') || '1') = 'StrValue1'
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[GuidValue],

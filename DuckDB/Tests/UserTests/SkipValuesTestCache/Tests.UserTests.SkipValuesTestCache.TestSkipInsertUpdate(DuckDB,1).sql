@@ -16,7 +16,6 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	t.Id,
 	t.Name,
@@ -41,7 +40,6 @@ WHERE
 	PR_1598_Insert_Table_Cache.Id = $Id
 
 -- DuckDB
-
 SELECT
 	t.Id,
 	t.Name,

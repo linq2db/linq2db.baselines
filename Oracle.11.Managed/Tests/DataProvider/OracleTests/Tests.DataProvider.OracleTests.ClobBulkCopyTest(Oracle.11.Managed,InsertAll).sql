@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 CREATE TABLE "ClobEntity"
 (
 	"Id"         Int   NOT NULL,
@@ -27,7 +26,6 @@ INSERT ALL
 SELECT * FROM dual
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."ClobValue",
@@ -36,6 +34,5 @@ FROM
 	"ClobEntity" t1
 
 -- Oracle.11.Managed Oracle11
-
 DROP TABLE "ClobEntity"
 

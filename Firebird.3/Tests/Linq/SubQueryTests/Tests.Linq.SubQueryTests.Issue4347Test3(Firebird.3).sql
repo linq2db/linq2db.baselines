@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	"m_1"."Id",
 	"d"."Id",
@@ -10,7 +9,6 @@ FROM
 		INNER JOIN "LineEntity" "d" ON "m_1"."Id" = "d"."TransactionId"
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"x"."Id",
 	"x"."ValidOn"

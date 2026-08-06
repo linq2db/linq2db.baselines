@@ -15,7 +15,6 @@ WHERE
 	[e].[Id] = @Id AND [e].[Id] = @p
 
 -- SqlServer.2005
-
 SELECT
 	[t1].[Id],
 	[t1].[GuidValue],
@@ -41,7 +40,6 @@ WHERE
 	[e].[Id] = @Id AND [e].[Id] = @p
 
 -- SqlServer.2005
-
 SELECT
 	[t1].[Id],
 	[t1].[GuidValue],

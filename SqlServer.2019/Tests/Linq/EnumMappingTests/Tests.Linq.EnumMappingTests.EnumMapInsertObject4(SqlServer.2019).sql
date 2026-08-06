@@ -30,7 +30,6 @@ VALUES
 )
 
 -- SqlServer.2019
-
 SELECT
 	COUNT(*)
 FROM

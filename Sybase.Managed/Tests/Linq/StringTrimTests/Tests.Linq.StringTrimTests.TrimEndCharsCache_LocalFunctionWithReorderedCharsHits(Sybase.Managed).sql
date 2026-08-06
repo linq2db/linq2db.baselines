@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[t].[VarCharColumn]
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	[t].[Id]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t].[VarCharColumn]
 FROM

@@ -14,7 +14,6 @@ RETURNING
 	Id
 
 -- DuckDB
-
 SELECT
 	t1.Id
 FROM
@@ -33,7 +32,6 @@ WHERE
 LIMIT 1
 
 -- DuckDB
-
 SELECT
 	u.Id
 FROM

@@ -1,8 +1,7 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	item_1.FirstName,
-	item_1.PersonID as ID,
+	item_1.PersonID,
 	item_1.LastName,
 	item_1.MiddleName,
 	item_1.Gender
@@ -11,7 +10,7 @@ FROM
 UNION ALL
 SELECT
 	t1.FirstName as FirstName,
-	t1.ID as ID,
+	t1.ID as PersonID,
 	t1.LastName as LastName,
 	t1.MiddleName as MiddleName,
 	t1.Gender as Gender

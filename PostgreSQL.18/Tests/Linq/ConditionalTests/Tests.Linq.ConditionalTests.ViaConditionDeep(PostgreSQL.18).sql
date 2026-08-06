@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
-
+﻿-- PostgreSQL.18 PostgreSQL12
 SELECT
 	x."Id",
 	x."StringProp" = '1' OR x."StringProp" IS NULL,
@@ -25,8 +24,7 @@ WHERE
 		ELSE 2
 	END = 2
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."StringProp"

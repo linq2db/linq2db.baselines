@@ -54,7 +54,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT
 	p.Id,
 	p.TargetName,
@@ -66,7 +65,6 @@ WHERE
 	p.TargetName = 'bda.Requests'
 
 -- Informix.DB2 Informix
-
 SELECT
 	p.TargetName,
 	p.Id,

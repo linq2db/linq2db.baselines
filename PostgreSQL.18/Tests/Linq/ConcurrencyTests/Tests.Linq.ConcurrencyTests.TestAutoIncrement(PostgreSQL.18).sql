@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Stamp Integer -- Int32
@@ -19,8 +19,7 @@ VALUES
 	:Value
 )
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Stamp",
@@ -28,7 +27,7 @@ SELECT
 FROM
 	"ConcurrencyAutoIncrement" t1
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL12
 DECLARE @Value Text(7) -- String
 SET     @Value = 'value 1'
 DECLARE @Id Integer -- Int32
@@ -44,8 +43,7 @@ SET
 WHERE
 	"ConcurrencyAutoIncrement"."Id" = :Id AND "ConcurrencyAutoIncrement"."Stamp" = :Stamp
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Stamp",
@@ -53,7 +51,7 @@ SELECT
 FROM
 	"ConcurrencyAutoIncrement" t1
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL12
 DECLARE @Value Text(7) -- String
 SET     @Value = 'value 2'
 DECLARE @Id Integer -- Int32
@@ -69,8 +67,7 @@ SET
 WHERE
 	"ConcurrencyAutoIncrement"."Id" = :Id AND "ConcurrencyAutoIncrement"."Stamp" = :Stamp
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Stamp",
@@ -78,7 +75,7 @@ SELECT
 FROM
 	"ConcurrencyAutoIncrement" t1
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL12
 DECLARE @Value Text(7) -- String
 SET     @Value = 'value 3'
 DECLARE @Id Integer -- Int32
@@ -94,8 +91,7 @@ SET
 WHERE
 	"ConcurrencyAutoIncrement"."Id" = :Id AND "ConcurrencyAutoIncrement"."Stamp" = :Stamp
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Stamp",
@@ -103,7 +99,7 @@ SELECT
 FROM
 	"ConcurrencyAutoIncrement" t1
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Stamp Integer -- Int32
@@ -114,8 +110,7 @@ DELETE FROM
 WHERE
 	obj."Id" = :Id AND obj."Stamp" = :Stamp
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Stamp",
@@ -123,7 +118,7 @@ SELECT
 FROM
 	"ConcurrencyAutoIncrement" t1
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Stamp Integer -- Int32
@@ -134,8 +129,7 @@ DELETE FROM
 WHERE
 	obj."Id" = :Id AND obj."Stamp" = :Stamp
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Stamp",

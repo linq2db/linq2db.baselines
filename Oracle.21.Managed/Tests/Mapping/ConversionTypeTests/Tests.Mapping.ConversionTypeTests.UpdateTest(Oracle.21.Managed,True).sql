@@ -1,5 +1,4 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
-
 UPDATE
 	"TrimTestTable" t1
 SET
@@ -8,7 +7,6 @@ WHERE
 	t1.ID = 3
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 UPDATE
 	"TrimTestTable" t
 SET
@@ -17,7 +15,6 @@ WHERE
 	t."Data" = '***XXX***'
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 UPDATE
 	"TrimTestTable" t
 SET
@@ -26,7 +23,6 @@ WHERE
 	t."Data" = '***HHH***'
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	r.ID,
 	r."Data"
@@ -36,7 +32,6 @@ ORDER BY
 	r.ID
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	r.ID,
 	r."Data"

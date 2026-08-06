@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SET GLOBAL local_infile=ON
 
 INSERT BULK `AllTypesNoYear`(bigintDataType, smallintDataType, tinyintDataType, mediumintDataType, intDataType, numericDataType, decimalDataType, doubleDataType, floatDataType, dateDataType, datetimeDataType, timestampDataType, timeDataType, charDataType, varcharDataType, textDataType, binaryDataType, varbinaryDataType, blobDataType, bitDataType, enumDataType, setDataType, intUnsignedDataType)
@@ -9,7 +8,6 @@ INSERT BULK `AllTypesNoYear`(bigintDataType, smallintDataType, tinyintDataType, 
 INSERT BULK `AllTypesNoYear`(bigintDataType, smallintDataType, tinyintDataType, mediumintDataType, intDataType, numericDataType, decimalDataType, doubleDataType, floatDataType, dateDataType, datetimeDataType, timestampDataType, timeDataType, charDataType, varcharDataType, textDataType, binaryDataType, varbinaryDataType, blobDataType, bitDataType, enumDataType, setDataType, intUnsignedDataType)
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	COUNT(*)
 FROM
@@ -55,7 +53,6 @@ ORDER BY
 LIMIT @take
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 DELETE  
 FROM
 	`AllTypes`
@@ -63,7 +60,6 @@ WHERE
 	`AllTypes`.`varcharDataType` = '_btest'
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 DELETE  
 FROM
 	`AllTypesNoYear`

@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 UPDATE
 	"TableWithConverterValue" "x"
 SET
@@ -11,7 +10,6 @@ WHERE
 	"x"."Id" = 1
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"x"."Id",
 	"x"."NoConversion",

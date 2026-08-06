@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 INSERT INTO [TableToInsert]
 (
 	[Id],
@@ -7,7 +6,7 @@ INSERT INTO [TableToInsert]
 )
 SELECT
 	[t1].[Id],
-	[t1].[Value] as [Value_1]
+	[t1].[Value]
 FROM
 	(
 		SELECT 2 AS [Id], 'Janet' AS [Value]
@@ -18,7 +17,6 @@ WHERE
 	[t].[Id] IS NULL
 
 -- SqlCe
-
 INSERT INTO [TableToInsert]
 (
 	[Id],
@@ -26,7 +24,7 @@ INSERT INTO [TableToInsert]
 )
 SELECT
 	[t1].[Id],
-	[t1].[Value] as [Value_1]
+	[t1].[Value]
 FROM
 	(
 		SELECT 2 AS [Id], 'Janet' AS [Value]

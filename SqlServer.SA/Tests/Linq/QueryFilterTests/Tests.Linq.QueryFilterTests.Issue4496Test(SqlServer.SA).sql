@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 SELECT DISTINCT
 	[x].[ParentID],
 	[x].[ChildID]
@@ -10,7 +9,6 @@ WHERE
 	[x].[ChildID] > 30
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT DISTINCT
 	[x].[ParentID],
 	[x].[ChildID]

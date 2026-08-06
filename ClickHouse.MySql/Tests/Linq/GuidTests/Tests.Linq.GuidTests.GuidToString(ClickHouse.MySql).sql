@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	lowerUTF8(toString(t.Id))
 FROM
@@ -7,7 +6,6 @@ FROM
 LIMIT 1
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t.Id,
 	t.NullableGuid
@@ -17,7 +15,6 @@ WHERE
 	position(lowerUTF8(toString(t.Id)), '63d-0f') > 0
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t.Id,
 	t.NullableGuid
@@ -27,7 +24,6 @@ WHERE
 	startsWith(lowerUTF8(toString(t.Id)), 'bc7b6')
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t.Id,
 	t.NullableGuid
@@ -37,7 +33,6 @@ WHERE
 	position(lowerUTF8(toString(t.Id)), '8f4-53') > 0
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t.Id,
 	t.NullableGuid

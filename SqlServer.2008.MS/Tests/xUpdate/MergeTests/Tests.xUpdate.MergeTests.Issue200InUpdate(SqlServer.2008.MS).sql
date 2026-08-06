@@ -1,11 +1,9 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
-
 DELETE [t1]
 FROM
 	[AllTypes2] [t1]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 MERGE INTO [AllTypes2] [Target]
 USING (VALUES
 	(0,CAST('2020-02-29T17:54:55.1231234+00:40' AS DATETIMEOFFSET),CAST('2020-02-29T17:54:55.1231234' AS DATETIME2)),
@@ -63,7 +61,6 @@ SET
 ;
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[t1].[ID],
 	[t1].[datetimeoffsetDataType],

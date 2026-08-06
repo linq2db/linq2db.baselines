@@ -54,7 +54,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"p"."Id",
 	"p"."TargetName",
@@ -66,7 +65,6 @@ WHERE
 	"p"."TargetName" = 'bda.Requests'
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"p"."TargetName",
 	"p"."Id",

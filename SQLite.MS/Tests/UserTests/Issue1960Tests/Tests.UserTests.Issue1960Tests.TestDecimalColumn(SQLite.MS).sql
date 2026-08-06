@@ -20,7 +20,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Decimal1],
 	[t1].[Decimal2],

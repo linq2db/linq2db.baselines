@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[p].[ParentID],
 	[p].[Value1]
@@ -10,7 +9,6 @@ WHERE
 LIMIT 1
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[p].[ParentID],
 	[p].[Value1]

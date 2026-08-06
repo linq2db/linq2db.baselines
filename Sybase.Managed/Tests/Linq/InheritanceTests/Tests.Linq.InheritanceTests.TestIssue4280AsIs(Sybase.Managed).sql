@@ -45,7 +45,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[DeviceType],
 	[t1].[Id],
@@ -92,7 +91,6 @@ WHERE
 	[Issue4280].[Id] = @Id
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[DeviceType],
 	[t1].[Id],

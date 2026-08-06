@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 INSERT INTO [SomeTable]
 (
 	[Id],
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT TOP 2
 	[t1].[Id],
 	[t1].[ClassProp],

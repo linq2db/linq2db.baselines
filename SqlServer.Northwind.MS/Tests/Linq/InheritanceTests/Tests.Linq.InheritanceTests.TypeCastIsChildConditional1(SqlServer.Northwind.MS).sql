@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Northwind.MS SqlServer.2019
-
 SELECT
 	[x].[Discontinued],
 	[x].[ProductID],
@@ -15,7 +14,6 @@ FROM
 	[Products] [x]
 
 -- SqlServer.Northwind.MS SqlServer.2019
-
 SELECT
 	[t1].[Discontinued],
 	[t1].[ProductID],

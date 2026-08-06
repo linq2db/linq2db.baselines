@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 INSERT INTO [Issue1373Tests]
 (
 	[Id],
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 INSERT INTO [Issue1373Tests]
 (
 	[Id],
@@ -25,7 +23,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 INSERT INTO [Issue1373Tests]
 (
 	[Id],
@@ -38,7 +35,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[Field1]

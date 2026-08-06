@@ -1,12 +1,10 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 SELECT
 	COUNT(*)
 FROM
 	[Src] [s]
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	COUNT(*)
 FROM
@@ -15,7 +13,6 @@ WHERE
 	[s].[NullableInt] IS NOT NULL
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	COUNT(*)
 FROM
@@ -24,7 +21,6 @@ WHERE
 	1 = 0
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	COUNT(*)
 FROM

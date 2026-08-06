@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	row1.Id
 FROM
@@ -24,7 +23,6 @@ WHERE
 	startsWith(row1_2.Field1, 'test')
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	row1.Id
 FROM

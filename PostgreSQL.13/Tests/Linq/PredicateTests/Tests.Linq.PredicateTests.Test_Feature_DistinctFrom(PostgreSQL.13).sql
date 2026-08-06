@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
-
+﻿-- PostgreSQL.13 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -7,8 +6,7 @@ FROM
 WHERE
 	r."One" IS DISTINCT FROM r."One"
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -16,8 +14,7 @@ FROM
 WHERE
 	r."Zero" IS DISTINCT FROM r."Zero"
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -25,8 +22,7 @@ FROM
 WHERE
 	r."Null" IS DISTINCT FROM r."Null"
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -34,8 +30,7 @@ FROM
 WHERE
 	r."One" IS DISTINCT FROM r."Zero"
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -43,8 +38,7 @@ FROM
 WHERE
 	r."One" IS DISTINCT FROM r."Null"
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -52,8 +46,7 @@ FROM
 WHERE
 	r."Zero" IS DISTINCT FROM r."Null"
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -61,8 +54,7 @@ FROM
 WHERE
 	r."One" IS NOT DISTINCT FROM r."One"
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -70,8 +62,7 @@ FROM
 WHERE
 	r."Zero" IS NOT DISTINCT FROM r."Zero"
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -79,8 +70,7 @@ FROM
 WHERE
 	r."Null" IS NOT DISTINCT FROM r."Null"
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -88,8 +78,7 @@ FROM
 WHERE
 	r."One" IS NOT DISTINCT FROM r."Zero"
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -97,8 +86,7 @@ FROM
 WHERE
 	r."One" IS NOT DISTINCT FROM r."Null"
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM

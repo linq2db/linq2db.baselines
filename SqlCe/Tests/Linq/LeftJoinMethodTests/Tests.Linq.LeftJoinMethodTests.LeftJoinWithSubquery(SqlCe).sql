@@ -4,7 +4,7 @@ SET     @take = 10
 
 SELECT
 	[c_2].[Id],
-	[o].[Id] as [OrderId]
+	[o].[Id] as [OrderId_1]
 FROM
 	(
 		SELECT TOP (@take)
@@ -17,7 +17,6 @@ FROM
 		LEFT JOIN [Order] [o] ON [c_2].[Id] = [o].[CustomerId]
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Name]
@@ -25,7 +24,6 @@ FROM
 	[Customer] [t1]
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[CustomerId],

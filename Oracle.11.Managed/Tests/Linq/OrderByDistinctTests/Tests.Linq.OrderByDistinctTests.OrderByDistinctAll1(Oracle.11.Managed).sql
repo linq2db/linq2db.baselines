@@ -39,7 +39,6 @@ WHERE
 	t2.RN > :skip
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."FirstName",
 	t1."PersonID",

@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	t.Str,
 	lengthUTF8(t.Str)

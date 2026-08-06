@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Field1`,
@@ -10,7 +9,6 @@ FROM
 		LEFT JOIN `TestEntity2` `t2` ON `t1`.`Id` = `t2`.`Id`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Field1`,
@@ -23,7 +21,6 @@ WHERE
 	`t1`.`Id` IS NULL
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Field1`,

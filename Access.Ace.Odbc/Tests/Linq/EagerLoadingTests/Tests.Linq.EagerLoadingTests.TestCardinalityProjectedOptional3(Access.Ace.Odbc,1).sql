@@ -1,10 +1,9 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[e].[Id],
-	[a_ObjectBOptional].[Id],
-	[a_ObjectBOptional].[Id],
-	[a_ObjectCRequired].[Id],
+	[a_ObjectBOptional].[Id] as [Id_1],
+	[a_ObjectBOptional].[Id] as [Id_2],
+	[a_ObjectCRequired].[Id] as [Id_3],
 	[a_ObjectCRequired].[FK]
 FROM
 	([EntityA] [e]

@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	toDecimal128('6579.64648', 10)
 FROM
@@ -7,7 +6,6 @@ FROM
 LIMIT 1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	toDecimal128(toFloat32(6579.64648), 10)
 FROM
@@ -15,7 +13,6 @@ FROM
 LIMIT 1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	toDecimal128(toFloat64(6579.6464800000003), 10)
 FROM
@@ -23,7 +20,6 @@ FROM
 LIMIT 1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	toFloat32(toDecimal128('6579.64648', 10))
 FROM
@@ -31,7 +27,6 @@ FROM
 LIMIT 1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	toFloat32(6579.64648)
 FROM
@@ -39,7 +34,6 @@ FROM
 LIMIT 1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	toFloat32(toFloat64(6579.6464800000003))
 FROM
@@ -47,7 +41,6 @@ FROM
 LIMIT 1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	toFloat64(toDecimal128('6579.64648', 10))
 FROM
@@ -55,7 +48,6 @@ FROM
 LIMIT 1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	toFloat64(toFloat32(6579.64648))
 FROM
@@ -63,7 +55,6 @@ FROM
 LIMIT 1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	toFloat64(6579.6464800000003)
 FROM

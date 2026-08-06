@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[pmp1].[ChildID]
 FROM
@@ -12,7 +11,6 @@ FROM
 		CROSS JOIN [Child] [pmp1]
 
 -- SqlCe
-
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID]

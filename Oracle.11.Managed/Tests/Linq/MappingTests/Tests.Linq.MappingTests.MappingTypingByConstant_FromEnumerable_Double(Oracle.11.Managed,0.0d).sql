@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	arg."Id",
 	arg."Value"
@@ -9,7 +8,6 @@ FROM
 			SELECT 1 AS "Id", 0D AS "Value" FROM sys.dual) arg ON entity."PersonID" = arg."Id"
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	arg."Id",
 	arg."Value"

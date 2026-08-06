@@ -1,9 +1,8 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[m_1].[ID],
 	[m_1].[ValS],
-	[d].[ID],
+	[d].[ID] as [Id_1],
 	[d].[ValB],
 	[d].[ValInt]
 FROM
@@ -11,7 +10,6 @@ FROM
 		INNER JOIN [Issue3757Level2] [d] ON ([m_1].[ID] = [d].[ParentId])
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[l1].[ID],
 	[l1].[ValB],

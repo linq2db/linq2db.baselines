@@ -1,26 +1,22 @@
 ﻿-- SQLite.MS SQLite
-
 DELETE FROM
 	[GrandChild]
 WHERE
 	[GrandChild].[ParentID] >= 1000
 
 -- SQLite.MS SQLite
-
 DELETE FROM
 	[Child]
 WHERE
 	[Child].[ParentID] >= 1000
 
 -- SQLite.MS SQLite
-
 DELETE FROM
 	[Parent]
 WHERE
 	[Parent].[ParentID] >= 1000
 
 -- SQLite.MS SQLite
-
 INSERT INTO [Parent]
 (
 	[ParentID]
@@ -31,7 +27,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 INSERT INTO [Child]
 (
 	[ParentID],
@@ -44,7 +39,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 INSERT INTO [GrandChild]
 (
 	[ParentID],
@@ -59,7 +53,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 INSERT INTO [GrandChild]
 (
 	[ParentID],
@@ -74,7 +67,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 DELETE FROM
 	[GrandChild]
 WHERE
@@ -94,21 +86,18 @@ WHERE
 	)
 
 -- SQLite.MS SQLite
-
 DELETE FROM
 	[GrandChild]
 WHERE
 	[GrandChild].[ParentID] >= 1000
 
 -- SQLite.MS SQLite
-
 DELETE FROM
 	[Child]
 WHERE
 	[Child].[ParentID] >= 1000
 
 -- SQLite.MS SQLite
-
 DELETE FROM
 	[Parent]
 WHERE

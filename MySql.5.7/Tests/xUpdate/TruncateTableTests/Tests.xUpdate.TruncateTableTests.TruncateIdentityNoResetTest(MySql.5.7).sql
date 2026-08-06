@@ -1,9 +1,7 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 DELETE FROM `test_temp`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 INSERT INTO `test_temp`
 (
 	`Field1`
@@ -14,7 +12,6 @@ VALUES
 )
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 INSERT INTO `test_temp`
 (
 	`Field1`
@@ -38,11 +35,9 @@ ORDER BY
 LIMIT @skip, 2
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 DELETE FROM `test_temp`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 INSERT INTO `test_temp`
 (
 	`Field1`
@@ -53,7 +48,6 @@ VALUES
 )
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 INSERT INTO `test_temp`
 (
 	`Field1`

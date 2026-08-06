@@ -1,10 +1,9 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t.ID,
 	t.IntValue
 FROM
-	LinqDataTypes t
+	TestTable5 t
 WHERE
 	bitAnd(t.IntValue, 1) <> 0
 

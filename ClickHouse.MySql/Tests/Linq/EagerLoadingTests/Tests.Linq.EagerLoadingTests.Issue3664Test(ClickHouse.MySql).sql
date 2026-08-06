@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 INSERT INTO Test3664
 (
 	Id
@@ -10,7 +9,6 @@ VALUES
 )
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	m_1.Id,
 	d.Id,
@@ -22,14 +20,12 @@ WHERE
 	d.Id = 11
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.Id
 FROM
 	Test3664 t1
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	m_1.Id,
 	d.Id,
@@ -41,7 +37,6 @@ WHERE
 	d.Id = 12
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.Id
 FROM

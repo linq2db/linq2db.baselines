@@ -1,9 +1,8 @@
 ﻿-- SqlCe
-
 SELECT
 	[ch_1].[ChildID],
 	[ch_1].[ParentID],
-	[a_Parent_1].[Value1] as [ParentValue]
+	[a_Parent_1].[Value1]
 FROM
 	(
 		SELECT DISTINCT
@@ -18,7 +17,6 @@ FROM
 		LEFT JOIN [Parent] [a_Parent_1] ON [ch_1].[ParentID] = [a_Parent_1].[ParentID]
 
 -- SqlCe
-
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID],

@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT TOP 5
 	[t1].[ParentID],
 	[t1].[Value1]

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025
-
 SELECT
 	[t].[Value1] || [t].[Value2] || [t].[Value3]
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	[t].[ID]
 
 -- SqlServer.2025
-
 SELECT
 	[t1].[ID],
 	[t1].[Value1],

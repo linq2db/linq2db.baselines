@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[r_1].[Diagnosis],
 	[a_Person].[FirstName]

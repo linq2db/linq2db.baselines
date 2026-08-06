@@ -49,7 +49,6 @@ VALUES
 )
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT @@IDENTITY
 
 -- Access.Ace.OleDb AccessOleDb
@@ -78,18 +77,15 @@ VALUES
 )
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT @@IDENTITY
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	COUNT(*)
 FROM
 	[xxPerson] [t1]
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	COUNT(*)
 FROM

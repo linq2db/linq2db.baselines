@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
-
+﻿-- PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."ID",
 	t1."bigintDataType",
@@ -43,8 +42,7 @@ SELECT
 FROM
 	"TestTableFunctionSchema"() t1
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."ID",
 	t1."bigintDataType",
@@ -90,8 +88,7 @@ FROM
 ORDER BY
 	t1."ID"
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."ID",
 	t1."bigintDataType",

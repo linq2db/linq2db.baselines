@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	IIF([g_3].[Sum_1] IS NULL, 0, [g_3].[Sum_1])
 FROM

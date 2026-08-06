@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 INSERT INTO Topic
 (
 	Id,
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	m_1.Id,
 	d.Id
@@ -31,7 +29,6 @@ FROM
 		INNER JOIN Message d ON m_1.Id = d.TopicId
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	x.Id,
 	x.Title,

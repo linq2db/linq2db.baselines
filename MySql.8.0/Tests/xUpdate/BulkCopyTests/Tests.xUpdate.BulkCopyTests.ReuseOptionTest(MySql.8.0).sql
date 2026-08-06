@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 INSERT INTO `Parent`
 (
 	`ParentID`,
@@ -9,7 +8,6 @@ VALUES
 (111001,NULL)
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 INSERT INTO `Child`
 (
 	`ParentID`,

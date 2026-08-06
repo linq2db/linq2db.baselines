@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	"x_1"."Id",
 	"x_1"."StatusName"

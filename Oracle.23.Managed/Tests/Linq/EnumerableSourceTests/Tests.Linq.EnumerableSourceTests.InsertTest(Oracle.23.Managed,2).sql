@@ -1,5 +1,4 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 INSERT INTO "TableToInsert"
 (
 	"Id",
@@ -18,7 +17,6 @@ WHERE
 	t."Id" IS NULL
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 INSERT INTO "TableToInsert"
 (
 	"Id",

@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`m_1`.`Id`,
 	`m_1`.`Id`,
@@ -25,7 +24,6 @@ ORDER BY
 	`m_1`.`Id_1`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`m_1`.`LINE_ID`,
 	`d`.`LINE_ID`,
@@ -40,7 +38,6 @@ ORDER BY
 	`m_1`.`LINE_ID`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t1`.`LINE_ID`,
 	`t1`.`LINE_ID`

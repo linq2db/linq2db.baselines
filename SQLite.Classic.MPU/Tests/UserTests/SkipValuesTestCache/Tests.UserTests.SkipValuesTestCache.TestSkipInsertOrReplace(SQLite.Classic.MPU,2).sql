@@ -23,7 +23,6 @@ ON CONFLICT ([Id]) DO UPDATE SET
 	[Age] = @Age
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t].[Id],
 	[t].[Name],
@@ -59,7 +58,6 @@ ON CONFLICT ([Id]) DO UPDATE SET
 	[Age] = @Age
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t].[Id],
 	[t].[Name],

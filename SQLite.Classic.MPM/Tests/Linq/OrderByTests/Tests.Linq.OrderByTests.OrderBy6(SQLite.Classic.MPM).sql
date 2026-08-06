@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[person_1].[PersonID],
 	[patient_1].[PersonID]

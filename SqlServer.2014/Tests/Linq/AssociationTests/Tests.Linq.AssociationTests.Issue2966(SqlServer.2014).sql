@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014
-
 SELECT
 	[r_1].[Diagnosis],
 	[a_Person].[FirstName]

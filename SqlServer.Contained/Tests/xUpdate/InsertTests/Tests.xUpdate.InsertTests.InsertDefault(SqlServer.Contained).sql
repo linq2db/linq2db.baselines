@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 INSERT INTO [Person]
 (
 	[FirstName],
@@ -16,7 +15,6 @@ VALUES
 )
 
 -- SqlServer.Contained SqlServer.2019
-
 DELETE [p]
 FROM
 	[Person] [p]

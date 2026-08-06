@@ -24,7 +24,6 @@ VALUES
 )
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT @@IDENTITY
 
 -- Access.Jet.OleDb AccessOleDb
@@ -53,7 +52,6 @@ VALUES
 )
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT @@IDENTITY
 
 -- Access.Jet.OleDb AccessOleDb

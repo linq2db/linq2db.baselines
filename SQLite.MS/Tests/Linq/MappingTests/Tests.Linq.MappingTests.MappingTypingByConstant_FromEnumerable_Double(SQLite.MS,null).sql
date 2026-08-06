@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[arg].[Id],
 	[arg].[Value]
@@ -13,7 +12,6 @@ FROM
 			) [arg] ON [entity].[PersonID] = [arg].[Id]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[arg].[Id],
 	[arg].[Value]

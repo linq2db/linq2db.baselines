@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	CASE
 		WHEN "p"."Value1" IS NULL THEN (

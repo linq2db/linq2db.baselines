@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[tp12].[Id],
 	[tp12].[ResourceID],

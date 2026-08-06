@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 MERGE INTO "Person" "Target"
 USING (
 	SELECT
@@ -27,7 +26,6 @@ SET
 	"MiddleName" = 'R.I.P.'
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."FirstName",
 	"t1"."PersonID",

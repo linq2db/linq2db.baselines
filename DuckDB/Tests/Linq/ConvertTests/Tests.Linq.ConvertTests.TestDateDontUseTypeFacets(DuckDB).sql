@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	g_2.Date_1,
 	COUNT(*)
@@ -14,7 +13,6 @@ GROUP BY
 	g_2.Date_1
 
 -- DuckDB
-
 SELECT
 	t1.CreatedOnUtc
 FROM

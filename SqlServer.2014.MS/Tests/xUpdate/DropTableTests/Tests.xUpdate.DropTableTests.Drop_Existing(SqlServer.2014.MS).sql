@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [Table]
 (
 	[ID] Int NOT NULL,
@@ -8,6 +7,5 @@ CREATE TABLE [Table]
 )
 
 -- SqlServer.2014.MS SqlServer.2014
-
 DROP TABLE [Table]
 

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Northwind.MS SqlServer.2019
-
 SELECT
 	CASE
 		WHEN [p].[Discontinued] = 0 THEN N'NULL'

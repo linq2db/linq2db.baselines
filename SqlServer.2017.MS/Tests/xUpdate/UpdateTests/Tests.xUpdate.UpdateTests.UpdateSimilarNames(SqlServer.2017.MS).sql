@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
-
 INSERT INTO [Parent]
 (
 	[ParentID],
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- SqlServer.2017.MS SqlServer.2017
-
 INSERT INTO [Child]
 (
 	[ChildID],

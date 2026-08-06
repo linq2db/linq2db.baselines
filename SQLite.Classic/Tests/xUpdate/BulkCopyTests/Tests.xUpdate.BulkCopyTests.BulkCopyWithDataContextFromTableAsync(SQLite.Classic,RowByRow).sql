@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 INSERT INTO [SimpleBulkCopyTable]
 (
 	[Id]
@@ -8,7 +7,6 @@ VALUES
 (1)
 
 -- SQLite.Classic SQLite
-
 INSERT INTO [SimpleBulkCopyTable]
 (
 	[Id]
@@ -30,7 +28,6 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-
 INSERT INTO [SimpleBulkCopyTable]
 (
 	[Id]
@@ -39,7 +36,6 @@ VALUES
 (10)
 
 -- SQLite.Classic SQLite
-
 INSERT INTO [SimpleBulkCopyTable]
 (
 	[Id]

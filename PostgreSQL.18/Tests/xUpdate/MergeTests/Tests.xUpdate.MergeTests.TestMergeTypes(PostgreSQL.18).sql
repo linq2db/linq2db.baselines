@@ -1,14 +1,12 @@
-﻿-- PostgreSQL.18 PostgreSQL
-
+﻿-- PostgreSQL.18 PostgreSQL12
 DELETE FROM
 	"TestMerge1" t1
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 DELETE FROM
 	"TestMerge2" t1
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @FieldInt32 Integer -- Int32
@@ -93,7 +91,7 @@ VALUES
 	:FieldEnumNumber
 )
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @FieldInt32 Integer -- Int32
@@ -178,7 +176,7 @@ VALUES
 	:FieldEnumNumber
 )
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 3
 DECLARE @FieldInt32 Integer -- Int32
@@ -265,7 +263,7 @@ VALUES
 	:FieldEnumNumber
 )
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 4
 DECLARE @FieldInt32 Integer -- Int32
@@ -351,7 +349,7 @@ VALUES
 	:FieldEnumNumber
 )
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 3
 DECLARE @FieldInt32 Integer -- Int32
@@ -436,7 +434,7 @@ VALUES
 	:FieldEnumNumber
 )
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 4
 DECLARE @FieldInt32 Integer -- Int32
@@ -523,7 +521,7 @@ VALUES
 	:FieldEnumNumber
 )
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 5
 DECLARE @FieldInt32 Integer -- Int32
@@ -608,7 +606,7 @@ VALUES
 	:FieldEnumNumber
 )
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 6
 DECLARE @FieldInt32 Integer -- Int32
@@ -695,8 +693,7 @@ VALUES
 	:FieldEnumNumber
 )
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Field1",
@@ -722,8 +719,7 @@ FROM
 ORDER BY
 	t1."Id"
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Field1",

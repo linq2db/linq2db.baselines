@@ -24,7 +24,6 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT @@IDENTITY
 
 -- SqlCe
@@ -53,7 +52,6 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT @@IDENTITY
 
 -- SqlCe
@@ -61,7 +59,7 @@ DECLARE @id1 Int -- Int32
 SET     @id1 = 5
 
 SELECT TOP (1)
-	[t1].[PersonID] as [ID],
+	[t1].[PersonID],
 	[t1].[Gender],
 	[t1].[FirstName],
 	[t1].[MiddleName],
@@ -76,7 +74,7 @@ DECLARE @id2 Int -- Int32
 SET     @id2 = 6
 
 SELECT TOP (1)
-	[t1].[PersonID] as [ID],
+	[t1].[PersonID],
 	[t1].[Gender],
 	[t1].[FirstName],
 	[t1].[MiddleName],

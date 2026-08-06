@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	r.Id,
 	r.Value1,
@@ -17,7 +16,6 @@ WHERE
 	)
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value1,
@@ -28,7 +26,6 @@ FROM
 	BooleanTable t1
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	r.Id,
 	r.Value1,
@@ -46,7 +43,6 @@ WHERE
 	)
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value1,
@@ -57,7 +53,6 @@ FROM
 	BooleanTable t1
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	r.Id,
 	r.Value1,
@@ -75,7 +70,6 @@ WHERE
 	)
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value1,
@@ -86,7 +80,6 @@ FROM
 	BooleanTable t1
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	r.Id,
 	r.Value1,
@@ -109,10 +102,11 @@ WHERE
 			r_2.Value4
 		FROM
 			BooleanTable r_2
+		WHERE
+			r_2.Value4 IS NOT NULL
 	)
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value1,
@@ -123,7 +117,6 @@ FROM
 	BooleanTable t1
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	r.Id,
 	r.Value1,
@@ -141,7 +134,6 @@ WHERE
 	)
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value1,
@@ -152,7 +144,6 @@ FROM
 	BooleanTable t1
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	r.Id,
 	r.Value1,
@@ -170,7 +161,6 @@ WHERE
 	)
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value1,
@@ -181,7 +171,6 @@ FROM
 	BooleanTable t1
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	r.Id,
 	r.Value1,
@@ -199,7 +188,6 @@ WHERE
 	)
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value1,
@@ -210,7 +198,6 @@ FROM
 	BooleanTable t1
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	r.Id,
 	r.Value1,
@@ -232,10 +219,11 @@ WHERE
 			r_2.Value4
 		FROM
 			BooleanTable r_2
+		WHERE
+			r_2.Value4 IS NOT NULL
 	))
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value1,

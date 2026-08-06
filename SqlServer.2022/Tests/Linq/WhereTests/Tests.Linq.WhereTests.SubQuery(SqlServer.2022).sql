@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 SELECT
 	([t].[ParentID] * 1000) / 1000
 FROM

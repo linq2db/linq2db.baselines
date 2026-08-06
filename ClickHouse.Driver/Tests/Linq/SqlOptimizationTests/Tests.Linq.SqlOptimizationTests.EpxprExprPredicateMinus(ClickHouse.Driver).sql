@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	t.Id,
 	t.IntValue,
@@ -10,7 +9,6 @@ WHERE
 	t.Id > 6
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t.Id,
 	t.IntValue,
@@ -21,7 +19,6 @@ WHERE
 	5 < t.Id - 1
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t.Id,
 	t.IntValue,
@@ -32,7 +29,6 @@ WHERE
 	2 > t.Id
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t.Id,
 	t.IntValue,

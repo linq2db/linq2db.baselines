@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	[g_1].[Id],
 	SUM(Coalesce(CAST([a_Values].[Value] AS Int), 0))
@@ -10,7 +9,6 @@ GROUP BY
 	[g_1].[Id]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -22,7 +20,6 @@ FROM
 		INNER JOIN [ItemValue] [d] ON [m_1].[Id] = [d].[ItemId]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Name]

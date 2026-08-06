@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[m_1].[BookId],
 	[a_Author].[AuthorId],
@@ -37,7 +36,6 @@ FROM
 		LEFT JOIN [Author] [a_Author] ON [d].[FkAuthorId] = [a_Author].[AuthorId]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[m_1].[c1],
 	[d_1].[AuthorId],
@@ -83,7 +81,6 @@ FROM
 		) [d_1]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[t3].[BookType],
 	CASE
@@ -118,7 +115,6 @@ FROM
 	) [t3]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[m_1].[BookId],
 	[m_1].[AuthorId],
@@ -138,7 +134,6 @@ FROM
 		LEFT JOIN [Author] [a_Author] ON [d_1].[FkAuthorId] = [a_Author].[AuthorId]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[m_1].[AuthorId],
 	[a_Book].[BookId],
@@ -152,7 +147,6 @@ FROM
 		LEFT JOIN [Book] [a_Book] ON [d].[FkBookId] = [a_Book].[BookId]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[t1].[AuthorId],
 	[t1].[AuthorName]

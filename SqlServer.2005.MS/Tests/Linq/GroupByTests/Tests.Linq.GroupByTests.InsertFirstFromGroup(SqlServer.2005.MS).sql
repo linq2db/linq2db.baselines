@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
-
 CREATE TABLE [temp_table_1]
 (
 	[ID]    Int            NOT NULL,
@@ -9,7 +8,6 @@ CREATE TABLE [temp_table_1]
 )
 
 -- SqlServer.2005.MS SqlServer.2005
-
 INSERT INTO [temp_table_1]
 (
 	[ID],
@@ -18,7 +16,6 @@ INSERT INTO [temp_table_1]
 SELECT 1,N'Value'
 
 -- SqlServer.2005.MS SqlServer.2005
-
 CREATE TABLE [temp_table_2]
 (
 	[Value] NVarChar(50) NOT NULL,
@@ -27,7 +24,6 @@ CREATE TABLE [temp_table_2]
 )
 
 -- SqlServer.2005.MS SqlServer.2005
-
 INSERT INTO [temp_table_2]
 (
 	[Value]
@@ -46,12 +42,10 @@ FROM
 		) [t1]
 
 -- SqlServer.2005.MS SqlServer.2005
-
 IF (OBJECT_ID(N'[temp_table_2]', N'U') IS NOT NULL)
 	DROP TABLE [temp_table_2]
 
 -- SqlServer.2005.MS SqlServer.2005
-
 IF (OBJECT_ID(N'[temp_table_1]', N'U') IS NOT NULL)
 	DROP TABLE [temp_table_1]
 

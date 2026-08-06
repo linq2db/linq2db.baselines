@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	p.FirstName,
 	p.PersonID,
@@ -9,6 +8,6 @@ SELECT
 FROM
 	Person p
 WHERE
-	concat(rightPadUTF8(p.FirstName, toUInt32(6), '*'), '123') = 'John**123' AND
+	(concat(rightPadUTF8(p.FirstName, toUInt32(6), '*'), '123')) = 'John**123' AND
 	p.PersonID = 1
 

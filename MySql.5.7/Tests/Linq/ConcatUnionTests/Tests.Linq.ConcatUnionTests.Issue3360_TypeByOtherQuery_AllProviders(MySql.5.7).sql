@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`p`.`Id`,
 	`p`.`Str`
@@ -13,7 +12,6 @@ FROM
 	`Issue3360Table` `p_1`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`p`.`Id`,
 	CAST('str' AS CHAR(255))

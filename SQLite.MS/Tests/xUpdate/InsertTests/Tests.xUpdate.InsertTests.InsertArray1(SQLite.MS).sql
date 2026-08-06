@@ -1,12 +1,10 @@
 ﻿-- SQLite.MS SQLite
-
 DELETE FROM
 	[LinqDataTypes]
 WHERE
 	[LinqDataTypes].[ID] > 1000
 
 -- SQLite.MS SQLite
-
 INSERT INTO [LinqDataTypes]
 (
 	[ID],
@@ -21,7 +19,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t].[ID],
 	[t].[MoneyValue],
@@ -37,7 +34,6 @@ WHERE
 LIMIT 2
 
 -- SQLite.MS SQLite
-
 DELETE FROM
 	[LinqDataTypes]
 WHERE

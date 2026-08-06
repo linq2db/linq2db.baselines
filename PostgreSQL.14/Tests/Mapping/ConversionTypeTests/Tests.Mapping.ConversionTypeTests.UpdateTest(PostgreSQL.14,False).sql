@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DECLARE @Data Text(9) -- String
 SET     @Data = '***III***'
 DECLARE @ID Integer -- Int32
@@ -11,7 +11,7 @@ SET
 WHERE
 	"TrimTestTable"."ID" = :ID
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DECLARE @Data Text(9) -- String
 SET     @Data = '***OOO***'
 
@@ -22,7 +22,7 @@ SET
 WHERE
 	"TrimTestTable"."Data" = '***XXX***'
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DECLARE @Data Text(9) -- String
 SET     @Data = '***SSS***'
 DECLARE @p Text(9) -- String
@@ -35,8 +35,7 @@ SET
 WHERE
 	"TrimTestTable"."Data" = :p
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	r."ID",
 	r."Data"
@@ -45,8 +44,7 @@ FROM
 ORDER BY
 	r."ID"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	r."ID",
 	r."Data"

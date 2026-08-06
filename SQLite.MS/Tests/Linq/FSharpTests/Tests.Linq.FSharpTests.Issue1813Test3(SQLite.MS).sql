@@ -50,7 +50,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	[after_1].[Id],
 	[after_1].[Name],

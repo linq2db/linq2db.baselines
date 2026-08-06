@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 DELETE FROM
 	LinqDataTypes
 WHERE
@@ -17,11 +16,10 @@ INSERT INTO LinqDataTypes
 VALUES
 (
 	1001,
-	@tt::BigInt
+	@tt
 )
 
 -- Informix.DB2 Informix
-
 SELECT FIRST 1
 	t.ID,
 	t.BigIntValue
@@ -31,7 +29,6 @@ WHERE
 	t.ID = 1001
 
 -- Informix.DB2 Informix
-
 DELETE FROM
 	LinqDataTypes
 WHERE

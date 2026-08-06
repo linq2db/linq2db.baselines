@@ -1,6 +1,6 @@
 ﻿-- Informix.DB2 Informix
 DECLARE @p Integer(4) -- Int32
-SET     @p = 102
+SET     @p = 103
 
 DELETE FROM
 	LinqDataTypes
@@ -8,7 +8,6 @@ WHERE
 	LinqDataTypes.ID >= 101 AND LinqDataTypes.ID < @p
 
 -- Informix.DB2 Informix
-
 INSERT INTO LinqDataTypes
 (
 	ID,
@@ -30,7 +29,7 @@ INSERT INTO LinqDataTypes
 	BigIntValue
 )
 SELECT
-	r.ID,
+	r.ID + 1,
 	@param::BigInt
 FROM
 	LinqDataTypes r
@@ -38,17 +37,16 @@ WHERE
 	r.ID = 101 AND r.BigIntValue = 12
 
 -- Informix.DB2 Informix
-
 SELECT
 	COUNT(*)
 FROM
 	LinqDataTypes r
 WHERE
-	r.ID = 101 AND r.BigIntValue = 11
+	r.ID = 102 AND r.BigIntValue = 11
 
 -- Informix.DB2 Informix
 DECLARE @p Integer(4) -- Int32
-SET     @p = 102
+SET     @p = 103
 
 DELETE FROM
 	LinqDataTypes

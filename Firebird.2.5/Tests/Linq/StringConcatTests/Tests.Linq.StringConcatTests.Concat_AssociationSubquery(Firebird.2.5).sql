@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	"p"."Id",
 	Coalesce((
@@ -23,7 +22,6 @@ ORDER BY
 	"p"."Id"
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"m_1"."Id",
 	"d"."Id",
@@ -34,7 +32,6 @@ FROM
 		INNER JOIN "ConcatChild" "d" ON "m_1"."Id" = "d"."ParentId"
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1"."Id",
 	"t1"."Name"

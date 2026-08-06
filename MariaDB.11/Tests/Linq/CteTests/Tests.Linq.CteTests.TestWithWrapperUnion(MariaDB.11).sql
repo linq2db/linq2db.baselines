@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 WITH `CTE_1`
 (
 	`Child_ParentID`,
@@ -38,7 +37,6 @@ FROM
 	`CTE_1` `t1`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 WITH `CTE_1`
 (
 	`Child_ParentID`,

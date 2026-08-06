@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 DELETE FROM
 	TableToInsert t1
 WHERE

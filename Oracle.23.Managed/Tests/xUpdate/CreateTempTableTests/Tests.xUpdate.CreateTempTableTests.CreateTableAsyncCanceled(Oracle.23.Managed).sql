@@ -1,5 +1,4 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "TempTable"';
 EXCEPTION
@@ -10,14 +9,12 @@ EXCEPTION
 END;
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	p."ParentID"
 FROM
 	"Parent" p
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE GLOBAL TEMPORARY TABLE "TempTable"
@@ -36,6 +33,5 @@ EXCEPTION
 END;
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 DROP TABLE "TempTable"
 

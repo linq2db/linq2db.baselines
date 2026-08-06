@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	Replace("p"."MoneyValue", ',', '.')
 FROM

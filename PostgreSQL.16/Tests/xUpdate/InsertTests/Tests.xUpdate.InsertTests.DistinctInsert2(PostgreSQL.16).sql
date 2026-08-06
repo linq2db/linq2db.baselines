@@ -1,12 +1,10 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DELETE FROM
 	"LinqDataTypes" c_1
 WHERE
 	c_1."ID" > 1000
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 INSERT INTO "LinqDataTypes"
 (
 	"ID",
@@ -25,8 +23,7 @@ FROM
 			"LinqDataTypes" t1
 	) t2
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DELETE FROM
 	"LinqDataTypes" c_1
 WHERE

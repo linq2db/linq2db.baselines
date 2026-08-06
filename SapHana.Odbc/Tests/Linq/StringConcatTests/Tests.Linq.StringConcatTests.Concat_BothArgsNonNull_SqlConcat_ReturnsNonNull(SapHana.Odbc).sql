@@ -1,14 +1,12 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"e"."Id"
 FROM
 	"ConcatTestEntity" "e"
 WHERE
-	("e"."StrReq" || "e"."StrReq") IS NOT NULL
+	"e"."StrReq" IS NOT NULL
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Str1",

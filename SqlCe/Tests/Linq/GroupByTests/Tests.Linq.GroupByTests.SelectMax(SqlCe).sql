@@ -1,7 +1,6 @@
 ﻿-- SqlCe
-
 SELECT
-	MAX([g_1].[ChildID]) as [Max_1]
+	MAX([g_1].[ChildID])
 FROM
 	[Child] [g_1]
 GROUP BY

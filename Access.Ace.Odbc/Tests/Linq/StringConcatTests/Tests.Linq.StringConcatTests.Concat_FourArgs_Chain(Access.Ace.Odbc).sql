@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[e].[Id]
 FROM
@@ -8,7 +7,6 @@ WHERE
 	(IIF([e].[Str1] IS NULL, '', [e].[Str1]) + ' ' + IIF([e].[StrReq] IS NULL, '', [e].[StrReq]) + '!') = 'John Programmer!'
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Str1],

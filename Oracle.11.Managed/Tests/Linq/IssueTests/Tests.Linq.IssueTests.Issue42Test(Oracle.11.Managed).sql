@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	r.ID,
 	r."MoneyValue",
@@ -17,7 +16,6 @@ WHERE
 	r.ID = 1 AND ROWNUM <= 1
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	r.ID,
 	r."MoneyValue",
@@ -129,7 +127,6 @@ WHERE
 	t1.ID = :ID
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	r.ID,
 	r."MoneyValue",

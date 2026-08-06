@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	serv.Id
 FROM

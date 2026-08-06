@@ -10,7 +10,6 @@ WHERE
 	Coalesce(x.Value1, $Value1) > 10
 
 -- DuckDB
-
 SELECT
 	p.Value1
 FROM

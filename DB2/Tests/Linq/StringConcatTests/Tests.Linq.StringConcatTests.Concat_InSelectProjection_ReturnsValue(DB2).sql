@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	Coalesce("e"."Str1", '') || '/' || Coalesce("e"."StrReq", '')
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	"e"."Id"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Str1",

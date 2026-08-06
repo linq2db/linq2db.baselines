@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 SELECT
 	CASE
 		WHEN "t1"."ParentID" IS NOT NULL THEN "t1"."ChildID"

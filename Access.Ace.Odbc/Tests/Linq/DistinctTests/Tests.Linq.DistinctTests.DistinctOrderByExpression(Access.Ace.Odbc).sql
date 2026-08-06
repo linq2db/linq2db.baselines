@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[MiddleName]
 FROM
@@ -13,7 +12,6 @@ ORDER BY
 	IIF([t1].[MiddleName] IS NULL, '-1', [t1].[MiddleName])
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

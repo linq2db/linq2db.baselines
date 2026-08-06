@@ -28,7 +28,6 @@ VALUES
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	CASE
 		WHEN `t`.`VarCharColumn` IS NOT NULL THEN REGEXP_REPLACE(`t`.`VarCharColumn`, '(?-i)[.+]+$', '')

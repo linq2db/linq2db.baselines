@@ -50,7 +50,6 @@ VALUES
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`m_1`.`Id`,
 	`d`.`Id`,
@@ -62,7 +61,6 @@ ORDER BY
 	`m_1`.`Id`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`after_1`.`Id`,
 	`after_1`.`Name`

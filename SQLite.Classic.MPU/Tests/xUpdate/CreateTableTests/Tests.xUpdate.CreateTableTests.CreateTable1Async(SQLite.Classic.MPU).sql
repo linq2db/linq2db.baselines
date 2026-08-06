@@ -1,9 +1,7 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 DROP TABLE IF EXISTS [TestTable]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 CREATE TABLE [TestTable]
 (
 	[ID]        INTEGER        NOT NULL PRIMARY KEY AUTOINCREMENT,
@@ -13,7 +11,6 @@ CREATE TABLE [TestTable]
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[ID],
 	[t1].[Field1],
@@ -23,6 +20,5 @@ FROM
 	[TestTable] [t1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 DROP TABLE [TestTable]
 

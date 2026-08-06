@@ -25,7 +25,6 @@ WHERE
 	LinqDataTypes.ID = $p
 
 -- DuckDB
-
 SELECT
 	t.ID,
 	t.MoneyValue,

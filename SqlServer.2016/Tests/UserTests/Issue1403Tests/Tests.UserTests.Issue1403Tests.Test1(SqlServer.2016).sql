@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016
-
 INSERT INTO [Issue1403Tests_1]
 (
 	[event_id],
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- SqlServer.2016
-
 SELECT TOP (1)
 	[t1].[event_id],
 	[t1].[event_description]

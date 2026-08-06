@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t`.`Id`,
 	`t`.`Value`
@@ -9,7 +8,6 @@ WHERE
 	`t`.`Value` IS NULL
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t`.`Id`,
 	`t`.`Value`

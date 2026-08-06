@@ -5,10 +5,9 @@ SET     @offset = -1
 UPDATE
 	Issue4963Table t1
 SET
-	Field = (t1.Field::Int + @offset)::SmallInt
+	Field = (t1.Field::Int + @offset::Int)::SmallInt
 
 -- Informix.DB2 Informix
-
 SELECT FIRST 2
 	t1.Id,
 	t1.Field

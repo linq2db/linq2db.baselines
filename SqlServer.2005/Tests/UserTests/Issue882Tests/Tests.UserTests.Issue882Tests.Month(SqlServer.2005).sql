@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 SELECT
 	DatePart(month, [t].[DateTimeValue]) % 7
 FROM

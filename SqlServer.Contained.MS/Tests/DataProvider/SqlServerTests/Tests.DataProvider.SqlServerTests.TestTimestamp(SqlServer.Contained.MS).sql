@@ -1,9 +1,7 @@
 ﻿-- SqlServer.Contained.MS SqlServer.2019
-
 SELECT Cast(1 as timestamp)
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT Cast(1 as rowversion)
 
 -- SqlServer.Contained.MS SqlServer.2019

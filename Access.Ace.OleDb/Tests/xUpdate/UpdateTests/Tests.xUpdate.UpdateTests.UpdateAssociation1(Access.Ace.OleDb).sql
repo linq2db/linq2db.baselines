@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 INSERT INTO [Parent]
 (
 	[ParentID],
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- Access.Ace.OleDb AccessOleDb
-
 INSERT INTO [Child]
 (
 	[ChildID],
@@ -25,7 +23,6 @@ VALUES
 )
 
 -- Access.Ace.OleDb AccessOleDb
-
 UPDATE
 	[Parent] [a_Parent],
 	[Child] [child_1]

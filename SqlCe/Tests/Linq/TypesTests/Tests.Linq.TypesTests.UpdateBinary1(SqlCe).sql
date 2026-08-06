@@ -10,7 +10,6 @@ WHERE
 	[LinqDataTypes].[ID] = 1
 
 -- SqlCe
-
 SELECT
 	[t].[BinaryValue]
 FROM

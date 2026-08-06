@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	"t2"."ReferenceName"
 FROM
@@ -15,7 +14,6 @@ FROM
 		) "t2" ON "g_1"."Id" = "t2"."Id" AND "t2"."rn" = 1
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t1"."Id",
 	"t1"."Name",
@@ -27,7 +25,6 @@ FROM
 		INNER JOIN "Reference" "a_Reference" ON "t1"."ReferenceId" = "a_Reference"."Id"
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t1"."Id",
 	"t1"."Name",

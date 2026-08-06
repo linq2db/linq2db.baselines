@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	arrayStringConcat(groupArray(toString(concat('test:', toString(grp_1.ch)))), ';')
 FROM

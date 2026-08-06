@@ -44,7 +44,6 @@ WHERE
 	[Child].[ChildID] = [c_1].[ChildID]
 
 -- SQLite.MS SQLite
-
 SELECT
 	COUNT(*)
 FROM

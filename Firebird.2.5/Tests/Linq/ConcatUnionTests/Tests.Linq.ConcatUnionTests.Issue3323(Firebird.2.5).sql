@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 INSERT INTO "Issue3323Table"
 (
 	"Id",
@@ -16,7 +15,6 @@ VALUES
 )
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1"."Id",
 	"t1"."Text",

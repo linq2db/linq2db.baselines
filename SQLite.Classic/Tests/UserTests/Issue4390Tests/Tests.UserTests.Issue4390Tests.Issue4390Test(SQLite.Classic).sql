@@ -25,7 +25,6 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-
 SELECT
 	COUNT(*)
 FROM

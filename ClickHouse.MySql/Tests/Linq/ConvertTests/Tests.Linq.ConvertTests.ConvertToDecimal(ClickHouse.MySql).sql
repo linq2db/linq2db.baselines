@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	toDecimal128(p.MoneyValue, 10)
 FROM

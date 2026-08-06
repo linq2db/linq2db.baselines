@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -15,7 +14,6 @@ FROM
 		INNER JOIN [ChildRecord] [d] ON [m_1].[Id] = [d].[ParentId]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -33,7 +31,6 @@ WHERE
 	[d].[IsActive]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id]
 FROM

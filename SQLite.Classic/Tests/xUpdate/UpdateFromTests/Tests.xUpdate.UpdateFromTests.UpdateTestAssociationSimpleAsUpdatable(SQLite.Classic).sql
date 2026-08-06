@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 UPDATE
 	[UpdatedEntities]
 SET
@@ -12,7 +11,6 @@ WHERE
 	[a_Relation].[RelatedValue1] = 11 AND [UpdatedEntities].[RelationId] = [a_Relation].[id]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[v].[Value1],
 	[v].[Value2],

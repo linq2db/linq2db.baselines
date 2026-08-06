@@ -1,12 +1,10 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[i].[Id]
 FROM
 	[Tender] [i]
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Name]
@@ -25,7 +23,6 @@ WHERE
 	[r].[Id] = ?
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT TOP 1
 	[i].[Id]
 FROM

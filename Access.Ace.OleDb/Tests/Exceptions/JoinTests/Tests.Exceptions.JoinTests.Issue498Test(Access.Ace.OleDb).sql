@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[x].[ParentID]
 FROM
@@ -7,7 +6,6 @@ FROM
 		INNER JOIN [Child] [y] ON ([x].[ParentID] = [y].[ParentID])
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT DISTINCT
 	[g_1].[ParentID]
 FROM

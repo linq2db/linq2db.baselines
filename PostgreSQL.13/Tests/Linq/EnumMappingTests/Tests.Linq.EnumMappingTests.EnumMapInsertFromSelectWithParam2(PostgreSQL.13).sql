@@ -1,14 +1,13 @@
-﻿-- PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL12
 DECLARE @p Integer -- Int32
-SET     @p = 102
+SET     @p = 103
 
 DELETE FROM
 	"LinqDataTypes" r
 WHERE
 	r."ID" >= 101 AND r."ID" < :p
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 INSERT INTO "LinqDataTypes"
 (
 	"ID",
@@ -20,7 +19,7 @@ VALUES
 	12
 )
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL12
 DECLARE @param Bigint -- Int64
 SET     @param = 11
 
@@ -30,25 +29,24 @@ INSERT INTO "LinqDataTypes"
 	"BigIntValue"
 )
 SELECT
-	r."ID",
+	r."ID" + 1,
 	:param
 FROM
 	"LinqDataTypes" r
 WHERE
 	r."ID" = 101 AND r."BigIntValue" = 12
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
 	"LinqDataTypes" r
 WHERE
-	r."ID" = 101 AND r."BigIntValue" = 11
+	r."ID" = 102 AND r."BigIntValue" = 11
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL12
 DECLARE @p Integer -- Int32
-SET     @p = 102
+SET     @p = 103
 
 DELETE FROM
 	"LinqDataTypes" r

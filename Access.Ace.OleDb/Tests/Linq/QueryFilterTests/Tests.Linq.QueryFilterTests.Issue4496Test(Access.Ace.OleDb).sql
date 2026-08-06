@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT DISTINCT
 	[x].[ParentID],
 	[x].[ChildID]
@@ -10,7 +9,6 @@ WHERE
 	[x].[ChildID] > 30
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT DISTINCT
 	[x].[ParentID],
 	[x].[ChildID]

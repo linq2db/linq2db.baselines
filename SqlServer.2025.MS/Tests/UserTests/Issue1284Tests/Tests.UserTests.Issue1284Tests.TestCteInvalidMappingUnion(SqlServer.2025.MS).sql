@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
-
 WITH [CTE_1]
 (
 	[entry_FirstName],
@@ -54,7 +53,6 @@ FROM
 	[CTE_1] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT TOP (1)
 	[t1].[FirstName],
 	[t1].[ID],

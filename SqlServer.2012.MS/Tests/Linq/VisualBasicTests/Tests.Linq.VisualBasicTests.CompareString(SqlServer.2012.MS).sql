@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],
@@ -12,7 +11,6 @@ WHERE
 	[p].[FirstName] = N'John'
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],

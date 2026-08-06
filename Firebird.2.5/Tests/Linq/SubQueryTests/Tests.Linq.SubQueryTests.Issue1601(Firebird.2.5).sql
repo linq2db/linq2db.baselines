@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	CASE
 		WHEN "t2"."x" < 0 THEN 9

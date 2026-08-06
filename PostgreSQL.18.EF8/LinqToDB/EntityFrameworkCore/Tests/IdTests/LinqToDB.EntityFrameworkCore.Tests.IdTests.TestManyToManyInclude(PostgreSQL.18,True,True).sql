@@ -1,7 +1,6 @@
 ﻿
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	m_1.id,
 	d.entity_id,
@@ -15,10 +14,7 @@ FROM
 
 
 
-
-
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	t1.id,
 	t1.name

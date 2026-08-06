@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[product_1].[Id],
 	(
@@ -21,7 +20,6 @@ FROM
 	[Product] [product_1]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Name]
@@ -29,7 +27,6 @@ FROM
 	[Product] [t1]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[ProductId],

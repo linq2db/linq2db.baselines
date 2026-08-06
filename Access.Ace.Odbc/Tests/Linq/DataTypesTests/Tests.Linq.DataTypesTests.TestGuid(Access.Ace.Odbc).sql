@@ -29,7 +29,6 @@ WHERE
 	[r].[Column] = ? AND [r].[ColumnNullable] = ?
 
 -- Access.Ace.Odbc AccessODBC
-
 DELETE FROM
 	[GuidTable] [t1]
 
@@ -76,7 +75,6 @@ VALUES
 )
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],
@@ -87,7 +85,6 @@ ORDER BY
 	[t1].[Id]
 
 -- Access.Ace.Odbc AccessODBC
-
 DELETE FROM
 	[GuidTable] [t1]
 
@@ -134,7 +131,6 @@ VALUES
 )
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],
@@ -145,7 +141,6 @@ ORDER BY
 	[t1].[Id]
 
 -- Access.Ace.Odbc AccessODBC
-
 DELETE FROM
 	[GuidTable] [t1]
 
@@ -192,7 +187,6 @@ VALUES
 )
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],

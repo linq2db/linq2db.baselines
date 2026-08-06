@@ -59,10 +59,9 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT
-	[r].[ID] as [Id],
-	[r].[IntValue] as [Value_1]
+	[r].[ID],
+	[r].[IntValue]
 FROM
 	[LinqDataTypes] [r]
 WHERE
@@ -71,11 +70,10 @@ ORDER BY
 	[r].[ID]
 
 -- SqlCe
-
 SELECT
-	[r].[ID] as [Id],
-	[r].[IntValue] as [Int32],
-	[r].[StringValue] as [String]
+	[r].[ID],
+	[r].[IntValue],
+	[r].[StringValue]
 FROM
 	[LinqDataTypes] [r]
 WHERE

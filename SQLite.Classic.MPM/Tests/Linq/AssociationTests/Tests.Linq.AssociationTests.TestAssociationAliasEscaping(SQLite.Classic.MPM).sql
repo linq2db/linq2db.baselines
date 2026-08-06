@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[c_1].[ChildID],
 	[testaLi_asParent].[Value1]

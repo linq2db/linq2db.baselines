@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	p_1.ParentID,
 	p_1.Sum_1

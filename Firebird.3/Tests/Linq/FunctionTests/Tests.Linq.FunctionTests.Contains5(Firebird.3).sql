@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	"p"."ParentID",
 	"p"."Value1"
@@ -9,7 +8,6 @@ WHERE
 	"p"."ParentID" IN (1, 2)
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"p"."ParentID",
 	"p"."Value1"

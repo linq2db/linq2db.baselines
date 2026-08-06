@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t1].[LeftId],
 	[t1].[RightId],
@@ -14,7 +13,6 @@ FROM
 LIMIT 1
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[m_1].[LeftId],
 	[d].[LeftId],
@@ -30,7 +28,6 @@ FROM
 		INNER JOIN [LeftRight] [d] ON [m_1].[LeftId] = [d].[LeftId]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t1].[LeftId],
 	[t1].[LeftData]
@@ -39,7 +36,6 @@ FROM
 LIMIT 1
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[m_1].[RightId],
 	[d].[LeftId],
@@ -55,7 +51,6 @@ FROM
 		INNER JOIN [LeftRight] [d] ON [m_1].[RightId] = [d].[RightId]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t1].[RightId],
 	[t1].[RightData]

@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[i].[Id],
 	[t1].[Reason]

@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	"t"."Id",
 	"t"."Value"
@@ -9,7 +8,6 @@ WHERE
 	"t"."Value" IS NULL
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t"."Id",
 	"t"."Value"

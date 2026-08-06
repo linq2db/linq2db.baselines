@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 INSERT INTO [Parent]
 (
 	[ParentID],
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- SqlServer.2005
-
 INSERT INTO [Child]
 (
 	[ChildID],

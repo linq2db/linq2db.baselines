@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 MERGE INTO "UnusedSourceTable" "Target"
 USING (
 	SELECT 1 AS "Unused"
@@ -23,8 +22,7 @@ VALUES
 	5
 )
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Value"

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 MERGE INTO [Person] [Target]
 USING (
 	SELECT
@@ -28,7 +27,6 @@ SET
 ;
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

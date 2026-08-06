@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[a_Patient].[PersonID],
 	[a_Patient].[Diagnosis]

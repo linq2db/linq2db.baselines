@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
-
+﻿-- PostgreSQL.13 PostgreSQL12
 CREATE TEMPORARY TABLE "NoIdentity"
 (
 	"Id"   uuid NOT NULL,
@@ -15,8 +14,7 @@ INSERT ASYNC BULK "NoIdentity"(Id, Name)
 
 
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Name"
@@ -25,8 +23,7 @@ FROM
 
 
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 DROP TABLE IF EXISTS "NoIdentity"
 
 

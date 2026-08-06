@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	"p"."ParentID",
 	"p"."Value1"
@@ -9,7 +8,6 @@ WHERE
 	"p"."ParentID" = 1
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"m_1"."ParentID",
 	"d"."ParentID",
@@ -31,7 +29,6 @@ FROM
 		INNER JOIN "Child" "d" ON "m_1"."ParentID" = "d"."ParentID"
 
 -- Firebird.2.5 Firebird
-
 SELECT FIRST 2
 	"p"."ParentID",
 	"p"."Value1"

@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[p].[ParentID],
 	[p].[Value1]
@@ -9,7 +8,6 @@ WHERE
 	[p].[ParentID] IN (1, 2)
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[p].[ParentID],
 	[p].[Value1]

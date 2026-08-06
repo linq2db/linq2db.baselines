@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
-
+﻿-- PostgreSQL.18 PostgreSQL12
 SELECT
 	p."ID",
 	p."MoneyValue",
@@ -15,8 +14,7 @@ WHERE
 	p."GuidValue" = '40932fdb-1543-4e4a-ac2c-ca371604fb4b'::uuid
 LIMIT 2
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	p."ID",
 	p."MoneyValue",

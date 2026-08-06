@@ -1,9 +1,8 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[a_Book].[BookId],
 	[a_Book].[Discriminator],
-	[a_Book].[BookId],
+	[a_Book].[BookId] as [BookId_1],
 	[a_Book].[BookName],
 	[a_Book].[NovelScore],
 	[a_Book].[RomanScore]
@@ -17,7 +16,7 @@ UNION ALL
 SELECT
 	[a_Book_1].[BookId],
 	[a_Book_1].[Discriminator],
-	[a_Book_1].[BookId],
+	[a_Book_1].[BookId] as [BookId_1],
 	[a_Book_1].[BookName],
 	[a_Book_1].[NovelScore],
 	[a_Book_1].[RomanScore]
@@ -29,7 +28,6 @@ WHERE
 	[a_Book_1].[Discriminator] = 'Novel'
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[m_1].[AuthorId],
 	[a_Book].[BookId],
@@ -43,7 +41,6 @@ FROM
 		LEFT JOIN [Book] [a_Book] ON ([d].[FkBookId] = [a_Book].[BookId])
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[AuthorId],
 	[t1].[AuthorName]

@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	t2.Converted1,
 	t2.Converted2,

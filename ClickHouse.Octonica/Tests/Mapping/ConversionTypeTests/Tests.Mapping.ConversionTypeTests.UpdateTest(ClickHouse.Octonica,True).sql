@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	TrimTestTable
 UPDATE
@@ -8,7 +7,6 @@ WHERE
 	ID = 3
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	TrimTestTable
 UPDATE
@@ -17,7 +15,6 @@ WHERE
 	Data = '***XXX***'
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	TrimTestTable
 UPDATE
@@ -26,7 +23,6 @@ WHERE
 	Data = '***HHH***'
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.ID,
 	r.Data
@@ -36,7 +32,6 @@ ORDER BY
 	r.ID
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.ID,
 	r.Data

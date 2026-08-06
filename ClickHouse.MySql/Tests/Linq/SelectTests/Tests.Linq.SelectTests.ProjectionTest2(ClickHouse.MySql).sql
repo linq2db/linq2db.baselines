@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	a_Patient.PersonID,
 	a_Patient.Diagnosis

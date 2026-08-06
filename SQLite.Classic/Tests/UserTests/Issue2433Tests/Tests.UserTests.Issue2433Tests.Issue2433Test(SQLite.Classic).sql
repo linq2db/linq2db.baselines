@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 INSERT INTO [InventoryResourceDTO]
 (
 	[Id],

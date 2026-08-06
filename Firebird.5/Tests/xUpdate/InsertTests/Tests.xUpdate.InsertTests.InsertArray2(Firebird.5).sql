@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 DELETE FROM
 	"LinqDataTypes" "t"
 WHERE
@@ -19,11 +18,10 @@ VALUES
 (
 	1001,
 	TRUE,
-	CAST(@arr AS BLOB)
+	@arr
 )
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t".ID,
 	"t"."MoneyValue",
@@ -39,7 +37,6 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 -- Firebird.5 Firebird4
-
 DELETE FROM
 	"LinqDataTypes" "t"
 WHERE

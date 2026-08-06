@@ -169,7 +169,6 @@ VALUES
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 UPDATE
 	`Parent` `x`
 SET
@@ -180,7 +179,6 @@ ORDER BY
 	`x`.`ParentID` DESC
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`r`.`Value1`
 FROM

@@ -15,7 +15,6 @@ WHERE
 	"e"."GuidValue" = ? AND "e"."GuidNullableValue" = ?
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."GuidValue",

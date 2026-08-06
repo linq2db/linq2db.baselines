@@ -1,11 +1,9 @@
 ﻿-- Sybase.Managed Sybase
-
 DELETE FROM [InheritanceParent]
 FROM
 	[InheritanceParent] [t1]
 
 -- Sybase.Managed Sybase
-
 MERGE INTO [InheritanceParent] [Target]
 USING (
 	SELECT 143 AS [Key1], CAST(NULL AS NVarChar(255)) AS [Key2], 1 AS [Data_1]) [Source]
@@ -37,14 +35,12 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT
 	COUNT(*)
 FROM
 	[InheritanceParent] [t1]
 
 -- Sybase.Managed Sybase
-
 MERGE INTO [InheritanceParent] [Target]
 USING (
 	SELECT 143 AS [Key1], CAST(NULL AS NVarChar(255)) AS [Key2], 1 AS [Data_1]) [Source]
@@ -76,7 +72,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT
 	COUNT(*)
 FROM

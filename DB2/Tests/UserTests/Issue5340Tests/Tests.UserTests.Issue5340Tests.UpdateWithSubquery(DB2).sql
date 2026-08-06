@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 UPDATE
 	"OuterTable" "t1"
 SET
@@ -16,7 +15,6 @@ SET
 	)
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Field1",

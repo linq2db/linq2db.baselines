@@ -74,13 +74,11 @@ VALUES
 )
 
 -- SqlServer.2005
-
 SELECT
 	MAX([t1].[PersonID])
 FROM
 	[Person] [t1]
 
 -- SqlServer.2005
-
 SELECT Max([PersonID]) FROM [Person]
 

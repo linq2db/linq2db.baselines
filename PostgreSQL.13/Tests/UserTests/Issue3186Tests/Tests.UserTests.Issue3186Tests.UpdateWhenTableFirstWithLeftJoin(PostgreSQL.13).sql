@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL12
 DECLARE @is_deleted Boolean
 SET     @is_deleted = True
 
@@ -13,8 +13,7 @@ FROM
 WHERE
 	sr.id = 'TestProcessService' AND component_categories.id = ct.id
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	x.id,
 	x.service_id,
@@ -24,8 +23,7 @@ FROM
 WHERE
 	x.is_deleted AND x.service_id = 'TestProcessService'
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	x.id,
 	x.service_id,

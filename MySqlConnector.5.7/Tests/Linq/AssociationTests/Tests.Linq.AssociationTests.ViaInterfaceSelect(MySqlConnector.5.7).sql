@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`m_1`.`Id`,
 	`d`.`Id`,
@@ -9,7 +8,6 @@ FROM
 		INNER JOIN `SubEntity` `d` ON `m_1`.`Id` = `d`.`MainEntityId`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`x`.`Id`
 FROM

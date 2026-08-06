@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT DISTINCT
 	c2.ParentID
 FROM

@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SET GLOBAL local_infile=ON
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -3065,7 +3064,6 @@ VALUES
 (3999,4999,111,6999,7999,8999,9999,9799,8699,'2020-02-29','2020-02-29 17:54:55','2020-02-29 17:54:55',@p500,'A','_btest','test',0x060F04,0x7B16,0x010203,7,'Green','one',5999,99)
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	COUNT(*)
 FROM
@@ -3112,7 +3110,6 @@ ORDER BY
 LIMIT @take
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 DELETE  
 FROM
 	`AllTypes`
@@ -3120,7 +3117,6 @@ WHERE
 	`AllTypes`.`varcharDataType` = '_btest'
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 DELETE  
 FROM
 	`AllTypesNoYear`

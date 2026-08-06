@@ -42,7 +42,6 @@ ORDER BY
 	"t1"."PersonID"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."PersonID",
 	"t1"."Diagnosis"
@@ -50,7 +49,6 @@ FROM
 	"Patient" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."FirstName",
 	"t1"."PersonID",

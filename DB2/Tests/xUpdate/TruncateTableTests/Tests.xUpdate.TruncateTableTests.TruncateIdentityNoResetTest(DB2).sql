@@ -1,9 +1,7 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 TRUNCATE TABLE "test_temp" IMMEDIATE
 
 -- DB2 DB2.LUW DB2LUW
-
 INSERT INTO "test_temp"
 (
 	"Field1"
@@ -14,7 +12,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 INSERT INTO "test_temp"
 (
 	"Field1"
@@ -25,7 +22,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1".ID,
 	"t1"."Field1"
@@ -36,11 +32,9 @@ ORDER BY
 OFFSET 1 ROWS FETCH NEXT 2 ROWS ONLY 
 
 -- DB2 DB2.LUW DB2LUW
-
 TRUNCATE TABLE "test_temp" IMMEDIATE
 
 -- DB2 DB2.LUW DB2LUW
-
 INSERT INTO "test_temp"
 (
 	"Field1"
@@ -51,7 +45,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 INSERT INTO "test_temp"
 (
 	"Field1"
@@ -62,7 +55,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1".ID,
 	"t1"."Field1"

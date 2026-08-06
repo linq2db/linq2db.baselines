@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 CREATE TABLE IF NOT EXISTS FluentTemp_Update
 (
 	ID       Int32,
@@ -12,7 +11,6 @@ ENGINE = MergeTree()
 ORDER BY ID
 
 -- ClickHouse.Driver ClickHouse
-
 INSERT INTO FluentTemp_Update
 (
 	ID,
@@ -27,7 +25,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 ALTER TABLE
 	FluentTemp_Update
 UPDATE
@@ -37,6 +34,5 @@ WHERE
 	ID = 1
 
 -- ClickHouse.Driver ClickHouse
-
 DROP TABLE IF EXISTS FluentTemp_Update
 

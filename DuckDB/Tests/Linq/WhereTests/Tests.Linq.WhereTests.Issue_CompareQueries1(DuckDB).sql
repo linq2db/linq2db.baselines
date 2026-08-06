@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	COUNT(p.PersonID)
 FROM
@@ -9,7 +8,6 @@ WHERE
 LIMIT 2
 
 -- DuckDB
-
 SELECT
 	COUNT(p.PersonID)
 FROM

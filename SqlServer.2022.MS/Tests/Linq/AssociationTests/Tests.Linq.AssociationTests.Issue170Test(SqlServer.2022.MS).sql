@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
-
 SELECT TOP (1)
 	[a_Parent].[Value1]
 FROM

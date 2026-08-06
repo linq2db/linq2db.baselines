@@ -1,9 +1,7 @@
-﻿-- PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.15 PostgreSQL12
 TRUNCATE TABLE test_temp CONTINUE IDENTITY
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 INSERT INTO test_temp
 (
 	"Field1"
@@ -13,8 +11,7 @@ VALUES
 	1
 )
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 INSERT INTO test_temp
 (
 	"Field1"
@@ -24,7 +21,7 @@ VALUES
 	1
 )
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL12
 DECLARE @skip Integer -- Int32
 SET     @skip = 1
 
@@ -37,12 +34,10 @@ ORDER BY
 	t1."ID"
 LIMIT 2 OFFSET :skip 
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 TRUNCATE TABLE test_temp CONTINUE IDENTITY
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 INSERT INTO test_temp
 (
 	"Field1"
@@ -52,8 +47,7 @@ VALUES
 	1
 )
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 INSERT INTO test_temp
 (
 	"Field1"
@@ -63,7 +57,7 @@ VALUES
 	1
 )
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL12
 DECLARE @skip Integer -- Int32
 SET     @skip = 1
 

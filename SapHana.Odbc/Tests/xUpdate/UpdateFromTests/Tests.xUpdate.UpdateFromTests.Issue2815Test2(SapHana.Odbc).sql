@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 UPDATE
 	"Issue2815Table1"
 SET
@@ -65,7 +64,6 @@ WHERE
 	)
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."SRC_BIC",

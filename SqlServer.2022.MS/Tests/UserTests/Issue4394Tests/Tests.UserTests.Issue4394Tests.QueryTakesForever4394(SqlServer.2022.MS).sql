@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
-
 SELECT
 	[x_8].[Id],
 	[x_8].[AisleID],
@@ -174,7 +173,6 @@ FROM
 		LEFT JOIN [MaterialDTO] [m8] ON [i8].[MaterialID] = [m8].[Id]
 
 -- SqlServer.2022.MS SqlServer.2022
-
 SELECT
 	[x_8].[Id],
 	[x_8].[AisleID],

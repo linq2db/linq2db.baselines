@@ -14,7 +14,6 @@ VALUES
 SELECT SCOPE_IDENTITY()
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[t1].[Id]
 FROM
@@ -32,7 +31,6 @@ WHERE
 	[u].[Id] = @userId
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT TOP (1)
 	[u].[Id]
 FROM

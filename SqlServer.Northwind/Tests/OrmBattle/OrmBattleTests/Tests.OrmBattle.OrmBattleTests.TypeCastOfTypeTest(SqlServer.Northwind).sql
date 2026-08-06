@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Northwind SqlServer.2019
-
 SELECT
 	[t1].[ProductID],
 	[t1].[ProductName],

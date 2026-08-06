@@ -1,5 +1,4 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"LinqDataTypes" t1
 WHERE
@@ -23,7 +22,6 @@ VALUES
 )
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"LinqDataTypes" t1
 WHERE

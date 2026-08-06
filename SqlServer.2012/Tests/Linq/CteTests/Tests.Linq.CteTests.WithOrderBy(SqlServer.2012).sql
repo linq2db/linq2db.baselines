@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012
-
 WITH [CTE_1] ([ParentID], [Value1])
 AS
 (

@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 DELETE FROM
 	"Person" "t1"
 WHERE
@@ -23,15 +22,14 @@ INSERT INTO "Person"
 )
 VALUES
 (
-	CAST(@FirstName AS VARCHAR(4)),
-	CAST(@LastName AS VARCHAR(7)),
-	CAST(@Gender AS Char(1))
+	@FirstName,
+	@LastName,
+	@Gender
 )
 RETURNING
 	"PersonID"
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"p"."FirstName",
 	"p"."PersonID",
@@ -45,7 +43,6 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 -- Firebird.5 Firebird4
-
 DELETE FROM
 	"Person" "t1"
 WHERE

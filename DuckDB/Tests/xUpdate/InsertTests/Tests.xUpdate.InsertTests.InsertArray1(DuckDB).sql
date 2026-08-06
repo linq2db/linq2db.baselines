@@ -1,12 +1,10 @@
 ﻿-- DuckDB
-
 DELETE FROM
 	LinqDataTypes t
 WHERE
 	t.ID > 1000
 
 -- DuckDB
-
 INSERT INTO LinqDataTypes
 (
 	ID,
@@ -21,7 +19,6 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	t.ID,
 	t.MoneyValue,
@@ -37,7 +34,6 @@ WHERE
 LIMIT 2
 
 -- DuckDB
-
 DELETE FROM
 	LinqDataTypes t
 WHERE

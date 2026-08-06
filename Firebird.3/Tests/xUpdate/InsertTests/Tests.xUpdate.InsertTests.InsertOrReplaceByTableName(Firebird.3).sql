@@ -53,7 +53,6 @@ WHEN NOT MATCHED THEN
 	)
 
 -- Firebird.3 Firebird3
-
 SELECT
 	COUNT(*)
 FROM
@@ -114,7 +113,6 @@ WHEN NOT MATCHED THEN
 	)
 
 -- Firebird.3 Firebird3
-
 SELECT
 	COUNT(*)
 FROM

@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.ParentID,
 	t1.ChildID
@@ -10,7 +9,6 @@ ORDER BY
 LIMIT 3, 5
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.ParentID,
 	t1.ChildID

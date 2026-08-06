@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	CONCAT_WS(', ', CASE
 		WHEN LOCATE('A', `x`.`NullableValue`) > 0 THEN `x`.`NullableValue`
@@ -32,7 +31,6 @@ WHERE
 	END)) <> 0
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`PK`,
 	`t1`.`Id`,

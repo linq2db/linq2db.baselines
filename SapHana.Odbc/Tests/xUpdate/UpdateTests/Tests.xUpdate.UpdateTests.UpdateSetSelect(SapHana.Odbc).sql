@@ -1,12 +1,10 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 DELETE FROM
 	"Parent" "t1"
 WHERE
 	"t1"."ParentID" > 1000
 
 -- SapHana.Odbc SapHanaOdbc
-
 UPDATE
 	"Parent"
 SET

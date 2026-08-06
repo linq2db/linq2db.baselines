@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016
-
 SELECT
 	[f].[Id],
 	[t1].[Id],

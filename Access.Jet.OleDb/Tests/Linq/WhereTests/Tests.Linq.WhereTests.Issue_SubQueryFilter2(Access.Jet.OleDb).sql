@@ -42,7 +42,6 @@ ORDER BY
 	[p].[PersonID]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[PersonID],
 	[t1].[Diagnosis]
@@ -50,7 +49,6 @@ FROM
 	[Patient] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

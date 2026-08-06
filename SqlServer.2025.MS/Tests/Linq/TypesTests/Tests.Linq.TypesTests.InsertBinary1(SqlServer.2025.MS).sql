@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
-
 DELETE [t1]
 FROM
 	[LinqDataTypes] [t1]
@@ -24,7 +23,6 @@ VALUES
 )
 
 -- SqlServer.2025.MS SqlServer.2025
-
 DELETE [t1]
 FROM
 	[LinqDataTypes] [t1]

@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT FIRST 1
 	"Item1"."ParentID",
 	"Item1"."ChildID"

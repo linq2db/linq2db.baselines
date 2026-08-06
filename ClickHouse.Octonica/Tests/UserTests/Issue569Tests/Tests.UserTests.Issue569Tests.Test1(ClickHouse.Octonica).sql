@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	patient_1.PersonID,
 	person_1.FirstName,

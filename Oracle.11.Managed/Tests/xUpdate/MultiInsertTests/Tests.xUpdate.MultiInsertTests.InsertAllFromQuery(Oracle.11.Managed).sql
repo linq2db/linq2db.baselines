@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 INSERT ALL
 WHEN N > 40 THEN
 	INTO "Dest1"
@@ -42,21 +41,18 @@ FROM
 		INNER JOIN "TestSource" s2 ON s.ID = s2.ID
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	COUNT(*)
 FROM
 	"Dest1" t1
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	COUNT(*)
 FROM
 	"Dest2" t1
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	COUNT(*)
 FROM
@@ -65,7 +61,6 @@ WHERE
 	x.ID = 1001
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	COUNT(*)
 FROM

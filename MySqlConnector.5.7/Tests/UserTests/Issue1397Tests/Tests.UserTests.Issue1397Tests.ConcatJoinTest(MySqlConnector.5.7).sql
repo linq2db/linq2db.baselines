@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`m_1`.`ParentID`,
 	`m_1`.`Value1`
@@ -22,7 +21,6 @@ FROM
 		) `id_1` ON `id_1`.`ParentID` = `m_1`.`ParentID`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`m_1`.`ParentID`,
 	`m_1`.`Value1`

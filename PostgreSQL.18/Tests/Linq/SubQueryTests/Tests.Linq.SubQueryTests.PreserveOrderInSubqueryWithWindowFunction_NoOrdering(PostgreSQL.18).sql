@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
-
+﻿-- PostgreSQL.18 PostgreSQL12
 SELECT
 	t1."RowNumber",
 	n."PersonID"
@@ -7,7 +6,7 @@ FROM
 	(
 		SELECT
 			r."PersonID" as "ID",
-			ROW_NUMBER() OVER(ORDER BY r."FirstName") as "RowNumber"
+			ROW_NUMBER() OVER (ORDER BY r."FirstName") as "RowNumber"
 		FROM
 			"Person" r
 	) t1

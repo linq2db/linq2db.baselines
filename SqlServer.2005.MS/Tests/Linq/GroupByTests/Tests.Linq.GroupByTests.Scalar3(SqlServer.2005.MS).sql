@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	MAX(CASE
 		WHEN [g_1].[ChildID] > 0 THEN [g_1].[ChildID]

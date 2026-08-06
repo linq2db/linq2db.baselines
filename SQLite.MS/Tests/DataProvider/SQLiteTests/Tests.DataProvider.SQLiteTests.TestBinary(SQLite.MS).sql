@@ -1,21 +1,16 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT    binaryDataType FROM AllTypes WHERE ID = 2
 
 -- SQLite.MS SQLite
-
 SELECT varbinaryDataType FROM AllTypes WHERE ID = 2
 
 -- SQLite.MS SQLite
-
 SELECT    binaryDataType FROM AllTypes WHERE ID = 2
 
 -- SQLite.MS SQLite
-
 SELECT varbinaryDataType FROM AllTypes WHERE ID = 2
 
 -- SQLite.MS SQLite
-
 SELECT Cast(NULL as image)
 
 -- SQLite.MS SQLite

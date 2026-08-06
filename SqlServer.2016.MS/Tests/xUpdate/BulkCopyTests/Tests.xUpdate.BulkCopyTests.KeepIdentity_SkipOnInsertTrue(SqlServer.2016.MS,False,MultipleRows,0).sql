@@ -14,7 +14,6 @@ VALUES
 SELECT SCOPE_IDENTITY()
 
 -- SqlServer.2016.MS SqlServer.2016
-
 INSERT INTO [AllTypes]
 (
 	[intDataType]

@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 SELECT
 	CAST("d"."DateTimeValue" AS Date)
 FROM

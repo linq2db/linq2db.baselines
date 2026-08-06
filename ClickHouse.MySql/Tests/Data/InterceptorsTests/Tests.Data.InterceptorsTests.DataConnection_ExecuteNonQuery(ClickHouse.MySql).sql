@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 CREATE TEMPORARY TABLE InterceptorsTestsTable
 (
 	ID Int32
@@ -7,6 +6,5 @@ CREATE TEMPORARY TABLE InterceptorsTestsTable
 ENGINE = Memory()
 
 -- ClickHouse.MySql ClickHouse
-
 DROP TABLE IF EXISTS InterceptorsTestsTable
 

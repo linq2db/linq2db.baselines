@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2019
-
 CREATE TABLE [tempdb]..[#TempTable]
 (
 	[ID] Int NOT NULL,
@@ -8,7 +7,6 @@ CREATE TABLE [tempdb]..[#TempTable]
 )
 
 -- SqlServer.2019
-
 CREATE TABLE [tempdb]..[#TempTable]
 (
 	[ID] Int NOT NULL,

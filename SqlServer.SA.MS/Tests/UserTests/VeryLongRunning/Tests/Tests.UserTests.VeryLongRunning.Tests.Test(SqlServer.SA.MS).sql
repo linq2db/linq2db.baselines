@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#tbl0101]
 (
 	[Column1] Int           NOT NULL IDENTITY,
@@ -15,7 +14,6 @@ CREATE TABLE [tempdb]..[#tbl0101]
 )
 
 -- SqlServer.SA.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#tbl0202]
 (
 	[Column1] Int           NOT NULL,
@@ -28,7 +26,6 @@ CREATE TABLE [tempdb]..[#tbl0202]
 )
 
 -- SqlServer.SA.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#tbl3333]
 (
 	[Column1] Int          NOT NULL,
@@ -39,7 +36,6 @@ CREATE TABLE [tempdb]..[#tbl3333]
 )
 
 -- SqlServer.SA.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#tbl4444]
 (
 	[Column1] Date NOT NULL,
@@ -49,7 +45,6 @@ CREATE TABLE [tempdb]..[#tbl4444]
 )
 
 -- SqlServer.SA.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#tbl5555]
 (
 	[Column1] BigInt        NOT NULL,
@@ -61,7 +56,6 @@ CREATE TABLE [tempdb]..[#tbl5555]
 )
 
 -- SqlServer.SA.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#tbl6666]
 (
 	[Column1] Int    NOT NULL,
@@ -74,7 +68,6 @@ CREATE TABLE [tempdb]..[#tbl6666]
 )
 
 -- SqlServer.SA.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#tbl7777]
 (
 	[Column1] Date           NOT NULL,
@@ -89,7 +82,6 @@ CREATE TABLE [tempdb]..[#tbl7777]
 )
 
 -- SqlServer.SA.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#tbl9999]
 (
 	[Column1]  Int             NOT NULL,
@@ -107,7 +99,6 @@ CREATE TABLE [tempdb]..[#tbl9999]
 )
 
 -- SqlServer.SA.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#tbl1010]
 (
 	[Column1] Date           NOT NULL,
@@ -121,7 +112,6 @@ CREATE TABLE [tempdb]..[#tbl1010]
 )
 
 -- SqlServer.SA.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#tbl1212]
 (
 	[Column1] Int           NOT NULL,
@@ -135,7 +125,6 @@ CREATE TABLE [tempdb]..[#tbl1212]
 )
 
 -- SqlServer.SA.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#tbl1313]
 (
 	[Column1] BigInt     NOT NULL,
@@ -147,7 +136,6 @@ CREATE TABLE [tempdb]..[#tbl1313]
 )
 
 -- SqlServer.SA.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#tbl1515]
 (
 	[Column1] Int         NOT NULL,
@@ -161,7 +149,6 @@ CREATE TABLE [tempdb]..[#tbl1515]
 )
 
 -- SqlServer.SA.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#tbl1414]
 (
 	[Column1] Int NOT NULL,
@@ -234,11 +221,9 @@ FROM
 		INNER JOIN [tempdb]..[#tbl1414] [t] ON [i].[Column1] = [t].[Column1]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#tbl1414]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#tmp001]
 (
 	[Column6] BigInt NOT NULL
@@ -266,7 +251,6 @@ WHERE
 	[ex].[Column4] <= @date AND ([ex].[Column5] IS NULL OR [ex].[Column5] > @date)
 
 -- SqlServer.SA.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#tmp002]
 (
 	[Column2] NVarChar(20)   NOT NULL,
@@ -311,7 +295,6 @@ WHERE
 	([e].[Column2] IS NOT NULL OR [be].[Column2] IS NOT NULL)
 
 -- SqlServer.SA.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#tmp003]
 (
 	[Column2] NVarChar(20)   NOT NULL,
@@ -323,7 +306,6 @@ CREATE TABLE [tempdb]..[#tmp003]
 )
 
 -- SqlServer.SA.MS SqlServer.2019
-
 INSERT INTO [tempdb]..[#tmp003]
 (
 	[Column2],
@@ -362,14 +344,12 @@ FROM
 OPTION (RECOMPILE)
 
 -- SqlServer.SA.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#tmp004]
 (
 	[Column2] NVarChar(4000) NOT NULL
 )
 
 -- SqlServer.SA.MS SqlServer.2019
-
 INSERT INTO [tempdb]..[#tmp004]
 (
 	[Column2]
@@ -380,7 +360,6 @@ FROM
 	[tempdb]..[#tmp003] [t]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#tbl8888]
 (
 	[Column1] DateTime2      NOT NULL,
@@ -445,34 +424,27 @@ WHERE
 	[pc].[Column1] = @date
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#tbl8888]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#tmp004]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#tmp003]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#tmp002]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#tmp001]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#tmp005]
 (
 	[Column4] Int NOT NULL
 )
 
 -- SqlServer.SA.MS SqlServer.2019
-
 INSERT INTO [tempdb]..[#tmp005]
 (
 	[Column4]
@@ -483,7 +455,6 @@ FROM
 	[tempdb]..[#tbl7777] [pc]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#tmp002]
 (
 	[Column2] NVarChar(20)   NOT NULL,
@@ -531,7 +502,6 @@ WHERE
 	[i].[Column2] = 1
 
 -- SqlServer.SA.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#tmp003]
 (
 	[Column2] NVarChar(20)   NOT NULL,
@@ -543,7 +513,6 @@ CREATE TABLE [tempdb]..[#tmp003]
 )
 
 -- SqlServer.SA.MS SqlServer.2019
-
 INSERT INTO [tempdb]..[#tmp003]
 (
 	[Column2],
@@ -582,14 +551,12 @@ FROM
 OPTION (RECOMPILE)
 
 -- SqlServer.SA.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#tmp004]
 (
 	[Column2] NVarChar(4000) NOT NULL
 )
 
 -- SqlServer.SA.MS SqlServer.2019
-
 INSERT INTO [tempdb]..[#tmp004]
 (
 	[Column2]
@@ -600,7 +567,6 @@ FROM
 	[tempdb]..[#tmp003] [t]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#tbl8888]
 (
 	[Column1] DateTime2      NOT NULL,
@@ -665,23 +631,18 @@ WHERE
 	[pc].[Column1] = @date
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#tbl8888]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#tmp004]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#tmp003]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#tmp002]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#tmp006]
 (
 	[Column3] NVarChar(20)   NOT NULL,
@@ -728,7 +689,6 @@ WHERE
 	([t].[Column7] <> 0 OR [t].[Column7] IS NULL)
 
 -- SqlServer.SA.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#tmp007]
 (
 	[Column3] NVarChar(20)   NOT NULL,
@@ -740,7 +700,6 @@ CREATE TABLE [tempdb]..[#tmp007]
 )
 
 -- SqlServer.SA.MS SqlServer.2019
-
 INSERT INTO [tempdb]..[#tmp007]
 (
 	[Column3],
@@ -779,14 +738,12 @@ FROM
 OPTION (RECOMPILE)
 
 -- SqlServer.SA.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#tmp008]
 (
 	[ISIN] NVarChar(4000) NOT NULL
 )
 
 -- SqlServer.SA.MS SqlServer.2019
-
 INSERT INTO [tempdb]..[#tmp008]
 (
 	[ISIN]
@@ -797,7 +754,6 @@ FROM
 	[tempdb]..[#tmp007] [t]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#tbl8888]
 (
 	[Column1] DateTime2      NOT NULL,
@@ -880,23 +836,18 @@ WHERE
 	[u].[Column2] = [r_1].[Column2]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#tbl8888]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#tmp008]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#tmp007]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#tmp006]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#tmp006]
 (
 	[Column3] NVarChar(20)   NOT NULL,
@@ -943,7 +894,6 @@ WHERE
 	([t].[Column7] <> 0 OR [t].[Column7] IS NULL)
 
 -- SqlServer.SA.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#tmp007]
 (
 	[Column3] NVarChar(20)   NOT NULL,
@@ -955,7 +905,6 @@ CREATE TABLE [tempdb]..[#tmp007]
 )
 
 -- SqlServer.SA.MS SqlServer.2019
-
 INSERT INTO [tempdb]..[#tmp007]
 (
 	[Column3],
@@ -994,14 +943,12 @@ FROM
 OPTION (RECOMPILE)
 
 -- SqlServer.SA.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#tmp008]
 (
 	[ISIN] NVarChar(4000) NOT NULL
 )
 
 -- SqlServer.SA.MS SqlServer.2019
-
 INSERT INTO [tempdb]..[#tmp008]
 (
 	[ISIN]
@@ -1012,7 +959,6 @@ FROM
 	[tempdb]..[#tmp007] [t]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#tbl8888]
 (
 	[Column1] DateTime2      NOT NULL,
@@ -1095,23 +1041,18 @@ WHERE
 	[u].[Column2] = [r_1].[Column2]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#tbl8888]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#tmp008]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#tmp007]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#tmp006]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#tmp006]
 (
 	[Column3] NVarChar(20)   NOT NULL,
@@ -1163,7 +1104,6 @@ WHERE
 	([t].[Column7] <> 0 OR [t].[Column7] IS NULL)
 
 -- SqlServer.SA.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#tmp007]
 (
 	[Column3] NVarChar(20)   NOT NULL,
@@ -1175,7 +1115,6 @@ CREATE TABLE [tempdb]..[#tmp007]
 )
 
 -- SqlServer.SA.MS SqlServer.2019
-
 INSERT INTO [tempdb]..[#tmp007]
 (
 	[Column3],
@@ -1214,14 +1153,12 @@ FROM
 OPTION (RECOMPILE)
 
 -- SqlServer.SA.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#tmp008]
 (
 	[ISIN] NVarChar(4000) NOT NULL
 )
 
 -- SqlServer.SA.MS SqlServer.2019
-
 INSERT INTO [tempdb]..[#tmp008]
 (
 	[ISIN]
@@ -1232,7 +1169,6 @@ FROM
 	[tempdb]..[#tmp007] [t]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#tbl8888]
 (
 	[Column1] DateTime2      NOT NULL,
@@ -1315,27 +1251,21 @@ WHERE
 	[u].[Column2] = [r_1].[Column2]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#tbl8888]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#tmp008]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#tmp007]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#tmp006]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#tmp005]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#tbl1414]
 (
 	[Column1] Int NOT NULL,
@@ -1408,11 +1338,9 @@ FROM
 		INNER JOIN [tempdb]..[#tbl1414] [t] ON [i].[Column1] = [t].[Column1]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#tbl1414]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#tmp001]
 (
 	[Column6] BigInt NOT NULL
@@ -1440,7 +1368,6 @@ WHERE
 	[ex].[Column4] <= @date AND ([ex].[Column5] IS NULL OR [ex].[Column5] > @date)
 
 -- SqlServer.SA.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#tmp002]
 (
 	[Column2] NVarChar(20)   NOT NULL,
@@ -1485,7 +1412,6 @@ WHERE
 	([e].[Column2] IS NOT NULL OR [be].[Column2] IS NOT NULL)
 
 -- SqlServer.SA.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#tmp003]
 (
 	[Column2] NVarChar(20)   NOT NULL,
@@ -1497,7 +1423,6 @@ CREATE TABLE [tempdb]..[#tmp003]
 )
 
 -- SqlServer.SA.MS SqlServer.2019
-
 INSERT INTO [tempdb]..[#tmp003]
 (
 	[Column2],
@@ -1536,14 +1461,12 @@ FROM
 OPTION (RECOMPILE)
 
 -- SqlServer.SA.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#tmp004]
 (
 	[Column2] NVarChar(4000) NOT NULL
 )
 
 -- SqlServer.SA.MS SqlServer.2019
-
 INSERT INTO [tempdb]..[#tmp004]
 (
 	[Column2]
@@ -1554,7 +1477,6 @@ FROM
 	[tempdb]..[#tmp003] [t]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#tbl8888]
 (
 	[Column1] DateTime2      NOT NULL,
@@ -1619,34 +1541,27 @@ WHERE
 	[pc].[Column1] = @date
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#tbl8888]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#tmp004]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#tmp003]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#tmp002]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#tmp001]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#tmp005]
 (
 	[Column4] Int NOT NULL
 )
 
 -- SqlServer.SA.MS SqlServer.2019
-
 INSERT INTO [tempdb]..[#tmp005]
 (
 	[Column4]
@@ -1657,7 +1572,6 @@ FROM
 	[tempdb]..[#tbl7777] [pc]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#tmp002]
 (
 	[Column2] NVarChar(20)   NOT NULL,
@@ -1705,7 +1619,6 @@ WHERE
 	[i].[Column2] = 1
 
 -- SqlServer.SA.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#tmp003]
 (
 	[Column2] NVarChar(20)   NOT NULL,
@@ -1717,7 +1630,6 @@ CREATE TABLE [tempdb]..[#tmp003]
 )
 
 -- SqlServer.SA.MS SqlServer.2019
-
 INSERT INTO [tempdb]..[#tmp003]
 (
 	[Column2],
@@ -1756,14 +1668,12 @@ FROM
 OPTION (RECOMPILE)
 
 -- SqlServer.SA.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#tmp004]
 (
 	[Column2] NVarChar(4000) NOT NULL
 )
 
 -- SqlServer.SA.MS SqlServer.2019
-
 INSERT INTO [tempdb]..[#tmp004]
 (
 	[Column2]
@@ -1774,7 +1684,6 @@ FROM
 	[tempdb]..[#tmp003] [t]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#tbl8888]
 (
 	[Column1] DateTime2      NOT NULL,
@@ -1839,23 +1748,18 @@ WHERE
 	[pc].[Column1] = @date
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#tbl8888]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#tmp004]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#tmp003]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#tmp002]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#tmp006]
 (
 	[Column3] NVarChar(20)   NOT NULL,
@@ -1902,7 +1806,6 @@ WHERE
 	([t].[Column7] <> 0 OR [t].[Column7] IS NULL)
 
 -- SqlServer.SA.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#tmp007]
 (
 	[Column3] NVarChar(20)   NOT NULL,
@@ -1914,7 +1817,6 @@ CREATE TABLE [tempdb]..[#tmp007]
 )
 
 -- SqlServer.SA.MS SqlServer.2019
-
 INSERT INTO [tempdb]..[#tmp007]
 (
 	[Column3],
@@ -1953,14 +1855,12 @@ FROM
 OPTION (RECOMPILE)
 
 -- SqlServer.SA.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#tmp008]
 (
 	[ISIN] NVarChar(4000) NOT NULL
 )
 
 -- SqlServer.SA.MS SqlServer.2019
-
 INSERT INTO [tempdb]..[#tmp008]
 (
 	[ISIN]
@@ -1971,7 +1871,6 @@ FROM
 	[tempdb]..[#tmp007] [t]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#tbl8888]
 (
 	[Column1] DateTime2      NOT NULL,
@@ -2054,23 +1953,18 @@ WHERE
 	[u].[Column2] = [r_1].[Column2]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#tbl8888]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#tmp008]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#tmp007]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#tmp006]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#tmp006]
 (
 	[Column3] NVarChar(20)   NOT NULL,
@@ -2117,7 +2011,6 @@ WHERE
 	([t].[Column7] <> 0 OR [t].[Column7] IS NULL)
 
 -- SqlServer.SA.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#tmp007]
 (
 	[Column3] NVarChar(20)   NOT NULL,
@@ -2129,7 +2022,6 @@ CREATE TABLE [tempdb]..[#tmp007]
 )
 
 -- SqlServer.SA.MS SqlServer.2019
-
 INSERT INTO [tempdb]..[#tmp007]
 (
 	[Column3],
@@ -2168,14 +2060,12 @@ FROM
 OPTION (RECOMPILE)
 
 -- SqlServer.SA.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#tmp008]
 (
 	[ISIN] NVarChar(4000) NOT NULL
 )
 
 -- SqlServer.SA.MS SqlServer.2019
-
 INSERT INTO [tempdb]..[#tmp008]
 (
 	[ISIN]
@@ -2186,7 +2076,6 @@ FROM
 	[tempdb]..[#tmp007] [t]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#tbl8888]
 (
 	[Column1] DateTime2      NOT NULL,
@@ -2269,23 +2158,18 @@ WHERE
 	[u].[Column2] = [r_1].[Column2]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#tbl8888]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#tmp008]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#tmp007]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#tmp006]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#tmp006]
 (
 	[Column3] NVarChar(20)   NOT NULL,
@@ -2337,7 +2221,6 @@ WHERE
 	([t].[Column7] <> 0 OR [t].[Column7] IS NULL)
 
 -- SqlServer.SA.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#tmp007]
 (
 	[Column3] NVarChar(20)   NOT NULL,
@@ -2349,7 +2232,6 @@ CREATE TABLE [tempdb]..[#tmp007]
 )
 
 -- SqlServer.SA.MS SqlServer.2019
-
 INSERT INTO [tempdb]..[#tmp007]
 (
 	[Column3],
@@ -2388,14 +2270,12 @@ FROM
 OPTION (RECOMPILE)
 
 -- SqlServer.SA.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#tmp008]
 (
 	[ISIN] NVarChar(4000) NOT NULL
 )
 
 -- SqlServer.SA.MS SqlServer.2019
-
 INSERT INTO [tempdb]..[#tmp008]
 (
 	[ISIN]
@@ -2406,7 +2286,6 @@ FROM
 	[tempdb]..[#tmp007] [t]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#tbl8888]
 (
 	[Column1] DateTime2      NOT NULL,
@@ -2489,70 +2368,53 @@ WHERE
 	[u].[Column2] = [r_1].[Column2]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#tbl8888]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#tmp008]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#tmp007]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#tmp006]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#tmp005]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#tbl1515]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#tbl1313]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#tbl1212]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#tbl1010]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#tbl9999]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#tbl7777]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#tbl6666]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#tbl5555]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#tbl4444]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#tbl3333]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#tbl0202]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#tbl0101]
 

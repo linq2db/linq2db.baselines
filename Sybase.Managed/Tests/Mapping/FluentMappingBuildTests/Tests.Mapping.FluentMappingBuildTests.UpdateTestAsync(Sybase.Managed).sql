@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 IF (OBJECT_ID(N'FluentTemp_UpdateAsync') IS NULL)
 	EXECUTE('
 		CREATE TABLE [FluentTemp_UpdateAsync]
@@ -48,7 +47,6 @@ WHERE
 	[FluentTemp_UpdateAsync].[ID] = 1
 
 -- Sybase.Managed Sybase
-
 IF (OBJECT_ID(N'FluentTemp_UpdateAsync') IS NOT NULL)
 	DROP TABLE [FluentTemp_UpdateAsync]
 

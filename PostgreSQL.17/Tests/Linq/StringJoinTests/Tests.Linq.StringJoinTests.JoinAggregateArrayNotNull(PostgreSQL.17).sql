@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	CONCAT_WS(', ', t."NullableValue", t."NotNullableValue", t."VarcharValue", t."NVarcharValue"),
 	Coalesce((
@@ -14,8 +13,7 @@ SELECT
 FROM
 	"SampleClass" t
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."PK",
 	t1."Id",

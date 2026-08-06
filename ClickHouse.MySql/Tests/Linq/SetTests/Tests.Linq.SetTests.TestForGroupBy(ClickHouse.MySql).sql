@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	x.ParentID,
 	x.ChildID,
@@ -10,7 +9,6 @@ WHERE
 	x.ParentID IN (2)
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	x.ParentID,
 	x.ChildID,

@@ -1,11 +1,9 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	sys_context('userenv','service_name')
 FROM SYS.DUAL
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "Issue681Table2"';
 EXCEPTION
@@ -16,7 +14,6 @@ EXCEPTION
 END;
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 CREATE TABLE "Issue681Table2"@XE
 (
 	ID      Int NOT NULL,
@@ -26,7 +23,6 @@ CREATE TABLE "Issue681Table2"@XE
 )
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "Issue681Table2"';
 EXCEPTION

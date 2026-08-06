@@ -1,9 +1,7 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DROP TABLE IF EXISTS "TempTable"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 CREATE TABLE IF NOT EXISTS "TempTable"
 (
 	"Name" text NOT NULL,
@@ -11,8 +9,7 @@ CREATE TABLE IF NOT EXISTS "TempTable"
 	CONSTRAINT "PK_TempTable" PRIMARY KEY ("Name")
 )
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 INSERT INTO "TempTable"
 (
 	"Name"
@@ -20,15 +17,13 @@ INSERT INTO "TempTable"
 VALUES
 ('John')
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t."Name"
 FROM
 	"Person" p
 		INNER JOIN "TempTable" t ON p."FirstName" = t."Name"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DROP TABLE IF EXISTS "TempTable"
 

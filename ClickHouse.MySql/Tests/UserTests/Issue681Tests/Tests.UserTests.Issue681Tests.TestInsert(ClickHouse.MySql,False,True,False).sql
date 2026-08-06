@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	currentDatabase()
 FROM
@@ -7,7 +6,6 @@ FROM
 LIMIT 1
 
 -- ClickHouse.MySql ClickHouse
-
 INSERT INTO testdb3.Issue681Table
 (
 	ID,

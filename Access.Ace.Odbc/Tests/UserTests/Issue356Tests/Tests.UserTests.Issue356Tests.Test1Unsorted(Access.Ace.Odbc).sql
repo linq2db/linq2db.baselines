@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT TOP 10
 	[x].[ParentID],
 	[t2].[ChildID]

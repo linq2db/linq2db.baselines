@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -9,7 +8,6 @@ SELECT 1,10 FROM rdb$database UNION ALL
 SELECT 2,20 FROM rdb$database
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"
@@ -19,12 +17,10 @@ ORDER BY
 	"t1"."Id"
 
 -- Firebird.4 Firebird4
-
 DELETE FROM
 	"BulkCopyTable" "t1"
 
 -- Firebird.4 Firebird4
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -34,7 +30,6 @@ SELECT 1,10 FROM rdb$database UNION ALL
 SELECT 2,20 FROM rdb$database
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"
@@ -44,12 +39,10 @@ ORDER BY
 	"t1"."Id"
 
 -- Firebird.4 Firebird4
-
 DELETE FROM
 	"BulkCopyTable" "t1"
 
 -- Firebird.4 Firebird4
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -59,7 +52,6 @@ SELECT 1,10 FROM rdb$database UNION ALL
 SELECT 2,20 FROM rdb$database
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"
@@ -69,12 +61,10 @@ ORDER BY
 	"t1"."Id"
 
 -- Firebird.4 Firebird4
-
 DELETE FROM
 	"BulkCopyTable" "t1"
 
 -- Firebird.4 Firebird4
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -84,7 +74,6 @@ SELECT 1,10 FROM rdb$database UNION ALL
 SELECT 2,20 FROM rdb$database
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"
@@ -94,12 +83,10 @@ ORDER BY
 	"t1"."Id"
 
 -- Firebird.4 Firebird4
-
 DELETE FROM
 	"BulkCopyTable" "t1"
 
 -- Firebird.4 Firebird4
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -109,7 +96,6 @@ SELECT 1,10 FROM rdb$database UNION ALL
 SELECT 2,20 FROM rdb$database
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"
@@ -119,12 +105,10 @@ ORDER BY
 	"t1"."Id"
 
 -- Firebird.4 Firebird4
-
 DELETE FROM
 	"BulkCopyTable" "t1"
 
 -- Firebird.4 Firebird4
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -134,7 +118,6 @@ SELECT 1,10 FROM rdb$database UNION ALL
 SELECT 2,20 FROM rdb$database
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"
@@ -144,12 +127,10 @@ ORDER BY
 	"t1"."Id"
 
 -- Firebird.4 Firebird4
-
 DELETE FROM
 	"BulkCopyTable" "t1"
 
 -- Firebird.4 Firebird4
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -159,7 +140,6 @@ SELECT 1,10 FROM rdb$database UNION ALL
 SELECT 2,20 FROM rdb$database
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"
@@ -169,12 +149,10 @@ ORDER BY
 	"t1"."Id"
 
 -- Firebird.4 Firebird4
-
 DELETE FROM
 	"BulkCopyTable" "t1"
 
 -- Firebird.4 Firebird4
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -184,7 +162,6 @@ SELECT 1,10 FROM rdb$database UNION ALL
 SELECT 2,20 FROM rdb$database
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"
@@ -194,12 +171,10 @@ ORDER BY
 	"t1"."Id"
 
 -- Firebird.4 Firebird4
-
 DELETE FROM
 	"BulkCopyTable" "t1"
 
 -- Firebird.4 Firebird4
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -209,7 +184,6 @@ SELECT 1,10 FROM rdb$database UNION ALL
 SELECT 2,20 FROM rdb$database
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"
@@ -219,12 +193,10 @@ ORDER BY
 	"t1"."Id"
 
 -- Firebird.4 Firebird4
-
 DELETE FROM
 	"BulkCopyTable" "t1"
 
 -- Firebird.4 Firebird4
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -234,7 +206,6 @@ SELECT 1,10 FROM rdb$database UNION ALL
 SELECT 2,20 FROM rdb$database
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"
@@ -244,12 +215,10 @@ ORDER BY
 	"t1"."Id"
 
 -- Firebird.4 Firebird4
-
 DELETE FROM
 	"BulkCopyTable" "t1"
 
 -- Firebird.4 Firebird4
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -259,7 +228,6 @@ SELECT 1,10 FROM rdb$database UNION ALL
 SELECT 2,20 FROM rdb$database
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"
@@ -269,12 +237,10 @@ ORDER BY
 	"t1"."Id"
 
 -- Firebird.4 Firebird4
-
 DELETE FROM
 	"BulkCopyTable" "t1"
 
 -- Firebird.4 Firebird4
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -284,7 +250,6 @@ SELECT 1,10 FROM rdb$database UNION ALL
 SELECT 2,20 FROM rdb$database
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"
@@ -294,12 +259,10 @@ ORDER BY
 	"t1"."Id"
 
 -- Firebird.4 Firebird4
-
 DELETE FROM
 	"BulkCopyTable" "t1"
 
 -- Firebird.4 Firebird4
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -309,7 +272,6 @@ SELECT 1,10 FROM rdb$database UNION ALL
 SELECT 2,20 FROM rdb$database
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"
@@ -319,12 +281,10 @@ ORDER BY
 	"t1"."Id"
 
 -- Firebird.4 Firebird4
-
 DELETE FROM
 	"BulkCopyTable" "t1"
 
 -- Firebird.4 Firebird4
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -334,7 +294,6 @@ SELECT 1,10 FROM rdb$database UNION ALL
 SELECT 2,20 FROM rdb$database
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"
@@ -344,12 +303,10 @@ ORDER BY
 	"t1"."Id"
 
 -- Firebird.4 Firebird4
-
 DELETE FROM
 	"BulkCopyTable" "t1"
 
 -- Firebird.4 Firebird4
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -359,7 +316,6 @@ SELECT 1,10 FROM rdb$database UNION ALL
 SELECT 2,20 FROM rdb$database
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"
@@ -369,12 +325,10 @@ ORDER BY
 	"t1"."Id"
 
 -- Firebird.4 Firebird4
-
 DELETE FROM
 	"BulkCopyTable" "t1"
 
 -- Firebird.4 Firebird4
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -384,7 +338,6 @@ SELECT 1,10 FROM rdb$database UNION ALL
 SELECT 2,20 FROM rdb$database
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"
@@ -394,12 +347,10 @@ ORDER BY
 	"t1"."Id"
 
 -- Firebird.4 Firebird4
-
 DELETE FROM
 	"BulkCopyTable" "t1"
 
 -- Firebird.4 Firebird4
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -409,7 +360,6 @@ SELECT 1,10 FROM rdb$database UNION ALL
 SELECT 2,20 FROM rdb$database
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"
@@ -419,12 +369,10 @@ ORDER BY
 	"t1"."Id"
 
 -- Firebird.4 Firebird4
-
 DELETE FROM
 	"BulkCopyTable" "t1"
 
 -- Firebird.4 Firebird4
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -434,7 +382,6 @@ SELECT 1,10 FROM rdb$database UNION ALL
 SELECT 2,20 FROM rdb$database
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"
@@ -444,12 +391,10 @@ ORDER BY
 	"t1"."Id"
 
 -- Firebird.4 Firebird4
-
 DELETE FROM
 	"BulkCopyTable" "t1"
 
 -- Firebird.4 Firebird4
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -459,7 +404,6 @@ SELECT 1,10 FROM rdb$database UNION ALL
 SELECT 2,20 FROM rdb$database
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"
@@ -469,12 +413,10 @@ ORDER BY
 	"t1"."Id"
 
 -- Firebird.4 Firebird4
-
 DELETE FROM
 	"BulkCopyTable" "t1"
 
 -- Firebird.4 Firebird4
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -484,7 +426,6 @@ SELECT 1,10 FROM rdb$database UNION ALL
 SELECT 2,20 FROM rdb$database
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"
@@ -494,12 +435,10 @@ ORDER BY
 	"t1"."Id"
 
 -- Firebird.4 Firebird4
-
 DELETE FROM
 	"BulkCopyTable" "t1"
 
 -- Firebird.4 Firebird4
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -509,7 +448,6 @@ SELECT 1,10 FROM rdb$database UNION ALL
 SELECT 2,20 FROM rdb$database
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"
@@ -519,12 +457,10 @@ ORDER BY
 	"t1"."Id"
 
 -- Firebird.4 Firebird4
-
 DELETE FROM
 	"BulkCopyTable" "t1"
 
 -- Firebird.4 Firebird4
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -534,7 +470,6 @@ SELECT 1,10 FROM rdb$database UNION ALL
 SELECT 2,20 FROM rdb$database
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"
@@ -544,12 +479,10 @@ ORDER BY
 	"t1"."Id"
 
 -- Firebird.4 Firebird4
-
 DELETE FROM
 	"BulkCopyTable" "t1"
 
 -- Firebird.4 Firebird4
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -559,7 +492,6 @@ SELECT 1,10 FROM rdb$database UNION ALL
 SELECT 2,20 FROM rdb$database
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"
@@ -569,12 +501,10 @@ ORDER BY
 	"t1"."Id"
 
 -- Firebird.4 Firebird4
-
 DELETE FROM
 	"BulkCopyTable" "t1"
 
 -- Firebird.4 Firebird4
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -584,7 +514,6 @@ SELECT 1,10 FROM rdb$database UNION ALL
 SELECT 2,20 FROM rdb$database
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"
@@ -594,12 +523,10 @@ ORDER BY
 	"t1"."Id"
 
 -- Firebird.4 Firebird4
-
 DELETE FROM
 	"BulkCopyTable" "t1"
 
 -- Firebird.4 Firebird4
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -609,7 +536,6 @@ SELECT 1,10 FROM rdb$database UNION ALL
 SELECT 2,20 FROM rdb$database
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"
@@ -619,12 +545,10 @@ ORDER BY
 	"t1"."Id"
 
 -- Firebird.4 Firebird4
-
 DELETE FROM
 	"BulkCopyTable" "t1"
 
 -- Firebird.4 Firebird4
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -634,7 +558,6 @@ SELECT 1,10 FROM rdb$database UNION ALL
 SELECT 2,20 FROM rdb$database
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"
@@ -644,12 +567,10 @@ ORDER BY
 	"t1"."Id"
 
 -- Firebird.4 Firebird4
-
 DELETE FROM
 	"BulkCopyTable" "t1"
 
 -- Firebird.4 Firebird4
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -659,7 +580,6 @@ SELECT 1,10 FROM rdb$database UNION ALL
 SELECT 2,20 FROM rdb$database
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"
@@ -669,12 +589,10 @@ ORDER BY
 	"t1"."Id"
 
 -- Firebird.4 Firebird4
-
 DELETE FROM
 	"BulkCopyTable" "t1"
 
 -- Firebird.4 Firebird4
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -684,7 +602,6 @@ SELECT 1,10 FROM rdb$database UNION ALL
 SELECT 2,20 FROM rdb$database
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"
@@ -694,12 +611,10 @@ ORDER BY
 	"t1"."Id"
 
 -- Firebird.4 Firebird4
-
 DELETE FROM
 	"BulkCopyTable" "t1"
 
 -- Firebird.4 Firebird4
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -709,7 +624,6 @@ SELECT 1,10 FROM rdb$database UNION ALL
 SELECT 2,20 FROM rdb$database
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"
@@ -719,12 +633,10 @@ ORDER BY
 	"t1"."Id"
 
 -- Firebird.4 Firebird4
-
 DELETE FROM
 	"BulkCopyTable" "t1"
 
 -- Firebird.4 Firebird4
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -734,7 +646,6 @@ SELECT 1,10 FROM rdb$database UNION ALL
 SELECT 2,20 FROM rdb$database
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"
@@ -744,12 +655,10 @@ ORDER BY
 	"t1"."Id"
 
 -- Firebird.4 Firebird4
-
 DELETE FROM
 	"BulkCopyTable" "t1"
 
 -- Firebird.4 Firebird4
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -759,7 +668,6 @@ SELECT 1,10 FROM rdb$database UNION ALL
 SELECT 2,20 FROM rdb$database
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"
@@ -769,12 +677,10 @@ ORDER BY
 	"t1"."Id"
 
 -- Firebird.4 Firebird4
-
 DELETE FROM
 	"BulkCopyTable" "t1"
 
 -- Firebird.4 Firebird4
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -784,7 +690,6 @@ SELECT 1,10 FROM rdb$database UNION ALL
 SELECT 2,20 FROM rdb$database
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"
@@ -794,12 +699,10 @@ ORDER BY
 	"t1"."Id"
 
 -- Firebird.4 Firebird4
-
 DELETE FROM
 	"BulkCopyTable" "t1"
 
 -- Firebird.4 Firebird4
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -809,7 +712,6 @@ SELECT 1,10 FROM rdb$database UNION ALL
 SELECT 2,20 FROM rdb$database
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"
@@ -819,12 +721,10 @@ ORDER BY
 	"t1"."Id"
 
 -- Firebird.4 Firebird4
-
 DELETE FROM
 	"BulkCopyTable" "t1"
 
 -- Firebird.4 Firebird4
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -834,7 +734,6 @@ SELECT 1,10 FROM rdb$database UNION ALL
 SELECT 2,20 FROM rdb$database
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"
@@ -844,12 +743,10 @@ ORDER BY
 	"t1"."Id"
 
 -- Firebird.4 Firebird4
-
 DELETE FROM
 	"BulkCopyTable" "t1"
 
 -- Firebird.4 Firebird4
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -859,7 +756,6 @@ SELECT 1,10 FROM rdb$database UNION ALL
 SELECT 2,20 FROM rdb$database
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"
@@ -869,12 +765,10 @@ ORDER BY
 	"t1"."Id"
 
 -- Firebird.4 Firebird4
-
 DELETE FROM
 	"BulkCopyTable" "t1"
 
 -- Firebird.4 Firebird4
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -884,7 +778,6 @@ SELECT 1,10 FROM rdb$database UNION ALL
 SELECT 2,20 FROM rdb$database
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"
@@ -894,7 +787,6 @@ ORDER BY
 	"t1"."Id"
 
 -- Firebird.4 Firebird4
-
 DELETE FROM
 	"BulkCopyTable" "t1"
 

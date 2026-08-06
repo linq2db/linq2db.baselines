@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 /* My custom
 wonderful multiline
 query tag */

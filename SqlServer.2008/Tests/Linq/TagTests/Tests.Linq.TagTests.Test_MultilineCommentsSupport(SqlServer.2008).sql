@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008
-
 /* My custom
 wonderful multiline
 query tag */

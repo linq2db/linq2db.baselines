@@ -16,7 +16,6 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[MetadataVersion],
 	[t1].[DictionaryKey]

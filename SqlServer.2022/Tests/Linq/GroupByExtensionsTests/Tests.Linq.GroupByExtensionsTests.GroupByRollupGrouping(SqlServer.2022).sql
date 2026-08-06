@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 SELECT
 	GROUPING([g_2].[Id1]),
 	[g_2].[Id1],

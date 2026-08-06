@@ -29,7 +29,6 @@ VALUES
 )
 
 -- SqlServer.2022
-
 SELECT
 	[t1].[Id],
 	[a_Details].[UserId],

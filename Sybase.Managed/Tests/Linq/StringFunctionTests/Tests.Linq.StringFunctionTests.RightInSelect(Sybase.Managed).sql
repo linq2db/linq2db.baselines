@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	RIGHT([p].[FirstName], 3)
 FROM

@@ -8,7 +8,6 @@ SET
 	[Field] = CAST(CAST([Issue4963Table].[Field] AS Int) + @offset AS TinyInt)
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 2
 	[t1].[Id],
 	[t1].[Field]

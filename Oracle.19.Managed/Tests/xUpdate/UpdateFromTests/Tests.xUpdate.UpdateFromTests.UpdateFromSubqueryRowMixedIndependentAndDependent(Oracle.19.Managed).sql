@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 UPDATE
 	"UpdateSubquerySourceTable" x
 SET
@@ -20,7 +19,6 @@ WHERE
 	x."Id" = 1
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."FirstName",

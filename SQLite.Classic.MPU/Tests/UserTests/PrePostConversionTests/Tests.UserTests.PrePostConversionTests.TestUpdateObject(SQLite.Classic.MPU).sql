@@ -20,7 +20,6 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[SomeValue1],
@@ -46,7 +45,6 @@ WHERE
 	[ValuesTable].[Id] = @Id
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[SomeValue1],

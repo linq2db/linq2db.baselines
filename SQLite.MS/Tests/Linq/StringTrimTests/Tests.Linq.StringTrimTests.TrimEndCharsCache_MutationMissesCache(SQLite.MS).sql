@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	RTRIM([t].[VarCharColumn], '.+')
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	[t].[Id]
 
 -- SQLite.MS SQLite
-
 SELECT
 	RTRIM([t].[VarCharColumn], 'ab')
 FROM

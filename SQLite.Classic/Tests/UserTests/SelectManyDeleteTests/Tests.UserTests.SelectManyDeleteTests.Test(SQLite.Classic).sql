@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 DELETE FROM
 	[GrandChild]
 WHERE

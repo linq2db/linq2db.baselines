@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[g_1].[Id],
 	GROUP_CONCAT([g_1].[Value1], ', ')

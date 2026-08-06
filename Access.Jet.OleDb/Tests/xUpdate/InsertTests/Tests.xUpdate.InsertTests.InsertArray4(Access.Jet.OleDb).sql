@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 DELETE FROM
 	[LinqDataTypes] [t]
 WHERE
@@ -43,7 +42,6 @@ VALUES
 )
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT TOP 2
 	[t].[ID],
 	[t].[MoneyValue],
@@ -58,7 +56,6 @@ WHERE
 	[t].[ID] = 1001
 
 -- Access.Jet.OleDb AccessOleDb
-
 DELETE FROM
 	[LinqDataTypes] [t]
 WHERE

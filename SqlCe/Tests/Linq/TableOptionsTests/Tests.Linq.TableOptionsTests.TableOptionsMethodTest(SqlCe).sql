@@ -1,9 +1,7 @@
 ﻿-- SqlCe
-
 DROP TABLE [TestTable]
 
 -- SqlCe
-
 CREATE TABLE [TestTable]
 (
 	[Id]    Int NOT NULL,
@@ -13,7 +11,6 @@ CREATE TABLE [TestTable]
 )
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Value] as [Value_1],
@@ -29,6 +26,5 @@ WHERE
 	[t1].[Id] = [t2].[Id]
 
 -- SqlCe
-
 DROP TABLE [TestTable]
 

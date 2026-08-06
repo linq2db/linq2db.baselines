@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 DELETE  
 FROM
 	`Parent`
@@ -7,7 +6,6 @@ WHERE
 	`Parent`.`Value1` = 11
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 INSERT INTO `Parent`
 (
 	`ParentID`,
@@ -22,7 +20,6 @@ WHERE
 	`c_1`.`ChildID` = 11
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	COUNT(*)
 FROM
@@ -31,7 +28,6 @@ WHERE
 	`p`.`Value1` = 11
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 DELETE  
 FROM
 	`Parent`

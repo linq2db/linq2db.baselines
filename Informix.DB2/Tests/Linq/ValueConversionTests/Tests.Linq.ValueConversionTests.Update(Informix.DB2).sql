@@ -10,14 +10,13 @@ UPDATE
 	ValueConversion e
 SET
 	Value1 = e.Value1,
-	Value2 = @Value2::NVarChar(21),
-	EnumWithNull = @EnumWithNull::VarChar(50),
-	EnumWithNullDeclarative = @EnumWithNullDeclarative::VarChar(50)
+	Value2 = @Value2,
+	EnumWithNull = @EnumWithNull,
+	EnumWithNullDeclarative = @EnumWithNullDeclarative
 WHERE
 	e.Id = 1
 
 -- Informix.DB2 Informix
-
 SELECT FIRST 1
 	e.Id,
 	e.Value1,
@@ -72,7 +71,6 @@ WHERE
 	t1.Id = @Id
 
 -- Informix.DB2 Informix
-
 SELECT FIRST 1
 	e.Id,
 	e.Value1,
@@ -127,7 +125,6 @@ WHERE
 	t1.Id = @Id
 
 -- Informix.DB2 Informix
-
 SELECT FIRST 1
 	e.Id,
 	e.Value1,

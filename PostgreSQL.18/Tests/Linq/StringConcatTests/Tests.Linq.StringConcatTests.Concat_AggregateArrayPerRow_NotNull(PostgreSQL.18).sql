@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
-
+﻿-- PostgreSQL.18 PostgreSQL12
 SELECT
 	t."Id",
 	CONCAT_WS('', t."Str1", t."Str2", t."StrReq")
@@ -8,8 +7,7 @@ FROM
 ORDER BY
 	t."Id"
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Str1",

@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT DISTINCT
 	`a_Parent`.`ParentID`,
 	`a_Parent`.`Value1`

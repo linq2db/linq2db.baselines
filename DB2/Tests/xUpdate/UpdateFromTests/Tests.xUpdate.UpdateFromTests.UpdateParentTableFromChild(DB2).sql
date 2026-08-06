@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 UPDATE
 	"ParentTable"
 SET
@@ -16,7 +15,6 @@ WHERE
 	)
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"p"."Id",
 	"p"."Value"

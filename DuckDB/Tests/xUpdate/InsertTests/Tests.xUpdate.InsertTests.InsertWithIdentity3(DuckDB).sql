@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 DELETE FROM
 	Person t1
 WHERE
@@ -29,7 +28,6 @@ RETURNING
 	PersonID
 
 -- DuckDB
-
 SELECT
 	p.FirstName,
 	p.PersonID,
@@ -43,7 +41,6 @@ WHERE
 LIMIT 2
 
 -- DuckDB
-
 DELETE FROM
 	Person t1
 WHERE

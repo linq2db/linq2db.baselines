@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 INSERT INTO TestTempTable
 (
 	Id,
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- DuckDB
-
 CREATE TABLE IF NOT EXISTS TempTable
 (
 	Id      INTEGER,
@@ -22,7 +20,6 @@ CREATE TABLE IF NOT EXISTS TempTable
 )
 
 -- DuckDB
-
 INSERT INTO TempTable
 (
 	Id,
@@ -35,7 +32,6 @@ FROM
 	TestTempTable t1
 
 -- DuckDB
-
 INSERT INTO TestTempTable
 (
 	Id,
@@ -48,7 +44,6 @@ VALUES
 )
 
 -- DuckDB
-
 INSERT INTO TempTable
 (
 	Id,
@@ -61,7 +56,6 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	t1.Id,
 	t1."Value"
@@ -71,7 +65,6 @@ ORDER BY
 	t1.Id
 
 -- DuckDB
-
 SELECT
 	t1.Id,
 	t1.Renamed
@@ -81,6 +74,5 @@ ORDER BY
 	t1.Id
 
 -- DuckDB
-
 DROP TABLE IF EXISTS TempTable
 

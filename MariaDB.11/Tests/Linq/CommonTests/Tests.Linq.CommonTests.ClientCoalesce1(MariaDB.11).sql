@@ -10,7 +10,6 @@ WHERE
 	Coalesce(`x`.`Value1`, @Value1) > 10
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`p`.`Value1`
 FROM

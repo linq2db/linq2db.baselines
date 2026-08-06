@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	m_1.Id,
 	d.Id,
@@ -10,7 +9,6 @@ FROM
 		INNER JOIN LineEntity d ON m_1.Id = d.TransactionId
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	x.Id,
 	x.ValidOn

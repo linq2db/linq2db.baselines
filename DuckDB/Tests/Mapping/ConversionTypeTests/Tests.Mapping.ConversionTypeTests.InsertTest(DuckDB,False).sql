@@ -33,7 +33,6 @@ VALUES
 )
 
 -- DuckDB
-
 INSERT INTO TrimTestTable
 (
 	ID,
@@ -46,7 +45,6 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	r.ID,
 	r."Data"
@@ -56,7 +54,6 @@ ORDER BY
 	r.ID
 
 -- DuckDB
-
 SELECT
 	r.ID,
 	r."Data"

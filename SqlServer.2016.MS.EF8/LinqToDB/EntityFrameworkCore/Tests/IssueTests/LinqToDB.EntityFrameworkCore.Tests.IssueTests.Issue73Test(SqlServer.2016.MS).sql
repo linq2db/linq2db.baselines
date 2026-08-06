@@ -5,7 +5,6 @@ WHERE [i].[Name] = N'Name1_3'
 
 
 -- SqlServer.2016
-
 SELECT
 	Coalesce([a_Parent].[Name], N'') + N'>' + [x].[Name]
 FROM

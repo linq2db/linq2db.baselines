@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	tp12.Id,
 	tp12.ResourceID,

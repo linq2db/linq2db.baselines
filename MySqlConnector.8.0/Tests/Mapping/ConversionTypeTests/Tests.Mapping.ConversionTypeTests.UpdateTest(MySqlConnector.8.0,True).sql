@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 UPDATE
 	`TrimTestTable` `t1`
 SET
@@ -8,7 +7,6 @@ WHERE
 	`t1`.`ID` = 3
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 UPDATE
 	`TrimTestTable` `t`
 SET
@@ -17,7 +15,6 @@ WHERE
 	`t`.`Data` = '***XXX***'
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 UPDATE
 	`TrimTestTable` `t`
 SET
@@ -26,7 +23,6 @@ WHERE
 	`t`.`Data` = '***HHH***'
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`r`.`ID`,
 	`r`.`Data`
@@ -36,7 +32,6 @@ ORDER BY
 	`r`.`ID`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`r`.`ID`,
 	`r`.`Data`

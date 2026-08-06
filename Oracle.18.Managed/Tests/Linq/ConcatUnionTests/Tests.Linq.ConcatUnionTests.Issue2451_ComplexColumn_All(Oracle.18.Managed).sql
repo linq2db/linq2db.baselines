@@ -1,5 +1,4 @@
 ﻿-- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	p."FirstName"
 FROM
@@ -11,7 +10,6 @@ FROM
 	"Person" p_1
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	p."FirstName" || '/' || p."LastName"
 FROM

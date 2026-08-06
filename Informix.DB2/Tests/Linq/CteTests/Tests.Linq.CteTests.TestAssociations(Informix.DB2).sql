@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 WITH BooksCte (AuthorId, Title)
 AS
 (

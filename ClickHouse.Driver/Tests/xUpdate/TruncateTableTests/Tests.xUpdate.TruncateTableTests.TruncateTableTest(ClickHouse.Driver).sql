@@ -1,9 +1,7 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 DROP TABLE IF EXISTS TestTrun
 
 -- ClickHouse.Driver ClickHouse
-
 CREATE TABLE TestTrun
 (
 	ID     Int32,
@@ -15,10 +13,8 @@ ENGINE = MergeTree()
 ORDER BY ID
 
 -- ClickHouse.Driver ClickHouse
-
 TRUNCATE TABLE TestTrun
 
 -- ClickHouse.Driver ClickHouse
-
 DROP TABLE TestTrun
 

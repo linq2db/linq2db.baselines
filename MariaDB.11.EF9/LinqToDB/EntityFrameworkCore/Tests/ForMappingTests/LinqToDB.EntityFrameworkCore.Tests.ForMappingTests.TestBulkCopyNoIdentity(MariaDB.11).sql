@@ -1,5 +1,4 @@
 ﻿-- MariaDB.10.MySqlConnector MariaDB
-
 CREATE TEMPORARY TABLE `NoIdentity`
 (
 	`Id`   char(36) NOT NULL,
@@ -11,7 +10,6 @@ CREATE TEMPORARY TABLE `NoIdentity`
 
 
 -- MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `NoIdentity`
 (
 	`Id`,
@@ -24,7 +22,6 @@ VALUES
 
 
 -- MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Name`
@@ -34,7 +31,6 @@ FROM
 
 
 -- MariaDB.10.MySqlConnector MariaDB
-
 DROP TEMPORARY TABLE IF EXISTS `NoIdentity`
 
 

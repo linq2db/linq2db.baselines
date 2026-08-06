@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"g_2"."Date_1",
 	COUNT(*)
@@ -14,7 +13,6 @@ GROUP BY
 	"g_2"."Date_1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."CreatedOnUtc"
 FROM

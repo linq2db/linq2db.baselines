@@ -45,7 +45,6 @@ VALUES
 )
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[t1].[DeviceType],
 	[t1].[Id],
@@ -92,7 +91,6 @@ WHERE
 	[Issue4280].[Id] = @Id
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[t1].[DeviceType],
 	[t1].[Id],

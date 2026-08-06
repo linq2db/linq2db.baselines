@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 DELETE [c_1]
 FROM
 	[Child] [c_1]
@@ -24,7 +23,6 @@ VALUES
 )
 
 -- SqlServer.2022
-
 SELECT
 	COUNT(*)
 FROM
@@ -33,7 +31,6 @@ WHERE
 	[c_1].[ChildID] = 1001
 
 -- SqlServer.2022
-
 DELETE [c_1]
 FROM
 	[Child] [c_1]

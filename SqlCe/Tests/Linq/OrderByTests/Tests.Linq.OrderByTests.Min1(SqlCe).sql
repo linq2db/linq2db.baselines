@@ -1,7 +1,6 @@
 ﻿-- SqlCe
-
 SELECT
-	MIN([t1].[ParentID]) as [Min_1]
+	MIN([t1].[ParentID])
 FROM
 	[Parent] [t1]
 

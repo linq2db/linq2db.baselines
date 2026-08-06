@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 CREATE COLUMN TABLE "MergeTemp"
 (
 	"ID"   Integer      NOT NULL,
@@ -26,7 +25,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 UPDATE
 	"MergeTemp" "t1"
 SET
@@ -43,7 +41,6 @@ WHERE
 	)
 
 -- SapHana.Odbc SapHanaOdbc
-
 DO BEGIN
 	DECLARE EXIT HANDLER FOR SQL_ERROR_CODE 259 BEGIN END;
 	EXECUTE IMMEDIATE 'DROP TABLE "MergeTemp"';

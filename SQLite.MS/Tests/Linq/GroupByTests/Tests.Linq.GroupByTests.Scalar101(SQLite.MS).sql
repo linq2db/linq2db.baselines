@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	MAX([g_1].[ChildID])
 FROM

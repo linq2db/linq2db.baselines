@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"v"."Integer" / 33,
 	"v"."Decimal" / 33,

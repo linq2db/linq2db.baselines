@@ -33,10 +33,9 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
-	[t1].[Double] as [Double_1]
+	[t1].[Double]
 FROM
 	[CreateTableTypes] [t1]
 ORDER BY

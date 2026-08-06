@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	m_1.ParentID,
 	d_1.Key_1
@@ -18,7 +17,6 @@ FROM
 		) d_1 ON m_1.ParentID = d_1.Key_1
 
 -- Informix.DB2 Informix
-
 SELECT
 	p.ParentID
 FROM

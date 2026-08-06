@@ -10,7 +10,6 @@ WHERE
 	[LinqDataTypes].[ID] = 1
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	Length([t].[BinaryValue])
 FROM

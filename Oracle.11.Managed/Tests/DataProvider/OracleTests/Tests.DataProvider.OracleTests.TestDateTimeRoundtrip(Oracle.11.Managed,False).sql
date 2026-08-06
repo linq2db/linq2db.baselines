@@ -52,7 +52,6 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Date",
 	t1."DateTime",

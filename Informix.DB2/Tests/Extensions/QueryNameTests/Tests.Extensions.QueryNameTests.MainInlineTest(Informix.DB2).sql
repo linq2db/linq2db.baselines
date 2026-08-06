@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT /* Main */
 	p.ParentID,
 	p.Value1,

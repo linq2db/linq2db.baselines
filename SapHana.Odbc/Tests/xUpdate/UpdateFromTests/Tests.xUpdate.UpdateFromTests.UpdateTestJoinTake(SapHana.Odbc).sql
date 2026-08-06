@@ -102,7 +102,6 @@ WHERE
 	)
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"v"."id",
 	"v"."Value1",

@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	"m_1"."ParentID",
 	"d"."ChildID"
@@ -15,7 +14,6 @@ ORDER BY
 	"m_1"."ParentID"
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"p"."ParentID"
 FROM

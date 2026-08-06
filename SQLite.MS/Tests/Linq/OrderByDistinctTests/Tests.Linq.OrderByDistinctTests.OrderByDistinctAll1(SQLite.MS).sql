@@ -23,7 +23,6 @@ ORDER BY
 LIMIT @take OFFSET @skip
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

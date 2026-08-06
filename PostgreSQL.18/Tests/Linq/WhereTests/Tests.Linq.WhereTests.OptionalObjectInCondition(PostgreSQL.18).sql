@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL12
 DECLARE @p Text(1) -- String
 SET     @p = '1'
 
@@ -13,8 +13,7 @@ FROM
 WHERE
 	r."FirstName" = :p
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	r."FirstName",
 	r."PersonID",
@@ -26,7 +25,7 @@ FROM
 WHERE
 	1 = 0
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL12
 DECLARE @p Text(1) -- String
 SET     @p = '1'
 

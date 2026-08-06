@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	EXISTS(
 		SELECT
@@ -22,7 +21,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	EXISTS(
 		SELECT

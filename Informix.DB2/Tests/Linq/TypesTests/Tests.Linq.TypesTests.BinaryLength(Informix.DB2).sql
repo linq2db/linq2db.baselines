@@ -5,12 +5,11 @@ SET     @BinaryValue = {1,2,3,4,5}
 UPDATE
 	LinqDataTypes t
 SET
-	BinaryValue = @BinaryValue::BYTE
+	BinaryValue = @BinaryValue
 WHERE
 	t.ID = 1
 
 -- Informix.DB2 Informix
-
 SELECT FIRST 1
 	Length(t.BinaryValue)
 FROM
@@ -25,7 +24,7 @@ SET     @BinaryValue = NULL
 UPDATE
 	LinqDataTypes t
 SET
-	BinaryValue = @BinaryValue::BYTE
+	BinaryValue = @BinaryValue
 WHERE
 	t.ID = 1
 

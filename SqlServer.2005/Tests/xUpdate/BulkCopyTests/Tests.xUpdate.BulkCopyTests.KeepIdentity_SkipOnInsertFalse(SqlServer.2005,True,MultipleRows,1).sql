@@ -14,11 +14,9 @@ VALUES
 SELECT SCOPE_IDENTITY()
 
 -- SqlServer.2005
-
 SET IDENTITY_INSERT [AllTypes] ON
 
 -- SqlServer.2005
-
 INSERT INTO [AllTypes]
 (
 	[ID],
@@ -28,7 +26,6 @@ SELECT 13,200 UNION ALL
 SELECT 23,300
 
 -- SqlServer.2005
-
 SET IDENTITY_INSERT [AllTypes] OFF
 
 -- SqlServer.2005

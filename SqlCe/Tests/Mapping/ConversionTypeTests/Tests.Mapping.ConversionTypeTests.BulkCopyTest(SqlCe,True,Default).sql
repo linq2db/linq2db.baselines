@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 INSERT INTO [TrimTestTable]
 (
 	[ID],
@@ -8,20 +7,18 @@ INSERT INTO [TrimTestTable]
 SELECT 1,'***OOO***'
 
 -- SqlCe
-
 SELECT
 	[r].[ID],
-	[r].[Data] as [Data_1]
+	[r].[Data]
 FROM
 	[TrimTestTable] [r]
 ORDER BY
 	[r].[ID]
 
 -- SqlCe
-
 SELECT
 	[r].[ID],
-	[r].[Data] as [Data_1]
+	[r].[Data]
 FROM
 	[TrimTestTable] [r]
 ORDER BY

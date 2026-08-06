@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],
@@ -10,7 +9,6 @@ FROM
 	[Person] [t1]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[gr].[Gender],
 	COUNT(*)
@@ -20,7 +18,6 @@ GROUP BY
 	[gr].[Gender]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[m_1].[Key_1],
 	[d].[FirstName],
@@ -38,14 +35,12 @@ FROM
 		INNER JOIN [Person] [d] ON [m_1].[Key_1] = [d].[Gender]
 
 -- SQLite.Classic SQLite
-
 SELECT DISTINCT
 	[t1].[Gender]
 FROM
 	[Person] [t1]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[m_1].[PersonID],
 	[m_1].[FirstName],
@@ -57,14 +52,12 @@ FROM
 	[Person] [m_1]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[PersonID]
 FROM
 	[Person] [t1]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[m_1].[PersonID],
 	[m_1].[FirstName],
@@ -76,7 +69,6 @@ FROM
 	[Person] [m_1]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[PersonID]
 FROM

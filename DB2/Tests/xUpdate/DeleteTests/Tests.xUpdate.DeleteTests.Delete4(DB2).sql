@@ -1,12 +1,10 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 DELETE FROM
 	"GrandChild" "gc"
 WHERE
 	"gc"."GrandChildID" IN (1001, 1002)
 
 -- DB2 DB2.LUW DB2LUW
-
 INSERT INTO "GrandChild"
 (
 	"ParentID",
@@ -21,7 +19,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 INSERT INTO "GrandChild"
 (
 	"ParentID",
@@ -36,7 +33,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	COUNT(*)
 FROM
@@ -45,7 +41,6 @@ WHERE
 	"gc"."ParentID" = 1
 
 -- DB2 DB2.LUW DB2LUW
-
 DELETE FROM
 	"GrandChild" "t1"
 WHERE
@@ -64,7 +59,6 @@ WHERE
 	)
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	COUNT(*)
 FROM

@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE TABLE "FluentTemp_Update"
@@ -54,7 +53,6 @@ WHERE
 	t.ID = 1
 
 -- Oracle.11.Managed Oracle11
-
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp_Update"';
 EXCEPTION

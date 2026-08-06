@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[a_Patient].[PersonID],
 	[a_Patient].[Diagnosis]

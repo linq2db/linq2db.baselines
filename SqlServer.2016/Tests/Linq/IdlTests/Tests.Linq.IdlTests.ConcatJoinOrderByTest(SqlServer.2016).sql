@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016
-
 SELECT
 	[person_1].[PersonID],
 	[t1].[PersonID]

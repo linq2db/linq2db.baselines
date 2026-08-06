@@ -50,7 +50,6 @@ VALUES
 )
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"after_1"."Id",
 	"after_1"."Name",

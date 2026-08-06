@@ -1,9 +1,8 @@
 ﻿-- SqlCe
-
 SELECT
 	[a_Person].[personid],
 	[a_Person].[personname],
-	MAX([f].[added]) as [LastAdded]
+	MAX([f].[added])
 FROM
 	[activity649] [f]
 		INNER JOIN [person649] [a_Person] ON [f].[personid] = [a_Person].[personid]

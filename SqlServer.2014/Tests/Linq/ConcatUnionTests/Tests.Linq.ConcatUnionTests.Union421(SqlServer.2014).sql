@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014
-
 SELECT
 	[p_2].[val]
 FROM

@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	COUNT(*),
 	SUM("g_1"."ChildID"),

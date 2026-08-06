@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	x."PersonID" + y."item"
 FROM
@@ -14,7 +13,6 @@ FROM
 			SELECT 3 FROM sys.dual) y
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."FirstName",
 	t1."PersonID",

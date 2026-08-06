@@ -1,12 +1,10 @@
 ﻿-- SQLite.MS SQLite
-
 DELETE FROM
 	[Parent]
 WHERE
 	[Parent].[ParentID] > 1000
 
 -- SQLite.MS SQLite
-
 UPDATE
 	[Parent]
 SET

@@ -13,7 +13,6 @@ WHERE
 	[d].[Lang] = @lang
 
 -- SQLite.MS SQLite
-
 SELECT
 	[item_1].[Name],
 	[item_1].[Id]

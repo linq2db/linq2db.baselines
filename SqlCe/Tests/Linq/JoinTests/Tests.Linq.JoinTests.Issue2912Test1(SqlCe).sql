@@ -1,10 +1,9 @@
 ﻿-- SqlCe
-
 SELECT
 	CASE
 		WHEN [t1].[ParentID] IS NOT NULL THEN [t1].[ChildID]
 		ELSE 0
-	END as [c1]
+	END
 FROM
 	[Parent] [employee]
 		OUTER APPLY (

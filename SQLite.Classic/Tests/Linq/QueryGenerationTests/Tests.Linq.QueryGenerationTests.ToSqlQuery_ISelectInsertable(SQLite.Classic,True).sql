@@ -12,7 +12,6 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-
 INSERT INTO [TableWithIdentity]
 (
 	[Value]
@@ -23,7 +22,6 @@ FROM
 	[TableWithIdentitySrc] [t1]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]

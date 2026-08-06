@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[t1].[PersonID],
 	[t1].[FirstName],
@@ -9,8 +8,7 @@ SELECT
 FROM
 	[Person] [t1]
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	p."PersonID"
 FROM

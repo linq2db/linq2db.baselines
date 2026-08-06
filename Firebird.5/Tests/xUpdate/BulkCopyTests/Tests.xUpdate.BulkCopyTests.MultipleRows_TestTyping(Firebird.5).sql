@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 INSERT INTO "MultipleRowsTable"
 (
 	"Id",
@@ -10,7 +9,6 @@ SELECT 1,NULL,1 FROM rdb$database UNION ALL
 SELECT 2,1.5,-2.6 FROM rdb$database
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."DecimalValue1",

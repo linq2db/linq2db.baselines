@@ -1,10 +1,8 @@
 ﻿-- Sybase.Managed Sybase
-
 IF (OBJECT_ID(N'FluentTemp_InsertOrUpdate') IS NOT NULL)
 	DROP TABLE [FluentTemp_InsertOrUpdate]
 
 -- Sybase.Managed Sybase
-
 IF (OBJECT_ID(N'FluentTemp_InsertOrUpdate') IS NULL)
 	EXECUTE('
 		CREATE TABLE [FluentTemp_InsertOrUpdate]
@@ -34,7 +32,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 UPDATE
 	[FluentTemp_InsertOrUpdate]
 SET
@@ -60,7 +57,6 @@ BEGIN
 END
 
 -- Sybase.Managed Sybase
-
 IF (OBJECT_ID(N'FluentTemp_InsertOrUpdate') IS NOT NULL)
 	DROP TABLE [FluentTemp_InsertOrUpdate]
 

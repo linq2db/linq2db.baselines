@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 /* one */
 SELECT
 	x.FirstName,

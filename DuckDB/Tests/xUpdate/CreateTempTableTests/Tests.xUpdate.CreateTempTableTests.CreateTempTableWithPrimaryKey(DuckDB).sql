@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 CREATE TEMPORARY TABLE TableWithPrimaryKey
 (
 	"Key" INTEGER,
@@ -8,6 +7,5 @@ CREATE TEMPORARY TABLE TableWithPrimaryKey
 )
 
 -- DuckDB
-
 DROP TABLE IF EXISTS TableWithPrimaryKey
 

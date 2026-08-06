@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`i`.`Pk`,
 	`i`.`Id`,
@@ -11,7 +10,6 @@ WHERE
 	`i`.`StrValue` >= '0'
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`Pk`,
 	`t1`.`Id`,
@@ -21,7 +19,6 @@ FROM
 	`Isue2424Table` `t1`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`i`.`Pk`,
 	`i`.`Id`,
@@ -33,7 +30,6 @@ WHERE
 	`i`.`StrValue` >= '1'
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`Pk`,
 	`t1`.`Id`,
@@ -43,7 +39,6 @@ FROM
 	`Isue2424Table` `t1`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`i`.`Pk`,
 	`i`.`Id`,
@@ -55,7 +50,6 @@ WHERE
 	`i`.`StrValue` >= '3'
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`Pk`,
 	`t1`.`Id`,
@@ -65,7 +59,6 @@ FROM
 	`Isue2424Table` `t1`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`i`.`Pk`,
 	`i`.`Id`,
@@ -77,7 +70,6 @@ WHERE
 	`i`.`StrValue` >= '5'
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`Pk`,
 	`t1`.`Id`,
@@ -87,7 +79,6 @@ FROM
 	`Isue2424Table` `t1`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`i`.`Pk`,
 	`i`.`Id`,
@@ -99,7 +90,6 @@ WHERE
 	`i`.`StrValue` <= '0'
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`Pk`,
 	`t1`.`Id`,
@@ -109,7 +99,6 @@ FROM
 	`Isue2424Table` `t1`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`i`.`Pk`,
 	`i`.`Id`,
@@ -121,7 +110,6 @@ WHERE
 	`i`.`StrValue` <= '1'
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`Pk`,
 	`t1`.`Id`,
@@ -131,7 +119,6 @@ FROM
 	`Isue2424Table` `t1`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`i`.`Pk`,
 	`i`.`Id`,
@@ -143,7 +130,6 @@ WHERE
 	`i`.`StrValue` <= '3'
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`Pk`,
 	`t1`.`Id`,
@@ -153,7 +139,6 @@ FROM
 	`Isue2424Table` `t1`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`i`.`Pk`,
 	`i`.`Id`,
@@ -165,7 +150,6 @@ WHERE
 	`i`.`StrValue` <= '5'
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`Pk`,
 	`t1`.`Id`,
@@ -175,7 +159,6 @@ FROM
 	`Isue2424Table` `t1`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`i`.`Pk`,
 	`i`.`Id`,
@@ -187,7 +170,6 @@ WHERE
 	`i`.`StrValue` > '0'
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`Pk`,
 	`t1`.`Id`,
@@ -197,7 +179,6 @@ FROM
 	`Isue2424Table` `t1`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`i`.`Pk`,
 	`i`.`Id`,
@@ -209,7 +190,6 @@ WHERE
 	`i`.`StrValue` > '1'
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`Pk`,
 	`t1`.`Id`,
@@ -219,7 +199,6 @@ FROM
 	`Isue2424Table` `t1`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`i`.`Pk`,
 	`i`.`Id`,
@@ -231,7 +210,6 @@ WHERE
 	`i`.`StrValue` > '3'
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`Pk`,
 	`t1`.`Id`,
@@ -241,7 +219,6 @@ FROM
 	`Isue2424Table` `t1`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`i`.`Pk`,
 	`i`.`Id`,
@@ -253,7 +230,6 @@ WHERE
 	`i`.`StrValue` > '5'
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`Pk`,
 	`t1`.`Id`,
@@ -263,7 +239,6 @@ FROM
 	`Isue2424Table` `t1`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`i`.`Pk`,
 	`i`.`Id`,
@@ -275,7 +250,6 @@ WHERE
 	`i`.`StrValue` < '0'
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`Pk`,
 	`t1`.`Id`,
@@ -285,7 +259,6 @@ FROM
 	`Isue2424Table` `t1`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`i`.`Pk`,
 	`i`.`Id`,
@@ -297,7 +270,6 @@ WHERE
 	`i`.`StrValue` < '1'
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`Pk`,
 	`t1`.`Id`,
@@ -307,7 +279,6 @@ FROM
 	`Isue2424Table` `t1`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`i`.`Pk`,
 	`i`.`Id`,
@@ -319,7 +290,6 @@ WHERE
 	`i`.`StrValue` < '3'
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`Pk`,
 	`t1`.`Id`,
@@ -329,7 +299,6 @@ FROM
 	`Isue2424Table` `t1`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`i`.`Pk`,
 	`i`.`Id`,
@@ -341,7 +310,6 @@ WHERE
 	`i`.`StrValue` < '5'
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`Pk`,
 	`t1`.`Id`,
@@ -351,7 +319,6 @@ FROM
 	`Isue2424Table` `t1`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`i`.`Pk`,
 	`i`.`Id`,
@@ -363,7 +330,6 @@ WHERE
 	`i`.`StrValue` = '0'
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`Pk`,
 	`t1`.`Id`,
@@ -373,7 +339,6 @@ FROM
 	`Isue2424Table` `t1`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`i`.`Pk`,
 	`i`.`Id`,
@@ -385,7 +350,6 @@ WHERE
 	`i`.`StrValue` = '1'
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`Pk`,
 	`t1`.`Id`,
@@ -395,7 +359,6 @@ FROM
 	`Isue2424Table` `t1`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`i`.`Pk`,
 	`i`.`Id`,
@@ -407,7 +370,6 @@ WHERE
 	`i`.`StrValue` = '3'
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`Pk`,
 	`t1`.`Id`,
@@ -417,7 +379,6 @@ FROM
 	`Isue2424Table` `t1`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`i`.`Pk`,
 	`i`.`Id`,
@@ -429,7 +390,6 @@ WHERE
 	`i`.`StrValue` = '5'
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`Pk`,
 	`t1`.`Id`,
@@ -439,7 +399,6 @@ FROM
 	`Isue2424Table` `t1`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`i`.`Pk`,
 	`i`.`Id`,
@@ -451,7 +410,6 @@ WHERE
 	`i`.`StrValue` <> '0'
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`Pk`,
 	`t1`.`Id`,
@@ -461,7 +419,6 @@ FROM
 	`Isue2424Table` `t1`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`i`.`Pk`,
 	`i`.`Id`,
@@ -473,7 +430,6 @@ WHERE
 	`i`.`StrValue` <> '1'
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`Pk`,
 	`t1`.`Id`,
@@ -483,7 +439,6 @@ FROM
 	`Isue2424Table` `t1`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`i`.`Pk`,
 	`i`.`Id`,
@@ -495,7 +450,6 @@ WHERE
 	`i`.`StrValue` <> '3'
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`Pk`,
 	`t1`.`Id`,
@@ -505,7 +459,6 @@ FROM
 	`Isue2424Table` `t1`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`i`.`Pk`,
 	`i`.`Id`,
@@ -517,7 +470,6 @@ WHERE
 	`i`.`StrValue` <> '5'
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`Pk`,
 	`t1`.`Id`,

@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -11,7 +10,6 @@ WHERE
 	r.ColumnNullable = toUUID('bd3973a5-4323-4dd8-9f4f-df9f93e2a627')
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -23,13 +21,11 @@ WHERE
 	r.ColumnNullable = toUUID('bd3973a5-4323-4dd8-9f4f-df9f93e2a627')
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	GuidTable
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO GuidTable
 (
 	Id,
@@ -44,7 +40,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO GuidTable
 (
 	Id,
@@ -59,7 +54,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Column,
@@ -70,13 +64,11 @@ ORDER BY
 	t1.Id
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	GuidTable
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO GuidTable
 (
 	Id,
@@ -88,7 +80,6 @@ VALUES
 (2,toUUID('a948600d-de21-4f74-8ac2-9516b287076e'),toUUID('bd3973a5-4323-4dd8-9f4f-df9f93e2a627'))
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Column,
@@ -99,7 +90,6 @@ ORDER BY
 	t1.Id
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	GuidTable
 DELETE WHERE 1
@@ -107,7 +97,6 @@ DELETE WHERE 1
 INSERT INTO GuidTable(Id, Column, ColumnNullable) VALUES
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Column,

@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	GROUP_CONCAT(CONCAT('test:', CAST(`grp_1`.`ch` AS CHAR(11))) SEPARATOR ';')
 FROM

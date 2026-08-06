@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 CREATE TABLE `aa`
 (
 	`bb` INT           NOT NULL,
@@ -26,7 +25,6 @@ VALUES
 )
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t1`.`bb`,
 	`t1`.`cc`
@@ -34,6 +32,5 @@ FROM
 	`aa` `t1`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 DROP TABLE `aa`
 

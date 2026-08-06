@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 MERGE INTO "Person" "Target"
 USING (
 	SELECT
@@ -31,7 +30,6 @@ SET
 	"MiddleName" = 'R.I.P.'
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t1"."FirstName",
 	"t1"."PersonID",

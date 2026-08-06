@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained.MS SqlServer.2019
-
 SELECT TOP (1)
 	DB_NAME()
 FROM
@@ -18,7 +17,6 @@ SET     @id = 1
 SELECT PersonID, FirstName FROM Person WHERE PersonID = @id
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT TOP (1)
 	DB_NAME()
 FROM

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 SELECT
 	[t2].[Id],
 	[t2].[Value_1]

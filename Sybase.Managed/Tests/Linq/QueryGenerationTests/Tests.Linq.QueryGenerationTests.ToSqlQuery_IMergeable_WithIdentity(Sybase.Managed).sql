@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 MERGE INTO [TableWithIdentity] [Target]
 USING (
 	SELECT 1 AS [Id], 2 AS [Value_1]) [Source]

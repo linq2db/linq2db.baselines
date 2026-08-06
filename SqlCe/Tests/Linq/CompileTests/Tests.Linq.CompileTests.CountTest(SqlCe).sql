@@ -3,7 +3,7 @@ DECLARE @p Int -- Int32
 SET     @p = 1
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Child] [c_1]
 WHERE
@@ -14,7 +14,7 @@ DECLARE @p Int -- Int32
 SET     @p = -1
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Child] [c_1]
 WHERE

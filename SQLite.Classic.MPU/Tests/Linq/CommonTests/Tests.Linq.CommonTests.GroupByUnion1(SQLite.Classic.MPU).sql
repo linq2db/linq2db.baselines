@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[tt].[Key_1],
 	SUM([tt].[ChildID])

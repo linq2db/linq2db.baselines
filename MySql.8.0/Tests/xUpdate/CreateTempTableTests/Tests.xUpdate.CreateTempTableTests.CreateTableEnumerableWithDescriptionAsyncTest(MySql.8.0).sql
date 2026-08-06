@@ -1,9 +1,7 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 DROP TABLE IF EXISTS `TempTable`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 CREATE TABLE IF NOT EXISTS `TempTable`
 (
 	`Name` VARCHAR(20) NOT NULL,
@@ -12,7 +10,6 @@ CREATE TABLE IF NOT EXISTS `TempTable`
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 INSERT INTO `TempTable`
 (
 	`Name`
@@ -21,7 +18,6 @@ VALUES
 ('John')
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t`.`Name`
 FROM
@@ -29,6 +25,5 @@ FROM
 		INNER JOIN `TempTable` `t` ON `p`.`FirstName` = `t`.`Name`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 DROP TABLE IF EXISTS `TempTable`
 

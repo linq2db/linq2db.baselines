@@ -12,7 +12,6 @@ VALUES
 )
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 CREATE TEMPORARY TABLE IF NOT EXISTS `TMP_MIN_TEMPORARY`
 (
 	`IDX`   INT         AUTO_INCREMENT NOT NULL,
@@ -22,7 +21,6 @@ CREATE TEMPORARY TABLE IF NOT EXISTS `TMP_MIN_TEMPORARY`
 )
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 DROP TEMPORARY TABLE IF EXISTS `TMP_MIN_TEMPORARY`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -40,7 +38,6 @@ VALUES
 
 RollbackTransaction
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	COUNT(*)
 FROM

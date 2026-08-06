@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 SELECT
 	IIF([s].[String] = 'abc', NULL, [s].[String])
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	[s].[Int]
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	COUNT(*)
 FROM
@@ -17,7 +15,6 @@ WHERE
 	[s].[String] = 'abc' OR [s].[String] IS NULL
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	COUNT(*)
 FROM
@@ -26,7 +23,6 @@ WHERE
 	NOT ([s].[String] = 'abc' OR [s].[String] IS NULL)
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	IIF([s].[String] = 'xyz', NULL, [s].[String])
 FROM
@@ -35,7 +31,6 @@ ORDER BY
 	[s].[Int]
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	COUNT(*)
 FROM
@@ -44,7 +39,6 @@ WHERE
 	[s].[String] = 'xyz' OR [s].[String] IS NULL
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	COUNT(*)
 FROM
@@ -53,7 +47,6 @@ WHERE
 	NOT ([s].[String] = 'xyz' OR [s].[String] IS NULL)
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[s].[String]
 FROM
@@ -62,7 +55,6 @@ ORDER BY
 	[s].[Int]
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	COUNT(*)
 FROM
@@ -71,7 +63,6 @@ WHERE
 	[s].[String] IS NULL
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	COUNT(*)
 FROM
@@ -80,7 +71,6 @@ WHERE
 	[s].[String] IS NOT NULL
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	IIF([s].[NullableString] = 'abc', NULL, [s].[NullableString])
 FROM
@@ -89,7 +79,6 @@ ORDER BY
 	[s].[Int]
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	COUNT(*)
 FROM
@@ -98,7 +87,6 @@ WHERE
 	[s].[NullableString] = 'abc' OR [s].[NullableString] IS NULL
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	COUNT(*)
 FROM
@@ -107,7 +95,6 @@ WHERE
 	NOT ([s].[NullableString] = 'abc' OR [s].[NullableString] IS NULL)
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	IIF([s].[NullableString] = 'xyz', NULL, [s].[NullableString])
 FROM
@@ -116,7 +103,6 @@ ORDER BY
 	[s].[Int]
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	COUNT(*)
 FROM
@@ -125,7 +111,6 @@ WHERE
 	[s].[NullableString] = 'xyz' OR [s].[NullableString] IS NULL
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	COUNT(*)
 FROM
@@ -134,7 +119,6 @@ WHERE
 	NOT ([s].[NullableString] = 'xyz' OR [s].[NullableString] IS NULL)
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[s].[NullableString]
 FROM
@@ -143,7 +127,6 @@ ORDER BY
 	[s].[Int]
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	COUNT(*)
 FROM
@@ -152,7 +135,6 @@ WHERE
 	[s].[NullableString] IS NULL
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	COUNT(*)
 FROM

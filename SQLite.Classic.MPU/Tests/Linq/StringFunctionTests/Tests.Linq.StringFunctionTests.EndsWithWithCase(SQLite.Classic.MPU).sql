@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	COUNT(*)
 FROM
@@ -9,7 +8,6 @@ WHERE
 	Substr([p].[Diagnosis], -11) = 'Persecution' AND [p].[PersonID] = 2
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	COUNT(*)
 FROM
@@ -19,7 +17,6 @@ WHERE
 	[p].[PersonID] = 2
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	COUNT(*)
 FROM
@@ -29,7 +26,6 @@ WHERE
 	Substr([p].[Diagnosis], -11) = 'persecution' AND [p].[PersonID] = 2
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	COUNT(*)
 FROM

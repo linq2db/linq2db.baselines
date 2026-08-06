@@ -1,10 +1,8 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 DELETE FROM
 	"TestMerge1" "t1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 DELETE FROM
 	"TestMerge2" "t1"
 
@@ -144,7 +142,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Field1",
@@ -170,7 +167,6 @@ ORDER BY
 	"t1"."Id"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Field1",

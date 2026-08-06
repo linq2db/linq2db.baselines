@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 INSERT INTO "TableToInsert"
 (
 	"Id",
@@ -16,8 +15,7 @@ FROM
 WHERE
 	t."Id" IS NULL
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 INSERT INTO "TableToInsert"
 (
 	"Id",

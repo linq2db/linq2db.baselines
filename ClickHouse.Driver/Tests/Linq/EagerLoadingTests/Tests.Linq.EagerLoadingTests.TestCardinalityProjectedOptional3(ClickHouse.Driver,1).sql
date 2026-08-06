@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	e.Id,
 	a_ObjectBOptional.Id,

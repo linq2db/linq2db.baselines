@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008
-
 SELECT
 	Floor([t].[Value_1])
 FROM

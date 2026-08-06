@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 CREATE TABLE IF NOT EXISTS `FluentTemp_UpdateAsync`
 (
 	`ID`       INT         NOT NULL,
@@ -45,6 +44,5 @@ WHERE
 	`t`.`ID` = 1
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 DROP TABLE IF EXISTS `FluentTemp_UpdateAsync`
 

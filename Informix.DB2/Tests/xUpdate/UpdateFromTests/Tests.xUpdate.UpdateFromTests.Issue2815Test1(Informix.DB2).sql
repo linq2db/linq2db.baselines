@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 UPDATE
 	Issue2815Table1
 SET

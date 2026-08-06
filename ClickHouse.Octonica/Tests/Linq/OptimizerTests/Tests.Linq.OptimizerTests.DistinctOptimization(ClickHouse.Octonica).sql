@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	s.Key1,
 	s.Key2,
@@ -23,7 +22,6 @@ FROM
 		) d_1 ON d_1.DataKey11 = s.DataKey11 AND d_1.DataKey31 = s.DataKey31
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	p.Key1,
 	p.Key2,

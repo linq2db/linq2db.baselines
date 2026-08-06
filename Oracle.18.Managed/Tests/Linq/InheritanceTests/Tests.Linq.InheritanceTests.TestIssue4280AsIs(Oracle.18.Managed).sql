@@ -45,7 +45,6 @@ VALUES
 )
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."DeviceType",
 	t1."Id",
@@ -92,7 +91,6 @@ WHERE
 	t1."Id" = :Id
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."DeviceType",
 	t1."Id",

@@ -1,10 +1,8 @@
 ﻿-- SQLite.Classic SQLite
-
 DELETE FROM
 	[TestMerge1]
 
 -- SQLite.Classic SQLite
-
 DELETE FROM
 	[TestMerge2]
 
@@ -600,7 +598,6 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Field1],
@@ -624,7 +621,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Field1],

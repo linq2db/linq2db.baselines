@@ -1,12 +1,10 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	LTRIM(t."VarCharColumn", '.+')
 FROM
 	"StringTrimTable" t
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."CharColumn",

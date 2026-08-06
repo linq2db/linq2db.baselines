@@ -1,12 +1,10 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	Coalesce([t].[VarCharColumn], '') + N'...++'
 FROM
 	[StringTrimTable] [t]
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[t1].[Id],
 	[t1].[CharColumn],

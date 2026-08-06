@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[e].[Id]
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	Coalesce([e].[StrReq], N'') + N'X'
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Str1],

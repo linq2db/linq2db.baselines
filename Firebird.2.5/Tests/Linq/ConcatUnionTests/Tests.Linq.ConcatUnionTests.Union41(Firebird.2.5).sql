@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	"p"."ParentID",
 	CAST('1' AS CHAR(1))

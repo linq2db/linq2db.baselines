@@ -59,7 +59,6 @@ VALUES
 )
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	r.ID,
 	r."StringValue"
@@ -71,7 +70,6 @@ ORDER BY
 	r.ID
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	r.ID,
 	r."IntValue",

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 UPDATE
 	[TableWithData]
 SET
@@ -20,7 +19,6 @@ WHERE
 	[TableWithData].[Id] > 3
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value],

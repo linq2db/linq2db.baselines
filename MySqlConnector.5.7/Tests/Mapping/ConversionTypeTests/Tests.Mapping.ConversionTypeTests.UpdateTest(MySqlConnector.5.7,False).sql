@@ -36,7 +36,6 @@ WHERE
 	`t`.`Data` = @p
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`r`.`ID`,
 	`r`.`Data`
@@ -46,7 +45,6 @@ ORDER BY
 	`r`.`ID`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`r`.`ID`,
 	`r`.`Data`

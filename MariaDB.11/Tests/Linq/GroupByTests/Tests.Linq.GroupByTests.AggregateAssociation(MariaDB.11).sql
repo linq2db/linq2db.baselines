@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	SUM(Coalesce(`a_Parent`.`Value1`, 0))
 FROM

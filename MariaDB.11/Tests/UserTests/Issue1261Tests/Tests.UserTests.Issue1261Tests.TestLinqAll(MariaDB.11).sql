@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	NOT EXISTS(
 		SELECT
@@ -11,7 +10,6 @@ SELECT
 	) as `c1`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	NOT EXISTS(
 		SELECT

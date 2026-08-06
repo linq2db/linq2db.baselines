@@ -29,7 +29,6 @@ WHERE
 	c_1.ChildID > 1000
 
 -- DuckDB
-
 DELETE FROM
 	Child c_1
 WHERE

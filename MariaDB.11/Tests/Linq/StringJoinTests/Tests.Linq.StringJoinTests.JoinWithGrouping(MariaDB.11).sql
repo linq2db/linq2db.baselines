@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`g_1`.`Id`,
 	GROUP_CONCAT(Coalesce(`g_1`.`NullableValue`, '') SEPARATOR ', '),
@@ -12,7 +11,6 @@ ORDER BY
 	`g_1`.`Id`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`PK`,
 	`t1`.`Id`,

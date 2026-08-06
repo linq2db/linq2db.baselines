@@ -5,8 +5,8 @@ DECLARE @p Int -- Int32
 SET     @p = 14
 
 SELECT
-	[c_1].[value] as [Value_1],
-	[c_1].[id] as [Id]
+	[c_1].[value],
+	[c_1].[id]
 FROM
 	(
 		SELECT * FROM
@@ -25,8 +25,8 @@ DECLARE @endId Int -- Int32
 SET     @endId = 14
 
 SELECT
-	[t].[value] as [Value_1],
-	[t].[id] as [Id]
+	[t].[value],
+	[t].[id]
 FROM
 	[sample_class] [t]
 WHERE

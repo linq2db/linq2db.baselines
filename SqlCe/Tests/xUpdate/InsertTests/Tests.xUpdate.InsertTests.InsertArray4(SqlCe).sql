@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 DELETE FROM
 	[LinqDataTypes]
 WHERE
@@ -43,7 +42,6 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT TOP (2)
 	[t].[ID],
 	[t].[MoneyValue],
@@ -58,7 +56,6 @@ WHERE
 	[t].[ID] = 1001
 
 -- SqlCe
-
 DELETE FROM
 	[LinqDataTypes]
 WHERE

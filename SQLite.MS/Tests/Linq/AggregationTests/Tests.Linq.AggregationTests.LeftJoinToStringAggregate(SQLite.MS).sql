@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[u].[Id],
 	[u].[Name],
@@ -33,7 +32,6 @@ FROM
 		) [aq] ON [aq].[Key_1] = [u].[Id]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Name]
@@ -41,7 +39,6 @@ FROM
 	[User] [t1]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[UserId],
 	[t1].[MachineId],

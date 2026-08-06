@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	"t1"."TypeDiscriminator",
 	"t1"."InheritanceParentId",
@@ -8,7 +7,6 @@ FROM
 	"InheritanceParent" "t1"
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t1"."TypeDiscriminator",
 	"t1"."InheritanceChildId",

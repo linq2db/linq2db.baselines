@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 INSERT INTO Person
 (
 	FirstName,
@@ -18,7 +17,6 @@ VALUES
 )
 
 -- ClickHouse.MySql ClickHouse
-
 ALTER TABLE
 	Person
 UPDATE
@@ -27,7 +25,6 @@ WHERE
 	startsWith(FirstName, 'Update14')
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	COUNT(*)
 FROM

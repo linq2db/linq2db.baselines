@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 SELECT
 	[e].[Id]
 FROM
@@ -8,7 +7,6 @@ WHERE
 	(Coalesce([e].[StrReq], N'') + N' I') = N'Programmer I'
 
 -- SqlServer.2005
-
 SELECT
 	[t1].[Id],
 	[t1].[Str1],

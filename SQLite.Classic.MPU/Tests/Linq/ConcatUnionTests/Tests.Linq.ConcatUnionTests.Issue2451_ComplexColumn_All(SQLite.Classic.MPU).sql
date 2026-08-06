@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[p].[FirstName]
 FROM
@@ -11,7 +10,6 @@ FROM
 	[Person] [p_1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[p].[FirstName] || '/' || [p].[LastName]
 FROM

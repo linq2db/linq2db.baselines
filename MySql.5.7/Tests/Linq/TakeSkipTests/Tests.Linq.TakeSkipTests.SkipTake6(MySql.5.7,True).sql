@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`c_1`.`ParentID`,
 	`c_1`.`ChildID`
@@ -16,7 +15,6 @@ WHERE
 	`c_1`.`ParentID` = `p_1`.`ParentID`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`c_1`.`ParentID`,
 	`c_1`.`ChildID`

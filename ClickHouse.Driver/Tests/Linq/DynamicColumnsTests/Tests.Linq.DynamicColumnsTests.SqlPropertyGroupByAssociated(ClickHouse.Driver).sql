@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	a_Patient.Diagnosis,
 	COUNT(*)

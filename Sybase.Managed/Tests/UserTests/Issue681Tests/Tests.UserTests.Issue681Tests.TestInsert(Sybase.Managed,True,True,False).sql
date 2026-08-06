@@ -1,10 +1,8 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	@@SERVERNAME
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 1
 	DB_NAME()
 FROM

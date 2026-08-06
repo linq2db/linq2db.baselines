@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	COUNT(*)
 FROM
@@ -8,7 +7,6 @@ WHERE
 	s."Int" IN (NULL, NULL)
 
 -- Informix.DB2 Informix
-
 SELECT
 	COUNT(*)
 FROM

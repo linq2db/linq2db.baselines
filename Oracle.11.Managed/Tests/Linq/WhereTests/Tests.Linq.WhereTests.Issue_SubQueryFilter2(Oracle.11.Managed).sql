@@ -46,7 +46,6 @@ ORDER BY
 	p."PersonID"
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."PersonID",
 	t1."Diagnosis"
@@ -54,7 +53,6 @@ FROM
 	"Patient" t1
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."FirstName",
 	t1."PersonID",

@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT
 	CAST([t].[MoneyValue] AS INTEGER)
 FROM

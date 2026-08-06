@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"item_1"."FirstName",
 	"item_1"."PersonID",

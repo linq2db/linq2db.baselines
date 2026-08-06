@@ -1,12 +1,10 @@
 ﻿-- Firebird.3 Firebird3
-
 DELETE FROM
 	"Child" "c_1"
 WHERE
 	"c_1"."ParentID" > 1000
 
 -- Firebird.3 Firebird3
-
 DELETE FROM
 	"Parent" "p"
 WHERE
@@ -58,14 +56,12 @@ WHERE
 	"c_1"."ParentID" = @id
 
 -- Firebird.3 Firebird3
-
 DELETE FROM
 	"Child" "c_1"
 WHERE
 	"c_1"."ParentID" > 1000
 
 -- Firebird.3 Firebird3
-
 DELETE FROM
 	"Parent" "p"
 WHERE

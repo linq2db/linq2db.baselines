@@ -7,7 +7,7 @@ DECLARE @item_2 Int -- Int32
 SET     @item_2 = 30
 
 SELECT
-	[t1].[item] as [item_1]
+	[t1].[item]
 FROM
 	(
 		SELECT @item AS [item]

@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 SELECT DISTINCT
 	DatePart('yyyy', [a_Types].[DateTimeValue])
 FROM

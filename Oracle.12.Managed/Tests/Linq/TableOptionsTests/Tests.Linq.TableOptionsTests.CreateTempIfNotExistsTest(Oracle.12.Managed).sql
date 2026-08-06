@@ -1,5 +1,4 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
-
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "CreateIfNotExistsTable"';
 EXCEPTION
@@ -10,7 +9,6 @@ EXCEPTION
 END;
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE GLOBAL TEMPORARY TABLE "CreateIfNotExistsTable"
@@ -28,7 +26,6 @@ EXCEPTION
 END;
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -36,7 +33,6 @@ FROM
 	"CreateIfNotExistsTable" t1
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE TABLE "CreateIfNotExistsTable"
@@ -53,7 +49,6 @@ EXCEPTION
 END;
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "CreateIfNotExistsTable"';
 EXCEPTION
@@ -64,7 +59,6 @@ EXCEPTION
 END;
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 BEGIN
 	BEGIN
 		EXECUTE IMMEDIATE 'TRUNCATE TABLE "CreateIfNotExistsTable"';

@@ -1,16 +1,14 @@
 ﻿-- SqlCe
-
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Person] [p]
 WHERE
 	[p].[FirstName] LIKE '%jOh%' ESCAPE '~' AND [p].[PersonID] = 1
 
 -- SqlCe
-
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Person] [p]
 WHERE

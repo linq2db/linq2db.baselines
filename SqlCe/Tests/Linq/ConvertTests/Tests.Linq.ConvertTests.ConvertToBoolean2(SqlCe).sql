@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[p].[c1]
 FROM

@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t."Id",
 	CONCAT_WS('', Coalesce(t."Str1", ''), Coalesce(t."Str2", ''), Coalesce(t."StrReq", ''))
@@ -8,8 +7,7 @@ FROM
 ORDER BY
 	t."Id"
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Str1",

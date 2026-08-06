@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."SmallIntValue",
 	"t1"."SmallIntValue",

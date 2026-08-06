@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT TOP 30
 	[x].[Id],
 	[x].[CarNo],
@@ -50,7 +49,6 @@ ORDER BY
 	[x].[CarNo]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	COUNT(*)
 FROM

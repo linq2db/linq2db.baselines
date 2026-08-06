@@ -1,11 +1,10 @@
-﻿-- PostgreSQL.18 PostgreSQL
-
+﻿-- PostgreSQL.18 PostgreSQL12
 SELECT
 	MAX(t1."PersonID")
 FROM
 	"Person" t1
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL12
 DECLARE @ID Integer -- Int32
 SET     @ID = 12
 
@@ -40,8 +39,7 @@ VALUES
 	'M'
 )
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	t1."FirstName",
 	t1."PersonID",

@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 CREATE TABLE "ClobEntity"
 (
 	"Id"         Int   NOT NULL,
@@ -31,7 +30,6 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."ClobValue",
@@ -42,6 +40,5 @@ WHERE
 	t1."Id" = 1 AND ROWNUM <= 1
 
 -- Oracle.11.Managed Oracle11
-
 DROP TABLE "ClobEntity"
 

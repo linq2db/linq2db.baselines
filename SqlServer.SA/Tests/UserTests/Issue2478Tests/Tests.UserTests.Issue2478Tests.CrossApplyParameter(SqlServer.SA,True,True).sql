@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 SELECT
 	[q].[ParentID],
 	[c_2].[Count_1],
@@ -19,7 +18,6 @@ WHERE
 	[c_2].[Count_1] > 0
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	COUNT(*)
 FROM

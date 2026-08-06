@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
-
 UPDATE
 	[TableWithConverterValue]
 SET
@@ -8,7 +7,6 @@ WHERE
 	[TableWithConverterValue].[Id] = 1
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT TOP (2)
 	[x].[Id],
 	[x].[NoConversion],
@@ -20,7 +18,6 @@ WHERE
 	[x].[Id] = 1
 
 -- SqlServer.2017.MS SqlServer.2017
-
 UPDATE
 	[TableWithConverterValue]
 SET
@@ -29,7 +26,6 @@ WHERE
 	[TableWithConverterValue].[Id] = 2
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT TOP (2)
 	[x].[Id],
 	[x].[NoConversion],
@@ -41,7 +37,6 @@ WHERE
 	[x].[Id] = 2
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[x].[Id],
 	[x].[NoConversion],

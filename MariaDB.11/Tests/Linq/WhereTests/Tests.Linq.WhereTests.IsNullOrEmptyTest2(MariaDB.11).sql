@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`nm`.`FirstName`
 FROM
@@ -8,7 +7,6 @@ WHERE
 	CHAR_LENGTH(`nm`.`FirstName`) <> 0
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`FirstName`,
 	`t1`.`PersonID`,

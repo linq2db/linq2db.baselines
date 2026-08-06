@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 MERGE INTO CacheTestTable Target
 USING (
 	SELECT 1::Int AS Id, 1::Int AS Value_1 FROM table(set{1})
@@ -29,7 +28,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1."Value"
@@ -39,7 +37,6 @@ ORDER BY
 	t1.Id
 
 -- Informix.DB2 Informix
-
 MERGE INTO CacheTestTable Target
 USING (
 	SELECT 1::Int AS Id, 1::Int AS Value_1 FROM table(set{1})
@@ -71,7 +68,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1."Value"

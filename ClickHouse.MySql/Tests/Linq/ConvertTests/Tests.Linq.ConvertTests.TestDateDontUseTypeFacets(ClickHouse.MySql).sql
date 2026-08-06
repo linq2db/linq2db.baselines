@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	g_2.Date_1,
 	COUNT(*)
@@ -14,7 +13,6 @@ GROUP BY
 	g_2.Date_1
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.CreatedOnUtc
 FROM

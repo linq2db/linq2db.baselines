@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 INSERT INTO "Issue4717Address"
 (
 	"Id",
@@ -17,8 +16,7 @@ VALUES
 	'12345'
 )
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 INSERT INTO "Issue4717Warehouse"
 (
 	"Id",
@@ -32,8 +30,7 @@ VALUES
 	1
 )
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 INSERT INTO "Issue4717UnitOfMeasure"
 (
 	"Id",
@@ -47,7 +44,7 @@ VALUES
 	'ea'
 )
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DECLARE @productId Integer -- Int32
 SET     @productId = 1
 
@@ -66,7 +63,7 @@ VALUES
 	1
 )
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DECLARE @includedProductId Integer -- Int32
 SET     @includedProductId = 2
 
@@ -85,7 +82,7 @@ VALUES
 	1
 )
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DECLARE @productId Integer -- Int32
 SET     @productId = 1
 DECLARE @includedProductId Integer -- Int32
@@ -104,7 +101,7 @@ VALUES
 	10
 )
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DECLARE @productId Integer -- Int32
 SET     @productId = 1
 
@@ -121,7 +118,7 @@ VALUES
 	10
 )
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DECLARE @productId Integer -- Int32
 SET     @productId = 1
 

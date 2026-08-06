@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT DISTINCT
 	a_Parent.ParentID,
 	a_Parent.Value1

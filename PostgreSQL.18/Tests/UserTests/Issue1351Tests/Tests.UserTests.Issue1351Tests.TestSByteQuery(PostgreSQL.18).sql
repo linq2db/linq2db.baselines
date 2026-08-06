@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
-
+﻿-- PostgreSQL.18 PostgreSQL12
 SELECT
 	t1."ID",
 	t1."TestField",
@@ -9,8 +8,7 @@ FROM
 WHERE
 	t1."TestField" = 0
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	t1."ID",
 	t1."TestField",

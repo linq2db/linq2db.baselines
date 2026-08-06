@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[x].[FirstName],
 	[x].[LastName],
@@ -20,7 +19,6 @@ ORDER BY
 	[x].[PersonID] DESC
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

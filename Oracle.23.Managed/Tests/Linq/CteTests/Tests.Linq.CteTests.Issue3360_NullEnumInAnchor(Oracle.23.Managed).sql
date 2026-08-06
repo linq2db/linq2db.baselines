@@ -1,5 +1,4 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 WITH "cte" ("Id", "Enum1")
 AS
 (

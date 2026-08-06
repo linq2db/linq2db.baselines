@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[g_1].[GroupId],
 	SUM([g_1].[DataValue]),
@@ -27,7 +26,6 @@ GROUP BY
 	[g_1].[GroupId]
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[t1].[Id],
 	[t1].[GroupId],

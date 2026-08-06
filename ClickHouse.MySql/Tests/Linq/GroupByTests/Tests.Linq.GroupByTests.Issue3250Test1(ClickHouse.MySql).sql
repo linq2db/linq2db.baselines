@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	concat(toString(g_2.Message), ' items have not been processed, e.g. #', Coalesce(toString(g_2.Message_1), ''), '.')
 FROM

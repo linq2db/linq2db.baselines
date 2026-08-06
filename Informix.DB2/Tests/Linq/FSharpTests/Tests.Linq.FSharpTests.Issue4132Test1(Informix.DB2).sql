@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 INSERT INTO Issue4132Table
 (
 	Id,

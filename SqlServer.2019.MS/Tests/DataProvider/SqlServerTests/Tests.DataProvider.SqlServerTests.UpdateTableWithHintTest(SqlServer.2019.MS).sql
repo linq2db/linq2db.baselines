@@ -1,12 +1,10 @@
 ﻿-- SqlServer.2019.MS SqlServer.2019
-
 UPDATE
 	[Person]
 SET
 	[FirstName] = [Person].[FirstName]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 UPDATE
 	[t1]
 SET

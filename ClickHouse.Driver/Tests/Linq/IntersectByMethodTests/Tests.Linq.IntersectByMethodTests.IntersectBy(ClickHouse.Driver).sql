@@ -1,12 +1,11 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	e_1.Id,
 	e_1.TestId
 FROM
 	(
 		SELECT
-			ROW_NUMBER() OVER (PARTITION BY e.TestId ORDER BY e.Id) as RowNumber,
+			toInt64(ROW_NUMBER() OVER (PARTITION BY e.TestId ORDER BY e.Id)) as RowNumber,
 			e.Id as Id,
 			e.TestId as TestId
 		FROM
@@ -20,7 +19,6 @@ ORDER BY
 	e_1.Id
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.Id,
 	t1.TestId

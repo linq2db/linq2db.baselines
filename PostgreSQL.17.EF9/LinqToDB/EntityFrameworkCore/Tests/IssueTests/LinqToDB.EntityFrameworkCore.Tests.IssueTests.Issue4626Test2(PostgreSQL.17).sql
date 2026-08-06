@@ -1,7 +1,6 @@
 ﻿
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	m_1."Id",
 	d_1."Key_1",
@@ -24,10 +23,7 @@ FROM
 
 
 
-
-
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	c_1."Id"
 FROM

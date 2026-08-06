@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	COUNT(*)
 FROM
@@ -8,7 +7,6 @@ WHERE
 	i.One = 1 AND i.Two = i.One * 2
 
 -- DuckDB
-
 SELECT
 	COUNT(*)
 FROM
@@ -18,7 +16,6 @@ WHERE
 	i.One >= NULL AND i.Two = -1 AND i.Three = i.Four
 
 -- DuckDB
-
 SELECT
 	COUNT(*)
 FROM
@@ -28,7 +25,6 @@ WHERE
 	i.One >= NULL AND i.Two = 2
 
 -- DuckDB
-
 SELECT
 	COUNT(*)
 FROM

@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	p.ParentID,
 	IndexedParent_1.Item1,
@@ -20,7 +19,6 @@ ORDER BY
 	IndexedParent_1.ParentID
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.ParentID,
 	t1.Value1

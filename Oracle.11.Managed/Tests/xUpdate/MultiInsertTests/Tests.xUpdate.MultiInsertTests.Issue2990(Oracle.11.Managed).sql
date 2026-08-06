@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 INSERT FIRST
 WHEN 1 = 1 THEN
 	INTO "Dest2"

@@ -1,17 +1,13 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT Cast('1' as char)
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT Cast('1' as char)
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT Cast('1' as char(1))
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT Cast('1' as char(1))
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80

@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	"t1".ID,
 	"t1"."Value_1"
@@ -13,7 +12,6 @@ FROM
 	) "t1"
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1".ID,
 	"t1"."Value_1"

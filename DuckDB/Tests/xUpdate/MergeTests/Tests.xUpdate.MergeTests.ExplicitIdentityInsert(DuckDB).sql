@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	MAX(t1.PersonID)
 FROM
@@ -41,7 +40,6 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	t1.FirstName,
 	t1.PersonID,

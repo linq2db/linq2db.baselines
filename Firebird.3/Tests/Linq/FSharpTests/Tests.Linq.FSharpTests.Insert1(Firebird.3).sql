@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 DELETE FROM
 	"Child" "c_1"
 WHERE
@@ -23,7 +22,6 @@ VALUES
 )
 
 -- Firebird.3 Firebird3
-
 SELECT
 	COUNT(*)
 FROM
@@ -32,7 +30,6 @@ WHERE
 	"c_1"."ChildID" = 1001
 
 -- Firebird.3 Firebird3
-
 DELETE FROM
 	"Child" "c_1"
 WHERE

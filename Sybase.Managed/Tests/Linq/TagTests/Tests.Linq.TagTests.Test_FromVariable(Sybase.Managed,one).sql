@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 /* one */
 SELECT
 	[x].[FirstName],

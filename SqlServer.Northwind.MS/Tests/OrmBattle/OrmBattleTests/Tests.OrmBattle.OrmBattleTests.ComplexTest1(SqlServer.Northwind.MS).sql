@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Northwind.MS SqlServer.2019
-
 SELECT
 	[m_1].[ProductID],
 	[m_1].[SupplierID],
@@ -27,7 +26,6 @@ FROM
 		ON [d_1].[ProductID] = [m_1].[ProductID] AND [a_Supplier].[SupplierID] = [m_1].[SupplierID]
 
 -- SqlServer.Northwind.MS SqlServer.2019
-
 SELECT
 	[m_1].[SupplierID],
 	[d].[ProductID]
@@ -36,7 +34,6 @@ FROM
 		CROSS JOIN [Products] [d]
 
 -- SqlServer.Northwind.MS SqlServer.2019
-
 SELECT
 	[supplier].[SupplierID]
 FROM

@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 UPDATE
 	SampleClass
 SET

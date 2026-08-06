@@ -1,5 +1,4 @@
 ﻿-- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	m_1."PersonID",
 	d."PersonID",
@@ -11,7 +10,6 @@ WHERE
 	Lower(m_1."FirstName") LIKE '%test%' ESCAPE '~'
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	p."FirstName",
 	p."PersonID"

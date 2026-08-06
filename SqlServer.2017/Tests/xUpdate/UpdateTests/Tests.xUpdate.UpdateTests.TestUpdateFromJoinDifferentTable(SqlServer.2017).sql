@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 UPDATE
 	[t2]
 SET

@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 WITH CTE_1 AS
 (
 	SELECT
@@ -18,7 +17,6 @@ FROM
 		INNER JOIN CTE_1 c_1 ON p.ParentID = c_1.Child_ParentID
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	p.ParentID,
 	p.Value1,

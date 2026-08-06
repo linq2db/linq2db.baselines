@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 SELECT
 	RTRIM([t].[VarCharColumn], 'ab')
 FROM

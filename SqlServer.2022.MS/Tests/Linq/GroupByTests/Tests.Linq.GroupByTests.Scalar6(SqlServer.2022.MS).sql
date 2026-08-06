@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
-
 SELECT
 	MAX(IIF([g_1].[ParentID] < 3, [g_1].[ChildID], NULL))
 FROM

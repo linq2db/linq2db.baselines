@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	[s].[Id],
 	[s].[Value],
@@ -10,7 +9,6 @@ WHERE
 	[s].[Id] > 3
 
 -- SqlServer.2016.MS SqlServer.2016
-
 DELETE [s]
 OUTPUT
 	DELETED.[Id],

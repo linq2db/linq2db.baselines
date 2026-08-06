@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 INSERT INTO `Issue4717Address`
 (
 	`Id`,
@@ -18,7 +17,6 @@ VALUES
 )
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 INSERT INTO `Issue4717Warehouse`
 (
 	`Id`,
@@ -33,7 +31,6 @@ VALUES
 )
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 INSERT INTO `Issue4717UnitOfMeasure`
 (
 	`Id`,

@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	m_1."Id",
 	d."ItemId",
@@ -19,7 +18,6 @@ WHERE
 	)
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	i."Id",
 	(

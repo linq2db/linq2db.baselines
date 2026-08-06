@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 WITH CTE_1 ("ParentID")
 AS
 (
@@ -19,7 +18,6 @@ FROM
 		INNER JOIN CTE_1 c2 ON p."ParentID" = c2."ParentID"
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	p."ParentID",
 	p."Value1"

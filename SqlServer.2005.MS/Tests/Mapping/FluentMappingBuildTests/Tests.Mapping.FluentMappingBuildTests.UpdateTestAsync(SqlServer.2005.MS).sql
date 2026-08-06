@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
-
 IF (OBJECT_ID(N'[FluentTemp_UpdateAsync]', N'U') IS NULL)
 	CREATE TABLE [FluentTemp_UpdateAsync]
 	(
@@ -46,7 +45,6 @@ WHERE
 	[FluentTemp_UpdateAsync].[ID] = 1
 
 -- SqlServer.2005.MS SqlServer.2005
-
 IF (OBJECT_ID(N'[FluentTemp_UpdateAsync]', N'U') IS NOT NULL)
 	DROP TABLE [FluentTemp_UpdateAsync]
 

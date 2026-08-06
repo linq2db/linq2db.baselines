@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	EXTRACT(quarter FROM t.DateTimeValue)
 FROM

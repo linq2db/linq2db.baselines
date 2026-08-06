@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.MiddleName
 FROM
@@ -13,7 +12,6 @@ ORDER BY
 	Coalesce(t1.MiddleName, '-1')
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.FirstName,
 	t1.PersonID,

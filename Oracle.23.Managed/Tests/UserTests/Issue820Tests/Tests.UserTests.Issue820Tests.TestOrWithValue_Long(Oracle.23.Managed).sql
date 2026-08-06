@@ -1,5 +1,4 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(*)
 FROM
@@ -26,7 +25,6 @@ WHERE
 	:param = t1."BigIntValue"
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1.ID,
 	t1."MoneyValue",

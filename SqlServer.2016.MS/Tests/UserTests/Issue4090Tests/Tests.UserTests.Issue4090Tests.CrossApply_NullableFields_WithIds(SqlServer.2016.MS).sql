@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	[t3].[NAME3],
 	[t2].[Id2],
@@ -32,7 +31,6 @@ ORDER BY
 	[t3].[ID3]
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	[t1].[ID3],
 	[t1].[PARENTID3],
@@ -41,7 +39,6 @@ FROM
 	[TABLE3] [t1]
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	[t1].[ID2],
 	[t1].[PARENTID2],
@@ -50,7 +47,6 @@ FROM
 	[TABLE2] [t1]
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	[t1].[ID1],
 	[t1].[NAME1]

@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	c_3."ParentID",
 	c_3."ChildID"

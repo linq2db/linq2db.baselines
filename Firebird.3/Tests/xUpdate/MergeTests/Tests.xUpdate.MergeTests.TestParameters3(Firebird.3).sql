@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 DELETE FROM
 	"TestMerge1" "t1"
 
@@ -104,7 +103,6 @@ VALUES
 )
 
 -- Firebird.3 Firebird3
-
 DELETE FROM
 	"TestMerge2" "t1"
 
@@ -227,7 +225,7 @@ USING (
 	FROM
 		"TestMerge2" "t1"
 	WHERE
-		"t1"."Id" <> CAST(@Val5 AS Int)
+		"t1"."Id" <> @Val5
 ) "Source"
 (
 	"Id",

@@ -16,7 +16,6 @@ VALUES
 )
 
 -- Access.Ace.Odbc AccessODBC
-
 UPDATE
 	[Parent] [t]
 SET
@@ -26,7 +25,6 @@ WHERE
 
 RollbackTransaction
 -- Access.Ace.Odbc AccessODBC
-
 SELECT TOP 1
 	[t].[ParentID],
 	[t].[Value1]

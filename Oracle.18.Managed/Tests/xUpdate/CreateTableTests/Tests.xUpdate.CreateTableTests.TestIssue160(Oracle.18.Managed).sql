@@ -1,5 +1,4 @@
 ﻿-- Oracle.18.Managed Oracle.Managed Oracle12
-
 CREATE TABLE "aa"
 (
 	"bb" Int          NOT NULL,
@@ -26,7 +25,6 @@ VALUES
 )
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."bb",
 	t1."cc"
@@ -34,6 +32,5 @@ FROM
 	"aa" t1
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 DROP TABLE "aa"
 

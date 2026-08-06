@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2019
-
 SELECT DISTINCT
 	[i].[FirstName],
 	[i].[PersonID],

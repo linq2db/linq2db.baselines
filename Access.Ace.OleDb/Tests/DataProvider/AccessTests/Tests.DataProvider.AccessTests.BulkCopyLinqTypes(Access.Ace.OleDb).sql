@@ -409,7 +409,6 @@ VALUES
 )
 
 -- Access.Ace.OleDb AccessOleDb
-
 DELETE FROM
 	[LinqDataTypes] [p]
 WHERE
@@ -826,7 +825,6 @@ VALUES
 )
 
 -- Access.Ace.OleDb AccessOleDb
-
 DELETE FROM
 	[LinqDataTypes] [p]
 WHERE

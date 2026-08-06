@@ -1,9 +1,8 @@
-﻿-- PostgreSQL.18 PostgreSQL
-
+﻿-- PostgreSQL.18 PostgreSQL12
 DELETE FROM
 	"CollatedTable" t1
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @CaseSensitive Text(10) -- String
@@ -24,8 +23,7 @@ VALUES
 	:CaseInsensitive
 )
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -33,8 +31,7 @@ FROM
 WHERE
 	r."CaseSensitive" LIKE '%stString' ESCAPE '~'
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -42,8 +39,7 @@ FROM
 WHERE
 	r."CaseInsensitive" LIKE '%stString' ESCAPE '~'
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -51,8 +47,7 @@ FROM
 WHERE
 	r."CaseSensitive" LIKE '%ststring' ESCAPE '~'
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM

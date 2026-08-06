@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 EXECUTE BLOCK AS BEGIN
 	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'temp_table1')) THEN
 		EXECUTE STATEMENT '
@@ -15,7 +14,6 @@ EXECUTE BLOCK AS BEGIN
 END
 
 -- Firebird.3 Firebird3
-
 INSERT INTO "temp_table1"
 (
 	ID,
@@ -24,7 +22,6 @@ INSERT INTO "temp_table1"
 SELECT 1,2 FROM rdb$database
 
 -- Firebird.3 Firebird3
-
 EXECUTE BLOCK AS BEGIN
 	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'temp_table2')) THEN
 		EXECUTE STATEMENT '
@@ -40,7 +37,6 @@ EXECUTE BLOCK AS BEGIN
 END
 
 -- Firebird.3 Firebird3
-
 INSERT INTO "temp_table2"
 (
 	ID,
@@ -53,7 +49,6 @@ FROM
 	"temp_table1" "t1"
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t1".ID,
 	"t1"."Value"
@@ -61,7 +56,6 @@ FROM
 	"temp_table1" "t1"
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t1".ID,
 	"t1"."Value"
@@ -69,7 +63,6 @@ FROM
 	"temp_table2" "t1"
 
 -- Firebird.3 Firebird3
-
 INSERT INTO "temp_table1"
 (
 	ID,
@@ -95,7 +88,6 @@ VALUES
 )
 
 -- Firebird.3 Firebird3
-
 INSERT INTO "temp_table1"
 (
 	ID,
@@ -104,22 +96,18 @@ INSERT INTO "temp_table1"
 SELECT 4,5 FROM rdb$database
 
 -- Firebird.3 Firebird3
-
 DELETE FROM "temp_table1"
 
 -- Firebird.3 Firebird3
-
 DELETE FROM "temp_table2"
 
 -- Firebird.3 Firebird3
-
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'temp_table2')) THEN
 		EXECUTE STATEMENT 'DROP TABLE "temp_table2"';
 END
 
 -- Firebird.3 Firebird3
-
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'temp_table1')) THEN
 		EXECUTE STATEMENT 'DROP TABLE "temp_table1"';

@@ -14,7 +14,6 @@ WHERE (@__ef_filter__p_0 OR NOT (`e`.`IsDeleted`)) OR NOT (`e`.`IsDeleted`)
 
 
 -- MariaDB.10.MySqlConnector MariaDB
-
 /* Tagged query */
 SELECT
 	`e`.`IsDeleted`,

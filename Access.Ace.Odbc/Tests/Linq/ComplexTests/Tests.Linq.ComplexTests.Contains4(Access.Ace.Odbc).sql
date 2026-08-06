@@ -1,9 +1,8 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[a_Parent].[ParentID],
 	[a_Parent].[Value1],
-	[gc_1].[ParentID],
+	[gc_1].[ParentID] as [ParentID_1],
 	[gc_1].[ChildID],
 	[gc_1].[GrandChildID]
 FROM

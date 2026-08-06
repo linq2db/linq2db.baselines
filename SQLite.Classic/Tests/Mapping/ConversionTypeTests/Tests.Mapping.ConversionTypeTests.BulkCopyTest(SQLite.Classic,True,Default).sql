@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 INSERT INTO [TrimTestTable]
 (
 	[ID],
@@ -9,7 +8,6 @@ VALUES
 (1,'***OOO***')
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[r].[ID],
 	[r].[Data]
@@ -19,7 +17,6 @@ ORDER BY
 	[r].[ID]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[r].[ID],
 	[r].[Data]

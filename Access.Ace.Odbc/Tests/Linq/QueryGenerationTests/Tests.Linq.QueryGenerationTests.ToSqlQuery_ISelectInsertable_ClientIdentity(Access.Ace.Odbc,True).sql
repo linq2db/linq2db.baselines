@@ -12,7 +12,6 @@ VALUES
 )
 
 -- Access.Ace.Odbc AccessODBC
-
 INSERT INTO [TableWithIdentity]
 (
 	[Id],
@@ -25,7 +24,6 @@ FROM
 	[TableWithIdentitySrc] [t1]
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]

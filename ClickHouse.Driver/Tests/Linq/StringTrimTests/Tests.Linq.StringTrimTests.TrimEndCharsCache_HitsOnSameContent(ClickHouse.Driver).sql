@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	trim(TRAILING '.+' FROM t.VarCharColumn)
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	t.Id
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	trim(TRAILING '.+' FROM t.VarCharColumn)
 FROM

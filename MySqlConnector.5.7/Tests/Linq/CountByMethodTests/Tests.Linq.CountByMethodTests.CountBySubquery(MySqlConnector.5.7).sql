@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t`.`TestId`,
 	`t1`.`count_1`
@@ -16,7 +15,6 @@ FROM
 		) `t1` ON `t1`.`Key_1` = `t`.`TestId`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`TestId`

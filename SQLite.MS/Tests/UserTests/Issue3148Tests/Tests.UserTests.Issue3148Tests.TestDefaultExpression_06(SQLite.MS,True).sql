@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
@@ -16,14 +15,12 @@ WHERE
 	[d].[ParentID] <> 0
 
 -- SQLite.MS SQLite
-
 SELECT
 	[p].[ParentID]
 FROM
 	[Parent] [p]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
@@ -40,7 +37,6 @@ WHERE
 	[d].[ParentID] <> 0
 
 -- SQLite.MS SQLite
-
 SELECT
 	[p].[ParentID]
 FROM

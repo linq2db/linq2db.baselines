@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016
-
 SELECT DISTINCT
 	[p].[ParentID],
 	(
@@ -16,7 +15,6 @@ ORDER BY
 	[p].[ParentID]
 
 -- SqlServer.2016
-
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
@@ -31,7 +29,6 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 -- SqlServer.2016
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

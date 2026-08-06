@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[k_1].[StatusBitmask] & 128,
 	[g_1].[StatusBitmask] & 128

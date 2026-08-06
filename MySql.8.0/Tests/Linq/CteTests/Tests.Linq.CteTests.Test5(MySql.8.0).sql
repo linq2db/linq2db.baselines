@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 WITH `CTE_1` (`ParentID`)
 AS
 (
@@ -24,7 +23,6 @@ FROM
 		INNER JOIN `CTE_1` `c2` ON `p`.`ParentID` = `c2`.`ParentID`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	COUNT(*)
 FROM

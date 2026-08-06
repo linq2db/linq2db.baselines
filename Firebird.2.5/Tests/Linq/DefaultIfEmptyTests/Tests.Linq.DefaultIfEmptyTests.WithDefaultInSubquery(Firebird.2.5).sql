@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	Coalesce((
 		SELECT
@@ -19,7 +18,6 @@ FROM
 	"Parent" "p"
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"m_1"."ParentID",
 	"d"."ParentID",
@@ -34,7 +32,6 @@ FROM
 		INNER JOIN "Child" "d" ON "m_1"."ParentID" = "d"."ParentID"
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1"."ParentID",
 	"t1"."Value1"

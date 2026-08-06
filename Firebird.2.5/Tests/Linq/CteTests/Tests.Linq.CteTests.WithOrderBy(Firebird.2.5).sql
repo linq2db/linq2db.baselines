@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 WITH CTE_1 ("ParentID", "Value1")
 AS
 (

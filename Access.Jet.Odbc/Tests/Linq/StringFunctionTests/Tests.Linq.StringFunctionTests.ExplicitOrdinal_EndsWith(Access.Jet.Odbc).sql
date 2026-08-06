@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 DELETE FROM
 	[CollatedTable] [t1]
 
@@ -25,7 +24,6 @@ VALUES
 )
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	COUNT(*)
 FROM
@@ -34,7 +32,6 @@ WHERE
 	[r].[CaseSensitive] LIKE '%stString' AND InStr(Len([r].[CaseSensitive]) - 7, [r].[CaseSensitive], 'stString', 0) = (Len([r].[CaseSensitive]) - 7)
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	COUNT(*)
 FROM
@@ -43,7 +40,6 @@ WHERE
 	[r].[CaseInsensitive] LIKE '%stString' AND InStr(Len([r].[CaseInsensitive]) - 7, [r].[CaseInsensitive], 'stString', 0) = (Len([r].[CaseInsensitive]) - 7)
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	COUNT(*)
 FROM
@@ -52,7 +48,6 @@ WHERE
 	[r].[CaseSensitive] LIKE '%ststring' AND InStr(Len([r].[CaseSensitive]) - 7, [r].[CaseSensitive], 'ststring', 0) = (Len([r].[CaseSensitive]) - 7)
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	COUNT(*)
 FROM

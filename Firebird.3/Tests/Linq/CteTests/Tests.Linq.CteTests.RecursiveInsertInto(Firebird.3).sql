@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 INSERT INTO "HierarchyData"
 (
 	"Id",
@@ -47,7 +46,6 @@ FROM
 	"hierarchyDown" "t4"
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t1"."Id",
 	"t1"."Level"

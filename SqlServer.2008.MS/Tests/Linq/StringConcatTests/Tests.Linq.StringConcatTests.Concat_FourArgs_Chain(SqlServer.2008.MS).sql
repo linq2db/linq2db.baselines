@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[e].[Id]
 FROM
@@ -8,7 +7,6 @@ WHERE
 	(Coalesce([e].[Str1], N'') + N' ' + Coalesce([e].[StrReq], N'') + N'!') = N'John Programmer!'
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[t1].[Id],
 	[t1].[Str1],

@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	CASE
 		WHEN NOT EXISTS(
@@ -16,7 +15,6 @@ SELECT
 FROM rdb$database
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	CASE
 		WHEN NOT EXISTS(

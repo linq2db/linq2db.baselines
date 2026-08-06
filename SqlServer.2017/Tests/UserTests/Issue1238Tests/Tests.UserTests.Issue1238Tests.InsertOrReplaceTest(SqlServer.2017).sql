@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 DELETE [t1]
 FROM
 	[InheritanceParent] [t1]
@@ -37,7 +36,6 @@ WHEN NOT MATCHED THEN
 	);
 
 -- SqlServer.2017
-
 SELECT
 	COUNT(*)
 FROM
@@ -76,7 +74,6 @@ WHEN NOT MATCHED THEN
 	);
 
 -- SqlServer.2017
-
 SELECT
 	COUNT(*)
 FROM

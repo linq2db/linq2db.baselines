@@ -39,7 +39,6 @@ WHERE
 	`Parent`.`ParentID` = @ParentID
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `Parent`
 (
 	`ParentID`,

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	IIF([t1].[ParentID] IS NULL, 0, [t1].[ParentID]),
 	[t2].[ParentID],

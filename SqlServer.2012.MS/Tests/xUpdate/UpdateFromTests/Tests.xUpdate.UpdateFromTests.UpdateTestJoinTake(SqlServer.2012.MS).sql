@@ -23,7 +23,6 @@ WHERE
 	[t].[id] <> @someId
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[v].[id],
 	[v].[Value1],

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
-
 DELETE [t1]
 FROM
 	[CollatedTable] [t1]
@@ -26,7 +25,6 @@ VALUES
 )
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	COUNT(*)
 FROM
@@ -36,7 +34,6 @@ WHERE
 	Convert(VarBinary(8000), RIGHT([r].[CaseSensitive], LEN(N'stString'))) = Convert(VarBinary(8000), N'stString')
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	COUNT(*)
 FROM
@@ -46,7 +43,6 @@ WHERE
 	Convert(VarBinary(8000), RIGHT([r].[CaseInsensitive], LEN(N'stString'))) = Convert(VarBinary(8000), N'stString')
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	COUNT(*)
 FROM
@@ -56,7 +52,6 @@ WHERE
 	Convert(VarBinary(8000), RIGHT([r].[CaseSensitive], LEN(N'ststring'))) = Convert(VarBinary(8000), N'ststring')
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	COUNT(*)
 FROM

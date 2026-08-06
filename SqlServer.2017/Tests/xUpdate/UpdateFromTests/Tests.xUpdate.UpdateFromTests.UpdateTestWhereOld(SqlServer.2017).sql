@@ -21,7 +21,6 @@ WHERE
 	[t].[id] = [c_1].[id] AND [t].[id] <> @someId
 
 -- SqlServer.2017
-
 SELECT
 	[v].[id],
 	[v].[Value1],

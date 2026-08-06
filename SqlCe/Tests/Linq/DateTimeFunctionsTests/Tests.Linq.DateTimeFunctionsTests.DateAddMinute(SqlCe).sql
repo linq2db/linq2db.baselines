@@ -1,7 +1,6 @@
 ﻿-- SqlCe
-
 SELECT
-	DatePart(minute, DateAdd(minute, 5, [t].[DateTimeValue])) as [Minute_1]
+	DatePart(minute, DateAdd(minute, 5, [t].[DateTimeValue]))
 FROM
 	[LinqDataTypes] [t]
 

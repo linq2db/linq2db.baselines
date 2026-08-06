@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	grandChild_1."ParentID",
 	grandChild_1."ChildID",

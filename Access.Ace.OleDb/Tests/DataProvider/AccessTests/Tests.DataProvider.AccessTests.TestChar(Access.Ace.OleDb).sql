@@ -1,9 +1,7 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT CStr('1')
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT CStr('1')
 
 -- Access.Ace.OleDb AccessOleDb

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012.MS SqlServer.2012
-
 INSERT INTO [Issue3684Table] DEFAULT VALUES
 
 -- SqlServer.2012.MS SqlServer.2012
@@ -20,7 +19,6 @@ VALUES
 )
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[t1].[Id],
 	[t1].[FirstAppointmentTime],

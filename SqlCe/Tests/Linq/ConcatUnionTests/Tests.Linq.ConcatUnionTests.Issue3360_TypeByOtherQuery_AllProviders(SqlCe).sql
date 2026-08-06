@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[p].[Id],
 	[p].[Str]
@@ -8,15 +7,14 @@ FROM
 UNION ALL
 SELECT
 	[p_1].[Id],
-	CAST('str' AS NVarChar) as [Str]
+	CAST('str' AS NVarChar)
 FROM
 	[Issue3360Table] [p_1]
 
 -- SqlCe
-
 SELECT
 	[p].[Id],
-	CAST('str' AS NVarChar) as [Str]
+	CAST('str' AS NVarChar)
 FROM
 	[Issue3360Table] [p]
 UNION ALL

@@ -8,7 +8,6 @@ WHERE
 	r.ID >= 101 AND r.ID < :p
 
 -- Oracle.11.Managed Oracle11
-
 INSERT INTO "LinqDataTypes"
 (
 	ID,
@@ -32,7 +31,6 @@ WHERE
 	r.ID = 101 AND r."BigIntValue" = 11
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	r."BigIntValue"
 FROM

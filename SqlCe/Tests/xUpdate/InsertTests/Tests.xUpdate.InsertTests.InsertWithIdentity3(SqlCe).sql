@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 DELETE FROM
 	[Person]
 WHERE
@@ -27,14 +26,12 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT @@IDENTITY
 
 -- SqlCe
-
 SELECT TOP (2)
 	[p].[FirstName],
-	[p].[PersonID] as [ID],
+	[p].[PersonID],
 	[p].[LastName],
 	[p].[MiddleName],
 	[p].[Gender]
@@ -44,7 +41,6 @@ WHERE
 	[p].[FirstName] = 'John' AND [p].[LastName] = 'Shepard'
 
 -- SqlCe
-
 DELETE FROM
 	[Person]
 WHERE

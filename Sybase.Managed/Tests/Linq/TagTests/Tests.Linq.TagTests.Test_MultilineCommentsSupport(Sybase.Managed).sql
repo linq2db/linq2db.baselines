@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 /* My custom
 wonderful multiline
 query tag */

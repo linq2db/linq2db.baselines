@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	pmp1.ChildID
 FROM
@@ -12,7 +11,6 @@ FROM
 		CROSS JOIN Child pmp1
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.ParentID,
 	t1.ChildID

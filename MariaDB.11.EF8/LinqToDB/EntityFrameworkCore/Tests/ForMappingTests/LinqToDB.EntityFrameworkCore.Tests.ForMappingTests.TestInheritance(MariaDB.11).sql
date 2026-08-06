@@ -19,7 +19,6 @@ RETURNING `Id`;
 
 
 -- MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Discriminator`,
 	`t1`.`Id`

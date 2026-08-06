@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 MERGE INTO Person Target
 USING (
 	SELECT NULL, NULL, NULL, NULL, NULL

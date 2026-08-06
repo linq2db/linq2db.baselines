@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`y`.`item`
 FROM
@@ -14,7 +13,6 @@ FROM
 			SELECT 'O') `y`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`t1`.`FirstName`,
 	`t1`.`PersonID`,

@@ -1,12 +1,10 @@
-﻿-- PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.15 PostgreSQL12
 DELETE FROM
 	"GrandChild" gc
 WHERE
 	gc."GrandChildID" IN (1001, 1002)
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 INSERT INTO "GrandChild"
 (
 	"ParentID",
@@ -20,8 +18,7 @@ VALUES
 	1001
 )
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 INSERT INTO "GrandChild"
 (
 	"ParentID",
@@ -35,8 +32,7 @@ VALUES
 	1002
 )
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -44,8 +40,7 @@ FROM
 WHERE
 	gc."ParentID" = 1
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 DELETE FROM
 	"GrandChild" t1
 WHERE
@@ -63,8 +58,7 @@ WHERE
 			t1."GrandChildID" = gc."GrandChildID"
 	)
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM

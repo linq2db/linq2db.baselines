@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	TABLE_SCHEMA,
 	TABLE_NAME,
@@ -9,7 +8,6 @@ FROM INFORMATION_SCHEMA.TABLES
 WHERE TABLE_SCHEMA = DATABASE()
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	CONCAT(lower(k.CONSTRAINT_SCHEMA),'..',k.TABLE_NAME) as TableID,
 	k.CONSTRAINT_NAME                                    as PrimaryKeyName,
@@ -29,7 +27,6 @@ WHERE
 	c.CONSTRAINT_SCHEMA = database()
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	DATA_TYPE,
 	COLUMN_TYPE,
@@ -47,7 +44,6 @@ FROM INFORMATION_SCHEMA.COLUMNS
 WHERE TABLE_SCHEMA = DATABASE()
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	c.TABLE_SCHEMA,
 	c.TABLE_NAME,

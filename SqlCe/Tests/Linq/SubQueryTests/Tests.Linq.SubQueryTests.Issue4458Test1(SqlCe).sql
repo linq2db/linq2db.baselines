@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[m_1].[Id],
 	[d].[ItemId],
@@ -37,7 +36,6 @@ ORDER BY
 	[d].[UserId]
 
 -- SqlCe
-
 SELECT
 	[i].[Id],
 	[stock_1].[TotalAvailable]
@@ -64,14 +62,12 @@ WHERE
 	)
 
 -- SqlCe
-
 SELECT
 	[t1].[Id]
 FROM
 	[Issue4458Item] [t1]
 
 -- SqlCe
-
 SELECT
 	[t1].[ItemId],
 	[t1].[QuantityAvailable],
@@ -80,7 +76,6 @@ FROM
 	[WarehouseStock] [t1]
 
 -- SqlCe
-
 SELECT
 	[t1].[ItemId],
 	[t1].[UserId],

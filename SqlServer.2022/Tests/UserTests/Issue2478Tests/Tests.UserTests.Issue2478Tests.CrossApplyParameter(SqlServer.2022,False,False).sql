@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 SELECT
 	[q].[ParentID],
 	[c_2].[Count_1],
@@ -19,7 +18,6 @@ WHERE
 	1 = 0
 
 -- SqlServer.2022
-
 SELECT
 	COUNT(*)
 FROM

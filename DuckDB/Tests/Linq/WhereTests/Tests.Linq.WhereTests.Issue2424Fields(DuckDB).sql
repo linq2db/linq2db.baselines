@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	i.Id,
 	i.StrValue,
@@ -14,17 +13,6 @@ WHERE
 	i.StrValue >= right_1.StrValue
 
 -- DuckDB
-
-SELECT
-	t1.Pk,
-	t1.Id,
-	t1.StrValue,
-	t1.StrValueNullable
-FROM
-	Isue2424Table t1
-
--- DuckDB
-
 SELECT
 	i.Id,
 	i.StrValue,
@@ -39,17 +27,6 @@ WHERE
 	i.StrValue <= right_1.StrValue
 
 -- DuckDB
-
-SELECT
-	t1.Pk,
-	t1.Id,
-	t1.StrValue,
-	t1.StrValueNullable
-FROM
-	Isue2424Table t1
-
--- DuckDB
-
 SELECT
 	i.Id,
 	i.StrValue,
@@ -64,17 +41,6 @@ WHERE
 	i.StrValue > right_1.StrValue
 
 -- DuckDB
-
-SELECT
-	t1.Pk,
-	t1.Id,
-	t1.StrValue,
-	t1.StrValueNullable
-FROM
-	Isue2424Table t1
-
--- DuckDB
-
 SELECT
 	i.Id,
 	i.StrValue,
@@ -89,17 +55,6 @@ WHERE
 	i.StrValue < right_1.StrValue
 
 -- DuckDB
-
-SELECT
-	t1.Pk,
-	t1.Id,
-	t1.StrValue,
-	t1.StrValueNullable
-FROM
-	Isue2424Table t1
-
--- DuckDB
-
 SELECT
 	i.Id,
 	i.StrValue,
@@ -114,17 +69,6 @@ WHERE
 	i.StrValue = right_1.StrValue
 
 -- DuckDB
-
-SELECT
-	t1.Pk,
-	t1.Id,
-	t1.StrValue,
-	t1.StrValueNullable
-FROM
-	Isue2424Table t1
-
--- DuckDB
-
 SELECT
 	i.Id,
 	i.StrValue,
@@ -139,17 +83,6 @@ WHERE
 	i.StrValue <> right_1.StrValue
 
 -- DuckDB
-
-SELECT
-	t1.Pk,
-	t1.Id,
-	t1.StrValue,
-	t1.StrValueNullable
-FROM
-	Isue2424Table t1
-
--- DuckDB
-
 SELECT
 	i.Id,
 	i.StrValue,
@@ -164,17 +97,6 @@ WHERE
 	i.StrValue >= right_1.StrValueNullable OR right_1.StrValueNullable IS NULL
 
 -- DuckDB
-
-SELECT
-	t1.Pk,
-	t1.Id,
-	t1.StrValue,
-	t1.StrValueNullable
-FROM
-	Isue2424Table t1
-
--- DuckDB
-
 SELECT
 	i.Id,
 	i.StrValue,
@@ -189,17 +111,6 @@ WHERE
 	i.StrValue <= right_1.StrValueNullable
 
 -- DuckDB
-
-SELECT
-	t1.Pk,
-	t1.Id,
-	t1.StrValue,
-	t1.StrValueNullable
-FROM
-	Isue2424Table t1
-
--- DuckDB
-
 SELECT
 	i.Id,
 	i.StrValue,
@@ -214,17 +125,6 @@ WHERE
 	i.StrValue > right_1.StrValueNullable OR right_1.StrValueNullable IS NULL
 
 -- DuckDB
-
-SELECT
-	t1.Pk,
-	t1.Id,
-	t1.StrValue,
-	t1.StrValueNullable
-FROM
-	Isue2424Table t1
-
--- DuckDB
-
 SELECT
 	i.Id,
 	i.StrValue,
@@ -239,17 +139,6 @@ WHERE
 	i.StrValue < right_1.StrValueNullable
 
 -- DuckDB
-
-SELECT
-	t1.Pk,
-	t1.Id,
-	t1.StrValue,
-	t1.StrValueNullable
-FROM
-	Isue2424Table t1
-
--- DuckDB
-
 SELECT
 	i.Id,
 	i.StrValue,
@@ -264,17 +153,6 @@ WHERE
 	i.StrValue = right_1.StrValueNullable
 
 -- DuckDB
-
-SELECT
-	t1.Pk,
-	t1.Id,
-	t1.StrValue,
-	t1.StrValueNullable
-FROM
-	Isue2424Table t1
-
--- DuckDB
-
 SELECT
 	i.Id,
 	i.StrValue,
@@ -289,17 +167,6 @@ WHERE
 	i.StrValue <> right_1.StrValueNullable OR right_1.StrValueNullable IS NULL
 
 -- DuckDB
-
-SELECT
-	t1.Pk,
-	t1.Id,
-	t1.StrValue,
-	t1.StrValueNullable
-FROM
-	Isue2424Table t1
-
--- DuckDB
-
 SELECT
 	i.Id,
 	i.StrValue,
@@ -314,17 +181,6 @@ WHERE
 	i.StrValueNullable >= right_1.StrValueNullable OR right_1.StrValueNullable IS NULL
 
 -- DuckDB
-
-SELECT
-	t1.Pk,
-	t1.Id,
-	t1.StrValue,
-	t1.StrValueNullable
-FROM
-	Isue2424Table t1
-
--- DuckDB
-
 SELECT
 	i.Id,
 	i.StrValue,
@@ -339,17 +195,6 @@ WHERE
 	i.StrValueNullable <= right_1.StrValueNullable OR i.StrValueNullable IS NULL
 
 -- DuckDB
-
-SELECT
-	t1.Pk,
-	t1.Id,
-	t1.StrValue,
-	t1.StrValueNullable
-FROM
-	Isue2424Table t1
-
--- DuckDB
-
 SELECT
 	i.Id,
 	i.StrValue,
@@ -364,17 +209,6 @@ WHERE
 	i.StrValueNullable > right_1.StrValueNullable OR i.StrValueNullable IS NOT NULL AND right_1.StrValueNullable IS NULL
 
 -- DuckDB
-
-SELECT
-	t1.Pk,
-	t1.Id,
-	t1.StrValue,
-	t1.StrValueNullable
-FROM
-	Isue2424Table t1
-
--- DuckDB
-
 SELECT
 	i.Id,
 	i.StrValue,
@@ -389,17 +223,6 @@ WHERE
 	i.StrValueNullable < right_1.StrValueNullable OR i.StrValueNullable IS NULL AND right_1.StrValueNullable IS NOT NULL
 
 -- DuckDB
-
-SELECT
-	t1.Pk,
-	t1.Id,
-	t1.StrValue,
-	t1.StrValueNullable
-FROM
-	Isue2424Table t1
-
--- DuckDB
-
 SELECT
 	i.Id,
 	i.StrValue,
@@ -414,17 +237,6 @@ WHERE
 	i.StrValueNullable = right_1.StrValueNullable OR i.StrValueNullable IS NULL AND right_1.StrValueNullable IS NULL
 
 -- DuckDB
-
-SELECT
-	t1.Pk,
-	t1.Id,
-	t1.StrValue,
-	t1.StrValueNullable
-FROM
-	Isue2424Table t1
-
--- DuckDB
-
 SELECT
 	i.Id,
 	i.StrValue,
@@ -438,14 +250,4 @@ FROM
 WHERE
 	i.StrValueNullable <> right_1.StrValueNullable OR i.StrValueNullable IS NULL AND right_1.StrValueNullable IS NOT NULL OR
 	i.StrValueNullable IS NOT NULL AND right_1.StrValueNullable IS NULL
-
--- DuckDB
-
-SELECT
-	t1.Pk,
-	t1.Id,
-	t1.StrValue,
-	t1.StrValueNullable
-FROM
-	Isue2424Table t1
 

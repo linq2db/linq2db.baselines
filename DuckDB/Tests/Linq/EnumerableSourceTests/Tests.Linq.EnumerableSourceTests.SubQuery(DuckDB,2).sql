@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	t.Id,
 	t."Value"
@@ -18,7 +17,6 @@ WHERE
 	)
 
 -- DuckDB
-
 SELECT
 	t1.Id,
 	t1."Value"

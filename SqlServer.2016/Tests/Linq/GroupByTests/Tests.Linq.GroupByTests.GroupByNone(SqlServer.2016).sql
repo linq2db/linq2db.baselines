@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016
-
 SELECT
 	MIN([gr].[ParentID]),
 	MAX([gr].[ParentID])

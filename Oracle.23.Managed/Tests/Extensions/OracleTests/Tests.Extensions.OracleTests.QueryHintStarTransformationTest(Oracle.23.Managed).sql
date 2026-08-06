@@ -1,5 +1,4 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT /*+ STAR_TRANSFORMATION */
 	p."ParentID",
 	p."Value1"

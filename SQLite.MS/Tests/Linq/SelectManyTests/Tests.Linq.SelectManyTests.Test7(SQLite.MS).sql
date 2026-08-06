@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[a_Child].[ParentID],
 	[a_Child].[ChildID]
@@ -12,7 +11,6 @@ WHERE
 	[p].[ParentID] = [g_1].[ParentID]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[a_Child].[ParentID],
 	[a_Child].[ChildID]

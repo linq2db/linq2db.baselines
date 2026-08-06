@@ -53,7 +53,6 @@ WHERE
 	[t].[ID] = 5000 AND DateAdd('d', ([t].[SmallIntValue] + @part1) - @part2, [t].[DateTimeValue]) > DateSerial(2018, 1, 2)
 
 -- Access.Jet.OleDb AccessOleDb
-
 DELETE FROM
 	[LinqDataTypes] [t]
 WHERE

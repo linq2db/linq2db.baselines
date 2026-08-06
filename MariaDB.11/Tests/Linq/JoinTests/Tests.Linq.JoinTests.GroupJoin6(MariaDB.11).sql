@@ -18,7 +18,6 @@ FROM
 		INNER JOIN `Child` `d` ON `m_1`.`ParentID` + @n = `d`.`ParentID`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`p`.`ParentID`,
 	`p`.`Value1`

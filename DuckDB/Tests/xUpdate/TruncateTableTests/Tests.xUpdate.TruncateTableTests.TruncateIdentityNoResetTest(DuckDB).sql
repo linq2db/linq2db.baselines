@@ -1,9 +1,7 @@
 ﻿-- DuckDB
-
 TRUNCATE TABLE test_temp;
 
 -- DuckDB
-
 INSERT INTO test_temp
 (
 	Field1
@@ -14,7 +12,6 @@ VALUES
 )
 
 -- DuckDB
-
 INSERT INTO test_temp
 (
 	Field1
@@ -38,11 +35,9 @@ ORDER BY
 LIMIT 2 OFFSET $skip 
 
 -- DuckDB
-
 TRUNCATE TABLE test_temp;
 
 -- DuckDB
-
 INSERT INTO test_temp
 (
 	Field1
@@ -53,7 +48,6 @@ VALUES
 )
 
 -- DuckDB
-
 INSERT INTO test_temp
 (
 	Field1

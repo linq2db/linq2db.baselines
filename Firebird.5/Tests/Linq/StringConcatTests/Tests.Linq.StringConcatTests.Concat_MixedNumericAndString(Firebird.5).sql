@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 SELECT
 	"e"."Id"
 FROM
@@ -8,7 +7,6 @@ WHERE
 	("e"."Num" || '-' || Coalesce("e"."StrReq", '')) = '100-Programmer'
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Str1",

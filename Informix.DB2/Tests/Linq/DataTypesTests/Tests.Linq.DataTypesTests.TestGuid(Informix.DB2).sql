@@ -14,7 +14,6 @@ WHERE
 	r."Column" = @Column AND r.ColumnNullable = @ColumnNullable
 
 -- Informix.DB2 Informix
-
 SELECT
 	r.Id,
 	r."Column",
@@ -26,7 +25,6 @@ WHERE
 	r.ColumnNullable = 'bd3973a5-4323-4dd8-9f4f-df9f93e2a627'
 
 -- Informix.DB2 Informix
-
 DELETE FROM
 	GuidTable
 
@@ -73,7 +71,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1."Column",
@@ -84,7 +81,6 @@ ORDER BY
 	t1.Id
 
 -- Informix.DB2 Informix
-
 DELETE FROM
 	GuidTable
 
@@ -131,7 +127,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1."Column",
@@ -142,14 +137,12 @@ ORDER BY
 	t1.Id
 
 -- Informix.DB2 Informix
-
 DELETE FROM
 	GuidTable
 
 INSERT BULK GuidTable
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1."Column",

@@ -1,12 +1,10 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT
 	MAX([p].[PersonID])
 FROM
 	[Person] [p]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	COUNT(*)
 FROM

@@ -1,5 +1,4 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	m_1."ParentID",
 	d."ChildID",
@@ -14,7 +13,6 @@ FROM
 		INNER JOIN "Child" d ON CAST(m_1."ParentID" AS Number(19)) = d."ParentID"
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	p."ParentID"
 FROM

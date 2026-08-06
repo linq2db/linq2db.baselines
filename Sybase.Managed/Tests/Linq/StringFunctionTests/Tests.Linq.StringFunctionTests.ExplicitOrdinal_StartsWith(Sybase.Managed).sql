@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 DELETE FROM [CollatedTable]
 FROM
 	[CollatedTable] [t1]
@@ -26,7 +25,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT
 	COUNT(*)
 FROM
@@ -35,7 +33,6 @@ WHERE
 	[r].[CaseSensitive] LIKE 'TestSt%' ESCAPE '~'
 
 -- Sybase.Managed Sybase
-
 SELECT
 	COUNT(*)
 FROM
@@ -44,7 +41,6 @@ WHERE
 	[r].[CaseInsensitive] LIKE 'TestSt%' ESCAPE '~'
 
 -- Sybase.Managed Sybase
-
 SELECT
 	COUNT(*)
 FROM
@@ -53,7 +49,6 @@ WHERE
 	[r].[CaseSensitive] LIKE 'testst%' ESCAPE '~'
 
 -- Sybase.Managed Sybase
-
 SELECT
 	COUNT(*)
 FROM

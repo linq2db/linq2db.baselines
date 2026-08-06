@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	entity1."FirstName",
 	entity1."PersonID",

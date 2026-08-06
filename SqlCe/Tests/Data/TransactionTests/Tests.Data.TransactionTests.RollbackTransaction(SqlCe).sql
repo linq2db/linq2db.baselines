@@ -16,7 +16,6 @@ VALUES
 )
 
 -- SqlCe
-
 UPDATE
 	[Parent]
 SET
@@ -26,7 +25,6 @@ WHERE
 
 RollbackTransaction
 -- SqlCe
-
 SELECT TOP (1)
 	[t].[ParentID],
 	[t].[Value1]

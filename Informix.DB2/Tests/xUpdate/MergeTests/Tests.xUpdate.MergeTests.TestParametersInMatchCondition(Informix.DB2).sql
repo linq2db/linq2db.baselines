@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 DELETE FROM
 	TestMerge1
 
@@ -104,7 +103,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 DELETE FROM
 	TestMerge2
 

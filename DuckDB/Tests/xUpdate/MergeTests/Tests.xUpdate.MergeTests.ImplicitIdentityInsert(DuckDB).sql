@@ -1,12 +1,10 @@
 ﻿-- DuckDB
-
 SELECT
 	MAX(t1.PersonID)
 FROM
 	Person t1
 
 -- DuckDB
-
 MERGE INTO Person Target
 USING (
 	SELECT
@@ -44,7 +42,6 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	t1.FirstName,
 	t1.PersonID,

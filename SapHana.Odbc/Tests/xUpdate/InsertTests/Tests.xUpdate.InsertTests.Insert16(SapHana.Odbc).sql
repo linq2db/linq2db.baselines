@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 DELETE FROM
 	"Person" "t1"
 WHERE
@@ -25,7 +24,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	COUNT(*)
 FROM
@@ -34,7 +32,6 @@ WHERE
 	"t1"."FirstName" LIKE 'Insert16%' ESCAPE '~'
 
 -- SapHana.Odbc SapHanaOdbc
-
 DELETE FROM
 	"Person" "t1"
 WHERE

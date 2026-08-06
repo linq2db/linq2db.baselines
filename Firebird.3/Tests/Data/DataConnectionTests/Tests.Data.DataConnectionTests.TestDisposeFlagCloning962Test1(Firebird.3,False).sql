@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	"m_1"."CategoryID",
 	"d"."ProductID",
@@ -11,7 +10,6 @@ FROM
 		INNER JOIN "Products" "d" ON "m_1"."CategoryID" = "d"."CategoryID"
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t1"."CategoryID",
 	"t1"."CategoryName",

@@ -21,7 +21,6 @@ ORDER BY
 	[t1].[Key_1] DESC
 
 -- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID]

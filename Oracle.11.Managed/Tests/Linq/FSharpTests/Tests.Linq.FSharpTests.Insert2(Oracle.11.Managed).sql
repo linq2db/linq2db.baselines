@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	MAX(t1."PersonID")
 FROM
@@ -31,7 +30,6 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	p."PersonID",
 	p."FirstName",
@@ -44,7 +42,6 @@ WHERE
 	p."PersonID" > 4 AND ROWNUM <= 2
 
 -- Oracle.11.Managed Oracle11
-
 DELETE FROM
 	"Person" t
 WHERE

@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`MiddleName`
 FROM
@@ -13,7 +12,6 @@ ORDER BY
 	Coalesce(`t1`.`MiddleName`, '-1')
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`FirstName`,
 	`t1`.`PersonID`,

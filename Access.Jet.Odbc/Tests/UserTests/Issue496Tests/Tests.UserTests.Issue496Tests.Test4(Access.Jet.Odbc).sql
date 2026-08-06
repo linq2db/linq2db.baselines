@@ -1,9 +1,8 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[m_1].[ParentID],
 	[d].[ChildID],
-	[d].[ParentID]
+	[d].[ParentID] as [ParentID_1]
 FROM
 	(
 		SELECT DISTINCT
@@ -14,7 +13,6 @@ FROM
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[p].[ParentID]
 FROM

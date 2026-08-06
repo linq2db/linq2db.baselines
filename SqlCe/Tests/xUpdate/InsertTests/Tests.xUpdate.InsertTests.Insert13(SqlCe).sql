@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 INSERT INTO [Person]
 (
 	[FirstName],

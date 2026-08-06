@@ -3,7 +3,7 @@ DECLARE @p NVarChar(3) -- String
 SET     @p = 'abc'
 
 SELECT
-	[t].[PersonID] as [ID],
+	[t].[PersonID],
 	[t].[FirstName],
 	[t].[LastName],
 	[t].[MiddleName],

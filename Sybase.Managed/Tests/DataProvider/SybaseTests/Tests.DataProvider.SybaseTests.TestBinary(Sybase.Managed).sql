@@ -1,21 +1,16 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT Cast(12345 as binary(2))
 
 -- Sybase.Managed Sybase
-
 SELECT Cast(12345 as binary(4))
 
 -- Sybase.Managed Sybase
-
 SELECT Cast(12345 as varbinary(2))
 
 -- Sybase.Managed Sybase
-
 SELECT Cast(12345 as varbinary(4))
 
 -- Sybase.Managed Sybase
-
 SELECT Cast(NULL as image)
 
 -- Sybase.Managed Sybase

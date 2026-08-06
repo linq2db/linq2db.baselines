@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 CREATE TABLE [TableWithPrimaryKey]
 (
 	[Key] Int NOT NULL,
@@ -8,6 +7,5 @@ CREATE TABLE [TableWithPrimaryKey]
 )
 
 -- Access.Jet.Odbc AccessODBC
-
 DROP TABLE [TableWithPrimaryKey]
 

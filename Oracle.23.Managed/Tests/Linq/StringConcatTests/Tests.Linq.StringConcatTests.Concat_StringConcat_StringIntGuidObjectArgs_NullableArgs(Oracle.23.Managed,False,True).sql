@@ -1,5 +1,4 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	t."Value1" || CAST(t."Value2" AS NVarChar2(50)) || CASE
 		WHEN t."Value3" IS NULL THEN NULL
@@ -11,7 +10,6 @@ ORDER BY
 	t.ID
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1.ID,
 	t1."Value1",

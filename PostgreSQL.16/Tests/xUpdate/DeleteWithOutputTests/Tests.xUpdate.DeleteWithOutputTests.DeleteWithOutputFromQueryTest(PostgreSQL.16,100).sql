@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	s."Id",
 	s."Value",
@@ -9,7 +8,7 @@ FROM
 WHERE
 	s."Id" > 3
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DECLARE @param Integer -- Int32
 SET     @param = 100
 DECLARE @ValueStr Text(3) -- String

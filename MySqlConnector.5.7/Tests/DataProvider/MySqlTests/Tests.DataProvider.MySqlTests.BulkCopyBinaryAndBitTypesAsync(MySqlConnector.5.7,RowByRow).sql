@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SET GLOBAL local_infile=ON
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -189,7 +188,6 @@ VALUES
 )
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t1`.`ne.eds ``escaPing`,
 	`t1`.`Bit_1`,

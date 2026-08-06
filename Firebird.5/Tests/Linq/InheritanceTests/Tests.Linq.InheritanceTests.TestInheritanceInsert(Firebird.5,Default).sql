@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 INSERT INTO "InheritanceFilter"
 (
 	"Id",
@@ -19,7 +18,6 @@ SELECT 5,21,0,25,0,0,15,0 FROM rdb$database UNION ALL
 SELECT 6,22,0,26,0,0,0,16 FROM rdb$database
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t1"."Code",
 	"t1"."Id",

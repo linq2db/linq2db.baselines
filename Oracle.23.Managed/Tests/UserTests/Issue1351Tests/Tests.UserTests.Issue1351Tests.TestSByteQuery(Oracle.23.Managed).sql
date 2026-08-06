@@ -1,5 +1,4 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1.ID,
 	t1."TestField",
@@ -10,7 +9,6 @@ WHERE
 	t1."TestField" = 0
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1.ID,
 	t1."TestField",

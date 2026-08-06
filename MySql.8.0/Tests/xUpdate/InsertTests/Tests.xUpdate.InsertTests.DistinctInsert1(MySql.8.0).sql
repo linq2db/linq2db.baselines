@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 DELETE  
 FROM
 	`LinqDataTypes`
@@ -7,7 +6,6 @@ WHERE
 	`LinqDataTypes`.`ID` > 1000
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 INSERT INTO `LinqDataTypes`
 (
 	`ID`,
@@ -27,7 +25,6 @@ FROM
 	) `t2`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 DELETE  
 FROM
 	`LinqDataTypes`

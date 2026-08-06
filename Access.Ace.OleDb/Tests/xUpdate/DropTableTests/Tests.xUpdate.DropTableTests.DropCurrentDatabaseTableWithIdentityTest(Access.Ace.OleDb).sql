@@ -1,9 +1,7 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 DROP TABLE [DropTableTestID]
 
 -- Access.Ace.OleDb AccessOleDb
-
 CREATE TABLE [DropTableTestID]
 (
 	[ID]  Int  NOT NULL IDENTITY,
@@ -13,7 +11,6 @@ CREATE TABLE [DropTableTestID]
 )
 
 -- Access.Ace.OleDb AccessOleDb
-
 INSERT INTO [DropTableTestID]
 (
 	[ID1]
@@ -24,7 +21,6 @@ VALUES
 )
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t].[ID],
 	[t].[ID1]
@@ -32,11 +28,9 @@ FROM
 	[DropTableTestID] [t]
 
 -- Access.Ace.OleDb AccessOleDb
-
 DROP TABLE [DropTableTestID]
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t1].[ID],
 	[t1].[ID1]

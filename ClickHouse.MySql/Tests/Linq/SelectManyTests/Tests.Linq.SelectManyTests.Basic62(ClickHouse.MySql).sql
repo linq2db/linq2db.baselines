@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	a_Children.ParentID + p.ParentID
 FROM

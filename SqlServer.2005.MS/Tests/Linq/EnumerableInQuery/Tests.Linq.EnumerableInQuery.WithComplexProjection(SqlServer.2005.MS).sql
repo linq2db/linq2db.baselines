@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[it_1].[not_null],
 	[it_1].[ColorName],
@@ -42,7 +41,6 @@ WHERE
 	[it_1].[ColorName] = N'Red' OR [it_1].[Count_1] = 0
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[t1].[Id],
 	[t1].[ColorId],
@@ -57,7 +55,6 @@ FROM
 		LEFT JOIN [SomeStyle] [a_Style] ON [t1].[StyleId] = [a_Style].[Id]
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[t1].[Id],
 	[t1].[ColorId],
@@ -66,7 +63,6 @@ FROM
 	[SomeItem] [t1]
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT DISTINCT
 	[it].[Conditional]
 FROM
@@ -89,7 +85,6 @@ WHERE
 	[it].[ColorName] = N'Red' OR [it].[Count] = 0
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[t1].[Id],
 	[t1].[ColorId],
@@ -104,7 +99,6 @@ FROM
 		LEFT JOIN [SomeStyle] [a_Style] ON [t1].[StyleId] = [a_Style].[Id]
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[t1].[Id],
 	[t1].[ColorId],

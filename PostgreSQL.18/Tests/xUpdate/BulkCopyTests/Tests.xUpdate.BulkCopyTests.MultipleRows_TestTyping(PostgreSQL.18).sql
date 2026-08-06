@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
-
+﻿-- PostgreSQL.18 PostgreSQL12
 INSERT INTO "MultipleRowsTable"
 (
 	"Id",
@@ -10,8 +9,7 @@ VALUES
 (1,NULL,1),
 (2,1.5,-2.6)
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."DecimalValue1",

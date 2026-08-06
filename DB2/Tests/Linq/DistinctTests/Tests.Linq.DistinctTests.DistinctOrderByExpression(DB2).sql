@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."MiddleName"
 FROM
@@ -13,7 +12,6 @@ ORDER BY
 	Coalesce("t1"."MiddleName", '-1')
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."FirstName",
 	"t1"."PersonID",

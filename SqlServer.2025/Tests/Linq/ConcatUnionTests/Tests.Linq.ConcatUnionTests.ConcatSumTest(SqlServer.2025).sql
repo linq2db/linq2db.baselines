@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025
-
 SELECT
 	SUM([t3].[PersonID])
 FROM

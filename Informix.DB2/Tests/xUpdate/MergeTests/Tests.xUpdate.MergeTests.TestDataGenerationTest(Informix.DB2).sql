@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 DELETE FROM
 	TestMerge1
 
@@ -104,7 +103,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 DELETE FROM
 	TestMerge2
 
@@ -209,7 +207,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1.Field1,
@@ -223,7 +220,6 @@ ORDER BY
 	t1.Id
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1.Field1,

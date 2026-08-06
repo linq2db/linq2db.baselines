@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 SELECT DISTINCT
 	[a_Child].[ID]
 FROM

@@ -1,9 +1,7 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DROP TABLE IF EXISTS "FluentTemp_Merge"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 CREATE TABLE IF NOT EXISTS "FluentTemp_Merge"
 (
 	"ID"   Int  NOT NULL,
@@ -12,7 +10,7 @@ CREATE TABLE IF NOT EXISTS "FluentTemp_Merge"
 	CONSTRAINT "PK_FluentTemp_Merge" PRIMARY KEY ("ID")
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
 DECLARE @Name Text(4) -- String
@@ -29,8 +27,7 @@ VALUES
 	:Name
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 MERGE INTO "FluentTemp_Merge" "Target"
 USING (VALUES
 	(1,'John II')
@@ -58,7 +55,6 @@ VALUES
 	"Source"."Name"
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DROP TABLE IF EXISTS "FluentTemp_Merge"
 

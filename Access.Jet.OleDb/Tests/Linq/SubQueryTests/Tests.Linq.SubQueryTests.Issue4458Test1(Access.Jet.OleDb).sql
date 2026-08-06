@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[m_1].[Id],
 	[d].[ItemId],
@@ -22,7 +21,6 @@ ORDER BY
 	[d].[UserId]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[i].[Id],
 	[stock_1].[TotalAvailable]
@@ -48,14 +46,12 @@ WHERE
 	)
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id]
 FROM
 	[Issue4458Item] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[ItemId],
 	[t1].[QuantityAvailable],
@@ -64,7 +60,6 @@ FROM
 	[WarehouseStock] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[ItemId],
 	[t1].[UserId],

@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 MERGE INTO "TrimTestTable" "Target"
 USING (
 	SELECT 1 AS ID, CAST('***OOO***' AS VARCHAR(9)) AS "Data_1" FROM rdb$database
@@ -29,7 +28,6 @@ VALUES
 )
 
 -- Firebird.5 Firebird4
-
 MERGE INTO "TrimTestTable" "Target"
 USING (
 	SELECT 3 AS ID, CAST('***III***' AS VARCHAR(9)) AS "Data_1" FROM rdb$database) "Source"
@@ -57,7 +55,6 @@ VALUES
 )
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"r".ID,
 	"r"."Data"
@@ -67,7 +64,6 @@ ORDER BY
 	"r".ID
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"r".ID,
 	"r"."Data"

@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	CAST(CAST(p.ID AS Number(3)) AS VarChar(255))
 FROM

@@ -14,13 +14,12 @@ INSERT INTO Issue1554Table
 )
 VALUES
 (
-	@Id::Int,
-	@ClaimedKeyType::NVarChar(2),
-	@ClaimedKeyTypeN::NVarChar(2)
+	@Id,
+	@ClaimedKeyType,
+	@ClaimedKeyTypeN
 )
 
 -- Informix.DB2 Informix
-
 SELECT FIRST 2
 	t1.Id,
 	t1.ClaimedKeyType,

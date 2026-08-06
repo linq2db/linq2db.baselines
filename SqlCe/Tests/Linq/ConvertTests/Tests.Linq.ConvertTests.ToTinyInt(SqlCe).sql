@@ -1,7 +1,6 @@
 ﻿-- SqlCe
-
 SELECT
-	CAST([t].[MoneyValue] AS TinyInt) as [c1]
+	CAST([t].[MoneyValue] AS TinyInt)
 FROM
 	[LinqDataTypes] [t]
 

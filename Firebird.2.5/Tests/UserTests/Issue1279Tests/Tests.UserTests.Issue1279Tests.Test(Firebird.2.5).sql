@@ -12,7 +12,6 @@ VALUES
 )
 
 -- Firebird.2.5 Firebird
-
 SELECT FIRST 1
 	"t1"."Id",
 	"t1"."CharFld"

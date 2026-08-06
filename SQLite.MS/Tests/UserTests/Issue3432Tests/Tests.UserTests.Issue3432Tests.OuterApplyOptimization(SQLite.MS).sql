@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[task_1].[Description],
 	[party_1].[Name]

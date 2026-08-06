@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	CAST(p.MoneyValue AS DOUBLE)
 FROM

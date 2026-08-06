@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[p_1].[ParentID],
 	[p_1].[ParentID_1],

@@ -1,11 +1,9 @@
 ﻿-- DuckDB
-
 DROP TABLE IF EXISTS TestIdTrun;
 DROP SEQUENCE IF EXISTS TestIdTrun_ID_seq;
 DROP SEQUENCE IF EXISTS TestIdTrun_ID_seq_reset;
 
 -- DuckDB
-
 CREATE SEQUENCE IF NOT EXISTS TestIdTrun_ID_seq START 1;
 CREATE TABLE TestIdTrun
 (
@@ -16,7 +14,6 @@ CREATE TABLE TestIdTrun
 )
 
 -- DuckDB
-
 INSERT INTO TestIdTrun
 (
 	Field1
@@ -27,7 +24,6 @@ VALUES
 )
 
 -- DuckDB
-
 INSERT INTO TestIdTrun
 (
 	Field1
@@ -51,14 +47,12 @@ ORDER BY
 LIMIT 2 OFFSET $skip 
 
 -- DuckDB
-
 TRUNCATE TABLE TestIdTrun;
 DROP SEQUENCE IF EXISTS TestIdTrun_ID_seq_reset;
 CREATE SEQUENCE TestIdTrun_ID_seq_reset START 1;
 ALTER TABLE TestIdTrun ALTER COLUMN ID SET DEFAULT nextval('TestIdTrun_ID_seq_reset');
 
 -- DuckDB
-
 INSERT INTO TestIdTrun
 (
 	Field1
@@ -69,7 +63,6 @@ VALUES
 )
 
 -- DuckDB
-
 INSERT INTO TestIdTrun
 (
 	Field1
@@ -93,7 +86,6 @@ ORDER BY
 LIMIT 2 OFFSET $skip 
 
 -- DuckDB
-
 DROP TABLE TestIdTrun;
 DROP SEQUENCE IF EXISTS TestIdTrun_ID_seq;
 DROP SEQUENCE IF EXISTS TestIdTrun_ID_seq_reset;

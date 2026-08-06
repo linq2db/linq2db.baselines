@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.15 PostgreSQL12
 SELECT
 	p."FirstName"
 FROM
@@ -10,8 +9,7 @@ SELECT
 FROM
 	"Person" p_1
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	p."FirstName" || '/' || p."LastName"
 FROM

@@ -11,7 +11,6 @@ WHERE
 	[x].[ParentID] = @p
 
 -- SqlServer.2014
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]
@@ -33,7 +32,6 @@ WHERE
 	[x].[ParentID] = @p OR [x].[ParentID] = @p_1
 
 -- SqlServer.2014
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]
@@ -43,8 +41,6 @@ FROM
 -- SqlServer.2014
 DECLARE @p Int -- Int32
 SET     @p = 1
-DECLARE @p_1 Int -- Int32
-SET     @p_1 = 1
 
 SELECT
 	[x].[ParentID],
@@ -52,10 +48,9 @@ SELECT
 FROM
 	[Parent] [x]
 WHERE
-	[x].[ParentID] = @p OR [x].[ParentID] = @p_1
+	[x].[ParentID] = @p
 
 -- SqlServer.2014
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

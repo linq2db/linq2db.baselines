@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID] as [ParentID_1],
@@ -14,7 +13,6 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 -- SqlCe
-
 SELECT TOP (1)
 	[t1].[ParentID]
 FROM

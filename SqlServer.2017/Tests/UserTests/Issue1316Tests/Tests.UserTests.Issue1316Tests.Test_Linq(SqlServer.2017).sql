@@ -12,7 +12,6 @@ VALUES
 )
 
 -- SqlServer.2017
-
 SELECT TOP (2)
 	[t1].[ID]
 FROM

@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`e`.`StrReq`
 FROM
@@ -8,7 +7,6 @@ WHERE
 	(CONCAT(Coalesce(`e`.`StrReq`, ''), ' 1')) = 'Programmer 1'
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Str1`,

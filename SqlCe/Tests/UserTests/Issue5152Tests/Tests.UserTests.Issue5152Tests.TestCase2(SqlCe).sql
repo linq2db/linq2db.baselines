@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 UPDATE
 	[SampleClass]
 SET

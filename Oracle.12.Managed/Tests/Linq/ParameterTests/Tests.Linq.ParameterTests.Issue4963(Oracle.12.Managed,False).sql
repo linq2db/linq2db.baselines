@@ -8,7 +8,6 @@ SET
 	"Field" = CAST(CAST(t1."Field" AS Int) + :offset AS Number(3))
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Field"

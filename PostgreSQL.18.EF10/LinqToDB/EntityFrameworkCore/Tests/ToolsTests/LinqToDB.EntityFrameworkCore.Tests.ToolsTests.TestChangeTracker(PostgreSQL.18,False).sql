@@ -1,7 +1,6 @@
 ﻿
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	m_1."ProductId",
 	m_1."OrderId",
@@ -25,8 +24,7 @@ FROM
 
 
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	m_1."OrderID",
 	d."IsDeleted",
@@ -53,10 +51,7 @@ FROM
 
 
 
-
-
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	e."IsDeleted",
 	e."OrderID",

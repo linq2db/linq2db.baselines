@@ -29,7 +29,7 @@ SET     @FirstName = 'InsertColumnFilter'
 
 SELECT TOP (1)
 	[x].[FirstName],
-	[x].[PersonID] as [ID],
+	[x].[PersonID],
 	[x].[LastName],
 	[x].[MiddleName],
 	[x].[Gender]
@@ -63,7 +63,7 @@ SET     @FirstName = 'InsertColumnFilter'
 
 SELECT TOP (1)
 	[x].[FirstName],
-	[x].[PersonID] as [ID],
+	[x].[PersonID],
 	[x].[LastName],
 	[x].[MiddleName],
 	[x].[Gender]

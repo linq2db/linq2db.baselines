@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.15 PostgreSQL12
 SELECT
 	s."Id"
 FROM
@@ -8,8 +7,7 @@ WHERE
 	s."Enum" IN ('THREE', 'FOUR')
 LIMIT 1
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	s."Id"
 FROM
@@ -18,8 +16,7 @@ WHERE
 	s."Enum" IN ('THREE', NULL)
 LIMIT 1
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	s."Id"
 FROM
@@ -28,8 +25,7 @@ WHERE
 	s."Enum" IN ('THREE', 'TWO')
 LIMIT 1
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	s."Id"
 FROM
@@ -38,8 +34,7 @@ WHERE
 	s."Enum" NOT IN (NULL, 'TWO')
 LIMIT 1
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	s."Id"
 FROM

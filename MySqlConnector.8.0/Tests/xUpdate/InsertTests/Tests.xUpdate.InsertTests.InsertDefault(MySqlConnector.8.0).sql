@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 INSERT INTO `Person`
 (
 	`FirstName`,
@@ -16,7 +15,6 @@ VALUES
 )
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 DELETE  
 FROM
 	`Person`

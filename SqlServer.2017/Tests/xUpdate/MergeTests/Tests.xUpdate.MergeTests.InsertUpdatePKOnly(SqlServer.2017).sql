@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 MERGE INTO [PKOnlyTable] [Target]
 USING (VALUES
 	(1), (2), (3)
@@ -21,7 +20,6 @@ VALUES
 ;
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[ID]
 FROM

@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 DROP TABLE [InventoryResource]
 
 -- SqlCe

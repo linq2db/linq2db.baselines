@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 CREATE TEMPORARY TABLE temp.[WithIdentity]
 (
 	[Id]   INTEGER  NOT NULL PRIMARY KEY AUTOINCREMENT,
@@ -9,7 +8,6 @@ CREATE TEMPORARY TABLE temp.[WithIdentity]
 
 
 -- SQLite.MS SQLite
-
 INSERT INTO temp.[WithIdentity]
 (
 	[Name]
@@ -21,7 +19,6 @@ VALUES
 
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Name]
@@ -31,7 +28,6 @@ FROM
 
 
 -- SQLite.MS SQLite
-
 DROP TABLE IF EXISTS temp.[WithIdentity]
 
 

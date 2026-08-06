@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	i."Id",
 	Coalesce(t1."Reason", '')

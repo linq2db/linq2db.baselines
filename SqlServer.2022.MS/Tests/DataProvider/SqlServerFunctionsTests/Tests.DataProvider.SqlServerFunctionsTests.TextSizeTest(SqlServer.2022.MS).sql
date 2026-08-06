@@ -1,9 +1,7 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
-
 SET TEXTSIZE 2048
 
 -- SqlServer.2022.MS SqlServer.2022
-
 SELECT
 	@@TEXTSIZE
 

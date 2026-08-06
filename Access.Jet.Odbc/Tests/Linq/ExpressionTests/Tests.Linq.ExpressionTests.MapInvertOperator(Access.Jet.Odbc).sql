@@ -10,7 +10,6 @@ SET
 	[t1].[Value] = ([t1].[Value] BOR ?) BAND (-1 - ?)
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT TOP 2
 	[t1].[Id],
 	[t1].[Value]

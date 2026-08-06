@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	COUNT(*)
 FROM
@@ -9,7 +8,6 @@ WHERE
 	"a_Parent"."ParentID" = 1
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	COUNT(*)
 FROM
@@ -19,7 +17,6 @@ WHERE
 	"a_Parent"."ParentID" = 1
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"a_Parent"."ParentID"
 FROM

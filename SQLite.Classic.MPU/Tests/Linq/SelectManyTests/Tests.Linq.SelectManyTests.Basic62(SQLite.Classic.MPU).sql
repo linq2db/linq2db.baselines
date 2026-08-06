@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[a_Children].[ParentID] + [p].[ParentID]
 FROM

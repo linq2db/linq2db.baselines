@@ -1,5 +1,4 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	CASE
 		WHEN MOD(p."ParentID", 2) = 0 THEN CASE
@@ -19,7 +18,6 @@ FROM
 	"Parent" p
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	m_1."ParentID",
 	d."ParentID",
@@ -34,7 +32,6 @@ FROM
 		INNER JOIN "Child" d ON m_1."ParentID" = d."ParentID"
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."ParentID",
 	t1."Value1"

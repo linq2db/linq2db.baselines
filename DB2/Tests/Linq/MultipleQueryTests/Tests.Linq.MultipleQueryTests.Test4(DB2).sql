@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"m_1"."ParentID",
 	"d"."ChildID"
@@ -15,7 +14,6 @@ ORDER BY
 	"m_1"."ParentID"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"p"."ParentID"
 FROM

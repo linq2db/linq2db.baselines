@@ -169,7 +169,6 @@ VALUES
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 UPDATE
 	`Parent` `x`
 SET
@@ -180,7 +179,6 @@ ORDER BY
 	`x`.`ParentID` DESC
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`r`.`Value1`
 FROM

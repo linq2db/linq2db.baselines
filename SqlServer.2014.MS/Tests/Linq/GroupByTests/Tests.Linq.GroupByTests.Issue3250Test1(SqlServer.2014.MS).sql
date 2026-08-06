@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	CAST([g_2].[Message] AS NVarChar(11)) + N' items have not been processed, e.g. #' + Coalesce(CAST([g_2].[Message_1] AS NVarChar(11)), N'') + N'.'
 FROM

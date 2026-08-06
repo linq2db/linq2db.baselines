@@ -1,5 +1,4 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"Person" t1
 WHERE
@@ -31,10 +30,9 @@ RETURNING
 	"PersonID" INTO :IDENTITY_PARAMETER
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	p."FirstName",
-	p."PersonID" as ID,
+	p."PersonID",
 	p."LastName",
 	p."MiddleName",
 	p."Gender"
@@ -45,7 +43,6 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"Person" t1
 WHERE

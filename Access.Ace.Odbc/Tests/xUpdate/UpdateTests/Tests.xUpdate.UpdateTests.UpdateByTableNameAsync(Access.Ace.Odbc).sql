@@ -24,14 +24,12 @@ VALUES
 )
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	COUNT(*)
 FROM
 	[xxPerson] [t1]
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT TOP 2
 	[t1].[FirstName],
 	[t1].[PersonID],
@@ -64,7 +62,6 @@ WHERE
 	[t1].[PersonID] = ?
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT TOP 2
 	[t1].[FirstName],
 	[t1].[PersonID],

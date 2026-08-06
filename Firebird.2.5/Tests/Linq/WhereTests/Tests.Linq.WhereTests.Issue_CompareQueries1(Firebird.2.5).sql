@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT FIRST 2
 	COUNT("p"."PersonID")
 FROM
@@ -8,7 +7,6 @@ WHERE
 	"p"."PersonID" IN (1, 2)
 
 -- Firebird.2.5 Firebird
-
 SELECT FIRST 2
 	COUNT("p"."PersonID")
 FROM

@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 SELECT
 	LIST(Coalesce("t2"."Value_1", ''), '')
 FROM

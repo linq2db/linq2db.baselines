@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	p."FirstName"
 FROM
@@ -8,7 +7,7 @@ WHERE
 	p."PersonID" = 1
 LIMIT 2
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 DECLARE @nameToCheck Text(4) -- String
 SET     @nameToCheck = 'JOH%'
 
@@ -19,7 +18,7 @@ FROM
 WHERE
 	p."FirstName" ILIKE :nameToCheck ESCAPE '~' AND p."PersonID" = 1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 DECLARE @nameToCheck Text(4) -- String
 SET     @nameToCheck = 'JOH%'
 

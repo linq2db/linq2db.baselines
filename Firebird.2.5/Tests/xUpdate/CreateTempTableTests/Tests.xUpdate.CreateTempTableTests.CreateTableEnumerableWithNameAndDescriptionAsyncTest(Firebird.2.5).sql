@@ -1,12 +1,10 @@
 ﻿-- Firebird.2.5 Firebird
-
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TempTable')) THEN
 		EXECUTE STATEMENT 'DROP TABLE "TempTable"';
 END
 
 -- Firebird.2.5 Firebird
-
 EXECUTE BLOCK AS BEGIN
 	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TempTable')) THEN
 		EXECUTE STATEMENT '
@@ -21,7 +19,6 @@ EXECUTE BLOCK AS BEGIN
 END
 
 -- Firebird.2.5 Firebird
-
 INSERT INTO "TempTable"
 (
 	"Name"
@@ -29,7 +26,6 @@ INSERT INTO "TempTable"
 SELECT CAST('John' AS VarChar(20) CHARACTER SET UNICODE_FSS) FROM rdb$database
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t"."Name"
 FROM
@@ -37,7 +33,6 @@ FROM
 		INNER JOIN "TempTable" "t" ON "p"."FirstName" = "t"."Name"
 
 -- Firebird.2.5 Firebird
-
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TempTable')) THEN
 		EXECUTE STATEMENT 'DROP TABLE "TempTable"';

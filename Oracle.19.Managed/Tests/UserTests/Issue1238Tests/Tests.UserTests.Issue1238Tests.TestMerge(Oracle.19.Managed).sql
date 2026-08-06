@@ -1,10 +1,8 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"InheritanceParent" t1
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 MERGE INTO "InheritanceParent" Target
 USING (
 	SELECT 143 AS "Key1", NULL AS "Key2", 1 AS "Data_1" FROM sys.dual) "Source"
@@ -31,14 +29,12 @@ VALUES
 )
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(*)
 FROM
 	"InheritanceParent" t1
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 MERGE INTO "InheritanceParent" Target
 USING (
 	SELECT 143 AS "Key1", NULL AS "Key2", 1 AS "Data_1" FROM sys.dual) "Source"
@@ -65,7 +61,6 @@ VALUES
 )
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(*)
 FROM

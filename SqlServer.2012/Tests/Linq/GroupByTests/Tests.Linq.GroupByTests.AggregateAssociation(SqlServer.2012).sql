@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012
-
 SELECT
 	SUM(Coalesce([a_Parent].[Value1], 0))
 FROM

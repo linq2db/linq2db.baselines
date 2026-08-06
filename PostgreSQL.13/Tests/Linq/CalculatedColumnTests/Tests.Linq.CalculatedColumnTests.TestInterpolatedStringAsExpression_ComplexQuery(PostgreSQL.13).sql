@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
-
+﻿-- PostgreSQL.13 PostgreSQL12
 SELECT
 	x_1."Id",
 	CASE
@@ -29,8 +28,7 @@ FROM
 ORDER BY
 	x_1.c1
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	x_1."Id",
 	CASE

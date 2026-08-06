@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 DELETE FROM
 	TestMergeIdentity t1
 
@@ -17,14 +16,12 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	MAX(t1.Id)
 FROM
 	TestMergeIdentity t1
 
 -- DuckDB
-
 MERGE INTO TestMergeIdentity Target
 USING (VALUES
 	(10)
@@ -50,7 +47,6 @@ SET
 	Field = Source.Field
 
 -- DuckDB
-
 SELECT
 	t1.Id,
 	t1.Field

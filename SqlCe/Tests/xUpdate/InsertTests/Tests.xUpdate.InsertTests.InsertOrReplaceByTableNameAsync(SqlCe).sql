@@ -59,9 +59,8 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[xxPatient] [t1]
 
@@ -92,9 +91,8 @@ WHERE
 	[xxPatient].[PersonID] = @PersonID
 
 -- SqlCe
-
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[xxPatient] [t1]
 

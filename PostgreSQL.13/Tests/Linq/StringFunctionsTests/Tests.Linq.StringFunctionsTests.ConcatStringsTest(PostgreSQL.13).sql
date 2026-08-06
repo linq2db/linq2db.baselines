@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
-
+﻿-- PostgreSQL.13 PostgreSQL12
 SELECT
 	Coalesce(t."Value2", '')
 FROM
@@ -7,8 +6,7 @@ FROM
 ORDER BY
 	t."Id"
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	Coalesce(t."Value3", '')
 FROM
@@ -16,8 +14,7 @@ FROM
 ORDER BY
 	t."Id"
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	CONCAT_WS(' -> ', t."Value3", t."Value1", t."Value2")
 FROM
@@ -25,8 +22,7 @@ FROM
 ORDER BY
 	t."Id"
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	CONCAT_WS(' -> ', t."Value3", t."Value3")
 FROM

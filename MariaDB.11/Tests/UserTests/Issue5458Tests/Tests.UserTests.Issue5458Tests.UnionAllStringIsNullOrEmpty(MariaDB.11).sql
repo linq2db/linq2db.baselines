@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value_1` IS NULL OR CHAR_LENGTH(`t1`.`Value_1`) = 0

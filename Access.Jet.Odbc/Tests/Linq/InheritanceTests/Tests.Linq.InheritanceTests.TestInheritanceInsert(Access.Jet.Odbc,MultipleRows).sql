@@ -141,7 +141,6 @@ VALUES
 )
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[t1].[Code],
 	[t1].[Id],

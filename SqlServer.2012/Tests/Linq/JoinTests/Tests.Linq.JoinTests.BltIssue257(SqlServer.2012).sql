@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012
-
 SELECT
 	[b_1].[Date_1],
 	COUNT(*)

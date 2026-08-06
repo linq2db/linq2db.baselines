@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT TOP 3
 	[ch].[ParentID],
 	[ch].[ChildID]

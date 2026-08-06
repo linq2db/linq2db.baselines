@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 INSERT INTO ConcurrencyFiltered
 (
 	Id,
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Stamp,
@@ -23,7 +21,6 @@ FROM
 	ConcurrencyFiltered t1
 
 -- ClickHouse.MySql ClickHouse
-
 ALTER TABLE
 	ConcurrencyFiltered
 UPDATE
@@ -33,7 +30,6 @@ WHERE
 	Id = 2 AND Id = 1 AND Stamp = -10
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Stamp,
@@ -42,7 +38,6 @@ FROM
 	ConcurrencyFiltered t1
 
 -- ClickHouse.MySql ClickHouse
-
 ALTER TABLE
 	ConcurrencyFiltered
 UPDATE
@@ -52,7 +47,6 @@ WHERE
 	Id = 1 AND Id = 1 AND Stamp = -10
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Stamp,
@@ -61,14 +55,12 @@ FROM
 	ConcurrencyFiltered t1
 
 -- ClickHouse.MySql ClickHouse
-
 ALTER TABLE
 	ConcurrencyFiltered
 DELETE WHERE
 	Id = 2 AND Id = 1 AND Stamp = -9
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Stamp,
@@ -77,14 +69,12 @@ FROM
 	ConcurrencyFiltered t1
 
 -- ClickHouse.MySql ClickHouse
-
 ALTER TABLE
 	ConcurrencyFiltered
 DELETE WHERE
 	Id = 1 AND Id = 1 AND Stamp = -9
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Stamp,

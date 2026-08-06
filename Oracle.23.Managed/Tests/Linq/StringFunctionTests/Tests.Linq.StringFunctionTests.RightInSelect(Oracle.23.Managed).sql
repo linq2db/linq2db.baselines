@@ -1,5 +1,4 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	Substr(p."FirstName", Length(p."FirstName") - 2, 3)
 FROM

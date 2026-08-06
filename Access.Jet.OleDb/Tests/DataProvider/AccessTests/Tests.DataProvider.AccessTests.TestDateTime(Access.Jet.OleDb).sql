@@ -1,9 +1,7 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT cdate('2012-12-12 12:12:12')
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT CDate('2012-12-12 12:12:12')
 
 -- Access.Jet.OleDb AccessOleDb

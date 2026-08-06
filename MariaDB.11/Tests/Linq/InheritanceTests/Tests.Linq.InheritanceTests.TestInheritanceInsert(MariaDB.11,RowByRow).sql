@@ -141,7 +141,6 @@ VALUES
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Code`,
 	`t1`.`Id`,

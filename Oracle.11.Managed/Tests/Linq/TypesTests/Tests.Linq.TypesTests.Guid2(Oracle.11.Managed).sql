@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	p.ID,
 	p."MoneyValue",
@@ -16,7 +15,6 @@ WHERE
 	ROWNUM <= 2
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	p.ID,
 	p."MoneyValue",

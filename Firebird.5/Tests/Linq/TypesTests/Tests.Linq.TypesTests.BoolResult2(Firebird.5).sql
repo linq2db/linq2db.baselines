@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 SELECT
 	"a_Patient"."PersonID" IS NOT NULL
 FROM

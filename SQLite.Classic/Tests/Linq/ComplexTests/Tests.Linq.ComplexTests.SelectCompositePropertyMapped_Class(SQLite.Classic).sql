@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT DISTINCT
 	[u].[city],
 	[u].[street],

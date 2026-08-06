@@ -24,14 +24,12 @@ VALUES
 )
 
 -- Firebird.4 Firebird4
-
 SELECT
 	COUNT(*)
 FROM
 	"xxPerson" "t1"
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."FirstName",
 	"t1"."PersonID",
@@ -65,7 +63,6 @@ WHERE
 	"t1"."PersonID" = @ID
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."FirstName",
 	"t1"."PersonID",

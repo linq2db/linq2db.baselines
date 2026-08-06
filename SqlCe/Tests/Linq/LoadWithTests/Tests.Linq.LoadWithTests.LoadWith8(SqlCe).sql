@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT TOP (1)
 	[a_GrandChildren].[ParentID],
 	[a_GrandChildren].[ChildID],

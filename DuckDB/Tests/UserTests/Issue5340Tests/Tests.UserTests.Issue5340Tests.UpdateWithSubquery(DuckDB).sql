@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 UPDATE
 	OuterTable
 SET
@@ -16,7 +15,6 @@ SET
 	)
 
 -- DuckDB
-
 SELECT
 	t1.Id,
 	t1.Field1,

@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 DELETE  
 FROM
 	`InheritanceParent`
@@ -28,7 +27,6 @@ ON DUPLICATE KEY UPDATE
 	`TypeDiscriminator` = @Data
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	COUNT(*)
 FROM
@@ -58,7 +56,6 @@ ON DUPLICATE KEY UPDATE
 	`TypeDiscriminator` = @Data
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	COUNT(*)
 FROM

@@ -1,5 +1,4 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	SUM(g_1."ChildID"),
 	MIN(g_1."ChildID"),

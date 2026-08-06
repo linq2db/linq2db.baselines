@@ -1,8 +1,7 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[m_1].[ParentID],
-	[d].[ParentID],
+	[d].[ParentID] as [ParentID_1],
 	[d].[ChildID]
 FROM
 	(
@@ -16,10 +15,9 @@ FROM
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[m_1].[ParentID],
-	[d].[ParentID],
+	[d].[ParentID] as [ParentID_1],
 	[d].[ChildID],
 	[d].[GrandChildID]
 FROM
@@ -34,7 +32,6 @@ FROM
 		INNER JOIN [GrandChild] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[p].[ParentID],
 	[p].[Value1]

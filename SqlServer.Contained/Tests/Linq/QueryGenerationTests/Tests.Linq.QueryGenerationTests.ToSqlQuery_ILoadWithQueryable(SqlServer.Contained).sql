@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[p].[ParentID],
 	[p].[Value1]
@@ -9,7 +8,6 @@ WHERE
 	[p].[ParentID] = 1
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
@@ -31,7 +29,6 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT TOP (2)
 	[p].[ParentID],
 	[p].[Value1]

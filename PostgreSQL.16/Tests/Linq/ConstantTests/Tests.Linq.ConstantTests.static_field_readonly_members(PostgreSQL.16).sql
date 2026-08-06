@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @InitOnlyId Integer -- Int32
@@ -14,8 +14,7 @@ FROM
 WHERE
 	e."Id" = :Id AND e."Id" = :InitOnlyId
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."GuidValue",
@@ -24,7 +23,7 @@ SELECT
 FROM
 	"TestConstantsData" t1
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @InitOnlyId Integer -- Int32
@@ -40,8 +39,7 @@ FROM
 WHERE
 	e."Id" = :Id AND e."Id" = :InitOnlyId
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."GuidValue",

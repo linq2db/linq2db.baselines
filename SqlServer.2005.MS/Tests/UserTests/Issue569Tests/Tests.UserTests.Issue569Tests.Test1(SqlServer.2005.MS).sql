@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[patient_1].[PersonID],
 	[person_1].[FirstName],

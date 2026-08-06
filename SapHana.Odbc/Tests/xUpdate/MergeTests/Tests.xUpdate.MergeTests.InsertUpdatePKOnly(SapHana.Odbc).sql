@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 MERGE INTO "PKOnlyTable" "Target"
 USING (
 	SELECT 1 AS "ID" FROM DUMMY
@@ -20,7 +19,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."ID"
 FROM

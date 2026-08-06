@@ -19,7 +19,6 @@ WHERE
 	? = "t1"."BigIntValue"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."ID",
 	"t1"."MoneyValue",

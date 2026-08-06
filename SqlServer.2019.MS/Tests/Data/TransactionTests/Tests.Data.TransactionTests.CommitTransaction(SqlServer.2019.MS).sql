@@ -16,7 +16,6 @@ VALUES
 )
 
 -- SqlServer.2019.MS SqlServer.2019
-
 UPDATE
 	[Parent]
 SET
@@ -26,7 +25,6 @@ WHERE
 
 CommitTransaction
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT TOP (1)
 	[t].[ParentID],
 	[t].[Value1]

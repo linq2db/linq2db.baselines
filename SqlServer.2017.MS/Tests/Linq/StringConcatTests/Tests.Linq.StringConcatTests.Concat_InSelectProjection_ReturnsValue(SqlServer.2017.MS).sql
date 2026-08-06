@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	Coalesce([e].[Str1], N'') + N'/' + Coalesce([e].[StrReq], N'')
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	[e].[Id]
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t1].[Id],
 	[t1].[Str1],

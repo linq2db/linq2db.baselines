@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 CREATE TABLE IF NOT EXISTS [FluentTemp_UpdateAsync]
 (
 	[ID]       INTEGER      NOT NULL,
@@ -45,6 +44,5 @@ WHERE
 	[FluentTemp_UpdateAsync].[ID] = 1
 
 -- SQLite.MS SQLite
-
 DROP TABLE IF EXISTS [FluentTemp_UpdateAsync]
 

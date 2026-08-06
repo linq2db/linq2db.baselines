@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 SELECT
 	[f].[Id],
 	[ft].[Id],

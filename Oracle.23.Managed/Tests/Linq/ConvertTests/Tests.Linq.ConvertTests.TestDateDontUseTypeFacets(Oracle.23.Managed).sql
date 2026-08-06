@@ -1,5 +1,4 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	g_2."Date_1",
 	COUNT(*)
@@ -14,7 +13,6 @@ GROUP BY
 	g_2."Date_1"
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."CreatedOnUtc"
 FROM

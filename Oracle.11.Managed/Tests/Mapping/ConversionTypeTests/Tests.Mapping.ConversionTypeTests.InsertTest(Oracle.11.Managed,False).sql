@@ -33,7 +33,6 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 INSERT INTO "TrimTestTable"
 (
 	ID,
@@ -46,7 +45,6 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	r.ID,
 	r."Data"
@@ -56,7 +54,6 @@ ORDER BY
 	r.ID
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	r.ID,
 	r."Data"

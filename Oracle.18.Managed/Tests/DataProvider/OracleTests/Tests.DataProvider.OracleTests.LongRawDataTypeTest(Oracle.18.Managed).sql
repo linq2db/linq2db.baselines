@@ -1,12 +1,10 @@
 ﻿-- Oracle.18.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"LongRawTable" t
 WHERE
 	t.ID > 2
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	t."longRawDataType"
 FROM
@@ -45,7 +43,6 @@ VALUES
 )
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	t."longRawDataType"
 FROM

@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	NULLIF(s."Int", 2)
 FROM
@@ -7,8 +6,7 @@ FROM
 ORDER BY
 	s."Int"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -16,8 +14,7 @@ FROM
 WHERE
 	s."Int" = 2
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -25,8 +22,7 @@ FROM
 WHERE
 	s."Int" <> 2
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	NULLIF(s."Int", 4)
 FROM
@@ -34,8 +30,7 @@ FROM
 ORDER BY
 	s."Int"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -43,8 +38,7 @@ FROM
 WHERE
 	s."Int" = 4
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -52,8 +46,7 @@ FROM
 WHERE
 	s."Int" <> 4
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	s."Int"
 FROM
@@ -61,8 +54,7 @@ FROM
 ORDER BY
 	s."Int"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -70,15 +62,13 @@ FROM
 WHERE
 	1 = 0
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
 	"Src" s
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	NULLIF(s."NullableInt", 2)
 FROM
@@ -86,8 +76,7 @@ FROM
 ORDER BY
 	s."Int"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -95,8 +84,7 @@ FROM
 WHERE
 	s."NullableInt" = 2 OR s."NullableInt" IS NULL
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -104,8 +92,7 @@ FROM
 WHERE
 	NOT (s."NullableInt" = 2 OR s."NullableInt" IS NULL)
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	NULLIF(s."NullableInt", 4)
 FROM
@@ -113,8 +100,7 @@ FROM
 ORDER BY
 	s."Int"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -122,8 +108,7 @@ FROM
 WHERE
 	s."NullableInt" = 4 OR s."NullableInt" IS NULL
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -131,8 +116,7 @@ FROM
 WHERE
 	NOT (s."NullableInt" = 4 OR s."NullableInt" IS NULL)
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	s."NullableInt"
 FROM
@@ -140,8 +124,7 @@ FROM
 ORDER BY
 	s."Int"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -149,8 +132,7 @@ FROM
 WHERE
 	s."NullableInt" IS NULL
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM

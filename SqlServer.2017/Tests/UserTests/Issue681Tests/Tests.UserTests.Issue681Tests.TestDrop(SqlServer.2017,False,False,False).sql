@@ -1,9 +1,7 @@
 ﻿-- SqlServer.2017
-
 DROP TABLE IF EXISTS [Issue681Table2]
 
 -- SqlServer.2017
-
 CREATE TABLE [Issue681Table2]
 (
 	[ID]    Int NOT NULL,
@@ -13,6 +11,5 @@ CREATE TABLE [Issue681Table2]
 )
 
 -- SqlServer.2017
-
 DROP TABLE [Issue681Table2]
 

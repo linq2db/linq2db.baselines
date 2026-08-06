@@ -1,9 +1,7 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 DROP TABLE IF EXISTS temp.[TestTable]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 CREATE TEMPORARY TABLE temp.[TestTable]
 (
 	[Id]    INTEGER NOT NULL,
@@ -13,7 +11,6 @@ CREATE TEMPORARY TABLE temp.[TestTable]
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value],
@@ -29,6 +26,5 @@ WHERE
 	[t1].[Id] = [t2].[Id]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 DROP TABLE IF EXISTS temp.[TestTable]
 

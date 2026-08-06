@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	NOT EXISTS(
 		SELECT
@@ -11,7 +10,6 @@ SELECT
 	)
 
 -- DuckDB
-
 SELECT
 	NOT EXISTS(
 		SELECT

@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 MERGE INTO "AllTypes" "Target"
 USING (
 	SELECT 10 AS ID, _utf8 x'00' AS "charDataType", CAST(_utf8 x'00' AS CHAR(1)) AS "ncharDataType" FROM rdb$database) "Source"

@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 DELETE FROM
 	[TableToInsert]
 WHERE

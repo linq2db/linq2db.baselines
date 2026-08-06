@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 WITH [BooksCte] ([AuthorId], [Title])
 AS
 (

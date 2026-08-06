@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 CREATE TABLE [tempdb]..[#TableWithData_output]
 (
 	[Id]       Int          NOT NULL,
@@ -10,7 +9,6 @@ CREATE TABLE [tempdb]..[#TableWithData_output]
 )
 
 -- SqlServer.Contained SqlServer.2019
-
 INSERT INTO [TableWithData_source]
 (
 	[Value],
@@ -35,7 +33,6 @@ VALUES
 )
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value],
@@ -44,7 +41,6 @@ FROM
 	[TableWithData_source] [t1]
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value],
@@ -53,6 +49,5 @@ FROM
 	[tempdb]..[#TableWithData_output] [t1]
 
 -- SqlServer.Contained SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#TableWithData_output]
 

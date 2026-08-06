@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 DELETE FROM
 	[Person]
 WHERE
@@ -31,7 +30,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT last_insert_rowid()
 
 -- SQLite.MS SQLite
@@ -76,7 +74,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT last_insert_rowid()
 
 -- SQLite.MS SQLite
@@ -96,7 +93,6 @@ WHERE
 LIMIT 2
 
 -- SQLite.MS SQLite
-
 DELETE FROM
 	[Person]
 WHERE

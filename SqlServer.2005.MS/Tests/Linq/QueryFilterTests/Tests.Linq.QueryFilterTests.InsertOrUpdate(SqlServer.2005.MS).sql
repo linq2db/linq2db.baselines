@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
-
 UPDATE
 	[Issue5289Table]
 SET
@@ -26,7 +25,6 @@ BEGIN
 END
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT TOP (2)
 	[r].[Id],
 	[r].[PictureId],
@@ -37,7 +35,6 @@ WHERE
 	[r].[Deleted] = 0 AND [r].[Id] = 1
 
 -- SqlServer.2005.MS SqlServer.2005
-
 UPDATE
 	[Issue5289Table]
 SET
@@ -64,7 +61,6 @@ BEGIN
 END
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT TOP (2)
 	[r].[Id],
 	[r].[PictureId],

@@ -1,29 +1,22 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DROP TABLE IF EXISTS "Doctor"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DROP TABLE IF EXISTS "Patient"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DROP FUNCTION IF EXISTS "TestTableFunctionSchema"()
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DROP MATERIALIZED VIEW IF EXISTS "Issue2023"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DROP TABLE IF EXISTS "Person"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DROP TABLE IF EXISTS "InheritanceParent"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 CREATE TABLE "InheritanceParent"
 (
 	"InheritanceParentId" INTEGER       PRIMARY KEY,
@@ -31,12 +24,10 @@ CREATE TABLE "InheritanceParent"
 	"Name"                VARCHAR(50)                   NULL
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DROP TABLE IF EXISTS "InheritanceChild"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 CREATE TABLE "InheritanceChild"
 (
 	"InheritanceChildId"  INTEGER      PRIMARY KEY,
@@ -45,8 +36,7 @@ CREATE TABLE "InheritanceChild"
 	"Name"                VARCHAR(50)                  NULL
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 CREATE TABLE "Person"
 (
 	--PersonID   INTEGER PRIMARY KEY DEFAULT NEXTVAL('Seq'),
@@ -57,29 +47,23 @@ CREATE TABLE "Person"
 	"Gender"     CHAR(1)     NOT NULL
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 COMMENT ON TABLE  "Person"            IS 'This is the Person table';
 COMMENT ON COLUMN "Person"."PersonID" IS 'This is the Person.PersonID column';
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 INSERT INTO "Person" ("FirstName", "LastName", "Gender") VALUES ('John',   'Pupkin',    'M')
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 INSERT INTO "Person" ("FirstName", "LastName", "Gender") VALUES ('Tester', 'Testerson', 'M')
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 INSERT INTO "Person" ("FirstName", "LastName", "Gender") VALUES ('Jane',   'Doe',       'F')
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 INSERT INTO "Person" ("FirstName", "LastName", "MiddleName", "Gender") VALUES ('Jürgen', 'König', 'Ko', 'M')
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 -- Doctor Table Extension
 
 CREATE TABLE "Doctor"
@@ -88,12 +72,10 @@ CREATE TABLE "Doctor"
 	"Taxonomy" VARCHAR(50) NOT NULL
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 INSERT INTO "Doctor" ("PersonID", "Taxonomy") VALUES (1, 'Psychiatry')
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 -- Patient Table Extension
 
 CREATE TABLE "Patient"
@@ -102,12 +84,10 @@ CREATE TABLE "Patient"
 	"Diagnosis" VARCHAR(256) NOT NULL
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 INSERT INTO "Patient" ("PersonID", "Diagnosis") VALUES (2, 'Hallucination with Paranoid Bugs'' Delirium of Persecution')
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 CREATE OR REPLACE FUNCTION reverse(text) RETURNS text
 	AS $_$
 DECLARE
@@ -123,36 +103,28 @@ RETURN reverse_str;
 END;$_$
 	LANGUAGE plpgsql IMMUTABLE;
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DROP TABLE IF EXISTS "Parent"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DROP TABLE IF EXISTS "Child"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DROP TABLE IF EXISTS "GrandChild"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 CREATE TABLE "Parent"      ("ParentID" int, "Value1" int)
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 CREATE TABLE "Child"       ("ParentID" int, "ChildID" int)
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 CREATE TABLE "GrandChild"  ("ParentID" int, "ChildID" int, "GrandChildID" int)
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DROP TABLE IF EXISTS "LinqDataTypes"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 CREATE TABLE "LinqDataTypes"
 (
 	"ID"             int,
@@ -168,27 +140,23 @@ CREATE TABLE "LinqDataTypes"
 	"StringValue"    varchar(50) NULL
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 CREATE OR REPLACE FUNCTION "GetParentByID"(id int)
 RETURNS TABLE ("ParentID" int, "Value1" int)
 AS $$ SELECT * FROM "Parent" WHERE "ParentID" = $1 $$
 LANGUAGE SQL;
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DROP TABLE IF EXISTS  entity
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 CREATE TABLE entity
 (
 	the_name character varying(255) NOT NULL,
 	CONSTRAINT entity_name_key UNIQUE (the_name)
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 CREATE OR REPLACE FUNCTION add_if_not_exists(p_name character varying)
 	RETURNS void AS
 $BODY$
@@ -202,102 +170,81 @@ END;
 $BODY$
 	LANGUAGE plpgsql;
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DROP TABLE IF EXISTS "SequenceTest1"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DROP TABLE IF EXISTS "SequenceTest2"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DROP TABLE IF EXISTS "SequenceTest3"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DROP TABLE IF EXISTS "SequenceCustomNamingTest"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DROP SEQUENCE IF EXISTS SequenceTestSeq
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 CREATE SEQUENCE SequenceTestSeq INCREMENT 1 START 1
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DROP SEQUENCE IF EXISTS "SequenceTest2_ID_seq"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 CREATE SEQUENCE "SequenceTest2_ID_seq" INCREMENT 1 START 1
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DROP SEQUENCE IF EXISTS test_schema."SequenceCustomNamingTest__seq__"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 CREATE TABLE "SequenceTest1"
 (
 	"ID"    INTEGER PRIMARY KEY,
 	"Value" VARCHAR(50)
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 CREATE TABLE "SequenceTest2"
 (
 	"ID"    INTEGER PRIMARY KEY DEFAULT NEXTVAL('"SequenceTest2_ID_seq"'),
 	"Value" VARCHAR(50)
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 CREATE TABLE "SequenceTest3"
 (
 	"ID"    INTEGER PRIMARY KEY DEFAULT NEXTVAL('SequenceTestSeq'),
 	"Value" VARCHAR(50)
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DROP TABLE IF EXISTS "TestIdentity"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DROP SEQUENCE IF EXISTS "TestIdentity_ID_seq"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 CREATE SEQUENCE "TestIdentity_ID_seq" INCREMENT 1 START 1
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 CREATE TABLE "TestIdentity" (
 	"ID" INTEGER PRIMARY KEY DEFAULT NEXTVAL('"TestIdentity_ID_seq"')
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DROP TABLE IF EXISTS "AllTypes"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DROP TABLE IF EXISTS "AllTypes"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DROP TYPE IF EXISTS color
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 CREATE TYPE color AS ENUM ('Red', 'Green', 'Blue');
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 CREATE TABLE "AllTypes"
 (
 	"ID"                  serial               NOT NULL PRIMARY KEY,
@@ -369,8 +316,7 @@ CREATE TABLE "AllTypes"
 	DecimalArray          decimal[]                NULL
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 INSERT INTO "AllTypes"
 (
 	"bigintDataType",
@@ -494,87 +440,70 @@ SELECT
 
 	B'1011'
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DROP TABLE IF EXISTS TestSameName
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DROP TABLE IF EXISTS test_schema.TestSameName
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DROP TABLE IF EXISTS test_schema.TestSerialIdentity
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DROP TABLE IF EXISTS test_schema."TestSchemaIdentity"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DROP SEQUENCE IF EXISTS test_schema."TestSchemaIdentity_ID_seq"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DROP SCHEMA IF EXISTS test_schema
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 CREATE SCHEMA test_schema
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 CREATE SEQUENCE test_schema."TestSchemaIdentity_ID_seq" INCREMENT 1 START 1
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 CREATE SEQUENCE test_schema."SequenceCustomNamingTest__seq__" INCREMENT 1 START 1
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 CREATE TABLE "SequenceCustomNamingTest"
 (
 	"ID"    INTEGER PRIMARY KEY DEFAULT NEXTVAL('test_schema."SequenceCustomNamingTest__seq__"'),
 	"Value" VARCHAR(50)
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 CREATE TABLE test_schema."TestSchemaIdentity" (
 	"ID" INTEGER PRIMARY KEY DEFAULT NEXTVAL('test_schema."TestSchemaIdentity_ID_seq"')
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 CREATE TABLE test_schema.TestSerialIdentity
 (
 	"ID" serial NOT NULL PRIMARY KEY
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 CREATE TABLE test_schema.TestSameName
 (
 	ID serial NOT NULL PRIMARY KEY
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 CREATE TABLE TestSameName
 (
 	ID serial NOT NULL PRIMARY KEY
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DROP TABLE IF EXISTS "TestMerge1"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DROP TABLE IF EXISTS "TestMerge2"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 CREATE TABLE "TestMerge1"
 (
 	"Id"		INTEGER	PRIMARY KEY,
@@ -603,8 +532,7 @@ CREATE TABLE "TestMerge1"
 	"FieldEnumNumber" INT                      NULL
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 CREATE TABLE "TestMerge2"
 (
 	"Id"		INTEGER	PRIMARY KEY,
@@ -633,8 +561,7 @@ CREATE TABLE "TestMerge2"
 	"FieldEnumNumber" INT                      NULL
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 CREATE OR REPLACE FUNCTION AddIssue792Record()
 	RETURNS void AS
 $BODY$
@@ -644,42 +571,34 @@ END;
 $BODY$
 	LANGUAGE PLPGSQL;
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 CREATE OR REPLACE FUNCTION "TestTableFunctionSchema"() RETURNS SETOF "AllTypes"
 AS $$ SELECT * FROM "AllTypes" $$ LANGUAGE SQL;
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 CREATE OR REPLACE FUNCTION "TestFunctionParameters"(param1 INT, INOUT param2 INT, OUT param3 INT)
 AS $$ SELECT param1, param2 $$ LANGUAGE SQL;
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 CREATE OR REPLACE FUNCTION "TestTableFunction"(param1 INT) RETURNS TABLE(param2 INT)
 AS $$ SELECT param1 UNION ALL SELECT param1 $$ LANGUAGE SQL;
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 CREATE OR REPLACE FUNCTION "TestTableFunction1"(param1 INT, param2 INT) RETURNS TABLE(param3 INT, param4 INT)
 AS $$ SELECT param1, 23 UNION ALL SELECT 333, param2 $$ LANGUAGE SQL;
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 CREATE OR REPLACE FUNCTION "TestScalarFunction"(param INT) RETURNS VARCHAR(10)
 AS $$ BEGIN RETURN 'done'; END $$ LANGUAGE PLPGSQL;
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 CREATE OR REPLACE FUNCTION "TestSingleOutParameterFunction"(param1 INT, OUT param2 INT)
 AS $$ BEGIN param2 := param1 + 123; END $$ LANGUAGE PLPGSQL;
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DROP AGGREGATE IF EXISTS test_avg(float8)
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 CREATE AGGREGATE test_avg(float8)
 (
 	sfunc = float8_accum,
@@ -688,13 +607,11 @@ CREATE AGGREGATE test_avg(float8)
 	initcond = '{0,0,0}'
 );
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 CREATE OR REPLACE FUNCTION "bool"(param INT) RETURNS VARCHAR(20)
 AS $$ BEGIN RETURN 'issue1295test'; END $$ LANGUAGE PLPGSQL;
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 CREATE OR REPLACE FUNCTION issue_1742_date(p1 date) RETURNS int AS $$
 BEGIN
 	RETURN 42;
@@ -713,52 +630,41 @@ BEGIN
 END; $$
 LANGUAGE plpgsql;
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 CREATE MATERIALIZED VIEW "Issue2023" AS select * from "Person"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 COMMENT ON MATERIALIZED VIEW  "Issue2023" IS 'This is the Issue2023 matview';
 COMMENT ON COLUMN             "Issue2023"."PersonID" IS 'This is the Issue2023.PersonID column';
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DROP FUNCTION IF EXISTS "SchemaName"."fnTest"(INT)
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DROP SCHEMA IF EXISTS "SchemaName"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 CREATE SCHEMA "SchemaName"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 CREATE OR REPLACE FUNCTION "SchemaName"."fnTest"(param INT) RETURNS VARCHAR(20)
 AS $$ BEGIN RETURN 'issue2679test'; END $$ LANGUAGE PLPGSQL;
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DROP TABLE IF EXISTS same_name2
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DROP TABLE IF EXISTS same_name1
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DROP TABLE IF EXISTS same_name
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 CREATE TABLE same_name (
 id INTEGER PRIMARY KEY
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 CREATE TABLE same_name1 (
 id			INTEGER PRIMARY KEY,
 same_name	INTEGER NULL,
@@ -768,8 +674,7 @@ CONSTRAINT same_name
 	REFERENCES same_name (id)
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 CREATE TABLE same_name2 (
 id			INTEGER PRIMARY KEY,
 same_name	INTEGER NULL,
@@ -779,12 +684,10 @@ CONSTRAINT same_name
 	REFERENCES same_name (id)
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DROP TABLE "CollatedTable"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 CREATE TABLE "CollatedTable"
 (
 	"Id"				INT NOT NULL,
@@ -792,20 +695,17 @@ CREATE TABLE "CollatedTable"
 	"CaseInsensitive"	VARCHAR(20) NOT NULL
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DROP TABLE "TestMergeIdentity"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 CREATE TABLE "TestMergeIdentity"
 (
 	"Id"     SERIAL NOT NULL PRIMARY KEY,
 	"Field"  INT NULL
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 CREATE OR REPLACE FUNCTION overloads(input1 integer)
  RETURNS integer
  LANGUAGE sql
@@ -867,8 +767,7 @@ INSERT INTO multitenant_table (TenantId, Id, Name, Description, CreatedAt) VALUE
 ('33333333-3333-3333-3333-333333333333', 'eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee', 'Tenant3 Record1', 'Description for Tenant3 Record1', NOW()),
 ('33333333-3333-3333-3333-333333333333', 'ffffffff-ffff-ffff-ffff-ffffffffffff', 'Tenant3 Record2', 'Description for Tenant3 Record2', NOW());
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 INSERT INTO "LinqDataTypes"
 (
 	"ID",
@@ -896,8 +795,7 @@ VALUES
 (11,11.45,'2009-09-27'::date,NULL,True,'d3021d18-97f0-4dc0-98d0-f0c7df4a1230'::uuid,11,NULL,NULL,'9'),
 (12,11.45,'2012-11-07 19:19:29.090'::timestamp,NULL,True,'03021d18-97f0-4dc0-98d0-f0c7df4a1230'::uuid,12,NULL,NULL,'0')
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 INSERT INTO "Parent"
 (
 	"ParentID",
@@ -912,8 +810,7 @@ VALUES
 (6,6),
 (7,1)
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 INSERT INTO "Child"
 (
 	"ParentID",
@@ -938,8 +835,7 @@ VALUES
 (6,66),
 (7,77)
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 INSERT INTO "GrandChild"
 (
 	"ParentID",
@@ -970,8 +866,7 @@ VALUES
 (4,42,423),
 (4,42,424)
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 INSERT INTO "InheritanceParent"
 (
 	"InheritanceParentId",
@@ -983,8 +878,7 @@ VALUES
 (2,1,NULL),
 (3,2,'InheritanceParent2')
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 INSERT INTO "InheritanceChild"
 (
 	"InheritanceChildId",

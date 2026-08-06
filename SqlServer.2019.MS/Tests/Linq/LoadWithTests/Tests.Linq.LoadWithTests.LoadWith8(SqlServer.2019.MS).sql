@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2019.MS SqlServer.2019
-
 SELECT TOP (1)
 	[a_GrandChildren].[ParentID],
 	[a_GrandChildren].[ChildID],

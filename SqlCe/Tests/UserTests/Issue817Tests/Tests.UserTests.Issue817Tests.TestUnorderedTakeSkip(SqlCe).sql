@@ -5,7 +5,7 @@ DECLARE @take Int -- Int32
 SET     @take = 1
 
 SELECT
-	1 as [c1]
+	1
 FROM
 	[Person] [t1]
 ORDER BY

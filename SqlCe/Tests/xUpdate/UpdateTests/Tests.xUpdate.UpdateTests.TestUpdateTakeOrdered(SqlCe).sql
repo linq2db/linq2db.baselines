@@ -197,9 +197,8 @@ WHERE
 	)
 
 -- SqlCe
-
 SELECT
-	[r].[Value1] as [Value_1]
+	[r].[Value1]
 FROM
 	[Parent] [r]
 WHERE

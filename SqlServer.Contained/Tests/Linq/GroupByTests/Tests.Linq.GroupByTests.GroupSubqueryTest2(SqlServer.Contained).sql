@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[pmp1].[ChildID]
 FROM
@@ -12,7 +11,6 @@ FROM
 		) [pmp_1]
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID]

@@ -54,7 +54,6 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	p.Id,
 	p.TargetName,

@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 UPDATE
 	"ParentTable"
 SET
@@ -16,7 +15,6 @@ WHERE
 	)
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	p."Id",
 	p."Value" as "Value_1"

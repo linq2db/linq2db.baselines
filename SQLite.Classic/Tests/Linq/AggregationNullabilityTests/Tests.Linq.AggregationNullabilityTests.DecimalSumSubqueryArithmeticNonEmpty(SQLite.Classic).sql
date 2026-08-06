@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT
 	[o].[Anchor] - Coalesce((
 		SELECT

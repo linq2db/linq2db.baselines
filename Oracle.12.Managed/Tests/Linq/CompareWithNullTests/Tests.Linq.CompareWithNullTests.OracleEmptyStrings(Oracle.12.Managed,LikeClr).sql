@@ -1,5 +1,4 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	x."Id"
 FROM
@@ -9,7 +8,6 @@ WHERE
 FETCH NEXT 1 ROWS ONLY
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	x."Id"
 FROM

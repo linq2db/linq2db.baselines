@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[c_1].[ChildID],
 	[testaLi_asParent].[Value1]

@@ -12,11 +12,9 @@ VALUES
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT LAST_INSERT_ID()
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`Id`
 FROM
@@ -35,7 +33,6 @@ WHERE
 LIMIT 1
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`u`.`Id`
 FROM

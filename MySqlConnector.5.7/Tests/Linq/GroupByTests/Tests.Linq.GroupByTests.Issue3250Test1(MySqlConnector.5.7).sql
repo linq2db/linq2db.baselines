@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	CONCAT(CAST(`g_2`.`Message` AS CHAR(11)), ' items have not been processed, e.g. #', Coalesce(CAST(`g_2`.`Message_1` AS CHAR(11)), ''), '.')
 FROM

@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 UPDATE
 	[gt_s_one_target]
 SET

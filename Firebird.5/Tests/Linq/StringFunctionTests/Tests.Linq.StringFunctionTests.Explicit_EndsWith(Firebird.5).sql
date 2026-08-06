@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 SELECT
 	COUNT(*)
 FROM
@@ -8,7 +7,6 @@ WHERE
 	CAST("r"."Diagnosis" AS BLOB) LIKE '%Persecution' ESCAPE '~'
 
 -- Firebird.5 Firebird4
-
 SELECT
 	COUNT(*)
 FROM
@@ -17,7 +15,6 @@ WHERE
 	CAST("r"."Diagnosis" AS BLOB) LIKE '%persecution' ESCAPE '~'
 
 -- Firebird.5 Firebird4
-
 SELECT
 	COUNT(*)
 FROM
@@ -26,7 +23,6 @@ WHERE
 	Lower("r"."Diagnosis") LIKE '%persecution' ESCAPE '~'
 
 -- Firebird.5 Firebird4
-
 SELECT
 	COUNT(*)
 FROM

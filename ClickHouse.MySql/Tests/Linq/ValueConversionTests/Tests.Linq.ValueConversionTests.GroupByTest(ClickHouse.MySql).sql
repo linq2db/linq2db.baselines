@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	m_1.Id,
 	m_1.Id,
@@ -18,7 +17,6 @@ WHERE
 	'[{"Value":"Value1"}]' = m_1.Value2
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	g_1.Id
 FROM

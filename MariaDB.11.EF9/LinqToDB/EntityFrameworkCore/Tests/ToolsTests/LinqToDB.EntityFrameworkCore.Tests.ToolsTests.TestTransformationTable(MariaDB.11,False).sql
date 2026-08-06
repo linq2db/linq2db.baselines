@@ -1,5 +1,4 @@
 ﻿-- MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`p`.`IsDeleted`,
 	`p`.`ProductID`,

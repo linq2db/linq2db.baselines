@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 INSERT INTO [BlobClass]
 (
 	[Id],
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT TOP 1
 	[t1].[Id],
 	[t1].[BlobValue]
@@ -22,7 +20,6 @@ WHERE
 	[t1].[Id] = 1
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT TOP 1
 	[t1].[Id],
 	[t1].[BlobValue]

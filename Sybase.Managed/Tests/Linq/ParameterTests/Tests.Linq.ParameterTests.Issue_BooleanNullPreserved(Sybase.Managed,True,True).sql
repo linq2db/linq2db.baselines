@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 INSERT INTO [TestBool]
 (
 	[Id],
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 2
 	[t1].[Id],
 	[t1].[Value]
@@ -20,7 +18,6 @@ FROM
 	[TestBool] [t1]
 
 -- Sybase.Managed Sybase
-
 UPDATE
 	[TestBool]
 SET
@@ -30,7 +27,6 @@ SET
 	END
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 2
 	[t1].[Id],
 	[t1].[Value]
@@ -38,7 +34,6 @@ FROM
 	[TestBool] [t1]
 
 -- Sybase.Managed Sybase
-
 UPDATE
 	[TestBool]
 SET
@@ -47,7 +42,6 @@ WHERE
 	[TestBool].[Id] = 1
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 2
 	[t1].[Id],
 	[t1].[Value]

@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 INSERT INTO [SampleClass]
 (
 	[Id],
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- Access.Ace.Odbc AccessODBC
-
 INSERT INTO [SampleClass]
 (
 	[Id],

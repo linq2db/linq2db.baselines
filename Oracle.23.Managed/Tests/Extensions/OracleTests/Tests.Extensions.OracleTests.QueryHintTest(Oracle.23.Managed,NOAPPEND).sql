@@ -1,5 +1,4 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT /*+ NOAPPEND */
 	p."ParentID",
 	p."Value1"

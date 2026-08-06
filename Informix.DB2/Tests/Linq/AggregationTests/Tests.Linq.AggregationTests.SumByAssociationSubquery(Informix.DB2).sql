@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	g_1.Id,
 	SUM(Nvl(a_Values."Value"::Int, 0))
@@ -10,7 +9,6 @@ GROUP BY
 	g_1.Id
 
 -- Informix.DB2 Informix
-
 SELECT
 	m_1.Id,
 	d.Id,
@@ -22,7 +20,6 @@ FROM
 		INNER JOIN ItemValue d ON m_1.Id = d.ItemId
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1.Name

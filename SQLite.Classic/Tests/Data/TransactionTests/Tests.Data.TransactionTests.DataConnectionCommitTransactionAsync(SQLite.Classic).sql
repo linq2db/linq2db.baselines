@@ -18,7 +18,6 @@ VALUES
 
 CommitTransactionAsync
 -- SQLite.Classic SQLite
-
 DELETE FROM
 	[Parent]
 WHERE

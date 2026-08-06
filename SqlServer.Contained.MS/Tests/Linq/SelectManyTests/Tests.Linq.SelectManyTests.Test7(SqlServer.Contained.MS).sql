@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[a_Child].[ParentID],
 	[a_Child].[ChildID]
@@ -12,7 +11,6 @@ WHERE
 	[p].[ParentID] = [g_1].[ParentID]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[a_Child].[ParentID],
 	[a_Child].[ChildID]

@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[x].[FirstName],
 	[x].[LastName],
@@ -20,7 +19,6 @@ ORDER BY
 	[x].[PersonID] DESC
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

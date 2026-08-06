@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	[t].[Value1] + Coalesce(CAST([t].[Value2] AS NVarChar(11)), N'') + Coalesce(Lower(CAST([t].[Value3] AS Char(36))), '')
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	[t].[ID]
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	[t1].[ID],
 	[t1].[Value1],

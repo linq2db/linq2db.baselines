@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[e].[Id]
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	IIF([e].[StrReq] IS NULL, '', [e].[StrReq]) + 'X'
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Str1],

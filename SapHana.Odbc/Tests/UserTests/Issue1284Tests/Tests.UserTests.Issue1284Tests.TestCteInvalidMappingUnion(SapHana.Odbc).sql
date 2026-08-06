@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 WITH "CTE_1"
 (
 	"entry_FirstName",
@@ -55,7 +54,6 @@ FROM
 LIMIT 1
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."FirstName",
 	"t1"."ID",

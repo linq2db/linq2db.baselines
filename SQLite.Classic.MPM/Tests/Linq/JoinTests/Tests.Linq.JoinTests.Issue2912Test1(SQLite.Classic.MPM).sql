@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	CASE
 		WHEN [t1].[ParentID] IS NOT NULL THEN [t1].[ChildID]

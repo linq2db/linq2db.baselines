@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	r.ID,
 	r.MoneyValue,
@@ -18,7 +17,6 @@ WHERE
 LIMIT 1
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	r.ID,
 	r.MoneyValue,
@@ -37,7 +35,6 @@ WHERE
 LIMIT 1
 
 -- ClickHouse.Driver ClickHouse
-
 ALTER TABLE
 	LinqDataTypes
 UPDATE
@@ -54,7 +51,6 @@ WHERE
 	ID = 1
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	r.ID,
 	r.MoneyValue,
@@ -73,7 +69,6 @@ WHERE
 LIMIT 1
 
 -- ClickHouse.Driver ClickHouse
-
 ALTER TABLE
 	LinqDataTypes
 UPDATE
@@ -90,7 +85,6 @@ WHERE
 	ID = 1
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	r.ID,
 	r.MoneyValue,

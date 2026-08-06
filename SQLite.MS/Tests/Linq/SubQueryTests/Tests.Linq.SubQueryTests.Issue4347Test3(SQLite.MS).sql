@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -10,7 +9,6 @@ FROM
 		INNER JOIN [LineEntity] [d] ON [m_1].[Id] = [d].[TransactionId]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[x].[Id],
 	[x].[ValidOn]

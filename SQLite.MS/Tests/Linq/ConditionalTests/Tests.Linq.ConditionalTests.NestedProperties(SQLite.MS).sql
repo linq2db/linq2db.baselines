@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[x].[Id],
 	[x].[StringProp]
@@ -9,7 +8,6 @@ WHERE
 	1 = 0
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[StringProp]

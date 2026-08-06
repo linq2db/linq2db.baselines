@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 UPDATE
 	[a_Salary]
 SET

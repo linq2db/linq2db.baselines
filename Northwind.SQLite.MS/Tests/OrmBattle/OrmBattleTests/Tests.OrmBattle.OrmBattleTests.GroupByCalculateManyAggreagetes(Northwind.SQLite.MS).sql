@@ -1,5 +1,4 @@
 ﻿-- Northwind.SQLite.MS SQLite.MS SQLite
-
 SELECT
 	SUM([g_1].[Freight]),
 	MIN([g_1].[Freight]),

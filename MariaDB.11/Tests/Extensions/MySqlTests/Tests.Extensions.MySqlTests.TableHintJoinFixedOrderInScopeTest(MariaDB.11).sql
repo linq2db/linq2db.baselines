@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT /*+ JOIN_FIXED_ORDER(p) JOIN_FIXED_ORDER(c_1) */
 	`p`.`ParentID`,
 	`p`.`Value1`

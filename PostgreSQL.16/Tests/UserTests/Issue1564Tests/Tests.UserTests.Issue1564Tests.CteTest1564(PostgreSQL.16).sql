@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 WITH RECURSIVE "categoryHierarchy"
 (
 	"RootCategoryId",
@@ -38,8 +37,7 @@ SELECT
 FROM
 	"categoryHierarchy" t2
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 WITH RECURSIVE "categoryHierarchy"
 (
 	"RootCategoryId",

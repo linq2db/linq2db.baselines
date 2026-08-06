@@ -1,5 +1,4 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
-
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "TempTable"';
 EXCEPTION
@@ -10,7 +9,6 @@ EXCEPTION
 END;
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE TABLE "TempTable"
@@ -28,7 +26,6 @@ EXCEPTION
 END;
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 INSERT INTO "TempTable"
 (
 	ID
@@ -39,7 +36,6 @@ FROM
 	"Parent" p
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	t.ID
 FROM
@@ -47,7 +43,6 @@ FROM
 		INNER JOIN "TempTable" t ON p."ParentID" = t.ID
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "TempTable"';
 EXCEPTION

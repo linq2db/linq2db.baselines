@@ -1,5 +1,4 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	g_2."Key_1",
 	Coalesce((
@@ -26,7 +25,6 @@ ORDER BY
 	g_2."Key_1"
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1.PK,
 	t1."GrpId",

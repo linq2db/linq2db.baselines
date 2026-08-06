@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	[p].[FirstName]
 FROM
@@ -11,7 +10,6 @@ FROM
 	[Person] [p_1]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	[p].[FirstName] + N'/' + [p].[LastName]
 FROM

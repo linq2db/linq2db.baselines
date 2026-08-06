@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.15 PostgreSQL12
 SELECT
 	m_1."ID",
 	d."ID",
@@ -24,8 +23,7 @@ FROM
 	) m_1
 		INNER JOIN "Table4" d ON m_1."ID" = d."ID3"
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	r."ID",
 	r."ID2",
@@ -46,8 +44,7 @@ WHERE
 			"a_Table3"."ID" = id."ID3" AND id."ID" = r."ID"
 	)
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	m_1."ID",
 	d."ID",
@@ -63,8 +60,7 @@ FROM
 	) m_1
 		INNER JOIN "Table4" d ON m_1."ID" = d."ID3"
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."ID",
 	t1."ID2",

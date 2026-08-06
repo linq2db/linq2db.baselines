@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 WITH [CTE_1]
 (
 	[ID],
@@ -38,7 +37,6 @@ WHERE
 	[r].[ID] = 2
 
 -- SQLite.MS SQLite
-
 WITH [CTE_1] ([c1])
 AS
 (

@@ -30,7 +30,6 @@ VALUES
 
 
 -- SQLite.MS SQLite
-
 SELECT last_insert_rowid()
 
 
@@ -67,7 +66,6 @@ VALUES
 
 
 -- SQLite.MS SQLite
-
 SELECT last_insert_rowid()
 
 
@@ -104,7 +102,6 @@ VALUES
 
 
 -- SQLite.MS SQLite
-
 SELECT last_insert_rowid()
 
 
@@ -149,7 +146,6 @@ WHERE
 
 
 -- SQLite.MS SQLite
-
 SELECT
 	[s].[Id],
 	[s].[PermanentId],
@@ -164,7 +160,6 @@ WHERE
 
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[PermanentId],

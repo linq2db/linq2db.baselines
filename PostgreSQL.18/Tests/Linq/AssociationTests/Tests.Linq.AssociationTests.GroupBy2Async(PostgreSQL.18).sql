@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
-
+﻿-- PostgreSQL.18 PostgreSQL12
 SELECT
 	m_1."ParentID",
 	d."ParentID",
@@ -15,8 +14,7 @@ FROM
 		CROSS JOIN "Child" d
 		INNER JOIN "Parent" "a_Parent1_1" ON d."ParentID" = "a_Parent1_1"."ParentID" AND m_1."ParentID" = "a_Parent1_1"."ParentID"
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT DISTINCT
 	"a_Parent1"."ParentID"
 FROM

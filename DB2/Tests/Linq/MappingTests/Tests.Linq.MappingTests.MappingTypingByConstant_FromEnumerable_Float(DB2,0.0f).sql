@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"arg"."Id",
 	"arg"."Value"
@@ -10,7 +9,6 @@ FROM
 		) "arg"("Id", "Value") ON "entity"."PersonID" = "arg"."Id"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"arg"."Id",
 	"arg"."Value"

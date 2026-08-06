@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 SELECT
 	[m_1].[ParentID],
 	[d_1].[Key_1]
@@ -20,7 +19,6 @@ FROM
 		) [d_1]
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[p].[ParentID]
 FROM

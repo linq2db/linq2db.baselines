@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`p`.`FirstName`
 FROM
@@ -11,7 +10,6 @@ FROM
 	`Person` `p_1`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	CONCAT(`p`.`FirstName`, '/', `p`.`LastName`)
 FROM

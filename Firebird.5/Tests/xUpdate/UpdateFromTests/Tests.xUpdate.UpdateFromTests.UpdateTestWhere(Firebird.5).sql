@@ -53,7 +53,6 @@ WHERE
 	)
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"v"."id",
 	"v"."Value1",

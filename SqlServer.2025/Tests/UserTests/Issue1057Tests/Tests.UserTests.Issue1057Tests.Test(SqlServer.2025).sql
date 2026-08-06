@@ -54,7 +54,6 @@ VALUES
 )
 
 -- SqlServer.2025
-
 SELECT
 	[p].[Id],
 	[p].[TargetName],

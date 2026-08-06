@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 WITH CTE_1 ("ParentID")
 AS
 (
@@ -19,7 +18,6 @@ FROM
 		INNER JOIN CTE_1 "c2" ON "p"."ParentID" = "c2"."ParentID"
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"p"."ParentID",
 	"p"."Value1"

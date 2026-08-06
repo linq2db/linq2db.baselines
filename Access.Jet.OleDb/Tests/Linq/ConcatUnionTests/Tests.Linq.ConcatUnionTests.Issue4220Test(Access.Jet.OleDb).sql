@@ -33,7 +33,6 @@ VALUES
 )
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[e].[Id],
 	[e].[AOnly],

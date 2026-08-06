@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	Floor(CAST("t"."MoneyValue" AS DOUBLE PRECISION) * 57.295779513082323)
 FROM

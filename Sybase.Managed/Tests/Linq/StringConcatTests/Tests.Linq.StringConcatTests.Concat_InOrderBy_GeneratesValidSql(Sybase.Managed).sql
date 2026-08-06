@@ -1,14 +1,12 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[e].[Id]
 FROM
 	[ConcatTestEntity] [e]
 ORDER BY
-	Coalesce([e].[StrReq], '') + 'X'
+	Coalesce([e].[StrReq], '') || 'X'
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[Str1],

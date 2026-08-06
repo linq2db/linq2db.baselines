@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 DELETE FROM
 	"Child" "c_1"
 WHERE
@@ -18,8 +17,8 @@ INSERT INTO "Child"
 )
 VALUES
 (
-	CAST(@ParentID AS Int),
-	CAST(@id AS Int)
+	@ParentID,
+	@id
 )
 
 -- DB2 DB2.LUW DB2LUW
@@ -34,7 +33,6 @@ WHERE
 	"c_1"."ChildID" = @id
 
 -- DB2 DB2.LUW DB2LUW
-
 DELETE FROM
 	"Child" "c_1"
 WHERE

@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
-
+﻿-- PostgreSQL.18 PostgreSQL12
 SELECT
 	t1."Field1",
 	t1."Field2",
@@ -7,8 +6,7 @@ SELECT
 FROM
 	"UseMappingSchemaTestTable" t1
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	t1."Field1",
 	t1."Field2",
@@ -16,8 +14,7 @@ SELECT
 FROM
 	"UseMappingSchemaTestTable" t1
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	t1."Column1",
 	t1."Field2",
@@ -25,8 +22,7 @@ SELECT
 FROM
 	"UseMappingSchemaTestTable2" t1
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	t1."Field1",
 	t1."Field2",
@@ -34,8 +30,7 @@ SELECT
 FROM
 	"UseMappingSchemaTestTable" t1
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	t1."Field1",
 	t1."Field2",
@@ -43,8 +38,7 @@ SELECT
 FROM
 	"UseMappingSchemaTestTable" t1
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	t1."Field1",
 	t1."Field2",

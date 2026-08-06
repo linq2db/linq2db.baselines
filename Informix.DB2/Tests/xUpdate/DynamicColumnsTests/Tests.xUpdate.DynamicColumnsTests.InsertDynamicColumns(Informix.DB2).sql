@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 INSERT INTO Person
 (
 	FirstName,
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT
 	COUNT(*)
 FROM

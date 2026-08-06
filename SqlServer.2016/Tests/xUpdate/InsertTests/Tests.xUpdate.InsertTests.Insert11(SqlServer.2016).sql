@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016
-
 SELECT
 	MAX([t1].[PersonID])
 FROM

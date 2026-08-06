@@ -37,7 +37,6 @@ WHERE
 	Person.FirstName LIKE 'Update14%' ESCAPE '~'
 
 -- DuckDB
-
 SELECT
 	COUNT(*)
 FROM

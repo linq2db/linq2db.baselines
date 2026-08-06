@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[f].[Key1],
 	[f].[Key2],
@@ -39,7 +38,6 @@ FROM
 		LEFT JOIN [FirstOptimizerData] [f] ON [f].[Key1] = [s].[Key1] AND [f].[Key2] = [s].[Key2]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[f].[Key1],
 	[f].[Key2],

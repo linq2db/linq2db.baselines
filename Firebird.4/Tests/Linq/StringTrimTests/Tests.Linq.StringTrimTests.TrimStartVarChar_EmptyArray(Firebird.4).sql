@@ -1,12 +1,10 @@
 ﻿-- Firebird.4 Firebird4
-
 SELECT
 	TRIM(LEADING FROM ('   ' || Coalesce("t"."VarCharColumn", '')))
 FROM
 	"StringTrimTable" "t"
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."CharColumn",

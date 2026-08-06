@@ -5,7 +5,7 @@ DECLARE @ps NVarChar(3) -- String
 SET     @ps = '%[%'
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Person] [p]
 WHERE

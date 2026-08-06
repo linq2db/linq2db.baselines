@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[parent_1].[ParentID],
 	[childLeftJoin].[ChildID],

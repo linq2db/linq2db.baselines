@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014.MS SqlServer.2014
-
 CREATE TABLE [tempdb]..[#DestinationTable_destination]
 (
 	[Id]       Int          NOT NULL,
@@ -10,7 +9,6 @@ CREATE TABLE [tempdb]..[#DestinationTable_destination]
 )
 
 -- SqlServer.2014.MS SqlServer.2014
-
 UPDATE
 	[TableWithData_source]
 SET
@@ -31,7 +29,6 @@ WHERE
 	[TableWithData_source].[Id] > 3
 
 -- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	[t1].[Id],
 	[t1].[Value],
@@ -40,7 +37,6 @@ FROM
 	[tempdb]..[#DestinationTable_destination] [t1]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[tempdb]..[#DestinationTable_destination]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#DestinationTable_destination]
 

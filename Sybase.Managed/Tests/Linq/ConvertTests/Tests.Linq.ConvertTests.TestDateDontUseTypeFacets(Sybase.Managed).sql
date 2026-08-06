@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[g_2].[Date_1],
 	COUNT(*)
@@ -14,7 +13,6 @@ GROUP BY
 	[g_2].[Date_1]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[CreatedOnUtc]
 FROM

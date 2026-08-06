@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 WITH CTE_1
 (
 	entry_ID,
@@ -31,7 +30,6 @@ WHERE
 	x.entry_ID = 1
 
 -- Informix.DB2 Informix
-
 SELECT
 	x.FirstName,
 	x.PersonID,

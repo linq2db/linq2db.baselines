@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 INSERT INTO TableToInsert
 (
 	Id,
@@ -18,7 +17,6 @@ WHERE
 	t.Id IS NULL
 
 -- ClickHouse.MySql ClickHouse
-
 INSERT INTO TableToInsert
 (
 	Id,

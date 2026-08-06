@@ -20,7 +20,6 @@ VALUES
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t`.`Id`,
 	`t`.`Name`,
@@ -53,7 +52,6 @@ VALUES
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t`.`Id`,
 	`t`.`Name`,

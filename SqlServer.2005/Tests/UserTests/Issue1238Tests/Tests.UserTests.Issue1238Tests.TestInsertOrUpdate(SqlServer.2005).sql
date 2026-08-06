@@ -1,11 +1,9 @@
 ﻿-- SqlServer.2005
-
 DELETE [t1]
 FROM
 	[InheritanceParent] [t1]
 
 -- SqlServer.2005
-
 UPDATE
 	[InheritanceParent]
 SET
@@ -33,14 +31,12 @@ BEGIN
 END
 
 -- SqlServer.2005
-
 SELECT
 	COUNT(*)
 FROM
 	[InheritanceParent] [t1]
 
 -- SqlServer.2005
-
 UPDATE
 	[InheritanceParent]
 SET
@@ -68,7 +64,6 @@ BEGIN
 END
 
 -- SqlServer.2005
-
 SELECT
 	COUNT(*)
 FROM

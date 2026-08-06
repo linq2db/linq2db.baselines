@@ -1,8 +1,6 @@
-﻿-- PostgreSQL.13 PostgreSQL
-
+﻿-- PostgreSQL.13 PostgreSQL12
 SELECT
 	p."FirstName",
-	p."PersonID",
 	p."PersonID",
 	p."LastName",
 	p."FirstName" || ' ' || p."LastName"

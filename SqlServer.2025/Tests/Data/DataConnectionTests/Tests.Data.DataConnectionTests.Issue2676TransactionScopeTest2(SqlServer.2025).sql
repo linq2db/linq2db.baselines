@@ -1,16 +1,13 @@
 ﻿-- SqlServer.2025
-
 DROP TABLE IF EXISTS [TransactionScopeTable]
 
 -- SqlServer.2025
-
 CREATE TABLE [TransactionScopeTable]
 (
 	[Id] Int NOT NULL
 )
 
 -- SqlServer.2025
-
 INSERT INTO [TransactionScopeTable]
 (
 	[Id]
@@ -21,7 +18,6 @@ VALUES
 )
 
 -- SqlServer.2025
-
 INSERT INTO [TransactionScopeTable]
 (
 	[Id]
@@ -32,7 +28,6 @@ VALUES
 )
 
 -- SqlServer.2025
-
 SELECT
 	[t1].[Id]
 FROM
@@ -41,6 +36,5 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlServer.2025
-
 DROP TABLE IF EXISTS [TransactionScopeTable]
 

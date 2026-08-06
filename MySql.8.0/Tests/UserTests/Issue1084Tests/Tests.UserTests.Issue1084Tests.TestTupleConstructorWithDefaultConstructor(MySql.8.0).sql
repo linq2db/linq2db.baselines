@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`k_1`.`StatusBitmask` & 128,
 	`g_1`.`StatusBitmask` & 128

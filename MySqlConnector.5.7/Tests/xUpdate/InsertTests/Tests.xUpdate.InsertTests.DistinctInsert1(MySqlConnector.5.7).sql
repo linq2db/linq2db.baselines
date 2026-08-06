@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 DELETE  
 FROM
 	`LinqDataTypes`
@@ -7,7 +6,6 @@ WHERE
 	`LinqDataTypes`.`ID` > 1000
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 INSERT INTO `LinqDataTypes`
 (
 	`ID`,
@@ -27,7 +25,6 @@ FROM
 	) `t2`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 DELETE  
 FROM
 	`LinqDataTypes`

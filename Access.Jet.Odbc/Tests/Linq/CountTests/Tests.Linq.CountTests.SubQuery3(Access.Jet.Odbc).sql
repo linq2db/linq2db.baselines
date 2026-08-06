@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 SELECT
 	IIF([p].[Value1] IS NULL, (
 		SELECT

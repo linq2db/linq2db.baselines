@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`t`.`Id`,
 	`t`.`Value`
@@ -9,7 +8,6 @@ WHERE
 	`t`.`Value` IS NULL
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`t`.`Id`,
 	`t`.`Value`

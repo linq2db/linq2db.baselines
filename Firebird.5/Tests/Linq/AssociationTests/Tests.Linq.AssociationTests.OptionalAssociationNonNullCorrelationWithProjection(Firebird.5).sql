@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 SELECT
 	"a_Table2".ID,
 	"a_Table2".ID3,

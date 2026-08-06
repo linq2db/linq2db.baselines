@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	p.FirstName,
 	p.PersonID,
@@ -10,7 +9,6 @@ FROM
 	Person p
 
 -- Informix.DB2 Informix
-
 SELECT
 	p.FirstName,
 	p.PersonID,

@@ -25,7 +25,6 @@ VALUES
 )
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 WITH CTE_1 (S1)
 AS
 (
@@ -33,7 +32,7 @@ AS
 		projection2_1.S1
 	FROM
 		"Projection1" t1
-			LEFT JOIN "Projection2" projection2_1 ON t1.S1 = projection2_1.S1 OR t1.S1 IS NULL AND projection2_1.S1 IS NULL
+			LEFT JOIN "Projection2" projection2_1 ON t1.S1 = projection2_1.S1
 )
 SELECT
 	t2.S1

@@ -1,9 +1,7 @@
 ﻿-- DuckDB
-
 DROP TABLE IF EXISTS FluentTemp_InsertOrUpdate
 
 -- DuckDB
-
 CREATE TABLE IF NOT EXISTS FluentTemp_InsertOrUpdate
 (
 	ID   INTEGER,
@@ -30,7 +28,6 @@ VALUES
 )
 
 -- DuckDB
-
 INSERT INTO FluentTemp_InsertOrUpdate AS t1
 (
 	ID,
@@ -46,6 +43,5 @@ ON CONFLICT (ID) DO UPDATE SET
 	Name = t1.Name
 
 -- DuckDB
-
 DROP TABLE IF EXISTS FluentTemp_InsertOrUpdate
 

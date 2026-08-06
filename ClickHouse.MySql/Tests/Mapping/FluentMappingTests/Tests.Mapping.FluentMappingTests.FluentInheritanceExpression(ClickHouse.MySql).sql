@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	e.Id
 FROM
@@ -8,7 +7,6 @@ WHERE
 	e.Id = 1
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	e.Id
 FROM

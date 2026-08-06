@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014
-
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -9,7 +8,6 @@ FROM
 		INNER JOIN [SubEntity] [d] ON [m_1].[Id] = [d].[MainEntityId]
 
 -- SqlServer.2014
-
 SELECT
 	[x].[Id]
 FROM

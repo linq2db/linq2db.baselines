@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 INSERT INTO [InheritanceFilter]
 (
 	[Id],
@@ -20,7 +19,6 @@ VALUES
 (6,22,0,26,0,0,0,16)
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[Code],
 	[t1].[Id],

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 CREATE TABLE [tempdb].[TestSchema].[#IsTemporaryTable]
 (
 	[Id]    Int NOT NULL,
@@ -9,7 +8,6 @@ CREATE TABLE [tempdb].[TestSchema].[#IsTemporaryTable]
 )
 
 -- SqlServer.2022
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -17,6 +15,5 @@ FROM
 	[tempdb].[TestSchema].[#IsTemporaryTable] [t1]
 
 -- SqlServer.2022
-
 DROP TABLE IF EXISTS [tempdb].[TestSchema].[#IsTemporaryTable]
 

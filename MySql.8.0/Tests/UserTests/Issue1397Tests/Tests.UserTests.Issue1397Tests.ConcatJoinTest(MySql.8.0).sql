@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`m_1`.`ParentID`,
 	`m_1`.`Value1`
@@ -22,7 +21,6 @@ FROM
 		) `id_1` ON `id_1`.`ParentID` = `m_1`.`ParentID`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`m_1`.`ParentID`,
 	`m_1`.`Value1`

@@ -1,11 +1,9 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	sys_context('userenv','service_name')
 FROM SYS.DUAL
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	sys_context('userenv', 'current_schema')
 FROM
@@ -14,7 +12,6 @@ WHERE
 	ROWNUM <= 1
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1.ID,
 	t1."Value"

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014
-
 SELECT
 	[pp].[PersonID],
 	N'  ' + [pp].[FirstName] + N' '

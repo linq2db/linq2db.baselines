@@ -1,5 +1,5 @@
 ﻿SELECT
-	[p].[FIRST_NAME] as [Name],
+	[p].[FIRST_NAME],
 	5 as [AGE],
 	5000 + Length([p].[FIRST_NAME]) * 10 as [MONEY]
 FROM
@@ -8,7 +8,7 @@ WHERE
 	[p].[FIRST_NAME] <> '' OR [p].[FIRST_NAME] IS NULL
 
 SELECT
-	[q].[FIRST_NAME] as [Name],
+	[q].[FIRST_NAME],
 	5000 + Length([q].[FIRST_NAME]) * 10 as [MONEY]
 FROM
 	[PERSON] [q]

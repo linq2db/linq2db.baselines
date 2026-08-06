@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	COUNT(CASE
 		WHEN g_1.ParentID < 2 THEN 1

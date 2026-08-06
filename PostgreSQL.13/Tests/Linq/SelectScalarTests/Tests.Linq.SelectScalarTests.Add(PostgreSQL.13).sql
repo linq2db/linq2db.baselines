@@ -1,5 +1,7 @@
-﻿-- PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL12
+DECLARE @p Integer -- Int32
+SET     @p = 5
 
 SELECT
-	5
+	:p
 

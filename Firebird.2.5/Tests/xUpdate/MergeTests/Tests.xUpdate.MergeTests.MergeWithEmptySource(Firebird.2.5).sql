@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 MERGE INTO "Person" "Target"
 USING (
 	SELECT NULL, NULL, NULL, NULL, NULL

@@ -18,7 +18,6 @@ VALUES
 
 CommitTransactionAsync
 -- SqlServer.2008.MS SqlServer.2008
-
 DELETE [t1]
 FROM
 	[Parent] [t1]

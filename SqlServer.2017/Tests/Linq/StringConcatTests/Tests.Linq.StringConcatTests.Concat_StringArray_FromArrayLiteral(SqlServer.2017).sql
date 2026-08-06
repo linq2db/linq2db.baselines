@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 SELECT
 	[e].[Id]
 FROM
@@ -8,7 +7,6 @@ WHERE
 	CONCAT_WS(N'', Coalesce([e].[StrReq], N''), N' ', N'I') = N'Programmer I'
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Id],
 	[t1].[Str1],

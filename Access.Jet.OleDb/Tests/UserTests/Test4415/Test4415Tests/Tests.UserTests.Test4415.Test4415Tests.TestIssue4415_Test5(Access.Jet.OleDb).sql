@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[LanguageID],
 	[t1].[Name]
@@ -7,7 +6,6 @@ FROM
 	[Common_Language] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[x].[LanguageID],
 	[x].[Name]

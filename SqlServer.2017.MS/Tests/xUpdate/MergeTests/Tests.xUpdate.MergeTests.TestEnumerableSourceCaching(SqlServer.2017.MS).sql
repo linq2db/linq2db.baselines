@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
-
 MERGE INTO [CacheTestTable] [Target]
 USING (VALUES
 	(1,1), (2,2)
@@ -29,7 +28,6 @@ VALUES
 ;
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -39,7 +37,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlServer.2017.MS SqlServer.2017
-
 MERGE INTO [CacheTestTable] [Target]
 USING (VALUES
 	(1,1), (2,4), (3,3)
@@ -69,7 +66,6 @@ VALUES
 ;
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]

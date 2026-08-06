@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 SELECT
 	"t2"."Id",
 	"t2"."TestId"
@@ -34,7 +33,6 @@ ORDER BY
 	"t2"."Id" DESC
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."TestId"

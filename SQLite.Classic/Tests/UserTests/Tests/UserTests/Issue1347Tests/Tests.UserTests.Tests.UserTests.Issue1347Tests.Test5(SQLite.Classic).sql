@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT
 	[t3].[Id],
 	[t3].[ResourceID],

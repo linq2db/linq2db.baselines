@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[t1].[PersonID],
 	[t1].[FirstName],
@@ -10,7 +9,6 @@ FROM
 	[Person] [t1]
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	p."PersonID"
 FROM

@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 INSERT INTO [InsertIssueTest]
 (
 	[Pk],
@@ -47,7 +46,6 @@ FROM
 	) [t2]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[Pk],
 	[t1].[ID],

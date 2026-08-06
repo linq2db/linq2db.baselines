@@ -185,7 +185,6 @@ ORDER BY
 ROWS @skip + 1 TO @skip + @take
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"r"."Value1"
 FROM

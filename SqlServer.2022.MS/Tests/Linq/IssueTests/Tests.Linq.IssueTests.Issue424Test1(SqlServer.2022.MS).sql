@@ -11,7 +11,6 @@ ORDER BY
 	[t1].[ParentID]
 
 -- SqlServer.2022.MS SqlServer.2022
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	m_1.ID,
 	d.ID,
@@ -25,7 +24,6 @@ FROM
 		INNER JOIN "Table4" d ON m_1.ID = d.ID3
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	r.ID,
 	r.ID2,
@@ -47,7 +45,6 @@ WHERE
 	)
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	m_1.ID,
 	d.ID,
@@ -64,7 +61,6 @@ FROM
 		INNER JOIN "Table4" d ON m_1.ID = d.ID3
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1.ID,
 	t1.ID2,

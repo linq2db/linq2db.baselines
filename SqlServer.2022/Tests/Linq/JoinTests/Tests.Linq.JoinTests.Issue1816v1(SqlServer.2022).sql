@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 SELECT
 	[v].[inId],
 	[t].[inIdState]

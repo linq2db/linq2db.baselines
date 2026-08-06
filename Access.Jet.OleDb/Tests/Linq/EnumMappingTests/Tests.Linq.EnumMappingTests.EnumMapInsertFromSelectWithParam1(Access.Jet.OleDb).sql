@@ -1,6 +1,6 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
 DECLARE @p Integer -- Int32
-SET     @p = 102
+SET     @p = 103
 
 DELETE FROM
 	[LinqDataTypes] [r]
@@ -8,7 +8,6 @@ WHERE
 	[r].[ID] >= 101 AND [r].[ID] < @p
 
 -- Access.Jet.OleDb AccessOleDb
-
 INSERT INTO [LinqDataTypes]
 (
 	[ID],
@@ -30,7 +29,7 @@ INSERT INTO [LinqDataTypes]
 	[BigIntValue]
 )
 SELECT
-	[r].[ID],
+	[r].[ID] + 1,
 	@param
 FROM
 	[LinqDataTypes] [r]
@@ -38,17 +37,16 @@ WHERE
 	[r].[ID] = 101 AND [r].[BigIntValue] = 12
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	COUNT(*)
 FROM
 	[LinqDataTypes] [r]
 WHERE
-	[r].[ID] = 101 AND [r].[BigIntValue] = 11
+	[r].[ID] = 102 AND [r].[BigIntValue] = 11
 
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @p Integer -- Int32
-SET     @p = 102
+SET     @p = 103
 
 DELETE FROM
 	[LinqDataTypes] [r]

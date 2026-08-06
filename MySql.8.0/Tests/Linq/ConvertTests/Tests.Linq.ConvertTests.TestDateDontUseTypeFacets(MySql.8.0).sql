@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`g_2`.`Date_1`,
 	COUNT(*)
@@ -14,7 +13,6 @@ GROUP BY
 	`g_2`.`Date_1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`CreatedOnUtc`
 FROM

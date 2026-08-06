@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[m_1].[Key_1],
 	[d_1].[NullableValue]
@@ -23,7 +22,6 @@ ORDER BY
 	[d_1].[NullableValue]
 
 -- SqlCe
-
 SELECT
 	[m_1].[Key_1],
 	[d_1].[c1]
@@ -47,16 +45,14 @@ ORDER BY
 	[d_1].[c1]
 
 -- SqlCe
-
 SELECT DISTINCT
-	[g_1].[Id] as [Key_1]
+	[g_1].[Id]
 FROM
 	[SampleClass] [g_1]
 ORDER BY
 	[g_1].[Id]
 
 -- SqlCe
-
 SELECT
 	[t1].[PK],
 	[t1].[Id],

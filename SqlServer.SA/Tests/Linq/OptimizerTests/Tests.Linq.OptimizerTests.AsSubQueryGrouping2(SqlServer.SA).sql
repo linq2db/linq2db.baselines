@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 SELECT
 	COUNT([x_1].[Key2]),
 	COUNT([x_1].[Key1])

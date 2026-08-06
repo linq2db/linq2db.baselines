@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 DELETE FROM [Parent]
 FROM
 	[Parent] [t1]
@@ -7,7 +6,6 @@ WHERE
 	[t1].[ParentID] > 1000
 
 -- Sybase.Managed Sybase
-
 UPDATE
 	[Parent]
 SET

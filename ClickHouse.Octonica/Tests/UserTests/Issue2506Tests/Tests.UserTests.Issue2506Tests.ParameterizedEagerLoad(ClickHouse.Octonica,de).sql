@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	m_1.Id,
 	d.Lang,
@@ -11,7 +10,6 @@ WHERE
 	d.Lang = 'de'
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	item_1.Name,
 	item_1.Id

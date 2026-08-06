@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "Issue2564Table"';
 EXCEPTION
@@ -10,7 +9,6 @@ EXCEPTION
 END;
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 CREATE TABLE "Issue2564Table"
 (
 	"Id"                     Number(19)   NOT NULL,

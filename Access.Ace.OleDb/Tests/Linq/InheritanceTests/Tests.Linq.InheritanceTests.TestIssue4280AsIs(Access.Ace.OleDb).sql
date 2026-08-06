@@ -45,7 +45,6 @@ VALUES
 )
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t1].[DeviceType],
 	[t1].[Id],
@@ -92,7 +91,6 @@ WHERE
 	[t1].[Id] = @Id
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t1].[DeviceType],
 	[t1].[Id],

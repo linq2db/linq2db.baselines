@@ -1,9 +1,7 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [TestTable]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 CREATE TABLE [TestTable]
 (
 	[ID]        Int             NOT NULL IDENTITY,
@@ -15,7 +13,6 @@ CREATE TABLE [TestTable]
 )
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	[t1].[ID],
 	[t1].[Field1],
@@ -25,6 +22,5 @@ FROM
 	[TestTable] [t1]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE [TestTable]
 

@@ -1,5 +1,4 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	LISTAGG(CAST(g_1."Value4" AS VarChar(50)), ' -> ') WITHIN GROUP (ORDER BY g_1."Value3" DESC, g_1."Value4")
 FROM

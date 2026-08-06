@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 WITH [CTE_1]
 (
 	[entry_FirstName],
@@ -32,7 +31,6 @@ FROM
 	[CTE_1] [t1]
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT TOP (1)
 	[person_1].[FirstName],
 	[person_1].[PersonID],

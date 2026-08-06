@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 INSERT INTO "Issue1403Tests_2"
 (
 	"event_id",
@@ -12,10 +11,9 @@ VALUES
 )
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
-	t1."event_id" as "EventId",
-	t1."event_description" as "EventDescription"
+	t1."event_id",
+	t1."event_description"
 FROM
 	"Issue1403Tests_2" t1
 FETCH NEXT 1 ROWS ONLY

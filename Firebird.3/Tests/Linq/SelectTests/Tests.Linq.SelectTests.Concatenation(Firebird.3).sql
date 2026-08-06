@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	"p"."PersonID",
 	'123' || "p"."FirstName" || '456'

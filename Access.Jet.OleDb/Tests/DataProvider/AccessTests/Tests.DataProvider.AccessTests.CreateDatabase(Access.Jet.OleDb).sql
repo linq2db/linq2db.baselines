@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 CREATE TABLE [TestDatabase].[CreateTableTest]
 (
 	[Id] Int  NOT NULL IDENTITY,
@@ -8,6 +7,5 @@ CREATE TABLE [TestDatabase].[CreateTableTest]
 )
 
 -- Access.Jet.OleDb AccessOleDb
-
 DROP TABLE [TestDatabase].[CreateTableTest]
 

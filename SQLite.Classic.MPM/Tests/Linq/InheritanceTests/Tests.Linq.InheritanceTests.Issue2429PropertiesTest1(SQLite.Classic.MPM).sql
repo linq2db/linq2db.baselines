@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[x].[Id],
 	[x].[Value]
@@ -10,7 +9,6 @@ WHERE
 LIMIT 1
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[x].[Id],
 	[x].[Value]

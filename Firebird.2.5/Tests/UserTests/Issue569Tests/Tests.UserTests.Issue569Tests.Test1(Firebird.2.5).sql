@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	"patient_1"."PersonID",
 	"person_1"."FirstName",

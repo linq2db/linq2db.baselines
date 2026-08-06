@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[e].[StrReq]
 FROM
@@ -8,7 +7,6 @@ WHERE
 	(IIF([e].[StrReq] IS NULL, '', [e].[StrReq]) + ' 1') = 'Programmer 1'
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[Str1],

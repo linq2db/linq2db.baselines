@@ -1,17 +1,14 @@
 ﻿-- Sybase.Managed Sybase
-
 DELETE FROM [Parent]
 FROM
 	[Parent] [t1]
 
 -- Sybase.Managed Sybase
-
 DELETE FROM [Child]
 FROM
 	[Child] [t1]
 
 -- Sybase.Managed Sybase
-
 DELETE FROM [GrandChild]
 FROM
 	[GrandChild] [t1]
@@ -90,7 +87,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 MERGE INTO [GrandChild] [Target]
 USING (
 	SELECT
@@ -123,7 +119,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[GrandChildID],
 	[t1].[ParentID],

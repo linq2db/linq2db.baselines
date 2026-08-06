@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 CREATE TABLE [tempdb]..[#TestMergeTVPTable]
 (
 	[Id]   Int            NOT NULL,
@@ -40,7 +39,6 @@ VALUES
 ;
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Id],
 	[t1].[Name]
@@ -50,6 +48,5 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlServer.2017
-
 DROP TABLE IF EXISTS [tempdb]..[#TestMergeTVPTable]
 

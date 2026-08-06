@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"p"."ParentID",
 	"IndexedParent_1"."Item1",
@@ -20,7 +19,6 @@ ORDER BY
 	"IndexedParent_1"."ParentID"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."ParentID",
 	"t1"."Value1"

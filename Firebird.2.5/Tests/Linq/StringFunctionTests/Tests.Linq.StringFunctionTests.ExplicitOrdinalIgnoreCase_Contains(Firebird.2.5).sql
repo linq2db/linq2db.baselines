@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 DELETE FROM
 	"CollatedTable" "t1"
 
@@ -25,7 +24,6 @@ VALUES
 )
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	COUNT(*)
 FROM
@@ -34,7 +32,6 @@ WHERE
 	"r"."CaseSensitive" CONTAINING 'stSt'
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	COUNT(*)
 FROM
@@ -43,7 +40,6 @@ WHERE
 	"r"."CaseInsensitive" CONTAINING 'stSt'
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	COUNT(*)
 FROM
@@ -52,7 +48,6 @@ WHERE
 	"r"."CaseSensitive" CONTAINING 'stst'
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	COUNT(*)
 FROM

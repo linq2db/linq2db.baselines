@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	e.Id,
 	a_ObjectBOptional.Id,

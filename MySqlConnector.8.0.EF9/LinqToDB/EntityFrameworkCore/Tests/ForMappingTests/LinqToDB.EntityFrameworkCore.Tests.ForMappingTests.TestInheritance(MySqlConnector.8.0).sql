@@ -33,7 +33,6 @@ WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
 
 
 -- MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`Discriminator`,
 	`t1`.`Id`

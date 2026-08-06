@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Northwind.MS SqlServer.2019
-
 SELECT
 	[o].[OrderID],
 	[a_Customer].[CustomerID],

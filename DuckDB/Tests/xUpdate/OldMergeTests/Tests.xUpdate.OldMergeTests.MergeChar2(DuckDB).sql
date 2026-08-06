@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 MERGE INTO AllTypes Target
 USING (VALUES
 	(10,chr(0),chr(0))

@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"p"."FirstName"
 FROM
@@ -11,7 +10,6 @@ FROM
 	"Person" "p_1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"p"."FirstName" || '/' || "p"."LastName"
 FROM

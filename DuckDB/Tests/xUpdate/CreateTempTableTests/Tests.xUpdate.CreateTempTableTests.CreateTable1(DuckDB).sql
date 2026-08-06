@@ -1,9 +1,7 @@
 ﻿-- DuckDB
-
 DROP TABLE IF EXISTS TempTable
 
 -- DuckDB
-
 CREATE TABLE IF NOT EXISTS TempTable
 (
 	ID INTEGER,
@@ -12,7 +10,6 @@ CREATE TABLE IF NOT EXISTS TempTable
 )
 
 -- DuckDB
-
 INSERT INTO TempTable
 (
 	ID
@@ -23,14 +20,12 @@ FROM
 	Parent p
 
 -- DuckDB
-
 SELECT
 	t1.ID
 FROM
 	TempTable t1
 
 -- DuckDB
-
 SELECT
 	t.ID
 FROM
@@ -38,6 +33,5 @@ FROM
 		INNER JOIN TempTable t ON p.ParentID = t.ID
 
 -- DuckDB
-
 DROP TABLE IF EXISTS TempTable
 

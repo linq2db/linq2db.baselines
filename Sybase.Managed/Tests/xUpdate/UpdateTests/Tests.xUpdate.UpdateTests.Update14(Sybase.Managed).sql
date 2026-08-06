@@ -37,7 +37,6 @@ WHERE
 	[Person].[FirstName] LIKE 'Update14%' ESCAPE '~'
 
 -- Sybase.Managed Sybase
-
 SELECT
 	COUNT(*)
 FROM

@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	CASE
 		WHEN t2.x < toDecimal128('0', 10) THEN toDecimal128('9', 10)
@@ -9,12 +8,12 @@ SELECT
 FROM
 	(
 		SELECT
-			(
+			Coalesce((
 				SELECT
 					sumOrNull(t1.MoneyValue)
 				FROM
 					LinqDataTypes t1
-			) as x
+			), toDecimal128('0', 10)) as x
 		FROM
 			LinqDataTypes q
 	) t2

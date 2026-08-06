@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	a_GrandChildren.ParentID,
 	a_GrandChildren.ChildID,

@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 UPDATE
 	`UpdatedEntities` `v`
 		INNER JOIN `UpdateRelation` `a_Relation` ON `v`.`RelationId` = `a_Relation`.`id`
@@ -11,7 +10,6 @@ WHERE
 	`a_Relation`.`RelatedValue1` = 11
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`v`.`Value1`,
 	`v`.`Value2`,

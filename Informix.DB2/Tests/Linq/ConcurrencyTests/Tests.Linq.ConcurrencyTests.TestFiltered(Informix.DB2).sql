@@ -20,7 +20,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1.Stamp,
@@ -40,12 +39,11 @@ UPDATE
 	ConcurrencyFiltered r
 SET
 	Stamp = r.Stamp + 1,
-	"Value" = @Value::NVarChar(7)
+	"Value" = @Value
 WHERE
 	r.Id = 2 AND r.Id = @Id AND r.Stamp = @Stamp
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1.Stamp,
@@ -65,12 +63,11 @@ UPDATE
 	ConcurrencyFiltered r
 SET
 	Stamp = r.Stamp + 1,
-	"Value" = @Value::NVarChar(7)
+	"Value" = @Value
 WHERE
 	r.Id = 1 AND r.Id = @Id AND r.Stamp = @Stamp
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1.Stamp,
@@ -91,7 +88,6 @@ WHERE
 	ConcurrencyFiltered.Stamp = @Stamp
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1.Stamp,
@@ -112,7 +108,6 @@ WHERE
 	ConcurrencyFiltered.Stamp = @Stamp
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1.Stamp,

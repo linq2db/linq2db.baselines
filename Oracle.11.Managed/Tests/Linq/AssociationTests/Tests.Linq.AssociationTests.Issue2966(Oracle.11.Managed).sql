@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	r_1."Diagnosis",
 	a_Person."FirstName"

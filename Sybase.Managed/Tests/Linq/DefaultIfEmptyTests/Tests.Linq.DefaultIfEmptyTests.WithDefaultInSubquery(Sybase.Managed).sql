@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	Coalesce((
 		SELECT
@@ -18,7 +17,6 @@ FROM
 	[Parent] [p]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
@@ -33,7 +31,6 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

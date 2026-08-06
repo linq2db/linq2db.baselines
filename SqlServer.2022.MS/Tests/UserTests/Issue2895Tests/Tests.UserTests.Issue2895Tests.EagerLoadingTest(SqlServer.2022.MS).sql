@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
-
 SELECT
 	[m_1].[Id],
 	[a_Documents].[Name]
@@ -27,7 +26,6 @@ FROM
 		INNER JOIN [Document] [a_Documents] ON [a_Attachment].[Id] = [a_Documents].[AttachmentId]
 
 -- SqlServer.2022.MS SqlServer.2022
-
 SELECT
 	[t1].[not_null],
 	[t1].[Id]

@@ -1,10 +1,8 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 DELETE FROM
 	"TestMerge1" t1
 
 -- Oracle.11.Managed Oracle11
-
 DELETE FROM
 	"TestMerge2" t1
 
@@ -600,7 +598,6 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Field1",
@@ -624,7 +621,6 @@ ORDER BY
 	t1."Id"
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Field1",

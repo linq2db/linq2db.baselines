@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 INSERT INTO test_insert_or_replace AS t1
 (
 	id,
@@ -13,7 +12,6 @@ VALUES
 ON CONFLICT (id) DO NOTHING
 
 -- DuckDB
-
 INSERT INTO test_insert_or_replace AS t1
 (
 	id,

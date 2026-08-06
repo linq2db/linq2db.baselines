@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008
-
 SELECT
 	DATENAME(Day, N'2022-02-24')
 

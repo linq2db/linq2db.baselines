@@ -1,9 +1,9 @@
-﻿-- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL12
 DECLARE @take Integer -- Int32
 SET     @take = 10
 
 SELECT
-	COUNT(*) OVER(),
+	COUNT(*) OVER (),
 	id."Id"
 FROM
 	(

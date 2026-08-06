@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	COUNT(*),
 	MAX([g_1].[ChildID])

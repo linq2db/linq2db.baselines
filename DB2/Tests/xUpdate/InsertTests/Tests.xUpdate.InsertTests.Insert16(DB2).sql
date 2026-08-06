@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 DELETE FROM
 	"Person" "t1"
 WHERE
@@ -25,7 +24,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	COUNT(*)
 FROM
@@ -34,7 +32,6 @@ WHERE
 	"t1"."FirstName" LIKE 'Insert16%' ESCAPE '~'
 
 -- DB2 DB2.LUW DB2LUW
-
 DELETE FROM
 	"Person" "t1"
 WHERE

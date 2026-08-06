@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	d.Id,
 	d.Value,
@@ -12,7 +11,6 @@ WHERE
 	NOT d.IsDeleted
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	d.Id,
 	d.Value,
@@ -23,7 +21,6 @@ FROM
 		INNER JOIN DetailClass d ON m_1.Id = d.MasterId
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	d.Id,
 	d.Value,
@@ -36,7 +33,6 @@ WHERE
 	NOT d.IsDeleted
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	d.Id,
 	d.Value,

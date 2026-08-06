@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	x."Color",
 	x."Kind",
@@ -25,8 +24,7 @@ FROM
 WHERE
 	NOT (x."Color" AND x."Color_1" OR NOT x."Color")
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."ItemId",
 	t1."Kind",
@@ -36,8 +34,7 @@ SELECT
 FROM
 	"Item" t1
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	x."Color",
 	x."ItemCode",
@@ -62,8 +59,7 @@ FROM
 WHERE
 	x."Color"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."ItemId",
 	t1."Kind",
@@ -73,8 +69,7 @@ SELECT
 FROM
 	"Item" t1
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."Top",
 	t1."Color",
@@ -129,8 +124,7 @@ FROM
 WHERE
 	t2."Bottom"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."ItemId",
 	t1."Kind",
@@ -140,8 +134,7 @@ SELECT
 FROM
 	"Item" t1
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	x_1."Color",
 	x_1."Color_1",
@@ -213,8 +206,7 @@ FROM
 WHERE
 	NOT (x_1."Color" AND x_1."Color_1" IS NOT NULL AND x_1."Color_1" OR NOT x_1."Color")
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."ItemId",
 	t1."Kind",
@@ -224,8 +216,7 @@ SELECT
 FROM
 	"Item" t1
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	x_1."Color",
 	x_1."Color_1",
@@ -298,8 +289,7 @@ WHERE
 	x_1."Color" AND x_1."Color_1" IS NOT NULL AND x_1."Color_1" OR
 	NOT x_1."Color"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."ItemId",
 	t1."Kind",
@@ -309,8 +299,7 @@ SELECT
 FROM
 	"Item" t1
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	x_1."Size_1",
 	x_1."Color",
@@ -382,8 +371,7 @@ FROM
 WHERE
 	NOT (x_1."Size_1" AND x_1."Color" IS NULL AND x_1."Size_2" OR NOT x_1."Size_1")
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."ItemId",
 	t1."Kind",
@@ -393,8 +381,7 @@ SELECT
 FROM
 	"Item" t1
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	x_1."Size_1",
 	x_1."Color",
@@ -467,8 +454,7 @@ WHERE
 	x_1."Size_1" AND x_1."Color" IS NULL AND x_1."Size_2" OR
 	NOT x_1."Size_1"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."ItemId",
 	t1."Kind",

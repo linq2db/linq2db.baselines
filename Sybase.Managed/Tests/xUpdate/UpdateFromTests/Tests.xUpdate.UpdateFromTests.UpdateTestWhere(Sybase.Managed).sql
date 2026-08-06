@@ -20,7 +20,6 @@ WHERE
 	[t].[id] = [UpdatedEntities].[id] AND [t].[id] <> @someId
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[v].[id],
 	[v].[Value1],

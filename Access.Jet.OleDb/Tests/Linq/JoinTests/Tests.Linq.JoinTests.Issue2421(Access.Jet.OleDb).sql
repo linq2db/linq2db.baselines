@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[m_1].[SectorId],
 	[a_User].[UserId]
@@ -12,7 +11,6 @@ WHERE
 	[a_UserPosition].[PositionId] = 1
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[x].[SectorId]
 FROM

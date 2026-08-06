@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	CASE
 		WHEN p.ParentID % 2 = 0 THEN p.ParentID % 3 = 0
@@ -10,7 +9,6 @@ FROM
 	Parent p
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	m_1.ParentID,
 	d.ParentID,
@@ -25,7 +23,6 @@ FROM
 		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.ParentID,
 	t1.Value1

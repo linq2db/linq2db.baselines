@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.15 PostgreSQL12
 CREATE TABLE temp_table_1
 (
 	"ID"    Int  NOT NULL,
@@ -8,8 +7,7 @@ CREATE TABLE temp_table_1
 	CONSTRAINT "PK_temp_table_1" PRIMARY KEY ("ID")
 )
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 INSERT INTO temp_table_1
 (
 	"ID",
@@ -18,8 +16,7 @@ INSERT INTO temp_table_1
 VALUES
 (1,'Value')
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 CREATE TABLE temp_table_2
 (
 	"Value" text NOT NULL,
@@ -27,8 +24,7 @@ CREATE TABLE temp_table_2
 	CONSTRAINT "PK_temp_table_2" PRIMARY KEY ("Value")
 )
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 INSERT INTO temp_table_2
 (
 	"Value"
@@ -47,11 +43,9 @@ FROM
 			LIMIT 1
 		) t1 ON 1=1
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 DROP TABLE IF EXISTS temp_table_2
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 DROP TABLE IF EXISTS temp_table_1
 

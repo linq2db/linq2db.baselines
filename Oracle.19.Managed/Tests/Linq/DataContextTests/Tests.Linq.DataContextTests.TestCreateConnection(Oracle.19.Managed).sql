@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."FirstName",
 	t1."PersonID",
@@ -10,7 +9,6 @@ FROM
 	"Person" t1
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."FirstName",
 	t1."PersonID",
@@ -21,7 +19,6 @@ FROM
 	"Person" t1
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."FirstName",
 	t1."PersonID",

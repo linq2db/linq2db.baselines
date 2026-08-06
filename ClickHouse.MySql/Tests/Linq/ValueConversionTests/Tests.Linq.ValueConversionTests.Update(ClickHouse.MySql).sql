@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 ALTER TABLE
 	ValueConversion
 UPDATE
@@ -11,7 +10,6 @@ WHERE
 	Id = 1
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	e.Id,
 	e.Value1,
@@ -30,7 +28,6 @@ WHERE
 LIMIT 1
 
 -- ClickHouse.MySql ClickHouse
-
 ALTER TABLE
 	ValueConversion
 UPDATE
@@ -47,7 +44,6 @@ WHERE
 	Id = 2
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	e.Id,
 	e.Value1,
@@ -66,7 +62,6 @@ WHERE
 LIMIT 1
 
 -- ClickHouse.MySql ClickHouse
-
 ALTER TABLE
 	ValueConversion
 UPDATE
@@ -83,7 +78,6 @@ WHERE
 	Id = 3
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	e.Id,
 	e.Value1,

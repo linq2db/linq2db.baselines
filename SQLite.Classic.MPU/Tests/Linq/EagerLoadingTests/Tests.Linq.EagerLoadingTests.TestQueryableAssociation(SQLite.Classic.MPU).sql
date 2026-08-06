@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[m_1].[Id1],
 	[m_1].[Id2],
@@ -13,7 +12,6 @@ WHERE
 	[m_1].[Id1] > 5 AND [d].[DetailId] % 2 = 0
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[m_1].[Id1],
 	[m_1].[Id2],
@@ -27,7 +25,6 @@ WHERE
 	[m_1].[Id1] > 5 AND [d].[DetailId] % 2 = 0
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[m_1].[Id1],
 	[m_1].[Id2],
@@ -39,7 +36,6 @@ WHERE
 	[m_1].[Id1] > 5 AND [d].[DetailId] % 2 = 0
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[m_1].[Id1],
 	[m_1].[Id2]

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012
-
 WITH [CTE]
 (
 	[Level_1],

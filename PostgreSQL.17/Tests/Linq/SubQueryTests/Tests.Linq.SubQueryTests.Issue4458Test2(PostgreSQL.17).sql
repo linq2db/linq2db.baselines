@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	m_1."Id",
 	d."ItemId",
@@ -18,8 +17,7 @@ WHERE
 			r."ItemId" = m_1."Id" AND r."Score" > 95
 	)
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	i."Id",
 	(

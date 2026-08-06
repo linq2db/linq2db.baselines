@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	AVG([c_1].[ChildID]),
 	AVG([c_1].[ChildID]),
@@ -12,21 +11,18 @@ GROUP BY
 	[g_1].[ParentID]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	AVG([t1].[ParentID])
 FROM
 	[Child] [t1]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	AVG(ALL [t1].[ParentID])
 FROM
 	[Child] [t1]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	AVG(DISTINCT [t1].[ParentID])
 FROM

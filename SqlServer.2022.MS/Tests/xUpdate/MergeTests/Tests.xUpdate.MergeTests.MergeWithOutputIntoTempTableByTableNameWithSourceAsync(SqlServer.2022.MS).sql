@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
-
 CREATE TABLE [tempdb]..[#InsertTempTable_42]
 (
 	[Action]    NVarChar(4000)     NULL,
@@ -9,7 +8,6 @@ CREATE TABLE [tempdb]..[#InsertTempTable_42]
 )
 
 -- SqlServer.2022.MS SqlServer.2022
-
 DELETE [t1]
 FROM
 	[TestMerge1] [t1]
@@ -115,7 +113,6 @@ VALUES
 )
 
 -- SqlServer.2022.MS SqlServer.2022
-
 DELETE [t1]
 FROM
 	[TestMerge2] [t1]
@@ -221,7 +218,6 @@ VALUES
 )
 
 -- SqlServer.2022.MS SqlServer.2022
-
 MERGE INTO [TestMerge1] [Target]
 USING (
 	SELECT
@@ -272,7 +268,6 @@ INTO [tempdb]..[#InsertTempTable_42]
 ;
 
 -- SqlServer.2022.MS SqlServer.2022
-
 SELECT
 	[t1].[Action],
 	[t1].[NewId],
@@ -282,6 +277,5 @@ FROM
 	[tempdb]..[#InsertTempTable_42] [t1]
 
 -- SqlServer.2022.MS SqlServer.2022
-
 DROP TABLE IF EXISTS [tempdb]..[#InsertTempTable_42]
 

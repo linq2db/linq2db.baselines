@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	toDate32(toDateTime64(toString(d.DateTimeValue), 7))
 FROM

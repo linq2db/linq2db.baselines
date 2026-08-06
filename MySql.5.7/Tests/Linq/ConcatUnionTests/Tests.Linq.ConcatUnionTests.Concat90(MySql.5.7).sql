@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Field1`,
@@ -10,7 +9,6 @@ FROM
 		LEFT JOIN `TestEntity2` `t2` ON `t1`.`Id` = `t2`.`Id`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Field1`,
@@ -23,7 +21,6 @@ WHERE
 	`t1`.`Id` IS NULL
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Field1`,

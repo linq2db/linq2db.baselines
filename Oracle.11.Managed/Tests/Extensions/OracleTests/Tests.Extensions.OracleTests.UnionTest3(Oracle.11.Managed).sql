@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT /*+ FULL(p_3.p) FULL(p_3.p_2) */
 	p_3."ParentID"
 FROM

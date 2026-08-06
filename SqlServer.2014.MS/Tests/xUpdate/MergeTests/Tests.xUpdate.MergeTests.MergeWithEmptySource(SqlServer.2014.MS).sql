@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014.MS SqlServer.2014
-
 MERGE INTO [Person] [Target]
 USING (
 	SELECT NULL, NULL, NULL, NULL, NULL

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 SELECT
 	IIF([p].[Value1] IS NULL, (
 		SELECT

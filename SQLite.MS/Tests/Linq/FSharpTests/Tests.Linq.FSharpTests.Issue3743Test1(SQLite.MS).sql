@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[tupledArg].[ParentID],
 	[tupledArg].[Value1],

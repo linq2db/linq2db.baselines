@@ -28,13 +28,12 @@ VALUES
 )
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Type" as "Type_1",
 	t1."Id",
-	t1."Test_ChildId" as "ChildId",
-	t1."Name_First" as "First_1",
-	t1."Name_Second" as "Second_1"
+	t1."Test_ChildId",
+	t1."Name_First",
+	t1."Name_Second"
 FROM
 	"Base" t1
 FETCH NEXT 2 ROWS ONLY
@@ -62,13 +61,12 @@ WHERE
 	t1."Id" = :Id
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Type" as "Type_1",
 	t1."Id",
-	t1."Test_ChildId" as "ChildId",
-	t1."Name_First" as "First_1",
-	t1."Name_Second" as "Second_1"
+	t1."Test_ChildId",
+	t1."Name_First",
+	t1."Name_Second"
 FROM
 	"Base" t1
 FETCH NEXT 2 ROWS ONLY

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t].[Id],
 	[t].[Value]
@@ -18,7 +17,6 @@ WHERE
 	)
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]

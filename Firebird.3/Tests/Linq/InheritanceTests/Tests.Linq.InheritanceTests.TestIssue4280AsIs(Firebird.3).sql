@@ -45,7 +45,6 @@ VALUES
 )
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t1"."DeviceType",
 	"t1"."Id",
@@ -92,7 +91,6 @@ WHERE
 	"t1"."Id" = @Id
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t1"."DeviceType",
 	"t1"."Id",

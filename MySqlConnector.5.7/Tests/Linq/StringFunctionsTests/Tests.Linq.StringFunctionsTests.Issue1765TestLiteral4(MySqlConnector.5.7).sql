@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	MAX(`g_1`.`Value4`),
 	GROUP_CONCAT(`g_1`.`Value4` SEPARATOR ' -> ')

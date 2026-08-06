@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT
 	[pp].[PersonID],
 	'  ' || [pp].[FirstName] || ' '

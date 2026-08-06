@@ -1,12 +1,10 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	COUNT(*)
 FROM
 	Person t1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	1
 FROM

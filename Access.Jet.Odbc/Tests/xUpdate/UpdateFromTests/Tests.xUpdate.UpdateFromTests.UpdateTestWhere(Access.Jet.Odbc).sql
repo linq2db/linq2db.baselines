@@ -19,7 +19,6 @@ WHERE
 	[t].[id] = [c_1].[id] AND [t].[id] <> ?
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[v].[id],
 	[v].[Value1],

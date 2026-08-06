@@ -1,5 +1,4 @@
 ﻿-- Oracle.18.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"Person" t1
 WHERE
@@ -31,7 +30,6 @@ VALUES
 )
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(*)
 FROM
@@ -40,7 +38,6 @@ WHERE
 	t1."FirstName" LIKE 'Insert15%' ESCAPE '~'
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"Person" t1
 WHERE

@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT DISTINCT
 	t2.Id,
 	t2.Value1,

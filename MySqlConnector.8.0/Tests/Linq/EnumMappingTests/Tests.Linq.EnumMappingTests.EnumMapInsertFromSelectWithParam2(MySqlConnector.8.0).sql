@@ -1,6 +1,6 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @p Int32
-SET     @p = 102
+SET     @p = 103
 
 DELETE  
 FROM
@@ -9,7 +9,6 @@ WHERE
 	`LinqDataTypes`.`ID` >= 101 AND `LinqDataTypes`.`ID` < @p
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 INSERT INTO `LinqDataTypes`
 (
 	`ID`,
@@ -31,7 +30,7 @@ INSERT INTO `LinqDataTypes`
 	`BigIntValue`
 )
 SELECT
-	`r`.`ID`,
+	`r`.`ID` + 1,
 	@param
 FROM
 	`LinqDataTypes` `r`
@@ -39,17 +38,16 @@ WHERE
 	`r`.`ID` = 101 AND `r`.`BigIntValue` = 12
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	COUNT(*)
 FROM
 	`LinqDataTypes` `r`
 WHERE
-	`r`.`ID` = 101 AND `r`.`BigIntValue` = 11
+	`r`.`ID` = 102 AND `r`.`BigIntValue` = 11
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @p Int32
-SET     @p = 102
+SET     @p = 103
 
 DELETE  
 FROM

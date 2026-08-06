@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 UPDATE
 	[ParentTable]
 SET
@@ -16,10 +15,9 @@ WHERE
 	)
 
 -- SqlCe
-
 SELECT TOP (1)
 	[p].[Id],
-	[p].[Value] as [Value_1]
+	[p].[Value]
 FROM
 	[ParentTable] [p]
 WHERE

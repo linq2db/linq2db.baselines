@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Northwind SqlServer.2019
-
 SELECT
 	[t1].[CustomerID],
 	[t1].[CompanyName],
@@ -16,7 +15,6 @@ FROM
 	[Customers] [t1]
 
 -- SqlServer.Northwind SqlServer.2019
-
 SELECT
 	[t1].[EmployeeID],
 	[t1].[LastName],
@@ -40,7 +38,6 @@ FROM
 	[Employees] [t1]
 
 -- SqlServer.Northwind SqlServer.2019
-
 SELECT
 	[t1].[Discontinued],
 	[t1].[ProductID],
@@ -56,7 +53,6 @@ FROM
 	[Products] [t1]
 
 -- SqlServer.Northwind SqlServer.2019
-
 SELECT
 	[t1].[OrderID],
 	[t1].[CustomerID],
@@ -76,7 +72,6 @@ FROM
 	[Orders] [t1]
 
 -- SqlServer.Northwind SqlServer.2019
-
 SELECT
 	[c_1].[CustomerID],
 	[c_1].[CompanyName],

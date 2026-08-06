@@ -1,12 +1,10 @@
 ﻿-- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(*)
 FROM
 	"Ints" i
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(*)
 FROM
@@ -15,7 +13,6 @@ WHERE
 	1 = 0
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(*)
 FROM

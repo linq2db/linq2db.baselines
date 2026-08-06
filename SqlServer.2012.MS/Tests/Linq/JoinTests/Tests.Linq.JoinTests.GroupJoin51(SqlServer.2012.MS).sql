@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
@@ -26,7 +25,6 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[p].[ParentID],
 	[t1].[ParentID],

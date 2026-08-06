@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	CAST(t.DateTimeValue AS TIME)
 FROM

@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 INSERT INTO "Issue3323Table"
 (
 	"Id",
@@ -16,7 +15,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	Coalesce("r"."FirstName", '') || ' ' || Coalesce("r"."LastName", '')
@@ -30,7 +28,6 @@ FROM
 	"Issue3323Table" "r_1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id" + 1,
 	"r"."Text"

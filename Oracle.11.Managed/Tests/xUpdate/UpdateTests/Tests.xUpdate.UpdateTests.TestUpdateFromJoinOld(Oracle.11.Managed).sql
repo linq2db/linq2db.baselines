@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 UPDATE
 	"gt_s_one"
 SET

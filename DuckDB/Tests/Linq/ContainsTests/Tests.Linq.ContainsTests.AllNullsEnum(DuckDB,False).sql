@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	COUNT(*)
 FROM
@@ -8,7 +7,6 @@ WHERE
 	s.Enum IN (NULL, NULL)
 
 -- DuckDB
-
 SELECT
 	COUNT(*)
 FROM

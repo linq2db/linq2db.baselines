@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t1].[Id],
 	[t1].[TestId]
@@ -27,7 +26,6 @@ ORDER BY
 	[t1].[Id] DESC
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t1].[Id],
 	[t1].[TestId]

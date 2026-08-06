@@ -14,7 +14,6 @@ WHERE
 	"r"."Column" = @Column AND "r"."ColumnNullable" = @ColumnNullable
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"r"."Id",
 	"r"."Column",
@@ -25,7 +24,6 @@ WHERE
 	"r"."Column" = DATE '2020-02-29' AND "r"."ColumnNullable" = DATE '2020-01-01'
 
 -- Firebird.2.5 Firebird
-
 DELETE FROM
 	"DateOnlyTable" "t1"
 
@@ -72,7 +70,6 @@ VALUES
 )
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1"."Id",
 	"t1"."Column",
@@ -83,12 +80,10 @@ ORDER BY
 	"t1"."Id"
 
 -- Firebird.2.5 Firebird
-
 DELETE FROM
 	"DateOnlyTable" "t1"
 
 -- Firebird.2.5 Firebird
-
 INSERT INTO "DateOnlyTable"
 (
 	"Id",
@@ -99,7 +94,6 @@ SELECT 1,DATE '1980-01-01',NULL FROM rdb$database UNION ALL
 SELECT 2,DATE '2020-02-29',DATE '2020-01-01' FROM rdb$database
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1"."Id",
 	"t1"."Column",
@@ -110,12 +104,10 @@ ORDER BY
 	"t1"."Id"
 
 -- Firebird.2.5 Firebird
-
 DELETE FROM
 	"DateOnlyTable" "t1"
 
 -- Firebird.2.5 Firebird
-
 INSERT INTO "DateOnlyTable"
 (
 	"Id",
@@ -126,7 +118,6 @@ SELECT 1,DATE '1980-01-01',NULL FROM rdb$database UNION ALL
 SELECT 2,DATE '2020-02-29',DATE '2020-01-01' FROM rdb$database
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1"."Id",
 	"t1"."Column",

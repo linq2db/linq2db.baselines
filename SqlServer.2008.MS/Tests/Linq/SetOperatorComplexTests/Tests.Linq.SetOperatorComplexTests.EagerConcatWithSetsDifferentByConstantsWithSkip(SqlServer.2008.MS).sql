@@ -92,7 +92,6 @@ ORDER BY
 	[t2].[BookType] DESC
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[m_1].[BookId],
 	[a_Author].[AuthorId],
@@ -103,7 +102,6 @@ FROM
 		LEFT JOIN [Author] [a_Author] ON [d].[FkAuthorId] = [a_Author].[AuthorId]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[t1].[Discriminator],
 	[t1].[BookId],

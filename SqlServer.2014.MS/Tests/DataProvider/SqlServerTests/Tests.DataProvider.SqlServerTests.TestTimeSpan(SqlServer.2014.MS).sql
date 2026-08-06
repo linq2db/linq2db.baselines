@@ -1,9 +1,7 @@
 ﻿-- SqlServer.2014.MS SqlServer.2014
-
 SELECT Cast('12:12:12' as time)
 
 -- SqlServer.2014.MS SqlServer.2014
-
 SELECT Cast('12:12:12' as time)
 
 -- SqlServer.2014.MS SqlServer.2014

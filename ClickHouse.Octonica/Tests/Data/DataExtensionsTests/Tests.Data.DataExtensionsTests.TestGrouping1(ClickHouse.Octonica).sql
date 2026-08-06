@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	m_1.Key_1,
 	d.FirstName,
@@ -17,7 +16,6 @@ FROM
 		INNER JOIN Person d ON m_1.Key_1 = d.FirstName
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT DISTINCT
 	t1.FirstName
 FROM

@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[t1].[c1]
 FROM

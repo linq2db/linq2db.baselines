@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 /* two */
 SELECT
 	x."FirstName",

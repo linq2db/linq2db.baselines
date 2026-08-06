@@ -29,7 +29,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"p"."FirstName",
 	"p"."PersonID",

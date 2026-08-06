@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	m_1.Key_1,
 	d."Value"
@@ -16,7 +15,6 @@ ORDER BY
 	m_1.Key_1
 
 -- Informix.DB2 Informix
-
 SELECT DISTINCT
 	g_1.GrpId
 FROM
@@ -25,7 +23,6 @@ ORDER BY
 	g_1.GrpId
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.PK,
 	t1.GrpId,

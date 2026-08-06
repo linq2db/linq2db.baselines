@@ -37,7 +37,6 @@ WHERE
 	"t1"."FirstName" LIKE 'Update14%' ESCAPE '~'
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	COUNT(*)
 FROM

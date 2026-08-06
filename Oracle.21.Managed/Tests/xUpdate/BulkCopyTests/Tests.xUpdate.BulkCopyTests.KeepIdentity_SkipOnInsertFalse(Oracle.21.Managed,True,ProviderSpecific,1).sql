@@ -16,7 +16,6 @@ RETURNING
 	ID INTO :IDENTITY_PARAMETER
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 INSERT ALL
 	INTO "AllTypes" (ID, "intDataType") VALUES (13,200)
 	INTO "AllTypes" (ID, "intDataType") VALUES (23,300)

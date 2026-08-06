@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 INSERT INTO [SimpleBulkCopyTable]
 (
 	[Id]
@@ -7,7 +6,6 @@ INSERT INTO [SimpleBulkCopyTable]
 SELECT 1
 
 -- Sybase.Managed Sybase
-
 INSERT INTO [SimpleBulkCopyTable]
 (
 	[Id]
@@ -28,7 +26,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 INSERT INTO [SimpleBulkCopyTable]
 (
 	[Id]
@@ -36,7 +33,6 @@ INSERT INTO [SimpleBulkCopyTable]
 SELECT 10
 
 -- Sybase.Managed Sybase
-
 INSERT INTO [SimpleBulkCopyTable]
 (
 	[Id]

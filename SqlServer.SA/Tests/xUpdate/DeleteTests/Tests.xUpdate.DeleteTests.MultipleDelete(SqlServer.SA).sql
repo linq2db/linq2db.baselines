@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 DELETE [c_1]
 FROM
 	[Parent] [c_1]
@@ -9,7 +8,6 @@ WHERE
 INSERT BULK [Parent](ParentID, Value1)
 
 -- SqlServer.SA SqlServer.2019
-
 DELETE [p]
 FROM
 	[Parent] [p]
@@ -17,7 +15,6 @@ WHERE
 	[p].[ParentID] = 1000 AND [p].[Value1] IS NULL OR [p].[ParentID] = 1001 AND [p].[Value1] IS NULL
 
 -- SqlServer.SA SqlServer.2019
-
 DELETE [c_1]
 FROM
 	[Parent] [c_1]

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[c_1].[ParentID],
 	[c_1].[ChildID]
@@ -16,7 +15,6 @@ WHERE
 	)
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID]
@@ -24,7 +22,6 @@ FROM
 	[Child] [t1]
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

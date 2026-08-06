@@ -4,12 +4,12 @@ SET     @take = 100
 
 SELECT
 	t1."RowNumber",
-	n."PersonID" as ID
+	n."PersonID"
 FROM
 	(
 		SELECT
 			r."PersonID" as ID,
-			ROW_NUMBER() OVER(ORDER BY (
+			ROW_NUMBER() OVER (ORDER BY (
 				SELECT
 					'unordered'
 				FROM SYS.DUAL

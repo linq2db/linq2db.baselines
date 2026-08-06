@@ -37,7 +37,6 @@ ON DUPLICATE KEY UPDATE
 	`Diagnosis` = @Diagnosis
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	COUNT(*)
 FROM
@@ -82,7 +81,6 @@ ON DUPLICATE KEY UPDATE
 	`Diagnosis` = @Diagnosis
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	COUNT(*)
 FROM

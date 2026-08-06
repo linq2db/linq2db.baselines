@@ -1,5 +1,4 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	r.ID,
 	r."MoneyValue",
@@ -18,7 +17,6 @@ WHERE
 FETCH NEXT 1 ROWS ONLY
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	r.ID,
 	r."MoneyValue",
@@ -132,7 +130,6 @@ WHERE
 	t1.ID = :ID
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	r.ID,
 	r."MoneyValue",

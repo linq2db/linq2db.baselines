@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025
-
 SELECT
 	FILEGROUP_ID(N'PRIMARY')
 

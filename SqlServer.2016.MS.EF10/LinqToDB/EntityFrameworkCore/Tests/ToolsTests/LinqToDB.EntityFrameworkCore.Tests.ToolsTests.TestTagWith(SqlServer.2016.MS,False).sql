@@ -14,7 +14,6 @@ WHERE @ef_filter__p1 = CAST(1 AS bit) OR [e].[IsDeleted] = CAST(0 AS bit) OR [e]
 
 
 -- SqlServer.2016
-
 /* Tagged query */
 SELECT
 	[e].[IsDeleted],

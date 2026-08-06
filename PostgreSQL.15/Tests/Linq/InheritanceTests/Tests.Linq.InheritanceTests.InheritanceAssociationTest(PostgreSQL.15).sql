@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."ID",
 	t1."MoneyValue",
@@ -12,8 +11,7 @@ SELECT
 FROM
 	"LinqDataTypes" t1
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	"a_A1"."ID",
 	"a_A2"."ID"

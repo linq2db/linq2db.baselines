@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	CASE
 		WHEN Degrees([t].[MoneyValue]) > 0 THEN CAST(Degrees([t].[MoneyValue]) AS INTEGER)

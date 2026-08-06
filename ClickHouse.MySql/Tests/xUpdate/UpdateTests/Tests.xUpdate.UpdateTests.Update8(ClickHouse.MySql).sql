@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 INSERT INTO Parent
 (
 	ParentID,
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- ClickHouse.MySql ClickHouse
-
 ALTER TABLE
 	Parent
 UPDATE
@@ -21,7 +19,6 @@ WHERE
 	ParentID = 1001
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	p.ParentID,
 	p.Value1

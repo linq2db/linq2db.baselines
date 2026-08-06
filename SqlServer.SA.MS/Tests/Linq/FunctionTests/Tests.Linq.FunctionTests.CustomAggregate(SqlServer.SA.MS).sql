@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	SUM([g_1].[Value1]),
 	SUM([g_1].[Value1])

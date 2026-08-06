@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT
 	[m_1].[ParentID],
 	[d].[ChildID]
@@ -15,7 +14,6 @@ ORDER BY
 	[m_1].[ParentID]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[p].[ParentID]
 FROM

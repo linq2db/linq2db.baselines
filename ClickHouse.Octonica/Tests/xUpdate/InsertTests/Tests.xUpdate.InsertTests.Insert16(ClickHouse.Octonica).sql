@@ -1,12 +1,10 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	Person
 DELETE WHERE
 	startsWith(FirstName, 'Insert16')
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO Person
 (
 	FirstName,
@@ -21,7 +19,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	COUNT(*)
 FROM
@@ -30,7 +27,6 @@ WHERE
 	startsWith(t1.FirstName, 'Insert16')
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	Person
 DELETE WHERE

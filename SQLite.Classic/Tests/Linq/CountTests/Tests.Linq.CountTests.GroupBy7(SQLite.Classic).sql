@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT
 	COUNT(*),
 	MAX([g_1].[ChildID])

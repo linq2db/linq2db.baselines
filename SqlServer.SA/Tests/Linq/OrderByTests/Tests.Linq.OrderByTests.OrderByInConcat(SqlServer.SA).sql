@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID]
@@ -13,7 +12,6 @@ FROM
 	[Child] [t2]
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID]
@@ -27,7 +25,6 @@ FROM
 	[Child] [t2]
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t3].[ParentID],
 	[t3].[ChildID]

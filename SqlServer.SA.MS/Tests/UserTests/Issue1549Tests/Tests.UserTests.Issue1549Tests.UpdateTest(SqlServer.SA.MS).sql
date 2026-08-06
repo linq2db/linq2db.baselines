@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
-
 UPDATE
 	[tr]
 SET
@@ -10,7 +9,6 @@ FROM
 		INNER JOIN [billing_DevReadingType] [drt] ON [drt].[Name] = [tr].[ReadingTypeName] AND [drt].[DevTypeId] = [tr].[Devtypeid]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 UPDATE
 	[billing_TempReading]
 SET

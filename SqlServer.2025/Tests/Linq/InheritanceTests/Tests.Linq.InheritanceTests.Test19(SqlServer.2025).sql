@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025
-
 SELECT DISTINCT
 	[p1].[PersonID],
 	[p1].[Gender],

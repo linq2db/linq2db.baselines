@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 INSERT INTO [Parent]
 (
 	[ParentID]
@@ -10,7 +9,6 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 INSERT INTO [Child]
 (
 	[ChildID],
@@ -23,7 +21,6 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 UPDATE
 	[Parent]
 SET
@@ -34,14 +31,12 @@ WHERE
 	[child_1].[ChildID] = 10000 AND [child_1].[ParentID] = [Parent].[ParentID]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 DELETE FROM
 	[Child]
 WHERE
 	[Child].[ChildID] = 10000
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 DELETE FROM
 	[Parent]
 WHERE

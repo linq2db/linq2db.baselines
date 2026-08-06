@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.Id
 FROM
@@ -9,7 +8,6 @@ WHERE
 LIMIT 2
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.Id
 FROM
@@ -19,7 +17,6 @@ WHERE
 LIMIT 2
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	x.Id
 FROM
@@ -29,7 +26,6 @@ WHERE
 LIMIT 2
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	x.Id
 FROM

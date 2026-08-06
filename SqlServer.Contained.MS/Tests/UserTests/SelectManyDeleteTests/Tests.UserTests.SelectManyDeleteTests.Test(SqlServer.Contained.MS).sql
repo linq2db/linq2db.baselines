@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained.MS SqlServer.2019
-
 DELETE [a_GrandChildren]
 FROM
 	[Parent] [x]

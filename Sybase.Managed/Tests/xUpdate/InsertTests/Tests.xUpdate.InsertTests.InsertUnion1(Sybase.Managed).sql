@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 DELETE FROM [Parent]
 FROM
 	[Parent] [p]
@@ -7,7 +6,6 @@ WHERE
 	[p].[ParentID] > 1000
 
 -- Sybase.Managed Sybase
-
 INSERT INTO [Parent]
 (
 	[ParentID],
@@ -32,7 +30,6 @@ FROM
 	) [t1]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	COUNT(*)
 FROM
@@ -41,7 +38,6 @@ WHERE
 	[c_1].[ParentID] > 1000
 
 -- Sybase.Managed Sybase
-
 DELETE FROM [Parent]
 FROM
 	[Parent] [p]

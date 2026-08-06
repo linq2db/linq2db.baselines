@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 WITH RECURSIVE `cte` (`ChildID`, `ParentID`, `GrandChildID`)
 AS
 (
@@ -36,7 +35,6 @@ FROM
 		INNER JOIN `cte` `d` ON `m_1`.`Key_1` = Coalesce(`d`.`ParentID`, -1)
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 WITH RECURSIVE `cte` (`ChildID`, `ParentID`, `GrandChildID`)
 AS
 (

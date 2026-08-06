@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[g_1].[Id],
 	SUM(Coalesce(CAST([a_Values].[Value] AS Int), 0))
@@ -10,7 +9,6 @@ GROUP BY
 	[g_1].[Id]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -22,7 +20,6 @@ FROM
 		INNER JOIN [ItemValue] [d] ON [m_1].[Id] = [d].[ItemId]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[t1].[Id],
 	[t1].[Name]

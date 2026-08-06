@@ -16,7 +16,6 @@ VALUES
 )
 
 -- SqlServer.2016
-
 SELECT TOP (1)
 	[t].[Id],
 	[t].[Name],
@@ -40,7 +39,6 @@ WHERE
 	[PR_1598_Insert_Table_Cache].[Id] = @Id
 
 -- SqlServer.2016
-
 SELECT TOP (1)
 	[t].[Id],
 	[t].[Name],

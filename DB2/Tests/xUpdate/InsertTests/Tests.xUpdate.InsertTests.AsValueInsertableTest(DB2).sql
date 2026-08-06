@@ -11,12 +11,11 @@ INSERT INTO "TestInsertOrReplaceTable"
 )
 VALUES
 (
-	CAST(@ID AS Int),
-	CAST(@FirstName AS NVarChar(4))
+	@ID,
+	@FirstName
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	COUNT(*)
 FROM

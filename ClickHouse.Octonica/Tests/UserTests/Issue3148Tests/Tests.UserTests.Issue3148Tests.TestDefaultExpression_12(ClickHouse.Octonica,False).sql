@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Field1,
@@ -11,7 +10,6 @@ FROM
 	) t1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Field1,

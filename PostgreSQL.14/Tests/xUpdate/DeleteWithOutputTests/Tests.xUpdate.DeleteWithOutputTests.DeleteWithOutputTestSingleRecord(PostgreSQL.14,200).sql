@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	s."Id",
 	s."Value",
@@ -9,8 +8,7 @@ FROM
 WHERE
 	s."Id" = 3
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DELETE FROM
 	"TableWithData" s
 WHERE

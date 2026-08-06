@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 MERGE INTO "CacheTestTable" "Target"
 USING (VALUES
 	(1,1), (2,2)
@@ -27,8 +26,7 @@ VALUES
 	"Source"."Value_1"
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value"
@@ -37,8 +35,7 @@ FROM
 ORDER BY
 	t1."Id"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 MERGE INTO "CacheTestTable" "Target"
 USING (VALUES
 	(1,1), (2,4), (3,3)
@@ -66,8 +63,7 @@ VALUES
 	"Source"."Value_1"
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value"

@@ -19,7 +19,6 @@ WHERE
 	)
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	x."id",
 	x."service_id",
@@ -30,7 +29,6 @@ WHERE
 	x."is_deleted" = 1 AND x."service_id" = 'TestProcessService'
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	x."id",
 	x."service_id",

@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	r.FirstName,
 	r.PersonID,
@@ -12,7 +11,6 @@ WHERE
 	r.MiddleName IS NOT NULL
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	r.FirstName,
 	r.PersonID,

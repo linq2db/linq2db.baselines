@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2019
-
 WITH [cte] ([Id], [Str])
 AS
 (

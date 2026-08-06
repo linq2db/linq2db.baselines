@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008
-
 SELECT
 	[t].[Id],
 	[t].[Value1],

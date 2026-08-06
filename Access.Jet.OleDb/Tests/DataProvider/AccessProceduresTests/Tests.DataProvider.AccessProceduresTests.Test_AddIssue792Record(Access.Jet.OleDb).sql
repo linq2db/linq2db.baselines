@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	COUNT(*)
 FROM
@@ -14,7 +13,6 @@ SET     @unused = 100500
 AddIssue792Record
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	COUNT(*)
 FROM

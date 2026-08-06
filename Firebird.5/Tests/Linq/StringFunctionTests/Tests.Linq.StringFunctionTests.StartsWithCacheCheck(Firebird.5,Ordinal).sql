@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 SELECT
 	"p"."FirstName"
 FROM
@@ -9,7 +8,6 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 -- Firebird.5 Firebird4
-
 SELECT
 	COUNT(*)
 FROM
@@ -19,7 +17,6 @@ WHERE
 	"p"."PersonID" = 1
 
 -- Firebird.5 Firebird4
-
 SELECT
 	COUNT(*)
 FROM
@@ -29,7 +26,6 @@ WHERE
 	"p"."PersonID" = 1
 
 -- Firebird.5 Firebird4
-
 SELECT
 	COUNT(*)
 FROM
@@ -39,7 +35,6 @@ WHERE
 	"p"."PersonID" = 1
 
 -- Firebird.5 Firebird4
-
 SELECT
 	COUNT(*)
 FROM

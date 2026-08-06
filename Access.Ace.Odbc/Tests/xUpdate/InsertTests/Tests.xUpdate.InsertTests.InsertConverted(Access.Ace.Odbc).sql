@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 DELETE FROM
 	[LinqDataTypes] [r]
 WHERE
@@ -21,7 +20,6 @@ VALUES
 )
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT TOP 1
 	[t].[ID],
 	[t].[BigIntValue]
@@ -31,7 +29,6 @@ WHERE
 	[t].[ID] = 1001
 
 -- Access.Ace.Odbc AccessODBC
-
 DELETE FROM
 	[LinqDataTypes] [r]
 WHERE

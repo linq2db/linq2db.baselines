@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[s].[Key1],
 	[s].[Key2],
@@ -43,7 +42,6 @@ FROM
 		) [nu] ON [nu].[DataKey21] = [s].[DataKey21] AND [nu].[DataKey21] = [s].[DataKey22]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[p].[Key1],
 	[p].[Key2],

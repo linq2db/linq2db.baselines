@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 WITH [cte] ([FirstName], [LastName])
 AS
 (

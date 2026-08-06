@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[m_1].[ArrayString],
 	[d].[value]
@@ -20,7 +19,6 @@ FROM
 		CROSS APPLY [STRING_SPLIT]([m_1].[ArrayString], N',') [d]
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[a].[Id],
 	[a].[ArrayString]

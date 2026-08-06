@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DECLARE @RangeMappedAsDateTimeOffset TimestampTzRange -- Object
 SET     @RangeMappedAsDateTimeOffset = NULL
 DECLARE @RangeMappedAsDateTime TimestampTzRange -- Object
@@ -15,8 +15,7 @@ VALUES
 	:RangeMappedAsDateTime
 )
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."RangeMappedAsDateTimeOffset",
 	t1."RangeMappedAsDateTime"

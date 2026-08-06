@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[t1_1].[NAME1],
 	[t1].[Id2],

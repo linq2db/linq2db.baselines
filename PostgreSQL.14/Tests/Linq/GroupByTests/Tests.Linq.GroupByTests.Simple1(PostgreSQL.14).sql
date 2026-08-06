@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	m_1."Key_1",
 	d."ParentID",
@@ -13,8 +12,7 @@ FROM
 	) m_1
 		INNER JOIN "Child" d ON m_1."Key_1" = d."ParentID"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT DISTINCT
 	t1."ParentID"
 FROM

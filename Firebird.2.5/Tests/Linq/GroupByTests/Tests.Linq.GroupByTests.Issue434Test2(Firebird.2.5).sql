@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	"m_1"."PersonID",
 	"d"."PersonID",
@@ -11,7 +10,6 @@ WHERE
 	Lower("m_1"."FirstName") LIKE '%test%' ESCAPE '~'
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"p"."FirstName",
 	"p"."PersonID"

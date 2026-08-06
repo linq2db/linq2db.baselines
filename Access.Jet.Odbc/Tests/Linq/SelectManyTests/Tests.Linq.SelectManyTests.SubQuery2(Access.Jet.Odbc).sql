@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[p].[PersonID],
 	[p2].[FirstName]
@@ -11,7 +10,6 @@ WHERE
 	[p].[PersonID] = [p2].[PersonID]
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[p].[PersonID],
 	[p2].[FirstName]

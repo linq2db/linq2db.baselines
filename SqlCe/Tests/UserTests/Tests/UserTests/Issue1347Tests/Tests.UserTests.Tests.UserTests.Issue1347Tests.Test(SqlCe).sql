@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[tp12].[Id],
 	[tp12].[ResourceID],

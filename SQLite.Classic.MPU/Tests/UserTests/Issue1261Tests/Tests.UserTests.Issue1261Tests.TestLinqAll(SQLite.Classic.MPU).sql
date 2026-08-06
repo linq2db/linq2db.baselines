@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	NOT EXISTS(
 		SELECT
@@ -11,7 +10,6 @@ SELECT
 	)
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	NOT EXISTS(
 		SELECT

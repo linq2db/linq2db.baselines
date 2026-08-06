@@ -12,7 +12,6 @@ WHERE
 	"r"."Column" = ? AND "r"."ColumnNullable" IS NULL
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"r"."Id",
 	"r"."Column",
@@ -23,7 +22,6 @@ WHERE
 	"r"."Column" = 0 AND "r"."ColumnNullable" IS NULL
 
 -- SapHana.Odbc SapHanaOdbc
-
 DELETE FROM
 	"TypeTable`2" "t1"
 
@@ -62,7 +60,6 @@ WHERE
 	"r"."Column" = ? AND "r"."ColumnNullable" IS NULL
 
 -- SapHana.Odbc SapHanaOdbc
-
 DELETE FROM
 	"TypeTable`2" "t1"
 
@@ -101,7 +98,6 @@ WHERE
 	"r"."Column" = ? AND "r"."ColumnNullable" IS NULL
 
 -- SapHana.Odbc SapHanaOdbc
-
 DELETE FROM
 	"TypeTable`2" "t1"
 
@@ -140,7 +136,6 @@ WHERE
 	"r"."Column" = ? AND "r"."ColumnNullable" IS NULL
 
 -- SapHana.Odbc SapHanaOdbc
-
 DELETE FROM
 	"TypeTable`2" "t1"
 
@@ -194,7 +189,6 @@ WHERE
 	"r"."Column" = ? AND "r"."ColumnNullable" = ?
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"r"."Id",
 	"r"."Column",
@@ -205,7 +199,6 @@ WHERE
 	"r"."Column" = 9999999999999999 AND "r"."ColumnNullable" = -9999999999999999
 
 -- SapHana.Odbc SapHanaOdbc
-
 DELETE FROM
 	"TypeTable`2" "t1"
 
@@ -246,7 +239,6 @@ WHERE
 	"r"."Column" = ? AND "r"."ColumnNullable" = ?
 
 -- SapHana.Odbc SapHanaOdbc
-
 DELETE FROM
 	"TypeTable`2" "t1"
 
@@ -287,7 +279,6 @@ WHERE
 	"r"."Column" = ? AND "r"."ColumnNullable" = ?
 
 -- SapHana.Odbc SapHanaOdbc
-
 DELETE FROM
 	"TypeTable`2" "t1"
 
@@ -328,7 +319,6 @@ WHERE
 	"r"."Column" = ? AND "r"."ColumnNullable" = ?
 
 -- SapHana.Odbc SapHanaOdbc
-
 DELETE FROM
 	"TypeTable`2" "t1"
 
@@ -384,7 +374,6 @@ WHERE
 	"r"."Column" = ? AND "r"."ColumnNullable" = ?
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"r"."Id",
 	"r"."Column",
@@ -395,7 +384,6 @@ WHERE
 	"r"."Column" = 99999999999.99999 AND "r"."ColumnNullable" = -999999999999.9999
 
 -- SapHana.Odbc SapHanaOdbc
-
 DELETE FROM
 	"TypeTable`2" "t1"
 
@@ -436,7 +424,6 @@ WHERE
 	"r"."Column" = ? AND "r"."ColumnNullable" = ?
 
 -- SapHana.Odbc SapHanaOdbc
-
 DELETE FROM
 	"TypeTable`2" "t1"
 
@@ -477,7 +464,6 @@ WHERE
 	"r"."Column" = ? AND "r"."ColumnNullable" = ?
 
 -- SapHana.Odbc SapHanaOdbc
-
 DELETE FROM
 	"TypeTable`2" "t1"
 
@@ -518,7 +504,6 @@ WHERE
 	"r"."Column" = ? AND "r"."ColumnNullable" = ?
 
 -- SapHana.Odbc SapHanaOdbc
-
 DELETE FROM
 	"TypeTable`2" "t1"
 

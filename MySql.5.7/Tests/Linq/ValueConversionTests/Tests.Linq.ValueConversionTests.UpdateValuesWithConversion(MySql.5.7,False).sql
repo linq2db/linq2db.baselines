@@ -10,7 +10,6 @@ WHERE
 	`x`.`Id` = 1
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`x`.`Id`,
 	`x`.`NoConversion`,
@@ -34,7 +33,6 @@ WHERE
 	`x`.`Id` = 2
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`x`.`Id`,
 	`x`.`NoConversion`,

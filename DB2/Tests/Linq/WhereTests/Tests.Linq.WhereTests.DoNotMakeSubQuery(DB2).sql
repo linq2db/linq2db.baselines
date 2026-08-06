@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"p2"."PersonID",
 	RTRIM("p2"."FirstName" || '', '')

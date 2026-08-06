@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 SELECT
 	"p"."ParentID",
 	"c_2"."ChildID"
@@ -25,7 +24,6 @@ ORDER BY
 	"c_2"."ChildID"
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"m_1"."ParentID",
 	"d"."ParentID",
@@ -40,7 +38,6 @@ FROM
 		INNER JOIN "Child" "d" ON "m_1"."ParentID" = "d"."ParentID"
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t1"."ParentID",
 	"t1"."Value1"

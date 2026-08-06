@@ -1,10 +1,8 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 DELETE FROM
 	"InheritanceParent" t1
 
 -- Oracle.11.Managed Oracle11
-
 MERGE INTO "InheritanceParent" t1
 USING (SELECT 143 AS "InheritanceParentId", NULL AS "Name" FROM SYS.DUAL) s ON
 (
@@ -30,14 +28,12 @@ WHEN NOT MATCHED THEN
 	)
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	COUNT(*)
 FROM
 	"InheritanceParent" t1
 
 -- Oracle.11.Managed Oracle11
-
 MERGE INTO "InheritanceParent" t1
 USING (SELECT 143 AS "InheritanceParentId", NULL AS "Name" FROM SYS.DUAL) s ON
 (
@@ -63,7 +59,6 @@ WHEN NOT MATCHED THEN
 	)
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	COUNT(*)
 FROM

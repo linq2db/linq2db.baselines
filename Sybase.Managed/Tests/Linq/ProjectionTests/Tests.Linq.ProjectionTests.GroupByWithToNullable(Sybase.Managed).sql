@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT TOP 1000
 	[a_Patient].[Diagnosis],
 	[a_Patient].[PersonID],

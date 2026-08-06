@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016
-
 SELECT DISTINCT
 	[c2].[ParentID]
 FROM

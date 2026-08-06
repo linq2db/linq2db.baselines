@@ -39,7 +39,6 @@ WHERE
 	[c_1].[ChildID] = ? AND [a_Parent].[Value1] = 1
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	COUNT(*)
 FROM

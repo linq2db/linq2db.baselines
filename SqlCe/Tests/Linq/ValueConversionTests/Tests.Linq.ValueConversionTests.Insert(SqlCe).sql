@@ -32,7 +32,6 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT TOP (1)
 	[e].[Id],
 	[e].[Value1],
@@ -83,7 +82,6 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT TOP (1)
 	[e].[Id],
 	[e].[Value1],
@@ -150,7 +148,6 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT TOP (1)
 	[e].[Id],
 	[e].[Value1],
@@ -168,9 +165,8 @@ WHERE
 	[e].[Id] = 3
 
 -- SqlCe
-
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[ValueConversion] [t1]
 

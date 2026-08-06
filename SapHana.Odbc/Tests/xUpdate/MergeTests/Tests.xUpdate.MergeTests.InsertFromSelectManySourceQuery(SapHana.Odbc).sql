@@ -1,15 +1,12 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 DELETE FROM
 	"Parent" "t1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 DELETE FROM
 	"Child" "t1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 DELETE FROM
 	"GrandChild" "t1"
 
@@ -87,7 +84,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 MERGE INTO "GrandChild" "Target"
 USING (
 	SELECT
@@ -115,7 +111,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."GrandChildID",
 	"t1"."ParentID",

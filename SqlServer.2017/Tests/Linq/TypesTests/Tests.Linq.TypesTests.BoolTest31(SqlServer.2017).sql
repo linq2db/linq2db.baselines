@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 SELECT
 	[t].[ID],
 	[t].[MoneyValue],

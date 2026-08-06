@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	Replace(CStr([p].[MoneyValue]), CStr(','), CStr('.'))
 FROM

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 SELECT
 	[y].[Id],
 	[a_SomeValue].[Value]

@@ -14,7 +14,6 @@ WHERE
 	`r`.`Column` = @Column AND `r`.`ColumnNullable` = @ColumnNullable
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`r`.`Id`,
 	`r`.`Column`,
@@ -25,7 +24,6 @@ WHERE
 	`r`.`Column` = 'value=2' AND `r`.`ColumnNullable` = 'value=33'
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DELETE  
 FROM
 	`StringEnumTable`
@@ -73,7 +71,6 @@ VALUES
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Column`,
@@ -84,13 +81,11 @@ ORDER BY
 	`t1`.`Id`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DELETE  
 FROM
 	`StringEnumTable`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `StringEnumTable`
 (
 	`Id`,
@@ -102,7 +97,6 @@ VALUES
 (2,'value=2','value=33')
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Column`,
@@ -113,7 +107,6 @@ ORDER BY
 	`t1`.`Id`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DELETE  
 FROM
 	`StringEnumTable`
@@ -121,7 +114,6 @@ FROM
 INSERT BULK `StringEnumTable`(Id, Column, ColumnNullable)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Column`,

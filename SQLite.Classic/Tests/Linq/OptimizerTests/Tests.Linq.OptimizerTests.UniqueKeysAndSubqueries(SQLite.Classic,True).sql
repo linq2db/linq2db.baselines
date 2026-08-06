@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT
 	[s].[Key1],
 	[s].[Key2],
@@ -34,7 +33,6 @@ FROM
 		LEFT JOIN [FirstOptimizerData] [f2] ON [f2].[ValueStr] LIKE 'Str%' ESCAPE '~' AND [f2].[DataKey11] = 10
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[q].[Key1],
 	[q].[Key2],

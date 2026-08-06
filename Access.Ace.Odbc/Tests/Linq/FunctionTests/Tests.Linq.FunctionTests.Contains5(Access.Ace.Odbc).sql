@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[p].[ParentID],
 	[p].[Value1]
@@ -9,7 +8,6 @@ WHERE
 	[p].[ParentID] IN (1, 2)
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[p].[ParentID],
 	[p].[Value1]

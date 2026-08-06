@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT /* qb */
 	"t"."PersonID",
 	"t"."Diagnosis"

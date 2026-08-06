@@ -46,7 +46,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT
 	'Id',
 	[it].[Id],

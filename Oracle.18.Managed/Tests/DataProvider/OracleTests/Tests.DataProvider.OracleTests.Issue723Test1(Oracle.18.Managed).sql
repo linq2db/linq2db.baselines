@@ -1,41 +1,31 @@
 ﻿-- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT user FROM dual
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 GRANT CREATE ANY TRIGGER TO SYSTEM
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 GRANT CREATE ANY SEQUENCE TO SYSTEM
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 GRANT DROP ANY TRIGGER TO SYSTEM
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 GRANT DROP ANY SEQUENCE TO SYSTEM
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 DROP USER C##ISSUE723SCHEMA CASCADE
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 CREATE USER C##ISSUE723SCHEMA IDENTIFIED BY password
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT default_tablespace FROM sys.dba_users WHERE username = 'C##ISSUE723SCHEMA'
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 ALTER USER C##ISSUE723SCHEMA quota unlimited on USERS
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 CREATE TABLE C##ISSUE723SCHEMA.ISSUE723TABLE
 (
 	"Id" Int  NOT NULL,
@@ -44,11 +34,9 @@ CREATE TABLE C##ISSUE723SCHEMA.ISSUE723TABLE
 )
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 CREATE SEQUENCE C##ISSUE723SCHEMA.SIDENTITY_ISSUE723TABLE
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 CREATE OR REPLACE TRIGGER C##ISSUE723SCHEMA.TIDENTITY_ISSUE723TABLE
 BEFORE INSERT ON C##ISSUE723SCHEMA.ISSUE723TABLE FOR EACH ROW
 BEGIN
@@ -72,7 +60,6 @@ RETURNING
 	"Id" INTO :IDENTITY_PARAMETER
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TRIGGER C##ISSUE723SCHEMA.TIDENTITY_ISSUE723TABLE';
 	EXECUTE IMMEDIATE 'DROP SEQUENCE C##ISSUE723SCHEMA.SIDENTITY_ISSUE723TABLE';
@@ -80,6 +67,5 @@ BEGIN
 END;
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 DROP USER C##ISSUE723SCHEMA CASCADE
 

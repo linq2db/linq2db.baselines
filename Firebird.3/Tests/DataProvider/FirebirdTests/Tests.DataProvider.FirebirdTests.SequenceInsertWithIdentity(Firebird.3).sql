@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 DELETE FROM
 	"SequenceTest" "t1"
 WHERE
@@ -25,7 +24,6 @@ RETURNING
 	ID
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t1".ID,
 	"t1"."Value_"
@@ -45,7 +43,6 @@ WHERE
 	"t1".ID = @id1
 
 -- Firebird.3 Firebird3
-
 SELECT
 	COUNT(*)
 FROM

@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "Issue2564Table"';
 EXCEPTION
@@ -10,7 +9,6 @@ EXCEPTION
 END;
 
 -- Oracle.11.Managed Oracle11
-
 CREATE TABLE "Issue2564Table"
 (
 	"Id"                     Number(19)   NOT NULL,

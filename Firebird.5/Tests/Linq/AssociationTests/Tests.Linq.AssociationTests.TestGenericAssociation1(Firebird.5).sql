@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 SELECT
 	"a_MiddleGeneric"."ParentID",
 	"a_Bottom"."ParentID",

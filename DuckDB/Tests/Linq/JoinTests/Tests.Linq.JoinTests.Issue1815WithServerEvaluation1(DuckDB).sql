@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	t1.InId,
 	CASE
@@ -18,7 +17,6 @@ WHERE
 LIMIT 2
 
 -- DuckDB
-
 SELECT
 	t1.InId,
 	CASE

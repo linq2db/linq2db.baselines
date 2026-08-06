@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016
-
 SELECT
 	[t1].[ID],
 	[t1].[Value_1]
@@ -13,7 +12,6 @@ FROM
 	) [t1]
 
 -- SqlServer.2016
-
 SELECT
 	[t1].[ID],
 	[t1].[Value_1]

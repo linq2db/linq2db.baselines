@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t2`.`ReferenceName`
 FROM
@@ -16,7 +15,6 @@ FROM
 		) `t2` ON 1=1
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Name`,
@@ -28,7 +26,6 @@ FROM
 		INNER JOIN `Reference` `a_Reference` ON `t1`.`ReferenceId` = `a_Reference`.`Id`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Name`,

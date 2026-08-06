@@ -1,14 +1,11 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
-
 ALTER SYSTEM SET DEFERRED_SEGMENT_CREATION=FALSE
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 -- default is 300
 ALTER SYSTEM SET OPEN_CURSORS=10000 SID='*' SCOPE=BOTH
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 -- Cleanup schema
 
 BEGIN
@@ -21,87 +18,66 @@ EXCEPTION
 END;
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 DROP TABLE "Doctor"
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 DROP TABLE "Patient"
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 DROP TABLE "Person"
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 DROP SEQUENCE BinaryDataSeq
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 DROP TABLE BinaryData
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 DROP SEQUENCE "DataTypeTestSeq"
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 DROP TABLE "DataTypeTest"
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 DROP TABLE "GrandChild"
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 DROP TABLE "Child"
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 DROP TABLE "Parent"
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 DROP TABLE "StringTest"
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 DROP TABLE "LinqDataTypes"
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 DROP TABLE LINQDATATYPESBC
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 DROP SEQUENCE SequenceTestSeq
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 DROP TABLE SequenceTest
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 DROP TABLE "STG_TRADE_INFORMATION"
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 DROP table "t_test_user_contract"
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 DROP table "t_test_user"
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 DROP sequence "sq_test_user_contract"
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 DROP table "t_entity"
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 --StringTest Table
 CREATE TABLE "StringTest"
 	( "StringValue1"                VARCHAR2(50) NULL
@@ -110,22 +86,18 @@ CREATE TABLE "StringTest"
 	)
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 INSERT INTO "StringTest" ("StringValue1", "StringValue2", "KeyValue") VALUES ('Value1', 'Value2', 'HasValues')
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 INSERT INTO "StringTest" ("StringValue1", "StringValue2", "KeyValue") VALUES (null,     null,     'NullValues')
 
 
 -- Inheritance Parent/Child
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 DROP TABLE "InheritanceParent"
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 CREATE TABLE "InheritanceParent"
 (
 	"InheritanceParentId" NUMBER        NOT NULL PRIMARY KEY,
@@ -134,11 +106,9 @@ CREATE TABLE "InheritanceParent"
 )
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 DROP TABLE "InheritanceChild"
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 CREATE TABLE "InheritanceChild"
 (
 	"InheritanceChildId"  NUMBER        NOT NULL PRIMARY KEY,
@@ -148,13 +118,11 @@ CREATE TABLE "InheritanceChild"
 )
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 -- Person Table
 
 CREATE SEQUENCE "PersonSeq"
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 CREATE TABLE "Person"
 	( "PersonID"                     NUMBER NOT NULL PRIMARY KEY
 	, "FirstName"                    VARCHAR2(50) NOT NULL
@@ -166,7 +134,6 @@ CREATE TABLE "Person"
 	)
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 -- Insert Trigger for Person
 
 CREATE OR REPLACE TRIGGER "Person_Add"
@@ -183,7 +150,6 @@ FROM
 END;
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 -- Doctor Table Extension
 
 CREATE TABLE "Doctor"
@@ -195,7 +161,6 @@ CREATE TABLE "Doctor"
 	)
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 -- Patient Table Extension
 
 CREATE TABLE "Patient"
@@ -207,33 +172,26 @@ CREATE TABLE "Patient"
 )
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 -- Sample data for Person/Doctor/Patient
 
 INSERT INTO "Person"  ("FirstName", "LastName", "Gender") VALUES ('John',   'Pupkin',    'M')
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 INSERT INTO "Person"  ("FirstName", "LastName", "Gender") VALUES ('Tester', 'Testerson', 'M')
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 INSERT INTO "Person"  ("FirstName", "LastName", "Gender") VALUES ('Jane',   'Doe',       'F')
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 INSERT INTO "Person"  ("FirstName", "LastName", "MiddleName", "Gender") VALUES ('Jürgen', 'König', 'Ko', 'M')
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 INSERT INTO "Doctor"  ("PersonID",  "Taxonomy")  VALUES (1, 'Psychiatry')
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 INSERT INTO "Patient" ("PersonID",  "Diagnosis") VALUES (2, 'Hallucination with Paranoid Bugs'' Delirium of Persecution')
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 -- Person_Delete
 
 CREATE OR REPLACE
@@ -246,7 +204,6 @@ WHERE
 END;
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 -- Person_Insert
 
 CREATE OR REPLACE
@@ -269,7 +226,6 @@ INTO
 END;
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 CREATE OR REPLACE
 FUNCTION Person_Insert
 	( pFirstName  IN NVARCHAR2
@@ -302,7 +258,6 @@ RETURN
 END;
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 -- Person_SelectAll
 
 CREATE OR REPLACE
@@ -320,7 +275,6 @@ RETURN
 END;
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 -- Person_SelectAllByGender
 
 CREATE OR REPLACE
@@ -340,7 +294,6 @@ RETURN
 END;
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 -- Person_SelectByKey
 
 CREATE OR REPLACE
@@ -360,7 +313,6 @@ RETURN
 END;
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 -- Person_SelectByName
 
 CREATE OR REPLACE
@@ -383,7 +335,6 @@ RETURN
 END;
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 -- Person_SelectListByName
 
 CREATE OR REPLACE
@@ -406,7 +357,6 @@ RETURN
 END;
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 CREATE OR REPLACE
 PROCEDURE Person_Update
 	( pPersonID   IN NUMBER
@@ -428,7 +378,6 @@ WHERE
 END;
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 -- Patient_SelectAll
 
 CREATE OR REPLACE
@@ -448,7 +397,6 @@ RETURN
 END;
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 -- Patient_SelectByName
 
 CREATE OR REPLACE
@@ -472,13 +420,11 @@ RETURN
 END;
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 -- BinaryData Table
 
 CREATE SEQUENCE BinaryDataSeq
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 CREATE TABLE BinaryData
 	( BinaryDataID                 NUMBER NOT NULL PRIMARY KEY
 	, Stamp                        TIMESTAMP DEFAULT SYSDATE NOT NULL
@@ -486,7 +432,6 @@ CREATE TABLE BinaryData
 	)
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 -- Insert Trigger for Binarydata
 
 CREATE OR REPLACE TRIGGER BinaryData_Add
@@ -503,7 +448,6 @@ FROM
 END;
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 -- OutRefTest
 
 CREATE OR REPLACE
@@ -523,7 +467,6 @@ BEGIN
 END;
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 CREATE OR REPLACE
 PROCEDURE OutRefEnumTest
 	( pStr            IN     NVARCHAR2
@@ -536,7 +479,6 @@ BEGIN
 END;
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 -- ArrayTest
 
 CREATE OR REPLACE
@@ -563,7 +505,6 @@ END LOOP;
 END;
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 CREATE OR REPLACE
 PROCEDURE ScalarArray
 	( pOutputIntArray      OUT    DBMS_UTILITY.NUMBER_ARRAY
@@ -575,7 +516,6 @@ END LOOP;
 END;
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 -- ResultSetTest
 
 CREATE OR REPLACE
@@ -595,7 +535,6 @@ OPEN sr FOR
 END;
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 -- ExecuteScalarTest
 
 CREATE OR REPLACE
@@ -614,7 +553,6 @@ RETURN
 END;
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 CREATE OR REPLACE
 PROCEDURE Scalar_OutputParameter
 	( pOutputInt    OUT BINARY_INTEGER
@@ -626,7 +564,6 @@ BEGIN
 END;
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 CREATE OR REPLACE
 FUNCTION Scalar_ReturnParameter
 RETURN BINARY_INTEGER IS
@@ -636,13 +573,11 @@ RETURN
 END;
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 -- Data Types test
 
 CREATE SEQUENCE "DataTypeTestSeq"
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 CREATE TABLE "DataTypeTest"
 (
 	"DataTypeID"      INTEGER      NOT NULL PRIMARY KEY,
@@ -670,7 +605,6 @@ CREATE TABLE "DataTypeTest"
 )
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 -- Insert Trigger for DataTypeTest
 
 CREATE OR REPLACE TRIGGER "DataTypeTest_Add"
@@ -687,7 +621,6 @@ FROM
 END;
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 INSERT INTO "DataTypeTest"
 	("Binary_",      "Boolean_",    "Byte_",     "Bytes_",   "Char_", "DateTime_", "Decimal_",
 	 "Double_",         "Guid_",   "Int16_",     "Int32_",  "Int64_",    "Money_",   "SByte_",
@@ -698,7 +631,6 @@ VALUES
 		NULL,          NULL,     NULL,       NULL,    NULL,      NULL,     NULL)
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 INSERT INTO "DataTypeTest"
 	("Binary_",      "Boolean_",    "Byte_",     "Bytes_",   "Char_", "DateTime_", "Decimal_",
 	 "Double_",         "Guid_",   "Int16_",     "Int32_",  "Int64_",    "Money_",   "SByte_",
@@ -710,19 +642,15 @@ VALUES
 	XMLTYPE('<root><element strattr="strvalue" intattr="12345"/></root>'))
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 CREATE TABLE "Parent"      ("ParentID" int, "Value1" int)
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 CREATE TABLE "Child"       ("ParentID" int, "ChildID" int)
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 CREATE TABLE "GrandChild"  ("ParentID" int, "ChildID" int, "GrandChildID" int)
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 CREATE TABLE "LinqDataTypes"
 (
 	ID               int,
@@ -739,7 +667,6 @@ CREATE TABLE "LinqDataTypes"
 )
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 -- uppercased table for native bulk copy
 CREATE TABLE LinqDataTypesBC
 (
@@ -756,7 +683,6 @@ CREATE TABLE LinqDataTypesBC
 )
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 CREATE SEQUENCE SequenceTestSeq
 	MINVALUE 1
 	START WITH 1
@@ -764,7 +690,6 @@ CREATE SEQUENCE SequenceTestSeq
 	CACHE 10
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 -- names not escaped to test native bulk copy
 CREATE TABLE SequenceTest
 (
@@ -773,7 +698,6 @@ CREATE TABLE SequenceTest
 )
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 CREATE TABLE "STG_TRADE_INFORMATION"
 (
 	"STG_TRADE_ID"          NUMBER NOT NULL ENABLE,
@@ -786,7 +710,6 @@ CREATE TABLE "STG_TRADE_INFORMATION"
 )
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 create table "t_test_user"
 (
 	"user_id"  number primary key,
@@ -794,7 +717,6 @@ create table "t_test_user"
 )
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 create table "t_test_user_contract"
 (
 	"user_contract_id" number primary key,
@@ -805,29 +727,23 @@ create table "t_test_user_contract"
 )
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 create sequence "sq_test_user_contract"
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 DROP SEQUENCE "TestIdentitySeq"
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 DROP TABLE "TestIdentity"
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 CREATE TABLE "TestIdentity" (
 	"ID" NUMBER NOT NULL PRIMARY KEY
 )
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 CREATE SEQUENCE "TestIdentitySeq"
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 CREATE OR REPLACE TRIGGER "TestIdentity_Add"
 BEFORE INSERT
 ON "TestIdentity"
@@ -842,11 +758,9 @@ FROM
 END;
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 DROP TABLE "AllTypes"
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 CREATE TABLE "AllTypes"
 (
 	"ID"                         int                        NOT NULL PRIMARY KEY,
@@ -885,15 +799,12 @@ CREATE TABLE "AllTypes"
 )
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 DROP SEQUENCE "AllTypesSeq"
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 CREATE SEQUENCE "AllTypesSeq"
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 CREATE OR REPLACE TRIGGER "AllTypes_Add"
 BEFORE INSERT
 ON "AllTypes"
@@ -903,11 +814,9 @@ BEGIN
 END;
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 CREATE OR REPLACE DIRECTORY DATA_DIR AS 'C:\DataFiles'
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 INSERT INTO "AllTypes"
 (
 	"bigintDataType",
@@ -1008,7 +917,6 @@ SELECT
 FROM dual
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 create table "t_entity"
 (
 	"entity_id" integer primary key,
@@ -1017,11 +925,9 @@ create table "t_entity"
 )
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 DROP TABLE "LongRawTable"
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 CREATE TABLE "LongRawTable"
 (
 	"ID"                NUMBER        NOT NULL PRIMARY KEY,
@@ -1029,17 +935,14 @@ CREATE TABLE "LongRawTable"
 )
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 INSERT INTO "LongRawTable"
 SELECT 1, NULL                        FROM dual UNION ALL
 SELECT 2, to_blob('4c4f4e4720524157') FROM dual -- "LONG RAW"
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 DROP TABLE "DecimalOverflow"
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 CREATE TABLE "DecimalOverflow"
 (
 	"Decimal1" numeric(38,20),
@@ -1050,7 +953,6 @@ CREATE TABLE "DecimalOverflow"
 )
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 INSERT INTO "DecimalOverflow"
 SELECT  123456789012345.12345678901234567890,  1234567890123456789.91,  12.345678901234512345678901234567890,  1234567890123456789,  .12345678901234512345678901234567890 FROM dual UNION ALL
 SELECT -123456789012345.12345678901234567890, -1234567890123456789.91, -12.345678901234512345678901234567890, -1234567890123456789, -.12345678901234512345678901234567890 FROM dual UNION ALL
@@ -1065,15 +967,12 @@ SELECT -12345678901234.5678901234567,                            NULL,          
 -- merge test tables
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 DROP TABLE "TestMerge1"
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 DROP TABLE "TestMerge2"
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 CREATE TABLE "TestMerge1"
 (
 	"Id"		NUMBER	NOT NULL PRIMARY KEY,
@@ -1101,7 +1000,6 @@ CREATE TABLE "TestMerge1"
 )
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 CREATE TABLE "TestMerge2"
 (
 	"Id"		NUMBER	NOT NULL PRIMARY KEY,
@@ -1129,7 +1027,6 @@ CREATE TABLE "TestMerge2"
 )
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 CREATE OR REPLACE
 PROCEDURE AddIssue792Record IS
 BEGIN
@@ -1137,7 +1034,6 @@ BEGIN
 END;
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 CREATE OR REPLACE
 PROCEDURE AllOutputParameters
 (
@@ -1250,13 +1146,11 @@ BEGIN
 END;
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 CREATE OR REPLACE PACKAGE ISSUE2132 AS
 procedure test;
 END;
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 CREATE OR REPLACE PACKAGE BODY ISSUE2132 AS
 procedure test is
 	begin
@@ -1265,7 +1159,6 @@ procedure test is
 END;
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 CREATE OR REPLACE PROCEDURE TEST2132
 BEGIN
 	return 6;
@@ -1273,58 +1166,45 @@ END;
 -- schema test table, view and matview. doesn't have columns, as we test only object and it's atributes load
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 DROP VIEW "SchemaTestView"
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 DROP MATERIALIZED VIEW "SchemaTestMatView"
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 DROP TABLE "SchemaTestTable"
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 CREATE TABLE "SchemaTestTable"
 (
 	"Id"  NUMBER NOT NULL PRIMARY KEY
 )
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 CREATE VIEW "SchemaTestView" AS SELECT "Id" FROM "SchemaTestTable"
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 CREATE MATERIALIZED VIEW "SchemaTestMatView" AS SELECT "Id" FROM "SchemaTestTable"
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 COMMENT ON TABLE "SchemaTestTable" IS 'This is table'
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 COMMENT ON MATERIALIZED VIEW "SchemaTestMatView" IS 'This is matview'
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 COMMENT ON COLUMN "SchemaTestTable"."Id" IS 'This is column'
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 COMMENT ON COLUMN "SchemaTestView"."Id" IS 'This is view column'
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 COMMENT ON COLUMN "SchemaTestMatView"."Id" IS 'This is matview column'
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 DROP TABLE "CollatedTable"
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 CREATE TABLE "CollatedTable"
 (
 	"Id"				INT NOT NULL,
@@ -1333,19 +1213,15 @@ CREATE TABLE "CollatedTable"
 )
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 DROP TYPE tf_table
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 CREATE OR REPLACE TYPE tf_type IS OBJECT (O INT)
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 CREATE OR REPLACE TYPE tf_table IS TABLE OF tf_type
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 CREATE OR REPLACE PACKAGE TEST_PACKAGE1 AS
 	FUNCTION TEST_FUNCTION(i INT) RETURN INT;
 	FUNCTION TEST_TABLE_FUNCTION(i INT) RETURN tf_table PIPELINED;
@@ -1353,7 +1229,6 @@ CREATE OR REPLACE PACKAGE TEST_PACKAGE1 AS
 END TEST_PACKAGE1;
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 CREATE OR REPLACE PACKAGE BODY TEST_PACKAGE1 AS
 	FUNCTION TEST_FUNCTION(i INT)
 		RETURN INT IS
@@ -1375,7 +1250,6 @@ CREATE OR REPLACE PACKAGE BODY TEST_PACKAGE1 AS
 END TEST_PACKAGE1;
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 CREATE OR REPLACE PACKAGE TEST_PACKAGE2 AS
 	FUNCTION TEST_FUNCTION(i INT) RETURN INT;
 	FUNCTION TEST_TABLE_FUNCTION(i INT) RETURN tf_table PIPELINED;
@@ -1383,7 +1257,6 @@ CREATE OR REPLACE PACKAGE TEST_PACKAGE2 AS
 END TEST_PACKAGE2;
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 CREATE OR REPLACE PACKAGE BODY TEST_PACKAGE2 AS
 	FUNCTION TEST_FUNCTION(i INT)
 		RETURN INT IS
@@ -1405,7 +1278,6 @@ CREATE OR REPLACE PACKAGE BODY TEST_PACKAGE2 AS
 END TEST_PACKAGE2;
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 CREATE OR REPLACE FUNCTION TEST_FUNCTION(i INT)
 RETURN INT IS
 BEGIN
@@ -1413,7 +1285,6 @@ BEGIN
 END;
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 CREATE OR REPLACE FUNCTION TEST_TABLE_FUNCTION(i IN INT)
 RETURN tf_table PIPELINED IS
 BEGIN
@@ -1424,14 +1295,12 @@ BEGIN
 END;
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 CREATE OR REPLACE PROCEDURE TEST_PROCEDURE(i INT, o OUT int) AS
 BEGIN
 	o := i + 3;
 END;
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 INSERT ALL
 	INTO "LinqDataTypes" (ID, "MoneyValue", "DateTimeValue", "DateTimeValue2", "BoolValue", "GuidValue", "SmallIntValue", "IntValue", "BigIntValue", "StringValue") VALUES (1,1.11,TIMESTAMP '2001-01-11 01:11:21.100000',NULL,1,HEXTORAW('659112EFFE6FF94DBB6BBB16E413C883'),1,NULL,1,NULL)
 	INTO "LinqDataTypes" (ID, "MoneyValue", "DateTimeValue", "DateTimeValue2", "BoolValue", "GuidValue", "SmallIntValue", "IntValue", "BigIntValue", "StringValue") VALUES (2,2.49,TIMESTAMP '2005-05-15 05:15:25.500000',NULL,0,HEXTORAW('613A66BC407B8146AC38F9AAF55B706B'),2,NULL,2,'')
@@ -1448,7 +1317,6 @@ INSERT ALL
 SELECT * FROM dual
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 INSERT ALL
 	INTO "Parent" ("ParentID", "Value1") VALUES (1,1)
 	INTO "Parent" ("ParentID", "Value1") VALUES (2,NULL)
@@ -1460,7 +1328,6 @@ INSERT ALL
 SELECT * FROM dual
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 INSERT ALL
 	INTO "Child" ("ParentID", "ChildID") VALUES (1,11)
 	INTO "Child" ("ParentID", "ChildID") VALUES (2,21)
@@ -1482,7 +1349,6 @@ INSERT ALL
 SELECT * FROM dual
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 INSERT ALL
 	INTO "GrandChild" ("ParentID", "ChildID", "GrandChildID") VALUES (1,11,111)
 	INTO "GrandChild" ("ParentID", "ChildID", "GrandChildID") VALUES (2,21,211)
@@ -1509,7 +1375,6 @@ INSERT ALL
 SELECT * FROM dual
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 INSERT ALL
 	INTO "InheritanceParent" ("InheritanceParentId", "TypeDiscriminator", "Name") VALUES (1,NULL,NULL)
 	INTO "InheritanceParent" ("InheritanceParentId", "TypeDiscriminator", "Name") VALUES (2,1,NULL)
@@ -1517,7 +1382,6 @@ INSERT ALL
 SELECT * FROM dual
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 INSERT ALL
 	INTO "InheritanceChild" ("InheritanceChildId", "TypeDiscriminator", "InheritanceParentId", "Name") VALUES (1,NULL,1,NULL)
 	INTO "InheritanceChild" ("InheritanceChildId", "TypeDiscriminator", "InheritanceParentId", "Name") VALUES (2,1,2,NULL)
@@ -1525,14 +1389,11 @@ INSERT ALL
 SELECT * FROM dual
 
 -- Oracle.11.Managed Oracle11
-
 select dbms_lob.fileexists(bfilename('DATA_DIR', 'bfile.txt')) from dual
 
 -- Oracle.11.Managed Oracle11
-
 CREATE OR REPLACE DIRECTORY DATA_DIR AS '/home/oracle'
 
 -- Oracle.11.Managed Oracle11
-
 UPDATE "AllTypes" SET "bfileDataType" = bfilename('DATA_DIR', 'bfile.txt') WHERE "ID" = 2
 

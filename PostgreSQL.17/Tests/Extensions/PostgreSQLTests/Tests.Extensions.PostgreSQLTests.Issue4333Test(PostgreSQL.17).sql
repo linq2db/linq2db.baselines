@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 CREATE TEMPORARY TABLE "Issue4333Table"
 (
 	"Id"   SERIAL  NOT NULL,
@@ -9,8 +8,7 @@ CREATE TEMPORARY TABLE "Issue4333Table"
 )
 ON COMMIT PRESERVE ROWS
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 INSERT INTO "Issue4333Table"
 (
 	"Name"
@@ -19,7 +17,6 @@ VALUES
 ('Bar'),
 ('Baz')
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 DROP TABLE IF EXISTS "Issue4333Table"
 

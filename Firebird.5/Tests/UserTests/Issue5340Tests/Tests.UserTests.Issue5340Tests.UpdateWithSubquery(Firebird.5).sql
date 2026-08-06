@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 UPDATE
 	"OuterTable" "t1"
 SET
@@ -16,7 +15,6 @@ SET
 	)
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Field1",

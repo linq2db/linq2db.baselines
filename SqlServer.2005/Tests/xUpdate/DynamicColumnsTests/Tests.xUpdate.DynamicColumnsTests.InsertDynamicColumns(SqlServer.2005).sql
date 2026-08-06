@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 INSERT INTO [Person]
 (
 	[FirstName],
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- SqlServer.2005
-
 SELECT
 	COUNT(*)
 FROM

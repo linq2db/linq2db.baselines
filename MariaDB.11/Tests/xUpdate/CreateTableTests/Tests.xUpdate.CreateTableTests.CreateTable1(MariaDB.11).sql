@@ -1,9 +1,7 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DROP TABLE IF EXISTS `TestTable`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 CREATE TABLE `TestTable`
 (
 	`ID`        INT           AUTO_INCREMENT NOT NULL,
@@ -15,7 +13,6 @@ CREATE TABLE `TestTable`
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`ID`,
 	`t1`.`Field1`,
@@ -25,6 +22,5 @@ FROM
 	`TestTable` `t1`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DROP TABLE `TestTable`
 

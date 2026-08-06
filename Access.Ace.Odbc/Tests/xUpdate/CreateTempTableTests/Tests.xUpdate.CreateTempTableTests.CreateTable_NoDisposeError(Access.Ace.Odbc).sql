@@ -1,9 +1,7 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 DROP TABLE [TempTable]
 
 -- Access.Ace.Odbc AccessODBC
-
 CREATE TABLE [TempTable]
 (
 	[ID] Int NOT NULL,
@@ -12,10 +10,8 @@ CREATE TABLE [TempTable]
 )
 
 -- Access.Ace.Odbc AccessODBC
-
 DROP TABLE [TempTable]
 
 -- Access.Ace.Odbc AccessODBC
-
 DROP TABLE [TempTable]
 

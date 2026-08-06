@@ -33,7 +33,6 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	e.Id,
 	e.AOnly,

@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 DELETE  
 FROM
 	`Parent`
@@ -7,7 +6,6 @@ WHERE
 	`Parent`.`ParentID` >= 1000
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 INSERT INTO `Parent`
 (
 	`ParentID`,
@@ -18,7 +16,6 @@ VALUES
 (1001,NULL)
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 DELETE  
 FROM
 	`Parent`
@@ -27,7 +24,6 @@ WHERE
 	`Parent`.`ParentID` = 1001 AND `Parent`.`Value1` IS NULL
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 DELETE  
 FROM
 	`Parent`

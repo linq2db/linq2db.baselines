@@ -54,7 +54,6 @@ VALUES
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`p`.`Id`,
 	`p`.`TargetName`,
@@ -66,7 +65,6 @@ WHERE
 	`p`.`TargetName` = 'bda.Requests'
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`p`.`TargetName`,
 	`p`.`Id`,

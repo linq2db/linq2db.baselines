@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008
-
 DELETE [t1]
 FROM
 	[Person] [t1]
@@ -91,7 +90,6 @@ WHERE
 	[p].[FirstName] = @p AND [p].[LastName] = N'Shepard'
 
 -- SqlServer.2008
-
 DELETE [t1]
 FROM
 	[Person] [t1]

@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	DATABASE()
 FROM
@@ -7,11 +6,9 @@ FROM
 LIMIT 1
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 DROP TABLE IF EXISTS `Issue681Table2`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 CREATE TABLE `Issue681Table2`
 (
 	`ID`    INT NOT NULL,
@@ -21,6 +18,5 @@ CREATE TABLE `Issue681Table2`
 )
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 DROP TABLE `testdataconnector`.`Issue681Table2`
 

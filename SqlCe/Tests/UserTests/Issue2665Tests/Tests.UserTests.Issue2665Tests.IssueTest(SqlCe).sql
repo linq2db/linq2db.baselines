@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[pa].[Id]
 FROM

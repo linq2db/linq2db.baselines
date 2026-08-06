@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012.MS SqlServer.2012
-
 WITH [BooksCte] ([Book_Id], [Book_Title], [Author_Name])
 AS
 (

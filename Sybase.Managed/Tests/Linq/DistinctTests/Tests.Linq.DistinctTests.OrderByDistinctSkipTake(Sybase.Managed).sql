@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT TOP 3
 	[t2].[F2]
 FROM

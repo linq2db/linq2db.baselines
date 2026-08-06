@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.Value1,
 	t1.Value2
@@ -9,7 +8,6 @@ FROM
 	) t1
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.Value1,
 	t1.Value2
@@ -19,7 +17,6 @@ FROM
 	) t1
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.Value1,
 	t1.Value2
@@ -29,7 +26,6 @@ FROM
 	) t1
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.Value1,
 	t1.Value2
@@ -39,7 +35,6 @@ FROM
 	) t1
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.Value1,
 	t1.Value2

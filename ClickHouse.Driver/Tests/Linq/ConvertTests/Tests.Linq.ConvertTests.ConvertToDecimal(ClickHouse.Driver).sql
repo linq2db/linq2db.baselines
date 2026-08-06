@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	toDecimal128(p.MoneyValue, 10)
 FROM

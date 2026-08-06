@@ -32,7 +32,6 @@ ORDER BY
 	t3."ParentID" DESC
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."ParentID",
 	t1."Value1"

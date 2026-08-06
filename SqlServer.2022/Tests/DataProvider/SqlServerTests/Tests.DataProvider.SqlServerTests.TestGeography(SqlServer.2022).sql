@@ -1,9 +1,7 @@
 ﻿-- SqlServer.2022
-
 SELECT Cast(geography::STGeomFromText('LINESTRING(-122.360 47.656, -122.343 47.656)', 4326) as geography)
 
 -- SqlServer.2022
-
 SELECT Cast(NULL as geography)
 
 -- SqlServer.2022

@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`m_1`.`ParentID`,
 	`d`.`ChildID`
@@ -15,7 +14,6 @@ ORDER BY
 	`m_1`.`ParentID`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`p`.`ParentID`
 FROM

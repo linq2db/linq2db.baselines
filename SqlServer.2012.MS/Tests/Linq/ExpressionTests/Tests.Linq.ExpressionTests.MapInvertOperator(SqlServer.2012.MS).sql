@@ -10,7 +10,6 @@ SET
 	[Value] = [WarehouseTableDto].[Value] | @addMask & ~@removeMask
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT TOP (2)
 	[t1].[Id],
 	[t1].[Value]

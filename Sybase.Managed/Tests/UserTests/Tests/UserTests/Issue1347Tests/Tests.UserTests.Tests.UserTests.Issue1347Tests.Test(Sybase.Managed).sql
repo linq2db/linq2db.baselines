@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[tp12].[Id],
 	[tp12].[ResourceID],

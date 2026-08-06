@@ -50,7 +50,6 @@ VALUES
 )
 
 -- SqlServer.2025
-
 SELECT
 	[after_1].[Id],
 	[after_1].[Name],

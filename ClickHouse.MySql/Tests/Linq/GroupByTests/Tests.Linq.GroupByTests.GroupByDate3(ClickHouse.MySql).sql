@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	SUM(grp_1.MoneyValue),
 	toYear(grp_1.c1),
@@ -16,7 +15,6 @@ GROUP BY
 	grp_1.c1
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	SUM(grp_1.MoneyValue),
 	toYear(grp_1.c1),

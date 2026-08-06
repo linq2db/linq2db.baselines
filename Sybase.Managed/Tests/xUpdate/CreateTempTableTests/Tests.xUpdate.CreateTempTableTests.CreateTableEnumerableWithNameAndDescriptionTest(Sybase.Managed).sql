@@ -1,10 +1,8 @@
 ﻿-- Sybase.Managed Sybase
-
 IF (OBJECT_ID(N'TempTable') IS NOT NULL)
 	DROP TABLE [TempTable]
 
 -- Sybase.Managed Sybase
-
 IF (OBJECT_ID(N'TempTable') IS NULL)
 	EXECUTE('
 		CREATE TABLE [TempTable]
@@ -16,7 +14,6 @@ IF (OBJECT_ID(N'TempTable') IS NULL)
 	')
 
 -- Sybase.Managed Sybase
-
 INSERT INTO [TempTable]
 (
 	[Name]
@@ -24,7 +21,6 @@ INSERT INTO [TempTable]
 SELECT 'John'
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t].[Name]
 FROM
@@ -32,7 +28,6 @@ FROM
 		INNER JOIN [TempTable] [t] ON [p].[FirstName] = [t].[Name]
 
 -- Sybase.Managed Sybase
-
 IF (OBJECT_ID(N'TempTable') IS NOT NULL)
 	DROP TABLE [TempTable]
 

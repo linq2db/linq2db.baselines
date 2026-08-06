@@ -1,12 +1,11 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.TestId
 FROM
 	(
 		SELECT
-			ROW_NUMBER() OVER (PARTITION BY e.TestId ORDER BY e.Id) as RowNumber,
+			toInt64(ROW_NUMBER() OVER (PARTITION BY e.TestId ORDER BY e.Id)) as RowNumber,
 			e.TestId as TestId,
 			e.Id as Id
 		FROM
@@ -21,7 +20,6 @@ ORDER BY
 	t1.Id
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.TestId

@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 SELECT
 	IIF([t].[Value2] IS NULL, '', [t].[Value2])
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	[t].[Id]
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	IIF([t].[Value3] IS NULL, '', [t].[Value3])
 FROM
@@ -17,18 +15,16 @@ ORDER BY
 	[t].[Id]
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
-	Mid(IIF((' -> ' + [t].[Value3]) IS NULL, '', ' -> ' + [t].[Value3]) + IIF((' -> ' + [t].[Value1]) IS NULL, '', ' -> ' + [t].[Value1]) + IIF((' -> ' + [t].[Value2]) IS NULL, '', ' -> ' + [t].[Value2]), 5)
+	Mid(IIF([t].[Value3] IS NULL, '', ' -> ' + [t].[Value3]) + IIF([t].[Value1] IS NULL, '', ' -> ' + [t].[Value1]) + IIF([t].[Value2] IS NULL, '', ' -> ' + [t].[Value2]), 5)
 FROM
 	[SampleClass] [t]
 ORDER BY
 	[t].[Id]
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
-	Mid(IIF((' -> ' + [t].[Value3]) IS NULL, '', ' -> ' + [t].[Value3]) + IIF((' -> ' + [t].[Value3]) IS NULL, '', ' -> ' + [t].[Value3]), 5)
+	Mid(IIF([t].[Value3] IS NULL, '', ' -> ' + [t].[Value3]) + IIF([t].[Value3] IS NULL, '', ' -> ' + [t].[Value3]), 5)
 FROM
 	[SampleClass] [t]
 ORDER BY

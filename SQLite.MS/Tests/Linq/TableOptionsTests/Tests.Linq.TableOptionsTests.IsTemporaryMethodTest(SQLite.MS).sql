@@ -1,9 +1,7 @@
 ﻿-- SQLite.MS SQLite
-
 DROP TABLE IF EXISTS temp.[TestTable]
 
 -- SQLite.MS SQLite
-
 CREATE TEMPORARY TABLE temp.[TestTable]
 (
 	[Id]    INTEGER NOT NULL,
@@ -13,7 +11,6 @@ CREATE TEMPORARY TABLE temp.[TestTable]
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value],
@@ -25,6 +22,5 @@ FROM
 	temp.[TestTable] [t1]
 
 -- SQLite.MS SQLite
-
 DROP TABLE IF EXISTS temp.[TestTable]
 

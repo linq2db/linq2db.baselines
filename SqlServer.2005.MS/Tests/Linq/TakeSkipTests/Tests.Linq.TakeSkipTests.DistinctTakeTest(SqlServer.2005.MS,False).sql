@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
-
 SELECT TOP (3)
 	[t1].[Value_1]
 FROM

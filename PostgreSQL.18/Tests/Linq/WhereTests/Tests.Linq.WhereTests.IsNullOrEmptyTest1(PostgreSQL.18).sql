@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
-
+﻿-- PostgreSQL.18 PostgreSQL12
 SELECT
 	nm."MiddleName"
 FROM
@@ -7,8 +6,7 @@ FROM
 WHERE
 	NOT (nm."MiddleName" IS NULL OR Length(nm."MiddleName") = 0)
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	t1."FirstName",
 	t1."PersonID",

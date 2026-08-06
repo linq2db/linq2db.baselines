@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT /* qb */
 	t.PersonID,
 	t.Diagnosis

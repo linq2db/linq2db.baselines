@@ -1,21 +1,18 @@
-﻿-- PostgreSQL.13 PostgreSQL
-
+﻿-- PostgreSQL.13 PostgreSQL12
 SELECT
 	x."Id",
 	x."Name"
 FROM
 	"Car" x
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Name"
 FROM
 	"Car" t1
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	x."Id",
 	x."Name"
@@ -24,16 +21,14 @@ FROM
 WHERE
 	x."Name" <> 'Special' OR x."Name" IS NULL
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Name"
 FROM
 	"Car" t1
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	x."Id",
 	x."Name"
@@ -42,32 +37,28 @@ FROM
 WHERE
 	x."Name" = 'Special'
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Name"
 FROM
 	"Car" t1
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	x."Id",
 	x."Name"
 FROM
 	"Car" x
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Name"
 FROM
 	"Car" t1
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	x."Id",
 	x."Name"
@@ -76,16 +67,14 @@ FROM
 WHERE
 	x."Name" <> 'Special' OR x."Name" IS NULL
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Name"
 FROM
 	"Car" t1
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	x."Id",
 	x."Name"
@@ -94,8 +83,7 @@ FROM
 WHERE
 	x."Name" = 'Special'
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Name"

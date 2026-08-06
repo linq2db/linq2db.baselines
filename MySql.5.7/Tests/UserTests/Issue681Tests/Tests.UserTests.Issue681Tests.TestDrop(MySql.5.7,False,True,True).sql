@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	DATABASE()
 FROM
@@ -7,11 +6,9 @@ FROM
 LIMIT 1
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 DROP TABLE IF EXISTS `Issue681Table2`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 CREATE TABLE `Issue681Table2`
 (
 	`ID`    INT NOT NULL,
@@ -21,6 +18,5 @@ CREATE TABLE `Issue681Table2`
 )
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 DROP TABLE `testdata`.`Issue681Table2`
 

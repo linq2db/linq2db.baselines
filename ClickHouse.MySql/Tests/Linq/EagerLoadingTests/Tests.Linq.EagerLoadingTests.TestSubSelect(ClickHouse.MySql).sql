@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	m_2.Id1,
 	d.DetailId,
@@ -22,7 +21,6 @@ FROM
 		INNER JOIN DetailClass d ON m_2.Id1 = d.MasterId
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT DISTINCT
 	e.Id1,
 	e.Id2,

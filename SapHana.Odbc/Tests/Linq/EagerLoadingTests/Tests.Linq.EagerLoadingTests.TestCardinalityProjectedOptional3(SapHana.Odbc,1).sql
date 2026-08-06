@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"e"."Id",
 	"a_ObjectBOptional"."Id",

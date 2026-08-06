@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 WITH [CustomName] ([ParentID])
 AS
 (

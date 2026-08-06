@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained.MS SqlServer.2019
-
 DELETE [c_1]
 FROM
 	[Child] [c_1]
@@ -44,7 +43,6 @@ FROM
 	[TInserted] [c_1]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[c_1].[ParentID],
 	[c_1].[ChildID]
@@ -54,7 +52,6 @@ WHERE
 	[c_1].[ChildID] > 1000
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 DELETE [c_1]
 FROM
 	[Child] [c_1]

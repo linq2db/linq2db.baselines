@@ -4,7 +4,7 @@ SET     @group = 7
 
 SELECT
 	[p].[Id],
-	LEAD([p].[Id], 1, -1) OVER(ORDER BY [p].[Order])
+	LEAD([p].[Id], 1, -1) OVER (ORDER BY [p].[Order])
 FROM
 	[Position] [p]
 WHERE

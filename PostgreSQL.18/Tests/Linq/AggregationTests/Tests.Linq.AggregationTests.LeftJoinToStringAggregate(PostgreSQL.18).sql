@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
-
+﻿-- PostgreSQL.18 PostgreSQL12
 SELECT
 	u."Id",
 	u."Name",
@@ -19,16 +18,14 @@ FROM
 				g_1."UserId"
 		) aq ON aq."Key_1" = u."Id"
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Name"
 FROM
 	"User" t1
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	t1."UserId",
 	t1."MachineId",

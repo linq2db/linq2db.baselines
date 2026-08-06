@@ -14,7 +14,6 @@ WHERE
 	r."Column" = @Column AND r.ColumnNullable = @ColumnNullable
 
 -- Informix.DB2 Informix
-
 SELECT
 	r.Id,
 	r."Column",
@@ -25,7 +24,6 @@ WHERE
 	r."Column" = 2 AND r.ColumnNullable = 3
 
 -- Informix.DB2 Informix
-
 DELETE FROM
 	IntEnumTable
 
@@ -72,7 +70,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1."Column",
@@ -83,7 +80,6 @@ ORDER BY
 	t1.Id
 
 -- Informix.DB2 Informix
-
 DELETE FROM
 	IntEnumTable
 
@@ -130,7 +126,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1."Column",
@@ -141,14 +136,12 @@ ORDER BY
 	t1.Id
 
 -- Informix.DB2 Informix
-
 DELETE FROM
 	IntEnumTable
 
 INSERT BULK IntEnumTable
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1."Column",

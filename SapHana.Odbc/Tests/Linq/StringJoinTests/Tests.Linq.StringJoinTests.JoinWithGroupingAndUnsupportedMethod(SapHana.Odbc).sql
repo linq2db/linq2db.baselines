@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t5"."Key_1",
 	Coalesce("t2"."Nullable_1", ''),
@@ -47,7 +46,6 @@ ORDER BY
 	"t5"."Key_1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."PK",
 	"t1"."Id",

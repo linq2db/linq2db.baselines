@@ -12,11 +12,9 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT @@IDENTITY
 
 -- SqlCe
-
 SELECT
 	[t1].[Id]
 FROM

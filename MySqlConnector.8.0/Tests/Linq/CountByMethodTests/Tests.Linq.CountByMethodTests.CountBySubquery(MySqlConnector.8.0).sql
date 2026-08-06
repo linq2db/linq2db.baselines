@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t`.`TestId`,
 	`t1`.`count_1`
@@ -16,7 +15,6 @@ FROM
 		) `t1` ON `t1`.`Key_1` = `t`.`TestId`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`TestId`

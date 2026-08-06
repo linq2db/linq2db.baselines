@@ -1,11 +1,9 @@
 ﻿-- SqlServer.2012.MS SqlServer.2012
-
 DELETE [t1]
 FROM
 	[AllTypes2] [t1]
 
 -- SqlServer.2012.MS SqlServer.2012
-
 MERGE INTO [AllTypes2] [Target]
 USING (VALUES
 	(1,DATETIMEOFFSETFROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 0, 40, 7),DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7)),
@@ -32,7 +30,6 @@ VALUES
 ;
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[t1].[ID],
 	[t1].[datetimeoffsetDataType],

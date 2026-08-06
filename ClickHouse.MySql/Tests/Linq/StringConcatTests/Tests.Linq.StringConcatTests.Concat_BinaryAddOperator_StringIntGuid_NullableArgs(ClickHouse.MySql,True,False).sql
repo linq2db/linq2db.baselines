@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	concat(Coalesce(t.Value1, ''), toString(t.Value2), lowerUTF8(toString(t.Value3)))
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	t.ID
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.ID,
 	t1.Value1,

@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 MERGE INTO "UnusedSourceTable" Target
 USING (
 	SELECT 1 FROM sys.dual) "Source"
@@ -18,7 +17,6 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	r."Id",
 	r."Value"

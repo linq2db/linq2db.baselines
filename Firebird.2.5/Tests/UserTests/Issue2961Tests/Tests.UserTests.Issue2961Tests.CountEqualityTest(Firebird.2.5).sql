@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	"c_1"."Id",
 	"c_1"."LocationId",

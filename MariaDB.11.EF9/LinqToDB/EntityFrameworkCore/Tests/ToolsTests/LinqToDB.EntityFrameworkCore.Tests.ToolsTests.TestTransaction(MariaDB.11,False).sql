@@ -7,7 +7,6 @@ WHERE ((@__ef_filter__p_0 OR NOT (`p`.`IsDeleted`)) OR NOT (`p`.`IsDeleted`)) AN
 
 
 -- MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	MAX(`e`.`QuantityPerUnit`)
 FROM
@@ -18,7 +17,6 @@ WHERE
 
 
 -- MariaDB.10.MySqlConnector MariaDB
-
 DELETE  
 FROM
 	`Products`

@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	m_1.Id1,
 	d_1.DetailId,
@@ -16,7 +15,6 @@ FROM
 		INNER JOIN DetailClass d_1 ON m_1.Id1 = d_1.MasterId
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	m_1.Id1,
 	m_1.Id2,

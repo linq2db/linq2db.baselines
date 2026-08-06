@@ -1,5 +1,4 @@
 ﻿-- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT /*+ LEADING(c_1 p) */
 	p."ParentID",
 	p."Value1"

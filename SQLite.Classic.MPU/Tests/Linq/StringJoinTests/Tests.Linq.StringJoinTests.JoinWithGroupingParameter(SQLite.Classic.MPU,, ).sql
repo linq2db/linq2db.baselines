@@ -14,7 +14,6 @@ ORDER BY
 	[g_1].[Id]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[PK],
 	[t1].[Id],

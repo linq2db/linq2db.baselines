@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 WITH "cte"
 (
 	"FirstName",
@@ -29,7 +28,6 @@ FROM
 	"cte" "t1"
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"x"."FirstName",
 	"x"."PersonID",

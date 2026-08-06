@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012
-
 INSERT INTO [SomeTable]
 (
 	[Id],
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- SqlServer.2012
-
 SELECT TOP (2)
 	[t1].[Id],
 	[t1].[ClassProp],

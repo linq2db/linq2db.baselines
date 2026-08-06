@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL12
 DECLARE @take Integer -- Int32
 SET     @take = 10
 DECLARE @skip Integer -- Int32
@@ -54,8 +54,7 @@ ORDER BY
 	x."CarNo"
 LIMIT :take OFFSET :skip 
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM

@@ -1,9 +1,7 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 DROP TABLE [DropTableTestID]
 
 -- Access.Jet.Odbc AccessODBC
-
 CREATE TABLE [DropTableTestID]
 (
 	[ID]  Int  NOT NULL IDENTITY,
@@ -13,7 +11,6 @@ CREATE TABLE [DropTableTestID]
 )
 
 -- Access.Jet.Odbc AccessODBC
-
 INSERT INTO [DropTableTestID]
 (
 	[ID1]
@@ -24,7 +21,6 @@ VALUES
 )
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[t].[ID],
 	[t].[ID1]
@@ -32,11 +28,9 @@ FROM
 	[DropTableTestID] [t]
 
 -- Access.Jet.Odbc AccessODBC
-
 DROP TABLE [DropTableTestID]
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[t1].[ID],
 	[t1].[ID1]

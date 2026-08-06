@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 INSERT INTO "Parent"
 (
 	"ParentID"
@@ -10,7 +9,6 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 INSERT INTO "Child"
 (
 	"ParentID",
@@ -23,7 +21,6 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 INSERT INTO "Child"
 (
 	"ParentID",
@@ -36,7 +33,6 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 DELETE FROM
 	"Child" t1
 WHERE
@@ -52,14 +48,12 @@ WHERE
 	)
 
 -- Oracle.11.Managed Oracle11
-
 DELETE FROM
 	"Child" c_1
 WHERE
 	c_1."ParentID" >= 1000
 
 -- Oracle.11.Managed Oracle11
-
 DELETE FROM
 	"Parent" c_1
 WHERE

@@ -1,9 +1,7 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
-
 DROP TABLE IF EXISTS [FluentTemp_InsertOrUpdate]
 
 -- SqlServer.2017.MS SqlServer.2017
-
 IF (OBJECT_ID(N'[FluentTemp_InsertOrUpdate]', N'U') IS NULL)
 	CREATE TABLE [FluentTemp_InsertOrUpdate]
 	(
@@ -31,7 +29,6 @@ VALUES
 )
 
 -- SqlServer.2017.MS SqlServer.2017
-
 MERGE INTO [FluentTemp_InsertOrUpdate] [t1]
 USING (SELECT 1 AS [ID]) [s] ON
 (
@@ -55,6 +52,5 @@ WHEN NOT MATCHED THEN
 	);
 
 -- SqlServer.2017.MS SqlServer.2017
-
 DROP TABLE IF EXISTS [FluentTemp_InsertOrUpdate]
 

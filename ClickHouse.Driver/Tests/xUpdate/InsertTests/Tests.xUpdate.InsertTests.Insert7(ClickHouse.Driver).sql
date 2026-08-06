@@ -1,12 +1,10 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 ALTER TABLE
 	Child
 DELETE WHERE
 	ChildID > 1000
 
 -- ClickHouse.Driver ClickHouse
-
 INSERT INTO Child
 (
 	ChildID,
@@ -19,7 +17,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	COUNT(*)
 FROM
@@ -28,7 +25,6 @@ WHERE
 	c_1.ChildID = 1001
 
 -- ClickHouse.Driver ClickHouse
-
 ALTER TABLE
 	Child
 DELETE WHERE

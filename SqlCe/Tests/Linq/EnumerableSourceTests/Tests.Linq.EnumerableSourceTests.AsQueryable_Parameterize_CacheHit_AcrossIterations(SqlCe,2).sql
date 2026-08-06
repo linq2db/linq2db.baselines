@@ -14,7 +14,7 @@ SET     @Data_2 = 'Data 22'
 
 SELECT
 	[t1].[Id],
-	[t1].[Data] as [Data_1]
+	[t1].[Data]
 FROM
 	(
 		SELECT @Id AS [Id], @Data AS [Data]

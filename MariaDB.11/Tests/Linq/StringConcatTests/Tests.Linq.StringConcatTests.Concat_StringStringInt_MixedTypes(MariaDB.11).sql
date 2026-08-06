@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`e`.`StrReq`
 FROM
@@ -8,7 +7,6 @@ WHERE
 	(CONCAT(Coalesce(`e`.`StrReq`, ''), ' 1')) = 'Programmer 1'
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Str1`,

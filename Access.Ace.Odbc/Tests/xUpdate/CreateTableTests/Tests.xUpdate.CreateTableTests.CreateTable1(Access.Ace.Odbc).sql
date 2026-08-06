@@ -1,9 +1,7 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 DROP TABLE [TestTable]
 
 -- Access.Ace.Odbc AccessODBC
-
 CREATE TABLE [TestTable]
 (
 	[ID]        Int            NOT NULL IDENTITY,
@@ -15,7 +13,6 @@ CREATE TABLE [TestTable]
 )
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[ID],
 	[t1].[Field1],
@@ -25,6 +22,5 @@ FROM
 	[TestTable] [t1]
 
 -- Access.Ace.Odbc AccessODBC
-
 DROP TABLE [TestTable]
 

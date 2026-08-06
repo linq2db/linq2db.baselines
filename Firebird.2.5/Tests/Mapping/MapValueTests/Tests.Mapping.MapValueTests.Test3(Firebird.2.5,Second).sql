@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT FIRST 1
 	CASE
 		WHEN "t"."EnumValue" = 'S' THEN 'Second'

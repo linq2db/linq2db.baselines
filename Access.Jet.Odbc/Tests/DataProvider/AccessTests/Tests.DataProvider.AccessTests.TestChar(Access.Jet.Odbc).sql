@@ -1,9 +1,7 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 SELECT CStr('1')
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT CStr('1')
 
 -- Access.Jet.Odbc AccessODBC

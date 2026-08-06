@@ -1,5 +1,4 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"Person" t1
 WHERE
@@ -40,7 +39,7 @@ SET     @p = 'John0'
 
 SELECT
 	p."FirstName",
-	p."PersonID" as ID,
+	p."PersonID",
 	p."LastName",
 	p."MiddleName",
 	p."Gender"
@@ -85,7 +84,7 @@ SET     @p = 'John1'
 
 SELECT
 	p."FirstName",
-	p."PersonID" as ID,
+	p."PersonID",
 	p."LastName",
 	p."MiddleName",
 	p."Gender"
@@ -96,7 +95,6 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"Person" t1
 WHERE

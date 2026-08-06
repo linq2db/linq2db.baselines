@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 INSERT INTO DefaultValuesTable
 (
 	Id,
@@ -42,7 +41,6 @@ VALUES
 )
 
 -- ClickHouse.MySql ClickHouse
-
 INSERT INTO DefaultValuesTable
 (
 	Id,
@@ -85,7 +83,6 @@ VALUES
 )
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.Id,
 	t1.IntClassRequired,

@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	d.DisTypeID
 FROM

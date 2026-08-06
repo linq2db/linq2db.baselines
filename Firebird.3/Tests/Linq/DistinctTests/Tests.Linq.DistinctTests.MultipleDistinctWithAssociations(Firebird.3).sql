@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT DISTINCT
 	"p"."ParentID",
 	"p"."Value1"
@@ -24,7 +23,6 @@ ORDER BY
 	"p"."ParentID"
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t1"."ParentID",
 	"t1"."Value1"
@@ -32,7 +30,6 @@ FROM
 	"Parent" "t1"
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t1"."ParentID",
 	"t1"."ChildID",

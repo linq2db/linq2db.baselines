@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[grandChild_1].[ParentID],
 	[grandChild_1].[ChildID],

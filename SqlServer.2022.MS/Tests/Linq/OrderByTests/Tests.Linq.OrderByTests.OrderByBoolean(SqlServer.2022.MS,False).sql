@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],
@@ -12,7 +11,6 @@ ORDER BY
 	IIF(LEN([t1].[FirstName] + N'.') > 5, 1, 0)
 
 -- SqlServer.2022.MS SqlServer.2022
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

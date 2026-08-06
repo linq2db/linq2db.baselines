@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`a_MiddleGeneric`.`ParentID`,
 	`a_Bottom`.`ParentID`,

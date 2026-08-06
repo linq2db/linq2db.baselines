@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.15 PostgreSQL12
 UPDATE
 	"Ints"
 SET
@@ -9,8 +8,7 @@ SET
 WHERE
 	"Ints"."One" = 10
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."One",

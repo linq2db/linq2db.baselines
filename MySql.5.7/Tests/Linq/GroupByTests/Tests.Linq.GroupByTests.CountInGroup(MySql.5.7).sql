@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`t`.`GroupId`,
 	COUNT(*),
@@ -38,7 +37,6 @@ GROUP BY
 	`t`.`GroupId`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`GroupId`,

@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[ess].[ID]
 FROM
@@ -15,7 +14,6 @@ WHERE
 	)
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[ess].[ID]
 FROM

@@ -12,7 +12,6 @@ VALUES
 )
 
 -- SqlServer.2017
-
 INSERT INTO [TableWithIdentity]
 (
 	[Value]
@@ -23,7 +22,6 @@ FROM
 	[TableWithIdentitySrc] [t1]
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]

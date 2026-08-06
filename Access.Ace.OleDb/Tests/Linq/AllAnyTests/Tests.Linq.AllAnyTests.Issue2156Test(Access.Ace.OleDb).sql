@@ -1,26 +1,25 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT DISTINCT
 	[i].[FirstName],
 	[i].[PersonID],
 	[i].[LastName],
 	[i].[MiddleName],
 	[i].[Gender],
-	[u].[FirstName],
-	[u].[PersonID],
-	[u].[LastName],
-	[u].[MiddleName],
-	[u].[Gender],
-	[u].[FirstName],
-	[u].[PersonID],
-	[u].[LastName],
-	[u].[MiddleName],
-	[u].[Gender],
-	[u].[FirstName],
-	[u].[PersonID],
-	[u].[LastName],
-	[u].[MiddleName],
-	[u].[Gender],
+	[u].[FirstName] as [FirstName_1],
+	[u].[PersonID] as [ID_1],
+	[u].[LastName] as [LastName_1],
+	[u].[MiddleName] as [MiddleName_1],
+	[u].[Gender] as [Gender_1],
+	[u].[FirstName] as [FirstName_2],
+	[u].[PersonID] as [ID_2],
+	[u].[LastName] as [LastName_2],
+	[u].[MiddleName] as [MiddleName_2],
+	[u].[Gender] as [Gender_2],
+	[u].[FirstName] as [FirstName_3],
+	[u].[PersonID] as [ID_3],
+	[u].[LastName] as [LastName_3],
+	[u].[MiddleName] as [MiddleName_3],
+	[u].[Gender] as [Gender_3],
 	(
 		SELECT TOP 1
 			[e].[FirstName]
@@ -28,7 +27,7 @@ SELECT DISTINCT
 			[Person] [e]
 		WHERE
 			[u].[PersonID] = [e].[PersonID]
-	),
+	) as [FirstName_4],
 	(
 		SELECT TOP 1
 			[e_1].[PersonID]
@@ -36,7 +35,7 @@ SELECT DISTINCT
 			[Person] [e_1]
 		WHERE
 			[u].[PersonID] = [e_1].[PersonID]
-	),
+	) as [ID],
 	(
 		SELECT TOP 1
 			[e_2].[LastName]
@@ -44,7 +43,7 @@ SELECT DISTINCT
 			[Person] [e_2]
 		WHERE
 			[u].[PersonID] = [e_2].[PersonID]
-	),
+	) as [LastName_4],
 	(
 		SELECT TOP 1
 			[e_3].[MiddleName]
@@ -52,7 +51,7 @@ SELECT DISTINCT
 			[Person] [e_3]
 		WHERE
 			[u].[PersonID] = [e_3].[PersonID]
-	),
+	) as [MiddleName_4],
 	(
 		SELECT TOP 1
 			[e_4].[Gender]
@@ -60,7 +59,7 @@ SELECT DISTINCT
 			[Person] [e_4]
 		WHERE
 			[u].[PersonID] = [e_4].[PersonID]
-	),
+	) as [Gender_4],
 	EXISTS(
 		SELECT
 			*
@@ -68,7 +67,7 @@ SELECT DISTINCT
 			[Person] [tg]
 		WHERE
 			[t].[PersonID] = [tg].[PersonID] AND [tg].[FirstName] = 'John'
-	)
+	) as [IsHoliday]
 FROM
 	(([Person] [i]
 		LEFT JOIN [Patient] [a_Patient] ON ([i].[PersonID] = [a_Patient].[PersonID]))

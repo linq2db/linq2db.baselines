@@ -61,7 +61,6 @@ WHERE
 	[ParameterDeduplication].[Id] = @id
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Int1],

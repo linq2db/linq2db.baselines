@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	CASE
 		WHEN 1 IN (
@@ -10,5 +9,5 @@ SELECT
 		)
 			THEN 1
 		ELSE 0
-	END as [c1]
+	END
 

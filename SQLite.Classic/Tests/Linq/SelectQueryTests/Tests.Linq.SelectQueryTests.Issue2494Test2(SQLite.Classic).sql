@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT
 	EXISTS(
 		SELECT
@@ -22,7 +21,6 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-
 SELECT
 	EXISTS(
 		SELECT

@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	p.ParentID,
 	p.Value1,
@@ -10,7 +9,6 @@ FROM
 		INNER JOIN Child c_1 ON p.ParentID = c_1.ChildID
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	p.ParentID,
 	p.Value1,

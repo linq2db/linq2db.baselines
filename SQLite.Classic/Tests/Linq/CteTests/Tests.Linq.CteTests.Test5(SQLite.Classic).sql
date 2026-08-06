@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 WITH [CTE_1] ([ParentID])
 AS
 (
@@ -24,7 +23,6 @@ FROM
 		INNER JOIN [CTE_1] [c2] ON [p].[ParentID] = [c2].[ParentID]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	COUNT(*)
 FROM

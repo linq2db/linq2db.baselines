@@ -1,13 +1,10 @@
 ﻿-- SqlServer.2012.MS SqlServer.2012
-
 select @@version
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT compatibility_level FROM sys.databases WHERE name = db_name()
 
 -- SqlServer.2012.MS SqlServer.2012
-
 
 SELECT
 	TABLE_CATALOG COLLATE DATABASE_DEFAULT + '.' + TABLE_SCHEMA + '.' + TABLE_NAME as TableID,
@@ -45,7 +42,6 @@ WHERE
 			) IS NULL
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	k.TABLE_CATALOG COLLATE DATABASE_DEFAULT + '.' + k.TABLE_SCHEMA + '.' + k.TABLE_NAME as TableID,
 	k.CONSTRAINT_NAME                                                                    as PrimaryKeyName,
@@ -63,7 +59,6 @@ WHERE
 		c.CONSTRAINT_TYPE='PRIMARY KEY'
 
 -- SqlServer.2012.MS SqlServer.2012
-
 
 SELECT
 	TABLE_CATALOG COLLATE DATABASE_DEFAULT + '.' + TABLE_SCHEMA + '.' + TABLE_NAME                      as TableID,
@@ -93,7 +88,6 @@ FROM
 		x.name = 'MS_Description' AND x.class = 1
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	fk.name                                                     as Name,
 	DB_NAME() + '.' + SCHEMA_NAME(po.schema_id) + '.' + po.name as ThisTableID,
@@ -112,7 +106,6 @@ ORDER BY
 	Ordinal
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	SPECIFIC_CATALOG COLLATE DATABASE_DEFAULT + '.' + SPECIFIC_SCHEMA + '.' + SPECIFIC_NAME as ProcedureID,
 	SPECIFIC_CATALOG                                                                        as CatalogName,
@@ -132,7 +125,6 @@ FROM
 ORDER BY SPECIFIC_CATALOG, SPECIFIC_SCHEMA, SPECIFIC_NAME
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	SPECIFIC_CATALOG COLLATE DATABASE_DEFAULT + '.' + SPECIFIC_SCHEMA + '.' + SPECIFIC_NAME as ProcedureID,
 	ORDINAL_POSITION                                                                        as Ordinal,
@@ -190,7 +182,6 @@ SET     @params = N'@input int, @output int'
 sp_describe_first_result_set
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT * FROM [TestDataMS].[dbo].[GetParentByID](NULL)
 
 -- SqlServer.2012.MS SqlServer.2012
@@ -202,7 +193,6 @@ SET     @params = N''
 sp_describe_first_result_set
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT * FROM [TestDataMS].[dbo].[Issue1921]()
 
 -- SqlServer.2012.MS SqlServer.2012
@@ -376,7 +366,6 @@ SET     @ReturnFullRow = 0
 [TestDataMS].[dbo].[VariableResults]
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT * FROM [TestDataMS].[TestSchema].[SchemaTableFunction](NULL)
 
 -- SqlServer.2012.MS SqlServer.2012

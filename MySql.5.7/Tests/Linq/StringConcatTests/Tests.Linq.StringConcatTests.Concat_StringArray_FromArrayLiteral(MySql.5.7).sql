@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`e`.`Id`
 FROM
@@ -8,7 +7,6 @@ WHERE
 	CONCAT_WS('', Coalesce(`e`.`StrReq`, ''), ' ', 'I') = 'Programmer I'
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Str1`,

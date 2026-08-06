@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL12
 DECLARE @id Integer -- Int32
 SET     @id = 2
 
@@ -8,7 +8,7 @@ FROM
 	(
 		SELECT
 			x."Id",
-			ROW_NUMBER() OVER(ORDER BY x."Id") as "Index_1"
+			ROW_NUMBER() OVER (ORDER BY x."Id") as "Index_1"
 		FROM
 			"Parents" x
 	) t1

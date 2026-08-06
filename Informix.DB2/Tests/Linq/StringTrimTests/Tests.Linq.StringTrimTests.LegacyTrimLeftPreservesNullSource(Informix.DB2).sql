@@ -28,7 +28,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT
 	CASE
 		WHEN t.VarCharColumn IS NOT NULL THEN LTRIM(t.VarCharColumn, '.+')

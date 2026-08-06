@@ -16,7 +16,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t"."Id",
 	"t"."Name",
@@ -41,7 +40,6 @@ WHERE
 	"t1"."Id" = ?
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t"."Id",
 	"t"."Name",

@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	x.FirstName,
 	x.LastName,
@@ -20,7 +19,6 @@ ORDER BY
 	x.PersonID DESC
 
 -- DuckDB
-
 SELECT
 	t1.FirstName,
 	t1.PersonID,

@@ -25,7 +25,6 @@ WHERE
 	[LinqDataTypes].[ID] = @p
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t].[ID],
 	[t].[MoneyValue],

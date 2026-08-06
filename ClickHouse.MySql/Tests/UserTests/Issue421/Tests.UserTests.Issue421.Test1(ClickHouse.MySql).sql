@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 INSERT INTO BlobClass
 (
 	Id,
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.Id,
 	t1.BlobValue
@@ -23,7 +21,6 @@ WHERE
 LIMIT 1
 
 -- ClickHouse.MySql ClickHouse
-
 ALTER TABLE
 	BlobClass
 UPDATE
@@ -32,7 +29,6 @@ WHERE
 	Id = 1
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.Id,
 	t1.BlobValue

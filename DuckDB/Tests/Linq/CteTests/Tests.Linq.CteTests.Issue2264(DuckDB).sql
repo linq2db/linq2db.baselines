@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 WITH RECURSIVE CTE
 (
 	Level_1,

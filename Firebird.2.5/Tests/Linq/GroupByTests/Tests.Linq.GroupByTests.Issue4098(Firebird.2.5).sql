@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	"ip"."InvestorId",
 	"t1"."Units",

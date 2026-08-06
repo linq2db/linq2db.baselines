@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT DISTINCT
 	[p].[ParentID],
 	(
@@ -16,10 +15,9 @@ ORDER BY
 	[p].[ParentID]
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[m_1].[ParentID],
-	[d].[ParentID],
+	[d].[ParentID] as [ParentID_1],
 	[d].[ChildID]
 FROM
 	(
@@ -31,7 +29,6 @@ FROM
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

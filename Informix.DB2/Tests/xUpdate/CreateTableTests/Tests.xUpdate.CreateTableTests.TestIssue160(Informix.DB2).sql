@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 CREATE TABLE aa
 (
 	bb Int           NOT NULL,
@@ -26,7 +25,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.bb,
 	t1.cc
@@ -34,6 +32,5 @@ FROM
 	aa t1
 
 -- Informix.DB2 Informix
-
 DROP TABLE aa
 

@@ -37,7 +37,6 @@ WHERE
 	t1.FirstName LIKE 'Update14%' ESCAPE '~'
 
 -- Informix.DB2 Informix
-
 SELECT
 	COUNT(*)
 FROM

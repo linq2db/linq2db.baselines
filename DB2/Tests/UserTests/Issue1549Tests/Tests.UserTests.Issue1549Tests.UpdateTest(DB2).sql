@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 UPDATE
 	"billing_TempReading"
 SET
@@ -25,7 +24,6 @@ WHERE
 	)
 
 -- DB2 DB2.LUW DB2LUW
-
 UPDATE
 	"billing_TempReading" "t1"
 SET

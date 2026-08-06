@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[g_1].[Id],
 	SUM(IIF([a_Values].[Value] IS NULL, 0, [a_Values].[Value]))
@@ -10,19 +9,17 @@ GROUP BY
 	[g_1].[Id]
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[m_1].[Id],
-	[d].[Id],
+	[d].[Id] as [Id_1],
 	[d].[ItemId],
 	[d].[ValueName],
-	[d].[Value]
+	[d].[Value] as [Value_1]
 FROM
 	[Item] [m_1]
 		INNER JOIN [ItemValue] [d] ON ([m_1].[Id] = [d].[ItemId])
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Name]

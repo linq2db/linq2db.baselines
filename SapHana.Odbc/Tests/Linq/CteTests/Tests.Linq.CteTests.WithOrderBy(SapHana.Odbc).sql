@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 WITH "CTE_1" ("ParentID", "Value1")
 AS
 (

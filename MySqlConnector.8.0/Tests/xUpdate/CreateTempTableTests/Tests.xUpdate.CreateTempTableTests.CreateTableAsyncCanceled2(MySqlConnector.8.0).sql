@@ -1,9 +1,7 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 DROP TABLE IF EXISTS `TempTable`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 CREATE TEMPORARY TABLE `TempTable`
 (
 	`ID` INT NOT NULL,
@@ -12,7 +10,6 @@ CREATE TEMPORARY TABLE `TempTable`
 )
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 INSERT INTO `TempTable`
 (
 	`ID`
@@ -23,10 +20,8 @@ FROM
 	`Parent` `p`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 DROP TEMPORARY TABLE IF EXISTS `TempTable`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 DROP TABLE `TempTable`
 

@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 MERGE INTO TestTable Target
 USING (
 	SELECT

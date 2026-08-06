@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012
-
 SELECT
 	IIF([p].[ParentID] = 1, IIF((
 		SELECT TOP (1)

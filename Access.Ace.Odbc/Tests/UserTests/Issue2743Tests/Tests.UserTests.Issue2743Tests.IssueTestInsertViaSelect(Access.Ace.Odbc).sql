@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 INSERT INTO [MessageEventDTOTb2]
 (
 	[Id]

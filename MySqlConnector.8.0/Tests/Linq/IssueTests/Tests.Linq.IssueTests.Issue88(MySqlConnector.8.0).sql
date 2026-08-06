@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`FirstName`,
 	`t1`.`PersonID`,
@@ -12,7 +11,6 @@ WHERE
 	`t1`.`PersonID` = 1 AND `t1`.`Gender` = 'M'
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`FirstName`,
 	`t1`.`PersonID`,

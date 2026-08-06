@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"p"."PersonID",
 	"p2"."FirstName"
@@ -11,7 +10,6 @@ WHERE
 	"p"."PersonID" = "p2"."PersonID"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"p"."PersonID",
 	"p2"."FirstName"

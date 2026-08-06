@@ -33,19 +33,18 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT
 	[e].[Id],
 	[e].[AOnly],
-	NULL as [Id_1],
-	NULL as [BOnly]
+	NULL,
+	NULL
 FROM
 	[ConcreteA] [e]
 UNION ALL
 SELECT
-	NULL as [Id],
-	NULL as [AOnly],
-	[e_1].[Id] as [Id_1],
+	NULL,
+	NULL,
+	[e_1].[Id],
 	[e_1].[BOnly]
 FROM
 	[ConcreteB] [e_1]

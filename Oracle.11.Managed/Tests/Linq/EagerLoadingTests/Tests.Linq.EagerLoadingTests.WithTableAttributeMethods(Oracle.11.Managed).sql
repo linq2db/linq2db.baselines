@@ -29,7 +29,6 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	p."FirstName",
 	p."PersonID",

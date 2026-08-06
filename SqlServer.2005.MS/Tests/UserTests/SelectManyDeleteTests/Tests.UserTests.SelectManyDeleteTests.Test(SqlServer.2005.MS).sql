@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
-
 DELETE [a_GrandChildren]
 FROM
 	[Parent] [x]

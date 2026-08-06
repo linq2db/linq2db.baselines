@@ -24,11 +24,9 @@ VALUES
 )
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT @@IDENTITY
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT TOP 1
 	[t1].[FirstName],
 	[t1].[PersonID],
@@ -63,7 +61,6 @@ WHERE
 	[t1].[PersonID] = ?
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT TOP 1
 	[t1].[FirstName],
 	[t1].[PersonID],

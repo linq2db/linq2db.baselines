@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`x`.`ParentID`,
 	`x`.`ChildID`
@@ -16,7 +15,6 @@ WHERE
 	)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`x`.`ParentID`,
 	`x`.`ChildID`

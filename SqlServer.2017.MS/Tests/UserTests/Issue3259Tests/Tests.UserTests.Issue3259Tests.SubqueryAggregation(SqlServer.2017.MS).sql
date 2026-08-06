@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t9].[WithParentReference],
 	[t9].[WithParentReferenceCustom1],

@@ -14,7 +14,6 @@ WHERE
 	"r"."FirstName" = @p
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"r"."FirstName",
 	"r"."PersonID",

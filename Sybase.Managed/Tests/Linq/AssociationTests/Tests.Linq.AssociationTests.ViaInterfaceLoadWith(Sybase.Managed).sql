@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -9,7 +8,6 @@ FROM
 		INNER JOIN [SubEntity] [d] ON [m_1].[Id] = [d].[MainEntityId]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id]
 FROM

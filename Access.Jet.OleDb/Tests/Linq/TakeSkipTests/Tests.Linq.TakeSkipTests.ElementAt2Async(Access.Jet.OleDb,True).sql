@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT TOP 4
 	[p].[ParentID],
 	[p].[Value1]

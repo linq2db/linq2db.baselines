@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	RTRIM(t.VarCharColumn, '.+')
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	t.Id
 
 -- Informix.DB2 Informix
-
 SELECT
 	RTRIM(t.VarCharColumn, '.+')
 FROM

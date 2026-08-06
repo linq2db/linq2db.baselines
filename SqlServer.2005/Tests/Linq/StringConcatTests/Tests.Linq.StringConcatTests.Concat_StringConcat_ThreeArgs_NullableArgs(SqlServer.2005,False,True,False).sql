@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 SELECT
 	[t].[Value1] + Coalesce([t].[Value2], N'') + [t].[Value3]
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	[t].[ID]
 
 -- SqlServer.2005
-
 SELECT
 	[t1].[ID],
 	[t1].[Value1],

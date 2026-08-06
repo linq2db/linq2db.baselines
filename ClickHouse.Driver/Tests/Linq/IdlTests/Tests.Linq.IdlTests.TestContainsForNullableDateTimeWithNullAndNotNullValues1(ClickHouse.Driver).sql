@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.ID,
 	t1.MoneyValue,
@@ -15,7 +14,6 @@ FROM
 	LinqDataTypes t1
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	COUNT(*)
 FROM

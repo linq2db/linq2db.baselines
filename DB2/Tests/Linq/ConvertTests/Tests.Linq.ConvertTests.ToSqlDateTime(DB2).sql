@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	CAST(RTrim(Char(Extract(year from "t"."DateTimeValue"))) || '-01-01 00:20:00' AS timestamp)
 FROM

@@ -18,7 +18,6 @@ WHERE
 	Coalesce([r].[BooleanN], @True)
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -52,7 +51,6 @@ WHERE
 	Coalesce([r].[BooleanN], @False)
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -67,7 +65,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[r].[Id],
 	[r].[Boolean],
@@ -84,7 +81,6 @@ WHERE
 	Coalesce([r].[BooleanN], [r].[Id] % 2 = 1)
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],

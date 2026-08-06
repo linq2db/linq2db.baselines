@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 UPDATE
 	[Parent] [w]
 		INNER JOIN [Child] [b] ON ([w].[ParentID] = [b].[ParentID])

@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT DISTINCT
 	EXTRACT(year FROM a_Types.DateTimeValue)
 FROM

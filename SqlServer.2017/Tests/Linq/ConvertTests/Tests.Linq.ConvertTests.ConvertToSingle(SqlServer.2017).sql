@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 SELECT
 	CAST([p].[MoneyValue] AS Real)
 FROM

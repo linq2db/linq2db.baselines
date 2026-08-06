@@ -1,9 +1,7 @@
 ﻿-- SqlServer.2019
-
 DROP TABLE IF EXISTS [FluentTemp_Merge]
 
 -- SqlServer.2019
-
 IF (OBJECT_ID(N'[FluentTemp_Merge]', N'U') IS NULL)
 	CREATE TABLE [FluentTemp_Merge]
 	(
@@ -31,7 +29,6 @@ VALUES
 )
 
 -- SqlServer.2019
-
 MERGE INTO [FluentTemp_Merge] [Target]
 USING (VALUES
 	(1,N'John II')
@@ -61,6 +58,5 @@ VALUES
 ;
 
 -- SqlServer.2019
-
 DROP TABLE IF EXISTS [FluentTemp_Merge]
 

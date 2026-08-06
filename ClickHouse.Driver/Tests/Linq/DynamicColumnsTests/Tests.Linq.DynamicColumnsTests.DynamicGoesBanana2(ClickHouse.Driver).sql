@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 INSERT INTO BananaTable
 (
 	Id,
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Property
@@ -20,7 +18,6 @@ FROM
 	BananaTable t1
 
 -- ClickHouse.Driver ClickHouse
-
 ALTER TABLE
 	BananaTable
 UPDATE
@@ -29,7 +26,6 @@ WHERE
 	Id = 1
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Property

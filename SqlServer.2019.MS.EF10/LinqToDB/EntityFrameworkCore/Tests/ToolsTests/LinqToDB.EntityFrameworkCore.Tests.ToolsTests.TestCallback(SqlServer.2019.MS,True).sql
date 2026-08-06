@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2019
-
 DELETE [e]
 FROM
 	[Products] [e]

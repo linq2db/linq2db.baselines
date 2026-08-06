@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2019
-
 DECLARE @GuidID2Output TABLE ([ID] UniqueIdentifier)
 
 INSERT INTO [GuidID2] OUTPUT [INSERTED].[ID]

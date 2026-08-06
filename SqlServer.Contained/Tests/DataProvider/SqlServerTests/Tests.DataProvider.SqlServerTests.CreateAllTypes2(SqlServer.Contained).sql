@@ -1,9 +1,7 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 DROP TABLE [AllType2CreateTest]
 
 -- SqlServer.Contained SqlServer.2019
-
 CREATE TABLE [AllType2CreateTest]
 (
 	[ID]                     int                NOT NULL IDENTITY,
@@ -19,7 +17,6 @@ CREATE TABLE [AllType2CreateTest]
 )
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[t1].[ID],
 	[t1].[dateDataType],
@@ -33,6 +30,5 @@ FROM
 	[AllType2CreateTest] [t1]
 
 -- SqlServer.Contained SqlServer.2019
-
 DROP TABLE [AllType2CreateTest]
 

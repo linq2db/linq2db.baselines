@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT SKIP 2
 	t2.ParentID,
 	t2.ChildID

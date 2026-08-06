@@ -8,7 +8,6 @@ WHERE
 	[r].[ID] >= 101 AND [r].[ID] < @p
 
 -- Access.Jet.OleDb AccessOleDb
-
 INSERT INTO [LinqDataTypes]
 (
 	[ID],
@@ -32,7 +31,6 @@ WHERE
 	[r].[ID] = 101 AND [r].[BigIntValue] = 11
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT TOP 1
 	[r].[BigIntValue]
 FROM

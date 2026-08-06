@@ -19,7 +19,6 @@ ORDER BY "p"."ProductID"
 
 
 -- SQLite.MS SQLite
-
 SELECT
 	[e].[IsDeleted],
 	[e].[ProductID],

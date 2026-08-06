@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`ess`.`ID`
 FROM
@@ -15,7 +14,6 @@ WHERE
 	)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`ess`.`ID`
 FROM

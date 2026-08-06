@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	nm."MiddleName"
 FROM
@@ -8,7 +7,6 @@ WHERE
 	nm."MiddleName" IS NOT NULL
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."FirstName",
 	t1."PersonID",

@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"e"."FirstName",
 	CAST("a_Person"."PersonID" IS NOT NULL AND "a_Person"."LastName" IS NOT NULL AS smallint),

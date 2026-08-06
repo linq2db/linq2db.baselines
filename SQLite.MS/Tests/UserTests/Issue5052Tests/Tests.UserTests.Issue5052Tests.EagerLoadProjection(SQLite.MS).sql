@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[l].[Id],
 	[dtoLocationMapping].[id],
@@ -11,7 +10,6 @@ WHERE
 	[dtoLocationMapping].[id] = 1
 
 -- SQLite.MS SQLite
-
 SELECT
 	[dtoPersonDto].[Id],
 	[dtoPersonDto].[Name]

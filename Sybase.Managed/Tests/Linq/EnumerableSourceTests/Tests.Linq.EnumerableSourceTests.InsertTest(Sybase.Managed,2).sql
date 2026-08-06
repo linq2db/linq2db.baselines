@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 INSERT INTO [TableToInsert]
 (
 	[Id],
@@ -18,7 +17,6 @@ WHERE
 	[t].[Id] IS NULL
 
 -- Sybase.Managed Sybase
-
 INSERT INTO [TableToInsert]
 (
 	[Id],

@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[m_1].[ParentID],
 	[d].[ChildID]
@@ -15,7 +14,6 @@ ORDER BY
 	[m_1].[ParentID]
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[p].[ParentID]
 FROM

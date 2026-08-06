@@ -36,7 +36,6 @@ WHERE
 	"t"."Data" = @p
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r".ID,
 	"r"."Data"
@@ -46,7 +45,6 @@ ORDER BY
 	"r".ID
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r".ID,
 	"r"."Data"

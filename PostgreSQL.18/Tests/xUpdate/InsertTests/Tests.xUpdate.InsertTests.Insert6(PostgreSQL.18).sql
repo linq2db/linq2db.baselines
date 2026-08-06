@@ -1,12 +1,10 @@
-﻿-- PostgreSQL.18 PostgreSQL
-
+﻿-- PostgreSQL.18 PostgreSQL12
 DELETE FROM
 	"Parent" p
 WHERE
 	p."Value1" = 11
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 INSERT INTO "Parent"
 (
 	"ParentID",
@@ -20,8 +18,7 @@ FROM
 WHERE
 	c_1."ChildID" = 11
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -29,8 +26,7 @@ FROM
 WHERE
 	p."Value1" = 11
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 DELETE FROM
 	"Parent" p
 WHERE

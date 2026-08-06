@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	t."Id",
 	t."Value"
@@ -9,7 +8,6 @@ WHERE
 	t."Value" IS NULL
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	t."Id",
 	t."Value"

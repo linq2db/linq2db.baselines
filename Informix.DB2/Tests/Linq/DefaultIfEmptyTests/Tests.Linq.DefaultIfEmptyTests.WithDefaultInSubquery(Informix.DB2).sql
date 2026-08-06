@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	Nvl((
 		SELECT
@@ -19,7 +18,6 @@ FROM
 	Parent p
 
 -- Informix.DB2 Informix
-
 SELECT
 	m_1.ParentID,
 	d.ParentID,
@@ -34,7 +32,6 @@ FROM
 		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.ParentID,
 	t1.Value1

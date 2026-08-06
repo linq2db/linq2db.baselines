@@ -18,7 +18,6 @@ WHERE
 	Coalesce("r"."BooleanN", CAST(@True AS CHAR(1))) = '1'
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1"."Id",
 	"t1"."Boolean",
@@ -52,7 +51,6 @@ WHERE
 	Coalesce("r"."BooleanN", CAST(@False AS CHAR(1))) = '1'
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1"."Id",
 	"t1"."Boolean",
@@ -67,7 +65,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"r"."Id",
 	"r"."Boolean",
@@ -87,7 +84,6 @@ WHERE
 	END) = '1'
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1"."Id",
 	"t1"."Boolean",

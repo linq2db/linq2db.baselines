@@ -1,13 +1,11 @@
-﻿-- PostgreSQL.13 PostgreSQL
-
+﻿-- PostgreSQL.13 PostgreSQL12
 SELECT
 	current_schema()
 FROM
 	"LinqDataTypes" t1
 LIMIT 1
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."ID",
 	t1."Value"

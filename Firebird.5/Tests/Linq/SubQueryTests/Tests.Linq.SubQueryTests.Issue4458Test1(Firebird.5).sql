@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 SELECT
 	"m_1"."Id",
 	"d"."ItemId",
@@ -22,7 +21,6 @@ ORDER BY
 	"d"."UserId"
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"i"."Id",
 	(
@@ -48,14 +46,12 @@ WHERE
 	)
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t1"."Id"
 FROM
 	"Issue4458Item" "t1"
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t1"."ItemId",
 	"t1"."QuantityAvailable",
@@ -64,7 +60,6 @@ FROM
 	"WarehouseStock" "t1"
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t1"."ItemId",
 	"t1"."UserId",

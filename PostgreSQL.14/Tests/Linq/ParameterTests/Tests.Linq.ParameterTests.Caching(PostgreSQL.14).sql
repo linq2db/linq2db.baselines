@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DECLARE @p Integer -- Int32
 SET     @p = 1
 
@@ -10,15 +10,14 @@ FROM
 WHERE
 	x."ParentID" = :p
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."ParentID",
 	t1."Value1"
 FROM
 	"Parent" t1
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DECLARE @p Integer -- Int32
 SET     @p = 3
 DECLARE @p_1 Integer -- Int32
@@ -32,19 +31,16 @@ FROM
 WHERE
 	x."ParentID" = :p OR x."ParentID" = :p_1
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."ParentID",
 	t1."Value1"
 FROM
 	"Parent" t1
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DECLARE @p Integer -- Int32
 SET     @p = 1
-DECLARE @p_1 Integer -- Int32
-SET     @p_1 = 1
 
 SELECT
 	x."ParentID",
@@ -52,10 +48,9 @@ SELECT
 FROM
 	"Parent" x
 WHERE
-	x."ParentID" = :p OR x."ParentID" = :p_1
+	x."ParentID" = :p
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."ParentID",
 	t1."Value1"

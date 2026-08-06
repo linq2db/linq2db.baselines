@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 INSERT INTO "SimpleBulkCopyTable"
 (
 	"Id"
@@ -7,7 +6,6 @@ INSERT INTO "SimpleBulkCopyTable"
 SELECT 1 FROM rdb$database
 
 -- Firebird.5 Firebird4
-
 INSERT INTO "SimpleBulkCopyTable"
 (
 	"Id"
@@ -15,7 +13,6 @@ INSERT INTO "SimpleBulkCopyTable"
 SELECT 2 FROM rdb$database
 
 -- Firebird.5 Firebird4
-
 INSERT INTO "SimpleBulkCopyTable"
 (
 	"Id"

@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 INSERT INTO "Issue4717Address"
 (
 	"Id",
@@ -18,7 +17,6 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 INSERT INTO "Issue4717Warehouse"
 (
 	"Id",
@@ -33,7 +31,6 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 INSERT INTO "Issue4717UnitOfMeasure"
 (
 	"Id",

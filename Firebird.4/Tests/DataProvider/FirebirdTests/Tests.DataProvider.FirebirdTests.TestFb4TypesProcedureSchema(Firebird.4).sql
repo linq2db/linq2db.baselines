@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 SELECT * FROM (
 	SELECT
 		RDB$PACKAGE_NAME                                        AS PackageName,
@@ -21,7 +20,6 @@ SELECT * FROM (
 ) ORDER BY PackageName, ProcedureName
 
 -- Firebird.4 Firebird4
-
 SELECT
 	p.RDB$PACKAGE_NAME                                   AS PackageName,
 	p.RDB$PROCEDURE_NAME                                 AS ProcedureName,
@@ -61,7 +59,6 @@ SELECT
 WHERE p.RDB$SYSTEM_FLAG = 0
 
 -- Firebird.4 Firebird4
-
 SELECT * FROM TEST_V4_TYPES(NULL,NULL,NULL,NULL,NULL)
 
 RollbackTransaction

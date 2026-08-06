@@ -1,9 +1,7 @@
 ﻿-- SqlServer.2022
-
 DROP TABLE IF EXISTS [CreateIfNotExistsTable]
 
 -- SqlServer.2022
-
 IF (OBJECT_ID(N'[CreateIfNotExistsTable]', N'U') IS NULL)
 	CREATE TABLE [CreateIfNotExistsTable]
 	(
@@ -12,7 +10,6 @@ IF (OBJECT_ID(N'[CreateIfNotExistsTable]', N'U') IS NULL)
 	)
 
 -- SqlServer.2022
-
 INSERT INTO [CreateIfNotExistsTable]
 (
 	[Id],
@@ -25,7 +22,6 @@ VALUES
 )
 
 -- SqlServer.2022
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -33,7 +29,6 @@ FROM
 	[CreateIfNotExistsTable] [t1]
 
 -- SqlServer.2022
-
 IF (OBJECT_ID(N'[CreateIfNotExistsTable]', N'U') IS NULL)
 	CREATE TABLE [CreateIfNotExistsTable]
 	(
@@ -42,10 +37,8 @@ IF (OBJECT_ID(N'[CreateIfNotExistsTable]', N'U') IS NULL)
 	)
 
 -- SqlServer.2022
-
 DROP TABLE IF EXISTS [CreateIfNotExistsTable]
 
 -- SqlServer.2022
-
 DROP TABLE IF EXISTS [CreateIfNotExistsTable]
 

@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 INSERT INTO Person
 (
 	FirstName,
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	COUNT(*)
 FROM
@@ -23,7 +21,6 @@ WHERE
 	c_1.LastName = 'Limonadovy'
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	Person
 UPDATE
@@ -32,7 +29,6 @@ WHERE
 	LastName = 'Limonadovy'
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	COUNT(*)
 FROM

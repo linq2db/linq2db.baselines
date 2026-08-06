@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
-
 DELETE [c_1]
 FROM
 	[Child] [c_1]
@@ -44,7 +43,6 @@ FROM
 	[TInserted] [c_1]
 
 -- SqlServer.2022.MS SqlServer.2022
-
 SELECT
 	[c_1].[ParentID],
 	[c_1].[ChildID]
@@ -54,7 +52,6 @@ WHERE
 	[c_1].[ChildID] > 1000
 
 -- SqlServer.2022.MS SqlServer.2022
-
 DELETE [c_1]
 FROM
 	[Child] [c_1]

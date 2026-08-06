@@ -20,11 +20,10 @@ VALUES
 )
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
-	t1."child1_name" as "Name",
-	t1."child2_name" as "Name_1"
+	t1."child1_name",
+	t1."child2_name"
 FROM
 	"Issue5266TableFluent" t1
 FETCH NEXT 2 ROWS ONLY

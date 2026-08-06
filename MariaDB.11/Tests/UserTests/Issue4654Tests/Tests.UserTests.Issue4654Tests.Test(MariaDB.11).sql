@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	CAST(`c_1`.`Id` AS CHAR(11)),
 	`c_1`.`Name`

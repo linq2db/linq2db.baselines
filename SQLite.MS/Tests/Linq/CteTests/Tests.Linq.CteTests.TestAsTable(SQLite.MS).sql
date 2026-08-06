@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 WITH [CTE1_] ([ParentID], [ChildID])
 AS
 (
@@ -16,7 +15,6 @@ FROM
 	[CTE1_] [t2]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID]

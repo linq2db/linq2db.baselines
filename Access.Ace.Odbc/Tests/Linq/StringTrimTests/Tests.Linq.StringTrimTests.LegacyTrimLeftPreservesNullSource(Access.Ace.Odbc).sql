@@ -28,7 +28,6 @@ VALUES
 )
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t].[VarCharColumn]
 FROM

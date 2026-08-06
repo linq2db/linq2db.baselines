@@ -1,16 +1,13 @@
-﻿-- PostgreSQL.18 PostgreSQL
-
+﻿-- PostgreSQL.18 PostgreSQL12
 DELETE FROM
 	"SequenceTest1" t1
 WHERE
 	t1."Value" LIKE 'SeqValue%' ESCAPE '~'
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT Max("ID") FROM "SequenceTest1"
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 INSERT INTO "SequenceTest1"
 (
 	"ID",
@@ -28,8 +25,7 @@ VALUES
 (9,'SeqValue9'),
 (10,'SeqValue10')
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 INSERT INTO "SequenceTest1"
 (
 	"ID",
@@ -47,8 +43,7 @@ VALUES
 (19,'SeqValue19'),
 (20,'SeqValue20')
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 INSERT INTO "SequenceTest1"
 (
 	"ID",
@@ -66,8 +61,7 @@ VALUES
 (29,'SeqValue29'),
 (30,'SeqValue30')
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 INSERT INTO "SequenceTest1"
 (
 	"ID",
@@ -85,8 +79,7 @@ VALUES
 (39,'SeqValue39'),
 (40,'SeqValue40')
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 DELETE FROM
 	"SequenceTest1" t1
 WHERE

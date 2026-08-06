@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012
-
 SELECT
 	[thing_1].[Id]
 FROM

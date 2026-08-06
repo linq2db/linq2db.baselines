@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	p.Id,
 	p.Str
@@ -13,7 +12,6 @@ FROM
 	Issue3360Table p_1
 
 -- DuckDB
-
 SELECT
 	p.Id,
 	CAST('str' AS VARCHAR)

@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	pp.PersonID,
 	concat('  ', pp.FirstName, ' ')

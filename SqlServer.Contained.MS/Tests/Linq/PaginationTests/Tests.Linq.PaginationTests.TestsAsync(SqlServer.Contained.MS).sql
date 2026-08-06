@@ -23,7 +23,7 @@ DECLARE @take Int -- Int32
 SET     @take = 20
 
 SELECT
-	COUNT(*) OVER(),
+	COUNT(*) OVER (),
 	[q].[Id],
 	[q].[Value]
 FROM
@@ -46,7 +46,7 @@ AS
 (
 	SELECT
 		[x].[Id],
-		ROW_NUMBER() OVER(ORDER BY [x].[Id], [x].[Value] DESC),
+		ROW_NUMBER() OVER (ORDER BY [x].[Id], [x].[Value] DESC),
 		[x].[Value]
 	FROM
 		[PaginationData] [x]
@@ -88,9 +88,9 @@ AS
 (
 	SELECT
 		[x].[Id],
-		ROW_NUMBER() OVER(ORDER BY [x].[Id], [x].[Value] DESC),
+		ROW_NUMBER() OVER (ORDER BY [x].[Id], [x].[Value] DESC),
 		[x].[Value],
-		COUNT(*) OVER()
+		COUNT(*) OVER ()
 	FROM
 		[PaginationData] [x]
 	WHERE
@@ -125,7 +125,7 @@ FROM
 	(
 		SELECT
 			[x].[Id],
-			ROW_NUMBER() OVER(ORDER BY [x].[Id], [x].[Value] DESC) as [RowNumber]
+			ROW_NUMBER() OVER (ORDER BY [x].[Id], [x].[Value] DESC) as [RowNumber]
 		FROM
 			[PaginationData] [x]
 		WHERE
@@ -144,7 +144,7 @@ FROM
 	(
 		SELECT
 			[x].[Id],
-			ROW_NUMBER() OVER(ORDER BY [x].[Id], [x].[Value] DESC) as [RowNumber]
+			ROW_NUMBER() OVER (ORDER BY [x].[Id], [x].[Value] DESC) as [RowNumber]
 		FROM
 			[PaginationData] [x]
 		WHERE

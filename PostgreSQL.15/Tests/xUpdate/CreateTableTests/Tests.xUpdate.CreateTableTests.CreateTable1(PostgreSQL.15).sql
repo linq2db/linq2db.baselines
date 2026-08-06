@@ -1,9 +1,7 @@
-﻿-- PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.15 PostgreSQL12
 DROP TABLE IF EXISTS "TestTable"
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 CREATE TABLE "TestTable"
 (
 	"ID"        SERIAL     NOT NULL,
@@ -14,8 +12,7 @@ CREATE TABLE "TestTable"
 	CONSTRAINT "PK_TestTable" PRIMARY KEY ("ID")
 )
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."ID",
 	t1."Field1",
@@ -24,7 +21,6 @@ SELECT
 FROM
 	"TestTable" t1
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 DROP TABLE "TestTable"
 

@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	c_1.FirstName,
 	c_1.PersonID,

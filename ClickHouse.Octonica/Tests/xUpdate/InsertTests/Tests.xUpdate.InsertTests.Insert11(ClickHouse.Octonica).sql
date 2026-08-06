@@ -1,12 +1,10 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	maxOrNull(t1.PersonID)
 FROM
 	Person t1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO Person
 (
 	PersonID,
@@ -25,7 +23,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	p2.PersonID,
 	p2.Gender,

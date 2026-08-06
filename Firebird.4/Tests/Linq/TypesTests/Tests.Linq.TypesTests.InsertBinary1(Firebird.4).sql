@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 DELETE FROM
 	"LinqDataTypes" "t1"
 WHERE
@@ -18,12 +17,11 @@ INSERT INTO "LinqDataTypes"
 VALUES
 (
 	1001,
-	CAST(@data AS BLOB),
+	@data,
 	TRUE
 )
 
 -- Firebird.4 Firebird4
-
 DELETE FROM
 	"LinqDataTypes" "t1"
 WHERE

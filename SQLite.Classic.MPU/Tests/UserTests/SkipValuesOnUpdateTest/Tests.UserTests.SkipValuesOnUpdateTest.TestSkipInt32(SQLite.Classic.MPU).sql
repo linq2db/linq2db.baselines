@@ -20,7 +20,6 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t].[Id],
 	[t].[Name],
@@ -48,7 +47,6 @@ WHERE
 	[PR_1598_Update_Table].[Id] = @Id
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t].[Id],
 	[t].[Name],
@@ -73,7 +71,6 @@ WHERE
 	[PR_1598_Update_Table].[Id] = @Id
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t].[Id],
 	[t].[Name],

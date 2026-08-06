@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 UPDATE
 	[LinqDataTypes] [p]
 SET

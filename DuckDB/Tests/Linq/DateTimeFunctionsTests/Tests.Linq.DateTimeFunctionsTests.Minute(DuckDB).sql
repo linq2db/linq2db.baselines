@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	EXTRACT(minute FROM t.DateTimeValue)
 FROM

@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT TOP (1)
 	[t1].[Max_1]
 FROM

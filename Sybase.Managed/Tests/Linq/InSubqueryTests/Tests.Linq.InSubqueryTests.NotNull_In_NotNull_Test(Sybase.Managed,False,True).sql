@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[t].[PK],
 	[t].[ID]
@@ -14,7 +13,6 @@ WHERE
 	)
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[PK],
 	[t1].[ID]
@@ -22,7 +20,6 @@ FROM
 	[test_in_1] [t1]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[PK],
 	[t1].[ID]

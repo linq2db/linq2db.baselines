@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[c_1].[Id],
 	[c_1].[LocationId],

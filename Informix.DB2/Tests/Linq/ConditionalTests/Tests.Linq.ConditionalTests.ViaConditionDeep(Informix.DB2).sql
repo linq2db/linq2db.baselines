@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	x.Id,
 	x.StringProp = '1' OR x.StringProp IS NULL,
@@ -26,7 +25,6 @@ WHERE
 	END = 2
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1.StringProp

@@ -46,7 +46,6 @@ VALUES
 )
 
 -- SqlServer.2016
-
 SELECT
 	N'Id',
 	[it].[Id],

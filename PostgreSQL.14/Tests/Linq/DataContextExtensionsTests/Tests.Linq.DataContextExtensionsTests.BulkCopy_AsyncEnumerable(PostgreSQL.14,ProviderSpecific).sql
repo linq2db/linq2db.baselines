@@ -1,7 +1,6 @@
 ﻿INSERT ASYNC BULK "BulkCopyTable"(Id, Value)
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value"
@@ -10,15 +9,13 @@ FROM
 ORDER BY
 	t1."Id"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DELETE FROM
 	"BulkCopyTable" t1
 
 INSERT ASYNC BULK "BulkCopyTable"(Id, Value)
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value"
@@ -27,15 +24,13 @@ FROM
 ORDER BY
 	t1."Id"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DELETE FROM
 	"BulkCopyTable" t1
 
 INSERT ASYNC BULK "BulkCopyTable"(Id, Value)
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value"
@@ -44,15 +39,13 @@ FROM
 ORDER BY
 	t1."Id"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DELETE FROM
 	"BulkCopyTable" t1
 
 INSERT ASYNC BULK "BulkCopyTable"(Id, Value)
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value"
@@ -61,15 +54,13 @@ FROM
 ORDER BY
 	t1."Id"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DELETE FROM
 	"BulkCopyTable" t1
 
 INSERT ASYNC BULK "BulkCopyTable"(Id, Value)
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value"
@@ -78,15 +69,13 @@ FROM
 ORDER BY
 	t1."Id"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DELETE FROM
 	"BulkCopyTable" t1
 
 INSERT ASYNC BULK "BulkCopyTable"(Id, Value)
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value"
@@ -95,15 +84,13 @@ FROM
 ORDER BY
 	t1."Id"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DELETE FROM
 	"BulkCopyTable" t1
 
 INSERT ASYNC BULK "BulkCopyTable"(Id, Value)
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value"
@@ -112,15 +99,13 @@ FROM
 ORDER BY
 	t1."Id"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DELETE FROM
 	"BulkCopyTable" t1
 
 INSERT ASYNC BULK "BulkCopyTable"(Id, Value)
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value"
@@ -129,15 +114,13 @@ FROM
 ORDER BY
 	t1."Id"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DELETE FROM
 	"BulkCopyTable" t1
 
 INSERT ASYNC BULK "BulkCopyTable"(Id, Value)
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value"
@@ -146,15 +129,13 @@ FROM
 ORDER BY
 	t1."Id"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DELETE FROM
 	"BulkCopyTable" t1
 
 INSERT ASYNC BULK "BulkCopyTable"(Id, Value)
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value"
@@ -163,15 +144,13 @@ FROM
 ORDER BY
 	t1."Id"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DELETE FROM
 	"BulkCopyTable" t1
 
 INSERT ASYNC BULK "BulkCopyTable"(Id, Value)
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value"
@@ -180,15 +159,13 @@ FROM
 ORDER BY
 	t1."Id"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DELETE FROM
 	"BulkCopyTable" t1
 
 INSERT ASYNC BULK "BulkCopyTable"(Id, Value)
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value"
@@ -197,15 +174,13 @@ FROM
 ORDER BY
 	t1."Id"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DELETE FROM
 	"BulkCopyTable" t1
 
 INSERT ASYNC BULK "BulkCopyTable"(Id, Value)
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value"
@@ -214,15 +189,13 @@ FROM
 ORDER BY
 	t1."Id"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DELETE FROM
 	"BulkCopyTable" t1
 
 INSERT ASYNC BULK "BulkCopyTable"(Id, Value)
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value"
@@ -231,15 +204,13 @@ FROM
 ORDER BY
 	t1."Id"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DELETE FROM
 	"BulkCopyTable" t1
 
 INSERT ASYNC BULK "BulkCopyTable"(Id, Value)
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value"
@@ -248,15 +219,13 @@ FROM
 ORDER BY
 	t1."Id"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DELETE FROM
 	"BulkCopyTable" t1
 
 INSERT ASYNC BULK "BulkCopyTable"(Id, Value)
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value"
@@ -265,15 +234,13 @@ FROM
 ORDER BY
 	t1."Id"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DELETE FROM
 	"BulkCopyTable" t1
 
 INSERT ASYNC BULK "BulkCopyTable"(Id, Value)
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value"
@@ -282,15 +249,13 @@ FROM
 ORDER BY
 	t1."Id"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DELETE FROM
 	"BulkCopyTable" t1
 
 INSERT ASYNC BULK "BulkCopyTable"(Id, Value)
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value"
@@ -299,8 +264,7 @@ FROM
 ORDER BY
 	t1."Id"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DELETE FROM
 	"BulkCopyTable" t1
 

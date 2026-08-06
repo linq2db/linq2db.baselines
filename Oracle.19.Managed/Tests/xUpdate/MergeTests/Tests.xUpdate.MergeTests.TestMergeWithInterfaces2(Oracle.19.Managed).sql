@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 MERGE INTO "ReviewIndexes" Target
 USING (
 	SELECT

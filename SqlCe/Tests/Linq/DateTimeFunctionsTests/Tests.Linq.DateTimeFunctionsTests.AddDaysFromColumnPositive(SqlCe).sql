@@ -40,16 +40,14 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[LinqDataTypes] [t]
 WHERE
 	[t].[ID] = 5000 AND DateAdd(day, [t].[SmallIntValue], [t].[DateTimeValue]) > CAST('2018-01-02' AS DateTime)
 
 -- SqlCe
-
 DELETE FROM
 	[LinqDataTypes]
 WHERE

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025
-
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
@@ -15,7 +14,6 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 -- SqlServer.2025
-
 SELECT TOP (1)
 	[t1].[ParentID],
 	[t1].[ChildID],

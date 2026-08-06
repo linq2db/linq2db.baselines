@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	m_1."Id",
 	d."Id",
@@ -10,7 +9,6 @@ FROM
 		INNER JOIN "LineEntity" d ON m_1."Id" = d."TransactionId"
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	x."Id",
 	x."ValidOn"

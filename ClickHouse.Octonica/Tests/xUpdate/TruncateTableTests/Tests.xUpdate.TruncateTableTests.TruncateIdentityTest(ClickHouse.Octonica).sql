@@ -1,9 +1,7 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 DROP TABLE IF EXISTS TestIdTrun
 
 -- ClickHouse.Octonica ClickHouse
-
 CREATE TABLE TestIdTrun
 (
 	ID     Int32,
@@ -15,7 +13,6 @@ ENGINE = MergeTree()
 ORDER BY ID
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO TestIdTrun
 (
 	Field1
@@ -26,7 +23,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO TestIdTrun
 (
 	Field1
@@ -37,7 +33,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.ID,
 	t1.Field1
@@ -48,11 +43,9 @@ ORDER BY
 LIMIT 1, 2
 
 -- ClickHouse.Octonica ClickHouse
-
 TRUNCATE TABLE TestIdTrun
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO TestIdTrun
 (
 	Field1
@@ -63,7 +56,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO TestIdTrun
 (
 	Field1
@@ -74,7 +66,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.ID,
 	t1.Field1
@@ -85,6 +76,5 @@ ORDER BY
 LIMIT 1, 2
 
 -- ClickHouse.Octonica ClickHouse
-
 DROP TABLE TestIdTrun
 

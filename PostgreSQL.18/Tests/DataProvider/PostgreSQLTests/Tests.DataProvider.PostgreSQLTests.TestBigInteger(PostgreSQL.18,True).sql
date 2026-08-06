@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
-
+﻿-- PostgreSQL.18 PostgreSQL12
 INSERT INTO "BigIntegerTable"
 (
 	"Id",
@@ -13,8 +12,7 @@ VALUES
 	-22345678901234567890123456789012345678901234567890
 )
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value1",

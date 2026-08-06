@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
-
 WITH [CTE1_] ([ParentID])
 AS
 (
@@ -29,7 +28,6 @@ FROM
 		INNER JOIN [LAST0] [c4_1] ON [c4_1].[ParentID] = [p].[ParentID]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	[c4].[ParentID],
 	[c4].[ChildID]

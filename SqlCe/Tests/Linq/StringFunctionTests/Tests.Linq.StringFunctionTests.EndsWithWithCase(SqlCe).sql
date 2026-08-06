@@ -1,7 +1,6 @@
 ﻿-- SqlCe
-
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Patient] [p]
 WHERE
@@ -9,9 +8,8 @@ WHERE
 	[p].[PersonID] = 2
 
 -- SqlCe
-
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Patient] [p]
 WHERE
@@ -19,9 +17,8 @@ WHERE
 	[p].[PersonID] = 2
 
 -- SqlCe
-
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Patient] [p]
 WHERE
@@ -29,9 +26,8 @@ WHERE
 	[p].[PersonID] = 2
 
 -- SqlCe
-
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Patient] [p]
 WHERE

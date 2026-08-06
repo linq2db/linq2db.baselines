@@ -1,5 +1,4 @@
 ﻿-- MariaDB.10.MySqlConnector MariaDB
-
 CREATE TEMPORARY TABLE `Issue4671Entity1TMP`
 (
 	`Id`    int AUTO_INCREMENT NOT NULL,
@@ -11,7 +10,6 @@ CREATE TEMPORARY TABLE `Issue4671Entity1TMP`
 
 
 -- MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `Issue4671Entity1`
 (
 	`Value`
@@ -24,7 +22,6 @@ VALUES
 
 
 -- MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `Issue4671Entity1TMP`
 (
 	`Value`
@@ -37,7 +34,6 @@ VALUES
 
 
 -- MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value`
@@ -48,7 +44,6 @@ LIMIT 2
 
 
 -- MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value`
@@ -59,7 +54,6 @@ LIMIT 2
 
 
 -- MariaDB.10.MySqlConnector MariaDB
-
 DROP TEMPORARY TABLE IF EXISTS `Issue4671Entity1TMP`
 
 

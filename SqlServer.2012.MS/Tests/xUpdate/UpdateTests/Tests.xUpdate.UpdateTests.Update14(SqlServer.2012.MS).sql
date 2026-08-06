@@ -37,7 +37,6 @@ WHERE
 	[Person].[FirstName] LIKE N'Update14%' ESCAPE N'~'
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	COUNT(*)
 FROM

@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	addDays(now(), t.Value) as Value1,
 	addDays(now(), 2) as Value2
@@ -13,7 +12,6 @@ SELECT
 	addDays(now(), 4) as Value2
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	v_1.Value2
 FROM

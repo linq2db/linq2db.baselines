@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 MERGE INTO "Issue5289Table" t1
 USING (SELECT 1 AS "Id" FROM SYS.DUAL) s ON
 (
@@ -24,7 +23,6 @@ WHEN NOT MATCHED THEN
 	)
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	r."Id",
 	r."PictureId",
@@ -36,7 +34,6 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 MERGE INTO "Issue5289Table" t1
 USING (SELECT 1 AS "Id" FROM SYS.DUAL) s ON
 (
@@ -61,7 +58,6 @@ WHEN NOT MATCHED THEN
 	)
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	r."Id",
 	r."PictureId",

@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[x].[ID],
 	[x].[BigIntValue]

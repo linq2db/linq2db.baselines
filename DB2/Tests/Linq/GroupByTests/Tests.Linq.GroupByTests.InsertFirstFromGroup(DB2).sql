@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 CREATE TABLE "temp_table_1"
 (
 	ID      Int           NOT NULL,
@@ -9,7 +8,6 @@ CREATE TABLE "temp_table_1"
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 INSERT INTO "temp_table_1"
 (
 	ID,
@@ -19,7 +17,6 @@ VALUES
 (1,'Value')
 
 -- DB2 DB2.LUW DB2LUW
-
 CREATE TABLE "temp_table_2"
 (
 	"Value" NVarChar(50) NOT NULL,
@@ -28,7 +25,6 @@ CREATE TABLE "temp_table_2"
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 INSERT INTO "temp_table_2"
 (
 	"Value"
@@ -47,14 +43,12 @@ FROM
 		) "t1" ON "gr".ID = "t1".ID AND "t1"."rn" = 1
 
 -- DB2 DB2.LUW DB2LUW
-
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
 	EXECUTE IMMEDIATE 'DROP TABLE "temp_table_2"';
 END
 
 -- DB2 DB2.LUW DB2LUW
-
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
 	EXECUTE IMMEDIATE 'DROP TABLE "temp_table_1"';

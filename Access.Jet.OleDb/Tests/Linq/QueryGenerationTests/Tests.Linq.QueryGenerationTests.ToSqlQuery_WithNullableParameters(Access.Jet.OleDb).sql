@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],
@@ -12,7 +11,6 @@ WHERE
 	[p].[MiddleName] IS NOT NULL
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT TOP 2
 	[p].[FirstName],
 	[p].[PersonID],

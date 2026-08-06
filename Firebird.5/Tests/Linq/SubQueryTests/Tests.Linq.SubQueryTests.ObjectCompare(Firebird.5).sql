@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 SELECT
 	"p"."ParentID",
 	"c_1"."ChildID" + 1

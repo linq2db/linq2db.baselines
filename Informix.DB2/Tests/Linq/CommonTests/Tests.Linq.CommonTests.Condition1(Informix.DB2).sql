@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	CASE
 		WHEN CHAR_LENGTH(p.FirstName || '.') <> 1 THEN p.FirstName

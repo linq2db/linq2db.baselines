@@ -1,12 +1,10 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 DELETE FROM
 	"GrandChild" "gc"
 WHERE
 	"gc"."GrandChildID" IN (1001, 1002)
 
 -- SapHana.Odbc SapHanaOdbc
-
 INSERT INTO "GrandChild"
 (
 	"ParentID",
@@ -21,7 +19,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 INSERT INTO "GrandChild"
 (
 	"ParentID",
@@ -36,7 +33,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	COUNT(*)
 FROM
@@ -45,7 +41,6 @@ WHERE
 	"gc"."ParentID" = 1
 
 -- SapHana.Odbc SapHanaOdbc
-
 DELETE FROM
 	"GrandChild" "t1"
 WHERE
@@ -64,7 +59,6 @@ WHERE
 	)
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	COUNT(*)
 FROM

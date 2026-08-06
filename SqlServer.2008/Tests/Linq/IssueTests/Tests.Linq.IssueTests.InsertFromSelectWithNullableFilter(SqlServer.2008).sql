@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008
-
 INSERT INTO [InsertIssueTest]
 (
 	[Pk],
@@ -47,7 +46,6 @@ FROM
 	) [t2]
 
 -- SqlServer.2008
-
 SELECT
 	[t1].[Pk],
 	[t1].[ID],

@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	m_1.CategoryID,
 	d.ProductID,
@@ -11,7 +10,6 @@ FROM
 		INNER JOIN Products d ON m_1.CategoryID = d.CategoryID
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.CategoryID,
 	t1.CategoryName,

@@ -39,7 +39,6 @@ WHERE
 	[p].[ParentID] = @ParentID
 
 -- Sybase.Managed Sybase
-
 INSERT INTO [Parent]
 (
 	[ParentID],

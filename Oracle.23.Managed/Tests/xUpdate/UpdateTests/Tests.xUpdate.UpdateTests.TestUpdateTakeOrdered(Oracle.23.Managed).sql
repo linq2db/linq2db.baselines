@@ -205,7 +205,6 @@ WHERE
 	)
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	r."Value1"
 FROM

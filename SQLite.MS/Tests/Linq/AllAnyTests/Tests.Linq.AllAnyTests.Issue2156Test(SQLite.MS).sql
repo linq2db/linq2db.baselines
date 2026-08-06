@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT DISTINCT
 	[i].[FirstName],
 	[i].[PersonID],

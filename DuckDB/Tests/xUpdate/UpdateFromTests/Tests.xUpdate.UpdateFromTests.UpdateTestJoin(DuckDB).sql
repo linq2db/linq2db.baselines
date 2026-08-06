@@ -20,7 +20,6 @@ WHERE
 	t.id <> $someId AND t.id = UpdatedEntities.id
 
 -- DuckDB
-
 SELECT
 	v.id,
 	v.Value1,

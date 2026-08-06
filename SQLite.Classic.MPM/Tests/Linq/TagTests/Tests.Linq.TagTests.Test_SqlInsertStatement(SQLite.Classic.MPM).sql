@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 /* My Test */
 INSERT INTO [TestTable]
 (

@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"m_1"."Id",
 	"d"."Id",
@@ -11,7 +10,6 @@ FROM
 		LEFT JOIN "EntityMD" "a_ObjectD" ON "d"."FKD" = "a_ObjectD"."Id"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"e"."Id"
 FROM

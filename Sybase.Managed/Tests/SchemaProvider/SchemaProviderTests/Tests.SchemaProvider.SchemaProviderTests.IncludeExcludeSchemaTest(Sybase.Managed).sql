@@ -1,9 +1,7 @@
 ﻿-- Sybase.Managed Sybase
-
 select @@unicharsize
 
 -- Sybase.Managed Sybase
-
 select @@ncharsize
 
 -- Sybase.Managed Sybase
@@ -23,7 +21,6 @@ WHERE
 	type IN ('U','V')
 
 -- Sybase.Managed Sybase
-
 SELECT
 	i.id                                                              as TableID,
 	i.name                                                            as PrimaryKeyName,
@@ -41,7 +38,6 @@ WHERE
 	c.colid < i.keycnt + CASE WHEN i.indid = 1 THEN 1 ELSE 0 END
 
 -- Sybase.Managed Sybase
-
 SELECT
 	o.id                                             as TableID,
 	c.name                                           as Name,
@@ -66,7 +62,6 @@ WHERE
 	o.type IN ('U','V')
 
 -- Sybase.Managed Sybase
-
 SELECT * FROM (SELECT
 	o.name                           as Name,
 	c.tableid                        as ThisTableID,
@@ -356,15 +351,12 @@ WHERE
 	c.status = 64) as t WHERE ThisColumn IS NOT NULL
 
 -- Sybase.Managed Sybase
-
 sp_oledb_stored_procedures
 
 -- Sybase.Managed Sybase
-
 sp_oledb_getprocedurecolumns
 
 -- Sybase.Managed Sybase
-
 SET FMTONLY ON
 
 -- Sybase.Managed Sybase
@@ -374,11 +366,9 @@ SET     @RETURN_VALUE = 0
 [TestDataCore].[dbo].[AddIssue792Record]
 
 -- Sybase.Managed Sybase
-
 SET FMTONLY OFF
 
 -- Sybase.Managed Sybase
-
 SET FMTONLY ON
 
 -- Sybase.Managed Sybase
@@ -388,16 +378,13 @@ SET     @RETURN_VALUE = 0
 [TestDataCore].[dbo].[Person_SelectAll]
 
 -- Sybase.Managed Sybase
-
 SET FMTONLY OFF
 
 RollbackTransaction
 -- Sybase.Managed Sybase
-
 select @@unicharsize
 
 -- Sybase.Managed Sybase
-
 select @@ncharsize
 
 -- Sybase.Managed Sybase
@@ -417,7 +404,6 @@ WHERE
 	type IN ('U','V')
 
 -- Sybase.Managed Sybase
-
 SELECT
 	i.id                                                              as TableID,
 	i.name                                                            as PrimaryKeyName,
@@ -435,7 +421,6 @@ WHERE
 	c.colid < i.keycnt + CASE WHEN i.indid = 1 THEN 1 ELSE 0 END
 
 -- Sybase.Managed Sybase
-
 SELECT
 	o.id                                             as TableID,
 	c.name                                           as Name,
@@ -460,7 +445,6 @@ WHERE
 	o.type IN ('U','V')
 
 -- Sybase.Managed Sybase
-
 SELECT * FROM (SELECT
 	o.name                           as Name,
 	c.tableid                        as ThisTableID,
@@ -750,20 +734,16 @@ WHERE
 	c.status = 64) as t WHERE ThisColumn IS NOT NULL
 
 -- Sybase.Managed Sybase
-
 sp_oledb_stored_procedures
 
 -- Sybase.Managed Sybase
-
 sp_oledb_getprocedurecolumns
 
 RollbackTransaction
 -- Sybase.Managed Sybase
-
 select @@unicharsize
 
 -- Sybase.Managed Sybase
-
 select @@ncharsize
 
 -- Sybase.Managed Sybase
@@ -783,7 +763,6 @@ WHERE
 	type IN ('U','V')
 
 -- Sybase.Managed Sybase
-
 SELECT
 	i.id                                                              as TableID,
 	i.name                                                            as PrimaryKeyName,
@@ -801,7 +780,6 @@ WHERE
 	c.colid < i.keycnt + CASE WHEN i.indid = 1 THEN 1 ELSE 0 END
 
 -- Sybase.Managed Sybase
-
 SELECT
 	o.id                                             as TableID,
 	c.name                                           as Name,
@@ -826,7 +804,6 @@ WHERE
 	o.type IN ('U','V')
 
 -- Sybase.Managed Sybase
-
 SELECT * FROM (SELECT
 	o.name                           as Name,
 	c.tableid                        as ThisTableID,
@@ -1116,11 +1093,9 @@ WHERE
 	c.status = 64) as t WHERE ThisColumn IS NOT NULL
 
 -- Sybase.Managed Sybase
-
 sp_oledb_stored_procedures
 
 -- Sybase.Managed Sybase
-
 sp_oledb_getprocedurecolumns
 
 RollbackTransaction

@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT /* qb */
 	t.PersonID,
 	t.Diagnosis

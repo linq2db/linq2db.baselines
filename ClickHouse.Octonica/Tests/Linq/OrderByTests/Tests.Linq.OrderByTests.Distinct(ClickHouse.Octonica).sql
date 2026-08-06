@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT DISTINCT
 	p.ParentID,
 	p.Value1

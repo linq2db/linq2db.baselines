@@ -1,13 +1,10 @@
 ﻿-- SqlServer.Contained.MS SqlServer.2019
-
 select @@version
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT compatibility_level FROM sys.databases WHERE name = db_name()
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	SPECIFIC_CATALOG COLLATE DATABASE_DEFAULT + '.' + SPECIFIC_SCHEMA + '.' + SPECIFIC_NAME as ProcedureID,
 	SPECIFIC_CATALOG                                                                        as CatalogName,
@@ -27,7 +24,6 @@ FROM
 ORDER BY SPECIFIC_CATALOG, SPECIFIC_SCHEMA, SPECIFIC_NAME
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	SPECIFIC_CATALOG COLLATE DATABASE_DEFAULT + '.' + SPECIFIC_SCHEMA + '.' + SPECIFIC_NAME as ProcedureID,
 	ORDINAL_POSITION                                                                        as Ordinal,
@@ -53,11 +49,9 @@ FROM
 			x.name = 'MS_Description' AND x.class = 2
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 [TestDataMSContained].[dbo].[AddIssue792Record]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 [TestDataMSContained].[dbo].[DuplicateColumnNames]
 
 -- SqlServer.Contained.MS SqlServer.2019
@@ -77,15 +71,12 @@ SET     @output = 0
 [TestDataMSContained].[dbo].[ExecuteProcStringParameters]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 EXEC('SELECT * FROM [TestDataMSContained].[dbo].[GetParentByID](NULL)')
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 [TestDataMSContained].[dbo].[Issue1897]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 EXEC('SELECT * FROM [TestDataMSContained].[dbo].[Issue1921]()')
 
 -- SqlServer.Contained.MS SqlServer.2019
@@ -115,7 +106,6 @@ SET     @inputOutputStr = N''
 [TestDataMSContained].[dbo].[OutRefTest]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 [TestDataMSContained].[dbo].[Patient_SelectAll]
 
 -- SqlServer.Contained.MS SqlServer.2019
@@ -159,7 +149,6 @@ SET     @PersonID = 0
 [TestDataMSContained].[dbo].[Person_Insert_OutputParameter]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 [TestDataMSContained].[dbo].[Person_SelectAll]
 
 -- SqlServer.Contained.MS SqlServer.2019
@@ -233,7 +222,6 @@ SET     @output2 = 0
 [TestDataMSContained].[dbo].[QueryProcParameters]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 [TestDataMSContained].[dbo].[SelectImplicitColumn]
 
 -- SqlServer.Contained.MS SqlServer.2019
@@ -249,24 +237,19 @@ SET     @ReturnFullRow = 0
 [TestDataMSContained].[dbo].[VariableResults]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 EXEC('SELECT * FROM [TestDataMSContained].[TestSchema].[SchemaTableFunction](NULL)')
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 [TestDataMSContained].[TestSchema].[TestProcedure]
 
 RollbackTransaction
 -- SqlServer.Contained.MS SqlServer.2019
-
 select @@version
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT compatibility_level FROM sys.databases WHERE name = db_name()
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	SPECIFIC_CATALOG COLLATE DATABASE_DEFAULT + '.' + SPECIFIC_SCHEMA + '.' + SPECIFIC_NAME as ProcedureID,
 	SPECIFIC_CATALOG                                                                        as CatalogName,
@@ -286,7 +269,6 @@ FROM
 ORDER BY SPECIFIC_CATALOG, SPECIFIC_SCHEMA, SPECIFIC_NAME
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	SPECIFIC_CATALOG COLLATE DATABASE_DEFAULT + '.' + SPECIFIC_SCHEMA + '.' + SPECIFIC_NAME as ProcedureID,
 	ORDINAL_POSITION                                                                        as Ordinal,
@@ -344,7 +326,6 @@ SET     @params = N'@input int, @output int'
 sp_describe_first_result_set
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 EXEC('SELECT * FROM [TestDataMSContained].[dbo].[GetParentByID](NULL)')
 
 -- SqlServer.Contained.MS SqlServer.2019
@@ -356,7 +337,6 @@ SET     @params = N''
 sp_describe_first_result_set
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 EXEC('SELECT * FROM [TestDataMSContained].[dbo].[Issue1921]()')
 
 -- SqlServer.Contained.MS SqlServer.2019
@@ -530,7 +510,6 @@ SET     @ReturnFullRow = 0
 [TestDataMSContained].[dbo].[VariableResults]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 EXEC('SELECT * FROM [TestDataMSContained].[TestSchema].[SchemaTableFunction](NULL)')
 
 -- SqlServer.Contained.MS SqlServer.2019

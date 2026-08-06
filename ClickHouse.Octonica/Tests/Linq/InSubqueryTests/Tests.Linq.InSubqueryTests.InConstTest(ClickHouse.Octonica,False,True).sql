@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	c_1.ParentID,
 	c_1.Value1
@@ -14,7 +13,6 @@ WHERE
 	)
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.ParentID,
 	t1.Value1

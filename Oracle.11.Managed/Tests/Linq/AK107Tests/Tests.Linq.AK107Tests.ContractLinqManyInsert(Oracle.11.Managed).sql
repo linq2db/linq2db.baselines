@@ -18,7 +18,6 @@ RETURNING
 	"user_id" INTO :IDENTITY_PARAMETER
 
 -- Oracle.11.Managed Oracle11
-
 INSERT INTO "t_test_user_contract"
 (
 	"user_contract_id",

@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[p].[PersonID],
 	'123' + [p].[FirstName] + '456'

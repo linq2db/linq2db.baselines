@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
-
+﻿-- PostgreSQL.13 PostgreSQL12
 INSERT INTO "Parent"
 (
 	"ParentID",
@@ -8,8 +7,7 @@ INSERT INTO "Parent"
 VALUES
 (111001,NULL)
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 INSERT INTO "Child"
 (
 	"ParentID",

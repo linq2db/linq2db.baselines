@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 CREATE TABLE [FluentTemp_Cache]
 (
 	[ID]       Int          NOT NULL,
@@ -31,10 +30,9 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT
 	[t].[ID],
-	[t].[Value] as [Name],
+	[t].[Value],
 	[t].[LastName]
 FROM
 	[FluentTemp_Cache] [t]
@@ -42,11 +40,9 @@ WHERE
 	[t].[ID] = 1
 
 -- SqlCe
-
 DROP TABLE [FluentTemp_Cache]
 
 -- SqlCe
-
 CREATE TABLE [FluentTemp_Cache]
 (
 	[ID]       Int          NOT NULL,
@@ -78,10 +74,9 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT
 	[t].[ID],
-	[t].[Value] as [Name],
+	[t].[Value],
 	[t].[LastName]
 FROM
 	[FluentTemp_Cache] [t]
@@ -89,11 +84,9 @@ WHERE
 	[t].[ID] = 1
 
 -- SqlCe
-
 DROP TABLE [FluentTemp_Cache]
 
 -- SqlCe
-
 CREATE TABLE [FluentTemp_Cache]
 (
 	[ID]       Int          NOT NULL,
@@ -125,10 +118,9 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT
 	[t].[ID],
-	[t].[Column] as [Name],
+	[t].[Column],
 	[t].[LastName]
 FROM
 	[FluentTemp_Cache] [t]
@@ -136,11 +128,9 @@ WHERE
 	[t].[ID] = 1
 
 -- SqlCe
-
 DROP TABLE [FluentTemp_Cache]
 
 -- SqlCe
-
 CREATE TABLE [FluentTemp_Cache]
 (
 	[ID]       Int          NOT NULL,
@@ -172,10 +162,9 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT
 	[t].[ID],
-	[t].[Column] as [Name],
+	[t].[Column],
 	[t].[LastName]
 FROM
 	[FluentTemp_Cache] [t]
@@ -183,6 +172,5 @@ WHERE
 	[t].[ID] = 1
 
 -- SqlCe
-
 DROP TABLE [FluentTemp_Cache]
 

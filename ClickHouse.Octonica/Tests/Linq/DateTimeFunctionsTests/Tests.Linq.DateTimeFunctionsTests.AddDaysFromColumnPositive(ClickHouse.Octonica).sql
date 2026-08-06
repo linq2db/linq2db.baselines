@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 INSERT INTO LinqDataTypes
 (
 	ID,
@@ -24,7 +23,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	COUNT(*)
 FROM
@@ -33,7 +31,6 @@ WHERE
 	t.ID = 5000 AND addDays(t.DateTimeValue, t.SmallIntValue) > makeDateTime(2018, 1, 2, 0, 0, 0)
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	LinqDataTypes
 DELETE WHERE

@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -15,7 +14,6 @@ FROM
 		INNER JOIN [EntityD] [d] ON [m_1].[Id] = [d].[FK]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[FK],

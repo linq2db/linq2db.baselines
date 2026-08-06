@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT
 	[m_1].[PersonID],
 	[d].[PersonID],
@@ -11,7 +10,6 @@ WHERE
 	Lower([m_1].[FirstName]) LIKE '%test%' ESCAPE '~'
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[p].[FirstName],
 	[p].[PersonID]

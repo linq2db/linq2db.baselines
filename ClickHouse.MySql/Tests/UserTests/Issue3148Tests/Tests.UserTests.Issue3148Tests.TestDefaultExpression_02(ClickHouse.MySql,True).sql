@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	r.FirstName,
 	r.PersonID,
@@ -12,7 +11,6 @@ WHERE
 	r.MiddleName IS NOT NULL
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	r.FirstName,
 	r.PersonID,

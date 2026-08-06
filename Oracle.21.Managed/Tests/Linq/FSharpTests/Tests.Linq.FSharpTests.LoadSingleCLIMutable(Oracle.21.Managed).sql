@@ -1,12 +1,11 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
-	p."PersonID" as ID,
+	p."PersonID",
 	p."FirstName",
 	p."LastName",
 	p."MiddleName",
 	p."Gender",
-	a_Patient."PersonID",
+	a_Patient."PersonID" as "PersonID_1",
 	a_Patient."Diagnosis"
 FROM
 	"Person" p
@@ -16,14 +15,13 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
-	p."PersonID" as ID,
+	p."PersonID",
 	p."FirstName",
 	p."LastName",
 	p."MiddleName",
 	p."Gender",
-	a_Patient."PersonID",
+	a_Patient."PersonID" as "PersonID_1",
 	a_Patient."Diagnosis"
 FROM
 	"Person" p

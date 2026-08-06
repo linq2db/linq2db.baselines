@@ -1,12 +1,10 @@
 ﻿-- Oracle.18.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"LinqDataTypes" c_1
 WHERE
 	c_1.ID > 1000
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 INSERT INTO "LinqDataTypes"
 (
 	ID,
@@ -26,7 +24,6 @@ FROM
 	) t2
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"LinqDataTypes" c_1
 WHERE

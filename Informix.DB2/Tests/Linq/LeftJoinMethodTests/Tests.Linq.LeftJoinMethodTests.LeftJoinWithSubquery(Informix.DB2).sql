@@ -17,7 +17,6 @@ FROM
 		LEFT JOIN "Order" o ON c_2.Id = o.CustomerId
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1.Name
@@ -25,7 +24,6 @@ FROM
 	Customer t1
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1.CustomerId,

@@ -1,9 +1,7 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DROP TABLE IF EXISTS `CreateIfNotExistsTable`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 CREATE TEMPORARY TABLE `CreateIfNotExistsTable`
 (
 	`Id`    INT NOT NULL,
@@ -11,7 +9,6 @@ CREATE TEMPORARY TABLE `CreateIfNotExistsTable`
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value`
@@ -19,7 +16,6 @@ FROM
 	`CreateIfNotExistsTable` `t1`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 CREATE TABLE IF NOT EXISTS `CreateIfNotExistsTable`
 (
 	`Id`    INT NOT NULL,
@@ -27,10 +23,8 @@ CREATE TABLE IF NOT EXISTS `CreateIfNotExistsTable`
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DROP TABLE IF EXISTS `CreateIfNotExistsTable`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DROP TEMPORARY TABLE IF EXISTS `CreateIfNotExistsTable`
 

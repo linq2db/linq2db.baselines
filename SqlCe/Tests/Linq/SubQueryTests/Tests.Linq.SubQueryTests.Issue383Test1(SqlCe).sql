@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[m_1].[City_Code],
 	[d_1].[City_Name]
@@ -26,7 +25,6 @@ FROM
 		INNER JOIN [Cities] [d_1] ON [d_1].[City_Code] = [m_1].[City_Code]
 
 -- SqlCe
-
 SELECT
 	[a].[First_Name],
 	[a].[Last_Name],
@@ -34,7 +32,7 @@ SELECT
 	[cp].[Street_Number],
 	[cp].[Street_Name],
 	[cp].[City_Code],
-	[cp].[State] as [State_1],
+	[cp].[State],
 	[cp].[Zip_Code],
 	[cp].[Zip_Plus_4],
 	[cd].[Effective_Date]

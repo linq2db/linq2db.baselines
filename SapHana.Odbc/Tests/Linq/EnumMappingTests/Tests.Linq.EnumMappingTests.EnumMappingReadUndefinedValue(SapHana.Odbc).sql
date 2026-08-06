@@ -8,7 +8,6 @@ WHERE
 	"r"."ID" >= 101 AND "r"."ID" < ?
 
 -- SapHana.Odbc SapHanaOdbc
-
 INSERT INTO "LinqDataTypes"
 (
 	"ID",
@@ -21,7 +20,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"r"."ID",
 	"r"."BigIntValue"

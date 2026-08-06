@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT DISTINCT
 	toYear(a_Types.DateTimeValue)
 FROM

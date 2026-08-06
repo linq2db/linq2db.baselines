@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
-
 INSERT INTO [TestTempTable]
 (
 	[Id],
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- SqlServer.SA.MS SqlServer.2019
-
 IF (OBJECT_ID(N'[TempTable]', N'U') IS NULL)
 	CREATE TABLE [TempTable]
 	(
@@ -23,7 +21,6 @@ IF (OBJECT_ID(N'[TempTable]', N'U') IS NULL)
 	)
 
 -- SqlServer.SA.MS SqlServer.2019
-
 INSERT INTO [TempTable]
 (
 	[Id],
@@ -36,7 +33,6 @@ FROM
 	[TestTempTable] [t1]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 INSERT INTO [TestTempTable]
 (
 	[Id],
@@ -49,7 +45,6 @@ VALUES
 )
 
 -- SqlServer.SA.MS SqlServer.2019
-
 INSERT INTO [TempTable]
 (
 	[Id],
@@ -62,7 +57,6 @@ VALUES
 )
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -72,7 +66,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Renamed]
@@ -82,6 +75,5 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [TempTable]
 

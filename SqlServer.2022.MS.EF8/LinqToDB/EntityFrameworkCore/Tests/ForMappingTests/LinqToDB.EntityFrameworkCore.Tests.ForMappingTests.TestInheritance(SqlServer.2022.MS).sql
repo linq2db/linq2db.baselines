@@ -16,7 +16,6 @@ OUTPUT INSERTED.[Id], i._Position;
 
 
 -- SqlServer.2022
-
 SELECT
 	[t1].[Discriminator],
 	[t1].[Id]

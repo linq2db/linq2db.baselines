@@ -14,7 +14,6 @@ WHERE
 	[r].[Column] = @Column AND [r].[ColumnNullable] = @ColumnNullable
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[r].[Id],
 	[r].[Column],
@@ -26,7 +25,6 @@ WHERE
 	[r].[ColumnNullable] = 'bd3973a5-4323-4dd8-9f4f-df9f93e2a627'
 
 -- SqlServer.2008.MS SqlServer.2008
-
 DELETE [t1]
 FROM
 	[GuidTable] [t1]
@@ -74,7 +72,6 @@ VALUES
 )
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],
@@ -85,13 +82,11 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 DELETE [t1]
 FROM
 	[GuidTable] [t1]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 INSERT INTO [GuidTable]
 (
 	[Id],
@@ -103,7 +98,6 @@ VALUES
 (2,'a948600d-de21-4f74-8ac2-9516b287076e','bd3973a5-4323-4dd8-9f4f-df9f93e2a627')
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],
@@ -114,7 +108,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 DELETE [t1]
 FROM
 	[GuidTable] [t1]
@@ -122,7 +115,6 @@ FROM
 INSERT BULK [GuidTable](Id, Column, ColumnNullable)
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],

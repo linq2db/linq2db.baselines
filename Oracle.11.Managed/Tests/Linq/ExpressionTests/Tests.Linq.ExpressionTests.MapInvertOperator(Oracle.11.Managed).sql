@@ -10,7 +10,6 @@ SET
 	"Value" = BITAND((t1."Value" + :addMask) - BITAND(t1."Value", :addMask), -1 - :removeMask)
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Value"

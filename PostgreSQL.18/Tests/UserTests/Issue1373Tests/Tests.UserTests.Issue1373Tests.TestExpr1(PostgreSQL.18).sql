@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
-
+﻿-- PostgreSQL.18 PostgreSQL12
 INSERT INTO "Issue1373Tests"
 (
 	"Id",
@@ -11,8 +10,7 @@ VALUES
 	NULL
 )
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 INSERT INTO "Issue1373Tests"
 (
 	"Id",
@@ -24,8 +22,7 @@ VALUES
 	NULL
 )
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 INSERT INTO "Issue1373Tests"
 (
 	"Id",
@@ -37,8 +34,7 @@ VALUES
 	'test'
 )
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Field1"

@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	SUM(`grp_1`.`MoneyValue`),
 	`grp_1`.`Year_1`,

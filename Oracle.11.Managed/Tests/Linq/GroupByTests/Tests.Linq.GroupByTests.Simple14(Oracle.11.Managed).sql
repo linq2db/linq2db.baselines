@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	m_1."ParentID",
 	d_1."Key_1"
@@ -18,7 +17,6 @@ FROM
 		) d_1 ON m_1."ParentID" = d_1."Key_1"
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	p."ParentID"
 FROM

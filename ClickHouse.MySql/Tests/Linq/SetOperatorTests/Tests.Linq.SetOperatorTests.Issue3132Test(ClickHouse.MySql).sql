@@ -1,7 +1,6 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
-	x.MiddleName as Key_1,
+	x.MiddleName,
 	COUNT(*) as Count_1
 FROM
 	Person x
@@ -11,7 +10,7 @@ GROUP BY
 	x.MiddleName
 UNION ALL
 SELECT
-	x_1.MiddleName as Key_1,
+	x_1.MiddleName as MiddleName,
 	COUNT(*) as Count_1
 FROM
 	Person x_1
@@ -21,7 +20,7 @@ GROUP BY
 	x_1.MiddleName
 UNION ALL
 SELECT
-	x_2.MiddleName as Key_1,
+	x_2.MiddleName as MiddleName,
 	COUNT(*) as Count_1
 FROM
 	Person x_2
@@ -31,7 +30,7 @@ GROUP BY
 	x_2.MiddleName
 UNION ALL
 SELECT
-	x_3.MiddleName as Key_1,
+	x_3.MiddleName as MiddleName,
 	COUNT(*) as Count_1
 FROM
 	Person x_3
@@ -41,7 +40,7 @@ GROUP BY
 	x_3.MiddleName
 UNION ALL
 SELECT
-	x_4.MiddleName as Key_1,
+	x_4.MiddleName as MiddleName,
 	COUNT(*) as Count_1
 FROM
 	Person x_4
@@ -51,7 +50,7 @@ GROUP BY
 	x_4.MiddleName
 UNION ALL
 SELECT
-	x_5.MiddleName as Key_1,
+	x_5.MiddleName as MiddleName,
 	COUNT(*) as Count_1
 FROM
 	Person x_5
@@ -61,7 +60,7 @@ GROUP BY
 	x_5.MiddleName
 UNION ALL
 SELECT
-	x_6.MiddleName as Key_1,
+	x_6.MiddleName as MiddleName,
 	COUNT(*) as Count_1
 FROM
 	Person x_6
@@ -71,7 +70,7 @@ GROUP BY
 	x_6.MiddleName
 UNION ALL
 SELECT
-	x_7.MiddleName as Key_1,
+	x_7.MiddleName as MiddleName,
 	COUNT(*) as Count_1
 FROM
 	Person x_7
@@ -81,7 +80,7 @@ GROUP BY
 	x_7.MiddleName
 UNION ALL
 SELECT
-	x_8.MiddleName as Key_1,
+	x_8.MiddleName as MiddleName,
 	COUNT(*) as Count_1
 FROM
 	Person x_8
@@ -91,7 +90,7 @@ GROUP BY
 	x_8.MiddleName
 UNION ALL
 SELECT
-	x_9.MiddleName as Key_1,
+	x_9.MiddleName as MiddleName,
 	COUNT(*) as Count_1
 FROM
 	Person x_9
@@ -101,7 +100,7 @@ GROUP BY
 	x_9.MiddleName
 UNION ALL
 SELECT
-	x_10.MiddleName as Key_1,
+	x_10.MiddleName as MiddleName,
 	COUNT(*) as Count_1
 FROM
 	Person x_10
@@ -111,7 +110,7 @@ GROUP BY
 	x_10.MiddleName
 UNION ALL
 SELECT
-	x_11.MiddleName as Key_1,
+	x_11.MiddleName as MiddleName,
 	COUNT(*) as Count_1
 FROM
 	Person x_11
@@ -121,7 +120,7 @@ GROUP BY
 	x_11.MiddleName
 UNION ALL
 SELECT
-	x_12.MiddleName as Key_1,
+	x_12.MiddleName as MiddleName,
 	COUNT(*) as Count_1
 FROM
 	Person x_12
@@ -131,7 +130,7 @@ GROUP BY
 	x_12.MiddleName
 UNION ALL
 SELECT
-	x_13.MiddleName as Key_1,
+	x_13.MiddleName as MiddleName,
 	COUNT(*) as Count_1
 FROM
 	Person x_13
@@ -141,7 +140,7 @@ GROUP BY
 	x_13.MiddleName
 UNION ALL
 SELECT
-	x_14.MiddleName as Key_1,
+	x_14.MiddleName as MiddleName,
 	COUNT(*) as Count_1
 FROM
 	Person x_14
@@ -151,7 +150,7 @@ GROUP BY
 	x_14.MiddleName
 UNION ALL
 SELECT
-	x_15.MiddleName as Key_1,
+	x_15.MiddleName as MiddleName,
 	COUNT(*) as Count_1
 FROM
 	Person x_15
@@ -161,7 +160,7 @@ GROUP BY
 	x_15.MiddleName
 UNION ALL
 SELECT
-	x_16.MiddleName as Key_1,
+	x_16.MiddleName as MiddleName,
 	COUNT(*) as Count_1
 FROM
 	Person x_16
@@ -171,7 +170,7 @@ GROUP BY
 	x_16.MiddleName
 UNION ALL
 SELECT
-	x_17.MiddleName as Key_1,
+	x_17.MiddleName as MiddleName,
 	COUNT(*) as Count_1
 FROM
 	Person x_17
@@ -181,7 +180,7 @@ GROUP BY
 	x_17.MiddleName
 UNION ALL
 SELECT
-	x_18.MiddleName as Key_1,
+	x_18.MiddleName as MiddleName,
 	COUNT(*) as Count_1
 FROM
 	Person x_18
@@ -191,7 +190,7 @@ GROUP BY
 	x_18.MiddleName
 UNION ALL
 SELECT
-	x_19.MiddleName as Key_1,
+	x_19.MiddleName as MiddleName,
 	COUNT(*) as Count_1
 FROM
 	Person x_19
@@ -201,7 +200,7 @@ GROUP BY
 	x_19.MiddleName
 UNION ALL
 SELECT
-	x_20.MiddleName as Key_1,
+	x_20.MiddleName as MiddleName,
 	COUNT(*) as Count_1
 FROM
 	Person x_20

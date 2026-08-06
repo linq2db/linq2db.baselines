@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016
-
 IF (OBJECT_ID(N'[tempdb]..[#temp_table1]', N'U') IS NULL)
 	CREATE TABLE [tempdb]..[#temp_table1]
 	(
@@ -12,7 +11,6 @@ IF (OBJECT_ID(N'[tempdb]..[#temp_table1]', N'U') IS NULL)
 INSERT BULK [tempdb]..[#temp_table1](ID, Value)
 
 -- SqlServer.2016
-
 IF (OBJECT_ID(N'[tempdb]..[#temp_table2]', N'U') IS NULL)
 	CREATE TABLE [tempdb]..[#temp_table2]
 	(
@@ -23,7 +21,6 @@ IF (OBJECT_ID(N'[tempdb]..[#temp_table2]', N'U') IS NULL)
 	)
 
 -- SqlServer.2016
-
 INSERT INTO [tempdb]..[#temp_table2]
 (
 	[ID],
@@ -36,7 +33,6 @@ FROM
 	[tempdb]..[#temp_table1] [t1]
 
 -- SqlServer.2016
-
 SELECT
 	[t1].[ID],
 	[t1].[Value]
@@ -44,7 +40,6 @@ FROM
 	[tempdb]..[#temp_table1] [t1]
 
 -- SqlServer.2016
-
 SELECT
 	[t1].[ID],
 	[t1].[Value]
@@ -52,7 +47,6 @@ FROM
 	[tempdb]..[#temp_table2] [t1]
 
 -- SqlServer.2016
-
 INSERT INTO [tempdb]..[#temp_table1]
 (
 	[ID],
@@ -81,18 +75,14 @@ VALUES
 INSERT BULK [tempdb]..[#temp_table1](ID, Value)
 
 -- SqlServer.2016
-
 TRUNCATE TABLE [tempdb]..[#temp_table1]
 
 -- SqlServer.2016
-
 TRUNCATE TABLE [tempdb]..[#temp_table2]
 
 -- SqlServer.2016
-
 DROP TABLE IF EXISTS [tempdb]..[#temp_table2]
 
 -- SqlServer.2016
-
 DROP TABLE IF EXISTS [tempdb]..[#temp_table1]
 

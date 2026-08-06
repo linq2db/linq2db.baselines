@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 INSERT INTO SomeTable
 (
 	Id,
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	t1.Id,
 	t1.ClassProp,

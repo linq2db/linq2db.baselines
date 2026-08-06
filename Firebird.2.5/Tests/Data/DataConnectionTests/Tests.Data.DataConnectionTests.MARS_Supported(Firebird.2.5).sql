@@ -1,12 +1,10 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	COUNT(*)
 FROM
 	"Person" "t1"
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1"."FirstName",
 	"t1"."PersonID",

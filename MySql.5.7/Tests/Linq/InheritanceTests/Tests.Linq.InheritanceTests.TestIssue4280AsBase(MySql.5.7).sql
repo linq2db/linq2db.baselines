@@ -45,7 +45,6 @@ VALUES
 )
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`t1`.`DeviceType`,
 	`t1`.`Id`,
@@ -92,7 +91,6 @@ WHERE
 	`t1`.`Id` = @Id
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`t1`.`DeviceType`,
 	`t1`.`Id`,

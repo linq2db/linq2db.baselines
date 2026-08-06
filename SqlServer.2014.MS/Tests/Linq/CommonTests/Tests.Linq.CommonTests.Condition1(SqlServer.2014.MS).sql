@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	CASE
 		WHEN LEN([p].[FirstName] + N'.') <> 1 THEN [p].[FirstName]

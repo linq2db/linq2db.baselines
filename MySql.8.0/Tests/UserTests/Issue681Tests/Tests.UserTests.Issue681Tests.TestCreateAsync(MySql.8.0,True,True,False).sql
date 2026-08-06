@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	DATABASE()
 FROM
@@ -7,11 +6,9 @@ FROM
 LIMIT 1
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 DROP TABLE IF EXISTS `Issue681Table2`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 CREATE TABLE `testdata`.`Issue681Table2`
 (
 	`ID`    INT NOT NULL,
@@ -21,6 +18,5 @@ CREATE TABLE `testdata`.`Issue681Table2`
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 DROP TABLE IF EXISTS `Issue681Table2`
 

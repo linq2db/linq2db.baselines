@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025
-
 SELECT
 	[t3].[ColorName],
 	[t3].[StyleName],
@@ -18,14 +17,14 @@ FROM
 				LEFT JOIN [SomeStyle] [a_Style] ON [t2].[StyleId] = [a_Style].[Id]
 				LEFT JOIN [SomeColor] [a_Color_1] ON [t2].[ColorId] = [a_Color_1].[Id]
 				OUTER APPLY (VALUES
-					([a_Color].[Name],[a_Style].[Name],Coalesce(IIF([a_Color_1].[Id] IS NULL, NULL, [t2].[ColorId]), 0),[a_Color].[Name],[a_Style].[Name],IIF([a_Color].[Name] = N'Red', (
+					([a_Color].[Name],[a_Style].[Name],Coalesce(IIF([a_Color_1].[Id] IS NULL, NULL, [t2].[ColorId]), 0),IIF([a_Color].[Name] = N'Red', (
 						SELECT
 							COUNT(*) as [Conditional]
 						FROM
 							[SomeItem] [t1]
-					), 0),[a_Style].[Name]),
-					(NULL,[a_Style].[Name],Coalesce(IIF([a_Color_1].[Id] IS NULL, NULL, [t2].[ColorId]), 0),NULL,[a_Style].[Name],0,[a_Style].[Name])
-				) [it]([ColorName], [StyleName], [ColorId], [ColorName0], [StyleName0], [Conditional], [StyleName1])
+					), 0)),
+					(NULL,[a_Style].[Name],Coalesce(IIF([a_Color_1].[Id] IS NULL, NULL, [t2].[ColorId]), 0),0)
+				) [it]([ColorName], [StyleName], [ColorId], [Conditional])
 		WHERE
 			[it].[ColorName] = N'Red'
 	) [t3]
@@ -33,7 +32,6 @@ ORDER BY
 	[t3].[StrValue]
 
 -- SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[ColorId],
@@ -48,7 +46,6 @@ FROM
 		LEFT JOIN [SomeStyle] [a_Style] ON [t1].[StyleId] = [a_Style].[Id]
 
 -- SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[ColorId],

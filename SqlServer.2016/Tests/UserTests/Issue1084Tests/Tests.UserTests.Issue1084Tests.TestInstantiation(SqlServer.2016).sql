@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016
-
 SELECT
 	[k_1].[Id],
 	[k_1].[Number],

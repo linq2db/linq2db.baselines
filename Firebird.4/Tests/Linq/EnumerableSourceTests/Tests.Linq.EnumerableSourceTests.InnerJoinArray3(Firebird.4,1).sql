@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 SELECT
 	"p"."FirstName",
 	"p"."PersonID",
@@ -18,7 +17,6 @@ FROM
 			SELECT CAST('Doe' AS VARCHAR(3)) FROM rdb$database) "n" ON "p"."LastName" = "n"."item"
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"p"."FirstName",
 	"p"."PersonID",

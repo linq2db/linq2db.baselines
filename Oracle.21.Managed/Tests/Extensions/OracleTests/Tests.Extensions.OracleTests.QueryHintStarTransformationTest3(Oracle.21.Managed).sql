@@ -1,5 +1,4 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT /*+ QB_NAME(qb) STAR_TRANSFORMATION(@qb) */
 	p."ParentID",
 	p."Value1"

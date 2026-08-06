@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.DetailId,
 	t1.MasterId,
@@ -8,7 +7,6 @@ FROM
 	DetailClass t1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	COUNT(*)
 FROM

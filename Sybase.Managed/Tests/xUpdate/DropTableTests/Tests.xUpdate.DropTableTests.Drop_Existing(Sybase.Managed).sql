@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 CREATE TABLE [Table]
 (
 	[ID] Int NOT NULL,
@@ -8,6 +7,5 @@ CREATE TABLE [Table]
 )
 
 -- Sybase.Managed Sybase
-
 DROP TABLE [Table]
 

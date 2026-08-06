@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT
 	[t5].[WithParentReference],
 	[t5].[WithParentReferenceCustom1],

@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[serv].[PersonID]
 FROM

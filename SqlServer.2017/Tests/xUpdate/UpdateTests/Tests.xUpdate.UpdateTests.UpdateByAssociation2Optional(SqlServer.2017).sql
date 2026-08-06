@@ -13,7 +13,6 @@ WHERE
 	[p].[Id] = @id
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Id],
 	[t1].[Field]

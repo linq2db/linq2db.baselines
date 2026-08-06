@@ -169,7 +169,6 @@ VALUES
 )
 
 -- Access.Jet.OleDb AccessOleDb
-
 UPDATE
 	[Parent] [u],
 	(
@@ -189,7 +188,6 @@ WHERE
 	[u].[ParentID] = [t1].[ParentID] AND ([u].[Value1] = [t1].[Value1] OR [u].[Value1] IS NULL AND [t1].[Value1] IS NULL)
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[r].[Value1]
 FROM

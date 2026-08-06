@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 SELECT
 	COUNT(*)
 FROM
@@ -8,7 +7,6 @@ WHERE
 	[s].[Int] IS NULL
 
 -- SqlServer.2022
-
 SELECT
 	COUNT(*)
 FROM

@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 WITH CTE_1
 (
 	ID,
@@ -38,7 +37,6 @@ WHERE
 	r.ID = 2
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 WITH CTE_1 ("c1")
 AS
 (

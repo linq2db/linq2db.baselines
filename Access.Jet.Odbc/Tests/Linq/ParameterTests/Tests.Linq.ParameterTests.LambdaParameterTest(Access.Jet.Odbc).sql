@@ -11,7 +11,6 @@ WHERE
 	[r].[ParentID] = ?
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

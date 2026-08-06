@@ -1,12 +1,10 @@
 ﻿-- Firebird.5 Firebird4
-
 DELETE FROM
 	"Person" "t1"
 WHERE
 	"t1"."PersonID" > 4
 
 -- Firebird.5 Firebird4
-
 UPDATE
 	"UpdateSubquerySourceTable"
 SET
@@ -30,7 +28,6 @@ WHERE
 	"UpdateSubquerySourceTable"."Id" = 1
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."FirstName",
@@ -41,7 +38,6 @@ ORDER BY
 	"t1"."Id"
 
 -- Firebird.5 Firebird4
-
 DELETE FROM
 	"Person" "t1"
 WHERE

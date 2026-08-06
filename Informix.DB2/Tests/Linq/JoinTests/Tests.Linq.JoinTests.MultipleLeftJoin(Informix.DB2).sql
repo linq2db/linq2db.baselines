@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	parent_1.ParentID,
 	childLeftJoin.ChildID,

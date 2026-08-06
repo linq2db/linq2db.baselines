@@ -1,9 +1,7 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
-
 SET TEXTSIZE 2048
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	@@TEXTSIZE
 

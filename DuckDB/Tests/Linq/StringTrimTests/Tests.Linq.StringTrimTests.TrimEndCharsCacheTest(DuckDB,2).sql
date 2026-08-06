@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	RTRIM(t.VarCharColumn, 'ab')
 FROM

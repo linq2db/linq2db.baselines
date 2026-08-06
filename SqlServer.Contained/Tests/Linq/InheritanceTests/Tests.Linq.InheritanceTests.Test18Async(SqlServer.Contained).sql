@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 SELECT DISTINCT
 	[p1].[PersonID],
 	[p1].[Gender],

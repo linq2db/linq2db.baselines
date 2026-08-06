@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 CREATE TABLE IF NOT EXISTS FluentTemp_Update
 (
 	ID       Int          NOT NULL,
@@ -39,12 +38,11 @@ SET     @LastName = 'Dory'
 UPDATE
 	FluentTemp_Update t
 SET
-	"Value" = @Name::NVarChar(7),
-	LastName = @LastName::NVarChar(4)
+	"Value" = @Name,
+	LastName = @LastName
 WHERE
 	t.ID = 1
 
 -- Informix.DB2 Informix
-
 DROP TABLE IF EXISTS FluentTemp_Update
 

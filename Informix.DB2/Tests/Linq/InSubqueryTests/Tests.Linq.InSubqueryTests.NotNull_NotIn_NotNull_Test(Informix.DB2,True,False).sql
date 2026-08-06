@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	t.PK,
 	t.ID
@@ -18,7 +17,6 @@ ORDER BY
 	t.PK
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.PK,
 	t1.ID
@@ -26,7 +24,6 @@ FROM
 	test_in_1 t1
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.PK,
 	t1.ID

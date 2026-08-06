@@ -1,13 +1,10 @@
 ﻿-- SqlServer.Contained.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [TestTrun]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [TestTrunDetail]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 CREATE TABLE [TestTrunDetail]
 (
 	[ID]         Int NOT NULL,
@@ -18,7 +15,6 @@ CREATE TABLE [TestTrunDetail]
 )
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 CREATE TABLE [TestTrun]
 (
 	[ID]     Int             NOT NULL,
@@ -28,14 +24,11 @@ CREATE TABLE [TestTrun]
 )
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 TRUNCATE TABLE [TestTrun]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 DROP TABLE [TestTrun]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 DROP TABLE [TestTrunDetail]
 

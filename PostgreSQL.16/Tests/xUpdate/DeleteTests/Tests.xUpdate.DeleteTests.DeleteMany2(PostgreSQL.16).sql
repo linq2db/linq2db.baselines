@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 INSERT INTO "Parent"
 (
 	"ParentID"
@@ -9,8 +8,7 @@ VALUES
 	1001
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 INSERT INTO "Child"
 (
 	"ParentID",
@@ -22,8 +20,7 @@ VALUES
 	1
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 INSERT INTO "GrandChild"
 (
 	"ParentID",
@@ -37,8 +34,7 @@ VALUES
 	1
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 INSERT INTO "GrandChild"
 (
 	"ParentID",
@@ -52,8 +48,7 @@ VALUES
 	2
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 INSERT INTO "GrandChild"
 (
 	"ParentID",
@@ -67,8 +62,7 @@ VALUES
 	3
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 INSERT INTO "Child"
 (
 	"ParentID",
@@ -80,8 +74,7 @@ VALUES
 	2
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 INSERT INTO "GrandChild"
 (
 	"ParentID",
@@ -95,8 +88,7 @@ VALUES
 	1
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 INSERT INTO "GrandChild"
 (
 	"ParentID",
@@ -110,8 +102,7 @@ VALUES
 	2
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 INSERT INTO "GrandChild"
 (
 	"ParentID",
@@ -125,8 +116,7 @@ VALUES
 	3
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DELETE FROM
 	"GrandChild" t1
 WHERE
@@ -144,8 +134,7 @@ WHERE
 			t1."GrandChildID" = "a_GrandChildren"."GrandChildID"
 	)
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DELETE FROM
 	"Child" t1
 WHERE
@@ -160,22 +149,19 @@ WHERE
 			t1."ChildID" = "a_Children"."ChildID"
 	)
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DELETE FROM
 	"GrandChild" c_1
 WHERE
 	c_1."ParentID" >= 1000
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DELETE FROM
 	"Child" c_1
 WHERE
 	c_1."ParentID" >= 1000
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DELETE FROM
 	"Parent" c_1
 WHERE

@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 INSERT INTO [Issue3766Table]
 (
 	[Id],
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 UPDATE
 	[Issue3766Table]
 SET

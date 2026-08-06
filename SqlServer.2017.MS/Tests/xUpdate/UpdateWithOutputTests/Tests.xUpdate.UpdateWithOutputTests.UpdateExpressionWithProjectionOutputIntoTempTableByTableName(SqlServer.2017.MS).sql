@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
-
 CREATE TABLE [tempdb]..[#TableWithData_destination]
 (
 	[Id]       Int          NOT NULL,
@@ -10,7 +9,6 @@ CREATE TABLE [tempdb]..[#TableWithData_destination]
 )
 
 -- SqlServer.2017.MS SqlServer.2017
-
 UPDATE
 	[t]
 SET
@@ -32,7 +30,6 @@ FROM
 		INNER JOIN [DestinationTable_target] [t] ON [t].[Id] = [s].[Id]
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t1].[Id],
 	[t1].[Value],
@@ -41,6 +38,5 @@ FROM
 	[tempdb]..[#TableWithData_destination] [t1]
 
 -- SqlServer.2017.MS SqlServer.2017
-
 DROP TABLE IF EXISTS [tempdb]..[#TableWithData_destination]
 

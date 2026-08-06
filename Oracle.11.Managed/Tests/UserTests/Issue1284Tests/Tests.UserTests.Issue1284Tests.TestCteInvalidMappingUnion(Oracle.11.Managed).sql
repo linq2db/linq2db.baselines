@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 WITH CTE_1
 (
 	"entry_FirstName",
@@ -56,7 +55,6 @@ WHERE
 	ROWNUM <= 1
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."FirstName",
 	t1.ID,

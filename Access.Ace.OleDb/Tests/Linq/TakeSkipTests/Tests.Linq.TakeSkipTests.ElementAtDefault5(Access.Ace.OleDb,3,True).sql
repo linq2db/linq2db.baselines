@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT TOP 4
 	[t1].[FirstName],
 	[t1].[PersonID],

@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	MAX("t1".ID)
 FROM
@@ -20,8 +19,8 @@ INSERT INTO "AllTypes"
 VALUES
 (
 	1000,
-	CAST(@real AS Real),
-	CAST(@dbl AS DOUBLE PRECISION)
+	@real,
+	@dbl
 )
 
 -- Firebird.3 Firebird3
@@ -39,8 +38,8 @@ INSERT INTO "AllTypes"
 VALUES
 (
 	1001,
-	CAST(@real AS Real),
-	CAST(@dbl AS DOUBLE PRECISION)
+	@real,
+	@dbl
 )
 
 -- Firebird.3 Firebird3
@@ -58,8 +57,8 @@ INSERT INTO "AllTypes"
 VALUES
 (
 	1002,
-	CAST(@real AS Real),
-	CAST(@dbl AS DOUBLE PRECISION)
+	@real,
+	@dbl
 )
 
 -- Firebird.3 Firebird3

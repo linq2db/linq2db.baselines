@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t.ID,
 	t.MoneyValue,
@@ -18,7 +17,6 @@ WHERE
 LIMIT 1
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	LinqDataTypes
 UPDATE
@@ -27,7 +25,6 @@ WHERE
 	ID = 1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t.ID,
 	t.MoneyValue,
@@ -46,7 +43,6 @@ WHERE
 LIMIT 1
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	LinqDataTypes
 UPDATE

@@ -1,12 +1,10 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 DELETE FROM
 	"Parent" t1
 WHERE
 	t1."ParentID" > 1000
 
 -- Oracle.11.Managed Oracle11
-
 UPDATE
 	"Parent"
 SET

@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"o"."ParentID",
 	(
@@ -22,14 +21,12 @@ FROM
 	"Parent" "o"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	COUNT(*)
 FROM
 	"Parent" "o"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"x"."ParentID",
 	"x"."CountResult",

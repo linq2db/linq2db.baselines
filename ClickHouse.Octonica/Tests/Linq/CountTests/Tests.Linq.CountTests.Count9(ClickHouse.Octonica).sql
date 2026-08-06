@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	COUNT(*)
 FROM
@@ -9,7 +8,6 @@ WHERE
 	a_Parent.ParentID = 1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	a_Parent.ParentID
 FROM

@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.ChildID,
 	t1.ParentID,
@@ -7,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			toInt32(1) as OrderElement,
+			Abs(1) as OrderElement,
 			ch.ChildID as ChildID,
 			ch.ParentID as ParentID
 		FROM

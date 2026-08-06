@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	CASE
 		WHEN [x].[PersonID] = 3 THEN [x].[FirstName]

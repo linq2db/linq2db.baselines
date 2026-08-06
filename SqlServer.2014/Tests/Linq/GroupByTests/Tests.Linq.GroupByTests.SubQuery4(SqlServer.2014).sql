@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014
-
 SELECT
 	[g_2].[n],
 	SUM([g_2].[ParentID])

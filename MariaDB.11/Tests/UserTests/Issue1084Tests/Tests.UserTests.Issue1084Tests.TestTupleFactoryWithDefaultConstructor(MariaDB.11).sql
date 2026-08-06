@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`k_1`.`StatusBitmask` & 128,
 	`g_1`.`StatusBitmask` & 128

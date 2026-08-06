@@ -1,5 +1,4 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE TABLE "FluentTemp_Update"
@@ -54,7 +53,6 @@ WHERE
 	t.ID = 1
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp_Update"';
 EXCEPTION

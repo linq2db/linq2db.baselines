@@ -35,7 +35,6 @@ WHERE
 	[t1].[RN] > @skip AND [u].[id] = [t1].[id]
 
 -- SqlServer.2005
-
 SELECT
 	[v].[id],
 	[v].[Value1],

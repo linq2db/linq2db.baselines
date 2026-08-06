@@ -14,7 +14,6 @@ WHERE
 	[r].[Column] = @Column AND [r].[ColumnNullable] = @ColumnNullable
 
 -- SqlServer.2005
-
 SELECT
 	[r].[Id],
 	[r].[Column],
@@ -25,7 +24,6 @@ WHERE
 	[r].[Column] = 2 AND [r].[ColumnNullable] = 3
 
 -- SqlServer.2005
-
 DELETE [t1]
 FROM
 	[IntEnumTable] [t1]
@@ -73,7 +71,6 @@ VALUES
 )
 
 -- SqlServer.2005
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],
@@ -84,13 +81,11 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlServer.2005
-
 DELETE [t1]
 FROM
 	[IntEnumTable] [t1]
 
 -- SqlServer.2005
-
 INSERT INTO [IntEnumTable]
 (
 	[Id],
@@ -101,7 +96,6 @@ SELECT 1,1,NULL UNION ALL
 SELECT 2,2,3
 
 -- SqlServer.2005
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],
@@ -112,7 +106,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlServer.2005
-
 DELETE [t1]
 FROM
 	[IntEnumTable] [t1]
@@ -120,7 +113,6 @@ FROM
 INSERT BULK [IntEnumTable](Id, Column, ColumnNullable)
 
 -- SqlServer.2005
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],

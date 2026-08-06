@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT
 	MIN(DECIMALDATATYPE)
 FROM

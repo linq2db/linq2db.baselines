@@ -1,7 +1,6 @@
 ﻿
 
 -- SQLite.MS SQLite
-
 SELECT
 	[m_1].[OrderID],
 	[d].[IsDeleted],
@@ -31,7 +30,6 @@ FROM
 
 
 -- SQLite.MS SQLite
-
 SELECT
 	[e].[IsDeleted],
 	[e].[OrderID],

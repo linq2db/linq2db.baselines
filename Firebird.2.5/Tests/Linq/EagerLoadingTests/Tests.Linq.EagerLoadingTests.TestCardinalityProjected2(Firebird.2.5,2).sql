@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	"m_1"."Id",
 	"d"."Id",
@@ -11,7 +10,6 @@ FROM
 		LEFT JOIN "EntityMD" "a_ObjectD" ON "d".FKD = "a_ObjectD"."Id"
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"e"."Id"
 FROM

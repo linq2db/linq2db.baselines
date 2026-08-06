@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 SELECT
 	Coalesce([e].[Str1], N'') + N'/' + Coalesce([e].[StrReq], N'')
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	[e].[Id]
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Str1],

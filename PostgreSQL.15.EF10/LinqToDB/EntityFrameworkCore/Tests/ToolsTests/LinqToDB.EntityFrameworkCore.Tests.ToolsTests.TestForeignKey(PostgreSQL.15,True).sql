@@ -11,8 +11,7 @@ LEFT JOIN (
 WHERE @ef_filter__p1 OR NOT (e."IsDeleted") OR NOT (e."IsDeleted")
 
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	e."IsDeleted",
 	e."EmployeeID",

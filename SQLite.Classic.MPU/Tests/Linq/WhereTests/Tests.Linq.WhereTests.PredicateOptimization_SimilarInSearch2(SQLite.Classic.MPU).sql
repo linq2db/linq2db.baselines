@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[x].[FirstName],
 	[x].[PersonID],
@@ -13,7 +12,6 @@ WHERE
 	[x].[PersonID] > 3 AND [x].[FirstName] = 'Jane'
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],
@@ -24,7 +22,6 @@ FROM
 	[Person] [t1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[x].[FirstName],
 	[x].[PersonID],
@@ -38,7 +35,6 @@ WHERE
 	[x].[PersonID] > 3
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

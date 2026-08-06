@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL12
 DECLARE @param Integer -- Int32
 SET     @param = 200
 
@@ -20,8 +20,7 @@ RETURNING
 	NEW."Id" + 1,
 	Coalesce(NEW."ValueStr", '') || '1'
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value",
@@ -29,8 +28,7 @@ SELECT
 FROM
 	"DestinationTable" t1
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	t."Id" + 1,
 	Coalesce(t."ValueStr", '') || '1'

@@ -36,7 +36,6 @@ WHERE
 	[t].[Data] = ?
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[r].[ID],
 	[r].[Data]
@@ -46,7 +45,6 @@ ORDER BY
 	[r].[ID]
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[r].[ID],
 	[r].[Data]

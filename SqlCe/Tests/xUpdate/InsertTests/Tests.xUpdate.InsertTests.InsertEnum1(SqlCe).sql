@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 DELETE FROM
 	[Parent]
 WHERE
@@ -27,14 +26,13 @@ DECLARE @Value1 Int -- Int32
 SET     @Value1 = 2
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Parent] [t1]
 WHERE
 	[t1].[ParentID] = @id AND [t1].[Value1] = @Value1
 
 -- SqlCe
-
 DELETE FROM
 	[Parent]
 WHERE

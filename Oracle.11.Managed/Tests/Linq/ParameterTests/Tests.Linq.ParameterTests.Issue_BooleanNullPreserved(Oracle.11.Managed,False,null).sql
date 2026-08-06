@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 INSERT INTO "TestBool"
 (
 	"Id",
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -22,7 +20,6 @@ WHERE
 	ROWNUM <= 2
 
 -- Oracle.11.Managed Oracle11
-
 UPDATE
 	"TestBool" t1
 SET
@@ -33,7 +30,6 @@ SET
 	END
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -43,7 +39,6 @@ WHERE
 	ROWNUM <= 2
 
 -- Oracle.11.Managed Oracle11
-
 UPDATE
 	"TestBool" r
 SET
@@ -52,7 +47,6 @@ WHERE
 	r."Id" = 1
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Value"

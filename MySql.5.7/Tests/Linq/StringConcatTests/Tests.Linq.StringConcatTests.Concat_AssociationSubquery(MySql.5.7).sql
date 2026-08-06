@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`p`.`Id`,
 	Coalesce((
@@ -16,7 +15,6 @@ ORDER BY
 	`p`.`Id`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`m_1`.`Id`,
 	`d`.`Id`,
@@ -27,7 +25,6 @@ FROM
 		INNER JOIN `ConcatChild` `d` ON `m_1`.`Id` = `d`.`ParentId`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Name`

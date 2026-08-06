@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 SELECT
 	[a_Client1].[Name]
 FROM

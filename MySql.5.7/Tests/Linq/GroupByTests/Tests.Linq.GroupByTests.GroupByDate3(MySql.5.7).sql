@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	SUM(`grp_1`.`MoneyValue`),
 	Extract(year from `grp_1`.`c1`),
@@ -16,7 +15,6 @@ GROUP BY
 	`grp_1`.`c1`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	SUM(`grp_1`.`MoneyValue`),
 	Extract(year from `grp_1`.`c1`),

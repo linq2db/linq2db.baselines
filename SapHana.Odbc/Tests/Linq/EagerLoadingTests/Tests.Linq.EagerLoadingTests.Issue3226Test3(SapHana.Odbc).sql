@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"m_1"."Id",
 	"d"."Value"
@@ -8,7 +7,6 @@ FROM
 		INNER JOIN "ItemValue" "d" ON "m_1"."Id" = "d"."ItemId"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"x"."Id",
 	"x"."Text"

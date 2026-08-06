@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
-
+﻿-- PostgreSQL.18 PostgreSQL12
 INSERT INTO "Issue3323Table"
 (
 	"Id",
@@ -15,8 +14,7 @@ VALUES
 	'text'
 )
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	r."Id",
 	Coalesce(r."FirstName", '') || ' ' || Coalesce(r."LastName", '')
@@ -29,8 +27,7 @@ SELECT
 FROM
 	"Issue3323Table" r_1
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	r."Id" + 1,
 	r."Text"

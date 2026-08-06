@@ -1,9 +1,7 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 DROP TABLE IF EXISTS `TestIdTrun`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 CREATE TABLE `TestIdTrun`
 (
 	`ID`     INT             AUTO_INCREMENT NOT NULL,
@@ -13,7 +11,6 @@ CREATE TABLE `TestIdTrun`
 )
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 INSERT INTO `TestIdTrun`
 (
 	`Field1`
@@ -24,7 +21,6 @@ VALUES
 )
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 INSERT INTO `TestIdTrun`
 (
 	`Field1`
@@ -48,11 +44,9 @@ ORDER BY
 LIMIT @skip, 2
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 TRUNCATE TABLE `TestIdTrun`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 INSERT INTO `TestIdTrun`
 (
 	`Field1`
@@ -63,7 +57,6 @@ VALUES
 )
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 INSERT INTO `TestIdTrun`
 (
 	`Field1`
@@ -87,6 +80,5 @@ ORDER BY
 LIMIT @skip, 2
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 DROP TABLE `TestIdTrun`
 

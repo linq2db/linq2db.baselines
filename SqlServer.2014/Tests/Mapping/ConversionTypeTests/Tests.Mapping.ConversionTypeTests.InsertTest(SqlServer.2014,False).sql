@@ -33,7 +33,6 @@ VALUES
 )
 
 -- SqlServer.2014
-
 INSERT INTO [TrimTestTable]
 (
 	[ID],
@@ -46,7 +45,6 @@ VALUES
 )
 
 -- SqlServer.2014
-
 SELECT
 	[r].[ID],
 	[r].[Data]
@@ -56,7 +54,6 @@ ORDER BY
 	[r].[ID]
 
 -- SqlServer.2014
-
 SELECT
 	[r].[ID],
 	[r].[Data]

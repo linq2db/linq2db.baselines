@@ -1,9 +1,7 @@
 ﻿-- DuckDB
-
 DROP TABLE IF EXISTS DropTableTest
 
 -- DuckDB
-
 CREATE TABLE DropTableTest
 (
 	ID INTEGER,
@@ -12,7 +10,6 @@ CREATE TABLE DropTableTest
 )
 
 -- DuckDB
-
 INSERT INTO DropTableTest
 (
 	ID
@@ -23,18 +20,15 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	t1.ID
 FROM
 	DropTableTest t1
 
 -- DuckDB
-
 DROP TABLE DropTableTest
 
 -- DuckDB
-
 SELECT
 	t1.ID
 FROM

@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 SELECT
 	MAX(CASE
 		WHEN "t1"."ChildID" > 20 THEN 1

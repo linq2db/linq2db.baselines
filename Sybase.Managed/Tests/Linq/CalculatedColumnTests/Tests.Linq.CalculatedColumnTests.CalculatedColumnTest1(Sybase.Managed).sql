@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[i_1].[PersonID],
 	[i_1].[FirstName],
@@ -17,7 +16,7 @@ FROM
 			[i].[LastName],
 			[i].[MiddleName],
 			[i].[Gender],
-			[i].[LastName] + ', ' + [i].[FirstName] as [FullName],
+			[i].[LastName] || ', ' || [i].[FirstName] as [FullName],
 			(
 				SELECT
 					COUNT(*)

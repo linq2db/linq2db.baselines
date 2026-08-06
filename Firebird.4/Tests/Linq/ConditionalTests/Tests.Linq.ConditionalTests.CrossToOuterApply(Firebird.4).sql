@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 SELECT
 	"p"."ParentID",
 	"t1"."ParentID",
@@ -34,7 +33,6 @@ FROM
 		) "t2" ON 1=1
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"m_1"."ParentID",
 	"d"."ParentID",
@@ -49,7 +47,6 @@ FROM
 		INNER JOIN "Child" "d" ON "m_1"."ParentID" = "d"."ParentID"
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."ParentID",
 	"t1"."Value1"

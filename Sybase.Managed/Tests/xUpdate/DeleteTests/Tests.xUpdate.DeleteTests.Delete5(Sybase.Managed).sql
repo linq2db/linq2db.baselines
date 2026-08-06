@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 DELETE FROM [Parent]
 FROM
 	[Parent] [t1]
@@ -7,7 +6,6 @@ WHERE
 	[t1].[ParentID] > 1000
 
 -- Sybase.Managed Sybase
-
 DELETE FROM [Parent]
 FROM
 	[Parent] [t1]
@@ -45,7 +43,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT
 	COUNT(*)
 FROM
@@ -54,7 +51,6 @@ WHERE
 	[t1].[ParentID] > 1000
 
 -- Sybase.Managed Sybase
-
 DELETE FROM [Parent]
 FROM
 	[Parent] [t1]
@@ -62,7 +58,6 @@ WHERE
 	[t1].[ParentID] IN (1001, 1002)
 
 -- Sybase.Managed Sybase
-
 SELECT
 	COUNT(*)
 FROM

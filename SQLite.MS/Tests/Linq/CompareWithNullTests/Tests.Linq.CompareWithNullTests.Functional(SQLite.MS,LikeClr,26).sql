@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 /* x => (int?)x.CEnumA >= (int?)x.CEnumB */
 SELECT
 	[x].[Id]

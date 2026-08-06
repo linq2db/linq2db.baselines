@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	toString(c_1.Id) as Id,
 	c_1.Name

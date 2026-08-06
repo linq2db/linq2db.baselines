@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016
-
 SELECT
 	[t].[VarCharColumn]
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	[t].[Id]
 
 -- SqlServer.2016
-
 SELECT
 	[t].[VarCharColumn]
 FROM

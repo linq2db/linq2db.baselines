@@ -17,7 +17,6 @@ FROM
 		LEFT JOIN "Order" "o" ON "c_2"."Id" = "o"."CustomerId"
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1"."Id",
 	"t1"."Name"
@@ -25,7 +24,6 @@ FROM
 	"Customer" "t1"
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1"."Id",
 	"t1"."CustomerId",

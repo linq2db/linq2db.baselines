@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`r`.`Id`,
 	`r`.`Boolean`,
@@ -16,7 +15,6 @@ WHERE
 	Coalesce(`r`.`BooleanN`, 1)
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Boolean`,
@@ -31,7 +29,6 @@ FROM
 	`BooleanTable` `t1`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`r`.`Id`,
 	`r`.`Boolean`,
@@ -48,7 +45,6 @@ WHERE
 	Coalesce(`r`.`BooleanN`, 0)
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Boolean`,
@@ -63,7 +59,6 @@ FROM
 	`BooleanTable` `t1`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`r`.`Id`,
 	`r`.`Boolean`,
@@ -80,7 +75,6 @@ WHERE
 	Coalesce(`r`.`BooleanN`, `r`.`Id` % 2 = 1)
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Boolean`,

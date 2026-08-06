@@ -96,7 +96,6 @@ WHERE
 	)
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"v"."id",
 	"v"."Value1",

@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 DECLARE @Column Date
 SET     @Column = '2020-02-29'::date
 DECLARE @ColumnNullable Date
@@ -13,8 +13,7 @@ FROM
 WHERE
 	r."Column" = :Column AND r."ColumnNullable" = :ColumnNullable
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."Id",
 	r."Column",
@@ -24,12 +23,11 @@ FROM
 WHERE
 	r."Column" = '2020-02-29'::date AND r."ColumnNullable" = '2020-01-01'::date
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 DELETE FROM
 	"DateOnlyTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Column Date
@@ -50,7 +48,7 @@ VALUES
 	:ColumnNullable
 )
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Column Date
@@ -71,8 +69,7 @@ VALUES
 	:ColumnNullable
 )
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Column",
@@ -82,13 +79,11 @@ FROM
 ORDER BY
 	t1."Id"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 DELETE FROM
 	"DateOnlyTable" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 INSERT INTO "DateOnlyTable"
 (
 	"Id",
@@ -99,8 +94,7 @@ VALUES
 (1,'1980-01-01'::date,NULL),
 (2,'2020-02-29'::date,'2020-01-01'::date)
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Column",
@@ -110,15 +104,13 @@ FROM
 ORDER BY
 	t1."Id"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 DELETE FROM
 	"DateOnlyTable" t1
 
 INSERT BULK "DateOnlyTable"(Id, Column, ColumnNullable)
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Column",

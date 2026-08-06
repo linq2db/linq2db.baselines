@@ -1,8 +1,7 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[p].[ParentID],
-	[ch].[ParentID],
+	[ch].[ParentID] as [ParentID_1],
 	[ch].[ChildID]
 FROM
 	[Parent] [p]

@@ -141,7 +141,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Code,
 	t1.Id,

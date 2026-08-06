@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `BlobClass`
 (
 	`Id`,
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`BlobValue`
@@ -23,7 +21,6 @@ WHERE
 LIMIT 1
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 UPDATE
 	`BlobClass` `t1`
 SET
@@ -32,7 +29,6 @@ WHERE
 	`t1`.`Id` = 1
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`BlobValue`

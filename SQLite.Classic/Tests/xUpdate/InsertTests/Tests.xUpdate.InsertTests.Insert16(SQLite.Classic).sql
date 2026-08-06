@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 DELETE FROM
 	[Person]
 WHERE
@@ -25,7 +24,6 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-
 SELECT
 	COUNT(*)
 FROM
@@ -34,7 +32,6 @@ WHERE
 	[t1].[FirstName] LIKE 'Insert16%' ESCAPE '~'
 
 -- SQLite.Classic SQLite
-
 DELETE FROM
 	[Person]
 WHERE

@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL12
 DECLARE @value Varchar(4) -- String
 SET     @value = 'User'
 
@@ -9,7 +9,7 @@ FROM
 WHERE
 	t."EnumValue" = :value
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL12
 DECLARE @value Varchar(4) -- String
 SET     @value = 'User'
 
@@ -20,7 +20,7 @@ FROM
 WHERE
 	t."EnumValue" = :value
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL12
 DECLARE @value Varchar(4) -- String
 SET     @value = 'User'
 
@@ -31,7 +31,7 @@ FROM
 WHERE
 	t."EnumValueNullable" = :value
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL12
 DECLARE @value Varchar(4) -- String
 SET     @value = 'User'
 
@@ -42,7 +42,7 @@ FROM
 WHERE
 	t."EnumValueNullable" = :value
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL12
 DECLARE @value Varchar(4) -- String
 SET     @value = 'User'
 
@@ -53,7 +53,7 @@ FROM
 WHERE
 	t."EnumValueNull" = :value
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL12
 DECLARE @value Varchar(4) -- String
 SET     @value = 'User'
 
@@ -64,8 +64,7 @@ FROM
 WHERE
 	t."EnumValueNull" = :value
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -73,8 +72,7 @@ FROM
 WHERE
 	1 = 0
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -82,8 +80,7 @@ FROM
 WHERE
 	1 = 0
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -91,8 +88,7 @@ FROM
 WHERE
 	t."EnumValueNullable" IS NULL
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -100,8 +96,7 @@ FROM
 WHERE
 	t."EnumValueNullable" IS NULL
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -109,8 +104,7 @@ FROM
 WHERE
 	t."EnumValueNull" IS NULL
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM

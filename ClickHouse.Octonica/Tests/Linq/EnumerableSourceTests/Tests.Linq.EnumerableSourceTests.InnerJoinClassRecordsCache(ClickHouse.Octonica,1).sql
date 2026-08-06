@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	p.FirstName,
 	p.PersonID,
@@ -14,7 +13,6 @@ FROM
 			SELECT 3) n ON p.PersonID = n.ID
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	p.FirstName,
 	p.PersonID,

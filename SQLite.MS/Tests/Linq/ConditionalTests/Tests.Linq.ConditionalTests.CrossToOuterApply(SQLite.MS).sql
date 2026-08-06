@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[p].[ParentID],
 	[t1].[ParentID],
@@ -26,7 +25,6 @@ FROM
 		) [t2] ON [p].[ParentID] = [t2].[ParentID] AND [t2].[rn] = 1
 
 -- SQLite.MS SQLite
-
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
@@ -41,7 +39,6 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

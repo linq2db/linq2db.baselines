@@ -10,10 +10,9 @@ SET
 	[Value] = [WarehouseTableDto].[Value] | @addMask & ~@removeMask
 
 -- SqlCe
-
 SELECT TOP (2)
 	[t1].[Id],
-	[t1].[Value] as [Value_1]
+	[t1].[Value]
 FROM
 	[WarehouseTableDto] [t1]
 

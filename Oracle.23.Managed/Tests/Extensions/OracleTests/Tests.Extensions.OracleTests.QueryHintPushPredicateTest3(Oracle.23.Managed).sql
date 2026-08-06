@@ -1,5 +1,4 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT /*+ QB_NAME(qb) PUSH_PRED(@qb) */
 	p."ParentID",
 	p."Value1"

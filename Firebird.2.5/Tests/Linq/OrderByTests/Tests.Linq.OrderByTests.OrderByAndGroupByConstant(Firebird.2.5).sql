@@ -10,7 +10,6 @@ FROM
 	"Child" "g_1"
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1"."ParentID",
 	"t1"."ChildID"

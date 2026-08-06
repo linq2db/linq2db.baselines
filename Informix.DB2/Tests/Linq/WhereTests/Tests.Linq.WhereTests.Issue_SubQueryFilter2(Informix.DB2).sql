@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	p.PersonID,
 	p.Diagnosis
@@ -40,7 +39,6 @@ ORDER BY
 	p.PersonID
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.PersonID,
 	t1.Diagnosis
@@ -48,7 +46,6 @@ FROM
 	Patient t1
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.FirstName,
 	t1.PersonID,

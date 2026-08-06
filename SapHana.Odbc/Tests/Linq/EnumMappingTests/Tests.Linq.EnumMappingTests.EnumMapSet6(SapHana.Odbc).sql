@@ -8,7 +8,6 @@ WHERE
 	"r"."ID" >= 101 AND "r"."ID" < ?
 
 -- SapHana.Odbc SapHanaOdbc
-
 INSERT INTO "LinqDataTypes"
 (
 	"ID",
@@ -21,7 +20,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 UPDATE
 	"LinqDataTypes" "r"
 SET
@@ -30,7 +28,6 @@ WHERE
 	"r"."ID" = 101 AND "r"."IntValue" = 3
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	COUNT(*)
 FROM

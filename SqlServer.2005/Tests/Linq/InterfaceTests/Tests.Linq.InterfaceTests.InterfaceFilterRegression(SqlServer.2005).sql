@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 SELECT TOP (2)
 	[t1].[Id]
 FROM
@@ -8,7 +7,6 @@ WHERE
 	[t1].[Id] = 2
 
 -- SqlServer.2005
-
 SELECT TOP (2)
 	[t1].[Id]
 FROM

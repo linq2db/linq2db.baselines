@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 WITH "cte" ("ChildID", "ParentID", "GrandChildID")
 AS
 (
@@ -37,7 +36,6 @@ FROM
 		INNER JOIN "cte" "d" ON "m_1"."Key_1" = Coalesce("d"."ParentID", -1)
 
 -- DB2 DB2.LUW DB2LUW
-
 WITH "cte" ("ChildID", "ParentID", "GrandChildID")
 AS
 (

@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	COUNT(*)
 FROM
@@ -26,7 +25,6 @@ WHERE
 	@param = "t1"."BigIntValue"
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1".ID,
 	"t1"."MoneyValue",

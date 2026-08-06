@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	COUNT(*)
 FROM
@@ -26,7 +25,6 @@ WHERE
 	@param = [t1].[SmallIntValue]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[ID],
 	[t1].[MoneyValue],

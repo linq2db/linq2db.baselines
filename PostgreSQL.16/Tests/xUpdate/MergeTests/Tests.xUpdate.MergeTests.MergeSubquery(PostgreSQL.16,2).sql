@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 CREATE TEMPORARY TABLE "MergeTemp"
 (
 	"ID"   Int  NOT NULL,
@@ -9,8 +8,7 @@ CREATE TEMPORARY TABLE "MergeTemp"
 )
 ON COMMIT PRESERVE ROWS
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 INSERT INTO "MergeTemp"
 (
 	"ID",
@@ -19,8 +17,7 @@ INSERT INTO "MergeTemp"
 VALUES
 (1,'John')
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 INSERT INTO "MergeTemp" AS t1
 (
 	"ID",
@@ -42,7 +39,6 @@ ON CONFLICT ("ID") DO UPDATE SET
 	"ID" = t1."ID",
 	"Name" = t1."Name"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DROP TABLE IF EXISTS "MergeTemp"
 

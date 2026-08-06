@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	i."Id",
 	i."StrValue",
@@ -13,18 +12,7 @@ FROM
 WHERE
 	i."StrValue" >= right_1."StrValue"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-SELECT
-	t1."Pk",
-	t1."Id",
-	t1."StrValue",
-	t1."StrValueNullable"
-FROM
-	"Isue2424Table" t1
-
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	i."Id",
 	i."StrValue",
@@ -38,18 +26,7 @@ FROM
 WHERE
 	i."StrValue" <= right_1."StrValue"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-SELECT
-	t1."Pk",
-	t1."Id",
-	t1."StrValue",
-	t1."StrValueNullable"
-FROM
-	"Isue2424Table" t1
-
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	i."Id",
 	i."StrValue",
@@ -63,18 +40,7 @@ FROM
 WHERE
 	i."StrValue" > right_1."StrValue"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-SELECT
-	t1."Pk",
-	t1."Id",
-	t1."StrValue",
-	t1."StrValueNullable"
-FROM
-	"Isue2424Table" t1
-
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	i."Id",
 	i."StrValue",
@@ -88,18 +54,7 @@ FROM
 WHERE
 	i."StrValue" < right_1."StrValue"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-SELECT
-	t1."Pk",
-	t1."Id",
-	t1."StrValue",
-	t1."StrValueNullable"
-FROM
-	"Isue2424Table" t1
-
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	i."Id",
 	i."StrValue",
@@ -113,18 +68,7 @@ FROM
 WHERE
 	i."StrValue" = right_1."StrValue"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-SELECT
-	t1."Pk",
-	t1."Id",
-	t1."StrValue",
-	t1."StrValueNullable"
-FROM
-	"Isue2424Table" t1
-
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	i."Id",
 	i."StrValue",
@@ -138,18 +82,7 @@ FROM
 WHERE
 	i."StrValue" <> right_1."StrValue"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-SELECT
-	t1."Pk",
-	t1."Id",
-	t1."StrValue",
-	t1."StrValueNullable"
-FROM
-	"Isue2424Table" t1
-
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	i."Id",
 	i."StrValue",
@@ -163,18 +96,7 @@ FROM
 WHERE
 	i."StrValue" >= right_1."StrValueNullable" OR right_1."StrValueNullable" IS NULL
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-SELECT
-	t1."Pk",
-	t1."Id",
-	t1."StrValue",
-	t1."StrValueNullable"
-FROM
-	"Isue2424Table" t1
-
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	i."Id",
 	i."StrValue",
@@ -188,18 +110,7 @@ FROM
 WHERE
 	i."StrValue" <= right_1."StrValueNullable"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-SELECT
-	t1."Pk",
-	t1."Id",
-	t1."StrValue",
-	t1."StrValueNullable"
-FROM
-	"Isue2424Table" t1
-
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	i."Id",
 	i."StrValue",
@@ -213,18 +124,7 @@ FROM
 WHERE
 	i."StrValue" > right_1."StrValueNullable" OR right_1."StrValueNullable" IS NULL
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-SELECT
-	t1."Pk",
-	t1."Id",
-	t1."StrValue",
-	t1."StrValueNullable"
-FROM
-	"Isue2424Table" t1
-
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	i."Id",
 	i."StrValue",
@@ -238,18 +138,7 @@ FROM
 WHERE
 	i."StrValue" < right_1."StrValueNullable"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-SELECT
-	t1."Pk",
-	t1."Id",
-	t1."StrValue",
-	t1."StrValueNullable"
-FROM
-	"Isue2424Table" t1
-
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	i."Id",
 	i."StrValue",
@@ -263,18 +152,7 @@ FROM
 WHERE
 	i."StrValue" = right_1."StrValueNullable"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-SELECT
-	t1."Pk",
-	t1."Id",
-	t1."StrValue",
-	t1."StrValueNullable"
-FROM
-	"Isue2424Table" t1
-
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	i."Id",
 	i."StrValue",
@@ -288,18 +166,7 @@ FROM
 WHERE
 	i."StrValue" <> right_1."StrValueNullable" OR right_1."StrValueNullable" IS NULL
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-SELECT
-	t1."Pk",
-	t1."Id",
-	t1."StrValue",
-	t1."StrValueNullable"
-FROM
-	"Isue2424Table" t1
-
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	i."Id",
 	i."StrValue",
@@ -314,18 +181,7 @@ WHERE
 	i."StrValueNullable" >= right_1."StrValueNullable" OR
 	right_1."StrValueNullable" IS NULL
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-SELECT
-	t1."Pk",
-	t1."Id",
-	t1."StrValue",
-	t1."StrValueNullable"
-FROM
-	"Isue2424Table" t1
-
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	i."Id",
 	i."StrValue",
@@ -340,18 +196,7 @@ WHERE
 	i."StrValueNullable" <= right_1."StrValueNullable" OR
 	i."StrValueNullable" IS NULL
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-SELECT
-	t1."Pk",
-	t1."Id",
-	t1."StrValue",
-	t1."StrValueNullable"
-FROM
-	"Isue2424Table" t1
-
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	i."Id",
 	i."StrValue",
@@ -366,18 +211,7 @@ WHERE
 	i."StrValueNullable" > right_1."StrValueNullable" OR
 	i."StrValueNullable" IS NOT NULL AND right_1."StrValueNullable" IS NULL
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-SELECT
-	t1."Pk",
-	t1."Id",
-	t1."StrValue",
-	t1."StrValueNullable"
-FROM
-	"Isue2424Table" t1
-
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	i."Id",
 	i."StrValue",
@@ -392,18 +226,7 @@ WHERE
 	i."StrValueNullable" < right_1."StrValueNullable" OR
 	i."StrValueNullable" IS NULL AND right_1."StrValueNullable" IS NOT NULL
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-SELECT
-	t1."Pk",
-	t1."Id",
-	t1."StrValue",
-	t1."StrValueNullable"
-FROM
-	"Isue2424Table" t1
-
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	i."Id",
 	i."StrValue",
@@ -418,18 +241,7 @@ WHERE
 	i."StrValueNullable" = right_1."StrValueNullable" OR
 	i."StrValueNullable" IS NULL AND right_1."StrValueNullable" IS NULL
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-SELECT
-	t1."Pk",
-	t1."Id",
-	t1."StrValue",
-	t1."StrValueNullable"
-FROM
-	"Isue2424Table" t1
-
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	i."Id",
 	i."StrValue",
@@ -444,14 +256,4 @@ WHERE
 	i."StrValueNullable" <> right_1."StrValueNullable" OR
 	i."StrValueNullable" IS NULL AND right_1."StrValueNullable" IS NOT NULL OR
 	i."StrValueNullable" IS NOT NULL AND right_1."StrValueNullable" IS NULL
-
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-SELECT
-	t1."Pk",
-	t1."Id",
-	t1."StrValue",
-	t1."StrValueNullable"
-FROM
-	"Isue2424Table" t1
 

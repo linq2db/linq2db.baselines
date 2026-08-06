@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT /*+ SET_VAR(aaa) */
 	`p`.`ParentID`,
 	`p`.`Value1`

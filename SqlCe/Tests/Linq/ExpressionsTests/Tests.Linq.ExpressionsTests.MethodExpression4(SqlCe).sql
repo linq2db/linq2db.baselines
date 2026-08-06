@@ -3,7 +3,7 @@ DECLARE @n Int -- Int32
 SET     @n = 3
 
 SELECT
-	[t1].[Count4] + 4 as [Count4]
+	[t1].[Count4] + 4
 FROM
 	[Parent] [p]
 		OUTER APPLY (

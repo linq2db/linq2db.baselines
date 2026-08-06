@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 INSERT INTO Person
 (
 	FirstName,
@@ -18,7 +17,6 @@ VALUES
 )
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.FirstName,
 	t1.PersonID,
@@ -32,7 +30,6 @@ WHERE
 LIMIT 1
 
 -- ClickHouse.MySql ClickHouse
-
 ALTER TABLE
 	Person
 UPDATE
@@ -44,7 +41,6 @@ WHERE
 	PersonID = 10500
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.FirstName,
 	t1.PersonID,
@@ -58,7 +54,6 @@ WHERE
 LIMIT 1
 
 -- ClickHouse.MySql ClickHouse
-
 ALTER TABLE
 	Person
 DELETE WHERE

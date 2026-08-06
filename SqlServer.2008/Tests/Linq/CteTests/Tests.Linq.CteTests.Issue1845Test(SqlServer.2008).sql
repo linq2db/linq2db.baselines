@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008
-
 WITH [CTE_1] ([Value1], [Value2])
 AS
 (

@@ -12,7 +12,6 @@ WHERE (@__ef_filter__p_0 OR NOT (`e`.`IsDeleted`)) OR NOT (`e`.`IsDeleted`)
 
 
 -- MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`e`.`IsDeleted`,
 	`e`.`EmployeeID`,

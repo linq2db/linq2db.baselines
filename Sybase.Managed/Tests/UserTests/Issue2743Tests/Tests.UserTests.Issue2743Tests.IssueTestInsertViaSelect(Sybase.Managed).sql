@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 INSERT INTO [MessageEventDTOTb2]
 (
 	[Id]

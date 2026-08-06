@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 /* My Test */
 INSERT INTO [TestTable] AS [t1]
 (

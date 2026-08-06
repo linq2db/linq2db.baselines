@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[g_1].[LastName],
 	0,
@@ -11,7 +10,6 @@ GROUP BY
 	[g_1].[LastName]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[g_1].[LastName],
 	0,

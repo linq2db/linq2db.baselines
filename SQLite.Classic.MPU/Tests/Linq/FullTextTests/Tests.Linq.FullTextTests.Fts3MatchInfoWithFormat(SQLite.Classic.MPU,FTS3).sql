@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[r].[text1],
 	matchinfo([r].[FTS3_TABLE], 'pc')

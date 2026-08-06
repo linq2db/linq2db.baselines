@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	SUM([grp_1].[MoneyValue]),
 	CAST(strftime('%Y', [grp_1].[c1]) AS INTEGER),
@@ -16,7 +15,6 @@ GROUP BY
 	[grp_1].[c1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	SUM([grp_1].[MoneyValue]),
 	CAST(strftime('%Y', [grp_1].[c1]) AS INTEGER),

@@ -14,7 +14,6 @@ WHERE
 	[r].[Column] = @Column AND [r].[ColumnNullable] = @ColumnNullable
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[r].[Id],
 	[r].[Column],
@@ -26,7 +25,6 @@ WHERE
 	[r].[ColumnNullable] = {guid {bd3973a5-4323-4dd8-9f4f-df9f93e2a627}}
 
 -- Access.Jet.OleDb AccessOleDb
-
 DELETE FROM
 	[GuidTable] [t1]
 
@@ -73,7 +71,6 @@ VALUES
 )
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],
@@ -84,7 +81,6 @@ ORDER BY
 	[t1].[Id]
 
 -- Access.Jet.OleDb AccessOleDb
-
 DELETE FROM
 	[GuidTable] [t1]
 
@@ -131,7 +127,6 @@ VALUES
 )
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],
@@ -142,7 +137,6 @@ ORDER BY
 	[t1].[Id]
 
 -- Access.Jet.OleDb AccessOleDb
-
 DELETE FROM
 	[GuidTable] [t1]
 
@@ -189,7 +183,6 @@ VALUES
 )
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],

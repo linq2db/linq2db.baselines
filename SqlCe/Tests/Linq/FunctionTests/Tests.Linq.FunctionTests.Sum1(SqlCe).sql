@@ -1,7 +1,6 @@
 ﻿-- SqlCe
-
 SELECT
-	SUM([t1].[ParentID]) as [Sum_1]
+	SUM([t1].[ParentID])
 FROM
 	[Child] [t1]
 

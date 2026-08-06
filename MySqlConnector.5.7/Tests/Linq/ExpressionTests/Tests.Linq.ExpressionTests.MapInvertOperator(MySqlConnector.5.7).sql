@@ -10,7 +10,6 @@ SET
 	`t1`.`Value` = (`t1`.`Value` | @addMask) & ~@removeMask
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value`

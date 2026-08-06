@@ -1,8 +1,7 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[current_1].[Field1],
-	[previous].[Field1]
+	[previous].[Field1] as [Field2_1]
 FROM
 	[Table1] [current_1],
 	[Table1] [previous]

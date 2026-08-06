@@ -1,9 +1,7 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
-
 DROP TABLE IF EXISTS [TestIdTrun]
 
 -- SqlServer.2016.MS SqlServer.2016
-
 CREATE TABLE [TestIdTrun]
 (
 	[ID]     Int              NOT NULL IDENTITY,
@@ -13,7 +11,6 @@ CREATE TABLE [TestIdTrun]
 )
 
 -- SqlServer.2016.MS SqlServer.2016
-
 INSERT INTO [TestIdTrun]
 (
 	[Field1]
@@ -24,7 +21,6 @@ VALUES
 )
 
 -- SqlServer.2016.MS SqlServer.2016
-
 INSERT INTO [TestIdTrun]
 (
 	[Field1]
@@ -48,11 +44,9 @@ ORDER BY
 OFFSET @skip ROWS FETCH NEXT 2 ROWS ONLY 
 
 -- SqlServer.2016.MS SqlServer.2016
-
 TRUNCATE TABLE [TestIdTrun]
 
 -- SqlServer.2016.MS SqlServer.2016
-
 INSERT INTO [TestIdTrun]
 (
 	[Field1]
@@ -63,7 +57,6 @@ VALUES
 )
 
 -- SqlServer.2016.MS SqlServer.2016
-
 INSERT INTO [TestIdTrun]
 (
 	[Field1]
@@ -87,6 +80,5 @@ ORDER BY
 OFFSET @skip ROWS FETCH NEXT 2 ROWS ONLY 
 
 -- SqlServer.2016.MS SqlServer.2016
-
 DROP TABLE [TestIdTrun]
 

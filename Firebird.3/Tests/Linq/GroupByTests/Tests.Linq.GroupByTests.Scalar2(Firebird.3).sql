@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	MAX("g_1"."ChildID"),
 	MAX("g_1"."ChildID" + "g_1"."ParentID")

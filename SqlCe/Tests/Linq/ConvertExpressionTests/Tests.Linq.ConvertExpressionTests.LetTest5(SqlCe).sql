@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	CASE
 		WHEN EXISTS(
@@ -12,7 +11,7 @@ SELECT
 		)
 			THEN 1
 		ELSE 0
-	END as [Any_1],
+	END,
 	[t1].[Count_1],
 	[t2].[First1],
 	[t3].[ParentID],

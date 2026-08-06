@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`arg`.`Id`,
 	`arg`.`Value`
@@ -9,7 +8,6 @@ FROM
 			SELECT 1 AS `Id`, CAST(1 AS DECIMAL(29, 10)) AS `Value`) `arg` ON `entity`.`PersonID` = `arg`.`Id`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`arg`.`Id`,
 	`arg`.`Value`

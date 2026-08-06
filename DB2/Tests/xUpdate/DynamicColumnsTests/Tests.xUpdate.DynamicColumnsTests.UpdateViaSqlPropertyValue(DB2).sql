@@ -10,7 +10,7 @@ INSERT INTO "Child"
 VALUES
 (
 	1,
-	CAST(@id AS Int)
+	@id
 )
 
 -- DB2 DB2.LUW DB2LUW
@@ -49,7 +49,6 @@ WHERE
 	)
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	COUNT(*)
 FROM

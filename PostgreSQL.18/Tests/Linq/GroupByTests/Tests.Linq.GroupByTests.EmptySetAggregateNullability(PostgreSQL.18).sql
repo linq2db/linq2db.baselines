@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
-
+﻿-- PostgreSQL.18 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -14,8 +13,7 @@ FROM
 WHERE
 	t1."Min_1" <> 0 OR t1."Min_1" IS NULL
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -30,8 +28,7 @@ FROM
 WHERE
 	t1."Max_1" <> 0 OR t1."Max_1" IS NULL
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -46,8 +43,7 @@ FROM
 WHERE
 	t1."Avg_1" <> 0 OR t1."Avg_1" IS NULL
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -62,8 +58,7 @@ FROM
 WHERE
 	t1."Sum_1" <> 0 OR t1."Sum_1" IS NULL
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM

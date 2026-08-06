@@ -54,7 +54,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[p].[Id],
 	[p].[TargetName],

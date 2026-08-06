@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT FIRST 2
 	"t1"."Id"
 FROM
@@ -8,7 +7,6 @@ WHERE
 	"t1"."Id" = 2
 
 -- Firebird.2.5 Firebird
-
 SELECT FIRST 2
 	"t1"."Id"
 FROM

@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	x.FirstName
 FROM
@@ -13,7 +12,6 @@ WHERE
 	x_1.FirstName = 'A'
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	x.FirstName
 FROM

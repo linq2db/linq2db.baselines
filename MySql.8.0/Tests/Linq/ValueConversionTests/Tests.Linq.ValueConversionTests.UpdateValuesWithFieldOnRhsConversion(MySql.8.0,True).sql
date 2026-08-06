@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 UPDATE
 	`TableWithConverterValue` `x`
 SET
@@ -11,7 +10,6 @@ WHERE
 	`x`.`Id` = 1
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`x`.`Id`,
 	`x`.`NoConversion`,
@@ -24,7 +22,6 @@ WHERE
 LIMIT 2
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`x`.`Id`,
 	`x`.`NoConversion`,

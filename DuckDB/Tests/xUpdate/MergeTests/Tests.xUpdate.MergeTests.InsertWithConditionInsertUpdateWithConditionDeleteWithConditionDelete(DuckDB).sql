@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 DELETE FROM
 	TestMerge1 t1
 
@@ -104,7 +103,6 @@ VALUES
 )
 
 -- DuckDB
-
 DELETE FROM
 	TestMerge2 t1
 
@@ -209,7 +207,6 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	t1.Id,
 	t1.Field1,
@@ -221,7 +218,6 @@ FROM
 	TestMerge2 t1
 
 -- DuckDB
-
 MERGE INTO TestMerge1 Target
 USING (VALUES
 	(1,123,NULL,NULL,NULL), (3,NULL,3,NULL,NULL),
@@ -278,7 +274,6 @@ WHEN MATCHED AND Target.Id = 4 THEN DELETE
 WHEN MATCHED THEN DELETE
 
 -- DuckDB
-
 SELECT
 	t1.Id,
 	t1.Field1,

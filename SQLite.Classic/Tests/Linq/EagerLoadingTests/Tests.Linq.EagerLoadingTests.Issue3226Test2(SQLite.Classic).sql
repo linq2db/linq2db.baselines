@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT
 	[m_1].[Id],
 	[d].[Value]
@@ -8,7 +7,6 @@ FROM
 		INNER JOIN [ItemValue] [d] ON [m_1].[Id] = [d].[ItemId]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[x].[Id],
 	[x].[Text]

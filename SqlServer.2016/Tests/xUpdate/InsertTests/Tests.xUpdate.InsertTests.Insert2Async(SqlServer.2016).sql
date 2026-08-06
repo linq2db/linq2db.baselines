@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016
-
 DELETE [c_1]
 FROM
 	[Child] [c_1]
@@ -33,7 +32,6 @@ WHERE
 	[c_1].[ChildID] = @id
 
 -- SqlServer.2016
-
 DELETE [c_1]
 FROM
 	[Child] [c_1]

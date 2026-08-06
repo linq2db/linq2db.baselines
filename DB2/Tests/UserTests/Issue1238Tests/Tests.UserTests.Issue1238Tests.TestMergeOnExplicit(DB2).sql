@@ -1,10 +1,8 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 DELETE FROM
 	"InheritanceParent" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 MERGE INTO "InheritanceParent" "Target"
 USING (VALUES
 	(143,CAST(NULL AS NVarChar(255)),1)
@@ -37,14 +35,12 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	COUNT(*)
 FROM
 	"InheritanceParent" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 MERGE INTO "InheritanceParent" "Target"
 USING (VALUES
 	(143,CAST(NULL AS NVarChar(255)),1)
@@ -77,7 +73,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	COUNT(*)
 FROM

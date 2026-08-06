@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`m_1`.`Key_1`,
 	`d`.`ParentID`,
@@ -14,7 +13,6 @@ FROM
 		INNER JOIN `Child` `d` ON `m_1`.`Key_1` = `d`.`ParentID`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT DISTINCT
 	`t1`.`ParentID`
 FROM

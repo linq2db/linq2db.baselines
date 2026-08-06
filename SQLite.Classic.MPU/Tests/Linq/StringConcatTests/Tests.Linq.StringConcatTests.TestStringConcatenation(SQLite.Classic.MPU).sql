@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[r].[Id],
 	'Element ' || Coalesce([r].[VarCharTextNullable], '') || ' Text1',

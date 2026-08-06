@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],
@@ -15,7 +14,6 @@ ORDER BY
 	END
 
 -- SqlServer.2005
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

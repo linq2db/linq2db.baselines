@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 CREATE TABLE temp_table_1
 (
 	ID    Int32,
@@ -13,7 +12,6 @@ ORDER BY ID
 INSERT ASYNC BULK temp_table_1(ID, Value)
 
 -- ClickHouse.Driver ClickHouse
-
 CREATE TABLE temp_table_2
 (
 	Value String,
@@ -24,7 +22,6 @@ ENGINE = MergeTree()
 ORDER BY Value
 
 -- ClickHouse.Driver ClickHouse
-
 INSERT INTO temp_table_2
 (
 	Value
@@ -43,10 +40,8 @@ FROM
 		) t1 ON gr.ID = t1.ID AND t1.rn = 1
 
 -- ClickHouse.Driver ClickHouse
-
 DROP TABLE IF EXISTS temp_table_2
 
 -- ClickHouse.Driver ClickHouse
-
 DROP TABLE IF EXISTS temp_table_1
 

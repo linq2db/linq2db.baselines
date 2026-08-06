@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
-
 WITH [cte] ([Id])
 AS
 (
@@ -33,7 +32,6 @@ FROM
 		INNER JOIN [Person] [d] ON [d].[PersonID] = [m_1].[Id]
 
 -- SqlServer.2022.MS SqlServer.2022
-
 WITH [cte] ([Id])
 AS
 (

@@ -24,7 +24,6 @@ VALUES
 )
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT @@IDENTITY
 
 -- Access.Jet.Odbc AccessODBC

@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT DISTINCT
 	c_1.Id,
 	CASE

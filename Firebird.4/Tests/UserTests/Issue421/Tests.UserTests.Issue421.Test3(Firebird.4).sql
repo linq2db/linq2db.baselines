@@ -16,7 +16,6 @@ VALUES
 )
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."BlobValue"
@@ -27,7 +26,6 @@ WHERE
 FETCH NEXT 1 ROWS ONLY
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."BlobValue"

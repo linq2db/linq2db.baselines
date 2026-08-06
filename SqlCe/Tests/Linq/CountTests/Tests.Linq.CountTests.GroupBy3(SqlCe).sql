@@ -1,12 +1,11 @@
 ﻿-- SqlCe
-
 SELECT
 	[g_2].[ParentID],
-	MIN([g_2].[ChildID]) as [ChildMin],
+	MIN([g_2].[ChildID]),
 	COUNT(CASE
 		WHEN [g_2].[ChildID] > 25 THEN 1
 		ELSE NULL
-	END) as [ChildCount]
+	END)
 FROM
 	(
 		SELECT

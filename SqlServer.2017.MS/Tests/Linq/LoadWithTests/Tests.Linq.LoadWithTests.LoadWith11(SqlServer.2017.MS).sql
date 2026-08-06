@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
@@ -16,7 +15,6 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
@@ -34,7 +32,6 @@ FROM
 		INNER JOIN [GrandChild] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[p].[ParentID],
 	[p].[Value1]

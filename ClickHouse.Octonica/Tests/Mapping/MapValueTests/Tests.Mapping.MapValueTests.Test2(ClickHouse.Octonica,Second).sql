@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	CASE
 		WHEN t.EnumValue = 'F' THEN 'First'

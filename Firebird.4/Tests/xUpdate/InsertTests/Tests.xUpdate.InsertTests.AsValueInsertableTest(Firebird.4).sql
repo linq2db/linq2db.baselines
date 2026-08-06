@@ -11,12 +11,11 @@ INSERT INTO "TestInsertOrReplaceTable"
 )
 VALUES
 (
-	CAST(@ID AS Int),
-	CAST(@FirstName AS VARCHAR(4))
+	@ID,
+	@FirstName
 )
 
 -- Firebird.4 Firebird4
-
 SELECT
 	COUNT(*)
 FROM

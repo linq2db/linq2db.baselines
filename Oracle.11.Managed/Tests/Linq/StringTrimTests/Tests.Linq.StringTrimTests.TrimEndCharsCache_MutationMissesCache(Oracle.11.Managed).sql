@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	RTRIM(t."VarCharColumn", '.+')
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	t."Id"
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	RTRIM(t."VarCharColumn", 'ab')
 FROM

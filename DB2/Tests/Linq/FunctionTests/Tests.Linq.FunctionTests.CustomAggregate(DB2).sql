@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	SUM("g_1"."Value1"),
 	SUM("g_1"."Value1")

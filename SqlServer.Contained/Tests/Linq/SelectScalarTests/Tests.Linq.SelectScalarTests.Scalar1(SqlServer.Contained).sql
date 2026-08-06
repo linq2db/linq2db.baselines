@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[p1].[FirstName],
 	[p1].[PersonID],

@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT FIRST 2
 	"ch"."ParentID",
 	"ch"."ChildID"
@@ -7,7 +6,6 @@ FROM
 	"Child" "ch"
 
 -- Firebird.2.5 Firebird
-
 SELECT FIRST 3
 	"ch"."ParentID",
 	"ch"."ChildID"
@@ -15,7 +13,6 @@ FROM
 	"Child" "ch"
 
 -- Firebird.2.5 Firebird
-
 SELECT FIRST 2
 	"ch"."ParentID",
 	"ch"."ChildID"
@@ -23,7 +20,6 @@ FROM
 	"Child" "ch"
 
 -- Firebird.2.5 Firebird
-
 SELECT FIRST 3
 	"ch"."ParentID",
 	"ch"."ChildID"

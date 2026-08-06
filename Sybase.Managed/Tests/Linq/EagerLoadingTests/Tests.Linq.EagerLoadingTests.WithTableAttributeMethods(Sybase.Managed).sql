@@ -29,7 +29,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],

@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 DELETE FROM
 	"Person" "t1"
 WHERE
@@ -27,11 +26,9 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT CURRENT_IDENTITY_VALUE() FROM DUMMY
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"p"."FirstName",
 	"p"."PersonID",
@@ -45,7 +42,6 @@ WHERE
 LIMIT 2
 
 -- SapHana.Odbc SapHanaOdbc
-
 DELETE FROM
 	"Person" "t1"
 WHERE

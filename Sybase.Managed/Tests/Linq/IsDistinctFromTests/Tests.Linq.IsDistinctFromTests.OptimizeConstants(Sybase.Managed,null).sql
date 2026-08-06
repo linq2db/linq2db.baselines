@@ -1,10 +1,8 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	COUNT(*)
 
 -- Sybase.Managed Sybase
-
 SELECT
 	COUNT(*)
 WHERE

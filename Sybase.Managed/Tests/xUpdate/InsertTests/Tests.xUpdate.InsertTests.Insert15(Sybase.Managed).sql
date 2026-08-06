@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 DELETE FROM [Person]
 FROM
 	[Person] [t1]
@@ -32,7 +31,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT
 	COUNT(*)
 FROM
@@ -41,7 +39,6 @@ WHERE
 	[t1].[FirstName] LIKE 'Insert15%' ESCAPE '~'
 
 -- Sybase.Managed Sybase
-
 DELETE FROM [Person]
 FROM
 	[Person] [t1]

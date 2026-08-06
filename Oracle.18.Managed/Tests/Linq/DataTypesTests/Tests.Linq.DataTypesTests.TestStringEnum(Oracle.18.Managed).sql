@@ -14,7 +14,6 @@ WHERE
 	r."Column" = :Column_1 AND r."ColumnNullable" = :ColumnNullable
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	r."Id",
 	r."Column",
@@ -25,7 +24,6 @@ WHERE
 	r."Column" = 'value=2' AND r."ColumnNullable" = 'value=33'
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"StringEnumTable" t1
 
@@ -72,7 +70,6 @@ VALUES
 )
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Column",
@@ -83,19 +80,16 @@ ORDER BY
 	t1."Id"
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"StringEnumTable" t1
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 INSERT ALL
 	INTO "StringEnumTable" ("Id", "Column", "ColumnNullable") VALUES (1,'val=1',NULL)
 	INTO "StringEnumTable" ("Id", "Column", "ColumnNullable") VALUES (2,'value=2','value=33')
 SELECT * FROM dual
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Column",
@@ -106,19 +100,16 @@ ORDER BY
 	t1."Id"
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"StringEnumTable" t1
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 INSERT ALL
 	INTO "StringEnumTable" ("Id", "Column", "ColumnNullable") VALUES (1,'val=1',NULL)
 	INTO "StringEnumTable" ("Id", "Column", "ColumnNullable") VALUES (2,'value=2','value=33')
 SELECT * FROM dual
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Column",

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014
-
 INSERT INTO [Issue4132Table]
 (
 	[Id],

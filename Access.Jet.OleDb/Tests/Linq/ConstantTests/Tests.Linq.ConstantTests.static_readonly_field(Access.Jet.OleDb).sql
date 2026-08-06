@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[e].[Id],
 	[e].[GuidValue],
@@ -12,7 +11,6 @@ WHERE
 	[e].[GuidNullableValue] = {guid {bc7b663d-0fde-4327-8f92-5d8cc3a11d11}}
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[GuidValue],

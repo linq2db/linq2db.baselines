@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 DELETE FROM
 	LinqDataTypes r
 WHERE
@@ -21,7 +20,6 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	t.ID,
 	t.BigIntValue
@@ -32,7 +30,6 @@ WHERE
 LIMIT 1
 
 -- DuckDB
-
 DELETE FROM
 	LinqDataTypes r
 WHERE

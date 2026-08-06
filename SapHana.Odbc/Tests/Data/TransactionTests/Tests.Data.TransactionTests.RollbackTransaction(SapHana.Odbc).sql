@@ -16,7 +16,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 UPDATE
 	"Parent" "t"
 SET
@@ -26,7 +25,6 @@ WHERE
 
 RollbackTransaction
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t"."ParentID",
 	"t"."Value1"

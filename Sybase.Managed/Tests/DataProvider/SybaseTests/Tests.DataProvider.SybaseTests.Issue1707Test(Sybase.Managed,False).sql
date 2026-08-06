@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 INSERT INTO [Issue1707]
 (
 	[Id],
@@ -22,7 +21,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 INSERT INTO [Issue1707]
 (
 	[Id],
@@ -45,7 +43,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 INSERT INTO [Issue1707]
 (
 	[Id],
@@ -68,7 +65,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 INSERT INTO [Issue1707]
 (
 	[Id],
@@ -91,7 +87,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 INSERT INTO [Issue1707]
 (
 	[Id],
@@ -114,7 +109,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[Time],

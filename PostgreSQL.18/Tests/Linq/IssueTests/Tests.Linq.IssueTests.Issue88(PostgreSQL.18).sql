@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
-
+﻿-- PostgreSQL.18 PostgreSQL12
 SELECT
 	t1."FirstName",
 	t1."PersonID",
@@ -11,8 +10,7 @@ FROM
 WHERE
 	t1."PersonID" = 1 AND t1."Gender" = 'M'
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	t1."FirstName",
 	t1."PersonID",
@@ -24,7 +22,7 @@ FROM
 WHERE
 	t1."PersonID" = 1 AND 'M' = t1."Gender"
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL12
 DECLARE @gender Char -- String
 SET     @gender = 'M'
 
@@ -39,7 +37,7 @@ FROM
 WHERE
 	t1."PersonID" = 1 AND t1."Gender" = :gender
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL12
 DECLARE @gender Char -- String
 SET     @gender = 'M'
 

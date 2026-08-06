@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 CREATE TABLE "Table"
 (
 	"ID" Int NOT NULL,
@@ -7,7 +6,6 @@ CREATE TABLE "Table"
 	CONSTRAINT "PK_Table" PRIMARY KEY ("ID")
 )
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 DROP TABLE "Table"
 

@@ -1,10 +1,8 @@
 ﻿-- Informix.DB2 Informix
-
 DELETE FROM
 	InheritanceParent
 
 -- Informix.DB2 Informix
-
 MERGE INTO InheritanceParent Target
 USING (
 	SELECT 143::Int AS Key1, NULL::NVarChar(255) AS Key2, 1::Int AS Data_1 FROM table(set{1})) Source
@@ -35,14 +33,12 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT
 	COUNT(*)
 FROM
 	InheritanceParent t1
 
 -- Informix.DB2 Informix
-
 MERGE INTO InheritanceParent Target
 USING (
 	SELECT 143::Int AS Key1, NULL::NVarChar(255) AS Key2, 1::Int AS Data_1 FROM table(set{1})) Source
@@ -73,7 +69,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT
 	COUNT(*)
 FROM

@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 INSERT INTO "InsertIssueTest"
 (
 	"Pk",
@@ -47,7 +46,6 @@ FROM
 	) "t2"
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1"."Pk",
 	"t1".ID,

@@ -39,7 +39,6 @@ WHERE
 	[u].[id] = [t1].[id]
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[v].[id],
 	[v].[Value1],

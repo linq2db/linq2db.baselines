@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`o`.`ParentID`,
 	(
@@ -22,14 +21,12 @@ FROM
 	`Parent` `o`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	COUNT(*)
 FROM
 	`Parent` `o`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`x`.`ParentID`,
 	`x`.`CountResult`,

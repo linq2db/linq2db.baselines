@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	SUBSTRING(Coalesce(', ' || CASE
 		WHEN "x"."NullableValue" LIKE '%A%' ESCAPE '~' THEN "x"."NullableValue"
@@ -32,7 +31,6 @@ WHERE
 	END, '') FROM 3)) <> 0
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t1".PK,
 	"t1"."Id",

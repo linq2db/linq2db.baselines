@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`y`.`item`
 FROM
@@ -14,7 +13,6 @@ FROM
 			SELECT 'O') `y`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`FirstName`,
 	`t1`.`PersonID`,

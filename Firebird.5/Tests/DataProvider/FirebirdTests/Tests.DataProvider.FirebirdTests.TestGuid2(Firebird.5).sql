@@ -1,12 +1,10 @@
 ﻿-- Firebird.5 Firebird4
-
 SELECT
 	"t"."GuidValue"
 FROM
 	"LinqDataTypes" "t"
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t".ID,
 	"t"."MoneyValue",

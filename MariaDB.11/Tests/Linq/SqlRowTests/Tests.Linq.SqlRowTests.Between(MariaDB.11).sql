@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	COUNT(*)
 FROM
@@ -9,7 +8,6 @@ WHERE
 	(`i`.`One`, `i`.`Two`) <= (`i`.`One`, `i`.`One` + `i`.`One`)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	COUNT(*)
 FROM
@@ -19,7 +17,6 @@ WHERE
 	(`i`.`One`, `i`.`Three`) <= (`i`.`One`, `i`.`Four`)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	COUNT(*)
 FROM
@@ -28,7 +25,6 @@ WHERE
 	(`i`.`One`, `i`.`Two`) >= (`i`.`One`, `i`.`Three`)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	COUNT(*)
 FROM
@@ -38,7 +34,6 @@ WHERE
 	(`i`.`Two`, `i`.`Five`) <= (`i`.`Three`, `i`.`Two`)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	COUNT(*)
 FROM
@@ -48,7 +43,6 @@ WHERE
 	(`i`.`Two`, `i`.`Five`) <= (`i`.`Two`, `i`.`Two`)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	COUNT(*)
 FROM
@@ -58,7 +52,6 @@ WHERE
 	(`i`.`Two`, `i`.`Nil`) <= (`i`.`Three`, `i`.`One`)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	COUNT(*)
 FROM
@@ -68,7 +61,6 @@ WHERE
 	(`i`.`Two`, `i`.`Nil`) <= (`i`.`Two`, `i`.`Three`)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	COUNT(*)
 FROM
@@ -78,7 +70,6 @@ WHERE
 	(`i`.`Two`, `i`.`Five`) <= (`i`.`Three`, `i`.`Nil`)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	COUNT(*)
 FROM
@@ -88,7 +79,6 @@ WHERE
 	(`i`.`Two`, `i`.`Nil`) <= (`i`.`Three`, `i`.`Nil`)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	COUNT(*)
 FROM

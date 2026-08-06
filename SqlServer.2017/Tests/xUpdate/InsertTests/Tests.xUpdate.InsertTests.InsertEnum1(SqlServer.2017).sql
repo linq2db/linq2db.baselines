@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 DELETE [t1]
 FROM
 	[Parent] [t1]
@@ -35,7 +34,6 @@ WHERE
 	[t1].[ParentID] = @id AND [t1].[Value1] = @Value1
 
 -- SqlServer.2017
-
 DELETE [t1]
 FROM
 	[Parent] [t1]

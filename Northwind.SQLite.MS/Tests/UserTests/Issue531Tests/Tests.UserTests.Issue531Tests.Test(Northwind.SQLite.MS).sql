@@ -27,7 +27,6 @@ WHERE
 	[e].[Extension] = @ext
 
 -- Northwind.SQLite.MS SQLite.MS SQLite
-
 SELECT
 	[e].[EmployeeID],
 	[e].[LastName],

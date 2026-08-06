@@ -1,5 +1,4 @@
 ﻿-- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	t."ParentID",
 	t."ChildID"
@@ -19,7 +18,6 @@ WHERE
 	)
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."ParentID",
 	t1."ChildID"

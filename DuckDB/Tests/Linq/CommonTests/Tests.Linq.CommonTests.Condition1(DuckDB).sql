@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	CASE
 		WHEN Length(p.FirstName) <> 0 THEN p.FirstName

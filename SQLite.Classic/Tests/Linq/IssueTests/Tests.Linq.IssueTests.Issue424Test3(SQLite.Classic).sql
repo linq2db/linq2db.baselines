@@ -14,7 +14,6 @@ ORDER BY
 LIMIT @take OFFSET @skip
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 INSERT INTO PR_1598_Mixed_Table
 (
 	Id,
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t.Id,
 	t.Name,
@@ -26,7 +24,6 @@ WHERE
 LIMIT 1
 
 -- ClickHouse.Driver ClickHouse
-
 ALTER TABLE
 	PR_1598_Mixed_Table
 UPDATE
@@ -35,7 +32,6 @@ WHERE
 	Id = 1
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t.Id,
 	t.Name,
@@ -47,7 +43,6 @@ WHERE
 LIMIT 1
 
 -- ClickHouse.Driver ClickHouse
-
 INSERT INTO PR_1598_Mixed_Table
 (
 	Id,
@@ -60,7 +55,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t.Id,
 	t.Name,
@@ -72,7 +66,6 @@ WHERE
 LIMIT 1
 
 -- ClickHouse.Driver ClickHouse
-
 ALTER TABLE
 	PR_1598_Mixed_Table
 UPDATE
@@ -82,7 +75,6 @@ WHERE
 	Id = 2
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t.Id,
 	t.Name,

@@ -1,8 +1,7 @@
 ﻿-- SqlCe
-
 SELECT
 	[p].[FirstName],
-	[p].[PersonID] as [ID],
+	[p].[PersonID],
 	[p].[LastName],
 	[p].[MiddleName],
 	[p].[Gender]
@@ -17,7 +16,7 @@ SET     @str = '123'
 
 SELECT
 	[p].[FirstName],
-	[p].[PersonID] as [ID],
+	[p].[PersonID],
 	[p].[LastName],
 	[p].[MiddleName],
 	[p].[Gender]

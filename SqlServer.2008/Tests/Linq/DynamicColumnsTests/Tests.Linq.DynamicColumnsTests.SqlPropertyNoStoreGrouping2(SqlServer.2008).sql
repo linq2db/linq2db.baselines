@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008
-
 SELECT
 	[g_1].[FirstName],
 	[g_1].[LastName],

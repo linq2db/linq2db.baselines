@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT TOP 10
 	[t3].[ParentID],
 	[t2].[ChildID]

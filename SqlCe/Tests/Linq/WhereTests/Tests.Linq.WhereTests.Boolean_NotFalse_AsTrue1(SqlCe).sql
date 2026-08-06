@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[r].[ID],
 	[r].[MoneyValue],

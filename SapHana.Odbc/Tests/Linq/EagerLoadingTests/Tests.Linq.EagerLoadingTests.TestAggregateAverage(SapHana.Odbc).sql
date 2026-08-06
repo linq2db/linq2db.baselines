@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t2"."Average"
 FROM
@@ -31,7 +30,6 @@ WHERE
 	) > 1
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"m_1"."Id1",
 	"d"."DetailId",
@@ -47,7 +45,6 @@ FROM
 		INNER JOIN "DetailClass" "d" ON "m_1"."Id1" = "d"."MasterId"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id1",
 	"t1"."Id2",

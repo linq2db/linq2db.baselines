@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 /* My Test */
 UPDATE
 	TestTable

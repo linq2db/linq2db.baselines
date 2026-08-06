@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 DELETE  
 FROM
 	`LinqDataTypes`
@@ -22,7 +21,6 @@ VALUES
 )
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`t`.`ID`,
 	`t`.`BigIntValue`
@@ -33,7 +31,6 @@ WHERE
 LIMIT 1
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 DELETE  
 FROM
 	`LinqDataTypes`

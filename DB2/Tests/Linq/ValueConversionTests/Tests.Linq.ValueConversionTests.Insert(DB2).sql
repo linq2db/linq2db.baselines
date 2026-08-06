@@ -23,16 +23,15 @@ INSERT INTO "ValueConversion"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Value1 AS NVarChar(2)),
-	CAST(@Enum AS NVarChar(6)),
-	CAST(@Value2 AS NVarChar(22)),
-	CAST(@BoolValue AS VarChar(1)),
-	CAST(@AnotherBoolValue AS VarChar(1))
+	@Id,
+	@Value1,
+	@Enum,
+	@Value2,
+	@BoolValue,
+	@AnotherBoolValue
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"e"."Id",
 	"e"."Value1",
@@ -75,16 +74,15 @@ INSERT INTO "ValueConversion"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Value1 AS NVarChar(200)),
-	CAST(@Value2 AS NVarChar(200)),
-	CAST(@Enum AS NVarChar(6)),
-	CAST(@BoolValue AS VarChar(1)),
-	CAST(@AnotherBoolValue AS VarChar(1))
+	@Id,
+	@Value1,
+	@Value2,
+	@Enum,
+	@BoolValue,
+	@AnotherBoolValue
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"e"."Id",
 	"e"."Value1",
@@ -152,7 +150,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"e"."Id",
 	"e"."Value1",
@@ -171,7 +168,6 @@ WHERE
 FETCH NEXT 1 ROWS ONLY
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	COUNT(*)
 FROM

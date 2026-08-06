@@ -1,5 +1,4 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 INSERT INTO "SampleClass"
 (
 	"Id",
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 INSERT INTO "SampleClass"
 (
 	"Id",

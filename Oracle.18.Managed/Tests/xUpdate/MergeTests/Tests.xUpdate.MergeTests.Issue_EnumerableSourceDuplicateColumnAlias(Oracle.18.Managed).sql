@@ -1,5 +1,4 @@
 ﻿-- Oracle.18.Managed Oracle.Managed Oracle12
-
 MERGE INTO "MyChildClass" Target
 USING (
 	SELECT 1 AS "Id", 10 AS "Value_1" FROM sys.dual

@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]
@@ -7,7 +6,6 @@ FROM
 	[Parent] [t1]
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[x_1].[Key_1],
 	SUM([x_1].[c1])

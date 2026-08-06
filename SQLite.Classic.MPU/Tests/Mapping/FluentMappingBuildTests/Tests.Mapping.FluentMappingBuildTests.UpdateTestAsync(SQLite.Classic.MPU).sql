@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 CREATE TABLE IF NOT EXISTS [FluentTemp_UpdateAsync]
 (
 	[ID]       INTEGER      NOT NULL,
@@ -45,6 +44,5 @@ WHERE
 	[FluentTemp_UpdateAsync].[ID] = 1
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 DROP TABLE IF EXISTS [FluentTemp_UpdateAsync]
 

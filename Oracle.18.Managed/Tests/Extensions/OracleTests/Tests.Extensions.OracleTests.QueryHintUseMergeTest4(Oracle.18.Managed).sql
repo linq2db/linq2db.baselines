@@ -1,5 +1,4 @@
 ﻿-- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT /*+ USE_MERGE(c_1 p) */
 	p."ParentID",
 	p."Value1"

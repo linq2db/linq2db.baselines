@@ -1,29 +1,22 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 DROP SCHEMA IF EXISTS `testdataconnector`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 CREATE SCHEMA `testdataconnector`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 ALTER DATABASE `testdataconnector` CHARACTER SET utf8 COLLATE utf8_general_ci
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 USE `testdataconnector`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SET GLOBAL local_infile=ON;
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SET @@global.sql_mode=(SELECT REPLACE(@@global.sql_mode, 'ONLY_FULL_GROUP_BY', ''))
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 CREATE TABLE InheritanceParent
 (
 	InheritanceParentId int          NOT NULL,
@@ -34,7 +27,6 @@ CREATE TABLE InheritanceParent
 )
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 CREATE TABLE InheritanceChild
 (
 	InheritanceChildId  int          NOT NULL,
@@ -46,7 +38,6 @@ CREATE TABLE InheritanceChild
 )
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 -- Person Table
 
 CREATE TABLE Person
@@ -60,27 +51,21 @@ CREATE TABLE Person
 )
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 INSERT INTO Person (FirstName, LastName, Gender) VALUES ('John',   'Pupkin',    'M')
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 INSERT INTO Person (FirstName, LastName, Gender) VALUES ('Tester', 'Testerson', 'M')
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 INSERT INTO Person (FirstName, LastName, Gender) VALUES ('Jane',   'Doe',       'F')
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 INSERT INTO Person (FirstName, LastName, MiddleName, Gender) VALUES ('Jürgen', 'König', 'Ko', 'M')
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 CREATE OR REPLACE VIEW PersonView AS SELECT * FROM Person
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 -- Doctor Table Extension
 
 CREATE TABLE Doctor
@@ -93,11 +78,9 @@ CREATE TABLE Doctor
 )
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 INSERT INTO Doctor (PersonID, Taxonomy) VALUES (1, 'Psychiatry')
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 -- Patient Table Extension
 
 CREATE TABLE Patient
@@ -110,11 +93,9 @@ CREATE TABLE Patient
 )
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 INSERT INTO Patient (PersonID, Diagnosis) VALUES (2, 'Hallucination with Paranoid Bugs'' Delirium of Persecution')
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 -- Data Types test
 
 CREATE TABLE DataTypeTest
@@ -145,27 +126,21 @@ CREATE TABLE DataTypeTest
 )
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 CREATE TABLE Parent     (ParentID int, Value1 int)
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 CREATE TABLE Child      (ParentID int, ChildID int)
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 CREATE INDEX IX_ChildIndex ON Child (ParentID)
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 CREATE INDEX IX_ChildIndex2 ON Child (ParentID DESC)
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 CREATE TABLE GrandChild (ParentID int, ChildID int, GrandChildID int)
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 CREATE TABLE LinqDataTypes
 (
 	ID             int,
@@ -182,14 +157,12 @@ CREATE TABLE LinqDataTypes
 )
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 CREATE TABLE TestIdentity (
 	ID int AUTO_INCREMENT NOT NULL,
 	CONSTRAINT PK_TestIdentity PRIMARY KEY CLUSTERED (ID)
 )
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 CREATE TABLE `AllTypes`
 (
 	ID                  int AUTO_INCREMENT       NOT NULL,
@@ -229,7 +202,6 @@ CREATE TABLE `AllTypes`
 )
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 INSERT INTO `AllTypes`
 (
 	bigintDataType,
@@ -322,7 +294,6 @@ SELECT
 	1
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 CREATE TABLE `AllTypesNoYear`
 (
 	ID                  int AUTO_INCREMENT       NOT NULL,
@@ -361,29 +332,24 @@ CREATE TABLE `AllTypesNoYear`
 )
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 DROP SCHEMA IF EXISTS test_schema
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 CREATE SCHEMA test_schema
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 CREATE TABLE test_schema.TestSameName
 (
 	ID int NOT NULL PRIMARY KEY
 )
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 CREATE TABLE TestSameName
 (
 	ID int NOT NULL PRIMARY KEY
 )
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 CREATE OR REPLACE
 VIEW PersonView
 AS
@@ -392,7 +358,6 @@ AS
 	WHERE (`Person`.`Gender` = 'M')
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 -- merge test tables
 CREATE TABLE TestMerge1
 (
@@ -430,7 +395,6 @@ CREATE TABLE TestMerge1
 )
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 CREATE TABLE TestMerge2
 (
 	Id       int          NOT NULL,
@@ -467,7 +431,6 @@ CREATE TABLE TestMerge2
 )
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 CREATE PROCEDURE TestProcedure(IN param3 INT, INOUT param2 INT, OUT param1 INT)
 BEGIN
 	SELECT param2 + param2 INTO param2;
@@ -476,11 +439,9 @@ BEGIN
 END
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SET GLOBAL log_bin_trust_function_creators = 1;
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 CREATE FUNCTION TestFunction(param INT)
 RETURNS VARCHAR(10)
 BEGIN
@@ -488,14 +449,12 @@ BEGIN
 END
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 CREATE PROCEDURE AddIssue792Record()
 BEGIN
 	INSERT INTO `AllTypes`(char20DataType) VALUES('issue792');
 END
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 CREATE PROCEDURE `TestOutputParametersWithoutTableProcedure`(
 	IN `aInParam` VARCHAR(256),
 	OUT `aOutParam` TINYINT(1)
@@ -505,7 +464,6 @@ BEGIN
 END
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 CREATE TABLE FullTextIndexTest (
 	id int UNSIGNED AUTO_INCREMENT NOT NULL PRIMARY KEY,
 	TestField1 TEXT(100),
@@ -516,20 +474,17 @@ CREATE TABLE FullTextIndexTest (
 )
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 INSERT INTO FullTextIndexTest(TestField1, TestField2) VALUES('this is text1', 'this is text2');
 INSERT INTO FullTextIndexTest(TestField1, TestField2) VALUES('looking for something?', 'found it!');
 INSERT INTO FullTextIndexTest(TestField1, TestField2) VALUES('record not found', 'empty');
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 CREATE TABLE Issue1993 (
 	id			INTEGER UNSIGNED	NOT NULL   AUTO_INCREMENT,
 	description	VARCHAR(100)		NULL,
 PRIMARY KEY(id));
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 CREATE PROCEDURE `Issue2313Parameters`(
 	IN `VarCharDefault` VARCHAR(255),
 	IN `VarChar1` VARCHAR(1),
@@ -638,7 +593,6 @@ BEGIN
 END
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 CREATE PROCEDURE `Issue2313Results`(
 	IN `VarCharDefault` VARCHAR(4000),
 	IN `VarChar1` VARCHAR(1),
@@ -759,11 +713,9 @@ BEGIN
 END
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 DROP TABLE `CollatedTable`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 CREATE TABLE `CollatedTable`
 (
 	`Id`				INT NOT NULL,
@@ -772,7 +724,6 @@ CREATE TABLE `CollatedTable`
 )
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 CREATE TABLE KeepIdentityTest (
 	ID    INT AUTO_INCREMENT NOT NULL,
 	Value INT NULL,
@@ -780,7 +731,6 @@ CREATE TABLE KeepIdentityTest (
 )
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 INSERT INTO `LinqDataTypes`
 (
 	`ID`,
@@ -809,7 +759,6 @@ VALUES
 (12,11.45,'2012-11-07 19:19:29.090',NULL,1,'03021d18-97f0-4dc0-98d0-f0c7df4a1230',12,NULL,NULL,'0')
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 INSERT INTO `Parent`
 (
 	`ParentID`,
@@ -825,7 +774,6 @@ VALUES
 (7,1)
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 INSERT INTO `Child`
 (
 	`ParentID`,
@@ -851,7 +799,6 @@ VALUES
 (7,77)
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 INSERT INTO `GrandChild`
 (
 	`ParentID`,
@@ -883,7 +830,6 @@ VALUES
 (4,42,424)
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 INSERT INTO `InheritanceParent`
 (
 	`InheritanceParentId`,
@@ -896,7 +842,6 @@ VALUES
 (3,2,'InheritanceParent2')
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 INSERT INTO `InheritanceChild`
 (
 	`InheritanceChildId`,

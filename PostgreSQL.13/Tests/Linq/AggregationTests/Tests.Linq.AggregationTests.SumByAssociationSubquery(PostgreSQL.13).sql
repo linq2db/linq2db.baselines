@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
-
+﻿-- PostgreSQL.13 PostgreSQL12
 SELECT
 	g_1."Id",
 	SUM(Coalesce("a_Values"."Value"::Int, 0))
@@ -9,8 +8,7 @@ FROM
 GROUP BY
 	g_1."Id"
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	m_1."Id",
 	d."Id",
@@ -21,8 +19,7 @@ FROM
 	"Item" m_1
 		INNER JOIN "ItemValue" d ON m_1."Id" = d."ItemId"
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Name"

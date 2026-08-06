@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`m_1`.`Id`,
 	`d`.`Value`
@@ -8,7 +7,6 @@ FROM
 		INNER JOIN `ItemValue` `d` ON `m_1`.`Id` = `d`.`ItemId`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`x`.`Id`,
 	`x`.`Text`

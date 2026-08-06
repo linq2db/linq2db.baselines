@@ -33,7 +33,6 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 INSERT INTO [TrimTestTable]
 (
 	[ID],
@@ -46,7 +45,6 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[r].[ID],
 	[r].[Data]
@@ -56,7 +54,6 @@ ORDER BY
 	[r].[ID]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[r].[ID],
 	[r].[Data]

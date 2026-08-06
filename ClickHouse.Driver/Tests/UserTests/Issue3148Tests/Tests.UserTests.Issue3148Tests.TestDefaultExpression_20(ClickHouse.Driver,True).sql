@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	r.FirstName,
 	r.PersonID,
@@ -12,7 +11,6 @@ WHERE
 	endsWith(r.LastName, 'x')
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	r.FirstName,
 	r.PersonID,

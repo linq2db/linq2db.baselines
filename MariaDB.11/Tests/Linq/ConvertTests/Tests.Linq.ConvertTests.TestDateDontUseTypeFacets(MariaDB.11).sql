@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`g_2`.`Date_1`,
 	COUNT(*)
@@ -14,7 +13,6 @@ GROUP BY
 	`g_2`.`Date_1`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`CreatedOnUtc`
 FROM

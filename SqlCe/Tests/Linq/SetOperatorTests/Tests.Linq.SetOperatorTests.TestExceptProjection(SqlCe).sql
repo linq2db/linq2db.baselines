@@ -1,7 +1,6 @@
 ﻿-- SqlCe
-
 SELECT DISTINCT
-	[r].[Value1] as [Value_1]
+	[r].[Value1]
 FROM
 	[SampleData] [r]
 WHERE

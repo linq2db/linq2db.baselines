@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT DISTINCT
 	True,
 	it.SmallIntValue <> 0
@@ -7,7 +6,6 @@ FROM
 	LinqDataTypes it
 
 -- DuckDB
-
 SELECT
 	t1.ID,
 	t1.MoneyValue,

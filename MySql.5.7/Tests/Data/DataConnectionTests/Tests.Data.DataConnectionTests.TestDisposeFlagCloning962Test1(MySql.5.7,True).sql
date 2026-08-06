@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`m_1`.`CategoryID`,
 	`d`.`ProductID`,
@@ -11,7 +10,6 @@ FROM
 		INNER JOIN `Products` `d` ON `m_1`.`CategoryID` = `d`.`CategoryID`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`t1`.`CategoryID`,
 	`t1`.`CategoryName`,

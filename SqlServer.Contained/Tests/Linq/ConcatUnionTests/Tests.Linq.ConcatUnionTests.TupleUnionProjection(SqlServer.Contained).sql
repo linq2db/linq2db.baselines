@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[x].[Value1],
 	[x].[ParentID]
@@ -17,7 +16,6 @@ WHERE
 	[p2].[ParentID] <= 3
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

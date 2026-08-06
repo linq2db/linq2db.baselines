@@ -20,7 +20,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[SomeValue1],
@@ -46,7 +45,6 @@ WHERE
 	[ValuesTable].[Id] = @Id
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[SomeValue1],

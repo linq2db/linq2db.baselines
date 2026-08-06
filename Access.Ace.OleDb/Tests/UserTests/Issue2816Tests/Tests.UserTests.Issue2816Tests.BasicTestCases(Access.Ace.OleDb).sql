@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[p].[Id],
 	[p].[Text]
@@ -9,7 +8,6 @@ WHERE
 	[p].[Text] IS NULL OR LTRIM([p].[Text]) = ''
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[Text]

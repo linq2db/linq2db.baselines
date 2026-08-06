@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name Text(5) -- String
@@ -19,8 +19,7 @@ VALUES
 	:Age
 )
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t."Id",
 	t."Name",
@@ -31,7 +30,7 @@ WHERE
 	t."Id" = 1
 LIMIT 1
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DECLARE @Age Integer -- Int32
 SET     @Age = 20
 DECLARE @Id Integer -- Int32
@@ -44,8 +43,7 @@ SET
 WHERE
 	"PR_1598_Mixed_Table"."Id" = :Id
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t."Id",
 	t."Name",
@@ -56,7 +54,7 @@ WHERE
 	t."Id" = 1
 LIMIT 1
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Age Integer -- Int32
@@ -73,8 +71,7 @@ VALUES
 	:Age
 )
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t."Id",
 	t."Name",
@@ -85,7 +82,7 @@ WHERE
 	t."Id" = 2
 LIMIT 1
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DECLARE @Name Text(5) -- String
 SET     @Name = 'Jessy'
 DECLARE @Age Integer -- Int32
@@ -101,8 +98,7 @@ SET
 WHERE
 	"PR_1598_Mixed_Table"."Id" = :Id
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t."Id",
 	t."Name",

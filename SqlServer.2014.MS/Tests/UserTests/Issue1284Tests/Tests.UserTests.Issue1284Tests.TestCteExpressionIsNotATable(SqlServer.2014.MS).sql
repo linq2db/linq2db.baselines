@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014.MS SqlServer.2014
-
 WITH [CTE_1]
 (
 	[entry_ID],
@@ -31,7 +30,6 @@ WHERE
 	[x].[entry_ID] = 1
 
 -- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	[x].[FirstName],
 	[x].[PersonID],

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 SELECT
 	[i_1].[PersonID],
 	[i_1].[FirstName],

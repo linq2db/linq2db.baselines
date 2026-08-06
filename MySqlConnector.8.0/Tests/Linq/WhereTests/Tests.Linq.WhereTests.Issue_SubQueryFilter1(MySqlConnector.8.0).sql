@@ -42,7 +42,6 @@ ORDER BY
 	`t1`.`PersonID`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`PersonID`,
 	`t1`.`Diagnosis`
@@ -50,7 +49,6 @@ FROM
 	`Patient` `t1`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`FirstName`,
 	`t1`.`PersonID`,

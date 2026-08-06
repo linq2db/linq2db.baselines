@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	"m_1"."SectorId",
 	"a_User"."UserId"
@@ -12,7 +11,6 @@ WHERE
 	"a_UserPosition"."PositionId" = 1
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"x"."SectorId"
 FROM

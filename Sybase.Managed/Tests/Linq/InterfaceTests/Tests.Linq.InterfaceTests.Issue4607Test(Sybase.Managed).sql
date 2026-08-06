@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 INSERT INTO [SomeTable]
 (
 	[Id],
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 2
 	[t1].[Id],
 	[t1].[ClassProp],

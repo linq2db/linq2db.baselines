@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[x].[ParentID],
 	[x].[ChildID],
@@ -10,7 +9,6 @@ WHERE
 	[x].[ParentID] IN (2)
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[x].[ParentID],
 	[x].[ChildID],

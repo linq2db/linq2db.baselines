@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	CASE
 		WHEN t1.ParentID IS NULL THEN 0

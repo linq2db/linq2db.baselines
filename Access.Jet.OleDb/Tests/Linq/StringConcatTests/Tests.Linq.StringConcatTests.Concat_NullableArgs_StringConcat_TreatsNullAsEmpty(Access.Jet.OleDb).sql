@@ -1,12 +1,10 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[e].[Id]
 FROM
 	[ConcatTestEntity] [e]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[Str1],

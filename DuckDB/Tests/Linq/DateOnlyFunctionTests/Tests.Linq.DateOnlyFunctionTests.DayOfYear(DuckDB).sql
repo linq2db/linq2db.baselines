@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	EXTRACT(dayofyear FROM t.TransactionDate)
 FROM

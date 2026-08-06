@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[m_1].[ParentID],
 	[d].[ChildID],
@@ -14,7 +13,6 @@ FROM
 		INNER JOIN [Child] [d] ON CAST([m_1].[ParentID] AS BigInt) = [d].[ParentID]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[p].[ParentID]
 FROM

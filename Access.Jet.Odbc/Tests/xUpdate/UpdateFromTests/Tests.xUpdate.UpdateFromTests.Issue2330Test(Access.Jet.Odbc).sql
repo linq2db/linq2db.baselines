@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 UPDATE
 	[Parent] [w]
 		INNER JOIN [Child] [b] ON ([w].[ParentID] = [b].[ParentID])

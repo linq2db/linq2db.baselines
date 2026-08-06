@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2019
-
 SELECT
 	SUM([grp_1].[MoneyValue]),
 	DatePart(year, [grp_1].[c1]),
@@ -16,7 +15,6 @@ GROUP BY
 	[grp_1].[c1]
 
 -- SqlServer.2019
-
 SELECT
 	SUM([grp_1].[MoneyValue]),
 	DatePart(year, [grp_1].[c1]),

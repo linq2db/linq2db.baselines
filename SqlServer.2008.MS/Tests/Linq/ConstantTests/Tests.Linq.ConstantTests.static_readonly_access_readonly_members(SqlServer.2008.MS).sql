@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[e].[Id],
 	[e].[GuidValue],
@@ -11,7 +10,6 @@ WHERE
 	[e].[Id] = 1
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[t1].[Id],
 	[t1].[GuidValue],
@@ -21,7 +19,6 @@ FROM
 	[TestConstantsData] [t1]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[e].[Id],
 	[e].[GuidValue],
@@ -33,7 +30,6 @@ WHERE
 	[e].[Id] = 1
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[t1].[Id],
 	[t1].[GuidValue],

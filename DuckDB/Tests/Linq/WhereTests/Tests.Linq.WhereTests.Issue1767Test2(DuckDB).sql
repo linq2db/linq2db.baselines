@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	p.ParentID,
 	p.Value1
@@ -9,7 +8,6 @@ WHERE
 	p.Value1 IS NULL OR p.Value1 <> 1
 
 -- DuckDB
-
 SELECT
 	t1.ParentID,
 	t1.Value1

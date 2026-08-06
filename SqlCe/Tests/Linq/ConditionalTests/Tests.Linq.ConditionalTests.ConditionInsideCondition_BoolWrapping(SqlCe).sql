@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	CASE
 		WHEN [p].[ParentID] % 2 = 0 THEN CASE
@@ -14,12 +13,11 @@ SELECT
 			WHEN [p].[ParentID] < 5 THEN 1
 			ELSE 0
 		END
-	END as [Value_1]
+	END
 FROM
 	[Parent] [p]
 
 -- SqlCe
-
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID] as [ParentID_1],
@@ -34,7 +32,6 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 -- SqlCe
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

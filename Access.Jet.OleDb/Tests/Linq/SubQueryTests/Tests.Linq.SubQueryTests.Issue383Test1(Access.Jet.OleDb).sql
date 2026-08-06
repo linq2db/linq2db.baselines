@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[m_1].[City_Code],
 	[d_1].[City_Name]
@@ -26,7 +25,6 @@ FROM
 		INNER JOIN [Cities] [d_1] ON ([d_1].[City_Code] = [m_1].[City_Code])
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[a].[First_Name],
 	[a].[Last_Name],

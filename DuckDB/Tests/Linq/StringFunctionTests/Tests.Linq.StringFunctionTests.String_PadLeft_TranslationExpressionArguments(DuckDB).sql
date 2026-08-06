@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	s.ID,
 	s.FirstName
@@ -18,7 +17,6 @@ WHERE
 	s.FirstName <> ''
 
 -- DuckDB
-
 SELECT
 	t1.FirstName,
 	t1.PersonID,

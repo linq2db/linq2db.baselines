@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	t.GroupId,
 	COUNT(*),
@@ -38,7 +37,6 @@ GROUP BY
 	t.GroupId
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.Id,
 	t1.GroupId,

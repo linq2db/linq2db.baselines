@@ -14,7 +14,6 @@ VALUES
 SELECT SCOPE_IDENTITY()
 
 -- SqlServer.SA SqlServer.2019
-
 INSERT INTO [AllTypes]
 (
 	[intDataType]

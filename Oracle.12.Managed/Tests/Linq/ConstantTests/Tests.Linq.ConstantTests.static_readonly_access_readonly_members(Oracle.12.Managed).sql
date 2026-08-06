@@ -1,5 +1,4 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	e."Id",
 	e."GuidValue",
@@ -11,7 +10,6 @@ WHERE
 	e."Id" = 1
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."GuidValue",
@@ -21,7 +19,6 @@ FROM
 	"TestConstantsData" t1
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	e."Id",
 	e."GuidValue",
@@ -33,7 +30,6 @@ WHERE
 	e."Id" = 1
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."GuidValue",

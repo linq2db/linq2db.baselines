@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 WITH cte AS
 (
 	SELECT
@@ -21,7 +20,6 @@ FROM
 	cte t1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	x.FirstName,
 	x.PersonID,

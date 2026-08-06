@@ -1,9 +1,7 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 DROP TABLE IF EXISTS `DropTableTestID`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 CREATE TABLE `DropTableTestID`
 (
 	`ID`  INT AUTO_INCREMENT NOT NULL,
@@ -13,7 +11,6 @@ CREATE TABLE `DropTableTestID`
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 INSERT INTO `DropTableTestID`
 (
 	`ID1`
@@ -24,7 +21,6 @@ VALUES
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t`.`ID`,
 	`t`.`ID1`
@@ -32,11 +28,9 @@ FROM
 	`DropTableTestID` `t`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 DROP TABLE `DropTableTestID`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`ID`,
 	`t1`.`ID1`

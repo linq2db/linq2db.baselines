@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 SELECT
 	"t1"."Key_1",
 	Coalesce((
@@ -45,7 +44,6 @@ ORDER BY
 	"t1"."Key_1"
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t1".PK,
 	"t1"."Id",

@@ -8,7 +8,6 @@ WHERE
 	r.ID >= 101 AND r.ID < :p
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 INSERT INTO "LinqDataTypes"
 (
 	ID,
@@ -32,9 +31,8 @@ WHERE
 	r.ID = 101 AND r."BigIntValue" = 11
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
-	r."BigIntValue" as "TestField"
+	r."BigIntValue"
 FROM
 	"LinqDataTypes" r
 WHERE

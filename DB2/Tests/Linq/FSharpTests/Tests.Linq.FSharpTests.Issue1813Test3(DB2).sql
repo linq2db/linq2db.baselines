@@ -50,7 +50,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"after_1"."Id",
 	"after_1"."Name",

@@ -12,7 +12,6 @@ VALUES
 )
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT @@IDENTITY
 
 -- Access.Ace.Odbc AccessODBC

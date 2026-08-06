@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT FIRST 1
 	DBINFO('dbname')
 FROM
@@ -19,6 +18,5 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT DBINFO('sqlca.sqlerrd1') FROM systables where tabid = 1
 

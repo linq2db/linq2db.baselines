@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[x].[ParentID],
 	[x].[ChildID],
@@ -10,7 +9,6 @@ WHERE
 	[x].[ParentID] IN (2)
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[x].[ParentID],
 	[x].[ChildID],

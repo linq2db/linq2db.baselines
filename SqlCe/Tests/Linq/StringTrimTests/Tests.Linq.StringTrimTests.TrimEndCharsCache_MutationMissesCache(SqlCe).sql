@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[t].[VarCharColumn]
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	[t].[Id]
 
 -- SqlCe
-
 SELECT
 	[t].[VarCharColumn]
 FROM

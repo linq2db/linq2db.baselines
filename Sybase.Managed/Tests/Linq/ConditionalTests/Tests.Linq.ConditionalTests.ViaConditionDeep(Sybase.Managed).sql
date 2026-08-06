@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[x].[Id],
 	CASE
@@ -12,7 +11,7 @@ SELECT
 	END,
 	[x].[StringProp],
 	1,
-	Coalesce([x].[StringProp], '') + '2',
+	Coalesce([x].[StringProp], '') || '2',
 	2
 FROM
 	[ConditionalData] [x]
@@ -20,7 +19,7 @@ WHERE
 	CASE
 		WHEN [x].[StringProp] = '1' OR [x].[StringProp] IS NULL THEN '2'
 		WHEN [x].[StringProp] = '2' THEN [x].[StringProp]
-		ELSE Coalesce([x].[StringProp], '') + '2'
+		ELSE Coalesce([x].[StringProp], '') || '2'
 	END LIKE '%2' ESCAPE '~' AND
 	CASE
 		WHEN [x].[StringProp] = '1' OR [x].[StringProp] IS NULL THEN NULL
@@ -29,7 +28,6 @@ WHERE
 	END = 2
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[StringProp]

@@ -1,9 +1,7 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT '<xml/>'
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT '<xml/>'
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite

@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 SELECT
 	"g_1"."Id",
 	LIST(Coalesce("g_1"."NullableValue", ''), ', '),
@@ -12,7 +11,6 @@ ORDER BY
 	"g_1"."Id"
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1".PK,
 	"t1"."Id",

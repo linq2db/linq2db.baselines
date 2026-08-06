@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	p.FirstName
 FROM
@@ -11,7 +10,6 @@ FROM
 	Person p_1
 
 -- DuckDB
-
 SELECT
 	p.FirstName || '/' || p.LastName
 FROM

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[x_1].[MiddleName],
 	[x_1].[LastName]
@@ -12,10 +11,10 @@ FROM
 			[Person] [x]
 	) [x_1]
 ORDER BY
-	Coalesce([x_1].[MiddleName], N'-2') DESC
+	Coalesce([x_1].[MiddleName], N'-2') DESC,
+	Coalesce([x_1].[LastName], N'-1')
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

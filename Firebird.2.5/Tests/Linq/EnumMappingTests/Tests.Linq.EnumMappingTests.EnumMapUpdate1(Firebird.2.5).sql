@@ -8,7 +8,6 @@ WHERE
 	"r".ID >= 101 AND "r".ID < @p
 
 -- Firebird.2.5 Firebird
-
 INSERT INTO "LinqDataTypes"
 (
 	ID,
@@ -21,7 +20,6 @@ VALUES
 )
 
 -- Firebird.2.5 Firebird
-
 UPDATE
 	"LinqDataTypes" "r"
 SET
@@ -30,7 +28,6 @@ WHERE
 	"r".ID = 101 AND "r"."BigIntValue" = 11
 
 -- Firebird.2.5 Firebird
-
 SELECT FIRST 1
 	"r"."BigIntValue"
 FROM

@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 WITH "cte" ("Id")
 AS
 (
@@ -33,7 +32,6 @@ FROM
 		INNER JOIN "Person" d ON d."PersonID" = m_1."Id"
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 WITH "cte" ("Id")
 AS
 (

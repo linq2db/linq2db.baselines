@@ -7,7 +7,6 @@ VALUES (@p0, @p1);
 
 
 -- MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`r`.`Id`,
 	`r`.`Value`

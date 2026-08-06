@@ -1,7 +1,6 @@
 ﻿-- SqlCe
-
 SELECT
-	[p].[LastName] + ', ' + [p].[FirstName] as [c1]
+	[p].[LastName] + ', ' + [p].[FirstName]
 FROM
 	[Person] [p]
 WHERE

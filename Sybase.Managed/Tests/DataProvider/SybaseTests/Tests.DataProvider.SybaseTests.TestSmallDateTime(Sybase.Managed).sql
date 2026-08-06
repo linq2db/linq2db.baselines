@@ -1,9 +1,7 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT Cast('2012-12-12 12:12:00' as smalldatetime)
 
 -- Sybase.Managed Sybase
-
 SELECT Cast('2012-12-12 12:12:00' as smalldatetime)
 
 -- Sybase.Managed Sybase

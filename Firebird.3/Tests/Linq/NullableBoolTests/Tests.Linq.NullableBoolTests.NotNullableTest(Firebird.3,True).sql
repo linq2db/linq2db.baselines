@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	"t"."Id",
 	"t"."Value"
@@ -9,7 +8,6 @@ WHERE
 	"t"."Value"
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t"."Id",
 	"t"."Value"
@@ -19,7 +17,6 @@ WHERE
 	"t"."Value" = TRUE
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t"."Id",
 	"t"."Value"
@@ -29,7 +26,6 @@ WHERE
 	"t"."Value" = FALSE
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t"."Id",
 	"t"."Value"
@@ -39,7 +35,6 @@ WHERE
 	NOT "t"."Value"
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t"."Id",
 	"t"."Value"
@@ -49,7 +44,6 @@ WHERE
 	"t"."Value" = FALSE
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t"."Id",
 	"t"."Value"

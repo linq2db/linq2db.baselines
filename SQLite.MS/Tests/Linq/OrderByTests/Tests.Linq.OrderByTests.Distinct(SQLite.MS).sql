@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT DISTINCT
 	[p].[ParentID],
 	[p].[Value1]

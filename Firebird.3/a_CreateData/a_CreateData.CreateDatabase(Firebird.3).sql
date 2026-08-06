@@ -1,151 +1,115 @@
 ﻿-- Firebird.3 Firebird3
-
 DROP PACKAGE TEST_PACKAGE1;
 
 -- Firebird.3 Firebird3
-
 DROP PACKAGE TEST_PACKAGE2;
 
 -- Firebird.3 Firebird3
-
 DROP PROCEDURE TEST_PROCEDURE;
 
 -- Firebird.3 Firebird3
-
 DROP PROCEDURE TEST_TABLE_FUNCTION;
 
 -- Firebird.3 Firebird3
-
 DROP FUNCTION TEST_FUNCTION;
 
 -- Firebird.3 Firebird3
-
 DROP PROCEDURE "AddIssue792Record";
 
 -- Firebird.3 Firebird3
-
 DROP PROCEDURE "Person_SelectByKey";
 
 -- Firebird.3 Firebird3
-
 DROP PROCEDURE "Person_SelectAll";
 
 -- Firebird.3 Firebird3
-
 DROP PROCEDURE "Person_SelectByName";
 
 -- Firebird.3 Firebird3
-
 DROP PROCEDURE "Person_Insert";
 
 -- Firebird.3 Firebird3
-
 DROP PROCEDURE "Person_Insert_OutputParameter";
 
 -- Firebird.3 Firebird3
-
 DROP PROCEDURE "Person_Update";
 
 -- Firebird.3 Firebird3
-
 DROP PROCEDURE "Person_Delete";
 
 -- Firebird.3 Firebird3
-
 DROP PROCEDURE "Patient_SelectAll";
 
 -- Firebird.3 Firebird3
-
 DROP PROCEDURE "Patient_SelectByName";
 
 -- Firebird.3 Firebird3
-
 DROP PROCEDURE "OutRefTest";
 
 -- Firebird.3 Firebird3
-
 DROP PROCEDURE "OutRefEnumTest";
 
 -- Firebird.3 Firebird3
-
 DROP PROCEDURE "Scalar_DataReader";
 
 -- Firebird.3 Firebird3
-
 DROP PROCEDURE "Scalar_OutputParameter";
 
 -- Firebird.3 Firebird3
-
 DROP PROCEDURE "Scalar_ReturnParameter";
 
 -- Firebird.3 Firebird3
-
 SELECT 1 FROM rdb$database
 
 -- Firebird.3 Firebird3
-
 DROP VIEW "PersonView";
 
 -- Firebird.3 Firebird3
-
 DROP TRIGGER "CREATE_PersonID";
 
 -- Firebird.3 Firebird3
-
 DROP TRIGGER "CREATE_DataTypeTest";
 
 -- Firebird.3 Firebird3
-
 DROP TABLE "Dual";
 
 -- Firebird.3 Firebird3
-
 DROP TABLE "DataTypeTest";
 
 -- Firebird.3 Firebird3
-
 DROP TABLE "Doctor";
 
 -- Firebird.3 Firebird3
-
 DROP TABLE "Patient";
 
 -- Firebird.3 Firebird3
-
 DROP TABLE "Person";
 
 -- Firebird.3 Firebird3
-
 DROP GENERATOR "DataTypeID";
 
 -- Firebird.3 Firebird3
-
 DROP GENERATOR "PersonID";
 
 -- Firebird.3 Firebird3
-
 DROP EXTERNAL FUNCTION RTRIM;
 
 -- Firebird.3 Firebird3
-
 DROP EXTERNAL FUNCTION LTRIM;
 
 -- Firebird.3 Firebird3
-
 DECLARE EXTERNAL FUNCTION LTRIM
 	CSTRING(255) NULL
 	RETURNS CSTRING(255) FREE_IT
 	ENTRY_POINT 'IB_UDF_ltrim' MODULE_NAME 'ib_udf';
 
 -- Firebird.3 Firebird3
-
 DECLARE EXTERNAL FUNCTION RTRIM
 	CSTRING(255) NULL
 	RETURNS CSTRING(255) FREE_IT
 	ENTRY_POINT 'IB_UDF_rtrim' MODULE_NAME 'ib_udf';
 
 -- Firebird.3 Firebird3
-
 /*
 Dual table FOR supporting queryies LIKE:
 SELECT 1 AS id => SELECT 1 AS "id" *FROM Dual*
@@ -153,15 +117,12 @@ SELECT 1 AS id => SELECT 1 AS "id" *FROM Dual*
 CREATE TABLE "Dual" ("Dummy"  VARCHAR(10));
 
 -- Firebird.3 Firebird3
-
 INSERT INTO  "Dual" ("Dummy") VALUES ('X');
 
 -- Firebird.3 Firebird3
-
 DROP TABLE "InheritanceParent";
 
 -- Firebird.3 Firebird3
-
 CREATE TABLE "InheritanceParent"
 (
 	"InheritanceParentId" INTEGER     NOT NULL PRIMARY KEY,
@@ -170,11 +131,9 @@ CREATE TABLE "InheritanceParent"
 );
 
 -- Firebird.3 Firebird3
-
 DROP TABLE "InheritanceChild";
 
 -- Firebird.3 Firebird3
-
 CREATE TABLE "InheritanceChild"
 (
 	"InheritanceChildId"  INTEGER     NOT NULL PRIMARY KEY,
@@ -184,7 +143,6 @@ CREATE TABLE "InheritanceChild"
 );
 
 -- Firebird.3 Firebird3
-
 -- Person Table
 
 CREATE TABLE "Person"
@@ -197,11 +155,9 @@ CREATE TABLE "Person"
 );
 
 -- Firebird.3 Firebird3
-
 CREATE GENERATOR "PersonID";
 
 -- Firebird.3 Firebird3
-
 CREATE TRIGGER "CREATE_PersonID" FOR "Person"
 BEFORE INSERT POSITION 0
 AS BEGIN
@@ -209,24 +165,19 @@ AS BEGIN
 END;
 
 -- Firebird.3 Firebird3
-
 INSERT INTO "Person" ("FirstName", "LastName", "Gender") VALUES ('John',   'Pupkin',    'M');
 
 -- Firebird.3 Firebird3
-
 INSERT INTO "Person" ("FirstName", "LastName", "Gender") VALUES ('Tester', 'Testerson', 'M');
 
 -- Firebird.3 Firebird3
-
 INSERT INTO "Person" ("FirstName", "LastName", "Gender") VALUES ('Jane',   'Doe',       'F');
 
 -- Firebird.3 Firebird3
-
 -- INSERT INTO "Person" ("FirstName", "LastName", "Gender") VALUES ('Jürgen', 'König',     'M');
 INSERT INTO "Person" ("FirstName", "LastName", "MiddleName", "Gender") VALUES (_utf8 x'4AC3BC7267656E', _utf8 x'4BC3B66E6967', 'Ko', 'M');
 
 -- Firebird.3 Firebird3
-
 -- Doctor Table Extension
 
 CREATE TABLE "Doctor"
@@ -238,11 +189,9 @@ CREATE TABLE "Doctor"
 );
 
 -- Firebird.3 Firebird3
-
 INSERT INTO "Doctor" ("PersonID", "Taxonomy") VALUES (1, 'Psychiatry');
 
 -- Firebird.3 Firebird3
-
 -- Patient Table Extension
 
 CREATE TABLE "Patient"
@@ -254,11 +203,9 @@ CREATE TABLE "Patient"
 );
 
 -- Firebird.3 Firebird3
-
 INSERT INTO "Patient" ("PersonID", "Diagnosis") VALUES (2, 'Hallucination with Paranoid Bugs'' Delirium of Persecution');
 
 -- Firebird.3 Firebird3
-
 -- Data Types test
 
 /*
@@ -298,11 +245,9 @@ CREATE TABLE "DataTypeTest"
 );
 
 -- Firebird.3 Firebird3
-
 CREATE GENERATOR "DataTypeID";
 
 -- Firebird.3 Firebird3
-
 CREATE TRIGGER "CREATE_DataTypeTest" FOR "DataTypeTest"
 BEFORE INSERT POSITION 0
 AS BEGIN
@@ -310,7 +255,6 @@ AS BEGIN
 END;
 
 -- Firebird.3 Firebird3
-
 INSERT INTO "DataTypeTest"
 	("Binary_", "Boolean_",   "Byte_",  "Bytes_",  CHAR_,  "DateTime_", "Decimal_",
 	 "Double_",    "Guid_",  "Int16_",  "Int32_",  "Int64_",    "Money_",   "SByte_",
@@ -321,7 +265,6 @@ VALUES
 		NULL,     NULL,    NULL,    NULL,    NULL,      NULL,     NULL);
 
 -- Firebird.3 Firebird3
-
 INSERT INTO "DataTypeTest"
 	("Binary_",	"Boolean_",	"Byte_",   "Bytes_",  CHAR_,		"DateTime_", "Decimal_",
 	 "Double_",	"Guid_",	"Int16_",  "Int32_",  "Int64_",		"Money_",   "SByte_",
@@ -339,35 +282,27 @@ VALUES
 	'<root><element strattr="strvalue" intattr="12345"/></root>');
 
 -- Firebird.3 Firebird3
-
 DROP TABLE "Parent";
 
 -- Firebird.3 Firebird3
-
 DROP TABLE "Child";
 
 -- Firebird.3 Firebird3
-
 DROP TABLE "GrandChild";
 
 -- Firebird.3 Firebird3
-
 CREATE TABLE "Parent"      ("ParentID" int, "Value1" int);
 
 -- Firebird.3 Firebird3
-
 CREATE TABLE "Child"       ("ParentID" int, "ChildID" int);
 
 -- Firebird.3 Firebird3
-
 CREATE TABLE "GrandChild"  ("ParentID" int, "ChildID" int, "GrandChildID" int);
 
 -- Firebird.3 Firebird3
-
 DROP TABLE "LinqDataTypes";
 
 -- Firebird.3 Firebird3
-
 CREATE TABLE "LinqDataTypes"
 (
 	ID               int,
@@ -387,19 +322,15 @@ CREATE TABLE "LinqDataTypes"
 );
 
 -- Firebird.3 Firebird3
-
 DROP GENERATOR "SequenceTestSeq";
 
 -- Firebird.3 Firebird3
-
 CREATE GENERATOR "SequenceTestSeq";
 
 -- Firebird.3 Firebird3
-
 DROP TABLE "SequenceTest";
 
 -- Firebird.3 Firebird3
-
 CREATE TABLE "SequenceTest"
 (
 	ID       int         NOT NULL PRIMARY KEY,
@@ -407,29 +338,23 @@ CREATE TABLE "SequenceTest"
 );
 
 -- Firebird.3 Firebird3
-
 DROP TRIGGER CREATE_ID;
 
 -- Firebird.3 Firebird3
-
 DROP GENERATOR "TestIdentityID";
 
 -- Firebird.3 Firebird3
-
 DROP TABLE "TestIdentity";
 
 -- Firebird.3 Firebird3
-
 CREATE TABLE "TestIdentity" (
 	ID INTEGER NOT NULL PRIMARY KEY
 );
 
 -- Firebird.3 Firebird3
-
 CREATE GENERATOR "TestIdentityID";
 
 -- Firebird.3 Firebird3
-
 CREATE TRIGGER CREATE_ID FOR "TestIdentity"
 BEFORE INSERT POSITION 0
 AS BEGIN
@@ -437,19 +362,15 @@ AS BEGIN
 END;
 
 -- Firebird.3 Firebird3
-
 DROP TRIGGER "AllTypes_ID";
 
 -- Firebird.3 Firebird3
-
 DROP GENERATOR "AllTypesID";
 
 -- Firebird.3 Firebird3
-
 DROP TABLE "AllTypes";
 
 -- Firebird.3 Firebird3
-
 CREATE TABLE "AllTypes"
 (
 	ID                       integer      NOT NULL PRIMARY KEY,
@@ -479,11 +400,9 @@ CREATE TABLE "AllTypes"
 );
 
 -- Firebird.3 Firebird3
-
 CREATE GENERATOR "AllTypesID";
 
 -- Firebird.3 Firebird3
-
 CREATE TRIGGER "AllTypes_ID" FOR "AllTypes"
 BEFORE INSERT POSITION 0
 AS BEGIN
@@ -491,7 +410,6 @@ AS BEGIN
 END;
 
 -- Firebird.3 Firebird3
-
 INSERT INTO "AllTypes"
 VALUES
 (
@@ -522,7 +440,6 @@ VALUES
 );
 
 -- Firebird.3 Firebird3
-
 INSERT INTO "AllTypes"
 VALUES
 (
@@ -553,13 +470,11 @@ VALUES
 );
 
 -- Firebird.3 Firebird3
-
 CREATE VIEW "PersonView"
 AS
 	SELECT * FROM "Person";
 
 -- Firebird.3 Firebird3
-
 -- Person_SelectByKey
 
 CREATE PROCEDURE "Person_SelectByKey"(id INTEGER)
@@ -584,7 +499,6 @@ BEGIN
 END;
 
 -- Firebird.3 Firebird3
-
 -- Person_SelectAll
 
 CREATE PROCEDURE "Person_SelectAll"
@@ -609,7 +523,6 @@ BEGIN
 END;
 
 -- Firebird.3 Firebird3
-
 -- Person_SelectByName
 
 CREATE PROCEDURE "Person_SelectByName"
@@ -640,7 +553,6 @@ BEGIN
 END;
 
 -- Firebird.3 Firebird3
-
 -- Person_Insert
 
 CREATE PROCEDURE "Person_Insert"
@@ -664,7 +576,6 @@ BEGIN
 END;
 
 -- Firebird.3 Firebird3
-
 -- Person_Insert_OutputParameter
 
 CREATE PROCEDURE "Person_Insert_OutputParameter"
@@ -688,7 +599,6 @@ BEGIN
 END;
 
 -- Firebird.3 Firebird3
-
 -- Person_Update
 
 CREATE PROCEDURE "Person_Update"(
@@ -712,7 +622,6 @@ BEGIN
 END;
 
 -- Firebird.3 Firebird3
-
 -- Person_Delete
 
 CREATE PROCEDURE "Person_Delete"(
@@ -724,7 +633,6 @@ BEGIN
 END;
 
 -- Firebird.3 Firebird3
-
 -- Patient_SelectAll
 
 CREATE PROCEDURE "Patient_SelectAll"
@@ -761,7 +669,6 @@ BEGIN
 END;
 
 -- Firebird.3 Firebird3
-
 -- Patient_SelectByName
 
 CREATE PROCEDURE "Patient_SelectByName"(
@@ -796,7 +703,6 @@ BEGIN
 END;
 
 -- Firebird.3 Firebird3
-
 -- OutRefTest
 
 /*
@@ -829,7 +735,6 @@ BEGIN
 END;
 
 -- Firebird.3 Firebird3
-
 -- OutRefEnumTest
 
 CREATE PROCEDURE "OutRefEnumTest"(
@@ -848,7 +753,6 @@ BEGIN
 END;
 
 -- Firebird.3 Firebird3
-
 -- ExecuteScalarTest
 
 CREATE PROCEDURE "Scalar_DataReader"
@@ -864,7 +768,6 @@ BEGIN
 END;
 
 -- Firebird.3 Firebird3
-
 CREATE PROCEDURE "Scalar_OutputParameter"
 RETURNS (
 	outputInt      INTEGER,
@@ -878,7 +781,6 @@ BEGIN
 END;
 
 -- Firebird.3 Firebird3
-
 /*
 "Return_Value" is the name for ReturnValue "emulating"
 may be changed: FdpDataProvider.ReturnParameterName
@@ -892,11 +794,9 @@ BEGIN
 END;
 
 -- Firebird.3 Firebird3
-
 DROP TABLE "CamelCaseName";
 
 -- Firebird.3 Firebird3
-
 CREATE TABLE "CamelCaseName"
 (
 	"Id"     INTEGER NOT NULL PRIMARY KEY,
@@ -908,15 +808,12 @@ CREATE TABLE "CamelCaseName"
 );
 
 -- Firebird.3 Firebird3
-
 DROP TABLE "TestMerge1";
 
 -- Firebird.3 Firebird3
-
 DROP TABLE "TestMerge2";
 
 -- Firebird.3 Firebird3
-
 CREATE TABLE "TestMerge1"
 (
 	"Id"     INTEGER     NOT NULL PRIMARY KEY,
@@ -948,7 +845,6 @@ CREATE TABLE "TestMerge1"
 );
 
 -- Firebird.3 Firebird3
-
 CREATE TABLE "TestMerge2"
 (
 	"Id"     INTEGER     NOT NULL PRIMARY KEY,
@@ -980,7 +876,6 @@ CREATE TABLE "TestMerge2"
 );
 
 -- Firebird.3 Firebird3
-
 CREATE PROCEDURE "AddIssue792Record"
 AS
 BEGIN
@@ -988,15 +883,12 @@ BEGIN
 END;
 
 -- Firebird.3 Firebird3
-
 SELECT 1 FROM rdb$database
 
 -- Firebird.3 Firebird3
-
 DROP TABLE "CollatedTable"
 
 -- Firebird.3 Firebird3
-
 CREATE TABLE "CollatedTable"
 (
 	"Id"				INT NOT NULL,
@@ -1005,7 +897,6 @@ CREATE TABLE "CollatedTable"
 )
 
 -- Firebird.3 Firebird3
-
 CREATE OR ALTER PACKAGE TEST_PACKAGE1
 AS
 BEGIN
@@ -1015,7 +906,6 @@ BEGIN
 END
 
 -- Firebird.3 Firebird3
-
 RECREATE PACKAGE BODY TEST_PACKAGE1
 AS
 BEGIN
@@ -1039,7 +929,6 @@ BEGIN
 END
 
 -- Firebird.3 Firebird3
-
 CREATE OR ALTER PACKAGE TEST_PACKAGE2
 AS
 BEGIN
@@ -1049,7 +938,6 @@ BEGIN
 END
 
 -- Firebird.3 Firebird3
-
 RECREATE PACKAGE BODY TEST_PACKAGE2
 AS
 BEGIN
@@ -1073,7 +961,6 @@ BEGIN
 END
 
 -- Firebird.3 Firebird3
-
 CREATE  PROCEDURE TEST_PROCEDURE(I INT) RETURNS (O INT)
 AS
 	BEGIN
@@ -1081,7 +968,6 @@ AS
 	END
 
 -- Firebird.3 Firebird3
-
 CREATE PROCEDURE TEST_TABLE_FUNCTION(I INT)
 RETURNS (O INT)
 AS
@@ -1092,7 +978,6 @@ BEGIN
 END
 
 -- Firebird.3 Firebird3
-
 CREATE  FUNCTION TEST_FUNCTION(I INT) RETURNS INT
 AS
 	BEGIN
@@ -1100,7 +985,6 @@ AS
 	END
 
 -- Firebird.3 Firebird3
-
 INSERT INTO "LinqDataTypes"
 (
 	ID,
@@ -1128,7 +1012,6 @@ SELECT 11,11.45,TIMESTAMP '2009-09-27 00:00:00.0000',NULL,TRUE,X'D3021D1897F04DC
 SELECT 12,11.45,TIMESTAMP '2012-11-07 19:19:29.0900',NULL,TRUE,X'03021D1897F04DC098D0F0C7DF4A1230',12,NULL,NULL,'0' FROM rdb$database
 
 -- Firebird.3 Firebird3
-
 INSERT INTO "Parent"
 (
 	"ParentID",
@@ -1143,7 +1026,6 @@ SELECT 6,6 FROM rdb$database UNION ALL
 SELECT 7,1 FROM rdb$database
 
 -- Firebird.3 Firebird3
-
 INSERT INTO "Child"
 (
 	"ParentID",
@@ -1168,7 +1050,6 @@ SELECT 6,66 FROM rdb$database UNION ALL
 SELECT 7,77 FROM rdb$database
 
 -- Firebird.3 Firebird3
-
 INSERT INTO "GrandChild"
 (
 	"ParentID",
@@ -1199,7 +1080,6 @@ SELECT 4,42,423 FROM rdb$database UNION ALL
 SELECT 4,42,424 FROM rdb$database
 
 -- Firebird.3 Firebird3
-
 INSERT INTO "InheritanceParent"
 (
 	"InheritanceParentId",
@@ -1211,7 +1091,6 @@ SELECT 2,1,NULL FROM rdb$database UNION ALL
 SELECT 3,2,'InheritanceParent2' FROM rdb$database
 
 -- Firebird.3 Firebird3
-
 INSERT INTO "InheritanceChild"
 (
 	"InheritanceChildId",

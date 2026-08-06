@@ -1,11 +1,9 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
 
-
 				IF EXISTS (SELECT * FROM sysobjects WHERE id = object_id(N'fn_SomeFunction') AND xtype IN (N'FN', N'IF', N'TF'))
 					DROP FUNCTION fn_SomeFunction
 
 -- SqlServer.SA.MS SqlServer.2019
-
 CREATE FUNCTION fn_SomeFunction (@id AS INT)
 RETURNS TABLE
 AS RETURN
@@ -87,7 +85,6 @@ FROM
 		) [t1]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 
 				IF EXISTS (SELECT * FROM sysobjects WHERE id = object_id(N'fn_SomeFunction') AND xtype IN (N'FN', N'IF', N'TF'))
 					DROP FUNCTION fn_SomeFunction

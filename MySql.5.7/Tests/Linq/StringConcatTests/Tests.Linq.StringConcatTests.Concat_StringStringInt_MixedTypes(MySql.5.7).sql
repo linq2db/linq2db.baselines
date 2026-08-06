@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`e`.`StrReq`
 FROM
@@ -8,7 +7,6 @@ WHERE
 	(CONCAT(Coalesce(`e`.`StrReq`, ''), ' 1')) = 'Programmer 1'
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Str1`,

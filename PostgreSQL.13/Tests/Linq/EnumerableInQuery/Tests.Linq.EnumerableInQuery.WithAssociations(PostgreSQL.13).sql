@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
-
+﻿-- PostgreSQL.13 PostgreSQL12
 SELECT
 	it_1.not_null,
 	it_1."ColorName",
@@ -22,8 +21,7 @@ FROM
 WHERE
 	it_1."ColorName" = 'Red'
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."ColorId",

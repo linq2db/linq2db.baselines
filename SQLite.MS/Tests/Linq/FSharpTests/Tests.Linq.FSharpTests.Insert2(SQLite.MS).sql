@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	MAX([t1].[PersonID])
 FROM
@@ -31,7 +30,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	[p].[PersonID],
 	[p].[FirstName],
@@ -45,7 +43,6 @@ WHERE
 LIMIT 2
 
 -- SQLite.MS SQLite
-
 DELETE FROM
 	[Person]
 WHERE

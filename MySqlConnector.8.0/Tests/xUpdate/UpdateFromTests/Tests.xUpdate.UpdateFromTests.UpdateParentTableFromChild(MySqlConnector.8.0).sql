@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 UPDATE
 	`ParentTable` `a_Parent`,
 	`ChildTable` `c_1`
@@ -9,7 +8,6 @@ WHERE
 	`a_Parent`.`Id` = 2 AND `c_1`.`ParentId` = `a_Parent`.`Id`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`p`.`Id`,
 	`p`.`Value`

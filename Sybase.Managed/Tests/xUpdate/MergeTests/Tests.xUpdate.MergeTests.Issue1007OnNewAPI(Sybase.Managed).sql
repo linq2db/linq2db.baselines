@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 DELETE FROM [TestMergeIdentity]
 FROM
 	[TestMergeIdentity] [t1]
@@ -18,14 +17,12 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT
 	MAX([t1].[Id])
 FROM
 	[TestMergeIdentity] [t1]
 
 -- Sybase.Managed Sybase
-
 MERGE INTO [TestMergeIdentity] [Target]
 USING (
 	SELECT 10 AS [Field]) [Source]
@@ -50,7 +47,6 @@ SET
 	[Field] = [Source].[Field]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[Field]

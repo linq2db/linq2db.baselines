@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"a_MiddleGeneric"."ParentID",
 	"a_Bottom"."ParentID",

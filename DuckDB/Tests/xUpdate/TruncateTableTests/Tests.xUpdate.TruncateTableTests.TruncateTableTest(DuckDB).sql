@@ -1,9 +1,7 @@
 ﻿-- DuckDB
-
 DROP TABLE IF EXISTS TestTrun
 
 -- DuckDB
-
 CREATE TABLE TestTrun
 (
 	ID     INTEGER,
@@ -13,10 +11,8 @@ CREATE TABLE TestTrun
 )
 
 -- DuckDB
-
 TRUNCATE TABLE TestTrun;
 
 -- DuckDB
-
 DROP TABLE TestTrun
 

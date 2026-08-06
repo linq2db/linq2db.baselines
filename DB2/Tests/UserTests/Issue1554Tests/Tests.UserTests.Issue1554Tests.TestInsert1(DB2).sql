@@ -14,13 +14,12 @@ INSERT INTO "Issue1554Table"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@ClaimedKeyType AS NVarChar(2)),
-	CAST(@ClaimedKeyTypeN AS NVarChar(2))
+	@Id,
+	@ClaimedKeyType,
+	@ClaimedKeyTypeN
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."ClaimedKeyType",

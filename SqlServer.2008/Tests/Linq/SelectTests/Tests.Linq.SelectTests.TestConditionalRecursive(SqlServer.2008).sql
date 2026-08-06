@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008
-
 SELECT
 	CASE
 		WHEN [p].[ParentID] = 1 THEN CASE

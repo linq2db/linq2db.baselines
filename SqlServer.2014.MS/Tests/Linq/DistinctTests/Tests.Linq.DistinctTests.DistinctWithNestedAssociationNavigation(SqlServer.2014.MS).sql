@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014.MS SqlServer.2014
-
 SELECT DISTINCT
 	[gc].[GrandChildID],
 	[a_Parent].[Value1]
@@ -11,7 +10,6 @@ ORDER BY
 	[gc].[GrandChildID]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID],

@@ -27,7 +27,6 @@ ORDER BY
 	c_1.ordinal_position
 
 -- DuckDB
-
 INSERT INTO AllTypes
 (
 	ID,

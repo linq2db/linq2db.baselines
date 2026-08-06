@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 SELECT
 	"p".ID,
 	"p"."MoneyValue",
@@ -16,7 +15,6 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"p".ID,
 	"p"."MoneyValue",

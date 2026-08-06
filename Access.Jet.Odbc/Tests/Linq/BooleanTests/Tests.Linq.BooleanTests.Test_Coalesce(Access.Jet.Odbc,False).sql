@@ -18,7 +18,6 @@ WHERE
 	IIF([r].[BooleanN] IS NULL, ?, [r].[BooleanN])
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -52,7 +51,6 @@ WHERE
 	IIF([r].[BooleanN] IS NULL, ?, [r].[BooleanN])
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -67,7 +65,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[r].[Id],
 	[r].[Boolean],
@@ -84,7 +81,6 @@ WHERE
 	IIF([r].[BooleanN] IS NULL, [r].[Id] MOD 2 = 1, [r].[BooleanN])
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],

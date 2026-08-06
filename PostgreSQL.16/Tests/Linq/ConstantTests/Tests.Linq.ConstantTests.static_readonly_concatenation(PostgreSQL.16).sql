@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DECLARE @p Text(9) -- String
 SET     @p = 'StrValue1'
 
@@ -12,8 +12,7 @@ FROM
 WHERE
 	(Coalesce(e."StringValue", '') || '1') = :p
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."GuidValue",

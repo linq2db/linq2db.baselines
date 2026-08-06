@@ -1,12 +1,10 @@
 ﻿-- SQLite.Classic SQLite
-
 DELETE FROM
 	[Person]
 WHERE
 	[Person].[PersonID] > 4
 
 -- SQLite.Classic SQLite
-
 INSERT INTO [Person]
 (
 	[FirstName],
@@ -21,11 +19,9 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-
 SELECT last_insert_rowid()
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],
@@ -39,7 +35,6 @@ WHERE
 LIMIT 2
 
 -- SQLite.Classic SQLite
-
 DELETE FROM
 	[Person]
 WHERE

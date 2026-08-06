@@ -199,7 +199,6 @@ WHERE
 	)
 
 -- Informix.DB2 Informix
-
 SELECT
 	r.Value1
 FROM

@@ -1,12 +1,10 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 ALTER TABLE
 	Person
 DELETE WHERE
 	startsWith(FirstName, 'Insert15')
 
 -- ClickHouse.MySql ClickHouse
-
 INSERT INTO Person
 (
 	PersonID,
@@ -25,7 +23,6 @@ VALUES
 )
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	COUNT(*)
 FROM
@@ -34,7 +31,6 @@ WHERE
 	startsWith(t1.FirstName, 'Insert15')
 
 -- ClickHouse.MySql ClickHouse
-
 ALTER TABLE
 	Person
 DELETE WHERE

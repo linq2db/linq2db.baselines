@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	"tupledArg"."ParentID",
 	"tupledArg"."Value1",

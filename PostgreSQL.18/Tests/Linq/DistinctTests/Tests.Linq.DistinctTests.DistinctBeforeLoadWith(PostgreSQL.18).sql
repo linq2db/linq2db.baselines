@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
-
+﻿-- PostgreSQL.18 PostgreSQL12
 SELECT DISTINCT
 	c_1."ParentID",
 	c_1."ChildID"
@@ -10,8 +9,7 @@ WHERE
 ORDER BY
 	c_1."ChildID"
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT DISTINCT
 	c_1."ParentID",
 	c_1."ChildID"

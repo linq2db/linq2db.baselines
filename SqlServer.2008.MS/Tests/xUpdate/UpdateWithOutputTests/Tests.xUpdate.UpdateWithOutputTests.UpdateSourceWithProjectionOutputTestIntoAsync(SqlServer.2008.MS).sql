@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
-
 UPDATE
 	[TableWithData]
 SET
@@ -20,7 +19,6 @@ WHERE
 	[TableWithData].[Id] > 3
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[t1].[Id],
 	[t1].[Value],

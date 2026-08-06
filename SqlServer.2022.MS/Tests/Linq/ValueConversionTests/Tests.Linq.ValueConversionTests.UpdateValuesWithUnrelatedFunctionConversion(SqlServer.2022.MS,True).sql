@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
-
 UPDATE
 	[TableWithConverterValue]
 SET
@@ -8,7 +7,6 @@ WHERE
 	[TableWithConverterValue].[Id] = 1
 
 -- SqlServer.2022.MS SqlServer.2022
-
 SELECT TOP (2)
 	[x].[Id],
 	[x].[NoConversion],

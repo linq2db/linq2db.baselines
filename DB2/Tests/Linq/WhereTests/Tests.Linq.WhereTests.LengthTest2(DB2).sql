@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"nm"."FirstName"
 FROM
@@ -8,7 +7,6 @@ WHERE
 	CHAR_LENGTH("nm"."FirstName") <> 0
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."FirstName",
 	"t1"."PersonID",

@@ -1,7 +1,6 @@
 ﻿-- SqlCe
-
 SELECT
-	CAST([p].[MoneyValue] AS Real) as [c1]
+	CAST([p].[MoneyValue] AS Real)
 FROM
 	[LinqDataTypes] [p]
 WHERE

@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
-
+﻿-- PostgreSQL.13 PostgreSQL12
 CREATE TEMPORARY TABLE "IsTemporaryTable"
 (
 	"Id"    Int NOT NULL,
@@ -9,15 +8,13 @@ CREATE TEMPORARY TABLE "IsTemporaryTable"
 )
 ON COMMIT PRESERVE ROWS
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Value"
 FROM
 	"IsTemporaryTable" t1
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 DROP TABLE IF EXISTS "IsTemporaryTable"
 

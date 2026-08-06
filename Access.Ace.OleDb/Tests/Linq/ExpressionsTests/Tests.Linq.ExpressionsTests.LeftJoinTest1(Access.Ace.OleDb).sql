@@ -1,9 +1,8 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t].[ParentID],
 	[t].[ChildID],
-	[i].[ParentID],
+	[i].[ParentID] as [ParentID_1],
 	[i].[Value1]
 FROM
 	[Child] [t]

@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[groupedData_1].[Key_1],
 	COUNT(*)

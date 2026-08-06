@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 DELETE FROM [InheritanceParent]
 FROM
 	[InheritanceParent] [t1]
@@ -41,7 +40,6 @@ BEGIN
 END
 
 -- Sybase.Managed Sybase
-
 SELECT
 	COUNT(*)
 FROM
@@ -84,7 +82,6 @@ BEGIN
 END
 
 -- Sybase.Managed Sybase
-
 SELECT
 	COUNT(*)
 FROM

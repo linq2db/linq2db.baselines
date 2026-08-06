@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
-
 IF (OBJECT_ID(N'[DisposableTable]', N'U') IS NULL)
 	CREATE TABLE [DisposableTable]
 	(
@@ -9,7 +8,6 @@ IF (OBJECT_ID(N'[DisposableTable]', N'U') IS NULL)
 	)
 
 -- SqlServer.2005.MS SqlServer.2005
-
 IF (OBJECT_ID(N'[DisposableTable]', N'U') IS NOT NULL)
 	DROP TABLE [DisposableTable]
 

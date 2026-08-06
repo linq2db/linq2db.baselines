@@ -1,9 +1,7 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 DROP TABLE IF EXISTS `Issue681Table2`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 CREATE TABLE `Issue681Table2`
 (
 	`ID`    INT NOT NULL,
@@ -13,6 +11,5 @@ CREATE TABLE `Issue681Table2`
 )
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 DROP TABLE IF EXISTS `Issue681Table2`
 

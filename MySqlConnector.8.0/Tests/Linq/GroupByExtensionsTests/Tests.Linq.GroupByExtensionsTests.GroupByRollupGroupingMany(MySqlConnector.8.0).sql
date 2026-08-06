@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	GROUPING(`g_2`.`Id1`, `g_2`.`Id2`),
 	`g_2`.`Id1`,

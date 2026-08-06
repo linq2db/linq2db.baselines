@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	SUM([grp_1].[MoneyValue]),
 	[grp_1].[Year_1],

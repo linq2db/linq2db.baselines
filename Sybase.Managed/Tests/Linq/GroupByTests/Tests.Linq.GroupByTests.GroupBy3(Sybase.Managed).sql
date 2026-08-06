@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT DISTINCT
 	Coalesce([gr].[Value1], [c_1].[ChildID])
 FROM

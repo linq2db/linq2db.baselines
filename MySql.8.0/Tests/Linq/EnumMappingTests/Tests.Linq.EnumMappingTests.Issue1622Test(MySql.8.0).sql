@@ -16,7 +16,6 @@ VALUES
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`e`.`Id`,
 	`e`.`SomeText`
@@ -27,7 +26,6 @@ WHERE
 LIMIT 2
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`e`.`Id`,
 	`e`.`SomeText`

@@ -15,7 +15,6 @@ WHERE
 	`e`.`Id` = @Id AND `e`.`Id` = @p
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`GuidValue`,
@@ -41,7 +40,6 @@ WHERE
 	`e`.`Id` = @Id AND `e`.`Id` = @p
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`GuidValue`,

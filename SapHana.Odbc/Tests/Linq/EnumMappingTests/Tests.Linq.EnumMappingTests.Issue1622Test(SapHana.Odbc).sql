@@ -16,7 +16,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"e"."Id",
 	"e"."SomeText"
@@ -27,7 +26,6 @@ WHERE
 LIMIT 2
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"e"."Id",
 	"e"."SomeText"

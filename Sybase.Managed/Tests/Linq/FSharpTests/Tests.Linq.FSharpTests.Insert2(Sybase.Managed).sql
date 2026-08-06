@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	MAX([t1].[PersonID])
 FROM
@@ -31,7 +30,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 2
 	[p].[PersonID],
 	[p].[FirstName],
@@ -44,7 +42,6 @@ WHERE
 	[p].[PersonID] > 4
 
 -- Sybase.Managed Sybase
-
 DELETE FROM [Person]
 FROM
 	[Person] [t]

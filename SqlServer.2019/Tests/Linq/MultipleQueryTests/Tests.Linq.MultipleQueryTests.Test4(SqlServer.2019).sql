@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2019
-
 SELECT
 	[m_1].[ParentID],
 	[d].[ChildID]
@@ -15,7 +14,6 @@ ORDER BY
 	[m_1].[ParentID]
 
 -- SqlServer.2019
-
 SELECT
 	[p].[ParentID]
 FROM

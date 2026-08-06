@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	o.ParentID,
 	(
@@ -22,14 +21,12 @@ FROM
 	Parent o
 
 -- DuckDB
-
 SELECT
 	COUNT(*)
 FROM
 	Parent o
 
 -- DuckDB
-
 SELECT
 	x.ParentID,
 	x.CountResult,

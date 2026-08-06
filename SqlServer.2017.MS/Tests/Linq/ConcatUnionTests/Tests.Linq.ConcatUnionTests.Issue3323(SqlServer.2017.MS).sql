@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
-
 INSERT INTO [Issue3323Table]
 (
 	[Id],
@@ -16,7 +15,6 @@ VALUES
 )
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t1].[Id],
 	[t1].[Text],

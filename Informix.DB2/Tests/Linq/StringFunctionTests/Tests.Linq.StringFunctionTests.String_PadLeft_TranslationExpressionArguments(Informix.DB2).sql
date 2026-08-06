@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	s.ID,
 	s.FirstName
@@ -18,7 +17,6 @@ WHERE
 	s.FirstName <> ''
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.FirstName,
 	t1.PersonID,

@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 INSERT INTO "Issue1303"
 (
 	ID,
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1.ID,
 	t1."Array",
@@ -25,7 +23,6 @@ WHERE
 	t1.ID = 1 AND ROWNUM <= 2
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1.ID,
 	t1."Array",
@@ -36,7 +33,6 @@ WHERE
 	t1."Array" = HEXTORAW('010203') AND ROWNUM <= 2
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1.ID,
 	t1."Array",

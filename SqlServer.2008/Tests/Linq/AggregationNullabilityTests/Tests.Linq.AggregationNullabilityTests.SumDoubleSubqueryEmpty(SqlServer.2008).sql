@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008
-
 SELECT TOP (1)
 	1000 - Coalesce((
 		SELECT

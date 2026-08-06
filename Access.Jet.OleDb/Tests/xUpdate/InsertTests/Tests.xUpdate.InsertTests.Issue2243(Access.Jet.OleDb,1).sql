@@ -36,7 +36,6 @@ VALUES
 )
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT TOP 2
 	[t1].[id],
 	[t1].[name],
@@ -62,7 +61,6 @@ WHERE
 	[t1].[id] = @Id
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT TOP 2
 	[t1].[id],
 	[t1].[name],

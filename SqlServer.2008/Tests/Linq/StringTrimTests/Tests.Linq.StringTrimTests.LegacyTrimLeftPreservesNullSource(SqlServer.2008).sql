@@ -28,7 +28,6 @@ VALUES
 )
 
 -- SqlServer.2008
-
 SELECT
 	[t].[VarCharColumn]
 FROM

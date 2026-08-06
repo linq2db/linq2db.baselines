@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 DELETE FROM
 	[LinqDataTypes] [t1]
 WHERE
@@ -23,7 +22,6 @@ VALUES
 )
 
 -- Access.Ace.OleDb AccessOleDb
-
 DELETE FROM
 	[LinqDataTypes] [t1]
 WHERE

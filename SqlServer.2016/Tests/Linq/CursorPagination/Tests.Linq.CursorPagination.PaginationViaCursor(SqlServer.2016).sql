@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016
-
 SELECT
 	[t].[BookingID],
 	[t].[ServiceDate],
@@ -25,8 +24,8 @@ SELECT
 FROM
 	(
 		SELECT
-			ROW_NUMBER() OVER(ORDER BY [e].[ServiceDate] DESC, [e].[BookingID] DESC) as [RowNumber],
-			COUNT(*) OVER() as [TotalCount],
+			ROW_NUMBER() OVER (ORDER BY [e].[ServiceDate] DESC, [e].[BookingID] DESC) as [RowNumber],
+			COUNT(*) OVER () as [TotalCount],
 			[e].[BookingID],
 			[e].[ServiceDate],
 			[e].[Value] as [Value_1]
@@ -55,7 +54,7 @@ AS
 (
 	SELECT
 		[e].[BookingID],
-		ROW_NUMBER() OVER(ORDER BY [e].[ServiceDate] DESC, [e].[BookingID] DESC),
+		ROW_NUMBER() OVER (ORDER BY [e].[ServiceDate] DESC, [e].[BookingID] DESC),
 		[e].[ServiceDate],
 		[e].[Value]
 	FROM
@@ -98,7 +97,7 @@ AS
 (
 	SELECT
 		[e].[BookingID],
-		ROW_NUMBER() OVER(ORDER BY [e].[ServiceDate] DESC, [e].[BookingID] DESC),
+		ROW_NUMBER() OVER (ORDER BY [e].[ServiceDate] DESC, [e].[BookingID] DESC),
 		[e].[ServiceDate],
 		[e].[Value]
 	FROM
@@ -141,7 +140,7 @@ AS
 (
 	SELECT
 		[e].[BookingID],
-		ROW_NUMBER() OVER(ORDER BY [e].[ServiceDate] DESC, [e].[BookingID] DESC),
+		ROW_NUMBER() OVER (ORDER BY [e].[ServiceDate] DESC, [e].[BookingID] DESC),
 		[e].[ServiceDate],
 		[e].[Value]
 	FROM

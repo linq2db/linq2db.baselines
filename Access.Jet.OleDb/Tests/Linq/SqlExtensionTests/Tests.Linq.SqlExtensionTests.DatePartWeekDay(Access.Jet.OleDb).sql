@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	DatePart('w', [t].[DateTimeValue])
 FROM

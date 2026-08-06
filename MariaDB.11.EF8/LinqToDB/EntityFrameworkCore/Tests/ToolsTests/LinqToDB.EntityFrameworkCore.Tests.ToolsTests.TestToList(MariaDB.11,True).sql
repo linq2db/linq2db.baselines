@@ -1,7 +1,6 @@
 ﻿
 
 -- MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`m_1`.`OrderID`,
 	`d`.`IsDeleted`,
@@ -34,7 +33,6 @@ WHERE
 
 
 -- MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`e`.`IsDeleted`,
 	`e`.`OrderID`,

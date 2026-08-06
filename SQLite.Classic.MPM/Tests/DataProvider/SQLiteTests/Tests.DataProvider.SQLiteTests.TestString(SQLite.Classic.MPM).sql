@@ -1,65 +1,49 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT Cast('12345' as char)
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT Cast('12345' as char(20))
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT Cast(NULL    as char(20))
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT Cast('12345' as varchar)
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT Cast('12345' as varchar(20))
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT Cast(NULL    as varchar(20))
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT Cast('12345' as text)
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT Cast(NULL    as text)
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT Cast('12345' as nchar)
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT Cast('12345' as nchar(20))
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT Cast(NULL    as nchar(20))
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT Cast('12345' as nvarchar)
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT Cast('12345' as nvarchar(20))
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT Cast(NULL    as nvarchar(20))
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT Cast('12345' as ntext)
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT Cast(NULL    as ntext)
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite

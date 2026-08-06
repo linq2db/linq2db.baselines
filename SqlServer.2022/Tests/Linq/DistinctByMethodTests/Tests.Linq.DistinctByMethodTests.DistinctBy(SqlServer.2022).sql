@@ -1,12 +1,12 @@
 ﻿-- SqlServer.2022
-
 SELECT
 	[t1].[Id],
 	[t1].[Name],
 	[t1].[Group_1],
 	[t1].[Date_1],
 	[t1].[Amount],
-	[t1].[IsActive]
+	[t1].[IsActive],
+	[t1].[Priority]
 FROM
 	(
 		SELECT
@@ -16,7 +16,8 @@ FROM
 			[e].[Id],
 			[e].[Group] as [Group_1],
 			[e].[Amount],
-			[e].[IsActive]
+			[e].[IsActive],
+			[e].[Priority]
 		FROM
 			[TestData] [e]
 	) [t1]
@@ -27,14 +28,14 @@ ORDER BY
 	[t1].[Date_1] DESC
 
 -- SqlServer.2022
-
 SELECT
 	[t1].[Id],
 	[t1].[Name],
 	[t1].[Group],
 	[t1].[Date],
 	[t1].[Amount],
-	[t1].[IsActive]
+	[t1].[IsActive],
+	[t1].[Priority]
 FROM
 	[TestData] [t1]
 

@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	maxOrNull(r.PersonID) as c1
 FROM

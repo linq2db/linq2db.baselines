@@ -25,7 +25,6 @@ WHERE
 	"t".ID = @p
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t".ID,
 	"t"."MoneyValue",

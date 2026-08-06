@@ -1,5 +1,7 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
+DECLARE @p Int32
+SET     @p = 5
 
 SELECT
-	5 as `c1`
+	@p as `c1`
 

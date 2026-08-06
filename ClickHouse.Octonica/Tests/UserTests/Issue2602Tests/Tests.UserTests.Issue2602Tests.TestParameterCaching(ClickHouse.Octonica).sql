@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	m_1.Id,
 	d.Id,
@@ -18,7 +17,6 @@ FROM
 		INNER JOIN EmailAttachment d ON m_1.Id = d.EmailId
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	c_1.Id
 FROM
@@ -28,7 +26,6 @@ WHERE
 LIMIT 1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	m_1.Id,
 	d.Id,
@@ -47,7 +44,6 @@ FROM
 		INNER JOIN EmailAttachment d ON m_1.Id = d.EmailId
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	c_1.Id
 FROM

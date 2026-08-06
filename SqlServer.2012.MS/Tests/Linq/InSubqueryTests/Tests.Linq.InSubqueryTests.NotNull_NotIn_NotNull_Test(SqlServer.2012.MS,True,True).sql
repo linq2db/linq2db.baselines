@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[t].[PK],
 	[t].[ID]
@@ -18,7 +17,6 @@ ORDER BY
 	[t].[PK]
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[t1].[PK],
 	[t1].[ID]
@@ -26,7 +24,6 @@ FROM
 	[test_in_1] [t1]
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[t1].[PK],
 	[t1].[ID]

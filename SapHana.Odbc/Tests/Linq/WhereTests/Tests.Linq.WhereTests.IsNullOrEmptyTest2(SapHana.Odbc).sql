@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"nm"."FirstName"
 FROM
@@ -8,7 +7,6 @@ WHERE
 	Length("nm"."FirstName") <> 0
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."FirstName",
 	"t1"."PersonID",

@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[e].[ID],
 	[p].[SmallIntValue]

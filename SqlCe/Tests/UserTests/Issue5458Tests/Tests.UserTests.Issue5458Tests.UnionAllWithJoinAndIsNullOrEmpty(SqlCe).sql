@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Value_1],
@@ -7,7 +6,7 @@ SELECT
 		WHEN NOT ([t1].[Value_1] IS NULL OR LEN([t1].[Value_1] + '.') = 1)
 			THEN [t1].[Value_1]
 		ELSE 'default'
-	END as [TranslatedMessage]
+	END
 FROM
 	(
 		SELECT

@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	"ess".ID
 FROM
@@ -15,7 +14,6 @@ WHERE
 	)
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"ess".ID
 FROM

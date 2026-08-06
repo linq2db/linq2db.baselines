@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 INSERT INTO "Parent"
 (
 	"ParentID",
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 INSERT INTO "Child"
 (
 	"ChildID",

@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 SELECT DISTINCT TOP 2
 	[t1].[ParentID],
 	[t1].[Value1]
@@ -9,7 +8,6 @@ ORDER BY
 	[t1].[ParentID] DESC
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

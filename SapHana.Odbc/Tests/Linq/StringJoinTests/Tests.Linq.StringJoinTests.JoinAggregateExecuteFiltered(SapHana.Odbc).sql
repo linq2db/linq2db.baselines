@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	STRING_AGG(Coalesce("x"."NullableValue", ''), ', ')
 FROM

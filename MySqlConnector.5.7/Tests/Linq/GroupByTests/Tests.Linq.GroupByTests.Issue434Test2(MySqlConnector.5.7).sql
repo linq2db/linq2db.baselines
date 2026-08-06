@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`m_1`.`PersonID`,
 	`d`.`PersonID`,
@@ -11,7 +10,6 @@ WHERE
 	LOCATE('test', Lower(`m_1`.`FirstName`)) > 0
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`p`.`FirstName`,
 	`p`.`PersonID`

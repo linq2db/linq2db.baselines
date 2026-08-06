@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[inventory_1].[Id],
 	[inventory_1].[ResourceID]

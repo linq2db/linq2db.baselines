@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	CASE
 		WHEN `t2`.`ParentID` IS NULL THEN 0

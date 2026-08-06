@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT
 	[nm].[MiddleName]
 FROM
@@ -8,7 +7,6 @@ WHERE
 	NOT ([nm].[MiddleName] IS NULL OR Length([nm].[MiddleName]) = 0)
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

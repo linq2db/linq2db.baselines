@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[g_1].[isValueAvailable],
 	[g_1].[ParentID],
@@ -22,7 +21,6 @@ GROUP BY
 	[g_1].[Value_1]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID]

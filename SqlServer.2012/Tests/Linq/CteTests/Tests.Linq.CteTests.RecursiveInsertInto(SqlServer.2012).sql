@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012
-
 WITH [CTE_1] ([Id])
 AS
 (
@@ -47,7 +46,6 @@ FROM
 	[hierarchyDown] [t4]
 
 -- SqlServer.2012
-
 SELECT
 	[t1].[Id],
 	[t1].[Level]

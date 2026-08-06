@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 WITH CTE_1 ("PersonID")
 AS
 (
@@ -27,7 +26,6 @@ FROM
 		INNER JOIN "Person" "d" ON "d"."PersonID" = "m_1"."PersonID"
 
 -- Firebird.3 Firebird3
-
 WITH CTE_1 ("PersonID")
 AS
 (

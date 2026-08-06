@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 DELETE FROM
 	[Person]
 WHERE
@@ -31,7 +30,6 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT @@IDENTITY
 
 -- SqlCe
@@ -40,7 +38,7 @@ SET     @p = 'John0'
 
 SELECT TOP (2)
 	[p].[FirstName],
-	[p].[PersonID] as [ID],
+	[p].[PersonID],
 	[p].[LastName],
 	[p].[MiddleName],
 	[p].[Gender]
@@ -75,7 +73,6 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT @@IDENTITY
 
 -- SqlCe
@@ -84,7 +81,7 @@ SET     @p = 'John1'
 
 SELECT TOP (2)
 	[p].[FirstName],
-	[p].[PersonID] as [ID],
+	[p].[PersonID],
 	[p].[LastName],
 	[p].[MiddleName],
 	[p].[Gender]
@@ -94,7 +91,6 @@ WHERE
 	[p].[FirstName] = @p AND [p].[LastName] = 'Shepard'
 
 -- SqlCe
-
 DELETE FROM
 	[Person]
 WHERE

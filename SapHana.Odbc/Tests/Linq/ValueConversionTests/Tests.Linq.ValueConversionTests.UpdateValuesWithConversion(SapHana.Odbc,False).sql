@@ -10,7 +10,6 @@ WHERE
 	"x"."Id" = 1
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"x"."Id",
 	"x"."NoConversion",
@@ -34,7 +33,6 @@ WHERE
 	"x"."Id" = 2
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"x"."Id",
 	"x"."NoConversion",

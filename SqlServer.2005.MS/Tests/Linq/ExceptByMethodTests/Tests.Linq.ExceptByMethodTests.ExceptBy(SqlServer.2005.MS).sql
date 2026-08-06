@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[e_1].[Id],
 	[e_1].[TestId]
@@ -20,7 +19,6 @@ ORDER BY
 	[e_1].[Id]
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[t1].[Id],
 	[t1].[TestId]

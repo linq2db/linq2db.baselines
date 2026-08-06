@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 INSERT INTO [DateOnlyTable]
 (
 	[Date]
@@ -7,10 +6,8 @@ INSERT INTO [DateOnlyTable]
 SELECT '2021-01-01'
 
 -- SqlCe
-
 SELECT TOP (2)
-	[t1].[Id],
-	[t1].[Date] as [Date_1]
+	[t1].[Date]
 FROM
 	[DateOnlyTable] [t1]
 

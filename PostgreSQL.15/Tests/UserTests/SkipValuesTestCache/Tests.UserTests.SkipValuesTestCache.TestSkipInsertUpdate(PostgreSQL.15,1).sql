@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name Text(4) -- String
@@ -15,8 +15,7 @@ VALUES
 	:Name
 )
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t."Id",
 	t."Name",
@@ -27,7 +26,7 @@ WHERE
 	t."Id" = 1
 LIMIT 1
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL12
 DECLARE @Name Text(4) -- String
 SET     @Name = 'John'
 DECLARE @Id Integer -- Int32
@@ -40,8 +39,7 @@ SET
 WHERE
 	"PR_1598_Insert_Table_Cache"."Id" = :Id
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	t."Id",
 	t."Name",

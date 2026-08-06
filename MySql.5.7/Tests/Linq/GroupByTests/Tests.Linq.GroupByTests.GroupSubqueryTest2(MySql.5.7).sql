@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`pmp1`.`ChildID`
 FROM
@@ -12,7 +11,6 @@ FROM
 		) `pmp_1`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`t1`.`ParentID`,
 	`t1`.`ChildID`

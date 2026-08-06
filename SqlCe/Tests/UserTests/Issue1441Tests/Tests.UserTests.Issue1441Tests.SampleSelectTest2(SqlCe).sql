@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[author].[Id],
 	[author].[Name]

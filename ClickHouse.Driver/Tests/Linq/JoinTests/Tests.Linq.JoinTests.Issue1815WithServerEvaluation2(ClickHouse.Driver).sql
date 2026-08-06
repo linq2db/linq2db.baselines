@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.InId,
 	CASE
@@ -18,7 +17,6 @@ WHERE
 LIMIT 2
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.InId,
 	CASE

@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[p].[PersonID],
 	[p].[FirstName]
@@ -9,7 +8,6 @@ WHERE
 	[p].[PersonID] = 1
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[p].[PersonID],
 	[p].[FirstName]

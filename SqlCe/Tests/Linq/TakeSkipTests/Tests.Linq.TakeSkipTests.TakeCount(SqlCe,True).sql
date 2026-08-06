@@ -3,7 +3,7 @@ DECLARE @take Int -- Int32
 SET     @take = 5
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	(
 		SELECT TOP (@take)

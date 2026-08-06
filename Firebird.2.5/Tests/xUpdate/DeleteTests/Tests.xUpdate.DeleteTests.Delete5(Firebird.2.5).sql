@@ -1,12 +1,10 @@
 ﻿-- Firebird.2.5 Firebird
-
 DELETE FROM
 	"Parent" "t1"
 WHERE
 	"t1"."ParentID" > 1000
 
 -- Firebird.2.5 Firebird
-
 DELETE FROM
 	"Parent" "t1"
 WHERE
@@ -23,7 +21,7 @@ INSERT INTO "Parent"
 )
 VALUES
 (
-	CAST(@ParentID AS Int),
+	@ParentID,
 	1
 )
 
@@ -38,12 +36,11 @@ INSERT INTO "Parent"
 )
 VALUES
 (
-	CAST(@ParentID AS Int),
+	@ParentID,
 	1
 )
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	COUNT(*)
 FROM
@@ -52,14 +49,12 @@ WHERE
 	"t1"."ParentID" > 1000
 
 -- Firebird.2.5 Firebird
-
 DELETE FROM
 	"Parent" "t1"
 WHERE
 	"t1"."ParentID" IN (1001, 1002)
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	COUNT(*)
 FROM

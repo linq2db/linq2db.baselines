@@ -20,7 +20,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1.Stamp,
@@ -40,12 +39,11 @@ UPDATE
 	ConcurrencyAutoIncrement obj
 SET
 	Stamp = obj.Stamp + 1,
-	"Value" = @Value::NVarChar(7)
+	"Value" = @Value
 WHERE
 	obj.Id = @Id AND obj.Stamp = @Stamp
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1.Stamp,
@@ -65,12 +63,11 @@ UPDATE
 	ConcurrencyAutoIncrement obj
 SET
 	Stamp = obj.Stamp + 1,
-	"Value" = @Value::NVarChar(7)
+	"Value" = @Value
 WHERE
 	obj.Id = @Id AND obj.Stamp = @Stamp
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1.Stamp,
@@ -90,12 +87,11 @@ UPDATE
 	ConcurrencyAutoIncrement obj
 SET
 	Stamp = obj.Stamp + 1,
-	"Value" = @Value::NVarChar(7)
+	"Value" = @Value
 WHERE
 	obj.Id = @Id AND obj.Stamp = @Stamp
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1.Stamp,
@@ -115,7 +111,6 @@ WHERE
 	ConcurrencyAutoIncrement.Id = @Id AND ConcurrencyAutoIncrement.Stamp = @Stamp
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1.Stamp,
@@ -135,7 +130,6 @@ WHERE
 	ConcurrencyAutoIncrement.Id = @Id AND ConcurrencyAutoIncrement.Stamp = @Stamp
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1.Stamp,

@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 INSERT INTO "Person"
 (
 	"FirstName",
@@ -15,8 +14,7 @@ VALUES
 	'M'
 )
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 DELETE FROM
 	"Person" p
 WHERE

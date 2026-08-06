@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[n].[ID],
 	[n].[TYP_STATUS],

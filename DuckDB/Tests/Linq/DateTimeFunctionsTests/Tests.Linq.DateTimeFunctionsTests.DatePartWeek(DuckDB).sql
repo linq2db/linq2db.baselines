@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	EXTRACT(week FROM t.DateTimeValue)
 FROM

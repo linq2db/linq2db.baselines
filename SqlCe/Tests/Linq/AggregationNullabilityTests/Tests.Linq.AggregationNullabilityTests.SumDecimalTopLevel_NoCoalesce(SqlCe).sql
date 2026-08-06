@@ -1,7 +1,6 @@
 ﻿-- SqlCe
-
 SELECT
-	SUM([i].[DecimalValue]) as [Sum_1]
+	SUM([i].[DecimalValue])
 FROM
 	[Inner] [i]
 WHERE

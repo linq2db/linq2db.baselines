@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 DELETE FROM
 	[LinqDataTypes]
 WHERE
@@ -43,7 +42,6 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t].[ID],
 	[t].[MoneyValue],
@@ -59,7 +57,6 @@ WHERE
 LIMIT 2
 
 -- SQLite.Classic SQLite
-
 DELETE FROM
 	[LinqDataTypes]
 WHERE

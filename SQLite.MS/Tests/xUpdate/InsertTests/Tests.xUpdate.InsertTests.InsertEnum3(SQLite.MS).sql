@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 DELETE FROM
 	[Parent]
 WHERE
@@ -32,7 +31,6 @@ WHERE
 	[t1].[ParentID] = @id
 
 -- SQLite.MS SQLite
-
 DELETE FROM
 	[Parent]
 WHERE

@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[r].[FirstName],
 	[r].[PersonID],
@@ -12,7 +11,6 @@ WHERE
 	[r].[MiddleName] IS NOT NULL
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[r].[FirstName],
 	[r].[PersonID],

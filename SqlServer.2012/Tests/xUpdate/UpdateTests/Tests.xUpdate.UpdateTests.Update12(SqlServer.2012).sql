@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012
-
 UPDATE
 	[p1]
 SET

@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT /*+ NO_FACT(p) NO_FACT(c_1) */
 	p."ParentID",
 	p."Value1"

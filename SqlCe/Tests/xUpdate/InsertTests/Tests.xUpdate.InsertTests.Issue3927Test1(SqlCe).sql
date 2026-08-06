@@ -9,7 +9,7 @@ INSERT INTO [Issue3927Table]
 	[PageNumber]
 )
 SELECT
-	@PageNumber as [c1]
+	@PageNumber
 FROM
 	[Issue3927Table] [display]
 WHERE

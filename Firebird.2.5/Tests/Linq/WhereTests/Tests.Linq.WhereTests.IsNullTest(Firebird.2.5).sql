@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	"nm"."MiddleName"
 FROM
@@ -8,7 +7,6 @@ WHERE
 	"nm"."MiddleName" IS NOT NULL
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1"."FirstName",
 	"t1"."PersonID",

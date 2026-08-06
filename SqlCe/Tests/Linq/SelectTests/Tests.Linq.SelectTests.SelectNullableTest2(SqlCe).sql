@@ -48,7 +48,6 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT TOP (1)
 	[t1].[ID],
 	[t1].[MoneyValue],
@@ -64,7 +63,6 @@ WHERE
 	[t1].[ID] = 1000
 
 -- SqlCe
-
 DELETE FROM
 	[LinqDataTypes]
 WHERE

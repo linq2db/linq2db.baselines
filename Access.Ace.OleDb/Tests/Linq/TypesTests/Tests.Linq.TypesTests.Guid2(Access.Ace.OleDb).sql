@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT TOP 2
 	[p].[ID],
 	[p].[MoneyValue],
@@ -15,7 +14,6 @@ WHERE
 	[p].[GuidValue] = {guid {40932fdb-1543-4e4a-ac2c-ca371604fb4b}}
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT TOP 2
 	[p].[ID],
 	[p].[MoneyValue],

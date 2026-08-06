@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`p`.`FirstName`,
 	`p`.`PersonID`,
@@ -18,7 +17,6 @@ FROM
 			SELECT 'Doe') `n` ON `p`.`LastName` = `n`.`item`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`p`.`FirstName`,
 	`p`.`PersonID`,

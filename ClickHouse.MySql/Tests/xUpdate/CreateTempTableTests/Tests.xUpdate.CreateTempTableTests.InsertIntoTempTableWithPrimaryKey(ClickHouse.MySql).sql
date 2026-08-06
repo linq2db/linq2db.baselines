@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 CREATE TEMPORARY TABLE TableWithPrimaryKey2
 (
 	Key Int32,
@@ -10,7 +9,6 @@ ENGINE = MergeTree()
 ORDER BY Key
 
 -- ClickHouse.MySql ClickHouse
-
 INSERT INTO TableWithPrimaryKey2
 (
 	Key
@@ -19,6 +17,5 @@ VALUES
 (1)
 
 -- ClickHouse.MySql ClickHouse
-
 DROP TABLE IF EXISTS TableWithPrimaryKey2
 

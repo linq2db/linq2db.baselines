@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Northwind SqlServer.2019
-
 SELECT
 	[m_1].[Key_1],
 	[d].[OrderID],
@@ -35,7 +34,6 @@ FROM
 		INNER JOIN [Orders] [d] ON [m_1].[Key_1] = [d].[OrderDate] OR [m_1].[Key_1] IS NULL AND [d].[OrderDate] IS NULL
 
 -- SqlServer.Northwind SqlServer.2019
-
 SELECT
 	[g_1].[OrderDate]
 FROM

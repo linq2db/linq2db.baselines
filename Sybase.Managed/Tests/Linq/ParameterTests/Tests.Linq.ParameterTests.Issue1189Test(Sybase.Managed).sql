@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[k_1].[ID],
 	[k_1].[NAME],

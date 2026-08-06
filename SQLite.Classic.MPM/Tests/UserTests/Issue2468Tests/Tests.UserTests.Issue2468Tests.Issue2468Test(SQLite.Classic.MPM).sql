@@ -24,7 +24,6 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[x].[Id],
 	[x].[Status],

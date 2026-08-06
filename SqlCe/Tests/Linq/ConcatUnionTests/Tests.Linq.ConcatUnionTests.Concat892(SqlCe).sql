@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[t1].[Value1],
 	[t1].[ParentID]
@@ -19,13 +18,12 @@ FROM
 	) [t1]
 UNION ALL
 SELECT
-	[c_3].[ParentID] as [Value1],
+	[c_3].[ParentID],
 	[c_3].[ParentID]
 FROM
 	[Child] [c_3]
 
 -- SqlCe
-
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID]
@@ -33,7 +31,6 @@ FROM
 	[Child] [t1]
 
 -- SqlCe
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

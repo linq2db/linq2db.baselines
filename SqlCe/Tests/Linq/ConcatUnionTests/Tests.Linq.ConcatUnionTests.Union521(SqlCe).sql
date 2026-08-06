@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[p_1].[Value1]
 FROM

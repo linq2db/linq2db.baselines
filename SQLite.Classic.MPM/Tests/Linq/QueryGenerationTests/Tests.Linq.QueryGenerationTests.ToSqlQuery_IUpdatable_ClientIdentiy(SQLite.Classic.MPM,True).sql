@@ -12,7 +12,6 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 UPDATE
 	[TableWithIdentity]
 SET
@@ -20,7 +19,6 @@ SET
 	[Value] = 123
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]

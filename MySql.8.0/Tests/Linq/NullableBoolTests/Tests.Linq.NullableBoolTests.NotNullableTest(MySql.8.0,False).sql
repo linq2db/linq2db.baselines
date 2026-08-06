@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t`.`Id`,
 	`t`.`Value`
@@ -9,7 +8,6 @@ WHERE
 	`t`.`Value`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t`.`Id`,
 	`t`.`Value`
@@ -19,7 +17,6 @@ WHERE
 	`t`.`Value` = 1
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t`.`Id`,
 	`t`.`Value`
@@ -29,7 +26,6 @@ WHERE
 	`t`.`Value` = 0
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t`.`Id`,
 	`t`.`Value`
@@ -39,7 +35,6 @@ WHERE
 	NOT `t`.`Value`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t`.`Id`,
 	`t`.`Value`
@@ -49,7 +44,6 @@ WHERE
 	`t`.`Value` = 0
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t`.`Id`,
 	`t`.`Value`

@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 WITH CTE_1 ("Property1")
 AS
 (

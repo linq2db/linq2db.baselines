@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 MERGE INTO [TestTable] [Target]
 USING (
 	SELECT

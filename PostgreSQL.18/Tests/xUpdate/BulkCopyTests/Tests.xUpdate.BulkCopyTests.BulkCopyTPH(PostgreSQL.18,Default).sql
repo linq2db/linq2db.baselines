@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
-
+﻿-- PostgreSQL.18 PostgreSQL12
 INSERT INTO "TPHTable"
 (
 	"Id",
@@ -14,8 +13,7 @@ VALUES
 (2,2,NULL,'Str2',NULL,NULL),
 (3,3,NULL,NULL,'Str3','Y')
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	t1."Discriminator",
 	t1."Id",
@@ -28,8 +26,7 @@ FROM
 ORDER BY
 	t1."Id"
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	x."Discriminator",
 	x."Id",
@@ -43,8 +40,7 @@ WHERE
 	x."Discriminator" = 1
 LIMIT 2
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	x."Discriminator",
 	x."Id",
@@ -58,8 +54,7 @@ WHERE
 	x."Discriminator" = 2
 LIMIT 2
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	x."Discriminator",
 	x."Id",
@@ -73,8 +68,7 @@ WHERE
 	x."Discriminator" = 3
 LIMIT 2
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	x."Discriminator",
 	x."Id",
@@ -88,8 +82,7 @@ WHERE
 	x."Value1" = 'Str1'
 LIMIT 2
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	x."Discriminator",
 	x."Id",
@@ -103,8 +96,7 @@ WHERE
 	x."Value2" = 'Str2'
 LIMIT 2
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	x."Discriminator",
 	x."Id",

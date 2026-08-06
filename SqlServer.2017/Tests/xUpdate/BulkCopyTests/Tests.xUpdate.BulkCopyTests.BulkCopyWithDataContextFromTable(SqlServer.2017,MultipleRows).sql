@@ -3,7 +3,6 @@
 INSERT BULK [SimpleBulkCopyTable](Id)
 
 -- SqlServer.2017
-
 INSERT INTO [SimpleBulkCopyTable]
 (
 	[Id]

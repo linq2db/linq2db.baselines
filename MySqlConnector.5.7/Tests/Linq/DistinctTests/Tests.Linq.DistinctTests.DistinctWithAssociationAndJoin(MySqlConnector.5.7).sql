@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t1`.`ChildID`,
 	`a_Parent_1`.`ParentID`,
@@ -21,7 +20,6 @@ ORDER BY
 	`t1`.`ChildID`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t1`.`ParentID`,
 	`t1`.`ChildID`,
@@ -32,7 +30,6 @@ FROM
 		LEFT JOIN `Parent` `a_Parent` ON `t1`.`ParentID` = `a_Parent`.`ParentID`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t1`.`ParentID`,
 	`t1`.`Value1`

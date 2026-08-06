@@ -21,7 +21,6 @@ ORDER BY [i].[_Position];
 
 
 -- SqlServer.2016
-
 SELECT
 	[t1].[Discriminator],
 	[t1].[Id]

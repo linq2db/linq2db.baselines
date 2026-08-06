@@ -1,7 +1,6 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
-	[p].[Key_1] + '2'
+	[p].[Key_1] || '2'
 FROM
 	(
 		SELECT DISTINCT
@@ -16,5 +15,5 @@ FROM
 			[Child] [g_1]
 	) [p]
 WHERE
-	([p].[Key_1] + '2') = '22'
+	([p].[Key_1] || '2') = '22'
 

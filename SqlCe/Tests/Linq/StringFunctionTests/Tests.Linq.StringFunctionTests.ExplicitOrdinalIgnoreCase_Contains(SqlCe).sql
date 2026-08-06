@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 DELETE FROM
 	[CollatedTable]
 
@@ -25,36 +24,32 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[CollatedTable] [r]
 WHERE
 	[r].[CaseSensitive] LIKE '%stSt%' ESCAPE '~'
 
 -- SqlCe
-
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[CollatedTable] [r]
 WHERE
 	[r].[CaseInsensitive] LIKE '%stSt%' ESCAPE '~'
 
 -- SqlCe
-
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[CollatedTable] [r]
 WHERE
 	[r].[CaseSensitive] LIKE '%stst%' ESCAPE '~'
 
 -- SqlCe
-
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[CollatedTable] [r]
 WHERE

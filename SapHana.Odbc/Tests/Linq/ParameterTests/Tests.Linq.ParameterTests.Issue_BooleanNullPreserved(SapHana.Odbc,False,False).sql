@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 INSERT INTO "TestBool"
 (
 	"Id",
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"
@@ -21,7 +19,6 @@ FROM
 LIMIT 2
 
 -- SapHana.Odbc SapHanaOdbc
-
 UPDATE
 	"TestBool" "t1"
 SET
@@ -32,7 +29,6 @@ SET
 	END
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"
@@ -41,7 +37,6 @@ FROM
 LIMIT 2
 
 -- SapHana.Odbc SapHanaOdbc
-
 UPDATE
 	"TestBool" "r"
 SET
@@ -50,7 +45,6 @@ WHERE
 	"r"."Id" = 1
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"

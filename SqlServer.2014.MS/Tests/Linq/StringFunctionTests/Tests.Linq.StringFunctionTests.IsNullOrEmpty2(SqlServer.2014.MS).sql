@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	IIF(LEN([p].[FirstName] + N'.') = 1, 1, 0)
 FROM

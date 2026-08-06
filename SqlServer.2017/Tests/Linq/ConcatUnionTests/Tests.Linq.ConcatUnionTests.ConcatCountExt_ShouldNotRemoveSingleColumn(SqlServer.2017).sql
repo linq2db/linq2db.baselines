@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 SELECT
 	COUNT([t3].[PersonID])
 FROM

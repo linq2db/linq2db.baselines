@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 INSERT INTO `TestTempTable`
 (
 	`Id`,
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 CREATE TABLE IF NOT EXISTS `TempTable`
 (
 	`Id`      INT           NOT NULL,
@@ -22,7 +20,6 @@ CREATE TABLE IF NOT EXISTS `TempTable`
 )
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 INSERT INTO `TempTable`
 (
 	`Id`,
@@ -35,7 +32,6 @@ FROM
 	`TestTempTable` `t1`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 INSERT INTO `TestTempTable`
 (
 	`Id`,
@@ -48,7 +44,6 @@ VALUES
 )
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 INSERT INTO `TempTable`
 (
 	`Id`,
@@ -61,7 +56,6 @@ VALUES
 )
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value`
@@ -71,7 +65,6 @@ ORDER BY
 	`t1`.`Id`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Renamed`
@@ -81,6 +74,5 @@ ORDER BY
 	`t1`.`Id`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 DROP TABLE IF EXISTS `TempTable`
 

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 SELECT
 	CASE
 		WHEN EXISTS(

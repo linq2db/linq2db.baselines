@@ -1,8 +1,7 @@
 ﻿-- SqlCe
-
 SELECT
 	[r].[Id],
-	[r].[Value] as [Value_1]
+	[r].[Value]
 FROM
 	[ComplexPredicate] [r]
 WHERE
@@ -17,10 +16,9 @@ ORDER BY
 	[r].[Id]
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
-	[t1].[Value] as [Value_1]
+	[t1].[Value]
 FROM
 	[ComplexPredicate] [t1]
 

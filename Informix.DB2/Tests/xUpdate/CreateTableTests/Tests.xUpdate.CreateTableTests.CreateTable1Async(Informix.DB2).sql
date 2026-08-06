@@ -1,9 +1,7 @@
 ﻿-- Informix.DB2 Informix
-
 DROP TABLE IF EXISTS TestTable
 
 -- Informix.DB2 Informix
-
 CREATE TABLE TestTable
 (
 	ID        SERIAL                     NOT NULL,
@@ -15,7 +13,6 @@ CREATE TABLE TestTable
 )
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.ID,
 	t1.Field1,
@@ -25,6 +22,5 @@ FROM
 	TestTable t1
 
 -- Informix.DB2 Informix
-
 DROP TABLE TestTable
 

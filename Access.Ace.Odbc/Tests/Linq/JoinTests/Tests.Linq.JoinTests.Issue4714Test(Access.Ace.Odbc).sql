@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[cross_1].[Id],
 	[cross_1].[Year_1],

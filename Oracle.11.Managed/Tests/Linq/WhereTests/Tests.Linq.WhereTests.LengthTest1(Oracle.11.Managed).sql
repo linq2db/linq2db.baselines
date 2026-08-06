@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	nm."MiddleName"
 FROM
@@ -8,7 +7,6 @@ WHERE
 	Length(nm."MiddleName") <> 0 OR nm."MiddleName" IS NULL
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."FirstName",
 	t1."PersonID",

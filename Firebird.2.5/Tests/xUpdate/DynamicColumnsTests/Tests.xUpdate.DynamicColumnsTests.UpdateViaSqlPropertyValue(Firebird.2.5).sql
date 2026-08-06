@@ -10,7 +10,7 @@ INSERT INTO "Child"
 VALUES
 (
 	1,
-	CAST(@id AS Int)
+	@id
 )
 
 -- Firebird.2.5 Firebird
@@ -49,7 +49,6 @@ WHERE
 	)
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	COUNT(*)
 FROM

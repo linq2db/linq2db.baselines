@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"g_1"."GrpId",
 	Coalesce(STRING_AGG("g_1"."Value", '' ORDER BY "g_1"."PK"), '')
@@ -11,7 +10,6 @@ ORDER BY
 	"g_1"."GrpId"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."PK",
 	"t1"."GrpId",

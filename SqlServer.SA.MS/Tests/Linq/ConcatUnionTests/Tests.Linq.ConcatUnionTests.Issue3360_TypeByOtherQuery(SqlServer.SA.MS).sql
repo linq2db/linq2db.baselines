@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	[p].[Id],
 	[p].[Str]
@@ -13,7 +12,6 @@ FROM
 	[Issue3360Table] [p_1]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	[p].[Id],
 	CAST('str' AS VarChar(Max))

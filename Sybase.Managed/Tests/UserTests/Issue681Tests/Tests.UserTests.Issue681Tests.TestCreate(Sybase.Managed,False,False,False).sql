@@ -1,10 +1,8 @@
 ﻿-- Sybase.Managed Sybase
-
 IF (OBJECT_ID(N'Issue681Table2') IS NOT NULL)
 	DROP TABLE [Issue681Table2]
 
 -- Sybase.Managed Sybase
-
 CREATE TABLE [Issue681Table2]
 (
 	[ID]    Int NOT NULL,
@@ -14,7 +12,6 @@ CREATE TABLE [Issue681Table2]
 )
 
 -- Sybase.Managed Sybase
-
 IF (OBJECT_ID(N'Issue681Table2') IS NOT NULL)
 	DROP TABLE [Issue681Table2]
 

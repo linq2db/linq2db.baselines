@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "CreateIfNotExistsTable"';
 EXCEPTION
@@ -10,7 +9,6 @@ EXCEPTION
 END;
 
 -- Oracle.11.Managed Oracle11
-
 BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE TABLE "CreateIfNotExistsTable"
@@ -27,7 +25,6 @@ EXCEPTION
 END;
 
 -- Oracle.11.Managed Oracle11
-
 INSERT INTO "CreateIfNotExistsTable"
 (
 	"Id",
@@ -40,7 +37,6 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -48,7 +44,6 @@ FROM
 	"CreateIfNotExistsTable" t1
 
 -- Oracle.11.Managed Oracle11
-
 BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE TABLE "CreateIfNotExistsTable"
@@ -65,7 +60,6 @@ EXCEPTION
 END;
 
 -- Oracle.11.Managed Oracle11
-
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "CreateIfNotExistsTable"';
 EXCEPTION
@@ -76,7 +70,6 @@ EXCEPTION
 END;
 
 -- Oracle.11.Managed Oracle11
-
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "CreateIfNotExistsTable"';
 EXCEPTION

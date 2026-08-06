@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT /*+ NO_MERGE(p) NO_MERGE(c_1) */
 	`p`.`ParentID`,
 	`p`.`Value1`

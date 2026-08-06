@@ -13,7 +13,6 @@ WHERE
 	`ct`.`id` = 'TestProcessService' AND `ctg`.`id` = `ctg_1`.`id`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`x`.`id`,
 	`x`.`service_id`,
@@ -24,7 +23,6 @@ WHERE
 	`x`.`is_deleted` AND `x`.`service_id` = 'TestProcessService'
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`x`.`id`,
 	`x`.`service_id`,

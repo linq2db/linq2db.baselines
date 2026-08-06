@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	N'Element ' || CAST([r].[NText] AS NVarChar(Max)) || N' Text1',

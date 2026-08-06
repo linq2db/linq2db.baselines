@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT DISTINCT
 	gc.GrandChildID,
 	a_Parent.Value1
@@ -11,7 +10,6 @@ ORDER BY
 	gc.GrandChildID
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.ParentID,
 	t1.ChildID,

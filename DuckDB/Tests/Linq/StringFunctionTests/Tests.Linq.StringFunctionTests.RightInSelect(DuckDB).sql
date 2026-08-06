@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	RIGHT(p.FirstName, 3)
 FROM

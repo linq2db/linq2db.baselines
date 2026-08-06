@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	"m_1"."ParentID",
 	"d"."ParentID",
@@ -15,7 +14,6 @@ FROM
 		INNER JOIN "Child" "d" ON "m_1"."ParentID" = "d"."ParentID"
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"r_2"."ParentID",
 	"r_2"."ChildID",
@@ -53,7 +51,6 @@ ORDER BY
 	"r_2"."Count_1"
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"m_1"."ParentID",
 	"d"."ParentID",
@@ -69,7 +66,6 @@ FROM
 		INNER JOIN "Child" "d" ON "m_1"."ParentID" = "d"."ParentID"
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t1"."ParentID",
 	"t1"."ChildID",

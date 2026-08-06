@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	[x].[Id],
 	[x].[ParentId]
@@ -16,7 +15,6 @@ WHERE
 	)
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -34,7 +32,6 @@ FROM
 		INNER JOIN [TreeItem] [d] ON [m_1].[Id] = [d].[ParentId]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	[t].[Id]
 FROM

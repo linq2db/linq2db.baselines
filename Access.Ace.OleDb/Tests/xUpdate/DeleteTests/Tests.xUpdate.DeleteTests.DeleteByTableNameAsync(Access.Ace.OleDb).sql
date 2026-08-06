@@ -24,14 +24,12 @@ VALUES
 )
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	COUNT(*)
 FROM
 	[xxPerson] [t1]
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT TOP 2
 	[t1].[FirstName],
 	[t1].[PersonID],
@@ -51,7 +49,6 @@ WHERE
 	[t1].[PersonID] = @ID
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	COUNT(*)
 FROM

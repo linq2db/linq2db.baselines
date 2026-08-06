@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
-
 SELECT TOP (2)
 	[p].[FirstName]
 FROM
@@ -8,7 +7,6 @@ WHERE
 	[p].[PersonID] = 1
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	COUNT(*)
 FROM
@@ -18,7 +16,6 @@ WHERE
 	[p].[PersonID] = 1
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	COUNT(*)
 FROM

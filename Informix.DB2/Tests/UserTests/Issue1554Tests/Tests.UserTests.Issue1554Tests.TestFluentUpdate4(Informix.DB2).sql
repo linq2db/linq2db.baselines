@@ -28,13 +28,12 @@ SET     @ClaimedKeyTypeN = 'EC'
 UPDATE
 	Issue1554FluentTable p
 SET
-	ClaimedKeyType = @ClaimedKeyType::NVarChar(2),
-	ClaimedKeyTypeN = @ClaimedKeyTypeN::NVarChar(2)
+	ClaimedKeyType = @ClaimedKeyType,
+	ClaimedKeyTypeN = @ClaimedKeyTypeN
 WHERE
 	p.Id = 0
 
 -- Informix.DB2 Informix
-
 SELECT FIRST 2
 	t1.Id,
 	t1.ClaimedKeyType,

@@ -10,7 +10,6 @@ WHERE
 	Coalesce("x"."Value1", ?) > 10
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"p"."Value1"
 FROM

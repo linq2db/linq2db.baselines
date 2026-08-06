@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT TOP 4
 	[p].[ParentID],
 	[p].[Value1]

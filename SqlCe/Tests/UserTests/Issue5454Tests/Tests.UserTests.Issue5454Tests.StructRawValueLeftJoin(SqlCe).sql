@@ -1,8 +1,7 @@
 ﻿-- SqlCe
-
 SELECT
 	[g_1].[StatsTypeId],
-	[st].[FullName] as [StatsTypeName],
+	[st].[FullName],
 	[g_1].[GroupId]
 FROM
 	[GroupStatsType] [g_1]

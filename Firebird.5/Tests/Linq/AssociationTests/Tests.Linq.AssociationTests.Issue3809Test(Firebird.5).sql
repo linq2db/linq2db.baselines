@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 SELECT
 	"m_1"."ParentID",
 	"d"."ParentID",
@@ -26,7 +25,6 @@ ORDER BY
 	"d"."ChildID"
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"a"."ParentID",
 	"a_ParentTest"."ParentID"

@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 DELETE FROM
 	Person t1
 WHERE
@@ -31,7 +30,6 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	COUNT(*)
 FROM
@@ -40,7 +38,6 @@ WHERE
 	t1.FirstName LIKE 'Insert15%' ESCAPE '~'
 
 -- DuckDB
-
 DELETE FROM
 	Person t1
 WHERE

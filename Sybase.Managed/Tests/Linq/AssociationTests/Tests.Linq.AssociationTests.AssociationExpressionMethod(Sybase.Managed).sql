@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[a_ChildPredicate].[ParentID],
 	[a_ChildPredicate].[ChildID]

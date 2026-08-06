@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 DELETE FROM
 	TestMerge1 t1
 
@@ -104,7 +103,6 @@ VALUES
 )
 
 -- DuckDB
-
 DELETE FROM
 	TestMerge2 t1
 
@@ -209,7 +207,6 @@ VALUES
 )
 
 -- DuckDB
-
 MERGE INTO TestMerge1 Target
 USING (
 	SELECT
@@ -254,7 +251,6 @@ SET
 	Field3 = Source.Field3
 
 -- DuckDB
-
 SELECT
 	t1.Id,
 	t1.Field1,

@@ -1,10 +1,9 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	r.name,
 	CASE
-		WHEN empty(replaceRegexpAll(coalesce(r.comment, ''), '	|
-|||| || | | | | | | | | | | | | | | | |　', ''))
+		WHEN empty(replaceRegexpAll(r.comment, '	|
+|||| || | | | | | | | | | | | | | | | | |　', ''))
 			THEN NULL
 		ELSE r.comment
 	END,
@@ -15,7 +14,6 @@ WHERE
 	NOT r.is_temporary AND r.database = database()
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	r.name,
 	r.primary_key
@@ -26,7 +24,6 @@ WHERE
 	r.primary_key <> ''
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	r.table,
 	r.name,
@@ -46,8 +43,8 @@ SELECT
 		ELSE NULL
 	END,
 	CASE
-		WHEN empty(replaceRegexpAll(coalesce(r.comment, ''), '	|
-|||| || | | | | | | | | | | | | | | | |　', ''))
+		WHEN empty(replaceRegexpAll(r.comment, '	|
+|||| || | | | | | | | | | | | | | | | | |　', ''))
 			THEN NULL
 		ELSE r.comment
 	END,
@@ -58,14 +55,11 @@ WHERE
 	r.database = database() AND r.default_kind <> 'ALIAS'
 
 -- ClickHouse.MySql ClickHouse
-
 select hostName()
 
 -- ClickHouse.MySql ClickHouse
-
 select database()
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT version()
 

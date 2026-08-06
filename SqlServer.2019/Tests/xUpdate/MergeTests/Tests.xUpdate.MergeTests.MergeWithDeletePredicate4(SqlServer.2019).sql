@@ -24,7 +24,6 @@ VALUES
 )
 
 -- SqlServer.2019
-
 SELECT TOP (1)
 	[t1].[FirstName],
 	[t1].[PersonID],

@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT DISTINCT
 	a_Child.ID
 FROM

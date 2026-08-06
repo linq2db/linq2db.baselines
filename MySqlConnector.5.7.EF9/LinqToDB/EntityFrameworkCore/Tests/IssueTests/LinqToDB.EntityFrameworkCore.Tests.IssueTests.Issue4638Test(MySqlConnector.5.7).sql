@@ -1,7 +1,6 @@
 ﻿
 
 -- MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`m_1`.`Key_1`,
 	`d`.`CfAllowValue`,
@@ -21,14 +20,11 @@ ORDER BY
 
 
 -- MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`p`.`AclNameId`
 FROM
 	`Issue4624Items` `p`
 LIMIT 1
-
-
 
 
 

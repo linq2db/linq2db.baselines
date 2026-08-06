@@ -29,7 +29,6 @@ VALUES
 )
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],

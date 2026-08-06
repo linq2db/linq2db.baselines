@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 CREATE TEMPORARY TABLE `temp_table1`
 (
 	`ID`    INT NOT NULL,
@@ -9,7 +8,6 @@ CREATE TEMPORARY TABLE `temp_table1`
 )
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 INSERT INTO `temp_table1`
 (
 	`ID`,
@@ -19,7 +17,6 @@ VALUES
 (1,2)
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 CREATE TEMPORARY TABLE `temp_table2`
 (
 	`ID`    INT NOT NULL,
@@ -29,7 +26,6 @@ CREATE TEMPORARY TABLE `temp_table2`
 )
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 INSERT INTO `temp_table2`
 (
 	`ID`,
@@ -42,7 +38,6 @@ FROM
 	`temp_table1` `t1`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`ID`,
 	`t1`.`Value`
@@ -50,7 +45,6 @@ FROM
 	`temp_table1` `t1`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`ID`,
 	`t1`.`Value`
@@ -58,7 +52,6 @@ FROM
 	`temp_table2` `t1`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 INSERT INTO `temp_table1`
 (
 	`ID`,
@@ -87,18 +80,14 @@ VALUES
 INSERT ASYNC BULK `temp_table1`(ID, Value)
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 TRUNCATE TABLE `temp_table1`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 TRUNCATE TABLE `temp_table2`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 DROP TEMPORARY TABLE IF EXISTS `temp_table2`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 DROP TEMPORARY TABLE IF EXISTS `temp_table1`
 

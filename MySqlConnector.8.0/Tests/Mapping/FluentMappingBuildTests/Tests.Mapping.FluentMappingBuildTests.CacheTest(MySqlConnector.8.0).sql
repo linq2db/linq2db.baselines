@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 CREATE TABLE IF NOT EXISTS `FluentTemp_Cache`
 (
 	`ID`       INT         NOT NULL,
@@ -31,7 +30,6 @@ VALUES
 )
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t`.`ID`,
 	`t`.`Value`,
@@ -42,11 +40,9 @@ WHERE
 	`t`.`ID` = 1
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 DROP TABLE IF EXISTS `FluentTemp_Cache`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 CREATE TABLE IF NOT EXISTS `FluentTemp_Cache`
 (
 	`ID`       INT         NOT NULL,
@@ -78,7 +74,6 @@ VALUES
 )
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t`.`ID`,
 	`t`.`Value`,
@@ -89,11 +84,9 @@ WHERE
 	`t`.`ID` = 1
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 DROP TABLE IF EXISTS `FluentTemp_Cache`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 CREATE TABLE IF NOT EXISTS `FluentTemp_Cache`
 (
 	`ID`       INT         NOT NULL,
@@ -125,7 +118,6 @@ VALUES
 )
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t`.`ID`,
 	`t`.`Column`,
@@ -136,11 +128,9 @@ WHERE
 	`t`.`ID` = 1
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 DROP TABLE IF EXISTS `FluentTemp_Cache`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 CREATE TABLE IF NOT EXISTS `FluentTemp_Cache`
 (
 	`ID`       INT         NOT NULL,
@@ -172,7 +162,6 @@ VALUES
 )
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t`.`ID`,
 	`t`.`Column`,
@@ -183,6 +172,5 @@ WHERE
 	`t`.`ID` = 1
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 DROP TABLE IF EXISTS `FluentTemp_Cache`
 

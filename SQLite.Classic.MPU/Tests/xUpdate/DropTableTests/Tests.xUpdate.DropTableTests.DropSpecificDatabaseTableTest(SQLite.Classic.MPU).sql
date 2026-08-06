@@ -1,9 +1,7 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 DROP TABLE IF EXISTS [DropTableTest]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 CREATE TABLE [DropTableTest]
 (
 	[ID] INTEGER NOT NULL,
@@ -12,7 +10,6 @@ CREATE TABLE [DropTableTest]
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 INSERT INTO [main].[DropTableTest]
 (
 	[ID]
@@ -23,18 +20,15 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[ID]
 FROM
 	[main].[DropTableTest] [t1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 DROP TABLE [main].[DropTableTest]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[ID]
 FROM

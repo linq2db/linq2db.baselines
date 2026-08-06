@@ -1,14 +1,12 @@
 ﻿-- SqlCe
-
 SELECT
-	Coalesce([e].[Str1], '') + '/' + Coalesce([e].[StrReq], '') as [c1]
+	Coalesce([e].[Str1], '') + '/' + Coalesce([e].[StrReq], '')
 FROM
 	[ConcatTestEntity] [e]
 ORDER BY
 	[e].[Id]
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Str1],

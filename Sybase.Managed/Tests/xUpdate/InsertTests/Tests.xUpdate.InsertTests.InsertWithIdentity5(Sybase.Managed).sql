@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 DELETE FROM [Person]
 FROM
 	[Person] [t1]
@@ -91,7 +90,6 @@ WHERE
 	[p].[FirstName] = @p AND [p].[LastName] = 'Shepard'
 
 -- Sybase.Managed Sybase
-
 DELETE FROM [Person]
 FROM
 	[Person] [t1]

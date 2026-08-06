@@ -18,7 +18,6 @@ VALUES
 
 CommitTransactionAsync
 -- Oracle.11.Managed Oracle11
-
 DELETE FROM
 	"Parent" t1
 WHERE

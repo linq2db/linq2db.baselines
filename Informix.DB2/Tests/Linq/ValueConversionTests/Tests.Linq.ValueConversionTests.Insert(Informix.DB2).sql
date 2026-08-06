@@ -23,16 +23,15 @@ INSERT INTO ValueConversion
 )
 VALUES
 (
-	@Id::Int,
-	@Value1::NVarChar(2),
-	@Enum::NVarChar(6),
-	@Value2::NVarChar(22),
+	@Id,
+	@Value1,
+	@Enum,
+	@Value2,
 	@BoolValue::VarChar(1),
 	@AnotherBoolValue::VarChar(1)
 )
 
 -- Informix.DB2 Informix
-
 SELECT FIRST 1
 	e.Id,
 	e.Value1,
@@ -74,16 +73,15 @@ INSERT INTO ValueConversion
 )
 VALUES
 (
-	@Id::Int,
-	@Value1::NVarChar(200),
-	@Value2::NVarChar(200),
-	@Enum::NVarChar(6),
+	@Id,
+	@Value1,
+	@Value2,
+	@Enum,
 	@BoolValue::VarChar(1),
 	@AnotherBoolValue::VarChar(1)
 )
 
 -- Informix.DB2 Informix
-
 SELECT FIRST 1
 	e.Id,
 	e.Value1,
@@ -150,7 +148,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT FIRST 1
 	e.Id,
 	e.Value1,
@@ -168,7 +165,6 @@ WHERE
 	e.Id = 3
 
 -- Informix.DB2 Informix
-
 SELECT
 	COUNT(*)
 FROM

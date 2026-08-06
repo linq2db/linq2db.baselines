@@ -15,7 +15,6 @@ FROM
 	) [t2]
 
 -- SqlCe
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

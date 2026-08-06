@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`left_1`.`ParentID`,
 	`right_1`.`ParentID`

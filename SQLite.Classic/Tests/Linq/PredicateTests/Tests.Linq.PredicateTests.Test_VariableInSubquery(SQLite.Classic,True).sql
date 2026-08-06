@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -19,7 +18,6 @@ WHERE
 	)
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -30,7 +28,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -50,7 +47,6 @@ WHERE
 	)
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -61,7 +57,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -81,7 +76,6 @@ WHERE
 	)
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -92,7 +86,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -112,7 +105,6 @@ WHERE
 	)
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -123,7 +115,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -143,7 +134,6 @@ WHERE
 	)
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -154,7 +144,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -174,7 +163,6 @@ WHERE
 	)
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -185,7 +173,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -205,7 +192,6 @@ WHERE
 	)
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -216,7 +202,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -236,7 +221,6 @@ WHERE
 	)
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -247,7 +231,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -267,7 +250,6 @@ WHERE
 	)
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -278,7 +260,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -289,7 +270,6 @@ FROM
 	[BooleanTable] [r]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],

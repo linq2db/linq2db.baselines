@@ -1,12 +1,10 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	LinqDataTypes
 DELETE WHERE
 	ID >= 101 AND ID < 104
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO LinqDataTypes
 (
 	ID,
@@ -19,7 +17,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO LinqDataTypes
 (
 	ID,
@@ -32,7 +29,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO LinqDataTypes
 (
 	ID,
@@ -45,7 +41,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.ID,
 	r.StringValue
@@ -57,7 +52,6 @@ ORDER BY
 	r.ID
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.ID,
 	r.IntValue,
@@ -70,7 +64,6 @@ ORDER BY
 	r.ID
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	LinqDataTypes
 DELETE WHERE

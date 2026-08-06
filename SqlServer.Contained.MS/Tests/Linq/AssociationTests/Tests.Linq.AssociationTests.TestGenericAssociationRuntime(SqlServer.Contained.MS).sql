@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[a_MiddleRuntime].[ParentID],
 	[a_Bottom].[ParentID],

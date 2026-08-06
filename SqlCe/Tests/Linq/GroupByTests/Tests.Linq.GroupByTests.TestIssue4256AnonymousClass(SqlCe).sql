@@ -1,16 +1,14 @@
 ﻿-- SqlCe
-
 SELECT DISTINCT
-	1 as [IsActive],
+	1,
 	CASE
 		WHEN [it].[SmallIntValue] <> 0 THEN 1
 		ELSE 0
-	END as [c1]
+	END
 FROM
 	[LinqDataTypes] [it]
 
 -- SqlCe
-
 SELECT
 	[t1].[ID],
 	[t1].[MoneyValue],

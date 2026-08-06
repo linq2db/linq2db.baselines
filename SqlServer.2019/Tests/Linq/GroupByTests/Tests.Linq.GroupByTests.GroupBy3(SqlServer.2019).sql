@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2019
-
 SELECT DISTINCT
 	Coalesce([gr].[Value1], [c_1].[ChildID])
 FROM

@@ -1,8 +1,7 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[m_1].[Id],
-	[d].[Id],
+	[d].[Id] as [Id_1],
 	[d].[FK]
 FROM
 	(
@@ -15,10 +14,9 @@ FROM
 		INNER JOIN [EntityD] [d] ON ([m_1].[Id] = [d].[FK])
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[e].[Id],
-	[a_ObjectB].[Id]
+	[a_ObjectB].[Id] as [Id_1]
 FROM
 	[EntityA] [e]
 		INNER JOIN [EntityB] [a_ObjectB] ON ([e].[FK] = [a_ObjectB].[Id])

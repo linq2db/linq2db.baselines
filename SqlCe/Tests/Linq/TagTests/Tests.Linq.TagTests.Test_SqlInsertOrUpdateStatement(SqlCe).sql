@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 /* My Test */
 UPDATE
 	[TestTable]
@@ -9,7 +8,6 @@ WHERE
 	[TestTable].[Id] = 1
 
 -- SqlCe
-
 /* My Test */
 INSERT INTO [TestTable]
 (

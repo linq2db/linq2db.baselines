@@ -14,7 +14,6 @@ WHERE
 	r."Column" = $Column AND r.ColumnNullable = $ColumnNullable
 
 -- DuckDB
-
 SELECT
 	r.Id,
 	r."Column",
@@ -25,7 +24,6 @@ WHERE
 	r."Column" = 'value=2' AND r.ColumnNullable = 'value=33'
 
 -- DuckDB
-
 DELETE FROM
 	StringEnumTable t1
 
@@ -72,7 +70,6 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	t1.Id,
 	t1."Column",
@@ -83,12 +80,10 @@ ORDER BY
 	t1.Id
 
 -- DuckDB
-
 DELETE FROM
 	StringEnumTable t1
 
 -- DuckDB
-
 INSERT INTO StringEnumTable
 (
 	Id,
@@ -100,7 +95,6 @@ VALUES
 (2,'value=2','value=33')
 
 -- DuckDB
-
 SELECT
 	t1.Id,
 	t1."Column",
@@ -111,7 +105,6 @@ ORDER BY
 	t1.Id
 
 -- DuckDB
-
 DELETE FROM
 	StringEnumTable t1
 
@@ -131,7 +124,6 @@ ORDER BY
 INSERT BULK StringEnumTable(Id, Column, ColumnNullable)
 
 -- DuckDB
-
 SELECT
 	t1.Id,
 	t1."Column",

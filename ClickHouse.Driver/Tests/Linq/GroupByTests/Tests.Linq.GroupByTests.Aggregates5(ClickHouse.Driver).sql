@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	COUNT(CASE
 		WHEN g_1.ChildID > 30 THEN 1

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[i_1].[ReceiptNo],
 	[a_Customer].[BILLGROUP]

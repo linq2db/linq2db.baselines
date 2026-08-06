@@ -3,7 +3,7 @@ DECLARE @p Int -- Int32
 SET     @p = 2
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[AsyncDataTable] [c_1]
 WHERE

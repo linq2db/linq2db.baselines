@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	t1.ID,
 	t1.Value_1
@@ -13,7 +12,6 @@ FROM
 	) t1
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.ID,
 	t1.Value_1

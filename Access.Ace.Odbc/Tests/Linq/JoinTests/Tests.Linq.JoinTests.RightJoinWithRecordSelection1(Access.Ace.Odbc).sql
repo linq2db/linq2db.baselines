@@ -1,8 +1,7 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[fact_1].[Id],
-	[t1].[Id],
+	[t1].[Id] as [Id_1],
 	[t1].[FactId],
 	[t1].[Name]
 FROM

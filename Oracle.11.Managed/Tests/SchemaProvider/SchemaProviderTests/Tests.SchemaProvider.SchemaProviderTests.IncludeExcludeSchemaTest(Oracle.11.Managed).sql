@@ -1,13 +1,10 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT USER FROM DUAL
 
 -- Oracle.11.Managed Oracle11
-
 SELECT  VERSION from PRODUCT_COMPONENT_VERSION WHERE ROWNUM = 1
 
 -- Oracle.11.Managed Oracle11
-
 select user from dual
 
 -- Oracle.11.Managed Oracle11
@@ -43,7 +40,6 @@ FROM
 ORDER BY TableID, isView
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	FKCOLS.OWNER || '.' || FKCOLS.TABLE_NAME as TableID,
 	FKCOLS.CONSTRAINT_NAME                   as PrimaryKeyName,
@@ -61,7 +57,6 @@ WHERE
 IN ('TEST')
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	c.OWNER || '.' || c.TABLE_NAME             as TableID,
 	c.COLUMN_NAME                              as Name,
@@ -82,7 +77,6 @@ FROM ALL_TAB_COLUMNS c
 WHERE c.OWNER IN ('TEST')
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	FKCON.CONSTRAINT_NAME                  as Name,
 	FKCON.OWNER || '.' || FKCON.TABLE_NAME as ThisTableID,
@@ -112,7 +106,6 @@ WHERE
 	PKCON.OWNER IN ('TEST')
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	p.OWNER                                                                                                                              AS Owner,
 	CASE WHEN p.OWNER = USER THEN 1 ELSE 0 END                                                                                           AS IsDefault,
@@ -134,7 +127,6 @@ ORDER BY
 	CASE WHEN p.OBJECT_TYPE = 'PACKAGE' THEN p.PROCEDURE_NAME ELSE p.OBJECT_NAME END
 
 -- Oracle.11.Managed Oracle11
-
 SELECT	
 	OWNER          AS Owner,
 	PACKAGE_NAME   AS PackageName,
@@ -152,7 +144,6 @@ WHERE OWNER IN ('TEST') AND SEQUENCE > 0 AND DATA_LEVEL = 0
 	AND (DATA_TYPE <> 'TABLE' OR IN_OUT <> 'OUT' OR POSITION <> 0)
 
 -- Oracle.11.Managed Oracle11
-
 TEST.ISSUE2132.TEST
 
 -- Oracle.11.Managed Oracle11
@@ -164,7 +155,6 @@ SET     @O = 0
 TEST.TEST_PACKAGE1.TEST_PROCEDURE
 
 -- Oracle.11.Managed Oracle11
-
 SELECT * FROM TABLE(TEST.TEST_PACKAGE1.TEST_TABLE_FUNCTION(NULL))
 
 -- Oracle.11.Managed Oracle11
@@ -176,11 +166,9 @@ SET     @O = 0
 TEST.TEST_PACKAGE2.TEST_PROCEDURE
 
 -- Oracle.11.Managed Oracle11
-
 SELECT * FROM TABLE(TEST.TEST_PACKAGE2.TEST_TABLE_FUNCTION(NULL))
 
 -- Oracle.11.Managed Oracle11
-
 TEST.ADDISSUE792RECORD
 
 -- Oracle.11.Managed Oracle11
@@ -348,28 +336,22 @@ SET     @O = 0
 TEST.TEST_PROCEDURE
 
 -- Oracle.11.Managed Oracle11
-
 SELECT * FROM TABLE(TEST.TEST_TABLE_FUNCTION(NULL))
 
 RollbackTransaction
 -- Oracle.11.Managed Oracle11
-
 SELECT USER FROM DUAL
 
 -- Oracle.11.Managed Oracle11
-
 SELECT  VERSION from PRODUCT_COMPONENT_VERSION WHERE ROWNUM = 1
 
 -- Oracle.11.Managed Oracle11
-
 SELECT USER FROM DUAL
 
 -- Oracle.11.Managed Oracle11
-
 SELECT  VERSION from PRODUCT_COMPONENT_VERSION WHERE ROWNUM = 1
 
 -- Oracle.11.Managed Oracle11
-
 select user from dual
 
 -- Oracle.11.Managed Oracle11
@@ -405,7 +387,6 @@ FROM
 ORDER BY TableID, isView
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	FKCOLS.OWNER || '.' || FKCOLS.TABLE_NAME as TableID,
 	FKCOLS.CONSTRAINT_NAME                   as PrimaryKeyName,
@@ -423,7 +404,6 @@ WHERE
 IN ('IncludeExcludeSchemaTest')
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	c.OWNER || '.' || c.TABLE_NAME             as TableID,
 	c.COLUMN_NAME                              as Name,
@@ -444,7 +424,6 @@ FROM ALL_TAB_COLUMNS c
 WHERE c.OWNER IN ('IncludeExcludeSchemaTest')
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	FKCON.CONSTRAINT_NAME                  as Name,
 	FKCON.OWNER || '.' || FKCON.TABLE_NAME as ThisTableID,
@@ -474,7 +453,6 @@ WHERE
 	PKCON.OWNER IN ('IncludeExcludeSchemaTest')
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	p.OWNER                                                                                                                              AS Owner,
 	CASE WHEN p.OWNER = USER THEN 1 ELSE 0 END                                                                                           AS IsDefault,
@@ -496,7 +474,6 @@ ORDER BY
 	CASE WHEN p.OBJECT_TYPE = 'PACKAGE' THEN p.PROCEDURE_NAME ELSE p.OBJECT_NAME END
 
 -- Oracle.11.Managed Oracle11
-
 SELECT	
 	OWNER          AS Owner,
 	PACKAGE_NAME   AS PackageName,

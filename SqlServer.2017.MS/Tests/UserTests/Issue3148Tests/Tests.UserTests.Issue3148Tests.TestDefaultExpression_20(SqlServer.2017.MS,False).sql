@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[r].[FirstName],
 	[r].[PersonID],
@@ -12,7 +11,6 @@ WHERE
 	[r].[LastName] LIKE N'%x' ESCAPE N'~' AND Convert(VarBinary(8000), RIGHT([r].[LastName], LEN(N'x'))) = Convert(VarBinary(8000), N'x')
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[r].[FirstName],
 	[r].[PersonID],

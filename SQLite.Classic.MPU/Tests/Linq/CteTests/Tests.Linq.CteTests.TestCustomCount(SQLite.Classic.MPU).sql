@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 WITH [CTE_1] AS
 (
 	SELECT DISTINCT

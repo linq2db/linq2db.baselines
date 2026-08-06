@@ -1,9 +1,7 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT '2012-12-12 12:12:12'
 
 -- SQLite.MS SQLite
-
 SELECT '2012-12-12 12:12:12'
 
 -- SQLite.MS SQLite

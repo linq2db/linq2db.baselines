@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "DropTableTest"';
 EXCEPTION
@@ -10,7 +9,6 @@ EXCEPTION
 END;
 
 -- Oracle.11.Managed Oracle11
-
 CREATE TABLE "DropTableTest"
 (
 	ID Int NOT NULL,
@@ -19,7 +17,6 @@ CREATE TABLE "DropTableTest"
 )
 
 -- Oracle.11.Managed Oracle11
-
 INSERT INTO "DropTableTest"
 (
 	ID
@@ -30,18 +27,15 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1.ID
 FROM
 	"DropTableTest" t1
 
 -- Oracle.11.Managed Oracle11
-
 DROP TABLE "DropTableTest"
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1.ID
 FROM

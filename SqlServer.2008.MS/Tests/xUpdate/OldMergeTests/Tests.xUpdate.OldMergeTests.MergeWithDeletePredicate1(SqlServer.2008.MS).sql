@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[t].[ID],
 	[t].[MoneyValue],
@@ -17,7 +16,6 @@ WHERE
 	[t].[ID] > 5
 
 -- SqlServer.2008.MS SqlServer.2008
-
 MERGE INTO [LinqDataTypes] [Target]
 USING (
 	SELECT

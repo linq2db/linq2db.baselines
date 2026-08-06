@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 WITH RECURSIVE cte ("ChildID", "ParentID", "GrandChildID")
 AS
 (
@@ -35,8 +34,7 @@ FROM
 	) m_1
 		INNER JOIN cte d ON m_1."Key_1" = Coalesce(d."ParentID", -1)
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 WITH RECURSIVE cte ("ChildID", "ParentID", "GrandChildID")
 AS
 (

@@ -1,12 +1,10 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 DELETE FROM
 	"LinqDataTypes" "t"
 WHERE
 	"t"."ID" > 1000
 
 -- SapHana.Odbc SapHanaOdbc
-
 INSERT INTO "LinqDataTypes"
 (
 	"ID",
@@ -21,7 +19,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t"."ID",
 	"t"."MoneyValue",
@@ -37,7 +34,6 @@ WHERE
 LIMIT 2
 
 -- SapHana.Odbc SapHanaOdbc
-
 DELETE FROM
 	"LinqDataTypes" "t"
 WHERE

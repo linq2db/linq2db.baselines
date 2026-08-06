@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014
-
 SELECT
 	[t_1].[FinalCustomerId],
 	[t_1].[IsActive],

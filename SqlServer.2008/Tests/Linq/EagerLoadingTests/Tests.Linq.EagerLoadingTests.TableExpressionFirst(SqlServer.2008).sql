@@ -29,7 +29,6 @@ VALUES
 )
 
 -- SqlServer.2008
-
 SELECT
 	[t1].[Id],
 	[a_Details].[UserId],

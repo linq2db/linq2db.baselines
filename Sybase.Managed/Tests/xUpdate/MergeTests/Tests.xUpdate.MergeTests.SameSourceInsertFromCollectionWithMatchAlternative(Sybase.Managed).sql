@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 DELETE FROM [TestMerge1]
 FROM
 	[TestMerge1] [t1]
@@ -105,7 +104,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 DELETE FROM [TestMerge2]
 FROM
 	[TestMerge2] [t1]
@@ -211,7 +209,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 MERGE INTO [TestMerge1] [Target]
 USING (
 	SELECT 3 AS [Id], CAST(NULL AS Int) AS [Field1], 3 AS [Field2], CAST(NULL AS Int) AS [Field4]
@@ -246,7 +243,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[Field1],

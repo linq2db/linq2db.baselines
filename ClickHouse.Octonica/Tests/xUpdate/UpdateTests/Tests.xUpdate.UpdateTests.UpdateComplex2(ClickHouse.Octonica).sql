@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 INSERT INTO Person
 (
 	PersonID,
@@ -18,7 +17,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	Person
 UPDATE
@@ -27,7 +25,6 @@ WHERE
 	startsWith(FirstName, 'UpdateComplex')
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.PersonID,
 	t1.Gender,

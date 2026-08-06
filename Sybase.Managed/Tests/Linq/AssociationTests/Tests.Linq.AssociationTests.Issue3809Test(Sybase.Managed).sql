@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
@@ -26,7 +25,6 @@ ORDER BY
 	[d].[ChildID]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[a].[ParentID],
 	[a_ParentTest].[ParentID]

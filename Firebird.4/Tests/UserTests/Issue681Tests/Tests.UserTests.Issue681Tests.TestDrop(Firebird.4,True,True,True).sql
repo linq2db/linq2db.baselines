@@ -1,12 +1,10 @@
 ﻿-- Firebird.4 Firebird4
-
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue681Table2')) THEN
 		EXECUTE STATEMENT 'DROP TABLE "Issue681Table2"';
 END
 
 -- Firebird.4 Firebird4
-
 CREATE TABLE "Issue681Table2"
 (
 	ID      Int NOT NULL,
@@ -16,6 +14,5 @@ CREATE TABLE "Issue681Table2"
 )
 
 -- Firebird.4 Firebird4
-
 DROP TABLE "Issue681Table2"
 

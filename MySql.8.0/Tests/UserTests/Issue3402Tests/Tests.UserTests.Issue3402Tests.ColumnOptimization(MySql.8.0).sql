@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`ess`.`ID`
 FROM
@@ -15,7 +14,6 @@ WHERE
 	)
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`ess`.`ID`
 FROM

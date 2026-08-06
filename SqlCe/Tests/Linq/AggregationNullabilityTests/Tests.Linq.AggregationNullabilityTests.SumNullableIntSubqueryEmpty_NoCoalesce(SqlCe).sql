@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT TOP (1)
 	[t1].[Sum_1]
 FROM

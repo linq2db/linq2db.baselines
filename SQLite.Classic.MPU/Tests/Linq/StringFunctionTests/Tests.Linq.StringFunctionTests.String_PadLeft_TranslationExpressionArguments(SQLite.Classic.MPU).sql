@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[s].[ID],
 	[s].[FirstName]
@@ -18,7 +17,6 @@ WHERE
 	[s].[FirstName] <> ''
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

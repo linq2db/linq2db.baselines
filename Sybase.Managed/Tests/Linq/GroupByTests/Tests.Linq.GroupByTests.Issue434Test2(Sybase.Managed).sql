@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[m_1].[PersonID],
 	[d].[PersonID],
@@ -11,7 +10,6 @@ WHERE
 	Lower([m_1].[FirstName]) LIKE '%test%' ESCAPE '~'
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[p].[FirstName],
 	[p].[PersonID]

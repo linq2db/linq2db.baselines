@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	CASE
 		WHEN t2.x < toDecimal128('0', 10) THEN toDecimal128('9', 10)

@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SET GLOBAL local_infile=ON
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
@@ -189,7 +188,6 @@ VALUES
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`ne.eds ``escaPing`,
 	`t1`.`Bit_1`,

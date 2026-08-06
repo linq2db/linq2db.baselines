@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	[p].[ParentID],
 	[c_2].[Count_1],
@@ -17,7 +16,6 @@ FROM
 		) [c_2]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	COUNT(*)
 FROM

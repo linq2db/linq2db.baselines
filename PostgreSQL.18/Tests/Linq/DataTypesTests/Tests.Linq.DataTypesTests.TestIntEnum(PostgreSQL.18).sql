@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL12
 DECLARE @Column Integer -- Int32
 SET     @Column = 2
 DECLARE @ColumnNullable Integer -- Int32
@@ -13,8 +13,7 @@ FROM
 WHERE
 	r."Column" = :Column AND r."ColumnNullable" = :ColumnNullable
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	r."Id",
 	r."Column",
@@ -24,12 +23,11 @@ FROM
 WHERE
 	r."Column" = 2 AND r."ColumnNullable" = 3
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 DELETE FROM
 	"IntEnumTable" t1
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Column Integer -- Int32
@@ -50,7 +48,7 @@ VALUES
 	:ColumnNullable
 )
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Column Integer -- Int32
@@ -71,8 +69,7 @@ VALUES
 	:ColumnNullable
 )
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Column",
@@ -82,13 +79,11 @@ FROM
 ORDER BY
 	t1."Id"
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 DELETE FROM
 	"IntEnumTable" t1
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 INSERT INTO "IntEnumTable"
 (
 	"Id",
@@ -99,8 +94,7 @@ VALUES
 (1,1,NULL),
 (2,2,3)
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Column",
@@ -110,15 +104,13 @@ FROM
 ORDER BY
 	t1."Id"
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 DELETE FROM
 	"IntEnumTable" t1
 
 INSERT BULK "IntEnumTable"(Id, Column, ColumnNullable)
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Column",

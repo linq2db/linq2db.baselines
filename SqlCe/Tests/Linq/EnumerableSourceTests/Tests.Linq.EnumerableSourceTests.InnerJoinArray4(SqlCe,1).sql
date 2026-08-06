@@ -1,8 +1,7 @@
 ﻿-- SqlCe
-
 SELECT
 	[p].[FirstName],
-	[p].[PersonID] as [ID],
+	[p].[PersonID],
 	[p].[LastName],
 	[p].[MiddleName],
 	[p].[Gender]
@@ -18,10 +17,9 @@ FROM
 			SELECT 'Doe' AS [item]) [n] ON [p].[LastName] = [n].[item]
 
 -- SqlCe
-
 SELECT
 	[p].[FirstName],
-	[p].[PersonID] as [ID],
+	[p].[PersonID],
 	[p].[LastName],
 	[p].[MiddleName],
 	[p].[Gender]

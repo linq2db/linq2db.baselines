@@ -24,7 +24,6 @@ VALUES
 )
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t"."Id",
 	"t"."Name",
@@ -58,7 +57,6 @@ VALUES
 )
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t"."Id",
 	"t"."Name",

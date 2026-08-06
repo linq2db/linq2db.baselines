@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 INSERT INTO "TestTempTable"
 (
 	"Id",
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
 	EXECUTE IMMEDIATE '
@@ -27,7 +25,6 @@ BEGIN
 END
 
 -- DB2 DB2.LUW DB2LUW
-
 INSERT INTO "TempTable"
 (
 	"Id",
@@ -40,7 +37,6 @@ FROM
 	"TestTempTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 INSERT INTO "TestTempTable"
 (
 	"Id",
@@ -53,7 +49,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 INSERT INTO "TempTable"
 (
 	"Id",
@@ -66,7 +61,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"
@@ -76,7 +70,6 @@ ORDER BY
 	"t1"."Id"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Renamed"
@@ -86,7 +79,6 @@ ORDER BY
 	"t1"."Id"
 
 -- DB2 DB2.LUW DB2LUW
-
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
 	EXECUTE IMMEDIATE 'DROP TABLE "TempTable"';

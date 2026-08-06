@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	maxOrNull(r.PersonID) as c1
 FROM

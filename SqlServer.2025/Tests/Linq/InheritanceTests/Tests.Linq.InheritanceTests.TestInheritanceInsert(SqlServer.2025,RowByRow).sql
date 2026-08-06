@@ -141,7 +141,6 @@ VALUES
 )
 
 -- SqlServer.2025
-
 SELECT
 	[t1].[Code],
 	[t1].[Id],

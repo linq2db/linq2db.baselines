@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	s."Id"
 FROM
@@ -8,8 +7,7 @@ WHERE
 	s."Enum" IN ('THREE', 'FOUR')
 LIMIT 1
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	s."Id"
 FROM
@@ -18,8 +16,7 @@ WHERE
 	(s."Enum" IN ('THREE') OR s."Enum" IS NULL)
 LIMIT 1
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	s."Id"
 FROM
@@ -28,8 +25,7 @@ WHERE
 	s."Enum" IN ('THREE', 'TWO')
 LIMIT 1
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	s."Id"
 FROM
@@ -38,8 +34,7 @@ WHERE
 	(s."Enum" NOT IN ('TWO') AND s."Enum" IS NOT NULL)
 LIMIT 1
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	s."Id"
 FROM

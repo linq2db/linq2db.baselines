@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 WITH RECURSIVE `cte` (`ChildID`, `ParentID`, `GrandChildID`)
 AS
 (
@@ -36,7 +35,6 @@ FROM
 		INNER JOIN `cte` `d` ON `m_1`.`Key_1` = Coalesce(`d`.`ParentID`, -1)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 WITH RECURSIVE `cte` (`ChildID`, `ParentID`, `GrandChildID`)
 AS
 (

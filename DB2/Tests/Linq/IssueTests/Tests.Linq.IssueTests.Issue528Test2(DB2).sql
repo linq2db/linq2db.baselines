@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"m_1"."Key_1",
 	"d"."FirstName",
@@ -17,7 +16,6 @@ FROM
 		INNER JOIN "Person" "d" ON "m_1"."Key_1" = "d"."FirstName"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t2"."Key_1",
 	"t2"."Key_1"

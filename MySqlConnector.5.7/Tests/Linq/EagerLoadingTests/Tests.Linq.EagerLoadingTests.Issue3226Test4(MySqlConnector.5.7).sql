@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`m_1`.`Id`,
 	`d`.`Value`
@@ -8,7 +7,6 @@ FROM
 		INNER JOIN `ItemValue` `d` ON `m_1`.`Id` = `d`.`ItemId`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`x`.`Id`,
 	`x`.`Text`

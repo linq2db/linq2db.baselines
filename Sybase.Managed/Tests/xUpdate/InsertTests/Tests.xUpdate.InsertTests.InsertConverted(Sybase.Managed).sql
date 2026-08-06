@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 DELETE FROM [LinqDataTypes]
 FROM
 	[LinqDataTypes] [r]
@@ -22,7 +21,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 1
 	[t].[ID],
 	[t].[BigIntValue]
@@ -32,7 +30,6 @@ WHERE
 	[t].[ID] = 1001
 
 -- Sybase.Managed Sybase
-
 DELETE FROM [LinqDataTypes]
 FROM
 	[LinqDataTypes] [r]

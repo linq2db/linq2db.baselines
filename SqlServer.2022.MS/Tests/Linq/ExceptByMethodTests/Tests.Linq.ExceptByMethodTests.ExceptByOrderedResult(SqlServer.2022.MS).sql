@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
-
 SELECT
 	[t1].[Id],
 	[t1].[TestId]
@@ -21,7 +20,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlServer.2022.MS SqlServer.2022
-
 SELECT
 	[t1].[Id],
 	[t1].[TestId]

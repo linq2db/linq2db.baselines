@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	COUNT(*)
 FROM
@@ -8,7 +7,6 @@ WHERE
 	p.FirstName LIKE '%o~%h%' ESCAPE '~' AND p.PersonID = 1
 
 -- Informix.DB2 Informix
-
 SELECT
 	COUNT(*)
 FROM

@@ -6,7 +6,6 @@ VALUES (@p0, @p1);
 
 
 -- SQLite.MS SQLite
-
 SELECT
 	[r].[Id],
 	[r].[Value]

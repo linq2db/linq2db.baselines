@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
-
 SELECT
 	[nm].[MiddleName]
 FROM
@@ -8,7 +7,6 @@ WHERE
 	[nm].[MiddleName] IS NOT NULL
 
 -- SqlServer.2022.MS SqlServer.2022
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

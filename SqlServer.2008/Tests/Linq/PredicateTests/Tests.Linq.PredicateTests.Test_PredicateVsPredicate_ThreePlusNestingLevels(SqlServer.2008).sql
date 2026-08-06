@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -34,7 +33,6 @@ WHERE
 	END
 
 -- SqlServer.2008
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -45,7 +43,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2008
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -65,7 +62,6 @@ WHERE
 	END
 
 -- SqlServer.2008
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -76,7 +72,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2008
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -95,7 +90,6 @@ WHERE
 	END
 
 -- SqlServer.2008
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -106,7 +100,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2008
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -125,7 +118,6 @@ WHERE
 	END
 
 -- SqlServer.2008
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -136,7 +128,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2008
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -156,7 +147,6 @@ WHERE
 	END
 
 -- SqlServer.2008
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -167,7 +157,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2008
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -194,7 +183,6 @@ WHERE
 	END
 
 -- SqlServer.2008
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -205,7 +193,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2008
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -240,7 +227,6 @@ WHERE
 	END
 
 -- SqlServer.2008
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],

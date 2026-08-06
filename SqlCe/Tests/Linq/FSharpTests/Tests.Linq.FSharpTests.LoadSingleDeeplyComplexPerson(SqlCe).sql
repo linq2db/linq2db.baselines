@@ -3,10 +3,10 @@ DECLARE @p Int -- Int32
 SET     @p = 1
 
 SELECT TOP (2)
-	[p].[PersonID] as [ID],
+	[p].[PersonID],
 	[p].[FirstName],
 	[p].[MiddleName],
-	[p].[LastName] as [Value_1],
+	[p].[LastName],
 	[p].[Gender]
 FROM
 	[Person] [p]

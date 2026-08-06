@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	t."Str",
 	Length(t."Str"),
@@ -8,7 +7,6 @@ FROM
 	"TestLengthModel" t
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Str"

@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	STRING_AGG(g_1.Value1, ' -> ')
 FROM

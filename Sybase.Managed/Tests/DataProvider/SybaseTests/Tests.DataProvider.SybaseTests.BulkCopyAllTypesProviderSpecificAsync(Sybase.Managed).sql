@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 DELETE FROM [AllTypes]
 FROM
 	[AllTypes] [p]
@@ -7,7 +6,6 @@ WHERE
 	[p].[ID] >= 700
 
 -- Sybase.Managed Sybase
-
 INSERT INTO [AllTypes]
 (
 	[ID],
@@ -45,7 +43,6 @@ SELECT 700,1,2,1.6,1,1,2,1.1,1.2,1.3,1,2,1,1.3999999999999999,1.5,'2014-12-17 21
 SELECT 701,NULL,NULL,NULL,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t].[ID],
 	[t].[bigintDataType],
@@ -85,7 +82,6 @@ ORDER BY
 	[t].[ID]
 
 -- Sybase.Managed Sybase
-
 DELETE FROM [AllTypes]
 FROM
 	[AllTypes] [p]

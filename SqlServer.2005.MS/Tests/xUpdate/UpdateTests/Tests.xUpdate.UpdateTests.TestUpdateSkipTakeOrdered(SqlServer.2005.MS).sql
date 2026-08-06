@@ -197,7 +197,6 @@ WHERE
 	([u].[Value1] = [t1].[Value1] OR [u].[Value1] IS NULL AND [t1].[Value1] IS NULL)
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[r].[Value1]
 FROM

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t].[Value1]
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	[t].[ID]
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[ID],
 	[t1].[Value1],

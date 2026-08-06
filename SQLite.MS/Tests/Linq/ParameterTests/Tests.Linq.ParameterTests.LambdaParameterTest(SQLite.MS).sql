@@ -11,7 +11,6 @@ WHERE
 	[r].[ParentID] = @p
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

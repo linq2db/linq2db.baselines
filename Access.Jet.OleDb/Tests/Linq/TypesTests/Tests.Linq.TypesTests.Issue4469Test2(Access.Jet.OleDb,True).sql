@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT TOP 2
 	[v].[Integer] / 33,
 	[v].[Decimal] / 33,

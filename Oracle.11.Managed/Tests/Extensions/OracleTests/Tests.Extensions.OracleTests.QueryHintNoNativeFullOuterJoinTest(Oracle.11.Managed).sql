@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT /*+ NO_NATIVE_FULL_OUTER_JOIN */
 	p."ParentID",
 	p."Value1"

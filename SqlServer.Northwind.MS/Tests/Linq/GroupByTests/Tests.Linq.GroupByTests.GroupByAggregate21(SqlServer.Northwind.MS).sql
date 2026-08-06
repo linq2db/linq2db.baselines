@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Northwind.MS SqlServer.2019
-
 SELECT
 	[m_1].[Key_1],
 	[d].[CustomerID],
@@ -37,7 +36,6 @@ FROM
 		) = 33.25, 1, 0)
 
 -- SqlServer.Northwind.MS SqlServer.2019
-
 SELECT DISTINCT
 	IIF((
 		SELECT

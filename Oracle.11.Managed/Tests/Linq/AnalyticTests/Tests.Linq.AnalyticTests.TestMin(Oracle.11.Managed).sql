@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	MIN(c_1."ChildID"),
 	MIN(c_1."ChildID"),
@@ -12,21 +11,18 @@ GROUP BY
 	g_1."ParentID"
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	MIN(t1."ParentID")
 FROM
 	"Child" t1
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	MIN(ALL t1."ParentID")
 FROM
 	"Child" t1
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	MIN(DISTINCT t1."ParentID")
 FROM

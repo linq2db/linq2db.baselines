@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 UPDATE
 	[TrimTestTable]
 SET
@@ -8,7 +7,6 @@ WHERE
 	[TrimTestTable].[ID] = 3
 
 -- SQLite.Classic SQLite
-
 UPDATE
 	[TrimTestTable]
 SET
@@ -17,7 +15,6 @@ WHERE
 	[TrimTestTable].[Data] = '***XXX***'
 
 -- SQLite.Classic SQLite
-
 UPDATE
 	[TrimTestTable]
 SET
@@ -26,7 +23,6 @@ WHERE
 	[TrimTestTable].[Data] = '***HHH***'
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[r].[ID],
 	[r].[Data]
@@ -36,7 +32,6 @@ ORDER BY
 	[r].[ID]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[r].[ID],
 	[r].[Data]

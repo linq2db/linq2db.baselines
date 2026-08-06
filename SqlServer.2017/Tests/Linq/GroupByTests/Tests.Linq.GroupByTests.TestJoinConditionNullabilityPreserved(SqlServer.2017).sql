@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 SELECT TOP (2)
 	[a_Ref_1].[Prop]
 FROM

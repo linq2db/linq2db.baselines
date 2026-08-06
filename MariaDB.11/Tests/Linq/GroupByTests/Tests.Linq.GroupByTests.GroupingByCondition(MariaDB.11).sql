@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`g_1`.`isValueAvailable`,
 	`g_1`.`ParentID`,
@@ -22,7 +21,6 @@ GROUP BY
 	`g_1`.`Value_1`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`ParentID`,
 	`t1`.`ChildID`

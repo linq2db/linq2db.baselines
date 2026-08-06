@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014.MS SqlServer.2014
-
 DELETE [p]
 FROM
 	[Parent] [p]
@@ -7,7 +6,6 @@ WHERE
 	[p].[ParentID] > 1000
 
 -- SqlServer.2014.MS SqlServer.2014
-
 INSERT INTO [Parent]
 (
 	[ParentID],
@@ -32,7 +30,6 @@ FROM
 	) [t1]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	COUNT(*)
 FROM
@@ -41,7 +38,6 @@ WHERE
 	[c_1].[ParentID] > 1000
 
 -- SqlServer.2014.MS SqlServer.2014
-
 DELETE [p]
 FROM
 	[Parent] [p]

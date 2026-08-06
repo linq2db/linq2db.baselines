@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT DISTINCT
 	1,
 	CASE
@@ -10,7 +9,6 @@ FROM
 	"LinqDataTypes" "it"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."ID",
 	"t1"."MoneyValue",

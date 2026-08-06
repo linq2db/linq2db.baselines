@@ -1,19 +1,17 @@
 ﻿-- SqlCe
-
 DELETE FROM
 	[Parent]
 WHERE
 	[Parent].[ParentID] > 1000
 
 -- SqlCe
-
 INSERT INTO [Parent]
 (
 	[ParentID],
 	[Value1]
 )
 SELECT
-	[t1].[ParentID] + 1000 as [c1],
+	[t1].[ParentID] + 1000,
 	[t1].[Value1]
 FROM
 	(
@@ -31,16 +29,14 @@ FROM
 	) [t1]
 
 -- SqlCe
-
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Parent] [c_1]
 WHERE
 	[c_1].[ParentID] > 1000
 
 -- SqlCe
-
 DELETE FROM
 	[Parent]
 WHERE

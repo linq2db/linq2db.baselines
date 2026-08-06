@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 CREATE TABLE [tempdb]..[#TestEmployees]
 (
 	[IsDeleted]       bit            NOT NULL,
@@ -28,7 +27,6 @@ CREATE TABLE [tempdb]..[#TestEmployees]
 
 
 -- SqlServer.2022
-
 INSERT INTO [tempdb]..[#TestEmployees]
 (
 	[IsDeleted],
@@ -77,7 +75,6 @@ FROM
 
 
 -- SqlServer.2022
-
 SELECT
 	COUNT(*)
 FROM
@@ -94,7 +91,6 @@ WHERE (@__ef_filter__p_0 = CAST(1 AS bit)) OR ([e].[IsDeleted] <> CAST(1 AS bit)
 
 
 -- SqlServer.2022
-
 DROP TABLE IF EXISTS [tempdb]..[#TestEmployees]
 
 

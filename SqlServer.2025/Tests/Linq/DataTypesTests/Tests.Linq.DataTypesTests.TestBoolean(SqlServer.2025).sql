@@ -14,7 +14,6 @@ WHERE
 	[r].[Column] = @Column AND [r].[ColumnNullable] = @ColumnNullable
 
 -- SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Column],
@@ -25,7 +24,6 @@ WHERE
 	[r].[Column] = 0 AND [r].[ColumnNullable] = 1
 
 -- SqlServer.2025
-
 DELETE [t1]
 FROM
 	[BooleanTable] [t1]
@@ -73,7 +71,6 @@ VALUES
 )
 
 -- SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],
@@ -84,13 +81,11 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlServer.2025
-
 DELETE [t1]
 FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025
-
 INSERT INTO [BooleanTable]
 (
 	[Id],
@@ -102,7 +97,6 @@ VALUES
 (2,0,1)
 
 -- SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],
@@ -113,7 +107,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlServer.2025
-
 DELETE [t1]
 FROM
 	[BooleanTable] [t1]
@@ -121,7 +114,6 @@ FROM
 INSERT BULK [BooleanTable](Id, Column, ColumnNullable)
 
 -- SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 SELECT
 	[x].[ChildID],
 	[x].[ParentID],
@@ -11,7 +10,6 @@ FROM
 		INNER JOIN [Person] [p3] ON [x].[ChildID] = [p3].[PersonID]
 
 -- SqlServer.2005
-
 SELECT
 	[x].[ChildID],
 	[x].[ParentID],

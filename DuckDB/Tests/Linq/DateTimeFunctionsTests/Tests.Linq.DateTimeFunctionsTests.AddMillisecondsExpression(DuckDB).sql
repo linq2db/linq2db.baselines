@@ -8,7 +8,6 @@ FROM
 	LinqDataTypes t
 
 -- DuckDB
-
 SELECT
 	t.DateTimeValue
 FROM

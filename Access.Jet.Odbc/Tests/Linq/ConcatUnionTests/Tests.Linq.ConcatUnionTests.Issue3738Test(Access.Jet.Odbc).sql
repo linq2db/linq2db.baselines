@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 SELECT
 	'I-' + CStr([x].[PersonID]),
 	[x].[FirstName]

@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 INSERT INTO "TestBool"
 (
 	"Id",
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"
@@ -21,14 +19,12 @@ FROM
 FETCH NEXT 2 ROWS ONLY
 
 -- DB2 DB2.LUW DB2LUW
-
 UPDATE
 	"TestBool" "t1"
 SET
 	"Value" = NOT "t1"."Value"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"
@@ -37,7 +33,6 @@ FROM
 FETCH NEXT 2 ROWS ONLY
 
 -- DB2 DB2.LUW DB2LUW
-
 UPDATE
 	"TestBool" "r"
 SET
@@ -46,7 +41,6 @@ WHERE
 	"r"."Id" = 1
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"

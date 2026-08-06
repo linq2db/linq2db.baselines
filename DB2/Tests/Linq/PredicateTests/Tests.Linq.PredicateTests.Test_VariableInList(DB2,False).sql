@@ -14,7 +14,6 @@ WHERE
 	@One IN (0, 1)
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -40,7 +39,6 @@ WHERE
 	@Zero IN (0, 1)
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -66,7 +64,6 @@ WHERE
 	@OneN IN (0, 1)
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -92,7 +89,6 @@ WHERE
 	@ZeroN IN (0, 1)
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -118,7 +114,6 @@ WHERE
 	@Null IN (0, 1)
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -144,7 +139,6 @@ WHERE
 	(@One IN (0, 1) OR @One IS NULL)
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -170,7 +164,6 @@ WHERE
 	(@Zero IN (0, 1) OR @Zero IS NULL)
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -196,7 +189,6 @@ WHERE
 	(@OneN IN (0, 1) OR @OneN IS NULL)
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -222,7 +214,6 @@ WHERE
 	(@ZeroN IN (0, 1) OR @ZeroN IS NULL)
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -248,7 +239,6 @@ WHERE
 	(@Null IN (0, 1) OR @Null IS NULL)
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -274,7 +264,6 @@ WHERE
 	@One NOT IN (0, 1)
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -300,7 +289,6 @@ WHERE
 	@Zero NOT IN (0, 1)
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -326,7 +314,6 @@ WHERE
 	(@OneN NOT IN (0, 1) OR @OneN IS NULL)
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -352,7 +339,6 @@ WHERE
 	(@ZeroN NOT IN (0, 1) OR @ZeroN IS NULL)
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -378,7 +364,6 @@ WHERE
 	(@Null NOT IN (0, 1) OR @Null IS NULL)
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -404,7 +389,6 @@ WHERE
 	(@One NOT IN (0, 1) AND @One IS NOT NULL)
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -430,7 +414,6 @@ WHERE
 	(@Zero NOT IN (0, 1) AND @Zero IS NOT NULL)
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -456,7 +439,6 @@ WHERE
 	(@OneN NOT IN (0, 1) AND @OneN IS NOT NULL)
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -482,7 +464,6 @@ WHERE
 	(@ZeroN NOT IN (0, 1) AND @ZeroN IS NOT NULL)
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -508,7 +489,6 @@ WHERE
 	(@Null NOT IN (0, 1) AND @Null IS NOT NULL)
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",

@@ -40,7 +40,6 @@ FROM
 LIMIT @take OFFSET @skip
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Order],
@@ -49,7 +48,6 @@ FROM
 	[Lines] [t1]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Order],

@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT
 	[a_Patient].[PersonID],
 	[a_Patient].[Diagnosis]
@@ -8,7 +7,6 @@ FROM
 		LEFT JOIN [Patient] [a_Patient] ON [p].[PersonID] = [a_Patient].[PersonID]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[a_Patient].[PersonID],
 	[a_Patient].[Diagnosis]

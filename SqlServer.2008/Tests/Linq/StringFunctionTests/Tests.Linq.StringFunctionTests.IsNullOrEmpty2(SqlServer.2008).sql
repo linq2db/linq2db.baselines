@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008
-
 SELECT
 	CASE
 		WHEN LEN([p].[FirstName] + N'.') = 1 THEN 1

@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 UPDATE
 	"SampleClass"
 SET

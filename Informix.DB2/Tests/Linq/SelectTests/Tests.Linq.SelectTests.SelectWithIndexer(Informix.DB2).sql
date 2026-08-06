@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	x.FirstName,
 	x.LastName,
@@ -20,7 +19,6 @@ ORDER BY
 	x.PersonID DESC
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.FirstName,
 	t1.PersonID,

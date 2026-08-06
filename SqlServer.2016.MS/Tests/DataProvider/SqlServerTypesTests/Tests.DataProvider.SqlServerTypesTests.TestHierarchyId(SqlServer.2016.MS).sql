@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	hierarchyid::GetRoot(),
 	[t].[hierarchyidDataType].GetDescendant(hierarchyid::Parse('/1/3/4/'), hierarchyid::Parse('/1/3/5/')),

@@ -9,7 +9,6 @@ WHERE
 	[r].[ID] >= 101 AND [r].[ID] < @p
 
 -- Sybase.Managed Sybase
-
 INSERT INTO [LinqDataTypes]
 (
 	[ID],
@@ -33,7 +32,6 @@ WHERE
 	[LinqDataTypes].[ID] = 101 AND [LinqDataTypes].[BigIntValue] = 11
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 1
 	[r].[BigIntValue]
 FROM

@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[a_GrandChildren].[ParentID],
 	[a_GrandChildren].[ChildID],

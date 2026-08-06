@@ -1,9 +1,7 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 DROP TABLE TestTable
 
 -- ClickHouse.MySql ClickHouse
-
 CREATE TABLE TestTable
 (
 	ID        Int32,
@@ -14,7 +12,6 @@ CREATE TABLE TestTable
 ENGINE = Memory()
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.ID,
 	t1.Field1,
@@ -24,6 +21,5 @@ FROM
 	TestTable t1
 
 -- ClickHouse.MySql ClickHouse
-
 DROP TABLE TestTable
 

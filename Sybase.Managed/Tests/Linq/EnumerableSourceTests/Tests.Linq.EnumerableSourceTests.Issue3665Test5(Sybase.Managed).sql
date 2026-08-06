@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[y].[item]
 FROM
@@ -14,7 +13,6 @@ FROM
 		SELECT 'O') [y]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

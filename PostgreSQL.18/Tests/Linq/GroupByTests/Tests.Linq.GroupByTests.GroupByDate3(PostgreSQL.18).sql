@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
-
+﻿-- PostgreSQL.18 PostgreSQL12
 SELECT
 	SUM(grp_1."MoneyValue"),
 	Floor(Extract(year From grp_1.c1))::Int,
@@ -15,8 +14,7 @@ FROM
 GROUP BY
 	grp_1.c1
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	SUM(grp_1."MoneyValue"),
 	Floor(Extract(year From grp_1.c1))::Int,

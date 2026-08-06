@@ -19,7 +19,6 @@ WHERE
 	[cross_1].[Id] = ? AND [a_AssociatedOptional].[Id] = [cross_1].[Id_1]
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Field]

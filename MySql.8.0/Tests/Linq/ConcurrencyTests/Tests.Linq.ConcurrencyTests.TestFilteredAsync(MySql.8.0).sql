@@ -20,7 +20,6 @@ VALUES
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Stamp`,
@@ -45,7 +44,6 @@ WHERE
 	`r`.`Id` = 2 AND `r`.`Id` = @Id AND `r`.`Stamp` = @Stamp
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Stamp`,
@@ -70,7 +68,6 @@ WHERE
 	`r`.`Id` = 1 AND `r`.`Id` = @Id AND `r`.`Stamp` = @Stamp
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Stamp`,
@@ -92,7 +89,6 @@ WHERE
 	`ConcurrencyFiltered`.`Stamp` = @Stamp
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Stamp`,
@@ -114,7 +110,6 @@ WHERE
 	`ConcurrencyFiltered`.`Stamp` = @Stamp
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Stamp`,

@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 DELETE FROM
 	"LinqDataTypes" r
 WHERE
@@ -21,7 +20,6 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t.ID,
 	t."BigIntValue"
@@ -31,7 +29,6 @@ WHERE
 	t.ID = 1001 AND ROWNUM <= 1
 
 -- Oracle.11.Managed Oracle11
-
 DELETE FROM
 	"LinqDataTypes" r
 WHERE

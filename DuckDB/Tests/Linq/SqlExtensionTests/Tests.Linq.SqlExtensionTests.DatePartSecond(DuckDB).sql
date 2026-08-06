@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	Extract(second from t.DateTimeValue)
 FROM

@@ -1,12 +1,10 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 DELETE FROM
 	"Parent" "p"
 WHERE
 	"p"."Value1" = 11
 
 -- SapHana.Odbc SapHanaOdbc
-
 INSERT INTO "Parent"
 (
 	"ParentID",
@@ -21,7 +19,6 @@ WHERE
 	"c_1"."ChildID" = 11
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	COUNT(*)
 FROM
@@ -30,7 +27,6 @@ WHERE
 	"p"."Value1" = 11
 
 -- SapHana.Odbc SapHanaOdbc
-
 DELETE FROM
 	"Parent" "p"
 WHERE

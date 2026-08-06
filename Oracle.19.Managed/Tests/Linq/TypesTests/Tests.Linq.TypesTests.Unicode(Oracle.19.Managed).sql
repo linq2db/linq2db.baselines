@@ -24,10 +24,9 @@ VALUES
 )
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	p."FirstName",
-	p."PersonID" as ID,
+	p."PersonID",
 	p."LastName",
 	p."MiddleName",
 	p."Gender"

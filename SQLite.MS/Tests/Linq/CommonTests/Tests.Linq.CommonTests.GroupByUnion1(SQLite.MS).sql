@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[tt].[Key_1],
 	SUM([tt].[ChildID])

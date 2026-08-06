@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`m_1`.`Key_1`,
 	`d`.`ParentID`,
@@ -26,7 +25,6 @@ FROM
 		END
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT DISTINCT
 	CASE
 		WHEN `g_1`.`ParentID` > 2 THEN CASE

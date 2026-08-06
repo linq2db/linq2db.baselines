@@ -1,5 +1,4 @@
 ﻿-- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(*)
 FROM
@@ -8,7 +7,6 @@ WHERE
 	r."Diagnosis" LIKE '%Persecution' ESCAPE '~'
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(*)
 FROM
@@ -17,7 +15,6 @@ WHERE
 	r."Diagnosis" LIKE '%persecution' ESCAPE '~'
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(*)
 FROM
@@ -26,7 +23,6 @@ WHERE
 	Lower(r."Diagnosis") LIKE '%persecution' ESCAPE '~'
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(*)
 FROM

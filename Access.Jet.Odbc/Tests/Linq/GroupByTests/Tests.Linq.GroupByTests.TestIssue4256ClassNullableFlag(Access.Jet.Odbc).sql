@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 SELECT DISTINCT
 	True,
 	[it].[SmallIntValue] <> 0
@@ -7,7 +6,6 @@ FROM
 	[LinqDataTypes] [it]
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[t1].[ID],
 	[t1].[MoneyValue],

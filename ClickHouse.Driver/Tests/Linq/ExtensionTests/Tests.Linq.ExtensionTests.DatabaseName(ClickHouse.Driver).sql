@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	currentDatabase()
 FROM
@@ -7,7 +6,6 @@ FROM
 LIMIT 1
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.ParentID,
 	t1.Value1

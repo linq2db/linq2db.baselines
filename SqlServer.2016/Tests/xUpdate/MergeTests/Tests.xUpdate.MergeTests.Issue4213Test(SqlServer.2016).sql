@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016
-
 WITH [CTE_1] ([ID], [MiddleName], [Gender])
 AS
 (

@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"p"."PersonID",
 	'123' || "p"."FirstName" || '456'

@@ -6,7 +6,7 @@ SET     @ColumnNullable = 3
 
 SELECT
 	[r].[Id],
-	[r].[Column] as [Column_1],
+	[r].[Column],
 	[r].[ColumnNullable]
 FROM
 	[IntEnumTable] [r]
@@ -14,10 +14,9 @@ WHERE
 	[r].[Column] = @Column AND [r].[ColumnNullable] = @ColumnNullable
 
 -- SqlCe
-
 SELECT
 	[r].[Id],
-	[r].[Column] as [Column_1],
+	[r].[Column],
 	[r].[ColumnNullable]
 FROM
 	[IntEnumTable] [r]
@@ -25,7 +24,6 @@ WHERE
 	[r].[Column] = 2 AND [r].[ColumnNullable] = 3
 
 -- SqlCe
-
 DELETE FROM
 	[IntEnumTable]
 
@@ -72,10 +70,9 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
-	[t1].[Column] as [Column_1],
+	[t1].[Column],
 	[t1].[ColumnNullable]
 FROM
 	[IntEnumTable] [t1]
@@ -83,12 +80,10 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlCe
-
 DELETE FROM
 	[IntEnumTable]
 
 -- SqlCe
-
 INSERT INTO [IntEnumTable]
 (
 	[Id],
@@ -99,10 +94,9 @@ SELECT 1,1,NULL UNION ALL
 SELECT 2,2,3
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
-	[t1].[Column] as [Column_1],
+	[t1].[Column],
 	[t1].[ColumnNullable]
 FROM
 	[IntEnumTable] [t1]
@@ -110,12 +104,10 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlCe
-
 DELETE FROM
 	[IntEnumTable]
 
 -- SqlCe
-
 INSERT INTO [IntEnumTable]
 (
 	[Id],
@@ -126,10 +118,9 @@ SELECT 1,1,NULL UNION ALL
 SELECT 2,2,3
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
-	[t1].[Column] as [Column_1],
+	[t1].[Column],
 	[t1].[ColumnNullable]
 FROM
 	[IntEnumTable] [t1]

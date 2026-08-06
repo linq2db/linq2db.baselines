@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id"
 FROM
@@ -9,7 +8,6 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id"
 FROM
@@ -23,7 +21,7 @@ DECLARE @UserId Int32
 SET     @UserId = 2
 
 SELECT
-	x."Id" as "UserId"
+	x."Id"
 FROM
 	"TransactionLine" x
 WHERE

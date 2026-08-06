@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	p1.ParentID,
 	CAST(NULL AS INTEGER)

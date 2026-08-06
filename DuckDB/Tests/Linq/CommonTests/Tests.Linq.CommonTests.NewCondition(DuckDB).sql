@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	CASE
 		WHEN p.Value1 IS NOT NULL THEN p.Value1

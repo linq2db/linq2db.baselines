@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	COUNT(*) || ' items have not been processed, e.g. #' || Coalesce(MIN("s"."PersonID"), '') || '.'
 FROM

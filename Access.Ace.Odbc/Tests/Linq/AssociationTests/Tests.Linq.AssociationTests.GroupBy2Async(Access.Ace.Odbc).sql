@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[sub].[ParentID_1],
 	[sub].[ParentID],
@@ -23,7 +22,6 @@ FROM
 		INNER JOIN [Parent] [a_Parent1_1] ON ([sub].[ParentID] = [a_Parent1_1].[ParentID] AND [sub].[ParentID_1] = [a_Parent1_1].[ParentID])
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT DISTINCT
 	[a_Parent1].[ParentID]
 FROM

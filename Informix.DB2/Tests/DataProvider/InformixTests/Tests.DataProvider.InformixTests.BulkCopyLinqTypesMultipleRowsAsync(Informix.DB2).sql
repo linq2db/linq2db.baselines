@@ -529,7 +529,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 DELETE FROM
 	LinqDataTypes
 WHERE

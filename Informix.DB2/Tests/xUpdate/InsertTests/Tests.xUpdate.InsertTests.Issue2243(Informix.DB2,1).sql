@@ -36,7 +36,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT FIRST 2
 	t1.id,
 	t1.name,
@@ -62,7 +61,6 @@ WHERE
 	t1.id = @Id
 
 -- Informix.DB2 Informix
-
 SELECT FIRST 2
 	t1.id,
 	t1.name,

@@ -19,8 +19,8 @@ INSERT INTO "InsertFromWithConstantsTable"
 )
 VALUES
 (
-	CAST(@id1 AS Int),
-	CAST(@id3 AS Int),
+	@id1,
+	@id3,
 	(
 		SELECT
 			"r"."Value4"

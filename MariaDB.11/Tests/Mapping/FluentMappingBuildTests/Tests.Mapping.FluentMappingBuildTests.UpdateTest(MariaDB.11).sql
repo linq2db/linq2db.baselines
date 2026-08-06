@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 CREATE TABLE IF NOT EXISTS `FluentTemp_Update`
 (
 	`ID`       INT         NOT NULL,
@@ -45,6 +44,5 @@ WHERE
 	`t`.`ID` = 1
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DROP TABLE IF EXISTS `FluentTemp_Update`
 

@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	m_2.Id,
 	m_2.Id_1,
@@ -30,7 +29,6 @@ FROM
 		LEFT JOIN SubItem1 a_ParentSubItem ON d_1.ParentId = a_ParentSubItem.Id
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	m_2.Id,
 	d.Id,
@@ -49,7 +47,6 @@ FROM
 		INNER JOIN SubItem1 d ON m_2.Id = d.ParentId
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	m_2.Id,
 	d.Id,
@@ -68,7 +65,6 @@ FROM
 		INNER JOIN SubItem2 d ON m_2.Id = d.ParentId
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	m_1.Id,
 	m_1.Value
@@ -79,7 +75,6 @@ WHERE
 	m_1.Id > 1
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	m_2.Id,
 	m_2.Id_1,
@@ -110,7 +105,6 @@ FROM
 		LEFT JOIN SubItem1 a_ParentSubItem ON d_1.ParentId = a_ParentSubItem.Id
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	m_2.Id,
 	d.Id,
@@ -129,7 +123,6 @@ FROM
 		INNER JOIN SubItem1 d ON m_2.Id = d.ParentId
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	m_1.Id,
 	m_1.Value

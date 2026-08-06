@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 SELECT TOP (2)
 	[v].[Integer] / 33,
 	[v].[Decimal] / 33,

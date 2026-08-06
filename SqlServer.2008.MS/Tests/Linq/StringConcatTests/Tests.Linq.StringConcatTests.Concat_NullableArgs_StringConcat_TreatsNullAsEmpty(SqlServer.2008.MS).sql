@@ -1,12 +1,10 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[e].[Id]
 FROM
 	[ConcatTestEntity] [e]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[t1].[Id],
 	[t1].[Str1],

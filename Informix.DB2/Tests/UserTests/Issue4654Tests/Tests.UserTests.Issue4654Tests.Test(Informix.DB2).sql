@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	To_Char(c_1.Id),
 	c_1.Name

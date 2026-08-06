@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT TOP 1
 	[t].[ID],
 	[t].[MoneyValue],
@@ -28,7 +27,6 @@ WHERE
 	[LinqDataTypes].[ID] = 1
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 1
 	[t].[ID],
 	[t].[MoneyValue],

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 SELECT
 	[fact_1].[Id],
 	[t1].[Id],

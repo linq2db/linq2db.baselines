@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	CAST([p].[MoneyValue] AS Float)
 FROM

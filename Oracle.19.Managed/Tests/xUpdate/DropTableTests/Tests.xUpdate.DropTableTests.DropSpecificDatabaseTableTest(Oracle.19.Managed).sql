@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "DropTableTest"';
 EXCEPTION
@@ -10,7 +9,6 @@ EXCEPTION
 END;
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	sys_context('userenv', 'current_schema') as "c1"
 FROM
@@ -18,7 +16,6 @@ FROM
 FETCH NEXT 1 ROWS ONLY
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 CREATE TABLE "DropTableTest"
 (
 	ID Int NOT NULL,
@@ -27,7 +24,6 @@ CREATE TABLE "DropTableTest"
 )
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 INSERT INTO SYSTEM."DropTableTest"
 (
 	ID
@@ -38,18 +34,15 @@ VALUES
 )
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1.ID
 FROM
 	SYSTEM."DropTableTest" t1
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 DROP TABLE SYSTEM."DropTableTest"
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1.ID
 FROM

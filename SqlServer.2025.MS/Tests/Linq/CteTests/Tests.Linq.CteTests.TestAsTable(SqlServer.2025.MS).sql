@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
-
 WITH [CTE1_] ([ParentID], [ChildID])
 AS
 (
@@ -16,7 +15,6 @@ FROM
 	[CTE1_] [t2]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID]

@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."FirstName",
 	"t1"."PersonID",
@@ -10,7 +9,6 @@ FROM
 	"Person" "t1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"s"."FirstName"
 FROM

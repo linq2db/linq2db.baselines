@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "DropTableTest"';
 EXCEPTION
@@ -10,7 +9,6 @@ EXCEPTION
 END;
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	sys_context('userenv', 'current_schema')
 FROM
@@ -19,7 +17,6 @@ WHERE
 	ROWNUM <= 1
 
 -- Oracle.11.Managed Oracle11
-
 CREATE TABLE "DropTableTest"
 (
 	ID Int NOT NULL,
@@ -28,7 +25,6 @@ CREATE TABLE "DropTableTest"
 )
 
 -- Oracle.11.Managed Oracle11
-
 INSERT INTO TEST."DropTableTest"
 (
 	ID
@@ -39,18 +35,15 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1.ID
 FROM
 	TEST."DropTableTest" t1
 
 -- Oracle.11.Managed Oracle11
-
 DROP TABLE TEST."DropTableTest"
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1.ID
 FROM

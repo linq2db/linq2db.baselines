@@ -53,7 +53,6 @@ WHERE
 	[t].[ID] = 5000 AND DateAdd('d', ([t].[SmallIntValue] + ?) - ?, [t].[DateTimeValue]) > DateSerial(2018, 1, 2)
 
 -- Access.Ace.Odbc AccessODBC
-
 DELETE FROM
 	[LinqDataTypes] [t]
 WHERE

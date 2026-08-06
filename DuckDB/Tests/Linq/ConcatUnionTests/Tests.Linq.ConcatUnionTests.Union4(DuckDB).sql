@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	p.ParentID,
 	CAST(True AS BOOLEAN)

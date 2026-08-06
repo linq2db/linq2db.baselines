@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 DELETE FROM
 	[Child]
 WHERE
@@ -23,7 +22,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	COUNT(*)
 FROM
@@ -32,7 +30,6 @@ WHERE
 	[c_1].[ChildID] = 1001
 
 -- SQLite.MS SQLite
-
 DELETE FROM
 	[Child]
 WHERE

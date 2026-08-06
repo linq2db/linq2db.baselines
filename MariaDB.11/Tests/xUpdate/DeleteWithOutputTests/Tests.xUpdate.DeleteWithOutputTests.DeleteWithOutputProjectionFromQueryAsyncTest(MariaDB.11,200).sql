@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`s`.`Id`,
 	`s`.`Value`,
@@ -10,7 +9,6 @@ WHERE
 	`s`.`Id` > 3
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DELETE  
 FROM
 	`TableWithData`

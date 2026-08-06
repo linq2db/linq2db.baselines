@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	1 as "c1"
 FROM
@@ -7,7 +6,6 @@ FROM
 FETCH NEXT 1 ROWS ONLY
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	1 as "c1"
 FROM

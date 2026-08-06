@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`m_1`.`CategoryID`,
 	`d`.`ProductID`,
@@ -11,7 +10,6 @@ FROM
 		INNER JOIN `Products` `d` ON `m_1`.`CategoryID` = `d`.`CategoryID`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`CategoryID`,
 	`t1`.`CategoryName`,

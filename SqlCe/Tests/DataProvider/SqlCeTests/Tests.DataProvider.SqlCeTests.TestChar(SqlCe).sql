@@ -1,33 +1,25 @@
 ﻿-- SqlCe
-
 SELECT Cast('1' as nchar)
 
 -- SqlCe
-
 SELECT Cast('1' as nchar)
 
 -- SqlCe
-
 SELECT Cast('1' as nchar(20))
 
 -- SqlCe
-
 SELECT Cast('1' as nchar(20))
 
 -- SqlCe
-
 SELECT Cast('1' as nvarchar)
 
 -- SqlCe
-
 SELECT Cast('1' as nvarchar)
 
 -- SqlCe
-
 SELECT Cast('1' as nvarchar(20))
 
 -- SqlCe
-
 SELECT Cast('1' as nvarchar(20))
 
 -- SqlCe

@@ -1,11 +1,10 @@
-﻿-- PostgreSQL.18 PostgreSQL
-
+﻿-- PostgreSQL.18 PostgreSQL12
 DELETE FROM
 	"Person" t1
 WHERE
 	t1."PersonID" > 4
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL12
 DECLARE @FirstName Text(5) -- String
 SET     @FirstName = 'John0'
 DECLARE @LastName Text(7) -- String
@@ -32,7 +31,7 @@ VALUES
 RETURNING 
 	"PersonID"
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL12
 DECLARE @p Text(5) -- String
 SET     @p = 'John0'
 
@@ -48,7 +47,7 @@ WHERE
 	p."FirstName" = :p AND p."LastName" = 'Shepard'
 LIMIT 2
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL12
 DECLARE @FirstName Text(5) -- String
 SET     @FirstName = 'John1'
 DECLARE @LastName Text(7) -- String
@@ -75,7 +74,7 @@ VALUES
 RETURNING 
 	"PersonID"
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL12
 DECLARE @p Text(5) -- String
 SET     @p = 'John1'
 
@@ -91,8 +90,7 @@ WHERE
 	p."FirstName" = :p AND p."LastName" = 'Shepard'
 LIMIT 2
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 DELETE FROM
 	"Person" t1
 WHERE

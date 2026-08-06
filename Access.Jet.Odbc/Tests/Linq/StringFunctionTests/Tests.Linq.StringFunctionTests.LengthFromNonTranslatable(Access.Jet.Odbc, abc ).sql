@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[t].[Str],
 	Len([t].[Str]),
@@ -8,7 +7,6 @@ FROM
 	[TestLengthModel] [t]
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Str]

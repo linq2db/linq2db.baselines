@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 INSERT INTO Issue1373Tests
 (
 	Id,
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 INSERT INTO Issue1373Tests
 (
 	Id,
@@ -25,7 +23,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 INSERT INTO Issue1373Tests
 (
 	Id,
@@ -38,7 +35,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1.Field1

@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	t."ID",
 	t."MoneyValue",
@@ -17,7 +16,7 @@ WHERE
 	t."ID" = 1
 LIMIT 1
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DECLARE @dt Timestamp -- DateTime2
 SET     @dt = '2010-12-14 05:00:07.425'::timestamp
 
@@ -28,8 +27,7 @@ SET
 WHERE
 	"LinqDataTypes"."ID" = 1
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	t."ID",
 	t."MoneyValue",
@@ -47,7 +45,7 @@ WHERE
 	t."ID" = 1
 LIMIT 1
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DECLARE @pdt Timestamp -- DateTime2
 SET     @pdt = '2001-01-11 01:11:21.100'::timestamp
 

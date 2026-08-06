@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[g_1].[StatsTypeId],
 	[st].[FullName],

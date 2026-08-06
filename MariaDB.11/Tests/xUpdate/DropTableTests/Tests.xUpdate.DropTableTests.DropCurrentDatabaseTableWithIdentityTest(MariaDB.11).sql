@@ -1,9 +1,7 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DROP TABLE IF EXISTS `DropTableTestID`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 CREATE TABLE `DropTableTestID`
 (
 	`ID`  INT AUTO_INCREMENT NOT NULL,
@@ -13,7 +11,6 @@ CREATE TABLE `DropTableTestID`
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `DropTableTestID`
 (
 	`ID1`
@@ -24,7 +21,6 @@ VALUES
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t`.`ID`,
 	`t`.`ID1`
@@ -32,11 +28,9 @@ FROM
 	`DropTableTestID` `t`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DROP TABLE `DropTableTestID`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`ID`,
 	`t1`.`ID1`

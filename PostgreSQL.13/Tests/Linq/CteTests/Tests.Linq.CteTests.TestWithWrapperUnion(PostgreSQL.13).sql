@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
-
+﻿-- PostgreSQL.13 PostgreSQL12
 WITH "CTE_1"
 (
 	"Child_ParentID",
@@ -37,8 +36,7 @@ SELECT
 FROM
 	"CTE_1" t1
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 WITH "CTE_1"
 (
 	"Child_ParentID",

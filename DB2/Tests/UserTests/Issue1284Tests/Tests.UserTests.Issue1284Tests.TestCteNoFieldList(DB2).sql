@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 WITH "cte"
 (
 	"FirstName",
@@ -29,7 +28,6 @@ FROM
 	"cte" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"x"."FirstName",
 	"x"."PersonID",

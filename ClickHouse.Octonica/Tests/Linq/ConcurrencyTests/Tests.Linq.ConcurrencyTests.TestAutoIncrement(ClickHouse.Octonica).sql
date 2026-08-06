@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 INSERT INTO ConcurrencyAutoIncrement
 (
 	Id,
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Stamp,
@@ -23,7 +21,6 @@ FROM
 	ConcurrencyAutoIncrement t1
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	ConcurrencyAutoIncrement
 UPDATE
@@ -33,7 +30,6 @@ WHERE
 	Id = 1 AND Stamp = -10
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Stamp,
@@ -42,7 +38,6 @@ FROM
 	ConcurrencyAutoIncrement t1
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	ConcurrencyAutoIncrement
 UPDATE
@@ -52,7 +47,6 @@ WHERE
 	Id = 1 AND Stamp = -9
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Stamp,
@@ -61,7 +55,6 @@ FROM
 	ConcurrencyAutoIncrement t1
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	ConcurrencyAutoIncrement
 UPDATE
@@ -71,7 +64,6 @@ WHERE
 	Id = 1 AND Stamp = -9
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Stamp,
@@ -80,14 +72,12 @@ FROM
 	ConcurrencyAutoIncrement t1
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	ConcurrencyAutoIncrement
 DELETE WHERE
 	Id = 1 AND Stamp = -9
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Stamp,
@@ -96,14 +86,12 @@ FROM
 	ConcurrencyAutoIncrement t1
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	ConcurrencyAutoIncrement
 DELETE WHERE
 	Id = 1 AND Stamp = -8
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Stamp,

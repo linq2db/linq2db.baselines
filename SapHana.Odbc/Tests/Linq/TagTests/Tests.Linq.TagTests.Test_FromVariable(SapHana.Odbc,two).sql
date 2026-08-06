@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 /* two */
 SELECT
 	"x"."FirstName",

@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 INSERT INTO `Issue3323Table`
 (
 	`Id`,
@@ -16,7 +15,6 @@ VALUES
 )
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`r`.`Id`,
 	CONCAT(Coalesce(`r`.`FirstName`, ''), ' ', Coalesce(`r`.`LastName`, ''))
@@ -30,7 +28,6 @@ FROM
 	`Issue3323Table` `r_1`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`r`.`Id` + 1,
 	`r`.`Text`

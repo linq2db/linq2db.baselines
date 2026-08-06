@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
-
 INSERT INTO [Parent]
 (
 	[ParentID]
@@ -10,7 +9,6 @@ VALUES
 )
 
 -- SqlServer.2008.MS SqlServer.2008
-
 INSERT INTO [Child]
 (
 	[ChildID],
@@ -37,7 +35,6 @@ WHERE
 	[child_1].[ChildID] = 10000
 
 -- SqlServer.2008.MS SqlServer.2008
-
 DELETE [x]
 FROM
 	[Child] [x]
@@ -45,7 +42,6 @@ WHERE
 	[x].[ChildID] = 10000
 
 -- SqlServer.2008.MS SqlServer.2008
-
 DELETE [x]
 FROM
 	[Parent] [x]

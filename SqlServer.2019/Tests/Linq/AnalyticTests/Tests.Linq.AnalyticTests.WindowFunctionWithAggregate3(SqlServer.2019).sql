@@ -11,7 +11,7 @@ FROM
 		SELECT
 			[g_1].[ParentID] as [Key_1],
 			COUNT(*) as [aggregate_1],
-			COUNT(*) OVER() as [window_1]
+			COUNT(*) OVER () as [window_1]
 		FROM
 			[Child] [g_1]
 		GROUP BY

@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT FIRST 2
 	"t1"."InId",
 	CASE
@@ -17,7 +16,6 @@ WHERE
 	"t1"."InId" = 1
 
 -- Firebird.2.5 Firebird
-
 SELECT FIRST 2
 	"t1"."InId",
 	CASE

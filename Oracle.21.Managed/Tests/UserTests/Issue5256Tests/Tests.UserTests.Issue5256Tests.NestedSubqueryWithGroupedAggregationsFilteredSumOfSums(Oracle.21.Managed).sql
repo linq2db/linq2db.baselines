@@ -1,5 +1,4 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	product_1."Id",
 	(
@@ -21,7 +20,6 @@ FROM
 	"Product" product_1
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Name"
@@ -29,7 +27,6 @@ FROM
 	"Product" t1
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."ProductId",

@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	CASE
 		WHEN p.ParentID % 2 = 0 THEN p.ParentID % 3 = 0
@@ -10,7 +9,6 @@ FROM
 	Parent p
 
 -- DuckDB
-
 SELECT
 	m_1.ParentID,
 	d.ParentID,
@@ -25,7 +23,6 @@ FROM
 		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 -- DuckDB
-
 SELECT
 	t1.ParentID,
 	t1.Value1

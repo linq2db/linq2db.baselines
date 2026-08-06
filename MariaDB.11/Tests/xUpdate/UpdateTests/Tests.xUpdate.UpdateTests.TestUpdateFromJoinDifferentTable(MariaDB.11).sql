@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 UPDATE
 	`gt_s_one_target` `t2`,
 	`gt_s_one` `x`

@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	p.Id,
 	p.Text
@@ -7,10 +6,9 @@ FROM
 	Issue2816Table p
 WHERE
 	p.Text IS NULL OR LTRIM(p.Text, '	
-                 　') = ''
+                  　') = ''
 
 -- DuckDB
-
 SELECT
 	t1.Id,
 	t1.Text

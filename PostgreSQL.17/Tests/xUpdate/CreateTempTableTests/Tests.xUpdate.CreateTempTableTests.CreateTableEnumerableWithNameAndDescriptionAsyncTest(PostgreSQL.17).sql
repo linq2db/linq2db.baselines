@@ -1,9 +1,7 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 DROP TABLE IF EXISTS "TempTable"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 CREATE TEMPORARY TABLE IF NOT EXISTS "TempTable"
 (
 	"Name" text NOT NULL,
@@ -12,8 +10,7 @@ CREATE TEMPORARY TABLE IF NOT EXISTS "TempTable"
 )
 ON COMMIT PRESERVE ROWS
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 INSERT INTO "TempTable"
 (
 	"Name"
@@ -21,15 +18,13 @@ INSERT INTO "TempTable"
 VALUES
 ('John')
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t."Name"
 FROM
 	"Person" p
 		INNER JOIN "TempTable" t ON p."FirstName" = t."Name"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 DROP TABLE IF EXISTS "TempTable"
 

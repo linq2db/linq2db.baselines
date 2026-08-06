@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 INSERT INTO Issue1622Table
 (
 	Id,
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	e.Id,
 	e.SomeText
@@ -23,7 +21,6 @@ WHERE
 LIMIT 2
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	e.Id,
 	e.SomeText

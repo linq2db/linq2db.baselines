@@ -16,7 +16,6 @@ VALUES
 )
 
 -- Access.Ace.OleDb AccessOleDb
-
 UPDATE
 	[Parent] [t]
 SET
@@ -26,7 +25,6 @@ WHERE
 
 CommitTransaction
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT TOP 1
 	[t].[ParentID],
 	[t].[Value1]

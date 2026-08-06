@@ -48,7 +48,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[ID],
 	[t1].[MoneyValue],
@@ -67,7 +66,6 @@ WHERE
 LIMIT 1
 
 -- SQLite.MS SQLite
-
 DELETE FROM
 	[LinqDataTypes]
 WHERE

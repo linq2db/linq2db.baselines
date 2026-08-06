@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"m_1"."Id",
 	"d"."Id",
@@ -15,7 +14,6 @@ FROM
 		INNER JOIN "EntityD" "d" ON "m_1"."Id" = "d".FK
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1".FK,

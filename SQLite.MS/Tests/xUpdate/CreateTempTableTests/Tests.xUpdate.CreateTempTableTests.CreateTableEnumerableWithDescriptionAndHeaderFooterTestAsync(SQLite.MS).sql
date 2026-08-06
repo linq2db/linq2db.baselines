@@ -1,9 +1,7 @@
 ﻿-- SQLite.MS SQLite
-
 DROP TABLE IF EXISTS [TempTable]
 
 -- SQLite.MS SQLite
-
 /* THIS IS ASYNC HEADER*/ CREATE TABLE [TempTable]
 (
 	[Name] NVarChar(20) NOT NULL
@@ -11,7 +9,6 @@ DROP TABLE IF EXISTS [TempTable]
 /* THIS IS ASYNC FOOTER*/
 
 -- SQLite.MS SQLite
-
 INSERT INTO [TempTable]
 (
 	[Name]
@@ -20,7 +17,6 @@ VALUES
 ('John')
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t].[Name]
 FROM
@@ -28,6 +24,5 @@ FROM
 		INNER JOIN [TempTable] [t] ON [p].[FirstName] = [t].[Name]
 
 -- SQLite.MS SQLite
-
 DROP TABLE IF EXISTS [TempTable]
 

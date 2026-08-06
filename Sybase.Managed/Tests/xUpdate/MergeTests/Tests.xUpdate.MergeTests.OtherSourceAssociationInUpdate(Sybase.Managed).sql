@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 MERGE INTO [Person] [Target]
 USING (
 	SELECT
@@ -24,11 +23,10 @@ ON ([Target].[PersonID] = [Source].[ID] AND [Source].[FirstName] = 'first 4')
 WHEN MATCHED THEN
 UPDATE
 SET
-	[MiddleName] = 'first ' + Coalesce([Source].[Patient_Diagnosis], ''),
-	[LastName] = 'last ' + Coalesce([Source].[Patient_Diagnosis_1], '')
+	[MiddleName] = 'first ' || Coalesce([Source].[Patient_Diagnosis], ''),
+	[LastName] = 'last ' || Coalesce([Source].[Patient_Diagnosis_1], '')
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

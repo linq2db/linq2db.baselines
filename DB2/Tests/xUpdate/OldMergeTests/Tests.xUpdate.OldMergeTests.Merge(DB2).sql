@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1".ID,
 	"t1"."MoneyValue",
@@ -15,7 +14,6 @@ FROM
 	"LinqDataTypes" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 MERGE INTO "LinqDataTypes" "Target"
 USING (
 	SELECT

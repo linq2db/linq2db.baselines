@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"x"."Id",
 	"x"."Value"
@@ -10,7 +9,6 @@ WHERE
 FETCH NEXT 1 ROWS ONLY
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"x"."Id",
 	"x"."Value"

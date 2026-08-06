@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained.MS SqlServer.2019
-
 INSERT INTO [Issue4717Address]
 (
 	[Id],
@@ -18,7 +17,6 @@ VALUES
 )
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 INSERT INTO [Issue4717Warehouse]
 (
 	[Id],
@@ -33,7 +31,6 @@ VALUES
 )
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 INSERT INTO [Issue4717UnitOfMeasure]
 (
 	[Id],

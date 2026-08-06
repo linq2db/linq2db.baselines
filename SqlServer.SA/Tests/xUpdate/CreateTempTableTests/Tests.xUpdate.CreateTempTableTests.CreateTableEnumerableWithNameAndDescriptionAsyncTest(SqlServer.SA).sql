@@ -1,9 +1,7 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#TempTable]
 
 -- SqlServer.SA SqlServer.2019
-
 IF (OBJECT_ID(N'[tempdb]..[#TempTable]', N'U') IS NULL)
 	CREATE TABLE [tempdb]..[#TempTable]
 	(
@@ -15,7 +13,6 @@ IF (OBJECT_ID(N'[tempdb]..[#TempTable]', N'U') IS NULL)
 INSERT ASYNC BULK [tempdb]..[#TempTable](Name)
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t].[Name]
 FROM
@@ -23,6 +20,5 @@ FROM
 		INNER JOIN [tempdb]..[#TempTable] [t] ON [p].[FirstName] = [t].[Name]
 
 -- SqlServer.SA SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#TempTable]
 

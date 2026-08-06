@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 SELECT
 	[r].[Id],
 	N'Element ' + CAST([r].[NText] AS NVarChar(Max)) + N' Text1',

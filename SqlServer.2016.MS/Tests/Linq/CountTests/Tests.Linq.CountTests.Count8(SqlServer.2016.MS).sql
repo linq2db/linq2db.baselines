@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	COUNT(*)
 FROM
@@ -9,7 +8,6 @@ WHERE
 	[a_Parent].[ParentID] = 1
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	COUNT(*)
 FROM
@@ -19,7 +17,6 @@ WHERE
 	[a_Parent].[ParentID] = 1
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	[a_Parent].[ParentID]
 FROM

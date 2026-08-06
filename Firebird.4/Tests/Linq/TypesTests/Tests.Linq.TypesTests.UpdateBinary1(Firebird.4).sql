@@ -10,7 +10,6 @@ WHERE
 	"t".ID = 1
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t"."BinaryValue"
 FROM

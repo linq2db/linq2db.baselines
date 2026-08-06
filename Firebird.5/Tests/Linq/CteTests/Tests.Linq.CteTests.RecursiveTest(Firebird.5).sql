@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 WITH RECURSIVE MY_CTE ("ChildID", "ParentID", "GrandChildID")
 AS
 (

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014
-
 SELECT
 	[p].[ChildID],
 	IIF(EXISTS(

@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 6
 DECLARE @Title Text(5) -- String
@@ -19,8 +19,7 @@ VALUES
 	:Text
 )
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	m_1."Id",
 	d."Id"
@@ -36,8 +35,7 @@ FROM
 	) m_1
 		INNER JOIN "Message" d ON m_1."Id" = d."TopicId"
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	x."Id",
 	x."Title",

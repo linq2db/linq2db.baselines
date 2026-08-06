@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 WITH [cte]
 (
 	[FirstName],
@@ -29,7 +28,6 @@ FROM
 	[cte] [t1]
 
 -- SqlServer.2022
-
 SELECT
 	[x].[FirstName],
 	[x].[PersonID],

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 SELECT
 	[a_ChildPredicate].[ParentID],
 	[a_ChildPredicate].[ChildID]

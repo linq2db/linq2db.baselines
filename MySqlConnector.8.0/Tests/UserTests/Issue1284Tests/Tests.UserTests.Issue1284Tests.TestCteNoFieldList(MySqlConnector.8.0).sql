@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 WITH `cte`
 (
 	`FirstName`,
@@ -29,7 +28,6 @@ FROM
 	`cte` `t1`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`x`.`FirstName`,
 	`x`.`PersonID`,

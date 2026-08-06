@@ -1,12 +1,10 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DELETE FROM
 	"Parent" p
 WHERE
 	p."ParentID" > 1000
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 INSERT INTO "Parent"
 (
 	"ParentID",
@@ -30,8 +28,7 @@ FROM
 			"GrandChild" c_2
 	) t1
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -39,8 +36,7 @@ FROM
 WHERE
 	c_1."ParentID" > 1000
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DELETE FROM
 	"Parent" p
 WHERE

@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 /* My Test */
 SELECT
 	x.FirstName,

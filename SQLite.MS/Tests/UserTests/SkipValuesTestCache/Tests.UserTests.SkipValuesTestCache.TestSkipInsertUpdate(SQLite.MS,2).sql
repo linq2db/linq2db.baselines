@@ -20,7 +20,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t].[Id],
 	[t].[Name],
@@ -48,7 +47,6 @@ WHERE
 	[PR_1598_Insert_Table_Cache].[Id] = @Id
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t].[Id],
 	[t].[Name],

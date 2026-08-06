@@ -1,9 +1,7 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 DROP TABLE IF EXISTS TestTable
 
 -- ClickHouse.Octonica ClickHouse
-
 CREATE TABLE TestTable
 (
 	ID        Int32,
@@ -17,7 +15,6 @@ ENGINE = MergeTree()
 ORDER BY ID
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.ID,
 	t1.Field1,
@@ -27,6 +24,5 @@ FROM
 	TestTable t1
 
 -- ClickHouse.Octonica ClickHouse
-
 DROP TABLE TestTable
 

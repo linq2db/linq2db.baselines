@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 INSERT INTO `Issue1303`
 (
 	`ID`,
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`t1`.`ID`,
 	`t1`.`Array`,
@@ -26,7 +24,6 @@ WHERE
 LIMIT 2
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`t1`.`ID`,
 	`t1`.`Array`,
@@ -38,7 +35,6 @@ WHERE
 LIMIT 2
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`t1`.`ID`,
 	`t1`.`Array`,

@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 MERGE INTO TestTable Target
 USING (
 	SELECT

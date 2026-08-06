@@ -1,11 +1,10 @@
-﻿-- PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.15 PostgreSQL12
 SELECT
 	MAX(t1."PersonID")
 FROM
 	"Person" t1
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL12
 DECLARE @Gender Text(1) -- String
 SET     @Gender = 'M'
 DECLARE @Name_FirstName Text(2) -- String
@@ -30,8 +29,7 @@ VALUES
 	:Name_LastName
 )
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	p."PersonID",
 	p."FirstName",
@@ -44,8 +42,7 @@ WHERE
 	p."PersonID" > 4
 LIMIT 2
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 DELETE FROM
 	"Person" t
 WHERE

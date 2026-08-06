@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[t1].[ParentID],
 	(
@@ -22,14 +21,12 @@ FROM
 	[Parent] [t1]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	COUNT(*)
 FROM
 	[Parent] [t1]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[x_1].[ParentID],
 	[x_1].[CountResult],

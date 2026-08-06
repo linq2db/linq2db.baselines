@@ -4,7 +4,7 @@ SET     @p = '1'
 
 SELECT
 	[r].[FirstName],
-	[r].[PersonID] as [ID],
+	[r].[PersonID],
 	[r].[LastName],
 	[r].[MiddleName],
 	[r].[Gender]
@@ -14,10 +14,9 @@ WHERE
 	[r].[FirstName] = @p
 
 -- SqlCe
-
 SELECT
 	[r].[FirstName],
-	[r].[PersonID] as [ID],
+	[r].[PersonID],
 	[r].[LastName],
 	[r].[MiddleName],
 	[r].[Gender]
@@ -32,7 +31,7 @@ SET     @p = '1'
 
 SELECT
 	[r].[FirstName],
-	[r].[PersonID] as [ID],
+	[r].[PersonID],
 	[r].[LastName],
 	[r].[MiddleName],
 	[r].[Gender]

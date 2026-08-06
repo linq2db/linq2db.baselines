@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016
-
 SELECT
 	[i].[Id],
 	IIF([a_SubData].[Id] IS NULL, NULL, (

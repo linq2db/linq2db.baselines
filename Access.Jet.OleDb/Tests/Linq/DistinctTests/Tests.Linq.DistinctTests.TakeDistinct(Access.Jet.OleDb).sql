@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT DISTINCT
 	[t1].[ParentID]
 FROM

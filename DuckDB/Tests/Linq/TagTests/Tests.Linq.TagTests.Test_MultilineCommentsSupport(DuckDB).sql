@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 /* My custom
 wonderful multiline
 query tag */

@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT DISTINCT
 	"gc"."GrandChildID",
 	"a_Parent"."Value1"
@@ -11,7 +10,6 @@ ORDER BY
 	"gc"."GrandChildID"
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1"."ParentID",
 	"t1"."ChildID",

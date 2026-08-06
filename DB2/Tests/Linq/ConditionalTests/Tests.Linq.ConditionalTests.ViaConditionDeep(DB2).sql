@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"x"."Id",
 	CAST("x"."StringProp" = '1' OR "x"."StringProp" IS NULL AS smallint),
@@ -26,7 +25,6 @@ WHERE
 	END = 2
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."StringProp"

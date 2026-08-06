@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	SUM(grp_1."MoneyValue"),
 	grp_1."Year_1",

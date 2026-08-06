@@ -1,11 +1,10 @@
-﻿-- PostgreSQL.18 PostgreSQL
-
+﻿-- PostgreSQL.18 PostgreSQL12
 DELETE FROM
 	"LinqDataTypes" t
 WHERE
 	t."ID" > 1000
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL12
 DECLARE @arr Bytea -- Binary
 SET     @arr = NULL
 
@@ -22,8 +21,7 @@ VALUES
 	:arr
 )
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	t."ID",
 	t."MoneyValue",
@@ -38,8 +36,7 @@ WHERE
 	t."ID" = 1001
 LIMIT 2
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 DELETE FROM
 	"LinqDataTypes" t
 WHERE

@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 MERGE INTO Person Target
 USING (
 	SELECT
@@ -28,7 +27,6 @@ SET
 	LastName = 'last ' || Coalesce(Source.Patient_Diagnosis_1, '')
 
 -- DuckDB
-
 SELECT
 	t1.FirstName,
 	t1.PersonID,

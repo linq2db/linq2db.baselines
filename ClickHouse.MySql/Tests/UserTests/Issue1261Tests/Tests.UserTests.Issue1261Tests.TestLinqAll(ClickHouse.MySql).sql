@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	NOT EXISTS(
 		SELECT
@@ -11,7 +10,6 @@ SELECT
 	)
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	NOT EXISTS(
 		SELECT

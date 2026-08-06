@@ -1,10 +1,8 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
-
 IF (OBJECT_ID(N'[TestTable]', N'U') IS NOT NULL)
 	DROP TABLE [TestTable]
 
 -- SqlServer.2005.MS SqlServer.2005
-
 CREATE TABLE [TestTable]
 (
 	[ID]        Int             NOT NULL IDENTITY,
@@ -16,7 +14,6 @@ CREATE TABLE [TestTable]
 )
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[t1].[ID],
 	[t1].[Field1],
@@ -26,6 +23,5 @@ FROM
 	[TestTable] [t1]
 
 -- SqlServer.2005.MS SqlServer.2005
-
 DROP TABLE [TestTable]
 

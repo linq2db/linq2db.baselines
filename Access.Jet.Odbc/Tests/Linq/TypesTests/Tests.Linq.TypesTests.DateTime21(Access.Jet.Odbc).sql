@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 SELECT TOP 1
 	[t].[ID],
 	[t].[MoneyValue],
@@ -28,7 +27,6 @@ WHERE
 	[t].[ID] = 1
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT TOP 1
 	[t].[ID],
 	[t].[MoneyValue],

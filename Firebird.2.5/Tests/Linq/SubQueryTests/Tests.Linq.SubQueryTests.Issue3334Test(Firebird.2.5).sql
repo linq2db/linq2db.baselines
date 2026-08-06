@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT FIRST 1
 	"entity1"."FirstName",
 	"entity1"."PersonID",

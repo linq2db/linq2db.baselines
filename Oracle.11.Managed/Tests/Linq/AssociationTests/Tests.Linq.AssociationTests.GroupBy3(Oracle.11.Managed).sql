@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT DISTINCT
 	EXTRACT(YEAR FROM a_Types."DateTimeValue")
 FROM

@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 INSERT INTO SimpleBulkCopyTable
 (
 	Id

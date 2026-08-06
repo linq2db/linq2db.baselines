@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 WITH CTE_1
 (
 	"entry_ID",
@@ -31,7 +30,6 @@ WHERE
 	"x"."entry_ID" = 1
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"x"."FirstName",
 	"x"."PersonID",

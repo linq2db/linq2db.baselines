@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[contract].[Id],
 	[servProj].[IdContract]

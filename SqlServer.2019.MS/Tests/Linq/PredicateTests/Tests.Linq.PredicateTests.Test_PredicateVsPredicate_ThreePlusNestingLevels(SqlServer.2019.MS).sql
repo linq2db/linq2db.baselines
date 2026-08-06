@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -12,7 +11,6 @@ WHERE
 	IIF(IIF([r].[Value1] <> [r].[Value2], 1, 0) = IIF([r].[Value1] = [r].[Value4], 1, 0), 1, 0) = IIF(IIF([r].[Value4] = [r].[Value5] OR [r].[Value4] IS NULL AND [r].[Value5] IS NULL, 1, 0) = IIF([r].[Value2] <> [r].[Value4] OR [r].[Value4] IS NULL, 1, 0), 1, 0)
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -23,7 +21,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -36,7 +33,6 @@ WHERE
 	IIF([r].[Value1] = [r].[Value2], 1, 0) <> IIF([r].[Value4] <> [r].[Value1] OR [r].[Value4] IS NULL, 1, 0)
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -47,7 +43,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -60,7 +55,6 @@ WHERE
 	IIF([r].[Value1] = [r].[Value2], 1, 0) <> IIF([r].[Value4] = [r].[Value1], 1, 0)
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -71,7 +65,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -84,7 +77,6 @@ WHERE
 	IIF([r].[Value1] = [r].[Value2], 1, 0) <> IIF([r].[Value4] = [r].[Value1], 1, 0)
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -95,7 +87,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -108,7 +99,6 @@ WHERE
 	IIF([r].[Value1] = [r].[Value2], 1, 0) <> IIF([r].[Value4] <> [r].[Value1] OR [r].[Value4] IS NULL, 1, 0)
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -119,7 +109,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -132,7 +121,6 @@ WHERE
 	IIF(IIF([r].[Value1] = [r].[Value2], 1, 0) = IIF([r].[Value2] <> [r].[Value4] OR [r].[Value4] IS NULL, 1, 0), 1, 0) = IIF([r].[Value1] = [r].[Value4], 1, 0)
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -143,7 +131,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -156,7 +143,6 @@ WHERE
 	IIF(IIF([r].[Value1] <> [r].[Value2], 1, 0) <> IIF([r].[Value2] = [r].[Value5], 1, 0), 1, 0) <> IIF(IIF([r].[Value4] <> [r].[Value1] OR [r].[Value4] IS NULL, 1, 0) = IIF([r].[Value4] = [r].[Value5] OR [r].[Value4] IS NULL AND [r].[Value5] IS NULL, 1, 0), 1, 0)
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],

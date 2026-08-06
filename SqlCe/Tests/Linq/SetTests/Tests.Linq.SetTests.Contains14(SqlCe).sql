@@ -14,7 +14,7 @@ SELECT
 		)
 			THEN 1
 		ELSE 0
-	END as [c1]
+	END
 
 -- SqlCe
 DECLARE @ParentID Int -- Int32
@@ -32,5 +32,5 @@ SELECT
 		)
 			THEN 1
 		ELSE 0
-	END as [c1]
+	END
 

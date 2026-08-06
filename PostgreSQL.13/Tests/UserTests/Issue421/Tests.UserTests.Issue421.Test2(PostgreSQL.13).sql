@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
-
+﻿-- PostgreSQL.13 PostgreSQL12
 INSERT INTO "BlobClass"
 (
 	"Id",
@@ -11,8 +10,7 @@ VALUES
 	E'\\x010203'::bytea
 )
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."BlobValue"
@@ -22,8 +20,7 @@ WHERE
 	t1."Id" = 1
 LIMIT 1
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 UPDATE
 	"BlobClass"
 SET
@@ -31,8 +28,7 @@ SET
 WHERE
 	"BlobClass"."Id" = 1
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."BlobValue"

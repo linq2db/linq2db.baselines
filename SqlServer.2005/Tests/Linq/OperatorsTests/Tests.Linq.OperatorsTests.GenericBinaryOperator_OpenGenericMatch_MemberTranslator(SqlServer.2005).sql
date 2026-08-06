@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 SELECT
 	[r].[Id],
 	[r].[IntHolder],

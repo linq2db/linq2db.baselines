@@ -16,7 +16,6 @@ VALUES
 )
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."BlobValue"
@@ -27,7 +26,6 @@ WHERE
 FETCH NEXT 1 ROWS ONLY
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."BlobValue"

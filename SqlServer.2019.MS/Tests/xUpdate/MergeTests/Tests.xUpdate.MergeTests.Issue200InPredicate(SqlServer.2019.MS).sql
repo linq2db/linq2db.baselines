@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2019.MS SqlServer.2019
-
 DELETE [t1]
 FROM
 	[AllTypes2] [t1]
@@ -36,7 +35,6 @@ VALUES
 ;
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[ID],
 	[t1].[datetimeoffsetDataType],

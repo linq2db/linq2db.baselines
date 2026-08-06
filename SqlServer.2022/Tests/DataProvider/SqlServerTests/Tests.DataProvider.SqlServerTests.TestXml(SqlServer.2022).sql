@@ -1,13 +1,10 @@
 ﻿-- SqlServer.2022
-
 SELECT Cast('<xml/>' as xml)
 
 -- SqlServer.2022
-
 SELECT Cast('<xml/>' as xml)
 
 -- SqlServer.2022
-
 SELECT Cast('<xml/>' as xml)
 
 -- SqlServer.2022

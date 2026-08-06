@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.15 PostgreSQL12
 INSERT INTO test_insert_or_replace AS t1
 (
 	id,
@@ -12,8 +11,7 @@ VALUES
 )
 ON CONFLICT (id) DO NOTHING
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 INSERT INTO test_insert_or_replace AS t1
 (
 	id,

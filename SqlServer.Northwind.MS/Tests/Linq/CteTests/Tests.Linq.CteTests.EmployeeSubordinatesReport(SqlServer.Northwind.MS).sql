@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Northwind.MS SqlServer.2019
-
 WITH [EmployeeSubordinatesReport]
 (
 	[ReportsTo],
@@ -38,7 +37,6 @@ FROM
 		LEFT JOIN [EmployeeSubordinatesReport] [manager] ON [employee].[ReportsTo] = [manager].[EmployeeID]
 
 -- SqlServer.Northwind.MS SqlServer.2019
-
 SELECT
 	[employee].[LastName],
 	[employee].[FirstName],

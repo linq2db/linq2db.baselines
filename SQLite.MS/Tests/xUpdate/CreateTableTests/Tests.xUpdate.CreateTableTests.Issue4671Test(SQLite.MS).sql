@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 CREATE TEMPORARY TABLE temp.[Issue4671EntityTMP]
 (
 	[Id]    INTEGER  NOT NULL PRIMARY KEY AUTOINCREMENT,
@@ -7,7 +6,6 @@ CREATE TEMPORARY TABLE temp.[Issue4671EntityTMP]
 )
 
 -- SQLite.MS SQLite
-
 INSERT INTO [Issue4671Entity]
 (
 	[Value]
@@ -18,7 +16,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 INSERT INTO temp.[Issue4671EntityTMP]
 (
 	[Value]
@@ -29,7 +26,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -38,7 +34,6 @@ FROM
 LIMIT 2
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -47,6 +42,5 @@ FROM
 LIMIT 2
 
 -- SQLite.MS SQLite
-
 DROP TABLE IF EXISTS temp.[Issue4671EntityTMP]
 

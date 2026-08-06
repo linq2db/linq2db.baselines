@@ -11,7 +11,6 @@ FROM
 LIMIT @take
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID]

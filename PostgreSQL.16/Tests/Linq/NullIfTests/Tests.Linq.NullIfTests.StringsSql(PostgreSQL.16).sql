@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	NULLIF(s."String", 'abc')
 FROM
@@ -7,8 +6,7 @@ FROM
 ORDER BY
 	s."Int"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -16,8 +14,7 @@ FROM
 WHERE
 	s."String" = 'abc' OR s."String" IS NULL
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -25,8 +22,7 @@ FROM
 WHERE
 	NOT (s."String" = 'abc' OR s."String" IS NULL)
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	NULLIF(s."String", 'xyz')
 FROM
@@ -34,8 +30,7 @@ FROM
 ORDER BY
 	s."Int"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -43,8 +38,7 @@ FROM
 WHERE
 	s."String" = 'xyz' OR s."String" IS NULL
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -52,8 +46,7 @@ FROM
 WHERE
 	NOT (s."String" = 'xyz' OR s."String" IS NULL)
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	s."String"
 FROM
@@ -61,8 +54,7 @@ FROM
 ORDER BY
 	s."Int"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -70,8 +62,7 @@ FROM
 WHERE
 	s."String" IS NULL
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -79,8 +70,7 @@ FROM
 WHERE
 	s."String" IS NOT NULL
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	NULLIF(s."NullableString", 'abc')
 FROM
@@ -88,8 +78,7 @@ FROM
 ORDER BY
 	s."Int"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -97,8 +86,7 @@ FROM
 WHERE
 	s."NullableString" = 'abc' OR s."NullableString" IS NULL
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -106,8 +94,7 @@ FROM
 WHERE
 	NOT (s."NullableString" = 'abc' OR s."NullableString" IS NULL)
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	NULLIF(s."NullableString", 'xyz')
 FROM
@@ -115,8 +102,7 @@ FROM
 ORDER BY
 	s."Int"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -124,8 +110,7 @@ FROM
 WHERE
 	s."NullableString" = 'xyz' OR s."NullableString" IS NULL
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -133,8 +118,7 @@ FROM
 WHERE
 	NOT (s."NullableString" = 'xyz' OR s."NullableString" IS NULL)
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	s."NullableString"
 FROM
@@ -142,8 +126,7 @@ FROM
 ORDER BY
 	s."Int"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM
@@ -151,8 +134,7 @@ FROM
 WHERE
 	s."NullableString" IS NULL
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	COUNT(*)
 FROM

@@ -16,7 +16,6 @@ VALUES
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`e`.`Id`,
 	`e`.`SomeText`
@@ -27,7 +26,6 @@ WHERE
 LIMIT 2
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`e`.`Id`,
 	`e`.`SomeText`

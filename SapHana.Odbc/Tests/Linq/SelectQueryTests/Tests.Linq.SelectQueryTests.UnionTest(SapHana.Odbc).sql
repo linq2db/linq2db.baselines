@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	Add_Days(CURRENT_TIMESTAMP, "t"."Value"),
 	Add_Days(CURRENT_TIMESTAMP, 2)
@@ -14,7 +13,6 @@ SELECT
 FROM DUMMY
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"v_1"."Value2"
 FROM

@@ -31,7 +31,6 @@ WHERE
 	`c_1`.`ChildID` > 1000
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DELETE  
 FROM
 	`Child`

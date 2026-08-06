@@ -11,7 +11,6 @@ WHERE
 	[c_1].[ParentID] = @id AND [c_1].[Value1] IS NULL
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

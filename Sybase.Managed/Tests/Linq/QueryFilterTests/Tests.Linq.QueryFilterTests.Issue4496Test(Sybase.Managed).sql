@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT DISTINCT
 	[x].[ParentID],
 	[x].[ChildID]
@@ -10,7 +9,6 @@ WHERE
 	[x].[ChildID] > 30
 
 -- Sybase.Managed Sybase
-
 SELECT DISTINCT
 	[x].[ParentID],
 	[x].[ChildID]

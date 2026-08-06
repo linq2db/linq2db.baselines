@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	MAX([t1].[PersonID])
 FROM
@@ -31,7 +30,6 @@ VALUES
 )
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT TOP (2)
 	[p].[PersonID],
 	[p].[FirstName],
@@ -44,7 +42,6 @@ WHERE
 	[p].[PersonID] > 4
 
 -- SqlServer.2012.MS SqlServer.2012
-
 DELETE [t]
 FROM
 	[Person] [t]

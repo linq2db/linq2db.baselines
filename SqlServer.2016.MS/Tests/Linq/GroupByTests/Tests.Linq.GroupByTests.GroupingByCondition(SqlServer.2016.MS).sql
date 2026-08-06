@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	[g_1].[isValueAvailable],
 	[g_1].[ParentID],
@@ -22,7 +21,6 @@ GROUP BY
 	[g_1].[Value_1]
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID]

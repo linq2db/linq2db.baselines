@@ -1,5 +1,4 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(*)
 FROM
@@ -9,7 +8,6 @@ WHERE
 	a_Parent."ParentID" = 1
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	a_Parent."ParentID"
 FROM

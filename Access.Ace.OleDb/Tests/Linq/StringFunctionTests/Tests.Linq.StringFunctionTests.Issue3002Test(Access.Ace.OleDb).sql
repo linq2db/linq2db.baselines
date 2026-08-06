@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 INSERT INTO [SampleClass]
 (
 	[Id],
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- Access.Ace.OleDb AccessOleDb
-
 INSERT INTO [SampleClass]
 (
 	[Id],

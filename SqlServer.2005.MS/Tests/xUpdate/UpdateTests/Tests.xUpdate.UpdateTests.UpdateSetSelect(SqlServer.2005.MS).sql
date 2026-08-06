@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
-
 DELETE [t1]
 FROM
 	[Parent] [t1]
@@ -7,7 +6,6 @@ WHERE
 	[t1].[ParentID] > 1000
 
 -- SqlServer.2005.MS SqlServer.2005
-
 UPDATE
 	[p]
 SET

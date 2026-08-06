@@ -24,7 +24,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT DBINFO('sqlca.sqlerrd1') FROM systables where tabid = 1
 
 -- Informix.DB2 Informix
@@ -34,7 +33,7 @@ SET     @nullableGender = 'O'
 UPDATE
 	Person t1
 SET
-	Gender = @nullableGender::NChar(1)
+	Gender = @nullableGender
 WHERE
 	t1.FirstName LIKE 'UpdateComplex%' ESCAPE '~'
 

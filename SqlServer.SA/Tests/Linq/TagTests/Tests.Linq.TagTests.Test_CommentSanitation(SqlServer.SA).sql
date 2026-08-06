@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 /* My bad Test */
 SELECT
 	[x].[FirstName],

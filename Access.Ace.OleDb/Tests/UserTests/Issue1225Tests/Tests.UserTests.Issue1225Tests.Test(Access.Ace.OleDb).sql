@@ -46,7 +46,6 @@ VALUES
 )
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	'Id',
 	[it].[Id],

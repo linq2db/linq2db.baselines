@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	pat.PersonID,
 	pat.Diagnosis

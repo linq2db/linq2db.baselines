@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 SELECT
 	SUM([c2].[ChildID])
 FROM

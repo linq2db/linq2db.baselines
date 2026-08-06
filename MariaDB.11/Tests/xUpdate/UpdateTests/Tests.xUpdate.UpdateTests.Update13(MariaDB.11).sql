@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 UPDATE
 	`Parent` `p2`,
 	`Parent` `p1`

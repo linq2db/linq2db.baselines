@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	r_1.Diagnosis,
 	a_Person.FirstName

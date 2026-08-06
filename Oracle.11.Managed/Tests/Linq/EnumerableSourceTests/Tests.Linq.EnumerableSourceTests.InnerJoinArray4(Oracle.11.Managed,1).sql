@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	p."FirstName",
 	p."PersonID",
@@ -18,7 +17,6 @@ FROM
 			SELECT 'Doe' FROM sys.dual) n ON p."LastName" = n."item"
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	p."FirstName",
 	p."PersonID",

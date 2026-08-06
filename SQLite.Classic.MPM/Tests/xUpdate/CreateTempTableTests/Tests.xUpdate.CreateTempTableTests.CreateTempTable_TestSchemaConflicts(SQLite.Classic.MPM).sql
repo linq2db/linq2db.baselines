@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 INSERT INTO [TestTempTable]
 (
 	[Id],
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 CREATE TABLE IF NOT EXISTS [TempTable]
 (
 	[Id]      INTEGER       NOT NULL,
@@ -22,7 +20,6 @@ CREATE TABLE IF NOT EXISTS [TempTable]
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 INSERT INTO [TempTable]
 (
 	[Id],
@@ -35,7 +32,6 @@ FROM
 	[TestTempTable] [t1]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 INSERT INTO [TestTempTable]
 (
 	[Id],
@@ -48,7 +44,6 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 INSERT INTO [TempTable]
 (
 	[Id],
@@ -61,7 +56,6 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -71,7 +65,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Renamed]
@@ -81,6 +74,5 @@ ORDER BY
 	[t1].[Id]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 DROP TABLE IF EXISTS [TempTable]
 

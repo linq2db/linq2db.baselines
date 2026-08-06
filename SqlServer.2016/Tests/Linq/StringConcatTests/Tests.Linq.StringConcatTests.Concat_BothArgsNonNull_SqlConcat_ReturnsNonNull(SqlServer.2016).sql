@@ -1,14 +1,12 @@
 ﻿-- SqlServer.2016
-
 SELECT
 	[e].[Id]
 FROM
 	[ConcatTestEntity] [e]
 WHERE
-	([e].[StrReq] + [e].[StrReq]) IS NOT NULL
+	[e].[StrReq] IS NOT NULL
 
 -- SqlServer.2016
-
 SELECT
 	[t1].[Id],
 	[t1].[Str1],

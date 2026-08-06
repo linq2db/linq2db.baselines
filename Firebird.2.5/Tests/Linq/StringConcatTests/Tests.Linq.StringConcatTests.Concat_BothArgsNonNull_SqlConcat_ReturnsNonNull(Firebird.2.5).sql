@@ -1,14 +1,12 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	"e"."Id"
 FROM
 	"ConcatTestEntity" "e"
 WHERE
-	("e"."StrReq" || "e"."StrReq") IS NOT NULL
+	"e"."StrReq" IS NOT NULL
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1"."Id",
 	"t1"."Str1",

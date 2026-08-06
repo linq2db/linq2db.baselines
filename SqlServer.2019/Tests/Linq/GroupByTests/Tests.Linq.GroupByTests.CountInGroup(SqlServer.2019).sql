@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2019
-
 SELECT
 	[t].[GroupId],
 	COUNT(*),
@@ -20,7 +19,6 @@ GROUP BY
 	[t].[GroupId]
 
 -- SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[GroupId],

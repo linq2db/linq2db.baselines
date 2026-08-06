@@ -24,11 +24,9 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT CURRENT_IDENTITY_VALUE() FROM DUMMY
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."FirstName",
 	"t1"."PersonID",
@@ -64,7 +62,6 @@ WHERE
 	"t1"."PersonID" = ?
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."FirstName",
 	"t1"."PersonID",

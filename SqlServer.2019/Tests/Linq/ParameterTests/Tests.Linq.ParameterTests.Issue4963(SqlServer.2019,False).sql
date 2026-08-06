@@ -8,7 +8,6 @@ SET
 	[Field] = CAST(CAST([Issue4963Table].[Field] AS Int) + @offset AS TinyInt)
 
 -- SqlServer.2019
-
 SELECT TOP (2)
 	[t1].[Id],
 	[t1].[Field]

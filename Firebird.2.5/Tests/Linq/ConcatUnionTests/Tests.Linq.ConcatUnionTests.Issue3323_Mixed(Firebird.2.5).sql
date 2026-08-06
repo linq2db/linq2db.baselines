@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 INSERT INTO "Issue3323Table"
 (
 	"Id",
@@ -16,7 +15,6 @@ VALUES
 )
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"r"."Id",
 	Coalesce("r"."FirstName", '') || ' ' || Coalesce("r"."LastName", '')
@@ -30,7 +28,6 @@ FROM
 	"Issue3323Table" "r_1"
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"r"."Id" + 1,
 	"r"."Text"

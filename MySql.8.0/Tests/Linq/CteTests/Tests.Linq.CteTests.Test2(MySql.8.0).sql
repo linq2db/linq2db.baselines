@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 WITH `CTE1_` (`ParentID`)
 AS
 (
@@ -66,7 +65,6 @@ FROM
 		INNER JOIN `LATEST` `c4_1` ON `c4_1`.`ParentID` = `c3`.`ParentID`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`c3`.`ParentID`,
 	`c3`.`Value1`

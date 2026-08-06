@@ -78,14 +78,12 @@ RETURNING
 	PersonID
 
 -- DuckDB
-
 SELECT
 	COUNT(*)
 FROM
 	xxPerson t1
 
 -- DuckDB
-
 SELECT
 	COUNT(*)
 FROM

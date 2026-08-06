@@ -37,7 +37,6 @@ WHERE
 	"t1"."FirstName" STARTING WITH 'Update14'
 
 -- Firebird.3 Firebird3
-
 SELECT
 	COUNT(*)
 FROM

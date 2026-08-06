@@ -12,11 +12,9 @@ VALUES
 )
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT LAST_INSERT_ID()
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`t1`.`Id`
 FROM
@@ -35,7 +33,6 @@ WHERE
 LIMIT 1
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`u`.`Id`
 FROM

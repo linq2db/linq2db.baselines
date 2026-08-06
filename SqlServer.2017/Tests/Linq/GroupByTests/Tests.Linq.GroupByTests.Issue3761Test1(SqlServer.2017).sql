@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 SELECT
 	[t1].[Year_1],
 	[t1].[Month_1],

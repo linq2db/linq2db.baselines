@@ -10,7 +10,6 @@ SET
 	[Value] = [WarehouseTableDto].[Value] | @addMask & ~@removeMask
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 2
 	[t1].[Id],
 	[t1].[Value]

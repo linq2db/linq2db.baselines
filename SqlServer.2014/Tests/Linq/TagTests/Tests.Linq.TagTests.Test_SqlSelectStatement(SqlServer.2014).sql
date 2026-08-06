@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014
-
 /* My Test */
 SELECT
 	[t1].[Id],

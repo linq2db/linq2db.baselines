@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012.MS SqlServer.2012
-
 CREATE TABLE [tempdb]..[#TestTable]
 (
 	[Field1] Int NOT NULL /* test */,
@@ -7,6 +6,5 @@ CREATE TABLE [tempdb]..[#TestTable]
 )
 
 -- SqlServer.2012.MS SqlServer.2012
-
 DROP TABLE [tempdb]..[#TestTable]
 

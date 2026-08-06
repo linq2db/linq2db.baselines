@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	"nm"."FirstName"
 FROM
@@ -8,7 +7,6 @@ WHERE
 	CHAR_LENGTH("nm"."FirstName") <> 0
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t1"."FirstName",
 	"t1"."PersonID",

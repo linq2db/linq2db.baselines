@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `Parent`
 (
 	`ParentID`
@@ -10,7 +9,6 @@ VALUES
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `Child`
 (
 	`ParentID`,
@@ -23,7 +21,6 @@ VALUES
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `Child`
 (
 	`ParentID`,
@@ -36,7 +33,6 @@ VALUES
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DELETE   `a_Children`
 FROM
 	`Parent` `p`
@@ -45,7 +41,6 @@ WHERE
 	`p`.`ParentID` >= 1000
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DELETE  
 FROM
 	`Child`
@@ -53,7 +48,6 @@ WHERE
 	`Child`.`ParentID` >= 1000
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DELETE  
 FROM
 	`Parent`

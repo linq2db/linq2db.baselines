@@ -1,12 +1,10 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	RTRIM(CONCAT(Coalesce(`t`.`VarCharColumn`, ''), '   '))
 FROM
 	`StringTrimTable` `t`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`CharColumn`,

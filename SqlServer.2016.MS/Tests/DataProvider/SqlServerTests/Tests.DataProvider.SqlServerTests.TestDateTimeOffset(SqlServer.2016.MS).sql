@@ -1,33 +1,25 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
-
 SELECT Cast('2012-12-12 12:12:12.012' as datetime2)
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT Cast('2012-12-12 12:12:12.012' as datetime2)
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT Cast('2012-12-12 13:12:12.012 -04:00' as datetimeoffset)
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT Cast('2012-12-12 13:12:12.012 -04:00' as datetimeoffset)
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT Cast('2012-12-12 12:12:12.012 +05:00' as datetimeoffset)
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT Cast('2012-12-12 12:12:12.012 +05:00' as datetimeoffset)
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT Cast(NULL as datetimeoffset)
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT Cast(NULL as datetimeoffset)
 
 -- SqlServer.2016.MS SqlServer.2016

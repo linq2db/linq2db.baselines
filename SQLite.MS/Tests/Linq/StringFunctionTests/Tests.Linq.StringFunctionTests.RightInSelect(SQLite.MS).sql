@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	SUBSTRING([p].[FirstName], LENGTH([p].[FirstName]) - 3 + 1)
 FROM

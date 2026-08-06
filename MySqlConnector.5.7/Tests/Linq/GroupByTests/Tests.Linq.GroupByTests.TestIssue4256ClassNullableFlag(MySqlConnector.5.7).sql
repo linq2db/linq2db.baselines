@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT DISTINCT
 	1,
 	`it`.`SmallIntValue` <> 0
@@ -7,7 +6,6 @@ FROM
 	`LinqDataTypes` `it`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t1`.`ID`,
 	`t1`.`MoneyValue`,

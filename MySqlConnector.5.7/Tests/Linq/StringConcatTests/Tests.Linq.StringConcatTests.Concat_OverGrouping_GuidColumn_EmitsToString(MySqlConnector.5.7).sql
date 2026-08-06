@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`g_1`.`GrpId`,
 	GROUP_CONCAT(Lower(CAST(`g_1`.`GuidV` AS CHAR(36))) ORDER BY `g_1`.`PK` SEPARATOR '')
@@ -11,7 +10,6 @@ ORDER BY
 	`g_1`.`GrpId`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t1`.`PK`,
 	`t1`.`GrpId`,

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 SELECT
 	[t3].[NAME3],
 	[t2].[not_null_1],

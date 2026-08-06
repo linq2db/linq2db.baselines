@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2019
-
 SELECT
 	[t1].[c1],
 	[t1].[Id3]

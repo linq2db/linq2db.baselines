@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 WITH "CTE_1"
 (
 	"entry_ID",
@@ -30,8 +29,7 @@ FROM
 WHERE
 	x."entry_ID" = 1
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	x."FirstName",
 	x."PersonID",

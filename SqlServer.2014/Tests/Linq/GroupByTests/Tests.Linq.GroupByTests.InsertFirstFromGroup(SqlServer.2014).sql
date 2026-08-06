@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014
-
 CREATE TABLE [temp_table_1]
 (
 	[ID]    Int            NOT NULL,
@@ -11,7 +10,6 @@ CREATE TABLE [temp_table_1]
 INSERT BULK [temp_table_1](ID, Value)
 
 -- SqlServer.2014
-
 CREATE TABLE [temp_table_2]
 (
 	[Value] NVarChar(50) NOT NULL,
@@ -20,7 +18,6 @@ CREATE TABLE [temp_table_2]
 )
 
 -- SqlServer.2014
-
 INSERT INTO [temp_table_2]
 (
 	[Value]
@@ -39,12 +36,10 @@ FROM
 		) [t1]
 
 -- SqlServer.2014
-
 IF (OBJECT_ID(N'[temp_table_2]', N'U') IS NOT NULL)
 	DROP TABLE [temp_table_2]
 
 -- SqlServer.2014
-
 IF (OBJECT_ID(N'[temp_table_1]', N'U') IS NOT NULL)
 	DROP TABLE [temp_table_1]
 

@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[r].[text1],
 	matchinfo([r].[FTS4_TABLE], 'pc')

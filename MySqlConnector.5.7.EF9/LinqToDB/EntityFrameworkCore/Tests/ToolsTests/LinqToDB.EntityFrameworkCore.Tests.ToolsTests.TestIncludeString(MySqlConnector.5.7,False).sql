@@ -30,7 +30,6 @@ ORDER BY `o`.`OrderID`, `e0`.`EmployeeID`, `e2`.`EmployeeID`, `e2`.`TerritoryID`
 
 
 -- MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`m_1`.`EmployeeId`,
 	`d`.`IsDeleted`,
@@ -49,7 +48,6 @@ FROM
 
 
 -- MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`m_1`.`OrderId`,
 	`d`.`IsDeleted`,
@@ -81,10 +79,7 @@ FROM
 
 
 
-
-
 -- MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`e`.`IsDeleted`,
 	`e`.`OrderID`,

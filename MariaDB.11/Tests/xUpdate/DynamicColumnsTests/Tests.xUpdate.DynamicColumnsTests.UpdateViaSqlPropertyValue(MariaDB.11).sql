@@ -39,7 +39,6 @@ WHERE
 	`c_1`.`ChildID` = @id AND `a_Parent`.`Value1` = 1
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	COUNT(*)
 FROM

@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	"k_1"."Id",
 	"k_1"."Number",

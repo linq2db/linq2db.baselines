@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -19,7 +18,6 @@ WHERE
 	)
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -30,7 +28,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -50,7 +47,6 @@ WHERE
 	)
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -61,7 +57,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -81,7 +76,6 @@ WHERE
 	)
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -92,7 +86,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -112,7 +105,6 @@ WHERE
 	)
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -123,7 +115,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -136,7 +127,6 @@ WHERE
 	1 = 0
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -147,7 +137,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -167,7 +156,6 @@ WHERE
 	)
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -178,7 +166,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -198,7 +185,6 @@ WHERE
 	)
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -209,7 +195,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -229,7 +214,6 @@ WHERE
 	)
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -240,7 +224,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -260,7 +243,6 @@ WHERE
 	)
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -271,7 +253,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -282,7 +263,6 @@ FROM
 	"BooleanTable" "r"
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",

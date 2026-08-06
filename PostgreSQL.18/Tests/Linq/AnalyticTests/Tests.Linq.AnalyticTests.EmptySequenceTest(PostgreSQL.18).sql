@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
-
+﻿-- PostgreSQL.18 PostgreSQL12
 SELECT
 	m_1."ParentID",
 	d_1."Key_1",
@@ -23,8 +22,7 @@ FROM
 				d."ParentID"
 		) d_1 ON 1=1
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	c_1."ParentID"
 FROM

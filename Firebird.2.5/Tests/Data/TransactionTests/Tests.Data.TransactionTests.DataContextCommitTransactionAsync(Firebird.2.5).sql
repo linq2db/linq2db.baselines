@@ -18,7 +18,6 @@ VALUES
 
 CommitTransactionAsync
 -- Firebird.2.5 Firebird
-
 DELETE FROM
 	"Parent" "t1"
 WHERE

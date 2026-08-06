@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT DISTINCT
 	x.DuplicateData,
 	x.OrderData2

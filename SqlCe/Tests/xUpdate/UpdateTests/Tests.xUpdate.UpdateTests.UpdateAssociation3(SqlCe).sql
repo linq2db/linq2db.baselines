@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 INSERT INTO [Parent]
 (
 	[ParentID],
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- SqlCe
-
 INSERT INTO [Child]
 (
 	[ChildID],
@@ -25,7 +23,6 @@ VALUES
 )
 
 -- SqlCe
-
 UPDATE
 	[Parent]
 SET

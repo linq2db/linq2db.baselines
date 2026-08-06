@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012
-
 DELETE [t1]
 FROM
 	[CollatedTable] [t1]
@@ -26,7 +25,6 @@ VALUES
 )
 
 -- SqlServer.2012
-
 SELECT
 	COUNT(*)
 FROM
@@ -35,7 +33,6 @@ WHERE
 	[r].[CaseSensitive] LIKE N'TestSt%' ESCAPE N'~'
 
 -- SqlServer.2012
-
 SELECT
 	COUNT(*)
 FROM
@@ -44,7 +41,6 @@ WHERE
 	[r].[CaseInsensitive] LIKE N'TestSt%' ESCAPE N'~'
 
 -- SqlServer.2012
-
 SELECT
 	COUNT(*)
 FROM
@@ -53,7 +49,6 @@ WHERE
 	[r].[CaseSensitive] LIKE N'testst%' ESCAPE N'~'
 
 -- SqlServer.2012
-
 SELECT
 	COUNT(*)
 FROM

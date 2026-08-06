@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[a_ChildInner].[ParentID]
 FROM

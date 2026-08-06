@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
-
+﻿-- PostgreSQL.13 PostgreSQL12
 INSERT INTO "SimpleBulkCopyTable"
 (
 	"Id"
@@ -7,8 +6,7 @@ INSERT INTO "SimpleBulkCopyTable"
 VALUES
 (1)
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 INSERT INTO "SimpleBulkCopyTable"
 (
 	"Id"
@@ -16,7 +14,7 @@ INSERT INTO "SimpleBulkCopyTable"
 VALUES
 (2)
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 3
 
@@ -29,8 +27,7 @@ VALUES
 	:Id
 )
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 INSERT INTO "SimpleBulkCopyTable"
 (
 	"Id"
@@ -38,8 +35,7 @@ INSERT INTO "SimpleBulkCopyTable"
 VALUES
 (10)
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 INSERT INTO "SimpleBulkCopyTable"
 (
 	"Id"
@@ -47,7 +43,7 @@ INSERT INTO "SimpleBulkCopyTable"
 VALUES
 (20)
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 30
 

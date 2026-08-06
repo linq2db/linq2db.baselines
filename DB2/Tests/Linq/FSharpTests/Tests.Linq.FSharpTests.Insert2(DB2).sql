@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	MAX("t1"."PersonID")
 FROM
@@ -31,7 +30,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"p"."PersonID",
 	"p"."FirstName",
@@ -45,7 +43,6 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 -- DB2 DB2.LUW DB2LUW
-
 DELETE FROM
 	"Person" "t"
 WHERE

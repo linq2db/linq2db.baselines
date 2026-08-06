@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
-
 CREATE TABLE [tempdb]..[#temp_table1]
 (
 	[ID]    Int NOT NULL,
@@ -11,7 +10,6 @@ CREATE TABLE [tempdb]..[#temp_table1]
 INSERT BULK [tempdb]..[#temp_table1](ID, Value)
 
 -- SqlServer.2017.MS SqlServer.2017
-
 CREATE TABLE [tempdb]..[#temp_table2]
 (
 	[ID]    Int NOT NULL,
@@ -21,7 +19,6 @@ CREATE TABLE [tempdb]..[#temp_table2]
 )
 
 -- SqlServer.2017.MS SqlServer.2017
-
 INSERT INTO [tempdb]..[#temp_table2]
 (
 	[ID],
@@ -34,7 +31,6 @@ FROM
 	[tempdb]..[#temp_table1] [t1]
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t1].[ID],
 	[t1].[Value]
@@ -42,7 +38,6 @@ FROM
 	[tempdb]..[#temp_table1] [t1]
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t1].[ID],
 	[t1].[Value]
@@ -50,7 +45,6 @@ FROM
 	[tempdb]..[#temp_table2] [t1]
 
 -- SqlServer.2017.MS SqlServer.2017
-
 INSERT INTO [tempdb]..[#temp_table1]
 (
 	[ID],
@@ -79,18 +73,14 @@ VALUES
 INSERT BULK [tempdb]..[#temp_table1](ID, Value)
 
 -- SqlServer.2017.MS SqlServer.2017
-
 TRUNCATE TABLE [tempdb]..[#temp_table1]
 
 -- SqlServer.2017.MS SqlServer.2017
-
 TRUNCATE TABLE [tempdb]..[#temp_table2]
 
 -- SqlServer.2017.MS SqlServer.2017
-
 DROP TABLE IF EXISTS [tempdb]..[#temp_table2]
 
 -- SqlServer.2017.MS SqlServer.2017
-
 DROP TABLE IF EXISTS [tempdb]..[#temp_table1]
 

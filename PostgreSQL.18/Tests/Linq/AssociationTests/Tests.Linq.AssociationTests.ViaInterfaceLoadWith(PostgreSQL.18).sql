@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
-
+﻿-- PostgreSQL.18 PostgreSQL12
 SELECT
 	m_1."Id",
 	d."Id",
@@ -8,8 +7,7 @@ FROM
 	"MainEntity" m_1
 		INNER JOIN "SubEntity" d ON m_1."Id" = d."MainEntityId"
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	t1."Id"
 FROM

@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 WITH [CTE1_] ([ParentID], [ChildID])
 AS
 (
@@ -16,7 +15,6 @@ FROM
 	[CTE1_] [t2]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID]

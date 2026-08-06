@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT /*+ NOCACHE(p) NOCACHE(c_1) */
 	p."ParentID",
 	p."Value1"

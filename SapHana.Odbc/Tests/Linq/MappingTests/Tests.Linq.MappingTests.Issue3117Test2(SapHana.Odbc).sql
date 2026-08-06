@@ -12,11 +12,9 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT CURRENT_IDENTITY_VALUE() FROM DUMMY
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id"
 FROM
@@ -35,7 +33,6 @@ WHERE
 LIMIT 1
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"u"."Id"
 FROM

@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 INSERT INTO [MultipleRowsTable]
 (
 	[Id],
@@ -11,7 +10,6 @@ VALUES
 (2,1.5,-2.6)
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[DecimalValue1],

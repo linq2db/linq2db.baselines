@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	m_1.PersonID,
 	m_1.FirstName,
@@ -11,14 +10,12 @@ FROM
 	Person m_1
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.PersonID
 FROM
 	Person t1
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	m_1.PersonID,
 	m_1.FirstName,
@@ -30,7 +27,6 @@ FROM
 	Person m_1
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.PersonID
 FROM

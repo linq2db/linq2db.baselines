@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[m_1].[Key_1],
 	[d].[ParentID],
@@ -14,9 +13,8 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[Key_1] = [d].[ParentID]
 
 -- SqlCe
-
 SELECT DISTINCT
-	[t1].[ParentID] as [Key_1]
+	[t1].[ParentID]
 FROM
 	[Child] [t1]
 

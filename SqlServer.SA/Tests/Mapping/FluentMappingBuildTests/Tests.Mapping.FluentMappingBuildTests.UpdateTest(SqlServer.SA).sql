@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 IF (OBJECT_ID(N'[FluentTemp_Update]', N'U') IS NULL)
 	CREATE TABLE [FluentTemp_Update]
 	(
@@ -46,6 +45,5 @@ WHERE
 	[FluentTemp_Update].[ID] = 1
 
 -- SqlServer.SA SqlServer.2019
-
 DROP TABLE IF EXISTS [FluentTemp_Update]
 

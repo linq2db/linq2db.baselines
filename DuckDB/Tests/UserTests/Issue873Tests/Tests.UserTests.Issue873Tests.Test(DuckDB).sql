@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	' ' || CAST(Coalesce(f.Value1, 0) AS VARCHAR),
 	Coalesce(t1.SubSum, 0),

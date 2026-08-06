@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[g_1].[Id],
 	STRING_AGG(Coalesce([g_1].[NullableValue], N''), N', '),
@@ -12,7 +11,6 @@ ORDER BY
 	[g_1].[Id]
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t1].[PK],
 	[t1].[Id],

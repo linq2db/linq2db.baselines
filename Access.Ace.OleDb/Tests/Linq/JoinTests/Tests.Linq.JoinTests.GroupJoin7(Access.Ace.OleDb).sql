@@ -4,7 +4,7 @@ SET     @n = 1
 
 SELECT
 	[m_1].[ParentID],
-	[d].[ParentID],
+	[d].[ParentID] as [ParentID_1],
 	[d].[ChildID]
 FROM
 	(
@@ -18,7 +18,6 @@ FROM
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID] - @n)
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[p].[ParentID],
 	[p].[Value1]

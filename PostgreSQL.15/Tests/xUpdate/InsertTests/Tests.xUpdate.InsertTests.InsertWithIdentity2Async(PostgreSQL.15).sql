@@ -1,12 +1,10 @@
-﻿-- PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.15 PostgreSQL12
 DELETE FROM
 	"Person" t1
 WHERE
 	t1."PersonID" > 4
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 INSERT INTO "Person"
 (
 	"FirstName",
@@ -22,8 +20,7 @@ VALUES
 RETURNING 
 	"PersonID"
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 SELECT
 	p."FirstName",
 	p."PersonID",
@@ -36,8 +33,7 @@ WHERE
 	p."FirstName" = 'John' AND p."LastName" = 'Shepard'
 LIMIT 2
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 DELETE FROM
 	"Person" t1
 WHERE

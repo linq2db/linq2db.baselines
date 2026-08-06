@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 INSERT INTO [SimpleBulkCopyTable]
 (
 	[Id]
@@ -7,7 +6,6 @@ INSERT INTO [SimpleBulkCopyTable]
 SELECT 1
 
 -- SqlCe
-
 INSERT INTO [SimpleBulkCopyTable]
 (
 	[Id]
@@ -15,7 +13,6 @@ INSERT INTO [SimpleBulkCopyTable]
 SELECT 2
 
 -- SqlCe
-
 INSERT INTO [SimpleBulkCopyTable]
 (
 	[Id]
@@ -23,7 +20,6 @@ INSERT INTO [SimpleBulkCopyTable]
 SELECT 3
 
 -- SqlCe
-
 INSERT INTO [SimpleBulkCopyTable]
 (
 	[Id]
@@ -31,7 +27,6 @@ INSERT INTO [SimpleBulkCopyTable]
 SELECT 10
 
 -- SqlCe
-
 INSERT INTO [SimpleBulkCopyTable]
 (
 	[Id]
@@ -39,7 +34,6 @@ INSERT INTO [SimpleBulkCopyTable]
 SELECT 20
 
 -- SqlCe
-
 INSERT INTO [SimpleBulkCopyTable]
 (
 	[Id]

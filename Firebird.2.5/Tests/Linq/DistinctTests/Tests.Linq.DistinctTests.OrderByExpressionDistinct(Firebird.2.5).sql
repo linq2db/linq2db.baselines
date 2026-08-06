@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	"x_1"."MiddleName",
 	"x_1"."LastName"
@@ -12,10 +11,10 @@ FROM
 			"Person" "x"
 	) "x_1"
 ORDER BY
-	Coalesce("x_1"."MiddleName", '-2') DESC
+	Coalesce("x_1"."MiddleName", '-2') DESC,
+	Coalesce("x_1"."LastName", '-1')
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1"."FirstName",
 	"t1"."PersonID",

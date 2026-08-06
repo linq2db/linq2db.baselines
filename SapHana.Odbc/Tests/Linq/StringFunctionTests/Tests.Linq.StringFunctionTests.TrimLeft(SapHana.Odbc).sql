@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"pp"."PersonID",
 	'  ' || "pp"."FirstName" || ' '

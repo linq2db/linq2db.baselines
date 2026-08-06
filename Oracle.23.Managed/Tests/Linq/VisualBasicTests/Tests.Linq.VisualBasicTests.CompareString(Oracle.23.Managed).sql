@@ -1,5 +1,4 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	p."FirstName",
 	p."PersonID",
@@ -12,7 +11,6 @@ WHERE
 	p."FirstName" = 'John'
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	p."FirstName",
 	p."PersonID",

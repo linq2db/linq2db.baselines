@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 DELETE FROM [Parent]
 FROM
 	[Parent] [t1]
@@ -35,7 +34,6 @@ WHERE
 	[t1].[ParentID] = @id AND [t1].[Value1] = @Value1
 
 -- Sybase.Managed Sybase
-
 DELETE FROM [Parent]
 FROM
 	[Parent] [t1]

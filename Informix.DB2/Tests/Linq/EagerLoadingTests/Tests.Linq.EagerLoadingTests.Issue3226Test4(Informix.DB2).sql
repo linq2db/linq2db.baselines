@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	m_1.Id,
 	d."Value"
@@ -8,7 +7,6 @@ FROM
 		INNER JOIN ItemValue d ON m_1.Id = d.ItemId
 
 -- Informix.DB2 Informix
-
 SELECT
 	x_1.Id,
 	x_1.Text
@@ -29,5 +27,5 @@ FROM
 			"Item" x
 	) x_1
 ORDER BY
-	Nvl(x_1.Sum_1, Nvl(NULL, 0))
+	Nvl(x_1.Sum_1, 0)
 

@@ -25,7 +25,6 @@ ORDER BY "o"."OrderID", "o1"."OrderID", "o1"."ProductID", "p0"."ProductID", "o3"
 
 
 -- SQLite.MS SQLite
-
 SELECT
 	[m_1].[ProductId],
 	[d].[OrderID],
@@ -44,10 +43,7 @@ FROM
 
 
 
-
-
 -- SQLite.MS SQLite
-
 SELECT
 	[a_Product].[ProductID],
 	[od].[OrderID],

@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	LIST('test:' || "grp_1"."ch", ';')
 FROM

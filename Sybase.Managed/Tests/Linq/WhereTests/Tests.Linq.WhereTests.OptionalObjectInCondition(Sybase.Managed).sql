@@ -14,7 +14,6 @@ WHERE
 	[r].[FirstName] = @p
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[r].[FirstName],
 	[r].[PersonID],

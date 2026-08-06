@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
-
+﻿-- PostgreSQL.13 PostgreSQL12
 CREATE TABLE IF NOT EXISTS "FluentTemp_Cache"
 (
 	"ID"       Int  NOT NULL,
@@ -9,7 +8,7 @@ CREATE TABLE IF NOT EXISTS "FluentTemp_Cache"
 	CONSTRAINT "PK_FluentTemp_Cache" PRIMARY KEY ("ID")
 )
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL12
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
 DECLARE @Name Text(4) -- String
@@ -30,8 +29,7 @@ VALUES
 	:LastName
 )
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	t."ID",
 	t."Value",
@@ -41,12 +39,10 @@ FROM
 WHERE
 	t."ID" = 1
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 DROP TABLE IF EXISTS "FluentTemp_Cache"
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 CREATE TABLE IF NOT EXISTS "FluentTemp_Cache"
 (
 	"ID"       Int  NOT NULL,
@@ -56,7 +52,7 @@ CREATE TABLE IF NOT EXISTS "FluentTemp_Cache"
 	CONSTRAINT "PK_FluentTemp_Cache" PRIMARY KEY ("ID")
 )
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL12
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
 DECLARE @Name Text(4) -- String
@@ -77,8 +73,7 @@ VALUES
 	:LastName
 )
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	t."ID",
 	t."Value",
@@ -88,12 +83,10 @@ FROM
 WHERE
 	t."ID" = 1
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 DROP TABLE IF EXISTS "FluentTemp_Cache"
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 CREATE TABLE IF NOT EXISTS "FluentTemp_Cache"
 (
 	"ID"       Int  NOT NULL,
@@ -103,7 +96,7 @@ CREATE TABLE IF NOT EXISTS "FluentTemp_Cache"
 	CONSTRAINT "PK_FluentTemp_Cache" PRIMARY KEY ("ID")
 )
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL12
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
 DECLARE @Name Text(4) -- String
@@ -124,8 +117,7 @@ VALUES
 	:LastName
 )
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	t."ID",
 	t."Column",
@@ -135,12 +127,10 @@ FROM
 WHERE
 	t."ID" = 1
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 DROP TABLE IF EXISTS "FluentTemp_Cache"
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 CREATE TABLE IF NOT EXISTS "FluentTemp_Cache"
 (
 	"ID"       Int  NOT NULL,
@@ -150,7 +140,7 @@ CREATE TABLE IF NOT EXISTS "FluentTemp_Cache"
 	CONSTRAINT "PK_FluentTemp_Cache" PRIMARY KEY ("ID")
 )
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL12
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
 DECLARE @Name Text(4) -- String
@@ -171,8 +161,7 @@ VALUES
 	:LastName
 )
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	t."ID",
 	t."Column",
@@ -182,7 +171,6 @@ FROM
 WHERE
 	t."ID" = 1
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 DROP TABLE IF EXISTS "FluentTemp_Cache"
 

@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[t1].[PersonID],
 	[t1].[FirstName],
@@ -10,7 +9,6 @@ FROM
 	[Person] [t1]
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[p].[PersonID]
 FROM

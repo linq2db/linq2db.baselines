@@ -16,7 +16,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[r].[ID],
 	[r].[Data]
@@ -26,7 +25,6 @@ ORDER BY
 	[r].[ID]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[r].[ID],
 	[r].[Data]

@@ -1,13 +1,10 @@
 ﻿-- SqlServer.Northwind.MS SqlServer.2019
-
 select @@version
 
 -- SqlServer.Northwind.MS SqlServer.2019
-
 SELECT compatibility_level FROM sys.databases WHERE name = db_name()
 
 -- SqlServer.Northwind.MS SqlServer.2019
-
 
 SELECT
 	TABLE_CATALOG COLLATE DATABASE_DEFAULT + '.' + TABLE_SCHEMA + '.' + TABLE_NAME as TableID,
@@ -45,7 +42,6 @@ WHERE
 			) IS NULL
 
 -- SqlServer.Northwind.MS SqlServer.2019
-
 SELECT
 	k.TABLE_CATALOG COLLATE DATABASE_DEFAULT + '.' + k.TABLE_SCHEMA + '.' + k.TABLE_NAME as TableID,
 	k.CONSTRAINT_NAME                                                                    as PrimaryKeyName,
@@ -63,7 +59,6 @@ WHERE
 		c.CONSTRAINT_TYPE='PRIMARY KEY'
 
 -- SqlServer.Northwind.MS SqlServer.2019
-
 
 SELECT
 	TABLE_CATALOG COLLATE DATABASE_DEFAULT + '.' + TABLE_SCHEMA + '.' + TABLE_NAME                      as TableID,
@@ -100,7 +95,6 @@ FROM
 					LEFT JOIN sys.tables t ON OBJECT_ID('[' + TABLE_CATALOG + '].[' + TABLE_SCHEMA + '].[' + TABLE_NAME + ']') = t.object_id
 
 -- SqlServer.Northwind.MS SqlServer.2019
-
 SELECT
 	fk.name                                                     as Name,
 	DB_NAME() + '.' + SCHEMA_NAME(po.schema_id) + '.' + po.name as ThisTableID,
@@ -119,7 +113,6 @@ ORDER BY
 	Ordinal
 
 -- SqlServer.Northwind.MS SqlServer.2019
-
 SELECT
 	SPECIFIC_CATALOG COLLATE DATABASE_DEFAULT + '.' + SPECIFIC_SCHEMA + '.' + SPECIFIC_NAME as ProcedureID,
 	SPECIFIC_CATALOG                                                                        as CatalogName,
@@ -139,7 +132,6 @@ FROM
 ORDER BY SPECIFIC_CATALOG, SPECIFIC_SCHEMA, SPECIFIC_NAME
 
 -- SqlServer.Northwind.MS SqlServer.2019
-
 SELECT
 	SPECIFIC_CATALOG COLLATE DATABASE_DEFAULT + '.' + SPECIFIC_SCHEMA + '.' + SPECIFIC_NAME as ProcedureID,
 	ORDINAL_POSITION                                                                        as Ordinal,

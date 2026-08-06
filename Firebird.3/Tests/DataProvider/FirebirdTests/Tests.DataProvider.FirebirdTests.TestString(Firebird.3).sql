@@ -1,29 +1,22 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT Cast('12345' as char(5)) FROM "Dual"
 
 -- Firebird.3 Firebird3
-
 SELECT Cast('12345' as char(20)) FROM "Dual"
 
 -- Firebird.3 Firebird3
-
 SELECT Cast('12345 ' as char(20)) FROM "Dual"
 
 -- Firebird.3 Firebird3
-
 SELECT Cast(NULL    as char(20)) FROM "Dual"
 
 -- Firebird.3 Firebird3
-
 SELECT Cast('12345' as varchar(5)) FROM "Dual"
 
 -- Firebird.3 Firebird3
-
 SELECT Cast('12345' as varchar(20)) FROM "Dual"
 
 -- Firebird.3 Firebird3
-
 SELECT Cast(NULL    as varchar(20)) FROM "Dual"
 
 -- Firebird.3 Firebird3

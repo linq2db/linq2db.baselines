@@ -12,7 +12,6 @@ ORDER BY
 OFFSET 1 ROWS FETCH NEXT @take ROWS ONLY 
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."ParentID",
 	"t1"."Value1"

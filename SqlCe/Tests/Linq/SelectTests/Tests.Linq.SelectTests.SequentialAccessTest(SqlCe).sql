@@ -1,11 +1,9 @@
 ﻿-- SqlCe
-
 SELECT
 	[p].[FirstName],
-	[p].[PersonID] as [ID],
-	[p].[PersonID] as [IDNullable],
+	[p].[PersonID],
 	[p].[LastName],
-	[p].[FirstName] + ' ' + [p].[LastName] as [FullName]
+	[p].[FirstName] + ' ' + [p].[LastName]
 FROM
 	[Person] [p]
 

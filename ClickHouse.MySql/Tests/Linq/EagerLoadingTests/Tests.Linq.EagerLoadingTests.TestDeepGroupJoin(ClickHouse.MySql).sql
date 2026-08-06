@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	m_2.Id1,
 	d.DetailId,
@@ -23,7 +22,6 @@ FROM
 		INNER JOIN DetailClass d ON m_2.Id1 = d.MasterId
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	m_2.Id1,
 	d.Id1,
@@ -48,7 +46,6 @@ FROM
 		INNER JOIN MasterClass d ON m_2.Id1 = d.Id1
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	m_1.Id1
 FROM

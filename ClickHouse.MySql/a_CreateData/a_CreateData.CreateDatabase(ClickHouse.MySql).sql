@@ -1,69 +1,52 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 DROP TABLE IF EXISTS Parent;
 
 -- ClickHouse.MySql ClickHouse
-
 DROP TABLE IF EXISTS Child;
 
 -- ClickHouse.MySql ClickHouse
-
 DROP TABLE IF EXISTS GrandChild;
 
 -- ClickHouse.MySql ClickHouse
-
 DROP TABLE IF EXISTS InheritanceParent;
 
 -- ClickHouse.MySql ClickHouse
-
 DROP TABLE IF EXISTS InheritanceChild;
 
 -- ClickHouse.MySql ClickHouse
-
 DROP TABLE IF EXISTS Doctor;
 
 -- ClickHouse.MySql ClickHouse
-
 DROP TABLE IF EXISTS Patient;
 
 -- ClickHouse.MySql ClickHouse
-
 DROP TABLE IF EXISTS Person;
 
 -- ClickHouse.MySql ClickHouse
-
 DROP TABLE IF EXISTS LinqDataTypes;
 
 -- ClickHouse.MySql ClickHouse
-
 DROP TABLE IF EXISTS AllTypes;
 
 -- ClickHouse.MySql ClickHouse
-
 DROP TABLE IF EXISTS CollatedTable;
 
 -- ClickHouse.MySql ClickHouse
-
 DROP TABLE IF EXISTS TestMerge1
 
 -- ClickHouse.MySql ClickHouse
-
 DROP TABLE IF EXISTS TestMerge2;
 
 -- ClickHouse.MySql ClickHouse
-
 CREATE TABLE Parent      (ParentID Int32, Value1 Nullable(Int32)) ENGINE = Memory();
 
 -- ClickHouse.MySql ClickHouse
-
 CREATE TABLE Child       (ParentID Int32, ChildID Int32) ENGINE = Memory();
 
 -- ClickHouse.MySql ClickHouse
-
 CREATE TABLE GrandChild  (ParentID Int32, ChildID Int32, GrandChildID Int32) ENGINE = Memory();
 
 -- ClickHouse.MySql ClickHouse
-
 CREATE TABLE LinqDataTypes
 (
 	ID             Int32,
@@ -80,7 +63,6 @@ CREATE TABLE LinqDataTypes
 ) ENGINE = MergeTree() ORDER BY ID PRIMARY KEY ID;
 
 -- ClickHouse.MySql ClickHouse
-
 CREATE TABLE InheritanceParent
 (
 	InheritanceParentId          Int32,
@@ -89,7 +71,6 @@ CREATE TABLE InheritanceParent
 ) ENGINE = MergeTree() ORDER BY InheritanceParentId PRIMARY KEY InheritanceParentId;
 
 -- ClickHouse.MySql ClickHouse
-
 CREATE TABLE InheritanceChild
 (
 	InheritanceChildId           Int32,
@@ -99,7 +80,6 @@ CREATE TABLE InheritanceChild
 ) ENGINE = MergeTree() ORDER BY InheritanceChildId PRIMARY KEY InheritanceChildId;
 
 -- ClickHouse.MySql ClickHouse
-
 CREATE TABLE Person
 (
 	PersonID            Int32,
@@ -111,7 +91,6 @@ CREATE TABLE Person
 ) ENGINE = MergeTree() ORDER BY PersonID PRIMARY KEY PersonID;
 
 -- ClickHouse.MySql ClickHouse
-
 INSERT INTO Person (PersonID, FirstName, LastName, MiddleName, Gender)
 	VALUES
 	(1, 'John',   'Pupkin',    NULL, 'M'),
@@ -120,7 +99,6 @@ INSERT INTO Person (PersonID, FirstName, LastName, MiddleName, Gender)
 	(4, 'Jürgen', 'König',     'Ko', 'M');
 
 -- ClickHouse.MySql ClickHouse
-
 CREATE TABLE Doctor
 (
 	PersonID Int32,
@@ -128,11 +106,9 @@ CREATE TABLE Doctor
 ) ENGINE = MergeTree() ORDER BY PersonID PRIMARY KEY PersonID;
 
 -- ClickHouse.MySql ClickHouse
-
 INSERT INTO Doctor (PersonID, Taxonomy) VALUES (1, 'Psychiatry');
 
 -- ClickHouse.MySql ClickHouse
-
 CREATE TABLE Patient
 (
 	PersonID  Int32,
@@ -140,11 +116,9 @@ CREATE TABLE Patient
 ) ENGINE = MergeTree() ORDER BY PersonID PRIMARY KEY PersonID;
 
 -- ClickHouse.MySql ClickHouse
-
 INSERT INTO Patient (PersonID, Diagnosis) VALUES (2, 'Hallucination with Paranoid Bugs'' Delirium of Persecution');
 
 -- ClickHouse.MySql ClickHouse
-
 CREATE TABLE AllTypes
 (
 	ID                       Int32,
@@ -165,7 +139,6 @@ CREATE TABLE AllTypes
 ) ENGINE = MergeTree() ORDER BY ID PRIMARY KEY ID;
 
 -- ClickHouse.MySql ClickHouse
-
 INSERT INTO AllTypes
 (
 	ID,
@@ -184,7 +157,6 @@ SELECT	2,
 		'23233', 'тест', '234', '1'
 
 -- ClickHouse.MySql ClickHouse
-
 CREATE TABLE CollatedTable
 (
 	Id              Int32,
@@ -193,7 +165,6 @@ CREATE TABLE CollatedTable
 )  ENGINE = MergeTree() ORDER BY Id PRIMARY KEY Id;
 
 -- ClickHouse.MySql ClickHouse
-
 CREATE TABLE TestMerge1
 (
 	Id              Int32,
@@ -223,7 +194,6 @@ CREATE TABLE TestMerge1
 )  ENGINE = MergeTree() ORDER BY Id PRIMARY KEY Id;
 
 -- ClickHouse.MySql ClickHouse
-
 CREATE TABLE TestMerge2
 (
 	Id              Int32,
@@ -253,11 +223,9 @@ CREATE TABLE TestMerge2
 )  ENGINE = MergeTree() ORDER BY Id PRIMARY KEY Id;
 
 -- ClickHouse.MySql ClickHouse
-
 DROP TABLE IF EXISTS ReplacingMergeTreeTable;
 
 -- ClickHouse.MySql ClickHouse
-
 CREATE TABLE ReplacingMergeTreeTable
 (
 	ID UInt32,
@@ -268,7 +236,6 @@ PARTITION BY toDate(TS)
 ORDER BY ID;
 
 -- ClickHouse.MySql ClickHouse
-
 INSERT INTO LinqDataTypes
 (
 	ID,
@@ -297,7 +264,6 @@ VALUES
 (12,toDecimal128('11.45', 10),toDateTime64('2012-11-07 19:19:29.090', 3),NULL,true,toUUID('03021d18-97f0-4dc0-98d0-f0c7df4a1230'),toInt16(12),NULL,NULL,'0')
 
 -- ClickHouse.MySql ClickHouse
-
 INSERT INTO Parent
 (
 	ParentID,
@@ -313,7 +279,6 @@ VALUES
 (7,1)
 
 -- ClickHouse.MySql ClickHouse
-
 INSERT INTO Child
 (
 	ParentID,
@@ -339,7 +304,6 @@ VALUES
 (7,77)
 
 -- ClickHouse.MySql ClickHouse
-
 INSERT INTO GrandChild
 (
 	ParentID,
@@ -371,7 +335,6 @@ VALUES
 (4,42,424)
 
 -- ClickHouse.MySql ClickHouse
-
 INSERT INTO InheritanceParent
 (
 	InheritanceParentId,
@@ -384,7 +347,6 @@ VALUES
 (3,2,'InheritanceParent2')
 
 -- ClickHouse.MySql ClickHouse
-
 INSERT INTO InheritanceChild
 (
 	InheritanceChildId,

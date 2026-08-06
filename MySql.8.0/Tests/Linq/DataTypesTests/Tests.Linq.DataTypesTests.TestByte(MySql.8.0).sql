@@ -14,7 +14,6 @@ WHERE
 	`r`.`Column` = @Column AND `r`.`ColumnNullable` = @ColumnNullable
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`r`.`Id`,
 	`r`.`Column`,
@@ -25,7 +24,6 @@ WHERE
 	`r`.`Column` = 255 AND `r`.`ColumnNullable` = 2
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 DELETE  
 FROM
 	`ByteTable`
@@ -73,7 +71,6 @@ VALUES
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Column`,
@@ -84,13 +81,11 @@ ORDER BY
 	`t1`.`Id`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 DELETE  
 FROM
 	`ByteTable`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 INSERT INTO `ByteTable`
 (
 	`Id`,
@@ -102,7 +97,6 @@ VALUES
 (2,255,2)
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Column`,
@@ -113,13 +107,11 @@ ORDER BY
 	`t1`.`Id`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 DELETE  
 FROM
 	`ByteTable`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 INSERT INTO `ByteTable`
 (
 	`Id`,
@@ -131,7 +123,6 @@ VALUES
 (2,255,2)
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Column`,

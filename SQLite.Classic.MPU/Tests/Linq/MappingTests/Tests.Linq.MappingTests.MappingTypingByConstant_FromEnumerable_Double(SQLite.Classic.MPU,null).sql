@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[arg].[Id],
 	[arg].[Value]
@@ -13,7 +12,6 @@ FROM
 			) [arg] ON [entity].[PersonID] = [arg].[Id]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[arg].[Id],
 	[arg].[Value]

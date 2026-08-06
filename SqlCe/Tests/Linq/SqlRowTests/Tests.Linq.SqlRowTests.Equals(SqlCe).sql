@@ -1,43 +1,38 @@
 ﻿-- SqlCe
-
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Ints] [i]
 WHERE
 	[i].[Two] = [i].[One] * 2 AND [i].[Three] = [i].[Four] - 1
 
 -- SqlCe
-
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Ints] [i]
 WHERE
 	[i].[Four] = [i].[Three]
 
 -- SqlCe
-
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Ints] [i]
 WHERE
 	[i].[Nil] = [i].[Two]
 
 -- SqlCe
-
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Ints] [i]
 WHERE
 	1 = [i].[One] AND [i].[Nil] = [i].[Nil] AND 3 = [i].[Three]
 
 -- SqlCe
-
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Ints] [i]
 WHERE

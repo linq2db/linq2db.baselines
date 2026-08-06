@@ -1,5 +1,4 @@
 ﻿-- Northwind.SQLite.MS SQLite.MS SQLite
-
 SELECT
 	[a_Customer_1].[CustomerID],
 	[a_Customer_1].[CompanyName],

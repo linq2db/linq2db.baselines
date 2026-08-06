@@ -8,11 +8,7 @@ SET
 	"Value3" = CAST(@Value3 AS Int),
 	"Value1" = (
 		SELECT
-			(
-				SELECT
-					"r"."RelatedValue1"
-				FROM rdb$database
-			)
+			"r"."RelatedValue1"
 		FROM
 			"UpdateRelation" "r"
 		WHERE
@@ -20,11 +16,7 @@ SET
 	),
 	"Value2" = (
 		SELECT
-			(
-				SELECT
-					"r_1"."RelatedValue2"
-				FROM rdb$database
-			)
+			"r_1"."RelatedValue2"
 		FROM
 			"UpdateRelation" "r_1"
 		WHERE

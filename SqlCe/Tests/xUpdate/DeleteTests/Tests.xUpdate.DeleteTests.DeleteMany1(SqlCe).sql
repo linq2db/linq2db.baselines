@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 INSERT INTO [Parent]
 (
 	[ParentID]
@@ -10,7 +9,6 @@ VALUES
 )
 
 -- SqlCe
-
 INSERT INTO [Child]
 (
 	[ParentID],
@@ -23,7 +21,6 @@ VALUES
 )
 
 -- SqlCe
-
 INSERT INTO [Child]
 (
 	[ParentID],
@@ -36,7 +33,6 @@ VALUES
 )
 
 -- SqlCe
-
 DELETE FROM
 	[Child]
 WHERE
@@ -52,14 +48,12 @@ WHERE
 	)
 
 -- SqlCe
-
 DELETE FROM
 	[Child]
 WHERE
 	[Child].[ParentID] >= 1000
 
 -- SqlCe
-
 DELETE FROM
 	[Parent]
 WHERE

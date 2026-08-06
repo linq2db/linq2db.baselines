@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[x_1].[MiddleName],
 	[x_1].[LastName]
@@ -12,10 +11,10 @@ FROM
 			[Person] [x]
 	) [x_1]
 ORDER BY
-	Coalesce([x_1].[MiddleName], N'-2') DESC
+	Coalesce([x_1].[MiddleName], N'-2') DESC,
+	Coalesce([x_1].[LastName], N'-1')
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

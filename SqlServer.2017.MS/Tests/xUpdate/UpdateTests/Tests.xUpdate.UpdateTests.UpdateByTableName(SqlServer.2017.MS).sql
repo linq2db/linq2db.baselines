@@ -24,14 +24,12 @@ VALUES
 )
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	COUNT(*)
 FROM
 	[xxPerson] [t1]
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT TOP (2)
 	[t1].[FirstName],
 	[t1].[PersonID],
@@ -64,7 +62,6 @@ WHERE
 	[xxPerson].[PersonID] = @ID
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT TOP (2)
 	[t1].[FirstName],
 	[t1].[PersonID],

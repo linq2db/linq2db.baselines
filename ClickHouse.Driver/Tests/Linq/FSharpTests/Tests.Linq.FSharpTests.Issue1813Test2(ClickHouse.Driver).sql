@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 INSERT INTO Names
 (
 	Id,
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 INSERT INTO Names
 (
 	Id,
@@ -25,7 +23,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 INSERT INTO Addresses
 (
 	Id,
@@ -38,7 +35,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	m_1.Id,
 	d.Id,
@@ -50,7 +46,6 @@ ORDER BY
 	m_1.Id
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	after_1.Id,
 	after_1.Name

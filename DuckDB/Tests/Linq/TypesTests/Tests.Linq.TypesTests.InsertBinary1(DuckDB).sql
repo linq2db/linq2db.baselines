@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 DELETE FROM
 	LinqDataTypes t1
 WHERE
@@ -23,7 +22,6 @@ VALUES
 )
 
 -- DuckDB
-
 DELETE FROM
 	LinqDataTypes t1
 WHERE

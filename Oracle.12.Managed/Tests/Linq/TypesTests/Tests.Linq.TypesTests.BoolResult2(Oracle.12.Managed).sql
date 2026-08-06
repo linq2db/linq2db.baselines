@@ -1,5 +1,4 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	CASE
 		WHEN a_Patient."PersonID" IS NOT NULL THEN 1

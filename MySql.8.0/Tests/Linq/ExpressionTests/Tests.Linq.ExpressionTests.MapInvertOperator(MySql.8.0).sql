@@ -10,7 +10,6 @@ SET
 	`t1`.`Value` = (`t1`.`Value` | @addMask) & ~@removeMask
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value`

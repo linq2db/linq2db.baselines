@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 UPDATE
 	"TableWithConverterValue" "x"
 SET
@@ -11,7 +10,6 @@ WHERE
 	"x"."Id" = 1
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"x"."Id",
 	"x"."NoConversion",
@@ -24,7 +22,6 @@ WHERE
 LIMIT 2
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"x"."Id",
 	"x"."NoConversion",

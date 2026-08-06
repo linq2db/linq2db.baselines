@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 SELECT
 	[p].[ParentID] + 1,
 	[p].[ParentID]
@@ -17,7 +16,6 @@ WHERE
 	[p_1].[ParentID] = 2
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

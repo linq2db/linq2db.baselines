@@ -1,13 +1,10 @@
 ﻿-- Firebird.5 Firebird4
-
 SELECT Cast('<xml/>' as varchar(100)) FROM "Dual"
 
 -- Firebird.5 Firebird4
-
 SELECT Cast('<xml/>' as varchar(100)) FROM "Dual"
 
 -- Firebird.5 Firebird4
-
 SELECT Cast('<xml/>' as varchar(100)) FROM "Dual"
 
 -- Firebird.5 Firebird4

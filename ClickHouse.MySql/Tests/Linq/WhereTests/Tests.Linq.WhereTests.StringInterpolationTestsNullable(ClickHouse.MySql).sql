@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.FirstName,
 	t1.LastName,
@@ -20,7 +19,6 @@ ORDER BY
 	t1.LastName
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.FirstName,
 	t1.PersonID,

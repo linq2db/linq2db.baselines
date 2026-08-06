@@ -20,7 +20,6 @@ VALUES
 )
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t"."Id",
 	"t"."Name",
@@ -45,7 +44,6 @@ WHERE
 	"t1"."Id" = @Id
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t"."Id",
 	"t"."Name",
@@ -74,7 +72,6 @@ VALUES
 )
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t"."Id",
 	"t"."Name",
@@ -102,7 +99,6 @@ WHERE
 	"t1"."Id" = @Id
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t"."Id",
 	"t"."Name",

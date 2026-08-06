@@ -28,7 +28,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	CASE
 		WHEN "t"."VarCharColumn" IS NOT NULL THEN LTRIM("t"."VarCharColumn", '.+')

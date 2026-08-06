@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 INSERT INTO [Parent]
 (
 	[ParentID],
@@ -8,7 +7,6 @@ INSERT INTO [Parent]
 SELECT 111001,NULL
 
 -- Sybase.Managed Sybase
-
 INSERT INTO [Child]
 (
 	[ParentID],

@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
-
+﻿-- PostgreSQL.13 PostgreSQL12
 SELECT
 	t."Id",
 	t."Value"
@@ -8,8 +7,7 @@ FROM
 WHERE
 	t."Value"
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	t."Id",
 	t."Value"
@@ -18,8 +16,7 @@ FROM
 WHERE
 	t."Value" = True
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	t."Id",
 	t."Value"
@@ -28,8 +25,7 @@ FROM
 WHERE
 	t."Value" = False
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	t."Id",
 	t."Value"
@@ -38,8 +34,7 @@ FROM
 WHERE
 	NOT t."Value"
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	t."Id",
 	t."Value"
@@ -48,8 +43,7 @@ FROM
 WHERE
 	t."Value" = False
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	t."Id",
 	t."Value"

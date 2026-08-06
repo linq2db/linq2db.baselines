@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 CREATE TABLE "Table"
 (
 	ID INTEGER,
@@ -8,6 +7,5 @@ CREATE TABLE "Table"
 )
 
 -- DuckDB
-
 DROP TABLE "Table"
 

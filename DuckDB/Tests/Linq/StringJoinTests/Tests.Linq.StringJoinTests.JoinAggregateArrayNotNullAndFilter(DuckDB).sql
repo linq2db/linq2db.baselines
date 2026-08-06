@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	CONCAT_WS(', ', CASE
 		WHEN x.NullableValue LIKE '%A%' ESCAPE '~' THEN x.NullableValue
@@ -32,7 +31,6 @@ WHERE
 	END)) <> 0
 
 -- DuckDB
-
 SELECT
 	t1.PK,
 	t1.Id,

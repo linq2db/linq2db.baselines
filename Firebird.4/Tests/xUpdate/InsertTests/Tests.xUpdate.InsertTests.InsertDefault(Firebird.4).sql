@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 INSERT INTO "Person"
 (
 	"FirstName",
@@ -16,7 +15,6 @@ VALUES
 )
 
 -- Firebird.4 Firebird4
-
 DELETE FROM
 	"Person" "p"
 WHERE

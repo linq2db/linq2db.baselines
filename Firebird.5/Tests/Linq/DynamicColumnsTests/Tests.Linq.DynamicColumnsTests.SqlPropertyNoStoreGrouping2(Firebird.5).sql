@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 SELECT
 	"g_1"."FirstName",
 	"g_1"."LastName",

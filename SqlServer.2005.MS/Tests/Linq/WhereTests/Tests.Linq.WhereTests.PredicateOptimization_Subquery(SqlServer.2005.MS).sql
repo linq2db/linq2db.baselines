@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[p].[PK],
 	[p].[Id],
@@ -25,7 +24,6 @@ WHERE
 	) > CAST(N'2023-01-01' AS DateTime)
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[p].[PK],
 	[p].[Id],

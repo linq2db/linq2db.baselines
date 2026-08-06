@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	g_1.GroupId,
 	minOrNull(g_1.DataValue),
@@ -27,7 +26,6 @@ GROUP BY
 	g_1.GroupId
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.Id,
 	t1.GroupId,

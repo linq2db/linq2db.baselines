@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 WITH RECURSIVE "cte" ("Value2")
 AS
 (
@@ -83,7 +82,6 @@ FROM
 		INNER JOIN "CteTable" "d_1" ON "m_1"."Id" = "d_1"."Value3"
 
 -- Firebird.5 Firebird4
-
 WITH RECURSIVE "cte" ("Value2")
 AS
 (

@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT SKIP 2 FIRST 1
 	t1.FirstName,
 	t1.PersonID,

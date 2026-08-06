@@ -1,5 +1,4 @@
 ﻿-- Northwind.SQLite SQLite.Classic SQLite
-
 SELECT
 	[m_1].[CustomerID],
 	[d].[CustomerID],
@@ -24,7 +23,6 @@ FROM
 		INNER JOIN [Customers] [d] ON [d].[CustomerID] = [m_1].[CustomerID]
 
 -- Northwind.SQLite SQLite.Classic SQLite
-
 SELECT
 	[a_Customer].[CustomerID]
 FROM

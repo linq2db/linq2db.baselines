@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
-
+﻿-- PostgreSQL.13 PostgreSQL12
 SELECT
 	t."Id",
 	t."Value"
@@ -8,8 +7,7 @@ FROM
 WHERE
 	t."Value" IS NULL
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	t."Id",
 	t."Value"
@@ -18,8 +16,7 @@ FROM
 WHERE
 	1 = 0
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	t."Id",
 	t."Value"
@@ -28,8 +25,7 @@ FROM
 WHERE
 	t."Value" IS NOT NULL
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	t."Id",
 	t."Value"

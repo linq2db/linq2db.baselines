@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	CASE
 		WHEN t."c1" * 2 = ROUND(t."c1" * 2, 5) AND t."c1" <> ROUND(t."c1", 5)

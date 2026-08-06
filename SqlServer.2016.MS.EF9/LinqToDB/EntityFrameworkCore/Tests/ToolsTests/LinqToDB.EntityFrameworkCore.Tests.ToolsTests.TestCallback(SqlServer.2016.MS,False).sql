@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016
-
 DELETE [e]
 FROM
 	[Products] [e]

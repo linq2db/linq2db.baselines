@@ -12,7 +12,6 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 UPDATE
 	"TableWithIdentity" t1
 SET
@@ -20,7 +19,6 @@ SET
 	"Value" = 123
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Value"

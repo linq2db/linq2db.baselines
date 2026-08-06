@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	ess.ID
 FROM
@@ -15,7 +14,6 @@ WHERE
 	)
 
 -- Informix.DB2 Informix
-
 SELECT
 	ess.ID
 FROM

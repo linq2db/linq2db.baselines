@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"g_2"."n",
 	SUM("g_2"."ParentID")

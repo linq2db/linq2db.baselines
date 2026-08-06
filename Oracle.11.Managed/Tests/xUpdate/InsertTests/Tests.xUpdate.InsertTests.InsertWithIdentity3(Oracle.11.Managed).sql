@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 DELETE FROM
 	"Person" t1
 WHERE
@@ -31,7 +30,6 @@ RETURNING
 	"PersonID" INTO :IDENTITY_PARAMETER
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	p."FirstName",
 	p."PersonID",
@@ -45,7 +43,6 @@ WHERE
 	ROWNUM <= 2
 
 -- Oracle.11.Managed Oracle11
-
 DELETE FROM
 	"Person" t1
 WHERE

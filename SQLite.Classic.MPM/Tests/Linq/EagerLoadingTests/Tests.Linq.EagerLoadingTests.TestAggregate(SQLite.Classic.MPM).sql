@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	Coalesce((
 		SELECT
@@ -37,7 +36,6 @@ FROM
 	[MasterClass] [m_1]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[m_1].[Id1],
 	[d].[DetailId],
@@ -53,7 +51,6 @@ FROM
 		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id1],
 	[t1].[Id2],

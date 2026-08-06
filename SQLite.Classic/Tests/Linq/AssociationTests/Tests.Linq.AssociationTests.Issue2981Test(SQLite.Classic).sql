@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT
 	[r].[OwnerId],
 	[a_Owner].[Id]

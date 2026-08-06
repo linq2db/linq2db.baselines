@@ -8,7 +8,6 @@ WHERE
 	[LinqDataTypes].[ID] >= 101 AND [LinqDataTypes].[ID] < @p
 
 -- SqlCe
-
 INSERT INTO [LinqDataTypes]
 (
 	[ID],
@@ -21,11 +20,10 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT
-	[entity].[ID] as [Id],
-	[entity].[BigIntValue] as [TestField],
-	[entity].[IntValue] as [Int32Field]
+	[entity].[ID],
+	[entity].[BigIntValue],
+	[entity].[IntValue]
 FROM
 	[LinqDataTypes] [entity]
 WHERE

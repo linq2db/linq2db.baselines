@@ -1,17 +1,13 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT CVar(1)
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT CVar(1)
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT CVar(1)
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT CVar(1)
 
 -- Access.Ace.OleDb AccessOleDb

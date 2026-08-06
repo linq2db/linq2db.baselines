@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
-
+﻿-- PostgreSQL.13 PostgreSQL12
 UPDATE
 	"billing_TempReading"
 SET
@@ -11,8 +10,7 @@ WHERE
 	drt."Name" = "billing_TempReading"."ReadingTypeName" AND
 	drt."DevTypeId" = "billing_TempReading"."Devtypeid"
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 UPDATE
 	"billing_TempReading"
 SET

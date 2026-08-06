@@ -19,7 +19,6 @@ WHERE
 	@param = [t1].[BigIntValue]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[ID],
 	[t1].[MoneyValue],

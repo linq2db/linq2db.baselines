@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT /*+ NO_XMLINDEX_REWRITE */
 	p."ParentID",
 	p."Value1"

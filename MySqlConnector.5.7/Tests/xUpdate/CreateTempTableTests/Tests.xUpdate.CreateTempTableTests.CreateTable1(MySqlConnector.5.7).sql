@@ -1,9 +1,7 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 DROP TABLE IF EXISTS `TempTable`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 CREATE TABLE IF NOT EXISTS `TempTable`
 (
 	`ID` INT NOT NULL,
@@ -12,7 +10,6 @@ CREATE TABLE IF NOT EXISTS `TempTable`
 )
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 INSERT INTO `TempTable`
 (
 	`ID`
@@ -23,14 +20,12 @@ FROM
 	`Parent` `p`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t1`.`ID`
 FROM
 	`TempTable` `t1`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t`.`ID`
 FROM
@@ -38,6 +33,5 @@ FROM
 		INNER JOIN `TempTable` `t` ON `p`.`ParentID` = `t`.`ID`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 DROP TABLE IF EXISTS `TempTable`
 

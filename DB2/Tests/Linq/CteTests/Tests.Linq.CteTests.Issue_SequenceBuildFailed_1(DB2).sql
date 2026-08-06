@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 WITH "cte" ("Id")
 AS
 (
@@ -35,7 +34,6 @@ FROM
 		INNER JOIN "Person" "d" ON "d"."PersonID" = "m_1"."Id"
 
 -- DB2 DB2.LUW DB2LUW
-
 WITH "cte" ("Id")
 AS
 (

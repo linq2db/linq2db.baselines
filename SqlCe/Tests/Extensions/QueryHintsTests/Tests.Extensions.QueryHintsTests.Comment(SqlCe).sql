@@ -7,7 +7,6 @@ FROM
 ----
 
 -- SqlCe
-
 SELECT
 	[p].[ParentID],
 	[p].[Value1]
@@ -24,7 +23,6 @@ FROM
 ---
 
 -- SqlCe
-
 SELECT
 	[p].[ParentID],
 	[p].[Value1]

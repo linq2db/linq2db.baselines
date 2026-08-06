@@ -1,5 +1,4 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(CASE
 		WHEN g_1."ChildID" > 30 THEN 1

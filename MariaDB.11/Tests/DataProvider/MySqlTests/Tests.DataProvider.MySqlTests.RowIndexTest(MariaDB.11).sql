@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 /*(SELECT @n := 0) `rowcounter`*/
 SELECT
 	@n:=@n+1,

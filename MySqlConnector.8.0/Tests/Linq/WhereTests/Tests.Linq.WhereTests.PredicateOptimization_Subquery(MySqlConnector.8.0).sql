@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`p`.`PK`,
 	`p`.`Id`,
@@ -25,7 +24,6 @@ WHERE
 	) > STR_TO_DATE('2023-01-01 00:00:00.000', '%Y-%m-%d %H:%i:%s.%f')
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`p`.`PK`,
 	`p`.`Id`,

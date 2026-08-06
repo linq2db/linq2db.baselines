@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 SELECT DISTINCT
 	[a_Child].[ID]
 FROM

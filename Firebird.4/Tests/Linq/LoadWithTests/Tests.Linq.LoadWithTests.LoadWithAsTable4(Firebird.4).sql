@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 SELECT
 	"m_1"."ParentID",
 	"d"."ParentID",
@@ -18,7 +17,6 @@ FROM
 		LEFT JOIN "Parent" "a_Parent" ON "d"."ParentID" = "a_Parent"."ParentID"
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t"."ParentID",
 	"t"."Value1"

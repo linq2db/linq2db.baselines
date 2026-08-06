@@ -34,7 +34,6 @@ WHERE
 	[Issue1554FluentTable].[Id] = 0
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[ClaimedKeyType],

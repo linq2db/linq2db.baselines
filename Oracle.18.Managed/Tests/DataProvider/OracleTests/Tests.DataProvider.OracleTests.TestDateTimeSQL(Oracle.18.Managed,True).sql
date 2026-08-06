@@ -52,7 +52,6 @@ VALUES
 )
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	r."Date",
 	r."DateTime",
@@ -71,7 +70,6 @@ WHERE
 	r."Date" = DATE '2020-01-03'
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	r."Date",
 	r."DateTime",
@@ -90,7 +88,6 @@ WHERE
 	r."DateTime" = TIMESTAMP '2020-01-03 04:05:06.789123'
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	r."Date",
 	r."DateTime",
@@ -109,7 +106,6 @@ WHERE
 	r."DateTime_" = TO_DATE('2020-01-03 04:05:06', 'YYYY-MM-DD HH24:MI:SS')
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	r."Date",
 	r."DateTime",
@@ -128,7 +124,6 @@ WHERE
 	r."DateTime2" = TIMESTAMP '2020-01-03 04:05:06.789123'
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	r."Date",
 	r."DateTime",
@@ -147,7 +142,6 @@ WHERE
 	r."DateTime2_0" = TIMESTAMP '2020-01-03 04:05:06'
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	r."Date",
 	r."DateTime",
@@ -166,7 +160,6 @@ WHERE
 	r."DateTime2_1" = TIMESTAMP '2020-01-03 04:05:06.7'
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	r."Date",
 	r."DateTime",
@@ -185,7 +178,6 @@ WHERE
 	r."DateTime2_9" = TIMESTAMP '2020-01-03 04:05:06.7891234'
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	r."Date",
 	r."DateTime",
@@ -201,10 +193,9 @@ SELECT
 FROM
 	"Test0431" r
 WHERE
-	r."DateTimeOffset_" = TIMESTAMP '2020-01-03 03:20:06.789123 +00:00'
+	r."DateTimeOffset_" = TIMESTAMP '2020-01-03 04:05:06.789123 +00:45'
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	r."Date",
 	r."DateTime",
@@ -220,10 +211,9 @@ SELECT
 FROM
 	"Test0431" r
 WHERE
-	r."DateTimeOffset_0" = TIMESTAMP '2020-01-03 03:20:06 +00:00'
+	r."DateTimeOffset_0" = TIMESTAMP '2020-01-03 04:05:06 +00:45'
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	r."Date",
 	r."DateTime",
@@ -239,10 +229,9 @@ SELECT
 FROM
 	"Test0431" r
 WHERE
-	r."DateTimeOffset_1" = TIMESTAMP '2020-01-03 03:20:06.7 +00:00'
+	r."DateTimeOffset_1" = TIMESTAMP '2020-01-03 04:05:06.7 +00:45'
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	r."Date",
 	r."DateTime",
@@ -258,5 +247,5 @@ SELECT
 FROM
 	"Test0431" r
 WHERE
-	r."DateTimeOffset_9" = TIMESTAMP '2020-01-03 03:20:06.7891234 +00:00'
+	r."DateTimeOffset_9" = TIMESTAMP '2020-01-03 04:05:06.7891234 +00:45'
 

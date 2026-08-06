@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`m_1`.`ParentID`,
 	`d`.`ChildID`
@@ -15,7 +14,6 @@ ORDER BY
 	`m_1`.`ParentID`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`p`.`ParentID`
 FROM

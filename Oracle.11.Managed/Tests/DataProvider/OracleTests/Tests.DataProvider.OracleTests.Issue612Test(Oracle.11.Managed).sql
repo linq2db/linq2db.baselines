@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 CREATE TABLE "DateTimeOffsetTable"
 (
 	"DateTimeOffsetValue" timestamp with time zone NOT NULL
@@ -19,7 +18,6 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	x."DateTimeOffsetValue"
 FROM
@@ -28,6 +26,5 @@ WHERE
 	ROWNUM <= 2
 
 -- Oracle.11.Managed Oracle11
-
 DROP TABLE "DateTimeOffsetTable"
 

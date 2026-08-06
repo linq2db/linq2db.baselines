@@ -1,9 +1,7 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
-
 IF EXISTS (SELECT * FROM sys.types WHERE name = 'IntTableType') DROP TYPE IntTableType
 
 -- SqlServer.2008.MS SqlServer.2008
-
 CREATE TYPE IntTableType AS TABLE(Id INT)
 
 -- SqlServer.2008.MS SqlServer.2008
@@ -37,6 +35,5 @@ ORDER BY
 	[p].[PersonID]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 IF EXISTS (SELECT * FROM sys.types WHERE name = 'IntTableType') DROP TYPE IntTableType
 

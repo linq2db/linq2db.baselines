@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	[a_GrandChildren].[ParentID],
 	[a_GrandChildren].[ChildID],

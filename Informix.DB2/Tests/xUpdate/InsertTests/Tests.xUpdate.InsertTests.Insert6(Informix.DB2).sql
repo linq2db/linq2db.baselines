@@ -1,12 +1,10 @@
 ﻿-- Informix.DB2 Informix
-
 DELETE FROM
 	Parent
 WHERE
 	Parent.Value1 = 11
 
 -- Informix.DB2 Informix
-
 INSERT INTO Parent
 (
 	ParentID,
@@ -21,7 +19,6 @@ WHERE
 	c_1.ChildID = 11
 
 -- Informix.DB2 Informix
-
 SELECT
 	COUNT(*)
 FROM
@@ -30,7 +27,6 @@ WHERE
 	p.Value1 = 11
 
 -- Informix.DB2 Informix
-
 DELETE FROM
 	Parent
 WHERE

@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"m_1"."PersonID",
 	"m_1"."FirstName",
@@ -11,14 +10,12 @@ FROM
 	"Person" "m_1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."PersonID"
 FROM
 	"Person" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"m_1"."PersonID",
 	"m_1"."FirstName",
@@ -30,7 +27,6 @@ FROM
 	"Person" "m_1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."PersonID"
 FROM

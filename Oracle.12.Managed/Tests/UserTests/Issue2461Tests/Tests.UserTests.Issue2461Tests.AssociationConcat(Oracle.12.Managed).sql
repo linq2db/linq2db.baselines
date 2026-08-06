@@ -1,5 +1,4 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	i_1."ReceiptNo",
 	a_Customer.BILLGROUP

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 SELECT
 	COUNT(*)
 FROM
@@ -9,7 +8,6 @@ WHERE
 	[p].[PersonID] = 1
 
 -- SqlServer.2022
-
 SELECT
 	COUNT(*)
 FROM
@@ -19,7 +17,6 @@ WHERE
 	[p].[PersonID] = 1
 
 -- SqlServer.2022
-
 SELECT
 	COUNT(*)
 FROM

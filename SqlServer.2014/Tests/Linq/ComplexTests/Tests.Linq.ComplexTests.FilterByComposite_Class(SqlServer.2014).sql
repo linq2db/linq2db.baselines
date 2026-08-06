@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014
-
 SELECT TOP (2)
 	[u].[Id],
 	[u].[user_name],

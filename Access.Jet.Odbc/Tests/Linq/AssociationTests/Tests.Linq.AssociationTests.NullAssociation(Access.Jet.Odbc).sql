@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[a_ParentTest].[ParentID],
 	[a_ParentTest].[Value1]

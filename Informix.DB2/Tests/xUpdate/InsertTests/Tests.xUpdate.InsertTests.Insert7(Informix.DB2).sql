@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 DELETE FROM
 	Child
 WHERE
@@ -18,8 +17,8 @@ INSERT INTO Child
 )
 VALUES
 (
-	@id::Int,
-	@ParentID::Int
+	@id,
+	@ParentID
 )
 
 -- Informix.DB2 Informix
@@ -34,7 +33,6 @@ WHERE
 	c_1.ChildID = @id
 
 -- Informix.DB2 Informix
-
 DELETE FROM
 	Child
 WHERE

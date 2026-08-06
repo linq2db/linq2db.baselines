@@ -20,7 +20,6 @@ VALUES
 )
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT TOP (1)
 	[t].[Id],
 	[t].[Name],
@@ -52,7 +51,6 @@ VALUES
 )
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT TOP (1)
 	[t].[Id],
 	[t].[Name],

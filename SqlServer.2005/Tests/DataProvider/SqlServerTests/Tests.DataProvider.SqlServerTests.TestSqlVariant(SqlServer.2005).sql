@@ -1,17 +1,13 @@
 ﻿-- SqlServer.2005
-
 SELECT Cast(1 as sql_variant)
 
 -- SqlServer.2005
-
 SELECT Cast(1 as sql_variant)
 
 -- SqlServer.2005
-
 SELECT Cast(1 as sql_variant)
 
 -- SqlServer.2005
-
 SELECT Cast(1 as sql_variant)
 
 -- SqlServer.2005

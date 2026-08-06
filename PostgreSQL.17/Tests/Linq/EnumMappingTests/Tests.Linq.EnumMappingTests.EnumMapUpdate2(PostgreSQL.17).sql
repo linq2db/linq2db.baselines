@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 DECLARE @p Integer -- Int32
 SET     @p = 102
 
@@ -7,8 +7,7 @@ DELETE FROM
 WHERE
 	r."ID" >= 101 AND r."ID" < :p
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 INSERT INTO "LinqDataTypes"
 (
 	"ID",
@@ -20,8 +19,7 @@ VALUES
 	11
 )
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 UPDATE
 	"LinqDataTypes"
 SET
@@ -29,8 +27,7 @@ SET
 WHERE
 	"LinqDataTypes"."ID" = 101 AND "LinqDataTypes"."BigIntValue" = 11
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	r."BigIntValue"
 FROM
@@ -39,7 +36,7 @@ WHERE
 	r."ID" = 101 AND r."BigIntValue" = 12
 LIMIT 1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 DECLARE @p Integer -- Int32
 SET     @p = 102
 

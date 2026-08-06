@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT DISTINCT
 	[a_Parent].[ParentID],
 	[a_Parent].[Value1]

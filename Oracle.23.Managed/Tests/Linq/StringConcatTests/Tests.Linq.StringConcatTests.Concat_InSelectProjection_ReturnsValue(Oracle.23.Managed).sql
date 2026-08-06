@@ -1,5 +1,4 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	e."Str1" || '/' || e."StrReq"
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	e."Id"
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Str1",

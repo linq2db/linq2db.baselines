@@ -1,9 +1,7 @@
 ﻿-- SqlCe
-
 SELECT Cast(1 as timestamp)
 
 -- SqlCe
-
 SELECT Cast(1 as rowversion)
 
 -- SqlCe

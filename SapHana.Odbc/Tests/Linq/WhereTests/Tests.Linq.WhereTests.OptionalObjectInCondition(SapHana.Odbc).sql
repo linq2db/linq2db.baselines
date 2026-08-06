@@ -14,7 +14,6 @@ WHERE
 	"r"."FirstName" = ?
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"r"."FirstName",
 	"r"."PersonID",

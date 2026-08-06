@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT TOP 1
 	CASE
 		WHEN [t].[EnumValue] = 'S' THEN 'Second'

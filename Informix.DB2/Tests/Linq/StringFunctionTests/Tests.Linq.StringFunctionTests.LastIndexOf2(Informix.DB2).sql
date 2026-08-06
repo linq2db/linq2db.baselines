@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	p.PersonID,
 	'123' || p.FirstName || '012345'

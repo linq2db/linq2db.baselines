@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `TestBool`
 (
 	`Id`,
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value`
@@ -21,14 +19,12 @@ FROM
 LIMIT 2
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 UPDATE
 	`TestBool` `t1`
 SET
 	`t1`.`Value` = NOT `t1`.`Value`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value`
@@ -37,7 +33,6 @@ FROM
 LIMIT 2
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 UPDATE
 	`TestBool` `r`
 SET
@@ -46,7 +41,6 @@ WHERE
 	`r`.`Id` = 1
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value`

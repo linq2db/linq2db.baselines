@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 MERGE INTO "Person" "Target"
 USING (
 	SELECT
@@ -29,7 +28,6 @@ SET
 	"LastName" = 'Updated'
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."FirstName",
 	"t1"."PersonID",

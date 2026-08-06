@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 SELECT
 	"g_1"."TestId",
 	COUNT(*)
@@ -11,7 +10,6 @@ ORDER BY
 	"g_1"."TestId"
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."TestId"

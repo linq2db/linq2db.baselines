@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Age Integer -- Int32
@@ -15,8 +15,7 @@ VALUES
 	:Age
 )
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	t."Id",
 	t."Name",
@@ -27,7 +26,7 @@ WHERE
 	t."Id" = 1
 LIMIT 1
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Age Integer -- Int32
@@ -44,8 +43,7 @@ VALUES
 	:Age
 )
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	t."Id",
 	t."Name",

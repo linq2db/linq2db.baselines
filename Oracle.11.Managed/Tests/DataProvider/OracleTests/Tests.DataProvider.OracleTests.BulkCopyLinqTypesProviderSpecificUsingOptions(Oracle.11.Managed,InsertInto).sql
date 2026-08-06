@@ -24,7 +24,6 @@ SET     @:p7 = {NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL}
 INSERT INTO "LinqDataTypes" (ID, "MoneyValue", "DateTimeValue", "BoolValue", "BinaryValue", "SmallIntValue", "StringValue") VALUES (:p1, :p2, :p3, :p4, :p5, :p6, :p7)
 
 -- Oracle.11.Managed Oracle11
-
 DELETE FROM
 	"LinqDataTypes" p
 WHERE

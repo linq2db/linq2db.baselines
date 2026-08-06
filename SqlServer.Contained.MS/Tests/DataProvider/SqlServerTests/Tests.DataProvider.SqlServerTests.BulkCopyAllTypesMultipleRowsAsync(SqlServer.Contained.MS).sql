@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained.MS SqlServer.2019
-
 DELETE [p]
 FROM
 	[AllTypes] [p]
@@ -7,11 +6,9 @@ WHERE
 	[p].[ID] >= 700
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SET IDENTITY_INSERT [AllTypes] ON
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 INSERT INTO [AllTypes]
 (
 	[ID],
@@ -61,11 +58,9 @@ VALUES
 (701,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SET IDENTITY_INSERT [AllTypes] OFF
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[t].[ID],
 	[t].[bigintDataType],
@@ -117,7 +112,6 @@ ORDER BY
 	[t].[ID]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 DELETE [p]
 FROM
 	[AllTypes] [p]

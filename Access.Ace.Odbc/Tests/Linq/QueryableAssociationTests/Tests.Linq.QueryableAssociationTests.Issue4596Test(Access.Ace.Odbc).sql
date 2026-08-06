@@ -1,9 +1,8 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[m_1].[Id],
 	[m_1].[C1],
-	[d].[Id],
+	[d].[Id] as [Id_1],
 	[d].[FormId],
 	[d].[OrderIndex],
 	[d].[Name1],
@@ -25,7 +24,6 @@ ORDER BY
 	IIF([m_1].[C1] <> 'T', [d].[Name3], '')
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT TOP 1
 	[t1].[Id],
 	[t1].[C1]

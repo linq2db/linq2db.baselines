@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	GROUP_CONCAT([t2].[NullableValue], ', ')
 FROM

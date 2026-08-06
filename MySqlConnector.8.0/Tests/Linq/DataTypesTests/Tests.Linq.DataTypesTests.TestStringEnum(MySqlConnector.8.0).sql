@@ -14,7 +14,6 @@ WHERE
 	`r`.`Column` = @Column AND `r`.`ColumnNullable` = @ColumnNullable
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`r`.`Id`,
 	`r`.`Column`,
@@ -25,7 +24,6 @@ WHERE
 	`r`.`Column` = 'value=2' AND `r`.`ColumnNullable` = 'value=33'
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 DELETE  
 FROM
 	`StringEnumTable`
@@ -73,7 +71,6 @@ VALUES
 )
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Column`,
@@ -84,13 +81,11 @@ ORDER BY
 	`t1`.`Id`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 DELETE  
 FROM
 	`StringEnumTable`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 INSERT INTO `StringEnumTable`
 (
 	`Id`,
@@ -102,7 +97,6 @@ VALUES
 (2,'value=2','value=33')
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Column`,
@@ -113,7 +107,6 @@ ORDER BY
 	`t1`.`Id`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 DELETE  
 FROM
 	`StringEnumTable`
@@ -121,7 +114,6 @@ FROM
 INSERT BULK `StringEnumTable`(Id, Column, ColumnNullable)
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Column`,

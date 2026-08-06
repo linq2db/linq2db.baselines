@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[x_1].[MiddleName],
 	[x_1].[LastName]
@@ -15,13 +14,13 @@ FROM
 			[Person] [x]
 	) [x_1]
 ORDER BY
-	Coalesce([x_1].[MiddleName], '-2') DESC
+	Coalesce([x_1].[MiddleName], '-2') DESC,
+	Coalesce([x_1].[LastName], '-1')
 
 -- SqlCe
-
 SELECT
 	[t1].[FirstName],
-	[t1].[PersonID] as [ID],
+	[t1].[PersonID],
 	[t1].[LastName],
 	[t1].[MiddleName],
 	[t1].[Gender]

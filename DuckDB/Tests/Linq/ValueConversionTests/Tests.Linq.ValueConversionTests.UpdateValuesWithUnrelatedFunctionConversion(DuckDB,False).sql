@@ -15,7 +15,6 @@ WHERE
 	TableWithConverterValue.Id = 1
 
 -- DuckDB
-
 SELECT
 	x.Id,
 	x.NoConversion,

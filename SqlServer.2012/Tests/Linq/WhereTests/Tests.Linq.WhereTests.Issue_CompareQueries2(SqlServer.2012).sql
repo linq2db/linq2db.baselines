@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012
-
 SELECT TOP (2)
 	COUNT([p].[PersonID])
 FROM
@@ -15,7 +14,6 @@ WHERE
 	)
 
 -- SqlServer.2012
-
 SELECT TOP (2)
 	COUNT([p].[PersonID])
 FROM

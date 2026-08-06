@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	1
 FROM
@@ -8,7 +7,6 @@ WHERE
 	"t1"."id" = 1
 
 -- SapHana.Odbc SapHanaOdbc
-
 INSERT INTO "test_insert_or_replace"
 (
 	"id",
@@ -21,7 +19,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	1
 FROM

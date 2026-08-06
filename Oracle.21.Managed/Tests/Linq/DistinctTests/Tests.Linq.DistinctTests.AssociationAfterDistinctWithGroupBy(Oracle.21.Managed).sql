@@ -1,5 +1,4 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	a_Parent_1."ParentID",
 	COUNT(*)
@@ -21,7 +20,6 @@ ORDER BY
 	a_Parent_1."ParentID"
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."ParentID",
 	t1."ChildID",

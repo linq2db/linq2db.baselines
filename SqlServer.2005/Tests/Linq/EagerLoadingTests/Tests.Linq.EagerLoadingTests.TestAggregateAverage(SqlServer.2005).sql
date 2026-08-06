@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 SELECT
 	(
 		SELECT
@@ -40,7 +39,6 @@ WHERE
 	) > 1
 
 -- SqlServer.2005
-
 SELECT
 	[m_1].[Id1],
 	[d].[DetailId],
@@ -56,7 +54,6 @@ FROM
 		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
 
 -- SqlServer.2005
-
 SELECT
 	[t1].[Id1],
 	[t1].[Id2],

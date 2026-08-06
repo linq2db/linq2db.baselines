@@ -55,7 +55,6 @@ ORDER BY
 LIMIT @take OFFSET @skip
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	COUNT(*)
 FROM

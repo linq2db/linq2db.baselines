@@ -24,7 +24,6 @@ VALUES
 )
 
 -- SqlServer.2012
-
 SELECT TOP (1)
 	[t1].[FirstName],
 	[t1].[PersonID],

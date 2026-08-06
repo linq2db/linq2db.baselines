@@ -16,7 +16,6 @@ VALUES
 )
 
 -- SqlServer.2022
-
 SELECT TOP (2)
 	[e].[Id],
 	[e].[Date]

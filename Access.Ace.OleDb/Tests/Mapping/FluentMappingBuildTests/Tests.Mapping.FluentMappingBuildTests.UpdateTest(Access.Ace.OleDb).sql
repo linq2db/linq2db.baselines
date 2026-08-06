@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 CREATE TABLE [FluentTemp_Update]
 (
 	[ID]       Int          NOT NULL,
@@ -45,6 +44,5 @@ WHERE
 	[t].[ID] = 1
 
 -- Access.Ace.OleDb AccessOleDb
-
 DROP TABLE [FluentTemp_Update]
 

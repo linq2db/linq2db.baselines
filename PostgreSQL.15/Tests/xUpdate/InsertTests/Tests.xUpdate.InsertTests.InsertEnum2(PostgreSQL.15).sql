@@ -1,11 +1,10 @@
-﻿-- PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.15 PostgreSQL12
 DELETE FROM
 	"Parent" t1
 WHERE
 	t1."ParentID" > 1000
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL12
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1001
 DECLARE @Value1 Integer -- Int32
@@ -22,7 +21,7 @@ VALUES
 	:Value1
 )
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL12
 DECLARE @id Integer -- Int32
 SET     @id = 1001
 
@@ -33,8 +32,7 @@ FROM
 WHERE
 	t1."ParentID" = :id
 
--- PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.15 PostgreSQL12
 DELETE FROM
 	"Parent" t1
 WHERE

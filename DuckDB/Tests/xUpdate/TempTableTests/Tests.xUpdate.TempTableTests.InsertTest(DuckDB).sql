@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 INSERT INTO Table2
 (
 	ID
@@ -10,7 +9,6 @@ FROM
 	Table1 t
 
 -- DuckDB
-
 SELECT
 	t1.ID,
 	t1."Date"

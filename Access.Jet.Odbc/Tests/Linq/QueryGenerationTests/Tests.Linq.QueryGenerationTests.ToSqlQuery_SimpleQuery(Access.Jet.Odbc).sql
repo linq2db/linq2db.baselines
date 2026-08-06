@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],
@@ -12,7 +11,6 @@ WHERE
 	[p].[PersonID] = 1
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT TOP 2
 	[p].[FirstName],
 	[p].[PersonID],

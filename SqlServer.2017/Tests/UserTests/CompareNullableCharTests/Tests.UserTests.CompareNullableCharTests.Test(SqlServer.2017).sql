@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 SELECT
 	[current_1].[Field1],
 	[previous].[Field1]

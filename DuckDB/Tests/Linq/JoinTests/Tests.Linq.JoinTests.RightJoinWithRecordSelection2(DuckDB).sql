@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	fact_1.Id,
 	t1.Id,

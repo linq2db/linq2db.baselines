@@ -1,12 +1,10 @@
 ﻿-- SqlCe
-
 DELETE FROM
 	[GrandChild]
 WHERE
 	[GrandChild].[GrandChildID] IN (1001, 1002)
 
 -- SqlCe
-
 INSERT INTO [GrandChild]
 (
 	[ParentID],
@@ -21,7 +19,6 @@ VALUES
 )
 
 -- SqlCe
-
 INSERT INTO [GrandChild]
 (
 	[ParentID],
@@ -36,16 +33,14 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[GrandChild] [gc]
 WHERE
 	[gc].[ParentID] = 1
 
 -- SqlCe
-
 DELETE FROM
 	[GrandChild]
 WHERE
@@ -64,9 +59,8 @@ WHERE
 	)
 
 -- SqlCe
-
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[GrandChild] [gc]
 WHERE

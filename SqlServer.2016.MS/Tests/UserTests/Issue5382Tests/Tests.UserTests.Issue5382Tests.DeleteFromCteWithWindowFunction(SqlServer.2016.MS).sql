@@ -1,11 +1,10 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
-
 WITH [CTE_1] ([Sample_IntColumn], [RowNum_1], [Sample_Value])
 AS
 (
 	SELECT
 		[sample_1].[IntColumn],
-		ROW_NUMBER() OVER(PARTITION BY [sample_1].[IntColumn] ORDER BY [sample_1].[DateColumn]),
+		ROW_NUMBER() OVER (PARTITION BY [sample_1].[IntColumn] ORDER BY [sample_1].[DateColumn]),
 		[sample_1].[Value]
 	FROM
 		[SampleTable] [sample_1]
@@ -18,7 +17,6 @@ WHERE
 	[prev].[Sample_Value] = [query].[Sample_Value]
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	[t1].[IntColumn],
 	[t1].[DateColumn],

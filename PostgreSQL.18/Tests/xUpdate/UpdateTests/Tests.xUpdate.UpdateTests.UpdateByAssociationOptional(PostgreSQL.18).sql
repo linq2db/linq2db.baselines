@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL12
 DECLARE @id Integer -- Int32
 SET     @id = 3
 
@@ -12,8 +12,7 @@ FROM
 WHERE
 	t1."Id" = :id AND "a_AssociatedOptional"."Id" = "MainTable"."Id"
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Field"

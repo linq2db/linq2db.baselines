@@ -1,9 +1,7 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DROP TABLE IF EXISTS "DropTableTestID"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 CREATE TABLE "DropTableTestID"
 (
 	"ID"  SERIAL  NOT NULL,
@@ -12,8 +10,7 @@ CREATE TABLE "DropTableTestID"
 	CONSTRAINT "PK_DropTableTestID" PRIMARY KEY ("ID")
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 INSERT INTO "DropTableTestID"
 (
 	"ID1"
@@ -23,20 +20,17 @@ VALUES
 	2
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	t."ID",
 	t."ID1"
 FROM
 	"DropTableTestID" t
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DROP TABLE "DropTableTestID"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."ID",
 	t1."ID1"

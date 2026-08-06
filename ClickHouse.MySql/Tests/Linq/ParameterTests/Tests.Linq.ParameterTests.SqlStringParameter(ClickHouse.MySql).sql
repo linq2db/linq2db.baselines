@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	t.PersonID,
 	t.FirstName,
@@ -13,7 +12,6 @@ WHERE
 LIMIT 2
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t.PersonID,
 	t.FirstName,

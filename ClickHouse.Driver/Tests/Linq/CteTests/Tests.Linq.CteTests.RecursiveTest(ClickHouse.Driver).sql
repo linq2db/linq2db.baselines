@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 WITH RECURSIVE MY_CTE AS
 (
 	SELECT

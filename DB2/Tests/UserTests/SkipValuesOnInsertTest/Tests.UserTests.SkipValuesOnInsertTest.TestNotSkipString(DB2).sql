@@ -20,7 +20,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t"."Id",
 	"t"."Name",
@@ -53,7 +52,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t"."Id",
 	"t"."Name",

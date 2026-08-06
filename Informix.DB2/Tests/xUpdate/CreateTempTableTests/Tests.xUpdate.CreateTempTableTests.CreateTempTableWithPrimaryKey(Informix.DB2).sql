@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 CREATE TEMP TABLE TableWithPrimaryKey
 (
 	"Key" Int NOT NULL,
@@ -8,6 +7,5 @@ CREATE TEMP TABLE TableWithPrimaryKey
 )
 
 -- Informix.DB2 Informix
-
 DROP TABLE IF EXISTS TableWithPrimaryKey
 

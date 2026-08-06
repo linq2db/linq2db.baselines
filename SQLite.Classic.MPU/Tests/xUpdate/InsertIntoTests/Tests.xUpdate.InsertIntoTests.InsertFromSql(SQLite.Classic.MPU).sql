@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 INSERT INTO [InsertTestClassDest]
 (
 	[Id],
@@ -14,7 +13,6 @@ FROM
 	) [x]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value],
@@ -24,7 +22,6 @@ FROM
 LIMIT 2
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value],

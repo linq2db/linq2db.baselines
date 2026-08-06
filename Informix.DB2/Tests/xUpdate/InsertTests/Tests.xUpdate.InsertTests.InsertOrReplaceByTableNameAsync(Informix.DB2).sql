@@ -59,7 +59,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT
 	COUNT(*)
 FROM
@@ -92,7 +91,6 @@ WHERE
 	t1.PersonID = @PersonID
 
 -- Informix.DB2 Informix
-
 SELECT
 	COUNT(*)
 FROM

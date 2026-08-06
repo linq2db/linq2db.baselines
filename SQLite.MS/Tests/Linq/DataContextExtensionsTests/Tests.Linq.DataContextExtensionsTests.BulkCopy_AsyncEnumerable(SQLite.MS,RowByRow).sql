@@ -33,7 +33,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -43,7 +42,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SQLite.MS SQLite
-
 DELETE FROM
 	[BulkCopyTable]
 
@@ -82,7 +80,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -92,7 +89,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SQLite.MS SQLite
-
 DELETE FROM
 	[BulkCopyTable]
 
@@ -131,7 +127,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -141,7 +136,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SQLite.MS SQLite
-
 DELETE FROM
 	[BulkCopyTable]
 
@@ -180,7 +174,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -190,7 +183,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SQLite.MS SQLite
-
 DELETE FROM
 	[BulkCopyTable]
 
@@ -229,7 +221,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -239,7 +230,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SQLite.MS SQLite
-
 DELETE FROM
 	[BulkCopyTable]
 
@@ -278,7 +268,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -288,7 +277,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SQLite.MS SQLite
-
 DELETE FROM
 	[BulkCopyTable]
 
@@ -327,7 +315,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -337,7 +324,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SQLite.MS SQLite
-
 DELETE FROM
 	[BulkCopyTable]
 
@@ -376,7 +362,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -386,7 +371,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SQLite.MS SQLite
-
 DELETE FROM
 	[BulkCopyTable]
 
@@ -425,7 +409,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -435,7 +418,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SQLite.MS SQLite
-
 DELETE FROM
 	[BulkCopyTable]
 
@@ -474,7 +456,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -484,7 +465,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SQLite.MS SQLite
-
 DELETE FROM
 	[BulkCopyTable]
 
@@ -523,7 +503,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -533,7 +512,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SQLite.MS SQLite
-
 DELETE FROM
 	[BulkCopyTable]
 
@@ -572,7 +550,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -582,7 +559,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SQLite.MS SQLite
-
 DELETE FROM
 	[BulkCopyTable]
 
@@ -621,7 +597,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -631,7 +606,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SQLite.MS SQLite
-
 DELETE FROM
 	[BulkCopyTable]
 
@@ -670,7 +644,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -680,7 +653,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SQLite.MS SQLite
-
 DELETE FROM
 	[BulkCopyTable]
 
@@ -719,7 +691,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -729,7 +700,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SQLite.MS SQLite
-
 DELETE FROM
 	[BulkCopyTable]
 
@@ -768,7 +738,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -778,7 +747,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SQLite.MS SQLite
-
 DELETE FROM
 	[BulkCopyTable]
 
@@ -817,7 +785,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -827,7 +794,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SQLite.MS SQLite
-
 DELETE FROM
 	[BulkCopyTable]
 
@@ -866,7 +832,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -876,7 +841,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SQLite.MS SQLite
-
 DELETE FROM
 	[BulkCopyTable]
 

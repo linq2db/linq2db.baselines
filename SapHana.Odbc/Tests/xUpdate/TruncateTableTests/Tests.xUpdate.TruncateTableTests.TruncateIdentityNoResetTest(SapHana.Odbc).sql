@@ -1,9 +1,7 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 DELETE FROM "test_temp"
 
 -- SapHana.Odbc SapHanaOdbc
-
 INSERT INTO "test_temp"
 (
 	"Field1"
@@ -14,7 +12,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 INSERT INTO "test_temp"
 (
 	"Field1"
@@ -38,11 +35,9 @@ ORDER BY
 LIMIT 2 OFFSET ?
 
 -- SapHana.Odbc SapHanaOdbc
-
 DELETE FROM "test_temp"
 
 -- SapHana.Odbc SapHanaOdbc
-
 INSERT INTO "test_temp"
 (
 	"Field1"
@@ -53,7 +48,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 INSERT INTO "test_temp"
 (
 	"Field1"

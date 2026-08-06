@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	SUM(Nvl(a_Parent.Value1, 0))
 FROM

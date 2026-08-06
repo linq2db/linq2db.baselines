@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[g_2].[ID1],
 	[g_2].[ID2] + 1,

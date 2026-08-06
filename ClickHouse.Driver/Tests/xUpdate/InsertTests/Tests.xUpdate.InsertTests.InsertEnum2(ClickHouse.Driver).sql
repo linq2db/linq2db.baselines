@@ -1,12 +1,10 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 ALTER TABLE
 	Parent
 DELETE WHERE
 	ParentID > 1000
 
 -- ClickHouse.Driver ClickHouse
-
 INSERT INTO Parent
 (
 	ParentID,
@@ -19,7 +17,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	COUNT(*)
 FROM
@@ -28,7 +25,6 @@ WHERE
 	t1.ParentID = 1001
 
 -- ClickHouse.Driver ClickHouse
-
 ALTER TABLE
 	Parent
 DELETE WHERE

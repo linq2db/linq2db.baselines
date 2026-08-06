@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	'I-' || CAST(x.PersonID AS VARCHAR),
 	x.FirstName

@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[s].[ID],
 	[s].[FirstName]
@@ -15,7 +14,6 @@ WHERE
 	[s].[FirstName] <> ''
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

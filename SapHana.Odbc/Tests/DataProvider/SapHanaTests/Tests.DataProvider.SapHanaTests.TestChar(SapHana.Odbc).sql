@@ -1,17 +1,13 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT Cast('1' as char) from dummy
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT Cast('1' as char) from dummy
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT Cast('1' as char(1)) from dummy
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT Cast('1' as char(1)) from dummy
 
 -- SapHana.Odbc SapHanaOdbc

@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	COUNT(*)
 FROM
@@ -8,7 +7,6 @@ WHERE
 	[r].[One] IS [r].[One]
 
 -- SQLite.MS SQLite
-
 SELECT
 	COUNT(*)
 FROM
@@ -17,7 +15,6 @@ WHERE
 	[r].[Zero] IS [r].[Zero]
 
 -- SQLite.MS SQLite
-
 SELECT
 	COUNT(*)
 FROM
@@ -26,7 +23,6 @@ WHERE
 	[r].[Null] IS [r].[Null]
 
 -- SQLite.MS SQLite
-
 SELECT
 	COUNT(*)
 FROM
@@ -35,7 +31,6 @@ WHERE
 	[r].[One] IS [r].[Zero]
 
 -- SQLite.MS SQLite
-
 SELECT
 	COUNT(*)
 FROM
@@ -44,7 +39,6 @@ WHERE
 	[r].[One] IS [r].[Null]
 
 -- SQLite.MS SQLite
-
 SELECT
 	COUNT(*)
 FROM
@@ -53,7 +47,6 @@ WHERE
 	[r].[Zero] IS [r].[Null]
 
 -- SQLite.MS SQLite
-
 SELECT
 	COUNT(*)
 FROM
@@ -62,7 +55,6 @@ WHERE
 	[r].[One] IS NOT [r].[One]
 
 -- SQLite.MS SQLite
-
 SELECT
 	COUNT(*)
 FROM
@@ -71,7 +63,6 @@ WHERE
 	[r].[Zero] IS NOT [r].[Zero]
 
 -- SQLite.MS SQLite
-
 SELECT
 	COUNT(*)
 FROM
@@ -80,7 +71,6 @@ WHERE
 	[r].[Null] IS NOT [r].[Null]
 
 -- SQLite.MS SQLite
-
 SELECT
 	COUNT(*)
 FROM
@@ -89,7 +79,6 @@ WHERE
 	[r].[One] IS NOT [r].[Zero]
 
 -- SQLite.MS SQLite
-
 SELECT
 	COUNT(*)
 FROM
@@ -98,7 +87,6 @@ WHERE
 	[r].[One] IS NOT [r].[Null]
 
 -- SQLite.MS SQLite
-
 SELECT
 	COUNT(*)
 FROM

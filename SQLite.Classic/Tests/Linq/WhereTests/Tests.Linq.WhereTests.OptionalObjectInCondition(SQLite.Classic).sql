@@ -14,7 +14,6 @@ WHERE
 	[r].[FirstName] = @p
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[r].[FirstName],
 	[r].[PersonID],

@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 CREATE TEMPORARY TABLE `TableWithPrimaryKey2`
 (
 	`Key` INT NOT NULL,
@@ -8,7 +7,6 @@ CREATE TEMPORARY TABLE `TableWithPrimaryKey2`
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `TableWithPrimaryKey2`
 (
 	`Key`
@@ -17,6 +15,5 @@ VALUES
 (1)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DROP TEMPORARY TABLE IF EXISTS `TableWithPrimaryKey2`
 

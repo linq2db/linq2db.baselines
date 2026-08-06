@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 INSERT INTO TableToInsert
 (
 	Id,
@@ -17,7 +16,6 @@ WHERE
 	t.Id IS NULL
 
 -- DuckDB
-
 INSERT INTO TableToInsert
 (
 	Id,

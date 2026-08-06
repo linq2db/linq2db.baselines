@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 CREATE TEMPORARY TABLE temp.[temp_table1]
 (
 	[ID]    INTEGER NOT NULL,
@@ -9,7 +8,6 @@ CREATE TEMPORARY TABLE temp.[temp_table1]
 )
 
 -- SQLite.Classic SQLite
-
 INSERT INTO temp.[temp_table1]
 (
 	[ID],
@@ -19,7 +17,6 @@ VALUES
 (1,2)
 
 -- SQLite.Classic SQLite
-
 CREATE TEMPORARY TABLE temp.[temp_table2]
 (
 	[ID]    INTEGER NOT NULL,
@@ -29,7 +26,6 @@ CREATE TEMPORARY TABLE temp.[temp_table2]
 )
 
 -- SQLite.Classic SQLite
-
 INSERT INTO temp.[temp_table2]
 (
 	[ID],
@@ -42,7 +38,6 @@ FROM
 	temp.[temp_table1] [t1]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[ID],
 	[t1].[Value]
@@ -50,7 +45,6 @@ FROM
 	temp.[temp_table1] [t1]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[ID],
 	[t1].[Value]
@@ -58,7 +52,6 @@ FROM
 	temp.[temp_table2] [t1]
 
 -- SQLite.Classic SQLite
-
 INSERT INTO temp.[temp_table1]
 (
 	[ID],
@@ -85,7 +78,6 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-
 INSERT INTO temp.[temp_table1]
 (
 	[ID],
@@ -95,18 +87,14 @@ VALUES
 (4,5)
 
 -- SQLite.Classic SQLite
-
 DELETE FROM temp.[temp_table1]
 
 -- SQLite.Classic SQLite
-
 DELETE FROM temp.[temp_table2]
 
 -- SQLite.Classic SQLite
-
 DROP TABLE IF EXISTS temp.[temp_table2]
 
 -- SQLite.Classic SQLite
-
 DROP TABLE IF EXISTS temp.[temp_table1]
 

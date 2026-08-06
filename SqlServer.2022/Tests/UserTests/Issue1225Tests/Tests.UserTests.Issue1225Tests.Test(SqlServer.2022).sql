@@ -46,7 +46,6 @@ VALUES
 )
 
 -- SqlServer.2022
-
 SELECT
 	N'Id',
 	[it].[Id],

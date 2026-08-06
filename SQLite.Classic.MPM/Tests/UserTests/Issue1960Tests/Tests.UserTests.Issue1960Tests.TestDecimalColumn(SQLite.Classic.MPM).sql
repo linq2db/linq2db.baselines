@@ -20,7 +20,6 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t1].[Decimal1],
 	[t1].[Decimal2],

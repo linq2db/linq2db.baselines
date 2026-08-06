@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[s].[Id],
 	[s].[Value],
@@ -10,7 +9,6 @@ WHERE
 	[s].[Id] = 3
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 DELETE FROM
 	[TableWithData]
 WHERE

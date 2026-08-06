@@ -1,21 +1,16 @@
 ﻿-- SqlCe
-
 SELECT Cast(12345 as binary(2))
 
 -- SqlCe
-
 SELECT Cast(12345 as binary(4))
 
 -- SqlCe
-
 SELECT Cast(12345 as varbinary(2))
 
 -- SqlCe
-
 SELECT Cast(12345 as varbinary(4))
 
 -- SqlCe
-
 SELECT Cast(NULL as image)
 
 -- SqlCe

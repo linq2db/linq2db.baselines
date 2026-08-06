@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014.MS SqlServer.2014
-
 DELETE [t1]
 FROM
 	[TestMergeIdentity] [t1]
@@ -18,14 +17,12 @@ VALUES
 )
 
 -- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	MAX([t1].[Id])
 FROM
 	[TestMergeIdentity] [t1]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 MERGE INTO [TestMergeIdentity] [Target]
 USING (VALUES
 	(10)
@@ -52,7 +49,6 @@ SET
 ;
 
 -- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	[t1].[Id],
 	[t1].[Field]

@@ -1,12 +1,10 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[e].[Id]
 FROM
 	[ConcatTestEntity] [e]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[Str1],

@@ -1,9 +1,7 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT '<xml/>'
 
 -- SQLite.MS SQLite
-
 SELECT '<xml/>'
 
 -- SQLite.MS SQLite

@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 DELETE FROM
 	[Parent]
 WHERE
@@ -34,7 +33,6 @@ WHERE
 	[t1].[ParentID] = @id AND [t1].[Value1] = @Value1
 
 -- SQLite.MS SQLite
-
 DELETE FROM
 	[Parent]
 WHERE

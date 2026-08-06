@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 CREATE TABLE `temp_table_1`
 (
 	`ID`    INT           NOT NULL,
@@ -9,7 +8,6 @@ CREATE TABLE `temp_table_1`
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `temp_table_1`
 (
 	`ID`,
@@ -19,7 +17,6 @@ VALUES
 (1,'Value')
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 CREATE TABLE `temp_table_2`
 (
 	`Value` VARCHAR(50) NOT NULL,
@@ -28,7 +25,6 @@ CREATE TABLE `temp_table_2`
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `temp_table_2`
 (
 	`Value`
@@ -47,10 +43,8 @@ FROM
 		) `t1` ON `gr`.`ID` = `t1`.`ID` AND `t1`.`rn` = 1
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DROP TABLE IF EXISTS `temp_table_2`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DROP TABLE IF EXISTS `temp_table_1`
 

@@ -12,14 +12,12 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 UPDATE
 	[TableWithIdentity]
 SET
 	[Value] = 123
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 2
 	[t1].[Id],
 	[t1].[Value]

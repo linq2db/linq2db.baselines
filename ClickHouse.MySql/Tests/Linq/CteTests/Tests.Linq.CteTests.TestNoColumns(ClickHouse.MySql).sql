@@ -1,12 +1,10 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	COUNT(*)
 FROM
 	Child t1
 
 -- ClickHouse.MySql ClickHouse
-
 WITH CTE1_ AS
 (
 	SELECT
@@ -20,7 +18,6 @@ FROM
 	CTE1_ t2
 
 -- ClickHouse.MySql ClickHouse
-
 WITH CTE1_ AS
 (
 	SELECT
@@ -34,7 +31,6 @@ FROM
 	CTE1_ t1
 
 -- ClickHouse.MySql ClickHouse
-
 WITH CTE1_ AS
 (
 	SELECT

@@ -1,12 +1,9 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
-
 SELECT 1 UNION ALL SELECT 2
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT 1 UNION ALL SELECT 2
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT 1 UNION ALL SELECT 2
 

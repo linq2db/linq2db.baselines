@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT /* qb */
 	t.PersonID,
 	t.Diagnosis

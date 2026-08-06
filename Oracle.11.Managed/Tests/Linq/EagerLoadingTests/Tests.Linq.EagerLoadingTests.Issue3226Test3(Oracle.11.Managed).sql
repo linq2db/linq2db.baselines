@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	m_1."Id",
 	d."Value"
@@ -8,7 +7,6 @@ FROM
 		INNER JOIN "ItemValue" d ON m_1."Id" = d."ItemId"
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	x."Id",
 	x."Text"

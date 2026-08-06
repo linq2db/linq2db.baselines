@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"a_Parent_1"."ParentID",
 	COUNT(*)
@@ -21,7 +20,6 @@ ORDER BY
 	"a_Parent_1"."ParentID"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."ParentID",
 	"t1"."ChildID",

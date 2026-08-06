@@ -1,33 +1,25 @@
 ﻿-- SqlCe
-
 SELECT Cast('12345' as nchar)
 
 -- SqlCe
-
 SELECT Cast('12345' as nchar(20))
 
 -- SqlCe
-
 SELECT Cast(NULL    as nchar(20))
 
 -- SqlCe
-
 SELECT Cast('12345' as nvarchar)
 
 -- SqlCe
-
 SELECT Cast('12345' as nvarchar(20))
 
 -- SqlCe
-
 SELECT Cast(NULL    as nvarchar(20))
 
 -- SqlCe
-
 SELECT Cast('12345' as ntext)
 
 -- SqlCe
-
 SELECT Cast(NULL    as ntext)
 
 -- SqlCe

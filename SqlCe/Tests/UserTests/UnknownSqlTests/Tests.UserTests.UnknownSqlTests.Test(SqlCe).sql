@@ -1,7 +1,6 @@
 ﻿-- SqlCe
-
 SELECT
-	0 as [DataType]
+	0
 FROM
 	[CustomTableColumn] [x]
 

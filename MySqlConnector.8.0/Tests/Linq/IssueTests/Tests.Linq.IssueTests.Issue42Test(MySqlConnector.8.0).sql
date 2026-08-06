@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`r`.`ID`,
 	`r`.`MoneyValue`,
@@ -18,7 +17,6 @@ WHERE
 LIMIT 1
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`r`.`ID`,
 	`r`.`MoneyValue`,
@@ -132,7 +130,6 @@ WHERE
 	`t1`.`ID` = @ID
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`r`.`ID`,
 	`r`.`MoneyValue`,

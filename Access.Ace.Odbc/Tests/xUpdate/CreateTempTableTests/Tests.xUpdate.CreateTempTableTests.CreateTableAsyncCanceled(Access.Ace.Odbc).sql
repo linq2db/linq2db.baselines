@@ -1,16 +1,13 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 DROP TABLE [TempTable]
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[p].[ParentID]
 FROM
 	[Parent] [p]
 
 -- Access.Ace.Odbc AccessODBC
-
 CREATE TABLE [TempTable]
 (
 	[ID] Int NOT NULL,
@@ -19,6 +16,5 @@ CREATE TABLE [TempTable]
 )
 
 -- Access.Ace.Odbc AccessODBC
-
 DROP TABLE [TempTable]
 

@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[p].[PersonID],
 	[p2].[FirstName]
@@ -11,7 +10,6 @@ WHERE
 	[p].[PersonID] = [p2].[PersonID]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[p].[PersonID],
 	[p2].[FirstName]

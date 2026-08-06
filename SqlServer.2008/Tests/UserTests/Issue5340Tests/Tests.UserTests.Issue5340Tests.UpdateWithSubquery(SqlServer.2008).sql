@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008
-
 UPDATE
 	[OuterTable]
 SET
@@ -15,7 +14,6 @@ SET
 	)
 
 -- SqlServer.2008
-
 SELECT
 	[t1].[Id],
 	[t1].[Field1],

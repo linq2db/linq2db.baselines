@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 UPDATE
 	"TableWithConverterValue" "x"
 SET
@@ -8,7 +7,6 @@ WHERE
 	"x"."Id" = 1
 
 -- Firebird.2.5 Firebird
-
 SELECT FIRST 2
 	"x"."Id",
 	"x"."NoConversion",
@@ -20,7 +18,6 @@ WHERE
 	"x"."Id" = 1
 
 -- Firebird.2.5 Firebird
-
 UPDATE
 	"TableWithConverterValue" "x"
 SET
@@ -29,7 +26,6 @@ WHERE
 	"x"."Id" = 2
 
 -- Firebird.2.5 Firebird
-
 SELECT FIRST 2
 	"x"."Id",
 	"x"."NoConversion",
@@ -41,7 +37,6 @@ WHERE
 	"x"."Id" = 2
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"x"."Id",
 	"x"."NoConversion",

@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 UPDATE
 	`TableToInsert` `t`
 		INNER JOIN (
@@ -10,7 +9,6 @@ SET
 	`t`.`Value` = `r`.`Value`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value`

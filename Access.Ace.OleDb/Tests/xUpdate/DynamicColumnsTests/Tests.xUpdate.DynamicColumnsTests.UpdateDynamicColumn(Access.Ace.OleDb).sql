@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 INSERT INTO [Person]
 (
 	[FirstName],
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	COUNT(*)
 FROM
@@ -23,7 +21,6 @@ WHERE
 	[c_1].[LastName] = 'Limonadovy'
 
 -- Access.Ace.OleDb AccessOleDb
-
 UPDATE
 	[Person] [c_1]
 SET
@@ -32,7 +29,6 @@ WHERE
 	[c_1].[LastName] = 'Limonadovy'
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	COUNT(*)
 FROM

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[tp12].[Id],
 	[tp12].[ResourceID],

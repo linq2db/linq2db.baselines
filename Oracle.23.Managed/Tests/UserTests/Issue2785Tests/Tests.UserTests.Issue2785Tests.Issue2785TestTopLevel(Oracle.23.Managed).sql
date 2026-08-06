@@ -3,8 +3,8 @@ DECLARE @take Int32
 SET     @take = 10
 
 SELECT
-	a."PersonID" as ID,
-	a."PersonID" as "Id2"
+	a."PersonID",
+	a."PersonID" as "Id2_1"
 FROM
 	"Person" a
 FETCH NEXT :take ROWS ONLY

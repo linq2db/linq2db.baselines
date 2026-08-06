@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 DELETE [t]
 FROM
 	[LinqDataTypes] [t]
@@ -24,7 +23,6 @@ VALUES
 )
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT TOP (2)
 	[t].[ID],
 	[t].[MoneyValue],
@@ -39,7 +37,6 @@ WHERE
 	[t].[ID] = 1001
 
 -- SqlServer.SA SqlServer.2019
-
 DELETE [t]
 FROM
 	[LinqDataTypes] [t]

@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	e.Id,
 	e.GuidValue,
@@ -11,7 +10,6 @@ WHERE
 	e.Id = 1 AND e.Id = 2
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1.GuidValue,
@@ -21,7 +19,6 @@ FROM
 	TestConstantsData t1
 
 -- Informix.DB2 Informix
-
 SELECT
 	e.Id,
 	e.GuidValue,
@@ -33,7 +30,6 @@ WHERE
 	e.Id = 1 AND e.Id = 2
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1.GuidValue,

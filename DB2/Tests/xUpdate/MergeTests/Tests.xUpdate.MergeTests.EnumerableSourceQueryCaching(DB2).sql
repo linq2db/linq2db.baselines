@@ -1,10 +1,8 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 DELETE FROM
 	"TestMerge1" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 MERGE INTO "TestMerge1" "Target"
 USING (VALUES
 	(0,1,2,4)
@@ -34,7 +32,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Field1",
@@ -48,12 +45,10 @@ ORDER BY
 	"t1"."Id"
 
 -- DB2 DB2.LUW DB2LUW
-
 DELETE FROM
 	"TestMerge1" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 MERGE INTO "TestMerge1" "Target"
 USING (VALUES
 	(10,11,12,14)
@@ -83,7 +78,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Field1",
@@ -97,12 +91,10 @@ ORDER BY
 	"t1"."Id"
 
 -- DB2 DB2.LUW DB2LUW
-
 DELETE FROM
 	"TestMerge1" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 MERGE INTO "TestMerge1" "Target"
 USING (VALUES
 	(20,21,22,24), (30,31,32,34)
@@ -132,7 +124,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Field1",

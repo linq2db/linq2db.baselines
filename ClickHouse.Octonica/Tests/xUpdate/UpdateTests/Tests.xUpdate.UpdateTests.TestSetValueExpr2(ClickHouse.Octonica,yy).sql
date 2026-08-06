@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	TextData
 UPDATE
@@ -9,7 +8,6 @@ WHERE
 	Id >= 1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Items1,

@@ -12,11 +12,9 @@ VALUES
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT LAST_INSERT_ID()
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `KeepIdentityTest`
 (
 	`Value`

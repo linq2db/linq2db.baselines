@@ -1,13 +1,11 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	x."ParentID"
 FROM
 	"Parent" x
 		INNER JOIN "Child" y ON x."ParentID" = y."ParentID"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT DISTINCT
 	g_1."ParentID"
 FROM

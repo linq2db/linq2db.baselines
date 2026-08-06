@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[p].[object_id],
 	OBJECT_SCHEMA_NAME([p].[object_id]),
@@ -33,7 +32,6 @@ VALUES
 )
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[p].[object_id],
 	OBJECT_SCHEMA_NAME([p].[object_id]),
@@ -51,7 +49,6 @@ ORDER BY
 
 RollbackTransaction
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[p].[object_id],
 	OBJECT_SCHEMA_NAME([p].[object_id]),

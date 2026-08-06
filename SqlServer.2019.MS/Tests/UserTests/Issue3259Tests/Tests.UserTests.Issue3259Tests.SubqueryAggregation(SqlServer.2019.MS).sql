@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t9].[WithParentReference],
 	[t9].[WithParentReferenceCustom1],

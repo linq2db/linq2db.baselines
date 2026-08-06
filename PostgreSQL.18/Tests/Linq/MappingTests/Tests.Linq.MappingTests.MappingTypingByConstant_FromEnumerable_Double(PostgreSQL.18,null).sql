@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
-
+﻿-- PostgreSQL.18 PostgreSQL12
 SELECT
 	arg."Id",
 	arg."Value"
@@ -9,8 +8,7 @@ FROM
 			(1,NULL::Float)
 		) arg("Id", "Value") ON entity."PersonID" = arg."Id"
 
--- PostgreSQL.18 PostgreSQL
-
+-- PostgreSQL.18 PostgreSQL12
 SELECT
 	arg."Id",
 	arg."Value"

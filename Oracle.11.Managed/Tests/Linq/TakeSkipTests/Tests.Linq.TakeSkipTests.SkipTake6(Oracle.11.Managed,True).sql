@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	c_1."ParentID",
 	c_1."ChildID"
@@ -17,7 +16,6 @@ WHERE
 	c_1."ParentID" = p_1."ParentID"
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	c_1."ParentID",
 	c_1."ChildID"

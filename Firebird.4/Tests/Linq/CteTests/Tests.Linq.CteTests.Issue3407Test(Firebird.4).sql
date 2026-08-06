@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 WITH CTE_1
 (
 	ID,
@@ -38,7 +37,6 @@ WHERE
 	"r".ID = 2
 
 -- Firebird.4 Firebird4
-
 WITH CTE_1 ("c1")
 AS
 (

@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	CONCAT(Coalesce(`e`.`Str1`, ''), '/', Coalesce(`e`.`StrReq`, ''))
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	`e`.`Id`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Str1`,

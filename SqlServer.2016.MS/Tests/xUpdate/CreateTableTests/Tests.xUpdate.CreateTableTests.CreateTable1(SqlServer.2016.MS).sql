@@ -1,9 +1,7 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
-
 DROP TABLE IF EXISTS [TestTable]
 
 -- SqlServer.2016.MS SqlServer.2016
-
 CREATE TABLE [TestTable]
 (
 	[ID]        Int             NOT NULL IDENTITY,
@@ -15,7 +13,6 @@ CREATE TABLE [TestTable]
 )
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	[t1].[ID],
 	[t1].[Field1],
@@ -25,6 +22,5 @@ FROM
 	[TestTable] [t1]
 
 -- SqlServer.2016.MS SqlServer.2016
-
 DROP TABLE [TestTable]
 

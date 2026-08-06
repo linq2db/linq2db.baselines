@@ -18,7 +18,6 @@ WHERE
 	r."Boolean" = @True::BOOLEAN
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1."Boolean",
@@ -52,7 +51,6 @@ WHERE
 	r."Boolean" = @False::BOOLEAN
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1."Boolean",
@@ -86,7 +84,6 @@ WHERE
 	r."Boolean" = @TrueN
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1."Boolean",
@@ -120,7 +117,6 @@ WHERE
 	r."Boolean" = @FalseN
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1."Boolean",
@@ -135,7 +131,6 @@ FROM
 	BooleanTable t1
 
 -- Informix.DB2 Informix
-
 SELECT
 	r.Id,
 	r."Boolean",
@@ -152,7 +147,6 @@ WHERE
 	1 = 0
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1."Boolean",
@@ -186,7 +180,6 @@ WHERE
 	r.BooleanN = @True::BOOLEAN
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1."Boolean",
@@ -220,7 +213,6 @@ WHERE
 	r.BooleanN = @False::BOOLEAN
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1."Boolean",
@@ -254,7 +246,6 @@ WHERE
 	r.BooleanN = @TrueN
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1."Boolean",
@@ -288,7 +279,6 @@ WHERE
 	r.BooleanN = @FalseN
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1."Boolean",
@@ -303,7 +293,6 @@ FROM
 	BooleanTable t1
 
 -- Informix.DB2 Informix
-
 SELECT
 	r.Id,
 	r."Boolean",
@@ -320,7 +309,6 @@ WHERE
 	r.BooleanN IS NULL
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1."Boolean",
@@ -354,7 +342,6 @@ WHERE
 	r."Boolean" <> @True::BOOLEAN
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1."Boolean",
@@ -388,7 +375,6 @@ WHERE
 	r."Boolean" <> @False::BOOLEAN
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1."Boolean",
@@ -422,7 +408,6 @@ WHERE
 	r."Boolean" <> @TrueN
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1."Boolean",
@@ -456,7 +441,6 @@ WHERE
 	r."Boolean" <> @FalseN
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1."Boolean",
@@ -471,7 +455,6 @@ FROM
 	BooleanTable t1
 
 -- Informix.DB2 Informix
-
 SELECT
 	r.Id,
 	r."Boolean",
@@ -486,7 +469,6 @@ FROM
 	BooleanTable r
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1."Boolean",
@@ -520,7 +502,6 @@ WHERE
 	r.BooleanN <> @True::BOOLEAN OR r.BooleanN IS NULL
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1."Boolean",
@@ -554,7 +535,6 @@ WHERE
 	r.BooleanN <> @False::BOOLEAN OR r.BooleanN IS NULL
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1."Boolean",
@@ -588,7 +568,6 @@ WHERE
 	r.BooleanN <> @TrueN OR r.BooleanN IS NULL
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1."Boolean",
@@ -622,7 +601,6 @@ WHERE
 	r.BooleanN <> @FalseN OR r.BooleanN IS NULL
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1."Boolean",
@@ -637,7 +615,6 @@ FROM
 	BooleanTable t1
 
 -- Informix.DB2 Informix
-
 SELECT
 	r.Id,
 	r."Boolean",
@@ -654,7 +631,6 @@ WHERE
 	r.BooleanN IS NOT NULL
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1."Boolean",
@@ -669,7 +645,6 @@ FROM
 	BooleanTable t1
 
 -- Informix.DB2 Informix
-
 SELECT
 	g_1.Id,
 	COUNT(CASE
@@ -860,7 +835,6 @@ GROUP BY
 	g_1.Id
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1."Boolean",
@@ -875,7 +849,6 @@ FROM
 	BooleanTable t1
 
 -- Informix.DB2 Informix
-
 SELECT
 	r.Id,
 	r.Int32 = 0,
@@ -1547,7 +1520,6 @@ FROM
 	BooleanTable r_1
 
 -- Informix.DB2 Informix
-
 SELECT
 	r.Id,
 	r."Boolean",
@@ -1564,7 +1536,6 @@ WHERE
 	r."Boolean" = 't'::BOOLEAN
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1."Boolean",
@@ -1579,7 +1550,6 @@ FROM
 	BooleanTable t1
 
 -- Informix.DB2 Informix
-
 SELECT
 	r.Id,
 	r."Boolean",
@@ -1596,7 +1566,6 @@ WHERE
 	r."Boolean" = 'f'::BOOLEAN
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1."Boolean",
@@ -1611,7 +1580,6 @@ FROM
 	BooleanTable t1
 
 -- Informix.DB2 Informix
-
 SELECT
 	r.Id,
 	r."Boolean",
@@ -1628,7 +1596,6 @@ WHERE
 	r."Boolean" = 't'::BOOLEAN
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1."Boolean",
@@ -1643,7 +1610,6 @@ FROM
 	BooleanTable t1
 
 -- Informix.DB2 Informix
-
 SELECT
 	r.Id,
 	r."Boolean",
@@ -1660,7 +1626,6 @@ WHERE
 	r."Boolean" = 'f'::BOOLEAN
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1."Boolean",
@@ -1675,7 +1640,6 @@ FROM
 	BooleanTable t1
 
 -- Informix.DB2 Informix
-
 SELECT
 	r.Id,
 	r."Boolean",
@@ -1692,7 +1656,6 @@ WHERE
 	1 = 0
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1."Boolean",
@@ -1707,7 +1670,6 @@ FROM
 	BooleanTable t1
 
 -- Informix.DB2 Informix
-
 SELECT
 	r.Id,
 	r."Boolean",
@@ -1724,7 +1686,6 @@ WHERE
 	r.BooleanN = 't'::BOOLEAN
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1."Boolean",
@@ -1739,7 +1700,6 @@ FROM
 	BooleanTable t1
 
 -- Informix.DB2 Informix
-
 SELECT
 	r.Id,
 	r."Boolean",
@@ -1756,7 +1716,6 @@ WHERE
 	r.BooleanN = 'f'::BOOLEAN
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1."Boolean",
@@ -1771,7 +1730,6 @@ FROM
 	BooleanTable t1
 
 -- Informix.DB2 Informix
-
 SELECT
 	r.Id,
 	r."Boolean",
@@ -1788,7 +1746,6 @@ WHERE
 	r.BooleanN = 't'::BOOLEAN
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1."Boolean",
@@ -1803,7 +1760,6 @@ FROM
 	BooleanTable t1
 
 -- Informix.DB2 Informix
-
 SELECT
 	r.Id,
 	r."Boolean",
@@ -1820,7 +1776,6 @@ WHERE
 	r.BooleanN = 'f'::BOOLEAN
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1."Boolean",
@@ -1835,7 +1790,6 @@ FROM
 	BooleanTable t1
 
 -- Informix.DB2 Informix
-
 SELECT
 	r.Id,
 	r."Boolean",
@@ -1852,7 +1806,6 @@ WHERE
 	r.BooleanN IS NULL
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1."Boolean",
@@ -1867,7 +1820,6 @@ FROM
 	BooleanTable t1
 
 -- Informix.DB2 Informix
-
 SELECT
 	r.Id,
 	r."Boolean",
@@ -1884,7 +1836,6 @@ WHERE
 	r."Boolean" <> 't'::BOOLEAN
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1."Boolean",
@@ -1899,7 +1850,6 @@ FROM
 	BooleanTable t1
 
 -- Informix.DB2 Informix
-
 SELECT
 	r.Id,
 	r."Boolean",
@@ -1916,7 +1866,6 @@ WHERE
 	r."Boolean" <> 'f'::BOOLEAN
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1."Boolean",
@@ -1931,7 +1880,6 @@ FROM
 	BooleanTable t1
 
 -- Informix.DB2 Informix
-
 SELECT
 	r.Id,
 	r."Boolean",
@@ -1948,7 +1896,6 @@ WHERE
 	r."Boolean" <> 't'::BOOLEAN
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1."Boolean",
@@ -1963,7 +1910,6 @@ FROM
 	BooleanTable t1
 
 -- Informix.DB2 Informix
-
 SELECT
 	r.Id,
 	r."Boolean",
@@ -1980,7 +1926,6 @@ WHERE
 	r."Boolean" <> 'f'::BOOLEAN
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1."Boolean",
@@ -1995,7 +1940,6 @@ FROM
 	BooleanTable t1
 
 -- Informix.DB2 Informix
-
 SELECT
 	r.Id,
 	r."Boolean",
@@ -2010,7 +1954,6 @@ FROM
 	BooleanTable r
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1."Boolean",
@@ -2025,71 +1968,6 @@ FROM
 	BooleanTable t1
 
 -- Informix.DB2 Informix
-
-SELECT
-	r.Id,
-	r."Boolean",
-	r.BooleanN,
-	r.Int32,
-	r.Int32N,
-	r."Decimal",
-	r.DecimalN,
-	r."Double",
-	r.DoubleN
-FROM
-	BooleanTable r
-WHERE
-	r.BooleanN <> 't'::BOOLEAN OR r.BooleanN IS NULL
-
--- Informix.DB2 Informix
-
-SELECT
-	t1.Id,
-	t1."Boolean",
-	t1.BooleanN,
-	t1.Int32,
-	t1.Int32N,
-	t1."Decimal",
-	t1.DecimalN,
-	t1."Double",
-	t1.DoubleN
-FROM
-	BooleanTable t1
-
--- Informix.DB2 Informix
-
-SELECT
-	r.Id,
-	r."Boolean",
-	r.BooleanN,
-	r.Int32,
-	r.Int32N,
-	r."Decimal",
-	r.DecimalN,
-	r."Double",
-	r.DoubleN
-FROM
-	BooleanTable r
-WHERE
-	r.BooleanN <> 'f'::BOOLEAN OR r.BooleanN IS NULL
-
--- Informix.DB2 Informix
-
-SELECT
-	t1.Id,
-	t1."Boolean",
-	t1.BooleanN,
-	t1.Int32,
-	t1.Int32N,
-	t1."Decimal",
-	t1.DecimalN,
-	t1."Double",
-	t1.DoubleN
-FROM
-	BooleanTable t1
-
--- Informix.DB2 Informix
-
 SELECT
 	r.Id,
 	r."Boolean",
@@ -2106,7 +1984,6 @@ WHERE
 	r.BooleanN <> 't'::BOOLEAN OR r.BooleanN IS NULL
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1."Boolean",
@@ -2121,7 +1998,6 @@ FROM
 	BooleanTable t1
 
 -- Informix.DB2 Informix
-
 SELECT
 	r.Id,
 	r."Boolean",
@@ -2138,7 +2014,6 @@ WHERE
 	r.BooleanN <> 'f'::BOOLEAN OR r.BooleanN IS NULL
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1."Boolean",
@@ -2153,7 +2028,66 @@ FROM
 	BooleanTable t1
 
 -- Informix.DB2 Informix
+SELECT
+	r.Id,
+	r."Boolean",
+	r.BooleanN,
+	r.Int32,
+	r.Int32N,
+	r."Decimal",
+	r.DecimalN,
+	r."Double",
+	r.DoubleN
+FROM
+	BooleanTable r
+WHERE
+	r.BooleanN <> 't'::BOOLEAN OR r.BooleanN IS NULL
 
+-- Informix.DB2 Informix
+SELECT
+	t1.Id,
+	t1."Boolean",
+	t1.BooleanN,
+	t1.Int32,
+	t1.Int32N,
+	t1."Decimal",
+	t1.DecimalN,
+	t1."Double",
+	t1.DoubleN
+FROM
+	BooleanTable t1
+
+-- Informix.DB2 Informix
+SELECT
+	r.Id,
+	r."Boolean",
+	r.BooleanN,
+	r.Int32,
+	r.Int32N,
+	r."Decimal",
+	r.DecimalN,
+	r."Double",
+	r.DoubleN
+FROM
+	BooleanTable r
+WHERE
+	r.BooleanN <> 'f'::BOOLEAN OR r.BooleanN IS NULL
+
+-- Informix.DB2 Informix
+SELECT
+	t1.Id,
+	t1."Boolean",
+	t1.BooleanN,
+	t1.Int32,
+	t1.Int32N,
+	t1."Decimal",
+	t1.DecimalN,
+	t1."Double",
+	t1.DoubleN
+FROM
+	BooleanTable t1
+
+-- Informix.DB2 Informix
 SELECT
 	r.Id,
 	r."Boolean",
@@ -2170,7 +2104,6 @@ WHERE
 	r.BooleanN IS NOT NULL
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1."Boolean",
@@ -2185,7 +2118,6 @@ FROM
 	BooleanTable t1
 
 -- Informix.DB2 Informix
-
 SELECT
 	g_1.Id,
 	COUNT(CASE
@@ -2376,7 +2308,6 @@ GROUP BY
 	g_1.Id
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1."Boolean",
@@ -2391,7 +2322,6 @@ FROM
 	BooleanTable t1
 
 -- Informix.DB2 Informix
-
 SELECT
 	r.Id,
 	r.Int32 = 0,

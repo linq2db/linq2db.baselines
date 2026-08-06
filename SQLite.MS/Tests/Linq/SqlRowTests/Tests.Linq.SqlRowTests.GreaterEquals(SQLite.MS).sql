@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	COUNT(*)
 FROM
@@ -8,7 +7,6 @@ WHERE
 	([i].[One], [i].[Two], [i].[Three]) >= ([i].[One], [i].[One] * 2, [i].[Four] - 1)
 
 -- SQLite.MS SQLite
-
 SELECT
 	COUNT(*)
 FROM
@@ -17,7 +15,6 @@ WHERE
 	([i].[One], [i].[Two], [i].[Four]) >= ([i].[One], [i].[Two], [i].[Three])
 
 -- SQLite.MS SQLite
-
 SELECT
 	COUNT(*)
 FROM
@@ -26,7 +23,6 @@ WHERE
 	([i].[One], [i].[Two], [i].[Four]) >= ([i].[One], [i].[Five], [i].[Three])
 
 -- SQLite.MS SQLite
-
 SELECT
 	COUNT(*)
 FROM
@@ -35,7 +31,6 @@ WHERE
 	([i].[One], [i].[Nil], [i].[Four]) >= ([i].[One], [i].[Two], [i].[Three])
 
 -- SQLite.MS SQLite
-
 SELECT
 	COUNT(*)
 FROM

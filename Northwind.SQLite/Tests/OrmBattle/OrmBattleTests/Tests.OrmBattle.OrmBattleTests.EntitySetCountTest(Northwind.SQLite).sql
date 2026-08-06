@@ -1,5 +1,4 @@
 ﻿-- Northwind.SQLite SQLite.Classic SQLite
-
 SELECT
 	[c_1].[CategoryID],
 	[c_1].[CategoryName],

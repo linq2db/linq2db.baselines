@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	[m_1].[BookId],
 	[a_Author].[AuthorId],
@@ -37,7 +36,6 @@ FROM
 		LEFT JOIN [Author] [a_Author] ON [d].[FkAuthorId] = [a_Author].[AuthorId]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	[m_1].[c1],
 	[d_1].[AuthorId],
@@ -83,7 +81,6 @@ FROM
 		) [d_1]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	[t3].[BookType],
 	IIF([t3].[BookType] = N'Roman', 1, 0),
@@ -115,7 +112,6 @@ FROM
 	) [t3]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	[m_1].[BookId],
 	[m_1].[AuthorId],
@@ -135,7 +131,6 @@ FROM
 		LEFT JOIN [Author] [a_Author] ON [d_1].[FkAuthorId] = [a_Author].[AuthorId]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	[m_1].[AuthorId],
 	[a_Book].[BookId],
@@ -149,7 +144,6 @@ FROM
 		LEFT JOIN [Book] [a_Book] ON [d].[FkBookId] = [a_Book].[BookId]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	[t1].[AuthorId],
 	[t1].[AuthorName]

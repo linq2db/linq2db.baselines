@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 SELECT
 	[g_2].[c1],
 	COUNT(*)

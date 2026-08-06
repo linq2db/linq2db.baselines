@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	current_schema()
 FROM

@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"gr_1".ID,
 	"gr_1".ID + 1

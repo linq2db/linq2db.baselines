@@ -22,7 +22,6 @@ ORDER BY
 	r_1.FirstName
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.FirstName,
 	t1.PersonID,

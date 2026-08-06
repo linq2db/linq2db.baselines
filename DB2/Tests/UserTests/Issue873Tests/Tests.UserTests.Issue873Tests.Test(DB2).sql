@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	' ' || RTrim(Char(Coalesce("t1"."Value1", 0))),
 	Coalesce("t1"."SubSum", 0),

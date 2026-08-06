@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
-
 WITH [MY_CTE] ([ChildID], [ParentID], [GrandChildID])
 AS
 (

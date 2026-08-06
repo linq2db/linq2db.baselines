@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[p].[ParentID],
 	[p].[Value1]
@@ -17,7 +16,6 @@ WHERE
 	[p_1].[ParentID] = 2
 
 -- SqlCe
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 DELETE FROM
 	"Child" "c_1"
 WHERE
@@ -23,7 +22,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	COUNT(*)
 FROM
@@ -32,7 +30,6 @@ WHERE
 	"c_1"."ChildID" = 1001
 
 -- DB2 DB2.LUW DB2LUW
-
 DELETE FROM
 	"Child" "c_1"
 WHERE

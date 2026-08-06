@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016
-
 UPDATE
 	[v]
 SET
@@ -11,7 +10,6 @@ WHERE
 	[a_Relation].[RelatedValue1] = 11
 
 -- SqlServer.2016
-
 SELECT TOP (1)
 	[v].[Value1]
 FROM

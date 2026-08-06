@@ -10,7 +10,6 @@ SET
 	[Value] = [WarehouseTableDto].[Value] | @addMask & ~@removeMask
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]

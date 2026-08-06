@@ -1,5 +1,4 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 /* My Test */
 MERGE INTO "TestMerge1" Target
 USING (

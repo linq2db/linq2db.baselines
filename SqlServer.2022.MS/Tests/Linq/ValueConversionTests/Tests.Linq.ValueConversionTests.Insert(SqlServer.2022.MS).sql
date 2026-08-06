@@ -32,7 +32,6 @@ VALUES
 )
 
 -- SqlServer.2022.MS SqlServer.2022
-
 SELECT TOP (1)
 	[e].[Id],
 	[e].[Value1],
@@ -83,7 +82,6 @@ VALUES
 )
 
 -- SqlServer.2022.MS SqlServer.2022
-
 SELECT TOP (1)
 	[e].[Id],
 	[e].[Value1],
@@ -150,7 +148,6 @@ VALUES
 )
 
 -- SqlServer.2022.MS SqlServer.2022
-
 SELECT TOP (1)
 	[e].[Id],
 	[e].[Value1],
@@ -168,7 +165,6 @@ WHERE
 	[e].[Id] = 3
 
 -- SqlServer.2022.MS SqlServer.2022
-
 SELECT
 	COUNT(*)
 FROM

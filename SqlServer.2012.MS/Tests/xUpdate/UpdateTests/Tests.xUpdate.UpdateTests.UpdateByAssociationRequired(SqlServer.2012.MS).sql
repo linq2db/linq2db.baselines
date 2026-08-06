@@ -14,7 +14,6 @@ WHERE
 	[t1].[Id] = @id
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[t1].[Id],
 	[t1].[Field]

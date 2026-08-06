@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[a_Child].[ParentID],
 	[g_1].[GrandChildID]

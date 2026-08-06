@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	maxOrNull(CASE
 		WHEN g_1.ParentID < 3 THEN g_1.ChildID

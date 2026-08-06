@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 WITH `CTE_1` (`ParentID`)
 AS
 (
@@ -24,7 +23,6 @@ FROM
 		INNER JOIN `CTE_1` `c2` ON `p`.`ParentID` = `c2`.`ParentID`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	COUNT(*)
 FROM

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[r].[Id],
 	[r].[Column],
@@ -10,7 +9,6 @@ WHERE
 	[r].[ColumnNullable] IS NULL
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[r].[Id],
 	[r].[Column],
@@ -21,7 +19,6 @@ WHERE
 	[r].[ColumnNullable] IS NULL
 
 -- SqlServer.2019.MS SqlServer.2019
-
 DELETE [t1]
 FROM
 	[TypeTable`2] [t1]
@@ -48,7 +45,6 @@ VALUES
 )
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[r].[Id],
 	[r].[Column],
@@ -59,7 +55,6 @@ WHERE
 	[r].[ColumnNullable] IS NULL
 
 -- SqlServer.2019.MS SqlServer.2019
-
 DELETE [t1]
 FROM
 	[TypeTable`2] [t1]
@@ -82,7 +77,6 @@ VALUES
 (@p1,@p2,@p3)
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[r].[Id],
 	[r].[Column],
@@ -93,7 +87,6 @@ WHERE
 	[r].[ColumnNullable] IS NULL
 
 -- SqlServer.2019.MS SqlServer.2019
-
 DELETE [t1]
 FROM
 	[TypeTable`2] [t1]
@@ -101,7 +94,6 @@ FROM
 INSERT BULK [TypeTable`2](Id, Column, ColumnNullable)
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[r].[Id],
 	[r].[Column],
@@ -112,7 +104,6 @@ WHERE
 	[r].[ColumnNullable] IS NULL
 
 -- SqlServer.2019.MS SqlServer.2019
-
 DELETE [t1]
 FROM
 	[TypeTable`2] [t1]
@@ -120,7 +111,6 @@ FROM
 INSERT ASYNC BULK [TypeTable`2](Id, Column, ColumnNullable)
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[r].[Id],
 	[r].[Column],
@@ -131,7 +121,6 @@ WHERE
 	[r].[ColumnNullable] IS NULL
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],
@@ -140,7 +129,6 @@ FROM
 	[TypeTable`2] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],
@@ -149,7 +137,6 @@ FROM
 	[TypeTable`2] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 DELETE [t1]
 FROM
 	[TypeTable`2] [t1]
@@ -176,7 +163,6 @@ VALUES
 )
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],
@@ -185,7 +171,6 @@ FROM
 	[TypeTable`2] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 DELETE [t1]
 FROM
 	[TypeTable`2] [t1]
@@ -208,7 +193,6 @@ VALUES
 (@p1,@p2,@p3)
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],
@@ -217,7 +201,6 @@ FROM
 	[TypeTable`2] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 DELETE [t1]
 FROM
 	[TypeTable`2] [t1]
@@ -225,7 +208,6 @@ FROM
 INSERT BULK [TypeTable`2](Id, Column, ColumnNullable)
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],
@@ -234,7 +216,6 @@ FROM
 	[TypeTable`2] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 DELETE [t1]
 FROM
 	[TypeTable`2] [t1]
@@ -242,7 +223,6 @@ FROM
 INSERT ASYNC BULK [TypeTable`2](Id, Column, ColumnNullable)
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],

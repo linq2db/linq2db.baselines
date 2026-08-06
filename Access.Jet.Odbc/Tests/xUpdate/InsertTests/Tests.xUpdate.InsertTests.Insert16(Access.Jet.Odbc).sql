@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 DELETE FROM
 	[Person] [t1]
 WHERE
@@ -25,7 +24,6 @@ VALUES
 )
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	COUNT(*)
 FROM
@@ -34,7 +32,6 @@ WHERE
 	[t1].[FirstName] LIKE 'Insert16%'
 
 -- Access.Jet.Odbc AccessODBC
-
 DELETE FROM
 	[Person] [t1]
 WHERE

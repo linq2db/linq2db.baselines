@@ -1,12 +1,10 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	Parent
 DELETE WHERE
 	Value1 = 11
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO Parent
 (
 	ParentID,
@@ -21,7 +19,6 @@ WHERE
 	c_1.ChildID = 11
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	COUNT(*)
 FROM
@@ -30,7 +27,6 @@ WHERE
 	p.Value1 = 11
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	Parent
 DELETE WHERE

@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[m_1].[Id],
 	[m_1].[Id_1],
@@ -17,7 +16,6 @@ FROM
 		INNER JOIN [EntityMC] [d_1] ON [m_1].[Id] = [d_1].[FK]
 
 -- SqlCe
-
 SELECT
 	[m_1].[Id],
 	[d].[Id] as [Id_1],
@@ -29,7 +27,6 @@ FROM
 		LEFT JOIN [EntityMD] [a_ObjectD] ON [d].[FKD] = [a_ObjectD].[Id]
 
 -- SqlCe
-
 SELECT
 	[e].[Id]
 FROM

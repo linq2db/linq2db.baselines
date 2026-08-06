@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008
-
 DELETE [p]
 FROM
 	[Parent] [p]

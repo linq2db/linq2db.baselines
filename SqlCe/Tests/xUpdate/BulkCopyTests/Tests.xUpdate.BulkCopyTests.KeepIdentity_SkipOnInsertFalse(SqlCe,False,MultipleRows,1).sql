@@ -12,11 +12,9 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT @@IDENTITY
 
 -- SqlCe
-
 INSERT INTO [AllTypes]
 (
 	[intDataType]
@@ -30,7 +28,7 @@ SET     @lastId = 3
 
 SELECT
 	[t1].[ID],
-	[t1].[intDataType] as [Value_1]
+	[t1].[intDataType]
 FROM
 	[AllTypes] [t1]
 WHERE

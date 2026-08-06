@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 UPDATE
 	"Ints" i
 SET
@@ -23,7 +22,6 @@ WHERE
 	i."One" = 10
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."One",

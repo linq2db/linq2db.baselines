@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008
-
 SELECT
 	[p].[Id],
 	CAST('str1' AS VarChar(Max))
@@ -13,7 +12,6 @@ FROM
 	[Issue3360Table] [p_1]
 
 -- SqlServer.2008
-
 SELECT
 	[p].[Id],
 	CAST('str2' AS VarChar(Max))

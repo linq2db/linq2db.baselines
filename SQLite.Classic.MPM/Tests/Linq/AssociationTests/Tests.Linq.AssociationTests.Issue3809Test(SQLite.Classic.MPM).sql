@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
@@ -26,7 +25,6 @@ ORDER BY
 	[d].[ChildID]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[a].[ParentID],
 	[a_ParentTest].[ParentID]

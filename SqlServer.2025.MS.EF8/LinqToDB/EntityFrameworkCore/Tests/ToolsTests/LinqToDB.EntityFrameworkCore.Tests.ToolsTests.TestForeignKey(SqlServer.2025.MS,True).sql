@@ -12,7 +12,6 @@ WHERE @__ef_filter__p_0 = CAST(1 AS bit) OR [e].[IsDeleted] = CAST(0 AS bit) OR 
 
 
 -- SqlServer.2025
-
 SELECT
 	[e].[IsDeleted],
 	[e].[EmployeeID],

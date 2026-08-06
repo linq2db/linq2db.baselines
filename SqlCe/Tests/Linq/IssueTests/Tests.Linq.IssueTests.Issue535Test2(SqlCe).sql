@@ -8,7 +8,7 @@ SELECT
 	[q].[Id],
 	[q].[Name],
 	[q].[ContactEmail],
-	Coalesce([q].[Enabled], 0) as [IsEnabled]
+	Coalesce([q].[Enabled], 0)
 FROM
 	[CustomerBase] [q]
 WHERE

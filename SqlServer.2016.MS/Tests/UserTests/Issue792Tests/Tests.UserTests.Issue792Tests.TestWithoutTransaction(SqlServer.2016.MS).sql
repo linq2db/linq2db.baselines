@@ -1,27 +1,22 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	COUNT(*)
 FROM
 	[AllTypes] [t1]
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT TOP (1)
 	SCHEMA_NAME()
 FROM
 	[LinqDataTypes] [t1]
 
 -- SqlServer.2016.MS SqlServer.2016
-
 select @@version
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT compatibility_level FROM sys.databases WHERE name = db_name()
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	SPECIFIC_CATALOG COLLATE DATABASE_DEFAULT + '.' + SPECIFIC_SCHEMA + '.' + SPECIFIC_NAME as ProcedureID,
 	SPECIFIC_CATALOG                                                                        as CatalogName,
@@ -41,7 +36,6 @@ FROM
 ORDER BY SPECIFIC_CATALOG, SPECIFIC_SCHEMA, SPECIFIC_NAME
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	SPECIFIC_CATALOG COLLATE DATABASE_DEFAULT + '.' + SPECIFIC_SCHEMA + '.' + SPECIFIC_NAME as ProcedureID,
 	ORDINAL_POSITION                                                                        as Ordinal,
@@ -99,7 +93,6 @@ SET     @params = N'@input int, @output int'
 sp_describe_first_result_set
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT * FROM [TestDataMS].[dbo].[GetParentByID](NULL)
 
 -- SqlServer.2016.MS SqlServer.2016
@@ -111,7 +104,6 @@ SET     @params = N''
 sp_describe_first_result_set
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT * FROM [TestDataMS].[dbo].[Issue1921]()
 
 -- SqlServer.2016.MS SqlServer.2016
@@ -286,14 +278,12 @@ SET     @ReturnFullRow = 0
 
 RollbackTransaction
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	COUNT(*)
 FROM
 	[AllTypes] [t1]
 
 -- SqlServer.2016.MS SqlServer.2016
-
 DELETE [t1]
 FROM
 	[AllTypes] [t1]

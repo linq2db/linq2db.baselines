@@ -1,7 +1,6 @@
 ﻿
 
 -- SqlServer.2017
-
 SELECT
 	[m_1].[Key_1],
 	[d].[CfAllowValue],
@@ -20,13 +19,10 @@ ORDER BY
 
 
 -- SqlServer.2017
-
 SELECT TOP (1)
 	[p].[AclNameId]
 FROM
 	[Issue4624Items] [p]
-
-
 
 
 

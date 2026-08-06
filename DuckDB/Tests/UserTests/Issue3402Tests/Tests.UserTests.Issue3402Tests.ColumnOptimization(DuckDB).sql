@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	ess.ID
 FROM
@@ -15,7 +14,6 @@ WHERE
 	)
 
 -- DuckDB
-
 SELECT
 	ess.ID
 FROM

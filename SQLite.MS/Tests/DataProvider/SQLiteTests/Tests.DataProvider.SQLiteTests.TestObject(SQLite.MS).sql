@@ -1,17 +1,13 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT Cast(1 as Object)
 
 -- SQLite.MS SQLite
-
 SELECT Cast(1 as Object)
 
 -- SQLite.MS SQLite
-
 SELECT Cast(1 as Object)
 
 -- SQLite.MS SQLite
-
 SELECT Cast(1 as Object)
 
 -- SQLite.MS SQLite

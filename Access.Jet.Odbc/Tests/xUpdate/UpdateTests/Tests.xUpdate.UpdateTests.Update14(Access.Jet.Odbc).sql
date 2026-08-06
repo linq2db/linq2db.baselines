@@ -37,7 +37,6 @@ WHERE
 	[t1].[FirstName] LIKE 'Update14%'
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	COUNT(*)
 FROM

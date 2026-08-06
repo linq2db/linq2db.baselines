@@ -3,7 +3,7 @@ DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	p."PersonID" as ID,
+	p."PersonID",
 	p."FirstName",
 	p."LastName",
 	p."MiddleName",

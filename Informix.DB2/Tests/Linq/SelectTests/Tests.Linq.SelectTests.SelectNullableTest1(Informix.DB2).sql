@@ -48,7 +48,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT FIRST 1
 	t1.ID,
 	t1.MoneyValue,
@@ -66,7 +65,6 @@ WHERE
 	t1.ID = 1000
 
 -- Informix.DB2 Informix
-
 DELETE FROM
 	LinqDataTypes
 WHERE

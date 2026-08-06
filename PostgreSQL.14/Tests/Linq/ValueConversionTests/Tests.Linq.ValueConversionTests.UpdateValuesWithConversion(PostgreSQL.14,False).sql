@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DECLARE @Test1 Char -- String
 SET     @Test1 = NULL
 
@@ -9,8 +9,7 @@ SET
 WHERE
 	"TableWithConverterValue"."Id" = 1
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	x."Id",
 	x."NoConversion",
@@ -22,7 +21,7 @@ WHERE
 	x."Id" = 1
 LIMIT 2
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DECLARE @Test1 Char(1) -- String
 SET     @Test1 = 'X'
 
@@ -33,8 +32,7 @@ SET
 WHERE
 	"TableWithConverterValue"."Id" = 2
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	x."Id",
 	x."NoConversion",
@@ -46,7 +44,7 @@ WHERE
 	x."Id" = 2
 LIMIT 2
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DECLARE @Test1 Char(1) -- String
 SET     @Test1 = 'X'
 

@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	Issue4963Table
 UPDATE
@@ -7,7 +6,6 @@ UPDATE
 WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Field

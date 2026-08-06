@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 UPDATE
 	`Parent` `w`
 		INNER JOIN `Child` `b` ON `w`.`ParentID` = `b`.`ParentID`

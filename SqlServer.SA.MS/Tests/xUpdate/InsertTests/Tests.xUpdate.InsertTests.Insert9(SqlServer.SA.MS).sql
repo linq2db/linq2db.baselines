@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
-
 DELETE [c_1]
 FROM
 	[Child] [c_1]
@@ -7,7 +6,6 @@ WHERE
 	[c_1].[ParentID] > 1000
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DELETE [p]
 FROM
 	[Parent] [p]
@@ -60,7 +58,6 @@ WHERE
 	[c_1].[ParentID] = @id
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DELETE [c_1]
 FROM
 	[Child] [c_1]
@@ -68,7 +65,6 @@ WHERE
 	[c_1].[ParentID] > 1000
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DELETE [p]
 FROM
 	[Parent] [p]

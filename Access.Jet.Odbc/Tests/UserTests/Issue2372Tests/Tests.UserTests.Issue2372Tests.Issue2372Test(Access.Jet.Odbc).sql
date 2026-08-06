@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 DROP TABLE [InventoryResource]
 
 -- Access.Jet.Odbc AccessODBC

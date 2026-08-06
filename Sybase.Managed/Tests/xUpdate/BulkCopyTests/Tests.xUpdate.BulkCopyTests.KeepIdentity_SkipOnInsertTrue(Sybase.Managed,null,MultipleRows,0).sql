@@ -14,7 +14,6 @@ VALUES
 SELECT @@IDENTITY
 
 -- Sybase.Managed Sybase
-
 INSERT INTO [KeepIdentityTest]
 (
 	[Value]

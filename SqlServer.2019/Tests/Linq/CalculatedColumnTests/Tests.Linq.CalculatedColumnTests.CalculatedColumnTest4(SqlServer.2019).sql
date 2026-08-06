@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2019
-
 SELECT
 	[a_PersonDoctor].[PersonID],
 	[a_PersonDoctor].[FirstName],

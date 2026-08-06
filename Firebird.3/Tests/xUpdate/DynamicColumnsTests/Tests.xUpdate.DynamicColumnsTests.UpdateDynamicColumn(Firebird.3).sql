@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 INSERT INTO "Person"
 (
 	"FirstName",
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- Firebird.3 Firebird3
-
 SELECT
 	COUNT(*)
 FROM
@@ -23,7 +21,6 @@ WHERE
 	"c_1"."LastName" = 'Limonadovy'
 
 -- Firebird.3 Firebird3
-
 UPDATE
 	"Person" "c_1"
 SET
@@ -32,7 +29,6 @@ WHERE
 	"c_1"."LastName" = 'Limonadovy'
 
 -- Firebird.3 Firebird3
-
 SELECT
 	COUNT(*)
 FROM

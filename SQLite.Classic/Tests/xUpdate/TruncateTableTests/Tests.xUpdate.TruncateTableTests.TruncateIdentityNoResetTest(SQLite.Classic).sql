@@ -1,9 +1,7 @@
 ﻿-- SQLite.Classic SQLite
-
 DELETE FROM [test_temp]
 
 -- SQLite.Classic SQLite
-
 INSERT INTO [test_temp]
 (
 	[Field1]
@@ -14,7 +12,6 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-
 INSERT INTO [test_temp]
 (
 	[Field1]
@@ -38,11 +35,9 @@ ORDER BY
 LIMIT 2 OFFSET @skip
 
 -- SQLite.Classic SQLite
-
 DELETE FROM [test_temp]
 
 -- SQLite.Classic SQLite
-
 INSERT INTO [test_temp]
 (
 	[Field1]
@@ -53,7 +48,6 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-
 INSERT INTO [test_temp]
 (
 	[Field1]

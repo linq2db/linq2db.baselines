@@ -1,9 +1,8 @@
 ﻿-- SqlCe
-
 SELECT
 	[o].[ParentID],
 	[t1].[CountResult],
-	Coalesce([t2].[SumResult], 0) as [SumResult]
+	Coalesce([t2].[SumResult], 0)
 FROM
 	[Parent] [o]
 		OUTER APPLY (
@@ -24,18 +23,16 @@ FROM
 		) [t2]
 
 -- SqlCe
-
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Parent] [o]
 
 -- SqlCe
-
 SELECT
 	[x].[ParentID],
 	[t1].[CountResult],
-	Coalesce([t2].[SumResult], 0) as [SumResult]
+	Coalesce([t2].[SumResult], 0)
 FROM
 	[Parent] [x]
 		OUTER APPLY (

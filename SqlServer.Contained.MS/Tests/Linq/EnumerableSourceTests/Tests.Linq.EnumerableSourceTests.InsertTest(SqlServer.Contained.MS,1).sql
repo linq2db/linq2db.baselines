@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained.MS SqlServer.2019
-
 INSERT INTO [TableToInsert]
 (
 	[Id],
@@ -17,7 +16,6 @@ WHERE
 	[t].[Id] IS NULL
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 INSERT INTO [TableToInsert]
 (
 	[Id],

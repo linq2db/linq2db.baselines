@@ -14,7 +14,6 @@ ORDER BY
 	`g_1`.`Id`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`PK`,
 	`t1`.`Id`,

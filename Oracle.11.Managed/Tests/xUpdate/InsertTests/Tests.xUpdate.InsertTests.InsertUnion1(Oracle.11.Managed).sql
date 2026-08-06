@@ -1,12 +1,10 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 DELETE FROM
 	"Parent" p
 WHERE
 	p."ParentID" > 1000
 
 -- Oracle.11.Managed Oracle11
-
 INSERT INTO "Parent"
 (
 	"ParentID",
@@ -31,7 +29,6 @@ FROM
 	) t1
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	COUNT(*)
 FROM
@@ -40,7 +37,6 @@ WHERE
 	c_1."ParentID" > 1000
 
 -- Oracle.11.Managed Oracle11
-
 DELETE FROM
 	"Parent" p
 WHERE

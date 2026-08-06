@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	LIST("t2"."Value_1", '')
 FROM

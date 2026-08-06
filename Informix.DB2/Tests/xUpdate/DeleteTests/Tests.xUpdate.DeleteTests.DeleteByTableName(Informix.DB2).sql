@@ -24,14 +24,12 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT
 	COUNT(*)
 FROM
 	xxPerson t1
 
 -- Informix.DB2 Informix
-
 SELECT FIRST 2
 	t1.FirstName,
 	t1.PersonID,
@@ -51,7 +49,6 @@ WHERE
 	xxPerson.PersonID = @ID
 
 -- Informix.DB2 Informix
-
 SELECT
 	COUNT(*)
 FROM

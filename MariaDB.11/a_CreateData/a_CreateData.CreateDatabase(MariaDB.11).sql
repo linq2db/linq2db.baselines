@@ -1,29 +1,22 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DROP SCHEMA IF EXISTS `testdata`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 CREATE SCHEMA `testdata`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 ALTER DATABASE `testdata` CHARACTER SET utf8 COLLATE utf8_general_ci
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 USE `testdata`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SET GLOBAL local_infile=ON;
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SET @@global.sql_mode=(SELECT REPLACE(@@global.sql_mode, 'ONLY_FULL_GROUP_BY', ''))
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 CREATE TABLE InheritanceParent
 (
 	InheritanceParentId int          NOT NULL,
@@ -34,7 +27,6 @@ CREATE TABLE InheritanceParent
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 CREATE TABLE InheritanceChild
 (
 	InheritanceChildId  int          NOT NULL,
@@ -46,7 +38,6 @@ CREATE TABLE InheritanceChild
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 -- Person Table
 
 CREATE TABLE Person
@@ -60,27 +51,21 @@ CREATE TABLE Person
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO Person (FirstName, LastName, Gender) VALUES ('John',   'Pupkin',    'M')
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO Person (FirstName, LastName, Gender) VALUES ('Tester', 'Testerson', 'M')
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO Person (FirstName, LastName, Gender) VALUES ('Jane',   'Doe',       'F')
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO Person (FirstName, LastName, MiddleName, Gender) VALUES ('Jürgen', 'König', 'Ko', 'M')
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 CREATE OR REPLACE VIEW PersonView AS SELECT * FROM Person
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 -- Doctor Table Extension
 
 CREATE TABLE Doctor
@@ -93,11 +78,9 @@ CREATE TABLE Doctor
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO Doctor (PersonID, Taxonomy) VALUES (1, 'Psychiatry')
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 -- Patient Table Extension
 
 CREATE TABLE Patient
@@ -110,11 +93,9 @@ CREATE TABLE Patient
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO Patient (PersonID, Diagnosis) VALUES (2, 'Hallucination with Paranoid Bugs'' Delirium of Persecution')
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 -- Data Types test
 
 CREATE TABLE DataTypeTest
@@ -145,27 +126,21 @@ CREATE TABLE DataTypeTest
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 CREATE TABLE Parent     (ParentID int, Value1 int)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 CREATE TABLE Child      (ParentID int, ChildID int)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 CREATE INDEX IX_ChildIndex ON Child (ParentID)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 CREATE INDEX IX_ChildIndex2 ON Child (ParentID DESC)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 CREATE TABLE GrandChild (ParentID int, ChildID int, GrandChildID int)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 CREATE TABLE LinqDataTypes
 (
 	ID             int,
@@ -182,14 +157,12 @@ CREATE TABLE LinqDataTypes
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 CREATE TABLE TestIdentity (
 	ID int AUTO_INCREMENT NOT NULL,
 	CONSTRAINT PK_TestIdentity PRIMARY KEY CLUSTERED (ID)
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 CREATE TABLE `AllTypes`
 (
 	ID                  int AUTO_INCREMENT       NOT NULL,
@@ -229,7 +202,6 @@ CREATE TABLE `AllTypes`
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `AllTypes`
 (
 	bigintDataType,
@@ -322,7 +294,6 @@ SELECT
 	1
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 CREATE TABLE `AllTypesNoYear`
 (
 	ID                  int AUTO_INCREMENT       NOT NULL,
@@ -361,29 +332,24 @@ CREATE TABLE `AllTypesNoYear`
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DROP SCHEMA IF EXISTS test_schema
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 CREATE SCHEMA test_schema
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 CREATE TABLE test_schema.TestSameName
 (
 	ID int NOT NULL PRIMARY KEY
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 CREATE TABLE TestSameName
 (
 	ID int NOT NULL PRIMARY KEY
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 CREATE OR REPLACE
 VIEW PersonView
 AS
@@ -392,7 +358,6 @@ AS
 	WHERE (`Person`.`Gender` = 'M')
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 -- merge test tables
 CREATE TABLE TestMerge1
 (
@@ -433,7 +398,6 @@ CREATE TABLE TestMerge1
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 CREATE TABLE TestMerge2
 (
 	Id       int          NOT NULL,
@@ -473,7 +437,6 @@ CREATE TABLE TestMerge2
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 CREATE PROCEDURE TestProcedure(IN param3 INT, INOUT param2 INT, OUT param1 INT)
 BEGIN
 	SELECT param2 + param2 INTO param2;
@@ -482,11 +445,9 @@ BEGIN
 END
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SET GLOBAL log_bin_trust_function_creators = 1;
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 CREATE FUNCTION TestFunction(param INT)
 RETURNS VARCHAR(10)
 BEGIN
@@ -494,14 +455,12 @@ BEGIN
 END
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 CREATE PROCEDURE AddIssue792Record()
 BEGIN
 	INSERT INTO `AllTypes`(char20DataType) VALUES('issue792');
 END
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 CREATE PROCEDURE `TestOutputParametersWithoutTableProcedure`(
 	IN `aInParam` VARCHAR(256),
 	OUT `aOutParam` TINYINT(1)
@@ -511,7 +470,6 @@ BEGIN
 END
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 CREATE TABLE FullTextIndexTest (
 	id int UNSIGNED AUTO_INCREMENT NOT NULL PRIMARY KEY,
 	TestField1 TEXT(100),
@@ -522,20 +480,17 @@ CREATE TABLE FullTextIndexTest (
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO FullTextIndexTest(TestField1, TestField2) VALUES('this is text1', 'this is text2');
 INSERT INTO FullTextIndexTest(TestField1, TestField2) VALUES('looking for something?', 'found it!');
 INSERT INTO FullTextIndexTest(TestField1, TestField2) VALUES('record not found', 'empty');
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 CREATE TABLE Issue1993 (
 	id			INTEGER UNSIGNED	NOT NULL   AUTO_INCREMENT,
 	description	VARCHAR(100)		NULL,
 PRIMARY KEY(id));
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 CREATE PROCEDURE `Issue2313Parameters`(
 	IN `VarCharDefault` VARCHAR(255),
 	IN `VarChar1` VARCHAR(1),
@@ -644,7 +599,6 @@ BEGIN
 END
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 CREATE PROCEDURE `Issue2313Results`(
 	IN `VarCharDefault` VARCHAR(4000),
 	IN `VarChar1` VARCHAR(1),
@@ -765,11 +719,9 @@ BEGIN
 END
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DROP TABLE `CollatedTable`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 CREATE TABLE `CollatedTable`
 (
 	`Id`				INT NOT NULL,
@@ -778,27 +730,22 @@ CREATE TABLE `CollatedTable`
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 CREATE OR REPLACE FUNCTION TEST_FUNCTION(i INT) RETURNS INT RETURN i + 3
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 CREATE OR REPLACE PROCEDURE TEST_PROCEDURE (IN i INT)
 SELECT i + 3;
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SET SQL_MODE='ORACLE';
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 CREATE OR REPLACE PACKAGE TEST_PACKAGE1 AS
 	FUNCTION TEST_FUNCTION (i INT) RETURN INT;
 	PROCEDURE TEST_PROCEDURE (i INT);
 END;
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 CREATE OR REPLACE PACKAGE BODY TEST_PACKAGE1 AS
 	FUNCTION TEST_FUNCTION (i INT) RETURN INT AS
 	BEGIN 
@@ -811,14 +758,12 @@ CREATE OR REPLACE PACKAGE BODY TEST_PACKAGE1 AS
 END TEST_PACKAGE1;
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 CREATE OR REPLACE PACKAGE TEST_PACKAGE2 AS
 	FUNCTION TEST_FUNCTION (i INT) RETURN INT;
 	PROCEDURE TEST_PROCEDURE (i INT);
 END;
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 CREATE OR REPLACE PACKAGE BODY TEST_PACKAGE2 AS
 	FUNCTION TEST_FUNCTION (i INT) RETURN INT AS
 	BEGIN 
@@ -831,11 +776,9 @@ CREATE OR REPLACE PACKAGE BODY TEST_PACKAGE2 AS
 END TEST_PACKAGE2;
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 set session sql_mode=default
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 CREATE TABLE KeepIdentityTest (
 	ID    INT AUTO_INCREMENT NOT NULL,
 	Value INT NULL,
@@ -843,7 +786,6 @@ CREATE TABLE KeepIdentityTest (
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `LinqDataTypes`
 (
 	`ID`,
@@ -872,7 +814,6 @@ VALUES
 (12,11.45,'2012-11-07 19:19:29.090',NULL,1,'03021d18-97f0-4dc0-98d0-f0c7df4a1230',12,NULL,NULL,'0')
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `Parent`
 (
 	`ParentID`,
@@ -888,7 +829,6 @@ VALUES
 (7,1)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `Child`
 (
 	`ParentID`,
@@ -914,7 +854,6 @@ VALUES
 (7,77)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `GrandChild`
 (
 	`ParentID`,
@@ -946,7 +885,6 @@ VALUES
 (4,42,424)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `InheritanceParent`
 (
 	`InheritanceParentId`,
@@ -959,7 +897,6 @@ VALUES
 (3,2,'InheritanceParent2')
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `InheritanceChild`
 (
 	`InheritanceChildId`,

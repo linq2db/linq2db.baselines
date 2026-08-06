@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[g_1].[StatsTypeId],
 	[st].[FullName],

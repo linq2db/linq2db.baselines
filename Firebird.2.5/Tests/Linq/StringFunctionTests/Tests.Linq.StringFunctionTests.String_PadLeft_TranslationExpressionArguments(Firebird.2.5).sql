@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	"s".ID,
 	"s"."FirstName"
@@ -18,7 +17,6 @@ WHERE
 	"s"."FirstName" <> ''
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1"."FirstName",
 	"t1"."PersonID",

@@ -1,8 +1,7 @@
 ﻿-- SqlCe
-
 SELECT
 	[g_2].[Key_1],
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	(
 		SELECT
@@ -17,7 +16,6 @@ GROUP BY
 	[g_2].[Key_1]
 
 -- SqlCe
-
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID]

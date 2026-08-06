@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BackgroundTask
 (
 	ID,
@@ -16,7 +15,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	task_1.ID,
 	task_1.DurationID,

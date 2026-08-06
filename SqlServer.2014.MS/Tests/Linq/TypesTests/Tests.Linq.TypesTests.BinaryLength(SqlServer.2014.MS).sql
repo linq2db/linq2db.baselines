@@ -10,7 +10,6 @@ WHERE
 	[LinqDataTypes].[ID] = 1
 
 -- SqlServer.2014.MS SqlServer.2014
-
 SELECT TOP (1)
 	DataLength([t].[BinaryValue])
 FROM

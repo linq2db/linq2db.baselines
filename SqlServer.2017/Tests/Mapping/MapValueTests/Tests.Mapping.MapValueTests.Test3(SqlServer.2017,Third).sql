@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 SELECT TOP (1)
 	CASE
 		WHEN [t].[EnumValue] = N'S' THEN N'Second'

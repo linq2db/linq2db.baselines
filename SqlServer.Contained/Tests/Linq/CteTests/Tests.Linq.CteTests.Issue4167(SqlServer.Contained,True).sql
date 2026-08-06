@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 WITH [CTE_1] ([EnumValue])
 AS
 (

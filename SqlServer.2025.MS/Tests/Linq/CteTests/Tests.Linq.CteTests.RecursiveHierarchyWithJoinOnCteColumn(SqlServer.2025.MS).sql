@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
-
 WITH [cte] ([ParentID], [ChildID], [Level_1])
 AS
 (

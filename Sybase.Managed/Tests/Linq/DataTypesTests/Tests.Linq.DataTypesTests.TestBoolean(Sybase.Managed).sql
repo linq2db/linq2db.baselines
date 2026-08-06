@@ -14,7 +14,6 @@ WHERE
 	[r].[Column] = @Column AND [r].[ColumnNullable] = @ColumnNullable
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[r].[Id],
 	[r].[Column],
@@ -25,7 +24,6 @@ WHERE
 	[r].[Column] = 0 AND [r].[ColumnNullable] = 1
 
 -- Sybase.Managed Sybase
-
 DELETE FROM [BooleanTable]
 FROM
 	[BooleanTable] [t1]
@@ -73,7 +71,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],
@@ -84,13 +81,11 @@ ORDER BY
 	[t1].[Id]
 
 -- Sybase.Managed Sybase
-
 DELETE FROM [BooleanTable]
 FROM
 	[BooleanTable] [t1]
 
 -- Sybase.Managed Sybase
-
 INSERT INTO [BooleanTable]
 (
 	[Id],
@@ -101,7 +96,6 @@ SELECT 1,1,0 UNION ALL
 SELECT 2,0,1
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],
@@ -112,13 +106,11 @@ ORDER BY
 	[t1].[Id]
 
 -- Sybase.Managed Sybase
-
 DELETE FROM [BooleanTable]
 FROM
 	[BooleanTable] [t1]
 
 -- Sybase.Managed Sybase
-
 INSERT INTO [BooleanTable]
 (
 	[Id],
@@ -129,7 +121,6 @@ SELECT 1,1,0 UNION ALL
 SELECT 2,0,1
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],

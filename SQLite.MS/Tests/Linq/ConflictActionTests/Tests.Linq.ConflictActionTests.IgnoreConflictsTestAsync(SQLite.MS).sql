@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 INSERT INTO [IgnoreConflictsTable]
 (
 	[ID],
@@ -10,7 +9,6 @@ VALUES
 (2,'original2')
 
 -- SQLite.MS SQLite
-
 INSERT OR IGNORE INTO [IgnoreConflictsTable]
 (
 	[ID],
@@ -22,7 +20,6 @@ VALUES
 (3,'new3')
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[ID],
 	[t1].[Value]

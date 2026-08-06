@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	m_1."Id",
 	d."Id",
@@ -11,7 +10,6 @@ FROM
 		LEFT JOIN "EntityMD" a_ObjectD ON d.FKD = a_ObjectD."Id"
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	e."Id"
 FROM

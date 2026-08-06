@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[p].[ParentID],
 	[p].[Value1]
@@ -9,7 +8,6 @@ WHERE
 	[p].[Value1] IS NULL OR [p].[Value1] <> 1
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

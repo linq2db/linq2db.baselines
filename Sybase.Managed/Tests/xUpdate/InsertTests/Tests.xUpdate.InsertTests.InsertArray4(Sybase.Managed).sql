@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 DELETE FROM [LinqDataTypes]
 FROM
 	[LinqDataTypes] [t]
@@ -44,7 +43,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 2
 	[t].[ID],
 	[t].[MoneyValue],
@@ -59,7 +57,6 @@ WHERE
 	[t].[ID] = 1001
 
 -- Sybase.Managed Sybase
-
 DELETE FROM [LinqDataTypes]
 FROM
 	[LinqDataTypes] [t]

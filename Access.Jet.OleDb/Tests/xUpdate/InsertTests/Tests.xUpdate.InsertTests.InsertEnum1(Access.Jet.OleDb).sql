@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 DELETE FROM
 	[Parent] [t1]
 WHERE
@@ -34,7 +33,6 @@ WHERE
 	[t1].[ParentID] = @id AND [t1].[Value1] = @Value1
 
 -- Access.Jet.OleDb AccessOleDb
-
 DELETE FROM
 	[Parent] [t1]
 WHERE

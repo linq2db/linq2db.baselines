@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT /*+ MAX_EXECUTION_TIME(10) */
 	`p`.`ParentID`,
 	`p`.`Value1`

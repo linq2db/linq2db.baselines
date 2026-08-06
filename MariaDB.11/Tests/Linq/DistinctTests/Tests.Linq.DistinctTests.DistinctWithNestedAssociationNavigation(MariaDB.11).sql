@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT DISTINCT
 	`gc`.`GrandChildID`,
 	`a_Parent`.`Value1`
@@ -11,7 +10,6 @@ ORDER BY
 	`gc`.`GrandChildID`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`ParentID`,
 	`t1`.`ChildID`,

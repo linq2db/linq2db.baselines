@@ -1,12 +1,10 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 DELETE FROM
 	"Person" "t1"
 WHERE
 	"t1"."PersonID" > 4
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"PersonID"
 FROM
@@ -27,7 +25,6 @@ FROM
 	)
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"p"."FirstName",
 	"p"."PersonID",
@@ -41,7 +38,6 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 -- DB2 DB2.LUW DB2LUW
-
 DELETE FROM
 	"Person" "t1"
 WHERE

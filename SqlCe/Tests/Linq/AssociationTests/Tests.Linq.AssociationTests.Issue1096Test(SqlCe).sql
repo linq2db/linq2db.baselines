@@ -41,7 +41,6 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT DISTINCT
 	[t].[Pk],
 	[t].[Id],

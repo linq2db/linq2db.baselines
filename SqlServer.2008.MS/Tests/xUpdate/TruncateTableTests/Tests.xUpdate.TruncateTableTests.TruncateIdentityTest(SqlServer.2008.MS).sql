@@ -1,10 +1,8 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
-
 IF (OBJECT_ID(N'[TestIdTrun]', N'U') IS NOT NULL)
 	DROP TABLE [TestIdTrun]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 CREATE TABLE [TestIdTrun]
 (
 	[ID]     Int              NOT NULL IDENTITY,
@@ -14,7 +12,6 @@ CREATE TABLE [TestIdTrun]
 )
 
 -- SqlServer.2008.MS SqlServer.2008
-
 INSERT INTO [TestIdTrun]
 (
 	[Field1]
@@ -25,7 +22,6 @@ VALUES
 )
 
 -- SqlServer.2008.MS SqlServer.2008
-
 INSERT INTO [TestIdTrun]
 (
 	[Field1]
@@ -57,11 +53,9 @@ ORDER BY
 	[t2].[ID]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 TRUNCATE TABLE [TestIdTrun]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 INSERT INTO [TestIdTrun]
 (
 	[Field1]
@@ -72,7 +66,6 @@ VALUES
 )
 
 -- SqlServer.2008.MS SqlServer.2008
-
 INSERT INTO [TestIdTrun]
 (
 	[Field1]
@@ -104,6 +97,5 @@ ORDER BY
 	[t2].[ID]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 DROP TABLE [TestIdTrun]
 

@@ -37,7 +37,6 @@ WHERE
 	[Person].[FirstName] LIKE 'Update14%' ESCAPE '~'
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	COUNT(*)
 FROM

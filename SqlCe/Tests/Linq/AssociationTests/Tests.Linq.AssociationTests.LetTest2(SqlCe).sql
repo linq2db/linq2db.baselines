@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[t].[ParentID],
 	[t1].[Count_1]
@@ -15,7 +14,6 @@ FROM
 		) [t1]
 
 -- SqlCe
-
 SELECT
 	[t].[ParentID],
 	[t1].[Count_1]

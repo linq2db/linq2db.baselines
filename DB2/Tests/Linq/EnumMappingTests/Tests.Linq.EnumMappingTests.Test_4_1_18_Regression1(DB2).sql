@@ -8,7 +8,6 @@ WHERE
 	"r".ID >= 101 AND "r".ID < @p
 
 -- DB2 DB2.LUW DB2LUW
-
 INSERT INTO "LinqDataTypes"
 (
 	ID,
@@ -23,7 +22,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	CAST("t1"."BigIntValue" IS NOT NULL AND "t1"."IntValue" IS NOT NULL AS smallint),
 	"t1"."BigIntValue",

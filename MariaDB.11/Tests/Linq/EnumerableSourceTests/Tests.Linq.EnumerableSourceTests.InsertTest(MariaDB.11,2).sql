@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `TableToInsert`
 (
 	`Id`,
@@ -18,7 +17,6 @@ WHERE
 	`t`.`Id` IS NULL
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `TableToInsert`
 (
 	`Id`,

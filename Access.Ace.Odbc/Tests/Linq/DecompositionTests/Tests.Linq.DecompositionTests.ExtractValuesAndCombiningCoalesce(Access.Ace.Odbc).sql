@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t].[Kind] = 1 OR [t].[Kind] = 2,
 	[t].[Kind],
@@ -14,7 +13,6 @@ FROM
 	[Item] [t]
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[ItemId],
 	[t1].[Kind],
@@ -25,7 +23,6 @@ FROM
 	[Item] [t1]
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[x_1].[Color_1],
 	[x_1].[Kind],
@@ -57,7 +54,6 @@ WHERE
 	NOT ([x_1].[Color] AND ([x_1].[Color_1] AND [x_1].[Color_2] OR NOT [x_1].[Color_1]) OR NOT [x_1].[Color] AND NOT [x_1].[Color_4])
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[ItemId],
 	[t1].[Kind],
@@ -68,7 +64,6 @@ FROM
 	[Item] [t1]
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[x_1].[Color_1],
 	[x_1].[Kind],
@@ -101,7 +96,6 @@ WHERE
 	NOT [x_1].[Color] AND NOT [x_1].[Color_4]
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[ItemId],
 	[t1].[Kind],
@@ -112,7 +106,6 @@ FROM
 	[Item] [t1]
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[x_1].[Size_2],
 	[x_1].[Kind],
@@ -144,7 +137,6 @@ WHERE
 	NOT (NOT [x_1].[Size_1] AND ([x_1].[Size_3] AND [x_1].[Size_4] OR NOT [x_1].[Size_3]))
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[ItemId],
 	[t1].[Kind],
@@ -155,7 +147,6 @@ FROM
 	[Item] [t1]
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[x_1].[Size_2],
 	[x_1].[Kind],
@@ -187,7 +178,6 @@ WHERE
 	NOT [x_1].[Size_1] AND ([x_1].[Size_3] AND [x_1].[Size_4] OR NOT [x_1].[Size_3])
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[ItemId],
 	[t1].[Kind],

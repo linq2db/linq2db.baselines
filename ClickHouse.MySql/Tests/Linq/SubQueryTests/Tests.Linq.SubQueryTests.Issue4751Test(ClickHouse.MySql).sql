@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	x.Id,
 	x.CarNo,
@@ -53,7 +52,6 @@ ORDER BY
 LIMIT 20, 10
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	COUNT(*)
 FROM

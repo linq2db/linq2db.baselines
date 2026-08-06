@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	SUM(`grp_1`.`MoneyValue`),
 	Extract(year from `grp_1`.`c1`),
@@ -16,7 +15,6 @@ GROUP BY
 	`grp_1`.`c1`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	SUM(`grp_1`.`MoneyValue`),
 	Extract(year from `grp_1`.`c1`),

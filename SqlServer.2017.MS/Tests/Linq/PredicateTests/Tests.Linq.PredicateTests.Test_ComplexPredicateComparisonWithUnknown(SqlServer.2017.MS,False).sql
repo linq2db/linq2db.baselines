@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	COUNT(*)
 FROM
@@ -72,7 +71,6 @@ WHERE
 	END IS NULL
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -147,7 +145,6 @@ WHERE
 	END IS NULL
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -193,7 +190,6 @@ WHERE
 	END
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -239,7 +235,6 @@ WHERE
 	END
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -313,7 +308,6 @@ WHERE
 	END IS NULL, 1, 0)
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -387,7 +381,6 @@ WHERE
 	END IS NULL, 1, 0)
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -433,7 +426,6 @@ WHERE
 	END, 1, 0)
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -479,7 +471,6 @@ WHERE
 	END, 1, 0)
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -579,7 +570,6 @@ WHERE
 	END IS NULL
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -679,7 +669,6 @@ WHERE
 	END IS NULL
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -725,7 +714,6 @@ WHERE
 	END, 0, 1) = 1
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -771,7 +759,6 @@ WHERE
 	END, 0, 1) = 1
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -869,7 +856,6 @@ WHERE
 	END IS NULL, 1, 0)
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -967,7 +953,6 @@ WHERE
 	END IS NULL, 1, 0)
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1013,7 +998,6 @@ WHERE
 	END, 0, 1)
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1059,7 +1043,6 @@ WHERE
 	END, 0, 1)
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1092,7 +1075,6 @@ WHERE
 	) + [r].[Value5])
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1125,7 +1107,6 @@ WHERE
 	) + [r].[Value5])
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1158,7 +1139,6 @@ WHERE
 	) + [r].[Value5])
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1191,7 +1171,6 @@ WHERE
 	) + [r].[Value5])
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1224,7 +1203,6 @@ WHERE
 	) + [r].[Value5])
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1257,7 +1235,6 @@ WHERE
 	) + [r].[Value5])
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1290,7 +1267,6 @@ WHERE
 	) + [r].[Value5])
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1323,7 +1299,6 @@ WHERE
 	) + [r].[Value5])
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1356,7 +1331,6 @@ WHERE
 	) + [r].[Value5]), 1, 0)
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1389,7 +1363,6 @@ WHERE
 	) + [r].[Value5]), 1, 0)
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1422,7 +1395,6 @@ WHERE
 	) + [r].[Value5]), 1, 0)
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1455,7 +1427,6 @@ WHERE
 	) + [r].[Value5]), 1, 0)
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1488,7 +1459,6 @@ WHERE
 	) + [r].[Value5]), 1, 0)
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1521,7 +1491,6 @@ WHERE
 	) + [r].[Value5]), 1, 0)
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1554,7 +1523,6 @@ WHERE
 	) + [r].[Value5]), 1, 0)
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1587,7 +1555,6 @@ WHERE
 	) + [r].[Value5]), 1, 0)
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],

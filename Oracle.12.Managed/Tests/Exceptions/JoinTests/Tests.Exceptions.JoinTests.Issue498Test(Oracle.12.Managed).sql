@@ -1,5 +1,4 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	x."ParentID"
 FROM
@@ -7,7 +6,6 @@ FROM
 		INNER JOIN "Child" y ON x."ParentID" = y."ParentID"
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT DISTINCT
 	g_1."ParentID"
 FROM

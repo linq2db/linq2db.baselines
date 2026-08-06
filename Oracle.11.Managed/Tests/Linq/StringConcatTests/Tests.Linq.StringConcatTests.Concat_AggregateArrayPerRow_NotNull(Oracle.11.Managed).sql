@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	t."Id",
 	t."Str1" || t."Str2" || t."StrReq"
@@ -9,7 +8,6 @@ ORDER BY
 	t."Id"
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Str1",

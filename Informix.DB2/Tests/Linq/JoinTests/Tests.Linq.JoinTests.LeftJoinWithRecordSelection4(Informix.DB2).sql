@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	fact_1.Id,
 	leftTag.Id,

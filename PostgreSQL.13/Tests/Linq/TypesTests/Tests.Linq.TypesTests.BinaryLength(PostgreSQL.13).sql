@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL12
 DECLARE @BinaryValue Bytea(5) -- Binary
 SET     @BinaryValue = E'\\x0102030405'::bytea
 
@@ -9,8 +9,7 @@ SET
 WHERE
 	"LinqDataTypes"."ID" = 1
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	Length(t."BinaryValue")
 FROM
@@ -19,7 +18,7 @@ WHERE
 	t."ID" = 1
 LIMIT 1
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL12
 DECLARE @BinaryValue Bytea -- Binary
 SET     @BinaryValue = NULL
 

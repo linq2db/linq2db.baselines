@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`m_1`.`Key_1`,
 	`d`.`GrandChildID`
@@ -17,7 +16,6 @@ WHERE
 	`d`.`ParentID` IN (2)
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT DISTINCT
 	`x`.`ChildID`
 FROM
@@ -26,7 +24,6 @@ WHERE
 	`x`.`ParentID` IN (2)
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`m_1`.`Key_1`,
 	`d`.`GrandChildID`
@@ -44,7 +41,6 @@ WHERE
 	`d`.`ParentID` IN (3)
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT DISTINCT
 	`x`.`ChildID`
 FROM

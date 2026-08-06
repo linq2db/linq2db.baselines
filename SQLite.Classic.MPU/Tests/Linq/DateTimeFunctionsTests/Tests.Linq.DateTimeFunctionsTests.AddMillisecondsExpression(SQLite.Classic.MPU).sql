@@ -8,7 +8,6 @@ FROM
 	[LinqDataTypes] [t]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t].[DateTimeValue]
 FROM

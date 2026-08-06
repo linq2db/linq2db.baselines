@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."BoolValue",
@@ -7,8 +6,7 @@ SELECT
 FROM
 	"WhereCases" t1
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -18,8 +16,7 @@ FROM
 WHERE
 	NOT t."BoolValue" AND t."Id" > 0
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -29,8 +26,7 @@ FROM
 WHERE
 	NOT (NOT t."BoolValue" AND t."Id" > 0)
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -40,8 +36,7 @@ FROM
 WHERE
 	t."BoolValue" = True AND t."Id" > 0
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -51,8 +46,7 @@ FROM
 WHERE
 	NOT (t."BoolValue" = True AND t."Id" > 0)
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -62,8 +56,7 @@ FROM
 WHERE
 	t."BoolValue" = True AND t."Id" > 0
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -73,8 +66,7 @@ FROM
 WHERE
 	NOT (t."BoolValue" = True AND t."Id" > 0)
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -84,8 +76,7 @@ FROM
 WHERE
 	t."BoolValue" = False AND t."Id" > 0
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -95,8 +86,7 @@ FROM
 WHERE
 	NOT (t."BoolValue" = False AND t."Id" > 0)
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -106,8 +96,7 @@ FROM
 WHERE
 	t."BoolValue" = False AND t."Id" > 0
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -117,8 +106,7 @@ FROM
 WHERE
 	NOT (t."BoolValue" = False AND t."Id" > 0)
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -129,8 +117,7 @@ WHERE
 	(t."NullableBoolValue" = False OR t."NullableBoolValue" IS NULL) AND
 	t."Id" > 0
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -140,8 +127,7 @@ FROM
 WHERE
 	NOT ((t."NullableBoolValue" = False OR t."NullableBoolValue" IS NULL) AND t."Id" > 0)
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -151,8 +137,7 @@ FROM
 WHERE
 	t."NullableBoolValue" = True AND t."Id" > 0
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -162,8 +147,7 @@ FROM
 WHERE
 	NOT (t."NullableBoolValue" = True AND t."NullableBoolValue" IS NOT NULL AND t."Id" > 0)
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -173,8 +157,7 @@ FROM
 WHERE
 	t."NullableBoolValue" = True AND t."Id" > 0
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -184,8 +167,7 @@ FROM
 WHERE
 	NOT (t."NullableBoolValue" = True AND t."NullableBoolValue" IS NOT NULL AND t."Id" > 0)
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -195,8 +177,7 @@ FROM
 WHERE
 	t."NullableBoolValue" IS NULL AND t."Id" > 0
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -206,8 +187,7 @@ FROM
 WHERE
 	NOT (t."NullableBoolValue" IS NULL AND t."Id" > 0)
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -217,8 +197,7 @@ FROM
 WHERE
 	t."NullableBoolValue" IS NOT NULL AND t."Id" > 0
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -228,8 +207,7 @@ FROM
 WHERE
 	NOT (t."NullableBoolValue" IS NOT NULL AND t."Id" > 0)
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -239,8 +217,7 @@ FROM
 WHERE
 	t."NullableBoolValue" IS NOT NULL AND t."Id" > 0
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -250,8 +227,7 @@ FROM
 WHERE
 	NOT (t."NullableBoolValue" IS NOT NULL AND t."Id" > 0)
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -261,8 +237,7 @@ FROM
 WHERE
 	t."NullableBoolValue" IS NULL AND t."Id" > 0
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -272,8 +247,7 @@ FROM
 WHERE
 	NOT (t."NullableBoolValue" IS NULL AND t."Id" > 0)
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -284,8 +258,7 @@ WHERE
 	NOT t."BoolValue" AND (t."NullableBoolValue" = False OR t."NullableBoolValue" IS NULL) AND
 	t."Id" > 0
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -295,8 +268,7 @@ FROM
 WHERE
 	NOT (NOT t."BoolValue" AND (t."NullableBoolValue" = False OR t."NullableBoolValue" IS NULL) AND t."Id" > 0)
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -307,8 +279,7 @@ WHERE
 	NOT (NOT t."BoolValue" AND (t."NullableBoolValue" = False OR t."NullableBoolValue" IS NULL)) AND
 	t."Id" > 0
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -318,8 +289,7 @@ FROM
 WHERE
 	NOT (NOT (NOT t."BoolValue" AND (t."NullableBoolValue" = False OR t."NullableBoolValue" IS NULL)) AND t."Id" > 0)
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -330,8 +300,7 @@ WHERE
 	NOT t."BoolValue" AND t."NullableBoolValue" = False AND
 	t."Id" > 0
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -341,8 +310,7 @@ FROM
 WHERE
 	NOT (NOT t."BoolValue" AND t."NullableBoolValue" = False AND t."NullableBoolValue" IS NOT NULL AND t."Id" > 0)
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -353,8 +321,7 @@ WHERE
 	NOT (NOT t."BoolValue" AND t."NullableBoolValue" = False AND t."NullableBoolValue" IS NOT NULL) AND
 	t."Id" > 0
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t."Id",
 	t."BoolValue",

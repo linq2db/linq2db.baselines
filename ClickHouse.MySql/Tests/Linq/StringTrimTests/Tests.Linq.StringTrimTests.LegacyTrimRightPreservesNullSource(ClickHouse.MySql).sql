@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 INSERT INTO StringTrimTable
 (
 	Id,
@@ -18,7 +17,6 @@ VALUES
 )
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	CASE
 		WHEN t.VarCharColumn IS NOT NULL THEN trim(TRAILING '.+' FROM t.VarCharColumn)

@@ -18,7 +18,6 @@ VALUES
 
 CommitTransactionAsync
 -- SqlCe
-
 DELETE FROM
 	[Parent]
 WHERE

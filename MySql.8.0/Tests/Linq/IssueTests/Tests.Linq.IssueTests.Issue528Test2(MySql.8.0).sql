@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`m_1`.`Key_1`,
 	`d`.`FirstName`,
@@ -17,7 +16,6 @@ FROM
 		INNER JOIN `Person` `d` ON `m_1`.`Key_1` = `d`.`FirstName`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t2`.`Key_1`,
 	`t2`.`Key_1`

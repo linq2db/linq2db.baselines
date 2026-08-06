@@ -1,5 +1,4 @@
 ﻿-- Oracle.18.Managed Oracle.Managed Oracle12
-
 INSERT ALL
 	INTO "LinqDataTypes" (ID, "MoneyValue", "DateTimeValue", "BoolValue", "BinaryValue", "SmallIntValue", "StringValue") VALUES (4000,1000,TIMESTAMP '2001-01-11 01:11:21.100000',1,NULL,0,NULL)
 	INTO "LinqDataTypes" (ID, "MoneyValue", "DateTimeValue", "BoolValue", "BinaryValue", "SmallIntValue", "StringValue") VALUES (4001,1001,TIMESTAMP '2001-01-11 01:11:21.100000',1,NULL,1,NULL)
@@ -14,7 +13,6 @@ INSERT ALL
 SELECT * FROM dual
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"LinqDataTypes" p
 WHERE

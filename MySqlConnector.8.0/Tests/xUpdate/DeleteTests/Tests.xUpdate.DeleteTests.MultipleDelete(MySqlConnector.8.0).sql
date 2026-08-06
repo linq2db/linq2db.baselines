@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 DELETE  
 FROM
 	`Parent`
@@ -7,7 +6,6 @@ WHERE
 	`Parent`.`ParentID` >= 1000
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 INSERT INTO `Parent`
 (
 	`ParentID`,
@@ -18,7 +16,6 @@ VALUES
 (1001,NULL)
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 DELETE  
 FROM
 	`Parent`
@@ -27,7 +24,6 @@ WHERE
 	`Parent`.`ParentID` = 1001 AND `Parent`.`Value1` IS NULL
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 DELETE  
 FROM
 	`Parent`

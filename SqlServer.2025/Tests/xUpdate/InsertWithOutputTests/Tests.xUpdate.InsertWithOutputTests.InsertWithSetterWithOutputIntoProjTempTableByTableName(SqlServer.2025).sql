@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025
-
 DELETE [c_1]
 FROM
 	[Child] [c_1]
@@ -7,7 +6,6 @@ WHERE
 	[c_1].[ChildID] > 1000
 
 -- SqlServer.2025
-
 CREATE TABLE [tempdb]..[#TInserted]
 (
 	[ParentID] Int NOT NULL,
@@ -42,7 +40,6 @@ WHERE
 	[c_1].[ChildID] = 11
 
 -- SqlServer.2025
-
 SELECT
 	[c_1].[ParentID] - 4242,
 	[c_1].[ChildID]
@@ -50,7 +47,6 @@ FROM
 	[tempdb]..[#TInserted] [c_1]
 
 -- SqlServer.2025
-
 SELECT
 	[c_1].[ParentID],
 	[c_1].[ChildID]
@@ -60,11 +56,9 @@ WHERE
 	[c_1].[ChildID] > 1000
 
 -- SqlServer.2025
-
 DROP TABLE IF EXISTS [tempdb]..[#TInserted]
 
 -- SqlServer.2025
-
 DELETE [c_1]
 FROM
 	[Child] [c_1]

@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	"t"."TestId",
 	"t1"."count_1"
@@ -16,7 +15,6 @@ FROM
 		) "t1" ON "t1"."Key_1" = "t"."TestId"
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1"."Id",
 	"t1"."TestId"

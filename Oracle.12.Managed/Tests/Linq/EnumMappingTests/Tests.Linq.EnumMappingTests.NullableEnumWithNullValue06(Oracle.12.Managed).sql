@@ -76,7 +76,6 @@ VALUES
 )
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	r.ID,
 	r."IntValue"
@@ -88,7 +87,6 @@ ORDER BY
 	r.ID
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	r.ID,
 	r."IntValue",

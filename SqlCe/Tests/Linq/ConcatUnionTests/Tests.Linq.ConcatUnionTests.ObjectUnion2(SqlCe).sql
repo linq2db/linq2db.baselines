@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[p1].[ParentID],
 	[p1].[Value1]
@@ -9,8 +8,8 @@ WHERE
 	[p1].[ParentID] > 3
 UNION
 SELECT
-	NULL as [ParentID],
-	NULL as [Value1]
+	NULL,
+	NULL
 FROM
 	[Parent] [p2]
 WHERE

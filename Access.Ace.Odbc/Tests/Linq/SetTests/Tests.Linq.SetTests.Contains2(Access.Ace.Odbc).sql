@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	IIF([p].[ParentID] IN (
 		SELECT

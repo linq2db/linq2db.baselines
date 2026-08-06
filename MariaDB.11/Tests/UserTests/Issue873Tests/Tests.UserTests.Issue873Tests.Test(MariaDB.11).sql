@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	CONCAT(' ', CAST(Coalesce(`t1`.`Value1`, 0) AS CHAR(11))),
 	Coalesce(`t1`.`SubSum`, 0),

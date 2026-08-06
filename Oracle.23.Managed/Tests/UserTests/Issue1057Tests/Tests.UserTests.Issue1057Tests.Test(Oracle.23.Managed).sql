@@ -54,7 +54,6 @@ VALUES
 )
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	p."Id",
 	p."TargetName",

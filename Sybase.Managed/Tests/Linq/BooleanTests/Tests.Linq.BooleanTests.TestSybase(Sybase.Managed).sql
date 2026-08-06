@@ -17,7 +17,6 @@ WHERE
 	[r].[Boolean] = @True
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -49,7 +48,6 @@ WHERE
 	[r].[Boolean] = @False
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -81,7 +79,6 @@ WHERE
 	[r].[Boolean] = @TrueN
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -113,7 +110,6 @@ WHERE
 	[r].[Boolean] = @FalseN
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -127,7 +123,6 @@ FROM
 	[SybaseBooleanTable] [t1]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[r].[Id],
 	[r].[Boolean],
@@ -143,7 +138,6 @@ WHERE
 	1 = 0
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -175,7 +169,6 @@ WHERE
 	[r].[Boolean] <> @True
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -207,7 +200,6 @@ WHERE
 	[r].[Boolean] <> @False
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -239,7 +231,6 @@ WHERE
 	[r].[Boolean] <> @TrueN
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -271,7 +262,6 @@ WHERE
 	[r].[Boolean] <> @FalseN
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -285,7 +275,6 @@ FROM
 	[SybaseBooleanTable] [t1]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[r].[Id],
 	[r].[Boolean],
@@ -299,7 +288,6 @@ FROM
 	[SybaseBooleanTable] [r]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -313,7 +301,6 @@ FROM
 	[SybaseBooleanTable] [t1]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[g_1].[Id],
 	COUNT(CASE
@@ -486,7 +473,6 @@ GROUP BY
 	[g_1].[Id]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -500,7 +486,6 @@ FROM
 	[SybaseBooleanTable] [t1]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[r].[Id],
 	CASE
@@ -1112,7 +1097,6 @@ FROM
 	[SybaseBooleanTable] [r_1]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -1126,7 +1110,6 @@ FROM
 	[SybaseBooleanTable] [t1]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[r].[Id],
 	[r].[Boolean],
@@ -1142,7 +1125,6 @@ WHERE
 	[r].[Boolean] = 1
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -1156,7 +1138,6 @@ FROM
 	[SybaseBooleanTable] [t1]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[r].[Id],
 	[r].[Boolean],
@@ -1172,7 +1153,6 @@ WHERE
 	[r].[Boolean] = 0
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -1186,7 +1166,6 @@ FROM
 	[SybaseBooleanTable] [t1]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[r].[Id],
 	[r].[Boolean],
@@ -1202,7 +1181,6 @@ WHERE
 	[r].[Boolean] = 1
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -1216,7 +1194,6 @@ FROM
 	[SybaseBooleanTable] [t1]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[r].[Id],
 	[r].[Boolean],
@@ -1232,7 +1209,6 @@ WHERE
 	[r].[Boolean] = 0
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -1246,7 +1222,6 @@ FROM
 	[SybaseBooleanTable] [t1]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[r].[Id],
 	[r].[Boolean],
@@ -1262,7 +1237,6 @@ WHERE
 	1 = 0
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -1276,7 +1250,6 @@ FROM
 	[SybaseBooleanTable] [t1]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[r].[Id],
 	[r].[Boolean],
@@ -1292,7 +1265,6 @@ WHERE
 	[r].[Boolean] <> 1
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -1306,7 +1278,6 @@ FROM
 	[SybaseBooleanTable] [t1]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[r].[Id],
 	[r].[Boolean],
@@ -1322,7 +1293,6 @@ WHERE
 	[r].[Boolean] <> 0
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -1336,7 +1306,6 @@ FROM
 	[SybaseBooleanTable] [t1]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[r].[Id],
 	[r].[Boolean],
@@ -1352,7 +1321,6 @@ WHERE
 	[r].[Boolean] <> 1
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -1366,7 +1334,6 @@ FROM
 	[SybaseBooleanTable] [t1]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[r].[Id],
 	[r].[Boolean],
@@ -1382,7 +1349,6 @@ WHERE
 	[r].[Boolean] <> 0
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -1396,7 +1362,6 @@ FROM
 	[SybaseBooleanTable] [t1]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[r].[Id],
 	[r].[Boolean],
@@ -1410,7 +1375,6 @@ FROM
 	[SybaseBooleanTable] [r]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -1424,7 +1388,6 @@ FROM
 	[SybaseBooleanTable] [t1]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[g_1].[Id],
 	COUNT(CASE
@@ -1597,7 +1560,6 @@ GROUP BY
 	[g_1].[Id]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -1611,7 +1573,6 @@ FROM
 	[SybaseBooleanTable] [t1]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[r].[Id],
 	CASE
@@ -2223,7 +2184,6 @@ FROM
 	[SybaseBooleanTable] [r_1]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
-
 CREATE TABLE [aa]
 (
 	[bb] Int            NOT NULL,
@@ -26,7 +25,6 @@ VALUES
 )
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t1].[bb],
 	[t1].[cc]
@@ -34,6 +32,5 @@ FROM
 	[aa] [t1]
 
 -- SqlServer.2017.MS SqlServer.2017
-
 DROP TABLE [aa]
 

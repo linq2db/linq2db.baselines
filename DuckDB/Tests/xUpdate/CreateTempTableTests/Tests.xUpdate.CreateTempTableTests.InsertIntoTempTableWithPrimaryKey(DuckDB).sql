@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 CREATE TEMPORARY TABLE TableWithPrimaryKey2
 (
 	"Key" INTEGER,
@@ -23,6 +22,5 @@ ORDER BY
 INSERT BULK TableWithPrimaryKey2(Key)
 
 -- DuckDB
-
 DROP TABLE IF EXISTS TableWithPrimaryKey2
 

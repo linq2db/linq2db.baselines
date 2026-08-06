@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
-
 SELECT
 	[s].[Id],
 	[s].[Value],
@@ -10,7 +9,6 @@ WHERE
 	[s].[Id] > 3
 
 -- SqlServer.2022.MS SqlServer.2022
-
 DELETE [s]
 OUTPUT
 	DELETED.[Id],

@@ -1,10 +1,8 @@
 ﻿-- Firebird.5 Firebird4
-
 DELETE FROM
 	"TestMerge1" "t1"
 
 -- Firebird.5 Firebird4
-
 DELETE FROM
 	"TestMerge2" "t1"
 
@@ -565,7 +563,6 @@ VALUES
 )
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Field1",
@@ -588,7 +585,6 @@ ORDER BY
 	"t1"."Id"
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Field1",

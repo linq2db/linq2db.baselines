@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT FIRST 2
 	"p"."FirstName"
 FROM
@@ -8,7 +7,6 @@ WHERE
 	"p"."PersonID" = 1
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	COUNT(*)
 FROM
@@ -18,7 +16,6 @@ WHERE
 	"p"."PersonID" = 1
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	COUNT(*)
 FROM
@@ -28,7 +25,6 @@ WHERE
 	"p"."PersonID" = 1
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	COUNT(*)
 FROM
@@ -38,7 +34,6 @@ WHERE
 	"p"."PersonID" = 1
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	COUNT(*)
 FROM

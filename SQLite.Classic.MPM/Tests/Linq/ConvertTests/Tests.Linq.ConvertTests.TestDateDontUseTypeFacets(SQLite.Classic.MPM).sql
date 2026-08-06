@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[g_2].[Date_1],
 	COUNT(*)
@@ -14,7 +13,6 @@ GROUP BY
 	[g_2].[Date_1]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t1].[CreatedOnUtc]
 FROM

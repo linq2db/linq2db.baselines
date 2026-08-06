@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 UPDATE
 	[MyTable]
 SET
@@ -8,7 +7,6 @@ WHERE
 	[MyTable].[Id] = 1
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Name]

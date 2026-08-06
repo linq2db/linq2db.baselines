@@ -29,7 +29,6 @@ VALUES
 )
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],

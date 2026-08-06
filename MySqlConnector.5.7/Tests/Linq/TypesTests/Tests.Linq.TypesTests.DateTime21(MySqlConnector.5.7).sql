@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t`.`ID`,
 	`t`.`MoneyValue`,
@@ -29,7 +28,6 @@ WHERE
 	`t`.`ID` = 1
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t`.`ID`,
 	`t`.`MoneyValue`,

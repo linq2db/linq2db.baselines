@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	r.ID,
 	r.MoneyValue,
@@ -18,7 +17,6 @@ WHERE
 LIMIT 1
 
 -- DuckDB
-
 SELECT
 	r.ID,
 	r.MoneyValue,
@@ -132,7 +130,6 @@ WHERE
 	LinqDataTypes.ID = $ID
 
 -- DuckDB
-
 SELECT
 	r.ID,
 	r.MoneyValue,

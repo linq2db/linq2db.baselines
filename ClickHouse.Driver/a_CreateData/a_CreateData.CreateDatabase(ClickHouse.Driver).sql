@@ -1,69 +1,52 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 DROP TABLE IF EXISTS Parent;
 
 -- ClickHouse.Driver ClickHouse
-
 DROP TABLE IF EXISTS Child;
 
 -- ClickHouse.Driver ClickHouse
-
 DROP TABLE IF EXISTS GrandChild;
 
 -- ClickHouse.Driver ClickHouse
-
 DROP TABLE IF EXISTS InheritanceParent;
 
 -- ClickHouse.Driver ClickHouse
-
 DROP TABLE IF EXISTS InheritanceChild;
 
 -- ClickHouse.Driver ClickHouse
-
 DROP TABLE IF EXISTS Doctor;
 
 -- ClickHouse.Driver ClickHouse
-
 DROP TABLE IF EXISTS Patient;
 
 -- ClickHouse.Driver ClickHouse
-
 DROP TABLE IF EXISTS Person;
 
 -- ClickHouse.Driver ClickHouse
-
 DROP TABLE IF EXISTS LinqDataTypes;
 
 -- ClickHouse.Driver ClickHouse
-
 DROP TABLE IF EXISTS AllTypes;
 
 -- ClickHouse.Driver ClickHouse
-
 DROP TABLE IF EXISTS CollatedTable;
 
 -- ClickHouse.Driver ClickHouse
-
 DROP TABLE IF EXISTS TestMerge1
 
 -- ClickHouse.Driver ClickHouse
-
 DROP TABLE IF EXISTS TestMerge2;
 
 -- ClickHouse.Driver ClickHouse
-
 CREATE TABLE Parent      (ParentID Int32, Value1 Nullable(Int32)) ENGINE = Memory();
 
 -- ClickHouse.Driver ClickHouse
-
 CREATE TABLE Child       (ParentID Int32, ChildID Int32) ENGINE = Memory();
 
 -- ClickHouse.Driver ClickHouse
-
 CREATE TABLE GrandChild  (ParentID Int32, ChildID Int32, GrandChildID Int32) ENGINE = Memory();
 
 -- ClickHouse.Driver ClickHouse
-
 CREATE TABLE LinqDataTypes
 (
 	ID             Int32,
@@ -80,7 +63,6 @@ CREATE TABLE LinqDataTypes
 ) ENGINE = MergeTree() ORDER BY ID PRIMARY KEY ID;
 
 -- ClickHouse.Driver ClickHouse
-
 CREATE TABLE InheritanceParent
 (
 	InheritanceParentId          Int32,
@@ -89,7 +71,6 @@ CREATE TABLE InheritanceParent
 ) ENGINE = MergeTree() ORDER BY InheritanceParentId PRIMARY KEY InheritanceParentId;
 
 -- ClickHouse.Driver ClickHouse
-
 CREATE TABLE InheritanceChild
 (
 	InheritanceChildId           Int32,
@@ -99,7 +80,6 @@ CREATE TABLE InheritanceChild
 ) ENGINE = MergeTree() ORDER BY InheritanceChildId PRIMARY KEY InheritanceChildId;
 
 -- ClickHouse.Driver ClickHouse
-
 CREATE TABLE Person
 (
 	PersonID            Int32,
@@ -111,7 +91,6 @@ CREATE TABLE Person
 ) ENGINE = MergeTree() ORDER BY PersonID PRIMARY KEY PersonID;
 
 -- ClickHouse.Driver ClickHouse
-
 INSERT INTO Person (PersonID, FirstName, LastName, MiddleName, Gender)
 	VALUES
 	(1, 'John',   'Pupkin',    NULL, 'M'),
@@ -120,7 +99,6 @@ INSERT INTO Person (PersonID, FirstName, LastName, MiddleName, Gender)
 	(4, 'Jürgen', 'König',     'Ko', 'M');
 
 -- ClickHouse.Driver ClickHouse
-
 CREATE TABLE Doctor
 (
 	PersonID Int32,
@@ -128,11 +106,9 @@ CREATE TABLE Doctor
 ) ENGINE = MergeTree() ORDER BY PersonID PRIMARY KEY PersonID;
 
 -- ClickHouse.Driver ClickHouse
-
 INSERT INTO Doctor (PersonID, Taxonomy) VALUES (1, 'Psychiatry');
 
 -- ClickHouse.Driver ClickHouse
-
 CREATE TABLE Patient
 (
 	PersonID  Int32,
@@ -140,11 +116,9 @@ CREATE TABLE Patient
 ) ENGINE = MergeTree() ORDER BY PersonID PRIMARY KEY PersonID;
 
 -- ClickHouse.Driver ClickHouse
-
 INSERT INTO Patient (PersonID, Diagnosis) VALUES (2, 'Hallucination with Paranoid Bugs'' Delirium of Persecution');
 
 -- ClickHouse.Driver ClickHouse
-
 CREATE TABLE AllTypes
 (
 	ID                       Int32,
@@ -165,7 +139,6 @@ CREATE TABLE AllTypes
 ) ENGINE = MergeTree() ORDER BY ID PRIMARY KEY ID;
 
 -- ClickHouse.Driver ClickHouse
-
 INSERT INTO AllTypes
 (
 	ID,
@@ -184,7 +157,6 @@ SELECT	2,
 		'23233', 'тест', '234', '1'
 
 -- ClickHouse.Driver ClickHouse
-
 CREATE TABLE CollatedTable
 (
 	Id              Int32,
@@ -193,7 +165,6 @@ CREATE TABLE CollatedTable
 )  ENGINE = MergeTree() ORDER BY Id PRIMARY KEY Id;
 
 -- ClickHouse.Driver ClickHouse
-
 CREATE TABLE TestMerge1
 (
 	Id              Int32,
@@ -223,7 +194,6 @@ CREATE TABLE TestMerge1
 )  ENGINE = MergeTree() ORDER BY Id PRIMARY KEY Id;
 
 -- ClickHouse.Driver ClickHouse
-
 CREATE TABLE TestMerge2
 (
 	Id              Int32,
@@ -253,11 +223,9 @@ CREATE TABLE TestMerge2
 )  ENGINE = MergeTree() ORDER BY Id PRIMARY KEY Id;
 
 -- ClickHouse.Driver ClickHouse
-
 DROP TABLE IF EXISTS ReplacingMergeTreeTable;
 
 -- ClickHouse.Driver ClickHouse
-
 CREATE TABLE ReplacingMergeTreeTable
 (
 	ID UInt32,

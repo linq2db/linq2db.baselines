@@ -9,7 +9,6 @@ WHERE
 	[r].[ID] >= 101 AND [r].[ID] < @p
 
 -- SqlServer.2019.MS SqlServer.2019
-
 INSERT INTO [LinqDataTypes]
 (
 	[ID],
@@ -22,7 +21,6 @@ VALUES
 )
 
 -- SqlServer.2019.MS SqlServer.2019
-
 UPDATE
 	[LinqDataTypes]
 SET
@@ -31,7 +29,6 @@ WHERE
 	[LinqDataTypes].[ID] = 101 AND [LinqDataTypes].[IntValue] = 3
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	COUNT(*)
 FROM

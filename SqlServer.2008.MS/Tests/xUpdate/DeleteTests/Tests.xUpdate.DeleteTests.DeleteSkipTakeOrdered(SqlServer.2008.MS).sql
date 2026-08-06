@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
-
 DELETE [c_1]
 FROM
 	[Parent] [c_1]
@@ -202,7 +201,6 @@ FROM
 	) [t2]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[r].[Value1]
 FROM
@@ -213,7 +211,6 @@ ORDER BY
 	[r].[ParentID]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 DELETE [c_1]
 FROM
 	[Parent] [c_1]

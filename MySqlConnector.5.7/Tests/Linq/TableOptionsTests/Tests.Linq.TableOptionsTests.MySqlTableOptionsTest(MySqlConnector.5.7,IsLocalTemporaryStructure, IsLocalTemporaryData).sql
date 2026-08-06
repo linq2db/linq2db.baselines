@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 CREATE TEMPORARY TABLE `TestTable`
 (
 	`Id`    INT NOT NULL,
@@ -9,6 +8,5 @@ CREATE TEMPORARY TABLE `TestTable`
 )
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 DROP TEMPORARY TABLE IF EXISTS `TestTable`
 

@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"m_1"."Id",
 	"d"."Value"
@@ -8,7 +7,6 @@ FROM
 		INNER JOIN "ItemValue" "d" ON "m_1"."Id" = "d"."ItemId"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"x_1"."Id",
 	"x_1"."Text"

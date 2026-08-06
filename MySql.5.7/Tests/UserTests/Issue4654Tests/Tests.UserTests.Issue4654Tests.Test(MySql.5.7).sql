@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	CAST(`c_1`.`Id` AS CHAR(11)),
 	`c_1`.`Name`

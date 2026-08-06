@@ -19,7 +19,6 @@ WHERE
 	@param = [t1].[BigIntValue]
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[t1].[ID],
 	[t1].[MoneyValue],

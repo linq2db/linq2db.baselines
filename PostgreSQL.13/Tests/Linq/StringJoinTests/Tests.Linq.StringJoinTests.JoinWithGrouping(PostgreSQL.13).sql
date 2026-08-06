@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
-
+﻿-- PostgreSQL.13 PostgreSQL12
 SELECT
 	g_1."Id",
 	STRING_AGG(Coalesce(g_1."NullableValue", ''), ', '),
@@ -11,8 +10,7 @@ GROUP BY
 ORDER BY
 	g_1."Id"
 
--- PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."PK",
 	t1."Id",

@@ -1,11 +1,9 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	sys_context('userenv','service_name')
 FROM SYS.DUAL
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	sys_context('userenv', 'current_schema') as "c1"
 FROM
@@ -13,7 +11,6 @@ FROM
 FETCH NEXT 1 ROWS ONLY
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "Issue681Table2"';
 EXCEPTION
@@ -24,7 +21,6 @@ EXCEPTION
 END;
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 CREATE TABLE "Issue681Table2"
 (
 	ID      Int NOT NULL,
@@ -34,6 +30,5 @@ CREATE TABLE "Issue681Table2"
 )
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 DROP TABLE SYSTEM."Issue681Table2"@"free"
 

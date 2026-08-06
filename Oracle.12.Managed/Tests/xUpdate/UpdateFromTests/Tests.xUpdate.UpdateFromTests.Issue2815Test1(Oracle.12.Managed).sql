@@ -1,5 +1,4 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
-
 UPDATE
 	"Issue2815Table1"
 SET

@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[contract].[Id],
 	[servProj].[IdContract]

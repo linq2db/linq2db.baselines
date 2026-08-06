@@ -4,7 +4,7 @@ SET     @value = 1
 
 SELECT
 	[t].[Id],
-	[t].[Value] as [Value_1]
+	[t].[Value]
 FROM
 	[NullableBoolClass] [t]
 WHERE
@@ -16,7 +16,7 @@ SET     @value = 1
 
 SELECT
 	[t].[Id],
-	[t].[Value] as [Value_1]
+	[t].[Value]
 FROM
 	[NullableBoolClass] [t]
 WHERE
@@ -28,7 +28,7 @@ SET     @value = 1
 
 SELECT
 	[t].[Id],
-	[t].[Value] as [Value_1]
+	[t].[Value]
 FROM
 	[NullableBoolClass] [t]
 WHERE
@@ -40,7 +40,7 @@ SET     @value = 1
 
 SELECT
 	[t].[Id],
-	[t].[Value] as [Value_1]
+	[t].[Value]
 FROM
 	[NullableBoolClass] [t]
 WHERE

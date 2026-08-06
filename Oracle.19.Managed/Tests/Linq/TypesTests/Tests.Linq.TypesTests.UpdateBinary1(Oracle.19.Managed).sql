@@ -10,7 +10,6 @@ WHERE
 	t.ID = 1
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	t."BinaryValue"
 FROM

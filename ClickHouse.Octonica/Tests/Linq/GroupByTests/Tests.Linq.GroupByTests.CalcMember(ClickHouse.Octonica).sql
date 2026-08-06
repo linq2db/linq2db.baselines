@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	groupedData_1.Key_1,
 	COUNT(*)

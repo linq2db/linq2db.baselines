@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 INSERT INTO TestFolder
 (
 	Id,
@@ -17,7 +16,7 @@ WITH CTE AS
 )
 SELECT
 	toUUID('bc7b663d-0fde-4327-8f92-5d8cc3a11d11'),
-	concat(parent.Label, '/', child.Label)
+	concat(Coalesce(parent.Label, ''), '/', Coalesce(child.Label, ''))
 FROM
 	CTE child
 		INNER JOIN TestFolder parent ON child.ParentId = parent.Id

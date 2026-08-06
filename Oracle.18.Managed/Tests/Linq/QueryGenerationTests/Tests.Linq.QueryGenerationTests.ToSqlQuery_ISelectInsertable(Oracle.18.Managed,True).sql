@@ -12,7 +12,6 @@ VALUES
 )
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 INSERT INTO "TableWithIdentity"
 (
 	"Value"
@@ -23,7 +22,6 @@ FROM
 	"TableWithIdentitySrc" t1
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Value"

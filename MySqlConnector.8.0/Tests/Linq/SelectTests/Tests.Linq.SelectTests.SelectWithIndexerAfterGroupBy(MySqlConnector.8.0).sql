@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`x`.`Key_1`,
 	`x`.`Index_1`
@@ -17,7 +16,6 @@ ORDER BY
 	`x`.`Key_1` DESC
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`FirstName`,
 	`t1`.`PersonID`,

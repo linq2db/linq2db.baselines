@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	"g_1"."Id",
 	LIST("g_1"."Value1", ', ')

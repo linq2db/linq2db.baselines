@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -17,7 +16,6 @@ ORDER BY
 	"t1"."Id"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t"."Id",
 	"t"."Value1",
@@ -28,7 +26,6 @@ ORDER BY
 	"t"."Id"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -46,7 +43,6 @@ ORDER BY
 	"t1"."Id"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t2"."Id",
 	"t2"."Value1",
@@ -78,7 +74,6 @@ ORDER BY
 	"t2"."Id"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Value2"
 FROM

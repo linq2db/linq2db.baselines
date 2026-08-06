@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 DELETE  
 FROM
 	`InheritanceParent`
@@ -28,7 +27,6 @@ ON DUPLICATE KEY UPDATE
 	`TypeDiscriminator` = @Data
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	COUNT(*)
 FROM
@@ -58,7 +56,6 @@ ON DUPLICATE KEY UPDATE
 	`TypeDiscriminator` = @Data
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	COUNT(*)
 FROM

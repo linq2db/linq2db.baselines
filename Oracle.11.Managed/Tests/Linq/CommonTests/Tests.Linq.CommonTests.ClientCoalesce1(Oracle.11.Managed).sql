@@ -10,7 +10,6 @@ WHERE
 	Coalesce(x."Value1", :Value1) > 10
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	p."Value1"
 FROM

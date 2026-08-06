@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016
-
 SELECT TOP (1)
 	[c_1].[ParentID],
 	[c_1].[ChildID]

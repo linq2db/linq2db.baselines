@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[r].[Id],
 	N'Element ' + CAST([r].[NText] AS NVarChar(Max)) + N' Text1',

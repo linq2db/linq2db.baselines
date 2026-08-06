@@ -25,7 +25,6 @@ ON DUPLICATE KEY UPDATE
 	`updated_by` = @UpdatedBy
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`id`,
 	`t1`.`name`,
@@ -62,7 +61,6 @@ ON DUPLICATE KEY UPDATE
 	`updated_by` = @UpdatedBy
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`id`,
 	`t1`.`name`,

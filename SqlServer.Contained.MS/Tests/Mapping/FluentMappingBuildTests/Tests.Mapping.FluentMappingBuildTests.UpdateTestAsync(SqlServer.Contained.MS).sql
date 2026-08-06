@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained.MS SqlServer.2019
-
 IF (OBJECT_ID(N'[FluentTemp_UpdateAsync]', N'U') IS NULL)
 	CREATE TABLE [FluentTemp_UpdateAsync]
 	(
@@ -46,6 +45,5 @@ WHERE
 	[FluentTemp_UpdateAsync].[ID] = 1
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [FluentTemp_UpdateAsync]
 

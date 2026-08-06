@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 SELECT TOP (50) PERCENT WITH TIES
 	[t1].[FirstName],
 	[t1].[PersonID],

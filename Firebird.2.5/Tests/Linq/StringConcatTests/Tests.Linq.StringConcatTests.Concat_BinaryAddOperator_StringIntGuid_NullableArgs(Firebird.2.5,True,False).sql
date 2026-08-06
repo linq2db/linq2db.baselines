@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	Coalesce("t"."Value1", '') || "t"."Value2" || CAST(Lower(UUID_TO_CHAR("t"."Value3")) AS VarChar(36) CHARACTER SET UNICODE_FSS)
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	"t".ID
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1".ID,
 	"t1"."Value1",

@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DELETE  
 FROM
 	`LinqDataTypes`
@@ -7,7 +6,6 @@ WHERE
 	`LinqDataTypes`.`ID` > 1000
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `LinqDataTypes`
 (
 	`ID`,
@@ -22,7 +20,6 @@ VALUES
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t`.`ID`,
 	`t`.`MoneyValue`,
@@ -38,7 +35,6 @@ WHERE
 LIMIT 2
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DELETE  
 FROM
 	`LinqDataTypes`

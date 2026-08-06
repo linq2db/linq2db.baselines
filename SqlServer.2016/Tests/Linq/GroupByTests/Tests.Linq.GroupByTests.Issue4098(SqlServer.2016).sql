@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016
-
 SELECT
 	[ip].[InvestorId],
 	[t1].[Units],

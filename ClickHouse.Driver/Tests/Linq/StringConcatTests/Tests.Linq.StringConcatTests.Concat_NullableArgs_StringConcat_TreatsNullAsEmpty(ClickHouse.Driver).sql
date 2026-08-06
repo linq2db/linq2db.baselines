@@ -1,12 +1,10 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	e.Id
 FROM
 	ConcatTestEntity e
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Str1,

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 SELECT TOP (1)
 	CAST([x].[Prop_bool] AS NVarChar(1)),
 	CAST([x].[Prop_byte] AS NVarChar(3)),
@@ -35,7 +34,6 @@ FROM
 	[ToStringConvertibleTypes] [x]
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT TOP (1)
 	IIF([x].[Prop_bool] = 1, N'1', N'0'),
 	[x].[Prop_byte],

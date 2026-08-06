@@ -1,7 +1,6 @@
 ﻿
 
 -- MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`m_1`.`OrderID`,
 	`d`.`IsDeleted`,
@@ -34,7 +33,6 @@ WHERE
 
 
 -- MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`e`.`IsDeleted`,
 	`e`.`OrderID`,

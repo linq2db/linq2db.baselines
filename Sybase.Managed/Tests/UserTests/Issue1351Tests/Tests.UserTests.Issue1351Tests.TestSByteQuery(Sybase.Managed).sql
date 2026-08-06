@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[t1].[ID],
 	[t1].[TestField],
@@ -10,7 +9,6 @@ WHERE
 	[t1].[TestField] = 0
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[ID],
 	[t1].[TestField],

@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	IIF([t1].[Value1] IS NULL, [t1].[ChildID], [t1].[Value1])
 FROM

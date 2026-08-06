@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
@@ -26,7 +25,6 @@ ORDER BY
 	[d].[ChildID]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[a].[ParentID],
 	[a_ParentTest].[ParentID]

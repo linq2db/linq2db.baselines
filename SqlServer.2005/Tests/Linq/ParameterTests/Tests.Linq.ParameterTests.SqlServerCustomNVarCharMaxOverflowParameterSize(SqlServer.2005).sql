@@ -12,7 +12,6 @@ VALUES
 )
 
 -- SqlServer.2005
-
 SELECT
 	[t1].[VarBinary],
 	[t1].[VarChar],

@@ -1,12 +1,11 @@
 ﻿-- SqlCe
-
 SELECT
 	[t1].[Id],
 	CASE
 		WHEN [t1].[Value_1] IS NULL OR LEN([t1].[Value_1] + '.') = 1
 			THEN 1
 		ELSE 0
-	END as [IsEmpty]
+	END
 FROM
 	(
 		SELECT

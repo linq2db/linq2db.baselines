@@ -1,13 +1,11 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT DISTINCT
 	True,
 	it."SmallIntValue" <> 0
 FROM
 	"LinqDataTypes" it
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."ID",
 	t1."MoneyValue",

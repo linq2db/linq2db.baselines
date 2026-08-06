@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 /* My Test */
 MERGE INTO "TestMerge1" "Target"
 USING (

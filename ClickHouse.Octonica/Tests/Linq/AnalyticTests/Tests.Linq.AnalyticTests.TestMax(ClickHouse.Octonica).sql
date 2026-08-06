@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	MAX(c_1.ChildID),
 	MAX(c_1.ChildID),
@@ -12,21 +11,18 @@ GROUP BY
 	g_1.ParentID
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	maxOrNull(t1.ParentID)
 FROM
 	Child t1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	MAX(ALL t1.ParentID)
 FROM
 	Child t1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	MAX(DISTINCT t1.ParentID)
 FROM

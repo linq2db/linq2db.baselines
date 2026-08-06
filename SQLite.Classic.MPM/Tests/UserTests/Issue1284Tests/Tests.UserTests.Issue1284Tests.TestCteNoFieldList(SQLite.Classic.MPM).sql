@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 WITH [cte]
 (
 	[FirstName],
@@ -29,7 +28,6 @@ FROM
 	[cte] [t1]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[x].[FirstName],
 	[x].[PersonID],

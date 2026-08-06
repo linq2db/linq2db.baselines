@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	ROW_NUMBER() OVER (ORDER BY [item_1].[Id]) - 1,
 	[item_1].[Id],
@@ -10,7 +9,6 @@ ORDER BY
 	[item_1].[Id]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[TestId]

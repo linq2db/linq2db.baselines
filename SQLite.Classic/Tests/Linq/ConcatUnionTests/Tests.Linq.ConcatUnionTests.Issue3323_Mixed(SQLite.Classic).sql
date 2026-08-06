@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 INSERT INTO [Issue3323Table]
 (
 	[Id],
@@ -16,7 +15,6 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[r].[Id],
 	Coalesce([r].[FirstName], '') || ' ' || Coalesce([r].[LastName], '')
@@ -30,7 +28,6 @@ FROM
 	[Issue3323Table] [r_1]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[r].[Id] + 1,
 	[r].[Text]

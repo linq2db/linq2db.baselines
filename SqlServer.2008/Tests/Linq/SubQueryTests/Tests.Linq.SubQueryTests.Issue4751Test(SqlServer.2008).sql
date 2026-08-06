@@ -79,7 +79,6 @@ ORDER BY
 	[t1].[CarNo]
 
 -- SqlServer.2008
-
 SELECT
 	COUNT(*)
 FROM

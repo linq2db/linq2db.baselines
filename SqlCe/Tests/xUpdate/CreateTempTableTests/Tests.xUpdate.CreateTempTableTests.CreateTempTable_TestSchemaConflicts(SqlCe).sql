@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 INSERT INTO [TestTempTable]
 (
 	[Id],
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- SqlCe
-
 CREATE TABLE [TempTable]
 (
 	[Id]      Int           NOT NULL,
@@ -22,7 +20,6 @@ CREATE TABLE [TempTable]
 )
 
 -- SqlCe
-
 INSERT INTO [TempTable]
 (
 	[Id],
@@ -30,12 +27,11 @@ INSERT INTO [TempTable]
 )
 SELECT
 	[t1].[Id],
-	[t1].[Value] as [Value_1]
+	[t1].[Value]
 FROM
 	[TestTempTable] [t1]
 
 -- SqlCe
-
 INSERT INTO [TestTempTable]
 (
 	[Id],
@@ -48,7 +44,6 @@ VALUES
 )
 
 -- SqlCe
-
 INSERT INTO [TempTable]
 (
 	[Id],
@@ -61,26 +56,23 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
-	[t1].[Value] as [Value_1]
+	[t1].[Value]
 FROM
 	[TestTempTable] [t1]
 ORDER BY
 	[t1].[Id]
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
-	[t1].[Renamed] as [Value_1]
+	[t1].[Renamed]
 FROM
 	[TempTable] [t1]
 ORDER BY
 	[t1].[Id]
 
 -- SqlCe
-
 DROP TABLE [TempTable]
 

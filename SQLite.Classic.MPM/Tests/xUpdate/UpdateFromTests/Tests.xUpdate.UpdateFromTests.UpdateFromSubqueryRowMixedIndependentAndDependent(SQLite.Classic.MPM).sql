@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 UPDATE
 	[UpdateSubquerySourceTable]
 SET
@@ -16,7 +15,6 @@ WHERE
 	[UpdateSubquerySourceTable].[Id] = 1
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[FirstName],

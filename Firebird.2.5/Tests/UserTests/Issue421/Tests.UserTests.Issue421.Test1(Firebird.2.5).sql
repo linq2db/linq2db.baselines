@@ -11,12 +11,11 @@ INSERT INTO "BlobClass"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@BlobValue AS Blob(3))
+	@Id,
+	@BlobValue
 )
 
 -- Firebird.2.5 Firebird
-
 SELECT FIRST 1
 	"t1"."Id",
 	"t1"."BlobValue"
@@ -37,7 +36,6 @@ WHERE
 	"t1"."Id" = 1
 
 -- Firebird.2.5 Firebird
-
 SELECT FIRST 1
 	"t1"."Id",
 	"t1"."BlobValue"

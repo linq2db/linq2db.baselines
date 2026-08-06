@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 UPDATE
 	SampleClass sample_1
 SET

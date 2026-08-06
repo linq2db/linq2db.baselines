@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
-
 SELECT TOP (1)
 	[c_1].[ParentID],
 	[c_1].[ChildID]

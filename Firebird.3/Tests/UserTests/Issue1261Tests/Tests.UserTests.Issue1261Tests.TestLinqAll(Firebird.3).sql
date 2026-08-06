@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	NOT EXISTS(
 		SELECT
@@ -12,7 +11,6 @@ SELECT
 FROM rdb$database
 
 -- Firebird.3 Firebird3
-
 SELECT
 	NOT EXISTS(
 		SELECT

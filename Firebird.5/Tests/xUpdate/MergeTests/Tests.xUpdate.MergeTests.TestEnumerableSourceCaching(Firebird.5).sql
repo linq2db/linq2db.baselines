@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 MERGE INTO "CacheTestTable" "Target"
 USING (
 	SELECT 1 AS "Id", 1 AS "Value_1" FROM rdb$database
@@ -29,7 +28,6 @@ VALUES
 )
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"
@@ -39,7 +37,6 @@ ORDER BY
 	"t1"."Id"
 
 -- Firebird.5 Firebird4
-
 MERGE INTO "CacheTestTable" "Target"
 USING (
 	SELECT 1 AS "Id", 1 AS "Value_1" FROM rdb$database
@@ -71,7 +68,6 @@ VALUES
 )
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"

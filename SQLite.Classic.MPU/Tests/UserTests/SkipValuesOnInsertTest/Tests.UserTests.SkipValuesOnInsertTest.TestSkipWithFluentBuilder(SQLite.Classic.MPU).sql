@@ -16,7 +16,6 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t].[Id],
 	[t].[Name],

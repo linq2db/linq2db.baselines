@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	pp.PersonID,
 	concat('  ', pp.FirstName, ' ')

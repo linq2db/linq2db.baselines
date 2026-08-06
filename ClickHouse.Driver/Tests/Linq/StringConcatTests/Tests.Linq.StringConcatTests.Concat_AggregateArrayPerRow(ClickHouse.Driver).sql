@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	t.Id,
 	arrayStringConcat([Coalesce(t.Str1, ''), Coalesce(t.Str2, ''), Coalesce(t.StrReq, '')], '')
@@ -9,7 +8,6 @@ ORDER BY
 	t.Id
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Str1,

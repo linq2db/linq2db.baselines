@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained.MS SqlServer.2019
-
 DELETE [t1]
 FROM
 	[Person] [t1]
@@ -32,7 +31,6 @@ VALUES
 )
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	COUNT(*)
 FROM
@@ -41,7 +39,6 @@ WHERE
 	[t1].[FirstName] LIKE N'Insert15%' ESCAPE N'~'
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 DELETE [t1]
 FROM
 	[Person] [t1]

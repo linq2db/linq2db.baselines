@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 DELETE FROM
 	"TestMerge1" "t1"
 
@@ -104,7 +103,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 DELETE FROM
 	"TestMerge2" "t1"
 

@@ -1,6 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-DECLARE @p  -- Int32
-SET     @p = 1
 DECLARE @param  -- Int32
 SET     @param = 2
 
@@ -11,7 +9,7 @@ SELECT
 FROM
 	(
 		SELECT
-			@p as [OrderElement],
+			Abs(1) as [OrderElement],
 			[ch].[ChildID],
 			[ch].[ParentID]
 		FROM

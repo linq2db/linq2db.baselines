@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[p1].[ParentID],
 	[p1].[Value1]
@@ -17,7 +16,6 @@ WHERE
 	[p2].[ParentID] <= 3
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

@@ -25,7 +25,6 @@ WHERE
 	[LinqDataTypes].[ID] = @p
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t].[ID],
 	[t].[MoneyValue],

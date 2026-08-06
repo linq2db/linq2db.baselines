@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`s`.`ID`,
 	`s`.`FirstName`
@@ -18,7 +17,6 @@ WHERE
 	`s`.`FirstName` <> ''
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`t1`.`FirstName`,
 	`t1`.`PersonID`,

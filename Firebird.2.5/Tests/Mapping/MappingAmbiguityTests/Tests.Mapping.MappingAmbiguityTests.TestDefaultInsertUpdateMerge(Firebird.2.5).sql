@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 MERGE INTO "TestTable" "Target"
 USING (
 	SELECT

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 DELETE [gc]
 FROM
 	[GrandChild] [gc]
@@ -7,7 +6,6 @@ WHERE
 	[gc].[GrandChildID] IN (1001, 1002)
 
 -- SqlServer.Contained SqlServer.2019
-
 INSERT INTO [GrandChild]
 (
 	[ParentID],
@@ -22,7 +20,6 @@ VALUES
 )
 
 -- SqlServer.Contained SqlServer.2019
-
 INSERT INTO [GrandChild]
 (
 	[ParentID],
@@ -37,7 +34,6 @@ VALUES
 )
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT
 	COUNT(*)
 FROM
@@ -46,7 +42,6 @@ WHERE
 	[gc].[ParentID] = 1
 
 -- SqlServer.Contained SqlServer.2019
-
 DELETE [gc]
 FROM
 	[GrandChild] [gc]
@@ -55,7 +50,6 @@ WHERE
 	[a_Parent].[ParentID] = 1 AND [gc].[GrandChildID] IN (1001, 1002)
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT
 	COUNT(*)
 FROM

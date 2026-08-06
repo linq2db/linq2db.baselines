@@ -8,7 +8,6 @@ SET
 	"Field" = CAST(CAST("t1"."Field" AS Int) + @offset AS SmallInt)
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Field"

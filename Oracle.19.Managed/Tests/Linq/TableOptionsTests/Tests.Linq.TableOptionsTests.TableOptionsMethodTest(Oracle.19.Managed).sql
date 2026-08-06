@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 BEGIN
 	BEGIN
 		EXECUTE IMMEDIATE 'TRUNCATE TABLE "TestTable"';
@@ -16,7 +15,6 @@ EXCEPTION
 END;
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE GLOBAL TEMPORARY TABLE "TestTable"
@@ -36,7 +34,6 @@ EXCEPTION
 END;
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Value",
@@ -52,7 +49,6 @@ WHERE
 	t1."Id" = t2."Id"
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 BEGIN
 	BEGIN
 		EXECUTE IMMEDIATE 'TRUNCATE TABLE "TestTable"';

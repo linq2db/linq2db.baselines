@@ -16,7 +16,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 UPDATE
 	[Parent]
 SET
@@ -26,7 +25,6 @@ WHERE
 
 RollbackTransaction
 -- Sybase.Managed Sybase
-
 SELECT TOP 1
 	[t].[ParentID],
 	[t].[Value1]

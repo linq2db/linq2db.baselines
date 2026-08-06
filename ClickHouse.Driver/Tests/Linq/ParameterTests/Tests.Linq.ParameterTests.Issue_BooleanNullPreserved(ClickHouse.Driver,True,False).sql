@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 INSERT INTO TestBool
 (
 	Id,
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value
@@ -21,7 +19,6 @@ FROM
 LIMIT 2
 
 -- ClickHouse.Driver ClickHouse
-
 ALTER TABLE
 	TestBool
 UPDATE
@@ -29,7 +26,6 @@ UPDATE
 WHERE 1
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value

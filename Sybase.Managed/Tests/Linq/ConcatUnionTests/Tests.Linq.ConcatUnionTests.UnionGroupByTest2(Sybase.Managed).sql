@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[t1].[SmallIntValue],
 	[t1].[SmallIntValue],

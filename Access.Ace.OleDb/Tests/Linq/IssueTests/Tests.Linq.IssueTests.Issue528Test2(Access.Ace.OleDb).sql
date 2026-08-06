@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[m_1].[Key_1],
 	[d].[FirstName],
@@ -17,10 +16,9 @@ FROM
 		INNER JOIN [Person] [d] ON ([m_1].[Key_1] = [d].[FirstName])
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t2].[Key_1],
-	[t2].[Key_1]
+	[t2].[Key_1] as [Key_2]
 FROM
 	(
 		SELECT DISTINCT

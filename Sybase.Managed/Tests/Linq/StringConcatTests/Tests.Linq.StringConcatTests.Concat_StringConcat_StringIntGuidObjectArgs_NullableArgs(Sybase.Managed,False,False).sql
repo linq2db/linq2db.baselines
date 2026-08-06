@@ -1,14 +1,12 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
-	[t].[Value1] + CAST([t].[Value2] AS NVarChar(11)) + Lower(CAST([t].[Value3] AS NVarChar(36)))
+	[t].[Value1] || CAST([t].[Value2] AS NVarChar(11)) || Lower(CAST([t].[Value3] AS NVarChar(36)))
 FROM
 	StringConcatIntGuidNullEntity [t]
 ORDER BY
 	[t].[ID]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[ID],
 	[t1].[Value1],

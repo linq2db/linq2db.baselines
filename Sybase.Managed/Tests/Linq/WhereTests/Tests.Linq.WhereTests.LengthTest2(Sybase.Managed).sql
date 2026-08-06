@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[nm].[FirstName]
 FROM
@@ -8,7 +7,6 @@ WHERE
 	CHAR_LENGTH([nm].[FirstName]) <> 0
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[c_1].[ParentID],
 	[c_1].[Value1]
@@ -14,7 +13,6 @@ WHERE
 	)
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

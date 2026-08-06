@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"m_1"."Id",
 	"d"."ItemId",
@@ -22,7 +21,6 @@ ORDER BY
 	"d"."UserId"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"i"."Id",
 	(
@@ -48,14 +46,12 @@ WHERE
 	)
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id"
 FROM
 	"Issue4458Item" "t1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."ItemId",
 	"t1"."QuantityAvailable",
@@ -64,7 +60,6 @@ FROM
 	"WarehouseStock" "t1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."ItemId",
 	"t1"."UserId",

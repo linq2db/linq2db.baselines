@@ -1,9 +1,8 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DELETE FROM
 	"TestMerge1" t1
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Field1 Integer -- Int32
@@ -28,7 +27,7 @@ VALUES
 	:Field4
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Field1 Integer -- Int32
@@ -53,7 +52,7 @@ VALUES
 	:Field4
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 3
 DECLARE @Field1 Integer -- Int32
@@ -78,7 +77,7 @@ VALUES
 	:Field4
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 4
 DECLARE @Field1 Integer -- Int32
@@ -103,12 +102,11 @@ VALUES
 	:Field4
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DELETE FROM
 	"TestMerge2" t1
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 3
 DECLARE @Field1 Integer -- Int32
@@ -133,7 +131,7 @@ VALUES
 	:Field4
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 4
 DECLARE @Field1 Integer -- Int32
@@ -158,7 +156,7 @@ VALUES
 	:Field4
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 5
 DECLARE @Field1 Integer -- Int32
@@ -183,7 +181,7 @@ VALUES
 	:Field4
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 6
 DECLARE @Field1 Integer -- Int32
@@ -208,8 +206,7 @@ VALUES
 	:Field4
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 MERGE INTO "TestMerge1" "Target"
 USING (
 	SELECT
@@ -254,8 +251,7 @@ SET
 	"Field2" = "Source"."Field2",
 	"Field3" = "Source"."Field3"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Field1",

@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 INSERT INTO InventoryResourceDTO
 (
 	Id,
@@ -16,7 +15,6 @@ VALUES
 )
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	x.Id,
 	x.Status,

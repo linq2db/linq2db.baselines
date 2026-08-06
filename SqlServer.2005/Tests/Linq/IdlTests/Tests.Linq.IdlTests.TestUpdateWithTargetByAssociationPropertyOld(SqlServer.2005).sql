@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 INSERT INTO [Parent]
 (
 	[ParentID]
@@ -10,7 +9,6 @@ VALUES
 )
 
 -- SqlServer.2005
-
 INSERT INTO [Child]
 (
 	[ChildID],
@@ -23,7 +21,6 @@ VALUES
 )
 
 -- SqlServer.2005
-
 UPDATE
 	[a_Parent]
 SET
@@ -35,7 +32,6 @@ WHERE
 	[child_1].[ChildID] = 10000
 
 -- SqlServer.2005
-
 DELETE [x]
 FROM
 	[Child] [x]
@@ -43,7 +39,6 @@ WHERE
 	[x].[ChildID] = 10000
 
 -- SqlServer.2005
-
 DELETE [x]
 FROM
 	[Parent] [x]
