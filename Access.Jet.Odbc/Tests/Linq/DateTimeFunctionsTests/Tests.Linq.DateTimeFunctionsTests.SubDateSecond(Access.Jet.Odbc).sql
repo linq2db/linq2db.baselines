@@ -1,6 +1,6 @@
 ﻿-- Access.Jet.Odbc AccessODBC
 SELECT
-	DATEDIFF('s', [t].[DateTimeValue], DateAdd('n', 100, [t].[DateTimeValue]))
+	DateDiff('s', [t].[DateTimeValue], DateAdd('n', 100, [t].[DateTimeValue])) + DateDiff('s', DateAdd('s', DateDiff('s', [t].[DateTimeValue], DateAdd('n', 100, [t].[DateTimeValue])), [t].[DateTimeValue]), DateAdd('n', 100, [t].[DateTimeValue])) / 1
 FROM
 	[LinqDataTypes] [t]
 
