@@ -1,0 +1,41 @@
+﻿-- Sybase.Managed Sybase
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
+DECLARE @InDays BigInt -- Int64
+SET     @InDays = 2
+DECLARE @InMilliseconds BigInt -- Int64
+SET     @InMilliseconds = 3723456
+DECLARE @InNanoseconds BigInt -- Int64
+SET     @InNanoseconds = 7000123400
+
+INSERT INTO [UnitSpreadRow]
+(
+	[Id],
+	[InDays],
+	[InMilliseconds],
+	[InNanoseconds]
+)
+VALUES
+(
+	@Id,
+	@InDays,
+	@InMilliseconds,
+	@InNanoseconds
+)
+
+-- Sybase.Managed Sybase
+SELECT TOP 2
+	[t1].[Id],
+	[t1].[InDays],
+	[t1].[InMilliseconds],
+	[t1].[InNanoseconds]
+FROM
+	[UnitSpreadRow] [t1]
+
+-- Sybase.Managed Sybase
+SELECT TOP 2
+	CAST([r].[InDays] * 24 AS Float),
+	CAST(([r].[InMilliseconds] / 1000) % 60 AS Int)
+FROM
+	[UnitSpreadRow] [r]
+
