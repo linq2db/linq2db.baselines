@@ -1,6 +1,6 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
 SELECT
-	(EXTRACT(EPOCH FROM ((t."TransactionDate" + 100 * Interval '1 Hour')::timestamp - t."TransactionDate"::timestamp)) / 3600)::Float
+	Extract(epoch From (t."TransactionDate" + 100 * Interval '1 Hour' - t."TransactionDate")) / 3600
 FROM
 	"Transactions" t
 
