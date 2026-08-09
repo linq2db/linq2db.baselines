@@ -1,0 +1,20 @@
+﻿-- DuckDB
+SELECT
+	r.Id
+FROM
+	OptionalDurationRow r
+WHERE
+	CAST(CAST(r.Grace AS BIGINT) * 10000000 AS DOUBLE) / 600000000 > 30
+ORDER BY
+	r.Id
+
+-- DuckDB
+SELECT
+	r.Id
+FROM
+	OptionalDurationRow r
+WHERE
+	CAST(CAST(r.Required AS BIGINT) * 10000000 AS DOUBLE) / 600000000 > 30
+ORDER BY
+	r.Id
+
