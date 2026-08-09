@@ -1,10 +1,10 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @p Int32
-SET     @p = 1
+DECLARE @ParentID Int32
+SET     @ParentID = 1
 
 SELECT
 	CASE
-		WHEN :p IN (
+		WHEN :ParentID IN (
 			SELECT
 				c_1."ParentID"
 			FROM
@@ -16,12 +16,12 @@ SELECT
 FROM SYS.DUAL
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @p Int32
-SET     @p = -1
+DECLARE @ParentID Int32
+SET     @ParentID = -1
 
 SELECT
 	CASE
-		WHEN :p IN (
+		WHEN :ParentID IN (
 			SELECT
 				c_1."ParentID"
 			FROM
