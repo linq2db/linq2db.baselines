@@ -1,8 +1,8 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
 SELECT TOP (1)
-	BINARY_CHECKSUM([p].[PersonID], [p].[FirstName])
+	BINARY_CHECKSUM([p].[personid], [p].[firstname])
 FROM
-	[Person] [p]
+	[person] [p]
 WHERE
-	[p].[PersonID] = 1
+	[p].[personid] = 1
 
