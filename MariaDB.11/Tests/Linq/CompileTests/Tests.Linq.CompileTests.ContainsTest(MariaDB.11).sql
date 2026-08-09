@@ -1,10 +1,10 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-DECLARE @p Int32
-SET     @p = 1
+DECLARE @ParentID Int32
+SET     @ParentID = 1
 
 SELECT
 	CASE
-		WHEN @p IN (
+		WHEN @ParentID IN (
 			SELECT
 				`c_1`.`ParentID`
 			FROM
@@ -15,12 +15,12 @@ SELECT
 	END as `c1`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-DECLARE @p Int32
-SET     @p = -1
+DECLARE @ParentID Int32
+SET     @ParentID = -1
 
 SELECT
 	CASE
-		WHEN @p IN (
+		WHEN @ParentID IN (
 			SELECT
 				`c_1`.`ParentID`
 			FROM
