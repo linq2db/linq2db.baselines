@@ -1,18 +1,18 @@
 ﻿-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-CREATE SEQUENCE issue5628_code_seq_117
+CREATE SEQUENCE issue5628_code_seq_103
 
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-CREATE SEQUENCE issue5628_item_id_seq_117
+CREATE SEQUENCE issue5628_item_id_seq_103
 
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-CREATE TABLE issue5628_sample_messages_117 (
-	code character varying(255) DEFAULT ('PREFIX_'::text || nextval('issue5628_code_seq_117'::regclass)) NOT NULL,
-	item_id integer DEFAULT nextval('issue5628_item_id_seq_117'::regclass) NOT NULL,
+CREATE TABLE issue5628_sample_messages_103 (
+	code character varying(255) DEFAULT ('PREFIX_'::text || nextval('issue5628_code_seq_103'::regclass)) NOT NULL,
+	item_id integer DEFAULT nextval('issue5628_item_id_seq_103'::regclass) NOT NULL,
 	status smallint DEFAULT 0 NOT NULL,
 	locale_id integer NOT NULL,
 	item_type integer DEFAULT 1 NOT NULL,
-	CONSTRAINT issue5628_sample_messages_117_pkey PRIMARY KEY (item_id, item_type),
-	CONSTRAINT issue5628_sample_messages_117_code_key UNIQUE (code)
+	CONSTRAINT issue5628_sample_messages_103_pkey PRIMARY KEY (item_id, item_type),
+	CONSTRAINT issue5628_sample_messages_103_code_key UNIQUE (code)
 )
 
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
@@ -304,11 +304,11 @@ SELECT * FROM testdata.public."TestTableFunctionSchema"()
 
 RollbackTransaction
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-DROP TABLE IF EXISTS issue5628_sample_messages_117
+DROP TABLE IF EXISTS issue5628_sample_messages_103
 
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-DROP SEQUENCE IF EXISTS issue5628_code_seq_117
+DROP SEQUENCE IF EXISTS issue5628_code_seq_103
 
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-DROP SEQUENCE IF EXISTS issue5628_item_id_seq_117
+DROP SEQUENCE IF EXISTS issue5628_item_id_seq_103
 
