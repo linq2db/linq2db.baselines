@@ -1,6 +1,6 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 SELECT
-	CAST(TIMESTAMPDIFF(day, `t`.`DateTimeValue`, Date_Add(`t`.`DateTimeValue`, Interval 100 Hour)) AS DOUBLE)
+	CAST(TimestampDiff(Microsecond, `t`.`DateTimeValue`, Date_Add(`t`.`DateTimeValue`, Interval 100 Hour)) * 10 AS DOUBLE) / 864000000000
 FROM
 	`LinqDataTypes` `t`
 
