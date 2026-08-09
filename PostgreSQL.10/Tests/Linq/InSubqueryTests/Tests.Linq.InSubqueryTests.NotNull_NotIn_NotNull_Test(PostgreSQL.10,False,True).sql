@@ -1,0 +1,30 @@
+﻿-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+SELECT
+	t."PK",
+	t."ID"
+FROM
+	test_in_1 t
+WHERE
+	t."ID" NOT IN (
+		SELECT
+			p."ID"
+		FROM
+			test_in_2 p
+	)
+ORDER BY
+	t."PK"
+
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+SELECT
+	t1."PK",
+	t1."ID"
+FROM
+	test_in_1 t1
+
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+SELECT
+	t1."PK",
+	t1."ID"
+FROM
+	test_in_2 t1
+

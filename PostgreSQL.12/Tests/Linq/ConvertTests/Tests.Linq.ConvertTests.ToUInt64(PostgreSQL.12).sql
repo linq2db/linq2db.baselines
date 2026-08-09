@@ -1,0 +1,8 @@
+﻿-- PostgreSQL.12 PostgreSQL12
+SELECT
+	p."MoneyValue"
+FROM
+	"LinqDataTypes" p
+WHERE
+	Floor(p."MoneyValue")::decimal(20) > 0
+

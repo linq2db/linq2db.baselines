@@ -1,0 +1,41 @@
+﻿-- PostgreSQL.9.2 PostgreSQL
+DELETE FROM
+	"LinqDataTypes" t
+WHERE
+	t."ID" > 1000
+
+-- PostgreSQL.9.2 PostgreSQL
+INSERT INTO "LinqDataTypes"
+(
+	"ID",
+	"BoolValue",
+	"BinaryValue"
+)
+VALUES
+(
+	1001,
+	True,
+	NULL
+)
+
+-- PostgreSQL.9.2 PostgreSQL
+SELECT
+	t."ID",
+	t."MoneyValue",
+	t."DateTimeValue",
+	t."BoolValue",
+	t."GuidValue",
+	t."BinaryValue",
+	t."SmallIntValue"
+FROM
+	"LinqDataTypes" t
+WHERE
+	t."ID" = 1001
+LIMIT 2
+
+-- PostgreSQL.9.2 PostgreSQL
+DELETE FROM
+	"LinqDataTypes" t
+WHERE
+	t."ID" > 1000
+
