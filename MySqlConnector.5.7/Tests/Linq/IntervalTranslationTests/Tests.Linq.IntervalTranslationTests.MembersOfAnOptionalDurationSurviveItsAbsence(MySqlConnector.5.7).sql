@@ -1,0 +1,11 @@
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+SELECT
+	`r`.`Id`,
+	CAST(((CAST(`r`.`Grace` AS SIGNED) * 10000000) DIV 600000000) % 60 AS SIGNED),
+	CAST(CAST(`r`.`Grace` AS SIGNED) * 10000000 AS DECIMAL(29, 10)) / 600000000,
+	CAST(CAST(`r`.`Required` AS SIGNED) * 10000000 AS DECIMAL(29, 10)) / 600000000
+FROM
+	`OptionalDurationRow` `r`
+ORDER BY
+	`r`.`Id`
+
