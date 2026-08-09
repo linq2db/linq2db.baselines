@@ -2,7 +2,7 @@
 SELECT
 	CASE
 		WHEN t2.x < toDecimal128('0', 10) THEN toDecimal128('9', 10)
-		ELSE t2.x + toDecimal128('8', 10)
+		ELSE t2.x + toDecimal64('8', 4)
 	END,
 	t2.x + t2.x
 FROM
