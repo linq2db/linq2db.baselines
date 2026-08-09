@@ -1,0 +1,41 @@
+﻿-- SqlServer.SA SqlServer.2019
+DECLARE @Id Int -- Int32
+SET     @Id = 1
+DECLARE @InDays BigInt -- Int64
+SET     @InDays = 2
+DECLARE @InMilliseconds BigInt -- Int64
+SET     @InMilliseconds = 3723456
+DECLARE @InNanoseconds BigInt -- Int64
+SET     @InNanoseconds = 7000123400
+
+INSERT INTO [UnitSpreadRow]
+(
+	[Id],
+	[InDays],
+	[InMilliseconds],
+	[InNanoseconds]
+)
+VALUES
+(
+	@Id,
+	@InDays,
+	@InMilliseconds,
+	@InNanoseconds
+)
+
+-- SqlServer.SA SqlServer.2019
+SELECT TOP (2)
+	[t1].[Id],
+	[t1].[InDays],
+	[t1].[InMilliseconds],
+	[t1].[InNanoseconds]
+FROM
+	[UnitSpreadRow] [t1]
+
+-- SqlServer.SA SqlServer.2019
+SELECT TOP (2)
+	CAST(CAST([r].[InDays] AS BigInt) * 864000000000 AS Float) / 36000000000,
+	CAST(((CAST([r].[InMilliseconds] AS BigInt) * 10000) / 10000000) % 60 AS Int)
+FROM
+	[UnitSpreadRow] [r]
+
