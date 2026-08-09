@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $p Int32
-SET     $p = 1
+DECLARE $ParentID Int32
+SET     $ParentID = 1
 
 $CTE_1 = 	SELECT
 		c_1.ParentID as ParentID
@@ -10,7 +10,7 @@ $CTE_1 = 	SELECT
 
 SELECT
 	CASE
-		WHEN $p IN (
+		WHEN $ParentID IN (
 			SELECT
 				t1.ParentID
 			FROM
@@ -21,8 +21,8 @@ SELECT
 	END as c1
 
 -- YDB Ydb
-DECLARE $p Int32
-SET     $p = -1
+DECLARE $ParentID Int32
+SET     $ParentID = -1
 
 $CTE_1 = 	SELECT
 		c_1.ParentID as ParentID
@@ -32,7 +32,7 @@ $CTE_1 = 	SELECT
 
 SELECT
 	CASE
-		WHEN $p IN (
+		WHEN $ParentID IN (
 			SELECT
 				t1.ParentID
 			FROM
