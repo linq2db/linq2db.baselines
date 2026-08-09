@@ -1,6 +1,6 @@
 ﻿-- Access.Ace.Odbc AccessODBC
 SELECT
-	DATEDIFF('n', [t].[DateTimeValue], DateAdd('n', 100, [t].[DateTimeValue]))
+	DateDiff('n', [t].[DateTimeValue], DateAdd('n', 100, [t].[DateTimeValue])) + DateDiff('s', DateAdd('n', DateDiff('n', [t].[DateTimeValue], DateAdd('n', 100, [t].[DateTimeValue])), [t].[DateTimeValue]), DateAdd('n', 100, [t].[DateTimeValue])) / 60
 FROM
 	[LinqDataTypes] [t]
 
