@@ -2,5 +2,5 @@
 SELECT TOP (1)
 	BINARY_CHECKSUM(*)
 FROM
-	[person] [p]
+	[Person] [p]
 
