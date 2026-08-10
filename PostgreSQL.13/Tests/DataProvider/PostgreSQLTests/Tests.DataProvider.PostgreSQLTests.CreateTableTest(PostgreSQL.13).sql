@@ -4,10 +4,10 @@ SET     @TimeOffset = '2017-06-17 19:40:33.000000+00:00'::timestamptz
 DECLARE @Guid Uuid -- Guid
 SET     @Guid = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'::uuid
 
-INSERT INTO "CreateTableTestClass"
+INSERT INTO createtabletestclass
 (
-	"TimeOffset",
-	"Guid"
+	timeoffset,
+	guid
 )
 VALUES
 (
@@ -20,11 +20,11 @@ DECLARE @Guid Uuid -- Guid
 SET     @Guid = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'::uuid
 
 SELECT
-	t1."TimeOffset",
-	t1."Guid"
+	t1.timeoffset,
+	t1.guid
 FROM
-	"CreateTableTestClass" t1
+	createtabletestclass t1
 WHERE
-	t1."Guid" = :Guid
+	t1.guid = :Guid
 LIMIT 1
 
