@@ -1,15 +1,15 @@
 ﻿-- PostgreSQL.11 PostgreSQL
-CREATE SEQUENCE issue5628_item_id_seq_110
+CREATE SEQUENCE issue5628_item_id_seq_115
 
 -- PostgreSQL.11 PostgreSQL
-CREATE TABLE issue5628_parenthesized_default_110 (
-	item_id integer DEFAULT (nextval('issue5628_item_id_seq_110'::regclass)) NOT NULL
+CREATE TABLE issue5628_parenthesized_default_115 (
+	item_id integer DEFAULT (nextval('issue5628_item_id_seq_115'::regclass)) NOT NULL
 )
 
 -- PostgreSQL.11 PostgreSQL
 SELECT pg_get_expr(adbin, adrelid)
 FROM pg_attrdef
-WHERE adrelid = 'issue5628_parenthesized_default_110'::regclass
+WHERE adrelid = 'issue5628_parenthesized_default_115'::regclass
 AND adnum = 1
 
 -- PostgreSQL.11 PostgreSQL
@@ -300,8 +300,8 @@ SELECT * FROM testdata.public."TestTableFunctionSchema"()
 
 RollbackTransaction
 -- PostgreSQL.11 PostgreSQL
-DROP TABLE IF EXISTS issue5628_parenthesized_default_110
+DROP TABLE IF EXISTS issue5628_parenthesized_default_115
 
 -- PostgreSQL.11 PostgreSQL
-DROP SEQUENCE IF EXISTS issue5628_item_id_seq_110
+DROP SEQUENCE IF EXISTS issue5628_item_id_seq_115
 
