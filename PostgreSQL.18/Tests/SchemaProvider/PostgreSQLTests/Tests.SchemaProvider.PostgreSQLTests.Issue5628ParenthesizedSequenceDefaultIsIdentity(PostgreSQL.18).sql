@@ -1,15 +1,15 @@
 ﻿-- PostgreSQL.18 PostgreSQL12
-CREATE SEQUENCE issue5628_item_id_seq_108
+CREATE SEQUENCE issue5628_item_id_seq_113
 
 -- PostgreSQL.18 PostgreSQL12
-CREATE TABLE issue5628_parenthesized_default_108 (
-	item_id integer DEFAULT (nextval('issue5628_item_id_seq_108'::regclass)) NOT NULL
+CREATE TABLE issue5628_parenthesized_default_113 (
+	item_id integer DEFAULT (nextval('issue5628_item_id_seq_113'::regclass)) NOT NULL
 )
 
 -- PostgreSQL.18 PostgreSQL12
 SELECT pg_get_expr(adbin, adrelid)
 FROM pg_attrdef
-WHERE adrelid = 'issue5628_parenthesized_default_108'::regclass
+WHERE adrelid = 'issue5628_parenthesized_default_113'::regclass
 AND adnum = 1
 
 -- PostgreSQL.18 PostgreSQL12
@@ -290,18 +290,18 @@ SELECT r.SPECIFIC_CATALOG, r.SPECIFIC_SCHEMA, r.SPECIFIC_NAME, r.DATA_TYPE
 SELECT * FROM testdata.public."GetParentByID"(NULL::integer)
 
 -- PostgreSQL.18 PostgreSQL12
-SELECT * FROM testdata.public."TestTableFunction1"(NULL::integer,NULL::integer)
+SELECT * FROM testdata.public."TestTableFunction"(NULL::integer)
 
 -- PostgreSQL.18 PostgreSQL12
 SELECT * FROM testdata.public."TestTableFunctionSchema"()
 
 -- PostgreSQL.18 PostgreSQL12
-SELECT * FROM testdata.public."TestTableFunction"(NULL::integer)
+SELECT * FROM testdata.public."TestTableFunction1"(NULL::integer,NULL::integer)
 
 RollbackTransaction
 -- PostgreSQL.18 PostgreSQL12
-DROP TABLE IF EXISTS issue5628_parenthesized_default_108
+DROP TABLE IF EXISTS issue5628_parenthesized_default_113
 
 -- PostgreSQL.18 PostgreSQL12
-DROP SEQUENCE IF EXISTS issue5628_item_id_seq_108
+DROP SEQUENCE IF EXISTS issue5628_item_id_seq_113
 

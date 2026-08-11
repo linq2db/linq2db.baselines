@@ -1,13 +1,13 @@
 ﻿-- PostgreSQL.18 PostgreSQL12
-CREATE SEQUENCE issue5628_code_seq_107
+CREATE SEQUENCE issue5628_code_seq_112
 
 -- PostgreSQL.18 PostgreSQL12
-CREATE SEQUENCE issue5628_item_id_seq_107
+CREATE SEQUENCE issue5628_item_id_seq_112
 
 -- PostgreSQL.18 PostgreSQL12
-CREATE TABLE issue5628_two_defaults_no_pk_107 (
-	code integer DEFAULT nextval('issue5628_code_seq_107'::regclass) NOT NULL,
-	item_id integer DEFAULT nextval('issue5628_item_id_seq_107'::regclass) NOT NULL
+CREATE TABLE issue5628_two_defaults_no_pk_112 (
+	code integer DEFAULT nextval('issue5628_code_seq_112'::regclass) NOT NULL,
+	item_id integer DEFAULT nextval('issue5628_item_id_seq_112'::regclass) NOT NULL
 )
 
 -- PostgreSQL.18 PostgreSQL12
@@ -288,21 +288,21 @@ SELECT r.SPECIFIC_CATALOG, r.SPECIFIC_SCHEMA, r.SPECIFIC_NAME, r.DATA_TYPE
 SELECT * FROM testdata.public."GetParentByID"(NULL::integer)
 
 -- PostgreSQL.18 PostgreSQL12
-SELECT * FROM testdata.public."TestTableFunction1"(NULL::integer,NULL::integer)
+SELECT * FROM testdata.public."TestTableFunction"(NULL::integer)
 
 -- PostgreSQL.18 PostgreSQL12
 SELECT * FROM testdata.public."TestTableFunctionSchema"()
 
 -- PostgreSQL.18 PostgreSQL12
-SELECT * FROM testdata.public."TestTableFunction"(NULL::integer)
+SELECT * FROM testdata.public."TestTableFunction1"(NULL::integer,NULL::integer)
 
 RollbackTransaction
 -- PostgreSQL.18 PostgreSQL12
-DROP TABLE IF EXISTS issue5628_two_defaults_no_pk_107
+DROP TABLE IF EXISTS issue5628_two_defaults_no_pk_112
 
 -- PostgreSQL.18 PostgreSQL12
-DROP SEQUENCE IF EXISTS issue5628_code_seq_107
+DROP SEQUENCE IF EXISTS issue5628_code_seq_112
 
 -- PostgreSQL.18 PostgreSQL12
-DROP SEQUENCE IF EXISTS issue5628_item_id_seq_107
+DROP SEQUENCE IF EXISTS issue5628_item_id_seq_112
 

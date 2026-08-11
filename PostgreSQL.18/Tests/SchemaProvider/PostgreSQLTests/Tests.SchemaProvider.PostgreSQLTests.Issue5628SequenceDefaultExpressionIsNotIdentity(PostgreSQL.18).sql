@@ -1,18 +1,18 @@
 ﻿-- PostgreSQL.18 PostgreSQL12
-CREATE SEQUENCE issue5628_code_seq_110
+CREATE SEQUENCE issue5628_code_seq_115
 
 -- PostgreSQL.18 PostgreSQL12
-CREATE SEQUENCE issue5628_item_id_seq_110
+CREATE SEQUENCE issue5628_item_id_seq_115
 
 -- PostgreSQL.18 PostgreSQL12
-CREATE TABLE issue5628_sample_messages_110 (
-	code character varying(255) DEFAULT ('PREFIX_'::text || nextval('issue5628_code_seq_110'::regclass)) NOT NULL,
-	item_id integer DEFAULT nextval('issue5628_item_id_seq_110'::regclass) NOT NULL,
+CREATE TABLE issue5628_sample_messages_115 (
+	code character varying(255) DEFAULT ('PREFIX_'::text || nextval('issue5628_code_seq_115'::regclass)) NOT NULL,
+	item_id integer DEFAULT nextval('issue5628_item_id_seq_115'::regclass) NOT NULL,
 	status smallint DEFAULT 0 NOT NULL,
 	locale_id integer NOT NULL,
 	item_type integer DEFAULT 1 NOT NULL,
-	CONSTRAINT issue5628_sample_messages_110_pkey PRIMARY KEY (item_id, item_type),
-	CONSTRAINT issue5628_sample_messages_110_code_key UNIQUE (code)
+	CONSTRAINT issue5628_sample_messages_115_pkey PRIMARY KEY (item_id, item_type),
+	CONSTRAINT issue5628_sample_messages_115_code_key UNIQUE (code)
 )
 
 -- PostgreSQL.18 PostgreSQL12
@@ -293,21 +293,21 @@ SELECT r.SPECIFIC_CATALOG, r.SPECIFIC_SCHEMA, r.SPECIFIC_NAME, r.DATA_TYPE
 SELECT * FROM testdata.public."GetParentByID"(NULL::integer)
 
 -- PostgreSQL.18 PostgreSQL12
-SELECT * FROM testdata.public."TestTableFunction1"(NULL::integer,NULL::integer)
+SELECT * FROM testdata.public."TestTableFunction"(NULL::integer)
 
 -- PostgreSQL.18 PostgreSQL12
 SELECT * FROM testdata.public."TestTableFunctionSchema"()
 
 -- PostgreSQL.18 PostgreSQL12
-SELECT * FROM testdata.public."TestTableFunction"(NULL::integer)
+SELECT * FROM testdata.public."TestTableFunction1"(NULL::integer,NULL::integer)
 
 RollbackTransaction
 -- PostgreSQL.18 PostgreSQL12
-DROP TABLE IF EXISTS issue5628_sample_messages_110
+DROP TABLE IF EXISTS issue5628_sample_messages_115
 
 -- PostgreSQL.18 PostgreSQL12
-DROP SEQUENCE IF EXISTS issue5628_code_seq_110
+DROP SEQUENCE IF EXISTS issue5628_code_seq_115
 
 -- PostgreSQL.18 PostgreSQL12
-DROP SEQUENCE IF EXISTS issue5628_item_id_seq_110
+DROP SEQUENCE IF EXISTS issue5628_item_id_seq_115
 

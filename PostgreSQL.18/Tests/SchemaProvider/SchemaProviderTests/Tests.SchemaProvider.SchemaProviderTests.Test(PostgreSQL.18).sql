@@ -283,12 +283,12 @@ SELECT r.SPECIFIC_CATALOG, r.SPECIFIC_SCHEMA, r.SPECIFIC_NAME, r.DATA_TYPE
 SELECT * FROM testdata.public."GetParentByID"(NULL::integer)
 
 -- PostgreSQL.18 PostgreSQL12
-SELECT * FROM testdata.public."TestTableFunction1"(NULL::integer,NULL::integer)
+SELECT * FROM testdata.public."TestTableFunction"(NULL::integer)
 
 -- PostgreSQL.18 PostgreSQL12
 SELECT * FROM testdata.public."TestTableFunctionSchema"()
 
 -- PostgreSQL.18 PostgreSQL12
-SELECT * FROM testdata.public."TestTableFunction"(NULL::integer)
+SELECT * FROM testdata.public."TestTableFunction1"(NULL::integer,NULL::integer)
 
 RollbackTransaction
