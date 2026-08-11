@@ -26,35 +26,35 @@ SELECT :p FROM sys.dual
 DECLARE @p Blob -- Object
 SET     @p = HEXTORAW('3039')
 
-SELECT :p FROM sys.dual    
-
--- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @p Blob -- Object
-SET     @p = HEXTORAW('')
-
-SELECT :p FROM sys.dual     
-
--- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @p Blob -- Object
-SET     @p = HEXTORAW('')
-
 SELECT :p FROM sys.dual      
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @p Blob -- Object
-SET     @p = HEXTORAW('3039')
-
-SELECT :p FROM sys.dual       
-
--- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @p Blob -- Object
-SET     @p = HEXTORAW('3039')
+SET     @p = HEXTORAW('')
 
 SELECT :p FROM sys.dual        
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @p Blob -- Object
+SET     @p = HEXTORAW('')
+
+SELECT :p FROM sys.dual           
+
+-- Oracle.21.Managed Oracle.Managed Oracle12
+DECLARE @p Blob -- Object
 SET     @p = HEXTORAW('3039')
 
-SELECT :p FROM sys.dual         
+SELECT :p FROM sys.dual            
+
+-- Oracle.21.Managed Oracle.Managed Oracle12
+DECLARE @p Blob -- Object
+SET     @p = HEXTORAW('3039')
+
+SELECT :p FROM sys.dual              
+
+-- Oracle.21.Managed Oracle.Managed Oracle12
+DECLARE @p Blob -- Object
+SET     @p = HEXTORAW('3039')
+
+SELECT :p FROM sys.dual               
 
