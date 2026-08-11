@@ -2024,19 +2024,19 @@ SELECT Cast(922337203685477 as binary_double) FROM sys.dual
 DECLARE @p Decimal(15, 0)
 SET     @p = 922337203685477
 
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Decimal(15, 0)
-SET     @p = 922337203685477
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Decimal(15, 0)
-SET     @p = 922337203685477
-
 SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Decimal(15, 0)
+SET     @p = 922337203685477
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Decimal(15, 0)
+SET     @p = 922337203685477
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 SELECT Cast(-214748 as number) FROM sys.dual
@@ -2057,19 +2057,19 @@ SELECT Cast(-214748 as binary_double) FROM sys.dual
 DECLARE @p Decimal(6, 0)
 SET     @p = -214748
 
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Decimal(6, 0)
-SET     @p = -214748
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Decimal(6, 0)
-SET     @p = -214748
-
 SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Decimal(6, 0)
+SET     @p = -214748
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Decimal(6, 0)
+SET     @p = -214748
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 SELECT Cast(214748 as number) FROM sys.dual
@@ -2090,17 +2090,17 @@ SELECT Cast(214748 as binary_double) FROM sys.dual
 DECLARE @p Decimal(6, 0)
 SET     @p = 214748
 
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @p Decimal(6, 0)
 SET     @p = 214748
 
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @p Decimal(6, 0)
 SET     @p = 214748
 
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
 
