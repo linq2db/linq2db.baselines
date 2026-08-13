@@ -1,13 +1,13 @@
 ﻿-- PostgreSQL.11 PostgreSQL
-CREATE SEQUENCE issue5628_code_seq_114
+CREATE SEQUENCE issue5628_code_seq_105
 
 -- PostgreSQL.11 PostgreSQL
-CREATE SEQUENCE issue5628_item_id_seq_114
+CREATE SEQUENCE issue5628_item_id_seq_105
 
 -- PostgreSQL.11 PostgreSQL
-CREATE TABLE issue5628_two_defaults_no_pk_114 (
-	code integer DEFAULT nextval('issue5628_code_seq_114'::regclass) NOT NULL,
-	item_id integer DEFAULT nextval('issue5628_item_id_seq_114'::regclass) NOT NULL
+CREATE TABLE issue5628_two_defaults_no_pk_105 (
+	code integer DEFAULT nextval('issue5628_code_seq_105'::regclass) NOT NULL,
+	item_id integer DEFAULT nextval('issue5628_item_id_seq_105'::regclass) NOT NULL
 )
 
 -- PostgreSQL.11 PostgreSQL
@@ -298,11 +298,11 @@ SELECT * FROM testdata.public."TestTableFunctionSchema"()
 
 RollbackTransaction
 -- PostgreSQL.11 PostgreSQL
-DROP TABLE IF EXISTS issue5628_two_defaults_no_pk_114
+DROP TABLE IF EXISTS issue5628_two_defaults_no_pk_105
 
 -- PostgreSQL.11 PostgreSQL
-DROP SEQUENCE IF EXISTS issue5628_code_seq_114
+DROP SEQUENCE IF EXISTS issue5628_code_seq_105
 
 -- PostgreSQL.11 PostgreSQL
-DROP SEQUENCE IF EXISTS issue5628_item_id_seq_114
+DROP SEQUENCE IF EXISTS issue5628_item_id_seq_105
 
