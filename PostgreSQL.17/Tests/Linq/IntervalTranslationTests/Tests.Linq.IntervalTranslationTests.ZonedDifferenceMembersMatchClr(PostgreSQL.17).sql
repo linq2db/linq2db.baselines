@@ -29,8 +29,8 @@ SELECT
 	Extract(epoch From (r."FinishedOn" - r."StartedOn")) / 86400,
 	Extract(epoch From (r."FinishedOn" - r."StartedOn")) / 3600,
 	Extract(epoch From (r."FinishedOn" - r."StartedOn")) / 60,
-	Extract(epoch From (r."FinishedOn" - r."StartedOn")) / 1,
-	Extract(epoch From (r."FinishedOn" - r."StartedOn")) / 0.001
+	Extract(epoch From (r."FinishedOn" - r."StartedOn")),
+	Extract(epoch From (r."FinishedOn" - r."StartedOn")) * 1000
 FROM
 	"ZonedEventRow" r
 LIMIT 2
