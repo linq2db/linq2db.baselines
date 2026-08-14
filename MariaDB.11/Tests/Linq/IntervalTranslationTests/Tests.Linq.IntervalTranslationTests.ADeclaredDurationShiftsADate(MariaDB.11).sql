@@ -29,9 +29,9 @@ VALUES
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 SELECT
-	Date_Add('2026-03-01', Interval ((`r`.`InSeconds` * 10000000) / 10) Microsecond),
-	Date_Sub('2026-03-01', Interval ((`r`.`InSeconds` * 10000000) / 10) Microsecond),
-	Date_Add('2026-03-01', Interval (`r`.`InTicks` / 10) Microsecond)
+	Date_Add('2026-03-01', Interval ((`r`.`InSeconds` * 10000000) DIV 10) Microsecond),
+	Date_Sub('2026-03-01', Interval ((`r`.`InSeconds` * 10000000) DIV 10) Microsecond),
+	Date_Add('2026-03-01', Interval (`r`.`InTicks` DIV 10) Microsecond)
 FROM
 	`DurationRow` `r`
 LIMIT 2
