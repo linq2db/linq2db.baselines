@@ -25,5 +25,5 @@ SELECT
 FROM
 	`EventRow` `r`
 WHERE
-	Date_Add('2026-03-01', Interval ((TimestampDiff(Microsecond, `r`.`StartedOn`, `r`.`FinishedOn`) * 10) / 10) Microsecond) > '2026-03-01 04:00:00'
+	Date_Add('2026-03-01', Interval ((TimestampDiff(Microsecond, `r`.`StartedOn`, `r`.`FinishedOn`) * 10) DIV 10) Microsecond) > '2026-03-01 04:00:00'
 
