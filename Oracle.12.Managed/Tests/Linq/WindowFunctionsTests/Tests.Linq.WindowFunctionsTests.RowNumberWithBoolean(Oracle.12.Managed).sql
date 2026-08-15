@@ -21,8 +21,22 @@ SELECT
 	x."NullableByteValue",
 	x."BoolValue",
 	x."NullableBoolValue",
-	CUME_DIST() OVER (PARTITION BY x."CategoryId" ORDER BY x."Timestamp" NULLS FIRST),
-	CUME_DIST() OVER (PARTITION BY x."CategoryId" ORDER BY x."Timestamp" DESC NULLS LAST)
+	ROW_NUMBER() OVER (ORDER BY CASE
+		WHEN x."IntValue" = 20 THEN 1
+		ELSE 0
+	END, x."Id"),
+	ROW_NUMBER() OVER (PARTITION BY CASE
+		WHEN x."IntValue" = 20 THEN 1
+		ELSE 0
+	END ORDER BY x."Id"),
+	ROW_NUMBER() OVER (PARTITION BY CASE
+		WHEN x."NullableIntValue" IS NOT NULL THEN 1
+		ELSE 0
+	END ORDER BY x."Id"),
+	ROW_NUMBER() OVER (PARTITION BY x."CategoryId" ORDER BY CASE
+		WHEN x."NullableIntValue" IS NOT NULL THEN 1
+		ELSE 0
+	END, x."Id")
 FROM
 	"WindowFunctionTestEntity" x
 ORDER BY
