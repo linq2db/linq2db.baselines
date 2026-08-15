@@ -1,12 +1,12 @@
 ﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
-	z."FirstName",
-	z."PersonID",
-	z."LastName",
-	z."MiddleName",
-	z."Gender"
+	あいうえおかきくけこあいうえおかき."FirstName",
+	あいうえおかきくけこあいうえおかき."PersonID",
+	あいうえおかきくけこあいうえおかき."LastName",
+	あいうえおかきくけこあいうえおかき."MiddleName",
+	あいうえおかきくけこあいうえおかき."Gender"
 FROM
-	"Person" z
+	"Person" あいうえおかきくけこあいうえおかき
 WHERE
-	z."PersonID" = 1
+	あいうえおかきくけこあいうえおかき."PersonID" = 1
 
