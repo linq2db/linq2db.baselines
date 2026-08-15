@@ -21,8 +21,16 @@ SELECT
 	x.NullableByteValue,
 	x.BoolValue,
 	x.NullableBoolValue,
-	DENSE_RANK() OVER (PARTITION BY x.CategoryId ORDER BY x."Timestamp"),
-	DENSE_RANK() OVER (PARTITION BY x.CategoryId ORDER BY x."Timestamp" DESC)
+	ROW_NUMBER() OVER (ORDER BY x.IntValue = 20, x.Id),
+	ROW_NUMBER() OVER (PARTITION BY CASE
+		WHEN x.IntValue = 20 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END ORDER BY x.Id),
+	ROW_NUMBER() OVER (PARTITION BY CASE
+		WHEN x.NullableIntValue IS NOT NULL THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END ORDER BY x.Id),
+	ROW_NUMBER() OVER (PARTITION BY x.CategoryId ORDER BY x.NullableIntValue IS NOT NULL, x.Id)
 FROM
 	WindowFunctionTestEntity x
 ORDER BY
