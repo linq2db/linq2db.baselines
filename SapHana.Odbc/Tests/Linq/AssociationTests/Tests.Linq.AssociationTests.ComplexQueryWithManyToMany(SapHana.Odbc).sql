@@ -5,9 +5,9 @@ DECLARE @id1 Int -- Int32
 SET     @id1 = 3
 
 SELECT
-	"t1"."ChildID"
+	"с"."ChildID"
 FROM
-	"GrandChild" "t1"
+	"GrandChild" "с"
 WHERE
 	EXISTS(
 		SELECT
@@ -21,6 +21,6 @@ WHERE
 			"li"."ParentID" = ? AND "a_Parent"."ParentID" = ?
 	)
 ORDER BY
-	"t1"."ChildID"
+	"с"."ChildID"
 LIMIT 1
 
