@@ -1,12 +1,12 @@
 ﻿-- Firebird.3 Firebird3
 SELECT
-	"z"."FirstName",
-	"z"."PersonID",
-	"z"."LastName",
-	"z"."MiddleName",
-	"z"."Gender"
+	"あいうえおか"."FirstName",
+	"あいうえおか"."PersonID",
+	"あいうえおか"."LastName",
+	"あいうえおか"."MiddleName",
+	"あいうえおか"."Gender"
 FROM
-	"Person" "z"
+	"Person" "あいうえおか"
 WHERE
-	"z"."PersonID" = 1
+	"あいうえおか"."PersonID" = 1
 
