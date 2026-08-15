@@ -8,18 +8,6 @@ SELECT to_blob('00003039') FROM sys.dual
 DECLARE @p Blob -- Object
 SET     @p = NULL
 
-SELECT :p FROM sys.dual                              
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Blob -- Object
-SET     @p = HEXTORAW('3039')
-
-SELECT :p FROM sys.dual                               
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Blob -- Object
-SET     @p = HEXTORAW('3039')
-
 SELECT :p FROM sys.dual                                
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
@@ -30,25 +18,25 @@ SELECT :p FROM sys.dual
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @p Blob -- Object
-SET     @p = HEXTORAW('')
+SET     @p = HEXTORAW('3039')
 
 SELECT :p FROM sys.dual                                  
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @p Blob -- Object
-SET     @p = HEXTORAW('')
+SET     @p = HEXTORAW('3039')
 
 SELECT :p FROM sys.dual                                   
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @p Blob -- Object
-SET     @p = HEXTORAW('3039')
+SET     @p = HEXTORAW('')
 
 SELECT :p FROM sys.dual                                    
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @p Blob -- Object
-SET     @p = HEXTORAW('3039')
+SET     @p = HEXTORAW('')
 
 SELECT :p FROM sys.dual                                     
 
@@ -57,4 +45,16 @@ DECLARE @p Blob -- Object
 SET     @p = HEXTORAW('3039')
 
 SELECT :p FROM sys.dual                                      
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Blob -- Object
+SET     @p = HEXTORAW('3039')
+
+SELECT :p FROM sys.dual                                       
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Blob -- Object
+SET     @p = HEXTORAW('3039')
+
+SELECT :p FROM sys.dual                                        
 

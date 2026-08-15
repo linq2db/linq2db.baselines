@@ -38,7 +38,7 @@ SELECT Cast('1' as nvarchar2(20)) FROM sys.dual
 DECLARE @p Char -- AnsiStringFixedLength
 SET     @p = '1'
 
-SELECT :p FROM sys.dual                                        
+SELECT :p FROM sys.dual                                         
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @p Char -- AnsiStringFixedLength

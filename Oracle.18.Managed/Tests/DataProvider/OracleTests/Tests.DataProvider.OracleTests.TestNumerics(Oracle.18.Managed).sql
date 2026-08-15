@@ -17,714 +17,87 @@ SELECT Cast(1 as binary_double) FROM sys.dual
 DECLARE @p Int16
 SET     @p = 1
 
-SELECT :p FROM sys.dual                                                                                                                                                                 
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                          
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @p Int16
 SET     @p = 1
 
-SELECT :p FROM sys.dual                                                                                                                                                                   
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                           
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @p Int16
-SET     @p = 1
-
-SELECT :p FROM sys.dual                                                                                                                                                                      
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as number) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as number(10,0)) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as number(20,0)) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as binary_float) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as binary_double) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int16
-SET     @p = 1
-
-SELECT :p FROM sys.dual                                                                                                                                                                         
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int16
-SET     @p = 1
-
-SELECT :p FROM sys.dual                                                                                                                                                                           
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int16
-SET     @p = 1
-
-SELECT :p FROM sys.dual                                                                                                                                                                            
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(NULL as number) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(NULL as number(10,0)) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(NULL as number(20,0)) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(NULL as binary_float) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(NULL as binary_double) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int16
-SET     @p = NULL
-
-SELECT :p FROM sys.dual                                                                                                                                                                                
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Varchar2 -- String
-SET     @p = NULL
-
-SELECT :p FROM sys.dual                                                                                                                                                                                 
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int16
-SET     @p = NULL
-
-SELECT :p FROM sys.dual                                                                                                                                                                                  
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as number) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as number(10,0)) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as number(20,0)) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as binary_float) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as binary_double) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int16
-SET     @p = 1
-
-SELECT :p FROM sys.dual                                                                                                                                                                                   
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int16
-SET     @p = 1
-
-SELECT :p FROM sys.dual                                                                                                                                                                                    
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int16
-SET     @p = 1
-
-SELECT :p FROM sys.dual                                                                                                                                                                                     
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as number) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as number(10,0)) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as number(20,0)) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as binary_float) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as binary_double) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int16
-SET     @p = 1
-
-SELECT :p FROM sys.dual                                                                                                                                                                                      
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int16
-SET     @p = 1
-
-SELECT :p FROM sys.dual                                                                                                                                                                                       
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int16
-SET     @p = 1
-
-SELECT :p FROM sys.dual                                                                                                                                                                                        
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(NULL as number) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(NULL as number(10,0)) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(NULL as number(20,0)) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(NULL as binary_float) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(NULL as binary_double) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int16
-SET     @p = NULL
-
-SELECT :p FROM sys.dual                                                                                                                                                                                           
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Varchar2 -- String
-SET     @p = NULL
-
-SELECT :p FROM sys.dual                                                                                                                                                                                             
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int16
-SET     @p = NULL
-
-SELECT :p FROM sys.dual                                                                                                                                                                                              
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as number) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as number(10,0)) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as number(20,0)) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as binary_float) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as binary_double) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int16
-SET     @p = 1
-
-SELECT :p FROM sys.dual                                                                                                                                                                                               
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int16
-SET     @p = 1
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int16
-SET     @p = 1
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                 
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as number) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as number(10,0)) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as number(20,0)) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as binary_float) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as binary_double) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int16
-SET     @p = 1
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                     
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int16
-SET     @p = 1
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                      
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int16
-SET     @p = 1
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                       
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(NULL as number) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(NULL as number(10,0)) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(NULL as number(20,0)) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(NULL as binary_float) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(NULL as binary_double) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int16
-SET     @p = NULL
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                        
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Varchar2 -- String
-SET     @p = NULL
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                          
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int16
-SET     @p = NULL
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                             
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as number) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as number(10,0)) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as number(20,0)) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as binary_float) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as binary_double) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int32
-SET     @p = 1
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                              
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int32
-SET     @p = 1
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                               
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int32
-SET     @p = 1
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                                
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as number) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as number(10,0)) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as number(20,0)) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as binary_float) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as binary_double) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int32
-SET     @p = 1
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                                  
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int32
-SET     @p = 1
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                                    
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int32
-SET     @p = 1
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                                      
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(NULL as number) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(NULL as number(10,0)) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(NULL as number(20,0)) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(NULL as binary_float) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(NULL as binary_double) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int32
-SET     @p = NULL
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                                       
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Varchar2 -- String
-SET     @p = NULL
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                                        
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int32
-SET     @p = NULL
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                                         
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as number) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as number(10,0)) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as number(20,0)) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as binary_float) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as binary_double) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int64
-SET     @p = 1
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                                          
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int64
-SET     @p = 1
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                                            
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int64
-SET     @p = 1
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                                             
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as number) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as number(10,0)) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as number(20,0)) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as binary_float) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as binary_double) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int64
-SET     @p = 1
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                                               
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int64
-SET     @p = 1
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                 
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int64
-SET     @p = 1
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                  
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(NULL as number) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(NULL as number(10,0)) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(NULL as number(20,0)) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(NULL as binary_float) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(NULL as binary_double) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int64
-SET     @p = NULL
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                         
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Varchar2 -- String
-SET     @p = NULL
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                            
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int64
-SET     @p = NULL
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                              
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as number) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as number(10,0)) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as number(20,0)) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as binary_float) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as binary_double) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int16
-SET     @p = 1
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                    
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int16
-SET     @p = 1
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                      
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int16
-SET     @p = 1
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                        
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as number) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as number(10,0)) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as number(20,0)) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as binary_float) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as binary_double) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int16
-SET     @p = 1
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                             
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int16
-SET     @p = 1
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                               
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int16
-SET     @p = 1
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                 
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(NULL as number) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(NULL as number(10,0)) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(NULL as number(20,0)) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(NULL as binary_float) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(NULL as binary_double) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int16
-SET     @p = NULL
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                       
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Varchar2 -- String
-SET     @p = NULL
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                        
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int16
-SET     @p = NULL
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                          
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as number) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as number(10,0)) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as number(20,0)) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as binary_float) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as binary_double) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int32
-SET     @p = 1
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                             
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int32
-SET     @p = 1
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                              
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int32
-SET     @p = 1
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                               
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as number) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as number(10,0)) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as number(20,0)) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as binary_float) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as binary_double) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int32
-SET     @p = 1
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                  
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int32
-SET     @p = 1
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                    
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int32
-SET     @p = 1
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                     
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(NULL as number) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(NULL as number(10,0)) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(NULL as number(20,0)) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(NULL as binary_float) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(NULL as binary_double) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int32
-SET     @p = NULL
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                      
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Varchar2 -- String
-SET     @p = NULL
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                       
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int32
-SET     @p = NULL
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                        
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as number) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as number(10,0)) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as number(20,0)) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as binary_float) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as binary_double) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int64
 SET     @p = 1
 
 SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                            
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int64
+SELECT Cast(1 as number) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as number(10,0)) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as number(20,0)) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as binary_float) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as binary_double) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Int16
 SET     @p = 1
 
 SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                             
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int64
+DECLARE @p Int16
 SET     @p = 1
 
 SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                              
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Int16
+SET     @p = 1
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                               
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(NULL as number) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(NULL as number(10,0)) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(NULL as number(20,0)) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(NULL as binary_float) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(NULL as binary_double) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Int16
+SET     @p = NULL
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Varchar2 -- String
+SET     @p = NULL
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                 
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Int16
+SET     @p = NULL
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                  
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
 SELECT Cast(1 as number) FROM sys.dual
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
@@ -740,55 +113,22 @@ SELECT Cast(1 as binary_float) FROM sys.dual
 SELECT Cast(1 as binary_double) FROM sys.dual
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int64
-SET     @p = 1
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                  
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int64
+DECLARE @p Int16
 SET     @p = 1
 
 SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                   
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int64
+DECLARE @p Int16
 SET     @p = 1
 
 SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                    
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(NULL as number) FROM sys.dual
+DECLARE @p Int16
+SET     @p = 1
 
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(NULL as number(10,0)) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(NULL as number(20,0)) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(NULL as binary_float) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(NULL as binary_double) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int64
-SET     @p = NULL
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                      
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Varchar2 -- String
-SET     @p = NULL
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                       
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int64
-SET     @p = NULL
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                        
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                     
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 SELECT Cast(1 as number) FROM sys.dual
@@ -806,22 +146,88 @@ SELECT Cast(1 as binary_float) FROM sys.dual
 SELECT Cast(1 as binary_double) FROM sys.dual
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Decimal
+DECLARE @p Int16
 SET     @p = 1
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                      
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Int16
+SET     @p = 1
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                       
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Int16
+SET     @p = 1
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                        
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(NULL as number) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(NULL as number(10,0)) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(NULL as number(20,0)) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(NULL as binary_float) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(NULL as binary_double) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Int16
+SET     @p = NULL
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                         
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Varchar2 -- String
+SET     @p = NULL
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                          
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Int16
+SET     @p = NULL
 
 SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                           
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Decimal
+SELECT Cast(1 as number) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as number(10,0)) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as number(20,0)) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as binary_float) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as binary_double) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Int16
 SET     @p = 1
 
 SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                            
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Decimal
+DECLARE @p Int16
 SET     @p = 1
 
 SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                             
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Int16
+SET     @p = 1
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                              
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 SELECT Cast(1 as number) FROM sys.dual
@@ -839,22 +245,22 @@ SELECT Cast(1 as binary_float) FROM sys.dual
 SELECT Cast(1 as binary_double) FROM sys.dual
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Decimal
+DECLARE @p Int16
+SET     @p = 1
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                               
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Int16
+SET     @p = 1
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Int16
 SET     @p = 1
 
 SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                 
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Decimal
-SET     @p = 1
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                  
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Decimal
-SET     @p = 1
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                   
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 SELECT Cast(NULL as number) FROM sys.dual
@@ -872,22 +278,22 @@ SELECT Cast(NULL as binary_float) FROM sys.dual
 SELECT Cast(NULL as binary_double) FROM sys.dual
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Decimal
+DECLARE @p Int16
 SET     @p = NULL
 
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                       
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                  
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @p Varchar2 -- String
 SET     @p = NULL
 
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                        
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                   
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Decimal
+DECLARE @p Int16
 SET     @p = NULL
 
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                         
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                    
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 SELECT Cast(1 as number) FROM sys.dual
@@ -905,22 +311,121 @@ SELECT Cast(1 as binary_float) FROM sys.dual
 SELECT Cast(1 as binary_double) FROM sys.dual
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p BinaryFloat -- Single
+DECLARE @p Int32
 SET     @p = 1
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                     
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Int32
+SET     @p = 1
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                      
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Int32
+SET     @p = 1
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                       
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as number) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as number(10,0)) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as number(20,0)) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as binary_float) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as binary_double) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Int32
+SET     @p = 1
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                        
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Int32
+SET     @p = 1
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                         
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Int32
+SET     @p = 1
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                          
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(NULL as number) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(NULL as number(10,0)) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(NULL as number(20,0)) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(NULL as binary_float) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(NULL as binary_double) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Int32
+SET     @p = NULL
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                           
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Varchar2 -- String
+SET     @p = NULL
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                            
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Int32
+SET     @p = NULL
 
 SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                             
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p BinaryFloat -- Single
+SELECT Cast(1 as number) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as number(10,0)) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as number(20,0)) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as binary_float) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as binary_double) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Int64
 SET     @p = 1
 
 SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                              
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p BinaryFloat -- Single
+DECLARE @p Int64
 SET     @p = 1
 
 SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                               
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Int64
+SET     @p = 1
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 SELECT Cast(1 as number) FROM sys.dual
@@ -938,19 +443,19 @@ SELECT Cast(1 as binary_float) FROM sys.dual
 SELECT Cast(1 as binary_double) FROM sys.dual
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p BinaryFloat -- Single
-SET     @p = 1
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p BinaryFloat -- Single
+DECLARE @p Int64
 SET     @p = 1
 
 SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                 
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p BinaryFloat -- Single
+DECLARE @p Int64
+SET     @p = 1
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                  
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Int64
 SET     @p = 1
 
 SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                   
@@ -971,57 +476,57 @@ SELECT Cast(NULL as binary_float) FROM sys.dual
 SELECT Cast(NULL as binary_double) FROM sys.dual
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p BinaryFloat -- Single
+DECLARE @p Int64
+SET     @p = NULL
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                    
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Varchar2 -- String
+SET     @p = NULL
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                     
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Int64
 SET     @p = NULL
 
 SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                      
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Varchar2 -- String
-SET     @p = NULL
+SELECT Cast(1 as number) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as number(10,0)) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as number(20,0)) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as binary_float) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as binary_double) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Int16
+SET     @p = 1
 
 SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                       
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p BinaryFloat -- Single
-SET     @p = NULL
+DECLARE @p Int16
+SET     @p = 1
 
 SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                        
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as number) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as number(10,0)) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as number(20,0)) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as binary_float) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as binary_double) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p BinaryDouble -- Double
-SET     @p = 1D
+DECLARE @p Int16
+SET     @p = 1
 
 SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                         
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p BinaryDouble -- Double
-SET     @p = 1D
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                          
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p BinaryDouble -- Double
-SET     @p = 1D
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                            
-
--- Oracle.18.Managed Oracle.Managed Oracle12
 SELECT Cast(1 as number) FROM sys.dual
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
@@ -1037,22 +542,22 @@ SELECT Cast(1 as binary_float) FROM sys.dual
 SELECT Cast(1 as binary_double) FROM sys.dual
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p BinaryDouble -- Double
-SET     @p = 1D
+DECLARE @p Int16
+SET     @p = 1
 
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                               
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p BinaryDouble -- Double
-SET     @p = 1D
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                          
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p BinaryDouble -- Double
-SET     @p = 1D
+DECLARE @p Int16
+SET     @p = 1
 
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                   
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                           
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Int16
+SET     @p = 1
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                            
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 SELECT Cast(NULL as number) FROM sys.dual
@@ -1070,22 +575,154 @@ SELECT Cast(NULL as binary_float) FROM sys.dual
 SELECT Cast(NULL as binary_double) FROM sys.dual
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p BinaryDouble -- Double
+DECLARE @p Int16
+SET     @p = NULL
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                             
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Varchar2 -- String
+SET     @p = NULL
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                              
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Int16
+SET     @p = NULL
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                               
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as number) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as number(10,0)) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as number(20,0)) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as binary_float) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as binary_double) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Int32
+SET     @p = 1
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Int32
+SET     @p = 1
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                 
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Int32
+SET     @p = 1
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                  
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as number) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as number(10,0)) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as number(20,0)) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as binary_float) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as binary_double) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Int32
+SET     @p = 1
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                   
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Int32
+SET     @p = 1
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                    
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Int32
+SET     @p = 1
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                     
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(NULL as number) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(NULL as number(10,0)) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(NULL as number(20,0)) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(NULL as binary_float) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(NULL as binary_double) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Int32
+SET     @p = NULL
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                      
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Varchar2 -- String
 SET     @p = NULL
 
 SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                       
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Varchar2 -- String
+DECLARE @p Int32
 SET     @p = NULL
 
 SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                        
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p BinaryDouble -- Double
-SET     @p = NULL
+SELECT Cast(1 as number) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as number(10,0)) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as number(20,0)) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as binary_float) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as binary_double) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Int64
+SET     @p = 1
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                         
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Int64
+SET     @p = 1
 
 SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                          
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Int64
+SET     @p = 1
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                           
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 SELECT Cast(1 as number) FROM sys.dual
@@ -1103,24 +740,90 @@ SELECT Cast(1 as binary_float) FROM sys.dual
 SELECT Cast(1 as binary_double) FROM sys.dual
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Decimal(1, 0)
+DECLARE @p Int64
 SET     @p = 1
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                            
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Int64
+SET     @p = 1
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                             
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Int64
+SET     @p = 1
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                              
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(NULL as number) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(NULL as number(10,0)) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(NULL as number(20,0)) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(NULL as binary_float) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(NULL as binary_double) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Int64
+SET     @p = NULL
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                               
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Varchar2 -- String
+SET     @p = NULL
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Int64
+SET     @p = NULL
 
 SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                 
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Decimal(1, 0)
+SELECT Cast(1 as number) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as number(10,0)) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as number(20,0)) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as binary_float) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as binary_double) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Decimal
+SET     @p = 1
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                  
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Decimal
+SET     @p = 1
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                   
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Decimal
 SET     @p = 1
 
 SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                    
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Decimal(1, 0)
-SET     @p = 1
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                     
-
--- Oracle.18.Managed Oracle.Managed Oracle12
 SELECT Cast(1 as number) FROM sys.dual
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
@@ -1136,22 +839,22 @@ SELECT Cast(1 as binary_float) FROM sys.dual
 SELECT Cast(1 as binary_double) FROM sys.dual
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Decimal(1, 0)
+DECLARE @p Decimal
 SET     @p = 1
 
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                             
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                     
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Decimal(1, 0)
+DECLARE @p Decimal
 SET     @p = 1
 
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                               
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                      
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Decimal(1, 0)
+DECLARE @p Decimal
 SET     @p = 1
 
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                  
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                       
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 SELECT Cast(NULL as number) FROM sys.dual
@@ -1172,19 +875,19 @@ SELECT Cast(NULL as binary_double) FROM sys.dual
 DECLARE @p Decimal
 SET     @p = NULL
 
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                    
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                        
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @p Varchar2 -- String
 SET     @p = NULL
 
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                      
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                         
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @p Decimal
 SET     @p = NULL
 
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                        
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                          
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 SELECT Cast(1 as number) FROM sys.dual
@@ -1202,22 +905,187 @@ SELECT Cast(1 as binary_float) FROM sys.dual
 SELECT Cast(1 as binary_double) FROM sys.dual
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Decimal(1, 0)
+DECLARE @p BinaryFloat -- Single
 SET     @p = 1
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                           
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p BinaryFloat -- Single
+SET     @p = 1
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                            
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p BinaryFloat -- Single
+SET     @p = 1
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                             
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as number) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as number(10,0)) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as number(20,0)) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as binary_float) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as binary_double) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p BinaryFloat -- Single
+SET     @p = 1
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                              
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p BinaryFloat -- Single
+SET     @p = 1
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                               
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p BinaryFloat -- Single
+SET     @p = 1
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(NULL as number) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(NULL as number(10,0)) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(NULL as number(20,0)) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(NULL as binary_float) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(NULL as binary_double) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p BinaryFloat -- Single
+SET     @p = NULL
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                 
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Varchar2 -- String
+SET     @p = NULL
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                  
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p BinaryFloat -- Single
+SET     @p = NULL
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                   
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as number) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as number(10,0)) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as number(20,0)) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as binary_float) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as binary_double) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p BinaryDouble -- Double
+SET     @p = 1D
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                    
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p BinaryDouble -- Double
+SET     @p = 1D
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                     
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p BinaryDouble -- Double
+SET     @p = 1D
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                      
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as number) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as number(10,0)) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as number(20,0)) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as binary_float) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as binary_double) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p BinaryDouble -- Double
+SET     @p = 1D
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                       
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p BinaryDouble -- Double
+SET     @p = 1D
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                        
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p BinaryDouble -- Double
+SET     @p = 1D
 
 SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                         
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Decimal(1, 0)
-SET     @p = 1
+SELECT Cast(NULL as number) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(NULL as number(10,0)) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(NULL as number(20,0)) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(NULL as binary_float) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(NULL as binary_double) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p BinaryDouble -- Double
+SET     @p = NULL
 
 SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                          
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Decimal(1, 0)
-SET     @p = 1
+DECLARE @p Varchar2 -- String
+SET     @p = NULL
 
 SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                           
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p BinaryDouble -- Double
+SET     @p = NULL
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                            
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 SELECT Cast(1 as number) FROM sys.dual
@@ -1233,12 +1101,39 @@ SELECT Cast(1 as binary_float) FROM sys.dual
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 SELECT Cast(1 as binary_double) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Decimal(1, 0)
+SET     @p = 1
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                             
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
 SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                              
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Decimal(1, 0)
+SET     @p = 1
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                               
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as number) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as number(10,0)) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as number(20,0)) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as binary_float) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as binary_double) FROM sys.dual
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @p Decimal(1, 0)
@@ -1253,6 +1148,12 @@ SET     @p = 1
 SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                 
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Decimal(1, 0)
+SET     @p = 1
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                  
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
 SELECT Cast(NULL as number) FROM sys.dual
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
@@ -1271,13 +1172,13 @@ SELECT Cast(NULL as binary_double) FROM sys.dual
 DECLARE @p Decimal
 SET     @p = NULL
 
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                  
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                   
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @p Varchar2 -- String
 SET     @p = NULL
 
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                   
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                    
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @p Decimal
@@ -1304,7 +1205,34 @@ SELECT Cast(1 as binary_double) FROM sys.dual
 DECLARE @p Decimal(1, 0)
 SET     @p = 1
 
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                      
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Decimal(1, 0)
+SET     @p = 1
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                       
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Decimal(1, 0)
+SET     @p = 1
+
 SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                        
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as number) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as number(10,0)) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as number(20,0)) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as binary_float) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as binary_double) FROM sys.dual
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @p Decimal(1, 0)
@@ -1319,6 +1247,45 @@ SET     @p = 1
 SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                          
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Decimal(1, 0)
+SET     @p = 1
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                           
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(NULL as number) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(NULL as number(10,0)) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(NULL as number(20,0)) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(NULL as binary_float) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(NULL as binary_double) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Decimal
+SET     @p = NULL
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                            
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Varchar2 -- String
+SET     @p = NULL
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                             
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Decimal
+SET     @p = NULL
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                              
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
 SELECT Cast(1 as number) FROM sys.dual
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
@@ -1332,12 +1299,6 @@ SELECT Cast(1 as binary_float) FROM sys.dual
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 SELECT Cast(1 as binary_double) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Decimal(1, 0)
-SET     @p = 1
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                             
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @p Decimal(1, 0)
@@ -1352,6 +1313,45 @@ SET     @p = 1
 SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Decimal(1, 0)
+SET     @p = 1
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                 
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as number) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as number(10,0)) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as number(20,0)) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as binary_float) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as binary_double) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Decimal(1, 0)
+SET     @p = 1
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                  
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Decimal(1, 0)
+SET     @p = 1
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                   
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Decimal(1, 0)
+SET     @p = 1
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                    
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
 SELECT Cast(NULL as number) FROM sys.dual
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
@@ -1370,73 +1370,34 @@ SELECT Cast(NULL as binary_double) FROM sys.dual
 DECLARE @p Varchar2 -- String
 SET     @p = NULL
 
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                 
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                     
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @p Varchar2 -- String
 SET     @p = NULL
 
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                  
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                      
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @p Decimal
 SET     @p = NULL
 
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                   
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as number) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as number(10,0)) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as number(20,0)) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as binary_float) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as binary_double) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Decimal(1, 0)
-SET     @p = 1
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                    
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Decimal(1, 0)
-SET     @p = 1
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                     
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Decimal(1, 0)
-SET     @p = 1
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                      
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as number) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as number(10,0)) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as number(20,0)) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as binary_float) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT Cast(1 as binary_double) FROM sys.dual
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Decimal(1, 0)
-SET     @p = 1
-
 SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                       
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as number) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as number(10,0)) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as number(20,0)) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as binary_float) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as binary_double) FROM sys.dual
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @p Decimal(1, 0)
@@ -1451,6 +1412,45 @@ SET     @p = 1
 SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                         
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Decimal(1, 0)
+SET     @p = 1
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                          
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as number) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as number(10,0)) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as number(20,0)) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as binary_float) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT Cast(1 as binary_double) FROM sys.dual
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Decimal(1, 0)
+SET     @p = 1
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                           
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Decimal(1, 0)
+SET     @p = 1
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                            
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Decimal(1, 0)
+SET     @p = 1
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                             
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
 SELECT Cast(NULL as number) FROM sys.dual
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
@@ -1469,19 +1469,19 @@ SELECT Cast(NULL as binary_double) FROM sys.dual
 DECLARE @p Varchar2 -- String
 SET     @p = NULL
 
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                          
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                              
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @p Varchar2 -- String
 SET     @p = NULL
 
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                           
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                               
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @p Decimal
 SET     @p = NULL
 
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                            
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 SELECT Cast(-128 as number) FROM sys.dual
@@ -1502,19 +1502,19 @@ SELECT Cast(-128 as binary_double) FROM sys.dual
 DECLARE @p Int16
 SET     @p = -128
 
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                             
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                 
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @p Int16
 SET     @p = -128
 
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                              
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                  
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @p Int16
 SET     @p = -128
 
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                               
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                   
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 SELECT Cast(127 as number) FROM sys.dual
@@ -1535,19 +1535,19 @@ SELECT Cast(127 as binary_double) FROM sys.dual
 DECLARE @p Int16
 SET     @p = 127
 
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                    
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @p Int16
 SET     @p = 127
 
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                 
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                     
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @p Int16
 SET     @p = 127
 
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                  
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                      
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 SELECT Cast(-32768 as number) FROM sys.dual
@@ -1568,19 +1568,19 @@ SELECT Cast(-32768 as binary_double) FROM sys.dual
 DECLARE @p Int16
 SET     @p = -32768
 
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                   
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                       
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @p Int16
 SET     @p = -32768
 
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                    
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                        
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @p Int16
 SET     @p = -32768
 
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                     
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                         
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 SELECT Cast(32767 as number) FROM sys.dual
@@ -1601,7 +1601,7 @@ SELECT Cast(32767 as binary_double) FROM sys.dual
 DECLARE @p Int16
 SET     @p = 32767
 
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                        
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                          
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @p Int16
