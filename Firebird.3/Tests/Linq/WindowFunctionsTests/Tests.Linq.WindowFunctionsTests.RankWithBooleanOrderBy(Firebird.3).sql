@@ -21,12 +21,10 @@ SELECT
 	"x"."NullableByteValue",
 	"x"."BoolValue",
 	"x"."NullableBoolValue",
-	DENSE_RANK() OVER (ORDER BY "x"."Timestamp"),
-	DENSE_RANK() OVER (ORDER BY "x"."Value"),
-	DENSE_RANK() OVER (ORDER BY "x"."Timestamp" DESC),
-	DENSE_RANK() OVER (ORDER BY "x"."Value" DESC),
-	DENSE_RANK() OVER (ORDER BY "x"."Timestamp", "x"."Value"),
-	DENSE_RANK() OVER (ORDER BY "x"."Timestamp" DESC, "x"."Value" DESC)
+	RANK() OVER (ORDER BY "x"."IntValue" = 20),
+	RANK() OVER (PARTITION BY "x"."CategoryId" ORDER BY "x"."IntValue" = 20, "x"."Id"),
+	RANK() OVER (PARTITION BY "x"."CategoryId" ORDER BY "x"."IntValue" = 20 DESC, "x"."Id"),
+	RANK() OVER (ORDER BY "x"."NullableIntValue" IS NOT NULL, "x"."Id")
 FROM
 	"WindowFunctionTestEntity" "x"
 ORDER BY
