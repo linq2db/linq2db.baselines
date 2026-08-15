@@ -19,6 +19,8 @@ SELECT
 	x.NullableShortValue,
 	x.ByteValue,
 	x.NullableByteValue,
+	x.BoolValue,
+	x.NullableBoolValue,
 	toInt64(ROW_NUMBER() OVER (ORDER BY x.Timestamp)),
 	toInt64(ROW_NUMBER() OVER (ORDER BY x.Value)),
 	toInt64(ROW_NUMBER() OVER (ORDER BY x.Timestamp DESC)),
