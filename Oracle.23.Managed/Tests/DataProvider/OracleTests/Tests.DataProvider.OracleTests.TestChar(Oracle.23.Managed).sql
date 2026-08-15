@@ -38,16 +38,10 @@ SELECT Cast('1' as nvarchar2(20)) FROM sys.dual
 DECLARE @p Char -- AnsiStringFixedLength
 SET     @p = '1'
 
-SELECT :p FROM sys.dual                  
-
--- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @p Char -- AnsiStringFixedLength
-SET     @p = '1'
-
 SELECT :p FROM sys.dual                   
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @p Varchar2 -- String
+DECLARE @p Char -- AnsiStringFixedLength
 SET     @p = '1'
 
 SELECT :p FROM sys.dual                    
@@ -56,13 +50,37 @@ SELECT :p FROM sys.dual
 DECLARE @p Varchar2 -- String
 SET     @p = '1'
 
+SELECT :p FROM sys.dual                     
+
+-- Oracle.23.Managed Oracle.Managed Oracle12
+DECLARE @p Varchar2 -- String
+SET     @p = '1'
+
+SELECT :p FROM sys.dual                      
+
+-- Oracle.23.Managed Oracle.Managed Oracle12
+DECLARE @p Char -- StringFixedLength
+SET     @p = '1'
+
 SELECT :p FROM sys.dual                       
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @p Char -- StringFixedLength
 SET     @p = '1'
 
+SELECT :p FROM sys.dual                        
+
+-- Oracle.23.Managed Oracle.Managed Oracle12
+DECLARE @p NVarchar2 -- String
+SET     @p = '1'
+
 SELECT :p FROM sys.dual                         
+
+-- Oracle.23.Managed Oracle.Managed Oracle12
+DECLARE @p NVarchar2 -- String
+SET     @p = '1'
+
+SELECT :p FROM sys.dual                          
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @p Char -- StringFixedLength
@@ -71,38 +89,20 @@ SET     @p = '1'
 SELECT :p FROM sys.dual                           
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @p NVarchar2 -- String
+DECLARE @p Char -- StringFixedLength
 SET     @p = '1'
 
 SELECT :p FROM sys.dual                            
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @p NVarchar2 -- String
+DECLARE @p Char -- StringFixedLength
+SET     @p = '1'
+
+SELECT :p FROM sys.dual                             
+
+-- Oracle.23.Managed Oracle.Managed Oracle12
+DECLARE @p Char -- StringFixedLength
 SET     @p = '1'
 
 SELECT :p FROM sys.dual                              
-
--- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @p Char -- StringFixedLength
-SET     @p = '1'
-
-SELECT :p FROM sys.dual                                
-
--- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @p Char -- StringFixedLength
-SET     @p = '1'
-
-SELECT :p FROM sys.dual                                  
-
--- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @p Char -- StringFixedLength
-SET     @p = '1'
-
-SELECT :p FROM sys.dual                                   
-
--- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @p Char -- StringFixedLength
-SET     @p = '1'
-
-SELECT :p FROM sys.dual                                     
 
