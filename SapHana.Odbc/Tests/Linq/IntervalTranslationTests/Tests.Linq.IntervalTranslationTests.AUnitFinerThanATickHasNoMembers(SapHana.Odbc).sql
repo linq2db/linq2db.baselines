@@ -25,6 +25,13 @@ VALUES
 
 -- SapHana.Odbc SapHanaOdbc
 SELECT
+	"r"."InNanoseconds"
+FROM
+	"UnitSpreadRow" "r"
+LIMIT 2
+
+-- SapHana.Odbc SapHanaOdbc
+SELECT
 	"t1"."Id",
 	"t1"."InDays",
 	"t1"."InMilliseconds",
