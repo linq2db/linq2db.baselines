@@ -25,6 +25,13 @@ VALUES
 
 -- DB2 DB2.LUW DB2LUW
 SELECT
+	"r"."InNanoseconds"
+FROM
+	"UnitSpreadRow" "r"
+FETCH NEXT 2 ROWS ONLY
+
+-- DB2 DB2.LUW DB2LUW
+SELECT
 	"t1"."Id",
 	"t1"."InDays",
 	"t1"."InMilliseconds",
