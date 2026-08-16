@@ -25,6 +25,13 @@ VALUES
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 SELECT
+	`r`.`InNanoseconds`
+FROM
+	`UnitSpreadRow` `r`
+LIMIT 2
+
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+SELECT
 	`t1`.`Id`,
 	`t1`.`InDays`,
 	`t1`.`InMilliseconds`,
