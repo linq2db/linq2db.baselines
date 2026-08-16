@@ -25,6 +25,13 @@ VALUES
 
 -- SQLite.MS SQLite
 SELECT
+	[r].[InNanoseconds]
+FROM
+	[UnitSpreadRow] [r]
+LIMIT 2
+
+-- SQLite.MS SQLite
+SELECT
 	[t1].[Id],
 	[t1].[InDays],
 	[t1].[InMilliseconds],
