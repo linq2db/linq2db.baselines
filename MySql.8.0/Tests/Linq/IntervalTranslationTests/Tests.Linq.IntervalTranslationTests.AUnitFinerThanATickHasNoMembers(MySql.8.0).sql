@@ -25,6 +25,13 @@ VALUES
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 SELECT
+	`r`.`InNanoseconds`
+FROM
+	`UnitSpreadRow` `r`
+LIMIT 2
+
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80
+SELECT
 	`t1`.`Id`,
 	`t1`.`InDays`,
 	`t1`.`InMilliseconds`,
