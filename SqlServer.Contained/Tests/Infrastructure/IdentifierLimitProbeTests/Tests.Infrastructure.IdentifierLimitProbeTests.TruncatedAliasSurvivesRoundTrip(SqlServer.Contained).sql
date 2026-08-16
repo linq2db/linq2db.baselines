@@ -1,0 +1,3 @@
+﻿-- SqlServer.Contained SqlServer.2019
+SELECT 1 AS [aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa] FROM [Person]
+
