@@ -5,19 +5,19 @@ SELECT dateDataType FROM [AllTypes2] WHERE ID = 1
 DECLARE @p Date
 SET     @p = NULL
 
-SELECT ID FROM [AllTypes2] WHERE @p IS NULL AND dateDataType IS NULL OR @p IS NOT NULL AND dateDataType = @p
+SELECT ID FROM [AllTypes2] WHERE @p IS NULL AND dateDataType IS NULL OR @p IS NOT NULL AND dateDataType = @p ORDER BY ID
 
 -- SqlServer.2012
 DECLARE @p DateTime2
 SET     @p = NULL
 
-SELECT ID FROM [AllTypes2] WHERE @p IS NULL AND dateDataType IS NULL OR @p IS NOT NULL AND dateDataType = @p
+SELECT ID FROM [AllTypes2] WHERE @p IS NULL AND dateDataType IS NULL OR @p IS NOT NULL AND dateDataType = @p ORDER BY ID
 
 -- SqlServer.2012
 DECLARE @p NVarChar(4000) -- String
 SET     @p = NULL
 
-SELECT ID FROM [AllTypes2] WHERE @p IS NULL AND dateDataType IS NULL OR @p IS NOT NULL AND dateDataType = @p
+SELECT ID FROM [AllTypes2] WHERE @p IS NULL AND dateDataType IS NULL OR @p IS NOT NULL AND dateDataType = @p ORDER BY ID
 
 -- SqlServer.2012
 SELECT dateDataType FROM [AllTypes2] WHERE ID = 2
@@ -26,19 +26,19 @@ SELECT dateDataType FROM [AllTypes2] WHERE ID = 2
 DECLARE @p Date
 SET     @p = DATETIME2FROMPARTS(2012, 12, 12, 0, 0, 0, 0, 7)
 
-SELECT ID FROM [AllTypes2] WHERE dateDataType = @p
+SELECT ID FROM [AllTypes2] WHERE dateDataType = @p ORDER BY ID
 
 -- SqlServer.2012
 DECLARE @p DateTime2
 SET     @p = DATETIME2FROMPARTS(2012, 12, 12, 0, 0, 0, 0, 7)
 
-SELECT ID FROM [AllTypes2] WHERE dateDataType = @p
+SELECT ID FROM [AllTypes2] WHERE dateDataType = @p ORDER BY ID
 
 -- SqlServer.2012
 DECLARE @p DateTime2
 SET     @p = DATETIME2FROMPARTS(2012, 12, 12, 0, 0, 0, 0, 7)
 
-SELECT ID FROM [AllTypes2] WHERE dateDataType = @p
+SELECT ID FROM [AllTypes2] WHERE dateDataType = @p ORDER BY ID
 
 -- SqlServer.2012
 SELECT datetimeoffsetDataType FROM [AllTypes2] WHERE ID = 1
@@ -47,19 +47,19 @@ SELECT datetimeoffsetDataType FROM [AllTypes2] WHERE ID = 1
 DECLARE @p DateTimeOffset
 SET     @p = NULL
 
-SELECT ID FROM [AllTypes2] WHERE @p IS NULL AND datetimeoffsetDataType IS NULL OR @p IS NOT NULL AND datetimeoffsetDataType = @p
+SELECT ID FROM [AllTypes2] WHERE @p IS NULL AND datetimeoffsetDataType IS NULL OR @p IS NOT NULL AND datetimeoffsetDataType = @p ORDER BY ID
 
 -- SqlServer.2012
 DECLARE @p DateTimeOffset
 SET     @p = NULL
 
-SELECT ID FROM [AllTypes2] WHERE @p IS NULL AND datetimeoffsetDataType IS NULL OR @p IS NOT NULL AND datetimeoffsetDataType = @p
+SELECT ID FROM [AllTypes2] WHERE @p IS NULL AND datetimeoffsetDataType IS NULL OR @p IS NOT NULL AND datetimeoffsetDataType = @p ORDER BY ID
 
 -- SqlServer.2012
 DECLARE @p NVarChar(4000) -- String
 SET     @p = NULL
 
-SELECT ID FROM [AllTypes2] WHERE @p IS NULL AND datetimeoffsetDataType IS NULL OR @p IS NOT NULL AND datetimeoffsetDataType = @p
+SELECT ID FROM [AllTypes2] WHERE @p IS NULL AND datetimeoffsetDataType IS NULL OR @p IS NOT NULL AND datetimeoffsetDataType = @p ORDER BY ID
 
 -- SqlServer.2012
 SELECT datetimeoffsetDataType FROM [AllTypes2] WHERE ID = 2
@@ -68,19 +68,19 @@ SELECT datetimeoffsetDataType FROM [AllTypes2] WHERE ID = 2
 DECLARE @p DateTimeOffset
 SET     @p = DATETIMEOFFSETFROMPARTS(2012, 12, 12, 12, 12, 12, 120000, 5, 0, 7)
 
-SELECT ID FROM [AllTypes2] WHERE datetimeoffsetDataType = @p
+SELECT ID FROM [AllTypes2] WHERE datetimeoffsetDataType = @p ORDER BY ID
 
 -- SqlServer.2012
 DECLARE @p DateTimeOffset
 SET     @p = DATETIMEOFFSETFROMPARTS(2012, 12, 12, 12, 12, 12, 120000, 5, 0, 7)
 
-SELECT ID FROM [AllTypes2] WHERE datetimeoffsetDataType = @p
+SELECT ID FROM [AllTypes2] WHERE datetimeoffsetDataType = @p ORDER BY ID
 
 -- SqlServer.2012
 DECLARE @p DateTimeOffset
 SET     @p = DATETIMEOFFSETFROMPARTS(2012, 12, 12, 12, 12, 12, 120000, 5, 0, 7)
 
-SELECT ID FROM [AllTypes2] WHERE datetimeoffsetDataType = @p
+SELECT ID FROM [AllTypes2] WHERE datetimeoffsetDataType = @p ORDER BY ID
 
 -- SqlServer.2012
 SELECT datetime2DataType FROM [AllTypes2] WHERE ID = 1
@@ -89,19 +89,19 @@ SELECT datetime2DataType FROM [AllTypes2] WHERE ID = 1
 DECLARE @p DateTime2
 SET     @p = NULL
 
-SELECT ID FROM [AllTypes2] WHERE @p IS NULL AND datetime2DataType IS NULL OR @p IS NOT NULL AND datetime2DataType = @p
+SELECT ID FROM [AllTypes2] WHERE @p IS NULL AND datetime2DataType IS NULL OR @p IS NOT NULL AND datetime2DataType = @p ORDER BY ID
 
 -- SqlServer.2012
 DECLARE @p DateTime2
 SET     @p = NULL
 
-SELECT ID FROM [AllTypes2] WHERE @p IS NULL AND datetime2DataType IS NULL OR @p IS NOT NULL AND datetime2DataType = @p
+SELECT ID FROM [AllTypes2] WHERE @p IS NULL AND datetime2DataType IS NULL OR @p IS NOT NULL AND datetime2DataType = @p ORDER BY ID
 
 -- SqlServer.2012
 DECLARE @p NVarChar(4000) -- String
 SET     @p = NULL
 
-SELECT ID FROM [AllTypes2] WHERE @p IS NULL AND datetime2DataType IS NULL OR @p IS NOT NULL AND datetime2DataType = @p
+SELECT ID FROM [AllTypes2] WHERE @p IS NULL AND datetime2DataType IS NULL OR @p IS NOT NULL AND datetime2DataType = @p ORDER BY ID
 
 -- SqlServer.2012
 SELECT datetime2DataType FROM [AllTypes2] WHERE ID = 2
@@ -110,19 +110,19 @@ SELECT datetime2DataType FROM [AllTypes2] WHERE ID = 2
 DECLARE @p DateTime2
 SET     @p = DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 120000, 7)
 
-SELECT ID FROM [AllTypes2] WHERE datetime2DataType = @p
+SELECT ID FROM [AllTypes2] WHERE datetime2DataType = @p ORDER BY ID
 
 -- SqlServer.2012
 DECLARE @p DateTime2
 SET     @p = DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 120000, 7)
 
-SELECT ID FROM [AllTypes2] WHERE datetime2DataType = @p
+SELECT ID FROM [AllTypes2] WHERE datetime2DataType = @p ORDER BY ID
 
 -- SqlServer.2012
 DECLARE @p DateTime2
 SET     @p = DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 12, 120000, 7)
 
-SELECT ID FROM [AllTypes2] WHERE datetime2DataType = @p
+SELECT ID FROM [AllTypes2] WHERE datetime2DataType = @p ORDER BY ID
 
 -- SqlServer.2012
 SELECT timeDataType FROM [AllTypes2] WHERE ID = 1
@@ -131,19 +131,19 @@ SELECT timeDataType FROM [AllTypes2] WHERE ID = 1
 DECLARE @p Time
 SET     @p = NULL
 
-SELECT ID FROM [AllTypes2] WHERE @p IS NULL AND timeDataType IS NULL OR @p IS NOT NULL AND timeDataType = @p
+SELECT ID FROM [AllTypes2] WHERE @p IS NULL AND timeDataType IS NULL OR @p IS NOT NULL AND timeDataType = @p ORDER BY ID
 
 -- SqlServer.2012
 DECLARE @p Time
 SET     @p = NULL
 
-SELECT ID FROM [AllTypes2] WHERE @p IS NULL AND timeDataType IS NULL OR @p IS NOT NULL AND timeDataType = @p
+SELECT ID FROM [AllTypes2] WHERE @p IS NULL AND timeDataType IS NULL OR @p IS NOT NULL AND timeDataType = @p ORDER BY ID
 
 -- SqlServer.2012
 DECLARE @p NVarChar(4000) -- String
 SET     @p = NULL
 
-SELECT ID FROM [AllTypes2] WHERE @p IS NULL AND timeDataType IS NULL OR @p IS NOT NULL AND timeDataType = @p
+SELECT ID FROM [AllTypes2] WHERE @p IS NULL AND timeDataType IS NULL OR @p IS NOT NULL AND timeDataType = @p ORDER BY ID
 
 -- SqlServer.2012
 SELECT timeDataType FROM [AllTypes2] WHERE ID = 2
@@ -152,19 +152,19 @@ SELECT timeDataType FROM [AllTypes2] WHERE ID = 2
 DECLARE @p Time
 SET     @p = TIMEFROMPARTS(12, 12, 12, 120000, 7)
 
-SELECT ID FROM [AllTypes2] WHERE timeDataType = @p
+SELECT ID FROM [AllTypes2] WHERE timeDataType = @p ORDER BY ID
 
 -- SqlServer.2012
 DECLARE @p Time
 SET     @p = TIMEFROMPARTS(12, 12, 12, 120000, 7)
 
-SELECT ID FROM [AllTypes2] WHERE timeDataType = @p
+SELECT ID FROM [AllTypes2] WHERE timeDataType = @p ORDER BY ID
 
 -- SqlServer.2012
 DECLARE @p Time
 SET     @p = TIMEFROMPARTS(12, 12, 12, 120000, 7)
 
-SELECT ID FROM [AllTypes2] WHERE timeDataType = @p
+SELECT ID FROM [AllTypes2] WHERE timeDataType = @p ORDER BY ID
 
 -- SqlServer.2012
 SELECT hierarchyidDataType FROM [AllTypes2] WHERE ID = 1
@@ -173,13 +173,13 @@ SELECT hierarchyidDataType FROM [AllTypes2] WHERE ID = 1
 DECLARE @p NVarChar(4000) -- String
 SET     @p = NULL
 
-SELECT ID FROM [AllTypes2] WHERE @p IS NULL AND hierarchyidDataType IS NULL OR @p IS NOT NULL AND hierarchyidDataType = @p
+SELECT ID FROM [AllTypes2] WHERE @p IS NULL AND hierarchyidDataType IS NULL OR @p IS NOT NULL AND hierarchyidDataType = @p ORDER BY ID
 
 -- SqlServer.2012
 DECLARE @p NVarChar(4000) -- String
 SET     @p = NULL
 
-SELECT ID FROM [AllTypes2] WHERE @p IS NULL AND hierarchyidDataType IS NULL OR @p IS NOT NULL AND hierarchyidDataType = @p
+SELECT ID FROM [AllTypes2] WHERE @p IS NULL AND hierarchyidDataType IS NULL OR @p IS NOT NULL AND hierarchyidDataType = @p ORDER BY ID
 
 -- SqlServer.2012
 SELECT hierarchyidDataType FROM [AllTypes2] WHERE ID = 2
@@ -188,13 +188,13 @@ SELECT hierarchyidDataType FROM [AllTypes2] WHERE ID = 2
 DECLARE @p hierarchyid -- Udt -- Object
 SET     @p = /1/3/
 
-SELECT ID FROM [AllTypes2] WHERE hierarchyidDataType = @p
+SELECT ID FROM [AllTypes2] WHERE hierarchyidDataType = @p ORDER BY ID
 
 -- SqlServer.2012
 DECLARE @p hierarchyid -- Udt -- Object
 SET     @p = /1/3/
 
-SELECT ID FROM [AllTypes2] WHERE hierarchyidDataType = @p
+SELECT ID FROM [AllTypes2] WHERE hierarchyidDataType = @p ORDER BY ID
 
 -- SqlServer.2012
 SELECT geographyDataType FROM [AllTypes2] WHERE ID = 1
