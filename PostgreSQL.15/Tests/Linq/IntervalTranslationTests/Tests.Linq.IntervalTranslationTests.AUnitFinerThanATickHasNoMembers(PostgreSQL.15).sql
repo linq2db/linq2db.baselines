@@ -25,6 +25,13 @@ VALUES
 
 -- PostgreSQL.15 PostgreSQL12
 SELECT
+	r."InNanoseconds"
+FROM
+	"UnitSpreadRow" r
+LIMIT 2
+
+-- PostgreSQL.15 PostgreSQL12
+SELECT
 	t1."Id",
 	t1."InDays",
 	t1."InMilliseconds",
