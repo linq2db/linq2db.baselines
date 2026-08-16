@@ -25,6 +25,12 @@ VALUES
 
 -- Informix.DB2 Informix
 SELECT FIRST 2
+	r.InNanoseconds
+FROM
+	UnitSpreadRow r
+
+-- Informix.DB2 Informix
+SELECT FIRST 2
 	t1.Id,
 	t1.InDays,
 	t1.InMilliseconds,
