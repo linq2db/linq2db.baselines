@@ -25,6 +25,12 @@ VALUES
 
 -- SqlServer.SA SqlServer.2019
 SELECT TOP (2)
+	[r].[InNanoseconds]
+FROM
+	[UnitSpreadRow] [r]
+
+-- SqlServer.SA SqlServer.2019
+SELECT TOP (2)
 	[t1].[Id],
 	[t1].[InDays],
 	[t1].[InMilliseconds],
