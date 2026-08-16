@@ -1,0 +1,13 @@
+﻿-- YDB Ydb
+DECLARE $parentId Int32
+SET     $parentId = 1
+
+SELECT
+	longLongLongLongVeryLongVeryVeryLongVeryVeryLongLongAliasNameTestParent.ParentID as ParentID,
+	longLongLongLongVeryLongVeryVeryLongVeryVeryLongLongAliasNameTestParent.Value1 as Value1
+FROM
+	Parent longLongLongLongVeryLongVeryVeryLongVeryVeryLongLongAliasNameTestParent
+		INNER JOIN Child longLongLongLongVeryLongVeryVeryLongVeryVeryLongLongAliasNameTestChild ON longLongLongLongVeryLongVeryVeryLongVeryVeryLongLongAliasNameTestChild.ParentID = longLongLongLongVeryLongVeryVeryLongVeryVeryLongLongAliasNameTestParent.ParentID
+WHERE
+	longLongLongLongVeryLongVeryVeryLongVeryVeryLongLongAliasNameTestParent.ParentID = $parentId
+
