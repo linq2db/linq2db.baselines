@@ -1,0 +1,3 @@
+﻿-- SapHana.Odbc SapHanaOdbc
+SELECT 1 AS "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" FROM "Person"
+
