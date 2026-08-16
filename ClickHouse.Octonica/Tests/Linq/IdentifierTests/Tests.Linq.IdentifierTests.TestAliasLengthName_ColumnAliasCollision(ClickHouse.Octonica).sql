@@ -1,8 +1,7 @@
 ﻿-- ClickHouse.Octonica ClickHouse
 SELECT
-	t1.Id,
-	t1.Name
+	p.ParentID,
+	p.Value1
 FROM
-	User t1
-LIMIT 1
+	Parent p
 
