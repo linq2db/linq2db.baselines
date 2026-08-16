@@ -25,6 +25,13 @@ VALUES
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 SELECT
+	[r].[InNanoseconds]
+FROM
+	[UnitSpreadRow] [r]
+LIMIT 2
+
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+SELECT
 	[t1].[Id],
 	[t1].[InDays],
 	[t1].[InMilliseconds],
