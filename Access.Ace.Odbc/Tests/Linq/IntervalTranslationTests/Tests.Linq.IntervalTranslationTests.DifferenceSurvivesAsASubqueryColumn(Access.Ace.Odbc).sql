@@ -50,7 +50,7 @@ FROM
 		SELECT
 			[r].[FinishedOn],
 			[r].[StartedOn],
-			DateDiff('h', [r].[StartedOn], [r].[FinishedOn]) + DateDiff('s', DateAdd('h', DateDiff('h', [r].[StartedOn], [r].[FinishedOn]), [r].[StartedOn]), [r].[FinishedOn]) / 3600 as [TotalHours],
+			DateDiff('h', [r].[StartedOn], [r].[FinishedOn]) + (CDbl(DateDiff('d', DateAdd('h', DateDiff('h', [r].[StartedOn], [r].[FinishedOn]), [r].[StartedOn]), [r].[FinishedOn])) * 86400 + DateDiff('s', DateAdd('d', DateDiff('d', DateAdd('h', DateDiff('h', [r].[StartedOn], [r].[FinishedOn]), [r].[StartedOn]), [r].[FinishedOn]), DateAdd('h', DateDiff('h', [r].[StartedOn], [r].[FinishedOn]), [r].[StartedOn])), [r].[FinishedOn])) / 3600 as [TotalHours],
 			[r].[Id]
 		FROM
 			[EventRow] [r]
