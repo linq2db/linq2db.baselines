@@ -25,6 +25,12 @@ VALUES
 
 -- SqlServer.2017.MS SqlServer.2017
 SELECT TOP (2)
+	[r].[InNanoseconds]
+FROM
+	[UnitSpreadRow] [r]
+
+-- SqlServer.2017.MS SqlServer.2017
+SELECT TOP (2)
 	[t1].[Id],
 	[t1].[InDays],
 	[t1].[InMilliseconds],
