@@ -21,12 +21,18 @@ SELECT
 	x."NullableByteValue",
 	x."BoolValue",
 	x."NullableBoolValue",
-	RANK() OVER (PARTITION BY x."CategoryId", x."Name" ORDER BY x."Timestamp"),
-	RANK() OVER (PARTITION BY x."CategoryId", x."Name" ORDER BY x."Value"),
-	RANK() OVER (PARTITION BY x."CategoryId", x."Name" ORDER BY x."Timestamp" DESC),
-	RANK() OVER (PARTITION BY x."CategoryId", x."Name" ORDER BY x."Value" DESC),
-	RANK() OVER (PARTITION BY x."CategoryId", x."Name" ORDER BY x."Timestamp", x."Value"),
-	RANK() OVER (PARTITION BY x."CategoryId", x."Name" ORDER BY x."Timestamp" DESC, x."Value" DESC)
+	RANK() OVER (PARTITION BY CASE
+		WHEN x."IntValue" = 20 THEN 1
+		ELSE 0
+	END ORDER BY x."Id"),
+	RANK() OVER (PARTITION BY x."CategoryId", CASE
+		WHEN x."IntValue" = 20 THEN 1
+		ELSE 0
+	END ORDER BY x."Id"),
+	RANK() OVER (PARTITION BY CASE
+		WHEN x."NullableIntValue" IS NOT NULL THEN 1
+		ELSE 0
+	END ORDER BY x."Id")
 FROM
 	"WindowFunctionTestEntity" x
 ORDER BY
