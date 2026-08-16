@@ -1,9 +1,9 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 SELECT
-	`t1`.`ParentID`,
-	`t1`.`Value1`
+	`тбл`.`ParentID`,
+	`тбл`.`Value1`
 FROM
-	`Parent` `t1`
+	`Parent` `тбл`
 WHERE
-	`t1`.`ParentID` = 3
+	`тбл`.`ParentID` = 3
 
