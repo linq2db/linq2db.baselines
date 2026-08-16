@@ -16,6 +16,13 @@ VALUES
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
+	r.InNanoseconds
+FROM
+	UnitSpreadRow r
+LIMIT 2
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
 	t1.Id,
 	t1.InDays,
 	t1.InMilliseconds,
