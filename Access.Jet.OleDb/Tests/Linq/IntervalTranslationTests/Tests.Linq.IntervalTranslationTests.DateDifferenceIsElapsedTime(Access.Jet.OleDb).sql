@@ -21,7 +21,7 @@ VALUES
 
 -- Access.Jet.OleDb AccessOleDb
 SELECT TOP 2
-	DateDiff('n', [r].[StartedOn], [r].[FinishedOn]) + DateDiff('s', DateAdd('n', DateDiff('n', [r].[StartedOn], [r].[FinishedOn]), [r].[StartedOn]), [r].[FinishedOn]) / 60,
+	DateDiff('n', [r].[StartedOn], [r].[FinishedOn]) + (CDbl(DateDiff('d', DateAdd('n', DateDiff('n', [r].[StartedOn], [r].[FinishedOn]), [r].[StartedOn]), [r].[FinishedOn])) * 86400 + DateDiff('s', DateAdd('d', DateDiff('d', DateAdd('n', DateDiff('n', [r].[StartedOn], [r].[FinishedOn]), [r].[StartedOn]), [r].[FinishedOn]), DateAdd('n', DateDiff('n', [r].[StartedOn], [r].[FinishedOn]), [r].[StartedOn])), [r].[FinishedOn])) / 60,
 	IIF([r].[FinishedOn] >= [r].[StartedOn] AND DateAdd('n', DateDiff('n', [r].[StartedOn], [r].[FinishedOn]), [r].[StartedOn]) > [r].[FinishedOn], DateDiff('n', [r].[StartedOn], [r].[FinishedOn]) - 1, IIF([r].[FinishedOn] < [r].[StartedOn] AND DateAdd('n', DateDiff('n', [r].[StartedOn], [r].[FinishedOn]), [r].[StartedOn]) < [r].[FinishedOn], DateDiff('n', [r].[StartedOn], [r].[FinishedOn]) + 1, DateDiff('n', [r].[StartedOn], [r].[FinishedOn]))) MOD 60
 FROM
 	[EventRow] [r]

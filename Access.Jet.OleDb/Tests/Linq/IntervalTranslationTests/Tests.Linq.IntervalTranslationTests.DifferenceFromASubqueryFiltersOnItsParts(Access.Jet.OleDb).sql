@@ -46,7 +46,7 @@ SELECT
 FROM
 	[EventRow] [x]
 WHERE
-	DateDiff('h', [x].[StartedOn], [x].[FinishedOn]) + DateDiff('s', DateAdd('h', DateDiff('h', [x].[StartedOn], [x].[FinishedOn]), [x].[StartedOn]), [x].[FinishedOn]) / 3600 > 3
+	DateDiff('h', [x].[StartedOn], [x].[FinishedOn]) + (CDbl(DateDiff('d', DateAdd('h', DateDiff('h', [x].[StartedOn], [x].[FinishedOn]), [x].[StartedOn]), [x].[FinishedOn])) * 86400 + DateDiff('s', DateAdd('d', DateDiff('d', DateAdd('h', DateDiff('h', [x].[StartedOn], [x].[FinishedOn]), [x].[StartedOn]), [x].[FinishedOn]), DateAdd('h', DateDiff('h', [x].[StartedOn], [x].[FinishedOn]), [x].[StartedOn])), [x].[FinishedOn])) / 3600 > 3
 
 -- Access.Jet.OleDb AccessOleDb
 SELECT
