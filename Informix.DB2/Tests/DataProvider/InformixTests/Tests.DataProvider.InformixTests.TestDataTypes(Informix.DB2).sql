@@ -8,19 +8,19 @@ SELECT bigintDataType FROM AllTypes WHERE ID = 2
 DECLARE @p BigInt(8) -- Int64
 SET     @p = 1000000
 
-SELECT ID FROM AllTypes WHERE bigintDataType = ?
+SELECT ID FROM AllTypes WHERE bigintDataType = ? ORDER BY ID
 
 -- Informix.DB2 Informix
 DECLARE @p BigInt(8) -- Int64
 SET     @p = 1000000
 
-SELECT ID FROM AllTypes WHERE bigintDataType = ?
+SELECT ID FROM AllTypes WHERE bigintDataType = ? ORDER BY ID
 
 -- Informix.DB2 Informix
 DECLARE @p BigInt(8) -- Int64
 SET     @p = 1000000
 
-SELECT ID FROM AllTypes WHERE bigintDataType = ?
+SELECT ID FROM AllTypes WHERE bigintDataType = ? ORDER BY ID
 
 -- Informix.DB2 Informix
 SELECT int8DataType FROM AllTypes WHERE ID = 1
@@ -32,19 +32,19 @@ SELECT int8DataType FROM AllTypes WHERE ID = 2
 DECLARE @p BigInt(8) -- Int64
 SET     @p = 1000001
 
-SELECT ID FROM AllTypes WHERE int8DataType = ?
+SELECT ID FROM AllTypes WHERE int8DataType = ? ORDER BY ID
 
 -- Informix.DB2 Informix
 DECLARE @p BigInt(8) -- Int64
 SET     @p = 1000001
 
-SELECT ID FROM AllTypes WHERE int8DataType = ?
+SELECT ID FROM AllTypes WHERE int8DataType = ? ORDER BY ID
 
 -- Informix.DB2 Informix
 DECLARE @p BigInt(8) -- Int64
 SET     @p = 1000001
 
-SELECT ID FROM AllTypes WHERE int8DataType = ?
+SELECT ID FROM AllTypes WHERE int8DataType = ? ORDER BY ID
 
 -- Informix.DB2 Informix
 SELECT intDataType FROM AllTypes WHERE ID = 1
@@ -56,19 +56,19 @@ SELECT intDataType FROM AllTypes WHERE ID = 2
 DECLARE @p Integer(4) -- Int32
 SET     @p = 7777777
 
-SELECT ID FROM AllTypes WHERE intDataType = ?
+SELECT ID FROM AllTypes WHERE intDataType = ? ORDER BY ID
 
 -- Informix.DB2 Informix
 DECLARE @p Integer(4) -- Int32
 SET     @p = 7777777
 
-SELECT ID FROM AllTypes WHERE intDataType = ?
+SELECT ID FROM AllTypes WHERE intDataType = ? ORDER BY ID
 
 -- Informix.DB2 Informix
 DECLARE @p Integer(4) -- Int32
 SET     @p = 7777777
 
-SELECT ID FROM AllTypes WHERE intDataType = ?
+SELECT ID FROM AllTypes WHERE intDataType = ? ORDER BY ID
 
 -- Informix.DB2 Informix
 SELECT smallintDataType FROM AllTypes WHERE ID = 1
@@ -80,19 +80,19 @@ SELECT smallintDataType FROM AllTypes WHERE ID = 2
 DECLARE @p SmallInt(2) -- Int16
 SET     @p = 100
 
-SELECT ID FROM AllTypes WHERE smallintDataType = ?
+SELECT ID FROM AllTypes WHERE smallintDataType = ? ORDER BY ID
 
 -- Informix.DB2 Informix
 DECLARE @p SmallInt(2) -- Int16
 SET     @p = 100
 
-SELECT ID FROM AllTypes WHERE smallintDataType = ?
+SELECT ID FROM AllTypes WHERE smallintDataType = ? ORDER BY ID
 
 -- Informix.DB2 Informix
 DECLARE @p SmallInt(2) -- Int16
 SET     @p = 100
 
-SELECT ID FROM AllTypes WHERE smallintDataType = ?
+SELECT ID FROM AllTypes WHERE smallintDataType = ? ORDER BY ID
 
 -- Informix.DB2 Informix
 SELECT decimalDataType FROM AllTypes WHERE ID = 1
@@ -104,19 +104,19 @@ SELECT decimalDataType FROM AllTypes WHERE ID = 2
 DECLARE @p Decimal(16)
 SET     @p = 9999999
 
-SELECT ID FROM AllTypes WHERE decimalDataType = ?
+SELECT ID FROM AllTypes WHERE decimalDataType = ? ORDER BY ID
 
 -- Informix.DB2 Informix
 DECLARE @p Decimal(16)
 SET     @p = 9999999
 
-SELECT ID FROM AllTypes WHERE decimalDataType = ?
+SELECT ID FROM AllTypes WHERE decimalDataType = ? ORDER BY ID
 
 -- Informix.DB2 Informix
 DECLARE @p Decimal(16)
 SET     @p = 9999999
 
-SELECT ID FROM AllTypes WHERE decimalDataType = ?
+SELECT ID FROM AllTypes WHERE decimalDataType = ? ORDER BY ID
 
 -- Informix.DB2 Informix
 SELECT moneyDataType FROM AllTypes WHERE ID = 1
@@ -128,19 +128,19 @@ SELECT moneyDataType FROM AllTypes WHERE ID = 2
 DECLARE @p Decimal(16)
 SET     @p = 8888888.00
 
-SELECT ID FROM AllTypes WHERE moneyDataType = ?
+SELECT ID FROM AllTypes WHERE moneyDataType = ? ORDER BY ID
 
 -- Informix.DB2 Informix
 DECLARE @p Decimal(16)
 SET     @p = 8888888.00
 
-SELECT ID FROM AllTypes WHERE moneyDataType = ?
+SELECT ID FROM AllTypes WHERE moneyDataType = ? ORDER BY ID
 
 -- Informix.DB2 Informix
 DECLARE @p Decimal(16)
 SET     @p = 8888888.00
 
-SELECT ID FROM AllTypes WHERE moneyDataType = ?
+SELECT ID FROM AllTypes WHERE moneyDataType = ? ORDER BY ID
 
 -- Informix.DB2 Informix
 SELECT realDataType FROM AllTypes WHERE ID = 1
@@ -152,19 +152,19 @@ SELECT realDataType FROM AllTypes WHERE ID = 2
 DECLARE @p Real(4) -- Single
 SET     @p = 20.3099995
 
-SELECT ID FROM AllTypes WHERE realDataType = ?
+SELECT ID FROM AllTypes WHERE realDataType = ? ORDER BY ID
 
 -- Informix.DB2 Informix
 DECLARE @p Real(4) -- Single
 SET     @p = 20.3099995
 
-SELECT ID FROM AllTypes WHERE realDataType = ?
+SELECT ID FROM AllTypes WHERE realDataType = ? ORDER BY ID
 
 -- Informix.DB2 Informix
 DECLARE @p Real(4) -- Single
 SET     @p = 20.3099995
 
-SELECT ID FROM AllTypes WHERE realDataType = ?
+SELECT ID FROM AllTypes WHERE realDataType = ? ORDER BY ID
 
 -- Informix.DB2 Informix
 SELECT floatDataType FROM AllTypes WHERE ID = 1
@@ -176,19 +176,19 @@ SELECT floatDataType FROM AllTypes WHERE ID = 2
 DECLARE @p Double(8)
 SET     @p = 16.199999999999999
 
-SELECT ID FROM AllTypes WHERE floatDataType = ?
+SELECT ID FROM AllTypes WHERE floatDataType = ? ORDER BY ID
 
 -- Informix.DB2 Informix
 DECLARE @p Double(8)
 SET     @p = 16.199999999999999
 
-SELECT ID FROM AllTypes WHERE floatDataType = ?
+SELECT ID FROM AllTypes WHERE floatDataType = ? ORDER BY ID
 
 -- Informix.DB2 Informix
 DECLARE @p Double(8)
 SET     @p = 16.199999999999999
 
-SELECT ID FROM AllTypes WHERE floatDataType = ?
+SELECT ID FROM AllTypes WHERE floatDataType = ? ORDER BY ID
 
 -- Informix.DB2 Informix
 SELECT boolDataType FROM AllTypes WHERE ID = 1
@@ -200,19 +200,19 @@ SELECT boolDataType FROM AllTypes WHERE ID = 2
 DECLARE @p Char(1) -- StringFixedLength
 SET     @p = 't'
 
-SELECT ID FROM AllTypes WHERE boolDataType = ?
+SELECT ID FROM AllTypes WHERE boolDataType = ? ORDER BY ID
 
 -- Informix.DB2 Informix
 DECLARE @p Char(1) -- StringFixedLength
 SET     @p = 't'
 
-SELECT ID FROM AllTypes WHERE boolDataType = ?
+SELECT ID FROM AllTypes WHERE boolDataType = ? ORDER BY ID
 
 -- Informix.DB2 Informix
 DECLARE @p Char(1) -- StringFixedLength
 SET     @p = 't'
 
-SELECT ID FROM AllTypes WHERE boolDataType = ?
+SELECT ID FROM AllTypes WHERE boolDataType = ? ORDER BY ID
 
 -- Informix.DB2 Informix
 SELECT charDataType FROM AllTypes WHERE ID = 1
@@ -224,19 +224,19 @@ SELECT charDataType FROM AllTypes WHERE ID = 2
 DECLARE @p Char(1) -- StringFixedLength
 SET     @p = '1'
 
-SELECT ID FROM AllTypes WHERE charDataType = ?
+SELECT ID FROM AllTypes WHERE charDataType = ? ORDER BY ID
 
 -- Informix.DB2 Informix
 DECLARE @p VarChar(255) -- String
 SET     @p = '1'
 
-SELECT ID FROM AllTypes WHERE charDataType = ?
+SELECT ID FROM AllTypes WHERE charDataType = ? ORDER BY ID
 
 -- Informix.DB2 Informix
 DECLARE @p VarChar(1) -- String
 SET     @p = '1'
 
-SELECT ID FROM AllTypes WHERE charDataType = ?
+SELECT ID FROM AllTypes WHERE charDataType = ? ORDER BY ID
 
 -- Informix.DB2 Informix
 SELECT varcharDataType FROM AllTypes WHERE ID = 1
@@ -248,19 +248,19 @@ SELECT varcharDataType FROM AllTypes WHERE ID = 2
 DECLARE @p VarChar(3) -- String
 SET     @p = '234'
 
-SELECT ID FROM AllTypes WHERE varcharDataType = ?
+SELECT ID FROM AllTypes WHERE varcharDataType = ? ORDER BY ID
 
 -- Informix.DB2 Informix
 DECLARE @p VarChar(255) -- String
 SET     @p = '234'
 
-SELECT ID FROM AllTypes WHERE varcharDataType = ?
+SELECT ID FROM AllTypes WHERE varcharDataType = ? ORDER BY ID
 
 -- Informix.DB2 Informix
 DECLARE @p VarChar(3) -- String
 SET     @p = '234'
 
-SELECT ID FROM AllTypes WHERE varcharDataType = ?
+SELECT ID FROM AllTypes WHERE varcharDataType = ? ORDER BY ID
 
 -- Informix.DB2 Informix
 SELECT ncharDataType FROM AllTypes WHERE ID = 1
@@ -272,19 +272,19 @@ SELECT ncharDataType FROM AllTypes WHERE ID = 2
 DECLARE @p Char(5) -- StringFixedLength
 SET     @p = '55645'
 
-SELECT ID FROM AllTypes WHERE ncharDataType = ?
+SELECT ID FROM AllTypes WHERE ncharDataType = ? ORDER BY ID
 
 -- Informix.DB2 Informix
 DECLARE @p VarChar(255) -- String
 SET     @p = '55645'
 
-SELECT ID FROM AllTypes WHERE ncharDataType = ?
+SELECT ID FROM AllTypes WHERE ncharDataType = ? ORDER BY ID
 
 -- Informix.DB2 Informix
 DECLARE @p VarChar(5) -- String
 SET     @p = '55645'
 
-SELECT ID FROM AllTypes WHERE ncharDataType = ?
+SELECT ID FROM AllTypes WHERE ncharDataType = ? ORDER BY ID
 
 -- Informix.DB2 Informix
 SELECT nvarcharDataType FROM AllTypes WHERE ID = 1
@@ -296,19 +296,19 @@ SELECT nvarcharDataType FROM AllTypes WHERE ID = 2
 DECLARE @p VarChar(4) -- String
 SET     @p = '6687'
 
-SELECT ID FROM AllTypes WHERE nvarcharDataType = ?
+SELECT ID FROM AllTypes WHERE nvarcharDataType = ? ORDER BY ID
 
 -- Informix.DB2 Informix
 DECLARE @p VarChar(255) -- String
 SET     @p = '6687'
 
-SELECT ID FROM AllTypes WHERE nvarcharDataType = ?
+SELECT ID FROM AllTypes WHERE nvarcharDataType = ? ORDER BY ID
 
 -- Informix.DB2 Informix
 DECLARE @p VarChar(4) -- String
 SET     @p = '6687'
 
-SELECT ID FROM AllTypes WHERE nvarcharDataType = ?
+SELECT ID FROM AllTypes WHERE nvarcharDataType = ? ORDER BY ID
 
 -- Informix.DB2 Informix
 SELECT lvarcharDataType FROM AllTypes WHERE ID = 1
@@ -320,19 +320,19 @@ SELECT lvarcharDataType FROM AllTypes WHERE ID = 2
 DECLARE @p VarChar(5) -- String
 SET     @p = 'AAAAA'
 
-SELECT ID FROM AllTypes WHERE lvarcharDataType = ?
+SELECT ID FROM AllTypes WHERE lvarcharDataType = ? ORDER BY ID
 
 -- Informix.DB2 Informix
 DECLARE @p VarChar(255) -- String
 SET     @p = 'AAAAA'
 
-SELECT ID FROM AllTypes WHERE lvarcharDataType = ?
+SELECT ID FROM AllTypes WHERE lvarcharDataType = ? ORDER BY ID
 
 -- Informix.DB2 Informix
 DECLARE @p VarChar(5) -- String
 SET     @p = 'AAAAA'
 
-SELECT ID FROM AllTypes WHERE lvarcharDataType = ?
+SELECT ID FROM AllTypes WHERE lvarcharDataType = ? ORDER BY ID
 
 -- Informix.DB2 Informix
 SELECT dateDataType FROM AllTypes WHERE ID = 1
@@ -344,19 +344,19 @@ SELECT dateDataType FROM AllTypes WHERE ID = 2
 DECLARE @p Date(16)
 SET     @p = TO_DATE('2012-12-12', '%Y-%m-%d')
 
-SELECT ID FROM AllTypes WHERE dateDataType = ?
+SELECT ID FROM AllTypes WHERE dateDataType = ? ORDER BY ID
 
 -- Informix.DB2 Informix
 DECLARE @p Timestamp(16) -- DateTime
 SET     @p = TO_DATE('2012-12-12', '%Y-%m-%d')
 
-SELECT ID FROM AllTypes WHERE dateDataType = ?
+SELECT ID FROM AllTypes WHERE dateDataType = ? ORDER BY ID
 
 -- Informix.DB2 Informix
 DECLARE @p Timestamp(16) -- DateTime
 SET     @p = TO_DATE('2012-12-12', '%Y-%m-%d')
 
-SELECT ID FROM AllTypes WHERE dateDataType = ?
+SELECT ID FROM AllTypes WHERE dateDataType = ? ORDER BY ID
 
 -- Informix.DB2 Informix
 SELECT datetimeDataType FROM AllTypes WHERE ID = 1
@@ -368,19 +368,19 @@ SELECT datetimeDataType FROM AllTypes WHERE ID = 2
 DECLARE @p Timestamp(16) -- DateTime
 SET     @p = TO_DATE('2012-12-12 12:12:12', '%Y-%m-%d %H:%M:%S')
 
-SELECT ID FROM AllTypes WHERE datetimeDataType = ?
+SELECT ID FROM AllTypes WHERE datetimeDataType = ? ORDER BY ID
 
 -- Informix.DB2 Informix
 DECLARE @p Timestamp(16) -- DateTime
 SET     @p = TO_DATE('2012-12-12 12:12:12', '%Y-%m-%d %H:%M:%S')
 
-SELECT ID FROM AllTypes WHERE datetimeDataType = ?
+SELECT ID FROM AllTypes WHERE datetimeDataType = ? ORDER BY ID
 
 -- Informix.DB2 Informix
 DECLARE @p Timestamp(16) -- DateTime
 SET     @p = TO_DATE('2012-12-12 12:12:12', '%Y-%m-%d %H:%M:%S')
 
-SELECT ID FROM AllTypes WHERE datetimeDataType = ?
+SELECT ID FROM AllTypes WHERE datetimeDataType = ? ORDER BY ID
 
 -- Informix.DB2 Informix
 SELECT textDataType FROM AllTypes WHERE ID = 1
