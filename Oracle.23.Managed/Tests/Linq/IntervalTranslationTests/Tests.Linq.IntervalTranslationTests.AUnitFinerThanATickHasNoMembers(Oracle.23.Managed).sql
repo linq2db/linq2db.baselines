@@ -25,6 +25,13 @@ VALUES
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 SELECT
+	r."InNanoseconds"
+FROM
+	"UnitSpreadRow" r
+FETCH NEXT 2 ROWS ONLY
+
+-- Oracle.23.Managed Oracle.Managed Oracle12
+SELECT
 	t1."Id",
 	t1."InDays",
 	t1."InMilliseconds",
