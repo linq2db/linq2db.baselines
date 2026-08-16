@@ -25,6 +25,12 @@ VALUES
 
 -- Sybase.Managed Sybase
 SELECT TOP 2
+	[r].[InNanoseconds]
+FROM
+	[UnitSpreadRow] [r]
+
+-- Sybase.Managed Sybase
+SELECT TOP 2
 	[t1].[Id],
 	[t1].[InDays],
 	[t1].[InMilliseconds],
