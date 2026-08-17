@@ -1,6 +1,6 @@
 ﻿-- Oracle.11.Managed Oracle11
 SELECT
-	RTRIM(t."NVarCharColumn" || '...++', '.+')
+	RTRIM(t."NVarCharColumn" || N'...++', '.+')
 FROM
 	"StringTrimTable" t
 
