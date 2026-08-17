@@ -46,7 +46,7 @@ FROM
 	`Products` `e`,
 	`Products` `pd2`
 WHERE
-	NOT `e`.`IsDeleted` AND
+	NOT (`e`.`IsDeleted` OR `pd2`.`IsDeleted`) AND
 	(
 		SELECT
 			COUNT(*)
@@ -55,7 +55,6 @@ WHERE
 		WHERE
 			NOT `e_1`.`IsDeleted` AND `e`.`ProductID` = `e_1`.`ProductID`
 	) > 0 AND
-	NOT `pd2`.`IsDeleted` AND
 	(
 		SELECT
 			COUNT(*)
