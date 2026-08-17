@@ -86,5 +86,5 @@ SELECT :p FROM sys.dual
 DECLARE @p Varchar2(1) -- String
 SET     @p = '1'
 
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
 
