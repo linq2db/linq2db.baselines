@@ -27,8 +27,7 @@ WHERE
 		WHERE
 			[c_1].[CustomerID] = [a_Customer].[CustomerID] AND
 			[c_1].[CompanyName] NOT LIKE N'A%' ESCAPE N'~'
-	) OR
-	NOT EXISTS(
+	) OR NOT EXISTS(
 		SELECT
 			*
 		FROM
