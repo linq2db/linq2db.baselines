@@ -516,8 +516,7 @@ SELECT
 FROM
 	[Issue5274Entity] [e]
 WHERE
-	[e].[EntityType] = 'Type01' OR [e].[EntityType] = 'Type10' OR
-	[e].[EntityType] = 'Type17'
+	[e].[EntityType] = 'Type01' OR [e].[EntityType] = 'Type10' OR [e].[EntityType] = 'Type17'
 ORDER BY
 	[e].[Name]
 
