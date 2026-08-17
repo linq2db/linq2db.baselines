@@ -11,24 +11,6 @@ SELECT XMLTYPE('<xml/>') FROM sys.dual
 DECLARE @p XmlType(6) -- String
 SET     @p = '<xml/>'
 
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
-
--- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @p XmlType(7) -- String
-SET     @p = '<xml />'
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
-
--- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @p XmlType(7) -- String
-SET     @p = '<xml />'
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
-
--- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @p XmlType(7) -- String
-SET     @p = '<xml />'
-
 SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
@@ -36,4 +18,22 @@ DECLARE @p XmlType(7) -- String
 SET     @p = '<xml />'
 
 SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+
+-- Oracle.23.Managed Oracle.Managed Oracle12
+DECLARE @p XmlType(7) -- String
+SET     @p = '<xml />'
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+
+-- Oracle.23.Managed Oracle.Managed Oracle12
+DECLARE @p XmlType(7) -- String
+SET     @p = '<xml />'
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+
+-- Oracle.23.Managed Oracle.Managed Oracle12
+DECLARE @p XmlType(7) -- String
+SET     @p = '<xml />'
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
 
