@@ -8,19 +8,19 @@ SELECT :p FROM sys.dual
 DECLARE @p Char -- AnsiStringFixedLength
 SET     @p = '1'
 
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                 
 
 -- Oracle.11.Managed Oracle11
 DECLARE @p Int32
 SET     @p = 1
 
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                 
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                  
 
 -- Oracle.11.Managed Oracle11
 DECLARE @p Varchar2(255) -- String
 SET     @p = '1'
 
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                  
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                    
 
 -- Oracle.11.Managed Oracle11
 DECLARE @p Int32
