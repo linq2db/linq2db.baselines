@@ -96,8 +96,7 @@ WHERE
 			BooleanTable r_1
 		WHERE
 			r_1.Value4 IS NULL
-	) OR
-	r.Value5 IS NOT NULL AND r.Value5 IN (
+	) OR r.Value5 IS NOT NULL AND r.Value5 IN (
 		SELECT
 			r_2.Value4
 		FROM
