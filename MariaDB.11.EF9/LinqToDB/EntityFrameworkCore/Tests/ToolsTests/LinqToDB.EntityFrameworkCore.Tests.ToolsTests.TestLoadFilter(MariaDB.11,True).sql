@@ -60,7 +60,7 @@ FROM
 				INNER JOIN `Orders` `e` ON `d`.`OrderID` = `e`.`OrderID`
 				LEFT JOIN `Suppliers` `a_Supplier` ON `e_1`.`SupplierID` = `a_Supplier`.`SupplierID` AND NOT `a_Supplier`.`IsDeleted`
 		WHERE
-			NOT `e_1`.`IsDeleted` AND NOT `e`.`IsDeleted` AND NOT `d`.`IsDeleted`
+			NOT (`e_1`.`IsDeleted` OR `e`.`IsDeleted` OR `d`.`IsDeleted`)
 	) `m_1`
 		INNER JOIN `Products` `d_1` ON `m_1`.`SupplierId` = `d_1`.`SupplierID`
 WHERE
@@ -94,7 +94,7 @@ FROM
 		INNER JOIN `Orders` `e` ON `d`.`OrderID` = `e`.`OrderID`
 		LEFT JOIN `Suppliers` `a_Supplier` ON `m_1`.`SupplierID` = `a_Supplier`.`SupplierID` AND NOT `a_Supplier`.`IsDeleted`
 WHERE
-	NOT `m_1`.`IsDeleted` AND NOT `e`.`IsDeleted` AND NOT `d`.`IsDeleted`
+	NOT (`m_1`.`IsDeleted` OR `e`.`IsDeleted` OR `d`.`IsDeleted`)
 
 
 
