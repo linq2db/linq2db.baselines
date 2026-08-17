@@ -1,14 +1,14 @@
 ﻿-- PostgreSQL.15 PostgreSQL12
-CREATE SEQUENCE issue5628_code_seq_121
+CREATE SEQUENCE issue5628_code_seq_116
 
 -- PostgreSQL.15 PostgreSQL12
-CREATE SEQUENCE issue5628_item_id_seq_121
+CREATE SEQUENCE issue5628_item_id_seq_116
 
 -- PostgreSQL.15 PostgreSQL12
-CREATE TABLE issue5628_two_defaults_pk_121 (
-	code integer DEFAULT nextval('issue5628_code_seq_121'::regclass) NOT NULL,
-	item_id integer DEFAULT nextval('issue5628_item_id_seq_121'::regclass) NOT NULL,
-	CONSTRAINT issue5628_two_defaults_pk_121_pkey PRIMARY KEY (item_id)
+CREATE TABLE issue5628_two_defaults_pk_116 (
+	code integer DEFAULT nextval('issue5628_code_seq_116'::regclass) NOT NULL,
+	item_id integer DEFAULT nextval('issue5628_item_id_seq_116'::regclass) NOT NULL,
+	CONSTRAINT issue5628_two_defaults_pk_116_pkey PRIMARY KEY (item_id)
 )
 
 -- PostgreSQL.15 PostgreSQL12
@@ -289,21 +289,21 @@ SELECT r.SPECIFIC_CATALOG, r.SPECIFIC_SCHEMA, r.SPECIFIC_NAME, r.DATA_TYPE
 SELECT * FROM testdata.public."GetParentByID"(NULL::integer)
 
 -- PostgreSQL.15 PostgreSQL12
-SELECT * FROM testdata.public."TestTableFunction"(NULL::integer)
-
--- PostgreSQL.15 PostgreSQL12
 SELECT * FROM testdata.public."TestTableFunction1"(NULL::integer,NULL::integer)
 
 -- PostgreSQL.15 PostgreSQL12
 SELECT * FROM testdata.public."TestTableFunctionSchema"()
 
+-- PostgreSQL.15 PostgreSQL12
+SELECT * FROM testdata.public."TestTableFunction"(NULL::integer)
+
 RollbackTransaction
 -- PostgreSQL.15 PostgreSQL12
-DROP TABLE IF EXISTS issue5628_two_defaults_pk_121
+DROP TABLE IF EXISTS issue5628_two_defaults_pk_116
 
 -- PostgreSQL.15 PostgreSQL12
-DROP SEQUENCE IF EXISTS issue5628_code_seq_121
+DROP SEQUENCE IF EXISTS issue5628_code_seq_116
 
 -- PostgreSQL.15 PostgreSQL12
-DROP SEQUENCE IF EXISTS issue5628_item_id_seq_121
+DROP SEQUENCE IF EXISTS issue5628_item_id_seq_116
 
