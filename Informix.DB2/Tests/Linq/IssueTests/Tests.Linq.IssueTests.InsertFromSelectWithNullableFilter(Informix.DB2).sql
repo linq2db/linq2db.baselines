@@ -8,7 +8,7 @@ INSERT INTO InsertIssueTest
 SELECT
 	t2.ID,
 	123,
-	t2.ID
+	t2.ID::Int
 FROM
 	(
 		SELECT DISTINCT
@@ -33,7 +33,7 @@ INSERT INTO InsertIssueTest
 SELECT
 	t2.ID,
 	123,
-	t2.ID
+	t2.ID::Int
 FROM
 	(
 		SELECT DISTINCT
