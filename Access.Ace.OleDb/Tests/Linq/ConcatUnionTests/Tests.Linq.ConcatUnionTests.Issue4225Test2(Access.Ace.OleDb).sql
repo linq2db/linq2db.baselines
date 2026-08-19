@@ -15,7 +15,7 @@ SELECT
 	IIF(False, 0, NULL),
 	IIF(False, '', NULL),
 	IIF(False, '', NULL),
-	IIF(False, 'M', NULL),
+	IIF(False, '', NULL),
 	[x_1].[PersonID],
 	[x_1].[Diagnosis]
 FROM
