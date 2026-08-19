@@ -1,0 +1,21 @@
+﻿-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+SELECT
+	t."GroupId",
+	COUNT(*),
+	COUNT(*) FILTER (WHERE (t."DataValue"::decimal % 2)::decimal = 0),
+	COUNT(DISTINCT t."DataValue")
+FROM
+	"AggregationData" t
+WHERE
+	t."DataValue" IS NOT NULL
+GROUP BY
+	t."GroupId"
+
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+SELECT
+	t1."Id",
+	t1."GroupId",
+	t1."DataValue"
+FROM
+	"AggregationData" t1
+
