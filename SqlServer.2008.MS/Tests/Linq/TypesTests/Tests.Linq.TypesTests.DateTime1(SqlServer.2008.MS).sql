@@ -1,5 +1,5 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
-DECLARE @Date DateTime2
+DECLARE @Date DateTime
 SET     @Date = CAST('2009-09-20T00:00:00.0000000' AS DATETIME2)
 
 SELECT
