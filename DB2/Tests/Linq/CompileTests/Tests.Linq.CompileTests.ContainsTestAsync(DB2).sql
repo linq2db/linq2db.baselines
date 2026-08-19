@@ -1,10 +1,10 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-DECLARE @p Integer(4) -- Int32
-SET     @p = 1
+DECLARE @ParentID Integer(4) -- Int32
+SET     @ParentID = 1
 
 SELECT
 	CASE
-		WHEN CAST(@p AS Int) IN (
+		WHEN CAST(@ParentID AS Int) IN (
 			SELECT
 				"c_1"."ParentID"
 			FROM
@@ -16,12 +16,12 @@ SELECT
 FROM SYSIBM.SYSDUMMY1
 
 -- DB2 DB2.LUW DB2LUW
-DECLARE @p Integer(4) -- Int32
-SET     @p = -1
+DECLARE @ParentID Integer(4) -- Int32
+SET     @ParentID = -1
 
 SELECT
 	CASE
-		WHEN CAST(@p AS Int) IN (
+		WHEN CAST(@ParentID AS Int) IN (
 			SELECT
 				"c_1"."ParentID"
 			FROM
