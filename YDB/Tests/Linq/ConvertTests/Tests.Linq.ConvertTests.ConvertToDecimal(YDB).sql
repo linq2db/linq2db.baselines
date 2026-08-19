@@ -4,5 +4,5 @@ SELECT
 FROM
 	LinqDataTypes p
 WHERE
-	Unwrap(CAST(p.MoneyValue AS Decimal(22,9))) > Decimal('0', 22, 9)
+	Unwrap(CAST(p.MoneyValue AS Decimal(22,9))) > Decimal('0', 6, 2)
 
