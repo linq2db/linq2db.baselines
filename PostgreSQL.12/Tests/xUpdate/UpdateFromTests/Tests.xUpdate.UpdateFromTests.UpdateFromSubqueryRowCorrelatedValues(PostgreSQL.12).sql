@@ -1,0 +1,46 @@
+﻿-- PostgreSQL.12 PostgreSQL12
+DELETE FROM
+	"Person" t1
+WHERE
+	t1."PersonID" > 4
+
+-- PostgreSQL.12 PostgreSQL12
+UPDATE
+	"UpdateSubquerySourceTable"
+SET
+	("FirstName", "LastName") = (
+		SELECT
+			CASE
+				WHEN "canChange"."Id" IS NOT NULL THEN "canChange"."FirstName"
+				ELSE "UpdateSubquerySourceTable"."FirstName"
+			END,
+			CASE
+				WHEN "canChange"."Id" IS NOT NULL THEN "canChange"."LastName"
+				ELSE "UpdateSubquerySourceTable"."LastName"
+			END
+		FROM
+			(
+				SELECT
+					1 as c1
+			) t1
+				LEFT JOIN "UpdateSubquerySourceTable" "canChange" ON "canChange"."Id" = "UpdateSubquerySourceTable"."Id" + 1
+	)
+WHERE
+	"UpdateSubquerySourceTable"."Id" = 1
+
+-- PostgreSQL.12 PostgreSQL12
+SELECT
+	t1."Id",
+	t1."FirstName",
+	t1."LastName"
+FROM
+	"UpdateSubquerySourceTable" t1
+ORDER BY
+	t1."Id"
+
+-- PostgreSQL.12 PostgreSQL12
+DELETE FROM
+	"Person" t1
+WHERE
+	t1."PersonID" > 4
+
