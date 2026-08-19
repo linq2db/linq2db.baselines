@@ -8,7 +8,7 @@ INSERT INTO [InsertIssueTest]
 SELECT
 	[t2].[ID],
 	123,
-	[t2].[ID]
+	CAST([t2].[ID] AS INTEGER)
 FROM
 	(
 		SELECT DISTINCT
@@ -33,7 +33,7 @@ INSERT INTO [InsertIssueTest]
 SELECT
 	[t2].[ID],
 	123,
-	[t2].[ID]
+	CAST([t2].[ID] AS INTEGER)
 FROM
 	(
 		SELECT DISTINCT
