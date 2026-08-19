@@ -1,0 +1,6 @@
+﻿-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+SELECT
+	STRING_AGG(t1."Value", '' ORDER BY t1."PK")
+FROM
+	"ConcatGroupedEntity" t1
+
