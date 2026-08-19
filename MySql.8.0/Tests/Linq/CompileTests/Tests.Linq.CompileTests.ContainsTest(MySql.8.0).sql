@@ -1,10 +1,10 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @p Int32
-SET     @p = 1
+DECLARE @ParentID Int32
+SET     @ParentID = 1
 
 SELECT
 	CASE
-		WHEN @p IN (
+		WHEN @ParentID IN (
 			SELECT
 				`c_1`.`ParentID`
 			FROM
@@ -15,12 +15,12 @@ SELECT
 	END as `c1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @p Int32
-SET     @p = -1
+DECLARE @ParentID Int32
+SET     @ParentID = -1
 
 SELECT
 	CASE
-		WHEN @p IN (
+		WHEN @ParentID IN (
 			SELECT
 				`c_1`.`ParentID`
 			FROM
