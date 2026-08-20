@@ -8,7 +8,7 @@ INSERT INTO InsertIssueTest
 SELECT
 	t2.ID as Pk,
 	123s as ID,
-	Unwrap(CAST(t2.ID AS Int32)) as intDataType
+	t2.ID as intDataType
 FROM
 	(
 		SELECT DISTINCT
@@ -33,7 +33,7 @@ INSERT INTO InsertIssueTest
 SELECT
 	t2.ID as Pk,
 	123s as ID,
-	Unwrap(CAST(t2.ID AS Int32)) as intDataType
+	t2.ID as intDataType
 FROM
 	(
 		SELECT DISTINCT
