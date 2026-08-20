@@ -1,5 +1,5 @@
 ﻿-- SqlServer.2014
-DECLARE @Date DateTime
+DECLARE @Date DateTime2
 SET     @Date = DATETIME2FROMPARTS(2009, 9, 20, 0, 0, 0, 0, 7)
 
 SELECT
