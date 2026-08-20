@@ -1,6 +1,6 @@
 ﻿-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 SELECT
-	(EXTRACT(EPOCH FROM ((t."DateTimeValue" + 100 * Interval '1 Hour')::timestamp - t."DateTimeValue"::timestamp)) / 86400)::Float
+	Extract(epoch From (t."DateTimeValue" + 100 * Interval '1 Hour' - t."DateTimeValue")) / 86400
 FROM
 	"LinqDataTypes" t
 
