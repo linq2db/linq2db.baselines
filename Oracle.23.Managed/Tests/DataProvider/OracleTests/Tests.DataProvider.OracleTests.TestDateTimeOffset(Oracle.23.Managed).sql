@@ -26,11 +26,11 @@ SELECT "datetimeoffsetDataType" FROM "AllTypes" WHERE ID = 1
 DECLARE @p TimeStampTZ -- DateTimeOffset
 SET     @p = 12/12/2012 12:12:12.012 +05:00
 
-SELECT :p FROM sys.dual                              
+SELECT :p FROM sys.dual                                                             
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @p TimeStampTZ -- DateTimeOffset
 SET     @p = 12/12/2012 12:12:12.012 +05:00
 
-SELECT :p FROM sys.dual                               
+SELECT :p FROM sys.dual                                                              
 
