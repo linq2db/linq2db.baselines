@@ -1,17 +1,15 @@
 ﻿-- SqlCe
 SELECT
-	CASE
-		WHEN [t1].[EnumNullable] IS NOT NULL THEN [t1].[EnumNullable]
-		ELSE [t1].[Enum]
-	END
+	[t1].[EnumNullable],
+	[t1].[EnumNullable] as [Converted_1],
+	[t1].[Enum]
 FROM
 	[ValueConversion] [t1]
 UNION ALL
 SELECT
-	CASE
-		WHEN [t1_1].[EnumNullable] IS NOT NULL THEN [t1_1].[EnumNullable]
-		ELSE [t1_1].[Enum]
-	END
+	[t1_1].[EnumNullable],
+	[t1_1].[EnumNullable] as [Converted_1],
+	[t1_1].[Enum]
 FROM
 	[ValueConversion] [t1_1]
 
