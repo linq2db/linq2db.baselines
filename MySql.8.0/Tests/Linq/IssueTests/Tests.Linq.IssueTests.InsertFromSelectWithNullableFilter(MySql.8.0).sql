@@ -8,7 +8,7 @@ INSERT INTO `InsertIssueTest`
 SELECT
 	`t2`.`ID`,
 	123,
-	CAST(`t2`.`ID` AS SIGNED)
+	`t2`.`ID`
 FROM
 	(
 		SELECT DISTINCT
@@ -33,7 +33,7 @@ INSERT INTO `InsertIssueTest`
 SELECT
 	`t2`.`ID`,
 	123,
-	CAST(`t2`.`ID` AS SIGNED)
+	`t2`.`ID`
 FROM
 	(
 		SELECT DISTINCT
