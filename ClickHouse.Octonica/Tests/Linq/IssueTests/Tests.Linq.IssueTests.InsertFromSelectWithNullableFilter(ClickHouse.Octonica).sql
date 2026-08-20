@@ -8,7 +8,7 @@ INSERT INTO InsertIssueTest
 SELECT
 	t2.ID,
 	toInt16(123),
-	toInt32(t2.ID)
+	t2.ID
 FROM
 	(
 		SELECT DISTINCT
@@ -30,7 +30,7 @@ INSERT INTO InsertIssueTest
 SELECT
 	t2.ID,
 	toInt16(123),
-	toInt32(t2.ID)
+	t2.ID
 FROM
 	(
 		SELECT DISTINCT
