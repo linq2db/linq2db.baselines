@@ -1,0 +1,15 @@
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+SELECT
+	CAST(NULL AS SIGNED),
+	`x`.`Id`,
+	`x`.`Flag`
+FROM
+	`ConvertedFlagRow` `x`
+UNION ALL
+SELECT
+	CAST(1 AS SIGNED),
+	`x_1`.`Id`,
+	CAST(NULL AS CHAR)
+FROM
+	`ConvertedFlagRow` `x_1`
+
