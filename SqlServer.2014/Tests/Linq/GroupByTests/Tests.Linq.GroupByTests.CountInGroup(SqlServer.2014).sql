@@ -2,14 +2,14 @@
 SELECT
 	[t].[GroupId],
 	COUNT(*),
-	COUNT(IIF((Convert(Int, [t].[DataValue]) % 2) = 0, 1, NULL)),
+	COUNT(IIF(Convert(Int, [t].[DataValue]) % 2 = 0, 1, NULL)),
 	COUNT(*),
 	COUNT(DISTINCT [t].[DataValue]),
-	COUNT(DISTINCT IIF((Convert(Int, [t].[DataValue]) % 2) = 0, [t].[DataValue], NULL)),
-	COUNT(DISTINCT IIF((Convert(Int, [t].[DataValue]) % 2) = 0, [t].[DataValue], NULL)),
-	COUNT(DISTINCT IIF((Convert(Int, [t].[DataValue]) % 2) = 0, [t].[DataValue], NULL)),
-	COUNT(IIF((Convert(Int, [t].[DataValue]) % 2) = 0, 1, NULL)),
-	COUNT(DISTINCT IIF((Convert(Int, [t].[DataValue]) % 2) = 0, [t].[DataValue], NULL)),
+	COUNT(DISTINCT IIF(Convert(Int, [t].[DataValue]) % 2 = 0, [t].[DataValue], NULL)),
+	COUNT(DISTINCT IIF(Convert(Int, [t].[DataValue]) % 2 = 0, [t].[DataValue], NULL)),
+	COUNT(DISTINCT IIF(Convert(Int, [t].[DataValue]) % 2 = 0, [t].[DataValue], NULL)),
+	COUNT(IIF(Convert(Int, [t].[DataValue]) % 2 = 0, 1, NULL)),
+	COUNT(DISTINCT IIF(Convert(Int, [t].[DataValue]) % 2 = 0, [t].[DataValue], NULL)),
 	COUNT(DISTINCT [t].[DataValue])
 FROM
 	[AggregationData] [t]

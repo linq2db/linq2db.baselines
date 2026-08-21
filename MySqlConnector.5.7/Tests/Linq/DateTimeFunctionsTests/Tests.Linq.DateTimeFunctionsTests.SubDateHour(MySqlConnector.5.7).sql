@@ -1,6 +1,6 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 SELECT
-	CAST(TIMESTAMPDIFF(hour, `t`.`DateTimeValue`, Date_Add(`t`.`DateTimeValue`, Interval 100 Hour)) AS DECIMAL(29, 10))
+	CAST(TimestampDiff(Microsecond, `t`.`DateTimeValue`, Date_Add(`t`.`DateTimeValue`, Interval 100 Hour)) * 10 AS DECIMAL(29, 10)) / 36000000000
 FROM
 	`LinqDataTypes` `t`
 

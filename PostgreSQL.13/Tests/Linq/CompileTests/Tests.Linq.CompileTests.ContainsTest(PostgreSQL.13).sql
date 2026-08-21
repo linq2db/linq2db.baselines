@@ -1,10 +1,10 @@
 ﻿-- PostgreSQL.13 PostgreSQL12
-DECLARE @p Integer -- Int32
-SET     @p = 1
+DECLARE @ParentID Integer -- Int32
+SET     @ParentID = 1
 
 SELECT
 	CASE
-		WHEN :p IN (
+		WHEN :ParentID IN (
 			SELECT
 				c_1."ParentID"
 			FROM
@@ -15,12 +15,12 @@ SELECT
 	END
 
 -- PostgreSQL.13 PostgreSQL12
-DECLARE @p Integer -- Int32
-SET     @p = -1
+DECLARE @ParentID Integer -- Int32
+SET     @ParentID = -1
 
 SELECT
 	CASE
-		WHEN :p IN (
+		WHEN :ParentID IN (
 			SELECT
 				c_1."ParentID"
 			FROM

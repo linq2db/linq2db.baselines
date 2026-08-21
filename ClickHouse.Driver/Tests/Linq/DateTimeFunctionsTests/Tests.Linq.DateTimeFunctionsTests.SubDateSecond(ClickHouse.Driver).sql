@@ -1,6 +1,6 @@
 ﻿-- ClickHouse.Driver ClickHouse
 SELECT
-	toFloat64(date_diff('second', t.DateTimeValue, addMinutes(t.DateTimeValue, toFloat64(100))))
+	toFloat64(intDiv(toUnixTimestamp64Nano(addMinutes(t.DateTimeValue, toFloat64(100))) - toUnixTimestamp64Nano(t.DateTimeValue), toInt64(100))) / toFloat64(10000000)
 FROM
 	LinqDataTypes t
 

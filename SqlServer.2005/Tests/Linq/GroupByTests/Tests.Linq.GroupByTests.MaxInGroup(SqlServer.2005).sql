@@ -4,20 +4,20 @@ SELECT
 	MAX([g_1].[DataValue]),
 	MAX([g_1].[DataValue]),
 	MAX(CASE
-		WHEN (Convert(Int, [g_1].[DataValue]) % 2) = 0 THEN [g_1].[DataValue]
+		WHEN Convert(Int, [g_1].[DataValue]) % 2 = 0 THEN [g_1].[DataValue]
 		ELSE NULL
 	END),
 	MAX(CASE
-		WHEN (Convert(Int, [g_1].[DataValue]) % 2) = 0 THEN [g_1].[DataValue]
+		WHEN Convert(Int, [g_1].[DataValue]) % 2 = 0 THEN [g_1].[DataValue]
 		ELSE NULL
 	END),
 	MAX(DISTINCT [g_1].[DataValue]),
 	MAX(DISTINCT CASE
-		WHEN (Convert(Int, [g_1].[DataValue]) % 2) = 0 THEN [g_1].[DataValue]
+		WHEN Convert(Int, [g_1].[DataValue]) % 2 = 0 THEN [g_1].[DataValue]
 		ELSE NULL
 	END),
 	MAX(DISTINCT CASE
-		WHEN (Convert(Int, [g_1].[DataValue]) % 2) = 0 THEN [g_1].[DataValue]
+		WHEN Convert(Int, [g_1].[DataValue]) % 2 = 0 THEN [g_1].[DataValue]
 		ELSE NULL
 	END)
 FROM

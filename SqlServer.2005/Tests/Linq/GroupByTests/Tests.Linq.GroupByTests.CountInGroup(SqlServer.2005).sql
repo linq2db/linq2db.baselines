@@ -3,29 +3,29 @@ SELECT
 	[t].[GroupId],
 	COUNT(*),
 	COUNT(CASE
-		WHEN (Convert(Int, [t].[DataValue]) % 2) = 0 THEN 1
+		WHEN Convert(Int, [t].[DataValue]) % 2 = 0 THEN 1
 		ELSE NULL
 	END),
 	COUNT(*),
 	COUNT(DISTINCT [t].[DataValue]),
 	COUNT(DISTINCT CASE
-		WHEN (Convert(Int, [t].[DataValue]) % 2) = 0 THEN [t].[DataValue]
+		WHEN Convert(Int, [t].[DataValue]) % 2 = 0 THEN [t].[DataValue]
 		ELSE NULL
 	END),
 	COUNT(DISTINCT CASE
-		WHEN (Convert(Int, [t].[DataValue]) % 2) = 0 THEN [t].[DataValue]
+		WHEN Convert(Int, [t].[DataValue]) % 2 = 0 THEN [t].[DataValue]
 		ELSE NULL
 	END),
 	COUNT(DISTINCT CASE
-		WHEN (Convert(Int, [t].[DataValue]) % 2) = 0 THEN [t].[DataValue]
+		WHEN Convert(Int, [t].[DataValue]) % 2 = 0 THEN [t].[DataValue]
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN (Convert(Int, [t].[DataValue]) % 2) = 0 THEN 1
+		WHEN Convert(Int, [t].[DataValue]) % 2 = 0 THEN 1
 		ELSE NULL
 	END),
 	COUNT(DISTINCT CASE
-		WHEN (Convert(Int, [t].[DataValue]) % 2) = 0 THEN [t].[DataValue]
+		WHEN Convert(Int, [t].[DataValue]) % 2 = 0 THEN [t].[DataValue]
 		ELSE NULL
 	END),
 	COUNT(DISTINCT [t].[DataValue])

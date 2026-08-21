@@ -3,7 +3,7 @@ SELECT
 	[t].[GroupId],
 	COUNT(*),
 	COUNT(CASE
-		WHEN (Convert(Int, [t].[DataValue]) % 2) = 0 THEN 1
+		WHEN Convert(Int, [t].[DataValue]) % 2 = 0 THEN 1
 		ELSE NULL
 	END),
 	COUNT(DISTINCT [t].[DataValue])

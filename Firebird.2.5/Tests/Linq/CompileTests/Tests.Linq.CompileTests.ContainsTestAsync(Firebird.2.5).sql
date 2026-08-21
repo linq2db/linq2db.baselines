@@ -1,6 +1,6 @@
 ﻿-- Firebird.2.5 Firebird
-DECLARE @p Integer -- Int32
-SET     @p = 1
+DECLARE @ParentID Integer -- Int32
+SET     @ParentID = 1
 
 SELECT
 	CASE
@@ -10,7 +10,7 @@ SELECT
 			FROM
 				"Child" "c_1"
 			WHERE
-				CAST(@p AS Int) = "c_1"."ParentID"
+				CAST(@ParentID AS Int) = "c_1"."ParentID"
 		)
 			THEN '1'
 		ELSE '0'
@@ -18,8 +18,8 @@ SELECT
 FROM rdb$database
 
 -- Firebird.2.5 Firebird
-DECLARE @p Integer -- Int32
-SET     @p = -1
+DECLARE @ParentID Integer -- Int32
+SET     @ParentID = -1
 
 SELECT
 	CASE
@@ -29,7 +29,7 @@ SELECT
 			FROM
 				"Child" "c_1"
 			WHERE
-				CAST(@p AS Int) = "c_1"."ParentID"
+				CAST(@ParentID AS Int) = "c_1"."ParentID"
 		)
 			THEN '1'
 		ELSE '0'
