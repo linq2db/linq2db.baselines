@@ -47,6 +47,5 @@ SELECT
 FROM
 	[Issue1855Table] [r]
 WHERE
-	@clientSideIn <> [r].[SomeNullableDateTimeOffset] OR
-	[r].[SomeNullableDateTimeOffset] IS NULL
+	@clientSideIn <> [r].[SomeNullableDateTimeOffset] OR [r].[SomeNullableDateTimeOffset] IS NULL
 
