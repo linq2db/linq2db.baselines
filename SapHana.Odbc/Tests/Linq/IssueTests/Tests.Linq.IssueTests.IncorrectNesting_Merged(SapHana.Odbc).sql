@@ -15,8 +15,5 @@ FROM
 				"t"."ThingId" = "s_1"."ThingId" AND "t"."CreatedDate" = "s_1"."LastTransitionDate"
 		) "t1" ON 1=1
 WHERE
-	"s"."ThingId" IS NULL OR
-	"t1"."ThingId" IS NULL OR
-	"t1"."TransitionType" <> 'Delete' OR
-	"t1"."TransitionType" IS NULL
+	"s"."ThingId" IS NULL OR "t1"."ThingId" IS NULL OR "t1"."TransitionType" <> 'Delete' OR "t1"."TransitionType" IS NULL
 
