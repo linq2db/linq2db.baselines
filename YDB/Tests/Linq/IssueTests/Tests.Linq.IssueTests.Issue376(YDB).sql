@@ -7,6 +7,5 @@ FROM
 	Person t1
 		LEFT JOIN Doctor a_Doctor ON t1.PersonID = a_Doctor.PersonID
 WHERE
-	CAST(Unicode::GetLength(a_Doctor.Taxonomy) AS Int32) >= 0 OR
-	a_Doctor.Taxonomy IS NULL
+	CAST(Unicode::GetLength(a_Doctor.Taxonomy) AS Int32) >= 0 OR a_Doctor.Taxonomy IS NULL
 

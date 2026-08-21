@@ -19,8 +19,7 @@ WHERE
 			$CTE_1 t1
 		WHERE
 			t1.Value1 IS NULL
-	) OR
-	c_1.ParentID IS NOT NULL AND c_1.ParentID IN (
+	) OR c_1.ParentID IS NOT NULL AND c_1.ParentID IN (
 		SELECT
 			t1.Value1
 		FROM
