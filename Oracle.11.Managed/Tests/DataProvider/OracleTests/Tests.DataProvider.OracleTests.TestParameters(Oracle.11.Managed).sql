@@ -2,25 +2,25 @@
 DECLARE @p Blob -- Object
 SET     @p = NULL
 
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+SELECT :p FROM sys.dual -- cache-buster: 1
 
 -- Oracle.11.Managed Oracle11
 DECLARE @p Char -- AnsiStringFixedLength
 SET     @p = '1'
 
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+SELECT :p FROM sys.dual -- cache-buster: 2
 
 -- Oracle.11.Managed Oracle11
 DECLARE @p Int32
 SET     @p = 1
 
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+SELECT :p FROM sys.dual -- cache-buster: 3
 
 -- Oracle.11.Managed Oracle11
 DECLARE @p Varchar2(255) -- String
 SET     @p = '1'
 
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+SELECT :p FROM sys.dual -- cache-buster: 4
 
 -- Oracle.11.Managed Oracle11
 DECLARE @p Int32
