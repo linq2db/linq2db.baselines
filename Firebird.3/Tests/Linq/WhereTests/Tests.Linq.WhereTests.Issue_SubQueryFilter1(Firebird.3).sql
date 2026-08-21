@@ -23,8 +23,7 @@ WHERE
 					"Patient" "d"
 				FETCH NEXT 1 ROWS ONLY
 			)
-	) OR
-	EXISTS(
+	) OR EXISTS(
 		SELECT
 			*
 		FROM
