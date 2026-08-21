@@ -1,8 +1,8 @@
 ﻿-- SqlServer.SA SqlServer.2019
 SELECT
 	[g_1].[Id],
-	Coalesce(STRING_AGG(Coalesce([g_1].[NullableValue], N''), N': '), N''),
-	Coalesce(STRING_AGG([g_1].[NotNullableValue], N': '), N'')
+	STRING_AGG(Coalesce([g_1].[NullableValue], N''), N': '),
+	STRING_AGG([g_1].[NotNullableValue], N': ')
 FROM
 	[SampleClass] [g_1]
 GROUP BY
