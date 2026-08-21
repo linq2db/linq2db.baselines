@@ -1,8 +1,8 @@
 ﻿-- SqlServer.2012
 SELECT
 	[r].[Id],
-	N'Element ' + Coalesce([r].[VarCharTextNullable], '') + N' Text1',
-	N'Element ' + [r].[VarCharText] + N' Text2',
+	'Element ' + Coalesce([r].[VarCharTextNullable], '') + ' Text1',
+	'Element ' + [r].[VarCharText] + ' Text2',
 	N'Element ' + Coalesce([r].[NVarCharTextNullable], N'') + N' Text3',
 	N'Element ' + [r].[NVarCharText] + N' Text4',
 	N'Element ' + Coalesce(CAST([r].[VarCharTextNullable] AS NVarChar(4000)), N'') + N' Text11',
