@@ -1774,8 +1774,7 @@ SELECT
 FROM
 	[OptimizationData] [swap]
 WHERE
-	[swap].[IntVlaue] <> 0 AND [swap].[IntVlaue] >= 4 OR
-	[swap].[IntVlaue] < 4
+	[swap].[IntVlaue] <> 0 AND [swap].[IntVlaue] >= 4 OR [swap].[IntVlaue] < 4
 
 -- SqlServer.2017.MS SqlServer.2017
 SELECT
