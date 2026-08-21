@@ -24,7 +24,9 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-SELECT DBINFO('sqlca.sqlerrd1') FROM systables where tabid = 1
+SELECT
+	DBINFO('sqlca.sqlerrd1')
+FROM table(set{1})
 
 -- Informix.DB2 Informix
 DECLARE @Gender Char(1) -- StringFixedLength
@@ -52,7 +54,9 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-SELECT DBINFO('sqlca.sqlerrd1') FROM systables where tabid = 1
+SELECT
+	DBINFO('sqlca.sqlerrd1')
+FROM table(set{1})
 
 -- Informix.DB2 Informix
 DECLARE @id1 Integer(4) -- Int32
