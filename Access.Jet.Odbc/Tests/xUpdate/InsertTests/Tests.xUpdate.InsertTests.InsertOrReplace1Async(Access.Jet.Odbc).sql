@@ -24,7 +24,8 @@ VALUES
 )
 
 -- Access.Jet.Odbc AccessODBC
-SELECT @@IDENTITY
+SELECT
+	@@IDENTITY
 
 -- Access.Jet.Odbc AccessODBC
 DECLARE @Diagnosis NVarChar(4) -- String
