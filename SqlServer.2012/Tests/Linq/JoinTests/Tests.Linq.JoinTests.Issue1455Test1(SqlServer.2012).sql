@@ -38,9 +38,7 @@ FROM
 				LEFT JOIN [Trade] [trade_1] ON [al_group_1].[AlertKey] = CAST([trade_1].[DealId] AS NVarChar(11))
 				LEFT JOIN [Nomin] [nomin_1] ON [al_group_1].[AlertKey] = CAST([nomin_1].[CargoId] AS NVarChar(11))
 		WHERE
-			[nomin_1].[DeliveryCounterParty] LIKE @cpty ESCAPE N'~' OR
-			[trade_1].[CounterParty] LIKE @cpty_1 ESCAPE N'~' OR
-			[al_group_1].[AlertCode] LIKE @cpty_2 ESCAPE N'~'
+			[nomin_1].[DeliveryCounterParty] LIKE @cpty ESCAPE N'~' OR [trade_1].[CounterParty] LIKE @cpty_1 ESCAPE N'~' OR [al_group_1].[AlertCode] LIKE @cpty_2 ESCAPE N'~'
 	) [al_group_3]
 		OUTER APPLY (
 			SELECT TOP (1)
