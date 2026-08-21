@@ -24,7 +24,8 @@ VALUES
 )
 
 -- SqlCe
-SELECT @@IDENTITY
+SELECT
+	@@IDENTITY
 
 -- SqlCe
 DECLARE @Gender NVarChar(1) -- String
@@ -52,7 +53,8 @@ VALUES
 )
 
 -- SqlCe
-SELECT @@IDENTITY
+SELECT
+	@@IDENTITY
 
 -- SqlCe
 DECLARE @id1 Int -- Int32
