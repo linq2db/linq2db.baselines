@@ -45,8 +45,7 @@ WHERE
 		WHEN (r.Value4 = r.Value2) THEN 't'::BOOLEAN
 		WHEN NOT (r.Value4 = r.Value2) THEN 'f'::BOOLEAN
 		ELSE NULL
-	END OR
-	CASE
+	END OR CASE
 		WHEN (r.Value1 = r.Value5) THEN 't'::BOOLEAN
 		WHEN NOT (r.Value1 = r.Value5) THEN 'f'::BOOLEAN
 		ELSE NULL
@@ -83,8 +82,7 @@ WHERE
 		WHEN (r.Value4 = r.Value5) THEN 't'::BOOLEAN
 		WHEN NOT (r.Value4 = r.Value5) THEN 'f'::BOOLEAN
 		ELSE NULL
-	END OR
-	CASE
+	END OR CASE
 		WHEN (r.Value4 = r.Value5) THEN 't'::BOOLEAN
 		WHEN NOT (r.Value4 = r.Value5) THEN 'f'::BOOLEAN
 		ELSE NULL
@@ -118,8 +116,7 @@ WHERE
 		WHEN (r.Value4 = r.Value2) THEN 't'::BOOLEAN
 		WHEN NOT (r.Value4 = r.Value2) THEN 'f'::BOOLEAN
 		ELSE NULL
-	END OR
-	CASE
+	END OR CASE
 		WHEN (r.Value1 = r.Value5) THEN 't'::BOOLEAN
 		WHEN NOT (r.Value1 = r.Value5) THEN 'f'::BOOLEAN
 		ELSE NULL
@@ -127,8 +124,7 @@ WHERE
 		WHEN (r.Value4 = r.Value2) THEN 't'::BOOLEAN
 		WHEN NOT (r.Value4 = r.Value2) THEN 'f'::BOOLEAN
 		ELSE NULL
-	END IS NOT NULL OR
-	CASE
+	END IS NOT NULL OR CASE
 		WHEN (r.Value1 = r.Value5) THEN 't'::BOOLEAN
 		WHEN NOT (r.Value1 = r.Value5) THEN 'f'::BOOLEAN
 		ELSE NULL
@@ -222,8 +218,7 @@ WHERE
 		WHEN (r.Value5 = r.Value4) THEN 't'::BOOLEAN
 		WHEN NOT (r.Value5 = r.Value4) THEN 'f'::BOOLEAN
 		ELSE NULL
-	END OR
-	CASE
+	END OR CASE
 		WHEN (r.Value4 = r.Value5) THEN 't'::BOOLEAN
 		WHEN NOT (r.Value4 = r.Value5) THEN 'f'::BOOLEAN
 		ELSE NULL
@@ -261,8 +256,7 @@ WHERE
 		WHEN (r.Value5 = r.Value4) THEN 't'::BOOLEAN
 		WHEN NOT (r.Value5 = r.Value4) THEN 'f'::BOOLEAN
 		ELSE NULL
-	END OR
-	CASE
+	END OR CASE
 		WHEN (r.Value4 = r.Value5) THEN 't'::BOOLEAN
 		WHEN NOT (r.Value4 = r.Value5) THEN 'f'::BOOLEAN
 		ELSE NULL
@@ -270,8 +264,7 @@ WHERE
 		WHEN (r.Value5 = r.Value4) THEN 't'::BOOLEAN
 		WHEN NOT (r.Value5 = r.Value4) THEN 'f'::BOOLEAN
 		ELSE NULL
-	END IS NOT NULL OR
-	CASE
+	END IS NOT NULL OR CASE
 		WHEN (r.Value4 = r.Value5) THEN 't'::BOOLEAN
 		WHEN NOT (r.Value4 = r.Value5) THEN 'f'::BOOLEAN
 		ELSE NULL
@@ -331,7 +324,7 @@ FROM
 	BooleanTable r
 WHERE
 	CASE
-		WHEN r.Value1 >= r.Value5 THEN 't'::BOOLEAN
+		WHEN r.Value1 >= r.Value5 AND r.Value5 IS NOT NULL THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
 	END = CASE
 		WHEN (r.Value4 <> r.Value2) THEN 't'::BOOLEAN
@@ -366,8 +359,7 @@ WHERE
 		WHEN (r.Value4 <> r.Value5) THEN 't'::BOOLEAN
 		WHEN NOT (r.Value4 <> r.Value5) THEN 'f'::BOOLEAN
 		ELSE NULL
-	END OR
-	CASE
+	END OR CASE
 		WHEN (r.Value4 <> r.Value5) THEN 't'::BOOLEAN
 		WHEN NOT (r.Value4 <> r.Value5) THEN 'f'::BOOLEAN
 		ELSE NULL
@@ -394,14 +386,13 @@ FROM
 	BooleanTable r
 WHERE
 	CASE
-		WHEN r.Value1 >= r.Value5 THEN 't'::BOOLEAN
+		WHEN r.Value1 >= r.Value5 AND r.Value5 IS NOT NULL THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
 	END <> CASE
 		WHEN (r.Value4 <> r.Value2) THEN 't'::BOOLEAN
 		WHEN NOT (r.Value4 <> r.Value2) THEN 'f'::BOOLEAN
 		ELSE NULL
-	END OR
-	CASE
+	END OR CASE
 		WHEN (r.Value4 <> r.Value2) THEN 't'::BOOLEAN
 		WHEN NOT (r.Value4 <> r.Value2) THEN 'f'::BOOLEAN
 		ELSE NULL
@@ -484,7 +475,8 @@ FROM
 	BooleanTable r
 WHERE
 	CASE
-		WHEN r.Value4 >= r.Value5 THEN 't'::BOOLEAN
+		WHEN r.Value4 >= r.Value5 AND r.Value4 IS NOT NULL AND r.Value5 IS NOT NULL
+			THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
 	END = CASE
 		WHEN (r.Value5 <> r.Value4) THEN 't'::BOOLEAN
@@ -513,14 +505,14 @@ FROM
 	BooleanTable r
 WHERE
 	CASE
-		WHEN r.Value4 >= r.Value5 THEN 't'::BOOLEAN
+		WHEN r.Value4 >= r.Value5 AND r.Value4 IS NOT NULL AND r.Value5 IS NOT NULL
+			THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
 	END <> CASE
 		WHEN (r.Value5 <> r.Value4) THEN 't'::BOOLEAN
 		WHEN NOT (r.Value5 <> r.Value4) THEN 'f'::BOOLEAN
 		ELSE NULL
-	END OR
-	CASE
+	END OR CASE
 		WHEN (r.Value5 <> r.Value4) THEN 't'::BOOLEAN
 		WHEN NOT (r.Value5 <> r.Value4) THEN 'f'::BOOLEAN
 		ELSE NULL
