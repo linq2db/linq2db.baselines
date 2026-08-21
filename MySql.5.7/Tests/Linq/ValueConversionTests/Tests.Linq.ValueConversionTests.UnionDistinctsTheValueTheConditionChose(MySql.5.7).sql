@@ -1,4 +1,4 @@
-﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
 	CASE
 		WHEN `t1`.`EnumNullable` IS NOT NULL THEN `t1`.`EnumNullable`
@@ -6,7 +6,7 @@ SELECT
 	END
 FROM
 	`ValueConversion` `t1`
-UNION ALL
+UNION
 SELECT
 	CASE
 		WHEN `t1_1`.`EnumNullable` IS NOT NULL THEN `t1_1`.`EnumNullable`
