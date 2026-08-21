@@ -24,8 +24,7 @@ WHERE
 		WHERE
 			[e].[PersonID] = [p].[PersonID] AND [e].[FirstName] LIKE @filter1 ESCAPE '~' AND
 			[e].[PersonID] = [t1].[PersonID]
-	) OR
-	EXISTS(
+	) OR EXISTS(
 		SELECT
 			*
 		FROM
