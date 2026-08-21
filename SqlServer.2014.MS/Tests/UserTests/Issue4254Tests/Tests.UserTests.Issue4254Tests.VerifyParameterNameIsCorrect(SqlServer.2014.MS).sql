@@ -61,8 +61,7 @@ WHERE
 		WHERE
 			[m_1].[id] = [y].[media_item_id] AND [y].[user_id] = @userId AND
 			[y].[expires_at] > @now
-	) OR
-	EXISTS(
+	) OR EXISTS(
 		SELECT
 			*
 		FROM
@@ -99,8 +98,7 @@ WHERE
 		WHERE
 			[x].[id] = [y_1].[media_item_id] AND [y_1].[user_id] = @userId AND
 			[y_1].[expires_at] > @now
-	) OR
-	EXISTS(
+	) OR EXISTS(
 		SELECT
 			*
 		FROM
@@ -131,8 +129,7 @@ WHERE
 		WHERE
 			[m_1].[id] = [y].[media_item_id] AND [y].[user_id] = @userId AND
 			[y].[expires_at] > @now
-	) OR
-	EXISTS(
+	) OR EXISTS(
 		SELECT
 			*
 		FROM
@@ -169,8 +166,7 @@ WHERE
 		WHERE
 			[x].[id] = [y_1].[media_item_id] AND [y_1].[user_id] = @userId AND
 			[y_1].[expires_at] > @now
-	) OR
-	EXISTS(
+	) OR EXISTS(
 		SELECT
 			*
 		FROM
