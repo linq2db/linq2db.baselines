@@ -57,7 +57,7 @@ FROM
 		INNER JOIN "EmployeeTerritories" d ON m_1."EmployeeId" = d."EmployeeID"
 		INNER JOIN "Territories" "a_Territory" ON d."TerritoryID" = "a_Territory"."TerritoryID"
 WHERE
-	NOT "a_Territory"."IsDeleted" AND NOT d."IsDeleted"
+	NOT ("a_Territory"."IsDeleted" OR d."IsDeleted")
 
 
 
@@ -93,7 +93,7 @@ FROM
 		INNER JOIN "Order Details" d ON m_1."OrderId" = d."OrderID"
 		INNER JOIN "Products" "a_Product" ON d."ProductID" = "a_Product"."ProductID"
 WHERE
-	NOT "a_Product"."IsDeleted" AND NOT d."IsDeleted"
+	NOT ("a_Product"."IsDeleted" OR d."IsDeleted")
 
 
 
