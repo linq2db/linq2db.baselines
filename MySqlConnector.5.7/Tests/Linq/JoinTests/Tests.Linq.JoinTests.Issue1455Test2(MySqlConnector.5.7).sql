@@ -197,8 +197,6 @@ FROM
 				LEFT JOIN `Trade` `trade_1` ON `al_group_1`.`AlertKey` = CAST(`trade_1`.`DealId` AS CHAR(11))
 				LEFT JOIN `Nomin` `nomin_1` ON `al_group_1`.`AlertKey` = CAST(`nomin_1`.`CargoId` AS CHAR(11))
 		WHERE
-			`nomin_1`.`DeliveryCounterParty` LIKE @DeliveryCounterParty OR
-			`trade_1`.`CounterParty` LIKE @DeliveryCounterParty OR
-			`al_group_1`.`AlertCode` LIKE @DeliveryCounterParty
+			`nomin_1`.`DeliveryCounterParty` LIKE @DeliveryCounterParty OR `trade_1`.`CounterParty` LIKE @DeliveryCounterParty OR `al_group_1`.`AlertCode` LIKE @DeliveryCounterParty
 	) `al_group_2`
 
