@@ -120,8 +120,7 @@ WHERE
 			$CTE_1 t1
 		WHERE
 			t1.Value4 IS NULL
-	) OR
-	r_1.Value5 IS NOT NULL AND r_1.Value5 IN (
+	) OR r_1.Value5 IS NOT NULL AND r_1.Value5 IN (
 		SELECT
 			t1.Value4
 		FROM
