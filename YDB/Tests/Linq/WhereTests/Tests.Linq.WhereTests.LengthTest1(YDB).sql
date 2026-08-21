@@ -4,8 +4,7 @@ SELECT
 FROM
 	Person nm
 WHERE
-	CAST(Unicode::GetLength(nm.MiddleName) AS Int32) <> 0 OR
-	nm.MiddleName IS NULL
+	CAST(Unicode::GetLength(nm.MiddleName) AS Int32) <> 0 OR nm.MiddleName IS NULL
 
 -- YDB Ydb
 SELECT

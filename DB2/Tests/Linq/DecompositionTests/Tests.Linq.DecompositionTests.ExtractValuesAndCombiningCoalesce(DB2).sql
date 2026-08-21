@@ -51,7 +51,7 @@ FROM
 			"Item" "x"
 	) "x_1"
 WHERE
-	NOT ("x_1"."Color" AND ("x_1"."Color_1" AND "x_1"."Color_2" OR NOT "x_1"."Color_1") OR NOT "x_1"."Color" AND NOT "x_1"."Color_4")
+	NOT ("x_1"."Color" AND ("x_1"."Color_1" AND "x_1"."Color_2" OR NOT "x_1"."Color_1") OR NOT ("x_1"."Color" OR "x_1"."Color_4"))
 
 -- DB2 DB2.LUW DB2LUW
 SELECT
@@ -92,8 +92,7 @@ FROM
 			"Item" "x"
 	) "x_1"
 WHERE
-	"x_1"."Color" AND ("x_1"."Color_1" AND "x_1"."Color_2" OR NOT "x_1"."Color_1") OR
-	NOT "x_1"."Color" AND NOT "x_1"."Color_4"
+	"x_1"."Color" AND ("x_1"."Color_1" AND "x_1"."Color_2" OR NOT "x_1"."Color_1") OR NOT ("x_1"."Color" OR "x_1"."Color_4")
 
 -- DB2 DB2.LUW DB2LUW
 SELECT

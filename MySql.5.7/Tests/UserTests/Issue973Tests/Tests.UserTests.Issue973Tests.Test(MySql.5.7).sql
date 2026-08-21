@@ -26,8 +26,7 @@ SELECT
 FROM
 	`Parent` `o`
 WHERE
-	(`o`.`ParentID` IN (1, 2, 3) OR `o`.`ParentID` IS NULL) OR
-	`o`.`ParentID` = @param
+	(`o`.`ParentID` IN (1, 2, 3) OR `o`.`ParentID` IS NULL) OR `o`.`ParentID` = @param
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @p Int32
@@ -57,6 +56,5 @@ SELECT
 FROM
 	`Parent` `o`
 WHERE
-	(`o`.`ParentID` IN (4, 5, 6) OR `o`.`ParentID` IS NULL) OR
-	`o`.`ParentID` = @param
+	(`o`.`ParentID` IN (4, 5, 6) OR `o`.`ParentID` IS NULL) OR `o`.`ParentID` = @param
 
