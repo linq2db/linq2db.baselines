@@ -6,7 +6,7 @@ SELECT
 	END as Converted
 FROM
 	ValueConversion t1
-UNION ALL
+UNION
 SELECT
 	CASE
 		WHEN t1_1.EnumNullable IS NOT NULL THEN t1_1.EnumNullable
