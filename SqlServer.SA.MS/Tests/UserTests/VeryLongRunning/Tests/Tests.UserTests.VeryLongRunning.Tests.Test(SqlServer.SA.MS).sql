@@ -397,7 +397,7 @@ FROM
 					INNER JOIN [tempdb]..[#tmp004] [pme] ON [i].[Column3] = [pme].[Column2]
 			WHERE
 				[i].[Column4] <= @date AND ([i].[Column5] IS NULL OR [i].[Column5] > @date) AND
-				[it].[Column3] IN ('E', 'B')
+				([it].[Column3] IN ('E') OR [it].[Column3] IN ('B'))
 		) [i_1] ON [pc].[Column4] = [i_1].[Column1]
 		INNER JOIN [tempdb]..[#tbl6666] [ie] ON [i_1].[Column1] = [ie].[Column1] AND [ie].[Column7] = 1
 		INNER JOIN [tempdb]..[#tmp003] [mp] ON [i_1].[PmeID] = [mp].[Column2] AND [ie].[Column6] = [mp].[Prop3]
@@ -604,7 +604,7 @@ FROM
 					INNER JOIN [tempdb]..[#tmp004] [pme] ON [i].[Column3] = [pme].[Column2]
 			WHERE
 				[i].[Column4] <= @date AND ([i].[Column5] IS NULL OR [i].[Column5] > @date) AND
-				[it].[Column3] IN ('E', 'B')
+				([it].[Column3] IN ('E') OR [it].[Column3] IN ('B'))
 		) [i_1] ON [pc].[Column4] = [i_1].[Column1]
 		INNER JOIN [tempdb]..[#tbl6666] [ie] ON [i_1].[Column1] = [ie].[Column1] AND [ie].[Column7] = 1
 		INNER JOIN [tempdb]..[#tmp003] [mp] ON [i_1].[PmeID] = [mp].[Column2] AND [ie].[Column6] = [mp].[Prop3]
@@ -795,7 +795,7 @@ FROM
 				([i].[Column5] IS NULL OR [i].[Column5] > @date) AND
 				[ii].[Column4] <= @date AND
 				([ii].[Column5] IS NULL OR [ii].[Column5] > @date) AND
-				[it].[Column3] IN ('E', 'B')
+				([it].[Column3] IN ('E') OR [it].[Column3] IN ('B'))
 		) [i_1] ON [r].[Column4] = [i_1].[Column1]
 		INNER JOIN [tempdb]..[#tbl6666] [ie] ON [i_1].[Column1] = [ie].[Column1] AND [ie].[Column7] = 1
 		INNER JOIN [tempdb]..[#tmp007] [mp] ON [i_1].[Column3] = [mp].[Column3] AND [ie].[Column6] = [mp].[Prop3]
@@ -1000,7 +1000,7 @@ FROM
 				([i].[Column5] IS NULL OR [i].[Column5] > @date) AND
 				[ii].[Column4] <= @date AND
 				([ii].[Column5] IS NULL OR [ii].[Column5] > @date) AND
-				[it].[Column3] IN ('E', 'B')
+				([it].[Column3] IN ('E') OR [it].[Column3] IN ('B'))
 		) [i_1] ON [r].[Column4] = [i_1].[Column1]
 		INNER JOIN [tempdb]..[#tbl6666] [ie] ON [i_1].[Column1] = [ie].[Column1] AND [ie].[Column7] = 1
 		INNER JOIN [tempdb]..[#tmp007] [mp] ON [i_1].[Column3] = [mp].[Column3] AND [ie].[Column6] = [mp].[Prop3]
@@ -1210,7 +1210,7 @@ FROM
 				([i].[Column5] IS NULL OR [i].[Column5] > @date) AND
 				[ii].[Column4] <= @date AND
 				([ii].[Column5] IS NULL OR [ii].[Column5] > @date) AND
-				[it].[Column3] IN ('E', 'B')
+				([it].[Column3] IN ('E') OR [it].[Column3] IN ('B'))
 		) [i_1] ON [r].[Column4] = [i_1].[Column1]
 		INNER JOIN [tempdb]..[#tbl6666] [ie] ON [i_1].[Column1] = [ie].[Column1] AND [ie].[Column7] = 1
 		INNER JOIN [tempdb]..[#tmp007] [mp] ON [i_1].[Column3] = [mp].[Column3] AND [ie].[Column6] = [mp].[Prop3]
@@ -1514,7 +1514,7 @@ FROM
 					INNER JOIN [tempdb]..[#tmp004] [pme] ON [i].[Column3] = [pme].[Column2]
 			WHERE
 				[i].[Column4] <= @date AND ([i].[Column5] IS NULL OR [i].[Column5] > @date) AND
-				[it].[Column3] IN ('E', 'B')
+				([it].[Column3] IN ('E') OR [it].[Column3] IN ('B'))
 		) [i_1] ON [pc].[Column4] = [i_1].[Column1]
 		INNER JOIN [tempdb]..[#tbl6666] [ie] ON [i_1].[Column1] = [ie].[Column1] AND [ie].[Column7] = 1
 		INNER JOIN [tempdb]..[#tmp003] [mp] ON [i_1].[PmeID] = [mp].[Column2] AND [ie].[Column6] = [mp].[Prop3]
@@ -1721,7 +1721,7 @@ FROM
 					INNER JOIN [tempdb]..[#tmp004] [pme] ON [i].[Column3] = [pme].[Column2]
 			WHERE
 				[i].[Column4] <= @date AND ([i].[Column5] IS NULL OR [i].[Column5] > @date) AND
-				[it].[Column3] IN ('E', 'B')
+				([it].[Column3] IN ('E') OR [it].[Column3] IN ('B'))
 		) [i_1] ON [pc].[Column4] = [i_1].[Column1]
 		INNER JOIN [tempdb]..[#tbl6666] [ie] ON [i_1].[Column1] = [ie].[Column1] AND [ie].[Column7] = 1
 		INNER JOIN [tempdb]..[#tmp003] [mp] ON [i_1].[PmeID] = [mp].[Column2] AND [ie].[Column6] = [mp].[Prop3]
@@ -1912,7 +1912,7 @@ FROM
 				([i].[Column5] IS NULL OR [i].[Column5] > @date) AND
 				[ii].[Column4] <= @date AND
 				([ii].[Column5] IS NULL OR [ii].[Column5] > @date) AND
-				[it].[Column3] IN ('E', 'B')
+				([it].[Column3] IN ('E') OR [it].[Column3] IN ('B'))
 		) [i_1] ON [r].[Column4] = [i_1].[Column1]
 		INNER JOIN [tempdb]..[#tbl6666] [ie] ON [i_1].[Column1] = [ie].[Column1] AND [ie].[Column7] = 1
 		INNER JOIN [tempdb]..[#tmp007] [mp] ON [i_1].[Column3] = [mp].[Column3] AND [ie].[Column6] = [mp].[Prop3]
@@ -2117,7 +2117,7 @@ FROM
 				([i].[Column5] IS NULL OR [i].[Column5] > @date) AND
 				[ii].[Column4] <= @date AND
 				([ii].[Column5] IS NULL OR [ii].[Column5] > @date) AND
-				[it].[Column3] IN ('E', 'B')
+				([it].[Column3] IN ('E') OR [it].[Column3] IN ('B'))
 		) [i_1] ON [r].[Column4] = [i_1].[Column1]
 		INNER JOIN [tempdb]..[#tbl6666] [ie] ON [i_1].[Column1] = [ie].[Column1] AND [ie].[Column7] = 1
 		INNER JOIN [tempdb]..[#tmp007] [mp] ON [i_1].[Column3] = [mp].[Column3] AND [ie].[Column6] = [mp].[Prop3]
@@ -2327,7 +2327,7 @@ FROM
 				([i].[Column5] IS NULL OR [i].[Column5] > @date) AND
 				[ii].[Column4] <= @date AND
 				([ii].[Column5] IS NULL OR [ii].[Column5] > @date) AND
-				[it].[Column3] IN ('E', 'B')
+				([it].[Column3] IN ('E') OR [it].[Column3] IN ('B'))
 		) [i_1] ON [r].[Column4] = [i_1].[Column1]
 		INNER JOIN [tempdb]..[#tbl6666] [ie] ON [i_1].[Column1] = [ie].[Column1] AND [ie].[Column7] = 1
 		INNER JOIN [tempdb]..[#tmp007] [mp] ON [i_1].[Column3] = [mp].[Column3] AND [ie].[Column6] = [mp].[Prop3]

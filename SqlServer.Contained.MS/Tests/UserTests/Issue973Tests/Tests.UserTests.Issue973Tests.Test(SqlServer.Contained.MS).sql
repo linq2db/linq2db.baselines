@@ -26,7 +26,7 @@ SELECT
 FROM
 	[Parent] [o]
 WHERE
-	([o].[ParentID] IN (1, 2, 3) OR [o].[ParentID] IS NULL) OR
+	([o].[ParentID] IN (1) OR [o].[ParentID] IN (2) OR [o].[ParentID] IN (3) OR [o].[ParentID] IS NULL) OR
 	[o].[ParentID] = @param
 
 -- SqlServer.Contained.MS SqlServer.2019
@@ -57,6 +57,6 @@ SELECT
 FROM
 	[Parent] [o]
 WHERE
-	([o].[ParentID] IN (4, 5, 6) OR [o].[ParentID] IS NULL) OR
+	([o].[ParentID] IN (4) OR [o].[ParentID] IN (5) OR [o].[ParentID] IN (6) OR [o].[ParentID] IS NULL) OR
 	[o].[ParentID] = @param
 

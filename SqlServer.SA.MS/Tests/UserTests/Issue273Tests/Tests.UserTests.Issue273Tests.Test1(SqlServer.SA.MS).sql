@@ -5,5 +5,5 @@ SELECT
 FROM
 	[LinqDataTypes] [x]
 WHERE
-	[x].[BigIntValue] IN (0, 1)
+	([x].[BigIntValue] IN (0) OR [x].[BigIntValue] IN (1))
 

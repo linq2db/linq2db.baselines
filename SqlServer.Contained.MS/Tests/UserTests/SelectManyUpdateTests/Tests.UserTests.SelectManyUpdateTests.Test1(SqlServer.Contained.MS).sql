@@ -10,5 +10,5 @@ FROM
 	[Parent] [x]
 		INNER JOIN [Parent] [a_Values] ON [x].[ParentID] = [a_Values].[Value1]
 WHERE
-	[x].[ParentID] IN (0, 0)
+	([x].[ParentID] IN (0) OR [x].[ParentID] IN (0))
 

@@ -20,7 +20,7 @@ FROM
 			[Parent] [x]
 				INNER JOIN [LinqDataTypes] [a_Table1] ON [x].[ParentID] = [a_Table1].[ID]
 		WHERE
-			[x].[ParentID] IN (10000, 20000)
+			([x].[ParentID] IN (10000) OR [x].[ParentID] IN (20000))
 	) [t1]
 WHERE
 	[u].[ID] = [t1].[ID] AND [u].[BoolValue] = [t1].[BoolValue]

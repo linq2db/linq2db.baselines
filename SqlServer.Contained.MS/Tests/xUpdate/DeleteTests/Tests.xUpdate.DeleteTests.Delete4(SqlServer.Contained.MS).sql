@@ -3,7 +3,7 @@ DELETE [gc]
 FROM
 	[GrandChild] [gc]
 WHERE
-	[gc].[GrandChildID] IN (1001, 1002)
+	([gc].[GrandChildID] IN (1001) OR [gc].[GrandChildID] IN (1002))
 
 -- SqlServer.Contained.MS SqlServer.2019
 INSERT INTO [GrandChild]
@@ -47,7 +47,7 @@ FROM
 	[GrandChild] [gc]
 		INNER JOIN [Parent] [a_Parent] ON [gc].[ParentID] = [a_Parent].[ParentID]
 WHERE
-	[a_Parent].[ParentID] = 1 AND [gc].[GrandChildID] IN (1001, 1002)
+	[a_Parent].[ParentID] = 1 AND ([gc].[GrandChildID] IN (1001) OR [gc].[GrandChildID] IN (1002))
 
 -- SqlServer.Contained.MS SqlServer.2019
 SELECT
