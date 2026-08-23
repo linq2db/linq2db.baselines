@@ -75,7 +75,7 @@ FROM
 	[Parent] [p]
 		INNER JOIN [Child] [c_1] ON [p].[ParentID] = [c_1].[ParentID]
 WHERE
-	[c_1].[ParentID] = @id AND ([c_1].[ChildID] NOT IN (1000) AND [c_1].[ChildID] NOT IN (1001))
+	[c_1].[ParentID] = @id AND [c_1].[ChildID] NOT IN (1000, 1001)
 
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @id Int -- Int32

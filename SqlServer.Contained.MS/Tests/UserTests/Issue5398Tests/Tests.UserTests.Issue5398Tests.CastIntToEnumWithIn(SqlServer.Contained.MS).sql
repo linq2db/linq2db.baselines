@@ -4,7 +4,7 @@ SELECT
 FROM
 	[TestEnumTable] [i]
 WHERE
-	([i].[Value] IN (1) OR [i].[Value] IN (3))
+	[i].[Value] IN (1, 3)
 ORDER BY
 	[i].[Id]
 

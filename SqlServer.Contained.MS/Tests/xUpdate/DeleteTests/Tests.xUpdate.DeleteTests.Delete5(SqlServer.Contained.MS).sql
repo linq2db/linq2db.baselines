@@ -55,7 +55,7 @@ DELETE [t1]
 FROM
 	[Parent] [t1]
 WHERE
-	([t1].[ParentID] IN (1001) OR [t1].[ParentID] IN (1002))
+	[t1].[ParentID] IN (1001, 1002)
 
 -- SqlServer.Contained.MS SqlServer.2019
 SELECT

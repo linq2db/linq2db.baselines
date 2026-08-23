@@ -21,5 +21,5 @@ SELECT
 FROM
 	[Properties] [x]
 WHERE
-	([x].[Id] IN (1) OR [x].[Id] IN (2))
+	[x].[Id] IN (1, 2)
 
