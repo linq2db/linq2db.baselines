@@ -1,4 +1,54 @@
-﻿
+﻿Parameters:
+@p0='?', @p1='?', @p2='?', @p3='?', @p4='?', @p5='?', @p6='?', @p7='?', @p8='?', @p9='?', @p10='?' (Size = 9), @p11='?'
+
+INSERT INTO "Issue4624Items" ("AclNameId", "Capacity", "CfAllowField", "CfAllowValue", "CfDisallowField", "CfDisallowValue", "CfDriven", "CreditGroupId", "DateFrom", "DateTo", "Name", "SendCustomFields")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);
+SELECT "Id"
+FROM "Issue4624Items"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+
+
+Parameters:
+@p12='?', @p13='?', @p14='?'
+
+INSERT INTO "Issue4624Entry" ("AclItemId", "EntriesCount", "TicketNumberId")
+VALUES (@p12, @p13, @p14);
+SELECT "Id"
+FROM "Issue4624Entry"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+
+
+Parameters:
+@p0='?', @p1='?', @p2='?'
+
+INSERT INTO "Issue4624Entry" ("AclItemId", "EntriesCount", "TicketNumberId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "Issue4624Entry"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+
+
+Parameters:
+@p0='?', @p1='?', @p2='?', @p3='?', @p4='?', @p5='?', @p6='?'
+
+INSERT INTO "Issue4624ItemTicketDates" ("DisplayInfo", "EntryCount", "ItemId", "Message", "MessageBackcolor", "MessageForecolor", "TicketDateId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT "Id"
+FROM "Issue4624ItemTicketDates"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+
+
+Parameters:
+@p0='?', @p1='?', @p2='?', @p3='?', @p4='?', @p5='?', @p6='?'
+
+INSERT INTO "Issue4624ItemTicketDates" ("DisplayInfo", "EntryCount", "ItemId", "Message", "MessageBackcolor", "MessageForecolor", "TicketDateId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT "Id"
+FROM "Issue4624ItemTicketDates"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+
+
+
 
 -- SQLite.MS SQLite
 SELECT
