@@ -8,6 +8,10 @@ SELECT
 	COUNT(*) OVER (),
 	COUNT(1) OVER (),
 	SUM(1) OVER (),
+	ROW_NUMBER() OVER (ORDER BY (
+		SELECT
+			1
+	)),
 	IIF(COUNT(*) OVER () = @rowCount AND SUM([t].[IntValue]) OVER () > 0, 1, 0),
 	IIF(COUNT(*) OVER () = @p AND SUM([t].[IntValue]) OVER () > 0, 1, 0)
 FROM
