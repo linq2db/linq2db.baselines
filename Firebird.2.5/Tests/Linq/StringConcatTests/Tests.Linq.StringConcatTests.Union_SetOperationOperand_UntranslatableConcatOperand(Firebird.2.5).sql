@@ -1,0 +1,29 @@
+﻿-- Firebird.2.5 Firebird
+SELECT
+	CAST('p_' AS VARCHAR(2)),
+	"e"."Id",
+	CAST('N' AS VARCHAR(1)),
+	"e"."Name"
+FROM
+	"ConcatSetOpEntity" "e"
+WHERE
+	"e"."ParentId" IS NULL
+UNION
+SELECT
+	CAST('c_' AS VARCHAR(2)),
+	"e_1"."Id",
+	CAST('N' AS VARCHAR(1)),
+	"e_1"."Name"
+FROM
+	"ConcatSetOpEntity" "e_1"
+WHERE
+	"e_1"."ParentId" IS NOT NULL
+
+-- Firebird.2.5 Firebird
+SELECT
+	"t1"."Id",
+	"t1"."ParentId",
+	"t1"."Name"
+FROM
+	"ConcatSetOpEntity" "t1"
+
