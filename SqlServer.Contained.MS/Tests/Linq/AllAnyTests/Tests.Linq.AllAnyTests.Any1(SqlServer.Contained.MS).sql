@@ -1,16 +1,16 @@
 ﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT
-	[p].[ParentID],
-	[p].[Value1]
+	[parent_1].[ParentID],
+	[parent_1].[Value1]
 FROM
-	[Parent] [p]
+	[Parent] [parent_1]
 WHERE
 	EXISTS(
 		SELECT
 			*
 		FROM
-			[Child] [c_1]
+			[Child] [child_1]
 		WHERE
-			[c_1].[ParentID] = [p].[ParentID] AND [c_1].[ParentID] > 3
+			[child_1].[ParentID] = [parent_1].[ParentID] AND [child_1].[ParentID] > 3
 	)
 
