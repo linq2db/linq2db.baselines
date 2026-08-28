@@ -36,7 +36,7 @@ FROM
 	(
 		SELECT
 			CASE
-				WHEN t1."Source" = 1 THEN 1
+				WHEN t1."Source" = t1."c1" THEN 1
 				ELSE 0
 			END as "c1",
 			t1."Source",
@@ -49,6 +49,7 @@ FROM
 			(
 				SELECT
 					CAST(1 AS Int) as "Source",
+					CAST(1 AS Int) as "c1",
 					r."Budget" as "Duration",
 					NULL as "Duration_1"
 				FROM
@@ -56,6 +57,7 @@ FROM
 				UNION ALL
 				SELECT
 					CAST(2 AS Int) as "Source",
+					CAST(1 AS Int) as "c1",
 					NULL as "Duration",
 					CAST(Floor(Extract(Day From (CAST(r_1."FinishedOn" AS timestamp) - CAST(r_1."StartedOn" AS timestamp)))) AS Number(19)) * 864000000000 + CAST(Floor(Extract(Hour From (CAST(r_1."FinishedOn" AS timestamp) - CAST(r_1."StartedOn" AS timestamp)))) AS Number(19)) * 36000000000 + CAST(Floor(Extract(Minute From (CAST(r_1."FinishedOn" AS timestamp) - CAST(r_1."StartedOn" AS timestamp)))) AS Number(19)) * 600000000 + CAST(Floor(Round(Extract(Second From (CAST(r_1."FinishedOn" AS timestamp) - CAST(r_1."StartedOn" AS timestamp))) * 10000000D)) AS Number(19)) as "Duration_1"
 				FROM
