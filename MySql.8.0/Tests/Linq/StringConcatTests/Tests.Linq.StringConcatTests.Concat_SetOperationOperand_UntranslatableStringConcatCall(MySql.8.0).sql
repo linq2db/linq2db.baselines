@@ -1,4 +1,4 @@
-﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 SELECT
 	CAST('p_' AS CHAR(255)),
 	`e`.`Id`,
@@ -7,19 +7,19 @@ SELECT
 FROM
 	`ConcatSetOpEntity` `e`
 WHERE
-	`e`.`Name` IS NOT NULL
-UNION
+	`e`.`ParentId` IS NULL
+UNION ALL
 SELECT
-	CAST('p_' AS CHAR(255)),
+	CAST('c_' AS CHAR(255)),
 	`e_1`.`Id`,
 	CAST('N' AS CHAR(255)),
 	`e_1`.`Name`
 FROM
 	`ConcatSetOpEntity` `e_1`
 WHERE
-	`e_1`.`ParentId` IS NULL
+	`e_1`.`ParentId` IS NOT NULL
 
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 SELECT
 	`t1`.`Id`,
 	`t1`.`ParentId`,
