@@ -35,7 +35,7 @@ SELECT
 FROM
 	(
 		SELECT
-			IIF([t1].[Source] = 1, 1, 0) as [c1],
+			IIF([t1].[Source] = [t1].[c1], 1, 0) as [c1],
 			[t1].[Source],
 			[t1].[Duration],
 			[t1].[Source] as [Source_1],
@@ -46,6 +46,7 @@ FROM
 			(
 				SELECT
 					CAST(1 AS Int) as [Source],
+					CAST(1 AS Int) as [c1],
 					[r].[Budget] as [Duration],
 					NULL as [Duration_1]
 				FROM
@@ -53,6 +54,7 @@ FROM
 				UNION ALL
 				SELECT
 					CAST(2 AS Int) as [Source],
+					CAST(1 AS Int) as [c1],
 					NULL as [Duration],
 					(DateDiff_Big(day, [r_1].[StartedOn], [r_1].[FinishedOn]) * 86400) * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r_1].[StartedOn], [r_1].[FinishedOn]) AS Int), [r_1].[StartedOn]), [r_1].[FinishedOn]) / 100 as [Duration_1]
 				FROM
