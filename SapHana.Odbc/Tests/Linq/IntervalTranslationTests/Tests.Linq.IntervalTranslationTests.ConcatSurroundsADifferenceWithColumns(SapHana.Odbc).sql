@@ -36,7 +36,7 @@ FROM
 	(
 		SELECT
 			CASE
-				WHEN "t1"."Source" = 1 THEN 1
+				WHEN "t1"."Source" = "t1"."c1" THEN 1
 				ELSE 0
 			END as "c1",
 			"t1"."Source",
@@ -49,6 +49,7 @@ FROM
 			(
 				SELECT
 					CAST(1 AS Integer) as "Source",
+					CAST(1 AS Integer) as "c1",
 					"r"."Budget" as "Duration",
 					NULL as "Duration_1"
 				FROM
@@ -56,6 +57,7 @@ FROM
 				UNION ALL
 				SELECT
 					CAST(2 AS Integer) as "Source",
+					CAST(1 AS Integer) as "c1",
 					NULL as "Duration",
 					Nano100_Between("r_1"."StartedOn", "r_1"."FinishedOn") as "Duration_1"
 				FROM
