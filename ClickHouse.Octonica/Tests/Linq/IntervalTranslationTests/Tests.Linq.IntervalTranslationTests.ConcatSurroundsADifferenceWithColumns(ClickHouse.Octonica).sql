@@ -26,7 +26,7 @@ SELECT
 FROM
 	(
 		SELECT
-			t1.Source = 1 as c1,
+			t1.Source = t1.c1 as c1,
 			t1.Source as Source,
 			t1.Duration as Duration,
 			t1.Source as Source_1,
@@ -37,6 +37,7 @@ FROM
 			(
 				SELECT
 					toInt32(1) as Source,
+					toInt32(1) as c1,
 					r.Budget as Duration,
 					NULL as Duration_1
 				FROM
@@ -44,6 +45,7 @@ FROM
 				UNION ALL
 				SELECT
 					toInt32(2) as Source,
+					toInt32(1) as c1,
 					toInt64(NULL) as Duration,
 					intDiv(toUnixTimestamp64Nano(r_1.FinishedOn) - toUnixTimestamp64Nano(r_1.StartedOn), toInt64(100)) as Duration_1
 				FROM
