@@ -7,17 +7,17 @@ SELECT
 FROM
 	"ConcatSetOpEntity" e
 WHERE
-	e."Name" IS NOT NULL
-UNION
+	e."ParentId" IS NULL
+UNION ALL
 SELECT
-	'p_'::text,
+	'c_'::text,
 	e_1."Id",
 	'N'::text,
 	e_1."Name"
 FROM
 	"ConcatSetOpEntity" e_1
 WHERE
-	e_1."ParentId" IS NULL
+	e_1."ParentId" IS NOT NULL
 
 -- PostgreSQL.9.3 PostgreSQL
 SELECT

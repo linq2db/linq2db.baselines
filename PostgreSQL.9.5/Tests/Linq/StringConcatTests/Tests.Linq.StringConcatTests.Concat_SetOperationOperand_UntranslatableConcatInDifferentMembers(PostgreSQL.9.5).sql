@@ -3,21 +3,33 @@ SELECT
 	'p_'::text,
 	e."Id",
 	'N'::text,
-	e."Name"
+	NULL::uuid,
+	NULL::text,
+	e."Name",
+	NULL::text,
+	NULL::text,
+	NULL::uuid,
+	NULL::text
 FROM
 	"ConcatSetOpEntity" e
 WHERE
-	e."Name" IS NOT NULL
-UNION
+	e."ParentId" IS NULL
+UNION ALL
 SELECT
-	'p_'::text,
+	NULL::text,
+	NULL::uuid,
+	NULL::text,
 	e_1."Id",
 	'N'::text,
-	e_1."Name"
+	e_1."Name",
+	NULL::text,
+	'p_'::text,
+	e_1."ParentId",
+	'N'::text
 FROM
 	"ConcatSetOpEntity" e_1
 WHERE
-	e_1."ParentId" IS NULL
+	e_1."ParentId" IS NOT NULL
 
 -- PostgreSQL.9.5 PostgreSQL
 SELECT
