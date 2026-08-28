@@ -36,7 +36,7 @@ FROM
 	(
 		SELECT
 			CASE
-				WHEN [t1].[Source] = 1 THEN 1
+				WHEN [t1].[Source] = [t1].[c1] THEN 1
 				ELSE 0
 			END as [c1],
 			[t1].[Source],
@@ -49,6 +49,7 @@ FROM
 			(
 				SELECT
 					CAST(1 AS Int) as [Source],
+					CAST(1 AS Int) as [c1],
 					[r].[Budget] as [Duration],
 					NULL as [Duration_1]
 				FROM
@@ -56,6 +57,7 @@ FROM
 				UNION ALL
 				SELECT
 					CAST(2 AS Int) as [Source],
+					CAST(1 AS Int) as [c1],
 					NULL as [Duration],
 					(CAST(DateDiff(day, [r_1].[StartedOn], [r_1].[FinishedOn]) AS BigInt) * 86400) * 10000000 + CAST(DateDiff(millisecond, DateAdd(day, CAST(DateDiff(day, [r_1].[StartedOn], [r_1].[FinishedOn]) AS BigInt), [r_1].[StartedOn]), [r_1].[FinishedOn]) AS BigInt) * 10000 as [Duration_1]
 				FROM
