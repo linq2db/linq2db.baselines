@@ -3,21 +3,33 @@ SELECT
 	CAST('p_' AS VARCHAR(2)),
 	"e"."Id",
 	CAST('N' AS VARCHAR(1)),
-	"e"."Name"
+	NULL,
+	NULL,
+	"e"."Name",
+	NULL,
+	NULL,
+	NULL,
+	NULL
 FROM
 	"ConcatSetOpEntity" "e"
 WHERE
-	"e"."Name" IS NOT NULL
-UNION
+	"e"."ParentId" IS NULL
+UNION ALL
 SELECT
-	CAST('p_' AS VARCHAR(2)),
+	NULL,
+	NULL,
+	NULL,
 	"e_1"."Id",
 	CAST('N' AS VARCHAR(1)),
-	"e_1"."Name"
+	"e_1"."Name",
+	NULL,
+	CAST('p_' AS VARCHAR(2)),
+	"e_1"."ParentId",
+	CAST('N' AS VARCHAR(1))
 FROM
 	"ConcatSetOpEntity" "e_1"
 WHERE
-	"e_1"."ParentId" IS NULL
+	"e_1"."ParentId" IS NOT NULL
 
 -- Firebird.5 Firebird4
 SELECT
