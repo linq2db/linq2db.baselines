@@ -1,4 +1,4 @@
-﻿-- Oracle.18.Managed Oracle.Managed Oracle12
+﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 SELECT
 	CAST('p_' AS VarChar(255)),
 	e."Id",
@@ -7,19 +7,19 @@ SELECT
 FROM
 	"ConcatSetOpEntity" e
 WHERE
-	e."Name" IS NOT NULL
-UNION
+	e."ParentId" IS NULL
+UNION ALL
 SELECT
-	CAST('p_' AS VarChar(255)),
+	CAST('c_' AS VarChar(255)),
 	e_1."Id",
 	CAST('N' AS VarChar(255)),
 	e_1."Name"
 FROM
 	"ConcatSetOpEntity" e_1
 WHERE
-	e_1."ParentId" IS NULL
+	e_1."ParentId" IS NOT NULL
 
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12
 SELECT
 	t1."Id",
 	t1."ParentId",
