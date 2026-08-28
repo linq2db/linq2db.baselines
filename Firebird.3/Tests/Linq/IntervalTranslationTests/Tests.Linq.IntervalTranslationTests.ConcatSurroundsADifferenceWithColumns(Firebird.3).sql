@@ -35,7 +35,7 @@ SELECT
 FROM
 	(
 		SELECT
-			"t1"."Source" = 1 as "c1",
+			"t1"."Source" = "t1"."c1" as "c1",
 			"t1"."Source",
 			"t1"."Duration",
 			"t1"."Source" as "Source_1",
@@ -46,6 +46,7 @@ FROM
 			(
 				SELECT
 					CAST(1 AS Int) as "Source",
+					CAST(1 AS Int) as "c1",
 					"r"."Budget" as "Duration",
 					NULL as "Duration_1"
 				FROM
@@ -53,6 +54,7 @@ FROM
 				UNION ALL
 				SELECT
 					CAST(2 AS Int) as "Source",
+					CAST(1 AS Int) as "c1",
 					NULL as "Duration",
 					CAST(DateDiff(millisecond, "r_1"."StartedOn", "r_1"."FinishedOn") * 10000 AS BigInt) as "Duration_1"
 				FROM
