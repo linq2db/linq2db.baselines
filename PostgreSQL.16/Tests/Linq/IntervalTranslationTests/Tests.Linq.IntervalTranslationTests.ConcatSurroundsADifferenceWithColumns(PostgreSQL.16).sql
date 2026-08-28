@@ -35,7 +35,7 @@ SELECT
 FROM
 	(
 		SELECT
-			t1."Source" = 1 as c1,
+			t1."Source" = t1.c1 as c1,
 			t1."Source",
 			t1."Duration",
 			t1."Source" as "Source_1",
@@ -46,6 +46,7 @@ FROM
 			(
 				SELECT
 					1::Int as "Source",
+					1::Int as c1,
 					r."Budget" as "Duration",
 					NULL::interval as "Duration_1"
 				FROM
@@ -53,6 +54,7 @@ FROM
 				UNION ALL
 				SELECT
 					2::Int as "Source",
+					1::Int as c1,
 					NULL::BigInt as "Duration",
 					r_1."FinishedOn" - r_1."StartedOn" as "Duration_1"
 				FROM
