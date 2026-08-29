@@ -7,17 +7,17 @@ SELECT
 FROM
 	ConcatSetOpEntity e
 WHERE
-	e.Name IS NOT NULL
-UNION
+	e.ParentId IS NULL
+UNION ALL
 SELECT
-	Unwrap(CAST('p_'u AS Text)) as c1,
+	Unwrap(CAST('c_'u AS Text)) as c1,
 	e_1.Id as Id,
 	Unwrap(CAST('N'u AS Text)) as c2,
 	e_1.Name as Name
 FROM
 	ConcatSetOpEntity e_1
 WHERE
-	e_1.ParentId IS NULL
+	e_1.ParentId IS NOT NULL
 
 -- YDB Ydb
 SELECT
