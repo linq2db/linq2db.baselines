@@ -1,4 +1,4 @@
-﻿-- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.Odbc AccessODBC
 SELECT
 	CStr('p_'),
 	[e].[Id],
@@ -7,19 +7,19 @@ SELECT
 FROM
 	[ConcatSetOpEntity] [e]
 WHERE
-	[e].[Name] IS NOT NULL
-UNION
+	[e].[ParentId] IS NULL
+UNION ALL
 SELECT
-	CStr('p_'),
+	CStr('c_'),
 	[e_1].[Id],
 	CStr('N'),
 	[e_1].[Name]
 FROM
 	[ConcatSetOpEntity] [e_1]
 WHERE
-	[e_1].[ParentId] IS NULL
+	[e_1].[ParentId] IS NOT NULL
 
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.Odbc AccessODBC
 SELECT
 	[t1].[Id],
 	[t1].[ParentId],

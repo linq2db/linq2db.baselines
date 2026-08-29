@@ -7,17 +7,17 @@ SELECT
 FROM
 	[ConcatSetOpEntity] [e]
 WHERE
-	[e].[ParentId] IS NULL
+	[e].[Name] IS NOT NULL
 UNION
 SELECT
-	CStr('c_'),
+	CStr('p_'),
 	[e_1].[Id],
 	CStr('N'),
 	[e_1].[Name]
 FROM
 	[ConcatSetOpEntity] [e_1]
 WHERE
-	[e_1].[ParentId] IS NOT NULL
+	[e_1].[ParentId] IS NULL
 
 -- Access.Jet.Odbc AccessODBC
 SELECT
