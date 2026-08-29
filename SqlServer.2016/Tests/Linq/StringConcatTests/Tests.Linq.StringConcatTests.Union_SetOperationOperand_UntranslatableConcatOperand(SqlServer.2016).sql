@@ -7,17 +7,17 @@ SELECT
 FROM
 	[ConcatSetOpEntity] [e]
 WHERE
-	[e].[ParentId] IS NULL
+	[e].[Name] IS NOT NULL
 UNION
 SELECT
-	CAST(N'c_' AS NVarChar(4000)),
+	CAST(N'p_' AS NVarChar(4000)),
 	[e_1].[Id],
 	CAST(N'N' AS NVarChar(4000)),
 	[e_1].[Name]
 FROM
 	[ConcatSetOpEntity] [e_1]
 WHERE
-	[e_1].[ParentId] IS NOT NULL
+	[e_1].[ParentId] IS NULL
 
 -- SqlServer.2016
 SELECT
