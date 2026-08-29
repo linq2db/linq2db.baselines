@@ -7,17 +7,17 @@ SELECT
 FROM
 	ConcatSetOpEntity e
 WHERE
-	e.ParentId IS NULL
+	e.Name IS NOT NULL
 UNION DISTINCT
 SELECT
-	toString('c_') as c1,
+	toString('p_') as c1,
 	e_1.Id as Id,
 	toString('N') as c2,
 	e_1.Name as Name
 FROM
 	ConcatSetOpEntity e_1
 WHERE
-	e_1.ParentId IS NOT NULL
+	e_1.ParentId IS NULL
 
 -- ClickHouse.MySql ClickHouse
 SELECT
