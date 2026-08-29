@@ -7,17 +7,17 @@ SELECT
 FROM
 	[ConcatSetOpEntity] [e]
 WHERE
-	[e].[Name] IS NOT NULL
-UNION
+	[e].[ParentId] IS NULL
+UNION ALL
 SELECT
-	CAST('p_' AS NVarChar(255)),
+	CAST('c_' AS NVarChar(255)),
 	[e_1].[Id],
 	CAST('N' AS NVarChar(255)),
 	[e_1].[Name]
 FROM
 	[ConcatSetOpEntity] [e_1]
 WHERE
-	[e_1].[ParentId] IS NULL
+	[e_1].[ParentId] IS NOT NULL
 
 -- SQLite.MS SQLite
 SELECT
