@@ -8,6 +8,7 @@ SELECT
 	COUNT(*) OVER (),
 	COUNT(1) OVER (),
 	SUM(1) OVER (),
+	ROW_NUMBER() OVER (),
 	COUNT(*) OVER () = :rowCount AND SUM(t."IntValue") OVER () > 0,
 	COUNT(*) OVER () = :p AND SUM(t."IntValue") OVER () > 0
 FROM
