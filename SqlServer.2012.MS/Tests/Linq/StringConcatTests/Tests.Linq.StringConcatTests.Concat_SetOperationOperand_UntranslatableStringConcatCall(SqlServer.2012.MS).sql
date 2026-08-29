@@ -1,4 +1,4 @@
-﻿-- SqlServer.2012
+﻿-- SqlServer.2012.MS SqlServer.2012
 SELECT
 	CAST(N'p_' AS NVarChar(4000)),
 	[e].[Id],
@@ -7,19 +7,19 @@ SELECT
 FROM
 	[ConcatSetOpEntity] [e]
 WHERE
-	[e].[Name] IS NOT NULL
-UNION
+	[e].[ParentId] IS NULL
+UNION ALL
 SELECT
-	CAST(N'p_' AS NVarChar(4000)),
+	CAST(N'c_' AS NVarChar(4000)),
 	[e_1].[Id],
 	CAST(N'N' AS NVarChar(4000)),
 	[e_1].[Name]
 FROM
 	[ConcatSetOpEntity] [e_1]
 WHERE
-	[e_1].[ParentId] IS NULL
+	[e_1].[ParentId] IS NOT NULL
 
--- SqlServer.2012
+-- SqlServer.2012.MS SqlServer.2012
 SELECT
 	[t1].[Id],
 	[t1].[ParentId],
