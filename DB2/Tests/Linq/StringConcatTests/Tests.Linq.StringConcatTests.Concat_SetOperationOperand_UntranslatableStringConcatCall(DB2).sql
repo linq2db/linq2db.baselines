@@ -7,17 +7,17 @@ SELECT
 FROM
 	"ConcatSetOpEntity" "e"
 WHERE
-	"e"."Name" IS NOT NULL
-UNION
+	"e"."ParentId" IS NULL
+UNION ALL
 SELECT
-	VarChar('p_', 255),
+	VarChar('c_', 255),
 	"e_1"."Id",
 	VarChar('N', 255),
 	"e_1"."Name"
 FROM
 	"ConcatSetOpEntity" "e_1"
 WHERE
-	"e_1"."ParentId" IS NULL
+	"e_1"."ParentId" IS NOT NULL
 
 -- DB2 DB2.LUW DB2LUW
 SELECT

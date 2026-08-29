@@ -7,17 +7,17 @@ SELECT
 FROM
 	ConcatSetOpEntity e
 WHERE
-	e.Name IS NOT NULL
-UNION
+	e.ParentId IS NULL
+UNION ALL
 SELECT
-	CAST('p_' AS VARCHAR),
+	CAST('c_' AS VARCHAR),
 	e_1.Id,
 	CAST('N' AS VARCHAR),
 	e_1.Name
 FROM
 	ConcatSetOpEntity e_1
 WHERE
-	e_1.ParentId IS NULL
+	e_1.ParentId IS NOT NULL
 
 -- DuckDB
 SELECT
