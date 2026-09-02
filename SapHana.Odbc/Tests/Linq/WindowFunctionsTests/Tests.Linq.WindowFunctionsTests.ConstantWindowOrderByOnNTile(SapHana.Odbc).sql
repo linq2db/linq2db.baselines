@@ -4,7 +4,7 @@ SELECT
 	NTILE(4) OVER (ORDER BY (
 		SELECT
 			1
-FROM DUMMY
+		FROM DUMMY
 	))
 FROM
 	"WindowFunctionTestEntity" "t"

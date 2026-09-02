@@ -36,7 +36,7 @@ FROM
 	(
 		SELECT
 			1 as "c1"
-FROM DUMMY
+		FROM DUMMY
 	) "t1"
 		LEFT JOIN "InsertFromWithConstantsTable" "r" ON "r"."Id" = ?
 

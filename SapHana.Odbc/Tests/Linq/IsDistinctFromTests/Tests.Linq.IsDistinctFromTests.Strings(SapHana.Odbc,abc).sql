@@ -10,11 +10,11 @@ WHERE
 	NOT EXISTS(
 		SELECT
 			"s"."String"
-FROM DUMMY
+		FROM DUMMY
 		INTERSECT
 		SELECT
 			?
-FROM DUMMY
+		FROM DUMMY
 	)
 
 -- SapHana.Odbc SapHanaOdbc
@@ -29,11 +29,11 @@ WHERE
 	NOT EXISTS(
 		SELECT
 			"s"."NullableString"
-FROM DUMMY
+		FROM DUMMY
 		INTERSECT
 		SELECT
 			?
-FROM DUMMY
+		FROM DUMMY
 	)
 
 -- SapHana.Odbc SapHanaOdbc
@@ -48,11 +48,11 @@ WHERE
 	EXISTS(
 		SELECT
 			"s"."String"
-FROM DUMMY
+		FROM DUMMY
 		INTERSECT
 		SELECT
 			?
-FROM DUMMY
+		FROM DUMMY
 	)
 
 -- SapHana.Odbc SapHanaOdbc
@@ -67,10 +67,10 @@ WHERE
 	EXISTS(
 		SELECT
 			"s"."NullableString"
-FROM DUMMY
+		FROM DUMMY
 		INTERSECT
 		SELECT
 			?
-FROM DUMMY
+		FROM DUMMY
 	)
 

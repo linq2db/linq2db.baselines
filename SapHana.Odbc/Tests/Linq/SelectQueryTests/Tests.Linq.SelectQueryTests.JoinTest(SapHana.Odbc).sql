@@ -10,6 +10,6 @@ FROM
 			SELECT
 				1 as "Key_1",
 				3 as "SecondValue"
-FROM DUMMY
+			FROM DUMMY
 		) "s" ON 1 = "t"."Id"
 

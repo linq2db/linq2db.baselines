@@ -7,11 +7,11 @@ WHERE
 	EXISTS(
 		SELECT
 			"r"."One"
-FROM DUMMY
+		FROM DUMMY
 		INTERSECT
 		SELECT
 			"r"."One"
-FROM DUMMY
+		FROM DUMMY
 	)
 
 -- SapHana.Odbc SapHanaOdbc
@@ -23,11 +23,11 @@ WHERE
 	EXISTS(
 		SELECT
 			"r"."Zero"
-FROM DUMMY
+		FROM DUMMY
 		INTERSECT
 		SELECT
 			"r"."Zero"
-FROM DUMMY
+		FROM DUMMY
 	)
 
 -- SapHana.Odbc SapHanaOdbc
@@ -39,11 +39,11 @@ WHERE
 	EXISTS(
 		SELECT
 			"r"."Null"
-FROM DUMMY
+		FROM DUMMY
 		INTERSECT
 		SELECT
 			"r"."Null"
-FROM DUMMY
+		FROM DUMMY
 	)
 
 -- SapHana.Odbc SapHanaOdbc
@@ -55,11 +55,11 @@ WHERE
 	EXISTS(
 		SELECT
 			"r"."One"
-FROM DUMMY
+		FROM DUMMY
 		INTERSECT
 		SELECT
 			"r"."Zero"
-FROM DUMMY
+		FROM DUMMY
 	)
 
 -- SapHana.Odbc SapHanaOdbc
@@ -71,11 +71,11 @@ WHERE
 	EXISTS(
 		SELECT
 			"r"."One"
-FROM DUMMY
+		FROM DUMMY
 		INTERSECT
 		SELECT
 			"r"."Null"
-FROM DUMMY
+		FROM DUMMY
 	)
 
 -- SapHana.Odbc SapHanaOdbc
@@ -87,11 +87,11 @@ WHERE
 	EXISTS(
 		SELECT
 			"r"."Zero"
-FROM DUMMY
+		FROM DUMMY
 		INTERSECT
 		SELECT
 			"r"."Null"
-FROM DUMMY
+		FROM DUMMY
 	)
 
 -- SapHana.Odbc SapHanaOdbc
@@ -103,11 +103,11 @@ WHERE
 	NOT EXISTS(
 		SELECT
 			"r"."One"
-FROM DUMMY
+		FROM DUMMY
 		INTERSECT
 		SELECT
 			"r"."One"
-FROM DUMMY
+		FROM DUMMY
 	)
 
 -- SapHana.Odbc SapHanaOdbc
@@ -119,11 +119,11 @@ WHERE
 	NOT EXISTS(
 		SELECT
 			"r"."Zero"
-FROM DUMMY
+		FROM DUMMY
 		INTERSECT
 		SELECT
 			"r"."Zero"
-FROM DUMMY
+		FROM DUMMY
 	)
 
 -- SapHana.Odbc SapHanaOdbc
@@ -135,27 +135,11 @@ WHERE
 	NOT EXISTS(
 		SELECT
 			"r"."Null"
-FROM DUMMY
+		FROM DUMMY
 		INTERSECT
 		SELECT
 			"r"."Null"
-FROM DUMMY
-	)
-
--- SapHana.Odbc SapHanaOdbc
-SELECT
-	COUNT(*)
-FROM
-	"FeatureTable" "r"
-WHERE
-	NOT EXISTS(
-		SELECT
-			"r"."One"
-FROM DUMMY
-		INTERSECT
-		SELECT
-			"r"."Zero"
-FROM DUMMY
+		FROM DUMMY
 	)
 
 -- SapHana.Odbc SapHanaOdbc
@@ -167,11 +151,27 @@ WHERE
 	NOT EXISTS(
 		SELECT
 			"r"."One"
-FROM DUMMY
+		FROM DUMMY
+		INTERSECT
+		SELECT
+			"r"."Zero"
+		FROM DUMMY
+	)
+
+-- SapHana.Odbc SapHanaOdbc
+SELECT
+	COUNT(*)
+FROM
+	"FeatureTable" "r"
+WHERE
+	NOT EXISTS(
+		SELECT
+			"r"."One"
+		FROM DUMMY
 		INTERSECT
 		SELECT
 			"r"."Null"
-FROM DUMMY
+		FROM DUMMY
 	)
 
 -- SapHana.Odbc SapHanaOdbc
@@ -183,10 +183,10 @@ WHERE
 	NOT EXISTS(
 		SELECT
 			"r"."Zero"
-FROM DUMMY
+		FROM DUMMY
 		INTERSECT
 		SELECT
 			"r"."Null"
-FROM DUMMY
+		FROM DUMMY
 	)
 
