@@ -35,8 +35,7 @@ WHERE
 				FROM
 					$CTE_1 t2
 			)
-	) OR
-	EXISTS(
+	) OR EXISTS(
 		SELECT
 			1
 		FROM

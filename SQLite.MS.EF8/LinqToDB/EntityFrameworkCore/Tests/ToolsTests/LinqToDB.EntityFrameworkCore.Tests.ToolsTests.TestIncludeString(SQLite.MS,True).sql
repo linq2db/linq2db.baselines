@@ -83,7 +83,7 @@ FROM
 		INNER JOIN [Order Details] [d] ON [m_1].[OrderId] = [d].[OrderID]
 		INNER JOIN [Products] [a_Product] ON [d].[ProductID] = [a_Product].[ProductID]
 WHERE
-	NOT [a_Product].[IsDeleted] AND NOT [d].[IsDeleted]
+	NOT ([a_Product].[IsDeleted] OR [d].[IsDeleted])
 
 
 

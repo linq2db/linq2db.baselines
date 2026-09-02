@@ -1786,8 +1786,7 @@ SELECT
 FROM
 	`OptimizationData` `swap`
 WHERE
-	`swap`.`IntVlaue` <> 0 AND `swap`.`IntVlaue` >= 4 OR
-	`swap`.`IntVlaue` < 4
+	`swap`.`IntVlaue` <> 0 AND `swap`.`IntVlaue` >= 4 OR `swap`.`IntVlaue` < 4
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 SELECT

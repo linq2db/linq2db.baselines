@@ -58,10 +58,7 @@ SELECT
 FROM
 	"Base" e
 WHERE
-	e."Code" = 'BaseChild' OR
-	e."Code" = 'Child' OR
-	e."Code" = 'Child2' OR
-	e."Id" = 0
+	e."Code" = 'BaseChild' OR e."Code" = 'Child' OR e."Code" = 'Child2' OR e."Id" = 0
 ORDER BY
 	e."Id"
 

@@ -30,7 +30,8 @@ VALUES
 )
 
 -- Access.Jet.Odbc AccessODBC
-SELECT @@IDENTITY
+SELECT
+	@@IDENTITY
 
 -- Access.Jet.Odbc AccessODBC
 DECLARE @p NVarChar(5) -- String
@@ -73,7 +74,8 @@ VALUES
 )
 
 -- Access.Jet.Odbc AccessODBC
-SELECT @@IDENTITY
+SELECT
+	@@IDENTITY
 
 -- Access.Jet.Odbc AccessODBC
 DECLARE @p NVarChar(5) -- String
