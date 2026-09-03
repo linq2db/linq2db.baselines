@@ -1,5 +1,5 @@
 ﻿-- Oracle.18.Managed Oracle.Managed Oracle12
-SELECT /*+ NOCACHE(p) CLUSTER(p) NOCACHE(c_1) CLUSTER(c_1) FULL(c1) NOCACHE(c1) CLUSTER(c1) CLUSTER(c_2) CLUSTER(a_Parent) PARALLEL(p1) CLUSTER(p1) */
+SELECT /*+ NOCACHE(p) NOCACHE(c_1) FULL(c1) NOCACHE(c1) CLUSTER(c_2) CLUSTER(a_Parent) PARALLEL(p1) */
 	p."ParentID",
 	p."Value1"
 FROM
