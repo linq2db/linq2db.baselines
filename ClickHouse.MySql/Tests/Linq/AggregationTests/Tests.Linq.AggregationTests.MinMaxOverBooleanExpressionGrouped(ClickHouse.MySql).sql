@@ -1,14 +1,8 @@
 ﻿-- ClickHouse.MySql ClickHouse
 SELECT
 	g_1.ItemId,
-	MAX(CASE
-		WHEN g_1.Value = '10' THEN 1
-		ELSE 0
-	END),
-	MIN(CASE
-		WHEN g_1.Value = '10' THEN 1
-		ELSE 0
-	END)
+	MAX(g_1.Value = '10'),
+	MIN(g_1.Value = '10')
 FROM
 	ItemValue g_1
 GROUP BY
