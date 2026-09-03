@@ -1,8 +1,8 @@
 ﻿-- Access.Jet.Odbc AccessODBC
 DECLARE @startId Int -- Int32
 SET     @startId = 5
-DECLARE @p Int -- Int32
-SET     @p = 14
+DECLARE @parameters Int -- Int32
+SET     @parameters = 14
 
 SELECT
 	[s].[value],
