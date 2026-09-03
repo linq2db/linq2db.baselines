@@ -2,7 +2,6 @@
 UPDATE
 	[InheritanceFilter]
 SET
-	[Id] = [InheritanceFilter].[Id],
 	[Code] = [InheritanceFilter].[Code]
 OUTPUT
 	DELETED.[Id],
