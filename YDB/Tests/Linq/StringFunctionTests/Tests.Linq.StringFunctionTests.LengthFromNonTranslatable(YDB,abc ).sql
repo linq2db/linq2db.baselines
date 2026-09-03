@@ -2,7 +2,7 @@
 SELECT
 	t.Str as Str,
 	CAST(Unicode::GetLength(t.Str) AS Int32) as Length_1,
-	'original-'u || Coalesce(t.Str, ''u) as c1
+	'original-'u || Coalesce(t.Str, ''u) as Condition_1
 FROM
 	TestLengthModel t
 
