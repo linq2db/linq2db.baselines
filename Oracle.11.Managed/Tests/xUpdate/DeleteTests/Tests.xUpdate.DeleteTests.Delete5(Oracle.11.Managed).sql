@@ -11,8 +11,8 @@ WHERE
 	t1."ParentID" > 1000
 
 -- Oracle.11.Managed Oracle11
-DECLARE @ParentID Int32
-SET     @ParentID = 1001
+DECLARE @values_1 Int32
+SET     @values_1 = 1001
 
 INSERT INTO "Parent"
 (
@@ -21,13 +21,13 @@ INSERT INTO "Parent"
 )
 VALUES
 (
-	:ParentID,
+	:values_1,
 	1
 )
 
 -- Oracle.11.Managed Oracle11
-DECLARE @ParentID Int32
-SET     @ParentID = 1002
+DECLARE @values_1 Int32
+SET     @values_1 = 1002
 
 INSERT INTO "Parent"
 (
@@ -36,7 +36,7 @@ INSERT INTO "Parent"
 )
 VALUES
 (
-	:ParentID,
+	:values_1,
 	1
 )
 
