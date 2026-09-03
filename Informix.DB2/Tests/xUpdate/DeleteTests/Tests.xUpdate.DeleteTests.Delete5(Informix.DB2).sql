@@ -11,8 +11,8 @@ WHERE
 	Parent.ParentID > 1000
 
 -- Informix.DB2 Informix
-DECLARE @ParentID Integer(4) -- Int32
-SET     @ParentID = 1001
+DECLARE @values Integer(4) -- Int32
+SET     @values = 1001
 
 INSERT INTO Parent
 (
@@ -21,13 +21,13 @@ INSERT INTO Parent
 )
 VALUES
 (
-	@ParentID,
+	@values,
 	1
 )
 
 -- Informix.DB2 Informix
-DECLARE @ParentID Integer(4) -- Int32
-SET     @ParentID = 1002
+DECLARE @values Integer(4) -- Int32
+SET     @values = 1002
 
 INSERT INTO Parent
 (
@@ -36,7 +36,7 @@ INSERT INTO Parent
 )
 VALUES
 (
-	@ParentID,
+	@values,
 	1
 )
 
