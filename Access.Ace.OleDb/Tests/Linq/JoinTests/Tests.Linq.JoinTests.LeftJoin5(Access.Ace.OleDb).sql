@@ -1,9 +1,9 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
 SELECT
-	[ch].[ParentID],
-	[ch].[ChildID],
-	[p].[ParentID] as [ParentID_1],
-	[p].[Value1]
+	[p].[ParentID],
+	[p].[Value1],
+	[ch].[ParentID] as [ParentID_1],
+	[ch].[ChildID]
 FROM
 	[Parent] [p]
 		LEFT JOIN [Child] [ch] ON ([p].[ParentID] = [ch].[ParentID])
