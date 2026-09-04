@@ -8,8 +8,9 @@ SELECT
 	COUNT(*) OVER () as c1,
 	COUNT(1) OVER () as c2,
 	SUM(1) OVER () as c3,
-	COUNT(*) OVER () = $rowCount AND SUM(t.IntValue) OVER () > 0 as c4,
-	COUNT(*) OVER () = $p AND SUM(t.IntValue) OVER () > 0 as c5
+	ROW_NUMBER() OVER () as c4,
+	COUNT(*) OVER () = $rowCount AND SUM(t.IntValue) OVER () > 0 as c5,
+	COUNT(*) OVER () = $p AND SUM(t.IntValue) OVER () > 0 as c6
 FROM
 	WindowFunctionTestEntity t
 

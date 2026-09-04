@@ -8,6 +8,10 @@ SELECT
 	COUNT(*) OVER (),
 	COUNT(1) OVER (),
 	SUM(1) OVER (),
+	ROW_NUMBER() OVER (ORDER BY (
+		SELECT
+			1
+	)),
 	CASE
 		WHEN COUNT(*) OVER () = @rowCount AND SUM([t].[IntValue]) OVER () > 0
 			THEN 1

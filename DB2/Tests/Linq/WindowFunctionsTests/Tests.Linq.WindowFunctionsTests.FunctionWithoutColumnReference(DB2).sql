@@ -8,6 +8,7 @@ SELECT
 	COUNT(*) OVER (),
 	COUNT(1) OVER (),
 	SUM(1) OVER (),
+	ROW_NUMBER() OVER (),
 	CAST(COUNT(*) OVER () = CAST(@rowCount AS Int) AND SUM("t"."IntValue") OVER () > 0 AS smallint),
 	CAST(COUNT(*) OVER () = CAST(@p AS Int) AND SUM("t"."IntValue") OVER () > 0 AS smallint)
 FROM

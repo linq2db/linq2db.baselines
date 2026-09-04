@@ -28,6 +28,6 @@ FROM
 		SELECT
 			Add_Days(CURRENT_TIMESTAMP, 3) as "Value1",
 			Add_Days(CURRENT_TIMESTAMP, 4) as "Value2"
-FROM DUMMY
+		FROM DUMMY
 	) "v_1"
 
