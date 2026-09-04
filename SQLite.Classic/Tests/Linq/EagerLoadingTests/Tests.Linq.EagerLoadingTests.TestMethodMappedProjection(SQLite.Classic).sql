@@ -5,9 +5,7 @@ SET     @intParam = 1
 SELECT
 	[m_2].[DetailId],
 	[m_2].[Id1],
-	[d_1].[SubDetailId],
-	[d_1].[DetailId],
-	[d_1].[SubDetailValue]
+	Coalesce([d_1].[SubDetailValue], '') || '_Projected'
 FROM
 	(
 		SELECT DISTINCT
