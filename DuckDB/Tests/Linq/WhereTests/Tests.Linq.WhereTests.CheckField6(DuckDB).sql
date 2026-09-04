@@ -1,8 +1,8 @@
 ﻿-- DuckDB
 SELECT
-	p.ParentID,
 	p.Value1,
-	p.Value1 * 100
+	p.Value1 * 100,
+	p.ParentID
 FROM
 	Parent p
 WHERE
