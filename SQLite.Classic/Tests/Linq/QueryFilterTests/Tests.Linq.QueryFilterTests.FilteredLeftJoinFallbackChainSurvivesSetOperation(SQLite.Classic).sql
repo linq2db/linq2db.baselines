@@ -26,8 +26,8 @@ FROM
 		LEFT JOIN (
 			SELECT
 				[i].[Id],
-				Coalesce([i].[Value], '') || '?' as [Value_1],
-				[i].[MasterId]
+				[i].[MasterId],
+				Coalesce([i].[Value], '') || '?' as [Value_1]
 			FROM
 				[InfoClass] [i]
 			WHERE
@@ -56,8 +56,8 @@ FROM
 		LEFT JOIN (
 			SELECT
 				[i_2].[Id],
-				Coalesce([i_2].[Value], '') || '?' as [Value_1],
-				[i_2].[MasterId]
+				[i_2].[MasterId],
+				Coalesce([i_2].[Value], '') || '?' as [Value_1]
 			FROM
 				[InfoClass] [i_2]
 			WHERE
@@ -86,8 +86,8 @@ FROM
 		LEFT JOIN (
 			SELECT
 				[i_4].[Id],
-				Coalesce([i_4].[Value], '') || '?' as [Value_1],
-				[i_4].[MasterId]
+				[i_4].[MasterId],
+				Coalesce([i_4].[Value], '') || '?' as [Value_1]
 			FROM
 				[InfoClass] [i_4]
 			WHERE

@@ -220,15 +220,15 @@ FROM
 -- Firebird.5 Firebird4
 MERGE INTO "TestMerge1" "Target"
 USING (
-	SELECT 1 AS "Id", 123 AS "Field1", CAST(NULL AS Int) AS "Field2", CAST(NULL AS Int) AS "Field3" FROM rdb$database
-	UNION ALL
-	SELECT 3, NULL, 3, NULL FROM rdb$database
+	SELECT 3 AS "Id", CAST(NULL AS Int) AS "Field1", 3 AS "Field2", CAST(NULL AS Int) AS "Field3" FROM rdb$database
 	UNION ALL
 	SELECT 4, 5, 7, NULL FROM rdb$database
 	UNION ALL
 	SELECT 5, 10, 4, NULL FROM rdb$database
 	UNION ALL
-	SELECT 6, NULL, NULL, NULL FROM rdb$database) "Source"
+	SELECT 6, NULL, NULL, NULL FROM rdb$database
+	UNION ALL
+	SELECT 1, 123, NULL, NULL FROM rdb$database) "Source"
 (
 	"Id",
 	"Field1",
