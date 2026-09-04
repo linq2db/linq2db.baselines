@@ -1,8 +1,8 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 SELECT
-	`p`.`ParentID`,
 	`p`.`Value1`,
-	`p`.`Value1` * 100
+	`p`.`Value1` * 100,
+	`p`.`ParentID`
 FROM
 	`Parent` `p`
 WHERE

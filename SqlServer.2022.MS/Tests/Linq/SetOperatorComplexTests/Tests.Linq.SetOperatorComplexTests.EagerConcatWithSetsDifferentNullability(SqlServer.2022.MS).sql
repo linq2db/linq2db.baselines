@@ -159,8 +159,8 @@ FROM
 				[a_Book_1].[Discriminator],
 				[a_Book_1].[BookId],
 				[a_Book_1].[BookName],
-				[a_Book_1].[RomanScore],
-				[a_Book_1].[NovelScore]
+				[a_Book_1].[NovelScore],
+				[a_Book_1].[RomanScore]
 			FROM
 				[BookAuthor] [d]
 					LEFT JOIN [Book] [a_Book_1] ON [d].[FkBookId] = [a_Book_1].[BookId]

@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
 SELECT
-	p.ParentID as ParentID,
 	p.Value1 as Value1,
-	p.Value1 * 100 as Value_1
+	p.Value1 * 100 as Value_1,
+	p.ParentID as ParentID
 FROM
 	Parent p
 WHERE
