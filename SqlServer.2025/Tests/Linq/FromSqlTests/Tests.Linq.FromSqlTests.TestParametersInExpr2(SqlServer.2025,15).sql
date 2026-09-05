@@ -1,8 +1,8 @@
 ﻿-- SqlServer.2025
 DECLARE @startId BigInt -- Int64
 SET     @startId = 5
-DECLARE @parameters Int -- Int32
-SET     @parameters = 15
+DECLARE @parameters_2 Int -- Int32
+SET     @parameters_2 = 15
 
 SELECT
 	[s].[value],
@@ -10,7 +10,7 @@ SELECT
 FROM
 	[sample_class] [t1]
 		INNER JOIN (
-			SELECT * FROM [sample_class] where [id] >= @startId and [id] < @parameters
+			SELECT * FROM [sample_class] where [id] >= @startId and [id] < @parameters_2
 		) [s] ON [s].[id] = [t1].[id]
 WHERE
 	[s].[id] > 10
