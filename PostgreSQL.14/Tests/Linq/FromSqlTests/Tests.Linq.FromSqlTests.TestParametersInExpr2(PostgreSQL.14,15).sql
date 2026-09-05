@@ -1,8 +1,8 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DECLARE @startId Bigint -- Int64
 SET     @startId = 5
-DECLARE @parameters Integer -- Int32
-SET     @parameters = 15
+DECLARE @parameters_2 Integer -- Int32
+SET     @parameters_2 = 15
 
 SELECT
 	s.value,
@@ -10,7 +10,7 @@ SELECT
 FROM
 	sample_class t1
 		INNER JOIN (
-			SELECT * FROM sample_class where id >= :startId and id < :parameters
+			SELECT * FROM sample_class where id >= :startId and id < :parameters_2
 		) s ON s.id = t1.id
 WHERE
 	s.id > 10
