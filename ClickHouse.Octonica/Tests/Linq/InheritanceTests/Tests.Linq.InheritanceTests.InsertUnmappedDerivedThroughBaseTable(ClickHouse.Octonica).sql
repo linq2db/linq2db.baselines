@@ -1,8 +1,6 @@
 ﻿-- ClickHouse.Octonica ClickHouse
 SELECT
-	p.PersonID
+	COUNT(*)
 FROM
-	Person p
-WHERE
-	p.Gender = 'M'
+	InheritanceFilter t1
 
