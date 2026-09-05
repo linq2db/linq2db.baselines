@@ -19,8 +19,6 @@ SELECT
 	x."NullableShortValue",
 	x."ByteValue",
 	x."NullableByteValue",
-	x."BoolValue",
-	x."NullableBoolValue",
 	CUME_DIST() OVER (PARTITION BY x."CategoryId" ORDER BY x."Timestamp" NULLS FIRST),
 	CUME_DIST() OVER (PARTITION BY x."CategoryId" ORDER BY x."Timestamp" DESC NULLS LAST)
 FROM
