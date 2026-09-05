@@ -19,8 +19,6 @@ SELECT
 	"x"."NullableShortValue",
 	"x"."ByteValue",
 	"x"."NullableByteValue",
-	"x"."BoolValue",
-	"x"."NullableBoolValue",
 	ROW_NUMBER() OVER (ORDER BY "x"."Timestamp"),
 	ROW_NUMBER() OVER (ORDER BY "x"."Value"),
 	ROW_NUMBER() OVER (ORDER BY "x"."Timestamp" DESC),

@@ -19,8 +19,6 @@ SELECT
 	x.NullableShortValue,
 	x.ByteValue,
 	x.NullableByteValue,
-	x.BoolValue,
-	x.NullableBoolValue,
 	NTILE(4) OVER (ORDER BY x.Timestamp),
 	NTILE(4) OVER (ORDER BY x.Value),
 	NTILE(4) OVER (ORDER BY x.Timestamp DESC),
