@@ -1,8 +1,8 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @startId Int64
 SET     @startId = 5
-DECLARE @parameters Int32
-SET     @parameters = 14
+DECLARE @parameters_2 Int32
+SET     @parameters_2 = 14
 
 SELECT
 	s."value",
@@ -10,7 +10,7 @@ SELECT
 FROM
 	"sample_class" t1
 		INNER JOIN (
-			SELECT * FROM "sample_class" where "id" >= :startId and "id" < :parameters
+			SELECT * FROM "sample_class" where "id" >= :startId and "id" < :parameters_2
 		) s ON s."id" = t1."id"
 WHERE
 	s."id" > 10
