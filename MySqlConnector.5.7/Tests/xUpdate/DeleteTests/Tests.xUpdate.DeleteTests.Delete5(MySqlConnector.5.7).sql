@@ -13,8 +13,8 @@ WHERE
 	`Parent`.`ParentID` > 1000
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @values Int32
-SET     @values = 1001
+DECLARE @values_0 Int32
+SET     @values_0 = 1001
 
 INSERT INTO `Parent`
 (
@@ -23,13 +23,13 @@ INSERT INTO `Parent`
 )
 VALUES
 (
-	@values,
+	@values_0,
 	1
 )
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @values Int32
-SET     @values = 1002
+DECLARE @values_0 Int32
+SET     @values_0 = 1002
 
 INSERT INTO `Parent`
 (
@@ -38,7 +38,7 @@ INSERT INTO `Parent`
 )
 VALUES
 (
-	@values,
+	@values_0,
 	1
 )
 
