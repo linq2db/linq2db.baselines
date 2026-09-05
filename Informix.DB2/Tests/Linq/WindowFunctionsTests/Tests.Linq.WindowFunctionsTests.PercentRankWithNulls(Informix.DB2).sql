@@ -19,8 +19,6 @@ SELECT
 	x.NullableShortValue,
 	x.ByteValue,
 	x.NullableByteValue,
-	x.BoolValue,
-	x.NullableBoolValue,
 	PERCENT_RANK() OVER (PARTITION BY x.CategoryId ORDER BY x."Timestamp"),
 	PERCENT_RANK() OVER (PARTITION BY x.CategoryId ORDER BY x."Timestamp" DESC)
 FROM
