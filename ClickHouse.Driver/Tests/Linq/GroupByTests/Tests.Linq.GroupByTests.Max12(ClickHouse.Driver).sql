@@ -1,9 +1,6 @@
 ﻿-- ClickHouse.Driver ClickHouse
 SELECT
-	maxOrNull(CASE
-		WHEN t1.ChildID > 20 THEN 1
-		ELSE 0
-	END)
+	maxOrNull(t1.ChildID > 20)
 FROM
 	Child t1
 
