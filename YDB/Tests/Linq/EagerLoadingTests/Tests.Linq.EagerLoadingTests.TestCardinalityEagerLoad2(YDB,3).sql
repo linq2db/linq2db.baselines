@@ -21,8 +21,8 @@ SELECT
 	d.Id as Id_1,
 	d.FK as FK,
 	d.FKD as FKD,
-	d.Id as Id_2,
-	a_ObjectD.Id as Id_3,
+	d.Id as ObjectsC_1,
+	a_ObjectD.Id as Id_2,
 	a_ObjectD.FK as FK_1
 FROM
 	EntityMA m_1

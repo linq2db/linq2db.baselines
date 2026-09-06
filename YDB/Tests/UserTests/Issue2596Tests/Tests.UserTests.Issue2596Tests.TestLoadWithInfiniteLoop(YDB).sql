@@ -134,21 +134,21 @@ SELECT
 	a_RefundBy.RectifyingInvoiceId as RectifyingInvoiceId_2,
 	a_RefundBy.RefundByInvoiceId as RefundByInvoiceId_2,
 	a_PendingState.Id as Id_4,
-	a_Invoice.Id as Id_5,
-	a_Contract.Id as Id_6,
-	a_AccessTariff.Id as Id_7,
-	a_ServicePoint.Id as Id_8,
+	a_Invoice.Id as Lines_1,
+	a_Contract.Id as Id_5,
+	a_AccessTariff.Id as Id_6,
+	a_ServicePoint.Id as Id_7,
 	a_ServicePoint.TownId as TownId,
 	a_ServicePoint.StreetTypeId as StreetTypeId,
-	a_Town.Id as Id_9,
+	a_Town.Id as Id_8,
 	a_Town.StateId as StateId,
-	a_State.Id as Id_10,
+	a_State.Id as Id_9,
 	a_State.CountryId as CountryId,
 	a_State.AutonomousCommunityId as AutonomousCommunityId,
-	a_Community.Id as Id_11,
-	a_StreetType.Id as Id_12,
-	f.Id as Id_13,
-	a_PriceList.Id as Id_14
+	a_Community.Id as Id_10,
+	a_StreetType.Id as Id_11,
+	f.Id as Id_12,
+	a_PriceList.Id as Id_13
 FROM
 	CustomInvoice f
 		INNER JOIN Invoice a_Invoice ON f.InvoiceId = a_Invoice.Id
