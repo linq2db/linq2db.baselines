@@ -26,8 +26,8 @@ VALUES
 )
 
 -- Access.Ace.OleDb AccessOleDb
-DECLARE @values_0 Integer -- Int32
-SET     @values_0 = 1002
+DECLARE @values_1 Integer -- Int32
+SET     @values_1 = 1002
 
 INSERT INTO [Parent]
 (
@@ -36,7 +36,7 @@ INSERT INTO [Parent]
 )
 VALUES
 (
-	@values_0,
+	@values_1,
 	1
 )
 
