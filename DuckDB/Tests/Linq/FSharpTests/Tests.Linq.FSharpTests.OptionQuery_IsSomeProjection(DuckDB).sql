@@ -63,11 +63,9 @@ VALUES
 
 -- DuckDB
 SELECT
-	x.Name
+	x.Name IS NOT NULL
 FROM
 	OptRow x
-WHERE
-	x.Name IS NOT NULL
 ORDER BY
 	x.Id
 
