@@ -21,7 +21,7 @@ SELECT
 	d.Id as Id_1,
 	d.FK as FK,
 	d.FKD as FKD,
-	d.Id as Id_2
+	d.Id as ObjectsC_1
 FROM
 	EntityMA m_1
 		INNER JOIN EntityMB d ON m_1.Id = d.FK

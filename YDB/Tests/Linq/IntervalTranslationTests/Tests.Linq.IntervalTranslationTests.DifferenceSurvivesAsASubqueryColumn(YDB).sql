@@ -47,9 +47,9 @@ SELECT
 FROM
 	(
 		SELECT
+			Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l as Taken,
 			Unwrap(CAST(Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l AS Double)) / Double('36000000000') as TotalHours,
-			r.Id as Id,
-			Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l as Taken
+			r.Id as Id
 		FROM
 			EventRow r
 	) t1
