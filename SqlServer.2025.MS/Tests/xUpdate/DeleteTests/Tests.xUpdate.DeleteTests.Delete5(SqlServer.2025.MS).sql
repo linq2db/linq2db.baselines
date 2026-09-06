@@ -13,8 +13,8 @@ WHERE
 	[t1].[ParentID] > 1000
 
 -- SqlServer.2025.MS SqlServer.2025
-DECLARE @values_0 Int -- Int32
-SET     @values_0 = 1001
+DECLARE @values Int -- Int32
+SET     @values = 1001
 
 INSERT INTO [Parent]
 (
@@ -23,13 +23,13 @@ INSERT INTO [Parent]
 )
 VALUES
 (
-	@values_0,
+	@values,
 	1
 )
 
 -- SqlServer.2025.MS SqlServer.2025
-DECLARE @values_0 Int -- Int32
-SET     @values_0 = 1002
+DECLARE @values Int -- Int32
+SET     @values = 1002
 
 INSERT INTO [Parent]
 (
@@ -38,7 +38,7 @@ INSERT INTO [Parent]
 )
 VALUES
 (
-	@values_0,
+	@values,
 	1
 )
 
