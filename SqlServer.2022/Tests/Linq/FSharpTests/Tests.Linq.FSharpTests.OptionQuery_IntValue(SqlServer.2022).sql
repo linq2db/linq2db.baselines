@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025
+﻿-- SqlServer.2022
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(4000) -- String
@@ -19,7 +19,7 @@ VALUES
 	@Age
 )
 
--- SqlServer.2025.MS SqlServer.2025
+-- SqlServer.2022
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Name NVarChar(4000) -- String
@@ -40,7 +40,7 @@ VALUES
 	@Age
 )
 
--- SqlServer.2025.MS SqlServer.2025
+-- SqlServer.2022
 DECLARE @Id Int -- Int32
 SET     @Id = 3
 DECLARE @Name NVarChar(4000) -- String
@@ -61,13 +61,13 @@ VALUES
 	@Age
 )
 
--- SqlServer.2025.MS SqlServer.2025
+-- SqlServer.2022
 SELECT
-	[x].[Name]
+	[x].[Age]
 FROM
 	[OptRow] [x]
 WHERE
-	[x].[Name] IS NOT NULL
+	[x].[Age] IS NOT NULL
 ORDER BY
 	[x].[Id]
 
