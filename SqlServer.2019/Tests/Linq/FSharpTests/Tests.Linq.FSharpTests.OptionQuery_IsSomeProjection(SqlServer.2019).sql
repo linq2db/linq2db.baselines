@@ -63,11 +63,9 @@ VALUES
 
 -- SqlServer.2019
 SELECT
-	[x].[Name]
+	IIF([x].[Name] IS NOT NULL, 1, 0)
 FROM
 	[OptRow] [x]
-WHERE
-	[x].[Name] IS NOT NULL
 ORDER BY
 	[x].[Id]
 
