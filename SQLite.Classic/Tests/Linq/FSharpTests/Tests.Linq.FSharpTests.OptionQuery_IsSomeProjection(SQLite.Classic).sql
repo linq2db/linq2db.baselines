@@ -1,4 +1,4 @@
-﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(1) -- String
@@ -19,7 +19,7 @@ VALUES
 	@Age
 )
 
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 2
 DECLARE @Name NVarChar -- String
@@ -40,7 +40,7 @@ VALUES
 	@Age
 )
 
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 3
 DECLARE @Name NVarChar(1) -- String
@@ -61,13 +61,11 @@ VALUES
 	@Age
 )
 
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic SQLite
 SELECT
-	[x].[Name]
+	[x].[Name] IS NOT NULL
 FROM
 	[OptRow] [x]
-WHERE
-	[x].[Name] IS NOT NULL
 ORDER BY
 	[x].[Id]
 
