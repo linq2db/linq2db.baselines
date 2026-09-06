@@ -47,9 +47,9 @@ SELECT
 FROM
 	(
 		SELECT
+			r."FinishedOn" - r."StartedOn" as "Taken",
 			Extract(epoch From (r."FinishedOn" - r."StartedOn")) / 3600 as "TotalHours",
-			r."Id",
-			r."FinishedOn" - r."StartedOn" as "Taken"
+			r."Id"
 		FROM
 			"EventRow" r
 	) t1
