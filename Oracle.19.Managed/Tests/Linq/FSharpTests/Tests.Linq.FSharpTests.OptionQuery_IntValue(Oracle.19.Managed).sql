@@ -1,4 +1,4 @@
-﻿-- Oracle.18.Managed Oracle.Managed Oracle12
+﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Name Varchar2(1) -- String
@@ -19,7 +19,7 @@ VALUES
 	:Age
 )
 
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 2
 DECLARE @Name Varchar2 -- String
@@ -40,7 +40,7 @@ VALUES
 	:Age
 )
 
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 3
 DECLARE @Name Varchar2(1) -- String
@@ -61,13 +61,13 @@ VALUES
 	:Age
 )
 
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12
 SELECT
-	x."Name"
+	x."Age"
 FROM
 	"OptRow" x
 WHERE
-	x."Name" IS NOT NULL
+	x."Age" IS NOT NULL
 ORDER BY
 	x."Id"
 

@@ -63,11 +63,11 @@ VALUES
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 SELECT
-	x."Name"
+	x."Age"
 FROM
 	"OptRow" x
 WHERE
-	x."Name" IS NOT NULL
+	x."Age" IS NOT NULL
 ORDER BY
 	x."Id"
 
