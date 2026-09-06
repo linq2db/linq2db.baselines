@@ -47,9 +47,9 @@ SELECT
 FROM
 	(
 		SELECT
+			CAST(DateDiff(millisecond, "r"."StartedOn", "r"."FinishedOn") * 10000 AS BigInt) as "Taken",
 			CAST(CAST(DateDiff(millisecond, "r"."StartedOn", "r"."FinishedOn") * 10000 AS BigInt) AS DOUBLE PRECISION) / 36000000000 as "TotalHours",
-			"r"."Id",
-			CAST(DateDiff(millisecond, "r"."StartedOn", "r"."FinishedOn") * 10000 AS BigInt) as "Taken"
+			"r"."Id"
 		FROM
 			"EventRow" "r"
 	) "t1"
