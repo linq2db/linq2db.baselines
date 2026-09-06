@@ -1,52 +1,45 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-INSERT INTO OptRow
+INSERT INTO StructDuRow
 (
 	Id,
-	Name,
-	Age
+	Key
 )
 VALUES
 (
 	1,
-	'a',
-	5
+	10
 )
 
 -- ClickHouse.Octonica ClickHouse
-INSERT INTO OptRow
+INSERT INTO DuOuter
 (
-	Id,
-	Name,
-	Age
+	Oid,
+	RefId
+)
+VALUES
+(
+	1,
+	1
+)
+
+-- ClickHouse.Octonica ClickHouse
+INSERT INTO DuOuter
+(
+	Oid,
+	RefId
 )
 VALUES
 (
 	2,
-	NULL,
-	NULL
-)
-
--- ClickHouse.Octonica ClickHouse
-INSERT INTO OptRow
-(
-	Id,
-	Name,
-	Age
-)
-VALUES
-(
-	3,
-	'b',
-	7
+	99
 )
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
-	x.Name
+	arg2.Key
 FROM
-	OptRow x
-WHERE
-	x.Name IS NOT NULL
+	DuOuter tupledArg
+		LEFT JOIN StructDuRow arg2 ON tupledArg.RefId = arg2.Id
 ORDER BY
-	x.Id
+	tupledArg.Oid
 

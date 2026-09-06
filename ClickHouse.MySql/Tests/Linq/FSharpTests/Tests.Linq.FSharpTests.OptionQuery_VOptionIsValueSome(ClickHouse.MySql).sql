@@ -1,52 +1,33 @@
 ﻿-- ClickHouse.MySql ClickHouse
-INSERT INTO OptRow
+INSERT INTO VOptRow
 (
 	Id,
-	Name,
-	Age
+	Name
 )
 VALUES
 (
 	1,
-	'a',
-	5
+	'a'
 )
 
 -- ClickHouse.MySql ClickHouse
-INSERT INTO OptRow
+INSERT INTO VOptRow
 (
 	Id,
-	Name,
-	Age
+	Name
 )
 VALUES
 (
 	2,
-	NULL,
 	NULL
 )
 
 -- ClickHouse.MySql ClickHouse
-INSERT INTO OptRow
-(
-	Id,
-	Name,
-	Age
-)
-VALUES
-(
-	3,
-	'b',
-	7
-)
-
--- ClickHouse.MySql ClickHouse
 SELECT
+	x.Id,
 	x.Name
 FROM
-	OptRow x
+	VOptRow x
 WHERE
 	x.Name IS NOT NULL
-ORDER BY
-	x.Id
 

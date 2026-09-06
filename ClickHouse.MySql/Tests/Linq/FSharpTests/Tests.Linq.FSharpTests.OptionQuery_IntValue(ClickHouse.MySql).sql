@@ -42,11 +42,11 @@ VALUES
 
 -- ClickHouse.MySql ClickHouse
 SELECT
-	x.Name
+	x.Age
 FROM
 	OptRow x
 WHERE
-	x.Name IS NOT NULL
+	x.Age IS NOT NULL
 ORDER BY
 	x.Id
 

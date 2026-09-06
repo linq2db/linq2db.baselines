@@ -1,4 +1,4 @@
-﻿-- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 INSERT INTO OptRow
 (
 	Id,
@@ -12,7 +12,7 @@ VALUES
 	5
 )
 
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.Octonica ClickHouse
 INSERT INTO OptRow
 (
 	Id,
@@ -26,7 +26,7 @@ VALUES
 	NULL
 )
 
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.Octonica ClickHouse
 INSERT INTO OptRow
 (
 	Id,
@@ -40,13 +40,13 @@ VALUES
 	7
 )
 
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.Octonica ClickHouse
 SELECT
-	x.Name
+	x.Id,
+	x.Name,
+	x.Age
 FROM
 	OptRow x
 WHERE
-	x.Name IS NOT NULL
-ORDER BY
-	x.Id
+	x.Name = 'a'
 
