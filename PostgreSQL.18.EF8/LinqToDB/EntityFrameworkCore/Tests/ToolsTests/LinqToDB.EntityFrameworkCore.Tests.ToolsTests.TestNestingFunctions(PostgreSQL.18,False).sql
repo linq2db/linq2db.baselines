@@ -1,5 +1,5 @@
 ﻿Parameters:
-@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__p_1='?' (DbType = Boolean)
+@__ef_filter__p_0='?' (DbType = Boolean)
 
 SELECT p."ProductID", p."CategoryID", p."Discontinued", p."IsDeleted", p."ProductName", p."QuantityPerUnit", p."ReorderLevel", p."SupplierID", p."UnitPrice", p."UnitsInStock", p."UnitsOnOrder", t."ProductID", t."CategoryID", t."Discontinued", t."IsDeleted", t."ProductName", t."QuantityPerUnit", t."ReorderLevel", t."SupplierID", t."UnitPrice", t."UnitsInStock", t."UnitsOnOrder"
 FROM "Products" AS p
@@ -9,12 +9,12 @@ CROSS JOIN (
     WHERE (@__ef_filter__p_0 OR NOT (p0."IsDeleted") OR NOT (p0."IsDeleted")) AND (
         SELECT count(*)::int
         FROM "Order Details" AS o0
-        WHERE (@__ef_filter__p_1 OR NOT (o0."IsDeleted") OR NOT (o0."IsDeleted")) AND p0."ProductID" = o0."ProductID") > 0
+        WHERE (@__ef_filter__p_0 OR NOT (o0."IsDeleted") OR NOT (o0."IsDeleted")) AND p0."ProductID" = o0."ProductID") > 0
 ) AS t
 WHERE (@__ef_filter__p_0 OR NOT (p."IsDeleted") OR NOT (p."IsDeleted")) AND (
     SELECT count(*)::int
     FROM "Order Details" AS o
-    WHERE (@__ef_filter__p_1 OR NOT (o."IsDeleted") OR NOT (o."IsDeleted")) AND p."ProductID" = o."ProductID") > 0 AND p."ProductID" = t."ProductID"
+    WHERE (@__ef_filter__p_0 OR NOT (o."IsDeleted") OR NOT (o."IsDeleted")) AND p."ProductID" = o."ProductID") > 0 AND p."ProductID" = t."ProductID"
 ORDER BY p."ProductID"
 
 
