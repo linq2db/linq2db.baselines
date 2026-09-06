@@ -11,8 +11,8 @@ WHERE
 	[Parent].[ParentID] > 1000
 
 -- SqlCe
-DECLARE @values Int -- Int32
-SET     @values = 1001
+DECLARE @values_0 Int -- Int32
+SET     @values_0 = 1001
 
 INSERT INTO [Parent]
 (
@@ -21,13 +21,13 @@ INSERT INTO [Parent]
 )
 VALUES
 (
-	@values,
+	@values_0,
 	1
 )
 
 -- SqlCe
-DECLARE @values Int -- Int32
-SET     @values = 1002
+DECLARE @values_0 Int -- Int32
+SET     @values_0 = 1002
 
 INSERT INTO [Parent]
 (
@@ -36,7 +36,7 @@ INSERT INTO [Parent]
 )
 VALUES
 (
-	@values,
+	@values_0,
 	1
 )
 
