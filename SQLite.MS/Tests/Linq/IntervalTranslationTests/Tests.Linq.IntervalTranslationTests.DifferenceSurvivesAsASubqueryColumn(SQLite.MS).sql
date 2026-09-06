@@ -47,9 +47,9 @@ SELECT
 FROM
 	(
 		SELECT
+			CAST(Round((JulianDay([r].[FinishedOn]) - JulianDay([r].[StartedOn])) * 86400000) AS INTEGER) * 10000 as [Taken],
 			CAST(CAST(Round((JulianDay([r].[FinishedOn]) - JulianDay([r].[StartedOn])) * 86400000) AS INTEGER) * 10000 AS Float) / 36000000000 as [TotalHours],
-			[r].[Id],
-			CAST(Round((JulianDay([r].[FinishedOn]) - JulianDay([r].[StartedOn])) * 86400000) AS INTEGER) * 10000 as [Taken]
+			[r].[Id]
 		FROM
 			[EventRow] [r]
 	) [t1]
