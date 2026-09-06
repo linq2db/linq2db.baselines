@@ -63,11 +63,11 @@ VALUES
 
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 SELECT
-	x."Name"
+	x."Id",
+	x."Name",
+	x."Age"
 FROM
 	"OptRow" x
 WHERE
 	x."Name" IS NOT NULL
-ORDER BY
-	x."Id"
 

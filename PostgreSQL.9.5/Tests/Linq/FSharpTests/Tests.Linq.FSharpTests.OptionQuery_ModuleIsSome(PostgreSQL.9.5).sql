@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name Text(1) -- String
@@ -19,7 +19,7 @@ VALUES
 	:Age
 )
 
--- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Name Text -- String
@@ -40,7 +40,7 @@ VALUES
 	:Age
 )
 
--- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 3
 DECLARE @Name Text(1) -- String
@@ -61,13 +61,13 @@ VALUES
 	:Age
 )
 
--- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.9.5 PostgreSQL
 SELECT
-	x."Name"
+	x."Id",
+	x."Name",
+	x."Age"
 FROM
 	"OptRow" x
 WHERE
 	x."Name" IS NOT NULL
-ORDER BY
-	x."Id"
 
