@@ -47,9 +47,9 @@ SELECT
 FROM
 	(
 		SELECT
+			Nano100_Between("r"."StartedOn", "r"."FinishedOn") as "Taken",
 			CAST(Nano100_Between("r"."StartedOn", "r"."FinishedOn") AS Double) / 36000000000 as "TotalHours",
-			"r"."Id",
-			Nano100_Between("r"."StartedOn", "r"."FinishedOn") as "Taken"
+			"r"."Id"
 		FROM
 			"EventRow" "r"
 	) "t1"
