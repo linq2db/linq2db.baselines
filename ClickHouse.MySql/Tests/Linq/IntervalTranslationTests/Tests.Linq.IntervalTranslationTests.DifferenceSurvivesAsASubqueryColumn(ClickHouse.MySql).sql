@@ -33,9 +33,9 @@ SELECT
 FROM
 	(
 		SELECT
+			intDiv(toUnixTimestamp64Nano(r.FinishedOn) - toUnixTimestamp64Nano(r.StartedOn), toInt64(100)) as Taken,
 			toFloat64(intDiv(toUnixTimestamp64Nano(r.FinishedOn) - toUnixTimestamp64Nano(r.StartedOn), toInt64(100))) / toFloat64(36000000000) as TotalHours,
-			r.Id as Id,
-			intDiv(toUnixTimestamp64Nano(r.FinishedOn) - toUnixTimestamp64Nano(r.StartedOn), toInt64(100)) as Taken
+			r.Id as Id
 		FROM
 			EventRow r
 	) t1
