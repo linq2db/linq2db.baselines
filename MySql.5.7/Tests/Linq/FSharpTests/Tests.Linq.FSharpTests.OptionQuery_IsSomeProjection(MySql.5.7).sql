@@ -1,4 +1,4 @@
-﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Name VarChar(1) -- String
@@ -19,7 +19,7 @@ VALUES
 	@Age
 )
 
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @Id Int32
 SET     @Id = 2
 DECLARE @Name VarChar -- String
@@ -40,7 +40,7 @@ VALUES
 	@Age
 )
 
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @Id Int32
 SET     @Id = 3
 DECLARE @Name VarChar(1) -- String
@@ -61,13 +61,11 @@ VALUES
 	@Age
 )
 
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`x`.`Name`
+	`x`.`Name` IS NOT NULL
 FROM
 	`OptRow` `x`
-WHERE
-	`x`.`Name` IS NOT NULL
 ORDER BY
 	`x`.`Id`
 

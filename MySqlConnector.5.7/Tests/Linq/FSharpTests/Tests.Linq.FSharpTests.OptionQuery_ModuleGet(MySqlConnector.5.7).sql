@@ -62,12 +62,15 @@ VALUES
 )
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @Name VarChar(1) -- String
+SET     @Name = 'a'
+
 SELECT
-	`x`.`Name`
+	`x`.`Id`,
+	`x`.`Name`,
+	`x`.`Age`
 FROM
 	`OptRow` `x`
 WHERE
-	`x`.`Name` IS NOT NULL
-ORDER BY
-	`x`.`Id`
+	`x`.`Name` = @Name
 

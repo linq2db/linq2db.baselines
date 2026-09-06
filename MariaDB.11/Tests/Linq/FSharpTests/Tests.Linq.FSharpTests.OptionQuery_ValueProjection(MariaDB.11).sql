@@ -68,4 +68,6 @@ FROM
 	`OptRow` `x`
 WHERE
 	`x`.`Name` IS NOT NULL
+ORDER BY
+	`x`.`Id`
 

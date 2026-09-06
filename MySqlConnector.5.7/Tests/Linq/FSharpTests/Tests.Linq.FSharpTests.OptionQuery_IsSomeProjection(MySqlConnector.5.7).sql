@@ -63,11 +63,9 @@ VALUES
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 SELECT
-	`x`.`Name`
+	`x`.`Name` IS NOT NULL
 FROM
 	`OptRow` `x`
-WHERE
-	`x`.`Name` IS NOT NULL
 ORDER BY
 	`x`.`Id`
 
