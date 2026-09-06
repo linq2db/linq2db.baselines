@@ -63,11 +63,9 @@ VALUES
 
 -- PostgreSQL.13 PostgreSQL12
 SELECT
-	x."Name"
+	x."Name" IS NOT NULL
 FROM
 	"OptRow" x
-WHERE
-	x."Name" IS NOT NULL
 ORDER BY
 	x."Id"
 

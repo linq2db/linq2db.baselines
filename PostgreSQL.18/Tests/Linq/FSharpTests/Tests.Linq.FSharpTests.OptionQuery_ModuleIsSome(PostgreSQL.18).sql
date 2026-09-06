@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL12
+﻿-- PostgreSQL.18 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name Text(1) -- String
@@ -19,7 +19,7 @@ VALUES
 	:Age
 )
 
--- PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.18 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Name Text -- String
@@ -40,7 +40,7 @@ VALUES
 	:Age
 )
 
--- PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.18 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 3
 DECLARE @Name Text(1) -- String
@@ -61,13 +61,13 @@ VALUES
 	:Age
 )
 
--- PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.18 PostgreSQL12
 SELECT
-	x."Name"
+	x."Id",
+	x."Name",
+	x."Age"
 FROM
 	"OptRow" x
 WHERE
 	x."Name" IS NOT NULL
-ORDER BY
-	x."Id"
 
