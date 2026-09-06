@@ -11,8 +11,8 @@ WHERE
 	t1."ParentID" > 1000
 
 -- PostgreSQL.15 PostgreSQL12
-DECLARE @values_0 Integer -- Int32
-SET     @values_0 = 1001
+DECLARE @values Integer -- Int32
+SET     @values = 1001
 
 INSERT INTO "Parent"
 (
@@ -21,13 +21,13 @@ INSERT INTO "Parent"
 )
 VALUES
 (
-	:values_0,
+	:values,
 	1
 )
 
 -- PostgreSQL.15 PostgreSQL12
-DECLARE @values_0 Integer -- Int32
-SET     @values_0 = 1002
+DECLARE @values Integer -- Int32
+SET     @values = 1002
 
 INSERT INTO "Parent"
 (
@@ -36,7 +36,7 @@ INSERT INTO "Parent"
 )
 VALUES
 (
-	:values_0,
+	:values,
 	1
 )
 
