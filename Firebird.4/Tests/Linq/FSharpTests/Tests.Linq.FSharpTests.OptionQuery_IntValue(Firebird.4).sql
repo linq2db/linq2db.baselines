@@ -1,4 +1,4 @@
-﻿-- Firebird.2.5 Firebird
+﻿-- Firebird.4 Firebird4
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name VarChar(1) -- String
@@ -19,7 +19,7 @@ VALUES
 	@Age
 )
 
--- Firebird.2.5 Firebird
+-- Firebird.4 Firebird4
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Name VarChar -- String
@@ -40,7 +40,7 @@ VALUES
 	@Age
 )
 
--- Firebird.2.5 Firebird
+-- Firebird.4 Firebird4
 DECLARE @Id Integer -- Int32
 SET     @Id = 3
 DECLARE @Name VarChar(1) -- String
@@ -61,13 +61,13 @@ VALUES
 	@Age
 )
 
--- Firebird.2.5 Firebird
+-- Firebird.4 Firebird4
 SELECT
-	"x"."Name"
+	"x"."Age"
 FROM
 	"OptRow" "x"
 WHERE
-	"x"."Name" IS NOT NULL
+	"x"."Age" IS NOT NULL
 ORDER BY
 	"x"."Id"
 
