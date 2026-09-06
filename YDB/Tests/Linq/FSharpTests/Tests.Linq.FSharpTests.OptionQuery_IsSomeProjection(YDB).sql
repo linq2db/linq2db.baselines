@@ -63,11 +63,9 @@ VALUES
 
 -- YDB Ydb
 SELECT
-	x.Name as Name
+	x.Name IS NOT NULL as c1
 FROM
 	OptRow x
-WHERE
-	x.Name IS NOT NULL
 ORDER BY
 	x.Id
 

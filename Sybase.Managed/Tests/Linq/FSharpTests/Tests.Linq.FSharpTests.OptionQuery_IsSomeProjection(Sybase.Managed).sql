@@ -63,11 +63,12 @@ VALUES
 
 -- Sybase.Managed Sybase
 SELECT
-	[x].[Name]
+	CASE
+		WHEN [x].[Name] IS NOT NULL THEN 1
+		ELSE 0
+	END
 FROM
 	[OptRow] [x]
-WHERE
-	[x].[Name] IS NOT NULL
 ORDER BY
 	[x].[Id]
 

@@ -63,11 +63,11 @@ VALUES
 
 -- YDB Ydb
 SELECT
-	x.Name as Name
+	x.Age as Age
 FROM
 	OptRow x
 WHERE
-	x.Name IS NOT NULL
+	x.Age IS NOT NULL
 ORDER BY
 	x.Id
 

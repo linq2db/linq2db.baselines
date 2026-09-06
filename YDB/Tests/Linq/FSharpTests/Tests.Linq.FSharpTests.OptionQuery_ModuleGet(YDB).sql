@@ -62,12 +62,15 @@ VALUES
 )
 
 -- YDB Ydb
+DECLARE $Name Text(1) -- String
+SET     $Name = 'a'u
+
 SELECT
-	x.Name as Name
+	x.Id as Id,
+	x.Name as Name,
+	x.Age as Age
 FROM
 	OptRow x
 WHERE
-	x.Name IS NOT NULL
-ORDER BY
-	x.Id
+	x.Name = $Name
 
