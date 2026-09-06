@@ -1,8 +1,8 @@
 ﻿-- Access.Ace.Odbc AccessODBC
 DECLARE @startId Int -- Int32
 SET     @startId = 5
-DECLARE @parameters Int -- Int32
-SET     @parameters = 15
+DECLARE @parameters_2 Int -- Int32
+SET     @parameters_2 = 15
 
 SELECT
 	[s].[value],

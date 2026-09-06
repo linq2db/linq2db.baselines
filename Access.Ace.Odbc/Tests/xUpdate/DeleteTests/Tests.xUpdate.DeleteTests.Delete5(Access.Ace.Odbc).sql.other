@@ -26,8 +26,8 @@ VALUES
 )
 
 -- Access.Ace.Odbc AccessODBC
-DECLARE @values_0 Int -- Int32
-SET     @values_0 = 1002
+DECLARE @values_1 Int -- Int32
+SET     @values_1 = 1002
 
 INSERT INTO [Parent]
 (
