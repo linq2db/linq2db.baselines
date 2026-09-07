@@ -12,8 +12,8 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			[d].[MasterId],
-			[t1].[Id1]
+			[t1].[Id1],
+			[d].[MasterId]
 		FROM
 			(
 				SELECT
