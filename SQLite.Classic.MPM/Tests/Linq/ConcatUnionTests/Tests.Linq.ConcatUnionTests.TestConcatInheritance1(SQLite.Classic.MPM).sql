@@ -1,20 +1,16 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 SELECT
-	[t1].[EntityId],
+	CAST(0 AS INTEGER),
 	[t1].[Discr],
-	[t1].[Value],
-	NULL,
-	NULL,
-	NULL
+	[t1].[EntityId],
+	[t1].[Value]
 FROM
 	[ConcatTest] [t1]
 UNION ALL
 SELECT
-	NULL,
-	NULL,
-	NULL,
-	[t2].[EntityId],
+	CAST(1 AS INTEGER),
 	[t2].[Discr],
+	[t2].[EntityId],
 	[t2].[Value]
 FROM
 	[ConcatTest] [t2]
