@@ -11,8 +11,8 @@ WHERE
 	[t1].[ParentID] > 1000
 
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ParentID Int -- Int32
-SET     @ParentID = 1001
+DECLARE @values Int -- Int32
+SET     @values = 1001
 
 INSERT INTO [Parent]
 (
@@ -26,8 +26,8 @@ VALUES
 )
 
 -- Access.Ace.Odbc AccessODBC
-DECLARE @ParentID Int -- Int32
-SET     @ParentID = 1002
+DECLARE @values Int -- Int32
+SET     @values = 1002
 
 INSERT INTO [Parent]
 (
