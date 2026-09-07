@@ -1,20 +1,18 @@
-﻿-- Sybase.Managed Sybase
-DELETE FROM [Parent]
-FROM
+﻿-- Access.Ace.Odbc AccessODBC
+DELETE FROM
 	[Parent] [t1]
 WHERE
 	[t1].[ParentID] > 1000
 
--- Sybase.Managed Sybase
-DELETE FROM [Parent]
-FROM
+-- Access.Ace.Odbc AccessODBC
+DELETE FROM
 	[Parent] [t1]
 WHERE
 	[t1].[ParentID] > 1000
 
--- Sybase.Managed Sybase
-DECLARE @values Integer -- Int32
-SET     @values = 1001
+-- Access.Ace.Odbc AccessODBC
+DECLARE @values_0 Int -- Int32
+SET     @values_0 = 1001
 
 INSERT INTO [Parent]
 (
@@ -23,13 +21,13 @@ INSERT INTO [Parent]
 )
 VALUES
 (
-	@values,
+	?,
 	1
 )
 
--- Sybase.Managed Sybase
-DECLARE @values Integer -- Int32
-SET     @values = 1002
+-- Access.Ace.Odbc AccessODBC
+DECLARE @values_1 Int -- Int32
+SET     @values_1 = 1002
 
 INSERT INTO [Parent]
 (
@@ -38,11 +36,11 @@ INSERT INTO [Parent]
 )
 VALUES
 (
-	@values,
+	?,
 	1
 )
 
--- Sybase.Managed Sybase
+-- Access.Ace.Odbc AccessODBC
 SELECT
 	COUNT(*)
 FROM
@@ -50,14 +48,13 @@ FROM
 WHERE
 	[t1].[ParentID] > 1000
 
--- Sybase.Managed Sybase
-DELETE FROM [Parent]
-FROM
+-- Access.Ace.Odbc AccessODBC
+DELETE FROM
 	[Parent] [t1]
 WHERE
 	[t1].[ParentID] IN (1001, 1002)
 
--- Sybase.Managed Sybase
+-- Access.Ace.Odbc AccessODBC
 SELECT
 	COUNT(*)
 FROM

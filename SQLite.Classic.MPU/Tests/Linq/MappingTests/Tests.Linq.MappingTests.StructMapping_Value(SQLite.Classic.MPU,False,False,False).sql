@@ -1,18 +1,18 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Value1  -- Int32
-SET     @Value1 = 5
-DECLARE @Value1_1  -- Int32
-SET     @Value1_1 = 3
-DECLARE @Value1_2  -- Int32
-SET     @Value1_2 = 4
+DECLARE @tenderIds  -- Int32
+SET     @tenderIds = 5
+DECLARE @tenderIds_1  -- Int32
+SET     @tenderIds_1 = 3
+DECLARE @tenderIds_2  -- Int32
+SET     @tenderIds_2 = 4
 
 SELECT
 	COUNT(*)
 FROM
 	[Parent] [i]
 WHERE
-	[i].[Value1] = @Value1 OR
-	[i].[Value1] = @Value1_1 OR
-	[i].[Value1] = @Value1_2 OR
+	[i].[Value1] = @tenderIds OR
+	[i].[Value1] = @tenderIds_1 OR
+	[i].[Value1] = @tenderIds_2 OR
 	[i].[Value1] IS NULL
 
