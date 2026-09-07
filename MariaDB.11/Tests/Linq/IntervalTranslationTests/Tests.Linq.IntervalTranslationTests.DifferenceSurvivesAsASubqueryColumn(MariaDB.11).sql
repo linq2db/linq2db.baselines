@@ -47,9 +47,9 @@ SELECT
 FROM
 	(
 		SELECT
-			TimestampDiff(Microsecond, `r`.`StartedOn`, `r`.`FinishedOn`) * 10 as `Taken`,
 			CAST(TimestampDiff(Microsecond, `r`.`StartedOn`, `r`.`FinishedOn`) * 10 AS DOUBLE) / 36000000000 as `TotalHours`,
-			`r`.`Id`
+			`r`.`Id`,
+			TimestampDiff(Microsecond, `r`.`StartedOn`, `r`.`FinishedOn`) * 10 as `Taken`
 		FROM
 			`EventRow` `r`
 	) `t1`
