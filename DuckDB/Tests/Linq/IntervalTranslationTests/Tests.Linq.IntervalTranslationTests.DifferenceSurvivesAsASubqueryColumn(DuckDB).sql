@@ -47,9 +47,9 @@ SELECT
 FROM
 	(
 		SELECT
-			Date_Diff('microsecond', r.StartedOn, r.FinishedOn) * 10 as Taken,
 			CAST(Date_Diff('microsecond', r.StartedOn, r.FinishedOn) * 10 AS DOUBLE) / 36000000000 as TotalHours,
-			r.Id
+			r.Id,
+			Date_Diff('microsecond', r.StartedOn, r.FinishedOn) * 10 as Taken
 		FROM
 			EventRow r
 	) t1
