@@ -62,12 +62,15 @@ VALUES
 )
 
 -- SqlServer.2005.MS SqlServer.2005
+DECLARE @Name NVarChar(4000) -- String
+SET     @Name = N'a'
+
 SELECT
-	[x].[Name]
+	[x].[Id],
+	[x].[Name],
+	[x].[Age]
 FROM
 	[OptRow] [x]
 WHERE
-	[x].[Name] IS NOT NULL
-ORDER BY
-	[x].[Id]
+	[x].[Name] = @Name
 

@@ -63,11 +63,11 @@ VALUES
 
 -- SqlServer.2005.MS SqlServer.2005
 SELECT
-	[x].[Name]
+	[x].[Id],
+	[x].[Name],
+	[x].[Age]
 FROM
 	[OptRow] [x]
 WHERE
-	[x].[Name] IS NOT NULL
-ORDER BY
-	[x].[Id]
+	[x].[Name] IS NULL
 

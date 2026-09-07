@@ -1,4 +1,4 @@
-﻿-- SqlServer.2005.MS SqlServer.2005
+﻿-- SqlServer.2005
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(4000) -- String
@@ -19,7 +19,7 @@ VALUES
 	@Age
 )
 
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Name NVarChar(4000) -- String
@@ -40,7 +40,7 @@ VALUES
 	@Age
 )
 
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005
 DECLARE @Id Int -- Int32
 SET     @Id = 3
 DECLARE @Name NVarChar(4000) -- String
@@ -61,13 +61,14 @@ VALUES
 	@Age
 )
 
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005
 SELECT
-	[x].[Name]
+	CASE
+		WHEN [x].[Name] IS NOT NULL THEN 1
+		ELSE 0
+	END
 FROM
 	[OptRow] [x]
-WHERE
-	[x].[Name] IS NOT NULL
 ORDER BY
 	[x].[Id]
 
