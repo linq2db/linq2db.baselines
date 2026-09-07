@@ -1,4 +1,4 @@
-﻿-- SqlServer.2016
+﻿-- SqlServer.2016.MS SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(4000) -- String
@@ -19,7 +19,7 @@ VALUES
 	@Age
 )
 
--- SqlServer.2016
+-- SqlServer.2016.MS SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Name NVarChar(4000) -- String
@@ -40,7 +40,7 @@ VALUES
 	@Age
 )
 
--- SqlServer.2016
+-- SqlServer.2016.MS SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 3
 DECLARE @Name NVarChar(4000) -- String
@@ -61,13 +61,11 @@ VALUES
 	@Age
 )
 
--- SqlServer.2016
+-- SqlServer.2016.MS SqlServer.2016
 SELECT
-	[x].[Name]
+	IIF([x].[Name] IS NOT NULL, 1, 0)
 FROM
 	[OptRow] [x]
-WHERE
-	[x].[Name] IS NOT NULL
 ORDER BY
 	[x].[Id]
 
