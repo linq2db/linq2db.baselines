@@ -1,8 +1,8 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @startId Int64
 SET     @startId = 5
-DECLARE @p Int32
-SET     @p = 14
+DECLARE @parameters Int32
+SET     @parameters = 14
 
 SELECT
 	`s`.`value`,
@@ -10,7 +10,7 @@ SELECT
 FROM
 	`sample_class` `t1`
 		INNER JOIN (
-			SELECT * FROM `sample_class` where `id` >= @startId and `id` < @p
+			SELECT * FROM `sample_class` where `id` >= @startId and `id` < @parameters
 		) `s` ON `s`.`id` = `t1`.`id`
 WHERE
 	`s`.`id` > 10
