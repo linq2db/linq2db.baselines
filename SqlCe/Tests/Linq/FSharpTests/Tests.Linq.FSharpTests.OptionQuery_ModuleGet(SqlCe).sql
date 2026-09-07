@@ -62,12 +62,15 @@ VALUES
 )
 
 -- SqlCe
+DECLARE @Name NVarChar(1) -- String
+SET     @Name = 'a'
+
 SELECT
-	[x].[Name]
+	[x].[Id],
+	[x].[Name],
+	[x].[Age]
 FROM
 	[OptRow] [x]
 WHERE
-	[x].[Name] IS NOT NULL
-ORDER BY
-	[x].[Id]
+	[x].[Name] = @Name
 
