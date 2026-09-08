@@ -1,14 +1,4 @@
-﻿-- SQLite.MS SQLite
-SELECT
-	[t1].[PersonID],
-	[t1].[FirstName],
-	[t1].[LastName],
-	[t1].[MiddleName],
-	[t1].[Gender]
-FROM
-	[Person] [t1]
-
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	p."PersonID"
 FROM
