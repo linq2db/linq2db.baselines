@@ -1,0 +1,43 @@
+﻿-- DuckDB
+DECLARE $Id  -- Int32
+SET     $Id = 1
+DECLARE $Name NVarChar(1) -- String
+SET     $Name = 'a'
+
+INSERT INTO VOptRow
+(
+	Id,
+	Name
+)
+VALUES
+(
+	$Id,
+	$Name
+)
+
+-- DuckDB
+DECLARE $Id  -- Int32
+SET     $Id = 2
+DECLARE $Name NVarChar -- String
+SET     $Name = NULL
+
+INSERT INTO VOptRow
+(
+	Id,
+	Name
+)
+VALUES
+(
+	$Id,
+	$Name
+)
+
+-- DuckDB
+SELECT
+	x.Id,
+	x.Name
+FROM
+	VOptRow x
+WHERE
+	x.Name IS NOT NULL
+

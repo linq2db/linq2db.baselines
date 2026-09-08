@@ -1,0 +1,42 @@
+﻿-- Sybase.Managed Sybase
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
+DECLARE @Key Integer -- Int32
+SET     @Key = 10
+
+INSERT INTO [DuRow]
+(
+	[Id],
+	[Key]
+)
+VALUES
+(
+	@Id,
+	@Key
+)
+
+-- Sybase.Managed Sybase
+DECLARE @Id Integer -- Int32
+SET     @Id = 2
+DECLARE @Key Integer -- Int32
+SET     @Key = 20
+
+INSERT INTO [DuRow]
+(
+	[Id],
+	[Key]
+)
+VALUES
+(
+	@Id,
+	@Key
+)
+
+-- Sybase.Managed Sybase
+SELECT
+	[x].[Key]
+FROM
+	[DuRow] [x]
+ORDER BY
+	[x].[Id]
+
