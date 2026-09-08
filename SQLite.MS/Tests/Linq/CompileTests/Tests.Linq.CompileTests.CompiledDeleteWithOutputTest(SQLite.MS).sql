@@ -10,3 +10,9 @@ RETURNING
 	[CompiledOutputTable].[Id],
 	[CompiledOutputTable].[Value]
 
+-- SQLite.MS SQLite
+SELECT
+	[t].[Id]
+FROM
+	[CompiledOutputTable] [t]
+
