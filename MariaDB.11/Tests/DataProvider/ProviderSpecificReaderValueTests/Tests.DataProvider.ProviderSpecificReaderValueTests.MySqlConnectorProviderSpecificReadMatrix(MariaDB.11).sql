@@ -1,0 +1,75 @@
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+SELECT CAST(1000000 AS SIGNED)
+
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+SELECT CAST(1000000 AS SIGNED)
+
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+SELECT CAST(7777777 AS SIGNED)
+
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+SELECT CAST(7777777 AS SIGNED)
+
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+SELECT CAST(9223372036854775807 AS SIGNED)
+
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+SELECT CAST(9223372036854775807 AS SIGNED)
+
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+SELECT CAST(9999999 AS DECIMAL(31,0))
+
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+SELECT CAST(9999999 AS DECIMAL(31,0))
+
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+SELECT CAST(20.31 AS DOUBLE)
+
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+SELECT CAST(20.31 AS DOUBLE)
+
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+SELECT CAST(16.2 AS FLOAT)
+
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+SELECT CAST(16.2 AS FLOAT)
+
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+SELECT CAST('text' AS CHAR(10))
+
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+SELECT CAST('text' AS CHAR(10))
+
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+SELECT DATE '2024-01-02'
+
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+SELECT DATE '2024-01-02'
+
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+SELECT TIMESTAMP '2024-01-02 03:04:05.123456'
+
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+SELECT TIMESTAMP '2024-01-02 03:04:05.123456'
+
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+SELECT CAST(0x3039 AS BINARY(2))
+
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+SELECT CAST(0x3039 AS BINARY(2))
+
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+SELECT POINT(1, 2)
+
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+SELECT POINT(1, 2)
+
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+SELECT CAST(123456789012345678901234567890.12 AS DECIMAL(65,2))
+
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+SELECT CAST(123456789012345678901234567890.12 AS DECIMAL(65,2))
+
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+SELECT CAST(123456789012345678901234567890.12 AS DECIMAL(65,2))
+
