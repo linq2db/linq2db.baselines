@@ -1,0 +1,5 @@
+﻿-- PostgreSQL.9.3 PostgreSQL
+SELECT
+	CURRENT_TIMESTAMP
+LIMIT 1
+

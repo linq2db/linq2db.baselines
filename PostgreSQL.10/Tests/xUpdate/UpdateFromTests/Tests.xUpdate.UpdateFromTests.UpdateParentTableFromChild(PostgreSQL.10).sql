@@ -1,0 +1,20 @@
+﻿-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+UPDATE
+	"ParentTable"
+SET
+	"Value" = "ParentTable"."Value" * 10
+FROM
+	"ChildTable" c_1
+WHERE
+	"ParentTable"."Id" = 2 AND c_1."ParentId" = "ParentTable"."Id"
+
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+SELECT
+	p."Id",
+	p."Value"
+FROM
+	"ParentTable" p
+WHERE
+	p."Id" = 2
+LIMIT 1
+

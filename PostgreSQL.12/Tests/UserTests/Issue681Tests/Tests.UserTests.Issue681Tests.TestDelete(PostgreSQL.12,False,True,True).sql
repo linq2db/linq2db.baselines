@@ -1,0 +1,23 @@
+﻿-- PostgreSQL.12 PostgreSQL12
+SELECT
+	current_database()
+FROM
+	"LinqDataTypes" t1
+LIMIT 1
+
+-- PostgreSQL.12 PostgreSQL12
+SELECT
+	current_schema()
+FROM
+	"LinqDataTypes" t1
+LIMIT 1
+
+-- PostgreSQL.12 PostgreSQL12
+DECLARE @ID Integer -- Int32
+SET     @ID = 5
+
+DELETE FROM
+	testdata.public."Issue681Table" t1
+WHERE
+	t1."ID" = :ID
+

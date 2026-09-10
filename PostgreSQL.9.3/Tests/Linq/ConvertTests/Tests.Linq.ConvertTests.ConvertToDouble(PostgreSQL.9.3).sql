@@ -1,0 +1,8 @@
+﻿-- PostgreSQL.9.3 PostgreSQL
+SELECT
+	p."MoneyValue"::Float
+FROM
+	"LinqDataTypes" p
+WHERE
+	p."MoneyValue"::Float > 0
+
