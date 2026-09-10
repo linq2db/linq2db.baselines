@@ -1,0 +1,17 @@
+﻿-- Oracle.12.Managed Oracle.Managed Oracle12
+SELECT
+	p."ParentID",
+	p."Value1"
+FROM
+	"Parent" p
+WHERE
+	p."ParentID" > 2
+MINUS
+SELECT
+	p_1."ParentID",
+	p_1."Value1"
+FROM
+	"Parent" p_1
+WHERE
+	p_1."ParentID" <= 4
+
