@@ -1,0 +1,11 @@
+﻿-- YDB Ydb
+DECLARE $p Int32
+SET     $p = 2
+
+SELECT
+	COUNT(*) as LongCount
+FROM
+	AsyncDataTable c_1
+WHERE
+	c_1.Id = $p
+
