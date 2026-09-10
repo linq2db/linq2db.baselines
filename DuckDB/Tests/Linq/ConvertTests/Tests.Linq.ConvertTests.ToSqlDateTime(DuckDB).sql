@@ -1,0 +1,6 @@
+﻿-- DuckDB
+SELECT
+	CAST(CAST(EXTRACT(year FROM t.DateTimeValue) AS VARCHAR) || '-01-01 00:20:00' AS TIMESTAMP)
+FROM
+	LinqDataTypes t
+

@@ -1,0 +1,17 @@
+﻿-- DuckDB
+DROP TABLE IF EXISTS TempTable
+
+-- DuckDB
+CREATE TEMPORARY TABLE TempTable
+(
+	ID INTEGER,
+
+	PRIMARY KEY (ID)
+)
+
+-- DuckDB
+DROP TABLE TempTable
+
+-- DuckDB
+DROP TABLE IF EXISTS TempTable
+
