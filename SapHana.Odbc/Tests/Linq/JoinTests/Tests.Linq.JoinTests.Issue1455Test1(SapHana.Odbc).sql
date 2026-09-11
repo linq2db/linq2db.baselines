@@ -25,8 +25,7 @@ FROM
 				LEFT JOIN "Trade" "trade_1" ON "al_group_1"."AlertKey" = CAST("trade_1"."DealId" AS NVarChar(11))
 				LEFT JOIN "Nomin" "nomin_1" ON "al_group_1"."AlertKey" = CAST("nomin_1"."CargoId" AS NVarChar(11))
 		WHERE
-			"nomin_1"."DeliveryCounterParty" LIKE '%C%' ESCAPE '~' OR
-			"trade_1"."CounterParty" LIKE '%C%' ESCAPE '~' OR "al_group_1"."AlertCode" LIKE '%C%' ESCAPE '~'
+			"nomin_1"."DeliveryCounterParty" LIKE '%C%' ESCAPE '~' OR "trade_1"."CounterParty" LIKE '%C%' ESCAPE '~' OR "al_group_1"."AlertCode" LIKE '%C%' ESCAPE '~'
 	) "al_group_3"
 		LEFT JOIN LATERAL (
 			SELECT
