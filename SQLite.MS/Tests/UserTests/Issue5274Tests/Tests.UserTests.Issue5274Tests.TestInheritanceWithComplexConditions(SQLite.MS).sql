@@ -127,8 +127,5 @@ SELECT
 FROM
 	[Issue5274Entity] [e]
 WHERE
-	[e].[EntityType] = 'Type01' AND [e].[Name] LIKE 'A%' ESCAPE '~' OR
-	[e].[EntityType] = 'Type05' AND strftime('%Y-%m-%d %H:%M:%f', [e].[CreatedDate]) > strftime('%Y-%m-%d %H:%M:%f', @baseDate) OR
-	[e].[EntityType] = 'Type10' AND [e].[Name] LIKE '%Entity%' ESCAPE '~' OR
-	[e].[EntityType] = 'Type17' AND [e].[Id] > 0
+	[e].[EntityType] = 'Type01' AND [e].[Name] LIKE 'A%' ESCAPE '~' OR [e].[EntityType] = 'Type05' AND strftime('%Y-%m-%d %H:%M:%f', [e].[CreatedDate]) > strftime('%Y-%m-%d %H:%M:%f', @baseDate) OR [e].[EntityType] = 'Type10' AND [e].[Name] LIKE '%Entity%' ESCAPE '~' OR [e].[EntityType] = 'Type17' AND [e].[Id] > 0
 

@@ -5,8 +5,7 @@ SELECT
 FROM
 	[Src] [x]
 WHERE
-	[x].[CEnumA] < [x].[CEnumB] OR [x].[CEnumA] IS NULL OR
-	[x].[CEnumB] IS NULL
+	[x].[CEnumA] < [x].[CEnumB] OR [x].[CEnumA] IS NULL OR [x].[CEnumB] IS NULL
 ORDER BY
 	[x].[Id]
 
