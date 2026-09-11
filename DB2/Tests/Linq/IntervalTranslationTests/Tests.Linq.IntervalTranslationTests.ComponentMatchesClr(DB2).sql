@@ -32,7 +32,7 @@ SELECT
 	CAST("r"."InSeconds" / 86400 AS Int),
 	CAST(Mod("r"."InSeconds" / 3600, 24) AS Int),
 	CAST(Mod("r"."InSeconds" / 60, 60) AS Int),
-	CAST(Mod("r"."InSeconds", 60) AS Int)
+	CAST(Mod(Int("r"."InSeconds"), 60) AS Int)
 FROM
 	"DurationRow" "r"
 FETCH NEXT 2 ROWS ONLY
