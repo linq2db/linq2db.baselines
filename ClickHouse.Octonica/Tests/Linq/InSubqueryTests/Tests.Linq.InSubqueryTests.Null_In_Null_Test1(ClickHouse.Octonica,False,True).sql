@@ -13,8 +13,7 @@ WHERE
 			test_in_2 p
 		WHERE
 			p.ID IS NULL
-	) OR
-	t.ID IS NOT NULL AND t.ID IN (
+	) OR t.ID IS NOT NULL AND t.ID IN (
 		SELECT
 			p_1.ID
 		FROM

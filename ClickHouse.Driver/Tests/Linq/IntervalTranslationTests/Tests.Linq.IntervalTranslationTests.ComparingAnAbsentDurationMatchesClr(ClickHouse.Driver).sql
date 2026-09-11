@@ -54,8 +54,7 @@ SELECT
 FROM
 	OptionalDurationRow r
 WHERE
-	r.Grace * toInt64(10000000) <> toInt64(9000000000) OR
-	r.Grace IS NULL
+	r.Grace * toInt64(10000000) <> toInt64(9000000000) OR r.Grace IS NULL
 ORDER BY
 	r.Id
 
@@ -115,8 +114,7 @@ SELECT
 FROM
 	OptionalDurationRow r
 WHERE
-	r.Grace * toInt64(10000000) <> toInt64(8995000000) OR
-	r.Grace IS NULL
+	r.Grace * toInt64(10000000) <> toInt64(8995000000) OR r.Grace IS NULL
 ORDER BY
 	r.Id
 
@@ -176,8 +174,7 @@ SELECT
 FROM
 	OptionalDurationRow r
 WHERE
-	r.Grace * toInt64(10000000) <> toInt64(9000000000) OR
-	r.Grace IS NULL
+	r.Grace * toInt64(10000000) <> toInt64(9000000000) OR r.Grace IS NULL
 ORDER BY
 	r.Id
 
@@ -257,8 +254,7 @@ SELECT
 FROM
 	OptionalDurationRow r
 WHERE
-	r.Grace * toInt64(10000000) <> toInt64(9005000000) OR
-	r.Grace IS NULL
+	r.Grace * toInt64(10000000) <> toInt64(9005000000) OR r.Grace IS NULL
 ORDER BY
 	r.Id
 
