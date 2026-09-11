@@ -1,8 +1,8 @@
 ﻿-- SqlServer.2016
 SELECT
+	[p].[ParentID],
 	[p].[Value1],
-	[p].[Value1] * 100,
-	[p].[ParentID]
+	[p].[Value1] * 100
 FROM
 	[Parent] [p]
 WHERE

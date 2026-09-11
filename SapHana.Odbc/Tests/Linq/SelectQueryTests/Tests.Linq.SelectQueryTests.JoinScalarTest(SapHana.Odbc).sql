@@ -8,6 +8,6 @@ FROM
 		INNER JOIN (
 			SELECT
 				1 as "c1"
-FROM DUMMY
+			FROM DUMMY
 		) "s" ON 1 = "t"."Id"
 

@@ -1,0 +1,96 @@
+﻿-- PostgreSQL.12 PostgreSQL12
+DECLARE @True Boolean
+SET     @True = True
+
+SELECT
+	r."Id",
+	r."Boolean",
+	r."BooleanN",
+	r."Int32",
+	r."Int32N",
+	r."Decimal",
+	r."DecimalN",
+	r."Double",
+	r."DoubleN"
+FROM
+	"BooleanTable" r
+WHERE
+	Coalesce(r."BooleanN", :True)
+
+-- PostgreSQL.12 PostgreSQL12
+SELECT
+	t1."Id",
+	t1."Boolean",
+	t1."BooleanN",
+	t1."Int32",
+	t1."Int32N",
+	t1."Decimal",
+	t1."DecimalN",
+	t1."Double",
+	t1."DoubleN"
+FROM
+	"BooleanTable" t1
+
+-- PostgreSQL.12 PostgreSQL12
+DECLARE @False Boolean
+SET     @False = False
+
+SELECT
+	r."Id",
+	r."Boolean",
+	r."BooleanN",
+	r."Int32",
+	r."Int32N",
+	r."Decimal",
+	r."DecimalN",
+	r."Double",
+	r."DoubleN"
+FROM
+	"BooleanTable" r
+WHERE
+	Coalesce(r."BooleanN", :False)
+
+-- PostgreSQL.12 PostgreSQL12
+SELECT
+	t1."Id",
+	t1."Boolean",
+	t1."BooleanN",
+	t1."Int32",
+	t1."Int32N",
+	t1."Decimal",
+	t1."DecimalN",
+	t1."Double",
+	t1."DoubleN"
+FROM
+	"BooleanTable" t1
+
+-- PostgreSQL.12 PostgreSQL12
+SELECT
+	r."Id",
+	r."Boolean",
+	r."BooleanN",
+	r."Int32",
+	r."Int32N",
+	r."Decimal",
+	r."DecimalN",
+	r."Double",
+	r."DoubleN"
+FROM
+	"BooleanTable" r
+WHERE
+	Coalesce(r."BooleanN", (r."Id"::decimal % 2)::decimal = 1)
+
+-- PostgreSQL.12 PostgreSQL12
+SELECT
+	t1."Id",
+	t1."Boolean",
+	t1."BooleanN",
+	t1."Int32",
+	t1."Int32N",
+	t1."Decimal",
+	t1."DecimalN",
+	t1."Double",
+	t1."DoubleN"
+FROM
+	"BooleanTable" t1
+

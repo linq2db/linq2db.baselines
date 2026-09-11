@@ -1,6 +1,6 @@
 ﻿-- DuckDB
 SELECT
-	CAST(EXTRACT(EPOCH FROM ((t.DateTimeValue + 100 * Interval '1 Hour')::timestamp - t.DateTimeValue::timestamp)) / 86400 AS DOUBLE)
+	CAST(Date_Diff('microsecond', t.DateTimeValue, t.DateTimeValue + 100 * Interval '1 Hour') * 10 AS DOUBLE) / 864000000000
 FROM
 	LinqDataTypes t
 

@@ -17,8 +17,8 @@ FROM
 			IIF(False, 0, NULL) as [Byte_1],
 			IIF(False, {guid {00000000-0000-0000-0000-000000000000}}, NULL) as [Guid],
 			IIF(False, {guid {00000000-0000-0000-0000-000000000000}}, NULL) as [Guid_1],
-			IIF(False, 'ENUM1_VALUE', NULL) as [Enum],
-			IIF(False, 'ENUM2_VALUE', NULL) as [EnumN],
+			IIF(False, '', NULL) as [Enum],
+			IIF(False, '', NULL) as [EnumN],
 			IIF(False, False, NULL) as [Bool],
 			IIF(False, False, NULL) as [Bool_1]
 		FROM

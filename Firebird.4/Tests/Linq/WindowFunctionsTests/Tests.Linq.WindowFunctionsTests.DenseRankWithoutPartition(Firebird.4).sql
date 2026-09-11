@@ -19,6 +19,8 @@ SELECT
 	"x"."NullableShortValue",
 	"x"."ByteValue",
 	"x"."NullableByteValue",
+	"x"."BoolValue",
+	"x"."NullableBoolValue",
 	DENSE_RANK() OVER (ORDER BY "x"."Timestamp"),
 	DENSE_RANK() OVER (ORDER BY "x"."Value"),
 	DENSE_RANK() OVER (ORDER BY "x"."Timestamp" DESC),

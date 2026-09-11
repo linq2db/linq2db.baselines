@@ -1,10 +1,10 @@
 ﻿-- SqlServer.2005
-DECLARE @p Int -- Int32
-SET     @p = 1
+DECLARE @ParentID Int -- Int32
+SET     @ParentID = 1
 
 SELECT
 	CASE
-		WHEN @p IN (
+		WHEN @ParentID IN (
 			SELECT
 				[c_1].[ParentID]
 			FROM
@@ -15,12 +15,12 @@ SELECT
 	END
 
 -- SqlServer.2005
-DECLARE @p Int -- Int32
-SET     @p = -1
+DECLARE @ParentID Int -- Int32
+SET     @ParentID = -1
 
 SELECT
 	CASE
-		WHEN @p IN (
+		WHEN @ParentID IN (
 			SELECT
 				[c_1].[ParentID]
 			FROM

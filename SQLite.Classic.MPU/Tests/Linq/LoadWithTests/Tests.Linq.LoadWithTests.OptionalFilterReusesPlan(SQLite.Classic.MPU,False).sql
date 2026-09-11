@@ -1,0 +1,18 @@
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
+SELECT
+	[s].[Id],
+	[s].[Value],
+	[s].[ParentId]
+FROM
+	[SubItem1] [s]
+
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+SELECT
+	[s].[Id],
+	[s].[Value],
+	[s].[ParentId]
+FROM
+	[SubItem1] [s]
+WHERE
+	[s].[Value] IN ('A')
+

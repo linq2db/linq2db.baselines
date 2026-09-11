@@ -1,9 +1,9 @@
 ﻿-- ClickHouse.Driver ClickHouse
 SELECT
-	p.ParentID,
-	p.Value1,
 	ch.ParentID,
-	ch.ChildID
+	ch.ChildID,
+	p.ParentID,
+	p.Value1
 FROM
 	Parent p
 		LEFT JOIN Child ch ON p.ParentID = ch.ParentID

@@ -4,20 +4,20 @@ SELECT
 	SUM([g_1].[DataValue]),
 	SUM([g_1].[DataValue]),
 	SUM(CASE
-		WHEN (Convert(Int, [g_1].[DataValue]) % 2) = 0 THEN [g_1].[DataValue]
+		WHEN Convert(Int, [g_1].[DataValue]) % 2 = 0 THEN [g_1].[DataValue]
 		ELSE NULL
 	END),
 	SUM(CASE
-		WHEN (Convert(Int, [g_1].[DataValue]) % 2) = 0 THEN [g_1].[DataValue]
+		WHEN Convert(Int, [g_1].[DataValue]) % 2 = 0 THEN [g_1].[DataValue]
 		ELSE NULL
 	END),
 	SUM(DISTINCT [g_1].[DataValue]),
 	SUM(DISTINCT CASE
-		WHEN (Convert(Int, [g_1].[DataValue]) % 2) = 0 THEN [g_1].[DataValue]
+		WHEN Convert(Int, [g_1].[DataValue]) % 2 = 0 THEN [g_1].[DataValue]
 		ELSE NULL
 	END),
 	SUM(DISTINCT CASE
-		WHEN (Convert(Int, [g_1].[DataValue]) % 2) = 0 THEN [g_1].[DataValue]
+		WHEN Convert(Int, [g_1].[DataValue]) % 2 = 0 THEN [g_1].[DataValue]
 		ELSE NULL
 	END)
 FROM

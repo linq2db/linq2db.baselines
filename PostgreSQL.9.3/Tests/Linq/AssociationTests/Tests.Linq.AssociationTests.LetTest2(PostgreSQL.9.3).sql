@@ -1,0 +1,28 @@
+﻿-- PostgreSQL.9.3 PostgreSQL
+SELECT
+	t."ParentID",
+	(
+		SELECT
+			COUNT(*)
+		FROM
+			"Child" "a_Children"
+		WHERE
+			t."ParentID" = "a_Children"."ParentID"
+	)
+FROM
+	"Parent" t
+
+-- PostgreSQL.9.3 PostgreSQL
+SELECT
+	t."ParentID",
+	(
+		SELECT
+			COUNT(*)
+		FROM
+			"Child" "a_Children"
+		WHERE
+			t."ParentID" = "a_Children"."ParentID"
+	)
+FROM
+	"Parent" t
+

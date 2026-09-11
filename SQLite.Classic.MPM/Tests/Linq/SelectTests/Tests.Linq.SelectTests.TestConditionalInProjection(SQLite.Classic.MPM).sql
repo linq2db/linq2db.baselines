@@ -1,8 +1,8 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 SELECT
-	[t2].[Id],
 	[c_1].[Id],
 	[c_1].[Value],
+	[t2].[Id],
 	[c_1].[Value] <> 'Value 1' OR [c_1].[Value] IS NULL,
 	[t1].[Id],
 	[t1].[Value_1]

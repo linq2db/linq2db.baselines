@@ -2,7 +2,7 @@
 SELECT
 	[t].[GroupId],
 	COUNT(*),
-	COUNT(IIF((Convert(Int, [t].[DataValue]) % 2) = 0, 1, NULL)),
+	COUNT(IIF(Convert(Int, [t].[DataValue]) % 2 = 0, 1, NULL)),
 	COUNT(DISTINCT [t].[DataValue])
 FROM
 	[AggregationData] [t]

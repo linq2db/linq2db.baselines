@@ -17,8 +17,8 @@ FROM
 			[r].[Byte] as [Byte_1],
 			[r].[Guid],
 			[r].[Guid] as [Guid_1],
-			IIF(False, 'ENUM1_VALUE', NULL) as [Enum],
-			IIF(False, 'ENUM2_VALUE', NULL) as [EnumN],
+			IIF(False, '', NULL) as [Enum],
+			IIF(False, '', NULL) as [EnumN],
 			[r].[Bool],
 			[r].[Bool] as [Bool_1]
 		FROM

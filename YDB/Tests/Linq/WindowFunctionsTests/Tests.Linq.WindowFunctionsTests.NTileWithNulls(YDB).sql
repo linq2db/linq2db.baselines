@@ -19,6 +19,8 @@ SELECT
 	x.NullableShortValue as NullableShortValue,
 	x.ByteValue as ByteValue,
 	x.NullableByteValue as NullableByteValue,
+	x.BoolValue as BoolValue,
+	x.NullableBoolValue as NullableBoolValue,
 	NTILE(4) OVER (PARTITION BY x.CategoryId ORDER BY x.`Timestamp`) as nt7,
 	NTILE(4) OVER (PARTITION BY x.CategoryId ORDER BY x.`Timestamp` DESC) as nt8
 FROM

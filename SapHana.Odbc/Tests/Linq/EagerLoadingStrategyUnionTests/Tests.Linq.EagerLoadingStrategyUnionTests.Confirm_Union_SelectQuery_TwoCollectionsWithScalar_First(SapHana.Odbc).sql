@@ -52,7 +52,7 @@ AS
 			FROM
 				"Company" "t1"
 		)
-FROM DUMMY
+	FROM DUMMY
 	LIMIT 1
 )
 SELECT

@@ -1,10 +1,10 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @p  -- Int32
-SET     @p = 2
+DECLARE @Id  -- Int32
+SET     @Id = 2
 
 SELECT
 	CASE
-		WHEN @p IN (
+		WHEN @Id IN (
 			SELECT
 				[c_1].[Id]
 			FROM

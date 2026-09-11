@@ -1,0 +1,37 @@
+﻿-- SqlServer.SA SqlServer.2019
+DECLARE @Id Int -- Int32
+SET     @Id = 1
+DECLARE @StartedOn DateTimeOffset
+SET     @StartedOn = DATETIMEOFFSETFROMPARTS(2026, 1, 1, 10, 0, 0, 0, 0, 0, 7)
+DECLARE @FinishedOn DateTimeOffset
+SET     @FinishedOn = DATETIMEOFFSETFROMPARTS(2026, 1, 1, 12, 0, 0, 64560, 2, 0, 7)
+
+INSERT INTO [ZonedEventRow]
+(
+	[Id],
+	[StartedOn],
+	[FinishedOn]
+)
+VALUES
+(
+	@Id,
+	@StartedOn,
+	@FinishedOn
+)
+
+-- SqlServer.SA SqlServer.2019
+SELECT TOP (2)
+	[r].[StartedOn],
+	[r].[FinishedOn]
+FROM
+	[ZonedEventRow] [r]
+
+-- SqlServer.SA SqlServer.2019
+SELECT TOP (2)
+	CAST((((DateDiff_Big(day, [r].[StartedOn], [r].[FinishedOn]) * 86400) * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r].[StartedOn], [r].[FinishedOn]) AS Int), [r].[StartedOn]), [r].[FinishedOn]) / 100) / 10) % 1000 AS Int),
+	CAST((((DateDiff_Big(day, [r].[StartedOn], [r].[FinishedOn]) * 86400) * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r].[StartedOn], [r].[FinishedOn]) AS Int), [r].[StartedOn]), [r].[FinishedOn]) / 100) % 10) * 100 AS Int),
+	CAST((DateDiff_Big(day, [r].[StartedOn], [r].[FinishedOn]) * 86400) * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r].[StartedOn], [r].[FinishedOn]) AS Int), [r].[StartedOn]), [r].[FinishedOn]) / 100 AS Float) / 10,
+	CAST((DateDiff_Big(day, [r].[StartedOn], [r].[FinishedOn]) * 86400) * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r].[StartedOn], [r].[FinishedOn]) AS Int), [r].[StartedOn]), [r].[FinishedOn]) / 100 AS Float) * 100
+FROM
+	[ZonedEventRow] [r]
+

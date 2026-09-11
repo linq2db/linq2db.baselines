@@ -1,8 +1,8 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 SELECT
+	`p`.`ParentID`,
 	`p`.`Value1`,
-	`p`.`Value1` * 100,
-	`p`.`ParentID`
+	`p`.`Value1` * 100
 FROM
 	`Parent` `p`
 WHERE

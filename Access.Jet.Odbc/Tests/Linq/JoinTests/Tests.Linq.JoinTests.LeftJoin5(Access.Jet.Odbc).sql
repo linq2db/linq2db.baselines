@@ -1,9 +1,9 @@
 ﻿-- Access.Jet.Odbc AccessODBC
 SELECT
-	[p].[ParentID],
-	[p].[Value1],
-	[ch].[ParentID] as [ParentID_1],
-	[ch].[ChildID]
+	[ch].[ParentID],
+	[ch].[ChildID],
+	[p].[ParentID] as [ParentID_1],
+	[p].[Value1]
 FROM
 	[Parent] [p]
 		LEFT JOIN [Child] [ch] ON ([p].[ParentID] = [ch].[ParentID])

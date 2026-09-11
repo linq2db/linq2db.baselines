@@ -10,7 +10,7 @@ SELECT
 			(
 				SELECT
 					1 as "c1"
-FROM DUMMY
+				FROM DUMMY
 			) "t1"
 				LEFT JOIN "Child" "d" ON "p"."ParentID" = "d"."ParentID"
 	), 0)

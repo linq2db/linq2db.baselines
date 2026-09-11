@@ -1,9 +1,9 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
-DECLARE @p Int -- Int32
-SET     @p = 1
+DECLARE @ParentID Int -- Int32
+SET     @ParentID = 1
 
 SELECT
-	IIF(@p IN (
+	IIF(@ParentID IN (
 		SELECT
 			[c_1].[ParentID]
 		FROM
@@ -11,11 +11,11 @@ SELECT
 	), 1, 0)
 
 -- SqlServer.SA.MS SqlServer.2019
-DECLARE @p Int -- Int32
-SET     @p = -1
+DECLARE @ParentID Int -- Int32
+SET     @ParentID = -1
 
 SELECT
-	IIF(@p IN (
+	IIF(@ParentID IN (
 		SELECT
 			[c_1].[ParentID]
 		FROM

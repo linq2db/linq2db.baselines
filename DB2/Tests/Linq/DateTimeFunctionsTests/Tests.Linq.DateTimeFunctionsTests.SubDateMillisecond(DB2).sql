@@ -1,6 +1,6 @@
 ﻿-- DB2 DB2.LUW DB2LUW
 SELECT
-	CAST(((Days("t"."DateTimeValue" + 2023456789000 MICROSECONDS) - Days("t"."DateTimeValue")) * 86400 + MIDNIGHT_SECONDS("t"."DateTimeValue" + 2023456789000 MICROSECONDS) - MIDNIGHT_SECONDS("t"."DateTimeValue")) * 1000 + (MICROSECOND("t"."DateTimeValue" + 2023456789000 MICROSECONDS) - MICROSECOND("t"."DateTimeValue")) / 1000 AS Float)
+	CAST((CAST(Days("t"."DateTimeValue" + 2023456789000 MICROSECONDS) AS BigInt) - CAST(Days("t"."DateTimeValue") AS BigInt)) * 864000000000 + (CAST(Midnight_Seconds("t"."DateTimeValue" + 2023456789000 MICROSECONDS) AS BigInt) - CAST(Midnight_Seconds("t"."DateTimeValue") AS BigInt)) * 10000000 + (CAST(Microsecond("t"."DateTimeValue" + 2023456789000 MICROSECONDS) AS BigInt) - CAST(Microsecond("t"."DateTimeValue") AS BigInt)) * 10 AS Float) / 10000
 FROM
 	"LinqDataTypes" "t"
 

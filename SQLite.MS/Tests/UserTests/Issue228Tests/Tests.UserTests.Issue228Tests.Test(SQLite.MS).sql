@@ -1,4 +1,4 @@
-﻿-- SQLite.MS SQLite
+﻿-- SQLite.MS.MaxInList1 SQLite
 SELECT
 	[t1].[ID],
 	[t1].[MoneyValue],

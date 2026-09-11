@@ -1,6 +1,6 @@
 ﻿-- ClickHouse.MySql ClickHouse
 SELECT
-	toFloat64(toUnixTimestamp64Milli(toDateTime64(addSeconds(t.TransactionDate, toFloat64(1)), 3)) - toUnixTimestamp64Milli(toDateTime64(t.TransactionDate, 3)))
+	toFloat64(intDiv(toUnixTimestamp64Nano(addSeconds(t.TransactionDate, toFloat64(1))) - toUnixTimestamp64Nano(t.TransactionDate), toInt64(100))) / toFloat64(10000)
 FROM
 	Transactions t
 

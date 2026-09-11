@@ -15,8 +15,8 @@ FROM
 	"Table404One" t1
 
 -- PostgreSQL.19 PostgreSQL12
-DECLARE @Usage Integer -- Int32
-SET     @Usage = 0
+DECLARE @usage Integer -- Int32
+SET     @usage = 0
 
 SELECT
 	m_1."Id",
@@ -27,7 +27,7 @@ FROM
 	"Table404One" m_1
 		INNER JOIN "Table404Two" d ON m_1."Id" = d."FirstTableId"
 WHERE
-	d."Usage" = :Usage
+	d."Usage" = :usage
 
 -- PostgreSQL.19 PostgreSQL12
 SELECT
@@ -36,8 +36,8 @@ FROM
 	"Table404One" t1
 
 -- PostgreSQL.19 PostgreSQL12
-DECLARE @Usage Integer -- Int32
-SET     @Usage = 1
+DECLARE @usage Integer -- Int32
+SET     @usage = 1
 
 SELECT
 	m_1."Id",
@@ -48,7 +48,7 @@ FROM
 	"Table404One" m_1
 		INNER JOIN "Table404Two" d ON m_1."Id" = d."FirstTableId"
 WHERE
-	d."Usage" = :Usage
+	d."Usage" = :usage
 
 -- PostgreSQL.19 PostgreSQL12
 SELECT
@@ -73,29 +73,8 @@ FROM
 	"Table404One" t1
 
 -- PostgreSQL.19 PostgreSQL12
-DECLARE @Usage Integer -- Int32
-SET     @Usage = 0
-
-SELECT
-	m_1."Id",
-	d."Id",
-	d."Usage",
-	d."FirstTableId"
-FROM
-	"Table404One" m_1
-		INNER JOIN "Table404Two" d ON m_1."Id" = d."FirstTableId"
-WHERE
-	d."Usage" = :Usage
-
--- PostgreSQL.19 PostgreSQL12
-SELECT
-	t1."Id"
-FROM
-	"Table404One" t1
-
--- PostgreSQL.19 PostgreSQL12
-DECLARE @Usage Integer -- Int32
-SET     @Usage = 1
+DECLARE @usage Integer -- Int32
+SET     @usage = 0
 
 SELECT
 	m_1."Id",
@@ -106,7 +85,28 @@ FROM
 	"Table404One" m_1
 		INNER JOIN "Table404Two" d ON m_1."Id" = d."FirstTableId"
 WHERE
-	d."Usage" = :Usage
+	d."Usage" = :usage
+
+-- PostgreSQL.19 PostgreSQL12
+SELECT
+	t1."Id"
+FROM
+	"Table404One" t1
+
+-- PostgreSQL.19 PostgreSQL12
+DECLARE @usage Integer -- Int32
+SET     @usage = 1
+
+SELECT
+	m_1."Id",
+	d."Id",
+	d."Usage",
+	d."FirstTableId"
+FROM
+	"Table404One" m_1
+		INNER JOIN "Table404Two" d ON m_1."Id" = d."FirstTableId"
+WHERE
+	d."Usage" = :usage
 
 -- PostgreSQL.19 PostgreSQL12
 SELECT

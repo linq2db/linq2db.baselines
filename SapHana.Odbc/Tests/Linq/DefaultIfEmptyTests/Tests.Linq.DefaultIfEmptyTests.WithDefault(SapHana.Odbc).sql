@@ -9,7 +9,7 @@ FROM
 	(
 		SELECT
 			1 as "c1"
-FROM DUMMY
+		FROM DUMMY
 	) "t2"
 		LEFT JOIN (
 			SELECT

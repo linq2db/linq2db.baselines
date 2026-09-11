@@ -1,8 +1,8 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 SELECT
+	`p`.`ParentID`,
 	`p`.`Value1`,
-	`p`.`Value1` * 100,
-	`p`.`ParentID`
+	`p`.`Value1` * 100
 FROM
 	`Parent` `p`
 WHERE
