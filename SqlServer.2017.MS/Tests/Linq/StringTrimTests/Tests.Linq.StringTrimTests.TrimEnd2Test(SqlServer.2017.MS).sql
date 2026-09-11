@@ -1,6 +1,6 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
 SELECT
-	Coalesce([t].[VarCharColumn], '') + N'...++'
+	Coalesce([t].[VarCharColumn], '') + '...++'
 FROM
 	[StringTrimTable] [t]
 

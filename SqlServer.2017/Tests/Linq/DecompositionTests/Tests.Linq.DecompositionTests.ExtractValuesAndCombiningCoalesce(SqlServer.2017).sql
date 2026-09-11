@@ -92,8 +92,7 @@ FROM
 			[Item] [x]
 	) [x_1]
 WHERE
-	[x_1].[Color] = 1 AND ([x_1].[Color_1] = 1 AND [x_1].[Color_2] = 1 OR [x_1].[Color_1] = 0) OR
-	[x_1].[Color] = 0 AND [x_1].[Color_4] = 0
+	[x_1].[Color] = 1 AND ([x_1].[Color_1] = 1 AND [x_1].[Color_2] = 1 OR [x_1].[Color_1] = 0) OR [x_1].[Color] = 0 AND [x_1].[Color_4] = 0
 
 -- SqlServer.2017
 SELECT
