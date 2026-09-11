@@ -23,7 +23,7 @@ UPDATE
 SET
 	"Value" = CASE
 		WHEN "t1"."Value" = '0' THEN '1'
-		WHEN "t1"."Value" = '1' THEN '0'
+		WHEN "t1"."Value" <> '0' THEN '0'
 		ELSE NULL
 	END
 
