@@ -49,7 +49,8 @@ VALUES
 )
 
 -- Access.Jet.Odbc AccessODBC
-SELECT @@IDENTITY
+SELECT
+	@@IDENTITY
 
 -- Access.Jet.Odbc AccessODBC
 DECLARE @FirstName NVarChar(6) -- String
@@ -77,7 +78,8 @@ VALUES
 )
 
 -- Access.Jet.Odbc AccessODBC
-SELECT @@IDENTITY
+SELECT
+	@@IDENTITY
 
 -- Access.Jet.Odbc AccessODBC
 SELECT

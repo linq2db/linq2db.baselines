@@ -12,7 +12,8 @@ VALUES
 )
 
 -- Access.Jet.OleDb AccessOleDb
-SELECT @@IDENTITY
+SELECT
+	@@IDENTITY
 
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @lastId Integer -- Int32
