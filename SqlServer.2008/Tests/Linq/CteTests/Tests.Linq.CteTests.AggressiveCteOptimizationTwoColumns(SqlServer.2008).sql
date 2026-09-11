@@ -31,7 +31,7 @@ AS
 )
 SELECT
 	[r].[Date_1],
-	CAST(RIGHT(N'0' + CAST([r].[Date_Year] AS VarChar(4)), 4) + N'-' + RIGHT(N'0' + CAST([r].[Date_Month] AS VarChar(2)), 2) + N'-' + RIGHT(N'0' + CAST([r].[Counter] AS VarChar(2)), 2) AS DateTime2)
+	CAST(RIGHT('0' + CAST([r].[Date_Year] AS VarChar(4)), 4) + '-' + RIGHT('0' + CAST([r].[Date_Month] AS VarChar(2)), 2) + '-' + RIGHT('0' + CAST([r].[Counter] AS VarChar(2)), 2) AS DateTime2)
 FROM
 	[x] [r]
 
