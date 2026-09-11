@@ -1,0 +1,54 @@
+﻿-- Access.Ace.OleDb AccessOleDb
+DECLARE @p VarBinary(2) -- Binary
+SET     @p = 0x3039
+
+SELECT @p
+
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @p VarBinary(2) -- Binary
+SET     @p = 0x3039
+
+SELECT @p
+
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @p VarBinary(2) -- Binary
+SET     @p = 0x3039
+
+SELECT @p
+
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @p VarBinary -- Binary
+SET     @p = NULL
+
+SELECT @p
+
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @p VarBinary(0) -- Binary
+SET     @p = 0x
+
+SELECT @p
+
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @p VarBinary(0) -- Binary
+SET     @p = 0x
+
+SELECT @p
+
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @p VarBinary(2) -- Binary
+SET     @p = 0x3039
+
+SELECT @p
+
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @p VarBinary(2) -- Binary
+SET     @p = 0x3039
+
+SELECT @p
+
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @p VarBinary(2) -- Binary
+SET     @p = 0x3039
+
+SELECT @p
+
