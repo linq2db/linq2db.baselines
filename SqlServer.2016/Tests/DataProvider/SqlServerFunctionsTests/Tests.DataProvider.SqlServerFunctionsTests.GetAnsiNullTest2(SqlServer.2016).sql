@@ -1,0 +1,4 @@
+﻿-- SqlServer.2016
+SELECT
+	GETANSINULL(DB_NAME())
+
