@@ -1,0 +1,14 @@
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+DECLARE @p Integer -- Int32
+SET     @p = 2
+
+SELECT
+	EXISTS(
+		SELECT
+			*
+		FROM
+			"AsyncDataTable" c_1
+		WHERE
+			c_1."Id" = :p
+	)
+

@@ -1,0 +1,6 @@
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
+SELECT
+	(t."MoneyValue" * 1000)::decimal(10, 4)
+FROM
+	"LinqDataTypes" t
+
