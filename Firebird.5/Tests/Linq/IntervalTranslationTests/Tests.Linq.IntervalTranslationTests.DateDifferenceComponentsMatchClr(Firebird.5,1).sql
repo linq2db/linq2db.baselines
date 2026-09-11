@@ -1,0 +1,31 @@
+﻿-- Firebird.5 Firebird4
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
+DECLARE @StartedOn TimeStamp -- DateTime
+SET     @StartedOn = TIMESTAMP '2026-01-01 10:00:00.0000'
+DECLARE @FinishedOn TimeStamp -- DateTime
+SET     @FinishedOn = TIMESTAMP '2026-01-03 13:30:00.0000'
+
+INSERT INTO "EventRow"
+(
+	"Id",
+	"StartedOn",
+	"FinishedOn"
+)
+VALUES
+(
+	@Id,
+	@StartedOn,
+	@FinishedOn
+)
+
+-- Firebird.5 Firebird4
+SELECT
+	CAST(CAST(DateDiff(millisecond, "r"."StartedOn", "r"."FinishedOn") * 10000 AS BigInt) / 864000000000 AS Int),
+	CAST(Mod(CAST(DateDiff(millisecond, "r"."StartedOn", "r"."FinishedOn") * 10000 AS BigInt) / 36000000000, 24) AS Int),
+	CAST(Mod(CAST(DateDiff(millisecond, "r"."StartedOn", "r"."FinishedOn") * 10000 AS BigInt) / 600000000, 60) AS Int),
+	CAST(CAST(DateDiff(millisecond, "r"."StartedOn", "r"."FinishedOn") * 10000 AS BigInt) AS DOUBLE PRECISION) / 36000000000
+FROM
+	"EventRow" "r"
+FETCH NEXT 2 ROWS ONLY
+

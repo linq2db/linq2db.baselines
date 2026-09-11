@@ -1,0 +1,4 @@
+﻿-- ClickHouse.MySql ClickHouse
+SELECT
+	'--'
+

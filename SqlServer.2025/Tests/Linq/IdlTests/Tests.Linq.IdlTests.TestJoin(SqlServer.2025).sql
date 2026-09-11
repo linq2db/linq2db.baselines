@@ -1,0 +1,6 @@
+﻿-- SqlServer.2025
+SELECT
+	[p1].[PersonID]
+FROM
+	[Person] [p1]
+

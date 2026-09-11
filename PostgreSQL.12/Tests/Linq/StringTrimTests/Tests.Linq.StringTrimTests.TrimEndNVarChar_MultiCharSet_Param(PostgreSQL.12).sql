@@ -1,0 +1,16 @@
+﻿-- PostgreSQL.12 PostgreSQL12
+SELECT
+	RTRIM(Coalesce(t."NVarCharColumn", '') || '...++', '.+')
+FROM
+	"StringTrimTable" t
+
+-- PostgreSQL.12 PostgreSQL12
+SELECT
+	t1."Id",
+	t1."CharColumn",
+	t1."NCharColumn",
+	t1."VarCharColumn",
+	t1."NVarCharColumn"
+FROM
+	"StringTrimTable" t1
+

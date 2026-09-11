@@ -1,0 +1,17 @@
+﻿-- DB2 DB2.LUW DB2LUW
+SELECT
+	MAX("t1".ID)
+FROM
+	ALLTYPES "t1"
+
+INSERT BULK ALLTYPES
+
+-- DB2 DB2.LUW DB2LUW
+DECLARE @maxId Integer(4) -- Int32
+SET     @maxId = 2
+
+DELETE FROM
+	ALLTYPES "p"
+WHERE
+	"p".ID > @maxId
+

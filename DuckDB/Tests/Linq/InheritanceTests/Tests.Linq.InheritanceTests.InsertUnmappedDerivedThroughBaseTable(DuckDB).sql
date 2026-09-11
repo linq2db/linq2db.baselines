@@ -1,0 +1,6 @@
+﻿-- DuckDB
+SELECT
+	COUNT(*)
+FROM
+	InheritanceFilter t1
+

@@ -1,0 +1,4 @@
+﻿-- DuckDB
+SELECT
+	CAST(NULL AS INTEGER)
+

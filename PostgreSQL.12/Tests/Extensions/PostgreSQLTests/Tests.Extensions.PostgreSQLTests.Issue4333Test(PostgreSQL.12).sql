@@ -1,0 +1,22 @@
+﻿-- PostgreSQL.12 PostgreSQL12
+CREATE TEMPORARY TABLE "Issue4333Table"
+(
+	"Id"   SERIAL  NOT NULL,
+	"Name" text        NULL,
+
+	CONSTRAINT "PK_Issue4333Table" PRIMARY KEY ("Id")
+)
+ON COMMIT PRESERVE ROWS
+
+-- PostgreSQL.12 PostgreSQL12
+INSERT INTO "Issue4333Table"
+(
+	"Name"
+)
+VALUES
+('Bar'),
+('Baz')
+
+-- PostgreSQL.12 PostgreSQL12
+DROP TABLE IF EXISTS "Issue4333Table"
+

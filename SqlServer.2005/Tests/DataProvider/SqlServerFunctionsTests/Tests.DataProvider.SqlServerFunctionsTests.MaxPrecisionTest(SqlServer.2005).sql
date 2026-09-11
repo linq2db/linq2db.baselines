@@ -1,0 +1,4 @@
+﻿-- SqlServer.2005
+SELECT
+	@@MAX_PRECISION
+

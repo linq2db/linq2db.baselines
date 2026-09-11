@@ -1,0 +1,8 @@
+﻿-- SqlServer.2025.MS SqlServer.2025
+SELECT
+	[t].[ParentID],
+	[t].[ChildID]
+FROM
+	[Child] [t] WITH (NoLock, NoWait, ReadUncommitted)
+OPTION (RECOMPILE)
+

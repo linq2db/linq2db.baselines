@@ -1,0 +1,21 @@
+﻿-- ClickHouse.MySql ClickHouse
+SELECT
+	p.PersonID,
+	p.FirstName,
+	p.LastName,
+	p.MiddleName
+FROM
+	Person p
+WHERE
+	p.PersonID = 1
+UNION DISTINCT
+SELECT
+	p_1.PersonID as PersonID,
+	p_1.FirstName as FirstName,
+	p_1.LastName as LastName,
+	p_1.MiddleName as MiddleName
+FROM
+	Person p_1
+WHERE
+	p_1.PersonID = 1
+

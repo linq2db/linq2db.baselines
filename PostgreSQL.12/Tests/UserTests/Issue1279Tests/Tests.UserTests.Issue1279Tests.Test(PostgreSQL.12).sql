@@ -1,0 +1,21 @@
+﻿-- PostgreSQL.12 PostgreSQL12
+DECLARE @CharFld Char -- String
+SET     @CharFld = 'P'
+
+INSERT INTO "Issue1279Table"
+(
+	"CharFld"
+)
+VALUES
+(
+	:CharFld
+)
+
+-- PostgreSQL.12 PostgreSQL12
+SELECT
+	t1."Id",
+	t1."CharFld"
+FROM
+	"Issue1279Table" t1
+LIMIT 1
+
