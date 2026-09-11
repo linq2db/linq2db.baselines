@@ -12,7 +12,8 @@ VALUES
 )
 
 -- SqlCe
-SELECT @@IDENTITY
+SELECT
+	@@IDENTITY
 
 -- SqlCe
 INSERT INTO [AllTypes]

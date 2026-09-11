@@ -18,8 +18,7 @@ SELECT
 FROM
 	[Person] [m_1]
 WHERE
-	[m_1].[PersonID] = @id AND [m_1].[LastName] <> @name OR
-	[m_1].[FirstName] <> @name_1 AND [m_1].[PersonID] - 1 = @id_1
+	[m_1].[PersonID] = @id AND [m_1].[LastName] <> @name OR [m_1].[FirstName] <> @name_1 AND [m_1].[PersonID] - 1 = @id_1
 
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @id Integer -- Int32
@@ -36,6 +35,5 @@ SELECT
 FROM
 	[Person] [x]
 WHERE
-	[x].[PersonID] = @id AND [x].[LastName] <> @name OR
-	[x].[FirstName] <> @name_1 AND [x].[PersonID] - 1 = @id_1
+	[x].[PersonID] = @id AND [x].[LastName] <> @name OR [x].[FirstName] <> @name_1 AND [x].[PersonID] - 1 = @id_1
 

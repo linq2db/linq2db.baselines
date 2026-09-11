@@ -58,10 +58,7 @@ SELECT
 FROM
 	[Base] [e]
 WHERE
-	[e].[Code] = N'BaseChild' OR
-	[e].[Code] = N'Child' OR
-	[e].[Code] = N'Child2' OR
-	[e].[Id] = 0
+	[e].[Code] = N'BaseChild' OR [e].[Code] = N'Child' OR [e].[Code] = N'Child2' OR [e].[Id] = 0
 ORDER BY
 	[e].[Id]
 

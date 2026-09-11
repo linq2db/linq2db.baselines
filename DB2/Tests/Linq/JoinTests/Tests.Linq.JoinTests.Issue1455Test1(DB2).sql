@@ -38,9 +38,7 @@ FROM
 				LEFT JOIN "Trade" "trade_1" ON "al_group_1"."AlertKey" = RTrim(Char("trade_1"."DealId"))
 				LEFT JOIN "Nomin" "nomin_1" ON "al_group_1"."AlertKey" = RTrim(Char("nomin_1"."CargoId"))
 		WHERE
-			"nomin_1"."DeliveryCounterParty" LIKE @cpty ESCAPE '~' OR
-			"trade_1"."CounterParty" LIKE @cpty_1 ESCAPE '~' OR
-			"al_group_1"."AlertCode" LIKE @cpty_2 ESCAPE '~'
+			"nomin_1"."DeliveryCounterParty" LIKE @cpty ESCAPE '~' OR "trade_1"."CounterParty" LIKE @cpty_1 ESCAPE '~' OR "al_group_1"."AlertCode" LIKE @cpty_2 ESCAPE '~'
 	) "al_group_3"
 		LEFT JOIN (
 			SELECT
@@ -72,8 +70,6 @@ FROM
 					LEFT JOIN "Trade" "trade_2" ON "t1"."AlertKey" = RTrim(Char("trade_2"."DealId"))
 					LEFT JOIN "Nomin" "nomin_2" ON "t1"."AlertKey" = RTrim(Char("nomin_2"."CargoId"))
 			WHERE
-				"nomin_2"."DeliveryCounterParty" LIKE @cpty_3 ESCAPE '~' OR
-				"trade_2"."CounterParty" LIKE @cpty_4 ESCAPE '~' OR
-				"t1"."AlertCode" LIKE @cpty_5 ESCAPE '~'
+				"nomin_2"."DeliveryCounterParty" LIKE @cpty_3 ESCAPE '~' OR "trade_2"."CounterParty" LIKE @cpty_4 ESCAPE '~' OR "t1"."AlertCode" LIKE @cpty_5 ESCAPE '~'
 		) "t2" ON "al_group_3"."Id" = "t2"."Id" AND "t2"."rn" = 1
 

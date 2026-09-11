@@ -66,7 +66,7 @@ FROM
 	"Products" p
 		INNER JOIN "Order Details" d ON p."ProductID" = d."ProductID"
 WHERE
-	NOT p."IsDeleted" AND NOT d."IsDeleted"
+	NOT (p."IsDeleted" OR d."IsDeleted")
 
 
 

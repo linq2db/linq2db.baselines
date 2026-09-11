@@ -13,8 +13,7 @@ FROM
 			"Person" p
 	) t1
 WHERE
-	t1."FirstName" IS NOT NULL OR t1."LastName" IS NOT NULL OR
-	t1."FullName" IS NOT NULL
+	t1."FirstName" IS NOT NULL OR t1."LastName" IS NOT NULL OR t1."FullName" IS NOT NULL
 ORDER BY
 	t1."FirstName",
 	t1."LastName"

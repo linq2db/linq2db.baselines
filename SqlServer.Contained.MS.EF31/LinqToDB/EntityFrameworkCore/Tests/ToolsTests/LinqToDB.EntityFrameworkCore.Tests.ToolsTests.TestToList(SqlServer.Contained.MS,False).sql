@@ -27,8 +27,6 @@ FROM
 
 
 
-
-
 -- SqlServer.2019
 SELECT
 	[e].[IsDeleted],
@@ -48,6 +46,8 @@ SELECT
 	[e].[ShipCountry]
 FROM
 	[Orders] [e]
+
+
 
 
 

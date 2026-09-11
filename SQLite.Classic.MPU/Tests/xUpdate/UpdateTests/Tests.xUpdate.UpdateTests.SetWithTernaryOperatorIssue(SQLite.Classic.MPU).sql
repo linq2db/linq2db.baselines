@@ -24,7 +24,8 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-SELECT last_insert_rowid()
+SELECT
+	last_insert_rowid()
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @nullableGender NChar(1) -- StringFixedLength

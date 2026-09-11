@@ -30,7 +30,8 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-SELECT last_insert_rowid()
+SELECT
+	last_insert_rowid()
 
 -- SQLite.Classic SQLite
 DECLARE @p NVarChar(5) -- String
@@ -74,7 +75,8 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-SELECT last_insert_rowid()
+SELECT
+	last_insert_rowid()
 
 -- SQLite.Classic SQLite
 DECLARE @p NVarChar(5) -- String

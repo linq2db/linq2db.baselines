@@ -18,8 +18,7 @@ WHERE
 					Patient d
 				LIMIT 1
 			)
-	) OR
-	EXISTS(
+	) OR EXISTS(
 		SELECT
 			*
 		FROM

@@ -25,8 +25,7 @@ FROM
 				LEFT JOIN Trade trade_1 ON al_group_1.AlertKey = To_Char(trade_1.DealId)
 				LEFT JOIN Nomin nomin_1 ON al_group_1.AlertKey = To_Char(nomin_1.CargoId)
 		WHERE
-			nomin_1.DeliveryCounterParty LIKE '%C%' OR trade_1.CounterParty LIKE '%C%' OR
-			al_group_1.AlertCode LIKE '%C%'
+			nomin_1.DeliveryCounterParty LIKE '%C%' OR trade_1.CounterParty LIKE '%C%' OR al_group_1.AlertCode LIKE '%C%'
 	) al_group_3
 		LEFT JOIN (
 			SELECT
@@ -58,7 +57,6 @@ FROM
 					LEFT JOIN Trade trade_2 ON t1.AlertKey = To_Char(trade_2.DealId)
 					LEFT JOIN Nomin nomin_2 ON t1.AlertKey = To_Char(nomin_2.CargoId)
 			WHERE
-				nomin_2.DeliveryCounterParty LIKE '%C%' OR trade_2.CounterParty LIKE '%C%' OR
-				t1.AlertCode LIKE '%C%'
+				nomin_2.DeliveryCounterParty LIKE '%C%' OR trade_2.CounterParty LIKE '%C%' OR t1.AlertCode LIKE '%C%'
 		) t2 ON al_group_3.Id = t2.Id AND t2.rn = 1
 
