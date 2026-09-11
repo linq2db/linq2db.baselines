@@ -1,0 +1,4 @@
+﻿-- SqlCe
+SELECT
+	COALESCE(1, 0)
+
