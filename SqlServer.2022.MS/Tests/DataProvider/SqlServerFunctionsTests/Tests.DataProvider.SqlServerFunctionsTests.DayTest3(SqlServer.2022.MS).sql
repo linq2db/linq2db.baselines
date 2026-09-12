@@ -1,4 +1,4 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
 SELECT
-	DAY(DATETIMEOFFSETFROMPARTS(2022, 2, 22, 0, 0, 0, 0, 0, 0, 7))
+	DAY(ToDateTimeOffset(DATETIME2FROMPARTS(2022, 2, 22, 0, 0, 0, 0, 3), N'+00:00'))
 
