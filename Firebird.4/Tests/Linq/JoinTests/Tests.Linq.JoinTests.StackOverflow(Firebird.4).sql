@@ -1,5 +1,4 @@
-﻿-- Firebird.4 Firebird4
-SELECT
+﻿SELECT
 	"p_100"."ParentID",
 	"p_100"."Value1",
 	"c_1"."ParentID",
