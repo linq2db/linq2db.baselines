@@ -1,6 +1,6 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 SELECT
-	t."TransactionDate" + -2 * INTERVAL '1' MONTH
+	CAST(Add_Months(t."TransactionDate", -2) - GreatEst(EXTRACT(DAY FROM Add_Months(t."TransactionDate", -2)) - EXTRACT(DAY FROM t."TransactionDate"), 0) AS date) + NumToDsInterval(MOD(EXTRACT(SECOND FROM CAST(t."TransactionDate" AS timestamp)), 1), 'SECOND')
 FROM
 	"Transactions" t
 
