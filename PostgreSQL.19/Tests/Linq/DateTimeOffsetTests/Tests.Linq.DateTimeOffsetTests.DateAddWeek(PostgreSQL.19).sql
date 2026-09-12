@@ -1,6 +1,6 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
 SELECT
-	Date_Trunc('day', (t."TransactionDate" + -Interval '1 Day' * 7) AT TIME ZONE 'UTC')::Date
+	Date_Trunc('day', (t."TransactionDate" AT TIME ZONE 'UTC') + -Interval '1 Day' * 7)
 FROM
 	"Transactions" t
 

@@ -5,7 +5,7 @@ DECLARE @part2 Int32
 SET     @part2 = 4
 
 SELECT
-	t."DateTimeValue" + ((CAST(t."SmallIntValue" AS Int) + :part1) - :part2) * INTERVAL '1' MONTH
+	CAST(Add_Months(t."DateTimeValue", (CAST(t."SmallIntValue" AS Int) + :part1) - :part2) - GreatEst(EXTRACT(DAY FROM Add_Months(t."DateTimeValue", (CAST(t."SmallIntValue" AS Int) + :part1) - :part2)) - EXTRACT(DAY FROM t."DateTimeValue"), 0) AS timestamp) + NumToDsInterval(MOD(EXTRACT(SECOND FROM CAST(t."DateTimeValue" AS timestamp)), 1), 'SECOND')
 FROM
 	"LinqDataTypes" t
 

@@ -1,6 +1,6 @@
 ﻿-- PostgreSQL.18 PostgreSQL12
 SELECT
-	EXTRACT(EPOCH FROM ((t."TransactionDate" + 100 * Interval '1 Minute')::timestamp - t."TransactionDate"::timestamp)) / 60
+	EXTRACT(EPOCH FROM (((((t."TransactionDate" AT TIME ZONE 'UTC') + 100 * Interval '1 Minute') AT TIME ZONE 'UTC'))::timestamp - (t."TransactionDate")::timestamp)) / 60
 FROM
 	"Transactions" t
 

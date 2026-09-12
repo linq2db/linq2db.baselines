@@ -3,7 +3,7 @@ DECLARE @Hour Integer -- Int32
 SET     @Hour = 22
 
 SELECT
-	Floor(Extract(hour From (t."TransactionDate" + :Hour * Interval '1 Hour')))::Int
+	Floor(Extract(hour From ((t."TransactionDate" AT TIME ZONE 'UTC') + :Hour * Interval '1 Hour')))::Int
 FROM
 	"Transactions" t
 

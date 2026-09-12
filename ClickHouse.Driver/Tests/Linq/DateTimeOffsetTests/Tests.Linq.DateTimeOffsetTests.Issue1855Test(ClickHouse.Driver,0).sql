@@ -8,8 +8,8 @@ INSERT INTO Issue1855Table
 VALUES
 (
 	1,
-	toDateTime64('2019-08-08 08:08:08.0000000', 7),
-	toDateTime64('2019-08-08 08:08:08.0000000', 7)
+	toDateTime64('2019-08-08 08:08:08.0000000', 7, 'UTC'),
+	toDateTime64('2019-08-08 08:08:08.0000000', 7, 'UTC')
 )
 
 -- ClickHouse.Driver ClickHouse
@@ -21,7 +21,7 @@ INSERT INTO Issue1855Table
 VALUES
 (
 	2,
-	toDateTime64('2019-08-08 08:08:08.0000000', 7)
+	toDateTime64('2019-08-08 08:08:08.0000000', 7, 'UTC')
 )
 
 -- ClickHouse.Driver ClickHouse
@@ -32,5 +32,5 @@ SELECT
 FROM
 	Issue1855Table r
 WHERE
-	addSeconds(r.SomeDateTimeOffset, 10) >= toDateTime64('2019-08-08 08:08:18.0000000', 7)
+	addSeconds(r.SomeDateTimeOffset, 10) >= toDateTime64('2019-08-08 08:08:18.0000000', 7, 'UTC')
 

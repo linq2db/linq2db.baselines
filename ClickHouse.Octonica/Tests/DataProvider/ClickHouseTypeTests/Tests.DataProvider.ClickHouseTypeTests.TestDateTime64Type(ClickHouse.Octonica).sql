@@ -212,7 +212,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:09:55.1231234', 7) AND
+	r.Column = toDateTime64('2020-02-29 17:09:55.1231234', 7, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -230,7 +230,7 @@ INSERT INTO `TypeTable``2`
 VALUES
 (
 	1,
-	toDateTime64('2020-02-29 17:09:55.1231234', 7),
+	toDateTime64('2020-02-29 17:09:55.1231234', 7, 'UTC'),
 	NULL
 )
 
@@ -242,7 +242,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:09:55.1231234', 7) AND
+	r.Column = toDateTime64('2020-02-29 17:09:55.1231234', 7, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -258,7 +258,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-(1,toDateTime64('2020-02-29 17:09:55.1231234', 7),NULL)
+(1,toDateTime64('2020-02-29 17:09:55.1231234', 7, 'UTC'),NULL)
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
@@ -268,7 +268,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:09:55.1231234', 7) AND
+	r.Column = toDateTime64('2020-02-29 17:09:55.1231234', 7, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -286,7 +286,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:09:55.1231234', 7) AND
+	r.Column = toDateTime64('2020-02-29 17:09:55.1231234', 7, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -304,7 +304,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:09:55.1231234', 7) AND
+	r.Column = toDateTime64('2020-02-29 17:09:55.1231234', 7, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -315,111 +315,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 7) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7)
-
--- ClickHouse.Octonica ClickHouse
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
--- ClickHouse.Octonica ClickHouse
-INSERT INTO `TypeTable``2`
-(
-	Id,
-	Column,
-	ColumnNullable
-)
-VALUES
-(
-	1,
-	toDateTime64('1900-01-01 00:00:00.0000000', 7),
-	toDateTime64('2299-12-31 23:59:59.9999999', 7)
-)
-
--- ClickHouse.Octonica ClickHouse
-SELECT
-	r.Id,
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 7) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7)
-
--- ClickHouse.Octonica ClickHouse
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
--- ClickHouse.Octonica ClickHouse
-INSERT INTO `TypeTable``2`
-(
-	Id,
-	Column,
-	ColumnNullable
-)
-VALUES
-(1,toDateTime64('1900-01-01 00:00:00.0000000', 7),toDateTime64('2299-12-31 23:59:59.9999999', 7))
-
--- ClickHouse.Octonica ClickHouse
-SELECT
-	r.Id,
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 7) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7)
-
--- ClickHouse.Octonica ClickHouse
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
-
--- ClickHouse.Octonica ClickHouse
-SELECT
-	r.Id,
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 7) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7)
-
--- ClickHouse.Octonica ClickHouse
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
-
--- ClickHouse.Octonica ClickHouse
-SELECT
-	r.Id,
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 7) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7)
-
--- ClickHouse.Octonica ClickHouse
-SELECT
-	r.Id,
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toDateTime64('2020-02-29 17:14:55.1231234', 7) AND
-	r.ColumnNullable IS NULL
+	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 7, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
@@ -436,7 +333,110 @@ INSERT INTO `TypeTable``2`
 VALUES
 (
 	1,
-	toDateTime64('2020-02-29 17:14:55.1231234', 7),
+	toDateTime64('1900-01-01 00:00:00.0000000', 7, 'UTC'),
+	toDateTime64('2299-12-31 23:59:59.9999999', 7, 'UTC')
+)
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 7, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7, 'UTC')
+
+-- ClickHouse.Octonica ClickHouse
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+-- ClickHouse.Octonica ClickHouse
+INSERT INTO `TypeTable``2`
+(
+	Id,
+	Column,
+	ColumnNullable
+)
+VALUES
+(1,toDateTime64('1900-01-01 00:00:00.0000000', 7, 'UTC'),toDateTime64('2299-12-31 23:59:59.9999999', 7, 'UTC'))
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 7, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7, 'UTC')
+
+-- ClickHouse.Octonica ClickHouse
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 7, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7, 'UTC')
+
+-- ClickHouse.Octonica ClickHouse
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 7, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7, 'UTC')
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toDateTime64('2020-02-29 17:14:55.1231234', 7, 'UTC') AND
+	r.ColumnNullable IS NULL
+
+-- ClickHouse.Octonica ClickHouse
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+-- ClickHouse.Octonica ClickHouse
+INSERT INTO `TypeTable``2`
+(
+	Id,
+	Column,
+	ColumnNullable
+)
+VALUES
+(
+	1,
+	toDateTime64('2020-02-29 17:14:55.1231234', 7, 'UTC'),
 	NULL
 )
 
@@ -448,7 +448,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:14:55.1231234', 7) AND
+	r.Column = toDateTime64('2020-02-29 17:14:55.1231234', 7, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -464,7 +464,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-(1,toDateTime64('2020-02-29 17:14:55.1231234', 7),NULL)
+(1,toDateTime64('2020-02-29 17:14:55.1231234', 7, 'UTC'),NULL)
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
@@ -474,7 +474,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:14:55.1231234', 7) AND
+	r.Column = toDateTime64('2020-02-29 17:14:55.1231234', 7, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -492,7 +492,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:14:55.1231234', 7) AND
+	r.Column = toDateTime64('2020-02-29 17:14:55.1231234', 7, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -510,7 +510,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:14:55.1231234', 7) AND
+	r.Column = toDateTime64('2020-02-29 17:14:55.1231234', 7, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -521,8 +521,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:45:00.0000000', 7) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999999', 7)
+	r.Column = toDateTime64('1900-01-01 00:45:00.0000000', 7, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999999', 7, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
@@ -539,8 +539,8 @@ INSERT INTO `TypeTable``2`
 VALUES
 (
 	1,
-	toDateTime64('1900-01-01 00:45:00.0000000', 7),
-	toDateTime64('2299-12-31 23:14:59.9999999', 7)
+	toDateTime64('1900-01-01 00:45:00.0000000', 7, 'UTC'),
+	toDateTime64('2299-12-31 23:14:59.9999999', 7, 'UTC')
 )
 
 -- ClickHouse.Octonica ClickHouse
@@ -551,8 +551,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:45:00.0000000', 7) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999999', 7)
+	r.Column = toDateTime64('1900-01-01 00:45:00.0000000', 7, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999999', 7, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
@@ -567,7 +567,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-(1,toDateTime64('1900-01-01 00:45:00.0000000', 7),toDateTime64('2299-12-31 23:14:59.9999999', 7))
+(1,toDateTime64('1900-01-01 00:45:00.0000000', 7, 'UTC'),toDateTime64('2299-12-31 23:14:59.9999999', 7, 'UTC'))
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
@@ -577,8 +577,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:45:00.0000000', 7) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999999', 7)
+	r.Column = toDateTime64('1900-01-01 00:45:00.0000000', 7, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999999', 7, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
@@ -595,8 +595,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:45:00.0000000', 7) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999999', 7)
+	r.Column = toDateTime64('1900-01-01 00:45:00.0000000', 7, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999999', 7, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
@@ -613,8 +613,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:45:00.0000000', 7) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999999', 7)
+	r.Column = toDateTime64('1900-01-01 00:45:00.0000000', 7, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999999', 7, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
@@ -830,7 +830,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:09:55', 0) AND
+	r.Column = toDateTime64('2020-02-29 17:09:55', 0, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -848,7 +848,7 @@ INSERT INTO `TypeTable``2`
 VALUES
 (
 	1,
-	toDateTime64('2020-02-29 17:09:55', 0),
+	toDateTime64('2020-02-29 17:09:55', 0, 'UTC'),
 	NULL
 )
 
@@ -860,7 +860,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:09:55', 0) AND
+	r.Column = toDateTime64('2020-02-29 17:09:55', 0, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -876,7 +876,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-(1,toDateTime64('2020-02-29 17:09:55', 0),NULL)
+(1,toDateTime64('2020-02-29 17:09:55', 0, 'UTC'),NULL)
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
@@ -886,7 +886,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:09:55', 0) AND
+	r.Column = toDateTime64('2020-02-29 17:09:55', 0, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -904,7 +904,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:09:55', 0) AND
+	r.Column = toDateTime64('2020-02-29 17:09:55', 0, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -922,7 +922,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:09:55', 0) AND
+	r.Column = toDateTime64('2020-02-29 17:09:55', 0, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -933,111 +933,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:00:00', 0) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59', 0)
-
--- ClickHouse.Octonica ClickHouse
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
--- ClickHouse.Octonica ClickHouse
-INSERT INTO `TypeTable``2`
-(
-	Id,
-	Column,
-	ColumnNullable
-)
-VALUES
-(
-	1,
-	toDateTime64('1900-01-01 00:00:00', 0),
-	toDateTime64('2299-12-31 23:59:59', 0)
-)
-
--- ClickHouse.Octonica ClickHouse
-SELECT
-	r.Id,
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toDateTime64('1900-01-01 00:00:00', 0) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59', 0)
-
--- ClickHouse.Octonica ClickHouse
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
--- ClickHouse.Octonica ClickHouse
-INSERT INTO `TypeTable``2`
-(
-	Id,
-	Column,
-	ColumnNullable
-)
-VALUES
-(1,toDateTime64('1900-01-01 00:00:00', 0),toDateTime64('2299-12-31 23:59:59', 0))
-
--- ClickHouse.Octonica ClickHouse
-SELECT
-	r.Id,
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toDateTime64('1900-01-01 00:00:00', 0) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59', 0)
-
--- ClickHouse.Octonica ClickHouse
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
-
--- ClickHouse.Octonica ClickHouse
-SELECT
-	r.Id,
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toDateTime64('1900-01-01 00:00:00', 0) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59', 0)
-
--- ClickHouse.Octonica ClickHouse
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
-
--- ClickHouse.Octonica ClickHouse
-SELECT
-	r.Id,
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toDateTime64('1900-01-01 00:00:00', 0) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59', 0)
-
--- ClickHouse.Octonica ClickHouse
-SELECT
-	r.Id,
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toDateTime64('2020-02-29 17:14:55', 0) AND
-	r.ColumnNullable IS NULL
+	r.Column = toDateTime64('1900-01-01 00:00:00', 0, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59', 0, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
@@ -1054,7 +951,110 @@ INSERT INTO `TypeTable``2`
 VALUES
 (
 	1,
-	toDateTime64('2020-02-29 17:14:55', 0),
+	toDateTime64('1900-01-01 00:00:00', 0, 'UTC'),
+	toDateTime64('2299-12-31 23:59:59', 0, 'UTC')
+)
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toDateTime64('1900-01-01 00:00:00', 0, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59', 0, 'UTC')
+
+-- ClickHouse.Octonica ClickHouse
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+-- ClickHouse.Octonica ClickHouse
+INSERT INTO `TypeTable``2`
+(
+	Id,
+	Column,
+	ColumnNullable
+)
+VALUES
+(1,toDateTime64('1900-01-01 00:00:00', 0, 'UTC'),toDateTime64('2299-12-31 23:59:59', 0, 'UTC'))
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toDateTime64('1900-01-01 00:00:00', 0, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59', 0, 'UTC')
+
+-- ClickHouse.Octonica ClickHouse
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toDateTime64('1900-01-01 00:00:00', 0, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59', 0, 'UTC')
+
+-- ClickHouse.Octonica ClickHouse
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toDateTime64('1900-01-01 00:00:00', 0, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59', 0, 'UTC')
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toDateTime64('2020-02-29 17:14:55', 0, 'UTC') AND
+	r.ColumnNullable IS NULL
+
+-- ClickHouse.Octonica ClickHouse
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+-- ClickHouse.Octonica ClickHouse
+INSERT INTO `TypeTable``2`
+(
+	Id,
+	Column,
+	ColumnNullable
+)
+VALUES
+(
+	1,
+	toDateTime64('2020-02-29 17:14:55', 0, 'UTC'),
 	NULL
 )
 
@@ -1066,7 +1066,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:14:55', 0) AND
+	r.Column = toDateTime64('2020-02-29 17:14:55', 0, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -1082,7 +1082,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-(1,toDateTime64('2020-02-29 17:14:55', 0),NULL)
+(1,toDateTime64('2020-02-29 17:14:55', 0, 'UTC'),NULL)
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
@@ -1092,7 +1092,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:14:55', 0) AND
+	r.Column = toDateTime64('2020-02-29 17:14:55', 0, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -1110,7 +1110,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:14:55', 0) AND
+	r.Column = toDateTime64('2020-02-29 17:14:55', 0, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -1128,7 +1128,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:14:55', 0) AND
+	r.Column = toDateTime64('2020-02-29 17:14:55', 0, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -1139,8 +1139,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:45:00', 0) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59', 0)
+	r.Column = toDateTime64('1900-01-01 00:45:00', 0, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59', 0, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
@@ -1157,8 +1157,8 @@ INSERT INTO `TypeTable``2`
 VALUES
 (
 	1,
-	toDateTime64('1900-01-01 00:45:00', 0),
-	toDateTime64('2299-12-31 23:14:59', 0)
+	toDateTime64('1900-01-01 00:45:00', 0, 'UTC'),
+	toDateTime64('2299-12-31 23:14:59', 0, 'UTC')
 )
 
 -- ClickHouse.Octonica ClickHouse
@@ -1169,8 +1169,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:45:00', 0) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59', 0)
+	r.Column = toDateTime64('1900-01-01 00:45:00', 0, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59', 0, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
@@ -1185,7 +1185,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-(1,toDateTime64('1900-01-01 00:45:00', 0),toDateTime64('2299-12-31 23:14:59', 0))
+(1,toDateTime64('1900-01-01 00:45:00', 0, 'UTC'),toDateTime64('2299-12-31 23:14:59', 0, 'UTC'))
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
@@ -1195,8 +1195,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:45:00', 0) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59', 0)
+	r.Column = toDateTime64('1900-01-01 00:45:00', 0, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59', 0, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
@@ -1213,8 +1213,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:45:00', 0) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59', 0)
+	r.Column = toDateTime64('1900-01-01 00:45:00', 0, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59', 0, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
@@ -1231,8 +1231,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:45:00', 0) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59', 0)
+	r.Column = toDateTime64('1900-01-01 00:45:00', 0, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59', 0, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
@@ -1860,7 +1860,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:09:55.0', 1) AND
+	r.Column = toDateTime64('2020-02-29 17:09:55.0', 1, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -1878,7 +1878,7 @@ INSERT INTO `TypeTable``2`
 VALUES
 (
 	1,
-	toDateTime64('2020-02-29 17:09:55.0', 1),
+	toDateTime64('2020-02-29 17:09:55.0', 1, 'UTC'),
 	NULL
 )
 
@@ -1890,7 +1890,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:09:55.0', 1) AND
+	r.Column = toDateTime64('2020-02-29 17:09:55.0', 1, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -1906,7 +1906,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-(1,toDateTime64('2020-02-29 17:09:55.0', 1),NULL)
+(1,toDateTime64('2020-02-29 17:09:55.0', 1, 'UTC'),NULL)
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
@@ -1916,7 +1916,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:09:55.0', 1) AND
+	r.Column = toDateTime64('2020-02-29 17:09:55.0', 1, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -1934,7 +1934,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:09:55.0', 1) AND
+	r.Column = toDateTime64('2020-02-29 17:09:55.0', 1, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -1952,7 +1952,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:09:55.0', 1) AND
+	r.Column = toDateTime64('2020-02-29 17:09:55.0', 1, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -1963,111 +1963,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:00:00.0', 1) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9', 1)
-
--- ClickHouse.Octonica ClickHouse
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
--- ClickHouse.Octonica ClickHouse
-INSERT INTO `TypeTable``2`
-(
-	Id,
-	Column,
-	ColumnNullable
-)
-VALUES
-(
-	1,
-	toDateTime64('1900-01-01 00:00:00.0', 1),
-	toDateTime64('2299-12-31 23:59:59.9', 1)
-)
-
--- ClickHouse.Octonica ClickHouse
-SELECT
-	r.Id,
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toDateTime64('1900-01-01 00:00:00.0', 1) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9', 1)
-
--- ClickHouse.Octonica ClickHouse
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
--- ClickHouse.Octonica ClickHouse
-INSERT INTO `TypeTable``2`
-(
-	Id,
-	Column,
-	ColumnNullable
-)
-VALUES
-(1,toDateTime64('1900-01-01 00:00:00.0', 1),toDateTime64('2299-12-31 23:59:59.9', 1))
-
--- ClickHouse.Octonica ClickHouse
-SELECT
-	r.Id,
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toDateTime64('1900-01-01 00:00:00.0', 1) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9', 1)
-
--- ClickHouse.Octonica ClickHouse
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
-
--- ClickHouse.Octonica ClickHouse
-SELECT
-	r.Id,
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toDateTime64('1900-01-01 00:00:00.0', 1) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9', 1)
-
--- ClickHouse.Octonica ClickHouse
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
-
--- ClickHouse.Octonica ClickHouse
-SELECT
-	r.Id,
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toDateTime64('1900-01-01 00:00:00.0', 1) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9', 1)
-
--- ClickHouse.Octonica ClickHouse
-SELECT
-	r.Id,
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toDateTime64('2020-02-29 17:14:55.0', 1) AND
-	r.ColumnNullable IS NULL
+	r.Column = toDateTime64('1900-01-01 00:00:00.0', 1, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9', 1, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
@@ -2084,7 +1981,110 @@ INSERT INTO `TypeTable``2`
 VALUES
 (
 	1,
-	toDateTime64('2020-02-29 17:14:55.0', 1),
+	toDateTime64('1900-01-01 00:00:00.0', 1, 'UTC'),
+	toDateTime64('2299-12-31 23:59:59.9', 1, 'UTC')
+)
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toDateTime64('1900-01-01 00:00:00.0', 1, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9', 1, 'UTC')
+
+-- ClickHouse.Octonica ClickHouse
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+-- ClickHouse.Octonica ClickHouse
+INSERT INTO `TypeTable``2`
+(
+	Id,
+	Column,
+	ColumnNullable
+)
+VALUES
+(1,toDateTime64('1900-01-01 00:00:00.0', 1, 'UTC'),toDateTime64('2299-12-31 23:59:59.9', 1, 'UTC'))
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toDateTime64('1900-01-01 00:00:00.0', 1, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9', 1, 'UTC')
+
+-- ClickHouse.Octonica ClickHouse
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toDateTime64('1900-01-01 00:00:00.0', 1, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9', 1, 'UTC')
+
+-- ClickHouse.Octonica ClickHouse
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toDateTime64('1900-01-01 00:00:00.0', 1, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9', 1, 'UTC')
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toDateTime64('2020-02-29 17:14:55.0', 1, 'UTC') AND
+	r.ColumnNullable IS NULL
+
+-- ClickHouse.Octonica ClickHouse
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+-- ClickHouse.Octonica ClickHouse
+INSERT INTO `TypeTable``2`
+(
+	Id,
+	Column,
+	ColumnNullable
+)
+VALUES
+(
+	1,
+	toDateTime64('2020-02-29 17:14:55.0', 1, 'UTC'),
 	NULL
 )
 
@@ -2096,7 +2096,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:14:55.0', 1) AND
+	r.Column = toDateTime64('2020-02-29 17:14:55.0', 1, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -2112,7 +2112,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-(1,toDateTime64('2020-02-29 17:14:55.0', 1),NULL)
+(1,toDateTime64('2020-02-29 17:14:55.0', 1, 'UTC'),NULL)
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
@@ -2122,7 +2122,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:14:55.0', 1) AND
+	r.Column = toDateTime64('2020-02-29 17:14:55.0', 1, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -2140,7 +2140,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:14:55.0', 1) AND
+	r.Column = toDateTime64('2020-02-29 17:14:55.0', 1, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -2158,7 +2158,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:14:55.0', 1) AND
+	r.Column = toDateTime64('2020-02-29 17:14:55.0', 1, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -2169,8 +2169,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:45:00.0', 1) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9', 1)
+	r.Column = toDateTime64('1900-01-01 00:45:00.0', 1, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9', 1, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
@@ -2187,8 +2187,8 @@ INSERT INTO `TypeTable``2`
 VALUES
 (
 	1,
-	toDateTime64('1900-01-01 00:45:00.0', 1),
-	toDateTime64('2299-12-31 23:14:59.9', 1)
+	toDateTime64('1900-01-01 00:45:00.0', 1, 'UTC'),
+	toDateTime64('2299-12-31 23:14:59.9', 1, 'UTC')
 )
 
 -- ClickHouse.Octonica ClickHouse
@@ -2199,8 +2199,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:45:00.0', 1) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9', 1)
+	r.Column = toDateTime64('1900-01-01 00:45:00.0', 1, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9', 1, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
@@ -2215,7 +2215,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-(1,toDateTime64('1900-01-01 00:45:00.0', 1),toDateTime64('2299-12-31 23:14:59.9', 1))
+(1,toDateTime64('1900-01-01 00:45:00.0', 1, 'UTC'),toDateTime64('2299-12-31 23:14:59.9', 1, 'UTC'))
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
@@ -2225,8 +2225,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:45:00.0', 1) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9', 1)
+	r.Column = toDateTime64('1900-01-01 00:45:00.0', 1, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9', 1, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
@@ -2243,8 +2243,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:45:00.0', 1) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9', 1)
+	r.Column = toDateTime64('1900-01-01 00:45:00.0', 1, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9', 1, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
@@ -2261,8 +2261,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:45:00.0', 1) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9', 1)
+	r.Column = toDateTime64('1900-01-01 00:45:00.0', 1, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9', 1, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
@@ -2890,7 +2890,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:09:55.00', 2) AND
+	r.Column = toDateTime64('2020-02-29 17:09:55.00', 2, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -2908,7 +2908,7 @@ INSERT INTO `TypeTable``2`
 VALUES
 (
 	1,
-	toDateTime64('2020-02-29 17:09:55.00', 2),
+	toDateTime64('2020-02-29 17:09:55.00', 2, 'UTC'),
 	NULL
 )
 
@@ -2920,7 +2920,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:09:55.00', 2) AND
+	r.Column = toDateTime64('2020-02-29 17:09:55.00', 2, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -2936,7 +2936,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-(1,toDateTime64('2020-02-29 17:09:55.00', 2),NULL)
+(1,toDateTime64('2020-02-29 17:09:55.00', 2, 'UTC'),NULL)
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
@@ -2946,7 +2946,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:09:55.00', 2) AND
+	r.Column = toDateTime64('2020-02-29 17:09:55.00', 2, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -2964,7 +2964,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:09:55.00', 2) AND
+	r.Column = toDateTime64('2020-02-29 17:09:55.00', 2, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -2982,7 +2982,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:09:55.00', 2) AND
+	r.Column = toDateTime64('2020-02-29 17:09:55.00', 2, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -2993,111 +2993,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:00:00.00', 2) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99', 2)
-
--- ClickHouse.Octonica ClickHouse
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
--- ClickHouse.Octonica ClickHouse
-INSERT INTO `TypeTable``2`
-(
-	Id,
-	Column,
-	ColumnNullable
-)
-VALUES
-(
-	1,
-	toDateTime64('1900-01-01 00:00:00.00', 2),
-	toDateTime64('2299-12-31 23:59:59.99', 2)
-)
-
--- ClickHouse.Octonica ClickHouse
-SELECT
-	r.Id,
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toDateTime64('1900-01-01 00:00:00.00', 2) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99', 2)
-
--- ClickHouse.Octonica ClickHouse
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
--- ClickHouse.Octonica ClickHouse
-INSERT INTO `TypeTable``2`
-(
-	Id,
-	Column,
-	ColumnNullable
-)
-VALUES
-(1,toDateTime64('1900-01-01 00:00:00.00', 2),toDateTime64('2299-12-31 23:59:59.99', 2))
-
--- ClickHouse.Octonica ClickHouse
-SELECT
-	r.Id,
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toDateTime64('1900-01-01 00:00:00.00', 2) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99', 2)
-
--- ClickHouse.Octonica ClickHouse
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
-
--- ClickHouse.Octonica ClickHouse
-SELECT
-	r.Id,
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toDateTime64('1900-01-01 00:00:00.00', 2) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99', 2)
-
--- ClickHouse.Octonica ClickHouse
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
-
--- ClickHouse.Octonica ClickHouse
-SELECT
-	r.Id,
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toDateTime64('1900-01-01 00:00:00.00', 2) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99', 2)
-
--- ClickHouse.Octonica ClickHouse
-SELECT
-	r.Id,
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toDateTime64('2020-02-29 17:14:55.00', 2) AND
-	r.ColumnNullable IS NULL
+	r.Column = toDateTime64('1900-01-01 00:00:00.00', 2, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99', 2, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
@@ -3114,7 +3011,110 @@ INSERT INTO `TypeTable``2`
 VALUES
 (
 	1,
-	toDateTime64('2020-02-29 17:14:55.00', 2),
+	toDateTime64('1900-01-01 00:00:00.00', 2, 'UTC'),
+	toDateTime64('2299-12-31 23:59:59.99', 2, 'UTC')
+)
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toDateTime64('1900-01-01 00:00:00.00', 2, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99', 2, 'UTC')
+
+-- ClickHouse.Octonica ClickHouse
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+-- ClickHouse.Octonica ClickHouse
+INSERT INTO `TypeTable``2`
+(
+	Id,
+	Column,
+	ColumnNullable
+)
+VALUES
+(1,toDateTime64('1900-01-01 00:00:00.00', 2, 'UTC'),toDateTime64('2299-12-31 23:59:59.99', 2, 'UTC'))
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toDateTime64('1900-01-01 00:00:00.00', 2, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99', 2, 'UTC')
+
+-- ClickHouse.Octonica ClickHouse
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toDateTime64('1900-01-01 00:00:00.00', 2, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99', 2, 'UTC')
+
+-- ClickHouse.Octonica ClickHouse
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toDateTime64('1900-01-01 00:00:00.00', 2, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99', 2, 'UTC')
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toDateTime64('2020-02-29 17:14:55.00', 2, 'UTC') AND
+	r.ColumnNullable IS NULL
+
+-- ClickHouse.Octonica ClickHouse
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+-- ClickHouse.Octonica ClickHouse
+INSERT INTO `TypeTable``2`
+(
+	Id,
+	Column,
+	ColumnNullable
+)
+VALUES
+(
+	1,
+	toDateTime64('2020-02-29 17:14:55.00', 2, 'UTC'),
 	NULL
 )
 
@@ -3126,7 +3126,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:14:55.00', 2) AND
+	r.Column = toDateTime64('2020-02-29 17:14:55.00', 2, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -3142,7 +3142,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-(1,toDateTime64('2020-02-29 17:14:55.00', 2),NULL)
+(1,toDateTime64('2020-02-29 17:14:55.00', 2, 'UTC'),NULL)
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
@@ -3152,7 +3152,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:14:55.00', 2) AND
+	r.Column = toDateTime64('2020-02-29 17:14:55.00', 2, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -3170,7 +3170,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:14:55.00', 2) AND
+	r.Column = toDateTime64('2020-02-29 17:14:55.00', 2, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -3188,7 +3188,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:14:55.00', 2) AND
+	r.Column = toDateTime64('2020-02-29 17:14:55.00', 2, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -3199,8 +3199,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:45:00.00', 2) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.99', 2)
+	r.Column = toDateTime64('1900-01-01 00:45:00.00', 2, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.99', 2, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
@@ -3217,8 +3217,8 @@ INSERT INTO `TypeTable``2`
 VALUES
 (
 	1,
-	toDateTime64('1900-01-01 00:45:00.00', 2),
-	toDateTime64('2299-12-31 23:14:59.99', 2)
+	toDateTime64('1900-01-01 00:45:00.00', 2, 'UTC'),
+	toDateTime64('2299-12-31 23:14:59.99', 2, 'UTC')
 )
 
 -- ClickHouse.Octonica ClickHouse
@@ -3229,8 +3229,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:45:00.00', 2) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.99', 2)
+	r.Column = toDateTime64('1900-01-01 00:45:00.00', 2, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.99', 2, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
@@ -3245,7 +3245,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-(1,toDateTime64('1900-01-01 00:45:00.00', 2),toDateTime64('2299-12-31 23:14:59.99', 2))
+(1,toDateTime64('1900-01-01 00:45:00.00', 2, 'UTC'),toDateTime64('2299-12-31 23:14:59.99', 2, 'UTC'))
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
@@ -3255,8 +3255,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:45:00.00', 2) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.99', 2)
+	r.Column = toDateTime64('1900-01-01 00:45:00.00', 2, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.99', 2, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
@@ -3273,8 +3273,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:45:00.00', 2) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.99', 2)
+	r.Column = toDateTime64('1900-01-01 00:45:00.00', 2, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.99', 2, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
@@ -3291,8 +3291,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:45:00.00', 2) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.99', 2)
+	r.Column = toDateTime64('1900-01-01 00:45:00.00', 2, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.99', 2, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
@@ -3920,7 +3920,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:09:55.000', 3) AND
+	r.Column = toDateTime64('2020-02-29 17:09:55.000', 3, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -3938,7 +3938,7 @@ INSERT INTO `TypeTable``2`
 VALUES
 (
 	1,
-	toDateTime64('2020-02-29 17:09:55.000', 3),
+	toDateTime64('2020-02-29 17:09:55.000', 3, 'UTC'),
 	NULL
 )
 
@@ -3950,7 +3950,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:09:55.000', 3) AND
+	r.Column = toDateTime64('2020-02-29 17:09:55.000', 3, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -3966,7 +3966,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-(1,toDateTime64('2020-02-29 17:09:55.000', 3),NULL)
+(1,toDateTime64('2020-02-29 17:09:55.000', 3, 'UTC'),NULL)
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
@@ -3976,7 +3976,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:09:55.000', 3) AND
+	r.Column = toDateTime64('2020-02-29 17:09:55.000', 3, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -3994,7 +3994,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:09:55.000', 3) AND
+	r.Column = toDateTime64('2020-02-29 17:09:55.000', 3, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -4012,7 +4012,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:09:55.000', 3) AND
+	r.Column = toDateTime64('2020-02-29 17:09:55.000', 3, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -4023,111 +4023,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:00:00.000', 3) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999', 3)
-
--- ClickHouse.Octonica ClickHouse
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
--- ClickHouse.Octonica ClickHouse
-INSERT INTO `TypeTable``2`
-(
-	Id,
-	Column,
-	ColumnNullable
-)
-VALUES
-(
-	1,
-	toDateTime64('1900-01-01 00:00:00.000', 3),
-	toDateTime64('2299-12-31 23:59:59.999', 3)
-)
-
--- ClickHouse.Octonica ClickHouse
-SELECT
-	r.Id,
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toDateTime64('1900-01-01 00:00:00.000', 3) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999', 3)
-
--- ClickHouse.Octonica ClickHouse
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
--- ClickHouse.Octonica ClickHouse
-INSERT INTO `TypeTable``2`
-(
-	Id,
-	Column,
-	ColumnNullable
-)
-VALUES
-(1,toDateTime64('1900-01-01 00:00:00.000', 3),toDateTime64('2299-12-31 23:59:59.999', 3))
-
--- ClickHouse.Octonica ClickHouse
-SELECT
-	r.Id,
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toDateTime64('1900-01-01 00:00:00.000', 3) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999', 3)
-
--- ClickHouse.Octonica ClickHouse
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
-
--- ClickHouse.Octonica ClickHouse
-SELECT
-	r.Id,
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toDateTime64('1900-01-01 00:00:00.000', 3) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999', 3)
-
--- ClickHouse.Octonica ClickHouse
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
-
--- ClickHouse.Octonica ClickHouse
-SELECT
-	r.Id,
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toDateTime64('1900-01-01 00:00:00.000', 3) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999', 3)
-
--- ClickHouse.Octonica ClickHouse
-SELECT
-	r.Id,
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toDateTime64('2020-02-29 17:14:55.000', 3) AND
-	r.ColumnNullable IS NULL
+	r.Column = toDateTime64('1900-01-01 00:00:00.000', 3, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999', 3, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
@@ -4144,7 +4041,110 @@ INSERT INTO `TypeTable``2`
 VALUES
 (
 	1,
-	toDateTime64('2020-02-29 17:14:55.000', 3),
+	toDateTime64('1900-01-01 00:00:00.000', 3, 'UTC'),
+	toDateTime64('2299-12-31 23:59:59.999', 3, 'UTC')
+)
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toDateTime64('1900-01-01 00:00:00.000', 3, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999', 3, 'UTC')
+
+-- ClickHouse.Octonica ClickHouse
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+-- ClickHouse.Octonica ClickHouse
+INSERT INTO `TypeTable``2`
+(
+	Id,
+	Column,
+	ColumnNullable
+)
+VALUES
+(1,toDateTime64('1900-01-01 00:00:00.000', 3, 'UTC'),toDateTime64('2299-12-31 23:59:59.999', 3, 'UTC'))
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toDateTime64('1900-01-01 00:00:00.000', 3, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999', 3, 'UTC')
+
+-- ClickHouse.Octonica ClickHouse
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toDateTime64('1900-01-01 00:00:00.000', 3, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999', 3, 'UTC')
+
+-- ClickHouse.Octonica ClickHouse
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toDateTime64('1900-01-01 00:00:00.000', 3, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999', 3, 'UTC')
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toDateTime64('2020-02-29 17:14:55.000', 3, 'UTC') AND
+	r.ColumnNullable IS NULL
+
+-- ClickHouse.Octonica ClickHouse
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+-- ClickHouse.Octonica ClickHouse
+INSERT INTO `TypeTable``2`
+(
+	Id,
+	Column,
+	ColumnNullable
+)
+VALUES
+(
+	1,
+	toDateTime64('2020-02-29 17:14:55.000', 3, 'UTC'),
 	NULL
 )
 
@@ -4156,7 +4156,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:14:55.000', 3) AND
+	r.Column = toDateTime64('2020-02-29 17:14:55.000', 3, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -4172,7 +4172,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-(1,toDateTime64('2020-02-29 17:14:55.000', 3),NULL)
+(1,toDateTime64('2020-02-29 17:14:55.000', 3, 'UTC'),NULL)
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
@@ -4182,7 +4182,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:14:55.000', 3) AND
+	r.Column = toDateTime64('2020-02-29 17:14:55.000', 3, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -4200,7 +4200,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:14:55.000', 3) AND
+	r.Column = toDateTime64('2020-02-29 17:14:55.000', 3, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -4218,7 +4218,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:14:55.000', 3) AND
+	r.Column = toDateTime64('2020-02-29 17:14:55.000', 3, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -4229,8 +4229,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:45:00.000', 3) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.999', 3)
+	r.Column = toDateTime64('1900-01-01 00:45:00.000', 3, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.999', 3, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
@@ -4247,8 +4247,8 @@ INSERT INTO `TypeTable``2`
 VALUES
 (
 	1,
-	toDateTime64('1900-01-01 00:45:00.000', 3),
-	toDateTime64('2299-12-31 23:14:59.999', 3)
+	toDateTime64('1900-01-01 00:45:00.000', 3, 'UTC'),
+	toDateTime64('2299-12-31 23:14:59.999', 3, 'UTC')
 )
 
 -- ClickHouse.Octonica ClickHouse
@@ -4259,8 +4259,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:45:00.000', 3) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.999', 3)
+	r.Column = toDateTime64('1900-01-01 00:45:00.000', 3, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.999', 3, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
@@ -4275,7 +4275,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-(1,toDateTime64('1900-01-01 00:45:00.000', 3),toDateTime64('2299-12-31 23:14:59.999', 3))
+(1,toDateTime64('1900-01-01 00:45:00.000', 3, 'UTC'),toDateTime64('2299-12-31 23:14:59.999', 3, 'UTC'))
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
@@ -4285,8 +4285,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:45:00.000', 3) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.999', 3)
+	r.Column = toDateTime64('1900-01-01 00:45:00.000', 3, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.999', 3, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
@@ -4303,8 +4303,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:45:00.000', 3) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.999', 3)
+	r.Column = toDateTime64('1900-01-01 00:45:00.000', 3, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.999', 3, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
@@ -4321,8 +4321,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:45:00.000', 3) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.999', 3)
+	r.Column = toDateTime64('1900-01-01 00:45:00.000', 3, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.999', 3, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
@@ -4950,7 +4950,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:09:55.0000', 4) AND
+	r.Column = toDateTime64('2020-02-29 17:09:55.0000', 4, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -4968,7 +4968,7 @@ INSERT INTO `TypeTable``2`
 VALUES
 (
 	1,
-	toDateTime64('2020-02-29 17:09:55.0000', 4),
+	toDateTime64('2020-02-29 17:09:55.0000', 4, 'UTC'),
 	NULL
 )
 
@@ -4980,7 +4980,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:09:55.0000', 4) AND
+	r.Column = toDateTime64('2020-02-29 17:09:55.0000', 4, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -4996,7 +4996,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-(1,toDateTime64('2020-02-29 17:09:55.0000', 4),NULL)
+(1,toDateTime64('2020-02-29 17:09:55.0000', 4, 'UTC'),NULL)
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
@@ -5006,7 +5006,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:09:55.0000', 4) AND
+	r.Column = toDateTime64('2020-02-29 17:09:55.0000', 4, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -5024,7 +5024,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:09:55.0000', 4) AND
+	r.Column = toDateTime64('2020-02-29 17:09:55.0000', 4, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -5042,7 +5042,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:09:55.0000', 4) AND
+	r.Column = toDateTime64('2020-02-29 17:09:55.0000', 4, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -5053,111 +5053,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:00:00.0000', 4) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999', 4)
-
--- ClickHouse.Octonica ClickHouse
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
--- ClickHouse.Octonica ClickHouse
-INSERT INTO `TypeTable``2`
-(
-	Id,
-	Column,
-	ColumnNullable
-)
-VALUES
-(
-	1,
-	toDateTime64('1900-01-01 00:00:00.0000', 4),
-	toDateTime64('2299-12-31 23:59:59.9999', 4)
-)
-
--- ClickHouse.Octonica ClickHouse
-SELECT
-	r.Id,
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toDateTime64('1900-01-01 00:00:00.0000', 4) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999', 4)
-
--- ClickHouse.Octonica ClickHouse
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
--- ClickHouse.Octonica ClickHouse
-INSERT INTO `TypeTable``2`
-(
-	Id,
-	Column,
-	ColumnNullable
-)
-VALUES
-(1,toDateTime64('1900-01-01 00:00:00.0000', 4),toDateTime64('2299-12-31 23:59:59.9999', 4))
-
--- ClickHouse.Octonica ClickHouse
-SELECT
-	r.Id,
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toDateTime64('1900-01-01 00:00:00.0000', 4) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999', 4)
-
--- ClickHouse.Octonica ClickHouse
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
-
--- ClickHouse.Octonica ClickHouse
-SELECT
-	r.Id,
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toDateTime64('1900-01-01 00:00:00.0000', 4) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999', 4)
-
--- ClickHouse.Octonica ClickHouse
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
-
--- ClickHouse.Octonica ClickHouse
-SELECT
-	r.Id,
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toDateTime64('1900-01-01 00:00:00.0000', 4) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999', 4)
-
--- ClickHouse.Octonica ClickHouse
-SELECT
-	r.Id,
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toDateTime64('2020-02-29 17:14:55.0000', 4) AND
-	r.ColumnNullable IS NULL
+	r.Column = toDateTime64('1900-01-01 00:00:00.0000', 4, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999', 4, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
@@ -5174,7 +5071,110 @@ INSERT INTO `TypeTable``2`
 VALUES
 (
 	1,
-	toDateTime64('2020-02-29 17:14:55.0000', 4),
+	toDateTime64('1900-01-01 00:00:00.0000', 4, 'UTC'),
+	toDateTime64('2299-12-31 23:59:59.9999', 4, 'UTC')
+)
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toDateTime64('1900-01-01 00:00:00.0000', 4, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999', 4, 'UTC')
+
+-- ClickHouse.Octonica ClickHouse
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+-- ClickHouse.Octonica ClickHouse
+INSERT INTO `TypeTable``2`
+(
+	Id,
+	Column,
+	ColumnNullable
+)
+VALUES
+(1,toDateTime64('1900-01-01 00:00:00.0000', 4, 'UTC'),toDateTime64('2299-12-31 23:59:59.9999', 4, 'UTC'))
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toDateTime64('1900-01-01 00:00:00.0000', 4, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999', 4, 'UTC')
+
+-- ClickHouse.Octonica ClickHouse
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toDateTime64('1900-01-01 00:00:00.0000', 4, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999', 4, 'UTC')
+
+-- ClickHouse.Octonica ClickHouse
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toDateTime64('1900-01-01 00:00:00.0000', 4, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999', 4, 'UTC')
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toDateTime64('2020-02-29 17:14:55.0000', 4, 'UTC') AND
+	r.ColumnNullable IS NULL
+
+-- ClickHouse.Octonica ClickHouse
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+-- ClickHouse.Octonica ClickHouse
+INSERT INTO `TypeTable``2`
+(
+	Id,
+	Column,
+	ColumnNullable
+)
+VALUES
+(
+	1,
+	toDateTime64('2020-02-29 17:14:55.0000', 4, 'UTC'),
 	NULL
 )
 
@@ -5186,7 +5186,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:14:55.0000', 4) AND
+	r.Column = toDateTime64('2020-02-29 17:14:55.0000', 4, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -5202,7 +5202,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-(1,toDateTime64('2020-02-29 17:14:55.0000', 4),NULL)
+(1,toDateTime64('2020-02-29 17:14:55.0000', 4, 'UTC'),NULL)
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
@@ -5212,7 +5212,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:14:55.0000', 4) AND
+	r.Column = toDateTime64('2020-02-29 17:14:55.0000', 4, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -5230,7 +5230,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:14:55.0000', 4) AND
+	r.Column = toDateTime64('2020-02-29 17:14:55.0000', 4, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -5248,7 +5248,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:14:55.0000', 4) AND
+	r.Column = toDateTime64('2020-02-29 17:14:55.0000', 4, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -5259,8 +5259,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:45:00.0000', 4) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999', 4)
+	r.Column = toDateTime64('1900-01-01 00:45:00.0000', 4, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999', 4, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
@@ -5277,8 +5277,8 @@ INSERT INTO `TypeTable``2`
 VALUES
 (
 	1,
-	toDateTime64('1900-01-01 00:45:00.0000', 4),
-	toDateTime64('2299-12-31 23:14:59.9999', 4)
+	toDateTime64('1900-01-01 00:45:00.0000', 4, 'UTC'),
+	toDateTime64('2299-12-31 23:14:59.9999', 4, 'UTC')
 )
 
 -- ClickHouse.Octonica ClickHouse
@@ -5289,8 +5289,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:45:00.0000', 4) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999', 4)
+	r.Column = toDateTime64('1900-01-01 00:45:00.0000', 4, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999', 4, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
@@ -5305,7 +5305,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-(1,toDateTime64('1900-01-01 00:45:00.0000', 4),toDateTime64('2299-12-31 23:14:59.9999', 4))
+(1,toDateTime64('1900-01-01 00:45:00.0000', 4, 'UTC'),toDateTime64('2299-12-31 23:14:59.9999', 4, 'UTC'))
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
@@ -5315,8 +5315,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:45:00.0000', 4) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999', 4)
+	r.Column = toDateTime64('1900-01-01 00:45:00.0000', 4, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999', 4, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
@@ -5333,8 +5333,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:45:00.0000', 4) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999', 4)
+	r.Column = toDateTime64('1900-01-01 00:45:00.0000', 4, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999', 4, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
@@ -5351,8 +5351,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:45:00.0000', 4) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999', 4)
+	r.Column = toDateTime64('1900-01-01 00:45:00.0000', 4, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999', 4, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
@@ -5980,7 +5980,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:09:55.00000', 5) AND
+	r.Column = toDateTime64('2020-02-29 17:09:55.00000', 5, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -5998,7 +5998,7 @@ INSERT INTO `TypeTable``2`
 VALUES
 (
 	1,
-	toDateTime64('2020-02-29 17:09:55.00000', 5),
+	toDateTime64('2020-02-29 17:09:55.00000', 5, 'UTC'),
 	NULL
 )
 
@@ -6010,7 +6010,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:09:55.00000', 5) AND
+	r.Column = toDateTime64('2020-02-29 17:09:55.00000', 5, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -6026,7 +6026,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-(1,toDateTime64('2020-02-29 17:09:55.00000', 5),NULL)
+(1,toDateTime64('2020-02-29 17:09:55.00000', 5, 'UTC'),NULL)
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
@@ -6036,7 +6036,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:09:55.00000', 5) AND
+	r.Column = toDateTime64('2020-02-29 17:09:55.00000', 5, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -6054,7 +6054,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:09:55.00000', 5) AND
+	r.Column = toDateTime64('2020-02-29 17:09:55.00000', 5, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -6072,7 +6072,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:09:55.00000', 5) AND
+	r.Column = toDateTime64('2020-02-29 17:09:55.00000', 5, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -6083,111 +6083,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:00:00.00000', 5) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99999', 5)
-
--- ClickHouse.Octonica ClickHouse
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
--- ClickHouse.Octonica ClickHouse
-INSERT INTO `TypeTable``2`
-(
-	Id,
-	Column,
-	ColumnNullable
-)
-VALUES
-(
-	1,
-	toDateTime64('1900-01-01 00:00:00.00000', 5),
-	toDateTime64('2299-12-31 23:59:59.99999', 5)
-)
-
--- ClickHouse.Octonica ClickHouse
-SELECT
-	r.Id,
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toDateTime64('1900-01-01 00:00:00.00000', 5) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99999', 5)
-
--- ClickHouse.Octonica ClickHouse
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
--- ClickHouse.Octonica ClickHouse
-INSERT INTO `TypeTable``2`
-(
-	Id,
-	Column,
-	ColumnNullable
-)
-VALUES
-(1,toDateTime64('1900-01-01 00:00:00.00000', 5),toDateTime64('2299-12-31 23:59:59.99999', 5))
-
--- ClickHouse.Octonica ClickHouse
-SELECT
-	r.Id,
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toDateTime64('1900-01-01 00:00:00.00000', 5) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99999', 5)
-
--- ClickHouse.Octonica ClickHouse
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
-
--- ClickHouse.Octonica ClickHouse
-SELECT
-	r.Id,
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toDateTime64('1900-01-01 00:00:00.00000', 5) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99999', 5)
-
--- ClickHouse.Octonica ClickHouse
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
-
--- ClickHouse.Octonica ClickHouse
-SELECT
-	r.Id,
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toDateTime64('1900-01-01 00:00:00.00000', 5) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99999', 5)
-
--- ClickHouse.Octonica ClickHouse
-SELECT
-	r.Id,
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toDateTime64('2020-02-29 17:14:55.00000', 5) AND
-	r.ColumnNullable IS NULL
+	r.Column = toDateTime64('1900-01-01 00:00:00.00000', 5, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99999', 5, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
@@ -6204,7 +6101,110 @@ INSERT INTO `TypeTable``2`
 VALUES
 (
 	1,
-	toDateTime64('2020-02-29 17:14:55.00000', 5),
+	toDateTime64('1900-01-01 00:00:00.00000', 5, 'UTC'),
+	toDateTime64('2299-12-31 23:59:59.99999', 5, 'UTC')
+)
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toDateTime64('1900-01-01 00:00:00.00000', 5, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99999', 5, 'UTC')
+
+-- ClickHouse.Octonica ClickHouse
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+-- ClickHouse.Octonica ClickHouse
+INSERT INTO `TypeTable``2`
+(
+	Id,
+	Column,
+	ColumnNullable
+)
+VALUES
+(1,toDateTime64('1900-01-01 00:00:00.00000', 5, 'UTC'),toDateTime64('2299-12-31 23:59:59.99999', 5, 'UTC'))
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toDateTime64('1900-01-01 00:00:00.00000', 5, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99999', 5, 'UTC')
+
+-- ClickHouse.Octonica ClickHouse
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toDateTime64('1900-01-01 00:00:00.00000', 5, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99999', 5, 'UTC')
+
+-- ClickHouse.Octonica ClickHouse
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toDateTime64('1900-01-01 00:00:00.00000', 5, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.99999', 5, 'UTC')
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toDateTime64('2020-02-29 17:14:55.00000', 5, 'UTC') AND
+	r.ColumnNullable IS NULL
+
+-- ClickHouse.Octonica ClickHouse
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+-- ClickHouse.Octonica ClickHouse
+INSERT INTO `TypeTable``2`
+(
+	Id,
+	Column,
+	ColumnNullable
+)
+VALUES
+(
+	1,
+	toDateTime64('2020-02-29 17:14:55.00000', 5, 'UTC'),
 	NULL
 )
 
@@ -6216,7 +6216,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:14:55.00000', 5) AND
+	r.Column = toDateTime64('2020-02-29 17:14:55.00000', 5, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -6232,7 +6232,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-(1,toDateTime64('2020-02-29 17:14:55.00000', 5),NULL)
+(1,toDateTime64('2020-02-29 17:14:55.00000', 5, 'UTC'),NULL)
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
@@ -6242,7 +6242,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:14:55.00000', 5) AND
+	r.Column = toDateTime64('2020-02-29 17:14:55.00000', 5, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -6260,7 +6260,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:14:55.00000', 5) AND
+	r.Column = toDateTime64('2020-02-29 17:14:55.00000', 5, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -6278,7 +6278,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:14:55.00000', 5) AND
+	r.Column = toDateTime64('2020-02-29 17:14:55.00000', 5, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -6289,8 +6289,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:45:00.00000', 5) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.99999', 5)
+	r.Column = toDateTime64('1900-01-01 00:45:00.00000', 5, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.99999', 5, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
@@ -6307,8 +6307,8 @@ INSERT INTO `TypeTable``2`
 VALUES
 (
 	1,
-	toDateTime64('1900-01-01 00:45:00.00000', 5),
-	toDateTime64('2299-12-31 23:14:59.99999', 5)
+	toDateTime64('1900-01-01 00:45:00.00000', 5, 'UTC'),
+	toDateTime64('2299-12-31 23:14:59.99999', 5, 'UTC')
 )
 
 -- ClickHouse.Octonica ClickHouse
@@ -6319,8 +6319,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:45:00.00000', 5) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.99999', 5)
+	r.Column = toDateTime64('1900-01-01 00:45:00.00000', 5, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.99999', 5, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
@@ -6335,7 +6335,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-(1,toDateTime64('1900-01-01 00:45:00.00000', 5),toDateTime64('2299-12-31 23:14:59.99999', 5))
+(1,toDateTime64('1900-01-01 00:45:00.00000', 5, 'UTC'),toDateTime64('2299-12-31 23:14:59.99999', 5, 'UTC'))
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
@@ -6345,8 +6345,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:45:00.00000', 5) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.99999', 5)
+	r.Column = toDateTime64('1900-01-01 00:45:00.00000', 5, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.99999', 5, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
@@ -6363,8 +6363,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:45:00.00000', 5) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.99999', 5)
+	r.Column = toDateTime64('1900-01-01 00:45:00.00000', 5, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.99999', 5, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
@@ -6381,8 +6381,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:45:00.00000', 5) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.99999', 5)
+	r.Column = toDateTime64('1900-01-01 00:45:00.00000', 5, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.99999', 5, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
@@ -7010,7 +7010,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:09:55.000000', 6) AND
+	r.Column = toDateTime64('2020-02-29 17:09:55.000000', 6, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -7028,7 +7028,7 @@ INSERT INTO `TypeTable``2`
 VALUES
 (
 	1,
-	toDateTime64('2020-02-29 17:09:55.000000', 6),
+	toDateTime64('2020-02-29 17:09:55.000000', 6, 'UTC'),
 	NULL
 )
 
@@ -7040,7 +7040,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:09:55.000000', 6) AND
+	r.Column = toDateTime64('2020-02-29 17:09:55.000000', 6, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -7056,7 +7056,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-(1,toDateTime64('2020-02-29 17:09:55.000000', 6),NULL)
+(1,toDateTime64('2020-02-29 17:09:55.000000', 6, 'UTC'),NULL)
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
@@ -7066,7 +7066,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:09:55.000000', 6) AND
+	r.Column = toDateTime64('2020-02-29 17:09:55.000000', 6, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -7084,7 +7084,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:09:55.000000', 6) AND
+	r.Column = toDateTime64('2020-02-29 17:09:55.000000', 6, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -7102,7 +7102,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:09:55.000000', 6) AND
+	r.Column = toDateTime64('2020-02-29 17:09:55.000000', 6, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -7113,111 +7113,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:00:00.000000', 6) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999999', 6)
-
--- ClickHouse.Octonica ClickHouse
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
--- ClickHouse.Octonica ClickHouse
-INSERT INTO `TypeTable``2`
-(
-	Id,
-	Column,
-	ColumnNullable
-)
-VALUES
-(
-	1,
-	toDateTime64('1900-01-01 00:00:00.000000', 6),
-	toDateTime64('2299-12-31 23:59:59.999999', 6)
-)
-
--- ClickHouse.Octonica ClickHouse
-SELECT
-	r.Id,
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toDateTime64('1900-01-01 00:00:00.000000', 6) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999999', 6)
-
--- ClickHouse.Octonica ClickHouse
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
--- ClickHouse.Octonica ClickHouse
-INSERT INTO `TypeTable``2`
-(
-	Id,
-	Column,
-	ColumnNullable
-)
-VALUES
-(1,toDateTime64('1900-01-01 00:00:00.000000', 6),toDateTime64('2299-12-31 23:59:59.999999', 6))
-
--- ClickHouse.Octonica ClickHouse
-SELECT
-	r.Id,
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toDateTime64('1900-01-01 00:00:00.000000', 6) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999999', 6)
-
--- ClickHouse.Octonica ClickHouse
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
-
--- ClickHouse.Octonica ClickHouse
-SELECT
-	r.Id,
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toDateTime64('1900-01-01 00:00:00.000000', 6) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999999', 6)
-
--- ClickHouse.Octonica ClickHouse
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
-
--- ClickHouse.Octonica ClickHouse
-SELECT
-	r.Id,
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toDateTime64('1900-01-01 00:00:00.000000', 6) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999999', 6)
-
--- ClickHouse.Octonica ClickHouse
-SELECT
-	r.Id,
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toDateTime64('2020-02-29 17:14:55.000000', 6) AND
-	r.ColumnNullable IS NULL
+	r.Column = toDateTime64('1900-01-01 00:00:00.000000', 6, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999999', 6, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
@@ -7234,7 +7131,110 @@ INSERT INTO `TypeTable``2`
 VALUES
 (
 	1,
-	toDateTime64('2020-02-29 17:14:55.000000', 6),
+	toDateTime64('1900-01-01 00:00:00.000000', 6, 'UTC'),
+	toDateTime64('2299-12-31 23:59:59.999999', 6, 'UTC')
+)
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toDateTime64('1900-01-01 00:00:00.000000', 6, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999999', 6, 'UTC')
+
+-- ClickHouse.Octonica ClickHouse
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+-- ClickHouse.Octonica ClickHouse
+INSERT INTO `TypeTable``2`
+(
+	Id,
+	Column,
+	ColumnNullable
+)
+VALUES
+(1,toDateTime64('1900-01-01 00:00:00.000000', 6, 'UTC'),toDateTime64('2299-12-31 23:59:59.999999', 6, 'UTC'))
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toDateTime64('1900-01-01 00:00:00.000000', 6, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999999', 6, 'UTC')
+
+-- ClickHouse.Octonica ClickHouse
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toDateTime64('1900-01-01 00:00:00.000000', 6, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999999', 6, 'UTC')
+
+-- ClickHouse.Octonica ClickHouse
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toDateTime64('1900-01-01 00:00:00.000000', 6, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.999999', 6, 'UTC')
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toDateTime64('2020-02-29 17:14:55.000000', 6, 'UTC') AND
+	r.ColumnNullable IS NULL
+
+-- ClickHouse.Octonica ClickHouse
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+-- ClickHouse.Octonica ClickHouse
+INSERT INTO `TypeTable``2`
+(
+	Id,
+	Column,
+	ColumnNullable
+)
+VALUES
+(
+	1,
+	toDateTime64('2020-02-29 17:14:55.000000', 6, 'UTC'),
 	NULL
 )
 
@@ -7246,7 +7246,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:14:55.000000', 6) AND
+	r.Column = toDateTime64('2020-02-29 17:14:55.000000', 6, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -7262,7 +7262,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-(1,toDateTime64('2020-02-29 17:14:55.000000', 6),NULL)
+(1,toDateTime64('2020-02-29 17:14:55.000000', 6, 'UTC'),NULL)
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
@@ -7272,7 +7272,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:14:55.000000', 6) AND
+	r.Column = toDateTime64('2020-02-29 17:14:55.000000', 6, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -7290,7 +7290,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:14:55.000000', 6) AND
+	r.Column = toDateTime64('2020-02-29 17:14:55.000000', 6, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -7308,7 +7308,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:14:55.000000', 6) AND
+	r.Column = toDateTime64('2020-02-29 17:14:55.000000', 6, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -7319,8 +7319,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:45:00.000000', 6) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.999999', 6)
+	r.Column = toDateTime64('1900-01-01 00:45:00.000000', 6, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.999999', 6, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
@@ -7337,8 +7337,8 @@ INSERT INTO `TypeTable``2`
 VALUES
 (
 	1,
-	toDateTime64('1900-01-01 00:45:00.000000', 6),
-	toDateTime64('2299-12-31 23:14:59.999999', 6)
+	toDateTime64('1900-01-01 00:45:00.000000', 6, 'UTC'),
+	toDateTime64('2299-12-31 23:14:59.999999', 6, 'UTC')
 )
 
 -- ClickHouse.Octonica ClickHouse
@@ -7349,8 +7349,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:45:00.000000', 6) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.999999', 6)
+	r.Column = toDateTime64('1900-01-01 00:45:00.000000', 6, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.999999', 6, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
@@ -7365,7 +7365,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-(1,toDateTime64('1900-01-01 00:45:00.000000', 6),toDateTime64('2299-12-31 23:14:59.999999', 6))
+(1,toDateTime64('1900-01-01 00:45:00.000000', 6, 'UTC'),toDateTime64('2299-12-31 23:14:59.999999', 6, 'UTC'))
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
@@ -7375,8 +7375,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:45:00.000000', 6) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.999999', 6)
+	r.Column = toDateTime64('1900-01-01 00:45:00.000000', 6, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.999999', 6, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
@@ -7393,8 +7393,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:45:00.000000', 6) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.999999', 6)
+	r.Column = toDateTime64('1900-01-01 00:45:00.000000', 6, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.999999', 6, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
@@ -7411,8 +7411,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:45:00.000000', 6) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.999999', 6)
+	r.Column = toDateTime64('1900-01-01 00:45:00.000000', 6, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.999999', 6, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
@@ -8040,7 +8040,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:09:55.0000000', 7) AND
+	r.Column = toDateTime64('2020-02-29 17:09:55.0000000', 7, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -8058,7 +8058,7 @@ INSERT INTO `TypeTable``2`
 VALUES
 (
 	1,
-	toDateTime64('2020-02-29 17:09:55.0000000', 7),
+	toDateTime64('2020-02-29 17:09:55.0000000', 7, 'UTC'),
 	NULL
 )
 
@@ -8070,7 +8070,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:09:55.0000000', 7) AND
+	r.Column = toDateTime64('2020-02-29 17:09:55.0000000', 7, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -8086,7 +8086,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-(1,toDateTime64('2020-02-29 17:09:55.0000000', 7),NULL)
+(1,toDateTime64('2020-02-29 17:09:55.0000000', 7, 'UTC'),NULL)
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
@@ -8096,7 +8096,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:09:55.0000000', 7) AND
+	r.Column = toDateTime64('2020-02-29 17:09:55.0000000', 7, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -8114,7 +8114,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:09:55.0000000', 7) AND
+	r.Column = toDateTime64('2020-02-29 17:09:55.0000000', 7, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -8132,7 +8132,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:09:55.0000000', 7) AND
+	r.Column = toDateTime64('2020-02-29 17:09:55.0000000', 7, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -8143,111 +8143,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 7) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7)
-
--- ClickHouse.Octonica ClickHouse
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
--- ClickHouse.Octonica ClickHouse
-INSERT INTO `TypeTable``2`
-(
-	Id,
-	Column,
-	ColumnNullable
-)
-VALUES
-(
-	1,
-	toDateTime64('1900-01-01 00:00:00.0000000', 7),
-	toDateTime64('2299-12-31 23:59:59.9999999', 7)
-)
-
--- ClickHouse.Octonica ClickHouse
-SELECT
-	r.Id,
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 7) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7)
-
--- ClickHouse.Octonica ClickHouse
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
--- ClickHouse.Octonica ClickHouse
-INSERT INTO `TypeTable``2`
-(
-	Id,
-	Column,
-	ColumnNullable
-)
-VALUES
-(1,toDateTime64('1900-01-01 00:00:00.0000000', 7),toDateTime64('2299-12-31 23:59:59.9999999', 7))
-
--- ClickHouse.Octonica ClickHouse
-SELECT
-	r.Id,
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 7) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7)
-
--- ClickHouse.Octonica ClickHouse
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
-
--- ClickHouse.Octonica ClickHouse
-SELECT
-	r.Id,
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 7) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7)
-
--- ClickHouse.Octonica ClickHouse
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
-
--- ClickHouse.Octonica ClickHouse
-SELECT
-	r.Id,
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 7) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7)
-
--- ClickHouse.Octonica ClickHouse
-SELECT
-	r.Id,
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toDateTime64('2020-02-29 17:14:55.0000000', 7) AND
-	r.ColumnNullable IS NULL
+	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 7, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
@@ -8264,7 +8161,110 @@ INSERT INTO `TypeTable``2`
 VALUES
 (
 	1,
-	toDateTime64('2020-02-29 17:14:55.0000000', 7),
+	toDateTime64('1900-01-01 00:00:00.0000000', 7, 'UTC'),
+	toDateTime64('2299-12-31 23:59:59.9999999', 7, 'UTC')
+)
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 7, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7, 'UTC')
+
+-- ClickHouse.Octonica ClickHouse
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+-- ClickHouse.Octonica ClickHouse
+INSERT INTO `TypeTable``2`
+(
+	Id,
+	Column,
+	ColumnNullable
+)
+VALUES
+(1,toDateTime64('1900-01-01 00:00:00.0000000', 7, 'UTC'),toDateTime64('2299-12-31 23:59:59.9999999', 7, 'UTC'))
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 7, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7, 'UTC')
+
+-- ClickHouse.Octonica ClickHouse
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 7, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7, 'UTC')
+
+-- ClickHouse.Octonica ClickHouse
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 7, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 7, 'UTC')
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toDateTime64('2020-02-29 17:14:55.0000000', 7, 'UTC') AND
+	r.ColumnNullable IS NULL
+
+-- ClickHouse.Octonica ClickHouse
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+-- ClickHouse.Octonica ClickHouse
+INSERT INTO `TypeTable``2`
+(
+	Id,
+	Column,
+	ColumnNullable
+)
+VALUES
+(
+	1,
+	toDateTime64('2020-02-29 17:14:55.0000000', 7, 'UTC'),
 	NULL
 )
 
@@ -8276,7 +8276,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:14:55.0000000', 7) AND
+	r.Column = toDateTime64('2020-02-29 17:14:55.0000000', 7, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -8292,7 +8292,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-(1,toDateTime64('2020-02-29 17:14:55.0000000', 7),NULL)
+(1,toDateTime64('2020-02-29 17:14:55.0000000', 7, 'UTC'),NULL)
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
@@ -8302,7 +8302,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:14:55.0000000', 7) AND
+	r.Column = toDateTime64('2020-02-29 17:14:55.0000000', 7, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -8320,7 +8320,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:14:55.0000000', 7) AND
+	r.Column = toDateTime64('2020-02-29 17:14:55.0000000', 7, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -8338,7 +8338,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:14:55.0000000', 7) AND
+	r.Column = toDateTime64('2020-02-29 17:14:55.0000000', 7, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -8349,8 +8349,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:45:00.0000000', 7) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999999', 7)
+	r.Column = toDateTime64('1900-01-01 00:45:00.0000000', 7, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999999', 7, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
@@ -8367,8 +8367,8 @@ INSERT INTO `TypeTable``2`
 VALUES
 (
 	1,
-	toDateTime64('1900-01-01 00:45:00.0000000', 7),
-	toDateTime64('2299-12-31 23:14:59.9999999', 7)
+	toDateTime64('1900-01-01 00:45:00.0000000', 7, 'UTC'),
+	toDateTime64('2299-12-31 23:14:59.9999999', 7, 'UTC')
 )
 
 -- ClickHouse.Octonica ClickHouse
@@ -8379,8 +8379,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:45:00.0000000', 7) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999999', 7)
+	r.Column = toDateTime64('1900-01-01 00:45:00.0000000', 7, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999999', 7, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
@@ -8395,7 +8395,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-(1,toDateTime64('1900-01-01 00:45:00.0000000', 7),toDateTime64('2299-12-31 23:14:59.9999999', 7))
+(1,toDateTime64('1900-01-01 00:45:00.0000000', 7, 'UTC'),toDateTime64('2299-12-31 23:14:59.9999999', 7, 'UTC'))
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
@@ -8405,8 +8405,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:45:00.0000000', 7) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999999', 7)
+	r.Column = toDateTime64('1900-01-01 00:45:00.0000000', 7, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999999', 7, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
@@ -8423,8 +8423,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:45:00.0000000', 7) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999999', 7)
+	r.Column = toDateTime64('1900-01-01 00:45:00.0000000', 7, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999999', 7, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
@@ -8441,8 +8441,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:45:00.0000000', 7) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999999', 7)
+	r.Column = toDateTime64('1900-01-01 00:45:00.0000000', 7, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999999', 7, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
@@ -9070,7 +9070,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:09:55.0000000', 8) AND
+	r.Column = toDateTime64('2020-02-29 17:09:55.0000000', 8, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -9088,7 +9088,7 @@ INSERT INTO `TypeTable``2`
 VALUES
 (
 	1,
-	toDateTime64('2020-02-29 17:09:55.0000000', 8),
+	toDateTime64('2020-02-29 17:09:55.0000000', 8, 'UTC'),
 	NULL
 )
 
@@ -9100,7 +9100,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:09:55.0000000', 8) AND
+	r.Column = toDateTime64('2020-02-29 17:09:55.0000000', 8, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -9116,7 +9116,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-(1,toDateTime64('2020-02-29 17:09:55.0000000', 8),NULL)
+(1,toDateTime64('2020-02-29 17:09:55.0000000', 8, 'UTC'),NULL)
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
@@ -9126,7 +9126,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:09:55.0000000', 8) AND
+	r.Column = toDateTime64('2020-02-29 17:09:55.0000000', 8, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -9144,7 +9144,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:09:55.0000000', 8) AND
+	r.Column = toDateTime64('2020-02-29 17:09:55.0000000', 8, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -9162,7 +9162,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:09:55.0000000', 8) AND
+	r.Column = toDateTime64('2020-02-29 17:09:55.0000000', 8, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -9173,111 +9173,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 8) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 8)
-
--- ClickHouse.Octonica ClickHouse
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
--- ClickHouse.Octonica ClickHouse
-INSERT INTO `TypeTable``2`
-(
-	Id,
-	Column,
-	ColumnNullable
-)
-VALUES
-(
-	1,
-	toDateTime64('1900-01-01 00:00:00.0000000', 8),
-	toDateTime64('2299-12-31 23:59:59.9999999', 8)
-)
-
--- ClickHouse.Octonica ClickHouse
-SELECT
-	r.Id,
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 8) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 8)
-
--- ClickHouse.Octonica ClickHouse
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
--- ClickHouse.Octonica ClickHouse
-INSERT INTO `TypeTable``2`
-(
-	Id,
-	Column,
-	ColumnNullable
-)
-VALUES
-(1,toDateTime64('1900-01-01 00:00:00.0000000', 8),toDateTime64('2299-12-31 23:59:59.9999999', 8))
-
--- ClickHouse.Octonica ClickHouse
-SELECT
-	r.Id,
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 8) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 8)
-
--- ClickHouse.Octonica ClickHouse
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
-
--- ClickHouse.Octonica ClickHouse
-SELECT
-	r.Id,
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 8) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 8)
-
--- ClickHouse.Octonica ClickHouse
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
-
--- ClickHouse.Octonica ClickHouse
-SELECT
-	r.Id,
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 8) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 8)
-
--- ClickHouse.Octonica ClickHouse
-SELECT
-	r.Id,
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toDateTime64('2020-02-29 17:14:55.0000000', 8) AND
-	r.ColumnNullable IS NULL
+	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 8, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 8, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
@@ -9294,7 +9191,110 @@ INSERT INTO `TypeTable``2`
 VALUES
 (
 	1,
-	toDateTime64('2020-02-29 17:14:55.0000000', 8),
+	toDateTime64('1900-01-01 00:00:00.0000000', 8, 'UTC'),
+	toDateTime64('2299-12-31 23:59:59.9999999', 8, 'UTC')
+)
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 8, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 8, 'UTC')
+
+-- ClickHouse.Octonica ClickHouse
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+-- ClickHouse.Octonica ClickHouse
+INSERT INTO `TypeTable``2`
+(
+	Id,
+	Column,
+	ColumnNullable
+)
+VALUES
+(1,toDateTime64('1900-01-01 00:00:00.0000000', 8, 'UTC'),toDateTime64('2299-12-31 23:59:59.9999999', 8, 'UTC'))
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 8, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 8, 'UTC')
+
+-- ClickHouse.Octonica ClickHouse
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 8, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 8, 'UTC')
+
+-- ClickHouse.Octonica ClickHouse
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 8, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:59:59.9999999', 8, 'UTC')
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toDateTime64('2020-02-29 17:14:55.0000000', 8, 'UTC') AND
+	r.ColumnNullable IS NULL
+
+-- ClickHouse.Octonica ClickHouse
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+-- ClickHouse.Octonica ClickHouse
+INSERT INTO `TypeTable``2`
+(
+	Id,
+	Column,
+	ColumnNullable
+)
+VALUES
+(
+	1,
+	toDateTime64('2020-02-29 17:14:55.0000000', 8, 'UTC'),
 	NULL
 )
 
@@ -9306,7 +9306,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:14:55.0000000', 8) AND
+	r.Column = toDateTime64('2020-02-29 17:14:55.0000000', 8, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -9322,7 +9322,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-(1,toDateTime64('2020-02-29 17:14:55.0000000', 8),NULL)
+(1,toDateTime64('2020-02-29 17:14:55.0000000', 8, 'UTC'),NULL)
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
@@ -9332,7 +9332,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:14:55.0000000', 8) AND
+	r.Column = toDateTime64('2020-02-29 17:14:55.0000000', 8, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -9350,7 +9350,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:14:55.0000000', 8) AND
+	r.Column = toDateTime64('2020-02-29 17:14:55.0000000', 8, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -9368,7 +9368,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:14:55.0000000', 8) AND
+	r.Column = toDateTime64('2020-02-29 17:14:55.0000000', 8, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -9379,8 +9379,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:45:00.0000000', 8) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999999', 8)
+	r.Column = toDateTime64('1900-01-01 00:45:00.0000000', 8, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999999', 8, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
@@ -9397,8 +9397,8 @@ INSERT INTO `TypeTable``2`
 VALUES
 (
 	1,
-	toDateTime64('1900-01-01 00:45:00.0000000', 8),
-	toDateTime64('2299-12-31 23:14:59.9999999', 8)
+	toDateTime64('1900-01-01 00:45:00.0000000', 8, 'UTC'),
+	toDateTime64('2299-12-31 23:14:59.9999999', 8, 'UTC')
 )
 
 -- ClickHouse.Octonica ClickHouse
@@ -9409,8 +9409,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:45:00.0000000', 8) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999999', 8)
+	r.Column = toDateTime64('1900-01-01 00:45:00.0000000', 8, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999999', 8, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
@@ -9425,7 +9425,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-(1,toDateTime64('1900-01-01 00:45:00.0000000', 8),toDateTime64('2299-12-31 23:14:59.9999999', 8))
+(1,toDateTime64('1900-01-01 00:45:00.0000000', 8, 'UTC'),toDateTime64('2299-12-31 23:14:59.9999999', 8, 'UTC'))
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
@@ -9435,8 +9435,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:45:00.0000000', 8) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999999', 8)
+	r.Column = toDateTime64('1900-01-01 00:45:00.0000000', 8, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999999', 8, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
@@ -9453,8 +9453,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:45:00.0000000', 8) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999999', 8)
+	r.Column = toDateTime64('1900-01-01 00:45:00.0000000', 8, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999999', 8, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
@@ -9471,8 +9471,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:45:00.0000000', 8) AND
-	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999999', 8)
+	r.Column = toDateTime64('1900-01-01 00:45:00.0000000', 8, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2299-12-31 23:14:59.9999999', 8, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
@@ -10100,7 +10100,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:09:55.0000000', 9) AND
+	r.Column = toDateTime64('2020-02-29 17:09:55.0000000', 9, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -10118,7 +10118,7 @@ INSERT INTO `TypeTable``2`
 VALUES
 (
 	1,
-	toDateTime64('2020-02-29 17:09:55.0000000', 9),
+	toDateTime64('2020-02-29 17:09:55.0000000', 9, 'UTC'),
 	NULL
 )
 
@@ -10130,7 +10130,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:09:55.0000000', 9) AND
+	r.Column = toDateTime64('2020-02-29 17:09:55.0000000', 9, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -10146,7 +10146,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-(1,toDateTime64('2020-02-29 17:09:55.0000000', 9),NULL)
+(1,toDateTime64('2020-02-29 17:09:55.0000000', 9, 'UTC'),NULL)
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
@@ -10156,7 +10156,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:09:55.0000000', 9) AND
+	r.Column = toDateTime64('2020-02-29 17:09:55.0000000', 9, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -10174,7 +10174,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:09:55.0000000', 9) AND
+	r.Column = toDateTime64('2020-02-29 17:09:55.0000000', 9, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -10192,7 +10192,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:09:55.0000000', 9) AND
+	r.Column = toDateTime64('2020-02-29 17:09:55.0000000', 9, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -10203,111 +10203,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 9) AND
-	r.ColumnNullable = toDateTime64('2262-04-11 23:47:16.8547758', 9)
-
--- ClickHouse.Octonica ClickHouse
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
--- ClickHouse.Octonica ClickHouse
-INSERT INTO `TypeTable``2`
-(
-	Id,
-	Column,
-	ColumnNullable
-)
-VALUES
-(
-	1,
-	toDateTime64('1900-01-01 00:00:00.0000000', 9),
-	toDateTime64('2262-04-11 23:47:16.8547758', 9)
-)
-
--- ClickHouse.Octonica ClickHouse
-SELECT
-	r.Id,
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 9) AND
-	r.ColumnNullable = toDateTime64('2262-04-11 23:47:16.8547758', 9)
-
--- ClickHouse.Octonica ClickHouse
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
--- ClickHouse.Octonica ClickHouse
-INSERT INTO `TypeTable``2`
-(
-	Id,
-	Column,
-	ColumnNullable
-)
-VALUES
-(1,toDateTime64('1900-01-01 00:00:00.0000000', 9),toDateTime64('2262-04-11 23:47:16.8547758', 9))
-
--- ClickHouse.Octonica ClickHouse
-SELECT
-	r.Id,
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 9) AND
-	r.ColumnNullable = toDateTime64('2262-04-11 23:47:16.8547758', 9)
-
--- ClickHouse.Octonica ClickHouse
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
-
--- ClickHouse.Octonica ClickHouse
-SELECT
-	r.Id,
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 9) AND
-	r.ColumnNullable = toDateTime64('2262-04-11 23:47:16.8547758', 9)
-
--- ClickHouse.Octonica ClickHouse
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
-
--- ClickHouse.Octonica ClickHouse
-SELECT
-	r.Id,
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 9) AND
-	r.ColumnNullable = toDateTime64('2262-04-11 23:47:16.8547758', 9)
-
--- ClickHouse.Octonica ClickHouse
-SELECT
-	r.Id,
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toDateTime64('2020-02-29 17:14:55.0000000', 9) AND
-	r.ColumnNullable IS NULL
+	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 9, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2262-04-11 23:47:16.8547758', 9, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
@@ -10324,7 +10221,110 @@ INSERT INTO `TypeTable``2`
 VALUES
 (
 	1,
-	toDateTime64('2020-02-29 17:14:55.0000000', 9),
+	toDateTime64('1900-01-01 00:00:00.0000000', 9, 'UTC'),
+	toDateTime64('2262-04-11 23:47:16.8547758', 9, 'UTC')
+)
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 9, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2262-04-11 23:47:16.8547758', 9, 'UTC')
+
+-- ClickHouse.Octonica ClickHouse
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+-- ClickHouse.Octonica ClickHouse
+INSERT INTO `TypeTable``2`
+(
+	Id,
+	Column,
+	ColumnNullable
+)
+VALUES
+(1,toDateTime64('1900-01-01 00:00:00.0000000', 9, 'UTC'),toDateTime64('2262-04-11 23:47:16.8547758', 9, 'UTC'))
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 9, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2262-04-11 23:47:16.8547758', 9, 'UTC')
+
+-- ClickHouse.Octonica ClickHouse
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 9, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2262-04-11 23:47:16.8547758', 9, 'UTC')
+
+-- ClickHouse.Octonica ClickHouse
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toDateTime64('1900-01-01 00:00:00.0000000', 9, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2262-04-11 23:47:16.8547758', 9, 'UTC')
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toDateTime64('2020-02-29 17:14:55.0000000', 9, 'UTC') AND
+	r.ColumnNullable IS NULL
+
+-- ClickHouse.Octonica ClickHouse
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+-- ClickHouse.Octonica ClickHouse
+INSERT INTO `TypeTable``2`
+(
+	Id,
+	Column,
+	ColumnNullable
+)
+VALUES
+(
+	1,
+	toDateTime64('2020-02-29 17:14:55.0000000', 9, 'UTC'),
 	NULL
 )
 
@@ -10336,7 +10336,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:14:55.0000000', 9) AND
+	r.Column = toDateTime64('2020-02-29 17:14:55.0000000', 9, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -10352,7 +10352,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-(1,toDateTime64('2020-02-29 17:14:55.0000000', 9),NULL)
+(1,toDateTime64('2020-02-29 17:14:55.0000000', 9, 'UTC'),NULL)
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
@@ -10362,7 +10362,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:14:55.0000000', 9) AND
+	r.Column = toDateTime64('2020-02-29 17:14:55.0000000', 9, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -10380,7 +10380,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:14:55.0000000', 9) AND
+	r.Column = toDateTime64('2020-02-29 17:14:55.0000000', 9, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -10398,7 +10398,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('2020-02-29 17:14:55.0000000', 9) AND
+	r.Column = toDateTime64('2020-02-29 17:14:55.0000000', 9, 'UTC') AND
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
@@ -10409,8 +10409,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:45:00.0000000', 9) AND
-	r.ColumnNullable = toDateTime64('2262-04-11 23:02:16.8547758', 9)
+	r.Column = toDateTime64('1900-01-01 00:45:00.0000000', 9, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2262-04-11 23:02:16.8547758', 9, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
@@ -10427,8 +10427,8 @@ INSERT INTO `TypeTable``2`
 VALUES
 (
 	1,
-	toDateTime64('1900-01-01 00:45:00.0000000', 9),
-	toDateTime64('2262-04-11 23:02:16.8547758', 9)
+	toDateTime64('1900-01-01 00:45:00.0000000', 9, 'UTC'),
+	toDateTime64('2262-04-11 23:02:16.8547758', 9, 'UTC')
 )
 
 -- ClickHouse.Octonica ClickHouse
@@ -10439,8 +10439,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:45:00.0000000', 9) AND
-	r.ColumnNullable = toDateTime64('2262-04-11 23:02:16.8547758', 9)
+	r.Column = toDateTime64('1900-01-01 00:45:00.0000000', 9, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2262-04-11 23:02:16.8547758', 9, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
@@ -10455,7 +10455,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-(1,toDateTime64('1900-01-01 00:45:00.0000000', 9),toDateTime64('2262-04-11 23:02:16.8547758', 9))
+(1,toDateTime64('1900-01-01 00:45:00.0000000', 9, 'UTC'),toDateTime64('2262-04-11 23:02:16.8547758', 9, 'UTC'))
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
@@ -10465,8 +10465,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:45:00.0000000', 9) AND
-	r.ColumnNullable = toDateTime64('2262-04-11 23:02:16.8547758', 9)
+	r.Column = toDateTime64('1900-01-01 00:45:00.0000000', 9, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2262-04-11 23:02:16.8547758', 9, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
@@ -10483,8 +10483,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:45:00.0000000', 9) AND
-	r.ColumnNullable = toDateTime64('2262-04-11 23:02:16.8547758', 9)
+	r.Column = toDateTime64('1900-01-01 00:45:00.0000000', 9, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2262-04-11 23:02:16.8547758', 9, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
@@ -10501,8 +10501,8 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toDateTime64('1900-01-01 00:45:00.0000000', 9) AND
-	r.ColumnNullable = toDateTime64('2262-04-11 23:02:16.8547758', 9)
+	r.Column = toDateTime64('1900-01-01 00:45:00.0000000', 9, 'UTC') AND
+	r.ColumnNullable = toDateTime64('2262-04-11 23:02:16.8547758', 9, 'UTC')
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
