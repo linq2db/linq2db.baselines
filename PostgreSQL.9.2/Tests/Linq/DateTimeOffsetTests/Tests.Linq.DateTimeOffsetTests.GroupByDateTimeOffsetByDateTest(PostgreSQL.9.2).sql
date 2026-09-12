@@ -5,7 +5,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Date_Trunc('day', x."TransactionDate" AT TIME ZONE 'UTC')::Date as "Key_1"
+			Date_Trunc('day', (x."TransactionDate" AT TIME ZONE 'UTC')) as "Key_1"
 		FROM
 			"Transactions" x
 	) t1
