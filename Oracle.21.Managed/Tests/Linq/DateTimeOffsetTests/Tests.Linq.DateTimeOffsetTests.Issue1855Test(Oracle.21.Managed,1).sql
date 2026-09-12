@@ -49,5 +49,5 @@ SELECT
 FROM
 	"Issue1855Table" r
 WHERE
-	r."SomeNullableDateTimeOffset" + :interval * INTERVAL '1' SECOND >= :clientSideIn
+	From_Tz(CAST(r."SomeNullableDateTimeOffset" AS timestamp) + :interval * INTERVAL '1' SECOND, To_Char(r."SomeNullableDateTimeOffset", 'TZH:TZM')) >= :clientSideIn
 
