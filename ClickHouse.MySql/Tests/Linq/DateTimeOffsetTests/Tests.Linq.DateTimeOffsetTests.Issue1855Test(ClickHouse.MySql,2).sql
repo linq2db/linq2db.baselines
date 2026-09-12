@@ -8,8 +8,8 @@ INSERT INTO Issue1855Table
 VALUES
 (
 	1,
-	toDateTime64('2019-08-08 08:08:08.0000000', 7),
-	toDateTime64('2019-08-08 08:08:08.0000000', 7)
+	toDateTime64('2019-08-08 08:08:08.0000000', 7, 'UTC'),
+	toDateTime64('2019-08-08 08:08:08.0000000', 7, 'UTC')
 )
 
 -- ClickHouse.MySql ClickHouse
@@ -21,7 +21,7 @@ INSERT INTO Issue1855Table
 VALUES
 (
 	2,
-	toDateTime64('2019-08-08 08:08:08.0000000', 7)
+	toDateTime64('2019-08-08 08:08:08.0000000', 7, 'UTC')
 )
 
 -- ClickHouse.MySql ClickHouse
@@ -32,6 +32,6 @@ SELECT
 FROM
 	Issue1855Table r
 WHERE
-	toDateTime64('2019-08-08 08:08:18.0000000', 7) <> r.SomeNullableDateTimeOffset OR
+	toDateTime64('2019-08-08 08:08:18.0000000', 7, 'UTC') <> r.SomeNullableDateTimeOffset OR
 	r.SomeNullableDateTimeOffset IS NULL
 
