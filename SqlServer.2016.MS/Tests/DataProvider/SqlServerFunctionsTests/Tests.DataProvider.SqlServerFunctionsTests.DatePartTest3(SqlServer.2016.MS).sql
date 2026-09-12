@@ -1,4 +1,4 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
 SELECT
-	DATEPART(Month, DATETIMEOFFSETFROMPARTS(2022, 2, 22, 0, 0, 0, 0, 0, 0, 7))
+	DATEPART(Month, ToDateTimeOffset(DATETIME2FROMPARTS(2022, 2, 22, 0, 0, 0, 0, 3), N'+00:00'))
 
