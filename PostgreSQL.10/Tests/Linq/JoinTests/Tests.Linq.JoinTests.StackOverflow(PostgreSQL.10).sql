@@ -1,5 +1,4 @@
-﻿-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-SELECT
+﻿SELECT
 	p_100."ParentID",
 	p_100."Value1",
 	c_1."ParentID",

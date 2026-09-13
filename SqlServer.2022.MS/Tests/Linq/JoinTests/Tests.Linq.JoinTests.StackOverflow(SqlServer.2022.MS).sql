@@ -1,5 +1,4 @@
-﻿-- SqlServer.2022.MS SqlServer.2022
-SELECT
+﻿SELECT
 	[p_100].[ParentID],
 	[p_100].[Value1],
 	[c_1].[ParentID],
