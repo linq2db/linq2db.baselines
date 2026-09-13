@@ -1,5 +1,5 @@
 ﻿Parameters:
-@__ef_filter__p_2='?' (DbType = Boolean), @__ef_filter__p_1='?' (DbType = Boolean), @__ef_filter__p_0='?' (DbType = Boolean)
+@__ef_filter__p_0='?' (DbType = Boolean)
 
 SELECT [o].[OrderID], [o].[CustomerID], [o].[EmployeeID], [o].[Freight], [o].[IsDeleted], [o].[OrderDate], [o].[RequiredDate], [o].[ShipAddress], [o].[ShipCity], [o].[ShipCountry], [o].[ShipName], [o].[ShipPostalCode], [o].[ShipRegion], [o].[ShipVia], [o].[ShippedDate], [t1].[OrderID], [t1].[ProductID], [t1].[Discount], [t1].[IsDeleted], [t1].[Quantity], [t1].[UnitPrice], [t1].[ProductID0], [t1].[CategoryID], [t1].[Discontinued], [t1].[IsDeleted0], [t1].[PeriodEnd], [t1].[PeriodStart], [t1].[ProductName], [t1].[QuantityPerUnit], [t1].[ReorderLevel], [t1].[SupplierID], [t1].[UnitPrice0], [t1].[UnitsInStock], [t1].[UnitsOnOrder], [t1].[OrderID0], [t1].[ProductID1], [t1].[Discount0], [t1].[IsDeleted1], [t1].[Quantity0], [t1].[UnitPrice1]
 FROM [Orders] AS [o]
@@ -9,14 +9,14 @@ LEFT JOIN (
     INNER JOIN (
         SELECT [p].[ProductID], [p].[CategoryID], [p].[Discontinued], [p].[IsDeleted], [p].[PeriodEnd], [p].[PeriodStart], [p].[ProductName], [p].[QuantityPerUnit], [p].[ReorderLevel], [p].[SupplierID], [p].[UnitPrice], [p].[UnitsInStock], [p].[UnitsOnOrder]
         FROM [Products] AS [p]
-        WHERE @__ef_filter__p_2 = CAST(1 AS bit) OR [p].[IsDeleted] = CAST(0 AS bit) OR [p].[IsDeleted] = CAST(0 AS bit)
+        WHERE @__ef_filter__p_0 = CAST(1 AS bit) OR [p].[IsDeleted] = CAST(0 AS bit) OR [p].[IsDeleted] = CAST(0 AS bit)
     ) AS [t] ON [o0].[ProductID] = [t].[ProductID]
     LEFT JOIN (
         SELECT [o1].[OrderID], [o1].[ProductID], [o1].[Discount], [o1].[IsDeleted], [o1].[Quantity], [o1].[UnitPrice]
         FROM [Order Details] AS [o1]
-        WHERE @__ef_filter__p_1 = CAST(1 AS bit) OR [o1].[IsDeleted] = CAST(0 AS bit) OR [o1].[IsDeleted] = CAST(0 AS bit)
+        WHERE @__ef_filter__p_0 = CAST(1 AS bit) OR [o1].[IsDeleted] = CAST(0 AS bit) OR [o1].[IsDeleted] = CAST(0 AS bit)
     ) AS [t0] ON [t].[ProductID] = [t0].[ProductID]
-    WHERE @__ef_filter__p_1 = CAST(1 AS bit) OR [o0].[IsDeleted] = CAST(0 AS bit) OR [o0].[IsDeleted] = CAST(0 AS bit)
+    WHERE @__ef_filter__p_0 = CAST(1 AS bit) OR [o0].[IsDeleted] = CAST(0 AS bit) OR [o0].[IsDeleted] = CAST(0 AS bit)
 ) AS [t1] ON [o].[OrderID] = [t1].[OrderID]
 WHERE @__ef_filter__p_0 = CAST(1 AS bit) OR [o].[IsDeleted] = CAST(0 AS bit) OR [o].[IsDeleted] = CAST(0 AS bit)
 ORDER BY [o].[OrderID], [t1].[OrderID], [t1].[ProductID], [t1].[ProductID0], [t1].[OrderID0]
