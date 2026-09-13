@@ -1,0 +1,33 @@
+﻿-- ClickHouse.Driver ClickHouse
+SELECT
+	toString('p_') as c1,
+	p.PersonID,
+	toString('X') as c2,
+	p.FirstName,
+	p.LastName
+FROM
+	Person p
+WHERE
+	p.PersonID > 2
+UNION ALL
+SELECT
+	toString('q_') as c1,
+	p_1.PersonID as PersonID,
+	toString('X') as c2,
+	p_1.FirstName as FirstName,
+	p_1.LastName as LastName
+FROM
+	Person p_1
+WHERE
+	p_1.PersonID <= 2
+
+-- ClickHouse.Driver ClickHouse
+SELECT
+	t1.FirstName,
+	t1.PersonID,
+	t1.LastName,
+	t1.MiddleName,
+	t1.Gender
+FROM
+	Person t1
+
