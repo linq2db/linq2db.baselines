@@ -8,7 +8,7 @@ SET
 	("Cents", "Ints") = (
 		SELECT
 			"src"."Cents" + @Cents,
-			"src"."Ints" * 100
+			"src"."Ints" * "src"."Cents"
 		FROM
 			"ConvertedInts" "src"
 		WHERE
