@@ -62,3 +62,19 @@ SELECT
 FROM
 	`ClientCalcEntity` `t1`
 
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57
+SELECT
+	`e`.`Id`,
+	`e`.`Name`
+FROM
+	`ClientCalcEntity` `e`
+
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57
+SELECT
+	`t1`.`Id`,
+	`t1`.`Value1`,
+	`t1`.`Value2`,
+	`t1`.`Name`
+FROM
+	`ClientCalcEntity` `t1`
+
