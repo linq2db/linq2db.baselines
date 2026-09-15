@@ -3,15 +3,15 @@ SELECT
 	[e].[Id],
 	Abs([e].[Num]),
 	CASE
-		WHEN [e].[Num] >= 5 THEN [e].[Num]
-		ELSE 5
+		WHEN [e].[Dbl] * 2 = ROUND([e].[Dbl] * 2, [e].[Id]) AND [e].[Dbl] <> ROUND([e].[Dbl], [e].[Id])
+			THEN ROUND([e].[Dbl] / 2, [e].[Id]) * 2
+		ELSE ROUND([e].[Dbl], [e].[Id])
 	END,
 	CASE
-		WHEN [e].[Num] <= 5 THEN [e].[Num]
-		ELSE 5
-	END,
-	[e].[Dbl],
-	[e].[Dec]
+		WHEN [e].[Dec] * 2 = ROUND([e].[Dec] * 2, [e].[Id]) AND [e].[Dec] <> ROUND([e].[Dec], [e].[Id])
+			THEN ROUND([e].[Dec] / 2, [e].[Id]) * 2
+		ELSE ROUND([e].[Dec], [e].[Id])
+	END
 FROM
 	[BatchCalcEntity] [e]
 
