@@ -62,3 +62,19 @@ SELECT
 FROM
 	ClientCalcEntity t1
 
+-- YDB Ydb
+SELECT
+	e.Id as Id,
+	e.Name as Name
+FROM
+	ClientCalcEntity e
+
+-- YDB Ydb
+SELECT
+	t1.Id as Id,
+	t1.Value1 as Value1,
+	t1.Value2 as Value2,
+	t1.Name as Name
+FROM
+	ClientCalcEntity t1
+

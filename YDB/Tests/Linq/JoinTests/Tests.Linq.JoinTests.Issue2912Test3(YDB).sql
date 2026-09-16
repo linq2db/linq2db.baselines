@@ -1,7 +1,7 @@
 ﻿-- YDB Ydb
 SELECT
 	CASE
-		WHEN t2.ParentID IS NOT NULL THEN t2.ChildID
+		WHEN t2.ParentID IS NOT NULL THEN Coalesce(t2.ChildID, 0)
 		ELSE 0
 	END as c1
 FROM

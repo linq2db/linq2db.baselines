@@ -5,7 +5,7 @@ SELECT TOP 10
 	[r].[CategoryId],
 	[r].[MaxCapacity],
 	[r].[Quantity],
-	[r].[MaxCapacity] - [r].[Quantity],
+	Coalesce([r].[MaxCapacity], 0) - Coalesce([r].[Quantity], 0),
 	COALESCE([vpcc].[PeriodOrderLimit],0),
 	[vsopc].[Quantity],
 	COALESCE([vpcc].[PeriodOrderLimit],0) - [vsopc].[Quantity]
@@ -15,8 +15,8 @@ FROM
 			[op].[Id] as [OrderPeriodId],
 			[vpc].[CategoryId],
 			[pop].[ProductId],
-			COALESCE([pcc].[PeriodOrderLimit],0) as [MaxCapacity],
-			COALESCE(COALESCE([vsp].[Quantity],0),0) as [Quantity]
+			COALESCE(Coalesce([pcc].[PeriodOrderLimit], 0),0) as [MaxCapacity],
+			COALESCE(Coalesce(COALESCE([vsp].[Quantity],0), 0),0) as [Quantity]
 		FROM
 			[OrderPeriod] [op]
 				INNER JOIN [ProductsPerOrderPeriod] [pop] ON [op].[Id] = [pop].[OrderPeriodId]
