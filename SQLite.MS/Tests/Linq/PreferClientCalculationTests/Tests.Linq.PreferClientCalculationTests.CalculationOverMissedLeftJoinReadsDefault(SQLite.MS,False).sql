@@ -22,6 +22,18 @@ SELECT
 		WHEN strftime('%Y-%m-%d %H:%M:%f', [j].[Date]) < strftime('%Y-%m-%d %H:%M:%f', '2000-01-01 00:00:00.000')
 			THEN 'y'
 		ELSE 'n'
+	END,
+	CASE
+		WHEN [j].[Date] IS NULL THEN 'n'
+		WHEN strftime('%Y-%m-%d %H:%M:%f', [j].[Date]) > strftime('%Y-%m-%d %H:%M:%f', [e].[Date])
+			THEN 'y'
+		ELSE 'n'
+	END,
+	CASE
+		WHEN [j].[Date] IS NULL THEN 'y'
+		WHEN strftime('%Y-%m-%d %H:%M:%f', [j].[Date]) <= strftime('%Y-%m-%d %H:%M:%f', [e].[Date])
+			THEN 'y'
+		ELSE 'n'
 	END
 FROM
 	[MissedJoinEntity] [e]
