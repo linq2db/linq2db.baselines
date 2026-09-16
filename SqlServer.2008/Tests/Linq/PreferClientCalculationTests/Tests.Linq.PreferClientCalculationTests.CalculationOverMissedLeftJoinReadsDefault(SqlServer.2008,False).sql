@@ -20,6 +20,16 @@ SELECT
 		WHEN [j].[Date] IS NULL THEN N'y'
 		WHEN [j].[Date] < CAST(N'2000-01-01' AS DateTime2) THEN N'y'
 		ELSE N'n'
+	END,
+	CASE
+		WHEN [j].[Date] IS NULL THEN N'n'
+		WHEN [j].[Date] > [e].[Date] THEN N'y'
+		ELSE N'n'
+	END,
+	CASE
+		WHEN [j].[Date] IS NULL THEN N'y'
+		WHEN [j].[Date] <= [e].[Date] THEN N'y'
+		ELSE N'n'
 	END
 FROM
 	[MissedJoinEntity] [e]
