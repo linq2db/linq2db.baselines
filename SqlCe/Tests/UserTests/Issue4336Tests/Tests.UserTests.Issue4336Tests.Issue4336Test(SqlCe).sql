@@ -8,7 +8,7 @@ SELECT TOP (@take)
 	[r].[CategoryId],
 	[r].[MaxCapacity],
 	[r].[Quantity],
-	[r].[MaxCapacity] - [r].[Quantity] as [FreeCapacity],
+	Coalesce([r].[MaxCapacity], 0) - Coalesce([r].[Quantity], 0) as [FreeCapacity],
 	COALESCE([vpcc].[PeriodOrderLimit],0) as [MaxCapacity_1],
 	[vsopc].[Quantity] as [Quantity_1],
 	COALESCE([vpcc].[PeriodOrderLimit],0) - [vsopc].[Quantity] as [FreeCapacity_1]
@@ -18,8 +18,8 @@ FROM
 			[op].[Id] as [OrderPeriodId],
 			[vpc].[CategoryId],
 			[pop].[ProductId],
-			COALESCE([pcc].[PeriodOrderLimit],0) as [MaxCapacity],
-			COALESCE(COALESCE([vsp].[Quantity],0),0) as [Quantity]
+			COALESCE(Coalesce([pcc].[PeriodOrderLimit], 0),0) as [MaxCapacity],
+			COALESCE(Coalesce(COALESCE([vsp].[Quantity],0), 0),0) as [Quantity]
 		FROM
 			[OrderPeriod] [op]
 				INNER JOIN [ProductsPerOrderPeriod] [pop] ON [op].[Id] = [pop].[OrderPeriodId]
