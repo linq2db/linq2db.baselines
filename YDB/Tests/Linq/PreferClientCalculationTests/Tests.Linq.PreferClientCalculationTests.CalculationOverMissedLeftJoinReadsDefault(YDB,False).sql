@@ -22,7 +22,17 @@ SELECT
 		WHEN j.`Date` < DateTime::MakeTimestamp(DateTime::ParseIso8601(Unicode::ReplaceAll('2000-'u || Unicode::Substring(Unwrap(CAST(101 AS Text)), 1, 2) || '-'u || Unicode::Substring(Unwrap(CAST(101 AS Text)), 1, 2) || ' 'u || Unicode::Substring(Unwrap(CAST(100 AS Text)), 1, 2) || ':'u || Unicode::Substring(Unwrap(CAST(100 AS Text)), 1, 2) || ':'u || Unicode::Substring(Unwrap(CAST(100 AS Text)), 1, 2), ' 'u, 'T'u) || 'Z'u))
 			THEN 'y'u
 		ELSE 'n'u
-	END as Earlier
+	END as Earlier,
+	CASE
+		WHEN j.`Date` IS NULL THEN 'n'u
+		WHEN j.`Date` > e.`Date` THEN 'y'u
+		ELSE 'n'u
+	END as AfterOwn,
+	CASE
+		WHEN j.`Date` IS NULL THEN 'y'u
+		WHEN j.`Date` <= e.`Date` THEN 'y'u
+		ELSE 'n'u
+	END as AtMostOwn
 FROM
 	MissedJoinEntity e
 		LEFT JOIN MissedJoinEntity j ON j.Id = e.Id + 1000
