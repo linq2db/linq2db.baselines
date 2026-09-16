@@ -16,6 +16,16 @@ SELECT
 		WHEN [j].[Date] < DATETIME2FROMPARTS(2000, 1, 1, 0, 0, 0, 0, 3)
 			THEN N'y'
 		ELSE N'n'
+	END,
+	CASE
+		WHEN [j].[Date] IS NULL THEN N'n'
+		WHEN [j].[Date] > [e].[Date] THEN N'y'
+		ELSE N'n'
+	END,
+	CASE
+		WHEN [j].[Date] IS NULL THEN N'y'
+		WHEN [j].[Date] <= [e].[Date] THEN N'y'
+		ELSE N'n'
 	END
 FROM
 	[MissedJoinEntity] [e]
