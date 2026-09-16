@@ -332,13 +332,13 @@ CREATE TABLE `AllTypesNoYear`
 )
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DROP SCHEMA IF EXISTS test_schema
+DROP SCHEMA IF EXISTS `test_schema_testdataconnector`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-CREATE SCHEMA test_schema
+CREATE SCHEMA `test_schema_testdataconnector`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-CREATE TABLE test_schema.TestSameName
+CREATE TABLE `test_schema_testdataconnector`.TestSameName
 (
 	ID int NOT NULL PRIMARY KEY
 )

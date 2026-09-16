@@ -332,13 +332,13 @@ CREATE TABLE `AllTypesNoYear`
 )
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DROP SCHEMA IF EXISTS test_schema
+DROP SCHEMA IF EXISTS `test_schema_testdataconnector`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-CREATE SCHEMA test_schema
+CREATE SCHEMA `test_schema_testdataconnector`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-CREATE TABLE test_schema.TestSameName
+CREATE TABLE `test_schema_testdataconnector`.TestSameName
 (
 	ID int NOT NULL PRIMARY KEY
 )
