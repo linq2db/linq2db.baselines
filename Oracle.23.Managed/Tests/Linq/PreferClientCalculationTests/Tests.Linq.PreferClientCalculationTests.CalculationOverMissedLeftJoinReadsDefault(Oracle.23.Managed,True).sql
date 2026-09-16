@@ -5,7 +5,8 @@ SELECT
 	Abs(Coalesce(j."Value1", 0) - 1),
 	j."Date",
 	EXTRACT(YEAR FROM j."Date"),
-	TO_TIMESTAMP('2000-01-01 00:00:00.000', 'YYYY-MM-DD HH24:MI:SS.FF3')
+	TO_TIMESTAMP('2000-01-01 00:00:00.000', 'YYYY-MM-DD HH24:MI:SS.FF3'),
+	e."Date"
 FROM
 	"MissedJoinEntity" e
 		LEFT JOIN "MissedJoinEntity" j ON j."Id" = e."Id" + 1000
