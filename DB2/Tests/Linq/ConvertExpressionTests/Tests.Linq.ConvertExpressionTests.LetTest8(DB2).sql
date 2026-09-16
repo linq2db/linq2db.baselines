@@ -2,7 +2,7 @@
 SELECT
 	CASE
 		WHEN "t2"."ParentID" IS NULL THEN 0
-		ELSE "t2"."ParentID"
+		ELSE Coalesce("t2"."ParentID", 0)
 	END,
 	CAST(EXISTS(
 		SELECT

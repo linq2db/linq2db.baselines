@@ -1,7 +1,7 @@
 ﻿-- DuckDB
 SELECT
 	CASE
-		WHEN t1.ParentID IS NOT NULL THEN t1.ChildID
+		WHEN t1.ParentID IS NOT NULL THEN Coalesce(t1.ChildID, 0)
 		ELSE 0
 	END
 FROM

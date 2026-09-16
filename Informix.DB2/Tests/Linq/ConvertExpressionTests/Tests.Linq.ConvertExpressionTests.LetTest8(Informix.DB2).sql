@@ -2,7 +2,7 @@
 SELECT
 	CASE
 		WHEN t1.ParentID IS NULL THEN 0
-		ELSE t1.ParentID
+		ELSE Nvl(t1.ParentID, 0)
 	END,
 	EXISTS(
 		SELECT

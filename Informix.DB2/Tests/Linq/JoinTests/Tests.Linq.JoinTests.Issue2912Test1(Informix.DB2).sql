@@ -1,7 +1,7 @@
 ﻿-- Informix.DB2 Informix
 SELECT
 	CASE
-		WHEN t1.ParentID IS NOT NULL THEN t1.ChildID
+		WHEN t1.ParentID IS NOT NULL THEN Nvl(t1.ChildID, 0)
 		ELSE 0
 	END
 FROM
