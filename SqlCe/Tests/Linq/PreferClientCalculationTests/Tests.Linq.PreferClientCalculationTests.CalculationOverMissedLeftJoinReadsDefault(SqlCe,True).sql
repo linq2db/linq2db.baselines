@@ -2,10 +2,11 @@
 SELECT
 	[e].[Id],
 	[j].[Value1],
-	Abs(Coalesce([j].[Value1], 0) - 1),
-	[j].[Date],
-	DatePart(year, [j].[Date]),
-	CAST('2000-01-01' AS DateTime)
+	Abs(Coalesce([j].[Value1], 0) - 1) as [c1],
+	[j].[Date] as [Date_1],
+	DatePart(year, [j].[Date]) as [Year_1],
+	CAST('2000-01-01' AS DateTime) as [c2],
+	[e].[Date] as [Date_2]
 FROM
 	[MissedJoinEntity] [e]
 		LEFT JOIN [MissedJoinEntity] [j] ON [j].[Id] = [e].[Id] + 1000
