@@ -22,6 +22,16 @@ SELECT
 		WHEN "j"."Date" < To_Timestamp('2000-01-01 00:00:00.000')
 			THEN 'y'
 		ELSE 'n'
+	END,
+	CASE
+		WHEN "j"."Date" IS NULL THEN 'n'
+		WHEN "j"."Date" > "e"."Date" THEN 'y'
+		ELSE 'n'
+	END,
+	CASE
+		WHEN "j"."Date" IS NULL THEN 'y'
+		WHEN "j"."Date" <= "e"."Date" THEN 'y'
+		ELSE 'n'
 	END
 FROM
 	"MissedJoinEntity" "e"
