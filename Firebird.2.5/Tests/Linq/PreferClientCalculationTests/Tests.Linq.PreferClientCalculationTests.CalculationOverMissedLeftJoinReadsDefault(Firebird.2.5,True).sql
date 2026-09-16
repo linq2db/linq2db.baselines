@@ -1,0 +1,20 @@
+﻿-- Firebird.2.5 Firebird
+SELECT
+	"e"."Id",
+	"j"."Value1",
+	Abs(Coalesce("j"."Value1", 0) - 1),
+	"j"."Date",
+	Extract(year from "j"."Date"),
+	CAST('2000-01-01' AS TimeStamp)
+FROM
+	"MissedJoinEntity" "e"
+		LEFT JOIN "MissedJoinEntity" "j" ON "j"."Id" = "e"."Id" + 1000
+
+-- Firebird.2.5 Firebird
+SELECT
+	"t1"."Id",
+	"t1"."Value1",
+	"t1"."Date"
+FROM
+	"MissedJoinEntity" "t1"
+
