@@ -6,7 +6,7 @@ FROM
 	(
 		SELECT
 			IIF([t1].[PersonID] IS NOT NULL, [t1].[Diagnosis], N'abc') as [StatusName],
-			IIF([t1].[PersonID] IS NOT NULL, [t1].[PersonID], [x].[PersonID]) as [Id]
+			IIF([t1].[PersonID] IS NOT NULL, Coalesce([t1].[PersonID], 0), [x].[PersonID]) as [Id]
 		FROM
 			[Person] [x]
 				OUTER APPLY (
