@@ -1,6 +1,6 @@
 ﻿-- SqlServer.2019
 SELECT
-	IIF([t1].[ParentID] IS NOT NULL, [t1].[ChildID], 0)
+	IIF([t1].[ParentID] IS NOT NULL, Coalesce([t1].[ChildID], 0), 0)
 FROM
 	[Parent] [employee]
 		OUTER APPLY (
