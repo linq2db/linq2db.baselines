@@ -20,6 +20,16 @@ SELECT
 		WHEN "j"."Date" IS NULL THEN 'y'
 		WHEN "j"."Date" < CAST('2000-01-01' AS TimeStamp) THEN 'y'
 		ELSE 'n'
+	END,
+	CASE
+		WHEN "j"."Date" IS NULL THEN 'n'
+		WHEN "j"."Date" > "e"."Date" THEN 'y'
+		ELSE 'n'
+	END,
+	CASE
+		WHEN "j"."Date" IS NULL THEN 'y'
+		WHEN "j"."Date" <= "e"."Date" THEN 'y'
+		ELSE 'n'
 	END
 FROM
 	"MissedJoinEntity" "e"
