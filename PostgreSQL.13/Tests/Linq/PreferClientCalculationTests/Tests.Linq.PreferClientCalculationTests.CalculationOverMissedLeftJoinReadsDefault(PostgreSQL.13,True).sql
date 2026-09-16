@@ -5,7 +5,8 @@ SELECT
 	Abs(Coalesce(j."Value1", 0) - 1),
 	j."Date",
 	Floor(Extract(year From j."Date"))::Int,
-	make_timestamp(2000, 1, 1, 0, 0, 0)
+	make_timestamp(2000, 1, 1, 0, 0, 0),
+	e."Date"
 FROM
 	"MissedJoinEntity" e
 		LEFT JOIN "MissedJoinEntity" j ON j."Id" = e."Id" + 1000
