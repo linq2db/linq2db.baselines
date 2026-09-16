@@ -1,6 +1,6 @@
 ﻿-- SqlServer.2025
 SELECT
-	IIF([t1].[ParentID] IS NULL, 0, [t1].[ParentID]),
+	IIF([t1].[ParentID] IS NULL, 0, Coalesce([t1].[ParentID], 0)),
 	[t2].[ParentID],
 	[t2].[ChildID]
 FROM
