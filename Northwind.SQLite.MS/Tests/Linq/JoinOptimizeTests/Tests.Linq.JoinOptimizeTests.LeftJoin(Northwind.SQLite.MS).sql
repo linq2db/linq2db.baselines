@@ -4,15 +4,15 @@ SELECT
 	[o1].[OrderID],
 	CASE
 		WHEN [o2].[OrderID] IS NULL THEN 0
-		ELSE [o2].[OrderID]
+		ELSE Coalesce([o2].[OrderID], 0)
 	END,
 	CASE
 		WHEN [o3].[OrderID] IS NULL THEN 0
-		ELSE [o3].[OrderID]
+		ELSE Coalesce([o3].[OrderID], 0)
 	END,
 	CASE
 		WHEN [o2].[OrderID] IS NULL THEN 0
-		ELSE [o2].[OrderID]
+		ELSE Coalesce([o2].[OrderID], 0)
 	END
 FROM
 	[Order Details] [od]
