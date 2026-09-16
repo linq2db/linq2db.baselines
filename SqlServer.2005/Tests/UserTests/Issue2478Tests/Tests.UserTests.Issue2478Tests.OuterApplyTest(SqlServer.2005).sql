@@ -3,7 +3,7 @@ SELECT
 	[p].[ParentID],
 	CASE
 		WHEN [c_2].[Count_1] IS NULL THEN 0
-		ELSE [c_2].[Count_1]
+		ELSE Coalesce([c_2].[Count_1], 0)
 	END
 FROM
 	[Parent] [p]
