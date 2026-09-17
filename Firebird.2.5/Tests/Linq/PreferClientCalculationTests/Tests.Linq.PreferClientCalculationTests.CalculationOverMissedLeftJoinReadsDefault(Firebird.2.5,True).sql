@@ -5,7 +5,6 @@ SELECT
 	Abs(Coalesce("j"."Value1", 0) - 1),
 	"j"."Date",
 	Extract(year from "j"."Date"),
-	CAST('2000-01-01' AS TimeStamp),
 	"e"."Date"
 FROM
 	"MissedJoinEntity" "e"

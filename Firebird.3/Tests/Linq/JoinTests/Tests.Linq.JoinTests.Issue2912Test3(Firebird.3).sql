@@ -1,7 +1,7 @@
 ﻿-- Firebird.3 Firebird3
 SELECT
 	CASE
-		WHEN "t1"."ParentID" IS NOT NULL THEN Coalesce("t1"."ChildID", 0)
+		WHEN "t1"."ParentID" IS NOT NULL THEN "t1"."ChildID"
 		ELSE 0
 	END
 FROM
