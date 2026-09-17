@@ -1,4 +1,7 @@
 ﻿-- Informix.DB2 Informix
+DECLARE @bound Timestamp(16) -- DateTime
+SET     @bound = TO_DATE('2000-01-01', '%Y-%m-%d')
+
 SELECT
 	e.Id,
 	Nvl(j.Value1, 0) + 1,
@@ -13,12 +16,22 @@ SELECT
 	END,
 	CASE
 		WHEN j."Date" IS NULL THEN 'n'
-		WHEN j."Date" > Mdy(1, 1, 2000) THEN 'y'
+		WHEN j."Date" > @bound::datetime year to fraction THEN 'y'
 		ELSE 'n'
 	END,
 	CASE
 		WHEN j."Date" IS NULL THEN 'y'
-		WHEN j."Date" < Mdy(1, 1, 2000) THEN 'y'
+		WHEN j."Date" < @bound::datetime year to fraction THEN 'y'
+		ELSE 'n'
+	END,
+	CASE
+		WHEN j."Date" IS NULL THEN 'n'
+		WHEN j."Date" > e."Date" THEN 'y'
+		ELSE 'n'
+	END,
+	CASE
+		WHEN j."Date" IS NULL THEN 'y'
+		WHEN j."Date" <= e."Date" THEN 'y'
 		ELSE 'n'
 	END
 FROM

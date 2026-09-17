@@ -5,7 +5,7 @@ SELECT
 	Abs(Nvl(j.Value1, 0) - 1),
 	j."Date",
 	Year(j."Date"),
-	Mdy(1, 1, 2000)
+	e."Date"
 FROM
 	MissedJoinEntity e
 		LEFT JOIN MissedJoinEntity j ON j.Id = e.Id + 1000

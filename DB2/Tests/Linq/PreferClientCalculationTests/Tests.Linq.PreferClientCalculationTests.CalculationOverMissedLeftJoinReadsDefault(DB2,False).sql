@@ -1,4 +1,7 @@
 ﻿-- DB2 DB2.LUW DB2LUW
+DECLARE @bound Timestamp(20) -- DateTime
+SET     @bound = '2000-01-01-00.00.00.000000'
+
 SELECT
 	"e"."Id",
 	Coalesce("j"."Value1", 0) + 1,
@@ -13,12 +16,22 @@ SELECT
 	END,
 	CASE
 		WHEN "j"."Date" IS NULL THEN 'n'
-		WHEN "j"."Date" > CAST('2000-01-01' AS timestamp) THEN 'y'
+		WHEN "j"."Date" > CAST(@bound AS timestamp) THEN 'y'
 		ELSE 'n'
 	END,
 	CASE
 		WHEN "j"."Date" IS NULL THEN 'y'
-		WHEN "j"."Date" < CAST('2000-01-01' AS timestamp) THEN 'y'
+		WHEN "j"."Date" < CAST(@bound AS timestamp) THEN 'y'
+		ELSE 'n'
+	END,
+	CASE
+		WHEN "j"."Date" IS NULL THEN 'n'
+		WHEN "j"."Date" > "e"."Date" THEN 'y'
+		ELSE 'n'
+	END,
+	CASE
+		WHEN "j"."Date" IS NULL THEN 'y'
+		WHEN "j"."Date" <= "e"."Date" THEN 'y'
 		ELSE 'n'
 	END
 FROM

@@ -1,4 +1,7 @@
 ﻿-- DuckDB
+DECLARE $bound  -- DateTime2
+SET     $bound = '2000-01-01 00:00:00.000000'::TIMESTAMP
+
 SELECT
 	e.Id,
 	Coalesce(j.Value1, 0) + 1,
@@ -13,12 +16,22 @@ SELECT
 	END,
 	CASE
 		WHEN j."Date" IS NULL THEN 'n'
-		WHEN j."Date" > make_timestamp(2000, 1, 1, 0, 0, 0) THEN 'y'
+		WHEN j."Date" > $bound THEN 'y'
 		ELSE 'n'
 	END,
 	CASE
 		WHEN j."Date" IS NULL THEN 'y'
-		WHEN j."Date" < make_timestamp(2000, 1, 1, 0, 0, 0) THEN 'y'
+		WHEN j."Date" < $bound THEN 'y'
+		ELSE 'n'
+	END,
+	CASE
+		WHEN j."Date" IS NULL THEN 'n'
+		WHEN j."Date" > e."Date" THEN 'y'
+		ELSE 'n'
+	END,
+	CASE
+		WHEN j."Date" IS NULL THEN 'y'
+		WHEN j."Date" <= e."Date" THEN 'y'
 		ELSE 'n'
 	END
 FROM
