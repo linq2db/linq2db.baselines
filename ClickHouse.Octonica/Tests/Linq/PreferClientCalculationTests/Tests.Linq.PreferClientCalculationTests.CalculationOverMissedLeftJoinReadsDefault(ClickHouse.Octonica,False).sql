@@ -13,12 +13,14 @@ SELECT
 	END,
 	CASE
 		WHEN j.Date IS NULL THEN 'n'
-		WHEN j.Date > makeDateTime(2000, 1, 1, 0, 0, 0) THEN 'y'
+		WHEN j.Date > toDateTime64('2000-01-01 00:00:00.0000000', 7)
+			THEN 'y'
 		ELSE 'n'
 	END,
 	CASE
 		WHEN j.Date IS NULL THEN 'y'
-		WHEN j.Date < makeDateTime(2000, 1, 1, 0, 0, 0) THEN 'y'
+		WHEN j.Date < toDateTime64('2000-01-01 00:00:00.0000000', 7)
+			THEN 'y'
 		ELSE 'n'
 	END,
 	CASE
