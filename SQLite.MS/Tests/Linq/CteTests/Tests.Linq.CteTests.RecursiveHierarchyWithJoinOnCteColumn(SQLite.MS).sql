@@ -1,18 +1,18 @@
 ﻿-- SQLite.MS SQLite
-WITH [cte] ([ParentID], [ChildID], [Level_1])
+WITH [cte] ([Level_1], [ParentID], [ChildID])
 AS
 (
 	SELECT
+		CAST(0 AS INTEGER),
 		[p].[ParentID],
-		NULL,
-		CAST(0 AS INTEGER)
+		NULL
 	FROM
 		[Parent] [p]
 	UNION ALL
 	SELECT
+		[ct].[Level_1] + 1,
 		[c_1].[ParentID],
-		[c_1].[ChildID],
-		[ct].[Level_1] + 1
+		[c_1].[ChildID]
 	FROM
 		[Child] [c_1]
 			INNER JOIN [cte] [ct] ON [ct].[ParentID] = [c_1].[ParentID]

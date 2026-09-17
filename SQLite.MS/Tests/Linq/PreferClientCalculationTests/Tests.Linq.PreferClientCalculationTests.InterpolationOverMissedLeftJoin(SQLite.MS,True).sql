@@ -1,0 +1,7 @@
+﻿-- SQLite.MS SQLite
+SELECT
+	[j].[Value1]
+FROM
+	[ClientCalcEntity] [e]
+		LEFT JOIN [ClientCalcEntity] [j] ON [j].[Id] = [e].[Id] + 1000
+
