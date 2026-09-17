@@ -1,4 +1,7 @@
 ﻿-- YDB Ydb
+DECLARE $bound Timestamp -- DateTime2
+SET     $bound = Timestamp('2000-01-01T00:00:00.000000Z')
+
 SELECT
 	e.Id as Id,
 	Coalesce(j.Value1, 0) + 1 as Plus,
@@ -13,14 +16,12 @@ SELECT
 	END as Year_1,
 	CASE
 		WHEN j.`Date` IS NULL THEN 'n'u
-		WHEN j.`Date` > DateTime::MakeTimestamp(DateTime::ParseIso8601(Unicode::ReplaceAll('2000-'u || Unicode::Substring(Unwrap(CAST(101 AS Text)), 1, 2) || '-'u || Unicode::Substring(Unwrap(CAST(101 AS Text)), 1, 2) || ' 'u || Unicode::Substring(Unwrap(CAST(100 AS Text)), 1, 2) || ':'u || Unicode::Substring(Unwrap(CAST(100 AS Text)), 1, 2) || ':'u || Unicode::Substring(Unwrap(CAST(100 AS Text)), 1, 2), ' 'u, 'T'u) || 'Z'u))
-			THEN 'y'u
+		WHEN j.`Date` > $bound THEN 'y'u
 		ELSE 'n'u
 	END as Later,
 	CASE
 		WHEN j.`Date` IS NULL THEN 'y'u
-		WHEN j.`Date` < DateTime::MakeTimestamp(DateTime::ParseIso8601(Unicode::ReplaceAll('2000-'u || Unicode::Substring(Unwrap(CAST(101 AS Text)), 1, 2) || '-'u || Unicode::Substring(Unwrap(CAST(101 AS Text)), 1, 2) || ' 'u || Unicode::Substring(Unwrap(CAST(100 AS Text)), 1, 2) || ':'u || Unicode::Substring(Unwrap(CAST(100 AS Text)), 1, 2) || ':'u || Unicode::Substring(Unwrap(CAST(100 AS Text)), 1, 2), ' 'u, 'T'u) || 'Z'u))
-			THEN 'y'u
+		WHEN j.`Date` < $bound THEN 'y'u
 		ELSE 'n'u
 	END as Earlier,
 	CASE

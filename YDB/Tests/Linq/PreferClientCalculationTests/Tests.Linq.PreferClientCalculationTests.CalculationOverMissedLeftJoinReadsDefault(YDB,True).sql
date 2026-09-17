@@ -5,7 +5,6 @@ SELECT
 	Abs(Coalesce(j.Value1, 0) - 1) as c1,
 	j.`Date` as Date_1,
 	DateTime::GetYear(j.`Date`) as Year_1,
-	DateTime::MakeTimestamp(DateTime::ParseIso8601(Unicode::ReplaceAll('2000-'u || Unicode::Substring(Unwrap(CAST(101 AS Text)), 1, 2) || '-'u || Unicode::Substring(Unwrap(CAST(101 AS Text)), 1, 2) || ' 'u || Unicode::Substring(Unwrap(CAST(100 AS Text)), 1, 2) || ':'u || Unicode::Substring(Unwrap(CAST(100 AS Text)), 1, 2) || ':'u || Unicode::Substring(Unwrap(CAST(100 AS Text)), 1, 2), ' 'u, 'T'u) || 'Z'u)) as c2,
 	e.`Date` as Date_2
 FROM
 	MissedJoinEntity e
