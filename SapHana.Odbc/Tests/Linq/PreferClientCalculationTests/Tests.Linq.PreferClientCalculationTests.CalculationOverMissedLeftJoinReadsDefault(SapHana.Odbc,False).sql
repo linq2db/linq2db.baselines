@@ -1,4 +1,9 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
+DECLARE @bound DateTime
+SET     @bound = TIMESTAMP '2000-01-01 00:00:00.0000000'
+DECLARE @bound DateTime
+SET     @bound = TIMESTAMP '2000-01-01 00:00:00.0000000'
+
 SELECT
 	"e"."Id",
 	Coalesce("j"."Value1", 0) + 1,
@@ -13,14 +18,12 @@ SELECT
 	END,
 	CASE
 		WHEN "j"."Date" IS NULL THEN 'n'
-		WHEN "j"."Date" > To_Timestamp('2000-01-01 00:00:00.000')
-			THEN 'y'
+		WHEN "j"."Date" > ? THEN 'y'
 		ELSE 'n'
 	END,
 	CASE
 		WHEN "j"."Date" IS NULL THEN 'y'
-		WHEN "j"."Date" < To_Timestamp('2000-01-01 00:00:00.000')
-			THEN 'y'
+		WHEN "j"."Date" < ? THEN 'y'
 		ELSE 'n'
 	END,
 	CASE
