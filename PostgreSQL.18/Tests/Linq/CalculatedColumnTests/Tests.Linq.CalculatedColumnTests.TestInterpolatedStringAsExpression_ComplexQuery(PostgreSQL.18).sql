@@ -2,12 +2,12 @@
 SELECT
 	x_1."Id",
 	CASE
-		WHEN NOT (x_1."StrVal" IS NULL OR x_1."Length_1" = 0 AND x_1."Length_1" IS NOT NULL)
+		WHEN NOT (x_1."StrVal" IS NULL OR Coalesce(x_1."Length_1", 0) = 0)
 			THEN x_1."StrVal"
 		ELSE x_1."IntVal"::text
 	END,
 	Coalesce(CASE
-		WHEN NOT (x_1."StrVal" IS NULL OR x_1."Length_1" = 0 AND x_1."Length_1" IS NOT NULL)
+		WHEN NOT (x_1."StrVal" IS NULL OR Coalesce(x_1."Length_1", 0) = 0)
 			THEN x_1."StrVal"
 		ELSE x_1."IntVal"::text
 	END, '')
@@ -15,8 +15,8 @@ FROM
 	(
 		SELECT
 			x."Id",
-			x."StrVal",
 			Length(x."StrVal") as "Length_1",
+			x."StrVal",
 			x."IntVal",
 			CASE
 				WHEN NOT (x."StrVal" IS NULL OR Length(x."StrVal") = 0) THEN x."StrVal"
@@ -32,12 +32,12 @@ ORDER BY
 SELECT
 	x_1."Id",
 	CASE
-		WHEN NOT (x_1."StrVal" IS NULL OR x_1."Length_1" = 0 AND x_1."Length_1" IS NOT NULL)
+		WHEN NOT (x_1."StrVal" IS NULL OR Coalesce(x_1."Length_1", 0) = 0)
 			THEN x_1."StrVal"
 		ELSE x_1."IntVal"::text
 	END,
 	Coalesce(CASE
-		WHEN NOT (x_1."StrVal" IS NULL OR x_1."Length_1" = 0 AND x_1."Length_1" IS NOT NULL)
+		WHEN NOT (x_1."StrVal" IS NULL OR Coalesce(x_1."Length_1", 0) = 0)
 			THEN x_1."StrVal"
 		ELSE x_1."IntVal"::text
 	END, '')
@@ -45,8 +45,8 @@ FROM
 	(
 		SELECT
 			x."Id",
-			x."StrVal",
 			Length(x."StrVal") as "Length_1",
+			x."StrVal",
 			x."IntVal",
 			Coalesce(CASE
 				WHEN NOT (x."StrVal" IS NULL OR Length(x."StrVal") = 0) THEN x."StrVal"
