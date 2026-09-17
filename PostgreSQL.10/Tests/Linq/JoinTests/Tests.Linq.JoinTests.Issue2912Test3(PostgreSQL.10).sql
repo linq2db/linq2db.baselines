@@ -1,7 +1,7 @@
 ﻿-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 SELECT
 	CASE
-		WHEN t1."ParentID" IS NOT NULL THEN Coalesce(t1."ChildID", 0)
+		WHEN t1."ParentID" IS NOT NULL THEN t1."ChildID"
 		ELSE 0
 	END
 FROM
