@@ -1,6 +1,6 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
 SELECT
-	IIF([t1].[ParentID] IS NULL, 0, Coalesce([t1].[ParentID], 0)),
+	IIF([t1].[ParentID] IS NULL, 0, [t1].[ParentID]),
 	IIF(EXISTS(
 		SELECT
 			*
