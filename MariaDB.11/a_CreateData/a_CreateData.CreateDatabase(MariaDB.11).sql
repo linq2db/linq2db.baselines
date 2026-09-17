@@ -332,13 +332,13 @@ CREATE TABLE `AllTypesNoYear`
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-DROP SCHEMA IF EXISTS test_schema
+DROP SCHEMA IF EXISTS `test_schema_testdata`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-CREATE SCHEMA test_schema
+CREATE SCHEMA `test_schema_testdata`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-CREATE TABLE test_schema.TestSameName
+CREATE TABLE `test_schema_testdata`.TestSameName
 (
 	ID int NOT NULL PRIMARY KEY
 )

@@ -1,0 +1,3 @@
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
+SELECT CAST(-1.7900000000000002E+308 as real)
+
