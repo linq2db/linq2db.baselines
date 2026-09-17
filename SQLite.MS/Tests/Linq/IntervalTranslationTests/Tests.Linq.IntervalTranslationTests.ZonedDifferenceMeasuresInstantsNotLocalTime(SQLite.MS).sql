@@ -2,9 +2,9 @@
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @StartedOn  -- DateTimeOffset
-SET     @StartedOn = '2026-01-01 12:00:00.000+00:00'
+SET     @StartedOn = '2026-01-01 12:00:00+00:00'
 DECLARE @FinishedOn  -- DateTimeOffset
-SET     @FinishedOn = '2026-01-01 14:00:00.000+02:00'
+SET     @FinishedOn = '2026-01-01 14:00:00+02:00'
 
 INSERT INTO [ZonedEventRow]
 (
@@ -23,9 +23,9 @@ VALUES
 DECLARE @Id  -- Int32
 SET     @Id = 2
 DECLARE @StartedOn  -- DateTimeOffset
-SET     @StartedOn = '2026-01-01 12:00:00.000+02:00'
+SET     @StartedOn = '2026-01-01 12:00:00+02:00'
 DECLARE @FinishedOn  -- DateTimeOffset
-SET     @FinishedOn = '2026-01-01 12:00:00.000+00:00'
+SET     @FinishedOn = '2026-01-01 12:00:00+00:00'
 
 INSERT INTO [ZonedEventRow]
 (
