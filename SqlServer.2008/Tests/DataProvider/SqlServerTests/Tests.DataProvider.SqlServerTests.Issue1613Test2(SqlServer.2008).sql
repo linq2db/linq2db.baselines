@@ -6,7 +6,7 @@ FROM
 
 -- SqlServer.2008
 SELECT
-	CAST([r].[dt] AS Date)
+	CAST(Coalesce([r].[dt], CAST('0001-01-01T00:00:00.0000000+00:00' AS DATETIMEOFFSET)) AS Date)
 FROM
 	[Issue1613] [r]
 
