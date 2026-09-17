@@ -1,4 +1,7 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
+DECLARE @bound DateTime2
+SET     @bound = DATETIME2FROMPARTS(2000, 1, 1, 0, 0, 0, 0, 7)
+
 SELECT
 	[e].[Id],
 	Coalesce([j].[Value1], 0) + 1,
@@ -7,14 +10,12 @@ SELECT
 	IIF([j].[Date] IS NULL, 1, DatePart(year, [j].[Date])),
 	CASE
 		WHEN [j].[Date] IS NULL THEN N'n'
-		WHEN [j].[Date] > DATETIME2FROMPARTS(2000, 1, 1, 0, 0, 0, 0, 3)
-			THEN N'y'
+		WHEN [j].[Date] > @bound THEN N'y'
 		ELSE N'n'
 	END,
 	CASE
 		WHEN [j].[Date] IS NULL THEN N'y'
-		WHEN [j].[Date] < DATETIME2FROMPARTS(2000, 1, 1, 0, 0, 0, 0, 3)
-			THEN N'y'
+		WHEN [j].[Date] < @bound THEN N'y'
 		ELSE N'n'
 	END,
 	CASE
