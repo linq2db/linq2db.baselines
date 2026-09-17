@@ -1,8 +1,8 @@
 ﻿-- Informix.DB2 Informix
 SELECT
 	SUM(grp_1.MoneyValue),
-	Year(grp_1.c1),
-	Month(grp_1.c1)
+	Year(Nvl(grp_1.c1, TO_DATE('0001-01-01', '%Y-%m-%d'))),
+	Month(Nvl(grp_1.c1, TO_DATE('0001-01-01', '%Y-%m-%d')))
 FROM
 	(
 		SELECT
@@ -17,8 +17,8 @@ GROUP BY
 -- Informix.DB2 Informix
 SELECT
 	SUM(grp_1.MoneyValue),
-	Year(grp_1.c1),
-	Month(grp_1.c1)
+	Year(Nvl(grp_1.c1, TO_DATE('0001-01-01', '%Y-%m-%d'))),
+	Month(Nvl(grp_1.c1, TO_DATE('0001-01-01', '%Y-%m-%d')))
 FROM
 	(
 		SELECT
