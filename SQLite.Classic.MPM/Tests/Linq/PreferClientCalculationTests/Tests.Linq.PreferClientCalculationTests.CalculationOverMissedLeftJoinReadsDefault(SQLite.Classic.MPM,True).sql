@@ -5,7 +5,6 @@ SELECT
 	Abs(Coalesce([j].[Value1], 0) - 1),
 	[j].[Date],
 	CAST(strftime('%Y', [j].[Date]) AS INTEGER),
-	strftime('%Y-%m-%d %H:%M:%f', '2000-01-01 00:00:00.000'),
 	[e].[Date]
 FROM
 	[MissedJoinEntity] [e]

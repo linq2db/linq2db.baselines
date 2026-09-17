@@ -1,4 +1,7 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
+DECLARE @bound VarChar(23) -- AnsiString
+SET     @bound = '2000-01-01 00:00:00.000'
+
 SELECT
 	[e].[Id],
 	Coalesce([j].[Value1], 0) + 1,
@@ -13,13 +16,13 @@ SELECT
 	END,
 	CASE
 		WHEN [j].[Date] IS NULL THEN 'n'
-		WHEN strftime('%Y-%m-%d %H:%M:%f', [j].[Date]) > strftime('%Y-%m-%d %H:%M:%f', '2000-01-01 00:00:00.000')
+		WHEN strftime('%Y-%m-%d %H:%M:%f', [j].[Date]) > strftime('%Y-%m-%d %H:%M:%f', @bound)
 			THEN 'y'
 		ELSE 'n'
 	END,
 	CASE
 		WHEN [j].[Date] IS NULL THEN 'y'
-		WHEN strftime('%Y-%m-%d %H:%M:%f', [j].[Date]) < strftime('%Y-%m-%d %H:%M:%f', '2000-01-01 00:00:00.000')
+		WHEN strftime('%Y-%m-%d %H:%M:%f', [j].[Date]) < strftime('%Y-%m-%d %H:%M:%f', @bound)
 			THEN 'y'
 		ELSE 'n'
 	END,
