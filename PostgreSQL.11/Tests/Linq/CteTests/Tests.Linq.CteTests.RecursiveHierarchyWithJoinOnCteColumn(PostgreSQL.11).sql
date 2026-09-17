@@ -1,18 +1,18 @@
 ﻿-- PostgreSQL.11 PostgreSQL
-WITH RECURSIVE cte ("ParentID", "ChildID", "Level_1")
+WITH RECURSIVE cte ("Level_1", "ParentID", "ChildID")
 AS
 (
 	SELECT
+		0::Int,
 		p."ParentID",
-		NULL::Int,
-		0::Int
+		NULL::Int
 	FROM
 		"Parent" p
 	UNION ALL
 	SELECT
+		ct."Level_1" + 1,
 		c_1."ParentID",
-		c_1."ChildID",
-		ct."Level_1" + 1
+		c_1."ChildID"
 	FROM
 		"Child" c_1
 			INNER JOIN cte ct ON ct."ParentID" = c_1."ParentID"
