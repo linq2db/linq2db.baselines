@@ -1,0 +1,37 @@
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @Id  -- Int32
+SET     @Id = 1
+DECLARE @InSeconds  -- Int64
+SET     @InSeconds = 5400
+DECLARE @InTicks  -- Int64
+SET     @InTicks = 54000000000
+DECLARE @Undeclared  -- Int64
+SET     @Undeclared = 54000000000
+DECLARE @UndeclaredSeconds  -- Int64
+SET     @UndeclaredSeconds = 5400
+
+INSERT INTO [DurationRow]
+(
+	[Id],
+	[InSeconds],
+	[InTicks],
+	[Undeclared],
+	[UndeclaredSeconds]
+)
+VALUES
+(
+	@Id,
+	@InSeconds,
+	@InTicks,
+	@Undeclared,
+	@UndeclaredSeconds
+)
+
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+SELECT
+	[r].[Id]
+FROM
+	[DurationRow] [r]
+WHERE
+	strftime('%Y-%m-%d %H:%M:%f', strftime('%Y-%m-%d %H:%M:%f', '2026-03-01 00:00:00.000', CAST(CAST(([r].[InSeconds] * 10000000) / 10000 AS Float) / 1000 AS NVarChar(22)) || ' Second')) > strftime('%Y-%m-%d %H:%M:%f', '2026-03-01 01:00:00.000')
+

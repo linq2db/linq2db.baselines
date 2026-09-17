@@ -2,7 +2,7 @@
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @StartedOn  -- DateTimeOffset
-SET     @StartedOn = '2026-01-01 10:00:00.000+00:00'
+SET     @StartedOn = '2026-01-01 10:00:00+00:00'
 DECLARE @FinishedOn  -- DateTimeOffset
 SET     @FinishedOn = '2026-01-03 15:04:05.006+02:00'
 
