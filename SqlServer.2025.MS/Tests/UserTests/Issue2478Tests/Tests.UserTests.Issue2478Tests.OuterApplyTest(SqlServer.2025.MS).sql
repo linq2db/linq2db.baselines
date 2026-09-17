@@ -1,7 +1,7 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
 SELECT
 	[p].[ParentID],
-	IIF([c_2].[Count_1] IS NULL, 0, Coalesce([c_2].[Count_1], 0))
+	IIF([c_2].[Count_1] IS NULL, 0, [c_2].[Count_1])
 FROM
 	[Parent] [p]
 		OUTER APPLY (
