@@ -1,5 +1,5 @@
 ﻿Parameters:
-@ef_filter__p1='?' (DbType = Boolean), @ef_filter__p5='?' (DbType = Boolean), @ef_filter__p7='?' (DbType = Boolean)
+@ef_filter__p1='?' (DbType = Boolean), @ef_filter__p5='?' (DbType = Boolean)
 
 SELECT "p"."ProductID", "p"."CategoryID", "p"."Discontinued", "p"."IsDeleted", "p"."ProductName", "p"."QuantityPerUnit", "p"."ReorderLevel", "p"."SupplierID", "p"."UnitPrice", "p"."UnitsInStock", "p"."UnitsOnOrder", "p1"."ProductID", "p1"."CategoryID", "p1"."Discontinued", "p1"."IsDeleted", "p1"."ProductName", "p1"."QuantityPerUnit", "p1"."ReorderLevel", "p1"."SupplierID", "p1"."UnitPrice", "p1"."UnitsInStock", "p1"."UnitsOnOrder"
 FROM "Products" AS "p"
@@ -9,12 +9,12 @@ CROSS JOIN (
     WHERE (@ef_filter__p1 OR "p0"."ProductID" > 2) AND (@ef_filter__p1 OR NOT ("p0"."Discontinued")) AND (@ef_filter__p5 OR NOT ("p0"."IsDeleted") OR NOT ("p0"."IsDeleted")) AND EXISTS (
         SELECT 1
         FROM "Order Details" AS "o0"
-        WHERE (@ef_filter__p7 OR NOT ("o0"."IsDeleted") OR NOT ("o0"."IsDeleted")) AND "p0"."ProductID" = "o0"."ProductID")
+        WHERE (@ef_filter__p5 OR NOT ("o0"."IsDeleted") OR NOT ("o0"."IsDeleted")) AND "p0"."ProductID" = "o0"."ProductID")
 ) AS "p1"
 WHERE (@ef_filter__p1 OR "p"."ProductID" > 2) AND (@ef_filter__p1 OR NOT ("p"."Discontinued")) AND (@ef_filter__p5 OR NOT ("p"."IsDeleted") OR NOT ("p"."IsDeleted")) AND EXISTS (
     SELECT 1
     FROM "Order Details" AS "o"
-    WHERE (@ef_filter__p7 OR NOT ("o"."IsDeleted") OR NOT ("o"."IsDeleted")) AND "p"."ProductID" = "o"."ProductID") AND "p"."ProductID" = "p1"."ProductID"
+    WHERE (@ef_filter__p5 OR NOT ("o"."IsDeleted") OR NOT ("o"."IsDeleted")) AND "p"."ProductID" = "o"."ProductID") AND "p"."ProductID" = "p1"."ProductID"
 ORDER BY "p"."ProductID"
 
 

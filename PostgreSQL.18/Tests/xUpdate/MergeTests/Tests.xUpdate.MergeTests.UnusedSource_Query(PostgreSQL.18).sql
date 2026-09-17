@@ -1,0 +1,32 @@
+﻿-- PostgreSQL.18 PostgreSQL12
+MERGE INTO "UnusedSourceTable" "Target"
+USING (
+	SELECT
+		*
+	FROM
+		"UnusedSourceTable" "Target_1"
+) "Source"
+ON ("Target"."Value" = 5)
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	"Id",
+	"Value"
+)
+VALUES
+(
+	2,
+	5
+)
+
+-- PostgreSQL.18 PostgreSQL12
+SELECT
+	r."Id",
+	r."Value"
+FROM
+	"UnusedSourceTable" r
+WHERE
+	r."Id" <> 1
+LIMIT 2
+
