@@ -1,8 +1,8 @@
 ﻿-- SqlCe
 SELECT
 	SUM([grp_1].[MoneyValue]),
-	DatePart(year, [grp_1].[c1]),
-	DatePart(month, [grp_1].[c1])
+	DatePart(year, Coalesce([grp_1].[c1], '0001-01-01 00:00:00.000')),
+	DatePart(month, Coalesce([grp_1].[c1], '0001-01-01 00:00:00.000'))
 FROM
 	(
 		SELECT
@@ -17,8 +17,8 @@ GROUP BY
 -- SqlCe
 SELECT
 	SUM([grp_1].[MoneyValue]),
-	DatePart(year, [grp_1].[c1]),
-	DatePart(month, [grp_1].[c1])
+	DatePart(year, Coalesce([grp_1].[c1], '0001-01-01 00:00:00.000')),
+	DatePart(month, Coalesce([grp_1].[c1], '0001-01-01 00:00:00.000'))
 FROM
 	(
 		SELECT
