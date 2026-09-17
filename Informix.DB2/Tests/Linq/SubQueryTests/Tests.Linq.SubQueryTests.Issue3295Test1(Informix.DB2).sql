@@ -10,7 +10,7 @@ FROM
 				ELSE 'abc'
 			END as StatusName,
 			CASE
-				WHEN t1.PersonID IS NOT NULL THEN Nvl(t1.PersonID, 0)
+				WHEN t1.PersonID IS NOT NULL THEN t1.PersonID
 				ELSE x.PersonID
 			END as Id
 		FROM
