@@ -2,9 +2,9 @@
 WITH [CTE]
 (
 	[Level_1],
+	[Label],
 	[Id],
 	[ParentId],
-	[Label],
 	[Entity_Id],
 	[Entity_Label],
 	[Entity_ParentId]
@@ -13,9 +13,9 @@ AS
 (
 	SELECT
 		CAST(0 AS Int),
+		[c_1].[Label],
 		[c_1].[Id],
 		[c_1].[ParentId],
-		[c_1].[Label],
 		[c_1].[Id],
 		[c_1].[Label],
 		[c_1].[ParentId]
@@ -26,9 +26,9 @@ AS
 	UNION ALL
 	SELECT
 		[r].[Level_1] + 1,
+		Coalesce([r].[Label], N'') + N'/' + Coalesce([t1].[Label], N''),
 		[t1].[Id],
 		[t1].[ParentId],
-		Coalesce([r].[Label], N'') + N'/' + Coalesce([t1].[Label], N''),
 		[t1].[Id],
 		[t1].[Label],
 		[t1].[ParentId]
