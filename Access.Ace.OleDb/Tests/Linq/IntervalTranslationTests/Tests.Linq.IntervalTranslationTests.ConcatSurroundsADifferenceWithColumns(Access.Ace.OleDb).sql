@@ -45,8 +45,8 @@ FROM
 				SELECT
 					1 as [Source],
 					[r].[Budget] as [Duration],
-					IIF(False, #0001-01-01#, NULL) as [Duration_1],
-					IIF(False, #0001-01-01#, NULL) as [Duration_2]
+					IIF(False, #0100-01-01#, NULL) as [Duration_1],
+					IIF(False, #0100-01-01#, NULL) as [Duration_2]
 				FROM
 					[BudgetedTaskRow] [r]
 				UNION ALL
@@ -63,8 +63,8 @@ FROM
 			3 as [Source],
 			IIF(False, False, NULL) as [Duration],
 			IIF(False, 0, NULL) as [Duration_1],
-			IIF(False, #0001-01-01#, NULL) as [Duration_2],
-			IIF(False, #0001-01-01#, NULL) as [Duration_3],
+			IIF(False, #0100-01-01#, NULL) as [Duration_2],
+			IIF(False, #0100-01-01#, NULL) as [Duration_3],
 			[r_2].[Budget] as [Duration_4]
 		FROM
 			[BudgetedTaskRow] [r_2]
