@@ -2,7 +2,7 @@
 SELECT
 	[p].[ParentID],
 	[c_2].[Count_1],
-	Coalesce([c_2].[Sum_1], 0)
+	[c_2].[Sum_1]
 FROM
 	[Parent] [p]
 		CROSS APPLY (
