@@ -10,7 +10,7 @@ FROM
 				ELSE 'abc'u
 			END as StatusName,
 			CASE
-				WHEN t2.PersonID IS NOT NULL THEN Coalesce(t2.PersonID, 0)
+				WHEN t2.PersonID IS NOT NULL THEN t2.PersonID
 				ELSE x.PersonID
 			END as Id
 		FROM
