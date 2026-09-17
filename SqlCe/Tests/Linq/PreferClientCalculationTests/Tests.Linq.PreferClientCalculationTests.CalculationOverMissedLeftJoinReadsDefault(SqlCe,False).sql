@@ -1,4 +1,7 @@
 ﻿-- SqlCe
+DECLARE @bound DateTime
+SET     @bound = '2000-01-01 00:00:00.000'
+
 SELECT
 	[e].[Id],
 	Coalesce([j].[Value1], 0) + 1,
@@ -13,12 +16,12 @@ SELECT
 	END,
 	CASE
 		WHEN [j].[Date] IS NULL THEN 'n'
-		WHEN [j].[Date] > CAST('2000-01-01' AS DateTime) THEN 'y'
+		WHEN [j].[Date] > @bound THEN 'y'
 		ELSE 'n'
 	END,
 	CASE
 		WHEN [j].[Date] IS NULL THEN 'y'
-		WHEN [j].[Date] < CAST('2000-01-01' AS DateTime) THEN 'y'
+		WHEN [j].[Date] < @bound THEN 'y'
 		ELSE 'n'
 	END,
 	CASE

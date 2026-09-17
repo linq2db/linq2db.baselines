@@ -5,7 +5,6 @@ SELECT
 	Abs(Coalesce([j].[Value1], 0) - 1) as [c1],
 	[j].[Date] as [Date_1],
 	DatePart(year, [j].[Date]) as [Year_1],
-	CAST('2000-01-01' AS DateTime) as [c2],
 	[e].[Date] as [Date_2]
 FROM
 	[MissedJoinEntity] [e]
