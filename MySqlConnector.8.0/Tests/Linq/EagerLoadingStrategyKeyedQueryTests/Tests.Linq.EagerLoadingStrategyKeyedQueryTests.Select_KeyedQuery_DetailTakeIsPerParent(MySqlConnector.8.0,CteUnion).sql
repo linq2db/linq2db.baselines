@@ -1,0 +1,89 @@
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+WITH `CTE_1` (`Id`, `field`)
+AS
+(
+	SELECT
+		`c_1`.`Id`,
+		ROW_NUMBER() OVER (ORDER BY `c_1`.`Id`)
+	FROM
+		`Company` `c_1`
+	ORDER BY
+		`c_1`.`Id`
+),
+`CTE_2`
+(
+	`Detail_Id`,
+	`Detail_CompanyId`,
+	`Detail_Name`,
+	`Detail_IsActive`,
+	`field`,
+	`Key_1`
+)
+AS
+(
+	SELECT
+		`d_1`.`Id`,
+		`d_1`.`CompanyId`,
+		`d_1`.`Name`,
+		`d_1`.`IsActive`,
+		ROW_NUMBER() OVER (ORDER BY `d_1`.`Id`),
+		`kd`.`v0Id`
+	FROM
+		(
+			SELECT DISTINCT
+				`t1`.`Id` as `v0Id`
+			FROM
+				`CTE_1` `t1`
+		) `kd`
+			INNER JOIN LATERAL (
+				SELECT
+					`d`.`Id`,
+					`d`.`CompanyId`,
+					`d`.`Name`,
+					`d`.`IsActive`
+				FROM
+					`Department` `d`
+				WHERE
+					`d`.`CompanyId` = `kd`.`v0Id`
+				ORDER BY
+					`d`.`Id`
+				LIMIT 2
+			) `d_1` ON 1=1
+)
+SELECT
+	`t4`.`Item1`,
+	`t4`.`Item2`,
+	`t4`.`Item3`,
+	`t4`.`Item4`,
+	`t4`.`Item5`,
+	`t4`.`Item6`,
+	`t4`.`Item7`
+FROM
+	(
+		SELECT
+			CAST(0 AS SIGNED) as `Item1`,
+			`t2`.`field` as `Item3`,
+			`t2`.`Key_1` as `Item2`,
+			`t2`.`Detail_Id` as `Item4`,
+			`t2`.`Detail_CompanyId` as `Item5`,
+			`t2`.`Detail_Name` as `Item6`,
+			`t2`.`Detail_IsActive` as `Item7`
+		FROM
+			`CTE_2` `t2`
+		UNION ALL
+		SELECT
+			CAST(1 AS SIGNED) as `Item1`,
+			`t3`.`field` as `Item3`,
+			`t3`.`Id` as `Item2`,
+			`t3`.`Id` as `Item4`,
+			CAST(NULL AS SIGNED) as `Item5`,
+			CAST(NULL AS CHAR(255)) as `Item6`,
+			CAST(NULL AS SIGNED) as `Item7`
+		FROM
+			`CTE_1` `t3`
+	) `t4`
+ORDER BY
+	`t4`.`Item1`,
+	`t4`.`Item3`,
+	`t4`.`Item2`
+
