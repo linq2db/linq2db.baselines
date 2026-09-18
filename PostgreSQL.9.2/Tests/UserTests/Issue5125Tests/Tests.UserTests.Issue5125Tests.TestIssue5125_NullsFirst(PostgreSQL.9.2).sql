@@ -15,8 +15,8 @@ FROM
 	(
 		SELECT
 			x."Id",
-			x."StrVal",
 			Length(x."StrVal") as "Length_1",
+			x."StrVal",
 			x."IntVal"
 		FROM
 			"InterpolatedTest5125" x

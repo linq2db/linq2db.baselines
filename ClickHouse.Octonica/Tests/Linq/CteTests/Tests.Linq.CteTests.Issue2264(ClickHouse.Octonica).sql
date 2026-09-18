@@ -3,9 +3,9 @@ WITH RECURSIVE CTE AS
 (
 	SELECT
 		toInt32(0) as Level_1,
+		c_1.Label as Label,
 		c_1.Id as Id,
 		c_1.ParentId as ParentId,
-		c_1.Label as Label,
 		c_1.Id as Entity_Id,
 		c_1.Label as Entity_Label,
 		c_1.ParentId as Entity_ParentId
@@ -16,9 +16,9 @@ WITH RECURSIVE CTE AS
 	UNION ALL
 	SELECT
 		r.Level_1 + 1 as Level_1,
+		concat(Coalesce(r.Label, ''), '/', Coalesce(t1.Label, '')) as Label,
 		t1.Id as Id,
 		t1.ParentId as ParentId,
-		concat(Coalesce(r.Label, ''), '/', Coalesce(t1.Label, '')) as Label,
 		t1.Id as Entity_Id,
 		t1.Label as Entity_Label,
 		t1.ParentId as Entity_ParentId

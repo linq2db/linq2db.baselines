@@ -37,8 +37,8 @@ FROM
 		SELECT
 			1 as [Source],
 			[r].[Budget] as [First_1],
-			IIF(False, #0001-01-01#, NULL) as [First_2],
-			IIF(False, #0001-01-01#, NULL) as [First_3],
+			IIF(False, #0100-01-01#, NULL) as [First_2],
+			IIF(False, #0100-01-01#, NULL) as [First_3],
 			[r].[FinishedOn] as [Second_1],
 			[r].[StartedOn] as [Second_2],
 			IIF(False, 0, NULL) as [Second_3]
@@ -50,8 +50,8 @@ FROM
 			IIF(False, 0, NULL) as [First_1],
 			[r_1].[FinishedOn] as [First_2],
 			[r_1].[StartedOn] as [First_3],
-			IIF(False, #0001-01-01#, NULL) as [Second_1],
-			IIF(False, #0001-01-01#, NULL) as [Second_2],
+			IIF(False, #0100-01-01#, NULL) as [Second_1],
+			IIF(False, #0100-01-01#, NULL) as [Second_2],
 			[r_1].[Budget] as [Second_3]
 		FROM
 			[BudgetedTaskRow] [r_1]

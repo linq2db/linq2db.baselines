@@ -14,7 +14,7 @@ UNION ALL
 SELECT
 	IIF(False, 0, NULL),
 	IIF(False, 0, NULL),
-	IIF(False, #0001-01-01#, NULL),
+	IIF(False, #0100-01-01#, NULL),
 	IIF(False, False, NULL),
 	IIF(False, {guid {00000000-0000-0000-0000-000000000000}}, NULL),
 	NULL,

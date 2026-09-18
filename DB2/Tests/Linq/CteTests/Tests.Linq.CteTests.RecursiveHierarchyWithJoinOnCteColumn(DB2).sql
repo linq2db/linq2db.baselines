@@ -1,18 +1,18 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-WITH "cte" ("ParentID", "ChildID", "Level_1")
+WITH "cte" ("Level_1", "ParentID", "ChildID")
 AS
 (
 	SELECT
+		CAST(0 AS Int),
 		"p"."ParentID",
-		CAST(NULL AS Int),
-		CAST(0 AS Int)
+		CAST(NULL AS Int)
 	FROM
 		"Parent" "p"
 	UNION ALL
 	SELECT
+		"ct"."Level_1" + 1,
 		"c_1"."ParentID",
-		"c_1"."ChildID",
-		"ct"."Level_1" + 1
+		"c_1"."ChildID"
 	FROM
 		"Child" "c_1",
 		"cte" "ct"

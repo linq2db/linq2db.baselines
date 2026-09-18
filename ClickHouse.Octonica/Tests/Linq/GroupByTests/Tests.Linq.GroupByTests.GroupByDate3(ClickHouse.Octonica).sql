@@ -1,8 +1,8 @@
 ﻿-- ClickHouse.Octonica ClickHouse
 SELECT
 	SUM(grp_1.MoneyValue),
-	toYear(grp_1.c1),
-	toMonth(grp_1.c1)
+	toYear(Coalesce(grp_1.c1, toDateTime64('0001-01-01 00:00:00.0000000', 7))),
+	toMonth(Coalesce(grp_1.c1, toDateTime64('0001-01-01 00:00:00.0000000', 7)))
 FROM
 	(
 		SELECT
@@ -17,8 +17,8 @@ GROUP BY
 -- ClickHouse.Octonica ClickHouse
 SELECT
 	SUM(grp_1.MoneyValue),
-	toYear(grp_1.c1),
-	toMonth(grp_1.c1)
+	toYear(Coalesce(grp_1.c1, toDateTime64('0001-01-01 00:00:00.0000000', 7))),
+	toMonth(Coalesce(grp_1.c1, toDateTime64('0001-01-01 00:00:00.0000000', 7)))
 FROM
 	(
 		SELECT

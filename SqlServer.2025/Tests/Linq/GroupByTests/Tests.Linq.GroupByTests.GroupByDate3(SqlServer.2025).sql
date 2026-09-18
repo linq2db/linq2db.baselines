@@ -1,8 +1,8 @@
 ﻿-- SqlServer.2025
 SELECT
 	SUM([grp_1].[MoneyValue]),
-	DatePart(year, [grp_1].[c1]),
-	DatePart(month, [grp_1].[c1])
+	DatePart(year, Coalesce([grp_1].[c1], DATETIME2FROMPARTS(1, 1, 1, 0, 0, 0, 0, 7))),
+	DatePart(month, Coalesce([grp_1].[c1], DATETIME2FROMPARTS(1, 1, 1, 0, 0, 0, 0, 7)))
 FROM
 	(
 		SELECT
@@ -17,8 +17,8 @@ GROUP BY
 -- SqlServer.2025
 SELECT
 	SUM([grp_1].[MoneyValue]),
-	DatePart(year, [grp_1].[c1]),
-	DatePart(month, [grp_1].[c1])
+	DatePart(year, Coalesce([grp_1].[c1], DATETIME2FROMPARTS(1, 1, 1, 0, 0, 0, 0, 7))),
+	DatePart(month, Coalesce([grp_1].[c1], DATETIME2FROMPARTS(1, 1, 1, 0, 0, 0, 0, 7)))
 FROM
 	(
 		SELECT

@@ -1,8 +1,8 @@
 ﻿-- SqlServer.2005
 SELECT
 	SUM([grp_1].[MoneyValue]),
-	DatePart(year, [grp_1].[c1]),
-	DatePart(month, [grp_1].[c1])
+	DatePart(year, Coalesce([grp_1].[c1], CAST('1753-01-01T00:00:00.000' AS DATETIME))),
+	DatePart(month, Coalesce([grp_1].[c1], CAST('1753-01-01T00:00:00.000' AS DATETIME)))
 FROM
 	(
 		SELECT
@@ -17,8 +17,8 @@ GROUP BY
 -- SqlServer.2005
 SELECT
 	SUM([grp_1].[MoneyValue]),
-	DatePart(year, [grp_1].[c1]),
-	DatePart(month, [grp_1].[c1])
+	DatePart(year, Coalesce([grp_1].[c1], CAST('1753-01-01T00:00:00.000' AS DATETIME))),
+	DatePart(month, Coalesce([grp_1].[c1], CAST('1753-01-01T00:00:00.000' AS DATETIME)))
 FROM
 	(
 		SELECT
