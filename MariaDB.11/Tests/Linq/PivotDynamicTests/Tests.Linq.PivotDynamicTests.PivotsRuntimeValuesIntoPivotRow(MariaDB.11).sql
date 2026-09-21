@@ -3,6 +3,8 @@ SELECT DISTINCT
 	`x`.`Year`
 FROM
 	`Sales` `x`
+ORDER BY
+	`x`.`Year`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 SELECT

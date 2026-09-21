@@ -3,6 +3,8 @@ SELECT DISTINCT
 	`x`.`Year`
 FROM
 	`Sales` `x`
+ORDER BY
+	`x`.`Year`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 SELECT
