@@ -3,6 +3,8 @@ SELECT DISTINCT
 	x."Year"
 FROM
 	"Sales" x
+ORDER BY
+	x."Year"
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
