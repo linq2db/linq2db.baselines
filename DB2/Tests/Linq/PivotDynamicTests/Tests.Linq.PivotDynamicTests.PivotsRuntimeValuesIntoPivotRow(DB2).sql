@@ -3,6 +3,8 @@ SELECT DISTINCT
 	"x"."Year"
 FROM
 	"Sales" "x"
+ORDER BY
+	"x"."Year"
 
 -- DB2 DB2.LUW DB2LUW
 SELECT

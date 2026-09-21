@@ -3,6 +3,8 @@ SELECT DISTINCT
 	x."Year"
 FROM
 	Sales x
+ORDER BY
+	x."Year"
 
 -- Informix.DB2 Informix
 SELECT
