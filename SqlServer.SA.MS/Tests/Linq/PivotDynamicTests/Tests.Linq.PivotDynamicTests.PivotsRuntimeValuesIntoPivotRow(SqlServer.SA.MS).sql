@@ -3,6 +3,8 @@ SELECT DISTINCT
 	[x].[Year]
 FROM
 	[Sales] [x]
+ORDER BY
+	[x].[Year]
 
 -- SqlServer.SA.MS SqlServer.2019
 SELECT
