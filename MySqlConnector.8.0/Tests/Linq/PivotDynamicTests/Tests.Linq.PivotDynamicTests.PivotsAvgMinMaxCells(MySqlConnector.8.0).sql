@@ -1,0 +1,20 @@
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+SELECT
+	`g_1`.`Category`,
+	AVG(CASE
+		WHEN `g_1`.`Year` = 2000 THEN `g_1`.`Amount`
+		ELSE NULL
+	END),
+	MIN(CASE
+		WHEN `g_1`.`Year` = 2000 THEN `g_1`.`Amount`
+		ELSE NULL
+	END),
+	MAX(CASE
+		WHEN `g_1`.`Year` = 2000 THEN `g_1`.`Amount`
+		ELSE NULL
+	END)
+FROM
+	`CategorySales` `g_1`
+GROUP BY
+	`g_1`.`Category`
+
