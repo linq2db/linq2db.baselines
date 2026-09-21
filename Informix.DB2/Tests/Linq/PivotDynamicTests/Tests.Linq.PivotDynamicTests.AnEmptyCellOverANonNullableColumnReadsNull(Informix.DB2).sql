@@ -1,4 +1,4 @@
-﻿-- DuckDB
+﻿-- Informix.DB2 Informix
 SELECT
 	g_1.Category,
 	SUM(CASE
