@@ -1,11 +1,47 @@
 ﻿-- Oracle.11.Managed Oracle11
 SELECT
 	t1."Id",
-	t1."Name",
-	t1."Value"
+	t1."Quarter",
+	t1."Amount"
 FROM
-	"QuarterlySales" UNPIVOT ("Value" FOR "Name" IN (Q1, Q2, Q3, Q4)) t1
+	(
+		SELECT
+			row_1."Id",
+			CAST('Q1' AS VarChar(255)) as "Quarter",
+			row_1.Q1 as "Amount"
+		FROM
+			"QuarterlySales" row_1
+		WHERE
+			row_1.Q1 IS NOT NULL
+		UNION ALL
+		SELECT
+			row_2."Id",
+			CAST('Q2' AS VarChar(255)) as "Quarter",
+			row_2.Q2 as "Amount"
+		FROM
+			"QuarterlySales" row_2
+		WHERE
+			row_2.Q2 IS NOT NULL
+		UNION ALL
+		SELECT
+			row_3."Id",
+			CAST('Q3' AS VarChar(255)) as "Quarter",
+			row_3.Q3 as "Amount"
+		FROM
+			"QuarterlySales" row_3
+		WHERE
+			row_3.Q3 IS NOT NULL
+		UNION ALL
+		SELECT
+			row_4."Id",
+			CAST('Q4' AS VarChar(255)) as "Quarter",
+			row_4.Q4 as "Amount"
+		FROM
+			"QuarterlySales" row_4
+		WHERE
+			row_4.Q4 IS NOT NULL
+	) t1
 ORDER BY
 	t1."Id",
-	t1."Name"
+	t1."Quarter"
 
