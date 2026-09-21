@@ -3,6 +3,8 @@ SELECT DISTINCT
 	[x].[Year]
 FROM
 	[Sales] [x]
+ORDER BY
+	[x].[Year]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 SELECT
