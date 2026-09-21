@@ -1,0 +1,20 @@
+﻿-- ClickHouse.Octonica ClickHouse
+SELECT
+	g_1.Category,
+	avgOrNull(CASE
+		WHEN g_1.Year = 2000 THEN g_1.Amount
+		ELSE NULL
+	END),
+	minOrNull(CASE
+		WHEN g_1.Year = 2000 THEN g_1.Amount
+		ELSE NULL
+	END),
+	maxOrNull(CASE
+		WHEN g_1.Year = 2000 THEN g_1.Amount
+		ELSE NULL
+	END)
+FROM
+	CategorySales g_1
+GROUP BY
+	g_1.Category
+
