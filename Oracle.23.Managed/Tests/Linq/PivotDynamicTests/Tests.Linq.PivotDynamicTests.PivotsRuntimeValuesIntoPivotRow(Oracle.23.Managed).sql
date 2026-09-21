@@ -3,6 +3,8 @@ SELECT DISTINCT
 	x."Year"
 FROM
 	"Sales" x
+ORDER BY
+	x."Year"
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 SELECT
