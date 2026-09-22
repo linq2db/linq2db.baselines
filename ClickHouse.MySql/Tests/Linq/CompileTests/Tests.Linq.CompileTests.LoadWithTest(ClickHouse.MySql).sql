@@ -10,7 +10,7 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID = 1 AND now() > toDateTime64('2020-02-29 00:00:00.0000000', 7)
+			p.ParentID = 1 AND now() > toDateTime('2020-02-29 00:00:00')
 	) m_1
 		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
@@ -21,7 +21,7 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID = 1 AND now() > toDateTime64('2020-02-29 00:00:00.0000000', 7)
+	p.ParentID = 1 AND now() > toDateTime('2020-02-29 00:00:00')
 
 -- ClickHouse.MySql ClickHouse
 SELECT
@@ -35,7 +35,7 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID = 2 AND now() > toDateTime64('2020-02-29 00:00:00.0000000', 7)
+			p.ParentID = 2 AND now() > toDateTime('2020-02-29 00:00:00')
 	) m_1
 		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
@@ -46,5 +46,5 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID = 2 AND now() > toDateTime64('2020-02-29 00:00:00.0000000', 7)
+	p.ParentID = 2 AND now() > toDateTime('2020-02-29 00:00:00')
 
