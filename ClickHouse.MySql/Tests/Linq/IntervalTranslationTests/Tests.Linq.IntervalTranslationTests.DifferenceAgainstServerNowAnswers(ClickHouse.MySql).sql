@@ -8,8 +8,8 @@ INSERT INTO EventRow
 VALUES
 (
 	1,
-	toDateTime64('2026-09-20 22:34:49.9505914', 7),
-	toDateTime64('2026-09-20 22:34:49.9505914', 7)
+	toDateTime64('2026-09-21 13:48:12.4720865', 7),
+	toDateTime64('2026-09-21 13:48:12.4720865', 7)
 )
 
 -- ClickHouse.MySql ClickHouse

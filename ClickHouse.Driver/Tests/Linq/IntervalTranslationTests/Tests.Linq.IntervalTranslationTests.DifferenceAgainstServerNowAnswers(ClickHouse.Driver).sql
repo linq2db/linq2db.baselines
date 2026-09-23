@@ -8,8 +8,8 @@ INSERT INTO EventRow
 VALUES
 (
 	1,
-	toDateTime64('2026-09-20 22:35:00.5904988', 7),
-	toDateTime64('2026-09-20 22:35:00.5904988', 7)
+	toDateTime64('2026-09-21 13:48:14.7248233', 7),
+	toDateTime64('2026-09-21 13:48:14.7248233', 7)
 )
 
 -- ClickHouse.Driver ClickHouse
