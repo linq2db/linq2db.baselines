@@ -1,5 +1,5 @@
 ﻿-- ClickHouse.MySql ClickHouse
-INSERT INTO ClickHouseDateShapesRow
+INSERT INTO CoarseDateShapesRow
 (
 	Id,
 	Value,
@@ -18,6 +18,6 @@ VALUES
 SELECT
 	toDateTime(fromUnixTimestamp64Nano(toUnixTimestamp64Nano(toDateTime64(r.Value, 7)) + toInt64(toFloat64(226000000))))
 FROM
-	ClickHouseDateShapesRow r
+	CoarseDateShapesRow r
 LIMIT 2
 

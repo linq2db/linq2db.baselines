@@ -16,14 +16,14 @@ VALUES
 
 -- ClickHouse.MySql ClickHouse
 SELECT
-	(toUnixTimestamp64Milli(toDateTime64(r.Value, 7)) % toInt64(1000) + 1000) % 1000
+	fromUnixTimestamp64Nano(toUnixTimestamp64Nano(toDateTime64(r.Day, 7)) + toInt64(226000000))
 FROM
 	CoarseDateShapesRow r
 LIMIT 2
 
 -- ClickHouse.MySql ClickHouse
 SELECT
-	(toUnixTimestamp64Milli(toDateTime64(r.Value, 7)) % toInt64(1000) + 1000) % 1000
+	fromUnixTimestamp64Nano(toUnixTimestamp64Nano(toDateTime64(r.Day, 7)) + toInt64(toFloat64(226000000)))
 FROM
 	CoarseDateShapesRow r
 LIMIT 2
