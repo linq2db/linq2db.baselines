@@ -1,5 +1,5 @@
 ﻿-- ClickHouse.Driver ClickHouse
-INSERT INTO ClickHouseDateShapesRow
+INSERT INTO CoarseDateShapesRow
 (
 	Id,
 	Value,
@@ -18,13 +18,13 @@ VALUES
 SELECT
 	(toUnixTimestamp64Milli(toDateTime64(r.Value, 7)) % toInt64(1000) + 1000) % 1000
 FROM
-	ClickHouseDateShapesRow r
+	CoarseDateShapesRow r
 LIMIT 2
 
 -- ClickHouse.Driver ClickHouse
 SELECT
 	(toUnixTimestamp64Milli(toDateTime64(r.Value, 7)) % toInt64(1000) + 1000) % 1000
 FROM
-	ClickHouseDateShapesRow r
+	CoarseDateShapesRow r
 LIMIT 2
 

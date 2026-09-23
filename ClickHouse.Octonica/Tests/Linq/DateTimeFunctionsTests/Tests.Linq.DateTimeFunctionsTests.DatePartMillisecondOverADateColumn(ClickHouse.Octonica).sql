@@ -16,14 +16,14 @@ VALUES
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
-	(toUnixTimestamp64Milli(toDateTime64(r.Value, 7)) % toInt64(1000) + 1000) % 1000
+	(toUnixTimestamp64Milli(toDateTime64(r.Day, 7)) % toInt64(1000) + 1000) % 1000
 FROM
 	CoarseDateShapesRow r
 LIMIT 2
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
-	(toUnixTimestamp64Milli(toDateTime64(r.Value, 7)) % toInt64(1000) + 1000) % 1000
+	(toUnixTimestamp64Milli(toDateTime64(r.Day, 7)) % toInt64(1000) + 1000) % 1000
 FROM
 	CoarseDateShapesRow r
 LIMIT 2
