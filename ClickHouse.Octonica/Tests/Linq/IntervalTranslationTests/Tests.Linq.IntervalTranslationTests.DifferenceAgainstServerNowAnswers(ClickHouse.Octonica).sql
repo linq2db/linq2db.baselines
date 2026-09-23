@@ -8,8 +8,8 @@ INSERT INTO EventRow
 VALUES
 (
 	1,
-	toDateTime64('2026-09-20 22:35:30.9261501', 7),
-	toDateTime64('2026-09-20 22:35:30.9261501', 7)
+	toDateTime64('2026-09-21 13:48:15.8365676', 7),
+	toDateTime64('2026-09-21 13:48:15.8365676', 7)
 )
 
 -- ClickHouse.Octonica ClickHouse

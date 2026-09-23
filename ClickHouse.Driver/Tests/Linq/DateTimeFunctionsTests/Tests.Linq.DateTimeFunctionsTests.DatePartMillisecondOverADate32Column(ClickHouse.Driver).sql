@@ -16,14 +16,14 @@ VALUES
 
 -- ClickHouse.Driver ClickHouse
 SELECT
-	(toUnixTimestamp64Milli(toDateTime64(r.Day, 7)) % 1000 + 1000) % 1000
+	(toUnixTimestamp64Milli(toDateTime64(r.Day, 7)) % toInt64(1000) + 1000) % 1000
 FROM
 	ClickHouseDateShapesRow r
 LIMIT 2
 
 -- ClickHouse.Driver ClickHouse
 SELECT
-	(toUnixTimestamp64Milli(toDateTime64(r.Day, 7)) % 1000 + 1000) % 1000
+	(toUnixTimestamp64Milli(toDateTime64(r.Day, 7)) % toInt64(1000) + 1000) % 1000
 FROM
 	ClickHouseDateShapesRow r
 LIMIT 2
