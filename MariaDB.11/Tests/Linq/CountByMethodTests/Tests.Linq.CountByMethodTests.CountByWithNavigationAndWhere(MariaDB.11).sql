@@ -7,12 +7,12 @@ FROM
 		INNER JOIN (
 			SELECT
 				COUNT(*) as `Value_1`,
-				`c_1`.`ParentID`
+				`c_1`.`ParentID` as `Key_1`
 			FROM
 				`Child` `c_1`
 			GROUP BY
 				`c_1`.`ParentID`
-		) `c_2` ON `p`.`ParentID` = `c_2`.`ParentID`
+		) `c_2` ON `p`.`ParentID` = `c_2`.`Key_1`
 WHERE
 	`c_2`.`Value_1` > 0
 

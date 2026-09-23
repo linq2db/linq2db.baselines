@@ -42,10 +42,10 @@ SELECT
 	[t].[DateTimeNullable] - @ts_5,
 	[t].[DateTime2] - @ts_6,
 	[t].[DateTime2Nullable] - @ts_7,
-	IIF(False, #0001-01-01#, NULL),
-	IIF(False, #0001-01-01#, NULL),
-	IIF(False, #0001-01-01#, NULL),
-	IIF(False, #0001-01-01#, NULL)
+	IIF(False, #0100-01-01#, NULL),
+	IIF(False, #0100-01-01#, NULL),
+	IIF(False, #0100-01-01#, NULL),
+	IIF(False, #0100-01-01#, NULL)
 FROM
 	[DateTypes] [t]
 UNION ALL
@@ -59,10 +59,10 @@ SELECT
 	[t_1].[DateTimeNullable] - @ts_13,
 	[t_1].[DateTime2] - @ts_14,
 	[t_1].[DateTime2Nullable] - @ts_15,
-	IIF(False, #0001-01-01#, NULL),
-	IIF(False, #0001-01-01#, NULL),
-	IIF(False, #0001-01-01#, NULL),
-	IIF(False, #0001-01-01#, NULL)
+	IIF(False, #0100-01-01#, NULL),
+	IIF(False, #0100-01-01#, NULL),
+	IIF(False, #0100-01-01#, NULL),
+	IIF(False, #0100-01-01#, NULL)
 FROM
 	[DateTypes] [t_1]
 

@@ -8,7 +8,7 @@ SELECT
 	r."CategoryId",
 	r."MaxCapacity",
 	r."Quantity",
-	r."MaxCapacity" - r."Quantity" as "FreeCapacity",
+	Coalesce(r."MaxCapacity", 0) - Coalesce(r."Quantity", 0) as "FreeCapacity",
 	COALESCE(CAST(vpcc."PeriodOrderLimit" AS Int),0) as "MaxCapacity_1",
 	vsopc."Quantity" as "Quantity_1",
 	COALESCE(CAST(vpcc."PeriodOrderLimit" AS Int),0) - vsopc."Quantity" as "FreeCapacity_1"
@@ -18,8 +18,8 @@ FROM
 			op."Id" as "OrderPeriodId",
 			vpc."CategoryId",
 			pop."ProductId",
-			COALESCE(CAST(pcc."PeriodOrderLimit" AS Int),0) as "MaxCapacity",
-			COALESCE(COALESCE(vsp."Quantity",0),0) as "Quantity"
+			COALESCE(CAST(Coalesce(pcc."PeriodOrderLimit", 0) AS Int),0) as "MaxCapacity",
+			COALESCE(Coalesce(COALESCE(vsp."Quantity",0), 0),0) as "Quantity"
 		FROM
 			"OrderPeriod" op
 				INNER JOIN "ProductsPerOrderPeriod" pop ON op."Id" = pop."OrderPeriodId"

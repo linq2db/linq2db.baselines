@@ -7,9 +7,9 @@ SELECT
 FROM
 	(
 		SELECT
+			a_Parent.ParentID as ParentID,
 			m_1.ChildID as ChildID,
-			ROW_NUMBER() OVER (ORDER BY m_1.ChildID DESC) - toInt64(1) as c1,
-			a_Parent.ParentID as ParentID
+			ROW_NUMBER() OVER (ORDER BY m_1.ChildID DESC) - toInt64(1) as c1
 		FROM
 			Child m_1
 				LEFT JOIN Parent a_Parent ON m_1.ParentID = a_Parent.ParentID
@@ -28,9 +28,9 @@ SELECT
 FROM
 	(
 		SELECT
+			a_Parent.ParentID as ParentID,
 			m_1.ChildID as ChildID,
-			ROW_NUMBER() OVER (ORDER BY m_1.ChildID DESC) - toInt64(1) as c1,
-			a_Parent.ParentID as ParentID
+			ROW_NUMBER() OVER (ORDER BY m_1.ChildID DESC) - toInt64(1) as c1
 		FROM
 			Child m_1
 				LEFT JOIN Parent a_Parent ON m_1.ParentID = a_Parent.ParentID

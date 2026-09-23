@@ -1,8 +1,8 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
 SELECT
 	SUM("grp_1"."MoneyValue"),
-	Year("grp_1"."c1"),
-	Month("grp_1"."c1")
+	Year(Coalesce("grp_1"."c1", TIMESTAMP '0001-01-01 00:00:00.0000000')),
+	Month(Coalesce("grp_1"."c1", TIMESTAMP '0001-01-01 00:00:00.0000000'))
 FROM
 	(
 		SELECT
@@ -17,8 +17,8 @@ GROUP BY
 -- SapHana.Odbc SapHanaOdbc
 SELECT
 	SUM("grp_1"."MoneyValue"),
-	Year("grp_1"."c1"),
-	Month("grp_1"."c1")
+	Year(Coalesce("grp_1"."c1", TIMESTAMP '0001-01-01 00:00:00.0000000')),
+	Month(Coalesce("grp_1"."c1", TIMESTAMP '0001-01-01 00:00:00.0000000'))
 FROM
 	(
 		SELECT

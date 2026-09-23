@@ -62,3 +62,19 @@ SELECT
 FROM
 	"ClientCalcEntity" "t1"
 
+-- DB2 DB2.LUW DB2LUW
+SELECT
+	"e"."Id",
+	"e"."Name"
+FROM
+	"ClientCalcEntity" "e"
+
+-- DB2 DB2.LUW DB2LUW
+SELECT
+	"t1"."Id",
+	"t1"."Value1",
+	"t1"."Value2",
+	"t1"."Name"
+FROM
+	"ClientCalcEntity" "t1"
+

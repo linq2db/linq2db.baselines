@@ -6,7 +6,7 @@ FROM
 
 -- SqlServer.2022.MS SqlServer.2022
 SELECT
-	CAST([r].[dt] AS Date)
+	CAST(Coalesce([r].[dt], DATETIMEOFFSETFROMPARTS(1, 1, 1, 0, 0, 0, 0, 0, 0, 7)) AS Date)
 FROM
 	[Issue1613] [r]
 

@@ -1,8 +1,8 @@
 ﻿-- Access.Ace.Odbc AccessODBC
 SELECT
 	SUM([grp_1].[MoneyValue]),
-	DatePart('yyyy', [grp_1].[c1]),
-	DatePart('m', [grp_1].[c1])
+	DatePart('yyyy', IIF([grp_1].[c1] IS NULL, #0100-01-01#, [grp_1].[c1])),
+	DatePart('m', IIF([grp_1].[c1] IS NULL, #0100-01-01#, [grp_1].[c1]))
 FROM
 	(
 		SELECT
@@ -17,8 +17,8 @@ GROUP BY
 -- Access.Ace.Odbc AccessODBC
 SELECT
 	SUM([grp_1].[MoneyValue]),
-	DatePart('yyyy', [grp_1].[c1]),
-	DatePart('m', [grp_1].[c1])
+	DatePart('yyyy', IIF([grp_1].[c1] IS NULL, #0100-01-01#, [grp_1].[c1])),
+	DatePart('m', IIF([grp_1].[c1] IS NULL, #0100-01-01#, [grp_1].[c1]))
 FROM
 	(
 		SELECT

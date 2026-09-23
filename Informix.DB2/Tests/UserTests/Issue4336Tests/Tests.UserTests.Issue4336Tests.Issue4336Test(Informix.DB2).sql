@@ -8,7 +8,7 @@ SELECT FIRST @take
 	r.CategoryId,
 	r.MaxCapacity,
 	r.Quantity,
-	r.MaxCapacity - r.Quantity,
+	Nvl(r.MaxCapacity, 0) - Nvl(r.Quantity, 0),
 	COALESCE(vpcc.PeriodOrderLimit,0),
 	vsopc.Quantity,
 	COALESCE(vpcc.PeriodOrderLimit,0) - vsopc.Quantity
@@ -18,8 +18,8 @@ FROM
 			op.Id as OrderPeriodId,
 			vpc.CategoryId,
 			pop.ProductId,
-			COALESCE(pcc.PeriodOrderLimit,0) as MaxCapacity,
-			COALESCE(COALESCE(vsp.Quantity,0),0) as Quantity
+			COALESCE(Nvl(pcc.PeriodOrderLimit, 0),0) as MaxCapacity,
+			COALESCE(Nvl(COALESCE(vsp.Quantity,0), 0),0) as Quantity
 		FROM
 			OrderPeriod op
 				INNER JOIN ProductsPerOrderPeriod pop ON op.Id = pop.OrderPeriodId
