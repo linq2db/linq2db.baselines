@@ -1,5 +1,5 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-INSERT INTO ClickHouseDateShapesRow
+INSERT INTO CoarseDateShapesRow
 (
 	Id,
 	Value,
@@ -18,13 +18,13 @@ VALUES
 SELECT
 	(toUnixTimestamp64Milli(r.Wide) % toInt64(1000) + 1000) % 1000
 FROM
-	ClickHouseDateShapesRow r
+	CoarseDateShapesRow r
 LIMIT 2
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
 	(toUnixTimestamp64Milli(r.Wide) % toInt64(1000) + 1000) % 1000
 FROM
-	ClickHouseDateShapesRow r
+	CoarseDateShapesRow r
 LIMIT 2
 
