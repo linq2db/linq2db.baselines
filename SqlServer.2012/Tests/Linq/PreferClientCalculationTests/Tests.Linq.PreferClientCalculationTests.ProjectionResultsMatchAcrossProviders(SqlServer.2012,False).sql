@@ -59,3 +59,19 @@ SELECT
 FROM
 	[ClientCalcEntity] [t1]
 
+-- SqlServer.2012
+SELECT
+	[e].[Id],
+	Coalesce([e].[Name], N'') + N' ' + Coalesce([e].[Name], N'')
+FROM
+	[ClientCalcEntity] [e]
+
+-- SqlServer.2012
+SELECT
+	[t1].[Id],
+	[t1].[Value1],
+	[t1].[Value2],
+	[t1].[Name]
+FROM
+	[ClientCalcEntity] [t1]
+
