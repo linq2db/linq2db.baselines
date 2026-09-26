@@ -1,0 +1,16 @@
+﻿-- DuckDB
+SELECT
+	0
+
+-- DuckDB
+SELECT
+	65535
+
+-- DuckDB
+SELECT
+	0
+
+-- DuckDB
+SELECT
+	65535
+

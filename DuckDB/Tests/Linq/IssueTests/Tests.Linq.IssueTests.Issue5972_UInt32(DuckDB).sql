@@ -1,0 +1,16 @@
+﻿-- DuckDB
+SELECT
+	0
+
+-- DuckDB
+SELECT
+	4294967295
+
+-- DuckDB
+SELECT
+	0
+
+-- DuckDB
+SELECT
+	4294967295
+
