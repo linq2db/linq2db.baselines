@@ -1,0 +1,16 @@
+﻿-- SqlCe
+SELECT
+	-32768
+
+-- SqlCe
+SELECT
+	32767
+
+-- SqlCe
+SELECT
+	-32768
+
+-- SqlCe
+SELECT
+	32767
+
