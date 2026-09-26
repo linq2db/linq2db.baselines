@@ -1,0 +1,16 @@
+﻿-- DB2 DB2.LUW DB2LUW
+DECLARE @min Integer(2) -- Int32
+SET     @min = 0
+
+SELECT
+	CAST(@min AS Int)
+FROM SYSIBM.SYSDUMMY1
+
+-- DB2 DB2.LUW DB2LUW
+DECLARE @max Integer(2) -- Int32
+SET     @max = 65535
+
+SELECT
+	CAST(@max AS Int)
+FROM SYSIBM.SYSDUMMY1
+
