@@ -1,0 +1,16 @@
+﻿-- SqlServer.Contained.MS SqlServer.2019
+SELECT
+	CAST(-9223372036854775808 AS BigInt)
+
+-- SqlServer.Contained.MS SqlServer.2019
+SELECT
+	CAST(9223372036854775807 AS BigInt)
+
+-- SqlServer.Contained.MS SqlServer.2019
+SELECT
+	CAST(-9223372036854775808 AS BigInt)
+
+-- SqlServer.Contained.MS SqlServer.2019
+SELECT
+	CAST(9223372036854775807 AS BigInt)
+

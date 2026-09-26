@@ -1,0 +1,16 @@
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+SELECT
+	CAST(0 AS UNSIGNED) as `c1`
+
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+SELECT
+	CAST(18446744073709551615 AS UNSIGNED) as `c1`
+
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+SELECT
+	CAST(0 AS UNSIGNED) as `c1`
+
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+SELECT
+	CAST(18446744073709551615 AS UNSIGNED) as `c1`
+
