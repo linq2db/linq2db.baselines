@@ -1,0 +1,16 @@
+﻿-- SQLite.MS SQLite
+SELECT
+	0
+
+-- SQLite.MS SQLite
+SELECT
+	4294967295
+
+-- SQLite.MS SQLite
+SELECT
+	0
+
+-- SQLite.MS SQLite
+SELECT
+	4294967295
+

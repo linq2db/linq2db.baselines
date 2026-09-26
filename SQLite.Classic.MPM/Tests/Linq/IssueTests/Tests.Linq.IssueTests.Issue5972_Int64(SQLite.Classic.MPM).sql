@@ -1,0 +1,16 @@
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
+SELECT
+	-9223372036854775808
+
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+SELECT
+	9223372036854775807
+
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+SELECT
+	-9223372036854775808
+
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+SELECT
+	9223372036854775807
+
