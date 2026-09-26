@@ -1,0 +1,14 @@
+﻿-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+DECLARE @min Smallint -- Int16
+SET     @min = -128
+
+SELECT
+	:min
+
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+DECLARE @max Smallint -- Int16
+SET     @max = 127
+
+SELECT
+	:max
+
