@@ -7,7 +7,7 @@ UPDATE
 SET
 	[Date] = CASE
 		WHEN [Issue5975Row].[Date] IS NOT NULL THEN @test
-		ELSE DATETIME('now', 'localtime')
+		ELSE strftime('%Y-%m-%d %H:%M:%f', [Issue5975Row].[Plain], '1 Day')
 	END
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
