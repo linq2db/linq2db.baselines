@@ -4,7 +4,7 @@ ALTER TABLE
 UPDATE
 	Date = CASE
 		WHEN Date IS NOT NULL THEN toDateTime64('2026-06-06 02:01:01.0000000', 7)
-		ELSE now()
+		ELSE addDays(Plain, 1)
 	END
 WHERE 1
 
