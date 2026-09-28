@@ -5,7 +5,7 @@ SET     @test = #2026-06-06 02:01:01#
 UPDATE
 	[Issue5975Row] [t1]
 SET
-	[t1].[Date] = IIF([t1].[Date] IS NOT NULL, @test, Now)
+	[t1].[Date] = IIF([t1].[Date] IS NOT NULL, @test, DateAdd('d', 1, [t1].[Plain]))
 
 -- Access.Ace.OleDb AccessOleDb
 SELECT
