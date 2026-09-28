@@ -7,7 +7,7 @@ UPDATE
 SET
 	[Date] = CASE
 		WHEN [Issue5975Row].[Date] IS NOT NULL THEN @test
-		ELSE GetDate()
+		ELSE DateAdd(day, 1, [Issue5975Row].[Plain])
 	END
 
 -- SqlCe
