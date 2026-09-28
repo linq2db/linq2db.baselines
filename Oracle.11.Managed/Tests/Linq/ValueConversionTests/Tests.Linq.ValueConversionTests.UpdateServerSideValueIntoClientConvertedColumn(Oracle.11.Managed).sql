@@ -7,7 +7,7 @@ UPDATE
 SET
 	"Date" = CASE
 		WHEN t1."Date" IS NOT NULL THEN :test
-		ELSE LOCALTIMESTAMP
+		ELSE t1."Plain" + INTERVAL '1' DAY
 	END
 
 -- Oracle.11.Managed Oracle11
