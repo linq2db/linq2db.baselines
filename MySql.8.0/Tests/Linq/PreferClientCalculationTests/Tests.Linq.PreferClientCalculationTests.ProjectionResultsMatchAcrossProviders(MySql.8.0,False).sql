@@ -62,3 +62,19 @@ SELECT
 FROM
 	`ClientCalcEntity` `t1`
 
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80
+SELECT
+	`e`.`Id`,
+	CONCAT(Coalesce(`e`.`Name`, ''), ' ', Coalesce(`e`.`Name`, ''))
+FROM
+	`ClientCalcEntity` `e`
+
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80
+SELECT
+	`t1`.`Id`,
+	`t1`.`Value1`,
+	`t1`.`Value2`,
+	`t1`.`Name`
+FROM
+	`ClientCalcEntity` `t1`
+
