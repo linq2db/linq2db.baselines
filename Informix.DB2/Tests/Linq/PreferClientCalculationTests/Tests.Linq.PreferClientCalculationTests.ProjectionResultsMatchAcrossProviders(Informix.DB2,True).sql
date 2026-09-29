@@ -62,3 +62,19 @@ SELECT
 FROM
 	ClientCalcEntity t1
 
+-- Informix.DB2 Informix
+SELECT
+	e.Id,
+	e.Name
+FROM
+	ClientCalcEntity e
+
+-- Informix.DB2 Informix
+SELECT
+	t1.Id,
+	t1.Value1,
+	t1.Value2,
+	t1.Name
+FROM
+	ClientCalcEntity t1
+
