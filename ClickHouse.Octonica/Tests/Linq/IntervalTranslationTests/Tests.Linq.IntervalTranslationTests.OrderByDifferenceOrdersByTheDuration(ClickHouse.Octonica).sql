@@ -52,7 +52,7 @@ SELECT
 FROM
 	BudgetedTaskRow r
 ORDER BY
-	intDiv(toUnixTimestamp64Nano(r.FinishedOn) - toUnixTimestamp64Nano(r.StartedOn), toInt64(100))
+	intDiv(toUnixTimestamp64Nano(toDateTime64(r.FinishedOn, 7)) - toUnixTimestamp64Nano(toDateTime64(r.StartedOn, 7)), toInt64(100))
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
@@ -60,5 +60,5 @@ SELECT
 FROM
 	BudgetedTaskRow r
 ORDER BY
-	intDiv(toUnixTimestamp64Nano(r.FinishedOn) - toUnixTimestamp64Nano(r.StartedOn), toInt64(100)) DESC
+	intDiv(toUnixTimestamp64Nano(toDateTime64(r.FinishedOn, 7)) - toUnixTimestamp64Nano(toDateTime64(r.StartedOn, 7)), toInt64(100)) DESC
 
