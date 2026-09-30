@@ -57,7 +57,7 @@ FROM
 				SELECT
 					CAST(2 AS Int) as "Source",
 					NULL as "Duration",
-					CAST(DateDiff(millisecond, "r_1"."StartedOn", "r_1"."FinishedOn") * 10000 AS BigInt) as "Duration_1"
+					CAST(CAST(Floor(DateDiff(millisecond, "r_1"."StartedOn", "r_1"."FinishedOn") * 10) AS BigInt) * 1000 AS BigInt) as "Duration_1"
 				FROM
 					"BudgetedTaskRow" "r_1"
 			) "t1"
