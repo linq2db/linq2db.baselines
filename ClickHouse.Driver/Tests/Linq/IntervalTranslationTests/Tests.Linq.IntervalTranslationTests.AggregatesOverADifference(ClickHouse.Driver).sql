@@ -34,19 +34,19 @@ VALUES
 SELECT
 	(
 		SELECT
-			minOrNull(intDiv(toUnixTimestamp64Nano(t2.FinishedOn) - toUnixTimestamp64Nano(t2.StartedOn), toInt64(100)))
+			minOrNull(intDiv(toUnixTimestamp64Nano(toDateTime64(t2.FinishedOn, 7)) - toUnixTimestamp64Nano(toDateTime64(t2.StartedOn, 7)), toInt64(100)))
 		FROM
 			BudgetedTaskRow t2
 	),
 	(
 		SELECT
-			maxOrNull(intDiv(toUnixTimestamp64Nano(t3.FinishedOn) - toUnixTimestamp64Nano(t3.StartedOn), toInt64(100)))
+			maxOrNull(intDiv(toUnixTimestamp64Nano(toDateTime64(t3.FinishedOn, 7)) - toUnixTimestamp64Nano(toDateTime64(t3.StartedOn, 7)), toInt64(100)))
 		FROM
 			BudgetedTaskRow t3
 	),
 	Coalesce((
 		SELECT
-			sumOrNull(toFloat64(intDiv(toUnixTimestamp64Nano(t4.FinishedOn) - toUnixTimestamp64Nano(t4.StartedOn), toInt64(100))) / toFloat64(600000000))
+			sumOrNull(toFloat64(intDiv(toUnixTimestamp64Nano(toDateTime64(t4.FinishedOn, 7)) - toUnixTimestamp64Nano(toDateTime64(t4.StartedOn, 7)), toInt64(100))) / toFloat64(600000000))
 		FROM
 			BudgetedTaskRow t4
 	), toFloat64(0))
