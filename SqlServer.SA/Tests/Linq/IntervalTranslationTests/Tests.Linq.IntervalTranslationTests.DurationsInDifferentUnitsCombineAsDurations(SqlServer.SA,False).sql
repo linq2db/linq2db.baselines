@@ -1,0 +1,51 @@
+﻿-- SqlServer.SA SqlServer.2019
+DECLARE @Id Int -- Int32
+SET     @Id = 1
+DECLARE @InSeconds BigInt -- Int64
+SET     @InSeconds = 5400
+DECLARE @InTicks BigInt -- Int64
+SET     @InTicks = 54000000000
+DECLARE @Undeclared BigInt -- Int64
+SET     @Undeclared = 54000000000
+DECLARE @UndeclaredSeconds BigInt -- Int64
+SET     @UndeclaredSeconds = 5400
+
+INSERT INTO [DurationRow]
+(
+	[Id],
+	[InSeconds],
+	[InTicks],
+	[Undeclared],
+	[UndeclaredSeconds]
+)
+VALUES
+(
+	@Id,
+	@InSeconds,
+	@InTicks,
+	@Undeclared,
+	@UndeclaredSeconds
+)
+
+-- SqlServer.SA SqlServer.2019
+SELECT TOP (2)
+	[r].[InSeconds] + [r].[InSeconds],
+	[r].[InTicks] + [r].[InTicks],
+	CAST([r].[InSeconds] * 10000000 + [r].[InTicks] AS BigInt),
+	CAST([r].[InSeconds] * 10000000 - [r].[InTicks] AS BigInt),
+	CAST([r].[InTicks] - [r].[InSeconds] * 10000000 AS BigInt),
+	CAST(CAST([r].[InSeconds] * 10000000 + [r].[InTicks] AS BigInt) + [r].[InSeconds] * 10000000 AS BigInt),
+	CAST(CAST(-[r].[InSeconds] AS BigInt) * 10000000 + [r].[InTicks] AS BigInt),
+	CAST([r].[InSeconds] * 10000000 + [r].[InTicks] AS BigInt),
+	CAST([r].[InSeconds] * 10000000 + [r].[InTicks] AS BigInt) + [r].[InTicks] + [r].[InTicks],
+	CAST(CAST([r].[InSeconds] + [r].[InSeconds] AS BigInt) * 10000000 + [r].[InTicks] AS BigInt) - ([r].[InTicks] + [r].[InTicks]),
+	CAST(CAST(-[r].[InSeconds] AS BigInt) * 10000000 - [r].[InTicks] AS BigInt)
+FROM
+	[DurationRow] [r]
+
+-- SqlServer.SA SqlServer.2019
+SELECT TOP (2)
+	CAST([r].[InSeconds] * 10000000 + [r].[InTicks] AS BigInt)
+FROM
+	[DurationRow] [r]
+
