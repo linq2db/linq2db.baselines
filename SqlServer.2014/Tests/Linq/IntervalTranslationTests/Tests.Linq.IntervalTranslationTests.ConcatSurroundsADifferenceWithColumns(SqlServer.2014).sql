@@ -25,50 +25,51 @@ VALUES
 
 -- SqlServer.2014
 SELECT
+	[t2].[c1],
 	[t2].[Source],
 	[t2].[Duration],
+	[t2].[Source_1],
 	[t2].[Duration_1],
-	[t2].[Duration_2],
-	[t2].[Duration_3],
-	[t2].[Duration_4]
+	[t2].[Source_2],
+	[t2].[Duration_2]
 FROM
 	(
 		SELECT
+			IIF([t1].[Source] = 1, 1, 0) as [c1],
 			[t1].[Source],
-			IIF([t1].[Source] = 1, 1, 0) as [Duration],
-			[t1].[Duration] as [Duration_1],
-			[t1].[Duration_1] as [Duration_2],
-			[t1].[Duration_2] as [Duration_3],
-			NULL as [Duration_4]
+			[t1].[Duration],
+			[t1].[Source] as [Source_1],
+			[t1].[Duration_1],
+			NULL as [Source_2],
+			NULL as [Duration_2]
 		FROM
 			(
 				SELECT
 					CAST(1 AS Int) as [Source],
 					[r].[Budget] as [Duration],
-					NULL as [Duration_1],
-					NULL as [Duration_2]
+					NULL as [Duration_1]
 				FROM
 					[BudgetedTaskRow] [r]
 				UNION ALL
 				SELECT
 					CAST(2 AS Int) as [Source],
 					NULL as [Duration],
-					[r_1].[FinishedOn] as [Duration_1],
-					[r_1].[StartedOn] as [Duration_2]
+					(CAST(DateDiff(day, [r_1].[StartedOn], [r_1].[FinishedOn]) AS BigInt) * 86400) * 10000000 + CAST(DateDiff(second, DateAdd(day, CAST(CAST(DateDiff(day, [r_1].[StartedOn], [r_1].[FinishedOn]) AS BigInt) AS Int), [r_1].[StartedOn]), [r_1].[FinishedOn]) AS BigInt) * 10000000 + CAST(DateDiff(nanosecond, DateAdd(second, CAST(CAST(DateDiff(second, DateAdd(day, CAST(CAST(DateDiff(day, [r_1].[StartedOn], [r_1].[FinishedOn]) AS BigInt) AS Int), [r_1].[StartedOn]), [r_1].[FinishedOn]) AS BigInt) AS Int), DateAdd(day, CAST(CAST(DateDiff(day, [r_1].[StartedOn], [r_1].[FinishedOn]) AS BigInt) AS Int), [r_1].[StartedOn])), [r_1].[FinishedOn]) AS BigInt) / 100 as [Duration_1]
 				FROM
 					[BudgetedTaskRow] [r_1]
 			) [t1]
 		UNION ALL
 		SELECT
-			CAST(3 AS Int) as [Source],
+			NULL as [c1],
+			NULL as [Source],
 			NULL as [Duration],
+			NULL as [Source_1],
 			NULL as [Duration_1],
-			NULL as [Duration_2],
-			NULL as [Duration_3],
-			[r_2].[Budget] as [Duration_4]
+			CAST(3 AS Int) as [Source_2],
+			[r_2].[Budget] as [Duration_2]
 		FROM
 			[BudgetedTaskRow] [r_2]
 	) [t2]
 ORDER BY
-	[t2].[Source]
+	IIF([t2].[c1] IS NOT NULL, IIF([t2].[c1] = 1, [t2].[Source], [t2].[Source_1]), [t2].[Source_2])
 
