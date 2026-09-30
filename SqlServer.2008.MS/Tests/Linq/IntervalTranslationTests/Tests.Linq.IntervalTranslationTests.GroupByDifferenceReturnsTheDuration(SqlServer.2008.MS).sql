@@ -75,15 +75,17 @@ VALUES
 
 -- SqlServer.2008.MS SqlServer.2008
 SELECT
-	[g_1].[FinishedOn],
-	[g_1].[StartedOn],
+	[t1].[Key_1],
 	COUNT(*)
 FROM
-	[BudgetedTaskRow] [g_1]
+	(
+		SELECT
+			(CAST(DateDiff(day, [g_1].[StartedOn], [g_1].[FinishedOn]) AS BigInt) * 86400) * 10000000 + CAST(DateDiff(second, DateAdd(day, CAST(CAST(DateDiff(day, [g_1].[StartedOn], [g_1].[FinishedOn]) AS BigInt) AS Int), [g_1].[StartedOn]), [g_1].[FinishedOn]) AS BigInt) * 10000000 + CAST(DateDiff(nanosecond, DateAdd(second, CAST(CAST(DateDiff(second, DateAdd(day, CAST(CAST(DateDiff(day, [g_1].[StartedOn], [g_1].[FinishedOn]) AS BigInt) AS Int), [g_1].[StartedOn]), [g_1].[FinishedOn]) AS BigInt) AS Int), DateAdd(day, CAST(CAST(DateDiff(day, [g_1].[StartedOn], [g_1].[FinishedOn]) AS BigInt) AS Int), [g_1].[StartedOn])), [g_1].[FinishedOn]) AS BigInt) / 100 as [Key_1]
+		FROM
+			[BudgetedTaskRow] [g_1]
+	) [t1]
 GROUP BY
-	[g_1].[FinishedOn],
-	[g_1].[StartedOn]
+	[t1].[Key_1]
 ORDER BY
-	[g_1].[FinishedOn],
-	[g_1].[StartedOn]
+	[t1].[Key_1]
 
