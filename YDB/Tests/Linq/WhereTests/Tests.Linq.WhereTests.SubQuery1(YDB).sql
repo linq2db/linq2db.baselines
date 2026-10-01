@@ -1,13 +1,8 @@
 ﻿-- YDB Ydb
 SELECT
-	pp.Value_1 as Value_1
+	pp.MoneyValue as MoneyValue
 FROM
-	(
-		SELECT
-			Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(Math::NearbyInt(Unwrap(CAST(Unwrap(CAST(p.MoneyValue AS Decimal(8,2))) * Decimal('100', 8, 2) AS Double)), Math::RoundToNearest()) AS Text)) AS Decimal(8,2))) / Decimal('100', 8, 2) AS Decimal(6,2))) as Value_1
-		FROM
-			LinqDataTypes p
-	) pp
+	LinqDataTypes pp
 WHERE
-	pp.Value_1 <> Decimal('0', 6, 2) AND pp.Value_1 <> Decimal('7', 6, 2)
+	pp.MoneyValue <> Decimal('0', 6, 2) AND pp.MoneyValue <> Decimal('7', 6, 2)
 
