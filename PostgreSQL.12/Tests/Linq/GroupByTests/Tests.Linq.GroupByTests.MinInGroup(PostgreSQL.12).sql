@@ -3,11 +3,11 @@ SELECT
 	g_1."GroupId",
 	MIN(g_1."DataValue"),
 	MIN(g_1."DataValue"),
-	MIN(g_1."DataValue") FILTER (WHERE (g_1."DataValue"::decimal % 2)::decimal = 0),
-	MIN(g_1."DataValue") FILTER (WHERE (g_1."DataValue"::decimal % 2)::decimal = 0),
+	MIN(g_1."DataValue") FILTER (WHERE (g_1."DataValue"::decimal % 2)::Float = 0),
+	MIN(g_1."DataValue") FILTER (WHERE (g_1."DataValue"::decimal % 2)::Float = 0),
 	MIN(DISTINCT g_1."DataValue"),
-	MIN(DISTINCT g_1."DataValue") FILTER (WHERE (g_1."DataValue"::decimal % 2)::decimal = 0),
-	MIN(DISTINCT g_1."DataValue") FILTER (WHERE (g_1."DataValue"::decimal % 2)::decimal = 0)
+	MIN(DISTINCT g_1."DataValue") FILTER (WHERE (g_1."DataValue"::decimal % 2)::Float = 0),
+	MIN(DISTINCT g_1."DataValue") FILTER (WHERE (g_1."DataValue"::decimal % 2)::Float = 0)
 FROM
 	"AggregationData" g_1
 GROUP BY
