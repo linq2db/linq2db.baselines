@@ -59,3 +59,19 @@ SELECT
 FROM
 	[ClientCalcEntity] [t1]
 
+-- Access.Ace.OleDb AccessOleDb
+SELECT
+	[e].[Id],
+	IIF([e].[Name] IS NULL, '', [e].[Name]) + ' ' + IIF([e].[Name] IS NULL, '', [e].[Name])
+FROM
+	[ClientCalcEntity] [e]
+
+-- Access.Ace.OleDb AccessOleDb
+SELECT
+	[t1].[Id],
+	[t1].[Value1],
+	[t1].[Value2],
+	[t1].[Name]
+FROM
+	[ClientCalcEntity] [t1]
+

@@ -62,3 +62,19 @@ SELECT
 FROM
 	[ClientCalcEntity] [t1]
 
+-- SqlServer.2022.MS SqlServer.2022
+SELECT
+	[e].[Id],
+	[e].[Name]
+FROM
+	[ClientCalcEntity] [e]
+
+-- SqlServer.2022.MS SqlServer.2022
+SELECT
+	[t1].[Id],
+	[t1].[Value1],
+	[t1].[Value2],
+	[t1].[Name]
+FROM
+	[ClientCalcEntity] [t1]
+

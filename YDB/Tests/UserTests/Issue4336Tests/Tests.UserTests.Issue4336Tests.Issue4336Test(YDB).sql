@@ -11,7 +11,7 @@ SELECT
 	r.MaxCapacity - r.Quantity as FreeCapacity,
 	COALESCE(t1.PeriodOrderLimit,0) as MaxCapacity_1,
 	t1.Quantity as Quantity_1,
-	COALESCE(t1.PeriodOrderLimit,0) - t1.Quantity as FreeCapacity_1
+	COALESCE(t1.PeriodOrderLimit,0) - Coalesce(t1.Quantity, 0) as FreeCapacity_1
 FROM
 	(
 		SELECT
