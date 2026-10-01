@@ -20,7 +20,7 @@ SELECT
 FROM
 	[Issue5777Row] [r]
 WHERE
-	DateDiff('d', [r].[ClosedOnNullable], #2026-09-30#) + IIF([r].[ClosedOnNullable] IS NULL, NULL, CDbl(DateDiff('d', IIF([r].[ClosedOnNullable] IS NULL, #1899-12-30#, DateAdd('d', DateDiff('d', [r].[ClosedOnNullable], #2026-09-30#), [r].[ClosedOnNullable])), #2026-09-30#)) * 86400 + DateDiff('s', DateAdd('d', DateDiff('d', IIF([r].[ClosedOnNullable] IS NULL, #1899-12-30#, DateAdd('d', DateDiff('d', [r].[ClosedOnNullable], #2026-09-30#), [r].[ClosedOnNullable])), #2026-09-30#), IIF([r].[ClosedOnNullable] IS NULL, #1899-12-30#, DateAdd('d', DateDiff('d', [r].[ClosedOnNullable], #2026-09-30#), [r].[ClosedOnNullable]))), #2026-09-30#)) / 86400 > 0
+	DateDiff('d', [r].[ClosedOnNullable], #2026-10-01#) + IIF([r].[ClosedOnNullable] IS NULL, NULL, CDbl(DateDiff('d', IIF([r].[ClosedOnNullable] IS NULL, #1899-12-30#, DateAdd('d', DateDiff('d', [r].[ClosedOnNullable], #2026-10-01#), [r].[ClosedOnNullable])), #2026-10-01#)) * 86400 + DateDiff('s', DateAdd('d', DateDiff('d', IIF([r].[ClosedOnNullable] IS NULL, #1899-12-30#, DateAdd('d', DateDiff('d', [r].[ClosedOnNullable], #2026-10-01#), [r].[ClosedOnNullable])), #2026-10-01#), IIF([r].[ClosedOnNullable] IS NULL, #1899-12-30#, DateAdd('d', DateDiff('d', [r].[ClosedOnNullable], #2026-10-01#), [r].[ClosedOnNullable]))), #2026-10-01#)) / 86400 > 0
 
 -- Access.Jet.Odbc AccessODBC
 SELECT TOP 2
