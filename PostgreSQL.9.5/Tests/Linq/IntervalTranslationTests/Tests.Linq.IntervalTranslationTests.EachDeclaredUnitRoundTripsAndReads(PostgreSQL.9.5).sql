@@ -36,7 +36,7 @@ LIMIT 2
 -- PostgreSQL.9.5 PostgreSQL
 SELECT
 	(r."InDays" * 24)::Float,
-	Floor(((r."InMilliseconds" / 1000)::decimal % 60)::decimal)::Int
+	Floor((r."InMilliseconds" / 1000)::decimal % 60)::BigInt::Int
 FROM
 	"UnitSpreadRow" r
 LIMIT 2

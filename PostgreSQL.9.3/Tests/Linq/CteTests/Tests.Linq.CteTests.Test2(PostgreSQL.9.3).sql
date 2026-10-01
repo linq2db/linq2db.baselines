@@ -17,7 +17,7 @@ AS
 	FROM
 		"Child" c4
 	WHERE
-		(c4."ParentID"::decimal % 2)::decimal = 0
+		Floor(c4."ParentID"::decimal % 2)::Int = 0
 ),
 "CTE2_" ("ParentID")
 AS
@@ -108,5 +108,5 @@ WHERE
 			) AND
 			p_1."ParentID" = c3."ParentID"
 	) AND
-	(c4."ParentID"::decimal % 2)::decimal = 0
+	Floor(c4."ParentID"::decimal % 2)::Int = 0
 
