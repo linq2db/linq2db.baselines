@@ -20,7 +20,7 @@ SELECT
 FROM
 	"Issue5777Row" r
 WHERE
-	Extract(epoch From ('2026-09-30'::date - r."ClosedOnNullable")) / 86400 > 0
+	Extract(epoch From ('2026-10-01'::date - r."ClosedOnNullable")) / 86400 > 0
 
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 SELECT
