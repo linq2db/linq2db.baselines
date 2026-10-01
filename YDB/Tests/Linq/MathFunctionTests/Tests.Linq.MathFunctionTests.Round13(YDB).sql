@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
 SELECT
-	Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(Math::NearbyInt(Unwrap(CAST(Unwrap(CAST(p.MoneyValue AS Decimal(11,2))) * Decimal('100000', 11, 2) AS Double)), Math::RoundToNearest()) AS Text)) AS Decimal(11,2))) / Decimal('100000', 11, 2) AS Decimal(6,2))) as c1
+	p.MoneyValue as MoneyValue
 FROM
 	LinqDataTypes p
 WHERE
