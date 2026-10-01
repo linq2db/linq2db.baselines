@@ -4,7 +4,7 @@ SELECT
 FROM
 	"Issue5777Row" "r"
 WHERE
-	CAST(Nano100_Between("r"."ClosedOn", TIMESTAMP '2026-09-30 00:00:00.0000000') AS Double) / 864000000000 > 0
+	CAST(Nano100_Between("r"."ClosedOn", TIMESTAMP '2026-10-01 00:00:00.0000000') AS Double) / 864000000000 > 0
 
 -- SapHana.Odbc SapHanaOdbc
 SELECT
@@ -12,7 +12,7 @@ SELECT
 FROM
 	"Issue5777Row" "r"
 WHERE
-	CAST(Nano100_Between("r"."ClosedOn", TIMESTAMP '2026-09-30 00:00:00.0000000') AS Double) / 36000000000 > 0
+	CAST(Nano100_Between("r"."ClosedOn", TIMESTAMP '2026-10-01 00:00:00.0000000') AS Double) / 36000000000 > 0
 
 -- SapHana.Odbc SapHanaOdbc
 SELECT
@@ -20,7 +20,7 @@ SELECT
 FROM
 	"Issue5777Row" "r"
 WHERE
-	CAST(Nano100_Between("r"."ClosedOn", TIMESTAMP '2026-09-30 00:00:00.0000000') AS Double) / 600000000 > 0
+	CAST(Nano100_Between("r"."ClosedOn", TIMESTAMP '2026-10-01 00:00:00.0000000') AS Double) / 600000000 > 0
 
 -- SapHana.Odbc SapHanaOdbc
 SELECT
@@ -28,7 +28,7 @@ SELECT
 FROM
 	"Issue5777Row" "r"
 WHERE
-	CAST(Nano100_Between("r"."ClosedOn", TIMESTAMP '2026-09-30 00:00:00.0000000') / 864000000000 AS Integer) > 0
+	CAST(Nano100_Between("r"."ClosedOn", TIMESTAMP '2026-10-01 00:00:00.0000000') / 864000000000 AS Integer) > 0
 
 -- SapHana.Odbc SapHanaOdbc
 SELECT
@@ -36,7 +36,7 @@ SELECT
 FROM
 	"Issue5777Row" "r"
 WHERE
-	CAST(Nano100_Between("r"."ClosedOnNullable", TIMESTAMP '2026-09-30 00:00:00.0000000') AS Double) / 864000000000 > 0
+	CAST(Nano100_Between("r"."ClosedOnNullable", TIMESTAMP '2026-10-01 00:00:00.0000000') AS Double) / 864000000000 > 0
 
 -- SapHana.Odbc SapHanaOdbc
 SELECT
@@ -44,11 +44,11 @@ SELECT
 FROM
 	"Issue5777Row" "r"
 ORDER BY
-	CAST(Nano100_Between("r"."ClosedOn", TIMESTAMP '2026-09-30 00:00:00.0000000') AS Double) / 864000000000
+	CAST(Nano100_Between("r"."ClosedOn", TIMESTAMP '2026-10-01 00:00:00.0000000') AS Double) / 864000000000
 
 -- SapHana.Odbc SapHanaOdbc
 SELECT
-	CAST(Nano100_Between("r"."ClosedOn", TIMESTAMP '2026-09-30 00:00:00.0000000') AS Double) / 864000000000
+	CAST(Nano100_Between("r"."ClosedOn", TIMESTAMP '2026-10-01 00:00:00.0000000') AS Double) / 864000000000
 FROM
 	"Issue5777Row" "r"
 ORDER BY
