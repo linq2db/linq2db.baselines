@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
 SELECT
-	Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(Math::NearbyInt(Unwrap(CAST(Unwrap(CAST(p.MoneyValue AS Decimal(11,2))) * Decimal('100000', 11, 2) AS Double)), Math::RoundToNearest()) AS Text)) AS Decimal(11,2))) / Decimal('100000', 11, 2) AS Decimal(6,2))) + p.MoneyValue as c1
+	p.MoneyValue + p.MoneyValue as c1
 FROM
 	LinqDataTypes p
 WHERE
@@ -9,7 +9,7 @@ WHERE
 -- YDB Ydb
 SELECT
 	CASE
-		WHEN p.ID > 2 THEN Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(Math::NearbyInt(Unwrap(CAST(Unwrap(CAST(p.MoneyValue AS Decimal(11,2))) * Decimal('100000', 11, 2) AS Double)), Math::RoundToNearest()) AS Text)) AS Decimal(11,2))) / Decimal('100000', 11, 2) AS Decimal(6,2)))
+		WHEN p.ID > 2 THEN p.MoneyValue
 		ELSE p.MoneyValue
 	END as c1
 FROM
