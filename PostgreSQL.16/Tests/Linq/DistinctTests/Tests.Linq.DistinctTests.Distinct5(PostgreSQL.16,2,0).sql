@@ -3,7 +3,7 @@ DECLARE @Value1 Integer -- Int32
 SET     @Value1 = 3
 
 SELECT DISTINCT
-	Coalesce(p."Value1", (p."ParentID"::decimal % 2)::decimal),
+	Coalesce(p."Value1", Floor(p."ParentID"::decimal % 2)::Int),
 	:Value1
 FROM
 	"Parent" p
@@ -20,7 +20,7 @@ DECLARE @Value1 Integer -- Int32
 SET     @Value1 = 3
 
 SELECT DISTINCT
-	Coalesce(p."Value1", (p."ParentID"::decimal % 2)::decimal),
+	Coalesce(p."Value1", Floor(p."ParentID"::decimal % 2)::Int),
 	:Value1
 FROM
 	"Parent" p

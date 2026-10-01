@@ -29,8 +29,8 @@ VALUES
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
-	Floor(((r."InTicks" / 10000)::decimal % 1000)::decimal)::Int,
-	Floor(((r."InTicks" / 10)::decimal % 1000)::decimal)::Int
+	Floor((r."InTicks" / 10000)::decimal % 1000)::BigInt::Int,
+	Floor((r."InTicks" / 10)::decimal % 1000)::BigInt::Int
 FROM
 	"DurationRow" r
 LIMIT 2
