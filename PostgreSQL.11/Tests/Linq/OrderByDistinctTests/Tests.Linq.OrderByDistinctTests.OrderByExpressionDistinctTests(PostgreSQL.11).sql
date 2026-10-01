@@ -23,6 +23,6 @@ FROM
 GROUP BY
 	x."DuplicateData"
 ORDER BY
-	MAX((x."OrderData1"::decimal % 3)::decimal)
+	MAX(Floor(x."OrderData1"::decimal % 3)::Int)
 LIMIT :take OFFSET :skip 
 

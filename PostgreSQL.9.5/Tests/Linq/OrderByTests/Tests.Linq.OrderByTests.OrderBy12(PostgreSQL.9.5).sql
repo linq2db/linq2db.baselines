@@ -5,5 +5,5 @@ SELECT
 FROM
 	"Child" ch
 ORDER BY
-	(ch."ChildID"::decimal % 2)::decimal DESC
+	Floor(ch."ChildID"::decimal % 2)::Int DESC
 
