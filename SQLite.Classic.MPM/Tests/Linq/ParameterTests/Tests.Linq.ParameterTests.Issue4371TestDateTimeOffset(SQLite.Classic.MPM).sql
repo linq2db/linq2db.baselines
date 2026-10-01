@@ -2,7 +2,7 @@
 DECLARE @ColumnDT VarChar -- AnsiString
 SET     @ColumnDT = NULL
 DECLARE @ColumnDTO VarChar(33) -- AnsiString
-SET     @ColumnDTO = '2020-02-29T17:54:55.123123 +00:40'
+SET     @ColumnDTO = '2020-02-29 17:54:55.1231234+00:40'
 DECLARE @ColumnTS VarChar -- AnsiString
 SET     @ColumnTS = NULL
 
@@ -21,7 +21,7 @@ VALUES
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @dto VarChar(33) -- AnsiString
-SET     @dto = '2020-02-29T17:54:55.123123 +00:40'
+SET     @dto = '2020-02-29 17:54:55.1231234+00:40'
 
 SELECT
 	COUNT(*)

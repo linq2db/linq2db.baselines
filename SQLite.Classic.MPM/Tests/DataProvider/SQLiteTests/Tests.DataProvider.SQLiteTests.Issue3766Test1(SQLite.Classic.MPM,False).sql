@@ -1,6 +1,6 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- DateTimeOffset
-SET     @Id = '2020-02-29 17:09:55.123+00:00'
+DECLARE @Id VarChar(33) -- AnsiString
+SET     @Id = '2020-02-29 17:09:55.1231234+00:00'
 DECLARE @Value  -- Int32
 SET     @Value = 0
 
@@ -18,8 +18,8 @@ ON CONFLICT ([Id]) DO UPDATE SET
 	[Value] = @Value
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- DateTimeOffset
-SET     @Id = '2020-02-29 17:09:55.123+00:00'
+DECLARE @Id VarChar(33) -- AnsiString
+SET     @Id = '2020-02-29 17:09:55.1231234+00:00'
 DECLARE @Value  -- Int32
 SET     @Value = 0
 
