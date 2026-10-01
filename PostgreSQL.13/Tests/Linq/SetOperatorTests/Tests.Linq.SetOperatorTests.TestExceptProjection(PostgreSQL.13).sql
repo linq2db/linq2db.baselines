@@ -9,7 +9,7 @@ FROM
 		FROM
 			"SampleData" r
 		WHERE
-			(r."Id"::decimal % 2)::decimal = 0
+			Floor(r."Id"::decimal % 2)::Int = 0
 		EXCEPT
 		SELECT
 			r_1."Id",
@@ -17,7 +17,7 @@ FROM
 		FROM
 			"SampleData" r_1
 		WHERE
-			(r_1."Id"::decimal % 4)::decimal = 0
+			Floor(r_1."Id"::decimal % 4)::Int = 0
 		EXCEPT
 		SELECT
 			r_2."Id",
@@ -25,6 +25,6 @@ FROM
 		FROM
 			"SampleData" r_2
 		WHERE
-			(r_2."Id"::decimal % 6)::decimal = 0
+			Floor(r_2."Id"::decimal % 6)::Int = 0
 	) r_3
 
