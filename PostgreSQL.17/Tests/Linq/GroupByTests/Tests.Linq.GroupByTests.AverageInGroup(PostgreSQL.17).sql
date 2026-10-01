@@ -3,11 +3,11 @@ SELECT
 	g_1."GroupId",
 	AVG(g_1."DataValue"),
 	AVG(g_1."DataValue"),
-	AVG(g_1."DataValue") FILTER (WHERE (g_1."DataValue"::decimal % 2)::decimal = 0),
-	AVG(g_1."DataValue") FILTER (WHERE (g_1."DataValue"::decimal % 2)::decimal = 0),
+	AVG(g_1."DataValue") FILTER (WHERE (g_1."DataValue"::decimal % 2)::Float = 0),
+	AVG(g_1."DataValue") FILTER (WHERE (g_1."DataValue"::decimal % 2)::Float = 0),
 	AVG(DISTINCT g_1."DataValue"),
-	AVG(DISTINCT g_1."DataValue") FILTER (WHERE (g_1."DataValue"::decimal % 2)::decimal = 0),
-	AVG(DISTINCT g_1."DataValue") FILTER (WHERE (g_1."DataValue"::decimal % 2)::decimal = 0)
+	AVG(DISTINCT g_1."DataValue") FILTER (WHERE (g_1."DataValue"::decimal % 2)::Float = 0),
+	AVG(DISTINCT g_1."DataValue") FILTER (WHERE (g_1."DataValue"::decimal % 2)::Float = 0)
 FROM
 	"AggregationData" g_1
 WHERE

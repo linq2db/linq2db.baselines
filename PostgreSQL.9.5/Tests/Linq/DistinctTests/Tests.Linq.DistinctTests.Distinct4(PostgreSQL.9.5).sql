@@ -1,6 +1,6 @@
 ﻿-- PostgreSQL.9.5 PostgreSQL
 SELECT DISTINCT
-	Coalesce(p."Value1", (p."ParentID"::decimal % 2)::decimal),
+	Coalesce(p."Value1", Floor(p."ParentID"::decimal % 2)::Int),
 	p."Value1"
 FROM
 	"Parent" p

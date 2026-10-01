@@ -18,7 +18,7 @@ AS
 	FROM
 		"Child" c4
 	WHERE
-		(c4."ParentID"::decimal % 2)::decimal = 0
+		Floor(c4."ParentID"::decimal % 2)::Int = 0
 )
 INSERT INTO "CteChild"
 (
@@ -50,7 +50,7 @@ FROM
 	"Child" c_1
 		INNER JOIN "Child" c4 ON c4."ParentID" = c_1."ParentID"
 WHERE
-	c_1."ParentID" > 1 AND (c4."ParentID"::decimal % 2)::decimal = 0
+	c_1."ParentID" > 1 AND Floor(c4."ParentID"::decimal % 2)::Int = 0
 ORDER BY
 	c4."ChildID",
 	c4."ParentID"
