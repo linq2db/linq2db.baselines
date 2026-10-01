@@ -20,7 +20,7 @@ SELECT
 FROM
 	Issue5777Row r
 WHERE
-	CAST(CAST(Timestamp('2026-09-30T00:00:00.000000Z') - r.ClosedOnNullable AS Int64) * 10l AS Double) / Double('864000000000') > Double('0')
+	CAST(CAST(Timestamp('2026-10-01T00:00:00.000000Z') - r.ClosedOnNullable AS Int64) * 10l AS Double) / Double('864000000000') > Double('0')
 
 -- YDB Ydb
 SELECT
