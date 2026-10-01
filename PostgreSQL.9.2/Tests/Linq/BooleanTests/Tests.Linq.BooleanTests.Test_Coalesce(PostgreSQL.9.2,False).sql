@@ -78,7 +78,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	Coalesce(r."BooleanN", (r."Id"::decimal % 2)::decimal = 1)
+	Coalesce(r."BooleanN", Floor(r."Id"::decimal % 2)::Int = 1)
 
 -- PostgreSQL.9.2 PostgreSQL
 SELECT

@@ -4,7 +4,7 @@ SELECT
 FROM
 	(
 		SELECT
-			(ch.item::decimal % 10)::decimal as "Key_1",
+			Floor(ch.item::decimal % 10)::Int as "Key_1",
 			ch.item as ch
 		FROM
 			"Parent" grp
