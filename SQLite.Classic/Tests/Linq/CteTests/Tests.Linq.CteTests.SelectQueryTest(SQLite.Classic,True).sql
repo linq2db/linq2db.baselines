@@ -12,7 +12,7 @@ AS
 	FROM
 		[x] [t1]
 	WHERE
-		strftime('%Y-%m-%d %H:%M:%f', strftime('%Y-%m-%d %H:%M:%f', [t1].[Date_1], '1 Day')) < strftime('%Y-%m-%d %H:%M:%f', '2020-03-10 00:00:00.000')
+		strftime('%Y-%m-%d %H:%M:%f', [t1].[Date_1], '1 Day') < strftime('%Y-%m-%d %H:%M:%f', '2020-03-10 00:00:00.000')
 )
 SELECT
 	[t2].[Counter],

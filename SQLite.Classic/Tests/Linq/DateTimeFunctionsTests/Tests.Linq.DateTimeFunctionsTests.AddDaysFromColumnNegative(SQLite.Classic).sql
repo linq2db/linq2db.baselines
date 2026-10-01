@@ -45,7 +45,7 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[ID] = 5000 AND strftime('%Y-%m-%d %H:%M:%f', strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue], CAST([t].[SmallIntValue] AS NVarChar(6)) || ' Day')) < strftime('%Y-%m-%d %H:%M:%f', '2018-01-02 00:00:00.000')
+	[t].[ID] = 5000 AND strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue], CAST([t].[SmallIntValue] AS NVarChar(6)) || ' Day') < strftime('%Y-%m-%d %H:%M:%f', '2018-01-02 00:00:00.000')
 
 -- SQLite.Classic SQLite
 DELETE FROM

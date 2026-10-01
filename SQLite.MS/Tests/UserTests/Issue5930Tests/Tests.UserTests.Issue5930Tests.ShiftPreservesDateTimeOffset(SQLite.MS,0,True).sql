@@ -1,13 +1,9 @@
 ﻿-- SQLite.MS SQLite
 SELECT
-	strftime('%Y-%m-%d %H:%M:%f', [r].[StartDateTime], CAST(CAST(([r].[PreNotification] / 10000) * -1 AS Float) / 1000 AS NVarChar(22)) || ' Second', CASE
+	CASE
 		WHEN Substr([r].[StartDateTime], -6) GLOB '[+-][0-9][0-9]:[0-9][0-9]'
-			THEN Substr([r].[StartDateTime], -6)
-		ELSE '+00:00'
-	END) || CASE
-		WHEN Substr([r].[StartDateTime], -6) GLOB '[+-][0-9][0-9]:[0-9][0-9]'
-			THEN Substr([r].[StartDateTime], -6)
-		ELSE '+00:00'
+			THEN strftime('%Y-%m-%d %H:%M:%f', Substr([r].[StartDateTime], 1, Length([r].[StartDateTime]) - 6), CAST(CAST(([r].[PreNotification] / 10000) * -1 AS Float) / 1000 AS NVarChar(22)) || ' Second') || Substr([r].[StartDateTime], -6)
+		ELSE strftime('%Y-%m-%d %H:%M:%f', [r].[StartDateTime], CAST(CAST(([r].[PreNotification] / 10000) * -1 AS Float) / 1000 AS NVarChar(22)) || ' Second') || '+00:00'
 	END
 FROM
 	[OffsetTaskRow] [r]
@@ -20,14 +16,10 @@ SELECT
 FROM
 	[OffsetTaskRow] [r]
 WHERE
-	strftime('%Y-%m-%d %H:%M:%f', [r].[StartDateTime], CAST(CAST(([r].[PreNotification] / 10000) * -1 AS Float) / 1000 AS NVarChar(22)) || ' Second', CASE
+	CASE
 		WHEN Substr([r].[StartDateTime], -6) GLOB '[+-][0-9][0-9]:[0-9][0-9]'
-			THEN Substr([r].[StartDateTime], -6)
-		ELSE '+00:00'
-	END) || CASE
-		WHEN Substr([r].[StartDateTime], -6) GLOB '[+-][0-9][0-9]:[0-9][0-9]'
-			THEN Substr([r].[StartDateTime], -6)
-		ELSE '+00:00'
+			THEN strftime('%Y-%m-%d %H:%M:%f', Substr([r].[StartDateTime], 1, Length([r].[StartDateTime]) - 6), CAST(CAST(([r].[PreNotification] / 10000) * -1 AS Float) / 1000 AS NVarChar(22)) || ' Second') || Substr([r].[StartDateTime], -6)
+		ELSE strftime('%Y-%m-%d %H:%M:%f', [r].[StartDateTime], CAST(CAST(([r].[PreNotification] / 10000) * -1 AS Float) / 1000 AS NVarChar(22)) || ' Second') || '+00:00'
 	END IS NULL
 ORDER BY
 	[r].[Id]
@@ -41,14 +33,10 @@ SELECT
 FROM
 	[OffsetTaskRow] [r]
 WHERE
-	strftime('%Y-%m-%d %H:%M:%f', strftime('%Y-%m-%d %H:%M:%f', [r].[StartDateTime], CAST(CAST(([r].[PreNotification] / 10000) * -1 AS Float) / 1000 AS NVarChar(22)) || ' Second', CASE
+	strftime('%Y-%m-%d %H:%M:%f', CASE
 		WHEN Substr([r].[StartDateTime], -6) GLOB '[+-][0-9][0-9]:[0-9][0-9]'
-			THEN Substr([r].[StartDateTime], -6)
-		ELSE '+00:00'
-	END) || CASE
-		WHEN Substr([r].[StartDateTime], -6) GLOB '[+-][0-9][0-9]:[0-9][0-9]'
-			THEN Substr([r].[StartDateTime], -6)
-		ELSE '+00:00'
+			THEN strftime('%Y-%m-%d %H:%M:%f', Substr([r].[StartDateTime], 1, Length([r].[StartDateTime]) - 6), CAST(CAST(([r].[PreNotification] / 10000) * -1 AS Float) / 1000 AS NVarChar(22)) || ' Second') || Substr([r].[StartDateTime], -6)
+		ELSE strftime('%Y-%m-%d %H:%M:%f', [r].[StartDateTime], CAST(CAST(([r].[PreNotification] / 10000) * -1 AS Float) / 1000 AS NVarChar(22)) || ' Second') || '+00:00'
 	END) < strftime('%Y-%m-%d %H:%M:%f', @cutoff)
 ORDER BY
 	[r].[Id]
