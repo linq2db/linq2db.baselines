@@ -20,7 +20,7 @@ SELECT
 FROM
 	`Issue5777Row` `r`
 WHERE
-	CAST(TimestampDiff(Microsecond, `r`.`ClosedOnNullable`, '2026-09-30') * 10 AS DOUBLE) / 864000000000 > 0
+	CAST(TimestampDiff(Microsecond, `r`.`ClosedOnNullable`, '2026-10-01') * 10 AS DOUBLE) / 864000000000 > 0
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 SELECT

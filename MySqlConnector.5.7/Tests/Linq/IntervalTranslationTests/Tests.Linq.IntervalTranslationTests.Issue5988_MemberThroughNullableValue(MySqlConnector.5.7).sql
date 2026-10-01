@@ -20,7 +20,7 @@ SELECT
 FROM
 	`Issue5777Row` `r`
 WHERE
-	CAST(TimestampDiff(Microsecond, `r`.`ClosedOnNullable`, '2026-09-30') * 10 AS DECIMAL(29, 10)) / 864000000000 > 0
+	CAST(TimestampDiff(Microsecond, `r`.`ClosedOnNullable`, '2026-10-01') * 10 AS DECIMAL(29, 10)) / 864000000000 > 0
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 SELECT
