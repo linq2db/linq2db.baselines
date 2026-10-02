@@ -2,7 +2,7 @@
 SELECT
 	[r].[Id]
 FROM
-	[Issue5777Row] [r]
+	[ClosedPeriodRow] [r]
 WHERE
 	CAST(CAST(Round((JulianDay(DATETIME('now', 'localtime')) - JulianDay([r].[ClosedOn])) * 86400000) AS INTEGER) * 10000 AS Float) / 864000000000 > 300
 
@@ -10,7 +10,7 @@ WHERE
 SELECT
 	[r].[Id]
 FROM
-	[Issue5777Row] [r]
+	[ClosedPeriodRow] [r]
 ORDER BY
 	CAST(CAST(Round((JulianDay(DATETIME('now', 'localtime')) - JulianDay([r].[ClosedOn])) * 86400000) AS INTEGER) * 10000 AS Float) / 864000000000
 
@@ -19,7 +19,7 @@ SELECT
 	CAST(CAST(Round((JulianDay(DATETIME('now', 'localtime')) - JulianDay([r].[ClosedOn])) * 86400000) AS INTEGER) * 10000 AS Float) / 864000000000,
 	CAST(((CAST(Round((JulianDay(DATETIME('now', 'localtime')) - JulianDay([r].[ClosedOn])) * 86400000) AS INTEGER) * 10000) / 36000000000) % 24 AS INTEGER)
 FROM
-	[Issue5777Row] [r]
+	[ClosedPeriodRow] [r]
 WHERE
 	[r].[Id] = 1
 LIMIT 2
