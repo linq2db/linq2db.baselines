@@ -33,5 +33,5 @@ SELECT
 FROM
 	"DurationRow" "r"
 WHERE
-	DateAdd(millisecond, Mod("r"."InSeconds" * 10000000, 864000000000) / 10000, DateAdd(day, ("r"."InSeconds" * 10000000) / 864000000000, TIMESTAMP '2026-03-01 00:00:00.0000')) > TIMESTAMP '2026-03-01 01:00:00.0000'
+	DateAdd(millisecond, Mod("r"."InSeconds" * 10000000, 864000000000) / 10000, DateAdd(day, ("r"."InSeconds" * 10000000) / 864000000000, CAST(TIMESTAMP '2026-03-01 00:00:00.0000' AS TimeStamp))) > TIMESTAMP '2026-03-01 01:00:00.0000'
 

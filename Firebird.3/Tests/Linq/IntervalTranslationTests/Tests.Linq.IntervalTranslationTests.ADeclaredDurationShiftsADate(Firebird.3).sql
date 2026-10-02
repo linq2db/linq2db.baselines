@@ -29,9 +29,9 @@ VALUES
 
 -- Firebird.3 Firebird3
 SELECT
-	DateAdd(millisecond, CAST(Mod("r"."InSeconds" * 10000000, 864000000000) / 1000 AS Decimal(18, 1)) / 10, DateAdd(day, ("r"."InSeconds" * 10000000) / 864000000000, TIMESTAMP '2026-03-01 00:00:00.0000')),
-	DateAdd(millisecond, CAST(Mod(("r"."InSeconds" * 10000000) * -1, 864000000000) / 1000 AS Decimal(18, 1)) / 10, DateAdd(day, (("r"."InSeconds" * 10000000) * -1) / 864000000000, TIMESTAMP '2026-03-01 00:00:00.0000')),
-	DateAdd(millisecond, CAST(Mod("r"."InTicks", 864000000000) / 1000 AS Decimal(18, 1)) / 10, DateAdd(day, "r"."InTicks" / 864000000000, TIMESTAMP '2026-03-01 00:00:00.0000'))
+	DateAdd(millisecond, CAST(Mod("r"."InSeconds" * 10000000, 864000000000) / 1000 AS Decimal(18, 1)) / 10, DateAdd(day, ("r"."InSeconds" * 10000000) / 864000000000, CAST(TIMESTAMP '2026-03-01 00:00:00.0000' AS TimeStamp))),
+	DateAdd(millisecond, CAST(Mod(("r"."InSeconds" * 10000000) * -1, 864000000000) / 1000 AS Decimal(18, 1)) / 10, DateAdd(day, (("r"."InSeconds" * 10000000) * -1) / 864000000000, CAST(TIMESTAMP '2026-03-01 00:00:00.0000' AS TimeStamp))),
+	DateAdd(millisecond, CAST(Mod("r"."InTicks", 864000000000) / 1000 AS Decimal(18, 1)) / 10, DateAdd(day, "r"."InTicks" / 864000000000, CAST(TIMESTAMP '2026-03-01 00:00:00.0000' AS TimeStamp)))
 FROM
 	"DurationRow" "r"
 FETCH NEXT 2 ROWS ONLY
