@@ -27,7 +27,7 @@ SET     @TotalMilliseconds = 0.1234
 
 SELECT TOP 2
 	@Ticks + [r].[Id],
-	@TotalMilliseconds + [r].[Id]
+	@TotalMilliseconds + CAST([r].[Id] AS Float)
 FROM
 	[EventRow] [r]
 

@@ -27,7 +27,7 @@ SET     $TotalMilliseconds = Double('0.1234')
 
 SELECT
 	$Ticks + r.Id as Ticks,
-	$TotalMilliseconds + r.Id as Milliseconds
+	$TotalMilliseconds + Unwrap(CAST(r.Id AS Double)) as Milliseconds
 FROM
 	EventRow r
 LIMIT 2
