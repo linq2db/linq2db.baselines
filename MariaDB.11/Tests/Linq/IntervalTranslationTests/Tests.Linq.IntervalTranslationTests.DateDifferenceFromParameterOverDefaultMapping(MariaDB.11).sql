@@ -5,7 +5,7 @@ SET     @asOf = '2026-01-10 08:15:30'
 SELECT
 	`r`.`Id`
 FROM
-	`Issue5777Row` `r`
+	`ClosedPeriodRow` `r`
 WHERE
 	CAST(TimestampDiff(Microsecond, `r`.`ClosedOn`, @asOf) * 10 AS DOUBLE) / 864000000000 > 0
 
@@ -16,7 +16,7 @@ SET     @asOf = '2026-01-10 08:15:30'
 SELECT
 	`r`.`Id`
 FROM
-	`Issue5777Row` `r`
+	`ClosedPeriodRow` `r`
 WHERE
 	CAST(TimestampDiff(Microsecond, @asOf, `r`.`ClosedOn`) * 10 AS DOUBLE) / 36000000000 > 0
 
@@ -27,7 +27,7 @@ SET     @asOf = '2026-01-10 08:15:30'
 SELECT
 	`r`.`Id`
 FROM
-	`Issue5777Row` `r`
+	`ClosedPeriodRow` `r`
 ORDER BY
 	CAST(TimestampDiff(Microsecond, `r`.`ClosedOn`, @asOf) * 10 AS DOUBLE) / 600000000
 
@@ -38,7 +38,7 @@ SET     @asOf = '2026-01-10 08:15:30'
 SELECT
 	CAST(TimestampDiff(Microsecond, @asOf, `r`.`ClosedOn`) * 10 AS DOUBLE) / 36000000000
 FROM
-	`Issue5777Row` `r`
+	`ClosedPeriodRow` `r`
 WHERE
 	`r`.`Id` = 1
 LIMIT 2
