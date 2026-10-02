@@ -1,0 +1,56 @@
+﻿-- DuckDB
+SELECT
+	r.Id
+FROM
+	Issue5777Row r
+WHERE
+	CAST(Date_Diff('microsecond', r.ClosedOn, '2026-10-01 00:00:00.000000'::TIMESTAMP) * 10 AS DOUBLE) / 864000000000 > 0
+
+-- DuckDB
+SELECT
+	r.Id
+FROM
+	Issue5777Row r
+WHERE
+	CAST(Date_Diff('microsecond', r.ClosedOn, '2026-10-01 00:00:00.000000'::TIMESTAMP) * 10 AS DOUBLE) / 36000000000 > 0
+
+-- DuckDB
+SELECT
+	r.Id
+FROM
+	Issue5777Row r
+WHERE
+	CAST(Date_Diff('microsecond', r.ClosedOn, '2026-10-01 00:00:00.000000'::TIMESTAMP) * 10 AS DOUBLE) / 600000000 > 0
+
+-- DuckDB
+SELECT
+	r.Id
+FROM
+	Issue5777Row r
+WHERE
+	CAST((Date_Diff('microsecond', r.ClosedOn, '2026-10-01 00:00:00.000000'::TIMESTAMP) * 10) // 864000000000 AS INTEGER) > 0
+
+-- DuckDB
+SELECT
+	r.Id
+FROM
+	Issue5777Row r
+WHERE
+	CAST(Date_Diff('microsecond', r.ClosedOnNullable, '2026-10-01 00:00:00.000000'::TIMESTAMP) * 10 AS DOUBLE) / 864000000000 > 0
+
+-- DuckDB
+SELECT
+	r.Id
+FROM
+	Issue5777Row r
+ORDER BY
+	CAST(Date_Diff('microsecond', r.ClosedOn, '2026-10-01 00:00:00.000000'::TIMESTAMP) * 10 AS DOUBLE) / 864000000000
+
+-- DuckDB
+SELECT
+	CAST(Date_Diff('microsecond', r.ClosedOn, '2026-10-01 00:00:00.000000'::TIMESTAMP) * 10 AS DOUBLE) / 864000000000
+FROM
+	Issue5777Row r
+ORDER BY
+	r.Id
+

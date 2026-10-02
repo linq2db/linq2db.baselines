@@ -26,21 +26,18 @@ VALUES
 -- SqlServer.2005.MS SqlServer.2005
 SELECT
 	[t1].[Source],
-	[t1].[Duration],
-	[t1].[Duration_1]
+	[t1].[Duration]
 FROM
 	(
 		SELECT
 			CAST(1 AS Int) as [Source],
-			[r].[FinishedOn] as [Duration],
-			[r].[StartedOn] as [Duration_1]
+			(CAST(DateDiff(day, [r].[StartedOn], [r].[FinishedOn]) AS BigInt) * 86400) * 10000000 + CAST(DateDiff(millisecond, DateAdd(day, CAST(CAST(DateDiff(day, [r].[StartedOn], [r].[FinishedOn]) AS BigInt) AS Int), [r].[StartedOn]), [r].[FinishedOn]) AS BigInt) * 10000 as [Duration]
 		FROM
 			[BudgetedTaskRow] [r]
 		UNION ALL
 		SELECT
 			CAST(2 AS Int) as [Source],
-			[r_1].[FinishedOn] as [Duration],
-			[r_1].[StartedOn] as [Duration_1]
+			(CAST(DateDiff(day, [r_1].[StartedOn], [r_1].[FinishedOn]) AS BigInt) * 86400) * 10000000 + CAST(DateDiff(millisecond, DateAdd(day, CAST(CAST(DateDiff(day, [r_1].[StartedOn], [r_1].[FinishedOn]) AS BigInt) AS Int), [r_1].[StartedOn]), [r_1].[FinishedOn]) AS BigInt) * 10000 as [Duration]
 		FROM
 			[BudgetedTaskRow] [r_1]
 	) [t1]
