@@ -80,7 +80,7 @@ SELECT
 FROM
 	(
 		SELECT
-			(CAST(DateDiff(day, [g_1].[StartedOn], [g_1].[FinishedOn]) AS BigInt) * 86400) * 10000000 + CAST(DateDiff(second, DateAdd(day, CAST(CAST(DateDiff(day, [g_1].[StartedOn], [g_1].[FinishedOn]) AS BigInt) AS Int), [g_1].[StartedOn]), [g_1].[FinishedOn]) AS BigInt) * 10000000 + CAST(DateDiff(nanosecond, DateAdd(second, CAST(CAST(DateDiff(second, DateAdd(day, CAST(CAST(DateDiff(day, [g_1].[StartedOn], [g_1].[FinishedOn]) AS BigInt) AS Int), [g_1].[StartedOn]), [g_1].[FinishedOn]) AS BigInt) AS Int), DateAdd(day, CAST(CAST(DateDiff(day, [g_1].[StartedOn], [g_1].[FinishedOn]) AS BigInt) AS Int), [g_1].[StartedOn])), [g_1].[FinishedOn]) AS BigInt) / 100 as [Key_1]
+			(CAST(DateDiff(day, [g_1].[StartedOn], [g_1].[FinishedOn]) AS BigInt) * 86400) * 10000000 + CAST(DateDiff(second, CAST(DateAdd(day, CAST(CAST(DateDiff(day, [g_1].[StartedOn], [g_1].[FinishedOn]) AS BigInt) AS Int), [g_1].[StartedOn]) AS DateTime2), [g_1].[FinishedOn]) AS BigInt) * 10000000 + CAST(DateDiff(nanosecond, DateAdd(second, CAST(CAST(DateDiff(second, CAST(DateAdd(day, CAST(CAST(DateDiff(day, [g_1].[StartedOn], [g_1].[FinishedOn]) AS BigInt) AS Int), [g_1].[StartedOn]) AS DateTime2), [g_1].[FinishedOn]) AS BigInt) AS Int), CAST(DateAdd(day, CAST(CAST(DateDiff(day, [g_1].[StartedOn], [g_1].[FinishedOn]) AS BigInt) AS Int), [g_1].[StartedOn]) AS DateTime2)), [g_1].[FinishedOn]) AS BigInt) / 100 as [Key_1]
 		FROM
 			[BudgetedTaskRow] [g_1]
 	) [t1]
