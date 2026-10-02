@@ -1,11 +1,51 @@
 ﻿-- DuckDB
 SELECT
-	CAST(Date_Diff('microsecond', x.StartedOn, b.FinishedOn) * 10 AS DOUBLE) / 864000000000,
-	CAST((Date_Diff('microsecond', x.StartedOn, b.FinishedOn) * 10) // 864000000000 AS INTEGER),
-	CAST(((Date_Diff('microsecond', x.StartedOn, b.FinishedOn) * 10) // 36000000000) % 24 AS INTEGER),
-	CAST(((Date_Diff('microsecond', x.StartedOn, b.FinishedOn) * 10) // 600000000) % 60 AS INTEGER),
-	CAST(Date_Diff('microsecond', b.FinishedOn, x.StartedOn) * 10 AS DOUBLE) / 36000000000,
+	CAST(Date_Diff('microsecond', x.StartedOn, b.FinishedOn) * 10 AS DOUBLE) / 864000000000
+FROM
+	OuterJoinLeft x
+		LEFT JOIN OuterJoinRight b ON b.Id = x.Id
+ORDER BY
+	x.Id
+
+-- DuckDB
+SELECT
+	CAST((Date_Diff('microsecond', x.StartedOn, b.FinishedOn) * 10) // 864000000000 AS INTEGER)
+FROM
+	OuterJoinLeft x
+		LEFT JOIN OuterJoinRight b ON b.Id = x.Id
+ORDER BY
+	x.Id
+
+-- DuckDB
+SELECT
+	CAST(((Date_Diff('microsecond', x.StartedOn, b.FinishedOn) * 10) // 36000000000) % 24 AS INTEGER)
+FROM
+	OuterJoinLeft x
+		LEFT JOIN OuterJoinRight b ON b.Id = x.Id
+ORDER BY
+	x.Id
+
+-- DuckDB
+SELECT
+	CAST(((Date_Diff('microsecond', x.StartedOn, b.FinishedOn) * 10) // 600000000) % 60 AS INTEGER)
+FROM
+	OuterJoinLeft x
+		LEFT JOIN OuterJoinRight b ON b.Id = x.Id
+ORDER BY
+	x.Id
+
+-- DuckDB
+SELECT
 	CAST(((Date_Diff('microsecond', b.FinishedOn, x.StartedOn) * 10) // 36000000000) % 24 AS INTEGER)
+FROM
+	OuterJoinLeft x
+		LEFT JOIN OuterJoinRight b ON b.Id = x.Id
+ORDER BY
+	x.Id
+
+-- DuckDB
+SELECT
+	CAST(Date_Diff('microsecond', b.FinishedOn, x.StartedOn) * 10 AS DOUBLE) / 36000000000
 FROM
 	OuterJoinLeft x
 		LEFT JOIN OuterJoinRight b ON b.Id = x.Id
