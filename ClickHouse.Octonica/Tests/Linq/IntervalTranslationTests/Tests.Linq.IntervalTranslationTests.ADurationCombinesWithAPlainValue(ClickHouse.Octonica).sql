@@ -17,9 +17,9 @@ VALUES
 -- ClickHouse.Octonica ClickHouse
 SELECT
 	r.Budget + toInt64(300),
-	toInt64(intDiv(toUnixTimestamp64Nano(toDateTime64(r.FinishedOn, 7)) - toUnixTimestamp64Nano(toDateTime64(r.StartedOn, 7)), toInt64(100)) + toInt64(3000000000)),
-	toInt64(toInt64(3000000000) + intDiv(toUnixTimestamp64Nano(toDateTime64(r.FinishedOn, 7)) - toUnixTimestamp64Nano(toDateTime64(r.StartedOn, 7)), toInt64(100))),
-	toInt64(intDiv(toUnixTimestamp64Nano(toDateTime64(r.FinishedOn, 7)) - toUnixTimestamp64Nano(toDateTime64(r.StartedOn, 7)), toInt64(100)) - toInt64(3000000000))
+	toInt64(intDiv(toUnixTimestamp64Nano(r.FinishedOn) - toUnixTimestamp64Nano(r.StartedOn), toInt64(100)) + toInt64(3000000000)),
+	toInt64(toInt64(3000000000) + intDiv(toUnixTimestamp64Nano(r.FinishedOn) - toUnixTimestamp64Nano(r.StartedOn), toInt64(100))),
+	toInt64(intDiv(toUnixTimestamp64Nano(r.FinishedOn) - toUnixTimestamp64Nano(r.StartedOn), toInt64(100)) - toInt64(3000000000))
 FROM
 	BudgetedTaskRow r
 LIMIT 2

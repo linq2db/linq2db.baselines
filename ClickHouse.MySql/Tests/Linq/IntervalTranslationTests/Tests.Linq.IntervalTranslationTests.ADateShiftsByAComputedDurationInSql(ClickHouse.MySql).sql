@@ -23,9 +23,9 @@ LIMIT 2
 
 -- ClickHouse.MySql ClickHouse
 SELECT
-	r.StartedOn + toIntervalNanosecond(toInt64(intDiv(toUnixTimestamp64Nano(toDateTime64(r.FinishedOn, 7)) - toUnixTimestamp64Nano(toDateTime64(r.StartedOn, 7)), toInt64(100)) + r.Budget * toInt64(10000000)) * toInt64(100)),
-	r.StartedOn + toIntervalNanosecond(toInt64(toInt64(r.Budget + r.Budget) * toInt64(10000000) - intDiv(toUnixTimestamp64Nano(toDateTime64(r.FinishedOn, 7)) - toUnixTimestamp64Nano(toDateTime64(r.StartedOn, 7)), toInt64(100))) * toInt64(100)),
-	r.StartedOn - toIntervalNanosecond(toInt64(intDiv(toUnixTimestamp64Nano(toDateTime64(r.FinishedOn, 7)) - toUnixTimestamp64Nano(toDateTime64(r.StartedOn, 7)), toInt64(100)) + r.Budget * toInt64(10000000)) * toInt64(100))
+	r.StartedOn + toIntervalNanosecond(toInt64(intDiv(toUnixTimestamp64Nano(r.FinishedOn) - toUnixTimestamp64Nano(r.StartedOn), toInt64(100)) + r.Budget * toInt64(10000000)) * toInt64(100)),
+	r.StartedOn + toIntervalNanosecond(toInt64(toInt64(r.Budget + r.Budget) * toInt64(10000000) - intDiv(toUnixTimestamp64Nano(r.FinishedOn) - toUnixTimestamp64Nano(r.StartedOn), toInt64(100))) * toInt64(100)),
+	r.StartedOn - toIntervalNanosecond(toInt64(intDiv(toUnixTimestamp64Nano(r.FinishedOn) - toUnixTimestamp64Nano(r.StartedOn), toInt64(100)) + r.Budget * toInt64(10000000)) * toInt64(100))
 FROM
 	BudgetedTaskRow r
 LIMIT 2
