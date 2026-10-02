@@ -27,7 +27,7 @@ SET     @TotalMilliseconds = 0.1234
 
 SELECT
 	@Ticks + `r`.`Id`,
-	@TotalMilliseconds + `r`.`Id`
+	@TotalMilliseconds + CAST(`r`.`Id` AS DECIMAL(29, 10))
 FROM
 	`EventRow` `r`
 LIMIT 2
