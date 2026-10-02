@@ -1,0 +1,16 @@
+﻿-- DB2 DB2.LUW DB2LUW
+DECLARE @min SmallInt(2) -- Int16
+SET     @min = 0
+
+SELECT
+	CAST(@min AS SmallInt)
+FROM SYSIBM.SYSDUMMY1
+
+-- DB2 DB2.LUW DB2LUW
+DECLARE @max SmallInt(2) -- Int16
+SET     @max = 255
+
+SELECT
+	CAST(@max AS SmallInt)
+FROM SYSIBM.SYSDUMMY1
+

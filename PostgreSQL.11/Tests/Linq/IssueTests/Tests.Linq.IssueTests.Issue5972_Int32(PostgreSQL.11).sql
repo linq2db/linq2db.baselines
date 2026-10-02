@@ -1,0 +1,16 @@
+﻿-- PostgreSQL.11 PostgreSQL
+SELECT
+	-2147483648
+
+-- PostgreSQL.11 PostgreSQL
+SELECT
+	2147483647
+
+-- PostgreSQL.11 PostgreSQL
+SELECT
+	-2147483648
+
+-- PostgreSQL.11 PostgreSQL
+SELECT
+	2147483647
+
