@@ -26,8 +26,8 @@ DECLARE $late Timestamp -- DateTime2
 SET     $late = Timestamp('2100-01-01T00:00:00.000000Z')
 
 SELECT
-	Unwrap(CAST($early + DateTime::IntervalFromMicroseconds((Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l) / 10l) AS Timestamp)) as Forward_1,
-	Unwrap(CAST($late + DateTime::IntervalFromMicroseconds(((Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l) * -1l) / 10l) AS Timestamp)) as Backward_1
+	Unwrap(CAST(Unwrap(CAST($early AS Timestamp)) + DateTime::IntervalFromMicroseconds((Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l) / 10l) AS Timestamp)) as Forward_1,
+	Unwrap(CAST(Unwrap(CAST($late AS Timestamp)) + DateTime::IntervalFromMicroseconds(((Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l) * -1l) / 10l) AS Timestamp)) as Backward_1
 FROM
 	EventRow r
 LIMIT 2
