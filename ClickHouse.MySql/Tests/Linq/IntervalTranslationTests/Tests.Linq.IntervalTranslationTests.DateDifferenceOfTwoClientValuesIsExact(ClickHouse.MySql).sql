@@ -15,7 +15,7 @@ VALUES
 -- ClickHouse.MySql ClickHouse
 SELECT
 	toInt64(1234) + r.Id,
-	toFloat64(0.1234) + r.Id
+	toFloat64(0.1234) + toFloat64(r.Id)
 FROM
 	EventRow r
 LIMIT 2
