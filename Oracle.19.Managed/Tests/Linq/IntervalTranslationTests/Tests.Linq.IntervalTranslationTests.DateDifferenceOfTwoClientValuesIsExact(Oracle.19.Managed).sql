@@ -27,7 +27,7 @@ SET     @TotalMilliseconds = 0.1234D
 
 SELECT
 	:Ticks + r."Id" as "Ticks",
-	:TotalMilliseconds + r."Id" as "Milliseconds"
+	:TotalMilliseconds + CAST(r."Id" AS Float) as "Milliseconds"
 FROM
 	"EventRow" r
 FETCH NEXT 2 ROWS ONLY
