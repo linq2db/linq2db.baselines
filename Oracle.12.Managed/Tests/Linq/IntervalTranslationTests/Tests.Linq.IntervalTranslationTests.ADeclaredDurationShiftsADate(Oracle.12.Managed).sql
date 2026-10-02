@@ -29,9 +29,9 @@ VALUES
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
 SELECT
-	TIMESTAMP '2026-03-01 00:00:00.000000' + NumToDSInterval(Trunc((r."InSeconds" * 10000000) / 864000000000), 'DAY') + NumToDSInterval(MOD(r."InSeconds" * 10000000, 864000000000) / 10000000, 'SECOND') as "AddedSeconds",
-	TIMESTAMP '2026-03-01 00:00:00.000000' + NumToDSInterval(Trunc(((r."InSeconds" * 10000000) * -1) / 864000000000), 'DAY') + NumToDSInterval(MOD((r."InSeconds" * 10000000) * -1, 864000000000) / 10000000, 'SECOND') as "SubtractedSeconds",
-	TIMESTAMP '2026-03-01 00:00:00.000000' + NumToDSInterval(Trunc(r."InTicks" / 864000000000), 'DAY') + NumToDSInterval(MOD(r."InTicks", 864000000000) / 10000000, 'SECOND') as "AddedTicks"
+	CAST(TIMESTAMP '2026-03-01 00:00:00.000000' AS timestamp(7)) + NumToDSInterval(Trunc((r."InSeconds" * 10000000) / 864000000000), 'DAY') + NumToDSInterval(MOD(r."InSeconds" * 10000000, 864000000000) / 10000000, 'SECOND') as "AddedSeconds",
+	CAST(TIMESTAMP '2026-03-01 00:00:00.000000' AS timestamp(7)) + NumToDSInterval(Trunc(((r."InSeconds" * 10000000) * -1) / 864000000000), 'DAY') + NumToDSInterval(MOD((r."InSeconds" * 10000000) * -1, 864000000000) / 10000000, 'SECOND') as "SubtractedSeconds",
+	CAST(TIMESTAMP '2026-03-01 00:00:00.000000' AS timestamp(7)) + NumToDSInterval(Trunc(r."InTicks" / 864000000000), 'DAY') + NumToDSInterval(MOD(r."InTicks", 864000000000) / 10000000, 'SECOND') as "AddedTicks"
 FROM
 	"DurationRow" r
 FETCH NEXT 2 ROWS ONLY
