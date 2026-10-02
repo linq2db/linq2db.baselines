@@ -21,7 +21,7 @@ VALUES
 
 -- YDB Ydb
 SELECT
-	Unwrap(CAST(Timestamp('2026-03-01T00:00:00.000000Z') + DateTime::IntervalFromMicroseconds((Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l) / 10l) AS Timestamp)) as c1
+	Unwrap(CAST(Unwrap(CAST(Timestamp('2026-03-01T00:00:00.000000Z') AS Timestamp)) + DateTime::IntervalFromMicroseconds((Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l) / 10l) AS Timestamp)) as c1
 FROM
 	EventRow r
 LIMIT 2
@@ -32,5 +32,5 @@ SELECT
 FROM
 	EventRow r
 WHERE
-	Unwrap(CAST(Timestamp('2026-03-01T00:00:00.000000Z') + DateTime::IntervalFromMicroseconds((Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l) / 10l) AS Timestamp)) > Timestamp('2026-03-01T00:00:00.001000Z')
+	Unwrap(CAST(Unwrap(CAST(Timestamp('2026-03-01T00:00:00.000000Z') AS Timestamp)) + DateTime::IntervalFromMicroseconds((Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l) / 10l) AS Timestamp)) > Timestamp('2026-03-01T00:00:00.001000Z')
 

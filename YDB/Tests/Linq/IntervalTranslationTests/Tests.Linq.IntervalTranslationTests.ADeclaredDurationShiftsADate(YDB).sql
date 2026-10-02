@@ -29,9 +29,9 @@ VALUES
 
 -- YDB Ydb
 SELECT
-	Unwrap(CAST(Timestamp('2026-03-01T00:00:00.000000Z') + DateTime::IntervalFromMicroseconds((r.InSeconds * 10000000l) / 10l) AS Timestamp)) as AddedSeconds,
-	Unwrap(CAST(Timestamp('2026-03-01T00:00:00.000000Z') + DateTime::IntervalFromMicroseconds(((r.InSeconds * 10000000l) * -1l) / 10l) AS Timestamp)) as SubtractedSeconds,
-	Unwrap(CAST(Timestamp('2026-03-01T00:00:00.000000Z') + DateTime::IntervalFromMicroseconds(r.InTicks / 10l) AS Timestamp)) as AddedTicks
+	Unwrap(CAST(Unwrap(CAST(Timestamp('2026-03-01T00:00:00.000000Z') AS Timestamp)) + DateTime::IntervalFromMicroseconds((r.InSeconds * 10000000l) / 10l) AS Timestamp)) as AddedSeconds,
+	Unwrap(CAST(Unwrap(CAST(Timestamp('2026-03-01T00:00:00.000000Z') AS Timestamp)) + DateTime::IntervalFromMicroseconds(((r.InSeconds * 10000000l) * -1l) / 10l) AS Timestamp)) as SubtractedSeconds,
+	Unwrap(CAST(Unwrap(CAST(Timestamp('2026-03-01T00:00:00.000000Z') AS Timestamp)) + DateTime::IntervalFromMicroseconds(r.InTicks / 10l) AS Timestamp)) as AddedTicks
 FROM
 	DurationRow r
 LIMIT 2

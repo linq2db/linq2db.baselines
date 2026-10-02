@@ -27,7 +27,7 @@ VALUES
 UPDATE
 	ShiftTargetRow
 SET
-	Due = Unwrap(CAST(Timestamp('2026-03-01T00:00:00.000000Z') + DateTime::IntervalFromMicroseconds((Unwrap(CAST(ShiftTargetRow.FinishedOn - ShiftTargetRow.StartedOn AS Int64)) * 10l) / 10l) AS Timestamp))
+	Due = Unwrap(CAST(Unwrap(CAST(Timestamp('2026-03-01T00:00:00.000000Z') AS Timestamp)) + DateTime::IntervalFromMicroseconds((Unwrap(CAST(ShiftTargetRow.FinishedOn - ShiftTargetRow.StartedOn AS Int64)) * 10l) / 10l) AS Timestamp))
 WHERE
 	ShiftTargetRow.Id = 1
 

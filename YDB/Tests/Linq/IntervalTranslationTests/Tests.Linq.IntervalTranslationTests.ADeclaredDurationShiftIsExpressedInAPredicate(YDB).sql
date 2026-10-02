@@ -33,5 +33,5 @@ SELECT
 FROM
 	DurationRow r
 WHERE
-	Unwrap(CAST(Timestamp('2026-03-01T00:00:00.000000Z') + DateTime::IntervalFromMicroseconds((r.InSeconds * 10000000l) / 10l) AS Timestamp)) > Timestamp('2026-03-01T01:00:00.000000Z')
+	Unwrap(CAST(Unwrap(CAST(Timestamp('2026-03-01T00:00:00.000000Z') AS Timestamp)) + DateTime::IntervalFromMicroseconds((r.InSeconds * 10000000l) / 10l) AS Timestamp)) > Timestamp('2026-03-01T01:00:00.000000Z')
 
