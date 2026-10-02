@@ -27,7 +27,7 @@ SET     @TotalMilliseconds = 0.1234D
 
 SELECT
 	:Ticks + r."Id",
-	:TotalMilliseconds + r."Id"
+	:TotalMilliseconds + CAST(r."Id" AS Float)
 FROM
 	"EventRow" r
 WHERE
