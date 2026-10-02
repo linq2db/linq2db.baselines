@@ -2,13 +2,13 @@
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @InSeconds BigInt -- Int64
-SET     @InSeconds = 5400
+SET     @InSeconds = 3000000005
 DECLARE @InTicks BigInt -- Int64
-SET     @InTicks = 54000000000
+SET     @InTicks = 30000000050000000
 DECLARE @Undeclared BigInt -- Int64
-SET     @Undeclared = 54000000000
+SET     @Undeclared = 30000000050000000
 DECLARE @UndeclaredSeconds BigInt -- Int64
-SET     @UndeclaredSeconds = 5400
+SET     @UndeclaredSeconds = 3000000005
 
 INSERT INTO [DurationRow]
 (
@@ -28,10 +28,22 @@ VALUES
 )
 
 -- SqlServer.2016.MS SqlServer.2016
+SELECT TOP (2)
+	CAST([r].[InSeconds] / 86400 AS Int),
+	CAST(([r].[InSeconds] / 3600) % 24 AS Int),
+	CAST(([r].[InSeconds] / 60) % 60 AS Int),
+	CAST([r].[InSeconds] % 60 AS Int)
+FROM
+	[DurationRow] [r]
+
+-- SqlServer.2016.MS SqlServer.2016
+DECLARE @Seconds Int -- Int32
+SET     @Seconds = 5
+
 SELECT
 	[r].[Id]
 FROM
 	[DurationRow] [r]
 WHERE
-	DateAdd(nanosecond, CAST((([r].[InSeconds] * 10000000) % 10000000) * 100 AS Int), DateAdd(second, CAST((([r].[InSeconds] * 10000000) % 864000000000) / 10000000 AS Int), DateAdd(day, CAST(([r].[InSeconds] * 10000000) / 864000000000 AS Int), CAST(DATETIME2FROMPARTS(2026, 3, 1, 0, 0, 0, 0, 7) AS DateTime2)))) > DATETIME2FROMPARTS(2026, 3, 1, 1, 0, 0, 0, 7)
+	CAST([r].[InSeconds] % 60 AS Int) = @Seconds
 
