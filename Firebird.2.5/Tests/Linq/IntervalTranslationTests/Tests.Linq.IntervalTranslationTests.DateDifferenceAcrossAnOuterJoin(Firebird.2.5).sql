@@ -1,11 +1,51 @@
 ﻿-- Firebird.2.5 Firebird
 SELECT
-	CAST(CAST(CAST(Floor(DateDiff(millisecond, "x"."StartedOn", "b"."FinishedOn") * 10) AS BigInt) * 1000 AS BigInt) AS DOUBLE PRECISION) / 864000000000,
-	CAST(CAST(CAST(Floor(DateDiff(millisecond, "x"."StartedOn", "b"."FinishedOn") * 10) AS BigInt) * 1000 AS BigInt) / 864000000000 AS Int),
-	CAST(Mod(CAST(CAST(Floor(DateDiff(millisecond, "x"."StartedOn", "b"."FinishedOn") * 10) AS BigInt) * 1000 AS BigInt) / 36000000000, 24) AS Int),
-	CAST(Mod(CAST(CAST(Floor(DateDiff(millisecond, "x"."StartedOn", "b"."FinishedOn") * 10) AS BigInt) * 1000 AS BigInt) / 600000000, 60) AS Int),
-	CAST(CAST(CAST(Floor(DateDiff(millisecond, "b"."FinishedOn", "x"."StartedOn") * 10) AS BigInt) * 1000 AS BigInt) AS DOUBLE PRECISION) / 36000000000,
+	CAST(CAST(CAST(Floor(DateDiff(millisecond, "x"."StartedOn", "b"."FinishedOn") * 10) AS BigInt) * 1000 AS BigInt) AS DOUBLE PRECISION) / 864000000000
+FROM
+	"OuterJoinLeft" "x"
+		LEFT JOIN "OuterJoinRight" "b" ON "b"."Id" = "x"."Id"
+ORDER BY
+	"x"."Id"
+
+-- Firebird.2.5 Firebird
+SELECT
+	CAST(CAST(CAST(Floor(DateDiff(millisecond, "x"."StartedOn", "b"."FinishedOn") * 10) AS BigInt) * 1000 AS BigInt) / 864000000000 AS Int)
+FROM
+	"OuterJoinLeft" "x"
+		LEFT JOIN "OuterJoinRight" "b" ON "b"."Id" = "x"."Id"
+ORDER BY
+	"x"."Id"
+
+-- Firebird.2.5 Firebird
+SELECT
+	CAST(Mod(CAST(CAST(Floor(DateDiff(millisecond, "x"."StartedOn", "b"."FinishedOn") * 10) AS BigInt) * 1000 AS BigInt) / 36000000000, 24) AS Int)
+FROM
+	"OuterJoinLeft" "x"
+		LEFT JOIN "OuterJoinRight" "b" ON "b"."Id" = "x"."Id"
+ORDER BY
+	"x"."Id"
+
+-- Firebird.2.5 Firebird
+SELECT
+	CAST(Mod(CAST(CAST(Floor(DateDiff(millisecond, "x"."StartedOn", "b"."FinishedOn") * 10) AS BigInt) * 1000 AS BigInt) / 600000000, 60) AS Int)
+FROM
+	"OuterJoinLeft" "x"
+		LEFT JOIN "OuterJoinRight" "b" ON "b"."Id" = "x"."Id"
+ORDER BY
+	"x"."Id"
+
+-- Firebird.2.5 Firebird
+SELECT
 	CAST(Mod(CAST(CAST(Floor(DateDiff(millisecond, "b"."FinishedOn", "x"."StartedOn") * 10) AS BigInt) * 1000 AS BigInt) / 36000000000, 24) AS Int)
+FROM
+	"OuterJoinLeft" "x"
+		LEFT JOIN "OuterJoinRight" "b" ON "b"."Id" = "x"."Id"
+ORDER BY
+	"x"."Id"
+
+-- Firebird.2.5 Firebird
+SELECT
+	CAST(CAST(CAST(Floor(DateDiff(millisecond, "b"."FinishedOn", "x"."StartedOn") * 10) AS BigInt) * 1000 AS BigInt) AS DOUBLE PRECISION) / 36000000000
 FROM
 	"OuterJoinLeft" "x"
 		LEFT JOIN "OuterJoinRight" "b" ON "b"."Id" = "x"."Id"
