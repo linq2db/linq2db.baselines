@@ -1,11 +1,51 @@
 ﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
-	Extract(epoch From (b."FinishedOn" - x."StartedOn")) / 86400,
-	Trunc(Extract(day From (b."FinishedOn" - x."StartedOn")))::Int,
-	Trunc(Extract(hour From (b."FinishedOn" - x."StartedOn")))::Int,
-	Trunc(Extract(minute From (b."FinishedOn" - x."StartedOn")))::Int,
-	Extract(epoch From (x."StartedOn" - b."FinishedOn")) / 3600,
+	Extract(epoch From (b."FinishedOn" - x."StartedOn")) / 86400
+FROM
+	"OuterJoinLeft" x
+		LEFT JOIN "OuterJoinRight" b ON b."Id" = x."Id"
+ORDER BY
+	x."Id"
+
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+SELECT
+	Trunc(Extract(day From (b."FinishedOn" - x."StartedOn")))::Int
+FROM
+	"OuterJoinLeft" x
+		LEFT JOIN "OuterJoinRight" b ON b."Id" = x."Id"
+ORDER BY
+	x."Id"
+
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+SELECT
+	Trunc(Extract(hour From (b."FinishedOn" - x."StartedOn")))::Int
+FROM
+	"OuterJoinLeft" x
+		LEFT JOIN "OuterJoinRight" b ON b."Id" = x."Id"
+ORDER BY
+	x."Id"
+
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+SELECT
+	Trunc(Extract(minute From (b."FinishedOn" - x."StartedOn")))::Int
+FROM
+	"OuterJoinLeft" x
+		LEFT JOIN "OuterJoinRight" b ON b."Id" = x."Id"
+ORDER BY
+	x."Id"
+
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+SELECT
 	Trunc(Extract(hour From (x."StartedOn" - b."FinishedOn")))::Int
+FROM
+	"OuterJoinLeft" x
+		LEFT JOIN "OuterJoinRight" b ON b."Id" = x."Id"
+ORDER BY
+	x."Id"
+
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+SELECT
+	Extract(epoch From (x."StartedOn" - b."FinishedOn")) / 3600
 FROM
 	"OuterJoinLeft" x
 		LEFT JOIN "OuterJoinRight" b ON b."Id" = x."Id"
