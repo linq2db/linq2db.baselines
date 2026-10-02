@@ -1,11 +1,51 @@
 ﻿-- YDB Ydb
 SELECT
-	CAST(CAST(b.FinishedOn - x.StartedOn AS Int64) * 10l AS Double) / Double('864000000000') as TotalDays,
-	CAST((CAST(b.FinishedOn - x.StartedOn AS Int64) * 10l) / 864000000000l AS Int32) as Days,
-	CAST(((CAST(b.FinishedOn - x.StartedOn AS Int64) * 10l) / 36000000000l) % 24l AS Int32) as Hours,
-	CAST(((CAST(b.FinishedOn - x.StartedOn AS Int64) * 10l) / 600000000l) % 60l AS Int32) as Minutes,
-	CAST(CAST(x.StartedOn - b.FinishedOn AS Int64) * 10l AS Double) / Double('36000000000') as Reversed,
-	CAST(((CAST(x.StartedOn - b.FinishedOn AS Int64) * 10l) / 36000000000l) % 24l AS Int32) as RevHours
+	CAST(CAST(b.FinishedOn - x.StartedOn AS Int64) * 10l AS Double) / Double('864000000000') as c1
+FROM
+	OuterJoinLeft x
+		LEFT JOIN OuterJoinRight b ON b.Id = x.Id
+ORDER BY
+	x.Id
+
+-- YDB Ydb
+SELECT
+	CAST((CAST(b.FinishedOn - x.StartedOn AS Int64) * 10l) / 864000000000l AS Int32) as c1
+FROM
+	OuterJoinLeft x
+		LEFT JOIN OuterJoinRight b ON b.Id = x.Id
+ORDER BY
+	x.Id
+
+-- YDB Ydb
+SELECT
+	CAST(((CAST(b.FinishedOn - x.StartedOn AS Int64) * 10l) / 36000000000l) % 24l AS Int32) as c1
+FROM
+	OuterJoinLeft x
+		LEFT JOIN OuterJoinRight b ON b.Id = x.Id
+ORDER BY
+	x.Id
+
+-- YDB Ydb
+SELECT
+	CAST(((CAST(b.FinishedOn - x.StartedOn AS Int64) * 10l) / 600000000l) % 60l AS Int32) as c1
+FROM
+	OuterJoinLeft x
+		LEFT JOIN OuterJoinRight b ON b.Id = x.Id
+ORDER BY
+	x.Id
+
+-- YDB Ydb
+SELECT
+	CAST(((CAST(x.StartedOn - b.FinishedOn AS Int64) * 10l) / 36000000000l) % 24l AS Int32) as c1
+FROM
+	OuterJoinLeft x
+		LEFT JOIN OuterJoinRight b ON b.Id = x.Id
+ORDER BY
+	x.Id
+
+-- YDB Ydb
+SELECT
+	CAST(CAST(x.StartedOn - b.FinishedOn AS Int64) * 10l AS Double) / Double('36000000000') as c1
 FROM
 	OuterJoinLeft x
 		LEFT JOIN OuterJoinRight b ON b.Id = x.Id
