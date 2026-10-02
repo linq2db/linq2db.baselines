@@ -1,0 +1,57 @@
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+DECLARE @Id Int32
+SET     @Id = 1
+DECLARE @StartedOn Datetime -- DateTime
+SET     @StartedOn = '2026-01-03 13:30:00'
+DECLARE @FinishedOn Datetime -- DateTime
+SET     @FinishedOn = '2026-01-03 14:30:00'
+
+INSERT INTO `EventRow`
+(
+	`Id`,
+	`StartedOn`,
+	`FinishedOn`
+)
+VALUES
+(
+	@Id,
+	@StartedOn,
+	@FinishedOn
+)
+
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+DECLARE @Ticks Int64
+SET     @Ticks = 1234
+DECLARE @TotalMilliseconds Double
+SET     @TotalMilliseconds = 0.1234
+
+SELECT
+	@Ticks + `r`.`Id`,
+	@TotalMilliseconds + `r`.`Id`
+FROM
+	`EventRow` `r`
+LIMIT 2
+
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+SELECT
+	`r`.`Id`
+FROM
+	`EventRow` `r`
+
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+SELECT
+	`r`.`Id`
+FROM
+	`EventRow` `r`
+
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+DECLARE @FinishedOn Datetime -- DateTime
+SET     @FinishedOn = '2026-01-03 13:30:00'
+
+SELECT
+	`r`.`Id`
+FROM
+	`EventRow` `r`
+WHERE
+	`r`.`FinishedOn` > @FinishedOn
+
