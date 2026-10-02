@@ -24,7 +24,7 @@ DECLARE @Ticks BigInt -- Int64
 SET     @Ticks = 36002500000
 
 SELECT TOP (2)
-	DateAdd(millisecond, CAST((CAST(@Ticks AS BigInt) % 10000000) / 10000 AS Int), DateAdd(second, CAST((CAST(@Ticks AS BigInt) % 864000000000) / 10000000 AS Int), DateAdd(day, CAST(CAST(@Ticks AS BigInt) / 864000000000 AS Int), [r].[StartedOn])))
+	DateAdd(millisecond, CAST((CAST(@Ticks AS BigInt) % 10000000) / 10000 AS Int), DateAdd(second, CAST((CAST(@Ticks AS BigInt) % 864000000000) / 10000000 AS Int), DateAdd(day, CAST(CAST(@Ticks AS BigInt) / 864000000000 AS Int), CAST([r].[StartedOn] AS DateTime))))
 FROM
 	[EventRow] [r]
 
@@ -33,7 +33,7 @@ DECLARE @Ticks BigInt -- Int64
 SET     @Ticks = 36002500000
 
 SELECT TOP (2)
-	DateAdd(millisecond, CAST(((CAST(@Ticks AS BigInt) * -1) % 10000000) / 10000 AS Int), DateAdd(second, CAST(((CAST(@Ticks AS BigInt) * -1) % 864000000000) / 10000000 AS Int), DateAdd(day, CAST((CAST(@Ticks AS BigInt) * -1) / 864000000000 AS Int), [r].[FinishedOn])))
+	DateAdd(millisecond, CAST(((CAST(@Ticks AS BigInt) * -1) % 10000000) / 10000 AS Int), DateAdd(second, CAST(((CAST(@Ticks AS BigInt) * -1) % 864000000000) / 10000000 AS Int), DateAdd(day, CAST((CAST(@Ticks AS BigInt) * -1) / 864000000000 AS Int), CAST([r].[FinishedOn] AS DateTime))))
 FROM
 	[EventRow] [r]
 
@@ -46,7 +46,7 @@ SELECT
 FROM
 	[EventRow] [r]
 WHERE
-	DateAdd(millisecond, CAST((CAST(@Ticks AS BigInt) % 10000000) / 10000 AS Int), DateAdd(second, CAST((CAST(@Ticks AS BigInt) % 864000000000) / 10000000 AS Int), DateAdd(day, CAST(CAST(@Ticks AS BigInt) / 864000000000 AS Int), [r].[StartedOn]))) < [r].[FinishedOn]
+	DateAdd(millisecond, CAST((CAST(@Ticks AS BigInt) % 10000000) / 10000 AS Int), DateAdd(second, CAST((CAST(@Ticks AS BigInt) % 864000000000) / 10000000 AS Int), DateAdd(day, CAST(CAST(@Ticks AS BigInt) / 864000000000 AS Int), CAST([r].[StartedOn] AS DateTime)))) < [r].[FinishedOn]
 
 -- SqlServer.2005
 DECLARE @Ticks BigInt -- Int64
@@ -57,5 +57,5 @@ SELECT
 FROM
 	[EventRow] [r]
 WHERE
-	DateAdd(millisecond, CAST(((CAST(@Ticks AS BigInt) * -1) % 10000000) / 10000 AS Int), DateAdd(second, CAST(((CAST(@Ticks AS BigInt) * -1) % 864000000000) / 10000000 AS Int), DateAdd(day, CAST((CAST(@Ticks AS BigInt) * -1) / 864000000000 AS Int), [r].[FinishedOn]))) > DateAdd(hour, 1, [r].[StartedOn])
+	DateAdd(millisecond, CAST(((CAST(@Ticks AS BigInt) * -1) % 10000000) / 10000 AS Int), DateAdd(second, CAST(((CAST(@Ticks AS BigInt) * -1) % 864000000000) / 10000000 AS Int), DateAdd(day, CAST((CAST(@Ticks AS BigInt) * -1) / 864000000000 AS Int), CAST([r].[FinishedOn] AS DateTime)))) > DateAdd(hour, 1, [r].[StartedOn])
 
