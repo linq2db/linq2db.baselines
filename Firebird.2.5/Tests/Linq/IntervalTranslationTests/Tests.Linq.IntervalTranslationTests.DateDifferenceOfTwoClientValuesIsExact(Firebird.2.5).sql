@@ -27,7 +27,7 @@ SET     @TotalMilliseconds = 0.1234
 
 SELECT FIRST 2
 	CAST(@Ticks AS BigInt) + "r"."Id",
-	CAST(@TotalMilliseconds AS DOUBLE PRECISION) + "r"."Id"
+	CAST(@TotalMilliseconds AS DOUBLE PRECISION) + CAST("r"."Id" AS DOUBLE PRECISION)
 FROM
 	"EventRow" "r"
 

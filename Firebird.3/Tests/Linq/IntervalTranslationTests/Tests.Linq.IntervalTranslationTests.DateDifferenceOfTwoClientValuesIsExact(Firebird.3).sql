@@ -27,7 +27,7 @@ SET     @TotalMilliseconds = 0.1234
 
 SELECT
 	CAST(@Ticks AS BigInt) + "r"."Id",
-	CAST(@TotalMilliseconds AS DOUBLE PRECISION) + "r"."Id"
+	CAST(@TotalMilliseconds AS DOUBLE PRECISION) + CAST("r"."Id" AS DOUBLE PRECISION)
 FROM
 	"EventRow" "r"
 FETCH NEXT 2 ROWS ONLY
