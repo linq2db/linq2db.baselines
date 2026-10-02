@@ -22,13 +22,13 @@ FROM
 	(
 		SELECT
 			toInt32(1) as Source,
-			intDiv(toUnixTimestamp64Nano(toDateTime64(r.FinishedOn, 7)) - toUnixTimestamp64Nano(toDateTime64(r.StartedOn, 7)), toInt64(100)) as Duration
+			intDiv(toUnixTimestamp64Nano(r.FinishedOn) - toUnixTimestamp64Nano(r.StartedOn), toInt64(100)) as Duration
 		FROM
 			BudgetedTaskRow r
 		UNION ALL
 		SELECT
 			toInt32(2) as Source,
-			intDiv(toUnixTimestamp64Nano(toDateTime64(r_1.FinishedOn, 7)) - toUnixTimestamp64Nano(toDateTime64(r_1.StartedOn, 7)), toInt64(100)) as Duration
+			intDiv(toUnixTimestamp64Nano(r_1.FinishedOn) - toUnixTimestamp64Nano(r_1.StartedOn), toInt64(100)) as Duration
 		FROM
 			BudgetedTaskRow r_1
 	) t1

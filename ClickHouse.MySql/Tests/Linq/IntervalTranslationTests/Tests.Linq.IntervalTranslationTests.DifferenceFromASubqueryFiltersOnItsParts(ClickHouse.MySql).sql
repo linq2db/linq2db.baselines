@@ -32,7 +32,7 @@ SELECT
 FROM
 	EventRow x
 WHERE
-	toFloat64(intDiv(toUnixTimestamp64Nano(toDateTime64(x.FinishedOn, 7)) - toUnixTimestamp64Nano(toDateTime64(x.StartedOn, 7)), toInt64(100))) / toFloat64(36000000000) > toFloat64(3)
+	toFloat64(intDiv(toUnixTimestamp64Nano(x.FinishedOn) - toUnixTimestamp64Nano(x.StartedOn), toInt64(100))) / toFloat64(36000000000) > toFloat64(3)
 
 -- ClickHouse.MySql ClickHouse
 SELECT
@@ -40,7 +40,7 @@ SELECT
 FROM
 	EventRow x
 WHERE
-	toInt32(intDiv(intDiv(toUnixTimestamp64Nano(toDateTime64(x.FinishedOn, 7)) - toUnixTimestamp64Nano(toDateTime64(x.StartedOn, 7)), toInt64(100)), toInt64(36000000000)) % toInt64(24)) = 1
+	toInt32(intDiv(intDiv(toUnixTimestamp64Nano(x.FinishedOn) - toUnixTimestamp64Nano(x.StartedOn), toInt64(100)), toInt64(36000000000)) % toInt64(24)) = 1
 
 -- ClickHouse.MySql ClickHouse
 SELECT
@@ -48,11 +48,11 @@ SELECT
 FROM
 	EventRow x
 ORDER BY
-	intDiv(toUnixTimestamp64Nano(toDateTime64(x.FinishedOn, 7)) - toUnixTimestamp64Nano(toDateTime64(x.StartedOn, 7)), toInt64(100)) DESC
+	intDiv(toUnixTimestamp64Nano(x.FinishedOn) - toUnixTimestamp64Nano(x.StartedOn), toInt64(100)) DESC
 
 -- ClickHouse.MySql ClickHouse
 SELECT
-	intDiv(toUnixTimestamp64Nano(toDateTime64(x.FinishedOn, 7)) - toUnixTimestamp64Nano(toDateTime64(x.StartedOn, 7)), toInt64(100))
+	intDiv(toUnixTimestamp64Nano(x.FinishedOn) - toUnixTimestamp64Nano(x.StartedOn), toInt64(100))
 FROM
 	EventRow x
 ORDER BY
@@ -61,7 +61,7 @@ ORDER BY
 -- ClickHouse.MySql ClickHouse
 SELECT
 	r.Id,
-	intDiv(toUnixTimestamp64Nano(toDateTime64(r.FinishedOn, 7)) - toUnixTimestamp64Nano(toDateTime64(r.StartedOn, 7)), toInt64(100))
+	intDiv(toUnixTimestamp64Nano(r.FinishedOn) - toUnixTimestamp64Nano(r.StartedOn), toInt64(100))
 FROM
 	EventRow r
 ORDER BY

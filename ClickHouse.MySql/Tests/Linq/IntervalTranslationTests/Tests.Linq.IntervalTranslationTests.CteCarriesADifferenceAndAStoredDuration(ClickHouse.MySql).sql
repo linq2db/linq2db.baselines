@@ -19,7 +19,7 @@ WITH CTE_1 AS
 (
 	SELECT
 		r.Id as Id,
-		intDiv(toUnixTimestamp64Nano(toDateTime64(r.FinishedOn, 7)) - toUnixTimestamp64Nano(toDateTime64(r.StartedOn, 7)), toInt64(100)) as Taken,
+		intDiv(toUnixTimestamp64Nano(r.FinishedOn) - toUnixTimestamp64Nano(r.StartedOn), toInt64(100)) as Taken,
 		r.Budget as Budget
 	FROM
 		BudgetedTaskRow r

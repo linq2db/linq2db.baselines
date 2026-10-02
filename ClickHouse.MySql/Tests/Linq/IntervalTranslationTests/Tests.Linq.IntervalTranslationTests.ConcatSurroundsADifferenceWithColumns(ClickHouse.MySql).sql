@@ -45,7 +45,7 @@ FROM
 				SELECT
 					toInt32(2) as Source,
 					toInt64(NULL) as Duration,
-					intDiv(toUnixTimestamp64Nano(toDateTime64(r_1.FinishedOn, 7)) - toUnixTimestamp64Nano(toDateTime64(r_1.StartedOn, 7)), toInt64(100)) as Duration_1
+					intDiv(toUnixTimestamp64Nano(r_1.FinishedOn) - toUnixTimestamp64Nano(r_1.StartedOn), toInt64(100)) as Duration_1
 				FROM
 					BudgetedTaskRow r_1
 			) t1

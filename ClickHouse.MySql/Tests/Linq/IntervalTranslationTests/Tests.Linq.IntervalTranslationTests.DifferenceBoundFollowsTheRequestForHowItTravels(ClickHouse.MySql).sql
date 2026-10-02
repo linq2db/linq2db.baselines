@@ -52,7 +52,7 @@ SELECT
 FROM
 	BudgetedTaskRow r
 WHERE
-	intDiv(toUnixTimestamp64Nano(toDateTime64(r.FinishedOn, 7)) - toUnixTimestamp64Nano(toDateTime64(r.StartedOn, 7)), toInt64(100)) > toInt64(72000000000)
+	intDiv(toUnixTimestamp64Nano(r.FinishedOn) - toUnixTimestamp64Nano(r.StartedOn), toInt64(100)) > toInt64(72000000000)
 ORDER BY
 	r.Id
 
@@ -62,7 +62,7 @@ SELECT
 FROM
 	BudgetedTaskRow r
 WHERE
-	intDiv(toUnixTimestamp64Nano(toDateTime64(r.FinishedOn, 7)) - toUnixTimestamp64Nano(toDateTime64(r.StartedOn, 7)), toInt64(100)) > toInt64(72000000000)
+	intDiv(toUnixTimestamp64Nano(r.FinishedOn) - toUnixTimestamp64Nano(r.StartedOn), toInt64(100)) > toInt64(72000000000)
 ORDER BY
 	r.Id
 
@@ -72,7 +72,7 @@ SELECT
 FROM
 	BudgetedTaskRow r
 WHERE
-	intDiv(toUnixTimestamp64Nano(toDateTime64(r.FinishedOn, 7)) - toUnixTimestamp64Nano(toDateTime64(r.StartedOn, 7)), toInt64(100)) > toInt64(0)
+	intDiv(toUnixTimestamp64Nano(r.FinishedOn) - toUnixTimestamp64Nano(r.StartedOn), toInt64(100)) > toInt64(0)
 ORDER BY
 	r.Id
 
@@ -82,7 +82,7 @@ SELECT
 FROM
 	BudgetedTaskRow r
 WHERE
-	intDiv(toUnixTimestamp64Nano(toDateTime64(r.FinishedOn, 7)) - toUnixTimestamp64Nano(toDateTime64(r.StartedOn, 7)), toInt64(100)) > toInt64(0)
+	intDiv(toUnixTimestamp64Nano(r.FinishedOn) - toUnixTimestamp64Nano(r.StartedOn), toInt64(100)) > toInt64(0)
 ORDER BY
 	r.Id
 

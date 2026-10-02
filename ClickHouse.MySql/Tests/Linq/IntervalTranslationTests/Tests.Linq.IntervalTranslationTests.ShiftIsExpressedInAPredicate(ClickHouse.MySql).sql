@@ -18,5 +18,5 @@ SELECT
 FROM
 	EventRow r
 WHERE
-	toDateTime64('2026-03-01 00:00:00.0000000', 7) + toIntervalNanosecond(intDiv(toUnixTimestamp64Nano(toDateTime64(r.FinishedOn, 7)) - toUnixTimestamp64Nano(toDateTime64(r.StartedOn, 7)), toInt64(100)) * toInt64(100)) > toDateTime64('2026-03-01 04:00:00.0000000', 7)
+	toDateTime64('2026-03-01 00:00:00.0000000', 7) + toIntervalNanosecond(intDiv(toUnixTimestamp64Nano(r.FinishedOn) - toUnixTimestamp64Nano(r.StartedOn), toInt64(100)) * toInt64(100)) > toDateTime64('2026-03-01 04:00:00.0000000', 7)
 

@@ -53,7 +53,7 @@ SELECT
 FROM
 	(
 		SELECT
-			intDiv(toUnixTimestamp64Nano(toDateTime64(g_1.FinishedOn, 7)) - toUnixTimestamp64Nano(toDateTime64(g_1.StartedOn, 7)), toInt64(100)) as Key_1
+			intDiv(toUnixTimestamp64Nano(g_1.FinishedOn) - toUnixTimestamp64Nano(g_1.StartedOn), toInt64(100)) as Key_1
 		FROM
 			BudgetedTaskRow g_1
 	) t1

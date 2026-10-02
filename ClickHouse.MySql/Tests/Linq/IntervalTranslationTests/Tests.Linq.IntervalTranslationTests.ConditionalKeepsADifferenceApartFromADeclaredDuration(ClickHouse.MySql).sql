@@ -34,7 +34,7 @@ VALUES
 SELECT
 	r.Id,
 	r.Budget,
-	intDiv(toUnixTimestamp64Nano(toDateTime64(r.FinishedOn, 7)) - toUnixTimestamp64Nano(toDateTime64(r.StartedOn, 7)), toInt64(100))
+	intDiv(toUnixTimestamp64Nano(r.FinishedOn) - toUnixTimestamp64Nano(r.StartedOn), toInt64(100))
 FROM
 	BudgetedTaskRow r
 ORDER BY

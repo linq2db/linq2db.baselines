@@ -26,7 +26,7 @@ FROM
 		SELECT
 			toInt32(1) as Source,
 			r.Budget as First_1,
-			intDiv(toUnixTimestamp64Nano(toDateTime64(r.FinishedOn, 7)) - toUnixTimestamp64Nano(toDateTime64(r.StartedOn, 7)), toInt64(100)) as Second_1,
+			intDiv(toUnixTimestamp64Nano(r.FinishedOn) - toUnixTimestamp64Nano(r.StartedOn), toInt64(100)) as Second_1,
 			NULL as First_2,
 			toInt64(NULL) as Second_2
 		FROM
@@ -36,7 +36,7 @@ FROM
 			toInt32(2) as Source,
 			toInt64(NULL) as First_1,
 			NULL as Second_1,
-			intDiv(toUnixTimestamp64Nano(toDateTime64(r_1.FinishedOn, 7)) - toUnixTimestamp64Nano(toDateTime64(r_1.StartedOn, 7)), toInt64(100)) as First_2,
+			intDiv(toUnixTimestamp64Nano(r_1.FinishedOn) - toUnixTimestamp64Nano(r_1.StartedOn), toInt64(100)) as First_2,
 			r_1.Budget as Second_2
 		FROM
 			BudgetedTaskRow r_1

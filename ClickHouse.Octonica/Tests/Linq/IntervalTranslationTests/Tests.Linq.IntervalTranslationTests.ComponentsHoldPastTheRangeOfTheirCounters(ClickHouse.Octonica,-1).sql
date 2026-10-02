@@ -28,7 +28,7 @@ VALUES
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
-	toInt32(intDiv(intDiv(toUnixTimestamp64Nano(toDateTime64(r.FinishedOn, 7)) - toUnixTimestamp64Nano(toDateTime64(r.StartedOn, 7)), toInt64(100)), toInt64(36000000000)) % toInt64(24))
+	toInt32(intDiv(intDiv(toUnixTimestamp64Nano(r.FinishedOn) - toUnixTimestamp64Nano(r.StartedOn), toInt64(100)), toInt64(36000000000)) % toInt64(24))
 FROM
 	EventRow r
 ORDER BY
@@ -36,7 +36,7 @@ ORDER BY
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
-	toInt32(intDiv(intDiv(toUnixTimestamp64Nano(toDateTime64(r.FinishedOn, 7)) - toUnixTimestamp64Nano(toDateTime64(r.StartedOn, 7)), toInt64(100)), toInt64(600000000)) % toInt64(60))
+	toInt32(intDiv(intDiv(toUnixTimestamp64Nano(r.FinishedOn) - toUnixTimestamp64Nano(r.StartedOn), toInt64(100)), toInt64(600000000)) % toInt64(60))
 FROM
 	EventRow r
 ORDER BY
@@ -44,7 +44,7 @@ ORDER BY
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
-	toInt32(intDiv(intDiv(toUnixTimestamp64Nano(toDateTime64(r.FinishedOn, 7)) - toUnixTimestamp64Nano(toDateTime64(r.StartedOn, 7)), toInt64(100)), toInt64(10000000)) % toInt64(60))
+	toInt32(intDiv(intDiv(toUnixTimestamp64Nano(r.FinishedOn) - toUnixTimestamp64Nano(r.StartedOn), toInt64(100)), toInt64(10000000)) % toInt64(60))
 FROM
 	EventRow r
 ORDER BY
