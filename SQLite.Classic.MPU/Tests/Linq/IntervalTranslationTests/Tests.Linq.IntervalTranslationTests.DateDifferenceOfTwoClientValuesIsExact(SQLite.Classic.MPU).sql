@@ -27,7 +27,7 @@ SET     @TotalMilliseconds = 0.1234
 
 SELECT
 	@Ticks + [r].[Id],
-	@TotalMilliseconds + [r].[Id]
+	@TotalMilliseconds + CAST([r].[Id] AS Float)
 FROM
 	[EventRow] [r]
 LIMIT 2
