@@ -1,0 +1,35 @@
+﻿-- Sybase.Managed Sybase
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
+DECLARE @StartedOn DateTime
+SET     @StartedOn = '2026-06-01 10:00:00.000'
+DECLARE @FinishedOn DateTime
+SET     @FinishedOn = '2026-06-12 10:00:00.000'
+DECLARE @OpenedOn Date
+SET     @OpenedOn = '2026-06-01 00:00:00.000'
+DECLARE @ClosedOn Date
+SET     @ClosedOn = '2026-06-12 00:00:00.000'
+
+INSERT INTO [CoarseEventRow]
+(
+	[Id],
+	[StartedOn],
+	[FinishedOn],
+	[OpenedOn],
+	[ClosedOn]
+)
+VALUES
+(
+	@Id,
+	@StartedOn,
+	@FinishedOn,
+	@OpenedOn,
+	@ClosedOn
+)
+
+-- Sybase.Managed Sybase
+SELECT TOP 2
+	DateAdd(millisecond, (((CAST(DateDiff(day, [r].[OpenedOn], [r].[ClosedOn]) AS BigInt) * 86400) * 10000000 + CAST(DateDiff(millisecond, DateAdd(day, CAST(DateDiff(day, [r].[OpenedOn], [r].[ClosedOn]) AS BigInt), [r].[OpenedOn]), [r].[ClosedOn]) AS BigInt) * 10000) % 10000000) / 10000, DateAdd(second, (((CAST(DateDiff(day, [r].[OpenedOn], [r].[ClosedOn]) AS BigInt) * 86400) * 10000000 + CAST(DateDiff(millisecond, DateAdd(day, CAST(DateDiff(day, [r].[OpenedOn], [r].[ClosedOn]) AS BigInt), [r].[OpenedOn]), [r].[ClosedOn]) AS BigInt) * 10000) % 864000000000) / 10000000, DateAdd(day, ((CAST(DateDiff(day, [r].[OpenedOn], [r].[ClosedOn]) AS BigInt) * 86400) * 10000000 + CAST(DateDiff(millisecond, DateAdd(day, CAST(DateDiff(day, [r].[OpenedOn], [r].[ClosedOn]) AS BigInt), [r].[OpenedOn]), [r].[ClosedOn]) AS BigInt) * 10000) / 864000000000, '2026-06-20 00:00:00.000')))
+FROM
+	[CoarseEventRow] [r]
+
