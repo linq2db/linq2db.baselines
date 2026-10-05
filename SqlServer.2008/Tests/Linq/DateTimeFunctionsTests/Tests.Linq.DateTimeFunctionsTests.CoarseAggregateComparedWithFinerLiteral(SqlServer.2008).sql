@@ -1,0 +1,85 @@
+﻿-- SqlServer.2008
+DECLARE @Id Int -- Int32
+SET     @Id = 1
+DECLARE @Value DateTime
+SET     @Value = CAST('2026-06-01T10:00:00.0000000' AS DATETIME2)
+DECLARE @Day Date
+SET     @Day = CAST('2026-06-01T00:00:00.0000000' AS DATETIME2)
+DECLARE @Wide DateTime2
+SET     @Wide = CAST('2026-06-01T10:00:00.0000000' AS DATETIME2)
+
+INSERT INTO [CoarseDateShapesRow]
+(
+	[Id],
+	[Value],
+	[Day],
+	[Wide]
+)
+VALUES
+(
+	@Id,
+	@Value,
+	@Day,
+	@Wide
+)
+
+-- SqlServer.2008
+SELECT
+	COUNT(*)
+FROM
+	(
+		SELECT
+			[g_1].[Id]
+		FROM
+			[CoarseDateShapesRow] [g_1]
+		GROUP BY
+			[g_1].[Id]
+		HAVING
+			MAX([g_1].[Day]) < CAST('2026-06-01T10:00:00.0000000' AS DATETIME2)
+	) [t1]
+
+-- SqlServer.2008
+SELECT
+	COUNT(*)
+FROM
+	(
+		SELECT
+			[g_1].[Id]
+		FROM
+			[CoarseDateShapesRow] [g_1]
+		GROUP BY
+			[g_1].[Id]
+		HAVING
+			MIN([g_1].[Day]) >= CAST('2026-06-01T10:00:00.0000000' AS DATETIME2)
+	) [t1]
+
+-- SqlServer.2008
+SELECT
+	COUNT(*)
+FROM
+	(
+		SELECT
+			[g_1].[Id]
+		FROM
+			[CoarseDateShapesRow] [g_1]
+		GROUP BY
+			[g_1].[Id]
+		HAVING
+			MAX([g_1].[Value]) < CAST('2026-06-01T10:00:00.5000000' AS DATETIME2)
+	) [t1]
+
+-- SqlServer.2008
+SELECT
+	COUNT(*)
+FROM
+	(
+		SELECT
+			[g_1].[Id]
+		FROM
+			[CoarseDateShapesRow] [g_1]
+		GROUP BY
+			[g_1].[Id]
+		HAVING
+			MAX([g_1].[Value]) = CAST('2026-06-01T10:00:00.5000000' AS DATETIME2)
+	) [t1]
+
