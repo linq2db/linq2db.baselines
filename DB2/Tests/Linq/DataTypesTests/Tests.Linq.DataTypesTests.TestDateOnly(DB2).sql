@@ -1,8 +1,8 @@
 ﻿-- DB2 DB2.LUW DB2LUW
 DECLARE @Column Date(20)
-SET     @Column = '2020-02-29-00.00.00.000000'
+SET     @Column = CAST('2020-02-29-00.00.00.000000' AS TIMESTAMP(6))
 DECLARE @ColumnNullable Date(20)
-SET     @ColumnNullable = '2020-01-01-00.00.00.000000'
+SET     @ColumnNullable = CAST('2020-01-01-00.00.00.000000' AS TIMESTAMP(6))
 
 SELECT
 	"r"."Id",
@@ -31,7 +31,7 @@ DELETE FROM
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @Column Date(20)
-SET     @Column = '1980-01-01-00.00.00.000000'
+SET     @Column = CAST('1980-01-01-00.00.00.000000' AS TIMESTAMP(6))
 DECLARE @ColumnNullable Date
 SET     @ColumnNullable = NULL
 
@@ -52,9 +52,9 @@ VALUES
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
 DECLARE @Column Date(20)
-SET     @Column = '2020-02-29-00.00.00.000000'
+SET     @Column = CAST('2020-02-29-00.00.00.000000' AS TIMESTAMP(6))
 DECLARE @ColumnNullable Date(20)
-SET     @ColumnNullable = '2020-01-01-00.00.00.000000'
+SET     @ColumnNullable = CAST('2020-01-01-00.00.00.000000' AS TIMESTAMP(6))
 
 INSERT INTO "DateOnlyTable"
 (

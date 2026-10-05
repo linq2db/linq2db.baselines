@@ -38,7 +38,7 @@ FETCH NEXT 1 ROWS ONLY
 DECLARE @MoneyValue (5, 4) -- Decimal
 SET     @MoneyValue = 1.1100
 DECLARE @DateTimeValue Timestamp(20) -- DateTime
-SET     @DateTimeValue = '2001-01-11-01.11.21.100000'
+SET     @DateTimeValue = CAST('2001-01-11-01.11.21.100000' AS TIMESTAMP(6))
 DECLARE @DateTimeValue2 Timestamp -- DateTime
 SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue SmallInt(4) -- Int16
@@ -96,7 +96,7 @@ FETCH NEXT 1 ROWS ONLY
 DECLARE @MoneyValue (5, 4) -- Decimal
 SET     @MoneyValue = 1.1100
 DECLARE @DateTimeValue Timestamp(20) -- DateTime
-SET     @DateTimeValue = '2001-01-11-01.11.21.100000'
+SET     @DateTimeValue = CAST('2001-01-11-01.11.21.100000' AS TIMESTAMP(6))
 DECLARE @DateTimeValue2 Timestamp -- DateTime
 SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue SmallInt(4) -- Int16

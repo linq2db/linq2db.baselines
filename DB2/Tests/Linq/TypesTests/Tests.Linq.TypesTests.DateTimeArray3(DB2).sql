@@ -13,5 +13,5 @@ SELECT
 FROM
 	"LinqDataTypes" "t"
 WHERE
-	"t"."DateTimeValue" IN ('2001-01-11-01.11.21.100000')
+	"t"."DateTimeValue" IN (CAST('2001-01-11-01.11.21.100000' AS TIMESTAMP(6)))
 

@@ -89,7 +89,7 @@ SET     @InstrumentId = 1
 DECLARE @InstrumentCode VarChar(4) -- String
 SET     @InstrumentCode = 'aaa1'
 DECLARE @CreateDate Timestamp(20) -- DateTime
-SET     @CreateDate = '2020-02-28-17.54.55.123123'
+SET     @CreateDate = CAST('2020-02-28-17.54.55.123123' AS TIMESTAMP(6))
 DECLARE @SourceInstrumentCode VarChar(7) -- String
 SET     @SourceInstrumentCode = 'NOTNULL'
 
@@ -114,7 +114,7 @@ SET     @InstrumentId = 2
 DECLARE @InstrumentCode VarChar(4) -- String
 SET     @InstrumentCode = 'aaa2'
 DECLARE @CreateDate Timestamp(20) -- DateTime
-SET     @CreateDate = '2020-02-28-17.54.55.123123'
+SET     @CreateDate = CAST('2020-02-28-17.54.55.123123' AS TIMESTAMP(6))
 DECLARE @SourceInstrumentCode VarChar -- String
 SET     @SourceInstrumentCode = NULL
 
@@ -137,7 +137,7 @@ VALUES
 DECLARE @cond VarChar(4) -- String
 SET     @cond = 'aaa%'
 DECLARE @uptoDate Timestamp(20) -- DateTime
-SET     @uptoDate = '2020-02-29-17.54.55.123123'
+SET     @uptoDate = CAST('2020-02-29-17.54.55.123123' AS TIMESTAMP(6))
 
 SELECT DISTINCT
 	"ins"."SourceInstrumentCode"

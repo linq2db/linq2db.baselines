@@ -6,7 +6,7 @@ SET     @Name = 'n'
 DECLARE @Version Integer(4) -- Int32
 SET     @Version = 101
 DECLARE @stamp Timestamp(20) -- DateTime
-SET     @stamp = '2026-06-01-00.00.00.000000'
+SET     @stamp = CAST('2026-06-01-00.00.00.000000' AS TIMESTAMP(6))
 
 INSERT INTO "EntityInsertTest"
 (

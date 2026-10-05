@@ -10,7 +10,7 @@ SELECT
 FROM
 	"LinqDataTypes" "p"
 WHERE
-	CAST('2010-01-01 10:00:' || LPad(Mod("p".ID, 1), 2, '0') || '.000' AS timestamp) < '2010-01-01-10.00.00.500000'
+	CAST('2010-01-01 10:00:' || LPad(Mod("p".ID, 1), 2, '0') || '.000' AS timestamp) < CAST('2010-01-01-10.00.00.500000' AS TIMESTAMP(6))
 
 -- DB2 DB2.LUW DB2LUW
 SELECT
@@ -18,7 +18,7 @@ SELECT
 FROM
 	"LinqDataTypes" "p"
 WHERE
-	CAST('2010-01-01 10:00:' || LPad(Mod("p".ID, 1), 2, '0') || '.000' AS timestamp) >= '2010-01-01-10.00.00.500000'
+	CAST('2010-01-01 10:00:' || LPad(Mod("p".ID, 1), 2, '0') || '.000' AS timestamp) >= CAST('2010-01-01-10.00.00.500000' AS TIMESTAMP(6))
 
 -- DB2 DB2.LUW DB2LUW
 SELECT
@@ -26,5 +26,5 @@ SELECT
 FROM
 	"LinqDataTypes" "p"
 WHERE
-	CAST('2010-01-01 10:00:' || LPad(Mod("p".ID, 1), 2, '0') || '.000' AS timestamp) = '2010-01-01-10.00.00.500000'
+	CAST('2010-01-01 10:00:' || LPad(Mod("p".ID, 1), 2, '0') || '.000' AS timestamp) = CAST('2010-01-01-10.00.00.500000' AS TIMESTAMP(6))
 

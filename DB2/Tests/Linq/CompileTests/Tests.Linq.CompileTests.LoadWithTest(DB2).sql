@@ -13,7 +13,7 @@ FROM
 		FROM
 			"Parent" "p"
 		WHERE
-			"p"."ParentID" = @p AND CURRENT_TIMESTAMP > '2020-02-29-00.00.00.000000'
+			"p"."ParentID" = @p AND CURRENT_TIMESTAMP > CAST('2020-02-29-00.00.00.000000' AS TIMESTAMP(6))
 	) "m_1"
 		INNER JOIN "Child" "d" ON "m_1"."ParentID" = "d"."ParentID"
 
@@ -27,7 +27,7 @@ SELECT
 FROM
 	"Parent" "p"
 WHERE
-	"p"."ParentID" = @p AND CURRENT_TIMESTAMP > '2020-02-29-00.00.00.000000'
+	"p"."ParentID" = @p AND CURRENT_TIMESTAMP > CAST('2020-02-29-00.00.00.000000' AS TIMESTAMP(6))
 
 -- DB2 DB2.LUW DB2LUW
 DECLARE @p Integer(4) -- Int32
@@ -44,7 +44,7 @@ FROM
 		FROM
 			"Parent" "p"
 		WHERE
-			"p"."ParentID" = @p AND CURRENT_TIMESTAMP > '2020-02-29-00.00.00.000000'
+			"p"."ParentID" = @p AND CURRENT_TIMESTAMP > CAST('2020-02-29-00.00.00.000000' AS TIMESTAMP(6))
 	) "m_1"
 		INNER JOIN "Child" "d" ON "m_1"."ParentID" = "d"."ParentID"
 
@@ -58,5 +58,5 @@ SELECT
 FROM
 	"Parent" "p"
 WHERE
-	"p"."ParentID" = @p AND CURRENT_TIMESTAMP > '2020-02-29-00.00.00.000000'
+	"p"."ParentID" = @p AND CURRENT_TIMESTAMP > CAST('2020-02-29-00.00.00.000000' AS TIMESTAMP(6))
 

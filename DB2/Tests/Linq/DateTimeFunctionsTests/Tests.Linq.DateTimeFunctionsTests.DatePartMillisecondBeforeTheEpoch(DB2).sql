@@ -2,11 +2,11 @@
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @Value Timestamp(20) -- DateTime
-SET     @Value = '2026-06-01-10.00.00.000000'
+SET     @Value = CAST('2026-06-01-10.00.00.000000' AS TIMESTAMP(6))
 DECLARE @Day Date(20)
-SET     @Day = '2026-06-01-00.00.00.000000'
+SET     @Day = CAST('2026-06-01-00.00.00.000000' AS TIMESTAMP(6))
 DECLARE @Wide Timestamp(20) -- DateTime
-SET     @Wide = '1969-01-01-00.00.00.500000'
+SET     @Wide = CAST('1969-01-01-00.00.00.500000' AS TIMESTAMP(6))
 
 INSERT INTO "CoarseDateShapesRow"
 (
