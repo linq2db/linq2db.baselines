@@ -39,7 +39,9 @@ ORDER BY
 SELECT
 	r.Id,
 	toFloat64(intDiv(toUnixTimestamp64Nano(toDateTime64(r.StartedOn, 7)) - toUnixTimestamp64Nano(toDateTime64(LAG(r.StartedOn) OVER (ORDER BY r.Id), 7)), toInt64(100))) / toFloat64(10000),
-	toFloat64(intDiv(toUnixTimestamp64Nano(toDateTime64(r.StartedOn, 7)) - toUnixTimestamp64Nano(toDateTime64(LAG(r.StartedOn, 1, r.StartedOn) OVER (ORDER BY r.Id), 7)), toInt64(100))) / toFloat64(10000)
+	toFloat64(intDiv(toUnixTimestamp64Nano(toDateTime64(r.StartedOn, 7)) - toUnixTimestamp64Nano(toDateTime64(LAG(r.StartedOn, 1, r.StartedOn) OVER (ORDER BY r.Id), 7)), toInt64(100))) / toFloat64(10000),
+	toFloat64(intDiv(toUnixTimestamp64Nano(toDateTime64(LEAD(r.StartedOn, 1, r.StartedOn) OVER (ORDER BY r.Id), 7)) - toUnixTimestamp64Nano(toDateTime64(r.StartedOn, 7)), toInt64(100))) / toFloat64(10000),
+	toFloat64(intDiv(toUnixTimestamp64Nano(toDateTime64(NTH_VALUE(r.StartedOn, toInt64(2)) OVER (ORDER BY r.Id ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING), 7)) - toUnixTimestamp64Nano(toDateTime64(r.StartedOn, 7)), toInt64(100))) / toFloat64(10000)
 FROM
 	CoarseNullableEventRow r
 
