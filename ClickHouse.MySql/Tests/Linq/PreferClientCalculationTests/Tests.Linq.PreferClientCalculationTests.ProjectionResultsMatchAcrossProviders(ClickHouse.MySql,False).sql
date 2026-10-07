@@ -62,3 +62,19 @@ SELECT
 FROM
 	ClientCalcEntity t1
 
+-- ClickHouse.MySql ClickHouse
+SELECT
+	e.Id,
+	concat(Coalesce(e.Name, ''), ' ', Coalesce(e.Name, ''))
+FROM
+	ClientCalcEntity e
+
+-- ClickHouse.MySql ClickHouse
+SELECT
+	t1.Id,
+	t1.Value1,
+	t1.Value2,
+	t1.Name
+FROM
+	ClientCalcEntity t1
+
