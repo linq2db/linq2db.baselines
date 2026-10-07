@@ -62,3 +62,19 @@ SELECT
 FROM
 	"ClientCalcEntity" t1
 
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
+SELECT
+	e."Id",
+	e."Name"
+FROM
+	"ClientCalcEntity" e
+
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
+SELECT
+	t1."Id",
+	t1."Value1",
+	t1."Value2",
+	t1."Name"
+FROM
+	"ClientCalcEntity" t1
+
