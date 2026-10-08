@@ -1,6 +1,6 @@
 ﻿-- SqlServer.2012.MS SqlServer.2012
-DECLARE @p NVarChar(4000) -- String
-SET     @p = N'Person'
+DECLARE @In Int -- Int32
+SET     @In = 1
 
 SELECT
 	[p].[FirstName],
@@ -11,12 +11,12 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	EXISTS(
+	[p].[PersonID] IN (
 		SELECT
-			*
+			[t1].[value]
 		FROM
 			(
-				SELECT IIF(EXISTS(SELECT * FROM [INFORMATION_SCHEMA].[TABLES] [x] WHERE [x].[TABLE_NAME] = @p),1,0) ttt
+				SELECT PersonID AS "value" FROM Person WHERE PersonID = @In
 			) [t1]([value])
 	)
 
