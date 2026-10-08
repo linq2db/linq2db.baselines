@@ -17,7 +17,7 @@ AS
 	FROM
 		[x] [t1]
 	WHERE
-		strftime('%Y-%m-%d %H:%M:%f', strftime('%Y-%m-%d %H:%M:%f', [t1].[Date_1], '1 Day')) < strftime('%Y-%m-%d %H:%M:%f', @dateTo)
+		strftime('%Y-%m-%d %H:%M:%f', [t1].[Date_1], '1 Day') < strftime('%Y-%m-%d %H:%M:%f', @dateTo)
 )
 SELECT
 	[t2].[Counter],
