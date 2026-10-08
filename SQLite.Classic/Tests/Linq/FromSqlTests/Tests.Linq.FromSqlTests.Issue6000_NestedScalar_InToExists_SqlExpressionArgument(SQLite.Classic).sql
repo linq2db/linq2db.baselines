@@ -1,7 +1,4 @@
-﻿-- SQLite.MS SQLite
-DECLARE @args  -- Int32
-SET     @args = 1
-
+﻿-- SQLite.Classic SQLite
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],
@@ -16,16 +13,13 @@ WHERE
 			*
 		FROM
 			(
-				SELECT * FROM Person WHERE PersonID = @args
-			) [s]
+				SELECT PersonID AS "value" FROM Person WHERE PersonID = 1
+			) [t1]
 		WHERE
-			[s].[PersonID] = [p].[PersonID]
+			[p].[PersonID] = [t1].[value]
 	)
 
--- SQLite.MS SQLite
-DECLARE @args  -- Int32
-SET     @args = 2
-
+-- SQLite.Classic SQLite
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],
@@ -40,16 +34,13 @@ WHERE
 			*
 		FROM
 			(
-				SELECT * FROM Person WHERE PersonID = @args
-			) [s]
+				SELECT PersonID AS "value" FROM Person WHERE PersonID = 2
+			) [t1]
 		WHERE
-			[s].[PersonID] = [p].[PersonID]
+			[p].[PersonID] = [t1].[value]
 	)
 
--- SQLite.MS SQLite
-DECLARE @args  -- Int32
-SET     @args = 1
-
+-- SQLite.Classic SQLite
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],
@@ -64,9 +55,9 @@ WHERE
 			*
 		FROM
 			(
-				SELECT * FROM Person WHERE PersonID = @args
-			) [s]
+				SELECT PersonID AS "value" FROM Person WHERE PersonID = 1
+			) [t1]
 		WHERE
-			[s].[PersonID] = [p].[PersonID]
+			[p].[PersonID] = [t1].[value]
 	)
 

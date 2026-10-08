@@ -1,8 +1,6 @@
 ﻿-- SQLite.Classic SQLite
 DECLARE @In  -- Int32
 SET     @In = 1
-DECLARE @In_1  -- Int32
-SET     @In_1 = 99
 
 SELECT
 	[p].[FirstName],
@@ -47,8 +45,6 @@ WHERE
 -- SQLite.Classic SQLite
 DECLARE @In  -- Int32
 SET     @In = 1
-DECLARE @In_1  -- Int32
-SET     @In_1 = 99
 
 SELECT
 	[p].[FirstName],
