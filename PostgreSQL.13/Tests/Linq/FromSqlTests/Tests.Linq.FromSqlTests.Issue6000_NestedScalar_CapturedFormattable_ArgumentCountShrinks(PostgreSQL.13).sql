@@ -1,8 +1,6 @@
 ﻿-- PostgreSQL.13 PostgreSQL12
 DECLARE @In Integer -- Int32
 SET     @In = 1
-DECLARE @In_1 Integer -- Int32
-SET     @In_1 = 99
 
 SELECT
 	p."FirstName",
@@ -47,8 +45,6 @@ WHERE
 -- PostgreSQL.13 PostgreSQL12
 DECLARE @In Integer -- Int32
 SET     @In = 1
-DECLARE @In_1 Integer -- Int32
-SET     @In_1 = 99
 
 SELECT
 	p."FirstName",
