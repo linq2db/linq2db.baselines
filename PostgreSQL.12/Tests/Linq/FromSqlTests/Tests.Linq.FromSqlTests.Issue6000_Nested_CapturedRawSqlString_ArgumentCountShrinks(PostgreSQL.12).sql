@@ -1,8 +1,6 @@
 ﻿-- PostgreSQL.12 PostgreSQL12
 DECLARE @args Integer -- Int32
 SET     @args = 1
-DECLARE @args_1 Integer -- Int32
-SET     @args_1 = 99
 
 SELECT
 	p."FirstName",
@@ -51,8 +49,6 @@ WHERE
 -- PostgreSQL.12 PostgreSQL12
 DECLARE @args Integer -- Int32
 SET     @args = 1
-DECLARE @args_1 Integer -- Int32
-SET     @args_1 = 99
 
 SELECT
 	p."FirstName",
