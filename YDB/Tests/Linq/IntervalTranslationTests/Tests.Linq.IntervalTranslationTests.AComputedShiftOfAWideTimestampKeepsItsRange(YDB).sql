@@ -42,6 +42,14 @@ LIMIT 2
 
 -- YDB Ydb
 SELECT
+	Unwrap(CAST(Unwrap(CAST(r.Day32 AS Timestamp64)) + DateTime::IntervalFromMicroseconds((Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l) / 10l) AS Timestamp64)) as Day32,
+	Unwrap(CAST(Unwrap(CAST(r.On64 AS Timestamp64)) + DateTime::IntervalFromMicroseconds((Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l) / 10l) AS Timestamp64)) as On64
+FROM
+	WideTimestampDeclaredRow r
+LIMIT 2
+
+-- YDB Ydb
+SELECT
 	r.Id as Id
 FROM
 	WideTimestampDeclaredRow r
