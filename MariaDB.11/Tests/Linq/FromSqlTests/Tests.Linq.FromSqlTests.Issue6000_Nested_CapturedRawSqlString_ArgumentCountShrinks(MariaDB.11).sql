@@ -1,8 +1,6 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @args Int32
 SET     @args = 1
-DECLARE @args_1 Int32
-SET     @args_1 = 99
 
 SELECT
 	`p`.`FirstName`,
@@ -51,8 +49,6 @@ WHERE
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @args Int32
 SET     @args = 1
-DECLARE @args_1 Int32
-SET     @args_1 = 99
 
 SELECT
 	`p`.`FirstName`,

@@ -1,8 +1,6 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @args Int32
 SET     @args = 1
-DECLARE @args_1 Int32
-SET     @args_1 = 99
 
 SELECT
 	`p`.`FirstName`,
@@ -51,8 +49,6 @@ WHERE
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @args Int32
 SET     @args = 1
-DECLARE @args_1 Int32
-SET     @args_1 = 99
 
 SELECT
 	`p`.`FirstName`,

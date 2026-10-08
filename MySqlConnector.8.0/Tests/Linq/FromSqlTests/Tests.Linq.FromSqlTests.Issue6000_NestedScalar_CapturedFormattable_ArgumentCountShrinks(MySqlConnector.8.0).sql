@@ -1,8 +1,6 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @In Int32
 SET     @In = 1
-DECLARE @In_1 Int32
-SET     @In_1 = 99
 
 SELECT
 	`p`.`FirstName`,
@@ -47,8 +45,6 @@ WHERE
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @In Int32
 SET     @In = 1
-DECLARE @In_1 Int32
-SET     @In_1 = 99
 
 SELECT
 	`p`.`FirstName`,
