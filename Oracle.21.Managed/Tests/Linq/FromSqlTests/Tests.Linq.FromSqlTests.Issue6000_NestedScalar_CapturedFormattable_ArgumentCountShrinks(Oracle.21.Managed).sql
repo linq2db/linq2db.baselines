@@ -1,8 +1,6 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @In_1 Int32
 SET     @In_1 = 1
-DECLARE @In_2 Int32
-SET     @In_2 = 99
 
 SELECT
 	p."FirstName",
@@ -47,8 +45,6 @@ WHERE
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @In_1 Int32
 SET     @In_1 = 1
-DECLARE @In_2 Int32
-SET     @In_2 = 99
 
 SELECT
 	p."FirstName",
