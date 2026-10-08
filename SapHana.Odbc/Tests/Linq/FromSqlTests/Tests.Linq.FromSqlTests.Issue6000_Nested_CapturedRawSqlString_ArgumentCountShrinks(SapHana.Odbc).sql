@@ -1,6 +1,8 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
 DECLARE @args Int -- Int32
 SET     @args = 1
+DECLARE @args Int -- Int32
+SET     @args = 99
 
 SELECT
 	"p"."FirstName",
@@ -49,6 +51,8 @@ WHERE
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @args Int -- Int32
 SET     @args = 1
+DECLARE @args Int -- Int32
+SET     @args = 99
 
 SELECT
 	"p"."FirstName",

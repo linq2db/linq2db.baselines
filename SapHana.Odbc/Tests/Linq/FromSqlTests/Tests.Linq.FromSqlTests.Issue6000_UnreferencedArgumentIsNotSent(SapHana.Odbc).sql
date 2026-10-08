@@ -1,6 +1,8 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
 DECLARE @In Int -- Int32
 SET     @In = 1
+DECLARE @In Int -- Int32
+SET     @In = 99
 
 SELECT
 	"p"."FirstName",
