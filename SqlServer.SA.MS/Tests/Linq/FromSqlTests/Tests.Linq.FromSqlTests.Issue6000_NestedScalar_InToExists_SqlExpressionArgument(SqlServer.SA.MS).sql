@@ -1,7 +1,4 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
-DECLARE @args Int -- Int32
-SET     @args = 1
-
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],
@@ -16,16 +13,13 @@ WHERE
 			*
 		FROM
 			(
-				SELECT * FROM Person WHERE PersonID = @args
-			) [s]
+				SELECT PersonID AS "value" FROM Person WHERE PersonID = 1
+			) [t1]([value])
 		WHERE
-			[s].[PersonID] = [p].[PersonID]
+			[p].[PersonID] = [t1].[value]
 	)
 
 -- SqlServer.SA.MS SqlServer.2019
-DECLARE @args Int -- Int32
-SET     @args = 2
-
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],
@@ -40,16 +34,13 @@ WHERE
 			*
 		FROM
 			(
-				SELECT * FROM Person WHERE PersonID = @args
-			) [s]
+				SELECT PersonID AS "value" FROM Person WHERE PersonID = 2
+			) [t1]([value])
 		WHERE
-			[s].[PersonID] = [p].[PersonID]
+			[p].[PersonID] = [t1].[value]
 	)
 
 -- SqlServer.SA.MS SqlServer.2019
-DECLARE @args Int -- Int32
-SET     @args = 1
-
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],
@@ -64,9 +55,9 @@ WHERE
 			*
 		FROM
 			(
-				SELECT * FROM Person WHERE PersonID = @args
-			) [s]
+				SELECT PersonID AS "value" FROM Person WHERE PersonID = 1
+			) [t1]([value])
 		WHERE
-			[s].[PersonID] = [p].[PersonID]
+			[p].[PersonID] = [t1].[value]
 	)
 
