@@ -1,7 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-DECLARE @In Int -- Int32
-SET     @In = 1
-
 SELECT
 	"p"."FirstName",
 	"p"."PersonID",
@@ -11,19 +8,18 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	"p"."PersonID" IN (
+	EXISTS(
 		SELECT
-			"t1"."value"
+			*
 		FROM
 			(
-				SELECT "PersonID" AS "value" FROM "Person" WHERE "PersonID" = ?
+				SELECT "PersonID" AS "value" FROM "Person" WHERE "PersonID" = 1
 			) "t1"
+		WHERE
+			"p"."PersonID" = "t1"."value"
 	)
 
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @In Int -- Int32
-SET     @In = 2
-
 SELECT
 	"p"."FirstName",
 	"p"."PersonID",
@@ -33,19 +29,18 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	"p"."PersonID" IN (
+	EXISTS(
 		SELECT
-			"t1"."value"
+			*
 		FROM
 			(
-				SELECT "PersonID" AS "value" FROM "Person" WHERE "PersonID" = ?
+				SELECT "PersonID" AS "value" FROM "Person" WHERE "PersonID" = 2
 			) "t1"
+		WHERE
+			"p"."PersonID" = "t1"."value"
 	)
 
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @In Int -- Int32
-SET     @In = 1
-
 SELECT
 	"p"."FirstName",
 	"p"."PersonID",
@@ -55,12 +50,14 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	"p"."PersonID" IN (
+	EXISTS(
 		SELECT
-			"t1"."value"
+			*
 		FROM
 			(
-				SELECT "PersonID" AS "value" FROM "Person" WHERE "PersonID" = ?
+				SELECT "PersonID" AS "value" FROM "Person" WHERE "PersonID" = 1
 			) "t1"
+		WHERE
+			"p"."PersonID" = "t1"."value"
 	)
 
