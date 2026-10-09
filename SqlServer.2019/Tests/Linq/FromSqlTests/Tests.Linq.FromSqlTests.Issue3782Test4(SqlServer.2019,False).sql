@@ -1,4 +1,7 @@
 ﻿-- SqlServer.2019
+DECLARE @p NVarChar(4000) -- String
+SET     @p = N'Person'
+
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],
@@ -13,7 +16,7 @@ WHERE
 			*
 		FROM
 			(
-				SELECT IIF(EXISTS(SELECT * FROM [INFORMATION_SCHEMA].[TABLES] [x] WHERE [x].[TABLE_NAME] = N'Person'),1,0) ttt
+				SELECT IIF(EXISTS(SELECT * FROM [INFORMATION_SCHEMA].[TABLES] [x] WHERE [x].[TABLE_NAME] = @p),1,0) ttt
 			) [t1]([value])
 	)
 
