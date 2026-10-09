@@ -29,15 +29,7 @@ VALUES
 
 -- Firebird.4 Firebird4
 SELECT
-	"r"."OpenedOn",
-	"r"."ClosedOn"
-FROM
-	"CoarseEventRow" "r"
-FETCH NEXT 2 ROWS ONLY
-
--- Firebird.4 Firebird4
-SELECT
-	CAST(CAST(Floor(DateDiff(millisecond, "r"."OpenedOn", "r"."ClosedOn") * 10) AS BigInt) * 1000 AS BigInt)
+	DateAdd(millisecond, CAST(Mod(CAST(CAST(Floor(DateDiff(millisecond, "r"."OpenedOn", "r"."ClosedOn") * 10) AS BigInt) * 1000 AS BigInt), 864000000000) / 1000 AS Decimal(18, 1)) / 10, DateAdd(day, CAST(CAST(Floor(DateDiff(millisecond, "r"."OpenedOn", "r"."ClosedOn") * 10) AS BigInt) * 1000 AS BigInt) / 864000000000, CAST(TIMESTAMP '2026-06-20 00:00:00.0000' AS TimeStamp)))
 FROM
 	"CoarseEventRow" "r"
 FETCH NEXT 2 ROWS ONLY

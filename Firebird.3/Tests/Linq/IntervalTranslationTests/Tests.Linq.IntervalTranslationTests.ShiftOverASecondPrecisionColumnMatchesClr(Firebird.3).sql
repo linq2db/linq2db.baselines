@@ -1,4 +1,4 @@
-﻿-- Firebird.2.5 Firebird
+﻿-- Firebird.3 Firebird3
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @StartedOn TimeStamp -- DateTime
@@ -27,9 +27,10 @@ VALUES
 	@ClosedOn
 )
 
--- Firebird.2.5 Firebird
-SELECT FIRST 2
-	CAST(CAST(Floor(DateDiff(millisecond, "r"."StartedOn", "r"."FinishedOn") * 10) AS BigInt) * 1000 AS BigInt)
+-- Firebird.3 Firebird3
+SELECT
+	DateAdd(millisecond, CAST(Mod(CAST(CAST(Floor(DateDiff(millisecond, "r"."StartedOn", "r"."FinishedOn") * 10) AS BigInt) * 1000 AS BigInt), 864000000000) / 1000 AS Decimal(18, 1)) / 10, DateAdd(day, CAST(CAST(Floor(DateDiff(millisecond, "r"."StartedOn", "r"."FinishedOn") * 10) AS BigInt) * 1000 AS BigInt) / 864000000000, CAST(TIMESTAMP '2026-06-20 00:00:00.0000' AS TimeStamp)))
 FROM
 	"CoarseEventRow" "r"
+FETCH NEXT 2 ROWS ONLY
 

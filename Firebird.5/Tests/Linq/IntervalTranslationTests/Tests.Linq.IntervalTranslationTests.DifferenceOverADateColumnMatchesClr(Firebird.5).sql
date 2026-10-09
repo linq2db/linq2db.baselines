@@ -37,7 +37,7 @@ FETCH NEXT 2 ROWS ONLY
 
 -- Firebird.5 Firebird4
 SELECT
-	CAST(DateDiff(millisecond, "r"."OpenedOn", "r"."ClosedOn") * 10000 AS BigInt)
+	CAST(CAST(Floor(DateDiff(millisecond, "r"."OpenedOn", "r"."ClosedOn") * 10) AS BigInt) * 1000 AS BigInt)
 FROM
 	"CoarseEventRow" "r"
 FETCH NEXT 2 ROWS ONLY

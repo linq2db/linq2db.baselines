@@ -25,5 +25,5 @@ SELECT
 FROM
 	"EventRow" "r"
 WHERE
-	CAST(CAST(DateDiff(millisecond, "r"."StartedOn", CURRENT_TIMESTAMP) * 10000 AS BigInt) AS DOUBLE PRECISION) / 864000000000 > 1
+	CAST(CAST(CAST(Floor(DateDiff(millisecond, "r"."StartedOn", CURRENT_TIMESTAMP) * 10) AS BigInt) * 1000 AS BigInt) AS DOUBLE PRECISION) / 864000000000 > 1
 

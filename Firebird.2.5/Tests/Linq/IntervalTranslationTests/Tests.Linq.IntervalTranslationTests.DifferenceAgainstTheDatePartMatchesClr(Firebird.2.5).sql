@@ -21,7 +21,7 @@ VALUES
 
 -- Firebird.2.5 Firebird
 SELECT FIRST 2
-	CAST(CAST(DateDiff(millisecond, CAST("r"."FinishedOn" AS Date), "r"."FinishedOn") * 10000 AS BigInt) AS DOUBLE PRECISION) / 36000000000
+	CAST(CAST(CAST(Floor(DateDiff(millisecond, CAST("r"."FinishedOn" AS Date), "r"."FinishedOn") * 10) AS BigInt) * 1000 AS BigInt) AS DOUBLE PRECISION) / 36000000000
 FROM
 	"EventRow" "r"
 

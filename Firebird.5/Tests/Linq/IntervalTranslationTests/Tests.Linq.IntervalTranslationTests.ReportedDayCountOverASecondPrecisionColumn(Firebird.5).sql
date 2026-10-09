@@ -58,7 +58,7 @@ VALUES
 
 -- Firebird.5 Firebird4
 SELECT
-	CAST(Floor(CAST(CAST(DateDiff(millisecond, MIN("grp"."StartedOn"), MAX("grp"."StartedOn")) * 10000 AS BigInt) AS DOUBLE PRECISION) / 864000000000) AS Int) + 1
+	CAST(Floor(CAST(CAST(CAST(Floor(DateDiff(millisecond, MIN("grp"."StartedOn"), MAX("grp"."StartedOn")) * 10) AS BigInt) * 1000 AS BigInt) AS DOUBLE PRECISION) / 864000000000) AS Int) + 1
 FROM
 	"CoarseEventRow" "grp"
 FETCH NEXT 2 ROWS ONLY

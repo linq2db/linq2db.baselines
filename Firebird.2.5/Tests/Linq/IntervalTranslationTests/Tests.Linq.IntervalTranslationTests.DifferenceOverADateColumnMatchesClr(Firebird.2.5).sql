@@ -36,7 +36,7 @@ FROM
 
 -- Firebird.2.5 Firebird
 SELECT FIRST 2
-	CAST(DateDiff(millisecond, "r"."OpenedOn", "r"."ClosedOn") * 10000 AS BigInt)
+	CAST(CAST(Floor(DateDiff(millisecond, "r"."OpenedOn", "r"."ClosedOn") * 10) AS BigInt) * 1000 AS BigInt)
 FROM
 	"CoarseEventRow" "r"
 
