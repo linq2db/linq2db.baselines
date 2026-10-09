@@ -1,8 +1,6 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
 DECLARE @args Int -- Int32
 SET     @args = 1
-DECLARE @args_1 Int -- Int32
-SET     @args_1 = 99
 
 SELECT
 	[p].[FirstName],
@@ -51,8 +49,6 @@ WHERE
 -- SqlServer.2022.MS SqlServer.2022
 DECLARE @args Int -- Int32
 SET     @args = 1
-DECLARE @args_1 Int -- Int32
-SET     @args_1 = 99
 
 SELECT
 	[p].[FirstName],
