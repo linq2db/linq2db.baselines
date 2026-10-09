@@ -46,7 +46,7 @@ SELECT
 FROM
 	"EventRow" "x"
 WHERE
-	CAST(CAST(DateDiff(millisecond, "x"."StartedOn", "x"."FinishedOn") * 10000 AS BigInt) AS DOUBLE PRECISION) / 36000000000 > 3
+	CAST(CAST(CAST(Floor(DateDiff(millisecond, "x"."StartedOn", "x"."FinishedOn") * 10) AS BigInt) * 1000 AS BigInt) AS DOUBLE PRECISION) / 36000000000 > 3
 
 -- Firebird.3 Firebird3
 SELECT
@@ -54,7 +54,7 @@ SELECT
 FROM
 	"EventRow" "x"
 WHERE
-	CAST(Mod(CAST(DateDiff(millisecond, "x"."StartedOn", "x"."FinishedOn") * 10000 AS BigInt) / 36000000000, 24) AS Int) = 1
+	CAST(Mod(CAST(CAST(Floor(DateDiff(millisecond, "x"."StartedOn", "x"."FinishedOn") * 10) AS BigInt) * 1000 AS BigInt) / 36000000000, 24) AS Int) = 1
 
 -- Firebird.3 Firebird3
 SELECT
@@ -62,11 +62,11 @@ SELECT
 FROM
 	"EventRow" "x"
 ORDER BY
-	CAST(DateDiff(millisecond, "x"."StartedOn", "x"."FinishedOn") * 10000 AS BigInt) DESC
+	CAST(CAST(Floor(DateDiff(millisecond, "x"."StartedOn", "x"."FinishedOn") * 10) AS BigInt) * 1000 AS BigInt) DESC
 
 -- Firebird.3 Firebird3
 SELECT
-	CAST(DateDiff(millisecond, "x"."StartedOn", "x"."FinishedOn") * 10000 AS BigInt)
+	CAST(CAST(Floor(DateDiff(millisecond, "x"."StartedOn", "x"."FinishedOn") * 10) AS BigInt) * 1000 AS BigInt)
 FROM
 	"EventRow" "x"
 ORDER BY
@@ -75,7 +75,7 @@ ORDER BY
 -- Firebird.3 Firebird3
 SELECT
 	"r"."Id",
-	CAST(DateDiff(millisecond, "r"."StartedOn", "r"."FinishedOn") * 10000 AS BigInt)
+	CAST(CAST(Floor(DateDiff(millisecond, "r"."StartedOn", "r"."FinishedOn") * 10) AS BigInt) * 1000 AS BigInt)
 FROM
 	"EventRow" "r"
 ORDER BY
