@@ -1,8 +1,6 @@
 ﻿-- Oracle.11.Managed Oracle11
 DECLARE @args Int32
 SET     @args = 1
-DECLARE @args_1 Int32
-SET     @args_1 = 99
 
 SELECT
 	p."FirstName",
@@ -51,8 +49,6 @@ WHERE
 -- Oracle.11.Managed Oracle11
 DECLARE @args Int32
 SET     @args = 1
-DECLARE @args_1 Int32
-SET     @args_1 = 99
 
 SELECT
 	p."FirstName",
