@@ -1,7 +1,7 @@
 ﻿-- SQLite.MS SQLite
 SELECT
 	[x].[Id],
-	Coalesce([a_City].[Name], '') || ' ' || Coalesce(CAST([a_City].[Population] AS NVarChar(11)), '')
+	Coalesce([a_City].[Name], '') || ' ' || CAST(Coalesce([a_City].[Population], 0) AS NVarChar(11))
 FROM
 	[Pet3043] [x]
 		INNER JOIN [Person3043] [a_Person] ON [x].[PersonId] = [a_Person].[Id]
