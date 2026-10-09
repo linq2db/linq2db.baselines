@@ -1,8 +1,6 @@
 ﻿-- SqlServer.Contained SqlServer.2019
 DECLARE @In Int -- Int32
 SET     @In = 1
-DECLARE @In_1 Int -- Int32
-SET     @In_1 = 99
 
 SELECT
 	[p].[FirstName],
@@ -47,8 +45,6 @@ WHERE
 -- SqlServer.Contained SqlServer.2019
 DECLARE @In Int -- Int32
 SET     @In = 1
-DECLARE @In_1 Int -- Int32
-SET     @In_1 = 99
 
 SELECT
 	[p].[FirstName],
