@@ -1,6 +1,6 @@
 ﻿-- DB2 DB2.LUW DB2LUW
 DECLARE @asOf Timestamp(20) -- DateTime
-SET     @asOf = '2026-01-10-08.15.30.000000'
+SET     @asOf = CAST('2026-01-10-08.15.30.000000' AS TIMESTAMP(6))
 
 UPDATE
 	"MeasuredPeriodRow" "r"
@@ -20,7 +20,7 @@ FETCH NEXT 2 ROWS ONLY
 
 -- DB2 DB2.LUW DB2LUW
 DECLARE @asOf Timestamp(20) -- DateTime
-SET     @asOf = '2026-01-10-08.15.30.000000'
+SET     @asOf = CAST('2026-01-10-08.15.30.000000' AS TIMESTAMP(6))
 
 SELECT
 	"r"."Id"
@@ -31,7 +31,7 @@ WHERE
 
 -- DB2 DB2.LUW DB2LUW
 DECLARE @asOf Timestamp(20) -- DateTime
-SET     @asOf = '2026-01-10-08.15.30.000000'
+SET     @asOf = CAST('2026-01-10-08.15.30.000000' AS TIMESTAMP(6))
 
 UPDATE
 	"MeasuredPeriodRow" "r"
@@ -51,7 +51,7 @@ FETCH NEXT 2 ROWS ONLY
 
 -- DB2 DB2.LUW DB2LUW
 DECLARE @asOf Timestamp(20) -- DateTime
-SET     @asOf = '2026-01-10-08.15.30.000000'
+SET     @asOf = CAST('2026-01-10-08.15.30.000000' AS TIMESTAMP(6))
 
 SELECT
 	"r"."Id"

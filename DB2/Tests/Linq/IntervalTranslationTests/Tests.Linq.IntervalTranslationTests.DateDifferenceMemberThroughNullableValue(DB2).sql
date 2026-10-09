@@ -16,7 +16,7 @@ WHERE
 
 -- DB2 DB2.LUW DB2LUW
 DECLARE @asOf Timestamp(20) -- DateTime
-SET     @asOf = '2026-01-03-13.30.00.000000'
+SET     @asOf = CAST('2026-01-03-13.30.00.000000' AS TIMESTAMP(6))
 
 SELECT
 	"r"."Id"
