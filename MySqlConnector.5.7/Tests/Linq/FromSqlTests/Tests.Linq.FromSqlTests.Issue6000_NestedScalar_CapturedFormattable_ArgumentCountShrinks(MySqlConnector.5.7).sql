@@ -1,8 +1,6 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @In Int32
 SET     @In = 1
-DECLARE @In_1 Int32
-SET     @In_1 = 99
 
 SELECT
 	`p`.`FirstName`,
@@ -47,8 +45,6 @@ WHERE
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @In Int32
 SET     @In = 1
-DECLARE @In_1 Int32
-SET     @In_1 = 99
 
 SELECT
 	`p`.`FirstName`,

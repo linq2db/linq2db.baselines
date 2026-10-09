@@ -1,7 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @In Int32
-SET     @In = 1
-
 SELECT
 	`p`.`FirstName`,
 	`p`.`PersonID`,
@@ -11,19 +8,18 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	`p`.`PersonID` IN (
+	EXISTS(
 		SELECT
-			`t1`.`value`
+			*
 		FROM
 			(
-				SELECT PersonID AS "value" FROM Person WHERE PersonID = @In
+				SELECT PersonID AS "value" FROM Person WHERE PersonID = 1
 			) `t1`(`value`)
+		WHERE
+			`p`.`PersonID` = `t1`.`value`
 	)
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @In Int32
-SET     @In = 2
-
 SELECT
 	`p`.`FirstName`,
 	`p`.`PersonID`,
@@ -33,19 +29,18 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	`p`.`PersonID` IN (
+	EXISTS(
 		SELECT
-			`t1`.`value`
+			*
 		FROM
 			(
-				SELECT PersonID AS "value" FROM Person WHERE PersonID = @In
+				SELECT PersonID AS "value" FROM Person WHERE PersonID = 2
 			) `t1`(`value`)
+		WHERE
+			`p`.`PersonID` = `t1`.`value`
 	)
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @In Int32
-SET     @In = 1
-
 SELECT
 	`p`.`FirstName`,
 	`p`.`PersonID`,
@@ -55,12 +50,14 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	`p`.`PersonID` IN (
+	EXISTS(
 		SELECT
-			`t1`.`value`
+			*
 		FROM
 			(
-				SELECT PersonID AS "value" FROM Person WHERE PersonID = @In
+				SELECT PersonID AS "value" FROM Person WHERE PersonID = 1
 			) `t1`(`value`)
+		WHERE
+			`p`.`PersonID` = `t1`.`value`
 	)
 
