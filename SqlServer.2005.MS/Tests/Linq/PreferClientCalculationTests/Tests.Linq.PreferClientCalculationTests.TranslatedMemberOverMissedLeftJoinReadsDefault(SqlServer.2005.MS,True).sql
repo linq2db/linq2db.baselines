@@ -13,9 +13,9 @@ SELECT
 	END,
 	CAST(Coalesce([j].[Value1], 0) AS NVarChar(11)) + N'!',
 	Coalesce([j].[Name], N'') + N'!',
-	DateAdd(day, [e].[Value1], Coalesce([j].[Date], CAST('1753-01-01T00:00:00.000' AS DATETIME))),
-	DatePart(year, DateAdd(day, [e].[Value1], Coalesce([j].[Date], CAST('1753-01-01T00:00:00.000' AS DATETIME)))),
-	DatePart(day, DateAdd(day, [e].[Value1], Coalesce([j].[Date], CAST('1753-01-01T00:00:00.000' AS DATETIME))))
+	DateAdd(day, 10, Coalesce([j].[Date], CAST('1753-01-01T00:00:00.000' AS DATETIME))),
+	DatePart(year, DateAdd(day, 10, Coalesce([j].[Date], CAST('1753-01-01T00:00:00.000' AS DATETIME)))),
+	DatePart(day, DateAdd(day, 10, Coalesce([j].[Date], CAST('1753-01-01T00:00:00.000' AS DATETIME))))
 FROM
 	[TranslatedMemberEntity] [e]
 		LEFT JOIN [TranslatedMemberEntity] [j] ON [j].[Id] = [e].[Id] + 1000
