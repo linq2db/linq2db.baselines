@@ -10,9 +10,9 @@ SELECT
 	IIF([j].[Value1] <= -5 AND [j].[Value1] IS NOT NULL, IIF([j].[Value1] IS NULL, 0, [j].[Value1]), -5),
 	CStr(IIF([j].[Value1] IS NULL, 0, [j].[Value1])) + '!',
 	IIF([j].[Name] IS NULL, '', [j].[Name]) + '!',
-	DateAdd('d', [e].[Value1], IIF([j].[Date] IS NULL, #0100-01-01#, [j].[Date])),
-	DatePart('yyyy', DateAdd('d', [e].[Value1], IIF([j].[Date] IS NULL, #0100-01-01#, [j].[Date]))),
-	DatePart('d', DateAdd('d', [e].[Value1], IIF([j].[Date] IS NULL, #0100-01-01#, [j].[Date])))
+	DateAdd('d', 10, IIF([j].[Date] IS NULL, #0100-01-01#, [j].[Date])),
+	DatePart('yyyy', DateAdd('d', 10, IIF([j].[Date] IS NULL, #0100-01-01#, [j].[Date]))),
+	DatePart('d', DateAdd('d', 10, IIF([j].[Date] IS NULL, #0100-01-01#, [j].[Date])))
 FROM
 	[TranslatedMemberEntity] [e]
 		LEFT JOIN [TranslatedMemberEntity] [j] ON ([j].[Id] = [e].[Id] + 1000)
