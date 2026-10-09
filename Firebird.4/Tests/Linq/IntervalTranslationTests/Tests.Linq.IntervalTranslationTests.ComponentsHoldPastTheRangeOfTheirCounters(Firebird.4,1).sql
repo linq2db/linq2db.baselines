@@ -42,7 +42,7 @@ VALUES
 
 -- Firebird.4 Firebird4
 SELECT
-	CAST(Mod(CAST(DateDiff(millisecond, "r"."StartedOn", "r"."FinishedOn") * 10000 AS BigInt) / 36000000000, 24) AS Int)
+	CAST(Mod(CAST(CAST(Floor(DateDiff(millisecond, "r"."StartedOn", "r"."FinishedOn") * 10) AS BigInt) * 1000 AS BigInt) / 36000000000, 24) AS Int)
 FROM
 	"EventRow" "r"
 ORDER BY
@@ -50,7 +50,7 @@ ORDER BY
 
 -- Firebird.4 Firebird4
 SELECT
-	CAST(Mod(CAST(DateDiff(millisecond, "r"."StartedOn", "r"."FinishedOn") * 10000 AS BigInt) / 600000000, 60) AS Int)
+	CAST(Mod(CAST(CAST(Floor(DateDiff(millisecond, "r"."StartedOn", "r"."FinishedOn") * 10) AS BigInt) * 1000 AS BigInt) / 600000000, 60) AS Int)
 FROM
 	"EventRow" "r"
 ORDER BY
@@ -58,7 +58,7 @@ ORDER BY
 
 -- Firebird.4 Firebird4
 SELECT
-	CAST(Mod(CAST(DateDiff(millisecond, "r"."StartedOn", "r"."FinishedOn") * 10000 AS BigInt) / 10000000, 60) AS Int)
+	CAST(Mod(CAST(CAST(Floor(DateDiff(millisecond, "r"."StartedOn", "r"."FinishedOn") * 10) AS BigInt) * 1000 AS BigInt) / 10000000, 60) AS Int)
 FROM
 	"EventRow" "r"
 ORDER BY

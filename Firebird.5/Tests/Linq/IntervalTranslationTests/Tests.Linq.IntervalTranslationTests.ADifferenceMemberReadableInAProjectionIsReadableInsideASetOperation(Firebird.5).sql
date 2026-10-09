@@ -21,20 +21,20 @@ VALUES
 
 -- Firebird.5 Firebird4
 SELECT
-	CAST(Mod(CAST(DateDiff(millisecond, "r"."StartedOn", "r"."FinishedOn") * 10000 AS BigInt) / 10, 1000) AS Int)
+	CAST(Mod(CAST(CAST(Floor(DateDiff(millisecond, "r"."StartedOn", "r"."FinishedOn") * 10) AS BigInt) * 1000 AS BigInt) / 10, 1000) AS Int)
 FROM
 	"EventRow" "r"
 
 -- Firebird.5 Firebird4
 SELECT
-	CAST(Mod(CAST(DateDiff(millisecond, "r"."StartedOn", "r"."FinishedOn") * 10000 AS BigInt) / 10, 1000) AS Int)
+	CAST(Mod(CAST(CAST(Floor(DateDiff(millisecond, "r"."StartedOn", "r"."FinishedOn") * 10) AS BigInt) * 1000 AS BigInt) / 10, 1000) AS Int)
 FROM
 	"EventRow" "r"
 WHERE
 	"r"."Id" > 0
 UNION ALL
 SELECT
-	CAST(Mod(CAST(DateDiff(millisecond, "r_1"."StartedOn", "r_1"."FinishedOn") * 10000 AS BigInt) / 10, 1000) AS Int)
+	CAST(Mod(CAST(CAST(Floor(DateDiff(millisecond, "r_1"."StartedOn", "r_1"."FinishedOn") * 10) AS BigInt) * 1000 AS BigInt) / 10, 1000) AS Int)
 FROM
 	"EventRow" "r_1"
 WHERE
