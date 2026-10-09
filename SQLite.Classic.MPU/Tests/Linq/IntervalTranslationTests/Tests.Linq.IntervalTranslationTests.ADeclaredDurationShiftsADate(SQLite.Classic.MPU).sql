@@ -29,8 +29,9 @@ VALUES
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 SELECT
-	[r].[InSeconds],
-	[r].[InTicks]
+	Strftime('%Y-%m-%d %H:%M:%f', JulianDay('2026-03-01 00:00:00.000') + Round(CAST([r].[InSeconds] * 10000000 AS Float) * 0.0001) * 1.1574074074074074E-08),
+	Strftime('%Y-%m-%d %H:%M:%f', JulianDay('2026-03-01 00:00:00.000') + Round(CAST(([r].[InSeconds] * 10000000) * -1 AS Float) * 0.0001) * 1.1574074074074074E-08),
+	Strftime('%Y-%m-%d %H:%M:%f', JulianDay('2026-03-01 00:00:00.000') + Round(CAST([r].[InTicks] AS Float) * 0.0001) * 1.1574074074074074E-08)
 FROM
 	[DurationRow] [r]
 LIMIT 2
