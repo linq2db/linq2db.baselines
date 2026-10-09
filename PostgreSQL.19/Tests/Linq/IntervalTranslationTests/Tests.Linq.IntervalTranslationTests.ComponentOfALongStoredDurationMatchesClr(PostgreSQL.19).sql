@@ -30,9 +30,9 @@ VALUES
 -- PostgreSQL.19 PostgreSQL12
 SELECT
 	(r."InSeconds" / 86400)::Int,
-	Floor(((r."InSeconds" / 3600)::decimal % 24)::decimal)::Int,
-	Floor(((r."InSeconds" / 60)::decimal % 60)::decimal)::Int,
-	Floor((r."InSeconds"::decimal % 60)::decimal)::Int
+	Floor((r."InSeconds" / 3600)::decimal % 24)::BigInt::Int,
+	Floor((r."InSeconds" / 60)::decimal % 60)::BigInt::Int,
+	Floor(r."InSeconds"::decimal % 60)::BigInt::Int
 FROM
 	"DurationRow" r
 LIMIT 2
@@ -46,5 +46,5 @@ SELECT
 FROM
 	"DurationRow" r
 WHERE
-	Floor((r."InSeconds"::decimal % 60)::decimal)::Int = :Seconds
+	Floor(r."InSeconds"::decimal % 60)::BigInt::Int = :Seconds
 
