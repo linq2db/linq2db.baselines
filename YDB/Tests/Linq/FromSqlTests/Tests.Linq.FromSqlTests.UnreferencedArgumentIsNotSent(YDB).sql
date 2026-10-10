@@ -1,9 +1,12 @@
 ﻿-- YDB Ydb
+DECLARE $In Int32
+SET     $In = 1
+
 $CTE_1 = 	SELECT
 		t1.`value` as value_1
 	FROM
 		(
-			SELECT PersonID AS `value` FROM Person WHERE PersonID = 1
+			SELECT PersonID AS `value` FROM Person WHERE PersonID = $In
 		) t1
 ;
 
