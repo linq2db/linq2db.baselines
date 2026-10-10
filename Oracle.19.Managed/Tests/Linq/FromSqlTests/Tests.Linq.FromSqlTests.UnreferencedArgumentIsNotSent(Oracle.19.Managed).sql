@@ -1,4 +1,7 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
+DECLARE @In_1 Int32
+SET     @In_1 = 1
+
 SELECT
 	p."FirstName",
 	p."PersonID",
@@ -13,7 +16,7 @@ WHERE
 			t1."value"
 		FROM
 			(
-				SELECT "PersonID" AS "value" FROM "Person" WHERE "PersonID" = 1
+				SELECT "PersonID" AS "value" FROM "Person" WHERE "PersonID" = :In_1
 			) t1
 	)
 
