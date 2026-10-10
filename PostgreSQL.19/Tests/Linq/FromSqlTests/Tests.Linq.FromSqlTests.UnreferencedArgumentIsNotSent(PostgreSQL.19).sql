@@ -1,4 +1,7 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
+DECLARE @In Integer -- Int32
+SET     @In = 1
+
 SELECT
 	p."FirstName",
 	p."PersonID",
@@ -13,7 +16,7 @@ WHERE
 			t1.value
 		FROM
 			(
-				SELECT "PersonID" AS "value" FROM "Person" WHERE "PersonID" = 1
+				SELECT "PersonID" AS "value" FROM "Person" WHERE "PersonID" = :In
 			) t1(value)
 	)
 
