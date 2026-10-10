@@ -11,7 +11,7 @@ SELECT TOP (@take)
 	[r].[MaxCapacity] - [r].[Quantity] as [FreeCapacity],
 	COALESCE([vpcc].[PeriodOrderLimit],0) as [MaxCapacity_1],
 	[vsopc].[Quantity] as [Quantity_1],
-	COALESCE([vpcc].[PeriodOrderLimit],0) - [vsopc].[Quantity] as [FreeCapacity_1]
+	COALESCE([vpcc].[PeriodOrderLimit],0) - Coalesce([vsopc].[Quantity], 0) as [FreeCapacity_1]
 FROM
 	(
 		SELECT
