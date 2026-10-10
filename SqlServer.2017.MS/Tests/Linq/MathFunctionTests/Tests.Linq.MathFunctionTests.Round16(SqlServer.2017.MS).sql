@@ -6,3 +6,11 @@ FROM
 WHERE
 	[p].[MoneyValue] <> 0
 
+-- SqlServer.2017.MS SqlServer.2017
+SELECT
+	IIF([p].[MoneyValue] * 2 = ROUND([p].[MoneyValue] * 2, [p].[ID] % 2 + 1) AND [p].[MoneyValue] <> ROUND([p].[MoneyValue], [p].[ID] % 2 + 1), ROUND([p].[MoneyValue] / 2, [p].[ID] % 2 + 1) * 2, ROUND([p].[MoneyValue], [p].[ID] % 2 + 1))
+FROM
+	[LinqDataTypes] [p]
+WHERE
+	[p].[MoneyValue] <> 0
+
