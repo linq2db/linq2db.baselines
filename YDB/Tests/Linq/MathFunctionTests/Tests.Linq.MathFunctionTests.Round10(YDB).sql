@@ -4,7 +4,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Unwrap(CAST(Unwrap(CAST(Math::NearbyInt(Unwrap(CAST(p.MoneyValue * Decimal('10', 6, 2) AS Double)), Math::RoundToNearest()) AS Text)) AS Decimal(6,2))) / Decimal('10', 6, 2) as c1
+			Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(Math::NearbyInt(Unwrap(CAST(Unwrap(CAST(p.MoneyValue AS Decimal(7,2))) * Decimal('10', 7, 2) AS Double)), Math::RoundToNearest()) AS Text)) AS Decimal(7,2))) / Decimal('10', 7, 2) AS Decimal(6,2))) as c1
 		FROM
 			LinqDataTypes p
 	) t

@@ -5,6 +5,6 @@ SELECT
 FROM
 	"Child" t1
 ORDER BY
-	(t1."ChildID"::decimal % 2)::decimal,
+	Floor(t1."ChildID"::decimal % 2)::Int,
 	t1."ChildID"
 

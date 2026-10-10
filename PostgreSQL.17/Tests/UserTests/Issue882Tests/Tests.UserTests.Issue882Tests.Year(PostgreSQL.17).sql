@@ -1,6 +1,6 @@
 ﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
-	(Floor(Extract(year From t."DateTimeValue"))::Int::decimal % 7)::decimal
+	Floor(Floor(Extract(year From t."DateTimeValue"))::Int::decimal % 7)::Int
 FROM
 	"LinqDataTypes" t
 

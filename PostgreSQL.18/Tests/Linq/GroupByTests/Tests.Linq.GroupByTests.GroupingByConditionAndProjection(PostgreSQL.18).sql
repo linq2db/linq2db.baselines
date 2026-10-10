@@ -6,7 +6,7 @@ FROM
 	(
 		SELECT
 			CASE
-				WHEN (g_1."ChildID"::decimal % 2)::decimal = 0 THEN g_1."ParentID"
+				WHEN Floor(g_1."ChildID"::decimal % 2)::Int = 0 THEN g_1."ParentID"
 				ELSE NULL
 			END as "Key_1"
 		FROM

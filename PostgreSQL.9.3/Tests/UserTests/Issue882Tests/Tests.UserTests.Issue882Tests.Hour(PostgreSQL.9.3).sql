@@ -1,6 +1,6 @@
 ﻿-- PostgreSQL.9.3 PostgreSQL
 SELECT
-	(Floor(Extract(hour From t."DateTimeValue"))::Int::decimal % 7)::decimal
+	Floor(Floor(Extract(hour From t."DateTimeValue"))::Int::decimal % 7)::Int
 FROM
 	"LinqDataTypes" t
 
