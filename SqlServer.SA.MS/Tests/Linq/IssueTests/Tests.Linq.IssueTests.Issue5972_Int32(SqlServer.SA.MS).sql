@@ -1,0 +1,16 @@
+﻿-- SqlServer.SA.MS SqlServer.2019
+SELECT
+	-2147483648
+
+-- SqlServer.SA.MS SqlServer.2019
+SELECT
+	2147483647
+
+-- SqlServer.SA.MS SqlServer.2019
+SELECT
+	-2147483648
+
+-- SqlServer.SA.MS SqlServer.2019
+SELECT
+	2147483647
+
