@@ -62,3 +62,19 @@ SELECT
 FROM
 	"ClientCalcEntity" t1
 
+-- Oracle.11.Managed Oracle11
+SELECT
+	e."Id",
+	e."Name"
+FROM
+	"ClientCalcEntity" e
+
+-- Oracle.11.Managed Oracle11
+SELECT
+	t1."Id",
+	t1."Value1",
+	t1."Value2",
+	t1."Name"
+FROM
+	"ClientCalcEntity" t1
+
