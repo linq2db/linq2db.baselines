@@ -1,0 +1,16 @@
+﻿-- SQLite.MS SQLite
+SELECT
+	-128
+
+-- SQLite.MS SQLite
+SELECT
+	127
+
+-- SQLite.MS SQLite
+SELECT
+	-128
+
+-- SQLite.MS SQLite
+SELECT
+	127
+
