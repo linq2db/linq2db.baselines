@@ -1,0 +1,16 @@
+﻿-- PostgreSQL.19 PostgreSQL12
+SELECT
+	-2147483648
+
+-- PostgreSQL.19 PostgreSQL12
+SELECT
+	2147483647
+
+-- PostgreSQL.19 PostgreSQL12
+SELECT
+	-2147483648
+
+-- PostgreSQL.19 PostgreSQL12
+SELECT
+	2147483647
+
