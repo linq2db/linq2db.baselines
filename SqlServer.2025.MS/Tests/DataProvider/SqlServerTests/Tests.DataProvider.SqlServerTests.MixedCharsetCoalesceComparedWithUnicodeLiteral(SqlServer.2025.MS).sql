@@ -1,0 +1,8 @@
+﻿-- SqlServer.2025.MS SqlServer.2025
+SELECT
+	COUNT(*)
+FROM
+	[MixedCharsetCoalesceTable] [r]
+WHERE
+	Coalesce([r].[V], [r].[N]) = N'Ж'
+
