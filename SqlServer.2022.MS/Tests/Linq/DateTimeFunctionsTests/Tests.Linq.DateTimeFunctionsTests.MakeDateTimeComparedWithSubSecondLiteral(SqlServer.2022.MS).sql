@@ -1,0 +1,30 @@
+﻿-- SqlServer.2022.MS SqlServer.2022
+SELECT
+	COUNT(*)
+FROM
+	[LinqDataTypes] [t1]
+
+-- SqlServer.2022.MS SqlServer.2022
+SELECT
+	COUNT(*)
+FROM
+	[LinqDataTypes] [p]
+WHERE
+	DATETIME2FROMPARTS(2010, 1, 1, 10, 0, [p].[ID] % 1, 0, 3) < DATETIME2FROMPARTS(2010, 1, 1, 10, 0, 0, 5000000, 7)
+
+-- SqlServer.2022.MS SqlServer.2022
+SELECT
+	COUNT(*)
+FROM
+	[LinqDataTypes] [p]
+WHERE
+	DATETIME2FROMPARTS(2010, 1, 1, 10, 0, [p].[ID] % 1, 0, 3) >= DATETIME2FROMPARTS(2010, 1, 1, 10, 0, 0, 5000000, 7)
+
+-- SqlServer.2022.MS SqlServer.2022
+SELECT
+	COUNT(*)
+FROM
+	[LinqDataTypes] [p]
+WHERE
+	DATETIME2FROMPARTS(2010, 1, 1, 10, 0, [p].[ID] % 1, 0, 3) = DATETIME2FROMPARTS(2010, 1, 1, 10, 0, 0, 5000000, 7)
+
