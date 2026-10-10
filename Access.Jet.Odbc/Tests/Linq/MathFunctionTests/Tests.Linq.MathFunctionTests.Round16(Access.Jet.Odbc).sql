@@ -6,3 +6,11 @@ FROM
 WHERE
 	[p].[MoneyValue] <> 0
 
+-- Access.Jet.Odbc AccessODBC
+SELECT
+	IIF([p].[MoneyValue] * 2 = ROUND([p].[MoneyValue] * 2, ([p].[ID] MOD 2) + 1) AND [p].[MoneyValue] <> ROUND([p].[MoneyValue], ([p].[ID] MOD 2) + 1), ROUND([p].[MoneyValue] / 2, ([p].[ID] MOD 2) + 1) * 2, ROUND([p].[MoneyValue], ([p].[ID] MOD 2) + 1))
+FROM
+	[LinqDataTypes] [p]
+WHERE
+	[p].[MoneyValue] <> 0
+
