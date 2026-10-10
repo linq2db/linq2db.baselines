@@ -1,6 +1,6 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @In Int32
-SET     @In = 1
+DECLARE @p Int32
+SET     @p = 1
 
 SELECT
 	`p`.`FirstName`,
@@ -11,12 +11,5 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	`p`.`PersonID` IN (
-		SELECT
-			`t1`.`value`
-		FROM
-			(
-				SELECT PersonID AS "value" FROM Person WHERE PersonID = @In
-			) `t1`
-	)
+	`p`.`PersonID` = (@p)
 
