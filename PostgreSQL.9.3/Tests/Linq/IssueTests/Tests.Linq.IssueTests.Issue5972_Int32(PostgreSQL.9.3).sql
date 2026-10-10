@@ -1,0 +1,16 @@
+﻿-- PostgreSQL.9.3 PostgreSQL
+SELECT
+	-2147483648
+
+-- PostgreSQL.9.3 PostgreSQL
+SELECT
+	2147483647
+
+-- PostgreSQL.9.3 PostgreSQL
+SELECT
+	-2147483648
+
+-- PostgreSQL.9.3 PostgreSQL
+SELECT
+	2147483647
+
