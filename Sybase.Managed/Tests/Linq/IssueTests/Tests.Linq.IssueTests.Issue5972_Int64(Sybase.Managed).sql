@@ -1,0 +1,16 @@
+﻿-- Sybase.Managed Sybase
+SELECT
+	CAST(-9223372036854775808 AS BigInt)
+
+-- Sybase.Managed Sybase
+SELECT
+	CAST(9223372036854775807 AS BigInt)
+
+-- Sybase.Managed Sybase
+SELECT
+	CAST(-9223372036854775808 AS BigInt)
+
+-- Sybase.Managed Sybase
+SELECT
+	CAST(9223372036854775807 AS BigInt)
+

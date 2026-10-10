@@ -1,0 +1,16 @@
+﻿-- YDB Ydb
+SELECT
+	-2147483648 as c1
+
+-- YDB Ydb
+SELECT
+	2147483647 as c1
+
+-- YDB Ydb
+SELECT
+	-2147483648 as c1
+
+-- YDB Ydb
+SELECT
+	2147483647 as c1
+
