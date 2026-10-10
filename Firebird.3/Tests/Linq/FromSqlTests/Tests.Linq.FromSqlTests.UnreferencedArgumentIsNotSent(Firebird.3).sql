@@ -1,4 +1,7 @@
 ﻿-- Firebird.3 Firebird3
+DECLARE @In Integer -- Int32
+SET     @In = 1
+
 SELECT
 	"p"."FirstName",
 	"p"."PersonID",
@@ -13,7 +16,7 @@ WHERE
 			*
 		FROM
 			(
-				SELECT "PersonID" AS "value" FROM "Person" WHERE "PersonID" = 1
+				SELECT "PersonID" AS "value" FROM "Person" WHERE "PersonID" = @In
 			) "t1"("value")
 		WHERE
 			"p"."PersonID" = "t1"."value"
