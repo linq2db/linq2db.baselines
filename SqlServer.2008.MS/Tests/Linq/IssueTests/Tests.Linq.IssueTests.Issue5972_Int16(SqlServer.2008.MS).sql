@@ -1,0 +1,16 @@
+﻿-- SqlServer.2008.MS SqlServer.2008
+SELECT
+	-32768
+
+-- SqlServer.2008.MS SqlServer.2008
+SELECT
+	32767
+
+-- SqlServer.2008.MS SqlServer.2008
+SELECT
+	-32768
+
+-- SqlServer.2008.MS SqlServer.2008
+SELECT
+	32767
+
