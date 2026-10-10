@@ -80,7 +80,7 @@ SELECT
 FROM
 	(
 		SELECT
-			CAST(DateDiff(millisecond, "g_1"."StartedOn", "g_1"."FinishedOn") * 10000 AS BigInt) as "Key_1"
+			CAST(CAST(Floor(DateDiff(millisecond, "g_1"."StartedOn", "g_1"."FinishedOn") * 10) AS BigInt) * 1000 AS BigInt) as "Key_1"
 		FROM
 			"BudgetedTaskRow" "g_1"
 	) "t1"
