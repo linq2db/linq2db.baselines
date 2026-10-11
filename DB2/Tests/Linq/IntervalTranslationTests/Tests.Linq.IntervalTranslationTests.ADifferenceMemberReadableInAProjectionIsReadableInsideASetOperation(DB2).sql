@@ -2,9 +2,9 @@
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @StartedOn Timestamp(20) -- DateTime
-SET     @StartedOn = '2026-01-01-10.00.00.000000'
+SET     @StartedOn = CAST('2026-01-01-10.00.00.000000' AS TIMESTAMP(6))
 DECLARE @FinishedOn Timestamp(20) -- DateTime
-SET     @FinishedOn = '2026-01-01-10.00.00.006456'
+SET     @FinishedOn = CAST('2026-01-01-10.00.00.006456' AS TIMESTAMP(6))
 
 INSERT INTO "EventRow"
 (

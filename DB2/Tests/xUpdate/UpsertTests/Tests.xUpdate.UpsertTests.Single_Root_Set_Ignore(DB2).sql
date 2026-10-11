@@ -8,7 +8,7 @@ SET     @Version = 1
 DECLARE @CreatedAt Timestamp -- DateTime
 SET     @CreatedAt = NULL
 DECLARE @modified Timestamp(20) -- DateTime
-SET     @modified = '2026-02-02-09.00.00.000000'
+SET     @modified = CAST('2026-02-02-09.00.00.000000' AS TIMESTAMP(6))
 DECLARE @UpdatedBy VarChar(12) -- String
 SET     @UpdatedBy = 'sys-root-ins'
 
@@ -68,7 +68,7 @@ SET     @Version = 2
 DECLARE @CreatedAt Timestamp -- DateTime
 SET     @CreatedAt = NULL
 DECLARE @modified Timestamp(20) -- DateTime
-SET     @modified = '2026-02-02-09.00.00.000000'
+SET     @modified = CAST('2026-02-02-09.00.00.000000' AS TIMESTAMP(6))
 DECLARE @UpdatedBy VarChar(12) -- String
 SET     @UpdatedBy = 'sys-root-upd'
 

@@ -7,7 +7,7 @@ FROM
 	(
 		SELECT
 			r.Id,
-			NULL::datetime year to fraction as c1,
+			NULL::datetime year to fraction(5) as c1,
 			r."Date" as Date_1
 		FROM
 			Issue5976RowA r
@@ -15,7 +15,7 @@ FROM
 		SELECT
 			r_1.Id,
 			r_1."Date" as c1,
-			NULL::datetime year to fraction as Date_1
+			NULL::datetime year to fraction(5) as Date_1
 		FROM
 			Issue5976RowC r_1
 	) t1
