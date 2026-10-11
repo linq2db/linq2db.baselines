@@ -82,7 +82,7 @@ SELECT
 FROM
 	"BudgetedTaskRow" "r"
 WHERE
-	CAST(DateDiff(millisecond, "r"."StartedOn", "r"."FinishedOn") * 10000 AS BigInt) > @Ticks
+	CAST(CAST(Floor(DateDiff(millisecond, "r"."StartedOn", "r"."FinishedOn") * 10) AS BigInt) * 1000 AS BigInt) > @Ticks
 
 -- Firebird.5 Firebird4
 DECLARE @Ticks BigInt -- Int64
@@ -93,7 +93,7 @@ SELECT
 FROM
 	"BudgetedTaskRow" "r"
 WHERE
-	CAST(DateDiff(millisecond, "r"."StartedOn", "r"."FinishedOn") * 10000 AS BigInt) >= @Ticks
+	CAST(CAST(Floor(DateDiff(millisecond, "r"."StartedOn", "r"."FinishedOn") * 10) AS BigInt) * 1000 AS BigInt) >= @Ticks
 ORDER BY
 	"r"."Id"
 

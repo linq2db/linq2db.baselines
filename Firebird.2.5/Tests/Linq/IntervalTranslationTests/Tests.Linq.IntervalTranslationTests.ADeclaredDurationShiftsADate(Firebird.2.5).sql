@@ -29,8 +29,9 @@ VALUES
 
 -- Firebird.2.5 Firebird
 SELECT FIRST 2
-	"r"."InSeconds",
-	"r"."InTicks"
+	DateAdd(millisecond, Mod("r"."InSeconds" * 10000000, 864000000000) / 10000, DateAdd(day, ("r"."InSeconds" * 10000000) / 864000000000, CAST(TIMESTAMP '2026-03-01 00:00:00.0000' AS TimeStamp))),
+	DateAdd(millisecond, Mod(("r"."InSeconds" * 10000000) * -1, 864000000000) / 10000, DateAdd(day, (("r"."InSeconds" * 10000000) * -1) / 864000000000, CAST(TIMESTAMP '2026-03-01 00:00:00.0000' AS TimeStamp))),
+	DateAdd(millisecond, Mod("r"."InTicks", 864000000000) / 10000, DateAdd(day, "r"."InTicks" / 864000000000, CAST(TIMESTAMP '2026-03-01 00:00:00.0000' AS TimeStamp)))
 FROM
 	"DurationRow" "r"
 

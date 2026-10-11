@@ -79,7 +79,7 @@ SELECT
 FROM
 	"BudgetedTaskRow" "r"
 ORDER BY
-	CAST(DateDiff(millisecond, "r"."StartedOn", "r"."FinishedOn") * 10000 AS BigInt)
+	CAST(CAST(Floor(DateDiff(millisecond, "r"."StartedOn", "r"."FinishedOn") * 10) AS BigInt) * 1000 AS BigInt)
 
 -- Firebird.5 Firebird4
 SELECT
@@ -87,5 +87,5 @@ SELECT
 FROM
 	"BudgetedTaskRow" "r"
 ORDER BY
-	CAST(DateDiff(millisecond, "r"."StartedOn", "r"."FinishedOn") * 10000 AS BigInt) DESC
+	CAST(CAST(Floor(DateDiff(millisecond, "r"."StartedOn", "r"."FinishedOn") * 10) AS BigInt) * 1000 AS BigInt) DESC
 

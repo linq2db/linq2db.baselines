@@ -35,7 +35,7 @@ FROM
 		SELECT
 			CAST(1 AS Int) as "Source",
 			"r"."Budget" as "First_1",
-			CAST(DateDiff(millisecond, "r"."StartedOn", "r"."FinishedOn") * 10000 AS BigInt) as "Second_1",
+			CAST(CAST(Floor(DateDiff(millisecond, "r"."StartedOn", "r"."FinishedOn") * 10) AS BigInt) * 1000 AS BigInt) as "Second_1",
 			NULL as "First_2",
 			NULL as "Second_2"
 		FROM
@@ -45,7 +45,7 @@ FROM
 			CAST(2 AS Int) as "Source",
 			NULL as "First_1",
 			NULL as "Second_1",
-			CAST(DateDiff(millisecond, "r_1"."StartedOn", "r_1"."FinishedOn") * 10000 AS BigInt) as "First_2",
+			CAST(CAST(Floor(DateDiff(millisecond, "r_1"."StartedOn", "r_1"."FinishedOn") * 10) AS BigInt) * 1000 AS BigInt) as "First_2",
 			"r_1"."Budget" as "Second_2"
 		FROM
 			"BudgetedTaskRow" "r_1"
