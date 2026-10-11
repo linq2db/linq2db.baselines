@@ -73,27 +73,6 @@ SELECT
 	MAX(IIF([e].[TheKey] = 10, [rub].[IdeRub], NULL)),
 	MAX(IIF([e].[TheKey] = 20, [rub].[IdeRub], NULL)),
 	MAX(IIF([e].[TheKey] = 30, [rub].[IdeRub], NULL)),
-	MAX(IIF([e].[TheKey] = 10, [rub].[LibRub], NULL)),
-	MAX(IIF([e].[TheKey] = 20, [rub].[LibRub], NULL)),
-	MAX(IIF([e].[TheKey] = 30, [rub].[LibRub], NULL))
-FROM
-	[ModTemplate] [e]
-		INNER JOIN [Activity] [act] ON [e].[TheKey] = [act].[Id]
-		INNER JOIN [CoaMask] [cm] ON [e].[Id] = [cm].[Id]
-		LEFT JOIN [AtiRub] [pos] ON [pos].[Id] = [e].[PosRubId]
-		LEFT JOIN [IasRub] [rub] ON [rub].[Id] = [e].[RubId]
-GROUP BY
-	[e].[Id]
-
--- SqlServer.2022.MS SqlServer.2022
-SELECT
-	[e].[Id],
-	MAX([cm].[Name]),
-	MAX([pos].[LibRub]),
-	MAX([e].[ModifiedAt]),
-	MAX(IIF([e].[TheKey] = 10, [rub].[IdeRub], NULL)),
-	MAX(IIF([e].[TheKey] = 20, [rub].[IdeRub], NULL)),
-	MAX(IIF([e].[TheKey] = 30, [rub].[IdeRub], NULL)),
 	MAX(IIF([e].[TheKey] = 40, [rub].[IdeRub], NULL)),
 	MAX(IIF([e].[TheKey] = 10, [rub].[LibRub], NULL)),
 	MAX(IIF([e].[TheKey] = 20, [rub].[LibRub], NULL)),
