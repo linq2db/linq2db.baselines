@@ -1,0 +1,14 @@
+﻿-- SqlCe
+DECLARE @min Decimal
+SET     @min = 0
+
+SELECT
+	@min
+
+-- SqlCe
+DECLARE @max Decimal
+SET     @max = 18446744073709551615
+
+SELECT
+	@max
+
