@@ -8,9 +8,9 @@ WITH x (Date_1, Date_Year, Date_Month)
 AS
 (
 	SELECT
-		@Date::datetime year to fraction,
-		Year(@Date::datetime year to fraction),
-		Month(@Date::datetime year to fraction)
+		@Date::datetime year to fraction(5),
+		Year(@Date::datetime year to fraction(5)),
+		Month(@Date::datetime year to fraction(5))
 	FROM table(set{1})
 	UNION ALL
 	SELECT

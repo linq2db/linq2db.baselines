@@ -4,7 +4,7 @@ SET     @ID = 5000
 DECLARE @MoneyValue (1, 0) -- Decimal
 SET     @MoneyValue = 0
 DECLARE @DateTimeValue Timestamp(20) -- DateTime
-SET     @DateTimeValue = '2018-01-03-00.00.00.000000'
+SET     @DateTimeValue = CAST('2018-01-03-00.00.00.000000' AS TIMESTAMP(6))
 DECLARE @BoolValue SmallInt(4) -- Int16
 SET     @BoolValue = 0
 DECLARE @GuidValue VarBinary(16) -- Binary

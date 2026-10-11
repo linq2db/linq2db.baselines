@@ -21,8 +21,8 @@ CREATE TABLE AllTypeCreateTest
 	nvarcharDataType NVarChar(255)                    NULL,
 	lvarcharDataType NVarChar(255)                    NULL,
 	textDataType     NVarChar(255)                    NULL,
-	dateDataType     datetime year to fraction        NULL,
-	datetimeDataType datetime year to fraction        NULL,
+	dateDataType     datetime year to fraction(5)     NULL,
+	datetimeDataType datetime year to fraction(5)     NULL,
 	intervalDataType INTERVAL HOUR TO FRACTION(5)     NULL,
 	byteDataType     BYTE                             NULL,
 

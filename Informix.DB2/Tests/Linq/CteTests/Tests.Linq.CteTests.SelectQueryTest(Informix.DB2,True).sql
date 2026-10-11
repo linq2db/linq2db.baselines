@@ -4,7 +4,7 @@ AS
 (
 	SELECT
 		1::Int,
-		TO_DATE('2020-02-29', '%Y-%m-%d')::datetime year to fraction
+		TO_DATE('2020-02-29', '%Y-%m-%d')::datetime year to fraction(5)
 	FROM table(set{1})
 	UNION ALL
 	SELECT

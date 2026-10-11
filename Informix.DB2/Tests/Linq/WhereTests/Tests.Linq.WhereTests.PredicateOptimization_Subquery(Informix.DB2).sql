@@ -14,13 +14,13 @@ WHERE
 			MAX(t1."item")
 		FROM
 			(
-				SELECT p.Date1::datetime year to fraction AS "item" FROM table(set{1})
+				SELECT p.Date1::datetime year to fraction(5) AS "item" FROM table(set{1})
 				UNION ALL
-				SELECT p.Date2::datetime year to fraction FROM table(set{1})
+				SELECT p.Date2::datetime year to fraction(5) FROM table(set{1})
 				UNION ALL
-				SELECT p.Date3::datetime year to fraction FROM table(set{1})
+				SELECT p.Date3::datetime year to fraction(5) FROM table(set{1})
 				UNION ALL
-				SELECT p.Date4::datetime year to fraction FROM table(set{1})) t1
+				SELECT p.Date4::datetime year to fraction(5) FROM table(set{1})) t1
 	) > Mdy(1, 1, 2023)
 
 -- Informix.DB2 Informix
@@ -40,13 +40,13 @@ WHERE
 				MAX(t1."item")
 			FROM
 				(
-					SELECT p.Date1::datetime year to fraction AS "item" FROM table(set{1})
+					SELECT p.Date1::datetime year to fraction(5) AS "item" FROM table(set{1})
 					UNION ALL
-					SELECT p.Date2::datetime year to fraction FROM table(set{1})
+					SELECT p.Date2::datetime year to fraction(5) FROM table(set{1})
 					UNION ALL
-					SELECT p.Date3::datetime year to fraction FROM table(set{1})
+					SELECT p.Date3::datetime year to fraction(5) FROM table(set{1})
 					UNION ALL
-					SELECT p.Date4::datetime year to fraction FROM table(set{1})) t1
+					SELECT p.Date4::datetime year to fraction(5) FROM table(set{1})) t1
 		) > p.Date1
 			THEN 'f'::BOOLEAN
 		ELSE 't'::BOOLEAN
