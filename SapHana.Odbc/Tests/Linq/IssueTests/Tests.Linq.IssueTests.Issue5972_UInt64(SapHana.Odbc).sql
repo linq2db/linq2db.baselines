@@ -1,0 +1,20 @@
+﻿-- SapHana.Odbc SapHanaOdbc
+SELECT
+	CAST(0 AS Decimal)
+FROM DUMMY
+
+-- SapHana.Odbc SapHanaOdbc
+SELECT
+	CAST(18446744073709551615 AS Decimal)
+FROM DUMMY
+
+-- SapHana.Odbc SapHanaOdbc
+SELECT
+	CAST(0 AS Decimal)
+FROM DUMMY
+
+-- SapHana.Odbc SapHanaOdbc
+SELECT
+	CAST(18446744073709551615 AS Decimal)
+FROM DUMMY
+
