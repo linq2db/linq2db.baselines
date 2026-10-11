@@ -1,8 +1,8 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @ColumnDT VarChar -- AnsiString
 SET     @ColumnDT = NULL
-DECLARE @ColumnDTO VarChar(33) -- AnsiString
-SET     @ColumnDTO = '0160-05-06T18:13:59.154000 +00:00'
+DECLARE @ColumnDTO VarChar(29) -- AnsiString
+SET     @ColumnDTO = '0160-05-06 18:13:59.154+00:00'
 DECLARE @ColumnTS VarChar -- AnsiString
 SET     @ColumnTS = NULL
 
@@ -20,8 +20,8 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @dto VarChar(33) -- AnsiString
-SET     @dto = '0160-05-06T18:13:59.154000 +00:00'
+DECLARE @dto VarChar(29) -- AnsiString
+SET     @dto = '0160-05-06 18:13:59.154+00:00'
 
 SELECT
 	COUNT(*)

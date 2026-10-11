@@ -2,9 +2,9 @@
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @SomeDateTimeOffset  -- DateTimeOffset
-SET     @SomeDateTimeOffset = '2019-08-08 08:08:08.000+00:00'
+SET     @SomeDateTimeOffset = '2019-08-08 08:08:08+00:00'
 DECLARE @SomeNullableDateTimeOffset  -- DateTimeOffset
-SET     @SomeNullableDateTimeOffset = '2019-08-08 08:08:08.000+00:00'
+SET     @SomeNullableDateTimeOffset = '2019-08-08 08:08:08+00:00'
 
 INSERT INTO [Issue1855Table]
 (
@@ -23,7 +23,7 @@ VALUES
 DECLARE @Id  -- Int32
 SET     @Id = 2
 DECLARE @SomeDateTimeOffset  -- DateTimeOffset
-SET     @SomeDateTimeOffset = '2019-08-08 08:08:08.000+00:00'
+SET     @SomeDateTimeOffset = '2019-08-08 08:08:08+00:00'
 
 INSERT INTO [Issue1855Table]
 (
@@ -40,7 +40,7 @@ VALUES
 DECLARE @interval  -- Int32
 SET     @interval = 10
 DECLARE @clientSideIn  -- DateTimeOffset
-SET     @clientSideIn = '2019-08-08 08:08:18.000+00:00'
+SET     @clientSideIn = '2019-08-08 08:08:18+00:00'
 
 SELECT
 	[r].[Id],
@@ -49,5 +49,9 @@ SELECT
 FROM
 	[Issue1855Table] [r]
 WHERE
-	strftime('%Y-%m-%d %H:%M:%f', strftime('%Y-%m-%d %H:%M:%f', [r].[SomeDateTimeOffset], CAST(@interval AS NVarChar(11)) || ' Second')) >= strftime('%Y-%m-%d %H:%M:%f', @clientSideIn)
+	strftime('%Y-%m-%d %H:%M:%f', CASE
+		WHEN Substr([r].[SomeDateTimeOffset], -6) GLOB '[+-][0-9][0-9]:[0-9][0-9]'
+			THEN strftime('%Y-%m-%d %H:%M:%f', Substr([r].[SomeDateTimeOffset], 1, Length([r].[SomeDateTimeOffset]) - 6), CAST(@interval AS NVarChar(11)) || ' Second') || Substr([r].[SomeDateTimeOffset], -6)
+		ELSE strftime('%Y-%m-%d %H:%M:%f', [r].[SomeDateTimeOffset], CAST(@interval AS NVarChar(11)) || ' Second') || '+00:00'
+	END) >= strftime('%Y-%m-%d %H:%M:%f', @clientSideIn)
 

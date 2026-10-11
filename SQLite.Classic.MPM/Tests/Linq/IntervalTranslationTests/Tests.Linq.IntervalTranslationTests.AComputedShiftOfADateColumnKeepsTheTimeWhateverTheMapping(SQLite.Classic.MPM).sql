@@ -25,7 +25,7 @@ VALUES
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 SELECT
-	Strftime('%Y-%m-%d %H:%M:%f', JulianDay([r].[Day]) + Round(CAST(CAST(Round((JulianDay([r].[FinishedOn]) - JulianDay([r].[StartedOn])) * 86400000) AS INTEGER) * 10000 AS Float) * 0.0001) * 1.1574074074074074E-08)
+	strftime('%Y-%m-%d %H:%M:%f', [r].[Day], CAST(CAST((CAST(Round((JulianDay([r].[FinishedOn]) - JulianDay([r].[StartedOn])) * 86400000) AS INTEGER) * 10000) / 10000 AS Float) / 1000 AS NVarChar(22)) || ' Second')
 FROM
 	[DatedEventRow] [r]
 LIMIT 2
@@ -36,11 +36,11 @@ SELECT
 FROM
 	[DatedEventRow] [r]
 WHERE
-	strftime('%Y-%m-%d %H:%M:%f', JulianDay([r].[Day]) + Round(CAST(CAST(Round((JulianDay([r].[FinishedOn]) - JulianDay([r].[StartedOn])) * 86400000) AS INTEGER) * 10000 AS Float) * 0.0001) * 1.1574074074074074E-08) > strftime('%Y-%m-%d %H:%M:%f', [r].[Day])
+	strftime('%Y-%m-%d %H:%M:%f', [r].[Day], CAST(CAST((CAST(Round((JulianDay([r].[FinishedOn]) - JulianDay([r].[StartedOn])) * 86400000) AS INTEGER) * 10000) / 10000 AS Float) / 1000 AS NVarChar(22)) || ' Second') > strftime('%Y-%m-%d %H:%M:%f', [r].[Day])
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 SELECT
-	Strftime('%Y-%m-%d %H:%M:%f', JulianDay([r].[Day]) + Round(CAST(CAST(Round((JulianDay([r].[FinishedOn]) - JulianDay([r].[StartedOn])) * 86400000) AS INTEGER) * 10000 AS Float) * 0.0001) * 1.1574074074074074E-08)
+	strftime('%Y-%m-%d %H:%M:%f', [r].[Day], CAST(CAST((CAST(Round((JulianDay([r].[FinishedOn]) - JulianDay([r].[StartedOn])) * 86400000) AS INTEGER) * 10000) / 10000 AS Float) / 1000 AS NVarChar(22)) || ' Second')
 FROM
 	[DatedEventRow] [r]
 LIMIT 2
@@ -51,5 +51,5 @@ SELECT
 FROM
 	[DatedEventRow] [r]
 WHERE
-	strftime('%Y-%m-%d %H:%M:%f', JulianDay([r].[Day]) + Round(CAST(CAST(Round((JulianDay([r].[FinishedOn]) - JulianDay([r].[StartedOn])) * 86400000) AS INTEGER) * 10000 AS Float) * 0.0001) * 1.1574074074074074E-08) > strftime('%Y-%m-%d %H:%M:%f', [r].[Day])
+	strftime('%Y-%m-%d %H:%M:%f', [r].[Day], CAST(CAST((CAST(Round((JulianDay([r].[FinishedOn]) - JulianDay([r].[StartedOn])) * 86400000) AS INTEGER) * 10000) / 10000 AS Float) / 1000 AS NVarChar(22)) || ' Second') > strftime('%Y-%m-%d %H:%M:%f', [r].[Day])
 
