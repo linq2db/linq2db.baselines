@@ -1,0 +1,10 @@
+﻿-- SqlServer.2017.MS SqlServer.2017
+SELECT
+	[x].[Category],
+	SUM(IIF([x].[Year] = 2000, [x].[Amount], NULL)),
+	SUM(IIF([x].[Year] = 2010, [x].[Amount], NULL))
+FROM
+	[Sales] [x]
+GROUP BY
+	[x].[Category]
+
