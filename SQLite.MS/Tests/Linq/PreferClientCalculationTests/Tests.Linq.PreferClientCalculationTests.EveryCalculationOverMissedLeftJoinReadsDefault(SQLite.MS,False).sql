@@ -11,6 +11,10 @@ SELECT
 		WHEN Coalesce([j].[Value1], 0) IN (0) THEN 'y'
 		ELSE 'n'
 	END,
+	CASE
+		WHEN 0 IN (Coalesce([j].[Value1], 0), 5) THEN 'y'
+		ELSE 'n'
+	END,
 	-Coalesce([j].[Value1], 0) + 1,
 	CASE
 		WHEN NOT Coalesce([j].[Flag], 0) THEN 't'
