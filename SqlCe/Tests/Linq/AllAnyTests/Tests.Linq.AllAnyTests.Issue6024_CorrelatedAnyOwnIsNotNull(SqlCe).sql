@@ -18,3 +18,18 @@ FROM
 ORDER BY
 	[p].[ParentID]
 
+-- SqlCe
+SELECT
+	[t1].[ParentID],
+	[t1].[Value1]
+FROM
+	[Parent] [t1]
+
+-- SqlCe
+SELECT
+	[t1].[ParentID],
+	[t1].[ChildID],
+	[t1].[GrandChildID]
+FROM
+	[GrandChild] [t1]
+
