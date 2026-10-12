@@ -1,6 +1,6 @@
 ﻿-- SQLite.Classic SQLite
-DECLARE @start VarChar(25) -- AnsiString
-SET     @start = '2026-09-15 12:00:00+05:45'
+DECLARE @start VarChar(29) -- AnsiString
+SET     @start = '2026-09-15 12:00:00.000+05:45'
 
 SELECT
 	CASE

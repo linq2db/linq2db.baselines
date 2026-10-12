@@ -1,10 +1,10 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
-DECLARE @StartedOn VarChar(25) -- AnsiString
-SET     @StartedOn = '2026-01-01 10:00:00+02:00'
-DECLARE @FinishedOn VarChar(28) -- AnsiString
-SET     @FinishedOn = '2026-01-01 15:30:00.25+02:00'
+DECLARE @StartedOn VarChar(29) -- AnsiString
+SET     @StartedOn = '2026-01-01 10:00:00.000+02:00'
+DECLARE @FinishedOn VarChar(29) -- AnsiString
+SET     @FinishedOn = '2026-01-01 15:30:00.250+02:00'
 
 INSERT INTO [ZonedEventRow]
 (

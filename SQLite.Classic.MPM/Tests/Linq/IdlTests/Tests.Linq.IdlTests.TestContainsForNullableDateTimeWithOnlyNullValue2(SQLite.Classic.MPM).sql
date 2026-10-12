@@ -19,5 +19,5 @@ SELECT
 FROM
 	[LinqDataTypes] [x]
 WHERE
-	strftime('%Y-%m-%d %H:%M:%f', [x].[DateTimeValue2]) IS NULL
+	[x].[DateTimeValue2] IS NULL
 

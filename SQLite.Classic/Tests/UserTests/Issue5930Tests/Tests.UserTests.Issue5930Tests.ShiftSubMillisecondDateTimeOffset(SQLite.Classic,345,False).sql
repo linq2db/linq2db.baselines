@@ -1,4 +1,24 @@
 ﻿-- SQLite.Classic SQLite
+DECLARE @id  -- Int32
+SET     @id = 1
+DECLARE @date NVarChar(255) -- String
+SET     @date = '2026-09-15 12:00:00.1234+05:45'
+DECLARE @ticks  -- Int64
+SET     @ticks = 0
+
+INSERT INTO [OffsetTaskRow] ([Id], [StartDateTime], [PreNotification]) VALUES (@id, @date, @ticks)
+
+-- SQLite.Classic SQLite
+DECLARE @id  -- Int32
+SET     @id = 2
+DECLARE @date NVarChar(255) -- String
+SET     @date = '2026-09-15 12:00:00.4567891+05:45'
+DECLARE @ticks  -- Int64
+SET     @ticks = 36000000000
+
+INSERT INTO [OffsetTaskRow] ([Id], [StartDateTime], [PreNotification]) VALUES (@id, @date, @ticks)
+
+-- SQLite.Classic SQLite
 SELECT
 	CASE
 		WHEN Substr([r].[StartDateTime], -6) GLOB '[+-][0-9][0-9]:[0-9][0-9]'
