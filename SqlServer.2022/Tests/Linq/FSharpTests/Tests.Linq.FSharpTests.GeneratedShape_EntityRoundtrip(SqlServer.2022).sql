@@ -3,7 +3,7 @@ DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @FirstName NVarChar(50) -- String
 SET     @FirstName = N'John'
-DECLARE @MiddleName NVarChar(4000) -- String
+DECLARE @MiddleName NVarChar(50) -- String
 SET     @MiddleName = N'Q'
 DECLARE @Age Int -- Int32
 SET     @Age = 42
@@ -28,7 +28,7 @@ DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @FirstName NVarChar(50) -- String
 SET     @FirstName = N'Jane'
-DECLARE @MiddleName NVarChar(4000) -- String
+DECLARE @MiddleName NVarChar(50) -- String
 SET     @MiddleName = NULL
 DECLARE @Age Int -- Int32
 SET     @Age = NULL
