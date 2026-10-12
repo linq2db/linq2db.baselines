@@ -3,7 +3,7 @@ DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @FirstName Varchar(4) -- String
 SET     @FirstName = 'John'
-DECLARE @MiddleName Text(1) -- String
+DECLARE @MiddleName Varchar(1) -- String
 SET     @MiddleName = 'Q'
 DECLARE @Age Integer -- Int32
 SET     @Age = 42
@@ -28,7 +28,7 @@ DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @FirstName Varchar(4) -- String
 SET     @FirstName = 'Jane'
-DECLARE @MiddleName Text -- String
+DECLARE @MiddleName Varchar -- String
 SET     @MiddleName = NULL
 DECLARE @Age Integer -- Int32
 SET     @Age = NULL
