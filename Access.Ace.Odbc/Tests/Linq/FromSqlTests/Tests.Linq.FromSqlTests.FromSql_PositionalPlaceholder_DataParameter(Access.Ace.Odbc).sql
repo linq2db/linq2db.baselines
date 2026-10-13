@@ -24,3 +24,16 @@ FROM
 ORDER BY
 	[p].[PersonID]
 
+-- Access.Ace.Odbc AccessODBC
+DECLARE @name NVarChar(6) -- String
+SET     @name = 'Pupkin'
+DECLARE @p Int -- Int32
+SET     @p = 1
+
+SELECT
+	[p].[PersonID]
+FROM
+	(
+		SELECT * FROM Person WHERE LastName = ? AND PersonID = ?
+	) [p]
+
