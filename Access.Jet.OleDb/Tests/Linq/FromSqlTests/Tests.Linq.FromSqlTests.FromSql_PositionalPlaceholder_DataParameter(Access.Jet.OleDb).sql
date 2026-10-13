@@ -24,3 +24,16 @@ FROM
 ORDER BY
 	[p].[PersonID]
 
+-- Access.Jet.OleDb AccessOleDb
+DECLARE @name VarWChar(6) -- String
+SET     @name = 'Pupkin'
+DECLARE @p Integer -- Int32
+SET     @p = 1
+
+SELECT
+	[p].[PersonID]
+FROM
+	(
+		SELECT * FROM Person WHERE LastName = ? AND PersonID = @p
+	) [p]
+
