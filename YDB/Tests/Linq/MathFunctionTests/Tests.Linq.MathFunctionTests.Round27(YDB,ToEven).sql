@@ -1,0 +1,17 @@
+﻿-- YDB Ydb
+SELECT
+	Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(SUM(g_1.D) AS Decimal(22,9))) AS Decimal(22,0))) AS Decimal(22,9))) as Sum_1,
+	Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(AVG(g_1.D) AS Decimal(22,9))) AS Decimal(22,0))) AS Decimal(22,9))) as Average
+FROM
+	RoundComputed g_1
+GROUP BY
+	g_1.G
+
+-- YDB Ydb
+SELECT
+	Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(r.D * r.D AS Decimal(22,9))) AS Decimal(22,0))) AS Decimal(22,9))) as c1
+FROM
+	RoundComputed r
+ORDER BY
+	r.Id
+
