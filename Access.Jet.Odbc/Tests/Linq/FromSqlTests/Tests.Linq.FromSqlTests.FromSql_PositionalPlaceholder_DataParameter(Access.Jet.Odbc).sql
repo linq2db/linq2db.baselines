@@ -1,6 +1,6 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-DECLARE @id Int -- Int32
-SET     @id = 2
+DECLARE @p Int -- Int32
+SET     @p = 2
 
 SELECT
 	[p].[PersonID]
