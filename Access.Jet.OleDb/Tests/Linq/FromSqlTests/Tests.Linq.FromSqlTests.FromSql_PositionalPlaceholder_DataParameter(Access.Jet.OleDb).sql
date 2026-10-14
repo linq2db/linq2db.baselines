@@ -1,6 +1,6 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-DECLARE @id Integer -- Int32
-SET     @id = 2
+DECLARE @p Integer -- Int32
+SET     @p = 2
 
 SELECT
 	[p].[PersonID]
