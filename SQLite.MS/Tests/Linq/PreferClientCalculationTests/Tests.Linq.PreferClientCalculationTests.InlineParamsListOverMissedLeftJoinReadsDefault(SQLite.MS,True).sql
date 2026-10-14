@@ -5,6 +5,9 @@ SELECT
 	CAST(Coalesce([j].[Value1], 0) + 1 AS NVarChar(11)) || ',' || Coalesce([e].[Name], ''),
 	Coalesce([j].[Value1], 0) || ',' || [e].[Value1],
 	'<' || CAST(Coalesce([j].[Value1], 0) AS NVarChar(11)) || ',' || CAST([e].[Value1] AS NVarChar(11)) || '>',
+	Coalesce([j].[Value1], 0) || ',' || [e].[Value1],
+	Coalesce([j].[Value1], 0) || ',' || [e].[Value1],
+	Coalesce([j].[Value1], 0) || ',' || [e].[Value1],
 	Coalesce([j].[Value1], 0) || ',' || [e].[Value1]
 FROM
 	[MissedJoinEntity] [e]
