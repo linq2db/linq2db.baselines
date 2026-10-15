@@ -1,0 +1,32 @@
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+WITH "CTE_1" ("Value_1")
+AS
+(
+	INSERT INTO "InsertOutputQueryTarget"
+	(
+		"Id",
+		"Value",
+		"ValueStr"
+	)
+	SELECT
+		t1."Id",
+		-t1."Value",
+		t1."ValueStr"
+	FROM
+		"InsertOutputQuerySource" t1
+	RETURNING
+		"InsertOutputQueryTarget"."Value"
+)
+SELECT
+	COUNT(*)
+FROM
+	"CTE_1" t3
+WHERE
+	t3."Value_1" * 2 > 10
+
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+SELECT
+	COUNT(*)
+FROM
+	"InsertOutputQueryTarget" t1
+
