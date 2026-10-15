@@ -4,7 +4,6 @@ SELECT
 	[j].[Value1],
 	[j].[Flag],
 	Abs(Coalesce([j].[Value1], 0)),
-	CAST(strftime('%Y', Coalesce([j].[Date], '0001-01-01 00:00:00.000')) AS INTEGER),
 	ABS(Coalesce([j].[Value1], 0)),
 	Coalesce([j].[Value1], 0) + 1
 FROM

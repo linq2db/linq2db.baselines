@@ -25,7 +25,6 @@ SELECT
 		ELSE 'f'
 	END,
 	Abs(Coalesce([j].[Value1], 0)) + 1,
-	CAST(strftime('%Y', Coalesce([j].[Date], '0001-01-01 00:00:00.000')) AS INTEGER),
 	'x' || CAST(Coalesce([j].[Value1], 0) AS NVarChar(11)),
 	ABS(Coalesce([j].[Value1], 0)) + 1,
 	CAST(Coalesce([j].[Value1], 0) AS Float) + 1,
