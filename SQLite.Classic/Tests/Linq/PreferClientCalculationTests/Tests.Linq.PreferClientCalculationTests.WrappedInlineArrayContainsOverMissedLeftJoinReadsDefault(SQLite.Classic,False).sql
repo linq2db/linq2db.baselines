@@ -5,7 +5,10 @@ SELECT
 		WHEN 0 IN (Coalesce([j].[Value1], 0), 5) THEN 'y'
 		ELSE 'n'
 	END,
-	[j].[Value1],
+	CASE
+		WHEN 0 IN (Coalesce([j].[Value1], 0), 5) THEN 'y'
+		ELSE 'n'
+	END,
 	CASE
 		WHEN 0 IN (Coalesce([j].[Value1], 0), 5) THEN 'y'
 		ELSE 'n'
