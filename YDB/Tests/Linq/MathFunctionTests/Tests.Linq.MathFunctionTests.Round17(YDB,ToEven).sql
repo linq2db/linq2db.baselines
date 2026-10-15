@@ -10,3 +10,13 @@ FROM
 ORDER BY
 	r.Id
 
+-- YDB Ydb
+SELECT
+	t1.Id as Id,
+	t1.D34s2 as D34s2,
+	t1.D35s2 as D35s2,
+	t1.D35s6 as D35s6,
+	t1.D4s4 as D4s4
+FROM
+	RoundNearLimit t1
+

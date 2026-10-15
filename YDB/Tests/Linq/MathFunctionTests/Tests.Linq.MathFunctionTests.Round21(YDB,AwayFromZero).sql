@@ -30,3 +30,10 @@ FROM
 ORDER BY
 	r.Id
 
+-- YDB Ydb
+SELECT
+	t1.Id as Id,
+	t1.D as D
+FROM
+	RoundNegative t1
+

@@ -16,7 +16,7 @@ DECLARE $maxId Int32
 SET     $maxId = 2
 
 SELECT
-	Unwrap(CAST(Ensure(Unwrap(CAST(r.D AS Decimal(5,5))) * Decimal('0.1', 5, 5) - Unwrap(CAST(r.D AS Decimal(5,5))) * Decimal('0.1', 5, 5), Unwrap(CAST(r.D AS Decimal(5,5))) * Decimal('0.1', 5, 5) < Decimal('0.5', 5, 5) AND Unwrap(CAST(r.D AS Decimal(5,5))) * Decimal('0.1', 5, 5) > Decimal('-0.5', 5, 5), 'ROUND result is out of range for Decimal(5,5)'u) / Decimal('0.1', 5, 5) AS Decimal(4,4))) as c1
+	Ensure(r.D - r.D, r.D < Decimal('1', 35, 0) AND r.D > Decimal('-1', 35, 0), 'ROUND value is out of range for Decimal(4,4)'u) as c1
 FROM
 	RoundDynamicNoIntegerDigits r
 WHERE
