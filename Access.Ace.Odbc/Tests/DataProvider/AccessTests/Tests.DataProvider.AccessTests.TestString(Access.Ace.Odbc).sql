@@ -17,7 +17,7 @@ SET     @p = '123'
 SELECT ?
 
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p NVarChar(3) -- String
+DECLARE @p Text(3) -- AnsiString
 SET     @p = '123'
 
 SELECT ?
@@ -35,7 +35,7 @@ SET     @p = '123'
 SELECT ?
 
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p NVarChar(3) -- String
+DECLARE @p NText(3) -- String
 SET     @p = '123'
 
 SELECT ?
