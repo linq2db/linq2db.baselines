@@ -2,7 +2,7 @@
 SELECT
 	[e].[Id],
 	IIF(0 IN (IIF([j].[Value1] IS NULL, 0, [j].[Value1]), 5), 'y', 'n'),
-	[j].[Value1],
+	IIF(0 IN (IIF([j].[Value1] IS NULL, 0, [j].[Value1]), 5), 'y', 'n'),
 	IIF(0 IN (IIF([j].[Value1] IS NULL, 0, [j].[Value1]), 5), 'y', 'n')
 FROM
 	[MissedJoinEntity] [e]
