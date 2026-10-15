@@ -1,6 +1,7 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
 SELECT
 	[t1].[PersonID],
+	[t1].[FirstName],
 	[a_Doctor].[PersonID],
 	[a_Doctor].[Taxonomy]
 FROM

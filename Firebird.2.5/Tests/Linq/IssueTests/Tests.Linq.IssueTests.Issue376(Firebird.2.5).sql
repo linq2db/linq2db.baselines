@@ -1,6 +1,7 @@
 ﻿-- Firebird.2.5 Firebird
 SELECT
 	"t1"."PersonID",
+	"t1"."FirstName",
 	"a_Doctor"."PersonID",
 	"a_Doctor"."Taxonomy"
 FROM

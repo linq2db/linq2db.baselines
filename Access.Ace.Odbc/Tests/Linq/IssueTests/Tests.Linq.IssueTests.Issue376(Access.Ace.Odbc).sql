@@ -1,6 +1,7 @@
 ﻿-- Access.Ace.Odbc AccessODBC
 SELECT
 	[t1].[PersonID],
+	[t1].[FirstName],
 	[a_Doctor].[PersonID] as [PersonID_1],
 	[a_Doctor].[Taxonomy]
 FROM
