@@ -1,19 +1,19 @@
 ﻿-- YDB Ydb
 SELECT
-	CASE
-		WHEN Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(g_2.Sum_1 AS Decimal(22,9))) AS Decimal(22,0))) AS Decimal(22,9))) - Unwrap(CAST(g_2.Sum_1 AS Decimal(22,9))) = Decimal('-0.5', 22, 9) AND Unwrap(CAST(g_2.Sum_1 AS Decimal(22,9))) > Decimal('0', 22, 9)
-			THEN Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(g_2.Sum_1 AS Decimal(22,9))) AS Decimal(22,0))) + Decimal('1', 22, 0) AS Decimal(22,9)))
-		WHEN Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(g_2.Sum_1 AS Decimal(22,9))) AS Decimal(22,0))) AS Decimal(22,9))) - Unwrap(CAST(g_2.Sum_1 AS Decimal(22,9))) = Decimal('0.5', 22, 9) AND Unwrap(CAST(g_2.Sum_1 AS Decimal(22,9))) < Decimal('0', 22, 9)
-			THEN Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(g_2.Sum_1 AS Decimal(22,9))) AS Decimal(22,0))) - Decimal('1', 22, 0) AS Decimal(22,9)))
-		ELSE Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(g_2.Sum_1 AS Decimal(22,9))) AS Decimal(22,0))) AS Decimal(22,9)))
-	END as Sum_1,
-	CASE
-		WHEN Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(g_2.Average AS Decimal(22,9))) AS Decimal(22,0))) AS Decimal(22,9))) - Unwrap(CAST(g_2.Average AS Decimal(22,9))) = Decimal('-0.5', 22, 9) AND Unwrap(CAST(g_2.Average AS Decimal(22,9))) > Decimal('0', 22, 9)
-			THEN Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(g_2.Average AS Decimal(22,9))) AS Decimal(22,0))) + Decimal('1', 22, 0) AS Decimal(22,9)))
-		WHEN Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(g_2.Average AS Decimal(22,9))) AS Decimal(22,0))) AS Decimal(22,9))) - Unwrap(CAST(g_2.Average AS Decimal(22,9))) = Decimal('0.5', 22, 9) AND Unwrap(CAST(g_2.Average AS Decimal(22,9))) < Decimal('0', 22, 9)
-			THEN Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(g_2.Average AS Decimal(22,9))) AS Decimal(22,0))) - Decimal('1', 22, 0) AS Decimal(22,9)))
-		ELSE Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(g_2.Average AS Decimal(22,9))) AS Decimal(22,0))) AS Decimal(22,9)))
-	END as Average
+	Unwrap(CAST(CASE
+		WHEN Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(g_2.Sum_1 AS Decimal(35,22))) AS Decimal(35,0))) AS Decimal(35,22))) - Unwrap(CAST(g_2.Sum_1 AS Decimal(35,22))) = Decimal('-0.5', 35, 22) AND Unwrap(CAST(g_2.Sum_1 AS Decimal(35,22))) > Decimal('0', 35, 22)
+			THEN Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(g_2.Sum_1 AS Decimal(35,22))) AS Decimal(35,0))) + Decimal('1', 35, 0) AS Decimal(35,22)))
+		WHEN Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(g_2.Sum_1 AS Decimal(35,22))) AS Decimal(35,0))) AS Decimal(35,22))) - Unwrap(CAST(g_2.Sum_1 AS Decimal(35,22))) = Decimal('0.5', 35, 22) AND Unwrap(CAST(g_2.Sum_1 AS Decimal(35,22))) < Decimal('0', 35, 22)
+			THEN Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(g_2.Sum_1 AS Decimal(35,22))) AS Decimal(35,0))) - Decimal('1', 35, 0) AS Decimal(35,22)))
+		ELSE Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(g_2.Sum_1 AS Decimal(35,22))) AS Decimal(35,0))) AS Decimal(35,22)))
+	END AS Decimal(22,9))) as Sum_1,
+	Unwrap(CAST(CASE
+		WHEN Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(g_2.Average AS Decimal(35,22))) AS Decimal(35,0))) AS Decimal(35,22))) - Unwrap(CAST(g_2.Average AS Decimal(35,22))) = Decimal('-0.5', 35, 22) AND Unwrap(CAST(g_2.Average AS Decimal(35,22))) > Decimal('0', 35, 22)
+			THEN Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(g_2.Average AS Decimal(35,22))) AS Decimal(35,0))) + Decimal('1', 35, 0) AS Decimal(35,22)))
+		WHEN Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(g_2.Average AS Decimal(35,22))) AS Decimal(35,0))) AS Decimal(35,22))) - Unwrap(CAST(g_2.Average AS Decimal(35,22))) = Decimal('0.5', 35, 22) AND Unwrap(CAST(g_2.Average AS Decimal(35,22))) < Decimal('0', 35, 22)
+			THEN Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(g_2.Average AS Decimal(35,22))) AS Decimal(35,0))) - Decimal('1', 35, 0) AS Decimal(35,22)))
+		ELSE Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(g_2.Average AS Decimal(35,22))) AS Decimal(35,0))) AS Decimal(35,22)))
+	END AS Decimal(22,9))) as Average
 FROM
 	(
 		SELECT
@@ -27,13 +27,13 @@ FROM
 
 -- YDB Ydb
 SELECT
-	CASE
-		WHEN Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(r.D * r.D AS Decimal(22,9))) AS Decimal(22,0))) AS Decimal(22,9))) - Unwrap(CAST(r.D * r.D AS Decimal(22,9))) = Decimal('-0.5', 22, 9) AND Unwrap(CAST(r.D * r.D AS Decimal(22,9))) > Decimal('0', 22, 9)
-			THEN Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(r.D * r.D AS Decimal(22,9))) AS Decimal(22,0))) + Decimal('1', 22, 0) AS Decimal(22,9)))
-		WHEN Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(r.D * r.D AS Decimal(22,9))) AS Decimal(22,0))) AS Decimal(22,9))) - Unwrap(CAST(r.D * r.D AS Decimal(22,9))) = Decimal('0.5', 22, 9) AND Unwrap(CAST(r.D * r.D AS Decimal(22,9))) < Decimal('0', 22, 9)
-			THEN Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(r.D * r.D AS Decimal(22,9))) AS Decimal(22,0))) - Decimal('1', 22, 0) AS Decimal(22,9)))
-		ELSE Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(r.D * r.D AS Decimal(22,9))) AS Decimal(22,0))) AS Decimal(22,9)))
-	END as c1
+	Unwrap(CAST(CASE
+		WHEN Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(r.D * r.D AS Decimal(35,22))) AS Decimal(35,0))) AS Decimal(35,22))) - Unwrap(CAST(r.D * r.D AS Decimal(35,22))) = Decimal('-0.5', 35, 22) AND Unwrap(CAST(r.D * r.D AS Decimal(35,22))) > Decimal('0', 35, 22)
+			THEN Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(r.D * r.D AS Decimal(35,22))) AS Decimal(35,0))) + Decimal('1', 35, 0) AS Decimal(35,22)))
+		WHEN Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(r.D * r.D AS Decimal(35,22))) AS Decimal(35,0))) AS Decimal(35,22))) - Unwrap(CAST(r.D * r.D AS Decimal(35,22))) = Decimal('0.5', 35, 22) AND Unwrap(CAST(r.D * r.D AS Decimal(35,22))) < Decimal('0', 35, 22)
+			THEN Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(r.D * r.D AS Decimal(35,22))) AS Decimal(35,0))) - Decimal('1', 35, 0) AS Decimal(35,22)))
+		ELSE Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(r.D * r.D AS Decimal(35,22))) AS Decimal(35,0))) AS Decimal(35,22)))
+	END AS Decimal(22,9))) as c1
 FROM
 	RoundComputed r
 ORDER BY
