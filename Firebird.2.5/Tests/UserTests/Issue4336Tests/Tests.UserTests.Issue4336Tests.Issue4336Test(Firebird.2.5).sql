@@ -11,7 +11,7 @@ SELECT FIRST @take
 	"r"."MaxCapacity" - "r"."Quantity",
 	COALESCE("vpcc"."PeriodOrderLimit",0),
 	"vsopc"."Quantity",
-	COALESCE("vpcc"."PeriodOrderLimit",0) - "vsopc"."Quantity"
+	COALESCE("vpcc"."PeriodOrderLimit",0) - Coalesce("vsopc"."Quantity", 0)
 FROM
 	(
 		SELECT

@@ -62,3 +62,19 @@ SELECT
 FROM
 	"ClientCalcEntity" t1
 
+-- PostgreSQL.11 PostgreSQL
+SELECT
+	e."Id",
+	Coalesce(e."Name", '') || ' ' || Coalesce(e."Name", '')
+FROM
+	"ClientCalcEntity" e
+
+-- PostgreSQL.11 PostgreSQL
+SELECT
+	t1."Id",
+	t1."Value1",
+	t1."Value2",
+	t1."Name"
+FROM
+	"ClientCalcEntity" t1
+
