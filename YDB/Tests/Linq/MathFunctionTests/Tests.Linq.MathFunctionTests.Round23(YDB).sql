@@ -261,3 +261,15 @@ SELECT
 FROM
 	RoundNegativeDynamicWideBoundary r
 
+-- YDB Ydb
+SELECT
+	Unwrap(CAST(CASE
+		WHEN Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(r.D22s9 AS Decimal(35,22))) * Decimal('0.0000000000001', 35, 22) AS Decimal(35,0))) AS Decimal(35,22))) - Unwrap(CAST(r.D22s9 AS Decimal(35,22))) * Decimal('0.0000000000001', 35, 22) = Decimal('-0.5', 35, 22) AND Unwrap(CAST(r.D22s9 AS Decimal(35,22))) * Decimal('0.0000000000001', 35, 22) > Decimal('0', 35, 22)
+			THEN Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(r.D22s9 AS Decimal(35,22))) * Decimal('0.0000000000001', 35, 22) AS Decimal(35,0))) + Decimal('1', 35, 0) AS Decimal(35,22)))
+		WHEN Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(r.D22s9 AS Decimal(35,22))) * Decimal('0.0000000000001', 35, 22) AS Decimal(35,0))) AS Decimal(35,22))) - Unwrap(CAST(r.D22s9 AS Decimal(35,22))) * Decimal('0.0000000000001', 35, 22) = Decimal('0.5', 35, 22) AND Unwrap(CAST(r.D22s9 AS Decimal(35,22))) * Decimal('0.0000000000001', 35, 22) < Decimal('0', 35, 22)
+			THEN Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(r.D22s9 AS Decimal(35,22))) * Decimal('0.0000000000001', 35, 22) AS Decimal(35,0))) - Decimal('1', 35, 0) AS Decimal(35,22)))
+		ELSE Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(r.D22s9 AS Decimal(35,22))) * Decimal('0.0000000000001', 35, 22) AS Decimal(35,0))) AS Decimal(35,22)))
+	END / Decimal('0.0000000000001', 35, 22) AS Decimal(22,9))) as c1
+FROM
+	RoundNegativeDynamicWideBoundary r
+
