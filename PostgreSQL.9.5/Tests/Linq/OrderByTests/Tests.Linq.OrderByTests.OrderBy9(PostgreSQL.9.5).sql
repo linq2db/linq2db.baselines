@@ -6,5 +6,5 @@ FROM
 	"Child" x
 ORDER BY
 	x."ChildID" DESC,
-	(x."ChildID"::decimal % 2)::decimal DESC
+	Floor(x."ChildID"::decimal % 2)::Int DESC
 

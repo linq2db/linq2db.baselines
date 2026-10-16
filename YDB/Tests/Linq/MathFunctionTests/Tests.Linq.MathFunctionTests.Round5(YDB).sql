@@ -4,11 +4,13 @@ SELECT
 FROM
 	(
 		SELECT
-			Unwrap(CAST(Unwrap(CAST(CASE
-				WHEN Unwrap(CAST(p.MoneyValue AS Double)) >= Double('0')
-					THEN Math::Round(Unwrap(CAST(p.MoneyValue AS Double)))
-				ELSE -Math::Round(-Unwrap(CAST(p.MoneyValue AS Double)))
-			END AS Text)) AS Decimal(6,2))) as c1
+			CASE
+				WHEN Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(p.MoneyValue AS Decimal(6,2))) AS Decimal(6,0))) AS Decimal(6,2))) - Unwrap(CAST(p.MoneyValue AS Decimal(6,2))) = Decimal('-0.5', 6, 2) AND Unwrap(CAST(p.MoneyValue AS Decimal(6,2))) > Decimal('0', 6, 2)
+					THEN Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(p.MoneyValue AS Decimal(6,2))) AS Decimal(6,0))) + Decimal('1', 6, 0) AS Decimal(6,2)))
+				WHEN Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(p.MoneyValue AS Decimal(6,2))) AS Decimal(6,0))) AS Decimal(6,2))) - Unwrap(CAST(p.MoneyValue AS Decimal(6,2))) = Decimal('0.5', 6, 2) AND Unwrap(CAST(p.MoneyValue AS Decimal(6,2))) < Decimal('0', 6, 2)
+					THEN Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(p.MoneyValue AS Decimal(6,2))) AS Decimal(6,0))) - Decimal('1', 6, 0) AS Decimal(6,2)))
+				ELSE Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(p.MoneyValue AS Decimal(6,2))) AS Decimal(6,0))) AS Decimal(6,2)))
+			END as c1
 		FROM
 			LinqDataTypes p
 	) t
