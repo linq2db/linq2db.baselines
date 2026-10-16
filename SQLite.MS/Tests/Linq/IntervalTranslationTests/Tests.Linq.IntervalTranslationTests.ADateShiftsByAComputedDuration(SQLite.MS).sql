@@ -32,9 +32,9 @@ LIMIT 2
 
 -- SQLite.MS SQLite
 SELECT
-	Strftime('%Y-%m-%d %H:%M:%f', JulianDay([r].[StartedOn]) + Round(CAST(CAST(CAST(Round((JulianDay([r].[FinishedOn]) - JulianDay([r].[StartedOn])) * 86400000) AS INTEGER) * 10000 + [r].[Budget] * 10000000 AS INTEGER) AS Float) * 0.0001) * 1.1574074074074074E-08),
-	Strftime('%Y-%m-%d %H:%M:%f', JulianDay([r].[StartedOn]) + Round(CAST(CAST(CAST([r].[Budget] + [r].[Budget] AS INTEGER) * 10000000 - CAST(Round((JulianDay([r].[FinishedOn]) - JulianDay([r].[StartedOn])) * 86400000) AS INTEGER) * 10000 AS INTEGER) AS Float) * 0.0001) * 1.1574074074074074E-08),
-	Strftime('%Y-%m-%d %H:%M:%f', JulianDay([r].[StartedOn]) + Round(CAST(CAST(CAST(Round((JulianDay([r].[FinishedOn]) - JulianDay([r].[StartedOn])) * 86400000) AS INTEGER) * 10000 + [r].[Budget] * 10000000 AS INTEGER) * -1 AS Float) * 0.0001) * 1.1574074074074074E-08)
+	strftime('%Y-%m-%d %H:%M:%f', [r].[StartedOn], CAST(CAST(CAST(CAST(Round((JulianDay([r].[FinishedOn]) - JulianDay([r].[StartedOn])) * 86400000) AS INTEGER) * 10000 + [r].[Budget] * 10000000 AS INTEGER) / 10000 AS Float) / 1000 AS NVarChar(22)) || ' Second'),
+	strftime('%Y-%m-%d %H:%M:%f', [r].[StartedOn], CAST(CAST(CAST(CAST([r].[Budget] + [r].[Budget] AS INTEGER) * 10000000 - CAST(Round((JulianDay([r].[FinishedOn]) - JulianDay([r].[StartedOn])) * 86400000) AS INTEGER) * 10000 AS INTEGER) / 10000 AS Float) / 1000 AS NVarChar(22)) || ' Second'),
+	strftime('%Y-%m-%d %H:%M:%f', [r].[StartedOn], CAST(CAST((CAST(CAST(Round((JulianDay([r].[FinishedOn]) - JulianDay([r].[StartedOn])) * 86400000) AS INTEGER) * 10000 + [r].[Budget] * 10000000 AS INTEGER) / 10000) * -1 AS Float) / 1000 AS NVarChar(22)) || ' Second')
 FROM
 	[BudgetedTaskRow] [r]
 LIMIT 2

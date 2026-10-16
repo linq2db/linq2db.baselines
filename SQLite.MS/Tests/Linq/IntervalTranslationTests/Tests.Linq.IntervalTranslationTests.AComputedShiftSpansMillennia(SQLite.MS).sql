@@ -26,8 +26,8 @@ DECLARE @late  -- DateTime
 SET     @late = '8000-01-01 00:00:00.000'
 
 SELECT
-	Strftime('%Y-%m-%d %H:%M:%f', JulianDay(@early) + Round(CAST(CAST(Round((JulianDay([r].[FinishedOn]) - JulianDay([r].[StartedOn])) * 86400000) AS INTEGER) * 10000 AS Float) * 0.0001) * 1.1574074074074074E-08),
-	Strftime('%Y-%m-%d %H:%M:%f', JulianDay(@late) + Round(CAST((CAST(Round((JulianDay([r].[FinishedOn]) - JulianDay([r].[StartedOn])) * 86400000) AS INTEGER) * 10000) * -1 AS Float) * 0.0001) * 1.1574074074074074E-08)
+	strftime('%Y-%m-%d %H:%M:%f', @early, CAST(CAST((CAST(Round((JulianDay([r].[FinishedOn]) - JulianDay([r].[StartedOn])) * 86400000) AS INTEGER) * 10000) / 10000 AS Float) / 1000 AS NVarChar(22)) || ' Second'),
+	strftime('%Y-%m-%d %H:%M:%f', @late, CAST(CAST(((CAST(Round((JulianDay([r].[FinishedOn]) - JulianDay([r].[StartedOn])) * 86400000) AS INTEGER) * 10000) / 10000) * -1 AS Float) / 1000 AS NVarChar(22)) || ' Second')
 FROM
 	[EventRow] [r]
 LIMIT 2

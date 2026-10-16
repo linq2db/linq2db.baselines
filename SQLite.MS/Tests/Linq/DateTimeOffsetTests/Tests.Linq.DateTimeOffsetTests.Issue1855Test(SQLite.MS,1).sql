@@ -49,5 +49,9 @@ SELECT
 FROM
 	[Issue1855Table] [r]
 WHERE
-	strftime('%Y-%m-%d %H:%M:%f', strftime('%Y-%m-%d %H:%M:%f', [r].[SomeNullableDateTimeOffset], CAST(@interval AS NVarChar(11)) || ' Second')) >= strftime('%Y-%m-%d %H:%M:%f', @clientSideIn)
+	strftime('%Y-%m-%d %H:%M:%f', CASE
+		WHEN Substr([r].[SomeNullableDateTimeOffset], -6) GLOB '[+-][0-9][0-9]:[0-9][0-9]'
+			THEN strftime('%Y-%m-%d %H:%M:%f', Substr([r].[SomeNullableDateTimeOffset], 1, Length([r].[SomeNullableDateTimeOffset]) - 6), CAST(@interval AS NVarChar(11)) || ' Second') || Substr([r].[SomeNullableDateTimeOffset], -6)
+		ELSE strftime('%Y-%m-%d %H:%M:%f', [r].[SomeNullableDateTimeOffset], CAST(@interval AS NVarChar(11)) || ' Second') || '+00:00'
+	END) >= strftime('%Y-%m-%d %H:%M:%f', @clientSideIn)
 
