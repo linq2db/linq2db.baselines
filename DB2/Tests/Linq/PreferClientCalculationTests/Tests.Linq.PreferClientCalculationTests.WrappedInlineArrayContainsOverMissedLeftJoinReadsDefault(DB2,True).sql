@@ -16,3 +16,11 @@ SELECT
 FROM
 	"MissedJoinEntity" "t1"
 
+-- DB2 DB2.LUW DB2LUW
+SELECT
+	"e"."Id",
+	"j"."Value1"
+FROM
+	"MissedJoinEntity" "e"
+		LEFT JOIN "MissedJoinEntity" "j" ON "j"."Id" = "e"."Id" + 1000
+
