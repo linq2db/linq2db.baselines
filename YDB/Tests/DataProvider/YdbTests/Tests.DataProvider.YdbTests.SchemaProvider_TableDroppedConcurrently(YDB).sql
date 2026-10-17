@@ -5,7 +5,7 @@ DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -18,7 +18,7 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 )
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -64,9 +64,6 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
-
--- YDB Ydb
-SELECT Version();
 
 -- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
@@ -83,6 +80,9 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 
 	PRIMARY KEY (Id)
 )
+
+-- YDB Ydb
+SELECT Version();
 
 -- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
@@ -101,7 +101,7 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 )
 
 -- YDB Ydb
-SELECT Version();
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
 CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
@@ -117,10 +117,26 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 )
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
+SELECT Version();
+
+-- YDB Ydb
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
+(
+	Id      Int32,
+	IntVal  Int32         NOT NULL,
+	DecVal  Decimal(22,9) NOT NULL,
+	StrVal  Text,
+	BoolVal Bool          NOT NULL,
+	DtVal   Timestamp     NOT NULL,
+
+	PRIMARY KEY (Id)
+)
 
 -- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
+
+-- YDB Ydb
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
 CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
@@ -188,6 +204,9 @@ DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
+
+-- YDB Ydb
+SELECT Version();
 
 -- YDB Ydb
 CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
@@ -203,10 +222,23 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 )
 
 -- YDB Ydb
-SELECT Version();
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
+(
+	Id      Int32,
+	IntVal  Int32         NOT NULL,
+	DecVal  Decimal(22,9) NOT NULL,
+	StrVal  Text,
+	BoolVal Bool          NOT NULL,
+	DtVal   Timestamp     NOT NULL,
 
+	PRIMARY KEY (Id)
+)
+
 -- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
+
+-- YDB Ydb
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
 CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
@@ -233,9 +265,15 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 
 	PRIMARY KEY (Id)
 )
+
+-- YDB Ydb
+SELECT Version();
 
 -- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
+
+-- YDB Ydb
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
 CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
@@ -249,15 +287,6 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 
 	PRIMARY KEY (Id)
 )
-
--- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
-
--- YDB Ydb
-SELECT Version();
-
--- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
 CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
@@ -276,6 +305,12 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
+
+-- YDB Ydb
+SELECT Version();
+
+-- YDB Ydb
 CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 (
 	Id      Int32,
@@ -287,12 +322,6 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 
 	PRIMARY KEY (Id)
 )
-
--- YDB Ydb
-SELECT Version();
-
--- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
 CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
@@ -311,7 +340,10 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
+
+-- YDB Ydb
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -322,12 +354,9 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 
 	PRIMARY KEY (Id)
 )
-
--- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -346,6 +375,9 @@ SELECT Version();
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
+
+-- YDB Ydb
 CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 (
 	Id      Int32,
@@ -357,9 +389,6 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 
 	PRIMARY KEY (Id)
 )
-
--- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
 CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
@@ -373,6 +402,9 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 
 	PRIMARY KEY (Id)
 )
+
+-- YDB Ydb
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
@@ -389,9 +421,6 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 
 	PRIMARY KEY (Id)
 )
-
--- YDB Ydb
-SELECT Version();
 
 -- YDB Ydb
 CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
@@ -407,10 +436,10 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 )
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
+SELECT Version();
 
 -- YDB Ydb
-SELECT Version();
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
@@ -440,12 +469,28 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 
 	PRIMARY KEY (Id)
 )
+
+-- YDB Ydb
+SELECT Version();
 
 -- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
+
+-- YDB Ydb
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
+(
+	Id      Int32,
+	IntVal  Int32         NOT NULL,
+	DecVal  Decimal(22,9) NOT NULL,
+	StrVal  Text,
+	BoolVal Bool          NOT NULL,
+	DtVal   Timestamp     NOT NULL,
+
+	PRIMARY KEY (Id)
+)
 
 -- YDB Ydb
 CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
@@ -461,7 +506,7 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 )
 
 -- YDB Ydb
-SELECT Version();
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
@@ -478,9 +523,6 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 
 	PRIMARY KEY (Id)
 )
-
--- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
 CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
@@ -496,7 +538,13 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 )
 
 -- YDB Ydb
+SELECT Version();
+
+-- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
+
+-- YDB Ydb
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
 CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
@@ -512,12 +560,6 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 )
 
 -- YDB Ydb
-SELECT Version();
-
--- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
-
--- YDB Ydb
 CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 (
 	Id      Int32,
@@ -529,12 +571,18 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 
 	PRIMARY KEY (Id)
 )
+
+-- YDB Ydb
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
+SELECT Version();
+
+-- YDB Ydb
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -545,12 +593,9 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 
 	PRIMARY KEY (Id)
 )
-
--- YDB Ydb
-SELECT Version();
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -580,12 +625,6 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 
 	PRIMARY KEY (Id)
 )
-
--- YDB Ydb
-SELECT Version();
-
--- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
 CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
@@ -599,6 +638,15 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 
 	PRIMARY KEY (Id)
 )
+
+-- YDB Ydb
+SELECT Version();
+
+-- YDB Ydb
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
+
+-- YDB Ydb
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
 CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
@@ -612,14 +660,8 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 
 	PRIMARY KEY (Id)
 )
-
--- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
-
--- YDB Ydb
 CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 (
 	Id      Int32,
@@ -634,6 +676,9 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
 SELECT Version();
+
+-- YDB Ydb
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
@@ -652,9 +697,6 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 )
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
-
--- YDB Ydb
 CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 (
 	Id      Int32,
@@ -668,12 +710,15 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 )
 
 -- YDB Ydb
-SELECT Version();
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
+SELECT Version();
+
+-- YDB Ydb
 CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 (
 	Id      Int32,
@@ -685,9 +730,6 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 
 	PRIMARY KEY (Id)
 )
-
--- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
 CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
@@ -701,6 +743,15 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 
 	PRIMARY KEY (Id)
 )
+
+-- YDB Ydb
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
+
+-- YDB Ydb
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
+
+-- YDB Ydb
+SELECT Version();
 
 -- YDB Ydb
 CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
@@ -714,17 +765,8 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 
 	PRIMARY KEY (Id)
 )
-
--- YDB Ydb
-SELECT Version();
-
--- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
-
--- YDB Ydb
 CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 (
 	Id      Int32,
@@ -738,7 +780,7 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 )
 
 -- YDB Ydb
-SELECT Version();
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
@@ -757,9 +799,6 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 )
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
-
--- YDB Ydb
 CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 (
 	Id      Int32,
@@ -771,9 +810,28 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 
 	PRIMARY KEY (Id)
 )
+
+-- YDB Ydb
+SELECT Version();
+
+-- YDB Ydb
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
+
+-- YDB Ydb
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
+(
+	Id      Int32,
+	IntVal  Int32         NOT NULL,
+	DecVal  Decimal(22,9) NOT NULL,
+	StrVal  Text,
+	BoolVal Bool          NOT NULL,
+	DtVal   Timestamp     NOT NULL,
+
+	PRIMARY KEY (Id)
+)
 
 -- YDB Ydb
 CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
@@ -789,7 +847,7 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 )
 
 -- YDB Ydb
-SELECT Version();
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
@@ -808,7 +866,7 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 )
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
+SELECT Version();
 
 -- YDB Ydb
 CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
@@ -824,13 +882,13 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 )
 
 -- YDB Ydb
-SELECT Version();
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -843,7 +901,7 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 )
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -856,10 +914,13 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 )
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
+SELECT Version();
 
 -- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
+
+-- YDB Ydb
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
 CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
@@ -875,13 +936,29 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 )
 
 -- YDB Ydb
-SELECT Version();
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
+(
+	Id      Int32,
+	IntVal  Int32         NOT NULL,
+	DecVal  Decimal(22,9) NOT NULL,
+	StrVal  Text,
+	BoolVal Bool          NOT NULL,
+	DtVal   Timestamp     NOT NULL,
+
+	PRIMARY KEY (Id)
+)
+
+-- YDB Ydb
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
+SELECT Version();
+
+-- YDB Ydb
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -894,7 +971,7 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 )
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -907,10 +984,13 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 )
 
 -- YDB Ydb
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
+
+-- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -923,10 +1003,7 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 )
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
-
--- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -942,13 +1019,13 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 SELECT Version();
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -961,7 +1038,7 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 )
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -974,13 +1051,16 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 )
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
+SELECT Version();
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
+
+-- YDB Ydb
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -993,7 +1073,7 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 )
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -1006,13 +1086,10 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 )
 
 -- YDB Ydb
-SELECT Version();
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
-
--- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
 CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
@@ -1026,6 +1103,9 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 
 	PRIMARY KEY (Id)
 )
+
+-- YDB Ydb
+SELECT Version();
 
 -- YDB Ydb
 CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
@@ -1039,18 +1119,15 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 
 	PRIMARY KEY (Id)
 )
-
--- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
-SELECT Version();
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -1063,7 +1140,7 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 )
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -1076,13 +1153,16 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 )
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
 SELECT Version();
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
+
+-- YDB Ydb
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -1093,12 +1173,9 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 
 	PRIMARY KEY (Id)
 )
-
--- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -1109,18 +1186,15 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 
 	PRIMARY KEY (Id)
 )
-
--- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
-SELECT Version();
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -1133,7 +1207,10 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 )
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
+SELECT Version();
+
+-- YDB Ydb
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -1144,15 +1221,9 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 
 	PRIMARY KEY (Id)
 )
-
--- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
-
--- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
-SELECT Version();
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
 CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
@@ -1166,8 +1237,14 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 
 	PRIMARY KEY (Id)
 )
+
+-- YDB Ydb
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
+SELECT Version();
+
+-- YDB Ydb
 CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 (
 	Id      Int32,
@@ -1181,13 +1258,13 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 )
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -1200,7 +1277,7 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 )
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -1213,16 +1290,16 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 )
 
 -- YDB Ydb
-SELECT Version();
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
+SELECT Version();
 
 -- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -1235,7 +1312,7 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 )
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -1246,18 +1323,15 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 
 	PRIMARY KEY (Id)
 )
-
--- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
-SELECT Version();
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -1270,7 +1344,7 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 )
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -1281,9 +1355,6 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 
 	PRIMARY KEY (Id)
 )
-
--- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
 SELECT Version();
@@ -1292,7 +1363,10 @@ SELECT Version();
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
+
+-- YDB Ydb
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -1305,7 +1379,7 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 )
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -1318,10 +1392,13 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 )
 
 -- YDB Ydb
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
+
+-- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -1332,18 +1409,12 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 
 	PRIMARY KEY (Id)
 )
-
--- YDB Ydb
-SELECT Version();
 
 -- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
-
--- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -1356,7 +1427,10 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 )
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
+SELECT Version();
+
+-- YDB Ydb
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -1367,18 +1441,15 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 
 	PRIMARY KEY (Id)
 )
-
--- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
-SELECT Version();
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -1391,7 +1462,7 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 )
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -1402,9 +1473,6 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 
 	PRIMARY KEY (Id)
 )
-
--- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
@@ -1413,7 +1481,10 @@ DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 SELECT Version();
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
+
+-- YDB Ydb
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -1426,7 +1497,7 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 )
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -1439,13 +1510,13 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 )
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -1461,7 +1532,7 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 SELECT Version();
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -1474,13 +1545,13 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 )
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -1493,7 +1564,7 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 )
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -1506,16 +1577,16 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 )
 
 -- YDB Ydb
-SELECT Version();
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
+SELECT Version();
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -1528,7 +1599,7 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 )
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -1539,28 +1610,12 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 
 	PRIMARY KEY (Id)
 )
-
--- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
-SELECT Version();
-
--- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
-(
-	Id      Int32,
-	IntVal  Int32         NOT NULL,
-	DecVal  Decimal(22,9) NOT NULL,
-	StrVal  Text,
-	BoolVal Bool          NOT NULL,
-	DtVal   Timestamp     NOT NULL,
-
-	PRIMARY KEY (Id)
-)
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
 CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
@@ -1574,15 +1629,9 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 
 	PRIMARY KEY (Id)
 )
-
--- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
 SELECT Version();
-
--- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
 CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
@@ -1596,6 +1645,9 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 
 	PRIMARY KEY (Id)
 )
+
+-- YDB Ydb
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
 CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
@@ -1713,10 +1765,10 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 )
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
+SELECT Version();
 
 -- YDB Ydb
-SELECT Version();
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
@@ -1751,10 +1803,10 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
+SELECT Version();
 
 -- YDB Ydb
-SELECT Version();
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
 CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
@@ -1837,9 +1889,6 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 )
 
 -- YDB Ydb
-SELECT Version();
-
--- YDB Ydb
 CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 (
 	Id      Int32,
@@ -1851,6 +1900,9 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 
 	PRIMARY KEY (Id)
 )
+
+-- YDB Ydb
+SELECT Version();
 
 -- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
@@ -1870,9 +1922,6 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 
 	PRIMARY KEY (Id)
 )
-
--- YDB Ydb
-SELECT Version();
 
 -- YDB Ydb
 CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
@@ -1889,6 +1938,9 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
+
+-- YDB Ydb
+SELECT Version();
 
 -- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
@@ -1907,9 +1959,6 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 )
 
 -- YDB Ydb
-SELECT Version();
-
--- YDB Ydb
 CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 (
 	Id      Int32,
@@ -1924,6 +1973,9 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
+
+-- YDB Ydb
+SELECT Version();
 
 -- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
@@ -1956,9 +2008,6 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
-
--- YDB Ydb
-SELECT Version();
 
 -- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
@@ -1975,8 +2024,14 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 
 	PRIMARY KEY (Id)
 )
+
+-- YDB Ydb
+SELECT Version();
 
 -- YDB Ydb
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
+
+-- YDB Ydb
 CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 (
 	Id      Int32,
@@ -1988,15 +2043,6 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 
 	PRIMARY KEY (Id)
 )
-
--- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
-
--- YDB Ydb
-SELECT Version();
-
--- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
 CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
@@ -2010,6 +2056,12 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 
 	PRIMARY KEY (Id)
 )
+
+-- YDB Ydb
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
+
+-- YDB Ydb
+SELECT Version();
 
 -- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
@@ -2039,9 +2091,6 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 
 	PRIMARY KEY (Id)
 )
-
--- YDB Ydb
-SELECT Version();
 
 -- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
@@ -2050,7 +2099,10 @@ DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
+SELECT Version();
+
+-- YDB Ydb
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -2063,7 +2115,7 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 )
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -2076,11 +2128,24 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 )
 
 -- YDB Ydb
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
+
+-- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
-SELECT Version();
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
+(
+	Id      Int32,
+	IntVal  Int32         NOT NULL,
+	DecVal  Decimal(22,9) NOT NULL,
+	StrVal  Text,
+	BoolVal Bool          NOT NULL,
+	DtVal   Timestamp     NOT NULL,
 
+	PRIMARY KEY (Id)
+)
+
 -- YDB Ydb
 CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 (
@@ -2093,6 +2158,9 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 
 	PRIMARY KEY (Id)
 )
+
+-- YDB Ydb
+SELECT Version();
 
 -- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
@@ -2101,7 +2169,7 @@ DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -2114,7 +2182,7 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 )
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -2127,16 +2195,16 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 )
 
 -- YDB Ydb
-SELECT Version();
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
+SELECT Version();
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -2149,7 +2217,7 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 )
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -2162,13 +2230,10 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 )
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
-
--- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
-SELECT Version();
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
 CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
@@ -2197,13 +2262,13 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 )
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
+SELECT Version();
 
 -- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
-SELECT Version();
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
 CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
@@ -2233,12 +2298,15 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
+
+-- YDB Ydb
+SELECT Version();
 
 -- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -2249,12 +2317,9 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 
 	PRIMARY KEY (Id)
 )
-
--- YDB Ydb
-SELECT Version();
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -2265,15 +2330,18 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 
 	PRIMARY KEY (Id)
 )
+
+-- YDB Ydb
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
+SELECT Version();
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -2284,12 +2352,9 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 
 	PRIMARY KEY (Id)
 )
-
--- YDB Ydb
-SELECT Version();
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -2302,13 +2367,13 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 )
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -2324,7 +2389,7 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 SELECT Version();
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -2337,13 +2402,13 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 )
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -2356,7 +2421,7 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 )
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -2367,9 +2432,6 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 
 	PRIMARY KEY (Id)
 )
-
--- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
 SELECT Version();
@@ -2378,7 +2440,10 @@ SELECT Version();
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
+
+-- YDB Ydb
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -2391,7 +2456,7 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 )
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -2404,13 +2469,16 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 )
 
 -- YDB Ydb
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
+
+-- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
+SELECT Version();
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -2423,7 +2491,7 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 )
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -2436,16 +2504,13 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 )
 
 -- YDB Ydb
-SELECT Version();
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
-
--- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -2458,7 +2523,7 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 )
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -2471,16 +2536,16 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 )
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
 SELECT Version();
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -2493,7 +2558,7 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 )
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -2506,13 +2571,13 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 )
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -2528,7 +2593,10 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 SELECT Version();
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
+
+-- YDB Ydb
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -2541,7 +2609,7 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 )
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
 CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
@@ -2557,13 +2625,26 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 )
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
+(
+	Id      Int32,
+	IntVal  Int32         NOT NULL,
+	DecVal  Decimal(22,9) NOT NULL,
+	StrVal  Text,
+	BoolVal Bool          NOT NULL,
+	DtVal   Timestamp     NOT NULL,
 
+	PRIMARY KEY (Id)
+)
+
 -- YDB Ydb
 SELECT Version();
 
 -- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
+
+-- YDB Ydb
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
 CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
@@ -2595,13 +2676,13 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
+SELECT Version();
 
 -- YDB Ydb
-SELECT Version();
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -2614,7 +2695,7 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 )
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -2794,6 +2875,9 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 
 	PRIMARY KEY (Id)
 )
+
+-- YDB Ydb
+SELECT Version();
 
 -- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
@@ -2802,7 +2886,7 @@ DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -2813,12 +2897,9 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 
 	PRIMARY KEY (Id)
 )
-
--- YDB Ydb
-SELECT Version();
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -2831,13 +2912,16 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 )
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
+SELECT Version();
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
+
+-- YDB Ydb
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -2850,7 +2934,7 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 )
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -2863,13 +2947,13 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 )
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -2882,7 +2966,10 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 )
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
+SELECT Version();
+
+-- YDB Ydb
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -2895,16 +2982,13 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 )
 
 -- YDB Ydb
-SELECT Version();
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
-
--- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -2917,7 +3001,7 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 )
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -2928,9 +3012,6 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 
 	PRIMARY KEY (Id)
 )
-
--- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
 SELECT Version();
@@ -2939,7 +3020,10 @@ SELECT Version();
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
+
+-- YDB Ydb
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -2952,7 +3036,7 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 )
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -2963,9 +3047,6 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 
 	PRIMARY KEY (Id)
 )
-
--- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
@@ -2974,7 +3055,10 @@ DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 SELECT Version();
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
+
+-- YDB Ydb
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -2987,7 +3071,7 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 )
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -3033,15 +3117,12 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 
 	PRIMARY KEY (Id)
 )
-
--- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
-SELECT Version();
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
 CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
@@ -3057,6 +3138,9 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 )
 
 -- YDB Ydb
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
+
+-- YDB Ydb
 CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 (
 	Id      Int32,
@@ -3070,13 +3154,13 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 )
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
+SELECT Version();
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -3089,7 +3173,7 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 )
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -3102,16 +3186,16 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 )
 
 -- YDB Ydb
-SELECT Version();
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
+SELECT Version();
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -3124,7 +3208,7 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 )
 
 -- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 (
 	Id      Int32,
 	IntVal  Int32         NOT NULL,
@@ -3135,15 +3219,28 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 
 	PRIMARY KEY (Id)
 )
+
+-- YDB Ydb
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
-SELECT Version();
+CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
+(
+	Id      Int32,
+	IntVal  Int32         NOT NULL,
+	DecVal  Decimal(22,9) NOT NULL,
+	StrVal  Text,
+	BoolVal Bool          NOT NULL,
+	DtVal   Timestamp     NOT NULL,
+
+	PRIMARY KEY (Id)
+)
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
+SELECT Version();
 
 -- YDB Ydb
 CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
@@ -3157,6 +3254,9 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 
 	PRIMARY KEY (Id)
 )
+
+-- YDB Ydb
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
@@ -3226,10 +3326,10 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
-SELECT Version();
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
+SELECT Version();
 
 -- YDB Ydb
 CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
@@ -3259,9 +3359,6 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
-
--- YDB Ydb
-SELECT Version();
 
 -- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
@@ -3293,10 +3390,10 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 )
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
+SELECT Version();
 
 -- YDB Ydb
-SELECT Version();
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
@@ -3331,6 +3428,9 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
+
+-- YDB Ydb
 CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 (
 	Id      Int32,
@@ -3342,9 +3442,6 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
 
 	PRIMARY KEY (Id)
 )
-
--- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
 SELECT Version();
@@ -3367,9 +3464,6 @@ DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
-
--- YDB Ydb
-SELECT Version();
 
 -- YDB Ydb
 CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
@@ -3398,13 +3492,13 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 )
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
+SELECT Version();
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
-SELECT Version();
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
 -- YDB Ydb
 CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
@@ -3431,6 +3525,9 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 
 	PRIMARY KEY (Id)
 )
+
+-- YDB Ydb
+SELECT Version();
 
 -- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
@@ -3463,15 +3560,15 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 
 	PRIMARY KEY (Id)
 )
-
--- YDB Ydb
-SELECT Version();
 
 -- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
+
+-- YDB Ydb
+SELECT Version();
 
 -- YDB Ydb
 CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
@@ -3500,13 +3597,10 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 )
 
 -- YDB Ydb
-SELECT Version();
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
 DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
-
--- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
 CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
@@ -3568,29 +3662,13 @@ CREATE TABLE SchemaProvider_TableDroppedConcurrently_0
 
 	PRIMARY KEY (Id)
 )
-
--- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
 SELECT Version();
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
-
--- YDB Ydb
-CREATE TABLE SchemaProvider_TableDroppedConcurrently_1
-(
-	Id      Int32,
-	IntVal  Int32         NOT NULL,
-	DecVal  Decimal(22,9) NOT NULL,
-	StrVal  Text,
-	BoolVal Bool          NOT NULL,
-	DtVal   Timestamp     NOT NULL,
-
-	PRIMARY KEY (Id)
-)
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
 
 -- YDB Ydb
-DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_1
+DROP TABLE IF EXISTS SchemaProvider_TableDroppedConcurrently_0
 
