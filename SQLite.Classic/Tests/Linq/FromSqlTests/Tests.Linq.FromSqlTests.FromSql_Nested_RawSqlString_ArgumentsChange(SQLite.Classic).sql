@@ -41,8 +41,6 @@ WHERE
 -- SQLite.Classic SQLite
 DECLARE @p  -- Int32
 SET     @p = 3
-DECLARE @p_1  -- Int32
-SET     @p_1 = 4
 
 SELECT
 	[p].[PersonID]
