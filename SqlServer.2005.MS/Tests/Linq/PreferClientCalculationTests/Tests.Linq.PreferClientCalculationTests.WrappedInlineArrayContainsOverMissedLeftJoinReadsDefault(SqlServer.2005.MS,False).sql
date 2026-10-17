@@ -27,3 +27,22 @@ SELECT
 FROM
 	[MissedJoinEntity] [t1]
 
+-- SqlServer.2005.MS SqlServer.2005
+SELECT
+	[e].[Id],
+	CASE
+		WHEN 0 IN (Coalesce([j].[Value1], 0), 5) THEN N'y'
+		ELSE N'n'
+	END,
+	CASE
+		WHEN 0 IN (Coalesce([j].[Value1], 0), 5) THEN N'y'
+		ELSE N'n'
+	END,
+	CASE
+		WHEN 0 IN (Coalesce([j].[Value1], 0), 5) THEN N'y'
+		ELSE N'n'
+	END
+FROM
+	[MissedJoinEntity] [e]
+		LEFT JOIN [MissedJoinEntity] [j] ON [j].[Id] = [e].[Id] + 1000
+
