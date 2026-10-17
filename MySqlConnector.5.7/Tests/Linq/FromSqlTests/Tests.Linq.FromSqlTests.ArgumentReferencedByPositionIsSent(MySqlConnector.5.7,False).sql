@@ -6,6 +6,6 @@ SELECT
 	`p`.`PersonID`
 FROM
 	(
-		SELECT * FROM Person WHERE PersonID = ?
+		SELECT * FROM Person WHERE ? = PersonID
 	) `p`
 
