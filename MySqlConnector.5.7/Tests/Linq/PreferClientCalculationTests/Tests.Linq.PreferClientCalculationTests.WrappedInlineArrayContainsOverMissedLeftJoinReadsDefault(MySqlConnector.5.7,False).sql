@@ -27,3 +27,22 @@ SELECT
 FROM
 	`MissedJoinEntity` `t1`
 
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+SELECT
+	`e`.`Id`,
+	CASE
+		WHEN 0 IN (Coalesce(`j`.`Value1`, 0), 5) THEN 'y'
+		ELSE 'n'
+	END,
+	CASE
+		WHEN 0 IN (Coalesce(`j`.`Value1`, 0), 5) THEN 'y'
+		ELSE 'n'
+	END,
+	CASE
+		WHEN 0 IN (Coalesce(`j`.`Value1`, 0), 5) THEN 'y'
+		ELSE 'n'
+	END
+FROM
+	`MissedJoinEntity` `e`
+		LEFT JOIN `MissedJoinEntity` `j` ON `j`.`Id` = `e`.`Id` + 1000
+
