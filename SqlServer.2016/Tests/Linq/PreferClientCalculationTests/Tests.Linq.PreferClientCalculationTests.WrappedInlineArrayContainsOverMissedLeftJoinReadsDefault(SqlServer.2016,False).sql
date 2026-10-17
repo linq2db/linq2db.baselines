@@ -18,3 +18,13 @@ SELECT
 FROM
 	[MissedJoinEntity] [t1]
 
+-- SqlServer.2016
+SELECT
+	[e].[Id],
+	IIF(0 IN (Coalesce([j].[Value1], 0), 5), N'y', N'n'),
+	IIF(0 IN (Coalesce([j].[Value1], 0), 5), N'y', N'n'),
+	IIF(0 IN (Coalesce([j].[Value1], 0), 5), N'y', N'n')
+FROM
+	[MissedJoinEntity] [e]
+		LEFT JOIN [MissedJoinEntity] [j] ON [j].[Id] = [e].[Id] + 1000
+
