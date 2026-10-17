@@ -1,6 +1,6 @@
 ﻿-- DB2 DB2.LUW DB2LUW
 DECLARE @currentDate Timestamp(20) -- DateTime
-SET     @currentDate = '2020-02-29-17.54.55.123123'
+SET     @currentDate = CAST('2020-02-29-17.54.55.123123' AS TIMESTAMP(6))
 
 SELECT
 	"o".ID,

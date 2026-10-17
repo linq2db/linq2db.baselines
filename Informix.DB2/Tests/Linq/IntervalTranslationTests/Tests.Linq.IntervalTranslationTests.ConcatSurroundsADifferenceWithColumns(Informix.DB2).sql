@@ -45,8 +45,8 @@ FROM
 				SELECT
 					1::Int as Source,
 					NVL(r.Budget, NULL) as Duration,
-					NULL::datetime year to fraction as Duration_1,
-					NULL::datetime year to fraction as Duration_2
+					NULL::datetime year to fraction(5) as Duration_1,
+					NULL::datetime year to fraction(5) as Duration_2
 				FROM
 					BudgetedTaskRow r
 				UNION ALL
@@ -63,8 +63,8 @@ FROM
 			3::Int as Source,
 			NULL::BOOLEAN as Duration,
 			NULL::BigInt as Duration_1,
-			NULL::datetime year to fraction as Duration_2,
-			NULL::datetime year to fraction as Duration_3,
+			NULL::datetime year to fraction(5) as Duration_2,
+			NULL::datetime year to fraction(5) as Duration_3,
 			r_2.Budget as Duration_4
 		FROM
 			BudgetedTaskRow r_2

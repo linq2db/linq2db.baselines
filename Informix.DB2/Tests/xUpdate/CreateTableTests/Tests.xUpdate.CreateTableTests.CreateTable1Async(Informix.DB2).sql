@@ -4,10 +4,10 @@ DROP TABLE IF EXISTS TestTable
 -- Informix.DB2 Informix
 CREATE TABLE TestTable
 (
-	ID        SERIAL                     NOT NULL,
-	Field1    NVarChar(50)                   NULL,
-	Field2    NVarChar(255)                  NULL,
-	CreatedOn datetime year to fraction      NULL,
+	ID        SERIAL                        NOT NULL,
+	Field1    NVarChar(50)                      NULL,
+	Field2    NVarChar(255)                     NULL,
+	CreatedOn datetime year to fraction(5)      NULL,
 
 	PRIMARY KEY (ID)
 )

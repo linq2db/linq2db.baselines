@@ -18,7 +18,7 @@ FETCH NEXT 1 ROWS ONLY
 
 -- DB2 DB2.LUW DB2LUW
 DECLARE @dt Timestamp(20) -- DateTime
-SET     @dt = '2010-12-14-05.00.07.425014'
+SET     @dt = CAST('2010-12-14-05.00.07.425014' AS TIMESTAMP(6))
 
 UPDATE
 	"LinqDataTypes" "t"
@@ -47,7 +47,7 @@ FETCH NEXT 1 ROWS ONLY
 
 -- DB2 DB2.LUW DB2LUW
 DECLARE @pdt Timestamp(20) -- DateTime
-SET     @pdt = '2001-01-11-01.11.21.100000'
+SET     @pdt = CAST('2001-01-11-01.11.21.100000' AS TIMESTAMP(6))
 
 UPDATE
 	"LinqDataTypes" "t"

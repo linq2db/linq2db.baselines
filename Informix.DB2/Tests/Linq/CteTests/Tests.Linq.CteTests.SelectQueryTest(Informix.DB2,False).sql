@@ -9,7 +9,7 @@ AS
 (
 	SELECT
 		1::Int,
-		@Date::datetime year to fraction
+		@Date::datetime year to fraction(5)
 	FROM table(set{1})
 	UNION ALL
 	SELECT

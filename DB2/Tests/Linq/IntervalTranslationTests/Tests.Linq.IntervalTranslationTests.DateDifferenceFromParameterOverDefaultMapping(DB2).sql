@@ -1,6 +1,6 @@
 ﻿-- DB2 DB2.LUW DB2LUW
 DECLARE @asOf Timestamp(20) -- DateTime
-SET     @asOf = '2026-01-10-08.15.30.000000'
+SET     @asOf = CAST('2026-01-10-08.15.30.000000' AS TIMESTAMP(6))
 
 SELECT
 	"r"."Id"
@@ -11,7 +11,7 @@ WHERE
 
 -- DB2 DB2.LUW DB2LUW
 DECLARE @asOf Timestamp(20) -- DateTime
-SET     @asOf = '2026-01-10-08.15.30.000000'
+SET     @asOf = CAST('2026-01-10-08.15.30.000000' AS TIMESTAMP(6))
 
 SELECT
 	"r"."Id"
@@ -22,7 +22,7 @@ WHERE
 
 -- DB2 DB2.LUW DB2LUW
 DECLARE @asOf Timestamp(20) -- DateTime
-SET     @asOf = '2026-01-10-08.15.30.000000'
+SET     @asOf = CAST('2026-01-10-08.15.30.000000' AS TIMESTAMP(6))
 
 SELECT
 	"r"."Id"
@@ -33,7 +33,7 @@ ORDER BY
 
 -- DB2 DB2.LUW DB2LUW
 DECLARE @asOf Timestamp(20) -- DateTime
-SET     @asOf = '2026-01-10-08.15.30.000000'
+SET     @asOf = CAST('2026-01-10-08.15.30.000000' AS TIMESTAMP(6))
 
 SELECT
 	CAST((CAST(Days("r"."ClosedOn") AS BigInt) - CAST(Days(CAST(@asOf AS timestamp)) AS BigInt)) * 864000000000 + (CAST(Midnight_Seconds("r"."ClosedOn") AS BigInt) - CAST(Midnight_Seconds(CAST(@asOf AS timestamp)) AS BigInt)) * 10000000 + (CAST(Microsecond("r"."ClosedOn") AS BigInt) - CAST(Microsecond(CAST(@asOf AS timestamp)) AS BigInt)) * 10 AS Float) / 36000000000
