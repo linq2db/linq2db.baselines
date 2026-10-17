@@ -29,7 +29,7 @@ SELECT
 FROM
 	CoarseDateShapesRow r
 WHERE
-	Date(r."Value") = TO_DATE('2026-06-01', '%Y-%m-%d')
+	Extend(r."Value", Year to Day) = TO_DATE('2026-06-01', '%Y-%m-%d')
 
 -- Informix.DB2 Informix
 SELECT
@@ -37,7 +37,7 @@ SELECT
 FROM
 	CoarseDateShapesRow r
 WHERE
-	Date(r."Value") < TO_DATE('2026-06-01', '%Y-%m-%d')
+	Extend(r."Value", Year to Day) < TO_DATE('2026-06-01', '%Y-%m-%d')
 
 -- Informix.DB2 Informix
 SELECT
@@ -45,5 +45,5 @@ SELECT
 FROM
 	CoarseDateShapesRow r
 WHERE
-	TO_DATE('2026-06-01', '%Y-%m-%d') = Date(r."Value")
+	TO_DATE('2026-06-01', '%Y-%m-%d') = Extend(r."Value", Year to Day)
 
