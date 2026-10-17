@@ -18,3 +18,13 @@ SELECT
 FROM
 	[MissedJoinEntity] [t1]
 
+-- Access.Jet.Odbc AccessODBC
+SELECT
+	[e].[Id],
+	IIF(0 IN (IIF([j].[Value1] IS NULL, 0, [j].[Value1]), 5), 'y', 'n'),
+	IIF(0 IN (IIF([j].[Value1] IS NULL, 0, [j].[Value1]), 5), 'y', 'n'),
+	IIF(0 IN (IIF([j].[Value1] IS NULL, 0, [j].[Value1]), 5), 'y', 'n')
+FROM
+	[MissedJoinEntity] [e]
+		LEFT JOIN [MissedJoinEntity] [j] ON ([j].[Id] = [e].[Id] + 1000)
+
