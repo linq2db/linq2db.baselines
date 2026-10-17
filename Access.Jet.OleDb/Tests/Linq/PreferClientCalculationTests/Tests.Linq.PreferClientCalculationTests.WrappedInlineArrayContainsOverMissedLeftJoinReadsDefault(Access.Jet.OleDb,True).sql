@@ -16,3 +16,11 @@ SELECT
 FROM
 	[MissedJoinEntity] [t1]
 
+-- Access.Jet.OleDb AccessOleDb
+SELECT
+	[e].[Id],
+	[j].[Value1]
+FROM
+	[MissedJoinEntity] [e]
+		LEFT JOIN [MissedJoinEntity] [j] ON ([j].[Id] = [e].[Id] + 1000)
+
