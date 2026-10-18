@@ -182,3 +182,19 @@ SELECT
 FROM
 	NullableItemEntity t1
 
+-- Informix.DB2 Informix
+SELECT
+	e.Id,
+	e."Item",
+	e.Tested
+FROM
+	NullableItemEntity e
+
+-- Informix.DB2 Informix
+SELECT
+	t1.Id,
+	t1."Item",
+	t1.Tested
+FROM
+	NullableItemEntity t1
+

@@ -182,3 +182,19 @@ SELECT
 FROM
 	"NullableItemEntity" "t1"
 
+-- DB2 DB2.LUW DB2LUW
+SELECT
+	"e"."Id",
+	"e"."Item",
+	"e"."Tested"
+FROM
+	"NullableItemEntity" "e"
+
+-- DB2 DB2.LUW DB2LUW
+SELECT
+	"t1"."Id",
+	"t1"."Item",
+	"t1"."Tested"
+FROM
+	"NullableItemEntity" "t1"
+

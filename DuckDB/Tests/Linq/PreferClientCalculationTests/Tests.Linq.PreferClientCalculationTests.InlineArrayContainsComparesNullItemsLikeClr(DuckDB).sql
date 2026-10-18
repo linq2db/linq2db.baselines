@@ -182,3 +182,19 @@ SELECT
 FROM
 	NullableItemEntity t1
 
+-- DuckDB
+SELECT
+	e.Id,
+	e."Item",
+	e.Tested
+FROM
+	NullableItemEntity e
+
+-- DuckDB
+SELECT
+	t1.Id,
+	t1."Item",
+	t1.Tested
+FROM
+	NullableItemEntity t1
+
