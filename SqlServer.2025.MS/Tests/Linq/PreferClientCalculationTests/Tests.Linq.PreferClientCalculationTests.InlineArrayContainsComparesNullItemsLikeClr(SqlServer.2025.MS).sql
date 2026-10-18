@@ -182,3 +182,19 @@ SELECT
 FROM
 	[NullableItemEntity] [t1]
 
+-- SqlServer.2025.MS SqlServer.2025
+SELECT
+	[e].[Id],
+	[e].[Item],
+	[e].[Tested]
+FROM
+	[NullableItemEntity] [e]
+
+-- SqlServer.2025.MS SqlServer.2025
+SELECT
+	[t1].[Id],
+	[t1].[Item],
+	[t1].[Tested]
+FROM
+	[NullableItemEntity] [t1]
+
