@@ -182,3 +182,19 @@ SELECT
 FROM
 	[NullableItemEntity] [t1]
 
+-- Access.Ace.Odbc AccessODBC
+SELECT
+	[e].[Id],
+	[e].[Item],
+	[e].[Tested]
+FROM
+	[NullableItemEntity] [e]
+
+-- Access.Ace.Odbc AccessODBC
+SELECT
+	[t1].[Id],
+	[t1].[Item],
+	[t1].[Tested]
+FROM
+	[NullableItemEntity] [t1]
+
