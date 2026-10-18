@@ -182,3 +182,19 @@ SELECT
 FROM
 	"NullableItemEntity" "t1"
 
+-- Firebird.2.5 Firebird
+SELECT
+	"e"."Id",
+	"e"."Item",
+	"e"."Tested"
+FROM
+	"NullableItemEntity" "e"
+
+-- Firebird.2.5 Firebird
+SELECT
+	"t1"."Id",
+	"t1"."Item",
+	"t1"."Tested"
+FROM
+	"NullableItemEntity" "t1"
+

@@ -182,3 +182,19 @@ SELECT
 FROM
 	"NullableItemEntity" "t1"
 
+-- Firebird.4 Firebird4
+SELECT
+	"e"."Id",
+	"e"."Item",
+	"e"."Tested"
+FROM
+	"NullableItemEntity" "e"
+
+-- Firebird.4 Firebird4
+SELECT
+	"t1"."Id",
+	"t1"."Item",
+	"t1"."Tested"
+FROM
+	"NullableItemEntity" "t1"
+
