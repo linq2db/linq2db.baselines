@@ -182,3 +182,19 @@ SELECT
 FROM
 	NullableItemEntity t1
 
+-- ClickHouse.MySql ClickHouse
+SELECT
+	e.Id,
+	e.Item,
+	e.Tested
+FROM
+	NullableItemEntity e
+
+-- ClickHouse.MySql ClickHouse
+SELECT
+	t1.Id,
+	t1.Item,
+	t1.Tested
+FROM
+	NullableItemEntity t1
+
