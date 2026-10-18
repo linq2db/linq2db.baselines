@@ -87,3 +87,18 @@ FROM
 			MIN([g_1].[Day]) = @CoarseConvertedDay
 	) [t1]
 
+-- SqlServer.SA.MS SqlServer.2019
+SELECT
+	COUNT(*)
+FROM
+	(
+		SELECT
+			MAX([g_1].[Value]) as [Max_1]
+		FROM
+			[CoarseConvertedRow] [g_1]
+		GROUP BY
+			[g_1].[Id]
+	) [t1]
+WHERE
+	[t1].[Max_1] IN (DATETIME2FROMPARTS(2026, 6, 1, 9, 0, 0, 0, 7))
+
