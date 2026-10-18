@@ -88,3 +88,18 @@ FROM
 			MIN(g_1."Day") = :CoarseConvertedDay
 	) t1
 
+-- Oracle.18.Managed Oracle.Managed Oracle12
+SELECT
+	COUNT(*)
+FROM
+	(
+		SELECT
+			MAX(g_1."Value") as "Max_1"
+		FROM
+			"CoarseConvertedRow" g_1
+		GROUP BY
+			g_1."Id"
+	) t1
+WHERE
+	t1."Max_1" IN (TIMESTAMP '2026-06-01 09:00:00.000000')
+
