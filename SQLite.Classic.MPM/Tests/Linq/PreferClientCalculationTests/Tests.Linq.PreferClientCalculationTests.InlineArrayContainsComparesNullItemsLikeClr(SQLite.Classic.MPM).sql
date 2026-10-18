@@ -182,3 +182,19 @@ SELECT
 FROM
 	[NullableItemEntity] [t1]
 
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+SELECT
+	[e].[Id],
+	[e].[Item],
+	[e].[Tested]
+FROM
+	[NullableItemEntity] [e]
+
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+SELECT
+	[t1].[Id],
+	[t1].[Item],
+	[t1].[Tested]
+FROM
+	[NullableItemEntity] [t1]
+
