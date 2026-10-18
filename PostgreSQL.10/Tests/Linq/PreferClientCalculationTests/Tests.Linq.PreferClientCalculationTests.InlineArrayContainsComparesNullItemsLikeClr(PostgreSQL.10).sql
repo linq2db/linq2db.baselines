@@ -182,3 +182,19 @@ SELECT
 FROM
 	"NullableItemEntity" t1
 
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+SELECT
+	e."Id",
+	e."Item",
+	e."Tested"
+FROM
+	"NullableItemEntity" e
+
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+SELECT
+	t1."Id",
+	t1."Item",
+	t1."Tested"
+FROM
+	"NullableItemEntity" t1
+
