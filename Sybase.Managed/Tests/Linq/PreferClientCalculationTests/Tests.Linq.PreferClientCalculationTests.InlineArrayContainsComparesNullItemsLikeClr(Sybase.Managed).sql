@@ -182,3 +182,19 @@ SELECT
 FROM
 	[NullableItemEntity] [t1]
 
+-- Sybase.Managed Sybase
+SELECT
+	[e].[Id],
+	[e].[Item],
+	[e].[Tested]
+FROM
+	[NullableItemEntity] [e]
+
+-- Sybase.Managed Sybase
+SELECT
+	[t1].[Id],
+	[t1].[Item],
+	[t1].[Tested]
+FROM
+	[NullableItemEntity] [t1]
+

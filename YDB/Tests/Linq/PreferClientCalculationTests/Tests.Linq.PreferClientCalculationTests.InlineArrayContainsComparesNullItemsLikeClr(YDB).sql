@@ -182,3 +182,19 @@ SELECT
 FROM
 	NullableItemEntity t1
 
+-- YDB Ydb
+SELECT
+	e.Id as Id,
+	e.Item as Item_1,
+	e.Tested as Tested
+FROM
+	NullableItemEntity e
+
+-- YDB Ydb
+SELECT
+	t1.Id as Id,
+	t1.Item as Item_1,
+	t1.Tested as Tested
+FROM
+	NullableItemEntity t1
+
