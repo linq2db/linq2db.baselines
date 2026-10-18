@@ -182,3 +182,19 @@ SELECT
 FROM
 	"NullableItemEntity" t1
 
+-- Oracle.11.Managed Oracle11
+SELECT
+	e."Id",
+	e."Item",
+	e."Tested"
+FROM
+	"NullableItemEntity" e
+
+-- Oracle.11.Managed Oracle11
+SELECT
+	t1."Id",
+	t1."Item",
+	t1."Tested"
+FROM
+	"NullableItemEntity" t1
+
