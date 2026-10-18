@@ -88,3 +88,18 @@ FROM
 			Date(MIN([g_1].[Day])) = Date(@CoarseConvertedDay)
 	) [t1]
 
+-- SQLite.MS SQLite
+SELECT
+	COUNT(*)
+FROM
+	(
+		SELECT
+			MAX([g_1].[Value]) as [Max_1]
+		FROM
+			[CoarseConvertedRow] [g_1]
+		GROUP BY
+			[g_1].[Id]
+	) [t1]
+WHERE
+	[t1].[Max_1] IN ('2026-06-01 09:00:00.000')
+
