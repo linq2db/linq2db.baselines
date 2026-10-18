@@ -16,3 +16,13 @@ FROM
 ORDER BY
 	r.Id
 
+-- YDB Ydb
+SELECT
+	t1.Id as Id,
+	t1.D as D,
+	t1.S as S,
+	t1.B as B,
+	t1.P as P
+FROM
+	RoundDeclaredShapeFull t1
+
