@@ -182,3 +182,19 @@ SELECT
 FROM
 	`NullableItemEntity` `t1`
 
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57
+SELECT
+	`e`.`Id`,
+	`e`.`Item`,
+	`e`.`Tested`
+FROM
+	`NullableItemEntity` `e`
+
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57
+SELECT
+	`t1`.`Id`,
+	`t1`.`Item`,
+	`t1`.`Tested`
+FROM
+	`NullableItemEntity` `t1`
+

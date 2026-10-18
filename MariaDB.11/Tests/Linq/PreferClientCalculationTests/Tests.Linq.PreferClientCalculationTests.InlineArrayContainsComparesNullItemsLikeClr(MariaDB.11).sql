@@ -182,3 +182,19 @@ SELECT
 FROM
 	`NullableItemEntity` `t1`
 
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+SELECT
+	`e`.`Id`,
+	`e`.`Item`,
+	`e`.`Tested`
+FROM
+	`NullableItemEntity` `e`
+
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+SELECT
+	`t1`.`Id`,
+	`t1`.`Item`,
+	`t1`.`Tested`
+FROM
+	`NullableItemEntity` `t1`
+
