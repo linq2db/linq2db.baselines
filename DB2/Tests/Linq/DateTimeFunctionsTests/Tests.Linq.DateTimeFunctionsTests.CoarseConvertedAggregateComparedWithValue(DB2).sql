@@ -88,3 +88,18 @@ FROM
 			MIN("g_1"."Day") = @CoarseConvertedDay
 	) "t1"
 
+-- DB2 DB2.LUW DB2LUW
+SELECT
+	COUNT(*)
+FROM
+	(
+		SELECT
+			MAX("g_1"."Value") as "Max_1"
+		FROM
+			"CoarseConvertedRow" "g_1"
+		GROUP BY
+			"g_1"."Id"
+	) "t1"
+WHERE
+	"t1"."Max_1" IN (CAST('2026-06-01-09.00.00.000000' AS TIMESTAMP(6)))
+
