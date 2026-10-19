@@ -4,7 +4,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Floor(Log(2, p."MoneyValue")::Float) as "Value_1"
+			Floor(Log(2, p."MoneyValue"::Float::decimal)::Float) as "Value_1"
 		FROM
 			"LinqDataTypes" p
 	) t

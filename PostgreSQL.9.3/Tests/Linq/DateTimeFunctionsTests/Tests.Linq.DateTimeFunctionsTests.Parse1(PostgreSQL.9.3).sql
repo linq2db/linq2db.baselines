@@ -1,8 +1,8 @@
 ﻿-- PostgreSQL.9.3 PostgreSQL
 SELECT
-	Date_Trunc('day', d."DateTimeValue")
+	Date_Trunc('day', d."DateTimeValue"::text::TimeStamp)
 FROM
 	"LinqDataTypes" d
 WHERE
-	Floor(Extract(day From d."DateTimeValue"))::Int > 0
+	Floor(Extract(day From d."DateTimeValue"::text::TimeStamp))::Int > 0
 
