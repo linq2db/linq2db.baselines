@@ -1,8 +1,8 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 SELECT
-	CAST(CAST(`d`.`TransactionDate` AS CHAR(10)) AS DATE)
+	`d`.`TransactionDate`
 FROM
 	`Transactions` `d`
 WHERE
-	Extract(day from CAST(CAST(`d`.`TransactionDate` AS CHAR(10)) AS DATE)) > 0
+	Extract(day from `d`.`TransactionDate`) > 0
 
