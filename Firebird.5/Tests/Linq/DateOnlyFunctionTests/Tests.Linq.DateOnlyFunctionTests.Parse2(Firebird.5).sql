@@ -1,8 +1,8 @@
 ﻿-- Firebird.5 Firebird4
 SELECT
-	CAST("d"."TransactionDate" AS Date)
+	"d"."TransactionDate"
 FROM
 	"Transactions" "d"
 WHERE
-	Extract(day from CAST("d"."TransactionDate" AS Date)) > 0
+	Extract(day from "d"."TransactionDate") > 0
 

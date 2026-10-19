@@ -1,8 +1,8 @@
 ﻿-- Firebird.3 Firebird3
 SELECT
-	CAST(CAST("d"."DateTimeValue" AS TimeStamp) AS Date)
+	CAST("d"."DateTimeValue" AS Date)
 FROM
 	"LinqDataTypes" "d"
 WHERE
-	Extract(day from CAST("d"."DateTimeValue" AS TimeStamp)) > 0
+	Extract(day from "d"."DateTimeValue") > 0
 
