@@ -1,8 +1,8 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
 SELECT
-	To_Date("d"."DateTimeValue")
+	To_Date(CAST(CAST("d"."DateTimeValue" AS NVarChar(27)) AS Timestamp))
 FROM
 	"LinqDataTypes" "d"
 WHERE
-	DayOfMonth("d"."DateTimeValue") > 0
+	DayOfMonth(CAST(CAST("d"."DateTimeValue" AS NVarChar(27)) AS Timestamp)) > 0
 

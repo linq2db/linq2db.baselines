@@ -1,8 +1,8 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
 SELECT
-	"d"."TransactionDate"
+	CAST(CAST("d"."TransactionDate" AS NVarChar(10)) AS Date)
 FROM
 	"Transactions" "d"
 WHERE
-	DayOfMonth("d"."TransactionDate") > 0
+	DayOfMonth(CAST(CAST("d"."TransactionDate" AS NVarChar(10)) AS Date)) > 0
 
