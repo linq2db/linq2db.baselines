@@ -1,0 +1,15 @@
+﻿-- Firebird.3 Firebird3
+SELECT
+	CAST(CAST(Floor("d".M) AS Int) AS DOUBLE PRECISION) * 57.295779513082323
+FROM
+	"DegreesValue" "d"
+WHERE
+	CAST(CAST(Floor(CAST(CAST(Floor("d".M) AS Int) AS DOUBLE PRECISION) * 57.295779513082323) AS Int) AS DOUBLE PRECISION) < 57.100000000000001
+
+-- Firebird.3 Firebird3
+SELECT
+	"t1"."Id",
+	"t1".M
+FROM
+	"DegreesValue" "t1"
+
