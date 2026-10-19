@@ -1,8 +1,8 @@
 ﻿-- SqlServer.2019.MS SqlServer.2019
 SELECT
-	CAST([d].[DateTimeValue] AS Date)
+	CAST(CAST(CAST([d].[DateTimeValue] AS NVarChar(27)) AS DateTime2) AS Date)
 FROM
 	[LinqDataTypes] [d]
 WHERE
-	DatePart(day, [d].[DateTimeValue]) > 0
+	DatePart(day, CAST(CAST([d].[DateTimeValue] AS NVarChar(27)) AS DateTime2)) > 0
 
