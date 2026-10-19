@@ -21,11 +21,11 @@ SELECT
 		ELSE -Math::Round(-(Unwrap(CAST(r.N AS Double)) * Double('100')))
 	END / Double('100') as N,
 	CASE
-		WHEN Unwrap(CAST(r.A AS Double)) * Math::Pow(Double('10'), r.F) >= Double('0')
-			THEN Math::Round(Unwrap(CAST(r.A AS Double)) * Math::Pow(Double('10'), r.F))
-		ELSE -Math::Round(-(Unwrap(CAST(r.A AS Double)) * Math::Pow(Double('10'), r.F)))
-	END / Math::Pow(Double('10'), r.F) as RuntimeAway,
-	Math::NearbyInt(Unwrap(CAST(r.A AS Double)) * Math::Pow(Double('10'), r.F), Math::RoundToNearest()) / Math::Pow(Double('10'), r.F) as RuntimeEven,
+		WHEN Unwrap(CAST(r.A AS Double)) * Math::Pow(Double('10'), Unwrap(CAST(Unwrap(CAST(r.F AS Int32)) AS Double))) >= Double('0')
+			THEN Math::Round(Unwrap(CAST(r.A AS Double)) * Math::Pow(Double('10'), Unwrap(CAST(Unwrap(CAST(r.F AS Int32)) AS Double))))
+		ELSE -Math::Round(-(Unwrap(CAST(r.A AS Double)) * Math::Pow(Double('10'), Unwrap(CAST(Unwrap(CAST(r.F AS Int32)) AS Double)))))
+	END / Math::Pow(Double('10'), Unwrap(CAST(Unwrap(CAST(r.F AS Int32)) AS Double))) as RuntimeAway,
+	Math::NearbyInt(Unwrap(CAST(r.A AS Double)) * Math::Pow(Double('10'), Unwrap(CAST(Unwrap(CAST(r.F AS Int32)) AS Double))), Math::RoundToNearest()) / Math::Pow(Double('10'), Unwrap(CAST(Unwrap(CAST(r.F AS Int32)) AS Double))) as RuntimeEven,
 	CASE
 		WHEN Unwrap(CAST(r.A AS Double)) * Unwrap(CAST(Decimal('10', 22, 9) AS Double)) >= Double('0')
 			THEN Math::Round(Unwrap(CAST(r.A AS Double)) * Unwrap(CAST(Decimal('10', 22, 9) AS Double)))
