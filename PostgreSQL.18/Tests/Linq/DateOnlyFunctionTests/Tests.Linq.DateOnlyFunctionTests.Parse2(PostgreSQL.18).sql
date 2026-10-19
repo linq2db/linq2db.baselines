@@ -1,8 +1,8 @@
 ﻿-- PostgreSQL.18 PostgreSQL12
 SELECT
-	d."TransactionDate"::text::Date
+	d."TransactionDate"
 FROM
 	"Transactions" d
 WHERE
-	Floor(Extract(day From d."TransactionDate"::text::Date))::Int > 0
+	Floor(Extract(day From d."TransactionDate"))::Int > 0
 
