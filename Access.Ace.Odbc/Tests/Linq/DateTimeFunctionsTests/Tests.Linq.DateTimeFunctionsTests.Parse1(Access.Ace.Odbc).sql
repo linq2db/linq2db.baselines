@@ -1,8 +1,8 @@
 ﻿-- Access.Ace.Odbc AccessODBC
 SELECT
-	DateValue([d].[DateTimeValue])
+	DateValue(CDate(CStr([d].[DateTimeValue])))
 FROM
 	[LinqDataTypes] [d]
 WHERE
-	DatePart('d', [d].[DateTimeValue]) > 0
+	DatePart('d', CDate(CStr([d].[DateTimeValue]))) > 0
 
