@@ -1,8 +1,8 @@
 ﻿-- ClickHouse.Octonica ClickHouse
 SELECT
-	toDate32(toString(d.TransactionDate))
+	d.TransactionDate
 FROM
 	Transactions d
 WHERE
-	toDayOfMonth(toDate32(toString(d.TransactionDate))) > 0
+	toDayOfMonth(d.TransactionDate) > 0
 
