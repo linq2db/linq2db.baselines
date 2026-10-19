@@ -30,7 +30,7 @@ VALUES
 ALTER TABLE
 	LinqDataTypes
 UPDATE
-	SmallIntValue = toInt16(toDecimal128(toFloat64(MoneyValue) / (toFloat64(toDecimal128('13621', 10)) / IntValue), 10))
+	SmallIntValue = toInt16(toDecimal128(toFloat64(MoneyValue) / toFloat64(toDecimal128(toFloat64(toDecimal128('13621', 10)) / IntValue, 10)), 10))
 WHERE
 	ID = 100500
 

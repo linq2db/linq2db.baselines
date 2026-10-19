@@ -1,8 +1,8 @@
 ﻿-- ClickHouse.Driver ClickHouse
 SELECT
-	d.TransactionDate
+	toDate32(toString(d.TransactionDate))
 FROM
 	Transactions d
 WHERE
-	toDayOfMonth(d.TransactionDate) > 0
+	toDayOfMonth(toDate32(toString(d.TransactionDate))) > 0
 
