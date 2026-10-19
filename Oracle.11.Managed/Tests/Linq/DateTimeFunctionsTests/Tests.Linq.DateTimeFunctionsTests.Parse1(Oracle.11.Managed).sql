@@ -1,8 +1,8 @@
 ﻿-- Oracle.11.Managed Oracle11
 SELECT
-	TRUNC(d."DateTimeValue")
+	TRUNC(TO_TIMESTAMP(To_Char(d."DateTimeValue", 'YYYY-MM-DD HH24:MI:SS'), 'YYYY-MM-DD HH24:MI:SS'))
 FROM
 	"LinqDataTypes" d
 WHERE
-	EXTRACT(DAY FROM d."DateTimeValue") > 0
+	EXTRACT(DAY FROM TO_TIMESTAMP(To_Char(d."DateTimeValue", 'YYYY-MM-DD HH24:MI:SS'), 'YYYY-MM-DD HH24:MI:SS')) > 0
 
