@@ -1,8 +1,8 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
 SELECT
-	CAST(CAST([d].[TransactionDate] AS NVarChar(10)) AS Date)
+	[d].[TransactionDate]
 FROM
 	[Transactions] [d]
 WHERE
-	DatePart(day, CAST(CAST([d].[TransactionDate] AS NVarChar(10)) AS Date)) > 0
+	DatePart(day, [d].[TransactionDate]) > 0
 
