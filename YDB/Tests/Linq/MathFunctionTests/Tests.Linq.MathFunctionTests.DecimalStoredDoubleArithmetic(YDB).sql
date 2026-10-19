@@ -7,7 +7,7 @@ SELECT
 	Unwrap(CAST(r.L AS Double)) * Unwrap(CAST(r.L AS Double)) as LTimesL,
 	Unwrap(CAST(r.A AS Double)) * Unwrap(CAST(Decimal('2.5', 22, 9) AS Double)) as ATimes25,
 	Unwrap(CAST(r.A AS Double)) + r.F as APlusF,
-	Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(Math::NearbyInt(Unwrap(CAST(r.A AS Double)) * Unwrap(CAST(Decimal('10', 22, 9) AS Double)), Math::RoundToNearest()) AS Text)) AS Decimal(22,9))) AS Double)) / Unwrap(CAST(Decimal('10', 22, 9) AS Double)) as ARounded
+	Math::NearbyInt(Unwrap(CAST(r.A AS Double)) * Double('10'), Math::RoundToNearest()) / Double('10') as ARounded
 FROM
 	DecimalStoredDouble r
 ORDER BY
