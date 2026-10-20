@@ -3,8 +3,7 @@ SELECT
 	r.Id as Id,
 	r.F as F,
 	r.S as S,
-	r.B as B,
-	r.L as L
+	r.B as B
 FROM
 	TextRoundTripValue r
 ORDER BY
@@ -15,8 +14,7 @@ SELECT
 	t1.Id as Id,
 	t1.F as F,
 	t1.S as S,
-	t1.B as B,
-	t1.L as L
+	t1.B as B
 FROM
 	TextRoundTripValue t1
 
@@ -31,8 +29,7 @@ SELECT
 	t1.Id as Id,
 	t1.F as F,
 	t1.S as S,
-	t1.B as B,
-	t1.L as L
+	t1.B as B
 FROM
 	TextRoundTripValue t1
 
