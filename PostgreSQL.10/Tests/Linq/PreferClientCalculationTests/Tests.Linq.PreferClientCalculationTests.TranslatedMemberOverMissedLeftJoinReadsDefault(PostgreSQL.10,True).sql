@@ -13,9 +13,9 @@ SELECT
 	END,
 	Coalesce(j."Value1", 0)::text || '!',
 	Coalesce(j."Name", '') || '!',
-	Coalesce(j."Date", '0001-01-01'::date) + 10 * Interval '1 Day',
-	Floor(Extract(year From (Coalesce(j."Date", '0001-01-01'::date) + 10 * Interval '1 Day')))::Int,
-	Floor(Extract(day From (Coalesce(j."Date", '0001-01-01'::date) + 10 * Interval '1 Day')))::Int
+	j."Date" + 10 * Interval '1 Day',
+	Floor(Extract(year From (j."Date" + 10 * Interval '1 Day')))::Int,
+	Floor(Extract(day From (j."Date" + 10 * Interval '1 Day')))::Int
 FROM
 	"TranslatedMemberEntity" e
 		LEFT JOIN "TranslatedMemberEntity" j ON j."Id" = e."Id" + 1000
