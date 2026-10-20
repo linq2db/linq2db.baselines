@@ -7,9 +7,9 @@ SELECT
 	LEAST(Coalesce("j"."Value1", 0), -5),
 	CAST(Coalesce("j"."Value1", 0) AS NVarChar(11)) || '!',
 	Coalesce("j"."Name", '') || '!',
-	Add_Days(Coalesce("j"."Date", TIMESTAMP '0001-01-01 00:00:00.0000000'), 10),
-	Year(Add_Days(Coalesce("j"."Date", TIMESTAMP '0001-01-01 00:00:00.0000000'), 10)),
-	DayOfMonth(Add_Days(Coalesce("j"."Date", TIMESTAMP '0001-01-01 00:00:00.0000000'), 10))
+	Add_Days("j"."Date", 10),
+	Year(Add_Days("j"."Date", 10)),
+	DayOfMonth(Add_Days("j"."Date", 10))
 FROM
 	"TranslatedMemberEntity" "e"
 		LEFT JOIN "TranslatedMemberEntity" "j" ON "j"."Id" = "e"."Id" + 1000
