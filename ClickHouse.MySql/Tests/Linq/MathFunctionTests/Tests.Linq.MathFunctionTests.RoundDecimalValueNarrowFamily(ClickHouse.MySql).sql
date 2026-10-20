@@ -21,7 +21,9 @@ FROM
 
 -- ClickHouse.MySql ClickHouse
 SELECT
-	ROUND(toDecimal128('123456789.5', 2)) + r.D32
+	ROUND(toDecimal128('123456789.5', 2)) + r.D32,
+	ROUND(toDecimal128('12345678.5', 2)) + r.D32,
+	ROUND(toDecimal128('12345678901234567.5', 2)) + r.D64
 FROM
 	RoundValueNarrowFamily r
 ORDER BY
