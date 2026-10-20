@@ -16,8 +16,8 @@ UNION ALL
 SELECT
 	NULL::Int,
 	NULL::Decimal,
-	NULL::datetime year to fraction,
-	NULL::datetime year to fraction,
+	NULL::datetime year to fraction(5),
+	NULL::datetime year to fraction(5),
 	NULL::BOOLEAN,
 	NULL::Char(36),
 	NULL::SmallInt,

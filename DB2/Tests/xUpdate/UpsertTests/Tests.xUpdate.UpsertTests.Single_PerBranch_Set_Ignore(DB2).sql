@@ -6,9 +6,9 @@ SET     @Name = 'first'
 DECLARE @Version Integer(4) -- Int32
 SET     @Version = 1
 DECLARE @updateTime Timestamp(20) -- DateTime
-SET     @updateTime = '2026-01-01-12.00.00.000000'
+SET     @updateTime = CAST('2026-01-01-12.00.00.000000' AS TIMESTAMP(6))
 DECLARE @insertTime Timestamp(20) -- DateTime
-SET     @insertTime = '2026-01-01-10.00.00.000000'
+SET     @insertTime = CAST('2026-01-01-10.00.00.000000' AS TIMESTAMP(6))
 
 MERGE INTO "UpsertTest" "t1"
 USING (SELECT CAST(@Id AS Int) AS "Id" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
@@ -63,9 +63,9 @@ SET     @Name = 'second'
 DECLARE @Version Integer(4) -- Int32
 SET     @Version = 2
 DECLARE @updateTime Timestamp(20) -- DateTime
-SET     @updateTime = '2026-01-01-12.00.00.000000'
+SET     @updateTime = CAST('2026-01-01-12.00.00.000000' AS TIMESTAMP(6))
 DECLARE @insertTime Timestamp(20) -- DateTime
-SET     @insertTime = '2026-01-01-10.00.00.000000'
+SET     @insertTime = CAST('2026-01-01-10.00.00.000000' AS TIMESTAMP(6))
 
 MERGE INTO "UpsertTest" "t1"
 USING (SELECT CAST(@Id AS Int) AS "Id" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON

@@ -1,6 +1,6 @@
 ﻿-- DB2 DB2.LUW DB2LUW
 DECLARE @test Timestamp(20) -- DateTime
-SET     @test = '2026-06-06-02.01.01.000000'
+SET     @test = CAST('2026-06-06-02.01.01.000000' AS TIMESTAMP(6))
 
 UPDATE
 	"Issue5975Row" "t1"
