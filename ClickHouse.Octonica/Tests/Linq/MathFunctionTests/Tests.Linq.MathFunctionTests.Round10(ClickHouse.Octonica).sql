@@ -9,5 +9,5 @@ FROM
 			LinqDataTypes p
 	) t
 WHERE
-	t.c1 <> toDecimal64('0', 4) AND t.c1 <> toDecimal64('7', 4)
+	t.c1 <> toDecimal128('0', 10) AND t.c1 <> toDecimal128('7', 10)
 

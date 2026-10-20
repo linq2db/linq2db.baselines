@@ -9,5 +9,5 @@ FROM
 			LinqDataTypes p
 	) pp
 WHERE
-	pp.Value_1 <> toDecimal64('0', 4) AND pp.Value_1 <> toDecimal64('7', 4)
+	pp.Value_1 <> toDecimal128('0', 10) AND pp.Value_1 <> toDecimal128('7', 10)
 

@@ -12,5 +12,5 @@ FROM
 			LinqDataTypes p
 	) t
 WHERE
-	t.c1 <> toDecimal64('0', 4)
+	t.c1 <> toDecimal128('0', 10)
 
