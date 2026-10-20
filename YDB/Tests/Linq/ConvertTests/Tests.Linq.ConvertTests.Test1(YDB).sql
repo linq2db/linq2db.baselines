@@ -11,6 +11,6 @@ SELECT
 FROM
 	LinqDataTypes t
 WHERE
-	t.MoneyValue * t.ID = Decimal('1.11', 6, 2)
+	t.MoneyValue * t.ID = Decimal('1.11', 22, 9)
 LIMIT 2
 

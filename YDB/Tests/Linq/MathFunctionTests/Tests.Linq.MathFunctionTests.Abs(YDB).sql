@@ -9,5 +9,5 @@ FROM
 			LinqDataTypes p
 	) t
 WHERE
-	t.c1 > Decimal('0', 6, 2)
+	t.c1 > Decimal('0', 22, 9)
 

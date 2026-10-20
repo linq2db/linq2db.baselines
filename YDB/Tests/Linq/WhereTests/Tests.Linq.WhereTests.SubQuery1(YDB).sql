@@ -9,5 +9,5 @@ FROM
 			LinqDataTypes p
 	) pp
 WHERE
-	pp.Value_1 <> Decimal('0', 6, 2) AND pp.Value_1 <> Decimal('7', 6, 2)
+	pp.Value_1 <> Decimal('0', 22, 9) AND pp.Value_1 <> Decimal('7', 22, 9)
 
