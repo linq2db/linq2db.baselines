@@ -3,8 +3,7 @@ SELECT
 	"r"."Id",
 	"r"."F",
 	"r"."S",
-	"r"."B",
-	"r"."L"
+	"r"."B"
 FROM
 	"TextRoundTripValue" "r"
 ORDER BY
@@ -15,8 +14,7 @@ SELECT
 	"t1"."Id",
 	"t1"."F",
 	"t1"."S",
-	"t1"."B",
-	"t1"."L"
+	"t1"."B"
 FROM
 	"TextRoundTripValue" "t1"
 
@@ -31,8 +29,7 @@ SELECT
 	"t1"."Id",
 	"t1"."F",
 	"t1"."S",
-	"t1"."B",
-	"t1"."L"
+	"t1"."B"
 FROM
 	"TextRoundTripValue" "t1"
 
