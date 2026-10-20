@@ -13,9 +13,9 @@ SELECT
 	END,
 	CONCAT(CAST(Coalesce(`j`.`Value1`, 0) AS CHAR(11)), '!'),
 	CONCAT(Coalesce(`j`.`Name`, ''), '!'),
-	Date_Add(Coalesce(`j`.`Date`, '0001-01-01'), Interval 10 Day),
-	Extract(year from Date_Add(Coalesce(`j`.`Date`, '0001-01-01'), Interval 10 Day)),
-	Extract(day from Date_Add(Coalesce(`j`.`Date`, '0001-01-01'), Interval 10 Day))
+	Date_Add(`j`.`Date`, Interval 10 Day),
+	Extract(year from Date_Add(`j`.`Date`, Interval 10 Day)),
+	Extract(day from Date_Add(`j`.`Date`, Interval 10 Day))
 FROM
 	`TranslatedMemberEntity` `e`
 		LEFT JOIN `TranslatedMemberEntity` `j` ON `j`.`Id` = `e`.`Id` + 1000
