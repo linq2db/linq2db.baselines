@@ -7,9 +7,9 @@ SELECT
 	LEAST(Coalesce([j].[Value1], 0), -5),
 	CAST(Coalesce([j].[Value1], 0) AS NVarChar(11)) + N'!',
 	Coalesce([j].[Name], N'') + N'!',
-	DateAdd(day, 10, Coalesce([j].[Date], DATETIME2FROMPARTS(1, 1, 1, 0, 0, 0, 0, 7))),
-	DatePart(year, DateAdd(day, 10, Coalesce([j].[Date], DATETIME2FROMPARTS(1, 1, 1, 0, 0, 0, 0, 7)))),
-	DatePart(day, DateAdd(day, 10, Coalesce([j].[Date], DATETIME2FROMPARTS(1, 1, 1, 0, 0, 0, 0, 7))))
+	DateAdd(day, 10, [j].[Date]),
+	DatePart(year, DateAdd(day, 10, [j].[Date])),
+	DatePart(day, DateAdd(day, 10, [j].[Date]))
 FROM
 	[TranslatedMemberEntity] [e]
 		LEFT JOIN [TranslatedMemberEntity] [j] ON [j].[Id] = [e].[Id] + 1000
