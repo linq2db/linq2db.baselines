@@ -13,9 +13,9 @@ SELECT
 	END,
 	Coalesce("j"."Value1", 0) || '!',
 	Coalesce("j"."Name", '') || '!',
-	DateAdd(Day, 10, Coalesce("j"."Date", TIMESTAMP '0001-01-01 00:00:00.0000')),
-	Extract(year from DateAdd(Day, 10, Coalesce("j"."Date", TIMESTAMP '0001-01-01 00:00:00.0000'))),
-	Extract(day from DateAdd(Day, 10, Coalesce("j"."Date", TIMESTAMP '0001-01-01 00:00:00.0000')))
+	DateAdd(Day, 10, "j"."Date"),
+	Extract(year from DateAdd(Day, 10, "j"."Date")),
+	Extract(day from DateAdd(Day, 10, "j"."Date"))
 FROM
 	"TranslatedMemberEntity" "e"
 		LEFT JOIN "TranslatedMemberEntity" "j" ON "j"."Id" = "e"."Id" + 1000
