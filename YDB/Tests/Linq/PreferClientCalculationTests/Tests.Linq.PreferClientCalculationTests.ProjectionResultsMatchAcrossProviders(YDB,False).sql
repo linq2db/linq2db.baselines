@@ -62,3 +62,19 @@ SELECT
 FROM
 	ClientCalcEntity t1
 
+-- YDB Ydb
+SELECT
+	e.Id as Id,
+	Coalesce(e.Name, ''u) || ' 'u || Coalesce(e.Name, ''u) as Cat
+FROM
+	ClientCalcEntity e
+
+-- YDB Ydb
+SELECT
+	t1.Id as Id,
+	t1.Value1 as Value1,
+	t1.Value2 as Value2,
+	t1.Name as Name
+FROM
+	ClientCalcEntity t1
+
