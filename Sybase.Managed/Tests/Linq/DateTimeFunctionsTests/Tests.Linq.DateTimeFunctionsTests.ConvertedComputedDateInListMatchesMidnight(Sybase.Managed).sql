@@ -7,5 +7,5 @@ SELECT
 FROM
 	[ConvertedDayPairRow] [r]
 WHERE
-	CAST(Coalesce([r].[ClosedOn], [r].[OpenedOn]) AS DateTime) IN (CAST(@CoarseMidnight AS DateTime))
+	CAST(Coalesce([r].[ClosedOn], [r].[OpenedOn]) AS DateTime) IN (@CoarseMidnight)
 
