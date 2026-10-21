@@ -27,6 +27,14 @@ FROM
 
 -- YDB Ydb
 SELECT
+	t1.Id as Id,
+	t1.G as G_1,
+	t1.D as D
+FROM
+	RoundComputed t1
+
+-- YDB Ydb
+SELECT
 	Unwrap(CAST(CASE
 		WHEN Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(r.D * r.D AS Decimal(35,22))) AS Decimal(35,0))) AS Decimal(35,22))) - Unwrap(CAST(r.D * r.D AS Decimal(35,22))) = Decimal('-0.5', 35, 22) AND Unwrap(CAST(r.D * r.D AS Decimal(35,22))) > Decimal('0', 35, 22)
 			THEN Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(r.D * r.D AS Decimal(35,22))) AS Decimal(35,0))) + Decimal('1', 35, 0) AS Decimal(35,22)))
@@ -38,4 +46,12 @@ FROM
 	RoundComputed r
 ORDER BY
 	r.Id
+
+-- YDB Ydb
+SELECT
+	t1.Id as Id,
+	t1.G as G_1,
+	t1.D as D
+FROM
+	RoundComputed t1
 
