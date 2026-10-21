@@ -11,7 +11,7 @@ SELECT
 	r."MaxCapacity" - r."Quantity" as "FreeCapacity",
 	COALESCE(CAST(vpcc."PeriodOrderLimit" AS Int),0) as "MaxCapacity_1",
 	vsopc."Quantity" as "Quantity_1",
-	COALESCE(CAST(vpcc."PeriodOrderLimit" AS Int),0) - vsopc."Quantity" as "FreeCapacity_1"
+	COALESCE(CAST(vpcc."PeriodOrderLimit" AS Int),0) - Coalesce(vsopc."Quantity", 0) as "FreeCapacity_1"
 FROM
 	(
 		SELECT
