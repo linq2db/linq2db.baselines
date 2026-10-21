@@ -20,25 +20,3 @@ SELECT
 FROM
 	WideDecimalRow r_1
 
--- DuckDB
-SELECT
-	Abs(r."Value")
-FROM
-	WideDecimalRow r
-UNION ALL
-SELECT
-	CAST(1.00000000000000005 AS DECIMAL(18, 17))
-FROM
-	WideDecimalRow r_1
-
--- DuckDB
-SELECT
-	CAST(1.00000000000000005 AS DECIMAL(18, 17))
-FROM
-	WideDecimalRow r
-UNION ALL
-SELECT
-	Abs(r_1."Value")
-FROM
-	WideDecimalRow r_1
-

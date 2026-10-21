@@ -1,6 +1,6 @@
 ﻿-- DB2 DB2.LUW DB2LUW
 DECLARE @bound Date(20)
-SET     @bound = '2000-01-01-00.00.00.000000'
+SET     @bound = CAST('2000-01-01-00.00.00.000000' AS TIMESTAMP(6))
 
 SELECT
 	"e"."Id",

@@ -1,0 +1,11 @@
+﻿-- DuckDB
+SELECT
+	Abs(r."Value")
+FROM
+	WideDecimalRow r
+UNION ALL
+SELECT
+	CAST(1.00000000000000005 AS DECIMAL(18, 17))
+FROM
+	WideDecimalRow r_1
+
