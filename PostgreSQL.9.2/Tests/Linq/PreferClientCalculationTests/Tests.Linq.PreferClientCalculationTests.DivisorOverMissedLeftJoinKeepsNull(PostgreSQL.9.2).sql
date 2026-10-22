@@ -1,7 +1,7 @@
 ﻿-- PostgreSQL.9.2 PostgreSQL
 SELECT
 	e."Value1" / j."Value1",
-	(e."Value1"::decimal % j."Value1")::decimal,
+	Floor(e."Value1"::decimal % j."Value1")::Int,
 	e."Dbl" / j."Dbl",
 	e."Value1" / (j."Value1" * 2)
 FROM
