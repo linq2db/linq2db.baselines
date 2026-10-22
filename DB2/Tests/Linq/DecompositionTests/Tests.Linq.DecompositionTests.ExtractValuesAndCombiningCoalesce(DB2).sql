@@ -24,24 +24,24 @@ FROM
 
 -- DB2 DB2.LUW DB2LUW
 SELECT
-	"x_1"."Color_1",
+	"x_1"."c2",
 	"x_1"."Kind",
 	"x_1"."ItemCode",
-	"x_1"."Color_3",
+	"x_1"."Color",
 	"x_1"."ItemCode_2",
 	"x_1"."Style_1",
-	"x_1"."Color_4",
+	"x_1"."c4",
 	"x_1"."ItemCode_1",
 	"x_1"."ItemCode_3"
 FROM
 	(
 		SELECT
-			CAST("x"."Kind" = 1 OR "x"."Kind" = 2 AS smallint) as "Color",
-			CAST("x"."Kind" = 1 OR "x"."Kind" = 2 AS smallint) as "Color_1",
-			CAST("x"."Kind" = 1 AS smallint) as "Color_2",
+			CAST("x"."Kind" = 1 OR "x"."Kind" = 2 AS smallint) as "c1",
+			CAST("x"."Kind" = 1 OR "x"."Kind" = 2 AS smallint) as "c2",
+			CAST("x"."Kind" = 1 AS smallint) as "c3",
 			Substr("x"."ItemCode", 1, 2) as "ItemCode",
-			"x"."Color" as "Color_3",
-			CAST("x"."Kind" = 1 OR "x"."Kind" = 3 AS smallint) as "Color_4",
+			"x"."Color",
+			CAST("x"."Kind" = 1 OR "x"."Kind" = 3 AS smallint) as "c4",
 			Substr("x"."ItemCode", 5, 2) as "ItemCode_1",
 			"x"."Kind",
 			Substr("x"."ItemCode", 3, 2) as "ItemCode_2",
@@ -51,7 +51,7 @@ FROM
 			"Item" "x"
 	) "x_1"
 WHERE
-	NOT ("x_1"."Color" AND ("x_1"."Color_1" AND "x_1"."Color_2" OR NOT "x_1"."Color_1") OR NOT "x_1"."Color" AND NOT "x_1"."Color_4")
+	NOT ("x_1"."c1" AND ("x_1"."c2" AND "x_1"."c3" OR NOT "x_1"."c2") OR NOT "x_1"."c1" AND NOT "x_1"."c4")
 
 -- DB2 DB2.LUW DB2LUW
 SELECT
@@ -65,24 +65,24 @@ FROM
 
 -- DB2 DB2.LUW DB2LUW
 SELECT
-	"x_1"."Color_1",
+	"x_1"."c2",
 	"x_1"."Kind",
 	"x_1"."ItemCode",
-	"x_1"."Color_3",
+	"x_1"."Color",
 	"x_1"."ItemCode_2",
 	"x_1"."Style_1",
-	"x_1"."Color_4",
+	"x_1"."c4",
 	"x_1"."ItemCode_1",
 	"x_1"."ItemCode_3"
 FROM
 	(
 		SELECT
-			CAST("x"."Kind" = 1 OR "x"."Kind" = 2 AS smallint) as "Color",
-			CAST("x"."Kind" = 1 OR "x"."Kind" = 2 AS smallint) as "Color_1",
-			CAST("x"."Kind" = 1 AS smallint) as "Color_2",
+			CAST("x"."Kind" = 1 OR "x"."Kind" = 2 AS smallint) as "c1",
+			CAST("x"."Kind" = 1 OR "x"."Kind" = 2 AS smallint) as "c2",
+			CAST("x"."Kind" = 1 AS smallint) as "c3",
 			Substr("x"."ItemCode", 1, 2) as "ItemCode",
-			"x"."Color" as "Color_3",
-			CAST("x"."Kind" = 1 OR "x"."Kind" = 3 AS smallint) as "Color_4",
+			"x"."Color",
+			CAST("x"."Kind" = 1 OR "x"."Kind" = 3 AS smallint) as "c4",
 			Substr("x"."ItemCode", 5, 2) as "ItemCode_1",
 			"x"."Kind",
 			Substr("x"."ItemCode", 3, 2) as "ItemCode_2",
@@ -92,8 +92,8 @@ FROM
 			"Item" "x"
 	) "x_1"
 WHERE
-	"x_1"."Color" AND ("x_1"."Color_1" AND "x_1"."Color_2" OR NOT "x_1"."Color_1") OR
-	NOT "x_1"."Color" AND NOT "x_1"."Color_4"
+	"x_1"."c1" AND ("x_1"."c2" AND "x_1"."c3" OR NOT "x_1"."c2") OR
+	NOT "x_1"."c1" AND NOT "x_1"."c4"
 
 -- DB2 DB2.LUW DB2LUW
 SELECT
@@ -107,24 +107,24 @@ FROM
 
 -- DB2 DB2.LUW DB2LUW
 SELECT
-	"x_1"."Size_2",
+	"x_1"."c2",
 	"x_1"."Kind",
 	"x_1"."ItemCode_2",
 	"x_1"."Color",
 	"x_1"."ItemCode",
 	"x_1"."Style_1",
-	"x_1"."Size_3",
+	"x_1"."c3",
 	"x_1"."ItemCode_3",
 	"x_1"."ItemCode_1"
 FROM
 	(
 		SELECT
-			CAST("x"."Kind" = 1 OR "x"."Kind" = 2 AS smallint) as "Size_1",
-			CAST("x"."Kind" = 1 OR "x"."Kind" = 2 AS smallint) as "Size_2",
+			CAST("x"."Kind" = 1 OR "x"."Kind" = 2 AS smallint) as "c1",
+			CAST("x"."Kind" = 1 OR "x"."Kind" = 2 AS smallint) as "c2",
 			Substr("x"."ItemCode", 3, 2) as "ItemCode",
 			"x"."Style" as "Style_1",
-			CAST("x"."Kind" = 1 OR "x"."Kind" = 3 AS smallint) as "Size_3",
-			CAST("x"."Kind" = 1 AS smallint) as "Size_4",
+			CAST("x"."Kind" = 1 OR "x"."Kind" = 3 AS smallint) as "c3",
+			CAST("x"."Kind" = 1 AS smallint) as "c4",
 			Substr("x"."ItemCode", 7, 2) as "ItemCode_1",
 			"x"."Kind",
 			Substr("x"."ItemCode", 1, 2) as "ItemCode_2",
@@ -134,7 +134,7 @@ FROM
 			"Item" "x"
 	) "x_1"
 WHERE
-	NOT (NOT "x_1"."Size_1" AND ("x_1"."Size_3" AND "x_1"."Size_4" OR NOT "x_1"."Size_3"))
+	NOT (NOT "x_1"."c1" AND ("x_1"."c3" AND "x_1"."c4" OR NOT "x_1"."c3"))
 
 -- DB2 DB2.LUW DB2LUW
 SELECT
@@ -148,24 +148,24 @@ FROM
 
 -- DB2 DB2.LUW DB2LUW
 SELECT
-	"x_1"."Size_2",
+	"x_1"."c2",
 	"x_1"."Kind",
 	"x_1"."ItemCode_2",
 	"x_1"."Color",
 	"x_1"."ItemCode",
 	"x_1"."Style_1",
-	"x_1"."Size_3",
+	"x_1"."c3",
 	"x_1"."ItemCode_3",
 	"x_1"."ItemCode_1"
 FROM
 	(
 		SELECT
-			CAST("x"."Kind" = 1 OR "x"."Kind" = 2 AS smallint) as "Size_1",
-			CAST("x"."Kind" = 1 OR "x"."Kind" = 2 AS smallint) as "Size_2",
+			CAST("x"."Kind" = 1 OR "x"."Kind" = 2 AS smallint) as "c1",
+			CAST("x"."Kind" = 1 OR "x"."Kind" = 2 AS smallint) as "c2",
 			Substr("x"."ItemCode", 3, 2) as "ItemCode",
 			"x"."Style" as "Style_1",
-			CAST("x"."Kind" = 1 OR "x"."Kind" = 3 AS smallint) as "Size_3",
-			CAST("x"."Kind" = 1 AS smallint) as "Size_4",
+			CAST("x"."Kind" = 1 OR "x"."Kind" = 3 AS smallint) as "c3",
+			CAST("x"."Kind" = 1 AS smallint) as "c4",
 			Substr("x"."ItemCode", 7, 2) as "ItemCode_1",
 			"x"."Kind",
 			Substr("x"."ItemCode", 1, 2) as "ItemCode_2",
@@ -175,7 +175,7 @@ FROM
 			"Item" "x"
 	) "x_1"
 WHERE
-	NOT "x_1"."Size_1" AND ("x_1"."Size_3" AND "x_1"."Size_4" OR NOT "x_1"."Size_3")
+	NOT "x_1"."c1" AND ("x_1"."c3" AND "x_1"."c4" OR NOT "x_1"."c3")
 
 -- DB2 DB2.LUW DB2LUW
 SELECT

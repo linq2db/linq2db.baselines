@@ -1,18 +1,18 @@
 ﻿-- DB2 DB2.LUW DB2LUW
 SELECT
-	"x"."Color",
+	"x"."c1",
 	"x"."Kind",
 	"x"."ItemCode",
-	"x"."Color_2",
+	"x"."Color",
 	"x"."ItemCode_1",
 	"x"."Style_1"
 FROM
 	(
 		SELECT
-			CAST("i"."Kind" = 1 OR "i"."Kind" = 2 AS smallint) as "Color",
-			CAST("i"."Kind" = 1 AS smallint) as "Color_1",
+			CAST("i"."Kind" = 1 OR "i"."Kind" = 2 AS smallint) as "c1",
+			CAST("i"."Kind" = 1 AS smallint) as "c2",
 			Substr("i"."ItemCode", 1, 2) as "ItemCode",
-			"i"."Color" as "Color_2",
+			"i"."Color",
 			"i"."Kind",
 			Substr("i"."ItemCode", 3, 2) as "ItemCode_1",
 			"i"."Style" as "Style_1"
@@ -22,7 +22,7 @@ FROM
 			"i"."Kind" = 1 OR "i"."Kind" = 2
 	) "x"
 WHERE
-	NOT ("x"."Color" AND "x"."Color_1" OR NOT "x"."Color")
+	NOT ("x"."c1" AND "x"."c2" OR NOT "x"."c1")
 
 -- DB2 DB2.LUW DB2LUW
 SELECT
@@ -36,18 +36,18 @@ FROM
 
 -- DB2 DB2.LUW DB2LUW
 SELECT
-	"x"."Color",
+	"x"."c1",
 	"x"."ItemCode",
-	"x"."Color_1",
+	"x"."Color",
 	"x"."Kind",
 	"x"."ItemCode_1",
 	"x"."Style_1"
 FROM
 	(
 		SELECT
-			CAST("i"."Kind" = 1 OR "i"."Kind" = 3 AS smallint) as "Color",
+			CAST("i"."Kind" = 1 OR "i"."Kind" = 3 AS smallint) as "c1",
 			Substr("i"."ItemCode", 5, 2) as "ItemCode",
-			"i"."Color" as "Color_1",
+			"i"."Color",
 			"i"."Kind",
 			Substr("i"."ItemCode", 7, 2) as "ItemCode_1",
 			"i"."Style" as "Style_1"
@@ -57,7 +57,7 @@ FROM
 			"i"."Kind" = 1 OR "i"."Kind" = 3
 	) "x"
 WHERE
-	"x"."Color"
+	"x"."c1"
 
 -- DB2 DB2.LUW DB2LUW
 SELECT
@@ -71,8 +71,8 @@ FROM
 
 -- DB2 DB2.LUW DB2LUW
 SELECT
-	"t1"."Top",
-	"t1"."Color",
+	"t1"."c1",
+	"t1"."c2",
 	"t1"."ItemCode",
 	"t1"."Name",
 	CAST(NULL AS NVarChar(255)),
@@ -85,20 +85,20 @@ SELECT
 FROM
 	(
 		SELECT
-			CAST("t"."Kind" = 1 OR "t"."Kind" = 2 AS smallint) as "Top",
+			CAST("t"."Kind" = 1 OR "t"."Kind" = 2 AS smallint) as "c1",
 			Substr("t"."ItemCode", 1, 2) as "ItemCode",
 			"t"."Color" as "Name",
 			Substr("t"."ItemCode", 3, 2) as "ItemCode_1",
 			"t"."Style" as "Name_1",
-			CAST("t"."Kind" = 1 AS smallint) as "Color"
+			CAST("t"."Kind" = 1 AS smallint) as "c2"
 		FROM
 			"Item" "t"
 	) "t1"
 WHERE
-	"t1"."Top"
+	"t1"."c1"
 UNION ALL
 SELECT
-	"t2"."Bottom",
+	"t2"."c1",
 	CAST(NULL AS smallint),
 	CAST(NULL AS NVarChar(255)),
 	CAST(NULL AS NVarChar(255)),
@@ -106,23 +106,23 @@ SELECT
 	"t2"."Color",
 	CAST(NULL AS NVarChar(255)),
 	CAST(NULL AS NVarChar(255)),
-	"t2"."Size_1",
+	"t2"."c2",
 	"t2"."ItemCode_1",
 	"t2"."Style_1"
 FROM
 	(
 		SELECT
-			CAST("t_1"."Kind" = 1 OR "t_1"."Kind" = 3 AS smallint) as "Bottom",
+			CAST("t_1"."Kind" = 1 OR "t_1"."Kind" = 3 AS smallint) as "c1",
 			Substr("t_1"."ItemCode", 5, 2) as "ItemCode",
 			"t_1"."Color",
 			Substr("t_1"."ItemCode", 7, 2) as "ItemCode_1",
 			"t_1"."Style" as "Style_1",
-			CAST("t_1"."Kind" = 1 AS smallint) as "Size_1"
+			CAST("t_1"."Kind" = 1 AS smallint) as "c2"
 		FROM
 			"Item" "t_1"
 	) "t2"
 WHERE
-	"t2"."Bottom"
+	"t2"."c1"
 
 -- DB2 DB2.LUW DB2LUW
 SELECT
@@ -136,75 +136,75 @@ FROM
 
 -- DB2 DB2.LUW DB2LUW
 SELECT
-	"x_1"."Color",
-	"x_1"."Color_1",
+	"x_1"."c1",
+	"x_1"."c2",
 	"x_1"."ItemCode",
 	"x_1"."Name",
 	"x_1"."ItemCode_2",
 	"x_1"."Name_2",
 	"x_1"."ItemCode_1",
 	"x_1"."Name_1",
-	"x_1"."Size_1",
+	"x_1"."c3",
 	"x_1"."ItemCode_3",
 	"x_1"."Name_3"
 FROM
 	(
 		SELECT
-			"x"."Top" as "Color",
-			"x"."Color_1",
+			"x"."c1",
+			"x"."c2",
 			"x"."ItemCode",
 			"x"."Color" as "Name",
 			"x"."ItemCode_1",
 			"x"."Style_1" as "Name_1",
 			CAST(NULL AS NVarChar(255)) as "ItemCode_2",
 			CAST(NULL AS NVarChar(255)) as "Name_2",
-			CAST(NULL AS smallint) as "Size_1",
+			CAST(NULL AS smallint) as "c3",
 			CAST(NULL AS NVarChar(255)) as "ItemCode_3",
 			CAST(NULL AS NVarChar(255)) as "Name_3"
 		FROM
 			(
 				SELECT
-					CAST("t"."Kind" = 1 OR "t"."Kind" = 2 AS smallint) as "Top",
+					CAST("t"."Kind" = 1 OR "t"."Kind" = 2 AS smallint) as "c1",
 					Substr("t"."ItemCode", 1, 2) as "ItemCode",
 					"t"."Color",
 					Substr("t"."ItemCode", 3, 2) as "ItemCode_1",
 					"t"."Style" as "Style_1",
-					CAST("t"."Kind" = 1 AS smallint) as "Color_1"
+					CAST("t"."Kind" = 1 AS smallint) as "c2"
 				FROM
 					"Item" "t"
 			) "x"
 		WHERE
-			"x"."Top"
+			"x"."c1"
 		UNION ALL
 		SELECT
-			"t1"."Bottom" as "Color",
-			CAST(NULL AS smallint) as "Color_1",
+			"t1"."c1",
+			CAST(NULL AS smallint) as "c2",
 			CAST(NULL AS NVarChar(255)) as "ItemCode",
 			CAST(NULL AS NVarChar(255)) as "Name",
 			CAST(NULL AS NVarChar(255)) as "ItemCode_1",
 			CAST(NULL AS NVarChar(255)) as "Name_1",
 			"t1"."ItemCode" as "ItemCode_2",
 			"t1"."Color" as "Name_2",
-			"t1"."Size_1",
+			"t1"."c2" as "c3",
 			"t1"."ItemCode_1" as "ItemCode_3",
 			"t1"."Style_1" as "Name_3"
 		FROM
 			(
 				SELECT
-					CAST("t_1"."Kind" = 1 OR "t_1"."Kind" = 3 AS smallint) as "Bottom",
+					CAST("t_1"."Kind" = 1 OR "t_1"."Kind" = 3 AS smallint) as "c1",
 					Substr("t_1"."ItemCode", 5, 2) as "ItemCode",
 					"t_1"."Color",
 					Substr("t_1"."ItemCode", 7, 2) as "ItemCode_1",
 					"t_1"."Style" as "Style_1",
-					CAST("t_1"."Kind" = 1 AS smallint) as "Size_1"
+					CAST("t_1"."Kind" = 1 AS smallint) as "c2"
 				FROM
 					"Item" "t_1"
 			) "t1"
 		WHERE
-			"t1"."Bottom"
+			"t1"."c1"
 	) "x_1"
 WHERE
-	NOT ("x_1"."Color" AND "x_1"."Color_1" IS NOT NULL AND "x_1"."Color_1" OR NOT "x_1"."Color")
+	NOT ("x_1"."c1" AND "x_1"."c2" IS NOT NULL AND "x_1"."c2" OR NOT "x_1"."c1")
 
 -- DB2 DB2.LUW DB2LUW
 SELECT
@@ -218,76 +218,76 @@ FROM
 
 -- DB2 DB2.LUW DB2LUW
 SELECT
-	"x_1"."Color",
-	"x_1"."Color_1",
+	"x_1"."c1",
+	"x_1"."c2",
 	"x_1"."ItemCode",
 	"x_1"."Name",
 	"x_1"."ItemCode_2",
 	"x_1"."Name_2",
 	"x_1"."ItemCode_1",
 	"x_1"."Name_1",
-	"x_1"."Size_1",
+	"x_1"."c3",
 	"x_1"."ItemCode_3",
 	"x_1"."Name_3"
 FROM
 	(
 		SELECT
-			"x"."Top" as "Color",
-			"x"."Color_1",
+			"x"."c1",
+			"x"."c2",
 			"x"."ItemCode",
 			"x"."Color" as "Name",
 			"x"."ItemCode_1",
 			"x"."Style_1" as "Name_1",
 			CAST(NULL AS NVarChar(255)) as "ItemCode_2",
 			CAST(NULL AS NVarChar(255)) as "Name_2",
-			CAST(NULL AS smallint) as "Size_1",
+			CAST(NULL AS smallint) as "c3",
 			CAST(NULL AS NVarChar(255)) as "ItemCode_3",
 			CAST(NULL AS NVarChar(255)) as "Name_3"
 		FROM
 			(
 				SELECT
-					CAST("t"."Kind" = 1 OR "t"."Kind" = 2 AS smallint) as "Top",
+					CAST("t"."Kind" = 1 OR "t"."Kind" = 2 AS smallint) as "c1",
 					Substr("t"."ItemCode", 1, 2) as "ItemCode",
 					"t"."Color",
 					Substr("t"."ItemCode", 3, 2) as "ItemCode_1",
 					"t"."Style" as "Style_1",
-					CAST("t"."Kind" = 1 AS smallint) as "Color_1"
+					CAST("t"."Kind" = 1 AS smallint) as "c2"
 				FROM
 					"Item" "t"
 			) "x"
 		WHERE
-			"x"."Top"
+			"x"."c1"
 		UNION ALL
 		SELECT
-			"t1"."Bottom" as "Color",
-			CAST(NULL AS smallint) as "Color_1",
+			"t1"."c1",
+			CAST(NULL AS smallint) as "c2",
 			CAST(NULL AS NVarChar(255)) as "ItemCode",
 			CAST(NULL AS NVarChar(255)) as "Name",
 			CAST(NULL AS NVarChar(255)) as "ItemCode_1",
 			CAST(NULL AS NVarChar(255)) as "Name_1",
 			"t1"."ItemCode" as "ItemCode_2",
 			"t1"."Color" as "Name_2",
-			"t1"."Size_1",
+			"t1"."c2" as "c3",
 			"t1"."ItemCode_1" as "ItemCode_3",
 			"t1"."Style_1" as "Name_3"
 		FROM
 			(
 				SELECT
-					CAST("t_1"."Kind" = 1 OR "t_1"."Kind" = 3 AS smallint) as "Bottom",
+					CAST("t_1"."Kind" = 1 OR "t_1"."Kind" = 3 AS smallint) as "c1",
 					Substr("t_1"."ItemCode", 5, 2) as "ItemCode",
 					"t_1"."Color",
 					Substr("t_1"."ItemCode", 7, 2) as "ItemCode_1",
 					"t_1"."Style" as "Style_1",
-					CAST("t_1"."Kind" = 1 AS smallint) as "Size_1"
+					CAST("t_1"."Kind" = 1 AS smallint) as "c2"
 				FROM
 					"Item" "t_1"
 			) "t1"
 		WHERE
-			"t1"."Bottom"
+			"t1"."c1"
 	) "x_1"
 WHERE
-	"x_1"."Color" AND "x_1"."Color_1" IS NOT NULL AND "x_1"."Color_1" OR
-	NOT "x_1"."Color"
+	"x_1"."c1" AND "x_1"."c2" IS NOT NULL AND "x_1"."c2" OR
+	NOT "x_1"."c1"
 
 -- DB2 DB2.LUW DB2LUW
 SELECT
@@ -301,75 +301,75 @@ FROM
 
 -- DB2 DB2.LUW DB2LUW
 SELECT
-	"x_1"."Size_1",
-	"x_1"."Color",
+	"x_1"."c1",
+	"x_1"."c2",
 	"x_1"."ItemCode",
 	"x_1"."Name",
 	"x_1"."ItemCode_2",
 	"x_1"."Name_2",
 	"x_1"."ItemCode_1",
 	"x_1"."Name_1",
-	"x_1"."Size_2",
+	"x_1"."c3",
 	"x_1"."ItemCode_3",
 	"x_1"."Name_3"
 FROM
 	(
 		SELECT
-			"x"."Top" as "Size_1",
-			"x"."Color_1" as "Color",
+			"x"."c1",
+			"x"."c2",
 			"x"."ItemCode",
 			"x"."Color" as "Name",
 			"x"."ItemCode_1",
 			"x"."Style_1" as "Name_1",
 			CAST(NULL AS NVarChar(255)) as "ItemCode_2",
 			CAST(NULL AS NVarChar(255)) as "Name_2",
-			CAST(NULL AS smallint) as "Size_2",
+			CAST(NULL AS smallint) as "c3",
 			CAST(NULL AS NVarChar(255)) as "ItemCode_3",
 			CAST(NULL AS NVarChar(255)) as "Name_3"
 		FROM
 			(
 				SELECT
-					CAST("t"."Kind" = 1 OR "t"."Kind" = 2 AS smallint) as "Top",
+					CAST("t"."Kind" = 1 OR "t"."Kind" = 2 AS smallint) as "c1",
 					Substr("t"."ItemCode", 1, 2) as "ItemCode",
 					"t"."Color",
 					Substr("t"."ItemCode", 3, 2) as "ItemCode_1",
 					"t"."Style" as "Style_1",
-					CAST("t"."Kind" = 1 AS smallint) as "Color_1"
+					CAST("t"."Kind" = 1 AS smallint) as "c2"
 				FROM
 					"Item" "t"
 			) "x"
 		WHERE
-			"x"."Top"
+			"x"."c1"
 		UNION ALL
 		SELECT
-			"t1"."Bottom" as "Size_1",
-			CAST(NULL AS smallint) as "Color",
+			"t1"."c1",
+			CAST(NULL AS smallint) as "c2",
 			CAST(NULL AS NVarChar(255)) as "ItemCode",
 			CAST(NULL AS NVarChar(255)) as "Name",
 			CAST(NULL AS NVarChar(255)) as "ItemCode_1",
 			CAST(NULL AS NVarChar(255)) as "Name_1",
 			"t1"."ItemCode" as "ItemCode_2",
 			"t1"."Color" as "Name_2",
-			"t1"."Size_1" as "Size_2",
+			"t1"."c2" as "c3",
 			"t1"."ItemCode_1" as "ItemCode_3",
 			"t1"."Style_1" as "Name_3"
 		FROM
 			(
 				SELECT
-					CAST("t_1"."Kind" = 1 OR "t_1"."Kind" = 3 AS smallint) as "Bottom",
+					CAST("t_1"."Kind" = 1 OR "t_1"."Kind" = 3 AS smallint) as "c1",
 					Substr("t_1"."ItemCode", 5, 2) as "ItemCode",
 					"t_1"."Color",
 					Substr("t_1"."ItemCode", 7, 2) as "ItemCode_1",
 					"t_1"."Style" as "Style_1",
-					CAST("t_1"."Kind" = 1 AS smallint) as "Size_1"
+					CAST("t_1"."Kind" = 1 AS smallint) as "c2"
 				FROM
 					"Item" "t_1"
 			) "t1"
 		WHERE
-			"t1"."Bottom"
+			"t1"."c1"
 	) "x_1"
 WHERE
-	NOT ("x_1"."Size_1" AND "x_1"."Color" IS NULL AND "x_1"."Size_2" OR NOT "x_1"."Size_1")
+	NOT ("x_1"."c1" AND "x_1"."c2" IS NULL AND "x_1"."c3" OR NOT "x_1"."c1")
 
 -- DB2 DB2.LUW DB2LUW
 SELECT
@@ -383,76 +383,76 @@ FROM
 
 -- DB2 DB2.LUW DB2LUW
 SELECT
-	"x_1"."Size_1",
-	"x_1"."Color",
+	"x_1"."c1",
+	"x_1"."c2",
 	"x_1"."ItemCode",
 	"x_1"."Name",
 	"x_1"."ItemCode_2",
 	"x_1"."Name_2",
 	"x_1"."ItemCode_1",
 	"x_1"."Name_1",
-	"x_1"."Size_2",
+	"x_1"."c3",
 	"x_1"."ItemCode_3",
 	"x_1"."Name_3"
 FROM
 	(
 		SELECT
-			"x"."Top" as "Size_1",
-			"x"."Color_1" as "Color",
+			"x"."c1",
+			"x"."c2",
 			"x"."ItemCode",
 			"x"."Color" as "Name",
 			"x"."ItemCode_1",
 			"x"."Style_1" as "Name_1",
 			CAST(NULL AS NVarChar(255)) as "ItemCode_2",
 			CAST(NULL AS NVarChar(255)) as "Name_2",
-			CAST(NULL AS smallint) as "Size_2",
+			CAST(NULL AS smallint) as "c3",
 			CAST(NULL AS NVarChar(255)) as "ItemCode_3",
 			CAST(NULL AS NVarChar(255)) as "Name_3"
 		FROM
 			(
 				SELECT
-					CAST("t"."Kind" = 1 OR "t"."Kind" = 2 AS smallint) as "Top",
+					CAST("t"."Kind" = 1 OR "t"."Kind" = 2 AS smallint) as "c1",
 					Substr("t"."ItemCode", 1, 2) as "ItemCode",
 					"t"."Color",
 					Substr("t"."ItemCode", 3, 2) as "ItemCode_1",
 					"t"."Style" as "Style_1",
-					CAST("t"."Kind" = 1 AS smallint) as "Color_1"
+					CAST("t"."Kind" = 1 AS smallint) as "c2"
 				FROM
 					"Item" "t"
 			) "x"
 		WHERE
-			"x"."Top"
+			"x"."c1"
 		UNION ALL
 		SELECT
-			"t1"."Bottom" as "Size_1",
-			CAST(NULL AS smallint) as "Color",
+			"t1"."c1",
+			CAST(NULL AS smallint) as "c2",
 			CAST(NULL AS NVarChar(255)) as "ItemCode",
 			CAST(NULL AS NVarChar(255)) as "Name",
 			CAST(NULL AS NVarChar(255)) as "ItemCode_1",
 			CAST(NULL AS NVarChar(255)) as "Name_1",
 			"t1"."ItemCode" as "ItemCode_2",
 			"t1"."Color" as "Name_2",
-			"t1"."Size_1" as "Size_2",
+			"t1"."c2" as "c3",
 			"t1"."ItemCode_1" as "ItemCode_3",
 			"t1"."Style_1" as "Name_3"
 		FROM
 			(
 				SELECT
-					CAST("t_1"."Kind" = 1 OR "t_1"."Kind" = 3 AS smallint) as "Bottom",
+					CAST("t_1"."Kind" = 1 OR "t_1"."Kind" = 3 AS smallint) as "c1",
 					Substr("t_1"."ItemCode", 5, 2) as "ItemCode",
 					"t_1"."Color",
 					Substr("t_1"."ItemCode", 7, 2) as "ItemCode_1",
 					"t_1"."Style" as "Style_1",
-					CAST("t_1"."Kind" = 1 AS smallint) as "Size_1"
+					CAST("t_1"."Kind" = 1 AS smallint) as "c2"
 				FROM
 					"Item" "t_1"
 			) "t1"
 		WHERE
-			"t1"."Bottom"
+			"t1"."c1"
 	) "x_1"
 WHERE
-	"x_1"."Size_1" AND "x_1"."Color" IS NULL AND "x_1"."Size_2" OR
-	NOT "x_1"."Size_1"
+	"x_1"."c1" AND "x_1"."c2" IS NULL AND "x_1"."c3" OR
+	NOT "x_1"."c1"
 
 -- DB2 DB2.LUW DB2LUW
 SELECT
