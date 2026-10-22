@@ -38,8 +38,7 @@ FROM
 				LEFT JOIN Trade trade_1 ON al_group_1.AlertKey = Unwrap(CAST(trade_1.DealId AS Text))
 				LEFT JOIN Nomin nomin_1 ON al_group_1.AlertKey = Unwrap(CAST(nomin_1.CargoId AS Text))
 		WHERE
-			nomin_1.DeliveryCounterParty LIKE $cpty ESCAPE '~'s OR
-			trade_1.CounterParty LIKE $cpty_1 ESCAPE '~'s OR al_group_1.AlertCode LIKE $cpty_2 ESCAPE '~'s
+			nomin_1.DeliveryCounterParty LIKE $cpty ESCAPE '~'s OR trade_1.CounterParty LIKE $cpty_1 ESCAPE '~'s OR al_group_1.AlertCode LIKE $cpty_2 ESCAPE '~'s
 	) al_group_3
 		LEFT JOIN (
 			SELECT
@@ -82,8 +81,7 @@ FROM
 							LEFT JOIN Trade trade_2 ON t1.AlertKey = Unwrap(CAST(trade_2.DealId AS Text))
 							LEFT JOIN Nomin nomin_2 ON t1.AlertKey = Unwrap(CAST(nomin_2.CargoId AS Text))
 					WHERE
-						nomin_2.DeliveryCounterParty LIKE $cpty_3 ESCAPE '~'s OR
-						trade_2.CounterParty LIKE $cpty_4 ESCAPE '~'s OR t1.AlertCode LIKE $cpty_5 ESCAPE '~'s
+						nomin_2.DeliveryCounterParty LIKE $cpty_3 ESCAPE '~'s OR trade_2.CounterParty LIKE $cpty_4 ESCAPE '~'s OR t1.AlertCode LIKE $cpty_5 ESCAPE '~'s
 				) t2
 			WHERE
 				t2.rn = 1

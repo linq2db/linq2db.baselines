@@ -8,6 +8,12 @@ DROP DATABASE TestDataCore
 CREATE DATABASE TestDataCore ON default = '102400K'
 
 -- Sybase.Managed Sybase
+sp_dboption TestDataCore, 'trunc log on chkpt', 'true'
+
+-- Sybase.Managed Sybase
+sp_dboption TestDataCore, 'abort tran on log full', 'true'
+
+-- Sybase.Managed Sybase
 USE TestDataCore
 
 -- Sybase.Managed Sybase
