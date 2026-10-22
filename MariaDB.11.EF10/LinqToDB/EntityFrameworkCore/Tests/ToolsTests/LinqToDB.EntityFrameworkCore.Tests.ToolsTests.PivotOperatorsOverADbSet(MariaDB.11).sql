@@ -38,19 +38,19 @@ WHERE (((@ef_filter__p1 OR (`p`.`ProductID` > 2)) AND (@ef_filter__p1 OR NOT (`p
 
 -- MariaDB.10.MySqlConnector MariaDB
 SELECT
-	`e`.`SupplierID`,
+	`g_1`.`SupplierID`,
 	COUNT(CASE
-		WHEN `e`.`Discontinued` = 0 THEN 1
+		WHEN `g_1`.`Discontinued` = 0 THEN 1
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN `e`.`Discontinued` = 1 THEN 1
+		WHEN `g_1`.`Discontinued` = 1 THEN 1
 		ELSE NULL
 	END)
 FROM
-	`Products` `e`
+	`Products` `g_1`
 GROUP BY
-	`e`.`SupplierID`
+	`g_1`.`SupplierID`
 
 
 

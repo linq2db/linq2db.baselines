@@ -1,16 +1,16 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 SELECT
-	`x`.`Category`,
+	`g_1`.`Category`,
 	SUM(CASE
-		WHEN `x`.`Year` = 2000 THEN `x`.`Amount`
+		WHEN `g_1`.`Year` = 2000 THEN `g_1`.`Amount`
 		ELSE NULL
 	END),
 	SUM(CASE
-		WHEN `x`.`Year` = 2010 THEN `x`.`Amount`
+		WHEN `g_1`.`Year` = 2010 THEN `g_1`.`Amount`
 		ELSE NULL
 	END)
 FROM
-	`Sales` `x`
+	`Sales` `g_1`
 GROUP BY
-	`x`.`Category`
+	`g_1`.`Category`
 
