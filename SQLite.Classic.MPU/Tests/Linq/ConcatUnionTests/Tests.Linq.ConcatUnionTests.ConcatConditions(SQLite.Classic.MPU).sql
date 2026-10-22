@@ -10,36 +10,36 @@ FROM
 		FROM
 			(
 				SELECT
-					[p].[ParentID] IS NULL as [Parent1],
+					[p].[ParentID] IS NULL as [c1],
 					[p].[ParentID]
 				FROM
 					[Child] [t1]
 						LEFT JOIN [Parent] [p] ON [p].[ParentID] = [t1].[ParentID]
 				UNION ALL
 				SELECT
-					NULL as [Parent1],
+					NULL as [c1],
 					[p_1].[ParentID]
 				FROM
 					[Child] [t2]
 						LEFT JOIN [Parent] [p_1] ON [p_1].[ParentID] = [t2].[ParentID]
 			) [t3]
 		WHERE
-			[t3].[Parent1] IS NOT NULL
+			[t3].[c1] IS NOT NULL
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 SELECT
-	[t1].[Parent1],
+	[t1].[c1],
 	[t1].[ParentID],
 	[t1].[Value1],
-	[t1].[Parent1],
+	[t1].[c1],
 	[t1].[ParentID],
 	[t1].[Value1]
 FROM
 	(
 		SELECT
-			[p].[ParentID] IS NULL as [Parent1],
+			[p].[ParentID] IS NULL as [c1],
 			[p].[ParentID],
 			[p].[Value1]
 		FROM
