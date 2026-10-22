@@ -48,10 +48,10 @@ SELECT
 FROM
 	ComputedDecimalRow r
 WHERE
-	Unwrap(CAST(Unwrap(CAST(Math::NearbyInt(Unwrap(CAST(r.Fine * Decimal('100', 18, 12) AS Double)), Math::RoundToNearest()) AS Text)) AS Decimal(18,12))) / Decimal('100', 18, 12) = Decimal('1.004', 18, 12)
+	Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(r.Fine AS Decimal(20,12))) * Decimal('100', 20, 12) AS Decimal(20,0))) AS Decimal(20,12))) / Decimal('100', 20, 12) AS Decimal(18,12))) = Decimal('1.004', 18, 12)
 
 -- YDB Ydb
-DECLARE $Ids0_1 Decimal(4, 3)
+DECLARE $Ids0_1 Decimal(18, 12)
 SET     $Ids0_1 = Decimal('1.004', 22, 9)
 
 SELECT
@@ -59,10 +59,10 @@ SELECT
 FROM
 	ComputedDecimalRow r
 WHERE
-	Unwrap(CAST(Unwrap(CAST(Math::NearbyInt(Unwrap(CAST(r.Fine * Decimal('100', 18, 12) AS Double)), Math::RoundToNearest()) AS Text)) AS Decimal(18,12))) / Decimal('100', 18, 12) IN ($Ids0_1)
+	Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(r.Fine AS Decimal(20,12))) * Decimal('100', 20, 12) AS Decimal(20,0))) AS Decimal(20,12))) / Decimal('100', 20, 12) AS Decimal(18,12))) IN ($Ids0_1)
 
 -- YDB Ydb
-DECLARE $Ids0_1 Decimal(4, 3)
+DECLARE $Ids0_1 Decimal(18, 12)
 SET     $Ids0_1 = Decimal('1.004', 22, 9)
 
 SELECT
@@ -70,5 +70,5 @@ SELECT
 FROM
 	ComputedDecimalRow r
 WHERE
-	Unwrap(CAST(Unwrap(CAST(Math::NearbyInt(Unwrap(CAST(r.Fine * Decimal('100', 18, 12) AS Double)), Math::RoundToNearest()) AS Text)) AS Decimal(18,12))) / Decimal('100', 18, 12) IN ($Ids0_1)
+	Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(r.Fine AS Decimal(20,12))) * Decimal('100', 20, 12) AS Decimal(20,0))) AS Decimal(20,12))) / Decimal('100', 20, 12) AS Decimal(18,12))) IN ($Ids0_1)
 
