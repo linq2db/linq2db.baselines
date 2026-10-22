@@ -1,0 +1,16 @@
+﻿-- DB2 DB2.LUW DB2LUW
+DECLARE @min Decimal(8)
+SET     @min = 0
+
+SELECT
+	CAST(@min AS Decimal(20, 0))
+FROM SYSIBM.SYSDUMMY1
+
+-- DB2 DB2.LUW DB2LUW
+DECLARE @max Decimal(8)
+SET     @max = 18446744073709551615
+
+SELECT
+	CAST(@max AS Decimal(20, 0))
+FROM SYSIBM.SYSDUMMY1
+
