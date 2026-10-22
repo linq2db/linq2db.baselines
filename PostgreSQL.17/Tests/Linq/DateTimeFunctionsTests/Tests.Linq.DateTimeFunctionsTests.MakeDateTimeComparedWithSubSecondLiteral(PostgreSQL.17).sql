@@ -10,7 +10,7 @@ SELECT
 FROM
 	"LinqDataTypes" p
 WHERE
-	make_timestamp(2010, 1, 1, 10, 0, (p."ID"::decimal % 1)::decimal::Float) < '2010-01-01 10:00:00.500'::timestamp
+	make_timestamp(2010, 1, 1, 10, 0, Floor(p."ID"::decimal % 1)::Int::Float) < '2010-01-01 10:00:00.500'::timestamp
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
@@ -18,7 +18,7 @@ SELECT
 FROM
 	"LinqDataTypes" p
 WHERE
-	make_timestamp(2010, 1, 1, 10, 0, (p."ID"::decimal % 1)::decimal::Float) >= '2010-01-01 10:00:00.500'::timestamp
+	make_timestamp(2010, 1, 1, 10, 0, Floor(p."ID"::decimal % 1)::Int::Float) >= '2010-01-01 10:00:00.500'::timestamp
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
@@ -26,5 +26,5 @@ SELECT
 FROM
 	"LinqDataTypes" p
 WHERE
-	make_timestamp(2010, 1, 1, 10, 0, (p."ID"::decimal % 1)::decimal::Float) = '2010-01-01 10:00:00.500'::timestamp
+	make_timestamp(2010, 1, 1, 10, 0, Floor(p."ID"::decimal % 1)::Int::Float) = '2010-01-01 10:00:00.500'::timestamp
 
