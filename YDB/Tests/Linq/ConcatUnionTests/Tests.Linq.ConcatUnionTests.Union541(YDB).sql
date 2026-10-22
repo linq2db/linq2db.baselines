@@ -3,7 +3,7 @@ SELECT
 	p.ParentID as ParentID,
 	p.ParentID as ParentID_1,
 	p.Value1 as Value1,
-	CAST(NULL AS Int32) as ch,
+	CAST(NULL AS Int32) as c1,
 	CAST(NULL AS Int32) as ParentID_2,
 	CAST(NULL AS Int32) as ChildID
 FROM
@@ -13,7 +13,7 @@ SELECT
 	Coalesce(p2.Value1, 0) as ParentID,
 	CAST(NULL AS Int32) as ParentID_1,
 	CAST(NULL AS Int32) as Value1,
-	t2.ParentID as ch,
+	t2.ParentID as c1,
 	t2.ParentID as ParentID_2,
 	t2.ChildID as ChildID
 FROM

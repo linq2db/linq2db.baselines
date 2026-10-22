@@ -1,11 +1,11 @@
 ﻿-- YDB Ydb
 SELECT
 	x.Id as Id,
-	x.StringProp = '1'u OR x.StringProp IS NULL as child,
+	x.StringProp = '1'u OR x.StringProp IS NULL as c1,
 	CASE
 		WHEN x.StringProp = '2'u THEN true
 		ELSE false
-	END as child_1,
+	END as c2,
 	x.StringProp as StringProp,
 	1 as IntProp,
 	Coalesce(x.StringProp, ''u) || '2'u as StringProp_1,

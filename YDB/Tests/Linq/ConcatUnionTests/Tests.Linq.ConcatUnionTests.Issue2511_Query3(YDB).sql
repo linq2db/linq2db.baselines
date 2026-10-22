@@ -9,7 +9,7 @@ SELECT
 	t3.LastName as LastName,
 	t3.MiddleName as MiddleName,
 	t3.Gender as Gender,
-	t3.Patient as Patient,
+	t3.c1 as c1,
 	t3.PersonID as PersonID,
 	t3.Diagnosis as Diagnosis
 FROM
@@ -21,7 +21,7 @@ FROM
 			t1.LastName as LastName,
 			t1.MiddleName as MiddleName,
 			t1.Gender as Gender,
-			CAST(NULL AS Int32) as Patient,
+			CAST(NULL AS Int32) as c1,
 			CAST(NULL AS Int32) as PersonID,
 			CAST(NULL AS Text) as Diagnosis
 		FROM
@@ -44,7 +44,7 @@ FROM
 			t2.LastName as LastName,
 			t2.MiddleName as MiddleName,
 			t2.Gender as Gender,
-			a_Patient.PersonID as Patient,
+			a_Patient.PersonID as c1,
 			a_Patient.PersonID as PersonID,
 			a_Patient.Diagnosis as Diagnosis
 		FROM
