@@ -26,46 +26,46 @@ VALUES
 -- Access.Jet.Odbc AccessODBC
 SELECT
 	[t2].[Source],
+	[t2].[c1],
 	[t2].[Duration],
-	[t2].[Duration_1],
-	[t2].[Duration_2],
-	[t2].[Duration_3],
-	[t2].[Duration_4]
+	[t2].[c1_1],
+	[t2].[c2],
+	[t2].[Duration_1]
 FROM
 	(
 		SELECT
 			[t1].[Source],
-			[t1].[Source] = 1 as [Duration],
-			[t1].[Duration] as [Duration_1],
-			[t1].[Duration_1] as [Duration_2],
-			[t1].[Duration_2] as [Duration_3],
-			IIF(False, 0, NULL) as [Duration_4]
+			[t1].[Source] = 1 as [c1],
+			[t1].[Duration],
+			[t1].[c1] as [c1_1],
+			[t1].[c2],
+			IIF(False, 0, NULL) as [Duration_1]
 		FROM
 			(
 				SELECT
 					1 as [Source],
 					[r].[Budget] as [Duration],
-					IIF(False, #0001-01-01#, NULL) as [Duration_1],
-					IIF(False, #0001-01-01#, NULL) as [Duration_2]
+					IIF(False, #0001-01-01#, NULL) as [c1],
+					IIF(False, #0001-01-01#, NULL) as [c2]
 				FROM
 					[BudgetedTaskRow] [r]
 				UNION ALL
 				SELECT
 					2 as [Source],
 					IIF(False, 0, NULL) as [Duration],
-					[r_1].[FinishedOn] as [Duration_1],
-					[r_1].[StartedOn] as [Duration_2]
+					[r_1].[FinishedOn] as [c1],
+					[r_1].[StartedOn] as [c2]
 				FROM
 					[BudgetedTaskRow] [r_1]
 			) [t1]
 		UNION ALL
 		SELECT
 			3 as [Source],
-			IIF(False, False, NULL) as [Duration],
-			IIF(False, 0, NULL) as [Duration_1],
-			IIF(False, #0001-01-01#, NULL) as [Duration_2],
-			IIF(False, #0001-01-01#, NULL) as [Duration_3],
-			[r_2].[Budget] as [Duration_4]
+			IIF(False, False, NULL) as [c1],
+			IIF(False, 0, NULL) as [Duration],
+			IIF(False, #0001-01-01#, NULL) as [c1_1],
+			IIF(False, #0001-01-01#, NULL) as [c2],
+			[r_2].[Budget] as [Duration_1]
 		FROM
 			[BudgetedTaskRow] [r_2]
 	) [t2]
