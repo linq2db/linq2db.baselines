@@ -13,9 +13,7 @@ AS
 		NC_CODE ncCode
 			INNER JOIN NC_GROUP_MEMBER ncGroupMember ON ncCode.HANDLE = ncGroupMember.NC_CODE_OR_GROUP_GBO
 	WHERE
-		ncGroupMember.NC_GROUP_BO = ('NCGroupBO:' || ncCode.SITE || ',CATAN_AUTO') OR
-		ncGroupMember.NC_GROUP_BO = ('NCGroupBO:' || ncCode.SITE || ',CATAN_MAN') OR
-		ncGroupMember.NC_GROUP_BO = ('NCGroupBO:' || ncCode.SITE || ',CATAN_ALL')
+		ncGroupMember.NC_GROUP_BO = ('NCGroupBO:' || ncCode.SITE || ',CATAN_AUTO') OR ncGroupMember.NC_GROUP_BO = ('NCGroupBO:' || ncCode.SITE || ',CATAN_MAN') OR ncGroupMember.NC_GROUP_BO = ('NCGroupBO:' || ncCode.SITE || ',CATAN_ALL')
 ),
 "FindProductionFailedNcData"
 (
@@ -118,8 +116,7 @@ AS
 			INNER JOIN CUSTOM_FIELDS customFields_1 ON routerOperation.HANDLE = customFields_1.HANDLE AND 'OPERATION_TYPE' = customFields_1.ATTRIBUTE AND 'T' = customFields_1.VALUE
 			INNER JOIN ROUTER router_1 ON sfcRouter.ROUTER_BO = router_1.HANDLE
 	WHERE
-		sfcRouter.COMPLETED = 'false' AND sfcRouter.IN_USE = 'true' OR
-		sfcRouter.COMPLETED = 'true' AND router_1.ROUTER_TYPE = 'U'
+		sfcRouter.COMPLETED = 'false' AND sfcRouter.IN_USE = 'true' OR sfcRouter.COMPLETED = 'true' AND router_1.ROUTER_TYPE = 'U'
 ),
 "GetAdditionalData"
 (
