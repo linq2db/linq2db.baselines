@@ -1,9 +1,9 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 SELECT
-	x."Color",
+	x."c1",
 	x."Kind",
 	x."ItemCode",
-	x."Color_2",
+	x."Color",
 	x."ItemCode_1",
 	x."Style_1"
 FROM
@@ -12,13 +12,13 @@ FROM
 			CASE
 				WHEN i."Kind" = 1 OR i."Kind" = 2 THEN 1
 				ELSE 0
-			END as "Color",
+			END as "c1",
 			CASE
 				WHEN i."Kind" = 1 THEN 1
 				ELSE 0
-			END as "Color_1",
+			END as "c2",
 			Substr(i."ItemCode", 1, 2) as "ItemCode",
-			i."Color" as "Color_2",
+			i."Color",
 			i."Kind",
 			Substr(i."ItemCode", 3, 2) as "ItemCode_1",
 			i."Style" as "Style_1"
@@ -28,7 +28,7 @@ FROM
 			i."Kind" = 1 OR i."Kind" = 2
 	) x
 WHERE
-	NOT (x."Color" = 1 AND x."Color_1" = 1 OR x."Color" = 0)
+	NOT (x."c1" = 1 AND x."c2" = 1 OR x."c1" = 0)
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
 SELECT
@@ -42,9 +42,9 @@ FROM
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
 SELECT
-	x."Color",
+	x."c1",
 	x."ItemCode",
-	x."Color_1",
+	x."Color",
 	x."Kind",
 	x."ItemCode_1",
 	x."Style_1"
@@ -54,9 +54,9 @@ FROM
 			CASE
 				WHEN i."Kind" = 1 OR i."Kind" = 3 THEN 1
 				ELSE 0
-			END as "Color",
+			END as "c1",
 			Substr(i."ItemCode", 5, 2) as "ItemCode",
-			i."Color" as "Color_1",
+			i."Color",
 			i."Kind",
 			Substr(i."ItemCode", 7, 2) as "ItemCode_1",
 			i."Style" as "Style_1"
@@ -66,7 +66,7 @@ FROM
 			i."Kind" = 1 OR i."Kind" = 3
 	) x
 WHERE
-	x."Color" = 1
+	x."c1" = 1
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
 SELECT
@@ -80,8 +80,8 @@ FROM
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
 SELECT
-	t1."Top",
-	t1."Color",
+	t1."c1",
+	t1."c2",
 	t1."ItemCode",
 	t1."Name",
 	NULL,
@@ -97,7 +97,7 @@ FROM
 			CASE
 				WHEN t."Kind" = 1 OR t."Kind" = 2 THEN 1
 				ELSE 0
-			END as "Top",
+			END as "c1",
 			Substr(t."ItemCode", 1, 2) as "ItemCode",
 			t."Color" as "Name",
 			Substr(t."ItemCode", 3, 2) as "ItemCode_1",
@@ -105,15 +105,15 @@ FROM
 			CASE
 				WHEN t."Kind" = 1 THEN 1
 				ELSE 0
-			END as "Color"
+			END as "c2"
 		FROM
 			"Item" t
 	) t1
 WHERE
-	t1."Top" = 1
+	t1."c1" = 1
 UNION ALL
 SELECT
-	t2."Bottom",
+	t2."c1",
 	NULL,
 	NULL,
 	NULL,
@@ -121,7 +121,7 @@ SELECT
 	t2."Color",
 	NULL,
 	NULL,
-	t2."Size_1",
+	t2."c2",
 	t2."ItemCode_1",
 	t2."Style_1"
 FROM
@@ -130,7 +130,7 @@ FROM
 			CASE
 				WHEN t_1."Kind" = 1 OR t_1."Kind" = 3 THEN 1
 				ELSE 0
-			END as "Bottom",
+			END as "c1",
 			Substr(t_1."ItemCode", 5, 2) as "ItemCode",
 			t_1."Color",
 			Substr(t_1."ItemCode", 7, 2) as "ItemCode_1",
@@ -138,12 +138,12 @@ FROM
 			CASE
 				WHEN t_1."Kind" = 1 THEN 1
 				ELSE 0
-			END as "Size_1"
+			END as "c2"
 		FROM
 			"Item" t_1
 	) t2
 WHERE
-	t2."Bottom" = 1
+	t2."c1" = 1
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
 SELECT
@@ -157,29 +157,29 @@ FROM
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
 SELECT
-	x_1."Color",
-	x_1."Color_1",
+	x_1."c1",
+	x_1."c2",
 	x_1."ItemCode",
 	x_1."Name",
 	x_1."ItemCode_2",
 	x_1."Name_2",
 	x_1."ItemCode_1",
 	x_1."Name_1",
-	x_1."Size_1",
+	x_1."c3",
 	x_1."ItemCode_3",
 	x_1."Name_3"
 FROM
 	(
 		SELECT
-			x."Top" as "Color",
-			x."Color_1",
+			x."c1",
+			x."c2",
 			x."ItemCode",
 			x."Color" as "Name",
 			x."ItemCode_1",
 			x."Style_1" as "Name_1",
 			NULL as "ItemCode_2",
 			NULL as "Name_2",
-			NULL as "Size_1",
+			NULL as "c3",
 			NULL as "ItemCode_3",
 			NULL as "Name_3"
 		FROM
@@ -188,7 +188,7 @@ FROM
 					CASE
 						WHEN t."Kind" = 1 OR t."Kind" = 2 THEN 1
 						ELSE 0
-					END as "Top",
+					END as "c1",
 					Substr(t."ItemCode", 1, 2) as "ItemCode",
 					t."Color",
 					Substr(t."ItemCode", 3, 2) as "ItemCode_1",
@@ -196,23 +196,23 @@ FROM
 					CASE
 						WHEN t."Kind" = 1 THEN 1
 						ELSE 0
-					END as "Color_1"
+					END as "c2"
 				FROM
 					"Item" t
 			) x
 		WHERE
-			x."Top" = 1
+			x."c1" = 1
 		UNION ALL
 		SELECT
-			t1."Bottom" as "Color",
-			NULL as "Color_1",
+			t1."c1",
+			NULL as "c2",
 			NULL as "ItemCode",
 			NULL as "Name",
 			NULL as "ItemCode_1",
 			NULL as "Name_1",
 			t1."ItemCode" as "ItemCode_2",
 			t1."Color" as "Name_2",
-			t1."Size_1",
+			t1."c2" as "c3",
 			t1."ItemCode_1" as "ItemCode_3",
 			t1."Style_1" as "Name_3"
 		FROM
@@ -221,7 +221,7 @@ FROM
 					CASE
 						WHEN t_1."Kind" = 1 OR t_1."Kind" = 3 THEN 1
 						ELSE 0
-					END as "Bottom",
+					END as "c1",
 					Substr(t_1."ItemCode", 5, 2) as "ItemCode",
 					t_1."Color",
 					Substr(t_1."ItemCode", 7, 2) as "ItemCode_1",
@@ -229,15 +229,15 @@ FROM
 					CASE
 						WHEN t_1."Kind" = 1 THEN 1
 						ELSE 0
-					END as "Size_1"
+					END as "c2"
 				FROM
 					"Item" t_1
 			) t1
 		WHERE
-			t1."Bottom" = 1
+			t1."c1" = 1
 	) x_1
 WHERE
-	NOT (x_1."Color" = 1 AND x_1."Color_1" IS NOT NULL AND x_1."Color_1" = 1 OR x_1."Color" = 0)
+	NOT (x_1."c1" = 1 AND x_1."c2" IS NOT NULL AND x_1."c2" = 1 OR x_1."c1" = 0)
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
 SELECT
@@ -251,29 +251,29 @@ FROM
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
 SELECT
-	x_1."Color",
-	x_1."Color_1",
+	x_1."c1",
+	x_1."c2",
 	x_1."ItemCode",
 	x_1."Name",
 	x_1."ItemCode_2",
 	x_1."Name_2",
 	x_1."ItemCode_1",
 	x_1."Name_1",
-	x_1."Size_1",
+	x_1."c3",
 	x_1."ItemCode_3",
 	x_1."Name_3"
 FROM
 	(
 		SELECT
-			x."Top" as "Color",
-			x."Color_1",
+			x."c1",
+			x."c2",
 			x."ItemCode",
 			x."Color" as "Name",
 			x."ItemCode_1",
 			x."Style_1" as "Name_1",
 			NULL as "ItemCode_2",
 			NULL as "Name_2",
-			NULL as "Size_1",
+			NULL as "c3",
 			NULL as "ItemCode_3",
 			NULL as "Name_3"
 		FROM
@@ -282,7 +282,7 @@ FROM
 					CASE
 						WHEN t."Kind" = 1 OR t."Kind" = 2 THEN 1
 						ELSE 0
-					END as "Top",
+					END as "c1",
 					Substr(t."ItemCode", 1, 2) as "ItemCode",
 					t."Color",
 					Substr(t."ItemCode", 3, 2) as "ItemCode_1",
@@ -290,23 +290,23 @@ FROM
 					CASE
 						WHEN t."Kind" = 1 THEN 1
 						ELSE 0
-					END as "Color_1"
+					END as "c2"
 				FROM
 					"Item" t
 			) x
 		WHERE
-			x."Top" = 1
+			x."c1" = 1
 		UNION ALL
 		SELECT
-			t1."Bottom" as "Color",
-			NULL as "Color_1",
+			t1."c1",
+			NULL as "c2",
 			NULL as "ItemCode",
 			NULL as "Name",
 			NULL as "ItemCode_1",
 			NULL as "Name_1",
 			t1."ItemCode" as "ItemCode_2",
 			t1."Color" as "Name_2",
-			t1."Size_1",
+			t1."c2" as "c3",
 			t1."ItemCode_1" as "ItemCode_3",
 			t1."Style_1" as "Name_3"
 		FROM
@@ -315,7 +315,7 @@ FROM
 					CASE
 						WHEN t_1."Kind" = 1 OR t_1."Kind" = 3 THEN 1
 						ELSE 0
-					END as "Bottom",
+					END as "c1",
 					Substr(t_1."ItemCode", 5, 2) as "ItemCode",
 					t_1."Color",
 					Substr(t_1."ItemCode", 7, 2) as "ItemCode_1",
@@ -323,15 +323,15 @@ FROM
 					CASE
 						WHEN t_1."Kind" = 1 THEN 1
 						ELSE 0
-					END as "Size_1"
+					END as "c2"
 				FROM
 					"Item" t_1
 			) t1
 		WHERE
-			t1."Bottom" = 1
+			t1."c1" = 1
 	) x_1
 WHERE
-	x_1."Color" = 1 AND x_1."Color_1" = 1 OR x_1."Color" = 0
+	x_1."c1" = 1 AND x_1."c2" = 1 OR x_1."c1" = 0
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
 SELECT
@@ -345,29 +345,29 @@ FROM
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
 SELECT
-	x_1."Size_1",
-	x_1."Color",
+	x_1."c1",
+	x_1."c2",
 	x_1."ItemCode",
 	x_1."Name",
 	x_1."ItemCode_2",
 	x_1."Name_2",
 	x_1."ItemCode_1",
 	x_1."Name_1",
-	x_1."Size_2",
+	x_1."c3",
 	x_1."ItemCode_3",
 	x_1."Name_3"
 FROM
 	(
 		SELECT
-			x."Top" as "Size_1",
-			x."Color_1" as "Color",
+			x."c1",
+			x."c2",
 			x."ItemCode",
 			x."Color" as "Name",
 			x."ItemCode_1",
 			x."Style_1" as "Name_1",
 			NULL as "ItemCode_2",
 			NULL as "Name_2",
-			NULL as "Size_2",
+			NULL as "c3",
 			NULL as "ItemCode_3",
 			NULL as "Name_3"
 		FROM
@@ -376,7 +376,7 @@ FROM
 					CASE
 						WHEN t."Kind" = 1 OR t."Kind" = 2 THEN 1
 						ELSE 0
-					END as "Top",
+					END as "c1",
 					Substr(t."ItemCode", 1, 2) as "ItemCode",
 					t."Color",
 					Substr(t."ItemCode", 3, 2) as "ItemCode_1",
@@ -384,23 +384,23 @@ FROM
 					CASE
 						WHEN t."Kind" = 1 THEN 1
 						ELSE 0
-					END as "Color_1"
+					END as "c2"
 				FROM
 					"Item" t
 			) x
 		WHERE
-			x."Top" = 1
+			x."c1" = 1
 		UNION ALL
 		SELECT
-			t1."Bottom" as "Size_1",
-			NULL as "Color",
+			t1."c1",
+			NULL as "c2",
 			NULL as "ItemCode",
 			NULL as "Name",
 			NULL as "ItemCode_1",
 			NULL as "Name_1",
 			t1."ItemCode" as "ItemCode_2",
 			t1."Color" as "Name_2",
-			t1."Size_1" as "Size_2",
+			t1."c2" as "c3",
 			t1."ItemCode_1" as "ItemCode_3",
 			t1."Style_1" as "Name_3"
 		FROM
@@ -409,7 +409,7 @@ FROM
 					CASE
 						WHEN t_1."Kind" = 1 OR t_1."Kind" = 3 THEN 1
 						ELSE 0
-					END as "Bottom",
+					END as "c1",
 					Substr(t_1."ItemCode", 5, 2) as "ItemCode",
 					t_1."Color",
 					Substr(t_1."ItemCode", 7, 2) as "ItemCode_1",
@@ -417,15 +417,15 @@ FROM
 					CASE
 						WHEN t_1."Kind" = 1 THEN 1
 						ELSE 0
-					END as "Size_1"
+					END as "c2"
 				FROM
 					"Item" t_1
 			) t1
 		WHERE
-			t1."Bottom" = 1
+			t1."c1" = 1
 	) x_1
 WHERE
-	NOT (x_1."Size_1" = 1 AND x_1."Color" IS NULL AND x_1."Size_2" = 1 OR x_1."Size_1" = 0)
+	NOT (x_1."c1" = 1 AND x_1."c2" IS NULL AND x_1."c3" = 1 OR x_1."c1" = 0)
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
 SELECT
@@ -439,29 +439,29 @@ FROM
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
 SELECT
-	x_1."Size_1",
-	x_1."Color",
+	x_1."c1",
+	x_1."c2",
 	x_1."ItemCode",
 	x_1."Name",
 	x_1."ItemCode_2",
 	x_1."Name_2",
 	x_1."ItemCode_1",
 	x_1."Name_1",
-	x_1."Size_2",
+	x_1."c3",
 	x_1."ItemCode_3",
 	x_1."Name_3"
 FROM
 	(
 		SELECT
-			x."Top" as "Size_1",
-			x."Color_1" as "Color",
+			x."c1",
+			x."c2",
 			x."ItemCode",
 			x."Color" as "Name",
 			x."ItemCode_1",
 			x."Style_1" as "Name_1",
 			NULL as "ItemCode_2",
 			NULL as "Name_2",
-			NULL as "Size_2",
+			NULL as "c3",
 			NULL as "ItemCode_3",
 			NULL as "Name_3"
 		FROM
@@ -470,7 +470,7 @@ FROM
 					CASE
 						WHEN t."Kind" = 1 OR t."Kind" = 2 THEN 1
 						ELSE 0
-					END as "Top",
+					END as "c1",
 					Substr(t."ItemCode", 1, 2) as "ItemCode",
 					t."Color",
 					Substr(t."ItemCode", 3, 2) as "ItemCode_1",
@@ -478,23 +478,23 @@ FROM
 					CASE
 						WHEN t."Kind" = 1 THEN 1
 						ELSE 0
-					END as "Color_1"
+					END as "c2"
 				FROM
 					"Item" t
 			) x
 		WHERE
-			x."Top" = 1
+			x."c1" = 1
 		UNION ALL
 		SELECT
-			t1."Bottom" as "Size_1",
-			NULL as "Color",
+			t1."c1",
+			NULL as "c2",
 			NULL as "ItemCode",
 			NULL as "Name",
 			NULL as "ItemCode_1",
 			NULL as "Name_1",
 			t1."ItemCode" as "ItemCode_2",
 			t1."Color" as "Name_2",
-			t1."Size_1" as "Size_2",
+			t1."c2" as "c3",
 			t1."ItemCode_1" as "ItemCode_3",
 			t1."Style_1" as "Name_3"
 		FROM
@@ -503,7 +503,7 @@ FROM
 					CASE
 						WHEN t_1."Kind" = 1 OR t_1."Kind" = 3 THEN 1
 						ELSE 0
-					END as "Bottom",
+					END as "c1",
 					Substr(t_1."ItemCode", 5, 2) as "ItemCode",
 					t_1."Color",
 					Substr(t_1."ItemCode", 7, 2) as "ItemCode_1",
@@ -511,16 +511,16 @@ FROM
 					CASE
 						WHEN t_1."Kind" = 1 THEN 1
 						ELSE 0
-					END as "Size_1"
+					END as "c2"
 				FROM
 					"Item" t_1
 			) t1
 		WHERE
-			t1."Bottom" = 1
+			t1."c1" = 1
 	) x_1
 WHERE
-	x_1."Size_1" = 1 AND x_1."Color" IS NULL AND x_1."Size_2" = 1 OR
-	x_1."Size_1" = 0
+	x_1."c1" = 1 AND x_1."c2" IS NULL AND x_1."c3" = 1 OR
+	x_1."c1" = 0
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
 SELECT
