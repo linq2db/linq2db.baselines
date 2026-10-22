@@ -8,126 +8,126 @@ ORDER BY
 
 -- SQLite.Classic SQLite
 SELECT
-	[e].[Id],
+	[g_1].[Id],
 	MAX([cm].[Name]),
 	MAX([pos].[LibRub]),
-	MAX([e].[ModifiedAt]),
+	MAX([g_1].[ModifiedAt]),
 	MAX(CASE
-		WHEN [e].[TheKey] = 10 THEN [rub].[IdeRub]
+		WHEN [g_1].[TheKey] = 10 THEN [rub].[IdeRub]
 		ELSE NULL
 	END),
 	MAX(CASE
-		WHEN [e].[TheKey] = 20 THEN [rub].[IdeRub]
+		WHEN [g_1].[TheKey] = 20 THEN [rub].[IdeRub]
 		ELSE NULL
 	END),
 	MAX(CASE
-		WHEN [e].[TheKey] = 30 THEN [rub].[IdeRub]
+		WHEN [g_1].[TheKey] = 30 THEN [rub].[IdeRub]
 		ELSE NULL
 	END),
 	MAX(CASE
-		WHEN [e].[TheKey] = 10 THEN [rub].[LibRub]
+		WHEN [g_1].[TheKey] = 10 THEN [rub].[LibRub]
 		ELSE NULL
 	END),
 	MAX(CASE
-		WHEN [e].[TheKey] = 20 THEN [rub].[LibRub]
+		WHEN [g_1].[TheKey] = 20 THEN [rub].[LibRub]
 		ELSE NULL
 	END),
 	MAX(CASE
-		WHEN [e].[TheKey] = 30 THEN [rub].[LibRub]
+		WHEN [g_1].[TheKey] = 30 THEN [rub].[LibRub]
 		ELSE NULL
 	END)
 FROM
-	[ModTemplate] [e]
-		INNER JOIN [Activity] [act] ON [e].[TheKey] = [act].[Id]
-		INNER JOIN [CoaMask] [cm] ON [e].[Id] = [cm].[Id]
-		LEFT JOIN [AtiRub] [pos] ON [pos].[Id] = [e].[PosRubId]
-		LEFT JOIN [IasRub] [rub] ON [rub].[Id] = [e].[RubId]
+	[ModTemplate] [g_1]
+		INNER JOIN [Activity] [act] ON [g_1].[TheKey] = [act].[Id]
+		INNER JOIN [CoaMask] [cm] ON [g_1].[Id] = [cm].[Id]
+		LEFT JOIN [AtiRub] [pos] ON [pos].[Id] = [g_1].[PosRubId]
+		LEFT JOIN [IasRub] [rub] ON [rub].[Id] = [g_1].[RubId]
 GROUP BY
-	[e].[Id]
+	[g_1].[Id]
 
 -- SQLite.Classic SQLite
 SELECT
-	[e].[Id],
+	[g_1].[Id],
 	MAX([cm].[Name]),
 	MAX([pos].[LibRub]),
-	MAX([e].[ModifiedAt]),
+	MAX([g_1].[ModifiedAt]),
 	MAX(CASE
-		WHEN [e].[TheKey] = 10 THEN [rub].[IdeRub]
+		WHEN [g_1].[TheKey] = 10 THEN [rub].[IdeRub]
 		ELSE NULL
 	END),
 	MAX(CASE
-		WHEN [e].[TheKey] = 20 THEN [rub].[IdeRub]
+		WHEN [g_1].[TheKey] = 20 THEN [rub].[IdeRub]
 		ELSE NULL
 	END),
 	MAX(CASE
-		WHEN [e].[TheKey] = 30 THEN [rub].[IdeRub]
+		WHEN [g_1].[TheKey] = 30 THEN [rub].[IdeRub]
 		ELSE NULL
 	END),
 	MAX(CASE
-		WHEN [e].[TheKey] = 10 THEN [rub].[LibRub]
+		WHEN [g_1].[TheKey] = 10 THEN [rub].[LibRub]
 		ELSE NULL
 	END),
 	MAX(CASE
-		WHEN [e].[TheKey] = 20 THEN [rub].[LibRub]
+		WHEN [g_1].[TheKey] = 20 THEN [rub].[LibRub]
 		ELSE NULL
 	END),
 	MAX(CASE
-		WHEN [e].[TheKey] = 30 THEN [rub].[LibRub]
+		WHEN [g_1].[TheKey] = 30 THEN [rub].[LibRub]
 		ELSE NULL
 	END)
 FROM
-	[ModTemplate] [e]
-		INNER JOIN [Activity] [act] ON [e].[TheKey] = [act].[Id]
-		INNER JOIN [CoaMask] [cm] ON [e].[Id] = [cm].[Id]
-		LEFT JOIN [AtiRub] [pos] ON [pos].[Id] = [e].[PosRubId]
-		LEFT JOIN [IasRub] [rub] ON [rub].[Id] = [e].[RubId]
+	[ModTemplate] [g_1]
+		INNER JOIN [Activity] [act] ON [g_1].[TheKey] = [act].[Id]
+		INNER JOIN [CoaMask] [cm] ON [g_1].[Id] = [cm].[Id]
+		LEFT JOIN [AtiRub] [pos] ON [pos].[Id] = [g_1].[PosRubId]
+		LEFT JOIN [IasRub] [rub] ON [rub].[Id] = [g_1].[RubId]
 GROUP BY
-	[e].[Id]
+	[g_1].[Id]
 
 -- SQLite.Classic SQLite
 SELECT
-	[e].[Id],
+	[g_1].[Id],
 	MAX([cm].[Name]),
 	MAX([pos].[LibRub]),
-	MAX([e].[ModifiedAt]),
+	MAX([g_1].[ModifiedAt]),
 	MAX(CASE
-		WHEN [e].[TheKey] = 10 THEN [rub].[IdeRub]
+		WHEN [g_1].[TheKey] = 10 THEN [rub].[IdeRub]
 		ELSE NULL
 	END),
 	MAX(CASE
-		WHEN [e].[TheKey] = 20 THEN [rub].[IdeRub]
+		WHEN [g_1].[TheKey] = 20 THEN [rub].[IdeRub]
 		ELSE NULL
 	END),
 	MAX(CASE
-		WHEN [e].[TheKey] = 30 THEN [rub].[IdeRub]
+		WHEN [g_1].[TheKey] = 30 THEN [rub].[IdeRub]
 		ELSE NULL
 	END),
 	MAX(CASE
-		WHEN [e].[TheKey] = 40 THEN [rub].[IdeRub]
+		WHEN [g_1].[TheKey] = 40 THEN [rub].[IdeRub]
 		ELSE NULL
 	END),
 	MAX(CASE
-		WHEN [e].[TheKey] = 10 THEN [rub].[LibRub]
+		WHEN [g_1].[TheKey] = 10 THEN [rub].[LibRub]
 		ELSE NULL
 	END),
 	MAX(CASE
-		WHEN [e].[TheKey] = 20 THEN [rub].[LibRub]
+		WHEN [g_1].[TheKey] = 20 THEN [rub].[LibRub]
 		ELSE NULL
 	END),
 	MAX(CASE
-		WHEN [e].[TheKey] = 30 THEN [rub].[LibRub]
+		WHEN [g_1].[TheKey] = 30 THEN [rub].[LibRub]
 		ELSE NULL
 	END),
 	MAX(CASE
-		WHEN [e].[TheKey] = 40 THEN [rub].[LibRub]
+		WHEN [g_1].[TheKey] = 40 THEN [rub].[LibRub]
 		ELSE NULL
 	END)
 FROM
-	[ModTemplate] [e]
-		INNER JOIN [Activity] [act] ON [e].[TheKey] = [act].[Id]
-		INNER JOIN [CoaMask] [cm] ON [e].[Id] = [cm].[Id]
-		LEFT JOIN [AtiRub] [pos] ON [pos].[Id] = [e].[PosRubId]
-		LEFT JOIN [IasRub] [rub] ON [rub].[Id] = [e].[RubId]
+	[ModTemplate] [g_1]
+		INNER JOIN [Activity] [act] ON [g_1].[TheKey] = [act].[Id]
+		INNER JOIN [CoaMask] [cm] ON [g_1].[Id] = [cm].[Id]
+		LEFT JOIN [AtiRub] [pos] ON [pos].[Id] = [g_1].[PosRubId]
+		LEFT JOIN [IasRub] [rub] ON [rub].[Id] = [g_1].[RubId]
 GROUP BY
-	[e].[Id]
+	[g_1].[Id]
 

@@ -38,19 +38,19 @@ WHERE (@__ef_filter__p_0 OR NOT ("p"."IsDeleted") OR NOT ("p"."IsDeleted")) AND 
 
 -- SQLite.MS SQLite
 SELECT
-	[e].[SupplierID],
+	[g_1].[SupplierID],
 	COUNT(CASE
-		WHEN [e].[Discontinued] = 0 THEN 1
+		WHEN [g_1].[Discontinued] = 0 THEN 1
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN [e].[Discontinued] = 1 THEN 1
+		WHEN [g_1].[Discontinued] = 1 THEN 1
 		ELSE NULL
 	END)
 FROM
-	[Products] [e]
+	[Products] [g_1]
 GROUP BY
-	[e].[SupplierID]
+	[g_1].[SupplierID]
 
 
 

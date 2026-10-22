@@ -1,0 +1,21 @@
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
+SELECT
+	[p].[PersonID]
+FROM
+	[Person] [p]
+ORDER BY
+	[p].[PersonID]
+
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @p  -- Int32
+SET     @p = 2
+
+SELECT
+	[p].[PersonID]
+FROM
+	[Person] [p]
+WHERE
+	[p].[PersonID] = @p
+ORDER BY
+	[p].[PersonID]
+
