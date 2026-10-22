@@ -26,21 +26,21 @@ VALUES
 -- Access.Ace.OleDb AccessOleDb
 SELECT
 	[t1].[Source],
-	[t1].[Duration],
-	[t1].[Duration_1]
+	[t1].[FinishedOn],
+	[t1].[StartedOn]
 FROM
 	(
 		SELECT
 			1 as [Source],
-			[r].[FinishedOn] as [Duration],
-			[r].[StartedOn] as [Duration_1]
+			[r].[FinishedOn],
+			[r].[StartedOn]
 		FROM
 			[BudgetedTaskRow] [r]
 		UNION ALL
 		SELECT
 			2 as [Source],
-			[r_1].[FinishedOn] as [Duration],
-			[r_1].[StartedOn] as [Duration_1]
+			[r_1].[FinishedOn],
+			[r_1].[StartedOn]
 		FROM
 			[BudgetedTaskRow] [r_1]
 	) [t1]
