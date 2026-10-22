@@ -20,14 +20,14 @@ FROM
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
-	toInt32(intDiv(intDiv(toUnixTimestamp64Nano(r.FinishedOn) - toUnixTimestamp64Nano(r.StartedOn), toInt64(100)), toInt64(10)) % toInt64(1000)) as c1
+	toInt32(intDiv(intDiv(toUnixTimestamp64Nano(r.FinishedOn) - toUnixTimestamp64Nano(r.StartedOn), toInt64(100)), toInt64(10)) % toInt64(1000)) as Microseconds
 FROM
 	EventRow r
 WHERE
 	r.Id > 0
 UNION ALL
 SELECT
-	toInt32(intDiv(intDiv(toUnixTimestamp64Nano(r_1.FinishedOn) - toUnixTimestamp64Nano(r_1.StartedOn), toInt64(100)), toInt64(10)) % toInt64(1000)) as c1
+	toInt32(intDiv(intDiv(toUnixTimestamp64Nano(r_1.FinishedOn) - toUnixTimestamp64Nano(r_1.StartedOn), toInt64(100)), toInt64(10)) % toInt64(1000)) as Microseconds
 FROM
 	EventRow r_1
 WHERE

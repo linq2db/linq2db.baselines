@@ -16,27 +16,27 @@ VALUES
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
-	MAX(g_1.Day) as c1
+	MAX(g_1.Day) as Max_1
 FROM
 	CoarseDateShapesRow g_1
 GROUP BY
 	g_1.Id
 UNION ALL
 SELECT
-	toDateTime64(toDateTime64('2026-06-01 10:00:00.0000000', 7), 7) as c1
+	toDateTime64(toDateTime64('2026-06-01 10:00:00.0000000', 7), 7) as Max_1
 FROM
 	CoarseDateShapesRow r
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
-	MAX(g_1.Value) as c1
+	MAX(g_1.Value) as Max_1
 FROM
 	CoarseDateShapesRow g_1
 GROUP BY
 	g_1.Id
 UNION ALL
 SELECT
-	toDateTime64(toDateTime64('2026-06-01 10:00:00.5000000', 7), 7) as c1
+	toDateTime64(toDateTime64('2026-06-01 10:00:00.5000000', 7), 7) as Max_1
 FROM
 	CoarseDateShapesRow r
 
