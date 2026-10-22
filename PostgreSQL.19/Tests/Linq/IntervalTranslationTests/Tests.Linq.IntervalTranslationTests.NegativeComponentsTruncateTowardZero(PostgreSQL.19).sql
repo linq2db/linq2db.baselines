@@ -30,7 +30,7 @@ VALUES
 -- PostgreSQL.19 PostgreSQL12
 SELECT
 	(r."InSeconds" / 86400)::Int,
-	Floor(((r."InSeconds" / 3600)::decimal % 24)::decimal)::Int,
+	Floor((r."InSeconds" / 3600)::decimal % 24)::BigInt::Int,
 	r."InSeconds"::Float / 3600
 FROM
 	"DurationRow" r

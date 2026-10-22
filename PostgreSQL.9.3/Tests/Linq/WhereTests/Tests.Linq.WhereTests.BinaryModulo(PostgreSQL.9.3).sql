@@ -8,5 +8,5 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	(p."PersonID"::decimal % 2)::decimal = 1 AND p."PersonID" = 1
+	Floor(p."PersonID"::decimal % 2)::Int = 1 AND p."PersonID" = 1
 

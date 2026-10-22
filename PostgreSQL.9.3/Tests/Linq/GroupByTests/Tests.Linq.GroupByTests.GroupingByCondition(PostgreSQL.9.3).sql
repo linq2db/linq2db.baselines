@@ -8,7 +8,7 @@ FROM
 	(
 		SELECT
 			c_1."ParentID",
-			(c_1."ChildID"::decimal % 2)::decimal = 0 as "isValueAvailable",
+			Floor(c_1."ChildID"::decimal % 2)::Int = 0 as "isValueAvailable",
 			NULL::Int as "Value_1"
 		FROM
 			"Child" c_1

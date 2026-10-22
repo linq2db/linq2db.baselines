@@ -4,11 +4,13 @@ SELECT
 FROM
 	(
 		SELECT
-			Unwrap(CAST(Unwrap(CAST(CASE
-				WHEN Unwrap(CAST(p.MoneyValue * Decimal('10', 6, 2) AS Double)) >= Double('0')
-					THEN Math::Round(Unwrap(CAST(p.MoneyValue * Decimal('10', 6, 2) AS Double)))
-				ELSE -Math::Round(-Unwrap(CAST(p.MoneyValue * Decimal('10', 6, 2) AS Double)))
-			END AS Text)) AS Decimal(6,2))) / Decimal('10', 6, 2) as c1
+			Unwrap(CAST(CASE
+				WHEN Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(p.MoneyValue AS Decimal(7,2))) * Decimal('10', 7, 2) AS Decimal(7,0))) AS Decimal(7,2))) - Unwrap(CAST(p.MoneyValue AS Decimal(7,2))) * Decimal('10', 7, 2) = Decimal('-0.5', 7, 2) AND Unwrap(CAST(p.MoneyValue AS Decimal(7,2))) * Decimal('10', 7, 2) > Decimal('0', 7, 2)
+					THEN Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(p.MoneyValue AS Decimal(7,2))) * Decimal('10', 7, 2) AS Decimal(7,0))) + Decimal('1', 7, 0) AS Decimal(7,2)))
+				WHEN Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(p.MoneyValue AS Decimal(7,2))) * Decimal('10', 7, 2) AS Decimal(7,0))) AS Decimal(7,2))) - Unwrap(CAST(p.MoneyValue AS Decimal(7,2))) * Decimal('10', 7, 2) = Decimal('0.5', 7, 2) AND Unwrap(CAST(p.MoneyValue AS Decimal(7,2))) * Decimal('10', 7, 2) < Decimal('0', 7, 2)
+					THEN Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(p.MoneyValue AS Decimal(7,2))) * Decimal('10', 7, 2) AS Decimal(7,0))) - Decimal('1', 7, 0) AS Decimal(7,2)))
+				ELSE Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(p.MoneyValue AS Decimal(7,2))) * Decimal('10', 7, 2) AS Decimal(7,0))) AS Decimal(7,2)))
+			END / Decimal('10', 7, 2) AS Decimal(6,2))) as c1
 		FROM
 			LinqDataTypes p
 	) t

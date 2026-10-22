@@ -2,7 +2,7 @@
 SELECT
 	t."GroupId",
 	COUNT(*),
-	COUNT(*) FILTER (WHERE (t."DataValue"::decimal % 2)::decimal = 0),
+	COUNT(*) FILTER (WHERE (t."DataValue"::decimal % 2)::Float = 0),
 	COUNT(DISTINCT t."DataValue")
 FROM
 	"AggregationData" t

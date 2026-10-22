@@ -4,5 +4,5 @@ SELECT
 FROM
 	LinqDataTypes t
 WHERE
-	t.MoneyValue::Int::Float * 57.295779513082323 <> 0.10000000000000001
+	(t.MoneyValue::Int::Float * 57.295779513082323)::Int::Float <> 0.10000000000000001
 

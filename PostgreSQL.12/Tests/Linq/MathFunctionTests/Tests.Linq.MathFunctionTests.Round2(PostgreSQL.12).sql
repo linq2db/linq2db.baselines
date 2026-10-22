@@ -5,9 +5,9 @@ FROM
 	(
 		SELECT
 			CASE
-				WHEN p."MoneyValue" - FLOOR(p."MoneyValue") = 0.5 AND FLOOR(p."MoneyValue") % 2 = 0
-					THEN FLOOR(p."MoneyValue")
-				ELSE ROUND(p."MoneyValue", 0)
+				WHEN p."MoneyValue"::Float::decimal - FLOOR(p."MoneyValue"::Float::decimal) = 0.5 AND FLOOR(p."MoneyValue"::Float::decimal) % 2 = 0
+					THEN FLOOR(p."MoneyValue"::Float::decimal)
+				ELSE ROUND(p."MoneyValue"::Float::decimal, 0)
 			END::Float as c1
 		FROM
 			"LinqDataTypes" p

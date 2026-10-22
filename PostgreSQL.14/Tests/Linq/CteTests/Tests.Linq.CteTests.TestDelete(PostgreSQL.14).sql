@@ -7,7 +7,7 @@ AS
 	FROM
 		"CteChild" c_1
 	WHERE
-		(c_1."ParentID"::decimal % 2)::decimal = 0
+		Floor(c_1."ParentID"::decimal % 2)::Int = 0
 )
 DELETE FROM
 	"CteChild" t1

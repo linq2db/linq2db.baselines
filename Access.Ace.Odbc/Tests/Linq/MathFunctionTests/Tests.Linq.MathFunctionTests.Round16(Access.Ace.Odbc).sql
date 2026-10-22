@@ -1,0 +1,46 @@
+﻿-- Access.Ace.Odbc AccessODBC
+SELECT
+	IIF([p].[MoneyValue] * 2 = ROUND([p].[MoneyValue] * 2, ([p].[ID] MOD 2) + 2) AND [p].[MoneyValue] <> ROUND([p].[MoneyValue], ([p].[ID] MOD 2) + 2), ROUND([p].[MoneyValue] / 2, ([p].[ID] MOD 2) + 2) * 2, ROUND([p].[MoneyValue], ([p].[ID] MOD 2) + 2))
+FROM
+	[LinqDataTypes] [p]
+WHERE
+	[p].[MoneyValue] <> 0
+ORDER BY
+	[p].[ID]
+
+-- Access.Ace.Odbc AccessODBC
+SELECT
+	[t1].[ID],
+	[t1].[MoneyValue],
+	[t1].[DateTimeValue],
+	[t1].[BoolValue],
+	[t1].[GuidValue],
+	[t1].[BinaryValue],
+	[t1].[SmallIntValue],
+	[t1].[StringValue]
+FROM
+	[LinqDataTypes] [t1]
+
+-- Access.Ace.Odbc AccessODBC
+SELECT
+	IIF([p].[MoneyValue] * 2 = ROUND([p].[MoneyValue] * 2, ([p].[ID] MOD 2) + 1) AND [p].[MoneyValue] <> ROUND([p].[MoneyValue], ([p].[ID] MOD 2) + 1), ROUND([p].[MoneyValue] / 2, ([p].[ID] MOD 2) + 1) * 2, ROUND([p].[MoneyValue], ([p].[ID] MOD 2) + 1))
+FROM
+	[LinqDataTypes] [p]
+WHERE
+	[p].[MoneyValue] <> 0
+ORDER BY
+	[p].[ID]
+
+-- Access.Ace.Odbc AccessODBC
+SELECT
+	[t1].[ID],
+	[t1].[MoneyValue],
+	[t1].[DateTimeValue],
+	[t1].[BoolValue],
+	[t1].[GuidValue],
+	[t1].[BinaryValue],
+	[t1].[SmallIntValue],
+	[t1].[StringValue]
+FROM
+	[LinqDataTypes] [t1]
+
