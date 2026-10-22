@@ -38,13 +38,13 @@ WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR [p].[IsDeleted] = CAST(0 AS bit) OR
 
 -- SqlServer.2022
 SELECT
-	[e].[SupplierID],
-	COUNT(IIF([e].[Discontinued] = 0, 1, NULL)),
-	COUNT(IIF([e].[Discontinued] = 1, 1, NULL))
+	[g_1].[SupplierID],
+	COUNT(IIF([g_1].[Discontinued] = 0, 1, NULL)),
+	COUNT(IIF([g_1].[Discontinued] = 1, 1, NULL))
 FROM
-	[Products] [e]
+	[Products] [g_1]
 GROUP BY
-	[e].[SupplierID]
+	[g_1].[SupplierID]
 
 
 

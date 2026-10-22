@@ -1,10 +1,10 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
 SELECT
-	[x].[Category],
-	SUM(IIF([x].[Year] = 2000, [x].[Amount], NULL)),
-	SUM(IIF([x].[Year] = 2010, [x].[Amount], NULL))
+	[g_1].[Category],
+	SUM(IIF([g_1].[Year] = 2000, [g_1].[Amount], NULL)),
+	SUM(IIF([g_1].[Year] = 2010, [g_1].[Amount], NULL))
 FROM
-	[Sales] [x]
+	[Sales] [g_1]
 GROUP BY
-	[x].[Category]
+	[g_1].[Category]
 

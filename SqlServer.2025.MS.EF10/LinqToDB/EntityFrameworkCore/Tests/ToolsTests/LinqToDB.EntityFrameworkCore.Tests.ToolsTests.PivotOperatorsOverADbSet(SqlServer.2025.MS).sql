@@ -38,13 +38,13 @@ WHERE (@ef_filter__p1 = CAST(1 AS bit) OR [p].[ProductID] > 2) AND (@ef_filter__
 
 -- SqlServer.2025
 SELECT
-	[e].[SupplierID],
-	COUNT(IIF([e].[Discontinued] = 0, 1, NULL)),
-	COUNT(IIF([e].[Discontinued] = 1, 1, NULL))
+	[g_1].[SupplierID],
+	COUNT(IIF([g_1].[Discontinued] = 0, 1, NULL)),
+	COUNT(IIF([g_1].[Discontinued] = 1, 1, NULL))
 FROM
-	[Products] [e]
+	[Products] [g_1]
 GROUP BY
-	[e].[SupplierID]
+	[g_1].[SupplierID]
 
 
 
