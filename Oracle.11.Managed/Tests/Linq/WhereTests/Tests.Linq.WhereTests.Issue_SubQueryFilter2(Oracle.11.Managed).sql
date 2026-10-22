@@ -25,8 +25,7 @@ WHERE
 				WHERE
 					ROWNUM <= 1
 			)
-	) OR
-	EXISTS(
+	) OR EXISTS(
 		SELECT
 			*
 		FROM
