@@ -3,7 +3,7 @@ SELECT
 	[p].[ParentID],
 	[p].[ParentID] as [ParentID_1],
 	[p].[Value1],
-	IIF(False, 0, NULL) as [ch],
+	IIF(False, 0, NULL) as [c1],
 	IIF(False, 0, NULL) as [ParentID_2],
 	IIF(False, 0, NULL) as [ChildID]
 FROM
@@ -13,7 +13,7 @@ SELECT
 	IIF([t1].[Value1] IS NULL, 0, [t1].[Value1]) as [ParentID],
 	IIF(False, 0, NULL) as [ParentID_1],
 	IIF(False, 0, NULL) as [Value1],
-	[t1].[ParentID] as [ch],
+	[t1].[ParentID] as [c1],
 	[t1].[ParentID] as [ParentID_2],
 	[t1].[ChildID]
 FROM

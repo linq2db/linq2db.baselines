@@ -6,7 +6,7 @@ SELECT
 	[t3].[LastName],
 	[t3].[MiddleName],
 	[t3].[Gender],
-	[t3].[Patient],
+	[t3].[c1],
 	[t3].[PersonID],
 	[t3].[Diagnosis]
 FROM
@@ -18,7 +18,7 @@ FROM
 			[t1].[LastName],
 			[t1].[MiddleName],
 			[t1].[Gender],
-			IIF(False, 0, NULL) as [Patient],
+			IIF(False, 0, NULL) as [c1],
 			IIF(False, 0, NULL) as [PersonID],
 			IIF(False, '', NULL) as [Diagnosis]
 		FROM
@@ -40,7 +40,7 @@ FROM
 			[t2].[LastName],
 			[t2].[MiddleName],
 			[t2].[Gender],
-			[a_Patient].[PersonID] as [Patient],
+			[a_Patient].[PersonID] as [c1],
 			[a_Patient].[PersonID],
 			[a_Patient].[Diagnosis]
 		FROM
