@@ -1,10 +1,10 @@
 ﻿-- PostgreSQL.9.5 PostgreSQL
 SELECT
-	x."Category",
-	SUM(x."Amount") FILTER (WHERE x."Year" = 2000),
-	SUM(x."Amount") FILTER (WHERE x."Year" = 2010)
+	g_1."Category",
+	SUM(g_1."Amount") FILTER (WHERE g_1."Year" = 2000),
+	SUM(g_1."Amount") FILTER (WHERE g_1."Year" = 2010)
 FROM
-	"Sales" x
+	"Sales" g_1
 GROUP BY
-	x."Category"
+	g_1."Category"
 

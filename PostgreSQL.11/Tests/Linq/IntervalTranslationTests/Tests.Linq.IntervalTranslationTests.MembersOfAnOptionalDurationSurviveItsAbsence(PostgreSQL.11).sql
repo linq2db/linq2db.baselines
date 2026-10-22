@@ -1,7 +1,7 @@
 ﻿-- PostgreSQL.11 PostgreSQL
 SELECT
 	r."Id",
-	Floor(((r."Grace" / 60)::decimal % 60)::decimal)::Int,
+	Floor((r."Grace" / 60)::decimal % 60)::BigInt::Int,
 	r."Grace"::Float / 60,
 	r."Required"::Float / 60
 FROM

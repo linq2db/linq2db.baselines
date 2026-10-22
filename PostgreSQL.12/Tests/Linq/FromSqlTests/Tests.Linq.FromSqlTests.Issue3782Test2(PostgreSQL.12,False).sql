@@ -1,4 +1,7 @@
 ﻿-- PostgreSQL.12 PostgreSQL12
+DECLARE @p Text(6) -- String
+SET     @p = 'Person'
+
 SELECT
 	p."FirstName",
 	p."PersonID",
@@ -18,7 +21,7 @@ WHERE
 						WHEN EXISTS (
 							SELECT 1
 							FROM information_schema.tables
-							WHERE table_name = 'Person'
+							WHERE table_name = :p
 						)
 						THEN true
 						ELSE false

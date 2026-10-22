@@ -3,7 +3,7 @@ SELECT
 	t."GroupId",
 	COUNT(*),
 	COUNT(CASE
-		WHEN (t."DataValue"::decimal % 2)::decimal = 0 THEN 1
+		WHEN (t."DataValue"::decimal % 2)::Float = 0 THEN 1
 		ELSE NULL
 	END),
 	COUNT(DISTINCT t."DataValue")

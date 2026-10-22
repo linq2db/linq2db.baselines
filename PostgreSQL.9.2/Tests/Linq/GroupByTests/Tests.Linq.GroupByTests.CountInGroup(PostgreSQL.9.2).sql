@@ -3,29 +3,29 @@ SELECT
 	t."GroupId",
 	COUNT(*),
 	COUNT(CASE
-		WHEN (t."DataValue"::decimal % 2)::decimal = 0 THEN 1
+		WHEN (t."DataValue"::decimal % 2)::Float = 0 THEN 1
 		ELSE NULL
 	END),
 	COUNT(*),
 	COUNT(DISTINCT t."DataValue"),
 	COUNT(DISTINCT CASE
-		WHEN (t."DataValue"::decimal % 2)::decimal = 0 THEN t."DataValue"
+		WHEN (t."DataValue"::decimal % 2)::Float = 0 THEN t."DataValue"
 		ELSE NULL
 	END),
 	COUNT(DISTINCT CASE
-		WHEN (t."DataValue"::decimal % 2)::decimal = 0 THEN t."DataValue"
+		WHEN (t."DataValue"::decimal % 2)::Float = 0 THEN t."DataValue"
 		ELSE NULL
 	END),
 	COUNT(DISTINCT CASE
-		WHEN (t."DataValue"::decimal % 2)::decimal = 0 THEN t."DataValue"
+		WHEN (t."DataValue"::decimal % 2)::Float = 0 THEN t."DataValue"
 		ELSE NULL
 	END),
 	COUNT(CASE
-		WHEN (t."DataValue"::decimal % 2)::decimal = 0 THEN 1
+		WHEN (t."DataValue"::decimal % 2)::Float = 0 THEN 1
 		ELSE NULL
 	END),
 	COUNT(DISTINCT CASE
-		WHEN (t."DataValue"::decimal % 2)::decimal = 0 THEN t."DataValue"
+		WHEN (t."DataValue"::decimal % 2)::Float = 0 THEN t."DataValue"
 		ELSE NULL
 	END),
 	COUNT(DISTINCT t."DataValue")

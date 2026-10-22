@@ -4,20 +4,20 @@ SELECT
 	SUM(g_1."DataValue"),
 	SUM(g_1."DataValue"),
 	SUM(CASE
-		WHEN (g_1."DataValue"::decimal % 2)::decimal = 0 THEN g_1."DataValue"
+		WHEN (g_1."DataValue"::decimal % 2)::Float = 0 THEN g_1."DataValue"
 		ELSE NULL
 	END),
 	SUM(CASE
-		WHEN (g_1."DataValue"::decimal % 2)::decimal = 0 THEN g_1."DataValue"
+		WHEN (g_1."DataValue"::decimal % 2)::Float = 0 THEN g_1."DataValue"
 		ELSE NULL
 	END),
 	SUM(DISTINCT g_1."DataValue"),
 	SUM(DISTINCT CASE
-		WHEN (g_1."DataValue"::decimal % 2)::decimal = 0 THEN g_1."DataValue"
+		WHEN (g_1."DataValue"::decimal % 2)::Float = 0 THEN g_1."DataValue"
 		ELSE NULL
 	END),
 	SUM(DISTINCT CASE
-		WHEN (g_1."DataValue"::decimal % 2)::decimal = 0 THEN g_1."DataValue"
+		WHEN (g_1."DataValue"::decimal % 2)::Float = 0 THEN g_1."DataValue"
 		ELSE NULL
 	END)
 FROM
