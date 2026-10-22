@@ -8,19 +8,19 @@ ORDER BY
 
 -- SqlServer.2014.MS SqlServer.2014
 SELECT
-	[e].[Id],
-	MAX(IIF([e].[TheKey] = 10, [rub].[IdeRub], NULL)),
-	MAX(IIF([e].[TheKey] = 20, [rub].[IdeRub], NULL)),
-	MAX(IIF([e].[TheKey] = 30, [rub].[IdeRub], NULL)),
-	MAX(IIF([e].[TheKey] = 10, [rub].[LibRub], NULL)),
-	MAX(IIF([e].[TheKey] = 20, [rub].[LibRub], NULL)),
-	MAX(IIF([e].[TheKey] = 30, [rub].[LibRub], NULL))
+	[g_1].[Id],
+	MAX(IIF([g_1].[TheKey] = 10, [rub].[IdeRub], NULL)),
+	MAX(IIF([g_1].[TheKey] = 20, [rub].[IdeRub], NULL)),
+	MAX(IIF([g_1].[TheKey] = 30, [rub].[IdeRub], NULL)),
+	MAX(IIF([g_1].[TheKey] = 10, [rub].[LibRub], NULL)),
+	MAX(IIF([g_1].[TheKey] = 20, [rub].[LibRub], NULL)),
+	MAX(IIF([g_1].[TheKey] = 30, [rub].[LibRub], NULL))
 FROM
-	[ModTemplate] [e]
-		INNER JOIN [Activity] [act] ON [e].[TheKey] = [act].[Id]
-		INNER JOIN [CoaMask] [cm] ON [e].[Id] = [cm].[Id]
-		LEFT JOIN [AtiRub] [pos] ON [pos].[Id] = [e].[PosRubId]
-		LEFT JOIN [IasRub] [rub] ON [rub].[Id] = [e].[RubId]
+	[ModTemplate] [g_1]
+		INNER JOIN [Activity] [act] ON [g_1].[TheKey] = [act].[Id]
+		INNER JOIN [CoaMask] [cm] ON [g_1].[Id] = [cm].[Id]
+		LEFT JOIN [AtiRub] [pos] ON [pos].[Id] = [g_1].[PosRubId]
+		LEFT JOIN [IasRub] [rub] ON [rub].[Id] = [g_1].[RubId]
 GROUP BY
-	[e].[Id]
+	[g_1].[Id]
 
