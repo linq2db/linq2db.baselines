@@ -24,24 +24,24 @@ FROM
 
 -- SqlServer.2017
 SELECT
-	[x_1].[Color_1],
+	[x_1].[c2],
 	[x_1].[Kind],
 	[x_1].[ItemCode],
-	[x_1].[Color_3],
+	[x_1].[Color],
 	[x_1].[ItemCode_2],
 	[x_1].[Style_1],
-	[x_1].[Color_4],
+	[x_1].[c4],
 	[x_1].[ItemCode_1],
 	[x_1].[ItemCode_3]
 FROM
 	(
 		SELECT
-			IIF([x].[Kind] = 1 OR [x].[Kind] = 2, 1, 0) as [Color],
-			IIF([x].[Kind] = 1 OR [x].[Kind] = 2, 1, 0) as [Color_1],
-			IIF([x].[Kind] = 1, 1, 0) as [Color_2],
+			IIF([x].[Kind] = 1 OR [x].[Kind] = 2, 1, 0) as [c1],
+			IIF([x].[Kind] = 1 OR [x].[Kind] = 2, 1, 0) as [c2],
+			IIF([x].[Kind] = 1, 1, 0) as [c3],
 			Substring([x].[ItemCode], 1, 2) as [ItemCode],
-			[x].[Color] as [Color_3],
-			IIF([x].[Kind] = 1 OR [x].[Kind] = 3, 1, 0) as [Color_4],
+			[x].[Color],
+			IIF([x].[Kind] = 1 OR [x].[Kind] = 3, 1, 0) as [c4],
 			Substring([x].[ItemCode], 5, 2) as [ItemCode_1],
 			[x].[Kind],
 			Substring([x].[ItemCode], 3, 2) as [ItemCode_2],
@@ -51,7 +51,7 @@ FROM
 			[Item] [x]
 	) [x_1]
 WHERE
-	NOT ([x_1].[Color] = 1 AND ([x_1].[Color_1] = 1 AND [x_1].[Color_2] = 1 OR [x_1].[Color_1] = 0) OR [x_1].[Color] = 0 AND [x_1].[Color_4] = 0)
+	NOT ([x_1].[c1] = 1 AND ([x_1].[c2] = 1 AND [x_1].[c3] = 1 OR [x_1].[c2] = 0) OR [x_1].[c1] = 0 AND [x_1].[c4] = 0)
 
 -- SqlServer.2017
 SELECT
@@ -65,24 +65,24 @@ FROM
 
 -- SqlServer.2017
 SELECT
-	[x_1].[Color_1],
+	[x_1].[c2],
 	[x_1].[Kind],
 	[x_1].[ItemCode],
-	[x_1].[Color_3],
+	[x_1].[Color],
 	[x_1].[ItemCode_2],
 	[x_1].[Style_1],
-	[x_1].[Color_4],
+	[x_1].[c4],
 	[x_1].[ItemCode_1],
 	[x_1].[ItemCode_3]
 FROM
 	(
 		SELECT
-			IIF([x].[Kind] = 1 OR [x].[Kind] = 2, 1, 0) as [Color],
-			IIF([x].[Kind] = 1 OR [x].[Kind] = 2, 1, 0) as [Color_1],
-			IIF([x].[Kind] = 1, 1, 0) as [Color_2],
+			IIF([x].[Kind] = 1 OR [x].[Kind] = 2, 1, 0) as [c1],
+			IIF([x].[Kind] = 1 OR [x].[Kind] = 2, 1, 0) as [c2],
+			IIF([x].[Kind] = 1, 1, 0) as [c3],
 			Substring([x].[ItemCode], 1, 2) as [ItemCode],
-			[x].[Color] as [Color_3],
-			IIF([x].[Kind] = 1 OR [x].[Kind] = 3, 1, 0) as [Color_4],
+			[x].[Color],
+			IIF([x].[Kind] = 1 OR [x].[Kind] = 3, 1, 0) as [c4],
 			Substring([x].[ItemCode], 5, 2) as [ItemCode_1],
 			[x].[Kind],
 			Substring([x].[ItemCode], 3, 2) as [ItemCode_2],
@@ -92,8 +92,8 @@ FROM
 			[Item] [x]
 	) [x_1]
 WHERE
-	[x_1].[Color] = 1 AND ([x_1].[Color_1] = 1 AND [x_1].[Color_2] = 1 OR [x_1].[Color_1] = 0) OR
-	[x_1].[Color] = 0 AND [x_1].[Color_4] = 0
+	[x_1].[c1] = 1 AND ([x_1].[c2] = 1 AND [x_1].[c3] = 1 OR [x_1].[c2] = 0) OR
+	[x_1].[c1] = 0 AND [x_1].[c4] = 0
 
 -- SqlServer.2017
 SELECT
@@ -107,24 +107,24 @@ FROM
 
 -- SqlServer.2017
 SELECT
-	[x_1].[Size_2],
+	[x_1].[c2],
 	[x_1].[Kind],
 	[x_1].[ItemCode_2],
 	[x_1].[Color],
 	[x_1].[ItemCode],
 	[x_1].[Style_1],
-	[x_1].[Size_3],
+	[x_1].[c3],
 	[x_1].[ItemCode_3],
 	[x_1].[ItemCode_1]
 FROM
 	(
 		SELECT
-			IIF([x].[Kind] = 1 OR [x].[Kind] = 2, 1, 0) as [Size_1],
-			IIF([x].[Kind] = 1 OR [x].[Kind] = 2, 1, 0) as [Size_2],
+			IIF([x].[Kind] = 1 OR [x].[Kind] = 2, 1, 0) as [c1],
+			IIF([x].[Kind] = 1 OR [x].[Kind] = 2, 1, 0) as [c2],
 			Substring([x].[ItemCode], 3, 2) as [ItemCode],
 			[x].[Style] as [Style_1],
-			IIF([x].[Kind] = 1 OR [x].[Kind] = 3, 1, 0) as [Size_3],
-			IIF([x].[Kind] = 1, 1, 0) as [Size_4],
+			IIF([x].[Kind] = 1 OR [x].[Kind] = 3, 1, 0) as [c3],
+			IIF([x].[Kind] = 1, 1, 0) as [c4],
 			Substring([x].[ItemCode], 7, 2) as [ItemCode_1],
 			[x].[Kind],
 			Substring([x].[ItemCode], 1, 2) as [ItemCode_2],
@@ -134,7 +134,7 @@ FROM
 			[Item] [x]
 	) [x_1]
 WHERE
-	NOT ([x_1].[Size_1] = 1 AND [x_1].[Size_2] = 0 OR [x_1].[Size_1] = 0 AND ([x_1].[Size_3] = 1 AND [x_1].[Size_4] = 1 OR [x_1].[Size_3] = 0))
+	NOT ([x_1].[c1] = 1 AND [x_1].[c2] = 0 OR [x_1].[c1] = 0 AND ([x_1].[c3] = 1 AND [x_1].[c4] = 1 OR [x_1].[c3] = 0))
 
 -- SqlServer.2017
 SELECT
@@ -148,24 +148,24 @@ FROM
 
 -- SqlServer.2017
 SELECT
-	[x_1].[Size_2],
+	[x_1].[c2],
 	[x_1].[Kind],
 	[x_1].[ItemCode_2],
 	[x_1].[Color],
 	[x_1].[ItemCode],
 	[x_1].[Style_1],
-	[x_1].[Size_3],
+	[x_1].[c3],
 	[x_1].[ItemCode_3],
 	[x_1].[ItemCode_1]
 FROM
 	(
 		SELECT
-			IIF([x].[Kind] = 1 OR [x].[Kind] = 2, 1, 0) as [Size_1],
-			IIF([x].[Kind] = 1 OR [x].[Kind] = 2, 1, 0) as [Size_2],
+			IIF([x].[Kind] = 1 OR [x].[Kind] = 2, 1, 0) as [c1],
+			IIF([x].[Kind] = 1 OR [x].[Kind] = 2, 1, 0) as [c2],
 			Substring([x].[ItemCode], 3, 2) as [ItemCode],
 			[x].[Style] as [Style_1],
-			IIF([x].[Kind] = 1 OR [x].[Kind] = 3, 1, 0) as [Size_3],
-			IIF([x].[Kind] = 1, 1, 0) as [Size_4],
+			IIF([x].[Kind] = 1 OR [x].[Kind] = 3, 1, 0) as [c3],
+			IIF([x].[Kind] = 1, 1, 0) as [c4],
 			Substring([x].[ItemCode], 7, 2) as [ItemCode_1],
 			[x].[Kind],
 			Substring([x].[ItemCode], 1, 2) as [ItemCode_2],
@@ -175,7 +175,7 @@ FROM
 			[Item] [x]
 	) [x_1]
 WHERE
-	[x_1].[Size_1] = 1 AND [x_1].[Size_2] = 0 OR [x_1].[Size_1] = 0 AND ([x_1].[Size_3] = 1 AND [x_1].[Size_4] = 1 OR [x_1].[Size_3] = 0)
+	[x_1].[c1] = 1 AND [x_1].[c2] = 0 OR [x_1].[c1] = 0 AND ([x_1].[c3] = 1 AND [x_1].[c4] = 1 OR [x_1].[c3] = 0)
 
 -- SqlServer.2017
 SELECT
