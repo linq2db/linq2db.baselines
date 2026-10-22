@@ -21,7 +21,7 @@ VALUES
 
 -- SqlServer.SA.MS SqlServer.2019
 SELECT TOP (2)
-	DateAdd(nanosecond, CAST((([r].[Elapsed] * 10000000) % 10000000) * 100 AS Int), DateAdd(second, CAST((([r].[Elapsed] * 10000000) % 864000000000) / 10000000 AS Int), DateAdd(day, CAST(([r].[Elapsed] * 10000000) / 864000000000 AS Int), [r].[When])))
+	DateAdd(nanosecond, CAST((([r].[Elapsed] * 10000000) % 10000000) * 100 AS Int), DateAdd(second, CAST((([r].[Elapsed] * 10000000) % 864000000000) / 10000000 AS Int), DateAdd(day, CAST(([r].[Elapsed] * 10000000) / 864000000000 AS Int), CAST([r].[When] AS DateTime2))))
 FROM
 	[PlainDateRow] [r]
 
