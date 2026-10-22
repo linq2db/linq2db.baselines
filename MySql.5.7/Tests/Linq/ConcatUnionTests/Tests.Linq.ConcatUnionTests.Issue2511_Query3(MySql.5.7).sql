@@ -9,7 +9,7 @@ SELECT
 	`t3`.`LastName`,
 	`t3`.`MiddleName`,
 	`t3`.`Gender`,
-	`t3`.`Patient`,
+	`t3`.`c1`,
 	`t3`.`PersonID`,
 	`t3`.`Diagnosis`
 FROM
@@ -21,7 +21,7 @@ FROM
 			`t1`.`LastName`,
 			`t1`.`MiddleName`,
 			`t1`.`Gender`,
-			CAST(NULL AS SIGNED) as `Patient`,
+			CAST(NULL AS SIGNED) as `c1`,
 			CAST(NULL AS SIGNED) as `PersonID`,
 			CAST(NULL AS CHAR(255)) as `Diagnosis`
 		FROM
@@ -44,7 +44,7 @@ FROM
 			`t2`.`LastName`,
 			`t2`.`MiddleName`,
 			`t2`.`Gender`,
-			`a_Patient`.`PersonID` as `Patient`,
+			`a_Patient`.`PersonID` as `c1`,
 			`a_Patient`.`PersonID`,
 			`a_Patient`.`Diagnosis`
 		FROM

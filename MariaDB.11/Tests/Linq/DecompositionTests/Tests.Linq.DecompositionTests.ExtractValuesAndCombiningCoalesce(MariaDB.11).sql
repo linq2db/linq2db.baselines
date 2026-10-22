@@ -24,24 +24,24 @@ FROM
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 SELECT
-	`x_1`.`Color_1`,
+	`x_1`.`c2`,
 	`x_1`.`Kind`,
 	`x_1`.`ItemCode`,
-	`x_1`.`Color_3`,
+	`x_1`.`Color`,
 	`x_1`.`ItemCode_2`,
 	`x_1`.`Style_1`,
-	`x_1`.`Color_4`,
+	`x_1`.`c4`,
 	`x_1`.`ItemCode_1`,
 	`x_1`.`ItemCode_3`
 FROM
 	(
 		SELECT
-			`x`.`Kind` = 1 OR `x`.`Kind` = 2 as `Color`,
-			`x`.`Kind` = 1 OR `x`.`Kind` = 2 as `Color_1`,
-			`x`.`Kind` = 1 as `Color_2`,
+			`x`.`Kind` = 1 OR `x`.`Kind` = 2 as `c1`,
+			`x`.`Kind` = 1 OR `x`.`Kind` = 2 as `c2`,
+			`x`.`Kind` = 1 as `c3`,
 			Substring(`x`.`ItemCode`, 1, 2) as `ItemCode`,
-			`x`.`Color` as `Color_3`,
-			`x`.`Kind` = 1 OR `x`.`Kind` = 3 as `Color_4`,
+			`x`.`Color`,
+			`x`.`Kind` = 1 OR `x`.`Kind` = 3 as `c4`,
 			Substring(`x`.`ItemCode`, 5, 2) as `ItemCode_1`,
 			`x`.`Kind`,
 			Substring(`x`.`ItemCode`, 3, 2) as `ItemCode_2`,
@@ -51,7 +51,7 @@ FROM
 			`Item` `x`
 	) `x_1`
 WHERE
-	NOT (`x_1`.`Color` AND (`x_1`.`Color_1` AND `x_1`.`Color_2` OR NOT `x_1`.`Color_1`) OR NOT `x_1`.`Color` AND NOT `x_1`.`Color_4`)
+	NOT (`x_1`.`c1` AND (`x_1`.`c2` AND `x_1`.`c3` OR NOT `x_1`.`c2`) OR NOT `x_1`.`c1` AND NOT `x_1`.`c4`)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 SELECT
@@ -65,24 +65,24 @@ FROM
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 SELECT
-	`x_1`.`Color_1`,
+	`x_1`.`c2`,
 	`x_1`.`Kind`,
 	`x_1`.`ItemCode`,
-	`x_1`.`Color_3`,
+	`x_1`.`Color`,
 	`x_1`.`ItemCode_2`,
 	`x_1`.`Style_1`,
-	`x_1`.`Color_4`,
+	`x_1`.`c4`,
 	`x_1`.`ItemCode_1`,
 	`x_1`.`ItemCode_3`
 FROM
 	(
 		SELECT
-			`x`.`Kind` = 1 OR `x`.`Kind` = 2 as `Color`,
-			`x`.`Kind` = 1 OR `x`.`Kind` = 2 as `Color_1`,
-			`x`.`Kind` = 1 as `Color_2`,
+			`x`.`Kind` = 1 OR `x`.`Kind` = 2 as `c1`,
+			`x`.`Kind` = 1 OR `x`.`Kind` = 2 as `c2`,
+			`x`.`Kind` = 1 as `c3`,
 			Substring(`x`.`ItemCode`, 1, 2) as `ItemCode`,
-			`x`.`Color` as `Color_3`,
-			`x`.`Kind` = 1 OR `x`.`Kind` = 3 as `Color_4`,
+			`x`.`Color`,
+			`x`.`Kind` = 1 OR `x`.`Kind` = 3 as `c4`,
 			Substring(`x`.`ItemCode`, 5, 2) as `ItemCode_1`,
 			`x`.`Kind`,
 			Substring(`x`.`ItemCode`, 3, 2) as `ItemCode_2`,
@@ -92,8 +92,8 @@ FROM
 			`Item` `x`
 	) `x_1`
 WHERE
-	`x_1`.`Color` AND (`x_1`.`Color_1` AND `x_1`.`Color_2` OR NOT `x_1`.`Color_1`) OR
-	NOT `x_1`.`Color` AND NOT `x_1`.`Color_4`
+	`x_1`.`c1` AND (`x_1`.`c2` AND `x_1`.`c3` OR NOT `x_1`.`c2`) OR
+	NOT `x_1`.`c1` AND NOT `x_1`.`c4`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 SELECT
@@ -107,24 +107,24 @@ FROM
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 SELECT
-	`x_1`.`Size_2`,
+	`x_1`.`c2`,
 	`x_1`.`Kind`,
 	`x_1`.`ItemCode_2`,
 	`x_1`.`Color`,
 	`x_1`.`ItemCode`,
 	`x_1`.`Style_1`,
-	`x_1`.`Size_3`,
+	`x_1`.`c3`,
 	`x_1`.`ItemCode_3`,
 	`x_1`.`ItemCode_1`
 FROM
 	(
 		SELECT
-			`x`.`Kind` = 1 OR `x`.`Kind` = 2 as `Size_1`,
-			`x`.`Kind` = 1 OR `x`.`Kind` = 2 as `Size_2`,
+			`x`.`Kind` = 1 OR `x`.`Kind` = 2 as `c1`,
+			`x`.`Kind` = 1 OR `x`.`Kind` = 2 as `c2`,
 			Substring(`x`.`ItemCode`, 3, 2) as `ItemCode`,
 			`x`.`Style` as `Style_1`,
-			`x`.`Kind` = 1 OR `x`.`Kind` = 3 as `Size_3`,
-			`x`.`Kind` = 1 as `Size_4`,
+			`x`.`Kind` = 1 OR `x`.`Kind` = 3 as `c3`,
+			`x`.`Kind` = 1 as `c4`,
 			Substring(`x`.`ItemCode`, 7, 2) as `ItemCode_1`,
 			`x`.`Kind`,
 			Substring(`x`.`ItemCode`, 1, 2) as `ItemCode_2`,
@@ -134,7 +134,7 @@ FROM
 			`Item` `x`
 	) `x_1`
 WHERE
-	NOT (NOT `x_1`.`Size_1` AND (`x_1`.`Size_3` AND `x_1`.`Size_4` OR NOT `x_1`.`Size_3`))
+	NOT (NOT `x_1`.`c1` AND (`x_1`.`c3` AND `x_1`.`c4` OR NOT `x_1`.`c3`))
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 SELECT
@@ -148,24 +148,24 @@ FROM
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 SELECT
-	`x_1`.`Size_2`,
+	`x_1`.`c2`,
 	`x_1`.`Kind`,
 	`x_1`.`ItemCode_2`,
 	`x_1`.`Color`,
 	`x_1`.`ItemCode`,
 	`x_1`.`Style_1`,
-	`x_1`.`Size_3`,
+	`x_1`.`c3`,
 	`x_1`.`ItemCode_3`,
 	`x_1`.`ItemCode_1`
 FROM
 	(
 		SELECT
-			`x`.`Kind` = 1 OR `x`.`Kind` = 2 as `Size_1`,
-			`x`.`Kind` = 1 OR `x`.`Kind` = 2 as `Size_2`,
+			`x`.`Kind` = 1 OR `x`.`Kind` = 2 as `c1`,
+			`x`.`Kind` = 1 OR `x`.`Kind` = 2 as `c2`,
 			Substring(`x`.`ItemCode`, 3, 2) as `ItemCode`,
 			`x`.`Style` as `Style_1`,
-			`x`.`Kind` = 1 OR `x`.`Kind` = 3 as `Size_3`,
-			`x`.`Kind` = 1 as `Size_4`,
+			`x`.`Kind` = 1 OR `x`.`Kind` = 3 as `c3`,
+			`x`.`Kind` = 1 as `c4`,
 			Substring(`x`.`ItemCode`, 7, 2) as `ItemCode_1`,
 			`x`.`Kind`,
 			Substring(`x`.`ItemCode`, 1, 2) as `ItemCode_2`,
@@ -175,7 +175,7 @@ FROM
 			`Item` `x`
 	) `x_1`
 WHERE
-	NOT `x_1`.`Size_1` AND (`x_1`.`Size_3` AND `x_1`.`Size_4` OR NOT `x_1`.`Size_3`)
+	NOT `x_1`.`c1` AND (`x_1`.`c3` AND `x_1`.`c4` OR NOT `x_1`.`c3`)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 SELECT
