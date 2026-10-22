@@ -29,9 +29,9 @@ SELECT
 	t1.First_1,
 	t1.First_2,
 	t1.First_3,
-	t1.Second_1,
-	t1.Second_2,
-	t1.Second_3
+	t1.FinishedOn,
+	t1.StartedOn,
+	t1.Second_1
 FROM
 	(
 		SELECT
@@ -39,9 +39,9 @@ FROM
 			NVL(r.Budget, NULL) as First_1,
 			NULL::datetime year to fraction(5) as First_2,
 			NULL::datetime year to fraction(5) as First_3,
-			NVL(r.FinishedOn, NULL) as Second_1,
-			NVL(r.StartedOn, NULL) as Second_2,
-			NULL::BigInt as Second_3
+			NVL(r.FinishedOn, NULL) as FinishedOn,
+			NVL(r.StartedOn, NULL) as StartedOn,
+			NULL::BigInt as Second_1
 		FROM
 			BudgetedTaskRow r
 		UNION ALL
@@ -50,9 +50,9 @@ FROM
 			NULL::BigInt as First_1,
 			r_1.FinishedOn as First_2,
 			r_1.StartedOn as First_3,
-			NULL::datetime year to fraction(5) as Second_1,
-			NULL::datetime year to fraction(5) as Second_2,
-			r_1.Budget as Second_3
+			NULL::datetime year to fraction(5) as FinishedOn,
+			NULL::datetime year to fraction(5) as StartedOn,
+			r_1.Budget as Second_1
 		FROM
 			BudgetedTaskRow r_1
 	) t1
