@@ -1,8 +1,8 @@
 ﻿-- SqlCe
 SELECT
-	[t3].[Key_1],
+	[g_2].[Key_1],
 	[t2].[DistinctY2000],
-	[t3].[RowsY2000]
+	[g_2].[RowsY2000]
 FROM
 	(
 		SELECT
@@ -15,7 +15,7 @@ FROM
 			[CategorySales] [g_1]
 		GROUP BY
 			[g_1].[Category]
-	) [t3]
+	) [g_2]
 		OUTER APPLY (
 			SELECT
 				COUNT(*) as [DistinctY2000]
@@ -26,7 +26,7 @@ FROM
 					FROM
 						[CategorySales] [x]
 					WHERE
-						([t3].[Key_1] = [x].[Category] OR [t3].[Key_1] IS NULL AND [x].[Category] IS NULL) AND
+						([g_2].[Key_1] = [x].[Category] OR [g_2].[Key_1] IS NULL AND [x].[Category] IS NULL) AND
 						[x].[Year] = 2000
 				) [t1]
 		) [t2]
