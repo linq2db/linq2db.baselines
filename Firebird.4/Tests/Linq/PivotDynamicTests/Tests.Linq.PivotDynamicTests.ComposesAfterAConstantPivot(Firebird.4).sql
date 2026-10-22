@@ -1,17 +1,25 @@
 ﻿-- Firebird.4 Firebird4
 SELECT
-	"r"."Category",
-	SUM(CASE
-		WHEN "r"."Year" = 2010 THEN "r"."Amount"
-		ELSE NULL
-	END)
+	"r_1"."Key_1",
+	"r_1".Y2010
 FROM
-	"CategorySales" "r"
-GROUP BY
-	"r"."Category"
-HAVING
-	SUM(CASE
-		WHEN "r"."Year" = 2010 THEN "r"."Amount"
-		ELSE NULL
-	END) >= 15
+	(
+		SELECT
+			SUM(CASE
+				WHEN "r"."Year" = 2010 THEN "r"."Amount"
+				ELSE NULL
+			END) as Y2010,
+			"r"."Category" as "Key_1"
+		FROM
+			"CategorySales" "r"
+		GROUP BY
+			"r"."Category"
+		HAVING
+			SUM(CASE
+				WHEN "r"."Year" = 2010 THEN "r"."Amount"
+				ELSE NULL
+			END) >= 15
+	) "r_1"
+ORDER BY
+	"r_1".Y2010 DESC
 

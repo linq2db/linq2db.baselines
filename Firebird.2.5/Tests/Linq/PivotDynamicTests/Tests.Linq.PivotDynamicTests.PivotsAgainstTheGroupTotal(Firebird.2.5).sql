@@ -1,8 +1,8 @@
 ﻿-- Firebird.2.5 Firebird
 SELECT
-	"t1"."Key_1",
-	"t1".Y2000 - "t1".Y2000_1,
-	"t1".Y2000 - "t1".Y2010
+	"g_2"."Key_1",
+	"g_2".Y2000 - "g_2".Y2000_1,
+	"g_2".Y2000 - "g_2".Y2010
 FROM
 	(
 		SELECT
@@ -20,5 +20,5 @@ FROM
 			"CategorySales" "g_1"
 		GROUP BY
 			"g_1"."Category"
-	) "t1"
+	) "g_2"
 

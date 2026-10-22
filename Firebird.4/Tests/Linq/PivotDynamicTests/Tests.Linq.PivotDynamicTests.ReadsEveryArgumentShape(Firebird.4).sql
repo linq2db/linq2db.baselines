@@ -1,0 +1,24 @@
+﻿-- Firebird.4 Firebird4
+SELECT
+	SUM(CASE
+		WHEN "g_1"."Year" = 2000 THEN "g_1"."Amount"
+		ELSE NULL
+	END),
+	SUM(CASE
+		WHEN "g_1"."Year" = 2010 THEN "g_1"."Amount"
+		ELSE NULL
+	END),
+	"g_1"."Category",
+	SUM(CASE
+		WHEN "g_1"."Year" = 2000 THEN "g_1"."Amount" * 2
+		ELSE NULL
+	END),
+	SUM(CASE
+		WHEN "g_1"."Year" = 2010 THEN "g_1"."Amount" * 2
+		ELSE NULL
+	END)
+FROM
+	"Sales" "g_1"
+GROUP BY
+	"g_1"."Category"
+
