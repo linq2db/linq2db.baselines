@@ -37,8 +37,8 @@ FROM
 		SELECT
 			1::Int as Source,
 			NVL(r.Budget, NULL) as First_1,
-			NULL::datetime year to fraction as First_2,
-			NULL::datetime year to fraction as First_3,
+			NULL::datetime year to fraction(5) as First_2,
+			NULL::datetime year to fraction(5) as First_3,
 			NVL(r.FinishedOn, NULL) as Second_1,
 			NVL(r.StartedOn, NULL) as Second_2,
 			NULL::BigInt as Second_3
@@ -50,8 +50,8 @@ FROM
 			NULL::BigInt as First_1,
 			r_1.FinishedOn as First_2,
 			r_1.StartedOn as First_3,
-			NULL::datetime year to fraction as Second_1,
-			NULL::datetime year to fraction as Second_2,
+			NULL::datetime year to fraction(5) as Second_1,
+			NULL::datetime year to fraction(5) as Second_2,
 			r_1.Budget as Second_3
 		FROM
 			BudgetedTaskRow r_1

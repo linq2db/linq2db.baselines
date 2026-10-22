@@ -11,12 +11,12 @@ SELECT
 	END,
 	Abs(Nvl(j.Value1, 0) - 1),
 	CASE
-		WHEN Nvl(j."Date", TO_DATE('0001-01-01', '%Y-%m-%d')) > @bound::datetime year to fraction
+		WHEN Nvl(j."Date", TO_DATE('0001-01-01', '%Y-%m-%d')) > @bound::datetime year to fraction(5)
 			THEN 'y'
 		ELSE 'n'
 	END,
 	CASE
-		WHEN Nvl(j."Date", TO_DATE('0001-01-01', '%Y-%m-%d')) < @bound::datetime year to fraction
+		WHEN Nvl(j."Date", TO_DATE('0001-01-01', '%Y-%m-%d')) < @bound::datetime year to fraction(5)
 			THEN 'y'
 		ELSE 'n'
 	END,

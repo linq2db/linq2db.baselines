@@ -1,0 +1,30 @@
+﻿-- ClickHouse.MySql ClickHouse
+INSERT INTO CoarseDateShapesRow
+(
+	Id,
+	Value,
+	Day,
+	Wide
+)
+VALUES
+(
+	1,
+	toDateTime('2026-06-01 10:00:00'),
+	toDate32('2026-06-01'),
+	toDateTime64('1969-01-01 00:00:00.5000000', 7)
+)
+
+-- ClickHouse.MySql ClickHouse
+SELECT
+	(toUnixTimestamp64Milli(r.Wide) % toInt64(1000) + 1000) % 1000
+FROM
+	CoarseDateShapesRow r
+LIMIT 2
+
+-- ClickHouse.MySql ClickHouse
+SELECT
+	(toUnixTimestamp64Milli(r.Wide) % toInt64(1000) + 1000) % 1000
+FROM
+	CoarseDateShapesRow r
+LIMIT 2
+

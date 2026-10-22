@@ -21,7 +21,7 @@ FROM
 
 -- DB2 DB2.LUW DB2LUW
 SELECT
-	Extract(year from Coalesce("j"."Date", '0001-01-01-00.00.00.000000'))
+	Extract(year from Coalesce("j"."Date", CAST('0001-01-01-00.00.00.000000' AS TIMESTAMP(6))))
 FROM
 	"MissedJoinEntity" "e"
 		LEFT JOIN "MissedJoinEntity" "j" ON "j"."Id" = "e"."Id" + 1000

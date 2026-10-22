@@ -1,6 +1,6 @@
 ﻿-- DB2 DB2.LUW DB2LUW
 DECLARE @bound Timestamp(20) -- DateTime
-SET     @bound = '2000-01-01-00.00.00.000000'
+SET     @bound = CAST('2000-01-01-00.00.00.000000' AS TIMESTAMP(6))
 
 SELECT
 	"e"."Id",
@@ -11,22 +11,22 @@ SELECT
 	END,
 	Abs(Coalesce("j"."Value1", 0) - 1),
 	CASE
-		WHEN Coalesce("j"."Date", '0001-01-01-00.00.00.000000') > CAST(@bound AS timestamp)
+		WHEN Coalesce("j"."Date", CAST('0001-01-01-00.00.00.000000' AS TIMESTAMP(6))) > CAST(@bound AS timestamp)
 			THEN 'y'
 		ELSE 'n'
 	END,
 	CASE
-		WHEN Coalesce("j"."Date", '0001-01-01-00.00.00.000000') < CAST(@bound AS timestamp)
+		WHEN Coalesce("j"."Date", CAST('0001-01-01-00.00.00.000000' AS TIMESTAMP(6))) < CAST(@bound AS timestamp)
 			THEN 'y'
 		ELSE 'n'
 	END,
 	CASE
-		WHEN Coalesce("j"."Date", '0001-01-01-00.00.00.000000') > "e"."Date"
+		WHEN Coalesce("j"."Date", CAST('0001-01-01-00.00.00.000000' AS TIMESTAMP(6))) > "e"."Date"
 			THEN 'y'
 		ELSE 'n'
 	END,
 	CASE
-		WHEN Coalesce("j"."Date", '0001-01-01-00.00.00.000000') <= "e"."Date"
+		WHEN Coalesce("j"."Date", CAST('0001-01-01-00.00.00.000000' AS TIMESTAMP(6))) <= "e"."Date"
 			THEN 'y'
 		ELSE 'n'
 	END
@@ -46,7 +46,7 @@ FROM
 
 -- DB2 DB2.LUW DB2LUW
 SELECT
-	Extract(year from Coalesce("j"."Date", '0001-01-01-00.00.00.000000'))
+	Extract(year from Coalesce("j"."Date", CAST('0001-01-01-00.00.00.000000' AS TIMESTAMP(6))))
 FROM
 	"MissedJoinEntity" "e"
 		LEFT JOIN "MissedJoinEntity" "j" ON "j"."Id" = "e"."Id" + 1000

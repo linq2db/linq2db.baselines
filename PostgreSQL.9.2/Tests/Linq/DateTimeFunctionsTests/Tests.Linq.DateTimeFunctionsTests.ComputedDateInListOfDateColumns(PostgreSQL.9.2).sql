@@ -1,0 +1,8 @@
+﻿-- PostgreSQL.9.2 PostgreSQL
+SELECT
+	COUNT(*)
+FROM
+	"CoarseDayPairRow" r
+WHERE
+	Coalesce(r."ClosedOn", r."OpenedOn") IN (r."OpenedOn")
+

@@ -1,8 +1,8 @@
 ﻿-- DB2 DB2.LUW DB2LUW
 DECLARE @Date Timestamp(20) -- DateTime
-SET     @Date = '2020-02-29-00.00.00.000000'
+SET     @Date = CAST('2020-02-29-00.00.00.000000' AS TIMESTAMP(6))
 DECLARE @dateTo Timestamp(20) -- DateTime
-SET     @dateTo = '2020-03-10-00.00.00.000000'
+SET     @dateTo = CAST('2020-03-10-00.00.00.000000' AS TIMESTAMP(6))
 
 WITH "x" ("Counter", "Date_1")
 AS
