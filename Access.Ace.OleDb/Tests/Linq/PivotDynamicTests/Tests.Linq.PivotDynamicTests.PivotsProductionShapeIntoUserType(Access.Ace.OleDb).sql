@@ -8,82 +8,82 @@ ORDER BY
 
 -- Access.Ace.OleDb AccessOleDb
 SELECT
-	[e].[Id],
+	[g_1].[Id],
 	MAX([cm].[Name]),
 	MAX([pos].[LibRub]),
-	MAX([e].[ModifiedAt]),
-	MAX(IIF([e].[TheKey] = 10, [rub].[IdeRub], NULL)),
-	MAX(IIF([e].[TheKey] = 20, [rub].[IdeRub], NULL)),
-	MAX(IIF([e].[TheKey] = 30, [rub].[IdeRub], NULL)),
-	MAX(IIF([e].[TheKey] = 10, [rub].[LibRub], NULL)),
-	MAX(IIF([e].[TheKey] = 20, [rub].[LibRub], NULL)),
-	MAX(IIF([e].[TheKey] = 30, [rub].[LibRub], NULL))
+	MAX([g_1].[ModifiedAt]),
+	MAX(IIF([g_1].[TheKey] = 10, [rub].[IdeRub], NULL)),
+	MAX(IIF([g_1].[TheKey] = 20, [rub].[IdeRub], NULL)),
+	MAX(IIF([g_1].[TheKey] = 30, [rub].[IdeRub], NULL)),
+	MAX(IIF([g_1].[TheKey] = 10, [rub].[LibRub], NULL)),
+	MAX(IIF([g_1].[TheKey] = 20, [rub].[LibRub], NULL)),
+	MAX(IIF([g_1].[TheKey] = 30, [rub].[LibRub], NULL))
 FROM
-	((([ModTemplate] [e]
-		INNER JOIN [Activity] [act] ON ([e].[TheKey] = [act].[Id]))
-		INNER JOIN [CoaMask] [cm] ON ([e].[Id] = [cm].[Id]))
-		LEFT JOIN [AtiRub] [pos] ON ([pos].[Id] = [e].[PosRubId]))
-		LEFT JOIN [IasRub] [rub] ON ([rub].[Id] = [e].[RubId])
+	((([ModTemplate] [g_1]
+		INNER JOIN [Activity] [act] ON ([g_1].[TheKey] = [act].[Id]))
+		INNER JOIN [CoaMask] [cm] ON ([g_1].[Id] = [cm].[Id]))
+		LEFT JOIN [AtiRub] [pos] ON ([pos].[Id] = [g_1].[PosRubId]))
+		LEFT JOIN [IasRub] [rub] ON ([rub].[Id] = [g_1].[RubId])
 GROUP BY
-	[e].[Id]
+	[g_1].[Id]
 
 -- Access.Ace.OleDb AccessOleDb
 SELECT
-	[r_1].[Key_1],
-	[r_1].[CoaName],
-	[r_1].[PosLibRub],
-	[r_1].[ModifiedAt],
-	[r_1].[IDE_10],
-	[r_1].[IDE_20],
-	[r_1].[IDE_30],
-	[r_1].[LIB_10],
-	[r_1].[LIB_20],
-	[r_1].[LIB_30]
+	[r].[Key_1],
+	[r].[CoaName],
+	[r].[PosLibRub],
+	[r].[ModifiedAt],
+	[r].[IDE_10],
+	[r].[IDE_20],
+	[r].[IDE_30],
+	[r].[LIB_10],
+	[r].[LIB_20],
+	[r].[LIB_30]
 FROM
 	(
 		SELECT
-			[r].[Id] as [Key_1],
-			MAX(IIF([r].[TheKey] = 20, [rub].[IdeRub], NULL)) as [IDE_20],
+			[g_1].[Id] as [Key_1],
+			MAX(IIF([g_1].[TheKey] = 20, [rub].[IdeRub], NULL)) as [IDE_20],
 			MAX([cm].[Name]) as [CoaName],
 			MAX([pos].[LibRub]) as [PosLibRub],
-			MAX([r].[ModifiedAt]) as [ModifiedAt],
-			MAX(IIF([r].[TheKey] = 10, [rub].[IdeRub], NULL)) as [IDE_10],
-			MAX(IIF([r].[TheKey] = 30, [rub].[IdeRub], NULL)) as [IDE_30],
-			MAX(IIF([r].[TheKey] = 10, [rub].[LibRub], NULL)) as [LIB_10],
-			MAX(IIF([r].[TheKey] = 20, [rub].[LibRub], NULL)) as [LIB_20],
-			MAX(IIF([r].[TheKey] = 30, [rub].[LibRub], NULL)) as [LIB_30]
+			MAX([g_1].[ModifiedAt]) as [ModifiedAt],
+			MAX(IIF([g_1].[TheKey] = 10, [rub].[IdeRub], NULL)) as [IDE_10],
+			MAX(IIF([g_1].[TheKey] = 30, [rub].[IdeRub], NULL)) as [IDE_30],
+			MAX(IIF([g_1].[TheKey] = 10, [rub].[LibRub], NULL)) as [LIB_10],
+			MAX(IIF([g_1].[TheKey] = 20, [rub].[LibRub], NULL)) as [LIB_20],
+			MAX(IIF([g_1].[TheKey] = 30, [rub].[LibRub], NULL)) as [LIB_30]
 		FROM
-			((([ModTemplate] [r]
-				INNER JOIN [Activity] [act] ON ([r].[TheKey] = [act].[Id]))
-				INNER JOIN [CoaMask] [cm] ON ([r].[Id] = [cm].[Id]))
-				LEFT JOIN [AtiRub] [pos] ON ([pos].[Id] = [r].[PosRubId]))
-				LEFT JOIN [IasRub] [rub] ON ([rub].[Id] = [r].[RubId])
+			((([ModTemplate] [g_1]
+				INNER JOIN [Activity] [act] ON ([g_1].[TheKey] = [act].[Id]))
+				INNER JOIN [CoaMask] [cm] ON ([g_1].[Id] = [cm].[Id]))
+				LEFT JOIN [AtiRub] [pos] ON ([pos].[Id] = [g_1].[PosRubId]))
+				LEFT JOIN [IasRub] [rub] ON ([rub].[Id] = [g_1].[RubId])
 		GROUP BY
-			[r].[Id]
-	) [r_1]
+			[g_1].[Id]
+	) [r]
 WHERE
-	[r_1].[Key_1] = 1 AND [r_1].[IDE_20] = 'IDE-B'
+	[r].[Key_1] = 1 AND [r].[IDE_20] = 'IDE-B'
 
 -- Access.Ace.OleDb AccessOleDb
 SELECT
-	[e].[Id],
+	[g_1].[Id],
 	MAX([cm].[Name]),
 	MAX([pos].[LibRub]),
-	MAX([e].[ModifiedAt]),
-	MAX(IIF([e].[TheKey] = 10, [rub].[IdeRub], NULL)),
-	MAX(IIF([e].[TheKey] = 20, [rub].[IdeRub], NULL)),
-	MAX(IIF([e].[TheKey] = 30, [rub].[IdeRub], NULL)),
-	MAX(IIF([e].[TheKey] = 40, [rub].[IdeRub], NULL)),
-	MAX(IIF([e].[TheKey] = 10, [rub].[LibRub], NULL)),
-	MAX(IIF([e].[TheKey] = 20, [rub].[LibRub], NULL)),
-	MAX(IIF([e].[TheKey] = 30, [rub].[LibRub], NULL)),
-	MAX(IIF([e].[TheKey] = 40, [rub].[LibRub], NULL))
+	MAX([g_1].[ModifiedAt]),
+	MAX(IIF([g_1].[TheKey] = 10, [rub].[IdeRub], NULL)),
+	MAX(IIF([g_1].[TheKey] = 20, [rub].[IdeRub], NULL)),
+	MAX(IIF([g_1].[TheKey] = 30, [rub].[IdeRub], NULL)),
+	MAX(IIF([g_1].[TheKey] = 40, [rub].[IdeRub], NULL)),
+	MAX(IIF([g_1].[TheKey] = 10, [rub].[LibRub], NULL)),
+	MAX(IIF([g_1].[TheKey] = 20, [rub].[LibRub], NULL)),
+	MAX(IIF([g_1].[TheKey] = 30, [rub].[LibRub], NULL)),
+	MAX(IIF([g_1].[TheKey] = 40, [rub].[LibRub], NULL))
 FROM
-	((([ModTemplate] [e]
-		INNER JOIN [Activity] [act] ON ([e].[TheKey] = [act].[Id]))
-		INNER JOIN [CoaMask] [cm] ON ([e].[Id] = [cm].[Id]))
-		LEFT JOIN [AtiRub] [pos] ON ([pos].[Id] = [e].[PosRubId]))
-		LEFT JOIN [IasRub] [rub] ON ([rub].[Id] = [e].[RubId])
+	((([ModTemplate] [g_1]
+		INNER JOIN [Activity] [act] ON ([g_1].[TheKey] = [act].[Id]))
+		INNER JOIN [CoaMask] [cm] ON ([g_1].[Id] = [cm].[Id]))
+		LEFT JOIN [AtiRub] [pos] ON ([pos].[Id] = [g_1].[PosRubId]))
+		LEFT JOIN [IasRub] [rub] ON ([rub].[Id] = [g_1].[RubId])
 GROUP BY
-	[e].[Id]
+	[g_1].[Id]
 
