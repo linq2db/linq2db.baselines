@@ -38,13 +38,13 @@ WHERE (@ef_filter__p1 OR p."ProductID" > 2) AND (@ef_filter__p1 OR NOT (p."Disco
 
 -- PostgreSQL.15 PostgreSQL12
 SELECT
-	e."SupplierID",
-	COUNT(*) FILTER (WHERE e."Discontinued" = False),
-	COUNT(*) FILTER (WHERE e."Discontinued" = True)
+	g_1."SupplierID",
+	COUNT(*) FILTER (WHERE g_1."Discontinued" = False),
+	COUNT(*) FILTER (WHERE g_1."Discontinued" = True)
 FROM
-	"Products" e
+	"Products" g_1
 GROUP BY
-	e."SupplierID"
+	g_1."SupplierID"
 
 
 
