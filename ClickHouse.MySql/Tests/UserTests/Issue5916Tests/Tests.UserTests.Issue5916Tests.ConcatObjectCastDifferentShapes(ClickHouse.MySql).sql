@@ -1,29 +1,29 @@
 ﻿-- ClickHouse.MySql ClickHouse
 SELECT
-	toString('p_') as c1,
+	toString('p_') as id,
 	p.PersonID,
-	toString('X') as c2,
+	toString('X') as id_1,
 	p.FirstName,
+	toString(NULL) as c1,
+	toInt32(NULL) as c2,
 	toString(NULL) as c3,
-	toInt32(NULL) as c4,
-	toString(NULL) as c5,
-	toString(NULL) as c6,
-	toString(NULL) as c7
+	toString(NULL) as c4,
+	toString(NULL) as c5
 FROM
 	Person p
 WHERE
 	p.PersonID > 2
 UNION ALL
 SELECT
-	toString(NULL) as c1,
+	toString(NULL) as id,
 	toInt32(NULL) as PersonID,
-	toString(NULL) as c2,
+	toString(NULL) as id_1,
 	toString(NULL) as FirstName,
-	toString('c_') as c3,
-	p_1.PersonID as c4,
-	toString('X') as c5,
-	p_1.FirstName as c6,
-	p_1.LastName as c7
+	toString('c_') as c1,
+	p_1.PersonID as c2,
+	toString('X') as c3,
+	p_1.FirstName as c4,
+	p_1.LastName as c5
 FROM
 	Person p_1
 WHERE

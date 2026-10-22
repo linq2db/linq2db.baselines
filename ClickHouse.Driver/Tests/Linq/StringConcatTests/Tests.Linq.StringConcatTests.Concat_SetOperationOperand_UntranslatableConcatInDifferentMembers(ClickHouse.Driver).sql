@@ -1,31 +1,31 @@
 ﻿-- ClickHouse.Driver ClickHouse
 SELECT
-	toString('p_') as c1,
-	e.Id,
-	toString('N') as c2,
-	toUUID(NULL) as c3,
-	toString(NULL) as c4,
+	toString('p_') as id,
+	e.Id as Id_1,
+	toString('N') as id_2,
+	toUUID(NULL) as c1,
+	toString(NULL) as c2,
 	e.Name,
 	toString(NULL) as parent,
-	toString(NULL) as c5,
-	toUUID(NULL) as c6,
-	toString(NULL) as c7
+	toString(NULL) as c3,
+	toUUID(NULL) as c4,
+	toString(NULL) as c5
 FROM
 	ConcatSetOpEntity e
 WHERE
 	e.ParentId IS NULL
 UNION ALL
 SELECT
-	toString(NULL) as c1,
-	toUUID(NULL) as Id,
-	toString(NULL) as c2,
-	e_1.Id as c3,
-	toString('N') as c4,
+	toString(NULL) as id,
+	toUUID(NULL) as Id_1,
+	toString(NULL) as id_2,
+	e_1.Id as c1,
+	toString('N') as c2,
 	e_1.Name as Name,
 	toString(NULL) as parent,
-	toString('p_') as c5,
-	e_1.ParentId as c6,
-	toString('N') as c7
+	toString('p_') as c3,
+	e_1.ParentId as c4,
+	toString('N') as c5
 FROM
 	ConcatSetOpEntity e_1
 WHERE

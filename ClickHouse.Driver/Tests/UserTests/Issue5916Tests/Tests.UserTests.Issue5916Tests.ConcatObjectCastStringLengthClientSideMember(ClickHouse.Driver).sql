@@ -1,7 +1,7 @@
 ﻿-- ClickHouse.Driver ClickHouse
 SELECT
 	lengthUTF8(p.FirstName) as Length_1,
-	toString('X') as c1,
+	toString('X') as id,
 	p.FirstName
 FROM
 	Person p
@@ -10,7 +10,7 @@ WHERE
 UNION ALL
 SELECT
 	lengthUTF8(p_1.LastName) as Length_1,
-	toString('X') as c1,
+	toString('X') as id,
 	p_1.FirstName as FirstName
 FROM
 	Person p_1

@@ -1,6 +1,6 @@
 ﻿-- Oracle.11.Managed Oracle11
 SELECT
-	t1."Value_2",
+	t1."HasValue",
 	t1."Value_1"
 FROM
 	"Request" a
@@ -10,7 +10,7 @@ FROM
 				CASE
 					WHEN a_Metrics."Value" IS NOT NULL THEN 1
 					ELSE 0
-				END as "Value_2",
+				END as "HasValue",
 				ROW_NUMBER() OVER (PARTITION BY a_Metrics."RequestId" ORDER BY a_Metrics."RequestId") as "rn",
 				a_Metrics."RequestId"
 			FROM

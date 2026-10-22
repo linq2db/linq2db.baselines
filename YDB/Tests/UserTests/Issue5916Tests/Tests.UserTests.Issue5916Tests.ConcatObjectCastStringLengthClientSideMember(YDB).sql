@@ -1,7 +1,7 @@
 ﻿-- YDB Ydb
 SELECT
 	Unwrap(CAST(Unicode::GetLength(p.FirstName) AS Int32)) as Length_1,
-	Unwrap(CAST('X'u AS Text)) as c1,
+	Unwrap(CAST('X'u AS Text)) as id,
 	p.FirstName as FirstName
 FROM
 	Person p
@@ -10,7 +10,7 @@ WHERE
 UNION ALL
 SELECT
 	Unwrap(CAST(Unicode::GetLength(p_1.LastName) AS Int32)) as Length_1,
-	Unwrap(CAST('X'u AS Text)) as c1,
+	Unwrap(CAST('X'u AS Text)) as id,
 	p_1.FirstName as FirstName
 FROM
 	Person p_1

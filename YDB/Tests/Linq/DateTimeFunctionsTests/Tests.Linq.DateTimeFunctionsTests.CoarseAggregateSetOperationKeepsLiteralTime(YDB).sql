@@ -25,27 +25,27 @@ VALUES
 
 -- YDB Ydb
 SELECT
-	MAX(g_1.`Day`) as c1
+	MAX(g_1.`Day`) as Max_1
 FROM
 	CoarseDateShapesRow g_1
 GROUP BY
 	g_1.Id
 UNION ALL
 SELECT
-	Unwrap(CAST(Timestamp('2026-06-01T10:00:00.000000Z') AS Timestamp)) as c1
+	Unwrap(CAST(Timestamp('2026-06-01T10:00:00.000000Z') AS Timestamp)) as Max_1
 FROM
 	CoarseDateShapesRow r
 
 -- YDB Ydb
 SELECT
-	MAX(g_1.`Value`) as c1
+	MAX(g_1.`Value`) as Max_1
 FROM
 	CoarseDateShapesRow g_1
 GROUP BY
 	g_1.Id
 UNION ALL
 SELECT
-	Unwrap(CAST(Timestamp('2026-06-01T10:00:00.500000Z') AS Timestamp)) as c1
+	Unwrap(CAST(Timestamp('2026-06-01T10:00:00.500000Z') AS Timestamp)) as Max_1
 FROM
 	CoarseDateShapesRow r
 

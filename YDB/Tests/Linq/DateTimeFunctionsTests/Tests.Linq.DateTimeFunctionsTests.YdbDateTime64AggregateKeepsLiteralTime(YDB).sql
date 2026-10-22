@@ -33,14 +33,14 @@ WHERE
 
 -- YDB Ydb
 SELECT
-	MAX(g_1.`Value`) as c1
+	MAX(g_1.`Value`) as Max_1
 FROM
 	YdbDateTime64Row g_1
 GROUP BY
 	g_1.Id
 UNION ALL
 SELECT
-	Unwrap(CAST(Timestamp('2026-06-01T10:00:00.500000Z') AS Timestamp)) as c1
+	Unwrap(CAST(Timestamp('2026-06-01T10:00:00.500000Z') AS Timestamp)) as Max_1
 FROM
 	YdbDateTime64Row r
 

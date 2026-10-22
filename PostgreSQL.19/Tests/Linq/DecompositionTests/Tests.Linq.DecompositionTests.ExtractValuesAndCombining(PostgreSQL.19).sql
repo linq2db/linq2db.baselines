@@ -136,8 +136,8 @@ FROM
 
 -- PostgreSQL.19 PostgreSQL12
 SELECT
+	x_1."Top",
 	x_1."Color",
-	x_1."Color_1",
 	x_1."ItemCode",
 	x_1."Name",
 	x_1."ItemCode_2",
@@ -150,8 +150,8 @@ SELECT
 FROM
 	(
 		SELECT
-			x."Top" as "Color",
-			x."Color_1",
+			x."Top",
+			x."Color_1" as "Color",
 			x."ItemCode",
 			x."Color" as "Name",
 			x."ItemCode_1",
@@ -177,8 +177,8 @@ FROM
 			x."Top"
 		UNION ALL
 		SELECT
-			t1."Bottom" as "Color",
-			NULL::Boolean as "Color_1",
+			t1."Bottom" as "Top",
+			NULL::Boolean as "Color",
 			NULL::text as "ItemCode",
 			NULL::text as "Name",
 			NULL::text as "ItemCode_1",
@@ -204,7 +204,7 @@ FROM
 			t1."Bottom"
 	) x_1
 WHERE
-	NOT (x_1."Color" AND x_1."Color_1" IS NOT NULL AND x_1."Color_1" OR NOT x_1."Color")
+	NOT (x_1."Top" AND x_1."Color" IS NOT NULL AND x_1."Color" OR NOT x_1."Top")
 
 -- PostgreSQL.19 PostgreSQL12
 SELECT
@@ -218,8 +218,8 @@ FROM
 
 -- PostgreSQL.19 PostgreSQL12
 SELECT
+	x_1."Top",
 	x_1."Color",
-	x_1."Color_1",
 	x_1."ItemCode",
 	x_1."Name",
 	x_1."ItemCode_2",
@@ -232,8 +232,8 @@ SELECT
 FROM
 	(
 		SELECT
-			x."Top" as "Color",
-			x."Color_1",
+			x."Top",
+			x."Color_1" as "Color",
 			x."ItemCode",
 			x."Color" as "Name",
 			x."ItemCode_1",
@@ -259,8 +259,8 @@ FROM
 			x."Top"
 		UNION ALL
 		SELECT
-			t1."Bottom" as "Color",
-			NULL::Boolean as "Color_1",
+			t1."Bottom" as "Top",
+			NULL::Boolean as "Color",
 			NULL::text as "ItemCode",
 			NULL::text as "Name",
 			NULL::text as "ItemCode_1",
@@ -286,8 +286,8 @@ FROM
 			t1."Bottom"
 	) x_1
 WHERE
-	x_1."Color" AND x_1."Color_1" IS NOT NULL AND x_1."Color_1" OR
-	NOT x_1."Color"
+	x_1."Top" AND x_1."Color" IS NOT NULL AND x_1."Color" OR
+	NOT x_1."Top"
 
 -- PostgreSQL.19 PostgreSQL12
 SELECT
@@ -301,7 +301,7 @@ FROM
 
 -- PostgreSQL.19 PostgreSQL12
 SELECT
-	x_1."Size_1",
+	x_1."Top",
 	x_1."Color",
 	x_1."ItemCode",
 	x_1."Name",
@@ -309,13 +309,13 @@ SELECT
 	x_1."Name_2",
 	x_1."ItemCode_1",
 	x_1."Name_1",
-	x_1."Size_2",
+	x_1."Size_1",
 	x_1."ItemCode_3",
 	x_1."Name_3"
 FROM
 	(
 		SELECT
-			x."Top" as "Size_1",
+			x."Top",
 			x."Color_1" as "Color",
 			x."ItemCode",
 			x."Color" as "Name",
@@ -323,7 +323,7 @@ FROM
 			x."Style_1" as "Name_1",
 			NULL::text as "ItemCode_2",
 			NULL::text as "Name_2",
-			NULL::Boolean as "Size_2",
+			NULL::Boolean as "Size_1",
 			NULL::text as "ItemCode_3",
 			NULL::text as "Name_3"
 		FROM
@@ -342,7 +342,7 @@ FROM
 			x."Top"
 		UNION ALL
 		SELECT
-			t1."Bottom" as "Size_1",
+			t1."Bottom" as "Top",
 			NULL::Boolean as "Color",
 			NULL::text as "ItemCode",
 			NULL::text as "Name",
@@ -350,7 +350,7 @@ FROM
 			NULL::text as "Name_1",
 			t1."ItemCode" as "ItemCode_2",
 			t1."Color" as "Name_2",
-			t1."Size_1" as "Size_2",
+			t1."Size_1",
 			t1."ItemCode_1" as "ItemCode_3",
 			t1."Style_1" as "Name_3"
 		FROM
@@ -369,7 +369,7 @@ FROM
 			t1."Bottom"
 	) x_1
 WHERE
-	NOT (x_1."Size_1" AND x_1."Color" IS NULL AND x_1."Size_2" OR NOT x_1."Size_1")
+	NOT (x_1."Top" AND x_1."Color" IS NULL AND x_1."Size_1" OR NOT x_1."Top")
 
 -- PostgreSQL.19 PostgreSQL12
 SELECT
@@ -383,7 +383,7 @@ FROM
 
 -- PostgreSQL.19 PostgreSQL12
 SELECT
-	x_1."Size_1",
+	x_1."Top",
 	x_1."Color",
 	x_1."ItemCode",
 	x_1."Name",
@@ -391,13 +391,13 @@ SELECT
 	x_1."Name_2",
 	x_1."ItemCode_1",
 	x_1."Name_1",
-	x_1."Size_2",
+	x_1."Size_1",
 	x_1."ItemCode_3",
 	x_1."Name_3"
 FROM
 	(
 		SELECT
-			x."Top" as "Size_1",
+			x."Top",
 			x."Color_1" as "Color",
 			x."ItemCode",
 			x."Color" as "Name",
@@ -405,7 +405,7 @@ FROM
 			x."Style_1" as "Name_1",
 			NULL::text as "ItemCode_2",
 			NULL::text as "Name_2",
-			NULL::Boolean as "Size_2",
+			NULL::Boolean as "Size_1",
 			NULL::text as "ItemCode_3",
 			NULL::text as "Name_3"
 		FROM
@@ -424,7 +424,7 @@ FROM
 			x."Top"
 		UNION ALL
 		SELECT
-			t1."Bottom" as "Size_1",
+			t1."Bottom" as "Top",
 			NULL::Boolean as "Color",
 			NULL::text as "ItemCode",
 			NULL::text as "Name",
@@ -432,7 +432,7 @@ FROM
 			NULL::text as "Name_1",
 			t1."ItemCode" as "ItemCode_2",
 			t1."Color" as "Name_2",
-			t1."Size_1" as "Size_2",
+			t1."Size_1",
 			t1."ItemCode_1" as "ItemCode_3",
 			t1."Style_1" as "Name_3"
 		FROM
@@ -451,8 +451,8 @@ FROM
 			t1."Bottom"
 	) x_1
 WHERE
-	x_1."Size_1" AND x_1."Color" IS NULL AND x_1."Size_2" OR
-	NOT x_1."Size_1"
+	x_1."Top" AND x_1."Color" IS NULL AND x_1."Size_1" OR
+	NOT x_1."Top"
 
 -- PostgreSQL.19 PostgreSQL12
 SELECT

@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
 SELECT
-	Unwrap(CAST('p_'u AS Text)) as c1,
+	Unwrap(CAST('p_'u AS Text)) as id,
 	p.PersonID as PersonID,
-	Unwrap(CAST('X'u AS Text)) as c2,
+	Unwrap(CAST('X'u AS Text)) as id_1,
 	p.FirstName as FirstName
 FROM
 	Person p
@@ -10,9 +10,9 @@ WHERE
 	p.PersonID > 2
 UNION ALL
 SELECT
-	Unwrap(CAST('q_'u AS Text)) as c1,
+	Unwrap(CAST('q_'u AS Text)) as id,
 	p_1.PersonID as PersonID,
-	Unwrap(CAST('X'u AS Text)) as c2,
+	Unwrap(CAST('X'u AS Text)) as id_1,
 	p_1.FirstName as FirstName
 FROM
 	Person p_1

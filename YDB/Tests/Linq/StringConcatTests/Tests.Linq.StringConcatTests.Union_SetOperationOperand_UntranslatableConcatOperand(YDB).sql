@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
 SELECT
-	Unwrap(CAST('p_'u AS Text)) as c1,
-	e.Id as Id,
-	Unwrap(CAST('N'u AS Text)) as c2,
+	Unwrap(CAST('p_'u AS Text)) as id,
+	e.Id as Id_1,
+	Unwrap(CAST('N'u AS Text)) as id_2,
 	e.Name as Name
 FROM
 	ConcatSetOpEntity e
@@ -10,9 +10,9 @@ WHERE
 	e.Name IS NOT NULL
 UNION
 SELECT
-	Unwrap(CAST('p_'u AS Text)) as c1,
-	e_1.Id as Id,
-	Unwrap(CAST('N'u AS Text)) as c2,
+	Unwrap(CAST('p_'u AS Text)) as id,
+	e_1.Id as Id_1,
+	Unwrap(CAST('N'u AS Text)) as id_2,
 	e_1.Name as Name
 FROM
 	ConcatSetOpEntity e_1
