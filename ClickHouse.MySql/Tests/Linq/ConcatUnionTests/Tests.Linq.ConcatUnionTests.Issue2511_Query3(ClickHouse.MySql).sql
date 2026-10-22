@@ -6,7 +6,7 @@ SELECT
 	t3.LastName,
 	t3.MiddleName,
 	t3.Gender,
-	t3.Patient,
+	t3.c1,
 	t3.PersonID,
 	t3.Diagnosis
 FROM
@@ -18,7 +18,7 @@ FROM
 			t1.LastName as LastName,
 			t1.MiddleName as MiddleName,
 			t1.Gender as Gender,
-			toInt32(NULL) as Patient,
+			toInt32(NULL) as c1,
 			toInt32(NULL) as PersonID,
 			toString(NULL) as Diagnosis
 		FROM
@@ -41,7 +41,7 @@ FROM
 			t2.LastName as LastName,
 			t2.MiddleName as MiddleName,
 			t2.Gender as Gender,
-			a_Patient.PersonID as Patient,
+			a_Patient.PersonID as c1,
 			a_Patient.PersonID as PersonID,
 			a_Patient.Diagnosis as Diagnosis
 		FROM
