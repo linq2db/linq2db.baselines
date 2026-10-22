@@ -1,0 +1,13 @@
+﻿-- YDB Ydb
+DECLARE $value Int32
+SET     $value = 1
+
+SELECT
+	c_1.ParentID as ParentID,
+	c_1.ChildID as ChildID
+FROM
+	Child c_1
+		LEFT JOIN Parent a_Parent ON c_1.ParentID = a_Parent.ParentID
+WHERE
+	a_Parent.Value1 = $value
+
