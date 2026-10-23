@@ -19,8 +19,7 @@ WHERE
 			$CTE_1 t2
 		WHERE
 			t2.value_1 IS NULL
-	) OR
-	p.MiddleName IS NOT NULL AND p.MiddleName IN (
+	) OR p.MiddleName IS NOT NULL AND p.MiddleName IN (
 		SELECT
 			t2.value_1
 		FROM
@@ -50,8 +49,7 @@ WHERE
 			$CTE_1 t2
 		WHERE
 			t2.value_1 IS NULL
-	) OR
-	p.MiddleName IS NOT NULL AND p.MiddleName IN (
+	) OR p.MiddleName IS NOT NULL AND p.MiddleName IN (
 		SELECT
 			t2.value_1
 		FROM
@@ -81,8 +79,7 @@ WHERE
 			$CTE_1 t2
 		WHERE
 			t2.value_1 IS NULL
-	) OR
-	p.MiddleName IS NOT NULL AND p.MiddleName IN (
+	) OR p.MiddleName IS NOT NULL AND p.MiddleName IN (
 		SELECT
 			t2.value_1
 		FROM
