@@ -1,0 +1,7 @@
+﻿-- SqlServer.2025.MS SqlServer.2025
+SELECT
+	MAX(TIMEDATATYPE)
+FROM
+	[ALLTYPES] [t]
+		CROSS JOIN [Child] [c_1]
+
