@@ -20,7 +20,7 @@ SELECT
 FROM
 	ClosedPeriodRow r
 WHERE
-	toFloat64(intDiv(toUnixTimestamp64Nano(toDateTime64(toDateTime64('2026-01-03 13:30:00.0000000', 7), 7)) - toUnixTimestamp64Nano(toDateTime64(r.ClosedOnNullable, 7)), toInt64(100))) / toFloat64(864000000000) > toFloat64(0)
+	toFloat64(intDiv(toUnixTimestamp64Nano(toDateTime64('2026-01-03 13:30:00.0000000', 7)) - toUnixTimestamp64Nano(toDateTime64(r.ClosedOnNullable, 7)), toInt64(100))) / toFloat64(864000000000) > toFloat64(0)
 
 -- ClickHouse.MySql ClickHouse
 SELECT

@@ -18,7 +18,7 @@ VALUES
 
 -- ClickHouse.MySql ClickHouse
 SELECT
-	toDateTime64(toDateTime64('2026-06-20 00:00:00.0000000', 7), 7) + toIntervalNanosecond(intDiv(toUnixTimestamp64Nano(toDateTime64(r.FinishedOn, 7)) - toUnixTimestamp64Nano(toDateTime64(r.StartedOn, 7)), toInt64(100)) * toInt64(100))
+	toDateTime64('2026-06-20 00:00:00.0000000', 7) + toIntervalNanosecond(intDiv(toUnixTimestamp64Nano(toDateTime64(r.FinishedOn, 7)) - toUnixTimestamp64Nano(toDateTime64(r.StartedOn, 7)), toInt64(100)) * toInt64(100))
 FROM
 	CoarseEventRow r
 LIMIT 2
