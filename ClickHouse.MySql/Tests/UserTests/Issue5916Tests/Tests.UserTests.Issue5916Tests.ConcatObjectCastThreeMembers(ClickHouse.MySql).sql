@@ -1,8 +1,8 @@
 ﻿-- ClickHouse.MySql ClickHouse
 SELECT
-	toString('p_') as c1,
+	toString('p_') as id,
 	p.PersonID,
-	toString('X') as c2,
+	toString('X') as id_1,
 	p.FirstName,
 	p.LastName
 FROM
@@ -11,9 +11,9 @@ WHERE
 	p.PersonID > 2
 UNION ALL
 SELECT
-	toString('q_') as c1,
+	toString('q_') as id,
 	p_1.PersonID as PersonID,
-	toString('X') as c2,
+	toString('X') as id_1,
 	p_1.FirstName as FirstName,
 	p_1.LastName as LastName
 FROM

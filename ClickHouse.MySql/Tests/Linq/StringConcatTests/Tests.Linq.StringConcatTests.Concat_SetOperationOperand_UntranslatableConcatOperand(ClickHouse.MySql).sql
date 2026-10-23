@@ -1,8 +1,8 @@
 ﻿-- ClickHouse.MySql ClickHouse
 SELECT
-	toString('p_') as c1,
-	e.Id,
-	toString('N') as c2,
+	toString('p_') as id,
+	e.Id as Id_1,
+	toString('N') as id_2,
 	e.Name
 FROM
 	ConcatSetOpEntity e
@@ -10,9 +10,9 @@ WHERE
 	e.ParentId IS NULL
 UNION ALL
 SELECT
-	toString('c_') as c1,
-	e_1.Id as Id,
-	toString('N') as c2,
+	toString('c_') as id,
+	e_1.Id as Id_1,
+	toString('N') as id_2,
 	e_1.Name as Name
 FROM
 	ConcatSetOpEntity e_1

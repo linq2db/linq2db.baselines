@@ -1,8 +1,8 @@
 ﻿-- ClickHouse.Octonica ClickHouse
 SELECT
-	toString('p_') as c1,
+	toString('p_') as id,
 	p.PersonID,
-	toString('X') as c2,
+	toString('X') as id_1,
 	p.FirstName
 FROM
 	Person p
@@ -10,9 +10,9 @@ WHERE
 	p.PersonID > 2
 UNION ALL
 SELECT
-	toString('q_') as c1,
+	toString('q_') as id,
 	p_1.PersonID as PersonID,
-	toString('X') as c2,
+	toString('X') as id_1,
 	p_1.FirstName as FirstName
 FROM
 	Person p_1
