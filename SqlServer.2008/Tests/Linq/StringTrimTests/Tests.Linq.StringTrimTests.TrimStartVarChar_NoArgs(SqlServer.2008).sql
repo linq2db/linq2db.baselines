@@ -1,6 +1,6 @@
 ﻿-- SqlServer.2008
 SELECT
-	LTRIM(N'   ' + Coalesce([t].[VarCharColumn], ''))
+	LTRIM('   ' + Coalesce([t].[VarCharColumn], ''))
 FROM
 	[StringTrimTable] [t]
 
