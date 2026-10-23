@@ -1,0 +1,48 @@
+﻿-- SqlServer.Contained.MS SqlServer.2019
+DECLARE @tableName NVarChar(4000) -- String
+SET     @tableName = N'[RetrieveIdentityTable]'
+
+SELECT
+	IDENT_CURRENT(@tableName),
+	IDENT_INCR(@tableName)
+
+-- SqlServer.Contained.MS SqlServer.2019
+DECLARE @tableName NVarChar(4000) -- String
+SET     @tableName = N'[RetrieveIdentityTable]'
+
+SELECT
+	IDENT_CURRENT(@tableName),
+	IDENT_INCR(@tableName)
+
+-- SqlServer.Contained.MS SqlServer.2019
+DECLARE @tableName NVarChar(4000) -- String
+SET     @tableName = N'[RetrieveIdentityTable]'
+
+SELECT
+	IDENT_CURRENT(@tableName),
+	IDENT_INCR(@tableName)
+
+-- SqlServer.Contained.MS SqlServer.2019
+DECLARE @tableName NVarChar(4000) -- String
+SET     @tableName = N'[RetrieveIdentityTable]'
+
+SELECT
+	IDENT_CURRENT(@tableName),
+	IDENT_INCR(@tableName)
+
+-- SqlServer.Contained.MS SqlServer.2019
+DECLARE @tableName NVarChar(4000) -- String
+SET     @tableName = N'[RetrieveIdentityTable]'
+
+SELECT
+	IDENT_CURRENT(@tableName),
+	IDENT_INCR(@tableName)
+
+-- SqlServer.Contained.MS SqlServer.2019
+DECLARE @tableName NVarChar(4000) -- String
+SET     @tableName = N'[RetrieveIdentityTable]'
+
+SELECT
+	IDENT_CURRENT(@tableName),
+	IDENT_INCR(@tableName)
+
