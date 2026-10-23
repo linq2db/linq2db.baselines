@@ -1,0 +1,42 @@
+﻿-- YDB Ydb
+SELECT CAST(123 AS Int32)
+
+-- YDB Ydb
+SELECT CAST(123 AS Int32)
+
+-- YDB Ydb
+SELECT CAST(1234567890123 AS Int64)
+
+-- YDB Ydb
+SELECT CAST(1234567890123 AS Int64)
+
+-- YDB Ydb
+SELECT CAST(1.25 AS Double)
+
+-- YDB Ydb
+SELECT CAST(1.25 AS Double)
+
+-- YDB Ydb
+SELECT CAST('text' AS Utf8)
+
+-- YDB Ydb
+SELECT CAST('text' AS Utf8)
+
+-- YDB Ydb
+SELECT CAST(Date('2024-01-02') AS Date)
+
+-- YDB Ydb
+SELECT CAST(Date('2024-01-02') AS Date)
+
+-- YDB Ydb
+SELECT CAST(Datetime('2024-01-02T03:04:05Z') AS Datetime)
+
+-- YDB Ydb
+SELECT CAST(Datetime('2024-01-02T03:04:05Z') AS Datetime)
+
+-- YDB Ydb
+SELECT CAST(Timestamp('2024-01-02T03:04:05.123456Z') AS Timestamp)
+
+-- YDB Ydb
+SELECT CAST(Timestamp('2024-01-02T03:04:05.123456Z') AS Timestamp)
+

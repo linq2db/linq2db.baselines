@@ -1,0 +1,20 @@
+﻿-- YDB Ydb
+SELECT
+	p.ParentID as ParentID,
+	p.Value1 as Value1
+FROM
+	Parent p
+WHERE
+	p.ParentID = 1
+LIMIT 1
+
+-- YDB Ydb
+SELECT
+	p.ParentID as ParentID,
+	p.Value1 as Value1
+FROM
+	Parent p
+WHERE
+	p.ParentID = 2
+LIMIT 1
+

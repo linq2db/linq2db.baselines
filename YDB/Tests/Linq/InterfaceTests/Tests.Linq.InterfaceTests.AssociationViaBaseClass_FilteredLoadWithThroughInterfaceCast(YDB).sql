@@ -1,0 +1,18 @@
+﻿-- YDB Ydb
+SELECT
+	t1.ParentID as ParentID,
+	t1.ChildID as ChildID,
+	a_Parent_1.ParentID as ParentID_1,
+	a_Parent_1.Value1 as Value1
+FROM
+	Child t1
+		LEFT JOIN (
+			SELECT
+				a_Parent.ParentID as ParentID,
+				a_Parent.Value1 as Value1
+			FROM
+				Parent a_Parent
+			WHERE
+				a_Parent.Value1 = 1
+		) a_Parent_1 ON t1.ParentID = a_Parent_1.ParentID
+
