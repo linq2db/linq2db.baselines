@@ -1,0 +1,7 @@
+﻿-- SqlServer.2014.MS SqlServer.2014
+DECLARE @b NVarChar(4000) -- String
+SET     @b = N'B'
+
+SELECT
+	CHOOSE(2, N'A', @b, N'C')
+
