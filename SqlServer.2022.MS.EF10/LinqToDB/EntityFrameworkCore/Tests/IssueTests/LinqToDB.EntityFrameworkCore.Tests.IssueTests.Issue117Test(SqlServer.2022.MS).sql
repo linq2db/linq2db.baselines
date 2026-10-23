@@ -17,8 +17,7 @@ FROM
 	[Patents] [p]
 		LEFT JOIN [PatentAssessment] [a_Assessment] ON [p].[Id] = [a_Assessment].[PatentId]
 WHERE
-	[a_Assessment].[PatentId] IS NULL OR [a_Assessment].[TechnicalReviewerId] <> @userId OR
-	[a_Assessment].[TechnicalReviewerId] IS NULL
+	[a_Assessment].[PatentId] IS NULL OR [a_Assessment].[TechnicalReviewerId] <> @userId OR [a_Assessment].[TechnicalReviewerId] IS NULL
 
 
 
