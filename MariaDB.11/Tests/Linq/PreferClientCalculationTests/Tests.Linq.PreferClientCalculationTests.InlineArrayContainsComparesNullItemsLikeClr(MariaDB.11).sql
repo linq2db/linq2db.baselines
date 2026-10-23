@@ -6,8 +6,7 @@ SELECT
 FROM
 	`NullableItemEntity` `e`
 WHERE
-	`e`.`Tested` = `e`.`Item` OR `e`.`Tested` IS NULL AND `e`.`Item` IS NULL OR
-	`e`.`Tested` = 5
+	`e`.`Tested` = `e`.`Item` OR `e`.`Tested` IS NULL AND `e`.`Item` IS NULL OR `e`.`Tested` = 5
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 SELECT
@@ -25,7 +24,7 @@ SELECT
 FROM
 	`NullableItemEntity` `e`
 WHERE
-	NOT ((`e`.`Tested` = `e`.`Item` OR `e`.`Tested` IS NULL AND `e`.`Item` IS NULL) AND NOT (`e`.`Tested` IS NULL AND `e`.`Item` IS NOT NULL) AND NOT (`e`.`Tested` IS NOT NULL AND `e`.`Item` IS NULL) OR `e`.`Tested` = 5 AND `e`.`Tested` IS NOT NULL)
+	NOT ((`e`.`Tested` = `e`.`Item` OR `e`.`Tested` IS NULL AND `e`.`Item` IS NULL) AND NOT (`e`.`Tested` IS NULL AND `e`.`Item` IS NOT NULL OR `e`.`Tested` IS NOT NULL AND `e`.`Item` IS NULL) OR `e`.`Tested` = 5 AND `e`.`Tested` IS NOT NULL)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 SELECT
@@ -43,8 +42,7 @@ SELECT
 FROM
 	`NullableItemEntity` `e`
 WHERE
-	`e`.`Tested` = `e`.`Item` OR `e`.`Tested` IS NULL AND `e`.`Item` IS NULL OR
-	`e`.`Tested` = 5
+	`e`.`Tested` = `e`.`Item` OR `e`.`Tested` IS NULL AND `e`.`Item` IS NULL OR `e`.`Tested` = 5
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 SELECT
@@ -62,7 +60,7 @@ SELECT
 FROM
 	`NullableItemEntity` `e`
 WHERE
-	NOT ((`e`.`Tested` = `e`.`Item` OR `e`.`Tested` IS NULL AND `e`.`Item` IS NULL) AND NOT (`e`.`Tested` IS NULL AND `e`.`Item` IS NOT NULL) AND NOT (`e`.`Tested` IS NOT NULL AND `e`.`Item` IS NULL) OR `e`.`Tested` = 5 AND `e`.`Tested` IS NOT NULL)
+	NOT ((`e`.`Tested` = `e`.`Item` OR `e`.`Tested` IS NULL AND `e`.`Item` IS NULL) AND NOT (`e`.`Tested` IS NULL AND `e`.`Item` IS NOT NULL OR `e`.`Tested` IS NOT NULL AND `e`.`Item` IS NULL) OR `e`.`Tested` = 5 AND `e`.`Tested` IS NOT NULL)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 SELECT
@@ -80,8 +78,7 @@ SELECT
 FROM
 	`NullableItemEntity` `e`
 WHERE
-	`e`.`Tested` = `e`.`Item` OR `e`.`Tested` IS NULL AND `e`.`Item` IS NULL OR
-	`e`.`Tested` = 5
+	`e`.`Tested` = `e`.`Item` OR `e`.`Tested` IS NULL AND `e`.`Item` IS NULL OR `e`.`Tested` = 5
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 SELECT
@@ -99,7 +96,7 @@ SELECT
 FROM
 	`NullableItemEntity` `e`
 WHERE
-	NOT ((`e`.`Tested` = `e`.`Item` OR `e`.`Tested` IS NULL AND `e`.`Item` IS NULL) AND NOT (`e`.`Tested` IS NULL AND `e`.`Item` IS NOT NULL) AND NOT (`e`.`Tested` IS NOT NULL AND `e`.`Item` IS NULL) OR `e`.`Tested` = 5 AND `e`.`Tested` IS NOT NULL)
+	NOT ((`e`.`Tested` = `e`.`Item` OR `e`.`Tested` IS NULL AND `e`.`Item` IS NULL) AND NOT (`e`.`Tested` IS NULL AND `e`.`Item` IS NOT NULL OR `e`.`Tested` IS NOT NULL AND `e`.`Item` IS NULL) OR `e`.`Tested` = 5 AND `e`.`Tested` IS NOT NULL)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 SELECT
@@ -117,8 +114,7 @@ SELECT
 FROM
 	`NullableItemEntity` `e`
 WHERE
-	`e`.`Tested` = `e`.`Item` OR `e`.`Tested` IS NULL AND `e`.`Item` IS NULL OR
-	`e`.`Tested` = 5
+	`e`.`Tested` = `e`.`Item` OR `e`.`Tested` IS NULL AND `e`.`Item` IS NULL OR `e`.`Tested` = 5
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 SELECT
@@ -136,7 +132,7 @@ SELECT
 FROM
 	`NullableItemEntity` `e`
 WHERE
-	NOT ((`e`.`Tested` = `e`.`Item` OR `e`.`Tested` IS NULL AND `e`.`Item` IS NULL) AND NOT (`e`.`Tested` IS NULL AND `e`.`Item` IS NOT NULL) AND NOT (`e`.`Tested` IS NOT NULL AND `e`.`Item` IS NULL) OR `e`.`Tested` = 5 AND `e`.`Tested` IS NOT NULL)
+	NOT ((`e`.`Tested` = `e`.`Item` OR `e`.`Tested` IS NULL AND `e`.`Item` IS NULL) AND NOT (`e`.`Tested` IS NULL AND `e`.`Item` IS NOT NULL OR `e`.`Tested` IS NOT NULL AND `e`.`Item` IS NULL) OR `e`.`Tested` = 5 AND `e`.`Tested` IS NOT NULL)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 SELECT
