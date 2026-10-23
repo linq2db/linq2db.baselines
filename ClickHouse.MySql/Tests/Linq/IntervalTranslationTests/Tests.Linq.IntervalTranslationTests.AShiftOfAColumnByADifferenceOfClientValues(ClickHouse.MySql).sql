@@ -14,14 +14,14 @@ VALUES
 
 -- ClickHouse.MySql ClickHouse
 SELECT
-	r.StartedOn + toIntervalNanosecond(toInt64(3600250000000))
+	toDateTime64(r.StartedOn, 7) + toIntervalNanosecond(toInt64(3600250000000))
 FROM
 	EventRow r
 LIMIT 2
 
 -- ClickHouse.MySql ClickHouse
 SELECT
-	r.FinishedOn - toIntervalNanosecond(toInt64(3600250000000))
+	toDateTime64(r.FinishedOn, 7) - toIntervalNanosecond(toInt64(3600250000000))
 FROM
 	EventRow r
 LIMIT 2
@@ -32,7 +32,7 @@ SELECT
 FROM
 	EventRow r
 WHERE
-	r.StartedOn + toIntervalNanosecond(toInt64(3600250000000)) < r.FinishedOn
+	toDateTime64(r.StartedOn, 7) + toIntervalNanosecond(toInt64(3600250000000)) < r.FinishedOn
 
 -- ClickHouse.MySql ClickHouse
 SELECT
@@ -40,5 +40,5 @@ SELECT
 FROM
 	EventRow r
 WHERE
-	r.FinishedOn - toIntervalNanosecond(toInt64(3600250000000)) > addHours(r.StartedOn, toFloat64(1))
+	toDateTime64(r.FinishedOn, 7) - toIntervalNanosecond(toInt64(3600250000000)) > addHours(r.StartedOn, toFloat64(1))
 

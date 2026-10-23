@@ -13,5 +13,5 @@ SELECT
 FROM
 	LinqDataTypes t
 WHERE
-	t.DateTimeValue IN (makeDateTime64(2001, 1, 11, 1, 11, 21, 100))
+	toDateTime64(t.DateTimeValue, 7) IN (makeDateTime64(2001, 1, 11, 1, 11, 21, 100))
 

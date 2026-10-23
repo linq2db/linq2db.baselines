@@ -4,7 +4,7 @@ SELECT
 FROM
 	ClosedPeriodRow r
 WHERE
-	toFloat64(intDiv(toUnixTimestamp64Nano(r.ClosedOn) - toUnixTimestamp64Nano(r.OpenedOn), toInt64(100))) / toFloat64(864000000000) < toFloat64(12)
+	toFloat64(intDiv(toUnixTimestamp64Nano(toDateTime64(r.ClosedOn, 7)) - toUnixTimestamp64Nano(toDateTime64(r.OpenedOn, 7)), toInt64(100))) / toFloat64(864000000000) < toFloat64(12)
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
@@ -12,15 +12,15 @@ SELECT
 FROM
 	ClosedPeriodRow r
 ORDER BY
-	toFloat64(intDiv(toUnixTimestamp64Nano(r.ClosedOn) - toUnixTimestamp64Nano(r.OpenedOn), toInt64(100))) / toFloat64(36000000000)
+	toFloat64(intDiv(toUnixTimestamp64Nano(toDateTime64(r.ClosedOn, 7)) - toUnixTimestamp64Nano(toDateTime64(r.OpenedOn, 7)), toInt64(100))) / toFloat64(36000000000)
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
-	toFloat64(intDiv(toUnixTimestamp64Nano(r.ClosedOn) - toUnixTimestamp64Nano(r.OpenedOn), toInt64(100))) / toFloat64(864000000000),
-	toFloat64(intDiv(toUnixTimestamp64Nano(r.ClosedOn) - toUnixTimestamp64Nano(r.OpenedOn), toInt64(100))) / toFloat64(36000000000),
-	toFloat64(intDiv(toUnixTimestamp64Nano(r.ClosedOn) - toUnixTimestamp64Nano(r.OpenedOn), toInt64(100))) / toFloat64(600000000),
-	toInt32(intDiv(intDiv(toUnixTimestamp64Nano(r.ClosedOn) - toUnixTimestamp64Nano(r.OpenedOn), toInt64(100)), toInt64(864000000000))),
-	toInt32(intDiv(intDiv(toUnixTimestamp64Nano(r.ClosedOn) - toUnixTimestamp64Nano(r.OpenedOn), toInt64(100)), toInt64(36000000000)) % toInt64(24))
+	toFloat64(intDiv(toUnixTimestamp64Nano(toDateTime64(r.ClosedOn, 7)) - toUnixTimestamp64Nano(toDateTime64(r.OpenedOn, 7)), toInt64(100))) / toFloat64(864000000000),
+	toFloat64(intDiv(toUnixTimestamp64Nano(toDateTime64(r.ClosedOn, 7)) - toUnixTimestamp64Nano(toDateTime64(r.OpenedOn, 7)), toInt64(100))) / toFloat64(36000000000),
+	toFloat64(intDiv(toUnixTimestamp64Nano(toDateTime64(r.ClosedOn, 7)) - toUnixTimestamp64Nano(toDateTime64(r.OpenedOn, 7)), toInt64(100))) / toFloat64(600000000),
+	toInt32(intDiv(intDiv(toUnixTimestamp64Nano(toDateTime64(r.ClosedOn, 7)) - toUnixTimestamp64Nano(toDateTime64(r.OpenedOn, 7)), toInt64(100)), toInt64(864000000000))),
+	toInt32(intDiv(intDiv(toUnixTimestamp64Nano(toDateTime64(r.ClosedOn, 7)) - toUnixTimestamp64Nano(toDateTime64(r.OpenedOn, 7)), toInt64(100)), toInt64(36000000000)) % toInt64(24))
 FROM
 	ClosedPeriodRow r
 WHERE

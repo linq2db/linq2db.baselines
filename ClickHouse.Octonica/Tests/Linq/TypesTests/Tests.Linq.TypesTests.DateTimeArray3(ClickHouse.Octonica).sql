@@ -13,5 +13,5 @@ SELECT
 FROM
 	LinqDataTypes t
 WHERE
-	t.DateTimeValue IN (toDateTime64('2001-01-11 01:11:21.100', 3))
+	toDateTime64(t.DateTimeValue, 7) IN (toDateTime64('2001-01-11 01:11:21.1000000', 7))
 
