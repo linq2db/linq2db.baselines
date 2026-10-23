@@ -1,6 +1,6 @@
 ﻿-- ClickHouse.Driver ClickHouse
 SELECT
-	toISOWeek(t.DateTimeValue)
+	toISOWeek(toDateTime64(t.DateTimeValue, 7))
 FROM
 	LinqDataTypes t
 

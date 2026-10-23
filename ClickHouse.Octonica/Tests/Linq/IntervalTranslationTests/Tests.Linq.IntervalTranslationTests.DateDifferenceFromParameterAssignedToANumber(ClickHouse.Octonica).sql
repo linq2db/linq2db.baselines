@@ -2,7 +2,7 @@
 ALTER TABLE
 	MeasuredPeriodRow
 UPDATE
-	Elapsed = toFloat64(intDiv(toUnixTimestamp64Nano(toDateTime64('2026-01-10 08:15:30.0000000', 7)) - toUnixTimestamp64Nano(ClosedOn), toInt64(100))) / toFloat64(864000000000)
+	Elapsed = toFloat64(intDiv(toUnixTimestamp64Nano(toDateTime64('2026-01-10 08:15:30.0000000', 7)) - toUnixTimestamp64Nano(toDateTime64(ClosedOn, 7)), toInt64(100))) / toFloat64(864000000000)
 WHERE
 	Id = 1
 
@@ -21,13 +21,13 @@ SELECT
 FROM
 	MeasuredPeriodRow r
 WHERE
-	r.Elapsed < toFloat64(intDiv(toUnixTimestamp64Nano(toDateTime64('2026-01-10 08:15:30.0000000', 7)) - toUnixTimestamp64Nano(r.ClosedOn), toInt64(100))) / toFloat64(36000000000)
+	r.Elapsed < toFloat64(intDiv(toUnixTimestamp64Nano(toDateTime64('2026-01-10 08:15:30.0000000', 7)) - toUnixTimestamp64Nano(toDateTime64(r.ClosedOn, 7)), toInt64(100))) / toFloat64(36000000000)
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
 	MeasuredPeriodRow
 UPDATE
-	Elapsed = toFloat64(intDiv(toUnixTimestamp64Nano(ClosedOn) - toUnixTimestamp64Nano(toDateTime64('2026-01-10 08:15:30.0000000', 7)), toInt64(100))) / toFloat64(36000000000)
+	Elapsed = toFloat64(intDiv(toUnixTimestamp64Nano(toDateTime64(ClosedOn, 7)) - toUnixTimestamp64Nano(toDateTime64('2026-01-10 08:15:30.0000000', 7)), toInt64(100))) / toFloat64(36000000000)
 WHERE
 	Id = 1
 
@@ -46,5 +46,5 @@ SELECT
 FROM
 	MeasuredPeriodRow r
 WHERE
-	r.Elapsed < toFloat64(intDiv(toUnixTimestamp64Nano(r.ClosedOn) - toUnixTimestamp64Nano(toDateTime64('2026-01-10 08:15:30.0000000', 7)), toInt64(100))) / toFloat64(864000000000)
+	r.Elapsed < toFloat64(intDiv(toUnixTimestamp64Nano(toDateTime64(r.ClosedOn, 7)) - toUnixTimestamp64Nano(toDateTime64('2026-01-10 08:15:30.0000000', 7)), toInt64(100))) / toFloat64(864000000000)
 

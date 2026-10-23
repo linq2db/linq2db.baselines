@@ -42,7 +42,7 @@ VALUES
 
 -- ClickHouse.Driver ClickHouse
 SELECT
-	r.DueOn + toIntervalNanosecond(toInt64(3600250000000))
+	toDateTime64(r.DueOn, 7) + toIntervalNanosecond(toInt64(3600250000000))
 FROM
 	OptionalDueRow r
 WHERE
@@ -51,7 +51,7 @@ LIMIT 2
 
 -- ClickHouse.Driver ClickHouse
 SELECT
-	r.StartedOn + toIntervalNanosecond(toInt64(3600250000000))
+	toDateTime64(r.StartedOn, 7) + toIntervalNanosecond(toInt64(3600250000000))
 FROM
 	OptionalDueRow r
 WHERE
@@ -60,7 +60,7 @@ LIMIT 2
 
 -- ClickHouse.Driver ClickHouse
 SELECT
-	r.DueOn - toIntervalNanosecond(toInt64(3600250000000))
+	toDateTime64(r.DueOn, 7) - toIntervalNanosecond(toInt64(3600250000000))
 FROM
 	OptionalDueRow r
 WHERE
@@ -69,7 +69,7 @@ LIMIT 2
 
 -- ClickHouse.Driver ClickHouse
 SELECT
-	r.StartedOn + toIntervalNanosecond(toInt64(NULL) * toInt64(100))
+	toDateTime64(r.StartedOn, 7) + toIntervalNanosecond(toInt64(NULL) * toInt64(100))
 FROM
 	OptionalDueRow r
 WHERE
@@ -78,7 +78,7 @@ LIMIT 2
 
 -- ClickHouse.Driver ClickHouse
 SELECT
-	r.DueOn + toIntervalNanosecond(toInt64(3600250000000))
+	toDateTime64(r.DueOn, 7) + toIntervalNanosecond(toInt64(3600250000000))
 FROM
 	OptionalDueRow r
 ORDER BY
@@ -90,7 +90,7 @@ SELECT
 FROM
 	OptionalDueRow r
 WHERE
-	r.DueOn + toIntervalNanosecond(toInt64(3600250000000)) > addHours(r.StartedOn, toFloat64(1))
+	toDateTime64(r.DueOn, 7) + toIntervalNanosecond(toInt64(3600250000000)) > addHours(r.StartedOn, toFloat64(1))
 ORDER BY
 	r.Id
 
@@ -100,11 +100,11 @@ SELECT
 FROM
 	OptionalDueRow r
 WHERE
-	r.Id = 1 AND r.StartedOn + toIntervalNanosecond(toInt64(3600250000000)) < addHours(r.StartedOn, toFloat64(1))
+	r.Id = 1 AND toDateTime64(r.StartedOn, 7) + toIntervalNanosecond(toInt64(3600250000000)) < addHours(r.StartedOn, toFloat64(1))
 
 -- ClickHouse.Driver ClickHouse
 SELECT
-	r.StartedOn + toIntervalNanosecond(toInt64(3600250000000))
+	toDateTime64(r.StartedOn, 7) + toIntervalNanosecond(toInt64(3600250000000))
 FROM
 	OptionalDueRow r
 WHERE
@@ -113,7 +113,7 @@ LIMIT 2
 
 -- ClickHouse.Driver ClickHouse
 SELECT
-	r.StartedOn + toIntervalNanosecond(toInt64(NULL) * toInt64(100))
+	toDateTime64(r.StartedOn, 7) + toIntervalNanosecond(toInt64(NULL) * toInt64(100))
 FROM
 	OptionalDueRow r
 WHERE
@@ -122,7 +122,7 @@ LIMIT 2
 
 -- ClickHouse.Driver ClickHouse
 SELECT
-	r.StartedOn + toIntervalNanosecond(toInt64(7200250000000))
+	toDateTime64(r.StartedOn, 7) + toIntervalNanosecond(toInt64(7200250000000))
 FROM
 	OptionalDueRow r
 WHERE
@@ -131,7 +131,7 @@ LIMIT 2
 
 -- ClickHouse.Driver ClickHouse
 SELECT
-	r.DueOn + toIntervalNanosecond(intDiv(toUnixTimestamp64Nano(r.DueOn) - toUnixTimestamp64Nano(r.StartedOn), toInt64(100)) * toInt64(100))
+	toDateTime64(r.DueOn, 7) + toIntervalNanosecond(intDiv(toUnixTimestamp64Nano(toDateTime64(r.DueOn, 7)) - toUnixTimestamp64Nano(toDateTime64(r.StartedOn, 7)), toInt64(100)) * toInt64(100))
 FROM
 	OptionalDueRow r
 ORDER BY

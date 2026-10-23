@@ -5,7 +5,7 @@ SELECT
 FROM
 	(
 		SELECT
-			fromUnixTimestamp64Nano(toUnixTimestamp64Nano(x.TransactionDate) + toInt64(toFloat64(-1000000))) as Key_1
+			fromUnixTimestamp64Nano(toUnixTimestamp64Nano(toDateTime64(x.TransactionDate, 7)) + toInt64(toFloat64(-1000000))) as Key_1
 		FROM
 			Transactions x
 	) t1

@@ -14,7 +14,7 @@ VALUES
 
 -- ClickHouse.Driver ClickHouse
 SELECT
-	toFloat64(intDiv(toUnixTimestamp64Nano(r.FinishedOn) - toUnixTimestamp64Nano(toDateTime64(toDate32(r.FinishedOn), 7)), toInt64(100))) / toFloat64(36000000000)
+	toFloat64(intDiv(toUnixTimestamp64Nano(toDateTime64(r.FinishedOn, 7)) - toUnixTimestamp64Nano(toDateTime64(toDate32(r.FinishedOn), 7)), toInt64(100))) / toFloat64(36000000000)
 FROM
 	EventRow r
 LIMIT 2

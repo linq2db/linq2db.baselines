@@ -1,6 +1,6 @@
 ﻿-- ClickHouse.Octonica ClickHouse
 SELECT
-	toFloat64(intDiv(toUnixTimestamp64Nano(b.FinishedOn) - toUnixTimestamp64Nano(x.StartedOn), toInt64(100))) / toFloat64(864000000000)
+	toFloat64(intDiv(toUnixTimestamp64Nano(toDateTime64(b.FinishedOn, 7)) - toUnixTimestamp64Nano(toDateTime64(x.StartedOn, 7)), toInt64(100))) / toFloat64(864000000000)
 FROM
 	OuterJoinLeft x
 		LEFT JOIN OuterJoinRight b ON b.Id = x.Id
@@ -9,7 +9,7 @@ ORDER BY
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
-	toInt32(intDiv(intDiv(toUnixTimestamp64Nano(b.FinishedOn) - toUnixTimestamp64Nano(x.StartedOn), toInt64(100)), toInt64(864000000000)))
+	toInt32(intDiv(intDiv(toUnixTimestamp64Nano(toDateTime64(b.FinishedOn, 7)) - toUnixTimestamp64Nano(toDateTime64(x.StartedOn, 7)), toInt64(100)), toInt64(864000000000)))
 FROM
 	OuterJoinLeft x
 		LEFT JOIN OuterJoinRight b ON b.Id = x.Id
@@ -18,7 +18,7 @@ ORDER BY
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
-	toInt32(intDiv(intDiv(toUnixTimestamp64Nano(b.FinishedOn) - toUnixTimestamp64Nano(x.StartedOn), toInt64(100)), toInt64(36000000000)) % toInt64(24))
+	toInt32(intDiv(intDiv(toUnixTimestamp64Nano(toDateTime64(b.FinishedOn, 7)) - toUnixTimestamp64Nano(toDateTime64(x.StartedOn, 7)), toInt64(100)), toInt64(36000000000)) % toInt64(24))
 FROM
 	OuterJoinLeft x
 		LEFT JOIN OuterJoinRight b ON b.Id = x.Id
@@ -27,7 +27,7 @@ ORDER BY
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
-	toInt32(intDiv(intDiv(toUnixTimestamp64Nano(b.FinishedOn) - toUnixTimestamp64Nano(x.StartedOn), toInt64(100)), toInt64(600000000)) % toInt64(60))
+	toInt32(intDiv(intDiv(toUnixTimestamp64Nano(toDateTime64(b.FinishedOn, 7)) - toUnixTimestamp64Nano(toDateTime64(x.StartedOn, 7)), toInt64(100)), toInt64(600000000)) % toInt64(60))
 FROM
 	OuterJoinLeft x
 		LEFT JOIN OuterJoinRight b ON b.Id = x.Id
@@ -36,7 +36,7 @@ ORDER BY
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
-	toInt32(intDiv(intDiv(toUnixTimestamp64Nano(x.StartedOn) - toUnixTimestamp64Nano(b.FinishedOn), toInt64(100)), toInt64(36000000000)) % toInt64(24))
+	toInt32(intDiv(intDiv(toUnixTimestamp64Nano(toDateTime64(x.StartedOn, 7)) - toUnixTimestamp64Nano(toDateTime64(b.FinishedOn, 7)), toInt64(100)), toInt64(36000000000)) % toInt64(24))
 FROM
 	OuterJoinLeft x
 		LEFT JOIN OuterJoinRight b ON b.Id = x.Id
@@ -45,7 +45,7 @@ ORDER BY
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
-	toFloat64(intDiv(toUnixTimestamp64Nano(x.StartedOn) - toUnixTimestamp64Nano(b.FinishedOn), toInt64(100))) / toFloat64(36000000000)
+	toFloat64(intDiv(toUnixTimestamp64Nano(toDateTime64(x.StartedOn, 7)) - toUnixTimestamp64Nano(toDateTime64(b.FinishedOn, 7)), toInt64(100))) / toFloat64(36000000000)
 FROM
 	OuterJoinLeft x
 		LEFT JOIN OuterJoinRight b ON b.Id = x.Id
@@ -59,7 +59,7 @@ FROM
 	OuterJoinLeft x
 		LEFT JOIN OuterJoinRight b ON b.Id = x.Id
 WHERE
-	toFloat64(intDiv(toUnixTimestamp64Nano(b.FinishedOn) - toUnixTimestamp64Nano(x.StartedOn), toInt64(100))) / toFloat64(864000000000) > toFloat64(1)
+	toFloat64(intDiv(toUnixTimestamp64Nano(toDateTime64(b.FinishedOn, 7)) - toUnixTimestamp64Nano(toDateTime64(x.StartedOn, 7)), toInt64(100))) / toFloat64(864000000000) > toFloat64(1)
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
@@ -68,7 +68,7 @@ FROM
 	OuterJoinLeft x
 		LEFT JOIN OuterJoinRight b ON b.Id = x.Id
 WHERE
-	toInt32(intDiv(intDiv(toUnixTimestamp64Nano(b.FinishedOn) - toUnixTimestamp64Nano(x.StartedOn), toInt64(100)), toInt64(36000000000)) % toInt64(24)) = 3
+	toInt32(intDiv(intDiv(toUnixTimestamp64Nano(toDateTime64(b.FinishedOn, 7)) - toUnixTimestamp64Nano(toDateTime64(x.StartedOn, 7)), toInt64(100)), toInt64(36000000000)) % toInt64(24)) = 3
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
@@ -77,7 +77,7 @@ FROM
 	OuterJoinLeft x
 		LEFT JOIN OuterJoinRight b ON b.Id = x.Id
 WHERE
-	toInt32(intDiv(intDiv(toUnixTimestamp64Nano(b.FinishedOn) - toUnixTimestamp64Nano(x.StartedOn), toInt64(100)), toInt64(600000000)) % toInt64(60)) = 15
+	toInt32(intDiv(intDiv(toUnixTimestamp64Nano(toDateTime64(b.FinishedOn, 7)) - toUnixTimestamp64Nano(toDateTime64(x.StartedOn, 7)), toInt64(100)), toInt64(600000000)) % toInt64(60)) = 15
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
@@ -86,7 +86,7 @@ FROM
 	OuterJoinLeft x
 		LEFT JOIN OuterJoinRight b ON b.Id = x.Id
 WHERE
-	toFloat64(intDiv(toUnixTimestamp64Nano(x.StartedOn) - toUnixTimestamp64Nano(b.FinishedOn), toInt64(100))) / toFloat64(36000000000) < toFloat64(-1)
+	toFloat64(intDiv(toUnixTimestamp64Nano(toDateTime64(x.StartedOn, 7)) - toUnixTimestamp64Nano(toDateTime64(b.FinishedOn, 7)), toInt64(100))) / toFloat64(36000000000) < toFloat64(-1)
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
@@ -95,5 +95,5 @@ FROM
 	OuterJoinLeft x
 		LEFT JOIN OuterJoinRight b ON b.Id = x.Id
 WHERE
-	toInt32(intDiv(intDiv(toUnixTimestamp64Nano(x.StartedOn) - toUnixTimestamp64Nano(b.FinishedOn), toInt64(100)), toInt64(36000000000)) % toInt64(24)) = negate(3)
+	toInt32(intDiv(intDiv(toUnixTimestamp64Nano(toDateTime64(x.StartedOn, 7)) - toUnixTimestamp64Nano(toDateTime64(b.FinishedOn, 7)), toInt64(100)), toInt64(36000000000)) % toInt64(24)) = negate(3)
 

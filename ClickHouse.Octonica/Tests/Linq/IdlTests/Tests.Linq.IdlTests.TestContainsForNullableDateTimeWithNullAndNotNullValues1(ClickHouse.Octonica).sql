@@ -19,5 +19,5 @@ SELECT
 FROM
 	LinqDataTypes x
 WHERE
-	(x.DateTimeValue2 IN (toDateTime64('2009-09-24 09:19:29.0900000', 7)) OR x.DateTimeValue2 IS NULL)
+	(toDateTime64(x.DateTimeValue2, 7) IN (toDateTime64('2009-09-24 09:19:29.0900000', 7)) OR toDateTime64(x.DateTimeValue2, 7) IS NULL)
 
