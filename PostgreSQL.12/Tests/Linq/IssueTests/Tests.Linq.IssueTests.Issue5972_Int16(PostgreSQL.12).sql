@@ -1,0 +1,16 @@
+﻿-- PostgreSQL.12 PostgreSQL12
+SELECT
+	-32768
+
+-- PostgreSQL.12 PostgreSQL12
+SELECT
+	32767
+
+-- PostgreSQL.12 PostgreSQL12
+SELECT
+	-32768
+
+-- PostgreSQL.12 PostgreSQL12
+SELECT
+	32767
+

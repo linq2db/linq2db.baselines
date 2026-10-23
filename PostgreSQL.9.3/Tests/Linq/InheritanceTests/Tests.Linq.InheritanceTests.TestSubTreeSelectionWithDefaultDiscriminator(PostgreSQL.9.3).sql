@@ -1,0 +1,10 @@
+﻿-- PostgreSQL.9.3 PostgreSQL
+SELECT
+	t1."Code",
+	t1."Id",
+	t1."Child1Field",
+	t1."Grandchild11Field",
+	t1."Grandchild12Field"
+FROM
+	"InheritanceFilter" t1
+

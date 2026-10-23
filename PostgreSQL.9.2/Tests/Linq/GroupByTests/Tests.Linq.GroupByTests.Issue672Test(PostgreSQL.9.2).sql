@@ -1,0 +1,93 @@
+﻿-- PostgreSQL.9.2 PostgreSQL
+DECLARE @Name Text(6) -- String
+SET     @Name = 'group1'
+DECLARE @Enabled Boolean
+SET     @Enabled = True
+DECLARE @ImageFullUrl Text(3) -- String
+SET     @ImageFullUrl = '123'
+
+INSERT INTO "Stone"
+(
+	"Name",
+	"Enabled",
+	"ImageFullUrl"
+)
+VALUES
+(
+	:Name,
+	:Enabled,
+	:ImageFullUrl
+)
+
+-- PostgreSQL.9.2 PostgreSQL
+DECLARE @Name Text(6) -- String
+SET     @Name = 'group1'
+DECLARE @Enabled Boolean
+SET     @Enabled = True
+DECLARE @ImageFullUrl Text(3) -- String
+SET     @ImageFullUrl = '123'
+
+INSERT INTO "Stone"
+(
+	"Name",
+	"Enabled",
+	"ImageFullUrl"
+)
+VALUES
+(
+	:Name,
+	:Enabled,
+	:ImageFullUrl
+)
+
+-- PostgreSQL.9.2 PostgreSQL
+DECLARE @Name Text(6) -- String
+SET     @Name = 'group2'
+DECLARE @Enabled Boolean
+SET     @Enabled = True
+DECLARE @ImageFullUrl Text(3) -- String
+SET     @ImageFullUrl = '123'
+
+INSERT INTO "Stone"
+(
+	"Name",
+	"Enabled",
+	"ImageFullUrl"
+)
+VALUES
+(
+	:Name,
+	:Enabled,
+	:ImageFullUrl
+)
+
+-- PostgreSQL.9.2 PostgreSQL
+SELECT
+	t1."Id",
+	t1."Name",
+	t1."Enabled",
+	t1."ImageFullUrl"
+FROM
+	(
+		SELECT DISTINCT
+			"sG"."Name" as "Key_1"
+		FROM
+			"Stone" "sG"
+		WHERE
+			"sG"."Enabled" = True AND "sG"."Name" NOT LIKE 'level - %' ESCAPE '~' AND
+			Length("sG"."ImageFullUrl") > 0
+	) "sG_1"
+		INNER JOIN (
+			SELECT
+				s."Id",
+				s."Name",
+				s."Enabled",
+				s."ImageFullUrl",
+				ROW_NUMBER() OVER (PARTITION BY s."Name" ORDER BY s."Name") as rn
+			FROM
+				"Stone" s
+			WHERE
+				s."Enabled" = True AND s."Name" NOT LIKE 'level - %' ESCAPE '~' AND
+				Length(s."ImageFullUrl") > 0
+		) t1 ON "sG_1"."Key_1" = t1."Name" AND t1.rn = 1
+
