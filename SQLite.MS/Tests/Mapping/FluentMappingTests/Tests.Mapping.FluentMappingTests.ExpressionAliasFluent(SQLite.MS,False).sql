@@ -1,0 +1,17 @@
+﻿SELECT
+	[p].[FIRST_NAME],
+	5,
+	5000 + Length([p].[FIRST_NAME]) * 10
+FROM
+	[PERSON] [p]
+WHERE
+	[p].[FIRST_NAME] <> '' OR [p].[FIRST_NAME] IS NULL
+
+SELECT
+	[q].[FIRST_NAME],
+	5000 + Length([q].[FIRST_NAME]) * 10
+FROM
+	[PERSON] [q]
+WHERE
+	[q].[FIRST_NAME] <> '' OR [q].[FIRST_NAME] IS NULL
+

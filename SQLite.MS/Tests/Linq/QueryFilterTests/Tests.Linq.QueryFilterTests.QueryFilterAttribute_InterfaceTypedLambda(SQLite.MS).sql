@@ -1,0 +1,9 @@
+﻿-- SQLite.MS SQLite
+SELECT
+	[e].[Id],
+	[e].[IsDeleted]
+FROM
+	[InterfaceAttrFilteredEntity] [e]
+WHERE
+	NOT [e].[IsDeleted]
+
