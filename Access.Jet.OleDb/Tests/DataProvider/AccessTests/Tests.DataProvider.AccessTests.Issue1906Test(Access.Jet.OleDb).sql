@@ -1,0 +1,15 @@
+﻿-- Access.Jet.OleDb AccessOleDb
+SELECT
+	[t1].[ResultId],
+	[t1].[DefinitionId],
+	[a_Definition].[DefinitionId] as [DefinitionId_1],
+	[a_Definition].[SetId],
+	[a_Set].[SetId] as [SetId_1],
+	[a_Set].[SectorId],
+	[a_Sector].[Id]
+FROM
+	(([CtqResultModel] [t1]
+		INNER JOIN [CtqDefinitionModel] [a_Definition] ON ([t1].[DefinitionId] = [a_Definition].[DefinitionId]))
+		LEFT JOIN [CtqSetModel] [a_Set] ON ([a_Definition].[SetId] = [a_Set].[SetId]))
+		LEFT JOIN [FtqSectorModel] [a_Sector] ON ([a_Set].[SectorId] = [a_Sector].[Id])
+
