@@ -1,0 +1,37 @@
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
+DECLARE @Id Int32
+SET     @Id = 1
+DECLARE @StartedOn Datetime -- DateTimeOffset
+SET     @StartedOn = TIMESTAMP '2026-01-01 10:00:00.000000+00:00'
+DECLARE @FinishedOn Datetime -- DateTimeOffset
+SET     @FinishedOn = TIMESTAMP '2026-01-03 15:04:05.006000+02:00'
+
+INSERT INTO `ZonedEventRow`
+(
+	`Id`,
+	`StartedOn`,
+	`FinishedOn`
+)
+VALUES
+(
+	@Id,
+	@StartedOn,
+	@FinishedOn
+)
+
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80
+SELECT
+	CAST((TimestampDiff(Microsecond, `r`.`StartedOn`, `r`.`FinishedOn`) * 10) DIV 864000000000 AS SIGNED),
+	CAST(((TimestampDiff(Microsecond, `r`.`StartedOn`, `r`.`FinishedOn`) * 10) DIV 36000000000) % 24 AS SIGNED),
+	CAST(((TimestampDiff(Microsecond, `r`.`StartedOn`, `r`.`FinishedOn`) * 10) DIV 600000000) % 60 AS SIGNED),
+	CAST(((TimestampDiff(Microsecond, `r`.`StartedOn`, `r`.`FinishedOn`) * 10) DIV 10000000) % 60 AS SIGNED),
+	TimestampDiff(Microsecond, `r`.`StartedOn`, `r`.`FinishedOn`) * 10,
+	CAST(TimestampDiff(Microsecond, `r`.`StartedOn`, `r`.`FinishedOn`) * 10 AS DOUBLE) / 864000000000,
+	CAST(TimestampDiff(Microsecond, `r`.`StartedOn`, `r`.`FinishedOn`) * 10 AS DOUBLE) / 36000000000,
+	CAST(TimestampDiff(Microsecond, `r`.`StartedOn`, `r`.`FinishedOn`) * 10 AS DOUBLE) / 600000000,
+	CAST(TimestampDiff(Microsecond, `r`.`StartedOn`, `r`.`FinishedOn`) * 10 AS DOUBLE) / 10000000,
+	CAST(TimestampDiff(Microsecond, `r`.`StartedOn`, `r`.`FinishedOn`) * 10 AS DOUBLE) / 10000
+FROM
+	`ZonedEventRow` `r`
+LIMIT 2
+
