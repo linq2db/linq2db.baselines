@@ -1,0 +1,16 @@
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
+SELECT
+	COUNT(*)
+FROM
+	"Person" p
+WHERE
+	p."FirstName" ILIKE 'joH%' ESCAPE '~' AND p."PersonID" = 1
+
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
+SELECT
+	COUNT(*)
+FROM
+	"Person" p
+WHERE
+	p."FirstName" NOT ILIKE 'joH%' ESCAPE '~' AND p."PersonID" = 1
+

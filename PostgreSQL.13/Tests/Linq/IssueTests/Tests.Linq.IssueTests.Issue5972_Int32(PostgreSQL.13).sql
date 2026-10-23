@@ -1,0 +1,16 @@
+﻿-- PostgreSQL.13 PostgreSQL12
+SELECT
+	-2147483648
+
+-- PostgreSQL.13 PostgreSQL12
+SELECT
+	2147483647
+
+-- PostgreSQL.13 PostgreSQL12
+SELECT
+	-2147483648
+
+-- PostgreSQL.13 PostgreSQL12
+SELECT
+	2147483647
+

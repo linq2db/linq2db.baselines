@@ -1,0 +1,6 @@
+﻿-- PostgreSQL.19 PostgreSQL12
+SELECT
+	t1."ID"
+FROM
+	"TestTable" t1
+

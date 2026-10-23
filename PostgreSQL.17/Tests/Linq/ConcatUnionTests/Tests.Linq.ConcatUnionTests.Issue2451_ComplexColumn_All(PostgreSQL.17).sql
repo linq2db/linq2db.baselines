@@ -1,0 +1,22 @@
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+SELECT
+	p."FirstName"
+FROM
+	"Person" p
+UNION ALL
+SELECT
+	p_1."FirstName" || '/' || p_1."LastName"
+FROM
+	"Person" p_1
+
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+SELECT
+	p."FirstName" || '/' || p."LastName"
+FROM
+	"Person" p
+UNION ALL
+SELECT
+	p_1."FirstName"
+FROM
+	"Person" p_1
+
