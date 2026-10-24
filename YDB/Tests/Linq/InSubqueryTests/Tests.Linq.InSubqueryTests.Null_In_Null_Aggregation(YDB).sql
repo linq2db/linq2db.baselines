@@ -21,8 +21,7 @@ WHERE
 			$CTE_1 t1
 		WHERE
 			t1.In_1 IS NULL
-	) OR
-	t.ID IS NOT NULL AND t.ID IN (
+	) OR t.ID IS NOT NULL AND t.ID IN (
 		SELECT
 			t1.In_1
 		FROM

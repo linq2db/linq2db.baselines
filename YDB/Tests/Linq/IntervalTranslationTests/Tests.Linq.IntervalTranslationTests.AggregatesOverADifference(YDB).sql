@@ -68,7 +68,7 @@ $CTE_3 = 	SELECT
 SELECT
 	$CTE_1 as Min_1,
 	$CTE_2 as Max_1,
-	Coalesce($CTE_3, Double('0')) as TotalMin
+	$CTE_3 as TotalMin
 FROM
 	BudgetedTaskRow t4
 LIMIT 1
