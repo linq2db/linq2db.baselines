@@ -450,8 +450,7 @@ FROM
 			[t1].[Bottom] = 1
 	) [x_1]
 WHERE
-	[x_1].[Top] = 1 AND [x_1].[Color] IS NULL AND [x_1].[Size_1] = 1 OR
-	[x_1].[Top] = 0
+	[x_1].[Top] = 1 AND [x_1].[Color] IS NULL AND [x_1].[Size_1] = 1 OR [x_1].[Top] = 0
 
 -- SqlServer.SA.MS SqlServer.2019
 SELECT
