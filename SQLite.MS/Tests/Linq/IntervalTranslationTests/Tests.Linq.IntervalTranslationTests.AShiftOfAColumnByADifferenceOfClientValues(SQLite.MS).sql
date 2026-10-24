@@ -24,7 +24,7 @@ DECLARE @Ticks  -- Int64
 SET     @Ticks = 36002500000
 
 SELECT
-	Strftime('%Y-%m-%d %H:%M:%f', JulianDay([r].[StartedOn]) + Round(CAST(CAST(@Ticks AS INTEGER) AS Float) * 0.0001) * 1.1574074074074074E-08)
+	Strftime('%Y-%m-%d %H:%M:%f', JulianDay([r].[StartedOn]) + Round(CAST(CAST(@Ticks AS INTEGER) AS Float) * 0.00010000000000000001) * 1.1574074074074074E-08)
 FROM
 	[EventRow] [r]
 LIMIT 2
@@ -34,7 +34,7 @@ DECLARE @Ticks  -- Int64
 SET     @Ticks = 36002500000
 
 SELECT
-	Strftime('%Y-%m-%d %H:%M:%f', JulianDay([r].[FinishedOn]) + Round(CAST(CAST(@Ticks AS INTEGER) * -1 AS Float) * 0.0001) * 1.1574074074074074E-08)
+	Strftime('%Y-%m-%d %H:%M:%f', JulianDay([r].[FinishedOn]) + Round(CAST(CAST(@Ticks AS INTEGER) * -1 AS Float) * 0.00010000000000000001) * 1.1574074074074074E-08)
 FROM
 	[EventRow] [r]
 LIMIT 2
@@ -48,7 +48,7 @@ SELECT
 FROM
 	[EventRow] [r]
 WHERE
-	strftime('%Y-%m-%d %H:%M:%f', JulianDay([r].[StartedOn]) + Round(CAST(CAST(@Ticks AS INTEGER) AS Float) * 0.0001) * 1.1574074074074074E-08) < strftime('%Y-%m-%d %H:%M:%f', [r].[FinishedOn])
+	strftime('%Y-%m-%d %H:%M:%f', JulianDay([r].[StartedOn]) + Round(CAST(CAST(@Ticks AS INTEGER) AS Float) * 0.00010000000000000001) * 1.1574074074074074E-08) < strftime('%Y-%m-%d %H:%M:%f', [r].[FinishedOn])
 
 -- SQLite.MS SQLite
 DECLARE @Ticks  -- Int64
@@ -59,5 +59,5 @@ SELECT
 FROM
 	[EventRow] [r]
 WHERE
-	strftime('%Y-%m-%d %H:%M:%f', JulianDay([r].[FinishedOn]) + Round(CAST(CAST(@Ticks AS INTEGER) * -1 AS Float) * 0.0001) * 1.1574074074074074E-08) > strftime('%Y-%m-%d %H:%M:%f', strftime('%Y-%m-%d %H:%M:%f', [r].[StartedOn], '1 Hour'))
+	strftime('%Y-%m-%d %H:%M:%f', JulianDay([r].[FinishedOn]) + Round(CAST(CAST(@Ticks AS INTEGER) * -1 AS Float) * 0.00010000000000000001) * 1.1574074074074074E-08) > strftime('%Y-%m-%d %H:%M:%f', strftime('%Y-%m-%d %H:%M:%f', [r].[StartedOn], '1 Hour'))
 
