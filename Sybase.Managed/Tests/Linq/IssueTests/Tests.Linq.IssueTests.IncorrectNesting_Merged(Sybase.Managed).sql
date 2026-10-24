@@ -13,8 +13,7 @@ WHERE
 				INNER JOIN [ThingState] [s_1] ON [s_1].[ThingId] = [thing_1].[Id]
 		WHERE
 			[t].[ThingId] = [s_1].[ThingId] AND [t].[CreatedDate] = [s_1].[LastTransitionDate]
-	) IS NULL OR
-	CASE
+	) IS NULL OR CASE
 		WHEN (
 			SELECT
 				[t_1].[TransitionType]
