@@ -15,6 +15,5 @@ FROM
 			"SampleClass" "a"
 	) "a_1"
 WHERE
-	"a_1"."Id" = 0 AND "a_1"."KEYNUMB" = 0 OR "a_1"."Id" = 1 AND "a_1"."KEYNUMB" = 1 OR
-	"a_1"."Id" = 2 AND "a_1"."KEYNUMB" = 2
+	"a_1"."Id" = 0 AND "a_1"."KEYNUMB" = 0 OR "a_1"."Id" = 1 AND "a_1"."KEYNUMB" = 1 OR "a_1"."Id" = 2 AND "a_1"."KEYNUMB" = 2
 
