@@ -52,8 +52,7 @@ VALUES
 SELECT
 	[r].[Id],
 	[r].[Budget],
-	[r].[FinishedOn],
-	[r].[StartedOn]
+	(CAST(DateDiff(day, [r].[StartedOn], [r].[FinishedOn]) AS BigInt) * 86400) * 10000000 + CAST(DateDiff(millisecond, DateAdd(day, CAST(CAST(DateDiff(day, [r].[StartedOn], [r].[FinishedOn]) AS BigInt) AS Int), [r].[StartedOn]), [r].[FinishedOn]) AS BigInt) * 10000
 FROM
 	[BudgetedTaskRow] [r]
 ORDER BY

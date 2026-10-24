@@ -1,0 +1,11 @@
+﻿-- SqlServer.2017.MS SqlServer.2017
+SELECT
+	IIF(EXISTS(
+		SELECT
+			*
+		FROM
+			[Parent] [p]
+		WHERE
+			[p].[Value1] IS NOT NULL AND [p].[Value1] > 1
+	), 1, 0)
+

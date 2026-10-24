@@ -82,7 +82,7 @@ SELECT
 FROM
 	"BudgetedTaskRow" "r"
 WHERE
-	CAST(DateDiff(millisecond, "r"."StartedOn", "r"."FinishedOn") * 10000 AS BigInt) > @Ticks
+	CAST(CAST(Floor(DateDiff(millisecond, "r"."StartedOn", "r"."FinishedOn") * 10) AS BigInt) * 1000 AS BigInt) > @Ticks
 ORDER BY
 	"r"."Id"
 
@@ -92,7 +92,7 @@ SELECT
 FROM
 	"BudgetedTaskRow" "r"
 WHERE
-	CAST(DateDiff(millisecond, "r"."StartedOn", "r"."FinishedOn") * 10000 AS BigInt) > 72000000000
+	CAST(CAST(Floor(DateDiff(millisecond, "r"."StartedOn", "r"."FinishedOn") * 10) AS BigInt) * 1000 AS BigInt) > 72000000000
 ORDER BY
 	"r"."Id"
 
@@ -102,7 +102,7 @@ SELECT
 FROM
 	"BudgetedTaskRow" "r"
 WHERE
-	CAST(DateDiff(millisecond, "r"."StartedOn", "r"."FinishedOn") * 10000 AS BigInt) > 0
+	CAST(CAST(Floor(DateDiff(millisecond, "r"."StartedOn", "r"."FinishedOn") * 10) AS BigInt) * 1000 AS BigInt) > 0
 ORDER BY
 	"r"."Id"
 
@@ -115,7 +115,7 @@ SELECT
 FROM
 	"BudgetedTaskRow" "r"
 WHERE
-	CAST(DateDiff(millisecond, "r"."StartedOn", "r"."FinishedOn") * 10000 AS BigInt) > @Ticks
+	CAST(CAST(Floor(DateDiff(millisecond, "r"."StartedOn", "r"."FinishedOn") * 10) AS BigInt) * 1000 AS BigInt) > @Ticks
 ORDER BY
 	"r"."Id"
 

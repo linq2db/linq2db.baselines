@@ -5,7 +5,7 @@ SET     @Cents = 100
 UPDATE
 	"ConvertedInts"
 SET
-	("Cents", "Ints") = (src."Cents" + :Cents, src."Ints" * src."Cents")
+	("Cents", "Ints") = (src."Cents" + :Cents, src."Ints" * 100)
 FROM
 	"ConvertedInts" x
 		LEFT JOIN "ConvertedInts" src ON src."Id" = x."Id" - 1

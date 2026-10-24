@@ -21,8 +21,9 @@ VALUES
 
 -- SqlServer.2014.MS SqlServer.2014
 SELECT TOP (2)
+	[r].[FinishedOn],
 	[r].[StartedOn],
-	[r].[FinishedOn]
+	DatePart(hour, [r].[FinishedOn])
 FROM
 	[EventRow] [r]
 

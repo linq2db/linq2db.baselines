@@ -1,5 +1,4 @@
-﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-SELECT
+﻿SELECT
 	p_100."ParentID",
 	p_100."Value1",
 	c_1."ParentID",

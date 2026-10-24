@@ -1,24 +1,48 @@
 ﻿-- SqlServer.2008
 SELECT
 	[p].[ParentID],
-	CASE
-		WHEN [c_2].[Count_1] IS NULL THEN 0
-		ELSE [c_2].[Count_1]
-	END
+	(
+		SELECT
+			COUNT(*)
+		FROM
+			[Child] [c_1]
+		WHERE
+			[c_1].[ParentID] = [p].[ParentID]
+	)
 FROM
 	[Parent] [p]
-		OUTER APPLY (
-			SELECT
-				COUNT(*) as [Count_1]
-			FROM
-				[Child] [c_1]
-			WHERE
-				[c_1].[ParentID] = [p].[ParentID]
-		) [c_2]
 
 -- SqlServer.2008
 SELECT
 	COUNT(*)
 FROM
 	[Parent] [t1]
+
+-- SqlServer.2008
+SELECT
+	[p].[ParentID],
+	(
+		SELECT
+			COUNT(*)
+		FROM
+			[Child] [c_1]
+		WHERE
+			[c_1].[ParentID] = [p].[ParentID]
+	)
+FROM
+	[Parent] [p]
+
+-- SqlServer.2008
+SELECT
+	[t1].[ParentID],
+	[t1].[Value1]
+FROM
+	[Parent] [t1]
+
+-- SqlServer.2008
+SELECT
+	[t1].[ParentID],
+	[t1].[ChildID]
+FROM
+	[Child] [t1]
 

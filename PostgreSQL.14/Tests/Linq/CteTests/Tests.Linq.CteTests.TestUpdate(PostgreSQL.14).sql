@@ -7,7 +7,7 @@ AS
 	FROM
 		"CteChild" c_1
 	WHERE
-		(c_1."ParentID"::decimal % 2)::decimal = 0
+		Floor(c_1."ParentID"::decimal % 2)::Int = 0
 )
 UPDATE
 	"CteChild"
@@ -25,7 +25,7 @@ SELECT
 FROM
 	"CteChild" c_1
 WHERE
-	(c_1."ParentID"::decimal % 2)::decimal = 0
+	Floor(c_1."ParentID"::decimal % 2)::Int = 0
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
@@ -33,5 +33,5 @@ SELECT
 FROM
 	"CteChild" c_1
 WHERE
-	(c_1."ParentID"::decimal % 2)::decimal = 0
+	Floor(c_1."ParentID"::decimal % 2)::Int = 0
 

@@ -64,8 +64,8 @@ VALUES
 -- SqlServer.2014.MS SqlServer.2014
 SELECT
 	[r].[Id],
-	[r].[StartedOn],
-	[r].[FinishedOn]
+	IIF([r].[StartedOn] IS NULL, NULL, [r].[FinishedOn]),
+	IIF([r].[FinishedOn] IS NULL, NULL, [r].[StartedOn])
 FROM
 	[OptionalEventRow] [r]
 ORDER BY

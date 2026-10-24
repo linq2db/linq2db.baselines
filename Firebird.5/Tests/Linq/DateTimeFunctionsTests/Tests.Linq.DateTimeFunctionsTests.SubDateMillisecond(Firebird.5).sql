@@ -1,6 +1,6 @@
 ﻿-- Firebird.5 Firebird4
 SELECT
-	CAST(CAST(DateDiff(millisecond, "t"."DateTimeValue", DateAdd(Millisecond, 2023456789, "t"."DateTimeValue")) * 10000 AS BigInt) AS DOUBLE PRECISION) / 10000
+	CAST(CAST(CAST(Floor(DateDiff(millisecond, "t"."DateTimeValue", DateAdd(Millisecond, 2023456789, "t"."DateTimeValue")) * 10) AS BigInt) * 1000 AS BigInt) AS DOUBLE PRECISION) / 10000
 FROM
 	"LinqDataTypes" "t"
 

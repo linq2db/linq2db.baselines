@@ -2,7 +2,7 @@
 SELECT
 	m_2."ParentID",
 	m_2."ChildID",
-	(m_2.c1::decimal % 2)::decimal,
+	Floor(m_2.c1::decimal % 2)::Int,
 	m_2.c1
 FROM
 	(
@@ -23,7 +23,7 @@ ORDER BY
 SELECT
 	m_2."ParentID",
 	m_2."ChildID",
-	(m_2.c1::decimal % 2)::decimal,
+	Floor(m_2.c1::decimal % 2)::Int,
 	m_2.c1
 FROM
 	(

@@ -29,9 +29,9 @@ VALUES
 
 -- SqlServer.2008
 SELECT TOP (2)
-	DateAdd(nanosecond, CAST((([r].[InSeconds] * 10000000) % 10000000) * 100 AS Int), DateAdd(second, CAST((([r].[InSeconds] * 10000000) % 864000000000) / 10000000 AS Int), DateAdd(day, CAST(([r].[InSeconds] * 10000000) / 864000000000 AS Int), CAST('2026-03-01T00:00:00.0000000' AS DATETIME2)))),
-	DateAdd(nanosecond, CAST(((([r].[InSeconds] * 10000000) * -1) % 10000000) * 100 AS Int), DateAdd(second, CAST(((([r].[InSeconds] * 10000000) * -1) % 864000000000) / 10000000 AS Int), DateAdd(day, CAST((([r].[InSeconds] * 10000000) * -1) / 864000000000 AS Int), CAST('2026-03-01T00:00:00.0000000' AS DATETIME2)))),
-	DateAdd(nanosecond, CAST(([r].[InTicks] % 10000000) * 100 AS Int), DateAdd(second, CAST(([r].[InTicks] % 864000000000) / 10000000 AS Int), DateAdd(day, CAST([r].[InTicks] / 864000000000 AS Int), CAST('2026-03-01T00:00:00.0000000' AS DATETIME2))))
+	DateAdd(nanosecond, CAST((([r].[InSeconds] * 10000000) % 10000000) * 100 AS Int), DateAdd(second, CAST((([r].[InSeconds] * 10000000) % 864000000000) / 10000000 AS Int), DateAdd(day, CAST(([r].[InSeconds] * 10000000) / 864000000000 AS Int), CAST(CAST('2026-03-01T00:00:00.0000000' AS DATETIME2) AS DateTime2)))),
+	DateAdd(nanosecond, CAST(((([r].[InSeconds] * 10000000) * -1) % 10000000) * 100 AS Int), DateAdd(second, CAST(((([r].[InSeconds] * 10000000) * -1) % 864000000000) / 10000000 AS Int), DateAdd(day, CAST((([r].[InSeconds] * 10000000) * -1) / 864000000000 AS Int), CAST(CAST('2026-03-01T00:00:00.0000000' AS DATETIME2) AS DateTime2)))),
+	DateAdd(nanosecond, CAST(([r].[InTicks] % 10000000) * 100 AS Int), DateAdd(second, CAST(([r].[InTicks] % 864000000000) / 10000000 AS Int), DateAdd(day, CAST([r].[InTicks] / 864000000000 AS Int), CAST(CAST('2026-03-01T00:00:00.0000000' AS DATETIME2) AS DateTime2))))
 FROM
 	[DurationRow] [r]
 

@@ -18,7 +18,7 @@ AS
 	FROM
 		"Child" c4
 	WHERE
-		(c4."ParentID"::decimal % 2)::decimal = 0
+		Floor(c4."ParentID"::decimal % 2)::Int = 0
 )
 SELECT
 	c4_1."ParentID",
@@ -35,5 +35,5 @@ FROM
 	"Child" p
 		INNER JOIN "Child" c4 ON c4."ParentID" = p."ParentID"
 WHERE
-	p."ParentID" > 1 AND (c4."ParentID"::decimal % 2)::decimal = 0
+	p."ParentID" > 1 AND Floor(c4."ParentID"::decimal % 2)::Int = 0
 

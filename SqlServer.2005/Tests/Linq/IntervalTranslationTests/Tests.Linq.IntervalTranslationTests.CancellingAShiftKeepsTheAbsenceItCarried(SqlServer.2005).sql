@@ -64,8 +64,14 @@ VALUES
 -- SqlServer.2005
 SELECT
 	[r].[Id],
-	[r].[StartedOn],
-	[r].[FinishedOn]
+	CASE
+		WHEN [r].[StartedOn] IS NULL THEN NULL
+		ELSE [r].[FinishedOn]
+	END,
+	CASE
+		WHEN [r].[FinishedOn] IS NULL THEN NULL
+		ELSE [r].[StartedOn]
+	END
 FROM
 	[OptionalEventRow] [r]
 ORDER BY

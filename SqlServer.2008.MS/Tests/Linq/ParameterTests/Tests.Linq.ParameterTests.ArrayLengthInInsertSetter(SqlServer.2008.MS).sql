@@ -1,0 +1,22 @@
+﻿-- SqlServer.2008.MS SqlServer.2008
+DECLARE @arr Int -- Int32
+SET     @arr = 3
+
+INSERT INTO [ArrayLengthTable]
+(
+	[Id],
+	[Value]
+)
+VALUES
+(
+	1,
+	@arr
+)
+
+-- SqlServer.2008.MS SqlServer.2008
+SELECT TOP (2)
+	[t1].[Id],
+	[t1].[Value]
+FROM
+	[ArrayLengthTable] [t1]
+

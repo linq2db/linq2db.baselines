@@ -1,0 +1,27 @@
+﻿-- SqlServer.Contained SqlServer.2019
+DECLARE @Id Int -- Int32
+SET     @Id = 1
+DECLARE @StartedOn DateTime2
+SET     @StartedOn = DATETIME2FROMPARTS(2026, 6, 1, 10, 0, 0, 0, 7)
+DECLARE @FinishedOn DateTime2
+SET     @FinishedOn = DATETIME2FROMPARTS(2026, 6, 1, 15, 0, 0, 0, 7)
+
+INSERT INTO [EventRow]
+(
+	[Id],
+	[StartedOn],
+	[FinishedOn]
+)
+VALUES
+(
+	@Id,
+	@StartedOn,
+	@FinishedOn
+)
+
+-- SqlServer.Contained SqlServer.2019
+SELECT TOP (2)
+	CAST((DateDiff_Big(day, CAST([r].[FinishedOn] AS Date), [r].[FinishedOn]) * 86400) * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, CAST([r].[FinishedOn] AS Date), [r].[FinishedOn]) AS Int), CAST([r].[FinishedOn] AS Date)), [r].[FinishedOn]) / 100 AS Float) / 36000000000
+FROM
+	[EventRow] [r]
+

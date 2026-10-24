@@ -136,8 +136,8 @@ FROM
 
 -- YDB Ydb
 SELECT
+	x_1.Top as Top,
 	x_1.Color as Color,
-	x_1.Color_1 as Color_1,
 	x_1.ItemCode as ItemCode,
 	x_1.Name as Name,
 	x_1.ItemCode_2 as ItemCode_1,
@@ -150,8 +150,8 @@ SELECT
 FROM
 	(
 		SELECT
-			x.Top as Color,
-			x.Color_1 as Color_1,
+			x.Top as Top,
+			x.Color_1 as Color,
 			x.ItemCode as ItemCode,
 			x.Color as Name,
 			x.ItemCode_1 as ItemCode_1,
@@ -177,8 +177,8 @@ FROM
 			x.Top
 		UNION ALL
 		SELECT
-			t1.Bottom as Color,
-			CAST(NULL AS Bool) as Color_1,
+			t1.Bottom as Top,
+			CAST(NULL AS Bool) as Color,
 			CAST(NULL AS Text) as ItemCode,
 			CAST(NULL AS Text) as Name,
 			CAST(NULL AS Text) as ItemCode_1,
@@ -204,7 +204,7 @@ FROM
 			t1.Bottom
 	) x_1
 WHERE
-	NOT (x_1.Color AND x_1.Color_1 IS NOT NULL AND x_1.Color_1 OR NOT x_1.Color)
+	NOT (x_1.Top AND x_1.Color IS NOT NULL AND x_1.Color OR NOT x_1.Top)
 
 -- YDB Ydb
 SELECT
@@ -218,8 +218,8 @@ FROM
 
 -- YDB Ydb
 SELECT
+	x_1.Top as Top,
 	x_1.Color as Color,
-	x_1.Color_1 as Color_1,
 	x_1.ItemCode as ItemCode,
 	x_1.Name as Name,
 	x_1.ItemCode_2 as ItemCode_1,
@@ -232,8 +232,8 @@ SELECT
 FROM
 	(
 		SELECT
-			x.Top as Color,
-			x.Color_1 as Color_1,
+			x.Top as Top,
+			x.Color_1 as Color,
 			x.ItemCode as ItemCode,
 			x.Color as Name,
 			x.ItemCode_1 as ItemCode_1,
@@ -259,8 +259,8 @@ FROM
 			x.Top
 		UNION ALL
 		SELECT
-			t1.Bottom as Color,
-			CAST(NULL AS Bool) as Color_1,
+			t1.Bottom as Top,
+			CAST(NULL AS Bool) as Color,
 			CAST(NULL AS Text) as ItemCode,
 			CAST(NULL AS Text) as Name,
 			CAST(NULL AS Text) as ItemCode_1,
@@ -286,8 +286,8 @@ FROM
 			t1.Bottom
 	) x_1
 WHERE
-	x_1.Color AND x_1.Color_1 IS NOT NULL AND x_1.Color_1 OR
-	NOT x_1.Color
+	x_1.Top AND x_1.Color IS NOT NULL AND x_1.Color OR
+	NOT x_1.Top
 
 -- YDB Ydb
 SELECT
@@ -301,7 +301,7 @@ FROM
 
 -- YDB Ydb
 SELECT
-	x_1.Size_1 as Size_1,
+	x_1.Top as Top,
 	x_1.Color as Color,
 	x_1.ItemCode as ItemCode,
 	x_1.Name as Name,
@@ -309,13 +309,13 @@ SELECT
 	x_1.Name_2 as Name_1,
 	x_1.ItemCode_1 as ItemCode_2,
 	x_1.Name_1 as Name_2,
-	x_1.Size_2 as Size_2,
+	x_1.Size_1 as Size_1,
 	x_1.ItemCode_3 as ItemCode_3,
 	x_1.Name_3 as Name_3
 FROM
 	(
 		SELECT
-			x.Top as Size_1,
+			x.Top as Top,
 			x.Color_1 as Color,
 			x.ItemCode as ItemCode,
 			x.Color as Name,
@@ -323,7 +323,7 @@ FROM
 			x.Style_1 as Name_1,
 			CAST(NULL AS Text) as ItemCode_2,
 			CAST(NULL AS Text) as Name_2,
-			CAST(NULL AS Bool) as Size_2,
+			CAST(NULL AS Bool) as Size_1,
 			CAST(NULL AS Text) as ItemCode_3,
 			CAST(NULL AS Text) as Name_3
 		FROM
@@ -342,7 +342,7 @@ FROM
 			x.Top
 		UNION ALL
 		SELECT
-			t1.Bottom as Size_1,
+			t1.Bottom as Top,
 			CAST(NULL AS Bool) as Color,
 			CAST(NULL AS Text) as ItemCode,
 			CAST(NULL AS Text) as Name,
@@ -350,7 +350,7 @@ FROM
 			CAST(NULL AS Text) as Name_1,
 			t1.ItemCode as ItemCode_2,
 			t1.Color as Name_2,
-			t1.Size_1 as Size_2,
+			t1.Size_1 as Size_1,
 			t1.ItemCode_1 as ItemCode_3,
 			t1.Style_1 as Name_3
 		FROM
@@ -369,7 +369,7 @@ FROM
 			t1.Bottom
 	) x_1
 WHERE
-	NOT (x_1.Size_1 AND x_1.Color IS NULL AND x_1.Size_2 OR NOT x_1.Size_1)
+	NOT (x_1.Top AND x_1.Color IS NULL AND x_1.Size_1 OR NOT x_1.Top)
 
 -- YDB Ydb
 SELECT
@@ -383,7 +383,7 @@ FROM
 
 -- YDB Ydb
 SELECT
-	x_1.Size_1 as Size_1,
+	x_1.Top as Top,
 	x_1.Color as Color,
 	x_1.ItemCode as ItemCode,
 	x_1.Name as Name,
@@ -391,13 +391,13 @@ SELECT
 	x_1.Name_2 as Name_1,
 	x_1.ItemCode_1 as ItemCode_2,
 	x_1.Name_1 as Name_2,
-	x_1.Size_2 as Size_2,
+	x_1.Size_1 as Size_1,
 	x_1.ItemCode_3 as ItemCode_3,
 	x_1.Name_3 as Name_3
 FROM
 	(
 		SELECT
-			x.Top as Size_1,
+			x.Top as Top,
 			x.Color_1 as Color,
 			x.ItemCode as ItemCode,
 			x.Color as Name,
@@ -405,7 +405,7 @@ FROM
 			x.Style_1 as Name_1,
 			CAST(NULL AS Text) as ItemCode_2,
 			CAST(NULL AS Text) as Name_2,
-			CAST(NULL AS Bool) as Size_2,
+			CAST(NULL AS Bool) as Size_1,
 			CAST(NULL AS Text) as ItemCode_3,
 			CAST(NULL AS Text) as Name_3
 		FROM
@@ -424,7 +424,7 @@ FROM
 			x.Top
 		UNION ALL
 		SELECT
-			t1.Bottom as Size_1,
+			t1.Bottom as Top,
 			CAST(NULL AS Bool) as Color,
 			CAST(NULL AS Text) as ItemCode,
 			CAST(NULL AS Text) as Name,
@@ -432,7 +432,7 @@ FROM
 			CAST(NULL AS Text) as Name_1,
 			t1.ItemCode as ItemCode_2,
 			t1.Color as Name_2,
-			t1.Size_1 as Size_2,
+			t1.Size_1 as Size_1,
 			t1.ItemCode_1 as ItemCode_3,
 			t1.Style_1 as Name_3
 		FROM
@@ -451,8 +451,7 @@ FROM
 			t1.Bottom
 	) x_1
 WHERE
-	x_1.Size_1 AND x_1.Color IS NULL AND x_1.Size_2 OR
-	NOT x_1.Size_1
+	x_1.Top AND x_1.Color IS NULL AND x_1.Size_1 OR NOT x_1.Top
 
 -- YDB Ydb
 SELECT

@@ -27,14 +27,14 @@ FROM
 
 -- YDB Ydb
 SELECT
-	Unwrap(CAST(((Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l) / 10l) % 1000l AS Int32)) as c1
+	Unwrap(CAST(((Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l) / 10l) % 1000l AS Int32)) as Microseconds
 FROM
 	EventRow r
 WHERE
 	r.Id > 0
 UNION ALL
 SELECT
-	Unwrap(CAST(((Unwrap(CAST(r_1.FinishedOn - r_1.StartedOn AS Int64)) * 10l) / 10l) % 1000l AS Int32)) as c1
+	Unwrap(CAST(((Unwrap(CAST(r_1.FinishedOn - r_1.StartedOn AS Int64)) * 10l) / 10l) % 1000l AS Int32)) as Microseconds
 FROM
 	EventRow r_1
 WHERE

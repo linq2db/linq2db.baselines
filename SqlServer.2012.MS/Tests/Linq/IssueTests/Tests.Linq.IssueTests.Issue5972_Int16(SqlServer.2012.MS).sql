@@ -1,0 +1,16 @@
+﻿-- SqlServer.2012.MS SqlServer.2012
+SELECT
+	-32768
+
+-- SqlServer.2012.MS SqlServer.2012
+SELECT
+	32767
+
+-- SqlServer.2012.MS SqlServer.2012
+SELECT
+	-32768
+
+-- SqlServer.2012.MS SqlServer.2012
+SELECT
+	32767
+

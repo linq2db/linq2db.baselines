@@ -258,6 +258,7 @@ SELECT	r.ROUTINE_CATALOG,
 		LEFT JOIN (SELECT SPECIFIC_SCHEMA, SPECIFIC_NAME, COUNT(*)as cnt FROM INFORMATION_SCHEMA.parameters WHERE parameter_mode IN('OUT', 'INOUT') GROUP BY SPECIFIC_SCHEMA, SPECIFIC_NAME) as outp
 			ON r.SPECIFIC_SCHEMA = outp.SPECIFIC_SCHEMA AND r.SPECIFIC_NAME = outp.SPECIFIC_NAME
 		WHERE n.nspname NOT IN ('information_schema', 'pg_catalog')
+		ORDER BY r.SPECIFIC_SCHEMA, r.ROUTINE_NAME, r.SPECIFIC_NAME
 
 -- PostgreSQL.18 PostgreSQL12
 SELECT SPECIFIC_CATALOG, SPECIFIC_SCHEMA, SPECIFIC_NAME, ORDINAL_POSITION, PARAMETER_MODE, PARAMETER_NAME, DATA_TYPE
@@ -276,12 +277,12 @@ SELECT r.SPECIFIC_CATALOG, r.SPECIFIC_SCHEMA, r.SPECIFIC_NAME, r.DATA_TYPE
 SELECT * FROM testdata.public."GetParentByID"(NULL::integer)
 
 -- PostgreSQL.18 PostgreSQL12
+SELECT * FROM testdata.public."TestTableFunction"(NULL::integer)
+
+-- PostgreSQL.18 PostgreSQL12
 SELECT * FROM testdata.public."TestTableFunction1"(NULL::integer,NULL::integer)
 
 -- PostgreSQL.18 PostgreSQL12
 SELECT * FROM testdata.public."TestTableFunctionSchema"()
-
--- PostgreSQL.18 PostgreSQL12
-SELECT * FROM testdata.public."TestTableFunction"(NULL::integer)
 
 RollbackTransaction

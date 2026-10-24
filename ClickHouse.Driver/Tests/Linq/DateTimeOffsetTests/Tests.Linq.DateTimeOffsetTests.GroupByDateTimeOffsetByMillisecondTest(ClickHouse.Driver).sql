@@ -5,7 +5,7 @@ SELECT
 FROM
 	(
 		SELECT
-			toUnixTimestamp64Milli(x.TransactionDate) % 1000 as Key_1
+			(toUnixTimestamp64Milli(toDateTime64(x.TransactionDate, 7)) % toInt64(1000) + 1000) % 1000 as Key_1
 		FROM
 			Transactions x
 	) t1

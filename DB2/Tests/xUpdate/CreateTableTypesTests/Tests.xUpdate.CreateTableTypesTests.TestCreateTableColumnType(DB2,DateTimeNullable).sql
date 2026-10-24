@@ -19,7 +19,7 @@ VALUES
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
 DECLARE @DateTimeNullable Timestamp(20) -- DateTime
-SET     @DateTimeNullable = '2018-11-25-01.02.03.000000'
+SET     @DateTimeNullable = CAST('2018-11-25-01.02.03.000000' AS TIMESTAMP(6))
 
 INSERT INTO "CreateTableTypes"
 (

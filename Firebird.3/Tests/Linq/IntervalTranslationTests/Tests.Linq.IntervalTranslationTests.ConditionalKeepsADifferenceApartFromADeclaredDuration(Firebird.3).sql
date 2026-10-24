@@ -52,7 +52,7 @@ VALUES
 SELECT
 	"r"."Id",
 	"r"."Budget",
-	CAST(DateDiff(millisecond, "r"."StartedOn", "r"."FinishedOn") * 10000 AS BigInt)
+	CAST(CAST(Floor(DateDiff(millisecond, "r"."StartedOn", "r"."FinishedOn") * 10) AS BigInt) * 1000 AS BigInt)
 FROM
 	"BudgetedTaskRow" "r"
 ORDER BY

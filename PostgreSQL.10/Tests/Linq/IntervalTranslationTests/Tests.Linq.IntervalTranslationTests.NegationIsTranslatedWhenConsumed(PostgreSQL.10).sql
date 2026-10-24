@@ -30,7 +30,7 @@ VALUES
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 SELECT
 	(-r."InSeconds")::BigInt::Float / 3600,
-	Floor((((-r."InSeconds")::BigInt / 3600)::decimal % 24)::decimal)::Int
+	Floor(((-r."InSeconds")::BigInt / 3600)::decimal % 24)::BigInt::Int
 FROM
 	"DurationRow" r
 LIMIT 2

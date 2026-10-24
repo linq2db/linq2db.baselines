@@ -52,19 +52,19 @@ VALUES
 SELECT
 	(
 		SELECT
-			MIN(CAST(DateDiff(millisecond, "t2"."StartedOn", "t2"."FinishedOn") * 10000 AS BigInt))
+			MIN(CAST(CAST(Floor(DateDiff(millisecond, "t2"."StartedOn", "t2"."FinishedOn") * 10) AS BigInt) * 1000 AS BigInt))
 		FROM
 			"BudgetedTaskRow" "t2"
 	),
 	(
 		SELECT
-			MAX(CAST(DateDiff(millisecond, "t3"."StartedOn", "t3"."FinishedOn") * 10000 AS BigInt))
+			MAX(CAST(CAST(Floor(DateDiff(millisecond, "t3"."StartedOn", "t3"."FinishedOn") * 10) AS BigInt) * 1000 AS BigInt))
 		FROM
 			"BudgetedTaskRow" "t3"
 	),
 	Coalesce((
 		SELECT
-			SUM(CAST(CAST(DateDiff(millisecond, "t4"."StartedOn", "t4"."FinishedOn") * 10000 AS BigInt) AS DOUBLE PRECISION) / 600000000)
+			SUM(CAST(CAST(CAST(Floor(DateDiff(millisecond, "t4"."StartedOn", "t4"."FinishedOn") * 10) AS BigInt) * 1000 AS BigInt) AS DOUBLE PRECISION) / 600000000)
 		FROM
 			"BudgetedTaskRow" "t4"
 	), 0)

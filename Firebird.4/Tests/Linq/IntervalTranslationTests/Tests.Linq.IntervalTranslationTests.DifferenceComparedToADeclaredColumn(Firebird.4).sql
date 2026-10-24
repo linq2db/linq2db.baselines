@@ -79,7 +79,7 @@ SELECT
 FROM
 	"BudgetedTaskRow" "r"
 WHERE
-	CAST(DateDiff(millisecond, "r"."StartedOn", "r"."FinishedOn") * 10000 AS BigInt) > "r"."Budget" * 10000000
+	CAST(CAST(Floor(DateDiff(millisecond, "r"."StartedOn", "r"."FinishedOn") * 10) AS BigInt) * 1000 AS BigInt) > "r"."Budget" * 10000000
 
 -- Firebird.4 Firebird4
 SELECT
@@ -87,5 +87,5 @@ SELECT
 FROM
 	"BudgetedTaskRow" "r"
 WHERE
-	CAST(DateDiff(millisecond, "r"."StartedOn", "r"."FinishedOn") * 10000 AS BigInt) = "r"."Budget" * 10000000
+	CAST(CAST(Floor(DateDiff(millisecond, "r"."StartedOn", "r"."FinishedOn") * 10) AS BigInt) * 1000 AS BigInt) = "r"."Budget" * 10000000
 

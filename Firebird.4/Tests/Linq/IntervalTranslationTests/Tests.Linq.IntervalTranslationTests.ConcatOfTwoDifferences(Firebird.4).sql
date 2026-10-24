@@ -31,13 +31,13 @@ FROM
 	(
 		SELECT
 			CAST(1 AS Int) as "Source",
-			CAST(DateDiff(millisecond, "r"."StartedOn", "r"."FinishedOn") * 10000 AS BigInt) as "Duration"
+			CAST(CAST(Floor(DateDiff(millisecond, "r"."StartedOn", "r"."FinishedOn") * 10) AS BigInt) * 1000 AS BigInt) as "Duration"
 		FROM
 			"BudgetedTaskRow" "r"
 		UNION ALL
 		SELECT
 			CAST(2 AS Int) as "Source",
-			CAST(DateDiff(millisecond, "r_1"."StartedOn", "r_1"."FinishedOn") * 10000 AS BigInt) as "Duration"
+			CAST(CAST(Floor(DateDiff(millisecond, "r_1"."StartedOn", "r_1"."FinishedOn") * 10) AS BigInt) * 1000 AS BigInt) as "Duration"
 		FROM
 			"BudgetedTaskRow" "r_1"
 	) "t1"

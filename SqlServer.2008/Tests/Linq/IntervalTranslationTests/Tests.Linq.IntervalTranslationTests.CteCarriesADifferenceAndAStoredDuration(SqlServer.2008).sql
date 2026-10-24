@@ -24,27 +24,19 @@ VALUES
 )
 
 -- SqlServer.2008
-WITH [CTE_1]
-(
-	[Id],
-	[FinishedOn],
-	[StartedOn],
-	[Budget]
-)
+WITH [CTE_1] ([Id], [Taken], [Budget])
 AS
 (
 	SELECT
 		[r].[Id],
-		[r].[FinishedOn],
-		[r].[StartedOn],
+		(CAST(DateDiff(day, [r].[StartedOn], [r].[FinishedOn]) AS BigInt) * 86400) * 10000000 + CAST(DateDiff(second, CAST(DateAdd(day, CAST(CAST(DateDiff(day, [r].[StartedOn], [r].[FinishedOn]) AS BigInt) AS Int), [r].[StartedOn]) AS DateTime2), [r].[FinishedOn]) AS BigInt) * 10000000 + CAST(DateDiff(nanosecond, DateAdd(second, CAST(CAST(DateDiff(second, CAST(DateAdd(day, CAST(CAST(DateDiff(day, [r].[StartedOn], [r].[FinishedOn]) AS BigInt) AS Int), [r].[StartedOn]) AS DateTime2), [r].[FinishedOn]) AS BigInt) AS Int), CAST(DateAdd(day, CAST(CAST(DateDiff(day, [r].[StartedOn], [r].[FinishedOn]) AS BigInt) AS Int), [r].[StartedOn]) AS DateTime2)), [r].[FinishedOn]) AS BigInt) / 100,
 		[r].[Budget]
 	FROM
 		[BudgetedTaskRow] [r]
 )
 SELECT TOP (2)
 	[t1].[Id],
-	[t1].[FinishedOn],
-	[t1].[StartedOn],
+	[t1].[Taken],
 	[t1].[Budget]
 FROM
 	[CTE_1] [t1]

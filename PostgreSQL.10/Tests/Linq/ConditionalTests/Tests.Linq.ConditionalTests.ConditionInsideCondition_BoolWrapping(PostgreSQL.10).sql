@@ -1,8 +1,8 @@
 ﻿-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 SELECT
 	CASE
-		WHEN (p."ParentID"::decimal % 2)::decimal = 0 THEN (p."ParentID"::decimal % 3)::decimal = 0
-		WHEN (p."ParentID"::decimal % 4)::decimal = 0 THEN p."ParentID" > 0
+		WHEN Floor(p."ParentID"::decimal % 2)::Int = 0 THEN Floor(p."ParentID"::decimal % 3)::Int = 0
+		WHEN Floor(p."ParentID"::decimal % 4)::Int = 0 THEN p."ParentID" > 0
 		ELSE p."ParentID" < 5
 	END
 FROM

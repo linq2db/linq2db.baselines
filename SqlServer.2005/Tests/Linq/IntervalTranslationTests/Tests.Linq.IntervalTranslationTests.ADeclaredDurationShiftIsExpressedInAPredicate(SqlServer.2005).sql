@@ -33,5 +33,5 @@ SELECT
 FROM
 	[DurationRow] [r]
 WHERE
-	DateAdd(millisecond, CAST((([r].[InSeconds] * 10000000) % 10000000) / 10000 AS Int), DateAdd(second, CAST((([r].[InSeconds] * 10000000) % 864000000000) / 10000000 AS Int), DateAdd(day, CAST(([r].[InSeconds] * 10000000) / 864000000000 AS Int), CAST('2026-03-01T00:00:00.000' AS DATETIME)))) > CAST('2026-03-01T01:00:00.000' AS DATETIME)
+	DateAdd(millisecond, CAST((([r].[InSeconds] * 10000000) % 10000000) / 10000 AS Int), DateAdd(second, CAST((([r].[InSeconds] * 10000000) % 864000000000) / 10000000 AS Int), DateAdd(day, CAST(([r].[InSeconds] * 10000000) / 864000000000 AS Int), CAST(CAST('2026-03-01T00:00:00.000' AS DATETIME) AS DateTime)))) > CAST('2026-03-01T01:00:00.000' AS DATETIME)
 

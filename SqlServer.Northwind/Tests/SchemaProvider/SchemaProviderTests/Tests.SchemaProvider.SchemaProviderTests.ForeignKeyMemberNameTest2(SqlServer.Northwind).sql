@@ -189,6 +189,9 @@ SET     @params = N'@Beginning_Date datetime, @Ending_Date datetime'
 sp_describe_first_result_set
 
 -- SqlServer.Northwind SqlServer.2019
+EXEC('SELECT * FROM [Northwind].[dbo].[Issue449](NULL)')
+
+-- SqlServer.Northwind SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [Northwind].[dbo].[Sales by Year] @Beginning_Date, @Ending_Date'
 DECLARE @params NVarChar(4000) -- String
