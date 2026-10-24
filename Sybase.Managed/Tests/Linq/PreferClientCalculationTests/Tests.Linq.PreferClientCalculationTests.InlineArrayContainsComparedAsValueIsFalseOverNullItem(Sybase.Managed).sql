@@ -10,10 +10,8 @@ WHERE
 		WHEN [e].[Flag] = 1 THEN 1
 		ELSE 0
 	END = CASE
-		WHEN [e].[Id] IN ([e].[Item], 5) THEN 1
-		WHEN NOT ([e].[Id] = [e].[Item] AND [e].[Item] IS NOT NULL OR [e].[Id] = 5)
-			THEN 0
-		ELSE NULL
+		WHEN [e].[Id] = [e].[Item] OR [e].[Id] = 5 THEN 1
+		ELSE 0
 	END
 
 -- Sybase.Managed Sybase
@@ -36,10 +34,8 @@ WHERE
 		WHEN [e].[Flag] = 1 THEN 1
 		ELSE 0
 	END <> CASE
-		WHEN [e].[Id] IN ([e].[Item], 5) THEN 1
-		WHEN NOT ([e].[Id] = [e].[Item] AND [e].[Item] IS NOT NULL OR [e].[Id] = 5)
-			THEN 0
-		ELSE NULL
+		WHEN [e].[Id] = [e].[Item] OR [e].[Id] = 5 THEN 1
+		ELSE 0
 	END
 
 -- Sybase.Managed Sybase

@@ -24,7 +24,8 @@ VALUES
 )
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT LAST_INSERT_ID()
+SELECT
+	LAST_INSERT_ID() as `c1`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @Gender String(1) -- StringFixedLength
@@ -52,7 +53,8 @@ VALUES
 )
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT LAST_INSERT_ID()
+SELECT
+	LAST_INSERT_ID() as `c1`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @id1 Int32

@@ -13,8 +13,7 @@ FROM
 			[Person] [p]
 	) [t1]
 WHERE
-	[t1].[FirstName] <> N'' OR [t1].[LastName] <> N'' OR
-	[t1].[FullName] <> N''
+	[t1].[FirstName] <> N'' OR [t1].[LastName] <> N'' OR [t1].[FullName] <> N''
 ORDER BY
 	[t1].[FirstName],
 	[t1].[LastName]
