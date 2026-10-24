@@ -286,8 +286,7 @@ FROM
 			[t1].[Bottom]
 	) [x_1]
 WHERE
-	[x_1].[Top] AND [x_1].[Color] IS NOT NULL AND [x_1].[Color] OR
-	NOT [x_1].[Top]
+	[x_1].[Top] AND [x_1].[Color] IS NOT NULL AND [x_1].[Color] OR NOT [x_1].[Top]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 SELECT
@@ -451,8 +450,7 @@ FROM
 			[t1].[Bottom]
 	) [x_1]
 WHERE
-	[x_1].[Top] AND [x_1].[Color] IS NULL AND [x_1].[Size_1] OR
-	NOT [x_1].[Top]
+	[x_1].[Top] AND [x_1].[Color] IS NULL AND [x_1].[Size_1] OR NOT [x_1].[Top]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 SELECT

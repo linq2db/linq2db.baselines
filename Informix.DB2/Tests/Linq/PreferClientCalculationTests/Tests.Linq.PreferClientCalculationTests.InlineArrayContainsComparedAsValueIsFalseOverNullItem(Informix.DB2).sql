@@ -10,10 +10,8 @@ WHERE
 		WHEN e.Flag THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
 	END = CASE
-		WHEN e.Id IN (e."Item", 5) THEN 't'::BOOLEAN
-		WHEN NOT (e.Id = e."Item" AND e."Item" IS NOT NULL OR e.Id = 5)
-			THEN 'f'::BOOLEAN
-		ELSE NULL
+		WHEN e.Id = e."Item" OR e.Id = 5 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
 	END
 
 -- Informix.DB2 Informix
@@ -36,10 +34,8 @@ WHERE
 		WHEN e.Flag THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
 	END <> CASE
-		WHEN e.Id IN (e."Item", 5) THEN 't'::BOOLEAN
-		WHEN NOT (e.Id = e."Item" AND e."Item" IS NOT NULL OR e.Id = 5)
-			THEN 'f'::BOOLEAN
-		ELSE NULL
+		WHEN e.Id = e."Item" OR e.Id = 5 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
 	END
 
 -- Informix.DB2 Informix

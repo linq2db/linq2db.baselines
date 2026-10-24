@@ -6,6 +6,5 @@ FROM
 	[MissedJoinEntity] [e]
 		LEFT JOIN [MissedJoinEntity] [j] ON [j].[Id] = [e].[Id] + 1000
 WHERE
-	CAST(strftime('%Y', [j].[Date]) AS INTEGER) > 0 OR
-	[e].[Id] = 1
+	CAST(strftime('%Y', [j].[Date]) AS INTEGER) > 0 OR [e].[Id] = 1
 

@@ -11,8 +11,5 @@ SELECT
 FROM
 	[Parent] [i]
 WHERE
-	[i].[Value1] = @tenderIds OR
-	[i].[Value1] = @tenderIds_1 OR
-	[i].[Value1] = @tenderIds_2 OR
-	[i].[Value1] IS NULL
+	[i].[Value1] = @tenderIds OR [i].[Value1] = @tenderIds_1 OR [i].[Value1] = @tenderIds_2 OR [i].[Value1] IS NULL
 
