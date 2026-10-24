@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			CAST(RIGHT(N'0' + CAST(DatePart(year, [grp].[DateTimeValue]) AS VarChar(4)), 4) + N'-' + RIGHT(N'0' + CAST(DatePart(month, [grp].[DateTimeValue]) AS VarChar(2)), 2) + N'-01' AS DateTime2) as [c1],
+			CAST(RIGHT('0' + CAST(DatePart(year, [grp].[DateTimeValue]) AS VarChar(4)), 4) + N'-' + RIGHT('0' + CAST(DatePart(month, [grp].[DateTimeValue]) AS VarChar(2)), 2) + N'-01' AS DateTime2) as [c1],
 			[grp].[MoneyValue]
 		FROM
 			[LinqDataTypes] [grp]
@@ -22,7 +22,7 @@ SELECT
 FROM
 	(
 		SELECT
-			CAST(RIGHT(N'0' + CAST(DatePart(year, [grp].[DateTimeValue]) AS VarChar(4)), 4) + N'-' + RIGHT(N'0' + CAST(DatePart(month, [grp].[DateTimeValue]) AS VarChar(2)), 2) + N'-01' AS DateTime2) as [c1],
+			CAST(RIGHT('0' + CAST(DatePart(year, [grp].[DateTimeValue]) AS VarChar(4)), 4) + N'-' + RIGHT('0' + CAST(DatePart(month, [grp].[DateTimeValue]) AS VarChar(2)), 2) + N'-01' AS DateTime2) as [c1],
 			[grp].[MoneyValue]
 		FROM
 			[LinqDataTypes] [grp]
