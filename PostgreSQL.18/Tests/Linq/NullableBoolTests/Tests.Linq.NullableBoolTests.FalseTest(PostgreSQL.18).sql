@@ -1,0 +1,36 @@
+﻿-- PostgreSQL.18 PostgreSQL12
+SELECT
+	t."Id",
+	t."Value"
+FROM
+	"NullableBoolClass" t
+WHERE
+	t."Value" = False
+
+-- PostgreSQL.18 PostgreSQL12
+SELECT
+	t."Id",
+	t."Value"
+FROM
+	"NullableBoolClass" t
+WHERE
+	t."Value" = False
+
+-- PostgreSQL.18 PostgreSQL12
+SELECT
+	t."Id",
+	t."Value"
+FROM
+	"NullableBoolClass" t
+WHERE
+	t."Value" = True OR t."Value" IS NULL
+
+-- PostgreSQL.18 PostgreSQL12
+SELECT
+	t."Id",
+	t."Value"
+FROM
+	"NullableBoolClass" t
+WHERE
+	t."Value" = True
+

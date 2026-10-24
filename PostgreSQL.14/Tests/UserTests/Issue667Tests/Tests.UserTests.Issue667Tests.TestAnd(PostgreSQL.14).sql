@@ -1,0 +1,9 @@
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+SELECT
+	f."ParentID",
+	f."Value1"
+FROM
+	"Parent" f
+WHERE
+	f."ParentID" >= 1 AND f."ParentID" <= 4
+

@@ -1,0 +1,20 @@
+﻿-- Oracle.23.Managed Oracle.Managed Oracle12
+SELECT
+	-9223372036854775808
+FROM SYS.DUAL
+
+-- Oracle.23.Managed Oracle.Managed Oracle12
+SELECT
+	9223372036854775807
+FROM SYS.DUAL
+
+-- Oracle.23.Managed Oracle.Managed Oracle12
+SELECT
+	-9223372036854775808
+FROM SYS.DUAL
+
+-- Oracle.23.Managed Oracle.Managed Oracle12
+SELECT
+	9223372036854775807
+FROM SYS.DUAL
+

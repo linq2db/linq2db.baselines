@@ -1,0 +1,16 @@
+﻿-- PostgreSQL.11 PostgreSQL
+SELECT
+	0::decimal(20)
+
+-- PostgreSQL.11 PostgreSQL
+SELECT
+	18446744073709551615::decimal(20)
+
+-- PostgreSQL.11 PostgreSQL
+SELECT
+	Floor(0)::decimal(20)
+
+-- PostgreSQL.11 PostgreSQL
+SELECT
+	Floor(18446744073709551615)::decimal(20)
+

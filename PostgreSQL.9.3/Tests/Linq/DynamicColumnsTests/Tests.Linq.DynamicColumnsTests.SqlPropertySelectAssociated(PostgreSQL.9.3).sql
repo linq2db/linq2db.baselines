@@ -1,0 +1,7 @@
+﻿-- PostgreSQL.9.3 PostgreSQL
+SELECT
+	"a_Patient"."Diagnosis"
+FROM
+	"Person" x
+		LEFT JOIN "Patient" "a_Patient" ON x."PersonID" = "a_Patient"."PersonID"
+

@@ -1,0 +1,7 @@
+﻿-- DuckDB
+SELECT
+	CAST(Power(CAST(r.D AS DOUBLE), CAST(0.00005 AS DOUBLE)) AS DECIMAL(18, 4)) + r.D
+FROM
+	PowScale r
+LIMIT 2
+

@@ -1,0 +1,6 @@
+﻿-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+SELECT
+	STRING_AGG(t1."NullableValue", ', ' ORDER BY t1."NotNullableValue")
+FROM
+	"SampleClass" t1
+

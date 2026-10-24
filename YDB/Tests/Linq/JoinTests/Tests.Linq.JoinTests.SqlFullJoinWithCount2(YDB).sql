@@ -1,0 +1,18 @@
+﻿-- YDB Ydb
+DECLARE $id Int32
+SET     $id = 1
+
+SELECT
+	COUNT(t1.ParentID) = COUNT(right_1.ParentID) AND COUNT(t1.ParentID) = COUNT(*) as c1
+FROM
+	(
+		SELECT
+			p.ParentID as ParentID
+		FROM
+			Parent p
+		WHERE
+			p.ParentID <> $id
+	) t1
+		FULL JOIN Parent right_1 ON right_1.ParentID = t1.ParentID
+LIMIT 2
+

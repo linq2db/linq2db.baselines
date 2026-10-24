@@ -1,0 +1,17 @@
+﻿-- PostgreSQL.15 PostgreSQL12
+SELECT
+	t.c1
+FROM
+	(
+		SELECT
+			CASE
+				WHEN p."MoneyValue"::Float::decimal * 2 = ROUND(p."MoneyValue"::Float::decimal * 2, 1) AND p."MoneyValue"::Float::decimal <> ROUND(p."MoneyValue"::Float::decimal, 1)
+					THEN ROUND(p."MoneyValue"::Float::decimal / 2, 1) * 2
+				ELSE ROUND(p."MoneyValue"::Float::decimal, 1)
+			END::Float as c1
+		FROM
+			"LinqDataTypes" p
+	) t
+WHERE
+	t.c1 <> 0
+

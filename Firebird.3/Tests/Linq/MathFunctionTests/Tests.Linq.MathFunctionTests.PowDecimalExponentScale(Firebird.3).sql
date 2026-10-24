@@ -1,0 +1,7 @@
+﻿-- Firebird.3 Firebird3
+SELECT
+	CAST(Power(CAST("r".D AS DOUBLE PRECISION), CAST(0.00005 AS DOUBLE PRECISION)) AS Decimal(18, 4)) + "r".D
+FROM
+	"PowScale" "r"
+FETCH NEXT 2 ROWS ONLY
+

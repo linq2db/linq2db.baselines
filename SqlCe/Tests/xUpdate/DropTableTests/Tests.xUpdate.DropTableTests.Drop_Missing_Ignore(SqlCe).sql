@@ -1,0 +1,3 @@
+﻿-- SqlCe
+DROP TABLE [Table]
+

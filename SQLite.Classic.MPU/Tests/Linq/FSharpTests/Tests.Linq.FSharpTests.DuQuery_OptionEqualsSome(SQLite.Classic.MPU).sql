@@ -1,0 +1,46 @@
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
+DECLARE @Id  -- Int32
+SET     @Id = 1
+DECLARE @Key  -- Int32
+SET     @Key = 10
+
+INSERT INTO [DuOptRow]
+(
+	[Id],
+	[Key]
+)
+VALUES
+(
+	@Id,
+	@Key
+)
+
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+DECLARE @Id  -- Int32
+SET     @Id = 2
+DECLARE @Key  -- Int32
+SET     @Key = NULL
+
+INSERT INTO [DuOptRow]
+(
+	[Id],
+	[Key]
+)
+VALUES
+(
+	@Id,
+	@Key
+)
+
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+DECLARE @Key  -- Int32
+SET     @Key = 10
+
+SELECT
+	[x].[Id],
+	[x].[Key]
+FROM
+	[DuOptRow] [x]
+WHERE
+	[x].[Key] = @Key
+

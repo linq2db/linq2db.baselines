@@ -1,0 +1,38 @@
+﻿-- Firebird.2.5 Firebird
+DECLARE @ParentID Integer -- Int32
+SET     @ParentID = 1
+
+SELECT
+	CASE
+		WHEN EXISTS(
+			SELECT
+				*
+			FROM
+				"Child" "c_1"
+			WHERE
+				CAST(@ParentID AS Int) = "c_1"."ParentID"
+		)
+			THEN '1'
+		ELSE '0'
+	END
+FROM rdb$database
+
+-- Firebird.2.5 Firebird
+DECLARE @ParentID Integer -- Int32
+SET     @ParentID = -1
+
+SELECT
+	CASE
+		WHEN EXISTS(
+			SELECT
+				*
+			FROM
+				"Child" "c_1"
+			WHERE
+				CAST(@ParentID AS Int) = "c_1"."ParentID"
+		)
+			THEN '1'
+		ELSE '0'
+	END
+FROM rdb$database
+

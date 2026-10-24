@@ -1,0 +1,15 @@
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
+SELECT
+	[item_1].[No],
+	[s].[Quantity]
+FROM
+	[InventoryItem] [item_1]
+		LEFT JOIN [StockEntry] [s] ON [s].[Code] = [item_1].[No]
+
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+SELECT
+	COUNT(*)
+FROM
+	[InventoryItem] [t1]
+		LEFT JOIN [StockEntry] [s] ON [s].[Code] = [t1].[No]
+

@@ -1,0 +1,8 @@
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+SELECT
+	c_1."ChildID",
+	c_1."ParentID"
+FROM
+	"Parent" x
+		LEFT JOIN "Child" c_1 ON c_1."ParentID" = x."ParentID"
+

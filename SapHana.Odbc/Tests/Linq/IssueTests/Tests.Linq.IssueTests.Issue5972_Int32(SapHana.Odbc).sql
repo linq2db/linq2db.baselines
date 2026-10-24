@@ -1,0 +1,20 @@
+﻿-- SapHana.Odbc SapHanaOdbc
+SELECT
+	-2147483648
+FROM DUMMY
+
+-- SapHana.Odbc SapHanaOdbc
+SELECT
+	2147483647
+FROM DUMMY
+
+-- SapHana.Odbc SapHanaOdbc
+SELECT
+	-2147483648
+FROM DUMMY
+
+-- SapHana.Odbc SapHanaOdbc
+SELECT
+	2147483647
+FROM DUMMY
+
