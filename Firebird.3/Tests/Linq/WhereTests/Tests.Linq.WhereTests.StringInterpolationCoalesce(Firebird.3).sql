@@ -13,8 +13,7 @@ FROM
 			"Person" "p"
 	) "t1"
 WHERE
-	"t1"."FirstName" <> '' OR "t1"."LastName" <> '' OR
-	"t1"."FullName" <> ''
+	"t1"."FirstName" <> '' OR "t1"."LastName" <> '' OR "t1"."FullName" <> ''
 ORDER BY
 	"t1"."FirstName",
 	"t1"."LastName"
