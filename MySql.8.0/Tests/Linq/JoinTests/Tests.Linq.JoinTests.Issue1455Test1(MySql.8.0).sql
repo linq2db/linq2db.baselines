@@ -28,8 +28,7 @@ FROM
 				LEFT JOIN `Trade` `trade_1` ON `al_group_1`.`AlertKey` = CAST(`trade_1`.`DealId` AS CHAR(11))
 				LEFT JOIN `Nomin` `nomin_1` ON `al_group_1`.`AlertKey` = CAST(`nomin_1`.`CargoId` AS CHAR(11))
 		WHERE
-			LOCATE(@cpty, `nomin_1`.`DeliveryCounterParty`) > 0 OR
-			LOCATE(@cpty, `trade_1`.`CounterParty`) > 0 OR LOCATE(@cpty, `al_group_1`.`AlertCode`) > 0
+			LOCATE(@cpty, `nomin_1`.`DeliveryCounterParty`) > 0 OR LOCATE(@cpty, `trade_1`.`CounterParty`) > 0 OR LOCATE(@cpty, `al_group_1`.`AlertCode`) > 0
 	) `al_group_3`
 		LEFT JOIN LATERAL (
 			SELECT

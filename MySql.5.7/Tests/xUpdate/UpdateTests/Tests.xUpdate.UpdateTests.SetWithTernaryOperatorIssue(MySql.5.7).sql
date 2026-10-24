@@ -24,7 +24,8 @@ VALUES
 )
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT LAST_INSERT_ID()
+SELECT
+	LAST_INSERT_ID() as `c1`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @nullableGender String(1) -- StringFixedLength

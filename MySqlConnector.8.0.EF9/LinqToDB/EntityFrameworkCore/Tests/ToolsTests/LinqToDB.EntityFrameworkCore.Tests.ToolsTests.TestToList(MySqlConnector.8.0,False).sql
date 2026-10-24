@@ -27,8 +27,6 @@ FROM
 
 
 
-
-
 -- MySql.8.0.MySqlConnector MySql80
 SELECT
 	`e`.`IsDeleted`,
@@ -48,6 +46,8 @@ SELECT
 	`e`.`ShipCountry`
 FROM
 	`Orders` `e`
+
+
 
 
 
