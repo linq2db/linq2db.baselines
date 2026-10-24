@@ -26,8 +26,8 @@ DECLARE @late VarChar(23) -- AnsiString
 SET     @late = '2100-01-01 00:00:00.000'
 
 SELECT
-	Strftime('%Y-%m-%d %H:%M:%f', JulianDay(@early) + Round(CAST(CAST(Round((JulianDay([r].[FinishedOn]) - JulianDay([r].[StartedOn])) * 86400000) AS INTEGER) * 10000 AS Float) * 0.00010000000000000001) * 1.1574074074074074E-08),
-	Strftime('%Y-%m-%d %H:%M:%f', JulianDay(@late) + Round(CAST((CAST(Round((JulianDay([r].[FinishedOn]) - JulianDay([r].[StartedOn])) * 86400000) AS INTEGER) * 10000) * -1 AS Float) * 0.00010000000000000001) * 1.1574074074074074E-08)
+	Strftime('%Y-%m-%d %H:%M:%f', JulianDay(@early) + Round(CAST(CAST(Round((JulianDay([r].[FinishedOn]) - JulianDay([r].[StartedOn])) * 86400000) AS INTEGER) * 10000 AS Float) * 0.0001) * 1.1574074074074074E-08),
+	Strftime('%Y-%m-%d %H:%M:%f', JulianDay(@late) + Round(CAST((CAST(Round((JulianDay([r].[FinishedOn]) - JulianDay([r].[StartedOn])) * 86400000) AS INTEGER) * 10000) * -1 AS Float) * 0.0001) * 1.1574074074074074E-08)
 FROM
 	[EventRow] [r]
 LIMIT 2
