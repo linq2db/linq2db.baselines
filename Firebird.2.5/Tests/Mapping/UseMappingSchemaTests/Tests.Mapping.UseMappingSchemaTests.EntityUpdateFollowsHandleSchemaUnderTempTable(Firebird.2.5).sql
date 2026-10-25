@@ -1,18 +1,12 @@
 ﻿-- Firebird.2.5 Firebird
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'SourceSchemaRowTemp')) THEN
-		EXECUTE STATEMENT '
-			CREATE GLOBAL TEMPORARY TABLE "SourceSchemaRowTemp"
-			(
-				"Id"    Int                                    NOT NULL,
-				"Value" Int                                    NOT NULL,
-				"Name"  VarChar(255) CHARACTER SET UNICODE_FSS,
+CREATE TABLE "SourceSchemaRowTemp"
+(
+	"Id"    Int                                    NOT NULL,
+	"Value" Int                                    NOT NULL,
+	"Name"  VarChar(255) CHARACTER SET UNICODE_FSS,
 
-				CONSTRAINT "PK_SourceSchemaRowTemp" PRIMARY KEY ("Id", "Value")
-			)
-			ON COMMIT PRESERVE ROWS
-		';
-END
+	CONSTRAINT "PK_SourceSchemaRowTemp" PRIMARY KEY ("Id", "Value")
+)
 
 -- Firebird.2.5 Firebird
 DECLARE @Value Integer -- Int32
