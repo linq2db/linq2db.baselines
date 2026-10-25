@@ -1,5 +1,5 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-CREATE TEMPORARY TABLE `SourceSchemaRowTemp`
+CREATE TABLE `SourceSchemaRowTemp`
 (
 	`Id`    INT           NOT NULL,
 	`Value` INT           NOT NULL,
@@ -25,7 +25,7 @@ WHERE
 	`t`.`Id` = @Id
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DROP TEMPORARY TABLE IF EXISTS `SourceSchemaRowTemp`
+DROP TABLE IF EXISTS `SourceSchemaRowTemp`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 SELECT

@@ -1,5 +1,5 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-CREATE TEMPORARY TABLE `SourceSchemaRowTemp`
+CREATE TABLE `SourceSchemaRowTemp`
 (
 	`Id`    INT           NOT NULL,
 	`Value` INT           NOT NULL,
@@ -25,7 +25,7 @@ WHERE
 	`t`.`Id` = @Id
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-DROP TEMPORARY TABLE IF EXISTS `SourceSchemaRowTemp`
+DROP TABLE IF EXISTS `SourceSchemaRowTemp`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 SELECT
