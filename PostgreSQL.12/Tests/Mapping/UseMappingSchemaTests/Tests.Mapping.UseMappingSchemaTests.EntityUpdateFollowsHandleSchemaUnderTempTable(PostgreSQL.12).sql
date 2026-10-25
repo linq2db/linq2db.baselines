@@ -1,5 +1,5 @@
 ﻿-- PostgreSQL.12 PostgreSQL12
-CREATE TEMPORARY TABLE "SourceSchemaRowTemp"
+CREATE TABLE "SourceSchemaRowTemp"
 (
 	"Id"    Int  NOT NULL,
 	"Value" Int  NOT NULL,
@@ -7,7 +7,6 @@ CREATE TEMPORARY TABLE "SourceSchemaRowTemp"
 
 	CONSTRAINT "PK_SourceSchemaRowTemp" PRIMARY KEY ("Id", "Value")
 )
-ON COMMIT PRESERVE ROWS
 
 -- PostgreSQL.12 PostgreSQL12
 DECLARE @Value Integer -- Int32
