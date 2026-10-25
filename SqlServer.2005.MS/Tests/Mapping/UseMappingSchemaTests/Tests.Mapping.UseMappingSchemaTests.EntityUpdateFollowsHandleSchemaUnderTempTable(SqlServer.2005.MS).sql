@@ -1,11 +1,11 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
-CREATE TABLE [tempdb]..[#SourceSchemaRowTemp]
+CREATE TABLE [SourceSchemaRowTemp]
 (
 	[Id]    Int            NOT NULL,
 	[Value] Int            NOT NULL,
 	[Name]  NVarChar(4000)     NULL,
 
-	PRIMARY KEY CLUSTERED ([Id], [Value])
+	CONSTRAINT [PK_SourceSchemaRowTemp] PRIMARY KEY CLUSTERED ([Id], [Value])
 )
 
 -- SqlServer.2005.MS SqlServer.2005
@@ -25,8 +25,8 @@ WHERE
 	[SourceSchemaRow].[Id] = @Id
 
 -- SqlServer.2005.MS SqlServer.2005
-IF (OBJECT_ID(N'[tempdb]..[#SourceSchemaRowTemp]', N'U') IS NOT NULL)
-	DROP TABLE [tempdb]..[#SourceSchemaRowTemp]
+IF (OBJECT_ID(N'[SourceSchemaRowTemp]', N'U') IS NOT NULL)
+	DROP TABLE [SourceSchemaRowTemp]
 
 -- SqlServer.2005.MS SqlServer.2005
 SELECT TOP (2)
