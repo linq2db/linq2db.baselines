@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-CREATE TEMPORARY TABLE SourceSchemaRowTemp
+CREATE TABLE SourceSchemaRowTemp
 (
 	Id      INTEGER,
 	"Value" INTEGER,
