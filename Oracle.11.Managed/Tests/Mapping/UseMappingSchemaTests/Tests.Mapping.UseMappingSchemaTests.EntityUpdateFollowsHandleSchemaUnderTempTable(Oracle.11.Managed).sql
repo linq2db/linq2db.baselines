@@ -1,22 +1,12 @@
 ﻿-- Oracle.11.Managed Oracle11
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE GLOBAL TEMPORARY TABLE "SourceSchemaRowTemp"
-		(
-			"Id"    Int          NOT NULL,
-			"Value" Int          NOT NULL,
-			"Name"  VarChar(255)     NULL,
+CREATE TABLE "SourceSchemaRowTemp"
+(
+	"Id"    Int          NOT NULL,
+	"Value" Int          NOT NULL,
+	"Name"  VarChar(255)     NULL,
 
-			CONSTRAINT "PK_SourceSchemaRowTemp" PRIMARY KEY ("Id", "Value")
-		)
-		ON COMMIT PRESERVE ROWS
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
+	CONSTRAINT "PK_SourceSchemaRowTemp" PRIMARY KEY ("Id", "Value")
+)
 
 -- Oracle.11.Managed Oracle11
 DECLARE @Value Int32
@@ -36,12 +26,6 @@ WHERE
 
 -- Oracle.11.Managed Oracle11
 BEGIN
-	BEGIN
-		EXECUTE IMMEDIATE 'TRUNCATE TABLE "SourceSchemaRowTemp"';
-	EXCEPTION
-		WHEN OTHERS THEN
-			NULL;
-	END;
 	EXECUTE IMMEDIATE 'DROP TABLE "SourceSchemaRowTemp"';
 EXCEPTION
 	WHEN OTHERS THEN
