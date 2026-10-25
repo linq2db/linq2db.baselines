@@ -1,14 +1,14 @@
 ﻿-- SqlServer.2014
-CREATE TABLE [tempdb]..[#SourceSchemaRowTemp]
+CREATE TABLE [SourceSchemaRowTemp]
 (
 	[Id]    Int            NOT NULL,
 	[Value] Int            NOT NULL,
 	[Name]  NVarChar(4000)     NULL,
 
-	PRIMARY KEY CLUSTERED ([Id], [Value])
+	CONSTRAINT [PK_SourceSchemaRowTemp] PRIMARY KEY CLUSTERED ([Id], [Value])
 )
 
-INSERT BULK [tempdb]..[#SourceSchemaRowTemp](Id, Value, Name)
+INSERT BULK [SourceSchemaRowTemp](Id, Value, Name)
 
 -- SqlServer.2014
 DECLARE @Value Int -- Int32
@@ -27,8 +27,8 @@ WHERE
 	[SourceSchemaRow].[Id] = @Id
 
 -- SqlServer.2014
-IF (OBJECT_ID(N'[tempdb]..[#SourceSchemaRowTemp]', N'U') IS NOT NULL)
-	DROP TABLE [tempdb]..[#SourceSchemaRowTemp]
+IF (OBJECT_ID(N'[SourceSchemaRowTemp]', N'U') IS NOT NULL)
+	DROP TABLE [SourceSchemaRowTemp]
 
 -- SqlServer.2014
 SELECT TOP (2)
