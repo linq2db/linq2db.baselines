@@ -1,5 +1,5 @@
 ﻿-- Informix.DB2 Informix
-CREATE TEMP TABLE SourceSchemaRowTemp
+CREATE TABLE SourceSchemaRowTemp
 (
 	Id      Int           NOT NULL,
 	"Value" Int           NOT NULL,
