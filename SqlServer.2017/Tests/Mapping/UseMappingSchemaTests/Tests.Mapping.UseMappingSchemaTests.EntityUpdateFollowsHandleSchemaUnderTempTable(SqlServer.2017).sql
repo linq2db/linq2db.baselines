@@ -1,14 +1,14 @@
 ﻿-- SqlServer.2017
-CREATE TABLE [tempdb]..[#SourceSchemaRowTemp]
+CREATE TABLE [SourceSchemaRowTemp]
 (
 	[Id]    Int            NOT NULL,
 	[Value] Int            NOT NULL,
 	[Name]  NVarChar(4000)     NULL,
 
-	PRIMARY KEY CLUSTERED ([Id], [Value])
+	CONSTRAINT [PK_SourceSchemaRowTemp] PRIMARY KEY CLUSTERED ([Id], [Value])
 )
 
-INSERT BULK [tempdb]..[#SourceSchemaRowTemp](Id, Value, Name)
+INSERT BULK [SourceSchemaRowTemp](Id, Value, Name)
 
 -- SqlServer.2017
 DECLARE @Value Int -- Int32
@@ -27,7 +27,7 @@ WHERE
 	[SourceSchemaRow].[Id] = @Id
 
 -- SqlServer.2017
-DROP TABLE IF EXISTS [tempdb]..[#SourceSchemaRowTemp]
+DROP TABLE IF EXISTS [SourceSchemaRowTemp]
 
 -- SqlServer.2017
 SELECT TOP (2)
