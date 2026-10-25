@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-CREATE TEMPORARY TABLE temp.[SourceSchemaRowTemp]
+CREATE TABLE [SourceSchemaRowTemp]
 (
 	[Id]    INTEGER       NOT NULL,
 	[Value] INTEGER       NOT NULL,
@@ -25,7 +25,7 @@ WHERE
 	[SourceSchemaRow].[Id] = @Id
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DROP TABLE IF EXISTS temp.[SourceSchemaRowTemp]
+DROP TABLE IF EXISTS [SourceSchemaRowTemp]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 SELECT
