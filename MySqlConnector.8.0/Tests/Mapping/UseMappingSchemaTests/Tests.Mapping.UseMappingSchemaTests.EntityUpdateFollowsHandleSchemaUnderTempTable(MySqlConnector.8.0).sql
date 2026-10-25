@@ -1,5 +1,5 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-CREATE TEMPORARY TABLE `SourceSchemaRowTemp`
+CREATE TABLE `SourceSchemaRowTemp`
 (
 	`Id`    INT           NOT NULL,
 	`Value` INT           NOT NULL,
@@ -25,7 +25,7 @@ WHERE
 	`t`.`Id` = @Id
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DROP TEMPORARY TABLE IF EXISTS `SourceSchemaRowTemp`
+DROP TABLE IF EXISTS `SourceSchemaRowTemp`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 SELECT
