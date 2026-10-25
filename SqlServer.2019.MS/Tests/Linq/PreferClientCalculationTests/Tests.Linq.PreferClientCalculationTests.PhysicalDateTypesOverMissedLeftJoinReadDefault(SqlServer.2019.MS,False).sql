@@ -5,9 +5,7 @@ SELECT TOP (2)
 	DatePart(year, Coalesce([j].[DtTyped], DATETIMEFROMPARTS(1753, 1, 1, 0, 0, 0, 0))),
 	DatePart(year, Coalesce([j].[DtPlain], DATETIME2FROMPARTS(1, 1, 1, 0, 0, 0, 0, 7))),
 	DatePart(year, Coalesce([j].[DateTyped], DATEFROMPARTS(1, 1, 1))),
-	DatePart(year, Coalesce([j].[DatePlain], DATETIME2FROMPARTS(1, 1, 1, 0, 0, 0, 0, 7))),
-	DatePart(year, Coalesce([j].[OnlyDate], DATEFROMPARTS(1, 1, 1))),
-	DatePart(year, Coalesce([j].[OnlyDateTime], DATEFROMPARTS(1753, 1, 1)))
+	DatePart(year, Coalesce([j].[DatePlain], DATETIME2FROMPARTS(1, 1, 1, 0, 0, 0, 0, 7)))
 FROM
 	[PhysicalDateEntity] [t1]
 		LEFT JOIN [PhysicalDateEntity] [j] ON [j].[Id] = [t1].[Id] + 1000
