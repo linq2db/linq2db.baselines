@@ -1,0 +1,6 @@
+﻿-- SapHana.Native SapHana
+SELECT
+	CURRENT_TIMESTAMP
+FROM DUMMY
+LIMIT 1
+

@@ -1,0 +1,20 @@
+﻿-- SapHana.Native SapHana
+SELECT
+	CAST(0 AS Decimal)
+FROM DUMMY
+
+-- SapHana.Native SapHana
+SELECT
+	CAST(18446744073709551615 AS Decimal)
+FROM DUMMY
+
+-- SapHana.Native SapHana
+SELECT
+	CAST(0 AS Decimal)
+FROM DUMMY
+
+-- SapHana.Native SapHana
+SELECT
+	CAST(18446744073709551615 AS Decimal)
+FROM DUMMY
+

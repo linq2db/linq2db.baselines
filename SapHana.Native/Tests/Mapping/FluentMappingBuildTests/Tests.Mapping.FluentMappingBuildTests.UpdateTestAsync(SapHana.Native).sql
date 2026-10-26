@@ -1,0 +1,51 @@
+﻿-- SapHana.Native SapHana
+CREATE COLUMN TABLE "FluentTemp_UpdateAsync"
+(
+	"ID"       Integer      NOT NULL,
+	"Value"    NVarChar(20)     NULL,
+	"LastName" NVarChar(20)     NULL,
+
+	PRIMARY KEY ("ID")
+)
+
+-- SapHana.Native SapHana
+DECLARE @ID Integer -- Int32
+SET     @ID = 1
+DECLARE @Name NVarChar(4) -- String
+SET     @Name = 'John'
+DECLARE @LastName NVarChar(3) -- String
+SET     @LastName = 'Doe'
+
+INSERT INTO "FluentTemp_UpdateAsync"
+(
+	"ID",
+	"Value",
+	"LastName"
+)
+VALUES
+(
+	:"ID",
+	:"Name",
+	:"LastName"
+)
+
+-- SapHana.Native SapHana
+DECLARE @Name NVarChar(7) -- String
+SET     @Name = 'John II'
+DECLARE @LastName NVarChar(4) -- String
+SET     @LastName = 'Dory'
+
+UPDATE
+	"FluentTemp_UpdateAsync" "t"
+SET
+	"Value" = :"Name",
+	"LastName" = :"LastName"
+WHERE
+	"t"."ID" = 1
+
+-- SapHana.Native SapHana
+DO BEGIN
+	DECLARE EXIT HANDLER FOR SQL_ERROR_CODE 259 BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp_UpdateAsync"';
+END
+
