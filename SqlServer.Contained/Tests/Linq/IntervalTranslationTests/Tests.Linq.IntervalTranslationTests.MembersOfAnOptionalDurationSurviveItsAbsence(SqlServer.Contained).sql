@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	[r].[Id],
 	CAST(([r].[Grace] / 60) % 60 AS Int),

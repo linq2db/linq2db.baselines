@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	ROW_NUMBER() OVER (ORDER BY [item_1].[Id]) - 1,
 	[item_1].[Id],
@@ -8,7 +8,7 @@ FROM
 ORDER BY
 	[item_1].[Id]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[TestId]

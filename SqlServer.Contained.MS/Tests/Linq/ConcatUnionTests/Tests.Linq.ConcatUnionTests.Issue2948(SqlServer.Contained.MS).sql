@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @take Int -- Int32
 SET     @take = 1
 DECLARE @take_1 Int -- Int32

@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	DateAdd(day, [t].[SmallIntValue], [t].[DateTimeValue])
 FROM

@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DECLARE @take Int -- Int32
 SET     @take = 3
 
@@ -15,7 +15,7 @@ ORDER BY
 	IIF([t1].[Value1] IS NULL, 1, 0),
 	[t1].[Value1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

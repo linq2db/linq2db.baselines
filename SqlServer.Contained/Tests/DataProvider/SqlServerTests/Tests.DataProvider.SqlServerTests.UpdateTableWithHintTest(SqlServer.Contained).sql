@@ -1,10 +1,10 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 UPDATE
 	[Person]
 SET
 	[FirstName] = [Person].[FirstName]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 UPDATE
 	[t1]
 SET

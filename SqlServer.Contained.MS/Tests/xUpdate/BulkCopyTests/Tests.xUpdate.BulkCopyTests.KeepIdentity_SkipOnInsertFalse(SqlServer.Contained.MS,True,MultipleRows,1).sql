@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @Value Int -- Int32
 SET     @Value = 0
 
@@ -13,10 +13,10 @@ VALUES
 
 SELECT SCOPE_IDENTITY()
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SET IDENTITY_INSERT [AllTypes] ON
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 INSERT INTO [AllTypes]
 (
 	[ID],
@@ -26,10 +26,10 @@ VALUES
 (13,200),
 (23,300)
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SET IDENTITY_INSERT [AllTypes] OFF
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @lastId Int -- Int32
 SET     @lastId = 3
 
@@ -43,7 +43,7 @@ WHERE
 ORDER BY
 	[t1].[ID]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @lastId Int -- Int32
 SET     @lastId = 3
 

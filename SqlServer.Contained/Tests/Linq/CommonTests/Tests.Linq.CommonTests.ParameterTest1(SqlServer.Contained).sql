@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DECLARE @id Int -- Int32
 SET     @id = 1
 
@@ -16,7 +16,7 @@ WHERE
 			[t].[ParentID] = @id AND [t].[ParentID] = [g_1].[ParentID]
 	)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @id Int -- Int32
 SET     @id = 2
 

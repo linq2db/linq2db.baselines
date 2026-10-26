@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(4000) -- String
@@ -25,7 +25,7 @@ WHEN NOT MATCHED THEN
 		@Name
 	);
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT TOP (1)
 	[t].[Id],
 	[t].[Name],
@@ -35,7 +35,7 @@ FROM
 WHERE
 	[t].[Id] = 1
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(4000) -- String
@@ -62,7 +62,7 @@ WHEN NOT MATCHED THEN
 		@Name
 	);
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT TOP (1)
 	[t].[Id],
 	[t].[Name],

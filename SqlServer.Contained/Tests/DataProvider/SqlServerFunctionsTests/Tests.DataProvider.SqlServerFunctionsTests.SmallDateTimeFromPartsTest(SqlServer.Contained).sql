@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	SMALLDATETIMEFROMPARTS(2022, 2, 22, 0, 0)
 

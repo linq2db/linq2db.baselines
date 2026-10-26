@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @startId BigInt -- Int64
 SET     @startId = 1
 DECLARE @endId Int -- Int32
@@ -17,7 +17,7 @@ WHERE
 ORDER BY
 	[s].[id]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @startId Int -- Int32
 SET     @startId = 1
 DECLARE @endId Int -- Int32

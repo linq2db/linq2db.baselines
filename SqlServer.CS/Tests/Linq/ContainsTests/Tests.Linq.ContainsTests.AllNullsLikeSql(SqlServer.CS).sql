@@ -1,0 +1,16 @@
+﻿-- SqlServer.CS SqlServer.2025
+SELECT
+	COUNT(*)
+FROM
+	[Src] [s]
+WHERE
+	[s].[Int] IN (NULL, NULL)
+
+-- SqlServer.CS SqlServer.2025
+SELECT
+	COUNT(*)
+FROM
+	[Src] [s]
+WHERE
+	[s].[Int] NOT IN (NULL, NULL)
+

@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @take Int -- Int32
 SET     @take = 1
 
@@ -9,7 +9,7 @@ SELECT TOP (@take)
 FROM
 	[Child] [g_1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID]

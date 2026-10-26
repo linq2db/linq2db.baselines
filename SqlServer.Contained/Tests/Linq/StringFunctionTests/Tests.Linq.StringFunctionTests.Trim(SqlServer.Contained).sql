@@ -1,9 +1,9 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	[pp].[PersonID],
-	N'  ' + [pp].[FirstName] + N' '
+	N'  ' || [pp].[FirstName] || N' '
 FROM
 	[Person] [pp]
 WHERE
-	[pp].[PersonID] = 1 AND LTrim(RTrim(N'  ' + [pp].[FirstName] + N' ')) = N'John'
+	[pp].[PersonID] = 1 AND LTrim(RTrim(N'  ' || [pp].[FirstName] || N' ')) = N'John'
 

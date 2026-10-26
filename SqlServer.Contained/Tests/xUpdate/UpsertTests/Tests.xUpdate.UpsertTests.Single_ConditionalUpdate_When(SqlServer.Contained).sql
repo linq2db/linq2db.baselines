@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Version Int -- Int32
@@ -50,7 +50,7 @@ WHEN NOT MATCHED THEN
 		@UpdatedBy
 	);
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT TOP (2)
 	[r].[Id],
 	[r].[Name],
@@ -64,7 +64,7 @@ FROM
 WHERE
 	[r].[Id] = 1
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Version Int -- Int32
@@ -116,7 +116,7 @@ WHEN NOT MATCHED THEN
 		@UpdatedBy
 	);
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT TOP (2)
 	[r].[Id],
 	[r].[Name],

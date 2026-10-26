@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 INSERT INTO [Parent]
 (
 	[ParentID]
@@ -8,7 +8,7 @@ VALUES
 	20000
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 INSERT INTO [Child]
 (
 	[ChildID],
@@ -20,7 +20,7 @@ VALUES
 	20000
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 UPDATE
 	[a_Parent]
 SET
@@ -31,14 +31,14 @@ FROM
 WHERE
 	[child_1].[ChildID] = 10000
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DELETE [x]
 FROM
 	[Child] [x]
 WHERE
 	[x].[ChildID] = 10000
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DELETE [x]
 FROM
 	[Parent] [x]

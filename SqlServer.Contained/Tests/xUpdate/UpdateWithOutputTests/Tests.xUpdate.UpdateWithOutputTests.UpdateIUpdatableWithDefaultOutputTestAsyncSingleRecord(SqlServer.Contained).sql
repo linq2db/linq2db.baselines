@@ -1,9 +1,9 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 UPDATE
 	[TableWithData]
 SET
 	[Value] = [TableWithData].[Value] + 1,
-	[ValueStr] = Coalesce([TableWithData].[ValueStr], N'') + N'Upd'
+	[ValueStr] = Coalesce([TableWithData].[ValueStr], N'') || N'Upd'
 OUTPUT
 	DELETED.[Id],
 	DELETED.[Value],

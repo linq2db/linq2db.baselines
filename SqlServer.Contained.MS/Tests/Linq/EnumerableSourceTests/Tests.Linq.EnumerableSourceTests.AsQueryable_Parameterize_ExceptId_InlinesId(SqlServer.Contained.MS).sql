@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @Data NVarChar(4000) -- String
 SET     @Data = N'Data 7777'
 DECLARE @Data_1 NVarChar(4000) -- String

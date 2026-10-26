@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @InSeconds BigInt -- Int64
@@ -27,7 +27,7 @@ VALUES
 	@UndeclaredSeconds
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @InSeconds BigInt -- Int64
@@ -56,7 +56,7 @@ VALUES
 	@UndeclaredSeconds
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 3
 DECLARE @InSeconds BigInt -- Int64
@@ -85,7 +85,7 @@ VALUES
 	@UndeclaredSeconds
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[InSeconds],
@@ -95,7 +95,7 @@ SELECT
 FROM
 	[DurationRow] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[InSeconds],

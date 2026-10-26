@@ -1,4 +1,4 @@
-﻿-- SqlServer.2019
+﻿-- SqlServer.2025
 CREATE TABLE [tempdb]..[#WithIdentity]
 (
 	[Id]   int            NOT NULL IDENTITY,
@@ -9,7 +9,7 @@ CREATE TABLE [tempdb]..[#WithIdentity]
 
 
 
--- SqlServer.2019
+-- SqlServer.2025
 CREATE TABLE [tempdb]..[#NoIdentity]
 (
 	[Id]   uniqueidentifier NOT NULL,
@@ -20,12 +20,12 @@ CREATE TABLE [tempdb]..[#NoIdentity]
 
 
 
--- SqlServer.2019
+-- SqlServer.2025
 DROP TABLE IF EXISTS [tempdb]..[#NoIdentity]
 
 
 
--- SqlServer.2019
+-- SqlServer.2025
 DROP TABLE IF EXISTS [tempdb]..[#WithIdentity]
 
 

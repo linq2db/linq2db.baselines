@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],
@@ -8,6 +8,6 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	(N'123' + IIF(LEN([p].[FirstName] + N'.') > 7, [p].[FirstName], Replicate(N' ', 6 - (LEN([p].[FirstName] + N'.') - 1)) + [p].[FirstName])) = N'123  John' AND
+	(N'123' || IIF(LEN([p].[FirstName] || N'.') > 7, [p].[FirstName], Replicate(N' ', 6 - (LEN([p].[FirstName] || N'.') - 1)) || [p].[FirstName])) = N'123  John' AND
 	[p].[PersonID] = 1
 

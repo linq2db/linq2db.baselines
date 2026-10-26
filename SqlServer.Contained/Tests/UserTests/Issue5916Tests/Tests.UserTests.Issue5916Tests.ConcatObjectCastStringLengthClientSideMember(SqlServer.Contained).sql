@@ -1,6 +1,6 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
-	LEN([p].[FirstName] + N'.') - 1,
+	LEN([p].[FirstName] || N'.') - 1,
 	CAST(N'X' AS NVarChar(4000)),
 	[p].[FirstName]
 FROM
@@ -9,7 +9,7 @@ WHERE
 	[p].[PersonID] > 2
 UNION ALL
 SELECT
-	LEN([p_1].[LastName] + N'.') - 1,
+	LEN([p_1].[LastName] || N'.') - 1,
 	CAST(N'X' AS NVarChar(4000)),
 	[p_1].[FirstName]
 FROM
@@ -17,7 +17,7 @@ FROM
 WHERE
 	[p_1].[PersonID] <= 2
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

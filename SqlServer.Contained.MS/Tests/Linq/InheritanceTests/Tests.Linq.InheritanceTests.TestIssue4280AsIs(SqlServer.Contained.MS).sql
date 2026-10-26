@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @SerialNumber NVarChar(4000) -- String
@@ -23,7 +23,7 @@ VALUES
 	@Location
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @SerialNumber NVarChar(4000) -- String
@@ -44,7 +44,7 @@ VALUES
 	@DeviceType
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[DeviceType],
 	[t1].[Id],
@@ -55,7 +55,7 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @SerialNumber NVarChar(4000) -- String
 SET     @SerialNumber = N'TV00002'
 DECLARE @DeviceType NVarChar(4000) -- String
@@ -74,7 +74,7 @@ SET
 WHERE
 	[Issue4280].[Id] = @Id
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @SerialNumber NVarChar(4000) -- String
 SET     @SerialNumber = N'Disp00002'
 DECLARE @DeviceType NVarChar(4000) -- String
@@ -90,7 +90,7 @@ SET
 WHERE
 	[Issue4280].[Id] = @Id
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[DeviceType],
 	[t1].[Id],

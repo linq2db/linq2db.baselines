@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 UPDATE
 	[InheritanceFilter]
 SET
@@ -7,7 +7,7 @@ SET
 WHERE
 	[InheritanceFilter].[Id] = 1
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT TOP (2)
 	[c_1].[Id],
 	[c_1].[Code],

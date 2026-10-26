@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 CREATE TABLE [tempdb]..[#DestinationTable_target]
 (
 	[Id]       Int          NOT NULL,
@@ -8,7 +8,7 @@ CREATE TABLE [tempdb]..[#DestinationTable_target]
 	PRIMARY KEY CLUSTERED ([Id])
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[s].[Id],
 	[s].[Value],
@@ -18,7 +18,7 @@ FROM
 WHERE
 	[s].[Id] > 3
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @param Int -- Int32
 SET     @param = 100500
 DECLARE @ValueStr NVarChar(50) -- String
@@ -28,7 +28,7 @@ DELETE [s]
 OUTPUT
 	DELETED.[Id] + @param,
 	DELETED.[Value] + @param,
-	Coalesce(DELETED.[ValueStr], N'') + Coalesce(@ValueStr, N'')
+	Coalesce(DELETED.[ValueStr], N'') || Coalesce(@ValueStr, N'')
 INTO [tempdb]..[#DestinationTable_target]
 (
 	[Id],
@@ -40,7 +40,7 @@ FROM
 WHERE
 	[s].[Id] > 3
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value],
@@ -48,6 +48,6 @@ SELECT
 FROM
 	[tempdb]..[#DestinationTable_target] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DROP TABLE IF EXISTS [tempdb]..[#DestinationTable_target]
 

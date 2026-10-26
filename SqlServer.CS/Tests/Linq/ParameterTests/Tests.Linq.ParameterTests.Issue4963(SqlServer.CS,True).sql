@@ -1,0 +1,13 @@
+﻿-- SqlServer.CS SqlServer.2025
+UPDATE
+	[Issue4963Table]
+SET
+	[Field] = CAST(CAST([Issue4963Table].[Field] AS Int) + -1 AS TinyInt)
+
+-- SqlServer.CS SqlServer.2025
+SELECT TOP (2)
+	[t1].[Id],
+	[t1].[Field]
+FROM
+	[Issue4963Table] [t1]
+

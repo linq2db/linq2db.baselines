@@ -1,7 +1,7 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DROP TABLE [AllType2CreateTest]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 CREATE TABLE [AllType2CreateTest]
 (
 	[ID]                     int                NOT NULL IDENTITY,
@@ -16,7 +16,7 @@ CREATE TABLE [AllType2CreateTest]
 	CONSTRAINT [PK_AllType2CreateTest] PRIMARY KEY CLUSTERED ([ID])
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[ID],
 	[t1].[dateDataType],
@@ -29,6 +29,6 @@ SELECT
 FROM
 	[AllType2CreateTest] [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DROP TABLE [AllType2CreateTest]
 

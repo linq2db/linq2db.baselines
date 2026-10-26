@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[PersonID],
 	[t1].[Diagnosis]
@@ -7,7 +7,7 @@ FROM
 ORDER BY
 	[t1].[PersonID]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[PersonID],
 	[t1].[Taxonomy]
@@ -16,7 +16,7 @@ FROM
 ORDER BY
 	[t1].[PersonID]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

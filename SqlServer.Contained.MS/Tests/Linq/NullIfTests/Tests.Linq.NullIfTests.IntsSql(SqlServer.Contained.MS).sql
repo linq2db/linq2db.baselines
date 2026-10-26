@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	NULLIF([s].[Int], 2)
 FROM
@@ -6,7 +6,7 @@ FROM
 ORDER BY
 	[s].[Int]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	COUNT(*)
 FROM
@@ -14,7 +14,7 @@ FROM
 WHERE
 	[s].[Int] = 2
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	COUNT(*)
 FROM
@@ -22,7 +22,7 @@ FROM
 WHERE
 	[s].[Int] <> 2
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	NULLIF([s].[Int], 4)
 FROM
@@ -30,7 +30,7 @@ FROM
 ORDER BY
 	[s].[Int]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	COUNT(*)
 FROM
@@ -38,7 +38,7 @@ FROM
 WHERE
 	[s].[Int] = 4
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	COUNT(*)
 FROM
@@ -46,7 +46,7 @@ FROM
 WHERE
 	[s].[Int] <> 4
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[s].[Int]
 FROM
@@ -54,7 +54,7 @@ FROM
 ORDER BY
 	[s].[Int]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	COUNT(*)
 FROM
@@ -62,13 +62,13 @@ FROM
 WHERE
 	1 = 0
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	COUNT(*)
 FROM
 	[Src] [s]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	NULLIF([s].[NullableInt], 2)
 FROM
@@ -76,7 +76,7 @@ FROM
 ORDER BY
 	[s].[Int]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	COUNT(*)
 FROM
@@ -84,7 +84,7 @@ FROM
 WHERE
 	[s].[NullableInt] = 2 OR [s].[NullableInt] IS NULL
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	COUNT(*)
 FROM
@@ -92,7 +92,7 @@ FROM
 WHERE
 	NOT ([s].[NullableInt] = 2 OR [s].[NullableInt] IS NULL)
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	NULLIF([s].[NullableInt], 4)
 FROM
@@ -100,7 +100,7 @@ FROM
 ORDER BY
 	[s].[Int]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	COUNT(*)
 FROM
@@ -108,7 +108,7 @@ FROM
 WHERE
 	[s].[NullableInt] = 4 OR [s].[NullableInt] IS NULL
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	COUNT(*)
 FROM
@@ -116,7 +116,7 @@ FROM
 WHERE
 	NOT ([s].[NullableInt] = 4 OR [s].[NullableInt] IS NULL)
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[s].[NullableInt]
 FROM
@@ -124,7 +124,7 @@ FROM
 ORDER BY
 	[s].[Int]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	COUNT(*)
 FROM
@@ -132,7 +132,7 @@ FROM
 WHERE
 	[s].[NullableInt] IS NULL
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	COUNT(*)
 FROM

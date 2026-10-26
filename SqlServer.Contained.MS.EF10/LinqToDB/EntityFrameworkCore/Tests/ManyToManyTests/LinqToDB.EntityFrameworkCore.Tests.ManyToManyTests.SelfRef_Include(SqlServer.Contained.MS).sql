@@ -10,7 +10,7 @@ ORDER BY [p].[Id], [s].[FriendId], [s].[PersonId]
 
 
 
--- SqlServer.2019
+-- SqlServer.2025
 SELECT
 	[m_1].[Id],
 	[o].[Id],
@@ -24,7 +24,7 @@ ORDER BY
 
 
 
--- SqlServer.2019
+-- SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Name]

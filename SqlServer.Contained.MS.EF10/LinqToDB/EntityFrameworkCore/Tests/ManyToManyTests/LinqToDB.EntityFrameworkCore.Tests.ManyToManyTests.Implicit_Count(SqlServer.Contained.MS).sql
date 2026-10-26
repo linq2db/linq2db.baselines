@@ -7,7 +7,7 @@ FROM [Students] AS [s]
 ORDER BY [s].[Id]
 
 
--- SqlServer.2019
+-- SqlServer.2025
 SELECT
 	(
 		SELECT

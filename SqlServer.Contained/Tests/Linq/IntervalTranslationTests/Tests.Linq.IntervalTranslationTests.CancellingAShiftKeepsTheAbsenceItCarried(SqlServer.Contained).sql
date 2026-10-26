@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @StartedOn DateTime2
@@ -19,7 +19,7 @@ VALUES
 	@FinishedOn
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @StartedOn DateTime2
@@ -40,7 +40,7 @@ VALUES
 	@FinishedOn
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 3
 DECLARE @StartedOn DateTime2
@@ -61,7 +61,7 @@ VALUES
 	@FinishedOn
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[r].[Id],
 	IIF([r].[StartedOn] IS NULL, NULL, [r].[FinishedOn]),

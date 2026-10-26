@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Key_1],
 	[t1].[Sum_1]
@@ -15,7 +15,7 @@ FROM
 ORDER BY
 	[t1].[Sum_1] DESC
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Key],

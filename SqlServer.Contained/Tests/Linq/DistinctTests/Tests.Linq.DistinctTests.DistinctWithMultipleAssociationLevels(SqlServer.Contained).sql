@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[GrandChildID],
 	[a_Child_1].[ChildID],
@@ -25,7 +25,7 @@ WHERE
 ORDER BY
 	[t1].[GrandChildID]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID],

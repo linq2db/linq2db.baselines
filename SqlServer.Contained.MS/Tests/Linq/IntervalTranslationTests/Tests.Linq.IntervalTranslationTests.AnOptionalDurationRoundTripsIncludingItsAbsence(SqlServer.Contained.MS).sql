@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Grace BigInt -- Int64
@@ -19,7 +19,7 @@ VALUES
 	@Required
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Grace BigInt -- Int64
@@ -40,7 +40,7 @@ VALUES
 	@Required
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Grace],
@@ -50,7 +50,7 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @Grace BigInt -- Int64
 SET     @Grace = NULL
 
@@ -61,7 +61,7 @@ SET
 WHERE
 	[OptionalDurationRow].[Id] = 1
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @Grace BigInt -- Int64
 SET     @Grace = 4567
 
@@ -72,7 +72,7 @@ SET
 WHERE
 	[OptionalDurationRow].[Id] = 2
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Grace],
