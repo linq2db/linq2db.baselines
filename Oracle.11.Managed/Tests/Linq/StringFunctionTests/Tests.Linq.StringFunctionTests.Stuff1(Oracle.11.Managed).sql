@@ -8,6 +8,10 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	(Substr(p."FirstName", 1, 2) || '123' || Substr(p."FirstName", Length(p."FirstName") - (Length(p."FirstName") - 3) + 1, Length(p."FirstName") - 3)) = 'Jo123n' AND
+	(Substr(p."FirstName", 1, 2) || '123' || Substr(p."FirstName", CASE
+		WHEN Length(p."FirstName") - (Length(p."FirstName") - 3) > -1
+			THEN Length(p."FirstName") - (Length(p."FirstName") - 3) + 1
+		ELSE 1
+	END, Length(p."FirstName") - 3)) = 'Jo123n' AND
 	p."PersonID" = 1
 
