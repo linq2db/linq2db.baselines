@@ -1,13 +1,13 @@
 ﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT
-	[t].[Value_1]
+	[t].[c1]
 FROM
 	(
 		SELECT
-			Round([p].[MoneyValue], 0, 1) as [Value_1]
+			Round([p].[MoneyValue], 0, 1) as [c1]
 		FROM
 			[LinqDataTypes] [p]
 	) [t]
 WHERE
-	[t].[Value_1] <> 0.1
+	[t].[c1] <> 0.1
 
