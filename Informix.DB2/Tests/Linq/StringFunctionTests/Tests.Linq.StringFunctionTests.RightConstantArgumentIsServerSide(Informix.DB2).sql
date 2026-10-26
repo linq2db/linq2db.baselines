@@ -1,0 +1,8 @@
+﻿-- Informix.DB2 Informix
+SELECT
+	Substr('John', 2, 3)
+FROM
+	Person p
+WHERE
+	p.PersonID = 1
+
