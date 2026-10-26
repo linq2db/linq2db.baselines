@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DELETE [c_1]
 FROM
 	[Child] [c_1] WITH (NoLock)

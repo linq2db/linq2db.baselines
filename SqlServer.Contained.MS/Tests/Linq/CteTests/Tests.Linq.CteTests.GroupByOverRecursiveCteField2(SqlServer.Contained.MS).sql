@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @id Int -- Int32
 SET     @id = 1
 
@@ -40,7 +40,7 @@ FROM
 	) [m_1]
 		INNER JOIN [cte] [d] ON [m_1].[Key_1] = [d].[Field2]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @id Int -- Int32
 SET     @id = 1
 

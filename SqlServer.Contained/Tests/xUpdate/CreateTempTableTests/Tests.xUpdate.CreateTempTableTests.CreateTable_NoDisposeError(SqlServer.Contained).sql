@@ -1,7 +1,7 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DROP TABLE IF EXISTS [TempTable]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 CREATE TABLE [tempdb]..[#TempTable]
 (
 	[ID] Int NOT NULL,
@@ -9,9 +9,9 @@ CREATE TABLE [tempdb]..[#TempTable]
 	PRIMARY KEY CLUSTERED ([ID])
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DROP TABLE [tempdb]..[#TempTable]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DROP TABLE IF EXISTS [tempdb]..[#TempTable]
 

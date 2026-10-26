@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DECLARE @p Int -- Int32
 SET     @p = 102
 
@@ -8,7 +8,7 @@ FROM
 WHERE
 	[r].[ID] >= 101 AND [r].[ID] < @p
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 INSERT INTO [LinqDataTypes]
 (
 	[ID],
@@ -20,7 +20,7 @@ VALUES
 	12
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	COUNT(*)
 FROM
@@ -28,7 +28,7 @@ FROM
 WHERE
 	[r].[ID] = 101 AND [r].[BigIntValue] IN (12)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @p Int -- Int32
 SET     @p = 102
 

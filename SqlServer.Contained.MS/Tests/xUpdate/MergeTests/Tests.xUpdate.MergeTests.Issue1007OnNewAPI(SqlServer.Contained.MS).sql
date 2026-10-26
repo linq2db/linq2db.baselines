@@ -1,9 +1,9 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DELETE [t1]
 FROM
 	[TestMergeIdentity] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @Field Int -- Int32
 SET     @Field = NULL
 
@@ -16,13 +16,13 @@ VALUES
 	@Field
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	MAX([t1].[Id])
 FROM
 	[TestMergeIdentity] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 MERGE INTO [TestMergeIdentity] [Target]
 USING (VALUES
 	(10)
@@ -48,7 +48,7 @@ SET
 	[Field] = [Source].[Field]
 ;
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Field]

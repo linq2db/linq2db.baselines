@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 MERGE INTO [UpsertTest] [Target]
 USING (VALUES
 	(N'alice',99,42,CAST(NULL AS DateTime2),CAST(NULL AS NVarChar(4000)),CAST(NULL AS DateTime2),CAST(NULL AS NVarChar(4000)))
@@ -46,7 +46,7 @@ SET
 	[UpdatedBy] = [Source].[UpdatedBy]
 ;
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT TOP (2)
 	[r].[Id],
 	[r].[Name],
@@ -60,7 +60,7 @@ FROM
 WHERE
 	[r].[Name] = N'alice'
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT TOP (2)
 	[r].[Id],
 	[r].[Name],

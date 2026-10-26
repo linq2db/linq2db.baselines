@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[g_1].[GrpId],
 	Coalesce(STRING_AGG([g_1].[Value], N'') WITHIN GROUP (ORDER BY [g_1].[PK]), N'')
@@ -9,7 +9,7 @@ GROUP BY
 ORDER BY
 	[g_1].[GrpId]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[PK],
 	[t1].[GrpId],

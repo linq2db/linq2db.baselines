@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DECLARE @p BigInt -- Int64
 SET     @p = 900
 
@@ -11,7 +11,7 @@ WHERE
 ORDER BY
 	[r].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @p BigInt -- Int64
 SET     @p = 900
 
@@ -24,7 +24,7 @@ WHERE
 ORDER BY
 	[r].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @p BigInt -- Int64
 SET     @p = 900
 
@@ -37,7 +37,7 @@ WHERE
 ORDER BY
 	[r].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @p BigInt -- Int64
 SET     @p = 900
 
@@ -50,7 +50,7 @@ WHERE
 ORDER BY
 	[r].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @p BigInt -- Int64
 SET     @p = 900
 DECLARE @p_1 BigInt -- Int64
@@ -65,7 +65,7 @@ WHERE
 ORDER BY
 	[r].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @Ticks BigInt -- Int64
 SET     @Ticks = 9000000000
 
@@ -78,7 +78,7 @@ WHERE
 ORDER BY
 	[r].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @p BigInt -- Int64
 SET     @p = 899
 
@@ -91,7 +91,7 @@ WHERE
 ORDER BY
 	[r].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @p BigInt -- Int64
 SET     @p = 900
 
@@ -104,7 +104,7 @@ WHERE
 ORDER BY
 	[r].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @p BigInt -- Int64
 SET     @p = 900
 
@@ -117,7 +117,7 @@ WHERE
 ORDER BY
 	[r].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @p BigInt -- Int64
 SET     @p = 899
 
@@ -130,7 +130,7 @@ WHERE
 ORDER BY
 	[r].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @p BigInt -- Int64
 SET     @p = 900
 DECLARE @p_1 BigInt -- Int64
@@ -145,7 +145,7 @@ WHERE
 ORDER BY
 	[r].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @Ticks BigInt -- Int64
 SET     @Ticks = 8995000000
 
@@ -158,7 +158,7 @@ WHERE
 ORDER BY
 	[r].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @p BigInt -- Int64
 SET     @p = 900
 
@@ -171,7 +171,7 @@ WHERE
 ORDER BY
 	[r].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @p BigInt -- Int64
 SET     @p = 900
 
@@ -184,7 +184,7 @@ WHERE
 ORDER BY
 	[r].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @p BigInt -- Int64
 SET     @p = 900
 
@@ -197,7 +197,7 @@ WHERE
 ORDER BY
 	[r].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @p BigInt -- Int64
 SET     @p = 900
 
@@ -210,7 +210,7 @@ WHERE
 ORDER BY
 	[r].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @p BigInt -- Int64
 SET     @p = 900
 DECLARE @p_1 BigInt -- Int64
@@ -225,7 +225,7 @@ WHERE
 ORDER BY
 	[r].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @p BigInt -- Int64
 SET     @p = 9000000000
 
@@ -238,7 +238,7 @@ WHERE
 ORDER BY
 	[r].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[r].[Id]
 FROM
@@ -248,7 +248,7 @@ WHERE
 ORDER BY
 	[r].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[r].[Id]
 FROM
@@ -258,7 +258,7 @@ WHERE
 ORDER BY
 	[r].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @p BigInt -- Int64
 SET     @p = 900
 
@@ -271,7 +271,7 @@ WHERE
 ORDER BY
 	[r].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @p BigInt -- Int64
 SET     @p = 901
 
@@ -284,7 +284,7 @@ WHERE
 ORDER BY
 	[r].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @p BigInt -- Int64
 SET     @p = 901
 
@@ -297,7 +297,7 @@ WHERE
 ORDER BY
 	[r].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @p BigInt -- Int64
 SET     @p = 900
 
@@ -310,7 +310,7 @@ WHERE
 ORDER BY
 	[r].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @p BigInt -- Int64
 SET     @p = 901
 DECLARE @p_1 BigInt -- Int64
@@ -325,7 +325,7 @@ WHERE
 ORDER BY
 	[r].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @p BigInt -- Int64
 SET     @p = 9005000000
 

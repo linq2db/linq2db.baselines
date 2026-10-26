@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	COUNT(*),
 	COUNT([c_1].[ChildID]),
@@ -11,25 +11,25 @@ FROM
 GROUP BY
 	[g_1].[ParentID]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	COUNT(*)
 FROM
 	[Child] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	COUNT([t1].[ParentID])
 FROM
 	[Child] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	COUNT(ALL [t1].[ParentID])
 FROM
 	[Child] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	COUNT(DISTINCT [t1].[ParentID])
 FROM

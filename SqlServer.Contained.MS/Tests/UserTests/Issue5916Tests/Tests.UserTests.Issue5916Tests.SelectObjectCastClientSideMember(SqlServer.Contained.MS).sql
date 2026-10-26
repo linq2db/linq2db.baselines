@@ -1,11 +1,11 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[p].[PersonID],
 	[p].[FirstName]
 FROM
 	[Person] [p]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

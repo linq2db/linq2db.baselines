@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	[m_1].[SectorId],
 	[a_User].[UserId]
@@ -10,7 +10,7 @@ FROM
 WHERE
 	[a_UserPosition].[PositionId] = 1
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[x].[SectorId]
 FROM

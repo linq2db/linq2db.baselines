@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 INSERT INTO [Issue1303]
 (
 	[ID],
@@ -12,7 +12,7 @@ VALUES
 	0x0405
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT TOP (2)
 	[t1].[ID],
 	[t1].[Array],
@@ -22,7 +22,7 @@ FROM
 WHERE
 	[t1].[ID] = 1
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT TOP (2)
 	[t1].[ID],
 	[t1].[Array],
@@ -32,7 +32,7 @@ FROM
 WHERE
 	[t1].[Array] = 0x010203
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT TOP (2)
 	[t1].[ID],
 	[t1].[Array],

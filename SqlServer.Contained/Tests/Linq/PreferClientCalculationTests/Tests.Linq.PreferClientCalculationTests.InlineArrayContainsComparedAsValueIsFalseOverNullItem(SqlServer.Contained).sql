@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	[e].[Id],
 	[e].[Item],
@@ -13,7 +13,7 @@ WHERE
 		ELSE NULL
 	END
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Item],
@@ -21,7 +21,7 @@ SELECT
 FROM
 	[NestedInListEntity] [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[e].[Id],
 	[e].[Item],
@@ -36,7 +36,7 @@ WHERE
 		ELSE NULL
 	END
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Item],

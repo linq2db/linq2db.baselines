@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -10,7 +10,7 @@ FROM
 WHERE
 	IIF(IIF([r].[Value1] <> [r].[Value2], 1, 0) = IIF([r].[Value1] = [r].[Value4], 1, 0), 1, 0) = IIF(IIF([r].[Value4] = [r].[Value5] OR [r].[Value4] IS NULL AND [r].[Value5] IS NULL, 1, 0) = IIF([r].[Value2] <> [r].[Value4] OR [r].[Value4] IS NULL, 1, 0), 1, 0)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -20,7 +20,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -32,7 +32,7 @@ FROM
 WHERE
 	IIF([r].[Value1] = [r].[Value2], 1, 0) <> IIF([r].[Value4] <> [r].[Value1] OR [r].[Value4] IS NULL, 1, 0)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -42,7 +42,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -54,7 +54,7 @@ FROM
 WHERE
 	IIF([r].[Value1] = [r].[Value2], 1, 0) <> IIF([r].[Value4] = [r].[Value1], 1, 0)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -64,7 +64,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -76,7 +76,7 @@ FROM
 WHERE
 	IIF([r].[Value1] = [r].[Value2], 1, 0) <> IIF([r].[Value4] = [r].[Value1], 1, 0)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -86,7 +86,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -98,7 +98,7 @@ FROM
 WHERE
 	IIF([r].[Value1] = [r].[Value2], 1, 0) <> IIF([r].[Value4] <> [r].[Value1] OR [r].[Value4] IS NULL, 1, 0)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -108,7 +108,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -120,7 +120,7 @@ FROM
 WHERE
 	IIF(IIF([r].[Value1] = [r].[Value2], 1, 0) = IIF([r].[Value2] <> [r].[Value4] OR [r].[Value4] IS NULL, 1, 0), 1, 0) = IIF([r].[Value1] = [r].[Value4], 1, 0)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -130,7 +130,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -142,7 +142,7 @@ FROM
 WHERE
 	IIF(IIF([r].[Value1] <> [r].[Value2], 1, 0) <> IIF([r].[Value2] = [r].[Value5], 1, 0), 1, 0) <> IIF(IIF([r].[Value4] <> [r].[Value1] OR [r].[Value4] IS NULL, 1, 0) = IIF([r].[Value4] = [r].[Value5] OR [r].[Value4] IS NULL AND [r].[Value5] IS NULL, 1, 0), 1, 0)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value1],

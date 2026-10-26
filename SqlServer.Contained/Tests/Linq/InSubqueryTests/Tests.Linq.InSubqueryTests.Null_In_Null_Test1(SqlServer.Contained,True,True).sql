@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t].[PK],
 	[t].[ID],
@@ -15,7 +15,7 @@ WHERE
 			[t].[ID] = [p].[ID] OR [t].[ID] IS NULL AND [p].[ID] IS NULL
 	)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[PK],
 	[t1].[ID],
@@ -23,7 +23,7 @@ SELECT
 FROM
 	[test_in_1] [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[PK],
 	[t1].[ID],

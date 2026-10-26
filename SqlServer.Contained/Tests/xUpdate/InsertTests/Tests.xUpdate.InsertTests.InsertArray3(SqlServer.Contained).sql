@@ -1,11 +1,11 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DELETE [t]
 FROM
 	[LinqDataTypes] [t]
 WHERE
 	[t].[ID] > 1000
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @arr VarBinary(8000) -- Binary
 SET     @arr = 0x01020304
 
@@ -22,7 +22,7 @@ VALUES
 	@arr
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT TOP (2)
 	[t].[ID],
 	[t].[MoneyValue],
@@ -36,7 +36,7 @@ FROM
 WHERE
 	[t].[ID] = 1001
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DELETE [t]
 FROM
 	[LinqDataTypes] [t]

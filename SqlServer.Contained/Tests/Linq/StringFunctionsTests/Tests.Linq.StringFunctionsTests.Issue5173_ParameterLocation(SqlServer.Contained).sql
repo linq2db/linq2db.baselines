@@ -1,6 +1,6 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
-	STRING_AGG(N'test:' + CAST([grp_1].[ch] AS NVarChar(11)), N';')
+	STRING_AGG(N'test:' || CAST([grp_1].[ch] AS NVarChar(11)), N';')
 FROM
 	(
 		SELECT

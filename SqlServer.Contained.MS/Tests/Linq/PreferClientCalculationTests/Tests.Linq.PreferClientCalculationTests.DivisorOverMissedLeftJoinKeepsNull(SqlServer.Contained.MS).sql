@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[e].[Value1] / [j].[Value1],
 	[e].[Value1] % [j].[Value1],

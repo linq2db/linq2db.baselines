@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	[m_1].[Key_1],
 	[d].[GrandChildID]
@@ -15,7 +15,7 @@ FROM
 WHERE
 	[d].[ParentID] IN (2)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT DISTINCT
 	[x].[ChildID]
 FROM
@@ -23,7 +23,7 @@ FROM
 WHERE
 	[x].[ParentID] IN (2)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[m_1].[Key_1],
 	[d].[GrandChildID]
@@ -40,7 +40,7 @@ FROM
 WHERE
 	[d].[ParentID] IN (3)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT DISTINCT
 	[x].[ChildID]
 FROM

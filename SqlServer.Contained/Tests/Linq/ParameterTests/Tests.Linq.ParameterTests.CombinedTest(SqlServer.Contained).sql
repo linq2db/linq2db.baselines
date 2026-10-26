@@ -1,17 +1,17 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DECLARE @p VarChar(20) -- AnsiString
 SET     @p = N'abc'
 
 SELECT
-	[t].[VarBinaryDataType],
-	[t].[VarcharDataType],
-	[t].[NVarcharDataType]
+	[t].[varbinaryDataType],
+	[t].[varcharDataType],
+	[t].[nvarcharDataType]
 FROM
 	[AllTypes] [t]
 WHERE
-	[t].[VarcharDataType] = @p
+	[t].[varcharDataType] = @p
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @VarChar VarChar -- AnsiString
 SET     @VarChar = Tests.Linq.ParameterTests+VarChar
 
@@ -24,7 +24,7 @@ VALUES
 	@VarChar
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[VarBinary],
 	[t1].[VarChar],
@@ -32,7 +32,7 @@ SELECT
 FROM
 	[AllTypesCustomMaxLength] [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @p VarChar -- AnsiString
 SET     @p = Tests.Linq.ParameterTests+VarChar
 

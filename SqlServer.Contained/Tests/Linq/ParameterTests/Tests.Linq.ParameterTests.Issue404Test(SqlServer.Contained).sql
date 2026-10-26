@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -8,13 +8,13 @@ FROM
 	[Table404One] [m_1]
 		INNER JOIN [Table404Two] [d] ON [m_1].[Id] = [d].[FirstTableId]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id]
 FROM
 	[Table404One] [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @usage Int -- Int32
 SET     @usage = 0
 
@@ -29,13 +29,13 @@ FROM
 WHERE
 	[d].[Usage] = @usage
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id]
 FROM
 	[Table404One] [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @usage Int -- Int32
 SET     @usage = 1
 
@@ -50,13 +50,13 @@ FROM
 WHERE
 	[d].[Usage] = @usage
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id]
 FROM
 	[Table404One] [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -66,13 +66,13 @@ FROM
 	[Table404One] [m_1]
 		INNER JOIN [Table404Two] [d] ON [m_1].[Id] = [d].[FirstTableId]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id]
 FROM
 	[Table404One] [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @usage Int -- Int32
 SET     @usage = 0
 
@@ -87,13 +87,13 @@ FROM
 WHERE
 	[d].[Usage] = @usage
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id]
 FROM
 	[Table404One] [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @usage Int -- Int32
 SET     @usage = 1
 
@@ -108,7 +108,7 @@ FROM
 WHERE
 	[d].[Usage] = @usage
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id]
 FROM

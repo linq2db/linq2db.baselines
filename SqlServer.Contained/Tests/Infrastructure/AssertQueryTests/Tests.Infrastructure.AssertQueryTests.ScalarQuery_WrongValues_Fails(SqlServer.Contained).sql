@@ -1,10 +1,10 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	[p].[PersonID] + 1
 FROM
 	[Person] [p]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

@@ -1,0 +1,8 @@
+﻿-- SqlServer.CS SqlServer.2025
+SELECT TOP (1)
+	[p].[FirstName]
+FROM
+	[Person] [p]
+WHERE
+	[p].[PersonID] = 1
+

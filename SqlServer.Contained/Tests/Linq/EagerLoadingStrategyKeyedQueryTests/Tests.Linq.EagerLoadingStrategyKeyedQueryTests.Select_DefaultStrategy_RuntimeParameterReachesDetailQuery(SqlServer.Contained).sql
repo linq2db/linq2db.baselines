@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DECLARE @minId Int -- Int32
 SET     @minId = 2
 
@@ -17,7 +17,7 @@ ORDER BY
 	[d].[Id],
 	[m_1].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[d].[Id],
 	[d].[Name]

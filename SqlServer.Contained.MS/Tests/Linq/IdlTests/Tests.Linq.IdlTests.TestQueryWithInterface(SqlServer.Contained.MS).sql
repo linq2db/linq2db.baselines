@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @id Int -- Int32
 SET     @id = 5
 
@@ -10,7 +10,7 @@ FROM
 WHERE
 	[x].[PersonID] = @id
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @id Int -- Int32
 SET     @id = 5
 
@@ -22,7 +22,7 @@ FROM
 WHERE
 	[x].[PersonID] = @id
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @id Int -- Int32
 SET     @id = 5
 

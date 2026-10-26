@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 INSERT INTO [SimpleBulkCopyTable]
 (
 	[Id]
@@ -6,7 +6,7 @@ INSERT INTO [SimpleBulkCopyTable]
 VALUES
 (1)
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 INSERT INTO [SimpleBulkCopyTable]
 (
 	[Id]

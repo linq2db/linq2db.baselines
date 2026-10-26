@@ -1,0 +1,38 @@
+﻿-- SqlServer.CS SqlServer.2025
+DECLARE @p Int -- Int32
+SET     @p = 102
+
+DELETE [r]
+FROM
+	[LinqDataTypes] [r]
+WHERE
+	[r].[ID] >= 101 AND [r].[ID] < @p
+
+-- SqlServer.CS SqlServer.2025
+INSERT INTO [LinqDataTypes]
+(
+	[ID]
+)
+VALUES
+(
+	101
+)
+
+-- SqlServer.CS SqlServer.2025
+SELECT TOP (1)
+	[r].[BigIntValue]
+FROM
+	[LinqDataTypes] [r]
+WHERE
+	[r].[ID] = 101 AND [r].[BigIntValue] IS NULL
+
+-- SqlServer.CS SqlServer.2025
+DECLARE @p Int -- Int32
+SET     @p = 102
+
+DELETE [r]
+FROM
+	[LinqDataTypes] [r]
+WHERE
+	[r].[ID] >= 101 AND [r].[ID] < @p
+

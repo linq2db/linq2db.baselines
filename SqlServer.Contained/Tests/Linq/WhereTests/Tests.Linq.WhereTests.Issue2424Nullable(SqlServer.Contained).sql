@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	[i].[Pk],
 	[i].[Id],
@@ -7,7 +7,7 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[i].[Pk],
 	[i].[Id],
@@ -18,7 +18,7 @@ FROM
 WHERE
 	[i].[StrValueNullable] >= N'1'
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[i].[Pk],
 	[i].[Id],
@@ -29,7 +29,7 @@ FROM
 WHERE
 	[i].[StrValueNullable] >= N'3'
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[i].[Pk],
 	[i].[Id],
@@ -40,7 +40,7 @@ FROM
 WHERE
 	[i].[StrValueNullable] >= N'5'
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[i].[Pk],
 	[i].[Id],
@@ -51,7 +51,7 @@ FROM
 WHERE
 	[i].[StrValueNullable] IS NULL
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[i].[Pk],
 	[i].[Id],
@@ -62,7 +62,7 @@ FROM
 WHERE
 	[i].[StrValueNullable] <= N'1' OR [i].[StrValueNullable] IS NULL
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[i].[Pk],
 	[i].[Id],
@@ -73,7 +73,7 @@ FROM
 WHERE
 	[i].[StrValueNullable] <= N'3' OR [i].[StrValueNullable] IS NULL
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[i].[Pk],
 	[i].[Id],
@@ -84,7 +84,7 @@ FROM
 WHERE
 	[i].[StrValueNullable] <= N'5' OR [i].[StrValueNullable] IS NULL
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[i].[Pk],
 	[i].[Id],
@@ -95,7 +95,7 @@ FROM
 WHERE
 	[i].[StrValueNullable] IS NOT NULL
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[i].[Pk],
 	[i].[Id],
@@ -106,7 +106,7 @@ FROM
 WHERE
 	[i].[StrValueNullable] > N'1'
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[i].[Pk],
 	[i].[Id],
@@ -117,7 +117,7 @@ FROM
 WHERE
 	[i].[StrValueNullable] > N'3'
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[i].[Pk],
 	[i].[Id],
@@ -128,7 +128,7 @@ FROM
 WHERE
 	[i].[StrValueNullable] > N'5'
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[i].[Pk],
 	[i].[Id],
@@ -139,7 +139,7 @@ FROM
 WHERE
 	1 = 0
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[i].[Pk],
 	[i].[Id],
@@ -150,7 +150,7 @@ FROM
 WHERE
 	[i].[StrValueNullable] < N'1' OR [i].[StrValueNullable] IS NULL
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[i].[Pk],
 	[i].[Id],
@@ -161,7 +161,7 @@ FROM
 WHERE
 	[i].[StrValueNullable] < N'3' OR [i].[StrValueNullable] IS NULL
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[i].[Pk],
 	[i].[Id],
@@ -172,7 +172,7 @@ FROM
 WHERE
 	[i].[StrValueNullable] < N'5' OR [i].[StrValueNullable] IS NULL
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[i].[Pk],
 	[i].[Id],
@@ -183,7 +183,7 @@ FROM
 WHERE
 	[i].[StrValueNullable] IS NULL
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[i].[Pk],
 	[i].[Id],
@@ -194,7 +194,7 @@ FROM
 WHERE
 	[i].[StrValueNullable] = N'1'
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[i].[Pk],
 	[i].[Id],
@@ -205,7 +205,7 @@ FROM
 WHERE
 	[i].[StrValueNullable] = N'3'
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[i].[Pk],
 	[i].[Id],
@@ -216,7 +216,7 @@ FROM
 WHERE
 	[i].[StrValueNullable] = N'5'
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[i].[Pk],
 	[i].[Id],
@@ -227,7 +227,7 @@ FROM
 WHERE
 	[i].[StrValueNullable] IS NOT NULL
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[i].[Pk],
 	[i].[Id],
@@ -238,7 +238,7 @@ FROM
 WHERE
 	[i].[StrValueNullable] <> N'1' OR [i].[StrValueNullable] IS NULL
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[i].[Pk],
 	[i].[Id],
@@ -249,7 +249,7 @@ FROM
 WHERE
 	[i].[StrValueNullable] <> N'3' OR [i].[StrValueNullable] IS NULL
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[i].[Pk],
 	[i].[Id],

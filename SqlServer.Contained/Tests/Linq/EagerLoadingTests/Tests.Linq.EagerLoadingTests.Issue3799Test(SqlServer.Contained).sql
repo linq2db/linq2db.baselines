@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	[m_1].[Id],
 	[d].[Name]
@@ -18,7 +18,7 @@ FROM
 	) [m_1]
 		INNER JOIN [Test3799Item] [d] ON [m_1].[Id] = [d].[ParentId]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[item_1].[Name],
 	[t1].[Name],

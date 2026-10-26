@@ -1,0 +1,4 @@
+﻿-- SqlServer.CS.MS SqlServer.2025
+SELECT
+	STUFF(N'abcdef', 2, 3, N'ijklmn')
+

@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[m_1].[Id1],
 	[d].[DetailId]
@@ -14,7 +14,7 @@ FROM
 ORDER BY
 	[d].[DetailId]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[g_2].[Id1]
 FROM
@@ -27,7 +27,7 @@ FROM
 				LEFT JOIN [MasterClass] [a_Master] ON [g_1].[MasterId] = [a_Master].[Id1]
 	) [g_2]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[m_1].[Id1],
 	[d].[DetailId],
@@ -43,7 +43,7 @@ FROM
 	) [m_1]
 		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[DetailId],
 	[t1].[MasterId],

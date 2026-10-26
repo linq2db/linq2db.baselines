@@ -1,11 +1,11 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DELETE [c_1]
 FROM
 	[Child] [c_1]
 WHERE
 	[c_1].[ChildID] IN (1001, 1002)
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 INSERT INTO [Child]
 (
 	[ParentID],
@@ -17,7 +17,7 @@ VALUES
 	1001
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 INSERT INTO [Child]
 (
 	[ParentID],
@@ -29,7 +29,7 @@ VALUES
 	1002
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	COUNT(*)
 FROM
@@ -37,7 +37,7 @@ FROM
 WHERE
 	[c_1].[ParentID] = 1
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DELETE [c_1]
 FROM
 	[Child] [c_1]
@@ -45,7 +45,7 @@ FROM
 WHERE
 	[a_Parent].[ParentID] = 1 AND [c_1].[ChildID] IN (1001, 1002)
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	COUNT(*)
 FROM

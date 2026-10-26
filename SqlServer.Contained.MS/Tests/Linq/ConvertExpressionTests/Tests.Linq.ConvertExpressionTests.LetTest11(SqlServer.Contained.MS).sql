@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	IIF([t1].[ParentID] IS NULL, 0, [t1].[ParentID]),
 	[t2].[ParentID],

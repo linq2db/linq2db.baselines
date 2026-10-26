@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[m_1].[MasterId],
 	[d].[DetailId]
@@ -13,13 +13,13 @@ FROM
 ORDER BY
 	[d].[DetailId]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT DISTINCT
 	[g_1].[MasterId]
 FROM
 	[DetailClass] [g_1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[DetailId],
 	[t1].[MasterId],

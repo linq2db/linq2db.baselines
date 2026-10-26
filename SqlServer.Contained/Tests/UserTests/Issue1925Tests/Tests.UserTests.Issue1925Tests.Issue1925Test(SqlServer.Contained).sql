@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT TOP (2)
 	[r].[Id]
 FROM
@@ -6,7 +6,7 @@ FROM
 WHERE
 	[r].[Value] LIKE N'%~]' ESCAPE N'~'
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT TOP (2)
 	[r].[Id]
 FROM
@@ -14,7 +14,7 @@ FROM
 WHERE
 	[r].[Value] LIKE N'~]%' ESCAPE N'~'
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT TOP (2)
 	[r].[Id]
 FROM
@@ -22,7 +22,7 @@ FROM
 WHERE
 	[r].[Value] LIKE N'%-%' ESCAPE N'~'
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[r].[Id],
 	[r].[Value]
@@ -31,7 +31,7 @@ FROM
 WHERE
 	[r].[Value] LIKE N'%~[~]%' ESCAPE N'~'
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[r].[Id],
 	[r].[Value]
@@ -40,7 +40,7 @@ FROM
 WHERE
 	[r].[Value] LIKE N'%~[0%' ESCAPE N'~'
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @asParamUnterm NVarChar(4000) -- String
 SET     @asParamUnterm = N'%~[0%'
 
@@ -52,7 +52,7 @@ FROM
 WHERE
 	[r].[Value] LIKE @asParamUnterm ESCAPE N'~'
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[r].[Id],
 	[r].[Value]
@@ -61,7 +61,7 @@ FROM
 WHERE
 	[r].[Value] LIKE N'%~[0-9~]%' ESCAPE N'~'
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[r].[Id],
 	[r].[Value]
@@ -70,7 +70,7 @@ FROM
 WHERE
 	[r].[Value] LIKE N'%6%' ESCAPE N'~'
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[r].[Id],
 	[r].[Value]
@@ -79,7 +79,7 @@ FROM
 WHERE
 	[r].[Value] LIKE N'[0'
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @asParamUnterm NVarChar(4000) -- String
 SET     @asParamUnterm = N'[0'
 
@@ -91,7 +91,7 @@ FROM
 WHERE
 	[r].[Value] LIKE @asParamUnterm
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[r].[Id],
 	[r].[Value]
@@ -100,7 +100,7 @@ FROM
 WHERE
 	[r].[Value] LIKE N'[0-9]'
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @asParam NVarChar(4000) -- String
 SET     @asParam = N'[0-9]'
 

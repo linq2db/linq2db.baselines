@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[RowNum_1],
 	ROW_NUMBER() OVER (PARTITION BY [t1].[RowNum_1] ORDER BY [t1].[Id])

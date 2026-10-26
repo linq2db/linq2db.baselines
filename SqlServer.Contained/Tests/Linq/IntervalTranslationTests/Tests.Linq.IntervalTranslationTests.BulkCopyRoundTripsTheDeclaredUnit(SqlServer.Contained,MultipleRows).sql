@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 INSERT INTO [DurationRow]
 (
 	[Id],
@@ -10,7 +10,7 @@ INSERT INTO [DurationRow]
 VALUES
 (1,4567,45670000000,45670000000,4567)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT TOP (2)
 	[t1].[Id],
 	[t1].[InSeconds],

@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'Update14'
 DECLARE @LastName NVarChar(4000) -- String
@@ -23,7 +23,7 @@ VALUES
 	@Gender
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @name Int -- Int32
 SET     @name = 8
 DECLARE @idx Int -- Int32
@@ -36,7 +36,7 @@ SET
 WHERE
 	[Person].[FirstName] LIKE N'Update14%' ESCAPE N'~'
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	COUNT(*)
 FROM

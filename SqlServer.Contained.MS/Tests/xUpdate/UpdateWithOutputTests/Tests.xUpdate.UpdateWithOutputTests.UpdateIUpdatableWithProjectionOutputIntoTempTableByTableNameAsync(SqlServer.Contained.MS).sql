@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 CREATE TABLE [tempdb]..[#DestinationTable_destination]
 (
 	[Id]       Int          NOT NULL,
@@ -8,12 +8,12 @@ CREATE TABLE [tempdb]..[#DestinationTable_destination]
 	PRIMARY KEY CLUSTERED ([Id])
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 UPDATE
 	[TableWithData_source]
 SET
 	[Value] = [TableWithData_source].[Value] + 1,
-	[ValueStr] = Coalesce([TableWithData_source].[ValueStr], N'') + N'Upd'
+	[ValueStr] = Coalesce([TableWithData_source].[ValueStr], N'') || N'Upd'
 OUTPUT
 	INSERTED.[Id],
 	DELETED.[Value],
@@ -27,7 +27,7 @@ INTO [tempdb]..[#DestinationTable_destination]
 WHERE
 	[TableWithData_source].[Id] > 3
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value],
@@ -35,6 +35,6 @@ SELECT
 FROM
 	[tempdb]..[#DestinationTable_destination] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DROP TABLE IF EXISTS [tempdb]..[#DestinationTable_destination]
 

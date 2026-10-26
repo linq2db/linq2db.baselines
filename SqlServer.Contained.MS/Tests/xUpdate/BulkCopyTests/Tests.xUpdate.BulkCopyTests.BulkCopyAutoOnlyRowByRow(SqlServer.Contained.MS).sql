@@ -1,7 +1,7 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 INSERT INTO [IdentityOnlyField] DEFAULT VALUES
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT TOP (2)
 	[t1].[Id]
 FROM

@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	[i_1].[ReceiptNo],
 	[a_Customer].[BILLGROUP]

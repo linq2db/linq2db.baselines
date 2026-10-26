@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @When DateTime2
@@ -19,7 +19,7 @@ VALUES
 	@Elapsed
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT TOP (2)
 	DateAdd(nanosecond, CAST((([r].[Elapsed] * 10000000) % 10000000) * 100 AS Int), DateAdd(second, CAST((([r].[Elapsed] * 10000000) % 864000000000) / 10000000 AS Int), DateAdd(day, CAST(([r].[Elapsed] * 10000000) / 864000000000 AS Int), CAST([r].[When] AS DateTime2))))
 FROM

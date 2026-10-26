@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @p Int -- Int32
 SET     @p = 5
 DECLARE @p_1 Int -- Int32
@@ -16,7 +16,7 @@ WHERE
 ORDER BY
 	[c_1].[id]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @startId Int -- Int32
 SET     @startId = 5
 DECLARE @endId Int -- Int32

@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DECLARE @Field1 NVarChar(4000) -- String
 SET     @Field1 = NULL
 
@@ -13,7 +13,7 @@ VALUES
 	@Field1
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @Field1 NVarChar(4000) -- String
 SET     @Field1 = NULL
 
@@ -28,7 +28,7 @@ VALUES
 	@Field1
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @Field1 NVarChar(4000) -- String
 SET     @Field1 = N'test'
 
@@ -43,7 +43,7 @@ VALUES
 	@Field1
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Field1]

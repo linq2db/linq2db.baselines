@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 
@@ -11,7 +11,7 @@ VALUES
 	@Id
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @id Int -- Int32
 SET     @id = 11
 
@@ -25,13 +25,13 @@ FROM
 WHERE
 	[d].[Id] = @id
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id]
 FROM
 	[Test3664] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @id Int -- Int32
 SET     @id = 12
 
@@ -45,7 +45,7 @@ FROM
 WHERE
 	[d].[Id] = @id
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id]
 FROM

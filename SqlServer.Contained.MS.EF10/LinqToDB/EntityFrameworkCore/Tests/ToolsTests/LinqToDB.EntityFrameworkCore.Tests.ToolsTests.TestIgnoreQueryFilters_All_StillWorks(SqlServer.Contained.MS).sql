@@ -2,7 +2,7 @@
 FROM [Products] AS [p]
 
 
--- SqlServer.2019
+-- SqlServer.2025
 SELECT
 	[t1].[IsDeleted],
 	[t1].[ProductID],

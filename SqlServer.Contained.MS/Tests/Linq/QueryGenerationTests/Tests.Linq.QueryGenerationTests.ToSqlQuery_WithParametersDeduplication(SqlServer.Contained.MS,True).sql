@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],
@@ -10,7 +10,7 @@ FROM
 WHERE
 	[p].[FirstName] = N'John' OR [p].[LastName] = N'John'
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @firstName NVarChar(4000) -- String
 SET     @firstName = N'John'
 

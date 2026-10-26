@@ -1,12 +1,12 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t].[Str],
-	LEN([t].[Str] + N'.') - 1,
-	N'original-' + Coalesce([t].[Str], N'')
+	LEN([t].[Str] || N'.') - 1,
+	N'original-' || Coalesce([t].[Str], N'')
 FROM
 	[TestLengthModel] [t]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Str]

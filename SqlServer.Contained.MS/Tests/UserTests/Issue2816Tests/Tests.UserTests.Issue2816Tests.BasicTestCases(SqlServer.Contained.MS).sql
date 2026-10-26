@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[p].[Id],
 	[p].[Text]
@@ -8,7 +8,7 @@ WHERE
 	[p].[Text] IS NULL OR TRIM(N'	
                   　' FROM [p].[Text]) = N''
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Text]

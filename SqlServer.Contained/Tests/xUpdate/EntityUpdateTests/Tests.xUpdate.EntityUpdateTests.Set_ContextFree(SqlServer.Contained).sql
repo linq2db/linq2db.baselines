@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DECLARE @Name NVarChar(4000) -- String
 SET     @Name = N'x'
 DECLARE @Version Int -- Int32
@@ -20,7 +20,7 @@ SET
 WHERE
 	[EntityUpdateTest].[Id] = @Id
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT TOP (2)
 	[t1].[Id],
 	[t1].[Name],

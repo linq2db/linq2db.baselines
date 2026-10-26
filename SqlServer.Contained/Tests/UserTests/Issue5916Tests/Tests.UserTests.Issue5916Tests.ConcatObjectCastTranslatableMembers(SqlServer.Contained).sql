@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	[p].[PersonID],
 	[p].[FirstName]
@@ -15,7 +15,7 @@ FROM
 WHERE
 	[p_1].[PersonID] <= 2
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],
