@@ -1,11 +1,11 @@
-﻿-- SqlServer.2019
+﻿-- SqlServer.2025
 DELETE [t1]
 FROM
 	[Issue5975TableTwos] [t1]
 
 
 
--- SqlServer.2019
+-- SqlServer.2025
 DELETE [t1]
 FROM
 	[Issue5975TableOnes] [t1]
@@ -36,7 +36,7 @@ INSERT INTO [Issue5975TableTwos] ([Id], [Code], [FromDate], [TableOneId], [ToDat
 VALUES (@p4, @p5, @p6, @p7, @p8);
 
 
--- SqlServer.2019
+-- SqlServer.2025
 SELECT
 	[t2].[Code],
 	[t1].[FromDate],
