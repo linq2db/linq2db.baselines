@@ -1,0 +1,25 @@
+﻿-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+DECLARE @Value Integer -- Int32
+SET     @Value = 6
+DECLARE @Name Text(1) -- String
+SET     @Name = 'b'
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
+
+UPDATE
+	"SourceSchemaRow"
+SET
+	"Value" = :Value,
+	"Name" = :Name
+WHERE
+	"SourceSchemaRow"."Id" = :Id
+
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+SELECT
+	t1."Id",
+	t1."Value",
+	t1."Name"
+FROM
+	"SourceSchemaRow" t1
+LIMIT 2
+
