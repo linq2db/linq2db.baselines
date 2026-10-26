@@ -4,7 +4,11 @@ SELECT
 FROM
 	(
 		SELECT
-			ROUND(CAST("p"."MoneyValue" AS Float)) as "c1"
+			sign(CAST("p"."MoneyValue" AS Float)) * CASE
+				WHEN abs(CAST("p"."MoneyValue" AS Float)) - floor(abs(CAST("p"."MoneyValue" AS Float))) = 0.5
+					THEN floor(abs(CAST("p"."MoneyValue" AS Float))) + 1
+				ELSE round(abs(CAST("p"."MoneyValue" AS Float)), 0)
+			END as "c1"
 		FROM
 			"LinqDataTypes" "p"
 	) "t"
