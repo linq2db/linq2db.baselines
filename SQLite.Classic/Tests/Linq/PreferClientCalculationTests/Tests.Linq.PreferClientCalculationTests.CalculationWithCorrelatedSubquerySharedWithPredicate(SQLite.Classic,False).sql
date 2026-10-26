@@ -27,7 +27,8 @@ FROM
 					)
 						THEN 1
 					ELSE 0
-				END AS Float) / 4) = 0.5 AND FLOOR(CAST([e].[Value1] + CASE
+				END AS Float) / 4) = 0.5
+					THEN ROUND((CAST([e].[Value1] + CASE
 					WHEN EXISTS(
 						SELECT
 							*
@@ -38,19 +39,7 @@ FROM
 					)
 						THEN 1
 					ELSE 0
-				END AS Float) / 4) % 2 = 0
-					THEN FLOOR(CAST([e].[Value1] + CASE
-					WHEN EXISTS(
-						SELECT
-							*
-						FROM
-							[MissedJoinEntity] [c_1]
-						WHERE
-							[c_1].[Id] = [j].[Id]
-					)
-						THEN 1
-					ELSE 0
-				END AS Float) / 4)
+				END AS Float) / 4) * 0.5, 0) * 2
 				ELSE ROUND(CAST([e].[Value1] + CASE
 					WHEN EXISTS(
 						SELECT

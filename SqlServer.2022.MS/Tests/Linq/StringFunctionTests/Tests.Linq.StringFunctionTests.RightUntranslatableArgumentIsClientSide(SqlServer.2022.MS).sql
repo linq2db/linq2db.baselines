@@ -1,0 +1,17 @@
+﻿-- SqlServer.2022.MS SqlServer.2022
+SELECT
+	[p].[FirstName]
+FROM
+	[Person] [p]
+WHERE
+	[p].[PersonID] = 1
+
+-- SqlServer.2022.MS SqlServer.2022
+SELECT
+	[p].[FirstName],
+	[p].[PersonID]
+FROM
+	[Person] [p]
+WHERE
+	[p].[PersonID] = 1
+

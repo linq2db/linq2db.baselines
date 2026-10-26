@@ -1,0 +1,28 @@
+﻿-- Informix.DB2 Informix
+SELECT
+	r.Id,
+	ROUND(r.F),
+	ROUND(r.F, r.P),
+	CASE
+		WHEN r.F - FLOOR(r.F) = 0.5 THEN ROUND(r.F * 0.5, 0) * 2
+		ELSE ROUND(r.F, 0)
+	END,
+	CASE
+		WHEN (r.F * 2 = ROUND(r.F * 2, r.P) OR r.F IS NULL AND (r.F IS NULL OR r.P IS NULL)) AND (r.F <> ROUND(r.F, r.P) OR r.F IS NULL AND NOT (r.F IS NULL OR r.P IS NULL) OR r.F IS NOT NULL AND r.P IS NULL)
+			THEN ROUND(r.F / 2, r.P) * 2
+		ELSE ROUND(r.F, r.P)
+	END
+FROM
+	RoundValues r
+ORDER BY
+	r.Id
+
+-- Informix.DB2 Informix
+SELECT
+	t1.Id,
+	t1.D,
+	t1.F,
+	t1.P
+FROM
+	RoundValues t1
+

@@ -5,8 +5,8 @@ FROM
 	(
 		SELECT
 			CASE
-				WHEN CAST([p].[MoneyValue] AS Float) - FLOOR(CAST([p].[MoneyValue] AS Float)) = 0.5 AND Convert(Int, FLOOR(CAST([p].[MoneyValue] AS Float))) % 2 = 0
-					THEN FLOOR(CAST([p].[MoneyValue] AS Float))
+				WHEN CAST([p].[MoneyValue] AS Float) - FLOOR(CAST([p].[MoneyValue] AS Float)) = 0.5
+					THEN ROUND(CAST([p].[MoneyValue] AS Float) * 0.5, 0) * 2
 				ELSE ROUND(CAST([p].[MoneyValue] AS Float), 0)
 			END as [c1]
 		FROM
