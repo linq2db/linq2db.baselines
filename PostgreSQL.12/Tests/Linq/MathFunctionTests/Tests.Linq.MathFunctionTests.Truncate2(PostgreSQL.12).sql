@@ -1,8 +1,13 @@
 ﻿-- PostgreSQL.12 PostgreSQL12
 SELECT
-	Trunc((-t."MoneyValue")::Float::decimal, 0)
+	t.c1
 FROM
-	"LinqDataTypes" t
+	(
+		SELECT
+			Trunc((-p."MoneyValue")::Float::decimal, 0)::Float as c1
+		FROM
+			"LinqDataTypes" p
+	) t
 WHERE
-	Trunc((-t."MoneyValue")::Float::decimal, 0)::Float <> 0.10000000000000001
+	t.c1 <> 0.10000000000000001
 
