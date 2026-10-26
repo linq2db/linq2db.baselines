@@ -1,0 +1,8 @@
+﻿-- SqlServer.2017.MS SqlServer.2017
+SELECT
+	RIGHT(N'John', 3)
+FROM
+	[Person] [p]
+WHERE
+	[p].[PersonID] = 1
+
