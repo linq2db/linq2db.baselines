@@ -1,12 +1,12 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	[e].[StrReq]
 FROM
 	[ConcatTestEntity] [e]
 WHERE
-	(Coalesce([e].[StrReq], N'') + N' 1') = N'Programmer 1'
+	(Coalesce([e].[StrReq], N'') || N' 1') = N'Programmer 1'
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Str1],

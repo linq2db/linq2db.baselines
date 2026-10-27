@@ -1,12 +1,12 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	CONCAT_WS(N', ', IIF([x].[NullableValue] LIKE N'%A%' ESCAPE N'~', [x].[NullableValue], NULL), IIF([x].[NotNullableValue] LIKE N'%A%' ESCAPE N'~', [x].[NotNullableValue], NULL), IIF([x].[VarcharValue] LIKE '%A%' ESCAPE N'~', [x].[VarcharValue], NULL), IIF([x].[NVarcharValue] LIKE N'%A%' ESCAPE N'~', [x].[NVarcharValue], NULL))
 FROM
 	[SampleClass] [x]
 WHERE
-	LEN(CONCAT_WS(N', ', IIF([x].[NullableValue] LIKE N'%A%' ESCAPE N'~', [x].[NullableValue], NULL), IIF([x].[NotNullableValue] LIKE N'%A%' ESCAPE N'~', [x].[NotNullableValue], NULL), IIF([x].[VarcharValue] LIKE '%A%' ESCAPE N'~', [x].[VarcharValue], NULL), IIF([x].[NVarcharValue] LIKE N'%A%' ESCAPE N'~', [x].[NVarcharValue], NULL)) + N'.') <> 1
+	LEN(CONCAT_WS(N', ', IIF([x].[NullableValue] LIKE N'%A%' ESCAPE N'~', [x].[NullableValue], NULL), IIF([x].[NotNullableValue] LIKE N'%A%' ESCAPE N'~', [x].[NotNullableValue], NULL), IIF([x].[VarcharValue] LIKE '%A%' ESCAPE N'~', [x].[VarcharValue], NULL), IIF([x].[NVarcharValue] LIKE N'%A%' ESCAPE N'~', [x].[NVarcharValue], NULL)) || N'.') <> 1
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[PK],
 	[t1].[Id],

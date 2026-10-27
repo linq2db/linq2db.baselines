@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @ID Int -- Int32
 SET     @ID = 1
 DECLARE @Data NVarChar(50) -- String
@@ -15,7 +15,7 @@ VALUES
 	@Data
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @ID Int -- Int32
 SET     @ID = 2
 DECLARE @Data NVarChar(50) -- String
@@ -32,7 +32,7 @@ VALUES
 	@Data
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 INSERT INTO [TrimTestTable]
 (
 	[ID],
@@ -44,7 +44,7 @@ VALUES
 	N'***VVV***'
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[r].[ID],
 	[r].[Data]
@@ -53,7 +53,7 @@ FROM
 ORDER BY
 	[r].[ID]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[r].[ID],
 	[r].[Data]

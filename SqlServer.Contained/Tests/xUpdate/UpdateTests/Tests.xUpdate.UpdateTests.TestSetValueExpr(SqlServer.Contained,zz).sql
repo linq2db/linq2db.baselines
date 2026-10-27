@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DECLARE @str NVarChar(4000) -- String
 SET     @str = N'zz'
 DECLARE @id Int -- Int32
@@ -12,7 +12,7 @@ SET
 WHERE
 	[TextData].[Id] >= @id
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Items1],

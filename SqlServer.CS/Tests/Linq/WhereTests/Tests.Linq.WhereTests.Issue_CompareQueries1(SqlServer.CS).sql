@@ -1,0 +1,16 @@
+﻿-- SqlServer.CS SqlServer.2025
+SELECT TOP (2)
+	COUNT([p].[PersonID])
+FROM
+	[Person] [p]
+WHERE
+	[p].[PersonID] IN (1, 2)
+
+-- SqlServer.CS SqlServer.2025
+SELECT TOP (2)
+	COUNT([p].[PersonID])
+FROM
+	[Person] [p]
+WHERE
+	1 = 0
+

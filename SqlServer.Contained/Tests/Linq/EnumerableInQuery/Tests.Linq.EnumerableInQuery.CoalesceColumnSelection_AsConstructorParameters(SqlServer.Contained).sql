@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t3].[ColorName],
 	[t3].[StyleName],
@@ -7,7 +7,7 @@ SELECT
 FROM
 	(
 		SELECT
-			CONCAT_WS(N',', N'', [it].[StyleName]) + N':' + Coalesce(IIF([it].[ColorId] IS NULL OR LEN(CAST([it].[ColorId] AS NVarChar(11)) + N'.') >= 5, CAST([it].[ColorId] AS NVarChar(11)), REPLICATE(N'0', 4 - (LEN(CAST([it].[ColorId] AS NVarChar(11)) + N'.') - 1)) + CAST([it].[ColorId] AS NVarChar(11))), N'') as [StrValue],
+			CONCAT_WS(N',', N'', [it].[StyleName]) || N':' || Coalesce(IIF([it].[ColorId] IS NULL OR LEN(CAST([it].[ColorId] AS NVarChar(11)) || N'.') >= 5, CAST([it].[ColorId] AS NVarChar(11)), REPLICATE(N'0', 4 - (LEN(CAST([it].[ColorId] AS NVarChar(11)) || N'.') - 1)) || CAST([it].[ColorId] AS NVarChar(11))), N'') as [StrValue],
 			[it].[ColorName],
 			[it].[StyleName],
 			[it].[Conditional]
@@ -31,7 +31,7 @@ FROM
 ORDER BY
 	[t3].[StrValue]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[ColorId],
@@ -45,7 +45,7 @@ FROM
 		LEFT JOIN [SomeColor] [a_Color] ON [t1].[ColorId] = [a_Color].[Id]
 		LEFT JOIN [SomeStyle] [a_Style] ON [t1].[StyleId] = [a_Style].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[ColorId],

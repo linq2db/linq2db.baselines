@@ -12,7 +12,7 @@ VALUES (i.[IsArchived])
 OUTPUT INSERTED.[Id], i._Position;
 
 
--- SqlServer.2019
+-- SqlServer.2025
 DECLARE @IsArchived SmallInt -- Int16
 SET     @IsArchived = 0
 

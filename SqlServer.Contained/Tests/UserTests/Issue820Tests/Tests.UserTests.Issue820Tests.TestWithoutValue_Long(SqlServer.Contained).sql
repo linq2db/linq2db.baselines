@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DECLARE @param BigInt -- Int64
 SET     @param = 1
 
@@ -18,7 +18,7 @@ FROM
 WHERE
 	@param = [t1].[BigIntValue]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[ID],
 	[t1].[MoneyValue],

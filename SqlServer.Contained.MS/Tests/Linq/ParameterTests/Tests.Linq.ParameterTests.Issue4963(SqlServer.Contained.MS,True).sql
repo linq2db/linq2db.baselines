@@ -1,10 +1,10 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 UPDATE
 	[Issue4963Table]
 SET
 	[Field] = CAST(CAST([Issue4963Table].[Field] AS Int) + -1 AS TinyInt)
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT TOP (2)
 	[t1].[Id],
 	[t1].[Field]

@@ -6,7 +6,7 @@ INSERT INTO [SkipModes] ([Id], [InsertOnly])
 VALUES (@p0, @p1);
 
 
--- SqlServer.2019
+-- SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @InsertOnly Int -- Int32
@@ -25,7 +25,7 @@ VALUES
 
 
 
--- SqlServer.2019
+-- SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[InsertOnly],
@@ -47,7 +47,7 @@ WHERE [Id] = @p1;
 SELECT @@ROWCOUNT;
 
 
--- SqlServer.2019
+-- SqlServer.2025
 DECLARE @UpdateOnly Int -- Int32
 SET     @UpdateOnly = 12
 DECLARE @Id Int -- Int32
@@ -62,7 +62,7 @@ WHERE
 
 
 
--- SqlServer.2019
+-- SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[InsertOnly],

@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	DATETIME2FROMPARTS(DatePart(year, [p].[DateTimeValue]), 10, 1, 0, 0, 0, 0, 3)
 FROM

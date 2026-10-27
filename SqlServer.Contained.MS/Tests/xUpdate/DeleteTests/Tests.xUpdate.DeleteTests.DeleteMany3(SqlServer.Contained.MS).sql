@@ -1,25 +1,25 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DELETE [c_1]
 FROM
 	[GrandChild] [c_1]
 WHERE
 	[c_1].[ParentID] >= 1000
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DELETE [c_1]
 FROM
 	[Child] [c_1]
 WHERE
 	[c_1].[ParentID] >= 1000
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DELETE [c_1]
 FROM
 	[Parent] [c_1]
 WHERE
 	[c_1].[ParentID] >= 1000
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 INSERT INTO [Parent]
 (
 	[ParentID]
@@ -29,7 +29,7 @@ VALUES
 	1001
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 INSERT INTO [Child]
 (
 	[ParentID],
@@ -41,7 +41,7 @@ VALUES
 	1
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 INSERT INTO [GrandChild]
 (
 	[ParentID],
@@ -55,7 +55,7 @@ VALUES
 	1
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 INSERT INTO [GrandChild]
 (
 	[ParentID],
@@ -69,7 +69,7 @@ VALUES
 	2
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DELETE [a_GrandChildren]
 FROM
 	[Parent] [gc]
@@ -78,21 +78,21 @@ FROM
 WHERE
 	[gc].[ParentID] IN (1001)
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DELETE [c_1]
 FROM
 	[GrandChild] [c_1]
 WHERE
 	[c_1].[ParentID] >= 1000
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DELETE [c_1]
 FROM
 	[Child] [c_1]
 WHERE
 	[c_1].[ParentID] >= 1000
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DELETE [c_1]
 FROM
 	[Parent] [c_1]

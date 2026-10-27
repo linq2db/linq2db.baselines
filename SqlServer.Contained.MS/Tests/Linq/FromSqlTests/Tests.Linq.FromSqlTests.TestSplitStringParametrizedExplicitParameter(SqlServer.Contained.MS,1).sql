@@ -1,9 +1,9 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @p VarChar(8000) -- AnsiString
 SET     @p = N'a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z'
 
 SELECT
-	[x].[Value]
+	[x].[value]
 FROM
 	STRING_SPLIT(@p,',') [x]
 

@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DECLARE @value NVarChar(4000) -- String
 SET     @value = N'xyz'
 
@@ -7,15 +7,9 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	NOT EXISTS(
-		SELECT
-			[s].[String]
-		INTERSECT
-		SELECT
-			@value
-	)
+	[s].[String] IS DISTINCT FROM @value
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @value NVarChar(4000) -- String
 SET     @value = N'xyz'
 
@@ -24,15 +18,9 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	NOT EXISTS(
-		SELECT
-			[s].[NullableString]
-		INTERSECT
-		SELECT
-			@value
-	)
+	[s].[NullableString] IS DISTINCT FROM @value
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @value NVarChar(4000) -- String
 SET     @value = N'xyz'
 
@@ -41,15 +29,9 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	EXISTS(
-		SELECT
-			[s].[String]
-		INTERSECT
-		SELECT
-			@value
-	)
+	[s].[String] IS NOT DISTINCT FROM @value
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @value NVarChar(4000) -- String
 SET     @value = N'xyz'
 
@@ -58,11 +40,5 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	EXISTS(
-		SELECT
-			[s].[NullableString]
-		INTERSECT
-		SELECT
-			@value
-	)
+	[s].[NullableString] IS NOT DISTINCT FROM @value
 

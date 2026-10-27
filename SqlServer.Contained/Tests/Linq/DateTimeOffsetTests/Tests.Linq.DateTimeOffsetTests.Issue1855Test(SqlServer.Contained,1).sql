@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @SomeDateTimeOffset DateTimeOffset
@@ -19,7 +19,7 @@ VALUES
 	@SomeNullableDateTimeOffset
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @SomeDateTimeOffset DateTimeOffset
@@ -36,7 +36,7 @@ VALUES
 	@SomeDateTimeOffset
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @interval Int -- Int32
 SET     @interval = 10
 DECLARE @clientSideIn DateTimeOffset

@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[m_1].[Id],
 	[m_1].[Id],
@@ -14,7 +14,7 @@ FROM
 	) [m_1]
 		INNER JOIN [EntityD] [d] ON [m_1].[Id] = [d].[FK]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[FK],

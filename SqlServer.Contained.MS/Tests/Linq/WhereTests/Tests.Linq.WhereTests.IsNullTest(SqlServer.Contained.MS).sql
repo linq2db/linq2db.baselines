@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[nm].[MiddleName]
 FROM
@@ -6,7 +6,7 @@ FROM
 WHERE
 	[nm].[MiddleName] IS NOT NULL
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

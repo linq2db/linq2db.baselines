@@ -1,4 +1,4 @@
-﻿-- SqlServer.2019
+﻿-- SqlServer.2025
 DECLARE @take Int -- Int32
 SET     @take = 2
 

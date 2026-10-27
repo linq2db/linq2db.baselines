@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1010
 DECLARE @Value1 Int -- Int32
@@ -15,7 +15,7 @@ VALUES
 	@Value1
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 UPDATE
 	[Parent]
 SET
@@ -23,7 +23,7 @@ SET
 WHERE
 	[Parent].[ParentID] = 1010
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT TOP (1)
 	[t].[ParentID],
 	[t].[Value1]

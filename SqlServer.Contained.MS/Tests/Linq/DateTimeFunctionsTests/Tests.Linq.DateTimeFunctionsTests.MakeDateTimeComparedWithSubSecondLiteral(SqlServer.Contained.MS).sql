@@ -1,10 +1,10 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	COUNT(*)
 FROM
 	[LinqDataTypes] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	COUNT(*)
 FROM
@@ -12,7 +12,7 @@ FROM
 WHERE
 	DATETIME2FROMPARTS(2010, 1, 1, 10, 0, [p].[ID] % 1, 0, 3) < DATETIME2FROMPARTS(2010, 1, 1, 10, 0, 0, 5000000, 7)
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	COUNT(*)
 FROM
@@ -20,7 +20,7 @@ FROM
 WHERE
 	DATETIME2FROMPARTS(2010, 1, 1, 10, 0, [p].[ID] % 1, 0, 3) >= DATETIME2FROMPARTS(2010, 1, 1, 10, 0, 0, 5000000, 7)
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	COUNT(*)
 FROM

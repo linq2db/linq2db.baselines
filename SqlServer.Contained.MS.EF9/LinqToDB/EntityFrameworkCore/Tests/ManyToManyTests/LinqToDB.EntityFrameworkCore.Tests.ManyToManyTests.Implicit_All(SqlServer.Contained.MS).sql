@@ -8,7 +8,7 @@ WHERE NOT EXISTS (
 ORDER BY [s].[Id]
 
 
--- SqlServer.2019
+-- SqlServer.2025
 SELECT
 	[s].[Id]
 FROM

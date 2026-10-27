@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[e].[Id],
 	[e].[GuidValue],
@@ -7,9 +7,9 @@ SELECT
 FROM
 	[TestConstantsData] [e]
 WHERE
-	(Coalesce([e].[StringValue], N'') + N'1') = N'StrValue1'
+	(Coalesce([e].[StringValue], N'') || N'1') = N'StrValue1'
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[GuidValue],

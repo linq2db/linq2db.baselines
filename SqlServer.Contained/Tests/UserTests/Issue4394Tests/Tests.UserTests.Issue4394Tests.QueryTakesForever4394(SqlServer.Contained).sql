@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	[x_8].[Id],
 	[x_8].[AisleID],
@@ -172,7 +172,7 @@ FROM
 		) = [i8].[Id] AND [i8].[Status] < 0
 		LEFT JOIN [MaterialDTO] [m8] ON [i8].[MaterialID] = [m8].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[x_8].[Id],
 	[x_8].[AisleID],

@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT TOP (1)
 	[t1].[file_id],
 	[t1].[file_guid],
@@ -32,7 +32,7 @@ SELECT TOP (1)
 FROM
 	[sys].[database_files] [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @FileID Int -- Int32
 SET     @FileID = 1
 

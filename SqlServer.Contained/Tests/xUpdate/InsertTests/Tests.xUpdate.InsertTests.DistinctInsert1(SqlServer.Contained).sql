@@ -1,11 +1,11 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DELETE [c_1]
 FROM
 	[LinqDataTypes] [c_1]
 WHERE
 	[c_1].[ID] > 1000
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 INSERT INTO [LinqDataTypes]
 (
 	[ID],
@@ -24,7 +24,7 @@ FROM
 			[LinqDataTypes] [t1]
 	) [t2]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DELETE [c_1]
 FROM
 	[LinqDataTypes] [c_1]

@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Name]
@@ -7,7 +7,7 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[m_1].[Id],
 	[d_1].[Id],
@@ -26,7 +26,7 @@ FROM
 	) [m_1]
 		INNER JOIN [Employee] [d_1] ON [m_1].[Id] = [d_1].[DepartmentId]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[k_1].[item],
 	[d].[Id],

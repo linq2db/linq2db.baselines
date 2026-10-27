@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[p].[PersonID],
 	(
@@ -13,7 +13,7 @@ SELECT
 FROM
 	[Person] [p]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],
@@ -23,7 +23,7 @@ SELECT
 FROM
 	[Person] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[PersonID],
 	[t1].[Diagnosis]
