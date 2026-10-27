@@ -1,0 +1,18 @@
+﻿-- Access.Jet.Odbc AccessODBC
+SELECT
+	[p].[PersonID],
+	IIF(False, 0, NULL),
+	IIF(False, 0, NULL),
+	IIF(False, '', NULL)
+FROM
+	[Person] [p]
+UNION ALL
+SELECT
+	[p_1].[PersonID],
+	[a_Patient].[PersonID],
+	[a_Patient].[PersonID],
+	[a_Patient].[Diagnosis]
+FROM
+	[Person] [p_1]
+		LEFT JOIN [Patient] [a_Patient] ON ([p_1].[PersonID] = [a_Patient].[PersonID])
+
