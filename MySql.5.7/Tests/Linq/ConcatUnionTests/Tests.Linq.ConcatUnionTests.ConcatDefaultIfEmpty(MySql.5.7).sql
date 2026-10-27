@@ -1,6 +1,5 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	CAST(0 AS SIGNED),
 	`t1`.`ParentID`,
 	`t1`.`ParentID`,
 	`t1`.`ChildID`
@@ -33,7 +32,6 @@ WHERE
 	`t1`.`ParentID_1` = 1
 UNION ALL
 SELECT
-	CAST(1 AS SIGNED),
 	CAST(NULL AS SIGNED),
 	CAST(NULL AS SIGNED),
 	CAST(NULL AS SIGNED)
