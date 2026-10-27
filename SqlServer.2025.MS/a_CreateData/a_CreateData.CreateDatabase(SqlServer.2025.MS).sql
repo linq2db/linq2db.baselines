@@ -475,8 +475,16 @@ CREATE TABLE AllTypes
 
 
 
+
+
+
+
 	jsonDataType             JSON              NULL,
 	vectorDataType           VECTOR(5)         NULL,
+
+
+
+
 
 
 

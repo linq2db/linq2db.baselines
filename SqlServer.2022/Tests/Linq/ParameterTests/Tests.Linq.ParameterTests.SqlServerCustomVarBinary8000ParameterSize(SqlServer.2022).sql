@@ -3,11 +3,11 @@ DECLARE @p VarBinary -- Binary
 SET     @p = Tests.Linq.ParameterTests+VarBinary
 
 SELECT
-	[t].[varbinaryDataType],
-	[t].[varcharDataType],
-	[t].[nvarcharDataType]
+	[t].[VarBinaryDataType],
+	[t].[VarcharDataType],
+	[t].[NVarcharDataType]
 FROM
 	[AllTypes] [t]
 WHERE
-	[t].[varbinaryDataType] = @p
+	[t].[VarBinaryDataType] = @p
 
