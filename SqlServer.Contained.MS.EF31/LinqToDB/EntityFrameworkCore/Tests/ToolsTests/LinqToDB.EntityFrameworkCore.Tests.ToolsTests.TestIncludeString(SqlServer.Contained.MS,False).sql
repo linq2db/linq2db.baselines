@@ -29,7 +29,7 @@ ORDER BY [o].[OrderID], [t0].[EmployeeID], [t0].[TerritoryID], [t2].[OrderID], [
 
 
 
--- SqlServer.2025
+-- SqlServer.2019
 SELECT
 	[m_1].[EmployeeId],
 	[d].[IsDeleted],
@@ -47,7 +47,7 @@ FROM
 
 
 
--- SqlServer.2025
+-- SqlServer.2019
 SELECT
 	[m_1].[OrderId],
 	[d].[IsDeleted],
@@ -79,7 +79,7 @@ FROM
 
 
 
--- SqlServer.2025
+-- SqlServer.2019
 SELECT
 	[e].[IsDeleted],
 	[e].[OrderID],

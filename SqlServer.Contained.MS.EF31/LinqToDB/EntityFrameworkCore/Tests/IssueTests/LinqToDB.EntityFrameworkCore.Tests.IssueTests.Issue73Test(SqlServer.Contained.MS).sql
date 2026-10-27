@@ -4,9 +4,9 @@ LEFT JOIN [Issue73Entities] AS [i0] ON [i].[ParentId] = [i0].[Id]
 WHERE [i].[Name] = N'Name1_3'
 
 
--- SqlServer.2025
+-- SqlServer.2019
 SELECT
-	Coalesce([a_Parent].[Name], N'') || N'>' || [x].[Name]
+	Coalesce([a_Parent].[Name], N'') + N'>' + [x].[Name]
 FROM
 	[Issue73Entities] [x]
 		LEFT JOIN [Issue73Entities] [a_Parent] ON [x].[ParentId] = [a_Parent].[Id]

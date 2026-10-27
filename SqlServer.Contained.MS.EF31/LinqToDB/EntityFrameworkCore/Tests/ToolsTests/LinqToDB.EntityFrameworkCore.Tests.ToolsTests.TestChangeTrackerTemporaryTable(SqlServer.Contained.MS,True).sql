@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025
+﻿-- SqlServer.2019
 CREATE TABLE [tempdb]..[#Orders]
 (
 	[IsDeleted]      bit          NOT NULL,
@@ -22,7 +22,7 @@ CREATE TABLE [tempdb]..[#Orders]
 
 
 
--- SqlServer.2025
+-- SqlServer.2019
 INSERT INTO [tempdb]..[#Orders]
 (
 	[IsDeleted],
@@ -64,7 +64,7 @@ WHERE
 
 
 
--- SqlServer.2025
+-- SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -91,7 +91,7 @@ WHERE
 
 
 
--- SqlServer.2025
+-- SqlServer.2019
 DROP TABLE IF EXISTS [tempdb]..[#Orders]
 
 

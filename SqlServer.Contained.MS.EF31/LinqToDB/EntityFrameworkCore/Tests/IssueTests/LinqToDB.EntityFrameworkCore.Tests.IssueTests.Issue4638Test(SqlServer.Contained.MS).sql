@@ -1,6 +1,6 @@
 ﻿
 
--- SqlServer.2025
+-- SqlServer.2019
 SELECT
 	[m_1].[Key_1],
 	[d].[CfAllowValue],
@@ -18,7 +18,7 @@ ORDER BY
 
 
 
--- SqlServer.2025
+-- SqlServer.2019
 SELECT TOP (1)
 	[p].[AclNameId]
 FROM
