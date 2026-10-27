@@ -1,6 +1,5 @@
 ﻿-- ClickHouse.MySql ClickHouse
 SELECT
-	toInt32(0) as projection__set_id__,
 	t1.ParentID,
 	t1.ParentID as ParentID_1,
 	t1.ChildID
@@ -18,7 +17,6 @@ WHERE
 	p.ParentID = 1
 UNION ALL
 SELECT
-	toInt32(1) as projection__set_id__,
 	toInt32(NULL) as ParentID,
 	toInt32(NULL) as ParentID_1,
 	toInt32(NULL) as ChildID

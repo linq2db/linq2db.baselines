@@ -1,6 +1,5 @@
 ﻿-- DB2 DB2.LUW DB2LUW
 SELECT
-	CAST(0 AS Int),
 	"t1"."ParentID",
 	"t1"."ParentID",
 	"t1"."ChildID"
@@ -18,7 +17,6 @@ WHERE
 	"p"."ParentID" = 1
 UNION ALL
 SELECT
-	CAST(1 AS Int),
 	CAST(NULL AS Int),
 	CAST(NULL AS Int),
 	CAST(NULL AS Int)
