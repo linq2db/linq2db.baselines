@@ -30,7 +30,8 @@ VALUES
 
 
 -- MariaDB.10.MySqlConnector MariaDB
-SELECT LAST_INSERT_ID()
+SELECT
+	LAST_INSERT_ID() as `c1`
 
 
 
@@ -66,7 +67,8 @@ VALUES
 
 
 -- MariaDB.10.MySqlConnector MariaDB
-SELECT LAST_INSERT_ID()
+SELECT
+	LAST_INSERT_ID() as `c1`
 
 
 
@@ -102,7 +104,8 @@ VALUES
 
 
 -- MariaDB.10.MySqlConnector MariaDB
-SELECT LAST_INSERT_ID()
+SELECT
+	LAST_INSERT_ID() as `c1`
 
 
 
