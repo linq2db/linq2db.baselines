@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	[g_1].[GroupId],
 	AVG([g_1].[DataValue]),
@@ -15,7 +15,7 @@ WHERE
 GROUP BY
 	[g_1].[GroupId]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[GroupId],

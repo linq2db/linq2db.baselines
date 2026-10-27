@@ -1,11 +1,11 @@
-﻿-- SqlServer.2019
+﻿-- SqlServer.2025
 DELETE [t1]
 FROM
 	[Issue5975TableTwos] [t1]
 
 
 
--- SqlServer.2019
+-- SqlServer.2025
 DELETE [t1]
 FROM
 	[Issue5975TableOnes] [t1]
@@ -23,7 +23,7 @@ INSERT INTO [Issue5975TableTwos] ([Id], [Code], [FromDate], [TableOneId], [ToDat
 VALUES (@p8, @p9, @p10, @p11, @p12);
 
 
--- SqlServer.2019
+-- SqlServer.2025
 DECLARE @test DateTime2
 SET     @test = DATETIME2FROMPARTS(2026, 6, 6, 2, 1, 1, 0, 7)
 

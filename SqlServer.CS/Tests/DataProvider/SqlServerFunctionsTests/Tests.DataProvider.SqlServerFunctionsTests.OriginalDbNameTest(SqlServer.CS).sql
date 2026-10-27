@@ -1,0 +1,4 @@
+﻿-- SqlServer.CS SqlServer.2025
+SELECT
+	ORIGINAL_DB_NAME()
+

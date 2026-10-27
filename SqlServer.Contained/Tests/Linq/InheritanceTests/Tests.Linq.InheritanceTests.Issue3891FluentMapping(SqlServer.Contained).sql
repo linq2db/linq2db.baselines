@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Type Int -- Int32
@@ -27,7 +27,7 @@ VALUES
 	@Name_Second
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT TOP (2)
 	[t1].[Type],
 	[t1].[Id],
@@ -37,7 +37,7 @@ SELECT TOP (2)
 FROM
 	[Base2] [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @Type Int -- Int32
 SET     @Type = 1
 DECLARE @ChildId Int -- Int32
@@ -59,7 +59,7 @@ SET
 WHERE
 	[Base2].[Id] = @Id
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT TOP (2)
 	[t1].[Type],
 	[t1].[Id],

@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DECLARE @Pk Int -- Int32
 SET     @Pk = 1
 DECLARE @Id Int -- Int32
@@ -19,7 +19,7 @@ VALUES
 	@TargetName
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @TaskId Int -- Int32
@@ -40,7 +40,7 @@ VALUES
 	@Actual
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT DISTINCT
 	[t].[Pk],
 	[t].[Id],

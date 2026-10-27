@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	DATETIMEFROMPARTS(2022, 2, 22, 0, 0, 0, 0)
 

@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Discriminator Int -- Int32
@@ -19,7 +19,7 @@ VALUES
 	@Value1
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Discriminator Int -- Int32
@@ -40,7 +40,7 @@ VALUES
 	@Value2
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 3
 DECLARE @Discriminator Int -- Int32
@@ -65,7 +65,7 @@ VALUES
 	@NullableBool
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Discriminator],
 	[t1].[Id],
@@ -78,7 +78,7 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT TOP (2)
 	[x].[Discriminator],
 	[x].[Id],
@@ -91,7 +91,7 @@ FROM
 WHERE
 	[x].[Discriminator] = 1
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT TOP (2)
 	[x].[Discriminator],
 	[x].[Id],
@@ -104,7 +104,7 @@ FROM
 WHERE
 	[x].[Discriminator] = 2
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT TOP (2)
 	[x].[Discriminator],
 	[x].[Id],
@@ -117,7 +117,7 @@ FROM
 WHERE
 	[x].[Discriminator] = 3
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT TOP (2)
 	[x].[Discriminator],
 	[x].[Id],
@@ -130,7 +130,7 @@ FROM
 WHERE
 	[x].[Value1] = N'Str1'
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT TOP (2)
 	[x].[Discriminator],
 	[x].[Id],
@@ -143,7 +143,7 @@ FROM
 WHERE
 	[x].[Value2] = N'Str2'
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT TOP (2)
 	[x].[Discriminator],
 	[x].[Id],

@@ -20,7 +20,7 @@ FROM [Issue5388Task]
 WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
 
 
--- SqlServer.2019
+-- SqlServer.2025
 DECLARE @IsArchived SmallInt -- Int16
 SET     @IsArchived = 0
 

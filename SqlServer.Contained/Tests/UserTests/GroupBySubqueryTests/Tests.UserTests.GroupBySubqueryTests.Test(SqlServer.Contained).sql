@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT DISTINCT
 	[a_Ref4].[Field6],
 	[a_Ref3].[Field4],
@@ -13,7 +13,7 @@ FROM
 WHERE
 	[t1].[Field3] IS NOT NULL
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[g_2].[Field6],
 	[g_2].[Field4],

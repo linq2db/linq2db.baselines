@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[s].[Id],
 	[s].[Value],
@@ -8,7 +8,7 @@ FROM
 WHERE
 	[s].[Id] > 3
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @param Int -- Int32
 SET     @param = 100
 DECLARE @ValueStr NVarChar(50) -- String
@@ -18,7 +18,7 @@ DELETE [s]
 OUTPUT
 	DELETED.[Id] + @param,
 	DELETED.[Value] + @param,
-	Coalesce(DELETED.[ValueStr], N'') + Coalesce(@ValueStr, N'')
+	Coalesce(DELETED.[ValueStr], N'') || Coalesce(@ValueStr, N'')
 INTO [DestinationTable]
 (
 	[Id],
@@ -30,7 +30,7 @@ FROM
 WHERE
 	[s].[Id] > 3
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value],

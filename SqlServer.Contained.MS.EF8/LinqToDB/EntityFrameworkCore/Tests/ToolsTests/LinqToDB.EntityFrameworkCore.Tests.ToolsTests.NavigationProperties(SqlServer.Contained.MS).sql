@@ -24,7 +24,7 @@ ORDER BY [o].[OrderID], [t].[OrderID], [t].[ProductID], [t0].[ProductID], [t1].[
 
 
 
--- SqlServer.2019
+-- SqlServer.2025
 SELECT
 	[m_1].[ProductId],
 	[d].[OrderID],
@@ -43,7 +43,7 @@ FROM
 
 
 
--- SqlServer.2019
+-- SqlServer.2025
 SELECT
 	[a_Product].[ProductID],
 	[od].[OrderID],

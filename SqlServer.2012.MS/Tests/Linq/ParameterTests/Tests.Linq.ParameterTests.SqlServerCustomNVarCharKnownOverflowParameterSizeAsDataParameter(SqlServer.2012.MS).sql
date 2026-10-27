@@ -3,11 +3,11 @@ DECLARE @p NVarChar(4000) -- String
 SET     @p = N'abcdeabcdeabcdeabcde1'
 
 SELECT
-	[t].[VarBinaryDataType],
-	[t].[VarcharDataType],
-	[t].[NVarcharDataType]
+	[t].[varbinaryDataType],
+	[t].[varcharDataType],
+	[t].[nvarcharDataType]
 FROM
 	[AllTypes] [t]
 WHERE
-	[t].[NVarcharDataType] = @p
+	[t].[nvarcharDataType] = @p
 

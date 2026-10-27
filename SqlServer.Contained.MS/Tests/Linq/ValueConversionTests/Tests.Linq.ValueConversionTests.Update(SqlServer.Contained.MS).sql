@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @Value2 NVarChar(200) -- String
 SET     @Value2 = N'[{"Value":"updated"}]'
 DECLARE @EnumWithNull VarChar(50) -- AnsiString
@@ -16,7 +16,7 @@ SET
 WHERE
 	[ValueConversion].[Id] = 1
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT TOP (1)
 	[e].[Id],
 	[e].[Value1],
@@ -33,7 +33,7 @@ FROM
 WHERE
 	[e].[Id] = 1
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @Value1 NVarChar(200) -- String
 SET     @Value1 = N'{"some":"updated2}"}'
 DECLARE @Value2 NVarChar(200) -- String
@@ -70,7 +70,7 @@ SET
 WHERE
 	[ValueConversion].[Id] = @Id
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT TOP (1)
 	[e].[Id],
 	[e].[Value1],
@@ -87,7 +87,7 @@ FROM
 WHERE
 	[e].[Id] = 2
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @Value1 NVarChar(200) -- String
 SET     @Value1 = NULL
 DECLARE @Value2 NVarChar(200) -- String
@@ -124,7 +124,7 @@ SET
 WHERE
 	[ValueConversion].[Id] = @Id
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT TOP (1)
 	[e].[Id],
 	[e].[Value1],

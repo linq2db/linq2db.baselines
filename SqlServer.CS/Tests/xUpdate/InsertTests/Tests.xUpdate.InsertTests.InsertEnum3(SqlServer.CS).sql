@@ -1,0 +1,40 @@
+﻿-- SqlServer.CS SqlServer.2025
+DELETE [t1]
+FROM
+	[Parent] [t1]
+WHERE
+	[t1].[ParentID] > 1000
+
+-- SqlServer.CS SqlServer.2025
+DECLARE @ParentID Int -- Int32
+SET     @ParentID = 1001
+
+INSERT INTO [Parent]
+(
+	[ParentID],
+	[Value1]
+)
+VALUES
+(
+	@ParentID,
+	1
+)
+
+-- SqlServer.CS SqlServer.2025
+DECLARE @id Int -- Int32
+SET     @id = 1001
+
+SELECT
+	COUNT(*)
+FROM
+	[Parent] [t1]
+WHERE
+	[t1].[ParentID] = @id
+
+-- SqlServer.CS SqlServer.2025
+DELETE [t1]
+FROM
+	[Parent] [t1]
+WHERE
+	[t1].[ParentID] > 1000
+

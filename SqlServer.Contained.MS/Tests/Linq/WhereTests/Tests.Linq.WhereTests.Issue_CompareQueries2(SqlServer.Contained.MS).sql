@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT TOP (2)
 	COUNT([p].[PersonID])
 FROM
@@ -13,7 +13,7 @@ WHERE
 			[p_1].[PersonID] IN (3)
 	)
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT TOP (2)
 	COUNT([p].[PersonID])
 FROM

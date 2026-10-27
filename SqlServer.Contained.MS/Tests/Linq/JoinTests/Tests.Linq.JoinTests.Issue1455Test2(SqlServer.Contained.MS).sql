@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @DeliveryCounterParty NVarChar(4000) -- String
 SET     @DeliveryCounterParty = N'%C%'
 

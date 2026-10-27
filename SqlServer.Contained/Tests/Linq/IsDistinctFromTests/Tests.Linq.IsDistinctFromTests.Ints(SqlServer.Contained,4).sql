@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DECLARE @value Int -- Int32
 SET     @value = 4
 
@@ -7,15 +7,9 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	NOT EXISTS(
-		SELECT
-			[s].[Int]
-		INTERSECT
-		SELECT
-			@value
-	)
+	[s].[Int] IS DISTINCT FROM @value
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @value Int -- Int32
 SET     @value = 4
 
@@ -24,15 +18,9 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	NOT EXISTS(
-		SELECT
-			[s].[NullableInt]
-		INTERSECT
-		SELECT
-			@value
-	)
+	[s].[NullableInt] IS DISTINCT FROM @value
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @value Int -- Int32
 SET     @value = 4
 
@@ -41,15 +29,9 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	EXISTS(
-		SELECT
-			[s].[Int]
-		INTERSECT
-		SELECT
-			@value
-	)
+	[s].[Int] IS NOT DISTINCT FROM @value
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @value Int -- Int32
 SET     @value = 4
 
@@ -58,11 +40,5 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	EXISTS(
-		SELECT
-			[s].[NullableInt]
-		INTERSECT
-		SELECT
-			@value
-	)
+	[s].[NullableInt] IS NOT DISTINCT FROM @value
 

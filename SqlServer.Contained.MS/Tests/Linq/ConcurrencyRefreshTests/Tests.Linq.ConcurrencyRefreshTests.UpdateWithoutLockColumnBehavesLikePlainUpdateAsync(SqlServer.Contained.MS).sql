@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Stamp Int -- Int32
@@ -19,7 +19,7 @@ VALUES
 	@Value
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @Stamp Int -- Int32
 SET     @Stamp = 5
 DECLARE @Value NVarChar(4000) -- String
@@ -35,7 +35,7 @@ SET
 WHERE
 	[ConcurrencyRefreshNoLock].[Id] = @Id
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT TOP (2)
 	[r].[Id],
 	[r].[Stamp],

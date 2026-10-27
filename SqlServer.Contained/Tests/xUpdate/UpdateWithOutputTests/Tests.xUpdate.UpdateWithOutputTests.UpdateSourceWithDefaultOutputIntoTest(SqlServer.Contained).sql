@@ -1,10 +1,10 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 UPDATE
 	[TableWithData]
 SET
 	[Id] = [TableWithData].[Id],
 	[Value] = [TableWithData].[Value] + 1,
-	[ValueStr] = Coalesce([TableWithData].[ValueStr], N'') + N'Upd'
+	[ValueStr] = Coalesce([TableWithData].[ValueStr], N'') || N'Upd'
 OUTPUT
 	INSERTED.[Id],
 	INSERTED.[Value],
@@ -18,7 +18,7 @@ INTO [destination]
 WHERE
 	[TableWithData].[Id] > 3
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value],

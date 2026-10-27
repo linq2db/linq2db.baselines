@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[k_1].[StatusBitmask] & 128,
 	Coalesce([g_1].[StatusBitmask], 0) & 128

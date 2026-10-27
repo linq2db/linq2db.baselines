@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @StartedOn DateTime2
@@ -19,7 +19,7 @@ VALUES
 	@FinishedOn
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @StartedOn DateTime2
@@ -40,7 +40,7 @@ VALUES
 	@FinishedOn
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[x].[Id]
 FROM
@@ -48,7 +48,7 @@ FROM
 WHERE
 	CAST((DateDiff_Big(day, [x].[StartedOn], [x].[FinishedOn]) * 86400) * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [x].[StartedOn], [x].[FinishedOn]) AS Int), [x].[StartedOn]), [x].[FinishedOn]) / 100 AS Float) / 36000000000 > 3
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[x].[Id]
 FROM
@@ -56,7 +56,7 @@ FROM
 WHERE
 	CAST((((DateDiff_Big(day, [x].[StartedOn], [x].[FinishedOn]) * 86400) * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [x].[StartedOn], [x].[FinishedOn]) AS Int), [x].[StartedOn]), [x].[FinishedOn]) / 100) / 36000000000) % 24 AS Int) = 1
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[x].[Id]
 FROM
@@ -64,7 +64,7 @@ FROM
 ORDER BY
 	(DateDiff_Big(day, [x].[StartedOn], [x].[FinishedOn]) * 86400) * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [x].[StartedOn], [x].[FinishedOn]) AS Int), [x].[StartedOn]), [x].[FinishedOn]) / 100 DESC
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	(DateDiff_Big(day, [x].[StartedOn], [x].[FinishedOn]) * 86400) * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [x].[StartedOn], [x].[FinishedOn]) AS Int), [x].[StartedOn]), [x].[FinishedOn]) / 100
 FROM
@@ -72,7 +72,7 @@ FROM
 ORDER BY
 	[x].[Id]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[r].[Id],
 	(DateDiff_Big(day, [r].[StartedOn], [r].[FinishedOn]) * 86400) * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r].[StartedOn], [r].[FinishedOn]) AS Int), [r].[StartedOn]), [r].[FinishedOn]) / 100

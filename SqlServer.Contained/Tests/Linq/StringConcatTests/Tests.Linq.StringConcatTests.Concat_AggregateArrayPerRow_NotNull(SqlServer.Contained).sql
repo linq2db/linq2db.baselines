@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t].[Id],
 	CONCAT_WS(N'', [t].[Str1], [t].[Str2], [t].[StrReq])
@@ -7,7 +7,7 @@ FROM
 ORDER BY
 	[t].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Str1],

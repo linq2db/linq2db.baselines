@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	IIF([p].[ParentID] = 1, IIF((
 		SELECT TOP (1)

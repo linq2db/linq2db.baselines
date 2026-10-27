@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT TOP (2)
 	CAST([v].[Integer] AS Decimal(18, 10)) / 33,
 	[v].[Decimal] / 33,
