@@ -1,6 +1,5 @@
 ﻿-- Firebird.4 Firebird4
 SELECT
-	CAST(0 AS Int),
 	"t1"."ParentID",
 	"t1"."ParentID",
 	"t1"."ChildID"
@@ -20,7 +19,6 @@ WHERE
 	"p"."ParentID" = 1
 UNION ALL
 SELECT
-	CAST(1 AS Int),
 	NULL,
 	NULL,
 	NULL
