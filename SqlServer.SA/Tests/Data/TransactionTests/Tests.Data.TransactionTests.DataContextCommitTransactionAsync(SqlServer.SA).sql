@@ -16,7 +16,6 @@ VALUES
 	@Value1
 )
 
-CommitTransactionAsync
 -- SqlServer.SA SqlServer.2019
 DELETE [t1]
 FROM

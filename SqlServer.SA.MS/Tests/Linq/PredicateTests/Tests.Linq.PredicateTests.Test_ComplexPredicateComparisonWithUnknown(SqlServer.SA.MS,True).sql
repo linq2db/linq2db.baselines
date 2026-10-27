@@ -257,7 +257,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	IIF((1=1), 1, 0) = IIF(CASE
+	IIF((1=1), 1, 0) = IIF((CASE
 		WHEN ([r].[Value1] = [r].[Value4]) THEN 1
 		WHEN NOT ([r].[Value1] = [r].[Value4]) THEN 0
 		ELSE NULL
@@ -305,7 +305,55 @@ WHERE
 		) = ([r].[Value5] + @cnt))
 			THEN 0
 		ELSE NULL
-	END IS NULL, 1, 0)
+	END IS NULL) AND NOT (CASE
+		WHEN ([r].[Value1] = [r].[Value4]) THEN 1
+		WHEN NOT ([r].[Value1] = [r].[Value4]) THEN 0
+		ELSE NULL
+	END IS NULL AND CASE
+		WHEN ((
+			SELECT
+				COUNT(*)
+			FROM
+				[BooleanTable] [r_1]
+			WHERE
+				[r_1].[Value1] = 1
+		) = ([r].[Value5] + @cnt))
+			THEN 1
+		WHEN NOT ((
+			SELECT
+				COUNT(*)
+			FROM
+				[BooleanTable] [r_1]
+			WHERE
+				[r_1].[Value1] = 1
+		) = ([r].[Value5] + @cnt))
+			THEN 0
+		ELSE NULL
+	END IS NOT NULL) AND NOT (CASE
+		WHEN ([r].[Value1] = [r].[Value4]) THEN 1
+		WHEN NOT ([r].[Value1] = [r].[Value4]) THEN 0
+		ELSE NULL
+	END IS NOT NULL AND CASE
+		WHEN ((
+			SELECT
+				COUNT(*)
+			FROM
+				[BooleanTable] [r_1]
+			WHERE
+				[r_1].[Value1] = 1
+		) = ([r].[Value5] + @cnt))
+			THEN 1
+		WHEN NOT ((
+			SELECT
+				COUNT(*)
+			FROM
+				[BooleanTable] [r_1]
+			WHERE
+				[r_1].[Value1] = 1
+		) = ([r].[Value5] + @cnt))
+			THEN 0
+		ELSE NULL
+	END IS NULL), 1, 0)
 
 -- SqlServer.SA.MS SqlServer.2019
 SELECT
@@ -330,7 +378,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	IIF((1=1), 1, 0) = IIF(CASE
+	IIF((1=1), 1, 0) = IIF((CASE
 		WHEN ([r].[Value1] <> [r].[Value4]) THEN 1
 		WHEN NOT ([r].[Value1] <> [r].[Value4]) THEN 0
 		ELSE NULL
@@ -378,7 +426,55 @@ WHERE
 		) = ([r].[Value5] + @cnt))
 			THEN 0
 		ELSE NULL
-	END IS NULL, 1, 0)
+	END IS NULL) AND NOT (CASE
+		WHEN ([r].[Value1] <> [r].[Value4]) THEN 1
+		WHEN NOT ([r].[Value1] <> [r].[Value4]) THEN 0
+		ELSE NULL
+	END IS NULL AND CASE
+		WHEN ((
+			SELECT
+				COUNT(*)
+			FROM
+				[BooleanTable] [r_1]
+			WHERE
+				[r_1].[Value1] = 1
+		) = ([r].[Value5] + @cnt))
+			THEN 1
+		WHEN NOT ((
+			SELECT
+				COUNT(*)
+			FROM
+				[BooleanTable] [r_1]
+			WHERE
+				[r_1].[Value1] = 1
+		) = ([r].[Value5] + @cnt))
+			THEN 0
+		ELSE NULL
+	END IS NOT NULL) AND NOT (CASE
+		WHEN ([r].[Value1] <> [r].[Value4]) THEN 1
+		WHEN NOT ([r].[Value1] <> [r].[Value4]) THEN 0
+		ELSE NULL
+	END IS NOT NULL AND CASE
+		WHEN ((
+			SELECT
+				COUNT(*)
+			FROM
+				[BooleanTable] [r_1]
+			WHERE
+				[r_1].[Value1] = 1
+		) = ([r].[Value5] + @cnt))
+			THEN 1
+		WHEN NOT ((
+			SELECT
+				COUNT(*)
+			FROM
+				[BooleanTable] [r_1]
+			WHERE
+				[r_1].[Value1] = 1
+		) = ([r].[Value5] + @cnt))
+			THEN 0
+		ELSE NULL
+	END IS NULL), 1, 0)
 
 -- SqlServer.SA.MS SqlServer.2019
 SELECT
@@ -781,7 +877,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	IIF((1=1), 1, 0) = IIF(CASE
+	IIF((1=1), 1, 0) = IIF((CASE
 		WHEN ([r].[Value1] = [r].[Value4]) THEN 1
 		WHEN NOT ([r].[Value1] = [r].[Value4]) THEN 0
 		ELSE NULL
@@ -853,7 +949,31 @@ WHERE
 		) = ([r].[Value5] + @cnt))
 			THEN 0
 		ELSE NULL
-	END IS NULL, 1, 0)
+	END IS NULL) AND NOT (CASE
+		WHEN ([r].[Value1] = [r].[Value4]) THEN 1
+		WHEN NOT ([r].[Value1] = [r].[Value4]) THEN 0
+		ELSE NULL
+	END IS NULL AND CASE
+		WHEN ((
+			SELECT
+				COUNT(*)
+			FROM
+				[BooleanTable] [r_1]
+			WHERE
+				[r_1].[Value1] = 1
+		) = ([r].[Value5] + @cnt))
+			THEN 1
+		WHEN NOT ((
+			SELECT
+				COUNT(*)
+			FROM
+				[BooleanTable] [r_1]
+			WHERE
+				[r_1].[Value1] = 1
+		) = ([r].[Value5] + @cnt))
+			THEN 0
+		ELSE NULL
+	END IS NULL), 1, 0)
 
 -- SqlServer.SA.MS SqlServer.2019
 SELECT
@@ -878,7 +998,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	IIF((1=1), 1, 0) = IIF(CASE
+	IIF((1=1), 1, 0) = IIF((CASE
 		WHEN ([r].[Value1] <> [r].[Value4]) THEN 1
 		WHEN NOT ([r].[Value1] <> [r].[Value4]) THEN 0
 		ELSE NULL
@@ -950,7 +1070,31 @@ WHERE
 		) = ([r].[Value5] + @cnt))
 			THEN 0
 		ELSE NULL
-	END IS NULL, 1, 0)
+	END IS NULL) AND NOT (CASE
+		WHEN ([r].[Value1] <> [r].[Value4]) THEN 1
+		WHEN NOT ([r].[Value1] <> [r].[Value4]) THEN 0
+		ELSE NULL
+	END IS NULL AND CASE
+		WHEN ((
+			SELECT
+				COUNT(*)
+			FROM
+				[BooleanTable] [r_1]
+			WHERE
+				[r_1].[Value1] = 1
+		) = ([r].[Value5] + @cnt))
+			THEN 1
+		WHEN NOT ((
+			SELECT
+				COUNT(*)
+			FROM
+				[BooleanTable] [r_1]
+			WHERE
+				[r_1].[Value1] = 1
+		) = ([r].[Value5] + @cnt))
+			THEN 0
+		ELSE NULL
+	END IS NULL), 1, 0)
 
 -- SqlServer.SA.MS SqlServer.2019
 SELECT
