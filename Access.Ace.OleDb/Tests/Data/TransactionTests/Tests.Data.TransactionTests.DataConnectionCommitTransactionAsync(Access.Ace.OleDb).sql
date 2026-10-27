@@ -16,7 +16,6 @@ VALUES
 	@Value1
 )
 
-CommitTransactionAsync
 -- Access.Ace.OleDb AccessOleDb
 DELETE FROM
 	[Parent] [t1]
