@@ -23,7 +23,6 @@ SET
 WHERE
 	t.ParentID = 1010
 
-CommitTransaction
 -- Informix.DB2 Informix
 SELECT FIRST 1
 	t.ParentID,
