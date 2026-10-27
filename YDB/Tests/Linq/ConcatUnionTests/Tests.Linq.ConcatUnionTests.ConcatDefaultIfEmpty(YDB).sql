@@ -1,6 +1,5 @@
 ﻿-- YDB Ydb
 SELECT
-	Unwrap(CAST(0 AS Int32)) as projection__set_id__,
 	t2.ParentID as ParentID,
 	t2.ParentID as ParentID_1,
 	t2.ChildID as ChildID
@@ -26,7 +25,6 @@ WHERE
 	p.ParentID = 1
 UNION ALL
 SELECT
-	Unwrap(CAST(1 AS Int32)) as projection__set_id__,
 	CAST(NULL AS Int32) as ParentID,
 	CAST(NULL AS Int32) as ParentID_1,
 	CAST(NULL AS Int32) as ChildID
