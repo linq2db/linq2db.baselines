@@ -23,7 +23,6 @@ SET
 WHERE
 	[t].[ParentID] = 1010
 
-CommitTransaction
 -- Access.Ace.Odbc AccessODBC
 SELECT TOP 1
 	[t].[ParentID],
