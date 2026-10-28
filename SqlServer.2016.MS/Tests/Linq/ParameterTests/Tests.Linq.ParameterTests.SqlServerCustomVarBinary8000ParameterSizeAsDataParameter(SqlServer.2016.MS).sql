@@ -3,11 +3,11 @@ DECLARE @p VarBinary(8000) -- Binary
 SET     @p = 0x01
 
 SELECT
-	[t].[varbinaryDataType],
-	[t].[varcharDataType],
-	[t].[nvarcharDataType]
+	[t].[VarBinaryDataType],
+	[t].[VarcharDataType],
+	[t].[NVarcharDataType]
 FROM
 	[AllTypes] [t]
 WHERE
-	[t].[varbinaryDataType] = @p
+	[t].[VarBinaryDataType] = @p
 
