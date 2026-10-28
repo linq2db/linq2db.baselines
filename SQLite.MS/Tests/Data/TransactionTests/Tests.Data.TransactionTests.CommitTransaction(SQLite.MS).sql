@@ -23,7 +23,6 @@ SET
 WHERE
 	[Parent].[ParentID] = 1010
 
-CommitTransaction
 -- SQLite.MS SQLite
 SELECT
 	[t].[ParentID],

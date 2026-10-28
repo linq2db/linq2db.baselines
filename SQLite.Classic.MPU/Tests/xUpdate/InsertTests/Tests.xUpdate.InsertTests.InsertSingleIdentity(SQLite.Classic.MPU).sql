@@ -6,7 +6,8 @@ DELETE FROM
 INSERT INTO [TestIdentity] DEFAULT VALUES
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-SELECT last_insert_rowid()
+SELECT
+	last_insert_rowid()
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DELETE FROM
