@@ -1,4 +1,4 @@
-﻿-- SqlServer.2019
+﻿-- SqlServer.2025
 CREATE TABLE [tempdb]..[#NoIdentity]
 (
 	[Id]   uniqueidentifier NOT NULL,
@@ -13,7 +13,7 @@ INSERT ASYNC BULK [tempdb]..[#NoIdentity](Id, Name)
 
 
 
--- SqlServer.2019
+-- SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Name]
@@ -22,7 +22,7 @@ FROM
 
 
 
--- SqlServer.2019
+-- SqlServer.2025
 DROP TABLE IF EXISTS [tempdb]..[#NoIdentity]
 
 
