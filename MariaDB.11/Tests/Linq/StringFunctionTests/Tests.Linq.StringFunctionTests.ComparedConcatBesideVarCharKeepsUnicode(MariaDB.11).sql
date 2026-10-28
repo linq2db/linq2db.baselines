@@ -34,5 +34,7 @@ SELECT
 FROM
 	`StringTypesTable` `t`
 WHERE
-	(CONCAT(Coalesce(`t`.`VarCharColumn`, ''), Coalesce(@suffix, ''))) LIKE `t`.`NVarCharColumn`
+	(CONCAT(Coalesce(`t`.`VarCharColumn`, ''), Coalesce(@suffix, ''))) NOT LIKE '%?%'
+ORDER BY
+	`t`.`Id`
 
