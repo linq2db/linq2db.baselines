@@ -267,7 +267,7 @@ WHERE
 		WHEN (1=1) THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
 	END = CASE
-		WHEN CASE
+		WHEN (CASE
 			WHEN (r.Value1 = r.Value4) THEN 't'::BOOLEAN
 			WHEN NOT (r.Value1 = r.Value4) THEN 'f'::BOOLEAN
 			ELSE NULL
@@ -315,7 +315,55 @@ WHERE
 			) = (r.Value5 + @cnt))
 				THEN 'f'::BOOLEAN
 			ELSE NULL
-		END IS NULL
+		END IS NULL) AND NOT (CASE
+			WHEN (r.Value1 = r.Value4) THEN 't'::BOOLEAN
+			WHEN NOT (r.Value1 = r.Value4) THEN 'f'::BOOLEAN
+			ELSE NULL
+		END IS NULL AND CASE
+			WHEN ((
+				SELECT
+					COUNT(*)
+				FROM
+					BooleanTable r_1
+				WHERE
+					r_1.Value1 = 1
+			) = (r.Value5 + @cnt))
+				THEN 't'::BOOLEAN
+			WHEN NOT ((
+				SELECT
+					COUNT(*)
+				FROM
+					BooleanTable r_1
+				WHERE
+					r_1.Value1 = 1
+			) = (r.Value5 + @cnt))
+				THEN 'f'::BOOLEAN
+			ELSE NULL
+		END IS NOT NULL) AND NOT (CASE
+			WHEN (r.Value1 = r.Value4) THEN 't'::BOOLEAN
+			WHEN NOT (r.Value1 = r.Value4) THEN 'f'::BOOLEAN
+			ELSE NULL
+		END IS NOT NULL AND CASE
+			WHEN ((
+				SELECT
+					COUNT(*)
+				FROM
+					BooleanTable r_1
+				WHERE
+					r_1.Value1 = 1
+			) = (r.Value5 + @cnt))
+				THEN 't'::BOOLEAN
+			WHEN NOT ((
+				SELECT
+					COUNT(*)
+				FROM
+					BooleanTable r_1
+				WHERE
+					r_1.Value1 = 1
+			) = (r.Value5 + @cnt))
+				THEN 'f'::BOOLEAN
+			ELSE NULL
+		END IS NULL)
 			THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
 	END
@@ -347,7 +395,7 @@ WHERE
 		WHEN (1=1) THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
 	END = CASE
-		WHEN CASE
+		WHEN (CASE
 			WHEN (r.Value1 <> r.Value4) THEN 't'::BOOLEAN
 			WHEN NOT (r.Value1 <> r.Value4) THEN 'f'::BOOLEAN
 			ELSE NULL
@@ -395,7 +443,55 @@ WHERE
 			) = (r.Value5 + @cnt))
 				THEN 'f'::BOOLEAN
 			ELSE NULL
-		END IS NULL
+		END IS NULL) AND NOT (CASE
+			WHEN (r.Value1 <> r.Value4) THEN 't'::BOOLEAN
+			WHEN NOT (r.Value1 <> r.Value4) THEN 'f'::BOOLEAN
+			ELSE NULL
+		END IS NULL AND CASE
+			WHEN ((
+				SELECT
+					COUNT(*)
+				FROM
+					BooleanTable r_1
+				WHERE
+					r_1.Value1 = 1
+			) = (r.Value5 + @cnt))
+				THEN 't'::BOOLEAN
+			WHEN NOT ((
+				SELECT
+					COUNT(*)
+				FROM
+					BooleanTable r_1
+				WHERE
+					r_1.Value1 = 1
+			) = (r.Value5 + @cnt))
+				THEN 'f'::BOOLEAN
+			ELSE NULL
+		END IS NOT NULL) AND NOT (CASE
+			WHEN (r.Value1 <> r.Value4) THEN 't'::BOOLEAN
+			WHEN NOT (r.Value1 <> r.Value4) THEN 'f'::BOOLEAN
+			ELSE NULL
+		END IS NOT NULL AND CASE
+			WHEN ((
+				SELECT
+					COUNT(*)
+				FROM
+					BooleanTable r_1
+				WHERE
+					r_1.Value1 = 1
+			) = (r.Value5 + @cnt))
+				THEN 't'::BOOLEAN
+			WHEN NOT ((
+				SELECT
+					COUNT(*)
+				FROM
+					BooleanTable r_1
+				WHERE
+					r_1.Value1 = 1
+			) = (r.Value5 + @cnt))
+				THEN 'f'::BOOLEAN
+			ELSE NULL
+		END IS NULL)
 			THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
 	END
@@ -839,7 +935,7 @@ WHERE
 		WHEN (1=1) THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
 	END = CASE
-		WHEN CASE
+		WHEN (CASE
 			WHEN (r.Value1 = r.Value4) THEN 't'::BOOLEAN
 			WHEN NOT (r.Value1 = r.Value4) THEN 'f'::BOOLEAN
 			ELSE NULL
@@ -911,7 +1007,31 @@ WHERE
 			) = (r.Value5 + @cnt))
 				THEN 'f'::BOOLEAN
 			ELSE NULL
-		END IS NULL
+		END IS NULL) AND NOT (CASE
+			WHEN (r.Value1 = r.Value4) THEN 't'::BOOLEAN
+			WHEN NOT (r.Value1 = r.Value4) THEN 'f'::BOOLEAN
+			ELSE NULL
+		END IS NULL AND CASE
+			WHEN ((
+				SELECT
+					COUNT(*)
+				FROM
+					BooleanTable r_1
+				WHERE
+					r_1.Value1 = 1
+			) = (r.Value5 + @cnt))
+				THEN 't'::BOOLEAN
+			WHEN NOT ((
+				SELECT
+					COUNT(*)
+				FROM
+					BooleanTable r_1
+				WHERE
+					r_1.Value1 = 1
+			) = (r.Value5 + @cnt))
+				THEN 'f'::BOOLEAN
+			ELSE NULL
+		END IS NULL)
 			THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
 	END
@@ -943,7 +1063,7 @@ WHERE
 		WHEN (1=1) THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
 	END = CASE
-		WHEN CASE
+		WHEN (CASE
 			WHEN (r.Value1 <> r.Value4) THEN 't'::BOOLEAN
 			WHEN NOT (r.Value1 <> r.Value4) THEN 'f'::BOOLEAN
 			ELSE NULL
@@ -1015,7 +1135,31 @@ WHERE
 			) = (r.Value5 + @cnt))
 				THEN 'f'::BOOLEAN
 			ELSE NULL
-		END IS NULL
+		END IS NULL) AND NOT (CASE
+			WHEN (r.Value1 <> r.Value4) THEN 't'::BOOLEAN
+			WHEN NOT (r.Value1 <> r.Value4) THEN 'f'::BOOLEAN
+			ELSE NULL
+		END IS NULL AND CASE
+			WHEN ((
+				SELECT
+					COUNT(*)
+				FROM
+					BooleanTable r_1
+				WHERE
+					r_1.Value1 = 1
+			) = (r.Value5 + @cnt))
+				THEN 't'::BOOLEAN
+			WHEN NOT ((
+				SELECT
+					COUNT(*)
+				FROM
+					BooleanTable r_1
+				WHERE
+					r_1.Value1 = 1
+			) = (r.Value5 + @cnt))
+				THEN 'f'::BOOLEAN
+			ELSE NULL
+		END IS NULL)
 			THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
 	END

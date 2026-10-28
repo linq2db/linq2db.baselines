@@ -49,7 +49,6 @@ ORDER BY
 
 INSERT BULK Parent(ParentID, Value1)
 
-CommitTransaction
 -- DuckDB
 DECLARE $ParentID  -- Int32
 SET     $ParentID = 1111
