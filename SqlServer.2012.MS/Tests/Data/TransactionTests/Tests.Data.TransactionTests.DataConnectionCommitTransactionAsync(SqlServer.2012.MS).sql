@@ -16,7 +16,6 @@ VALUES
 	@Value1
 )
 
-CommitTransactionAsync
 -- SqlServer.2012.MS SqlServer.2012
 DELETE [t1]
 FROM
