@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	COUNT([x_1].[Key2]),
 	COUNT([x_1].[Key1])

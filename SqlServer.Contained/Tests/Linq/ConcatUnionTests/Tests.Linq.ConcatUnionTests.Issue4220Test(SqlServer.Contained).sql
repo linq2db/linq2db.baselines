@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @AOnly NVarChar(4000) -- String
@@ -15,7 +15,7 @@ VALUES
 	@AOnly
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @BOnly NVarChar(4000) -- String
@@ -32,7 +32,7 @@ VALUES
 	@BOnly
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[e].[Id],
 	[e].[AOnly],

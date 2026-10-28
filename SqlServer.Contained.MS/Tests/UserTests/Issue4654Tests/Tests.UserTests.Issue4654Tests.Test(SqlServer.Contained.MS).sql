@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	CAST([c_1].[Id] AS NVarChar(11)),
 	[c_1].[Name]

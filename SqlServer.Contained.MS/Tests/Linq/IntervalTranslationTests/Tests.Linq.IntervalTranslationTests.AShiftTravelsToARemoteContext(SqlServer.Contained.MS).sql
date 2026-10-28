@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @StartedOn DateTime2
@@ -19,7 +19,7 @@ VALUES
 	@FinishedOn
 )
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[r].[Id]
 FROM

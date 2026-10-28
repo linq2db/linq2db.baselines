@@ -1,11 +1,11 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t].[ParentID],
 	[t].[Value1]
 FROM
 	[Parent] [t]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @param Int -- Int32
 SET     @param = 1
 

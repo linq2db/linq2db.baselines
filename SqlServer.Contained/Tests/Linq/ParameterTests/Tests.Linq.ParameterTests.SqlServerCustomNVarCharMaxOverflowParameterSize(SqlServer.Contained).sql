@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 DECLARE @NVarChar NVarChar -- String
 SET     @NVarChar = Tests.Linq.ParameterTests+NVarChar
 
@@ -11,7 +11,7 @@ VALUES
 	@NVarChar
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[t1].[VarBinary],
 	[t1].[VarChar],
@@ -19,7 +19,7 @@ SELECT
 FROM
 	[AllTypesCustomMaxLength] [t1]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @p NVarChar -- String
 SET     @p = Tests.Linq.ParameterTests+NVarChar
 

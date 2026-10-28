@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 DECLARE @Date DateTime2
 SET     @Date = DATETIME2FROMPARTS(2020, 2, 29, 0, 0, 0, 0, 7)
 DECLARE @dateTo DateTime2

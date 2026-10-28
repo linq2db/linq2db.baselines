@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 SELECT
 	[t].[ParentID],
 	[t].[ChildID]
@@ -16,7 +16,7 @@ WHERE
 			MAX([g_1].[ChildID]) DESC
 	)
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID]

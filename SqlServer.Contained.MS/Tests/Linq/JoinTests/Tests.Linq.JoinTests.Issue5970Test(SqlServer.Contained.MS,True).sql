@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[p].[PersonID],
 	IIF([m_2].[MiddleName] IS NULL, N'default2', [m_2].[MiddleName])
@@ -16,7 +16,7 @@ WHERE
 ORDER BY
 	[p].[PersonID]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

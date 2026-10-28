@@ -1,9 +1,9 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 SELECT TOP (2)
 	[e].[PersonID],
 	[e].[FirstName],
 	[e].[LastName],
-	[e].[FirstName] || N':' || [e].[LastName]
+	[e].[FirstName] + N':' + [e].[LastName]
 FROM
 	[Person] [e]
 WHERE

@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025
+﻿-- SqlServer.2019
 SELECT
 	[u].[Id]
 FROM
@@ -16,7 +16,7 @@ WHERE
 
 
 
--- SqlServer.2025
+-- SqlServer.2019
 SELECT
 	[u].[Id]
 FROM

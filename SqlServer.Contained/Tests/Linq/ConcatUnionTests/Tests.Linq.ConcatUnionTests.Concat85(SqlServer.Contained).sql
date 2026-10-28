@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 SELECT
 	[c_1].[ParentID],
 	Coalesce([c_1].[Value1], 0),

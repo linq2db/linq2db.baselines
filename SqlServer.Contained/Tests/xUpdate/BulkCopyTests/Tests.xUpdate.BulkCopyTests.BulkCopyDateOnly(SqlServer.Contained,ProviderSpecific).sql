@@ -1,6 +1,6 @@
 ﻿INSERT BULK [DateOnlyTable](Date)
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT TOP (2)
 	[t1].[Date]
 FROM

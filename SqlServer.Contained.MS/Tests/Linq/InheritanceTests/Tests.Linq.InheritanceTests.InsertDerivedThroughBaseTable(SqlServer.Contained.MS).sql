@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 INSERT INTO [InheritanceFilter]
 (
 	[Id],
@@ -12,7 +12,7 @@ VALUES
 	11
 )
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT TOP (2)
 	[t1].[Id],
 	[t1].[Code],

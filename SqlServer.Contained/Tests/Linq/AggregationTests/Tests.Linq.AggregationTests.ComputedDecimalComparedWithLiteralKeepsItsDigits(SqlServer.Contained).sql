@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 SELECT
 	COUNT(*)
 FROM
@@ -6,7 +6,7 @@ FROM
 WHERE
 	Abs([r].[Fine]) = 1.000000000005
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	COUNT(*)
 FROM
@@ -14,7 +14,7 @@ FROM
 WHERE
 	IIF([r].[Id] > 0, [r].[Fine], -[r].[Fine]) = 1.000000000005
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	COUNT(*)
 FROM
@@ -29,7 +29,7 @@ FROM
 			MAX([g_1].[Fine]) = 1.000000000005
 	) [t1]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	COUNT(*)
 FROM
@@ -37,7 +37,7 @@ FROM
 WHERE
 	Abs([r].[Wide]) = 12345678901234.50
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	COUNT(*)
 FROM
@@ -45,7 +45,7 @@ FROM
 WHERE
 	IIF([r].[Id] > 0, [r].[Wide], -[r].[Wide]) = 12345678901234.50
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	COUNT(*)
 FROM
@@ -60,7 +60,7 @@ FROM
 			MAX([g_1].[Wide]) = 12345678901234.50
 	) [t1]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	COUNT(*)
 FROM

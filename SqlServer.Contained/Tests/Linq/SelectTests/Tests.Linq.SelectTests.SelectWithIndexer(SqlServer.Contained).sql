@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 SELECT
 	[x].[FirstName],
 	[x].[LastName],
@@ -18,7 +18,7 @@ WHERE
 ORDER BY
 	[x].[PersonID] DESC
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

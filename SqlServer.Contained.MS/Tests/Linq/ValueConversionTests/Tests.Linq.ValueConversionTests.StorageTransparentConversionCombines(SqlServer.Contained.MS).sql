@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Marked Int -- Int32
@@ -19,7 +19,7 @@ VALUES
 	@Plain
 )
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Marked Int -- Int32
@@ -40,7 +40,7 @@ VALUES
 	@Plain
 )
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[r].[Id]
 FROM
@@ -48,7 +48,7 @@ FROM
 WHERE
 	[r].[Marked] = [r].[Plain]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[r].[Marked] + [r].[Plain]
 FROM

@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @String Char(6) -- AnsiStringFixedLength
@@ -19,7 +19,7 @@ VALUES
 	@NString
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @String Char(8) -- AnsiStringFixedLength
@@ -40,7 +40,7 @@ VALUES
 	@NString
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 3
 DECLARE @String Char(8) -- AnsiStringFixedLength
@@ -61,7 +61,7 @@ VALUES
 	@NString
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 4
 DECLARE @String Char(8) -- AnsiStringFixedLength
@@ -84,7 +84,7 @@ VALUES
 	@NString
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 5
 DECLARE @String Char(8) -- AnsiStringFixedLength
@@ -105,7 +105,7 @@ VALUES
 	@NString
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 6
 DECLARE @String Char(8) -- AnsiStringFixedLength
@@ -126,7 +126,7 @@ VALUES
 	@NString
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 7
 DECLARE @String Char(8) -- AnsiStringFixedLength
@@ -147,7 +147,7 @@ VALUES
 	@NString
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 8
 DECLARE @String Char(8) -- AnsiStringFixedLength
@@ -168,7 +168,7 @@ VALUES
 	@NString
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 9
 DECLARE @String Char(11) -- AnsiStringFixedLength
@@ -189,7 +189,7 @@ VALUES
 	@NString
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 10
 DECLARE @String Char(11) -- AnsiStringFixedLength
@@ -210,7 +210,7 @@ VALUES
 	@NString
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 11
 DECLARE @String Char(11) -- AnsiStringFixedLength
@@ -231,7 +231,7 @@ VALUES
 	@NString
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 12
 DECLARE @String Char(11) -- AnsiStringFixedLength
@@ -252,7 +252,7 @@ VALUES
 	@NString
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 13
 DECLARE @String Char(11) -- AnsiStringFixedLength
@@ -273,7 +273,7 @@ VALUES
 	@NString
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 14
 DECLARE @String Char(11) -- AnsiStringFixedLength
@@ -294,7 +294,7 @@ VALUES
 	@NString
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 15
 DECLARE @String Char(11) -- AnsiStringFixedLength
@@ -315,7 +315,7 @@ VALUES
 	@NString
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 16
 DECLARE @String Char(11) -- AnsiStringFixedLength
@@ -336,7 +336,7 @@ VALUES
 	@NString
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 17
 DECLARE @String Char(11) -- AnsiStringFixedLength
@@ -357,7 +357,7 @@ VALUES
 	@NString
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 18
 DECLARE @String Char(11) -- AnsiStringFixedLength
@@ -378,7 +378,7 @@ VALUES
 	@NString
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 19
 DECLARE @String Char(11) -- AnsiStringFixedLength
@@ -399,7 +399,7 @@ VALUES
 	@NString
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 20
 DECLARE @String Char(11) -- AnsiStringFixedLength
@@ -420,13 +420,13 @@ VALUES
 	@NString
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 21
 DECLARE @String Char(10) -- AnsiStringFixedLength
-SET     @String = N'test21' || char(0) || N'   '
+SET     @String = N'test21' + char(0) + N'   '
 DECLARE @NString NChar(8) -- StringFixedLength
-SET     @NString = N'test21' || char(0) || N' '
+SET     @NString = N'test21' + char(0) + N' '
 
 INSERT INTO [StringTestTable]
 (
@@ -441,7 +441,7 @@ VALUES
 	@NString
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 22
 DECLARE @String Char -- AnsiStringFixedLength
@@ -462,7 +462,7 @@ VALUES
 	@NString
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[t1].[Id],
 	[t1].[String],

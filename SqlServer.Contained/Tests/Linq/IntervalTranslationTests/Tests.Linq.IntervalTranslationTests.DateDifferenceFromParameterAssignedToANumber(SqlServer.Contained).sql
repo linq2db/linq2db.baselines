@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 DECLARE @asOf DateTime2
 SET     @asOf = DATETIME2FROMPARTS(2026, 1, 10, 8, 15, 30, 0, 7)
 
@@ -9,7 +9,7 @@ SET
 WHERE
 	[MeasuredPeriodRow].[Id] = 1
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT TOP (2)
 	[t1].[Id],
 	[t1].[ClosedOn],
@@ -17,7 +17,7 @@ SELECT TOP (2)
 FROM
 	[MeasuredPeriodRow] [t1]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @asOf DateTime2
 SET     @asOf = DATETIME2FROMPARTS(2026, 1, 10, 8, 15, 30, 0, 7)
 
@@ -28,7 +28,7 @@ FROM
 WHERE
 	[r].[Elapsed] < CAST((DateDiff_Big(day, [r].[ClosedOn], @asOf) * 86400) * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r].[ClosedOn], @asOf) AS Int), [r].[ClosedOn]), @asOf) / 100 AS Float) / 36000000000
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @asOf DateTime2
 SET     @asOf = DATETIME2FROMPARTS(2026, 1, 10, 8, 15, 30, 0, 7)
 
@@ -39,7 +39,7 @@ SET
 WHERE
 	[MeasuredPeriodRow].[Id] = 1
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT TOP (2)
 	[t1].[Id],
 	[t1].[ClosedOn],
@@ -47,7 +47,7 @@ SELECT TOP (2)
 FROM
 	[MeasuredPeriodRow] [t1]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @asOf DateTime2
 SET     @asOf = DATETIME2FROMPARTS(2026, 1, 10, 8, 15, 30, 0, 7)
 

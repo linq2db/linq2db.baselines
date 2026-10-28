@@ -1,12 +1,12 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 SELECT
 	[e].[Id]
 FROM
 	[ConcatTestEntity] [e]
 ORDER BY
-	Coalesce([e].[StrReq], N'') || N'X'
+	Coalesce([e].[StrReq], N'') + N'X'
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[t1].[Id],
 	[t1].[Str1],

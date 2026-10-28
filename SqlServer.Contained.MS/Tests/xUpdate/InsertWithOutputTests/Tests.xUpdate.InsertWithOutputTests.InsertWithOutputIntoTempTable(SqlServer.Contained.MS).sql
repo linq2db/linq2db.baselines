@@ -1,11 +1,11 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 DELETE [c_1]
 FROM
 	[Child] [c_1]
 WHERE
 	[c_1].[ChildID] > 1000
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 1001
 DECLARE @param Int -- Int32
@@ -32,14 +32,14 @@ FROM
 WHERE
 	[c_1].[ChildID] = 11
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[c_1].[ParentID],
 	[c_1].[ChildID]
 FROM
 	[tempdb]..[#TInserted] [c_1]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[c_1].[ParentID],
 	[c_1].[ChildID]
@@ -48,7 +48,7 @@ FROM
 WHERE
 	[c_1].[ChildID] > 1000
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DELETE [c_1]
 FROM
 	[Child] [c_1]

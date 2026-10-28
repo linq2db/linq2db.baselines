@@ -1,6 +1,6 @@
 ﻿
 
--- SqlServer.2025
+-- SqlServer.2019
 SELECT
 	[m_1].[ProductId],
 	[m_1].[OrderId],
@@ -24,7 +24,7 @@ FROM
 
 
 
--- SqlServer.2025
+-- SqlServer.2019
 SELECT
 	[m_1].[OrderID],
 	[d].[IsDeleted],
@@ -51,7 +51,7 @@ FROM
 
 
 
--- SqlServer.2025
+-- SqlServer.2019
 SELECT
 	[e].[IsDeleted],
 	[e].[OrderID],

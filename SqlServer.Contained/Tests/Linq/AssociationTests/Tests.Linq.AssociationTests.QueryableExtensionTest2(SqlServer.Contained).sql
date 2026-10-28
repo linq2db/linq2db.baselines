@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 SELECT
 	[a_QueryableParent].[ParentID],
 	[a_QueryableParent].[Value1]

@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @IntClassRequired Int -- Int32
@@ -75,7 +75,7 @@ VALUES
 	@IntStructNullableWithNull
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @IntClassRequired Int -- Int32
@@ -152,7 +152,7 @@ VALUES
 	@IntStructNullableWithNull
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[t1].[Id],
 	[t1].[IntClassRequired],

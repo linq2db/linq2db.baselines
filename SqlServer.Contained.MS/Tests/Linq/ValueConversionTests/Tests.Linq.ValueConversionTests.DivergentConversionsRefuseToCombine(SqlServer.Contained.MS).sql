@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Doubled Int -- Int32
@@ -23,7 +23,7 @@ VALUES
 	@Plain
 )
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @PlainValue Int -- Int32
 SET     @PlainValue = 10
 
@@ -37,7 +37,7 @@ SELECT TOP (2)
 FROM
 	[DivergentConversionRow] [r]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @Doubled Int -- Int32
 SET     @Doubled = 20
 

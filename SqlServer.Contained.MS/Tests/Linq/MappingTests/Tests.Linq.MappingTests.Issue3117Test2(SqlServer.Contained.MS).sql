@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 5
 
@@ -13,13 +13,13 @@ VALUES
 
 SELECT SCOPE_IDENTITY()
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[Id]
 FROM
 	[User] [t1]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @userId Int -- Int32
 SET     @userId = 5
 
@@ -30,7 +30,7 @@ FROM
 WHERE
 	[u].[Id] = @userId
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT TOP (1)
 	[u].[Id]
 FROM

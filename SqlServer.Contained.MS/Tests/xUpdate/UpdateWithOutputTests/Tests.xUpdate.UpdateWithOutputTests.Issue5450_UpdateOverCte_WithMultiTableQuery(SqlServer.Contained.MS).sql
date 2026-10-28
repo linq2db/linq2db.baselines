@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 WITH [CTE_1] ([Value_1], [Id])
 AS
 (
@@ -22,7 +22,7 @@ SET
 			[l].[Id] = [CTE_1].[Id]
 	)
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT TOP (2)
 	[s].[Id],
 	[s].[Value],

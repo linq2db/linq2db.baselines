@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 SELECT
 	[g_1].[Id],
 	SUM(Coalesce(CAST([a_Values].[Value] AS Int), 0))
@@ -8,7 +8,7 @@ FROM
 GROUP BY
 	[g_1].[Id]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -19,7 +19,7 @@ FROM
 	[Item] [m_1]
 		INNER JOIN [ItemValue] [d] ON [m_1].[Id] = [d].[ItemId]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[t1].[Id],
 	[t1].[Name]

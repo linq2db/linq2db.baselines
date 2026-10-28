@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @ID Int -- Int32
 SET     @ID = 1001
 
@@ -15,7 +15,7 @@ VALUES
 	200
 )
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 1001
 
@@ -27,7 +27,7 @@ SET
 WHERE
 	[LinqDataTypes].[ID] = @id
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 1001
 
@@ -39,7 +39,7 @@ SET
 WHERE
 	[LinqDataTypes].[ID] = @id
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 1001
 

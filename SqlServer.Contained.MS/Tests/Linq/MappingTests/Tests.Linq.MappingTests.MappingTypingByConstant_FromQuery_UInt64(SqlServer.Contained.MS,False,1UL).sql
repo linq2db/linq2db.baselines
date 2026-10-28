@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @value Decimal
 SET     @value = 1
 
@@ -14,7 +14,7 @@ FROM
 			[Person] [r]
 	) [t1]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @value Decimal
 SET     @value = 2147483648
 

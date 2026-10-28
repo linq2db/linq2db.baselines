@@ -1,19 +1,19 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 DELETE [t1]
 FROM
 	[Parent] [t1]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DELETE [t1]
 FROM
 	[Child] [t1]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DELETE [t1]
 FROM
 	[GrandChild] [t1]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 
@@ -26,7 +26,7 @@ VALUES
 	@Id
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 
@@ -39,7 +39,7 @@ VALUES
 	@Id
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 10
 
@@ -52,7 +52,7 @@ VALUES
 	@Id
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 20
 
@@ -65,7 +65,7 @@ VALUES
 	@Id
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 11
 DECLARE @LeftId Int -- Int32
@@ -86,7 +86,7 @@ VALUES
 	@RightId
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 MERGE INTO [GrandChild] [Target]
 USING (
 	SELECT
@@ -111,7 +111,7 @@ VALUES
 )
 ;
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[t1].[GrandChildID],
 	[t1].[ParentID],

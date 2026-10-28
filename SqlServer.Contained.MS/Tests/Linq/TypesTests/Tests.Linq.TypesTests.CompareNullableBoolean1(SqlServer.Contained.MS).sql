@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t].[ID],
 	[t].[MoneyValue],
@@ -11,7 +11,7 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @param Bit -- Boolean
 SET     @param = 1
 

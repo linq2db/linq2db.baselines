@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 SELECT
 	[t].[Id],
 	LEAD(IIF([t].[IntValue] = 20, 1, 0)) OVER (ORDER BY [t].[Id]),

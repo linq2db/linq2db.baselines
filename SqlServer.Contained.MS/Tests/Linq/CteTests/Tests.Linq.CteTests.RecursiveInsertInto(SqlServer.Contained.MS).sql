@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 WITH [CTE_1] ([Id])
 AS
 (
@@ -45,7 +45,7 @@ SELECT
 FROM
 	[hierarchyDown] [t4]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[Id],
 	[t1].[Level]

@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Elapsed BigInt -- Int64
@@ -15,14 +15,14 @@ VALUES
 	@Elapsed
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT TOP (2)
 	[t1].[Id],
 	[t1].[Elapsed]
 FROM
 	[DynamicDurationRow] [t1]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT TOP (2)
 	CAST([r].[Elapsed] AS Float) / 60
 FROM

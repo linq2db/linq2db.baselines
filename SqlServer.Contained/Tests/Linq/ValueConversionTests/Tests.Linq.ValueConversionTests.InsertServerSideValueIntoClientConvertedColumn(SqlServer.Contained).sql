@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 INSERT INTO [Issue5975Row]
 (
 	[Id],
@@ -12,7 +12,7 @@ VALUES
 	CURRENT_TIMESTAMP
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT TOP (2)
 	[t1].[Id],
 	[t1].[Plain],

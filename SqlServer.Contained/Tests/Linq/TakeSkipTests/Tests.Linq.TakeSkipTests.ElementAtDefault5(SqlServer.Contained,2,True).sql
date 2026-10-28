@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 DECLARE @skip Int -- Int32
 SET     @skip = 2
 
@@ -14,7 +14,7 @@ ORDER BY
 	[t1].[LastName]
 OFFSET @skip ROWS FETCH NEXT 1 ROWS ONLY 
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @skip Int -- Int32
 SET     @skip = 2
 

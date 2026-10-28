@@ -1,9 +1,9 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 DELETE [t1]
 FROM
 	[InheritanceParent] [t1]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 MERGE INTO [InheritanceParent] [t1]
 USING (SELECT 143 AS [InheritanceParentId], NULL AS [Name]) [s] ON
 (
@@ -28,13 +28,13 @@ WHEN NOT MATCHED THEN
 		1
 	);
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	COUNT(*)
 FROM
 	[InheritanceParent] [t1]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 MERGE INTO [InheritanceParent] [t1]
 USING (SELECT 143 AS [InheritanceParentId], NULL AS [Name]) [s] ON
 (
@@ -59,7 +59,7 @@ WHEN NOT MATCHED THEN
 		1
 	);
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	COUNT(*)
 FROM

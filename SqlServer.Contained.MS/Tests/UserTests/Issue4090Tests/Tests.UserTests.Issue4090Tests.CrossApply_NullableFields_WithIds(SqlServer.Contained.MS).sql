@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t3].[NAME3],
 	[t2].[Id2],
@@ -30,7 +30,7 @@ FROM
 ORDER BY
 	[t3].[ID3]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[ID3],
 	[t1].[PARENTID3],
@@ -38,7 +38,7 @@ SELECT
 FROM
 	[TABLE3] [t1]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[ID2],
 	[t1].[PARENTID2],
@@ -46,7 +46,7 @@ SELECT
 FROM
 	[TABLE2] [t1]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[ID1],
 	[t1].[NAME1]

@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[c_1].[ParentID],
 	[c_1].[ChildID],
@@ -15,7 +15,7 @@ WHERE
 			[c_1].[ParentID] = [p].[Value1] OR [c_1].[ParentID] IS NULL AND [p].[Value1] IS NULL
 	)
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID],
@@ -23,7 +23,7 @@ SELECT
 FROM
 	[GrandChild] [t1]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

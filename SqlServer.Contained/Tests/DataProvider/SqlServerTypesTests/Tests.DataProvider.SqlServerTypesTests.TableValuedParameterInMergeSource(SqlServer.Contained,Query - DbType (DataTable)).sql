@@ -1,11 +1,11 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 CREATE TABLE [tempdb]..[#TestMergeTVPTable]
 (
 	[Id]   Int            NOT NULL,
 	[Name] NVarChar(4000)     NULL
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @table [dbo].[TestTableType] -- Structured -- Object
 SET     @table = 
 
@@ -38,7 +38,7 @@ VALUES
 )
 ;
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[t1].[Id],
 	[t1].[Name]
@@ -47,6 +47,6 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DROP TABLE IF EXISTS [tempdb]..[#TestMergeTVPTable]
 

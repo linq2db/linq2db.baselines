@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],
@@ -11,7 +11,7 @@ FROM
 			(3), (4)
 		) [n]([ID]) ON [p].[PersonID] = [n].[ID]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],

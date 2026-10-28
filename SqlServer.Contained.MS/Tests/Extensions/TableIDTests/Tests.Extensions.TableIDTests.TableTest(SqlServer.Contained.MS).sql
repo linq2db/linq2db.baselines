@@ -1,6 +1,6 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT
-	'*** p ***' || N'4',
+	'*** p ***' + N'4',
 	'*** p ***',
 	'*** [Parent] ***',
 	'*** p_1.p ***'

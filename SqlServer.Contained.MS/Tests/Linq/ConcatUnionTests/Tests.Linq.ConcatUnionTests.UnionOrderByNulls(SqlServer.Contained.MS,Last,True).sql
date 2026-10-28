@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 3
 
@@ -27,7 +27,7 @@ ORDER BY
 	[t1].[Value1] DESC,
 	[t1].[ParentID]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

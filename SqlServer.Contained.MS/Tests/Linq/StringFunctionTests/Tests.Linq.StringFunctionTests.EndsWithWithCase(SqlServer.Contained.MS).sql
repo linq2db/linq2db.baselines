@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	COUNT(*)
 FROM
@@ -8,7 +8,7 @@ WHERE
 	Convert(VarBinary(8000), RIGHT([p].[Diagnosis], LEN(N'Persecution'))) = Convert(VarBinary(8000), N'Persecution') AND
 	[p].[PersonID] = 2
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	COUNT(*)
 FROM
@@ -17,7 +17,7 @@ WHERE
 	([p].[Diagnosis] NOT LIKE N'%Persecution' ESCAPE N'~' OR Convert(VarBinary(8000), RIGHT([p].[Diagnosis], LEN(N'Persecution'))) <> Convert(VarBinary(8000), N'Persecution')) AND
 	[p].[PersonID] = 2
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	COUNT(*)
 FROM
@@ -27,7 +27,7 @@ WHERE
 	Convert(VarBinary(8000), RIGHT([p].[Diagnosis], LEN(N'persecution'))) = Convert(VarBinary(8000), N'persecution') AND
 	[p].[PersonID] = 2
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	COUNT(*)
 FROM

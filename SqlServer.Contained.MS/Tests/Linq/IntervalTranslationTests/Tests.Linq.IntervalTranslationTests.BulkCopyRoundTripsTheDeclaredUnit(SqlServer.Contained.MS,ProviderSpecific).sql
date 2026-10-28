@@ -1,6 +1,6 @@
 ﻿INSERT BULK [DurationRow](Id, InSeconds, InTicks, Undeclared, UndeclaredSeconds)
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT TOP (2)
 	[t1].[Id],
 	[t1].[InSeconds],

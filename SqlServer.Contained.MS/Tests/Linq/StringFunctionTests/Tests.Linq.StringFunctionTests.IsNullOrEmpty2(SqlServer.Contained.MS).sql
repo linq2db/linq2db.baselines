@@ -1,6 +1,6 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT
-	IIF(LEN([p].[FirstName] || N'.') = 1, 1, 0)
+	IIF(LEN([p].[FirstName] + N'.') = 1, 1, 0)
 FROM
 	[Person] [p]
 WHERE

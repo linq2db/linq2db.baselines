@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @Value Int -- Int32
 SET     @Value = 1
 
@@ -11,7 +11,7 @@ VALUES
 	@Value
 )
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 INSERT INTO [TableWithIdentity]
 (
 	[Value]
@@ -21,7 +21,7 @@ SELECT
 FROM
 	[TableWithIdentitySrc] [t1]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[Id],
 	[t1].[Value]

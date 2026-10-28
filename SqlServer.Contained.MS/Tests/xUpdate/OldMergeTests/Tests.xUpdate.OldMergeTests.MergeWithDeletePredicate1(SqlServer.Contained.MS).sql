@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t].[ID],
 	[t].[MoneyValue],
@@ -15,7 +15,7 @@ FROM
 WHERE
 	[t].[ID] > 5
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 MERGE INTO [LinqDataTypes] [Target]
 USING (
 	SELECT

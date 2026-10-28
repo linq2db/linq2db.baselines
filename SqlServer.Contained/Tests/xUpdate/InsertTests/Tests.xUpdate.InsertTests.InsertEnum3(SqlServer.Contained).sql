@@ -1,11 +1,11 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 DELETE [t1]
 FROM
 	[Parent] [t1]
 WHERE
 	[t1].[ParentID] > 1000
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1001
 
@@ -20,7 +20,7 @@ VALUES
 	1
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 1001
 
@@ -31,7 +31,7 @@ FROM
 WHERE
 	[t1].[ParentID] = @id
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DELETE [t1]
 FROM
 	[Parent] [t1]

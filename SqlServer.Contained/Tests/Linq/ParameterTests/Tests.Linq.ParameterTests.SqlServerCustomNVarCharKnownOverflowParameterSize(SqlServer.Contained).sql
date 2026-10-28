@@ -1,13 +1,13 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 DECLARE @p NVarChar -- String
 SET     @p = Tests.Linq.ParameterTests+NVarChar
 
 SELECT
-	[t].[varbinaryDataType],
-	[t].[varcharDataType],
-	[t].[nvarcharDataType]
+	[t].[VarBinaryDataType],
+	[t].[VarcharDataType],
+	[t].[NVarcharDataType]
 FROM
 	[AllTypes] [t]
 WHERE
-	[t].[nvarcharDataType] = @p
+	[t].[NVarcharDataType] = @p
 

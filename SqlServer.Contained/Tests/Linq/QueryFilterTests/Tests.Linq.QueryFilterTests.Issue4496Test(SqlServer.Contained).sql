@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 SELECT DISTINCT
 	[x].[ParentID],
 	[x].[ChildID]
@@ -8,7 +8,7 @@ FROM
 WHERE
 	[x].[ChildID] > 30
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT DISTINCT
 	[x].[ParentID],
 	[x].[ChildID]

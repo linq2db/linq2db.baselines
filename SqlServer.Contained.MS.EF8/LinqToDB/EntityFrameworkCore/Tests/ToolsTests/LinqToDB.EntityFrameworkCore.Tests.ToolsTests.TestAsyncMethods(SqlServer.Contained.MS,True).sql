@@ -26,7 +26,7 @@ SELECT CASE
 END
 
 
--- SqlServer.2025
+-- SqlServer.2019
 SELECT
 	[e].[IsDeleted],
 	[e].[ProductID],
@@ -46,7 +46,7 @@ WHERE
 
 
 
--- SqlServer.2025
+-- SqlServer.2019
 SELECT
 	[e].[IsDeleted],
 	[e].[ProductID],
@@ -66,7 +66,7 @@ WHERE
 
 
 
--- SqlServer.2025
+-- SqlServer.2019
 SELECT
 	[e].[IsDeleted],
 	[e].[ProductID],
@@ -86,7 +86,7 @@ WHERE
 
 
 
--- SqlServer.2025
+-- SqlServer.2019
 SELECT
 	IIF(EXISTS(
 		SELECT

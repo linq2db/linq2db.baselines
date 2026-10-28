@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 INSERT INTO [Issue3323Table]
 (
 	[Id],
@@ -14,10 +14,10 @@ VALUES
 	N'text'
 )
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[r].[Id],
-	Coalesce([r].[FirstName], N'') || N' ' || Coalesce([r].[LastName], N'')
+	Coalesce([r].[FirstName], N'') + N' ' + Coalesce([r].[LastName], N'')
 FROM
 	[Issue3323Table] [r]
 UNION ALL
@@ -27,7 +27,7 @@ SELECT
 FROM
 	[Issue3323Table] [r_1]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[r].[Id] + 1,
 	[r].[Text]
@@ -36,7 +36,7 @@ FROM
 UNION ALL
 SELECT
 	[r_1].[Id],
-	Coalesce([r_1].[FirstName], N'') || N' ' || Coalesce([r_1].[LastName], N'')
+	Coalesce([r_1].[FirstName], N'') + N' ' + Coalesce([r_1].[LastName], N'')
 FROM
 	[Issue3323Table] [r_1]
 

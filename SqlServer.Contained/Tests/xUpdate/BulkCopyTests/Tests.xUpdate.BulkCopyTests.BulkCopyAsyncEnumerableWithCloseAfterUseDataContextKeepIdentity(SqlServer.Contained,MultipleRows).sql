@@ -1,7 +1,7 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 SET IDENTITY_INSERT [IdentitySimpleBulkCopyTable] ON
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 INSERT INTO [IdentitySimpleBulkCopyTable]
 (
 	[Id]
@@ -9,6 +9,6 @@ INSERT INTO [IdentitySimpleBulkCopyTable]
 VALUES
 (2)
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SET IDENTITY_INSERT [IdentitySimpleBulkCopyTable] OFF
 

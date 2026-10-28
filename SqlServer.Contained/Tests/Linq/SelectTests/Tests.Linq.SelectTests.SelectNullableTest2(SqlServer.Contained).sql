@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 DECLARE @ID Int -- Int32
 SET     @ID = 1000
 DECLARE @MoneyValue Decimal(1, 0)
@@ -47,7 +47,7 @@ VALUES
 	@StringValue
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT TOP (1)
 	[t1].[ID],
 	[t1].[MoneyValue],
@@ -62,7 +62,7 @@ FROM
 WHERE
 	[t1].[ID] = 1000
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DELETE [t1]
 FROM
 	[LinqDataTypes] [t1]

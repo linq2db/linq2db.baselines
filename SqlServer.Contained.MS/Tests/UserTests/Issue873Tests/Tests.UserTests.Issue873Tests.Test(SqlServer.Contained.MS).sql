@@ -1,6 +1,6 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT
-	N' ' || CAST(Coalesce([f].[Value1], 0) AS NVarChar(11)),
+	N' ' + CAST(Coalesce([f].[Value1], 0) AS NVarChar(11)),
 	Coalesce([t2].[SubSum], 0),
 	IIF(EXISTS(
 		SELECT
@@ -37,6 +37,6 @@ FROM
 				) [t1]
 		) [t2]
 WHERE
-	(N' ' || CAST(Coalesce([f].[Value1], 0) AS NVarChar(11))) LIKE N'%1%' ESCAPE N'~' AND
+	(N' ' + CAST(Coalesce([f].[Value1], 0) AS NVarChar(11))) LIKE N'%1%' ESCAPE N'~' AND
 	Coalesce([t2].[SubSum], 0) > 0
 

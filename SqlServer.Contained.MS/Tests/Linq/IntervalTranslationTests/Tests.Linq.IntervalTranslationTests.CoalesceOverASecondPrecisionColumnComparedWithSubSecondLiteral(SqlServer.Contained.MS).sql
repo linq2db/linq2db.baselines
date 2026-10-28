@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @StartedOn DateTime
@@ -19,7 +19,7 @@ VALUES
 	@FinishedOn
 )
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @StartedOn DateTime
@@ -40,7 +40,7 @@ VALUES
 	@FinishedOn
 )
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	COUNT(*)
 FROM
@@ -48,7 +48,7 @@ FROM
 WHERE
 	Coalesce([r].[FinishedOn], [r].[StartedOn]) < DATETIME2FROMPARTS(2026, 6, 1, 10, 0, 0, 5000000, 7)
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	COUNT(*)
 FROM
@@ -56,7 +56,7 @@ FROM
 WHERE
 	DATETIME2FROMPARTS(2026, 6, 1, 10, 0, 0, 5000000, 7) > Coalesce([r].[FinishedOn], [r].[StartedOn])
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	COUNT(*)
 FROM

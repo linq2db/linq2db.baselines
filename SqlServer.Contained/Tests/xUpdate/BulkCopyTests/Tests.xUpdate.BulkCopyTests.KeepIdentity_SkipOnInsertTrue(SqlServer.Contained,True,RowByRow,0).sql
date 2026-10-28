@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 DECLARE @Value Int -- Int32
 SET     @Value = 0
 
@@ -13,7 +13,7 @@ VALUES
 
 SELECT SCOPE_IDENTITY()
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @lastId Int -- Int32
 SET     @lastId = 3
 

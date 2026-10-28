@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 MERGE INTO [TableWithIdentity] [Target]
 USING (VALUES
 	(1,2)

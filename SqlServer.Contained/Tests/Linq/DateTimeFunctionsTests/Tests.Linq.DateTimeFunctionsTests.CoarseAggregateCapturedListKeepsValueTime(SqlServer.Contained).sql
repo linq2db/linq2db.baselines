@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Value DateTime
@@ -23,7 +23,7 @@ VALUES
 	@Wide
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	COUNT(*)
 FROM
@@ -38,7 +38,7 @@ FROM
 WHERE
 	[t1].[Max_1] IN (DATETIME2FROMPARTS(2026, 6, 1, 10, 0, 0, 5000000, 7))
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	COUNT(*)
 FROM

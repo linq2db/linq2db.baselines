@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 WITH [CTE_1] ([ParentID])
 AS
 (
@@ -17,7 +17,7 @@ FROM
 	[CteChild] [c_2]
 		INNER JOIN [CTE_1] [ct] ON [ct].[ParentID] = [c_2].[ParentID]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[c_1].[ChildID],
 	[c_1].[ParentID]
@@ -26,7 +26,7 @@ FROM
 WHERE
 	[c_1].[ParentID] % 2 = 0
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[c_1].[ChildID]
 FROM

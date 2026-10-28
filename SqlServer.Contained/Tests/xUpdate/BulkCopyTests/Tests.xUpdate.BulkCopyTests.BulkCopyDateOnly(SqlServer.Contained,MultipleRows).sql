@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 INSERT INTO [DateOnlyTable]
 (
 	[Date]
@@ -6,7 +6,7 @@ INSERT INTO [DateOnlyTable]
 VALUES
 (DATEFROMPARTS(2021, 1, 1))
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT TOP (2)
 	[t1].[Date]
 FROM

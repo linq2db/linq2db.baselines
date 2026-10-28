@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],
@@ -19,7 +19,7 @@ WHERE
 			[v].[item] = [p].[PersonID]
 	)
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

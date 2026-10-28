@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 SELECT
 	IIF([a_Patient].[PersonID] IS NOT NULL, 1, 0)
 FROM

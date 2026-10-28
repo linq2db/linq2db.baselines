@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 DECLARE @arr Int -- Int32
 SET     @arr = 2
 
@@ -18,7 +18,7 @@ FROM
 WHERE
 	[p_1].[PersonID] = 2
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

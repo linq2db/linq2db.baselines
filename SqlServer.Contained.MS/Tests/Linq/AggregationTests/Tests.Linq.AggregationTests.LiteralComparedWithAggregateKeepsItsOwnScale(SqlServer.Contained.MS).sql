@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	COUNT(*)
 FROM
@@ -13,7 +13,7 @@ FROM
 			MAX([g_1].[Value]) = 1.004
 	) [t1]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	COUNT(*)
 FROM
@@ -28,7 +28,7 @@ FROM
 			MAX([g_1].[Value]) < 1.004
 	) [t1]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	COUNT(*)
 FROM

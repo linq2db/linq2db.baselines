@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	COUNT(IIF([g_1].[ParentID] < 2, 1, NULL))
 FROM

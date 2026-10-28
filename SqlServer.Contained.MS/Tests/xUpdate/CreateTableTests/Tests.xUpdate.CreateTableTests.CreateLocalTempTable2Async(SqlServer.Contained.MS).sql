@@ -1,7 +1,7 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 DROP TABLE [tempdb]..[#TestTable]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 CREATE TABLE [tempdb]..[#TestTable]
 (
 	[ID]        Int            NOT NULL,
@@ -10,7 +10,7 @@ CREATE TABLE [tempdb]..[#TestTable]
 	[CreatedOn] DateTime2          NULL
 )
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[ID],
 	[t1].[Field1],
@@ -19,6 +19,6 @@ SELECT
 FROM
 	[tempdb]..[#TestTable] [t1]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DROP TABLE [tempdb]..[#TestTable]
 

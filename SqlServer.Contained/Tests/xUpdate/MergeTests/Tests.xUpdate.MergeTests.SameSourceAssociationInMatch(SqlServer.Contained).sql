@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 MERGE INTO [Person] [Target]
 USING (
 	SELECT
@@ -30,7 +30,7 @@ SET
 	[MiddleName] = N'R.I.P.'
 ;
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

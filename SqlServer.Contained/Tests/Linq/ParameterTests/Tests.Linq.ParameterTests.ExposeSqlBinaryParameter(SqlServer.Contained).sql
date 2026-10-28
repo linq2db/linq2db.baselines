@@ -1,14 +1,14 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 DECLARE @p VarBinary(8000) -- Binary
 SET     @p = 0x000102
 
 SELECT
-	[t].[decimalDataType],
-	[t].[binaryDataType],
-	[t].[varbinaryDataType],
-	[t].[varcharDataType]
+	[t].[DecimalDataType],
+	[t].[BinaryDataType],
+	[t].[VarBinaryDataType],
+	[t].[VarcharDataType]
 FROM
 	[AllTypes] [t]
 WHERE
-	[t].[binaryDataType] = @p
+	[t].[BinaryDataType] = @p
 

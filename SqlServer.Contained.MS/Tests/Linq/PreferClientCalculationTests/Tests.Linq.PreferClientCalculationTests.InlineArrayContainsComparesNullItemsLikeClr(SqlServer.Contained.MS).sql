@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[e].[Id],
 	[e].[Item],
@@ -9,7 +9,7 @@ WHERE
 	[e].[Tested] = [e].[Item] OR [e].[Tested] IS NULL AND [e].[Item] IS NULL OR
 	[e].[Tested] = 5
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[Id],
 	[t1].[Item],
@@ -17,7 +17,7 @@ SELECT
 FROM
 	[NullableItemEntity] [t1]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[e].[Id],
 	[e].[Item],
@@ -27,7 +27,7 @@ FROM
 WHERE
 	NOT (([e].[Tested] = [e].[Item] OR [e].[Tested] IS NULL AND [e].[Item] IS NULL) AND NOT ([e].[Tested] IS NULL AND [e].[Item] IS NOT NULL) AND NOT ([e].[Tested] IS NOT NULL AND [e].[Item] IS NULL) OR [e].[Tested] = 5 AND [e].[Tested] IS NOT NULL)
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[Id],
 	[t1].[Item],
@@ -35,7 +35,7 @@ SELECT
 FROM
 	[NullableItemEntity] [t1]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[e].[Id],
 	[e].[Item],
@@ -46,7 +46,7 @@ WHERE
 	[e].[Tested] = [e].[Item] OR [e].[Tested] IS NULL AND [e].[Item] IS NULL OR
 	[e].[Tested] = 5
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[Id],
 	[t1].[Item],
@@ -54,7 +54,7 @@ SELECT
 FROM
 	[NullableItemEntity] [t1]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[e].[Id],
 	[e].[Item],
@@ -64,7 +64,7 @@ FROM
 WHERE
 	NOT (([e].[Tested] = [e].[Item] OR [e].[Tested] IS NULL AND [e].[Item] IS NULL) AND NOT ([e].[Tested] IS NULL AND [e].[Item] IS NOT NULL) AND NOT ([e].[Tested] IS NOT NULL AND [e].[Item] IS NULL) OR [e].[Tested] = 5 AND [e].[Tested] IS NOT NULL)
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[Id],
 	[t1].[Item],
@@ -72,7 +72,7 @@ SELECT
 FROM
 	[NullableItemEntity] [t1]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[e].[Id],
 	[e].[Item],
@@ -83,7 +83,7 @@ WHERE
 	[e].[Tested] = [e].[Item] OR [e].[Tested] IS NULL AND [e].[Item] IS NULL OR
 	[e].[Tested] = 5
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[Id],
 	[t1].[Item],
@@ -91,7 +91,7 @@ SELECT
 FROM
 	[NullableItemEntity] [t1]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[e].[Id],
 	[e].[Item],
@@ -101,7 +101,7 @@ FROM
 WHERE
 	NOT (([e].[Tested] = [e].[Item] OR [e].[Tested] IS NULL AND [e].[Item] IS NULL) AND NOT ([e].[Tested] IS NULL AND [e].[Item] IS NOT NULL) AND NOT ([e].[Tested] IS NOT NULL AND [e].[Item] IS NULL) OR [e].[Tested] = 5 AND [e].[Tested] IS NOT NULL)
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[Id],
 	[t1].[Item],
@@ -109,7 +109,7 @@ SELECT
 FROM
 	[NullableItemEntity] [t1]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[e].[Id],
 	[e].[Item],
@@ -120,7 +120,7 @@ WHERE
 	[e].[Tested] = [e].[Item] OR [e].[Tested] IS NULL AND [e].[Item] IS NULL OR
 	[e].[Tested] = 5
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[Id],
 	[t1].[Item],
@@ -128,7 +128,7 @@ SELECT
 FROM
 	[NullableItemEntity] [t1]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[e].[Id],
 	[e].[Item],
@@ -138,7 +138,7 @@ FROM
 WHERE
 	NOT (([e].[Tested] = [e].[Item] OR [e].[Tested] IS NULL AND [e].[Item] IS NULL) AND NOT ([e].[Tested] IS NULL AND [e].[Item] IS NOT NULL) AND NOT ([e].[Tested] IS NOT NULL AND [e].[Item] IS NULL) OR [e].[Tested] = 5 AND [e].[Tested] IS NOT NULL)
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[Id],
 	[t1].[Item],
@@ -146,7 +146,7 @@ SELECT
 FROM
 	[NullableItemEntity] [t1]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[e].[Id],
 	[e].[Item],
@@ -156,7 +156,7 @@ FROM
 WHERE
 	[e].[Item] IS NULL
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[Id],
 	[t1].[Item],
@@ -164,7 +164,7 @@ SELECT
 FROM
 	[NullableItemEntity] [t1]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[e].[Id],
 	[e].[Item],
@@ -174,7 +174,7 @@ FROM
 WHERE
 	NOT (8 = [e].[Item] AND [e].[Item] IS NOT NULL)
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[Id],
 	[t1].[Item],
@@ -182,7 +182,7 @@ SELECT
 FROM
 	[NullableItemEntity] [t1]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[e].[Id],
 	[e].[Item],
@@ -190,7 +190,7 @@ SELECT
 FROM
 	[NullableItemEntity] [e]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[Id],
 	[t1].[Item],

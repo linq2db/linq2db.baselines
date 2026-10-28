@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 SELECT
 	[m_1].[Id],
 	[m_1].[Id],
@@ -23,7 +23,7 @@ FROM
 ORDER BY
 	[m_1].[Id_1]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[m_1].[LINE_ID],
 	[d].[LINE_ID],
@@ -37,7 +37,7 @@ FROM
 ORDER BY
 	[m_1].[LINE_ID]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[t1].[LINE_ID],
 	[t1].[LINE_ID]

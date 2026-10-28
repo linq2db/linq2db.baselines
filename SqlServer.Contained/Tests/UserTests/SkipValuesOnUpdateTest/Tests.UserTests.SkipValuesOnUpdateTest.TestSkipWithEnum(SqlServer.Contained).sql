@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(4000) -- String
@@ -23,7 +23,7 @@ VALUES
 	@Gender
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT TOP (1)
 	[t].[Id],
 	[t].[Name],
@@ -34,7 +34,7 @@ FROM
 WHERE
 	[t].[Id] = 1
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Name NVarChar(4000) -- String
 SET     @Name = N'Jack'
 DECLARE @Age Int -- Int32
@@ -53,7 +53,7 @@ SET
 WHERE
 	[PR_1598_Update_Enum_Table].[Id] = @Id
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT TOP (1)
 	[t].[Id],
 	[t].[Name],
@@ -64,7 +64,7 @@ FROM
 WHERE
 	[t].[Id] = 1
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Name NVarChar(4000) -- String
 SET     @Name = N'Francine'
 DECLARE @Age Int -- Int32
@@ -80,7 +80,7 @@ SET
 WHERE
 	[PR_1598_Update_Enum_Table].[Id] = @Id
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT TOP (1)
 	[t].[Id],
 	[t].[Name],

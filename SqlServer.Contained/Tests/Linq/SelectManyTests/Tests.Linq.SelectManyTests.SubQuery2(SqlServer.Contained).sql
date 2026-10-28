@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 SELECT
 	[p].[PersonID],
 	[p2].[FirstName]
@@ -9,7 +9,7 @@ WHERE
 	([p].[PersonID] = 1 OR [p].[PersonID] = 2) AND [p2].[PersonID] <> 2 AND
 	[p].[PersonID] = [p2].[PersonID]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[p].[PersonID],
 	[p2].[FirstName]

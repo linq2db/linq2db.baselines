@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[pmp1].[ChildID]
 FROM
@@ -10,7 +10,7 @@ FROM
 	) [pmp]
 		CROSS JOIN [Child] [pmp1]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID]

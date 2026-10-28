@@ -8,7 +8,7 @@ OUTPUT INSERTED.[ID]
 VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
 
 
--- SqlServer.2025
+-- SqlServer.2019
 DECLARE @field64 Decimal(1, 0)
 SET     @field64 = 5
 

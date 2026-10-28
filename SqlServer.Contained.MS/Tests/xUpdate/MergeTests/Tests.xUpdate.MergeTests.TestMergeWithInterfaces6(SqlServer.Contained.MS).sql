@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 MERGE INTO [ReviewIndexes] [Target]
 USING (VALUES
 	(1,N'2')

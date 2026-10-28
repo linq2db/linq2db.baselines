@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 SELECT
 	[x].[ID],
 	[x].[Index_1]
@@ -19,7 +19,7 @@ ORDER BY
 	[x].[MiddleName],
 	[x].[ID]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

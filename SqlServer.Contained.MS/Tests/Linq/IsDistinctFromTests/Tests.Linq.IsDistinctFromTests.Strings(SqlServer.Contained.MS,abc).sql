@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @value NVarChar(4000) -- String
 SET     @value = N'abc'
 
@@ -7,9 +7,15 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[String] IS DISTINCT FROM @value
+	NOT EXISTS(
+		SELECT
+			[s].[String]
+		INTERSECT
+		SELECT
+			@value
+	)
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @value NVarChar(4000) -- String
 SET     @value = N'abc'
 
@@ -18,9 +24,15 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[NullableString] IS DISTINCT FROM @value
+	NOT EXISTS(
+		SELECT
+			[s].[NullableString]
+		INTERSECT
+		SELECT
+			@value
+	)
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @value NVarChar(4000) -- String
 SET     @value = N'abc'
 
@@ -29,9 +41,15 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[String] IS NOT DISTINCT FROM @value
+	EXISTS(
+		SELECT
+			[s].[String]
+		INTERSECT
+		SELECT
+			@value
+	)
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @value NVarChar(4000) -- String
 SET     @value = N'abc'
 
@@ -40,5 +58,11 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[NullableString] IS NOT DISTINCT FROM @value
+	EXISTS(
+		SELECT
+			[s].[NullableString]
+		INTERSECT
+		SELECT
+			@value
+	)
 

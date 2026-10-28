@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 INSERT INTO [Parent]
 (
 	[ParentID]
@@ -8,7 +8,7 @@ VALUES
 	1001
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 INSERT INTO [Child]
 (
 	[ParentID],
@@ -20,7 +20,7 @@ VALUES
 	1
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 INSERT INTO [GrandChild]
 (
 	[ParentID],
@@ -34,7 +34,7 @@ VALUES
 	1
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 INSERT INTO [GrandChild]
 (
 	[ParentID],
@@ -48,7 +48,7 @@ VALUES
 	2
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 INSERT INTO [GrandChild]
 (
 	[ParentID],
@@ -62,7 +62,7 @@ VALUES
 	3
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 INSERT INTO [Child]
 (
 	[ParentID],
@@ -74,7 +74,7 @@ VALUES
 	2
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 INSERT INTO [GrandChild]
 (
 	[ParentID],
@@ -88,7 +88,7 @@ VALUES
 	1
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 INSERT INTO [GrandChild]
 (
 	[ParentID],
@@ -102,7 +102,7 @@ VALUES
 	2
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 INSERT INTO [GrandChild]
 (
 	[ParentID],
@@ -116,7 +116,7 @@ VALUES
 	3
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DELETE [a_GrandChildren]
 FROM
 	[Parent] [p]
@@ -125,7 +125,7 @@ FROM
 WHERE
 	[p].[ParentID] >= 1000
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DELETE [a_Children]
 FROM
 	[Parent] [p]
@@ -133,21 +133,21 @@ FROM
 WHERE
 	[p].[ParentID] >= 1000
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DELETE [c_1]
 FROM
 	[GrandChild] [c_1]
 WHERE
 	[c_1].[ParentID] >= 1000
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DELETE [c_1]
 FROM
 	[Child] [c_1]
 WHERE
 	[c_1].[ParentID] >= 1000
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DELETE [c_1]
 FROM
 	[Parent] [c_1]

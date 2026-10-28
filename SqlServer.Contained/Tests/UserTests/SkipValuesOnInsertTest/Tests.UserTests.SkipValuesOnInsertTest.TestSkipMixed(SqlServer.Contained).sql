@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(4000) -- String
@@ -19,7 +19,7 @@ VALUES
 	@Age
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT TOP (1)
 	[t].[Id],
 	[t].[Name],
@@ -29,7 +29,7 @@ FROM
 WHERE
 	[t].[Id] = 1
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Age Int -- Int32
 SET     @Age = 20
 DECLARE @Id Int -- Int32
@@ -42,7 +42,7 @@ SET
 WHERE
 	[PR_1598_Mixed_Table].[Id] = @Id
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT TOP (1)
 	[t].[Id],
 	[t].[Name],
@@ -52,7 +52,7 @@ FROM
 WHERE
 	[t].[Id] = 1
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Age Int -- Int32
@@ -69,7 +69,7 @@ VALUES
 	@Age
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT TOP (1)
 	[t].[Id],
 	[t].[Name],
@@ -79,7 +79,7 @@ FROM
 WHERE
 	[t].[Id] = 2
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Name NVarChar(4000) -- String
 SET     @Name = N'Jessy'
 DECLARE @Age Int -- Int32
@@ -95,7 +95,7 @@ SET
 WHERE
 	[PR_1598_Mixed_Table].[Id] = @Id
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT TOP (1)
 	[t].[Id],
 	[t].[Name],

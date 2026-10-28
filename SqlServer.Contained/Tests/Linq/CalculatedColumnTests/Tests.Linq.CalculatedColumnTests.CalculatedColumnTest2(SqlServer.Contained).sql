@@ -1,12 +1,12 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 SELECT
 	[t1].[PersonID],
 	[t1].[FirstName],
 	[t1].[LastName],
 	[t1].[MiddleName],
 	[t1].[Gender],
-	[t1].[LastName] || N', ' || [t1].[FirstName],
-	[t1].[LastName] || N', ' || [t1].[FirstName],
+	[t1].[LastName] + N', ' + [t1].[FirstName],
+	[t1].[LastName] + N', ' + [t1].[FirstName],
 	(
 		SELECT
 			COUNT(*)
@@ -18,7 +18,7 @@ SELECT
 FROM
 	[Person] [t1]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[i_1].[PersonID],
 	[i_1].[FirstName],
@@ -36,7 +36,7 @@ FROM
 			[i].[PersonID],
 			[i].[MiddleName],
 			[i].[Gender],
-			[i].[LastName] || N', ' || [i].[FirstName] as [FullName],
+			[i].[LastName] + N', ' + [i].[FirstName] as [FullName],
 			(
 				SELECT
 					COUNT(*)
@@ -49,5 +49,5 @@ FROM
 			[Person] [i]
 	) [i_1]
 WHERE
-	([i_1].[LastName] || N', ' || [i_1].[FirstName]) <> N'Pupkin, John'
+	([i_1].[LastName] + N', ' + [i_1].[FirstName]) <> N'Pupkin, John'
 

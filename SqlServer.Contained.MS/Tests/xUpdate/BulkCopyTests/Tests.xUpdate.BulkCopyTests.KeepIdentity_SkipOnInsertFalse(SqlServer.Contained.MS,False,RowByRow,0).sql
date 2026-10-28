@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @Value Int -- Int32
 SET     @Value = 0
 
@@ -13,7 +13,7 @@ VALUES
 
 SELECT SCOPE_IDENTITY()
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @Value Int -- Int32
 SET     @Value = 200
 
@@ -26,7 +26,7 @@ VALUES
 	@Value
 )
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @Value Int -- Int32
 SET     @Value = 300
 
@@ -39,7 +39,7 @@ VALUES
 	@Value
 )
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @lastId Int -- Int32
 SET     @lastId = 3
 
@@ -53,7 +53,7 @@ WHERE
 ORDER BY
 	[t1].[ID]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @lastId Int -- Int32
 SET     @lastId = 3
 

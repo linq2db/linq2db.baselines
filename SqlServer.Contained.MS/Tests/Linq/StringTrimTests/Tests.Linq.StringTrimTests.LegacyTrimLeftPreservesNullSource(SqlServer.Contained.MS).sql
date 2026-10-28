@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 100
 DECLARE @CharColumn Char -- AnsiStringFixedLength
@@ -27,9 +27,9 @@ VALUES
 	@NVarCharColumn
 )
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
-	IIF([t].[VarCharColumn] IS NOT NULL, LTRIM([t].[VarCharColumn], '.+'), NULL)
+	[t].[VarCharColumn]
 FROM
 	[StringTrimTable] [t]
 WHERE

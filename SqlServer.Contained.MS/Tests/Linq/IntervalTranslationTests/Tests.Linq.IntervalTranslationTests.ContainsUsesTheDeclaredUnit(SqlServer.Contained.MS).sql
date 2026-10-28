@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @InSeconds BigInt -- Int64
@@ -27,7 +27,7 @@ VALUES
 	@UndeclaredSeconds
 )
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @InSeconds BigInt -- Int64
@@ -56,7 +56,7 @@ VALUES
 	@UndeclaredSeconds
 )
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 3
 DECLARE @InSeconds BigInt -- Int64
@@ -85,7 +85,7 @@ VALUES
 	@UndeclaredSeconds
 )
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[r].[Id]
 FROM
@@ -95,7 +95,7 @@ WHERE
 ORDER BY
 	[r].[Id]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[r].[Id]
 FROM
@@ -105,7 +105,7 @@ WHERE
 ORDER BY
 	[r].[Id]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	IIF([r].[InSeconds] IN (900, 2700), 1, 0)
 FROM
@@ -113,7 +113,7 @@ FROM
 ORDER BY
 	[r].[Id]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @InSeconds BigInt -- Int64
 SET     @InSeconds = 1800
 
@@ -125,7 +125,7 @@ SELECT
 			[DurationRow] [r]
 	), 1, 0)
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @InTicks BigInt -- Int64
 SET     @InTicks = 54000000000
 

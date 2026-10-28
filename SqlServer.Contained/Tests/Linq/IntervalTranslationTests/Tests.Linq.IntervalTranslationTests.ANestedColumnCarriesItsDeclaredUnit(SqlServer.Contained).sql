@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Declared_Elapsed BigInt -- Int64
@@ -19,7 +19,7 @@ VALUES
 	@Converted_Elapsed
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT TOP (2)
 	[t1].[Id],
 	[t1].[Declared],
@@ -27,7 +27,7 @@ SELECT TOP (2)
 FROM
 	[NestedDurationRow] [t1]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT TOP (2)
 	CAST([r].[Declared] AS Float) / 60
 FROM

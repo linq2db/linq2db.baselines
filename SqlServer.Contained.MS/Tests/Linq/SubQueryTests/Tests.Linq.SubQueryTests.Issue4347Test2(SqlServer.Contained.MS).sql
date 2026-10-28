@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -24,7 +24,7 @@ WHERE
 			) [t1]([item])
 	)
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[x].[Id],
 	[x].[ValidOn]

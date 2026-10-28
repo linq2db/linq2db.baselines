@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 SELECT
 	[t1].[Id],
 	[t1].[Name],
@@ -25,7 +25,7 @@ FROM
 			[d_1].[IsActive] = 0
 	) [t1]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[k_1].[Item1],
 	[k_1].[Item2],
@@ -44,7 +44,7 @@ WHERE
 ORDER BY
 	[d].[Id]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[k_1].[Item1],
 	[k_1].[Item2],

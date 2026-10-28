@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],
@@ -10,7 +10,7 @@ FROM
 WHERE
 	[p].[PersonID] = 1
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT TOP (2)
 	[p].[FirstName],
 	[p].[PersonID],

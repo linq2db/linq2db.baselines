@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 WITH [cte] ([Id], [FirstName], [LastName])
 AS
 (

@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[p].[object_id],
 	OBJECT_SCHEMA_NAME([p].[object_id]),
@@ -14,7 +14,7 @@ GROUP BY
 ORDER BY
 	[p].[object_id]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = -345
 DECLARE @Value1 Int -- Int32
@@ -31,7 +31,7 @@ VALUES
 	@Value1
 )
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[p].[object_id],
 	OBJECT_SCHEMA_NAME([p].[object_id]),
@@ -48,7 +48,7 @@ ORDER BY
 	[p].[object_id]
 
 RollbackTransaction
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[p].[object_id],
 	OBJECT_SCHEMA_NAME([p].[object_id]),

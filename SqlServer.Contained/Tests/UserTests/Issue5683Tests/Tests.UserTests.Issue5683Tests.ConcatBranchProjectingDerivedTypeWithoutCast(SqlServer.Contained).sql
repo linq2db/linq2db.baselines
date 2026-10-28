@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 SELECT
 	CAST(0 AS Int),
 	[p].[ParentID],
@@ -17,7 +17,7 @@ FROM
 WHERE
 	[p_1].[ParentID] <= 3
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

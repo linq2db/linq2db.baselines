@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @filter NVarChar(4000) -- String
 SET     @filter = N'%John%'
 DECLARE @filter_1 NVarChar(4000) -- String
@@ -43,14 +43,14 @@ WHERE
 ORDER BY
 	[patient_1].[PersonID]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[PersonID],
 	[t1].[Diagnosis]
 FROM
 	[Patient] [t1]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

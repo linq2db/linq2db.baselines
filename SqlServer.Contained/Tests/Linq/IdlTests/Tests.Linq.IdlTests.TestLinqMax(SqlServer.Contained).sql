@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 SELECT
 	MAX([x].[PersonID])
 FROM
@@ -6,7 +6,7 @@ FROM
 WHERE
 	[x].[PersonID] < 0
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	MAX([x].[PersonID])
 FROM
@@ -14,7 +14,7 @@ FROM
 WHERE
 	[x].[PersonID] < 0
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	MAX([x].[PersonID])
 FROM
@@ -22,7 +22,7 @@ FROM
 WHERE
 	[x].[PersonID] < 0
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	MAX([x].[PersonID])
 FROM

@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],
@@ -11,7 +11,7 @@ FROM
 			(N'Janet'), (N'Doe'), (N'John'), (N'Doe')
 		) [n]([item]) ON [p].[LastName] = [n].[item]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],

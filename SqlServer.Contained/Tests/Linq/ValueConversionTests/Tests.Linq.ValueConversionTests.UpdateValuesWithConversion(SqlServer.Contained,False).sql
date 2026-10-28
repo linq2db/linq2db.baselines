@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 DECLARE @Test1 Char -- AnsiStringFixedLength
 SET     @Test1 = NULL
 
@@ -9,7 +9,7 @@ SET
 WHERE
 	[TableWithConverterValue].[Id] = 1
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT TOP (2)
 	[x].[Id],
 	[x].[NoConversion],
@@ -20,7 +20,7 @@ FROM
 WHERE
 	[x].[Id] = 1
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Test1 Char(1) -- AnsiStringFixedLength
 SET     @Test1 = N'X'
 
@@ -31,7 +31,7 @@ SET
 WHERE
 	[TableWithConverterValue].[Id] = 2
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT TOP (2)
 	[x].[Id],
 	[x].[NoConversion],
@@ -42,7 +42,7 @@ FROM
 WHERE
 	[x].[Id] = 2
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Test1 Char(1) -- AnsiStringFixedLength
 SET     @Test1 = N'X'
 

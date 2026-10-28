@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @s NVarChar(4000) -- String
 SET     @s = N'123[456'
 
@@ -9,7 +9,7 @@ FROM
 WHERE
 	[p].[PersonID] = 1 AND @s LIKE N'%~[%' ESCAPE N'~'
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @s NVarChar(4000) -- String
 SET     @s = N'123[456'
 

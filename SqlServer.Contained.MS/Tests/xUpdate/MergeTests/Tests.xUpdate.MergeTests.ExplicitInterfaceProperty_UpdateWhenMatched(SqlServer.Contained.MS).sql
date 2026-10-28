@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Tests_xUpdate_MergeTests_IExplicitComplexProperty_ Bit -- Boolean
@@ -15,7 +15,7 @@ VALUES
 	@Tests_xUpdate_MergeTests_IExplicitComplexProperty_
 )
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 MERGE INTO [ExplicitComplexPropertyTarget] [Target]
 USING (VALUES
 	(1,1)
@@ -32,7 +32,7 @@ SET
 	[Field] = [Source].[TestsxUpdateMergeTestsIExplicitComplexPropertyField]
 ;
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT TOP (2)
 	[t1].[Id],
 	[t1].[Field]

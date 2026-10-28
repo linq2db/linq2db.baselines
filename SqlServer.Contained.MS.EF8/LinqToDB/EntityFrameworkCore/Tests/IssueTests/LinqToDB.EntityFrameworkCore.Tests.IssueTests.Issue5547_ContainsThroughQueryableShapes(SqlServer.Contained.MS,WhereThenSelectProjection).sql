@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025
+﻿-- SqlServer.2019
 SELECT
 	[a_Customer].[Id]
 FROM

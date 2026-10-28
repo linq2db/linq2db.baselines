@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 IF (OBJECT_ID(N'[tempdb]..[#temp_table1]', N'U') IS NULL)
 	CREATE TABLE [tempdb]..[#temp_table1]
 	(
@@ -10,7 +10,7 @@ IF (OBJECT_ID(N'[tempdb]..[#temp_table1]', N'U') IS NULL)
 
 INSERT ASYNC BULK [tempdb]..[#temp_table1](ID, Value)
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 IF (OBJECT_ID(N'[tempdb]..[#temp_table2]', N'U') IS NULL)
 	CREATE TABLE [tempdb]..[#temp_table2]
 	(
@@ -20,7 +20,7 @@ IF (OBJECT_ID(N'[tempdb]..[#temp_table2]', N'U') IS NULL)
 		PRIMARY KEY CLUSTERED ([ID])
 	)
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 INSERT INTO [tempdb]..[#temp_table2]
 (
 	[ID],
@@ -32,21 +32,21 @@ SELECT
 FROM
 	[tempdb]..[#temp_table1] [t1]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[ID],
 	[t1].[Value]
 FROM
 	[tempdb]..[#temp_table1] [t1]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[ID],
 	[t1].[Value]
 FROM
 	[tempdb]..[#temp_table2] [t1]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 INSERT INTO [tempdb]..[#temp_table1]
 (
 	[ID],
@@ -55,7 +55,7 @@ INSERT INTO [tempdb]..[#temp_table1]
 VALUES
 (2,3)
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @ID Int -- Int32
 SET     @ID = 3
 DECLARE @Value Int -- Int32
@@ -74,15 +74,15 @@ VALUES
 
 INSERT ASYNC BULK [tempdb]..[#temp_table1](ID, Value)
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 TRUNCATE TABLE [tempdb]..[#temp_table1]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 TRUNCATE TABLE [tempdb]..[#temp_table2]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DROP TABLE IF EXISTS [tempdb]..[#temp_table2]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DROP TABLE IF EXISTS [tempdb]..[#temp_table1]
 

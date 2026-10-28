@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @value Int -- Int32
 SET     @value = 123
 
@@ -11,7 +11,7 @@ VALUES
 	@value
 )
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT TOP (2)
 	[t1].[Id],
 	[t1].[Value]

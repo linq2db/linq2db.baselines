@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[e].[Id],
 	[e].[Value1],
@@ -10,7 +10,7 @@ FROM
 WHERE
 	20 IN ([e].[Value1], [e].[Id])
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -20,7 +20,7 @@ SELECT
 FROM
 	[MissedJoinEntity] [t1]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[e].[Id],
 	[e].[Value1],
@@ -32,7 +32,7 @@ FROM
 WHERE
 	20 IN ([e].[Value1], [e].[Id])
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -42,7 +42,7 @@ SELECT
 FROM
 	[MissedJoinEntity] [t1]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[e].[Id],
 	[e].[Value1],
@@ -54,7 +54,7 @@ FROM
 WHERE
 	20 IN ([e].[Value1], [e].[Id])
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -64,7 +64,7 @@ SELECT
 FROM
 	[MissedJoinEntity] [t1]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[e].[Id],
 	[e].[Value1],
@@ -76,7 +76,7 @@ FROM
 WHERE
 	20 IN ([e].[Value1], [e].[Id])
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[Id],
 	[t1].[Value1],

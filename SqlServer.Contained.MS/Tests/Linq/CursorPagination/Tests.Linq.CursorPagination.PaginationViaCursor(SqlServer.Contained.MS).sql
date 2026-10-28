@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t].[BookingID],
 	[t].[ServiceDate],
@@ -11,7 +11,7 @@ ORDER BY
 	[t].[ServiceDate] DESC,
 	[t].[BookingID] DESC
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 12
 
@@ -37,7 +37,7 @@ FROM
 WHERE
 	[q].[RowNumber] <= @take
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @cursorValue Int -- Int32
 SET     @cursorValue = 66
 DECLARE @take Int -- Int32
@@ -80,7 +80,7 @@ WHERE
 			[q].[RowNumber] <= [c_1].[RowNumber] + @take
 	)
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @cursorValue Int -- Int32
 SET     @cursorValue = 30
 DECLARE @take Int -- Int32
@@ -123,7 +123,7 @@ WHERE
 			[q].[RowNumber] <= [c_1].[RowNumber] + @take
 	)
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @cursorValue Int -- Int32
 SET     @cursorValue = 3
 DECLARE @take Int -- Int32

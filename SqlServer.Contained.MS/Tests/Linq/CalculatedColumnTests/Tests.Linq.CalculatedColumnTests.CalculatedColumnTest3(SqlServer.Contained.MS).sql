@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	(
 		SELECT
@@ -24,7 +24,7 @@ FROM
 			[i].[LastName],
 			[i].[MiddleName],
 			[i].[Gender],
-			[i].[LastName] || N', ' || [i].[FirstName] as [FullName],
+			[i].[LastName] + N', ' + [i].[FirstName] as [FullName],
 			(
 				SELECT
 					COUNT(*)

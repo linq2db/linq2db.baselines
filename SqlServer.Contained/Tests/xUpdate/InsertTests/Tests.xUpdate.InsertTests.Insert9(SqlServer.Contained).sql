@@ -1,18 +1,18 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 DELETE [c_1]
 FROM
 	[Child] [c_1]
 WHERE
 	[c_1].[ParentID] > 1000
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DELETE [p]
 FROM
 	[Parent] [p]
 WHERE
 	[p].[ParentID] > 1000
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1001
 DECLARE @Value1 Int -- Int32
@@ -29,7 +29,7 @@ VALUES
 	@Value1
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 1001
 
@@ -46,7 +46,7 @@ FROM
 WHERE
 	[p].[ParentID] = @id
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 1001
 
@@ -57,14 +57,14 @@ FROM
 WHERE
 	[c_1].[ParentID] = @id
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DELETE [c_1]
 FROM
 	[Child] [c_1]
 WHERE
 	[c_1].[ParentID] > 1000
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DELETE [p]
 FROM
 	[Parent] [p]

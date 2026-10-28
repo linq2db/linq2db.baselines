@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 SELECT
 	[p].[PersonID],
 	Coalesce([m_2].[MiddleName], N'default2')
@@ -12,7 +12,7 @@ FROM
 				[Person] [m_1]
 		) [m_2] ON [p].[PersonID] = [m_2].[c1]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

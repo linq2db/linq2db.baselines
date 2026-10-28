@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 IF (OBJECT_ID(N'[FluentTemp_Cache]', N'U') IS NULL)
 	CREATE TABLE [FluentTemp_Cache]
 	(
@@ -9,7 +9,7 @@ IF (OBJECT_ID(N'[FluentTemp_Cache]', N'U') IS NULL)
 		CONSTRAINT [PK_FluentTemp_Cache] PRIMARY KEY CLUSTERED ([ID])
 	)
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @ID Int -- Int32
 SET     @ID = 1
 DECLARE @Name NVarChar(20) -- String
@@ -30,7 +30,7 @@ VALUES
 	@LastName
 )
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t].[ID],
 	[t].[Value],
@@ -40,10 +40,10 @@ FROM
 WHERE
 	[t].[ID] = 1
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DROP TABLE IF EXISTS [FluentTemp_Cache]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 IF (OBJECT_ID(N'[FluentTemp_Cache]', N'U') IS NULL)
 	CREATE TABLE [FluentTemp_Cache]
 	(
@@ -54,7 +54,7 @@ IF (OBJECT_ID(N'[FluentTemp_Cache]', N'U') IS NULL)
 		CONSTRAINT [PK_FluentTemp_Cache] PRIMARY KEY CLUSTERED ([ID])
 	)
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @ID Int -- Int32
 SET     @ID = 1
 DECLARE @Name NVarChar(20) -- String
@@ -75,7 +75,7 @@ VALUES
 	@LastName
 )
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t].[ID],
 	[t].[Value],
@@ -85,10 +85,10 @@ FROM
 WHERE
 	[t].[ID] = 1
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DROP TABLE IF EXISTS [FluentTemp_Cache]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 IF (OBJECT_ID(N'[FluentTemp_Cache]', N'U') IS NULL)
 	CREATE TABLE [FluentTemp_Cache]
 	(
@@ -99,7 +99,7 @@ IF (OBJECT_ID(N'[FluentTemp_Cache]', N'U') IS NULL)
 		CONSTRAINT [PK_FluentTemp_Cache] PRIMARY KEY CLUSTERED ([ID])
 	)
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @ID Int -- Int32
 SET     @ID = 1
 DECLARE @Name NVarChar(20) -- String
@@ -120,7 +120,7 @@ VALUES
 	@LastName
 )
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t].[ID],
 	[t].[Column],
@@ -130,10 +130,10 @@ FROM
 WHERE
 	[t].[ID] = 1
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DROP TABLE IF EXISTS [FluentTemp_Cache]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 IF (OBJECT_ID(N'[FluentTemp_Cache]', N'U') IS NULL)
 	CREATE TABLE [FluentTemp_Cache]
 	(
@@ -144,7 +144,7 @@ IF (OBJECT_ID(N'[FluentTemp_Cache]', N'U') IS NULL)
 		CONSTRAINT [PK_FluentTemp_Cache] PRIMARY KEY CLUSTERED ([ID])
 	)
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @ID Int -- Int32
 SET     @ID = 1
 DECLARE @Name NVarChar(20) -- String
@@ -165,7 +165,7 @@ VALUES
 	@LastName
 )
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t].[ID],
 	[t].[Column],
@@ -175,6 +175,6 @@ FROM
 WHERE
 	[t].[ID] = 1
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DROP TABLE IF EXISTS [FluentTemp_Cache]
 

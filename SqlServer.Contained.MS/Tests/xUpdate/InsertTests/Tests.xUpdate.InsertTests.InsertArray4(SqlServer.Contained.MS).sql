@@ -1,11 +1,11 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 DELETE [t]
 FROM
 	[LinqDataTypes] [t]
 WHERE
 	[t].[ID] > 1000
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @ID Int -- Int32
 SET     @ID = 1001
 DECLARE @MoneyValue Decimal(1, 0)
@@ -42,7 +42,7 @@ VALUES
 	@SmallIntValue
 )
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT TOP (2)
 	[t].[ID],
 	[t].[MoneyValue],
@@ -56,7 +56,7 @@ FROM
 WHERE
 	[t].[ID] = 1001
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DELETE [t]
 FROM
 	[LinqDataTypes] [t]

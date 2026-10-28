@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 WITH [CTE_1]
 (
 	[entry_ID],
@@ -29,7 +29,7 @@ FROM
 WHERE
 	[x].[entry_ID] = 1
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[x].[FirstName],
 	[x].[PersonID],

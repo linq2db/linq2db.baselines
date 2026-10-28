@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 WITH [CTE1_] ([ParentID])
 AS
 (
@@ -64,7 +64,7 @@ FROM
 		INNER JOIN [CTE3_] [c3] ON [t1].[ParentID] = [c3].[ParentID]
 		INNER JOIN [LATEST] [c4_1] ON [c4_1].[ParentID] = [c3].[ParentID]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[c3].[ParentID],
 	[c3].[Value1]

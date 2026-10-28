@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 DECLARE @Version Int -- Int32
 SET     @Version = 99
 DECLARE @UpdatedAt DateTime2
@@ -17,7 +17,7 @@ SET
 WHERE
 	[EntityUpdateTest].[Id] = @Id
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT TOP (2)
 	[t1].[Id],
 	[t1].[Name],

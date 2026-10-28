@@ -1,10 +1,10 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 SELECT
 	COUNT(*)
 FROM
 	[LinqDataTypes] [t1]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @param SmallInt -- Int16
 SET     @param = 1
 
@@ -24,7 +24,7 @@ FROM
 WHERE
 	@param = [t1].[SmallIntValue]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[t1].[ID],
 	[t1].[MoneyValue],

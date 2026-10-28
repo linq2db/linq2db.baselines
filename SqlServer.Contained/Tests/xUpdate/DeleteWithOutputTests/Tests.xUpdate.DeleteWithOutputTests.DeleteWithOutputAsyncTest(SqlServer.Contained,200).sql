@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 SELECT
 	[s].[Id],
 	[s].[Value],
@@ -8,7 +8,7 @@ FROM
 WHERE
 	[s].[Id] > 3
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DELETE [s]
 OUTPUT
 	DELETED.[Id],

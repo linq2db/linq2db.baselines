@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 DECLARE @str NVarChar(4000) -- String
 SET     @str = N'zz'
 DECLARE @id Int -- Int32
@@ -7,12 +7,12 @@ SET     @id = 1
 UPDATE
 	[TextData]
 SET
-	[Items1] = Coalesce([TextData].[Items1], N'') || Coalesce(@str, N''),
-	[Items2] = Coalesce([TextData].[Items2], N'') || Coalesce(@str, N'')
+	[Items1] = Coalesce([TextData].[Items1], N'') + Coalesce(@str, N''),
+	[Items2] = Coalesce([TextData].[Items2], N'') + Coalesce(@str, N'')
 WHERE
 	[TextData].[Id] >= @id
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[t1].[Id],
 	[t1].[Items1],

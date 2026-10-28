@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 SELECT
 	[e].[Id],
 	IIF(Coalesce([j].[Span], TIMEFROMPARTS(0, 0, 0, 0, 7)) < [e].[Span], N'y', N'n'),
@@ -7,7 +7,7 @@ FROM
 	[MissedSpanEntity] [e]
 		LEFT JOIN [MissedSpanEntity] [j] ON [j].[Id] = [e].[Id] + 1000
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[t1].[Id],
 	[t1].[Span]

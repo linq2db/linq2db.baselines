@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @InSeconds BigInt -- Int64
@@ -27,7 +27,7 @@ VALUES
 	@UndeclaredSeconds
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @InSeconds BigInt -- Int64
@@ -56,7 +56,7 @@ VALUES
 	@UndeclaredSeconds
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 3
 DECLARE @InSeconds BigInt -- Int64
@@ -85,7 +85,7 @@ VALUES
 	@UndeclaredSeconds
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @p BigInt -- Int64
 SET     @p = 1800
 
@@ -98,7 +98,7 @@ WHERE
 ORDER BY
 	[r].[Id]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @p BigInt -- Int64
 SET     @p = 18000000000
 
@@ -111,7 +111,7 @@ WHERE
 ORDER BY
 	[r].[Id]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @p BigInt -- Int64
 SET     @p = 1800
 DECLARE @p_1 BigInt -- Int64
@@ -124,7 +124,7 @@ FROM
 WHERE
 	[r].[InSeconds] = @p AND [r].[InSeconds] = @p_1
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[r].[Id]
 FROM
@@ -132,7 +132,7 @@ FROM
 WHERE
 	1 = 0
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[r].[Id]
 FROM

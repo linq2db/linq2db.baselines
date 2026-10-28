@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
@@ -14,7 +14,7 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT TOP (1)
 	[x].[ParentID],
 	[x].[Value1]
@@ -23,7 +23,7 @@ FROM
 WHERE
 	[x].[ParentID] = 3
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
@@ -39,7 +39,7 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT TOP (1)
 	[x].[ParentID],
 	[x].[Value1]
@@ -48,7 +48,7 @@ FROM
 WHERE
 	[x].[ParentID] = 3
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
@@ -64,7 +64,7 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT TOP (1)
 	[x].[ParentID],
 	[x].[Value1]

@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @values NVarChar(4000) -- String
 SET     @values = N'a'
 
@@ -9,7 +9,7 @@ FROM
 WHERE
 	[p].[PersonID] = 1
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @values NVarChar(4000) -- String
 SET     @values = N'b'
 
@@ -20,7 +20,7 @@ FROM
 WHERE
 	[p].[PersonID] = 1
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @values NVarChar(4000) -- String
 SET     @values = N'a'
 
@@ -31,7 +31,7 @@ FROM
 WHERE
 	[p].[PersonID] = 1
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @values NVarChar(4000) -- String
 SET     @values = N'b'
 

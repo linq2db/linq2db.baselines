@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 SELECT
 	Coalesce([t1].[EnumNullable], [t1].[Enum])
 FROM

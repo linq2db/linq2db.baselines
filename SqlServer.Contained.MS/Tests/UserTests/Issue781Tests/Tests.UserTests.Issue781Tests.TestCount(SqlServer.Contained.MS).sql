@@ -1,10 +1,10 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	COUNT(*)
 FROM
 	(
 		SELECT DISTINCT
-			N'test' || [a_Patient].[Diagnosis] as [Key_1]
+			N'test' + [a_Patient].[Diagnosis] as [Key_1]
 		FROM
 			[Person] [t1]
 				LEFT JOIN [Patient] [a_Patient] ON [t1].[PersonID] = [a_Patient].[PersonID]

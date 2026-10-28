@@ -1,8 +1,8 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT
-	RTRIM(Replace(CAST([p].[MoneyValue] AS NVarChar(31)), N',', N'.'), N'0.')
+	Replace(CAST([p].[MoneyValue] AS NVarChar(31)), N',', N'.')
 FROM
 	[LinqDataTypes] [p]
 WHERE
-	LEN(CAST([p].[MoneyValue] AS NVarChar(31)) || N'.') > 1
+	LEN(CAST([p].[MoneyValue] AS NVarChar(31)) + N'.') > 1
 

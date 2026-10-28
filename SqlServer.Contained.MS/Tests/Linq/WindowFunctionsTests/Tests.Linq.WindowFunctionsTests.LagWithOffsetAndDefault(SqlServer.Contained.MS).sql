@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t].[Id],
 	LAG([t].[IntValue], 2, 0) OVER (ORDER BY [t].[Id])

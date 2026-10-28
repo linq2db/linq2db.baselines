@@ -1,11 +1,11 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 DELETE [t1]
 FROM
 	[Person] [t1]
 WHERE
 	[t1].[PersonID] > 4
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'John0'
 DECLARE @LastName NVarChar(4000) -- String
@@ -32,7 +32,7 @@ VALUES
 
 SELECT SCOPE_IDENTITY()
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @p NVarChar(4000) -- String
 SET     @p = N'John0'
 
@@ -47,7 +47,7 @@ FROM
 WHERE
 	[p].[FirstName] = @p AND [p].[LastName] = N'Shepard'
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'John1'
 DECLARE @LastName NVarChar(4000) -- String
@@ -74,7 +74,7 @@ VALUES
 
 SELECT SCOPE_IDENTITY()
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @p NVarChar(4000) -- String
 SET     @p = N'John1'
 
@@ -89,7 +89,7 @@ FROM
 WHERE
 	[p].[FirstName] = @p AND [p].[LastName] = N'Shepard'
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DELETE [t1]
 FROM
 	[Person] [t1]

@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 DECLARE @Column NVarChar(8) -- String
 SET     @Column = N'value=2'
 DECLARE @ColumnNullable NVarChar(8) -- String
@@ -13,7 +13,7 @@ FROM
 WHERE
 	[r].[Column] = @Column AND [r].[ColumnNullable] = @ColumnNullable
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[r].[Id],
 	[r].[Column],
@@ -23,12 +23,12 @@ FROM
 WHERE
 	[r].[Column] = N'value=2' AND [r].[ColumnNullable] = N'value=33'
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DELETE [t1]
 FROM
 	[StringEnumTable] [t1]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Column NVarChar(8) -- String
@@ -49,7 +49,7 @@ VALUES
 	@ColumnNullable
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Column NVarChar(8) -- String
@@ -70,7 +70,7 @@ VALUES
 	@ColumnNullable
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[t1].[Id],
 	[t1].[Column],
@@ -80,12 +80,12 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DELETE [t1]
 FROM
 	[StringEnumTable] [t1]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 INSERT INTO [StringEnumTable]
 (
 	[Id],
@@ -96,7 +96,7 @@ VALUES
 (1,N'val=1',NULL),
 (2,N'value=2',N'value=33')
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[t1].[Id],
 	[t1].[Column],
@@ -106,14 +106,14 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DELETE [t1]
 FROM
 	[StringEnumTable] [t1]
 
 INSERT BULK [StringEnumTable](Id, Column, ColumnNullable)
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[t1].[Id],
 	[t1].[Column],

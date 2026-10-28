@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 MERGE INTO [Person] [Target]
 USING (
 	SELECT
@@ -20,7 +20,7 @@ WHEN NOT MATCHED BY SOURCE AND (
 ) = 1 THEN DELETE
 ;
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

@@ -1,12 +1,12 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[a_PersonDoctor].[PersonID],
 	[a_PersonDoctor].[FirstName],
 	[a_PersonDoctor].[LastName],
 	[a_PersonDoctor].[MiddleName],
 	[a_PersonDoctor].[Gender],
-	[a_PersonDoctor].[LastName] || N', ' || [a_PersonDoctor].[FirstName],
-	[a_PersonDoctor].[LastName] || N', ' || [a_PersonDoctor].[FirstName],
+	[a_PersonDoctor].[LastName] + N', ' + [a_PersonDoctor].[FirstName],
+	[a_PersonDoctor].[LastName] + N', ' + [a_PersonDoctor].[FirstName],
 	(
 		SELECT
 			COUNT(*)

@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -11,7 +11,7 @@ ORDER BY
 	[d].[Id],
 	[m_1].[Id]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[p].[Id],
 	[p].[Name]
@@ -20,7 +20,7 @@ FROM
 ORDER BY
 	[p].[Id]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 WITH [CTE_1] ([Id], [field], [Name])
 AS
 (

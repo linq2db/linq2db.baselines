@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[Field1],
 	[t1].[Field2],
@@ -6,7 +6,7 @@ SELECT
 FROM
 	[UseMappingSchemaTestTable] [t1]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[Column1],
 	[t1].[Field2],
@@ -14,7 +14,7 @@ SELECT
 FROM
 	[UseMappingSchemaTestTable] [t1]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[Field1],
 	[t1].[Field2],

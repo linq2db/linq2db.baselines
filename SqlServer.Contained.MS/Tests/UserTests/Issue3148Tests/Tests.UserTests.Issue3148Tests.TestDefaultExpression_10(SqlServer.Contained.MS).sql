@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[x].[ParentID],
 	[x].[ChildID]
@@ -25,7 +25,7 @@ WHERE
 			[a_Parent].[ParentID] = [a_Children].[ParentID]
 	), 0, 1) = 1
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[x].[ParentID],
 	[x].[ChildID]

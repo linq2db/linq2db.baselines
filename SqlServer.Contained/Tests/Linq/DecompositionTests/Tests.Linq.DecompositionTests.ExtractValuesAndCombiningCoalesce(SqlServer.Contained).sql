@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 SELECT
 	IIF([t].[Kind] = 1 OR [t].[Kind] = 2, 1, 0),
 	[t].[Kind],
@@ -12,7 +12,7 @@ SELECT
 FROM
 	[Item] [t]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[t1].[ItemId],
 	[t1].[Kind],
@@ -22,7 +22,7 @@ SELECT
 FROM
 	[Item] [t1]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[x_1].[Color_1],
 	[x_1].[Kind],
@@ -53,7 +53,7 @@ FROM
 WHERE
 	NOT ([x_1].[Color] = 1 AND ([x_1].[Color_1] = 1 AND [x_1].[Color_2] = 1 OR [x_1].[Color_1] = 0) OR [x_1].[Color] = 0 AND [x_1].[Color_4] = 0)
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[t1].[ItemId],
 	[t1].[Kind],
@@ -63,7 +63,7 @@ SELECT
 FROM
 	[Item] [t1]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[x_1].[Color_1],
 	[x_1].[Kind],
@@ -95,7 +95,7 @@ WHERE
 	[x_1].[Color] = 1 AND ([x_1].[Color_1] = 1 AND [x_1].[Color_2] = 1 OR [x_1].[Color_1] = 0) OR
 	[x_1].[Color] = 0 AND [x_1].[Color_4] = 0
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[t1].[ItemId],
 	[t1].[Kind],
@@ -105,7 +105,7 @@ SELECT
 FROM
 	[Item] [t1]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[x_1].[Size_2],
 	[x_1].[Kind],
@@ -136,7 +136,7 @@ FROM
 WHERE
 	NOT ([x_1].[Size_1] = 1 AND [x_1].[Size_2] = 0 OR [x_1].[Size_1] = 0 AND ([x_1].[Size_3] = 1 AND [x_1].[Size_4] = 1 OR [x_1].[Size_3] = 0))
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[t1].[ItemId],
 	[t1].[Kind],
@@ -146,7 +146,7 @@ SELECT
 FROM
 	[Item] [t1]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[x_1].[Size_2],
 	[x_1].[Kind],
@@ -177,7 +177,7 @@ FROM
 WHERE
 	[x_1].[Size_1] = 1 AND [x_1].[Size_2] = 0 OR [x_1].[Size_1] = 0 AND ([x_1].[Size_3] = 1 AND [x_1].[Size_4] = 1 OR [x_1].[Size_3] = 0)
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[t1].[ItemId],
 	[t1].[Kind],

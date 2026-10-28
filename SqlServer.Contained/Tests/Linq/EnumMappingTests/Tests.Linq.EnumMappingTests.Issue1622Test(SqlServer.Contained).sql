@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @SomeText NVarChar(4000) -- String
@@ -15,7 +15,7 @@ VALUES
 	@SomeText
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT TOP (2)
 	[e].[Id],
 	[e].[SomeText]
@@ -24,7 +24,7 @@ FROM
 WHERE
 	[e].[SomeText] = 'Value1_suffix'
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT TOP (2)
 	[e].[Id],
 	[e].[SomeText]

@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 SELECT
 	SUM([grp_1].[MoneyValue]),
 	DatePart(year, [grp_1].[c1]),
@@ -14,7 +14,7 @@ FROM
 GROUP BY
 	[grp_1].[c1]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	SUM([grp_1].[MoneyValue]),
 	DatePart(year, [grp_1].[c1]),

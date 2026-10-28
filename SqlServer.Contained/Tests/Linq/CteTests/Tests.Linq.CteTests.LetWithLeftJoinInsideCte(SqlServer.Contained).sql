@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 DECLARE @S1 NVarChar(50) -- String
 SET     @S1 = N's1'
 
@@ -11,7 +11,7 @@ VALUES
 	@S1
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @S1 NVarChar(50) -- String
 SET     @S1 = N's1'
 
@@ -24,7 +24,7 @@ VALUES
 	@S1
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 WITH [CTE_1] ([S1])
 AS
 (

@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 SELECT
 	MAX([g_1].[Value1]),
 	STRING_AGG([g_1].[Value1], N' -> ')

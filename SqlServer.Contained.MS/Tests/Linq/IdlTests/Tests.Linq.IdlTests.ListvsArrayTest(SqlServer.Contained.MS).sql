@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[x].[PersonID]
 FROM
@@ -6,7 +6,7 @@ FROM
 WHERE
 	[x].[FirstName] IN (N'John')
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @st NVarChar(4000) -- String
 SET     @st = N'John'
 

@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @data NVarChar(4000) -- String
 SET     @data = NULL
 
@@ -13,7 +13,7 @@ VALUES
 	@data
 )
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT TOP (2)
 	[t].[ID],
 	[t].[Data]

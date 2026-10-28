@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 SELECT
 	CAST(N'p_' AS NVarChar(4000)),
 	[p].[PersonID],
@@ -29,7 +29,7 @@ FROM
 WHERE
 	[p_1].[PersonID] <= 2
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

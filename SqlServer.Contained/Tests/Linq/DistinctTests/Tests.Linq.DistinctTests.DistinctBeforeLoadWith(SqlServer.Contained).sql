@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 SELECT DISTINCT
 	[c_1].[ParentID],
 	[c_1].[ChildID]
@@ -9,7 +9,7 @@ WHERE
 ORDER BY
 	[c_1].[ChildID]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT DISTINCT
 	[c_1].[ParentID],
 	[c_1].[ChildID]

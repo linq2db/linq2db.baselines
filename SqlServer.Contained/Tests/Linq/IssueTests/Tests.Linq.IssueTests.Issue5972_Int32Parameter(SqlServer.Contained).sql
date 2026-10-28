@@ -1,11 +1,11 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 DECLARE @min Int -- Int32
 SET     @min = -2147483648
 
 SELECT
 	@min
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @max Int -- Int32
 SET     @max = 2147483647
 

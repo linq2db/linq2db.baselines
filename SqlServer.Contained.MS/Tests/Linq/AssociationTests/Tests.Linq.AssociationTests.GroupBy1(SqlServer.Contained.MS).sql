@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT DISTINCT
 	[a_Parent].[ParentID],
 	[a_Parent].[Value1]

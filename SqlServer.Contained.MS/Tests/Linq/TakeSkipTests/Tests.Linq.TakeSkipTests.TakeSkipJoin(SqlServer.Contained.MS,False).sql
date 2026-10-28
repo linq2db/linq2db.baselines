@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[ID],
 	[t1].[MoneyValue],
@@ -11,7 +11,7 @@ SELECT
 FROM
 	[LinqDataTypes] [t1]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[e].[ID],
 	[p].[SmallIntValue]

@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 INSERT INTO [SampleClass]
 (
 	[Id],
@@ -12,7 +12,7 @@ VALUES
 	N'SampleClass'
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 INSERT INTO [SampleClass]
 (
 	[Id],
@@ -26,7 +26,7 @@ VALUES
 	N'SomeTest'
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @test NVarChar(4000) -- String
 SET     @test = N'Test'
 DECLARE @test_1 NVarChar(4000) -- String
@@ -42,7 +42,7 @@ SELECT
 			[sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE N'~'
 	), 1, 0)
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @test NVarChar(4000) -- String
 SET     @test = N'Test'
 DECLARE @test_1 NVarChar(4000) -- String
@@ -55,7 +55,7 @@ FROM
 WHERE
 	[sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE N'~'
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @test NVarChar(4000) -- String
 SET     @test = N'Value'
 DECLARE @test_1 NVarChar(4000) -- String
@@ -71,7 +71,7 @@ SELECT
 			[sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE N'~'
 	), 1, 0)
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @test NVarChar(4000) -- String
 SET     @test = N'Value'
 DECLARE @test_1 NVarChar(4000) -- String
@@ -84,7 +84,7 @@ FROM
 WHERE
 	[sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE N'~'
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @test NVarChar(4000) -- String
 SET     @test = N'Class'
 DECLARE @test_1 NVarChar(4000) -- String
@@ -100,7 +100,7 @@ SELECT
 			[sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE N'~'
 	), 1, 0)
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @test NVarChar(4000) -- String
 SET     @test = N'Class'
 DECLARE @test_1 NVarChar(4000) -- String

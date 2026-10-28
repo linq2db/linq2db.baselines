@@ -1,11 +1,11 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @min BigInt -- Int64
 SET     @min = 0
 
 SELECT
 	@min
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @max BigInt -- Int64
 SET     @max = 4294967295
 

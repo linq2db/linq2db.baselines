@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 SELECT
 	DATENAME(Month, DATETIME2FROMPARTS(2022, 3, 22, 0, 0, 0, 0, 3))
 

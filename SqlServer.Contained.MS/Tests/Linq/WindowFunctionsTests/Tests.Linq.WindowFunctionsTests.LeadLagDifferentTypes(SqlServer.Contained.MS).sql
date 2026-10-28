@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	LEAD([t].[DoubleValue]) OVER (ORDER BY [t].[Id]),
 	LAG([t].[DecimalValue]) OVER (ORDER BY [t].[Id]),

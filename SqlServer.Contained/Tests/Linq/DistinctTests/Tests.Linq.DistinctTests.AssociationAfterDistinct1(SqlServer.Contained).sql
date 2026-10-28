@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 SELECT
 	[t2].[ParentID],
 	[t2].[ChildID]
@@ -21,7 +21,7 @@ ORDER BY
 			[a_Parent].[ParentID] = [a_Children].[ParentID]
 	)
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID]

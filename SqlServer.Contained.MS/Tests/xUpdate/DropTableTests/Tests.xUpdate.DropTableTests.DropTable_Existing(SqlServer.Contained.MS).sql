@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 CREATE TABLE [Table]
 (
 	[ID] Int NOT NULL,
@@ -6,6 +6,6 @@ CREATE TABLE [Table]
 	CONSTRAINT [PK_Table] PRIMARY KEY CLUSTERED ([ID])
 )
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DROP TABLE [Table]
 

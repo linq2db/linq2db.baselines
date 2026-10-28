@@ -1,10 +1,10 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	MAX([t1].[PersonID])
 FROM
 	[Person] [t1]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @ID Int -- Int32
 SET     @ID = 12
 
@@ -42,7 +42,7 @@ VALUES
 ;
 SET IDENTITY_INSERT [Person] OFF
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

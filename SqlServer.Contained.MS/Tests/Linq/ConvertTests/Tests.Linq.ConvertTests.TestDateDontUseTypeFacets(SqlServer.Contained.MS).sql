@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[g_2].[Date_1],
 	COUNT(*)
@@ -12,7 +12,7 @@ FROM
 GROUP BY
 	[g_2].[Date_1]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[CreatedOnUtc]
 FROM

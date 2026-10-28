@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 INSERT INTO [Person]
 (
 	[FirstName],
@@ -12,7 +12,7 @@ VALUES
 	N'M'
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	COUNT(*)
 FROM
@@ -20,7 +20,7 @@ FROM
 WHERE
 	[c_1].[LastName] = N'Limonadovy'
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 UPDATE
 	[Person]
 SET
@@ -28,7 +28,7 @@ SET
 WHERE
 	[Person].[LastName] = N'Limonadovy'
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	COUNT(*)
 FROM

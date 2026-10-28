@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 MERGE INTO [InheritanceFilter] [t1]
 USING (SELECT 1 AS [Id]) [s] ON
 (
@@ -22,7 +22,7 @@ WHEN NOT MATCHED THEN
 		55
 	);
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT TOP (2)
 	[t1].[Id],
 	[t1].[Code],
@@ -32,7 +32,7 @@ FROM
 WHERE
 	[t1].[Code] IN (12, 11, 1)
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 MERGE INTO [InheritanceFilter] [t1]
 USING (SELECT 1 AS [Id]) [s] ON
 (
@@ -56,7 +56,7 @@ WHEN NOT MATCHED THEN
 		55
 	);
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT TOP (2)
 	[t1].[Id],
 	[t1].[Code],

@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025
+﻿-- SqlServer.2019
 SELECT
 	[c_1].[Id]
 FROM

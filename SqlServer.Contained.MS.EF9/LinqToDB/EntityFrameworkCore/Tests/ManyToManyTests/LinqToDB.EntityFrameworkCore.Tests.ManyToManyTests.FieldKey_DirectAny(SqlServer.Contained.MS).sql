@@ -8,7 +8,7 @@ WHERE EXISTS (
 ORDER BY [a].[Name]
 
 
--- SqlServer.2025
+-- SqlServer.2019
 SELECT
 	[a].[Name]
 FROM

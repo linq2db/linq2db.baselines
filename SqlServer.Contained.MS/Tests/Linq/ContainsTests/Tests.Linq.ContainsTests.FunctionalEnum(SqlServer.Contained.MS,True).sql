@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT TOP (1)
 	[s].[Id]
 FROM
@@ -6,7 +6,7 @@ FROM
 WHERE
 	[s].[Enum] IN (N'THREE', N'FOUR')
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT TOP (1)
 	[s].[Id]
 FROM
@@ -14,7 +14,7 @@ FROM
 WHERE
 	([s].[Enum] IN (N'THREE') OR [s].[Enum] IS NULL)
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT TOP (1)
 	[s].[Id]
 FROM
@@ -22,7 +22,7 @@ FROM
 WHERE
 	[s].[Enum] IN (N'THREE', N'TWO')
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT TOP (1)
 	[s].[Id]
 FROM
@@ -30,7 +30,7 @@ FROM
 WHERE
 	([s].[Enum] NOT IN (N'TWO') AND [s].[Enum] IS NOT NULL)
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT TOP (1)
 	[s].[Id]
 FROM

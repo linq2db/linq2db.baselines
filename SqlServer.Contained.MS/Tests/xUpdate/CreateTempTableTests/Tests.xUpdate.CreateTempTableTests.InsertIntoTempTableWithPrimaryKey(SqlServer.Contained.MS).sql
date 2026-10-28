@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 CREATE TABLE [tempdb]..[#TableWithPrimaryKey2]
 (
 	[Key] Int NOT NULL,
@@ -8,6 +8,6 @@ CREATE TABLE [tempdb]..[#TableWithPrimaryKey2]
 
 INSERT BULK [tempdb]..[#TableWithPrimaryKey2](Key)
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DROP TABLE IF EXISTS [tempdb]..[#TableWithPrimaryKey2]
 

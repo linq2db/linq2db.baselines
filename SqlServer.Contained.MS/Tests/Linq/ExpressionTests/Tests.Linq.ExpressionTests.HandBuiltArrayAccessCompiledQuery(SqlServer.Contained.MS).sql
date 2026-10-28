@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @ids Int -- Int32
 SET     @ids = 2
 
@@ -9,7 +9,7 @@ FROM
 WHERE
 	[p].[PersonID] = @ids
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @ids Int -- Int32
 SET     @ids = 3
 
@@ -20,7 +20,7 @@ FROM
 WHERE
 	[p].[PersonID] = @ids
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @ids Int -- Int32
 SET     @ids = 2
 
@@ -31,7 +31,7 @@ FROM
 WHERE
 	[p].[PersonID] = @ids
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @ids Int -- Int32
 SET     @ids = 3
 

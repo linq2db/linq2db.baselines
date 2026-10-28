@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 3
 
@@ -13,7 +13,7 @@ ORDER BY
 	[t1].[Value] DESC,
 	[t1].[Id]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[t1].[Id],
 	[t1].[Grp],

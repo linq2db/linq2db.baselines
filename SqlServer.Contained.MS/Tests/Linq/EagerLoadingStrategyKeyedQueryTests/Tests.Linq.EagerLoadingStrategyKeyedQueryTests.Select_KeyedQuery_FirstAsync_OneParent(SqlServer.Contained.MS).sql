@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT TOP (1)
 	[c_1].[Id],
 	[c_1].[Name]
@@ -7,7 +7,7 @@ FROM
 ORDER BY
 	[c_1].[Id]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[k_1].[item],
 	[d].[Id],

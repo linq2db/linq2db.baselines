@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -15,7 +15,7 @@ WHERE
 			[BooleanTable] [r_1]
 	)
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -25,7 +25,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -42,7 +42,7 @@ WHERE
 			[BooleanTable] [r_1]
 	)
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -52,7 +52,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -69,7 +69,7 @@ WHERE
 			[BooleanTable] [r_1]
 	)
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -79,7 +79,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -98,7 +98,7 @@ WHERE
 			[r].[Value5] = [r_1].[Value4] OR [r].[Value5] IS NULL AND [r_1].[Value4] IS NULL
 	)
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -108,7 +108,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -125,7 +125,7 @@ WHERE
 			[BooleanTable] [r_1]
 	)
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -135,7 +135,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -152,7 +152,7 @@ WHERE
 			[BooleanTable] [r_1]
 	)
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -162,7 +162,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -179,7 +179,7 @@ WHERE
 			[BooleanTable] [r_1]
 	)
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -189,7 +189,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -208,7 +208,7 @@ WHERE
 			[r].[Value5] = [r_1].[Value4] OR [r].[Value5] IS NULL AND [r_1].[Value4] IS NULL
 	)
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[t1].[Id],
 	[t1].[Value1],

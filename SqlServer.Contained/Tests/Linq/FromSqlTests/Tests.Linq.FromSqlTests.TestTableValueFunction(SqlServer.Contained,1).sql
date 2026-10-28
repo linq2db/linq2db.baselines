@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 DECLARE @offset Int -- Int32
 SET     @offset = 1
 
@@ -11,7 +11,7 @@ FROM
 	[Child] [t]
 		CROSS APPLY GetParentByID(([t].[ParentID] + @offset)) [p]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @offset Int -- Int32
 SET     @offset = 1
 

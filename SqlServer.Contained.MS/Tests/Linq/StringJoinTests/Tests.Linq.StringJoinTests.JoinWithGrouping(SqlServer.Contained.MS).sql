@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[g_1].[Id],
 	STRING_AGG(Coalesce([g_1].[NullableValue], N''), N', '),
@@ -10,7 +10,7 @@ GROUP BY
 ORDER BY
 	[g_1].[Id]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[PK],
 	[t1].[Id],

@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[g_1].[GrpId],
 	STRING_AGG(CAST([g_1].[IntV] AS NVarChar(11)), N'') WITHIN GROUP (ORDER BY [g_1].[PK])
@@ -9,7 +9,7 @@ GROUP BY
 ORDER BY
 	[g_1].[GrpId]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[PK],
 	[t1].[GrpId],

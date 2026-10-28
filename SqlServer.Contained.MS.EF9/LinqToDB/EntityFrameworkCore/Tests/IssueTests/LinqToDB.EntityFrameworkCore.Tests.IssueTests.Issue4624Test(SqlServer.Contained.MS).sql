@@ -30,7 +30,7 @@ OUTPUT INSERTED.[Id], i._Position;
 
 
 
--- SqlServer.2025
+-- SqlServer.2019
 SELECT
 	[m_1].[Id],
 	[d].[EntryCount]
@@ -48,7 +48,7 @@ FROM
 
 
 
--- SqlServer.2025
+-- SqlServer.2019
 SELECT
 	[p_1].[Id],
 	[p_1].[AclItemName],

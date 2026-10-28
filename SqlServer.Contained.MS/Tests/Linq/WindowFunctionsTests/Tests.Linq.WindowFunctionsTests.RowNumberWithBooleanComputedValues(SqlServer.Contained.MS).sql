@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[x].[Id],
 	ROW_NUMBER() OVER (ORDER BY IIF([x].[IntValue] = 20, 1, 0), [x].[Id]),

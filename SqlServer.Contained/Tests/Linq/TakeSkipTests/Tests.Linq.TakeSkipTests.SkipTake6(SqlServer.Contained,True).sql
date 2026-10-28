@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 SELECT
 	[c_1].[ParentID],
 	[c_1].[ChildID]
@@ -13,7 +13,7 @@ FROM
 WHERE
 	[c_1].[ParentID] = [p_1].[ParentID]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[c_1].[ParentID],
 	[c_1].[ChildID]

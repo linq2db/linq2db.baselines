@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 SELECT
 	[e].[Id]
 FROM
@@ -6,7 +6,7 @@ FROM
 WHERE
 	CONCAT_WS(N'', Coalesce([e].[StrReq], N''), N' ', N'I') = N'Programmer I'
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[t1].[Id],
 	[t1].[Str1],

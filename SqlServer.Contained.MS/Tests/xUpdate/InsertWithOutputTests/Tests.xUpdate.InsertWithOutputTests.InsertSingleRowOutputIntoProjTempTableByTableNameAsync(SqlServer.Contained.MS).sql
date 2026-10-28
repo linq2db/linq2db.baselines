@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 CREATE TABLE [tempdb]..[#DestinationTable_output]
 (
 	[Id]       Int          NOT NULL,
@@ -8,7 +8,7 @@ CREATE TABLE [tempdb]..[#DestinationTable_output]
 	PRIMARY KEY CLUSTERED ([Id])
 )
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 INSERT INTO [TableWithData_source]
 (
 	[Value],
@@ -18,7 +18,7 @@ INSERT INTO [TableWithData_source]
 OUTPUT
 	INSERTED.[Value] * 2,
 	INSERTED.[Id] + 1,
-	N'Foo' || Coalesce(INSERTED.[ValueStr], N'')
+	N'Foo' + Coalesce(INSERTED.[ValueStr], N'')
 INTO [tempdb]..[#DestinationTable_output]
 (
 	[Value],
@@ -32,7 +32,7 @@ VALUES
 	N'SomeStr'
 )
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[Id],
 	[t1].[Value],
@@ -40,7 +40,7 @@ SELECT
 FROM
 	[TableWithData_source] [t1]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[Id],
 	[t1].[Value],
@@ -48,6 +48,6 @@ SELECT
 FROM
 	[tempdb]..[#DestinationTable_output] [t1]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DROP TABLE IF EXISTS [tempdb]..[#DestinationTable_output]
 

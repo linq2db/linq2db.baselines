@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[m_2].[Id1],
 	[d].[DetailId],
@@ -13,7 +13,7 @@ FROM
 	) [m_2]
 		INNER JOIN [DetailClass] [d] ON [m_2].[Id1] = [d].[MasterId]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[m_2].[Id1],
 	[d_1].[DetailId],
@@ -40,7 +40,7 @@ FROM
 			OFFSET 1 ROWS FETCH NEXT 2 ROWS ONLY 
 		) [d_1]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[m_1].[Id1],
 	[m_1].[Id2],
@@ -49,7 +49,7 @@ SELECT
 FROM
 	[MasterClass] [m_1]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[m_1].[Id1],
 	[d].[DetailId],
@@ -64,7 +64,7 @@ FROM
 	) [m_1]
 		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[Id1],
 	[t1].[Id2],

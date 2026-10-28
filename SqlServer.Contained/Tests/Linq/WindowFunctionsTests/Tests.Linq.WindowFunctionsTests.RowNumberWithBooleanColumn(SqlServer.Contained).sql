@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 SELECT
 	[x].[Id],
 	ROW_NUMBER() OVER (ORDER BY [x].[BoolValue], [x].[Id]),

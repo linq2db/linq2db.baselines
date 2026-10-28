@@ -1,13 +1,13 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @p NVarChar(4000) -- String
 SET     @p = N'abcdeabcdeabcdeabcde1'
 
 SELECT
-	[t].[varbinaryDataType],
-	[t].[varcharDataType],
-	[t].[nvarcharDataType]
+	[t].[VarBinaryDataType],
+	[t].[VarcharDataType],
+	[t].[NVarcharDataType]
 FROM
 	[AllTypes] [t]
 WHERE
-	[t].[nvarcharDataType] = @p
+	[t].[NVarcharDataType] = @p
 

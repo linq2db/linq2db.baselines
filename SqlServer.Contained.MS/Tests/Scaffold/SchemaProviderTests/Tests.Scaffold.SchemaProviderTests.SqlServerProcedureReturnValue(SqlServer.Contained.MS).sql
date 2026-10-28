@@ -1,10 +1,10 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 select @@version
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT compatibility_level FROM sys.databases WHERE name = db_name()
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	SPECIFIC_CATALOG COLLATE DATABASE_DEFAULT + '.' + SPECIFIC_SCHEMA + '.' + SPECIFIC_NAME as ProcedureID,
 	SPECIFIC_CATALOG                                                                        as CatalogName,
@@ -23,7 +23,7 @@ FROM
 			x.name = 'MS_Description' AND x.class = 1
 ORDER BY SPECIFIC_CATALOG, SPECIFIC_SCHEMA, SPECIFIC_NAME
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	SPECIFIC_CATALOG COLLATE DATABASE_DEFAULT + '.' + SPECIFIC_SCHEMA + '.' + SPECIFIC_NAME as ProcedureID,
 	ORDINAL_POSITION                                                                        as Ordinal,
@@ -48,13 +48,13 @@ FROM
 			ORDINAL_POSITION = x.minor_id AND
 			x.name = 'MS_Description' AND x.class = 2
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 EXEC('SELECT * FROM [TestDataMSContained].[dbo].[GetParentByID](NULL)')
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 EXEC('SELECT * FROM [TestDataMSContained].[dbo].[Issue1921]()')
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 EXEC('SELECT * FROM [TestDataMSContained].[TestSchema].[SchemaTableFunction](NULL)')
 
 RollbackTransaction

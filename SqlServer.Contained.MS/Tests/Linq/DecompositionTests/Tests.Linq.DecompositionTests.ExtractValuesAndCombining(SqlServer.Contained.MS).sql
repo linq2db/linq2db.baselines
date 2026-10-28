@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[x].[Color],
 	[x].[Kind],
@@ -24,7 +24,7 @@ FROM
 WHERE
 	NOT ([x].[Color] = 1 AND [x].[Color_1] = 1 OR [x].[Color] = 0)
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[ItemId],
 	[t1].[Kind],
@@ -34,7 +34,7 @@ SELECT
 FROM
 	[Item] [t1]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[x].[Color],
 	[x].[ItemCode],
@@ -59,7 +59,7 @@ FROM
 WHERE
 	[x].[Color] = 1
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[ItemId],
 	[t1].[Kind],
@@ -69,7 +69,7 @@ SELECT
 FROM
 	[Item] [t1]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[Top],
 	[t1].[Color],
@@ -124,7 +124,7 @@ FROM
 WHERE
 	[t2].[Bottom] = 1
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[ItemId],
 	[t1].[Kind],
@@ -134,7 +134,7 @@ SELECT
 FROM
 	[Item] [t1]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[x_1].[Top],
 	[x_1].[Color],
@@ -206,7 +206,7 @@ FROM
 WHERE
 	NOT ([x_1].[Top] = 1 AND [x_1].[Color] IS NOT NULL AND [x_1].[Color] = 1 OR [x_1].[Top] = 0)
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[ItemId],
 	[t1].[Kind],
@@ -216,7 +216,7 @@ SELECT
 FROM
 	[Item] [t1]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[x_1].[Top],
 	[x_1].[Color],
@@ -288,7 +288,7 @@ FROM
 WHERE
 	[x_1].[Top] = 1 AND [x_1].[Color] = 1 OR [x_1].[Top] = 0
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[ItemId],
 	[t1].[Kind],
@@ -298,7 +298,7 @@ SELECT
 FROM
 	[Item] [t1]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[x_1].[Top],
 	[x_1].[Color],
@@ -370,7 +370,7 @@ FROM
 WHERE
 	NOT ([x_1].[Top] = 1 AND [x_1].[Color] IS NULL AND [x_1].[Size_1] = 1 OR [x_1].[Top] = 0)
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[ItemId],
 	[t1].[Kind],
@@ -380,7 +380,7 @@ SELECT
 FROM
 	[Item] [t1]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[x_1].[Top],
 	[x_1].[Color],
@@ -453,7 +453,7 @@ WHERE
 	[x_1].[Top] = 1 AND [x_1].[Color] IS NULL AND [x_1].[Size_1] = 1 OR
 	[x_1].[Top] = 0
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[ItemId],
 	[t1].[Kind],

@@ -1,9 +1,9 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 
 				IF EXISTS (SELECT * FROM sysobjects WHERE id = object_id(N'fn_SomeFunction') AND xtype IN (N'FN', N'IF', N'TF'))
 					DROP FUNCTION fn_SomeFunction
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 CREATE FUNCTION fn_SomeFunction (@id AS INT)
 RETURNS TABLE
 AS RETURN
@@ -11,7 +11,7 @@ AS RETURN
   UNION ALL
   SELECT * FROM [SomeOtherEntity] WHERE Id = @id
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -34,14 +34,14 @@ FROM
 		CROSS APPLY (
 			SELECT TOP (1)
 				[d].[Id],
-				Coalesce([d].[StrValue], N'') || N'_A' as [StrValue]
+				Coalesce([d].[StrValue], N'') + N'_A' as [StrValue]
 			FROM
 				[SomeOtherEntity] [d]
 			WHERE
 				[d].[Id] = [m_1].[Id]
 		) [d_1]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -63,7 +63,7 @@ FROM
 	) [m_1]
 		CROSS APPLY dbo.fn_SomeFunction([m_1].[Id]) [d]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -77,14 +77,14 @@ FROM
 		OUTER APPLY (
 			SELECT TOP (1)
 				[a_Other].[Id],
-				Coalesce([a_Other].[StrValue], N'') || N'_A' as [StrValue]
+				Coalesce([a_Other].[StrValue], N'') + N'_A' as [StrValue]
 			FROM
 				[SomeOtherEntity] [a_Other]
 			WHERE
 				[a_Other].[Id] = [t2].[Id]
 		) [t1]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 
 				IF EXISTS (SELECT * FROM sysobjects WHERE id = object_id(N'fn_SomeFunction') AND xtype IN (N'FN', N'IF', N'TF'))
 					DROP FUNCTION fn_SomeFunction

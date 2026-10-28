@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT TOP (2)
 	[p].[ID],
 	[p].[MoneyValue],
@@ -13,7 +13,7 @@ FROM
 WHERE
 	[p].[GuidValue] = '40932fdb-1543-4e4a-ac2c-ca371604fb4b'
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT TOP (2)
 	[p].[ID],
 	[p].[MoneyValue],

@@ -1,13 +1,13 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 SELECT
 	MAX([t1].[ID])
 FROM
 	[AllTypes] [t1]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 MERGE INTO [AllTypes] [Target]
 USING (VALUES
-	(3,char(0),char(0),N'test' || char(0) || N'it')
+	(3,char(0),char(0),N'test' + char(0) + N'it')
 ) [Source]
 (
 	[ID],
@@ -32,7 +32,7 @@ VALUES
 )
 ;
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 1
 

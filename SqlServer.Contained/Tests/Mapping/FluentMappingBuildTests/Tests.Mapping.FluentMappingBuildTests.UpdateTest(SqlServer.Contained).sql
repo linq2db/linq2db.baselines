@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 IF (OBJECT_ID(N'[FluentTemp_Update]', N'U') IS NULL)
 	CREATE TABLE [FluentTemp_Update]
 	(
@@ -9,7 +9,7 @@ IF (OBJECT_ID(N'[FluentTemp_Update]', N'U') IS NULL)
 		CONSTRAINT [PK_FluentTemp_Update] PRIMARY KEY CLUSTERED ([ID])
 	)
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @ID Int -- Int32
 SET     @ID = 1
 DECLARE @Name NVarChar(20) -- String
@@ -30,7 +30,7 @@ VALUES
 	@LastName
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Name NVarChar(20) -- String
 SET     @Name = N'John II'
 DECLARE @LastName NVarChar(20) -- String
@@ -44,6 +44,6 @@ SET
 WHERE
 	[FluentTemp_Update].[ID] = 1
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DROP TABLE IF EXISTS [FluentTemp_Update]
 

@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],
@@ -8,5 +8,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	LEN([p].[FirstName] || N'.') = 5 AND [p].[PersonID] = 1
+	LEN([p].[FirstName] + N'.') = 5 AND [p].[PersonID] = 1
 

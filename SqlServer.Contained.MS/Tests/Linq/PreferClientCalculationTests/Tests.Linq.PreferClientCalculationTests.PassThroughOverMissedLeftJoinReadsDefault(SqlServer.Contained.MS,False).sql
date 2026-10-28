@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	Coalesce([j].[Value1], 0) + 1,
 	Coalesce([j].[Value1], 0) + 1

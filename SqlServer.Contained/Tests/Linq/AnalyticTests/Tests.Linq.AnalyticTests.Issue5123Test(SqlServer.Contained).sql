@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 SELECT
 	[l].[Id],
 	ROW_NUMBER() OVER (PARTITION BY [l].[Group] ORDER BY IIF([r].[Payload] IS NOT NULL, 1, 0), [l].[Id])

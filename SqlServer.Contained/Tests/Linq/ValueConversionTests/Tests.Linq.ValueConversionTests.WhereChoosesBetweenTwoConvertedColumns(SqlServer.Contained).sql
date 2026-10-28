@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 DECLARE @EnumNullable VarChar(50) -- AnsiString
 SET     @EnumNullable = N'Value1'
 

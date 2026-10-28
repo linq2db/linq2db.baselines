@@ -8,7 +8,7 @@ WHERE EXISTS (
 ORDER BY [t].[Label]
 
 
--- SqlServer.2025
+-- SqlServer.2019
 SELECT
 	[t].[Label]
 FROM

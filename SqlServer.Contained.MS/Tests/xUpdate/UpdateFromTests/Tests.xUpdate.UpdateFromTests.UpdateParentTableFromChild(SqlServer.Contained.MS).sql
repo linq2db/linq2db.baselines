@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 UPDATE
 	[a_Parent]
 SET
@@ -9,7 +9,7 @@ FROM
 WHERE
 	[a_Parent].[Id] = 2
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT TOP (1)
 	[p].[Id],
 	[p].[Value]

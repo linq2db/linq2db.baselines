@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[e].[Value1],
 	DateAdd(day, [e].[Value1], [j].[Date]),

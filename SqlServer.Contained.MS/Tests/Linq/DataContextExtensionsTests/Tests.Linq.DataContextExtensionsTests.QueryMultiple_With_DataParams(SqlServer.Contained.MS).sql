@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @p1 Int -- Int32
 SET     @p1 = 1
 DECLARE @p2 Int -- Int32
@@ -8,7 +8,7 @@ SET     @p3 = 3
 
 SELECT * FROM Person WHERE PersonID <> @p1; SELECT * FROM Person WHERE PersonID <> @p2; SELECT * FROM Person WHERE PersonID <> @p3
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @p1 Int -- Int32
 SET     @p1 = 1
 DECLARE @p2 Int -- Int32
@@ -18,7 +18,7 @@ SET     @p3 = 3
 
 SELECT * FROM Person WHERE PersonID <> @p1; SELECT * FROM Person WHERE PersonID <> @p2; SELECT * FROM Person WHERE PersonID <> @p3
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @p1 Int -- Int32
 SET     @p1 = 1
 DECLARE @p2 Int -- Int32
@@ -28,7 +28,7 @@ SET     @p3 = 3
 
 SELECT * FROM Person WHERE PersonID <> @p1; SELECT * FROM Person WHERE PersonID <> @p2; SELECT * FROM Person WHERE PersonID <> @p3
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @p1 Int -- Int32
 SET     @p1 = 1
 DECLARE @p2 Int -- Int32
@@ -38,7 +38,7 @@ SET     @p3 = 3
 
 SELECT * FROM Person WHERE PersonID <> @p1; SELECT * FROM Person WHERE PersonID <> @p2; SELECT * FROM Person WHERE PersonID <> @p3
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @p1 Int -- Int32
 SET     @p1 = 1
 DECLARE @p2 Int -- Int32
@@ -48,7 +48,7 @@ SET     @p3 = 3
 
 SELECT * FROM Person WHERE PersonID <> @p1; SELECT * FROM Person WHERE PersonID <> @p2; SELECT * FROM Person WHERE PersonID <> @p3
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @p1 Int -- Int32
 SET     @p1 = 1
 DECLARE @p2 Int -- Int32
@@ -58,7 +58,7 @@ SET     @p3 = 3
 
 SELECT * FROM Person WHERE PersonID <> @p1; SELECT * FROM Person WHERE PersonID <> @p2; SELECT * FROM Person WHERE PersonID <> @p3
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @p1 Int -- Int32
 SET     @p1 = 1
 DECLARE @p2 Int -- Int32
@@ -68,7 +68,7 @@ SET     @p3 = 3
 
 SELECT * FROM Person WHERE PersonID <> @p1; SELECT * FROM Person WHERE PersonID <> @p2; SELECT * FROM Person WHERE PersonID <> @p3
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @p1 Int -- Int32
 SET     @p1 = 1
 DECLARE @p2 Int -- Int32
@@ -78,7 +78,7 @@ SET     @p3 = 3
 
 SELECT * FROM Person WHERE PersonID <> @p1; SELECT * FROM Person WHERE PersonID <> @p2; SELECT * FROM Person WHERE PersonID <> @p3
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @p1 Int -- Int32
 SET     @p1 = 1
 DECLARE @p2 Int -- Int32

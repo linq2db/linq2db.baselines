@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	COUNT(*)
 FROM
@@ -6,7 +6,7 @@ FROM
 WHERE
 	[i].[One] = 1 AND [i].[Two] = [i].[One] * 2
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	COUNT(*)
 FROM
@@ -16,7 +16,7 @@ WHERE
 	[i].[One] = 0 AND [i].[Two] = 7 AND [i].[Three] = 9 OR
 	[i].[One] >= NULL AND [i].[Two] = -1 AND [i].[Three] = [i].[Four]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	COUNT(*)
 FROM
@@ -26,7 +26,7 @@ WHERE
 	[i].[One] = 0 AND [i].[Two] = 7 AND [i].[Four] = 9 OR
 	[i].[One] >= NULL AND [i].[Two] = 2
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	COUNT(*)
 FROM

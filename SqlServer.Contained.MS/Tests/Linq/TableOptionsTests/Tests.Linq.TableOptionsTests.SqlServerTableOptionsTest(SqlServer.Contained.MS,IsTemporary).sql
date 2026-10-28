@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 CREATE TABLE [tempdb]..[#TestTable]
 (
 	[Id]    Int NOT NULL,
@@ -7,6 +7,6 @@ CREATE TABLE [tempdb]..[#TestTable]
 	PRIMARY KEY CLUSTERED ([Id])
 )
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DROP TABLE IF EXISTS [tempdb]..[#TestTable]
 

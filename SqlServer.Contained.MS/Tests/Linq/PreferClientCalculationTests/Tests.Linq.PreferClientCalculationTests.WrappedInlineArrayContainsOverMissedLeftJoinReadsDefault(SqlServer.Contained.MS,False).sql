@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[e].[Id],
 	IIF(0 IN (Coalesce([j].[Value1], 0), 5), N'y', N'n'),
@@ -8,7 +8,7 @@ FROM
 	[MissedJoinEntity] [e]
 		LEFT JOIN [MissedJoinEntity] [j] ON [j].[Id] = [e].[Id] + 1000
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -18,7 +18,7 @@ SELECT
 FROM
 	[MissedJoinEntity] [t1]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[e].[Id],
 	IIF(0 IN (Coalesce([j].[Value1], 0), 5), N'y', N'n'),

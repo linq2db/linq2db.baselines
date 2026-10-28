@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 MERGE INTO [UpsertTest] [Target]
 USING (VALUES
 	(2,N'ignored',1,CAST(NULL AS DateTime2),CAST(NULL AS NVarChar(4000)),CAST(NULL AS DateTime2),CAST(NULL AS NVarChar(4000)))
@@ -25,13 +25,13 @@ SET
 	[UpdatedBy] = [Source].[UpdatedBy]
 ;
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	COUNT(*)
 FROM
 	[UpsertTest] [t1]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT TOP (2)
 	[r].[Id],
 	[r].[Name],
@@ -45,7 +45,7 @@ FROM
 WHERE
 	[r].[Id] = 1
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 MERGE INTO [UpsertTest] [Target]
 USING (VALUES
 	(1,N'updated',2,CAST(NULL AS DateTime2),CAST(NULL AS NVarChar(4000)),CAST(NULL AS DateTime2),CAST(NULL AS NVarChar(4000)))
@@ -72,7 +72,7 @@ SET
 	[UpdatedBy] = [Source].[UpdatedBy]
 ;
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT TOP (2)
 	[r].[Id],
 	[r].[Name],

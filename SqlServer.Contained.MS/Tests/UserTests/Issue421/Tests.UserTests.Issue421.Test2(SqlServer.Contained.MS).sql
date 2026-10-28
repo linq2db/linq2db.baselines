@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 INSERT INTO [BlobClass]
 (
 	[Id],
@@ -10,7 +10,7 @@ VALUES
 	0x010203
 )
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT TOP (1)
 	[t1].[Id],
 	[t1].[BlobValue]
@@ -19,7 +19,7 @@ FROM
 WHERE
 	[t1].[Id] = 1
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 UPDATE
 	[BlobClass]
 SET
@@ -27,7 +27,7 @@ SET
 WHERE
 	[BlobClass].[Id] = 1
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT TOP (1)
 	[t1].[Id],
 	[t1].[BlobValue]

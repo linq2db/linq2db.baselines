@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 SELECT
 	DATETIME2FROMPARTS(2010, [t].[ID], 1, 0, 0, 0, 0, 3)
 FROM

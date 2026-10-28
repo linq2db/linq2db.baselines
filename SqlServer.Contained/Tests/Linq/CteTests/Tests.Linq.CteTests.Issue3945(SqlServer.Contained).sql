@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 WITH [CTE] ([ParentId], [Label])
 AS
 (
@@ -17,7 +17,7 @@ INSERT INTO [TestFolder]
 )
 SELECT
 	'bc7b663d-0fde-4327-8f92-5d8cc3a11d11',
-	Coalesce([parent].[Label], N'') || N'/' || Coalesce([child].[Label], N'')
+	Coalesce([parent].[Label], N'') + N'/' + Coalesce([child].[Label], N'')
 FROM
 	[CTE] [child]
 		INNER JOIN [TestFolder] [parent] ON [child].[ParentId] = [parent].[Id]

@@ -1,6 +1,6 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 SELECT
-	RTRIM([t].[VarCharColumn], 'ab')
+	[t].[VarCharColumn]
 FROM
 	[StringTrimTable] [t]
 ORDER BY

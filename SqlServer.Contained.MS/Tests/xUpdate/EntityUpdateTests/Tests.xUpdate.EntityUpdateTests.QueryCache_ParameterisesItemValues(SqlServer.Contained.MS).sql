@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @Name NVarChar(4000) -- String
 SET     @Name = N'new1'
 DECLARE @Version Int -- Int32
@@ -20,7 +20,7 @@ SET
 WHERE
 	[EntityUpdateTest].[Id] = @Id
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @Name NVarChar(4000) -- String
 SET     @Name = N'new2'
 DECLARE @Version Int -- Int32
@@ -42,7 +42,7 @@ SET
 WHERE
 	[EntityUpdateTest].[Id] = @Id
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[Id],
 	[t1].[Name],

@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 
 IF OBJECT_ID('dbo.TemporalTable1', 'U') IS NOT NULL ALTER TABLE TemporalTable1 SET ( SYSTEM_VERSIONING = OFF)
 IF OBJECT_ID('dbo.TemporalTable2', 'U') IS NOT NULL ALTER TABLE TemporalTable2 SET ( SYSTEM_VERSIONING = OFF)
@@ -12,7 +12,7 @@ DROP TABLE IF EXISTS TemporalTable4
 DROP TABLE IF EXISTS TemporalTable2History
 DROP TABLE IF EXISTS TemporalTable3History
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 
 -- simple temporal table
 CREATE TABLE TemporalTable1
@@ -63,13 +63,13 @@ CREATE TABLE TemporalTable4
 	PERIOD FOR SYSTEM_TIME (ValidFrom, ValidTo)
 ) WITH (SYSTEM_VERSIONING = ON)
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 select @@version
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT compatibility_level FROM sys.databases WHERE name = db_name()
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 
 SELECT
 	TABLE_CATALOG COLLATE DATABASE_DEFAULT + '.' + TABLE_SCHEMA + '.' + TABLE_NAME as TableID,
@@ -106,7 +106,7 @@ WHERE
 			name     = N'microsoft_database_tools_support'
 			) IS NULL
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	k.TABLE_CATALOG COLLATE DATABASE_DEFAULT + '.' + k.TABLE_SCHEMA + '.' + k.TABLE_NAME as TableID,
 	k.CONSTRAINT_NAME                                                                    as PrimaryKeyName,
@@ -123,7 +123,7 @@ FROM
 WHERE
 		c.CONSTRAINT_TYPE='PRIMARY KEY'
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 
 SELECT
 	TABLE_CATALOG COLLATE DATABASE_DEFAULT + '.' + TABLE_SCHEMA + '.' + TABLE_NAME                      as TableID,
@@ -159,7 +159,7 @@ FROM
 		x.name = 'MS_Description' AND x.class = 1
 					LEFT JOIN sys.tables t ON OBJECT_ID('[' + TABLE_CATALOG + '].[' + TABLE_SCHEMA + '].[' + TABLE_NAME + ']') = t.object_id
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	fk.name                                                     as Name,
 	DB_NAME() + '.' + SCHEMA_NAME(po.schema_id) + '.' + po.name as ThisTableID,
@@ -177,7 +177,7 @@ ORDER BY
 	ThisTableID,
 	Ordinal
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	SPECIFIC_CATALOG COLLATE DATABASE_DEFAULT + '.' + SPECIFIC_SCHEMA + '.' + SPECIFIC_NAME as ProcedureID,
 	SPECIFIC_CATALOG                                                                        as CatalogName,
@@ -196,7 +196,7 @@ FROM
 			x.name = 'MS_Description' AND x.class = 1
 ORDER BY SPECIFIC_CATALOG, SPECIFIC_SCHEMA, SPECIFIC_NAME
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	SPECIFIC_CATALOG COLLATE DATABASE_DEFAULT + '.' + SPECIFIC_SCHEMA + '.' + SPECIFIC_NAME as ProcedureID,
 	ORDINAL_POSITION                                                                        as Ordinal,
@@ -221,7 +221,7 @@ FROM
 			ORDINAL_POSITION = x.minor_id AND
 			x.name = 'MS_Description' AND x.class = 2
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataContained].[dbo].[AddIssue792Record] '
 DECLARE @params NVarChar(4000) -- String
@@ -229,7 +229,7 @@ SET     @params = N''
 
 sp_describe_first_result_set
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataContained].[dbo].[DuplicateColumnNames] '
 DECLARE @params NVarChar(4000) -- String
@@ -237,7 +237,7 @@ SET     @params = N''
 
 sp_describe_first_result_set
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataContained].[dbo].[ExecuteProcIntParameters] @input, @output'
 DECLARE @params NVarChar(4000) -- String
@@ -245,7 +245,7 @@ SET     @params = N'@input int, @output int'
 
 sp_describe_first_result_set
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataContained].[dbo].[ExecuteProcStringParameters] @input, @output'
 DECLARE @params NVarChar(4000) -- String
@@ -253,10 +253,10 @@ SET     @params = N'@input int, @output int'
 
 sp_describe_first_result_set
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 EXEC('SELECT * FROM [TestDataContained].[dbo].[GetParentByID](NULL)')
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataContained].[dbo].[Issue1897] '
 DECLARE @params NVarChar(4000) -- String
@@ -264,10 +264,10 @@ SET     @params = N''
 
 sp_describe_first_result_set
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 EXEC('SELECT * FROM [TestDataContained].[dbo].[Issue1921]()')
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataContained].[dbo].[OutRefEnumTest] @str, @outputStr, @inputOutputStr'
 DECLARE @params NVarChar(4000) -- String
@@ -275,7 +275,7 @@ SET     @params = N'@str varchar(50), @outputStr varchar(50), @inputOutputStr va
 
 sp_describe_first_result_set
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataContained].[dbo].[OutRefTest] @ID, @outputID, @inputOutputID, @str, @outputStr, @inputOutputStr'
 DECLARE @params NVarChar(4000) -- String
@@ -283,7 +283,7 @@ SET     @params = N'@ID int, @outputID int, @inputOutputID int, @str varchar(50)
 
 sp_describe_first_result_set
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataContained].[dbo].[Patient_SelectAll] '
 DECLARE @params NVarChar(4000) -- String
@@ -291,7 +291,7 @@ SET     @params = N''
 
 sp_describe_first_result_set
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataContained].[dbo].[Patient_SelectByName] @firstName, @lastName'
 DECLARE @params NVarChar(4000) -- String
@@ -299,7 +299,7 @@ SET     @params = N'@firstName nvarchar(50), @lastName nvarchar(50)'
 
 sp_describe_first_result_set
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataContained].[dbo].[Person_Delete] @PersonID'
 DECLARE @params NVarChar(4000) -- String
@@ -307,7 +307,7 @@ SET     @params = N'@PersonID int'
 
 sp_describe_first_result_set
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataContained].[dbo].[Person_Insert] @FirstName, @LastName, @MiddleName, @Gender'
 DECLARE @params NVarChar(4000) -- String
@@ -315,7 +315,7 @@ SET     @params = N'@FirstName nvarchar(50), @LastName nvarchar(50), @MiddleName
 
 sp_describe_first_result_set
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataContained].[dbo].[Person_Insert_OutputParameter] @FirstName, @LastName, @MiddleName, @Gender, @PersonID'
 DECLARE @params NVarChar(4000) -- String
@@ -323,7 +323,7 @@ SET     @params = N'@FirstName nvarchar(50), @LastName nvarchar(50), @MiddleName
 
 sp_describe_first_result_set
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataContained].[dbo].[Person_SelectAll] '
 DECLARE @params NVarChar(4000) -- String
@@ -331,7 +331,7 @@ SET     @params = N''
 
 sp_describe_first_result_set
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataContained].[dbo].[Person_SelectByKey] @id'
 DECLARE @params NVarChar(4000) -- String
@@ -339,7 +339,7 @@ SET     @params = N'@id int'
 
 sp_describe_first_result_set
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataContained].[dbo].[Person_SelectByKeyLowercase] @id'
 DECLARE @params NVarChar(4000) -- String
@@ -347,7 +347,7 @@ SET     @params = N'@id int'
 
 sp_describe_first_result_set
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataContained].[dbo].[Person_SelectByName] @firstName, @lastName'
 DECLARE @params NVarChar(4000) -- String
@@ -355,7 +355,7 @@ SET     @params = N'@firstName nvarchar(50), @lastName nvarchar(50)'
 
 sp_describe_first_result_set
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataContained].[dbo].[Person_SelectListByName] @firstName, @lastName'
 DECLARE @params NVarChar(4000) -- String
@@ -363,7 +363,7 @@ SET     @params = N'@firstName nvarchar(50), @lastName nvarchar(50)'
 
 sp_describe_first_result_set
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataContained].[dbo].[Person_Update] @PersonID, @FirstName, @LastName, @MiddleName, @Gender'
 DECLARE @params NVarChar(4000) -- String
@@ -371,7 +371,7 @@ SET     @params = N'@PersonID int, @FirstName nvarchar(50), @LastName nvarchar(5
 
 sp_describe_first_result_set
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataContained].[dbo].[PersonSearch] @nameFilter'
 DECLARE @params NVarChar(4000) -- String
@@ -379,13 +379,13 @@ SET     @params = N'@nameFilter nvarchar(512)'
 
 sp_describe_first_result_set
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @nameFilter NVarChar(512) -- String
 SET     @nameFilter = N''
 
 [TestDataContained].[dbo].[PersonSearch]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataContained].[dbo].[QueryProcMultipleParameters] @input, @output1, @output2, @output3'
 DECLARE @params NVarChar(4000) -- String
@@ -393,7 +393,7 @@ SET     @params = N'@input int, @output1 int, @output2 int, @output3 int'
 
 sp_describe_first_result_set
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataContained].[dbo].[QueryProcParameters] @input, @output1, @output2'
 DECLARE @params NVarChar(4000) -- String
@@ -401,7 +401,7 @@ SET     @params = N'@input int, @output1 int, @output2 int'
 
 sp_describe_first_result_set
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataContained].[dbo].[SelectImplicitColumn] '
 DECLARE @params NVarChar(4000) -- String
@@ -409,7 +409,7 @@ SET     @params = N''
 
 sp_describe_first_result_set
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataContained].[dbo].[TableTypeTestProc] @table'
 DECLARE @params NVarChar(4000) -- String
@@ -417,13 +417,13 @@ SET     @params = N'@table [dbo].[TestTableType]'
 
 sp_describe_first_result_set
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @table [dbo].[TestTableType] -- Structured -- Object
 SET     @table = NULL
 
 [TestDataContained].[dbo].[TableTypeTestProc]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataContained].[dbo].[VariableResults] @ReturnFullRow'
 DECLARE @params NVarChar(4000) -- String
@@ -431,16 +431,16 @@ SET     @params = N'@ReturnFullRow bit'
 
 sp_describe_first_result_set
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @ReturnFullRow Bit -- Boolean
 SET     @ReturnFullRow = 0
 
 [TestDataContained].[dbo].[VariableResults]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 EXEC('SELECT * FROM [TestDataContained].[TestSchema].[SchemaTableFunction](NULL)')
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataContained].[TestSchema].[TestProcedure] '
 DECLARE @params NVarChar(4000) -- String
@@ -449,7 +449,7 @@ SET     @params = N''
 sp_describe_first_result_set
 
 RollbackTransaction
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 
 IF OBJECT_ID('dbo.TemporalTable1', 'U') IS NOT NULL ALTER TABLE TemporalTable1 SET ( SYSTEM_VERSIONING = OFF)
 IF OBJECT_ID('dbo.TemporalTable2', 'U') IS NOT NULL ALTER TABLE TemporalTable2 SET ( SYSTEM_VERSIONING = OFF)

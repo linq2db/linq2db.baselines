@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	COUNT(*)
 FROM
@@ -13,7 +13,7 @@ FROM
 WHERE
 	[t1].[Max_1] IN (DATETIME2FROMPARTS(2026, 6, 1, 0, 0, 0, 0, 7))
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	COUNT(*)
 FROM

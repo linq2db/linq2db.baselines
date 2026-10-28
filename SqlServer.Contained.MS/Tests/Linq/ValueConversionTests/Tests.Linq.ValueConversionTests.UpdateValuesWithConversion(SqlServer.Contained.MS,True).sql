@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 UPDATE
 	[TableWithConverterValue]
 SET
@@ -6,7 +6,7 @@ SET
 WHERE
 	[TableWithConverterValue].[Id] = 1
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT TOP (2)
 	[x].[Id],
 	[x].[NoConversion],
@@ -17,7 +17,7 @@ FROM
 WHERE
 	[x].[Id] = 1
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 UPDATE
 	[TableWithConverterValue]
 SET
@@ -25,7 +25,7 @@ SET
 WHERE
 	[TableWithConverterValue].[Id] = 2
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT TOP (2)
 	[x].[Id],
 	[x].[NoConversion],
@@ -36,7 +36,7 @@ FROM
 WHERE
 	[x].[Id] = 2
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[x].[Id],
 	[x].[NoConversion],

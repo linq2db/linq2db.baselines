@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 SELECT
 	[e].[Date],
 	DATETIME2FROMPARTS([j].[Value1], [j].[Value1], [j].[Value1], 0, 0, 0, 0, 3),

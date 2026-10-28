@@ -1,9 +1,9 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 UPDATE
 	[TableWithData]
 SET
 	[Value] = [TableWithData].[Value] + 1,
-	[ValueStr] = Coalesce([TableWithData].[ValueStr], N'') || N'Upd'
+	[ValueStr] = Coalesce([TableWithData].[ValueStr], N'') + N'Upd'
 OUTPUT
 	INSERTED.[Id],
 	DELETED.[Value],
@@ -17,7 +17,7 @@ INTO [tempdb]..[#destination]
 WHERE
 	[TableWithData].[Id] > 3
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[t1].[Id],
 	[t1].[Value],

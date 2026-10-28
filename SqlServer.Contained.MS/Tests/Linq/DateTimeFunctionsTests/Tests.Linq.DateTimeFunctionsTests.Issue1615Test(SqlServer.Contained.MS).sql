@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	CAST(DateAdd(day, 5, [t].[DateTimeValue]) AS Date)
 FROM

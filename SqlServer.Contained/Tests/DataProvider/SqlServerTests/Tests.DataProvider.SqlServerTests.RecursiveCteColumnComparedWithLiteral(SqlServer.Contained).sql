@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 WITH [previous] ([Level_1], [D])
 AS
 (
@@ -23,7 +23,7 @@ FROM
 WHERE
 	[t2].[D] = DATETIMEFROMPARTS(2026, 6, 1, 10, 0, 0, 3)
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 WITH [previous] ([Level_1], [D])
 AS
 (
@@ -48,7 +48,7 @@ FROM
 WHERE
 	[t2].[D] IN (DATETIMEFROMPARTS(2026, 6, 1, 10, 0, 0, 3))
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 WITH [previous] ([Level_1], [D])
 AS
 (

@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 UPDATE
 	[TrimTestTable]
 SET
@@ -6,7 +6,7 @@ SET
 WHERE
 	[TrimTestTable].[ID] = 3
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 UPDATE
 	[TrimTestTable]
 SET
@@ -14,7 +14,7 @@ SET
 WHERE
 	[TrimTestTable].[Data] = N'***XXX***'
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 UPDATE
 	[TrimTestTable]
 SET
@@ -22,7 +22,7 @@ SET
 WHERE
 	[TrimTestTable].[Data] = N'***HHH***'
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[r].[ID],
 	[r].[Data]
@@ -31,7 +31,7 @@ FROM
 ORDER BY
 	[r].[ID]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[r].[ID],
 	[r].[Data]

@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @json NVarChar(4000) -- String
 SET     @json = N'{ "test" : [ 10, 20 ] }'
 DECLARE @path NVarChar(4000) -- String

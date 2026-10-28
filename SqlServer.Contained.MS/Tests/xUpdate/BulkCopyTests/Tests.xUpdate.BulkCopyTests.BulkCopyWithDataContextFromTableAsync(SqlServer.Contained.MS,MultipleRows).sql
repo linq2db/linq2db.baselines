@@ -2,7 +2,7 @@
 
 INSERT ASYNC BULK [SimpleBulkCopyTable](Id)
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 INSERT INTO [SimpleBulkCopyTable]
 (
 	[Id]
@@ -14,7 +14,7 @@ INSERT ASYNC BULK [SimpleBulkCopyTable](Id)
 
 INSERT ASYNC BULK [SimpleBulkCopyTable](Id)
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 INSERT INTO [SimpleBulkCopyTable]
 (
 	[Id]

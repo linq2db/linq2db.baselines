@@ -1,11 +1,11 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 DELETE [p]
 FROM
 	[Parent] [p]
 WHERE
 	[p].[ParentID] > 1000
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 INSERT INTO [Parent]
 (
 	[ParentID],
@@ -29,7 +29,7 @@ FROM
 			[GrandChild] [c_2]
 	) [t1]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	COUNT(*)
 FROM
@@ -37,7 +37,7 @@ FROM
 WHERE
 	[c_1].[ParentID] > 1000
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DELETE [p]
 FROM
 	[Parent] [p]

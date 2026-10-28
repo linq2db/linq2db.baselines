@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 SELECT
 	TRANSLATE(N'2*[3+4]/{7-2}', N'[]{}', N'()()')
 

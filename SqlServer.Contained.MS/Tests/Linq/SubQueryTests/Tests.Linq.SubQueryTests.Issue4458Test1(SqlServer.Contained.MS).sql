@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[m_1].[Id],
 	[d].[ItemId],
@@ -20,7 +20,7 @@ ORDER BY
 	[d].[ItemId],
 	[d].[UserId]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[i].[Id],
 	(
@@ -45,13 +45,13 @@ WHERE
 			[r].[ItemId] = [i].[Id] AND [r].[Score] > 95
 	)
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[Id]
 FROM
 	[Issue4458Item] [t1]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[ItemId],
 	[t1].[QuantityAvailable],
@@ -59,7 +59,7 @@ SELECT
 FROM
 	[WarehouseStock] [t1]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[ItemId],
 	[t1].[UserId],

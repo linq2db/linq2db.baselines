@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Value DateTime
@@ -23,7 +23,7 @@ VALUES
 	@Wide
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	COUNT(*)
 FROM
@@ -31,7 +31,7 @@ FROM
 WHERE
 	CAST([r].[Value] AS Date) = DATETIME2FROMPARTS(2026, 6, 1, 0, 0, 0, 0, 7)
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	COUNT(*)
 FROM
@@ -39,7 +39,7 @@ FROM
 WHERE
 	CAST([r].[Value] AS Date) < DATETIME2FROMPARTS(2026, 6, 1, 0, 0, 0, 0, 7)
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	COUNT(*)
 FROM

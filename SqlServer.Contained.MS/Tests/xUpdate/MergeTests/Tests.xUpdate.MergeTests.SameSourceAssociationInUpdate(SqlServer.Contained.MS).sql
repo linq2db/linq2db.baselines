@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 MERGE INTO [Person] [Target]
 USING (
 	SELECT
@@ -23,11 +23,11 @@ ON ([Target].[PersonID] = [Source].[ID] AND [Source].[FirstName] = N'first 4')
 WHEN MATCHED THEN
 UPDATE
 SET
-	[MiddleName] = N'first ' || Coalesce([Source].[Patient_Diagnosis], N''),
-	[LastName] = N'last ' || Coalesce([Source].[Patient_Diagnosis_1], N'')
+	[MiddleName] = N'first ' + Coalesce([Source].[Patient_Diagnosis], N''),
+	[LastName] = N'last ' + Coalesce([Source].[Patient_Diagnosis_1], N'')
 ;
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

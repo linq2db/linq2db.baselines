@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 INSERT INTO [IssueAliasBugT1]
 (
 	[Id],
@@ -10,7 +10,7 @@ VALUES
 	10
 )
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 INSERT INTO [IssueAliasBugT1]
 (
 	[Id],
@@ -22,7 +22,7 @@ VALUES
 	20
 )
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 INSERT INTO [IssueAliasBugT2]
 (
 	[Id],
@@ -36,7 +36,7 @@ VALUES
 	3
 )
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 INSERT INTO [IssueAliasBugT2]
 (
 	[Id],
@@ -50,7 +50,7 @@ VALUES
 	5
 )
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 INSERT INTO [IssueAliasBugT2]
 (
 	[Id],
@@ -64,7 +64,7 @@ VALUES
 	7
 )
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @minValue Int -- Int32
 SET     @minValue = 15
 

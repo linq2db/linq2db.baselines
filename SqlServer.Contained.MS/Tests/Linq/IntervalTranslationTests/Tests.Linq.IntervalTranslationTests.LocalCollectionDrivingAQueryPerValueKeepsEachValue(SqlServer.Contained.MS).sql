@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @InSeconds BigInt -- Int64
@@ -27,7 +27,7 @@ VALUES
 	@UndeclaredSeconds
 )
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @InSeconds BigInt -- Int64
@@ -56,7 +56,7 @@ VALUES
 	@UndeclaredSeconds
 )
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 3
 DECLARE @InSeconds BigInt -- Int64
@@ -85,7 +85,7 @@ VALUES
 	@UndeclaredSeconds
 )
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @p BigInt -- Int64
 SET     @p = 900
 DECLARE @p_1 BigInt -- Int64
@@ -102,7 +102,7 @@ FROM
 WHERE
 	[x].[InSeconds] >= @p AND [x].[InSeconds] <= @p_1
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @p BigInt -- Int64
 SET     @p = 2700
 DECLARE @p_1 BigInt -- Int64
@@ -119,7 +119,7 @@ FROM
 WHERE
 	[x].[InSeconds] >= @p AND [x].[InSeconds] <= @p_1
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @p BigInt -- Int64
 SET     @p = 900
 DECLARE @p_1 BigInt -- Int64
@@ -136,7 +136,7 @@ FROM
 WHERE
 	[x].[InSeconds] >= @p AND [x].[InSeconds] <= @p_1
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @p BigInt -- Int64
 SET     @p = 2700
 DECLARE @p_1 BigInt -- Int64

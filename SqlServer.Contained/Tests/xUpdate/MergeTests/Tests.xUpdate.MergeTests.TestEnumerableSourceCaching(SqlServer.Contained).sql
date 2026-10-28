@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 MERGE INTO [CacheTestTable] [Target]
 USING (VALUES
 	(1,1), (2,2)
@@ -27,7 +27,7 @@ VALUES
 )
 ;
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -36,7 +36,7 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 MERGE INTO [CacheTestTable] [Target]
 USING (VALUES
 	(1,1), (2,4), (3,3)
@@ -65,7 +65,7 @@ VALUES
 )
 ;
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[t1].[Id],
 	[t1].[Value]

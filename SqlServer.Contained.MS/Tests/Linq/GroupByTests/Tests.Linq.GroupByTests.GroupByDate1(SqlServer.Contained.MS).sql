@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	SUM([grp_1].[MoneyValue]),
 	[grp_1].[Year_1],

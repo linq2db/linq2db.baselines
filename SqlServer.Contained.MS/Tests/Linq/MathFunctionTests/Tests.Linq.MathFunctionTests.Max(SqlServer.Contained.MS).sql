@@ -1,10 +1,10 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t].[c1]
 FROM
 	(
 		SELECT
-			GREATEST([p].[MoneyValue], 5.1) as [c1]
+			IIF([p].[MoneyValue] >= 5.1, [p].[MoneyValue], 5.1) as [c1]
 		FROM
 			[LinqDataTypes] [p]
 	) [t]

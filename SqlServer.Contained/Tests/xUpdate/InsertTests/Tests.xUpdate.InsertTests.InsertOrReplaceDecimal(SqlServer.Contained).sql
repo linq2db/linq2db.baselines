@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 DECLARE @ID Int -- Int32
 SET     @ID = 1
 DECLARE @MoneyValue Decimal(1, 0)
@@ -15,7 +15,7 @@ VALUES
 	@MoneyValue
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @ID Int -- Int32
 SET     @ID = 1
 DECLARE @MoneyValue Decimal(1, 0)
@@ -42,7 +42,7 @@ WHEN NOT MATCHED THEN
 		@MoneyValue
 	);
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @ID Int -- Int32
 SET     @ID = 2
 DECLARE @MoneyValue Decimal(1, 1)
@@ -59,7 +59,7 @@ VALUES
 	@MoneyValue
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @ID Int -- Int32
 SET     @ID = 2
 DECLARE @MoneyValue Decimal(1, 1)
@@ -86,7 +86,7 @@ WHEN NOT MATCHED THEN
 		@MoneyValue
 	);
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @ID Int -- Int32
 SET     @ID = 3
 DECLARE @MoneyValue Decimal(2, 2)
@@ -103,7 +103,7 @@ VALUES
 	@MoneyValue
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @ID Int -- Int32
 SET     @ID = 3
 DECLARE @MoneyValue Decimal(2, 2)
@@ -130,7 +130,7 @@ WHEN NOT MATCHED THEN
 		@MoneyValue
 	);
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @ID Int -- Int32
 SET     @ID = 4
 DECLARE @MoneyValue Decimal(4, 4)
@@ -147,7 +147,7 @@ VALUES
 	@MoneyValue
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @ID Int -- Int32
 SET     @ID = 4
 DECLARE @MoneyValue Decimal(4, 4)
@@ -174,7 +174,7 @@ WHEN NOT MATCHED THEN
 		@MoneyValue
 	);
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @ID Int -- Int32
 SET     @ID = 5
 DECLARE @MoneyValue Decimal(2, 1)
@@ -191,7 +191,7 @@ VALUES
 	@MoneyValue
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @ID Int -- Int32
 SET     @ID = 5
 DECLARE @MoneyValue Decimal(2, 1)
@@ -218,7 +218,7 @@ WHEN NOT MATCHED THEN
 		@MoneyValue
 	);
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @ID Int -- Int32
 SET     @ID = 6
 DECLARE @MoneyValue Decimal(3, 2)
@@ -235,7 +235,7 @@ VALUES
 	@MoneyValue
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @ID Int -- Int32
 SET     @ID = 6
 DECLARE @MoneyValue Decimal(3, 2)
@@ -262,7 +262,7 @@ WHEN NOT MATCHED THEN
 		@MoneyValue
 	);
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @ID Int -- Int32
 SET     @ID = 7
 DECLARE @MoneyValue Decimal(5, 4)
@@ -279,7 +279,7 @@ VALUES
 	@MoneyValue
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @ID Int -- Int32
 SET     @ID = 7
 DECLARE @MoneyValue Decimal(5, 4)

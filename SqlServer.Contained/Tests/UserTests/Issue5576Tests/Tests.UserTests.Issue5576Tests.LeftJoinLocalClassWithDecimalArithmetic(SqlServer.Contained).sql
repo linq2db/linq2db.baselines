@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 DECLARE @Guid UniqueIdentifier -- Guid
 SET     @Guid = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 DECLARE @Sold Int -- Int32
@@ -15,7 +15,7 @@ VALUES
 	@Sold
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Guid UniqueIdentifier -- Guid
 SET     @Guid = 'a948600d-de21-4f74-8ac2-9516b287076e'
 DECLARE @Sold Int -- Int32
@@ -32,7 +32,7 @@ VALUES
 	@Sold
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @Guid UniqueIdentifier -- Guid
 SET     @Guid = 'bd3973a5-4323-4dd8-9f4f-df9f93e2a627'
 DECLARE @Sold Int -- Int32
@@ -49,7 +49,7 @@ VALUES
 	@Sold
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[r].[Guid],
 	[lc].[Count],

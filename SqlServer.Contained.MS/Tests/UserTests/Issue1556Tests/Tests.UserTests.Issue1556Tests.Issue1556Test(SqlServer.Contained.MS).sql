@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[p].[ParentID],
 	[p].[Value1],
@@ -16,7 +16,7 @@ FROM
 				[y].[ParentID] = [p].[ParentID]
 		)
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[p].[ParentID],
 	[p].[Value1],

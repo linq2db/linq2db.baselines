@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 INSERT INTO [InsertIssueTest]
 (
 	[Pk],
@@ -20,7 +20,7 @@ FROM
 			1 = 0
 	) [t2]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @p SmallInt -- Int16
 SET     @p = 1234
 
@@ -45,7 +45,7 @@ FROM
 			[t1].[ID] = @p
 	) [t2]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[t1].[Pk],
 	[t1].[ID],

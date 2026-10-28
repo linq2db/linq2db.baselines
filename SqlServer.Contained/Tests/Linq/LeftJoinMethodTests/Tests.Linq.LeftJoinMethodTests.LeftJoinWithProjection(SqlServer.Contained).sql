@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 SELECT
 	[x].[Name],
 	[o].[Id]
@@ -6,14 +6,14 @@ FROM
 	[Customer] [x]
 		LEFT JOIN [Order] [o] ON [x].[Id] = [o].[CustomerId]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[t1].[Id],
 	[t1].[Name]
 FROM
 	[Customer] [t1]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[t1].[Id],
 	[t1].[CustomerId],

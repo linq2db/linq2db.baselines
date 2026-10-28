@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025
+﻿-- SqlServer.2019
 CREATE TABLE [tempdb]..[#Issue4657TempTable1]
 (
 	[Id]   Int NOT NULL,
@@ -11,7 +11,7 @@ INSERT BULK [tempdb]..[#Issue4657TempTable1](Id, Code)
 
 
 
--- SqlServer.2025
+-- SqlServer.2019
 CREATE TABLE [tempdb]..[#Issue4657TempTable2]
 (
 	[Id]   Int NOT NULL,
@@ -24,7 +24,7 @@ INSERT BULK [tempdb]..[#Issue4657TempTable2](Id, Code)
 
 
 
--- SqlServer.2025
+-- SqlServer.2019
 WITH [CTE_1] ([Id], [Code])
 AS
 (
@@ -69,12 +69,12 @@ INTO [tempdb]..[#Issue4657TempTable2]
 
 
 
--- SqlServer.2025
+-- SqlServer.2019
 DROP TABLE IF EXISTS [tempdb]..[#Issue4657TempTable2]
 
 
 
--- SqlServer.2025
+-- SqlServer.2019
 DROP TABLE IF EXISTS [tempdb]..[#Issue4657TempTable1]
 
 

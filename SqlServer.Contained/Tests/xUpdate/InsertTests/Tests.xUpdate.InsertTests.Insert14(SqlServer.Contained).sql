@@ -1,11 +1,11 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 DELETE [p]
 FROM
 	[Person] [p]
 WHERE
 	[p].[FirstName] LIKE N'Insert14%' ESCAPE N'~'
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 INSERT INTO [Person]
 (
 	[FirstName],
@@ -14,7 +14,7 @@ INSERT INTO [Person]
 )
 VALUES
 (
-	N'Insert14' || Coalesce((
+	N'Insert14' + Coalesce((
 		SELECT
 			[p].[FirstName]
 		FROM
@@ -26,7 +26,7 @@ VALUES
 	'M'
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	COUNT(*)
 FROM
@@ -34,7 +34,7 @@ FROM
 WHERE
 	[p].[FirstName] LIKE N'Insert14%' ESCAPE N'~'
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DELETE [p]
 FROM
 	[Person] [p]

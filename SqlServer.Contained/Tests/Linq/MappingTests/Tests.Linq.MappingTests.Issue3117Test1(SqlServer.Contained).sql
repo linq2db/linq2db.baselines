@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = Tests.Linq.MappingTests+Id`1[Tests.Linq.MappingTests+User]
 
@@ -13,13 +13,13 @@ VALUES
 
 SELECT SCOPE_IDENTITY()
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[t1].[Id]
 FROM
 	[User] [t1]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @userId Int -- Int32
 SET     @userId = Tests.Linq.MappingTests+Id`1[Tests.Linq.MappingTests+User]
 
@@ -30,7 +30,7 @@ FROM
 WHERE
 	[u].[Id] = @userId
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @value Int -- Int32
 SET     @value = Tests.Linq.MappingTests+Id`1[Tests.Linq.MappingTests+User]
 

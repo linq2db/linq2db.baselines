@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 CREATE TABLE [temp_table_1]
 (
 	[ID]    Int            NOT NULL,
@@ -9,7 +9,7 @@ CREATE TABLE [temp_table_1]
 
 INSERT BULK [temp_table_1](ID, Value)
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 CREATE TABLE [temp_table_2]
 (
 	[Value] NVarChar(50) NOT NULL,
@@ -17,7 +17,7 @@ CREATE TABLE [temp_table_2]
 	CONSTRAINT [PK_temp_table_2] PRIMARY KEY CLUSTERED ([Value])
 )
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 INSERT INTO [temp_table_2]
 (
 	[Value]
@@ -35,9 +35,9 @@ FROM
 				[gr].[ID] = [c_1].[ID]
 		) [t1]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DROP TABLE IF EXISTS [temp_table_2]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DROP TABLE IF EXISTS [temp_table_1]
 

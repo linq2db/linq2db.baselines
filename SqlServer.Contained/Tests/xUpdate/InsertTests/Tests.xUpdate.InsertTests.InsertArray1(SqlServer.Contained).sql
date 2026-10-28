@@ -1,11 +1,11 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 DELETE [t]
 FROM
 	[LinqDataTypes] [t]
 WHERE
 	[t].[ID] > 1000
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 INSERT INTO [LinqDataTypes]
 (
 	[ID],
@@ -19,7 +19,7 @@ VALUES
 	NULL
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT TOP (2)
 	[t].[ID],
 	[t].[MoneyValue],
@@ -33,7 +33,7 @@ FROM
 WHERE
 	[t].[ID] = 1001
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DELETE [t]
 FROM
 	[LinqDataTypes] [t]

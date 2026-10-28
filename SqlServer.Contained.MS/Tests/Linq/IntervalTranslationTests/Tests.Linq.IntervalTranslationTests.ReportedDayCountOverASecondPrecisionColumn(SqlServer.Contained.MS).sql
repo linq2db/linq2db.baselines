@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @StartedOn DateTime
@@ -27,7 +27,7 @@ VALUES
 	@ClosedOn
 )
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @StartedOn DateTime
@@ -56,7 +56,7 @@ VALUES
 	@ClosedOn
 )
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT TOP (2)
 	CAST(Floor(CAST((DateDiff_Big(day, MIN([grp].[StartedOn]), MAX([grp].[StartedOn])) * 86400) * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, MIN([grp].[StartedOn]), MAX([grp].[StartedOn])) AS Int), MIN([grp].[StartedOn])), MAX([grp].[StartedOn])) / 100 AS Float) / 864000000000) AS Int) + 1
 FROM

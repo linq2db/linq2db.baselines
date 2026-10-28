@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 WITH [CTE_1] ([Obj_Operator])
 AS
 (
@@ -12,7 +12,7 @@ SELECT TOP (1)
 FROM
 	[CTE_1] [t1]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT TOP (1)
 	[person_1].[LastName]
 FROM

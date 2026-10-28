@@ -1,11 +1,11 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[x].[ParentID]
 FROM
 	[Parent] [x]
 		INNER JOIN [Child] [y] ON [x].[ParentID] = [y].[ParentID]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT DISTINCT
 	[g_1].[ParentID]
 FROM

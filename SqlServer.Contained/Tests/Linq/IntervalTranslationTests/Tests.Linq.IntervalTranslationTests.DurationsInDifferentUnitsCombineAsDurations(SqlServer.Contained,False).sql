@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @InSeconds BigInt -- Int64
@@ -27,7 +27,7 @@ VALUES
 	@UndeclaredSeconds
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT TOP (2)
 	[r].[InSeconds] + [r].[InSeconds],
 	[r].[InTicks] + [r].[InTicks],
@@ -43,7 +43,7 @@ SELECT TOP (2)
 FROM
 	[DurationRow] [r]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT TOP (2)
 	CAST([r].[InSeconds] * 10000000 + [r].[InTicks] AS BigInt)
 FROM

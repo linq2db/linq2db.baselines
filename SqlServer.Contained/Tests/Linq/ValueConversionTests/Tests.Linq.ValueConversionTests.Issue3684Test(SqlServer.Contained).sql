@@ -1,7 +1,7 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 INSERT INTO [Issue3684Table] DEFAULT VALUES
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @DateTime0 DateTime2
 SET     @DateTime0 = DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 0, 7)
 DECLARE @DateTime3 DateTime
@@ -18,7 +18,7 @@ VALUES
 	@DateTime3
 )
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[t1].[Id],
 	[t1].[FirstAppointmentTime],

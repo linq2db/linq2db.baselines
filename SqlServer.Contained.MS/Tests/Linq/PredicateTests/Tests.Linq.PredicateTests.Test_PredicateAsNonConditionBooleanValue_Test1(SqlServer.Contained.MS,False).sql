@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[r].[Id],
 	IIF([r].[Value1] = [r].[Value2], 1, 0),
@@ -30,7 +30,7 @@ FROM
 WHERE
 	[r].[Id] <> -1
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[Id],
 	[t1].[Value1],

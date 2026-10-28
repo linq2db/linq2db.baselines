@@ -1,12 +1,12 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 SELECT
-	Coalesce([t].[Value1], N'') || CAST([t].[Value2] AS NVarChar(11)) || Lower(CAST([t].[Value3] AS Char(36)))
+	Coalesce([t].[Value1], N'') + CAST([t].[Value2] AS NVarChar(11)) + Lower(CAST([t].[Value3] AS Char(36)))
 FROM
 	[StringConcatIntGuidNullEntity] [t]
 ORDER BY
 	[t].[ID]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[t1].[ID],
 	[t1].[Value1],

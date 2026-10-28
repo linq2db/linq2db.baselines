@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT TOP (2)
 	DatePart(year, Coalesce([j].[SmallTyped], CAST('1900-01-01T00:00:00.000' AS SMALLDATETIME))),
 	DatePart(year, Coalesce([j].[SmallPlain], DATETIME2FROMPARTS(1, 1, 1, 0, 0, 0, 0, 7))),

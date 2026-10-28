@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025
+﻿-- SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 2
 

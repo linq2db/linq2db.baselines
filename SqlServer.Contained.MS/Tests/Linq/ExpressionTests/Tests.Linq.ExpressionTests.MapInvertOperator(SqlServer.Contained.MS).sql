@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @addMask Int -- Int32
 SET     @addMask = 3
 DECLARE @removeMask Int -- Int32
@@ -9,7 +9,7 @@ UPDATE
 SET
 	[Value] = [WarehouseTableDto].[Value] | @addMask & ~@removeMask
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT TOP (2)
 	[t1].[Id],
 	[t1].[Value]

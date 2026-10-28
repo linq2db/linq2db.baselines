@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 DECLARE @input Int -- Int32
 SET     @input = 1
 DECLARE @output1 Int -- Int32
@@ -8,7 +8,7 @@ SET     @output2 = 0
 
 QueryProcParameters
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @input Int -- Int32
 SET     @input = 1
 DECLARE @output1 Int -- Int32
@@ -18,7 +18,7 @@ SET     @output2 = 0
 
 QueryProcParameters
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @input Int -- Int32
 SET     @input = 1
 DECLARE @output1 Int -- Int32
@@ -28,7 +28,7 @@ SET     @output2 = 0
 
 QueryProcParameters
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @input Int -- Int32
 SET     @input = 1
 DECLARE @output1 Int -- Int32
@@ -38,7 +38,7 @@ SET     @output2 = 0
 
 QueryProcParameters
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @input Int -- Int32
 SET     @input = 1
 DECLARE @output1 Int -- Int32
@@ -48,7 +48,7 @@ SET     @output2 = 0
 
 QueryProcParameters
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 DECLARE @input Int -- Int32
 SET     @input = 1
 DECLARE @output1 Int -- Int32

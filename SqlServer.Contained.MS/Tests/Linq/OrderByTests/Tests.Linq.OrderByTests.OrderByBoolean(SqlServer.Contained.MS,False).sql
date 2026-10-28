@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],
@@ -8,9 +8,9 @@ SELECT
 FROM
 	[Person] [t1]
 ORDER BY
-	IIF(LEN([t1].[FirstName] || N'.') > 5, 1, 0)
+	IIF(LEN([t1].[FirstName] + N'.') > 5, 1, 0)
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t].[Id],
 	LEAD([t].[IntValue]) OVER (ORDER BY [t].[Id])

@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 WITH [CTE1_] ([ParentID])
 AS
 (
@@ -32,7 +32,7 @@ FROM
 	[CTE1_] [t1]
 		INNER JOIN [LAST0] [c4_1] ON [c4_1].[ParentID] = [t1].[ParentID]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[t1].[ChildID],
 	[t1].[ParentID]
@@ -42,7 +42,7 @@ ORDER BY
 	[t1].[ChildID],
 	[t1].[ParentID]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT DISTINCT
 	[c4].[ChildID],
 	[c4].[ParentID]

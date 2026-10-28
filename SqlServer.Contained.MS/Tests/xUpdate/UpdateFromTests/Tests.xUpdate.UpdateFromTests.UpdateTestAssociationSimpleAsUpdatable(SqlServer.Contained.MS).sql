@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 UPDATE
 	[v]
 SET
@@ -11,7 +11,7 @@ FROM
 WHERE
 	[a_Relation].[RelatedValue1] = 11
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT TOP (1)
 	[v].[Value1],
 	[v].[Value2],

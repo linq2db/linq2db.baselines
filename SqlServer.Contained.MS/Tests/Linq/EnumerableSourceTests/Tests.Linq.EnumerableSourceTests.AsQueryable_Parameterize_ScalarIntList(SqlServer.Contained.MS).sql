@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @item Int -- Int32
 SET     @item = 10
 DECLARE @item_1 Int -- Int32

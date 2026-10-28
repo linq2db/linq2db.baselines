@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 MERGE INTO [UnusedSourceTable] [Target]
 USING (
 	SELECT 1 AS [Unused]
@@ -23,7 +23,7 @@ VALUES
 )
 ;
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT TOP (2)
 	[r].[Id],
 	[r].[Value]

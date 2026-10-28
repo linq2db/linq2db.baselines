@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 SELECT
 	[x].[Id]
 FROM
@@ -31,7 +31,7 @@ WHERE
 ORDER BY
 	[x].[Key_1]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[x].[Id]
 FROM

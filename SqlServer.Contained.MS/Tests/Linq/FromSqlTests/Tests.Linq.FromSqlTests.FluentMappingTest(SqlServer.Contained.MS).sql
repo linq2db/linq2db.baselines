@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @idFilter Int -- Int32
 SET     @idFilter = 1
 
@@ -13,7 +13,7 @@ FROM
 			SELECT * FROM sample_other_class where parent_id = [t].[id] and id >= @idFilter
 		) [a_AssociatedOne]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @idFilter Int -- Int32
 SET     @idFilter = 1
 

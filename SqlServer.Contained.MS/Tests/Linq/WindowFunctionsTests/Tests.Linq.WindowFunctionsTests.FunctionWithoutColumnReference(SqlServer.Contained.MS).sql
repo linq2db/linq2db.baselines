@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @rowCount Int -- Int32
 SET     @rowCount = 9
 DECLARE @p Int -- Int32

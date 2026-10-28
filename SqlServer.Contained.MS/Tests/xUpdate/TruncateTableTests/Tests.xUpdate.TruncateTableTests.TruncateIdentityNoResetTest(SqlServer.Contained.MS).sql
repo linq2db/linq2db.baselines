@@ -1,7 +1,7 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 DELETE FROM [test_temp]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 INSERT INTO [test_temp]
 (
 	[Field1]
@@ -11,7 +11,7 @@ VALUES
 	1
 )
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 INSERT INTO [test_temp]
 (
 	[Field1]
@@ -21,7 +21,7 @@ VALUES
 	1
 )
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @skip Int -- Int32
 SET     @skip = 1
 
@@ -34,10 +34,10 @@ ORDER BY
 	[t1].[ID]
 OFFSET @skip ROWS FETCH NEXT 2 ROWS ONLY 
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DELETE FROM [test_temp]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 INSERT INTO [test_temp]
 (
 	[Field1]
@@ -47,7 +47,7 @@ VALUES
 	1
 )
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 INSERT INTO [test_temp]
 (
 	[Field1]
@@ -57,7 +57,7 @@ VALUES
 	1
 )
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @skip Int -- Int32
 SET     @skip = 1
 

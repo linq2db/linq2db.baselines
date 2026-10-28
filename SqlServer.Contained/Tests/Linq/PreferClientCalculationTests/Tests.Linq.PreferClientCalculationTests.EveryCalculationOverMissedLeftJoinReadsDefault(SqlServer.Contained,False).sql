@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 SELECT
 	[e].[Id],
 	Coalesce([j].[Value1], 0) + 1,
@@ -10,7 +10,7 @@ SELECT
 	IIF(Coalesce([j].[Flag], 0) = 0, N't', N'f'),
 	IIF(NOT (Coalesce([j].[Flag], 0) = 1 OR [e].[Id] < 0), N't', N'f'),
 	Abs(Coalesce([j].[Value1], 0)) + 1,
-	N'x' || CAST(Coalesce([j].[Value1], 0) AS NVarChar(11)),
+	N'x' + CAST(Coalesce([j].[Value1], 0) AS NVarChar(11)),
 	ABS(Coalesce([j].[Value1], 0)) + 1,
 	CAST(Coalesce([j].[Value1], 0) AS Float) + 1,
 	IIF([e].[Id] > 0, Coalesce([j].[Value1], 0), 5) + 1,
@@ -20,7 +20,7 @@ FROM
 	[MissedJoinEntity] [e]
 		LEFT JOIN [MissedJoinEntity] [j] ON [j].[Id] = [e].[Id] + 1000
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -30,7 +30,7 @@ SELECT
 FROM
 	[MissedJoinEntity] [t1]
 
--- SqlServer.Contained SqlServer.2025
+-- SqlServer.Contained SqlServer.2019
 SELECT
 	[j].[Value1]
 FROM

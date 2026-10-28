@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 SELECT
 	CAST(DateAdd(week, -1, [t].[TransactionDate]) AS Date)
 FROM

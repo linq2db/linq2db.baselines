@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[FirstName],
 	[t1].[LastName],
@@ -7,8 +7,8 @@ FROM
 	(
 		SELECT
 			[p].[FirstName],
-			[p].[LastName] || N', ' || [p].[FirstName] as [LastName],
-			[p].[LastName] || N', ' || [p].[FirstName] || N' (' || Coalesce([p].[MiddleName], N'') || N' + ' || Coalesce([p].[MiddleName], N'') || N')' as [FullName]
+			[p].[LastName] + N', ' + [p].[FirstName] as [LastName],
+			[p].[LastName] + N', ' + [p].[FirstName] + N' (' + Coalesce([p].[MiddleName], N'') + N' + ' + Coalesce([p].[MiddleName], N'') + N')' as [FullName]
 		FROM
 			[Person] [p]
 	) [t1]
@@ -19,7 +19,7 @@ ORDER BY
 	[t1].[FirstName],
 	[t1].[LastName]
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

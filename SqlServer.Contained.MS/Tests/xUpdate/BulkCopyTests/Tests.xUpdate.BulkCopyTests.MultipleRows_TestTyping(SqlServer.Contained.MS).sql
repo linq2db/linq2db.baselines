@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2025
+﻿-- SqlServer.Contained.MS SqlServer.2019
 INSERT INTO [MultipleRowsTable]
 (
 	[Id],
@@ -9,7 +9,7 @@ VALUES
 (1,NULL,1),
 (2,1.5,-2.6)
 
--- SqlServer.Contained.MS SqlServer.2025
+-- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[Id],
 	[t1].[DecimalValue1],

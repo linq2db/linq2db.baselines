@@ -13,7 +13,7 @@ CROSS JOIN (
 WHERE @ef_filter__p1 = CAST(1 AS bit) OR [c].[IsDeleted] = CAST(0 AS bit) OR [c].[IsDeleted] = CAST(0 AS bit)
 
 
--- SqlServer.2025
+-- SqlServer.2019
 DECLARE @p Int -- Int32
 SET     @p = 1
 

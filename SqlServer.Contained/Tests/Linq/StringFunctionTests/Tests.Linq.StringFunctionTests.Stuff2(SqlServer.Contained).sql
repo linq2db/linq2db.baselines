@@ -1,10 +1,10 @@
-﻿-- SqlServer.Contained SqlServer.2025
+﻿-- SqlServer.Contained SqlServer.2019
 SELECT
 	[t].[Id],
 	[t].[Name],
 	Stuff((
 		SELECT
-			N',' || [c_1].[Name]
+			N',' + [c_1].[Name]
 		FROM
 			[Category] [c_1]
 		WHERE
