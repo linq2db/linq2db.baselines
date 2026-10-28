@@ -23,7 +23,6 @@ SET
 WHERE
 	t."ParentID" = 1010
 
-CommitTransaction
 -- Oracle.18.Managed Oracle.Managed Oracle12
 SELECT
 	t."ParentID",
