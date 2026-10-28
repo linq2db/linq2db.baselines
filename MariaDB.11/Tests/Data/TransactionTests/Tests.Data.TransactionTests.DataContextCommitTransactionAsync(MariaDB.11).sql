@@ -16,7 +16,6 @@ VALUES
 	@Value1
 )
 
-CommitTransactionAsync
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DELETE  
 FROM
