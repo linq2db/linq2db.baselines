@@ -16,7 +16,6 @@ VALUES
 	$Value1
 )
 
-CommitTransactionAsync
 -- YDB Ydb
 DELETE FROM
 	Parent
