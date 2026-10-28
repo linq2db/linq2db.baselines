@@ -38,5 +38,7 @@ SELECT
 FROM
 	"StringTypesTable" "t"
 WHERE
-	(Coalesce("t"."VarCharColumn", '') || Coalesce(?, '')) LIKE "t"."NVarCharColumn"
+	(Coalesce("t"."VarCharColumn", '') || Coalesce(?, '')) NOT LIKE '%?%'
+ORDER BY
+	"t"."Id"
 
