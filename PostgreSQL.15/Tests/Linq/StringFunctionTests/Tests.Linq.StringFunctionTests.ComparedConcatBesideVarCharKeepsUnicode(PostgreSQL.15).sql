@@ -26,7 +26,7 @@ FROM
 	"StringTypesTable" t1
 
 -- PostgreSQL.15 PostgreSQL12
-DECLARE @suffix Varchar(3) -- String
+DECLARE @suffix Text(3) -- String
 SET     @suffix = 'Жук'
 
 SELECT
@@ -34,5 +34,7 @@ SELECT
 FROM
 	"StringTypesTable" t
 WHERE
-	(Coalesce(t."VarCharColumn", '') || Coalesce(:suffix, '')) LIKE t."NVarCharColumn"
+	(Coalesce(t."VarCharColumn", '') || Coalesce(:suffix, '')) NOT LIKE '%?%'
+ORDER BY
+	t."Id"
 
