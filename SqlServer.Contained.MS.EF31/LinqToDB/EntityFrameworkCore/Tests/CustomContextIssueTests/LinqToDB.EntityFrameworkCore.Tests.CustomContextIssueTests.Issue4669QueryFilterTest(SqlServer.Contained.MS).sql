@@ -14,7 +14,7 @@ INSERT INTO [Items] ([Id], [IsDeleted], [Name])
 VALUES (@p0, @p1, @p2);
 
 
--- SqlServer.2025
+-- SqlServer.2019
 SELECT
 	[p].[Id],
 	[p].[Name]
