@@ -16,7 +16,6 @@ VALUES
 	:Value1
 )
 
-CommitTransactionAsync
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DELETE FROM
 	"Parent" t1
