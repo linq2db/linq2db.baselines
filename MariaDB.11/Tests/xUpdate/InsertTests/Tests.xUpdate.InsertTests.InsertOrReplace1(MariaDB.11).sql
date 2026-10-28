@@ -24,7 +24,8 @@ VALUES
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-SELECT LAST_INSERT_ID()
+SELECT
+	LAST_INSERT_ID() as `c1`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @PersonID Int32
