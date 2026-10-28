@@ -28,5 +28,7 @@ SELECT
 FROM
 	StringTypesTable t
 WHERE
-	(concat(Coalesce(t.VarCharColumn, ''), 'Жук')) LIKE t.NVarCharColumn
+	(concat(Coalesce(t.VarCharColumn, ''), 'Жук')) NOT LIKE '%?%'
+ORDER BY
+	t.Id
 
