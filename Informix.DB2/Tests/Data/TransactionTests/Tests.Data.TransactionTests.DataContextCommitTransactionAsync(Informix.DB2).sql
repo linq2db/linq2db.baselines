@@ -16,7 +16,6 @@ VALUES
 	@Value1
 )
 
-CommitTransactionAsync
 -- Informix.DB2 Informix
 DELETE FROM
 	Parent

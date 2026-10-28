@@ -331,7 +331,7 @@ FROM
 	BooleanTable r
 WHERE
 	CASE
-		WHEN r.Value1 >= r.Value5 THEN 't'::BOOLEAN
+		WHEN r.Value1 >= r.Value5 AND r.Value5 IS NOT NULL THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
 	END = CASE
 		WHEN (r.Value4 <> r.Value2) THEN 't'::BOOLEAN
@@ -394,7 +394,7 @@ FROM
 	BooleanTable r
 WHERE
 	CASE
-		WHEN r.Value1 >= r.Value5 THEN 't'::BOOLEAN
+		WHEN r.Value1 >= r.Value5 AND r.Value5 IS NOT NULL THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
 	END <> CASE
 		WHEN (r.Value4 <> r.Value2) THEN 't'::BOOLEAN
@@ -484,7 +484,8 @@ FROM
 	BooleanTable r
 WHERE
 	CASE
-		WHEN r.Value4 >= r.Value5 THEN 't'::BOOLEAN
+		WHEN r.Value4 >= r.Value5 AND r.Value4 IS NOT NULL AND r.Value5 IS NOT NULL
+			THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
 	END = CASE
 		WHEN (r.Value5 <> r.Value4) THEN 't'::BOOLEAN
@@ -513,7 +514,8 @@ FROM
 	BooleanTable r
 WHERE
 	CASE
-		WHEN r.Value4 >= r.Value5 THEN 't'::BOOLEAN
+		WHEN r.Value4 >= r.Value5 AND r.Value4 IS NOT NULL AND r.Value5 IS NOT NULL
+			THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
 	END <> CASE
 		WHEN (r.Value5 <> r.Value4) THEN 't'::BOOLEAN
