@@ -7,7 +7,8 @@ FROM
 INSERT INTO `TestIdentity` () VALUES ()
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-SELECT LAST_INSERT_ID()
+SELECT
+	LAST_INSERT_ID() as `c1`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DELETE  

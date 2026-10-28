@@ -27,8 +27,6 @@ FROM
 
 
 
-
-
 -- MariaDB.10.MySqlConnector MariaDB
 SELECT
 	`e`.`IsDeleted`,
@@ -48,6 +46,8 @@ SELECT
 	`e`.`ShipCountry`
 FROM
 	`Orders` `e`
+
+
 
 
 
