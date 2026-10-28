@@ -26,7 +26,7 @@ FROM
 	[StringTypesTable] [t1]
 
 -- SqlServer.2017
-DECLARE @suffix NVarChar(50) -- String
+DECLARE @suffix NVarChar(4000) -- String
 SET     @suffix = N'Жук'
 
 SELECT
@@ -34,5 +34,7 @@ SELECT
 FROM
 	[StringTypesTable] [t]
 WHERE
-	(Coalesce([t].[VarCharColumn], '') + Coalesce(@suffix, N'')) LIKE [t].[NVarCharColumn]
+	(Coalesce([t].[VarCharColumn], '') + Coalesce(@suffix, N'')) NOT LIKE N'%?%'
+ORDER BY
+	[t].[Id]
 
