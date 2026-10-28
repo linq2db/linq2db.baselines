@@ -501,6 +501,10 @@ CREATE TABLE AllTypes
 
 
 
+
+
+
+
 	datetime2DataType        varchar(50)       NULL,
 	datetimeoffsetDataType   varchar(50)       NULL,
 	datetimeoffset0DataType  varchar(50)       NULL,
