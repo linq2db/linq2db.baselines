@@ -26,7 +26,7 @@ FROM
 	"StringTypesTable" t1
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @suffix NVarchar2(3) -- String
+DECLARE @suffix Varchar2(3) -- String
 SET     @suffix = 'Жук'
 
 SELECT
@@ -34,5 +34,7 @@ SELECT
 FROM
 	"StringTypesTable" t
 WHERE
-	(t."VarCharColumn" || :suffix) LIKE t."NVarCharColumn"
+	(t."VarCharColumn" || :suffix) NOT LIKE '%?%'
+ORDER BY
+	t."Id"
 
