@@ -16,7 +16,6 @@ VALUES
 	@Value1
 )
 
-CommitTransactionAsync
 -- Firebird.2.5 Firebird
 DELETE FROM
 	"Parent" "t1"

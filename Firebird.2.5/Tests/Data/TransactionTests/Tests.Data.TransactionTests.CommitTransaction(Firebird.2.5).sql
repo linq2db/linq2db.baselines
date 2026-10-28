@@ -23,7 +23,6 @@ SET
 WHERE
 	"t"."ParentID" = 1010
 
-CommitTransaction
 -- Firebird.2.5 Firebird
 SELECT FIRST 1
 	"t"."ParentID",
