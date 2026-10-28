@@ -55,7 +55,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] <> [r].[Value4] OR [r].[Value4] IS NULL
+	NOT ([r].[Value1] = [r].[Value4] AND [r].[Value4] IS NOT NULL)
 
 -- SqlServer.2022
 SELECT
@@ -171,7 +171,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] <> [r].[Value4] OR [r].[Value4] IS NULL
+	NOT ([r].[Value1] = [r].[Value4] AND [r].[Value4] IS NOT NULL)
 
 -- SqlServer.2022
 SELECT
@@ -240,7 +240,9 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] = [r].[Value4] OR [r].[Value5] IS NULL AND [r].[Value4] IS NULL
+	([r].[Value5] = [r].[Value4] OR [r].[Value5] IS NULL AND [r].[Value4] IS NULL) AND
+	NOT ([r].[Value5] IS NULL AND [r].[Value4] IS NOT NULL) AND
+	NOT ([r].[Value5] IS NOT NULL AND [r].[Value4] IS NULL)
 
 -- SqlServer.2022
 SELECT
@@ -265,7 +267,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	IIF([r].[Value5] = [r].[Value4] OR [r].[Value5] IS NULL AND [r].[Value4] IS NULL, 1, 0) = @TrueN
+	IIF(([r].[Value5] = [r].[Value4] OR [r].[Value5] IS NULL AND [r].[Value4] IS NULL) AND NOT ([r].[Value5] IS NULL AND [r].[Value4] IS NOT NULL) AND NOT ([r].[Value5] IS NOT NULL AND [r].[Value4] IS NULL), 1, 0) = @TrueN
 
 -- SqlServer.2022
 SELECT
@@ -287,8 +289,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] <> [r].[Value4] OR [r].[Value5] IS NULL AND [r].[Value4] IS NOT NULL OR
-	[r].[Value5] IS NOT NULL AND [r].[Value4] IS NULL
+	NOT (([r].[Value5] = [r].[Value4] OR [r].[Value5] IS NULL AND [r].[Value4] IS NULL) AND NOT ([r].[Value5] IS NULL AND [r].[Value4] IS NOT NULL) AND NOT ([r].[Value5] IS NOT NULL AND [r].[Value4] IS NULL))
 
 -- SqlServer.2022
 SELECT
@@ -313,7 +314,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	IIF([r].[Value5] = [r].[Value4] OR [r].[Value5] IS NULL AND [r].[Value4] IS NULL, 1, 0) = @FalseN
+	IIF(([r].[Value5] = [r].[Value4] OR [r].[Value5] IS NULL AND [r].[Value4] IS NULL) AND NOT ([r].[Value5] IS NULL AND [r].[Value4] IS NOT NULL) AND NOT ([r].[Value5] IS NOT NULL AND [r].[Value4] IS NULL), 1, 0) = @FalseN
 
 -- SqlServer.2022
 SELECT
@@ -471,7 +472,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] <> [r].[Value4] OR [r].[Value4] IS NULL
+	NOT ([r].[Value1] = [r].[Value4] AND [r].[Value4] IS NOT NULL)
 
 -- SqlServer.2022
 SELECT
@@ -585,8 +586,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] <> [r].[Value4] OR [r].[Value5] IS NULL AND [r].[Value4] IS NOT NULL OR
-	[r].[Value5] IS NOT NULL AND [r].[Value4] IS NULL
+	NOT (([r].[Value5] = [r].[Value4] OR [r].[Value5] IS NULL AND [r].[Value4] IS NULL) AND NOT ([r].[Value5] IS NULL AND [r].[Value4] IS NOT NULL) AND NOT ([r].[Value5] IS NOT NULL AND [r].[Value4] IS NULL))
 
 -- SqlServer.2022
 SELECT
@@ -611,7 +611,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	IIF([r].[Value5] = [r].[Value4] OR [r].[Value5] IS NULL AND [r].[Value4] IS NULL, 1, 0) <> @TrueN
+	IIF(([r].[Value5] = [r].[Value4] OR [r].[Value5] IS NULL AND [r].[Value4] IS NULL) AND NOT ([r].[Value5] IS NULL AND [r].[Value4] IS NOT NULL) AND NOT ([r].[Value5] IS NOT NULL AND [r].[Value4] IS NULL), 1, 0) <> @TrueN
 
 -- SqlServer.2022
 SELECT
@@ -633,7 +633,9 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] = [r].[Value4] OR [r].[Value5] IS NULL AND [r].[Value4] IS NULL
+	([r].[Value5] = [r].[Value4] OR [r].[Value5] IS NULL AND [r].[Value4] IS NULL) AND
+	NOT ([r].[Value5] IS NULL AND [r].[Value4] IS NOT NULL) AND
+	NOT ([r].[Value5] IS NOT NULL AND [r].[Value4] IS NULL)
 
 -- SqlServer.2022
 SELECT
@@ -658,7 +660,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	IIF([r].[Value5] = [r].[Value4] OR [r].[Value5] IS NULL AND [r].[Value4] IS NULL, 1, 0) <> @FalseN
+	IIF(([r].[Value5] = [r].[Value4] OR [r].[Value5] IS NULL AND [r].[Value4] IS NULL) AND NOT ([r].[Value5] IS NULL AND [r].[Value4] IS NOT NULL) AND NOT ([r].[Value5] IS NOT NULL AND [r].[Value4] IS NULL), 1, 0) <> @FalseN
 
 -- SqlServer.2022
 SELECT
@@ -816,7 +818,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] > [r].[Value4]
+	[r].[Value1] > [r].[Value4] AND [r].[Value4] IS NOT NULL
 
 -- SqlServer.2022
 SELECT
@@ -841,7 +843,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	IIF([r].[Value1] > [r].[Value4], 1, 0) = @TrueN
+	IIF([r].[Value1] > [r].[Value4] AND [r].[Value4] IS NOT NULL, 1, 0) = @TrueN
 
 -- SqlServer.2022
 SELECT
@@ -863,7 +865,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] <= [r].[Value4] OR [r].[Value4] IS NULL
+	NOT ([r].[Value1] > [r].[Value4] AND [r].[Value4] IS NOT NULL)
 
 -- SqlServer.2022
 SELECT
@@ -888,7 +890,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	IIF([r].[Value1] > [r].[Value4], 1, 0) = @FalseN
+	IIF([r].[Value1] > [r].[Value4] AND [r].[Value4] IS NOT NULL, 1, 0) = @FalseN
 
 -- SqlServer.2022
 SELECT
@@ -932,7 +934,8 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] > [r].[Value4]
+	[r].[Value5] > [r].[Value4] AND [r].[Value5] IS NOT NULL AND
+	[r].[Value4] IS NOT NULL
 
 -- SqlServer.2022
 SELECT
@@ -957,7 +960,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	IIF([r].[Value5] > [r].[Value4], 1, 0) = @TrueN
+	IIF([r].[Value5] > [r].[Value4] AND [r].[Value5] IS NOT NULL AND [r].[Value4] IS NOT NULL, 1, 0) = @TrueN
 
 -- SqlServer.2022
 SELECT
@@ -979,8 +982,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] <= [r].[Value4] OR [r].[Value5] IS NULL OR
-	[r].[Value4] IS NULL
+	NOT ([r].[Value5] > [r].[Value4] AND [r].[Value5] IS NOT NULL AND [r].[Value4] IS NOT NULL)
 
 -- SqlServer.2022
 SELECT
@@ -1005,7 +1007,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	IIF([r].[Value5] > [r].[Value4], 1, 0) = @FalseN
+	IIF([r].[Value5] > [r].[Value4] AND [r].[Value5] IS NOT NULL AND [r].[Value4] IS NOT NULL, 1, 0) = @FalseN
 
 -- SqlServer.2022
 SELECT
@@ -1163,7 +1165,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] <= [r].[Value4] OR [r].[Value4] IS NULL
+	NOT ([r].[Value1] > [r].[Value4] AND [r].[Value4] IS NOT NULL)
 
 -- SqlServer.2022
 SELECT
@@ -1188,7 +1190,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	IIF([r].[Value1] > [r].[Value4], 1, 0) <> @TrueN
+	IIF([r].[Value1] > [r].[Value4] AND [r].[Value4] IS NOT NULL, 1, 0) <> @TrueN
 
 -- SqlServer.2022
 SELECT
@@ -1210,7 +1212,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] > [r].[Value4]
+	[r].[Value1] > [r].[Value4] AND [r].[Value4] IS NOT NULL
 
 -- SqlServer.2022
 SELECT
@@ -1235,7 +1237,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	IIF([r].[Value1] > [r].[Value4], 1, 0) <> @FalseN
+	IIF([r].[Value1] > [r].[Value4] AND [r].[Value4] IS NOT NULL, 1, 0) <> @FalseN
 
 -- SqlServer.2022
 SELECT
@@ -1277,8 +1279,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] <= [r].[Value4] OR [r].[Value5] IS NULL OR
-	[r].[Value4] IS NULL
+	NOT ([r].[Value5] > [r].[Value4] AND [r].[Value5] IS NOT NULL AND [r].[Value4] IS NOT NULL)
 
 -- SqlServer.2022
 SELECT
@@ -1303,7 +1304,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	IIF([r].[Value5] > [r].[Value4], 1, 0) <> @TrueN
+	IIF([r].[Value5] > [r].[Value4] AND [r].[Value5] IS NOT NULL AND [r].[Value4] IS NOT NULL, 1, 0) <> @TrueN
 
 -- SqlServer.2022
 SELECT
@@ -1325,7 +1326,8 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] > [r].[Value4]
+	[r].[Value5] > [r].[Value4] AND [r].[Value5] IS NOT NULL AND
+	[r].[Value4] IS NOT NULL
 
 -- SqlServer.2022
 SELECT
@@ -1350,7 +1352,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	IIF([r].[Value5] > [r].[Value4], 1, 0) <> @FalseN
+	IIF([r].[Value5] > [r].[Value4] AND [r].[Value5] IS NOT NULL AND [r].[Value4] IS NOT NULL, 1, 0) <> @FalseN
 
 -- SqlServer.2022
 SELECT
@@ -1508,7 +1510,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] >= [r].[Value4]
+	[r].[Value1] >= [r].[Value4] AND [r].[Value4] IS NOT NULL
 
 -- SqlServer.2022
 SELECT
@@ -1533,7 +1535,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	IIF([r].[Value1] >= [r].[Value4], 1, 0) = @TrueN
+	IIF([r].[Value1] >= [r].[Value4] AND [r].[Value4] IS NOT NULL, 1, 0) = @TrueN
 
 -- SqlServer.2022
 SELECT
@@ -1555,7 +1557,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] < [r].[Value4] OR [r].[Value4] IS NULL
+	NOT ([r].[Value1] >= [r].[Value4] AND [r].[Value4] IS NOT NULL)
 
 -- SqlServer.2022
 SELECT
@@ -1580,7 +1582,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	IIF([r].[Value1] >= [r].[Value4], 1, 0) = @FalseN
+	IIF([r].[Value1] >= [r].[Value4] AND [r].[Value4] IS NOT NULL, 1, 0) = @FalseN
 
 -- SqlServer.2022
 SELECT
@@ -1624,7 +1626,8 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] >= [r].[Value4]
+	[r].[Value5] >= [r].[Value4] AND [r].[Value5] IS NOT NULL AND
+	[r].[Value4] IS NOT NULL
 
 -- SqlServer.2022
 SELECT
@@ -1649,7 +1652,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	IIF([r].[Value5] >= [r].[Value4], 1, 0) = @TrueN
+	IIF([r].[Value5] >= [r].[Value4] AND [r].[Value5] IS NOT NULL AND [r].[Value4] IS NOT NULL, 1, 0) = @TrueN
 
 -- SqlServer.2022
 SELECT
@@ -1671,8 +1674,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] < [r].[Value4] OR [r].[Value5] IS NULL OR
-	[r].[Value4] IS NULL
+	NOT ([r].[Value5] >= [r].[Value4] AND [r].[Value5] IS NOT NULL AND [r].[Value4] IS NOT NULL)
 
 -- SqlServer.2022
 SELECT
@@ -1697,7 +1699,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	IIF([r].[Value5] >= [r].[Value4], 1, 0) = @FalseN
+	IIF([r].[Value5] >= [r].[Value4] AND [r].[Value5] IS NOT NULL AND [r].[Value4] IS NOT NULL, 1, 0) = @FalseN
 
 -- SqlServer.2022
 SELECT
@@ -1855,7 +1857,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] < [r].[Value4] OR [r].[Value4] IS NULL
+	NOT ([r].[Value1] >= [r].[Value4] AND [r].[Value4] IS NOT NULL)
 
 -- SqlServer.2022
 SELECT
@@ -1880,7 +1882,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	IIF([r].[Value1] >= [r].[Value4], 1, 0) <> @TrueN
+	IIF([r].[Value1] >= [r].[Value4] AND [r].[Value4] IS NOT NULL, 1, 0) <> @TrueN
 
 -- SqlServer.2022
 SELECT
@@ -1902,7 +1904,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] >= [r].[Value4]
+	[r].[Value1] >= [r].[Value4] AND [r].[Value4] IS NOT NULL
 
 -- SqlServer.2022
 SELECT
@@ -1927,7 +1929,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	IIF([r].[Value1] >= [r].[Value4], 1, 0) <> @FalseN
+	IIF([r].[Value1] >= [r].[Value4] AND [r].[Value4] IS NOT NULL, 1, 0) <> @FalseN
 
 -- SqlServer.2022
 SELECT
@@ -1969,8 +1971,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] < [r].[Value4] OR [r].[Value5] IS NULL OR
-	[r].[Value4] IS NULL
+	NOT ([r].[Value5] >= [r].[Value4] AND [r].[Value5] IS NOT NULL AND [r].[Value4] IS NOT NULL)
 
 -- SqlServer.2022
 SELECT
@@ -1995,7 +1996,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	IIF([r].[Value5] >= [r].[Value4], 1, 0) <> @TrueN
+	IIF([r].[Value5] >= [r].[Value4] AND [r].[Value5] IS NOT NULL AND [r].[Value4] IS NOT NULL, 1, 0) <> @TrueN
 
 -- SqlServer.2022
 SELECT
@@ -2017,7 +2018,8 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] >= [r].[Value4]
+	[r].[Value5] >= [r].[Value4] AND [r].[Value5] IS NOT NULL AND
+	[r].[Value4] IS NOT NULL
 
 -- SqlServer.2022
 SELECT
@@ -2042,7 +2044,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	IIF([r].[Value5] >= [r].[Value4], 1, 0) <> @FalseN
+	IIF([r].[Value5] >= [r].[Value4] AND [r].[Value5] IS NOT NULL AND [r].[Value4] IS NOT NULL, 1, 0) <> @FalseN
 
 -- SqlServer.2022
 SELECT
@@ -2200,7 +2202,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] < [r].[Value4]
+	[r].[Value1] < [r].[Value4] AND [r].[Value4] IS NOT NULL
 
 -- SqlServer.2022
 SELECT
@@ -2225,7 +2227,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	IIF([r].[Value1] < [r].[Value4], 1, 0) = @TrueN
+	IIF([r].[Value1] < [r].[Value4] AND [r].[Value4] IS NOT NULL, 1, 0) = @TrueN
 
 -- SqlServer.2022
 SELECT
@@ -2247,7 +2249,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] >= [r].[Value4] OR [r].[Value4] IS NULL
+	NOT ([r].[Value1] < [r].[Value4] AND [r].[Value4] IS NOT NULL)
 
 -- SqlServer.2022
 SELECT
@@ -2272,7 +2274,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	IIF([r].[Value1] < [r].[Value4], 1, 0) = @FalseN
+	IIF([r].[Value1] < [r].[Value4] AND [r].[Value4] IS NOT NULL, 1, 0) = @FalseN
 
 -- SqlServer.2022
 SELECT
@@ -2316,7 +2318,8 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] < [r].[Value4]
+	[r].[Value5] < [r].[Value4] AND [r].[Value5] IS NOT NULL AND
+	[r].[Value4] IS NOT NULL
 
 -- SqlServer.2022
 SELECT
@@ -2341,7 +2344,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	IIF([r].[Value5] < [r].[Value4], 1, 0) = @TrueN
+	IIF([r].[Value5] < [r].[Value4] AND [r].[Value5] IS NOT NULL AND [r].[Value4] IS NOT NULL, 1, 0) = @TrueN
 
 -- SqlServer.2022
 SELECT
@@ -2363,8 +2366,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] >= [r].[Value4] OR [r].[Value5] IS NULL OR
-	[r].[Value4] IS NULL
+	NOT ([r].[Value5] < [r].[Value4] AND [r].[Value5] IS NOT NULL AND [r].[Value4] IS NOT NULL)
 
 -- SqlServer.2022
 SELECT
@@ -2389,7 +2391,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	IIF([r].[Value5] < [r].[Value4], 1, 0) = @FalseN
+	IIF([r].[Value5] < [r].[Value4] AND [r].[Value5] IS NOT NULL AND [r].[Value4] IS NOT NULL, 1, 0) = @FalseN
 
 -- SqlServer.2022
 SELECT
@@ -2547,7 +2549,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] >= [r].[Value4] OR [r].[Value4] IS NULL
+	NOT ([r].[Value1] < [r].[Value4] AND [r].[Value4] IS NOT NULL)
 
 -- SqlServer.2022
 SELECT
@@ -2572,7 +2574,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	IIF([r].[Value1] < [r].[Value4], 1, 0) <> @TrueN
+	IIF([r].[Value1] < [r].[Value4] AND [r].[Value4] IS NOT NULL, 1, 0) <> @TrueN
 
 -- SqlServer.2022
 SELECT
@@ -2594,7 +2596,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] < [r].[Value4]
+	[r].[Value1] < [r].[Value4] AND [r].[Value4] IS NOT NULL
 
 -- SqlServer.2022
 SELECT
@@ -2619,7 +2621,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	IIF([r].[Value1] < [r].[Value4], 1, 0) <> @FalseN
+	IIF([r].[Value1] < [r].[Value4] AND [r].[Value4] IS NOT NULL, 1, 0) <> @FalseN
 
 -- SqlServer.2022
 SELECT
@@ -2661,8 +2663,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] >= [r].[Value4] OR [r].[Value5] IS NULL OR
-	[r].[Value4] IS NULL
+	NOT ([r].[Value5] < [r].[Value4] AND [r].[Value5] IS NOT NULL AND [r].[Value4] IS NOT NULL)
 
 -- SqlServer.2022
 SELECT
@@ -2687,7 +2688,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	IIF([r].[Value5] < [r].[Value4], 1, 0) <> @TrueN
+	IIF([r].[Value5] < [r].[Value4] AND [r].[Value5] IS NOT NULL AND [r].[Value4] IS NOT NULL, 1, 0) <> @TrueN
 
 -- SqlServer.2022
 SELECT
@@ -2709,7 +2710,8 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] < [r].[Value4]
+	[r].[Value5] < [r].[Value4] AND [r].[Value5] IS NOT NULL AND
+	[r].[Value4] IS NOT NULL
 
 -- SqlServer.2022
 SELECT
@@ -2734,7 +2736,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	IIF([r].[Value5] < [r].[Value4], 1, 0) <> @FalseN
+	IIF([r].[Value5] < [r].[Value4] AND [r].[Value5] IS NOT NULL AND [r].[Value4] IS NOT NULL, 1, 0) <> @FalseN
 
 -- SqlServer.2022
 SELECT
@@ -2892,7 +2894,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] <= [r].[Value4]
+	[r].[Value1] <= [r].[Value4] AND [r].[Value4] IS NOT NULL
 
 -- SqlServer.2022
 SELECT
@@ -2917,7 +2919,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	IIF([r].[Value1] <= [r].[Value4], 1, 0) = @TrueN
+	IIF([r].[Value1] <= [r].[Value4] AND [r].[Value4] IS NOT NULL, 1, 0) = @TrueN
 
 -- SqlServer.2022
 SELECT
@@ -2939,7 +2941,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] > [r].[Value4] OR [r].[Value4] IS NULL
+	NOT ([r].[Value1] <= [r].[Value4] AND [r].[Value4] IS NOT NULL)
 
 -- SqlServer.2022
 SELECT
@@ -2964,7 +2966,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	IIF([r].[Value1] <= [r].[Value4], 1, 0) = @FalseN
+	IIF([r].[Value1] <= [r].[Value4] AND [r].[Value4] IS NOT NULL, 1, 0) = @FalseN
 
 -- SqlServer.2022
 SELECT
@@ -3008,7 +3010,8 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] <= [r].[Value4]
+	[r].[Value5] <= [r].[Value4] AND [r].[Value5] IS NOT NULL AND
+	[r].[Value4] IS NOT NULL
 
 -- SqlServer.2022
 SELECT
@@ -3033,7 +3036,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	IIF([r].[Value5] <= [r].[Value4], 1, 0) = @TrueN
+	IIF([r].[Value5] <= [r].[Value4] AND [r].[Value5] IS NOT NULL AND [r].[Value4] IS NOT NULL, 1, 0) = @TrueN
 
 -- SqlServer.2022
 SELECT
@@ -3055,8 +3058,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] > [r].[Value4] OR [r].[Value5] IS NULL OR
-	[r].[Value4] IS NULL
+	NOT ([r].[Value5] <= [r].[Value4] AND [r].[Value5] IS NOT NULL AND [r].[Value4] IS NOT NULL)
 
 -- SqlServer.2022
 SELECT
@@ -3081,7 +3083,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	IIF([r].[Value5] <= [r].[Value4], 1, 0) = @FalseN
+	IIF([r].[Value5] <= [r].[Value4] AND [r].[Value5] IS NOT NULL AND [r].[Value4] IS NOT NULL, 1, 0) = @FalseN
 
 -- SqlServer.2022
 SELECT
@@ -3239,7 +3241,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] > [r].[Value4] OR [r].[Value4] IS NULL
+	NOT ([r].[Value1] <= [r].[Value4] AND [r].[Value4] IS NOT NULL)
 
 -- SqlServer.2022
 SELECT
@@ -3264,7 +3266,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	IIF([r].[Value1] <= [r].[Value4], 1, 0) <> @TrueN
+	IIF([r].[Value1] <= [r].[Value4] AND [r].[Value4] IS NOT NULL, 1, 0) <> @TrueN
 
 -- SqlServer.2022
 SELECT
@@ -3286,7 +3288,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] <= [r].[Value4]
+	[r].[Value1] <= [r].[Value4] AND [r].[Value4] IS NOT NULL
 
 -- SqlServer.2022
 SELECT
@@ -3311,7 +3313,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	IIF([r].[Value1] <= [r].[Value4], 1, 0) <> @FalseN
+	IIF([r].[Value1] <= [r].[Value4] AND [r].[Value4] IS NOT NULL, 1, 0) <> @FalseN
 
 -- SqlServer.2022
 SELECT
@@ -3353,8 +3355,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] > [r].[Value4] OR [r].[Value5] IS NULL OR
-	[r].[Value4] IS NULL
+	NOT ([r].[Value5] <= [r].[Value4] AND [r].[Value5] IS NOT NULL AND [r].[Value4] IS NOT NULL)
 
 -- SqlServer.2022
 SELECT
@@ -3379,7 +3380,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	IIF([r].[Value5] <= [r].[Value4], 1, 0) <> @TrueN
+	IIF([r].[Value5] <= [r].[Value4] AND [r].[Value5] IS NOT NULL AND [r].[Value4] IS NOT NULL, 1, 0) <> @TrueN
 
 -- SqlServer.2022
 SELECT
@@ -3401,7 +3402,8 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] <= [r].[Value4]
+	[r].[Value5] <= [r].[Value4] AND [r].[Value5] IS NOT NULL AND
+	[r].[Value4] IS NOT NULL
 
 -- SqlServer.2022
 SELECT
@@ -3426,7 +3428,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	IIF([r].[Value5] <= [r].[Value4], 1, 0) <> @FalseN
+	IIF([r].[Value5] <= [r].[Value4] AND [r].[Value5] IS NOT NULL AND [r].[Value4] IS NOT NULL, 1, 0) <> @FalseN
 
 -- SqlServer.2022
 SELECT
