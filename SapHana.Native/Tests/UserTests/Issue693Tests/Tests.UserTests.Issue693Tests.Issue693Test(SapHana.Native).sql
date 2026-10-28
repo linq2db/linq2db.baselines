@@ -24,7 +24,9 @@ VALUES
 )
 
 -- SapHana.Native SapHana
-SELECT CURRENT_IDENTITY_VALUE() FROM DUMMY
+SELECT
+	CURRENT_IDENTITY_VALUE()
+FROM DUMMY
 
 -- SapHana.Native SapHana
 DECLARE @Gender NVarChar(1) -- StringFixedLength
@@ -52,7 +54,9 @@ VALUES
 )
 
 -- SapHana.Native SapHana
-SELECT CURRENT_IDENTITY_VALUE() FROM DUMMY
+SELECT
+	CURRENT_IDENTITY_VALUE()
+FROM DUMMY
 
 -- SapHana.Native SapHana
 DECLARE @id1 Integer -- Int32

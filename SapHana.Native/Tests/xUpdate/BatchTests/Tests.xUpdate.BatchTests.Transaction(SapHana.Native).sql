@@ -102,7 +102,6 @@ VALUES
 	:"Value1"
 )
 
-CommitTransaction
 -- SapHana.Native SapHana
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1111

@@ -16,7 +16,6 @@ VALUES
 	:"Value1"
 )
 
-CommitTransactionAsync
 -- SapHana.Native SapHana
 DELETE FROM
 	"Parent" "t1"
