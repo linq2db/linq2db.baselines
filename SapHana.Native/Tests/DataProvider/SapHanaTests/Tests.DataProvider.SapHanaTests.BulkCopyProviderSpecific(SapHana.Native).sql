@@ -1,0 +1,2 @@
+﻿INSERT BULK "AllTypes"
+
