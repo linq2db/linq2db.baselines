@@ -1,16 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-INSERT INTO SchemaScopedConversionRow
-(
-	Id,
-	Value
-)
-VALUES
-(
-	1,
-	toDateTime64('2020-01-01 13:00:00.0000000', 7)
-)
-
--- ClickHouse.Octonica ClickHouse
 SELECT
 	t1.Id,
 	t1.Value
