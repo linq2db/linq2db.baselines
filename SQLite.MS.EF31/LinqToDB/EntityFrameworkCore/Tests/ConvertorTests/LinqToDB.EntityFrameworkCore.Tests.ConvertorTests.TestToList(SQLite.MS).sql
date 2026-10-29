@@ -1,13 +1,13 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @Id  -- Int64
+DECLARE @Id Integer -- Int64
 SET     @Id = 1
-DECLARE @PermanentId  -- Guid
+DECLARE @PermanentId Integer(36) -- Guid
 SET     @PermanentId = 'BC7B663D-0FDE-4327-8F92-5D8CC3A11D11'
 DECLARE @Code NVarChar(2) -- String
 SET     @Code = 'C1'
 DECLARE @Name NVarChar(2) -- String
 SET     @Name = 'N1'
-DECLARE @IsDeleted  -- Boolean
+DECLARE @IsDeleted Integer -- Boolean
 SET     @IsDeleted = NULL
 
 INSERT INTO [Subdivisions]
@@ -35,15 +35,15 @@ SELECT last_insert_rowid()
 
 
 -- SQLite.MS SQLite
-DECLARE @Id  -- Int64
+DECLARE @Id Integer -- Int64
 SET     @Id = 2
-DECLARE @PermanentId  -- Guid
+DECLARE @PermanentId Integer(36) -- Guid
 SET     @PermanentId = 'A948600D-DE21-4F74-8AC2-9516B287076E'
 DECLARE @Code NVarChar(2) -- String
 SET     @Code = 'C2'
 DECLARE @Name NVarChar(2) -- String
 SET     @Name = 'N2'
-DECLARE @IsDeleted  -- Boolean
+DECLARE @IsDeleted Integer -- Boolean
 SET     @IsDeleted = NULL
 
 INSERT INTO [Subdivisions]
@@ -71,15 +71,15 @@ SELECT last_insert_rowid()
 
 
 -- SQLite.MS SQLite
-DECLARE @Id  -- Int64
+DECLARE @Id Integer -- Int64
 SET     @Id = 3
-DECLARE @PermanentId  -- Guid
+DECLARE @PermanentId Integer(36) -- Guid
 SET     @PermanentId = 'BD3973A5-4323-4DD8-9F4F-DF9F93E2A627'
 DECLARE @Code NVarChar(2) -- String
 SET     @Code = 'C3'
 DECLARE @Name NVarChar(2) -- String
 SET     @Name = 'N3'
-DECLARE @IsDeleted  -- Boolean
+DECLARE @IsDeleted Integer -- Boolean
 SET     @IsDeleted = NULL
 
 INSERT INTO [Subdivisions]
@@ -112,7 +112,7 @@ WHERE CAST("s"."Id" AS INTEGER) = 1
 
 
 -- SQLite.MS SQLite
-DECLARE @Id  -- Int64
+DECLARE @Id Integer -- Int64
 SET     @Id = 1
 
 SELECT
@@ -129,7 +129,7 @@ WHERE
 
 
 -- SQLite.MS SQLite
-DECLARE @id  -- Int64
+DECLARE @id Integer -- Int64
 SET     @id = 1
 
 SELECT
