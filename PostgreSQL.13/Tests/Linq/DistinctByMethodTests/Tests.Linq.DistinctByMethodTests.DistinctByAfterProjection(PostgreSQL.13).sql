@@ -1,15 +1,24 @@
 ﻿-- PostgreSQL.13 PostgreSQL12
-SELECT DISTINCT ON (c_1."Country")
-	c_1."Id",
-	c_1."Country",
-	c_1."Region"
+SELECT
+	t1."Id",
+	t1."Country",
+	t1."Region"
 FROM
-	"NullableKeyData" c_1
-WHERE
-	c_1."CustomerId" LIKE 'DST%' ESCAPE '~'
+	(
+		SELECT DISTINCT ON (c_1."Country")
+			c_1."Id",
+			c_1."Country",
+			c_1."Region"
+		FROM
+			"NullableKeyData" c_1
+		WHERE
+			c_1."CustomerId" LIKE 'DST%' ESCAPE '~'
+		ORDER BY
+			c_1."Country",
+			c_1."Id"
+	) t1
 ORDER BY
-	c_1."Country",
-	c_1."Id"
+	t1."Id"
 
 -- PostgreSQL.13 PostgreSQL12
 SELECT

@@ -4,8 +4,9 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT ON (x."Group")
-			x."Group" as "Group_1",
-			x."Id"
+			x."Priority",
+			x."Id",
+			x."Group" as "Group_1"
 		FROM
 			"TestData" x
 		ORDER BY
@@ -14,7 +15,9 @@ FROM
 			x."Id"
 	) x_1
 ORDER BY
-	x_1."Group_1"
+	x_1."Group_1",
+	x_1."Priority",
+	x_1."Id"
 
 -- PostgreSQL.18 PostgreSQL12
 SELECT
@@ -22,8 +25,9 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT ON (x."Group")
-			x."Group" as "Group_1",
-			x."Id"
+			x."Priority",
+			x."Id",
+			x."Group" as "Group_1"
 		FROM
 			"TestData" x
 		ORDER BY
@@ -32,5 +36,7 @@ FROM
 			x."Id"
 	) x_1
 ORDER BY
-	x_1."Group_1"
+	x_1."Group_1",
+	x_1."Priority",
+	x_1."Id"
 
