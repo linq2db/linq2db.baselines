@@ -19,7 +19,7 @@ WHERE changes() = 1 AND "rowid" = last_insert_rowid();
 
 
 -- SQLite.MS SQLite
-DECLARE @IsArchived  -- Boolean
+DECLARE @IsArchived Integer -- Boolean
 SET     @IsArchived = 0
 
 SELECT

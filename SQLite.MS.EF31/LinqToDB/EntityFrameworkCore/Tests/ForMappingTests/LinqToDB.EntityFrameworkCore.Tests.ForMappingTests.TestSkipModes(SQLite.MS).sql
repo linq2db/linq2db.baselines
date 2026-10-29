@@ -6,9 +6,9 @@ VALUES (@p0, @p1);
 
 
 -- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @InsertOnly  -- Int32
+DECLARE @InsertOnly Integer -- Int32
 SET     @InsertOnly = 2
 
 INSERT INTO [SkipModes]
@@ -46,9 +46,9 @@ SELECT changes();
 
 
 -- SQLite.MS SQLite
-DECLARE @UpdateOnly  -- Int32
+DECLARE @UpdateOnly Integer -- Int32
 SET     @UpdateOnly = 12
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
 
 UPDATE
