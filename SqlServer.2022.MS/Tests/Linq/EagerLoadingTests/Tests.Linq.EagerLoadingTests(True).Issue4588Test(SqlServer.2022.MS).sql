@@ -1,7 +1,10 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
--- Batch 1
--- skip = 100
--- take = 10
+-- Command 1
+DECLARE @skip Int -- Int32
+SET     @skip = 100
+DECLARE @take Int -- Int32
+SET     @take = 10
+
 SELECT
 	[m_1].[Id],
 	[m_1].[Id_1],
@@ -36,9 +39,12 @@ FROM
 	) [m_1]
 		INNER JOIN [SubOrderDetail] [d_1] ON [m_1].[Id] = [d_1].[SubOrderId]
 
--- Batch 2
--- skip = 100
--- take = 10
+-- Command 2
+DECLARE @skip Int -- Int32
+SET     @skip = 100
+DECLARE @take Int -- Int32
+SET     @take = 10
+
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -62,9 +68,12 @@ FROM
 	) [m_1]
 		INNER JOIN [SubOrder] [d] ON [m_1].[Id] = [d].[OrderId]
 
--- Batch 3
--- skip = 100
--- take = 10
+-- Command 3
+DECLARE @skip Int -- Int32
+SET     @skip = 100
+DECLARE @take Int -- Int32
+SET     @take = 10
+
 SELECT
 	[x].[Id],
 	[x].[Name]

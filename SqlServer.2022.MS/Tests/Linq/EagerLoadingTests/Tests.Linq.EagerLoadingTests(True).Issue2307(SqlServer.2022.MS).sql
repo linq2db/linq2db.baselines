@@ -1,5 +1,5 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
--- Batch 1
+-- Command 1
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -8,7 +8,7 @@ FROM
 	[AttendanceSheet] [m_1]
 		INNER JOIN [AttendanceSheetRow] [d] ON [m_1].[Id] = [d].[AttendanceSheetId]
 
--- Batch 2
+-- Command 2
 SELECT
 	[t1].[Id]
 FROM
