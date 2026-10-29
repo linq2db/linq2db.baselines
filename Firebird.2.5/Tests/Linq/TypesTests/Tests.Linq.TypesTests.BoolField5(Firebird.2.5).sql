@@ -4,5 +4,5 @@ SELECT
 FROM
 	"LinqDataTypes" "p"
 WHERE
-	"p"."BoolValue" <> '0'
+	"p"."BoolValue" = '1'
 

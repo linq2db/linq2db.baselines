@@ -19,6 +19,13 @@ FROM
 
 -- Firebird.4 Firebird4
 SELECT
+	"t1"."ParentID",
+	"t1"."Value1"
+FROM
+	"Parent" "t1"
+
+-- Firebird.4 Firebird4
+SELECT
 	"p"."ParentID"
 FROM
 	"Parent" "p"
@@ -31,4 +38,11 @@ FROM
 				"c_1"."ParentID" = "p"."ParentID" AND NOT ("c_1"."Value1" = 1 AND "c_1"."Value1" IS NOT NULL OR "c_1"."ParentID" = 3)
 			FETCH NEXT 1 ROWS ONLY
 		) "c_2"
+
+-- Firebird.4 Firebird4
+SELECT
+	"t1"."ParentID",
+	"t1"."Value1"
+FROM
+	"Parent" "t1"
 
