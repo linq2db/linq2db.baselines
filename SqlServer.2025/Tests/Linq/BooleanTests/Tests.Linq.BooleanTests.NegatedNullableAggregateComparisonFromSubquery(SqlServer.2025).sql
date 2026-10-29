@@ -4,19 +4,12 @@ SELECT
 FROM
 	[Parent] [x]
 WHERE
-	NOT ((
+	IIF((
 		SELECT
 			MAX([a_Children].[ChildID])
 		FROM
 			[Child] [a_Children]
 		WHERE
 			[x].[ParentID] = [a_Children].[ParentID]
-	) = 11 AND (
-		SELECT
-			MAX([a_Children].[ChildID])
-		FROM
-			[Child] [a_Children]
-		WHERE
-			[x].[ParentID] = [a_Children].[ParentID]
-	) IS NOT NULL)
+	) = 11, 0, 1) = 1
 
