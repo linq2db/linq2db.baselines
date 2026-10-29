@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $year  -- Int32
+DECLARE $year INTEGER -- Int32
 SET     $year = 2010
 
 SELECT

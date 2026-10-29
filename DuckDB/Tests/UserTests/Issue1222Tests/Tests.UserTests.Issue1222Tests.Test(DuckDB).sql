@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $parentId  -- Int32
+DECLARE $parentId INTEGER -- Int32
 SET     $parentId = 111
 
 SELECT

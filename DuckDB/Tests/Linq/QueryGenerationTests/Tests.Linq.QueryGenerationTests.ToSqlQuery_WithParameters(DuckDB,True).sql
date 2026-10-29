@@ -11,7 +11,7 @@ WHERE
 	p.PersonID = 1
 
 -- DuckDB
-DECLARE $id  -- Int32
+DECLARE $id INTEGER -- Int32
 SET     $id = 1
 
 SELECT

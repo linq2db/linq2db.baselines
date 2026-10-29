@@ -6,7 +6,7 @@ FROM
 	Parent t
 
 -- DuckDB
-DECLARE $param  -- Int32
+DECLARE $param INTEGER -- Int32
 SET     $param = 1
 
 SELECT

@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $value  -- DateTimeOffset
+DECLARE $value TIMESTAMPTZ -- DateTimeOffset
 SET     $value = '0001-01-01 00:00:00+00'::TIMESTAMPTZ
 
 SELECT
@@ -27,11 +27,11 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
-DECLARE $Column  -- DateTimeOffset
+DECLARE $Column TIMESTAMPTZ -- DateTimeOffset
 SET     $Column = '0001-01-01 00:00:00+00'::TIMESTAMPTZ
-DECLARE $ColumnNullable  -- DateTimeOffset
+DECLARE $ColumnNullable TIMESTAMPTZ -- DateTimeOffset
 SET     $ColumnNullable = NULL
 
 INSERT INTO "TypeTable`2"
@@ -48,7 +48,7 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $value  -- DateTimeOffset
+DECLARE $value TIMESTAMPTZ -- DateTimeOffset
 SET     $value = '0001-01-01 00:00:00+00'::TIMESTAMPTZ
 
 SELECT
@@ -65,9 +65,9 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
-DECLARE $p2  -- DateTimeOffset
+DECLARE $p2 TIMESTAMPTZ -- DateTimeOffset
 SET     $p2 = '0001-01-01 00:00:00+00'::TIMESTAMPTZ
 
 INSERT INTO "TypeTable`2"
@@ -80,7 +80,7 @@ VALUES
 ($p1,$p2,NULL)
 
 -- DuckDB
-DECLARE $value  -- DateTimeOffset
+DECLARE $value TIMESTAMPTZ -- DateTimeOffset
 SET     $value = '0001-01-01 00:00:00+00'::TIMESTAMPTZ
 
 SELECT
@@ -112,7 +112,7 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-DECLARE $value  -- DateTimeOffset
+DECLARE $value TIMESTAMPTZ -- DateTimeOffset
 SET     $value = '0001-01-01 00:00:00+00'::TIMESTAMPTZ
 
 SELECT
@@ -144,7 +144,7 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-DECLARE $value  -- DateTimeOffset
+DECLARE $value TIMESTAMPTZ -- DateTimeOffset
 SET     $value = '0001-01-01 00:00:00+00'::TIMESTAMPTZ
 
 SELECT
@@ -157,9 +157,9 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable IS NULL
 
 -- DuckDB
-DECLARE $value  -- DateTimeOffset
+DECLARE $value TIMESTAMPTZ -- DateTimeOffset
 SET     $value = '0001-01-01 00:00:00.123456+00'::TIMESTAMPTZ
-DECLARE $nullableValue  -- DateTimeOffset
+DECLARE $nullableValue TIMESTAMPTZ -- DateTimeOffset
 SET     $nullableValue = '9999-12-31 23:59:59.999999+00'::TIMESTAMPTZ
 
 SELECT
@@ -187,11 +187,11 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
-DECLARE $Column  -- DateTimeOffset
+DECLARE $Column TIMESTAMPTZ -- DateTimeOffset
 SET     $Column = '0001-01-01 00:00:00.123456+00'::TIMESTAMPTZ
-DECLARE $ColumnNullable  -- DateTimeOffset
+DECLARE $ColumnNullable TIMESTAMPTZ -- DateTimeOffset
 SET     $ColumnNullable = '9999-12-31 23:59:59.999999+00'::TIMESTAMPTZ
 
 INSERT INTO "TypeTable`2"
@@ -208,9 +208,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $value  -- DateTimeOffset
+DECLARE $value TIMESTAMPTZ -- DateTimeOffset
 SET     $value = '0001-01-01 00:00:00.123456+00'::TIMESTAMPTZ
-DECLARE $nullableValue  -- DateTimeOffset
+DECLARE $nullableValue TIMESTAMPTZ -- DateTimeOffset
 SET     $nullableValue = '9999-12-31 23:59:59.999999+00'::TIMESTAMPTZ
 
 SELECT
@@ -227,11 +227,11 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
-DECLARE $p2  -- DateTimeOffset
+DECLARE $p2 TIMESTAMPTZ -- DateTimeOffset
 SET     $p2 = '0001-01-01 00:00:00.123456+00'::TIMESTAMPTZ
-DECLARE $p3  -- DateTimeOffset
+DECLARE $p3 TIMESTAMPTZ -- DateTimeOffset
 SET     $p3 = '9999-12-31 23:59:59.999999+00'::TIMESTAMPTZ
 
 INSERT INTO "TypeTable`2"
@@ -244,9 +244,9 @@ VALUES
 ($p1,$p2,$p3)
 
 -- DuckDB
-DECLARE $value  -- DateTimeOffset
+DECLARE $value TIMESTAMPTZ -- DateTimeOffset
 SET     $value = '0001-01-01 00:00:00.123456+00'::TIMESTAMPTZ
-DECLARE $nullableValue  -- DateTimeOffset
+DECLARE $nullableValue TIMESTAMPTZ -- DateTimeOffset
 SET     $nullableValue = '9999-12-31 23:59:59.999999+00'::TIMESTAMPTZ
 
 SELECT
@@ -278,9 +278,9 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-DECLARE $value  -- DateTimeOffset
+DECLARE $value TIMESTAMPTZ -- DateTimeOffset
 SET     $value = '0001-01-01 00:00:00.123456+00'::TIMESTAMPTZ
-DECLARE $nullableValue  -- DateTimeOffset
+DECLARE $nullableValue TIMESTAMPTZ -- DateTimeOffset
 SET     $nullableValue = '9999-12-31 23:59:59.999999+00'::TIMESTAMPTZ
 
 SELECT
@@ -312,9 +312,9 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-DECLARE $value  -- DateTimeOffset
+DECLARE $value TIMESTAMPTZ -- DateTimeOffset
 SET     $value = '0001-01-01 00:00:00.123456+00'::TIMESTAMPTZ
-DECLARE $nullableValue  -- DateTimeOffset
+DECLARE $nullableValue TIMESTAMPTZ -- DateTimeOffset
 SET     $nullableValue = '9999-12-31 23:59:59.999999+00'::TIMESTAMPTZ
 
 SELECT

@@ -5,7 +5,7 @@ WHERE
 	c_1.ChildID > 1000
 
 -- DuckDB
-DECLARE $id  -- Int32
+DECLARE $id INTEGER -- Int32
 SET     $id = 1001
 
 INSERT INTO Child
@@ -22,7 +22,7 @@ WHERE
 	c_1.ChildID = 11
 
 -- DuckDB
-DECLARE $id  -- Int32
+DECLARE $id INTEGER -- Int32
 SET     $id = 1001
 
 SELECT

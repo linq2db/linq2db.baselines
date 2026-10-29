@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 5
 
 INSERT INTO "User"
@@ -20,7 +20,7 @@ FROM
 	"User" t1
 
 -- DuckDB
-DECLARE $userId  -- Int32
+DECLARE $userId INTEGER -- Int32
 SET     $userId = 5
 
 SELECT

@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $id  -- Int32
+DECLARE $id INTEGER -- Int32
 SET     $id = 1001
 
 INSERT INTO Child
@@ -18,7 +18,7 @@ RETURNING
 	Child.ChildID + Child.ParentID + 100
 
 -- DuckDB
-DECLARE $param  -- Int32
+DECLARE $param INTEGER -- Int32
 SET     $param = 100
 
 SELECT

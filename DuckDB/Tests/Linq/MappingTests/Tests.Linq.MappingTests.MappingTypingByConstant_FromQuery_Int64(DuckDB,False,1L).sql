@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $value  -- Int64
+DECLARE $value BIGINT -- Int64
 SET     $value = 1
 
 SELECT
@@ -15,7 +15,7 @@ FROM
 	) t1
 
 -- DuckDB
-DECLARE $value  -- Int64
+DECLARE $value BIGINT -- Int64
 SET     $value = 2147483648
 
 SELECT

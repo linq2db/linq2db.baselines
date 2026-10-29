@@ -1,12 +1,12 @@
 ﻿-- DuckDB
-DECLARE $min  -- Byte
+DECLARE $min UTINYINT -- Byte
 SET     $min = 0
 
 SELECT
 	$min
 
 -- DuckDB
-DECLARE $max  -- Byte
+DECLARE $max UTINYINT -- Byte
 SET     $max = 255
 
 SELECT

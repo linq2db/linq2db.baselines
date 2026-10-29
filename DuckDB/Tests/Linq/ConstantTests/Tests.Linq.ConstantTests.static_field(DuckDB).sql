@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $GuidNonReadonly  -- Guid
+DECLARE $GuidNonReadonly UUID -- Guid
 SET     $GuidNonReadonly = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'::UUID
 
 SELECT

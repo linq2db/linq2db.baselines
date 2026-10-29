@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $param  -- Int32
+DECLARE $param INTEGER -- Int32
 SET     $param = 100
 DECLARE $ValueStr NVarChar(3) -- String
 SET     $ValueStr = '100'
@@ -24,7 +24,7 @@ RETURNING
 	DestinationTable.ValueStr
 
 -- DuckDB
-DECLARE $param  -- Int32
+DECLARE $param INTEGER -- Int32
 SET     $param = 100
 DECLARE $ValueStr NVarChar(3) -- String
 SET     $ValueStr = '100'

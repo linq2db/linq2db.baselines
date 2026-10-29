@@ -17,7 +17,7 @@ WHERE
 LIMIT 1
 
 -- DuckDB
-DECLARE $DateTimeValue2  -- DateTime2
+DECLARE $DateTimeValue2 TIMESTAMP -- DateTime2
 SET     $DateTimeValue2 = '2010-12-14 05:00:07.425014'::TIMESTAMP
 
 UPDATE
@@ -46,7 +46,7 @@ WHERE
 LIMIT 1
 
 -- DuckDB
-DECLARE $pdt  -- DateTime2
+DECLARE $pdt TIMESTAMP -- DateTime2
 SET     $pdt = NULL
 
 UPDATE

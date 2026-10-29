@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $TargetName NVarChar(12) -- String
 SET     $TargetName = 'bda.Requests'

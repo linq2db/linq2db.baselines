@@ -1,7 +1,7 @@
 ﻿-- DuckDB
-DECLARE $code  -- Int32
+DECLARE $code INTEGER -- Int32
 SET     $code = 1
-DECLARE $site  -- Int32
+DECLARE $site INTEGER -- Int32
 SET     $site = 2
 
 SELECT

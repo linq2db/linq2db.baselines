@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $p  -- Int32
+DECLARE $p INTEGER -- Int32
 SET     $p = 104
 
 DELETE FROM
@@ -8,9 +8,9 @@ WHERE
 	r.ID >= 101 AND r.ID < $p
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 101
-DECLARE $Value  -- Int32
+DECLARE $Value INTEGER -- Int32
 SET     $Value = 11
 
 INSERT INTO LinqDataTypes
@@ -25,9 +25,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 102
-DECLARE $Value  -- Int32
+DECLARE $Value INTEGER -- Int32
 SET     $Value = 0
 
 INSERT INTO LinqDataTypes
@@ -42,9 +42,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 103
-DECLARE $Value  -- Int32
+DECLARE $Value INTEGER -- Int32
 SET     $Value = NULL
 
 INSERT INTO LinqDataTypes
@@ -82,7 +82,7 @@ ORDER BY
 	r.ID
 
 -- DuckDB
-DECLARE $p  -- Int32
+DECLARE $p INTEGER -- Int32
 SET     $p = 104
 
 DELETE FROM

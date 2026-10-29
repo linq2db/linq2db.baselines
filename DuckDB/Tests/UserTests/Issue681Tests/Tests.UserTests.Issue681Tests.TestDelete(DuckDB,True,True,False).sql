@@ -3,7 +3,7 @@ SELECT
 	current_database()
 
 -- DuckDB
-DECLARE $ID  -- Int32
+DECLARE $ID INTEGER -- Int32
 SET     $ID = 5
 
 DELETE FROM

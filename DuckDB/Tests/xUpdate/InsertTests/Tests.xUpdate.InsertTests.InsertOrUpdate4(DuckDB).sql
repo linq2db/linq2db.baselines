@@ -26,11 +26,11 @@ RETURNING
 	PersonID
 
 -- DuckDB
-DECLARE $id  -- Int32
+DECLARE $id INTEGER -- Int32
 SET     $id = 5
-DECLARE $diagnosis  -- Int32
+DECLARE $diagnosis INTEGER -- Int32
 SET     $diagnosis = 3
-DECLARE $i  -- Int32
+DECLARE $i INTEGER -- Int32
 SET     $i = 0
 
 INSERT INTO Patient AS t1
@@ -47,11 +47,11 @@ ON CONFLICT (PersonID) DO UPDATE SET
 	Diagnosis = CAST(Length(t1.Diagnosis) + $i AS VARCHAR)
 
 -- DuckDB
-DECLARE $id  -- Int32
+DECLARE $id INTEGER -- Int32
 SET     $id = 5
-DECLARE $diagnosis  -- Int32
+DECLARE $diagnosis INTEGER -- Int32
 SET     $diagnosis = 3
-DECLARE $i  -- Int32
+DECLARE $i INTEGER -- Int32
 SET     $i = 1
 
 INSERT INTO Patient AS t1
@@ -68,11 +68,11 @@ ON CONFLICT (PersonID) DO UPDATE SET
 	Diagnosis = CAST(Length(t1.Diagnosis) + $i AS VARCHAR)
 
 -- DuckDB
-DECLARE $id  -- Int32
+DECLARE $id INTEGER -- Int32
 SET     $id = 5
-DECLARE $diagnosis  -- Int32
+DECLARE $diagnosis INTEGER -- Int32
 SET     $diagnosis = 3
-DECLARE $i  -- Int32
+DECLARE $i INTEGER -- Int32
 SET     $i = 2
 
 INSERT INTO Patient AS t1
@@ -89,7 +89,7 @@ ON CONFLICT (PersonID) DO UPDATE SET
 	Diagnosis = CAST(Length(t1.Diagnosis) + $i AS VARCHAR)
 
 -- DuckDB
-DECLARE $id  -- Int32
+DECLARE $id INTEGER -- Int32
 SET     $id = 5
 
 SELECT

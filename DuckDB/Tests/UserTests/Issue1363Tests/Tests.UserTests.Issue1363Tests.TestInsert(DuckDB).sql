@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $id  -- Guid
+DECLARE $id UUID -- Guid
 SET     $id = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'::UUID
 
 INSERT INTO Issue1363
@@ -21,9 +21,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $id  -- Guid
+DECLARE $id UUID -- Guid
 SET     $id = 'a948600d-de21-4f74-8ac2-9516b287076e'::UUID
-DECLARE $testId  -- Guid
+DECLARE $testId UUID -- Guid
 SET     $testId = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'::UUID
 
 INSERT INTO Issue1363
@@ -45,7 +45,7 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $id2  -- Guid
+DECLARE $id2 UUID -- Guid
 SET     $id2 = 'a948600d-de21-4f74-8ac2-9516b287076e'::UUID
 
 SELECT

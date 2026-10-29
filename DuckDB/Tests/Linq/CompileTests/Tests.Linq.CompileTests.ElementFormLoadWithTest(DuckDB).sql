@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $p  -- Int32
+DECLARE $p INTEGER -- Int32
 SET     $p = 1
 
 SELECT
@@ -19,7 +19,7 @@ FROM
 		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 -- DuckDB
-DECLARE $p  -- Int32
+DECLARE $p INTEGER -- Int32
 SET     $p = 1
 
 SELECT
@@ -32,7 +32,7 @@ WHERE
 LIMIT 1
 
 -- DuckDB
-DECLARE $p  -- Int32
+DECLARE $p INTEGER -- Int32
 SET     $p = 2
 
 SELECT
@@ -52,7 +52,7 @@ FROM
 		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 -- DuckDB
-DECLARE $p  -- Int32
+DECLARE $p INTEGER -- Int32
 SET     $p = 2
 
 SELECT

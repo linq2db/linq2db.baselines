@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $True  -- Boolean
+DECLARE $True BOOLEAN -- Boolean
 SET     $True = True
 
 SELECT
@@ -32,7 +32,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $False  -- Boolean
+DECLARE $False BOOLEAN -- Boolean
 SET     $False = False
 
 SELECT

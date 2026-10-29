@@ -1,7 +1,7 @@
 ﻿-- DuckDB
-DECLARE $ParentID  -- Int32
+DECLARE $ParentID INTEGER -- Int32
 SET     $ParentID = 100500
-DECLARE $Value1  -- Int32
+DECLARE $Value1 INTEGER -- Int32
 SET     $Value1 = NULL
 
 INSERT INTO Parent
@@ -16,7 +16,7 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $id  -- Int32
+DECLARE $id INTEGER -- Int32
 SET     $id = 100500
 
 SELECT
@@ -28,9 +28,9 @@ WHERE
 LIMIT 1
 
 -- DuckDB
-DECLARE $ParentID  -- Int32
+DECLARE $ParentID INTEGER -- Int32
 SET     $ParentID = 100500
-DECLARE $id  -- Int32
+DECLARE $id INTEGER -- Int32
 SET     $id = 100500
 
 UPDATE

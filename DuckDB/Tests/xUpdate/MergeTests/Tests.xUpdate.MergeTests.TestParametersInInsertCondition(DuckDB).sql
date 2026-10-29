@@ -3,13 +3,13 @@ DELETE FROM
 	TestMerge1 t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
-DECLARE $Field1  -- Int32
+DECLARE $Field1 INTEGER -- Int32
 SET     $Field1 = NULL
-DECLARE $Field2  -- Int32
+DECLARE $Field2 INTEGER -- Int32
 SET     $Field2 = NULL
-DECLARE $Field4  -- Int32
+DECLARE $Field4 INTEGER -- Int32
 SET     $Field4 = NULL
 
 INSERT INTO TestMerge1
@@ -28,13 +28,13 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 2
-DECLARE $Field1  -- Int32
+DECLARE $Field1 INTEGER -- Int32
 SET     $Field1 = 2
-DECLARE $Field2  -- Int32
+DECLARE $Field2 INTEGER -- Int32
 SET     $Field2 = NULL
-DECLARE $Field4  -- Int32
+DECLARE $Field4 INTEGER -- Int32
 SET     $Field4 = NULL
 
 INSERT INTO TestMerge1
@@ -53,13 +53,13 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 3
-DECLARE $Field1  -- Int32
+DECLARE $Field1 INTEGER -- Int32
 SET     $Field1 = NULL
-DECLARE $Field2  -- Int32
+DECLARE $Field2 INTEGER -- Int32
 SET     $Field2 = 3
-DECLARE $Field4  -- Int32
+DECLARE $Field4 INTEGER -- Int32
 SET     $Field4 = 203
 
 INSERT INTO TestMerge1
@@ -78,13 +78,13 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 4
-DECLARE $Field1  -- Int32
+DECLARE $Field1 INTEGER -- Int32
 SET     $Field1 = 5
-DECLARE $Field2  -- Int32
+DECLARE $Field2 INTEGER -- Int32
 SET     $Field2 = 6
-DECLARE $Field4  -- Int32
+DECLARE $Field4 INTEGER -- Int32
 SET     $Field4 = NULL
 
 INSERT INTO TestMerge1
@@ -107,13 +107,13 @@ DELETE FROM
 	TestMerge2 t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 3
-DECLARE $Field1  -- Int32
+DECLARE $Field1 INTEGER -- Int32
 SET     $Field1 = NULL
-DECLARE $Field2  -- Int32
+DECLARE $Field2 INTEGER -- Int32
 SET     $Field2 = 3
-DECLARE $Field4  -- Int32
+DECLARE $Field4 INTEGER -- Int32
 SET     $Field4 = NULL
 
 INSERT INTO TestMerge2
@@ -132,13 +132,13 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 4
-DECLARE $Field1  -- Int32
+DECLARE $Field1 INTEGER -- Int32
 SET     $Field1 = 5
-DECLARE $Field2  -- Int32
+DECLARE $Field2 INTEGER -- Int32
 SET     $Field2 = 7
-DECLARE $Field4  -- Int32
+DECLARE $Field4 INTEGER -- Int32
 SET     $Field4 = 214
 
 INSERT INTO TestMerge2
@@ -157,13 +157,13 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 5
-DECLARE $Field1  -- Int32
+DECLARE $Field1 INTEGER -- Int32
 SET     $Field1 = 10
-DECLARE $Field2  -- Int32
+DECLARE $Field2 INTEGER -- Int32
 SET     $Field2 = 4
-DECLARE $Field4  -- Int32
+DECLARE $Field4 INTEGER -- Int32
 SET     $Field4 = NULL
 
 INSERT INTO TestMerge2
@@ -182,13 +182,13 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 6
-DECLARE $Field1  -- Int32
+DECLARE $Field1 INTEGER -- Int32
 SET     $Field1 = NULL
-DECLARE $Field2  -- Int32
+DECLARE $Field2 INTEGER -- Int32
 SET     $Field2 = NULL
-DECLARE $Field4  -- Int32
+DECLARE $Field4 INTEGER -- Int32
 SET     $Field4 = 216
 
 INSERT INTO TestMerge2
@@ -207,7 +207,7 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $param  -- Int32
+DECLARE $param INTEGER -- Int32
 SET     $param = 5
 
 MERGE INTO TestMerge1 Target

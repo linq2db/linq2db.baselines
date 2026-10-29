@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $month  -- Int32
+DECLARE $month INTEGER -- Int32
 SET     $month = 10
 
 SELECT

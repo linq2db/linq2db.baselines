@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $id  -- Int32
+DECLARE $id INTEGER -- Int32
 SET     $id = 1
 
 SELECT DISTINCT
@@ -17,7 +17,7 @@ WHERE
 	)
 
 -- DuckDB
-DECLARE $id  -- Int32
+DECLARE $id INTEGER -- Int32
 SET     $id = 2
 
 SELECT DISTINCT

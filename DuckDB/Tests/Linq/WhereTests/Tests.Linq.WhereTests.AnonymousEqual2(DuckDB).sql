@@ -1,7 +1,7 @@
 ﻿-- DuckDB
-DECLARE $ParentID  -- Int32
+DECLARE $ParentID INTEGER -- Int32
 SET     $ParentID = 2
-DECLARE $ChildID  -- Int32
+DECLARE $ChildID INTEGER -- Int32
 SET     $ChildID = 21
 
 SELECT

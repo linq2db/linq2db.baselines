@@ -1,7 +1,7 @@
 ﻿-- DuckDB
-DECLARE $Value  -- Int32
+DECLARE $Value INTEGER -- Int32
 SET     $Value = 100
-DECLARE $value_1  -- Int32
+DECLARE $value_1 INTEGER -- Int32
 SET     $value_1 = 1
 DECLARE $ValueStr NVarChar(8) -- String
 SET     $ValueStr = 'SomeStr1'

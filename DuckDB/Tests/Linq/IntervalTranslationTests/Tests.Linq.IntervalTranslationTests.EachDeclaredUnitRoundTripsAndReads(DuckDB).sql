@@ -1,11 +1,11 @@
 ﻿-- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
-DECLARE $InDays  -- Int64
+DECLARE $InDays BIGINT -- Int64
 SET     $InDays = 2
-DECLARE $InMilliseconds  -- Int64
+DECLARE $InMilliseconds BIGINT -- Int64
 SET     $InMilliseconds = 3723456
-DECLARE $InNanoseconds  -- Int64
+DECLARE $InNanoseconds BIGINT -- Int64
 SET     $InNanoseconds = 7000123400
 
 INSERT INTO UnitSpreadRow

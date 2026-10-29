@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $Date  -- Date
+DECLARE $Date DATE -- Date
 SET     $Date = '2021-01-01'::DATE
 
 INSERT INTO DateOnlyTable

@@ -26,7 +26,7 @@ RETURNING
 	PersonID
 
 -- DuckDB
-DECLARE $id  -- Int32
+DECLARE $id INTEGER -- Int32
 SET     $id = 5
 
 SELECT
@@ -50,7 +50,7 @@ DECLARE $Name_MiddleName NVarChar -- String
 SET     $Name_MiddleName = NULL
 DECLARE $Name_LastName NVarChar(13) -- String
 SET     $Name_LastName = 'UpdateComplex'
-DECLARE $ID  -- Int32
+DECLARE $ID INTEGER -- Int32
 SET     $ID = 5
 
 UPDATE
@@ -64,7 +64,7 @@ WHERE
 	Person.PersonID = $ID
 
 -- DuckDB
-DECLARE $id  -- Int32
+DECLARE $id INTEGER -- Int32
 SET     $id = 5
 
 SELECT

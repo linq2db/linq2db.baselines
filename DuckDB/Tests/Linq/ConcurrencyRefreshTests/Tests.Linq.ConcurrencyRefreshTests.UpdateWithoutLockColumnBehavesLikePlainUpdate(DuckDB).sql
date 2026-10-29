@@ -1,7 +1,7 @@
 ﻿-- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
-DECLARE $Stamp  -- Int32
+DECLARE $Stamp INTEGER -- Int32
 SET     $Stamp = 5
 DECLARE $Value NVarChar(7) -- String
 SET     $Value = 'initial'
@@ -20,11 +20,11 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $Stamp  -- Int32
+DECLARE $Stamp INTEGER -- Int32
 SET     $Stamp = 5
 DECLARE $Value NVarChar(7) -- String
 SET     $Value = 'updated'
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 
 UPDATE

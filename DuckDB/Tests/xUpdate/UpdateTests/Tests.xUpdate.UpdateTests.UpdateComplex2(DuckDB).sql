@@ -34,7 +34,7 @@ WHERE
 	Person.FirstName LIKE 'UpdateComplex%' ESCAPE '~'
 
 -- DuckDB
-DECLARE $id  -- Int32
+DECLARE $id INTEGER -- Int32
 SET     $id = 5
 
 SELECT

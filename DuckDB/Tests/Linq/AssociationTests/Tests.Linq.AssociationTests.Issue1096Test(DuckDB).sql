@@ -1,7 +1,7 @@
 ﻿-- DuckDB
-DECLARE $Pk  -- Int32
+DECLARE $Pk INTEGER -- Int32
 SET     $Pk = 1
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $TargetName NVarChar(12) -- String
 SET     $TargetName = 'bda.Requests'
@@ -20,11 +20,11 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
-DECLARE $TaskId  -- Int32
+DECLARE $TaskId INTEGER -- Int32
 SET     $TaskId = 1
-DECLARE $Actual  -- Boolean
+DECLARE $Actual BOOLEAN -- Boolean
 SET     $Actual = True
 
 INSERT INTO Issue1096TaskStage

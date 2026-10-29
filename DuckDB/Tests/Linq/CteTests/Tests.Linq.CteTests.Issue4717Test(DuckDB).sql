@@ -45,7 +45,7 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $productId  -- Int32
+DECLARE $productId INTEGER -- Int32
 SET     $productId = 1
 
 INSERT INTO Issue4717Product
@@ -64,7 +64,7 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $includedProductId  -- Int32
+DECLARE $includedProductId INTEGER -- Int32
 SET     $includedProductId = 2
 
 INSERT INTO Issue4717Product
@@ -83,9 +83,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $productId  -- Int32
+DECLARE $productId INTEGER -- Int32
 SET     $productId = 1
-DECLARE $includedProductId  -- Int32
+DECLARE $includedProductId INTEGER -- Int32
 SET     $includedProductId = 2
 
 INSERT INTO Issue4717ProductIncludedProductMapping
@@ -102,7 +102,7 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $productId  -- Int32
+DECLARE $productId INTEGER -- Int32
 SET     $productId = 1
 
 INSERT INTO Issue4717WarehouseProductMapping
@@ -119,7 +119,7 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $productId  -- Int32
+DECLARE $productId INTEGER -- Int32
 SET     $productId = 1
 
 WITH CTE_1 (ProductId, WarehouseId)

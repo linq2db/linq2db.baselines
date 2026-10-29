@@ -1,7 +1,7 @@
 ﻿-- DuckDB
-DECLARE $Value5  -- Int32
+DECLARE $Value5 INTEGER -- Int32
 SET     $Value5 = 11
-DECLARE $id  -- Int32
+DECLARE $id INTEGER -- Int32
 SET     $id = 1
 
 UPDATE
@@ -12,7 +12,7 @@ WHERE
 	UpdateSetTest.Id = $id
 
 -- DuckDB
-DECLARE $id  -- Int32
+DECLARE $id INTEGER -- Int32
 SET     $id = 1
 
 SELECT
@@ -24,9 +24,9 @@ WHERE
 LIMIT 2
 
 -- DuckDB
-DECLARE $Value5  -- Int32
+DECLARE $Value5 INTEGER -- Int32
 SET     $Value5 = 12
-DECLARE $id  -- Int32
+DECLARE $id INTEGER -- Int32
 SET     $id = 1
 
 UPDATE
@@ -37,7 +37,7 @@ WHERE
 	UpdateSetTest.Id = $id
 
 -- DuckDB
-DECLARE $id  -- Int32
+DECLARE $id INTEGER -- Int32
 SET     $id = 1
 
 SELECT

@@ -5,7 +5,7 @@ FROM
 	LinqDataTypes t1
 
 -- DuckDB
-DECLARE $param  -- Int64
+DECLARE $param BIGINT -- Int64
 SET     $param = 1
 
 SELECT

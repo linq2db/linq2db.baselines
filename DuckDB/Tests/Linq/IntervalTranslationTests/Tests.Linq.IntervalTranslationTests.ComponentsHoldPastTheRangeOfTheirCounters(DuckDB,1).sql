@@ -1,9 +1,9 @@
 ﻿-- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
-DECLARE $StartedOn  -- DateTime2
+DECLARE $StartedOn TIMESTAMP -- DateTime2
 SET     $StartedOn = '1970-01-02 00:00:00.000000'::TIMESTAMP
-DECLARE $FinishedOn  -- DateTime2
+DECLARE $FinishedOn TIMESTAMP -- DateTime2
 SET     $FinishedOn = '2045-06-05 04:03:02.000000'::TIMESTAMP
 
 INSERT INTO EventRow
@@ -20,11 +20,11 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 2
-DECLARE $StartedOn  -- DateTime2
+DECLARE $StartedOn TIMESTAMP -- DateTime2
 SET     $StartedOn = '1970-01-02 00:00:00.000000'::TIMESTAMP
-DECLARE $FinishedOn  -- DateTime2
+DECLARE $FinishedOn TIMESTAMP -- DateTime2
 SET     $FinishedOn = '1970-01-02 00:02:05.000000'::TIMESTAMP
 
 INSERT INTO EventRow

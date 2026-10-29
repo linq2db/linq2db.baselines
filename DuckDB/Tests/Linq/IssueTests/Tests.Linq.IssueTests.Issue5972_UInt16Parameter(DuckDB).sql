@@ -1,12 +1,12 @@
 ﻿-- DuckDB
-DECLARE $min  -- UInt16
+DECLARE $min USMALLINT -- UInt16
 SET     $min = 0
 
 SELECT
 	$min
 
 -- DuckDB
-DECLARE $max  -- UInt16
+DECLARE $max USMALLINT -- UInt16
 SET     $max = 65535
 
 SELECT

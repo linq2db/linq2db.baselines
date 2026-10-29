@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Name NVarChar(11) -- String
 SET     $Name = 'NotVerified'
@@ -24,7 +24,7 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 2
 DECLARE $Name NVarChar(8) -- String
 SET     $Name = 'Verified'

@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $p  -- Int32
+DECLARE $p INTEGER -- Int32
 SET     $p = 102
 
 DELETE FROM
@@ -36,7 +36,7 @@ WHERE
 	r.ID = 101 AND r.IntValue = 4
 
 -- DuckDB
-DECLARE $p  -- Int32
+DECLARE $p INTEGER -- Int32
 SET     $p = 102
 
 DELETE FROM

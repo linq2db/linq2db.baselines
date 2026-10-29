@@ -7,7 +7,7 @@ WHERE
 	1 = 0
 
 -- DuckDB
-DECLARE $id  -- Int32
+DECLARE $id INTEGER -- Int32
 SET     $id = 1
 
 SELECT

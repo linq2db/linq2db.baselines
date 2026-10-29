@@ -1,7 +1,7 @@
 ﻿-- DuckDB
-DECLARE $InstrumentId  -- Int32
+DECLARE $InstrumentId INTEGER -- Int32
 SET     $InstrumentId = 1
-DECLARE $IndexId  -- Int32
+DECLARE $IndexId INTEGER -- Int32
 SET     $IndexId = 1
 
 INSERT INTO T3
@@ -16,9 +16,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $InstrumentId  -- Int32
+DECLARE $InstrumentId INTEGER -- Int32
 SET     $InstrumentId = 2
-DECLARE $IndexId  -- Int32
+DECLARE $IndexId INTEGER -- Int32
 SET     $IndexId = 1
 
 INSERT INTO T3
@@ -33,9 +33,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $InstrumentId  -- Int32
+DECLARE $InstrumentId INTEGER -- Int32
 SET     $InstrumentId = 3
-DECLARE $IndexId  -- Int32
+DECLARE $IndexId INTEGER -- Int32
 SET     $IndexId = 1
 
 INSERT INTO T3
@@ -50,9 +50,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $InstrumentId  -- Int32
+DECLARE $InstrumentId INTEGER -- Int32
 SET     $InstrumentId = 1
-DECLARE $IndexId  -- Int32
+DECLARE $IndexId INTEGER -- Int32
 SET     $IndexId = 1
 
 INSERT INTO T2
@@ -67,9 +67,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $InstrumentId  -- Int32
+DECLARE $InstrumentId INTEGER -- Int32
 SET     $InstrumentId = 2
-DECLARE $IndexId  -- Int32
+DECLARE $IndexId INTEGER -- Int32
 SET     $IndexId = 1
 
 INSERT INTO T2
@@ -84,11 +84,11 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $InstrumentId  -- Int32
+DECLARE $InstrumentId INTEGER -- Int32
 SET     $InstrumentId = 1
 DECLARE $InstrumentCode NVarChar(4) -- String
 SET     $InstrumentCode = 'aaa1'
-DECLARE $CreateDate  -- DateTime2
+DECLARE $CreateDate TIMESTAMP -- DateTime2
 SET     $CreateDate = '2020-02-28 17:54:55.123123'::TIMESTAMP
 DECLARE $SourceInstrumentCode NVarChar(7) -- String
 SET     $SourceInstrumentCode = 'NOTNULL'
@@ -109,11 +109,11 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $InstrumentId  -- Int32
+DECLARE $InstrumentId INTEGER -- Int32
 SET     $InstrumentId = 2
 DECLARE $InstrumentCode NVarChar(4) -- String
 SET     $InstrumentCode = 'aaa2'
-DECLARE $CreateDate  -- DateTime2
+DECLARE $CreateDate TIMESTAMP -- DateTime2
 SET     $CreateDate = '2020-02-28 17:54:55.123123'::TIMESTAMP
 DECLARE $SourceInstrumentCode NVarChar -- String
 SET     $SourceInstrumentCode = NULL
@@ -136,7 +136,7 @@ VALUES
 -- DuckDB
 DECLARE $cond NVarChar(4) -- String
 SET     $cond = 'aaa%'
-DECLARE $uptoDate  -- DateTime2
+DECLARE $uptoDate TIMESTAMP -- DateTime2
 SET     $uptoDate = '2020-02-29 17:54:55.123123'::TIMESTAMP
 
 SELECT DISTINCT
