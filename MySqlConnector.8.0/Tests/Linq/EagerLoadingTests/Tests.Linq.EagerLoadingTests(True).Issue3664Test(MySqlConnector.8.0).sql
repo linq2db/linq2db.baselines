@@ -11,9 +11,11 @@ VALUES
 	@Id
 )
 
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector
--- Batch 1
--- id = 11
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+-- Command 1
+DECLARE @id Int32
+SET     @id = 11
+
 SELECT
 	`m_1`.`Id`,
 	`d`.`Id`,
@@ -24,14 +26,16 @@ FROM
 WHERE
 	`d`.`Id` = @id
 
--- Batch 2
+-- Command 2
 SELECT
 	`t1`.`Id`
 FROM
 	`Test3664` `t1`
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector
--- Batch 1
--- id = 12
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+-- Command 1
+DECLARE @id Int32
+SET     @id = 12
+
 SELECT
 	`m_1`.`Id`,
 	`d`.`Id`,
@@ -42,7 +46,7 @@ FROM
 WHERE
 	`d`.`Id` = @id
 
--- Batch 2
+-- Command 2
 SELECT
 	`t1`.`Id`
 FROM

@@ -1,5 +1,5 @@
-﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector
--- Batch 1
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+-- Command 1
 SELECT
 	`m_1`.`Id`,
 	`d`.`Id`,
@@ -12,7 +12,7 @@ FROM
 		INNER JOIN `EntityMB` `d` ON `m_1`.`Id` = `d`.`FK`
 		LEFT JOIN `EntityMD` `a_ObjectD` ON `d`.`FKD` = `a_ObjectD`.`Id`
 
--- Batch 2
+-- Command 2
 SELECT
 	`t1`.`Id`,
 	`t1`.`FK`,

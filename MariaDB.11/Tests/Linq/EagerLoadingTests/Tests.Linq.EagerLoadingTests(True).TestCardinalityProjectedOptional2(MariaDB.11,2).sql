@@ -1,5 +1,5 @@
-﻿-- MariaDB.11 MariaDB.10.MySqlConnector
--- Batch 1
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+-- Command 1
 SELECT
 	`m_1`.`Id`,
 	`d`.`Id`,
@@ -10,7 +10,7 @@ FROM
 		INNER JOIN `EntityMB` `d` ON `m_1`.`Id` = `d`.`FK`
 		LEFT JOIN `EntityMD` `a_ObjectD` ON `d`.`FKD` = `a_ObjectD`.`Id`
 
--- Batch 2
+-- Command 2
 SELECT
 	`e`.`Id`
 FROM

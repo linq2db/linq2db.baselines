@@ -1,5 +1,5 @@
-﻿-- MariaDB.11 MariaDB.10.MySqlConnector
--- Batch 1
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+-- Command 1
 WITH `CTE_1` (`Value4`)
 AS
 (
@@ -26,7 +26,7 @@ FROM
 	) `m_1`
 		INNER JOIN `CteTable` `d_1` ON `m_1`.`Id` = `d_1`.`Value3`
 
--- Batch 2
+-- Command 2
 WITH `CTE_1`
 (
 	`Value4`,

@@ -1,5 +1,5 @@
-﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector
--- Batch 1
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+-- Command 1
 SELECT
 	`m_1`.`Id`,
 	`d`.`Name`
@@ -20,7 +20,7 @@ FROM
 	) `m_1`
 		INNER JOIN `Test3799Item` `d` ON `m_1`.`Id` = `d`.`ParentId`
 
--- Batch 2
+-- Command 2
 SELECT
 	`item_1`.`Name`,
 	(
