@@ -67,9 +67,9 @@ VALUES
 (2,3)
 
 -- DuckDB
-DECLARE $ID  -- Int32
+DECLARE $ID INTEGER -- Int32
 SET     $ID = 3
-DECLARE $Value  -- Int32
+DECLARE $Value INTEGER -- Int32
 SET     $Value = 3
 
 INSERT INTO temp_table1

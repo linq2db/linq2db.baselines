@@ -1,7 +1,7 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @Column  -- Date
+DECLARE @Column Text -- Date
 SET     @Column = '2020-02-29'
-DECLARE @ColumnNullable  -- Date
+DECLARE @ColumnNullable Text -- Date
 SET     @ColumnNullable = '2020-01-01'
 
 SELECT
@@ -28,11 +28,11 @@ DELETE FROM
 	[DateOnlyTable]
 
 -- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Column  -- Date
+DECLARE @Column Text -- Date
 SET     @Column = '1980-01-01'
-DECLARE @ColumnNullable  -- Date
+DECLARE @ColumnNullable Text -- Date
 SET     @ColumnNullable = NULL
 
 INSERT INTO [DateOnlyTable]
@@ -49,11 +49,11 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Column  -- Date
+DECLARE @Column Text -- Date
 SET     @Column = '2020-02-29'
-DECLARE @ColumnNullable  -- Date
+DECLARE @ColumnNullable Text -- Date
 SET     @ColumnNullable = '2020-01-01'
 
 INSERT INTO [DateOnlyTable]

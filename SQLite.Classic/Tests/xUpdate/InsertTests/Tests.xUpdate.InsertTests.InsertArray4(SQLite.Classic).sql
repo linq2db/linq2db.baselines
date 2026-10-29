@@ -5,19 +5,19 @@ WHERE
 	[LinqDataTypes].[ID] > 1000
 
 -- SQLite.Classic SQLite
-DECLARE @ID  -- Int32
+DECLARE @ID Integer -- Int32
 SET     @ID = 1001
 DECLARE @MoneyValue Decimal(1, 0)
 SET     @MoneyValue = 0
-DECLARE @DateTimeValue  -- DateTime
+DECLARE @DateTimeValue Text -- DateTime
 SET     @DateTimeValue = NULL
-DECLARE @BoolValue  -- Boolean
+DECLARE @BoolValue Integer -- Boolean
 SET     @BoolValue = 1
-DECLARE @GuidValue  -- Guid
+DECLARE @GuidValue Blob -- Guid
 SET     @GuidValue = X'00000000000000000000000000000000'
 DECLARE @BinaryValue Binary(4)
 SET     @BinaryValue = X'01020304'
-DECLARE @SmallIntValue  -- Int16
+DECLARE @SmallIntValue Integer -- Int16
 SET     @SmallIntValue = 0
 
 INSERT INTO [LinqDataTypes]

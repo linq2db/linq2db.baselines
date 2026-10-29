@@ -1,7 +1,7 @@
 ﻿-- DuckDB
-DECLARE $Column  -- Byte
+DECLARE $Column UTINYINT -- Byte
 SET     $Column = 255
-DECLARE $ColumnNullable  -- Byte
+DECLARE $ColumnNullable UTINYINT -- Byte
 SET     $ColumnNullable = 2
 
 SELECT
@@ -28,11 +28,11 @@ DELETE FROM
 	ByteTable t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
-DECLARE $Column  -- Byte
+DECLARE $Column UTINYINT -- Byte
 SET     $Column = 1
-DECLARE $ColumnNullable  -- Byte
+DECLARE $ColumnNullable UTINYINT -- Byte
 SET     $ColumnNullable = NULL
 
 INSERT INTO ByteTable
@@ -49,11 +49,11 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 2
-DECLARE $Column  -- Byte
+DECLARE $Column UTINYINT -- Byte
 SET     $Column = 255
-DECLARE $ColumnNullable  -- Byte
+DECLARE $ColumnNullable UTINYINT -- Byte
 SET     $ColumnNullable = 2
 
 INSERT INTO ByteTable

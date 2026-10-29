@@ -1,9 +1,9 @@
 ﻿-- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
-DECLARE $Grace  -- Int64
+DECLARE $Grace BIGINT -- Int64
 SET     $Grace = 4567
-DECLARE $Required  -- Int64
+DECLARE $Required BIGINT -- Int64
 SET     $Required = 4567
 
 INSERT INTO OptionalDurationRow
@@ -20,11 +20,11 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 2
-DECLARE $Grace  -- Int64
+DECLARE $Grace BIGINT -- Int64
 SET     $Grace = NULL
-DECLARE $Required  -- Int64
+DECLARE $Required BIGINT -- Int64
 SET     $Required = 4567
 
 INSERT INTO OptionalDurationRow
@@ -51,7 +51,7 @@ ORDER BY
 	t1.Id
 
 -- DuckDB
-DECLARE $Grace  -- Int64
+DECLARE $Grace BIGINT -- Int64
 SET     $Grace = NULL
 
 UPDATE
@@ -62,7 +62,7 @@ WHERE
 	OptionalDurationRow.Id = 1
 
 -- DuckDB
-DECLARE $Grace  -- Int64
+DECLARE $Grace BIGINT -- Int64
 SET     $Grace = 4567
 
 UPDATE

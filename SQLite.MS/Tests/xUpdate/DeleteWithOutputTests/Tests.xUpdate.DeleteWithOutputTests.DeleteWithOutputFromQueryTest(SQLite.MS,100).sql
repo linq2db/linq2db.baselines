@@ -9,7 +9,7 @@ WHERE
 	[s].[Id] > 3
 
 -- SQLite.MS SQLite
-DECLARE @param  -- Int32
+DECLARE @param Integer -- Int32
 SET     @param = 100
 DECLARE @ValueStr NVarChar(3) -- String
 SET     @ValueStr = '100'

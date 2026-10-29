@@ -3,7 +3,7 @@ DELETE FROM
 	TestMergeIdentity t1
 
 -- DuckDB
-DECLARE $Field  -- Int32
+DECLARE $Field INTEGER -- Int32
 SET     $Field = NULL
 
 INSERT INTO TestMergeIdentity

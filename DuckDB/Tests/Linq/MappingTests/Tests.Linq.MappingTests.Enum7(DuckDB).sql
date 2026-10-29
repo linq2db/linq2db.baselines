@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $v1  -- Int32
+DECLARE $v1 INTEGER -- Int32
 SET     $v1 = 1
 
 UPDATE

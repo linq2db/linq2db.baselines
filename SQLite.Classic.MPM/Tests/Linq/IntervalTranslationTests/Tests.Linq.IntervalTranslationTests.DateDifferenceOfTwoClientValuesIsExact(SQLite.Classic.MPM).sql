@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @StartedOn VarChar(23) -- AnsiString
 SET     @StartedOn = '2026-01-03 13:30:00.000'
@@ -20,9 +20,9 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Ticks  -- Int64
+DECLARE @Ticks Integer -- Int64
 SET     @Ticks = 1234
-DECLARE @TotalMilliseconds  -- Double
+DECLARE @TotalMilliseconds Real -- Double
 SET     @TotalMilliseconds = 0.1234
 
 SELECT

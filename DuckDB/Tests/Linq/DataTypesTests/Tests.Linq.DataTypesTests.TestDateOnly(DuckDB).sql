@@ -1,7 +1,7 @@
 ﻿-- DuckDB
-DECLARE $Column  -- Date
+DECLARE $Column DATE -- Date
 SET     $Column = '2020-02-29'::DATE
-DECLARE $ColumnNullable  -- Date
+DECLARE $ColumnNullable DATE -- Date
 SET     $ColumnNullable = '2020-01-01'::DATE
 
 SELECT
@@ -28,11 +28,11 @@ DELETE FROM
 	DateOnlyTable t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
-DECLARE $Column  -- Date
+DECLARE $Column DATE -- Date
 SET     $Column = '1980-01-01'::DATE
-DECLARE $ColumnNullable  -- Date
+DECLARE $ColumnNullable DATE -- Date
 SET     $ColumnNullable = NULL
 
 INSERT INTO DateOnlyTable
@@ -49,11 +49,11 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 2
-DECLARE $Column  -- Date
+DECLARE $Column DATE -- Date
 SET     $Column = '2020-02-29'::DATE
-DECLARE $ColumnNullable  -- Date
+DECLARE $ColumnNullable DATE -- Date
 SET     $ColumnNullable = '2020-01-01'::DATE
 
 INSERT INTO DateOnlyTable

@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $skip  -- Int32
+DECLARE $skip INTEGER -- Int32
 SET     $skip = 3
 
 SELECT
@@ -15,7 +15,7 @@ ORDER BY
 LIMIT 1 OFFSET $skip 
 
 -- DuckDB
-DECLARE $skip  -- Int32
+DECLARE $skip INTEGER -- Int32
 SET     $skip = 3
 
 SELECT

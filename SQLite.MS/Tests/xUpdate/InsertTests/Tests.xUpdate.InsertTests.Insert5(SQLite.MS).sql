@@ -5,7 +5,7 @@ WHERE
 	[Child].[ChildID] > 1000
 
 -- SQLite.MS SQLite
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Integer -- Int32
 SET     @ChildID = 1001
 
 INSERT INTO [Child]
@@ -22,7 +22,7 @@ WHERE
 	[c_1].[ChildID] = 11
 
 -- SQLite.MS SQLite
-DECLARE @id  -- Int32
+DECLARE @id Integer -- Int32
 SET     @id = 1001
 
 SELECT

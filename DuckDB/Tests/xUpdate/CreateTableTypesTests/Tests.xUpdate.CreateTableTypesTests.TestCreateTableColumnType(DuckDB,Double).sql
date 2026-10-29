@@ -1,7 +1,7 @@
 ﻿-- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
-DECLARE $Double  -- Double
+DECLARE $Double DOUBLE -- Double
 SET     $Double = 0
 
 INSERT INTO CreateTableTypes
@@ -16,9 +16,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 2
-DECLARE $Double  -- Double
+DECLARE $Double DOUBLE -- Double
 SET     $Double = 3.1400000000000001
 
 INSERT INTO CreateTableTypes

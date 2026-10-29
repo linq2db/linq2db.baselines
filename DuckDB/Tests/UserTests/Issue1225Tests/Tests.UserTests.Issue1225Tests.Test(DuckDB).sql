@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 
 INSERT INTO "Task"
@@ -12,7 +12,7 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 2
 
 INSERT INTO "Task"
@@ -25,11 +25,11 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 2
-DECLARE $TaskId  -- Int32
+DECLARE $TaskId INTEGER -- Int32
 SET     $TaskId = 1
-DECLARE $Actual  -- Boolean
+DECLARE $Actual BOOLEAN -- Boolean
 SET     $Actual = True
 
 INSERT INTO TaskStage

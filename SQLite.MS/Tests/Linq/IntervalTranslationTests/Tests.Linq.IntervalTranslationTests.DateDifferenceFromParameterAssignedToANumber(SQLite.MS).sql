@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @asOf  -- DateTime
+DECLARE @asOf Text(23) -- DateTime
 SET     @asOf = '2026-01-10 08:15:30.000'
 
 UPDATE
@@ -19,7 +19,7 @@ FROM
 LIMIT 2
 
 -- SQLite.MS SQLite
-DECLARE @asOf  -- DateTime
+DECLARE @asOf Text(23) -- DateTime
 SET     @asOf = '2026-01-10 08:15:30.000'
 
 SELECT
@@ -30,7 +30,7 @@ WHERE
 	[r].[Elapsed] < CAST(CAST(Round((JulianDay(@asOf) - JulianDay([r].[ClosedOn])) * 86400000) AS INTEGER) * 10000 AS Float) / 36000000000
 
 -- SQLite.MS SQLite
-DECLARE @asOf  -- DateTime
+DECLARE @asOf Text(23) -- DateTime
 SET     @asOf = '2026-01-10 08:15:30.000'
 
 UPDATE
@@ -50,7 +50,7 @@ FROM
 LIMIT 2
 
 -- SQLite.MS SQLite
-DECLARE @asOf  -- DateTime
+DECLARE @asOf Text(23) -- DateTime
 SET     @asOf = '2026-01-10 08:15:30.000'
 
 SELECT

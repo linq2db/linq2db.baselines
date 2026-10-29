@@ -1,13 +1,13 @@
 ﻿-- SQLite.Classic SQLite
 DECLARE @Name NVarChar(1) -- String
 SET     @Name = 'x'
-DECLARE @Version  -- Int32
+DECLARE @Version Integer -- Int32
 SET     @Version = 5
 DECLARE @stamp VarChar(23) -- AnsiString
 SET     @stamp = '2026-06-01 00:00:00.000'
 DECLARE @UpdatedBy NVarChar -- String
 SET     @UpdatedBy = NULL
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
 UPDATE

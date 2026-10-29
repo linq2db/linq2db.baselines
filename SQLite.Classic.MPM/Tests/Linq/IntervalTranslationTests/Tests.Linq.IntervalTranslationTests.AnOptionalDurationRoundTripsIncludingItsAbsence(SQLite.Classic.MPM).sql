@@ -1,9 +1,9 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Grace  -- Int64
+DECLARE @Grace Integer -- Int64
 SET     @Grace = 4567
-DECLARE @Required  -- Int64
+DECLARE @Required Integer -- Int64
 SET     @Required = 4567
 
 INSERT INTO [OptionalDurationRow]
@@ -20,11 +20,11 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Grace  -- Int64
+DECLARE @Grace Integer -- Int64
 SET     @Grace = NULL
-DECLARE @Required  -- Int64
+DECLARE @Required Integer -- Int64
 SET     @Required = 4567
 
 INSERT INTO [OptionalDurationRow]
@@ -51,7 +51,7 @@ ORDER BY
 	[t1].[Id]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Grace  -- Int64
+DECLARE @Grace Integer -- Int64
 SET     @Grace = NULL
 
 UPDATE
@@ -62,7 +62,7 @@ WHERE
 	[OptionalDurationRow].[Id] = 1
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Grace  -- Int64
+DECLARE @Grace Integer -- Int64
 SET     @Grace = 4567
 
 UPDATE

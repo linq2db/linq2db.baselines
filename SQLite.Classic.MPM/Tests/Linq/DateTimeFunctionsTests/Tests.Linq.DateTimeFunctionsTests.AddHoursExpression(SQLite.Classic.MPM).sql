@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Hour  -- Int32
+DECLARE @Hour Integer -- Int32
 SET     @Hour = 22
 
 SELECT

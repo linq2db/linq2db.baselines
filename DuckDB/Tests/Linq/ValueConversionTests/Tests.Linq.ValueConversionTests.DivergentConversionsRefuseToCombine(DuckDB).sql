@@ -1,11 +1,11 @@
 ﻿-- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
-DECLARE $Doubled  -- Int32
+DECLARE $Doubled INTEGER -- Int32
 SET     $Doubled = 20
-DECLARE $Tripled  -- Int32
+DECLARE $Tripled INTEGER -- Int32
 SET     $Tripled = 30
-DECLARE $Plain  -- Int32
+DECLARE $Plain INTEGER -- Int32
 SET     $Plain = 10
 
 INSERT INTO DivergentConversionRow
@@ -24,7 +24,7 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $PlainValue  -- Int32
+DECLARE $PlainValue INTEGER -- Int32
 SET     $PlainValue = 10
 
 SELECT
@@ -39,7 +39,7 @@ FROM
 LIMIT 2
 
 -- DuckDB
-DECLARE $Doubled  -- Int32
+DECLARE $Doubled INTEGER -- Int32
 SET     $Doubled = 20
 
 SELECT

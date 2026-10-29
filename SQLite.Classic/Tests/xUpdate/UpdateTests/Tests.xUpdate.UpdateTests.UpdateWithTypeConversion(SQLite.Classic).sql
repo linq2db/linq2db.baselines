@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic SQLite
-DECLARE @ID  -- Int32
+DECLARE @ID Integer -- Int32
 SET     @ID = 1001
 
 INSERT INTO [LinqDataTypes]
@@ -16,7 +16,7 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-DECLARE @id  -- Int32
+DECLARE @id Integer -- Int32
 SET     @id = 1001
 
 UPDATE
@@ -28,7 +28,7 @@ WHERE
 	[LinqDataTypes].[ID] = @id
 
 -- SQLite.Classic SQLite
-DECLARE @id  -- Int32
+DECLARE @id Integer -- Int32
 SET     @id = 1001
 
 UPDATE
@@ -40,7 +40,7 @@ WHERE
 	[LinqDataTypes].[ID] = @id
 
 -- SQLite.Classic SQLite
-DECLARE @id  -- Int32
+DECLARE @id Integer -- Int32
 SET     @id = 1001
 
 SELECT

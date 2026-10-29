@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @value  -- Int32
+DECLARE @value Integer -- Int32
 SET     @value = 5
 
 SELECT

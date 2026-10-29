@@ -1,7 +1,7 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = 1
-DECLARE @floor  -- Int32
+DECLARE @floor Integer -- Int32
 SET     @floor = 0
 
 SELECT
@@ -16,9 +16,9 @@ WHERE
 	[p].[ParentID] <> -1
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = 2
-DECLARE @floor  -- Int32
+DECLARE @floor Integer -- Int32
 SET     @floor = 0
 
 SELECT

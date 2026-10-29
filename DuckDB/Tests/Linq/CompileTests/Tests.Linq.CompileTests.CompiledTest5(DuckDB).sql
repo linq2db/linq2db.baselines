@@ -1,7 +1,7 @@
 ﻿-- DuckDB
-DECLARE $p  -- Int32
+DECLARE $p INTEGER -- Int32
 SET     $p = 1
-DECLARE $p_1  -- Int32
+DECLARE $p_1 INTEGER -- Int32
 SET     $p_1 = 1
 
 SELECT
@@ -13,7 +13,7 @@ WHERE
 	p.ParentID = $p AND p.Value1 = $p_1
 
 -- DuckDB
-DECLARE $p  -- Int32
+DECLARE $p INTEGER -- Int32
 SET     $p = 2
 
 SELECT

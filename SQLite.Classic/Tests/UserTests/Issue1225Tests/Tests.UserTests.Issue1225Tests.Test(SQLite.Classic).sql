@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
 INSERT INTO [Task]
@@ -12,7 +12,7 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
 
 INSERT INTO [Task]
@@ -25,11 +25,11 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @TaskId  -- Int32
+DECLARE @TaskId Integer -- Int32
 SET     @TaskId = 1
-DECLARE @Actual  -- Boolean
+DECLARE @Actual Integer -- Boolean
 SET     @Actual = 1
 
 INSERT INTO [TaskStage]

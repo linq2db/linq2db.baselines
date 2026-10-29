@@ -1,7 +1,7 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @ID  -- Int32
+DECLARE @ID Integer -- Int32
 SET     @ID = 3
-DECLARE @ID_1  -- Int32
+DECLARE @ID_1 Integer -- Int32
 SET     @ID_1 = 4
 
 SELECT

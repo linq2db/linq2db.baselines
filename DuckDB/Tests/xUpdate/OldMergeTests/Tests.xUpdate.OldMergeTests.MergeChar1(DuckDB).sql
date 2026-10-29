@@ -13,7 +13,7 @@ RETURNING
 	ID
 
 -- DuckDB
-DECLARE $id  -- Int32
+DECLARE $id INTEGER -- Int32
 SET     $id = 3
 
 SELECT
@@ -26,7 +26,7 @@ WHERE
 	t.ID = $id
 
 -- DuckDB
-DECLARE $id  -- Int32
+DECLARE $id INTEGER -- Int32
 SET     $id = 3
 
 MERGE INTO AllTypes Target

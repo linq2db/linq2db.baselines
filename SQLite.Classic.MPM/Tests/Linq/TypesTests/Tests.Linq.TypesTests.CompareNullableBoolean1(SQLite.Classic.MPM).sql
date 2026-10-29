@@ -12,7 +12,7 @@ FROM
 	[LinqDataTypes] [t]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @param  -- Boolean
+DECLARE @param Integer -- Boolean
 SET     @param = 1
 
 SELECT

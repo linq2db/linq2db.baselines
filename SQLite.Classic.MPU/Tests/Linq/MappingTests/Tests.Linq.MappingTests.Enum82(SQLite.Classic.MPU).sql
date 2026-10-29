@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @testValue  -- Int32
+DECLARE @testValue Integer -- Int32
 SET     @testValue = 1
 
 SELECT

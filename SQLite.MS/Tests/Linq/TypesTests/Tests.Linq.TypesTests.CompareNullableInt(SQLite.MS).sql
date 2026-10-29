@@ -6,7 +6,7 @@ FROM
 	[Parent] [t]
 
 -- SQLite.MS SQLite
-DECLARE @param  -- Int32
+DECLARE @param Integer -- Int32
 SET     @param = 1
 
 SELECT

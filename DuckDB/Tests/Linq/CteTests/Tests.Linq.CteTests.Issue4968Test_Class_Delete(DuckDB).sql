@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $menuId  -- Int32
+DECLARE $menuId INTEGER -- Int32
 SET     $menuId = 1
 
 WITH RECURSIVE cteQueryable (Id1)

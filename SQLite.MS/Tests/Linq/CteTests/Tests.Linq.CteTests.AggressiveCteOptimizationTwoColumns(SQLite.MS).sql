@@ -1,7 +1,7 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @Date  -- DateTime
+DECLARE @Date Text(23) -- DateTime
 SET     @Date = '2020-02-29 00:00:00.000'
-DECLARE @dateTo  -- DateTime
+DECLARE @dateTo Text(23) -- DateTime
 SET     @dateTo = '2020-03-10 00:00:00.000'
 
 WITH [x]

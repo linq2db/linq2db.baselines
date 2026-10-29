@@ -12,7 +12,7 @@ FROM
 	LinqDataTypes t
 
 -- DuckDB
-DECLARE $param  -- Boolean
+DECLARE $param BOOLEAN -- Boolean
 SET     $param = True
 
 SELECT

@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $VBLocal_id  -- Int32
+DECLARE $VBLocal_id INTEGER -- Int32
 SET     $VBLocal_id = 1
 
 SELECT

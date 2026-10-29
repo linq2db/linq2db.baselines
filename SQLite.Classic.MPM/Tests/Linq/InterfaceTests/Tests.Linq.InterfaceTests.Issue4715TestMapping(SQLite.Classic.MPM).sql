@@ -1,13 +1,13 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @ImplicitPropertyRW  -- Int32
+DECLARE @ImplicitPropertyRW Integer -- Int32
 SET     @ImplicitPropertyRW = 2
-DECLARE @ImplicitPropertyRO  -- Int32
+DECLARE @ImplicitPropertyRO Integer -- Int32
 SET     @ImplicitPropertyRO = 11
-DECLARE @Tests_Linq_InterfaceTests_IExplicitInterfaceTests  -- Int32
+DECLARE @Tests_Linq_InterfaceTests_IExplicitInterfaceTests Integer -- Int32
 SET     @Tests_Linq_InterfaceTests_IExplicitInterfaceTests = 3
-DECLARE @Tests_Linq_InterfaceTests_IExplicitInterfaceTest  -- Int32
+DECLARE @Tests_Linq_InterfaceTests_IExplicitInterfaceTest Integer -- Int32
 SET     @Tests_Linq_InterfaceTests_IExplicitInterfaceTest = 22
 
 INSERT INTO [Issue4715Table]

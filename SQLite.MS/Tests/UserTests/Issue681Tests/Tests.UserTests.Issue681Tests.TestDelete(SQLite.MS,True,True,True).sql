@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @ID  -- Int32
+DECLARE @ID Integer -- Int32
 SET     @ID = 5
 
 DELETE FROM

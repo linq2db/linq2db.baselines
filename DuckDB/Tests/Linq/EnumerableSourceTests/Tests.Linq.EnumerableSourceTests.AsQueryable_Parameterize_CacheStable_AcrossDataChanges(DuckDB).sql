@@ -1,9 +1,9 @@
 ﻿-- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 0
 DECLARE $Data NVarChar(6) -- String
 SET     $Data = 'Data 0'
-DECLARE $Id_1  -- Int32
+DECLARE $Id_1 INTEGER -- Int32
 SET     $Id_1 = 1
 DECLARE $Data_1 NVarChar(6) -- String
 SET     $Data_1 = 'Data 1'
@@ -19,11 +19,11 @@ ORDER BY
 	t1.Id
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 100
 DECLARE $Data NVarChar(8) -- String
 SET     $Data = 'Data 100'
-DECLARE $Id_1  -- Int32
+DECLARE $Id_1 INTEGER -- Int32
 SET     $Id_1 = 101
 DECLARE $Data_1 NVarChar(8) -- String
 SET     $Data_1 = 'Data 101'

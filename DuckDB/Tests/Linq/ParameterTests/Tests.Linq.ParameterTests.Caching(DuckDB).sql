@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $p  -- Int32
+DECLARE $p INTEGER -- Int32
 SET     $p = 1
 
 SELECT
@@ -18,9 +18,9 @@ FROM
 	Parent t1
 
 -- DuckDB
-DECLARE $p  -- Int32
+DECLARE $p INTEGER -- Int32
 SET     $p = 3
-DECLARE $p_1  -- Int32
+DECLARE $p_1 INTEGER -- Int32
 SET     $p_1 = 2
 
 SELECT
@@ -39,7 +39,7 @@ FROM
 	Parent t1
 
 -- DuckDB
-DECLARE $p  -- Int32
+DECLARE $p INTEGER -- Int32
 SET     $p = 1
 
 SELECT

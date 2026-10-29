@@ -27,7 +27,7 @@ VALUES
 SELECT last_insert_rowid()
 
 -- SQLite.MS SQLite
-DECLARE @id  -- Int32
+DECLARE @id Integer -- Int32
 SET     @id = 5
 
 SELECT

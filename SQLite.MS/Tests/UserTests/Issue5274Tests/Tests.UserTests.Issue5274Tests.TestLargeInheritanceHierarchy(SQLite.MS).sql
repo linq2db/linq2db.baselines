@@ -3,7 +3,7 @@ DECLARE @EntityType NVarChar(6) -- String
 SET     @EntityType = 'Type01'
 DECLARE @Name NVarChar(9) -- String
 SET     @Name = 'Entity 01'
-DECLARE @CreatedDate  -- DateTime
+DECLARE @CreatedDate Text(23) -- DateTime
 SET     @CreatedDate = '2020-03-01 00:00:00.000'
 DECLARE @Property01 NVarChar(7) -- String
 SET     @Property01 = 'Value01'
@@ -28,7 +28,7 @@ DECLARE @EntityType NVarChar(6) -- String
 SET     @EntityType = 'Type02'
 DECLARE @Name NVarChar(9) -- String
 SET     @Name = 'Entity 02'
-DECLARE @CreatedDate  -- DateTime
+DECLARE @CreatedDate Text(23) -- DateTime
 SET     @CreatedDate = '2020-03-02 00:00:00.000'
 DECLARE @Property02 NVarChar(7) -- String
 SET     @Property02 = 'Value02'
@@ -53,7 +53,7 @@ DECLARE @EntityType NVarChar(6) -- String
 SET     @EntityType = 'Type03'
 DECLARE @Name NVarChar(9) -- String
 SET     @Name = 'Entity 03'
-DECLARE @CreatedDate  -- DateTime
+DECLARE @CreatedDate Text(23) -- DateTime
 SET     @CreatedDate = '2020-03-03 00:00:00.000'
 DECLARE @Property03 NVarChar(7) -- String
 SET     @Property03 = 'Value03'
@@ -78,7 +78,7 @@ DECLARE @EntityType NVarChar(6) -- String
 SET     @EntityType = 'Type04'
 DECLARE @Name NVarChar(9) -- String
 SET     @Name = 'Entity 04'
-DECLARE @CreatedDate  -- DateTime
+DECLARE @CreatedDate Text(23) -- DateTime
 SET     @CreatedDate = '2020-03-04 00:00:00.000'
 DECLARE @Property04 NVarChar(7) -- String
 SET     @Property04 = 'Value04'
@@ -103,7 +103,7 @@ DECLARE @EntityType NVarChar(6) -- String
 SET     @EntityType = 'Type05'
 DECLARE @Name NVarChar(9) -- String
 SET     @Name = 'Entity 05'
-DECLARE @CreatedDate  -- DateTime
+DECLARE @CreatedDate Text(23) -- DateTime
 SET     @CreatedDate = '2020-03-05 00:00:00.000'
 DECLARE @Property05 NVarChar(7) -- String
 SET     @Property05 = 'Value05'
@@ -128,7 +128,7 @@ DECLARE @EntityType NVarChar(6) -- String
 SET     @EntityType = 'Type06'
 DECLARE @Name NVarChar(9) -- String
 SET     @Name = 'Entity 06'
-DECLARE @CreatedDate  -- DateTime
+DECLARE @CreatedDate Text(23) -- DateTime
 SET     @CreatedDate = '2020-03-06 00:00:00.000'
 DECLARE @Property06 NVarChar(7) -- String
 SET     @Property06 = 'Value06'
@@ -153,7 +153,7 @@ DECLARE @EntityType NVarChar(6) -- String
 SET     @EntityType = 'Type07'
 DECLARE @Name NVarChar(9) -- String
 SET     @Name = 'Entity 07'
-DECLARE @CreatedDate  -- DateTime
+DECLARE @CreatedDate Text(23) -- DateTime
 SET     @CreatedDate = '2020-03-07 00:00:00.000'
 DECLARE @Property07 NVarChar(7) -- String
 SET     @Property07 = 'Value07'
@@ -178,7 +178,7 @@ DECLARE @EntityType NVarChar(6) -- String
 SET     @EntityType = 'Type08'
 DECLARE @Name NVarChar(9) -- String
 SET     @Name = 'Entity 08'
-DECLARE @CreatedDate  -- DateTime
+DECLARE @CreatedDate Text(23) -- DateTime
 SET     @CreatedDate = '2020-03-08 00:00:00.000'
 DECLARE @Property08 NVarChar(7) -- String
 SET     @Property08 = 'Value08'
@@ -203,7 +203,7 @@ DECLARE @EntityType NVarChar(6) -- String
 SET     @EntityType = 'Type09'
 DECLARE @Name NVarChar(9) -- String
 SET     @Name = 'Entity 09'
-DECLARE @CreatedDate  -- DateTime
+DECLARE @CreatedDate Text(23) -- DateTime
 SET     @CreatedDate = '2020-03-09 00:00:00.000'
 DECLARE @Property09 NVarChar(7) -- String
 SET     @Property09 = 'Value09'
@@ -228,7 +228,7 @@ DECLARE @EntityType NVarChar(6) -- String
 SET     @EntityType = 'Type10'
 DECLARE @Name NVarChar(9) -- String
 SET     @Name = 'Entity 10'
-DECLARE @CreatedDate  -- DateTime
+DECLARE @CreatedDate Text(23) -- DateTime
 SET     @CreatedDate = '2020-03-10 00:00:00.000'
 DECLARE @Property10 NVarChar(7) -- String
 SET     @Property10 = 'Value10'
@@ -253,7 +253,7 @@ DECLARE @EntityType NVarChar(6) -- String
 SET     @EntityType = 'Type11'
 DECLARE @Name NVarChar(9) -- String
 SET     @Name = 'Entity 11'
-DECLARE @CreatedDate  -- DateTime
+DECLARE @CreatedDate Text(23) -- DateTime
 SET     @CreatedDate = '2020-03-11 00:00:00.000'
 DECLARE @Property11 NVarChar(7) -- String
 SET     @Property11 = 'Value11'
@@ -278,7 +278,7 @@ DECLARE @EntityType NVarChar(6) -- String
 SET     @EntityType = 'Type12'
 DECLARE @Name NVarChar(9) -- String
 SET     @Name = 'Entity 12'
-DECLARE @CreatedDate  -- DateTime
+DECLARE @CreatedDate Text(23) -- DateTime
 SET     @CreatedDate = '2020-03-12 00:00:00.000'
 DECLARE @Property12 NVarChar(7) -- String
 SET     @Property12 = 'Value12'
@@ -303,7 +303,7 @@ DECLARE @EntityType NVarChar(6) -- String
 SET     @EntityType = 'Type13'
 DECLARE @Name NVarChar(9) -- String
 SET     @Name = 'Entity 13'
-DECLARE @CreatedDate  -- DateTime
+DECLARE @CreatedDate Text(23) -- DateTime
 SET     @CreatedDate = '2020-03-13 00:00:00.000'
 DECLARE @Property13 NVarChar(7) -- String
 SET     @Property13 = 'Value13'
@@ -328,7 +328,7 @@ DECLARE @EntityType NVarChar(6) -- String
 SET     @EntityType = 'Type14'
 DECLARE @Name NVarChar(9) -- String
 SET     @Name = 'Entity 14'
-DECLARE @CreatedDate  -- DateTime
+DECLARE @CreatedDate Text(23) -- DateTime
 SET     @CreatedDate = '2020-03-14 00:00:00.000'
 DECLARE @Property14 NVarChar(7) -- String
 SET     @Property14 = 'Value14'
@@ -353,7 +353,7 @@ DECLARE @EntityType NVarChar(6) -- String
 SET     @EntityType = 'Type15'
 DECLARE @Name NVarChar(9) -- String
 SET     @Name = 'Entity 15'
-DECLARE @CreatedDate  -- DateTime
+DECLARE @CreatedDate Text(23) -- DateTime
 SET     @CreatedDate = '2020-03-15 00:00:00.000'
 DECLARE @Property15 NVarChar(7) -- String
 SET     @Property15 = 'Value15'
@@ -378,7 +378,7 @@ DECLARE @EntityType NVarChar(6) -- String
 SET     @EntityType = 'Type16'
 DECLARE @Name NVarChar(9) -- String
 SET     @Name = 'Entity 16'
-DECLARE @CreatedDate  -- DateTime
+DECLARE @CreatedDate Text(23) -- DateTime
 SET     @CreatedDate = '2020-03-16 00:00:00.000'
 DECLARE @Property16 NVarChar(7) -- String
 SET     @Property16 = 'Value16'
@@ -403,7 +403,7 @@ DECLARE @EntityType NVarChar(6) -- String
 SET     @EntityType = 'Type17'
 DECLARE @Name NVarChar(9) -- String
 SET     @Name = 'Entity 17'
-DECLARE @CreatedDate  -- DateTime
+DECLARE @CreatedDate Text(23) -- DateTime
 SET     @CreatedDate = '2020-03-17 00:00:00.000'
 DECLARE @Property17 NVarChar(7) -- String
 SET     @Property17 = 'Value17'

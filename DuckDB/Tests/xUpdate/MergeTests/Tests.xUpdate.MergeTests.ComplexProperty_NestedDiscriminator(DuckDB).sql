@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $DogName NVarChar(3) -- String
 SET     $DogName = 'Rex'
@@ -20,7 +20,7 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 2
 DECLARE $CatName NVarChar(3) -- String
 SET     $CatName = 'Tom'

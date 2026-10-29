@@ -32,7 +32,7 @@ VALUES (@p4, @p5, @p6, @p7, @p8);
 
 
 -- SQLite.MS SQLite
-DECLARE @test  -- DateTime
+DECLARE @test Integer(23) -- DateTime
 SET     @test = '2026-06-06 02:01:01.000'
 
 UPDATE

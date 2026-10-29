@@ -62,7 +62,7 @@ WHERE
 	CAST(Date_Diff('microsecond', x.StartedOn, b.FinishedOn) * 10 AS DOUBLE) / 864000000000 > 1
 
 -- DuckDB
-DECLARE $Hours  -- Int32
+DECLARE $Hours INTEGER -- Int32
 SET     $Hours = 3
 
 SELECT
@@ -74,7 +74,7 @@ WHERE
 	CAST(((Date_Diff('microsecond', x.StartedOn, b.FinishedOn) * 10) // 36000000000) % 24 AS INTEGER) = $Hours
 
 -- DuckDB
-DECLARE $Minutes  -- Int32
+DECLARE $Minutes INTEGER -- Int32
 SET     $Minutes = 15
 
 SELECT
@@ -95,7 +95,7 @@ WHERE
 	CAST(Date_Diff('microsecond', b.FinishedOn, x.StartedOn) * 10 AS DOUBLE) / 36000000000 < -1
 
 -- DuckDB
-DECLARE $Hours  -- Int32
+DECLARE $Hours INTEGER -- Int32
 SET     $Hours = 3
 
 SELECT

@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $param  -- Int32
+DECLARE $param INTEGER -- Int32
 SET     $param = 100
 
 INSERT INTO DestinationTable

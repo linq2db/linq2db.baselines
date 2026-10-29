@@ -1,7 +1,7 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @InstrumentId  -- Int32
+DECLARE @InstrumentId Integer -- Int32
 SET     @InstrumentId = 1
-DECLARE @IndexId  -- Int32
+DECLARE @IndexId Integer -- Int32
 SET     @IndexId = 1
 
 INSERT INTO [T3]
@@ -16,9 +16,9 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @InstrumentId  -- Int32
+DECLARE @InstrumentId Integer -- Int32
 SET     @InstrumentId = 2
-DECLARE @IndexId  -- Int32
+DECLARE @IndexId Integer -- Int32
 SET     @IndexId = 1
 
 INSERT INTO [T3]
@@ -33,9 +33,9 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @InstrumentId  -- Int32
+DECLARE @InstrumentId Integer -- Int32
 SET     @InstrumentId = 3
-DECLARE @IndexId  -- Int32
+DECLARE @IndexId Integer -- Int32
 SET     @IndexId = 1
 
 INSERT INTO [T3]
@@ -50,9 +50,9 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @InstrumentId  -- Int32
+DECLARE @InstrumentId Integer -- Int32
 SET     @InstrumentId = 1
-DECLARE @IndexId  -- Int32
+DECLARE @IndexId Integer -- Int32
 SET     @IndexId = 1
 
 INSERT INTO [T2]
@@ -67,9 +67,9 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @InstrumentId  -- Int32
+DECLARE @InstrumentId Integer -- Int32
 SET     @InstrumentId = 2
-DECLARE @IndexId  -- Int32
+DECLARE @IndexId Integer -- Int32
 SET     @IndexId = 1
 
 INSERT INTO [T2]
@@ -84,7 +84,7 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @InstrumentId  -- Int32
+DECLARE @InstrumentId Integer -- Int32
 SET     @InstrumentId = 1
 DECLARE @InstrumentCode NVarChar(4) -- String
 SET     @InstrumentCode = 'aaa1'
@@ -109,7 +109,7 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @InstrumentId  -- Int32
+DECLARE @InstrumentId Integer -- Int32
 SET     @InstrumentId = 2
 DECLARE @InstrumentCode NVarChar(4) -- String
 SET     @InstrumentCode = 'aaa2'

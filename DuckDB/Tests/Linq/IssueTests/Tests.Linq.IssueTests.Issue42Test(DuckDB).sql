@@ -37,23 +37,23 @@ LIMIT 1
 -- DuckDB
 DECLARE $MoneyValue Decimal(5, 4)
 SET     $MoneyValue = 1.1100
-DECLARE $DateTimeValue  -- DateTime2
+DECLARE $DateTimeValue TIMESTAMP -- DateTime2
 SET     $DateTimeValue = '2001-01-11 01:11:21.100000'::TIMESTAMP
-DECLARE $DateTimeValue2  -- DateTime2
+DECLARE $DateTimeValue2 TIMESTAMP -- DateTime2
 SET     $DateTimeValue2 = NULL
-DECLARE $BoolValue  -- Boolean
+DECLARE $BoolValue BOOLEAN -- Boolean
 SET     $BoolValue = False
-DECLARE $GuidValue  -- Guid
+DECLARE $GuidValue UUID -- Guid
 SET     $GuidValue = 'ef129165-6ffe-4df9-bb6b-bb16e413c883'::UUID
-DECLARE $SmallIntValue  -- Int16
+DECLARE $SmallIntValue SMALLINT -- Int16
 SET     $SmallIntValue = 1
-DECLARE $IntValue  -- Int32
+DECLARE $IntValue INTEGER -- Int32
 SET     $IntValue = NULL
-DECLARE $BigIntValue  -- Int64
+DECLARE $BigIntValue BIGINT -- Int64
 SET     $BigIntValue = 1
 DECLARE $StringValue NVarChar -- String
 SET     $StringValue = NULL
-DECLARE $ID  -- Int32
+DECLARE $ID INTEGER -- Int32
 SET     $ID = 1
 
 UPDATE
@@ -72,7 +72,7 @@ WHERE
 	LinqDataTypes.ID = $ID
 
 -- DuckDB
-DECLARE $ID  -- Int32
+DECLARE $ID INTEGER -- Int32
 SET     $ID = 1
 
 SELECT
@@ -95,23 +95,23 @@ LIMIT 1
 -- DuckDB
 DECLARE $MoneyValue Decimal(5, 4)
 SET     $MoneyValue = 1.1100
-DECLARE $DateTimeValue  -- DateTime2
+DECLARE $DateTimeValue TIMESTAMP -- DateTime2
 SET     $DateTimeValue = '2001-01-11 01:11:21.100000'::TIMESTAMP
-DECLARE $DateTimeValue2  -- DateTime2
+DECLARE $DateTimeValue2 TIMESTAMP -- DateTime2
 SET     $DateTimeValue2 = NULL
-DECLARE $BoolValue  -- Boolean
+DECLARE $BoolValue BOOLEAN -- Boolean
 SET     $BoolValue = True
-DECLARE $GuidValue  -- Guid
+DECLARE $GuidValue UUID -- Guid
 SET     $GuidValue = 'ef129165-6ffe-4df9-bb6b-bb16e413c883'::UUID
-DECLARE $SmallIntValue  -- Int16
+DECLARE $SmallIntValue SMALLINT -- Int16
 SET     $SmallIntValue = 1
-DECLARE $IntValue  -- Int32
+DECLARE $IntValue INTEGER -- Int32
 SET     $IntValue = NULL
-DECLARE $BigIntValue  -- Int64
+DECLARE $BigIntValue BIGINT -- Int64
 SET     $BigIntValue = 1
 DECLARE $StringValue NVarChar -- String
 SET     $StringValue = NULL
-DECLARE $ID  -- Int32
+DECLARE $ID INTEGER -- Int32
 SET     $ID = 1
 
 UPDATE

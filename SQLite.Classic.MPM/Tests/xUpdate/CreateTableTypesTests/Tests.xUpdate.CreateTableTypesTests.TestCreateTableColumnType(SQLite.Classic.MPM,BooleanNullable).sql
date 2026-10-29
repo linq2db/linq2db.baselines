@@ -1,7 +1,7 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @BooleanNullable  -- Boolean
+DECLARE @BooleanNullable Integer -- Boolean
 SET     @BooleanNullable = NULL
 
 INSERT INTO [CreateTableTypes]
@@ -16,9 +16,9 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @BooleanNullable  -- Boolean
+DECLARE @BooleanNullable Integer -- Boolean
 SET     @BooleanNullable = 1
 
 INSERT INTO [CreateTableTypes]

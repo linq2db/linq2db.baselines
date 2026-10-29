@@ -1,7 +1,7 @@
 ﻿-- Northwind.SQLite.MS SQLite.MS SQLite
-DECLARE @take  -- Int32
+DECLARE @take Integer -- Int32
 SET     @take = 50
-DECLARE @skip  -- Int32
+DECLARE @skip Integer -- Int32
 SET     @skip = 100
 
 SELECT DISTINCT

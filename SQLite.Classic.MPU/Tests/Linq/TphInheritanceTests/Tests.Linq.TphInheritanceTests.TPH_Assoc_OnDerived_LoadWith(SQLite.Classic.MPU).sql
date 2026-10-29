@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(4) -- String
 SET     @Name = 'Acme'
@@ -18,9 +18,9 @@ VALUES
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Kind NVarChar(1) -- String
 SET     @Kind = 'E'
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @CompanyId  -- Int32
+DECLARE @CompanyId Integer -- Int32
 SET     @CompanyId = 1
 
 INSERT INTO [TphAssocPerson]
@@ -39,7 +39,7 @@ VALUES
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Kind NVarChar(1) -- String
 SET     @Kind = 'C'
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Agency NVarChar(4) -- String
 SET     @Agency = 'Temp'
@@ -60,9 +60,9 @@ VALUES
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Kind NVarChar(1) -- String
 SET     @Kind = 'E'
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 3
-DECLARE @CompanyId  -- Int32
+DECLARE @CompanyId Integer -- Int32
 SET     @CompanyId = NULL
 
 INSERT INTO [TphAssocPerson]

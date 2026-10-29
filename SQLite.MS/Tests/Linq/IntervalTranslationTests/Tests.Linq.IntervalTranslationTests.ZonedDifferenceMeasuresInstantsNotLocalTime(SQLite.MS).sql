@@ -1,9 +1,9 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @StartedOn  -- DateTimeOffset
+DECLARE @StartedOn Text -- DateTimeOffset
 SET     @StartedOn = '2026-01-01 12:00:00.000+00:00'
-DECLARE @FinishedOn  -- DateTimeOffset
+DECLARE @FinishedOn Text -- DateTimeOffset
 SET     @FinishedOn = '2026-01-01 14:00:00.000+02:00'
 
 INSERT INTO [ZonedEventRow]
@@ -20,11 +20,11 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @StartedOn  -- DateTimeOffset
+DECLARE @StartedOn Text -- DateTimeOffset
 SET     @StartedOn = '2026-01-01 12:00:00.000+02:00'
-DECLARE @FinishedOn  -- DateTimeOffset
+DECLARE @FinishedOn Text -- DateTimeOffset
 SET     @FinishedOn = '2026-01-01 12:00:00.000+00:00'
 
 INSERT INTO [ZonedEventRow]

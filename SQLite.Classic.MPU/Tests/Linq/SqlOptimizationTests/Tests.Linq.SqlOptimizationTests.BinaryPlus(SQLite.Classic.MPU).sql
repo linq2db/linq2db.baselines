@@ -5,7 +5,7 @@ FROM
 	[DataClass] [t]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @n  -- Int32
+DECLARE @n Integer -- Int32
 SET     @n = 2
 
 SELECT

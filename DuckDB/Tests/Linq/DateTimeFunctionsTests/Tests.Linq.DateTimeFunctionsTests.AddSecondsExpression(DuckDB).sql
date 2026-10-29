@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $Second  -- Int32
+DECLARE $Second INTEGER -- Int32
 SET     $Second = -35
 
 SELECT

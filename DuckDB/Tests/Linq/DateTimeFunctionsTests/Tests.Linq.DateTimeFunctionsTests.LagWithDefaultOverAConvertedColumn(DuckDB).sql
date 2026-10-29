@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $fallback  -- DateTime
+DECLARE $fallback TIMESTAMP -- DateTime
 SET     $fallback = '2026-05-25 09:00:00.000000'::TIMESTAMP
 
 SELECT

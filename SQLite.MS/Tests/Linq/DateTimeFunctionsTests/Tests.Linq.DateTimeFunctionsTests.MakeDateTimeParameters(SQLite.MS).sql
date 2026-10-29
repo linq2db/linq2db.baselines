@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @year  -- Int32
+DECLARE @year Integer -- Int32
 SET     @year = 2010
 
 SELECT

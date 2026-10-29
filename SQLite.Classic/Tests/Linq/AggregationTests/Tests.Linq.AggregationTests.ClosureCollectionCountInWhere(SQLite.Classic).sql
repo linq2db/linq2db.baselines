@@ -1,7 +1,7 @@
 ﻿-- SQLite.Classic SQLite
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = 2
-DECLARE @p_1  -- Int32
+DECLARE @p_1 Integer -- Int32
 SET     @p_1 = 0
 
 SELECT

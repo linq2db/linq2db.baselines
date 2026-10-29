@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $offset  -- Int32
+DECLARE $offset INTEGER -- Int32
 SET     $offset = -1
 
 UPDATE

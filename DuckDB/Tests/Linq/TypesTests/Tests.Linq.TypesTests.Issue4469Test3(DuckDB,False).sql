@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $param  -- Double
+DECLARE $param DOUBLE -- Double
 SET     $param = 33
 
 SELECT

@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic SQLite
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = 35
 
 SELECT
@@ -20,7 +20,7 @@ FROM
 		INNER JOIN [EmailAttachment] [d] ON [m_1].[Id] = [d].[EmailId]
 
 -- SQLite.Classic SQLite
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = 35
 
 SELECT
@@ -32,7 +32,7 @@ WHERE
 LIMIT 1
 
 -- SQLite.Classic SQLite
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = 36
 
 SELECT
@@ -53,7 +53,7 @@ FROM
 		INNER JOIN [EmailAttachment] [d] ON [m_1].[Id] = [d].[EmailId]
 
 -- SQLite.Classic SQLite
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = 36
 
 SELECT

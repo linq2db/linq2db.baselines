@@ -1,13 +1,13 @@
 ﻿-- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
-DECLARE $StartedOn  -- DateTime
+DECLARE $StartedOn TIMESTAMP -- DateTime
 SET     $StartedOn = '2026-06-01 10:00:00.000000'::TIMESTAMP
-DECLARE $FinishedOn  -- DateTime
+DECLARE $FinishedOn TIMESTAMP -- DateTime
 SET     $FinishedOn = '2026-06-12 10:00:00.000000'::TIMESTAMP
-DECLARE $OpenedOn  -- Date
+DECLARE $OpenedOn DATE -- Date
 SET     $OpenedOn = '2026-06-01 00:00:00.000000'::TIMESTAMP
-DECLARE $ClosedOn  -- Date
+DECLARE $ClosedOn DATE -- Date
 SET     $ClosedOn = '2026-06-12 00:00:00.000000'::TIMESTAMP
 
 INSERT INTO CoarseEventRow

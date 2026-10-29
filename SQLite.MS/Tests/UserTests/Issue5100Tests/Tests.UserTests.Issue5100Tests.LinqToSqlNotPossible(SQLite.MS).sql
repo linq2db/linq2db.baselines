@@ -1,7 +1,7 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @LanguageId  -- Int32
+DECLARE @LanguageId Integer -- Int32
 SET     @LanguageId = 1
-DECLARE @TextId  -- Int32
+DECLARE @TextId Integer -- Int32
 SET     @TextId = 1
 DECLARE @Text NVarChar(3) -- String
 SET     @Text = 'bbb'
@@ -24,11 +24,11 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-DECLARE @LanguageID  -- Int32
+DECLARE @LanguageID Integer -- Int32
 SET     @LanguageID = 1
 DECLARE @Name NVarChar(4) -- String
 SET     @Name = 'aaaa'
-DECLARE @AlternativeLanguageID  -- Int32
+DECLARE @AlternativeLanguageID Integer -- Int32
 SET     @AlternativeLanguageID = 1
 
 INSERT INTO [LanguageDTO]
@@ -45,11 +45,11 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Nr  -- Int32
+DECLARE @Nr Integer -- Int32
 SET     @Nr = 77
-DECLARE @ServerOnlyText  -- Boolean
+DECLARE @ServerOnlyText Integer -- Boolean
 SET     @ServerOnlyText = 0
 
 INSERT INTO [TextDTO]

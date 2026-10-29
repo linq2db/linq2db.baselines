@@ -1,9 +1,9 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(5) -- String
 SET     @Name = 'Some1'
-DECLARE @IsDeleted  -- Boolean
+DECLARE @IsDeleted Integer -- Boolean
 SET     @IsDeleted = 1
 
 INSERT INTO [DynamicColumnTable]
@@ -20,11 +20,11 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Name NVarChar(5) -- String
 SET     @Name = 'Some2'
-DECLARE @IsDeleted  -- Boolean
+DECLARE @IsDeleted Integer -- Boolean
 SET     @IsDeleted = 0
 
 INSERT INTO [DynamicColumnTable]

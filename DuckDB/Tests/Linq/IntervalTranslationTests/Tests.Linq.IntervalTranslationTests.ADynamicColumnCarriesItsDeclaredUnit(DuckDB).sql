@@ -1,7 +1,7 @@
 ﻿-- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
-DECLARE $Elapsed  -- Int64
+DECLARE $Elapsed BIGINT -- Int64
 SET     $Elapsed = 5400
 
 INSERT INTO DynamicDurationRow

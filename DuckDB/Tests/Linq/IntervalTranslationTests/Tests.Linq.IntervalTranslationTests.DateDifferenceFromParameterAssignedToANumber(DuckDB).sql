@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $asOf  -- DateTime2
+DECLARE $asOf TIMESTAMP -- DateTime2
 SET     $asOf = '2026-01-10 08:15:30.000000'::TIMESTAMP
 
 UPDATE
@@ -19,7 +19,7 @@ FROM
 LIMIT 2
 
 -- DuckDB
-DECLARE $asOf  -- DateTime2
+DECLARE $asOf TIMESTAMP -- DateTime2
 SET     $asOf = '2026-01-10 08:15:30.000000'::TIMESTAMP
 
 SELECT
@@ -30,7 +30,7 @@ WHERE
 	r.Elapsed < CAST(Date_Diff('microsecond', r.ClosedOn, CAST($asOf AS TIMESTAMP)) * 10 AS DOUBLE) / 36000000000
 
 -- DuckDB
-DECLARE $asOf  -- DateTime2
+DECLARE $asOf TIMESTAMP -- DateTime2
 SET     $asOf = '2026-01-10 08:15:30.000000'::TIMESTAMP
 
 UPDATE
@@ -50,7 +50,7 @@ FROM
 LIMIT 2
 
 -- DuckDB
-DECLARE $asOf  -- DateTime2
+DECLARE $asOf TIMESTAMP -- DateTime2
 SET     $asOf = '2026-01-10 08:15:30.000000'::TIMESTAMP
 
 SELECT

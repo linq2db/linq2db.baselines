@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @Date  -- Date
+DECLARE @Date Text -- Date
 SET     @Date = '2021-01-01'
 
 INSERT INTO [DateOnlyTable]

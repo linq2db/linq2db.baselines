@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @arr  -- Int32
+DECLARE @arr Integer -- Int32
 SET     @arr = 2
 
 SELECT

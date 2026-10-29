@@ -1,7 +1,7 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @MyCol1 NVarChar(6) -- String
 SET     @MyCol1 = 'MyCol1'
-DECLARE @itemType  -- Int32
+DECLARE @itemType Integer -- Int32
 SET     @itemType = 0
 DECLARE @SomeOtherField NVarChar -- String
 SET     @SomeOtherField = NULL
@@ -22,7 +22,7 @@ VALUES
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @MyCol1 NVarChar(6) -- String
 SET     @MyCol1 = 'MyCol2'
-DECLARE @itemType  -- Int32
+DECLARE @itemType Integer -- Int32
 SET     @itemType = 1
 DECLARE @SomeOtherField NVarChar -- String
 SET     @SomeOtherField = NULL

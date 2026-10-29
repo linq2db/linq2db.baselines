@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @Date  -- Int32
+DECLARE @Date Integer -- Int32
 SET     @Date = 1
 
 SELECT

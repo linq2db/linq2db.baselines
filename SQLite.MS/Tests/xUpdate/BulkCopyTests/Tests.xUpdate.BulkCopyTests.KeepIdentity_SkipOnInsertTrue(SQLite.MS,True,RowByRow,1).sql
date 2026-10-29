@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 0
 
 INSERT INTO [AllTypes]
@@ -15,7 +15,7 @@ VALUES
 SELECT last_insert_rowid()
 
 -- SQLite.MS SQLite
-DECLARE @lastId  -- Int32
+DECLARE @lastId Integer -- Int32
 SET     @lastId = 3
 
 DELETE FROM

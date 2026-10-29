@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $is_deleted  -- Boolean
+DECLARE $is_deleted BOOLEAN -- Boolean
 SET     $is_deleted = True
 
 UPDATE

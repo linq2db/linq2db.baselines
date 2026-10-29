@@ -15,7 +15,7 @@ FROM
 	Person t1
 
 -- DuckDB
-DECLARE $ID  -- Int32
+DECLARE $ID INTEGER -- Int32
 SET     $ID = 1
 
 SELECT
@@ -27,7 +27,7 @@ WHERE
 	t1.PersonID = $ID
 
 -- DuckDB
-DECLARE $ID  -- Int32
+DECLARE $ID INTEGER -- Int32
 SET     $ID = 2
 
 SELECT
@@ -39,7 +39,7 @@ WHERE
 	t1.PersonID = $ID
 
 -- DuckDB
-DECLARE $ID  -- Int32
+DECLARE $ID INTEGER -- Int32
 SET     $ID = 3
 
 SELECT
@@ -51,7 +51,7 @@ WHERE
 	t1.PersonID = $ID
 
 -- DuckDB
-DECLARE $ID  -- Int32
+DECLARE $ID INTEGER -- Int32
 SET     $ID = 4
 
 SELECT

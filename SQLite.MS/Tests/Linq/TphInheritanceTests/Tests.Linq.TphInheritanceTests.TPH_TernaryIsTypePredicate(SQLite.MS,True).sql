@@ -1,11 +1,11 @@
 ﻿-- SQLite.MS SQLite
 DECLARE @Code NVarChar(5) -- String
 SET     @Code = 'Child'
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(4) -- String
 SET     @Name = 'Jane'
-DECLARE @IsMale  -- Boolean
+DECLARE @IsMale Integer -- Boolean
 SET     @IsMale = 0
 
 INSERT INTO [Base]
@@ -26,11 +26,11 @@ VALUES
 -- SQLite.MS SQLite
 DECLARE @Code NVarChar(6) -- String
 SET     @Code = 'Child2'
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Name NVarChar -- String
 SET     @Name = NULL
-DECLARE @Age  -- Int32
+DECLARE @Age Integer -- Int32
 SET     @Age = 10
 
 INSERT INTO [Base]

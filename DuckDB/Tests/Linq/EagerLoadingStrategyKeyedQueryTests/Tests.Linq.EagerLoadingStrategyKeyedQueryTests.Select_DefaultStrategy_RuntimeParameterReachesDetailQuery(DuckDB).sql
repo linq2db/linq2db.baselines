@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $minId  -- Int32
+DECLARE $minId INTEGER -- Int32
 SET     $minId = 2
 
 SELECT

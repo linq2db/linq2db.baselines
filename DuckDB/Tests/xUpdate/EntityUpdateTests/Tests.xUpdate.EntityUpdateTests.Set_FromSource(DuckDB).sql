@@ -1,11 +1,11 @@
 ﻿-- DuckDB
 DECLARE $Name NVarChar(5) -- String
 SET     $Name = 'alice'
-DECLARE $Version  -- Int32
+DECLARE $Version INTEGER -- Int32
 SET     $Version = 1
-DECLARE $UpdatedAt  -- DateTime2
+DECLARE $UpdatedAt TIMESTAMP -- DateTime2
 SET     $UpdatedAt = NULL
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 
 UPDATE

@@ -1,7 +1,7 @@
 ﻿-- DuckDB
 DECLARE $Code NVarChar(5) -- String
 SET     $Code = 'first'
-DECLARE $Key_Value  -- Int32
+DECLARE $Key_Value INTEGER -- Int32
 SET     $Key_Value = 1
 
 INSERT INTO NestedKeyTarget
@@ -18,7 +18,7 @@ VALUES
 -- DuckDB
 DECLARE $Code NVarChar(7) -- String
 SET     $Code = 'skipped'
-DECLARE $Key_Value  -- Int32
+DECLARE $Key_Value INTEGER -- Int32
 SET     $Key_Value = 2
 
 INSERT INTO NestedKeyTarget

@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $defValue  -- Int32
+DECLARE $defValue INTEGER -- Int32
 SET     $defValue = 10
 
 SELECT

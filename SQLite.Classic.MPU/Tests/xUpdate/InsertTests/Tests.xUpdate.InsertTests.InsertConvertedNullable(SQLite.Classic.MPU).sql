@@ -5,7 +5,7 @@ WHERE
 	[LinqDataTypes].[ID] >= 1000
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @tt  -- Int64
+DECLARE @tt Integer -- Int64
 SET     @tt = 600000000
 
 INSERT INTO [LinqDataTypes]

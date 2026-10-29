@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $currentDate  -- DateTime2
+DECLARE $currentDate TIMESTAMP -- DateTime2
 SET     $currentDate = '2020-02-29 17:54:55.123123'::TIMESTAMP
 
 SELECT

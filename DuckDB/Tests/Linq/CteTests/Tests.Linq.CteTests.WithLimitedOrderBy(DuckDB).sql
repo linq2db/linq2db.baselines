@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $take  -- Int32
+DECLARE $take INTEGER -- Int32
 SET     $take = 3
 
 WITH CTE_1 (ParentID, Value1)

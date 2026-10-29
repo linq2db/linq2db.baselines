@@ -1,13 +1,13 @@
 ﻿-- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
-DECLARE $InSeconds  -- Int64
+DECLARE $InSeconds BIGINT -- Int64
 SET     $InSeconds = 4567
-DECLARE $InTicks  -- Int64
+DECLARE $InTicks BIGINT -- Int64
 SET     $InTicks = 45670000000
-DECLARE $Undeclared  -- Int64
+DECLARE $Undeclared BIGINT -- Int64
 SET     $Undeclared = 45670000000
-DECLARE $UndeclaredSeconds  -- Int64
+DECLARE $UndeclaredSeconds BIGINT -- Int64
 SET     $UndeclaredSeconds = 4567
 
 INSERT INTO DurationRow
@@ -39,15 +39,15 @@ FROM
 LIMIT 2
 
 -- DuckDB
-DECLARE $InSeconds  -- Int64
+DECLARE $InSeconds BIGINT -- Int64
 SET     $InSeconds = 19260
-DECLARE $InTicks  -- Int64
+DECLARE $InTicks BIGINT -- Int64
 SET     $InTicks = 192600000000
-DECLARE $Undeclared  -- Int64
+DECLARE $Undeclared BIGINT -- Int64
 SET     $Undeclared = 45670000000
-DECLARE $UndeclaredSeconds  -- Int64
+DECLARE $UndeclaredSeconds BIGINT -- Int64
 SET     $UndeclaredSeconds = 4567
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 
 UPDATE
@@ -72,9 +72,9 @@ FROM
 LIMIT 2
 
 -- DuckDB
-DECLARE $InSeconds  -- Int64
+DECLARE $InSeconds BIGINT -- Int64
 SET     $InSeconds = 4567
-DECLARE $InTicks  -- Int64
+DECLARE $InTicks BIGINT -- Int64
 SET     $InTicks = 45670000000
 
 UPDATE

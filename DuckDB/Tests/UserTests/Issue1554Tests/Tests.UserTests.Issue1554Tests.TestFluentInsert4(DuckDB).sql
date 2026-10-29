@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 0
 DECLARE $ClaimedKeyType NVarChar(2) -- String
 SET     $ClaimedKeyType = 'EC'

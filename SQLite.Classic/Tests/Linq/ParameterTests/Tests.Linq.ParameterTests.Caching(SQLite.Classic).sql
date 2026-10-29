@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic SQLite
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = 1
 
 SELECT
@@ -18,9 +18,9 @@ FROM
 	[Parent] [t1]
 
 -- SQLite.Classic SQLite
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = 3
-DECLARE @p_1  -- Int32
+DECLARE @p_1 Integer -- Int32
 SET     @p_1 = 2
 
 SELECT
@@ -39,7 +39,7 @@ FROM
 	[Parent] [t1]
 
 -- SQLite.Classic SQLite
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = 1
 
 SELECT

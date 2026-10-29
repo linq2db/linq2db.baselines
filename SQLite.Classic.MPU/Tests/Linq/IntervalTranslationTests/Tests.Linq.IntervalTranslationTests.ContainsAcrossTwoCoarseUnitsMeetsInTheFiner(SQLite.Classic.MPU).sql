@@ -1,11 +1,11 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @InDays  -- Int64
+DECLARE @InDays Integer -- Int64
 SET     @InDays = 2
-DECLARE @InMilliseconds  -- Int64
+DECLARE @InMilliseconds Integer -- Int64
 SET     @InMilliseconds = 172800000
-DECLARE @InNanoseconds  -- Int64
+DECLARE @InNanoseconds Integer -- Int64
 SET     @InNanoseconds = 172800000000000
 
 INSERT INTO [UnitSpreadRow]

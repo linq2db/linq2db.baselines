@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $Date  -- Int32
+DECLARE $Date INTEGER -- Int32
 SET     $Date = 5
 
 SELECT

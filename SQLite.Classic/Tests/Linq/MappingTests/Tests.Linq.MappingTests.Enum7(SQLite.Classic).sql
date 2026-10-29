@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic SQLite
-DECLARE @v1  -- Int32
+DECLARE @v1 Integer -- Int32
 SET     @v1 = 1
 
 UPDATE

@@ -24,9 +24,9 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @name  -- Int32
+DECLARE @name Integer -- Int32
 SET     @name = 8
-DECLARE @idx  -- Int32
+DECLARE @idx Integer -- Int32
 SET     @idx = 4
 
 UPDATE

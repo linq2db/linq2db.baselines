@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @intParam  -- Int32
+DECLARE @intParam Integer -- Int32
 SET     @intParam = 0
 
 SELECT
@@ -15,7 +15,7 @@ WHERE
 	[m_1].[Id1] >= @intParam
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @intParam  -- Int32
+DECLARE @intParam Integer -- Int32
 SET     @intParam = 0
 
 SELECT
@@ -37,7 +37,7 @@ WHERE
 	[d].[MasterId] % 2 = 0
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @intParam  -- Int32
+DECLARE @intParam Integer -- Int32
 SET     @intParam = 0
 
 SELECT
