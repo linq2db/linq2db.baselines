@@ -10,7 +10,8 @@ WHERE
 	c_1.CustomerId LIKE 'DST%' ESCAPE '~'
 ORDER BY
 	c_1.Country,
-	c_1.Id
+	c_1.Id,
+	r.Id
 
 -- DuckDB
 SELECT
