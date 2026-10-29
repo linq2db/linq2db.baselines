@@ -1,7 +1,10 @@
-﻿-- PostgreSQL.10 PostgreSQL.9.5
--- Batch 1
--- take = 10
--- skip = 100
+﻿-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+-- Command 1
+DECLARE @take Integer -- Int32
+SET     @take = 10
+DECLARE @skip Integer -- Int32
+SET     @skip = 100
+
 SELECT
 	m_1."Id",
 	m_1."Id_1",
@@ -36,9 +39,12 @@ FROM
 	) m_1
 		INNER JOIN "SubOrderDetail" d_1 ON m_1."Id" = d_1."SubOrderId"
 
--- Batch 2
--- take = 10
--- skip = 100
+-- Command 2
+DECLARE @take Integer -- Int32
+SET     @take = 10
+DECLARE @skip Integer -- Int32
+SET     @skip = 100
+
 SELECT
 	m_1."Id",
 	d."Id",
@@ -62,9 +68,12 @@ FROM
 	) m_1
 		INNER JOIN "SubOrder" d ON m_1."Id" = d."OrderId"
 
--- Batch 3
--- take = 10
--- skip = 100
+-- Command 3
+DECLARE @take Integer -- Int32
+SET     @take = 10
+DECLARE @skip Integer -- Int32
+SET     @skip = 100
+
 SELECT
 	x."Id",
 	x."Name"
