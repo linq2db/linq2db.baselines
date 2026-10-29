@@ -4,7 +4,14 @@ SELECT
 FROM
 	[Parent] [x]
 WHERE
-	NOT ([x].[Value1] = 1 AND [x].[Value1] IS NOT NULL)
+	[x].[Value1] <> 1 OR [x].[Value1] IS NULL
+
+-- SqlServer.2019
+SELECT
+	[t1].[ParentID],
+	[t1].[Value1]
+FROM
+	[Parent] [t1]
 
 -- SqlServer.2019
 SELECT
@@ -12,7 +19,14 @@ SELECT
 FROM
 	[Parent] [x]
 WHERE
-	NOT ([x].[Value1] = 1 AND [x].[Value1] IS NOT NULL)
+	[x].[Value1] <> 1 OR [x].[Value1] IS NULL
+
+-- SqlServer.2019
+SELECT
+	[t1].[ParentID],
+	[t1].[Value1]
+FROM
+	[Parent] [t1]
 
 -- SqlServer.2019
 SELECT
@@ -20,5 +34,12 @@ SELECT
 FROM
 	[Parent] [x]
 WHERE
-	NOT ([x].[Value1] = 1 AND [x].[Value1] IS NOT NULL)
+	[x].[Value1] <> 1 OR [x].[Value1] IS NULL
+
+-- SqlServer.2019
+SELECT
+	[t1].[ParentID],
+	[t1].[Value1]
+FROM
+	[Parent] [t1]
 
