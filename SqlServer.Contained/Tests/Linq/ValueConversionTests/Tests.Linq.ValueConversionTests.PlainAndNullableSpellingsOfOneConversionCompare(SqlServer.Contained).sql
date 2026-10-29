@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	[r].[Id]
 FROM
@@ -6,7 +6,7 @@ FROM
 WHERE
 	[r].[Plain] = [r].[Date]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[r].[Id]
 FROM

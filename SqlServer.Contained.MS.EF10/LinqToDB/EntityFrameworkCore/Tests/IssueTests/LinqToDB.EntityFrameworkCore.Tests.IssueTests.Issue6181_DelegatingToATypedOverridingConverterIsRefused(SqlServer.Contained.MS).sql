@@ -1,11 +1,11 @@
-﻿-- SqlServer.2019
+﻿-- SqlServer.2025
 DELETE [t1]
 FROM
 	[Issue6181TableTwos] [t1]
 
 
 
--- SqlServer.2019
+-- SqlServer.2025
 DELETE [t1]
 FROM
 	[Issue6181TableOnes] [t1]
