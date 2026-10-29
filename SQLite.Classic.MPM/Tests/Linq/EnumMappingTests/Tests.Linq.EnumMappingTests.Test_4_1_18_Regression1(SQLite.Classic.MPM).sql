@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = 102
 
 DELETE FROM
@@ -32,7 +32,7 @@ WHERE
 	[t1].[ID] = 101
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = 102
 
 DELETE FROM

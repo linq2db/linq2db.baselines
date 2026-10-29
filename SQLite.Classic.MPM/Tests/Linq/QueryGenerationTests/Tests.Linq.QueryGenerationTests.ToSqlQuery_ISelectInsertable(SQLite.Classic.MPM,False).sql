@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 1
 
 INSERT INTO [TableWithIdentitySrc]
@@ -12,7 +12,7 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @addition  -- Int32
+DECLARE @addition Integer -- Int32
 SET     @addition = 123
 
 INSERT INTO [TableWithIdentity]

@@ -1,7 +1,7 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Span  -- Int64
+DECLARE @Span Integer -- Int64
 SET     @Span = 5400
 
 INSERT INTO [ScaledRow]

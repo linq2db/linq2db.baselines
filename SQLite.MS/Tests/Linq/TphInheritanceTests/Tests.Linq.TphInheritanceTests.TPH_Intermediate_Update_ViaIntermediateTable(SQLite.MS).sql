@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @IntermediateField  -- Int32
+DECLARE @IntermediateField Integer -- Int32
 SET     @IntermediateField = 333
 
 UPDATE

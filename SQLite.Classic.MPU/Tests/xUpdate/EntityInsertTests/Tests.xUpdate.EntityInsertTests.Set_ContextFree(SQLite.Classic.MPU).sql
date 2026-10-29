@@ -1,9 +1,9 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(1) -- String
 SET     @Name = 'n'
-DECLARE @Version  -- Int32
+DECLARE @Version Integer -- Int32
 SET     @Version = 1
 DECLARE @stamp VarChar(23) -- AnsiString
 SET     @stamp = '2026-01-01 10:00:00.000'

@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 99
 DECLARE @Data Binary(5)
 SET     @Data = X'0102030405'

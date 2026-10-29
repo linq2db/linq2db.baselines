@@ -1,7 +1,7 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1
-DECLARE @Value1  -- Int32
+DECLARE @Value1 Integer -- Int32
 SET     @Value1 = 4
 
 SELECT DISTINCT

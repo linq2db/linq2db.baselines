@@ -1,7 +1,7 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Pk  -- Int32
+DECLARE @Pk Integer -- Int32
 SET     @Pk = 1
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @TargetName NVarChar(12) -- String
 SET     @TargetName = 'bda.Requests'
@@ -20,11 +20,11 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @TaskId  -- Int32
+DECLARE @TaskId Integer -- Int32
 SET     @TaskId = 1
-DECLARE @Actual  -- Boolean
+DECLARE @Actual Integer -- Boolean
 SET     @Actual = 1
 
 INSERT INTO [Issue1096TaskStage]

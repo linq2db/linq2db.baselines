@@ -13,7 +13,7 @@ FROM
 		INNER JOIN [LinqDataTypes] [t2] ON [t1].[ID] = [t2].[ID]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @param2  -- Boolean
+DECLARE @param2 Integer -- Boolean
 SET     @param2 = 0
 
 SELECT

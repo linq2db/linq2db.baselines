@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Last NVarChar(9) -- String
 SET     @Last = 'seed-last'

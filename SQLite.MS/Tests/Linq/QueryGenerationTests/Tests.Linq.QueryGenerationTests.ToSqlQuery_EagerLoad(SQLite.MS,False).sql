@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @id  -- Int32
+DECLARE @id Integer -- Int32
 SET     @id = 2
 
 SELECT
@@ -11,7 +11,7 @@ WHERE
 	[p].[ParentID] = @id
 
 -- SQLite.MS SQLite
-DECLARE @id  -- Int32
+DECLARE @id Integer -- Int32
 SET     @id = 2
 
 SELECT

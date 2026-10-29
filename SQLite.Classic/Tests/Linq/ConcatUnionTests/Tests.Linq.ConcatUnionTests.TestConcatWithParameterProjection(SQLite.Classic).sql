@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic SQLite
-DECLARE @someValue  -- Int32
+DECLARE @someValue Integer -- Int32
 SET     @someValue = 3
 
 SELECT

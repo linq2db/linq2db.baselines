@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @param  -- Int64
+DECLARE @param Integer -- Int64
 SET     @param = 1
 
 SELECT

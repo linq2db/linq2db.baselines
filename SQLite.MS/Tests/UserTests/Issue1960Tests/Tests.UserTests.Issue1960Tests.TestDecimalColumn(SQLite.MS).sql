@@ -1,7 +1,7 @@
 ﻿-- SQLite.MS SQLite
 DECLARE @decValue NVarChar -- String
 SET     @decValue = 12345.6789
-DECLARE @dtValue  -- Int64
+DECLARE @dtValue Integer -- Int64
 SET     @dtValue = 123456789
 
 INSERT INTO [Issue1960Table]

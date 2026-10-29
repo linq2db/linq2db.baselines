@@ -1,12 +1,12 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @min  -- UInt16
+DECLARE @min Integer -- UInt16
 SET     @min = 0
 
 SELECT
 	@min
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @max  -- UInt16
+DECLARE @max Integer -- UInt16
 SET     @max = 65535
 
 SELECT

@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @p  -- Int64
+DECLARE @p Integer -- Int64
 SET     @p = 900
 
 SELECT
@@ -12,7 +12,7 @@ ORDER BY
 	[r].[Id]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @p  -- Int64
+DECLARE @p Integer -- Int64
 SET     @p = 900
 
 SELECT
@@ -25,7 +25,7 @@ ORDER BY
 	[r].[Id]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @p  -- Int64
+DECLARE @p Integer -- Int64
 SET     @p = 900
 
 SELECT
@@ -38,7 +38,7 @@ ORDER BY
 	[r].[Id]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @p  -- Int64
+DECLARE @p Integer -- Int64
 SET     @p = 900
 
 SELECT
@@ -51,9 +51,9 @@ ORDER BY
 	[r].[Id]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @p  -- Int64
+DECLARE @p Integer -- Int64
 SET     @p = 900
-DECLARE @p_1  -- Int64
+DECLARE @p_1 Integer -- Int64
 SET     @p_1 = 900
 
 SELECT
@@ -66,7 +66,7 @@ ORDER BY
 	[r].[Id]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Ticks  -- Int64
+DECLARE @Ticks Integer -- Int64
 SET     @Ticks = 9000000000
 
 SELECT
@@ -79,7 +79,7 @@ ORDER BY
 	[r].[Id]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @p  -- Int64
+DECLARE @p Integer -- Int64
 SET     @p = 899
 
 SELECT
@@ -92,7 +92,7 @@ ORDER BY
 	[r].[Id]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @p  -- Int64
+DECLARE @p Integer -- Int64
 SET     @p = 900
 
 SELECT
@@ -105,7 +105,7 @@ ORDER BY
 	[r].[Id]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @p  -- Int64
+DECLARE @p Integer -- Int64
 SET     @p = 900
 
 SELECT
@@ -118,7 +118,7 @@ ORDER BY
 	[r].[Id]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @p  -- Int64
+DECLARE @p Integer -- Int64
 SET     @p = 899
 
 SELECT
@@ -131,9 +131,9 @@ ORDER BY
 	[r].[Id]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @p  -- Int64
+DECLARE @p Integer -- Int64
 SET     @p = 900
-DECLARE @p_1  -- Int64
+DECLARE @p_1 Integer -- Int64
 SET     @p_1 = 899
 
 SELECT
@@ -146,7 +146,7 @@ ORDER BY
 	[r].[Id]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Ticks  -- Int64
+DECLARE @Ticks Integer -- Int64
 SET     @Ticks = 8995000000
 
 SELECT
@@ -159,7 +159,7 @@ ORDER BY
 	[r].[Id]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @p  -- Int64
+DECLARE @p Integer -- Int64
 SET     @p = 900
 
 SELECT
@@ -172,7 +172,7 @@ ORDER BY
 	[r].[Id]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @p  -- Int64
+DECLARE @p Integer -- Int64
 SET     @p = 900
 
 SELECT
@@ -185,7 +185,7 @@ ORDER BY
 	[r].[Id]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @p  -- Int64
+DECLARE @p Integer -- Int64
 SET     @p = 900
 
 SELECT
@@ -198,7 +198,7 @@ ORDER BY
 	[r].[Id]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @p  -- Int64
+DECLARE @p Integer -- Int64
 SET     @p = 900
 
 SELECT
@@ -211,9 +211,9 @@ ORDER BY
 	[r].[Id]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @p  -- Int64
+DECLARE @p Integer -- Int64
 SET     @p = 900
-DECLARE @p_1  -- Int64
+DECLARE @p_1 Integer -- Int64
 SET     @p_1 = 900
 
 SELECT
@@ -226,7 +226,7 @@ ORDER BY
 	[r].[Id]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @p  -- Int64
+DECLARE @p Integer -- Int64
 SET     @p = 9000000000
 
 SELECT
@@ -259,7 +259,7 @@ ORDER BY
 	[r].[Id]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @p  -- Int64
+DECLARE @p Integer -- Int64
 SET     @p = 900
 
 SELECT
@@ -272,7 +272,7 @@ ORDER BY
 	[r].[Id]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @p  -- Int64
+DECLARE @p Integer -- Int64
 SET     @p = 901
 
 SELECT
@@ -285,7 +285,7 @@ ORDER BY
 	[r].[Id]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @p  -- Int64
+DECLARE @p Integer -- Int64
 SET     @p = 901
 
 SELECT
@@ -298,7 +298,7 @@ ORDER BY
 	[r].[Id]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @p  -- Int64
+DECLARE @p Integer -- Int64
 SET     @p = 900
 
 SELECT
@@ -311,9 +311,9 @@ ORDER BY
 	[r].[Id]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @p  -- Int64
+DECLARE @p Integer -- Int64
 SET     @p = 901
-DECLARE @p_1  -- Int64
+DECLARE @p_1 Integer -- Int64
 SET     @p_1 = 900
 
 SELECT
@@ -326,7 +326,7 @@ ORDER BY
 	[r].[Id]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @p  -- Int64
+DECLARE @p Integer -- Int64
 SET     @p = 9005000000
 
 SELECT

@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @menuId  -- Int32
+DECLARE @menuId Integer -- Int32
 SET     @menuId = 1
 
 WITH [cteQueryable] ([Item1])

@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Test  -- Int32
+DECLARE @Test Integer -- Int32
 SET     @Test = 2
 
 UPDATE

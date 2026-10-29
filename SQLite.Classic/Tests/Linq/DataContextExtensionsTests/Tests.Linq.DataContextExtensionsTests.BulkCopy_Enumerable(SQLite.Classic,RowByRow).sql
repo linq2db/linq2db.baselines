@@ -1,7 +1,7 @@
 ﻿-- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 10
 
 INSERT INTO [BulkCopyTable]
@@ -16,9 +16,9 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 20
 
 INSERT INTO [BulkCopyTable]
@@ -46,9 +46,9 @@ DELETE FROM
 	[BulkCopyTable]
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 10
 
 INSERT INTO [BulkCopyTable]
@@ -63,9 +63,9 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 20
 
 INSERT INTO [BulkCopyTable]
@@ -93,9 +93,9 @@ DELETE FROM
 	[BulkCopyTable]
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 10
 
 INSERT INTO [BulkCopyTable]
@@ -110,9 +110,9 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 20
 
 INSERT INTO [BulkCopyTable]
@@ -140,9 +140,9 @@ DELETE FROM
 	[BulkCopyTable]
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 10
 
 INSERT INTO [BulkCopyTable]
@@ -157,9 +157,9 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 20
 
 INSERT INTO [BulkCopyTable]
@@ -187,9 +187,9 @@ DELETE FROM
 	[BulkCopyTable]
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 10
 
 INSERT INTO [BulkCopyTable]
@@ -204,9 +204,9 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 20
 
 INSERT INTO [BulkCopyTable]
@@ -234,9 +234,9 @@ DELETE FROM
 	[BulkCopyTable]
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 10
 
 INSERT INTO [BulkCopyTable]
@@ -251,9 +251,9 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 20
 
 INSERT INTO [BulkCopyTable]
@@ -281,9 +281,9 @@ DELETE FROM
 	[BulkCopyTable]
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 10
 
 INSERT INTO [BulkCopyTable]
@@ -298,9 +298,9 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 20
 
 INSERT INTO [BulkCopyTable]
@@ -328,9 +328,9 @@ DELETE FROM
 	[BulkCopyTable]
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 10
 
 INSERT INTO [BulkCopyTable]
@@ -345,9 +345,9 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 20
 
 INSERT INTO [BulkCopyTable]
@@ -375,9 +375,9 @@ DELETE FROM
 	[BulkCopyTable]
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 10
 
 INSERT INTO [BulkCopyTable]
@@ -392,9 +392,9 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 20
 
 INSERT INTO [BulkCopyTable]
@@ -422,9 +422,9 @@ DELETE FROM
 	[BulkCopyTable]
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 10
 
 INSERT INTO [BulkCopyTable]
@@ -439,9 +439,9 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 20
 
 INSERT INTO [BulkCopyTable]
@@ -469,9 +469,9 @@ DELETE FROM
 	[BulkCopyTable]
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 10
 
 INSERT INTO [BulkCopyTable]
@@ -486,9 +486,9 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 20
 
 INSERT INTO [BulkCopyTable]
@@ -516,9 +516,9 @@ DELETE FROM
 	[BulkCopyTable]
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 10
 
 INSERT INTO [BulkCopyTable]
@@ -533,9 +533,9 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 20
 
 INSERT INTO [BulkCopyTable]
@@ -563,9 +563,9 @@ DELETE FROM
 	[BulkCopyTable]
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 10
 
 INSERT INTO [BulkCopyTable]
@@ -580,9 +580,9 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 20
 
 INSERT INTO [BulkCopyTable]
@@ -610,9 +610,9 @@ DELETE FROM
 	[BulkCopyTable]
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 10
 
 INSERT INTO [BulkCopyTable]
@@ -627,9 +627,9 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 20
 
 INSERT INTO [BulkCopyTable]
@@ -657,9 +657,9 @@ DELETE FROM
 	[BulkCopyTable]
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 10
 
 INSERT INTO [BulkCopyTable]
@@ -674,9 +674,9 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 20
 
 INSERT INTO [BulkCopyTable]
@@ -704,9 +704,9 @@ DELETE FROM
 	[BulkCopyTable]
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 10
 
 INSERT INTO [BulkCopyTable]
@@ -721,9 +721,9 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 20
 
 INSERT INTO [BulkCopyTable]
@@ -751,9 +751,9 @@ DELETE FROM
 	[BulkCopyTable]
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 10
 
 INSERT INTO [BulkCopyTable]
@@ -768,9 +768,9 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 20
 
 INSERT INTO [BulkCopyTable]
@@ -798,9 +798,9 @@ DELETE FROM
 	[BulkCopyTable]
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 10
 
 INSERT INTO [BulkCopyTable]
@@ -815,9 +815,9 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 20
 
 INSERT INTO [BulkCopyTable]
@@ -845,9 +845,9 @@ DELETE FROM
 	[BulkCopyTable]
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 10
 
 INSERT INTO [BulkCopyTable]
@@ -862,9 +862,9 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 20
 
 INSERT INTO [BulkCopyTable]
@@ -892,9 +892,9 @@ DELETE FROM
 	[BulkCopyTable]
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 10
 
 INSERT INTO [BulkCopyTable]
@@ -909,9 +909,9 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 20
 
 INSERT INTO [BulkCopyTable]
@@ -939,9 +939,9 @@ DELETE FROM
 	[BulkCopyTable]
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 10
 
 INSERT INTO [BulkCopyTable]
@@ -956,9 +956,9 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 20
 
 INSERT INTO [BulkCopyTable]
@@ -986,9 +986,9 @@ DELETE FROM
 	[BulkCopyTable]
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 10
 
 INSERT INTO [BulkCopyTable]
@@ -1003,9 +1003,9 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 20
 
 INSERT INTO [BulkCopyTable]
@@ -1033,9 +1033,9 @@ DELETE FROM
 	[BulkCopyTable]
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 10
 
 INSERT INTO [BulkCopyTable]
@@ -1050,9 +1050,9 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 20
 
 INSERT INTO [BulkCopyTable]
@@ -1080,9 +1080,9 @@ DELETE FROM
 	[BulkCopyTable]
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 10
 
 INSERT INTO [BulkCopyTable]
@@ -1097,9 +1097,9 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 20
 
 INSERT INTO [BulkCopyTable]
@@ -1127,9 +1127,9 @@ DELETE FROM
 	[BulkCopyTable]
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 10
 
 INSERT INTO [BulkCopyTable]
@@ -1144,9 +1144,9 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 20
 
 INSERT INTO [BulkCopyTable]
@@ -1174,9 +1174,9 @@ DELETE FROM
 	[BulkCopyTable]
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 10
 
 INSERT INTO [BulkCopyTable]
@@ -1191,9 +1191,9 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 20
 
 INSERT INTO [BulkCopyTable]
@@ -1221,9 +1221,9 @@ DELETE FROM
 	[BulkCopyTable]
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 10
 
 INSERT INTO [BulkCopyTable]
@@ -1238,9 +1238,9 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 20
 
 INSERT INTO [BulkCopyTable]
@@ -1268,9 +1268,9 @@ DELETE FROM
 	[BulkCopyTable]
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 10
 
 INSERT INTO [BulkCopyTable]
@@ -1285,9 +1285,9 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 20
 
 INSERT INTO [BulkCopyTable]
@@ -1315,9 +1315,9 @@ DELETE FROM
 	[BulkCopyTable]
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 10
 
 INSERT INTO [BulkCopyTable]
@@ -1332,9 +1332,9 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 20
 
 INSERT INTO [BulkCopyTable]
@@ -1362,9 +1362,9 @@ DELETE FROM
 	[BulkCopyTable]
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 10
 
 INSERT INTO [BulkCopyTable]
@@ -1379,9 +1379,9 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 20
 
 INSERT INTO [BulkCopyTable]
@@ -1409,9 +1409,9 @@ DELETE FROM
 	[BulkCopyTable]
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 10
 
 INSERT INTO [BulkCopyTable]
@@ -1426,9 +1426,9 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 20
 
 INSERT INTO [BulkCopyTable]
@@ -1456,9 +1456,9 @@ DELETE FROM
 	[BulkCopyTable]
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 10
 
 INSERT INTO [BulkCopyTable]
@@ -1473,9 +1473,9 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 20
 
 INSERT INTO [BulkCopyTable]
@@ -1503,9 +1503,9 @@ DELETE FROM
 	[BulkCopyTable]
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 10
 
 INSERT INTO [BulkCopyTable]
@@ -1520,9 +1520,9 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 20
 
 INSERT INTO [BulkCopyTable]
@@ -1550,9 +1550,9 @@ DELETE FROM
 	[BulkCopyTable]
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 10
 
 INSERT INTO [BulkCopyTable]
@@ -1567,9 +1567,9 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 20
 
 INSERT INTO [BulkCopyTable]
@@ -1597,9 +1597,9 @@ DELETE FROM
 	[BulkCopyTable]
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 10
 
 INSERT INTO [BulkCopyTable]
@@ -1614,9 +1614,9 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 20
 
 INSERT INTO [BulkCopyTable]
@@ -1644,9 +1644,9 @@ DELETE FROM
 	[BulkCopyTable]
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 10
 
 INSERT INTO [BulkCopyTable]
@@ -1661,9 +1661,9 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 20
 
 INSERT INTO [BulkCopyTable]

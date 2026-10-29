@@ -65,7 +65,7 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-DECLARE @minValue  -- Int32
+DECLARE @minValue Integer -- Int32
 SET     @minValue = 15
 
 SELECT

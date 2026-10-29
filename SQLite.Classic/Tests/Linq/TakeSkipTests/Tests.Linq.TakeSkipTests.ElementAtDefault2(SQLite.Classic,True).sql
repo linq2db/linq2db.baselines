@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic SQLite
-DECLARE @skip  -- Int32
+DECLARE @skip Integer -- Int32
 SET     @skip = 300000
 
 SELECT

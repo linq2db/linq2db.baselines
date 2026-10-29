@@ -34,7 +34,7 @@ FROM
 	[ClientCalcEntity] [t1]
 
 -- SQLite.MS SQLite
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = 0
 
 SELECT
@@ -56,7 +56,7 @@ FROM
 	[ClientCalcEntity] [t1]
 
 -- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 0
 
 SELECT

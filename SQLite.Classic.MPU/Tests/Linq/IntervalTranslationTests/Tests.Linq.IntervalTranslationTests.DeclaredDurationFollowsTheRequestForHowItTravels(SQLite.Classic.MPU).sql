@@ -1,13 +1,13 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @InSeconds  -- Int64
+DECLARE @InSeconds Integer -- Int64
 SET     @InSeconds = 900
-DECLARE @InTicks  -- Int64
+DECLARE @InTicks Integer -- Int64
 SET     @InTicks = 9000000000
-DECLARE @Undeclared  -- Int64
+DECLARE @Undeclared Integer -- Int64
 SET     @Undeclared = 9000000000
-DECLARE @UndeclaredSeconds  -- Int64
+DECLARE @UndeclaredSeconds Integer -- Int64
 SET     @UndeclaredSeconds = 900
 
 INSERT INTO [DurationRow]
@@ -28,15 +28,15 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @InSeconds  -- Int64
+DECLARE @InSeconds Integer -- Int64
 SET     @InSeconds = 1800
-DECLARE @InTicks  -- Int64
+DECLARE @InTicks Integer -- Int64
 SET     @InTicks = 18000000000
-DECLARE @Undeclared  -- Int64
+DECLARE @Undeclared Integer -- Int64
 SET     @Undeclared = 18000000000
-DECLARE @UndeclaredSeconds  -- Int64
+DECLARE @UndeclaredSeconds Integer -- Int64
 SET     @UndeclaredSeconds = 1800
 
 INSERT INTO [DurationRow]
@@ -57,15 +57,15 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 3
-DECLARE @InSeconds  -- Int64
+DECLARE @InSeconds Integer -- Int64
 SET     @InSeconds = 2700
-DECLARE @InTicks  -- Int64
+DECLARE @InTicks Integer -- Int64
 SET     @InTicks = 27000000000
-DECLARE @Undeclared  -- Int64
+DECLARE @Undeclared Integer -- Int64
 SET     @Undeclared = 27000000000
-DECLARE @UndeclaredSeconds  -- Int64
+DECLARE @UndeclaredSeconds Integer -- Int64
 SET     @UndeclaredSeconds = 2700
 
 INSERT INTO [DurationRow]
@@ -86,7 +86,7 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int64
+DECLARE @p Integer -- Int64
 SET     @p = 1800
 
 SELECT
@@ -99,7 +99,7 @@ ORDER BY
 	[r].[Id]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int64
+DECLARE @p Integer -- Int64
 SET     @p = 1800
 
 SELECT
@@ -142,7 +142,7 @@ ORDER BY
 	[r].[Id]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int64
+DECLARE @p Integer -- Int64
 SET     @p = 0
 
 SELECT

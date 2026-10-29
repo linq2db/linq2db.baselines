@@ -1,7 +1,7 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1001
-DECLARE @Value1  -- Int32
+DECLARE @Value1 Integer -- Int32
 SET     @Value1 = 1
 
 INSERT INTO [Parent]
@@ -16,7 +16,7 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-DECLARE @id  -- Int32
+DECLARE @id Integer -- Int32
 SET     @id = 1001
 
 SELECT
@@ -27,9 +27,9 @@ WHERE
 	[p].[ParentID] = @id AND [p].[Value1] = 1
 
 -- SQLite.MS SQLite
-DECLARE @Value1  -- Int32
+DECLARE @Value1 Integer -- Int32
 SET     @Value1 = 2
-DECLARE @id  -- Int32
+DECLARE @id Integer -- Int32
 SET     @id = 1001
 
 UPDATE
@@ -40,7 +40,7 @@ WHERE
 	[Parent].[ParentID] = @id
 
 -- SQLite.MS SQLite
-DECLARE @id  -- Int32
+DECLARE @id Integer -- Int32
 SET     @id = 1001
 
 SELECT
@@ -51,9 +51,9 @@ WHERE
 	[p].[ParentID] = @id AND [p].[Value1] = 2
 
 -- SQLite.MS SQLite
-DECLARE @Value1  -- Int32
+DECLARE @Value1 Integer -- Int32
 SET     @Value1 = 3
-DECLARE @id  -- Int32
+DECLARE @id Integer -- Int32
 SET     @id = 1001
 
 UPDATE
@@ -64,7 +64,7 @@ WHERE
 	[Parent].[ParentID] = @id
 
 -- SQLite.MS SQLite
-DECLARE @id  -- Int32
+DECLARE @id Integer -- Int32
 SET     @id = 1001
 
 SELECT

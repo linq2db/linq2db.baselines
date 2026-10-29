@@ -1,9 +1,9 @@
 ﻿-- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Declared_Elapsed  -- Int64
+DECLARE @Declared_Elapsed Integer -- Int64
 SET     @Declared_Elapsed = 5400
-DECLARE @Converted_Elapsed  -- Int64
+DECLARE @Converted_Elapsed Integer -- Int64
 SET     @Converted_Elapsed = 5400
 
 INSERT INTO [NestedDurationRow]

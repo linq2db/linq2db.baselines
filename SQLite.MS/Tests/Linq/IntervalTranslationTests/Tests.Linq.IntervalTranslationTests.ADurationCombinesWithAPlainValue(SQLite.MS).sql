@@ -1,11 +1,11 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @StartedOn  -- DateTime
+DECLARE @StartedOn Text(23) -- DateTime
 SET     @StartedOn = '2026-01-01 10:00:00.000'
-DECLARE @FinishedOn  -- DateTime
+DECLARE @FinishedOn Text(23) -- DateTime
 SET     @FinishedOn = '2026-01-01 11:00:00.000'
-DECLARE @Budget  -- Int64
+DECLARE @Budget Integer -- Int64
 SET     @Budget = 10800
 
 INSERT INTO [BudgetedTaskRow]
@@ -24,9 +24,9 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-DECLARE @extra  -- Int64
+DECLARE @extra Integer -- Int64
 SET     @extra = 300
-DECLARE @Ticks  -- Int64
+DECLARE @Ticks Integer -- Int64
 SET     @Ticks = 3000000000
 
 SELECT

@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Customer_Name NVarChar(5) -- String
 SET     @Customer_Name = 'name1'

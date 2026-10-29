@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @Date  -- DateTime
+DECLARE @Date Text(23) -- DateTime
 SET     @Date = '2009-09-20 00:00:00.000'
 
 SELECT

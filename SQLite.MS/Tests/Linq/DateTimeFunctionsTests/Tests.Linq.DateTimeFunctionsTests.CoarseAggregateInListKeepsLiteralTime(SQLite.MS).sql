@@ -1,11 +1,11 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Value  -- DateTime
+DECLARE @Value Text(23) -- DateTime
 SET     @Value = '2026-06-01 10:00:00.000'
-DECLARE @Day  -- Date
+DECLARE @Day Text(23) -- Date
 SET     @Day = '2026-06-01 00:00:00.000'
-DECLARE @Wide  -- DateTime
+DECLARE @Wide Text(23) -- DateTime
 SET     @Wide = '2026-06-01 10:00:00.000'
 
 INSERT INTO [CoarseDateShapesRow]

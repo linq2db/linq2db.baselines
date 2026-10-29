@@ -7,7 +7,7 @@ FROM
 	) [p]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = 2
 
 SELECT

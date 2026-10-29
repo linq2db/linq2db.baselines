@@ -1,9 +1,9 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @id  -- Int32
+DECLARE @id Integer -- Int32
 SET     @id = 1
-DECLARE @id_1  -- Int32
+DECLARE @id_1 Integer -- Int32
 SET     @id_1 = 2
-DECLARE @id_2  -- Int32
+DECLARE @id_2 Integer -- Int32
 SET     @id_2 = 3
 
 SELECT

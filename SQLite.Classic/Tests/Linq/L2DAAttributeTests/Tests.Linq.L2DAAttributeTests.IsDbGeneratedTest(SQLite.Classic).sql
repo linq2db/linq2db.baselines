@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic SQLite
-DECLARE @PersonID  -- Int32
+DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 0
 DECLARE @FirstName NVarChar(4) -- String
 SET     @FirstName = 'Test'
@@ -31,7 +31,7 @@ VALUES
 SELECT last_insert_rowid()
 
 -- SQLite.Classic SQLite
-DECLARE @PersonID  -- Int32
+DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 0
 
 DELETE FROM

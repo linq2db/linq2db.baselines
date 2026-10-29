@@ -1,11 +1,11 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = 1
-DECLARE @p_1  -- Int32
+DECLARE @p_1 Integer -- Int32
 SET     @p_1 = 2
-DECLARE @p_2  -- Int32
+DECLARE @p_2 Integer -- Int32
 SET     @p_2 = 3
-DECLARE @param  -- Int32
+DECLARE @param Integer -- Int32
 SET     @param = 4
 
 SELECT

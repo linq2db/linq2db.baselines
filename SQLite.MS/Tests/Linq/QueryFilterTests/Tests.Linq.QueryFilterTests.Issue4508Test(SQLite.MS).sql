@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @idCopy  -- Int32
+DECLARE @idCopy Integer -- Int32
 SET     @idCopy = 0
 
 SELECT
@@ -14,7 +14,7 @@ WHERE
 	[p].[PersonID] > @idCopy
 
 -- SQLite.MS SQLite
-DECLARE @idCopy  -- Int32
+DECLARE @idCopy Integer -- Int32
 SET     @idCopy = 1
 
 SELECT
@@ -29,7 +29,7 @@ WHERE
 	[p].[PersonID] > @idCopy
 
 -- SQLite.MS SQLite
-DECLARE @idCopy  -- Int32
+DECLARE @idCopy Integer -- Int32
 SET     @idCopy = 0
 
 SELECT
@@ -44,7 +44,7 @@ WHERE
 	[p].[PersonID] > @idCopy
 
 -- SQLite.MS SQLite
-DECLARE @idCopy  -- Int32
+DECLARE @idCopy Integer -- Int32
 SET     @idCopy = 1
 
 SELECT
@@ -59,7 +59,7 @@ WHERE
 	[p].[PersonID] > @idCopy
 
 -- SQLite.MS SQLite
-DECLARE @idCopy  -- Int32
+DECLARE @idCopy Integer -- Int32
 SET     @idCopy = 0
 
 SELECT
@@ -74,7 +74,7 @@ WHERE
 	[p].[PersonID] > @idCopy
 
 -- SQLite.MS SQLite
-DECLARE @idCopy  -- Int32
+DECLARE @idCopy Integer -- Int32
 SET     @idCopy = 1
 
 SELECT
@@ -89,7 +89,7 @@ WHERE
 	[p].[PersonID] > @idCopy
 
 -- SQLite.MS SQLite
-DECLARE @idCopy  -- Int32
+DECLARE @idCopy Integer -- Int32
 SET     @idCopy = 0
 
 SELECT
@@ -104,7 +104,7 @@ WHERE
 	[p].[PersonID] > @idCopy
 
 -- SQLite.MS SQLite
-DECLARE @idCopy  -- Int32
+DECLARE @idCopy Integer -- Int32
 SET     @idCopy = 1
 
 SELECT

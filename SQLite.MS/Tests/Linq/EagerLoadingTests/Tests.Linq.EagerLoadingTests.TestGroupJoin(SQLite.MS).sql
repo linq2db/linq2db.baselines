@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @take  -- Int32
+DECLARE @take Integer -- Int32
 SET     @take = 20
 
 SELECT
@@ -26,7 +26,7 @@ FROM
 		INNER JOIN [SubDetailClass] [d] ON [m_2].[DetailId] = [d].[DetailId]
 
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
+DECLARE @take Integer -- Int32
 SET     @take = 20
 
 SELECT
@@ -63,7 +63,7 @@ ORDER BY
 	[d_1].[SubDetailValue]
 
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
+DECLARE @take Integer -- Int32
 SET     @take = 20
 
 SELECT
@@ -102,7 +102,7 @@ ORDER BY
 	[d_1].[Value_1]
 
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
+DECLARE @take Integer -- Int32
 SET     @take = 20
 
 SELECT

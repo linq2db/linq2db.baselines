@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @ID  -- Int32
+DECLARE @ID Integer -- Int32
 SET     @ID = 0
 DECLARE @FirstName NVarChar(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'
@@ -43,7 +43,7 @@ WHERE
 LIMIT 1
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @ID  -- Int32
+DECLARE @ID Integer -- Int32
 SET     @ID = 0
 DECLARE @FirstName NVarChar(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'

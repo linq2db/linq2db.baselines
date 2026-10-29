@@ -1,9 +1,9 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @Kind NVarChar(2) -- String
 SET     @Kind = 'D1'
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Payload  -- Int64
+DECLARE @Payload Integer -- Int64
 SET     @Payload = 10
 
 INSERT INTO [TphDupCol]
@@ -22,9 +22,9 @@ VALUES
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @Kind NVarChar(2) -- String
 SET     @Kind = 'D2'
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Payload  -- Int32
+DECLARE @Payload Integer -- Int32
 SET     @Payload = 20
 
 INSERT INTO [TphDupCol]
@@ -43,9 +43,9 @@ VALUES
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @Kind NVarChar(2) -- String
 SET     @Kind = 'D3'
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 3
-DECLARE @Payload  -- Int32
+DECLARE @Payload Integer -- Int32
 SET     @Payload = 30
 
 INSERT INTO [TphDupCol]

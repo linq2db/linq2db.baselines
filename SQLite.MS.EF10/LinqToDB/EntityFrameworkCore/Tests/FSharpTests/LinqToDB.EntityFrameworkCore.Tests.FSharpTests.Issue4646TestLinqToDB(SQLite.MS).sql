@@ -5,9 +5,9 @@ DELETE FROM
 
 
 -- SQLite.MS SQLite
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = NULL
-DECLARE @ValueN  -- Int32
+DECLARE @ValueN Integer -- Int32
 SET     @ValueN = NULL
 
 INSERT INTO [Issue4646Table]

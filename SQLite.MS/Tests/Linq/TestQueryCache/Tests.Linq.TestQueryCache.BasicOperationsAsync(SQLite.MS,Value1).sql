@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @StrKey NVarChar(2) -- String
 SET     @StrKey = 'K1'
@@ -20,7 +20,7 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @StrKey NVarChar(2) -- String
 SET     @StrKey = 'K2'
@@ -41,7 +41,7 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 3
 DECLARE @StrKey NVarChar(2) -- String
 SET     @StrKey = 'K3'
@@ -80,7 +80,7 @@ VALUES
 SELECT last_insert_rowid()
 
 -- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @StrKey NVarChar(2) -- String
 SET     @StrKey = 'K1'
@@ -93,7 +93,7 @@ WHERE
 -- SQLite.MS SQLite
 DECLARE @Value NVarChar(2) -- String
 SET     @Value = 'VU'
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @StrKey NVarChar(2) -- String
 SET     @StrKey = 'K2'

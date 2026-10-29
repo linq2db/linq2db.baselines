@@ -1,13 +1,13 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Name NVarChar(7) -- String
 SET     @Name = 'updated'
-DECLARE @Version  -- Int32
+DECLARE @Version Integer -- Int32
 SET     @Version = 2
-DECLARE @UpdatedAt  -- DateTime
+DECLARE @UpdatedAt Text -- DateTime
 SET     @UpdatedAt = NULL
 DECLARE @UpdatedBy NVarChar -- String
 SET     @UpdatedBy = NULL
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
 UPDATE

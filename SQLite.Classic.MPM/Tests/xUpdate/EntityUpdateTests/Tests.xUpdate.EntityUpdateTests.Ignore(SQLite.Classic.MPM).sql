@@ -1,11 +1,11 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Version  -- Int32
+DECLARE @Version Integer -- Int32
 SET     @Version = 99
-DECLARE @UpdatedAt  -- DateTime
+DECLARE @UpdatedAt Text -- DateTime
 SET     @UpdatedAt = NULL
 DECLARE @UpdatedBy NVarChar -- String
 SET     @UpdatedBy = NULL
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
 UPDATE

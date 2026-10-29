@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Mid_Leaf_Source NVarChar(3) -- String
 SET     @Mid_Leaf_Source = 'abc'

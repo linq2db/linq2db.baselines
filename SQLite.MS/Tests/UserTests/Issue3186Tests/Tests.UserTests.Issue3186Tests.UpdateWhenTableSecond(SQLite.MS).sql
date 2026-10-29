@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @is_deleted  -- Boolean
+DECLARE @is_deleted Integer -- Boolean
 SET     @is_deleted = 1
 
 UPDATE

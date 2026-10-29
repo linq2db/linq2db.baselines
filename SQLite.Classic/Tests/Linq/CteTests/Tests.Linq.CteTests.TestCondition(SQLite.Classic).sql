@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic SQLite
-DECLARE @var3  -- Int32
+DECLARE @var3 Integer -- Int32
 SET     @var3 = 1
 
 WITH [CTE_1] ([ChildID], [ParentID])

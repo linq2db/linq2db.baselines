@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(5) -- String
 SET     @Name = 'name1'
@@ -16,7 +16,7 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Name NVarChar(5) -- String
 SET     @Name = 'name2'
@@ -33,7 +33,7 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Text NVarChar(7) -- String
 SET     @Text = 'address'
@@ -50,7 +50,7 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = 1
 
 SELECT

@@ -1,7 +1,7 @@
 ﻿-- SQLite.Classic SQLite
-DECLARE @id  -- Int32
+DECLARE @id Integer -- Int32
 SET     @id = 1001
-DECLARE @param  -- Int32
+DECLARE @param Integer -- Int32
 SET     @param = 200
 
 INSERT INTO [Child]
@@ -20,7 +20,7 @@ RETURNING
 	[Child].[ChildID] + [Child].[ParentID] + @param
 
 -- SQLite.Classic SQLite
-DECLARE @param  -- Int32
+DECLARE @param Integer -- Int32
 SET     @param = 200
 
 SELECT

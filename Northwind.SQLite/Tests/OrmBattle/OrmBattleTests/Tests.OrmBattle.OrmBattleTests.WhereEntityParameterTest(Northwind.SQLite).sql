@@ -21,7 +21,7 @@ ORDER BY
 LIMIT 1
 
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @OrderID  -- Int32
+DECLARE @OrderID Integer -- Int32
 SET     @OrderID = 10248
 
 SELECT

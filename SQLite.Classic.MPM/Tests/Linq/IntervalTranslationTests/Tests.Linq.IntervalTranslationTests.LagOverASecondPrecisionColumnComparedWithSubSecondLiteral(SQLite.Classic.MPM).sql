@@ -1,9 +1,9 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @StartedOn VarChar(23) -- AnsiString
 SET     @StartedOn = '2026-06-01 10:00:00.000'
-DECLARE @FinishedOn  -- DateTime
+DECLARE @FinishedOn Text -- DateTime
 SET     @FinishedOn = NULL
 
 INSERT INTO [CoarseNullableEventRow]
@@ -20,7 +20,7 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @StartedOn VarChar(23) -- AnsiString
 SET     @StartedOn = '2026-06-01 11:00:00.000'

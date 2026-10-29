@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @param2  -- Boolean
+DECLARE @param2 Integer -- Boolean
 SET     @param2 = 0
 
 SELECT

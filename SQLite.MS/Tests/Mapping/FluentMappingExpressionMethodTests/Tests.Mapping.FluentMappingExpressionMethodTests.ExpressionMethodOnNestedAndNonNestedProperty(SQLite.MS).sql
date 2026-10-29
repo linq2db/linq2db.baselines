@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @TopSource NVarChar(3) -- String
 SET     @TopSource = 'abc'

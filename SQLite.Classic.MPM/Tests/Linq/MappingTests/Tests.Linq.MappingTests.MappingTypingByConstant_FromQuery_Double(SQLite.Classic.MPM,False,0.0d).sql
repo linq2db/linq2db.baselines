@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @value  -- Double
+DECLARE @value Real -- Double
 SET     @value = 0
 
 SELECT
@@ -15,7 +15,7 @@ FROM
 	) [t1]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @value  -- Double
+DECLARE @value Real -- Double
 SET     @value = 3147483648
 
 SELECT

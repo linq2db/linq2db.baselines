@@ -1,9 +1,9 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Marked  -- Int32
+DECLARE @Marked Integer -- Int32
 SET     @Marked = 5
-DECLARE @Plain  -- Int32
+DECLARE @Plain Integer -- Int32
 SET     @Plain = 5
 
 INSERT INTO [StorageTransparentRow]
@@ -20,11 +20,11 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Marked  -- Int32
+DECLARE @Marked Integer -- Int32
 SET     @Marked = 6
-DECLARE @Plain  -- Int32
+DECLARE @Plain Integer -- Int32
 SET     @Plain = 7
 
 INSERT INTO [StorageTransparentRow]

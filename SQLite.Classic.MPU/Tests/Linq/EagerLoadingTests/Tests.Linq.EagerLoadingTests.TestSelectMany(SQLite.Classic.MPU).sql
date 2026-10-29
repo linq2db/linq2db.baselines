@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @take  -- Int32
+DECLARE @take Integer -- Int32
 SET     @take = 20
 
 SELECT
@@ -24,7 +24,7 @@ FROM
 		INNER JOIN [SubDetailClass] [d_1] ON [d_1].[DetailId] = [m_1].[DetailId]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @take  -- Int32
+DECLARE @take Integer -- Int32
 SET     @take = 20
 
 SELECT
@@ -49,7 +49,7 @@ FROM
 		INNER JOIN [SubDetailClass] [d_1] ON [m_1].[DetailId] = [d_1].[DetailId]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @take  -- Int32
+DECLARE @take Integer -- Int32
 SET     @take = 20
 
 SELECT

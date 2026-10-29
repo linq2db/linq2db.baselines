@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = 1
 
 SELECT
@@ -18,7 +18,7 @@ WHERE
 	1 = 0
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = 2
 
 SELECT
@@ -29,7 +29,7 @@ WHERE
 	[p].[PersonID] = @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = 1
 
 SELECT

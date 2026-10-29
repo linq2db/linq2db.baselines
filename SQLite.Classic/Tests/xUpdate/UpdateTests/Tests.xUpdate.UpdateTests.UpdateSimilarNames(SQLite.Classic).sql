@@ -23,7 +23,7 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 20000
 
 UPDATE

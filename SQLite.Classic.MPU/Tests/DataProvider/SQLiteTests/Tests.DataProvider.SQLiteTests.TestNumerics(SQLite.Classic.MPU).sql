@@ -39,19 +39,19 @@ SELECT
 	CAST(1 as 'real')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Boolean
+DECLARE @p Integer -- Boolean
 SET     @p = 1
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Boolean
+DECLARE @p Integer -- Boolean
 SET     @p = 1
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Boolean
+DECLARE @p Integer -- Boolean
 SET     @p = 1
 
 SELECT @p
@@ -97,19 +97,19 @@ SELECT
 	CAST(1 as 'real')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Boolean
+DECLARE @p Integer -- Boolean
 SET     @p = 1
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Boolean
+DECLARE @p Integer -- Boolean
 SET     @p = 1
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Boolean
+DECLARE @p Integer -- Boolean
 SET     @p = 1
 
 SELECT @p
@@ -155,7 +155,7 @@ SELECT
 	CAST(NULL as 'real')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Boolean
+DECLARE @p Integer -- Boolean
 SET     @p = NULL
 
 SELECT @p
@@ -167,7 +167,7 @@ SET     @p = NULL
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Boolean
+DECLARE @p Integer -- Boolean
 SET     @p = NULL
 
 SELECT @p
@@ -213,19 +213,19 @@ SELECT
 	CAST(1 as 'real')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- SByte
+DECLARE @p Integer -- SByte
 SET     @p = 1
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- SByte
+DECLARE @p Integer -- SByte
 SET     @p = 1
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- SByte
+DECLARE @p Integer -- SByte
 SET     @p = 1
 
 SELECT @p
@@ -271,19 +271,19 @@ SELECT
 	CAST(1 as 'real')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- SByte
+DECLARE @p Integer -- SByte
 SET     @p = 1
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- SByte
+DECLARE @p Integer -- SByte
 SET     @p = 1
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- SByte
+DECLARE @p Integer -- SByte
 SET     @p = 1
 
 SELECT @p
@@ -329,7 +329,7 @@ SELECT
 	CAST(NULL as 'real')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- SByte
+DECLARE @p Integer -- SByte
 SET     @p = NULL
 
 SELECT @p
@@ -341,7 +341,7 @@ SET     @p = NULL
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- SByte
+DECLARE @p Integer -- SByte
 SET     @p = NULL
 
 SELECT @p
@@ -387,19 +387,19 @@ SELECT
 	CAST(1 as 'real')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int16
+DECLARE @p Integer -- Int16
 SET     @p = 1
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int16
+DECLARE @p Integer -- Int16
 SET     @p = 1
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int16
+DECLARE @p Integer -- Int16
 SET     @p = 1
 
 SELECT @p
@@ -445,19 +445,19 @@ SELECT
 	CAST(1 as 'real')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int16
+DECLARE @p Integer -- Int16
 SET     @p = 1
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int16
+DECLARE @p Integer -- Int16
 SET     @p = 1
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int16
+DECLARE @p Integer -- Int16
 SET     @p = 1
 
 SELECT @p
@@ -503,7 +503,7 @@ SELECT
 	CAST(NULL as 'real')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int16
+DECLARE @p Integer -- Int16
 SET     @p = NULL
 
 SELECT @p
@@ -515,7 +515,7 @@ SET     @p = NULL
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int16
+DECLARE @p Integer -- Int16
 SET     @p = NULL
 
 SELECT @p
@@ -561,19 +561,19 @@ SELECT
 	CAST(1 as 'real')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = 1
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = 1
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = 1
 
 SELECT @p
@@ -619,19 +619,19 @@ SELECT
 	CAST(1 as 'real')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = 1
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = 1
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = 1
 
 SELECT @p
@@ -677,7 +677,7 @@ SELECT
 	CAST(NULL as 'real')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = NULL
 
 SELECT @p
@@ -689,7 +689,7 @@ SET     @p = NULL
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = NULL
 
 SELECT @p
@@ -735,19 +735,19 @@ SELECT
 	CAST(1 as 'real')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int64
+DECLARE @p Integer -- Int64
 SET     @p = 1
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int64
+DECLARE @p Integer -- Int64
 SET     @p = 1
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int64
+DECLARE @p Integer -- Int64
 SET     @p = 1
 
 SELECT @p
@@ -793,19 +793,19 @@ SELECT
 	CAST(1 as 'real')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int64
+DECLARE @p Integer -- Int64
 SET     @p = 1
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int64
+DECLARE @p Integer -- Int64
 SET     @p = 1
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int64
+DECLARE @p Integer -- Int64
 SET     @p = 1
 
 SELECT @p
@@ -851,7 +851,7 @@ SELECT
 	CAST(NULL as 'real')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int64
+DECLARE @p Integer -- Int64
 SET     @p = NULL
 
 SELECT @p
@@ -863,7 +863,7 @@ SET     @p = NULL
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int64
+DECLARE @p Integer -- Int64
 SET     @p = NULL
 
 SELECT @p
@@ -909,19 +909,19 @@ SELECT
 	CAST(1 as 'real')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Byte
+DECLARE @p Integer -- Byte
 SET     @p = 1
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Byte
+DECLARE @p Integer -- Byte
 SET     @p = 1
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Byte
+DECLARE @p Integer -- Byte
 SET     @p = 1
 
 SELECT @p
@@ -967,19 +967,19 @@ SELECT
 	CAST(1 as 'real')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Byte
+DECLARE @p Integer -- Byte
 SET     @p = 1
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Byte
+DECLARE @p Integer -- Byte
 SET     @p = 1
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Byte
+DECLARE @p Integer -- Byte
 SET     @p = 1
 
 SELECT @p
@@ -1025,7 +1025,7 @@ SELECT
 	CAST(NULL as 'real')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Byte
+DECLARE @p Integer -- Byte
 SET     @p = NULL
 
 SELECT @p
@@ -1037,7 +1037,7 @@ SET     @p = NULL
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Byte
+DECLARE @p Integer -- Byte
 SET     @p = NULL
 
 SELECT @p
@@ -1083,19 +1083,19 @@ SELECT
 	CAST(1 as 'real')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- UInt16
+DECLARE @p Integer -- UInt16
 SET     @p = 1
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- UInt16
+DECLARE @p Integer -- UInt16
 SET     @p = 1
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- UInt16
+DECLARE @p Integer -- UInt16
 SET     @p = 1
 
 SELECT @p
@@ -1141,19 +1141,19 @@ SELECT
 	CAST(1 as 'real')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- UInt16
+DECLARE @p Integer -- UInt16
 SET     @p = 1
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- UInt16
+DECLARE @p Integer -- UInt16
 SET     @p = 1
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- UInt16
+DECLARE @p Integer -- UInt16
 SET     @p = 1
 
 SELECT @p
@@ -1199,7 +1199,7 @@ SELECT
 	CAST(NULL as 'real')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- UInt16
+DECLARE @p Integer -- UInt16
 SET     @p = NULL
 
 SELECT @p
@@ -1211,7 +1211,7 @@ SET     @p = NULL
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- UInt16
+DECLARE @p Integer -- UInt16
 SET     @p = NULL
 
 SELECT @p
@@ -1257,19 +1257,19 @@ SELECT
 	CAST(1 as 'real')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int64
+DECLARE @p Integer -- Int64
 SET     @p = 1
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int64
+DECLARE @p Integer -- Int64
 SET     @p = 1
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int64
+DECLARE @p Integer -- Int64
 SET     @p = 1
 
 SELECT @p
@@ -1315,19 +1315,19 @@ SELECT
 	CAST(1 as 'real')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int64
+DECLARE @p Integer -- Int64
 SET     @p = 1
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int64
+DECLARE @p Integer -- Int64
 SET     @p = 1
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int64
+DECLARE @p Integer -- Int64
 SET     @p = 1
 
 SELECT @p
@@ -1373,7 +1373,7 @@ SELECT
 	CAST(NULL as 'real')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int64
+DECLARE @p Integer -- Int64
 SET     @p = NULL
 
 SELECT @p
@@ -1385,7 +1385,7 @@ SET     @p = NULL
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int64
+DECLARE @p Integer -- Int64
 SET     @p = NULL
 
 SELECT @p
@@ -1605,19 +1605,19 @@ SELECT
 	CAST(1 as 'real')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Single
+DECLARE @p Real -- Single
 SET     @p = 1
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Single
+DECLARE @p Real -- Single
 SET     @p = 1
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Single
+DECLARE @p Real -- Single
 SET     @p = 1
 
 SELECT @p
@@ -1663,19 +1663,19 @@ SELECT
 	CAST(1 as 'real')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Single
+DECLARE @p Real -- Single
 SET     @p = 1
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Single
+DECLARE @p Real -- Single
 SET     @p = 1
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Single
+DECLARE @p Real -- Single
 SET     @p = 1
 
 SELECT @p
@@ -1721,7 +1721,7 @@ SELECT
 	CAST(NULL as 'real')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Single
+DECLARE @p Real -- Single
 SET     @p = NULL
 
 SELECT @p
@@ -1733,7 +1733,7 @@ SET     @p = NULL
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Single
+DECLARE @p Real -- Single
 SET     @p = NULL
 
 SELECT @p
@@ -1763,19 +1763,19 @@ SELECT
 	CAST(1.10000002 as 'real')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Single
+DECLARE @p Real -- Single
 SET     @p = 1.10000002
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Single
+DECLARE @p Real -- Single
 SET     @p = 1.10000002
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Single
+DECLARE @p Real -- Single
 SET     @p = 1.10000002
 
 SELECT @p
@@ -1805,19 +1805,19 @@ SELECT
 	CAST(1.10000002 as 'real')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Single
+DECLARE @p Real -- Single
 SET     @p = 1.10000002
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Single
+DECLARE @p Real -- Single
 SET     @p = 1.10000002
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Single
+DECLARE @p Real -- Single
 SET     @p = 1.10000002
 
 SELECT @p
@@ -1847,7 +1847,7 @@ SELECT
 	CAST(NULL as 'real')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Single
+DECLARE @p Real -- Single
 SET     @p = NULL
 
 SELECT @p
@@ -1859,7 +1859,7 @@ SET     @p = NULL
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Single
+DECLARE @p Real -- Single
 SET     @p = NULL
 
 SELECT @p
@@ -1905,19 +1905,19 @@ SELECT
 	CAST(1 as 'real')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Double
+DECLARE @p Real -- Double
 SET     @p = 1
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Double
+DECLARE @p Real -- Double
 SET     @p = 1
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Double
+DECLARE @p Real -- Double
 SET     @p = 1
 
 SELECT @p
@@ -1963,19 +1963,19 @@ SELECT
 	CAST(1 as 'real')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Double
+DECLARE @p Real -- Double
 SET     @p = 1
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Double
+DECLARE @p Real -- Double
 SET     @p = 1
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Double
+DECLARE @p Real -- Double
 SET     @p = 1
 
 SELECT @p
@@ -2021,7 +2021,7 @@ SELECT
 	CAST(NULL as 'real')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Double
+DECLARE @p Real -- Double
 SET     @p = NULL
 
 SELECT @p
@@ -2033,7 +2033,7 @@ SET     @p = NULL
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Double
+DECLARE @p Real -- Double
 SET     @p = NULL
 
 SELECT @p
@@ -2063,19 +2063,19 @@ SELECT
 	CAST(1.1000000000000001 as 'real')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Double
+DECLARE @p Real -- Double
 SET     @p = 1.1000000000000001
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Double
+DECLARE @p Real -- Double
 SET     @p = 1.1000000000000001
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Double
+DECLARE @p Real -- Double
 SET     @p = 1.1000000000000001
 
 SELECT @p
@@ -2105,19 +2105,19 @@ SELECT
 	CAST(1.1000000000000001 as 'real')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Double
+DECLARE @p Real -- Double
 SET     @p = 1.1000000000000001
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Double
+DECLARE @p Real -- Double
 SET     @p = 1.1000000000000001
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Double
+DECLARE @p Real -- Double
 SET     @p = 1.1000000000000001
 
 SELECT @p
@@ -2147,7 +2147,7 @@ SELECT
 	CAST(NULL as 'real')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Double
+DECLARE @p Real -- Double
 SET     @p = NULL
 
 SELECT @p
@@ -2159,7 +2159,7 @@ SET     @p = NULL
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Double
+DECLARE @p Real -- Double
 SET     @p = NULL
 
 SELECT @p
@@ -2379,7 +2379,7 @@ SELECT
 	CAST(1 as 'real')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- VarNumeric
+DECLARE @p Text -- VarNumeric
 SET     @p = 1
 
 SELECT @p
@@ -2437,7 +2437,7 @@ SELECT
 	CAST(1 as 'real')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- VarNumeric
+DECLARE @p Text -- VarNumeric
 SET     @p = 1
 
 SELECT @p
@@ -2495,7 +2495,7 @@ SELECT
 	CAST(NULL as 'real')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- VarNumeric
+DECLARE @p Text -- VarNumeric
 SET     @p = NULL
 
 SELECT @p
@@ -2901,19 +2901,19 @@ SELECT
 	CAST(-128 as 'real')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- SByte
+DECLARE @p Integer -- SByte
 SET     @p = -128
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- SByte
+DECLARE @p Integer -- SByte
 SET     @p = -128
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- SByte
+DECLARE @p Integer -- SByte
 SET     @p = -128
 
 SELECT @p
@@ -2959,19 +2959,19 @@ SELECT
 	CAST(127 as 'real')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- SByte
+DECLARE @p Integer -- SByte
 SET     @p = 127
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- SByte
+DECLARE @p Integer -- SByte
 SET     @p = 127
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- SByte
+DECLARE @p Integer -- SByte
 SET     @p = 127
 
 SELECT @p
@@ -3017,19 +3017,19 @@ SELECT
 	CAST(-32768 as 'real')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int16
+DECLARE @p Integer -- Int16
 SET     @p = -32768
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int16
+DECLARE @p Integer -- Int16
 SET     @p = -32768
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int16
+DECLARE @p Integer -- Int16
 SET     @p = -32768
 
 SELECT @p
@@ -3075,19 +3075,19 @@ SELECT
 	CAST(32767 as 'real')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int16
+DECLARE @p Integer -- Int16
 SET     @p = 32767
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int16
+DECLARE @p Integer -- Int16
 SET     @p = 32767
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int16
+DECLARE @p Integer -- Int16
 SET     @p = 32767
 
 SELECT @p
@@ -3133,19 +3133,19 @@ SELECT
 	CAST(-2147483648 as 'real')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = -2147483648
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = -2147483648
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = -2147483648
 
 SELECT @p
@@ -3191,19 +3191,19 @@ SELECT
 	CAST(2147483647 as 'real')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = 2147483647
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = 2147483647
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = 2147483647
 
 SELECT @p
@@ -3249,19 +3249,19 @@ SELECT
 	CAST(-9223372036854775808 as 'real')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int64
+DECLARE @p Integer -- Int64
 SET     @p = -9223372036854775808
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int64
+DECLARE @p Integer -- Int64
 SET     @p = -9223372036854775808
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int64
+DECLARE @p Integer -- Int64
 SET     @p = -9223372036854775808
 
 SELECT @p
@@ -3299,19 +3299,19 @@ SELECT
 	CAST(9223372036854775807 as 'tinyint')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int64
+DECLARE @p Integer -- Int64
 SET     @p = 9223372036854775807
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int64
+DECLARE @p Integer -- Int64
 SET     @p = 9223372036854775807
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int64
+DECLARE @p Integer -- Int64
 SET     @p = 9223372036854775807
 
 SELECT @p
@@ -3357,19 +3357,19 @@ SELECT
 	CAST(255 as 'real')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Byte
+DECLARE @p Integer -- Byte
 SET     @p = 255
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Byte
+DECLARE @p Integer -- Byte
 SET     @p = 255
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Byte
+DECLARE @p Integer -- Byte
 SET     @p = 255
 
 SELECT @p
@@ -3415,19 +3415,19 @@ SELECT
 	CAST(65535 as 'real')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- UInt16
+DECLARE @p Integer -- UInt16
 SET     @p = 65535
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- UInt16
+DECLARE @p Integer -- UInt16
 SET     @p = 65535
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- UInt16
+DECLARE @p Integer -- UInt16
 SET     @p = 65535
 
 SELECT @p
@@ -3473,19 +3473,19 @@ SELECT
 	CAST(4294967295 as 'real')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int64
+DECLARE @p Integer -- Int64
 SET     @p = 4294967295
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int64
+DECLARE @p Integer -- Int64
 SET     @p = 4294967295
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int64
+DECLARE @p Integer -- Int64
 SET     @p = 4294967295
 
 SELECT @p
@@ -3533,19 +3533,19 @@ SELECT
 	CAST(-3.40282306E+38 as 'real')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Single
+DECLARE @p Real -- Single
 SET     @p = -3.40282306E+38
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Single
+DECLARE @p Real -- Single
 SET     @p = -3.40282306E+38
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Single
+DECLARE @p Real -- Single
 SET     @p = -3.40282306E+38
 
 SELECT @p
@@ -3575,19 +3575,19 @@ SELECT
 	CAST(3.40282306E+38 as 'real')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Single
+DECLARE @p Real -- Single
 SET     @p = 3.40282306E+38
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Single
+DECLARE @p Real -- Single
 SET     @p = 3.40282306E+38
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Single
+DECLARE @p Real -- Single
 SET     @p = 3.40282306E+38
 
 SELECT @p
@@ -3629,7 +3629,7 @@ SET     @p = 79228162514264337593543950335
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- VarNumeric
+DECLARE @p Text -- VarNumeric
 SET     @p = -79228162514264337593543950335
 
 SELECT @p
@@ -3647,7 +3647,7 @@ SET     @p = -79228162514264337593543950335
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- VarNumeric
+DECLARE @p Text -- VarNumeric
 SET     @p = 79228162514264337593543950335
 
 SELECT @p

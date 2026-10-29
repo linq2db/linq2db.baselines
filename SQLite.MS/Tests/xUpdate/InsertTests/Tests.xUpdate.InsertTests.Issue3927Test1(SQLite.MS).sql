@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @PageNumber  -- Int32
+DECLARE @PageNumber Integer -- Int32
 SET     @PageNumber = 9
 DECLARE @serialNumber Char(11) -- AnsiStringFixedLength
 SET     @serialNumber = '12345678901'

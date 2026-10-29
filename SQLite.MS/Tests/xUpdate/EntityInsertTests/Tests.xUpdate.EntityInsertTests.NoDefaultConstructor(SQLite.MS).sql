@@ -1,9 +1,9 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(2) -- String
 SET     @Name = 'n1'
-DECLARE @Version  -- Int32
+DECLARE @Version Integer -- Int32
 SET     @Version = 2
 
 INSERT INTO [EntityInsertNoDefaultCtorTest]
@@ -20,11 +20,11 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Name NVarChar(2) -- String
 SET     @Name = 'n2'
-DECLARE @Version  -- Int32
+DECLARE @Version Integer -- Int32
 SET     @Version = 3
 
 INSERT INTO [EntityInsertNoDefaultCtorTest]

@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @value  -- Time
+DECLARE @value Text -- Time
 SET     @value = 00:00:00
 
 SELECT

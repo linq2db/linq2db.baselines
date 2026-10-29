@@ -1,7 +1,7 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Key  -- Int32
+DECLARE @Key Integer -- Int32
 SET     @Key = 10
 
 INSERT INTO [DuRow]
@@ -16,9 +16,9 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Key  -- Int32
+DECLARE @Key Integer -- Int32
 SET     @Key = 20
 
 INSERT INTO [DuRow]
@@ -33,7 +33,7 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Key  -- Int32
+DECLARE @Key Integer -- Int32
 SET     @Key = 10
 
 SELECT
