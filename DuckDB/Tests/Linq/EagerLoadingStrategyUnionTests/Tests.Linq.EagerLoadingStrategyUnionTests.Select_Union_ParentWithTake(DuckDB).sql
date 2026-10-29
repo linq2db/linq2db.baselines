@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $take  -- Int32
+DECLARE $take INTEGER -- Int32
 SET     $take = 2
 
 WITH CTE_1 (Id, field, Name)

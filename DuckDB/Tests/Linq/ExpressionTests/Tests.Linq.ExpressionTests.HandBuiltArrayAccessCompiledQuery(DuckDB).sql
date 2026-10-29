@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $ids  -- Int32
+DECLARE $ids INTEGER -- Int32
 SET     $ids = 2
 
 SELECT
@@ -10,7 +10,7 @@ WHERE
 	p.PersonID = $ids
 
 -- DuckDB
-DECLARE $ids  -- Int32
+DECLARE $ids INTEGER -- Int32
 SET     $ids = 3
 
 SELECT
@@ -21,7 +21,7 @@ WHERE
 	p.PersonID = $ids
 
 -- DuckDB
-DECLARE $ids  -- Int32
+DECLARE $ids INTEGER -- Int32
 SET     $ids = 2
 
 SELECT
@@ -32,7 +32,7 @@ WHERE
 	p.PersonID = $ids
 
 -- DuckDB
-DECLARE $ids  -- Int32
+DECLARE $ids INTEGER -- Int32
 SET     $ids = 3
 
 SELECT

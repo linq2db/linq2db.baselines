@@ -1,7 +1,7 @@
 ﻿-- DuckDB
-DECLARE $addMask  -- Int32
+DECLARE $addMask INTEGER -- Int32
 SET     $addMask = 3
-DECLARE $removeMask  -- Int32
+DECLARE $removeMask INTEGER -- Int32
 SET     $removeMask = 12
 
 UPDATE

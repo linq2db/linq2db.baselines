@@ -1,7 +1,7 @@
 ﻿-- DuckDB
-DECLARE $startId  -- Int64
+DECLARE $startId BIGINT -- Int64
 SET     $startId = 5
-DECLARE $p  -- Int32
+DECLARE $p INTEGER -- Int32
 SET     $p = 14
 
 SELECT
@@ -17,9 +17,9 @@ ORDER BY
 	c_1.id
 
 -- DuckDB
-DECLARE $startId  -- Int32
+DECLARE $startId INTEGER -- Int32
 SET     $startId = 5
-DECLARE $endId  -- Int32
+DECLARE $endId INTEGER -- Int32
 SET     $endId = 14
 
 SELECT

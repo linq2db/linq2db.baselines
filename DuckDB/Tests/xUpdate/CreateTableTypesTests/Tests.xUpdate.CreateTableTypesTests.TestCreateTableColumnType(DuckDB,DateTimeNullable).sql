@@ -1,7 +1,7 @@
 ﻿-- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
-DECLARE $DateTimeNullable  -- DateTime2
+DECLARE $DateTimeNullable TIMESTAMP -- DateTime2
 SET     $DateTimeNullable = NULL
 
 INSERT INTO CreateTableTypes
@@ -16,9 +16,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 2
-DECLARE $DateTimeNullable  -- DateTime2
+DECLARE $DateTimeNullable TIMESTAMP -- DateTime2
 SET     $DateTimeNullable = '2018-11-25 01:02:03.000000'::TIMESTAMP
 
 INSERT INTO CreateTableTypes

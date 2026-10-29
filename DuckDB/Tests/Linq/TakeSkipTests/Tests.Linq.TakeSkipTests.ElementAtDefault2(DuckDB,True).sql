@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $skip  -- Int32
+DECLARE $skip INTEGER -- Int32
 SET     $skip = 300000
 
 SELECT

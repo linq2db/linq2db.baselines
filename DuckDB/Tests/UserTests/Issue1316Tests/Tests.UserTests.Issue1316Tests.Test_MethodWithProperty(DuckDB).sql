@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $ID  -- Int32
+DECLARE $ID INTEGER -- Int32
 SET     $ID = 5
 
 INSERT INTO Issue1316Tests
@@ -12,7 +12,7 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $Item1  -- Int32
+DECLARE $Item1 INTEGER -- Int32
 SET     $Item1 = 5
 
 SELECT

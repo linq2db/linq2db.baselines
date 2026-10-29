@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $Has  -- Boolean
+DECLARE $Has BOOLEAN -- Boolean
 SET     $Has = True
 
 INSERT INTO Issue1438
@@ -14,7 +14,7 @@ RETURNING
 	Id
 
 -- DuckDB
-DECLARE $id  -- Int32
+DECLARE $id INTEGER -- Int32
 SET     $id = 1
 
 SELECT

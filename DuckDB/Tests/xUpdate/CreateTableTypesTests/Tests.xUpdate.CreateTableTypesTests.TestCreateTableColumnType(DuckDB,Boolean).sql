@@ -1,7 +1,7 @@
 ﻿-- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
-DECLARE $Boolean  -- Boolean
+DECLARE $Boolean BOOLEAN -- Boolean
 SET     $Boolean = False
 
 INSERT INTO CreateTableTypes
@@ -16,9 +16,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 2
-DECLARE $Boolean  -- Boolean
+DECLARE $Boolean BOOLEAN -- Boolean
 SET     $Boolean = True
 
 INSERT INTO CreateTableTypes

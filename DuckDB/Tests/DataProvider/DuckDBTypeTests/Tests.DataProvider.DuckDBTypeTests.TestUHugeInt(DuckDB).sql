@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $value  -- VarNumeric
+DECLARE $value BIGNUM -- VarNumeric
 SET     $value = '0'::BIGNUM
 
 SELECT
@@ -26,9 +26,9 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
-DECLARE $Column  -- VarNumeric
+DECLARE $Column BIGNUM -- VarNumeric
 SET     $Column = '0'::BIGNUM
 DECLARE $ColumnNullable NVarChar -- String
 SET     $ColumnNullable = NULL
@@ -47,7 +47,7 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $value  -- VarNumeric
+DECLARE $value BIGNUM -- VarNumeric
 SET     $value = '0'::BIGNUM
 
 SELECT
@@ -64,9 +64,9 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
-DECLARE $p2  -- VarNumeric
+DECLARE $p2 BIGNUM -- VarNumeric
 SET     $p2 = '0'::BIGNUM
 
 INSERT INTO "TypeTable`2"
@@ -79,7 +79,7 @@ VALUES
 ($p1,$p2,NULL)
 
 -- DuckDB
-DECLARE $value  -- VarNumeric
+DECLARE $value BIGNUM -- VarNumeric
 SET     $value = '0'::BIGNUM
 
 SELECT
@@ -111,7 +111,7 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-DECLARE $value  -- VarNumeric
+DECLARE $value BIGNUM -- VarNumeric
 SET     $value = '0'::BIGNUM
 
 SELECT
@@ -143,7 +143,7 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-DECLARE $value  -- VarNumeric
+DECLARE $value BIGNUM -- VarNumeric
 SET     $value = '0'::BIGNUM
 
 SELECT

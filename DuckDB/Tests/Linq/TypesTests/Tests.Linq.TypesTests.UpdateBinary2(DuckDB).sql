@@ -1,7 +1,7 @@
 ﻿-- DuckDB
 DECLARE $BinaryValue Binary(5)
 SET     $BinaryValue = '\x01\x02\x03\x04\x05'::BLOB
-DECLARE $ints  -- Int32
+DECLARE $ints INTEGER -- Int32
 SET     $ints = 1
 
 UPDATE
@@ -14,7 +14,7 @@ WHERE
 -- DuckDB
 DECLARE $BinaryValue Binary(5)
 SET     $BinaryValue = '\x05\x04\x03\x02\x01'::BLOB
-DECLARE $ints  -- Int32
+DECLARE $ints INTEGER -- Int32
 SET     $ints = 2
 
 UPDATE

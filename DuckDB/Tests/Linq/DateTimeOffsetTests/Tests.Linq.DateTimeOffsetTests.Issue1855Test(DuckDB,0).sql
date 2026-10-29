@@ -1,9 +1,9 @@
 ﻿-- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
-DECLARE $SomeDateTimeOffset  -- DateTimeOffset
+DECLARE $SomeDateTimeOffset TIMESTAMPTZ -- DateTimeOffset
 SET     $SomeDateTimeOffset = '2019-08-08 08:08:08+00'::TIMESTAMPTZ
-DECLARE $SomeNullableDateTimeOffset  -- DateTimeOffset
+DECLARE $SomeNullableDateTimeOffset TIMESTAMPTZ -- DateTimeOffset
 SET     $SomeNullableDateTimeOffset = '2019-08-08 08:08:08+00'::TIMESTAMPTZ
 
 INSERT INTO Issue1855Table
@@ -20,9 +20,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 2
-DECLARE $SomeDateTimeOffset  -- DateTimeOffset
+DECLARE $SomeDateTimeOffset TIMESTAMPTZ -- DateTimeOffset
 SET     $SomeDateTimeOffset = '2019-08-08 08:08:08+00'::TIMESTAMPTZ
 
 INSERT INTO Issue1855Table
@@ -37,9 +37,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $interval  -- Int32
+DECLARE $interval INTEGER -- Int32
 SET     $interval = 10
-DECLARE $clientSideIn  -- DateTimeOffset
+DECLARE $clientSideIn TIMESTAMPTZ -- DateTimeOffset
 SET     $clientSideIn = '2019-08-08 08:08:18+00'::TIMESTAMPTZ
 
 SELECT

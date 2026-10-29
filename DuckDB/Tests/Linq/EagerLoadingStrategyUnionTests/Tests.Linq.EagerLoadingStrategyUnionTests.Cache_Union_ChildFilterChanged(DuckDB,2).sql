@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $minSalary  -- Int32
+DECLARE $minSalary INTEGER -- Int32
 SET     $minSalary = 45000
 
 WITH CTE_1 (Id, field, Name)

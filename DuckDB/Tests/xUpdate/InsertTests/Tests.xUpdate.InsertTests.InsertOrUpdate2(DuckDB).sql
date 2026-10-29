@@ -26,7 +26,7 @@ RETURNING
 	PersonID
 
 -- DuckDB
-DECLARE $id  -- Int32
+DECLARE $id INTEGER -- Int32
 SET     $id = 5
 
 INSERT INTO Patient AS t1
@@ -42,7 +42,7 @@ VALUES
 ON CONFLICT (PersonID) DO NOTHING
 
 -- DuckDB
-DECLARE $id  -- Int32
+DECLARE $id INTEGER -- Int32
 SET     $id = 5
 
 SELECT
@@ -54,7 +54,7 @@ WHERE
 	p.PersonID = $id
 
 -- DuckDB
-DECLARE $id  -- Int32
+DECLARE $id INTEGER -- Int32
 SET     $id = 5
 
 INSERT INTO Patient AS t1
@@ -70,7 +70,7 @@ VALUES
 ON CONFLICT (PersonID) DO NOTHING
 
 -- DuckDB
-DECLARE $id  -- Int32
+DECLARE $id INTEGER -- Int32
 SET     $id = 5
 
 SELECT

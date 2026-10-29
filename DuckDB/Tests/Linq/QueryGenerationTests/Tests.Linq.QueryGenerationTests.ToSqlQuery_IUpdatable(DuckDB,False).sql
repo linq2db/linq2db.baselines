@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $Value  -- Int32
+DECLARE $Value INTEGER -- Int32
 SET     $Value = 1
 
 INSERT INTO TableWithIdentity
@@ -12,7 +12,7 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $newValue  -- Int32
+DECLARE $newValue INTEGER -- Int32
 SET     $newValue = 123
 
 UPDATE

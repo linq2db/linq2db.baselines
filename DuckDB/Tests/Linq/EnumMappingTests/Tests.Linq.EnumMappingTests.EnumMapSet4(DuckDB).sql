@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $p  -- Int32
+DECLARE $p INTEGER -- Int32
 SET     $p = 102
 
 DELETE FROM
@@ -20,7 +20,7 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $TestField  -- Int64
+DECLARE $TestField BIGINT -- Int64
 SET     $TestField = 12
 
 UPDATE
@@ -40,7 +40,7 @@ WHERE
 LIMIT 1
 
 -- DuckDB
-DECLARE $p  -- Int32
+DECLARE $p INTEGER -- Int32
 SET     $p = 102
 
 DELETE FROM

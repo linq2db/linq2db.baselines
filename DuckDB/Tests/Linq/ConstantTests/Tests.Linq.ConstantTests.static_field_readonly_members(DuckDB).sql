@@ -1,7 +1,7 @@
 ﻿-- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
-DECLARE $InitOnlyId  -- Int32
+DECLARE $InitOnlyId INTEGER -- Int32
 SET     $InitOnlyId = 1
 
 SELECT
@@ -24,9 +24,9 @@ FROM
 	TestConstantsData t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
-DECLARE $InitOnlyId  -- Int32
+DECLARE $InitOnlyId INTEGER -- Int32
 SET     $InitOnlyId = 1
 
 SELECT

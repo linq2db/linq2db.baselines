@@ -12,7 +12,7 @@ FROM
 	LinqDataTypes t1
 
 -- DuckDB
-DECLARE $take  -- Int32
+DECLARE $take INTEGER -- Int32
 SET     $take = 15
 
 SELECT

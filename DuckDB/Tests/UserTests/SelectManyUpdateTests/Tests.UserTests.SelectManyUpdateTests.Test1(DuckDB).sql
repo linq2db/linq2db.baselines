@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $Value1  -- Int64
+DECLARE $Value1 BIGINT -- Int64
 SET     $Value1 = NULL
 
 UPDATE

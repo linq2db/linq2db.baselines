@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $param2  -- Boolean
+DECLARE $param2 BOOLEAN -- Boolean
 SET     $param2 = False
 
 SELECT

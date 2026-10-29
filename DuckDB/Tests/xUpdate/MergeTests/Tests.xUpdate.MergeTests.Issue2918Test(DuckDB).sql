@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $userId  -- Int32
+DECLARE $userId INTEGER -- Int32
 SET     $userId = 1
 
 MERGE INTO PatentAssessment Target

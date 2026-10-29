@@ -9,7 +9,7 @@ FROM
 LIMIT 1
 
 -- DuckDB
-DECLARE $value  -- Single
+DECLARE $value FLOAT -- Single
 SET     $value = '6579.64648'::FLOAT
 
 SELECT
@@ -19,7 +19,7 @@ FROM
 LIMIT 1
 
 -- DuckDB
-DECLARE $value  -- Double
+DECLARE $value DOUBLE -- Double
 SET     $value = 6579.6464800000003
 
 SELECT
@@ -39,7 +39,7 @@ FROM
 LIMIT 1
 
 -- DuckDB
-DECLARE $value  -- Single
+DECLARE $value FLOAT -- Single
 SET     $value = '6579.64648'::FLOAT
 
 SELECT
@@ -49,7 +49,7 @@ FROM
 LIMIT 1
 
 -- DuckDB
-DECLARE $value  -- Double
+DECLARE $value DOUBLE -- Double
 SET     $value = 6579.6464800000003
 
 SELECT
@@ -69,7 +69,7 @@ FROM
 LIMIT 1
 
 -- DuckDB
-DECLARE $value  -- Single
+DECLARE $value FLOAT -- Single
 SET     $value = '6579.64648'::FLOAT
 
 SELECT
@@ -79,7 +79,7 @@ FROM
 LIMIT 1
 
 -- DuckDB
-DECLARE $value  -- Double
+DECLARE $value DOUBLE -- Double
 SET     $value = 6579.6464800000003
 
 SELECT
