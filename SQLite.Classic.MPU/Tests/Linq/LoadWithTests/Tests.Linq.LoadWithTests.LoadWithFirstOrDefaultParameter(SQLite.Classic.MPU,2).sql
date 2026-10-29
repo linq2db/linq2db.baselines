@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @id  -- Int32
+DECLARE @id Integer -- Int32
 SET     @id = 2
 
 SELECT
@@ -28,7 +28,7 @@ FROM
 		INNER JOIN [Child] [d_1] ON [m_1].[ParentID] = [d_1].[ParentID]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @id  -- Int32
+DECLARE @id Integer -- Int32
 SET     @id = 2
 
 SELECT
@@ -51,7 +51,7 @@ FROM
 		LEFT JOIN [Parent] [a_Parent] ON [d].[ParentID] = [a_Parent].[ParentID]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @id  -- Int32
+DECLARE @id Integer -- Int32
 SET     @id = 2
 
 SELECT

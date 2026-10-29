@@ -21,7 +21,7 @@ FROM
 	) [t2]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @p  -- Int16
+DECLARE @p Integer -- Int16
 SET     @p = 1234
 
 INSERT INTO [InsertIssueTest]

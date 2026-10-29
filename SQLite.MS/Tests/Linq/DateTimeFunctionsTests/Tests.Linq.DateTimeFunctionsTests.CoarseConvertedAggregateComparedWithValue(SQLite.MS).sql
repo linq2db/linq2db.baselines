@@ -6,7 +6,7 @@ FROM
 LIMIT 2
 
 -- SQLite.MS SQLite
-DECLARE @value  -- DateTime
+DECLARE @value Text(23) -- DateTime
 SET     @value = '2026-06-01 09:00:00.000'
 
 SELECT
@@ -17,7 +17,7 @@ WHERE
 	strftime('%Y-%m-%d %H:%M:%f', [r].[Value]) = strftime('%Y-%m-%d %H:%M:%f', @value)
 
 -- SQLite.MS SQLite
-DECLARE @value  -- DateTime
+DECLARE @value Text(23) -- DateTime
 SET     @value = '2026-06-01 09:00:00.000'
 
 SELECT
@@ -35,7 +35,7 @@ FROM
 	) [t1]
 
 -- SQLite.MS SQLite
-DECLARE @CoarseValue  -- DateTime
+DECLARE @CoarseValue Text(23) -- DateTime
 SET     @CoarseValue = '2026-06-01 09:00:00.000'
 
 SELECT
@@ -53,7 +53,7 @@ FROM
 	) [t1]
 
 -- SQLite.MS SQLite
-DECLARE @day  -- Date
+DECLARE @day Text(23) -- Date
 SET     @day = '2026-05-31 00:00:00.000'
 
 SELECT
@@ -71,7 +71,7 @@ FROM
 	) [t1]
 
 -- SQLite.MS SQLite
-DECLARE @CoarseConvertedDay  -- Date
+DECLARE @CoarseConvertedDay Text(23) -- Date
 SET     @CoarseConvertedDay = '2026-05-31 00:00:00.000'
 
 SELECT

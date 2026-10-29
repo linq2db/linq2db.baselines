@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @skip  -- Int32
+DECLARE @skip Integer -- Int32
 SET     @skip = 2
 
 SELECT
@@ -15,7 +15,7 @@ ORDER BY
 LIMIT 1 OFFSET @skip
 
 -- SQLite.MS SQLite
-DECLARE @skip  -- Int32
+DECLARE @skip Integer -- Int32
 SET     @skip = 2
 
 SELECT

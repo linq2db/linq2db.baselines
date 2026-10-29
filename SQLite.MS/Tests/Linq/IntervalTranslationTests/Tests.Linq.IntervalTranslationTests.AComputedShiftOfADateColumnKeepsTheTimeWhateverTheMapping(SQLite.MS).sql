@@ -1,11 +1,11 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Day  -- Date
+DECLARE @Day Text(23) -- Date
 SET     @Day = '2026-03-01 00:00:00.000'
-DECLARE @StartedOn  -- DateTime
+DECLARE @StartedOn Text(23) -- DateTime
 SET     @StartedOn = '2026-01-01 10:00:00.000'
-DECLARE @FinishedOn  -- DateTime
+DECLARE @FinishedOn Text(23) -- DateTime
 SET     @FinishedOn = '2026-01-01 15:30:00.250'
 
 INSERT INTO [DatedEventRow]

@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @minId  -- Int32
+DECLARE @minId Integer -- Int32
 SET     @minId = 2
 
 SELECT

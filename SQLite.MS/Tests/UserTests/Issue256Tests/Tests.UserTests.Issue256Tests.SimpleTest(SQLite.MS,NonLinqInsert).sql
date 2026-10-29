@@ -1,17 +1,17 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @ID  -- Int32
+DECLARE @ID Integer -- Int32
 SET     @ID = 256
 DECLARE @MoneyValue Decimal(1, 0)
 SET     @MoneyValue = 0
-DECLARE @DateTimeValue  -- DateTime
+DECLARE @DateTimeValue Text(23) -- DateTime
 SET     @DateTimeValue = '2020-02-29 17:54:55.123'
-DECLARE @BoolValue  -- Boolean
+DECLARE @BoolValue Integer -- Boolean
 SET     @BoolValue = 0
-DECLARE @GuidValue  -- Guid
+DECLARE @GuidValue Blob(16) -- Guid
 SET     @GuidValue = X'00000000000000000000000000000000'
 DECLARE @BinaryValue Binary(3)
 SET     @BinaryValue = X'010203'
-DECLARE @SmallIntValue  -- Int16
+DECLARE @SmallIntValue Integer -- Int16
 SET     @SmallIntValue = 0
 DECLARE @StringValue NVarChar -- String
 SET     @StringValue = NULL
@@ -40,19 +40,19 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-DECLARE @ID  -- Int32
+DECLARE @ID Integer -- Int32
 SET     @ID = 10256
 DECLARE @MoneyValue Decimal(1, 0)
 SET     @MoneyValue = 0
-DECLARE @DateTimeValue  -- DateTime
+DECLARE @DateTimeValue Text(23) -- DateTime
 SET     @DateTimeValue = '2020-02-29 17:54:55.123'
-DECLARE @BoolValue  -- Boolean
+DECLARE @BoolValue Integer -- Boolean
 SET     @BoolValue = 0
-DECLARE @GuidValue  -- Guid
+DECLARE @GuidValue Blob(16) -- Guid
 SET     @GuidValue = X'00000000000000000000000000000000'
 DECLARE @BinaryValue Binary(3)
 SET     @BinaryValue = X'010203'
-DECLARE @SmallIntValue  -- Int16
+DECLARE @SmallIntValue Integer -- Int16
 SET     @SmallIntValue = 0
 
 INSERT INTO [LinqDataTypes]

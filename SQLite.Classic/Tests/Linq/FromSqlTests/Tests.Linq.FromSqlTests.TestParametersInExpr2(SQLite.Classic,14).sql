@@ -1,7 +1,7 @@
 ﻿-- SQLite.Classic SQLite
-DECLARE @startId  -- Int64
+DECLARE @startId Integer -- Int64
 SET     @startId = 5
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = 14
 
 SELECT
@@ -18,9 +18,9 @@ ORDER BY
 	[s].[id]
 
 -- SQLite.Classic SQLite
-DECLARE @startId  -- Int32
+DECLARE @startId Integer -- Int32
 SET     @startId = 5
-DECLARE @endId  -- Int32
+DECLARE @endId Integer -- Int32
 SET     @endId = 14
 
 SELECT

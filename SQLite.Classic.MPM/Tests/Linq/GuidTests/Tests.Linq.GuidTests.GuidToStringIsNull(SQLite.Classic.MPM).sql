@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Guid1  -- Guid
+DECLARE @Guid1 Blob -- Guid
 SET     @Guid1 = X'3D667BBCDE0F27438F925D8CC3A11D11'
 
 SELECT

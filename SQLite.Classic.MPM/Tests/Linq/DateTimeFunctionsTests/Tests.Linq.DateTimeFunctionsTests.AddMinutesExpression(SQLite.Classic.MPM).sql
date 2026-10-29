@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Minute  -- Int32
+DECLARE @Minute Integer -- Int32
 SET     @Minute = -8
 
 SELECT

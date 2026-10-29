@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic SQLite
-DECLARE @id  -- Int32
+DECLARE @id Integer -- Int32
 SET     @id = 1001
 
 INSERT INTO [Child]
@@ -14,7 +14,7 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-DECLARE @id  -- Int32
+DECLARE @id Integer -- Int32
 SET     @id = 1001
 
 SELECT
@@ -25,9 +25,9 @@ WHERE
 	[c_1].[ChildID] = @id
 
 -- SQLite.Classic SQLite
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Integer -- Int32
 SET     @ChildID = 5000
-DECLARE @id  -- Int32
+DECLARE @id Integer -- Int32
 SET     @id = 1001
 
 UPDATE

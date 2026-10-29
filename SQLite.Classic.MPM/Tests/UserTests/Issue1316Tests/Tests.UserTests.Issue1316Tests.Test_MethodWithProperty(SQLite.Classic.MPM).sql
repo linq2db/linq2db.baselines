@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @ID  -- Int32
+DECLARE @ID Integer -- Int32
 SET     @ID = 5
 
 INSERT INTO [Issue1316Tests]
@@ -12,7 +12,7 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Item1  -- Int32
+DECLARE @Item1 Integer -- Int32
 SET     @Item1 = 5
 
 SELECT

@@ -1,9 +1,9 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 20
-DECLARE @Id_1  -- Int32
+DECLARE @Id_1 Integer -- Int32
 SET     @Id_1 = 21
-DECLARE @Id_2  -- Int32
+DECLARE @Id_2 Integer -- Int32
 SET     @Id_2 = 22
 
 SELECT

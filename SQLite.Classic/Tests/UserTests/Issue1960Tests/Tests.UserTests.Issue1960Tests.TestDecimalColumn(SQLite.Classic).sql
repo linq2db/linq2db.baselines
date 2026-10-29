@@ -1,7 +1,7 @@
 ﻿-- SQLite.Classic SQLite
 DECLARE @decValue Decimal(9, 4)
 SET     @decValue = 12345.6789
-DECLARE @dtValue  -- Int64
+DECLARE @dtValue Integer -- Int64
 SET     @dtValue = 123456789
 
 INSERT INTO [Issue1960Table]

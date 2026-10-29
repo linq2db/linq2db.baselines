@@ -1,11 +1,11 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Doubled  -- Int32
+DECLARE @Doubled Integer -- Int32
 SET     @Doubled = 20
-DECLARE @Tripled  -- Int32
+DECLARE @Tripled Integer -- Int32
 SET     @Tripled = 30
-DECLARE @Plain  -- Int32
+DECLARE @Plain Integer -- Int32
 SET     @Plain = 10
 
 INSERT INTO [DivergentConversionRow]
@@ -24,7 +24,7 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @PlainValue  -- Int32
+DECLARE @PlainValue Integer -- Int32
 SET     @PlainValue = 10
 
 SELECT
@@ -39,7 +39,7 @@ FROM
 LIMIT 2
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Doubled  -- Int32
+DECLARE @Doubled Integer -- Int32
 SET     @Doubled = 20
 
 SELECT

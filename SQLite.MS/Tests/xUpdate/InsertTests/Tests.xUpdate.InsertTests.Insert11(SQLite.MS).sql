@@ -30,7 +30,7 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-DECLARE @id  -- Int32
+DECLARE @id Integer -- Int32
 SET     @id = 4
 
 SELECT

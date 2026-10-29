@@ -22,7 +22,7 @@ FROM
 	[Employees] [e]
 
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @take  -- Int32
+DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT

@@ -1,7 +1,7 @@
 ﻿-- SQLite.Classic SQLite
-DECLARE @take  -- Int32
+DECLARE @take Integer -- Int32
 SET     @take = 1
-DECLARE @skip  -- Int32
+DECLARE @skip Integer -- Int32
 SET     @skip = 1
 
 SELECT
@@ -14,9 +14,9 @@ ORDER BY
 LIMIT @take OFFSET @skip
 
 -- SQLite.Classic SQLite
-DECLARE @take  -- Int32
+DECLARE @take Integer -- Int32
 SET     @take = 1
-DECLARE @skip  -- Int32
+DECLARE @skip Integer -- Int32
 SET     @skip = 2
 
 SELECT

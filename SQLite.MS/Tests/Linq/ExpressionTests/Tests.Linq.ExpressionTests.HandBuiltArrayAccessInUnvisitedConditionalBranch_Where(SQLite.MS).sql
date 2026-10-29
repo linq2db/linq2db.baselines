@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @ids  -- Int32
+DECLARE @ids Integer -- Int32
 SET     @ids = 2
 
 SELECT
@@ -19,7 +19,7 @@ WHERE
 	END
 
 -- SQLite.MS SQLite
-DECLARE @ids  -- Int32
+DECLARE @ids Integer -- Int32
 SET     @ids = 3
 
 SELECT
@@ -39,7 +39,7 @@ WHERE
 	END
 
 -- SQLite.MS SQLite
-DECLARE @ids  -- Int32
+DECLARE @ids Integer -- Int32
 SET     @ids = 2
 
 SELECT
@@ -59,7 +59,7 @@ WHERE
 	END
 
 -- SQLite.MS SQLite
-DECLARE @ids  -- Int32
+DECLARE @ids Integer -- Int32
 SET     @ids = 3
 
 SELECT

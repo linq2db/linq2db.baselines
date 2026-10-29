@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
 INSERT INTO [UpsertDynamicTest] AS [t1]
@@ -26,7 +26,7 @@ WHERE
 LIMIT 2
 
 -- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
 INSERT INTO [UpsertDynamicTest] AS [t1]

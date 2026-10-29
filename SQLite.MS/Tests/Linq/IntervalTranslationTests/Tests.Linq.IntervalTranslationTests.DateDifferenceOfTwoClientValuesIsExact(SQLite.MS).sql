@@ -1,9 +1,9 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @StartedOn  -- DateTime
+DECLARE @StartedOn Text(23) -- DateTime
 SET     @StartedOn = '2026-01-03 13:30:00.000'
-DECLARE @FinishedOn  -- DateTime
+DECLARE @FinishedOn Text(23) -- DateTime
 SET     @FinishedOn = '2026-01-03 14:30:00.000'
 
 INSERT INTO [EventRow]
@@ -20,9 +20,9 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-DECLARE @Ticks  -- Int64
+DECLARE @Ticks Integer -- Int64
 SET     @Ticks = 1234
-DECLARE @TotalMilliseconds  -- Double
+DECLARE @TotalMilliseconds Real -- Double
 SET     @TotalMilliseconds = 0.1234
 
 SELECT
@@ -45,7 +45,7 @@ FROM
 	[EventRow] [r]
 
 -- SQLite.MS SQLite
-DECLARE @FinishedOn  -- DateTime
+DECLARE @FinishedOn Text(23) -- DateTime
 SET     @FinishedOn = '2026-01-03 13:30:00.000'
 
 SELECT

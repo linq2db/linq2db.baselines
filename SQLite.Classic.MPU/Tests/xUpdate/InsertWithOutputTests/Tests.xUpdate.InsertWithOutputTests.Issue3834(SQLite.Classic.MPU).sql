@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 123
 DECLARE @Nesto NVarChar(5) -- String
 SET     @Nesto = 'Nesto'

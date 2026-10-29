@@ -9,7 +9,7 @@ FROM
 LIMIT 1
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @value  -- Single
+DECLARE @value Real -- Single
 SET     @value = 6579.64648
 
 SELECT
@@ -19,7 +19,7 @@ FROM
 LIMIT 1
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @value  -- Double
+DECLARE @value Real -- Double
 SET     @value = 6579.6464800000003
 
 SELECT
@@ -39,7 +39,7 @@ FROM
 LIMIT 1
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @value  -- Single
+DECLARE @value Real -- Single
 SET     @value = 6579.64648
 
 SELECT
@@ -49,7 +49,7 @@ FROM
 LIMIT 1
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @value  -- Double
+DECLARE @value Real -- Double
 SET     @value = 6579.6464800000003
 
 SELECT
@@ -69,7 +69,7 @@ FROM
 LIMIT 1
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @value  -- Single
+DECLARE @value Real -- Single
 SET     @value = 6579.64648
 
 SELECT
@@ -79,7 +79,7 @@ FROM
 LIMIT 1
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @value  -- Double
+DECLARE @value Real -- Double
 SET     @value = 6579.6464800000003
 
 SELECT

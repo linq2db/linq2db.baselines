@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic SQLite
-DECLARE @ts  -- Time
+DECLARE @ts Text -- Time
 SET     @ts = NULL
 
 SELECT

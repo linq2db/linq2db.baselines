@@ -1,7 +1,7 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @id1  -- Int32
+DECLARE @id1 Integer -- Int32
 SET     @id1 = 1
-DECLARE @id2  -- Int32
+DECLARE @id2 Integer -- Int32
 SET     @id2 = 10000
 
 SELECT
@@ -17,9 +17,9 @@ ORDER BY
 LIMIT 1
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @id1  -- Int32
+DECLARE @id1 Integer -- Int32
 SET     @id1 = 2
-DECLARE @id2  -- Int32
+DECLARE @id2 Integer -- Int32
 SET     @id2 = 10000
 
 SELECT

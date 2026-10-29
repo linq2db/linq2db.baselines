@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @p  -- Double
+DECLARE @p Real -- Double
 SET     @p = 0
 
 SELECT

@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @StartedOn VarChar(23) -- AnsiString
 SET     @StartedOn = '2026-01-01 10:00:00.000'
@@ -20,7 +20,7 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-DECLARE @Ticks  -- Int64
+DECLARE @Ticks Integer -- Int64
 SET     @Ticks = 36002500000
 
 SELECT
@@ -30,7 +30,7 @@ FROM
 LIMIT 2
 
 -- SQLite.Classic SQLite
-DECLARE @Ticks  -- Int64
+DECLARE @Ticks Integer -- Int64
 SET     @Ticks = 36002500000
 
 SELECT
@@ -40,7 +40,7 @@ FROM
 LIMIT 2
 
 -- SQLite.Classic SQLite
-DECLARE @Ticks  -- Int64
+DECLARE @Ticks Integer -- Int64
 SET     @Ticks = 36002500000
 
 SELECT
@@ -51,7 +51,7 @@ WHERE
 	strftime('%Y-%m-%d %H:%M:%f', JulianDay([r].[StartedOn]) + Round(CAST(CAST(@Ticks AS INTEGER) AS Float) * 0.0001) * 1.1574074074074074E-08) < strftime('%Y-%m-%d %H:%M:%f', [r].[FinishedOn])
 
 -- SQLite.Classic SQLite
-DECLARE @Ticks  -- Int64
+DECLARE @Ticks Integer -- Int64
 SET     @Ticks = 36002500000
 
 SELECT

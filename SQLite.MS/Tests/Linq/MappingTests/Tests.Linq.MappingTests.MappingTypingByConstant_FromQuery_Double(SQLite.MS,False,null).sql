@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @value  -- Double
+DECLARE @value Real -- Double
 SET     @value = NULL
 
 SELECT
@@ -15,7 +15,7 @@ FROM
 	) [t1]
 
 -- SQLite.MS SQLite
-DECLARE @value  -- Double
+DECLARE @value Real -- Double
 SET     @value = 3147483648
 
 SELECT

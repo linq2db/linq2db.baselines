@@ -15,7 +15,7 @@ WHERE
 	[x].[A] IS NULL
 
 -- SQLite.MS SQLite
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = NULL
 
 SELECT

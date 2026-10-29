@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @param  -- Double
+DECLARE @param Real -- Double
 SET     @param = 33
 
 SELECT

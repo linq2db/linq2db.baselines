@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @nullable  -- Int32
+DECLARE @nullable Integer -- Int32
 SET     @nullable = 1
 
 SELECT

@@ -3,9 +3,9 @@ DECLARE @charValue Char(1) -- AnsiStringFixedLength
 SET     @charValue = 'A'
 DECLARE @intValue Char(1) -- AnsiStringFixedLength
 SET     @intValue = 'A'
-DECLARE @stringIntValue  -- Int32
+DECLARE @stringIntValue Integer -- Int32
 SET     @stringIntValue = 1
-DECLARE @doubleValue  -- Double
+DECLARE @doubleValue Real -- Double
 SET     @doubleValue = 1
 
 SELECT
@@ -23,9 +23,9 @@ DECLARE @charValue Char(1) -- AnsiStringFixedLength
 SET     @charValue = 'A'
 DECLARE @intValue Char(1) -- AnsiStringFixedLength
 SET     @intValue = 'A'
-DECLARE @stringIntValue  -- Int32
+DECLARE @stringIntValue Integer -- Int32
 SET     @stringIntValue = 1
-DECLARE @doubleValue  -- Double
+DECLARE @doubleValue Real -- Double
 SET     @doubleValue = 1
 
 SELECT
