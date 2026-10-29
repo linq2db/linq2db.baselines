@@ -1,14 +1,22 @@
 ﻿-- DuckDB
-SELECT DISTINCT ON (c_1.Country)
-	c_1.Country,
-	c_1.Region
+SELECT
+	t1.Country,
+	t1.Region
 FROM
-	NullableKeyData c_1
-WHERE
-	c_1.CustomerId LIKE 'DST%' ESCAPE '~'
+	(
+		SELECT DISTINCT ON (c_1.Country)
+			c_1.Region,
+			c_1.Country
+		FROM
+			NullableKeyData c_1
+		WHERE
+			c_1.CustomerId LIKE 'DST%' ESCAPE '~'
+		ORDER BY
+			c_1.Country,
+			c_1.Region
+	) t1
 ORDER BY
-	c_1.Country,
-	c_1.Region
+	t1.Region
 
 -- DuckDB
 SELECT
