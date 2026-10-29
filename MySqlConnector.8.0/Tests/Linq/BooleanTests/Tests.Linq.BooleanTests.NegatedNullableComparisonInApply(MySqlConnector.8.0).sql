@@ -19,6 +19,13 @@ FROM
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 SELECT
+	`t1`.`ParentID`,
+	`t1`.`Value1`
+FROM
+	`Parent` `t1`
+
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+SELECT
 	`p`.`ParentID`
 FROM
 	`Parent` `p`
@@ -31,4 +38,11 @@ FROM
 				`c_1`.`ParentID` = `p`.`ParentID` AND NOT (`c_1`.`Value1` = 1 AND `c_1`.`Value1` IS NOT NULL OR `c_1`.`ParentID` = 3)
 			LIMIT 1
 		) `c_2` ON 1=1
+
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+SELECT
+	`t1`.`ParentID`,
+	`t1`.`Value1`
+FROM
+	`Parent` `t1`
 
