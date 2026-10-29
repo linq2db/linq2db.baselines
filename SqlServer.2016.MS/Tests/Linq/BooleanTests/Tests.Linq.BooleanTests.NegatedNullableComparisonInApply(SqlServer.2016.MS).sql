@@ -10,8 +10,15 @@ FROM
 			FROM
 				[Parent] [c_1]
 			WHERE
-				[c_1].[ParentID] = [p].[ParentID] AND NOT ([c_1].[Value1] = 1 AND [c_1].[Value1] IS NOT NULL)
+				[c_1].[ParentID] = [p].[ParentID] AND ([c_1].[Value1] <> 1 OR [c_1].[Value1] IS NULL)
 		) [c_2]
+
+-- SqlServer.2016.MS SqlServer.2016
+SELECT
+	[t1].[ParentID],
+	[t1].[Value1]
+FROM
+	[Parent] [t1]
 
 -- SqlServer.2016.MS SqlServer.2016
 SELECT
@@ -26,4 +33,11 @@ FROM
 			WHERE
 				[c_1].[ParentID] = [p].[ParentID] AND NOT ([c_1].[Value1] = 1 AND [c_1].[Value1] IS NOT NULL OR [c_1].[ParentID] = 3)
 		) [c_2]
+
+-- SqlServer.2016.MS SqlServer.2016
+SELECT
+	[t1].[ParentID],
+	[t1].[Value1]
+FROM
+	[Parent] [t1]
 
