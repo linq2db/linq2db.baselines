@@ -48,6 +48,6 @@ SELECT
 FROM
 	Issue1303 t1
 WHERE
-	t1.`Binary` = $value
+	t1.`Binary` = $value OR t1.`Binary` IS NULL AND $value IS NULL
 LIMIT 2
 
