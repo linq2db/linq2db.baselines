@@ -1,5 +1,5 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
--- Batch 1
+-- Command 1
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -10,7 +10,7 @@ FROM
 		INNER JOIN [EntityMB] [d] ON [m_1].[Id] = [d].[FK]
 		LEFT JOIN [EntityMD] [a_ObjectD] ON [d].[FKD] = [a_ObjectD].[Id]
 
--- Batch 2
+-- Command 2
 SELECT
 	[e].[Id]
 FROM
