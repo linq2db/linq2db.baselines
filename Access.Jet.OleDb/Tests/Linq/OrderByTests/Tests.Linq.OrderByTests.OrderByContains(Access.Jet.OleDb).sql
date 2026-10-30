@@ -8,5 +8,5 @@ SELECT
 FROM
 	[Person] [t1]
 ORDER BY
-	[t1].[PersonID] IN (1, 3)
+	([t1].[PersonID] IN (1, 3)) DESC
 

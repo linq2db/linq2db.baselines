@@ -8,7 +8,7 @@ SELECT
 FROM
 	[Person] [t1]
 ORDER BY
-	Len([t1].[FirstName]) > 1
+	(Len([t1].[FirstName]) > 1) DESC
 
 -- Access.Jet.OleDb AccessOleDb
 SELECT
