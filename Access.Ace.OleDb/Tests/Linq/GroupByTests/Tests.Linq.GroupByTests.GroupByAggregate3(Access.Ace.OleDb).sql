@@ -16,5 +16,5 @@ FROM
 			[Parent] [g_1]
 	) [g_2]
 ORDER BY
-	[g_2].[Key_1]
+	([g_2].[Key_1]) DESC
 
