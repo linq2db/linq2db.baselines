@@ -9,7 +9,7 @@ FROM
 	[StringTypesTable] [a],
 	[StringTypesTable] [b]
 WHERE
-	[b].[VarCharColumn] = Replace([a].[CharColumn], '?', @dash) OR
+	[b].[VarCharColumn] = RTRIM(Replace([a].[CharColumn], '?', @dash)) OR
 	[b].[VarCharColumn] IS NULL AND [a].[CharColumn] IS NULL
 
 -- SqlServer.2025.MS SqlServer.2025
