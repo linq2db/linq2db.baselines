@@ -1,6 +1,8 @@
 ﻿-- SqlServer.2014.MS SqlServer.2014
--- Batch 1
--- take = 20
+-- Command 1
+DECLARE @take Int -- Int32
+SET     @take = 20
+
 SELECT
 	[m_2].[DetailId],
 	[d].[SubDetailId],
@@ -23,8 +25,10 @@ FROM
 	) [m_2]
 		INNER JOIN [SubDetailClass] [d] ON [m_2].[DetailId] = [d].[DetailId]
 
--- Batch 2
--- take = 20
+-- Command 2
+DECLARE @take Int -- Int32
+SET     @take = 20
+
 SELECT
 	[m_2].[DetailId],
 	[d_1].[SubDetailId],
@@ -58,8 +62,10 @@ FROM
 				[d].[SubDetailValue]
 		) [d_1]
 
--- Batch 3
--- take = 20
+-- Command 3
+DECLARE @take Int -- Int32
+SET     @take = 20
+
 SELECT
 	[m_2].[MasterId],
 	[d_1].[Id1],
@@ -95,8 +101,10 @@ FROM
 				[d].[Value]
 		) [d_1]
 
--- Batch 4
--- take = 20
+-- Command 4
+DECLARE @take Int -- Int32
+SET     @take = 20
+
 SELECT
 	[t1].[Id1],
 	[t1].[Id2],
