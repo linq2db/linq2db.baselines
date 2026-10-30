@@ -1,6 +1,8 @@
 ﻿-- SqlServer.Contained.MS SqlServer.2025
--- Batch 1
--- blogId = 1
+-- Command 1
+DECLARE @blogId Int -- Int32
+SET     @blogId = 1
+
 SELECT
 	[m_1].[Id],
 	[m_1].[Id_1],
@@ -30,8 +32,10 @@ ORDER BY
 	[d_1].[TagId],
 	[m_1].[Id]
 
--- Batch 2
--- blogId = 1
+-- Command 2
+DECLARE @blogId Int -- Int32
+SET     @blogId = 1
+
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -50,8 +54,10 @@ FROM
 ORDER BY
 	[d].[Id]
 
--- Batch 3
--- blogId = 1
+-- Command 3
+DECLARE @blogId Int -- Int32
+SET     @blogId = 1
+
 SELECT
 	[b].[Id],
 	[b].[Title]

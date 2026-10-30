@@ -37,8 +37,7 @@ FROM
 			[x].[ParentID] = 3
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
-
--- SqlServer.CS.MS SqlServer.2025
+;
 SELECT TOP (1)
 	[x].[ParentID],
 	[x].[Value1]
@@ -62,8 +61,7 @@ FROM
 			[x].[ParentID] = 3
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
-
--- SqlServer.CS.MS SqlServer.2025
+;
 SELECT TOP (1)
 	[x].[ParentID],
 	[x].[Value1]
