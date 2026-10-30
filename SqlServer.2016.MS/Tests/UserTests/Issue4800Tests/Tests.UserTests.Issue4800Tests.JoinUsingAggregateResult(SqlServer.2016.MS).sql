@@ -4,7 +4,7 @@ SELECT
 FROM
 	(
 		SELECT
-			MIN([q].[TesteeId]) as [TesteeId]
+			MIN([elements_1].[TesteeId]) as [TesteeId]
 		FROM
 			(
 				SELECT DISTINCT
@@ -23,8 +23,8 @@ FROM
 						LEFT JOIN [Outfit] [outfit_1] ON [testee_1].[WorkblankId] = [outfit_1].[WorkblankId]
 				WHERE
 					[elements].[Status] = 14650
-			) [q]
+			) [elements_1]
 		GROUP BY
-			[q].[Key_1]
+			[elements_1].[Key_1]
 	) [t1]
 
