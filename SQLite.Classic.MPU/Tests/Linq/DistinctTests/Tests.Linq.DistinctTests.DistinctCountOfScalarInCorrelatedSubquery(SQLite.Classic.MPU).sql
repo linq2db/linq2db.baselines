@@ -1,0 +1,31 @@
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
+SELECT
+	[p].[ParentID],
+	(
+		SELECT
+			COUNT(DISTINCT [g_1].[ChildID])
+		FROM
+			[GrandChild] [g_1]
+		WHERE
+			[g_1].[ParentID] = [p].[ParentID]
+	)
+FROM
+	[Parent] [p]
+ORDER BY
+	[p].[ParentID]
+
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+SELECT
+	[t1].[ParentID],
+	[t1].[Value1]
+FROM
+	[Parent] [t1]
+
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+SELECT
+	[t1].[ParentID],
+	[t1].[ChildID],
+	[t1].[GrandChildID]
+FROM
+	[GrandChild] [t1]
+
