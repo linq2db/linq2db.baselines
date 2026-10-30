@@ -1,0 +1,62 @@
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+SELECT
+	`m_1`.`Key_1`,
+	`d_1`.`ChildID`
+FROM
+	(
+		SELECT DISTINCT
+			`grp`.`ParentID` as `Key_1`
+		FROM
+			`GrandChild` `grp`
+	) `m_1`
+		INNER JOIN LATERAL (
+			SELECT DISTINCT
+				`d`.`ChildID`
+			FROM
+				`GrandChild` `d`
+			WHERE
+				(`m_1`.`Key_1` = `d`.`ParentID` OR `m_1`.`Key_1` IS NULL AND `d`.`ParentID` IS NULL) AND
+				`d`.`ChildID` > 20
+		) `d_1` ON 1=1
+ORDER BY
+	`m_1`.`Key_1`
+
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+SELECT
+	`m_1`.`Key_1`,
+	`d_1`.`ChildID`
+FROM
+	(
+		SELECT DISTINCT
+			`grp`.`ParentID` as `Key_1`
+		FROM
+			`GrandChild` `grp`
+	) `m_1`
+		INNER JOIN LATERAL (
+			SELECT DISTINCT
+				`d`.`ChildID`
+			FROM
+				`GrandChild` `d`
+			WHERE
+				(`m_1`.`Key_1` = `d`.`ParentID` OR `m_1`.`Key_1` IS NULL AND `d`.`ParentID` IS NULL) AND
+				`d`.`ChildID` > 20
+		) `d_1` ON 1=1
+ORDER BY
+	`m_1`.`Key_1`
+
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+SELECT DISTINCT
+	`grp`.`ParentID`
+FROM
+	`GrandChild` `grp`
+ORDER BY
+	`grp`.`ParentID`
+
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+SELECT
+	`t1`.`ParentID`,
+	`t1`.`ChildID`,
+	`t1`.`GrandChildID`
+FROM
+	`GrandChild` `t1`
+
