@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @nm NVarChar(4000) -- String
 SET     @nm = N'John'
 

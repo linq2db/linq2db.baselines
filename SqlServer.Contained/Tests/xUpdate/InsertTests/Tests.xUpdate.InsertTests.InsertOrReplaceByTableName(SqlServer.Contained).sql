@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DECLARE @PersonID Int -- Int32
 SET     @PersonID = 1
 DECLARE @Diagnosis NVarChar(4000) -- String
@@ -25,7 +25,7 @@ WHEN NOT MATCHED THEN
 		@Diagnosis
 	);
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @PersonID Int -- Int32
 SET     @PersonID = 2
 DECLARE @Diagnosis NVarChar(4000) -- String
@@ -52,13 +52,13 @@ WHEN NOT MATCHED THEN
 		@Diagnosis
 	);
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	COUNT(*)
 FROM
 	[xxPatient] [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @PersonID Int -- Int32
 SET     @PersonID = 1
 DECLARE @Diagnosis NVarChar(4000) -- String
@@ -85,7 +85,7 @@ WHEN NOT MATCHED THEN
 		@Diagnosis
 	);
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @PersonID Int -- Int32
 SET     @PersonID = 2
 DECLARE @Diagnosis NVarChar(4000) -- String
@@ -112,7 +112,7 @@ WHEN NOT MATCHED THEN
 		@Diagnosis
 	);
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	COUNT(*)
 FROM

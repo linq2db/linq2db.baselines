@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 /* My custom
 wonderful multiline
 query tag */

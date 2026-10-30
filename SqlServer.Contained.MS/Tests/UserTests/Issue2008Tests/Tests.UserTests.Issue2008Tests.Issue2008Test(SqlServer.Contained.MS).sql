@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[rTable1].[Id_1],
 	[rTable1].[Description],

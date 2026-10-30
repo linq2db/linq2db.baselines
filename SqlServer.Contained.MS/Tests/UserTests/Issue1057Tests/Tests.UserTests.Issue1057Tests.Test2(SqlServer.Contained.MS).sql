@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @TargetName NVarChar(4000) -- String
@@ -15,7 +15,7 @@ VALUES
 	@TargetName
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @TargetName NVarChar(4000) -- String
@@ -32,7 +32,7 @@ VALUES
 	@TargetName
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @TaskId Int -- Int32
@@ -53,7 +53,7 @@ VALUES
 	@Actual
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[p].[Id],
 	[p].[TargetName],
@@ -64,7 +64,7 @@ FROM
 WHERE
 	[p].[TargetName] = N'bda.Requests'
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[p].[TargetName],
 	[p].[Id],

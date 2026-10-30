@@ -8,7 +8,7 @@ FROM (
 WHERE @ef_filter__p1 = CAST(1 AS bit) OR [l].[IsDeleted] = CAST(0 AS bit) OR [l].[IsDeleted] = CAST(0 AS bit)
 
 
--- SqlServer.2019
+-- SqlServer.2025
 DECLARE @p Int -- Int32
 SET     @p = 1
 

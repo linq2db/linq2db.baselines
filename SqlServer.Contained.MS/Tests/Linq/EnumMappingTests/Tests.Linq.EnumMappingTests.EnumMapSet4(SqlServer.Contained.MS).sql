@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @p Int -- Int32
 SET     @p = 102
 
@@ -8,7 +8,7 @@ FROM
 WHERE
 	[r].[ID] >= 101 AND [r].[ID] < @p
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 INSERT INTO [LinqDataTypes]
 (
 	[ID],
@@ -20,7 +20,7 @@ VALUES
 	11
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @TestField BigInt -- Int64
 SET     @TestField = 12
 
@@ -31,7 +31,7 @@ SET
 WHERE
 	[LinqDataTypes].[ID] = 101 AND [LinqDataTypes].[BigIntValue] = 11
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT TOP (1)
 	[r].[BigIntValue]
 FROM
@@ -39,7 +39,7 @@ FROM
 WHERE
 	[r].[ID] = 101 AND [r].[BigIntValue] = 12
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @p Int -- Int32
 SET     @p = 102
 

@@ -1,9 +1,9 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DELETE [t1]
 FROM
 	[TestMerge1] [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Field1 Int -- Int32
@@ -28,7 +28,7 @@ VALUES
 	@Field4
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Field1 Int -- Int32
@@ -53,7 +53,7 @@ VALUES
 	@Field4
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 3
 DECLARE @Field1 Int -- Int32
@@ -78,7 +78,7 @@ VALUES
 	@Field4
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 4
 DECLARE @Field1 Int -- Int32
@@ -103,12 +103,12 @@ VALUES
 	@Field4
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DELETE [t1]
 FROM
 	[TestMerge2] [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 3
 DECLARE @Field1 Int -- Int32
@@ -133,7 +133,7 @@ VALUES
 	@Field4
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 4
 DECLARE @Field1 Int -- Int32
@@ -158,7 +158,7 @@ VALUES
 	@Field4
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 5
 DECLARE @Field1 Int -- Int32
@@ -183,7 +183,7 @@ VALUES
 	@Field4
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 6
 DECLARE @Field1 Int -- Int32
@@ -208,7 +208,7 @@ VALUES
 	@Field4
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 MERGE INTO [TestMerge1] [Target]
 USING (VALUES
 	(5,6,7,9), (6,7,8,10), (7,8,9,11), (8,9,10,12), (9,10,11,13),
@@ -1313,7 +1313,7 @@ VALUES
 )
 ;
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Field1],

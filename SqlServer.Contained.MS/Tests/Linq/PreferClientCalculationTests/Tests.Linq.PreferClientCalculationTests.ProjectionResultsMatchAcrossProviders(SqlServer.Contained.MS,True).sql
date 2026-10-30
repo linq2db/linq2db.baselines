@@ -1,11 +1,11 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[e].[Id],
 	[e].[Value1]
 FROM
 	[ClientCalcEntity] [e]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -14,7 +14,7 @@ SELECT
 FROM
 	[ClientCalcEntity] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[e].[Id],
 	[e].[Value1],
@@ -22,7 +22,7 @@ SELECT
 FROM
 	[ClientCalcEntity] [e]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -31,13 +31,13 @@ SELECT
 FROM
 	[ClientCalcEntity] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[e].[Value1]
 FROM
 	[ClientCalcEntity] [e]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -46,14 +46,14 @@ SELECT
 FROM
 	[ClientCalcEntity] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[e].[Value1],
 	ABS([e].[Value2])
 FROM
 	[ClientCalcEntity] [e]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -62,14 +62,14 @@ SELECT
 FROM
 	[ClientCalcEntity] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[e].[Id],
 	[e].[Name]
 FROM
 	[ClientCalcEntity] [e]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value1],

@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	[g_1].[GroupId],
 	MAX([g_1].[DataValue]),
@@ -13,7 +13,7 @@ FROM
 GROUP BY
 	[g_1].[GroupId]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[GroupId],

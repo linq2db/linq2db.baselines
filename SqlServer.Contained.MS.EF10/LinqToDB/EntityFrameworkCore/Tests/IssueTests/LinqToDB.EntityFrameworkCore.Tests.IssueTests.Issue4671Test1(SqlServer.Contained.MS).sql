@@ -1,4 +1,4 @@
-﻿-- SqlServer.2019
+﻿-- SqlServer.2025
 CREATE TABLE [tempdb]..[#Issue4671Entity1TMP]
 (
 	[Id]    int  NOT NULL IDENTITY,
@@ -9,7 +9,7 @@ CREATE TABLE [tempdb]..[#Issue4671Entity1TMP]
 
 
 
--- SqlServer.2019
+-- SqlServer.2025
 INSERT INTO [Issue4671Entity1]
 (
 	[Value]
@@ -21,7 +21,7 @@ VALUES
 
 
 
--- SqlServer.2019
+-- SqlServer.2025
 INSERT INTO [tempdb]..[#Issue4671Entity1TMP]
 (
 	[Value]
@@ -33,7 +33,7 @@ VALUES
 
 
 
--- SqlServer.2019
+-- SqlServer.2025
 SELECT TOP (2)
 	[t1].[Id],
 	[t1].[Value]
@@ -42,7 +42,7 @@ FROM
 
 
 
--- SqlServer.2019
+-- SqlServer.2025
 SELECT TOP (2)
 	[t1].[Id],
 	[t1].[Value]
@@ -51,7 +51,7 @@ FROM
 
 
 
--- SqlServer.2019
+-- SqlServer.2025
 DROP TABLE IF EXISTS [tempdb]..[#Issue4671Entity1TMP]
 
 

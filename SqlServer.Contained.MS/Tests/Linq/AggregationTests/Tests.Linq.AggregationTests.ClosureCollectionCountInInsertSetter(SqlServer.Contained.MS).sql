@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @EmptyCount Int -- Int32
 SET     @EmptyCount = 0
 DECLARE @ItemsCount Int -- Int32
@@ -17,7 +17,7 @@ VALUES
 	@ItemsCount
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT TOP (2)
 	[t1].[Id],
 	[t1].[EmptyCount],

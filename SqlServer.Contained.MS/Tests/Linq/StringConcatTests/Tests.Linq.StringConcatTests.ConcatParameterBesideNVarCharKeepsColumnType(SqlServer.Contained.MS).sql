@@ -1,14 +1,14 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @suffix NVarChar(40) -- String
 SET     @suffix = N'Жук'
 
 SELECT
 	[p].[Id],
-	[p].[Title] + Coalesce(@suffix, N'')
+	[p].[Title] || Coalesce(@suffix, N'')
 FROM
 	[ConcatProduct] [p]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Sku],

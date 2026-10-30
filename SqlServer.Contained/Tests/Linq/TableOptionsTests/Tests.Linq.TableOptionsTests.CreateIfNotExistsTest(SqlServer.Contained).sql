@@ -1,7 +1,7 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DROP TABLE IF EXISTS [CreateIfNotExistsTable]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 IF (OBJECT_ID(N'[CreateIfNotExistsTable]', N'U') IS NULL)
 	CREATE TABLE [CreateIfNotExistsTable]
 	(
@@ -9,7 +9,7 @@ IF (OBJECT_ID(N'[CreateIfNotExistsTable]', N'U') IS NULL)
 		[Value] Int NOT NULL
 	)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 INSERT INTO [CreateIfNotExistsTable]
 (
 	[Id],
@@ -21,14 +21,14 @@ VALUES
 	2
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value]
 FROM
 	[CreateIfNotExistsTable] [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 IF (OBJECT_ID(N'[CreateIfNotExistsTable]', N'U') IS NULL)
 	CREATE TABLE [CreateIfNotExistsTable]
 	(
@@ -36,9 +36,9 @@ IF (OBJECT_ID(N'[CreateIfNotExistsTable]', N'U') IS NULL)
 		[Value] Int NOT NULL
 	)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DROP TABLE IF EXISTS [CreateIfNotExistsTable]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DROP TABLE IF EXISTS [CreateIfNotExistsTable]
 

@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 INSERT INTO [Issue4132Table]
 (
 	[Id],
@@ -12,7 +12,7 @@ VALUES
 	N'before'
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 UPDATE
 	[Issue4132Table]
 SET
@@ -20,7 +20,7 @@ SET
 WHERE
 	[Issue4132Table].[Number] = 1
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT TOP (2)
 	[r].[Id],
 	[r].[Number],

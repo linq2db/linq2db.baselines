@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[ParentID],
 	[right_1].[ParentID]

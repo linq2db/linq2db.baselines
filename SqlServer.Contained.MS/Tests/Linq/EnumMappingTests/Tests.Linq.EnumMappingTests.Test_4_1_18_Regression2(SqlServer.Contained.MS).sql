@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @p Int -- Int32
 SET     @p = 102
 
@@ -8,7 +8,7 @@ FROM
 WHERE
 	[r].[ID] >= 101 AND [r].[ID] < @p
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 INSERT INTO [LinqDataTypes]
 (
 	[ID],
@@ -22,7 +22,7 @@ VALUES
 	10
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	IIF([t1].[BigIntValue] IS NOT NULL AND [t1].[IntValue] IS NOT NULL, 1, 0),
 	[t1].[BigIntValue],
@@ -32,7 +32,7 @@ FROM
 WHERE
 	[t1].[ID] = 101
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @p Int -- Int32
 SET     @p = 102
 

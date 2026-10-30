@@ -1,7 +1,7 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DROP TABLE IF EXISTS [FluentTemp_InsertOrUpdate]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 IF (OBJECT_ID(N'[FluentTemp_InsertOrUpdate]', N'U') IS NULL)
 	CREATE TABLE [FluentTemp_InsertOrUpdate]
 	(
@@ -11,7 +11,7 @@ IF (OBJECT_ID(N'[FluentTemp_InsertOrUpdate]', N'U') IS NULL)
 		CONSTRAINT [PK_FluentTemp_InsertOrUpdate] PRIMARY KEY CLUSTERED ([ID])
 	)
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @ID Int -- Int32
 SET     @ID = 1
 DECLARE @Name NVarChar(20) -- String
@@ -28,7 +28,7 @@ VALUES
 	@Name
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 MERGE INTO [FluentTemp_InsertOrUpdate] [t1]
 USING (SELECT 1 AS [ID]) [s] ON
 (
@@ -51,6 +51,6 @@ WHEN NOT MATCHED THEN
 		N'John II'
 	);
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DROP TABLE IF EXISTS [FluentTemp_InsertOrUpdate]
 

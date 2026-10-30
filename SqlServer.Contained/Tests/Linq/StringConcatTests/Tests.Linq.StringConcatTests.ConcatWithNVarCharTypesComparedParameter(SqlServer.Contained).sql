@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DECLARE @key NVarChar(40) -- String
 SET     @key = N'A-100A-100Жук'
 
@@ -7,9 +7,9 @@ SELECT
 FROM
 	[ConcatProduct] [p]
 WHERE
-	([p].[Sku] + [p].[Title]) = @key
+	([p].[Sku] || [p].[Title]) = @key
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Sku],

@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DECLARE @ids Int -- Int32
 SET     @ids = 2
 
@@ -9,7 +9,7 @@ FROM
 WHERE
 	[p].[PersonID] = @ids
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @ids Int -- Int32
 SET     @ids = 2
 

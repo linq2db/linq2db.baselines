@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DECLARE @flag Bit -- Boolean
 SET     @flag = 1
 

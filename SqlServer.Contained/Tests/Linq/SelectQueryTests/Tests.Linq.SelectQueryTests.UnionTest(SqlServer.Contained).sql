@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	DateAdd(day, [t].[Value], CURRENT_TIMESTAMP),
 	DateAdd(day, 2, CURRENT_TIMESTAMP)
@@ -11,7 +11,7 @@ SELECT
 	DateAdd(day, 3, CURRENT_TIMESTAMP),
 	DateAdd(day, 4, CURRENT_TIMESTAMP)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[v_1].[Value2]
 FROM

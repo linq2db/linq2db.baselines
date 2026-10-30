@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DECLARE @keySuffix VarChar(20) -- AnsiString
 SET     @keySuffix = N'-X'
 
@@ -9,9 +9,9 @@ FROM
 	[ConcatProduct] [a],
 	[ConcatProduct] [b]
 WHERE
-	[b].[Sku] = ([a].[Sku] + Coalesce(@keySuffix, ''))
+	[b].[Sku] = ([a].[Sku] || Coalesce(@keySuffix, ''))
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Sku],

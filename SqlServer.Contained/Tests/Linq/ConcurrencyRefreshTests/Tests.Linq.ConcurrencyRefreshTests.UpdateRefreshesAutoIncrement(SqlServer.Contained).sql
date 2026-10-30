@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Stamp Int -- Int32
@@ -19,7 +19,7 @@ VALUES
 	@Value
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @Value NVarChar(4000) -- String
 SET     @Value = N'updated'
 DECLARE @Id Int -- Int32
@@ -37,7 +37,7 @@ OUTPUT
 WHERE
 	[ConcurrencyRefreshAutoInc].[Id] = @Id AND [ConcurrencyRefreshAutoInc].[Stamp] = @Stamp
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT TOP (2)
 	[t1].[Id],
 	[t1].[Stamp],

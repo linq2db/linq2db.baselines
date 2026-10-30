@@ -13,7 +13,7 @@ LEFT JOIN (
 WHERE @ef_filter__p1 = CAST(1 AS bit) OR [e].[IsDeleted] = CAST(0 AS bit) OR [e].[IsDeleted] = CAST(0 AS bit)
 
 
--- SqlServer.2019
+-- SqlServer.2025
 /* Tagged query */
 SELECT
 	[e].[IsDeleted],

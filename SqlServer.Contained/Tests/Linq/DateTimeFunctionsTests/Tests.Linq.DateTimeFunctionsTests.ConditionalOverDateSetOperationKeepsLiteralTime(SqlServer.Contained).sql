@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	IIF([r].[Id] > 0, [r].[OpenedOn], [r].[ClosedOn])
 FROM

@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @InitOnlyId Int -- Int32
@@ -14,7 +14,7 @@ FROM
 WHERE
 	[e].[Id] = @Id AND [e].[Id] = @InitOnlyId
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[GuidValue],
@@ -23,7 +23,7 @@ SELECT
 FROM
 	[TestConstantsData] [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @InitOnlyId Int -- Int32
@@ -39,7 +39,7 @@ FROM
 WHERE
 	[e].[Id] = @Id AND [e].[Id] = @InitOnlyId
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[GuidValue],

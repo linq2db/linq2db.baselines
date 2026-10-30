@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DECLARE @suffix NVarChar(4000) -- String
 SET     @suffix = N'Жук'
 
@@ -7,9 +7,9 @@ SELECT
 FROM
 	[ConcatProduct] [p]
 WHERE
-	([p].[Sku] + Coalesce(@suffix, N'')) IN (N'A-100Щит', N'B-200Жук')
+	([p].[Sku] || Coalesce(@suffix, N'')) IN (N'A-100Щит', N'B-200Жук')
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Sku],

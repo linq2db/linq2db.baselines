@@ -1,14 +1,14 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DECLARE @p VarChar(8000) -- AnsiString
 SET     @p = N'abc'
 
 SELECT
-	[t].[DecimalDataType],
-	[t].[BinaryDataType],
-	[t].[VarBinaryDataType],
-	[t].[VarcharDataType]
+	[t].[decimalDataType],
+	[t].[binaryDataType],
+	[t].[varbinaryDataType],
+	[t].[varcharDataType]
 FROM
 	[AllTypes] [t]
 WHERE
-	[t].[VarcharDataType] = @p
+	[t].[varcharDataType] = @p
 
