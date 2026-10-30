@@ -15,7 +15,7 @@ VALUES (i.[Value])
 OUTPUT INSERTED.[Id], i._Position;
 
 
--- SqlServer.2019
+-- SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value]

@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[p].[PersonID]
 FROM
@@ -15,7 +15,7 @@ WHERE
 			[p].[MiddleName] = [t1].[value] OR [p].[MiddleName] IS NULL AND [t1].[value] IS NULL
 	)
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[p].[PersonID]
 FROM
@@ -32,7 +32,7 @@ WHERE
 			[p].[MiddleName] = [t1].[value] OR [p].[MiddleName] IS NULL AND [t1].[value] IS NULL
 	)
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[p].[PersonID]
 FROM

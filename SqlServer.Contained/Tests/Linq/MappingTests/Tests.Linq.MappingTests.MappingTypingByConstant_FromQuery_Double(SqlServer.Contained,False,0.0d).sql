@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DECLARE @value Float -- Double
 SET     @value = 0
 
@@ -14,7 +14,7 @@ FROM
 			[Person] [r]
 	) [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @value Float -- Double
 SET     @value = 3147483648
 

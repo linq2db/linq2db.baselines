@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DECLARE @yes NVarChar(4000) -- String
 SET     @yes = N'X'
 DECLARE @no NVarChar(4000) -- String
@@ -11,7 +11,7 @@ SET
 WHERE
 	[TableWithConverterValue].[Id] = 1
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT TOP (2)
 	[x].[Id],
 	[x].[NoConversion],

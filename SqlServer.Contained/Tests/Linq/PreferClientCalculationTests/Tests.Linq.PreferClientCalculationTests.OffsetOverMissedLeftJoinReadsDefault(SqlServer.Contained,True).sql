@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	[e].[Id],
 	[j].[Moment],
@@ -7,14 +7,14 @@ FROM
 	[MissedMomentEntity] [e]
 		LEFT JOIN [MissedMomentEntity] [j] ON [j].[Id] = [e].[Id] + 1000
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Moment]
 FROM
 	[MissedMomentEntity] [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	DatePart(year, Coalesce([j].[Moment], DATETIMEOFFSETFROMPARTS(1, 1, 1, 0, 0, 0, 0, 0, 0, 7)))
 FROM

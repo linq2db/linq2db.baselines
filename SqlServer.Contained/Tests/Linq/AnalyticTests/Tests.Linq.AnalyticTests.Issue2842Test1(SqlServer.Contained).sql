@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	[x].[FirstName],
 	RANK() OVER (ORDER BY IIF([x].[PersonID] = 2, 1, 0))

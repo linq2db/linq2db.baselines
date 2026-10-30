@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	[m_1].[Key_1],
 	[d_1].[ChildID]
@@ -21,7 +21,7 @@ FROM
 ORDER BY
 	[m_1].[Key_1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[m_1].[Key_1],
 	[d_1].[ChildID]
@@ -44,7 +44,7 @@ FROM
 ORDER BY
 	[m_1].[Key_1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT DISTINCT
 	[grp].[ParentID]
 FROM
@@ -52,7 +52,7 @@ FROM
 ORDER BY
 	[grp].[ParentID]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID],

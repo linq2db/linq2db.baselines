@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @GrandChildID Int -- Int32
 SET     @GrandChildID = 1000
 DECLARE @ParentID Int -- Int32
@@ -11,7 +11,7 @@ SET
 WHERE
 	[GrandChild].[ParentID] = @ParentID AND [GrandChild].[ChildID] IS NULL
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @GrandChildID Int -- Int32
 SET     @GrandChildID = 1000
 DECLARE @ParentID Int -- Int32

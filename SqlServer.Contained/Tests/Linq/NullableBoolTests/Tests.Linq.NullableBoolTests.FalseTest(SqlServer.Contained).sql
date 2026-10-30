@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t].[Id],
 	[t].[Value]
@@ -7,7 +7,7 @@ FROM
 WHERE
 	[t].[Value] = 0
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t].[Id],
 	[t].[Value]
@@ -16,7 +16,7 @@ FROM
 WHERE
 	[t].[Value] = 0
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t].[Id],
 	[t].[Value]
@@ -25,7 +25,7 @@ FROM
 WHERE
 	[t].[Value] = 1 OR [t].[Value] IS NULL
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t].[Id],
 	[t].[Value]

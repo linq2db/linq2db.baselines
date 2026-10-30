@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DECLARE @TypedProperty NVarChar(4000) -- String
 SET     @TypedProperty = N'%de%'
 
@@ -22,7 +22,7 @@ WHERE
 			[m_1].[ValS] IS NOT NULL
 	)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @TypedProperty NVarChar(4000) -- String
 SET     @TypedProperty = N'%de%'
 

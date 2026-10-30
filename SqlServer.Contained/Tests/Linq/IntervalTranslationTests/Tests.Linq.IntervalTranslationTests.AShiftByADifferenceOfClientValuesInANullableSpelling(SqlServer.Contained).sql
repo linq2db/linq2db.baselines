@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @DueOn DateTime2
@@ -19,7 +19,7 @@ VALUES
 	@StartedOn
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @DueOn DateTime2
@@ -40,7 +40,7 @@ VALUES
 	@StartedOn
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 3
 DECLARE @DueOn DateTime2
@@ -61,7 +61,7 @@ VALUES
 	@StartedOn
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @Ticks BigInt -- Int64
 SET     @Ticks = 36002500000
 
@@ -72,7 +72,7 @@ FROM
 WHERE
 	[r].[Id] = 1
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @Ticks BigInt -- Int64
 SET     @Ticks = 36002500000
 
@@ -83,7 +83,7 @@ FROM
 WHERE
 	[r].[Id] = 1
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @Ticks BigInt -- Int64
 SET     @Ticks = 36002500000
 
@@ -94,7 +94,7 @@ FROM
 WHERE
 	[r].[Id] = 1
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT TOP (2)
 	DateAdd(nanosecond, CAST((CAST(NULL AS BigInt) % 10000000) * 100 AS Int), DateAdd(second, CAST((CAST(NULL AS BigInt) % 864000000000) / 10000000 AS Int), DateAdd(day, CAST(CAST(NULL AS BigInt) / 864000000000 AS Int), CAST([r].[StartedOn] AS DateTime2))))
 FROM
@@ -102,7 +102,7 @@ FROM
 WHERE
 	[r].[Id] = 1
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @Ticks BigInt -- Int64
 SET     @Ticks = 36002500000
 
@@ -113,7 +113,7 @@ FROM
 ORDER BY
 	[r].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @Ticks BigInt -- Int64
 SET     @Ticks = 36002500000
 
@@ -126,7 +126,7 @@ WHERE
 ORDER BY
 	[r].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @Ticks BigInt -- Int64
 SET     @Ticks = 36002500000
 
@@ -137,7 +137,7 @@ FROM
 WHERE
 	[r].[Id] = 1 AND DateAdd(nanosecond, CAST((CAST(@Ticks AS BigInt) % 10000000) * 100 AS Int), DateAdd(second, CAST((CAST(@Ticks AS BigInt) % 864000000000) / 10000000 AS Int), DateAdd(day, CAST(CAST(@Ticks AS BigInt) / 864000000000 AS Int), CAST([r].[StartedOn] AS DateTime2)))) < DateAdd(hour, 1, [r].[StartedOn])
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @Ticks BigInt -- Int64
 SET     @Ticks = 36002500000
 
@@ -148,7 +148,7 @@ FROM
 WHERE
 	[r].[Id] = 1
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT TOP (2)
 	DateAdd(nanosecond, CAST((CAST(NULL AS BigInt) % 10000000) * 100 AS Int), DateAdd(second, CAST((CAST(NULL AS BigInt) % 864000000000) / 10000000 AS Int), DateAdd(day, CAST(CAST(NULL AS BigInt) / 864000000000 AS Int), CAST([r].[StartedOn] AS DateTime2))))
 FROM
@@ -156,7 +156,7 @@ FROM
 WHERE
 	[r].[Id] = 1
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @Ticks BigInt -- Int64
 SET     @Ticks = 72002500000
 
@@ -167,7 +167,7 @@ FROM
 WHERE
 	[r].[Id] = 1
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	DateAdd(nanosecond, CAST((((DateDiff_Big(day, [r].[StartedOn], [r].[DueOn]) * 86400) * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r].[StartedOn], [r].[DueOn]) AS Int), [r].[StartedOn]), [r].[DueOn]) / 100) % 10000000) * 100 AS Int), DateAdd(second, CAST((((DateDiff_Big(day, [r].[StartedOn], [r].[DueOn]) * 86400) * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r].[StartedOn], [r].[DueOn]) AS Int), [r].[StartedOn]), [r].[DueOn]) / 100) % 864000000000) / 10000000 AS Int), DateAdd(day, CAST(((DateDiff_Big(day, [r].[StartedOn], [r].[DueOn]) * 86400) * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r].[StartedOn], [r].[DueOn]) AS Int), [r].[StartedOn]), [r].[DueOn]) / 100) / 864000000000 AS Int), CAST([r].[DueOn] AS DateTime2))))
 FROM

@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[ID],
 	[t1].[TestField],
@@ -8,7 +8,7 @@ FROM
 WHERE
 	[t1].[TestField] = 0
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[ID],
 	[t1].[TestField],

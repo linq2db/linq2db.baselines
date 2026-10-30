@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @filter NVarChar(4000) -- String
 SET     @filter = N'%test%'
 DECLARE @filter_1 NVarChar(4000) -- String
