@@ -8,8 +8,10 @@ FROM
 			[g_1].[MasterId]
 		FROM
 			[DetailClass] [g_1]
-	) [m_1]
-		INNER JOIN [DetailClass] [d] ON ([d].[MasterId] = [m_1].[MasterId] OR [d].[MasterId] IS NULL AND [m_1].[MasterId] IS NULL)
+	) [m_1],
+	[DetailClass] [d]
+WHERE
+	[d].[MasterId] = [m_1].[MasterId] OR [d].[MasterId] IS NULL AND [m_1].[MasterId] IS NULL
 ORDER BY
 	[d].[DetailId]
 

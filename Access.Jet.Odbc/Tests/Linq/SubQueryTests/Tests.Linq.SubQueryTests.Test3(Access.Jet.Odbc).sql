@@ -1,9 +1,17 @@
 ﻿-- Access.Jet.Odbc AccessODBC
 SELECT
-	[ch].[ChildID]
+	[t1].[ChildID]
 FROM
 	[Parent] [p]
-		LEFT JOIN [Child] [ch] ON ([ch].[ParentID] = [p].[ParentID] AND [ch].[ChildID] = [ch].[ParentID] * 10 + 1)
+		LEFT JOIN (
+			SELECT
+				[ch].[ParentID],
+				[ch].[ChildID]
+			FROM
+				[Child] [ch]
+			WHERE
+				[ch].[ChildID] = [ch].[ParentID] * 10 + 1
+		) [t1] ON ([t1].[ParentID] = [p].[ParentID])
 WHERE
 	[p].[ParentID] <> 5
 

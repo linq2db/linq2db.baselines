@@ -60,7 +60,15 @@ SELECT
 	[arg2].[Text]
 FROM
 	[Names] [after_1]
-		LEFT JOIN [Addresses] [arg2] ON ([after_1].[Id] = [arg2].[Id] AND [arg2].[Id] = ?)
+		LEFT JOIN (
+			SELECT
+				[a1].[Id],
+				[a1].[Text]
+			FROM
+				[Addresses] [a1]
+			WHERE
+				[a1].[Id] = ?
+		) [arg2] ON ([after_1].[Id] = [arg2].[Id])
 ORDER BY
 	[after_1].[Id]
 

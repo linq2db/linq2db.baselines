@@ -11,6 +11,8 @@ SELECT
 	[p2].[MiddleName] as [MiddleName_1],
 	[p2].[Gender] as [Gender_1]
 FROM
-	[Person] [p1]
-		INNER JOIN [Person] [p2] ON ([p1].[MiddleName] = [p2].[MiddleName] OR [p1].[MiddleName] IS NULL AND [p2].[MiddleName] IS NULL)
+	[Person] [p1],
+	[Person] [p2]
+WHERE
+	[p1].[MiddleName] = [p2].[MiddleName] OR [p1].[MiddleName] IS NULL AND [p2].[MiddleName] IS NULL
 
