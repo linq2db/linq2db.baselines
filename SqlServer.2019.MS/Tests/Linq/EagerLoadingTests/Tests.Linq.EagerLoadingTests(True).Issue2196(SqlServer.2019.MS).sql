@@ -1,6 +1,8 @@
 ﻿-- SqlServer.2019.MS SqlServer.2019
--- Batch 1
--- eventId = 1
+-- Command 1
+DECLARE @eventId Int -- Int32
+SET     @eventId = 1
+
 SELECT
 	[m_1].[Id],
 	[d].[EventSchedulePersonId],
@@ -13,8 +15,10 @@ FROM
 WHERE
 	[m_1].[EventId] = @eventId AND [m_1].[IsActive] = 1
 
--- Batch 2
--- eventId = 1
+-- Command 2
+DECLARE @eventId Int -- Int32
+SET     @eventId = 1
+
 SELECT
 	[p].[Id]
 FROM

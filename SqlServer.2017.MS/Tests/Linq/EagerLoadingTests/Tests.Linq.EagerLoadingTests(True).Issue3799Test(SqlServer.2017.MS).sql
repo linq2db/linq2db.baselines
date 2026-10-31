@@ -1,5 +1,5 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
--- Batch 1
+-- Command 1
 SELECT
 	[m_1].[Id],
 	[d].[Name]
@@ -19,7 +19,7 @@ FROM
 	) [m_1]
 		INNER JOIN [Test3799Item] [d] ON [m_1].[Id] = [d].[ParentId]
 
--- Batch 2
+-- Command 2
 SELECT
 	[item_1].[Name],
 	[t1].[Name],
