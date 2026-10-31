@@ -1,0 +1,1 @@
+scratch commit for linq2db#6222 rebase-path check; delete with the branch
