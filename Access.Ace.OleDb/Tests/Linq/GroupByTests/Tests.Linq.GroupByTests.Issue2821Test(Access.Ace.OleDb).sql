@@ -32,10 +32,11 @@ FROM
 				([t].[DateTimeValue2] IS NULL OR [t].[DateTimeValue2] >= @currentDate_1)
 			GROUP BY
 				[t].[ID]
-		) [t1] ON ([o].[ID] = [t1].[ID] AND ([o].[DateTimeValue2] = [t1].[c1] OR [o].[DateTimeValue2] IS NULL AND [t1].[c1] IS NULL))
+		) [t1] ON ([o].[ID] = [t1].[ID])
 WHERE
 	IIF([o].[DateTimeValue] IS NULL, [o].[DateTimeValue2], [o].[DateTimeValue]) <= @currentDate_2 AND
-	([o].[DateTimeValue2] IS NULL OR [o].[DateTimeValue2] >= @currentDate_3)
+	([o].[DateTimeValue2] IS NULL OR [o].[DateTimeValue2] >= @currentDate_3) AND
+	([o].[DateTimeValue2] = [t1].[c1] OR [o].[DateTimeValue2] IS NULL AND [t1].[c1] IS NULL)
 ORDER BY
 	[o].[DateTimeValue2]
 
