@@ -4,9 +4,7 @@ FROM
 	DctSetpointtype spt
 		LEFT JOIN (
 			SELECT
-				d.SetpointtypeId as SetpointtypeId,
-				cudg_1.Permission as Permission,
-				oudg_1.Inheritablepermission as Inheritablepermission
+				d.SetpointtypeId as SetpointtypeId
 			FROM
 				VWellTree t2
 					INNER JOIN DctOu tp2 ON t2.ShopId = tp2.Id
@@ -29,5 +27,7 @@ FROM
 							oudg.UserId = 150 AND oudg.Inheritablepermission > 0
 					) oudg_1 ON tp2.ParentId = oudg_1.DatagroupId
 					INNER JOIN Deviation d ON t2.WellId = d.WellId
-		) t1 ON t1.SetpointtypeId = spt.Id AND UTILS.GREATESTNOTNULL3(CAST(t1.Permission AS Decimal(22,9)), CAST(t1.Inheritablepermission AS Decimal(22,9)), NULL) IS NOT NULL
+			WHERE
+				UTILS.GREATESTNOTNULL3(CAST(cudg_1.Permission AS Decimal(22,9)), CAST(oudg_1.Inheritablepermission AS Decimal(22,9)), NULL) IS NOT NULL
+		) t2_1 ON t2_1.SetpointtypeId = spt.Id
 
