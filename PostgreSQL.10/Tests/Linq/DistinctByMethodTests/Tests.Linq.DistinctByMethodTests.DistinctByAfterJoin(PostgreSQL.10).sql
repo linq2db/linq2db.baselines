@@ -1,16 +1,28 @@
 ﻿-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
-SELECT DISTINCT ON (c_1."Country")
-	c_1."Id",
-	c_1."Country",
-	r."Tag"
+SELECT
+	t1."Id",
+	t1."Country",
+	t1."Tag"
 FROM
-	"NullableKeyData" c_1
-		INNER JOIN "RelatedData" r ON c_1."Id" = r."OwnerId"
-WHERE
-	c_1."CustomerId" LIKE 'DST%' ESCAPE '~'
+	(
+		SELECT DISTINCT ON (c_1."Country")
+			c_1."Id",
+			r."Id" as "Id_1",
+			c_1."Country",
+			r."Tag"
+		FROM
+			"NullableKeyData" c_1
+				INNER JOIN "RelatedData" r ON c_1."Id" = r."OwnerId"
+		WHERE
+			c_1."CustomerId" LIKE 'DST%' ESCAPE '~'
+		ORDER BY
+			c_1."Country",
+			c_1."Id",
+			r."Id"
+	) t1
 ORDER BY
-	c_1."Country",
-	c_1."Id"
+	t1."Id",
+	t1."Id_1"
 
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 SELECT

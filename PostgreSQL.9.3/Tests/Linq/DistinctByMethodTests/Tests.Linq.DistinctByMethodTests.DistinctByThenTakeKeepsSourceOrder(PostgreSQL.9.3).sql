@@ -1,0 +1,29 @@
+﻿-- PostgreSQL.9.3 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 2
+
+SELECT
+	t2."ParentID",
+	t2."Value1"
+FROM
+	(
+		SELECT DISTINCT ON (t1."Value1")
+			t1."ParentID",
+			t1."Value1"
+		FROM
+			"Parent" t1
+		ORDER BY
+			t1."Value1",
+			t1."ParentID" DESC
+	) t2
+ORDER BY
+	t2."ParentID" DESC
+LIMIT :take
+
+-- PostgreSQL.9.3 PostgreSQL
+SELECT
+	t1."ParentID",
+	t1."Value1"
+FROM
+	"Parent" t1
+

@@ -21,6 +21,8 @@ FROM
 	) c_2
 WHERE
 	c_2."Id" > 1
+ORDER BY
+	c_2."Id"
 
 -- PostgreSQL.9.3 PostgreSQL
 SELECT
