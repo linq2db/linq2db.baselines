@@ -5,7 +5,14 @@ SET     @is_deleted = True
 UPDATE
 	([component_categories] [ct]
 		INNER JOIN [element_services] [sr] ON ([sr].[id] = [ct].[service_id]))
-		LEFT JOIN [Components] [cm] ON ([ct].[id] = [cm].[category_id] AND NOT [cm].[is_deleted])
+		LEFT JOIN (
+			SELECT
+				[t1].[category_id]
+			FROM
+				[Components] [t1]
+			WHERE
+				NOT [t1].[is_deleted]
+		) [cm] ON ([ct].[id] = [cm].[category_id])
 SET
 	[ct].[is_deleted] = ?
 WHERE
