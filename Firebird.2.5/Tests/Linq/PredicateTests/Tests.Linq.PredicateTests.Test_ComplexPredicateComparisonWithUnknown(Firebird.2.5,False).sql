@@ -267,7 +267,7 @@ WHERE
 		WHEN (1=1) THEN '1'
 		ELSE '0'
 	END = CASE
-		WHEN (CASE
+		WHEN CASE
 			WHEN ("r"."Value1" = "r"."Value4") THEN '1'
 			WHEN NOT ("r"."Value1" = "r"."Value4") THEN '0'
 			ELSE NULL
@@ -315,55 +315,7 @@ WHERE
 			) = ("r"."Value5" + @cnt))
 				THEN '0'
 			ELSE NULL
-		END IS NULL) AND NOT (CASE
-			WHEN ("r"."Value1" = "r"."Value4") THEN '1'
-			WHEN NOT ("r"."Value1" = "r"."Value4") THEN '0'
-			ELSE NULL
-		END IS NULL AND CASE
-			WHEN ((
-				SELECT
-					COUNT(*)
-				FROM
-					"BooleanTable" "r_1"
-				WHERE
-					"r_1"."Value1" = 1
-			) = ("r"."Value5" + @cnt))
-				THEN '1'
-			WHEN NOT ((
-				SELECT
-					COUNT(*)
-				FROM
-					"BooleanTable" "r_1"
-				WHERE
-					"r_1"."Value1" = 1
-			) = ("r"."Value5" + @cnt))
-				THEN '0'
-			ELSE NULL
-		END IS NOT NULL) AND NOT (CASE
-			WHEN ("r"."Value1" = "r"."Value4") THEN '1'
-			WHEN NOT ("r"."Value1" = "r"."Value4") THEN '0'
-			ELSE NULL
-		END IS NOT NULL AND CASE
-			WHEN ((
-				SELECT
-					COUNT(*)
-				FROM
-					"BooleanTable" "r_1"
-				WHERE
-					"r_1"."Value1" = 1
-			) = ("r"."Value5" + @cnt))
-				THEN '1'
-			WHEN NOT ((
-				SELECT
-					COUNT(*)
-				FROM
-					"BooleanTable" "r_1"
-				WHERE
-					"r_1"."Value1" = 1
-			) = ("r"."Value5" + @cnt))
-				THEN '0'
-			ELSE NULL
-		END IS NULL)
+		END IS NULL
 			THEN '1'
 		ELSE '0'
 	END
@@ -395,7 +347,7 @@ WHERE
 		WHEN (1=1) THEN '1'
 		ELSE '0'
 	END = CASE
-		WHEN (CASE
+		WHEN CASE
 			WHEN ("r"."Value1" <> "r"."Value4") THEN '1'
 			WHEN NOT ("r"."Value1" <> "r"."Value4") THEN '0'
 			ELSE NULL
@@ -443,55 +395,7 @@ WHERE
 			) = ("r"."Value5" + @cnt))
 				THEN '0'
 			ELSE NULL
-		END IS NULL) AND NOT (CASE
-			WHEN ("r"."Value1" <> "r"."Value4") THEN '1'
-			WHEN NOT ("r"."Value1" <> "r"."Value4") THEN '0'
-			ELSE NULL
-		END IS NULL AND CASE
-			WHEN ((
-				SELECT
-					COUNT(*)
-				FROM
-					"BooleanTable" "r_1"
-				WHERE
-					"r_1"."Value1" = 1
-			) = ("r"."Value5" + @cnt))
-				THEN '1'
-			WHEN NOT ((
-				SELECT
-					COUNT(*)
-				FROM
-					"BooleanTable" "r_1"
-				WHERE
-					"r_1"."Value1" = 1
-			) = ("r"."Value5" + @cnt))
-				THEN '0'
-			ELSE NULL
-		END IS NOT NULL) AND NOT (CASE
-			WHEN ("r"."Value1" <> "r"."Value4") THEN '1'
-			WHEN NOT ("r"."Value1" <> "r"."Value4") THEN '0'
-			ELSE NULL
-		END IS NOT NULL AND CASE
-			WHEN ((
-				SELECT
-					COUNT(*)
-				FROM
-					"BooleanTable" "r_1"
-				WHERE
-					"r_1"."Value1" = 1
-			) = ("r"."Value5" + @cnt))
-				THEN '1'
-			WHEN NOT ((
-				SELECT
-					COUNT(*)
-				FROM
-					"BooleanTable" "r_1"
-				WHERE
-					"r_1"."Value1" = 1
-			) = ("r"."Value5" + @cnt))
-				THEN '0'
-			ELSE NULL
-		END IS NULL)
+		END IS NULL
 			THEN '1'
 		ELSE '0'
 	END
@@ -935,7 +839,7 @@ WHERE
 		WHEN (1=1) THEN '1'
 		ELSE '0'
 	END = CASE
-		WHEN (CASE
+		WHEN CASE
 			WHEN ("r"."Value1" = "r"."Value4") THEN '1'
 			WHEN NOT ("r"."Value1" = "r"."Value4") THEN '0'
 			ELSE NULL
@@ -1007,31 +911,7 @@ WHERE
 			) = ("r"."Value5" + @cnt))
 				THEN '0'
 			ELSE NULL
-		END IS NULL) AND NOT (CASE
-			WHEN ("r"."Value1" = "r"."Value4") THEN '1'
-			WHEN NOT ("r"."Value1" = "r"."Value4") THEN '0'
-			ELSE NULL
-		END IS NULL AND CASE
-			WHEN ((
-				SELECT
-					COUNT(*)
-				FROM
-					"BooleanTable" "r_1"
-				WHERE
-					"r_1"."Value1" = 1
-			) = ("r"."Value5" + @cnt))
-				THEN '1'
-			WHEN NOT ((
-				SELECT
-					COUNT(*)
-				FROM
-					"BooleanTable" "r_1"
-				WHERE
-					"r_1"."Value1" = 1
-			) = ("r"."Value5" + @cnt))
-				THEN '0'
-			ELSE NULL
-		END IS NULL)
+		END IS NULL
 			THEN '1'
 		ELSE '0'
 	END
@@ -1063,7 +943,7 @@ WHERE
 		WHEN (1=1) THEN '1'
 		ELSE '0'
 	END = CASE
-		WHEN (CASE
+		WHEN CASE
 			WHEN ("r"."Value1" <> "r"."Value4") THEN '1'
 			WHEN NOT ("r"."Value1" <> "r"."Value4") THEN '0'
 			ELSE NULL
@@ -1135,31 +1015,7 @@ WHERE
 			) = ("r"."Value5" + @cnt))
 				THEN '0'
 			ELSE NULL
-		END IS NULL) AND NOT (CASE
-			WHEN ("r"."Value1" <> "r"."Value4") THEN '1'
-			WHEN NOT ("r"."Value1" <> "r"."Value4") THEN '0'
-			ELSE NULL
-		END IS NULL AND CASE
-			WHEN ((
-				SELECT
-					COUNT(*)
-				FROM
-					"BooleanTable" "r_1"
-				WHERE
-					"r_1"."Value1" = 1
-			) = ("r"."Value5" + @cnt))
-				THEN '1'
-			WHEN NOT ((
-				SELECT
-					COUNT(*)
-				FROM
-					"BooleanTable" "r_1"
-				WHERE
-					"r_1"."Value1" = 1
-			) = ("r"."Value5" + @cnt))
-				THEN '0'
-			ELSE NULL
-		END IS NULL)
+		END IS NULL
 			THEN '1'
 		ELSE '0'
 	END
