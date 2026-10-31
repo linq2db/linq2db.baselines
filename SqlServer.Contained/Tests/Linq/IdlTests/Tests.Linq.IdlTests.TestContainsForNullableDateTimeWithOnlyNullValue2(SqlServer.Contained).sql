@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[ID],
 	[t1].[MoneyValue],
@@ -13,7 +13,7 @@ SELECT
 FROM
 	[LinqDataTypes] [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	COUNT(*)
 FROM

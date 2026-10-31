@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @value BigInt -- Int64
 SET     @value = 4567
 DECLARE @value_1 BigInt -- Int64
@@ -36,7 +36,7 @@ WHEN NOT MATCHED THEN
 		@value_3
 	);
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT TOP (2)
 	[t1].[Id],
 	[t1].[InSeconds],
@@ -46,7 +46,7 @@ SELECT TOP (2)
 FROM
 	[DurationRow] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @value BigInt -- Int64
 SET     @value = 19260
 DECLARE @value_1 BigInt -- Int64
@@ -84,7 +84,7 @@ WHEN NOT MATCHED THEN
 		@value_3
 	);
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT TOP (2)
 	[t1].[Id],
 	[t1].[InSeconds],

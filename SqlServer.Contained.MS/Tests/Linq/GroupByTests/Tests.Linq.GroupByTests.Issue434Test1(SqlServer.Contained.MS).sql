@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @input NVarChar(4000) -- String
 SET     @input = N'%test%'
 
@@ -12,7 +12,7 @@ FROM
 WHERE
 	Lower([m_1].[FirstName]) LIKE @input ESCAPE N'~'
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @input NVarChar(4000) -- String
 SET     @input = N'%test%'
 

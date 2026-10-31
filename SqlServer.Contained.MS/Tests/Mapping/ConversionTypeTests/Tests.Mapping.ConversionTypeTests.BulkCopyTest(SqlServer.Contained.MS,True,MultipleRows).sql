@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 INSERT INTO [TrimTestTable]
 (
 	[ID],
@@ -7,7 +7,7 @@ INSERT INTO [TrimTestTable]
 VALUES
 (1,N'***OOO***')
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[r].[ID],
 	[r].[Data]
@@ -16,7 +16,7 @@ FROM
 ORDER BY
 	[r].[ID]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[r].[ID],
 	[r].[Data]

@@ -10,7 +10,7 @@ ORDER BY [r].[Id], [s].[AccountsAccountId], [s].[RolesId]
 
 
 
--- SqlServer.2019
+-- SqlServer.2025
 SELECT
 	[m_1].[Id],
 	[o].[Name]
@@ -23,7 +23,7 @@ ORDER BY
 
 
 
--- SqlServer.2019
+-- SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Name]

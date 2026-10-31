@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @InSeconds BigInt -- Int64
@@ -27,7 +27,7 @@ VALUES
 	@UndeclaredSeconds
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT TOP (2)
 	DateAdd(nanosecond, CAST((([r].[InSeconds] * 10000000) % 10000000) * 100 AS Int), DateAdd(second, CAST((([r].[InSeconds] * 10000000) % 864000000000) / 10000000 AS Int), DateAdd(day, CAST(([r].[InSeconds] * 10000000) / 864000000000 AS Int), CAST(DATETIME2FROMPARTS(2026, 3, 1, 0, 0, 0, 0, 7) AS DateTime2)))),
 	DateAdd(nanosecond, CAST(((([r].[InSeconds] * 10000000) * -1) % 10000000) * 100 AS Int), DateAdd(second, CAST(((([r].[InSeconds] * 10000000) * -1) % 864000000000) / 10000000 AS Int), DateAdd(day, CAST((([r].[InSeconds] * 10000000) * -1) / 864000000000 AS Int), CAST(DATETIME2FROMPARTS(2026, 3, 1, 0, 0, 0, 0, 7) AS DateTime2)))),

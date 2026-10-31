@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[a_GrandChildren].[ParentID],
 	[a_GrandChildren].[ChildID],

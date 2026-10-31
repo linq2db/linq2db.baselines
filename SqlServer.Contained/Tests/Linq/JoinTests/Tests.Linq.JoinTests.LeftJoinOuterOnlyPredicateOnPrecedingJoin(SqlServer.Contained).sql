@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	[p].[ParentID],
 	[ch].[ChildID],
@@ -8,21 +8,21 @@ FROM
 		INNER JOIN [Child] [ch] ON [p].[ParentID] = [ch].[ParentID]
 		LEFT JOIN [GrandChild] [gc] ON [ch].[ChildID] = [gc].[ChildID] AND [p].[ParentID] <> 2
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]
 FROM
 	[Parent] [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID]
 FROM
 	[Child] [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID],

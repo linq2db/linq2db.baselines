@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	[p].[ParentID],
 	[c_2].[Count_1],
@@ -15,7 +15,7 @@ FROM
 				[c_1].[ParentID] = [p].[ParentID]
 		) [c_2]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	COUNT(*)
 FROM

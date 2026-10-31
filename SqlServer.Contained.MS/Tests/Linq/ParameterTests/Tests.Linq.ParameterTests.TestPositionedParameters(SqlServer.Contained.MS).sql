@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @z2 Int -- Int32
 SET     @z2 = 2
 DECLARE @y10 Int -- Int32

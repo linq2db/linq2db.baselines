@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DECLARE @GuidID2Output TABLE ([ID] UniqueIdentifier)
 
 INSERT INTO [GuidID2] OUTPUT [INSERTED].[ID]

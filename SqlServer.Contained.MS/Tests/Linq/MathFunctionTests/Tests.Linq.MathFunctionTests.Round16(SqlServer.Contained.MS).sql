@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	IIF([p].[MoneyValue] * 2 = ROUND([p].[MoneyValue] * 2, [p].[ID] % 2 + 2) AND [p].[MoneyValue] <> ROUND([p].[MoneyValue], [p].[ID] % 2 + 2), ROUND([p].[MoneyValue] / 2, [p].[ID] % 2 + 2) * 2, ROUND([p].[MoneyValue], [p].[ID] % 2 + 2))
 FROM
@@ -8,7 +8,7 @@ WHERE
 ORDER BY
 	[p].[ID]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[ID],
 	[t1].[MoneyValue],
@@ -21,7 +21,7 @@ SELECT
 FROM
 	[LinqDataTypes] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	IIF([p].[MoneyValue] * 2 = ROUND([p].[MoneyValue] * 2, [p].[ID] % 2 + 1) AND [p].[MoneyValue] <> ROUND([p].[MoneyValue], [p].[ID] % 2 + 1), ROUND([p].[MoneyValue] / 2, [p].[ID] % 2 + 1) * 2, ROUND([p].[MoneyValue], [p].[ID] % 2 + 1))
 FROM
@@ -31,7 +31,7 @@ WHERE
 ORDER BY
 	[p].[ID]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[ID],
 	[t1].[MoneyValue],

@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @name NVarChar(4000) -- String
 SET     @name = N'John'
 
@@ -9,7 +9,7 @@ FROM
 	[Person] [p]
 		LEFT JOIN [Doctor] [d] ON [d].[PersonID] = [p].[PersonID] AND [p].[FirstName] = @name
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],
@@ -19,7 +19,7 @@ SELECT
 FROM
 	[Person] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[PersonID],
 	[t1].[Taxonomy]

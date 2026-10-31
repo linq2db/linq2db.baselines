@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @p Int -- Int32
 SET     @p = 102
 
@@ -8,7 +8,7 @@ FROM
 WHERE
 	[r].[ID] >= 101 AND [r].[ID] < @p
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 INSERT INTO [LinqDataTypes]
 (
 	[ID],
@@ -20,7 +20,7 @@ VALUES
 	3
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 UPDATE
 	[LinqDataTypes]
 SET
@@ -28,7 +28,7 @@ SET
 WHERE
 	[LinqDataTypes].[ID] = 101 AND [LinqDataTypes].[IntValue] = 3
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	COUNT(*)
 FROM
@@ -36,7 +36,7 @@ FROM
 WHERE
 	[r].[ID] = 101 AND [r].[IntValue] = 4
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @p Int -- Int32
 SET     @p = 102
 

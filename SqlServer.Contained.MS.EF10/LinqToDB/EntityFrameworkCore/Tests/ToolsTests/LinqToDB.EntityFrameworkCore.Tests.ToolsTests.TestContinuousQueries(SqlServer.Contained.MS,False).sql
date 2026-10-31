@@ -24,7 +24,7 @@ ORDER BY [o].[OrderID], [s].[OrderID], [s].[ProductID], [s].[ProductID0], [s].[O
 
 
 
--- SqlServer.2019
+-- SqlServer.2025
 SELECT
 	[m_1].[ProductId],
 	[m_1].[OrderId],
@@ -48,7 +48,7 @@ FROM
 
 
 
--- SqlServer.2019
+-- SqlServer.2025
 SELECT
 	[m_1].[OrderID],
 	[d].[IsDeleted],
@@ -75,7 +75,7 @@ FROM
 
 
 
--- SqlServer.2019
+-- SqlServer.2025
 SELECT
 	[e].[IsDeleted],
 	[e].[OrderID],

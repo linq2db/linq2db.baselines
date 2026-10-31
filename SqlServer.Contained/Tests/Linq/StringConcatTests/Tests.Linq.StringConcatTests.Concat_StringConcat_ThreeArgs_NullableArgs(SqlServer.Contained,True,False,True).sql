@@ -1,12 +1,12 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
-	Coalesce([t].[Value1], N'') + [t].[Value2] + Coalesce([t].[Value3], N'')
+	Coalesce([t].[Value1], N'') || [t].[Value2] || Coalesce([t].[Value3], N'')
 FROM
 	[StringConcatThreeNullEntity] [t]
 ORDER BY
 	[t].[ID]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[ID],
 	[t1].[Value1],

@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[g_2].[Key_1],
 	COUNT(*)
@@ -12,7 +12,7 @@ FROM
 GROUP BY
 	[g_2].[Key_1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -22,7 +22,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[g_2].[Key_1],
 	COUNT(*)
@@ -36,7 +36,7 @@ FROM
 GROUP BY
 	[g_2].[Key_1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -46,7 +46,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[g_2].[Key_1],
 	COUNT(*)
@@ -60,7 +60,7 @@ FROM
 GROUP BY
 	[g_2].[Key_1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -70,7 +70,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[g_2].[Key_1],
 	COUNT(*)
@@ -84,7 +84,7 @@ FROM
 GROUP BY
 	[g_2].[Key_1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -94,7 +94,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[g_2].[Key_1],
 	COUNT(*)
@@ -108,7 +108,7 @@ FROM
 GROUP BY
 	[g_2].[Key_1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -118,7 +118,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[g_2].[Key_1],
 	COUNT(*)
@@ -132,7 +132,7 @@ FROM
 GROUP BY
 	[g_2].[Key_1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -142,7 +142,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[g_2].[Key_1],
 	COUNT(*)
@@ -156,7 +156,7 @@ FROM
 GROUP BY
 	[g_2].[Key_1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -166,7 +166,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[g_2].[Key_1],
 	COUNT(*)
@@ -180,7 +180,7 @@ FROM
 GROUP BY
 	[g_2].[Key_1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -190,7 +190,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[g_2].[Key_1],
 	COUNT(*)
@@ -204,7 +204,7 @@ FROM
 GROUP BY
 	[g_2].[Key_1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -214,7 +214,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[g_2].[Key_1],
 	COUNT(*)
@@ -228,7 +228,7 @@ FROM
 GROUP BY
 	[g_2].[Key_1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -238,7 +238,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[g_2].[Key_1],
 	COUNT(*)
@@ -252,7 +252,7 @@ FROM
 GROUP BY
 	[g_2].[Key_1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -262,7 +262,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[g_2].[Key_1],
 	COUNT(*)
@@ -276,7 +276,7 @@ FROM
 GROUP BY
 	[g_2].[Key_1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -286,7 +286,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[g_2].[Key_1],
 	COUNT(*)
@@ -300,7 +300,7 @@ FROM
 GROUP BY
 	[g_2].[Key_1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -310,7 +310,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[g_2].[Key_1],
 	COUNT(*)
@@ -324,7 +324,7 @@ FROM
 GROUP BY
 	[g_2].[Key_1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -334,7 +334,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[g_2].[Key_1],
 	COUNT(*)
@@ -348,7 +348,7 @@ FROM
 GROUP BY
 	[g_2].[Key_1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -358,7 +358,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[g_2].[Key_1],
 	COUNT(*)
@@ -372,7 +372,7 @@ FROM
 GROUP BY
 	[g_2].[Key_1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -382,7 +382,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[g_2].[Key_1],
 	COUNT(*)
@@ -396,7 +396,7 @@ FROM
 GROUP BY
 	[g_2].[Key_1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -406,7 +406,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[g_2].[Key_1],
 	COUNT(*)
@@ -420,7 +420,7 @@ FROM
 GROUP BY
 	[g_2].[Key_1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -430,7 +430,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[g_2].[Key_1],
 	COUNT(*)
@@ -444,7 +444,7 @@ FROM
 GROUP BY
 	[g_2].[Key_1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -454,7 +454,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[g_2].[Key_1],
 	COUNT(*)
@@ -468,7 +468,7 @@ FROM
 GROUP BY
 	[g_2].[Key_1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -478,7 +478,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[g_2].[Key_1],
 	COUNT(*)
@@ -492,7 +492,7 @@ FROM
 GROUP BY
 	[g_2].[Key_1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -502,7 +502,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[g_2].[Key_1],
 	COUNT(*)
@@ -516,7 +516,7 @@ FROM
 GROUP BY
 	[g_2].[Key_1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -526,7 +526,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[g_2].[Key_1],
 	COUNT(*)
@@ -540,7 +540,7 @@ FROM
 GROUP BY
 	[g_2].[Key_1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -550,7 +550,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[g_2].[Key_1],
 	COUNT(*)
@@ -564,7 +564,7 @@ FROM
 GROUP BY
 	[g_2].[Key_1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value1],

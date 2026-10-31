@@ -1,6 +1,6 @@
 ﻿INSERT BULK [BulkCopyTable](Id, Value)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -9,14 +9,14 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
 INSERT BULK [BulkCopyTable](Id, Value)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -25,14 +25,14 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
 INSERT BULK [BulkCopyTable](Id, Value)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -41,14 +41,14 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
 INSERT BULK [BulkCopyTable](Id, Value)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -57,14 +57,14 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
 INSERT BULK [BulkCopyTable](Id, Value)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -73,14 +73,14 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
 INSERT BULK [BulkCopyTable](Id, Value)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -89,14 +89,14 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
 INSERT BULK [BulkCopyTable](Id, Value)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -105,14 +105,14 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
 INSERT BULK [BulkCopyTable](Id, Value)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -121,14 +121,14 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
 INSERT BULK [BulkCopyTable](Id, Value)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -137,14 +137,14 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
 INSERT BULK [BulkCopyTable](Id, Value)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -153,14 +153,14 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
 INSERT BULK [BulkCopyTable](Id, Value)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -169,14 +169,14 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
 INSERT BULK [BulkCopyTable](Id, Value)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -185,14 +185,14 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
 INSERT BULK [BulkCopyTable](Id, Value)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -201,14 +201,14 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
 INSERT BULK [BulkCopyTable](Id, Value)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -217,14 +217,14 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
 INSERT BULK [BulkCopyTable](Id, Value)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -233,14 +233,14 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
 INSERT BULK [BulkCopyTable](Id, Value)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -249,14 +249,14 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
 INSERT BULK [BulkCopyTable](Id, Value)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -265,14 +265,14 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
 INSERT BULK [BulkCopyTable](Id, Value)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -281,14 +281,14 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
 INSERT ASYNC BULK [BulkCopyTable](Id, Value)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -297,14 +297,14 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
 INSERT ASYNC BULK [BulkCopyTable](Id, Value)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -313,14 +313,14 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
 INSERT ASYNC BULK [BulkCopyTable](Id, Value)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -329,14 +329,14 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
 INSERT ASYNC BULK [BulkCopyTable](Id, Value)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -345,14 +345,14 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
 INSERT ASYNC BULK [BulkCopyTable](Id, Value)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -361,14 +361,14 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
 INSERT ASYNC BULK [BulkCopyTable](Id, Value)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -377,14 +377,14 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
 INSERT ASYNC BULK [BulkCopyTable](Id, Value)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -393,14 +393,14 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
 INSERT ASYNC BULK [BulkCopyTable](Id, Value)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -409,14 +409,14 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
 INSERT ASYNC BULK [BulkCopyTable](Id, Value)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -425,14 +425,14 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
 INSERT ASYNC BULK [BulkCopyTable](Id, Value)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -441,14 +441,14 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
 INSERT ASYNC BULK [BulkCopyTable](Id, Value)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -457,14 +457,14 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
 INSERT ASYNC BULK [BulkCopyTable](Id, Value)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -473,14 +473,14 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
 INSERT ASYNC BULK [BulkCopyTable](Id, Value)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -489,14 +489,14 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
 INSERT ASYNC BULK [BulkCopyTable](Id, Value)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -505,14 +505,14 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
 INSERT ASYNC BULK [BulkCopyTable](Id, Value)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -521,14 +521,14 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
 INSERT ASYNC BULK [BulkCopyTable](Id, Value)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -537,14 +537,14 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
 INSERT ASYNC BULK [BulkCopyTable](Id, Value)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -553,14 +553,14 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
 INSERT ASYNC BULK [BulkCopyTable](Id, Value)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -569,7 +569,7 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
