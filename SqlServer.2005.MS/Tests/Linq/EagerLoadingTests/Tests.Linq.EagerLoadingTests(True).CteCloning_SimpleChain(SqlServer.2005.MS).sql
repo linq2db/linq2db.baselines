@@ -1,5 +1,5 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
--- Batch 1
+-- Command 1
 WITH [CTE_1] ([Id])
 AS
 (
@@ -42,7 +42,7 @@ FROM
 	) [m_1]
 		INNER JOIN [CteTable] [d_1] ON [m_1].[Id] = [d_1].[Value3]
 
--- Batch 2
+-- Command 2
 WITH [CTE_1]
 (
 	[Id],

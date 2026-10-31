@@ -39,7 +39,7 @@ WHERE
 	) > 1
 
 -- SqlServer.2005.MS SqlServer.2005
--- Batch 1
+-- Command 1
 SELECT
 	[m_1].[Id1],
 	[d].[DetailId],
@@ -54,7 +54,7 @@ FROM
 	) [m_1]
 		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
 
--- Batch 2
+-- Command 2
 SELECT
 	[t1].[Id1],
 	[t1].[Id2],
