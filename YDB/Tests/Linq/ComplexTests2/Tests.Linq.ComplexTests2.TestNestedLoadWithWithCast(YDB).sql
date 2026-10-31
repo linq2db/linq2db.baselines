@@ -123,34 +123,23 @@ VALUES
 SELECT
 	t1.Id as Id,
 	t1.TestAnimalId as TestAnimalId,
-	a_TestAnimal_1.AnimalType as AnimalType,
-	a_TestAnimal_1.AnimalType2 as AnimalType2,
-	a_TestAnimal_1.Id as Id_1,
-	a_TestAnimal_1.Name as Name,
-	a_TestAnimal_1.Discriminator as Discriminator,
-	a_TestAnimal_1.EyeId as EyeId,
-	a_TestAnimal_1.Second_1 as Second_1,
-	a_TestAnimal_1.First_1 as First_1,
+	a_TestAnimal.AnimalType as AnimalType,
+	a_TestAnimal.AnimalType2 as AnimalType2,
+	a_TestAnimal.Id as Id_1,
+	a_TestAnimal.Name as Name,
+	a_TestAnimal.Discriminator as Discriminator,
+	a_TestAnimal.EyeId as EyeId,
+	a_TestAnimal.`Second` as Second_1,
+	a_TestAnimal.`First` as First_1,
 	a_Bla.Id as Id_2,
 	a_Bla.Xy as Xy
 FROM
 	TestAnimalTable t1
-		LEFT JOIN (
-			SELECT
-				a_TestAnimal.Id as Id,
-				a_TestAnimal.Discriminator as Discriminator,
-				a_TestAnimal.AnimalType as AnimalType,
-				a_TestAnimal.AnimalType2 as AnimalType2,
-				a_TestAnimal.Name as Name,
-				a_TestAnimal.EyeId as EyeId,
-				a_TestAnimal.`Second` as Second_1,
-				a_TestAnimal.`First` as First_1
-			FROM
-				ComplexAnimals a_TestAnimal
-			WHERE
-				a_TestAnimal.Discriminator = 'Dog'u
-		) a_TestAnimal_1 ON t1.TestAnimalId = a_TestAnimal_1.Id
-		LEFT JOIN ComplexEyes a_Bla ON a_TestAnimal_1.EyeId = a_Bla.Id
+		LEFT JOIN ComplexAnimals a_TestAnimal ON t1.TestAnimalId = a_TestAnimal.Id
+		LEFT JOIN ComplexEyes a_Bla ON CASE
+			WHEN a_TestAnimal.Discriminator = 'Dog'u THEN a_TestAnimal.EyeId
+			ELSE NULL
+		END = a_Bla.Id
 ORDER BY
 	t1.Id
 
