@@ -1,5 +1,5 @@
-﻿-- MariaDB.11 MariaDB.10.MySqlConnector
--- Batch 1
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+-- Command 1
 SELECT
 	`m_1`.`Id`,
 	`d`.`Value`
@@ -7,7 +7,7 @@ FROM
 	`Item` `m_1`
 		INNER JOIN `ItemValue` `d` ON `m_1`.`Id` = `d`.`ItemId`
 
--- Batch 2
+-- Command 2
 SELECT
 	`x`.`Id`,
 	`x`.`Text`

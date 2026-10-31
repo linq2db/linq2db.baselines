@@ -35,8 +35,8 @@ SELECT
 FROM
 	`MasterClass` `m_1`
 
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector
--- Batch 1
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+-- Command 1
 SELECT
 	`m_1`.`Id1`,
 	`d`.`DetailId`,
@@ -51,7 +51,7 @@ FROM
 	) `m_1`
 		INNER JOIN `DetailClass` `d` ON `m_1`.`Id1` = `d`.`MasterId`
 
--- Batch 2
+-- Command 2
 SELECT
 	`t1`.`Id1`,
 	`t1`.`Id2`,

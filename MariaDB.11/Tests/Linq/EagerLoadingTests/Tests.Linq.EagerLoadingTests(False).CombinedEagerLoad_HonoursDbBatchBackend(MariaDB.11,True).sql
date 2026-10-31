@@ -1,5 +1,5 @@
-﻿-- MariaDB.11 MariaDB.10.MySqlConnector
--- Batch 1
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+-- Command 1
 SELECT
 	`m_1`.`Id`,
 	`d`.`Id`,
@@ -12,7 +12,7 @@ ORDER BY
 	`d`.`Id`,
 	`m_1`.`Id`
 
--- Batch 2
+-- Command 2
 SELECT
 	`t1`.`Id`,
 	`t1`.`Name`
@@ -21,7 +21,7 @@ FROM
 ORDER BY
 	`t1`.`Id`
 
--- Batch 3
+-- Command 3
 SELECT
 	`m_1`.`Id`
 FROM
