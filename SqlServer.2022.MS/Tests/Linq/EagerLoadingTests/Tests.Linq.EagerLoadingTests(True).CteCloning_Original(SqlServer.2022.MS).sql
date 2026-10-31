@@ -1,5 +1,5 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
--- Batch 1
+-- Command 1
 WITH [cte] ([Value2], [Value4])
 AS
 (
@@ -34,7 +34,7 @@ FROM
 	) [m_1]
 		INNER JOIN [CteTable] [d_1] ON [m_1].[Id] = [d_1].[Value3]
 
--- Batch 2
+-- Command 2
 WITH [cte]
 (
 	[Id],

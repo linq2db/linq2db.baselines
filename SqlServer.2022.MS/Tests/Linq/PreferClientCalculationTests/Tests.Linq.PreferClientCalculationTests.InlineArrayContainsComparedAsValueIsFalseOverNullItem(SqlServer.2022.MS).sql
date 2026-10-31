@@ -6,7 +6,12 @@ SELECT
 FROM
 	[NestedInListEntity] [e]
 WHERE
-	IIF([e].[Flag] = 1, 1, 0) = IIF([e].[Id] = [e].[Item] OR [e].[Id] = 5, 1, 0)
+	IIF([e].[Flag] = 1, 1, 0) = CASE
+		WHEN [e].[Id] IN ([e].[Item], 5) THEN 1
+		WHEN NOT ([e].[Id] = [e].[Item] AND [e].[Item] IS NOT NULL OR [e].[Id] = 5)
+			THEN 0
+		ELSE NULL
+	END
 
 -- SqlServer.2022.MS SqlServer.2022
 SELECT
@@ -24,7 +29,12 @@ SELECT
 FROM
 	[NestedInListEntity] [e]
 WHERE
-	IIF([e].[Flag] = 1, 1, 0) <> IIF([e].[Id] = [e].[Item] OR [e].[Id] = 5, 1, 0)
+	IIF([e].[Flag] = 1, 1, 0) <> CASE
+		WHEN [e].[Id] IN ([e].[Item], 5) THEN 1
+		WHEN NOT ([e].[Id] = [e].[Item] AND [e].[Item] IS NOT NULL OR [e].[Id] = 5)
+			THEN 0
+		ELSE NULL
+	END
 
 -- SqlServer.2022.MS SqlServer.2022
 SELECT
