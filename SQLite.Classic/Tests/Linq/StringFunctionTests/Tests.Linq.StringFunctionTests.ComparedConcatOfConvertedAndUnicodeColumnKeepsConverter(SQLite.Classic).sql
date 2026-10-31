@@ -20,3 +20,14 @@ FROM
 WHERE
 	(Coalesce([t].[Code], '') || Coalesce([t].[Title], '')) = @bound
 
+-- SQLite.Classic SQLite
+DECLARE @bound VarChar(4) -- AnsiString
+SET     @bound = 'x:AT'
+
+SELECT
+	COUNT(*)
+FROM
+	[PrefixedCodeWithTitleTable] [t]
+WHERE
+	(Coalesce([t].[Code], '') || Coalesce([t].[Title], '')) = @bound
+
