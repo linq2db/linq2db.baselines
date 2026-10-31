@@ -6,8 +6,8 @@ FROM
 	((
 		SELECT
 			[o].[ParentID],
-			[g_1].[Value1],
-			[g_1].[ParentID] as [ParentID_1]
+			[g_1].[ParentID] as [ParentID_1],
+			[g_1].[Value1]
 		FROM
 			(
 				SELECT DISTINCT
@@ -19,6 +19,8 @@ FROM
 			) [g_1],
 			[Child] [o]
 	) [sub]
-		INNER JOIN [Parent] [a_ParentID2_1] ON ([sub].[ParentID] = [a_ParentID2_1].[ParentID] AND ([sub].[Value1] = [a_ParentID2_1].[Value1] OR [sub].[Value1] IS NULL AND [a_ParentID2_1].[Value1] IS NULL) AND [sub].[ParentID_1] = [a_ParentID2_1].[ParentID]))
+		INNER JOIN [Parent] [a_ParentID2_1] ON ([sub].[ParentID] = [a_ParentID2_1].[ParentID] AND [sub].[ParentID_1] = [a_ParentID2_1].[ParentID]))
 		LEFT JOIN [Parent] [a_Parent] ON ([sub].[ParentID] = [a_Parent].[ParentID])
+WHERE
+	[sub].[Value1] = [a_ParentID2_1].[Value1] OR [sub].[Value1] IS NULL AND [a_ParentID2_1].[Value1] IS NULL
 

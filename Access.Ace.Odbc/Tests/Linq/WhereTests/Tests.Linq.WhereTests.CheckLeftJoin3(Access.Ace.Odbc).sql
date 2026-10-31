@@ -4,7 +4,15 @@ SELECT
 	[p].[Value1]
 FROM
 	[Parent] [p]
-		LEFT JOIN [GrandChild] [ch] ON ([p].[ParentID] = 1 + [ch].[ParentID] AND [ch].[ParentID] > 0)
+		LEFT JOIN (
+			SELECT
+				[c_1].[ParentID],
+				[c_1].[ChildID]
+			FROM
+				[GrandChild] [c_1]
+			WHERE
+				[c_1].[ParentID] > 0
+		) [ch] ON ([p].[ParentID] = 1 + [ch].[ParentID])
 WHERE
 	NOT ([ch].[ParentID] IS NOT NULL AND [ch].[ChildID] IS NOT NULL)
 
