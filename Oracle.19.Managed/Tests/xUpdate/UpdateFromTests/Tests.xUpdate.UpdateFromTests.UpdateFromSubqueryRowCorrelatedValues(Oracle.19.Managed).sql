@@ -6,19 +6,28 @@ WHERE
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
 UPDATE
-	"UpdateSubquerySourceTable"
+	"UpdateSubquerySourceTable" x
 SET
 	("FirstName", "LastName") = (
 		SELECT
-			canChange."FirstName",
-			canChange."LastName"
+			CASE
+				WHEN canChange."Id" IS NOT NULL THEN canChange."FirstName"
+				ELSE x."FirstName"
+			END,
+			CASE
+				WHEN canChange."Id" IS NOT NULL THEN canChange."LastName"
+				ELSE x."LastName"
+			END
 		FROM
-			"UpdateSubquerySourceTable" canChange
-		WHERE
-			canChange."Id" = "UpdateSubquerySourceTable"."Id" + 1
+			(
+				SELECT
+					1 as "c1"
+				FROM SYS.DUAL
+			) t1
+				LEFT JOIN "UpdateSubquerySourceTable" canChange ON canChange."Id" = x."Id" + 1
 	)
 WHERE
-	"UpdateSubquerySourceTable"."Id" = 1
+	x."Id" = 1
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
 SELECT
