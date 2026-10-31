@@ -18,34 +18,34 @@ SELECT
 FROM
 	(
 		SELECT
-			g_1.ParentID as Key_1,
-			SUM(g_1.ParentID) as Sum_1
+			p1.ParentID as Key_1,
+			SUM(p1.ParentID) as Sum_1
 		FROM
-			Parent g_1
+			Parent p1
 		WHERE
-			g_1.ParentID IN (
+			p1.ParentID IN (
 				SELECT
 					t1.ParentID
 				FROM
 					$CTE_1 t1
 			)
 		GROUP BY
-			g_1.ParentID
+			p1.ParentID
 	) t3
 		LEFT JOIN (
 			SELECT
-				g_2.ParentID as Key_1,
-				SUM(g_2.ParentID) as Sum_1
+				g_1.ParentID as Key_1,
+				SUM(g_1.ParentID) as Sum_1
 			FROM
-				Parent g_2
+				Parent g_1
 			WHERE
-				g_2.ParentID IN (
+				g_1.ParentID IN (
 					SELECT
 						t2.ParentID
 					FROM
 						$CTE_2 t2
 				)
 			GROUP BY
-				g_2.ParentID
+				g_1.ParentID
 		) p2 ON t3.Key_1 = p2.Key_1
 

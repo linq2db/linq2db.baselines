@@ -6,6 +6,7 @@ FROM
 	Child c_1
 		LEFT JOIN Parent p ON p.Value1 = CASE
 			WHEN c_1.ChildID <> 11 OR c_1.ChildID = 21 THEN c_1.ParentID
+			WHEN c_1.ParentID IS NULL THEN c_1.ParentID
 			ELSE NULL
 		END
 

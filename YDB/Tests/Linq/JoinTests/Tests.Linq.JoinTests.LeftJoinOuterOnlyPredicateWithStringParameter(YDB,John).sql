@@ -9,6 +9,7 @@ FROM
 	Person p
 		LEFT JOIN Doctor d ON d.PersonID = CASE
 			WHEN p.FirstName = $name THEN p.PersonID
+			WHEN p.PersonID IS NULL THEN p.PersonID
 			ELSE NULL
 		END
 
