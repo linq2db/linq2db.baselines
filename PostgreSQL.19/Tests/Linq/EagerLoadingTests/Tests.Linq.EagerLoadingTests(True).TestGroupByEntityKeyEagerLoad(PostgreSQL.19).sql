@@ -1,5 +1,5 @@
-﻿-- PostgreSQL.19
--- Batch 1
+﻿-- PostgreSQL.19 PostgreSQL12
+-- Command 1
 SELECT
 	m_1."Id1",
 	d."DetailId"
@@ -15,7 +15,7 @@ FROM
 ORDER BY
 	d."DetailId"
 
--- Batch 2
+-- Command 2
 SELECT
 	g_2."Id1"
 FROM
@@ -27,8 +27,8 @@ FROM
 			"DetailClass" g_1
 				LEFT JOIN "MasterClass" "a_Master" ON g_1."MasterId" = "a_Master"."Id1"
 	) g_2
--- PostgreSQL.19
--- Batch 1
+-- PostgreSQL.19 PostgreSQL12
+-- Command 1
 SELECT
 	m_1."Id1",
 	d."DetailId",
@@ -44,7 +44,7 @@ FROM
 	) m_1
 		INNER JOIN "DetailClass" d ON m_1."Id1" = d."MasterId"
 
--- Batch 2
+-- Command 2
 SELECT
 	t1."DetailId",
 	t1."MasterId",

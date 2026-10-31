@@ -1,5 +1,5 @@
-﻿-- PostgreSQL.14 PostgreSQL.13
--- Batch 1
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+-- Command 1
 SELECT
 	m_1."ParentID",
 	d."ParentID",
@@ -16,7 +16,7 @@ FROM
 	) m_1
 		INNER JOIN "Child" d ON m_1."ParentID" = d."ParentID"
 
--- Batch 2
+-- Command 2
 SELECT
 	x."ParentID",
 	x."Value1"
@@ -26,6 +26,7 @@ WHERE
 	x."ParentID" = 3
 LIMIT 1
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+-- Command 1
 SELECT
 	m_1."ParentID",
 	d."ParentID",
@@ -42,7 +43,7 @@ FROM
 	) m_1
 		INNER JOIN "Child" d ON m_1."ParentID" = d."ParentID"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+-- Command 2
 SELECT
 	x."ParentID",
 	x."Value1"
@@ -51,8 +52,8 @@ FROM
 WHERE
 	x."ParentID" = 3
 LIMIT 1
-
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+-- Command 1
 SELECT
 	m_1."ParentID",
 	d."ParentID",
@@ -69,7 +70,7 @@ FROM
 	) m_1
 		INNER JOIN "Child" d ON m_1."ParentID" = d."ParentID"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+-- Command 2
 SELECT
 	x."ParentID",
 	x."Value1"
@@ -78,4 +79,3 @@ FROM
 WHERE
 	x."ParentID" = 3
 LIMIT 1
-
