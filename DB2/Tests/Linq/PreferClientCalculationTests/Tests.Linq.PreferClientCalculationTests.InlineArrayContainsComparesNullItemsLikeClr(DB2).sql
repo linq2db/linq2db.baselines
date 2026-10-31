@@ -172,7 +172,7 @@ SELECT
 FROM
 	"NullableItemEntity" "e"
 WHERE
-	NOT (8 = "e"."Item" AND "e"."Item" IS NOT NULL)
+	8 <> "e"."Item" OR "e"."Item" IS NULL
 
 -- DB2 DB2.LUW DB2LUW
 SELECT
