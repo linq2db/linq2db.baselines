@@ -1,0 +1,19 @@
+﻿-- DuckDB
+SELECT
+	x.Id,
+	x.Usd,
+	CAST(NULL AS DECIMAL)
+FROM
+	Amounts x
+WHERE
+	x.Id = 1
+UNION ALL
+SELECT
+	x_1.Id,
+	CAST(NULL AS DECIMAL),
+	x_1.Usd * 2
+FROM
+	Amounts x_1
+WHERE
+	x_1.Id = 2
+
