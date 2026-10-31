@@ -71,7 +71,14 @@ SELECT DISTINCT
 FROM
 	(([Person] [i]
 		LEFT JOIN [Patient] [a_Patient] ON ([i].[PersonID] = [a_Patient].[PersonID]))
-		LEFT JOIN [Person] [t] ON ([i].[PersonID] = [t].[PersonID] AND [t].[FirstName] <> 'Nameless One'))
+		LEFT JOIN (
+			SELECT
+				[x].[PersonID]
+			FROM
+				[Person] [x]
+			WHERE
+				[x].[FirstName] <> 'Nameless One'
+		) [t] ON ([i].[PersonID] = [t].[PersonID]))
 		LEFT JOIN [Person] [u] ON ([i].[PersonID] = [u].[PersonID])
 WHERE
 	[a_Patient].[Diagnosis] <> 'Immortality' OR [a_Patient].[Diagnosis] IS NULL

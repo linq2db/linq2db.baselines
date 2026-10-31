@@ -57,10 +57,18 @@ VALUES
 SELECT
 	[p].[Id],
 	[p].[TargetName],
-	[a_ActualStage].[Id] as [ActualStageId_1]
+	[a_ActualStage_1].[ActualStageId]
 FROM
 	[Task] [p]
-		LEFT JOIN [TaskStage] [a_ActualStage] ON ([p].[Id] = [a_ActualStage].[TaskId] AND [a_ActualStage].[Actual] = True)
+		LEFT JOIN (
+			SELECT
+				[a_ActualStage].[TaskId],
+				[a_ActualStage].[Id] as [ActualStageId]
+			FROM
+				[TaskStage] [a_ActualStage]
+			WHERE
+				[a_ActualStage].[Actual] = True
+		) [a_ActualStage_1] ON ([p].[Id] = [a_ActualStage_1].[TaskId])
 WHERE
 	[p].[TargetName] = 'bda.Requests'
 
@@ -68,10 +76,18 @@ WHERE
 SELECT
 	[p].[TargetName],
 	[p].[Id],
-	[a_ActualStage].[Id] as [Id_1]
+	[a_ActualStage_1].[Id] as [Id_1]
 FROM
 	[Task] [p]
-		LEFT JOIN [TaskStage] [a_ActualStage] ON ([p].[Id] = [a_ActualStage].[TaskId] AND [a_ActualStage].[Actual] = True)
+		LEFT JOIN (
+			SELECT
+				[a_ActualStage].[TaskId],
+				[a_ActualStage].[Id]
+			FROM
+				[TaskStage] [a_ActualStage]
+			WHERE
+				[a_ActualStage].[Actual] = True
+		) [a_ActualStage_1] ON ([p].[Id] = [a_ActualStage_1].[TaskId])
 ORDER BY
 	[p].[Id]
 
