@@ -211,7 +211,7 @@ WHERE
 		WHEN (1=1) THEN 1
 		ELSE 0
 	END = CASE
-		WHEN (CASE
+		WHEN CASE
 			WHEN ([r_1].[Value1] = [r_1].[Value4]) THEN 1
 			WHEN NOT ([r_1].[Value1] = [r_1].[Value4]) THEN 0
 			ELSE NULL
@@ -227,23 +227,7 @@ WHERE
 			WHEN ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 1
 			WHEN NOT ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 0
 			ELSE NULL
-		END IS NULL) AND NOT (CASE
-			WHEN ([r_1].[Value1] = [r_1].[Value4]) THEN 1
-			WHEN NOT ([r_1].[Value1] = [r_1].[Value4]) THEN 0
-			ELSE NULL
-		END IS NULL AND CASE
-			WHEN ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 1
-			WHEN NOT ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 0
-			ELSE NULL
-		END IS NOT NULL) AND NOT (CASE
-			WHEN ([r_1].[Value1] = [r_1].[Value4]) THEN 1
-			WHEN NOT ([r_1].[Value1] = [r_1].[Value4]) THEN 0
-			ELSE NULL
-		END IS NOT NULL AND CASE
-			WHEN ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 1
-			WHEN NOT ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 0
-			ELSE NULL
-		END IS NULL)
+		END IS NULL
 			THEN 1
 		ELSE 0
 	END
@@ -283,7 +267,7 @@ WHERE
 		WHEN (1=1) THEN 1
 		ELSE 0
 	END = CASE
-		WHEN (CASE
+		WHEN CASE
 			WHEN ([r_1].[Value1] <> [r_1].[Value4]) THEN 1
 			WHEN NOT ([r_1].[Value1] <> [r_1].[Value4]) THEN 0
 			ELSE NULL
@@ -299,23 +283,7 @@ WHERE
 			WHEN ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 1
 			WHEN NOT ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 0
 			ELSE NULL
-		END IS NULL) AND NOT (CASE
-			WHEN ([r_1].[Value1] <> [r_1].[Value4]) THEN 1
-			WHEN NOT ([r_1].[Value1] <> [r_1].[Value4]) THEN 0
-			ELSE NULL
-		END IS NULL AND CASE
-			WHEN ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 1
-			WHEN NOT ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 0
-			ELSE NULL
-		END IS NOT NULL) AND NOT (CASE
-			WHEN ([r_1].[Value1] <> [r_1].[Value4]) THEN 1
-			WHEN NOT ([r_1].[Value1] <> [r_1].[Value4]) THEN 0
-			ELSE NULL
-		END IS NOT NULL AND CASE
-			WHEN ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 1
-			WHEN NOT ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 0
-			ELSE NULL
-		END IS NULL)
+		END IS NULL
 			THEN 1
 		ELSE 0
 	END
@@ -362,11 +330,7 @@ WHERE
 			WHEN ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 1
 			WHEN NOT ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 0
 			ELSE NULL
-		END AND CASE
-			WHEN ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 1
-			WHEN NOT ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 0
-			ELSE NULL
-		END IS NOT NULL
+		END
 			THEN 1
 		ELSE 0
 	END
@@ -413,11 +377,7 @@ WHERE
 			WHEN ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 1
 			WHEN NOT ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 0
 			ELSE NULL
-		END AND CASE
-			WHEN ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 1
-			WHEN NOT ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 0
-			ELSE NULL
-		END IS NOT NULL
+		END
 			THEN 1
 		ELSE 0
 	END
@@ -665,7 +625,7 @@ WHERE
 		WHEN (1=1) THEN 1
 		ELSE 0
 	END = CASE
-		WHEN (CASE
+		WHEN CASE
 			WHEN ([r_1].[Value1] = [r_1].[Value4]) THEN 1
 			WHEN NOT ([r_1].[Value1] = [r_1].[Value4]) THEN 0
 			ELSE NULL
@@ -689,15 +649,7 @@ WHERE
 			WHEN ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 1
 			WHEN NOT ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 0
 			ELSE NULL
-		END IS NULL) AND NOT (CASE
-			WHEN ([r_1].[Value1] = [r_1].[Value4]) THEN 1
-			WHEN NOT ([r_1].[Value1] = [r_1].[Value4]) THEN 0
-			ELSE NULL
-		END IS NULL AND CASE
-			WHEN ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 1
-			WHEN NOT ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 0
-			ELSE NULL
-		END IS NULL)
+		END IS NULL
 			THEN 1
 		ELSE 0
 	END
@@ -737,7 +689,7 @@ WHERE
 		WHEN (1=1) THEN 1
 		ELSE 0
 	END = CASE
-		WHEN (CASE
+		WHEN CASE
 			WHEN ([r_1].[Value1] <> [r_1].[Value4]) THEN 1
 			WHEN NOT ([r_1].[Value1] <> [r_1].[Value4]) THEN 0
 			ELSE NULL
@@ -761,15 +713,7 @@ WHERE
 			WHEN ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 1
 			WHEN NOT ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 0
 			ELSE NULL
-		END IS NULL) AND NOT (CASE
-			WHEN ([r_1].[Value1] <> [r_1].[Value4]) THEN 1
-			WHEN NOT ([r_1].[Value1] <> [r_1].[Value4]) THEN 0
-			ELSE NULL
-		END IS NULL AND CASE
-			WHEN ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 1
-			WHEN NOT ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 0
-			ELSE NULL
-		END IS NULL)
+		END IS NULL
 			THEN 1
 		ELSE 0
 	END
@@ -1175,7 +1119,7 @@ WHERE
 		WHEN (1=1) THEN 1
 		ELSE 0
 	END = CASE
-		WHEN ([r_1].[Value4] + @cnt) >= ([t1].[Count_1] + [r_1].[Value5]) AND [r_1].[Value4] IS NOT NULL AND [r_1].[Value5] IS NOT NULL
+		WHEN ([r_1].[Value4] + @cnt) >= ([t1].[Count_1] + [r_1].[Value5])
 			THEN 1
 		ELSE 0
 	END
@@ -1215,7 +1159,7 @@ WHERE
 		WHEN (1=1) THEN 1
 		ELSE 0
 	END = CASE
-		WHEN ([r_1].[Value4] + @cnt) > ([t1].[Count_1] + [r_1].[Value5]) AND [r_1].[Value4] IS NOT NULL AND [r_1].[Value5] IS NOT NULL
+		WHEN ([r_1].[Value4] + @cnt) > ([t1].[Count_1] + [r_1].[Value5])
 			THEN 1
 		ELSE 0
 	END
@@ -1255,7 +1199,7 @@ WHERE
 		WHEN (1=1) THEN 1
 		ELSE 0
 	END = CASE
-		WHEN ([r_1].[Value4] + @cnt) <= ([t1].[Count_1] + [r_1].[Value5]) AND [r_1].[Value4] IS NOT NULL AND [r_1].[Value5] IS NOT NULL
+		WHEN ([r_1].[Value4] + @cnt) <= ([t1].[Count_1] + [r_1].[Value5])
 			THEN 1
 		ELSE 0
 	END
@@ -1295,7 +1239,7 @@ WHERE
 		WHEN (1=1) THEN 1
 		ELSE 0
 	END = CASE
-		WHEN ([r_1].[Value4] + @cnt) < ([t1].[Count_1] + [r_1].[Value5]) AND [r_1].[Value4] IS NOT NULL AND [r_1].[Value5] IS NOT NULL
+		WHEN ([r_1].[Value4] + @cnt) < ([t1].[Count_1] + [r_1].[Value5])
 			THEN 1
 		ELSE 0
 	END
@@ -1335,7 +1279,7 @@ WHERE
 		WHEN (1=1) THEN 1
 		ELSE 0
 	END = CASE
-		WHEN ([r_1].[Value2] + @cnt) >= ([t1].[Count_1] + [r_1].[Value5]) AND [r_1].[Value5] IS NOT NULL
+		WHEN ([r_1].[Value2] + @cnt) >= ([t1].[Count_1] + [r_1].[Value5])
 			THEN 1
 		ELSE 0
 	END
@@ -1375,7 +1319,7 @@ WHERE
 		WHEN (1=1) THEN 1
 		ELSE 0
 	END = CASE
-		WHEN ([r_1].[Value2] + @cnt) > ([t1].[Count_1] + [r_1].[Value5]) AND [r_1].[Value5] IS NOT NULL
+		WHEN ([r_1].[Value2] + @cnt) > ([t1].[Count_1] + [r_1].[Value5])
 			THEN 1
 		ELSE 0
 	END
@@ -1415,7 +1359,7 @@ WHERE
 		WHEN (1=1) THEN 1
 		ELSE 0
 	END = CASE
-		WHEN ([r_1].[Value2] + @cnt) <= ([t1].[Count_1] + [r_1].[Value5]) AND [r_1].[Value5] IS NOT NULL
+		WHEN ([r_1].[Value2] + @cnt) <= ([t1].[Count_1] + [r_1].[Value5])
 			THEN 1
 		ELSE 0
 	END
@@ -1455,7 +1399,7 @@ WHERE
 		WHEN (1=1) THEN 1
 		ELSE 0
 	END = CASE
-		WHEN ([r_1].[Value2] + @cnt) < ([t1].[Count_1] + [r_1].[Value5]) AND [r_1].[Value5] IS NOT NULL
+		WHEN ([r_1].[Value2] + @cnt) < ([t1].[Count_1] + [r_1].[Value5])
 			THEN 1
 		ELSE 0
 	END
