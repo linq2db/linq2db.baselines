@@ -30,7 +30,9 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-SELECT DBINFO('sqlca.sqlerrd1') FROM systables where tabid = 1
+SELECT
+	DBINFO('sqlca.sqlerrd1')
+FROM table(set{1})
 
 -- Informix.DB2 Informix
 DECLARE @p VarChar(5) -- String
@@ -73,7 +75,9 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-SELECT DBINFO('sqlca.sqlerrd1') FROM systables where tabid = 1
+SELECT
+	DBINFO('sqlca.sqlerrd1')
+FROM table(set{1})
 
 -- Informix.DB2 Informix
 DECLARE @p VarChar(5) -- String

@@ -46,7 +46,6 @@ VALUES
 (3111,3111),
 (4111,4111)
 
-CommitTransaction
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 1111

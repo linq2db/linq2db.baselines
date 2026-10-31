@@ -23,7 +23,6 @@ SET
 WHERE
 	Parent.ParentID = 1010
 
-CommitTransaction
 -- YDB Ydb
 SELECT
 	t.ParentID as ParentID,

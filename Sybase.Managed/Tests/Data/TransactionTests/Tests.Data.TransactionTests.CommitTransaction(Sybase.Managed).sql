@@ -23,7 +23,6 @@ SET
 WHERE
 	[Parent].[ParentID] = 1010
 
-CommitTransaction
 -- Sybase.Managed Sybase
 SELECT TOP 1
 	[t].[ParentID],

@@ -99,9 +99,7 @@ SET     @value = 23:59:59.9999999
 DECLARE @value_1 Interval -- Object
 SET     @value_1 = 14:44:33.2340000
 DECLARE @value_2 Interval -- Object
-SET     @value_2 = 23:59:59.9999999
-DECLARE @value_3 Interval -- Object
-SET     @value_3 = 22:44:33
+SET     @value_2 = 22:44:33
 
 MERGE INTO "TestMerge2" "Target"
 USING (VALUES
@@ -109,10 +107,10 @@ USING (VALUES
 	(4,2147483647,9223372036854775807,False,'test
 	','ЙЦУКЩывапрм
 q','1',' ',3.40282002E+38,1.7976931348623157E+308,'2001-10-12 21:14:15.167'::timestamp,'2001-11-22 13:14:15.321000-00:15'::timestamptz,E'\\x000102030004'::bytea,'ffffffff-ffff-ffff-ffff-ffffffffffff'::uuid,-99999999.9999999999,'2123-11-23'::date,:value_1,'',0),
-	(5,-123,987,NULL,'<>?/.,;''zZ":','`~!@#$%^&*()_+{}|[]\',' ',' ',-1.17549996E-38,2.2250738585072014E-308,'2098-10-12 21:14:15.913'::timestamp,'2001-11-22 13:14:15.000000-01:39'::timestamptz,E'\\xFFC864321400'::bytea,'ffffffff-ffff-ffff-ffff-ffffffffffff'::uuid,-0.123,'2010-11-23'::date,:value_2,NULL,-2147483647),
+	(5,-123,987,NULL,'<>?/.,;''zZ":','`~!@#$%^&*()_+{}|[]\',' ',' ',-1.17549996E-38,2.2250738585072014E-308,'2098-10-12 21:14:15.913'::timestamp,'2001-11-22 13:14:15.000000-01:39'::timestamptz,E'\\xFFC864321400'::bytea,'ffffffff-ffff-ffff-ffff-ffffffffffff'::uuid,-0.123,'2010-11-23'::date,:value,NULL,-2147483647),
 	(6,2147483647,9223372036854775807,False,'test
 	  ','ЙЦУКЩывапрм
-q  ','-','~',3.40282002E+38,1.7976931348623157E+308,'2001-10-12 21:14:15.167'::timestamp,'2001-11-22 13:14:15.999000-00:15'::timestamptz,E'\\x000102030004'::bytea,'ffffffff-ffff-ffff-ffff-ffffffffffff'::uuid,-99999999.9999999999,'2123-11-23'::date,:value_3,'',0)
+q  ','-','~',3.40282002E+38,1.7976931348623157E+308,'2001-10-12 21:14:15.167'::timestamp,'2001-11-22 13:14:15.999000-00:15'::timestamptz,E'\\x000102030004'::bytea,'ffffffff-ffff-ffff-ffff-ffffffffffff'::uuid,-99999999.9999999999,'2123-11-23'::date,:value_2,'',0)
 ) "Source"
 (
 	"Id",

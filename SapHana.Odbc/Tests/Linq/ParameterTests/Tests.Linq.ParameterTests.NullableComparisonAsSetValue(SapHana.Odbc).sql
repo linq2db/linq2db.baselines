@@ -1,0 +1,17 @@
+﻿-- SapHana.Odbc SapHanaOdbc
+UPDATE
+	"TestBool" "t1"
+SET
+	"Value" = CASE
+		WHEN "t1"."Value" = 0 OR "t1"."Value" IS NULL THEN 1
+		ELSE 0
+	END
+
+-- SapHana.Odbc SapHanaOdbc
+SELECT
+	"r"."Value"
+FROM
+	"TestBool" "r"
+ORDER BY
+	"r"."Id"
+
