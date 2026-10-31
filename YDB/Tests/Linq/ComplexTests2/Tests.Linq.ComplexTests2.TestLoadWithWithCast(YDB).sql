@@ -133,9 +133,10 @@ SELECT
 	a_Bla.Xy as Xy
 FROM
 	ComplexAnimals t1
-		LEFT JOIN ComplexEyes a_Bla ON t1.EyeId = a_Bla.Id
-WHERE
-	t1.Discriminator = 'Dog'u
+		LEFT JOIN ComplexEyes a_Bla ON CASE
+			WHEN t1.Discriminator = 'Dog'u THEN t1.EyeId
+			ELSE NULL
+		END = a_Bla.Id
 ORDER BY
 	t1.Id
 
