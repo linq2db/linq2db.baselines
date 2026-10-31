@@ -49,10 +49,18 @@ VALUES
 SELECT
 	'Id',
 	[it].[Id],
-	SUM([a_ActualStage].[Id])
+	SUM([a_ActualStage_1].[Id])
 FROM
 	[Task] [it]
-		LEFT JOIN [TaskStage] [a_ActualStage] ON ([it].[Id] = [a_ActualStage].[TaskId] AND [a_ActualStage].[Actual] = True)
+		LEFT JOIN (
+			SELECT
+				[a_ActualStage].[TaskId],
+				[a_ActualStage].[Id]
+			FROM
+				[TaskStage] [a_ActualStage]
+			WHERE
+				[a_ActualStage].[Actual] = True
+		) [a_ActualStage_1] ON ([it].[Id] = [a_ActualStage_1].[TaskId])
 GROUP BY
 	[it].[Id]
 

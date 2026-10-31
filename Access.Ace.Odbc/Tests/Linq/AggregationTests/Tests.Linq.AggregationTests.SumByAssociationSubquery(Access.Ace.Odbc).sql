@@ -1,10 +1,18 @@
 ﻿-- Access.Ace.Odbc AccessODBC
 SELECT
 	[g_1].[Id],
-	SUM(IIF([a_Values].[Value] IS NULL, 0, [a_Values].[Value]))
+	SUM(IIF([t1].[Value_1] IS NULL, 0, [t1].[Value_1]))
 FROM
 	[Item] [g_1]
-		LEFT JOIN [ItemValue] [a_Values] ON ([g_1].[Id] = [a_Values].[ItemId] AND [a_Values].[ValueName] = 'Value1')
+		LEFT JOIN (
+			SELECT
+				[a_Values].[ItemId],
+				[a_Values].[Value] as [Value_1]
+			FROM
+				[ItemValue] [a_Values]
+			WHERE
+				[a_Values].[ValueName] = 'Value1'
+		) [t1] ON ([g_1].[Id] = [t1].[ItemId])
 GROUP BY
 	[g_1].[Id]
 
