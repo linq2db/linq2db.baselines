@@ -10,10 +10,10 @@ FROM
 			[GrandChild] [x]
 		WHERE
 			[x].[ParentID] IN (2)
-	) [m_1]
-		INNER JOIN [GrandChild] [d] ON ([m_1].[Key_1] = [d].[ChildID] OR [m_1].[Key_1] IS NULL AND [d].[ChildID] IS NULL)
+	) [m_1],
+	[GrandChild] [d]
 WHERE
-	[d].[ParentID] IN (2)
+	[d].[ParentID] IN (2) AND ([m_1].[Key_1] = [d].[ChildID] OR [m_1].[Key_1] IS NULL AND [d].[ChildID] IS NULL)
 
 -- Access.Jet.OleDb AccessOleDb
 SELECT DISTINCT
@@ -35,10 +35,10 @@ FROM
 			[GrandChild] [x]
 		WHERE
 			[x].[ParentID] IN (3)
-	) [m_1]
-		INNER JOIN [GrandChild] [d] ON ([m_1].[Key_1] = [d].[ChildID] OR [m_1].[Key_1] IS NULL AND [d].[ChildID] IS NULL)
+	) [m_1],
+	[GrandChild] [d]
 WHERE
-	[d].[ParentID] IN (3)
+	[d].[ParentID] IN (3) AND ([m_1].[Key_1] = [d].[ChildID] OR [m_1].[Key_1] IS NULL AND [d].[ChildID] IS NULL)
 
 -- Access.Jet.OleDb AccessOleDb
 SELECT DISTINCT

@@ -45,10 +45,19 @@ SELECT DISTINCT
 	[t].[Pk],
 	[t].[Id],
 	[t].[TargetName],
-	[a_ActualStage].[Id] as [Id_1],
-	[a_ActualStage].[TaskId],
-	[a_ActualStage].[Actual]
+	[a_ActualStage_1].[Id] as [Id_1],
+	[a_ActualStage_1].[TaskId],
+	[a_ActualStage_1].[Actual]
 FROM
 	[Issue1096Task] [t]
-		LEFT JOIN [Issue1096TaskStage] [a_ActualStage] ON ([t].[Id] = [a_ActualStage].[TaskId] AND [a_ActualStage].[Actual] = True)
+		LEFT JOIN (
+			SELECT
+				[a_ActualStage].[TaskId],
+				[a_ActualStage].[Actual],
+				[a_ActualStage].[Id]
+			FROM
+				[Issue1096TaskStage] [a_ActualStage]
+			WHERE
+				[a_ActualStage].[Actual] = True
+		) [a_ActualStage_1] ON ([t].[Id] = [a_ActualStage_1].[TaskId])
 

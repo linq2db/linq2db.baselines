@@ -136,7 +136,7 @@ SELECT
 FROM
 	([TestAnimalTable] [t1]
 		LEFT JOIN [ComplexAnimals] [a_TestAnimal] ON ([t1].[TestAnimalId] = [a_TestAnimal].[Id]))
-		LEFT JOIN [ComplexEyes] [a_Bla] ON ([a_TestAnimal].[EyeId] = [a_Bla].[Id] AND [a_TestAnimal].[Discriminator] = 'Dog')
+		LEFT JOIN [ComplexEyes] [a_Bla] ON (IIF([a_TestAnimal].[Discriminator] = 'Dog', [a_TestAnimal].[EyeId], NULL) = [a_Bla].[Id])
 ORDER BY
 	[t1].[Id]
 

@@ -32,6 +32,8 @@ FROM
 	) [m_1]
 		INNER JOIN [BookAuthor] [d] ON ([d].[FkBookId] = [m_1].[Id]))
 		LEFT JOIN [Author] [a_Author] ON ([d].[FkAuthorId] = [a_Author].[AuthorId])
+WHERE
+	[m_1].[Id] IS NOT NULL
 
 -- Access.Jet.OleDb AccessOleDb
 SELECT
@@ -72,6 +74,8 @@ FROM
 	) [m_1]
 		INNER JOIN [BookAuthor] [d_1] ON ([d_1].[FkBookId] = [m_1].[BookId]))
 		LEFT JOIN [Author] [a_Author] ON ([d_1].[FkAuthorId] = [a_Author].[AuthorId])
+WHERE
+	[m_1].[BookId] IS NOT NULL
 
 -- Access.Jet.OleDb AccessOleDb
 SELECT
