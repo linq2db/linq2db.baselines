@@ -133,7 +133,7 @@ SELECT
 	[a_Bla].[Xy]
 FROM
 	[ComplexAnimals] [t1]
-		LEFT JOIN [ComplexEyes] [a_Bla] ON ([t1].[EyeId] = [a_Bla].[Id] AND [t1].[Discriminator] = 'Dog')
+		LEFT JOIN [ComplexEyes] [a_Bla] ON (IIF([t1].[Discriminator] = 'Dog', [t1].[EyeId], NULL) = [a_Bla].[Id])
 ORDER BY
 	[t1].[Id]
 
