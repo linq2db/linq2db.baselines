@@ -1,5 +1,5 @@
-﻿-- PostgreSQL.9.2
--- Batch 1
+﻿-- PostgreSQL.9.2 PostgreSQL
+-- Command 1
 SELECT
 	m_1."Id",
 	d."Value"
@@ -7,7 +7,7 @@ FROM
 	"Item" m_1
 		INNER JOIN "ItemValue" d ON m_1."Id" = d."ItemId"
 
--- Batch 2
+-- Command 2
 SELECT
 	x."Id",
 	x."Text"

@@ -1,5 +1,5 @@
-﻿-- PostgreSQL.10 PostgreSQL.9.5
--- Batch 1
+﻿-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+-- Command 1
 SELECT
 	m_1."Id",
 	d."Id",
@@ -8,7 +8,7 @@ FROM
 	"EagerExceptionParent" m_1
 		INNER JOIN "EagerExceptionChild" d ON m_1."Id" = d."ParentId"
 
--- Batch 2
+-- Command 2
 SELECT
 	t1."Id"
 FROM

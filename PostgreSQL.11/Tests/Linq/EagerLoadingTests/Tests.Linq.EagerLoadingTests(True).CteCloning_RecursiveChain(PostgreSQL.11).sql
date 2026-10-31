@@ -1,5 +1,5 @@
-﻿-- PostgreSQL.11
--- Batch 1
+﻿-- PostgreSQL.11 PostgreSQL
+-- Command 1
 WITH RECURSIVE cte ("Value2")
 AS
 (
@@ -82,7 +82,7 @@ FROM
 	) m_1
 		INNER JOIN "CteTable" d_1 ON m_1."Id" = d_1."Value3"
 
--- Batch 2
+-- Command 2
 WITH RECURSIVE cte ("Value2")
 AS
 (

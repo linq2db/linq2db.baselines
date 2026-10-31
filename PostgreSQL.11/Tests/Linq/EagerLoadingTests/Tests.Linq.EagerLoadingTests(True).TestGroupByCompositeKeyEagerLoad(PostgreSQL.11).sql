@@ -1,5 +1,5 @@
-﻿-- PostgreSQL.11
--- Batch 1
+﻿-- PostgreSQL.11 PostgreSQL
+-- Command 1
 SELECT
 	m_1."MasterId",
 	d."DetailId"
@@ -14,7 +14,7 @@ FROM
 ORDER BY
 	d."DetailId"
 
--- Batch 2
+-- Command 2
 SELECT DISTINCT
 	g_1."MasterId"
 FROM
