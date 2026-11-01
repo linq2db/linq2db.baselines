@@ -1,6 +1,6 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
 DECLARE @Code VarChar(20) -- AnsiString
-SET     @Code = N'x:A'
+SET     @Code = N'x:A%'
 
 SELECT
 	COUNT(*)
