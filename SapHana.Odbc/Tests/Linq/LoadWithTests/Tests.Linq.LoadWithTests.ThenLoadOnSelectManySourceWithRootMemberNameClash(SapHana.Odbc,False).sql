@@ -15,11 +15,11 @@ FROM
 				SELECT DISTINCT
 					"s"."Id"
 				FROM
-					"ClashOrg" "x"
-						INNER JOIN "ClashOrgSystem" "a" ON "a"."OrganisationId" = "x"."Id"
+					"ClashOrg" "o"
+						CROSS JOIN "ClashOrgSystem" "a"
 						INNER JOIN "ClashSystem" "s" ON "a"."SystemId" = "s"."Id"
 				WHERE
-					"x"."Id" = 5
+					"o"."Id" = 5 AND "a"."OrganisationId" = "o"."Id"
 			) "t1"
 				INNER JOIN "ClashStage" "d" ON "t1"."Id" = "d"."SystemId"
 				LEFT JOIN "ClashProduct" "a_Product" ON "d"."ProductId" = "a_Product"."Id"
@@ -38,11 +38,11 @@ FROM
 		SELECT DISTINCT
 			"s"."Id"
 		FROM
-			"ClashOrg" "x"
-				INNER JOIN "ClashOrgSystem" "a" ON "a"."OrganisationId" = "x"."Id"
+			"ClashOrg" "o"
+				CROSS JOIN "ClashOrgSystem" "a"
 				INNER JOIN "ClashSystem" "s" ON "a"."SystemId" = "s"."Id"
 		WHERE
-			"x"."Id" = 5
+			"o"."Id" = 5 AND "a"."OrganisationId" = "o"."Id"
 	) "m_1"
 		INNER JOIN "ClashStage" "d" ON "m_1"."Id" = "d"."SystemId"
 		LEFT JOIN "ClashProduct" "a_Product" ON "d"."ProductId" = "a_Product"."Id"
@@ -51,9 +51,9 @@ FROM
 SELECT
 	"s"."Id"
 FROM
-	"ClashOrg" "x"
-		INNER JOIN "ClashOrgSystem" "a" ON "a"."OrganisationId" = "x"."Id"
+	"ClashOrg" "o"
+		CROSS JOIN "ClashOrgSystem" "a"
 		INNER JOIN "ClashSystem" "s" ON "a"."SystemId" = "s"."Id"
 WHERE
-	"x"."Id" = 5
+	"o"."Id" = 5 AND "a"."OrganisationId" = "o"."Id"
 
