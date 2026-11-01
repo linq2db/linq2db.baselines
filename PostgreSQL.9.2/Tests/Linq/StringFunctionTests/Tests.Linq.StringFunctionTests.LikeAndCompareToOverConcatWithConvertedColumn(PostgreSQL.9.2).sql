@@ -1,0 +1,31 @@
+﻿-- PostgreSQL.9.2 PostgreSQL
+SELECT
+	r."Plain" || r."Conv"
+FROM
+	"PlainAndConvertedUnicodeTable" r
+ORDER BY
+	r."Id"
+LIMIT 1
+
+-- PostgreSQL.9.2 PostgreSQL
+DECLARE @read Text(6) -- String
+SET     @read = 'A-x:n1'
+
+SELECT
+	COUNT(*)
+FROM
+	"PlainAndConvertedUnicodeTable" r
+WHERE
+	(r."Plain" || r."Conv") LIKE :read
+
+-- PostgreSQL.9.2 PostgreSQL
+DECLARE @read Text(6) -- String
+SET     @read = 'A-x:n1'
+
+SELECT
+	COUNT(*)
+FROM
+	"PlainAndConvertedUnicodeTable" r
+WHERE
+	(r."Plain" || r."Conv") = :read
+
