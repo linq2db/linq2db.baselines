@@ -8,7 +8,7 @@ SELECT
 	[d].[IsActive]
 FROM
 	[Company] [m_1]
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [m_1].[Id] AND [d].[Name] LIKE (Replace(Replace(Replace(Replace(Replace(Replace(Replace(Replace([m_1].[Name], '~', '~~'), '%', '~%'), '_', '~_'), '?', '~?'), '*', '~*'), '#', '~#'), '[', '~['), ']', '~]') || '%') ESCAPE '~'
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [m_1].[Id] AND [d].[Name] LIKE Replace(Replace(Replace(Replace(Replace(Replace(Replace(Replace([m_1].[Name], '~', '~~'), '%', '~%'), '_', '~_'), '?', '~?'), '*', '~*'), '#', '~#'), '[', '~['), ']', '~]') || '%' ESCAPE '~'
 ORDER BY
 	[d].[Id],
 	[m_1].[Id]
