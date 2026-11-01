@@ -4,8 +4,8 @@ SET     @suffix = N'Жук'
 
 SELECT
 	[t].[Id],
-	RTRIM(Replace([t].[CharColumn], N'A', @suffix)),
-	RTRIM(Replace([t].[CharColumn], N'A', N'Ж'))
+	RTRIM(Replace([t].[CharColumn], 'A', @suffix)),
+	RTRIM(Replace([t].[CharColumn], 'A', N'Ж'))
 FROM
 	[StringTypesTable] [t]
 
