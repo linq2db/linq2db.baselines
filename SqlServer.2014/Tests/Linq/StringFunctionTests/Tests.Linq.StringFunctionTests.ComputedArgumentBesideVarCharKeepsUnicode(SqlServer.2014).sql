@@ -6,9 +6,9 @@ SET     @search = N'Ж'
 
 SELECT
 	[t].[Id],
-	Replace([t].[VarCharColumn], N'A', @suffix),
-	Replace([t].[VarCharColumn], N'A', @suffix),
-	Replace([t].[VarCharColumn], @search, N'-')
+	Replace([t].[VarCharColumn], 'A', @suffix),
+	Replace([t].[VarCharColumn], 'A', @suffix),
+	Replace([t].[VarCharColumn], @search, '-')
 FROM
 	[StringTypesTable] [t]
 
