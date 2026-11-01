@@ -1,0 +1,55 @@
+﻿-- SqlCe
+DECLARE @operand Int -- Int32
+SET     @operand = 2
+
+SELECT TOP (2)
+	SUM([g_1].[Cents]) * @operand
+FROM
+	[ConvertedAmount] [g_1]
+GROUP BY
+	[g_1].[Group]
+
+-- SqlCe
+DECLARE @operand Int -- Int32
+SET     @operand = 2
+
+SELECT TOP (2)
+	SUM([g_1].[Cents]) / @operand
+FROM
+	[ConvertedAmount] [g_1]
+GROUP BY
+	[g_1].[Group]
+
+-- SqlCe
+DECLARE @operand Int -- Int32
+SET     @operand = 200
+
+SELECT TOP (2)
+	SUM([g_1].[Cents]) + @operand
+FROM
+	[ConvertedAmount] [g_1]
+GROUP BY
+	[g_1].[Group]
+
+-- SqlCe
+DECLARE @operand Int -- Int32
+SET     @operand = 2
+
+SELECT TOP (2)
+	[x].[Cents] * @operand
+FROM
+	[ConvertedAmount] [x]
+WHERE
+	[x].[Id] = 1
+
+-- SqlCe
+DECLARE @operand Int -- Int32
+SET     @operand = 200
+
+SELECT TOP (2)
+	[x].[Cents] + @operand
+FROM
+	[ConvertedAmount] [x]
+WHERE
+	[x].[Id] = 1
+
