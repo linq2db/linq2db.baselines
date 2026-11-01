@@ -4,7 +4,7 @@ SELECT
 FROM
 	PrefixedCodeTable t
 WHERE
-	toString(t.Code) LIKE 'x:A'
+	toString(t.Code) LIKE 'x:A%'
 
 -- ClickHouse.MySql ClickHouse
 SELECT
