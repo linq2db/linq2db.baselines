@@ -19,7 +19,7 @@ INSERT INTO "Person"
 VALUES
 (
 	'Insert16',
-	CAST(@name AS Int) + CAST(@idx AS Int),
+	(CAST(@name AS Int) + CAST(@idx AS Int)),
 	'M'
 )
 

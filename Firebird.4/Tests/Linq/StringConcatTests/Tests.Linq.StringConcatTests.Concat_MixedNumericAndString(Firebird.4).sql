@@ -4,7 +4,7 @@ SELECT
 FROM
 	"ConcatTestEntity" "e"
 WHERE
-	("e"."Num" || '-' || Coalesce("e"."StrReq", '')) = '100-Programmer'
+	"e"."Num" || '-' || Coalesce("e"."StrReq", '') = '100-Programmer'
 
 -- Firebird.4 Firebird4
 SELECT
