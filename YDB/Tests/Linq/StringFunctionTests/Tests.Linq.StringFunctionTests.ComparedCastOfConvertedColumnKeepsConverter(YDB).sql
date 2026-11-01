@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $Code Text(3) -- AnsiString
-SET     $Code = 'x:A'u
+DECLARE $Code Text(4) -- AnsiString
+SET     $Code = 'x:A%'u
 
 SELECT
 	COUNT(*) as Count_1
