@@ -1,6 +1,6 @@
 ﻿-- SqlCe
-DECLARE @Code NVarChar(3) -- String
-SET     @Code = 'x:A'
+DECLARE @Code NVarChar(4) -- String
+SET     @Code = 'x:A%'
 
 SELECT
 	COUNT(*)
