@@ -1,6 +1,6 @@
 ﻿-- Firebird.2.5 Firebird
-DECLARE @Code VarChar(3) -- String
-SET     @Code = 'x:A'
+DECLARE @Code VarChar(4) -- String
+SET     @Code = 'x:A%'
 
 SELECT
 	COUNT(*)
