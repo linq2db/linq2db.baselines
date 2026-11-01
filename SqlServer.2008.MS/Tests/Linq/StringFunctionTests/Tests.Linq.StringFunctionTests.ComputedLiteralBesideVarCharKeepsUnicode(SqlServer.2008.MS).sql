@@ -1,8 +1,8 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
 SELECT
 	[t].[Id],
-	Replace([t].[VarCharColumn], N'A', N'Ж'),
-	Replace([t].[VarCharColumn], N'A', N'Ж'),
+	Replace([t].[VarCharColumn], 'A', N'Ж'),
+	Replace([t].[VarCharColumn], 'A', N'Ж'),
 	CASE
 		WHEN [t].[VarCharColumn] IS NULL OR LEN([t].[VarCharColumn] + N'.') >= 9
 			THEN [t].[VarCharColumn]
