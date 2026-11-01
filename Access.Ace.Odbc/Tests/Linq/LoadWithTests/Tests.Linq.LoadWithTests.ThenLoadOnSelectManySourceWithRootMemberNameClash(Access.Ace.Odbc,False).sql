@@ -15,11 +15,18 @@ FROM
 				SELECT DISTINCT
 					[s].[Id]
 				FROM
-					([ClashOrg] [x]
-						INNER JOIN [ClashOrgSystem] [a] ON ([a].[OrganisationId] = [x].[Id]))
-						INNER JOIN [ClashSystem] [s] ON ([a].[SystemId] = [s].[Id])
+					(
+						SELECT
+							[a].[SystemId],
+							[o].[Id],
+							[a].[OrganisationId]
+						FROM
+							[ClashOrg] [o],
+							[ClashOrgSystem] [a]
+					) [cross_1]
+						INNER JOIN [ClashSystem] [s] ON ([cross_1].[SystemId] = [s].[Id])
 				WHERE
-					[x].[Id] = 5
+					[cross_1].[Id] = 5 AND [cross_1].[OrganisationId] = [cross_1].[Id]
 			) [t1]
 				INNER JOIN [ClashStage] [d] ON ([t1].[Id] = [d].[SystemId]))
 				LEFT JOIN [ClashProduct] [a_Product] ON ([d].[ProductId] = [a_Product].[Id])
@@ -38,11 +45,18 @@ FROM
 		SELECT DISTINCT
 			[s].[Id]
 		FROM
-			([ClashOrg] [x]
-				INNER JOIN [ClashOrgSystem] [a] ON ([a].[OrganisationId] = [x].[Id]))
-				INNER JOIN [ClashSystem] [s] ON ([a].[SystemId] = [s].[Id])
+			(
+				SELECT
+					[a].[SystemId],
+					[o].[Id],
+					[a].[OrganisationId]
+				FROM
+					[ClashOrg] [o],
+					[ClashOrgSystem] [a]
+			) [cross_1]
+				INNER JOIN [ClashSystem] [s] ON ([cross_1].[SystemId] = [s].[Id])
 		WHERE
-			[x].[Id] = 5
+			[cross_1].[Id] = 5 AND [cross_1].[OrganisationId] = [cross_1].[Id]
 	) [m_1]
 		INNER JOIN [ClashStage] [d] ON ([m_1].[Id] = [d].[SystemId]))
 		LEFT JOIN [ClashProduct] [a_Product] ON ([d].[ProductId] = [a_Product].[Id])
@@ -51,9 +65,16 @@ FROM
 SELECT
 	[s].[Id]
 FROM
-	([ClashOrg] [x]
-		INNER JOIN [ClashOrgSystem] [a] ON ([a].[OrganisationId] = [x].[Id]))
-		INNER JOIN [ClashSystem] [s] ON ([a].[SystemId] = [s].[Id])
+	(
+		SELECT
+			[a].[SystemId],
+			[o].[Id],
+			[a].[OrganisationId]
+		FROM
+			[ClashOrg] [o],
+			[ClashOrgSystem] [a]
+	) [cross_1]
+		INNER JOIN [ClashSystem] [s] ON ([cross_1].[SystemId] = [s].[Id])
 WHERE
-	[x].[Id] = 5
+	[cross_1].[Id] = 5 AND [cross_1].[OrganisationId] = [cross_1].[Id]
 
