@@ -1,6 +1,6 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @Code VarChar(3) -- AnsiString
-SET     @Code = 'x:A'
+DECLARE @Code VarChar(4) -- AnsiString
+SET     @Code = 'x:A%'
 
 SELECT
 	COUNT(*)
