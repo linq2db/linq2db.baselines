@@ -1,6 +1,6 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @Code Varchar2(3) -- String
-SET     @Code = 'x:A'
+DECLARE @Code Varchar2(4) -- String
+SET     @Code = 'x:A%'
 
 SELECT
 	COUNT(*)
