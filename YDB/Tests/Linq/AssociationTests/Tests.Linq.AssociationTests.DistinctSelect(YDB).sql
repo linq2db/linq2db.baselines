@@ -4,13 +4,20 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			a_Child.ParentID as ParentID,
-			a_Child.ChildID as ChildID
+			t1.ParentID_1 as ParentID,
+			t1.ChildID as ChildID
 		FROM
 			GrandChild c_1
-				INNER JOIN Child a_Child ON c_1.ParentID = a_Child.ParentID AND c_1.ChildID = a_Child.ChildID
-				INNER JOIN Parent a_Parent ON a_Child.ParentID = a_Parent.ParentID
+				LEFT JOIN (
+					SELECT
+						a_Parent.ParentID as ParentID,
+						a_Child.ParentID as ParentID_1,
+						a_Child.ChildID as ChildID
+					FROM
+						Child a_Child
+							LEFT JOIN Parent a_Parent ON a_Child.ParentID = a_Parent.ParentID
+				) t1 ON c_1.ParentID = t1.ParentID_1 AND c_1.ChildID = t1.ChildID
 		WHERE
-			a_Parent.ParentID > 0
+			t1.ParentID > 0
 	) c_2
 

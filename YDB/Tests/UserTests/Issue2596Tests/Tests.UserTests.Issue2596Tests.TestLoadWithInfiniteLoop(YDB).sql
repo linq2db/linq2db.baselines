@@ -17,6 +17,18 @@ FROM
 				INNER JOIN Contract a_Contract ON f.ContractId = a_Contract.Id
 				INNER JOIN AccessTariff a_AccessTariff ON f.AccessTariffId = a_AccessTariff.Id
 				INNER JOIN ServicePoint a_ServicePoint ON f.ServicePointId = a_ServicePoint.Id
+				LEFT JOIN (
+					SELECT
+						a_Town.Id as Id
+					FROM
+						Town a_Town
+							LEFT JOIN (
+								SELECT
+									a_State.Id as Id
+								FROM
+									CountryState a_State
+							) t1 ON a_Town.StateId = t1.Id
+				) t2 ON a_ServicePoint.TownId = t2.Id
 		WHERE
 			f.Id = 1
 	) m_1
@@ -41,6 +53,18 @@ FROM
 				INNER JOIN Contract a_Contract ON f.ContractId = a_Contract.Id
 				INNER JOIN AccessTariff a_AccessTariff ON f.AccessTariffId = a_AccessTariff.Id
 				INNER JOIN ServicePoint a_ServicePoint ON f.ServicePointId = a_ServicePoint.Id
+				LEFT JOIN (
+					SELECT
+						a_Town.Id as Id
+					FROM
+						Town a_Town
+							LEFT JOIN (
+								SELECT
+									a_State.Id as Id
+								FROM
+									CountryState a_State
+							) t1 ON a_Town.StateId = t1.Id
+				) t2 ON a_ServicePoint.TownId = t2.Id
 		WHERE
 			f.Id = 1
 	) m_1
@@ -62,6 +86,18 @@ FROM
 				INNER JOIN Contract a_Contract ON f.ContractId = a_Contract.Id
 				INNER JOIN AccessTariff a_AccessTariff ON f.AccessTariffId = a_AccessTariff.Id
 				INNER JOIN ServicePoint a_ServicePoint ON f.ServicePointId = a_ServicePoint.Id
+				LEFT JOIN (
+					SELECT
+						a_Town.Id as Id
+					FROM
+						Town a_Town
+							LEFT JOIN (
+								SELECT
+									a_State.Id as Id
+								FROM
+									CountryState a_State
+							) t1 ON a_Town.StateId = t1.Id
+				) t2 ON a_ServicePoint.TownId = t2.Id
 		WHERE
 			f.Id = 1
 	) m_1
@@ -86,6 +122,18 @@ FROM
 				INNER JOIN Contract a_Contract ON f.ContractId = a_Contract.Id
 				INNER JOIN AccessTariff a_AccessTariff ON f.AccessTariffId = a_AccessTariff.Id
 				INNER JOIN ServicePoint a_ServicePoint ON f.ServicePointId = a_ServicePoint.Id
+				LEFT JOIN (
+					SELECT
+						a_Town.Id as Id
+					FROM
+						Town a_Town
+							LEFT JOIN (
+								SELECT
+									a_State.Id as Id
+								FROM
+									CountryState a_State
+							) t1 ON a_Town.StateId = t1.Id
+				) t2 ON a_ServicePoint.TownId = t2.Id
 		WHERE
 			f.Id = 1
 	) m_1
@@ -108,6 +156,18 @@ FROM
 				INNER JOIN Contract a_Contract ON f.ContractId = a_Contract.Id
 				INNER JOIN AccessTariff a_AccessTariff ON f.AccessTariffId = a_AccessTariff.Id
 				INNER JOIN ServicePoint a_ServicePoint ON f.ServicePointId = a_ServicePoint.Id
+				LEFT JOIN (
+					SELECT
+						a_Town.Id as Id
+					FROM
+						Town a_Town
+							LEFT JOIN (
+								SELECT
+									a_State.Id as Id
+								FROM
+									CountryState a_State
+							) t1 ON a_Town.StateId = t1.Id
+				) t2 ON a_ServicePoint.TownId = t2.Id
 		WHERE
 			f.Id = 1
 	) m_1
@@ -140,12 +200,12 @@ SELECT
 	a_ServicePoint.Id as Id_8,
 	a_ServicePoint.TownId as TownId,
 	a_ServicePoint.StreetTypeId as StreetTypeId,
-	a_Town.Id as Id_9,
-	a_Town.StateId as StateId,
-	a_State.Id as Id_10,
-	a_State.CountryId as CountryId,
-	a_State.AutonomousCommunityId as AutonomousCommunityId,
-	a_Community.Id as Id_11,
+	t2.Id as Id_9,
+	t2.StateId as StateId,
+	t2.Id_1 as Id_10,
+	t2.CountryId as CountryId,
+	t2.AutonomousCommunityId as AutonomousCommunityId,
+	t2.Id_2 as Id_11,
 	a_StreetType.Id as Id_12,
 	f.Id as Id_13,
 	a_PriceList.Id as Id_14
@@ -158,9 +218,27 @@ FROM
 		INNER JOIN Contract a_Contract ON f.ContractId = a_Contract.Id
 		INNER JOIN AccessTariff a_AccessTariff ON f.AccessTariffId = a_AccessTariff.Id
 		INNER JOIN ServicePoint a_ServicePoint ON f.ServicePointId = a_ServicePoint.Id
-		LEFT JOIN Town a_Town ON a_ServicePoint.TownId = a_Town.Id
-		LEFT JOIN CountryState a_State ON a_Town.StateId = a_State.Id
-		LEFT JOIN AutonomousCommunity a_Community ON a_State.AutonomousCommunityId = a_Community.Id
+		LEFT JOIN (
+			SELECT
+				a_Town.Id as Id,
+				a_Town.StateId as StateId,
+				t1.Id as Id_1,
+				t1.CountryId as CountryId,
+				t1.AutonomousCommunityId as AutonomousCommunityId,
+				t1.Id_1 as Id_2
+			FROM
+				Town a_Town
+					LEFT JOIN (
+						SELECT
+							a_State.Id as Id,
+							a_State.CountryId as CountryId,
+							a_State.AutonomousCommunityId as AutonomousCommunityId,
+							a_Community.Id as Id_1
+						FROM
+							CountryState a_State
+								LEFT JOIN AutonomousCommunity a_Community ON a_State.AutonomousCommunityId = a_Community.Id
+					) t1 ON a_Town.StateId = t1.Id
+		) t2 ON a_ServicePoint.TownId = t2.Id
 		LEFT JOIN StreetType a_StreetType ON a_ServicePoint.StreetTypeId = a_StreetType.Id
 		LEFT JOIN PriceList a_PriceList ON f.PriceListId = a_PriceList.Id
 WHERE

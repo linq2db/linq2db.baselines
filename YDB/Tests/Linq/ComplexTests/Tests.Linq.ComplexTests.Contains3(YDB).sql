@@ -6,9 +6,9 @@ SET     $Ids0_2 = 222
 
 SELECT
 	p.ParentID as ParentID,
-	t2.ParentID as ParentID_1,
-	t2.ChildID as ChildID,
-	t2.GrandChildID as GrandChildID
+	gc_1.ParentID as ParentID_1,
+	gc_1.ChildID as ChildID,
+	gc_1.GrandChildID as GrandChildID
 FROM
 	Child ch
 		INNER JOIN Parent p ON ch.ParentID = p.ParentID
@@ -27,7 +27,7 @@ FROM
 						GROUP BY
 							max_1.ChildID
 					) t1 ON gc.GrandChildID = t1.c1
-		) t2 ON p.ParentID = t2.ParentID
+		) gc_1 ON p.ParentID = gc_1.ParentID
 WHERE
-	t2.ParentID IS NULL OR (t2.GrandChildID NOT IN ($Ids0_1, $Ids0_2) OR t2.GrandChildID IS NULL)
+	gc_1.ParentID IS NULL OR (gc_1.GrandChildID NOT IN ($Ids0_1, $Ids0_2) OR gc_1.GrandChildID IS NULL)
 

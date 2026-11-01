@@ -121,25 +121,39 @@ VALUES
 
 -- YDB Ydb
 SELECT
-	t1.Id as Id,
-	t1.TestAnimalId as TestAnimalId,
-	a_TestAnimal.AnimalType as AnimalType,
-	a_TestAnimal.AnimalType2 as AnimalType2,
-	a_TestAnimal.Id as Id_1,
-	a_TestAnimal.Name as Name,
-	a_TestAnimal.Discriminator as Discriminator,
-	a_TestAnimal.EyeId as EyeId,
-	a_TestAnimal.`Second` as Second_1,
-	a_TestAnimal.`First` as First_1,
-	a_Bla.Id as Id_2,
-	a_Bla.Xy as Xy
+	t2.Id as Id,
+	t2.TestAnimalId as TestAnimalId,
+	t1.AnimalType as AnimalType,
+	t1.AnimalType2 as AnimalType2,
+	t1.Id as Id_1,
+	t1.Name as Name,
+	t1.Discriminator as Discriminator,
+	t1.EyeId as EyeId,
+	t1.Second_1 as Second_1,
+	t1.First_1 as First_1,
+	t1.Id_1 as Id_2,
+	t1.Xy as Xy
 FROM
-	TestAnimalTable t1
-		LEFT JOIN ComplexAnimals a_TestAnimal ON t1.TestAnimalId = a_TestAnimal.Id
-		LEFT JOIN ComplexEyes a_Bla ON CASE
-			WHEN a_TestAnimal.Discriminator = 'Dog'u THEN a_TestAnimal.EyeId
-			ELSE NULL
-		END = a_Bla.Id
+	TestAnimalTable t2
+		LEFT JOIN (
+			SELECT
+				a_TestAnimal.AnimalType as AnimalType,
+				a_TestAnimal.AnimalType2 as AnimalType2,
+				a_TestAnimal.Id as Id,
+				a_TestAnimal.Name as Name,
+				a_TestAnimal.Discriminator as Discriminator,
+				a_TestAnimal.EyeId as EyeId,
+				a_TestAnimal.`Second` as Second_1,
+				a_TestAnimal.`First` as First_1,
+				a_Bla.Id as Id_1,
+				a_Bla.Xy as Xy
+			FROM
+				ComplexAnimals a_TestAnimal
+					LEFT JOIN ComplexEyes a_Bla ON CASE
+						WHEN a_TestAnimal.Discriminator = 'Dog'u THEN a_TestAnimal.EyeId
+						ELSE NULL
+					END = a_Bla.Id
+		) t1 ON t2.TestAnimalId = t1.Id
 ORDER BY
-	t1.Id
+	t2.Id
 
