@@ -1,6 +1,6 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-DECLARE @Code Varchar(3) -- String
-SET     @Code = 'x:A'
+DECLARE @Code Varchar(4) -- String
+SET     @Code = 'x:A%'
 
 SELECT
 	COUNT(*)
