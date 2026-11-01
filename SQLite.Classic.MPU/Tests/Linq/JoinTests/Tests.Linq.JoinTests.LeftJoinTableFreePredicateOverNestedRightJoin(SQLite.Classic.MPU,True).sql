@@ -1,0 +1,13 @@
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
+DECLARE @date VarChar(23) -- AnsiString
+SET     @date = '2000-01-01 00:00:00.000'
+
+SELECT
+	[p].[ParentID],
+	[g_1].[GrandChildID]
+FROM
+	[Parent] [p]
+		LEFT JOIN ([Child] [x]
+			RIGHT JOIN [GrandChild] [g_1] ON [g_1].[ChildID] = [x].[ChildID] OR [g_1].[ChildID] IS NULL AND [x].[ChildID] IS NULL)
+		ON [p].[ParentID] = [g_1].[ParentID] AND strftime('%Y-%m-%d %H:%M:%f', DATETIME('now', 'localtime')) > strftime('%Y-%m-%d %H:%M:%f', @date)
+
