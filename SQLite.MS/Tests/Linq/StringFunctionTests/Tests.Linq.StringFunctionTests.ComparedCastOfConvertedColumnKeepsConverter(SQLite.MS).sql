@@ -1,6 +1,6 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @Code VarChar(3) -- AnsiString
-SET     @Code = 'x:A'
+DECLARE @Code VarChar(4) -- AnsiString
+SET     @Code = 'x:A%'
 
 SELECT
 	COUNT(*)
