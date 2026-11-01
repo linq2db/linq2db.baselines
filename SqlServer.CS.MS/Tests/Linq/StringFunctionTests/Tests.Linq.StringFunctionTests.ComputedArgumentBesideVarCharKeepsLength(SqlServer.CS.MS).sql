@@ -4,7 +4,7 @@ SET     @suffix = N'ЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖ
 
 SELECT
 	[t].[Id],
-	Replace([t].[VarCharColumn], N'A', @suffix)
+	Replace([t].[VarCharColumn], 'A', @suffix)
 FROM
 	[StringTypesTable] [t]
 
