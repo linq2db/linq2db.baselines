@@ -2,12 +2,7 @@
 SELECT
 	[t].[Id],
 	Replace([t].[VarCharColumn], 'A', 'Ж'),
-	Replace([t].[VarCharColumn], 'A', 'Ж'),
-	CASE
-		WHEN [t].[VarCharColumn] IS NULL OR Length([t].[VarCharColumn]) >= 8
-			THEN [t].[VarCharColumn]
-		ELSE SUBSTR(REPLACE(HEX(ZEROBLOB(8)), '0', 'Ж'), 1, 8 - Length([t].[VarCharColumn])) || [t].[VarCharColumn]
-	END
+	Replace([t].[VarCharColumn], 'A', 'Ж')
 FROM
 	[StringTypesTable] [t]
 
