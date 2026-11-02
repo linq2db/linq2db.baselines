@@ -16,7 +16,6 @@ VALUES
 	@Value1
 )
 
-CommitTransactionAsync
 -- SqlCe
 DELETE FROM
 	[Parent]
