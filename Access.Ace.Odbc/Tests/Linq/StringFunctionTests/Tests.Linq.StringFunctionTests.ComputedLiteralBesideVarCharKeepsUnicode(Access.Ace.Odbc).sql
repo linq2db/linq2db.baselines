@@ -2,8 +2,7 @@
 SELECT
 	[t].[Id],
 	Replace([t].[VarCharColumn], 'A', 'Ж'),
-	Replace([t].[VarCharColumn], 'A', 'Ж'),
-	IIF([t].[VarCharColumn] IS NULL OR Len([t].[VarCharColumn]) >= 8, [t].[VarCharColumn], STRING(8 - Len([t].[VarCharColumn]), 'Ж') + [t].[VarCharColumn])
+	Replace([t].[VarCharColumn], 'A', 'Ж')
 FROM
 	[StringTypesTable] [t]
 
