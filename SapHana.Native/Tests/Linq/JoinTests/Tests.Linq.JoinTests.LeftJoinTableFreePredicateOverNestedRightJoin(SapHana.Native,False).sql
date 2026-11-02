@@ -1,6 +1,6 @@
 ﻿-- SapHana.Native SapHana
-DECLARE @date TimeStamp -- DateTime2
-SET     @date = TIMESTAMP '2000-01-01 00:00:00.0000000'
+DECLARE @year Integer -- Int32
+SET     @year = 2000
 
 SELECT
 	"p"."ParentID",
@@ -9,5 +9,5 @@ FROM
 	"Parent" "p"
 		LEFT JOIN ("Child" "x"
 			RIGHT JOIN "GrandChild" "g_1" ON "g_1"."ChildID" = "x"."ChildID" OR "g_1"."ChildID" IS NULL AND "x"."ChildID" IS NULL)
-		ON "p"."ParentID" = "g_1"."ParentID" AND CURRENT_TIMESTAMP < :"date"
+		ON "p"."ParentID" = "g_1"."ParentID" AND Year(CURRENT_TIMESTAMP) < :"year"
 
