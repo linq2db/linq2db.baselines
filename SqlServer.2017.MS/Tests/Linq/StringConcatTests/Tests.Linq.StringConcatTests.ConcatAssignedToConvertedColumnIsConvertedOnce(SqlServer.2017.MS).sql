@@ -7,7 +7,7 @@ SET     @suffix = N'-s'
 UPDATE
 	[ConvertedTargetRow]
 SET
-	[Conv] = Coalesce(@p, N'') + CAST([ConvertedTargetRow].[Sku] AS NVarChar(Max)) + Coalesce(@suffix, N'')
+	[Conv] = Coalesce(@p, N'') + [ConvertedTargetRow].[Sku] + Coalesce(@suffix, N'')
 
 -- SqlServer.2017.MS SqlServer.2017
 SELECT TOP (2)

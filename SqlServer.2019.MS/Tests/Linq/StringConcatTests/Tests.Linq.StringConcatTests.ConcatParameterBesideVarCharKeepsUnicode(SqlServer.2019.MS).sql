@@ -4,9 +4,9 @@ SET     @suffix = N'Жук'
 
 SELECT
 	[p].[Id],
-	CAST([p].[Sku] AS NVarChar(Max)) + Coalesce(@suffix, N''),
-	CAST(Coalesce(@suffix, N'') AS NVarChar(Max)) + [p].[Sku] + Coalesce(@suffix, N''),
-	CAST([p].[Sku] AS NVarChar(Max)) + Coalesce(@suffix, N'')
+	[p].[Sku] + Coalesce(@suffix, N''),
+	Coalesce(@suffix, N'') + [p].[Sku] + Coalesce(@suffix, N''),
+	[p].[Sku] + Coalesce(@suffix, N'')
 FROM
 	[ConcatProduct] [p]
 
