@@ -5,21 +5,13 @@ DECLARE $Ids0_2 Int32
 SET     $Ids0_2 = 5
 
 SELECT
-	t1.ParentID as ParentID,
-	t1.ChildID as ChildID,
-	t1.GrandChildID as GrandChildID
+	a_Bottom.ParentID as ParentID,
+	a_Bottom.ChildID as ChildID,
+	a_Bottom.GrandChildID as GrandChildID
 FROM
 	Parent t
-		LEFT JOIN (
-			SELECT
-				a_Bottom.ParentID as ParentID,
-				a_Bottom.ChildID as ChildID,
-				a_Bottom.GrandChildID as GrandChildID,
-				a_Middle.ParentID as ParentID_1
-			FROM
-				Child a_Middle
-					LEFT JOIN GrandChild a_Bottom ON a_Middle.ChildID = a_Bottom.ChildID
-		) t1 ON t.ParentID = t1.ParentID_1
+		LEFT JOIN Child a_Middle ON t.ParentID = a_Middle.ParentID
+		LEFT JOIN GrandChild a_Bottom ON a_Middle.ChildID = a_Bottom.ChildID
 WHERE
 	t.ParentID IN ($Ids0_1, $Ids0_2)
 ORDER BY

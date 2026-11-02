@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $date Timestamp -- DateTime2
-SET     $date = Timestamp('2000-01-01T00:00:00.000000Z')
+DECLARE $year Int32
+SET     $year = 2000
 
 SELECT
 	p.ParentID as ParentID,
@@ -15,6 +15,6 @@ FROM
 				Child t1
 					RIGHT JOIN GrandChild g_1 ON g_1.ChildID = t1.ChildID
 			WHERE
-				CurrentUtcTimestamp() < $date
+				DateTime::GetYear(CurrentUtcTimestamp()) < $year
 		) t2 ON p.ParentID = t2.ParentID
 

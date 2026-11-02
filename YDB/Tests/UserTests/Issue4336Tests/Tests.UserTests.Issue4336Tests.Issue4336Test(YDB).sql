@@ -9,29 +9,22 @@ SELECT
 	r.MaxCapacity as MaxCapacity,
 	r.Quantity as Quantity,
 	r.MaxCapacity - r.Quantity as FreeCapacity,
-	v2_1.MaxCapacity as MaxCapacity_1,
-	v2_1.Quantity as Quantity_1,
-	v2_1.FreeCapacity as FreeCapacity_1
+	COALESCE(t1.PeriodOrderLimit,0) as MaxCapacity_1,
+	t1.Quantity as Quantity_1,
+	COALESCE(t1.PeriodOrderLimit,0) - Coalesce(t1.Quantity, 0) as FreeCapacity_1
 FROM
 	(
 		SELECT
 			op.Id as OrderPeriodId,
-			vpc_1.CategoryId as CategoryId,
+			vpc.CategoryId as CategoryId,
 			pop.ProductId as ProductId,
-			COALESCE(vpc_1.PeriodOrderLimit,0) as MaxCapacity,
+			COALESCE(pcc.PeriodOrderLimit,0) as MaxCapacity,
 			COALESCE(COALESCE(vsp.Quantity,0),0) as Quantity
 		FROM
 			OrderPeriod op
 				INNER JOIN ProductsPerOrderPeriod pop ON op.Id = pop.OrderPeriodId
-				LEFT JOIN (
-					SELECT
-						vpc.CategoryId as CategoryId,
-						pcc.PeriodOrderLimit as PeriodOrderLimit,
-						vpc.Id as Id
-					FROM
-						Product vpc
-							LEFT JOIN ProductCategory pcc ON pcc.Id = vpc.CategoryId
-				) vpc_1 ON vpc_1.Id = pop.ProductId
+				LEFT JOIN Product vpc ON vpc.Id = pop.ProductId
+				LEFT JOIN ProductCategory pcc ON pcc.Id = vpc.CategoryId
 				LEFT JOIN (
 					SELECT
 						agroup.Id as Id,
@@ -48,11 +41,10 @@ FROM
 	) r
 		LEFT JOIN (
 			SELECT
-				COALESCE(vpcc.PeriodOrderLimit,0) as MaxCapacity,
-				vsopc.Quantity as Quantity,
-				COALESCE(vpcc.PeriodOrderLimit,0) - Coalesce(vsopc.Quantity, 0) as FreeCapacity,
 				v2.Id as Id,
-				vpcc.Id as Id_1
+				vpcc.Id as Id_1,
+				vpcc.PeriodOrderLimit as PeriodOrderLimit,
+				vsopc.Quantity as Quantity
 			FROM
 				OrderPeriod v2
 					CROSS JOIN ProductCategory vpcc
@@ -70,6 +62,6 @@ FROM
 							agroup_1.Id,
 							p.CategoryId
 					) vsopc ON vsopc.Id = v2.Id AND vsopc.CategoryId = vpcc.Id
-		) v2_1 ON v2_1.Id = r.OrderPeriodId AND v2_1.Id_1 = r.CategoryId
+		) t1 ON t1.Id = r.OrderPeriodId AND t1.Id_1 = r.CategoryId
 LIMIT $take
 
