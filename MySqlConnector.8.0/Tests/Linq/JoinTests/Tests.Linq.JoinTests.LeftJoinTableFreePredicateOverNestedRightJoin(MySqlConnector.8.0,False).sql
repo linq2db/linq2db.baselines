@@ -1,6 +1,6 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @date Datetime -- DateTime
-SET     @date = '2000-01-01'
+DECLARE @year Int32
+SET     @year = 2000
 
 SELECT
 	`p`.`ParentID`,
@@ -9,5 +9,5 @@ FROM
 	`Parent` `p`
 		LEFT JOIN (`Child` `x`
 			RIGHT JOIN `GrandChild` `g_1` ON `g_1`.`ChildID` = `x`.`ChildID` OR `g_1`.`ChildID` IS NULL AND `x`.`ChildID` IS NULL)
-		ON `p`.`ParentID` = `g_1`.`ParentID` AND CURRENT_TIMESTAMP < @date
+		ON `p`.`ParentID` = `g_1`.`ParentID` AND Extract(year from CURRENT_TIMESTAMP) < @year
 
