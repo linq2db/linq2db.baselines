@@ -7,7 +7,7 @@ SELECT
 FROM
 	[ConcatProduct] [p]
 WHERE
-	(CAST([p].[Sku] AS NVarChar(Max)) + Coalesce(@suffix, N'')) IN (N'A-100Жук', N'B-200Щит')
+	([p].[Sku] + Coalesce(@suffix, N'')) IN (N'A-100Жук', N'B-200Щит')
 
 -- SqlServer.2014
 SELECT
@@ -26,7 +26,7 @@ SELECT
 FROM
 	[ConcatProduct] [p]
 WHERE
-	(CAST([p].[Sku] AS NVarChar(Max)) + Coalesce(@suffix, N'')) IN ([p].[Title], N'B-200Жук')
+	([p].[Sku] + Coalesce(@suffix, N'')) IN ([p].[Title], N'B-200Жук')
 
 -- SqlServer.2014
 SELECT
