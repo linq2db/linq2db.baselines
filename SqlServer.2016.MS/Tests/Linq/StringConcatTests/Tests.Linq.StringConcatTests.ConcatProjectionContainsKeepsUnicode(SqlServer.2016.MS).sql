@@ -5,7 +5,7 @@ SET     @suffix = N'Жук'
 SELECT
 	IIF(N'A-100Жук' IN (
 		SELECT
-			[p].[Sku] + Coalesce(@suffix, N'')
+			CAST([p].[Sku] AS NVarChar(Max)) + Coalesce(@suffix, N'')
 		FROM
 			[ConcatProduct] [p]
 	), 1, 0)
@@ -17,7 +17,7 @@ SET     @suffix = N'Жук'
 SELECT
 	IIF(N'A-100Щит' IN (
 		SELECT
-			[p].[Sku] + Coalesce(@suffix, N'')
+			CAST([p].[Sku] AS NVarChar(Max)) + Coalesce(@suffix, N'')
 		FROM
 			[ConcatProduct] [p]
 	), 1, 0)
