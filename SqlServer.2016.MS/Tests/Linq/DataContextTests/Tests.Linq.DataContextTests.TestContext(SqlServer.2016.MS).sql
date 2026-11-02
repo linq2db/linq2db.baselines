@@ -58,4 +58,3 @@ SELECT
 FROM
 	[Person] [t1]
 
-CommitTransaction
