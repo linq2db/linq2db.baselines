@@ -31,7 +31,8 @@ VALUES
 )
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT LAST_INSERT_ID()
+SELECT
+	LAST_INSERT_ID() as `c1`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @p VarChar(5) -- String
@@ -75,7 +76,8 @@ VALUES
 )
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT LAST_INSERT_ID()
+SELECT
+	LAST_INSERT_ID() as `c1`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @p VarChar(5) -- String
