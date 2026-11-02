@@ -77,7 +77,8 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-SELECT last_insert_rowid()
+SELECT
+	last_insert_rowid()
 
 -- SQLite.MS SQLite
 DECLARE @Id  -- Int32

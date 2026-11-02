@@ -16,7 +16,6 @@ VALUES
 	@Value1
 )
 
-CommitTransactionAsync
 -- SQLite.MS SQLite
 DELETE FROM
 	[Parent]
