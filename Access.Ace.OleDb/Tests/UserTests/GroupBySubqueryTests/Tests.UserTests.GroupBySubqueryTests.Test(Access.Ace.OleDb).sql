@@ -2,22 +2,16 @@
 SELECT DISTINCT
 	[a_Ref4].[Field6],
 	[a_Ref3].[Field4],
-	IIF([t1].[Field8] IS NULL, '', [t1].[Field8])
+	IIF([a_Ref5].[Field8] IS NULL, '', [a_Ref5].[Field8])
 FROM
-	((([Table1] [t1_1]
-		INNER JOIN [Table3] [a_Ref1] ON ([t1_1].[Field1] = [a_Ref1].[Field1]))
+	(((([Table1] [t1]
+		INNER JOIN [Table3] [a_Ref1] ON ([t1].[Field1] = [a_Ref1].[Field1]))
 		INNER JOIN [Table4] [a_Ref4] ON ([a_Ref1].[Field5] = [a_Ref4].[Field5]))
-		LEFT JOIN [Table2] [a_Ref3] ON ([t1_1].[Field2] = [a_Ref3].[Field2]))
-		LEFT JOIN (
-			SELECT
-				[a_Ref5].[Field8],
-				[a_Ref2].[Field3]
-			FROM
-				[Table5] [a_Ref2]
-					LEFT JOIN [Table6] [a_Ref5] ON ([a_Ref2].[Field7] = [a_Ref5].[Field7])
-		) [t1] ON ([t1_1].[Field3] = [t1].[Field3] OR [t1_1].[Field3] IS NULL AND [t1].[Field3] IS NULL)
+		LEFT JOIN [Table2] [a_Ref3] ON ([t1].[Field2] = [a_Ref3].[Field2]))
+		LEFT JOIN [Table5] [a_Ref2] ON ([t1].[Field3] = [a_Ref2].[Field3] OR [t1].[Field3] IS NULL AND [a_Ref2].[Field3] IS NULL))
+		LEFT JOIN [Table6] [a_Ref5] ON ([a_Ref2].[Field7] = [a_Ref5].[Field7])
 WHERE
-	[t1_1].[Field3] IS NOT NULL
+	[t1].[Field3] IS NOT NULL
 
 -- Access.Ace.OleDb AccessOleDb
 SELECT
@@ -29,20 +23,14 @@ FROM
 		SELECT DISTINCT
 			[a_Ref4].[Field6],
 			[a_Ref3].[Field4],
-			IIF([t1].[Field8] IS NULL, '', [t1].[Field8]) as [Field1]
+			IIF([a_Ref5].[Field8] IS NULL, '', [a_Ref5].[Field8]) as [Field1]
 		FROM
-			((([Table1] [g_1]
+			(((([Table1] [g_1]
 				INNER JOIN [Table3] [a_Ref1] ON ([g_1].[Field1] = [a_Ref1].[Field1]))
 				INNER JOIN [Table4] [a_Ref4] ON ([a_Ref1].[Field5] = [a_Ref4].[Field5]))
 				LEFT JOIN [Table2] [a_Ref3] ON ([g_1].[Field2] = [a_Ref3].[Field2]))
-				LEFT JOIN (
-					SELECT
-						[a_Ref5].[Field8],
-						[a_Ref2].[Field3]
-					FROM
-						[Table5] [a_Ref2]
-							LEFT JOIN [Table6] [a_Ref5] ON ([a_Ref2].[Field7] = [a_Ref5].[Field7])
-				) [t1] ON ([g_1].[Field3] = [t1].[Field3] OR [g_1].[Field3] IS NULL AND [t1].[Field3] IS NULL)
+				LEFT JOIN [Table5] [a_Ref2] ON ([g_1].[Field3] = [a_Ref2].[Field3] OR [g_1].[Field3] IS NULL AND [a_Ref2].[Field3] IS NULL))
+				LEFT JOIN [Table6] [a_Ref5] ON ([a_Ref2].[Field7] = [a_Ref5].[Field7])
 		WHERE
 			[g_1].[Field3] IS NOT NULL
 	) [g_2]
