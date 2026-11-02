@@ -2,12 +2,7 @@
 SELECT
 	[t].[Id],
 	Replace([t].[VarCharColumn], 'A', 'Ж'),
-	Replace([t].[VarCharColumn], 'A', 'Ж'),
-	CASE
-		WHEN [t].[VarCharColumn] IS NULL OR LEN([t].[VarCharColumn] + '.') >= 9
-			THEN [t].[VarCharColumn]
-		ELSE REPLICATE('Ж', 8 - (LEN([t].[VarCharColumn] + '.') - 1)) + [t].[VarCharColumn]
-	END
+	Replace([t].[VarCharColumn], 'A', 'Ж')
 FROM
 	[StringTypesTable] [t]
 
