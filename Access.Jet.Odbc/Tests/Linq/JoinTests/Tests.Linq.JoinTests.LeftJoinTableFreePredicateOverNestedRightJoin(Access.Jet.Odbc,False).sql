@@ -1,20 +1,20 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-DECLARE @date DateTime
-SET     @date = #2000-01-01#
+DECLARE @year Int -- Int32
+SET     @year = 2000
 
 SELECT
 	[p].[ParentID],
-	[t1].[GrandChildID]
+	[t2].[GrandChildID]
 FROM
 	[Parent] [p]
 		LEFT JOIN (
 			SELECT
-				[g_1].[ParentID],
-				[g_1].[GrandChildID]
+				[g_1].[GrandChildID],
+				[g_1].[ParentID]
 			FROM
-				[Child] [x]
-					RIGHT JOIN [GrandChild] [g_1] ON ([g_1].[ChildID] = [x].[ChildID])
+				[Child] [t1]
+					RIGHT JOIN [GrandChild] [g_1] ON ([g_1].[ChildID] = [t1].[ChildID])
 			WHERE
-				Now < ?
-		) [t1] ON ([p].[ParentID] = [t1].[ParentID])
+				DatePart('yyyy', Now) < ?
+		) [t2] ON ([p].[ParentID] = [t2].[ParentID])
 
