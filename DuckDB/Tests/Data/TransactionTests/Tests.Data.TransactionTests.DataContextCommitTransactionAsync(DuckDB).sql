@@ -16,7 +16,6 @@ VALUES
 	$Value1
 )
 
-CommitTransactionAsync
 -- DuckDB
 DELETE FROM
 	Parent t1
