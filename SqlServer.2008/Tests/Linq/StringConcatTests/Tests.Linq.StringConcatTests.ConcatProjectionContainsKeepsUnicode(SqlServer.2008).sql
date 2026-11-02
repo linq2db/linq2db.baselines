@@ -6,7 +6,7 @@ SELECT
 	CASE
 		WHEN N'A-100Жук' IN (
 			SELECT
-				CAST([p].[Sku] AS NVarChar(Max)) + Coalesce(@suffix, N'')
+				[p].[Sku] + Coalesce(@suffix, N'')
 			FROM
 				[ConcatProduct] [p]
 		)
@@ -22,7 +22,7 @@ SELECT
 	CASE
 		WHEN N'A-100Щит' IN (
 			SELECT
-				CAST([p].[Sku] AS NVarChar(Max)) + Coalesce(@suffix, N'')
+				[p].[Sku] + Coalesce(@suffix, N'')
 			FROM
 				[ConcatProduct] [p]
 		)
