@@ -1,6 +1,6 @@
 ﻿-- SqlServer.2005
 SELECT
-	CAST(RIGHT(N'0' + CAST(DatePart(year, [t].[DateTimeValue]) AS VarChar(4)), 4) + N'-10-01' AS DateTime)
+	CAST(CAST(RIGHT(N'0' + CAST(DatePart(year, [t].[DateTimeValue]) AS VarChar(4)), 4) AS NVarChar(Max)) + N'-10-01' AS DateTime)
 FROM
 	[LinqDataTypes] [t]
 
