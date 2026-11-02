@@ -11,5 +11,5 @@ FROM
 			FROM
 				Child x
 					RIGHT JOIN GrandChild g_1 ON g_1.ChildID = x.ChildID
-		) t1 ON p.ParentID = t1.ParentID AND now() < toDateTime64('2000-01-01 00:00:00.0000000', 7)
+		) t1 ON p.ParentID = t1.ParentID AND toYear(now()) < 2000
 
