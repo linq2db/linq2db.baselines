@@ -1,6 +1,6 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
-DECLARE @date DateTime2
-SET     @date = DATETIME2FROMPARTS(2000, 1, 1, 0, 0, 0, 0, 7)
+DECLARE @year Int -- Int32
+SET     @year = 2000
 
 SELECT
 	[p].[ParentID],
@@ -9,5 +9,5 @@ FROM
 	[Parent] [p]
 		LEFT JOIN [Child] [x]
 			RIGHT JOIN [GrandChild] [g_1] ON [g_1].[ChildID] = [x].[ChildID] OR [g_1].[ChildID] IS NULL AND [x].[ChildID] IS NULL
-		ON [p].[ParentID] = [g_1].[ParentID] AND CURRENT_TIMESTAMP > @date
+		ON [p].[ParentID] = [g_1].[ParentID] AND DatePart(year, CURRENT_TIMESTAMP) > @year
 
