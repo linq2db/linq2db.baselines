@@ -30,8 +30,6 @@ WHERE
 
 
 
-
-
 -- MariaDB.10.MySqlConnector MariaDB
 SELECT
 	`e`.`IsDeleted`,
@@ -53,6 +51,8 @@ FROM
 	`Orders` `e`
 WHERE
 	NOT `e`.`IsDeleted`
+
+
 
 
 
