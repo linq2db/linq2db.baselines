@@ -1,12 +1,12 @@
 ﻿-- YDB Ydb
-DECLARE $FirstName Text(18) -- String
-SET     $FirstName = 'UpdateColumnFilter'u
-DECLARE $LastName Text(8) -- String
-SET     $LastName = 'whatever'u
-DECLARE $MiddleName Text -- String
-SET     $MiddleName = NULL
-DECLARE $Gender Text(1) -- AnsiStringFixedLength
-SET     $Gender = 'M'u
+DECLARE FirstName Text(18) -- String
+SET     FirstName = 'UpdateColumnFilter'u
+DECLARE LastName Text(8) -- String
+SET     LastName = 'whatever'u
+DECLARE MiddleName Text -- String
+SET     MiddleName = NULL
+DECLARE Gender Text(1) -- AnsiStringFixedLength
+SET     Gender = 'M'u
 
 INSERT INTO Person
 (
@@ -24,8 +24,8 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $FirstName Text(18) -- String
-SET     $FirstName = 'UpdateColumnFilter'u
+DECLARE FirstName Text(18) -- String
+SET     FirstName = 'UpdateColumnFilter'u
 
 SELECT
 	x.FirstName as FirstName,
@@ -40,10 +40,10 @@ WHERE
 LIMIT 2
 
 -- YDB Ydb
-DECLARE $FirstName Text(25) -- String
-SET     $FirstName = 'UpdateColumnFilterUpdated'u
-DECLARE $ID Int32
-SET     $ID = 5
+DECLARE FirstName Text(25) -- String
+SET     FirstName = 'UpdateColumnFilterUpdated'u
+DECLARE ID Int32
+SET     ID = 5
 
 UPDATE
 	Person
@@ -53,8 +53,8 @@ WHERE
 	Person.PersonID = $ID
 
 -- YDB Ydb
-DECLARE $ID Int32
-SET     $ID = 5
+DECLARE ID Int32
+SET     ID = 5
 
 SELECT
 	x.FirstName as FirstName,
@@ -69,16 +69,16 @@ WHERE
 LIMIT 2
 
 -- YDB Ydb
-DECLARE $FirstName Text(25) -- String
-SET     $FirstName = 'UpdateColumnFilterUpdated'u
-DECLARE $LastName Text(25) -- String
-SET     $LastName = 'UpdateColumnFilterUpdated'u
-DECLARE $MiddleName Text -- String
-SET     $MiddleName = NULL
-DECLARE $Gender Text(1) -- AnsiStringFixedLength
-SET     $Gender = 'M'u
-DECLARE $ID Int32
-SET     $ID = 5
+DECLARE FirstName Text(25) -- String
+SET     FirstName = 'UpdateColumnFilterUpdated'u
+DECLARE LastName Text(25) -- String
+SET     LastName = 'UpdateColumnFilterUpdated'u
+DECLARE MiddleName Text -- String
+SET     MiddleName = NULL
+DECLARE Gender Text(1) -- AnsiStringFixedLength
+SET     Gender = 'M'u
+DECLARE ID Int32
+SET     ID = 5
 
 UPDATE
 	Person
@@ -91,8 +91,8 @@ WHERE
 	Person.PersonID = $ID
 
 -- YDB Ydb
-DECLARE $ID Int32
-SET     $ID = 5
+DECLARE ID Int32
+SET     ID = 5
 
 SELECT
 	t1.FirstName as FirstName,

@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 10
-DECLARE $Id_1 Int32
-SET     $Id_1 = 11
+DECLARE Id Int32
+SET     Id = 10
+DECLARE Id_1 Int32
+SET     Id_1 = 11
 
 SELECT
 	p.FirstName as FirstName,

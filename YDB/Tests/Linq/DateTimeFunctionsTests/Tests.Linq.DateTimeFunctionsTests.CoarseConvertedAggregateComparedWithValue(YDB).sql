@@ -6,8 +6,8 @@ FROM
 LIMIT 2
 
 -- YDB Ydb
-DECLARE $value Datetime -- DateTime
-SET     $value = Timestamp('2026-06-01T09:00:00.000000Z')
+DECLARE value Datetime -- DateTime
+SET     value = Timestamp('2026-06-01T09:00:00.000000Z')
 
 SELECT
 	COUNT(*) as Count_1
@@ -17,8 +17,8 @@ WHERE
 	r.`Value` = $value
 
 -- YDB Ydb
-DECLARE $value Datetime -- DateTime
-SET     $value = Timestamp('2026-06-01T09:00:00.000000Z')
+DECLARE value Datetime -- DateTime
+SET     value = Timestamp('2026-06-01T09:00:00.000000Z')
 
 SELECT
 	COUNT(*) as Count_1
@@ -35,8 +35,8 @@ FROM
 	) t1
 
 -- YDB Ydb
-DECLARE $CoarseValue Datetime -- DateTime
-SET     $CoarseValue = Timestamp('2026-06-01T09:00:00.000000Z')
+DECLARE CoarseValue Datetime -- DateTime
+SET     CoarseValue = Timestamp('2026-06-01T09:00:00.000000Z')
 
 SELECT
 	COUNT(*) as Count_1
@@ -53,8 +53,8 @@ FROM
 	) t1
 
 -- YDB Ydb
-DECLARE $day Date
-SET     $day = Timestamp('2026-05-31T00:00:00.000000Z')
+DECLARE day Date
+SET     day = Timestamp('2026-05-31T00:00:00.000000Z')
 
 SELECT
 	COUNT(*) as Count_1
@@ -71,8 +71,8 @@ FROM
 	) t1
 
 -- YDB Ydb
-DECLARE $CoarseConvertedDay Date
-SET     $CoarseConvertedDay = Timestamp('2026-05-31T00:00:00.000000Z')
+DECLARE CoarseConvertedDay Date
+SET     CoarseConvertedDay = Timestamp('2026-05-31T00:00:00.000000Z')
 
 SELECT
 	COUNT(*) as Count_1
@@ -89,8 +89,8 @@ FROM
 	) t1
 
 -- YDB Ydb
-DECLARE $Ids0_1 Timestamp -- DateTime2
-SET     $Ids0_1 = Timestamp('2026-06-01T09:00:00.000000Z')
+DECLARE Ids0_1 Timestamp -- DateTime2
+SET     Ids0_1 = Timestamp('2026-06-01T09:00:00.000000Z')
 
 SELECT
 	COUNT(*) as Count_1

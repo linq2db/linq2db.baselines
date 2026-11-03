@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $Data Text(9) -- String
-SET     $Data = '***III***'u
-DECLARE $ID Int32
-SET     $ID = 3
+DECLARE Data Text(9) -- String
+SET     Data = '***III***'u
+DECLARE ID Int32
+SET     ID = 3
 
 UPDATE
 	TrimTestTable
@@ -12,8 +12,8 @@ WHERE
 	TrimTestTable.ID = $ID
 
 -- YDB Ydb
-DECLARE $Data Text(9) -- String
-SET     $Data = '***OOO***'u
+DECLARE Data Text(9) -- String
+SET     Data = '***OOO***'u
 
 UPDATE
 	TrimTestTable
@@ -23,10 +23,10 @@ WHERE
 	TrimTestTable.`Data` = '***XXX***'u
 
 -- YDB Ydb
-DECLARE $Data Text(9) -- String
-SET     $Data = '***SSS***'u
-DECLARE $p Text(9) -- String
-SET     $p = '***HHH***'u
+DECLARE Data Text(9) -- String
+SET     Data = '***SSS***'u
+DECLARE p Text(9) -- String
+SET     p = '***HHH***'u
 
 UPDATE
 	TrimTestTable

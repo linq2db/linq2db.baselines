@@ -1,10 +1,10 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 6
-DECLARE $Title Text(5) -- String
-SET     $Title = 'title'u
-DECLARE $Text Text(4) -- String
-SET     $Text = 'text'u
+DECLARE Id Int32
+SET     Id = 6
+DECLARE Title Text(5) -- String
+SET     Title = 'title'u
+DECLARE Text Text(4) -- String
+SET     Text = 'text'u
 
 INSERT INTO Topic
 (
@@ -20,12 +20,12 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 60
-DECLARE $TopicId Int32
-SET     $TopicId = 6
-DECLARE $Text Text(7) -- String
-SET     $Text = 'message'u
+DECLARE Id Int32
+SET     Id = 60
+DECLARE TopicId Int32
+SET     TopicId = 6
+DECLARE Text Text(7) -- String
+SET     Text = 'message'u
 
 INSERT INTO Message
 (
@@ -41,12 +41,12 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 61
-DECLARE $TopicId Int32
-SET     $TopicId = 7
-DECLARE $Text Text(7) -- String
-SET     $Text = 'message'u
+DECLARE Id Int32
+SET     Id = 61
+DECLARE TopicId Int32
+SET     TopicId = 7
+DECLARE Text Text(7) -- String
+SET     Text = 'message'u
 
 INSERT INTO Message
 (

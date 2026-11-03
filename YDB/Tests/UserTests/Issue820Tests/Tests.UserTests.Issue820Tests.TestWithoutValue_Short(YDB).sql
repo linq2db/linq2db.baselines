@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $param Int16
-SET     $param = 1s
+DECLARE param Int16
+SET     param = 1s
 
 SELECT
 	t1.ID as ID,

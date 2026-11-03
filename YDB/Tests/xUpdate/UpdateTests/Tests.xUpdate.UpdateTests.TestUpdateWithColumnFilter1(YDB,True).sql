@@ -1,12 +1,12 @@
 ﻿-- YDB Ydb
-DECLARE $FirstName Text(25) -- String
-SET     $FirstName = 'UpdateColumnFilterUpdated'u
-DECLARE $LastName Text(8) -- String
-SET     $LastName = 'whatever'u
-DECLARE $MiddleName Text(15) -- String
-SET     $MiddleName = 'som middle name'u
-DECLARE $Gender Text(1) -- AnsiStringFixedLength
-SET     $Gender = 'M'u
+DECLARE FirstName Text(25) -- String
+SET     FirstName = 'UpdateColumnFilterUpdated'u
+DECLARE LastName Text(8) -- String
+SET     LastName = 'whatever'u
+DECLARE MiddleName Text(15) -- String
+SET     MiddleName = 'som middle name'u
+DECLARE Gender Text(1) -- AnsiStringFixedLength
+SET     Gender = 'M'u
 
 INSERT INTO Person
 (
@@ -24,8 +24,8 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $FirstName Text(25) -- String
-SET     $FirstName = 'UpdateColumnFilterUpdated'u
+DECLARE FirstName Text(25) -- String
+SET     FirstName = 'UpdateColumnFilterUpdated'u
 
 SELECT
 	x.FirstName as FirstName,
@@ -40,16 +40,16 @@ WHERE
 LIMIT 1
 
 -- YDB Ydb
-DECLARE $FirstName Text(25) -- String
-SET     $FirstName = 'UpdateColumnFilterUpdated'u
-DECLARE $LastName Text(8) -- String
-SET     $LastName = 'whatever'u
-DECLARE $MiddleName Text(12) -- String
-SET     $MiddleName = 'updated name'u
-DECLARE $Gender Text(1) -- AnsiStringFixedLength
-SET     $Gender = 'M'u
-DECLARE $ID Int32
-SET     $ID = 5
+DECLARE FirstName Text(25) -- String
+SET     FirstName = 'UpdateColumnFilterUpdated'u
+DECLARE LastName Text(8) -- String
+SET     LastName = 'whatever'u
+DECLARE MiddleName Text(12) -- String
+SET     MiddleName = 'updated name'u
+DECLARE Gender Text(1) -- AnsiStringFixedLength
+SET     Gender = 'M'u
+DECLARE ID Int32
+SET     ID = 5
 
 UPDATE
 	Person
@@ -62,8 +62,8 @@ WHERE
 	Person.PersonID = $ID
 
 -- YDB Ydb
-DECLARE $FirstName Text(25) -- String
-SET     $FirstName = 'UpdateColumnFilterUpdated'u
+DECLARE FirstName Text(25) -- String
+SET     FirstName = 'UpdateColumnFilterUpdated'u
 
 SELECT
 	x.FirstName as FirstName,

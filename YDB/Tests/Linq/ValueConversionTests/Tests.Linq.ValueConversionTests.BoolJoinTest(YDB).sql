@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $true_value Text(1) -- AnsiString
-SET     $true_value = 'Y'u
+DECLARE true_value Text(1) -- AnsiString
+SET     true_value = 'Y'u
 
 SELECT
 	t1.`Enum` as `Enum`

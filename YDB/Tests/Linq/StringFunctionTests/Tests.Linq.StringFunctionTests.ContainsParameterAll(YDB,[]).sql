@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $s Text(8) -- String
-SET     $s = '123[]456'u
-DECLARE $toTest Text(4) -- String
-SET     $toTest = '%[]%'u
+DECLARE s Text(8) -- String
+SET     s = '123[]456'u
+DECLARE toTest Text(4) -- String
+SET     toTest = '%[]%'u
 
 SELECT
 	COUNT(*) as Count_1

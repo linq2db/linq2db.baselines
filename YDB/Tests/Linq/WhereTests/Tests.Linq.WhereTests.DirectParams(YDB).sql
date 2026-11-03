@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $id Int32
-SET     $id = 1
-DECLARE $name Text(4) -- String
-SET     $name = 'John'u
+DECLARE id Int32
+SET     id = 1
+DECLARE name Text(4) -- String
+SET     name = 'John'u
 
 SELECT
 	p.FirstName as FirstName,

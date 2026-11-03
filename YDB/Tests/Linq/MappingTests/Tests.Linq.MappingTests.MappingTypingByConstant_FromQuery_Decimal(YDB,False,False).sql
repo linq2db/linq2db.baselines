@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $value Decimal(1, 0)
-SET     $value = Decimal('1', 22, 9)
+DECLARE value Decimal(1, 0)
+SET     value = Decimal('1', 22, 9)
 
 SELECT
 	t1.ID as ID,
@@ -15,8 +15,8 @@ FROM
 	) t1
 
 -- YDB Ydb
-DECLARE $value Decimal(13, 3)
-SET     $value = Decimal('2147483648.123', 22, 9)
+DECLARE value Decimal(13, 3)
+SET     value = Decimal('2147483648.123', 22, 9)
 
 SELECT
 	t1.ID as ID,

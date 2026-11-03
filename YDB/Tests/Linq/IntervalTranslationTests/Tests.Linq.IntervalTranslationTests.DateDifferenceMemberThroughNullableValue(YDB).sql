@@ -15,8 +15,8 @@ WHERE
 	CAST(CAST(r.ClosedOnNullable - r.OpenedOn AS Int64) * 10l AS Double) / Double('36000000000') > Double('0')
 
 -- YDB Ydb
-DECLARE $asOf Timestamp -- DateTime2
-SET     $asOf = Timestamp('2026-01-03T13:30:00.000000Z')
+DECLARE asOf Timestamp -- DateTime2
+SET     asOf = Timestamp('2026-01-03T13:30:00.000000Z')
 
 SELECT
 	r.Id as Id

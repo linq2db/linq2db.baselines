@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $Has Bool -- Boolean
-SET     $Has = true
+DECLARE Has Bool -- Boolean
+SET     Has = true
 
 INSERT INTO Issue1438
 (
@@ -14,8 +14,8 @@ RETURNING
 	Id
 
 -- YDB Ydb
-DECLARE $id Int32
-SET     $id = 1
+DECLARE id Int32
+SET     id = 1
 
 SELECT
 	t1.Id as Id,

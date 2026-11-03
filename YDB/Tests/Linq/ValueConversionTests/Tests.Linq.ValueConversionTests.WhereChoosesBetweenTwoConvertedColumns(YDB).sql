@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $EnumNullable Text(6) -- AnsiString
-SET     $EnumNullable = 'Value1'u
+DECLARE EnumNullable Text(6) -- AnsiString
+SET     EnumNullable = 'Value1'u
 
 SELECT
 	COUNT(*) as Count_1

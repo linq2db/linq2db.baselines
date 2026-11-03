@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $p Int32
-SET     $p = 2
-DECLARE $p_1 Int32
-SET     $p_1 = 0
+DECLARE p Int32
+SET     p = 2
+DECLARE p_1 Int32
+SET     p_1 = 0
 
 SELECT
 	t.Id as Id

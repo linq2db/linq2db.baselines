@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $abcdefghijabcdefghijabcdefghijabcdefghijabcdefghij Int32
-SET     $abcdefghijabcdefghijabcdefghijabcdefghijabcdefghij = 1
+DECLARE abcdefghijabcdefghijabcdefghijabcdefghijabcdefghij Int32
+SET     abcdefghijabcdefghijabcdefghijabcdefghijabcdefghij = 1
 
 SELECT
 	r.FirstName as FirstName,

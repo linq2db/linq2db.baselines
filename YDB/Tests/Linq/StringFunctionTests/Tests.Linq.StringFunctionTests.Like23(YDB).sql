@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $pattern Text(6) -- String
-SET     $pattern = '%h~%n%'u
+DECLARE pattern Text(6) -- String
+SET     pattern = '%h~%n%'u
 
 SELECT
 	p.FirstName as FirstName,

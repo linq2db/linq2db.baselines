@@ -1,12 +1,12 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 2
-DECLARE $SerialNumber Text(7) -- String
-SET     $SerialNumber = 'TV00001'u
-DECLARE $DeviceType Text(2) -- String
-SET     $DeviceType = 'TV'u
-DECLARE $Location Text(9) -- String
-SET     $Location = 'Something'u
+DECLARE Id Int32
+SET     Id = 2
+DECLARE SerialNumber Text(7) -- String
+SET     SerialNumber = 'TV00001'u
+DECLARE DeviceType Text(2) -- String
+SET     DeviceType = 'TV'u
+DECLARE Location Text(9) -- String
+SET     Location = 'Something'u
 
 INSERT INTO Issue4280
 (
@@ -24,12 +24,12 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $SerialNumber Text(9) -- String
-SET     $SerialNumber = 'Disp00001'u
-DECLARE $DeviceType Text(7) -- String
-SET     $DeviceType = 'DISPLAY'u
+DECLARE Id Int32
+SET     Id = 1
+DECLARE SerialNumber Text(9) -- String
+SET     SerialNumber = 'Disp00001'u
+DECLARE DeviceType Text(7) -- String
+SET     DeviceType = 'DISPLAY'u
 
 INSERT INTO Issue4280
 (
@@ -56,14 +56,14 @@ ORDER BY
 	t1.Id
 
 -- YDB Ydb
-DECLARE $SerialNumber Text(7) -- String
-SET     $SerialNumber = 'TV00002'u
-DECLARE $DeviceType Text(2) -- String
-SET     $DeviceType = 'TV'u
-DECLARE $Location Text(8) -- String
-SET     $Location = 'Anything'u
-DECLARE $Id Int32
-SET     $Id = 2
+DECLARE SerialNumber Text(7) -- String
+SET     SerialNumber = 'TV00002'u
+DECLARE DeviceType Text(2) -- String
+SET     DeviceType = 'TV'u
+DECLARE Location Text(8) -- String
+SET     Location = 'Anything'u
+DECLARE Id Int32
+SET     Id = 2
 
 UPDATE
 	Issue4280
@@ -75,12 +75,12 @@ WHERE
 	Issue4280.Id = $Id
 
 -- YDB Ydb
-DECLARE $SerialNumber Text(9) -- String
-SET     $SerialNumber = 'Disp00002'u
-DECLARE $DeviceType Text(7) -- String
-SET     $DeviceType = 'DISPLAY'u
-DECLARE $Id Int32
-SET     $Id = 1
+DECLARE SerialNumber Text(9) -- String
+SET     SerialNumber = 'Disp00002'u
+DECLARE DeviceType Text(7) -- String
+SET     DeviceType = 'DISPLAY'u
+DECLARE Id Int32
+SET     Id = 1
 
 UPDATE
 	Issue4280

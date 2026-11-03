@@ -5,10 +5,10 @@ FROM
 	AllTypes t1
 
 -- YDB Ydb
-DECLARE $real Float -- Single
-SET     $real = Float('NaN')
-DECLARE $dbl Double
-SET     $dbl = Double('NaN')
+DECLARE real Float -- Single
+SET     real = Float('NaN')
+DECLARE dbl Double
+SET     dbl = Double('NaN')
 
 INSERT INTO AllTypes
 (
@@ -24,10 +24,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $real Float -- Single
-SET     $real = Float('-inf')
-DECLARE $dbl Double
-SET     $dbl = Double('-inf')
+DECLARE real Float -- Single
+SET     real = Float('-inf')
+DECLARE dbl Double
+SET     dbl = Double('-inf')
 
 INSERT INTO AllTypes
 (
@@ -43,10 +43,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $real Float -- Single
-SET     $real = Float('inf')
-DECLARE $dbl Double
-SET     $dbl = Double('inf')
+DECLARE real Float -- Single
+SET     real = Float('inf')
+DECLARE dbl Double
+SET     dbl = Double('inf')
 
 INSERT INTO AllTypes
 (
@@ -62,8 +62,8 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $maxID Int32
-SET     $maxID = 2
+DECLARE maxID Int32
+SET     maxID = 2
 
 SELECT
 	t1.floatDataType as floatDataType,

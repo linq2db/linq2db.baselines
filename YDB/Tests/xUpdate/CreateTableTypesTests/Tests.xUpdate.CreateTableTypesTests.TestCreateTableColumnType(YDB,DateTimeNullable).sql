@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $DateTimeNullable Timestamp -- DateTime2
-SET     $DateTimeNullable = NULL
+DECLARE Id Int32
+SET     Id = 1
+DECLARE DateTimeNullable Timestamp -- DateTime2
+SET     DateTimeNullable = NULL
 
 INSERT INTO CreateTableTypes
 (
@@ -16,10 +16,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 2
-DECLARE $DateTimeNullable Timestamp -- DateTime2
-SET     $DateTimeNullable = Timestamp('2018-11-25T01:02:03.000000Z')
+DECLARE Id Int32
+SET     Id = 2
+DECLARE DateTimeNullable Timestamp -- DateTime2
+SET     DateTimeNullable = Timestamp('2018-11-25T01:02:03.000000Z')
 
 INSERT INTO CreateTableTypes
 (

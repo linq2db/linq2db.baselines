@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $Ids0_1 Int32
-SET     $Ids0_1 = 1
-DECLARE $Ids0_2 Int32
-SET     $Ids0_2 = 5
+DECLARE Ids0_1 Int32
+SET     Ids0_1 = 1
+DECLARE Ids0_2 Int32
+SET     Ids0_2 = 5
 
 SELECT
 	a_Middle.ParentID as ParentID,

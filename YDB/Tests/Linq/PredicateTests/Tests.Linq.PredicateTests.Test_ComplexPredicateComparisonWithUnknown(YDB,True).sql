@@ -7,8 +7,8 @@ WHERE
 	r.Value1 = 1
 
 -- YDB Ydb
-DECLARE $cnt Int32
-SET     $cnt = 18
+DECLARE cnt Int32
+SET     cnt = 18
 
 $CTE_1 = 	SELECT
 		COUNT(*) as Count_1
@@ -41,8 +41,8 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $cnt Int32
-SET     $cnt = 18
+DECLARE cnt Int32
+SET     cnt = 18
 
 $CTE_1 = 	SELECT
 		COUNT(*) as Count_1
@@ -75,8 +75,8 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $cnt Int32
-SET     $cnt = 18
+DECLARE cnt Int32
+SET     cnt = 18
 
 $CTE_1 = 	SELECT
 		COUNT(*) as Count_1
@@ -108,8 +108,8 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $cnt Int32
-SET     $cnt = 18
+DECLARE cnt Int32
+SET     cnt = 18
 
 $CTE_1 = 	SELECT
 		COUNT(*) as Count_1
@@ -141,8 +141,8 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $cnt Int32
-SET     $cnt = 18
+DECLARE cnt Int32
+SET     cnt = 18
 
 $CTE_1 = 	SELECT
 		COUNT(*) as Count_1
@@ -174,8 +174,8 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $cnt Int32
-SET     $cnt = 18
+DECLARE cnt Int32
+SET     cnt = 18
 
 $CTE_1 = 	SELECT
 		COUNT(*) as Count_1
@@ -207,8 +207,8 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $cnt Int32
-SET     $cnt = 18
+DECLARE cnt Int32
+SET     cnt = 18
 
 $CTE_1 = 	SELECT
 		COUNT(*) as Count_1
@@ -240,8 +240,8 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $cnt Int32
-SET     $cnt = 18
+DECLARE cnt Int32
+SET     cnt = 18
 
 $CTE_1 = 	SELECT
 		COUNT(*) as Count_1
@@ -273,8 +273,8 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $cnt Int32
-SET     $cnt = 18
+DECLARE cnt Int32
+SET     cnt = 18
 
 $CTE_1 = 	SELECT
 		COUNT(*) as Count_1
@@ -307,8 +307,8 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $cnt Int32
-SET     $cnt = 18
+DECLARE cnt Int32
+SET     cnt = 18
 
 $CTE_1 = 	SELECT
 		COUNT(*) as Count_1
@@ -341,8 +341,8 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $cnt Int32
-SET     $cnt = 18
+DECLARE cnt Int32
+SET     cnt = 18
 
 $CTE_1 = 	SELECT
 		COUNT(*) as Count_1
@@ -375,8 +375,8 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $cnt Int32
-SET     $cnt = 18
+DECLARE cnt Int32
+SET     cnt = 18
 
 $CTE_1 = 	SELECT
 		COUNT(*) as Count_1
@@ -409,8 +409,8 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $cnt Int32
-SET     $cnt = 18
+DECLARE cnt Int32
+SET     cnt = 18
 
 $CTE_1 = 	SELECT
 		COUNT(*) as Count_1
@@ -442,8 +442,8 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $cnt Int32
-SET     $cnt = 18
+DECLARE cnt Int32
+SET     cnt = 18
 
 $CTE_1 = 	SELECT
 		COUNT(*) as Count_1
@@ -475,8 +475,8 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $cnt Int32
-SET     $cnt = 18
+DECLARE cnt Int32
+SET     cnt = 18
 
 $CTE_1 = 	SELECT
 		COUNT(*) as Count_1
@@ -508,8 +508,8 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $cnt Int32
-SET     $cnt = 18
+DECLARE cnt Int32
+SET     cnt = 18
 
 $CTE_1 = 	SELECT
 		COUNT(*) as Count_1
@@ -541,8 +541,8 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $cnt Int32
-SET     $cnt = 18
+DECLARE cnt Int32
+SET     cnt = 18
 
 $CTE_1 = 	SELECT
 		COUNT(*) as Count_1
@@ -574,8 +574,8 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $cnt Int32
-SET     $cnt = 18
+DECLARE cnt Int32
+SET     cnt = 18
 
 $CTE_1 = 	SELECT
 		COUNT(*) as Count_1
@@ -607,8 +607,8 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $cnt Int32
-SET     $cnt = 18
+DECLARE cnt Int32
+SET     cnt = 18
 
 $CTE_1 = 	SELECT
 		COUNT(*) as Count_1
@@ -640,8 +640,8 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $cnt Int32
-SET     $cnt = 18
+DECLARE cnt Int32
+SET     cnt = 18
 
 $CTE_1 = 	SELECT
 		COUNT(*) as Count_1
@@ -673,8 +673,8 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $cnt Int32
-SET     $cnt = 18
+DECLARE cnt Int32
+SET     cnt = 18
 
 $CTE_1 = 	SELECT
 		COUNT(*) as Count_1
@@ -706,8 +706,8 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $cnt Int32
-SET     $cnt = 18
+DECLARE cnt Int32
+SET     cnt = 18
 
 $CTE_1 = 	SELECT
 		COUNT(*) as Count_1
@@ -739,8 +739,8 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $cnt Int32
-SET     $cnt = 18
+DECLARE cnt Int32
+SET     cnt = 18
 
 $CTE_1 = 	SELECT
 		COUNT(*) as Count_1
@@ -772,8 +772,8 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $cnt Int32
-SET     $cnt = 18
+DECLARE cnt Int32
+SET     cnt = 18
 
 $CTE_1 = 	SELECT
 		COUNT(*) as Count_1
@@ -805,8 +805,8 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $cnt Int32
-SET     $cnt = 18
+DECLARE cnt Int32
+SET     cnt = 18
 
 $CTE_1 = 	SELECT
 		COUNT(*) as Count_1
@@ -838,8 +838,8 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $cnt Int32
-SET     $cnt = 18
+DECLARE cnt Int32
+SET     cnt = 18
 
 $CTE_1 = 	SELECT
 		COUNT(*) as Count_1
@@ -871,8 +871,8 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $cnt Int32
-SET     $cnt = 18
+DECLARE cnt Int32
+SET     cnt = 18
 
 $CTE_1 = 	SELECT
 		COUNT(*) as Count_1
@@ -904,8 +904,8 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $cnt Int32
-SET     $cnt = 18
+DECLARE cnt Int32
+SET     cnt = 18
 
 $CTE_1 = 	SELECT
 		COUNT(*) as Count_1
@@ -937,8 +937,8 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $cnt Int32
-SET     $cnt = 18
+DECLARE cnt Int32
+SET     cnt = 18
 
 $CTE_1 = 	SELECT
 		COUNT(*) as Count_1
@@ -970,8 +970,8 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $cnt Int32
-SET     $cnt = 18
+DECLARE cnt Int32
+SET     cnt = 18
 
 $CTE_1 = 	SELECT
 		COUNT(*) as Count_1
@@ -1003,8 +1003,8 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $cnt Int32
-SET     $cnt = 18
+DECLARE cnt Int32
+SET     cnt = 18
 
 $CTE_1 = 	SELECT
 		COUNT(*) as Count_1
@@ -1036,8 +1036,8 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $cnt Int32
-SET     $cnt = 18
+DECLARE cnt Int32
+SET     cnt = 18
 
 $CTE_1 = 	SELECT
 		COUNT(*) as Count_1

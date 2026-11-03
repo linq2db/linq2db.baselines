@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $id Int32
-SET     $id = 2
+DECLARE id Int32
+SET     id = 2
 
 SELECT
 	p.ParentID as ParentID,
@@ -11,8 +11,8 @@ WHERE
 	p.ParentID = $id
 
 -- YDB Ydb
-DECLARE $id Int32
-SET     $id = 2
+DECLARE id Int32
+SET     id = 2
 
 SELECT
 	p.FirstName as FirstName,

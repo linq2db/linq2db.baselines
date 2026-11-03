@@ -5,12 +5,12 @@ WHERE
 	Person.PersonID > 4
 
 -- YDB Ydb
-DECLARE $FirstName Text(4) -- String
-SET     $FirstName = 'John'u
-DECLARE $LastName Text(7) -- String
-SET     $LastName = 'Shepard'u
-DECLARE $Gender Text(1) -- AnsiStringFixedLength
-SET     $Gender = 'M'u
+DECLARE FirstName Text(4) -- String
+SET     FirstName = 'John'u
+DECLARE LastName Text(7) -- String
+SET     LastName = 'Shepard'u
+DECLARE Gender Text(1) -- AnsiStringFixedLength
+SET     Gender = 'M'u
 
 INSERT INTO Person
 (

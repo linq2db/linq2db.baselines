@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $flag Int32
-SET     $flag = 4
+DECLARE flag Int32
+SET     flag = 4
 
 SELECT
 	t.Id as Id,
