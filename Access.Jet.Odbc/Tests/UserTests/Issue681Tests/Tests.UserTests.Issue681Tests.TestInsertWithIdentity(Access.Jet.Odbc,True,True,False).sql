@@ -12,5 +12,6 @@ VALUES
 )
 
 -- Access.Jet.Odbc AccessODBC
-SELECT @@IDENTITY
+SELECT
+	@@IDENTITY
 
