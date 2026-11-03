@@ -5,7 +5,7 @@ SELECT
 FROM
 	(
 		SELECT
-			IIF(LEN([p].[FirstName] + N'.') - 1 >= [p].[PersonID], [p].[FirstName], REPLICATE(N'.', [p].[PersonID] - (LEN([p].[FirstName] + N'.') - 1)) + [p].[FirstName]) as [FirstName],
+			IIF(LEN([p].[FirstName] + N'.') - 1 >= [p].[PersonID], [p].[FirstName], CAST(REPLICATE(N'.', [p].[PersonID] - (LEN([p].[FirstName] + N'.') - 1)) AS NVarChar(Max)) + [p].[FirstName]) as [FirstName],
 			[p].[PersonID] as [ID]
 		FROM
 			[Person] [p]
