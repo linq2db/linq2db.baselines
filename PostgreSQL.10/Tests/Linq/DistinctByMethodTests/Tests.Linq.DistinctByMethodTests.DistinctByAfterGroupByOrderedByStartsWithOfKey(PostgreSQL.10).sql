@@ -29,11 +29,11 @@ FROM
 			) g_3
 		ORDER BY
 			g_3."Length_1",
-			g_3.c1,
+			g_3.c1 DESC,
 			g_3."Key_1" DESC
 	) t1
 ORDER BY
-	t1.c1,
+	t1.c1 DESC,
 	t1."Key_1" DESC
 
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
