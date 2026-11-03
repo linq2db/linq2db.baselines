@@ -5,15 +5,16 @@ SELECT
 FROM
 	(
 		SELECT
-			ROW_NUMBER() OVER (PARTITION BY MOD(e."Key_1", 2) ORDER BY e."RowNumber") as "RowNumber",
-			e."RowNumber" as "RowNumber_1",
+			ROW_NUMBER() OVER (PARTITION BY e."RowNumber" ORDER BY e."RowNumber_1") as "RowNumber",
+			e."RowNumber_1",
 			e."Key_1",
 			e.C_1
 		FROM
 			(
 				SELECT
+					MOD(g_2."Key_1", 2) as "RowNumber",
+					-g_2."Key_1" as "RowNumber_1",
 					g_2."Key_1",
-					-g_2."Key_1" as "RowNumber",
 					COUNT(*) as C_1
 				FROM
 					(
