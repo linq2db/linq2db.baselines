@@ -115,30 +115,29 @@ VALUES
 )
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @RowNumber Int64
-SET     @RowNumber = 100
+DECLARE @p Int64
+SET     @p = 100
 
 SELECT
-	t1."Key_1",
+	t1."RowNumber_2",
 	t1."Count_1"
 FROM
 	(
 		SELECT
-			ROW_NUMBER() OVER (PARTITION BY CASE
-				WHEN e."Key_1" > :RowNumber THEN 1
-				ELSE 0
-			END ORDER BY e."RowNumber" DESC, e."Key_1") as "RowNumber",
-			e."RowNumber" as "RowNumber_1",
-			e."Key_1",
-			e."Count_1",
-			e."c1"
+			ROW_NUMBER() OVER (PARTITION BY e."RowNumber" ORDER BY e."RowNumber_1" DESC, e."RowNumber_2") as "RowNumber",
+			e."RowNumber_1",
+			e."RowNumber_2",
+			e."Count_1"
 		FROM
 			(
 				SELECT
-					g_1."InSeconds" as "Key_1",
-					CAST(g_1."InSeconds" AS Float) as "RowNumber",
-					COUNT(*) as "Count_1",
-					CAST(g_1."InSeconds" AS Float) as "c1"
+					CASE
+						WHEN g_1."InSeconds" > :p THEN 1
+						ELSE 0
+					END as "RowNumber",
+					CAST(g_1."InSeconds" AS Float) as "RowNumber_1",
+					g_1."InSeconds" as "RowNumber_2",
+					COUNT(*) as "Count_1"
 				FROM
 					"DurationRow" g_1
 				GROUP BY
@@ -149,6 +148,5 @@ WHERE
 	t1."RowNumber" = 1
 ORDER BY
 	t1."RowNumber_1" DESC,
-	t1."Key_1",
-	t1."c1" DESC
+	t1."RowNumber_2"
 
