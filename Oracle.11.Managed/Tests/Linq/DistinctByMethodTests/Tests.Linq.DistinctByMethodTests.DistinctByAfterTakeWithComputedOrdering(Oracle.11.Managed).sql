@@ -3,24 +3,26 @@ DECLARE @take Int32
 SET     @take = 4
 
 SELECT
-	t2."ParentID",
-	t2."Value1"
+	t2."RowNumber_2",
+	t2."RowNumber_1"
 FROM
 	(
 		SELECT
-			ROW_NUMBER() OVER (PARTITION BY e_1."Value1" ORDER BY Coalesce(e_1."Value1", 0), e_1."ParentID" DESC) as "RowNumber",
-			e_1."Value1",
-			e_1."ParentID"
+			ROW_NUMBER() OVER (PARTITION BY e_1."RowNumber" ORDER BY e_1."RowNumber_1", e_1."RowNumber_2" DESC) as "RowNumber",
+			e_1."RowNumber" as "RowNumber_1",
+			e_1."RowNumber_2"
 		FROM
 			(
 				SELECT
-					t1."Value1",
-					t1."ParentID"
+					t1."RowNumber",
+					t1."RowNumber_1",
+					t1."RowNumber_2"
 				FROM
 					(
 						SELECT
-							e."Value1",
-							e."ParentID"
+							e."Value1" as "RowNumber",
+							Coalesce(e."Value1", 0) as "RowNumber_1",
+							e."ParentID" as "RowNumber_2"
 						FROM
 							"Parent" e
 						ORDER BY
@@ -34,8 +36,8 @@ FROM
 WHERE
 	t2."RowNumber" = 1
 ORDER BY
-	Coalesce(t2."Value1", 0),
-	t2."ParentID" DESC
+	Coalesce(t2."RowNumber_1", 0),
+	t2."RowNumber_2" DESC
 
 -- Oracle.11.Managed Oracle11
 SELECT
