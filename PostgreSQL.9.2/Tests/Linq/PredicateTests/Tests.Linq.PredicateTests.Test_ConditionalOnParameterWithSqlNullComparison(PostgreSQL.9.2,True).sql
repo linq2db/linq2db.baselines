@@ -1,0 +1,12 @@
+﻿-- PostgreSQL.9.2 PostgreSQL
+SELECT
+	r."Id",
+	CASE
+		WHEN r."A" = r."B" THEN True
+		ELSE False
+	END
+FROM
+	"NullableFlagTable" r
+ORDER BY
+	r."Id"
+
