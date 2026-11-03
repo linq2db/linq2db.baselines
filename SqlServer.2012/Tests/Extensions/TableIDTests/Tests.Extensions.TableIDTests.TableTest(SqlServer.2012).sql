@@ -1,6 +1,6 @@
 ﻿-- SqlServer.2012
 SELECT
-	'*** p ***' + N'4',
+	CAST('*** p ***' AS NVarChar(Max)) + N'4',
 	'*** p ***',
 	'*** [Parent] ***',
 	'*** p_1.p ***'
