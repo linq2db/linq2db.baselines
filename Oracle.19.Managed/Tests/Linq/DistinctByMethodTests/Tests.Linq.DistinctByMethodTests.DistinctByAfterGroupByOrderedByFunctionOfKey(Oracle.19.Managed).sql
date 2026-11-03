@@ -5,18 +5,17 @@ SELECT
 FROM
 	(
 		SELECT
-			ROW_NUMBER() OVER (PARTITION BY MOD(e."Key_1", 2) ORDER BY e."RowNumber") as "RowNumber",
-			e."RowNumber" as "RowNumber_1",
+			ROW_NUMBER() OVER (PARTITION BY e."RowNumber" ORDER BY e."RowNumber_1") as "RowNumber",
+			e."RowNumber_1",
 			e."Key_1",
-			e."Count_1",
-			e."c1"
+			e."Count_1"
 		FROM
 			(
 				SELECT
+					MOD(g_1."ParentID", 2) as "RowNumber",
+					-g_1."ParentID" as "RowNumber_1",
 					g_1."ParentID" as "Key_1",
-					-g_1."ParentID" as "RowNumber",
-					COUNT(*) as "Count_1",
-					-g_1."ParentID" as "c1"
+					COUNT(*) as "Count_1"
 				FROM
 					"Parent" g_1
 				GROUP BY
@@ -26,8 +25,7 @@ FROM
 WHERE
 	t1."RowNumber" = 1
 ORDER BY
-	t1."RowNumber_1",
-	t1."c1"
+	t1."RowNumber_1"
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
 SELECT

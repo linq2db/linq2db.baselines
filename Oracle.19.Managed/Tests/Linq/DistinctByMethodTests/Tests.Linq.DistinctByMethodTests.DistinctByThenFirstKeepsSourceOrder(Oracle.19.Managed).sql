@@ -1,12 +1,12 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 SELECT
-	t1."ParentID",
+	t1."RowNumber_1" as "RowNumber",
 	t1."Value1"
 FROM
 	(
 		SELECT
 			ROW_NUMBER() OVER (PARTITION BY -e."ParentID" ORDER BY e."ParentID") as "RowNumber",
-			e."ParentID",
+			e."ParentID" as "RowNumber_1",
 			e."Value1"
 		FROM
 			"Parent" e
@@ -14,6 +14,6 @@ FROM
 WHERE
 	t1."RowNumber" = 1
 ORDER BY
-	t1."ParentID"
+	t1."RowNumber_1"
 FETCH NEXT 1 ROWS ONLY
 
