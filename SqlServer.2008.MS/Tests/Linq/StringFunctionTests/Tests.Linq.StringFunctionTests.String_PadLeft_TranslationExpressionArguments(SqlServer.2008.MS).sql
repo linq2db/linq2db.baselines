@@ -7,7 +7,7 @@ FROM
 		SELECT
 			CASE
 				WHEN LEN([p].[FirstName] + N'.') - 1 >= [p].[PersonID] THEN [p].[FirstName]
-				ELSE REPLICATE(N'.', [p].[PersonID] - (LEN([p].[FirstName] + N'.') - 1)) + [p].[FirstName]
+				ELSE CAST(REPLICATE(N'.', [p].[PersonID] - (LEN([p].[FirstName] + N'.') - 1)) AS NVarChar(Max)) + [p].[FirstName]
 			END as [FirstName],
 			[p].[PersonID] as [ID]
 		FROM
