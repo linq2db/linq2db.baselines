@@ -23,7 +23,6 @@ SET
 WHERE
 	"t"."ParentID" = 1010
 
-CommitTransaction
 -- DB2 DB2.LUW DB2LUW
 SELECT
 	"t"."ParentID",
