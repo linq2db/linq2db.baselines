@@ -23,7 +23,6 @@ SET
 WHERE
 	"t"."ParentID" = 1010
 
-CommitTransaction
 -- SapHana.Native SapHana
 SELECT
 	"t"."ParentID",
