@@ -172,7 +172,7 @@ SELECT
 FROM
 	"NullableItemEntity" e
 WHERE
-	NOT (8 = e."Item" AND e."Item" IS NOT NULL)
+	8 <> e."Item" OR e."Item" IS NULL
 
 -- PostgreSQL.9.5 PostgreSQL
 SELECT
