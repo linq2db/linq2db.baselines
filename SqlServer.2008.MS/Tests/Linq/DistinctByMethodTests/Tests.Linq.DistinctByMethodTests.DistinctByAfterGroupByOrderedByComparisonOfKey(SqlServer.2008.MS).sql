@@ -1,28 +1,24 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
 SELECT
-	[t1].[Key_1],
+	[t1].[RowNumber_2],
 	[t1].[Count_1]
 FROM
 	(
 		SELECT
-			ROW_NUMBER() OVER (PARTITION BY [e].[Key_1] % 2 ORDER BY [e].[RowNumber], [e].[Key_1] DESC) as [RowNumber],
-			[e].[RowNumber] as [RowNumber_1],
-			[e].[Key_1],
-			[e].[Count_1],
-			[e].[c1]
+			ROW_NUMBER() OVER (PARTITION BY [e].[RowNumber] ORDER BY [e].[RowNumber_1] DESC, [e].[RowNumber_2]) as [RowNumber],
+			[e].[RowNumber_1],
+			[e].[RowNumber_2],
+			[e].[Count_1]
 		FROM
 			(
 				SELECT
-					[g_1].[ParentID] as [Key_1],
+					[g_1].[ParentID] % 2 as [RowNumber],
 					CASE
 						WHEN [g_1].[ParentID] > 2 THEN 1
 						ELSE 0
-					END as [RowNumber],
-					COUNT(*) as [Count_1],
-					CASE
-						WHEN [g_1].[ParentID] > 2 THEN 1
-						ELSE 0
-					END as [c1]
+					END as [RowNumber_1],
+					[g_1].[ParentID] as [RowNumber_2],
+					COUNT(*) as [Count_1]
 				FROM
 					[Parent] [g_1]
 				GROUP BY
@@ -32,9 +28,8 @@ FROM
 WHERE
 	[t1].[RowNumber] = 1
 ORDER BY
-	[t1].[RowNumber_1],
-	[t1].[Key_1] DESC,
-	[t1].[c1]
+	[t1].[RowNumber_1] DESC,
+	[t1].[RowNumber_2]
 
 -- SqlServer.2008.MS SqlServer.2008
 SELECT
