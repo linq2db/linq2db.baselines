@@ -1,20 +1,20 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
 SELECT
-	[t1].[Id],
+	[t1].[RowNumber_3],
 	[t1].[Name],
-	[t1].[Group_1],
+	[t1].[RowNumber_1],
 	[t1].[Date_1],
 	[t1].[Amount],
 	[t1].[IsActive],
-	[t1].[Priority]
+	[t1].[RowNumber_2]
 FROM
 	(
 		SELECT
 			ROW_NUMBER() OVER (PARTITION BY [e].[Group] ORDER BY IIF([e].[Priority] IS NULL, 1, 0), [e].[Priority], [e].[Id]) as [RowNumber],
-			[e].[Priority],
-			[e].[Id],
+			[e].[Group] as [RowNumber_1],
+			[e].[Priority] as [RowNumber_2],
+			[e].[Id] as [RowNumber_3],
 			[e].[Name],
-			[e].[Group] as [Group_1],
 			[e].[Date] as [Date_1],
 			[e].[Amount],
 			[e].[IsActive]
@@ -24,9 +24,9 @@ FROM
 WHERE
 	[t1].[RowNumber] = 1
 ORDER BY
-	IIF([t1].[Priority] IS NULL, 1, 0),
-	[t1].[Priority],
-	[t1].[Id]
+	IIF([t1].[RowNumber_2] IS NULL, 1, 0),
+	[t1].[RowNumber_2],
+	[t1].[RowNumber_3]
 
 -- SqlServer.2017.MS SqlServer.2017
 SELECT
