@@ -3,21 +3,21 @@ DECLARE @take Int32
 SET     @take = 2
 
 SELECT
-	`t1`.`ParentID`,
-	`t1`.`Value1`
+	`t1`.`RowNumber_2`,
+	`t1`.`RowNumber_1`
 FROM
 	(
 		SELECT
 			ROW_NUMBER() OVER (PARTITION BY `e`.`Value1` ORDER BY `e`.`ParentID` DESC) as `RowNumber`,
-			`e`.`ParentID`,
-			`e`.`Value1`
+			`e`.`Value1` as `RowNumber_1`,
+			`e`.`ParentID` as `RowNumber_2`
 		FROM
 			`Parent` `e`
 	) `t1`
 WHERE
 	`t1`.`RowNumber` = 1
 ORDER BY
-	`t1`.`ParentID` DESC
+	`t1`.`RowNumber_2` DESC
 LIMIT @take
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
