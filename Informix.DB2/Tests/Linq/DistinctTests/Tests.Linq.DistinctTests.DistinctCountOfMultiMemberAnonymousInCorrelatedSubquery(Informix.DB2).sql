@@ -20,8 +20,8 @@ SELECT
 		FROM
 			(
 				SELECT DISTINCT
-					g_2.ChildID,
-					g_2.GrandChildID
+					g_2.ParentID,
+					g_2.ChildID
 				FROM
 					GrandChild g_2
 				WHERE
