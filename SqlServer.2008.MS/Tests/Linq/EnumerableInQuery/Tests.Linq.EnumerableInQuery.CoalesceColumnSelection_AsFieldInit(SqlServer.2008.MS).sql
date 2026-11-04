@@ -7,10 +7,10 @@ SELECT
 FROM
 	(
 		SELECT
-			SUBSTRING(N',' + Coalesce(N',' + [it].[StyleName], N''), 2, 2147483647) + N':' + Coalesce(CASE
+			CAST(SUBSTRING(N',' + Coalesce(N',' + [it].[StyleName], N''), 2, 2147483647) AS NVarChar(Max)) + N':' + Coalesce(CASE
 				WHEN [it].[ColorId] IS NULL OR LEN(CAST([it].[ColorId] AS NVarChar(11)) + N'.') >= 5
 					THEN CAST([it].[ColorId] AS NVarChar(11))
-				ELSE REPLICATE(N'0', 4 - (LEN(CAST([it].[ColorId] AS NVarChar(11)) + N'.') - 1)) + CAST([it].[ColorId] AS NVarChar(11))
+				ELSE CAST(REPLICATE(N'0', 4 - (LEN(CAST([it].[ColorId] AS NVarChar(11)) + N'.') - 1)) AS NVarChar(Max)) + CAST([it].[ColorId] AS NVarChar(11))
 			END, N'') as [StrValue],
 			[it].[ColorName],
 			[it].[StyleName],

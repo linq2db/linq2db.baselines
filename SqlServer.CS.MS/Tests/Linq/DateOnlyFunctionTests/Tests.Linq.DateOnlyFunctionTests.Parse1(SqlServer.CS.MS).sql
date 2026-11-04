@@ -1,10 +1,10 @@
 ﻿-- SqlServer.CS.MS SqlServer.2025
 SELECT
-	CAST(N'2010-01-' || format([t].[TransactionId], 'd2') AS Date)
+	CAST(N'2010-01-' || CAST(format([t].[TransactionId], 'd2') AS NVarChar(Max)) AS Date)
 FROM
 	[Transactions] [t]
 WHERE
-	DatePart(day, CAST(N'2010-01-' || format([t].[TransactionId], 'd2') AS Date)) > 0
+	DatePart(day, CAST(N'2010-01-' || CAST(format([t].[TransactionId], 'd2') AS NVarChar(Max)) AS Date)) > 0
 
 -- SqlServer.CS.MS SqlServer.2025
 SELECT

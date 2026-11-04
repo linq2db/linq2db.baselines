@@ -8,6 +8,6 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	(N'123' + IIF(LEN([p].[FirstName] + N'.') >= 7, [p].[FirstName], REPLICATE(N'*', 6 - (LEN([p].[FirstName] + N'.') - 1)) + [p].[FirstName])) = N'123**John' AND
+	(N'123' + IIF(LEN([p].[FirstName] + N'.') >= 7, [p].[FirstName], CAST(REPLICATE(N'*', 6 - (LEN([p].[FirstName] + N'.') - 1)) AS NVarChar(Max)) + [p].[FirstName])) = N'123**John' AND
 	[p].[PersonID] = 1
 
