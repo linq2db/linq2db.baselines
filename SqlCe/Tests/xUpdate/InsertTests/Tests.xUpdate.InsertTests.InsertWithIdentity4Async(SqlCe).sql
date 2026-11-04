@@ -30,7 +30,8 @@ VALUES
 )
 
 -- SqlCe
-SELECT @@IDENTITY
+SELECT
+	@@IDENTITY
 
 -- SqlCe
 DECLARE @p NVarChar(5) -- String
@@ -73,7 +74,8 @@ VALUES
 )
 
 -- SqlCe
-SELECT @@IDENTITY
+SELECT
+	@@IDENTITY
 
 -- SqlCe
 DECLARE @p NVarChar(5) -- String
