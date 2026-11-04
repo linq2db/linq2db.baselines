@@ -4,12 +4,12 @@ AS
 (
 	SELECT
 		[c_1].[Id],
-		ROW_NUMBER() OVER (ORDER BY [c_1].[Name])
+		ROW_NUMBER() OVER (ORDER BY [c_1].[RowNumber_1])
 	FROM
 		(
 			SELECT
 				ROW_NUMBER() OVER (PARTITION BY [e].[Name] ORDER BY [e].[Name]) as [RowNumber],
-				[e].[Name],
+				[e].[Name] as [RowNumber_1],
 				[e].[Id]
 			FROM
 				[Company] [e]
