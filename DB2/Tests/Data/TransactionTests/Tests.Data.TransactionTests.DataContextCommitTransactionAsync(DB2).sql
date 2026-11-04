@@ -16,7 +16,6 @@ VALUES
 	@Value1
 )
 
-CommitTransactionAsync
 -- DB2 DB2.LUW DB2LUW
 DELETE FROM
 	"Parent" "t1"

@@ -102,7 +102,6 @@ VALUES
 	@Value1
 )
 
-CommitTransaction
 -- Informix.DB2 Informix
 DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 1111
