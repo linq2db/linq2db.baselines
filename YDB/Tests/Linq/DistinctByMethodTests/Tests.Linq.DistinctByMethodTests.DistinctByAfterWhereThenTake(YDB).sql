@@ -5,15 +5,15 @@ SET     take = 2
 SELECT
 	t1.Id as Id,
 	t1.CustomerId as CustomerId,
-	t1.Country as Country,
+	t1.RowNumber_1 as RowNumber,
 	t1.Region as Region
 FROM
 	(
 		SELECT
 			ROW_NUMBER() OVER (PARTITION BY e.Country ORDER BY e.Id) as RowNumber,
+			e.Country as RowNumber_1,
 			e.Id as Id,
 			e.CustomerId as CustomerId,
-			e.Country as Country,
 			e.Region as Region
 		FROM
 			NullableKeyData e

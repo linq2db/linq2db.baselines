@@ -1,12 +1,12 @@
 ﻿-- YDB Ydb
 $CTE_1 = 	SELECT
 		c_1.Id as Id,
-		ROW_NUMBER() OVER (ORDER BY c_1.Name) as field
+		ROW_NUMBER() OVER (ORDER BY c_1.RowNumber_1) as field
 	FROM
 		(
 			SELECT
 				ROW_NUMBER() OVER (PARTITION BY e.Name ORDER BY e.Name) as RowNumber,
-				e.Name as Name,
+				e.Name as RowNumber_1,
 				e.Id as Id
 			FROM
 				Company e
@@ -14,7 +14,7 @@ $CTE_1 = 	SELECT
 	WHERE
 		c_1.RowNumber = 1l
 	ORDER BY
-		c_1.Name
+		c_1.RowNumber_1
 ;
 $CTE_2 = 	SELECT
 		d.Id as Detail_Id,

@@ -115,27 +115,26 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $RowNumber Int64
-SET     $RowNumber = 100l
+DECLARE $p Int64
+SET     $p = 100l
 
 SELECT
-	t1.Key_1 as Key_1,
+	t1.RowNumber_2 as RowNumber,
 	t1.Count_1 as Count_1
 FROM
 	(
 		SELECT
-			ROW_NUMBER() OVER (PARTITION BY e.Key_1 > $RowNumber ORDER BY e.RowNumber DESC, e.Key_1) as RowNumber,
-			e.RowNumber as RowNumber_1,
-			e.Key_1 as Key_1,
-			e.Count_1 as Count_1,
-			e.c1 as c1
+			ROW_NUMBER() OVER (PARTITION BY e.RowNumber ORDER BY e.RowNumber_1 DESC, e.RowNumber_2) as RowNumber,
+			e.RowNumber_1 as RowNumber_1,
+			e.RowNumber_2 as RowNumber_2,
+			e.Count_1 as Count_1
 		FROM
 			(
 				SELECT
-					g_1.InSeconds as Key_1,
-					Unwrap(CAST(g_1.InSeconds AS Double)) as RowNumber,
-					COUNT(*) as Count_1,
-					Unwrap(CAST(g_1.InSeconds AS Double)) as c1
+					g_1.InSeconds > $p as RowNumber,
+					Unwrap(CAST(g_1.InSeconds AS Double)) as RowNumber_1,
+					g_1.InSeconds as RowNumber_2,
+					COUNT(*) as Count_1
 				FROM
 					DurationRow g_1
 				GROUP BY
@@ -146,6 +145,5 @@ WHERE
 	t1.RowNumber = 1l
 ORDER BY
 	t1.RowNumber_1 DESC,
-	t1.Key_1,
-	t1.c1 DESC
+	t1.RowNumber_2
 
