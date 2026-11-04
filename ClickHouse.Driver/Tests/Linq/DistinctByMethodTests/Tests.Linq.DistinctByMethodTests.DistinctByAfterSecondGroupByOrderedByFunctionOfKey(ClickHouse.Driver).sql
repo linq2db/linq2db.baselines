@@ -5,15 +5,16 @@ SELECT
 FROM
 	(
 		SELECT
-			toInt64(ROW_NUMBER() OVER (PARTITION BY e.Key_1 % 2 ORDER BY e.RowNumber)) as RowNumber,
-			e.RowNumber as RowNumber_1,
+			toInt64(ROW_NUMBER() OVER (PARTITION BY e.RowNumber ORDER BY e.RowNumber_1)) as RowNumber,
+			e.RowNumber_1 as RowNumber_1,
 			e.Key_1 as Key_1,
 			e.C_1 as C_1
 		FROM
 			(
 				SELECT
+					g_2.Key_1 % 2 as RowNumber,
+					negate(g_2.Key_1) as RowNumber_1,
 					g_2.Key_1 as Key_1,
-					negate(g_2.Key_1) as RowNumber,
 					COUNT(*) as C_1
 				FROM
 					(
