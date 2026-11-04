@@ -1,18 +1,18 @@
 ﻿-- Firebird.3 Firebird3
 SELECT
-	"t1"."Country",
-	"t1"."Region"
+	"t1"."RowNumber_1",
+	"t1"."RowNumber_2"
 FROM
 	(
 		SELECT
-			ROW_NUMBER() OVER (PARTITION BY "e_1"."Country" ORDER BY "e_1"."Region") as "RowNumber",
-			"e_1"."Region",
-			"e_1"."Country"
+			ROW_NUMBER() OVER (PARTITION BY "e_1"."RowNumber" ORDER BY "e_1"."RowNumber_1") as "RowNumber",
+			"e_1"."RowNumber" as "RowNumber_1",
+			"e_1"."RowNumber_1" as "RowNumber_2"
 		FROM
 			(
 				SELECT DISTINCT
-					"e"."Country",
-					"e"."Region"
+					"e"."Country" as "RowNumber",
+					"e"."Region" as "RowNumber_1"
 				FROM
 					"NullableKeyData" "e"
 				WHERE
@@ -22,7 +22,7 @@ FROM
 WHERE
 	"t1"."RowNumber" = 1
 ORDER BY
-	"t1"."Region"
+	"t1"."RowNumber_2"
 
 -- Firebird.3 Firebird3
 SELECT

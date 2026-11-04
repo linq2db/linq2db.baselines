@@ -1,23 +1,23 @@
 ﻿-- Firebird.5 Firebird4
 SELECT
-	"t1"."Key_1"
+	"t1"."RowNumber_1"
 FROM
 	(
 		SELECT
-			ROW_NUMBER() OVER (PARTITION BY Mod("e_1"."Key_1", 2) ORDER BY "e_1"."Key_1" DESC) as "RowNumber",
-			"e_1"."Key_1"
+			ROW_NUMBER() OVER (PARTITION BY Mod("e"."RowNumber", 2) ORDER BY "e"."RowNumber" DESC) as "RowNumber",
+			"e"."RowNumber" as "RowNumber_1"
 		FROM
 			(
 				SELECT DISTINCT
-					Mod("e"."ParentID", 3) as "Key_1"
+					Mod("g_1"."ParentID", 3) as "RowNumber"
 				FROM
-					"Parent" "e"
-			) "e_1"
+					"Parent" "g_1"
+			) "e"
 	) "t1"
 WHERE
 	"t1"."RowNumber" = 1
 ORDER BY
-	"t1"."Key_1" DESC
+	"t1"."RowNumber_1" DESC
 
 -- Firebird.5 Firebird4
 SELECT
