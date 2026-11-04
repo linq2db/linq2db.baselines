@@ -102,7 +102,6 @@ VALUES
 	?
 )
 
-CommitTransaction
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1111
