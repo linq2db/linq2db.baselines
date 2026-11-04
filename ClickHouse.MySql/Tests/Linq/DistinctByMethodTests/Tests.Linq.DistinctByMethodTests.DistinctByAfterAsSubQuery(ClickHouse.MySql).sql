@@ -1,22 +1,22 @@
 ﻿-- ClickHouse.MySql ClickHouse
 SELECT
-	t1.Id,
+	t1.RowNumber_2,
 	t1.CustomerId,
-	t1.Country,
+	t1.RowNumber_1,
 	t1.Region
 FROM
 	(
 		SELECT
-			toInt64(ROW_NUMBER() OVER (PARTITION BY e.Country ORDER BY e.Id)) as RowNumber,
-			e.Id as Id,
+			toInt64(ROW_NUMBER() OVER (PARTITION BY e.RowNumber_1 ORDER BY e.RowNumber)) as RowNumber,
+			e.RowNumber_1 as RowNumber_1,
+			e.RowNumber as RowNumber_2,
 			e.CustomerId as CustomerId,
-			e.Country as Country,
 			e.Region as Region
 		FROM
 			(
 				SELECT
-					c_1.Id as Id,
-					c_1.Country as Country,
+					c_1.Id as RowNumber,
+					c_1.Country as RowNumber_1,
 					c_1.CustomerId as CustomerId,
 					c_1.Region as Region
 				FROM
@@ -28,7 +28,7 @@ FROM
 WHERE
 	t1.RowNumber = toInt64(1)
 ORDER BY
-	t1.Id
+	t1.RowNumber_2
 
 -- ClickHouse.MySql ClickHouse
 SELECT

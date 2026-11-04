@@ -1,18 +1,19 @@
 ﻿-- ClickHouse.Octonica ClickHouse
 SELECT
-	t1.ParentID,
-	t1.Value1
+	t1.RowNumber_2,
+	t1.RowNumber_1
 FROM
 	(
 		SELECT
-			toInt64(ROW_NUMBER() OVER (PARTITION BY e.ParentID % 2 ORDER BY e.Value1 NULLS FIRST, e.ParentID)) as RowNumber,
-			e.Value1 as Value1,
-			e.ParentID as ParentID
+			toInt64(ROW_NUMBER() OVER (PARTITION BY e.RowNumber ORDER BY e.RowNumber_1 NULLS FIRST, e.RowNumber_2)) as RowNumber,
+			e.RowNumber_1 as RowNumber_1,
+			e.RowNumber_2 as RowNumber_2
 		FROM
 			(
 				SELECT
-					p.ParentID as ParentID,
-					p.Value1 as Value1
+					p.ParentID % 2 as RowNumber,
+					p.Value1 as RowNumber_1,
+					p.ParentID as RowNumber_2
 				FROM
 					Parent p
 				ORDER BY
@@ -24,8 +25,8 @@ FROM
 WHERE
 	t1.RowNumber = toInt64(1)
 ORDER BY
-	t1.Value1 NULLS FIRST,
-	t1.ParentID
+	t1.RowNumber_1 NULLS FIRST,
+	t1.RowNumber_2
 
 -- ClickHouse.Octonica ClickHouse
 SELECT

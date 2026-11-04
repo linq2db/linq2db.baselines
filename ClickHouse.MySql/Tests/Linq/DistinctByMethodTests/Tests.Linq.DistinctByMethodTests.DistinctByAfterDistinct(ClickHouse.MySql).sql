@@ -1,18 +1,18 @@
 ﻿-- ClickHouse.MySql ClickHouse
 SELECT
-	t1.Country,
-	t1.Region
+	t1.RowNumber_1,
+	t1.RowNumber_2
 FROM
 	(
 		SELECT
-			toInt64(ROW_NUMBER() OVER (PARTITION BY e_1.Country ORDER BY e_1.Region)) as RowNumber,
-			e_1.Region as Region,
-			e_1.Country as Country
+			toInt64(ROW_NUMBER() OVER (PARTITION BY e_1.RowNumber ORDER BY e_1.RowNumber_1)) as RowNumber,
+			e_1.RowNumber as RowNumber_1,
+			e_1.RowNumber_1 as RowNumber_2
 		FROM
 			(
 				SELECT DISTINCT
-					e.Country as Country,
-					e.Region as Region
+					e.Country as RowNumber,
+					e.Region as RowNumber_1
 				FROM
 					NullableKeyData e
 				WHERE
@@ -22,7 +22,7 @@ FROM
 WHERE
 	t1.RowNumber = toInt64(1)
 ORDER BY
-	t1.Region
+	t1.RowNumber_2
 
 -- ClickHouse.MySql ClickHouse
 SELECT

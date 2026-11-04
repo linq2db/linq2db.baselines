@@ -3,12 +3,12 @@ WITH CTE_1 AS MATERIALIZED
 (
 	SELECT
 		c_1.Id as Id,
-		toInt64(ROW_NUMBER() OVER (ORDER BY c_1.Name)) as field
+		toInt64(ROW_NUMBER() OVER (ORDER BY c_1.RowNumber_1)) as field
 	FROM
 		(
 			SELECT
 				toInt64(ROW_NUMBER() OVER (PARTITION BY e.Name ORDER BY e.Name)) as RowNumber,
-				e.Name as Name,
+				e.Name as RowNumber_1,
 				e.Id as Id
 			FROM
 				Company e
@@ -16,7 +16,7 @@ WITH CTE_1 AS MATERIALIZED
 	WHERE
 		c_1.RowNumber = toInt64(1)
 	ORDER BY
-		c_1.Name
+		c_1.RowNumber_1
 ),
 CTE_2 AS
 (
