@@ -32,12 +32,12 @@ FROM
 			) g_3
 		ORDER BY
 			g_3."Year_1" > 0,
-			g_3."TotalDays",
-			g_3."Key_1" DESC
+			g_3."TotalDays" DESC,
+			g_3."Key_1"
 	) t1
 ORDER BY
-	t1."TotalDays",
-	t1."Key_1" DESC
+	t1."TotalDays" DESC,
+	t1."Key_1"
 
 -- PostgreSQL.9.5 PostgreSQL
 SELECT

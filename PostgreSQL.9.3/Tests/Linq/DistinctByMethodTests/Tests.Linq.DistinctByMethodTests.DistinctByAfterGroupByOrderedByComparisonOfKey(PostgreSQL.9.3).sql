@@ -21,12 +21,12 @@ FROM
 			) g_2
 		ORDER BY
 			Floor(g_2."Key_1"::decimal % 2)::Int,
-			g_2.c1,
-			g_2."Key_1" DESC
+			g_2.c1 DESC,
+			g_2."Key_1"
 	) t1
 ORDER BY
-	t1.c1,
-	t1."Key_1" DESC
+	t1.c1 DESC,
+	t1."Key_1"
 
 -- PostgreSQL.9.3 PostgreSQL
 SELECT
