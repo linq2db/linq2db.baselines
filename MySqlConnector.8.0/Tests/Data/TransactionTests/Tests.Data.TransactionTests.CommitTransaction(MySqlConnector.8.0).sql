@@ -23,7 +23,6 @@ SET
 WHERE
 	`t`.`ParentID` = 1010
 
-CommitTransaction
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 SELECT
 	`t`.`ParentID`,
