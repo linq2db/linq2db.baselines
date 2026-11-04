@@ -1,0 +1,24 @@
+﻿-- Oracle.12.Managed Oracle.Managed Oracle12
+SELECT
+	c_1."ChildID",
+	t1."ParentID",
+	t1."Value1"
+FROM
+	"Child" c_1
+		OUTER APPLY (
+			SELECT
+				p."ParentID",
+				p."Value1"
+			FROM
+				(
+					SELECT
+						1 as "c1"
+					FROM
+						"GrandChild" g_1
+					WHERE
+						g_1."ChildID" = c_1."ChildID"
+					FETCH NEXT 1 ROWS ONLY
+				) a_LinkedParentByOuterKey
+					LEFT JOIN "Parent" p ON p."ParentID" = c_1."ParentID"
+		) t1
+
