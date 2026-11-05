@@ -23,7 +23,6 @@ SET
 WHERE
 	[Parent].[ParentID] = 1010
 
-CommitTransaction
 -- SqlServer.Contained SqlServer.2025
 SELECT TOP (1)
 	[t].[ParentID],
