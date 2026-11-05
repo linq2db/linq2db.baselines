@@ -57,7 +57,10 @@ FROM
 WHERE
 	[t1].[ID] = 256
 ORDER BY
-	[t1].[BinaryValue] = @value
+	CASE
+		WHEN [t1].[BinaryValue] = @value THEN 1
+		ELSE 0
+	END
 
 -- SQLite.MS SQLite
 DELETE FROM

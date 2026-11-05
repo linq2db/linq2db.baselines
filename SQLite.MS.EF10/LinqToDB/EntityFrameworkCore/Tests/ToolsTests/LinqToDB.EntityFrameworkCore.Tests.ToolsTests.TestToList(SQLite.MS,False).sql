@@ -27,8 +27,6 @@ FROM
 
 
 
-
-
 -- SQLite.MS SQLite
 SELECT
 	[e].[IsDeleted],
@@ -48,6 +46,8 @@ SELECT
 	[e].[ShipCountry]
 FROM
 	[Orders] [e]
+
+
 
 
 
