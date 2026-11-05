@@ -32,7 +32,7 @@ SET     @idx = 4
 UPDATE
 	"Person" "t1"
 SET
-	"LastName" = CAST(@name AS Int) + CAST(@idx AS Int)
+	"LastName" = (CAST(@name AS Int) + CAST(@idx AS Int))
 WHERE
 	"t1"."FirstName" STARTING WITH 'Update14'
 

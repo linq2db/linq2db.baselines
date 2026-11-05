@@ -43,7 +43,7 @@ USING (SELECT CAST(@id AS Int) AS "PersonID" FROM rdb$database) "s" ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"Diagnosis" = CHAR_LENGTH("t1"."Diagnosis") + CAST(@i AS Int)
+		"Diagnosis" = (CHAR_LENGTH("t1"."Diagnosis") + CAST(@i AS Int))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -53,7 +53,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		CAST(@id AS Int),
-		CAST(@diagnosis AS Int) + CAST(@i AS Int)
+		(CAST(@diagnosis AS Int) + CAST(@i AS Int))
 	)
 
 -- Firebird.3 Firebird3
@@ -72,7 +72,7 @@ USING (SELECT CAST(@id AS Int) AS "PersonID" FROM rdb$database) "s" ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"Diagnosis" = CHAR_LENGTH("t1"."Diagnosis") + CAST(@i AS Int)
+		"Diagnosis" = (CHAR_LENGTH("t1"."Diagnosis") + CAST(@i AS Int))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -82,7 +82,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		CAST(@id AS Int),
-		CAST(@diagnosis AS Int) + CAST(@i AS Int)
+		(CAST(@diagnosis AS Int) + CAST(@i AS Int))
 	)
 
 -- Firebird.3 Firebird3
@@ -101,7 +101,7 @@ USING (SELECT CAST(@id AS Int) AS "PersonID" FROM rdb$database) "s" ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"Diagnosis" = CHAR_LENGTH("t1"."Diagnosis") + CAST(@i AS Int)
+		"Diagnosis" = (CHAR_LENGTH("t1"."Diagnosis") + CAST(@i AS Int))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -111,7 +111,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		CAST(@id AS Int),
-		CAST(@diagnosis AS Int) + CAST(@i AS Int)
+		(CAST(@diagnosis AS Int) + CAST(@i AS Int))
 	)
 
 -- Firebird.3 Firebird3
