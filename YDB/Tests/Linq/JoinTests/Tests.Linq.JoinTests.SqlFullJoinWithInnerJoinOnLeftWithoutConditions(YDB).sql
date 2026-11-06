@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $id1 Int32
-SET     $id1 = 1
+DECLARE id1 Int32
+SET     id1 = 1
 
 SELECT
 	t2.Left_1 as Left_1,

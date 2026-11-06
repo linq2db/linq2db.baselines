@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $ID Int32
-SET     $ID = 5
+DECLARE ID Int32
+SET     ID = 5
 
 DELETE FROM
 	`/local/Issue681Table`

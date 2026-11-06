@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $value Bool -- Boolean
-SET     $value = false
+DECLARE value Bool -- Boolean
+SET     value = false
 
 SELECT
 	t.Id as Id,
@@ -11,8 +11,8 @@ WHERE
 	t.`Value` = $value
 
 -- YDB Ydb
-DECLARE $value Bool -- Boolean
-SET     $value = false
+DECLARE value Bool -- Boolean
+SET     value = false
 
 SELECT
 	t.Id as Id,
@@ -23,8 +23,8 @@ WHERE
 	t.`Value` = $value
 
 -- YDB Ydb
-DECLARE $value Bool -- Boolean
-SET     $value = false
+DECLARE value Bool -- Boolean
+SET     value = false
 
 SELECT
 	t.Id as Id,
@@ -35,8 +35,8 @@ WHERE
 	t.`Value` <> $value OR t.`Value` IS NULL
 
 -- YDB Ydb
-DECLARE $value Bool -- Boolean
-SET     $value = false
+DECLARE value Bool -- Boolean
+SET     value = false
 
 SELECT
 	t.Id as Id,

@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $value Bool -- Boolean
-SET     $value = false
+DECLARE value Bool -- Boolean
+SET     value = false
 
 SELECT
 	r.Id as Id,
@@ -22,8 +22,8 @@ WHERE
 	r.`Column` = false AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-DECLARE $list Unspecified -- Object
-SET     $list = [false]
+DECLARE list Unspecified -- Object
+SET     list = [false]
 
 SELECT
 	r.Id as Id,
@@ -49,12 +49,12 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Bool -- Boolean
-SET     $Column = false
-DECLARE $ColumnNullable Bool -- Boolean
-SET     $ColumnNullable = NULL
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Bool -- Boolean
+SET     Column = false
+DECLARE ColumnNullable Bool -- Boolean
+SET     ColumnNullable = NULL
 
 INSERT INTO `TypeTable\`2`
 (
@@ -70,8 +70,8 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $value Bool -- Boolean
-SET     $value = false
+DECLARE value Bool -- Boolean
+SET     value = false
 
 SELECT
 	r.Id as Id,
@@ -104,8 +104,8 @@ VALUES
 ($p1,$p2,$p3)
 
 -- YDB Ydb
-DECLARE $value Bool -- Boolean
-SET     $value = false
+DECLARE value Bool -- Boolean
+SET     value = false
 
 SELECT
 	r.Id as Id,
@@ -123,8 +123,8 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Bool -- Boolean
-SET     $value = false
+DECLARE value Bool -- Boolean
+SET     value = false
 
 SELECT
 	r.Id as Id,
@@ -142,8 +142,8 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Bool -- Boolean
-SET     $value = false
+DECLARE value Bool -- Boolean
+SET     value = false
 
 SELECT
 	r.Id as Id,
@@ -155,10 +155,10 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-DECLARE $value Bool -- Boolean
-SET     $value = true
-DECLARE $nullableValue Bool -- Boolean
-SET     $nullableValue = false
+DECLARE value Bool -- Boolean
+SET     value = true
+DECLARE nullableValue Bool -- Boolean
+SET     nullableValue = false
 
 SELECT
 	r.Id as Id,
@@ -180,10 +180,10 @@ WHERE
 	r.`Column` = true AND r.ColumnNullable = false
 
 -- YDB Ydb
-DECLARE $list Unspecified -- Object
-SET     $list = [true]
-DECLARE $nullableList Unspecified -- Object
-SET     $nullableList = [false]
+DECLARE list Unspecified -- Object
+SET     list = [true]
+DECLARE nullableList Unspecified -- Object
+SET     nullableList = [false]
 
 SELECT
 	r.Id as Id,
@@ -209,12 +209,12 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Bool -- Boolean
-SET     $Column = true
-DECLARE $ColumnNullable Bool -- Boolean
-SET     $ColumnNullable = false
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Bool -- Boolean
+SET     Column = true
+DECLARE ColumnNullable Bool -- Boolean
+SET     ColumnNullable = false
 
 INSERT INTO `TypeTable\`2`
 (
@@ -230,10 +230,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $value Bool -- Boolean
-SET     $value = true
-DECLARE $nullableValue Bool -- Boolean
-SET     $nullableValue = false
+DECLARE value Bool -- Boolean
+SET     value = true
+DECLARE nullableValue Bool -- Boolean
+SET     nullableValue = false
 
 SELECT
 	r.Id as Id,
@@ -266,10 +266,10 @@ VALUES
 ($p1,$p2,$p3)
 
 -- YDB Ydb
-DECLARE $value Bool -- Boolean
-SET     $value = true
-DECLARE $nullableValue Bool -- Boolean
-SET     $nullableValue = false
+DECLARE value Bool -- Boolean
+SET     value = true
+DECLARE nullableValue Bool -- Boolean
+SET     nullableValue = false
 
 SELECT
 	r.Id as Id,
@@ -287,10 +287,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Bool -- Boolean
-SET     $value = true
-DECLARE $nullableValue Bool -- Boolean
-SET     $nullableValue = false
+DECLARE value Bool -- Boolean
+SET     value = true
+DECLARE nullableValue Bool -- Boolean
+SET     nullableValue = false
 
 SELECT
 	r.Id as Id,
@@ -308,10 +308,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Bool -- Boolean
-SET     $value = true
-DECLARE $nullableValue Bool -- Boolean
-SET     $nullableValue = false
+DECLARE value Bool -- Boolean
+SET     value = true
+DECLARE nullableValue Bool -- Boolean
+SET     nullableValue = false
 
 SELECT
 	r.Id as Id,
@@ -323,10 +323,10 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-DECLARE $value Bool -- Boolean
-SET     $value = false
-DECLARE $nullableValue Bool -- Boolean
-SET     $nullableValue = true
+DECLARE value Bool -- Boolean
+SET     value = false
+DECLARE nullableValue Bool -- Boolean
+SET     nullableValue = true
 
 SELECT
 	r.Id as Id,
@@ -348,10 +348,10 @@ WHERE
 	r.`Column` = false AND r.ColumnNullable = true
 
 -- YDB Ydb
-DECLARE $list Unspecified -- Object
-SET     $list = [false]
-DECLARE $nullableList Unspecified -- Object
-SET     $nullableList = [true]
+DECLARE list Unspecified -- Object
+SET     list = [false]
+DECLARE nullableList Unspecified -- Object
+SET     nullableList = [true]
 
 SELECT
 	r.Id as Id,
@@ -377,12 +377,12 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Bool -- Boolean
-SET     $Column = false
-DECLARE $ColumnNullable Bool -- Boolean
-SET     $ColumnNullable = true
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Bool -- Boolean
+SET     Column = false
+DECLARE ColumnNullable Bool -- Boolean
+SET     ColumnNullable = true
 
 INSERT INTO `TypeTable\`2`
 (
@@ -398,10 +398,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $value Bool -- Boolean
-SET     $value = false
-DECLARE $nullableValue Bool -- Boolean
-SET     $nullableValue = true
+DECLARE value Bool -- Boolean
+SET     value = false
+DECLARE nullableValue Bool -- Boolean
+SET     nullableValue = true
 
 SELECT
 	r.Id as Id,
@@ -434,10 +434,10 @@ VALUES
 ($p1,$p2,$p3)
 
 -- YDB Ydb
-DECLARE $value Bool -- Boolean
-SET     $value = false
-DECLARE $nullableValue Bool -- Boolean
-SET     $nullableValue = true
+DECLARE value Bool -- Boolean
+SET     value = false
+DECLARE nullableValue Bool -- Boolean
+SET     nullableValue = true
 
 SELECT
 	r.Id as Id,
@@ -455,10 +455,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Bool -- Boolean
-SET     $value = false
-DECLARE $nullableValue Bool -- Boolean
-SET     $nullableValue = true
+DECLARE value Bool -- Boolean
+SET     value = false
+DECLARE nullableValue Bool -- Boolean
+SET     nullableValue = true
 
 SELECT
 	r.Id as Id,
@@ -476,10 +476,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Bool -- Boolean
-SET     $value = false
-DECLARE $nullableValue Bool -- Boolean
-SET     $nullableValue = true
+DECLARE value Bool -- Boolean
+SET     value = false
+DECLARE nullableValue Bool -- Boolean
+SET     nullableValue = true
 
 SELECT
 	r.Id as Id,

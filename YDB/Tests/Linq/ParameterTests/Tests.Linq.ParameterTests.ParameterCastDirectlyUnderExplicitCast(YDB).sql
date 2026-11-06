@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $name Text(4) -- String
-SET     $name = 'john'u
+DECLARE name Text(4) -- String
+SET     name = 'john'u
 
 SELECT
 	t.Id as Id,
@@ -12,8 +12,8 @@ WHERE
 	t.`Value` = CAST(CAST(Unicode::GetLength($name) AS Int32) AS Text)
 
 -- YDB Ydb
-DECLARE $name Text(4) -- String
-SET     $name = 'john'u
+DECLARE name Text(4) -- String
+SET     name = 'john'u
 
 SELECT
 	t.Id as Id,

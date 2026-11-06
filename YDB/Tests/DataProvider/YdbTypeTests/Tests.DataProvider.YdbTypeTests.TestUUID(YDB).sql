@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $value Uuid -- Guid
-SET     $value = Uuid('00000000-0000-0000-0000-000000000000')
+DECLARE value Uuid -- Guid
+SET     value = Uuid('00000000-0000-0000-0000-000000000000')
 
 SELECT
 	r.Id as Id,
@@ -27,12 +27,12 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Uuid -- Guid
-SET     $Column = Uuid('00000000-0000-0000-0000-000000000000')
-DECLARE $ColumnNullable Uuid -- Guid
-SET     $ColumnNullable = NULL
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Uuid -- Guid
+SET     Column = Uuid('00000000-0000-0000-0000-000000000000')
+DECLARE ColumnNullable Uuid -- Guid
+SET     ColumnNullable = NULL
 
 INSERT INTO `TypeTable\`2`
 (
@@ -48,8 +48,8 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $value Uuid -- Guid
-SET     $value = Uuid('00000000-0000-0000-0000-000000000000')
+DECLARE value Uuid -- Guid
+SET     value = Uuid('00000000-0000-0000-0000-000000000000')
 
 SELECT
 	r.Id as Id,
@@ -82,8 +82,8 @@ VALUES
 ($p1,$p2,$p3)
 
 -- YDB Ydb
-DECLARE $value Uuid -- Guid
-SET     $value = Uuid('00000000-0000-0000-0000-000000000000')
+DECLARE value Uuid -- Guid
+SET     value = Uuid('00000000-0000-0000-0000-000000000000')
 
 SELECT
 	r.Id as Id,
@@ -101,8 +101,8 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Uuid -- Guid
-SET     $value = Uuid('00000000-0000-0000-0000-000000000000')
+DECLARE value Uuid -- Guid
+SET     value = Uuid('00000000-0000-0000-0000-000000000000')
 
 SELECT
 	r.Id as Id,
@@ -120,8 +120,8 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Uuid -- Guid
-SET     $value = Uuid('00000000-0000-0000-0000-000000000000')
+DECLARE value Uuid -- Guid
+SET     value = Uuid('00000000-0000-0000-0000-000000000000')
 
 SELECT
 	r.Id as Id,
@@ -133,10 +133,10 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-DECLARE $value Uuid -- Guid
-SET     $value = Uuid('bc7b663d-0fde-4327-8f92-5d8cc3a11d11')
-DECLARE $nullableValue Uuid -- Guid
-SET     $nullableValue = Uuid('a948600d-de21-4f74-8ac2-9516b287076e')
+DECLARE value Uuid -- Guid
+SET     value = Uuid('bc7b663d-0fde-4327-8f92-5d8cc3a11d11')
+DECLARE nullableValue Uuid -- Guid
+SET     nullableValue = Uuid('a948600d-de21-4f74-8ac2-9516b287076e')
 
 SELECT
 	r.Id as Id,
@@ -163,12 +163,12 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Uuid -- Guid
-SET     $Column = Uuid('bc7b663d-0fde-4327-8f92-5d8cc3a11d11')
-DECLARE $ColumnNullable Uuid -- Guid
-SET     $ColumnNullable = Uuid('a948600d-de21-4f74-8ac2-9516b287076e')
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Uuid -- Guid
+SET     Column = Uuid('bc7b663d-0fde-4327-8f92-5d8cc3a11d11')
+DECLARE ColumnNullable Uuid -- Guid
+SET     ColumnNullable = Uuid('a948600d-de21-4f74-8ac2-9516b287076e')
 
 INSERT INTO `TypeTable\`2`
 (
@@ -184,10 +184,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $value Uuid -- Guid
-SET     $value = Uuid('bc7b663d-0fde-4327-8f92-5d8cc3a11d11')
-DECLARE $nullableValue Uuid -- Guid
-SET     $nullableValue = Uuid('a948600d-de21-4f74-8ac2-9516b287076e')
+DECLARE value Uuid -- Guid
+SET     value = Uuid('bc7b663d-0fde-4327-8f92-5d8cc3a11d11')
+DECLARE nullableValue Uuid -- Guid
+SET     nullableValue = Uuid('a948600d-de21-4f74-8ac2-9516b287076e')
 
 SELECT
 	r.Id as Id,
@@ -220,10 +220,10 @@ VALUES
 ($p1,$p2,$p3)
 
 -- YDB Ydb
-DECLARE $value Uuid -- Guid
-SET     $value = Uuid('bc7b663d-0fde-4327-8f92-5d8cc3a11d11')
-DECLARE $nullableValue Uuid -- Guid
-SET     $nullableValue = Uuid('a948600d-de21-4f74-8ac2-9516b287076e')
+DECLARE value Uuid -- Guid
+SET     value = Uuid('bc7b663d-0fde-4327-8f92-5d8cc3a11d11')
+DECLARE nullableValue Uuid -- Guid
+SET     nullableValue = Uuid('a948600d-de21-4f74-8ac2-9516b287076e')
 
 SELECT
 	r.Id as Id,
@@ -241,10 +241,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Uuid -- Guid
-SET     $value = Uuid('bc7b663d-0fde-4327-8f92-5d8cc3a11d11')
-DECLARE $nullableValue Uuid -- Guid
-SET     $nullableValue = Uuid('a948600d-de21-4f74-8ac2-9516b287076e')
+DECLARE value Uuid -- Guid
+SET     value = Uuid('bc7b663d-0fde-4327-8f92-5d8cc3a11d11')
+DECLARE nullableValue Uuid -- Guid
+SET     nullableValue = Uuid('a948600d-de21-4f74-8ac2-9516b287076e')
 
 SELECT
 	r.Id as Id,
@@ -262,10 +262,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Uuid -- Guid
-SET     $value = Uuid('bc7b663d-0fde-4327-8f92-5d8cc3a11d11')
-DECLARE $nullableValue Uuid -- Guid
-SET     $nullableValue = Uuid('a948600d-de21-4f74-8ac2-9516b287076e')
+DECLARE value Uuid -- Guid
+SET     value = Uuid('bc7b663d-0fde-4327-8f92-5d8cc3a11d11')
+DECLARE nullableValue Uuid -- Guid
+SET     nullableValue = Uuid('a948600d-de21-4f74-8ac2-9516b287076e')
 
 SELECT
 	r.Id as Id,

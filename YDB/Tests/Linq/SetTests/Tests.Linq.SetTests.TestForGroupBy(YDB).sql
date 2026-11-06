@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $Ids0_1 Int32
-SET     $Ids0_1 = 2
+DECLARE Ids0_1 Int32
+SET     Ids0_1 = 2
 
 SELECT
 	x.ParentID as ParentID,
@@ -12,8 +12,8 @@ WHERE
 	x.ParentID IN ($Ids0_1)
 
 -- YDB Ydb
-DECLARE $Ids0_1 Int32
-SET     $Ids0_1 = 3
+DECLARE Ids0_1 Int32
+SET     Ids0_1 = 3
 
 SELECT
 	x.ParentID as ParentID,

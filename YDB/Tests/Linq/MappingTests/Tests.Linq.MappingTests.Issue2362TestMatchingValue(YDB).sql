@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $value Text(1) -- AnsiString
-SET     $value = '+'u
+DECLARE value Text(1) -- AnsiString
+SET     value = '+'u
 
 SELECT
 	r.Id as Id,

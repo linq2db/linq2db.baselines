@@ -8,8 +8,8 @@ WHERE
 	p.ParentID = 2
 
 -- YDB Ydb
-DECLARE $id Int32
-SET     $id = 2
+DECLARE id Int32
+SET     id = 2
 
 SELECT
 	p.FirstName as FirstName,

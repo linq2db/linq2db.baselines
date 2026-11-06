@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $take Int32
-SET     $take = 10
+DECLARE take Int32
+SET     take = 10
 
 SELECT
 	p_1.ParentID as ParentID,

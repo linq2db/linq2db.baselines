@@ -1,12 +1,12 @@
 ﻿-- YDB Ydb
-DECLARE $ID Int32
-SET     $ID = 3
-DECLARE $DurationID Int32
-SET     $DurationID = 2
-DECLARE $DurationInterval Int32
-SET     $DurationInterval = 4
-DECLARE $PersonID Int32
-SET     $PersonID = 1
+DECLARE ID Int32
+SET     ID = 3
+DECLARE DurationID Int32
+SET     DurationID = 2
+DECLARE DurationInterval Int32
+SET     DurationInterval = 4
+DECLARE PersonID Int32
+SET     PersonID = 1
 
 INSERT INTO BackgroundTask
 (
@@ -24,8 +24,8 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $personId Int32
-SET     $personId = 1
+DECLARE personId Int32
+SET     personId = 1
 
 SELECT
 	task_1.ID as ID,

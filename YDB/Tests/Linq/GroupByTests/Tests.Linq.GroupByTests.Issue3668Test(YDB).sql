@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $id Int32
-SET     $id = 1
-DECLARE $name Text(4) -- String
-SET     $name = 'test'u
+DECLARE id Int32
+SET     id = 1
+DECLARE name Text(4) -- String
+SET     name = 'test'u
 
 SELECT
 	m_1.PersonID as PersonID,
@@ -17,10 +17,10 @@ WHERE
 	m_1.PersonID = $id AND m_1.LastName <> $name OR m_1.FirstName <> $name AND m_1.PersonID - 1 = $id
 
 -- YDB Ydb
-DECLARE $id Int32
-SET     $id = 1
-DECLARE $name Text(4) -- String
-SET     $name = 'test'u
+DECLARE id Int32
+SET     id = 1
+DECLARE name Text(4) -- String
+SET     name = 'test'u
 
 SELECT
 	x.PersonID as PersonID

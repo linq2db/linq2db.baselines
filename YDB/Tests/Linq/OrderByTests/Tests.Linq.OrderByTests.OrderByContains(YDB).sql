@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $Ids0_1 Int32
-SET     $Ids0_1 = 1
-DECLARE $Ids0_2 Int32
-SET     $Ids0_2 = 3
+DECLARE Ids0_1 Int32
+SET     Ids0_1 = 1
+DECLARE Ids0_2 Int32
+SET     Ids0_2 = 3
 
 SELECT
 	t1.FirstName as FirstName,

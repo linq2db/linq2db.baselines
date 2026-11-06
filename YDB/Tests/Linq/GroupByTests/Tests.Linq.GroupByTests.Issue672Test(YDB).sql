@@ -1,10 +1,10 @@
 ﻿-- YDB Ydb
-DECLARE $Name Text(6) -- String
-SET     $Name = 'group1'u
-DECLARE $Enabled Bool -- Boolean
-SET     $Enabled = true
-DECLARE $ImageFullUrl Text(3) -- String
-SET     $ImageFullUrl = '123'u
+DECLARE Name Text(6) -- String
+SET     Name = 'group1'u
+DECLARE Enabled Bool -- Boolean
+SET     Enabled = true
+DECLARE ImageFullUrl Text(3) -- String
+SET     ImageFullUrl = '123'u
 
 INSERT INTO Stone
 (
@@ -20,12 +20,12 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Name Text(6) -- String
-SET     $Name = 'group1'u
-DECLARE $Enabled Bool -- Boolean
-SET     $Enabled = true
-DECLARE $ImageFullUrl Text(3) -- String
-SET     $ImageFullUrl = '123'u
+DECLARE Name Text(6) -- String
+SET     Name = 'group1'u
+DECLARE Enabled Bool -- Boolean
+SET     Enabled = true
+DECLARE ImageFullUrl Text(3) -- String
+SET     ImageFullUrl = '123'u
 
 INSERT INTO Stone
 (
@@ -41,12 +41,12 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Name Text(6) -- String
-SET     $Name = 'group2'u
-DECLARE $Enabled Bool -- Boolean
-SET     $Enabled = true
-DECLARE $ImageFullUrl Text(3) -- String
-SET     $ImageFullUrl = '123'u
+DECLARE Name Text(6) -- String
+SET     Name = 'group2'u
+DECLARE Enabled Bool -- Boolean
+SET     Enabled = true
+DECLARE ImageFullUrl Text(3) -- String
+SET     ImageFullUrl = '123'u
 
 INSERT INTO Stone
 (

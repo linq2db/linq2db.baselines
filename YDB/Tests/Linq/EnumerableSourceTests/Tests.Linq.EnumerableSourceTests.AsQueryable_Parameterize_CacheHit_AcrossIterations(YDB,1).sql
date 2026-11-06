@@ -1,12 +1,12 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 10
-DECLARE $Data Text(7) -- String
-SET     $Data = 'Data 10'u
-DECLARE $Id_1 Int32
-SET     $Id_1 = 11
-DECLARE $Data_1 Text(7) -- String
-SET     $Data_1 = 'Data 11'u
+DECLARE Id Int32
+SET     Id = 10
+DECLARE Data Text(7) -- String
+SET     Data = 'Data 10'u
+DECLARE Id_1 Int32
+SET     Id_1 = 11
+DECLARE Data_1 Text(7) -- String
+SET     Data_1 = 'Data 11'u
 
 SELECT
 	t1.Id as Id,

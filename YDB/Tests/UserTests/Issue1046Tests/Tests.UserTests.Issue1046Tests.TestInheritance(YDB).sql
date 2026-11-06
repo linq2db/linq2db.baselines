@@ -1,10 +1,10 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $TargetName Text(12) -- String
-SET     $TargetName = 'bda.Requests'u
-DECLARE $BdaValue Text(9) -- String
-SET     $BdaValue = 'Bda value'u
+DECLARE Id Int32
+SET     Id = 1
+DECLARE TargetName Text(12) -- String
+SET     TargetName = 'bda.Requests'u
+DECLARE BdaValue Text(9) -- String
+SET     BdaValue = 'Bda value'u
 
 INSERT INTO `Task`
 (

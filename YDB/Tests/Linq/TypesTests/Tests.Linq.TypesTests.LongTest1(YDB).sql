@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $value Uint32 -- UInt32
-SET     $value = 0u
+DECLARE value Uint32 -- UInt32
+SET     value = 0u
 
 SELECT
 	t.ID as ID,

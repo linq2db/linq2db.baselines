@@ -1,10 +1,10 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $StartedOn Timestamp -- DateTime2
-SET     $StartedOn = Timestamp('2026-01-01T10:20:30.000000Z')
-DECLARE $FinishedOn Timestamp -- DateTime2
-SET     $FinishedOn = Timestamp('2026-01-01T10:20:30.123456Z')
+DECLARE Id Int32
+SET     Id = 1
+DECLARE StartedOn Timestamp -- DateTime2
+SET     StartedOn = Timestamp('2026-01-01T10:20:30.000000Z')
+DECLARE FinishedOn Timestamp -- DateTime2
+SET     FinishedOn = Timestamp('2026-01-01T10:20:30.123456Z')
 
 INSERT INTO EventRow
 (

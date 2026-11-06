@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $skip Int32
-SET     $skip = 3
+DECLARE skip Int32
+SET     skip = 3
 
 SELECT
 	t1.FirstName as FirstName,
@@ -15,8 +15,8 @@ ORDER BY
 LIMIT 1 OFFSET $skip 
 
 -- YDB Ydb
-DECLARE $skip Int32
-SET     $skip = 3
+DECLARE skip Int32
+SET     skip = 3
 
 SELECT
 	t1.FirstName as FirstName,

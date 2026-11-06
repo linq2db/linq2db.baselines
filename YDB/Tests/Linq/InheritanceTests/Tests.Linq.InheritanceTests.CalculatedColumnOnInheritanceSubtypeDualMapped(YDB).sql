@@ -1,10 +1,10 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Type Int32
-SET     $Type = 1
-DECLARE $Stored Text(4) -- String
-SET     $Stored = 'John'u
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Type Int32
+SET     Type = 1
+DECLARE Stored Text(4) -- String
+SET     Stored = 'John'u
 
 INSERT INTO CalcSubtypeDual
 (

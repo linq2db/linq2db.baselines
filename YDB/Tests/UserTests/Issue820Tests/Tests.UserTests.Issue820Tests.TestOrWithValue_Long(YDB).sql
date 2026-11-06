@@ -5,8 +5,8 @@ FROM
 	LinqDataTypes t1
 
 -- YDB Ydb
-DECLARE $param Int64
-SET     $param = 1l
+DECLARE param Int64
+SET     param = 1l
 
 SELECT
 	t1.ID as ID,

@@ -1,12 +1,12 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Name Text(3) -- String
-SET     $Name = 'Max'u
-DECLARE $Age Int32
-SET     $Age = 20
-DECLARE $Gender Text(6) -- String
-SET     $Gender = 'Female'u
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Name Text(3) -- String
+SET     Name = 'Max'u
+DECLARE Age Int32
+SET     Age = 20
+DECLARE Gender Text(6) -- String
+SET     Gender = 'Female'u
 
 INSERT INTO PR_1598_Update_Enum_Table
 (
@@ -36,14 +36,14 @@ WHERE
 LIMIT 1
 
 -- YDB Ydb
-DECLARE $Name Text(4) -- String
-SET     $Name = 'Jack'u
-DECLARE $Age Int32
-SET     $Age = 2
-DECLARE $Gender Text(4) -- String
-SET     $Gender = 'Male'u
-DECLARE $Id Int32
-SET     $Id = 1
+DECLARE Name Text(4) -- String
+SET     Name = 'Jack'u
+DECLARE Age Int32
+SET     Age = 2
+DECLARE Gender Text(4) -- String
+SET     Gender = 'Male'u
+DECLARE Id Int32
+SET     Id = 1
 
 UPDATE
 	PR_1598_Update_Enum_Table
@@ -67,12 +67,12 @@ WHERE
 LIMIT 1
 
 -- YDB Ydb
-DECLARE $Name Text(8) -- String
-SET     $Name = 'Francine'u
-DECLARE $Age Int32
-SET     $Age = 20
-DECLARE $Id Int32
-SET     $Id = 1
+DECLARE Name Text(8) -- String
+SET     Name = 'Francine'u
+DECLARE Age Int32
+SET     Age = 20
+DECLARE Id Int32
+SET     Id = 1
 
 UPDATE
 	PR_1598_Update_Enum_Table

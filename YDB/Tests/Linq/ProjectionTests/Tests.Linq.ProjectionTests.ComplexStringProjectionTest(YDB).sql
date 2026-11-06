@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $data Text -- String
-SET     $data = NULL
+DECLARE data Text -- String
+SET     data = NULL
 
 INSERT INTO StringTestTable
 (

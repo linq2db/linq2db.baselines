@@ -22,8 +22,8 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $skip Int32
-SET     $skip = 1
+DECLARE skip Int32
+SET     skip = 1
 
 SELECT
 	t1.ID as ID,
@@ -58,8 +58,8 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $skip Int32
-SET     $skip = 1
+DECLARE skip Int32
+SET     skip = 1
 
 SELECT
 	t1.ID as ID,

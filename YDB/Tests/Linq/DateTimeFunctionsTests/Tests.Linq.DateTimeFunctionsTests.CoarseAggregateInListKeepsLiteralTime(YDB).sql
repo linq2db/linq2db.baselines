@@ -1,12 +1,12 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Value Datetime -- DateTime
-SET     $Value = Timestamp('2026-06-01T10:00:00.000000Z')
-DECLARE $Day Date
-SET     $Day = Timestamp('2026-06-01T00:00:00.000000Z')
-DECLARE $Wide Timestamp -- DateTime2
-SET     $Wide = Timestamp('2026-06-01T10:00:00.000000Z')
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Value Datetime -- DateTime
+SET     Value = Timestamp('2026-06-01T10:00:00.000000Z')
+DECLARE Day Date
+SET     Day = Timestamp('2026-06-01T00:00:00.000000Z')
+DECLARE Wide Timestamp -- DateTime2
+SET     Wide = Timestamp('2026-06-01T10:00:00.000000Z')
 
 INSERT INTO CoarseDateShapesRow
 (
@@ -24,8 +24,8 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Ids0_1 Timestamp -- DateTime2
-SET     $Ids0_1 = Timestamp('2026-06-01T10:00:00.500000Z')
+DECLARE Ids0_1 Timestamp -- DateTime2
+SET     Ids0_1 = Timestamp('2026-06-01T10:00:00.500000Z')
 
 SELECT
 	COUNT(*) as Count_1
@@ -42,8 +42,8 @@ WHERE
 	t1.In_1 IN ($Ids0_1)
 
 -- YDB Ydb
-DECLARE $Ids0_1 Timestamp -- DateTime2
-SET     $Ids0_1 = Timestamp('2026-06-01T10:00:00.500000Z')
+DECLARE Ids0_1 Timestamp -- DateTime2
+SET     Ids0_1 = Timestamp('2026-06-01T10:00:00.500000Z')
 
 SELECT
 	COUNT(*) as Count_1

@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $str Text(6) -- String
-SET     $str = '%o~%h%'u
+DECLARE str Text(6) -- String
+SET     str = '%o~%h%'u
 
 SELECT
 	p.FirstName as FirstName,
