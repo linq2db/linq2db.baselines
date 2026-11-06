@@ -7,7 +7,7 @@ SELECT
 FROM
 	"ConvertedConcatTitleRow" "p"
 WHERE
-	("p"."Conv" || "p"."Title") = @bound
+	"p"."Conv" || "p"."Title" = @bound
 
 -- Firebird.2.5 Firebird
 DECLARE @bound VarChar(5) -- String
@@ -18,7 +18,7 @@ SELECT
 FROM
 	"ConvertedConcatTitleRow" "p"
 WHERE
-	@bound = ("p"."Conv" || "p"."Title")
+	@bound = "p"."Conv" || "p"."Title"
 
 -- Firebird.2.5 Firebird
 SELECT
@@ -26,5 +26,5 @@ SELECT
 FROM
 	"ConvertedConcatTitleRow" "p"
 WHERE
-	("p"."Conv" || "p"."Title") IN ('x:c1T')
+	"p"."Conv" || "p"."Title" IN ('x:c1T')
 
