@@ -1,14 +1,14 @@
 ﻿-- YDB Ydb
-DECLARE $Name Text(4) -- String
-SET     $Name = 'new1'u
-DECLARE $Version Int32
-SET     $Version = 5
-DECLARE $UpdatedAt Timestamp -- DateTime2
-SET     $UpdatedAt = NULL
-DECLARE $UpdatedBy Text -- String
-SET     $UpdatedBy = NULL
-DECLARE $Id Int32
-SET     $Id = 1
+DECLARE Name Text(4) -- String
+SET     Name = 'new1'u
+DECLARE Version Int32
+SET     Version = 5
+DECLARE UpdatedAt Timestamp -- DateTime2
+SET     UpdatedAt = NULL
+DECLARE UpdatedBy Text -- String
+SET     UpdatedBy = NULL
+DECLARE Id Int32
+SET     Id = 1
 
 UPDATE
 	EntityUpdateTest
@@ -21,16 +21,16 @@ WHERE
 	EntityUpdateTest.Id = $Id
 
 -- YDB Ydb
-DECLARE $Name Text(4) -- String
-SET     $Name = 'new2'u
-DECLARE $Version Int32
-SET     $Version = 10
-DECLARE $UpdatedAt Timestamp -- DateTime2
-SET     $UpdatedAt = NULL
-DECLARE $UpdatedBy Text -- String
-SET     $UpdatedBy = NULL
-DECLARE $Id Int32
-SET     $Id = 2
+DECLARE Name Text(4) -- String
+SET     Name = 'new2'u
+DECLARE Version Int32
+SET     Version = 10
+DECLARE UpdatedAt Timestamp -- DateTime2
+SET     UpdatedAt = NULL
+DECLARE UpdatedBy Text -- String
+SET     UpdatedBy = NULL
+DECLARE Id Int32
+SET     Id = 2
 
 UPDATE
 	EntityUpdateTest

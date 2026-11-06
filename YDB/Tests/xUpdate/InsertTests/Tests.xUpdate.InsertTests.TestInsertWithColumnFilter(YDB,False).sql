@@ -1,10 +1,10 @@
 ﻿-- YDB Ydb
-DECLARE $FirstName Text(18) -- String
-SET     $FirstName = 'InsertColumnFilter'u
-DECLARE $LastName Text(8) -- String
-SET     $LastName = 'whatever'u
-DECLARE $Gender Text(1) -- AnsiStringFixedLength
-SET     $Gender = 'M'u
+DECLARE FirstName Text(18) -- String
+SET     FirstName = 'InsertColumnFilter'u
+DECLARE LastName Text(8) -- String
+SET     LastName = 'whatever'u
+DECLARE Gender Text(1) -- AnsiStringFixedLength
+SET     Gender = 'M'u
 
 INSERT INTO Person
 (
@@ -20,8 +20,8 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $FirstName Text(18) -- String
-SET     $FirstName = 'InsertColumnFilter'u
+DECLARE FirstName Text(18) -- String
+SET     FirstName = 'InsertColumnFilter'u
 
 SELECT
 	x.FirstName as FirstName,
@@ -36,8 +36,8 @@ WHERE
 LIMIT 1
 
 -- YDB Ydb
-DECLARE $newName Text(18) -- String
-SET     $newName = 'InsertColumnFilter'u
+DECLARE newName Text(18) -- String
+SET     newName = 'InsertColumnFilter'u
 
 DELETE FROM
 	Person

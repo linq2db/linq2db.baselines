@@ -17,8 +17,8 @@ WHERE
 LIMIT 1
 
 -- YDB Ydb
-DECLARE $dt Timestamp -- DateTime2
-SET     $dt = Timestamp('2010-12-14T05:00:07.425014Z')
+DECLARE dt Timestamp -- DateTime2
+SET     dt = Timestamp('2010-12-14T05:00:07.425014Z')
 
 UPDATE
 	LinqDataTypes
@@ -46,8 +46,8 @@ WHERE
 LIMIT 1
 
 -- YDB Ydb
-DECLARE $pdt Timestamp -- DateTime2
-SET     $pdt = Timestamp('2001-01-11T01:11:21.100000Z')
+DECLARE pdt Timestamp -- DateTime2
+SET     pdt = Timestamp('2001-01-11T01:11:21.100000Z')
 
 UPDATE
 	LinqDataTypes

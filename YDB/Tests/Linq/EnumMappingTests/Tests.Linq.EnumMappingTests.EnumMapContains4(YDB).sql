@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $p Int32
-SET     $p = 102
+DECLARE p Int32
+SET     p = 102
 
 DELETE FROM
 	LinqDataTypes
@@ -20,8 +20,8 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Ids0_1 Int64
-SET     $Ids0_1 = 12l
+DECLARE Ids0_1 Int64
+SET     Ids0_1 = 12l
 
 SELECT
 	COUNT(*) as Count_1
@@ -31,8 +31,8 @@ WHERE
 	r.ID = 101 AND r.BigIntValue IN ($Ids0_1)
 
 -- YDB Ydb
-DECLARE $p Int32
-SET     $p = 102
+DECLARE p Int32
+SET     p = 102
 
 DELETE FROM
 	LinqDataTypes

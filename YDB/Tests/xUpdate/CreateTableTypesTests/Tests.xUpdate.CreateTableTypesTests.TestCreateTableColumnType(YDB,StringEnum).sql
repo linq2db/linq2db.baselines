@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $StringEnum Text(2) -- String
-SET     $StringEnum = '14'u
+DECLARE Id Int32
+SET     Id = 1
+DECLARE StringEnum Text(2) -- String
+SET     StringEnum = '14'u
 
 INSERT INTO CreateTableTypes
 (
@@ -16,10 +16,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 2
-DECLARE $StringEnum Text(1) -- String
-SET     $StringEnum = '4'u
+DECLARE Id Int32
+SET     Id = 2
+DECLARE StringEnum Text(1) -- String
+SET     StringEnum = '4'u
 
 INSERT INTO CreateTableTypes
 (

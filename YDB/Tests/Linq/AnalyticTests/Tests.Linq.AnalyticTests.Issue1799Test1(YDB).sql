@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $take Int32
-SET     $take = 10
+DECLARE take Int32
+SET     take = 10
 
 SELECT
 	g_1.User_1 as User_1,

@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $filter1 Text(6) -- String
-SET     $filter1 = '%John%'u
-DECLARE $filter2 Text(8) -- String
-SET     $filter2 = '%Tester%'u
+DECLARE filter1 Text(6) -- String
+SET     filter1 = '%John%'u
+DECLARE filter2 Text(8) -- String
+SET     filter2 = '%Tester%'u
 
 $CTE_1 = 	SELECT
 		d.PersonID as PersonID

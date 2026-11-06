@@ -1,16 +1,16 @@
 ﻿-- YDB Ydb
-DECLARE $iteration Int32
-SET     $iteration = 2
-DECLARE $Value1 Text(2) -- String
-SET     $Value1 = '[]'u
-DECLARE $Enum Text(6) -- String
-SET     $Enum = 'Value1'u
-DECLARE $inserted Text(22) -- String
-SET     $inserted = '[{"Value":"inserted"}]'u
-DECLARE $boolValue Text(1) -- AnsiString
-SET     $boolValue = 'Y'u
-DECLARE $boolValue_1 Text(1) -- AnsiString
-SET     $boolValue_1 = 'T'u
+DECLARE iteration Int32
+SET     iteration = 2
+DECLARE Value1 Text(2) -- String
+SET     Value1 = '[]'u
+DECLARE Enum Text(6) -- String
+SET     Enum = 'Value1'u
+DECLARE inserted Text(22) -- String
+SET     inserted = '[{"Value":"inserted"}]'u
+DECLARE boolValue Text(1) -- AnsiString
+SET     boolValue = 'Y'u
+DECLARE boolValue_1 Text(1) -- AnsiString
+SET     boolValue_1 = 'T'u
 
 INSERT INTO ValueConversion
 (
@@ -32,8 +32,8 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $iteration Int32
-SET     $iteration = 2
+DECLARE iteration Int32
+SET     iteration = 2
 
 SELECT
 	e.Id as Id,

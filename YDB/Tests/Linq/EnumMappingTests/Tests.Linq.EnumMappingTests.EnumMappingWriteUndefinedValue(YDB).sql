@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $p Int32
-SET     $p = 102
+DECLARE p Int32
+SET     p = 102
 
 DELETE FROM
 	LinqDataTypes
@@ -29,8 +29,8 @@ WHERE
 	r.ID = 101
 
 -- YDB Ydb
-DECLARE $p Int32
-SET     $p = 102
+DECLARE p Int32
+SET     p = 102
 
 DELETE FROM
 	LinqDataTypes

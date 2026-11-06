@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $take Int32
-SET     $take = 2
+DECLARE take Int32
+SET     take = 2
 
 SELECT
 	t3.projection__set_id__ as projection__set_id__,

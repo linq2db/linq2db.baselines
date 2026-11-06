@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $Ids0_1 Timestamp -- DateTime2
-SET     $Ids0_1 = Timestamp('2001-01-11T01:11:21.100000Z')
+DECLARE Ids0_1 Timestamp -- DateTime2
+SET     Ids0_1 = Timestamp('2001-01-11T01:11:21.100000Z')
 
 SELECT
 	t.ID as ID,

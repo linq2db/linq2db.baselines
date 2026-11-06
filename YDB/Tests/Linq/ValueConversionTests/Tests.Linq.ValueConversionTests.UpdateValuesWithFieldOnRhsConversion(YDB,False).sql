@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $yes Text(1) -- String
-SET     $yes = 'X'u
-DECLARE $no Text -- String
-SET     $no = NULL
+DECLARE yes Text(1) -- String
+SET     yes = 'X'u
+DECLARE no Text -- String
+SET     no = NULL
 
 UPDATE
 	TableWithConverterValue

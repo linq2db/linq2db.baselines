@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $IntEnumNullable Int32
-SET     $IntEnumNullable = NULL
+DECLARE Id Int32
+SET     Id = 1
+DECLARE IntEnumNullable Int32
+SET     IntEnumNullable = NULL
 
 INSERT INTO CreateTableTypes
 (
@@ -16,10 +16,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 2
-DECLARE $IntEnumNullable Int32
-SET     $IntEnumNullable = 60
+DECLARE Id Int32
+SET     Id = 2
+DECLARE IntEnumNullable Int32
+SET     IntEnumNullable = 60
 
 INSERT INTO CreateTableTypes
 (

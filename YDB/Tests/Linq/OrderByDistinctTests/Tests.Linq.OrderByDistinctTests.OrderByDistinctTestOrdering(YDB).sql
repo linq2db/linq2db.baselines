@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $take Int32
-SET     $take = 3
-DECLARE $skip Int32
-SET     $skip = 0
+DECLARE take Int32
+SET     take = 3
+DECLARE skip Int32
+SET     skip = 0
 
 SELECT DISTINCT
 	x.DuplicateData as DuplicateData
@@ -11,10 +11,10 @@ FROM
 LIMIT $take OFFSET $skip 
 
 -- YDB Ydb
-DECLARE $take Int32
-SET     $take = 3
-DECLARE $skip Int32
-SET     $skip = 0
+DECLARE take Int32
+SET     take = 3
+DECLARE skip Int32
+SET     skip = 0
 
 SELECT
 	x.DuplicateData as DuplicateData
@@ -25,10 +25,10 @@ ORDER BY
 LIMIT $take OFFSET $skip 
 
 -- YDB Ydb
-DECLARE $take Int32
-SET     $take = 3
-DECLARE $skip Int32
-SET     $skip = 0
+DECLARE take Int32
+SET     take = 3
+DECLARE skip Int32
+SET     skip = 0
 
 SELECT DISTINCT
 	x.DuplicateData as DuplicateData
@@ -37,10 +37,10 @@ FROM
 LIMIT $take OFFSET $skip 
 
 -- YDB Ydb
-DECLARE $take Int32
-SET     $take = 3
-DECLARE $skip Int32
-SET     $skip = 0
+DECLARE take Int32
+SET     take = 3
+DECLARE skip Int32
+SET     skip = 0
 
 SELECT
 	x.DuplicateData as DuplicateData
@@ -51,10 +51,10 @@ ORDER BY
 LIMIT $take OFFSET $skip 
 
 -- YDB Ydb
-DECLARE $take Int32
-SET     $take = 3
-DECLARE $skip Int32
-SET     $skip = 0
+DECLARE take Int32
+SET     take = 3
+DECLARE skip Int32
+SET     skip = 0
 
 SELECT DISTINCT
 	x.DuplicateData as DuplicateData
@@ -63,10 +63,10 @@ FROM
 LIMIT $take OFFSET $skip 
 
 -- YDB Ydb
-DECLARE $take Int32
-SET     $take = 3
-DECLARE $skip Int32
-SET     $skip = 0
+DECLARE take Int32
+SET     take = 3
+DECLARE skip Int32
+SET     skip = 0
 
 SELECT
 	x.DuplicateData as DuplicateData
@@ -78,10 +78,10 @@ ORDER BY
 LIMIT $take OFFSET $skip 
 
 -- YDB Ydb
-DECLARE $take Int32
-SET     $take = 3
-DECLARE $skip Int32
-SET     $skip = 0
+DECLARE take Int32
+SET     take = 3
+DECLARE skip Int32
+SET     skip = 0
 
 SELECT DISTINCT
 	x.DuplicateData as DuplicateData
@@ -90,10 +90,10 @@ FROM
 LIMIT $take OFFSET $skip 
 
 -- YDB Ydb
-DECLARE $take Int32
-SET     $take = 3
-DECLARE $skip Int32
-SET     $skip = 0
+DECLARE take Int32
+SET     take = 3
+DECLARE skip Int32
+SET     skip = 0
 
 SELECT
 	x.DuplicateData as DuplicateData
@@ -105,10 +105,10 @@ ORDER BY
 LIMIT $take OFFSET $skip 
 
 -- YDB Ydb
-DECLARE $take Int32
-SET     $take = 3
-DECLARE $skip Int32
-SET     $skip = 0
+DECLARE take Int32
+SET     take = 3
+DECLARE skip Int32
+SET     skip = 0
 
 SELECT DISTINCT
 	x.DuplicateData as DuplicateData
@@ -117,10 +117,10 @@ FROM
 LIMIT $take OFFSET $skip 
 
 -- YDB Ydb
-DECLARE $take Int32
-SET     $take = 3
-DECLARE $skip Int32
-SET     $skip = 0
+DECLARE take Int32
+SET     take = 3
+DECLARE skip Int32
+SET     skip = 0
 
 SELECT
 	x.DuplicateData as DuplicateData
@@ -132,10 +132,10 @@ ORDER BY
 LIMIT $take OFFSET $skip 
 
 -- YDB Ydb
-DECLARE $take Int32
-SET     $take = 3
-DECLARE $skip Int32
-SET     $skip = 0
+DECLARE take Int32
+SET     take = 3
+DECLARE skip Int32
+SET     skip = 0
 
 SELECT DISTINCT
 	x.DuplicateData as DuplicateData
@@ -144,10 +144,10 @@ FROM
 LIMIT $take OFFSET $skip 
 
 -- YDB Ydb
-DECLARE $take Int32
-SET     $take = 3
-DECLARE $skip Int32
-SET     $skip = 0
+DECLARE take Int32
+SET     take = 3
+DECLARE skip Int32
+SET     skip = 0
 
 SELECT
 	x.DuplicateData as DuplicateData

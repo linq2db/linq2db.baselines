@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $IntEnum Int32
-SET     $IntEnum = 11
+DECLARE Id Int32
+SET     Id = 1
+DECLARE IntEnum Int32
+SET     IntEnum = 11
 
 INSERT INTO CreateTableTypes
 (
@@ -16,10 +16,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 2
-DECLARE $IntEnum Int32
-SET     $IntEnum = 60
+DECLARE Id Int32
+SET     Id = 2
+DECLARE IntEnum Int32
+SET     IntEnum = 60
 
 INSERT INTO CreateTableTypes
 (

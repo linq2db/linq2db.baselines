@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $ids Int32
-SET     $ids = 2
+DECLARE ids Int32
+SET     ids = 2
 
 SELECT
 	p.PersonID as PersonID
@@ -10,8 +10,8 @@ WHERE
 	p.PersonID = $ids
 
 -- YDB Ydb
-DECLARE $ids Int32
-SET     $ids = 3
+DECLARE ids Int32
+SET     ids = 3
 
 SELECT
 	p.PersonID as PersonID
@@ -21,8 +21,8 @@ WHERE
 	p.PersonID = $ids
 
 -- YDB Ydb
-DECLARE $ids Int32
-SET     $ids = 2
+DECLARE ids Int32
+SET     ids = 2
 
 SELECT
 	p.PersonID as PersonID
@@ -32,8 +32,8 @@ WHERE
 	p.PersonID = $ids
 
 -- YDB Ydb
-DECLARE $ids Int32
-SET     $ids = 3
+DECLARE ids Int32
+SET     ids = 3
 
 SELECT
 	p.PersonID as PersonID

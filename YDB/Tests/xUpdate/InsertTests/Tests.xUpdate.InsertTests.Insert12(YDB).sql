@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $FirstName Text(9) -- String
-SET     $FirstName = 'FirstName'u
-DECLARE $Gender Text(1) -- StringFixedLength
-SET     $Gender = 'F'u
+DECLARE FirstName Text(9) -- String
+SET     FirstName = 'FirstName'u
+DECLARE Gender Text(1) -- StringFixedLength
+SET     Gender = 'F'u
 
 INSERT INTO Person
 (

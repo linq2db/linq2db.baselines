@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $minSalary Int32
-SET     $minSalary = 45000
+DECLARE minSalary Int32
+SET     minSalary = 45000
 
 $CTE_1 = 	SELECT
 		c_1.Id as Id,

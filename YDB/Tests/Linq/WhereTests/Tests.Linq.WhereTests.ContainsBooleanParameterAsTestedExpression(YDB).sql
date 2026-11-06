@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $flag Bool -- Boolean
-SET     $flag = true
+DECLARE flag Bool -- Boolean
+SET     flag = true
 
 SELECT
 	t.ID as ID

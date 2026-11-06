@@ -1,12 +1,12 @@
 ﻿-- YDB Ydb
-DECLARE $FirstName Text(6) -- String
-SET     $FirstName = 'Steven'u
-DECLARE $LastName Text(4) -- String
-SET     $LastName = 'King'u
-DECLARE $MiddleName Text -- String
-SET     $MiddleName = NULL
-DECLARE $Gender Text(1) -- AnsiStringFixedLength
-SET     $Gender = 'M'u
+DECLARE FirstName Text(6) -- String
+SET     FirstName = 'Steven'u
+DECLARE LastName Text(4) -- String
+SET     LastName = 'King'u
+DECLARE MiddleName Text -- String
+SET     MiddleName = NULL
+DECLARE Gender Text(1) -- AnsiStringFixedLength
+SET     Gender = 'M'u
 
 INSERT INTO xxPerson
 (
@@ -41,16 +41,16 @@ FROM
 LIMIT 2
 
 -- YDB Ydb
-DECLARE $FirstName Text(6) -- String
-SET     $FirstName = 'Steven'u
-DECLARE $LastName Text(4) -- String
-SET     $LastName = 'King'u
-DECLARE $MiddleName Text(4) -- String
-SET     $MiddleName = 'None'u
-DECLARE $Gender Text(1) -- AnsiStringFixedLength
-SET     $Gender = 'M'u
-DECLARE $ID Int32
-SET     $ID = 1
+DECLARE FirstName Text(6) -- String
+SET     FirstName = 'Steven'u
+DECLARE LastName Text(4) -- String
+SET     LastName = 'King'u
+DECLARE MiddleName Text(4) -- String
+SET     MiddleName = 'None'u
+DECLARE Gender Text(1) -- AnsiStringFixedLength
+SET     Gender = 'M'u
+DECLARE ID Int32
+SET     ID = 1
 
 UPDATE
 	xxPerson

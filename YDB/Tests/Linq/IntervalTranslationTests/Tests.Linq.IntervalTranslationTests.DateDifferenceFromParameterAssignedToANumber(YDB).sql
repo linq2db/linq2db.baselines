@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $asOf Timestamp -- DateTime2
-SET     $asOf = Timestamp('2026-01-10T08:15:30.000000Z')
+DECLARE asOf Timestamp -- DateTime2
+SET     asOf = Timestamp('2026-01-10T08:15:30.000000Z')
 
 UPDATE
 	MeasuredPeriodRow
@@ -19,8 +19,8 @@ FROM
 LIMIT 2
 
 -- YDB Ydb
-DECLARE $asOf Timestamp -- DateTime2
-SET     $asOf = Timestamp('2026-01-10T08:15:30.000000Z')
+DECLARE asOf Timestamp -- DateTime2
+SET     asOf = Timestamp('2026-01-10T08:15:30.000000Z')
 
 SELECT
 	r.Id as Id
@@ -30,8 +30,8 @@ WHERE
 	r.Elapsed < Unwrap(CAST(Unwrap(CAST($asOf - r.ClosedOn AS Int64)) * 10l AS Double)) / Double('36000000000')
 
 -- YDB Ydb
-DECLARE $asOf Timestamp -- DateTime2
-SET     $asOf = Timestamp('2026-01-10T08:15:30.000000Z')
+DECLARE asOf Timestamp -- DateTime2
+SET     asOf = Timestamp('2026-01-10T08:15:30.000000Z')
 
 UPDATE
 	MeasuredPeriodRow
@@ -50,8 +50,8 @@ FROM
 LIMIT 2
 
 -- YDB Ydb
-DECLARE $asOf Timestamp -- DateTime2
-SET     $asOf = Timestamp('2026-01-10T08:15:30.000000Z')
+DECLARE asOf Timestamp -- DateTime2
+SET     asOf = Timestamp('2026-01-10T08:15:30.000000Z')
 
 SELECT
 	r.Id as Id

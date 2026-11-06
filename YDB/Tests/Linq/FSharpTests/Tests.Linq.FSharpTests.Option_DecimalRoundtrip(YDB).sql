@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Value Decimal(4, 2)
-SET     $Value = Decimal('12.34', 22, 9)
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Value Decimal(4, 2)
+SET     Value = Decimal('12.34', 22, 9)
 
 INSERT INTO OptionDecimalTable
 (
@@ -16,10 +16,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 2
-DECLARE $Value Decimal
-SET     $Value = NULL
+DECLARE Id Int32
+SET     Id = 2
+DECLARE Value Decimal
+SET     Value = NULL
 
 INSERT INTO OptionDecimalTable
 (

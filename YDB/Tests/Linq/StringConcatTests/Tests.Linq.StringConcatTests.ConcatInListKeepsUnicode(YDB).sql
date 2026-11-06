@@ -1,10 +1,10 @@
 ﻿-- YDB Ydb
-DECLARE $suffix Text(3) -- String
-SET     $suffix = 'Жук'u
-DECLARE $Ids0_1 Text(8) -- String
-SET     $Ids0_1 = 'A-100Щит'u
-DECLARE $Ids0_2 Text(8) -- String
-SET     $Ids0_2 = 'B-200Жук'u
+DECLARE suffix Text(3) -- String
+SET     suffix = 'Жук'u
+DECLARE Ids0_1 Text(8) -- String
+SET     Ids0_1 = 'A-100Щит'u
+DECLARE Ids0_2 Text(8) -- String
+SET     Ids0_2 = 'B-200Жук'u
 
 SELECT
 	p.Id as Id

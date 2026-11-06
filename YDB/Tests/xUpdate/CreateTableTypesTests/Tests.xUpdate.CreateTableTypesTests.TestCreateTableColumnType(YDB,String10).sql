@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $String Text -- String
-SET     $String = ''u
+DECLARE Id Int32
+SET     Id = 1
+DECLARE String Text -- String
+SET     String = ''u
 
 INSERT INTO CreateTableTypes
 (
@@ -16,10 +16,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 2
-DECLARE $String Text(7) -- String
-SET     $String = 'test 10'u
+DECLARE Id Int32
+SET     Id = 2
+DECLARE String Text(7) -- String
+SET     String = 'test 10'u
 
 INSERT INTO CreateTableTypes
 (
