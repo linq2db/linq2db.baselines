@@ -1,0 +1,38 @@
+﻿-- PostgreSQL.13 PostgreSQL12
+SELECT
+	t1."ParentID",
+	t1."Child",
+	t1."Child",
+	t1."ChildID"
+FROM
+	(
+		SELECT
+			p."ParentID",
+			NULL::Int as "Child",
+			NULL::Int as "ChildID"
+		FROM
+			"Parent" p
+		UNION
+		SELECT
+			p_1."ParentID",
+			p_1."ParentID" as "Child",
+			p_1."ParentID" + 100 as "ChildID"
+		FROM
+			"Parent" p_1
+	) t1
+UNION
+SELECT
+	p_2."ParentID",
+	NULL::Int,
+	NULL::Int,
+	NULL::Int
+FROM
+	"Parent" p_2
+
+-- PostgreSQL.13 PostgreSQL12
+SELECT
+	t1."ParentID",
+	t1."Value1"
+FROM
+	"Parent" t1
+
