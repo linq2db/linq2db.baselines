@@ -7,7 +7,7 @@ SELECT
 FROM
 	"ConcatProduct" "p"
 WHERE
-	"p"."Title" = ("p"."Sku" || Coalesce(CAST(@suffix AS VARCHAR(6)), ''))
+	"p"."Title" = "p"."Sku" || Coalesce(CAST(@suffix AS VARCHAR(6)), '')
 
 -- Firebird.2.5 Firebird
 SELECT

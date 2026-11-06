@@ -7,7 +7,7 @@ SELECT
 FROM
 	"ConcatProduct" "p"
 WHERE
-	("p"."Sku" || "p"."Title") = @key
+	"p"."Sku" || "p"."Title" = @key
 
 -- Firebird.3 Firebird3
 SELECT

@@ -16,7 +16,7 @@ SELECT
 		FROM
 			"PrefixedCodeWithTitle" "t"
 		WHERE
-			CAST(@Code AS VarChar(4) CHARACTER SET UNICODE_FSS) = (Coalesce("t"."Code", '') || Coalesce("t"."Title", ''))
+			CAST(@Code AS VarChar(4) CHARACTER SET UNICODE_FSS) = Coalesce("t"."Code", '') || Coalesce("t"."Title", '')
 	)
 FROM rdb$database
 

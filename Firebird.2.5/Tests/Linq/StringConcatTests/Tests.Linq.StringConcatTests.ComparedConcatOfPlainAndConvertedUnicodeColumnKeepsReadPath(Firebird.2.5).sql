@@ -15,7 +15,7 @@ SELECT
 FROM
 	"PlainAndConvertedUnicodeRow" "r"
 WHERE
-	("r"."Plain" || "r"."Conv") = @read
+	"r"."Plain" || "r"."Conv" = @read
 
 -- Firebird.2.5 Firebird
 DECLARE @read VarChar(6) -- String
@@ -26,7 +26,7 @@ SELECT
 FROM
 	"PlainAndConvertedUnicodeRow" "r"
 WHERE
-	("r"."Plain" || "r"."Conv") <> @read
+	"r"."Plain" || "r"."Conv" <> @read
 
 -- Firebird.2.5 Firebird
 SELECT
@@ -37,7 +37,7 @@ SELECT
 			FROM
 				"PlainAndConvertedUnicodeRow" "r"
 			WHERE
-				'A-x:n1' = ("r"."Plain" || "r"."Conv")
+				'A-x:n1' = "r"."Plain" || "r"."Conv"
 		)
 			THEN '1'
 		ELSE '0'
@@ -50,5 +50,5 @@ SELECT
 FROM
 	"PlainAndConvertedUnicodeRow" "r"
 WHERE
-	("r"."Plain" || "r"."Conv") IN ('A-x:n1')
+	"r"."Plain" || "r"."Conv" IN ('A-x:n1')
 
