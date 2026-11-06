@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $total Int32
-SET     $total = 700
+DECLARE total Int32
+SET     total = 700
 
 SELECT
 	COUNT(*) as Count_1
