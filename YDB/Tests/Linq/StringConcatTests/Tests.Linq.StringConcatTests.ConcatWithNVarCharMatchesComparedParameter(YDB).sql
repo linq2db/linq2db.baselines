@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $key Text(13) -- String
-SET     $key = 'A-100A-100Жук'u
+DECLARE key Text(13) -- String
+SET     key = 'A-100A-100Жук'u
 
 SELECT
 	p.Id as Id
