@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $take Int32
-SET     $take = 2
-DECLARE $skip Int32
-SET     $skip = 1
+DECLARE take Int32
+SET     take = 2
+DECLARE skip Int32
+SET     skip = 1
 
 SELECT
 	r_1.ID as ID,

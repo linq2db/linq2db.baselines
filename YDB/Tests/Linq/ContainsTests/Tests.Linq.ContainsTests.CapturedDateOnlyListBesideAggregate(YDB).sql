@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $Ids0_1 Date
-SET     $Ids0_1 = Date('2026-06-01')
+DECLARE Ids0_1 Date
+SET     Ids0_1 = Date('2026-06-01')
 
 SELECT
 	COUNT(*) as Count_1

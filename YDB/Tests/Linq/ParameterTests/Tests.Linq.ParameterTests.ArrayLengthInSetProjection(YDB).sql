@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $arr Int32
-SET     $arr = 2
+DECLARE arr Int32
+SET     arr = 2
 
 SELECT
 	p.PersonID as PersonID,

@@ -1,24 +1,24 @@
 ﻿-- YDB Ydb
-DECLARE $Ids0_1 Int32
-SET     $Ids0_1 = 0
-DECLARE $Ids0_2 Int32
-SET     $Ids0_2 = 1
-DECLARE $Ids0_3 Int32
-SET     $Ids0_3 = 2
-DECLARE $Ids0_4 Int32
-SET     $Ids0_4 = 3
-DECLARE $Ids0_5 Int32
-SET     $Ids0_5 = 4
-DECLARE $Ids0_6 Int32
-SET     $Ids0_6 = 5
-DECLARE $Ids0_7 Int32
-SET     $Ids0_7 = 6
-DECLARE $Ids0_8 Int32
-SET     $Ids0_8 = 7
-DECLARE $Ids0_9 Int32
-SET     $Ids0_9 = 8
-DECLARE $Ids0_10 Int32
-SET     $Ids0_10 = 9
+DECLARE Ids0_1 Int32
+SET     Ids0_1 = 0
+DECLARE Ids0_2 Int32
+SET     Ids0_2 = 1
+DECLARE Ids0_3 Int32
+SET     Ids0_3 = 2
+DECLARE Ids0_4 Int32
+SET     Ids0_4 = 3
+DECLARE Ids0_5 Int32
+SET     Ids0_5 = 4
+DECLARE Ids0_6 Int32
+SET     Ids0_6 = 5
+DECLARE Ids0_7 Int32
+SET     Ids0_7 = 6
+DECLARE Ids0_8 Int32
+SET     Ids0_8 = 7
+DECLARE Ids0_9 Int32
+SET     Ids0_9 = 8
+DECLARE Ids0_10 Int32
+SET     Ids0_10 = 9
 
 SELECT DISTINCT
 	p1.PersonID as PersonID,

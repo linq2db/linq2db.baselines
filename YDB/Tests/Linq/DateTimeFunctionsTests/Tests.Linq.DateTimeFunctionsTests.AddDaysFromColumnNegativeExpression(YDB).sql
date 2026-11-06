@@ -1,20 +1,20 @@
 ﻿-- YDB Ydb
-DECLARE $ID Int32
-SET     $ID = 5000
-DECLARE $MoneyValue Decimal(6, 2)
-SET     $MoneyValue = Decimal('0', 22, 9)
-DECLARE $DateTimeValue Timestamp -- DateTime2
-SET     $DateTimeValue = Timestamp('2018-01-03T00:00:00.000000Z')
-DECLARE $BoolValue Bool -- Boolean
-SET     $BoolValue = false
-DECLARE $GuidValue Uuid -- Guid
-SET     $GuidValue = Uuid('00000000-0000-0000-0000-000000000000')
-DECLARE $BinaryValue Bytes -- Binary
-SET     $BinaryValue = NULL
-DECLARE $SmallIntValue Int16
-SET     $SmallIntValue = -2s
-DECLARE $StringValue Text -- String
-SET     $StringValue = NULL
+DECLARE ID Int32
+SET     ID = 5000
+DECLARE MoneyValue Decimal(6, 2)
+SET     MoneyValue = Decimal('0', 22, 9)
+DECLARE DateTimeValue Timestamp -- DateTime2
+SET     DateTimeValue = Timestamp('2018-01-03T00:00:00.000000Z')
+DECLARE BoolValue Bool -- Boolean
+SET     BoolValue = false
+DECLARE GuidValue Uuid -- Guid
+SET     GuidValue = Uuid('00000000-0000-0000-0000-000000000000')
+DECLARE BinaryValue Bytes -- Binary
+SET     BinaryValue = NULL
+DECLARE SmallIntValue Int16
+SET     SmallIntValue = -2s
+DECLARE StringValue Text -- String
+SET     StringValue = NULL
 
 INSERT INTO LinqDataTypes
 (
@@ -40,10 +40,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $part1 Int32
-SET     $part1 = 4
-DECLARE $part2 Int32
-SET     $part2 = 4
+DECLARE part1 Int32
+SET     part1 = 4
+DECLARE part2 Int32
+SET     part2 = 4
 
 SELECT
 	COUNT(*) as Count_1

@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $Value Int32
-SET     $Value = 0
+DECLARE Value Int32
+SET     Value = 0
 
 INSERT INTO AllTypes
 (
@@ -16,8 +16,8 @@ RETURNING
 INSERT ASYNC BULK AllTypes(ID, intDataType)
 
 -- YDB Ydb
-DECLARE $lastId Int32
-SET     $lastId = 3
+DECLARE lastId Int32
+SET     lastId = 3
 
 SELECT
 	t1.ID as ID,
@@ -30,8 +30,8 @@ ORDER BY
 	t1.ID
 
 -- YDB Ydb
-DECLARE $lastId Int32
-SET     $lastId = 3
+DECLARE lastId Int32
+SET     lastId = 3
 
 DELETE FROM
 	AllTypes

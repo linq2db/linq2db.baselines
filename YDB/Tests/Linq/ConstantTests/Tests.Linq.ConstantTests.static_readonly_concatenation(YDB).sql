@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $p Text(9) -- String
-SET     $p = 'StrValue1'u
+DECLARE p Text(9) -- String
+SET     p = 'StrValue1'u
 
 SELECT
 	e.Id as Id,

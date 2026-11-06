@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $take Int32
-SET     $take = 4
+DECLARE take Int32
+SET     take = 4
 
 SELECT DISTINCT
 	t1.ParentID as ParentID

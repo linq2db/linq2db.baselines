@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $BinaryValue Bytes(5) -- Binary
-SET     $BinaryValue = '\x01\x02\x03\x04\x05's
-DECLARE $ints Int32
-SET     $ints = 1
+DECLARE BinaryValue Bytes(5) -- Binary
+SET     BinaryValue = '\x01\x02\x03\x04\x05's
+DECLARE ints Int32
+SET     ints = 1
 
 UPDATE
 	LinqDataTypes
@@ -12,10 +12,10 @@ WHERE
 	LinqDataTypes.ID = $ints
 
 -- YDB Ydb
-DECLARE $BinaryValue Bytes(5) -- Binary
-SET     $BinaryValue = '\x05\x04\x03\x02\x01's
-DECLARE $ints Int32
-SET     $ints = 2
+DECLARE BinaryValue Bytes(5) -- Binary
+SET     BinaryValue = '\x05\x04\x03\x02\x01's
+DECLARE ints Int32
+SET     ints = 2
 
 UPDATE
 	LinqDataTypes
@@ -25,10 +25,10 @@ WHERE
 	LinqDataTypes.ID = $ints
 
 -- YDB Ydb
-DECLARE $Ids0_1 Int32
-SET     $Ids0_1 = 1
-DECLARE $Ids0_2 Int32
-SET     $Ids0_2 = 2
+DECLARE Ids0_1 Int32
+SET     Ids0_1 = 1
+DECLARE Ids0_2 Int32
+SET     Ids0_2 = 2
 
 SELECT
 	t.ID as ID,

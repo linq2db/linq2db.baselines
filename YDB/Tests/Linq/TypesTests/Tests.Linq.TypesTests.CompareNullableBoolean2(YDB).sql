@@ -12,8 +12,8 @@ FROM
 	LinqDataTypes t1
 
 -- YDB Ydb
-DECLARE $param2 Bool -- Boolean
-SET     $param2 = false
+DECLARE param2 Bool -- Boolean
+SET     param2 = false
 
 SELECT
 	t1.ID as ID,

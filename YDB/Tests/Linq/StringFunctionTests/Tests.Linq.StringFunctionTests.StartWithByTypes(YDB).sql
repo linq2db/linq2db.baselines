@@ -1,12 +1,12 @@
 ﻿-- YDB Ydb
-DECLARE $str Text(5) -- AnsiStringFixedLength
-SET     $str = 'some%'u
-DECLARE $str_1 Text(5) -- StringFixedLength
-SET     $str_1 = 'some%'u
-DECLARE $str_2 Text(5) -- AnsiString
-SET     $str_2 = 'some%'u
-DECLARE $str_3 Text(5) -- String
-SET     $str_3 = 'some%'u
+DECLARE str Text(5) -- AnsiStringFixedLength
+SET     str = 'some%'u
+DECLARE str_1 Text(5) -- StringFixedLength
+SET     str_1 = 'some%'u
+DECLARE str_2 Text(5) -- AnsiString
+SET     str_2 = 'some%'u
+DECLARE str_3 Text(5) -- String
+SET     str_3 = 'some%'u
 
 SELECT
 	t.Id as Id,

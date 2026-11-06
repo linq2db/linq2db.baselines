@@ -1,10 +1,10 @@
 ﻿-- YDB Ydb
-DECLARE $suffix Text(3) -- String
-SET     $suffix = 'Жук'u
-DECLARE $Ids0_1 Text(8) -- String
-SET     $Ids0_1 = 'A-100Жук'u
-DECLARE $Ids0_2 Text(8) -- String
-SET     $Ids0_2 = 'B-200Щит'u
+DECLARE suffix Text(3) -- String
+SET     suffix = 'Жук'u
+DECLARE Ids0_1 Text(8) -- String
+SET     Ids0_1 = 'A-100Жук'u
+DECLARE Ids0_2 Text(8) -- String
+SET     Ids0_2 = 'B-200Щит'u
 
 SELECT
 	p.Id as Id
@@ -22,8 +22,8 @@ FROM
 	ConcatProduct t1
 
 -- YDB Ydb
-DECLARE $suffix Text(3) -- String
-SET     $suffix = 'Жук'u
+DECLARE suffix Text(3) -- String
+SET     suffix = 'Жук'u
 
 SELECT
 	p.Id as Id

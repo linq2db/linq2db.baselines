@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $currentDate Timestamp -- DateTime2
-SET     $currentDate = Timestamp('2020-02-29T17:54:55.123123Z')
+DECLARE currentDate Timestamp -- DateTime2
+SET     currentDate = Timestamp('2020-02-29T17:54:55.123123Z')
 
 SELECT
 	o.ID as ID,

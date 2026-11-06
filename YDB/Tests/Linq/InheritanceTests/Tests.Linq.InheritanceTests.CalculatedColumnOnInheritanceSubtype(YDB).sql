@@ -1,12 +1,12 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Type Int32
-SET     $Type = 1
-DECLARE $Name_First Text(4) -- String
-SET     $Name_First = 'John'u
-DECLARE $Name_Second Text(3) -- String
-SET     $Name_Second = 'Doe'u
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Type Int32
+SET     Type = 1
+DECLARE Name_First Text(4) -- String
+SET     Name_First = 'John'u
+DECLARE Name_Second Text(3) -- String
+SET     Name_Second = 'Doe'u
 
 INSERT INTO CalcSubtypeTable
 (

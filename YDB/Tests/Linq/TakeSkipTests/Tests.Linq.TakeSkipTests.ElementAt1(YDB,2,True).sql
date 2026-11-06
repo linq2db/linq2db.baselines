@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $skip Int32
-SET     $skip = 2
+DECLARE skip Int32
+SET     skip = 2
 
 SELECT
 	p.ParentID as ParentID,

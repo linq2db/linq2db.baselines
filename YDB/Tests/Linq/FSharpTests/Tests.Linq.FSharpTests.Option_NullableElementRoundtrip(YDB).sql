@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Value Int32
-SET     $Value = 42
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Value Int32
+SET     Value = 42
 
 INSERT INTO OptionNullableElemTable
 (
@@ -16,10 +16,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 2
-DECLARE $Value Int32
-SET     $Value = NULL
+DECLARE Id Int32
+SET     Id = 2
+DECLARE Value Int32
+SET     Value = NULL
 
 INSERT INTO OptionNullableElemTable
 (

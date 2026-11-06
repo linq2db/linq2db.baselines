@@ -1,10 +1,10 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Stamp Int32
-SET     $Stamp = 5
-DECLARE $Value Text(7) -- String
-SET     $Value = 'initial'u
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Stamp Int32
+SET     Stamp = 5
+DECLARE Value Text(7) -- String
+SET     Value = 'initial'u
 
 INSERT INTO ConcurrencyRefreshNoLock
 (
@@ -20,12 +20,12 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Stamp Int32
-SET     $Stamp = 5
-DECLARE $Value Text(7) -- String
-SET     $Value = 'updated'u
-DECLARE $Id Int32
-SET     $Id = 1
+DECLARE Stamp Int32
+SET     Stamp = 5
+DECLARE Value Text(7) -- String
+SET     Value = 'updated'u
+DECLARE Id Int32
+SET     Id = 1
 
 UPDATE
 	ConcurrencyRefreshNoLock

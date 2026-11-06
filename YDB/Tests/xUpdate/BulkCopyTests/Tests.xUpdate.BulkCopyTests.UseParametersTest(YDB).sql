@@ -771,10 +771,10 @@ VALUES
 ($p97,$p98)
 
 -- YDB Ydb
-DECLARE $ParentID Int32
-SET     $ParentID = 111001
-DECLARE $ParentID_1 Int32
-SET     $ParentID_1 = 111149
+DECLARE ParentID Int32
+SET     ParentID = 111001
+DECLARE ParentID_1 Int32
+SET     ParentID_1 = 111149
 
 SELECT
 	COUNT(*) as Count_1

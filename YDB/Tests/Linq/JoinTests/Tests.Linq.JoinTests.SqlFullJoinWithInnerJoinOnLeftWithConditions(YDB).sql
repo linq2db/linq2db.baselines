@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $id1 Int32
-SET     $id1 = 1
-DECLARE $id2 Int32
-SET     $id2 = 2
+DECLARE id1 Int32
+SET     id1 = 1
+DECLARE id2 Int32
+SET     id2 = 2
 
 SELECT
 	t1.Left_1 as Left_1,

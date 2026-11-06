@@ -13,12 +13,12 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Ids0_1 Int32
-SET     $Ids0_1 = 12
-DECLARE $Ids0_2 Int32
-SET     $Ids0_2 = 11
-DECLARE $Ids0_3 Int32
-SET     $Ids0_3 = 1
+DECLARE Ids0_1 Int32
+SET     Ids0_1 = 12
+DECLARE Ids0_2 Int32
+SET     Ids0_2 = 11
+DECLARE Ids0_3 Int32
+SET     Ids0_3 = 1
 
 SELECT
 	t1.Id as Id,

@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $ParentID Int32
-SET     $ParentID = 1001
-DECLARE $Value1 Int32
-SET     $Value1 = 1
+DECLARE ParentID Int32
+SET     ParentID = 1001
+DECLARE Value1 Int32
+SET     Value1 = 1
 
 INSERT INTO Parent
 (
@@ -16,8 +16,8 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $id Int32
-SET     $id = 1001
+DECLARE id Int32
+SET     id = 1001
 
 SELECT
 	COUNT(*) as Count_1
@@ -27,10 +27,10 @@ WHERE
 	p.ParentID = $id AND p.Value1 = 1
 
 -- YDB Ydb
-DECLARE $Value1 Int32
-SET     $Value1 = 2
-DECLARE $id Int32
-SET     $id = 1001
+DECLARE Value1 Int32
+SET     Value1 = 2
+DECLARE id Int32
+SET     id = 1001
 
 UPDATE
 	Parent
@@ -40,8 +40,8 @@ WHERE
 	Parent.ParentID = $id
 
 -- YDB Ydb
-DECLARE $id Int32
-SET     $id = 1001
+DECLARE id Int32
+SET     id = 1001
 
 SELECT
 	COUNT(*) as Count_1
@@ -51,10 +51,10 @@ WHERE
 	p.ParentID = $id AND p.Value1 = 2
 
 -- YDB Ydb
-DECLARE $Value1 Int32
-SET     $Value1 = 3
-DECLARE $id Int32
-SET     $id = 1001
+DECLARE Value1 Int32
+SET     Value1 = 3
+DECLARE id Int32
+SET     id = 1001
 
 UPDATE
 	Parent
@@ -64,8 +64,8 @@ WHERE
 	Parent.ParentID = $id
 
 -- YDB Ydb
-DECLARE $id Int32
-SET     $id = 1001
+DECLARE id Int32
+SET     id = 1001
 
 SELECT
 	COUNT(*) as Count_1

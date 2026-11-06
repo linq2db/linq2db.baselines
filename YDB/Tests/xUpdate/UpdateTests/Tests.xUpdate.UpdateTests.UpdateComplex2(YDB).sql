@@ -1,12 +1,12 @@
 ﻿-- YDB Ydb
-DECLARE $Gender Text(1) -- StringFixedLength
-SET     $Gender = 'M'u
-DECLARE $Name_FirstName Text(13) -- String
-SET     $Name_FirstName = 'UpdateComplex'u
-DECLARE $Name_MiddleName Text -- String
-SET     $Name_MiddleName = NULL
-DECLARE $Name_LastName Text(5) -- String
-SET     $Name_LastName = 'Empty'u
+DECLARE Gender Text(1) -- StringFixedLength
+SET     Gender = 'M'u
+DECLARE Name_FirstName Text(13) -- String
+SET     Name_FirstName = 'UpdateComplex'u
+DECLARE Name_MiddleName Text -- String
+SET     Name_MiddleName = NULL
+DECLARE Name_LastName Text(5) -- String
+SET     Name_LastName = 'Empty'u
 
 INSERT INTO Person
 (
@@ -34,8 +34,8 @@ WHERE
 	Person.FirstName LIKE 'UpdateComplex%'u ESCAPE '~'s
 
 -- YDB Ydb
-DECLARE $id Int32
-SET     $id = 5
+DECLARE id Int32
+SET     id = 5
 
 SELECT
 	t1.PersonID as PersonID,

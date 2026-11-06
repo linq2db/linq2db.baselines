@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $Ids0_1 Int32
-SET     $Ids0_1 = 3
+DECLARE Ids0_1 Int32
+SET     Ids0_1 = 3
 
 SELECT
 	SUM(CASE
