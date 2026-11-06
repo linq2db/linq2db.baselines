@@ -7,7 +7,7 @@ SELECT
 FROM
 	[ConcatProduct] [p]
 WHERE
-	([p].[Sku] || Coalesce(@suffix, '')) IN ('A-100Щит', 'B-200Жук')
+	[p].[Sku] || Coalesce(@suffix, '') IN ('A-100Щит', 'B-200Жук')
 
 -- SQLite.MS SQLite
 SELECT

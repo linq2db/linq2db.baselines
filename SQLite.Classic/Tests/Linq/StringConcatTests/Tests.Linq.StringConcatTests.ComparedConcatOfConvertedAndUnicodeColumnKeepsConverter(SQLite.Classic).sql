@@ -7,7 +7,7 @@ SELECT
 FROM
 	[ConvertedConcatTitleRow] [p]
 WHERE
-	([p].[Conv] || [p].[Title]) = @bound
+	[p].[Conv] || [p].[Title] = @bound
 
 -- SQLite.Classic SQLite
 DECLARE @bound VarChar(5) -- AnsiString
@@ -18,7 +18,7 @@ SELECT
 FROM
 	[ConvertedConcatTitleRow] [p]
 WHERE
-	@bound = ([p].[Conv] || [p].[Title])
+	@bound = [p].[Conv] || [p].[Title]
 
 -- SQLite.Classic SQLite
 SELECT
@@ -26,5 +26,5 @@ SELECT
 FROM
 	[ConvertedConcatTitleRow] [p]
 WHERE
-	([p].[Conv] || [p].[Title]) IN ('x:c1T')
+	[p].[Conv] || [p].[Title] IN ('x:c1T')
 
