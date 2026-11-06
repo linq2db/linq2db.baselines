@@ -1,0 +1,30 @@
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
+SELECT
+	i."Value"
+FROM
+	"BatchItem" i
+WHERE
+	i."Id" = 3
+LIMIT 1
+
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
+-- Command 1
+SELECT
+	t1."Id",
+	t1."Value",
+	t1."GroupId",
+	t1."Name"
+FROM
+	"BatchItem" t1
+
+-- Command 2
+SELECT
+	(
+		SELECT
+			i."Value"
+		FROM
+			"BatchItem" i
+		WHERE
+			i."Id" = 3
+		LIMIT 1
+	)
