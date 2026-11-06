@@ -1,0 +1,8 @@
+﻿-- SqlServer.CS SqlServer.2025
+SELECT
+	[r].[Id]
+FROM
+	[Issue5975Row] [r]
+WHERE
+	[r].[Plain] = [r].[Date]
+
