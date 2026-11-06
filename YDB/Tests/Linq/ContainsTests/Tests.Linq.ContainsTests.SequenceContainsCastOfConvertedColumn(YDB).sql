@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $Code Text(3) -- AnsiString
-SET     $Code = 'x:A'u
+DECLARE Code Text(3) -- AnsiString
+SET     Code = 'x:A'u
 
 $CTE_1 = 	SELECT
 		CAST(t.Code AS Text) as cte_value
