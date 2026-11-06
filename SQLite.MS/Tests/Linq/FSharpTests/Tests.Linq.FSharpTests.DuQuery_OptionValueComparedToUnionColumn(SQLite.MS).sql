@@ -1,9 +1,9 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Key  -- Int32
+DECLARE @Key Integer -- Int32
 SET     @Key = 10
-DECLARE @OptKey  -- Int32
+DECLARE @OptKey Integer -- Int32
 SET     @OptKey = 10
 
 INSERT INTO [DuPairRow]
@@ -20,11 +20,11 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Key  -- Int32
+DECLARE @Key Integer -- Int32
 SET     @Key = 20
-DECLARE @OptKey  -- Int32
+DECLARE @OptKey Integer -- Int32
 SET     @OptKey = 21
 
 INSERT INTO [DuPairRow]
@@ -41,11 +41,11 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 3
-DECLARE @Key  -- Int32
+DECLARE @Key Integer -- Int32
 SET     @Key = 30
-DECLARE @OptKey  -- Int32
+DECLARE @OptKey Integer -- Int32
 SET     @OptKey = NULL
 
 INSERT INTO [DuPairRow]

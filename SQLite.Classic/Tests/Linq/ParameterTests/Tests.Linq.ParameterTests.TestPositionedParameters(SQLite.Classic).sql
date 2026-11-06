@@ -1,9 +1,9 @@
 ﻿-- SQLite.Classic SQLite
-DECLARE @z2  -- Int32
+DECLARE @z2 Integer -- Int32
 SET     @z2 = 2
-DECLARE @y10  -- Int32
+DECLARE @y10 Integer -- Int32
 SET     @y10 = 10
-DECLARE @x3  -- Int32
+DECLARE @x3 Integer -- Int32
 SET     @x3 = 3
 
 SELECT

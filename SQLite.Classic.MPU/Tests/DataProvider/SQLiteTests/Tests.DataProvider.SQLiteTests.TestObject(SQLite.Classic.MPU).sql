@@ -11,7 +11,7 @@ SELECT Cast(1 as Object)
 SELECT Cast(1 as Object)
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Object
+DECLARE @p Integer -- Object
 SET     @p = 1
 
 SELECT @p

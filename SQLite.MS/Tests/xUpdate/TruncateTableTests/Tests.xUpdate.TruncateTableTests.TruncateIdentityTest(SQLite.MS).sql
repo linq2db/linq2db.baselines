@@ -29,7 +29,7 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-DECLARE @skip  -- Int32
+DECLARE @skip Integer -- Int32
 SET     @skip = 1
 
 SELECT
@@ -68,7 +68,7 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-DECLARE @skip  -- Int32
+DECLARE @skip Integer -- Int32
 SET     @skip = 1
 
 SELECT

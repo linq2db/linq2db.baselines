@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Value1 NVarChar(2) -- String
 SET     $Value1 = '[]'
@@ -50,7 +50,7 @@ WHERE
 LIMIT 1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 2
 DECLARE $Value1 NVarChar -- String
 SET     $Value1 = NULL
@@ -101,7 +101,7 @@ WHERE
 LIMIT 1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 3
 DECLARE $Value1 NVarChar(21) -- String
 SET     $Value1 = '{"some":"inserted3}"}'
@@ -119,7 +119,7 @@ DECLARE $BoolValue VarChar -- AnsiString
 SET     $BoolValue = 'Y'
 DECLARE $AnotherBoolValue VarChar -- AnsiString
 SET     $AnotherBoolValue = 'T'
-DECLARE $DateTimeNullable  -- DateTime2
+DECLARE $DateTimeNullable TIMESTAMP -- DateTime2
 SET     $DateTimeNullable = NULL
 
 INSERT INTO ValueConversion

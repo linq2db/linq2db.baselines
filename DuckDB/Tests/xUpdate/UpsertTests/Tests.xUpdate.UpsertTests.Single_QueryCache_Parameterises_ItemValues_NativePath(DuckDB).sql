@@ -1,15 +1,15 @@
 ﻿-- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Name NVarChar(5) -- String
 SET     $Name = 'first'
-DECLARE $Version  -- Int32
+DECLARE $Version INTEGER -- Int32
 SET     $Version = 10
-DECLARE $CreatedAt  -- DateTime2
+DECLARE $CreatedAt TIMESTAMP -- DateTime2
 SET     $CreatedAt = NULL
 DECLARE $CreatedBy NVarChar -- String
 SET     $CreatedBy = NULL
-DECLARE $UpdatedAt  -- DateTime2
+DECLARE $UpdatedAt TIMESTAMP -- DateTime2
 SET     $UpdatedAt = NULL
 DECLARE $UpdatedBy NVarChar -- String
 SET     $UpdatedBy = NULL
@@ -43,17 +43,17 @@ ON CONFLICT (Id) DO UPDATE SET
 	UpdatedBy = $UpdatedBy
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 2
 DECLARE $Name NVarChar(6) -- String
 SET     $Name = 'second'
-DECLARE $Version  -- Int32
+DECLARE $Version INTEGER -- Int32
 SET     $Version = 20
-DECLARE $CreatedAt  -- DateTime2
+DECLARE $CreatedAt TIMESTAMP -- DateTime2
 SET     $CreatedAt = NULL
 DECLARE $CreatedBy NVarChar -- String
 SET     $CreatedBy = NULL
-DECLARE $UpdatedAt  -- DateTime2
+DECLARE $UpdatedAt TIMESTAMP -- DateTime2
 SET     $UpdatedAt = NULL
 DECLARE $UpdatedBy NVarChar -- String
 SET     $UpdatedBy = NULL

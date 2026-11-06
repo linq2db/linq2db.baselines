@@ -1,7 +1,7 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 42
 
 INSERT INTO [OptionNullableElemTable]
@@ -16,9 +16,9 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = NULL
 
 INSERT INTO [OptionNullableElemTable]

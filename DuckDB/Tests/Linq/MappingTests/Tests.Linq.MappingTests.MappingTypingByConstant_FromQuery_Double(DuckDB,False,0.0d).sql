@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $value  -- Double
+DECLARE $value DOUBLE -- Double
 SET     $value = 0
 
 SELECT
@@ -15,7 +15,7 @@ FROM
 	) t1
 
 -- DuckDB
-DECLARE $value  -- Double
+DECLARE $value DOUBLE -- Double
 SET     $value = 3147483648
 
 SELECT

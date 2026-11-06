@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 10
 
 INSERT INTO [UserIssue3128]
@@ -12,9 +12,9 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-DECLARE @UserId  -- Int32
+DECLARE @UserId Integer -- Int32
 SET     @UserId = 10
-DECLARE @Age  -- Int32
+DECLARE @Age Integer -- Int32
 SET     @Age = 18
 
 INSERT INTO [UserDetailsIssue3128]

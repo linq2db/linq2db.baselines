@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = Tests.Linq.MappingTests+Id`1[Tests.Linq.MappingTests+User]
 
 INSERT INTO "User"
@@ -20,7 +20,7 @@ FROM
 	"User" t1
 
 -- DuckDB
-DECLARE $userId  -- Int32
+DECLARE $userId INTEGER -- Int32
 SET     $userId = Tests.Linq.MappingTests+Id`1[Tests.Linq.MappingTests+User]
 
 SELECT
@@ -32,7 +32,7 @@ WHERE
 LIMIT 1
 
 -- DuckDB
-DECLARE $value  -- Int32
+DECLARE $value INTEGER -- Int32
 SET     $value = Tests.Linq.MappingTests+Id`1[Tests.Linq.MappingTests+User]
 
 SELECT

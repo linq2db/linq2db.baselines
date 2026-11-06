@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @String Char(6) -- AnsiStringFixedLength
 SET     @String = 'test01'
@@ -20,7 +20,7 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @String Char(8) -- AnsiStringFixedLength
 SET     @String = 'test02  '
@@ -41,7 +41,7 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 3
 DECLARE @String Char(8) -- AnsiStringFixedLength
 SET     @String = 'test03	 '
@@ -62,7 +62,7 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 4
 DECLARE @String Char(8) -- AnsiStringFixedLength
 SET     @String = 'test04
@@ -85,7 +85,7 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 5
 DECLARE @String Char(8) -- AnsiStringFixedLength
 SET     @String = 'test05 '
@@ -106,7 +106,7 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 6
 DECLARE @String Char(8) -- AnsiStringFixedLength
 SET     @String = 'test06 '
@@ -127,7 +127,7 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 7
 DECLARE @String Char(8) -- AnsiStringFixedLength
 SET     @String = 'test07 '
@@ -148,7 +148,7 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 8
 DECLARE @String Char(8) -- AnsiStringFixedLength
 SET     @String = 'test08  '
@@ -169,7 +169,7 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 9
 DECLARE @String Char(11) -- AnsiStringFixedLength
 SET     @String = 'test09     '
@@ -190,7 +190,7 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 10
 DECLARE @String Char(11) -- AnsiStringFixedLength
 SET     @String = 'test10     '
@@ -211,7 +211,7 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 11
 DECLARE @String Char(11) -- AnsiStringFixedLength
 SET     @String = 'test11     '
@@ -232,7 +232,7 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 12
 DECLARE @String Char(11) -- AnsiStringFixedLength
 SET     @String = 'test12     '
@@ -253,7 +253,7 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 13
 DECLARE @String Char(11) -- AnsiStringFixedLength
 SET     @String = 'test13     '
@@ -274,7 +274,7 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 14
 DECLARE @String Char(11) -- AnsiStringFixedLength
 SET     @String = 'test14     '
@@ -295,7 +295,7 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 15
 DECLARE @String Char(11) -- AnsiStringFixedLength
 SET     @String = 'test15     '
@@ -316,7 +316,7 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 16
 DECLARE @String Char(11) -- AnsiStringFixedLength
 SET     @String = 'test16     '
@@ -337,7 +337,7 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 17
 DECLARE @String Char(11) -- AnsiStringFixedLength
 SET     @String = 'test17     '
@@ -358,7 +358,7 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 18
 DECLARE @String Char(11) -- AnsiStringFixedLength
 SET     @String = 'test18     '
@@ -379,7 +379,7 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 19
 DECLARE @String Char(11) -- AnsiStringFixedLength
 SET     @String = 'test19     '
@@ -400,7 +400,7 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 20
 DECLARE @String Char(11) -- AnsiStringFixedLength
 SET     @String = 'test20     '
@@ -421,7 +421,7 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 21
 DECLARE @String Char -- AnsiStringFixedLength
 SET     @String = NULL

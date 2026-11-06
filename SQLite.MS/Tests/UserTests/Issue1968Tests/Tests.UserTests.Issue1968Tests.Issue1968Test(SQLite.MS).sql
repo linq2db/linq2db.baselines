@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(4) -- String
 SET     @Name = 'name'
@@ -20,7 +20,7 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Code NVarChar(4) -- String
 SET     @Code = 'code'
@@ -28,11 +28,11 @@ DECLARE @FacultyName NVarChar(12) -- String
 SET     @FacultyName = 'faculty name'
 DECLARE @Direction NVarChar(9) -- String
 SET     @Direction = 'direction'
-DECLARE @Grant  -- Int32
+DECLARE @Grant Integer -- Int32
 SET     @Grant = 1
-DECLARE @Contract  -- Int32
+DECLARE @Contract Integer -- Int32
 SET     @Contract = 1
-DECLARE @UniversityId  -- Int32
+DECLARE @UniversityId Integer -- Int32
 SET     @UniversityId = 1
 
 INSERT INTO [Faculty]
@@ -57,7 +57,7 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-DECLARE @SubjectId  -- Int32
+DECLARE @SubjectId Integer -- Int32
 SET     @SubjectId = 1
 DECLARE @FirstSubject NVarChar(5) -- String
 SET     @FirstSubject = 'first'
@@ -65,7 +65,7 @@ DECLARE @SecondSubject NVarChar(6) -- String
 SET     @SecondSubject = 'second'
 DECLARE @ThirdSubject NVarChar(5) -- String
 SET     @ThirdSubject = 'third'
-DECLARE @FacultyId  -- Int32
+DECLARE @FacultyId Integer -- Int32
 SET     @FacultyId = 1
 
 INSERT INTO [Subject]

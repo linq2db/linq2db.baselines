@@ -3,7 +3,7 @@ DELETE FROM
 	CollatedTable t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $CaseSensitive NVarChar(10) -- String
 SET     $CaseSensitive = 'TestString'

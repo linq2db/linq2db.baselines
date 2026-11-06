@@ -1,13 +1,13 @@
 ﻿-- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Name NVarChar(8) -- String
 SET     $Name = 'root-ins'
-DECLARE $Version  -- Int32
+DECLARE $Version INTEGER -- Int32
 SET     $Version = 1
-DECLARE $CreatedAt  -- DateTime2
+DECLARE $CreatedAt TIMESTAMP -- DateTime2
 SET     $CreatedAt = NULL
-DECLARE $modified  -- DateTime2
+DECLARE $modified TIMESTAMP -- DateTime2
 SET     $modified = '2026-02-02 09:00:00.000000'::TIMESTAMP
 DECLARE $UpdatedBy NVarChar(12) -- String
 SET     $UpdatedBy = 'sys-root-ins'
@@ -51,15 +51,15 @@ FROM
 LIMIT 2
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Name NVarChar(8) -- String
 SET     $Name = 'root-upd'
-DECLARE $Version  -- Int32
+DECLARE $Version INTEGER -- Int32
 SET     $Version = 2
-DECLARE $CreatedAt  -- DateTime2
+DECLARE $CreatedAt TIMESTAMP -- DateTime2
 SET     $CreatedAt = NULL
-DECLARE $modified  -- DateTime2
+DECLARE $modified TIMESTAMP -- DateTime2
 SET     $modified = '2026-02-02 09:00:00.000000'::TIMESTAMP
 DECLARE $UpdatedBy NVarChar(12) -- String
 SET     $UpdatedBy = 'sys-root-upd'

@@ -15,7 +15,7 @@ RETURNING "Id";
 
 
 -- SQLite.MS SQLite
-DECLARE @IsArchived  -- Int16
+DECLARE @IsArchived Integer -- Int16
 SET     @IsArchived = 0
 
 SELECT

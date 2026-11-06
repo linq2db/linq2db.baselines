@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @total  -- Int32
+DECLARE @total Integer -- Int32
 SET     @total = 700
 
 SELECT

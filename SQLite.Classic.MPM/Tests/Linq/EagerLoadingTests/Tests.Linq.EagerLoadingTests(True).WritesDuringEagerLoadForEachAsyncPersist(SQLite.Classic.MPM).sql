@@ -14,9 +14,9 @@ FROM
 	[ExportInvoice] [t1]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Exported  -- Boolean
+DECLARE @Exported Integer -- Boolean
 SET     @Exported = 1
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
 UPDATE
@@ -27,9 +27,9 @@ WHERE
 	[ExportInvoice].[Id] = @Id
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Exported  -- Boolean
+DECLARE @Exported Integer -- Boolean
 SET     @Exported = 1
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
 
 UPDATE

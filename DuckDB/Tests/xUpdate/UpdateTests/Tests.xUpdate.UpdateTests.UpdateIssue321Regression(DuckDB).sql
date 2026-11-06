@@ -1,21 +1,21 @@
 ﻿-- DuckDB
-DECLARE $ID  -- Int32
+DECLARE $ID INTEGER -- Int32
 SET     $ID = 100500
 DECLARE $MoneyValue Decimal(4, 0)
 SET     $MoneyValue = 3000
-DECLARE $DateTimeValue  -- DateTime2
+DECLARE $DateTimeValue TIMESTAMP -- DateTime2
 SET     $DateTimeValue = NULL
-DECLARE $DateTimeValue2  -- DateTime2
+DECLARE $DateTimeValue2 TIMESTAMP -- DateTime2
 SET     $DateTimeValue2 = NULL
-DECLARE $BoolValue  -- Boolean
+DECLARE $BoolValue BOOLEAN -- Boolean
 SET     $BoolValue = NULL
-DECLARE $GuidValue  -- Guid
+DECLARE $GuidValue UUID -- Guid
 SET     $GuidValue = NULL
-DECLARE $SmallIntValue  -- Int16
+DECLARE $SmallIntValue SMALLINT -- Int16
 SET     $SmallIntValue = NULL
-DECLARE $IntValue  -- Int32
+DECLARE $IntValue INTEGER -- Int32
 SET     $IntValue = 60
-DECLARE $BigIntValue  -- Int64
+DECLARE $BigIntValue BIGINT -- Int64
 SET     $BigIntValue = NULL
 DECLARE $StringValue NVarChar -- String
 SET     $StringValue = NULL
@@ -50,7 +50,7 @@ VALUES
 -- DuckDB
 DECLARE $value2 Decimal(5, 0)
 SET     $value2 = 13621
-DECLARE $id  -- Int32
+DECLARE $id INTEGER -- Int32
 SET     $id = 100500
 
 UPDATE
@@ -61,7 +61,7 @@ WHERE
 	LinqDataTypes.ID = $id
 
 -- DuckDB
-DECLARE $id  -- Int32
+DECLARE $id INTEGER -- Int32
 SET     $id = 100500
 
 SELECT

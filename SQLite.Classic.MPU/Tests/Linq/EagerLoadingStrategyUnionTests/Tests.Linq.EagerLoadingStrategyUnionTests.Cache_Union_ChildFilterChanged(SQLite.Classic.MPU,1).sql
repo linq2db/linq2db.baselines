@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @minSalary  -- Int32
+DECLARE @minSalary Integer -- Int32
 SET     @minSalary = 50000
 
 WITH [CTE_1] ([Id], [field], [Name])

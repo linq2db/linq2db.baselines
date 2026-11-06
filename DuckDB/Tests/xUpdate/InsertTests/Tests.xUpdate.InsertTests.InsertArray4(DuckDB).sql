@@ -5,19 +5,19 @@ WHERE
 	t.ID > 1000
 
 -- DuckDB
-DECLARE $ID  -- Int32
+DECLARE $ID INTEGER -- Int32
 SET     $ID = 1001
 DECLARE $MoneyValue Decimal(1, 0)
 SET     $MoneyValue = 0
-DECLARE $DateTimeValue  -- DateTime2
+DECLARE $DateTimeValue TIMESTAMP -- DateTime2
 SET     $DateTimeValue = NULL
-DECLARE $BoolValue  -- Boolean
+DECLARE $BoolValue BOOLEAN -- Boolean
 SET     $BoolValue = True
-DECLARE $GuidValue  -- Guid
+DECLARE $GuidValue UUID -- Guid
 SET     $GuidValue = '00000000-0000-0000-0000-000000000000'::UUID
 DECLARE $BinaryValue Binary(4)
 SET     $BinaryValue = '\x01\x02\x03\x04'::BLOB
-DECLARE $SmallIntValue  -- Int16
+DECLARE $SmallIntValue SMALLINT -- Int16
 SET     $SmallIntValue = 0
 
 INSERT INTO LinqDataTypes

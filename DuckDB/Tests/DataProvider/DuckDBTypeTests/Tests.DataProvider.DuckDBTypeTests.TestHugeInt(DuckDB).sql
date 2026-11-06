@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $value  -- VarNumeric
+DECLARE $value BIGNUM -- VarNumeric
 SET     $value = '0'::BIGNUM
 
 SELECT
@@ -26,9 +26,9 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
-DECLARE $Column  -- VarNumeric
+DECLARE $Column BIGNUM -- VarNumeric
 SET     $Column = '0'::BIGNUM
 DECLARE $ColumnNullable NVarChar -- String
 SET     $ColumnNullable = NULL
@@ -47,7 +47,7 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $value  -- VarNumeric
+DECLARE $value BIGNUM -- VarNumeric
 SET     $value = '0'::BIGNUM
 
 SELECT
@@ -64,9 +64,9 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
-DECLARE $p2  -- VarNumeric
+DECLARE $p2 BIGNUM -- VarNumeric
 SET     $p2 = '0'::BIGNUM
 
 INSERT INTO "TypeTable`2"
@@ -79,7 +79,7 @@ VALUES
 ($p1,$p2,NULL)
 
 -- DuckDB
-DECLARE $value  -- VarNumeric
+DECLARE $value BIGNUM -- VarNumeric
 SET     $value = '0'::BIGNUM
 
 SELECT
@@ -111,7 +111,7 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-DECLARE $value  -- VarNumeric
+DECLARE $value BIGNUM -- VarNumeric
 SET     $value = '0'::BIGNUM
 
 SELECT
@@ -143,7 +143,7 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-DECLARE $value  -- VarNumeric
+DECLARE $value BIGNUM -- VarNumeric
 SET     $value = '0'::BIGNUM
 
 SELECT
@@ -156,9 +156,9 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable IS NULL
 
 -- DuckDB
-DECLARE $value  -- VarNumeric
+DECLARE $value BIGNUM -- VarNumeric
 SET     $value = '-170141183460469231731687303715884105727'::BIGNUM
-DECLARE $nullableValue  -- VarNumeric
+DECLARE $nullableValue BIGNUM -- VarNumeric
 SET     $nullableValue = '170141183460469231731687303715884105727'::BIGNUM
 
 SELECT
@@ -186,11 +186,11 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
-DECLARE $Column  -- VarNumeric
+DECLARE $Column BIGNUM -- VarNumeric
 SET     $Column = '-170141183460469231731687303715884105727'::BIGNUM
-DECLARE $ColumnNullable  -- VarNumeric
+DECLARE $ColumnNullable BIGNUM -- VarNumeric
 SET     $ColumnNullable = '170141183460469231731687303715884105727'::BIGNUM
 
 INSERT INTO "TypeTable`2"
@@ -207,9 +207,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $value  -- VarNumeric
+DECLARE $value BIGNUM -- VarNumeric
 SET     $value = '-170141183460469231731687303715884105727'::BIGNUM
-DECLARE $nullableValue  -- VarNumeric
+DECLARE $nullableValue BIGNUM -- VarNumeric
 SET     $nullableValue = '170141183460469231731687303715884105727'::BIGNUM
 
 SELECT
@@ -226,11 +226,11 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
-DECLARE $p2  -- VarNumeric
+DECLARE $p2 BIGNUM -- VarNumeric
 SET     $p2 = '-170141183460469231731687303715884105727'::BIGNUM
-DECLARE $p3  -- VarNumeric
+DECLARE $p3 BIGNUM -- VarNumeric
 SET     $p3 = '170141183460469231731687303715884105727'::BIGNUM
 
 INSERT INTO "TypeTable`2"
@@ -243,9 +243,9 @@ VALUES
 ($p1,$p2,$p3)
 
 -- DuckDB
-DECLARE $value  -- VarNumeric
+DECLARE $value BIGNUM -- VarNumeric
 SET     $value = '-170141183460469231731687303715884105727'::BIGNUM
-DECLARE $nullableValue  -- VarNumeric
+DECLARE $nullableValue BIGNUM -- VarNumeric
 SET     $nullableValue = '170141183460469231731687303715884105727'::BIGNUM
 
 SELECT
@@ -277,9 +277,9 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-DECLARE $value  -- VarNumeric
+DECLARE $value BIGNUM -- VarNumeric
 SET     $value = '-170141183460469231731687303715884105727'::BIGNUM
-DECLARE $nullableValue  -- VarNumeric
+DECLARE $nullableValue BIGNUM -- VarNumeric
 SET     $nullableValue = '170141183460469231731687303715884105727'::BIGNUM
 
 SELECT
@@ -311,9 +311,9 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-DECLARE $value  -- VarNumeric
+DECLARE $value BIGNUM -- VarNumeric
 SET     $value = '-170141183460469231731687303715884105727'::BIGNUM
-DECLARE $nullableValue  -- VarNumeric
+DECLARE $nullableValue BIGNUM -- VarNumeric
 SET     $nullableValue = '170141183460469231731687303715884105727'::BIGNUM
 
 SELECT
@@ -326,9 +326,9 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable = $nullableValue
 
 -- DuckDB
-DECLARE $value  -- VarNumeric
+DECLARE $value BIGNUM -- VarNumeric
 SET     $value = '170141183460469231731687303715884105727'::BIGNUM
-DECLARE $nullableValue  -- VarNumeric
+DECLARE $nullableValue BIGNUM -- VarNumeric
 SET     $nullableValue = '-170141183460469231731687303715884105727'::BIGNUM
 
 SELECT
@@ -356,11 +356,11 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
-DECLARE $Column  -- VarNumeric
+DECLARE $Column BIGNUM -- VarNumeric
 SET     $Column = '170141183460469231731687303715884105727'::BIGNUM
-DECLARE $ColumnNullable  -- VarNumeric
+DECLARE $ColumnNullable BIGNUM -- VarNumeric
 SET     $ColumnNullable = '-170141183460469231731687303715884105727'::BIGNUM
 
 INSERT INTO "TypeTable`2"
@@ -377,9 +377,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $value  -- VarNumeric
+DECLARE $value BIGNUM -- VarNumeric
 SET     $value = '170141183460469231731687303715884105727'::BIGNUM
-DECLARE $nullableValue  -- VarNumeric
+DECLARE $nullableValue BIGNUM -- VarNumeric
 SET     $nullableValue = '-170141183460469231731687303715884105727'::BIGNUM
 
 SELECT
@@ -396,11 +396,11 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
-DECLARE $p2  -- VarNumeric
+DECLARE $p2 BIGNUM -- VarNumeric
 SET     $p2 = '170141183460469231731687303715884105727'::BIGNUM
-DECLARE $p3  -- VarNumeric
+DECLARE $p3 BIGNUM -- VarNumeric
 SET     $p3 = '-170141183460469231731687303715884105727'::BIGNUM
 
 INSERT INTO "TypeTable`2"
@@ -413,9 +413,9 @@ VALUES
 ($p1,$p2,$p3)
 
 -- DuckDB
-DECLARE $value  -- VarNumeric
+DECLARE $value BIGNUM -- VarNumeric
 SET     $value = '170141183460469231731687303715884105727'::BIGNUM
-DECLARE $nullableValue  -- VarNumeric
+DECLARE $nullableValue BIGNUM -- VarNumeric
 SET     $nullableValue = '-170141183460469231731687303715884105727'::BIGNUM
 
 SELECT
@@ -447,9 +447,9 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-DECLARE $value  -- VarNumeric
+DECLARE $value BIGNUM -- VarNumeric
 SET     $value = '170141183460469231731687303715884105727'::BIGNUM
-DECLARE $nullableValue  -- VarNumeric
+DECLARE $nullableValue BIGNUM -- VarNumeric
 SET     $nullableValue = '-170141183460469231731687303715884105727'::BIGNUM
 
 SELECT
@@ -481,9 +481,9 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-DECLARE $value  -- VarNumeric
+DECLARE $value BIGNUM -- VarNumeric
 SET     $value = '170141183460469231731687303715884105727'::BIGNUM
-DECLARE $nullableValue  -- VarNumeric
+DECLARE $nullableValue BIGNUM -- VarNumeric
 SET     $nullableValue = '-170141183460469231731687303715884105727'::BIGNUM
 
 SELECT

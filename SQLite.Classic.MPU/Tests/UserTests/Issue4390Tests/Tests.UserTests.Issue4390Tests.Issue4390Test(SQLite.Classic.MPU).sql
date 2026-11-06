@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @InfeedAdviceID  -- Int32
+DECLARE @InfeedAdviceID Integer -- Int32
 SET     @InfeedAdviceID = 1
 
 INSERT INTO [InventoryResourceDTO]
@@ -12,7 +12,7 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
 INSERT INTO [InfeedAdviceDTO]

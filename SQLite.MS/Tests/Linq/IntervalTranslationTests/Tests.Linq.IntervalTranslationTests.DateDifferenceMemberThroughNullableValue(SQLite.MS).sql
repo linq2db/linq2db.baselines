@@ -15,7 +15,7 @@ WHERE
 	CAST(CAST(Round((JulianDay([r].[ClosedOnNullable]) - JulianDay([r].[OpenedOn])) * 86400000) AS INTEGER) * 10000 AS Float) / 36000000000 > 0
 
 -- SQLite.MS SQLite
-DECLARE @asOf  -- DateTime
+DECLARE @asOf Text(23) -- DateTime
 SET     @asOf = '2026-01-03 13:30:00.000'
 
 SELECT

@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @month  -- Int32
+DECLARE @month Integer -- Int32
 SET     @month = 10
 
 SELECT

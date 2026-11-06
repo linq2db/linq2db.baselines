@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $Hour  -- Int32
+DECLARE $Hour INTEGER -- Int32
 SET     $Hour = 22
 
 SELECT

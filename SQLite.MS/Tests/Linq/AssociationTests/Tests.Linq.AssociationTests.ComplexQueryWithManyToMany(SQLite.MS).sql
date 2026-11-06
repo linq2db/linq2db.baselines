@@ -1,7 +1,7 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @id  -- Int32
+DECLARE @id Integer -- Int32
 SET     @id = 3
-DECLARE @id1  -- Int32
+DECLARE @id1 Integer -- Int32
 SET     @id1 = 3
 
 SELECT

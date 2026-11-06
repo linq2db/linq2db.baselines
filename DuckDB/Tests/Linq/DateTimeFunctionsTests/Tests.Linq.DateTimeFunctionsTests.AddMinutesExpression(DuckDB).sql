@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $Minute  -- Int32
+DECLARE $Minute INTEGER -- Int32
 SET     $Minute = -8
 
 SELECT

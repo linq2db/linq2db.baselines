@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $total  -- Int32
+DECLARE $total INTEGER -- Int32
 SET     $total = 700
 
 SELECT

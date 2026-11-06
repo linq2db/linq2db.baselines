@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic SQLite
-DECLARE @r3  -- Int32
+DECLARE @r3 Integer -- Int32
 SET     @r3 = 2
 
 SELECT

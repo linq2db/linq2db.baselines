@@ -1,7 +1,7 @@
 ﻿-- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
-DECLARE $Span  -- Int64
+DECLARE $Span BIGINT -- Int64
 SET     $Span = 54000000000
 
 INSERT INTO SeparatelyDeclaredRowA
@@ -16,9 +16,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 2
-DECLARE $Span  -- Int64
+DECLARE $Span BIGINT -- Int64
 SET     $Span = 54000000000
 
 INSERT INTO SeparatelyDeclaredRowB

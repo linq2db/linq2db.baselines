@@ -1,7 +1,7 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @take  -- Int32
+DECLARE @take Integer -- Int32
 SET     @take = 10
-DECLARE @take_1  -- Int32
+DECLARE @take_1 Integer -- Int32
 SET     @take_1 = 10
 
 SELECT

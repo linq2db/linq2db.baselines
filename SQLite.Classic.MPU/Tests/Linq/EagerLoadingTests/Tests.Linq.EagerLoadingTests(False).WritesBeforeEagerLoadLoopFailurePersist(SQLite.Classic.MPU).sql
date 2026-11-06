@@ -19,9 +19,9 @@ ORDER BY
 	[t1].[Id]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Exported  -- Boolean
+DECLARE @Exported Integer -- Boolean
 SET     @Exported = 1
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
 UPDATE

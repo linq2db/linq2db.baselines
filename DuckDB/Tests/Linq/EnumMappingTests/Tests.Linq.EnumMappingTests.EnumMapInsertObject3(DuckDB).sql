@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $p  -- Int32
+DECLARE $p INTEGER -- Int32
 SET     $p = 102
 
 DELETE FROM
@@ -8,9 +8,9 @@ WHERE
 	r.ID >= 101 AND r.ID < $p
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 101
-DECLARE $TestField  -- Int64
+DECLARE $TestField BIGINT -- Int64
 SET     $TestField = 12
 
 INSERT INTO LinqDataTypes
@@ -33,7 +33,7 @@ WHERE
 	r.ID = 101 AND r.BigIntValue = 12
 
 -- DuckDB
-DECLARE $p  -- Int32
+DECLARE $p INTEGER -- Int32
 SET     $p = 102
 
 DELETE FROM

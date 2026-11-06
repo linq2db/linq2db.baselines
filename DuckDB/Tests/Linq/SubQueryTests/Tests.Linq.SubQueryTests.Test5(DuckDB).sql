@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $testValue  -- Int32
+DECLARE $testValue INTEGER -- Int32
 SET     $testValue = 3
 
 SELECT

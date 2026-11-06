@@ -1,9 +1,9 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(4) -- String
 SET     @Name = 'John'
-DECLARE @Age  -- Int32
+DECLARE @Age Integer -- Int32
 SET     @Age = 2
 
 INSERT INTO [PR_1598_Insert_Table_Cache] AS [t1]
@@ -34,11 +34,11 @@ WHERE
 LIMIT 1
 
 -- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(4) -- String
 SET     @Name = 'John'
-DECLARE @Age  -- Int32
+DECLARE @Age Integer -- Int32
 SET     @Age = 2
 
 INSERT INTO [PR_1598_Insert_Table_Cache] AS [t1]

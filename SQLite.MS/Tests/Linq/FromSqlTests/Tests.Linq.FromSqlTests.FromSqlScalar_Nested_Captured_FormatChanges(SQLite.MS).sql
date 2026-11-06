@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @In  -- Int32
+DECLARE @In Integer -- Int32
 SET     @In = 1
 
 SELECT
@@ -17,7 +17,7 @@ WHERE
 	)
 
 -- SQLite.MS SQLite
-DECLARE @In  -- Int32
+DECLARE @In Integer -- Int32
 SET     @In = 1
 
 SELECT

@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @name  -- Int32
+DECLARE @name Integer -- Int32
 SET     @name = 4
 
 SELECT
@@ -12,7 +12,7 @@ WHERE
 	[t].[Value] = CAST(@name AS NVarChar(11))
 
 -- SQLite.MS SQLite
-DECLARE @name  -- Int32
+DECLARE @name Integer -- Int32
 SET     @name = 4
 
 SELECT

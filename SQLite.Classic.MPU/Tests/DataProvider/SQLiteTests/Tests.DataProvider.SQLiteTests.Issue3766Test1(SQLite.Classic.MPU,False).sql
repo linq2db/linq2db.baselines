@@ -1,7 +1,7 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Id  -- DateTimeOffset
+DECLARE @Id Text -- DateTimeOffset
 SET     @Id = '2020-02-29 17:09:55.123+00:00'
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 0
 
 INSERT INTO [Issue3766Table] AS [t1]
@@ -18,9 +18,9 @@ ON CONFLICT ([Id]) DO UPDATE SET
 	[Value] = @Value
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Id  -- DateTimeOffset
+DECLARE @Id Text -- DateTimeOffset
 SET     @Id = '2020-02-29 17:09:55.123+00:00'
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 0
 
 INSERT INTO [Issue3766Table] AS [t1]

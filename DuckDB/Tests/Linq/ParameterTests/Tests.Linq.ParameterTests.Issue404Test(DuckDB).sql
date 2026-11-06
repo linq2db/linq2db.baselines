@@ -15,7 +15,7 @@ FROM
 	Table404One t1
 
 -- DuckDB
-DECLARE $usage  -- Int32
+DECLARE $usage INTEGER -- Int32
 SET     $usage = 0
 
 SELECT
@@ -36,7 +36,7 @@ FROM
 	Table404One t1
 
 -- DuckDB
-DECLARE $usage  -- Int32
+DECLARE $usage INTEGER -- Int32
 SET     $usage = 1
 
 SELECT
@@ -73,7 +73,7 @@ FROM
 	Table404One t1
 
 -- DuckDB
-DECLARE $usage  -- Int32
+DECLARE $usage INTEGER -- Int32
 SET     $usage = 0
 
 SELECT
@@ -94,7 +94,7 @@ FROM
 	Table404One t1
 
 -- DuckDB
-DECLARE $usage  -- Int32
+DECLARE $usage INTEGER -- Int32
 SET     $usage = 1
 
 SELECT

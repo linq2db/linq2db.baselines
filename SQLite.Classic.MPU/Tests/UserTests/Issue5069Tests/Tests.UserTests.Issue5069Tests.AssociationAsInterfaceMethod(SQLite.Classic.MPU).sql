@@ -1,7 +1,7 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @UserId  -- Int32
+DECLARE @UserId Integer -- Int32
 SET     @UserId = 123
-DECLARE @take  -- Int32
+DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT
@@ -32,9 +32,9 @@ FROM
 		INNER JOIN [User] [d] ON [m_1].[UserId] = [d].[Id]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @UserId  -- Int32
+DECLARE @UserId Integer -- Int32
 SET     @UserId = 123
-DECLARE @take  -- Int32
+DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT

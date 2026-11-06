@@ -29,7 +29,7 @@ ORDER BY
 INSERT BULK SimpleBulkCopyTable(Id)
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 3
 
 INSERT INTO SimpleBulkCopyTable
@@ -72,7 +72,7 @@ ORDER BY
 INSERT BULK SimpleBulkCopyTable(Id)
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 30
 
 INSERT INTO SimpleBulkCopyTable

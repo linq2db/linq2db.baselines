@@ -1,7 +1,7 @@
 ﻿-- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
-DECLARE $Key  -- Int32
+DECLARE $Key INTEGER -- Int32
 SET     $Key = 10
 
 INSERT INTO DuOptRow
@@ -16,9 +16,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 2
-DECLARE $Key  -- Int32
+DECLARE $Key INTEGER -- Int32
 SET     $Key = NULL
 
 INSERT INTO DuOptRow

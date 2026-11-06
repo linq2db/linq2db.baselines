@@ -1,9 +1,9 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @StartedOn  -- DateTime
+DECLARE @StartedOn Text(23) -- DateTime
 SET     @StartedOn = '1600-01-01 00:00:00.000'
-DECLARE @FinishedOn  -- DateTime
+DECLARE @FinishedOn Text(23) -- DateTime
 SET     @FinishedOn = '4700-01-01 12:00:00.000'
 
 INSERT INTO [EventRow]
@@ -20,9 +20,9 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-DECLARE @early  -- DateTime
+DECLARE @early Text(23) -- DateTime
 SET     @early = '1650-01-01 00:00:00.000'
-DECLARE @late  -- DateTime
+DECLARE @late Text(23) -- DateTime
 SET     @late = '8000-01-01 00:00:00.000'
 
 SELECT

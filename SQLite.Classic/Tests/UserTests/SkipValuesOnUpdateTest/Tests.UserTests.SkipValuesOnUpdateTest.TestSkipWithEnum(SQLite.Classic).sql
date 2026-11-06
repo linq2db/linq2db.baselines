@@ -1,9 +1,9 @@
 ﻿-- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(3) -- String
 SET     @Name = 'Max'
-DECLARE @Age  -- Int32
+DECLARE @Age Integer -- Int32
 SET     @Age = 20
 DECLARE @Gender NVarChar(6) -- String
 SET     @Gender = 'Female'
@@ -38,11 +38,11 @@ LIMIT 1
 -- SQLite.Classic SQLite
 DECLARE @Name NVarChar(4) -- String
 SET     @Name = 'Jack'
-DECLARE @Age  -- Int32
+DECLARE @Age Integer -- Int32
 SET     @Age = 2
 DECLARE @Gender NVarChar(4) -- String
 SET     @Gender = 'Male'
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
 UPDATE
@@ -69,9 +69,9 @@ LIMIT 1
 -- SQLite.Classic SQLite
 DECLARE @Name NVarChar(8) -- String
 SET     @Name = 'Francine'
-DECLARE @Age  -- Int32
+DECLARE @Age Integer -- Int32
 SET     @Age = 20
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
 UPDATE

@@ -1,7 +1,7 @@
 ﻿-- DuckDB
-DECLARE $Column  -- Int32
+DECLARE $Column INTEGER -- Int32
 SET     $Column = 2
-DECLARE $ColumnNullable  -- Int32
+DECLARE $ColumnNullable INTEGER -- Int32
 SET     $ColumnNullable = 3
 
 SELECT
@@ -28,11 +28,11 @@ DELETE FROM
 	IntEnumTable t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
-DECLARE $Column  -- Int32
+DECLARE $Column INTEGER -- Int32
 SET     $Column = 1
-DECLARE $ColumnNullable  -- Int32
+DECLARE $ColumnNullable INTEGER -- Int32
 SET     $ColumnNullable = NULL
 
 INSERT INTO IntEnumTable
@@ -49,11 +49,11 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 2
-DECLARE $Column  -- Int32
+DECLARE $Column INTEGER -- Int32
 SET     $Column = 2
-DECLARE $ColumnNullable  -- Int32
+DECLARE $ColumnNullable INTEGER -- Int32
 SET     $ColumnNullable = 3
 
 INSERT INTO IntEnumTable

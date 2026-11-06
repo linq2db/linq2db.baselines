@@ -1,7 +1,7 @@
 ﻿-- DuckDB
-DECLARE $Column  -- Boolean
+DECLARE $Column BOOLEAN -- Boolean
 SET     $Column = False
-DECLARE $ColumnNullable  -- Boolean
+DECLARE $ColumnNullable BOOLEAN -- Boolean
 SET     $ColumnNullable = True
 
 SELECT
@@ -28,11 +28,11 @@ DELETE FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
-DECLARE $Column  -- Boolean
+DECLARE $Column BOOLEAN -- Boolean
 SET     $Column = True
-DECLARE $ColumnNullable  -- Boolean
+DECLARE $ColumnNullable BOOLEAN -- Boolean
 SET     $ColumnNullable = NULL
 
 INSERT INTO BooleanTable
@@ -49,11 +49,11 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 2
-DECLARE $Column  -- Boolean
+DECLARE $Column BOOLEAN -- Boolean
 SET     $Column = False
-DECLARE $ColumnNullable  -- Boolean
+DECLARE $ColumnNullable BOOLEAN -- Boolean
 SET     $ColumnNullable = True
 
 INSERT INTO BooleanTable

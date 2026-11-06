@@ -1,7 +1,7 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @DateTimeNullable  -- DateTime
+DECLARE @DateTimeNullable Text -- DateTime
 SET     @DateTimeNullable = NULL
 
 INSERT INTO [CreateTableTypes]
@@ -16,9 +16,9 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @DateTimeNullable  -- DateTime
+DECLARE @DateTimeNullable Text(23) -- DateTime
 SET     @DateTimeNullable = '2018-11-25 01:02:03.000'
 
 INSERT INTO [CreateTableTypes]

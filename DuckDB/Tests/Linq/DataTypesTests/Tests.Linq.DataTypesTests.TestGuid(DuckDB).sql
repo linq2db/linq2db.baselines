@@ -1,7 +1,7 @@
 ﻿-- DuckDB
-DECLARE $Column  -- Guid
+DECLARE $Column UUID -- Guid
 SET     $Column = 'a948600d-de21-4f74-8ac2-9516b287076e'::UUID
-DECLARE $ColumnNullable  -- Guid
+DECLARE $ColumnNullable UUID -- Guid
 SET     $ColumnNullable = 'bd3973a5-4323-4dd8-9f4f-df9f93e2a627'::UUID
 
 SELECT
@@ -29,11 +29,11 @@ DELETE FROM
 	GuidTable t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
-DECLARE $Column  -- Guid
+DECLARE $Column UUID -- Guid
 SET     $Column = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'::UUID
-DECLARE $ColumnNullable  -- Guid
+DECLARE $ColumnNullable UUID -- Guid
 SET     $ColumnNullable = NULL
 
 INSERT INTO GuidTable
@@ -50,11 +50,11 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 2
-DECLARE $Column  -- Guid
+DECLARE $Column UUID -- Guid
 SET     $Column = 'a948600d-de21-4f74-8ac2-9516b287076e'::UUID
-DECLARE $ColumnNullable  -- Guid
+DECLARE $ColumnNullable UUID -- Guid
 SET     $ColumnNullable = 'bd3973a5-4323-4dd8-9f4f-df9f93e2a627'::UUID
 
 INSERT INTO GuidTable

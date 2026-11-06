@@ -1,7 +1,7 @@
 ﻿-- DuckDB
-DECLARE $Date  -- DateTime2
+DECLARE $Date TIMESTAMP -- DateTime2
 SET     $Date = '2020-02-29 00:00:00.000000'::TIMESTAMP
-DECLARE $dateTo  -- DateTime2
+DECLARE $dateTo TIMESTAMP -- DateTime2
 SET     $dateTo = '2020-03-10 00:00:00.000000'::TIMESTAMP
 
 WITH RECURSIVE x (Counter, Date_1)

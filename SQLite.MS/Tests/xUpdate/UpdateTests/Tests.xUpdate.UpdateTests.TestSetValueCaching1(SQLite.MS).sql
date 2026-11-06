@@ -1,7 +1,7 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @Value1  -- Guid
+DECLARE @Value1 Blob(16) -- Guid
 SET     @Value1 = X'3D667BBCDE0F27438F925D8CC3A11D11'
-DECLARE @id  -- Int32
+DECLARE @id Integer -- Int32
 SET     @id = 1
 
 UPDATE
@@ -12,7 +12,7 @@ WHERE
 	[UpdateSetTest].[Id] = @id
 
 -- SQLite.MS SQLite
-DECLARE @id  -- Int32
+DECLARE @id Integer -- Int32
 SET     @id = 1
 
 SELECT
@@ -24,9 +24,9 @@ WHERE
 LIMIT 2
 
 -- SQLite.MS SQLite
-DECLARE @Value1  -- Guid
+DECLARE @Value1 Blob(16) -- Guid
 SET     @Value1 = X'0D6048A921DE744F8AC29516B287076E'
-DECLARE @id  -- Int32
+DECLARE @id Integer -- Int32
 SET     @id = 1
 
 UPDATE
@@ -37,7 +37,7 @@ WHERE
 	[UpdateSetTest].[Id] = @id
 
 -- SQLite.MS SQLite
-DECLARE @id  -- Int32
+DECLARE @id Integer -- Int32
 SET     @id = 1
 
 SELECT

@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic SQLite
-DECLARE @param  -- Int32
+DECLARE @param Integer -- Int32
 SET     @param = 2
 
 INSERT INTO [ValuesTable]

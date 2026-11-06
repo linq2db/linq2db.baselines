@@ -5,9 +5,9 @@ FROM
 	AllTypes t1
 
 -- DuckDB
-DECLARE $real  -- Single
+DECLARE $real FLOAT -- Single
 SET     $real = 'NaN'::FLOAT
-DECLARE $dbl  -- Double
+DECLARE $dbl DOUBLE -- Double
 SET     $dbl = 'NaN'::DOUBLE
 
 INSERT INTO AllTypes
@@ -24,9 +24,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $real  -- Single
+DECLARE $real FLOAT -- Single
 SET     $real = '-Infinity'::FLOAT
-DECLARE $dbl  -- Double
+DECLARE $dbl DOUBLE -- Double
 SET     $dbl = '-Infinity'::DOUBLE
 
 INSERT INTO AllTypes
@@ -43,9 +43,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $real  -- Single
+DECLARE $real FLOAT -- Single
 SET     $real = 'Infinity'::FLOAT
-DECLARE $dbl  -- Double
+DECLARE $dbl DOUBLE -- Double
 SET     $dbl = 'Infinity'::DOUBLE
 
 INSERT INTO AllTypes
@@ -62,7 +62,7 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $maxID  -- Int32
+DECLARE $maxID INTEGER -- Int32
 SET     $maxID = 2
 
 SELECT

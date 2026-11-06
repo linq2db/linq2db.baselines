@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 10
 
 INSERT INTO [Issue681Table4]

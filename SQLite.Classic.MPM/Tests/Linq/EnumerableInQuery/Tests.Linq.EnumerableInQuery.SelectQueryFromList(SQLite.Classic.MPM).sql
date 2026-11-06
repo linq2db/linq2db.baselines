@@ -1,19 +1,19 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 11
-DECLARE @Id_1  -- Int32
+DECLARE @Id_1 Integer -- Int32
 SET     @Id_1 = 2
-DECLARE @Value_1  -- Int32
+DECLARE @Value_1 Integer -- Int32
 SET     @Value_1 = 22
-DECLARE @Id_2  -- Int32
+DECLARE @Id_2 Integer -- Int32
 SET     @Id_2 = 3
-DECLARE @Value_2  -- Int32
+DECLARE @Value_2 Integer -- Int32
 SET     @Value_2 = 33
-DECLARE @Id_3  -- Int32
+DECLARE @Id_3 Integer -- Int32
 SET     @Id_3 = 4
-DECLARE @Value_3  -- Int32
+DECLARE @Value_3 Integer -- Int32
 SET     @Value_3 = 44
 
 WITH [CTE_1] ([Id], [Value_1])

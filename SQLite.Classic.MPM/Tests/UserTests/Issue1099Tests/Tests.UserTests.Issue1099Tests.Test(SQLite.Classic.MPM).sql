@@ -1,11 +1,11 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @ID  -- Int32
+DECLARE @ID Integer -- Int32
 SET     @ID = 3
-DECLARE @DurationID  -- Int32
+DECLARE @DurationID Integer -- Int32
 SET     @DurationID = 2
-DECLARE @DurationInterval  -- Int32
+DECLARE @DurationInterval Integer -- Int32
 SET     @DurationInterval = 4
-DECLARE @PersonID  -- Int32
+DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 1
 
 INSERT INTO [BackgroundTask]
@@ -24,7 +24,7 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @personId  -- Int32
+DECLARE @personId Integer -- Int32
 SET     @personId = 1
 
 SELECT

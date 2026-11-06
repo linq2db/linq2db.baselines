@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @Has  -- Boolean
+DECLARE @Has Integer -- Boolean
 SET     @Has = 1
 
 INSERT INTO [Issue1438]
@@ -16,7 +16,7 @@ SELECT
 	last_insert_rowid()
 
 -- SQLite.MS SQLite
-DECLARE @id  -- Int32
+DECLARE @id Integer -- Int32
 SET     @id = 1
 
 SELECT

@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @n  -- Int32
+DECLARE @n Integer -- Int32
 SET     @n = 1
 
 SELECT

@@ -1,7 +1,7 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @DateTimeOffsetWithConverter  -- DateTimeOffset
+DECLARE @DateTimeOffsetWithConverter Integer -- DateTimeOffset
 SET     @DateTimeOffsetWithConverter = 1304956839836121088
-DECLARE @DateTimeOffsetNWithConverter  -- DateTimeOffset
+DECLARE @DateTimeOffsetNWithConverter Integer -- DateTimeOffset
 SET     @DateTimeOffsetNWithConverter = 1304956839836121088
 
 UPDATE

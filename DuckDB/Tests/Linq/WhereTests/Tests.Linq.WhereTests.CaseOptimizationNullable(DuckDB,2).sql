@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $filterValue  -- Int32
+DECLARE $filterValue INTEGER -- Int32
 SET     $filterValue = 2
 
 SELECT

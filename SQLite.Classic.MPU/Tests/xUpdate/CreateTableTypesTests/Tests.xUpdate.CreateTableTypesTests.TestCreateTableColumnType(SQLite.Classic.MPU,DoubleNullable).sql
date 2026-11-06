@@ -1,7 +1,7 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @DoubleNullable  -- Double
+DECLARE @DoubleNullable Real -- Double
 SET     @DoubleNullable = NULL
 
 INSERT INTO [CreateTableTypes]
@@ -16,9 +16,9 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @DoubleNullable  -- Double
+DECLARE @DoubleNullable Real -- Double
 SET     @DoubleNullable = 4.1299999999999999
 
 INSERT INTO [CreateTableTypes]

@@ -24,9 +24,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $name  -- Int32
+DECLARE $name INTEGER -- Int32
 SET     $name = 8
-DECLARE $idx  -- Int32
+DECLARE $idx INTEGER -- Int32
 SET     $idx = 4
 
 UPDATE

@@ -1,7 +1,7 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @Kind NVarChar(2) -- String
 SET     @Kind = 'S1'
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Code NVarChar(1) -- String
 SET     @Code = 'a'
@@ -22,7 +22,7 @@ VALUES
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @Kind NVarChar(2) -- String
 SET     @Kind = 'S2'
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Code NVarChar(1) -- String
 SET     @Code = 'b'

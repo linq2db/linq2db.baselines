@@ -1,9 +1,9 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @tenderIds  -- Int32
+DECLARE @tenderIds Integer -- Int32
 SET     @tenderIds = 5
-DECLARE @tenderIds_1  -- Int32
+DECLARE @tenderIds_1 Integer -- Int32
 SET     @tenderIds_1 = 3
-DECLARE @tenderIds_2  -- Int32
+DECLARE @tenderIds_2 Integer -- Int32
 SET     @tenderIds_2 = 4
 
 SELECT
