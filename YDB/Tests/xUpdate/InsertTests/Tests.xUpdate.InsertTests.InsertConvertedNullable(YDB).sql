@@ -5,8 +5,8 @@ WHERE
 	LinqDataTypes.ID >= 1000
 
 -- YDB Ydb
-DECLARE $tt Int64
-SET     $tt = 600000000l
+DECLARE tt Int64
+SET     tt = 600000000l
 
 INSERT INTO LinqDataTypes
 (

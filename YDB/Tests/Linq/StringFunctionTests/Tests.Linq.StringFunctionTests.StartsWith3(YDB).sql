@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $str Text(7) -- String
-SET     $str = 'John123'u
+DECLARE str Text(7) -- String
+SET     str = 'John123'u
 
 SELECT
 	p.FirstName as FirstName,

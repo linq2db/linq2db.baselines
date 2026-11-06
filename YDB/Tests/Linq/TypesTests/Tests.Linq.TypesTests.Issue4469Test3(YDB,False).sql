@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $param Double
-SET     $param = Double('33')
+DECLARE param Double
+SET     param = Double('33')
 
 SELECT
 	Unwrap(CAST(v.`Integer` AS Double)) / $param as Integer_1,

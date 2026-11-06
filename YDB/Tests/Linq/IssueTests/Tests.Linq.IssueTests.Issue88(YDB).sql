@@ -23,8 +23,8 @@ WHERE
 	t1.PersonID = 1 AND 'M'u = t1.Gender
 
 -- YDB Ydb
-DECLARE $gender Text(1) -- StringFixedLength
-SET     $gender = 'M'u
+DECLARE gender Text(1) -- StringFixedLength
+SET     gender = 'M'u
 
 SELECT
 	t1.FirstName as FirstName,
@@ -38,8 +38,8 @@ WHERE
 	t1.PersonID = 1 AND t1.Gender = $gender
 
 -- YDB Ydb
-DECLARE $gender Text(1) -- StringFixedLength
-SET     $gender = 'M'u
+DECLARE gender Text(1) -- StringFixedLength
+SET     gender = 'M'u
 
 SELECT
 	t1.FirstName as FirstName,

@@ -1,10 +1,10 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Name Text -- String
-SET     $Name = NULL
-DECLARE $Age Int32
-SET     $Age = 2
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Name Text -- String
+SET     Name = NULL
+DECLARE Age Int32
+SET     Age = 2
 
 INSERT INTO PR_1598_Update_Fluent_Table
 (
@@ -31,12 +31,12 @@ WHERE
 LIMIT 1
 
 -- YDB Ydb
-DECLARE $Name Text(6) -- String
-SET     $Name = 'Franki'u
-DECLARE $Age Int32
-SET     $Age = 18
-DECLARE $Id Int32
-SET     $Id = 1
+DECLARE Name Text(6) -- String
+SET     Name = 'Franki'u
+DECLARE Age Int32
+SET     Age = 18
+DECLARE Id Int32
+SET     Id = 1
 
 UPDATE
 	PR_1598_Update_Fluent_Table
@@ -58,10 +58,10 @@ WHERE
 LIMIT 1
 
 -- YDB Ydb
-DECLARE $Name Text(4) -- String
-SET     $Name = 'Jack'u
-DECLARE $Id Int32
-SET     $Id = 1
+DECLARE Name Text(4) -- String
+SET     Name = 'Jack'u
+DECLARE Id Int32
+SET     Id = 1
 
 UPDATE
 	PR_1598_Update_Fluent_Table

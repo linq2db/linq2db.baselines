@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $arr Int32
-SET     $arr = 1
+DECLARE arr Int32
+SET     arr = 1
 
 SELECT
 	p.FirstName as FirstName,

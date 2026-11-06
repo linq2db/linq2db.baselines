@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $Date Date
-SET     $Date = Date('2021-01-01')
+DECLARE Date Date
+SET     Date = Date('2021-01-01')
 
 INSERT INTO DateOnlyTable
 (

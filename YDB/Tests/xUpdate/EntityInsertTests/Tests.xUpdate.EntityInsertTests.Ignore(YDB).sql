@@ -1,12 +1,12 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Name Text(1) -- String
-SET     $Name = 'n'u
-DECLARE $Version Int32
-SET     $Version = 1
-DECLARE $CreatedAt Timestamp -- DateTime2
-SET     $CreatedAt = NULL
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Name Text(1) -- String
+SET     Name = 'n'u
+DECLARE Version Int32
+SET     Version = 1
+DECLARE CreatedAt Timestamp -- DateTime2
+SET     CreatedAt = NULL
 
 INSERT INTO EntityInsertTest
 (

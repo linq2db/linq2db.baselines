@@ -11,8 +11,8 @@ WHERE
 	p.MiddleName IS NULL
 
 -- YDB Ydb
-DECLARE $str Text(3) -- String
-SET     $str = '123'u
+DECLARE str Text(3) -- String
+SET     str = '123'u
 
 SELECT
 	p.FirstName as FirstName,

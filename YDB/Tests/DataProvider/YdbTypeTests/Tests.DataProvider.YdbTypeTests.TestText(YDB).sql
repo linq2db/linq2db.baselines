@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $value Text -- String
-SET     $value = ''u
+DECLARE value Text -- String
+SET     value = ''u
 
 SELECT
 	r.Id as Id,
@@ -26,12 +26,12 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Text -- String
-SET     $Column = ''u
-DECLARE $ColumnNullable Text -- String
-SET     $ColumnNullable = NULL
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Text -- String
+SET     Column = ''u
+DECLARE ColumnNullable Text -- String
+SET     ColumnNullable = NULL
 
 INSERT INTO `TypeTable\`2`
 (
@@ -47,8 +47,8 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $value Text -- String
-SET     $value = ''u
+DECLARE value Text -- String
+SET     value = ''u
 
 SELECT
 	r.Id as Id,
@@ -81,8 +81,8 @@ VALUES
 ($p1,$p2,$p3)
 
 -- YDB Ydb
-DECLARE $value Text -- String
-SET     $value = ''u
+DECLARE value Text -- String
+SET     value = ''u
 
 SELECT
 	r.Id as Id,
@@ -100,8 +100,8 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Text -- String
-SET     $value = ''u
+DECLARE value Text -- String
+SET     value = ''u
 
 SELECT
 	r.Id as Id,
@@ -119,8 +119,8 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Text -- String
-SET     $value = ''u
+DECLARE value Text -- String
+SET     value = ''u
 
 SELECT
 	r.Id as Id,
@@ -132,12 +132,12 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-DECLARE $value Text(255) -- String
-SET     $value = '\x00	
+DECLARE value Text(255) -- String
+SET     value = '\x00	
  !"#$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇ'u
 -- value above truncated for logging
-DECLARE $nullableValue Text(255) -- String
-SET     $nullableValue = '\x00	
+DECLARE nullableValue Text(255) -- String
+SET     nullableValue = '\x00	
  !"#$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇ'u
 -- value above truncated for logging
 
@@ -168,14 +168,14 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Text(255) -- String
-SET     $Column = '\x00	
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Text(255) -- String
+SET     Column = '\x00	
  !"#$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇ'u
 -- value above truncated for logging
-DECLARE $ColumnNullable Text(255) -- String
-SET     $ColumnNullable = '\x00	
+DECLARE ColumnNullable Text(255) -- String
+SET     ColumnNullable = '\x00	
  !"#$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇ'u
 -- value above truncated for logging
 
@@ -193,12 +193,12 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $value Text(255) -- String
-SET     $value = '\x00	
+DECLARE value Text(255) -- String
+SET     value = '\x00	
  !"#$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇ'u
 -- value above truncated for logging
-DECLARE $nullableValue Text(255) -- String
-SET     $nullableValue = '\x00	
+DECLARE nullableValue Text(255) -- String
+SET     nullableValue = '\x00	
  !"#$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇ'u
 -- value above truncated for logging
 
@@ -237,37 +237,12 @@ VALUES
 ($p1,$p2,$p3)
 
 -- YDB Ydb
-DECLARE $value Text(255) -- String
-SET     $value = '\x00	
+DECLARE value Text(255) -- String
+SET     value = '\x00	
  !"#$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇ'u
 -- value above truncated for logging
-DECLARE $nullableValue Text(255) -- String
-SET     $nullableValue = '\x00	
- !"#$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇ'u
--- value above truncated for logging
-
-SELECT
-	r.Id as Id,
-	r.`Column` as Column_1,
-	r.ColumnNullable as ColumnNullable
-FROM
-	`TypeTable\`2` r
-WHERE
-	r.`Column` = $value AND r.ColumnNullable = $nullableValue
-
--- YDB Ydb
-DELETE FROM
-	`TypeTable\`2`
-
-INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
-
--- YDB Ydb
-DECLARE $value Text(255) -- String
-SET     $value = '\x00	
- !"#$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇ'u
--- value above truncated for logging
-DECLARE $nullableValue Text(255) -- String
-SET     $nullableValue = '\x00	
+DECLARE nullableValue Text(255) -- String
+SET     nullableValue = '\x00	
  !"#$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇ'u
 -- value above truncated for logging
 
@@ -287,12 +262,12 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Text(255) -- String
-SET     $value = '\x00	
+DECLARE value Text(255) -- String
+SET     value = '\x00	
  !"#$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇ'u
 -- value above truncated for logging
-DECLARE $nullableValue Text(255) -- String
-SET     $nullableValue = '\x00	
+DECLARE nullableValue Text(255) -- String
+SET     nullableValue = '\x00	
  !"#$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇ'u
 -- value above truncated for logging
 
@@ -306,8 +281,33 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-DECLARE $value Text(1) -- StringFixedLength
-SET     $value = '\x00'u
+DELETE FROM
+	`TypeTable\`2`
+
+INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
+
+-- YDB Ydb
+DECLARE value Text(255) -- String
+SET     value = '\x00	
+ !"#$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇ'u
+-- value above truncated for logging
+DECLARE nullableValue Text(255) -- String
+SET     nullableValue = '\x00	
+ !"#$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇ'u
+-- value above truncated for logging
+
+SELECT
+	r.Id as Id,
+	r.`Column` as Column_1,
+	r.ColumnNullable as ColumnNullable
+FROM
+	`TypeTable\`2` r
+WHERE
+	r.`Column` = $value AND r.ColumnNullable = $nullableValue
+
+-- YDB Ydb
+DECLARE value Text(1) -- StringFixedLength
+SET     value = '\x00'u
 
 SELECT
 	r.Id as Id,
@@ -333,12 +333,12 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Text(1) -- StringFixedLength
-SET     $Column = '\x00'u
-DECLARE $ColumnNullable Text -- StringFixedLength
-SET     $ColumnNullable = NULL
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Text(1) -- StringFixedLength
+SET     Column = '\x00'u
+DECLARE ColumnNullable Text -- StringFixedLength
+SET     ColumnNullable = NULL
 
 INSERT INTO `TypeTable\`2`
 (
@@ -354,8 +354,8 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $value Text(1) -- StringFixedLength
-SET     $value = '\x00'u
+DECLARE value Text(1) -- StringFixedLength
+SET     value = '\x00'u
 
 SELECT
 	r.Id as Id,
@@ -388,8 +388,8 @@ VALUES
 ($p1,$p2,$p3)
 
 -- YDB Ydb
-DECLARE $value Text(1) -- StringFixedLength
-SET     $value = '\x00'u
+DECLARE value Text(1) -- StringFixedLength
+SET     value = '\x00'u
 
 SELECT
 	r.Id as Id,
@@ -407,8 +407,8 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Text(1) -- StringFixedLength
-SET     $value = '\x00'u
+DECLARE value Text(1) -- StringFixedLength
+SET     value = '\x00'u
 
 SELECT
 	r.Id as Id,
@@ -426,8 +426,8 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Text(1) -- StringFixedLength
-SET     $value = '\x00'u
+DECLARE value Text(1) -- StringFixedLength
+SET     value = '\x00'u
 
 SELECT
 	r.Id as Id,
@@ -439,10 +439,10 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-DECLARE $value Text(1) -- StringFixedLength
-SET     $value = '\x00'u
-DECLARE $nullableValue Text(1) -- StringFixedLength
-SET     $nullableValue = '1'u
+DECLARE value Text(1) -- StringFixedLength
+SET     value = '\x00'u
+DECLARE nullableValue Text(1) -- StringFixedLength
+SET     nullableValue = '1'u
 
 SELECT
 	r.Id as Id,
@@ -468,12 +468,12 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Text(1) -- StringFixedLength
-SET     $Column = '\x00'u
-DECLARE $ColumnNullable Text(1) -- StringFixedLength
-SET     $ColumnNullable = '1'u
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Text(1) -- StringFixedLength
+SET     Column = '\x00'u
+DECLARE ColumnNullable Text(1) -- StringFixedLength
+SET     ColumnNullable = '1'u
 
 INSERT INTO `TypeTable\`2`
 (
@@ -489,10 +489,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $value Text(1) -- StringFixedLength
-SET     $value = '\x00'u
-DECLARE $nullableValue Text(1) -- StringFixedLength
-SET     $nullableValue = '1'u
+DECLARE value Text(1) -- StringFixedLength
+SET     value = '\x00'u
+DECLARE nullableValue Text(1) -- StringFixedLength
+SET     nullableValue = '1'u
 
 SELECT
 	r.Id as Id,
@@ -525,10 +525,10 @@ VALUES
 ($p1,$p2,$p3)
 
 -- YDB Ydb
-DECLARE $value Text(1) -- StringFixedLength
-SET     $value = '\x00'u
-DECLARE $nullableValue Text(1) -- StringFixedLength
-SET     $nullableValue = '1'u
+DECLARE value Text(1) -- StringFixedLength
+SET     value = '\x00'u
+DECLARE nullableValue Text(1) -- StringFixedLength
+SET     nullableValue = '1'u
 
 SELECT
 	r.Id as Id,
@@ -546,10 +546,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Text(1) -- StringFixedLength
-SET     $value = '\x00'u
-DECLARE $nullableValue Text(1) -- StringFixedLength
-SET     $nullableValue = '1'u
+DECLARE value Text(1) -- StringFixedLength
+SET     value = '\x00'u
+DECLARE nullableValue Text(1) -- StringFixedLength
+SET     nullableValue = '1'u
 
 SELECT
 	r.Id as Id,
@@ -567,10 +567,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Text(1) -- StringFixedLength
-SET     $value = '\x00'u
-DECLARE $nullableValue Text(1) -- StringFixedLength
-SET     $nullableValue = '1'u
+DECLARE value Text(1) -- StringFixedLength
+SET     value = '\x00'u
+DECLARE nullableValue Text(1) -- StringFixedLength
+SET     nullableValue = '1'u
 
 SELECT
 	r.Id as Id,
@@ -582,10 +582,10 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-DECLARE $value Text(1) -- StringFixedLength
-SET     $value = 'ы'u
-DECLARE $nullableValue Text(1) -- StringFixedLength
-SET     $nullableValue = 'þ'u
+DECLARE value Text(1) -- StringFixedLength
+SET     value = 'ы'u
+DECLARE nullableValue Text(1) -- StringFixedLength
+SET     nullableValue = 'þ'u
 
 SELECT
 	r.Id as Id,
@@ -611,12 +611,12 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Text(1) -- StringFixedLength
-SET     $Column = 'ы'u
-DECLARE $ColumnNullable Text(1) -- StringFixedLength
-SET     $ColumnNullable = 'þ'u
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Text(1) -- StringFixedLength
+SET     Column = 'ы'u
+DECLARE ColumnNullable Text(1) -- StringFixedLength
+SET     ColumnNullable = 'þ'u
 
 INSERT INTO `TypeTable\`2`
 (
@@ -632,10 +632,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $value Text(1) -- StringFixedLength
-SET     $value = 'ы'u
-DECLARE $nullableValue Text(1) -- StringFixedLength
-SET     $nullableValue = 'þ'u
+DECLARE value Text(1) -- StringFixedLength
+SET     value = 'ы'u
+DECLARE nullableValue Text(1) -- StringFixedLength
+SET     nullableValue = 'þ'u
 
 SELECT
 	r.Id as Id,
@@ -668,10 +668,10 @@ VALUES
 ($p1,$p2,$p3)
 
 -- YDB Ydb
-DECLARE $value Text(1) -- StringFixedLength
-SET     $value = 'ы'u
-DECLARE $nullableValue Text(1) -- StringFixedLength
-SET     $nullableValue = 'þ'u
+DECLARE value Text(1) -- StringFixedLength
+SET     value = 'ы'u
+DECLARE nullableValue Text(1) -- StringFixedLength
+SET     nullableValue = 'þ'u
 
 SELECT
 	r.Id as Id,
@@ -689,10 +689,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Text(1) -- StringFixedLength
-SET     $value = 'ы'u
-DECLARE $nullableValue Text(1) -- StringFixedLength
-SET     $nullableValue = 'þ'u
+DECLARE value Text(1) -- StringFixedLength
+SET     value = 'ы'u
+DECLARE nullableValue Text(1) -- StringFixedLength
+SET     nullableValue = 'þ'u
 
 SELECT
 	r.Id as Id,
@@ -710,10 +710,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Text(1) -- StringFixedLength
-SET     $value = 'ы'u
-DECLARE $nullableValue Text(1) -- StringFixedLength
-SET     $nullableValue = 'þ'u
+DECLARE value Text(1) -- StringFixedLength
+SET     value = 'ы'u
+DECLARE nullableValue Text(1) -- StringFixedLength
+SET     nullableValue = 'þ'u
 
 SELECT
 	r.Id as Id,
@@ -725,10 +725,10 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-DECLARE $value Text(1) -- StringFixedLength
-SET     $value = 'ÿ'u
-DECLARE $nullableValue Text(1) -- StringFixedLength
-SET     $nullableValue = '
+DECLARE value Text(1) -- StringFixedLength
+SET     value = 'ÿ'u
+DECLARE nullableValue Text(1) -- StringFixedLength
+SET     nullableValue = '
 'u
 
 SELECT
@@ -756,12 +756,12 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Text(1) -- StringFixedLength
-SET     $Column = 'ÿ'u
-DECLARE $ColumnNullable Text(1) -- StringFixedLength
-SET     $ColumnNullable = '
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Text(1) -- StringFixedLength
+SET     Column = 'ÿ'u
+DECLARE ColumnNullable Text(1) -- StringFixedLength
+SET     ColumnNullable = '
 'u
 
 INSERT INTO `TypeTable\`2`
@@ -778,10 +778,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $value Text(1) -- StringFixedLength
-SET     $value = 'ÿ'u
-DECLARE $nullableValue Text(1) -- StringFixedLength
-SET     $nullableValue = '
+DECLARE value Text(1) -- StringFixedLength
+SET     value = 'ÿ'u
+DECLARE nullableValue Text(1) -- StringFixedLength
+SET     nullableValue = '
 'u
 
 SELECT
@@ -816,10 +816,10 @@ VALUES
 ($p1,$p2,$p3)
 
 -- YDB Ydb
-DECLARE $value Text(1) -- StringFixedLength
-SET     $value = 'ÿ'u
-DECLARE $nullableValue Text(1) -- StringFixedLength
-SET     $nullableValue = '
+DECLARE value Text(1) -- StringFixedLength
+SET     value = 'ÿ'u
+DECLARE nullableValue Text(1) -- StringFixedLength
+SET     nullableValue = '
 'u
 
 SELECT
@@ -838,10 +838,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Text(1) -- StringFixedLength
-SET     $value = 'ÿ'u
-DECLARE $nullableValue Text(1) -- StringFixedLength
-SET     $nullableValue = '
+DECLARE value Text(1) -- StringFixedLength
+SET     value = 'ÿ'u
+DECLARE nullableValue Text(1) -- StringFixedLength
+SET     nullableValue = '
 'u
 
 SELECT
@@ -860,10 +860,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Text(1) -- StringFixedLength
-SET     $value = 'ÿ'u
-DECLARE $nullableValue Text(1) -- StringFixedLength
-SET     $nullableValue = '
+DECLARE value Text(1) -- StringFixedLength
+SET     value = 'ÿ'u
+DECLARE nullableValue Text(1) -- StringFixedLength
+SET     nullableValue = '
 'u
 
 SELECT

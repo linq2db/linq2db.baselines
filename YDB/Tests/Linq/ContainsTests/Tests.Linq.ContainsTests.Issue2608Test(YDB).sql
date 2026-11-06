@@ -1,30 +1,30 @@
 ﻿-- YDB Ydb
-DECLARE $code Int32
-SET     $code = 1
-DECLARE $site Int32
-SET     $site = 2
-DECLARE $Ids0_1 Int16
-SET     $Ids0_1 = 11s
-DECLARE $Ids0_2 Int16
-SET     $Ids0_2 = 18s
-DECLARE $Ids0_3 Int16
-SET     $Ids0_3 = 19s
-DECLARE $Ids0_4 Int16
-SET     $Ids0_4 = 20s
-DECLARE $Ids0_5 Int16
-SET     $Ids0_5 = 21s
-DECLARE $Ids0_6 Int16
-SET     $Ids0_6 = 22s
-DECLARE $Ids0_7 Int16
-SET     $Ids0_7 = 23s
-DECLARE $Ids0_8 Int16
-SET     $Ids0_8 = 24s
-DECLARE $Ids0_9 Int16
-SET     $Ids0_9 = 26s
-DECLARE $Ids0_10 Int16
-SET     $Ids0_10 = 29s
-DECLARE $Ids0_11 Int16
-SET     $Ids0_11 = 28s
+DECLARE code Int32
+SET     code = 1
+DECLARE site Int32
+SET     site = 2
+DECLARE Ids0_1 Int16
+SET     Ids0_1 = 11s
+DECLARE Ids0_2 Int16
+SET     Ids0_2 = 18s
+DECLARE Ids0_3 Int16
+SET     Ids0_3 = 19s
+DECLARE Ids0_4 Int16
+SET     Ids0_4 = 20s
+DECLARE Ids0_5 Int16
+SET     Ids0_5 = 21s
+DECLARE Ids0_6 Int16
+SET     Ids0_6 = 22s
+DECLARE Ids0_7 Int16
+SET     Ids0_7 = 23s
+DECLARE Ids0_8 Int16
+SET     Ids0_8 = 24s
+DECLARE Ids0_9 Int16
+SET     Ids0_9 = 26s
+DECLARE Ids0_10 Int16
+SET     Ids0_10 = 29s
+DECLARE Ids0_11 Int16
+SET     Ids0_11 = 28s
 
 SELECT
 	CAST(f.StringValue AS Int16) as StatusPhase

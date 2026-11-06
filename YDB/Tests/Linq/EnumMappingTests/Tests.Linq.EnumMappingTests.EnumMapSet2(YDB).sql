@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $p Int32
-SET     $p = 102
+DECLARE p Int32
+SET     p = 102
 
 DELETE FROM
 	LinqDataTypes
@@ -20,8 +20,8 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $TestField Int64
-SET     $TestField = 12l
+DECLARE TestField Int64
+SET     TestField = 12l
 
 UPDATE
 	LinqDataTypes
@@ -40,8 +40,8 @@ WHERE
 LIMIT 1
 
 -- YDB Ydb
-DECLARE $p Int32
-SET     $p = 102
+DECLARE p Int32
+SET     p = 102
 
 DELETE FROM
 	LinqDataTypes

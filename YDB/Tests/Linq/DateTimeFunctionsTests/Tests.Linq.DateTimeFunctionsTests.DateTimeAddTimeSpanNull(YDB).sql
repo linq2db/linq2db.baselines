@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $ts Interval -- Object
-SET     $ts = NULL
+DECLARE ts Interval -- Object
+SET     ts = NULL
 
 SELECT
 	t.Id as Id,

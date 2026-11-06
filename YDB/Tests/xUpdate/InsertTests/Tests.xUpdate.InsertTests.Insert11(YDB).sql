@@ -5,14 +5,14 @@ FROM
 	Person t1
 
 -- YDB Ydb
-DECLARE $Gender Text(1) -- StringFixedLength
-SET     $Gender = 'M'u
-DECLARE $Name_FirstName Text(2) -- String
-SET     $Name_FirstName = 'fn'u
-DECLARE $Name_MiddleName Text -- String
-SET     $Name_MiddleName = NULL
-DECLARE $Name_LastName Text(2) -- String
-SET     $Name_LastName = 'ln'u
+DECLARE Gender Text(1) -- StringFixedLength
+SET     Gender = 'M'u
+DECLARE Name_FirstName Text(2) -- String
+SET     Name_FirstName = 'fn'u
+DECLARE Name_MiddleName Text -- String
+SET     Name_MiddleName = NULL
+DECLARE Name_LastName Text(2) -- String
+SET     Name_LastName = 'ln'u
 
 INSERT INTO Person
 (
@@ -30,8 +30,8 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $id Int32
-SET     $id = 4
+DECLARE id Int32
+SET     id = 4
 
 SELECT
 	p2.PersonID as PersonID,

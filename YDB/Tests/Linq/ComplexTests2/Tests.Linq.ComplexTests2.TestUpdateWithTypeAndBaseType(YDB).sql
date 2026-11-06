@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Xy Text(5) -- String
-SET     $Xy = 'Hallo'u
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Xy Text(5) -- String
+SET     Xy = 'Hallo'u
 
 INSERT INTO ComplexEyes
 (
@@ -16,22 +16,22 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $AnimalType Text(3) -- String
-SET     $AnimalType = 'Big'u
-DECLARE $AnimalType2 Text(3) -- String
-SET     $AnimalType2 = 'Big'u
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Name Text(8) -- String
-SET     $Name = 'FirstDog'u
-DECLARE $Discriminator Text(3) -- String
-SET     $Discriminator = 'Dog'u
-DECLARE $EyeId Int32
-SET     $EyeId = 1
-DECLARE $DogName_Second Text(1) -- String
-SET     $DogName_Second = 'b'u
-DECLARE $DogName_First Text(1) -- String
-SET     $DogName_First = 'a'u
+DECLARE AnimalType Text(3) -- String
+SET     AnimalType = 'Big'u
+DECLARE AnimalType2 Text(3) -- String
+SET     AnimalType2 = 'Big'u
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Name Text(8) -- String
+SET     Name = 'FirstDog'u
+DECLARE Discriminator Text(3) -- String
+SET     Discriminator = 'Dog'u
+DECLARE EyeId Int32
+SET     EyeId = 1
+DECLARE DogName_Second Text(1) -- String
+SET     DogName_Second = 'b'u
+DECLARE DogName_First Text(1) -- String
+SET     DogName_First = 'a'u
 
 INSERT INTO ComplexAnimals
 (
@@ -57,16 +57,16 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $AnimalType Text(3) -- String
-SET     $AnimalType = 'Big'u
-DECLARE $AnimalType2 Text(3) -- String
-SET     $AnimalType2 = 'Big'u
-DECLARE $Id Int32
-SET     $Id = 2
-DECLARE $Name Text(10) -- String
-SET     $Name = 'WildAnimal'u
-DECLARE $Discriminator Text(10) -- String
-SET     $Discriminator = 'WildAnimal'u
+DECLARE AnimalType Text(3) -- String
+SET     AnimalType = 'Big'u
+DECLARE AnimalType2 Text(3) -- String
+SET     AnimalType2 = 'Big'u
+DECLARE Id Int32
+SET     Id = 2
+DECLARE Name Text(10) -- String
+SET     Name = 'WildAnimal'u
+DECLARE Discriminator Text(10) -- String
+SET     Discriminator = 'WildAnimal'u
 
 INSERT INTO ComplexAnimals
 (
@@ -86,10 +86,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $TestAnimalId Int32
-SET     $TestAnimalId = NULL
+DECLARE Id Int32
+SET     Id = 1
+DECLARE TestAnimalId Int32
+SET     TestAnimalId = NULL
 
 INSERT INTO TestAnimalTable
 (
@@ -103,10 +103,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 2
-DECLARE $TestAnimalId Int32
-SET     $TestAnimalId = 1
+DECLARE Id Int32
+SET     Id = 2
+DECLARE TestAnimalId Int32
+SET     TestAnimalId = 1
 
 INSERT INTO TestAnimalTable
 (
@@ -136,22 +136,22 @@ WHERE
 LIMIT 1
 
 -- YDB Ydb
-DECLARE $AnimalType Text(3) -- String
-SET     $AnimalType = 'Big'u
-DECLARE $AnimalType2 Text(3) -- String
-SET     $AnimalType2 = 'Big'u
-DECLARE $Name Text(8) -- String
-SET     $Name = 'FirstDog'u
-DECLARE $Discriminator Text(3) -- String
-SET     $Discriminator = 'Dog'u
-DECLARE $EyeId Int32
-SET     $EyeId = 1
-DECLARE $DogName_Second Text(1) -- String
-SET     $DogName_Second = 'b'u
-DECLARE $DogName_First Text(1) -- String
-SET     $DogName_First = 'a'u
-DECLARE $Id Int32
-SET     $Id = 1
+DECLARE AnimalType Text(3) -- String
+SET     AnimalType = 'Big'u
+DECLARE AnimalType2 Text(3) -- String
+SET     AnimalType2 = 'Big'u
+DECLARE Name Text(8) -- String
+SET     Name = 'FirstDog'u
+DECLARE Discriminator Text(3) -- String
+SET     Discriminator = 'Dog'u
+DECLARE EyeId Int32
+SET     EyeId = 1
+DECLARE DogName_Second Text(1) -- String
+SET     DogName_Second = 'b'u
+DECLARE DogName_First Text(1) -- String
+SET     DogName_First = 'a'u
+DECLARE Id Int32
+SET     Id = 1
 
 UPDATE
 	ComplexAnimals
@@ -167,22 +167,22 @@ WHERE
 	ComplexAnimals.Id = $Id
 
 -- YDB Ydb
-DECLARE $AnimalType Text(3) -- String
-SET     $AnimalType = 'Big'u
-DECLARE $AnimalType2 Text(3) -- String
-SET     $AnimalType2 = 'Big'u
-DECLARE $Name Text(8) -- String
-SET     $Name = 'FirstDog'u
-DECLARE $Discriminator Text(3) -- String
-SET     $Discriminator = 'Dog'u
-DECLARE $EyeId Int32
-SET     $EyeId = 1
-DECLARE $DogName_Second Text(1) -- String
-SET     $DogName_Second = 'b'u
-DECLARE $DogName_First Text(1) -- String
-SET     $DogName_First = 'a'u
-DECLARE $Id Int32
-SET     $Id = 1
+DECLARE AnimalType Text(3) -- String
+SET     AnimalType = 'Big'u
+DECLARE AnimalType2 Text(3) -- String
+SET     AnimalType2 = 'Big'u
+DECLARE Name Text(8) -- String
+SET     Name = 'FirstDog'u
+DECLARE Discriminator Text(3) -- String
+SET     Discriminator = 'Dog'u
+DECLARE EyeId Int32
+SET     EyeId = 1
+DECLARE DogName_Second Text(1) -- String
+SET     DogName_Second = 'b'u
+DECLARE DogName_First Text(1) -- String
+SET     DogName_First = 'a'u
+DECLARE Id Int32
+SET     Id = 1
 
 UPDATE
 	ComplexAnimals
@@ -198,22 +198,22 @@ WHERE
 	ComplexAnimals.Id = $Id
 
 -- YDB Ydb
-DECLARE $AnimalType Text(5) -- String
-SET     $AnimalType = 'Small'u
-DECLARE $AnimalType2 Text(5) -- String
-SET     $AnimalType2 = 'Small'u
-DECLARE $Id Int32
-SET     $Id = 0
-DECLARE $Name Text -- String
-SET     $Name = NULL
-DECLARE $Discriminator Text(3) -- String
-SET     $Discriminator = 'Dog'u
-DECLARE $EyeId Int32
-SET     $EyeId = NULL
-DECLARE $DogName_Second Text -- String
-SET     $DogName_Second = NULL
-DECLARE $DogName_First Text -- String
-SET     $DogName_First = NULL
+DECLARE AnimalType Text(5) -- String
+SET     AnimalType = 'Small'u
+DECLARE AnimalType2 Text(5) -- String
+SET     AnimalType2 = 'Small'u
+DECLARE Id Int32
+SET     Id = 0
+DECLARE Name Text -- String
+SET     Name = NULL
+DECLARE Discriminator Text(3) -- String
+SET     Discriminator = 'Dog'u
+DECLARE EyeId Int32
+SET     EyeId = NULL
+DECLARE DogName_Second Text -- String
+SET     DogName_Second = NULL
+DECLARE DogName_First Text -- String
+SET     DogName_First = NULL
 
 INSERT INTO ComplexAnimals
 (

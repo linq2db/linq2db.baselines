@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $p Int32
-SET     $p = 3
+DECLARE p Int32
+SET     p = 3
 
 SELECT
 	p.PersonID as PersonID
@@ -10,8 +10,8 @@ WHERE
 	p.PersonID = $p
 
 -- YDB Ydb
-DECLARE $p Int32
-SET     $p = 3
+DECLARE p Int32
+SET     p = 3
 
 SELECT
 	p.PersonID as PersonID

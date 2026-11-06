@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $take Int32
-SET     $take = 1000
+DECLARE take Int32
+SET     take = 1000
 
 SELECT
 	a_Patient.Diagnosis as Diagnosis,

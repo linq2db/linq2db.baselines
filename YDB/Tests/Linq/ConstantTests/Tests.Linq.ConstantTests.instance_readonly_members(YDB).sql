@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $InitOnlyId Int32
-SET     $InitOnlyId = 1
+DECLARE Id Int32
+SET     Id = 1
+DECLARE InitOnlyId Int32
+SET     InitOnlyId = 1
 
 SELECT
 	e.Id as Id,
@@ -24,10 +24,10 @@ FROM
 	TestConstantsData t1
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $InitOnlyId Int32
-SET     $InitOnlyId = 1
+DECLARE Id Int32
+SET     Id = 1
+DECLARE InitOnlyId Int32
+SET     InitOnlyId = 1
 
 SELECT
 	e.Id as Id,

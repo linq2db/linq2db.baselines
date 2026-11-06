@@ -1,10 +1,10 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Key Int32
-SET     $Key = 10
-DECLARE $OptKey Int32
-SET     $OptKey = 10
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Key Int32
+SET     Key = 10
+DECLARE OptKey Int32
+SET     OptKey = 10
 
 INSERT INTO DuPairRow
 (
@@ -20,12 +20,12 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 2
-DECLARE $Key Int32
-SET     $Key = 20
-DECLARE $OptKey Int32
-SET     $OptKey = 21
+DECLARE Id Int32
+SET     Id = 2
+DECLARE Key Int32
+SET     Key = 20
+DECLARE OptKey Int32
+SET     OptKey = 21
 
 INSERT INTO DuPairRow
 (
@@ -41,12 +41,12 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 3
-DECLARE $Key Int32
-SET     $Key = 30
-DECLARE $OptKey Int32
-SET     $OptKey = NULL
+DECLARE Id Int32
+SET     Id = 3
+DECLARE Key Int32
+SET     Key = 30
+DECLARE OptKey Int32
+SET     OptKey = NULL
 
 INSERT INTO DuPairRow
 (

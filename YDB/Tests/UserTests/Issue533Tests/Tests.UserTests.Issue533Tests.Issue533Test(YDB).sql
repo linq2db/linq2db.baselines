@@ -1,12 +1,12 @@
 ﻿-- YDB Ydb
-DECLARE $Gender Text(1) -- StringFixedLength
-SET     $Gender = 'M'u
-DECLARE $FirstName Text(12) -- String
-SET     $FirstName = 'FirstName533'u
-DECLARE $MiddleName Text -- String
-SET     $MiddleName = NULL
-DECLARE $LastName Text(11) -- String
-SET     $LastName = 'LastName533'u
+DECLARE Gender Text(1) -- StringFixedLength
+SET     Gender = 'M'u
+DECLARE FirstName Text(12) -- String
+SET     FirstName = 'FirstName533'u
+DECLARE MiddleName Text -- String
+SET     MiddleName = NULL
+DECLARE LastName Text(11) -- String
+SET     LastName = 'LastName533'u
 
 INSERT INTO Person
 (
@@ -26,8 +26,8 @@ RETURNING
 	PersonID
 
 -- YDB Ydb
-DECLARE $id Int32
-SET     $id = 5
+DECLARE id Int32
+SET     id = 5
 
 SELECT
 	t1.PersonID as PersonID,

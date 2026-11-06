@@ -1,10 +1,10 @@
 ﻿-- YDB Ydb
-DECLARE $ID Int32
-SET     $ID = 1001
-DECLARE $MoneyValue Decimal(6, 2)
-SET     $MoneyValue = Decimal('1000', 22, 9)
-DECLARE $SmallIntValue Int16
-SET     $SmallIntValue = 100s
+DECLARE ID Int32
+SET     ID = 1001
+DECLARE MoneyValue Decimal(6, 2)
+SET     MoneyValue = Decimal('1000', 22, 9)
+DECLARE SmallIntValue Int16
+SET     SmallIntValue = 100s
 
 INSERT INTO LinqDataTypes
 (
@@ -20,8 +20,8 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $ID Int32
-SET     $ID = 1001
+DECLARE ID Int32
+SET     ID = 1001
 
 UPDATE
 	LinqDataTypes
@@ -32,8 +32,8 @@ WHERE
 	LinqDataTypes.ID = $ID
 
 -- YDB Ydb
-DECLARE $ID Int32
-SET     $ID = 1001
+DECLARE ID Int32
+SET     ID = 1001
 
 SELECT
 	t.ID as ID,

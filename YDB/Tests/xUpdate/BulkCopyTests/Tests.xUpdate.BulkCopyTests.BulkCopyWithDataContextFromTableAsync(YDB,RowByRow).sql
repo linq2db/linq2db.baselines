@@ -3,8 +3,8 @@
 INSERT ASYNC BULK SimpleBulkCopyTable(Id)
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 3
+DECLARE Id Int32
+SET     Id = 3
 
 INSERT INTO SimpleBulkCopyTable
 (
@@ -20,8 +20,8 @@ INSERT ASYNC BULK SimpleBulkCopyTable(Id)
 INSERT ASYNC BULK SimpleBulkCopyTable(Id)
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 30
+DECLARE Id Int32
+SET     Id = 30
 
 INSERT INTO SimpleBulkCopyTable
 (

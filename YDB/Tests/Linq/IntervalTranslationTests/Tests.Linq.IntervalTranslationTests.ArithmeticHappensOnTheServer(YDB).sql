@@ -1,14 +1,14 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $InSeconds Int64
-SET     $InSeconds = 183845l
-DECLARE $InTicks Int64
-SET     $InTicks = 1838450000000l
-DECLARE $Undeclared Int64
-SET     $Undeclared = 1838450000000l
-DECLARE $UndeclaredSeconds Int64
-SET     $UndeclaredSeconds = 183845l
+DECLARE Id Int32
+SET     Id = 1
+DECLARE InSeconds Int64
+SET     InSeconds = 183845l
+DECLARE InTicks Int64
+SET     InTicks = 1838450000000l
+DECLARE Undeclared Int64
+SET     Undeclared = 1838450000000l
+DECLARE UndeclaredSeconds Int64
+SET     UndeclaredSeconds = 183845l
 
 INSERT INTO DurationRow
 (

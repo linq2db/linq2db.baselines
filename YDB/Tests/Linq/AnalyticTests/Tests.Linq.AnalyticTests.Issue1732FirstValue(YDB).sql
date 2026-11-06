@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $group Int32
-SET     $group = 7
+DECLARE group Int32
+SET     group = 7
 
 SELECT
 	p.Id as Id,

@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $Value1 Int32
-SET     $Value1 = 100
+DECLARE Value1 Int32
+SET     Value1 = 100
 
 SELECT
 	x.Value1 as Value1
