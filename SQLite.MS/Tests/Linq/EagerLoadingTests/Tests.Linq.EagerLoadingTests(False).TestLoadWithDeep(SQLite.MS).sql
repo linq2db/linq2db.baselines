@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @intParam  -- Int32
+DECLARE @intParam Integer -- Int32
 SET     @intParam = 1
 
 SELECT
@@ -27,7 +27,7 @@ FROM
 		INNER JOIN [SubDetailClass] [d_1] ON [m_2].[DetailId] = [d_1].[DetailId]
 
 -- SQLite.MS SQLite
-DECLARE @intParam  -- Int32
+DECLARE @intParam Integer -- Int32
 SET     @intParam = 1
 
 SELECT
@@ -47,7 +47,7 @@ FROM
 		INNER JOIN [DetailClass] [d] ON [m_2].[Id1] = [d].[MasterId]
 
 -- SQLite.MS SQLite
-DECLARE @intParam  -- Int32
+DECLARE @intParam Integer -- Int32
 SET     @intParam = 1
 
 SELECT

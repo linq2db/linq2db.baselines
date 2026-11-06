@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
 INSERT INTO [CeParent]
@@ -12,9 +12,9 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @ParentId  -- Int32
+DECLARE @ParentId Integer -- Int32
 SET     @ParentId = 1
 
 INSERT INTO [CeChild]
@@ -29,9 +29,9 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @ParentId  -- Int32
+DECLARE @ParentId Integer -- Int32
 SET     @ParentId = 1
 
 INSERT INTO [CeChild]
@@ -61,7 +61,7 @@ FROM
 	[CeParent] [t1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
 INSERT INTO [CeParent]
@@ -74,9 +74,9 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @ParentId  -- Int32
+DECLARE @ParentId Integer -- Int32
 SET     @ParentId = 1
 
 INSERT INTO [CeChild]
@@ -91,9 +91,9 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @ParentId  -- Int32
+DECLARE @ParentId Integer -- Int32
 SET     @ParentId = 1
 
 INSERT INTO [CeChild]

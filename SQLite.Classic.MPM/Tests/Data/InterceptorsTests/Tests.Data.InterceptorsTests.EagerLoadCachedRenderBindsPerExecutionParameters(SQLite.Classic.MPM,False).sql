@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
 INSERT INTO [Pr5EagerParent]
@@ -12,7 +12,7 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
 
 INSERT INTO [Pr5EagerParent]
@@ -25,9 +25,9 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 10
-DECLARE @ParentId  -- Int32
+DECLARE @ParentId Integer -- Int32
 SET     @ParentId = 1
 
 INSERT INTO [Pr5EagerChild]
@@ -42,9 +42,9 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 20
-DECLARE @ParentId  -- Int32
+DECLARE @ParentId Integer -- Int32
 SET     @ParentId = 2
 
 INSERT INTO [Pr5EagerChild]
@@ -59,7 +59,7 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @id  -- Int32
+DECLARE @id Integer -- Int32
 SET     @id = 1
 
 SELECT
@@ -73,7 +73,7 @@ WHERE
 	[m_1].[Id] = @id
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @id  -- Int32
+DECLARE @id Integer -- Int32
 SET     @id = 1
 
 SELECT
@@ -84,7 +84,7 @@ WHERE
 	[p].[Id] = @id
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @id  -- Int32
+DECLARE @id Integer -- Int32
 SET     @id = 2
 
 SELECT
@@ -98,7 +98,7 @@ WHERE
 	[m_1].[Id] = @id
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @id  -- Int32
+DECLARE @id Integer -- Int32
 SET     @id = 2
 
 SELECT

@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @masterFilter  -- Int32
+DECLARE @masterFilter Integer -- Int32
 SET     @masterFilter = 5
 
 SELECT

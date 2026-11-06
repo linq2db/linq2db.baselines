@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
 INSERT INTO [RcParent]
@@ -12,9 +12,9 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @ParentId  -- Int32
+DECLARE @ParentId Integer -- Int32
 SET     @ParentId = 1
 DECLARE @Name NVarChar(5) -- String
 SET     @Name = 'alpha'
@@ -33,9 +33,9 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @ParentId  -- Int32
+DECLARE @ParentId Integer -- Int32
 SET     @ParentId = 1
 DECLARE @Name NVarChar(4) -- String
 SET     @Name = 'beta'

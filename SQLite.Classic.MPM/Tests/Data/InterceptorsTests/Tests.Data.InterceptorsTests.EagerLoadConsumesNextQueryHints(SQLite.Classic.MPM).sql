@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
 INSERT INTO [Pr5EagerParent]
@@ -12,9 +12,9 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @ParentId  -- Int32
+DECLARE @ParentId Integer -- Int32
 SET     @ParentId = 1
 
 INSERT INTO [Pr5EagerChild]
