@@ -102,7 +102,6 @@ VALUES
 	@Value1
 )
 
-CommitTransaction
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1111

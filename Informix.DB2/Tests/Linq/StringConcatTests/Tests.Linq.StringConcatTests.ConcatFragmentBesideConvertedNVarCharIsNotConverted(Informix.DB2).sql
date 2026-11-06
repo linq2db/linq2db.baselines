@@ -1,6 +1,6 @@
 ﻿-- Informix.DB2 Informix
 SELECT FIRST 2
-	p.Conv || '|' || Nvl('-', '')
+	p.Conv || '|-'
 FROM
 	ConvertedUnicodeConcatRow p
 

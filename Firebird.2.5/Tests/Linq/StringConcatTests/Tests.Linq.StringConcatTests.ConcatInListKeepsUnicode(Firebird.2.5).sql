@@ -7,7 +7,7 @@ SELECT
 FROM
 	"ConcatProduct" "p"
 WHERE
-	("p"."Sku" || Coalesce(CAST(@suffix AS VARCHAR(6)), '')) IN (_utf8 x'412D313030D0A9D0B8D182', _utf8 x'422D323030D096D183D0BA')
+	"p"."Sku" || Coalesce(CAST(@suffix AS VARCHAR(6)), '') IN (_utf8 x'412D313030D0A9D0B8D182', _utf8 x'422D323030D096D183D0BA')
 
 -- Firebird.2.5 Firebird
 SELECT

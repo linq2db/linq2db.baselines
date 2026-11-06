@@ -2,7 +2,7 @@
 ALTER TABLE
 	ConvertedTargetRow
 UPDATE
-	Conv = concat(Coalesce('x:', ''), Sku, '-s')
+	Conv = concat('x:', Sku, '-s')
 WHERE 1
 
 -- ClickHouse.Driver ClickHouse

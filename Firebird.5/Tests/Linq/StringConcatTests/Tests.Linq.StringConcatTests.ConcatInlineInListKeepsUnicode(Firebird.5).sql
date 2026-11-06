@@ -7,7 +7,7 @@ SELECT
 FROM
 	"ConcatProduct" "p"
 WHERE
-	("p"."Sku" || Coalesce(CAST(@suffix AS VARCHAR(6)), '')) IN (_utf8 x'412D313030D096D183D0BA', _utf8 x'422D323030D0A9D0B8D182')
+	"p"."Sku" || Coalesce(CAST(@suffix AS VARCHAR(6)), '') IN (_utf8 x'412D313030D096D183D0BA', _utf8 x'422D323030D0A9D0B8D182')
 
 -- Firebird.5 Firebird4
 SELECT
@@ -26,7 +26,7 @@ SELECT
 FROM
 	"ConcatProduct" "p"
 WHERE
-	("p"."Sku" || Coalesce(CAST(@suffix AS VARCHAR(6)), '')) IN ("p"."Title", _utf8 x'422D323030D096D183D0BA')
+	"p"."Sku" || Coalesce(CAST(@suffix AS VARCHAR(6)), '') IN ("p"."Title", _utf8 x'422D323030D096D183D0BA')
 
 -- Firebird.5 Firebird4
 SELECT

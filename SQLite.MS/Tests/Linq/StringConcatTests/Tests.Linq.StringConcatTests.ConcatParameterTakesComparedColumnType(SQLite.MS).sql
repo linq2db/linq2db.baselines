@@ -7,7 +7,7 @@ SELECT
 FROM
 	[ConcatProduct] [p]
 WHERE
-	[p].[Title] = ([p].[Sku] || Coalesce(@suffix, ''))
+	[p].[Title] = [p].[Sku] || Coalesce(@suffix, '')
 
 -- SQLite.MS SQLite
 SELECT

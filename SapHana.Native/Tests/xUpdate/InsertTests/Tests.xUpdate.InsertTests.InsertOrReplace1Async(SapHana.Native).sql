@@ -24,7 +24,9 @@ VALUES
 )
 
 -- SapHana.Native SapHana
-SELECT CURRENT_IDENTITY_VALUE() FROM DUMMY
+SELECT
+	CURRENT_IDENTITY_VALUE()
+FROM DUMMY
 
 -- SapHana.Native SapHana
 DECLARE @PersonID Integer -- Int32

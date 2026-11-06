@@ -9,7 +9,7 @@ SELECT
 		FROM
 			"ConcatProduct" "p"
 		WHERE
-			_utf8 x'412D313030D096D183D0BA' = ("p"."Sku" || Coalesce(CAST(@suffix AS VARCHAR(6)), ''))
+			_utf8 x'412D313030D096D183D0BA' = "p"."Sku" || Coalesce(CAST(@suffix AS VARCHAR(6)), '')
 	)
 FROM rdb$database
 
@@ -24,7 +24,7 @@ SELECT
 		FROM
 			"ConcatProduct" "p"
 		WHERE
-			_utf8 x'412D313030D0A9D0B8D182' = ("p"."Sku" || Coalesce(CAST(@suffix AS VARCHAR(6)), ''))
+			_utf8 x'412D313030D0A9D0B8D182' = "p"."Sku" || Coalesce(CAST(@suffix AS VARCHAR(6)), '')
 	)
 FROM rdb$database
 

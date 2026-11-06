@@ -40,7 +40,6 @@ WHERE
 
 INSERT BULK [Parent](ParentID, Value1)
 
-CommitTransaction
 -- SqlServer.Contained.MS SqlServer.2025
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1111

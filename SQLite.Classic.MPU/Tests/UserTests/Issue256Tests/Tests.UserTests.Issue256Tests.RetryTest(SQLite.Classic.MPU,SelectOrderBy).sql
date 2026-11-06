@@ -57,7 +57,10 @@ FROM
 WHERE
 	[t1].[ID] = 256
 ORDER BY
-	[t1].[BinaryValue] = @value
+	CASE
+		WHEN [t1].[BinaryValue] = @value THEN 1
+		ELSE 0
+	END
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @value Binary(3)
@@ -77,7 +80,10 @@ FROM
 WHERE
 	[t1].[ID] = 256
 ORDER BY
-	[t1].[BinaryValue] = @value
+	CASE
+		WHEN [t1].[BinaryValue] = @value THEN 1
+		ELSE 0
+	END
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @value Binary(3)
@@ -97,7 +103,10 @@ FROM
 WHERE
 	[t1].[ID] = 256
 ORDER BY
-	[t1].[BinaryValue] = @value
+	CASE
+		WHEN [t1].[BinaryValue] = @value THEN 1
+		ELSE 0
+	END
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DELETE FROM
