@@ -1,0 +1,15 @@
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+SELECT
+	`t_1`.`ID`
+FROM
+	(
+		SELECT DISTINCT
+			`t`.`BoolValue`,
+			`t`.`ID`
+		FROM
+			`LinqDataTypes` `t`
+	) `t_1`
+ORDER BY
+	`t_1`.`BoolValue`,
+	`t_1`.`ID`
+
