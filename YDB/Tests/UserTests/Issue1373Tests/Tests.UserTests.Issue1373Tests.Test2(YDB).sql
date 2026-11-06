@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Field1 Text -- String
-SET     $Field1 = NULL
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Field1 Text -- String
+SET     Field1 = NULL
 
 INSERT INTO Issue1373Tests
 (
@@ -16,10 +16,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 2
-DECLARE $Field1 Text -- String
-SET     $Field1 = NULL
+DECLARE Id Int32
+SET     Id = 2
+DECLARE Field1 Text -- String
+SET     Field1 = NULL
 
 INSERT INTO Issue1373Tests
 (
@@ -33,10 +33,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 3
-DECLARE $Field1 Text(4) -- String
-SET     $Field1 = 'test'u
+DECLARE Id Int32
+SET     Id = 3
+DECLARE Field1 Text(4) -- String
+SET     Field1 = 'test'u
 
 INSERT INTO Issue1373Tests
 (

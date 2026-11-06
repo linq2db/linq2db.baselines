@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $ParentID Int32
-SET     $ParentID = 1001
+DECLARE ParentID Int32
+SET     ParentID = 1001
 
 DELETE FROM
 	Parent
@@ -8,10 +8,10 @@ WHERE
 	Parent.ParentID = $ParentID
 
 -- YDB Ydb
-DECLARE $ParentID Int32
-SET     $ParentID = 1001
-DECLARE $Value1 Int32
-SET     $Value1 = 1001
+DECLARE ParentID Int32
+SET     ParentID = 1001
+DECLARE Value1 Int32
+SET     Value1 = 1001
 
 INSERT INTO Parent
 (
@@ -25,8 +25,8 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $ParentID Int32
-SET     $ParentID = 1001
+DECLARE ParentID Int32
+SET     ParentID = 1001
 
 SELECT
 	COUNT(*) as Count_1
@@ -36,8 +36,8 @@ WHERE
 	p.ParentID = $ParentID
 
 -- YDB Ydb
-DECLARE $ParentID Int32
-SET     $ParentID = 1001
+DECLARE ParentID Int32
+SET     ParentID = 1001
 
 DELETE FROM
 	Parent
@@ -45,8 +45,8 @@ WHERE
 	Parent.ParentID = $ParentID
 
 -- YDB Ydb
-DECLARE $ParentID Int32
-SET     $ParentID = 1001
+DECLARE ParentID Int32
+SET     ParentID = 1001
 
 SELECT
 	COUNT(*) as Count_1

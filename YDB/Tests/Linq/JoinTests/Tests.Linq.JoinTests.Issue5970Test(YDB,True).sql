@@ -1,12 +1,12 @@
 ﻿-- YDB Ydb
-DECLARE $Ids0_1 Int32
-SET     $Ids0_1 = 1
-DECLARE $Ids0_2 Int32
-SET     $Ids0_2 = 2
-DECLARE $Ids0_3 Int32
-SET     $Ids0_3 = 3
-DECLARE $Ids0_4 Int32
-SET     $Ids0_4 = 4
+DECLARE Ids0_1 Int32
+SET     Ids0_1 = 1
+DECLARE Ids0_2 Int32
+SET     Ids0_2 = 2
+DECLARE Ids0_3 Int32
+SET     Ids0_3 = 3
+DECLARE Ids0_4 Int32
+SET     Ids0_4 = 4
 
 SELECT
 	p.PersonID as PersonID,

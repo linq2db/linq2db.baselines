@@ -1,12 +1,12 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $StartedOn Timestamp -- DateTime2
-SET     $StartedOn = Timestamp('2026-01-01T10:00:00.000000Z')
-DECLARE $FinishedOn Timestamp -- DateTime2
-SET     $FinishedOn = Timestamp('2026-01-01T15:30:00.250000Z')
-DECLARE $Due Timestamp -- DateTime2
-SET     $Due = Timestamp('2026-01-01T10:00:00.000000Z')
+DECLARE Id Int32
+SET     Id = 1
+DECLARE StartedOn Timestamp -- DateTime2
+SET     StartedOn = Timestamp('2026-01-01T10:00:00.000000Z')
+DECLARE FinishedOn Timestamp -- DateTime2
+SET     FinishedOn = Timestamp('2026-01-01T15:30:00.250000Z')
+DECLARE Due Timestamp -- DateTime2
+SET     Due = Timestamp('2026-01-01T10:00:00.000000Z')
 
 INSERT INTO ShiftTargetRow
 (

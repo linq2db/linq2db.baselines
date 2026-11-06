@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Boolean Bool -- Boolean
-SET     $Boolean = false
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Boolean Bool -- Boolean
+SET     Boolean = false
 
 INSERT INTO CreateTableTypes
 (
@@ -16,10 +16,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 2
-DECLARE $Boolean Bool -- Boolean
-SET     $Boolean = true
+DECLARE Id Int32
+SET     Id = 2
+DECLARE Boolean Bool -- Boolean
+SET     Boolean = true
 
 INSERT INTO CreateTableTypes
 (

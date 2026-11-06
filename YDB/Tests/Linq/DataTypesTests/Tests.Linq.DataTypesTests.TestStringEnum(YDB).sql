@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $Column Text(7) -- String
-SET     $Column = 'value=2'u
-DECLARE $ColumnNullable Text(8) -- String
-SET     $ColumnNullable = 'value=33'u
+DECLARE Column Text(7) -- String
+SET     Column = 'value=2'u
+DECLARE ColumnNullable Text(8) -- String
+SET     ColumnNullable = 'value=33'u
 
 SELECT
 	r.Id as Id,
@@ -28,12 +28,12 @@ DELETE FROM
 	StringEnumTable
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Text(5) -- String
-SET     $Column = 'val=1'u
-DECLARE $ColumnNullable Text -- String
-SET     $ColumnNullable = NULL
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Text(5) -- String
+SET     Column = 'val=1'u
+DECLARE ColumnNullable Text -- String
+SET     ColumnNullable = NULL
 
 INSERT INTO StringEnumTable
 (
@@ -49,12 +49,12 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 2
-DECLARE $Column Text(7) -- String
-SET     $Column = 'value=2'u
-DECLARE $ColumnNullable Text(8) -- String
-SET     $ColumnNullable = 'value=33'u
+DECLARE Id Int32
+SET     Id = 2
+DECLARE Column Text(7) -- String
+SET     Column = 'value=2'u
+DECLARE ColumnNullable Text(8) -- String
+SET     ColumnNullable = 'value=33'u
 
 INSERT INTO StringEnumTable
 (

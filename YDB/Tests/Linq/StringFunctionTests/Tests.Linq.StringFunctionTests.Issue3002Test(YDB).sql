@@ -27,10 +27,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $test Text(4) -- String
-SET     $test = 'Test'u
-DECLARE $test_1 Text(6) -- String
-SET     $test_1 = '%Test%'u
+DECLARE test Text(4) -- String
+SET     test = 'Test'u
+DECLARE test_1 Text(6) -- String
+SET     test_1 = '%Test%'u
 
 SELECT
 	EXISTS(
@@ -43,10 +43,10 @@ SELECT
 	) as c1
 
 -- YDB Ydb
-DECLARE $test Text(4) -- String
-SET     $test = 'Test'u
-DECLARE $test_1 Text(6) -- String
-SET     $test_1 = '%Test%'u
+DECLARE test Text(4) -- String
+SET     test = 'Test'u
+DECLARE test_1 Text(6) -- String
+SET     test_1 = '%Test%'u
 
 SELECT
 	COUNT(*) as Count_1
@@ -56,10 +56,10 @@ WHERE
 	sampleClass_1.`Value` = $test OR sampleClass_1.Value2 LIKE $test_1 ESCAPE '~'s
 
 -- YDB Ydb
-DECLARE $test Text(5) -- String
-SET     $test = 'Value'u
-DECLARE $test_1 Text(7) -- String
-SET     $test_1 = '%Value%'u
+DECLARE test Text(5) -- String
+SET     test = 'Value'u
+DECLARE test_1 Text(7) -- String
+SET     test_1 = '%Value%'u
 
 SELECT
 	EXISTS(
@@ -72,10 +72,10 @@ SELECT
 	) as c1
 
 -- YDB Ydb
-DECLARE $test Text(5) -- String
-SET     $test = 'Value'u
-DECLARE $test_1 Text(7) -- String
-SET     $test_1 = '%Value%'u
+DECLARE test Text(5) -- String
+SET     test = 'Value'u
+DECLARE test_1 Text(7) -- String
+SET     test_1 = '%Value%'u
 
 SELECT
 	COUNT(*) as Count_1
@@ -85,10 +85,10 @@ WHERE
 	sampleClass_1.`Value` = $test OR sampleClass_1.Value2 LIKE $test_1 ESCAPE '~'s
 
 -- YDB Ydb
-DECLARE $test Text(5) -- String
-SET     $test = 'Class'u
-DECLARE $test_1 Text(7) -- String
-SET     $test_1 = '%Class%'u
+DECLARE test Text(5) -- String
+SET     test = 'Class'u
+DECLARE test_1 Text(7) -- String
+SET     test_1 = '%Class%'u
 
 SELECT
 	EXISTS(
@@ -101,10 +101,10 @@ SELECT
 	) as c1
 
 -- YDB Ydb
-DECLARE $test Text(5) -- String
-SET     $test = 'Class'u
-DECLARE $test_1 Text(7) -- String
-SET     $test_1 = '%Class%'u
+DECLARE test Text(5) -- String
+SET     test = 'Class'u
+DECLARE test_1 Text(7) -- String
+SET     test_1 = '%Class%'u
 
 SELECT
 	COUNT(*) as Count_1

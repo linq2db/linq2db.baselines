@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $n Int32
-SET     $n = 300000
+DECLARE n Int32
+SET     n = 300000
 
 SELECT
 	p.ParentID as ParentID,

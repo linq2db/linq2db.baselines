@@ -1,14 +1,14 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $InSeconds Int64
-SET     $InSeconds = 5400l
-DECLARE $InTicks Int64
-SET     $InTicks = 54000000000l
-DECLARE $Undeclared Int64
-SET     $Undeclared = 54000000000l
-DECLARE $UndeclaredSeconds Int64
-SET     $UndeclaredSeconds = 5400l
+DECLARE Id Int32
+SET     Id = 1
+DECLARE InSeconds Int64
+SET     InSeconds = 5400l
+DECLARE InTicks Int64
+SET     InTicks = 54000000000l
+DECLARE Undeclared Int64
+SET     Undeclared = 54000000000l
+DECLARE UndeclaredSeconds Int64
+SET     UndeclaredSeconds = 5400l
 
 INSERT INTO DurationRow
 (
@@ -66,8 +66,8 @@ FROM
 LIMIT 1
 
 -- YDB Ydb
-DECLARE $p Int64
-SET     $p = 60l
+DECLARE p Int64
+SET     p = 60l
 
 $CTE_1 = 	SELECT
 		MIN(t1.InSeconds) as Min_1

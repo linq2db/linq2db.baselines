@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $id Int32
-SET     $id = 1
+DECLARE id Int32
+SET     id = 1
 
 SELECT
 	COUNT(t1.ParentID) = COUNT(right_2.ParentID) AND COUNT(t1.ParentID) = COUNT(*) as c1

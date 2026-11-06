@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $p Text(1) -- String
-SET     $p = '1'u
+DECLARE p Text(1) -- String
+SET     p = '1'u
 
 SELECT
 	r.FirstName as FirstName,
@@ -26,8 +26,8 @@ WHERE
 	1 = 0
 
 -- YDB Ydb
-DECLARE $p Text(1) -- String
-SET     $p = '1'u
+DECLARE p Text(1) -- String
+SET     p = '1'u
 
 SELECT
 	r.FirstName as FirstName,

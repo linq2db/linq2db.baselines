@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $maxCompanyId Int32
-SET     $maxCompanyId = 1
+DECLARE maxCompanyId Int32
+SET     maxCompanyId = 1
 
 $CTE_1 = 	SELECT
 		c_1.Id as Id,

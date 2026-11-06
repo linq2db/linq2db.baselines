@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $Ids0_1 Text(2) -- String
-SET     $Ids0_1 = 'Ko'u
+DECLARE Ids0_1 Text(2) -- String
+SET     Ids0_1 = 'Ko'u
 
 SELECT
 	r.FirstName as FirstName,

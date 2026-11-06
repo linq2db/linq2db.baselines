@@ -11,8 +11,8 @@ WHERE
 	Parent.ParentID > 1000
 
 -- YDB Ydb
-DECLARE $values Int32
-SET     $values = 1001
+DECLARE values Int32
+SET     values = 1001
 
 INSERT INTO Parent
 (
@@ -26,8 +26,8 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $values Int32
-SET     $values = 1002
+DECLARE values Int32
+SET     values = 1002
 
 INSERT INTO Parent
 (
@@ -49,10 +49,10 @@ WHERE
 	t1.ParentID > 1000
 
 -- YDB Ydb
-DECLARE $Ids0_1 Int32
-SET     $Ids0_1 = 1001
-DECLARE $Ids0_2 Int32
-SET     $Ids0_2 = 1002
+DECLARE Ids0_1 Int32
+SET     Ids0_1 = 1001
+DECLARE Ids0_2 Int32
+SET     Ids0_2 = 1002
 
 DELETE FROM
 	Parent
