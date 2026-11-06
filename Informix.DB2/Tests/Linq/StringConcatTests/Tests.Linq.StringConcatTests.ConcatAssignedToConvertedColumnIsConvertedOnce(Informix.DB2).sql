@@ -2,7 +2,7 @@
 UPDATE
 	ConvertedTargetRow t1
 SET
-	Conv = Nvl('x:', '') || t1.Sku || Nvl('-s', '')
+	Conv = 'x:' || t1.Sku || '-s'
 
 -- Informix.DB2 Informix
 SELECT FIRST 2
