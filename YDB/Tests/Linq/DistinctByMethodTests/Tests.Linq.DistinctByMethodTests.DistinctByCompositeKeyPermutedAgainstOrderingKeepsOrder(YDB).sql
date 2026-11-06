@@ -1,0 +1,18 @@
+﻿-- YDB Ydb
+SELECT
+	p.ParentID as ParentID
+FROM
+	(
+		SELECT
+			ROW_NUMBER() OVER (PARTITION BY e.ParentID, e.Value1 ORDER BY e.Value1, e.ParentID) as RowNumber,
+			e.ParentID as ParentID,
+			e.Value1 as RowNumber_1
+		FROM
+			Parent e
+	) p
+WHERE
+	p.RowNumber = 1l
+ORDER BY
+	p.RowNumber_1,
+	p.ParentID
+

@@ -1,16 +1,16 @@
 ﻿-- YDB Ydb
 SELECT
-	c_1.Id as Id,
+	c_1.RowNumber_2 as RowNumber,
 	c_1.CustomerId as CustomerId,
-	c_1.Country as Country,
+	c_1.RowNumber_1 as RowNumber_1,
 	c_1.Region as Region
 FROM
 	(
 		SELECT
 			ROW_NUMBER() OVER (PARTITION BY e.Country ORDER BY e.Id) as RowNumber,
-			e.Id as Id,
+			e.Country as RowNumber_1,
+			e.Id as RowNumber_2,
 			e.CustomerId as CustomerId,
-			e.Country as Country,
 			e.Region as Region
 		FROM
 			NullableKeyData e
@@ -18,9 +18,9 @@ FROM
 			e.CustomerId LIKE 'DST%'u ESCAPE '~'s
 	) c_1
 WHERE
-	c_1.RowNumber = 1l AND c_1.Id > 1
+	c_1.RowNumber = 1l AND c_1.RowNumber_2 > 1
 ORDER BY
-	c_1.Id
+	c_1.RowNumber_2
 
 -- YDB Ydb
 SELECT

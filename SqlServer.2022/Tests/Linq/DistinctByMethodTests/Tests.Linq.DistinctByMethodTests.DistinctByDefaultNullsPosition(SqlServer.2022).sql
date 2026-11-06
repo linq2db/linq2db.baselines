@@ -5,9 +5,9 @@ FROM
 	(
 		SELECT
 			ROW_NUMBER() OVER (PARTITION BY [e].[Group] ORDER BY IIF([e].[Priority] IS NULL, 1, 0), [e].[Priority], [e].[Id]) as [RowNumber],
-			[e].[Priority],
-			[e].[Id],
-			[e].[Group] as [Group_1]
+			[e].[Group] as [Group_1],
+			[e].[Priority] as [RowNumber_1],
+			[e].[Id]
 		FROM
 			[TestData] [e]
 	) [x]
@@ -16,8 +16,8 @@ WHERE
 ORDER BY
 	IIF([x].[Group_1] IS NULL, 1, 0),
 	[x].[Group_1],
-	IIF([x].[Priority] IS NULL, 1, 0),
-	[x].[Priority],
+	IIF([x].[RowNumber_1] IS NULL, 1, 0),
+	[x].[RowNumber_1],
 	[x].[Id]
 
 -- SqlServer.2022
@@ -27,9 +27,9 @@ FROM
 	(
 		SELECT
 			ROW_NUMBER() OVER (PARTITION BY [e].[Group] ORDER BY IIF([e].[Priority] IS NULL, 1, 0), [e].[Priority], [e].[Id]) as [RowNumber],
-			[e].[Priority],
-			[e].[Id],
-			[e].[Group] as [Group_1]
+			[e].[Group] as [Group_1],
+			[e].[Priority] as [RowNumber_1],
+			[e].[Id]
 		FROM
 			[TestData] [e]
 	) [x]
@@ -38,7 +38,7 @@ WHERE
 ORDER BY
 	IIF([x].[Group_1] IS NULL, 1, 0),
 	[x].[Group_1],
-	IIF([x].[Priority] IS NULL, 1, 0),
-	[x].[Priority],
+	IIF([x].[RowNumber_1] IS NULL, 1, 0),
+	[x].[RowNumber_1],
 	[x].[Id]
 

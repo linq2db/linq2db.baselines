@@ -2,15 +2,15 @@
 SELECT
 	t1.Id,
 	t1.CustomerId,
-	t1.Country,
+	t1.RowNumber_1,
 	t1.Region
 FROM
 	(
 		SELECT
 			toInt64(ROW_NUMBER() OVER (PARTITION BY e.Country ORDER BY e.Id)) as RowNumber,
+			e.Country as RowNumber_1,
 			e.Id as Id,
 			e.CustomerId as CustomerId,
-			e.Country as Country,
 			e.Region as Region
 		FROM
 			NullableKeyData e

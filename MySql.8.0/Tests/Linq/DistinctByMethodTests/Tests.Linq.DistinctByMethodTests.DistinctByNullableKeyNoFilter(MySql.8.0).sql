@@ -1,16 +1,16 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 SELECT
 	`t1`.`Id`,
-	`t1`.`CustomerId`,
-	`t1`.`Country`,
+	`t1`.`RowNumber_2`,
+	`t1`.`RowNumber_1`,
 	`t1`.`Region`
 FROM
 	(
 		SELECT
 			ROW_NUMBER() OVER (PARTITION BY `e`.`Country` ORDER BY `e`.`CustomerId`) as `RowNumber`,
-			`e`.`CustomerId`,
+			`e`.`Country` as `RowNumber_1`,
+			`e`.`CustomerId` as `RowNumber_2`,
 			`e`.`Id`,
-			`e`.`Country`,
 			`e`.`Region`
 		FROM
 			`NullableKeyData` `e`
@@ -18,7 +18,7 @@ FROM
 WHERE
 	`t1`.`RowNumber` = 1
 ORDER BY
-	`t1`.`CustomerId`
+	`t1`.`RowNumber_2`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 SELECT

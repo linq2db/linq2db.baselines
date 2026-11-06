@@ -1,15 +1,15 @@
 ﻿-- Firebird.5 Firebird4
 SELECT
-	"t1"."Id",
-	"t1"."Country",
+	"t1"."RowNumber_2",
+	"t1"."RowNumber_1",
 	"t1"."Tag"
 FROM
 	(
 		SELECT
 			ROW_NUMBER() OVER (PARTITION BY "e"."Country" ORDER BY "e"."Id", "r"."Id") as "RowNumber",
-			"e"."Id",
-			"r"."Id" as "Id_1",
-			"e"."Country",
+			"e"."Country" as "RowNumber_1",
+			"e"."Id" as "RowNumber_2",
+			"r"."Id" as "RowNumber_3",
 			"r"."Tag"
 		FROM
 			"NullableKeyData" "e"
@@ -20,8 +20,8 @@ FROM
 WHERE
 	"t1"."RowNumber" = 1
 ORDER BY
-	"t1"."Id",
-	"t1"."Id_1"
+	"t1"."RowNumber_2",
+	"t1"."RowNumber_3"
 
 -- Firebird.5 Firebird4
 SELECT
