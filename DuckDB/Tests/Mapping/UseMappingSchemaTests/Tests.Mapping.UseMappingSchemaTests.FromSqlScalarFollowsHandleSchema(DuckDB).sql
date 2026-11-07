@@ -3,6 +3,6 @@ SELECT
 	t1."value"
 FROM
 	(
-		SELECT 'x' AS value, 'y' AS Text
+		SELECT 'x' AS value
 	) t1("value")
 
