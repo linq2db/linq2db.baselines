@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $operand Int32
-SET     $operand = 2
+DECLARE operand Int32
+SET     operand = 2
 
 SELECT
 	SUM(g_1.Cents) * $operand as c1
@@ -11,8 +11,8 @@ GROUP BY
 LIMIT 2
 
 -- YDB Ydb
-DECLARE $operand Int32
-SET     $operand = 2
+DECLARE operand Int32
+SET     operand = 2
 
 SELECT
 	$operand * SUM(g_1.Cents) as c1
@@ -23,8 +23,8 @@ GROUP BY
 LIMIT 2
 
 -- YDB Ydb
-DECLARE $operand Int32
-SET     $operand = 2
+DECLARE operand Int32
+SET     operand = 2
 
 SELECT
 	SUM(g_1.Cents) / $operand as c1
@@ -35,8 +35,8 @@ GROUP BY
 LIMIT 2
 
 -- YDB Ydb
-DECLARE $operand Int32
-SET     $operand = 200
+DECLARE operand Int32
+SET     operand = 200
 
 SELECT
 	SUM(g_1.Cents) % $operand as c1
@@ -47,8 +47,8 @@ GROUP BY
 LIMIT 2
 
 -- YDB Ydb
-DECLARE $operand Int32
-SET     $operand = 200
+DECLARE operand Int32
+SET     operand = 200
 
 SELECT
 	SUM(g_1.Cents) + $operand as c1
@@ -59,8 +59,8 @@ GROUP BY
 LIMIT 2
 
 -- YDB Ydb
-DECLARE $operand Int32
-SET     $operand = 2
+DECLARE operand Int32
+SET     operand = 2
 
 SELECT
 	x.Cents * $operand as c1
@@ -71,8 +71,8 @@ WHERE
 LIMIT 2
 
 -- YDB Ydb
-DECLARE $operand Int32
-SET     $operand = 200
+DECLARE operand Int32
+SET     operand = 200
 
 SELECT
 	x.Cents % $operand as c1
@@ -83,8 +83,8 @@ WHERE
 LIMIT 2
 
 -- YDB Ydb
-DECLARE $operand Int32
-SET     $operand = 200
+DECLARE operand Int32
+SET     operand = 200
 
 SELECT
 	x.Cents + $operand as c1
@@ -95,8 +95,8 @@ WHERE
 LIMIT 2
 
 -- YDB Ydb
-DECLARE $operand Int32
-SET     $operand = 200
+DECLARE operand Int32
+SET     operand = 200
 
 SELECT
 	x.Cents - $operand as c1
