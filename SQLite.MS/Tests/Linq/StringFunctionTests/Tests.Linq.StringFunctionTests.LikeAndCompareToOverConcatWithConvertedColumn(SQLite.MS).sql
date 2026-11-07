@@ -16,7 +16,7 @@ SELECT
 FROM
 	[PlainAndConvertedUnicodeTable] [r]
 WHERE
-	([r].[Plain] || [r].[Conv]) LIKE @read
+	[r].[Plain] || [r].[Conv] LIKE @read
 
 -- SQLite.MS SQLite
 DECLARE @read NVarChar(6) -- String
@@ -27,5 +27,5 @@ SELECT
 FROM
 	[PlainAndConvertedUnicodeTable] [r]
 WHERE
-	([r].[Plain] || [r].[Conv]) = @read
+	[r].[Plain] || [r].[Conv] = @read
 
