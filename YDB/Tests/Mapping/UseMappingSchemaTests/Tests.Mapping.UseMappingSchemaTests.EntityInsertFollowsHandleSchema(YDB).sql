@@ -1,10 +1,10 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Value Int32
-SET     $Value = 5
-DECLARE $Name Text(1) -- String
-SET     $Name = 'a'u
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Value Int32
+SET     Value = 5
+DECLARE Name Text(1) -- String
+SET     Name = 'a'u
 
 INSERT INTO SourceSchemaRow
 (

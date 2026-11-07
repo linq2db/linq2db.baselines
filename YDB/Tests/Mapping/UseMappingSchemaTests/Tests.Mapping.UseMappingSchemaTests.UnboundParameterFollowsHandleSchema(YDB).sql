@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $token Text(2) -- String
-SET     $token = 'Bx'u
+DECLARE token Text(2) -- String
+SET     token = 'Bx'u
 
 SELECT
 	$token as c1

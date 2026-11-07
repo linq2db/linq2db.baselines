@@ -11,12 +11,12 @@ CREATE TABLE SourceSchemaRowTemp
 INSERT ASYNC BULK SourceSchemaRowTemp(Id, Value, Name)
 
 -- YDB Ydb
-DECLARE $Value Int32
-SET     $Value = 6
-DECLARE $Name Text(1) -- String
-SET     $Name = 'b'u
-DECLARE $Id Int32
-SET     $Id = 1
+DECLARE Value Int32
+SET     Value = 6
+DECLARE Name Text(1) -- String
+SET     Name = 'b'u
+DECLARE Id Int32
+SET     Id = 1
 
 UPDATE
 	SourceSchemaRow
