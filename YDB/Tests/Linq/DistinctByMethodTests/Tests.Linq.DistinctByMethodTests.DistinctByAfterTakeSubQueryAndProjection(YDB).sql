@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $take Int32
-SET     $take = 7
+DECLARE take Int32
+SET     take = 7
 
 SELECT
 	t1.RowNumber_2 as RowNumber,

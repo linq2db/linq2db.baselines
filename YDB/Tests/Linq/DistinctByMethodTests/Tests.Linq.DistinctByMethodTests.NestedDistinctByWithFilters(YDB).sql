@@ -31,7 +31,8 @@ FROM
 WHERE
 	t1.RowNumber = 1l
 ORDER BY
-	t1.RowNumber_2
+	t1.RowNumber_2,
+	t1.RowNumber_3
 
 -- YDB Ydb
 SELECT

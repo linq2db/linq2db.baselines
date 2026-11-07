@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $p Int32
-SET     $p = -6
+DECLARE p Int32
+SET     p = -6
 
 SELECT
 	t1.Key_1 as Key_1,

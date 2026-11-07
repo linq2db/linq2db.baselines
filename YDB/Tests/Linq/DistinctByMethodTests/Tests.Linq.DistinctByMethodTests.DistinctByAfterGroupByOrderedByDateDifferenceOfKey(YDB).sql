@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $baseDate Timestamp -- DateTime2
-SET     $baseDate = Timestamp('2000-01-01T00:00:00.000000Z')
+DECLARE baseDate Timestamp -- DateTime2
+SET     baseDate = Timestamp('2000-01-01T00:00:00.000000Z')
 
 SELECT
 	t1.RowNumber_2 as RowNumber,

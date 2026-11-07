@@ -1,14 +1,14 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $InSeconds Int64
-SET     $InSeconds = 50l
-DECLARE $InTicks Int64
-SET     $InTicks = 500000000l
-DECLARE $Undeclared Int64
-SET     $Undeclared = 500000000l
-DECLARE $UndeclaredSeconds Int64
-SET     $UndeclaredSeconds = 50l
+DECLARE Id Int32
+SET     Id = 1
+DECLARE InSeconds Int64
+SET     InSeconds = 50l
+DECLARE InTicks Int64
+SET     InTicks = 500000000l
+DECLARE Undeclared Int64
+SET     Undeclared = 500000000l
+DECLARE UndeclaredSeconds Int64
+SET     UndeclaredSeconds = 50l
 
 INSERT INTO DurationRow
 (
@@ -28,16 +28,16 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 2
-DECLARE $InSeconds Int64
-SET     $InSeconds = 150l
-DECLARE $InTicks Int64
-SET     $InTicks = 1500000000l
-DECLARE $Undeclared Int64
-SET     $Undeclared = 1500000000l
-DECLARE $UndeclaredSeconds Int64
-SET     $UndeclaredSeconds = 150l
+DECLARE Id Int32
+SET     Id = 2
+DECLARE InSeconds Int64
+SET     InSeconds = 150l
+DECLARE InTicks Int64
+SET     InTicks = 1500000000l
+DECLARE Undeclared Int64
+SET     Undeclared = 1500000000l
+DECLARE UndeclaredSeconds Int64
+SET     UndeclaredSeconds = 150l
 
 INSERT INTO DurationRow
 (
@@ -57,16 +57,16 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 3
-DECLARE $InSeconds Int64
-SET     $InSeconds = 200l
-DECLARE $InTicks Int64
-SET     $InTicks = 2000000000l
-DECLARE $Undeclared Int64
-SET     $Undeclared = 2000000000l
-DECLARE $UndeclaredSeconds Int64
-SET     $UndeclaredSeconds = 200l
+DECLARE Id Int32
+SET     Id = 3
+DECLARE InSeconds Int64
+SET     InSeconds = 200l
+DECLARE InTicks Int64
+SET     InTicks = 2000000000l
+DECLARE Undeclared Int64
+SET     Undeclared = 2000000000l
+DECLARE UndeclaredSeconds Int64
+SET     UndeclaredSeconds = 200l
 
 INSERT INTO DurationRow
 (
@@ -86,16 +86,16 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 4
-DECLARE $InSeconds Int64
-SET     $InSeconds = 30l
-DECLARE $InTicks Int64
-SET     $InTicks = 300000000l
-DECLARE $Undeclared Int64
-SET     $Undeclared = 300000000l
-DECLARE $UndeclaredSeconds Int64
-SET     $UndeclaredSeconds = 30l
+DECLARE Id Int32
+SET     Id = 4
+DECLARE InSeconds Int64
+SET     InSeconds = 30l
+DECLARE InTicks Int64
+SET     InTicks = 300000000l
+DECLARE Undeclared Int64
+SET     Undeclared = 300000000l
+DECLARE UndeclaredSeconds Int64
+SET     UndeclaredSeconds = 30l
 
 INSERT INTO DurationRow
 (
@@ -115,8 +115,8 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $p Int64
-SET     $p = 100l
+DECLARE p Int64
+SET     p = 100l
 
 SELECT
 	t1.RowNumber_2 as RowNumber,
