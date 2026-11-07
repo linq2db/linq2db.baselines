@@ -10,7 +10,7 @@ FROM
 WHERE
 	(N'123' + CASE
 		WHEN LEN([p].[FirstName] + N'.') >= 7 THEN [p].[FirstName]
-		ELSE CAST(REPLICATE(N'*', 6 - (LEN([p].[FirstName] + N'.') - 1)) AS NVarChar(Max)) + [p].[FirstName]
+		ELSE REPLICATE(N'*', 6 - (LEN([p].[FirstName] + N'.') - 1)) + [p].[FirstName]
 	END) = N'123**John' AND
 	[p].[PersonID] = 1
 
