@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Name Text -- String
-SET     $Name = NULL
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Name Text -- String
+SET     Name = NULL
 
 INSERT INTO PR_1598_Insert_Fluent_Table
 (

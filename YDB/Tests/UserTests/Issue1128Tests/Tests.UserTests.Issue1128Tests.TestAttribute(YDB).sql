@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
+DECLARE Id Int32
+SET     Id = 1
 
 INSERT INTO AttributeBase
 (

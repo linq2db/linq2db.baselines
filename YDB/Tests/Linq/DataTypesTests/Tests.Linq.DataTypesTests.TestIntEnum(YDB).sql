@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $Column Int32
-SET     $Column = 2
-DECLARE $ColumnNullable Int32
-SET     $ColumnNullable = 3
+DECLARE Column Int32
+SET     Column = 2
+DECLARE ColumnNullable Int32
+SET     ColumnNullable = 3
 
 SELECT
 	r.Id as Id,
@@ -28,12 +28,12 @@ DELETE FROM
 	IntEnumTable
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Int32
-SET     $Column = 1
-DECLARE $ColumnNullable Int32
-SET     $ColumnNullable = NULL
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Int32
+SET     Column = 1
+DECLARE ColumnNullable Int32
+SET     ColumnNullable = NULL
 
 INSERT INTO IntEnumTable
 (
@@ -49,12 +49,12 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 2
-DECLARE $Column Int32
-SET     $Column = 2
-DECLARE $ColumnNullable Int32
-SET     $ColumnNullable = 3
+DECLARE Id Int32
+SET     Id = 2
+DECLARE Column Int32
+SET     Column = 2
+DECLARE ColumnNullable Int32
+SET     ColumnNullable = 3
 
 INSERT INTO IntEnumTable
 (

@@ -1,10 +1,10 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Discriminator Int32
-SET     $Discriminator = 1
-DECLARE $Value1 Text(4) -- String
-SET     $Value1 = 'Str1'u
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Discriminator Int32
+SET     Discriminator = 1
+DECLARE Value1 Text(4) -- String
+SET     Value1 = 'Str1'u
 
 INSERT INTO TPHTable
 (
@@ -20,12 +20,12 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 2
-DECLARE $Discriminator Int32
-SET     $Discriminator = 2
-DECLARE $Value2 Text(4) -- String
-SET     $Value2 = 'Str2'u
+DECLARE Id Int32
+SET     Id = 2
+DECLARE Discriminator Int32
+SET     Discriminator = 2
+DECLARE Value2 Text(4) -- String
+SET     Value2 = 'Str2'u
 
 INSERT INTO TPHTable
 (
@@ -41,14 +41,14 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 3
-DECLARE $Discriminator Int32
-SET     $Discriminator = 3
-DECLARE $Value3 Text(4) -- String
-SET     $Value3 = 'Str3'u
-DECLARE $NullableBool Text(1) -- AnsiString
-SET     $NullableBool = 'Y'u
+DECLARE Id Int32
+SET     Id = 3
+DECLARE Discriminator Int32
+SET     Discriminator = 3
+DECLARE Value3 Text(4) -- String
+SET     Value3 = 'Str3'u
+DECLARE NullableBool Text(1) -- AnsiString
+SET     NullableBool = 'Y'u
 
 INSERT INTO TPHTable
 (

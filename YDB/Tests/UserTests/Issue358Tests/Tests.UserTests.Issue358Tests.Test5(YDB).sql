@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $Ids0_1 Bool -- Boolean
-SET     $Ids0_1 = true
+DECLARE Ids0_1 Bool -- Boolean
+SET     Ids0_1 = true
 
 SELECT
 	t1.ID as ID,

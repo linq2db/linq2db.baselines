@@ -1,10 +1,10 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Code Int32
-SET     $Code = 1
-DECLARE $Child1Field Int32
-SET     $Child1Field = 11
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Code Int32
+SET     Code = 1
+DECLARE Child1Field Int32
+SET     Child1Field = 11
 
 INSERT INTO InheritanceFilter
 (
@@ -20,12 +20,12 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 2
-DECLARE $Code Int32
-SET     $Code = 2
-DECLARE $Child2Field Int32
-SET     $Child2Field = 12
+DECLARE Id Int32
+SET     Id = 2
+DECLARE Code Int32
+SET     Code = 2
+DECLARE Child2Field Int32
+SET     Child2Field = 12
 
 INSERT INTO InheritanceFilter
 (
@@ -41,14 +41,14 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 3
-DECLARE $Code Int32
-SET     $Code = 11
-DECLARE $Child1Field Int32
-SET     $Child1Field = 23
-DECLARE $Grandchild11Field Int32
-SET     $Grandchild11Field = 13
+DECLARE Id Int32
+SET     Id = 3
+DECLARE Code Int32
+SET     Code = 11
+DECLARE Child1Field Int32
+SET     Child1Field = 23
+DECLARE Grandchild11Field Int32
+SET     Grandchild11Field = 13
 
 INSERT INTO InheritanceFilter
 (
@@ -66,14 +66,14 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 4
-DECLARE $Code Int32
-SET     $Code = 12
-DECLARE $Child1Field Int32
-SET     $Child1Field = 24
-DECLARE $Grandchild12Field Int32
-SET     $Grandchild12Field = 14
+DECLARE Id Int32
+SET     Id = 4
+DECLARE Code Int32
+SET     Code = 12
+DECLARE Child1Field Int32
+SET     Child1Field = 24
+DECLARE Grandchild12Field Int32
+SET     Grandchild12Field = 14
 
 INSERT INTO InheritanceFilter
 (
@@ -91,14 +91,14 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 5
-DECLARE $Code Int32
-SET     $Code = 21
-DECLARE $Child2Field Int32
-SET     $Child2Field = 25
-DECLARE $Grandchild21Field Int32
-SET     $Grandchild21Field = 15
+DECLARE Id Int32
+SET     Id = 5
+DECLARE Code Int32
+SET     Code = 21
+DECLARE Child2Field Int32
+SET     Child2Field = 25
+DECLARE Grandchild21Field Int32
+SET     Grandchild21Field = 15
 
 INSERT INTO InheritanceFilter
 (
@@ -116,14 +116,14 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 6
-DECLARE $Code Int32
-SET     $Code = 22
-DECLARE $Child2Field Int32
-SET     $Child2Field = 26
-DECLARE $Grandchild22Field Int32
-SET     $Grandchild22Field = 16
+DECLARE Id Int32
+SET     Id = 6
+DECLARE Code Int32
+SET     Code = 22
+DECLARE Child2Field Int32
+SET     Child2Field = 26
+DECLARE Grandchild22Field Int32
+SET     Grandchild22Field = 16
 
 INSERT INTO InheritanceFilter
 (

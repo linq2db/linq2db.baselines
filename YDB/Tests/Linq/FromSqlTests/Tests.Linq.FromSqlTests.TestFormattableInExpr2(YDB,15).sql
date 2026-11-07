@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $startId Int64
-SET     $startId = 5
-DECLARE $endId Int32
-SET     $endId = 15
+DECLARE startId Int64
+SET     startId = 5
+DECLARE endId Int32
+SET     endId = 15
 
 SELECT
 	s.`value` as Value_1,
@@ -18,10 +18,10 @@ ORDER BY
 	s.id
 
 -- YDB Ydb
-DECLARE $startId Int32
-SET     $startId = 5
-DECLARE $endId Int32
-SET     $endId = 15
+DECLARE startId Int32
+SET     startId = 5
+DECLARE endId Int32
+SET     endId = 15
 
 SELECT
 	t.`value` as Value_1,

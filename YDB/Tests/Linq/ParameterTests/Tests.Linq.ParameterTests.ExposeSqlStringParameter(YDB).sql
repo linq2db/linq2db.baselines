@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $p Text(3) -- String
-SET     $p = 'abc'u
+DECLARE p Text(3) -- String
+SET     p = 'abc'u
 
 SELECT
 	t.PersonID as PersonID,

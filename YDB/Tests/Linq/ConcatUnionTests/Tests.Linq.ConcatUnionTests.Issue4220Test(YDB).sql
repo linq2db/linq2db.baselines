@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $AOnly Text(6) -- String
-SET     $AOnly = 'a only'u
+DECLARE Id Int32
+SET     Id = 1
+DECLARE AOnly Text(6) -- String
+SET     AOnly = 'a only'u
 
 INSERT INTO ConcreteA
 (
@@ -16,10 +16,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 2
-DECLARE $BOnly Text(6) -- String
-SET     $BOnly = 'b only'u
+DECLARE Id Int32
+SET     Id = 2
+DECLARE BOnly Text(6) -- String
+SET     BOnly = 'b only'u
 
 INSERT INTO ConcreteB
 (

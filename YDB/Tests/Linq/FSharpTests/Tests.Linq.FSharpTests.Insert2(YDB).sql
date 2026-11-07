@@ -5,14 +5,14 @@ FROM
 	Person t1
 
 -- YDB Ydb
-DECLARE $Gender Text(1) -- String
-SET     $Gender = 'M'u
-DECLARE $Name_FirstName Text(2) -- String
-SET     $Name_FirstName = 'fn'u
-DECLARE $Name_MiddleName Text -- String
-SET     $Name_MiddleName = ''u
-DECLARE $Name_LastName Text(2) -- String
-SET     $Name_LastName = 'ln'u
+DECLARE Gender Text(1) -- String
+SET     Gender = 'M'u
+DECLARE Name_FirstName Text(2) -- String
+SET     Name_FirstName = 'fn'u
+DECLARE Name_MiddleName Text -- String
+SET     Name_MiddleName = ''u
+DECLARE Name_LastName Text(2) -- String
+SET     Name_LastName = 'ln'u
 
 INSERT INTO Person
 (

@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $String Text -- String
-SET     $String = ''u
+DECLARE Id Int32
+SET     Id = 1
+DECLARE String Text -- String
+SET     String = ''u
 
 INSERT INTO CreateTableTypes
 (
@@ -16,10 +16,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 2
-DECLARE $String Text(14) -- String
-SET     $String = 'test max value'u
+DECLARE Id Int32
+SET     Id = 2
+DECLARE String Text(14) -- String
+SET     String = 'test max value'u
 
 INSERT INTO CreateTableTypes
 (

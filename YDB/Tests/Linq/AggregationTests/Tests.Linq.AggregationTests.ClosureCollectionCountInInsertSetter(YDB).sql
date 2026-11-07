@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $EmptyCount Int32
-SET     $EmptyCount = 0
-DECLARE $ItemsCount Int32
-SET     $ItemsCount = 2
+DECLARE EmptyCount Int32
+SET     EmptyCount = 0
+DECLARE ItemsCount Int32
+SET     ItemsCount = 2
 
 INSERT INTO CountTarget
 (

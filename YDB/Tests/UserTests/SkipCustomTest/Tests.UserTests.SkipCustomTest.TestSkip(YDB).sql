@@ -1,10 +1,10 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Name Text(4) -- String
-SET     $Name = 'John'u
-DECLARE $Age Int32
-SET     $Age = 15
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Name Text(4) -- String
+SET     Name = 'John'u
+DECLARE Age Int32
+SET     Age = 15
 
 INSERT INTO PR_1598_SkipCustom_Table
 (
@@ -31,10 +31,10 @@ WHERE
 LIMIT 1
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 2
-DECLARE $Name Text(3) -- String
-SET     $Name = 'Max'u
+DECLARE Id Int32
+SET     Id = 2
+DECLARE Name Text(3) -- String
+SET     Name = 'Max'u
 
 INSERT INTO PR_1598_SkipCustom_Table
 (

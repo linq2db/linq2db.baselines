@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $s Text(7) -- String
-SET     $s = '123[456'u
-DECLARE $ps Text(3) -- String
-SET     $ps = '%[%'u
+DECLARE s Text(7) -- String
+SET     s = '123[456'u
+DECLARE ps Text(3) -- String
+SET     ps = '%[%'u
 
 SELECT
 	COUNT(*) as Count_1

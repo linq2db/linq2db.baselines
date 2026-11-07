@@ -15,8 +15,8 @@ FROM
 	Table404One t1
 
 -- YDB Ydb
-DECLARE $usage Int32
-SET     $usage = 0
+DECLARE usage Int32
+SET     usage = 0
 
 SELECT
 	m_1.Id as Id,
@@ -36,8 +36,8 @@ FROM
 	Table404One t1
 
 -- YDB Ydb
-DECLARE $usage Int32
-SET     $usage = 1
+DECLARE usage Int32
+SET     usage = 1
 
 SELECT
 	m_1.Id as Id,
@@ -73,8 +73,8 @@ FROM
 	Table404One t1
 
 -- YDB Ydb
-DECLARE $usage Int32
-SET     $usage = 0
+DECLARE usage Int32
+SET     usage = 0
 
 SELECT
 	m_1.Id as Id,
@@ -94,8 +94,8 @@ FROM
 	Table404One t1
 
 -- YDB Ydb
-DECLARE $usage Int32
-SET     $usage = 1
+DECLARE usage Int32
+SET     usage = 1
 
 SELECT
 	m_1.Id as Id,

@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $CharFld Text(1) -- StringFixedLength
-SET     $CharFld = 'P'u
+DECLARE CharFld Text(1) -- StringFixedLength
+SET     CharFld = 'P'u
 
 INSERT INTO Issue1279Table
 (

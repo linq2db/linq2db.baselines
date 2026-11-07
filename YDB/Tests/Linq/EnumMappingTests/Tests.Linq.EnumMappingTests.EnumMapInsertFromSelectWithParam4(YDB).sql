@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $p Int32
-SET     $p = 103
+DECLARE p Int32
+SET     p = 103
 
 DELETE FROM
 	LinqDataTypes
@@ -20,8 +20,8 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $param Int64
-SET     $param = 11l
+DECLARE param Int64
+SET     param = 11l
 
 INSERT INTO LinqDataTypes
 (
@@ -45,8 +45,8 @@ WHERE
 	r.ID = 102 AND r.BigIntValue = 11l
 
 -- YDB Ydb
-DECLARE $p Int32
-SET     $p = 103
+DECLARE p Int32
+SET     p = 103
 
 DELETE FROM
 	LinqDataTypes

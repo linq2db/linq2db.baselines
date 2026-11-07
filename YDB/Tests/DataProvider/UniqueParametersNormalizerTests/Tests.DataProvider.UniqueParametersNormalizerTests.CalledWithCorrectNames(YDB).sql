@@ -1,10 +1,10 @@
 ﻿-- YDB Ydb
-DECLARE $search Text(5) -- String
-SET     $search = 'test%'u
-DECLARE $search_1 Text(4) -- String
-SET     $search_1 = 'test'u
-DECLARE $search_2 Text(5) -- String
-SET     $search_2 = 'test%'u
+DECLARE search Text(5) -- String
+SET     search = 'test%'u
+DECLARE search_1 Text(4) -- String
+SET     search_1 = 'test'u
+DECLARE search_2 Text(5) -- String
+SET     search_2 = 'test%'u
 
 SELECT
 	row1.Id as Id

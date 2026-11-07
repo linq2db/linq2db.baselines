@@ -1,10 +1,10 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Stamp Int32
-SET     $Stamp = -10
-DECLARE $Value Text(7) -- String
-SET     $Value = 'initial'u
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Stamp Int32
+SET     Stamp = -10
+DECLARE Value Text(7) -- String
+SET     Value = 'initial'u
 
 INSERT INTO ConcurrencyFiltered
 (
@@ -28,12 +28,12 @@ FROM
 	ConcurrencyFiltered t1
 
 -- YDB Ydb
-DECLARE $Value Text(7) -- String
-SET     $Value = 'value 1'u
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Stamp Int32
-SET     $Stamp = -10
+DECLARE Value Text(7) -- String
+SET     Value = 'value 1'u
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Stamp Int32
+SET     Stamp = -10
 
 UPDATE
 	ConcurrencyFiltered
@@ -53,12 +53,12 @@ FROM
 	ConcurrencyFiltered t1
 
 -- YDB Ydb
-DECLARE $Value Text(7) -- String
-SET     $Value = 'value 2'u
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Stamp Int32
-SET     $Stamp = -10
+DECLARE Value Text(7) -- String
+SET     Value = 'value 2'u
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Stamp Int32
+SET     Stamp = -10
 
 UPDATE
 	ConcurrencyFiltered
@@ -78,10 +78,10 @@ FROM
 	ConcurrencyFiltered t1
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Stamp Int32
-SET     $Stamp = -9
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Stamp Int32
+SET     Stamp = -9
 
 DELETE FROM
 	ConcurrencyFiltered
@@ -98,10 +98,10 @@ FROM
 	ConcurrencyFiltered t1
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Stamp Int32
-SET     $Stamp = -9
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Stamp Int32
+SET     Stamp = -9
 
 DELETE FROM
 	ConcurrencyFiltered

@@ -9,12 +9,12 @@ CREATE TABLE FluentTemp_Cache
 )
 
 -- YDB Ydb
-DECLARE $ID Int32
-SET     $ID = 1
-DECLARE $Name Text(4) -- String
-SET     $Name = 'John'u
-DECLARE $LastName Text(3) -- String
-SET     $LastName = 'Doe'u
+DECLARE ID Int32
+SET     ID = 1
+DECLARE Name Text(4) -- String
+SET     Name = 'John'u
+DECLARE LastName Text(3) -- String
+SET     LastName = 'Doe'u
 
 INSERT INTO FluentTemp_Cache
 (
@@ -53,12 +53,12 @@ CREATE TABLE FluentTemp_Cache
 )
 
 -- YDB Ydb
-DECLARE $ID Int32
-SET     $ID = 1
-DECLARE $Name Text(4) -- String
-SET     $Name = 'John'u
-DECLARE $LastName Text(3) -- String
-SET     $LastName = 'Doe'u
+DECLARE ID Int32
+SET     ID = 1
+DECLARE Name Text(4) -- String
+SET     Name = 'John'u
+DECLARE LastName Text(3) -- String
+SET     LastName = 'Doe'u
 
 INSERT INTO FluentTemp_Cache
 (
@@ -97,12 +97,12 @@ CREATE TABLE FluentTemp_Cache
 )
 
 -- YDB Ydb
-DECLARE $ID Int32
-SET     $ID = 1
-DECLARE $Name Text(4) -- String
-SET     $Name = 'John'u
-DECLARE $LastName Text(3) -- String
-SET     $LastName = 'Doe'u
+DECLARE ID Int32
+SET     ID = 1
+DECLARE Name Text(4) -- String
+SET     Name = 'John'u
+DECLARE LastName Text(3) -- String
+SET     LastName = 'Doe'u
 
 INSERT INTO FluentTemp_Cache
 (
@@ -141,12 +141,12 @@ CREATE TABLE FluentTemp_Cache
 )
 
 -- YDB Ydb
-DECLARE $ID Int32
-SET     $ID = 1
-DECLARE $Name Text(4) -- String
-SET     $Name = 'John'u
-DECLARE $LastName Text(3) -- String
-SET     $LastName = 'Doe'u
+DECLARE ID Int32
+SET     ID = 1
+DECLARE Name Text(4) -- String
+SET     Name = 'John'u
+DECLARE LastName Text(3) -- String
+SET     LastName = 'Doe'u
 
 INSERT INTO FluentTemp_Cache
 (
