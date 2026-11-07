@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $suffix Text(3) -- String
-SET     $suffix = 'Жук'u
+DECLARE suffix Text(3) -- String
+SET     suffix = 'Жук'u
 
 SELECT
 	t.Id as Id,
