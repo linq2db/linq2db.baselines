@@ -1,8 +1,8 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
 SELECT
 	[r].[Id],
-	Sgn([r].[D]) * Int(Abs([r].[D]) + 0.5),
-	Sgn([r].[D]) * (Int(Abs([r].[D]) * (10 ^ [r].[P]) + 0.5) / (10 ^ [r].[P])),
+	Sgn([r].[D]) * (Int(Abs([r].[D])) + Int((Abs([r].[D]) - Int(Abs([r].[D]))) * 2)),
+	Sgn([r].[D]) * ((Int(Abs([r].[D]) * (10 ^ [r].[P])) + Int((Abs([r].[D]) * (10 ^ [r].[P]) - Int(Abs([r].[D]) * (10 ^ [r].[P]))) * 2)) / (10 ^ [r].[P])),
 	Round([r].[D], 0),
 	Round([r].[D], [r].[P])
 FROM

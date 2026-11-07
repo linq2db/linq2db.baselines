@@ -1,6 +1,6 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
 SELECT
-	Sgn([p].[MoneyValue]) * (Int(Abs([p].[MoneyValue]) * (10 ^ 5) + 0.5) / (10 ^ 5)) + [p].[MoneyValue]
+	Sgn([p].[MoneyValue]) * ((Int(Abs([p].[MoneyValue]) * (10 ^ 5)) + Int((Abs([p].[MoneyValue]) * (10 ^ 5) - Int(Abs([p].[MoneyValue]) * (10 ^ 5))) * 2)) / (10 ^ 5)) + [p].[MoneyValue]
 FROM
 	[LinqDataTypes] [p]
 WHERE
