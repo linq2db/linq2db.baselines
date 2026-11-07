@@ -2,16 +2,16 @@
 SELECT
 	Nvl((
 		SELECT
-			SUM(t1.Key_1)
+			SUM(t1.RowNumber_1)
 		FROM
 			(
 				SELECT
-					ROW_NUMBER() OVER (PARTITION BY Mod(e.Key_1, 2) ORDER BY e.Key_1) as RowNumber,
-					e.Key_1
+					ROW_NUMBER() OVER (PARTITION BY Mod(e.RowNumber, 2) ORDER BY e.RowNumber) as RowNumber,
+					e.RowNumber as RowNumber_1
 				FROM
 					(
 						SELECT DISTINCT
-							g_1.ChildID as Key_1
+							g_1.ChildID as RowNumber
 						FROM
 							Child g_1
 						WHERE

@@ -21,7 +21,6 @@ FROM
 			g_2.Length_1
 		ORDER BY
 			g_2.Length_1,
-			g_2.Key_1 || 'x' DESC,
 			g_2.Key_1 || 'x' DESC
 	) t1
 ORDER BY

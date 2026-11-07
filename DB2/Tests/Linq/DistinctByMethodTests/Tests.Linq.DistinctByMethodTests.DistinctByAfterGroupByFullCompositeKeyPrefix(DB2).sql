@@ -1,18 +1,18 @@
 ﻿-- DB2 DB2.LUW DB2LUW
 SELECT
-	"t1"."Parity",
-	"t1"."RowNumber_1"
+	"t1"."RowNumber_1",
+	"t1"."RowNumber_2"
 FROM
 	(
 		SELECT
-			ROW_NUMBER() OVER (PARTITION BY "e"."Parity" ORDER BY "e"."Parity", "e"."RowNumber" NULLS FIRST) as "RowNumber",
-			"e"."Parity",
-			"e"."RowNumber" as "RowNumber_1"
+			ROW_NUMBER() OVER (PARTITION BY "e"."RowNumber" ORDER BY "e"."RowNumber", "e"."RowNumber_1" NULLS FIRST) as "RowNumber",
+			"e"."RowNumber" as "RowNumber_1",
+			"e"."RowNumber_1" as "RowNumber_2"
 		FROM
 			(
 				SELECT DISTINCT
-					Mod("g_1"."ParentID", 2) as "Parity",
-					"g_1"."Value1" as "RowNumber"
+					Mod("g_1"."ParentID", 2) as "RowNumber",
+					"g_1"."Value1" as "RowNumber_1"
 				FROM
 					"Parent" "g_1"
 			) "e"
@@ -20,8 +20,8 @@ FROM
 WHERE
 	"t1"."RowNumber" = 1
 ORDER BY
-	"t1"."Parity",
-	"t1"."RowNumber_1" NULLS FIRST
+	"t1"."RowNumber_1",
+	"t1"."RowNumber_2" NULLS FIRST
 
 -- DB2 DB2.LUW DB2LUW
 SELECT

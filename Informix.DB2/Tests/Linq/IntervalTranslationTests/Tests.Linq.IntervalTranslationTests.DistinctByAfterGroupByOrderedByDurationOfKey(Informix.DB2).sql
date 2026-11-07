@@ -115,30 +115,26 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-DECLARE @RowNumber BigInt(8) -- Int64
-SET     @RowNumber = 100
+DECLARE @p BigInt(8) -- Int64
+SET     @p = 100
 
 SELECT
-	t1.Key_1,
+	t1.RowNumber_2,
 	t1.Count_1
 FROM
 	(
 		SELECT
-			ROW_NUMBER() OVER (PARTITION BY CASE
-				WHEN e.Key_1 > @RowNumber::BigInt THEN 't'::BOOLEAN
-				ELSE 'f'::BOOLEAN
-			END ORDER BY e.RowNumber DESC, e.Key_1) as RowNumber,
-			e.RowNumber as RowNumber_1,
-			e.Key_1,
-			e.Count_1,
-			e.c1
+			ROW_NUMBER() OVER (PARTITION BY e.RowNumber ORDER BY e.RowNumber_1 DESC, e.RowNumber_2) as RowNumber,
+			e.RowNumber_1,
+			e.RowNumber_2,
+			e.Count_1
 		FROM
 			(
 				SELECT
-					g_1.InSeconds as Key_1,
-					g_1.InSeconds::Float as RowNumber,
-					COUNT(*) as Count_1,
-					g_1.InSeconds::Float as c1
+					g_1.InSeconds > @p::BigInt as RowNumber,
+					g_1.InSeconds::Float as RowNumber_1,
+					g_1.InSeconds as RowNumber_2,
+					COUNT(*) as Count_1
 				FROM
 					DurationRow g_1
 				GROUP BY
@@ -149,6 +145,5 @@ WHERE
 	t1.RowNumber = 1
 ORDER BY
 	t1.RowNumber_1 DESC,
-	t1.Key_1,
-	t1.c1 DESC
+	t1.RowNumber_2
 

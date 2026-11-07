@@ -1,18 +1,19 @@
 ﻿-- DB2 DB2.LUW DB2LUW
 SELECT
-	"t1"."ParentID",
-	"t1"."Value1"
+	"t1"."RowNumber_2",
+	"t1"."RowNumber_1"
 FROM
 	(
 		SELECT
-			ROW_NUMBER() OVER (PARTITION BY "e_1"."Value1" ORDER BY Coalesce("e_1"."Value1", 0), "e_1"."ParentID" DESC) as "RowNumber",
-			"e_1"."Value1",
-			"e_1"."ParentID"
+			ROW_NUMBER() OVER (PARTITION BY "e_1"."RowNumber" ORDER BY "e_1"."RowNumber_1", "e_1"."RowNumber_2" DESC) as "RowNumber",
+			"e_1"."RowNumber" as "RowNumber_1",
+			"e_1"."RowNumber_2"
 		FROM
 			(
 				SELECT
-					"e"."Value1",
-					"e"."ParentID"
+					"e"."Value1" as "RowNumber",
+					Coalesce("e"."Value1", 0) as "RowNumber_1",
+					"e"."ParentID" as "RowNumber_2"
 				FROM
 					"Parent" "e"
 				ORDER BY
@@ -24,8 +25,8 @@ FROM
 WHERE
 	"t1"."RowNumber" = 1
 ORDER BY
-	Coalesce("t1"."Value1", 0),
-	"t1"."ParentID" DESC
+	Coalesce("t1"."RowNumber_1", 0),
+	"t1"."RowNumber_2" DESC
 
 -- DB2 DB2.LUW DB2LUW
 SELECT

@@ -3,19 +3,20 @@ DECLARE @take Integer(4) -- Int32
 SET     @take = 4
 
 SELECT
-	t1.ParentID,
-	t1.Value1
+	t1.RowNumber_2,
+	t1.RowNumber_1
 FROM
 	(
 		SELECT
-			ROW_NUMBER() OVER (PARTITION BY e_1.Value1 ORDER BY Nvl(e_1.Value1, 0), e_1.ParentID DESC) as RowNumber,
-			e_1.Value1,
-			e_1.ParentID
+			ROW_NUMBER() OVER (PARTITION BY e_1.RowNumber ORDER BY e_1.RowNumber_1, e_1.RowNumber_2 DESC) as RowNumber,
+			e_1.RowNumber as RowNumber_1,
+			e_1.RowNumber_2
 		FROM
 			(
 				SELECT FIRST @take
-					e.Value1,
-					e.ParentID
+					e.Value1 as RowNumber,
+					Nvl(e.Value1, 0) as RowNumber_1,
+					e.ParentID as RowNumber_2
 				FROM
 					Parent e
 				ORDER BY
@@ -26,8 +27,8 @@ FROM
 WHERE
 	t1.RowNumber = 1
 ORDER BY
-	Nvl(t1.Value1, 0),
-	t1.ParentID DESC
+	Nvl(t1.RowNumber_1, 0),
+	t1.RowNumber_2 DESC
 
 -- Informix.DB2 Informix
 SELECT

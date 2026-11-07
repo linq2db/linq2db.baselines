@@ -21,12 +21,12 @@ FROM
 			) g_2
 		ORDER BY
 			g_2.Key_1 % 2,
-			g_2.c1,
-			g_2.Key_1 DESC
+			g_2.c1 DESC,
+			g_2.Key_1
 	) t1
 ORDER BY
-	t1.c1,
-	t1.Key_1 DESC
+	t1.c1 DESC,
+	t1.Key_1
 
 -- DuckDB
 SELECT

@@ -5,9 +5,9 @@ FROM
 	(
 		SELECT
 			ROW_NUMBER() OVER (PARTITION BY "e"."Group" ORDER BY "e"."Priority", "e"."Id") as "RowNumber",
-			"e"."Priority",
-			"e"."Id",
-			"e"."Group" as "Group_1"
+			"e"."Group" as "Group_1",
+			"e"."Priority" as "RowNumber_1",
+			"e"."Id"
 		FROM
 			"TestData" "e"
 	) "x"
@@ -15,7 +15,7 @@ WHERE
 	"x"."RowNumber" = 1
 ORDER BY
 	"x"."Group_1",
-	"x"."Priority",
+	"x"."RowNumber_1",
 	"x"."Id"
 
 -- DB2 DB2.LUW DB2LUW
@@ -25,9 +25,9 @@ FROM
 	(
 		SELECT
 			ROW_NUMBER() OVER (PARTITION BY "e"."Group" ORDER BY "e"."Priority", "e"."Id") as "RowNumber",
-			"e"."Priority",
-			"e"."Id",
-			"e"."Group" as "Group_1"
+			"e"."Group" as "Group_1",
+			"e"."Priority" as "RowNumber_1",
+			"e"."Id"
 		FROM
 			"TestData" "e"
 	) "x"
@@ -35,6 +35,6 @@ WHERE
 	"x"."RowNumber" = 1
 ORDER BY
 	"x"."Group_1",
-	"x"."Priority",
+	"x"."RowNumber_1",
 	"x"."Id"
 
