@@ -31,7 +31,8 @@ FROM
 WHERE
 	t1.RowNumber = toInt64(1)
 ORDER BY
-	t1.RowNumber_2
+	t1.RowNumber_2,
+	t1.RowNumber_3
 
 -- ClickHouse.MySql ClickHouse
 SELECT
