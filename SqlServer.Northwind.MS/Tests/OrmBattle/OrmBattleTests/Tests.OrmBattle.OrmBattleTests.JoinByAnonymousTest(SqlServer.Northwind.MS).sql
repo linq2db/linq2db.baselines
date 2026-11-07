@@ -6,5 +6,5 @@ FROM
 	[Customers] [c_1]
 		CROSS JOIN [Orders] [o]
 WHERE
-	[o].[CustomerID] = [c_1].[CustomerID] AND [c_1].[ContactName] = [c_1].[ContactName]
+	[o].[CustomerID] = [c_1].[CustomerID] AND [c_1].[ContactName] IS NOT NULL
 

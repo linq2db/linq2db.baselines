@@ -477,10 +477,6 @@ CREATE TABLE AllTypes
 
 
 
-
-
-
-
 	datetime2DataType        datetime2         NULL,
 	datetimeoffsetDataType   datetimeoffset    NULL,
 	datetimeoffset0DataType  datetimeoffset(0) NULL,
