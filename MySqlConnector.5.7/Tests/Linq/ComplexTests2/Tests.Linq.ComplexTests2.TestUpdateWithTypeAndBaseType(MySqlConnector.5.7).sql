@@ -1,0 +1,240 @@
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @Id Int32
+SET     @Id = 1
+DECLARE @Xy VarChar(5) -- String
+SET     @Xy = 'Hallo'
+
+INSERT INTO `ComplexEyes`
+(
+	`Id`,
+	`Xy`
+)
+VALUES
+(
+	@Id,
+	@Xy
+)
+
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @AnimalType VarChar(3) -- String
+SET     @AnimalType = 'Big'
+DECLARE @AnimalType2 VarChar(3) -- String
+SET     @AnimalType2 = 'Big'
+DECLARE @Id Int32
+SET     @Id = 1
+DECLARE @Name VarChar(8) -- String
+SET     @Name = 'FirstDog'
+DECLARE @Discriminator VarChar(3) -- String
+SET     @Discriminator = 'Dog'
+DECLARE @EyeId Int32
+SET     @EyeId = 1
+DECLARE @DogName_Second VarChar(1) -- String
+SET     @DogName_Second = 'b'
+DECLARE @DogName_First VarChar(1) -- String
+SET     @DogName_First = 'a'
+
+INSERT INTO `ComplexAnimals`
+(
+	`AnimalType`,
+	`AnimalType2`,
+	`Id`,
+	`Name`,
+	`Discriminator`,
+	`EyeId`,
+	`Second`,
+	`First`
+)
+VALUES
+(
+	@AnimalType,
+	@AnimalType2,
+	@Id,
+	@Name,
+	@Discriminator,
+	@EyeId,
+	@DogName_Second,
+	@DogName_First
+)
+
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @AnimalType VarChar(3) -- String
+SET     @AnimalType = 'Big'
+DECLARE @AnimalType2 VarChar(3) -- String
+SET     @AnimalType2 = 'Big'
+DECLARE @Id Int32
+SET     @Id = 2
+DECLARE @Name VarChar(10) -- String
+SET     @Name = 'WildAnimal'
+DECLARE @Discriminator VarChar(10) -- String
+SET     @Discriminator = 'WildAnimal'
+
+INSERT INTO `ComplexAnimals`
+(
+	`AnimalType`,
+	`AnimalType2`,
+	`Id`,
+	`Name`,
+	`Discriminator`
+)
+VALUES
+(
+	@AnimalType,
+	@AnimalType2,
+	@Id,
+	@Name,
+	@Discriminator
+)
+
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @Id Int32
+SET     @Id = 1
+DECLARE @TestAnimalId Int32
+SET     @TestAnimalId = NULL
+
+INSERT INTO `TestAnimalTable`
+(
+	`Id`,
+	`TestAnimalId`
+)
+VALUES
+(
+	@Id,
+	@TestAnimalId
+)
+
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @Id Int32
+SET     @Id = 2
+DECLARE @TestAnimalId Int32
+SET     @TestAnimalId = 1
+
+INSERT INTO `TestAnimalTable`
+(
+	`Id`,
+	`TestAnimalId`
+)
+VALUES
+(
+	@Id,
+	@TestAnimalId
+)
+
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+SELECT
+	`t1`.`AnimalType`,
+	`t1`.`AnimalType2`,
+	`t1`.`Id`,
+	`t1`.`Name`,
+	`t1`.`Discriminator`,
+	`t1`.`EyeId`,
+	`t1`.`Second`,
+	`t1`.`First`
+FROM
+	`ComplexAnimals` `t1`
+WHERE
+	`t1`.`Discriminator` = 'Dog'
+LIMIT 1
+
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @AnimalType VarChar(3) -- String
+SET     @AnimalType = 'Big'
+DECLARE @AnimalType2 VarChar(3) -- String
+SET     @AnimalType2 = 'Big'
+DECLARE @Name VarChar(8) -- String
+SET     @Name = 'FirstDog'
+DECLARE @Discriminator VarChar(3) -- String
+SET     @Discriminator = 'Dog'
+DECLARE @EyeId Int32
+SET     @EyeId = 1
+DECLARE @DogName_Second VarChar(1) -- String
+SET     @DogName_Second = 'b'
+DECLARE @DogName_First VarChar(1) -- String
+SET     @DogName_First = 'a'
+DECLARE @Id Int32
+SET     @Id = 1
+
+UPDATE
+	`ComplexAnimals` `t1`
+SET
+	`t1`.`AnimalType` = @AnimalType,
+	`t1`.`AnimalType2` = @AnimalType2,
+	`t1`.`Name` = @Name,
+	`t1`.`Discriminator` = @Discriminator,
+	`t1`.`EyeId` = @EyeId,
+	`t1`.`Second` = @DogName_Second,
+	`t1`.`First` = @DogName_First
+WHERE
+	`t1`.`Id` = @Id
+
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @AnimalType VarChar(3) -- String
+SET     @AnimalType = 'Big'
+DECLARE @AnimalType2 VarChar(3) -- String
+SET     @AnimalType2 = 'Big'
+DECLARE @Name VarChar(8) -- String
+SET     @Name = 'FirstDog'
+DECLARE @Discriminator VarChar(3) -- String
+SET     @Discriminator = 'Dog'
+DECLARE @EyeId Int32
+SET     @EyeId = 1
+DECLARE @DogName_Second VarChar(1) -- String
+SET     @DogName_Second = 'b'
+DECLARE @DogName_First VarChar(1) -- String
+SET     @DogName_First = 'a'
+DECLARE @Id Int32
+SET     @Id = 1
+
+UPDATE
+	`ComplexAnimals` `t1`
+SET
+	`t1`.`AnimalType` = @AnimalType,
+	`t1`.`AnimalType2` = @AnimalType2,
+	`t1`.`Name` = @Name,
+	`t1`.`Discriminator` = @Discriminator,
+	`t1`.`EyeId` = @EyeId,
+	`t1`.`Second` = @DogName_Second,
+	`t1`.`First` = @DogName_First
+WHERE
+	`t1`.`Id` = @Id
+
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @AnimalType VarChar(5) -- String
+SET     @AnimalType = 'Small'
+DECLARE @AnimalType2 VarChar(5) -- String
+SET     @AnimalType2 = 'Small'
+DECLARE @Id Int32
+SET     @Id = 0
+DECLARE @Name VarChar -- String
+SET     @Name = NULL
+DECLARE @Discriminator VarChar(3) -- String
+SET     @Discriminator = 'Dog'
+DECLARE @EyeId Int32
+SET     @EyeId = NULL
+DECLARE @DogName_Second VarChar -- String
+SET     @DogName_Second = NULL
+DECLARE @DogName_First VarChar -- String
+SET     @DogName_First = NULL
+
+INSERT INTO `ComplexAnimals`
+(
+	`AnimalType`,
+	`AnimalType2`,
+	`Id`,
+	`Name`,
+	`Discriminator`,
+	`EyeId`,
+	`Second`,
+	`First`
+)
+VALUES
+(
+	@AnimalType,
+	@AnimalType2,
+	@Id,
+	@Name,
+	@Discriminator,
+	@EyeId,
+	@DogName_Second,
+	@DogName_First
+)
+

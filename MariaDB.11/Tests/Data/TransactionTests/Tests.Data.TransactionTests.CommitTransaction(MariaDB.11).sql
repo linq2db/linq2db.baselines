@@ -23,7 +23,6 @@ SET
 WHERE
 	`t`.`ParentID` = 1010
 
-CommitTransaction
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 SELECT
 	`t`.`ParentID`,
