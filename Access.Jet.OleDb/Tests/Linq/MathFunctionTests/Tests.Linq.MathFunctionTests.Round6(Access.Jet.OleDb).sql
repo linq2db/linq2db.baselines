@@ -4,7 +4,7 @@ SELECT
 FROM
 	(
 		SELECT
-			IIF([p].[MoneyValue] >= 0, Int([p].[MoneyValue] + 0.5), Int([p].[MoneyValue] - 0.5)) as [c1]
+			Sgn([p].[MoneyValue]) * Int(Abs([p].[MoneyValue]) + 0.5) as [c1]
 		FROM
 			[LinqDataTypes] [p]
 	) [t]

@@ -5,8 +5,7 @@ FROM
 	(
 		SELECT
 			CASE
-				WHEN p."MoneyValue" - FLOOR(p."MoneyValue") = 0.5D AND MOD(FLOOR(p."MoneyValue"), 2) = 0
-					THEN FLOOR(p."MoneyValue")
+				WHEN p."MoneyValue" - FLOOR(p."MoneyValue") = 0.5D THEN ROUND(p."MoneyValue" * 0.5D, 0) * 2
 				ELSE ROUND(p."MoneyValue", 0)
 			END as "c1"
 		FROM
