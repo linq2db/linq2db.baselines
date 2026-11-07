@@ -5,18 +5,17 @@ SELECT
 FROM
 	(
 		SELECT
-			ROW_NUMBER() OVER (PARTITION BY MOD(Coalesce("e"."Key_1", 0), 2) ORDER BY "e"."RowNumber" DESC) as "RowNumber",
-			"e"."RowNumber" as "RowNumber_1",
+			ROW_NUMBER() OVER (PARTITION BY "e"."RowNumber" ORDER BY "e"."RowNumber_1" DESC) as "RowNumber",
+			"e"."RowNumber_1",
 			"e"."Key_1",
-			"e"."Count_1",
-			"e"."c1"
+			"e"."Count_1"
 		FROM
 			(
 				SELECT
+					MOD(Coalesce("g_1"."Value1", 0), 2) as "RowNumber",
+					Coalesce("g_1"."Value1", 0) as "RowNumber_1",
 					"g_1"."Value1" as "Key_1",
-					Coalesce("g_1"."Value1", 0) as "RowNumber",
-					COUNT(*) as "Count_1",
-					Coalesce("g_1"."Value1", 0) as "c1"
+					COUNT(*) as "Count_1"
 				FROM
 					"Parent" "g_1"
 				GROUP BY
@@ -26,8 +25,7 @@ FROM
 WHERE
 	"t1"."RowNumber" = 1
 ORDER BY
-	"t1"."RowNumber_1" DESC,
-	"t1"."c1" DESC
+	"t1"."RowNumber_1" DESC
 
 -- SapHana.Native SapHana
 SELECT

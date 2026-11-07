@@ -5,13 +5,13 @@ FROM
 	(
 		SELECT
 			ROW_NUMBER() OVER (PARTITION BY "e"."Value1" ORDER BY "e"."ParentID" DESC) as "RowNumber",
-			"e"."ParentID",
-			"e"."Value1"
+			"e"."Value1",
+			"e"."ParentID" as "RowNumber_1"
 		FROM
 			"Parent" "e"
 	) "x"
 WHERE
 	"x"."RowNumber" = 1
 ORDER BY
-	"x"."ParentID" DESC
+	"x"."RowNumber_1" DESC
 

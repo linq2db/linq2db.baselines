@@ -9,14 +9,9 @@ SELECT
 					ROW_NUMBER() OVER (PARTITION BY MOD("e"."ChildID", 2) ORDER BY -"e"."ChildID") as "RowNumber",
 					"e"."ChildID" as "Entity"
 				FROM
-					(
-						SELECT
-							"g_1"."ChildID"
-						FROM
-							"Child" "g_1"
-						WHERE
-							"g_1"."ParentID" = "p"."ParentID"
-					) "e"
+					"Child" "e"
+				WHERE
+					"e"."ParentID" = "p"."ParentID"
 				GROUP BY
 					"p"."ParentID",
 					"e"."ChildID"
