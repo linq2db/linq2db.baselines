@@ -1,7 +1,7 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
 SELECT
 	[r].[Id],
-	Sgn([r].[F]) * (Int(Abs([r].[F]) * (10 ^ [r].[P]) + 0.5) / (10 ^ [r].[P])),
+	Sgn([r].[F]) * ((Int(Abs([r].[F]) * (10 ^ [r].[P])) + Int((Abs([r].[F]) * (10 ^ [r].[P]) - Int(Abs([r].[F]) * (10 ^ [r].[P]))) * 2)) / (10 ^ [r].[P])),
 	[r].[F],
 	Round([r].[F], [r].[P])
 FROM

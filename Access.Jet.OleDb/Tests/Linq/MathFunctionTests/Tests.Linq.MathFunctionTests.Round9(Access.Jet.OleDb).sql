@@ -4,7 +4,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Sgn([p].[MoneyValue]) * (Int(Abs([p].[MoneyValue]) * (10 ^ 1) + 0.5) / (10 ^ 1)) as [c1]
+			Sgn([p].[MoneyValue]) * ((Int(Abs([p].[MoneyValue]) * (10 ^ 1)) + Int((Abs([p].[MoneyValue]) * (10 ^ 1) - Int(Abs([p].[MoneyValue]) * (10 ^ 1))) * 2)) / (10 ^ 1)) as [c1]
 		FROM
 			[LinqDataTypes] [p]
 	) [t]
