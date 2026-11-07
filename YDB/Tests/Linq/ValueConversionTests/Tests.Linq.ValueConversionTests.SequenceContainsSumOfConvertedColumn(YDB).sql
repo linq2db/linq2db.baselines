@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $total Int32
-SET     $total = 700
+DECLARE total Int32
+SET     total = 700
 
 $CTE_1 = 	SELECT
 		SUM(g_1.Cents) as Sum_1
