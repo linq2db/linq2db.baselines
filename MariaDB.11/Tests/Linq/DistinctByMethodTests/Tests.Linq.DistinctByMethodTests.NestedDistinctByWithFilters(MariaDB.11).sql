@@ -31,7 +31,8 @@ FROM
 WHERE
 	`t1`.`RowNumber` = 1
 ORDER BY
-	`t1`.`RowNumber_2`
+	`t1`.`RowNumber_2`,
+	`t1`.`RowNumber_3`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 SELECT
