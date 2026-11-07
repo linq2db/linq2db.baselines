@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	IIF([c_1].[Kind] = N'C1', [c_1].[Kind], NULL)
 FROM
