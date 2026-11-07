@@ -1,0 +1,43 @@
+﻿-- SapHana.Native SapHana
+SELECT
+	current_schema
+FROM
+	"LinqDataTypes" "t1"
+LIMIT 1
+
+-- SapHana.Native SapHana
+DECLARE @ID Integer -- Int32
+SET     @ID = 5
+DECLARE @Value Integer -- Int32
+SET     @Value = 10
+
+UPSERT "LINKED_DB"."TESTDBNATIVE"."Issue681Table"
+(
+	"ID",
+	"Value"
+)
+VALUES
+(
+	:"ID",
+	:"Value"
+)
+WITH PRIMARY KEY
+
+-- SapHana.Native SapHana
+DECLARE @ID Integer -- Int32
+SET     @ID = 5
+DECLARE @Value Integer -- Int32
+SET     @Value = 10
+
+UPSERT "LINKED_DB"."TESTDBNATIVE"."Issue681Table"
+(
+	"ID",
+	"Value"
+)
+VALUES
+(
+	:"ID",
+	:"Value"
+)
+WITH PRIMARY KEY
+
