@@ -1,0 +1,48 @@
+﻿-- SqlServer.2025
+SELECT
+	[m_1].[ParentID],
+	[d].[ParentID],
+	[d].[ChildID]
+FROM
+	(
+		SELECT DISTINCT
+			[p].[ParentID]
+		FROM
+			[Parent] [p]
+		WHERE
+			[p].[ParentID] = 1
+	) [m_1]
+		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
+
+-- SqlServer.2025
+SELECT
+	[p].[ParentID]
+FROM
+	[Parent] [p]
+WHERE
+	[p].[ParentID] = 1
+
+-- SqlServer.2025
+SELECT
+	[m_1].[ParentID],
+	[d].[ParentID],
+	[d].[ChildID]
+FROM
+	(
+		SELECT DISTINCT
+			[p].[ParentID]
+		FROM
+			[Parent] [p]
+		WHERE
+			[p].[ParentID] = 1
+	) [m_1]
+		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
+
+-- SqlServer.2025
+SELECT
+	[p].[ParentID]
+FROM
+	[Parent] [p]
+WHERE
+	[p].[ParentID] = 1
+
