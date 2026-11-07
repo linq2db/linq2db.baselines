@@ -46,5 +46,5 @@ SELECT
 FROM
 	[SplitReplaceRow] [t]
 WHERE
-	(Coalesce(Replace([t].[Left], 'b', @replacement), '') || Coalesce(Replace([t].[Right], 'c', @replacement), '')) = @expected
+	Coalesce(Replace([t].[Left], 'b', @replacement), '') || Coalesce(Replace([t].[Right], 'c', @replacement), '') = @expected
 

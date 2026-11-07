@@ -5,9 +5,9 @@ SET     @suffix = 'Жук'
 SELECT
 	[t].[Id],
 	CASE
-		WHEN (Coalesce([t].[VarCharColumn], '') || Coalesce(@suffix, '')) > [t].[NVarCharColumn] OR [t].[NVarCharColumn] IS NULL
+		WHEN Coalesce([t].[VarCharColumn], '') || Coalesce(@suffix, '') > [t].[NVarCharColumn] OR [t].[NVarCharColumn] IS NULL
 			THEN 1
-		WHEN (Coalesce([t].[VarCharColumn], '') || Coalesce(@suffix, '')) = [t].[NVarCharColumn]
+		WHEN Coalesce([t].[VarCharColumn], '') || Coalesce(@suffix, '') = [t].[NVarCharColumn]
 			THEN 0
 		ELSE -1
 	END,
@@ -34,7 +34,7 @@ SELECT
 FROM
 	[StringTypesTable] [t]
 WHERE
-	(Coalesce([t].[VarCharColumn], '') || Coalesce(@suffix, '')) NOT LIKE '%?%'
+	Coalesce([t].[VarCharColumn], '') || Coalesce(@suffix, '') NOT LIKE '%?%'
 ORDER BY
 	[t].[Id]
 
