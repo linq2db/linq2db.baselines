@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[r].[Id],
 	RIGHT([r].[S], [r].[N])
@@ -7,7 +7,7 @@ FROM
 ORDER BY
 	[r].[Id]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[S],
@@ -15,7 +15,7 @@ SELECT
 FROM
 	[RightValues] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[r].[Id],
 	[r].[S],
@@ -25,7 +25,7 @@ FROM
 WHERE
 	RIGHT([r].[S], [r].[N]) = N'ohn'
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[S],
