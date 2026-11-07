@@ -15,7 +15,7 @@ SELECT
 FROM
 	"PlainAndConvertedUnicodeTable" "r"
 WHERE
-	("r"."Plain" || "r"."Conv") LIKE @read
+	"r"."Plain" || "r"."Conv" LIKE @read
 
 -- Firebird.2.5 Firebird
 DECLARE @read VarChar(6) -- String
@@ -26,5 +26,5 @@ SELECT
 FROM
 	"PlainAndConvertedUnicodeTable" "r"
 WHERE
-	("r"."Plain" || "r"."Conv") = @read
+	"r"."Plain" || "r"."Conv" = @read
 

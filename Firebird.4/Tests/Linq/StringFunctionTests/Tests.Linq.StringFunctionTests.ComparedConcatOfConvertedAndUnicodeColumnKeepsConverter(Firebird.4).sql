@@ -7,7 +7,7 @@ SELECT
 FROM
 	"PrefixedCodeWithTitleTable" "t"
 WHERE
-	(Coalesce("t"."Code", '') || Coalesce("t"."Title", '')) LIKE @Code
+	Coalesce("t"."Code", '') || Coalesce("t"."Title", '') LIKE @Code
 
 -- Firebird.4 Firebird4
 DECLARE @bound VarChar(4) -- String
@@ -18,7 +18,7 @@ SELECT
 FROM
 	"PrefixedCodeWithTitleTable" "t"
 WHERE
-	(Coalesce("t"."Code", '') || Coalesce("t"."Title", '')) = @bound
+	Coalesce("t"."Code", '') || Coalesce("t"."Title", '') = @bound
 
 -- Firebird.4 Firebird4
 DECLARE @bound VarChar(4) -- String
@@ -29,5 +29,5 @@ SELECT
 FROM
 	"PrefixedCodeWithTitleTable" "t"
 WHERE
-	(Coalesce("t"."Code", '') || Coalesce("t"."Title", '')) = @bound
+	Coalesce("t"."Code", '') || Coalesce("t"."Title", '') = @bound
 

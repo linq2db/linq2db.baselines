@@ -5,9 +5,9 @@ SET     @suffix = _utf8 x'D096D183D0BA'
 SELECT
 	"t"."Id",
 	CASE
-		WHEN (Coalesce("t"."VarCharColumn", '') || Coalesce(CAST(@suffix AS VARCHAR(6)), '')) > "t"."NVarCharColumn" OR "t"."NVarCharColumn" IS NULL
+		WHEN Coalesce("t"."VarCharColumn", '') || Coalesce(CAST(@suffix AS VARCHAR(6)), '') > "t"."NVarCharColumn" OR "t"."NVarCharColumn" IS NULL
 			THEN 1
-		WHEN (Coalesce("t"."VarCharColumn", '') || Coalesce(CAST(@suffix AS VARCHAR(6)), '')) = "t"."NVarCharColumn"
+		WHEN Coalesce("t"."VarCharColumn", '') || Coalesce(CAST(@suffix AS VARCHAR(6)), '') = "t"."NVarCharColumn"
 			THEN 0
 		ELSE -1
 	END,
@@ -34,7 +34,7 @@ SELECT
 FROM
 	"StringTypesTable" "t"
 WHERE
-	(Coalesce("t"."VarCharColumn", '') || Coalesce(CAST(@suffix AS VARCHAR(6)), '')) NOT LIKE '%?%'
+	Coalesce("t"."VarCharColumn", '') || Coalesce(CAST(@suffix AS VARCHAR(6)), '') NOT LIKE '%?%'
 ORDER BY
 	"t"."Id"
 
