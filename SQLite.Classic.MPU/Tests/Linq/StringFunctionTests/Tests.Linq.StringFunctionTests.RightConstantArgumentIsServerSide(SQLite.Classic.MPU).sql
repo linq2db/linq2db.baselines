@@ -1,6 +1,6 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 SELECT
-	SUBSTRING('John', LENGTH('John') - 2)
+	SUBSTRING('John', MAX(LENGTH('John') - 2, 1))
 FROM
 	[Person] [p]
 WHERE

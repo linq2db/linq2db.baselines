@@ -1,7 +1,7 @@
 ﻿-- SQLite.Classic SQLite
 SELECT
 	[r].[Id],
-	SUBSTRING([r].[S], LENGTH([r].[S]) - [r].[N] + 1)
+	SUBSTRING([r].[S], MAX(LENGTH([r].[S]) - [r].[N] + 1, 1))
 FROM
 	[RightValues] [r]
 ORDER BY
@@ -23,7 +23,7 @@ SELECT
 FROM
 	[RightValues] [r]
 WHERE
-	SUBSTRING([r].[S], LENGTH([r].[S]) - [r].[N] + 1) = 'ohn'
+	SUBSTRING([r].[S], MAX(LENGTH([r].[S]) - [r].[N] + 1, 1)) = 'ohn'
 
 -- SQLite.Classic SQLite
 SELECT
