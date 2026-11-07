@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DECLARE @doe NVarChar(4000) -- String
 SET     @doe = N'Doe'
 
@@ -10,7 +10,7 @@ FROM
 			([p].[FirstName]), ([p].[LastName]), (N'John'), (@doe)
 		) [n]([item])
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @doe NVarChar(4000) -- String
 SET     @doe = N'Doe1'
 

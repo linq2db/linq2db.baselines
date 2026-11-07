@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT DISTINCT
 	[gc].[GrandChildID],
 	[a_Parent].[Value1]
@@ -9,7 +9,7 @@ FROM
 ORDER BY
 	[gc].[GrandChildID]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID],

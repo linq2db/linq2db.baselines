@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[BoolValue],
@@ -6,7 +6,7 @@ SELECT
 FROM
 	[WhereCases] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t].[Id],
 	[t].[BoolValue],
@@ -16,7 +16,7 @@ FROM
 WHERE
 	[t].[BoolValue] = 0 AND [t].[Id] > 0
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t].[Id],
 	[t].[BoolValue],
@@ -26,7 +26,7 @@ FROM
 WHERE
 	NOT ([t].[BoolValue] = 0 AND [t].[Id] > 0)
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t].[Id],
 	[t].[BoolValue],
@@ -36,7 +36,7 @@ FROM
 WHERE
 	[t].[BoolValue] = 1 AND [t].[Id] > 0
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t].[Id],
 	[t].[BoolValue],
@@ -46,7 +46,7 @@ FROM
 WHERE
 	NOT ([t].[BoolValue] = 1 AND [t].[Id] > 0)
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t].[Id],
 	[t].[BoolValue],
@@ -56,7 +56,7 @@ FROM
 WHERE
 	[t].[BoolValue] = 1 AND [t].[Id] > 0
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t].[Id],
 	[t].[BoolValue],
@@ -66,7 +66,7 @@ FROM
 WHERE
 	NOT ([t].[BoolValue] = 1 AND [t].[Id] > 0)
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t].[Id],
 	[t].[BoolValue],
@@ -76,7 +76,7 @@ FROM
 WHERE
 	[t].[BoolValue] = 0 AND [t].[Id] > 0
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t].[Id],
 	[t].[BoolValue],
@@ -86,7 +86,7 @@ FROM
 WHERE
 	NOT ([t].[BoolValue] = 0 AND [t].[Id] > 0)
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t].[Id],
 	[t].[BoolValue],
@@ -96,7 +96,7 @@ FROM
 WHERE
 	[t].[BoolValue] = 0 AND [t].[Id] > 0
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t].[Id],
 	[t].[BoolValue],
@@ -106,7 +106,7 @@ FROM
 WHERE
 	NOT ([t].[BoolValue] = 0 AND [t].[Id] > 0)
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t].[Id],
 	[t].[BoolValue],
@@ -117,7 +117,7 @@ WHERE
 	([t].[NullableBoolValue] = 0 OR [t].[NullableBoolValue] IS NULL) AND
 	[t].[Id] > 0
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t].[Id],
 	[t].[BoolValue],
@@ -127,7 +127,7 @@ FROM
 WHERE
 	NOT (([t].[NullableBoolValue] = 0 OR [t].[NullableBoolValue] IS NULL) AND [t].[Id] > 0)
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t].[Id],
 	[t].[BoolValue],
@@ -137,7 +137,7 @@ FROM
 WHERE
 	[t].[NullableBoolValue] = 1 AND [t].[Id] > 0
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t].[Id],
 	[t].[BoolValue],
@@ -147,7 +147,7 @@ FROM
 WHERE
 	NOT ([t].[NullableBoolValue] = 1 AND [t].[NullableBoolValue] IS NOT NULL AND [t].[Id] > 0)
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t].[Id],
 	[t].[BoolValue],
@@ -157,7 +157,7 @@ FROM
 WHERE
 	[t].[NullableBoolValue] = 1 AND [t].[Id] > 0
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t].[Id],
 	[t].[BoolValue],
@@ -167,7 +167,7 @@ FROM
 WHERE
 	NOT ([t].[NullableBoolValue] = 1 AND [t].[NullableBoolValue] IS NOT NULL AND [t].[Id] > 0)
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t].[Id],
 	[t].[BoolValue],
@@ -177,7 +177,7 @@ FROM
 WHERE
 	[t].[NullableBoolValue] IS NULL AND [t].[Id] > 0
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t].[Id],
 	[t].[BoolValue],
@@ -187,7 +187,7 @@ FROM
 WHERE
 	NOT ([t].[NullableBoolValue] IS NULL AND [t].[Id] > 0)
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t].[Id],
 	[t].[BoolValue],
@@ -197,7 +197,7 @@ FROM
 WHERE
 	[t].[NullableBoolValue] IS NOT NULL AND [t].[Id] > 0
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t].[Id],
 	[t].[BoolValue],
@@ -207,7 +207,7 @@ FROM
 WHERE
 	NOT ([t].[NullableBoolValue] IS NOT NULL AND [t].[Id] > 0)
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t].[Id],
 	[t].[BoolValue],
@@ -217,7 +217,7 @@ FROM
 WHERE
 	[t].[NullableBoolValue] IS NOT NULL AND [t].[Id] > 0
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t].[Id],
 	[t].[BoolValue],
@@ -227,7 +227,7 @@ FROM
 WHERE
 	NOT ([t].[NullableBoolValue] IS NOT NULL AND [t].[Id] > 0)
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t].[Id],
 	[t].[BoolValue],
@@ -237,7 +237,7 @@ FROM
 WHERE
 	[t].[NullableBoolValue] IS NULL AND [t].[Id] > 0
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t].[Id],
 	[t].[BoolValue],
@@ -247,7 +247,7 @@ FROM
 WHERE
 	NOT ([t].[NullableBoolValue] IS NULL AND [t].[Id] > 0)
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t].[Id],
 	[t].[BoolValue],
@@ -258,7 +258,7 @@ WHERE
 	[t].[BoolValue] = 0 AND ([t].[NullableBoolValue] = 0 OR [t].[NullableBoolValue] IS NULL) AND
 	[t].[Id] > 0
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t].[Id],
 	[t].[BoolValue],
@@ -268,7 +268,7 @@ FROM
 WHERE
 	NOT ([t].[BoolValue] = 0 AND ([t].[NullableBoolValue] = 0 OR [t].[NullableBoolValue] IS NULL) AND [t].[Id] > 0)
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t].[Id],
 	[t].[BoolValue],
@@ -279,7 +279,7 @@ WHERE
 	NOT ([t].[BoolValue] = 0 AND ([t].[NullableBoolValue] = 0 OR [t].[NullableBoolValue] IS NULL)) AND
 	[t].[Id] > 0
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t].[Id],
 	[t].[BoolValue],
@@ -289,7 +289,7 @@ FROM
 WHERE
 	NOT (NOT ([t].[BoolValue] = 0 AND ([t].[NullableBoolValue] = 0 OR [t].[NullableBoolValue] IS NULL)) AND [t].[Id] > 0)
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t].[Id],
 	[t].[BoolValue],
@@ -300,7 +300,7 @@ WHERE
 	[t].[BoolValue] = 0 AND [t].[NullableBoolValue] = 0 AND
 	[t].[Id] > 0
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t].[Id],
 	[t].[BoolValue],
@@ -310,7 +310,7 @@ FROM
 WHERE
 	NOT ([t].[BoolValue] = 0 AND [t].[NullableBoolValue] = 0 AND [t].[NullableBoolValue] IS NOT NULL AND [t].[Id] > 0)
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t].[Id],
 	[t].[BoolValue],
@@ -321,7 +321,7 @@ WHERE
 	NOT ([t].[BoolValue] = 0 AND [t].[NullableBoolValue] = 0 AND [t].[NullableBoolValue] IS NOT NULL) AND
 	[t].[Id] > 0
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t].[Id],
 	[t].[BoolValue],

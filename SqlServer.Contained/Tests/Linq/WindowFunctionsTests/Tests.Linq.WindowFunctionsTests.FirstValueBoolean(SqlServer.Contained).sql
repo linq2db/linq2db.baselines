@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t].[Id],
 	FIRST_VALUE(IIF([t].[IntValue] = 20, 1, 0)) OVER (PARTITION BY [t].[CategoryId] ORDER BY [t].[Id]),

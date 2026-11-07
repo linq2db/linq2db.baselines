@@ -1,10 +1,10 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t].[c1]
 FROM
 	(
 		SELECT
-			IIF([p].[MoneyValue] <= 5, [p].[MoneyValue], 5) as [c1]
+			LEAST([p].[MoneyValue], 5) as [c1]
 		FROM
 			[LinqDataTypes] [p]
 	) [t]

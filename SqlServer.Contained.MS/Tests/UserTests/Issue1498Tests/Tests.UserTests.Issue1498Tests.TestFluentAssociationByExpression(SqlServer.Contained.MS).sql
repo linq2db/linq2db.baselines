@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 6
 DECLARE @Title NVarChar(4000) -- String
@@ -19,7 +19,7 @@ VALUES
 	@Text
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[m_1].[Id],
 	[d].[Id]
@@ -34,7 +34,7 @@ FROM
 	) [m_1]
 		INNER JOIN [Message] [d] ON [m_1].[Id] = [d].[TopicId]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT TOP (1)
 	[x].[Id],
 	[x].[Title],

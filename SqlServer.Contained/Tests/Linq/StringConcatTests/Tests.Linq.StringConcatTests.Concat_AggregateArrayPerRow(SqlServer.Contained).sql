@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t].[Id],
 	CONCAT_WS(N'', Coalesce([t].[Str1], N''), Coalesce([t].[Str2], N''), Coalesce([t].[StrReq], N''))
@@ -7,7 +7,7 @@ FROM
 ORDER BY
 	[t].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Str1],

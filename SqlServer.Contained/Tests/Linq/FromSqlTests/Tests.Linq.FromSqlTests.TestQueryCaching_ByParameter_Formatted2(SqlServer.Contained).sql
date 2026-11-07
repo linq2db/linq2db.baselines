@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DECLARE @value1 Int -- Int32
 SET     @value1 = NULL
 DECLARE @value2 Int -- Int32
@@ -12,7 +12,7 @@ FROM
 		SELECT @value1 as Value1, @value2 as Value2 /*TestQueryCaching_ByParameter_Formatted2*/
 	) [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @value1 Int -- Int32
 SET     @value1 = 1
 DECLARE @value2 Int -- Int32
@@ -26,7 +26,7 @@ FROM
 		SELECT @value1 as Value1, @value2 as Value2 /*TestQueryCaching_ByParameter_Formatted2*/
 	) [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @value1 Int -- Int32
 SET     @value1 = NULL
 DECLARE @value2 Int -- Int32
@@ -40,7 +40,7 @@ FROM
 		SELECT @value1 as Value1, @value2 as Value2 /*TestQueryCaching_ByParameter_Formatted2*/
 	) [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @value1 Int -- Int32
 SET     @value1 = 2
 DECLARE @value2 Int -- Int32
@@ -54,7 +54,7 @@ FROM
 		SELECT @value1 as Value1, @value2 as Value2 /*TestQueryCaching_ByParameter_Formatted2*/
 	) [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @value1 Int -- Int32
 SET     @value1 = 3
 DECLARE @value2 Int -- Int32

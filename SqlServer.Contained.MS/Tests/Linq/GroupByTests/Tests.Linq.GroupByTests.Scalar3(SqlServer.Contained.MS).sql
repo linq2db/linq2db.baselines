@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	MAX(IIF([g_1].[ChildID] > 0, [g_1].[ChildID], NULL))
 FROM

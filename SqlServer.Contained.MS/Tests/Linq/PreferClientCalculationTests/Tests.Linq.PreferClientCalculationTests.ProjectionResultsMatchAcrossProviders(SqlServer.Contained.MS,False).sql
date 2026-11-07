@@ -1,11 +1,11 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[e].[Id],
 	[e].[Value1] + 12345
 FROM
 	[ClientCalcEntity] [e]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -14,13 +14,13 @@ SELECT
 FROM
 	[ClientCalcEntity] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	IIF([e].[Id] > 1, [e].[Value1], [e].[Value2])
 FROM
 	[ClientCalcEntity] [e]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -29,13 +29,13 @@ SELECT
 FROM
 	[ClientCalcEntity] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	-[e].[Value1]
 FROM
 	[ClientCalcEntity] [e]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -44,13 +44,13 @@ SELECT
 FROM
 	[ClientCalcEntity] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[e].[Value1] + ABS([e].[Value2])
 FROM
 	[ClientCalcEntity] [e]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -59,14 +59,14 @@ SELECT
 FROM
 	[ClientCalcEntity] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[e].[Id],
-	Coalesce([e].[Name], N'') + N' ' + Coalesce([e].[Name], N'')
+	Coalesce([e].[Name], N'') || N' ' || Coalesce([e].[Name], N'')
 FROM
 	[ClientCalcEntity] [e]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value1],

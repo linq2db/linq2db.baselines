@@ -11,7 +11,7 @@ WHERE EXISTS (
 ORDER BY [i].[Id]
 
 
--- SqlServer.2019
+-- SqlServer.2025
 SELECT
 	[c_1].[Id]
 FROM

@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DECLARE @take Int -- Int32
 SET     @take = 10
 
@@ -16,14 +16,14 @@ FROM
 	) [c_2]
 		LEFT JOIN [Order] [o] ON [c_2].[Id] = [o].[CustomerId]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Name]
 FROM
 	[Customer] [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[CustomerId],

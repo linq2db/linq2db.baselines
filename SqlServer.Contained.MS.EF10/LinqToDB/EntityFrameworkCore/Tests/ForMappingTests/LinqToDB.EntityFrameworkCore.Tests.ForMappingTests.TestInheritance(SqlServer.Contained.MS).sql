@@ -15,7 +15,7 @@ VALUES (i.[Discriminator])
 OUTPUT INSERTED.[Id], i._Position;
 
 
--- SqlServer.2019
+-- SqlServer.2025
 SELECT
 	[t1].[Discriminator],
 	[t1].[Id]

@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @Code NVarChar(50) -- String
 SET     @Code = N'first'
 DECLARE @Key_Value Int -- Int32
@@ -15,7 +15,7 @@ VALUES
 	@Key_Value
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @Code NVarChar(50) -- String
 SET     @Code = N'skipped'
 DECLARE @Key_Value Int -- Int32
@@ -32,7 +32,7 @@ VALUES
 	@Key_Value
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 MERGE INTO [NestedKeyTarget] [Target]
 USING (VALUES
 	(1,N'first-updated')
@@ -49,7 +49,7 @@ SET
 	[Code] = [Source].[Code]
 ;
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Code],
 	[t1].[Id]

@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	DatePart(second, DateAdd(second, -35, [t].[DateTimeValue]))
 FROM

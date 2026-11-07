@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @p Time
 SET     @p = TIMEFROMPARTS(2, 0, 0, 0, 7)
 

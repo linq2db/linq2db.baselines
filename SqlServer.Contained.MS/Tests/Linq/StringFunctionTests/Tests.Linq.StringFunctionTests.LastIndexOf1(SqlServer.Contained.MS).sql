@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],
@@ -8,6 +8,6 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	(LEN([p].[LastName] + N'.') - 1) - CharIndex(N'p', Reverse([p].[LastName])) = 2 AND
+	(LEN([p].[LastName] || N'.') - 1) - CharIndex(N'p', Reverse([p].[LastName])) = 2 AND
 	CharIndex(N'p', [p].[LastName]) <> 0 AND [p].[PersonID] = 1
 

@@ -1,10 +1,10 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT TOP (2)
 	[r].[D]
 FROM
 	[DateTimeReadBackTable] [r]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @value DateTime
 SET     @value = DATETIME2FROMPARTS(2026, 6, 1, 10, 0, 0, 30000, 7)
 
@@ -15,7 +15,7 @@ FROM
 WHERE
 	[r].[D] = @value
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @value DateTime
 SET     @value = DATETIME2FROMPARTS(2026, 6, 1, 10, 0, 0, 30000, 7)
 
@@ -33,7 +33,7 @@ FROM
 			MAX([g_1].[D]) = @value
 	) [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @value DateTime
 SET     @value = DATETIME2FROMPARTS(2026, 6, 1, 10, 0, 0, 30000, 7)
 
@@ -51,7 +51,7 @@ FROM
 			MIN([g_1].[D]) = @value
 	) [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @value DateTime
 SET     @value = DATETIME2FROMPARTS(2026, 6, 1, 10, 0, 0, 30000, 7)
 

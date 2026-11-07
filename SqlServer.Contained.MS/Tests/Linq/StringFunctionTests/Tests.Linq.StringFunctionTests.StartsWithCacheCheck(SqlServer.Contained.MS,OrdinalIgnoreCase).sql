@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT TOP (2)
 	[p].[FirstName]
 FROM
@@ -6,7 +6,7 @@ FROM
 WHERE
 	[p].[PersonID] = 1
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	COUNT(*)
 FROM
@@ -15,7 +15,7 @@ WHERE
 	Lower([p].[FirstName]) LIKE N'joh%' ESCAPE N'~' AND
 	[p].[PersonID] = 1
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	COUNT(*)
 FROM

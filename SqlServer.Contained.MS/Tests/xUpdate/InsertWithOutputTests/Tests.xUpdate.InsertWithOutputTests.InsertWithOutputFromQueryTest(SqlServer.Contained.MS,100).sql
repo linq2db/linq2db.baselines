@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @param Int -- Int32
 SET     @param = 100
 DECLARE @ValueStr NVarChar(50) -- String
@@ -17,13 +17,13 @@ OUTPUT
 SELECT
 	[s].[Id] + @param,
 	[s].[Value] + @param,
-	Coalesce([s].[ValueStr], N'') + Coalesce(@ValueStr, N'')
+	Coalesce([s].[ValueStr], N'') || Coalesce(@ValueStr, N'')
 FROM
 	[TableWithData] [s]
 WHERE
 	[s].[Id] > 3
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @param Int -- Int32
 SET     @param = 100
 DECLARE @ValueStr NVarChar(50) -- String
@@ -32,7 +32,7 @@ SET     @ValueStr = N'100'
 SELECT
 	[s].[Id] + @param,
 	[s].[Value] + @param,
-	Coalesce([s].[ValueStr], N'') + Coalesce(@ValueStr, N'')
+	Coalesce([s].[ValueStr], N'') || Coalesce(@ValueStr, N'')
 FROM
 	[TableWithData] [s]
 WHERE

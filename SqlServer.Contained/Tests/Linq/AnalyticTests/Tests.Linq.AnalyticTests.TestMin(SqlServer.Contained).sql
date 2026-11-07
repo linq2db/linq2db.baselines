@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	MIN([c_1].[ChildID]),
 	MIN([c_1].[ChildID]),
@@ -10,19 +10,19 @@ FROM
 GROUP BY
 	[g_1].[ParentID]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	MIN([t1].[ParentID])
 FROM
 	[Child] [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	MIN(ALL [t1].[ParentID])
 FROM
 	[Child] [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	MIN(DISTINCT [t1].[ParentID])
 FROM

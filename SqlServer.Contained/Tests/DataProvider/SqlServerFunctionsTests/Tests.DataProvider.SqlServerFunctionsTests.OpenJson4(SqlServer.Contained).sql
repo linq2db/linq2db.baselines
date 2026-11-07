@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DECLARE @json NVarChar(4000) -- String
 SET     @json = N'{ "test" : 1 }'
 

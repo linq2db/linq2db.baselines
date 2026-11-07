@@ -1,11 +1,11 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[x].[Id],
 	IIF([x].[StringProp] = N'1' OR [x].[StringProp] IS NULL, 1, 0),
 	IIF([x].[StringProp] = N'2', 1, 0),
 	[x].[StringProp],
 	1,
-	Coalesce([x].[StringProp], N'') + N'2',
+	Coalesce([x].[StringProp], N'') || N'2',
 	2
 FROM
 	[ConditionalData] [x]
@@ -14,7 +14,7 @@ WHERE
 		WHEN [x].[StringProp] = N'1' OR [x].[StringProp] IS NULL
 			THEN N'2'
 		WHEN [x].[StringProp] = N'2' THEN [x].[StringProp]
-		ELSE Coalesce([x].[StringProp], N'') + N'2'
+		ELSE Coalesce([x].[StringProp], N'') || N'2'
 	END LIKE N'%2' ESCAPE N'~' AND
 	CASE
 		WHEN [x].[StringProp] = N'1' OR [x].[StringProp] IS NULL
@@ -23,7 +23,7 @@ WHERE
 		ELSE 2
 	END = 2
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[StringProp]

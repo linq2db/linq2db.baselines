@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 CREATE TABLE [tempdb]..[#tmp]
 (
 	[ID] HierarchyId     NULL

@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 WITH [CTE_1] ([ParentID], [ChildID], [GrandChildID])
 AS
 (
@@ -23,7 +23,7 @@ FROM
 	) [m_1]
 		INNER JOIN [CTE_1] [d] ON [m_1].[Key_1] = Coalesce([d].[ParentID], -1)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 WITH [CTE_1] ([ParentID])
 AS
 (

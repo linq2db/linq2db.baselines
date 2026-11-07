@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[m_1].[PersonID],
 	[m_1].[FirstName],
@@ -9,13 +9,13 @@ SELECT
 FROM
 	[Person] [m_1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[PersonID]
 FROM
 	[Person] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[m_1].[PersonID],
 	[m_1].[FirstName],
@@ -26,7 +26,7 @@ SELECT
 FROM
 	[Person] [m_1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[PersonID]
 FROM

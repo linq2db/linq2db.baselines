@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @id Int -- Int32
 SET     @id = 1001
 
@@ -13,7 +13,7 @@ VALUES
 	@id
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @id Int -- Int32
 SET     @id = 1001
 
@@ -24,7 +24,7 @@ FROM
 WHERE
 	[c_1].[ChildID] = @id
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @ChildID Int -- Int32
 SET     @ChildID = 1002
 DECLARE @id Int -- Int32
@@ -40,7 +40,7 @@ FROM
 WHERE
 	[c_1].[ChildID] = @id AND [a_Parent].[Value1] = 1
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @p Int -- Int32
 SET     @p = 1002
 

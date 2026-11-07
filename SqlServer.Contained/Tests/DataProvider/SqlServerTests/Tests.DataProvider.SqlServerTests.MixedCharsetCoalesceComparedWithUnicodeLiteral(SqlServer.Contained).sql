@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	COUNT(*)
 FROM
@@ -6,7 +6,7 @@ FROM
 WHERE
 	Coalesce([r].[V], [r].[N]) = N'Ж'
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	COUNT(*)
 FROM
@@ -14,7 +14,7 @@ FROM
 WHERE
 	Coalesce([r].[V2], [r].[V], [r].[N]) = N'Ж'
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	COUNT(*)
 FROM
@@ -22,7 +22,7 @@ FROM
 WHERE
 	Coalesce([r].[V], [r].[N], [r].[V2]) = N'Ж'
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	COUNT(*)
 FROM
@@ -30,7 +30,7 @@ FROM
 WHERE
 	Coalesce([r].[V], [r].[N], [r].[V2]) = N'Ж'
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	COUNT(*)
 FROM

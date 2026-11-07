@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	[arg].[Id],
 	[arg].[Value]
@@ -8,7 +8,7 @@ FROM
 			(1,CAST(1 AS Decimal))
 		) [arg]([Id], [Value]) ON [entity].[PersonID] = [arg].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[arg].[Id],
 	[arg].[Value]

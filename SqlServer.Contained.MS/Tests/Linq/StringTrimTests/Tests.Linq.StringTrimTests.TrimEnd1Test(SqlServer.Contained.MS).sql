@@ -1,10 +1,10 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
-	Coalesce([t].[VarCharColumn], '') + N'...'
+	RTRIM(Coalesce([t].[VarCharColumn], '') || N'...', N'.')
 FROM
 	[StringTrimTable] [t]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[CharColumn],

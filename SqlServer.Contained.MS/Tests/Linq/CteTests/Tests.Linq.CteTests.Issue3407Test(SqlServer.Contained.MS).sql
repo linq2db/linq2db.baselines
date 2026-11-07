@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 WITH [CTE_1]
 (
 	[ID],
@@ -36,7 +36,7 @@ FROM
 WHERE
 	[r].[ID] = 2
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 WITH [CTE_1] ([c1])
 AS
 (

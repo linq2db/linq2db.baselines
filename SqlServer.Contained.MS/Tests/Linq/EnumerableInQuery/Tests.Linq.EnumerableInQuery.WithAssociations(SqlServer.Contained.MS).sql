@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[it_1].[not_null],
 	[it_1].[ColorName],
@@ -21,7 +21,7 @@ FROM
 WHERE
 	[it_1].[ColorName] = N'Red'
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[ColorId],

@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 CREATE TABLE [tempdb].[TestSchema].[#IsTemporaryTable]
 (
 	[Id]    Int NOT NULL,
@@ -7,13 +7,13 @@ CREATE TABLE [tempdb].[TestSchema].[#IsTemporaryTable]
 	PRIMARY KEY CLUSTERED ([Id])
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value]
 FROM
 	[tempdb].[TestSchema].[#IsTemporaryTable] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DROP TABLE IF EXISTS [tempdb].[TestSchema].[#IsTemporaryTable]
 

@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DECLARE @fallback DateTime
 SET     @fallback = DATETIME2FROMPARTS(2026, 5, 25, 9, 0, 0, 0, 7)
 

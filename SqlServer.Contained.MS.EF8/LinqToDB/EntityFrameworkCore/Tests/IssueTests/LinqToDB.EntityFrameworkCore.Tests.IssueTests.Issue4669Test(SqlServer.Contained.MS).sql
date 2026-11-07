@@ -1,4 +1,4 @@
-﻿-- SqlServer.2019
+﻿-- SqlServer.2025
 SELECT
 	[x].[Id],
 	[x].[IsActive],

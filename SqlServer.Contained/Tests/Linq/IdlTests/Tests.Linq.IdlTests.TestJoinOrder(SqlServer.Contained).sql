@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	[x].[ChildID],
 	[x].[ParentID],
@@ -9,7 +9,7 @@ FROM
 		INNER JOIN [Person] [p2] ON [x].[ParentID] = [p2].[PersonID]
 		INNER JOIN [Person] [p3] ON [x].[ChildID] = [p3].[PersonID]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[x].[ChildID],
 	[x].[ParentID],

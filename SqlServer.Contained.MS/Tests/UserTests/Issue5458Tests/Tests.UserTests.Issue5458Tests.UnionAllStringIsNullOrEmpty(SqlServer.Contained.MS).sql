@@ -1,7 +1,7 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
-	IIF([t1].[Value_1] IS NULL OR LEN([t1].[Value_1] + N'.') = 1, 1, 0)
+	IIF([t1].[Value_1] IS NULL OR LEN([t1].[Value_1] || N'.') = 1, 1, 0)
 FROM
 	(
 		SELECT

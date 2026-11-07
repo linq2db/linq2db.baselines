@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Key Int -- Int32
@@ -15,7 +15,7 @@ VALUES
 	@Key
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @Oid Int -- Int32
 SET     @Oid = 1
 DECLARE @RefId Int -- Int32
@@ -32,7 +32,7 @@ VALUES
 	@RefId
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @Oid Int -- Int32
 SET     @Oid = 2
 DECLARE @RefId Int -- Int32
@@ -49,7 +49,7 @@ VALUES
 	@RefId
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[arg2].[Key]
 FROM

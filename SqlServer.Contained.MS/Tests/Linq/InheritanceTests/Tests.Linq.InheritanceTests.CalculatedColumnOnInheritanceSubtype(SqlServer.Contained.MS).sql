@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Type Int -- Int32
@@ -23,13 +23,13 @@ VALUES
 	@Name_Second
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT TOP (2)
 	[t1].[Id],
 	[t1].[Type],
 	[t1].[Name_First],
 	[t1].[Name_Second],
-	Coalesce([t1].[Name_First], N'') + N' ' + Coalesce([t1].[Name_Second], N'')
+	Coalesce([t1].[Name_First], N'') || N' ' || Coalesce([t1].[Name_Second], N'')
 FROM
 	[CalcSubtypeTable] [t1]
 

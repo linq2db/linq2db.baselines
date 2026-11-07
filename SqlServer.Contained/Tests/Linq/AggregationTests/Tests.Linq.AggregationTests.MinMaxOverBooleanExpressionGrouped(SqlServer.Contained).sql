@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	[g_1].[ItemId],
 	MAX(IIF([g_1].[Value] = N'10', 1, 0)),

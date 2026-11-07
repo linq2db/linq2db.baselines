@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	[m_2].[ParentID_1],
 	[m_2].[Value_1],
@@ -24,7 +24,7 @@ FROM
 			[p].[ParentID] >= 4
 	) [m_2]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

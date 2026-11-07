@@ -1,0 +1,48 @@
+﻿-- SqlServer.CS.MS SqlServer.2025
+DECLARE @input Int -- Int32
+SET     @input = 1
+DECLARE @output Int -- Int32
+SET     @output = 0
+
+ExecuteProcStringParameters
+
+-- SqlServer.CS.MS SqlServer.2025
+DECLARE @input Int -- Int32
+SET     @input = 1
+DECLARE @output Int -- Int32
+SET     @output = 0
+
+ExecuteProcStringParameters
+
+-- SqlServer.CS.MS SqlServer.2025
+DECLARE @input Int -- Int32
+SET     @input = 1
+DECLARE @output Int -- Int32
+SET     @output = 0
+
+ExecuteProcStringParameters
+
+-- SqlServer.CS.MS SqlServer.2025
+DECLARE @input Int -- Int32
+SET     @input = 1
+DECLARE @output Int -- Int32
+SET     @output = 0
+
+ExecuteProcStringParameters
+
+-- SqlServer.CS.MS SqlServer.2025
+DECLARE @input Int -- Int32
+SET     @input = 1
+DECLARE @output Int -- Int32
+SET     @output = 0
+
+ExecuteProcStringParameters
+
+-- SqlServer.CS.MS SqlServer.2025
+DECLARE @input Int -- Int32
+SET     @input = 1
+DECLARE @output Int -- Int32
+SET     @output = 0
+
+ExecuteProcStringParameters
+

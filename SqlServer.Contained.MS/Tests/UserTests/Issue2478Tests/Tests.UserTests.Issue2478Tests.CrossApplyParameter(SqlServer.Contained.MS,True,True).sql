@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[q].[ParentID],
 	[c_2].[Count_1],
@@ -17,7 +17,7 @@ FROM
 WHERE
 	[c_2].[Count_1] > 0
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	COUNT(*)
 FROM

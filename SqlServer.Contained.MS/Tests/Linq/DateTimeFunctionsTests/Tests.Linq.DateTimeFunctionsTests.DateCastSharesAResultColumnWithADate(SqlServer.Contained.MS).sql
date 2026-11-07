@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Value DateTime
@@ -23,7 +23,7 @@ VALUES
 	@Wide
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	CAST([r].[Value] AS Date)
 FROM
@@ -34,7 +34,7 @@ SELECT
 FROM
 	[CoarseDateShapesRow] [r_1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	IIF([r].[Id] > 0, CAST([r].[Value] AS Date), CAST([r].[Value] AS Date))
 FROM

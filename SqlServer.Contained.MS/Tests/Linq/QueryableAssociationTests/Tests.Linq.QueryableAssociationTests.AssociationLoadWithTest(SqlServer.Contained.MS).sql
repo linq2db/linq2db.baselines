@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t2].[Id],
 	[t2].[OwnerStr],
@@ -11,7 +11,7 @@ FROM
 		OUTER APPLY (
 			SELECT TOP (1)
 				[a_Other].[Id],
-				Coalesce([a_Other].[StrValue], N'') + N'_A' as [StrValue]
+				Coalesce([a_Other].[StrValue], N'') || N'_A' as [StrValue]
 			FROM
 				[SomeOtherEntity] [a_Other]
 			WHERE

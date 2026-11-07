@@ -1,0 +1,13 @@
+﻿-- SqlServer.CS SqlServer.2025
+SELECT
+	[t].[c1]
+FROM
+	(
+		SELECT
+			Round(CAST(-[p].[MoneyValue] AS Float), 0, 1) as [c1]
+		FROM
+			[LinqDataTypes] [p]
+	) [t]
+WHERE
+	[t].[c1] <> 0.10000000000000001
+

@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @asOf DateTime2
 SET     @asOf = DATETIME2FROMPARTS(2026, 1, 10, 8, 15, 30, 0, 7)
 
@@ -9,7 +9,7 @@ FROM
 WHERE
 	CAST((DateDiff_Big(day, [r].[ClosedOn], @asOf) * 86400) * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r].[ClosedOn], @asOf) AS Int), [r].[ClosedOn]), @asOf) / 100 AS Float) / 864000000000 > 0
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @asOf DateTime2
 SET     @asOf = DATETIME2FROMPARTS(2026, 1, 10, 8, 15, 30, 0, 7)
 
@@ -20,7 +20,7 @@ FROM
 WHERE
 	CAST((DateDiff_Big(day, @asOf, [r].[ClosedOn]) * 86400) * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, @asOf, [r].[ClosedOn]) AS Int), @asOf), [r].[ClosedOn]) / 100 AS Float) / 36000000000 > 0
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @asOf DateTime2
 SET     @asOf = DATETIME2FROMPARTS(2026, 1, 10, 8, 15, 30, 0, 7)
 
@@ -31,7 +31,7 @@ FROM
 ORDER BY
 	CAST((DateDiff_Big(day, [r].[ClosedOn], @asOf) * 86400) * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r].[ClosedOn], @asOf) AS Int), [r].[ClosedOn]), @asOf) / 100 AS Float) / 600000000
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @asOf DateTime2
 SET     @asOf = DATETIME2FROMPARTS(2026, 1, 10, 8, 15, 30, 0, 7)
 

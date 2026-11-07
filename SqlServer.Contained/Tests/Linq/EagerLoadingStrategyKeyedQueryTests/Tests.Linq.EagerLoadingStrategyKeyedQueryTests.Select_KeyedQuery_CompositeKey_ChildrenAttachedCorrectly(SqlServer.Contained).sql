@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	[p].[Region],
 	[p].[Code],
@@ -9,7 +9,7 @@ ORDER BY
 	[p].[Region],
 	[p].[Code]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[k_1].[Item1],
 	[k_1].[Item2],

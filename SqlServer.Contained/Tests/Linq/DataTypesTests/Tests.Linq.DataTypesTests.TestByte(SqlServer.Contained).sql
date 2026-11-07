@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DECLARE @Column TinyInt(1) -- Byte
 SET     @Column = 255
 DECLARE @ColumnNullable TinyInt(1) -- Byte
@@ -13,7 +13,7 @@ FROM
 WHERE
 	[r].[Column] = @Column AND [r].[ColumnNullable] = @ColumnNullable
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[r].[Id],
 	[r].[Column],
@@ -23,12 +23,12 @@ FROM
 WHERE
 	[r].[Column] = 255 AND [r].[ColumnNullable] = 2
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DELETE [t1]
 FROM
 	[ByteTable] [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Column TinyInt(1) -- Byte
@@ -49,7 +49,7 @@ VALUES
 	@ColumnNullable
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Column TinyInt(1) -- Byte
@@ -70,7 +70,7 @@ VALUES
 	@ColumnNullable
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Column],
@@ -80,12 +80,12 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DELETE [t1]
 FROM
 	[ByteTable] [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 INSERT INTO [ByteTable]
 (
 	[Id],
@@ -96,7 +96,7 @@ VALUES
 (1,1,NULL),
 (2,255,2)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Column],
@@ -106,14 +106,14 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DELETE [t1]
 FROM
 	[ByteTable] [t1]
 
 INSERT BULK [ByteTable](Id, Column, ColumnNullable)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Column],

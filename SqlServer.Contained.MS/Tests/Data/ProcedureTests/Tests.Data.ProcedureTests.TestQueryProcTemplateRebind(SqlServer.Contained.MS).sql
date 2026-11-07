@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @input Int -- Int32
 SET     @input = 1
 DECLARE @output1 Int -- Int32

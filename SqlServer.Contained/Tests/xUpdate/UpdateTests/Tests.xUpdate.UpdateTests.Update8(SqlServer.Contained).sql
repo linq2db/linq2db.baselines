@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1001
 DECLARE @Value1 Int -- Int32
@@ -15,7 +15,7 @@ VALUES
 	@Value1
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @Value1 Int -- Int32
 SET     @Value1 = 1002
 DECLARE @ParentID Int -- Int32
@@ -28,7 +28,7 @@ SET
 WHERE
 	[Parent].[ParentID] = @ParentID
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1001
 

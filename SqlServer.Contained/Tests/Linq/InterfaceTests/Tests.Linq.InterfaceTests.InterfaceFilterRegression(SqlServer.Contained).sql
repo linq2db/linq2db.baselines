@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT TOP (2)
 	[t1].[Id]
 FROM
@@ -6,7 +6,7 @@ FROM
 WHERE
 	[t1].[Id] = 2
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT TOP (2)
 	[t1].[Id]
 FROM
@@ -14,7 +14,7 @@ FROM
 WHERE
 	[t1].[Id] = 2
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @UserId Int -- Int32
 SET     @UserId = 2
 
@@ -25,7 +25,7 @@ FROM
 WHERE
 	[x].[Id] = @UserId
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @UserId Int -- Int32
 SET     @UserId = 2
 

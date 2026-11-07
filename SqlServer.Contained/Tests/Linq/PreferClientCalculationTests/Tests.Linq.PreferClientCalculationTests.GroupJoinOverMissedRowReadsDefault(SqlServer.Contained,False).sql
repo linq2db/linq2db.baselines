@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	[e].[Id],
 	CAST(Coalesce([j].[Value1], 0) AS NVarChar(11)),
@@ -7,7 +7,7 @@ FROM
 	[TranslatedMemberEntity] [e]
 		LEFT JOIN [TranslatedMemberEntity] [j] ON [e].[Id] + 1000 = [j].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value1],

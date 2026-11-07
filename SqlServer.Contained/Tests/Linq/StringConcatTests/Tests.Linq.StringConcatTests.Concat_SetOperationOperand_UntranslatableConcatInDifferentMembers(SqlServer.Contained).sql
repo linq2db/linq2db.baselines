@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	CAST(N'p_' AS NVarChar(4000)),
 	[e].[Id],
@@ -31,7 +31,7 @@ FROM
 WHERE
 	[e_1].[ParentId] IS NOT NULL
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[ParentId],

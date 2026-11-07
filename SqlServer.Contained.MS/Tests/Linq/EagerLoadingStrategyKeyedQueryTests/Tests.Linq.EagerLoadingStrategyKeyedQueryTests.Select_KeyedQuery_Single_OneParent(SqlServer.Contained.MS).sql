@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT TOP (2)
 	[c_1].[Id],
 	[c_1].[Name]
@@ -7,7 +7,7 @@ FROM
 WHERE
 	[c_1].[Id] = 1
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[k_1].[item],
 	[d].[Id],

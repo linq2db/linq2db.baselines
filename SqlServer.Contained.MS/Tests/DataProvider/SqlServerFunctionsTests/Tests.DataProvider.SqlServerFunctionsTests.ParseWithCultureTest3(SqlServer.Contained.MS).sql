@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	PARSE(N'345,98' as Decimal(18, 10) USING N'de-DE')
 

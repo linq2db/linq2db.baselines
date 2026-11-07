@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	CAST([t].[MoneyValue] * 1000 AS Decimal(10, 4))
 FROM

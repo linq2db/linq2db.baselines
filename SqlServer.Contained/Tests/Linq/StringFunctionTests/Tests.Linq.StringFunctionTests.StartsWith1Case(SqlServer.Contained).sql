@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	COUNT(*)
 FROM
@@ -7,7 +7,7 @@ WHERE
 	[p].[FirstName] LIKE N'Jo%' ESCAPE N'~' AND Convert(VarBinary(8000), LEFT([p].[FirstName], LEN(N'Jo'))) = Convert(VarBinary(8000), N'Jo') AND
 	[p].[PersonID] = 1
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	COUNT(*)
 FROM
@@ -16,7 +16,7 @@ WHERE
 	[p].[FirstName] LIKE N'jo%' ESCAPE N'~' AND Convert(VarBinary(8000), LEFT([p].[FirstName], LEN(N'jo'))) = Convert(VarBinary(8000), N'jo') AND
 	[p].[PersonID] = 1
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	COUNT(*)
 FROM

@@ -1,9 +1,9 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DELETE [t1]
 FROM
 	[InheritanceParent] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @Key1 Int -- Int32
 SET     @Key1 = 143
 DECLARE @Key2 NVarChar(4000) -- String
@@ -35,13 +35,13 @@ WHEN NOT MATCHED THEN
 		@Data
 	);
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	COUNT(*)
 FROM
 	[InheritanceParent] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @Key1 Int -- Int32
 SET     @Key1 = 143
 DECLARE @Key2 NVarChar(4000) -- String
@@ -73,7 +73,7 @@ WHEN NOT MATCHED THEN
 		@Data
 	);
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	COUNT(*)
 FROM

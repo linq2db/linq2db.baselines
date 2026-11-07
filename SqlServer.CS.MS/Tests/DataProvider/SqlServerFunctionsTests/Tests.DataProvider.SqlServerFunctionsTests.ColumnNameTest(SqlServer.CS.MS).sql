@@ -1,0 +1,4 @@
+﻿-- SqlServer.CS.MS SqlServer.2025
+SELECT
+	COL_NAME(OBJECT_ID(N'dbo.Person', N'U'), 1)
+

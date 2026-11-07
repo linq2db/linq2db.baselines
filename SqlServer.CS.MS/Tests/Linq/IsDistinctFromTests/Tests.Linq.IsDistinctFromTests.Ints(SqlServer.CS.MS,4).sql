@@ -1,0 +1,44 @@
+﻿-- SqlServer.CS.MS SqlServer.2025
+DECLARE @value Int -- Int32
+SET     @value = 4
+
+SELECT
+	COUNT(*)
+FROM
+	[Src] [s]
+WHERE
+	[s].[Int] IS DISTINCT FROM @value
+
+-- SqlServer.CS.MS SqlServer.2025
+DECLARE @value Int -- Int32
+SET     @value = 4
+
+SELECT
+	COUNT(*)
+FROM
+	[Src] [s]
+WHERE
+	[s].[NullableInt] IS DISTINCT FROM @value
+
+-- SqlServer.CS.MS SqlServer.2025
+DECLARE @value Int -- Int32
+SET     @value = 4
+
+SELECT
+	COUNT(*)
+FROM
+	[Src] [s]
+WHERE
+	[s].[Int] IS NOT DISTINCT FROM @value
+
+-- SqlServer.CS.MS SqlServer.2025
+DECLARE @value Int -- Int32
+SET     @value = 4
+
+SELECT
+	COUNT(*)
+FROM
+	[Src] [s]
+WHERE
+	[s].[NullableInt] IS NOT DISTINCT FROM @value
+

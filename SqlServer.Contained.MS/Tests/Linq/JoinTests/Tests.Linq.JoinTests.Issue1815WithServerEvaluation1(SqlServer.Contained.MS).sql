@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT TOP (2)
 	[t1].[InId],
 	IIF([e].[InId] IS NULL, [t1].[InMinQuantity], [e].[InMinQuantity]),
@@ -9,7 +9,7 @@ FROM
 WHERE
 	[t1].[InId] = 1
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT TOP (2)
 	[t1].[InId],
 	IIF([e].[InId] IS NULL, [t1].[InMinQuantity], [e].[InMinQuantity]),

@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 INSERT INTO [User]
 (
 	[Id]
@@ -8,7 +8,7 @@ VALUES
 	1
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 INSERT INTO [User]
 (
 	[Id]
@@ -18,7 +18,7 @@ VALUES
 	2
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[not_null],
 	[t1].[Data_1]

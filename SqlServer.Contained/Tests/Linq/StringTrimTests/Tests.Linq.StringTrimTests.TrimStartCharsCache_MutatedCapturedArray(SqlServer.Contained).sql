@@ -1,14 +1,14 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
-	[t].[VarCharColumn]
+	LTRIM([t].[VarCharColumn], '.+')
 FROM
 	[StringTrimTable] [t]
 ORDER BY
 	[t].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
-	[t].[VarCharColumn]
+	LTRIM([t].[VarCharColumn], 'ab')
 FROM
 	[StringTrimTable] [t]
 ORDER BY

@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	[e].[Id],
 	[j].[Day],
@@ -7,14 +7,14 @@ FROM
 	[MissedDayEntity] [e]
 		LEFT JOIN [MissedDayEntity] [j] ON [j].[Id] = [e].[Id] + 1000
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Day]
 FROM
 	[MissedDayEntity] [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	DatePart(year, Coalesce([j].[Day], DATEFROMPARTS(1, 1, 1)))
 FROM

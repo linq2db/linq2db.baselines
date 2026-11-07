@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @Value Int -- Int32
 SET     @Value = 0
 
@@ -15,7 +15,7 @@ SELECT SCOPE_IDENTITY()
 
 INSERT BULK [AllTypes](ID, intDataType)
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @lastId Int -- Int32
 SET     @lastId = 3
 
@@ -29,7 +29,7 @@ WHERE
 ORDER BY
 	[t1].[ID]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @lastId Int -- Int32
 SET     @lastId = 3
 

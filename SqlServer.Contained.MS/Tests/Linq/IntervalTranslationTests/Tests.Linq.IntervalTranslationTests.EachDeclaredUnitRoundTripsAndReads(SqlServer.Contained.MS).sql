@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @InDays BigInt -- Int64
@@ -23,7 +23,7 @@ VALUES
 	@InNanoseconds
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT TOP (2)
 	[t1].[Id],
 	[t1].[InDays],
@@ -32,7 +32,7 @@ SELECT TOP (2)
 FROM
 	[UnitSpreadRow] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT TOP (2)
 	CAST([r].[InDays] * 24 AS Float),
 	CAST(([r].[InMilliseconds] / 1000) % 60 AS Int)

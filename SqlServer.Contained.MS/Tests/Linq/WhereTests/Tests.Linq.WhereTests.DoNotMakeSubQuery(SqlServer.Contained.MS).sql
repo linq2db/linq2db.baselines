@@ -1,7 +1,7 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[p2].[PersonID],
-	[p2].[FirstName] + N''
+	RTRIM([p2].[FirstName] || N'', N'')
 FROM
 	[Person] [p2]
 WHERE

@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DECLARE @p Int -- Int32
 SET     @p = 1
 
@@ -10,14 +10,14 @@ FROM
 WHERE
 	[x].[ParentID] = @p
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]
 FROM
 	[Parent] [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @p Int -- Int32
 SET     @p = 3
 DECLARE @p_1 Int -- Int32
@@ -31,14 +31,14 @@ FROM
 WHERE
 	[x].[ParentID] = @p OR [x].[ParentID] = @p_1
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]
 FROM
 	[Parent] [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @p Int -- Int32
 SET     @p = 1
 
@@ -50,7 +50,7 @@ FROM
 WHERE
 	[x].[ParentID] = @p
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

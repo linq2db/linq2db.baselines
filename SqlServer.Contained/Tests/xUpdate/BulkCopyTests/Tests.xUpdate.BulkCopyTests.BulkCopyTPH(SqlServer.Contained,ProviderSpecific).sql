@@ -1,6 +1,6 @@
 ﻿INSERT BULK [TPHTable](Id, Discriminator, Value1, Value2, Value3, NullableBool)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Discriminator],
 	[t1].[Id],
@@ -13,7 +13,7 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT TOP (2)
 	[x].[Discriminator],
 	[x].[Id],
@@ -26,7 +26,7 @@ FROM
 WHERE
 	[x].[Discriminator] = 1
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT TOP (2)
 	[x].[Discriminator],
 	[x].[Id],
@@ -39,7 +39,7 @@ FROM
 WHERE
 	[x].[Discriminator] = 2
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT TOP (2)
 	[x].[Discriminator],
 	[x].[Id],
@@ -52,7 +52,7 @@ FROM
 WHERE
 	[x].[Discriminator] = 3
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT TOP (2)
 	[x].[Discriminator],
 	[x].[Id],
@@ -65,7 +65,7 @@ FROM
 WHERE
 	[x].[Value1] = N'Str1'
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT TOP (2)
 	[x].[Discriminator],
 	[x].[Id],
@@ -78,7 +78,7 @@ FROM
 WHERE
 	[x].[Value2] = N'Str2'
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT TOP (2)
 	[x].[Discriminator],
 	[x].[Id],

@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 INSERT INTO [AllTypes]
 (
 	[charDataType],
@@ -12,7 +12,7 @@ VALUES
 
 SELECT SCOPE_IDENTITY()
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @id Int -- Int32
 SET     @id = 3
 
@@ -25,7 +25,7 @@ FROM
 WHERE
 	[t].[ID] = @id
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @id Int -- Int32
 SET     @id = 3
 

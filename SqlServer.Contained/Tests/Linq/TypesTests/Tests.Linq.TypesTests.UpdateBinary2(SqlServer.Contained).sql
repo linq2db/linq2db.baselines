@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DECLARE @BinaryValue VarBinary(5) -- Binary
 SET     @BinaryValue = 0x0102030405
 DECLARE @ints Int -- Int32
@@ -11,7 +11,7 @@ SET
 WHERE
 	[LinqDataTypes].[ID] = @ints
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @BinaryValue VarBinary(5) -- Binary
 SET     @BinaryValue = 0x0504030201
 DECLARE @ints Int -- Int32
@@ -24,7 +24,7 @@ SET
 WHERE
 	[LinqDataTypes].[ID] = @ints
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t].[ID],
 	[t].[MoneyValue],

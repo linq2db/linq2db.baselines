@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 INSERT INTO [TestTempTable]
 (
 	[Id],
@@ -10,7 +10,7 @@ VALUES
 	N'value'
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 IF (OBJECT_ID(N'[TempTable]', N'U') IS NULL)
 	CREATE TABLE [TempTable]
 	(
@@ -20,7 +20,7 @@ IF (OBJECT_ID(N'[TempTable]', N'U') IS NULL)
 		CONSTRAINT [PK_TempTable] PRIMARY KEY CLUSTERED ([Id])
 	)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 INSERT INTO [TempTable]
 (
 	[Id],
@@ -32,7 +32,7 @@ SELECT
 FROM
 	[TestTempTable] [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 INSERT INTO [TestTempTable]
 (
 	[Id],
@@ -44,7 +44,7 @@ VALUES
 	N'value 2'
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 INSERT INTO [TempTable]
 (
 	[Id],
@@ -56,7 +56,7 @@ VALUES
 	N'renamed 2'
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -65,7 +65,7 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Renamed]
@@ -74,6 +74,6 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DROP TABLE IF EXISTS [TempTable]
 

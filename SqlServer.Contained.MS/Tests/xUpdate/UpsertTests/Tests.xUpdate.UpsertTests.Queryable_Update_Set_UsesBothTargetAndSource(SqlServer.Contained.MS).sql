@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 MERGE INTO [UpsertTest] [Target]
 USING (
 	SELECT
@@ -56,7 +56,7 @@ SET
 	[UpdatedBy] = [Source].[UpdatedBy]
 ;
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Name],

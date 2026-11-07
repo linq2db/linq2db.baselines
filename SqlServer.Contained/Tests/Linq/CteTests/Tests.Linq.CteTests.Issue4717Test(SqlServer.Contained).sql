@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 INSERT INTO [Issue4717Address]
 (
 	[Id],
@@ -16,7 +16,7 @@ VALUES
 	N'12345'
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 INSERT INTO [Issue4717Warehouse]
 (
 	[Id],
@@ -30,7 +30,7 @@ VALUES
 	1
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 INSERT INTO [Issue4717UnitOfMeasure]
 (
 	[Id],
@@ -44,7 +44,7 @@ VALUES
 	N'ea'
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @productId Int -- Int32
 SET     @productId = 1
 
@@ -63,7 +63,7 @@ VALUES
 	1
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @includedProductId Int -- Int32
 SET     @includedProductId = 2
 
@@ -82,7 +82,7 @@ VALUES
 	1
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @productId Int -- Int32
 SET     @productId = 1
 DECLARE @includedProductId Int -- Int32
@@ -101,7 +101,7 @@ VALUES
 	10
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @productId Int -- Int32
 SET     @productId = 1
 
@@ -118,7 +118,7 @@ VALUES
 	10
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @productId Int -- Int32
 SET     @productId = 1
 

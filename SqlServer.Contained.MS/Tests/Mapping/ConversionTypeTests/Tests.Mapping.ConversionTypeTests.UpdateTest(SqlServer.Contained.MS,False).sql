@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @Data NVarChar(50) -- String
 SET     @Data = N'***III***'
 DECLARE @ID Int -- Int32
@@ -11,7 +11,7 @@ SET
 WHERE
 	[TrimTestTable].[ID] = @ID
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @Data NVarChar(50) -- String
 SET     @Data = N'***OOO***'
 
@@ -22,7 +22,7 @@ SET
 WHERE
 	[TrimTestTable].[Data] = N'***XXX***'
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @Data NVarChar(50) -- String
 SET     @Data = N'***SSS***'
 DECLARE @p NVarChar(50) -- String
@@ -35,7 +35,7 @@ SET
 WHERE
 	[TrimTestTable].[Data] = @p
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[r].[ID],
 	[r].[Data]
@@ -44,7 +44,7 @@ FROM
 ORDER BY
 	[r].[ID]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[r].[ID],
 	[r].[Data]

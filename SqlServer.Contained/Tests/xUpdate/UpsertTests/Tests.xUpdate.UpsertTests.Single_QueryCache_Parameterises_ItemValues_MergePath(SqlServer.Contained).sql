@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 42
 DECLARE @Name NVarChar(4000) -- String
@@ -35,7 +35,7 @@ VALUES
 	@UpdatedBy
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 MERGE INTO [UpsertTest] [Target]
 USING (VALUES
 	(42,N'first-update',50,CAST(NULL AS DateTime2),CAST(NULL AS NVarChar(4000)),CAST(NULL AS DateTime2),CAST(NULL AS NVarChar(4000)))
@@ -62,7 +62,7 @@ SET
 	[UpdatedBy] = [Source].[UpdatedBy]
 ;
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 MERGE INTO [UpsertTest] [Target]
 USING (VALUES
 	(42,N'second-update',99,CAST(NULL AS DateTime2),CAST(NULL AS NVarChar(4000)),CAST(NULL AS DateTime2),CAST(NULL AS NVarChar(4000)))
@@ -89,7 +89,7 @@ SET
 	[UpdatedBy] = [Source].[UpdatedBy]
 ;
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT TOP (2)
 	[r].[Id],
 	[r].[Name],

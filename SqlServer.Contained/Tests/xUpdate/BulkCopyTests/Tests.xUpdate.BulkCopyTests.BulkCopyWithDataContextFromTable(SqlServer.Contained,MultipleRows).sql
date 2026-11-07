@@ -2,7 +2,7 @@
 
 INSERT BULK [SimpleBulkCopyTable](Id)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 INSERT INTO [SimpleBulkCopyTable]
 (
 	[Id]
