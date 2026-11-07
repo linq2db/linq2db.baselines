@@ -6,8 +6,8 @@ FROM
 LIMIT 2
 
 -- YDB Ydb
-DECLARE $Code Text(4) -- AnsiString
-SET     $Code = 'x:AT'u
+DECLARE Code Text(4) -- AnsiString
+SET     Code = 'x:AT'u
 
 $CTE_1 = 	SELECT
 		Coalesce(t.Code, ''u) || Coalesce(t.Title, ''u) as cte_value
