@@ -1,8 +1,8 @@
 ﻿-- Access.Ace.Odbc AccessODBC
 SELECT
 	[r].[Id],
-	Sgn([r].[F]) * Int(Abs([r].[F]) + 0.5),
-	Sgn([r].[F]) * (Int(Abs([r].[F]) * (10 ^ [r].[P]) + 0.5) / (10 ^ [r].[P])),
+	Sgn([r].[F]) * (Int(Abs([r].[F])) + Int((Abs([r].[F]) - Int(Abs([r].[F]))) * 2)),
+	Sgn([r].[F]) * ((Int(Abs([r].[F]) * (10 ^ [r].[P])) + Int((Abs([r].[F]) * (10 ^ [r].[P]) - Int(Abs([r].[F]) * (10 ^ [r].[P]))) * 2)) / (10 ^ [r].[P])),
 	Round([r].[F], 0),
 	Round([r].[F], [r].[P])
 FROM
