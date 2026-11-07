@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $dash Text(1) -- AnsiString
-SET     $dash = '-'u
+DECLARE dash Text(1) -- AnsiString
+SET     dash = '-'u
 
 SELECT
 	a.Id as Id,

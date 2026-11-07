@@ -8,8 +8,8 @@ ORDER BY
 LIMIT 1
 
 -- YDB Ydb
-DECLARE $read Text(6) -- String
-SET     $read = 'A-x:n1'u
+DECLARE read Text(6) -- String
+SET     read = 'A-x:n1'u
 
 SELECT
 	COUNT(*) as Count_1
@@ -19,8 +19,8 @@ WHERE
 	(r.Plain || r.Conv) LIKE $read
 
 -- YDB Ydb
-DECLARE $read Text(6) -- String
-SET     $read = 'A-x:n1'u
+DECLARE read Text(6) -- String
+SET     read = 'A-x:n1'u
 
 SELECT
 	COUNT(*) as Count_1

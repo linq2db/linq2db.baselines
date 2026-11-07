@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $suffix Text(3) -- String
-SET     $suffix = 'Жук'u
-DECLARE $search Text(1) -- String
-SET     $search = 'Ж'u
+DECLARE suffix Text(3) -- String
+SET     suffix = 'Жук'u
+DECLARE search Text(1) -- String
+SET     search = 'Ж'u
 
 SELECT
 	t.Id as Id,
