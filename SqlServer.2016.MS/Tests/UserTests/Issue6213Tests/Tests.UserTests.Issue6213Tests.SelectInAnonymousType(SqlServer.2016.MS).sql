@@ -1,0 +1,9 @@
+﻿-- SqlServer.2016.MS SqlServer.2016
+SELECT
+	[x].[Id],
+	[x].[Usd]
+FROM
+	[Rate] [x]
+ORDER BY
+	[x].[Id]
+
