@@ -2,11 +2,11 @@
 SELECT
 	r."Id",
 	CASE
-		WHEN r.D - FLOOR(r.D) = 0.5D THEN ROUND(r.D * 0.5D, 0) * 2
+		WHEN r.D - FLOOR(r.D) = 0.5 THEN ROUND(r.D * 0.5, 0) * 2
 		ELSE ROUND(r.D, 0)
 	END,
 	CASE
-		WHEN r.D - FLOOR(r.D) = 0.5D THEN ROUND(r.D * 0.5D, 0) * 2
+		WHEN r.D - FLOOR(r.D) = 0.5 THEN ROUND(r.D * 0.5, 0) * 2
 		ELSE ROUND(r.D, 0)
 	END,
 	ROUND(r.D),
