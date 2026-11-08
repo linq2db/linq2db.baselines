@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 10
+DECLARE Id Int32
+SET     Id = 10
 
 INSERT INTO UserIssue3128
 (
@@ -12,10 +12,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $UserId Int32
-SET     $UserId = 10
-DECLARE $Age Int32
-SET     $Age = 18
+DECLARE UserId Int32
+SET     UserId = 10
+DECLARE Age Int32
+SET     Age = 18
 
 INSERT INTO UserDetailsIssue3128
 (
