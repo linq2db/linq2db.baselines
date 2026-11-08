@@ -5,44 +5,37 @@ FROM
 		LEFT JOIN (
 			SELECT
 				d.SetpointtypeId as SetpointtypeId,
-				t2.ShopId as ShopId
+				cudg_1.Permission as Permission,
+				oudg_1.Inheritablepermission as Inheritablepermission
 			FROM
-				(
-					SELECT
-						w.WellId as WellId,
-						w.ShopId as ShopId
-					FROM
-						VWellTree w
-					WHERE
-						UTILS.GREATESTNOTNULL3(CAST(cudg_1.Permission AS Decimal(22,9)), CAST(oudg_1.Inheritablepermission AS Decimal(22,9)), NULL) IS NOT NULL
-				) t2
+				VWellTree t2
+					INNER JOIN DctOu tp2 ON t2.ShopId = tp2.Id
+					LEFT JOIN (
+						SELECT
+							cudg.DatagroupId as DatagroupId,
+							cudg.Permission as Permission
+						FROM
+							UacUsersDatagroup cudg
+						WHERE
+							cudg.UserId = 150
+					) cudg_1 ON tp2.Id = cudg_1.DatagroupId
+					LEFT JOIN (
+						SELECT
+							t1.DatagroupId as DatagroupId,
+							t1.Inheritablepermission as Inheritablepermission
+						FROM
+							(
+								SELECT
+									oudg.DatagroupId as DatagroupId,
+									oudg.Inheritablepermission as Inheritablepermission
+								FROM
+									UacUsersDatagroup oudg
+								WHERE
+									oudg.UserId = 150
+							) t1
+						WHERE
+							t1.Inheritablepermission > 0
+					) oudg_1 ON tp2.ParentId = oudg_1.DatagroupId
 					INNER JOIN Deviation d ON t2.WellId = d.WellId
-		) t1 ON t1.SetpointtypeId = spt.Id
-		LEFT JOIN DctOu tp2 ON t1.ShopId = tp2.Id
-		LEFT JOIN (
-			SELECT
-				cudg.DatagroupId as DatagroupId,
-				cudg.Permission as Permission
-			FROM
-				UacUsersDatagroup cudg
-			WHERE
-				cudg.UserId = 150
-		) cudg_1 ON tp2.Id = cudg_1.DatagroupId
-		LEFT JOIN (
-			SELECT
-				t3.DatagroupId as DatagroupId,
-				t3.Inheritablepermission as Inheritablepermission
-			FROM
-				(
-					SELECT
-						oudg.DatagroupId as DatagroupId,
-						oudg.Inheritablepermission as Inheritablepermission
-					FROM
-						UacUsersDatagroup oudg
-					WHERE
-						oudg.UserId = 150
-				) t3
-			WHERE
-				t3.Inheritablepermission > 0
-		) oudg_1 ON tp2.ParentId = oudg_1.DatagroupId
+		) t3 ON t3.SetpointtypeId = spt.Id AND UTILS.GREATESTNOTNULL3(CAST(t3.Permission AS Decimal(22,9)), CAST(t3.Inheritablepermission AS Decimal(22,9)), NULL) IS NOT NULL
 
