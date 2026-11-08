@@ -1,0 +1,9 @@
+﻿-- Oracle.21.Managed Oracle.Managed Oracle12
+SELECT
+	x."Usd"
+FROM
+	"Rate" x
+WHERE
+	x."Id" = 2
+FETCH NEXT 2 ROWS ONLY
+
