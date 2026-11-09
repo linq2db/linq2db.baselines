@@ -8,18 +8,18 @@ FROM
 	(
 		SELECT
 			ROW_NUMBER() OVER (PARTITION BY [e_1].[Region] ORDER BY [e_1].[CustomerId]) as [RowNumber],
+			[e_1].[Region],
 			[e_1].[CustomerId],
 			[e_1].[Id],
-			[e_1].[Country],
-			[e_1].[Region]
+			[e_1].[Country]
 		FROM
 			(
 				SELECT
 					ROW_NUMBER() OVER (PARTITION BY [e].[Country] ORDER BY [e].[Id]) as [RowNumber],
+					[e].[Country],
 					[e].[Id],
 					[e].[CustomerId],
-					[e].[Region],
-					[e].[Country]
+					[e].[Region]
 				FROM
 					[NullableKeyData] [e]
 				WHERE
