@@ -8,10 +8,10 @@ FROM
 	(
 		SELECT
 			toInt64(ROW_NUMBER() OVER (PARTITION BY e.Country, e.Region ORDER BY e.Id)) as RowNumber,
-			e.Id as Id,
-			e.CustomerId as CustomerId,
 			e.Country as Country,
-			e.Region as Region
+			e.Region as Region,
+			e.Id as Id,
+			e.CustomerId as CustomerId
 		FROM
 			NullableKeyData e
 		WHERE
