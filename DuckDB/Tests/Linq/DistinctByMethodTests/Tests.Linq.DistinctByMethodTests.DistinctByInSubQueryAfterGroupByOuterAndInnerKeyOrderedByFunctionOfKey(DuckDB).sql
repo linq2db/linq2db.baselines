@@ -1,0 +1,43 @@
+﻿-- DuckDB
+SELECT
+	Coalesce((
+		SELECT
+			SUM(t1.ChildID)
+		FROM
+			(
+				SELECT DISTINCT ON (g_2.ChildID % 2)
+					g_2.ChildID
+				FROM
+					(
+						SELECT
+							g_1.ChildID
+						FROM
+							Child g_1
+						WHERE
+							g_1.ParentID = p.ParentID
+					) g_2
+				GROUP BY
+					p.ParentID,
+					g_2.ChildID
+				ORDER BY
+					g_2.ChildID % 2,
+					-g_2.ChildID
+			) t1
+	), 0)
+FROM
+	Parent p
+
+-- DuckDB
+SELECT
+	t1.ParentID,
+	t1.Value1
+FROM
+	Parent t1
+
+-- DuckDB
+SELECT
+	t1.ParentID,
+	t1.ChildID
+FROM
+	Child t1
+

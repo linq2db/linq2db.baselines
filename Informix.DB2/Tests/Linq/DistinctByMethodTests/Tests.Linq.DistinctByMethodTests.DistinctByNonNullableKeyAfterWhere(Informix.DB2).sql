@@ -8,8 +8,8 @@ FROM
 	(
 		SELECT
 			ROW_NUMBER() OVER (PARTITION BY e.CustomerId ORDER BY e.Id) as RowNumber,
-			e.Id,
 			e.CustomerId,
+			e.Id,
 			e.Country,
 			e.Region
 		FROM
