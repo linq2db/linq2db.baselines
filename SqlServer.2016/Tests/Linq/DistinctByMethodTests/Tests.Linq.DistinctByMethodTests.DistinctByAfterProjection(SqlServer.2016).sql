@@ -7,8 +7,8 @@ FROM
 	(
 		SELECT
 			ROW_NUMBER() OVER (PARTITION BY [e].[Country] ORDER BY [e].[Id]) as [RowNumber],
-			[e].[Id],
 			[e].[Country],
+			[e].[Id],
 			[e].[Region]
 		FROM
 			[NullableKeyData] [e]
