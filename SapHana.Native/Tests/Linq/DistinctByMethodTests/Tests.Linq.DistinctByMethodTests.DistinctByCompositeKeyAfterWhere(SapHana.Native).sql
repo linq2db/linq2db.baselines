@@ -8,10 +8,10 @@ FROM
 	(
 		SELECT
 			ROW_NUMBER() OVER (PARTITION BY "e"."Country", "e"."Region" ORDER BY "e"."Id") as "RowNumber",
-			"e"."Id",
-			"e"."CustomerId",
 			"e"."Country",
-			"e"."Region"
+			"e"."Region",
+			"e"."Id",
+			"e"."CustomerId"
 		FROM
 			"NullableKeyData" "e"
 		WHERE
