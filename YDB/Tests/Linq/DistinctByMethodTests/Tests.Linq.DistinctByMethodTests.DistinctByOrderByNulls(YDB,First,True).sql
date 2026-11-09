@@ -14,11 +14,11 @@ FROM
 				WHEN e.Priority IS NULL THEN 0
 				ELSE 1
 			END, e.Priority DESC, e.Id, e.`Date`) as RowNumber,
+			e.`Group` as Group_1,
 			e.Priority as Priority,
 			e.Id as Id,
 			e.`Date` as Date_1,
 			e.Name as Name,
-			e.`Group` as Group_1,
 			e.Amount as Amount,
 			e.IsActive as IsActive
 		FROM

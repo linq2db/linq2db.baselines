@@ -6,8 +6,8 @@ FROM
 	(
 		SELECT
 			ROW_NUMBER() OVER (PARTITION BY e_1.Country ORDER BY e_1.Region) as RowNumber,
-			e_1.Region as Region,
-			e_1.Country as Country
+			e_1.Country as Country,
+			e_1.Region as Region
 		FROM
 			(
 				SELECT DISTINCT

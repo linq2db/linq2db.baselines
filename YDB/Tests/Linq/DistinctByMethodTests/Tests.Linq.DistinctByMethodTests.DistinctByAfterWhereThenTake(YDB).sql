@@ -11,9 +11,9 @@ FROM
 	(
 		SELECT
 			ROW_NUMBER() OVER (PARTITION BY e.Country ORDER BY e.Id) as RowNumber,
+			e.Country as Country,
 			e.Id as Id,
 			e.CustomerId as CustomerId,
-			e.Country as Country,
 			e.Region as Region
 		FROM
 			NullableKeyData e
