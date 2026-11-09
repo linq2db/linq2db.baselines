@@ -9,9 +9,9 @@ FROM
 	(
 		SELECT
 			CASE
-				WHEN CAST([p].[MoneyValue] AS Float) * 2 = ROUND(CAST([p].[MoneyValue] AS Float) * 2, 1) AND CAST([p].[MoneyValue] AS Float) <> ROUND(CAST([p].[MoneyValue] AS Float), 1)
-					THEN ROUND(CAST([p].[MoneyValue] AS Float) / 2, 1) * 2
-				ELSE ROUND(CAST([p].[MoneyValue] AS Float), 1)
+				WHEN [p].[MoneyValue] * 2 = ROUND([p].[MoneyValue] * 2, 1) AND [p].[MoneyValue] <> ROUND([p].[MoneyValue], 1)
+					THEN ROUND([p].[MoneyValue] / 2, 1) * 2
+				ELSE ROUND([p].[MoneyValue], 1)
 			END as [c1]
 		FROM
 			[LinqDataTypes] [p]
