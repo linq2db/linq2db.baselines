@@ -11,9 +11,9 @@ FROM
 	(
 		SELECT
 			ROW_NUMBER() OVER (PARTITION BY `e`.`Id`, `e`.`Name` ORDER BY `e`.`Name`, `e`.`Date` DESC) as `RowNumber`,
+			`e`.`Id`,
 			`e`.`Name`,
 			`e`.`Date` as `Date_1`,
-			`e`.`Id`,
 			`e`.`Group` as `Group_1`,
 			`e`.`Amount`,
 			`e`.`IsActive`,
