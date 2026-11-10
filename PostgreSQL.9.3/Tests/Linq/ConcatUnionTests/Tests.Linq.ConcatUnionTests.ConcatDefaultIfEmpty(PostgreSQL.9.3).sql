@@ -1,6 +1,5 @@
 ﻿-- PostgreSQL.9.3 PostgreSQL
 SELECT
-	0::Int,
 	t1."ParentID",
 	t1."ParentID",
 	t1."ChildID"
@@ -20,7 +19,6 @@ WHERE
 	p."ParentID" = 1
 UNION ALL
 SELECT
-	1::Int,
 	NULL::Int,
 	NULL::Int,
 	NULL::Int

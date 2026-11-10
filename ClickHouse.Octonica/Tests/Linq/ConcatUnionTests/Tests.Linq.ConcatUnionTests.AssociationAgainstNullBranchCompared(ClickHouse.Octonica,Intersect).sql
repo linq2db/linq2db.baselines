@@ -1,0 +1,18 @@
+﻿-- ClickHouse.Octonica ClickHouse
+SELECT
+	p.PersonID,
+	a_Patient.PersonID as PersonID_1,
+	a_Patient.PersonID as PersonID_2,
+	a_Patient.Diagnosis
+FROM
+	Person p
+		LEFT JOIN Patient a_Patient ON p.PersonID = a_Patient.PersonID
+INTERSECT DISTINCT
+SELECT
+	p_1.PersonID as PersonID,
+	toInt32(NULL) as PersonID_1,
+	toInt32(NULL) as PersonID_2,
+	toString(NULL) as Diagnosis
+FROM
+	Person p_1
+
