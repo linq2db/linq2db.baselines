@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $maxCompanyId  -- Int32
+DECLARE $maxCompanyId INTEGER -- Int32
 SET     $maxCompanyId = 1
 
 WITH CTE_1 (Id, field, Name)

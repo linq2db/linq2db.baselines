@@ -11,7 +11,7 @@ WHERE
 	[Parent].[ParentID] > 1000
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @values  -- Int32
+DECLARE @values Integer -- Int32
 SET     @values = 1001
 
 INSERT INTO [Parent]
@@ -26,7 +26,7 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @values  -- Int32
+DECLARE @values Integer -- Int32
 SET     @values = 1002
 
 INSERT INTO [Parent]

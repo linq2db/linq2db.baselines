@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @value  -- Int64
+DECLARE @value Integer -- Int64
 SET     @value = NULL
 
 SELECT
@@ -15,7 +15,7 @@ FROM
 	) [t1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @value  -- Int64
+DECLARE @value Integer -- Int64
 SET     @value = 2147483648
 
 SELECT

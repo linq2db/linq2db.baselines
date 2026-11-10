@@ -1,7 +1,7 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Column  -- Guid
+DECLARE @Column Blob -- Guid
 SET     @Column = X'0D6048A921DE744F8AC29516B287076E'
-DECLARE @ColumnNullable  -- Guid
+DECLARE @ColumnNullable Blob -- Guid
 SET     @ColumnNullable = X'A57339BD2343D84D9F4FDF9F93E2A627'
 
 SELECT
@@ -29,11 +29,11 @@ DELETE FROM
 	[GuidTable]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Column  -- Guid
+DECLARE @Column Blob -- Guid
 SET     @Column = X'3D667BBCDE0F27438F925D8CC3A11D11'
-DECLARE @ColumnNullable  -- Guid
+DECLARE @ColumnNullable Blob -- Guid
 SET     @ColumnNullable = NULL
 
 INSERT INTO [GuidTable]
@@ -50,11 +50,11 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Column  -- Guid
+DECLARE @Column Blob -- Guid
 SET     @Column = X'0D6048A921DE744F8AC29516B287076E'
-DECLARE @ColumnNullable  -- Guid
+DECLARE @ColumnNullable Blob -- Guid
 SET     @ColumnNullable = X'A57339BD2343D84D9F4FDF9F93E2A627'
 
 INSERT INTO [GuidTable]

@@ -1,13 +1,13 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @InSeconds  -- Int64
+DECLARE @InSeconds Integer -- Int64
 SET     @InSeconds = 4567
-DECLARE @InTicks  -- Int64
+DECLARE @InTicks Integer -- Int64
 SET     @InTicks = 45670000000
-DECLARE @Undeclared  -- Int64
+DECLARE @Undeclared Integer -- Int64
 SET     @Undeclared = 45670000000
-DECLARE @UndeclaredSeconds  -- Int64
+DECLARE @UndeclaredSeconds Integer -- Int64
 SET     @UndeclaredSeconds = 4567
 
 INSERT INTO [DurationRow]

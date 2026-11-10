@@ -1,7 +1,7 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @InitOnlyId  -- Int32
+DECLARE @InitOnlyId Integer -- Int32
 SET     @InitOnlyId = 1
 
 SELECT
@@ -24,9 +24,9 @@ FROM
 	[TestConstantsData] [t1]
 
 -- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @InitOnlyId  -- Int32
+DECLARE @InitOnlyId Integer -- Int32
 SET     @InitOnlyId = 1
 
 SELECT

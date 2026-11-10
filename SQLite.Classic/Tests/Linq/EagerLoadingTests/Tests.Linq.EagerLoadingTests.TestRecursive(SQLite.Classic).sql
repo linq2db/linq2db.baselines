@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic SQLite
-DECLARE @masterFilter  -- Int32
+DECLARE @masterFilter Integer -- Int32
 SET     @masterFilter = 5
 
 SELECT
@@ -27,7 +27,7 @@ FROM
 		INNER JOIN [SubDetailClass] [d_1] ON [d_1].[DetailId] = [m_1].[DetailId]
 
 -- SQLite.Classic SQLite
-DECLARE @masterFilter  -- Int32
+DECLARE @masterFilter Integer -- Int32
 SET     @masterFilter = 5
 
 SELECT
@@ -55,7 +55,7 @@ FROM
 		INNER JOIN [SubDetailClass] [d_1] ON [m_1].[DetailId] = [d_1].[DetailId]
 
 -- SQLite.Classic SQLite
-DECLARE @masterFilter  -- Int32
+DECLARE @masterFilter Integer -- Int32
 SET     @masterFilter = 5
 
 SELECT
@@ -73,7 +73,7 @@ FROM
 		INNER JOIN [DetailClass] [d] ON [d].[MasterId] = [m_1].[Id1]
 
 -- SQLite.Classic SQLite
-DECLARE @masterFilter  -- Int32
+DECLARE @masterFilter Integer -- Int32
 SET     @masterFilter = 5
 
 SELECT

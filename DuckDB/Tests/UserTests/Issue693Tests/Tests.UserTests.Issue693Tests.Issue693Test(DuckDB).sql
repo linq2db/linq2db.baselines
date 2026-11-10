@@ -53,7 +53,7 @@ RETURNING
 	PersonID
 
 -- DuckDB
-DECLARE $id1  -- Int32
+DECLARE $id1 INTEGER -- Int32
 SET     $id1 = 5
 
 SELECT
@@ -69,7 +69,7 @@ WHERE
 LIMIT 1
 
 -- DuckDB
-DECLARE $id2  -- Int32
+DECLARE $id2 INTEGER -- Int32
 SET     $id2 = 6
 
 SELECT

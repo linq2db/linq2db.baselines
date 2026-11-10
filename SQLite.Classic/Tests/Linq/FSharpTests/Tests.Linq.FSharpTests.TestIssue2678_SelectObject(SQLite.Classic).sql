@@ -1,7 +1,7 @@
 ﻿-- SQLite.Classic SQLite
-DECLARE @MetadataVersion  -- Int32
+DECLARE @MetadataVersion Integer -- Int32
 SET     @MetadataVersion = 2
-DECLARE @DictionaryKey  -- Int32
+DECLARE @DictionaryKey Integer -- Int32
 SET     @DictionaryKey = 5
 
 INSERT INTO [R]

@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @intParam  -- Int32
+DECLARE @intParam Integer -- Int32
 SET     @intParam = 1
 
 SELECT

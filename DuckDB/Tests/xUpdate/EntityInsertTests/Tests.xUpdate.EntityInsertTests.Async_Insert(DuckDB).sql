@@ -1,11 +1,11 @@
 ﻿-- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Name NVarChar(5) -- String
 SET     $Name = 'async'
-DECLARE $Version  -- Int32
+DECLARE $Version INTEGER -- Int32
 SET     $Version = 3
-DECLARE $CreatedAt  -- DateTime2
+DECLARE $CreatedAt TIMESTAMP -- DateTime2
 SET     $CreatedAt = NULL
 DECLARE $CreatedBy NVarChar -- String
 SET     $CreatedBy = NULL

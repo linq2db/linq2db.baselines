@@ -1,7 +1,7 @@
 ﻿-- DuckDB
-DECLARE $rowCount  -- Int32
+DECLARE $rowCount INTEGER -- Int32
 SET     $rowCount = 9
-DECLARE $p  -- Int32
+DECLARE $p INTEGER -- Int32
 SET     $p = 10
 
 SELECT

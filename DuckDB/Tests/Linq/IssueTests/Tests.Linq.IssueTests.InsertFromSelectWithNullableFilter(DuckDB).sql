@@ -21,7 +21,7 @@ FROM
 	) t2
 
 -- DuckDB
-DECLARE $p  -- Int16
+DECLARE $p SMALLINT -- Int16
 SET     $p = 1234
 
 INSERT INTO InsertIssueTest

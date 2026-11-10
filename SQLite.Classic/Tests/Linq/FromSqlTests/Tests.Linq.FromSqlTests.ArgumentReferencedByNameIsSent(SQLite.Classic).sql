@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic SQLite
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = 2
 
 SELECT
@@ -10,9 +10,9 @@ FROM
 	) [p]
 
 -- SQLite.Classic SQLite
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = 1
-DECLARE @byName  -- Int32
+DECLARE @byName Integer -- Int32
 SET     @byName = 2
 
 SELECT

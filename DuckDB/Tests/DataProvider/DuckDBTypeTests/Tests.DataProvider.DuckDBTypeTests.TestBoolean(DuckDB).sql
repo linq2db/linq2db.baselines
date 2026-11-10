@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $value  -- Boolean
+DECLARE $value BOOLEAN -- Boolean
 SET     $value = False
 
 SELECT
@@ -26,11 +26,11 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
-DECLARE $Column  -- Boolean
+DECLARE $Column BOOLEAN -- Boolean
 SET     $Column = False
-DECLARE $ColumnNullable  -- Boolean
+DECLARE $ColumnNullable BOOLEAN -- Boolean
 SET     $ColumnNullable = NULL
 
 INSERT INTO "TypeTable`2"
@@ -47,7 +47,7 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $value  -- Boolean
+DECLARE $value BOOLEAN -- Boolean
 SET     $value = False
 
 SELECT
@@ -64,9 +64,9 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
-DECLARE $p2  -- Boolean
+DECLARE $p2 BOOLEAN -- Boolean
 SET     $p2 = False
 
 INSERT INTO "TypeTable`2"
@@ -79,7 +79,7 @@ VALUES
 ($p1,$p2,NULL)
 
 -- DuckDB
-DECLARE $value  -- Boolean
+DECLARE $value BOOLEAN -- Boolean
 SET     $value = False
 
 SELECT
@@ -111,7 +111,7 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-DECLARE $value  -- Boolean
+DECLARE $value BOOLEAN -- Boolean
 SET     $value = False
 
 SELECT
@@ -143,7 +143,7 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-DECLARE $value  -- Boolean
+DECLARE $value BOOLEAN -- Boolean
 SET     $value = False
 
 SELECT
@@ -156,9 +156,9 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable IS NULL
 
 -- DuckDB
-DECLARE $value  -- Boolean
+DECLARE $value BOOLEAN -- Boolean
 SET     $value = True
-DECLARE $nullableValue  -- Boolean
+DECLARE $nullableValue BOOLEAN -- Boolean
 SET     $nullableValue = False
 
 SELECT
@@ -185,11 +185,11 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
-DECLARE $Column  -- Boolean
+DECLARE $Column BOOLEAN -- Boolean
 SET     $Column = True
-DECLARE $ColumnNullable  -- Boolean
+DECLARE $ColumnNullable BOOLEAN -- Boolean
 SET     $ColumnNullable = False
 
 INSERT INTO "TypeTable`2"
@@ -206,9 +206,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $value  -- Boolean
+DECLARE $value BOOLEAN -- Boolean
 SET     $value = True
-DECLARE $nullableValue  -- Boolean
+DECLARE $nullableValue BOOLEAN -- Boolean
 SET     $nullableValue = False
 
 SELECT
@@ -225,11 +225,11 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
-DECLARE $p2  -- Boolean
+DECLARE $p2 BOOLEAN -- Boolean
 SET     $p2 = True
-DECLARE $p3  -- Boolean
+DECLARE $p3 BOOLEAN -- Boolean
 SET     $p3 = False
 
 INSERT INTO "TypeTable`2"
@@ -242,9 +242,9 @@ VALUES
 ($p1,$p2,$p3)
 
 -- DuckDB
-DECLARE $value  -- Boolean
+DECLARE $value BOOLEAN -- Boolean
 SET     $value = True
-DECLARE $nullableValue  -- Boolean
+DECLARE $nullableValue BOOLEAN -- Boolean
 SET     $nullableValue = False
 
 SELECT
@@ -276,9 +276,9 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-DECLARE $value  -- Boolean
+DECLARE $value BOOLEAN -- Boolean
 SET     $value = True
-DECLARE $nullableValue  -- Boolean
+DECLARE $nullableValue BOOLEAN -- Boolean
 SET     $nullableValue = False
 
 SELECT
@@ -310,9 +310,9 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-DECLARE $value  -- Boolean
+DECLARE $value BOOLEAN -- Boolean
 SET     $value = True
-DECLARE $nullableValue  -- Boolean
+DECLARE $nullableValue BOOLEAN -- Boolean
 SET     $nullableValue = False
 
 SELECT
@@ -325,9 +325,9 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable = $nullableValue
 
 -- DuckDB
-DECLARE $value  -- Boolean
+DECLARE $value BOOLEAN -- Boolean
 SET     $value = False
-DECLARE $nullableValue  -- Boolean
+DECLARE $nullableValue BOOLEAN -- Boolean
 SET     $nullableValue = True
 
 SELECT
@@ -354,11 +354,11 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
-DECLARE $Column  -- Boolean
+DECLARE $Column BOOLEAN -- Boolean
 SET     $Column = False
-DECLARE $ColumnNullable  -- Boolean
+DECLARE $ColumnNullable BOOLEAN -- Boolean
 SET     $ColumnNullable = True
 
 INSERT INTO "TypeTable`2"
@@ -375,9 +375,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $value  -- Boolean
+DECLARE $value BOOLEAN -- Boolean
 SET     $value = False
-DECLARE $nullableValue  -- Boolean
+DECLARE $nullableValue BOOLEAN -- Boolean
 SET     $nullableValue = True
 
 SELECT
@@ -394,11 +394,11 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
-DECLARE $p2  -- Boolean
+DECLARE $p2 BOOLEAN -- Boolean
 SET     $p2 = False
-DECLARE $p3  -- Boolean
+DECLARE $p3 BOOLEAN -- Boolean
 SET     $p3 = True
 
 INSERT INTO "TypeTable`2"
@@ -411,9 +411,9 @@ VALUES
 ($p1,$p2,$p3)
 
 -- DuckDB
-DECLARE $value  -- Boolean
+DECLARE $value BOOLEAN -- Boolean
 SET     $value = False
-DECLARE $nullableValue  -- Boolean
+DECLARE $nullableValue BOOLEAN -- Boolean
 SET     $nullableValue = True
 
 SELECT
@@ -445,9 +445,9 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-DECLARE $value  -- Boolean
+DECLARE $value BOOLEAN -- Boolean
 SET     $value = False
-DECLARE $nullableValue  -- Boolean
+DECLARE $nullableValue BOOLEAN -- Boolean
 SET     $nullableValue = True
 
 SELECT
@@ -479,9 +479,9 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-DECLARE $value  -- Boolean
+DECLARE $value BOOLEAN -- Boolean
 SET     $value = False
-DECLARE $nullableValue  -- Boolean
+DECLARE $nullableValue BOOLEAN -- Boolean
 SET     $nullableValue = True
 
 SELECT

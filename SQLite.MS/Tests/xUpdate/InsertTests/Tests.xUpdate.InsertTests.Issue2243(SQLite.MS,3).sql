@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(5) -- String
 SET     @Name = 'Test1'
@@ -35,7 +35,7 @@ FROM
 LIMIT 2
 
 -- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(5) -- String
 SET     @Name = 'Test2'

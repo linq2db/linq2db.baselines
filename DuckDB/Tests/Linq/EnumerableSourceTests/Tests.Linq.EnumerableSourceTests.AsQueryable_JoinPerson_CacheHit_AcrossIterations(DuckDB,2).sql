@@ -1,9 +1,9 @@
 ﻿-- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 20
-DECLARE $Id_1  -- Int32
+DECLARE $Id_1 INTEGER -- Int32
 SET     $Id_1 = 21
-DECLARE $Id_2  -- Int32
+DECLARE $Id_2 INTEGER -- Int32
 SET     $Id_2 = 22
 
 SELECT

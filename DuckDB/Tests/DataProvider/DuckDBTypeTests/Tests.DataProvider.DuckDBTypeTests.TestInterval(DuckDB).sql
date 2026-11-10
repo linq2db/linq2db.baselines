@@ -26,7 +26,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column  -- Object
 SET     $Column = '02:03:04.123456'::INTERVAL
@@ -64,7 +64,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2  -- Object
 SET     $p2 = '02:03:04.123456'::INTERVAL
@@ -186,7 +186,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column  -- Object
 SET     $Column = INTERVAL '30 days 12:30:45.123456'
@@ -226,7 +226,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2  -- Object
 SET     $p2 = INTERVAL '30 days 12:30:45.123456'
@@ -352,7 +352,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 
 INSERT INTO "TypeTable`2"
@@ -384,7 +384,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 
 INSERT INTO "TypeTable`2"
@@ -494,7 +494,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 
 INSERT INTO "TypeTable`2"
@@ -526,7 +526,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 
 INSERT INTO "TypeTable`2"

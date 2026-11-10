@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic SQLite
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = 102
 
 DELETE FROM
@@ -26,7 +26,7 @@ WHERE
 	[LinqDataTypes].[ID] = 101 AND [LinqDataTypes].[BigIntValue] = 12
 
 -- SQLite.Classic SQLite
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = 102
 
 DELETE FROM

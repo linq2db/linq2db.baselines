@@ -1,7 +1,7 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @IntValue  -- Int32
+DECLARE @IntValue Integer -- Int32
 SET     @IntValue = 42
 DECLARE @StrValue NVarChar(5) -- String
 SET     @StrValue = 'hello'
@@ -20,9 +20,9 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @IntValue  -- Int32
+DECLARE @IntValue Integer -- Int32
 SET     @IntValue = NULL
 DECLARE @StrValue NVarChar -- String
 SET     @StrValue = NULL

@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @parentId  -- Int32
+DECLARE @parentId Integer -- Int32
 SET     @parentId = 12
 
 SELECT

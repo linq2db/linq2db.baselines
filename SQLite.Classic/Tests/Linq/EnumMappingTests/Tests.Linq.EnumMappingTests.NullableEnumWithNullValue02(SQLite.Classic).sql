@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic SQLite
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = 105
 
 DELETE FROM
@@ -8,9 +8,9 @@ WHERE
 	[LinqDataTypes].[ID] >= 101 AND [LinqDataTypes].[ID] < @p
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 101
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 11
 
 INSERT INTO [LinqDataTypes]
@@ -25,9 +25,9 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 102
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 22
 
 INSERT INTO [LinqDataTypes]
@@ -42,9 +42,9 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 103
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = NULL
 
 INSERT INTO [LinqDataTypes]
@@ -59,9 +59,9 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 104
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = NULL
 
 INSERT INTO [LinqDataTypes]
@@ -99,7 +99,7 @@ ORDER BY
 	[r].[ID]
 
 -- SQLite.Classic SQLite
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = 105
 
 DELETE FROM

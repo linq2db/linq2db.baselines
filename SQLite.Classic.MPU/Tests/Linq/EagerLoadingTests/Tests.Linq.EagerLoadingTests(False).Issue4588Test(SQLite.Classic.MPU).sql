@@ -1,7 +1,7 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @take  -- Int32
+DECLARE @take Integer -- Int32
 SET     @take = 10
-DECLARE @skip  -- Int32
+DECLARE @skip Integer -- Int32
 SET     @skip = 100
 
 SELECT
@@ -39,9 +39,9 @@ FROM
 		INNER JOIN [SubOrderDetail] [d_1] ON [m_1].[Id] = [d_1].[SubOrderId]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @take  -- Int32
+DECLARE @take Integer -- Int32
 SET     @take = 10
-DECLARE @skip  -- Int32
+DECLARE @skip Integer -- Int32
 SET     @skip = 100
 
 SELECT
@@ -68,9 +68,9 @@ FROM
 		INNER JOIN [SubOrder] [d] ON [m_1].[Id] = [d].[OrderId]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @take  -- Int32
+DECLARE @take Integer -- Int32
 SET     @take = 10
-DECLARE @skip  -- Int32
+DECLARE @skip Integer -- Int32
 SET     @skip = 100
 
 SELECT

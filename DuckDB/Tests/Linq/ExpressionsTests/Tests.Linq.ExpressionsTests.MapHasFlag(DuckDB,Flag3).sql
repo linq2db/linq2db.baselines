@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $flag  -- Int32
+DECLARE $flag INTEGER -- Int32
 SET     $flag = 4
 
 SELECT

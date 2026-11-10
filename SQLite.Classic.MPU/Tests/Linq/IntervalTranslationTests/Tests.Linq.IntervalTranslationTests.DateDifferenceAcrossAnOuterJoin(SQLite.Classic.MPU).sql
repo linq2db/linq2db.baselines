@@ -62,7 +62,7 @@ WHERE
 	CAST(CAST(Round((JulianDay([b].[FinishedOn]) - JulianDay([x].[StartedOn])) * 86400000) AS INTEGER) * 10000 AS Float) / 864000000000 > 1
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Hours  -- Int32
+DECLARE @Hours Integer -- Int32
 SET     @Hours = 3
 
 SELECT
@@ -74,7 +74,7 @@ WHERE
 	CAST(((CAST(Round((JulianDay([b].[FinishedOn]) - JulianDay([x].[StartedOn])) * 86400000) AS INTEGER) * 10000) / 36000000000) % 24 AS INTEGER) = @Hours
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Minutes  -- Int32
+DECLARE @Minutes Integer -- Int32
 SET     @Minutes = 15
 
 SELECT
@@ -95,7 +95,7 @@ WHERE
 	CAST(CAST(Round((JulianDay([x].[StartedOn]) - JulianDay([b].[FinishedOn])) * 86400000) AS INTEGER) * 10000 AS Float) / 36000000000 < -1
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Hours  -- Int32
+DECLARE @Hours Integer -- Int32
 SET     @Hours = 3
 
 SELECT

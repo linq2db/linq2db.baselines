@@ -74,7 +74,7 @@ ORDER BY
 	t2.Id
 
 -- DuckDB
-DECLARE $skip  -- Int32
+DECLARE $skip INTEGER -- Int32
 SET     $skip = 1
 
 SELECT

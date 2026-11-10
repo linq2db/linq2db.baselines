@@ -1,9 +1,9 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @Id  -- Int64
+DECLARE @Id Integer -- Int64
 SET     @Id = 1
-DECLARE @SomeValue1  -- Int32
+DECLARE @SomeValue1 Integer -- Int32
 SET     @SomeValue1 = 2
-DECLARE @SomeValue2  -- Int32
+DECLARE @SomeValue2 Integer -- Int32
 SET     @SomeValue2 = 2
 
 INSERT INTO [ValuesTable]

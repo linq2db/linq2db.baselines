@@ -13,7 +13,7 @@ FROM
 		INNER JOIN LinqDataTypes t2 ON t1.ID = t2.ID
 
 -- DuckDB
-DECLARE $param2  -- Boolean
+DECLARE $param2 BOOLEAN -- Boolean
 SET     $param2 = False
 
 SELECT

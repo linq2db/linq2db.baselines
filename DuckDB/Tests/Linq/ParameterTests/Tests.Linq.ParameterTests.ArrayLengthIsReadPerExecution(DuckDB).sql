@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $arr  -- Int32
+DECLARE $arr INTEGER -- Int32
 SET     $arr = 1
 
 SELECT
@@ -12,7 +12,7 @@ WHERE
 LIMIT 2
 
 -- DuckDB
-DECLARE $arr  -- Int32
+DECLARE $arr INTEGER -- Int32
 SET     $arr = 2
 
 SELECT

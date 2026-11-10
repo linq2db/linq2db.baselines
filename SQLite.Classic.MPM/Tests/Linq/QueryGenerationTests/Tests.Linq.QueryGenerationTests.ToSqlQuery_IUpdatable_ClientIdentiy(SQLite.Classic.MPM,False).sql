@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 1
 
 INSERT INTO [TableWithIdentity]
@@ -12,7 +12,7 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @newValue  -- Int32
+DECLARE @newValue Integer -- Int32
 SET     @newValue = 123
 
 UPDATE

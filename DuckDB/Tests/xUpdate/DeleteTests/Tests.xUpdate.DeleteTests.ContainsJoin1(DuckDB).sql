@@ -1,7 +1,7 @@
 ﻿-- DuckDB
-DECLARE $ParentID  -- Int32
+DECLARE $ParentID INTEGER -- Int32
 SET     $ParentID = 1000
-DECLARE $Value1  -- Int32
+DECLARE $Value1 INTEGER -- Int32
 SET     $Value1 = NULL
 
 INSERT INTO Parent
@@ -16,9 +16,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $ParentID  -- Int32
+DECLARE $ParentID INTEGER -- Int32
 SET     $ParentID = 1000
-DECLARE $ChildID  -- Int32
+DECLARE $ChildID INTEGER -- Int32
 SET     $ChildID = 1000
 
 INSERT INTO Child
@@ -33,9 +33,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $ParentID  -- Int32
+DECLARE $ParentID INTEGER -- Int32
 SET     $ParentID = 1000
-DECLARE $ChildID  -- Int32
+DECLARE $ChildID INTEGER -- Int32
 SET     $ChildID = 1001
 
 INSERT INTO Child
@@ -50,9 +50,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $ParentID  -- Int32
+DECLARE $ParentID INTEGER -- Int32
 SET     $ParentID = 1000
-DECLARE $ChildID  -- Int32
+DECLARE $ChildID INTEGER -- Int32
 SET     $ChildID = 1002
 
 INSERT INTO Child
@@ -67,7 +67,7 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $id  -- Int32
+DECLARE $id INTEGER -- Int32
 SET     $id = 1000
 
 DELETE FROM
@@ -87,7 +87,7 @@ WHERE
 	)
 
 -- DuckDB
-DECLARE $id  -- Int32
+DECLARE $id INTEGER -- Int32
 SET     $id = 1000
 
 DELETE FROM

@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @operand  -- Int32
+DECLARE @operand Integer -- Int32
 SET     @operand = 2
 
 SELECT
@@ -11,7 +11,7 @@ GROUP BY
 LIMIT 2
 
 -- SQLite.MS SQLite
-DECLARE @operand  -- Int32
+DECLARE @operand Integer -- Int32
 SET     @operand = 2
 
 SELECT
@@ -23,7 +23,7 @@ GROUP BY
 LIMIT 2
 
 -- SQLite.MS SQLite
-DECLARE @operand  -- Int32
+DECLARE @operand Integer -- Int32
 SET     @operand = 2
 
 SELECT
@@ -35,7 +35,7 @@ GROUP BY
 LIMIT 2
 
 -- SQLite.MS SQLite
-DECLARE @operand  -- Int32
+DECLARE @operand Integer -- Int32
 SET     @operand = 200
 
 SELECT
@@ -47,7 +47,7 @@ GROUP BY
 LIMIT 2
 
 -- SQLite.MS SQLite
-DECLARE @operand  -- Int32
+DECLARE @operand Integer -- Int32
 SET     @operand = 200
 
 SELECT
@@ -59,7 +59,7 @@ GROUP BY
 LIMIT 2
 
 -- SQLite.MS SQLite
-DECLARE @operand  -- Int32
+DECLARE @operand Integer -- Int32
 SET     @operand = 2
 
 SELECT
@@ -71,7 +71,7 @@ WHERE
 LIMIT 2
 
 -- SQLite.MS SQLite
-DECLARE @operand  -- Int32
+DECLARE @operand Integer -- Int32
 SET     @operand = 200
 
 SELECT
@@ -83,7 +83,7 @@ WHERE
 LIMIT 2
 
 -- SQLite.MS SQLite
-DECLARE @operand  -- Int32
+DECLARE @operand Integer -- Int32
 SET     @operand = 200
 
 SELECT
@@ -95,7 +95,7 @@ WHERE
 LIMIT 2
 
 -- SQLite.MS SQLite
-DECLARE @operand  -- Int32
+DECLARE @operand Integer -- Int32
 SET     @operand = 200
 
 SELECT

@@ -8,7 +8,7 @@ CREATE TABLE aa
 )
 
 -- DuckDB
-DECLARE $bb  -- Int32
+DECLARE $bb INTEGER -- Int32
 SET     $bb = 99
 DECLARE $cc NVarChar(5) -- String
 SET     $cc = 'hallo'

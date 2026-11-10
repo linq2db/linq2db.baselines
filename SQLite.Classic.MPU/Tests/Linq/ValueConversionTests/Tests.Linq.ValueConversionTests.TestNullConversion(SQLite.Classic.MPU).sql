@@ -1,13 +1,13 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @IntClassRequired  -- Int32
+DECLARE @IntClassRequired Integer -- Int32
 SET     @IntClassRequired = 0
-DECLARE @IntClassNullable  -- Int32
+DECLARE @IntClassNullable Integer -- Int32
 SET     @IntClassNullable = NULL
-DECLARE @IntClassRequiredWithNull  -- Int32
+DECLARE @IntClassRequiredWithNull Integer -- Int32
 SET     @IntClassRequiredWithNull = -1
-DECLARE @IntClassNullableWithNull  -- Int32
+DECLARE @IntClassNullableWithNull Integer -- Int32
 SET     @IntClassNullableWithNull = -1
 DECLARE @StringStructRequired VarChar(8) -- AnsiString
 SET     @StringStructRequired = 'must_set'
@@ -25,13 +25,13 @@ DECLARE @StringClassRequiredWithNull VarChar(2) -- AnsiString
 SET     @StringClassRequiredWithNull = '-1'
 DECLARE @StringClassNullableWithNull VarChar(2) -- AnsiString
 SET     @StringClassNullableWithNull = '-1'
-DECLARE @IntStructRequired  -- Int32
+DECLARE @IntStructRequired Integer -- Int32
 SET     @IntStructRequired = 0
-DECLARE @IntStructNullable  -- Int32
+DECLARE @IntStructNullable Integer -- Int32
 SET     @IntStructNullable = NULL
-DECLARE @IntStructRequiredWithNull  -- Int32
+DECLARE @IntStructRequiredWithNull Integer -- Int32
 SET     @IntStructRequiredWithNull = -1
-DECLARE @IntStructNullableWithNull  -- Int32
+DECLARE @IntStructNullableWithNull Integer -- Int32
 SET     @IntStructNullableWithNull = -1
 
 INSERT INTO [DefaultValuesTable]
@@ -76,15 +76,15 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @IntClassRequired  -- Int32
+DECLARE @IntClassRequired Integer -- Int32
 SET     @IntClassRequired = 1
-DECLARE @IntClassNullable  -- Int32
+DECLARE @IntClassNullable Integer -- Int32
 SET     @IntClassNullable = 1
-DECLARE @IntClassRequiredWithNull  -- Int32
+DECLARE @IntClassRequiredWithNull Integer -- Int32
 SET     @IntClassRequiredWithNull = 1
-DECLARE @IntClassNullableWithNull  -- Int32
+DECLARE @IntClassNullableWithNull Integer -- Int32
 SET     @IntClassNullableWithNull = 1
 DECLARE @StringStructRequired VarChar(3) -- AnsiString
 SET     @StringStructRequired = 'one'
@@ -102,13 +102,13 @@ DECLARE @StringClassRequiredWithNull VarChar(3) -- AnsiString
 SET     @StringClassRequiredWithNull = 'one'
 DECLARE @StringClassNullableWithNull VarChar(3) -- AnsiString
 SET     @StringClassNullableWithNull = 'one'
-DECLARE @IntStructRequired  -- Int32
+DECLARE @IntStructRequired Integer -- Int32
 SET     @IntStructRequired = 1
-DECLARE @IntStructNullable  -- Int32
+DECLARE @IntStructNullable Integer -- Int32
 SET     @IntStructNullable = 1
-DECLARE @IntStructRequiredWithNull  -- Int32
+DECLARE @IntStructRequiredWithNull Integer -- Int32
 SET     @IntStructRequiredWithNull = 1
-DECLARE @IntStructNullableWithNull  -- Int32
+DECLARE @IntStructNullableWithNull Integer -- Int32
 SET     @IntStructNullableWithNull = 1
 
 INSERT INTO [DefaultValuesTable]

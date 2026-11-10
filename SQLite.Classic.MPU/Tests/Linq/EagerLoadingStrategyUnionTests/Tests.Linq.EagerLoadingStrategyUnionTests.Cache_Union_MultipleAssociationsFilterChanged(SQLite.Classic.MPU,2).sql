@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @maxId  -- Int32
+DECLARE @maxId Integer -- Int32
 SET     @maxId = 3
 
 WITH [CTE_1] ([Id], [field], [Name])

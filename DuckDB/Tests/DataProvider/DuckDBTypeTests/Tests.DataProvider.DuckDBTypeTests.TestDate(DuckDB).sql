@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $value  -- Date
+DECLARE $value DATE -- Date
 SET     $value = '0001-01-01'::DATE
 
 SELECT
@@ -26,11 +26,11 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
-DECLARE $Column  -- Date
+DECLARE $Column DATE -- Date
 SET     $Column = '0001-01-01'::DATE
-DECLARE $ColumnNullable  -- Date
+DECLARE $ColumnNullable DATE -- Date
 SET     $ColumnNullable = NULL
 
 INSERT INTO "TypeTable`2"
@@ -47,7 +47,7 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $value  -- Date
+DECLARE $value DATE -- Date
 SET     $value = '0001-01-01'::DATE
 
 SELECT
@@ -64,9 +64,9 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
-DECLARE $p2  -- Date
+DECLARE $p2 DATE -- Date
 SET     $p2 = '0001-01-01'::DATE
 
 INSERT INTO "TypeTable`2"
@@ -79,7 +79,7 @@ VALUES
 ($p1,$p2,NULL)
 
 -- DuckDB
-DECLARE $value  -- Date
+DECLARE $value DATE -- Date
 SET     $value = '0001-01-01'::DATE
 
 SELECT
@@ -111,7 +111,7 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-DECLARE $value  -- Date
+DECLARE $value DATE -- Date
 SET     $value = '0001-01-01'::DATE
 
 SELECT
@@ -143,7 +143,7 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-DECLARE $value  -- Date
+DECLARE $value DATE -- Date
 SET     $value = '0001-01-01'::DATE
 
 SELECT
@@ -156,9 +156,9 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable IS NULL
 
 -- DuckDB
-DECLARE $value  -- Date
+DECLARE $value DATE -- Date
 SET     $value = '0001-01-01'::DATE
-DECLARE $nullableValue  -- Date
+DECLARE $nullableValue DATE -- Date
 SET     $nullableValue = '9999-12-31'::DATE
 
 SELECT
@@ -185,11 +185,11 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
-DECLARE $Column  -- Date
+DECLARE $Column DATE -- Date
 SET     $Column = '0001-01-01'::DATE
-DECLARE $ColumnNullable  -- Date
+DECLARE $ColumnNullable DATE -- Date
 SET     $ColumnNullable = '9999-12-31'::DATE
 
 INSERT INTO "TypeTable`2"
@@ -206,9 +206,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $value  -- Date
+DECLARE $value DATE -- Date
 SET     $value = '0001-01-01'::DATE
-DECLARE $nullableValue  -- Date
+DECLARE $nullableValue DATE -- Date
 SET     $nullableValue = '9999-12-31'::DATE
 
 SELECT
@@ -225,11 +225,11 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
-DECLARE $p2  -- Date
+DECLARE $p2 DATE -- Date
 SET     $p2 = '0001-01-01'::DATE
-DECLARE $p3  -- Date
+DECLARE $p3 DATE -- Date
 SET     $p3 = '9999-12-31'::DATE
 
 INSERT INTO "TypeTable`2"
@@ -242,9 +242,9 @@ VALUES
 ($p1,$p2,$p3)
 
 -- DuckDB
-DECLARE $value  -- Date
+DECLARE $value DATE -- Date
 SET     $value = '0001-01-01'::DATE
-DECLARE $nullableValue  -- Date
+DECLARE $nullableValue DATE -- Date
 SET     $nullableValue = '9999-12-31'::DATE
 
 SELECT
@@ -276,9 +276,9 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-DECLARE $value  -- Date
+DECLARE $value DATE -- Date
 SET     $value = '0001-01-01'::DATE
-DECLARE $nullableValue  -- Date
+DECLARE $nullableValue DATE -- Date
 SET     $nullableValue = '9999-12-31'::DATE
 
 SELECT
@@ -310,9 +310,9 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-DECLARE $value  -- Date
+DECLARE $value DATE -- Date
 SET     $value = '0001-01-01'::DATE
-DECLARE $nullableValue  -- Date
+DECLARE $nullableValue DATE -- Date
 SET     $nullableValue = '9999-12-31'::DATE
 
 SELECT
@@ -325,7 +325,7 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable = $nullableValue
 
 -- DuckDB
-DECLARE $value  -- Date
+DECLARE $value DATE -- Date
 SET     $value = '0001-01-01 00:00:00.000000'::TIMESTAMP
 
 SELECT
@@ -352,11 +352,11 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
-DECLARE $Column  -- Date
+DECLARE $Column DATE -- Date
 SET     $Column = '0001-01-01 00:00:00.000000'::TIMESTAMP
-DECLARE $ColumnNullable  -- Date
+DECLARE $ColumnNullable DATE -- Date
 SET     $ColumnNullable = NULL
 
 INSERT INTO "TypeTable`2"
@@ -373,7 +373,7 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $value  -- Date
+DECLARE $value DATE -- Date
 SET     $value = '0001-01-01 00:00:00.000000'::TIMESTAMP
 
 SELECT
@@ -390,9 +390,9 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
-DECLARE $p2  -- Date
+DECLARE $p2 DATE -- Date
 SET     $p2 = '0001-01-01 00:00:00.000000'::TIMESTAMP
 
 INSERT INTO "TypeTable`2"
@@ -405,7 +405,7 @@ VALUES
 ($p1,$p2,NULL)
 
 -- DuckDB
-DECLARE $value  -- Date
+DECLARE $value DATE -- Date
 SET     $value = '0001-01-01 00:00:00.000000'::TIMESTAMP
 
 SELECT
@@ -437,7 +437,7 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-DECLARE $value  -- Date
+DECLARE $value DATE -- Date
 SET     $value = '0001-01-01 00:00:00.000000'::TIMESTAMP
 
 SELECT
@@ -469,7 +469,7 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-DECLARE $value  -- Date
+DECLARE $value DATE -- Date
 SET     $value = '0001-01-01 00:00:00.000000'::TIMESTAMP
 
 SELECT
@@ -482,9 +482,9 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable IS NULL
 
 -- DuckDB
-DECLARE $value  -- Date
+DECLARE $value DATE -- Date
 SET     $value = '0001-01-01 00:00:00.000000'::TIMESTAMP
-DECLARE $nullableValue  -- Date
+DECLARE $nullableValue DATE -- Date
 SET     $nullableValue = '9999-12-31 00:00:00.000000'::TIMESTAMP
 
 SELECT
@@ -511,11 +511,11 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
-DECLARE $Column  -- Date
+DECLARE $Column DATE -- Date
 SET     $Column = '0001-01-01 00:00:00.000000'::TIMESTAMP
-DECLARE $ColumnNullable  -- Date
+DECLARE $ColumnNullable DATE -- Date
 SET     $ColumnNullable = '9999-12-31 00:00:00.000000'::TIMESTAMP
 
 INSERT INTO "TypeTable`2"
@@ -532,9 +532,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $value  -- Date
+DECLARE $value DATE -- Date
 SET     $value = '0001-01-01 00:00:00.000000'::TIMESTAMP
-DECLARE $nullableValue  -- Date
+DECLARE $nullableValue DATE -- Date
 SET     $nullableValue = '9999-12-31 00:00:00.000000'::TIMESTAMP
 
 SELECT
@@ -551,11 +551,11 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
-DECLARE $p2  -- Date
+DECLARE $p2 DATE -- Date
 SET     $p2 = '0001-01-01 00:00:00.000000'::TIMESTAMP
-DECLARE $p3  -- Date
+DECLARE $p3 DATE -- Date
 SET     $p3 = '9999-12-31 00:00:00.000000'::TIMESTAMP
 
 INSERT INTO "TypeTable`2"
@@ -568,9 +568,9 @@ VALUES
 ($p1,$p2,$p3)
 
 -- DuckDB
-DECLARE $value  -- Date
+DECLARE $value DATE -- Date
 SET     $value = '0001-01-01 00:00:00.000000'::TIMESTAMP
-DECLARE $nullableValue  -- Date
+DECLARE $nullableValue DATE -- Date
 SET     $nullableValue = '9999-12-31 00:00:00.000000'::TIMESTAMP
 
 SELECT
@@ -602,9 +602,9 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-DECLARE $value  -- Date
+DECLARE $value DATE -- Date
 SET     $value = '0001-01-01 00:00:00.000000'::TIMESTAMP
-DECLARE $nullableValue  -- Date
+DECLARE $nullableValue DATE -- Date
 SET     $nullableValue = '9999-12-31 00:00:00.000000'::TIMESTAMP
 
 SELECT
@@ -636,9 +636,9 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-DECLARE $value  -- Date
+DECLARE $value DATE -- Date
 SET     $value = '0001-01-01 00:00:00.000000'::TIMESTAMP
-DECLARE $nullableValue  -- Date
+DECLARE $nullableValue DATE -- Date
 SET     $nullableValue = '9999-12-31 00:00:00.000000'::TIMESTAMP
 
 SELECT
@@ -651,7 +651,7 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable = $nullableValue
 
 -- DuckDB
-DECLARE $value  -- Date
+DECLARE $value DATE -- Date
 SET     $value = '1-02-03'::DATE
 
 SELECT
@@ -678,11 +678,11 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
-DECLARE $Column  -- Date
+DECLARE $Column DATE -- Date
 SET     $Column = '1-02-03'::DATE
-DECLARE $ColumnNullable  -- Date
+DECLARE $ColumnNullable DATE -- Date
 SET     $ColumnNullable = NULL
 
 INSERT INTO "TypeTable`2"
@@ -699,7 +699,7 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $value  -- Date
+DECLARE $value DATE -- Date
 SET     $value = '1-02-03'::DATE
 
 SELECT
@@ -716,9 +716,9 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
-DECLARE $p2  -- Date
+DECLARE $p2 DATE -- Date
 SET     $p2 = '1-02-03'::DATE
 
 INSERT INTO "TypeTable`2"
@@ -731,7 +731,7 @@ VALUES
 ($p1,$p2,NULL)
 
 -- DuckDB
-DECLARE $value  -- Date
+DECLARE $value DATE -- Date
 SET     $value = '1-02-03'::DATE
 
 SELECT
@@ -763,7 +763,7 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-DECLARE $value  -- Date
+DECLARE $value DATE -- Date
 SET     $value = '1-02-03'::DATE
 
 SELECT
@@ -795,7 +795,7 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-DECLARE $value  -- Date
+DECLARE $value DATE -- Date
 SET     $value = '1-02-03'::DATE
 
 SELECT
@@ -808,9 +808,9 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable IS NULL
 
 -- DuckDB
-DECLARE $value  -- Date
+DECLARE $value DATE -- Date
 SET     $value = '-infinity'::DATE
-DECLARE $nullableValue  -- Date
+DECLARE $nullableValue DATE -- Date
 SET     $nullableValue = 'infinity'::DATE
 
 SELECT
@@ -837,11 +837,11 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
-DECLARE $Column  -- Date
+DECLARE $Column DATE -- Date
 SET     $Column = '-infinity'::DATE
-DECLARE $ColumnNullable  -- Date
+DECLARE $ColumnNullable DATE -- Date
 SET     $ColumnNullable = 'infinity'::DATE
 
 INSERT INTO "TypeTable`2"
@@ -858,9 +858,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $value  -- Date
+DECLARE $value DATE -- Date
 SET     $value = '-infinity'::DATE
-DECLARE $nullableValue  -- Date
+DECLARE $nullableValue DATE -- Date
 SET     $nullableValue = 'infinity'::DATE
 
 SELECT
@@ -877,11 +877,11 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
-DECLARE $p2  -- Date
+DECLARE $p2 DATE -- Date
 SET     $p2 = '-infinity'::DATE
-DECLARE $p3  -- Date
+DECLARE $p3 DATE -- Date
 SET     $p3 = 'infinity'::DATE
 
 INSERT INTO "TypeTable`2"
@@ -894,9 +894,9 @@ VALUES
 ($p1,$p2,$p3)
 
 -- DuckDB
-DECLARE $value  -- Date
+DECLARE $value DATE -- Date
 SET     $value = '-infinity'::DATE
-DECLARE $nullableValue  -- Date
+DECLARE $nullableValue DATE -- Date
 SET     $nullableValue = 'infinity'::DATE
 
 SELECT
@@ -928,9 +928,9 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-DECLARE $value  -- Date
+DECLARE $value DATE -- Date
 SET     $value = '-infinity'::DATE
-DECLARE $nullableValue  -- Date
+DECLARE $nullableValue DATE -- Date
 SET     $nullableValue = 'infinity'::DATE
 
 SELECT
@@ -962,9 +962,9 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-DECLARE $value  -- Date
+DECLARE $value DATE -- Date
 SET     $value = '-infinity'::DATE
-DECLARE $nullableValue  -- Date
+DECLARE $nullableValue DATE -- Date
 SET     $nullableValue = 'infinity'::DATE
 
 SELECT
@@ -977,9 +977,9 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable = $nullableValue
 
 -- DuckDB
-DECLARE $value  -- Date
+DECLARE $value DATE -- Date
 SET     $value = '-5877641-06-25'::DATE
-DECLARE $nullableValue  -- Date
+DECLARE $nullableValue DATE -- Date
 SET     $nullableValue = '5881580-07-10'::DATE
 
 SELECT
@@ -1006,11 +1006,11 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
-DECLARE $Column  -- Date
+DECLARE $Column DATE -- Date
 SET     $Column = '-5877641-06-25'::DATE
-DECLARE $ColumnNullable  -- Date
+DECLARE $ColumnNullable DATE -- Date
 SET     $ColumnNullable = '5881580-07-10'::DATE
 
 INSERT INTO "TypeTable`2"
@@ -1027,9 +1027,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $value  -- Date
+DECLARE $value DATE -- Date
 SET     $value = '-5877641-06-25'::DATE
-DECLARE $nullableValue  -- Date
+DECLARE $nullableValue DATE -- Date
 SET     $nullableValue = '5881580-07-10'::DATE
 
 SELECT
@@ -1046,11 +1046,11 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
-DECLARE $p2  -- Date
+DECLARE $p2 DATE -- Date
 SET     $p2 = '-5877641-06-25'::DATE
-DECLARE $p3  -- Date
+DECLARE $p3 DATE -- Date
 SET     $p3 = '5881580-07-10'::DATE
 
 INSERT INTO "TypeTable`2"
@@ -1063,9 +1063,9 @@ VALUES
 ($p1,$p2,$p3)
 
 -- DuckDB
-DECLARE $value  -- Date
+DECLARE $value DATE -- Date
 SET     $value = '-5877641-06-25'::DATE
-DECLARE $nullableValue  -- Date
+DECLARE $nullableValue DATE -- Date
 SET     $nullableValue = '5881580-07-10'::DATE
 
 SELECT
@@ -1097,9 +1097,9 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-DECLARE $value  -- Date
+DECLARE $value DATE -- Date
 SET     $value = '-5877641-06-25'::DATE
-DECLARE $nullableValue  -- Date
+DECLARE $nullableValue DATE -- Date
 SET     $nullableValue = '5881580-07-10'::DATE
 
 SELECT
@@ -1131,9 +1131,9 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-DECLARE $value  -- Date
+DECLARE $value DATE -- Date
 SET     $value = '-5877641-06-25'::DATE
-DECLARE $nullableValue  -- Date
+DECLARE $nullableValue DATE -- Date
 SET     $nullableValue = '5881580-07-10'::DATE
 
 SELECT

@@ -1,7 +1,7 @@
 ﻿-- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
-DECLARE $p  -- Int32
+DECLARE $p INTEGER -- Int32
 SET     $p = 2
 
 SELECT
@@ -24,9 +24,9 @@ FROM
 	TestConstantsData t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
-DECLARE $p  -- Int32
+DECLARE $p INTEGER -- Int32
 SET     $p = 2
 
 SELECT

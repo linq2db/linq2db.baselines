@@ -444,7 +444,7 @@ DECLARE @varbinaryDataType Binary(1)
 SET     @varbinaryDataType = X'02'
 DECLARE @imageDataType Binary(4)
 SET     @imageDataType = X'00000003'
-DECLARE @uniqueidentifierDataType  -- Guid
+DECLARE @uniqueidentifierDataType Blob -- Guid
 SET     @uniqueidentifierDataType = X'FF19966F868B11D0B42D00C04FC964FF'
 
 
@@ -902,7 +902,7 @@ DECLARE @varbinaryDataType Binary(1)
 SET     @varbinaryDataType = X'02'
 DECLARE @imageDataType Binary(4)
 SET     @imageDataType = X'00000003'
-DECLARE @uniqueidentifierDataType  -- Guid
+DECLARE @uniqueidentifierDataType Blob -- Guid
 SET     @uniqueidentifierDataType = X'FF19966F868B11D0B42D00C04FC964FF'
 
 

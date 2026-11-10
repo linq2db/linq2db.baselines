@@ -18,9 +18,9 @@ FROM
 	[BananaTable] [t1]
 
 -- SQLite.MS SQLite
-DECLARE @Property  -- Object
+DECLARE @Property Text(6) -- Object
 SET     @Property = 'banana'
-DECLARE @filter  -- Object
+DECLARE @filter Integer -- Object
 SET     @filter = 1
 
 UPDATE

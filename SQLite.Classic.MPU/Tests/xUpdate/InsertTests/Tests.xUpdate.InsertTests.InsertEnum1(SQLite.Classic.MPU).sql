@@ -5,7 +5,7 @@ WHERE
 	[Parent].[ParentID] > 1000
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Value1  -- Int32
+DECLARE @Value1 Integer -- Int32
 SET     @Value1 = 2
 
 INSERT INTO [Parent]
@@ -20,9 +20,9 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @id  -- Int32
+DECLARE @id Integer -- Int32
 SET     @id = 1001
-DECLARE @Value1  -- Int32
+DECLARE @Value1 Integer -- Int32
 SET     @Value1 = 2
 
 SELECT

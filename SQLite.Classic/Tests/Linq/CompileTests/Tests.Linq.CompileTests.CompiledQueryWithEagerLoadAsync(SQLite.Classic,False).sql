@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic SQLite
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = 1
 
 SELECT
@@ -18,7 +18,7 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 -- SQLite.Classic SQLite
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = 1
 
 SELECT
@@ -30,7 +30,7 @@ WHERE
 	[p].[ParentID] = @p
 
 -- SQLite.Classic SQLite
-DECLARE @id  -- Int32
+DECLARE @id Integer -- Int32
 SET     @id = 1
 
 SELECT
@@ -43,7 +43,7 @@ ORDER BY
 	[c_1].[ChildID]
 
 -- SQLite.Classic SQLite
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = 2
 
 SELECT
@@ -62,7 +62,7 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 -- SQLite.Classic SQLite
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = 2
 
 SELECT
@@ -74,7 +74,7 @@ WHERE
 	[p].[ParentID] = @p
 
 -- SQLite.Classic SQLite
-DECLARE @id  -- Int32
+DECLARE @id Integer -- Int32
 SET     @id = 2
 
 SELECT

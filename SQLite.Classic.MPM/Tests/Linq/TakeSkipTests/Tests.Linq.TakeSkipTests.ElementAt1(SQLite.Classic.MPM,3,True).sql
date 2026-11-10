@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @skip  -- Int32
+DECLARE @skip Integer -- Int32
 SET     @skip = 3
 
 SELECT

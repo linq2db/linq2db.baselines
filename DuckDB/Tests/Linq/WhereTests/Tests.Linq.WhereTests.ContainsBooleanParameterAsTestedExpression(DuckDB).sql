@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $flag  -- Boolean
+DECLARE $flag BOOLEAN -- Boolean
 SET     $flag = True
 
 SELECT

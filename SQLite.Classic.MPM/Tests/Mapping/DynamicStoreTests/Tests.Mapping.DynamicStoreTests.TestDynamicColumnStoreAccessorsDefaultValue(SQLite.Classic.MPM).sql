@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 5
 DECLARE @Name NVarChar(12) -- String
 SET     @Name = 'accessor_def'

@@ -1,11 +1,11 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Code NVarChar(5) -- String
 SET     @Code = 'Child'
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(4) -- String
 SET     @Name = 'Jane'
-DECLARE @IsMale  -- Boolean
+DECLARE @IsMale Integer -- Boolean
 SET     @IsMale = 1
 
 INSERT INTO [Base]
@@ -26,11 +26,11 @@ VALUES
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Code NVarChar(6) -- String
 SET     @Code = 'Child2'
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Name NVarChar(3) -- String
 SET     @Name = 'Bob'
-DECLARE @Age  -- Int32
+DECLARE @Age Integer -- Int32
 SET     @Age = 10
 
 INSERT INTO [Base]
@@ -49,9 +49,9 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @ValueId  -- Int32
+DECLARE @ValueId Integer -- Int32
 SET     @ValueId = 1
 
 INSERT INTO [TphCastHolder]

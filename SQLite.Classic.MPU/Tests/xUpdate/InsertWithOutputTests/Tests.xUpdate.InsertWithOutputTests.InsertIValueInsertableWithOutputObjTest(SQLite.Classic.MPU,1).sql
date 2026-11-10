@@ -1,7 +1,7 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 100
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @ValueStr NVarChar(8) -- String
 SET     @ValueStr = 'SomeStr1'

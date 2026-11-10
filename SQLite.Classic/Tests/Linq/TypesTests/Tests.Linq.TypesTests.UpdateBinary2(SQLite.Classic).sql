@@ -1,7 +1,7 @@
 ﻿-- SQLite.Classic SQLite
 DECLARE @BinaryValue Binary(5)
 SET     @BinaryValue = X'0102030405'
-DECLARE @ints  -- Int32
+DECLARE @ints Integer -- Int32
 SET     @ints = 1
 
 UPDATE
@@ -14,7 +14,7 @@ WHERE
 -- SQLite.Classic SQLite
 DECLARE @BinaryValue Binary(5)
 SET     @BinaryValue = X'0504030201'
-DECLARE @ints  -- Int32
+DECLARE @ints Integer -- Int32
 SET     @ints = 2
 
 UPDATE

@@ -18,7 +18,7 @@ VALUES
 -- SQLite.Classic SQLite
 DECLARE @Type NVarChar(9) -- String
 SET     @Type = 'Child564B'
-DECLARE @IntValue  -- Int32
+DECLARE @IntValue Integer -- Int32
 SET     @IntValue = 911
 
 INSERT INTO [Parent564]

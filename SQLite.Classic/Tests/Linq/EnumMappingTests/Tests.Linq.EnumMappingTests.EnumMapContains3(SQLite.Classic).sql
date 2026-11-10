@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic SQLite
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = 102
 
 DELETE FROM
@@ -28,7 +28,7 @@ WHERE
 	[r].[ID] = 101 AND [r].[BigIntValue] IN (12)
 
 -- SQLite.Classic SQLite
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = 102
 
 DELETE FROM

@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $ChildID  -- Int32
+DECLARE $ChildID INTEGER -- Int32
 SET     $ChildID = 10
 
 UPDATE

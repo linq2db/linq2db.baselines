@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $One  -- Int32
+DECLARE $One INTEGER -- Int32
 SET     $One = 1
 
 SELECT
@@ -24,7 +24,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $Zero  -- Int32
+DECLARE $Zero INTEGER -- Int32
 SET     $Zero = 0
 
 SELECT
@@ -49,7 +49,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $OneN  -- Int32
+DECLARE $OneN INTEGER -- Int32
 SET     $OneN = 1
 
 SELECT
@@ -74,7 +74,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $ZeroN  -- Int32
+DECLARE $ZeroN INTEGER -- Int32
 SET     $ZeroN = 0
 
 SELECT
@@ -99,7 +99,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $Null  -- Int32
+DECLARE $Null INTEGER -- Int32
 SET     $Null = NULL
 
 SELECT
@@ -124,7 +124,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $One  -- Int32
+DECLARE $One INTEGER -- Int32
 SET     $One = 1
 
 SELECT
@@ -149,7 +149,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $Zero  -- Int32
+DECLARE $Zero INTEGER -- Int32
 SET     $Zero = 0
 
 SELECT
@@ -174,7 +174,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $OneN  -- Int32
+DECLARE $OneN INTEGER -- Int32
 SET     $OneN = 1
 
 SELECT
@@ -199,7 +199,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $ZeroN  -- Int32
+DECLARE $ZeroN INTEGER -- Int32
 SET     $ZeroN = 0
 
 SELECT
@@ -224,7 +224,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $Null  -- Int32
+DECLARE $Null INTEGER -- Int32
 SET     $Null = NULL
 
 SELECT
@@ -249,7 +249,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $One  -- Int32
+DECLARE $One INTEGER -- Int32
 SET     $One = 1
 
 SELECT
@@ -274,7 +274,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $Zero  -- Int32
+DECLARE $Zero INTEGER -- Int32
 SET     $Zero = 0
 
 SELECT
@@ -299,7 +299,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $OneN  -- Int32
+DECLARE $OneN INTEGER -- Int32
 SET     $OneN = 1
 
 SELECT
@@ -324,7 +324,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $ZeroN  -- Int32
+DECLARE $ZeroN INTEGER -- Int32
 SET     $ZeroN = 0
 
 SELECT
@@ -349,7 +349,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $Null  -- Int32
+DECLARE $Null INTEGER -- Int32
 SET     $Null = NULL
 
 SELECT
@@ -374,7 +374,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $One  -- Int32
+DECLARE $One INTEGER -- Int32
 SET     $One = 1
 
 SELECT
@@ -399,7 +399,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $Zero  -- Int32
+DECLARE $Zero INTEGER -- Int32
 SET     $Zero = 0
 
 SELECT
@@ -424,7 +424,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $OneN  -- Int32
+DECLARE $OneN INTEGER -- Int32
 SET     $OneN = 1
 
 SELECT
@@ -449,7 +449,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $ZeroN  -- Int32
+DECLARE $ZeroN INTEGER -- Int32
 SET     $ZeroN = 0
 
 SELECT
@@ -474,7 +474,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $Null  -- Int32
+DECLARE $Null INTEGER -- Int32
 SET     $Null = NULL
 
 SELECT

@@ -1,15 +1,15 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(2) -- String
 SET     @Name = 'm1'
-DECLARE @Version  -- Int32
+DECLARE @Version Integer -- Int32
 SET     @Version = 1
-DECLARE @CreatedAt  -- DateTime
+DECLARE @CreatedAt Text -- DateTime
 SET     @CreatedAt = NULL
 DECLARE @CreatedBy NVarChar -- String
 SET     @CreatedBy = NULL
-DECLARE @UpdatedAt  -- DateTime
+DECLARE @UpdatedAt Text -- DateTime
 SET     @UpdatedAt = NULL
 DECLARE @UpdatedBy NVarChar -- String
 SET     @UpdatedBy = NULL
@@ -43,17 +43,17 @@ ON CONFLICT ([Id]) DO UPDATE SET
 	[UpdatedBy] = @UpdatedBy
 
 -- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(2) -- String
 SET     @Name = 'm2'
-DECLARE @Version  -- Int32
+DECLARE @Version Integer -- Int32
 SET     @Version = 2
-DECLARE @CreatedAt  -- DateTime
+DECLARE @CreatedAt Text -- DateTime
 SET     @CreatedAt = NULL
 DECLARE @CreatedBy NVarChar -- String
 SET     @CreatedBy = NULL
-DECLARE @UpdatedAt  -- DateTime
+DECLARE @UpdatedAt Text -- DateTime
 SET     @UpdatedAt = NULL
 DECLARE @UpdatedBy NVarChar -- String
 SET     @UpdatedBy = NULL

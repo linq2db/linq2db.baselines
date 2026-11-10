@@ -1,7 +1,7 @@
 ﻿-- DuckDB
-DECLARE $GrandChildID  -- Int32
+DECLARE $GrandChildID INTEGER -- Int32
 SET     $GrandChildID = 1000
-DECLARE $ParentID  -- Int32
+DECLARE $ParentID INTEGER -- Int32
 SET     $ParentID = 10000
 
 UPDATE
@@ -12,11 +12,11 @@ WHERE
 	GrandChild.ParentID = $ParentID AND GrandChild.ChildID IS NULL
 
 -- DuckDB
-DECLARE $GrandChildID  -- Int32
+DECLARE $GrandChildID INTEGER -- Int32
 SET     $GrandChildID = 1000
-DECLARE $ParentID  -- Int32
+DECLARE $ParentID INTEGER -- Int32
 SET     $ParentID = 10000
-DECLARE $ChildID  -- Int32
+DECLARE $ChildID INTEGER -- Int32
 SET     $ChildID = 111
 
 UPDATE

@@ -28,11 +28,11 @@ SELECT
 	last_insert_rowid()
 
 -- SQLite.MS SQLite
-DECLARE @id  -- Int32
+DECLARE @id Integer -- Int32
 SET     @id = 5
-DECLARE @diagnosis  -- Int32
+DECLARE @diagnosis Integer -- Int32
 SET     @diagnosis = 3
-DECLARE @i  -- Int32
+DECLARE @i Integer -- Int32
 SET     @i = 0
 
 INSERT INTO [Patient] AS [t1]
@@ -49,11 +49,11 @@ ON CONFLICT ([PersonID]) DO UPDATE SET
 	[Diagnosis] = CAST(Length([t1].[Diagnosis]) + @i AS NVarChar(11))
 
 -- SQLite.MS SQLite
-DECLARE @id  -- Int32
+DECLARE @id Integer -- Int32
 SET     @id = 5
-DECLARE @diagnosis  -- Int32
+DECLARE @diagnosis Integer -- Int32
 SET     @diagnosis = 3
-DECLARE @i  -- Int32
+DECLARE @i Integer -- Int32
 SET     @i = 1
 
 INSERT INTO [Patient] AS [t1]
@@ -70,11 +70,11 @@ ON CONFLICT ([PersonID]) DO UPDATE SET
 	[Diagnosis] = CAST(Length([t1].[Diagnosis]) + @i AS NVarChar(11))
 
 -- SQLite.MS SQLite
-DECLARE @id  -- Int32
+DECLARE @id Integer -- Int32
 SET     @id = 5
-DECLARE @diagnosis  -- Int32
+DECLARE @diagnosis Integer -- Int32
 SET     @diagnosis = 3
-DECLARE @i  -- Int32
+DECLARE @i Integer -- Int32
 SET     @i = 2
 
 INSERT INTO [Patient] AS [t1]
@@ -91,7 +91,7 @@ ON CONFLICT ([PersonID]) DO UPDATE SET
 	[Diagnosis] = CAST(Length([t1].[Diagnosis]) + @i AS NVarChar(11))
 
 -- SQLite.MS SQLite
-DECLARE @id  -- Int32
+DECLARE @id Integer -- Int32
 SET     @id = 5
 
 SELECT

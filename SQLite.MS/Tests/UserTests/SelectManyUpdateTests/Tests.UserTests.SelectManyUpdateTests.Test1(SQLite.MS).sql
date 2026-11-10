@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @Value1  -- Int64
+DECLARE @Value1 Integer -- Int64
 SET     @Value1 = NULL
 
 UPDATE

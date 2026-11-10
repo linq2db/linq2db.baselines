@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @args  -- Int32
+DECLARE @args Integer -- Int32
 SET     @args = 2
 
 SELECT

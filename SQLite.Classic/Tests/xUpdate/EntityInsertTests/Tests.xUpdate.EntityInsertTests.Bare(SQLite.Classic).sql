@@ -1,11 +1,11 @@
 ﻿-- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(2) -- String
 SET     @Name = 'n1'
-DECLARE @Version  -- Int32
+DECLARE @Version Integer -- Int32
 SET     @Version = 7
-DECLARE @CreatedAt  -- DateTime
+DECLARE @CreatedAt Text -- DateTime
 SET     @CreatedAt = NULL
 DECLARE @CreatedBy NVarChar(2) -- String
 SET     @CreatedBy = 'u1'

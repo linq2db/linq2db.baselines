@@ -1,21 +1,21 @@
 ﻿-- DuckDB
-DECLARE $ID  -- Int32
+DECLARE $ID INTEGER -- Int32
 SET     $ID = 1000
 DECLARE $MoneyValue Decimal(1, 0)
 SET     $MoneyValue = 0
-DECLARE $DateTimeValue  -- DateTime2
+DECLARE $DateTimeValue TIMESTAMP -- DateTime2
 SET     $DateTimeValue = NULL
-DECLARE $DateTimeValue2  -- DateTime2
+DECLARE $DateTimeValue2 TIMESTAMP -- DateTime2
 SET     $DateTimeValue2 = NULL
-DECLARE $BoolValue  -- Boolean
+DECLARE $BoolValue BOOLEAN -- Boolean
 SET     $BoolValue = False
-DECLARE $GuidValue  -- Guid
+DECLARE $GuidValue UUID -- Guid
 SET     $GuidValue = NULL
-DECLARE $SmallIntValue  -- Int16
+DECLARE $SmallIntValue SMALLINT -- Int16
 SET     $SmallIntValue = NULL
-DECLARE $IntValue  -- Int32
+DECLARE $IntValue INTEGER -- Int32
 SET     $IntValue = NULL
-DECLARE $BigIntValue  -- Int64
+DECLARE $BigIntValue BIGINT -- Int64
 SET     $BigIntValue = NULL
 DECLARE $StringValue NVarChar -- String
 SET     $StringValue = NULL

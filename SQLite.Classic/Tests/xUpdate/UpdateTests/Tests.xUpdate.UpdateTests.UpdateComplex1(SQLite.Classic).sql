@@ -28,7 +28,7 @@ SELECT
 	last_insert_rowid()
 
 -- SQLite.Classic SQLite
-DECLARE @id  -- Int32
+DECLARE @id Integer -- Int32
 SET     @id = 5
 
 SELECT
@@ -52,7 +52,7 @@ DECLARE @Name_MiddleName NVarChar -- String
 SET     @Name_MiddleName = NULL
 DECLARE @Name_LastName NVarChar(13) -- String
 SET     @Name_LastName = 'UpdateComplex'
-DECLARE @ID  -- Int32
+DECLARE @ID Integer -- Int32
 SET     @ID = 5
 
 UPDATE
@@ -66,7 +66,7 @@ WHERE
 	[Person].[PersonID] = @ID
 
 -- SQLite.Classic SQLite
-DECLARE @id  -- Int32
+DECLARE @id Integer -- Int32
 SET     @id = 5
 
 SELECT

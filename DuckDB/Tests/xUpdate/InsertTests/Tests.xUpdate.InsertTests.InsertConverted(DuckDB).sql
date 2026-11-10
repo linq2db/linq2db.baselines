@@ -5,7 +5,7 @@ WHERE
 	r.ID >= 1000
 
 -- DuckDB
-DECLARE $tt  -- Int64
+DECLARE $tt BIGINT -- Int64
 SET     $tt = 600000000
 
 INSERT INTO LinqDataTypes

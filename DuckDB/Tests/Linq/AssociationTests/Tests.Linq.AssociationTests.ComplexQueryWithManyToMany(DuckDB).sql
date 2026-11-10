@@ -1,7 +1,7 @@
 ﻿-- DuckDB
-DECLARE $id  -- Int32
+DECLARE $id INTEGER -- Int32
 SET     $id = 3
-DECLARE $id1  -- Int32
+DECLARE $id1 INTEGER -- Int32
 SET     $id1 = 3
 
 SELECT

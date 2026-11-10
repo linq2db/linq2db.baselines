@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @groupId  -- Int32
+DECLARE @groupId Integer -- Int32
 SET     @groupId = 5
 
 SELECT

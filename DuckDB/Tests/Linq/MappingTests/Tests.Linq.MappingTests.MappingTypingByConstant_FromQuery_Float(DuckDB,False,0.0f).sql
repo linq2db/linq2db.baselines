@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $value  -- Single
+DECLARE $value FLOAT -- Single
 SET     $value = '0'::FLOAT
 
 SELECT
@@ -15,7 +15,7 @@ FROM
 	) t1
 
 -- DuckDB
-DECLARE $value  -- Single
+DECLARE $value FLOAT -- Single
 SET     $value = '3.14748365E+09'::FLOAT
 
 SELECT

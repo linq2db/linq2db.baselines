@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @RecordDate  -- DateTime
+DECLARE @RecordDate Text(23) -- DateTime
 SET     @RecordDate = '2020-02-28 17:54:55.123'
 
 INSERT INTO [Issue4904Table]
@@ -12,7 +12,7 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-DECLARE @RecordDate  -- DateTime
+DECLARE @RecordDate Text(23) -- DateTime
 SET     @RecordDate = '2020-02-29 17:54:55.123'
 
 INSERT INTO [Issue4904Table]
@@ -25,7 +25,7 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-DECLARE @RecordDate  -- DateTime
+DECLARE @RecordDate Text(23) -- DateTime
 SET     @RecordDate = '2020-03-01 17:54:55.123'
 
 INSERT INTO [Issue4904Table]

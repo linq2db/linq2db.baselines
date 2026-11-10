@@ -1,9 +1,9 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @StartedOn  -- DateTime
+DECLARE @StartedOn Text(23) -- DateTime
 SET     @StartedOn = '2026-01-01 10:00:00.000'
-DECLARE @FinishedOn  -- DateTime
+DECLARE @FinishedOn Text(23) -- DateTime
 SET     @FinishedOn = '2026-01-01 12:00:00.000'
 
 INSERT INTO [EventRow]
@@ -20,7 +20,7 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-DECLARE @Ticks  -- Int64
+DECLARE @Ticks Integer -- Int64
 SET     @Ticks = 36002500000
 
 SELECT
@@ -30,7 +30,7 @@ FROM
 LIMIT 2
 
 -- SQLite.MS SQLite
-DECLARE @Ticks  -- Int64
+DECLARE @Ticks Integer -- Int64
 SET     @Ticks = 36002500000
 
 SELECT
@@ -40,7 +40,7 @@ FROM
 LIMIT 2
 
 -- SQLite.MS SQLite
-DECLARE @Ticks  -- Int64
+DECLARE @Ticks Integer -- Int64
 SET     @Ticks = 36002500000
 
 SELECT
@@ -51,7 +51,7 @@ WHERE
 	strftime('%Y-%m-%d %H:%M:%f', JulianDay([r].[StartedOn]) + Round(CAST(CAST(@Ticks AS INTEGER) AS Float) * 0.0001) * 1.1574074074074074E-08) < strftime('%Y-%m-%d %H:%M:%f', [r].[FinishedOn])
 
 -- SQLite.MS SQLite
-DECLARE @Ticks  -- Int64
+DECLARE @Ticks Integer -- Int64
 SET     @Ticks = 36002500000
 
 SELECT

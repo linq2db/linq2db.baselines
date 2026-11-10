@@ -1,7 +1,7 @@
 ﻿-- SQLite.Classic SQLite
 DECLARE @EventCode NVarChar(11) -- String
 SET     @EventCode = 'TicketChild'
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Code NVarChar(2) -- String
 SET     @Code = 'C1'
@@ -22,11 +22,11 @@ VALUES
 -- SQLite.Classic SQLite
 DECLARE @EventCode NVarChar(12) -- String
 SET     @EventCode = 'TicketChild2'
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Code NVarChar -- String
 SET     @Code = NULL
-DECLARE @Price  -- Int32
+DECLARE @Price Integer -- Int32
 SET     @Price = 0
 
 INSERT INTO [Tickets]
@@ -47,11 +47,11 @@ VALUES
 -- SQLite.Classic SQLite
 DECLARE @EventCode NVarChar(12) -- String
 SET     @EventCode = 'TicketChild2'
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 3
 DECLARE @Code NVarChar(2) -- String
 SET     @Code = 'C3'
-DECLARE @Price  -- Int32
+DECLARE @Price Integer -- Int32
 SET     @Price = 99
 
 INSERT INTO [Tickets]

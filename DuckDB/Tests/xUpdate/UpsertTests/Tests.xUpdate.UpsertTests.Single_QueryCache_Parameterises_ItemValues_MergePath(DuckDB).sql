@@ -1,15 +1,15 @@
 ﻿-- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 42
 DECLARE $Name NVarChar(4) -- String
 SET     $Name = 'seed'
-DECLARE $Version  -- Int32
+DECLARE $Version INTEGER -- Int32
 SET     $Version = 1
-DECLARE $CreatedAt  -- DateTime2
+DECLARE $CreatedAt TIMESTAMP -- DateTime2
 SET     $CreatedAt = NULL
 DECLARE $CreatedBy NVarChar -- String
 SET     $CreatedBy = NULL
-DECLARE $UpdatedAt  -- DateTime2
+DECLARE $UpdatedAt TIMESTAMP -- DateTime2
 SET     $UpdatedAt = NULL
 DECLARE $UpdatedBy NVarChar -- String
 SET     $UpdatedBy = NULL

@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = 103
 
 DELETE FROM
@@ -20,7 +20,7 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @param  -- Int64
+DECLARE @param Integer -- Int64
 SET     @param = 11
 
 INSERT INTO [LinqDataTypes]
@@ -45,7 +45,7 @@ WHERE
 	[r].[ID] = 102 AND [r].[BigIntValue] = 11
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = 103
 
 DELETE FROM

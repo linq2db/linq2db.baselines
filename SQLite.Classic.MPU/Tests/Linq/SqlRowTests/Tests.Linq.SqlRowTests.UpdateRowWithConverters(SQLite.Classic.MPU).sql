@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Cents  -- Int32
+DECLARE @Cents Integer -- Int32
 SET     @Cents = 100
 
 UPDATE

@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @id  -- Guid
+DECLARE @id Blob(16) -- Guid
 SET     @id = X'3D667BBCDE0F27438F925D8CC3A11D11'
 
 INSERT INTO [Issue1363]
@@ -21,9 +21,9 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-DECLARE @id  -- Guid
+DECLARE @id Blob(16) -- Guid
 SET     @id = X'0D6048A921DE744F8AC29516B287076E'
-DECLARE @testId  -- Guid
+DECLARE @testId Blob(16) -- Guid
 SET     @testId = X'3D667BBCDE0F27438F925D8CC3A11D11'
 
 INSERT INTO [Issue1363]
@@ -45,7 +45,7 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-DECLARE @id2  -- Guid
+DECLARE @id2 Blob(16) -- Guid
 SET     @id2 = X'0D6048A921DE744F8AC29516B287076E'
 
 SELECT

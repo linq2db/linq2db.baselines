@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Xy NVarChar(5) -- String
 SET     @Xy = 'Hallo'
@@ -20,13 +20,13 @@ DECLARE @AnimalType NVarChar(3) -- String
 SET     @AnimalType = 'Big'
 DECLARE @AnimalType2 NVarChar(3) -- String
 SET     @AnimalType2 = 'Big'
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(8) -- String
 SET     @Name = 'FirstDog'
 DECLARE @Discriminator NVarChar(3) -- String
 SET     @Discriminator = 'Dog'
-DECLARE @EyeId  -- Int32
+DECLARE @EyeId Integer -- Int32
 SET     @EyeId = 1
 DECLARE @DogName_Second NVarChar(1) -- String
 SET     @DogName_Second = 'b'
@@ -61,7 +61,7 @@ DECLARE @AnimalType NVarChar(3) -- String
 SET     @AnimalType = 'Big'
 DECLARE @AnimalType2 NVarChar(3) -- String
 SET     @AnimalType2 = 'Big'
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Name NVarChar(10) -- String
 SET     @Name = 'WildAnimal'
@@ -86,9 +86,9 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @TestAnimalId  -- Int32
+DECLARE @TestAnimalId Integer -- Int32
 SET     @TestAnimalId = NULL
 
 INSERT INTO [TestAnimalTable]
@@ -103,9 +103,9 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @TestAnimalId  -- Int32
+DECLARE @TestAnimalId Integer -- Int32
 SET     @TestAnimalId = 1
 
 INSERT INTO [TestAnimalTable]

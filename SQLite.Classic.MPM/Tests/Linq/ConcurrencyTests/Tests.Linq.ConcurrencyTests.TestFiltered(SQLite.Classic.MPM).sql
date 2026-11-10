@@ -1,7 +1,7 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Stamp  -- Int32
+DECLARE @Stamp Integer -- Int32
 SET     @Stamp = -10
 DECLARE @Value NVarChar(7) -- String
 SET     @Value = 'initial'
@@ -30,9 +30,9 @@ FROM
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @Value NVarChar(7) -- String
 SET     @Value = 'value 1'
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Stamp  -- Int32
+DECLARE @Stamp Integer -- Int32
 SET     @Stamp = -10
 
 UPDATE
@@ -55,9 +55,9 @@ FROM
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @Value NVarChar(7) -- String
 SET     @Value = 'value 2'
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Stamp  -- Int32
+DECLARE @Stamp Integer -- Int32
 SET     @Stamp = -10
 
 UPDATE
@@ -78,9 +78,9 @@ FROM
 	[ConcurrencyFiltered] [t1]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Stamp  -- Int32
+DECLARE @Stamp Integer -- Int32
 SET     @Stamp = -9
 
 DELETE FROM
@@ -98,9 +98,9 @@ FROM
 	[ConcurrencyFiltered] [t1]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Stamp  -- Int32
+DECLARE @Stamp Integer -- Int32
 SET     @Stamp = -9
 
 DELETE FROM

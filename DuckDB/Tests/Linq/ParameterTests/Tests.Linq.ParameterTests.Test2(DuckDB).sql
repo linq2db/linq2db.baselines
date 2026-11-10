@@ -1,7 +1,7 @@
 ﻿-- DuckDB
-DECLARE $id1  -- Int32
+DECLARE $id1 INTEGER -- Int32
 SET     $id1 = 1
-DECLARE $id2  -- Int32
+DECLARE $id2 INTEGER -- Int32
 SET     $id2 = 10000
 
 SELECT
@@ -16,9 +16,9 @@ ORDER BY
 LIMIT 1
 
 -- DuckDB
-DECLARE $id1  -- Int32
+DECLARE $id1 INTEGER -- Int32
 SET     $id1 = 2
-DECLARE $id2  -- Int32
+DECLARE $id2 INTEGER -- Int32
 SET     $id2 = 10000
 
 SELECT

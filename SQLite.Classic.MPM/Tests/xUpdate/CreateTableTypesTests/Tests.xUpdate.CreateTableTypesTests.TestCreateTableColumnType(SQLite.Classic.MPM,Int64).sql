@@ -1,7 +1,7 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Int64  -- Int64
+DECLARE @Int64 Integer -- Int64
 SET     @Int64 = 0
 
 INSERT INTO [CreateTableTypes]
@@ -16,9 +16,9 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Int64  -- Int64
+DECLARE @Int64 Integer -- Int64
 SET     @Int64 = 3
 
 INSERT INTO [CreateTableTypes]

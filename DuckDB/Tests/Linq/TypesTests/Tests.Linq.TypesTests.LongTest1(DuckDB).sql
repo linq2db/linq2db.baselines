@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $value  -- UInt32
+DECLARE $value UINTEGER -- UInt32
 SET     $value = 0
 
 SELECT

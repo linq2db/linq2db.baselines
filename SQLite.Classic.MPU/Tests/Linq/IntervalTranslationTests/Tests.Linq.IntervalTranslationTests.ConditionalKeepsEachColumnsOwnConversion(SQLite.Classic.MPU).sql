@@ -1,13 +1,13 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @InSeconds  -- Int64
+DECLARE @InSeconds Integer -- Int64
 SET     @InSeconds = 5400
-DECLARE @InTicks  -- Int64
+DECLARE @InTicks Integer -- Int64
 SET     @InTicks = 54000000000
-DECLARE @Undeclared  -- Int64
+DECLARE @Undeclared Integer -- Int64
 SET     @Undeclared = 54000000000
-DECLARE @UndeclaredSeconds  -- Int64
+DECLARE @UndeclaredSeconds Integer -- Int64
 SET     @UndeclaredSeconds = 5400
 
 INSERT INTO [DurationRow]
@@ -28,15 +28,15 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @InSeconds  -- Int64
+DECLARE @InSeconds Integer -- Int64
 SET     @InSeconds = 1800
-DECLARE @InTicks  -- Int64
+DECLARE @InTicks Integer -- Int64
 SET     @InTicks = 18000000000
-DECLARE @Undeclared  -- Int64
+DECLARE @Undeclared Integer -- Int64
 SET     @Undeclared = 18000000000
-DECLARE @UndeclaredSeconds  -- Int64
+DECLARE @UndeclaredSeconds Integer -- Int64
 SET     @UndeclaredSeconds = 1800
 
 INSERT INTO [DurationRow]

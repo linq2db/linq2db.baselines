@@ -1,9 +1,9 @@
 ﻿-- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
-DECLARE $DueOn  -- DateTime2
+DECLARE $DueOn TIMESTAMP -- DateTime2
 SET     $DueOn = '2026-01-01 10:00:00.000000'::TIMESTAMP
-DECLARE $StartedOn  -- DateTime2
+DECLARE $StartedOn TIMESTAMP -- DateTime2
 SET     $StartedOn = '2026-01-01 10:00:00.000000'::TIMESTAMP
 
 INSERT INTO OptionalDueRow
@@ -20,11 +20,11 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 2
-DECLARE $DueOn  -- DateTime2
+DECLARE $DueOn TIMESTAMP -- DateTime2
 SET     $DueOn = NULL
-DECLARE $StartedOn  -- DateTime2
+DECLARE $StartedOn TIMESTAMP -- DateTime2
 SET     $StartedOn = '2026-01-01 10:00:00.000000'::TIMESTAMP
 
 INSERT INTO OptionalDueRow
@@ -41,11 +41,11 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 3
-DECLARE $DueOn  -- DateTime2
+DECLARE $DueOn TIMESTAMP -- DateTime2
 SET     $DueOn = '2026-01-01 12:00:00.000000'::TIMESTAMP
-DECLARE $StartedOn  -- DateTime2
+DECLARE $StartedOn TIMESTAMP -- DateTime2
 SET     $StartedOn = '2026-01-01 10:00:00.000000'::TIMESTAMP
 
 INSERT INTO OptionalDueRow
@@ -62,7 +62,7 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $Ticks  -- Int64
+DECLARE $Ticks BIGINT -- Int64
 SET     $Ticks = 36002500000
 
 SELECT
@@ -74,7 +74,7 @@ WHERE
 LIMIT 2
 
 -- DuckDB
-DECLARE $Ticks  -- Int64
+DECLARE $Ticks BIGINT -- Int64
 SET     $Ticks = 36002500000
 
 SELECT
@@ -86,7 +86,7 @@ WHERE
 LIMIT 2
 
 -- DuckDB
-DECLARE $Ticks  -- Int64
+DECLARE $Ticks BIGINT -- Int64
 SET     $Ticks = 36002500000
 
 SELECT
@@ -107,7 +107,7 @@ WHERE
 LIMIT 2
 
 -- DuckDB
-DECLARE $Ticks  -- Int64
+DECLARE $Ticks BIGINT -- Int64
 SET     $Ticks = 36002500000
 
 SELECT
@@ -118,7 +118,7 @@ ORDER BY
 	r.Id
 
 -- DuckDB
-DECLARE $Ticks  -- Int64
+DECLARE $Ticks BIGINT -- Int64
 SET     $Ticks = 36002500000
 
 SELECT
@@ -131,7 +131,7 @@ ORDER BY
 	r.Id
 
 -- DuckDB
-DECLARE $Ticks  -- Int64
+DECLARE $Ticks BIGINT -- Int64
 SET     $Ticks = 36002500000
 
 SELECT
@@ -142,7 +142,7 @@ WHERE
 	r.Id = 1 AND CAST(r.StartedOn AS TIMESTAMP_NS) + To_Microseconds(CAST($Ticks AS BIGINT) // 10) < r.StartedOn + 1 * Interval '1 Hour'
 
 -- DuckDB
-DECLARE $Ticks  -- Int64
+DECLARE $Ticks BIGINT -- Int64
 SET     $Ticks = 36002500000
 
 SELECT
@@ -163,7 +163,7 @@ WHERE
 LIMIT 2
 
 -- DuckDB
-DECLARE $Ticks  -- Int64
+DECLARE $Ticks BIGINT -- Int64
 SET     $Ticks = 72002500000
 
 SELECT
