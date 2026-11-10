@@ -12,17 +12,17 @@ SELECT
 
 -- SqlServer.Contained SqlServer.2025
 SELECT
-	CAST(REPLICATE(N'.', 1) AS NVarChar(Max)) || N'test'
+	REPLICATE(N'.', 1) || N'test'
 
 -- SqlServer.Contained SqlServer.2025
 SELECT
-	CAST(REPLICATE(N' ', 2) AS NVarChar(Max)) || N'test'
+	REPLICATE(N' ', 2) || N'test'
 
 -- SqlServer.Contained SqlServer.2025
 SELECT
-	CAST(REPLICATE(N' ', 2) AS NVarChar(Max)) || N'test'
+	REPLICATE(N' ', 2) || N'test'
 
 -- SqlServer.Contained SqlServer.2025
 SELECT
-	CAST(REPLICATE(N'.', 12) AS NVarChar(Max)) || N'test'
+	REPLICATE(N'.', 12) || N'test'
 
