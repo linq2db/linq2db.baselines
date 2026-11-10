@@ -1,0 +1,9 @@
+﻿-- Access.Jet.OleDb AccessOleDb
+SELECT
+	[r].[Id]
+FROM
+	[BoolAsInt16Table] [r]
+ORDER BY
+	[r].[Flag],
+	[r].[Id]
+
