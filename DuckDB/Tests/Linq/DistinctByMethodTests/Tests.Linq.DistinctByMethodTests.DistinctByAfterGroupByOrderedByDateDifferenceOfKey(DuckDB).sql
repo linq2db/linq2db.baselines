@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $baseDate  -- DateTime2
+DECLARE $baseDate TIMESTAMP -- DateTime2
 SET     $baseDate = '2000-01-01 00:00:00.000000'::TIMESTAMP
 
 SELECT
