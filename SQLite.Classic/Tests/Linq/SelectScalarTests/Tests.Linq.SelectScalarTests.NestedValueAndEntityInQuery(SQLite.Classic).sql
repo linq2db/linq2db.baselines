@@ -2,7 +2,6 @@
 SELECT
 	[p].[ParentID],
 	[p].[ParentID] + 1,
-	[p].[Value1],
 	[t1].[ParentID],
 	[t1].[ChildID]
 FROM
