@@ -1,0 +1,44 @@
+﻿-- Oracle.19.Managed Oracle.Managed Oracle12
+SELECT
+	t1."Id",
+	t1."Value",
+	t1."GroupId",
+	t1."Name"
+FROM
+	"BatchItem" t1
+
+-- Oracle.19.Managed Oracle.Managed Oracle12
+DECLARE @Item1 Int32
+SET     @Item1 = 2
+
+SELECT
+	t1."Item1_1",
+	CASE
+		WHEN t1."Item1" IS NOT NULL THEN :Item1
+		ELSE NULL
+	END
+FROM
+	(
+		SELECT
+			1 as "c1"
+		FROM SYS.DUAL
+	) t2
+		LEFT JOIN (
+			SELECT
+				:Item1 as "Item1",
+				1 as "Item1_1"
+			FROM
+				"BatchItem" i
+			WHERE
+				i."Id" = 1
+		) t1 ON 1=1
+
+-- Oracle.19.Managed Oracle.Managed Oracle12
+SELECT
+	1 as "c1"
+FROM
+	"BatchItem" i
+WHERE
+	i."Id" = 1
+FETCH NEXT 2 ROWS ONLY
+
