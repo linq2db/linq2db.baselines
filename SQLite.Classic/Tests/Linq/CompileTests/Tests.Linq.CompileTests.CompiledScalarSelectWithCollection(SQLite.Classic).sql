@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic SQLite
-DECLARE @Children  -- Int32
+DECLARE @Children Integer -- Int32
 SET     @Children = 3
 
 SELECT

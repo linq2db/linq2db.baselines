@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @take  -- Int32
+DECLARE @take Integer -- Int32
 SET     @take = 2
 
 SELECT
@@ -22,7 +22,7 @@ SELECT
 	)
 
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
+DECLARE @take Integer -- Int32
 SET     @take = 4
 
 SELECT

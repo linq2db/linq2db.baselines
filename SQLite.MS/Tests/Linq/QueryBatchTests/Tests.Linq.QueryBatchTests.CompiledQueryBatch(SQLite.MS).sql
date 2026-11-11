@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @Page  -- Int32
+DECLARE @Page Integer -- Int32
 SET     @Page = 2
 
 SELECT
@@ -23,7 +23,7 @@ SELECT
 	)
 
 -- SQLite.MS SQLite
-DECLARE @Item2  -- Int32
+DECLARE @Item2 Integer -- Int32
 SET     @Item2 = 3
 
 SELECT

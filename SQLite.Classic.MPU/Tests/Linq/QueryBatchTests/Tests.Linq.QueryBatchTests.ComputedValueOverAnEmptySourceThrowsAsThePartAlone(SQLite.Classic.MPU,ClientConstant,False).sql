@@ -8,7 +8,7 @@ WHERE
 LIMIT 1
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Item1  -- Int32
+DECLARE @Item1 Integer -- Int32
 SET     @Item1 = 2
 
 SELECT
