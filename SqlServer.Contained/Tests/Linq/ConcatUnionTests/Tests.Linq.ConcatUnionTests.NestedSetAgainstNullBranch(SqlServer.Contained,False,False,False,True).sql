@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	[p].[ParentID],
 	NULL,
@@ -29,7 +29,7 @@ FROM
 			[Parent] [p_2]
 	) [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]
