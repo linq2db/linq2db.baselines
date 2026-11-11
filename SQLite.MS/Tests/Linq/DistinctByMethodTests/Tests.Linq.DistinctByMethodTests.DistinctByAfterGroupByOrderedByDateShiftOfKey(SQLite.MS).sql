@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @baseDate  -- DateTime
+DECLARE @baseDate Text(23) -- DateTime
 SET     @baseDate = '2000-01-01 00:00:00.000'
 
 SELECT

@@ -32,7 +32,7 @@ VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13
 
 
 -- SQLite.MS SQLite
-DECLARE @ClockDate  -- DateTime
+DECLARE @ClockDate Text(23) -- DateTime
 SET     @ClockDate = '0001-01-01 01:00:00.000'
 
 UPDATE

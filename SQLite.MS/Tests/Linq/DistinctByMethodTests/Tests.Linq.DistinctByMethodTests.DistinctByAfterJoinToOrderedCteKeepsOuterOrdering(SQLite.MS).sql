@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @take  -- Int32
+DECLARE @take Integer -- Int32
 SET     @take = 1000
 
 WITH [CTE_1] ([ParentID])
