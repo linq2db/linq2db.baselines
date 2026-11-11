@@ -8,7 +8,7 @@ FROM
 	BatchItem t1
 
 -- DuckDB
-DECLARE $Item1  -- Int32
+DECLARE $Item1 INTEGER -- Int32
 SET     $Item1 = 2
 
 SELECT

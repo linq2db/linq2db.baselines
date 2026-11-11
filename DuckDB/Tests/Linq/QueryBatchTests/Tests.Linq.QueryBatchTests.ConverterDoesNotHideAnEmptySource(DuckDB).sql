@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $Value  -- Int32
+DECLARE $Value INTEGER -- Int32
 SET     $Value = 100
 
 SELECT
@@ -18,7 +18,7 @@ FROM
 	ConvertedItem t1
 
 -- DuckDB
-DECLARE $Value  -- Int32
+DECLARE $Value INTEGER -- Int32
 SET     $Value = 100
 
 SELECT
