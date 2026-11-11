@@ -32,7 +32,7 @@ VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13
 
 
 -- SQLite.MS SQLite
-DECLARE @since  -- DateTime
+DECLARE @since Text(23) -- DateTime
 SET     @since = '2019-12-31 11:00:00.000'
 
 SELECT
