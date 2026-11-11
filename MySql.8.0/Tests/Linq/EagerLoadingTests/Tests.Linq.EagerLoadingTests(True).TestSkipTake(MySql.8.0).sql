@@ -12,7 +12,8 @@ FROM
 			`MasterClass` `m_1`
 	) `m_2`
 		INNER JOIN `DetailClass` `d` ON `m_2`.`Id1` = `d`.`MasterId`
-;
+
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 SELECT
 	`m_2`.`Id1`,
 	`d_1`.`DetailId`,
@@ -38,7 +39,8 @@ FROM
 				`d`.`DetailId`
 			LIMIT 1, 2
 		) `d_1` ON 1=1
-;
+
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 SELECT
 	`m_1`.`Id1`,
 	`m_1`.`Id2`,
@@ -61,7 +63,8 @@ FROM
 			`MasterClass` `t1`
 	) `m_1`
 		INNER JOIN `DetailClass` `d` ON `m_1`.`Id1` = `d`.`MasterId`
-;
+
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 SELECT
 	`t1`.`Id1`,
 	`t1`.`Id2`,

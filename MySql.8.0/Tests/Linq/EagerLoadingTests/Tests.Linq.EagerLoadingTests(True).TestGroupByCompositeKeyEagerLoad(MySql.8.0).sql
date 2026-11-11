@@ -12,7 +12,8 @@ FROM
 		INNER JOIN `DetailClass` `d` ON `d`.`MasterId` = `m_1`.`MasterId` OR `d`.`MasterId` IS NULL AND `m_1`.`MasterId` IS NULL
 ORDER BY
 	`d`.`DetailId`
-;
+
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 SELECT DISTINCT
 	`g_1`.`MasterId`
 FROM
