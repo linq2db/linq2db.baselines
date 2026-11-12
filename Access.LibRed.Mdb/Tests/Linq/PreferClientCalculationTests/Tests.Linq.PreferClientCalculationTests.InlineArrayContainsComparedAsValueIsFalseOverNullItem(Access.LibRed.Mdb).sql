@@ -1,0 +1,36 @@
+﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
+SELECT
+	[e].[Id],
+	[e].[Item],
+	[e].[Flag]
+FROM
+	[NestedInListEntity] [e]
+WHERE
+	([e].[Flag]) = ([e].[Id] = [e].[Item] AND [e].[Item] IS NOT NULL OR [e].[Id] = 5)
+
+-- Access.LibRed.Mdb Access.LibRed AccessLibRed
+SELECT
+	[t1].[Id],
+	[t1].[Item],
+	[t1].[Flag]
+FROM
+	[NestedInListEntity] [t1]
+
+-- Access.LibRed.Mdb Access.LibRed AccessLibRed
+SELECT
+	[e].[Id],
+	[e].[Item],
+	[e].[Flag]
+FROM
+	[NestedInListEntity] [e]
+WHERE
+	([e].[Flag]) <> ([e].[Id] = [e].[Item] AND [e].[Item] IS NOT NULL OR [e].[Id] = 5)
+
+-- Access.LibRed.Mdb Access.LibRed AccessLibRed
+SELECT
+	[t1].[Id],
+	[t1].[Item],
+	[t1].[Flag]
+FROM
+	[NestedInListEntity] [t1]
+
