@@ -1,0 +1,44 @@
+﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
+DECLARE @value NVarChar(3) -- String
+SET     @value = 'abc'
+
+SELECT
+	COUNT(*)
+FROM
+	[Src] [s]
+WHERE
+	[s].[String] IS NULL OR [s].[String] <> @value
+
+-- Access.LibRed.Accdb Access.LibRed AccessLibRed
+DECLARE @value NVarChar(3) -- String
+SET     @value = 'abc'
+
+SELECT
+	COUNT(*)
+FROM
+	[Src] [s]
+WHERE
+	[s].[NullableString] IS NULL OR [s].[NullableString] <> @value
+
+-- Access.LibRed.Accdb Access.LibRed AccessLibRed
+DECLARE @value NVarChar(3) -- String
+SET     @value = 'abc'
+
+SELECT
+	COUNT(*)
+FROM
+	[Src] [s]
+WHERE
+	NOT ([s].[String] IS NULL OR [s].[String] <> @value)
+
+-- Access.LibRed.Accdb Access.LibRed AccessLibRed
+DECLARE @value NVarChar(3) -- String
+SET     @value = 'abc'
+
+SELECT
+	COUNT(*)
+FROM
+	[Src] [s]
+WHERE
+	NOT ([s].[NullableString] IS NULL OR [s].[NullableString] <> @value)
+
