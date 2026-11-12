@@ -1,0 +1,37 @@
+﻿-- YDB Ydb
+SELECT
+	p_1.ParentID as ParentID,
+	t1.ChildID as ChildID
+FROM
+	(
+		SELECT
+			p.ParentID as ParentID
+		FROM
+			Parent p
+		WHERE
+			p.ParentID < 3
+	) p_1
+		FULL JOIN (
+			SELECT
+				c_1.ChildID as ChildID,
+				c_1.ParentID as ParentID
+			FROM
+				Child c_1
+			WHERE
+				c_1.ParentID > 1
+		) t1 ON p_1.ParentID = t1.ParentID
+
+-- YDB Ydb
+SELECT
+	t1.ParentID as ParentID,
+	t1.Value1 as Value1
+FROM
+	Parent t1
+
+-- YDB Ydb
+SELECT
+	t1.ParentID as ParentID,
+	t1.ChildID as ChildID
+FROM
+	Child t1
+
