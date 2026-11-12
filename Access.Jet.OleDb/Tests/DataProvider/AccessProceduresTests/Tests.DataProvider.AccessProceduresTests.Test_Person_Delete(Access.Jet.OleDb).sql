@@ -26,8 +26,8 @@ WHERE
 	[t1].[PersonID] = @id
 
 -- Access.Jet.OleDb AccessOleDb
-DECLARE @id Integer -- Int32
-SET     @id = 1
+DECLARE @PersonID Integer -- Int32
+SET     @PersonID = 1
 
 [Person_Delete]
 
