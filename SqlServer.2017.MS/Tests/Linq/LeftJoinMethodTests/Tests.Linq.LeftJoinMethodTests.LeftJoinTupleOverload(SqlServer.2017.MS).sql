@@ -1,0 +1,23 @@
+﻿-- SqlServer.2017.MS SqlServer.2017
+SELECT
+	[t].[Name],
+	[o].[Name]
+FROM
+	[Customer] [t]
+		LEFT JOIN [Order] [o] ON [t].[Id] = [o].[CustomerId]
+
+-- SqlServer.2017.MS SqlServer.2017
+SELECT
+	[t1].[Id],
+	[t1].[Name]
+FROM
+	[Customer] [t1]
+
+-- SqlServer.2017.MS SqlServer.2017
+SELECT
+	[t1].[Id],
+	[t1].[CustomerId],
+	[t1].[Name]
+FROM
+	[Order] [t1]
+
