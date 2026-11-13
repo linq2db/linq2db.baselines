@@ -7,8 +7,8 @@ FROM
 	(
 		SELECT
 			toInt64(ROW_NUMBER() OVER (PARTITION BY e.Country ORDER BY e.Id)) as RowNumber,
-			e.Id as Id,
 			e.Country as Country,
+			e.Id as Id,
 			e.Region as Region
 		FROM
 			NullableKeyData e

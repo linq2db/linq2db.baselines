@@ -7,9 +7,9 @@ FROM
 	(
 		SELECT
 			ROW_NUMBER() OVER (PARTITION BY e.Country ORDER BY e.Id, r.Id) as RowNumber,
+			e.Country as Country,
 			e.Id as Id,
 			r.Id as Id_1,
-			e.Country as Country,
 			r.Tag as Tag
 		FROM
 			NullableKeyData e

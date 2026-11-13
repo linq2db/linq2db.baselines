@@ -11,10 +11,10 @@ FROM
 	(
 		SELECT
 			ROW_NUMBER() OVER (PARTITION BY [e].[Group] ORDER BY IIF([e].[Priority] IS NULL, 1, 0), [e].[Priority], [e].[Id]) as [RowNumber],
+			[e].[Group] as [Group_1],
 			[e].[Priority],
 			[e].[Id],
 			[e].[Name],
-			[e].[Group] as [Group_1],
 			[e].[Date] as [Date_1],
 			[e].[Amount],
 			[e].[IsActive]
