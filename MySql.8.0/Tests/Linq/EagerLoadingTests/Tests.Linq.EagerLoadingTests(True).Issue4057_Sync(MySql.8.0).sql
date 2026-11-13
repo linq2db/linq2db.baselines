@@ -14,7 +14,8 @@ FROM
 		LIMIT 1
 	) `m_1`
 		INNER JOIN `Child` `d` ON `m_1`.`ParentID` = `d`.`ParentID`
-;
+
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 SELECT
 	`x`.`ParentID`,
 	`x`.`Value1`
@@ -40,7 +41,8 @@ FROM
 		LIMIT 1
 	) `m_1`
 		INNER JOIN `Child` `d` ON `m_1`.`ParentID` = `d`.`ParentID`
-;
+
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 SELECT
 	`x`.`ParentID`,
 	`x`.`Value1`
@@ -66,7 +68,8 @@ FROM
 		LIMIT 1
 	) `m_1`
 		INNER JOIN `Child` `d` ON `m_1`.`ParentID` = `d`.`ParentID`
-;
+
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 SELECT
 	`x`.`ParentID`,
 	`x`.`Value1`
