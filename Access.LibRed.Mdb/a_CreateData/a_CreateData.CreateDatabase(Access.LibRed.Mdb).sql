@@ -434,7 +434,7 @@ SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue  -- Boolean
 SET     @BoolValue = True
 DECLARE @GuidValue  -- Guid
-SET     @GuidValue = '{ef129165-6ffe-4df9-bb6b-bb16e413c883}'
+SET     @GuidValue = {guid {ef129165-6ffe-4df9-bb6b-bb16e413c883}}
 DECLARE @SmallIntValue  -- Int16
 SET     @SmallIntValue = 1
 DECLARE @IntValue  -- Int32
@@ -483,7 +483,7 @@ SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue  -- Boolean
 SET     @BoolValue = False
 DECLARE @GuidValue  -- Guid
-SET     @GuidValue = '{bc663a61-7b40-4681-ac38-f9aaf55b706b}'
+SET     @GuidValue = {guid {bc663a61-7b40-4681-ac38-f9aaf55b706b}}
 DECLARE @SmallIntValue  -- Int16
 SET     @SmallIntValue = 2
 DECLARE @IntValue  -- Int32
@@ -532,7 +532,7 @@ SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue  -- Boolean
 SET     @BoolValue = True
 DECLARE @GuidValue  -- Guid
-SET     @GuidValue = '{d2f970c0-35ac-4987-9cd5-5badb1757436}'
+SET     @GuidValue = {guid {d2f970c0-35ac-4987-9cd5-5badb1757436}}
 DECLARE @SmallIntValue  -- Int16
 SET     @SmallIntValue = 3
 DECLARE @IntValue  -- Int32
@@ -581,7 +581,7 @@ SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue  -- Boolean
 SET     @BoolValue = False
 DECLARE @GuidValue  -- Guid
-SET     @GuidValue = '{40932fdb-1543-4e4a-ac2c-ca371604fb4b}'
+SET     @GuidValue = {guid {40932fdb-1543-4e4a-ac2c-ca371604fb4b}}
 DECLARE @SmallIntValue  -- Int16
 SET     @SmallIntValue = 4
 DECLARE @IntValue  -- Int32
@@ -630,7 +630,7 @@ SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue  -- Boolean
 SET     @BoolValue = True
 DECLARE @GuidValue  -- Guid
-SET     @GuidValue = '{febe3eca-cb5f-40b2-ad39-2979d312afca}'
+SET     @GuidValue = {guid {febe3eca-cb5f-40b2-ad39-2979d312afca}}
 DECLARE @SmallIntValue  -- Int16
 SET     @SmallIntValue = 5
 DECLARE @IntValue  -- Int32
@@ -679,7 +679,7 @@ SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue  -- Boolean
 SET     @BoolValue = False
 DECLARE @GuidValue  -- Guid
-SET     @GuidValue = '{8d3c5d1d-47db-4730-9fe7-968f6228a4c0}'
+SET     @GuidValue = {guid {8d3c5d1d-47db-4730-9fe7-968f6228a4c0}}
 DECLARE @SmallIntValue  -- Int16
 SET     @SmallIntValue = 6
 DECLARE @IntValue  -- Int32
@@ -728,7 +728,7 @@ SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue  -- Boolean
 SET     @BoolValue = True
 DECLARE @GuidValue  -- Guid
-SET     @GuidValue = '{48094115-83af-46dd-a906-bff26ee21ee2}'
+SET     @GuidValue = {guid {48094115-83af-46dd-a906-bff26ee21ee2}}
 DECLARE @SmallIntValue  -- Int16
 SET     @SmallIntValue = 7
 DECLARE @IntValue  -- Int32
@@ -777,7 +777,7 @@ SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue  -- Boolean
 SET     @BoolValue = False
 DECLARE @GuidValue  -- Guid
-SET     @GuidValue = '{c1139f1f-1335-4cd4-937e-92602f732dd3}'
+SET     @GuidValue = {guid {c1139f1f-1335-4cd4-937e-92602f732dd3}}
 DECLARE @SmallIntValue  -- Int16
 SET     @SmallIntValue = 8
 DECLARE @IntValue  -- Int32
@@ -826,7 +826,7 @@ SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue  -- Boolean
 SET     @BoolValue = True
 DECLARE @GuidValue  -- Guid
-SET     @GuidValue = '{46c5c512-3d4b-4cf7-b4e7-1de080789e5d}'
+SET     @GuidValue = {guid {46c5c512-3d4b-4cf7-b4e7-1de080789e5d}}
 DECLARE @SmallIntValue  -- Int16
 SET     @SmallIntValue = 9
 DECLARE @IntValue  -- Int32
@@ -875,7 +875,7 @@ SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue  -- Boolean
 SET     @BoolValue = False
 DECLARE @GuidValue  -- Guid
-SET     @GuidValue = '{61b2bc55-147f-4b40-93ed-a4aa83602fee}'
+SET     @GuidValue = {guid {61b2bc55-147f-4b40-93ed-a4aa83602fee}}
 DECLARE @SmallIntValue  -- Int16
 SET     @SmallIntValue = 10
 DECLARE @IntValue  -- Int32
@@ -924,7 +924,7 @@ SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue  -- Boolean
 SET     @BoolValue = True
 DECLARE @GuidValue  -- Guid
-SET     @GuidValue = '{d3021d18-97f0-4dc0-98d0-f0c7df4a1230}'
+SET     @GuidValue = {guid {d3021d18-97f0-4dc0-98d0-f0c7df4a1230}}
 DECLARE @SmallIntValue  -- Int16
 SET     @SmallIntValue = 11
 DECLARE @IntValue  -- Int32
@@ -973,7 +973,7 @@ SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue  -- Boolean
 SET     @BoolValue = True
 DECLARE @GuidValue  -- Guid
-SET     @GuidValue = '{03021d18-97f0-4dc0-98d0-f0c7df4a1230}'
+SET     @GuidValue = {guid {03021d18-97f0-4dc0-98d0-f0c7df4a1230}}
 DECLARE @SmallIntValue  -- Int16
 SET     @SmallIntValue = 12
 DECLARE @IntValue  -- Int32
@@ -2030,7 +2030,7 @@ SET     @imageDataType = 0x03040506
 DECLARE @oleobjectDataType Binary(4)
 SET     @oleobjectDataType = 0x05060708
 DECLARE @uniqueidentifierDataType  -- Guid
-SET     @uniqueidentifierDataType = '{6f9619ff-8b86-d011-b42d-00c04fc964ff}'
+SET     @uniqueidentifierDataType = {guid {6f9619ff-8b86-d011-b42d-00c04fc964ff}}
 
 
 				INSERT INTO AllTypes
@@ -2486,7 +2486,7 @@ SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue  -- Boolean
 SET     @BoolValue = True
 DECLARE @GuidValue  -- Guid
-SET     @GuidValue = '{ef129165-6ffe-4df9-bb6b-bb16e413c883}'
+SET     @GuidValue = {guid {ef129165-6ffe-4df9-bb6b-bb16e413c883}}
 DECLARE @SmallIntValue  -- Int16
 SET     @SmallIntValue = 1
 DECLARE @IntValue  -- Int32
@@ -2535,7 +2535,7 @@ SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue  -- Boolean
 SET     @BoolValue = False
 DECLARE @GuidValue  -- Guid
-SET     @GuidValue = '{bc663a61-7b40-4681-ac38-f9aaf55b706b}'
+SET     @GuidValue = {guid {bc663a61-7b40-4681-ac38-f9aaf55b706b}}
 DECLARE @SmallIntValue  -- Int16
 SET     @SmallIntValue = 2
 DECLARE @IntValue  -- Int32
@@ -2584,7 +2584,7 @@ SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue  -- Boolean
 SET     @BoolValue = True
 DECLARE @GuidValue  -- Guid
-SET     @GuidValue = '{d2f970c0-35ac-4987-9cd5-5badb1757436}'
+SET     @GuidValue = {guid {d2f970c0-35ac-4987-9cd5-5badb1757436}}
 DECLARE @SmallIntValue  -- Int16
 SET     @SmallIntValue = 3
 DECLARE @IntValue  -- Int32
@@ -2633,7 +2633,7 @@ SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue  -- Boolean
 SET     @BoolValue = False
 DECLARE @GuidValue  -- Guid
-SET     @GuidValue = '{40932fdb-1543-4e4a-ac2c-ca371604fb4b}'
+SET     @GuidValue = {guid {40932fdb-1543-4e4a-ac2c-ca371604fb4b}}
 DECLARE @SmallIntValue  -- Int16
 SET     @SmallIntValue = 4
 DECLARE @IntValue  -- Int32
@@ -2682,7 +2682,7 @@ SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue  -- Boolean
 SET     @BoolValue = True
 DECLARE @GuidValue  -- Guid
-SET     @GuidValue = '{febe3eca-cb5f-40b2-ad39-2979d312afca}'
+SET     @GuidValue = {guid {febe3eca-cb5f-40b2-ad39-2979d312afca}}
 DECLARE @SmallIntValue  -- Int16
 SET     @SmallIntValue = 5
 DECLARE @IntValue  -- Int32
@@ -2731,7 +2731,7 @@ SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue  -- Boolean
 SET     @BoolValue = False
 DECLARE @GuidValue  -- Guid
-SET     @GuidValue = '{8d3c5d1d-47db-4730-9fe7-968f6228a4c0}'
+SET     @GuidValue = {guid {8d3c5d1d-47db-4730-9fe7-968f6228a4c0}}
 DECLARE @SmallIntValue  -- Int16
 SET     @SmallIntValue = 6
 DECLARE @IntValue  -- Int32
@@ -2780,7 +2780,7 @@ SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue  -- Boolean
 SET     @BoolValue = True
 DECLARE @GuidValue  -- Guid
-SET     @GuidValue = '{48094115-83af-46dd-a906-bff26ee21ee2}'
+SET     @GuidValue = {guid {48094115-83af-46dd-a906-bff26ee21ee2}}
 DECLARE @SmallIntValue  -- Int16
 SET     @SmallIntValue = 7
 DECLARE @IntValue  -- Int32
@@ -2829,7 +2829,7 @@ SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue  -- Boolean
 SET     @BoolValue = False
 DECLARE @GuidValue  -- Guid
-SET     @GuidValue = '{c1139f1f-1335-4cd4-937e-92602f732dd3}'
+SET     @GuidValue = {guid {c1139f1f-1335-4cd4-937e-92602f732dd3}}
 DECLARE @SmallIntValue  -- Int16
 SET     @SmallIntValue = 8
 DECLARE @IntValue  -- Int32
@@ -2878,7 +2878,7 @@ SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue  -- Boolean
 SET     @BoolValue = True
 DECLARE @GuidValue  -- Guid
-SET     @GuidValue = '{46c5c512-3d4b-4cf7-b4e7-1de080789e5d}'
+SET     @GuidValue = {guid {46c5c512-3d4b-4cf7-b4e7-1de080789e5d}}
 DECLARE @SmallIntValue  -- Int16
 SET     @SmallIntValue = 9
 DECLARE @IntValue  -- Int32
@@ -2927,7 +2927,7 @@ SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue  -- Boolean
 SET     @BoolValue = False
 DECLARE @GuidValue  -- Guid
-SET     @GuidValue = '{61b2bc55-147f-4b40-93ed-a4aa83602fee}'
+SET     @GuidValue = {guid {61b2bc55-147f-4b40-93ed-a4aa83602fee}}
 DECLARE @SmallIntValue  -- Int16
 SET     @SmallIntValue = 10
 DECLARE @IntValue  -- Int32
@@ -2976,7 +2976,7 @@ SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue  -- Boolean
 SET     @BoolValue = True
 DECLARE @GuidValue  -- Guid
-SET     @GuidValue = '{d3021d18-97f0-4dc0-98d0-f0c7df4a1230}'
+SET     @GuidValue = {guid {d3021d18-97f0-4dc0-98d0-f0c7df4a1230}}
 DECLARE @SmallIntValue  -- Int16
 SET     @SmallIntValue = 11
 DECLARE @IntValue  -- Int32
@@ -3025,7 +3025,7 @@ SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue  -- Boolean
 SET     @BoolValue = True
 DECLARE @GuidValue  -- Guid
-SET     @GuidValue = '{03021d18-97f0-4dc0-98d0-f0c7df4a1230}'
+SET     @GuidValue = {guid {03021d18-97f0-4dc0-98d0-f0c7df4a1230}}
 DECLARE @SmallIntValue  -- Int16
 SET     @SmallIntValue = 12
 DECLARE @IntValue  -- Int32
@@ -4082,7 +4082,7 @@ SET     @imageDataType = 0x03040506
 DECLARE @oleobjectDataType Binary(4)
 SET     @oleobjectDataType = 0x05060708
 DECLARE @uniqueidentifierDataType  -- Guid
-SET     @uniqueidentifierDataType = '{6f9619ff-8b86-d011-b42d-00c04fc964ff}'
+SET     @uniqueidentifierDataType = {guid {6f9619ff-8b86-d011-b42d-00c04fc964ff}}
 
 
 				INSERT INTO AllTypes

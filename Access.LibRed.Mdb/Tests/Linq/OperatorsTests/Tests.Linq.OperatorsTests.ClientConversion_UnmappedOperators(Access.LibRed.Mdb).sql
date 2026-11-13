@@ -17,7 +17,7 @@ SELECT TOP 1
 FROM
 	[Tender] [r]
 WHERE
-	[r].[Id] = '{00000000-0000-0000-0000-000000000000}'
+	[r].[Id] = {guid {00000000-0000-0000-0000-000000000000}}
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT TOP 1

@@ -3,12 +3,12 @@ SELECT
 	CStr('p_'),
 	[e].[Id],
 	CStr('N'),
-	IIF(False, '{00000000-0000-0000-0000-000000000000}', NULL),
+	IIF(False, {guid {00000000-0000-0000-0000-000000000000}}, NULL),
 	IIF(False, '', NULL),
 	[e].[Name],
 	IIF(False, '', NULL),
 	IIF(False, '', NULL),
-	IIF(False, '{00000000-0000-0000-0000-000000000000}', NULL),
+	IIF(False, {guid {00000000-0000-0000-0000-000000000000}}, NULL),
 	IIF(False, '', NULL)
 FROM
 	[ConcatSetOpEntity] [e]
@@ -17,7 +17,7 @@ WHERE
 UNION ALL
 SELECT
 	IIF(False, '', NULL),
-	IIF(False, '{00000000-0000-0000-0000-000000000000}', NULL),
+	IIF(False, {guid {00000000-0000-0000-0000-000000000000}}, NULL),
 	IIF(False, '', NULL),
 	[e_1].[Id],
 	CStr('N'),

@@ -11,7 +11,7 @@ SELECT TOP 2
 FROM
 	[LinqDataTypes] [p]
 WHERE
-	[p].[GuidValue] = '{40932fdb-1543-4e4a-ac2c-ca371604fb4b}'
+	[p].[GuidValue] = {guid {40932fdb-1543-4e4a-ac2c-ca371604fb4b}}
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT TOP 2
@@ -26,5 +26,5 @@ SELECT TOP 2
 FROM
 	[LinqDataTypes] [p]
 WHERE
-	[p].[GuidValue] = '{d2f970c0-35ac-4987-9cd5-5badb1757436}'
+	[p].[GuidValue] = {guid {d2f970c0-35ac-4987-9cd5-5badb1757436}}
 
