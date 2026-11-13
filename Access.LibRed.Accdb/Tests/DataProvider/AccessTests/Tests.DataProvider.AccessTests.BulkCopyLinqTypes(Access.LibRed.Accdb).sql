@@ -8,7 +8,7 @@ SET     @DateTimeValue = #2001-01-11 01:11:21#
 DECLARE @BoolValue  -- Boolean
 SET     @BoolValue = True
 DECLARE @GuidValue  -- Guid
-SET     @GuidValue = '{233bf399-9710-4e79-873d-2ec7bf1e0000}'
+SET     @GuidValue = {guid {233bf399-9710-4e79-873d-2ec7bf1e0000}}
 DECLARE @BinaryValue Binary
 SET     @BinaryValue = NULL
 DECLARE @SmallIntValue  -- Int16
@@ -49,7 +49,7 @@ SET     @DateTimeValue = #2001-01-11 01:11:21#
 DECLARE @BoolValue  -- Boolean
 SET     @BoolValue = True
 DECLARE @GuidValue  -- Guid
-SET     @GuidValue = '{233bf399-9710-4e79-873d-2ec7bf1e0001}'
+SET     @GuidValue = {guid {233bf399-9710-4e79-873d-2ec7bf1e0001}}
 DECLARE @BinaryValue Binary
 SET     @BinaryValue = NULL
 DECLARE @SmallIntValue  -- Int16
@@ -90,7 +90,7 @@ SET     @DateTimeValue = #2001-01-11 01:11:21#
 DECLARE @BoolValue  -- Boolean
 SET     @BoolValue = True
 DECLARE @GuidValue  -- Guid
-SET     @GuidValue = '{233bf399-9710-4e79-873d-2ec7bf1e0002}'
+SET     @GuidValue = {guid {233bf399-9710-4e79-873d-2ec7bf1e0002}}
 DECLARE @BinaryValue Binary
 SET     @BinaryValue = NULL
 DECLARE @SmallIntValue  -- Int16
@@ -131,7 +131,7 @@ SET     @DateTimeValue = #2001-01-11 01:11:21#
 DECLARE @BoolValue  -- Boolean
 SET     @BoolValue = True
 DECLARE @GuidValue  -- Guid
-SET     @GuidValue = '{233bf399-9710-4e79-873d-2ec7bf1e0003}'
+SET     @GuidValue = {guid {233bf399-9710-4e79-873d-2ec7bf1e0003}}
 DECLARE @BinaryValue Binary
 SET     @BinaryValue = NULL
 DECLARE @SmallIntValue  -- Int16
@@ -172,7 +172,7 @@ SET     @DateTimeValue = #2001-01-11 01:11:21#
 DECLARE @BoolValue  -- Boolean
 SET     @BoolValue = True
 DECLARE @GuidValue  -- Guid
-SET     @GuidValue = '{233bf399-9710-4e79-873d-2ec7bf1e0004}'
+SET     @GuidValue = {guid {233bf399-9710-4e79-873d-2ec7bf1e0004}}
 DECLARE @BinaryValue Binary
 SET     @BinaryValue = NULL
 DECLARE @SmallIntValue  -- Int16
@@ -213,7 +213,7 @@ SET     @DateTimeValue = #2001-01-11 01:11:21#
 DECLARE @BoolValue  -- Boolean
 SET     @BoolValue = True
 DECLARE @GuidValue  -- Guid
-SET     @GuidValue = '{233bf399-9710-4e79-873d-2ec7bf1e0005}'
+SET     @GuidValue = {guid {233bf399-9710-4e79-873d-2ec7bf1e0005}}
 DECLARE @BinaryValue Binary
 SET     @BinaryValue = NULL
 DECLARE @SmallIntValue  -- Int16
@@ -254,7 +254,7 @@ SET     @DateTimeValue = #2001-01-11 01:11:21#
 DECLARE @BoolValue  -- Boolean
 SET     @BoolValue = True
 DECLARE @GuidValue  -- Guid
-SET     @GuidValue = '{233bf399-9710-4e79-873d-2ec7bf1e0006}'
+SET     @GuidValue = {guid {233bf399-9710-4e79-873d-2ec7bf1e0006}}
 DECLARE @BinaryValue Binary
 SET     @BinaryValue = NULL
 DECLARE @SmallIntValue  -- Int16
@@ -295,7 +295,7 @@ SET     @DateTimeValue = #2001-01-11 01:11:21#
 DECLARE @BoolValue  -- Boolean
 SET     @BoolValue = True
 DECLARE @GuidValue  -- Guid
-SET     @GuidValue = '{233bf399-9710-4e79-873d-2ec7bf1e0007}'
+SET     @GuidValue = {guid {233bf399-9710-4e79-873d-2ec7bf1e0007}}
 DECLARE @BinaryValue Binary
 SET     @BinaryValue = NULL
 DECLARE @SmallIntValue  -- Int16
@@ -336,7 +336,7 @@ SET     @DateTimeValue = #2001-01-11 01:11:21#
 DECLARE @BoolValue  -- Boolean
 SET     @BoolValue = True
 DECLARE @GuidValue  -- Guid
-SET     @GuidValue = '{233bf399-9710-4e79-873d-2ec7bf1e0008}'
+SET     @GuidValue = {guid {233bf399-9710-4e79-873d-2ec7bf1e0008}}
 DECLARE @BinaryValue Binary
 SET     @BinaryValue = NULL
 DECLARE @SmallIntValue  -- Int16
@@ -377,7 +377,7 @@ SET     @DateTimeValue = #2001-01-11 01:11:21#
 DECLARE @BoolValue  -- Boolean
 SET     @BoolValue = True
 DECLARE @GuidValue  -- Guid
-SET     @GuidValue = '{233bf399-9710-4e79-873d-2ec7bf1e0009}'
+SET     @GuidValue = {guid {233bf399-9710-4e79-873d-2ec7bf1e0009}}
 DECLARE @BinaryValue Binary
 SET     @BinaryValue = NULL
 DECLARE @SmallIntValue  -- Int16
@@ -424,7 +424,7 @@ SET     @DateTimeValue = #2001-01-11 01:11:21#
 DECLARE @BoolValue  -- Boolean
 SET     @BoolValue = True
 DECLARE @GuidValue  -- Guid
-SET     @GuidValue = '{233bf399-9710-4e79-873d-2ec7bf1e0000}'
+SET     @GuidValue = {guid {233bf399-9710-4e79-873d-2ec7bf1e0000}}
 DECLARE @BinaryValue Binary
 SET     @BinaryValue = NULL
 DECLARE @SmallIntValue  -- Int16
@@ -465,7 +465,7 @@ SET     @DateTimeValue = #2001-01-11 01:11:21#
 DECLARE @BoolValue  -- Boolean
 SET     @BoolValue = True
 DECLARE @GuidValue  -- Guid
-SET     @GuidValue = '{233bf399-9710-4e79-873d-2ec7bf1e0001}'
+SET     @GuidValue = {guid {233bf399-9710-4e79-873d-2ec7bf1e0001}}
 DECLARE @BinaryValue Binary
 SET     @BinaryValue = NULL
 DECLARE @SmallIntValue  -- Int16
@@ -506,7 +506,7 @@ SET     @DateTimeValue = #2001-01-11 01:11:21#
 DECLARE @BoolValue  -- Boolean
 SET     @BoolValue = True
 DECLARE @GuidValue  -- Guid
-SET     @GuidValue = '{233bf399-9710-4e79-873d-2ec7bf1e0002}'
+SET     @GuidValue = {guid {233bf399-9710-4e79-873d-2ec7bf1e0002}}
 DECLARE @BinaryValue Binary
 SET     @BinaryValue = NULL
 DECLARE @SmallIntValue  -- Int16
@@ -547,7 +547,7 @@ SET     @DateTimeValue = #2001-01-11 01:11:21#
 DECLARE @BoolValue  -- Boolean
 SET     @BoolValue = True
 DECLARE @GuidValue  -- Guid
-SET     @GuidValue = '{233bf399-9710-4e79-873d-2ec7bf1e0003}'
+SET     @GuidValue = {guid {233bf399-9710-4e79-873d-2ec7bf1e0003}}
 DECLARE @BinaryValue Binary
 SET     @BinaryValue = NULL
 DECLARE @SmallIntValue  -- Int16
@@ -588,7 +588,7 @@ SET     @DateTimeValue = #2001-01-11 01:11:21#
 DECLARE @BoolValue  -- Boolean
 SET     @BoolValue = True
 DECLARE @GuidValue  -- Guid
-SET     @GuidValue = '{233bf399-9710-4e79-873d-2ec7bf1e0004}'
+SET     @GuidValue = {guid {233bf399-9710-4e79-873d-2ec7bf1e0004}}
 DECLARE @BinaryValue Binary
 SET     @BinaryValue = NULL
 DECLARE @SmallIntValue  -- Int16
@@ -629,7 +629,7 @@ SET     @DateTimeValue = #2001-01-11 01:11:21#
 DECLARE @BoolValue  -- Boolean
 SET     @BoolValue = True
 DECLARE @GuidValue  -- Guid
-SET     @GuidValue = '{233bf399-9710-4e79-873d-2ec7bf1e0005}'
+SET     @GuidValue = {guid {233bf399-9710-4e79-873d-2ec7bf1e0005}}
 DECLARE @BinaryValue Binary
 SET     @BinaryValue = NULL
 DECLARE @SmallIntValue  -- Int16
@@ -670,7 +670,7 @@ SET     @DateTimeValue = #2001-01-11 01:11:21#
 DECLARE @BoolValue  -- Boolean
 SET     @BoolValue = True
 DECLARE @GuidValue  -- Guid
-SET     @GuidValue = '{233bf399-9710-4e79-873d-2ec7bf1e0006}'
+SET     @GuidValue = {guid {233bf399-9710-4e79-873d-2ec7bf1e0006}}
 DECLARE @BinaryValue Binary
 SET     @BinaryValue = NULL
 DECLARE @SmallIntValue  -- Int16
@@ -711,7 +711,7 @@ SET     @DateTimeValue = #2001-01-11 01:11:21#
 DECLARE @BoolValue  -- Boolean
 SET     @BoolValue = True
 DECLARE @GuidValue  -- Guid
-SET     @GuidValue = '{233bf399-9710-4e79-873d-2ec7bf1e0007}'
+SET     @GuidValue = {guid {233bf399-9710-4e79-873d-2ec7bf1e0007}}
 DECLARE @BinaryValue Binary
 SET     @BinaryValue = NULL
 DECLARE @SmallIntValue  -- Int16
@@ -752,7 +752,7 @@ SET     @DateTimeValue = #2001-01-11 01:11:21#
 DECLARE @BoolValue  -- Boolean
 SET     @BoolValue = True
 DECLARE @GuidValue  -- Guid
-SET     @GuidValue = '{233bf399-9710-4e79-873d-2ec7bf1e0008}'
+SET     @GuidValue = {guid {233bf399-9710-4e79-873d-2ec7bf1e0008}}
 DECLARE @BinaryValue Binary
 SET     @BinaryValue = NULL
 DECLARE @SmallIntValue  -- Int16
@@ -793,7 +793,7 @@ SET     @DateTimeValue = #2001-01-11 01:11:21#
 DECLARE @BoolValue  -- Boolean
 SET     @BoolValue = True
 DECLARE @GuidValue  -- Guid
-SET     @GuidValue = '{233bf399-9710-4e79-873d-2ec7bf1e0009}'
+SET     @GuidValue = {guid {233bf399-9710-4e79-873d-2ec7bf1e0009}}
 DECLARE @BinaryValue Binary
 SET     @BinaryValue = NULL
 DECLARE @SmallIntValue  -- Int16

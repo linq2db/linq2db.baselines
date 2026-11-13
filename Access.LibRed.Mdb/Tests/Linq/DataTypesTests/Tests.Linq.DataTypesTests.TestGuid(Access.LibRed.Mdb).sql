@@ -1,8 +1,8 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
 DECLARE @Column  -- Guid
-SET     @Column = '{a948600d-de21-4f74-8ac2-9516b287076e}'
+SET     @Column = {guid {a948600d-de21-4f74-8ac2-9516b287076e}}
 DECLARE @ColumnNullable  -- Guid
-SET     @ColumnNullable = '{bd3973a5-4323-4dd8-9f4f-df9f93e2a627}'
+SET     @ColumnNullable = {guid {bd3973a5-4323-4dd8-9f4f-df9f93e2a627}}
 
 SELECT
 	[r].[Id],
@@ -21,8 +21,8 @@ SELECT
 FROM
 	[GuidTable] [r]
 WHERE
-	[r].[Column] = '{a948600d-de21-4f74-8ac2-9516b287076e}' AND
-	[r].[ColumnNullable] = '{bd3973a5-4323-4dd8-9f4f-df9f93e2a627}'
+	[r].[Column] = {guid {a948600d-de21-4f74-8ac2-9516b287076e}} AND
+	[r].[ColumnNullable] = {guid {bd3973a5-4323-4dd8-9f4f-df9f93e2a627}}
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 DELETE FROM
@@ -32,7 +32,7 @@ DELETE FROM
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @Column  -- Guid
-SET     @Column = '{bc7b663d-0fde-4327-8f92-5d8cc3a11d11}'
+SET     @Column = {guid {bc7b663d-0fde-4327-8f92-5d8cc3a11d11}}
 DECLARE @ColumnNullable  -- Guid
 SET     @ColumnNullable = NULL
 
@@ -53,9 +53,9 @@ VALUES
 DECLARE @Id  -- Int32
 SET     @Id = 2
 DECLARE @Column  -- Guid
-SET     @Column = '{a948600d-de21-4f74-8ac2-9516b287076e}'
+SET     @Column = {guid {a948600d-de21-4f74-8ac2-9516b287076e}}
 DECLARE @ColumnNullable  -- Guid
-SET     @ColumnNullable = '{bd3973a5-4323-4dd8-9f4f-df9f93e2a627}'
+SET     @ColumnNullable = {guid {bd3973a5-4323-4dd8-9f4f-df9f93e2a627}}
 
 INSERT INTO [GuidTable]
 (
@@ -88,7 +88,7 @@ DELETE FROM
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @Column  -- Guid
-SET     @Column = '{bc7b663d-0fde-4327-8f92-5d8cc3a11d11}'
+SET     @Column = {guid {bc7b663d-0fde-4327-8f92-5d8cc3a11d11}}
 DECLARE @ColumnNullable  -- Guid
 SET     @ColumnNullable = NULL
 
@@ -109,9 +109,9 @@ VALUES
 DECLARE @Id  -- Int32
 SET     @Id = 2
 DECLARE @Column  -- Guid
-SET     @Column = '{a948600d-de21-4f74-8ac2-9516b287076e}'
+SET     @Column = {guid {a948600d-de21-4f74-8ac2-9516b287076e}}
 DECLARE @ColumnNullable  -- Guid
-SET     @ColumnNullable = '{bd3973a5-4323-4dd8-9f4f-df9f93e2a627}'
+SET     @ColumnNullable = {guid {bd3973a5-4323-4dd8-9f4f-df9f93e2a627}}
 
 INSERT INTO [GuidTable]
 (
@@ -144,7 +144,7 @@ DELETE FROM
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @Column  -- Guid
-SET     @Column = '{bc7b663d-0fde-4327-8f92-5d8cc3a11d11}'
+SET     @Column = {guid {bc7b663d-0fde-4327-8f92-5d8cc3a11d11}}
 DECLARE @ColumnNullable  -- Guid
 SET     @ColumnNullable = NULL
 
@@ -165,9 +165,9 @@ VALUES
 DECLARE @Id  -- Int32
 SET     @Id = 2
 DECLARE @Column  -- Guid
-SET     @Column = '{a948600d-de21-4f74-8ac2-9516b287076e}'
+SET     @Column = {guid {a948600d-de21-4f74-8ac2-9516b287076e}}
 DECLARE @ColumnNullable  -- Guid
-SET     @ColumnNullable = '{bd3973a5-4323-4dd8-9f4f-df9f93e2a627}'
+SET     @ColumnNullable = {guid {bd3973a5-4323-4dd8-9f4f-df9f93e2a627}}
 
 INSERT INTO [GuidTable]
 (

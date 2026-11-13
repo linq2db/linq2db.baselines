@@ -816,19 +816,19 @@ SELECT uniqueidentifierDataType FROM [AllTypes] WHERE ID = 2
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 DECLARE @p  -- Guid
-SET     @p = '{6f9619ff-8b86-d011-b42d-00c04fc964ff}'
+SET     @p = {guid {6f9619ff-8b86-d011-b42d-00c04fc964ff}}
 
 SELECT ID FROM [AllTypes] WHERE uniqueidentifierDataType = @p
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 DECLARE @p  -- Guid
-SET     @p = '{6f9619ff-8b86-d011-b42d-00c04fc964ff}'
+SET     @p = {guid {6f9619ff-8b86-d011-b42d-00c04fc964ff}}
 
 SELECT ID FROM [AllTypes] WHERE uniqueidentifierDataType = @p
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 DECLARE @p  -- Guid
-SET     @p = '{6f9619ff-8b86-d011-b42d-00c04fc964ff}'
+SET     @p = {guid {6f9619ff-8b86-d011-b42d-00c04fc964ff}}
 
 SELECT ID FROM [AllTypes] WHERE uniqueidentifierDataType = @p
 

@@ -2,7 +2,7 @@
 SELECT
 	[e].[Value1],
 	CStr(IIF([j].[Value1] IS NULL, 0, [j].[Value1])),
-	LCase(Mid(CStr(IIF([j].[Key] IS NULL, '{00000000-0000-0000-0000-000000000000}', [j].[Key])), 2, 36)),
+	LCase(Mid(CStr(IIF([j].[Key] IS NULL, {guid {00000000-0000-0000-0000-000000000000}}, [j].[Key])), 2, 36)),
 	IIF([j].[Value1] >= 5 AND [j].[Value1] IS NOT NULL, IIF([j].[Value1] IS NULL, 0, [j].[Value1]), 5),
 	IIF([j].[Value1] <= -5 AND [j].[Value1] IS NOT NULL, IIF([j].[Value1] IS NULL, 0, [j].[Value1]), -5),
 	CStr(IIF([j].[Value1] IS NULL, 0, [j].[Value1])) + '!',
