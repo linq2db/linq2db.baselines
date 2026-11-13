@@ -1,6 +1,6 @@
 ﻿BeginTransactionAsync
 -- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
 INSERT INTO [BatchRow]
@@ -13,7 +13,7 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
 
 INSERT INTO [BatchRow]
