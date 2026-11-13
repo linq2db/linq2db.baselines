@@ -1,0 +1,18 @@
+﻿-- SqlServer.Contained.MS SqlServer.2025
+SELECT
+	[r].[Id],
+	CAST(Floor(IIF([r].[D] - FLOOR([r].[D]) = 0.5, ROUND([r].[D] * 0.5, 0) * 2, ROUND([r].[D], 0))) AS Int),
+	CAST(Floor(IIF([r].[F] - FLOOR([r].[F]) = 0.5, ROUND([r].[F] * 0.5, 0) * 2, ROUND([r].[F], 0))) AS Int)
+FROM
+	[MidpointValues] [r]
+ORDER BY
+	[r].[Id]
+
+-- SqlServer.Contained.MS SqlServer.2025
+SELECT
+	[t1].[Id],
+	[t1].[D],
+	[t1].[F]
+FROM
+	[MidpointValues] [t1]
+
