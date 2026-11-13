@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @minimumId  -- Int32
+DECLARE @minimumId Integer -- Int32
 SET     @minimumId = 1
 
 SELECT
@@ -18,7 +18,7 @@ WHERE
 	[p].[PersonID] >= @minimumId
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @minimumId  -- Int32
+DECLARE @minimumId Integer -- Int32
 SET     @minimumId = 2
 
 SELECT
@@ -37,7 +37,7 @@ WHERE
 	[p2].[PersonID] >= @minimumId
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @minimumId  -- Int32
+DECLARE @minimumId Integer -- Int32
 SET     @minimumId = 2
 
 SELECT
@@ -56,7 +56,7 @@ WHERE
 	[p2].[PersonID] >= @minimumId
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @minimumId  -- Int32
+DECLARE @minimumId Integer -- Int32
 SET     @minimumId = 3
 
 SELECT
@@ -75,7 +75,7 @@ WHERE
 	[p].[PersonID] >= @minimumId
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @minimumId  -- Int32
+DECLARE @minimumId Integer -- Int32
 SET     @minimumId = 3
 
 SELECT
@@ -94,7 +94,7 @@ WHERE
 	[p2].[PersonID] >= @minimumId
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @minimumId  -- Int32
+DECLARE @minimumId Integer -- Int32
 SET     @minimumId = 3
 
 SELECT
