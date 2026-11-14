@@ -1,0 +1,6 @@
+﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
+SELECT DISTINCT
+	IIF([p].[Value1] IS NULL, [p].[ParentID] MOD 2, [p].[Value1])
+FROM
+	[Parent] [p]
+
