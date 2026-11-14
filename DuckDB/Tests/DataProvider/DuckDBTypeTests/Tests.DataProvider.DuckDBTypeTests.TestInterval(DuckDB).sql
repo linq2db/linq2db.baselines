@@ -326,6 +326,428 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable = $nullableValue
 
 -- DuckDB
+DECLARE $value  -- Object
+SET     $value = INTERVAL '-30 days -12:30:45.123456'
+DECLARE $nullableValue  -- Object
+SET     $nullableValue = INTERVAL '-02:03:04.123456'
+
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = $value AND r.ColumnNullable = $nullableValue
+
+-- DuckDB
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = INTERVAL '-30 days -12:30:45.123456' AND
+	r.ColumnNullable = INTERVAL '-02:03:04.123456'
+
+-- DuckDB
+DELETE FROM
+	"TypeTable`2" t1
+
+-- DuckDB
+DECLARE $Id INTEGER -- Int32
+SET     $Id = 1
+DECLARE $Column  -- Object
+SET     $Column = INTERVAL '-30 days -12:30:45.123456'
+DECLARE $ColumnNullable  -- Object
+SET     $ColumnNullable = INTERVAL '-02:03:04.123456'
+
+INSERT INTO "TypeTable`2"
+(
+	Id,
+	"Column",
+	ColumnNullable
+)
+VALUES
+(
+	$Id,
+	$Column,
+	$ColumnNullable
+)
+
+-- DuckDB
+DECLARE $value  -- Object
+SET     $value = INTERVAL '-30 days -12:30:45.123456'
+DECLARE $nullableValue  -- Object
+SET     $nullableValue = INTERVAL '-02:03:04.123456'
+
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = $value AND r.ColumnNullable = $nullableValue
+
+-- DuckDB
+DELETE FROM
+	"TypeTable`2" t1
+
+-- DuckDB
+DECLARE $p1 INTEGER -- Int32
+SET     $p1 = 1
+DECLARE $p2  -- Object
+SET     $p2 = INTERVAL '-30 days -12:30:45.123456'
+DECLARE $p3  -- Object
+SET     $p3 = INTERVAL '-02:03:04.123456'
+
+INSERT INTO "TypeTable`2"
+(
+	Id,
+	"Column",
+	ColumnNullable
+)
+VALUES
+($p1,$p2,$p3)
+
+-- DuckDB
+DECLARE $value  -- Object
+SET     $value = INTERVAL '-30 days -12:30:45.123456'
+DECLARE $nullableValue  -- Object
+SET     $nullableValue = INTERVAL '-02:03:04.123456'
+
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = $value AND r.ColumnNullable = $nullableValue
+
+-- DuckDB
+DELETE FROM
+	"TypeTable`2" t1
+
+-- DuckDB
+DECLARE $tableName NVarChar(11) -- String
+SET     $tableName = 'TypeTable`2'
+
+SELECT
+	c_1."column_name"
+FROM
+	information_schema."columns" c_1
+WHERE
+	c_1."table_name" = $tableName
+ORDER BY
+	c_1.ordinal_position
+
+INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
+
+-- DuckDB
+DECLARE $value  -- Object
+SET     $value = INTERVAL '-30 days -12:30:45.123456'
+DECLARE $nullableValue  -- Object
+SET     $nullableValue = INTERVAL '-02:03:04.123456'
+
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = $value AND r.ColumnNullable = $nullableValue
+
+-- DuckDB
+DELETE FROM
+	"TypeTable`2" t1
+
+-- DuckDB
+DECLARE $tableName NVarChar(11) -- String
+SET     $tableName = 'TypeTable`2'
+
+SELECT
+	c_1."column_name"
+FROM
+	information_schema."columns" c_1
+WHERE
+	c_1."table_name" = $tableName
+ORDER BY
+	c_1.ordinal_position
+
+INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
+
+-- DuckDB
+DECLARE $value  -- Object
+SET     $value = INTERVAL '-30 days -12:30:45.123456'
+DECLARE $nullableValue  -- Object
+SET     $nullableValue = INTERVAL '-02:03:04.123456'
+
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = $value AND r.ColumnNullable = $nullableValue
+
+-- DuckDB
+DECLARE $value  -- Object
+SET     $value = INTERVAL '-10675199 days -02:48:05.477580'
+DECLARE $nullableValue  -- Object
+SET     $nullableValue = INTERVAL '10675199 days 02:48:05.477580'
+
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = $value AND r.ColumnNullable = $nullableValue
+
+-- DuckDB
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = INTERVAL '-10675199 days -02:48:05.477580' AND
+	r.ColumnNullable = INTERVAL '10675199 days 02:48:05.477580'
+
+-- DuckDB
+DELETE FROM
+	"TypeTable`2" t1
+
+-- DuckDB
+DECLARE $Id INTEGER -- Int32
+SET     $Id = 1
+DECLARE $Column  -- Object
+SET     $Column = INTERVAL '-10675199 days -02:48:05.477580'
+DECLARE $ColumnNullable  -- Object
+SET     $ColumnNullable = INTERVAL '10675199 days 02:48:05.477580'
+
+INSERT INTO "TypeTable`2"
+(
+	Id,
+	"Column",
+	ColumnNullable
+)
+VALUES
+(
+	$Id,
+	$Column,
+	$ColumnNullable
+)
+
+-- DuckDB
+DECLARE $value  -- Object
+SET     $value = INTERVAL '-10675199 days -02:48:05.477580'
+DECLARE $nullableValue  -- Object
+SET     $nullableValue = INTERVAL '10675199 days 02:48:05.477580'
+
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = $value AND r.ColumnNullable = $nullableValue
+
+-- DuckDB
+DELETE FROM
+	"TypeTable`2" t1
+
+-- DuckDB
+DECLARE $p1 INTEGER -- Int32
+SET     $p1 = 1
+DECLARE $p2  -- Object
+SET     $p2 = INTERVAL '-10675199 days -02:48:05.477580'
+DECLARE $p3  -- Object
+SET     $p3 = INTERVAL '10675199 days 02:48:05.477580'
+
+INSERT INTO "TypeTable`2"
+(
+	Id,
+	"Column",
+	ColumnNullable
+)
+VALUES
+($p1,$p2,$p3)
+
+-- DuckDB
+DECLARE $value  -- Object
+SET     $value = INTERVAL '-10675199 days -02:48:05.477580'
+DECLARE $nullableValue  -- Object
+SET     $nullableValue = INTERVAL '10675199 days 02:48:05.477580'
+
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = $value AND r.ColumnNullable = $nullableValue
+
+-- DuckDB
+DELETE FROM
+	"TypeTable`2" t1
+
+-- DuckDB
+DECLARE $tableName NVarChar(11) -- String
+SET     $tableName = 'TypeTable`2'
+
+SELECT
+	c_1."column_name"
+FROM
+	information_schema."columns" c_1
+WHERE
+	c_1."table_name" = $tableName
+ORDER BY
+	c_1.ordinal_position
+
+INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
+
+-- DuckDB
+DECLARE $value  -- Object
+SET     $value = INTERVAL '-10675199 days -02:48:05.477580'
+DECLARE $nullableValue  -- Object
+SET     $nullableValue = INTERVAL '10675199 days 02:48:05.477580'
+
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = $value AND r.ColumnNullable = $nullableValue
+
+-- DuckDB
+DELETE FROM
+	"TypeTable`2" t1
+
+-- DuckDB
+DECLARE $tableName NVarChar(11) -- String
+SET     $tableName = 'TypeTable`2'
+
+SELECT
+	c_1."column_name"
+FROM
+	information_schema."columns" c_1
+WHERE
+	c_1."table_name" = $tableName
+ORDER BY
+	c_1.ordinal_position
+
+INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
+
+-- DuckDB
+DECLARE $value  -- Object
+SET     $value = INTERVAL '-10675199 days -02:48:05.477580'
+DECLARE $nullableValue  -- Object
+SET     $nullableValue = INTERVAL '10675199 days 02:48:05.477580'
+
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = $value AND r.ColumnNullable = $nullableValue
+
+-- DuckDB
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = '123 months 2 days 123456789012 microseconds'::INTERVAL AND
+	r.ColumnNullable = '-2 months 30 days 212345678901 microseconds'::INTERVAL
+
+-- DuckDB
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = '123 months 2 days 123456789012 microseconds'::INTERVAL AND
+	r.ColumnNullable = '-2 months 30 days 212345678901 microseconds'::INTERVAL
+
+-- DuckDB
+DELETE FROM
+	"TypeTable`2" t1
+
+-- DuckDB
+DECLARE $Id INTEGER -- Int32
+SET     $Id = 1
+
+INSERT INTO "TypeTable`2"
+(
+	Id,
+	"Column",
+	ColumnNullable
+)
+VALUES
+(
+	$Id,
+	'123 months 2 days 123456789012 microseconds'::INTERVAL,
+	'-2 months 30 days 212345678901 microseconds'::INTERVAL
+)
+
+-- DuckDB
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = '123 months 2 days 123456789012 microseconds'::INTERVAL AND
+	r.ColumnNullable = '-2 months 30 days 212345678901 microseconds'::INTERVAL
+
+-- DuckDB
+DELETE FROM
+	"TypeTable`2" t1
+
+-- DuckDB
+DECLARE $p1 INTEGER -- Int32
+SET     $p1 = 1
+
+INSERT INTO "TypeTable`2"
+(
+	Id,
+	"Column",
+	ColumnNullable
+)
+VALUES
+($p1,'123 months 2 days 123456789012 microseconds'::INTERVAL,'-2 months 30 days 212345678901 microseconds'::INTERVAL)
+
+-- DuckDB
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = '123 months 2 days 123456789012 microseconds'::INTERVAL AND
+	r.ColumnNullable = '-2 months 30 days 212345678901 microseconds'::INTERVAL
+
+-- DuckDB
 SELECT
 	r.Id,
 	r."Column",

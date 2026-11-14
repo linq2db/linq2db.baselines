@@ -158,6 +158,175 @@ WHERE
 -- DuckDB
 DECLARE $value TIME -- Time
 SET     $value = '00:00:00'::TIME
+DECLARE $nullableValue TIME -- Time
+SET     $nullableValue = '23:59:59.999999'::TIME
+
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = $value AND r.ColumnNullable = $nullableValue
+
+-- DuckDB
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = '00:00:00'::TIME AND r.ColumnNullable = '23:59:59.999999'::TIME
+
+-- DuckDB
+DELETE FROM
+	"TypeTable`2" t1
+
+-- DuckDB
+DECLARE $Id INTEGER -- Int32
+SET     $Id = 1
+DECLARE $Column TIME -- Time
+SET     $Column = '00:00:00'::TIME
+DECLARE $ColumnNullable TIME -- Time
+SET     $ColumnNullable = '23:59:59.999999'::TIME
+
+INSERT INTO "TypeTable`2"
+(
+	Id,
+	"Column",
+	ColumnNullable
+)
+VALUES
+(
+	$Id,
+	$Column,
+	$ColumnNullable
+)
+
+-- DuckDB
+DECLARE $value TIME -- Time
+SET     $value = '00:00:00'::TIME
+DECLARE $nullableValue TIME -- Time
+SET     $nullableValue = '23:59:59.999999'::TIME
+
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = $value AND r.ColumnNullable = $nullableValue
+
+-- DuckDB
+DELETE FROM
+	"TypeTable`2" t1
+
+-- DuckDB
+DECLARE $p1 INTEGER -- Int32
+SET     $p1 = 1
+DECLARE $p2 TIME -- Time
+SET     $p2 = '00:00:00'::TIME
+DECLARE $p3 TIME -- Time
+SET     $p3 = '23:59:59.999999'::TIME
+
+INSERT INTO "TypeTable`2"
+(
+	Id,
+	"Column",
+	ColumnNullable
+)
+VALUES
+($p1,$p2,$p3)
+
+-- DuckDB
+DECLARE $value TIME -- Time
+SET     $value = '00:00:00'::TIME
+DECLARE $nullableValue TIME -- Time
+SET     $nullableValue = '23:59:59.999999'::TIME
+
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = $value AND r.ColumnNullable = $nullableValue
+
+-- DuckDB
+DELETE FROM
+	"TypeTable`2" t1
+
+-- DuckDB
+DECLARE $tableName NVarChar(11) -- String
+SET     $tableName = 'TypeTable`2'
+
+SELECT
+	c_1."column_name"
+FROM
+	information_schema."columns" c_1
+WHERE
+	c_1."table_name" = $tableName
+ORDER BY
+	c_1.ordinal_position
+
+INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
+
+-- DuckDB
+DECLARE $value TIME -- Time
+SET     $value = '00:00:00'::TIME
+DECLARE $nullableValue TIME -- Time
+SET     $nullableValue = '23:59:59.999999'::TIME
+
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = $value AND r.ColumnNullable = $nullableValue
+
+-- DuckDB
+DELETE FROM
+	"TypeTable`2" t1
+
+-- DuckDB
+DECLARE $tableName NVarChar(11) -- String
+SET     $tableName = 'TypeTable`2'
+
+SELECT
+	c_1."column_name"
+FROM
+	information_schema."columns" c_1
+WHERE
+	c_1."table_name" = $tableName
+ORDER BY
+	c_1.ordinal_position
+
+INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
+
+-- DuckDB
+DECLARE $value TIME -- Time
+SET     $value = '00:00:00'::TIME
+DECLARE $nullableValue TIME -- Time
+SET     $nullableValue = '23:59:59.999999'::TIME
+
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = $value AND r.ColumnNullable = $nullableValue
+
+-- DuckDB
+DECLARE $value TIME -- Time
+SET     $value = '00:00:00'::TIME
 
 SELECT
 	r.Id,
@@ -316,7 +485,7 @@ WHERE
 DECLARE $value TIME -- Time
 SET     $value = '01:02:03'::TIME
 DECLARE $nullableValue TIME -- Time
-SET     $nullableValue = '23:59:59.000999'::TIME
+SET     $nullableValue = '23:59:59.999999'::TIME
 
 SELECT
 	r.Id,
@@ -347,7 +516,7 @@ SET     $Id = 1
 DECLARE $Column TIME -- Time
 SET     $Column = '01:02:03'::TIME
 DECLARE $ColumnNullable TIME -- Time
-SET     $ColumnNullable = '23:59:59.000999'::TIME
+SET     $ColumnNullable = '23:59:59.999999'::TIME
 
 INSERT INTO "TypeTable`2"
 (
@@ -366,7 +535,7 @@ VALUES
 DECLARE $value TIME -- Time
 SET     $value = '01:02:03'::TIME
 DECLARE $nullableValue TIME -- Time
-SET     $nullableValue = '23:59:59.000999'::TIME
+SET     $nullableValue = '23:59:59.999999'::TIME
 
 SELECT
 	r.Id,
@@ -387,7 +556,7 @@ SET     $p1 = 1
 DECLARE $p2 TIME -- Time
 SET     $p2 = '01:02:03'::TIME
 DECLARE $p3 TIME -- Time
-SET     $p3 = '23:59:59.000999'::TIME
+SET     $p3 = '23:59:59.999999'::TIME
 
 INSERT INTO "TypeTable`2"
 (
@@ -402,7 +571,7 @@ VALUES
 DECLARE $value TIME -- Time
 SET     $value = '01:02:03'::TIME
 DECLARE $nullableValue TIME -- Time
-SET     $nullableValue = '23:59:59.000999'::TIME
+SET     $nullableValue = '23:59:59.999999'::TIME
 
 SELECT
 	r.Id,
@@ -436,7 +605,7 @@ INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 DECLARE $value TIME -- Time
 SET     $value = '01:02:03'::TIME
 DECLARE $nullableValue TIME -- Time
-SET     $nullableValue = '23:59:59.000999'::TIME
+SET     $nullableValue = '23:59:59.999999'::TIME
 
 SELECT
 	r.Id,
@@ -470,7 +639,7 @@ INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 DECLARE $value TIME -- Time
 SET     $value = '01:02:03'::TIME
 DECLARE $nullableValue TIME -- Time
-SET     $nullableValue = '23:59:59.000999'::TIME
+SET     $nullableValue = '23:59:59.999999'::TIME
 
 SELECT
 	r.Id,
@@ -641,6 +810,175 @@ WHERE
 -- DuckDB
 DECLARE $value TIME -- Time
 SET     $value = '00:00:00'::TIME
+DECLARE $nullableValue TIME -- Time
+SET     $nullableValue = '23:59:59.999999'::TIME
+
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = $value AND r.ColumnNullable = $nullableValue
+
+-- DuckDB
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = '00:00:00'::TIME AND r.ColumnNullable = '23:59:59.999999'::TIME
+
+-- DuckDB
+DELETE FROM
+	"TypeTable`2" t1
+
+-- DuckDB
+DECLARE $Id INTEGER -- Int32
+SET     $Id = 1
+DECLARE $Column TIME -- Time
+SET     $Column = '00:00:00'::TIME
+DECLARE $ColumnNullable TIME -- Time
+SET     $ColumnNullable = '23:59:59.999999'::TIME
+
+INSERT INTO "TypeTable`2"
+(
+	Id,
+	"Column",
+	ColumnNullable
+)
+VALUES
+(
+	$Id,
+	$Column,
+	$ColumnNullable
+)
+
+-- DuckDB
+DECLARE $value TIME -- Time
+SET     $value = '00:00:00'::TIME
+DECLARE $nullableValue TIME -- Time
+SET     $nullableValue = '23:59:59.999999'::TIME
+
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = $value AND r.ColumnNullable = $nullableValue
+
+-- DuckDB
+DELETE FROM
+	"TypeTable`2" t1
+
+-- DuckDB
+DECLARE $p1 INTEGER -- Int32
+SET     $p1 = 1
+DECLARE $p2 TIME -- Time
+SET     $p2 = '00:00:00'::TIME
+DECLARE $p3 TIME -- Time
+SET     $p3 = '23:59:59.999999'::TIME
+
+INSERT INTO "TypeTable`2"
+(
+	Id,
+	"Column",
+	ColumnNullable
+)
+VALUES
+($p1,$p2,$p3)
+
+-- DuckDB
+DECLARE $value TIME -- Time
+SET     $value = '00:00:00'::TIME
+DECLARE $nullableValue TIME -- Time
+SET     $nullableValue = '23:59:59.999999'::TIME
+
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = $value AND r.ColumnNullable = $nullableValue
+
+-- DuckDB
+DELETE FROM
+	"TypeTable`2" t1
+
+-- DuckDB
+DECLARE $tableName NVarChar(11) -- String
+SET     $tableName = 'TypeTable`2'
+
+SELECT
+	c_1."column_name"
+FROM
+	information_schema."columns" c_1
+WHERE
+	c_1."table_name" = $tableName
+ORDER BY
+	c_1.ordinal_position
+
+INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
+
+-- DuckDB
+DECLARE $value TIME -- Time
+SET     $value = '00:00:00'::TIME
+DECLARE $nullableValue TIME -- Time
+SET     $nullableValue = '23:59:59.999999'::TIME
+
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = $value AND r.ColumnNullable = $nullableValue
+
+-- DuckDB
+DELETE FROM
+	"TypeTable`2" t1
+
+-- DuckDB
+DECLARE $tableName NVarChar(11) -- String
+SET     $tableName = 'TypeTable`2'
+
+SELECT
+	c_1."column_name"
+FROM
+	information_schema."columns" c_1
+WHERE
+	c_1."table_name" = $tableName
+ORDER BY
+	c_1.ordinal_position
+
+INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
+
+-- DuckDB
+DECLARE $value TIME -- Time
+SET     $value = '00:00:00'::TIME
+DECLARE $nullableValue TIME -- Time
+SET     $nullableValue = '23:59:59.999999'::TIME
+
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = $value AND r.ColumnNullable = $nullableValue
+
+-- DuckDB
+DECLARE $value TIME -- Time
+SET     $value = '00:00:00'::TIME
 
 SELECT
 	r.Id,
@@ -799,7 +1137,7 @@ WHERE
 DECLARE $value TIME -- Time
 SET     $value = '01:02:03'::TIME
 DECLARE $nullableValue TIME -- Time
-SET     $nullableValue = '23:59:59.000999'::TIME
+SET     $nullableValue = '23:59:59.999999'::TIME
 
 SELECT
 	r.Id,
@@ -830,7 +1168,7 @@ SET     $Id = 1
 DECLARE $Column TIME -- Time
 SET     $Column = '01:02:03'::TIME
 DECLARE $ColumnNullable TIME -- Time
-SET     $ColumnNullable = '23:59:59.000999'::TIME
+SET     $ColumnNullable = '23:59:59.999999'::TIME
 
 INSERT INTO "TypeTable`2"
 (
@@ -849,7 +1187,7 @@ VALUES
 DECLARE $value TIME -- Time
 SET     $value = '01:02:03'::TIME
 DECLARE $nullableValue TIME -- Time
-SET     $nullableValue = '23:59:59.000999'::TIME
+SET     $nullableValue = '23:59:59.999999'::TIME
 
 SELECT
 	r.Id,
@@ -870,7 +1208,7 @@ SET     $p1 = 1
 DECLARE $p2 TIME -- Time
 SET     $p2 = '01:02:03'::TIME
 DECLARE $p3 TIME -- Time
-SET     $p3 = '23:59:59.000999'::TIME
+SET     $p3 = '23:59:59.999999'::TIME
 
 INSERT INTO "TypeTable`2"
 (
@@ -885,7 +1223,7 @@ VALUES
 DECLARE $value TIME -- Time
 SET     $value = '01:02:03'::TIME
 DECLARE $nullableValue TIME -- Time
-SET     $nullableValue = '23:59:59.000999'::TIME
+SET     $nullableValue = '23:59:59.999999'::TIME
 
 SELECT
 	r.Id,
@@ -919,7 +1257,7 @@ INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 DECLARE $value TIME -- Time
 SET     $value = '01:02:03'::TIME
 DECLARE $nullableValue TIME -- Time
-SET     $nullableValue = '23:59:59.000999'::TIME
+SET     $nullableValue = '23:59:59.999999'::TIME
 
 SELECT
 	r.Id,
@@ -953,7 +1291,7 @@ INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 DECLARE $value TIME -- Time
 SET     $value = '01:02:03'::TIME
 DECLARE $nullableValue TIME -- Time
-SET     $nullableValue = '23:59:59.000999'::TIME
+SET     $nullableValue = '23:59:59.999999'::TIME
 
 SELECT
 	r.Id,
@@ -1124,6 +1462,175 @@ WHERE
 -- DuckDB
 DECLARE $value TIME -- Time
 SET     $value = '00:00:00'::TIME
+DECLARE $nullableValue TIME -- Time
+SET     $nullableValue = '23:59:59.999999'::TIME
+
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = $value AND r.ColumnNullable = $nullableValue
+
+-- DuckDB
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = '00:00:00'::TIME AND r.ColumnNullable = '23:59:59.999999'::TIME
+
+-- DuckDB
+DELETE FROM
+	"TypeTable`2" t1
+
+-- DuckDB
+DECLARE $Id INTEGER -- Int32
+SET     $Id = 1
+DECLARE $Column TIME -- Time
+SET     $Column = '00:00:00'::TIME
+DECLARE $ColumnNullable TIME -- Time
+SET     $ColumnNullable = '23:59:59.999999'::TIME
+
+INSERT INTO "TypeTable`2"
+(
+	Id,
+	"Column",
+	ColumnNullable
+)
+VALUES
+(
+	$Id,
+	$Column,
+	$ColumnNullable
+)
+
+-- DuckDB
+DECLARE $value TIME -- Time
+SET     $value = '00:00:00'::TIME
+DECLARE $nullableValue TIME -- Time
+SET     $nullableValue = '23:59:59.999999'::TIME
+
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = $value AND r.ColumnNullable = $nullableValue
+
+-- DuckDB
+DELETE FROM
+	"TypeTable`2" t1
+
+-- DuckDB
+DECLARE $p1 INTEGER -- Int32
+SET     $p1 = 1
+DECLARE $p2 TIME -- Time
+SET     $p2 = '00:00:00'::TIME
+DECLARE $p3 TIME -- Time
+SET     $p3 = '23:59:59.999999'::TIME
+
+INSERT INTO "TypeTable`2"
+(
+	Id,
+	"Column",
+	ColumnNullable
+)
+VALUES
+($p1,$p2,$p3)
+
+-- DuckDB
+DECLARE $value TIME -- Time
+SET     $value = '00:00:00'::TIME
+DECLARE $nullableValue TIME -- Time
+SET     $nullableValue = '23:59:59.999999'::TIME
+
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = $value AND r.ColumnNullable = $nullableValue
+
+-- DuckDB
+DELETE FROM
+	"TypeTable`2" t1
+
+-- DuckDB
+DECLARE $tableName NVarChar(11) -- String
+SET     $tableName = 'TypeTable`2'
+
+SELECT
+	c_1."column_name"
+FROM
+	information_schema."columns" c_1
+WHERE
+	c_1."table_name" = $tableName
+ORDER BY
+	c_1.ordinal_position
+
+INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
+
+-- DuckDB
+DECLARE $value TIME -- Time
+SET     $value = '00:00:00'::TIME
+DECLARE $nullableValue TIME -- Time
+SET     $nullableValue = '23:59:59.999999'::TIME
+
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = $value AND r.ColumnNullable = $nullableValue
+
+-- DuckDB
+DELETE FROM
+	"TypeTable`2" t1
+
+-- DuckDB
+DECLARE $tableName NVarChar(11) -- String
+SET     $tableName = 'TypeTable`2'
+
+SELECT
+	c_1."column_name"
+FROM
+	information_schema."columns" c_1
+WHERE
+	c_1."table_name" = $tableName
+ORDER BY
+	c_1.ordinal_position
+
+INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
+
+-- DuckDB
+DECLARE $value TIME -- Time
+SET     $value = '00:00:00'::TIME
+DECLARE $nullableValue TIME -- Time
+SET     $nullableValue = '23:59:59.999999'::TIME
+
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = $value AND r.ColumnNullable = $nullableValue
+
+-- DuckDB
+DECLARE $value TIME -- Time
+SET     $value = '00:00:00'::TIME
 
 SELECT
 	r.Id,
@@ -1282,7 +1789,7 @@ WHERE
 DECLARE $value TIME -- Time
 SET     $value = '01:02:03'::TIME
 DECLARE $nullableValue TIME -- Time
-SET     $nullableValue = '23:59:59.000999'::TIME
+SET     $nullableValue = '23:59:59.999999'::TIME
 
 SELECT
 	r.Id,
@@ -1313,7 +1820,7 @@ SET     $Id = 1
 DECLARE $Column TIME -- Time
 SET     $Column = '01:02:03'::TIME
 DECLARE $ColumnNullable TIME -- Time
-SET     $ColumnNullable = '23:59:59.000999'::TIME
+SET     $ColumnNullable = '23:59:59.999999'::TIME
 
 INSERT INTO "TypeTable`2"
 (
@@ -1332,7 +1839,7 @@ VALUES
 DECLARE $value TIME -- Time
 SET     $value = '01:02:03'::TIME
 DECLARE $nullableValue TIME -- Time
-SET     $nullableValue = '23:59:59.000999'::TIME
+SET     $nullableValue = '23:59:59.999999'::TIME
 
 SELECT
 	r.Id,
@@ -1353,7 +1860,7 @@ SET     $p1 = 1
 DECLARE $p2 TIME -- Time
 SET     $p2 = '01:02:03'::TIME
 DECLARE $p3 TIME -- Time
-SET     $p3 = '23:59:59.000999'::TIME
+SET     $p3 = '23:59:59.999999'::TIME
 
 INSERT INTO "TypeTable`2"
 (
@@ -1368,7 +1875,7 @@ VALUES
 DECLARE $value TIME -- Time
 SET     $value = '01:02:03'::TIME
 DECLARE $nullableValue TIME -- Time
-SET     $nullableValue = '23:59:59.000999'::TIME
+SET     $nullableValue = '23:59:59.999999'::TIME
 
 SELECT
 	r.Id,
@@ -1402,7 +1909,7 @@ INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 DECLARE $value TIME -- Time
 SET     $value = '01:02:03'::TIME
 DECLARE $nullableValue TIME -- Time
-SET     $nullableValue = '23:59:59.000999'::TIME
+SET     $nullableValue = '23:59:59.999999'::TIME
 
 SELECT
 	r.Id,
@@ -1436,7 +1943,7 @@ INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 DECLARE $value TIME -- Time
 SET     $value = '01:02:03'::TIME
 DECLARE $nullableValue TIME -- Time
-SET     $nullableValue = '23:59:59.000999'::TIME
+SET     $nullableValue = '23:59:59.999999'::TIME
 
 SELECT
 	r.Id,
@@ -1607,6 +2114,175 @@ WHERE
 -- DuckDB
 DECLARE $value TIME -- Time
 SET     $value = '00:00:00'::TIME
+DECLARE $nullableValue TIME -- Time
+SET     $nullableValue = '23:59:59.999999'::TIME
+
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = $value AND r.ColumnNullable = $nullableValue
+
+-- DuckDB
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = '00:00:00'::TIME AND r.ColumnNullable = '23:59:59.999999'::TIME
+
+-- DuckDB
+DELETE FROM
+	"TypeTable`2" t1
+
+-- DuckDB
+DECLARE $Id INTEGER -- Int32
+SET     $Id = 1
+DECLARE $Column TIME -- Time
+SET     $Column = '00:00:00'::TIME
+DECLARE $ColumnNullable TIME -- Time
+SET     $ColumnNullable = '23:59:59.999999'::TIME
+
+INSERT INTO "TypeTable`2"
+(
+	Id,
+	"Column",
+	ColumnNullable
+)
+VALUES
+(
+	$Id,
+	$Column,
+	$ColumnNullable
+)
+
+-- DuckDB
+DECLARE $value TIME -- Time
+SET     $value = '00:00:00'::TIME
+DECLARE $nullableValue TIME -- Time
+SET     $nullableValue = '23:59:59.999999'::TIME
+
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = $value AND r.ColumnNullable = $nullableValue
+
+-- DuckDB
+DELETE FROM
+	"TypeTable`2" t1
+
+-- DuckDB
+DECLARE $p1 INTEGER -- Int32
+SET     $p1 = 1
+DECLARE $p2 TIME -- Time
+SET     $p2 = '00:00:00'::TIME
+DECLARE $p3 TIME -- Time
+SET     $p3 = '23:59:59.999999'::TIME
+
+INSERT INTO "TypeTable`2"
+(
+	Id,
+	"Column",
+	ColumnNullable
+)
+VALUES
+($p1,$p2,$p3)
+
+-- DuckDB
+DECLARE $value TIME -- Time
+SET     $value = '00:00:00'::TIME
+DECLARE $nullableValue TIME -- Time
+SET     $nullableValue = '23:59:59.999999'::TIME
+
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = $value AND r.ColumnNullable = $nullableValue
+
+-- DuckDB
+DELETE FROM
+	"TypeTable`2" t1
+
+-- DuckDB
+DECLARE $tableName NVarChar(11) -- String
+SET     $tableName = 'TypeTable`2'
+
+SELECT
+	c_1."column_name"
+FROM
+	information_schema."columns" c_1
+WHERE
+	c_1."table_name" = $tableName
+ORDER BY
+	c_1.ordinal_position
+
+INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
+
+-- DuckDB
+DECLARE $value TIME -- Time
+SET     $value = '00:00:00'::TIME
+DECLARE $nullableValue TIME -- Time
+SET     $nullableValue = '23:59:59.999999'::TIME
+
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = $value AND r.ColumnNullable = $nullableValue
+
+-- DuckDB
+DELETE FROM
+	"TypeTable`2" t1
+
+-- DuckDB
+DECLARE $tableName NVarChar(11) -- String
+SET     $tableName = 'TypeTable`2'
+
+SELECT
+	c_1."column_name"
+FROM
+	information_schema."columns" c_1
+WHERE
+	c_1."table_name" = $tableName
+ORDER BY
+	c_1.ordinal_position
+
+INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
+
+-- DuckDB
+DECLARE $value TIME -- Time
+SET     $value = '00:00:00'::TIME
+DECLARE $nullableValue TIME -- Time
+SET     $nullableValue = '23:59:59.999999'::TIME
+
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = $value AND r.ColumnNullable = $nullableValue
+
+-- DuckDB
+DECLARE $value TIME -- Time
+SET     $value = '00:00:00'::TIME
 
 SELECT
 	r.Id,
@@ -1765,7 +2441,7 @@ WHERE
 DECLARE $value TIME -- Time
 SET     $value = '01:02:03'::TIME
 DECLARE $nullableValue TIME -- Time
-SET     $nullableValue = '23:59:59.000999'::TIME
+SET     $nullableValue = '23:59:59.999999'::TIME
 
 SELECT
 	r.Id,
@@ -1796,7 +2472,7 @@ SET     $Id = 1
 DECLARE $Column TIME -- Time
 SET     $Column = '01:02:03'::TIME
 DECLARE $ColumnNullable TIME -- Time
-SET     $ColumnNullable = '23:59:59.000999'::TIME
+SET     $ColumnNullable = '23:59:59.999999'::TIME
 
 INSERT INTO "TypeTable`2"
 (
@@ -1815,7 +2491,7 @@ VALUES
 DECLARE $value TIME -- Time
 SET     $value = '01:02:03'::TIME
 DECLARE $nullableValue TIME -- Time
-SET     $nullableValue = '23:59:59.000999'::TIME
+SET     $nullableValue = '23:59:59.999999'::TIME
 
 SELECT
 	r.Id,
@@ -1836,7 +2512,7 @@ SET     $p1 = 1
 DECLARE $p2 TIME -- Time
 SET     $p2 = '01:02:03'::TIME
 DECLARE $p3 TIME -- Time
-SET     $p3 = '23:59:59.000999'::TIME
+SET     $p3 = '23:59:59.999999'::TIME
 
 INSERT INTO "TypeTable`2"
 (
@@ -1851,7 +2527,7 @@ VALUES
 DECLARE $value TIME -- Time
 SET     $value = '01:02:03'::TIME
 DECLARE $nullableValue TIME -- Time
-SET     $nullableValue = '23:59:59.000999'::TIME
+SET     $nullableValue = '23:59:59.999999'::TIME
 
 SELECT
 	r.Id,
@@ -1885,7 +2561,7 @@ INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 DECLARE $value TIME -- Time
 SET     $value = '01:02:03'::TIME
 DECLARE $nullableValue TIME -- Time
-SET     $nullableValue = '23:59:59.000999'::TIME
+SET     $nullableValue = '23:59:59.999999'::TIME
 
 SELECT
 	r.Id,
@@ -1919,7 +2595,7 @@ INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 DECLARE $value TIME -- Time
 SET     $value = '01:02:03'::TIME
 DECLARE $nullableValue TIME -- Time
-SET     $nullableValue = '23:59:59.000999'::TIME
+SET     $nullableValue = '23:59:59.999999'::TIME
 
 SELECT
 	r.Id,

@@ -8774,3 +8774,249 @@ FROM
 WHERE
 	r."Column" = $value AND r.ColumnNullable = $nullableValue
 
+-- DuckDB
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = '-infinity'::TIMESTAMP_NS AND r.ColumnNullable = 'infinity'::TIMESTAMP_NS
+
+-- DuckDB
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = '-infinity'::TIMESTAMP_NS AND r.ColumnNullable = 'infinity'::TIMESTAMP_NS
+
+-- DuckDB
+DELETE FROM
+	"TypeTable`2" t1
+
+-- DuckDB
+DECLARE $Id INTEGER -- Int32
+SET     $Id = 1
+
+INSERT INTO "TypeTable`2"
+(
+	Id,
+	"Column",
+	ColumnNullable
+)
+VALUES
+(
+	$Id,
+	'-infinity'::TIMESTAMP_NS,
+	'infinity'::TIMESTAMP_NS
+)
+
+-- DuckDB
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = '-infinity'::TIMESTAMP_NS AND r.ColumnNullable = 'infinity'::TIMESTAMP_NS
+
+-- DuckDB
+DELETE FROM
+	"TypeTable`2" t1
+
+-- DuckDB
+DECLARE $p1 INTEGER -- Int32
+SET     $p1 = 1
+DECLARE $p2 TIMESTAMP -- DateTime
+SET     $p2 = '-infinity'::TIMESTAMP
+DECLARE $p3 TIMESTAMP -- DateTime
+SET     $p3 = 'infinity'::TIMESTAMP
+
+INSERT INTO "TypeTable`2"
+(
+	Id,
+	"Column",
+	ColumnNullable
+)
+VALUES
+($p1,$p2,$p3)
+
+-- DuckDB
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = '-infinity'::TIMESTAMP_NS AND r.ColumnNullable = 'infinity'::TIMESTAMP_NS
+
+-- DuckDB
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = '-infinity'::TIMESTAMP_NS AND r.ColumnNullable = 'infinity'::TIMESTAMP_NS
+
+-- DuckDB
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = '-infinity'::TIMESTAMP_NS AND r.ColumnNullable = 'infinity'::TIMESTAMP_NS
+
+-- DuckDB
+DELETE FROM
+	"TypeTable`2" t1
+
+-- DuckDB
+DECLARE $Id INTEGER -- Int32
+SET     $Id = 1
+
+INSERT INTO "TypeTable`2"
+(
+	Id,
+	"Column",
+	ColumnNullable
+)
+VALUES
+(
+	$Id,
+	'-infinity'::TIMESTAMP_NS,
+	'infinity'::TIMESTAMP_NS
+)
+
+-- DuckDB
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = '-infinity'::TIMESTAMP_NS AND r.ColumnNullable = 'infinity'::TIMESTAMP_NS
+
+-- DuckDB
+DELETE FROM
+	"TypeTable`2" t1
+
+-- DuckDB
+DECLARE $p1 INTEGER -- Int32
+SET     $p1 = 1
+DECLARE $p2 TIMESTAMP -- DateTime
+SET     $p2 = '-infinity'::TIMESTAMP
+DECLARE $p3 TIMESTAMP -- DateTime
+SET     $p3 = 'infinity'::TIMESTAMP
+
+INSERT INTO "TypeTable`2"
+(
+	Id,
+	"Column",
+	ColumnNullable
+)
+VALUES
+($p1,$p2,$p3)
+
+-- DuckDB
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = '-infinity'::TIMESTAMP_NS AND r.ColumnNullable = 'infinity'::TIMESTAMP_NS
+
+-- DuckDB
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = '-infinity'::TIMESTAMP_NS AND r.ColumnNullable = 'infinity'::TIMESTAMP_NS
+
+-- DuckDB
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = '-infinity'::TIMESTAMP_NS AND r.ColumnNullable = 'infinity'::TIMESTAMP_NS
+
+-- DuckDB
+DELETE FROM
+	"TypeTable`2" t1
+
+-- DuckDB
+DECLARE $Id INTEGER -- Int32
+SET     $Id = 1
+
+INSERT INTO "TypeTable`2"
+(
+	Id,
+	"Column",
+	ColumnNullable
+)
+VALUES
+(
+	$Id,
+	'-infinity'::TIMESTAMP_NS,
+	'infinity'::TIMESTAMP_NS
+)
+
+-- DuckDB
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = '-infinity'::TIMESTAMP_NS AND r.ColumnNullable = 'infinity'::TIMESTAMP_NS
+
+-- DuckDB
+DELETE FROM
+	"TypeTable`2" t1
+
+-- DuckDB
+DECLARE $p1 INTEGER -- Int32
+SET     $p1 = 1
+DECLARE $p2 TIMESTAMP -- DateTime
+SET     $p2 = '-infinity'::TIMESTAMP
+DECLARE $p3 TIMESTAMP -- DateTime
+SET     $p3 = 'infinity'::TIMESTAMP
+
+INSERT INTO "TypeTable`2"
+(
+	Id,
+	"Column",
+	ColumnNullable
+)
+VALUES
+($p1,$p2,$p3)
+
+-- DuckDB
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = '-infinity'::TIMESTAMP_NS AND r.ColumnNullable = 'infinity'::TIMESTAMP_NS
+
