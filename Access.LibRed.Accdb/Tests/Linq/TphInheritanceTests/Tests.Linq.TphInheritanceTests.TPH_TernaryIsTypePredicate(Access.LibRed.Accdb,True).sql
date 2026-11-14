@@ -1,0 +1,64 @@
+﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
+DECLARE @Code NVarChar(5) -- String
+SET     @Code = 'Child'
+DECLARE @Id  -- Int32
+SET     @Id = 1
+DECLARE @Name NVarChar(4) -- String
+SET     @Name = 'Jane'
+DECLARE @IsMale  -- Boolean
+SET     @IsMale = False
+
+INSERT INTO [Base]
+(
+	[Code],
+	[Id],
+	[Name],
+	[IsMale]
+)
+VALUES
+(
+	@Code,
+	@Id,
+	@Name,
+	@IsMale
+)
+
+-- Access.LibRed.Accdb Access.LibRed AccessLibRed
+DECLARE @Code NVarChar(6) -- String
+SET     @Code = 'Child2'
+DECLARE @Id  -- Int32
+SET     @Id = 2
+DECLARE @Name NVarChar -- String
+SET     @Name = NULL
+DECLARE @Age  -- Int32
+SET     @Age = 10
+
+INSERT INTO [Base]
+(
+	[Code],
+	[Id],
+	[Name],
+	[Age]
+)
+VALUES
+(
+	@Code,
+	@Id,
+	@Name,
+	@Age
+)
+
+-- Access.LibRed.Accdb Access.LibRed AccessLibRed
+SELECT
+	[e].[Code],
+	[e].[Id],
+	[e].[Name],
+	[e].[Age],
+	[e].[IsMale]
+FROM
+	[Base] [e]
+WHERE
+	IIF([e].[Code] = 'BaseChild' OR [e].[Code] = 'Child' OR [e].[Code] = 'Child2', True, [e].[Id] = 0)
+ORDER BY
+	[e].[Id]
+

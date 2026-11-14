@@ -1,0 +1,47 @@
+﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
+DECLARE @p  -- Int32
+SET     @p = 102
+
+DELETE FROM
+	[LinqDataTypes] [r]
+WHERE
+	[r].[ID] >= 101 AND [r].[ID] < @p
+
+-- Access.LibRed.Accdb Access.LibRed AccessLibRed
+DECLARE @Id  -- Int32
+SET     @Id = 101
+DECLARE @TestField  -- Int32
+SET     @TestField = 12
+DECLARE @Int32Field  -- Int32
+SET     @Int32Field = NULL
+
+INSERT INTO [LinqDataTypes]
+(
+	[ID],
+	[BigIntValue],
+	[IntValue]
+)
+VALUES
+(
+	@Id,
+	@TestField,
+	@Int32Field
+)
+
+-- Access.LibRed.Accdb Access.LibRed AccessLibRed
+SELECT
+	COUNT(*)
+FROM
+	[LinqDataTypes] [r]
+WHERE
+	[r].[ID] = 101 AND [r].[BigIntValue] = 12
+
+-- Access.LibRed.Accdb Access.LibRed AccessLibRed
+DECLARE @p  -- Int32
+SET     @p = 102
+
+DELETE FROM
+	[LinqDataTypes] [r]
+WHERE
+	[r].[ID] >= 101 AND [r].[ID] < @p
+

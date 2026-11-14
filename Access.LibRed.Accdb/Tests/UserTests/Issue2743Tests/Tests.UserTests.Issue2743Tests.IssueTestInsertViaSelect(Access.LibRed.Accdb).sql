@@ -1,0 +1,10 @@
+﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
+INSERT INTO [MessageEventDTOTb2]
+(
+	[Id]
+)
+SELECT
+	[x].[Id]
+FROM
+	[MessageEventDTO] [x]
+

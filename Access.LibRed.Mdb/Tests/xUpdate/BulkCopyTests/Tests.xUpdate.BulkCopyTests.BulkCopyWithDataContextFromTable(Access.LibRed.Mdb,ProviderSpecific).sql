@@ -1,0 +1,39 @@
+﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
+DECLARE @Id  -- Int32
+SET     @Id = 1
+
+INSERT INTO [SimpleBulkCopyTable]
+(
+	[Id]
+)
+VALUES
+(
+	@Id
+)
+
+-- Access.LibRed.Mdb Access.LibRed AccessLibRed
+DECLARE @Id  -- Int32
+SET     @Id = 2
+
+INSERT INTO [SimpleBulkCopyTable]
+(
+	[Id]
+)
+VALUES
+(
+	@Id
+)
+
+-- Access.LibRed.Mdb Access.LibRed AccessLibRed
+DECLARE @Id  -- Int32
+SET     @Id = 3
+
+INSERT INTO [SimpleBulkCopyTable]
+(
+	[Id]
+)
+VALUES
+(
+	@Id
+)
+

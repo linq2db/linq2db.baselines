@@ -26,8 +26,8 @@ WHERE
 	[t1].[PersonID] = ?
 
 -- Access.Jet.Odbc AccessODBC
-DECLARE @id Int -- Int32
-SET     @id = 1
+DECLARE @PersonID Int -- Int32
+SET     @PersonID = 1
 
 { CALL Person_Delete(?) }
 
