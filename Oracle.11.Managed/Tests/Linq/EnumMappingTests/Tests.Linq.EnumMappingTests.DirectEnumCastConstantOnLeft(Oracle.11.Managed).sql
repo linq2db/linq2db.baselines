@@ -1,7 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-DECLARE @Gender Char(1) -- AnsiStringFixedLength
-SET     @Gender = 'F'
-
 SELECT
 	p."FirstName",
 	p."PersonID",
@@ -11,7 +8,7 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	:Gender = p."Gender"
+	'F' = p."Gender"
 
 -- Oracle.11.Managed Oracle11
 SELECT

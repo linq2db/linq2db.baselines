@@ -1,7 +1,4 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @p Varchar2(1) -- String
-SET     @p = 'F'
-
 SELECT
 	p."FirstName",
 	p."PersonID",
@@ -11,10 +8,7 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	CASE
-		WHEN p."PersonID" > 2 THEN 'M'
-		ELSE 'F'
-	END = :p
+	p."PersonID" <= 2
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
 SELECT
