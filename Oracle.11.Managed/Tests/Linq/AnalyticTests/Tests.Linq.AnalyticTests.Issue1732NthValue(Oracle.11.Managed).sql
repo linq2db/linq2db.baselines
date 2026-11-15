@@ -9,4 +9,6 @@ FROM
 	"Position" p
 WHERE
 	p."Group" = :group_1
+ORDER BY
+	p."Order" DESC
 
