@@ -1,7 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-DECLARE @Gender Char(1) -- AnsiStringFixedLength
-SET     @Gender = 'F'
-
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],
@@ -11,7 +8,7 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	? = [p].[Gender]
+	'F' = [p].[Gender]
 
 -- Access.Jet.Odbc AccessODBC
 SELECT

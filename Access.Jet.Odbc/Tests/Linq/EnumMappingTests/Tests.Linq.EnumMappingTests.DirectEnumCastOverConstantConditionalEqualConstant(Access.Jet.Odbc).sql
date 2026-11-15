@@ -1,7 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-DECLARE @p NChar(1) -- StringFixedLength
-SET     @p = 'F'
-
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],
@@ -11,7 +8,7 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	IIF([p].[PersonID] > 2, 'M', 'F') = ?
+	[p].[PersonID] <= 2
 
 -- Access.Jet.Odbc AccessODBC
 SELECT

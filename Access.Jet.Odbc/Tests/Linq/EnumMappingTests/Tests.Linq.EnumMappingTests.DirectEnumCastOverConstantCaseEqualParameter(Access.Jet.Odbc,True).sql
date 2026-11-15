@@ -11,7 +11,7 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	? = IIF([p].[PersonID] > 3, 'M', IIF([p].[PersonID] > 2, 'O', 'F'))
+	IIF([p].[PersonID] > 3, 'M', IIF([p].[PersonID] > 2, 'O', 'F')) = ?
 
 -- Access.Jet.Odbc AccessODBC
 SELECT
