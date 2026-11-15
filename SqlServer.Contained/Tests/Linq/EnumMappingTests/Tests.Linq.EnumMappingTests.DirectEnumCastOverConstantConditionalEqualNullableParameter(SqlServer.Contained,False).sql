@@ -11,7 +11,7 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	@gender = IIF([p].[PersonID] > 2, N'M', N'F')
+	IIF([p].[PersonID] > 2, N'M', N'F') = @gender
 
 -- SqlServer.Contained SqlServer.2025
 SELECT
