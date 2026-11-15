@@ -1,0 +1,20 @@
+﻿-- SQLite.MS SQLite
+SELECT
+	[p].[PersonID]
+FROM
+	[Person] [p]
+WHERE
+	[p].[Gender] > 'F'
+ORDER BY
+	[p].[PersonID]
+
+-- SQLite.MS SQLite
+SELECT
+	[p].[PersonID]
+FROM
+	[Person] [p]
+WHERE
+	[p].[Gender] > 'F'
+ORDER BY
+	[p].[PersonID]
+
