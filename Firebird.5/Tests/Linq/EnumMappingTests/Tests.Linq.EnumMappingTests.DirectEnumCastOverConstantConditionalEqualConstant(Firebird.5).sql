@@ -1,7 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-DECLARE @p Char(1) -- String
-SET     @p = 'F'
-
 SELECT
 	"p"."FirstName",
 	"p"."PersonID",
@@ -11,10 +8,7 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	CASE
-		WHEN "p"."PersonID" > 2 THEN 'M'
-		ELSE 'F'
-	END = @p
+	"p"."PersonID" <= 2
 
 -- Firebird.5 Firebird4
 SELECT

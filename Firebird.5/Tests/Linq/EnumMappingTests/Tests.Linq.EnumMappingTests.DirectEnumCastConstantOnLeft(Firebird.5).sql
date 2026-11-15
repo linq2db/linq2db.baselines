@@ -1,7 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-DECLARE @Gender Char(1) -- String
-SET     @Gender = 'F'
-
 SELECT
 	"p"."FirstName",
 	"p"."PersonID",
@@ -11,7 +8,7 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	@Gender = "p"."Gender"
+	'F' = "p"."Gender"
 
 -- Firebird.5 Firebird4
 SELECT
