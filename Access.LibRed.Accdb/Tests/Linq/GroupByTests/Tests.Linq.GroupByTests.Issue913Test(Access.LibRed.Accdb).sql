@@ -5,7 +5,10 @@ SELECT
 FROM
 	(
 		SELECT
-			IIF([g_1].[TradingStatus] = 'D', True, False) as [c1]
+			CASE
+				WHEN [g_1].[TradingStatus] = 'D' THEN True
+				ELSE False
+			END as [c1]
 		FROM
 			[Issue913Test] [g_1]
 	) [g_2]

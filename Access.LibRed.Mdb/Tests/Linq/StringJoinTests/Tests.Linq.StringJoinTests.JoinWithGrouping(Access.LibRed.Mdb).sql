@@ -1,38 +1,15 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
-	[m_1].[Key_1],
-	[d].[NullableValue]
-FROM
-	(
-		SELECT DISTINCT
-			[g_1].[Id] as [Key_1]
-		FROM
-			[SampleClass] [g_1]
-	) [m_1]
-		INNER JOIN [SampleClass] [d] ON ([m_1].[Key_1] = [d].[Id])
-ORDER BY
-	[m_1].[Key_1]
-
--- Access.LibRed.Mdb Access.LibRed AccessLibRed
-SELECT
-	[m_1].[Key_1],
-	[d].[NotNullableValue]
-FROM
-	(
-		SELECT DISTINCT
-			[g_1].[Id] as [Key_1]
-		FROM
-			[SampleClass] [g_1]
-	) [m_1]
-		INNER JOIN [SampleClass] [d] ON ([m_1].[Key_1] = [d].[Id])
-ORDER BY
-	[m_1].[Key_1]
-
--- Access.LibRed.Mdb Access.LibRed AccessLibRed
-SELECT DISTINCT
-	[g_1].[Id]
+	[g_1].[Id],
+	STRING_AGG(CASE
+		WHEN [g_1].[NullableValue] IS NULL THEN ''
+		ELSE [g_1].[NullableValue]
+	END, ', '),
+	STRING_AGG([g_1].[NotNullableValue], ', ')
 FROM
 	[SampleClass] [g_1]
+GROUP BY
+	[g_1].[Id]
 ORDER BY
 	[g_1].[Id]
 

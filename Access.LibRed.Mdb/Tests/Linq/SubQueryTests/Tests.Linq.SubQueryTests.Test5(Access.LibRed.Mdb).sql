@@ -23,7 +23,10 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			IIF([id].[Value1] IS NULL, [id].[ParentID], [id].[ParentID] + 1) as [c1]
+			CASE
+				WHEN [id].[Value1] IS NULL THEN [id].[ParentID]
+				ELSE [id].[ParentID] + 1
+			END as [c1]
 		FROM
 			[Parent] [id]
 		WHERE

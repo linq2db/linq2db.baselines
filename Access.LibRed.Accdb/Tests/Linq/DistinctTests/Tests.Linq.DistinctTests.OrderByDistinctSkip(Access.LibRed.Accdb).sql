@@ -1,4 +1,7 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
+DECLARE @skip  -- Int32
+SET     @skip = 2
+
 SELECT
 	[t2].[F2]
 FROM
@@ -11,4 +14,5 @@ FROM
 	) [t2]
 ORDER BY
 	[t2].[F1]
+OFFSET @skip ROWS
 

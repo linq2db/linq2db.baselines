@@ -16,14 +16,20 @@ FROM
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
-	DatePart('yyyy', IIF([j].[Moment] IS NULL, #0100-01-01#, [j].[Moment]))
+	DatePart('yyyy', CASE
+		WHEN [j].[Moment] IS NULL THEN #0100-01-01#
+		ELSE [j].[Moment]
+	END)
 FROM
 	[MappedMomentEntity] [e]
 		LEFT JOIN [MappedMomentEntity] [j] ON ([j].[Id] = [e].[Id] + 1000)
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
-	DatePart('yyyy', IIF([j].[Moment] IS NULL, #0100-01-01#, [j].[Moment]))
+	DatePart('yyyy', CASE
+		WHEN [j].[Moment] IS NULL THEN #0100-01-01#
+		ELSE [j].[Moment]
+	END)
 FROM
 	[MappedMomentEntity] [e]
 		LEFT JOIN [MappedMomentEntity] [j] ON ([j].[Id] = [e].[Id] + 1000)

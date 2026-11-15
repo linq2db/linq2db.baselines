@@ -1,6 +1,9 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
-	COUNT(*) > 0
-FROM
-	[Parent] [p]
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[Parent] [p]
+	)
 

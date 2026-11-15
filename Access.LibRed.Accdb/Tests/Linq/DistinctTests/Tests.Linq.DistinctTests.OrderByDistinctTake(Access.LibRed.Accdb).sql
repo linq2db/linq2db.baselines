@@ -1,5 +1,8 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
-SELECT TOP 2
+DECLARE @take  -- Int32
+SET     @take = 2
+
+SELECT TOP @take
 	[t2].[F2]
 FROM
 	(

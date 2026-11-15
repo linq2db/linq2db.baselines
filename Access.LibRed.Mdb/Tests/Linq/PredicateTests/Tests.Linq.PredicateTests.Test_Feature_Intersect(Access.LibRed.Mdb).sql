@@ -5,7 +5,10 @@ FROM
 	[FeatureTable] [r]
 WHERE
 	EXISTS(
-		SELECT DISTINCT
+		SELECT
+			[r].[One]
+		INTERSECT
+		SELECT
 			[r].[One]
 	)
 
@@ -16,7 +19,10 @@ FROM
 	[FeatureTable] [r]
 WHERE
 	EXISTS(
-		SELECT DISTINCT
+		SELECT
+			[r].[Zero]
+		INTERSECT
+		SELECT
 			[r].[Zero]
 	)
 
@@ -27,7 +33,10 @@ FROM
 	[FeatureTable] [r]
 WHERE
 	EXISTS(
-		SELECT DISTINCT
+		SELECT
+			[r].[Null]
+		INTERSECT
+		SELECT
 			[r].[Null]
 	)
 
@@ -38,72 +47,10 @@ FROM
 	[FeatureTable] [r]
 WHERE
 	EXISTS(
-		SELECT DISTINCT
+		SELECT
 			[r].[One]
-		WHERE
-			EXISTS(
-				SELECT
-					*
-				WHERE
-					[r].[One] = [r].[Zero] OR [r].[One] IS NULL AND [r].[Zero] IS NULL
-			)
-	)
-
--- Access.LibRed.Mdb Access.LibRed AccessLibRed
-SELECT
-	COUNT(*)
-FROM
-	[FeatureTable] [r]
-WHERE
-	EXISTS(
-		SELECT DISTINCT
-			[r].[One]
-		WHERE
-			EXISTS(
-				SELECT
-					*
-				WHERE
-					[r].[One] = [r].[Null] OR [r].[One] IS NULL AND [r].[Null] IS NULL
-			)
-	)
-
--- Access.LibRed.Mdb Access.LibRed AccessLibRed
-SELECT
-	COUNT(*)
-FROM
-	[FeatureTable] [r]
-WHERE
-	EXISTS(
-		SELECT DISTINCT
-			[r].[Zero]
-		WHERE
-			EXISTS(
-				SELECT
-					*
-				WHERE
-					[r].[Zero] = [r].[Null] OR [r].[Zero] IS NULL AND [r].[Null] IS NULL
-			)
-	)
-
--- Access.LibRed.Mdb Access.LibRed AccessLibRed
-SELECT
-	COUNT(*)
-FROM
-	[FeatureTable] [r]
-WHERE
-	NOT EXISTS(
-		SELECT DISTINCT
-			[r].[One]
-	)
-
--- Access.LibRed.Mdb Access.LibRed AccessLibRed
-SELECT
-	COUNT(*)
-FROM
-	[FeatureTable] [r]
-WHERE
-	NOT EXISTS(
-		SELECT DISTINCT
+		INTERSECT
+		SELECT
 			[r].[Zero]
 	)
 
@@ -113,8 +60,25 @@ SELECT
 FROM
 	[FeatureTable] [r]
 WHERE
-	NOT EXISTS(
-		SELECT DISTINCT
+	EXISTS(
+		SELECT
+			[r].[One]
+		INTERSECT
+		SELECT
+			[r].[Null]
+	)
+
+-- Access.LibRed.Mdb Access.LibRed AccessLibRed
+SELECT
+	COUNT(*)
+FROM
+	[FeatureTable] [r]
+WHERE
+	EXISTS(
+		SELECT
+			[r].[Zero]
+		INTERSECT
+		SELECT
 			[r].[Null]
 	)
 
@@ -125,15 +89,11 @@ FROM
 	[FeatureTable] [r]
 WHERE
 	NOT EXISTS(
-		SELECT DISTINCT
+		SELECT
 			[r].[One]
-		WHERE
-			EXISTS(
-				SELECT
-					*
-				WHERE
-					[r].[One] = [r].[Zero] OR [r].[One] IS NULL AND [r].[Zero] IS NULL
-			)
+		INTERSECT
+		SELECT
+			[r].[One]
 	)
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
@@ -143,32 +103,66 @@ FROM
 	[FeatureTable] [r]
 WHERE
 	NOT EXISTS(
-		SELECT DISTINCT
-			[r].[One]
-		WHERE
-			EXISTS(
-				SELECT
-					*
-				WHERE
-					[r].[One] = [r].[Null] OR [r].[One] IS NULL AND [r].[Null] IS NULL
-			)
-	)
-
--- Access.LibRed.Mdb Access.LibRed AccessLibRed
-SELECT
-	COUNT(*)
-FROM
-	[FeatureTable] [r]
-WHERE
-	NOT EXISTS(
-		SELECT DISTINCT
+		SELECT
 			[r].[Zero]
-		WHERE
-			EXISTS(
-				SELECT
-					*
-				WHERE
-					[r].[Zero] = [r].[Null] OR [r].[Zero] IS NULL AND [r].[Null] IS NULL
-			)
+		INTERSECT
+		SELECT
+			[r].[Zero]
+	)
+
+-- Access.LibRed.Mdb Access.LibRed AccessLibRed
+SELECT
+	COUNT(*)
+FROM
+	[FeatureTable] [r]
+WHERE
+	NOT EXISTS(
+		SELECT
+			[r].[Null]
+		INTERSECT
+		SELECT
+			[r].[Null]
+	)
+
+-- Access.LibRed.Mdb Access.LibRed AccessLibRed
+SELECT
+	COUNT(*)
+FROM
+	[FeatureTable] [r]
+WHERE
+	NOT EXISTS(
+		SELECT
+			[r].[One]
+		INTERSECT
+		SELECT
+			[r].[Zero]
+	)
+
+-- Access.LibRed.Mdb Access.LibRed AccessLibRed
+SELECT
+	COUNT(*)
+FROM
+	[FeatureTable] [r]
+WHERE
+	NOT EXISTS(
+		SELECT
+			[r].[One]
+		INTERSECT
+		SELECT
+			[r].[Null]
+	)
+
+-- Access.LibRed.Mdb Access.LibRed AccessLibRed
+SELECT
+	COUNT(*)
+FROM
+	[FeatureTable] [r]
+WHERE
+	NOT EXISTS(
+		SELECT
+			[r].[Zero]
+		INTERSECT
+		SELECT
+			[r].[Null]
 	)
 

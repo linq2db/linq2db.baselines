@@ -4,7 +4,7 @@ SELECT
 	[t2].[ChildID],
 	[t2].[GrandChildID]
 FROM
-	[Parent] [p],
-	[Child] [t1],
-	[GrandChild] [t2]
+	([Parent] [p]
+		CROSS JOIN [Child] [t1])
+		CROSS JOIN [GrandChild] [t2]
 

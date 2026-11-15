@@ -1,5 +1,8 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
-SELECT DISTINCT
+DECLARE @take  -- Int32
+SET     @take = 1
+
+SELECT
 	[t2].[FirstName],
 	[t2].[ID],
 	[t2].[LastName],
@@ -7,7 +10,7 @@ SELECT DISTINCT
 	[t2].[Gender]
 FROM
 	(
-		SELECT TOP 1
+		SELECT TOP @take
 			[t1].[FirstName],
 			[t1].[PersonID] as [ID],
 			[t1].[LastName],
@@ -18,28 +21,24 @@ FROM
 		ORDER BY
 			[t1].[LastName]
 	) [t2]
-WHERE
-	NOT EXISTS(
-		SELECT
-			*
+EXCEPT
+SELECT
+	[t4].[FirstName],
+	[t4].[ID],
+	[t4].[LastName],
+	[t4].[MiddleName],
+	[t4].[Gender]
+FROM
+	(
+		SELECT TOP @take
+			[t3].[FirstName],
+			[t3].[PersonID] as [ID],
+			[t3].[LastName],
+			[t3].[MiddleName],
+			[t3].[Gender]
 		FROM
-			(
-				SELECT TOP 1
-					[t3].[FirstName],
-					[t3].[PersonID] as [ID],
-					[t3].[LastName],
-					[t3].[MiddleName],
-					[t3].[Gender]
-				FROM
-					[Person] [t3]
-				ORDER BY
-					[t3].[LastName]
-			) [t4]
-		WHERE
-			[t2].[FirstName] = [t4].[FirstName] AND
-			[t2].[ID] = [t4].[ID] AND
-			[t2].[LastName] = [t4].[LastName] AND
-			([t2].[MiddleName] = [t4].[MiddleName] OR [t2].[MiddleName] IS NULL AND [t4].[MiddleName] IS NULL) AND
-			[t2].[Gender] = [t4].[Gender]
-	)
+			[Person] [t3]
+		ORDER BY
+			[t3].[LastName]
+	) [t4]
 

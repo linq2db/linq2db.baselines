@@ -1,7 +1,14 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
 	[r].[Id],
-	IIF([r].[C] IS NULL, IIF([r].[A] = [r].[B] OR [r].[A] IS NULL AND [r].[B] IS NULL, True, False), [r].[Flag])
+	CASE
+		WHEN [r].[C] IS NULL THEN CASE
+			WHEN [r].[A] = [r].[B] OR [r].[A] IS NULL AND [r].[B] IS NULL
+				THEN True
+			ELSE False
+		END
+		ELSE [r].[Flag]
+	END
 FROM
 	[NullableFlagTable] [r]
 

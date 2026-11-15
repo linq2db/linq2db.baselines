@@ -2,13 +2,19 @@
 SELECT
 	[t1].[ID],
 	[t1].[OK],
-	IIF([t1].[FirstName] = 'ddd', [y].[FirstName], [t1].[FirstName])
+	CASE
+		WHEN [t1].[FirstName] = 'ddd' THEN [y].[FirstName]
+		ELSE [t1].[FirstName]
+	END
 FROM
 	(
 		SELECT
 			[x].[PersonID] as [ID],
 			CStr('A') as [FirstName],
-			IIF([x].[FirstName] = '123', 'Y', 'N') as [OK]
+			CASE
+				WHEN [x].[FirstName] = '123' THEN 'Y'
+				ELSE 'N'
+			END as [OK]
 		FROM
 			[Person] [x]
 		WHERE

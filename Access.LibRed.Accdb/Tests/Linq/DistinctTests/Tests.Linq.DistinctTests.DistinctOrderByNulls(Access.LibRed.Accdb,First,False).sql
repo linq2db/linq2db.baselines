@@ -1,5 +1,8 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
-SELECT DISTINCT TOP 3
+DECLARE @take  -- Int32
+SET     @take = 3
+
+SELECT DISTINCT TOP @take
 	[p].[Value1]
 FROM
 	[Parent] [p]

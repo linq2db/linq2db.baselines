@@ -1,5 +1,5 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
-SELECT DISTINCT
+SELECT
 	[t1].[Id],
 	[t1].[Value1],
 	[t1].[Value2],
@@ -26,17 +26,14 @@ FROM
 		WHERE
 			[t_1].[Id] MOD 2 = 0
 	) [t1]
+INTERSECT
+SELECT
+	[t_2].[Id],
+	[t_2].[Value1],
+	[t_2].[Value2],
+	[t_2].[Value3]
+FROM
+	[SampleData] [t_2]
 WHERE
-	EXISTS(
-		SELECT
-			*
-		FROM
-			[SampleData] [t_2]
-		WHERE
-			[t_2].[Id] MOD 4 = 0 AND
-			[t1].[Id] = [t_2].[Id] AND
-			[t1].[Value1] = [t_2].[Value1] AND
-			[t1].[Value2] = [t_2].[Value2] AND
-			[t1].[Value3] = [t_2].[Value3]
-	)
+	[t_2].[Id] MOD 4 = 0
 

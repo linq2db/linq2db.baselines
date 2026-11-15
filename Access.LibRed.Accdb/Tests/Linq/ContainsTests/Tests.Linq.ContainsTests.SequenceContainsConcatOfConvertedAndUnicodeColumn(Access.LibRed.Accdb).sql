@@ -1,6 +1,12 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT TOP 2
-	IIF([t].[Code] IS NULL, '', [t].[Code]) + IIF([t].[Title] IS NULL, '', [t].[Title])
+	CASE
+		WHEN [t].[Code] IS NULL THEN ''
+		ELSE [t].[Code]
+	END + CASE
+		WHEN [t].[Title] IS NULL THEN ''
+		ELSE [t].[Title]
+	END
 FROM
 	[PrefixedCodeWithTitle] [t]
 
@@ -9,9 +15,20 @@ DECLARE @Code VarChar(4) -- AnsiString
 SET     @Code = 'x:AT'
 
 SELECT
-	COUNT(*) > 0
-FROM
-	[PrefixedCodeWithTitle] [t]
-WHERE
-	(IIF([t].[Code] IS NULL, '', [t].[Code]) + IIF([t].[Title] IS NULL, '', [t].[Title])) = @Code
+	CASE
+		WHEN CVar(@Code) IN (
+			SELECT
+				CASE
+					WHEN [t].[Code] IS NULL THEN ''
+					ELSE [t].[Code]
+				END + CASE
+					WHEN [t].[Title] IS NULL THEN ''
+					ELSE [t].[Title]
+				END
+			FROM
+				[PrefixedCodeWithTitle] [t]
+		)
+			THEN True
+		ELSE False
+	END
 

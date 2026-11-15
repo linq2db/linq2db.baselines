@@ -70,17 +70,16 @@ SELECT TOP 1
 		FROM
 			[DurationRow] [t5]
 	),
-	IIF([t3].[TotalMin] IS NULL, 0, [t3].[TotalMin])
+	CASE
+		WHEN [t2].[TotalMin] IS NULL THEN 0
+		ELSE [t2].[TotalMin]
+	END
 FROM
-	(
-		SELECT
-			(
-				SELECT
-					SUM([t2].[InSeconds] / 60)
-				FROM
-					[DurationRow] [t2]
-			) as [TotalMin]
-		FROM
-			[DurationRow] [t1]
-	) [t3]
+	[DurationRow] [t3]
+		LEFT JOIN (
+			SELECT
+				SUM([t1].[InSeconds] / 60) as [TotalMin]
+			FROM
+				[DurationRow] [t1]
+		) [t2] ON 1=1
 

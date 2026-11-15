@@ -29,7 +29,13 @@ SELECT TOP 2
 	[t1].[Type],
 	[t1].[Name_First],
 	[t1].[Name_Second],
-	IIF([t1].[Name_First] IS NULL, '', [t1].[Name_First]) + ' ' + IIF([t1].[Name_Second] IS NULL, '', [t1].[Name_Second])
+	CASE
+		WHEN [t1].[Name_First] IS NULL THEN ''
+		ELSE [t1].[Name_First]
+	END + ' ' + CASE
+		WHEN [t1].[Name_Second] IS NULL THEN ''
+		ELSE [t1].[Name_Second]
+	END
 FROM
 	[CalcSubtypeTable] [t1]
 

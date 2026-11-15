@@ -8,8 +8,14 @@ FROM
 	(
 		SELECT
 			MAX([g_1].[ChildID]) as [ID1],
-			COUNT(IIF([g_1].[ChildID] > 20, 1, NULL)) as [ID2],
-			COUNT(IIF([g_1].[ChildID] > 10, 1, NULL)) as [ID4]
+			COUNT(CASE
+				WHEN [g_1].[ChildID] > 20 THEN 1
+				ELSE NULL
+			END) as [ID2],
+			COUNT(CASE
+				WHEN [g_1].[ChildID] > 10 THEN 1
+				ELSE NULL
+			END) as [ID4]
 		FROM
 			[Child] [g_1]
 		GROUP BY

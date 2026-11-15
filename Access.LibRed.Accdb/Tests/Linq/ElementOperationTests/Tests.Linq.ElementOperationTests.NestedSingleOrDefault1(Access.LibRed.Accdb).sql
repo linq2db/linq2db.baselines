@@ -1,12 +1,13 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
-	[t1].[ParentID]
+	(
+		SELECT DISTINCT
+			[a_Children].[ParentID]
+		FROM
+			[Child] [a_Children]
+		WHERE
+			[p].[ParentID] = [a_Children].[ParentID]
+	)
 FROM
 	[Parent] [p]
-		LEFT JOIN (
-			SELECT DISTINCT
-				[a_Children].[ParentID]
-			FROM
-				[Child] [a_Children]
-		) [t1] ON ([p].[ParentID] = [t1].[ParentID])
 

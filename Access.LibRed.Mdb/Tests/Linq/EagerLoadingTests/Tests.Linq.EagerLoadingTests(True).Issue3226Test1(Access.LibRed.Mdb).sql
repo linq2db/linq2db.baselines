@@ -1,23 +1,20 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
-	[x_1].[Id],
-	[x_1].[Text]
+	[x].[Id],
+	[x].[Text]
 FROM
-	(
-		SELECT
-			[x].[Id],
-			[x].[Text],
-			(
-				SELECT
-					SUM([a_Values].[Value])
-				FROM
-					[ItemValue] [a_Values]
-				WHERE
-					[x].[Id] = [a_Values].[ItemId]
-			) as [Sum_1]
-		FROM
-			[Item] [x]
-	) [x_1]
+	[Item] [x]
+		OUTER APPLY (
+			SELECT
+				SUM([a_Values].[Value]) as [Sum_1]
+			FROM
+				[ItemValue] [a_Values]
+			WHERE
+				[x].[Id] = [a_Values].[ItemId]
+		) [t1]
 ORDER BY
-	IIF([x_1].[Sum_1] IS NULL, 0, [x_1].[Sum_1])
+	CASE
+		WHEN [t1].[Sum_1] IS NULL THEN 0
+		ELSE [t1].[Sum_1]
+	END
 

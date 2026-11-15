@@ -1,6 +1,9 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
-	MAX(IIF([t1].[ChildID] > 20, 1, 0))
+	MAX(CASE
+		WHEN [t1].[ChildID] > 20 THEN 1
+		ELSE 0
+	END)
 FROM
 	[Child] [t1]
 

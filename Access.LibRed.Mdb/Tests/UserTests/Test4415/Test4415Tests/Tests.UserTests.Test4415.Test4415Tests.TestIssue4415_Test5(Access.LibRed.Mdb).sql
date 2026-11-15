@@ -14,7 +14,10 @@ FROM
 WHERE
 	[x].[LanguageID] IN (
 		SELECT
-			IIF([t1].[Max_1] IS NULL, '', [t1].[Max_1]) + 'test'
+			CASE
+				WHEN [t1].[Max_1] IS NULL THEN ''
+				ELSE [t1].[Max_1]
+			END + 'test'
 		FROM
 			(
 				SELECT

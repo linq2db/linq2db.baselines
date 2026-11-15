@@ -1,45 +1,27 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
-	[m_1].[Key_1],
-	[d].[NullableValue]
+	[t1].[Key_1],
+	CASE
+		WHEN [t1].[NotNullableeOrderedNoNulls] IS NULL THEN ''
+		ELSE [t1].[NotNullableeOrderedNoNulls]
+	END,
+	[t1].[NotNullableeOrderedNulls]
 FROM
 	(
-		SELECT DISTINCT
-			[g_1].[Id] as [Key_1]
+		SELECT
+			[g_1].[Id] as [Key_1],
+			STRING_AGG([g_1].[NullableValue], ', ') WITHIN GROUP (ORDER BY [g_1].[NullableValue], [g_1].[Id]) as [NotNullableeOrderedNoNulls],
+			STRING_AGG(CASE
+				WHEN [g_1].[NullableValue] IS NULL THEN ''
+				ELSE [g_1].[NullableValue]
+			END, ', ') WITHIN GROUP (ORDER BY [g_1].[NullableValue]) as [NotNullableeOrderedNulls]
 		FROM
 			[SampleClass] [g_1]
-	) [m_1]
-		INNER JOIN [SampleClass] [d] ON ([m_1].[Key_1] = [d].[Id])
-WHERE
-	[d].[NullableValue] IS NOT NULL
+		GROUP BY
+			[g_1].[Id]
+	) [t1]
 ORDER BY
-	[d].[NullableValue],
-	[d].[Id],
-	[m_1].[Key_1]
-
--- Access.LibRed.Accdb Access.LibRed AccessLibRed
-SELECT
-	[m_1].[Key_1],
-	[d].[NullableValue]
-FROM
-	(
-		SELECT DISTINCT
-			[g_1].[Id] as [Key_1]
-		FROM
-			[SampleClass] [g_1]
-	) [m_1]
-		INNER JOIN [SampleClass] [d] ON ([m_1].[Key_1] = [d].[Id])
-ORDER BY
-	[d].[NullableValue],
-	[m_1].[Key_1]
-
--- Access.LibRed.Accdb Access.LibRed AccessLibRed
-SELECT DISTINCT
-	[g_1].[Id]
-FROM
-	[SampleClass] [g_1]
-ORDER BY
-	[g_1].[Id]
+	[t1].[Key_1]
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT

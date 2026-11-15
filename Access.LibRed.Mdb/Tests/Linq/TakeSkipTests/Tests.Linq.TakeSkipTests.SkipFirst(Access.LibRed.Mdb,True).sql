@@ -1,5 +1,8 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
-SELECT TOP 2
+DECLARE @skip  -- Int32
+SET     @skip = 1
+
+SELECT
 	[p].[ParentID],
 	[p].[Value1]
 FROM
@@ -8,4 +11,5 @@ WHERE
 	[p].[ParentID] > 1
 ORDER BY
 	[p].[ParentID]
+OFFSET @skip ROWS FETCH NEXT 1 ROWS ONLY 
 

@@ -1,10 +1,16 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
-SELECT TOP 1
-	COUNT(*) > 0
-FROM
-	[TakeSkipClass] [item_1]
-GROUP BY
-	[item_1].[Value]
-HAVING
-	COUNT(*) > 1
+DECLARE @take  -- Int32
+SET     @take = 1
+
+SELECT
+	EXISTS(
+		SELECT TOP @take
+			[item_1].[Value]
+		FROM
+			[TakeSkipClass] [item_1]
+		GROUP BY
+			[item_1].[Value]
+		HAVING
+			COUNT(*) > 1
+	)
 

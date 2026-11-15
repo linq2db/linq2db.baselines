@@ -9,7 +9,10 @@ FROM
 			[Person] [ch]
 	) [t1]
 ORDER BY
-	IIF([t1].[MiddleName] IS NULL, '-1', [t1].[MiddleName])
+	CASE
+		WHEN [t1].[MiddleName] IS NULL THEN '-1'
+		ELSE [t1].[MiddleName]
+	END
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT

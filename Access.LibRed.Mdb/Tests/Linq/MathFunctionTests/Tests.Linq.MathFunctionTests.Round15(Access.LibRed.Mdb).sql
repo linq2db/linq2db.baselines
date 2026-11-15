@@ -1,6 +1,10 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
-	IIF([p].[MoneyValue] * 100000 - Int([p].[MoneyValue] * 100000) = 0.5 AND Int([p].[MoneyValue] * 100000) MOD 2 = 0, -Int(-([p].[MoneyValue] * 100000)), Round([p].[MoneyValue] * 100000, 0)) / 100000 + [p].[MoneyValue]
+	CASE
+		WHEN [p].[MoneyValue] * 100000 - Int([p].[MoneyValue] * 100000) = 0.5 AND Int([p].[MoneyValue] * 100000) MOD 2 = 0
+			THEN -Int(-([p].[MoneyValue] * 100000))
+		ELSE Round([p].[MoneyValue] * 100000, 0)
+	END / 100000 + [p].[MoneyValue]
 FROM
 	[LinqDataTypes] [p]
 WHERE

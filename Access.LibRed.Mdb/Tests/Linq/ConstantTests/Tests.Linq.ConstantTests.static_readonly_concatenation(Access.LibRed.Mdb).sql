@@ -10,7 +10,10 @@ SELECT
 FROM
 	[TestConstantsData] [e]
 WHERE
-	(IIF([e].[StringValue] IS NULL, '', [e].[StringValue]) + '1') = @p
+	(CASE
+		WHEN [e].[StringValue] IS NULL THEN ''
+		ELSE [e].[StringValue]
+	END + '1') = @p
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT

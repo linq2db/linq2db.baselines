@@ -6,15 +6,33 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			IIF([g_1].[ParentID] > 2, IIF([g_1].[ParentID] > 3, '1', '2'), '3') as [Key_1]
+			CASE
+				WHEN [g_1].[ParentID] > 2 THEN CASE
+					WHEN [g_1].[ParentID] > 3 THEN '1'
+					ELSE '2'
+				END
+				ELSE '3'
+			END as [Key_1]
 		FROM
 			[Child] [g_1]
 	) [m_1]
-		INNER JOIN [Child] [d] ON ([m_1].[Key_1] = IIF([d].[ParentID] > 2, IIF([d].[ParentID] > 3, '1', '2'), '3'))
+		INNER JOIN [Child] [d] ON ([m_1].[Key_1] = CASE
+			WHEN [d].[ParentID] > 2 THEN CASE
+				WHEN [d].[ParentID] > 3 THEN '1'
+				ELSE '2'
+			END
+			ELSE '3'
+		END)
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT DISTINCT
-	IIF([g_1].[ParentID] > 2, IIF([g_1].[ParentID] > 3, '1', '2'), '3')
+	CASE
+		WHEN [g_1].[ParentID] > 2 THEN CASE
+			WHEN [g_1].[ParentID] > 3 THEN '1'
+			ELSE '2'
+		END
+		ELSE '3'
+	END
 FROM
 	[Child] [g_1]
 

@@ -6,7 +6,10 @@ FROM
 	(
 		SELECT
 			[a].[Id],
-			IIF([a].[NullValue] IS NOT NULL, [a].[NullValue], 0) as [KEYNUMB],
+			CASE
+				WHEN [a].[NullValue] IS NOT NULL THEN [a].[NullValue]
+				ELSE 0
+			END as [KEYNUMB],
 			[a].[NullValue]
 		FROM
 			[SampleClass] [a]

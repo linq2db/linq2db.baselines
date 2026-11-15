@@ -1,7 +1,13 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
-	COUNT(IIF([g_1].[ChildID] > 30, 1, NULL)),
-	COUNT(IIF([g_1].[ChildID] > 30, 1, NULL)),
+	COUNT(CASE
+		WHEN [g_1].[ChildID] > 30 THEN 1
+		ELSE NULL
+	END),
+	COUNT(CASE
+		WHEN [g_1].[ChildID] > 30 THEN 1
+		ELSE NULL
+	END),
 	COUNT(*)
 FROM
 	[Child] [g_1]

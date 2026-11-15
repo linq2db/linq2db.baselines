@@ -1,19 +1,18 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
-SELECT DISTINCT
+SELECT
 	[p].[PersonID],
 	[a_Patient].[PersonID] as [PersonID_1],
+	[a_Patient].[PersonID] as [PersonID_2],
 	[a_Patient].[Diagnosis]
 FROM
 	[Person] [p]
 		LEFT JOIN [Patient] [a_Patient] ON ([p].[PersonID] = [a_Patient].[PersonID])
-WHERE
-	EXISTS(
-		SELECT
-			*
-		FROM
-			[Person] [p_1]
-		WHERE
-			[p].[PersonID] = [p_1].[PersonID] AND [a_Patient].[PersonID] IS NULL AND
-			[a_Patient].[Diagnosis] IS NULL
-	)
+INTERSECT
+SELECT
+	[p_1].[PersonID],
+	IIF(False, 0, NULL) as [PersonID_1],
+	IIF(False, 0, NULL) as [PersonID_2],
+	IIF(False, '', NULL) as [Diagnosis]
+FROM
+	[Person] [p_1]
 

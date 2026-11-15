@@ -1,18 +1,14 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
-	[t2].[Count1] + [t2].[Count1]
+	[t1].[Count1] + [t1].[Count1]
 FROM
-	(
-		SELECT
-			(
-				SELECT
-					COUNT(*)
-				FROM
-					[Child] [c_1]
-				WHERE
-					[t1].[ParentID] = [c_1].[ParentID]
-			) as [Count1]
-		FROM
-			[Parent] [t1]
-	) [t2]
+	[Parent] [t2]
+		OUTER APPLY (
+			SELECT
+				COUNT(*) as [Count1]
+			FROM
+				[Child] [c_1]
+			WHERE
+				[t2].[ParentID] = [c_1].[ParentID]
+		) [t1]
 

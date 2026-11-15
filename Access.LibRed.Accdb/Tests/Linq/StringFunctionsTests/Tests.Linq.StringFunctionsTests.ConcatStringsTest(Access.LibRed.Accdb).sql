@@ -1,6 +1,9 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
-	IIF([t].[Value2] IS NULL, '', [t].[Value2])
+	CASE
+		WHEN [t].[Value2] IS NULL THEN ''
+		ELSE [t].[Value2]
+	END
 FROM
 	[SampleClass] [t]
 ORDER BY
@@ -8,7 +11,10 @@ ORDER BY
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
-	IIF([t].[Value3] IS NULL, '', [t].[Value3])
+	CASE
+		WHEN [t].[Value3] IS NULL THEN ''
+		ELSE [t].[Value3]
+	END
 FROM
 	[SampleClass] [t]
 ORDER BY
@@ -16,7 +22,7 @@ ORDER BY
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
-	Mid(IIF([t].[Value3] IS NULL, '', ' -> ' + [t].[Value3]) + IIF([t].[Value1] IS NULL, '', ' -> ' + [t].[Value1]) + IIF([t].[Value2] IS NULL, '', ' -> ' + [t].[Value2]), 5)
+	CONCAT_WS(' -> ', [t].[Value3], [t].[Value1], [t].[Value2])
 FROM
 	[SampleClass] [t]
 ORDER BY
@@ -24,7 +30,7 @@ ORDER BY
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
-	Mid(IIF([t].[Value3] IS NULL, '', ' -> ' + [t].[Value3]) + IIF([t].[Value3] IS NULL, '', ' -> ' + [t].[Value3]), 5)
+	CONCAT_WS(' -> ', [t].[Value3], [t].[Value3])
 FROM
 	[SampleClass] [t]
 ORDER BY

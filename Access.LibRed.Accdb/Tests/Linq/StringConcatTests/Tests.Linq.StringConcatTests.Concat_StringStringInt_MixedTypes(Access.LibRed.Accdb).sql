@@ -4,7 +4,10 @@ SELECT
 FROM
 	[ConcatTestEntity] [e]
 WHERE
-	(IIF([e].[StrReq] IS NULL, '', [e].[StrReq]) + ' 1') = 'Programmer 1'
+	(CASE
+		WHEN [e].[StrReq] IS NULL THEN ''
+		ELSE [e].[StrReq]
+	END + ' 1') = 'Programmer 1'
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT

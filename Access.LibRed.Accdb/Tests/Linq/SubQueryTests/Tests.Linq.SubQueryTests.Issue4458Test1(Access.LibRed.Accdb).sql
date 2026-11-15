@@ -23,18 +23,18 @@ ORDER BY
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
 	[i].[Id],
-	[stock_1].[TotalAvailable]
+	(
+		SELECT
+			SUM([stock].[QuantityAvailable])
+		FROM
+			[WarehouseStock] [stock]
+		WHERE
+			[stock].[ItemId] = [i].[Id]
+		GROUP BY
+			[stock].[ItemId]
+	)
 FROM
 	[Issue4458Item] [i]
-		LEFT JOIN (
-			SELECT
-				SUM([stock].[QuantityAvailable]) as [TotalAvailable],
-				[stock].[ItemId]
-			FROM
-				[WarehouseStock] [stock]
-			GROUP BY
-				[stock].[ItemId]
-		) [stock_1] ON ([stock_1].[ItemId] = [i].[Id])
 WHERE
 	EXISTS(
 		SELECT

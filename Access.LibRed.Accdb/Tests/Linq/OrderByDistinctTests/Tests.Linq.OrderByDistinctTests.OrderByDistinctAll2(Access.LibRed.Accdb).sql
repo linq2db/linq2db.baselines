@@ -1,5 +1,10 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
-SELECT TOP 3
+DECLARE @skip  -- Int32
+SET     @skip = 1
+DECLARE @take  -- Int32
+SET     @take = 2
+
+SELECT
 	[r_1].[ID],
 	[r_1].[LastName],
 	[r_1].[FirstName]
@@ -16,6 +21,7 @@ FROM
 	) [r_1]
 ORDER BY
 	[r_1].[FirstName]
+OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT

@@ -1,6 +1,9 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
-	IIF([r].[Id] > 0, [r].[OpenedOn], [r].[ClosedOn])
+	CASE
+		WHEN [r].[Id] > 0 THEN [r].[OpenedOn]
+		ELSE [r].[ClosedOn]
+	END
 FROM
 	[CoarseDayPairRow] [r]
 UNION ALL

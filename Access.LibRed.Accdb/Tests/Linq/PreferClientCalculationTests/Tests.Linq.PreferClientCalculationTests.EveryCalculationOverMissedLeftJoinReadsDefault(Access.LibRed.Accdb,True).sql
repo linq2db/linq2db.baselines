@@ -3,9 +3,18 @@ SELECT
 	[e].[Id],
 	[j].[Value1],
 	[j].[Flag],
-	Abs(IIF([j].[Value1] IS NULL, 0, [j].[Value1])),
-	ABS(IIF([j].[Value1] IS NULL, 0, [j].[Value1])),
-	IIF([j].[Value1] IS NULL, 0, [j].[Value1]) + 1
+	Abs(CASE
+		WHEN [j].[Value1] IS NULL THEN 0
+		ELSE [j].[Value1]
+	END),
+	ABS(CASE
+		WHEN [j].[Value1] IS NULL THEN 0
+		ELSE [j].[Value1]
+	END),
+	CASE
+		WHEN [j].[Value1] IS NULL THEN 0
+		ELSE [j].[Value1]
+	END + 1
 FROM
 	[MissedJoinEntity] [e]
 		LEFT JOIN [MissedJoinEntity] [j] ON ([j].[Id] = [e].[Id] + 1000)

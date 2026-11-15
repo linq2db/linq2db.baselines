@@ -1,5 +1,8 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
-SELECT TOP 1
+DECLARE @take  -- Int32
+SET     @take = 1
+
+SELECT TOP @take
 	[t1].[Id],
 	[t1].[Value]
 FROM

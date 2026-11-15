@@ -1,6 +1,9 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT DISTINCT
-	IIF([p].[Value1] IS NULL, [p].[ParentID] MOD 2, [p].[Value1]),
+	CASE
+		WHEN [p].[Value1] IS NULL THEN [p].[ParentID] MOD 2
+		ELSE [p].[Value1]
+	END,
 	[p].[Value1]
 FROM
 	[Parent] [p]

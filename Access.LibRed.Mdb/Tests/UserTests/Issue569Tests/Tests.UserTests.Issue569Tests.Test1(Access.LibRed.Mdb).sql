@@ -1,7 +1,7 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
-	[cross_1].[PersonID_1],
-	[cross_1].[FirstName],
+	[sub].[PersonID_1],
+	[sub].[FirstName],
 	[doctor_1].[Taxonomy]
 FROM
 	(
@@ -12,12 +12,12 @@ FROM
 		FROM
 			[Patient] [patient_1],
 			[Person] [person_1]
-	) [cross_1]
-		LEFT JOIN [Doctor] [doctor_1] ON ([doctor_1].[PersonID] = [cross_1].[PersonID] AND [doctor_1].[PersonID] = [cross_1].[PersonID_1])
+	) [sub]
+		LEFT JOIN [Doctor] [doctor_1] ON ([doctor_1].[PersonID] = [sub].[PersonID] AND [doctor_1].[PersonID] = [sub].[PersonID_1])
 WHERE
-	[cross_1].[FirstName] LIKE 'J%'
+	[sub].[FirstName] LIKE 'J%'
 ORDER BY
-	[cross_1].[PersonID_1],
-	[cross_1].[FirstName],
+	[sub].[PersonID_1],
+	[sub].[FirstName],
 	[doctor_1].[Taxonomy]
 

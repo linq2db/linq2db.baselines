@@ -12,10 +12,9 @@ WHERE
 		SELECT
 			*
 		FROM
-			(
-				SELECT 'John' AS [item]
-				UNION ALL
-				SELECT 'Not John') [y]
+			(VALUES
+				('John'), ('Not John')
+			) [y]([item])
 		WHERE
 			[y].[item] = [x].[FirstName]
 	)

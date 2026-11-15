@@ -1,6 +1,10 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
-	CStr([g_2].[Message]) + ' items have not been processed, e.g. #' + IIF([g_2].[Message_1] IS NULL, '', IIF([g_2].[Message_1] IS NOT NULL, CStr([g_2].[Message_1]), NULL)) + '.'
+	CStr([g_2].[Message]) + ' items have not been processed, e.g. #' + CASE
+		WHEN [g_2].[Message_1] IS NULL THEN ''
+		WHEN [g_2].[Message_1] IS NOT NULL THEN CStr([g_2].[Message_1])
+		ELSE NULL
+	END + '.'
 FROM
 	(
 		SELECT

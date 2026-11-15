@@ -1,7 +1,10 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
 	[g_1].[Id],
-	SUM(IIF([a_Values].[Value] IS NULL, 0, [a_Values].[Value]))
+	SUM(CASE
+		WHEN [a_Values].[Value] IS NULL THEN 0
+		ELSE [a_Values].[Value]
+	END)
 FROM
 	[Item] [g_1]
 		LEFT JOIN [ItemValue] [a_Values] ON ([g_1].[Id] = [a_Values].[ItemId] AND [a_Values].[ValueName] = 'Value1')

@@ -30,10 +30,10 @@ FROM
 								FROM
 									[ClashOrg] [o],
 									[ClashOrgSystem] [a]
-							) [cross_1]
-								INNER JOIN [ClashSystem] [s] ON ([cross_1].[SystemId] = [s].[Id])
+							) [sub]
+								INNER JOIN [ClashSystem] [s] ON ([sub].[SystemId] = [s].[Id])
 						WHERE
-							[cross_1].[Id] = 5 AND [cross_1].[OrganisationId] = [cross_1].[Id]
+							[sub].[Id] = 5 AND [sub].[OrganisationId] = [sub].[Id]
 					) [t1]
 						INNER JOIN [ClashStage] [d] ON ([t1].[Id] = [d].[SystemId]))
 						LEFT JOIN [ClashProduct] [a_Product] ON ([d].[ProductId] = [a_Product].[Id])
@@ -67,10 +67,10 @@ FROM
 						FROM
 							[ClashOrg] [o],
 							[ClashOrgSystem] [a]
-					) [cross_1]
-						INNER JOIN [ClashSystem] [s] ON ([cross_1].[SystemId] = [s].[Id])
+					) [sub]
+						INNER JOIN [ClashSystem] [s] ON ([sub].[SystemId] = [s].[Id])
 				WHERE
-					[cross_1].[Id] = 5 AND [cross_1].[OrganisationId] = [cross_1].[Id]
+					[sub].[Id] = 5 AND [sub].[OrganisationId] = [sub].[Id]
 			) [t1]
 				INNER JOIN [ClashStage] [d] ON ([t1].[Id] = [d].[SystemId]))
 				LEFT JOIN [ClashProduct] [a_Product] ON ([d].[ProductId] = [a_Product].[Id])
@@ -97,10 +97,10 @@ FROM
 				FROM
 					[ClashOrg] [o],
 					[ClashOrgSystem] [a]
-			) [cross_1]
-				INNER JOIN [ClashSystem] [s] ON ([cross_1].[SystemId] = [s].[Id])
+			) [sub]
+				INNER JOIN [ClashSystem] [s] ON ([sub].[SystemId] = [s].[Id])
 		WHERE
-			[cross_1].[Id] = 5 AND [cross_1].[OrganisationId] = [cross_1].[Id]
+			[sub].[Id] = 5 AND [sub].[OrganisationId] = [sub].[Id]
 	) [m_1]
 		INNER JOIN [ClashStage] [d] ON ([m_1].[Id] = [d].[SystemId]))
 		LEFT JOIN [ClashProduct] [a_Product] ON ([d].[ProductId] = [a_Product].[Id])
@@ -117,8 +117,8 @@ FROM
 		FROM
 			[ClashOrg] [o],
 			[ClashOrgSystem] [a]
-	) [cross_1]
-		INNER JOIN [ClashSystem] [s] ON ([cross_1].[SystemId] = [s].[Id])
+	) [sub]
+		INNER JOIN [ClashSystem] [s] ON ([sub].[SystemId] = [s].[Id])
 WHERE
-	[cross_1].[Id] = 5 AND [cross_1].[OrganisationId] = [cross_1].[Id]
+	[sub].[Id] = 5 AND [sub].[OrganisationId] = [sub].[Id]
 

@@ -1,8 +1,13 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
-	COUNT(*) > 0
-FROM
-	[Child] [c_1]
-WHERE
-	[c_1].[ParentID] = 11
+	CASE
+		WHEN 11 IN (
+			SELECT
+				[c_1].[ParentID]
+			FROM
+				[Child] [c_1]
+		)
+			THEN True
+		ELSE False
+	END
 

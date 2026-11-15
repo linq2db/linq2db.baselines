@@ -1,6 +1,6 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
-	Replace(CStr([p].[MoneyValue]), CStr(','), CStr('.'))
+	RTrim(Replace(CStr([p].[MoneyValue]), CStr(','), CStr('.')), '0.')
 FROM
 	[LinqDataTypes] [p]
 WHERE

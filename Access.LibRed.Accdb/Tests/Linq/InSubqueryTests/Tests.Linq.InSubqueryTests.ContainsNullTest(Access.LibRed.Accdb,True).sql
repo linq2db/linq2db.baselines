@@ -1,8 +1,11 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
-	COUNT(*) > 0
-FROM
-	[Parent] [c_1]
-WHERE
-	[c_1].[Value1] IS NULL
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[Parent] [c_1]
+		WHERE
+			[c_1].[Value1] IS NULL
+	)
 

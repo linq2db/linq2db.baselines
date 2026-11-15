@@ -3,9 +3,14 @@ DECLARE @ID  -- Int32
 SET     @ID = 1
 
 SELECT
-	COUNT(*) > 0
-FROM
-	[Person] [t1]
-WHERE
-	[t1].[PersonID] = @ID
+	CASE
+		WHEN CVar(@ID) IN (
+			SELECT
+				[t1].[PersonID]
+			FROM
+				[Person] [t1]
+		)
+			THEN True
+		ELSE False
+	END
 

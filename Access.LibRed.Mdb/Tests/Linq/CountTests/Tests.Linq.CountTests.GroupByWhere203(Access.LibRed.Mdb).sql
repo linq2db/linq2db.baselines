@@ -5,7 +5,10 @@ FROM
 	(
 		SELECT
 			[g_1].[ParentID] as [Key_1],
-			COUNT(IIF([g_1].[ChildID] > 20, 1, NULL)) as [Count_1]
+			COUNT(CASE
+				WHEN [g_1].[ChildID] > 20 THEN 1
+				ELSE NULL
+			END) as [Count_1]
 		FROM
 			[Child] [g_1]
 		GROUP BY

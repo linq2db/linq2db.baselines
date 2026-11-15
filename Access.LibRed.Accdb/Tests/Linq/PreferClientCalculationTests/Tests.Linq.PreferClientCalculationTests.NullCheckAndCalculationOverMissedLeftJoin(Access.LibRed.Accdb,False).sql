@@ -1,9 +1,18 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
 	[e].[Id],
-	IIF([j].[Id] IS NULL, -1, IIF([j].[Value1] IS NULL, 0, [j].[Value1]) + 1),
+	CASE
+		WHEN [j].[Id] IS NULL THEN -1
+		ELSE CASE
+			WHEN [j].[Value1] IS NULL THEN 0
+			ELSE [j].[Value1]
+		END + 1
+	END,
 	[j].[Value1],
-	IIF([j].[Value1] IS NULL, 0, [j].[Value1]) + 1
+	CASE
+		WHEN [j].[Value1] IS NULL THEN 0
+		ELSE [j].[Value1]
+	END + 1
 FROM
 	[MissedJoinEntity] [e]
 		LEFT JOIN [MissedJoinEntity] [j] ON ([j].[Id] = [e].[Id] + 1000)

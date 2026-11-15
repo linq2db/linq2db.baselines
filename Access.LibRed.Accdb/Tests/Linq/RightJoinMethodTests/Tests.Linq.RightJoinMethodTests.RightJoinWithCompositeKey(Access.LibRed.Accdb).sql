@@ -6,7 +6,10 @@ SELECT
 	[c_1].[ChildID]
 FROM
 	[Parent] [p]
-		RIGHT JOIN [Child] [c_1] ON ([p].[ParentID] = [c_1].[ParentID] AND IIF([p].[Value1] IS NULL, 0, [p].[Value1]) = [c_1].[ParentID])
+		RIGHT JOIN [Child] [c_1] ON ([p].[ParentID] = [c_1].[ParentID] AND CASE
+			WHEN [p].[Value1] IS NULL THEN 0
+			ELSE [p].[Value1]
+		END = [c_1].[ParentID])
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT

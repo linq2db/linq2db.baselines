@@ -1,6 +1,6 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT TOP 2
-	[r].[D] ^ 0.00005 + [r].[D]
+	Power([r].[D], 0.00005) + [r].[D]
 FROM
 	[PowScale] [r]
 

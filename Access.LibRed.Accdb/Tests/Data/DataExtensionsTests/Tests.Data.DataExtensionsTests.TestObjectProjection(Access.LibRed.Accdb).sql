@@ -1,5 +1,8 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
-SELECT TOP 1
+DECLARE @take  -- Int32
+SET     @take = 1
+
+SELECT TOP @take
 	[p].[PersonID],
 	[p].[FirstName],
 	[p].[LastName],

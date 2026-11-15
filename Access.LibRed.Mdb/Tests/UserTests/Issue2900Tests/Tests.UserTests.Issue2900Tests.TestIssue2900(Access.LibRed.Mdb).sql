@@ -1,21 +1,16 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
-	(
-		SELECT TOP 1
-			[a_Metrics].[Value] IS NOT NULL
-		FROM
-			[Metric] [a_Metrics]
-		WHERE
-			[a].[Id] = [a_Metrics].[RequestId]
-	),
-	(
-		SELECT TOP 1
-			[a_Metrics_1].[Value]
-		FROM
-			[Metric] [a_Metrics_1]
-		WHERE
-			[a].[Id] = [a_Metrics_1].[RequestId]
-	)
+	[t1].[HasValue],
+	[t1].[Value_1]
 FROM
 	[Request] [a]
+		OUTER APPLY (
+			SELECT TOP 1
+				[a_Metrics].[Value] as [Value_1],
+				[a_Metrics].[Value] IS NOT NULL as [HasValue]
+			FROM
+				[Metric] [a_Metrics]
+			WHERE
+				[a].[Id] = [a_Metrics].[RequestId]
+		) [t1]
 

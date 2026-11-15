@@ -1,36 +1,22 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
-	[t1].[ParentID],
-	[t1].[ParentID_1],
-	[t1].[ParentID_1] as [ParentID_2],
+	[p].[ParentID],
+	[t1].[ParentID] as [ParentID_1],
+	[t1].[ParentID] as [ParentID_2],
 	[t1].[ChildID]
 FROM
-	(
-		SELECT
-			[p].[ParentID],
-			(
-				SELECT TOP 1
-					[c_1].[ParentID]
-				FROM
-					[Child] [c_1]
-				WHERE
-					[c_1].[ParentID] = [p].[ParentID]
-				ORDER BY
-					[c_1].[ChildID]
-			) as [ParentID_1],
-			(
-				SELECT TOP 1
-					[c_2].[ChildID]
-				FROM
-					[Child] [c_2]
-				WHERE
-					[c_2].[ParentID] = [p].[ParentID]
-				ORDER BY
-					[c_2].[ChildID]
-			) as [ChildID]
-		FROM
-			[Parent] [p]
-	) [t1]
+	[Parent] [p]
+		OUTER APPLY (
+			SELECT TOP 1
+				[c_1].[ParentID],
+				[c_1].[ChildID]
+			FROM
+				[Child] [c_1]
+			WHERE
+				[c_1].[ParentID] = [p].[ParentID]
+			ORDER BY
+				[c_1].[ChildID]
+		) [t1]
 UNION
 SELECT
 	[p_1].[ParentID],

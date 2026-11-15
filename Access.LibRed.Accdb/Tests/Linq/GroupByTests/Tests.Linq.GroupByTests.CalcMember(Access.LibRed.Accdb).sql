@@ -5,7 +5,10 @@ SELECT
 FROM
 	(
 		SELECT
-			IIF([child].[FirstName] = 'John', [child].[FirstName], 'a') as [Key_1]
+			CASE
+				WHEN [child].[FirstName] = 'John' THEN [child].[FirstName]
+				ELSE 'a'
+			END as [Key_1]
 		FROM
 			[Parent] [groupedData],
 			[Person] [child]

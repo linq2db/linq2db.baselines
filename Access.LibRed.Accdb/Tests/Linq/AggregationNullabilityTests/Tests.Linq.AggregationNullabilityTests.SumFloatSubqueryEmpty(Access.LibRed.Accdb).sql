@@ -1,21 +1,19 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT TOP 1
-	1000 - IIF([t1].[Sum_1] IS NULL, 0, [t1].[Sum_1])
+	1000 - CASE
+		WHEN [t1].[Sum_1] IS NULL THEN 0
+		ELSE [t1].[Sum_1]
+	END
 FROM
-	(
-		SELECT
-			(
-				SELECT
-					SUM([i].[FloatValue])
-				FROM
-					[Inner] [i]
-				WHERE
-					[i].[Group] = [o].[Group]
-			) as [Sum_1],
-			[o].[Id]
-		FROM
-			[Outer] [o]
-	) [t1]
+	[Outer] [o]
+		OUTER APPLY (
+			SELECT
+				SUM([i].[FloatValue]) as [Sum_1]
+			FROM
+				[Inner] [i]
+			WHERE
+				[i].[Group] = [o].[Group]
+		) [t1]
 WHERE
-	[t1].[Id] = 2
+	[o].[Id] = 2
 

@@ -24,7 +24,10 @@ SELECT TOP 2
 	[t1].[Type],
 	[t1].[Id],
 	[t1].[Stored],
-	IIF([t1].[Stored] IS NULL, '', [t1].[Stored]) + '!'
+	CASE
+		WHEN [t1].[Stored] IS NULL THEN ''
+		ELSE [t1].[Stored]
+	END + '!'
 FROM
 	[CalcSubtypeDual] [t1]
 

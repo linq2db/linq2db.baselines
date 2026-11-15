@@ -22,8 +22,14 @@ FROM
 			[Child] [c_1]
 		UNION
 		SELECT
-			IIF([c_2].[ParentID] IS NULL, 0, [c_2].[ParentID]) as [ParentID],
-			Int(IIF([c_2].[GrandChildID] IS NULL, 0, [c_2].[GrandChildID]) / 100) as [Value1]
+			CASE
+				WHEN [c_2].[ParentID] IS NULL THEN 0
+				ELSE [c_2].[ParentID]
+			END as [ParentID],
+			Int(CASE
+				WHEN [c_2].[GrandChildID] IS NULL THEN 0
+				ELSE [c_2].[GrandChildID]
+			END / 100) as [Value1]
 		FROM
 			[GrandChild] [c_2]
 	) [t1]

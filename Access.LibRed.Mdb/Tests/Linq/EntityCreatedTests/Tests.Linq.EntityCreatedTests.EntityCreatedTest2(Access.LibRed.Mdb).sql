@@ -1,5 +1,8 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
-SELECT TOP 1
+DECLARE @take  -- Int32
+SET     @take = 1
+
+SELECT TOP @take
 	[c_1].[ParentID],
 	[c_1].[ChildID],
 	[a_Parent].[ParentID] as [ParentID_1],

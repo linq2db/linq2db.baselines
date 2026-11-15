@@ -1,7 +1,10 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
 	[c_1].[ParentID],
-	IIF([c_1].[Value1] IS NULL, 0, [c_1].[Value1]) as [ID2],
+	CASE
+		WHEN [c_1].[Value1] IS NULL THEN 0
+		ELSE [c_1].[Value1]
+	END as [ID2],
 	[c_1].[ParentID] as [ID1_1]
 FROM
 	[Parent] [c_1]

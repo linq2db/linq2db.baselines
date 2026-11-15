@@ -1,6 +1,12 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
-	[t].[Value1] + IIF([t].[Value2] IS NULL, '', [t].[Value2]) + IIF([t].[Value3] IS NULL, '', [t].[Value3])
+	[t].[Value1] + CASE
+		WHEN [t].[Value2] IS NULL THEN ''
+		ELSE [t].[Value2]
+	END + CASE
+		WHEN [t].[Value3] IS NULL THEN ''
+		ELSE [t].[Value3]
+	END
 FROM
 	[StringConcatThreeNullEntity] [t]
 ORDER BY

@@ -1,14 +1,24 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
 	[m_1].[Id],
-	[d].[Id] as [Id_1],
-	[d].[ItemId],
-	[d].[Log]
+	[d_1].[Id] as [Id_1],
+	[d_1].[ItemId],
+	[d_1].[Log]
 FROM
 	[Item] [m_1]
-		INNER JOIN [ItemLog] [d] ON ([m_1].[Id] = [d].[ItemId])
+		CROSS APPLY (
+			SELECT TOP 2
+				[d].[Id],
+				[d].[ItemId],
+				[d].[Log]
+			FROM
+				[ItemLog] [d]
+			WHERE
+				[m_1].[Id] = [d].[ItemId]
+			ORDER BY
+				[d].[Id] DESC
+		) [d_1]
 ORDER BY
-	[d].[Id] DESC,
 	[m_1].[Id]
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed

@@ -4,8 +4,14 @@ SELECT
 FROM
 	(
 		SELECT
-			MIN(IIF([g_1].[ParentID] > 2, [g_1].[ChildID], NULL)) as [Min_1],
-			MIN(IIF([g_1].[ParentID] > 2, [g_1].[ChildID], NULL)) as [Min_2]
+			MIN(CASE
+				WHEN [g_1].[ParentID] > 2 THEN [g_1].[ChildID]
+				ELSE NULL
+			END) as [Min_1],
+			MIN(CASE
+				WHEN [g_1].[ParentID] > 2 THEN [g_1].[ChildID]
+				ELSE NULL
+			END) as [Min_2]
 		FROM
 			[Child] [g_1]
 		GROUP BY

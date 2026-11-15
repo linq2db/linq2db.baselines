@@ -8,7 +8,13 @@ FROM
 		SELECT
 			[p].[FirstName],
 			[p].[LastName] + ', ' + [p].[FirstName] as [LastName],
-			[p].[LastName] + ', ' + [p].[FirstName] + ' (' + IIF([p].[MiddleName] IS NULL, '', [p].[MiddleName]) + ' + ' + IIF([p].[MiddleName] IS NULL, '', [p].[MiddleName]) + ')' as [FullName]
+			[p].[LastName] + ', ' + [p].[FirstName] + ' (' + CASE
+				WHEN [p].[MiddleName] IS NULL THEN ''
+				ELSE [p].[MiddleName]
+			END + ' + ' + CASE
+				WHEN [p].[MiddleName] IS NULL THEN ''
+				ELSE [p].[MiddleName]
+			END + ')' as [FullName]
 		FROM
 			[Person] [p]
 	) [t1]

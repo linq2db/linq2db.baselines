@@ -213,14 +213,18 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	((1=1)) = (IIF(([r].[Value1] = [r].[Value2]) = ((
-		SELECT
-			COUNT(*)
-		FROM
-			[BooleanTable] [r_1]
-		WHERE
-			[r_1].[Value1] = 1
-	) = ([r].[Value5] + @cnt)), True, False))
+	((1=1)) = (CASE
+		WHEN ([r].[Value1] = [r].[Value2]) = ((
+			SELECT
+				COUNT(*)
+			FROM
+				[BooleanTable] [r_1]
+			WHERE
+				[r_1].[Value1] = 1
+		) = ([r].[Value5] + @cnt))
+			THEN True
+		ELSE False
+	END)
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
@@ -245,14 +249,18 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	((1=1)) = (IIF(([r].[Value1] <> [r].[Value2]) = ((
-		SELECT
-			COUNT(*)
-		FROM
-			[BooleanTable] [r_1]
-		WHERE
-			[r_1].[Value1] = 1
-	) = ([r].[Value5] + @cnt)), True, False))
+	((1=1)) = (CASE
+		WHEN ([r].[Value1] <> [r].[Value2]) = ((
+			SELECT
+				COUNT(*)
+			FROM
+				[BooleanTable] [r_1]
+			WHERE
+				[r_1].[Value1] = 1
+		) = ([r].[Value5] + @cnt))
+			THEN True
+		ELSE False
+	END)
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
@@ -345,14 +353,18 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	IIF(([r].[Value1] = [r].[Value2]) = ((
-		SELECT
-			COUNT(*)
-		FROM
-			[BooleanTable] [r_1]
-		WHERE
-			[r_1].[Value1] = 1
-	) = ([r].[Value5] + @cnt)), False, True)
+	CASE
+		WHEN ([r].[Value1] = [r].[Value2]) = ((
+			SELECT
+				COUNT(*)
+			FROM
+				[BooleanTable] [r_1]
+			WHERE
+				[r_1].[Value1] = 1
+		) = ([r].[Value5] + @cnt))
+			THEN False
+		ELSE True
+	END
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
@@ -377,14 +389,18 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	IIF(([r].[Value1] <> [r].[Value2]) = ((
-		SELECT
-			COUNT(*)
-		FROM
-			[BooleanTable] [r_1]
-		WHERE
-			[r_1].[Value1] = 1
-	) = ([r].[Value5] + @cnt)), False, True)
+	CASE
+		WHEN ([r].[Value1] <> [r].[Value2]) = ((
+			SELECT
+				COUNT(*)
+			FROM
+				[BooleanTable] [r_1]
+			WHERE
+				[r_1].[Value1] = 1
+		) = ([r].[Value5] + @cnt))
+			THEN False
+		ELSE True
+	END
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
@@ -473,14 +489,18 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	((1=1)) = (IIF(([r].[Value1] = [r].[Value2]) = ((
-		SELECT
-			COUNT(*)
-		FROM
-			[BooleanTable] [r_1]
-		WHERE
-			[r_1].[Value1] = 1
-	) = ([r].[Value5] + @cnt)), False, True))
+	((1=1)) = (CASE
+		WHEN ([r].[Value1] = [r].[Value2]) = ((
+			SELECT
+				COUNT(*)
+			FROM
+				[BooleanTable] [r_1]
+			WHERE
+				[r_1].[Value1] = 1
+		) = ([r].[Value5] + @cnt))
+			THEN False
+		ELSE True
+	END)
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
@@ -505,14 +525,18 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	((1=1)) = (IIF(([r].[Value1] <> [r].[Value2]) = ((
-		SELECT
-			COUNT(*)
-		FROM
-			[BooleanTable] [r_1]
-		WHERE
-			[r_1].[Value1] = 1
-	) = ([r].[Value5] + @cnt)), False, True))
+	((1=1)) = (CASE
+		WHEN ([r].[Value1] <> [r].[Value2]) = ((
+			SELECT
+				COUNT(*)
+			FROM
+				[BooleanTable] [r_1]
+			WHERE
+				[r_1].[Value1] = 1
+		) = ([r].[Value5] + @cnt))
+			THEN False
+		ELSE True
+	END)
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
@@ -793,14 +817,18 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	((1=1)) = (IIF(([r].[Value4] + @cnt) >= ((
-		SELECT
-			COUNT(*)
-		FROM
-			[BooleanTable] [r_1]
-		WHERE
-			[r_1].[Value1] = 1
-	) + [r].[Value5]), True, False))
+	((1=1)) = (CASE
+		WHEN ([r].[Value4] + @cnt) >= ((
+			SELECT
+				COUNT(*)
+			FROM
+				[BooleanTable] [r_1]
+			WHERE
+				[r_1].[Value1] = 1
+		) + [r].[Value5])
+			THEN True
+		ELSE False
+	END)
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
@@ -825,14 +853,18 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	((1=1)) = (IIF(([r].[Value4] + @cnt) > ((
-		SELECT
-			COUNT(*)
-		FROM
-			[BooleanTable] [r_1]
-		WHERE
-			[r_1].[Value1] = 1
-	) + [r].[Value5]), True, False))
+	((1=1)) = (CASE
+		WHEN ([r].[Value4] + @cnt) > ((
+			SELECT
+				COUNT(*)
+			FROM
+				[BooleanTable] [r_1]
+			WHERE
+				[r_1].[Value1] = 1
+		) + [r].[Value5])
+			THEN True
+		ELSE False
+	END)
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
@@ -857,14 +889,18 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	((1=1)) = (IIF(([r].[Value4] + @cnt) <= ((
-		SELECT
-			COUNT(*)
-		FROM
-			[BooleanTable] [r_1]
-		WHERE
-			[r_1].[Value1] = 1
-	) + [r].[Value5]), True, False))
+	((1=1)) = (CASE
+		WHEN ([r].[Value4] + @cnt) <= ((
+			SELECT
+				COUNT(*)
+			FROM
+				[BooleanTable] [r_1]
+			WHERE
+				[r_1].[Value1] = 1
+		) + [r].[Value5])
+			THEN True
+		ELSE False
+	END)
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
@@ -889,14 +925,18 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	((1=1)) = (IIF(([r].[Value4] + @cnt) < ((
-		SELECT
-			COUNT(*)
-		FROM
-			[BooleanTable] [r_1]
-		WHERE
-			[r_1].[Value1] = 1
-	) + [r].[Value5]), True, False))
+	((1=1)) = (CASE
+		WHEN ([r].[Value4] + @cnt) < ((
+			SELECT
+				COUNT(*)
+			FROM
+				[BooleanTable] [r_1]
+			WHERE
+				[r_1].[Value1] = 1
+		) + [r].[Value5])
+			THEN True
+		ELSE False
+	END)
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
@@ -921,14 +961,18 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	((1=1)) = (IIF(([r].[Value2] + @cnt) >= ((
-		SELECT
-			COUNT(*)
-		FROM
-			[BooleanTable] [r_1]
-		WHERE
-			[r_1].[Value1] = 1
-	) + [r].[Value5]), True, False))
+	((1=1)) = (CASE
+		WHEN ([r].[Value2] + @cnt) >= ((
+			SELECT
+				COUNT(*)
+			FROM
+				[BooleanTable] [r_1]
+			WHERE
+				[r_1].[Value1] = 1
+		) + [r].[Value5])
+			THEN True
+		ELSE False
+	END)
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
@@ -953,14 +997,18 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	((1=1)) = (IIF(([r].[Value2] + @cnt) > ((
-		SELECT
-			COUNT(*)
-		FROM
-			[BooleanTable] [r_1]
-		WHERE
-			[r_1].[Value1] = 1
-	) + [r].[Value5]), True, False))
+	((1=1)) = (CASE
+		WHEN ([r].[Value2] + @cnt) > ((
+			SELECT
+				COUNT(*)
+			FROM
+				[BooleanTable] [r_1]
+			WHERE
+				[r_1].[Value1] = 1
+		) + [r].[Value5])
+			THEN True
+		ELSE False
+	END)
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
@@ -985,14 +1033,18 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	((1=1)) = (IIF(([r].[Value2] + @cnt) <= ((
-		SELECT
-			COUNT(*)
-		FROM
-			[BooleanTable] [r_1]
-		WHERE
-			[r_1].[Value1] = 1
-	) + [r].[Value5]), True, False))
+	((1=1)) = (CASE
+		WHEN ([r].[Value2] + @cnt) <= ((
+			SELECT
+				COUNT(*)
+			FROM
+				[BooleanTable] [r_1]
+			WHERE
+				[r_1].[Value1] = 1
+		) + [r].[Value5])
+			THEN True
+		ELSE False
+	END)
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
@@ -1017,14 +1069,18 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	((1=1)) = (IIF(([r].[Value2] + @cnt) < ((
-		SELECT
-			COUNT(*)
-		FROM
-			[BooleanTable] [r_1]
-		WHERE
-			[r_1].[Value1] = 1
-	) + [r].[Value5]), True, False))
+	((1=1)) = (CASE
+		WHEN ([r].[Value2] + @cnt) < ((
+			SELECT
+				COUNT(*)
+			FROM
+				[BooleanTable] [r_1]
+			WHERE
+				[r_1].[Value1] = 1
+		) + [r].[Value5])
+			THEN True
+		ELSE False
+	END)
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT

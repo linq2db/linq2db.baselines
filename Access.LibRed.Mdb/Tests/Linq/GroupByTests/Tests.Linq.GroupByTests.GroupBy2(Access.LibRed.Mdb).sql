@@ -5,7 +5,10 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			IIF([gr].[Value1] IS NULL, [c_1].[ChildID], [gr].[Value1]) as [ID]
+			CASE
+				WHEN [gr].[Value1] IS NULL THEN [c_1].[ChildID]
+				ELSE [gr].[Value1]
+			END as [ID]
 		FROM
 			[Parent] [gr]
 				INNER JOIN [Child] [c_1] ON ([gr].[ParentID] = [c_1].[ParentID])

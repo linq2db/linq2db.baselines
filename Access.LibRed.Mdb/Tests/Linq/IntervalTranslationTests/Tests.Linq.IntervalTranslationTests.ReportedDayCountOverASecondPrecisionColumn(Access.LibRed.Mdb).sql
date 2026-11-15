@@ -58,7 +58,11 @@ VALUES
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT TOP 2
-	IIF(MIN([grp].[StartedOn]) IS NULL OR MAX([grp].[StartedOn]) IS NULL, NULL, DateDiff('d', IIF(IsNull(MIN([grp].[StartedOn])), #1899-12-30#, MIN([grp].[StartedOn])), IIF(IsNull(MAX([grp].[StartedOn])), #1899-12-30#, MAX([grp].[StartedOn]))) + (CDbl(DateDiff('d', DateAdd('d', DateDiff('d', IIF(IsNull(MIN([grp].[StartedOn])), #1899-12-30#, MIN([grp].[StartedOn])), IIF(IsNull(MAX([grp].[StartedOn])), #1899-12-30#, MAX([grp].[StartedOn]))), IIF(IsNull(MIN([grp].[StartedOn])), #1899-12-30#, MIN([grp].[StartedOn]))), IIF(IsNull(MAX([grp].[StartedOn])), #1899-12-30#, MAX([grp].[StartedOn])))) * 86400 + DateDiff('s', DateAdd('d', DateDiff('d', DateAdd('d', DateDiff('d', IIF(IsNull(MIN([grp].[StartedOn])), #1899-12-30#, MIN([grp].[StartedOn])), IIF(IsNull(MAX([grp].[StartedOn])), #1899-12-30#, MAX([grp].[StartedOn]))), IIF(IsNull(MIN([grp].[StartedOn])), #1899-12-30#, MIN([grp].[StartedOn]))), IIF(IsNull(MAX([grp].[StartedOn])), #1899-12-30#, MAX([grp].[StartedOn]))), DateAdd('d', DateDiff('d', IIF(IsNull(MIN([grp].[StartedOn])), #1899-12-30#, MIN([grp].[StartedOn])), IIF(IsNull(MAX([grp].[StartedOn])), #1899-12-30#, MAX([grp].[StartedOn]))), IIF(IsNull(MIN([grp].[StartedOn])), #1899-12-30#, MIN([grp].[StartedOn])))), IIF(IsNull(MAX([grp].[StartedOn])), #1899-12-30#, MAX([grp].[StartedOn])))) / 86400) + 1
+	CASE
+		WHEN MIN([grp].[StartedOn]) IS NULL OR MAX([grp].[StartedOn]) IS NULL
+			THEN NULL
+		ELSE DateDiff_Big('d', IIF(IsNull(MIN([grp].[StartedOn])), #1899-12-30#, MIN([grp].[StartedOn])), IIF(IsNull(MAX([grp].[StartedOn])), #1899-12-30#, MAX([grp].[StartedOn]))) + DateDiff_Big('ms', DateAdd('d', DateDiff_Big('d', IIF(IsNull(MIN([grp].[StartedOn])), #1899-12-30#, MIN([grp].[StartedOn])), IIF(IsNull(MAX([grp].[StartedOn])), #1899-12-30#, MAX([grp].[StartedOn]))), IIF(IsNull(MIN([grp].[StartedOn])), #1899-12-30#, MIN([grp].[StartedOn]))), IIF(IsNull(MAX([grp].[StartedOn])), #1899-12-30#, MAX([grp].[StartedOn]))) / 86400000
+	END + 1
 FROM
 	[CoarseEventRow] [grp]
 

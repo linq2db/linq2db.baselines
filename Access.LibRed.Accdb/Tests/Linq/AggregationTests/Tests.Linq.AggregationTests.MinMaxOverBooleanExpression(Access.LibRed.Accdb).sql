@@ -1,36 +1,62 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
-	MAX(IIF([t1].[Id] = 2, 1, 0))
+	MAX(CASE
+		WHEN [t1].[Id] = 2 THEN 1
+		ELSE 0
+	END)
 FROM
 	[Item] [t1]
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
-	MIN(IIF([t1].[Id] = 2, 1, 0))
+	MIN(CASE
+		WHEN [t1].[Id] = 2 THEN 1
+		ELSE 0
+	END)
 FROM
 	[Item] [t1]
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
-	MAX(IIF([t1].[Id] = 2, 1, 0))
+	MAX(CASE
+		WHEN [t1].[Id] = 2 THEN 1
+		ELSE 0
+	END)
 FROM
 	[Item] [t1]
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
-	MIN(IIF([t1].[Id] = 2, 1, 0))
+	MIN(CASE
+		WHEN [t1].[Id] = 2 THEN 1
+		ELSE 0
+	END)
 FROM
 	[Item] [t1]
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
-	MAX(IIF(IIF([t1].[Id] = 2, True, [t1].[Id] > 1), 1, 0))
+	MAX(CASE
+		WHEN CASE
+			WHEN [t1].[Id] = 2 THEN True
+			ELSE [t1].[Id] > 1
+		END
+			THEN 1
+		ELSE 0
+	END)
 FROM
 	[Item] [t1]
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
-	MIN(IIF(IIF([t1].[Id] = 2, True, [t1].[Id] > 1), 1, 0))
+	MIN(CASE
+		WHEN CASE
+			WHEN [t1].[Id] = 2 THEN True
+			ELSE [t1].[Id] > 1
+		END
+			THEN 1
+		ELSE 0
+	END)
 FROM
 	[Item] [t1]
 

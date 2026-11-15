@@ -5,23 +5,21 @@ SELECT
 FROM
 	(
 		SELECT
-			IIF([t1].[Sum_1] IS NULL, 0, [t1].[Sum_1]) / 2 as [Sum_1],
-			[t1].[ParentID]
+			CASE
+				WHEN [t1].[Sum_1] IS NULL THEN 0
+				ELSE [t1].[Sum_1]
+			END / 2 as [Sum_1],
+			[p].[ParentID]
 		FROM
-			(
-				SELECT
-					(
-						SELECT
-							SUM([a_Children].[ParentID])
-						FROM
-							[Child] [a_Children]
-						WHERE
-							[p].[ParentID] = [a_Children].[ParentID] AND [a_Children].[ParentID] > 0
-					) as [Sum_1],
-					[p].[ParentID]
-				FROM
-					[Parent] [p]
-			) [t1]
+			[Parent] [p]
+				OUTER APPLY (
+					SELECT
+						SUM([a_Children].[ParentID]) as [Sum_1]
+					FROM
+						[Child] [a_Children]
+					WHERE
+						[p].[ParentID] = [a_Children].[ParentID] AND [a_Children].[ParentID] > 0
+				) [t1]
 	) [p_1]
 WHERE
 	[p_1].[Sum_1] > 1

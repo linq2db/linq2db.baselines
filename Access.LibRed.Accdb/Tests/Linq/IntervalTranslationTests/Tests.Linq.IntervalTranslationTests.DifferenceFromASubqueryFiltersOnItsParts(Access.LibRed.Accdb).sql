@@ -46,7 +46,7 @@ SELECT
 FROM
 	[EventRow] [x]
 WHERE
-	DateDiff('h', [x].[StartedOn], [x].[FinishedOn]) + (CDbl(DateDiff('d', DateAdd('h', DateDiff('h', [x].[StartedOn], [x].[FinishedOn]), [x].[StartedOn]), [x].[FinishedOn])) * 86400 + DateDiff('s', DateAdd('d', DateDiff('d', DateAdd('h', DateDiff('h', [x].[StartedOn], [x].[FinishedOn]), [x].[StartedOn]), [x].[FinishedOn]), DateAdd('h', DateDiff('h', [x].[StartedOn], [x].[FinishedOn]), [x].[StartedOn])), [x].[FinishedOn])) / 3600 > 3
+	DateDiff_Big('h', [x].[StartedOn], [x].[FinishedOn]) + DateDiff_Big('ms', DateAdd('h', DateDiff_Big('h', [x].[StartedOn], [x].[FinishedOn]), [x].[StartedOn]), [x].[FinishedOn]) / 3600000 > 3
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
@@ -54,21 +54,85 @@ SELECT
 FROM
 	[EventRow] [x]
 WHERE
-	IIF([x].[FinishedOn] >= DateAdd('d', IIF([x].[FinishedOn] >= [x].[StartedOn] AND DateAdd('d', DateDiff('d', [x].[StartedOn], [x].[FinishedOn]), [x].[StartedOn]) > [x].[FinishedOn], DateDiff('d', [x].[StartedOn], [x].[FinishedOn]) - 1, IIF([x].[FinishedOn] < [x].[StartedOn] AND DateAdd('d', DateDiff('d', [x].[StartedOn], [x].[FinishedOn]), [x].[StartedOn]) < [x].[FinishedOn], DateDiff('d', [x].[StartedOn], [x].[FinishedOn]) + 1, DateDiff('d', [x].[StartedOn], [x].[FinishedOn]))), [x].[StartedOn]) AND DateAdd('h', DateDiff('h', DateAdd('d', IIF([x].[FinishedOn] >= [x].[StartedOn] AND DateAdd('d', DateDiff('d', [x].[StartedOn], [x].[FinishedOn]), [x].[StartedOn]) > [x].[FinishedOn], DateDiff('d', [x].[StartedOn], [x].[FinishedOn]) - 1, IIF([x].[FinishedOn] < [x].[StartedOn] AND DateAdd('d', DateDiff('d', [x].[StartedOn], [x].[FinishedOn]), [x].[StartedOn]) < [x].[FinishedOn], DateDiff('d', [x].[StartedOn], [x].[FinishedOn]) + 1, DateDiff('d', [x].[StartedOn], [x].[FinishedOn]))), [x].[StartedOn]), [x].[FinishedOn]), DateAdd('d', IIF([x].[FinishedOn] >= [x].[StartedOn] AND DateAdd('d', DateDiff('d', [x].[StartedOn], [x].[FinishedOn]), [x].[StartedOn]) > [x].[FinishedOn], DateDiff('d', [x].[StartedOn], [x].[FinishedOn]) - 1, IIF([x].[FinishedOn] < [x].[StartedOn] AND DateAdd('d', DateDiff('d', [x].[StartedOn], [x].[FinishedOn]), [x].[StartedOn]) < [x].[FinishedOn], DateDiff('d', [x].[StartedOn], [x].[FinishedOn]) + 1, DateDiff('d', [x].[StartedOn], [x].[FinishedOn]))), [x].[StartedOn])) > [x].[FinishedOn], DateDiff('h', DateAdd('d', IIF([x].[FinishedOn] >= [x].[StartedOn] AND DateAdd('d', DateDiff('d', [x].[StartedOn], [x].[FinishedOn]), [x].[StartedOn]) > [x].[FinishedOn], DateDiff('d', [x].[StartedOn], [x].[FinishedOn]) - 1, IIF([x].[FinishedOn] < [x].[StartedOn] AND DateAdd('d', DateDiff('d', [x].[StartedOn], [x].[FinishedOn]), [x].[StartedOn]) < [x].[FinishedOn], DateDiff('d', [x].[StartedOn], [x].[FinishedOn]) + 1, DateDiff('d', [x].[StartedOn], [x].[FinishedOn]))), [x].[StartedOn]), [x].[FinishedOn]) - 1, IIF([x].[FinishedOn] < DateAdd('d', IIF([x].[FinishedOn] >= [x].[StartedOn] AND DateAdd('d', DateDiff('d', [x].[StartedOn], [x].[FinishedOn]), [x].[StartedOn]) > [x].[FinishedOn], DateDiff('d', [x].[StartedOn], [x].[FinishedOn]) - 1, IIF([x].[FinishedOn] < [x].[StartedOn] AND DateAdd('d', DateDiff('d', [x].[StartedOn], [x].[FinishedOn]), [x].[StartedOn]) < [x].[FinishedOn], DateDiff('d', [x].[StartedOn], [x].[FinishedOn]) + 1, DateDiff('d', [x].[StartedOn], [x].[FinishedOn]))), [x].[StartedOn]) AND DateAdd('h', DateDiff('h', DateAdd('d', IIF([x].[FinishedOn] >= [x].[StartedOn] AND DateAdd('d', DateDiff('d', [x].[StartedOn], [x].[FinishedOn]), [x].[StartedOn]) > [x].[FinishedOn], DateDiff('d', [x].[StartedOn], [x].[FinishedOn]) - 1, IIF([x].[FinishedOn] < [x].[StartedOn] AND DateAdd('d', DateDiff('d', [x].[StartedOn], [x].[FinishedOn]), [x].[StartedOn]) < [x].[FinishedOn], DateDiff('d', [x].[StartedOn], [x].[FinishedOn]) + 1, DateDiff('d', [x].[StartedOn], [x].[FinishedOn]))), [x].[StartedOn]), [x].[FinishedOn]), DateAdd('d', IIF([x].[FinishedOn] >= [x].[StartedOn] AND DateAdd('d', DateDiff('d', [x].[StartedOn], [x].[FinishedOn]), [x].[StartedOn]) > [x].[FinishedOn], DateDiff('d', [x].[StartedOn], [x].[FinishedOn]) - 1, IIF([x].[FinishedOn] < [x].[StartedOn] AND DateAdd('d', DateDiff('d', [x].[StartedOn], [x].[FinishedOn]), [x].[StartedOn]) < [x].[FinishedOn], DateDiff('d', [x].[StartedOn], [x].[FinishedOn]) + 1, DateDiff('d', [x].[StartedOn], [x].[FinishedOn]))), [x].[StartedOn])) < [x].[FinishedOn], DateDiff('h', DateAdd('d', IIF([x].[FinishedOn] >= [x].[StartedOn] AND DateAdd('d', DateDiff('d', [x].[StartedOn], [x].[FinishedOn]), [x].[StartedOn]) > [x].[FinishedOn], DateDiff('d', [x].[StartedOn], [x].[FinishedOn]) - 1, IIF([x].[FinishedOn] < [x].[StartedOn] AND DateAdd('d', DateDiff('d', [x].[StartedOn], [x].[FinishedOn]), [x].[StartedOn]) < [x].[FinishedOn], DateDiff('d', [x].[StartedOn], [x].[FinishedOn]) + 1, DateDiff('d', [x].[StartedOn], [x].[FinishedOn]))), [x].[StartedOn]), [x].[FinishedOn]) + 1, DateDiff('h', DateAdd('d', IIF([x].[FinishedOn] >= [x].[StartedOn] AND DateAdd('d', DateDiff('d', [x].[StartedOn], [x].[FinishedOn]), [x].[StartedOn]) > [x].[FinishedOn], DateDiff('d', [x].[StartedOn], [x].[FinishedOn]) - 1, IIF([x].[FinishedOn] < [x].[StartedOn] AND DateAdd('d', DateDiff('d', [x].[StartedOn], [x].[FinishedOn]), [x].[StartedOn]) < [x].[FinishedOn], DateDiff('d', [x].[StartedOn], [x].[FinishedOn]) + 1, DateDiff('d', [x].[StartedOn], [x].[FinishedOn]))), [x].[StartedOn]), [x].[FinishedOn]))) MOD 24 = 1
+	CASE
+		WHEN [x].[FinishedOn] >= DateAdd('d', CASE
+			WHEN [x].[FinishedOn] >= [x].[StartedOn] AND DateAdd('d', DateDiff_Big('d', [x].[StartedOn], [x].[FinishedOn]), [x].[StartedOn]) > [x].[FinishedOn]
+				THEN DateDiff_Big('d', [x].[StartedOn], [x].[FinishedOn]) - 1
+			WHEN [x].[FinishedOn] < [x].[StartedOn] AND DateAdd('d', DateDiff_Big('d', [x].[StartedOn], [x].[FinishedOn]), [x].[StartedOn]) < [x].[FinishedOn]
+				THEN DateDiff_Big('d', [x].[StartedOn], [x].[FinishedOn]) + 1
+			ELSE DateDiff_Big('d', [x].[StartedOn], [x].[FinishedOn])
+		END, [x].[StartedOn]) AND DateAdd('h', DateDiff_Big('h', DateAdd('d', CASE
+			WHEN [x].[FinishedOn] >= [x].[StartedOn] AND DateAdd('d', DateDiff_Big('d', [x].[StartedOn], [x].[FinishedOn]), [x].[StartedOn]) > [x].[FinishedOn]
+				THEN DateDiff_Big('d', [x].[StartedOn], [x].[FinishedOn]) - 1
+			WHEN [x].[FinishedOn] < [x].[StartedOn] AND DateAdd('d', DateDiff_Big('d', [x].[StartedOn], [x].[FinishedOn]), [x].[StartedOn]) < [x].[FinishedOn]
+				THEN DateDiff_Big('d', [x].[StartedOn], [x].[FinishedOn]) + 1
+			ELSE DateDiff_Big('d', [x].[StartedOn], [x].[FinishedOn])
+		END, [x].[StartedOn]), [x].[FinishedOn]), DateAdd('d', CASE
+			WHEN [x].[FinishedOn] >= [x].[StartedOn] AND DateAdd('d', DateDiff_Big('d', [x].[StartedOn], [x].[FinishedOn]), [x].[StartedOn]) > [x].[FinishedOn]
+				THEN DateDiff_Big('d', [x].[StartedOn], [x].[FinishedOn]) - 1
+			WHEN [x].[FinishedOn] < [x].[StartedOn] AND DateAdd('d', DateDiff_Big('d', [x].[StartedOn], [x].[FinishedOn]), [x].[StartedOn]) < [x].[FinishedOn]
+				THEN DateDiff_Big('d', [x].[StartedOn], [x].[FinishedOn]) + 1
+			ELSE DateDiff_Big('d', [x].[StartedOn], [x].[FinishedOn])
+		END, [x].[StartedOn])) > [x].[FinishedOn]
+			THEN DateDiff_Big('h', DateAdd('d', CASE
+			WHEN [x].[FinishedOn] >= [x].[StartedOn] AND DateAdd('d', DateDiff_Big('d', [x].[StartedOn], [x].[FinishedOn]), [x].[StartedOn]) > [x].[FinishedOn]
+				THEN DateDiff_Big('d', [x].[StartedOn], [x].[FinishedOn]) - 1
+			WHEN [x].[FinishedOn] < [x].[StartedOn] AND DateAdd('d', DateDiff_Big('d', [x].[StartedOn], [x].[FinishedOn]), [x].[StartedOn]) < [x].[FinishedOn]
+				THEN DateDiff_Big('d', [x].[StartedOn], [x].[FinishedOn]) + 1
+			ELSE DateDiff_Big('d', [x].[StartedOn], [x].[FinishedOn])
+		END, [x].[StartedOn]), [x].[FinishedOn]) - 1
+		WHEN [x].[FinishedOn] < DateAdd('d', CASE
+			WHEN [x].[FinishedOn] >= [x].[StartedOn] AND DateAdd('d', DateDiff_Big('d', [x].[StartedOn], [x].[FinishedOn]), [x].[StartedOn]) > [x].[FinishedOn]
+				THEN DateDiff_Big('d', [x].[StartedOn], [x].[FinishedOn]) - 1
+			WHEN [x].[FinishedOn] < [x].[StartedOn] AND DateAdd('d', DateDiff_Big('d', [x].[StartedOn], [x].[FinishedOn]), [x].[StartedOn]) < [x].[FinishedOn]
+				THEN DateDiff_Big('d', [x].[StartedOn], [x].[FinishedOn]) + 1
+			ELSE DateDiff_Big('d', [x].[StartedOn], [x].[FinishedOn])
+		END, [x].[StartedOn]) AND DateAdd('h', DateDiff_Big('h', DateAdd('d', CASE
+			WHEN [x].[FinishedOn] >= [x].[StartedOn] AND DateAdd('d', DateDiff_Big('d', [x].[StartedOn], [x].[FinishedOn]), [x].[StartedOn]) > [x].[FinishedOn]
+				THEN DateDiff_Big('d', [x].[StartedOn], [x].[FinishedOn]) - 1
+			WHEN [x].[FinishedOn] < [x].[StartedOn] AND DateAdd('d', DateDiff_Big('d', [x].[StartedOn], [x].[FinishedOn]), [x].[StartedOn]) < [x].[FinishedOn]
+				THEN DateDiff_Big('d', [x].[StartedOn], [x].[FinishedOn]) + 1
+			ELSE DateDiff_Big('d', [x].[StartedOn], [x].[FinishedOn])
+		END, [x].[StartedOn]), [x].[FinishedOn]), DateAdd('d', CASE
+			WHEN [x].[FinishedOn] >= [x].[StartedOn] AND DateAdd('d', DateDiff_Big('d', [x].[StartedOn], [x].[FinishedOn]), [x].[StartedOn]) > [x].[FinishedOn]
+				THEN DateDiff_Big('d', [x].[StartedOn], [x].[FinishedOn]) - 1
+			WHEN [x].[FinishedOn] < [x].[StartedOn] AND DateAdd('d', DateDiff_Big('d', [x].[StartedOn], [x].[FinishedOn]), [x].[StartedOn]) < [x].[FinishedOn]
+				THEN DateDiff_Big('d', [x].[StartedOn], [x].[FinishedOn]) + 1
+			ELSE DateDiff_Big('d', [x].[StartedOn], [x].[FinishedOn])
+		END, [x].[StartedOn])) < [x].[FinishedOn]
+			THEN DateDiff_Big('h', DateAdd('d', CASE
+			WHEN [x].[FinishedOn] >= [x].[StartedOn] AND DateAdd('d', DateDiff_Big('d', [x].[StartedOn], [x].[FinishedOn]), [x].[StartedOn]) > [x].[FinishedOn]
+				THEN DateDiff_Big('d', [x].[StartedOn], [x].[FinishedOn]) - 1
+			WHEN [x].[FinishedOn] < [x].[StartedOn] AND DateAdd('d', DateDiff_Big('d', [x].[StartedOn], [x].[FinishedOn]), [x].[StartedOn]) < [x].[FinishedOn]
+				THEN DateDiff_Big('d', [x].[StartedOn], [x].[FinishedOn]) + 1
+			ELSE DateDiff_Big('d', [x].[StartedOn], [x].[FinishedOn])
+		END, [x].[StartedOn]), [x].[FinishedOn]) + 1
+		ELSE DateDiff_Big('h', DateAdd('d', CASE
+			WHEN [x].[FinishedOn] >= [x].[StartedOn] AND DateAdd('d', DateDiff_Big('d', [x].[StartedOn], [x].[FinishedOn]), [x].[StartedOn]) > [x].[FinishedOn]
+				THEN DateDiff_Big('d', [x].[StartedOn], [x].[FinishedOn]) - 1
+			WHEN [x].[FinishedOn] < [x].[StartedOn] AND DateAdd('d', DateDiff_Big('d', [x].[StartedOn], [x].[FinishedOn]), [x].[StartedOn]) < [x].[FinishedOn]
+				THEN DateDiff_Big('d', [x].[StartedOn], [x].[FinishedOn]) + 1
+			ELSE DateDiff_Big('d', [x].[StartedOn], [x].[FinishedOn])
+		END, [x].[StartedOn]), [x].[FinishedOn])
+	END MOD 24 = 1
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
 	[x].[Id]
 FROM
-	[EventRow] [x]
+	(
+		SELECT
+			(DateDiff_Big('d', [r].[StartedOn], [r].[FinishedOn]) * 86400) * 10000000 + DateDiff_Big('ms', DateAdd('d', DateDiff_Big('d', [r].[StartedOn], [r].[FinishedOn]), [r].[StartedOn]), [r].[FinishedOn]) * 10000 as [Taken],
+			[r].[Id]
+		FROM
+			[EventRow] [r]
+	) [x]
 ORDER BY
-	[x].[FinishedOn] DESC,
-	[x].[StartedOn] DESC
+	[x].[Taken] DESC
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
-	[x].[FinishedOn],
-	[x].[StartedOn]
+	(DateDiff_Big('d', [x].[StartedOn], [x].[FinishedOn]) * 86400) * 10000000 + DateDiff_Big('ms', DateAdd('d', DateDiff_Big('d', [x].[StartedOn], [x].[FinishedOn]), [x].[StartedOn]), [x].[FinishedOn]) * 10000
 FROM
 	[EventRow] [x]
 ORDER BY
@@ -77,8 +141,7 @@ ORDER BY
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
 	[r].[Id],
-	[r].[FinishedOn],
-	[r].[StartedOn]
+	(DateDiff_Big('d', [r].[StartedOn], [r].[FinishedOn]) * 86400) * 10000000 + DateDiff_Big('ms', DateAdd('d', DateDiff_Big('d', [r].[StartedOn], [r].[FinishedOn]), [r].[StartedOn]), [r].[FinishedOn]) * 10000
 FROM
 	[EventRow] [r]
 ORDER BY

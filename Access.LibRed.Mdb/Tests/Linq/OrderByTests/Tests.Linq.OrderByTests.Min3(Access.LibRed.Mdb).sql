@@ -1,9 +1,12 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
+DECLARE @take  -- Int32
+SET     @take = 3
+
 SELECT
 	MIN([t2].[ParentID])
 FROM
 	(
-		SELECT TOP 3
+		SELECT TOP @take
 			[t1].[ParentID]
 		FROM
 			[Parent] [t1]

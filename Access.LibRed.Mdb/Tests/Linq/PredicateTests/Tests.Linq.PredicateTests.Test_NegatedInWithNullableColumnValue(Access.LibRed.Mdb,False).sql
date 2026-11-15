@@ -46,7 +46,11 @@ FROM
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
 	[r].[Id],
-	IIF([r].[Value5] = [r].[Value4] OR [r].[Value5] IS NULL AND [r].[Value4] IS NULL, True, False)
+	CASE
+		WHEN [r].[Value5] = [r].[Value4] OR [r].[Value5] IS NULL AND [r].[Value4] IS NULL
+			THEN True
+		ELSE False
+	END
 FROM
 	[BooleanTable] [r]
 

@@ -1,7 +1,7 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
-	[cross_1].[ParentID_1],
-	[cross_1].[ChildID],
+	[sub].[ParentID_1],
+	[sub].[ChildID],
 	[grandChild_1].[GrandChildID]
 FROM
 	(
@@ -12,6 +12,6 @@ FROM
 		FROM
 			[Parent] [parent_1],
 			[Child] [child_1]
-	) [cross_1]
-		LEFT JOIN [GrandChild] [grandChild_1] ON ([cross_1].[ParentID] = [grandChild_1].[ParentID] AND [cross_1].[ChildID] = [grandChild_1].[ChildID])
+	) [sub]
+		LEFT JOIN [GrandChild] [grandChild_1] ON ([sub].[ParentID] = [grandChild_1].[ParentID] AND [sub].[ChildID] = [grandChild_1].[ChildID])
 

@@ -2,7 +2,7 @@
 DECLARE @p  -- Int32
 SET     @p = 1
 
-SELECT TOP 1
+SELECT TOP @p
 	[c_1].[ParentID],
 	[c_1].[ChildID]
 FROM
@@ -14,7 +14,7 @@ WHERE
 DECLARE @p  -- Int32
 SET     @p = 2
 
-SELECT TOP 2
+SELECT TOP @p
 	[c_1].[ParentID],
 	[c_1].[ChildID]
 FROM

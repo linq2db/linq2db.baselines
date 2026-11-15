@@ -149,7 +149,11 @@ SELECT
 FROM
 	(
 		SELECT
-			IIF([g_1].[Value4] = [g_1].[Value5] OR [g_1].[Value4] IS NULL AND [g_1].[Value5] IS NULL, True, False) as [Key_1]
+			CASE
+				WHEN [g_1].[Value4] = [g_1].[Value5] OR [g_1].[Value4] IS NULL AND [g_1].[Value5] IS NULL
+					THEN True
+				ELSE False
+			END as [Key_1]
 		FROM
 			[BooleanTable] [g_1]
 	) [g_2]
@@ -173,7 +177,11 @@ SELECT
 FROM
 	(
 		SELECT
-			IIF([g_1].[Value4] <> [g_1].[Value5] OR [g_1].[Value4] IS NULL AND [g_1].[Value5] IS NOT NULL OR [g_1].[Value4] IS NOT NULL AND [g_1].[Value5] IS NULL, True, False) as [Key_1]
+			CASE
+				WHEN [g_1].[Value4] <> [g_1].[Value5] OR [g_1].[Value4] IS NULL AND [g_1].[Value5] IS NOT NULL OR [g_1].[Value4] IS NOT NULL AND [g_1].[Value5] IS NULL
+					THEN True
+				ELSE False
+			END as [Key_1]
 		FROM
 			[BooleanTable] [g_1]
 	) [g_2]
@@ -197,7 +205,10 @@ SELECT
 FROM
 	(
 		SELECT
-			IIF([g_1].[Value4] > [g_1].[Value5], True, False) as [Key_1]
+			CASE
+				WHEN [g_1].[Value4] > [g_1].[Value5] THEN True
+				ELSE False
+			END as [Key_1]
 		FROM
 			[BooleanTable] [g_1]
 	) [g_2]
@@ -221,7 +232,10 @@ SELECT
 FROM
 	(
 		SELECT
-			IIF([g_1].[Value4] < [g_1].[Value5], True, False) as [Key_1]
+			CASE
+				WHEN [g_1].[Value4] < [g_1].[Value5] THEN True
+				ELSE False
+			END as [Key_1]
 		FROM
 			[BooleanTable] [g_1]
 	) [g_2]
@@ -245,7 +259,10 @@ SELECT
 FROM
 	(
 		SELECT
-			IIF([g_1].[Value4] >= [g_1].[Value5], True, False) as [Key_1]
+			CASE
+				WHEN [g_1].[Value4] >= [g_1].[Value5] THEN True
+				ELSE False
+			END as [Key_1]
 		FROM
 			[BooleanTable] [g_1]
 	) [g_2]
@@ -269,7 +286,10 @@ SELECT
 FROM
 	(
 		SELECT
-			IIF([g_1].[Value4] <= [g_1].[Value5], True, False) as [Key_1]
+			CASE
+				WHEN [g_1].[Value4] <= [g_1].[Value5] THEN True
+				ELSE False
+			END as [Key_1]
 		FROM
 			[BooleanTable] [g_1]
 	) [g_2]
@@ -293,7 +313,10 @@ SELECT
 FROM
 	(
 		SELECT
-			IIF([g_1].[Value1] = [g_1].[Value4], True, False) as [Key_1]
+			CASE
+				WHEN [g_1].[Value1] = [g_1].[Value4] THEN True
+				ELSE False
+			END as [Key_1]
 		FROM
 			[BooleanTable] [g_1]
 	) [g_2]
@@ -341,7 +364,10 @@ SELECT
 FROM
 	(
 		SELECT
-			IIF([g_1].[Value1] > [g_1].[Value4], True, False) as [Key_1]
+			CASE
+				WHEN [g_1].[Value1] > [g_1].[Value4] THEN True
+				ELSE False
+			END as [Key_1]
 		FROM
 			[BooleanTable] [g_1]
 	) [g_2]
@@ -365,7 +391,10 @@ SELECT
 FROM
 	(
 		SELECT
-			IIF([g_1].[Value1] < [g_1].[Value4], True, False) as [Key_1]
+			CASE
+				WHEN [g_1].[Value1] < [g_1].[Value4] THEN True
+				ELSE False
+			END as [Key_1]
 		FROM
 			[BooleanTable] [g_1]
 	) [g_2]
@@ -389,7 +418,10 @@ SELECT
 FROM
 	(
 		SELECT
-			IIF([g_1].[Value1] >= [g_1].[Value4], True, False) as [Key_1]
+			CASE
+				WHEN [g_1].[Value1] >= [g_1].[Value4] THEN True
+				ELSE False
+			END as [Key_1]
 		FROM
 			[BooleanTable] [g_1]
 	) [g_2]
@@ -413,7 +445,10 @@ SELECT
 FROM
 	(
 		SELECT
-			IIF([g_1].[Value1] <= [g_1].[Value4], True, False) as [Key_1]
+			CASE
+				WHEN [g_1].[Value1] <= [g_1].[Value4] THEN True
+				ELSE False
+			END as [Key_1]
 		FROM
 			[BooleanTable] [g_1]
 	) [g_2]
@@ -437,7 +472,10 @@ SELECT
 FROM
 	(
 		SELECT
-			IIF([g_1].[Value5] = [g_1].[Value2], True, False) as [Key_1]
+			CASE
+				WHEN [g_1].[Value5] = [g_1].[Value2] THEN True
+				ELSE False
+			END as [Key_1]
 		FROM
 			[BooleanTable] [g_1]
 	) [g_2]
@@ -485,7 +523,10 @@ SELECT
 FROM
 	(
 		SELECT
-			IIF([g_1].[Value5] > [g_1].[Value2], True, False) as [Key_1]
+			CASE
+				WHEN [g_1].[Value5] > [g_1].[Value2] THEN True
+				ELSE False
+			END as [Key_1]
 		FROM
 			[BooleanTable] [g_1]
 	) [g_2]
@@ -509,7 +550,10 @@ SELECT
 FROM
 	(
 		SELECT
-			IIF([g_1].[Value5] < [g_1].[Value2], True, False) as [Key_1]
+			CASE
+				WHEN [g_1].[Value5] < [g_1].[Value2] THEN True
+				ELSE False
+			END as [Key_1]
 		FROM
 			[BooleanTable] [g_1]
 	) [g_2]
@@ -533,7 +577,10 @@ SELECT
 FROM
 	(
 		SELECT
-			IIF([g_1].[Value5] >= [g_1].[Value2], True, False) as [Key_1]
+			CASE
+				WHEN [g_1].[Value5] >= [g_1].[Value2] THEN True
+				ELSE False
+			END as [Key_1]
 		FROM
 			[BooleanTable] [g_1]
 	) [g_2]
@@ -557,7 +604,10 @@ SELECT
 FROM
 	(
 		SELECT
-			IIF([g_1].[Value5] <= [g_1].[Value2], True, False) as [Key_1]
+			CASE
+				WHEN [g_1].[Value5] <= [g_1].[Value2] THEN True
+				ELSE False
+			END as [Key_1]
 		FROM
 			[BooleanTable] [g_1]
 	) [g_2]

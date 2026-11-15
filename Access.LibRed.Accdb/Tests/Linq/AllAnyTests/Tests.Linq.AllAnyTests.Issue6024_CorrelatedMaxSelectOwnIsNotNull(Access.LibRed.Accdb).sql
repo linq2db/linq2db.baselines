@@ -3,7 +3,10 @@ SELECT
 	[p].[ParentID],
 	(
 		SELECT
-			MAX(IIF([g_1].[ChildID] IS NOT NULL, [g_1].[GrandChildID], 0))
+			MAX(CASE
+				WHEN [g_1].[ChildID] IS NOT NULL THEN [g_1].[GrandChildID]
+				ELSE 0
+			END)
 		FROM
 			[GrandChild] [g_1]
 		WHERE

@@ -1,7 +1,8 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
-SELECT DISTINCT
+SELECT
 	[a_Book].[BookId],
 	[a_Book].[Discriminator],
+	[a_Book].[BookId] as [BookId_1],
 	[a_Book].[BookName],
 	[a_Book].[NovelScore],
 	[a_Book].[RomanScore]
@@ -10,21 +11,21 @@ FROM
 		INNER JOIN [BookAuthor] [b] ON ([b].[FkAuthorId] = [t1].[AuthorId]))
 		LEFT JOIN [Book] [a_Book] ON ([b].[FkBookId] = [a_Book].[BookId])
 WHERE
-	[a_Book].[Discriminator] = 'Roman' AND NOT EXISTS(
-		SELECT
-			*
-		FROM
-			([Author] [t2]
-				INNER JOIN [BookAuthor] [b_1] ON ([b_1].[FkAuthorId] = [t2].[AuthorId]))
-				LEFT JOIN [Book] [a_Book_1] ON ([b_1].[FkBookId] = [a_Book_1].[BookId])
-		WHERE
-			[a_Book_1].[Discriminator] = 'Novel' AND
-			([a_Book].[BookId] = [a_Book_1].[BookId] OR [a_Book].[BookId] IS NULL AND [a_Book_1].[BookId] IS NULL) AND
-			([a_Book].[Discriminator] = [a_Book_1].[Discriminator] OR [a_Book].[Discriminator] IS NULL AND [a_Book_1].[Discriminator] IS NULL) AND
-			([a_Book].[BookName] = [a_Book_1].[BookName] OR [a_Book].[BookName] IS NULL AND [a_Book_1].[BookName] IS NULL) AND
-			([a_Book].[RomanScore] = [a_Book_1].[RomanScore] OR [a_Book].[RomanScore] IS NULL AND [a_Book_1].[RomanScore] IS NULL) AND
-			([a_Book].[NovelScore] = [a_Book_1].[NovelScore] OR [a_Book].[NovelScore] IS NULL AND [a_Book_1].[NovelScore] IS NULL)
-	)
+	[a_Book].[Discriminator] = 'Roman'
+EXCEPT
+SELECT
+	[a_Book_1].[BookId],
+	[a_Book_1].[Discriminator],
+	[a_Book_1].[BookId] as [BookId_1],
+	[a_Book_1].[BookName],
+	[a_Book_1].[NovelScore],
+	[a_Book_1].[RomanScore]
+FROM
+	([Author] [t2]
+		INNER JOIN [BookAuthor] [b_1] ON ([b_1].[FkAuthorId] = [t2].[AuthorId]))
+		LEFT JOIN [Book] [a_Book_1] ON ([b_1].[FkBookId] = [a_Book_1].[BookId])
+WHERE
+	[a_Book_1].[Discriminator] = 'Novel'
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT

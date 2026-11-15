@@ -1,6 +1,9 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
-	MAX(IIF([g_1].[ParentID] < 3, [g_1].[ChildID], NULL))
+	MAX(CASE
+		WHEN [g_1].[ParentID] < 3 THEN [g_1].[ChildID]
+		ELSE NULL
+	END)
 FROM
 	[Child] [g_1]
 WHERE

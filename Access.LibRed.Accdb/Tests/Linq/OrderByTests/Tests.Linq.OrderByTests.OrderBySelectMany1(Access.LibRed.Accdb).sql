@@ -1,7 +1,7 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
-	[cross_1].[ParentID_1],
-	[cross_1].[ChildID]
+	[sub].[ParentID_1],
+	[sub].[ChildID]
 FROM
 	(
 		SELECT
@@ -12,12 +12,11 @@ FROM
 		FROM
 			[Parent] [p],
 			[Child] [c_1]
-	) [cross_1]
-		INNER JOIN [Parent] [a_Parent] ON ([cross_1].[ParentID] = [a_Parent].[ParentID])
+	) [sub]
+		INNER JOIN [Parent] [a_Parent] ON ([sub].[ParentID] = [a_Parent].[ParentID])
 WHERE
-	[cross_1].[ParentID_1] = [a_Parent].[ParentID] AND
-	([cross_1].[Value1] = [a_Parent].[Value1] OR [cross_1].[Value1] IS NULL AND [a_Parent].[Value1] IS NULL)
+	[sub].[ParentID_1] = [a_Parent].[ParentID] AND ([sub].[Value1] = [a_Parent].[Value1] OR [sub].[Value1] IS NULL AND [a_Parent].[Value1] IS NULL)
 ORDER BY
-	[cross_1].[ParentID_1],
-	[cross_1].[ChildID]
+	[sub].[ParentID_1],
+	[sub].[ChildID]
 

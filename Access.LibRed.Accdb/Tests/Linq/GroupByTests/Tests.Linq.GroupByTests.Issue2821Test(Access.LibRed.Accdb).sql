@@ -22,13 +22,19 @@ FROM
 			FROM
 				[LinqDataTypes] [t]
 			WHERE
-				IIF([t].[DateTimeValue] IS NULL, [t].[DateTimeValue2], [t].[DateTimeValue]) <= @currentDate AND
+				CASE
+					WHEN [t].[DateTimeValue] IS NULL THEN [t].[DateTimeValue2]
+					ELSE [t].[DateTimeValue]
+				END <= @currentDate AND
 				([t].[DateTimeValue2] IS NULL OR [t].[DateTimeValue2] >= @currentDate)
 			GROUP BY
 				[t].[ID]
 		) [t1] ON ([o].[ID] = [t1].[ID] AND ([o].[DateTimeValue2] = [t1].[c1] OR [o].[DateTimeValue2] IS NULL AND [t1].[c1] IS NULL))
 WHERE
-	IIF([o].[DateTimeValue] IS NULL, [o].[DateTimeValue2], [o].[DateTimeValue]) <= @currentDate AND
+	CASE
+		WHEN [o].[DateTimeValue] IS NULL THEN [o].[DateTimeValue2]
+		ELSE [o].[DateTimeValue]
+	END <= @currentDate AND
 	([o].[DateTimeValue2] IS NULL OR [o].[DateTimeValue2] >= @currentDate)
 ORDER BY
 	[o].[DateTimeValue2]

@@ -49,7 +49,10 @@ SELECT
 FROM
 	[CoarseNullableEventRow] [r]
 WHERE
-	IIF([r].[FinishedOn] IS NULL, [r].[StartedOn], [r].[FinishedOn]) < @value
+	CASE
+		WHEN [r].[FinishedOn] IS NULL THEN [r].[StartedOn]
+		ELSE [r].[FinishedOn]
+	END < @value
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 DECLARE @value  -- DateTime
@@ -60,7 +63,10 @@ SELECT
 FROM
 	[CoarseNullableEventRow] [r]
 WHERE
-	@value > IIF([r].[FinishedOn] IS NULL, [r].[StartedOn], [r].[FinishedOn])
+	@value > CASE
+		WHEN [r].[FinishedOn] IS NULL THEN [r].[StartedOn]
+		ELSE [r].[FinishedOn]
+	END
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 DECLARE @value  -- DateTime
@@ -71,5 +77,8 @@ SELECT
 FROM
 	[CoarseNullableEventRow] [r]
 WHERE
-	IIF([r].[FinishedOn] IS NULL, [r].[StartedOn], [r].[FinishedOn]) = @value
+	CASE
+		WHEN [r].[FinishedOn] IS NULL THEN [r].[StartedOn]
+		ELSE [r].[FinishedOn]
+	END = @value
 

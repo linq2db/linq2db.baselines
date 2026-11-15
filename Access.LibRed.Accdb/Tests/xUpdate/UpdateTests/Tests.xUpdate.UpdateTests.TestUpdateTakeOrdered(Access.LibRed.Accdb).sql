@@ -169,10 +169,13 @@ VALUES
 )
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
+DECLARE @take  -- Int32
+SET     @take = 5
+
 UPDATE
 	[Parent] [u],
 	(
-		SELECT TOP 5
+		SELECT TOP @take
 			[x].[Value1],
 			[x].[ParentID]
 		FROM

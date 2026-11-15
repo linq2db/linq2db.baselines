@@ -2,7 +2,11 @@
 SELECT
 	[t1].[Id],
 	[t1].[Value_1],
-	IIF(NOT ([t1].[Value_1] IS NULL OR Len([t1].[Value_1]) = 0), [t1].[Value_1], 'default')
+	CASE
+		WHEN NOT ([t1].[Value_1] IS NULL OR Len([t1].[Value_1]) = 0)
+			THEN [t1].[Value_1]
+		ELSE 'default'
+	END
 FROM
 	(
 		SELECT

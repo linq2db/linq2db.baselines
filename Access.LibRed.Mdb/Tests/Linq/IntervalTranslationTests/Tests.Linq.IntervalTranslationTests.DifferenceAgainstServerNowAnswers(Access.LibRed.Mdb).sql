@@ -25,5 +25,5 @@ SELECT
 FROM
 	[EventRow] [r]
 WHERE
-	DateDiff('d', [r].[StartedOn], Now) + (CDbl(DateDiff('d', DateAdd('d', DateDiff('d', [r].[StartedOn], Now), [r].[StartedOn]), Now)) * 86400 + DateDiff('s', DateAdd('d', DateDiff('d', DateAdd('d', DateDiff('d', [r].[StartedOn], Now), [r].[StartedOn]), Now), DateAdd('d', DateDiff('d', [r].[StartedOn], Now), [r].[StartedOn])), Now)) / 86400 > 1
+	DateDiff_Big('d', [r].[StartedOn], Now) + DateDiff_Big('ms', DateAdd('d', DateDiff_Big('d', [r].[StartedOn], Now), [r].[StartedOn]), Now) / 86400000 > 1
 

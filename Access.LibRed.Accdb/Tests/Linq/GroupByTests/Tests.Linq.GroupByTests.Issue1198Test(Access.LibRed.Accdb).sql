@@ -1,6 +1,9 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT TOP 1
-	COUNT(IIF([t].[Status] = 3, 1, NULL))
+	COUNT(CASE
+		WHEN [t].[Status] = 3 THEN 1
+		ELSE NULL
+	END)
 FROM
 	[Issue1192Table] [t]
 WHERE

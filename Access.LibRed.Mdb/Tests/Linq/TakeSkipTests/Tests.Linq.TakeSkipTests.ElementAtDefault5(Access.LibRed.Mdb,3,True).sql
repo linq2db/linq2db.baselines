@@ -1,5 +1,8 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
-SELECT TOP 4
+DECLARE @skip  -- Int32
+SET     @skip = 3
+
+SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],
 	[t1].[LastName],
@@ -9,9 +12,13 @@ FROM
 	[Person] [t1]
 ORDER BY
 	[t1].[LastName]
+OFFSET @skip ROWS FETCH NEXT 1 ROWS ONLY 
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
-SELECT TOP 4
+DECLARE @skip  -- Int32
+SET     @skip = 3
+
+SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],
 	[t1].[LastName],
@@ -21,4 +28,5 @@ FROM
 	[Person] [t1]
 ORDER BY
 	[t1].[LastName]
+OFFSET @skip ROWS FETCH NEXT 1 ROWS ONLY 
 

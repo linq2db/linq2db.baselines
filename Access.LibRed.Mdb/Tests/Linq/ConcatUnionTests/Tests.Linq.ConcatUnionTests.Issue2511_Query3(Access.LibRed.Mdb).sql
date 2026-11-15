@@ -1,4 +1,7 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
+DECLARE @take  -- Int32
+SET     @take = 2
+
 SELECT
 	[t3].[projection__set_id__],
 	[t3].[ID],
@@ -23,7 +26,7 @@ FROM
 			IIF(False, '', NULL) as [Diagnosis]
 		FROM
 			(
-				SELECT TOP 2
+				SELECT TOP @take
 					[p].[PersonID] as [ID],
 					[p].[FirstName],
 					[p].[LastName],

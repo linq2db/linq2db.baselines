@@ -1,5 +1,8 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
-SELECT TOP 3
+DECLARE @take  -- Int32
+SET     @take = 3
+
+SELECT TOP @take
 	[t1].[Value1]
 FROM
 	(
@@ -9,7 +12,10 @@ FROM
 			[Parent] [p]
 	) [t1]
 ORDER BY
-	IIF([t1].[Value1] IS NULL, 1, 0),
+	CASE
+		WHEN [t1].[Value1] IS NULL THEN 1
+		ELSE 0
+	END,
 	[t1].[Value1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed

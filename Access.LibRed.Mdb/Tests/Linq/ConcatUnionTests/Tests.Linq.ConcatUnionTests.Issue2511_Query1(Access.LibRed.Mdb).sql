@@ -1,4 +1,7 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
+DECLARE @take  -- Int32
+SET     @take = 2
+
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],
@@ -23,7 +26,7 @@ SELECT
 	[t3].[Diagnosis]
 FROM
 	(
-		SELECT TOP 2
+		SELECT TOP @take
 			[t2].[FirstName],
 			[t2].[PersonID] as [ID],
 			[t2].[LastName],

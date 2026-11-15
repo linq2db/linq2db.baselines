@@ -3,9 +3,21 @@ SELECT
 	[t1].[Id],
 	[t1].[FirstName],
 	[t1].[LastName],
-	IIF([t1].[FirstName] IS NULL, '', [t1].[FirstName]) + ' ' + IIF([t1].[LastName] IS NULL, '', [t1].[LastName])
+	CASE
+		WHEN [t1].[FirstName] IS NULL THEN ''
+		ELSE [t1].[FirstName]
+	END + ' ' + CASE
+		WHEN [t1].[LastName] IS NULL THEN ''
+		ELSE [t1].[LastName]
+	END
 FROM
 	[Issue2434Table] [t1]
 ORDER BY
-	IIF([t1].[FirstName] IS NULL, '', [t1].[FirstName]) + ' ' + IIF([t1].[LastName] IS NULL, '', [t1].[LastName])
+	CASE
+		WHEN [t1].[FirstName] IS NULL THEN ''
+		ELSE [t1].[FirstName]
+	END + ' ' + CASE
+		WHEN [t1].[LastName] IS NULL THEN ''
+		ELSE [t1].[LastName]
+	END
 

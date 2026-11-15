@@ -18,10 +18,22 @@ FROM
 	) [m_1]
 		INNER JOIN [Issue4596Item] [d] ON ([d].[FormId] = [m_1].[Id])
 ORDER BY
-	IIF([m_1].[C1] = 'T', [d].[OrderIndex], 0),
-	IIF([m_1].[C1] <> 'T', [d].[Name1], ''),
-	IIF([m_1].[C1] <> 'T', [d].[Name2], ''),
-	IIF([m_1].[C1] <> 'T', [d].[Name3], '')
+	CASE
+		WHEN [m_1].[C1] = 'T' THEN [d].[OrderIndex]
+		ELSE 0
+	END,
+	CASE
+		WHEN [m_1].[C1] <> 'T' THEN [d].[Name1]
+		ELSE ''
+	END,
+	CASE
+		WHEN [m_1].[C1] <> 'T' THEN [d].[Name2]
+		ELSE ''
+	END,
+	CASE
+		WHEN [m_1].[C1] <> 'T' THEN [d].[Name3]
+		ELSE ''
+	END
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT TOP 1

@@ -36,7 +36,10 @@ FROM
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
-	IIF([r].[Id] > 0, DateValue([r].[Value]), DateValue([r].[Value]))
+	CASE
+		WHEN [r].[Id] > 0 THEN DateValue([r].[Value])
+		ELSE DateValue([r].[Value])
+	END
 FROM
 	[CoarseDateShapesRow] [r]
 

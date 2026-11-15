@@ -11,6 +11,6 @@ FROM
 			[Parent] [t1],
 			[GrandChild] [g_1],
 			[Parent] [c_1]
-	) [cross_1]
-		LEFT JOIN [Child] [a_Child] ON ([cross_1].[ParentID] = [a_Child].[ParentID] AND [cross_1].[ChildID] = [a_Child].[ChildID])
+	) [sub]
+		LEFT JOIN [Child] [a_Child] ON ([sub].[ParentID] = [a_Child].[ParentID] AND [sub].[ChildID] = [a_Child].[ChildID])
 

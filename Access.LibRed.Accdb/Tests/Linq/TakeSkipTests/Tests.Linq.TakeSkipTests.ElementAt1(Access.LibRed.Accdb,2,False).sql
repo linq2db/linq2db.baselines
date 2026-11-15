@@ -1,5 +1,5 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
-SELECT TOP 3
+SELECT
 	[p].[ParentID],
 	[p].[Value1]
 FROM
@@ -8,4 +8,5 @@ WHERE
 	[p].[ParentID] > 1
 ORDER BY
 	[p].[ParentID]
+OFFSET 2 ROWS FETCH NEXT 1 ROWS ONLY 
 

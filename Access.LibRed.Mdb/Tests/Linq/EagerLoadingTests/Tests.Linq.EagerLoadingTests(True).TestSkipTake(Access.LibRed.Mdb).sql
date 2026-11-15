@@ -16,9 +16,9 @@ FROM
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
 	[m_2].[Id1],
-	[d].[DetailId],
-	[d].[MasterId],
-	[d].[DetailValue]
+	[d_1].[DetailId],
+	[d_1].[MasterId],
+	[d_1].[DetailValue]
 FROM
 	(
 		SELECT DISTINCT
@@ -26,9 +26,19 @@ FROM
 		FROM
 			[MasterClass] [m_1]
 	) [m_2]
-		INNER JOIN [DetailClass] [d] ON ([m_2].[Id1] = [d].[MasterId])
-ORDER BY
-	[d].[DetailId]
+		CROSS APPLY (
+			SELECT
+				[d].[DetailId],
+				[d].[MasterId],
+				[d].[DetailValue]
+			FROM
+				[DetailClass] [d]
+			WHERE
+				[m_2].[Id1] = [d].[MasterId]
+			ORDER BY
+				[d].[DetailId]
+			OFFSET 1 ROWS FETCH NEXT 2 ROWS ONLY 
+		) [d_1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT

@@ -6,16 +6,25 @@ SELECT
 FROM
 	(
 		SELECT
-			IIF([t1].[EnumNullable] IS NULL, [t1].[Enum], [t1].[EnumNullable]) as [Converted1],
+			CASE
+				WHEN [t1].[EnumNullable] IS NULL THEN [t1].[Enum]
+				ELSE [t1].[EnumNullable]
+			END as [Converted1],
 			[t1].[Value1] as [Converted2]
 		FROM
 			[ValueConversion] [t1]
 	) [t2]
 UNION
 SELECT
-	IIF([t1_1].[EnumNullable] IS NULL, [t1_1].[Enum], [t1_1].[EnumNullable]) as [Converted1],
+	CASE
+		WHEN [t1_1].[EnumNullable] IS NULL THEN [t1_1].[Enum]
+		ELSE [t1_1].[EnumNullable]
+	END as [Converted1],
 	[t1_1].[Value1] as [Converted2],
-	IIF([t1_1].[EnumNullable] IS NULL, [t1_1].[Enum], [t1_1].[EnumNullable]) as [Converted1_1]
+	CASE
+		WHEN [t1_1].[EnumNullable] IS NULL THEN [t1_1].[Enum]
+		ELSE [t1_1].[EnumNullable]
+	END as [Converted1_1]
 FROM
 	[ValueConversion] [t1_1]
 

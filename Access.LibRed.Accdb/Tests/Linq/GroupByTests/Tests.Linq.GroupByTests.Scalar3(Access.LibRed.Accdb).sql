@@ -1,6 +1,9 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
-	MAX(IIF([g_1].[ChildID] > 0, [g_1].[ChildID], NULL))
+	MAX(CASE
+		WHEN [g_1].[ChildID] > 0 THEN [g_1].[ChildID]
+		ELSE NULL
+	END)
 FROM
 	[Child] [g_1]
 GROUP BY

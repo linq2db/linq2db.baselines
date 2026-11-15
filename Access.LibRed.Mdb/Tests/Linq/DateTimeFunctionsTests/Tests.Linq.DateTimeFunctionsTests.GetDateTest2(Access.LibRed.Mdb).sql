@@ -1,5 +1,8 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
-SELECT TOP 5
+DECLARE @take  -- Int32
+SET     @take = 5
+
+SELECT TOP @take
 	[g_2].[Key_1],
 	COUNT(*)
 FROM

@@ -29,7 +29,10 @@ VALUES
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
-	[t].[VarCharColumn]
+	CASE
+		WHEN [t].[VarCharColumn] IS NOT NULL THEN LTrim([t].[VarCharColumn], '.+')
+		ELSE NULL
+	END
 FROM
 	[StringTrimTable] [t]
 WHERE

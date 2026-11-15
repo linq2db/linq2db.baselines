@@ -4,7 +4,10 @@ SELECT
 FROM
 	[ConcatTestEntity] [e]
 ORDER BY
-	IIF([e].[StrReq] IS NULL, '', [e].[StrReq]) + 'X'
+	CASE
+		WHEN [e].[StrReq] IS NULL THEN ''
+		ELSE [e].[StrReq]
+	END + 'X'
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT

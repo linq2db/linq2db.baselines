@@ -3,7 +3,10 @@ DECLARE @defValue  -- Int32
 SET     @defValue = 10
 
 SELECT
-	IIF(MIN([gr].[ParentID]) IS NULL, @defValue, MIN([gr].[ParentID]))
+	CASE
+		WHEN MIN([gr].[ParentID]) IS NULL THEN @defValue
+		ELSE MIN([gr].[ParentID])
+	END
 FROM
 	[Parent] [gr]
 

@@ -1,48 +1,34 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
 	[p].[ParentID],
-	(
-		SELECT TOP 1
-			[a_Children].[ParentID]
-		FROM
-			[Child] [a_Children]
-		WHERE
-			[p].[ParentID] = [a_Children].[ParentID]
-		ORDER BY
-			[a_Children].[ChildID]
-	),
-	(
-		SELECT TOP 1
-			[a_Children_1].[ChildID]
-		FROM
-			[Child] [a_Children_1]
-		WHERE
-			[p].[ParentID] = [a_Children_1].[ParentID]
-		ORDER BY
-			[a_Children_1].[ChildID]
-	),
-	(
-		SELECT TOP 1
-			[a_Children_2].[ParentID]
-		FROM
-			[Child] [a_Children_2]
-		WHERE
-			[p].[ParentID] = [a_Children_2].[ParentID]
-		ORDER BY
-			[a_Children_2].[ChildID]
-	),
-	(
-		SELECT TOP 1
-			[a_Children_3].[ChildID]
-		FROM
-			[Child] [a_Children_3]
-		WHERE
-			[p].[ParentID] = [a_Children_3].[ParentID]
-		ORDER BY
-			[a_Children_3].[ChildID]
-	)
+	[t1].[ParentID] as [ParentID_1],
+	[t1].[ChildID],
+	[t2].[ParentID] as [ParentID_2],
+	[t2].[ChildID] as [ChildID_1]
 FROM
-	[Parent] [p]
+	([Parent] [p]
+		OUTER APPLY (
+			SELECT TOP 1
+				[a_Children].[ParentID],
+				[a_Children].[ChildID]
+			FROM
+				[Child] [a_Children]
+			WHERE
+				[p].[ParentID] = [a_Children].[ParentID]
+			ORDER BY
+				[a_Children].[ChildID]
+		) [t1])
+		OUTER APPLY (
+			SELECT TOP 1
+				[a_Children_1].[ParentID],
+				[a_Children_1].[ChildID]
+			FROM
+				[Child] [a_Children_1]
+			WHERE
+				[p].[ParentID] = [a_Children_1].[ParentID]
+			ORDER BY
+				[a_Children_1].[ChildID]
+		) [t2]
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT

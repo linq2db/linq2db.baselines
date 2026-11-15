@@ -16,5 +16,8 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	IIF([t].[DateTimeValue] IS NOT NULL, DateValue([t].[DateTimeValue]), NULL) > @Date
+	CASE
+		WHEN [t].[DateTimeValue] IS NOT NULL THEN DateValue([t].[DateTimeValue])
+		ELSE NULL
+	END > @Date
 

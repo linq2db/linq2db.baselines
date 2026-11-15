@@ -7,7 +7,10 @@ SELECT
 FROM
 	[PrefixedCodeTable] [t]
 WHERE
-	IIF([t].[Code] IS NOT NULL, CStr([t].[Code]), NULL) LIKE @Code
+	CASE
+		WHEN [t].[Code] IS NOT NULL THEN CStr([t].[Code])
+		ELSE NULL
+	END LIKE @Code
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 DECLARE @bound VarChar(3) -- AnsiString
@@ -18,5 +21,8 @@ SELECT
 FROM
 	[PrefixedCodeTable] [t]
 WHERE
-	IIF([t].[Code] IS NOT NULL, CStr([t].[Code]), NULL) = @bound
+	CASE
+		WHEN [t].[Code] IS NOT NULL THEN CStr([t].[Code])
+		ELSE NULL
+	END = @bound
 

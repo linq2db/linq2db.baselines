@@ -1,7 +1,10 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
 	[r].[Id],
-	IIF([r].[A] = [r].[B], True, False)
+	CASE
+		WHEN [r].[A] = [r].[B] THEN True
+		ELSE False
+	END
 FROM
 	[NullableFlagTable] [r]
 ORDER BY

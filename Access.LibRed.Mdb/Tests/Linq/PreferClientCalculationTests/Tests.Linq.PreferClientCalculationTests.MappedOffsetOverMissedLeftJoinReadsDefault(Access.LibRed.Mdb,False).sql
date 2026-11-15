@@ -1,8 +1,22 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
 	[e].[Id],
-	IIF(IIF([j].[Moment] IS NULL, #0100-01-01#, [j].[Moment]) > [e].[Moment], 'y', 'n'),
-	IIF(IIF([j].[Moment] IS NULL, #0100-01-01#, [j].[Moment]) <= [e].[Moment], 'y', 'n')
+	CASE
+		WHEN CASE
+			WHEN [j].[Moment] IS NULL THEN #0100-01-01#
+			ELSE [j].[Moment]
+		END > [e].[Moment]
+			THEN 'y'
+		ELSE 'n'
+	END,
+	CASE
+		WHEN CASE
+			WHEN [j].[Moment] IS NULL THEN #0100-01-01#
+			ELSE [j].[Moment]
+		END <= [e].[Moment]
+			THEN 'y'
+		ELSE 'n'
+	END
 FROM
 	[MappedMomentEntity] [e]
 		LEFT JOIN [MappedMomentEntity] [j] ON ([j].[Id] = [e].[Id] + 1000)
@@ -16,14 +30,20 @@ FROM
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
-	DatePart('yyyy', IIF([j].[Moment] IS NULL, #0100-01-01#, [j].[Moment]))
+	DatePart('yyyy', CASE
+		WHEN [j].[Moment] IS NULL THEN #0100-01-01#
+		ELSE [j].[Moment]
+	END)
 FROM
 	[MappedMomentEntity] [e]
 		LEFT JOIN [MappedMomentEntity] [j] ON ([j].[Id] = [e].[Id] + 1000)
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
-	DatePart('yyyy', IIF([j].[Moment] IS NULL, #0100-01-01#, [j].[Moment]))
+	DatePart('yyyy', CASE
+		WHEN [j].[Moment] IS NULL THEN #0100-01-01#
+		ELSE [j].[Moment]
+	END)
 FROM
 	[MappedMomentEntity] [e]
 		LEFT JOIN [MappedMomentEntity] [j] ON ([j].[Id] = [e].[Id] + 1000)

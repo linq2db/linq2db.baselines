@@ -1,9 +1,9 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
-	[cross_1].[ParentID],
-	[cross_1].[Value1],
-	[cross_1].[ParentID_1],
-	[cross_1].[Value1_1],
+	[sub].[ParentID],
+	[sub].[Value1],
+	[sub].[ParentID_1],
+	[sub].[Value1_1],
 	[c_1].[ParentID] as [ParentID_2],
 	[c_1].[ChildID]
 FROM
@@ -16,14 +16,14 @@ FROM
 		FROM
 			[Parent] [p],
 			[Parent] [p2]
-	) [cross_1]
-		INNER JOIN [Child] [c_1] ON ([cross_1].[ParentID] = [c_1].[ParentID])
+	) [sub]
+		INNER JOIN [Child] [c_1] ON ([sub].[ParentID] = [c_1].[ParentID])
 UNION
 SELECT
-	[cross_2].[ParentID_1] as [ParentID],
-	[cross_2].[Value1],
-	[cross_2].[ParentID] as [ParentID_1],
-	[cross_2].[Value1_1],
+	[sub_1].[ParentID_1] as [ParentID],
+	[sub_1].[Value1],
+	[sub_1].[ParentID] as [ParentID_1],
+	[sub_1].[Value1_1],
 	[c_2].[ParentID] as [ParentID_2],
 	[c_2].[ChildID]
 FROM
@@ -36,6 +36,6 @@ FROM
 		FROM
 			[Parent] [p_1],
 			[Parent] [p2_1]
-	) [cross_2]
-		INNER JOIN [Child] [c_2] ON ([cross_2].[ParentID] = [c_2].[ParentID])
+	) [sub_1]
+		INNER JOIN [Child] [c_2] ON ([sub_1].[ParentID] = [c_2].[ParentID])
 

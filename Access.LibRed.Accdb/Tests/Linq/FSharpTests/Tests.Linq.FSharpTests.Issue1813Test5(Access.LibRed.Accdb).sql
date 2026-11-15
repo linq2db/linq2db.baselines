@@ -247,7 +247,10 @@ VALUES
 )
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
-SELECT TOP 90
+DECLARE @take  -- Int32
+SET     @take = 90
+
+SELECT TOP @take
 	[after_1].[Id],
 	[after_1].[DealNumber],
 	[after_1].[ParcelGroupID],

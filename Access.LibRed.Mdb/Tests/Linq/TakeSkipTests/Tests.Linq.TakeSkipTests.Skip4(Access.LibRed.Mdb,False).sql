@@ -6,4 +6,5 @@ FROM
 	[Child] [t1]
 ORDER BY
 	[t1].[ChildID] DESC
+OFFSET 3 ROWS
 

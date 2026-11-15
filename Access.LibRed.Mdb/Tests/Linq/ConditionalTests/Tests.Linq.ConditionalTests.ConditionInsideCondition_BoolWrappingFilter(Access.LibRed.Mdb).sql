@@ -4,7 +4,11 @@ SELECT
 FROM
 	(
 		SELECT
-			IIF([p].[ParentID] MOD 2 = 0, [p].[ParentID] MOD 3 = 0, IIF([p].[ParentID] MOD 4 = 0, [p].[ParentID] > 0, [p].[ParentID] < 5)) as [Value_1]
+			CASE
+				WHEN [p].[ParentID] MOD 2 = 0 THEN [p].[ParentID] MOD 3 = 0
+				WHEN [p].[ParentID] MOD 4 = 0 THEN [p].[ParentID] > 0
+				ELSE [p].[ParentID] < 5
+			END as [Value_1]
 		FROM
 			[Parent] [p]
 	) [s]

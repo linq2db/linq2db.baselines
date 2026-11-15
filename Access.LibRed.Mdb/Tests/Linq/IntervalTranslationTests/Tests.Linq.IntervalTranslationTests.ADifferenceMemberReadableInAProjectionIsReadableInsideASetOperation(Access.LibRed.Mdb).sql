@@ -21,23 +21,20 @@ VALUES
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
-	[r].[FinishedOn],
-	[r].[StartedOn]
+	(DateDiff_Big('d', [r].[StartedOn], [r].[FinishedOn]) * 86400) * 10000000 + DateDiff_Big('ms', DateAdd('d', DateDiff_Big('d', [r].[StartedOn], [r].[FinishedOn]), [r].[StartedOn]), [r].[FinishedOn]) * 10000
 FROM
 	[EventRow] [r]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
-	[r].[FinishedOn],
-	[r].[StartedOn]
+	(DateDiff_Big('d', [r].[StartedOn], [r].[FinishedOn]) * 86400) * 10000000 + DateDiff_Big('ms', DateAdd('d', DateDiff_Big('d', [r].[StartedOn], [r].[FinishedOn]), [r].[StartedOn]), [r].[FinishedOn]) * 10000
 FROM
 	[EventRow] [r]
 WHERE
 	[r].[Id] > 0
 UNION ALL
 SELECT
-	[r_1].[FinishedOn],
-	[r_1].[StartedOn]
+	(DateDiff_Big('d', [r_1].[StartedOn], [r_1].[FinishedOn]) * 86400) * 10000000 + DateDiff_Big('ms', DateAdd('d', DateDiff_Big('d', [r_1].[StartedOn], [r_1].[FinishedOn]), [r_1].[StartedOn]), [r_1].[FinishedOn]) * 10000
 FROM
 	[EventRow] [r_1]
 WHERE

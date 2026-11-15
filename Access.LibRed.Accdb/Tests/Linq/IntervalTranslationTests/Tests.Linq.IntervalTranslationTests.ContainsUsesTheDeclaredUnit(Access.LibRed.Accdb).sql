@@ -118,20 +118,30 @@ DECLARE @InSeconds  -- Int64
 SET     @InSeconds = 1800
 
 SELECT
-	COUNT(*) > 0
-FROM
-	[DurationRow] [r]
-WHERE
-	[r].[InSeconds] = @InSeconds
+	CASE
+		WHEN CVar(@InSeconds) IN (
+			SELECT
+				[r].[InSeconds]
+			FROM
+				[DurationRow] [r]
+		)
+			THEN True
+		ELSE False
+	END
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 DECLARE @InTicks  -- Int64
 SET     @InTicks = 54000000000
 
 SELECT
-	COUNT(*) > 0
-FROM
-	[DurationRow] [r]
-WHERE
-	[r].[InTicks] = @InTicks
+	CASE
+		WHEN CVar(@InTicks) IN (
+			SELECT
+				[r].[InTicks]
+			FROM
+				[DurationRow] [r]
+		)
+			THEN True
+		ELSE False
+	END
 

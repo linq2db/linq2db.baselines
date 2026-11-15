@@ -2,7 +2,10 @@
 SELECT
 	[g_2].[ParentID],
 	MIN([g_2].[ChildID]),
-	COUNT(IIF([g_2].[ChildID] > 25, 1, NULL))
+	COUNT(CASE
+		WHEN [g_2].[ChildID] > 25 THEN 1
+		ELSE NULL
+	END)
 FROM
 	(
 		SELECT

@@ -1,9 +1,30 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
 	[e].[Id],
-	IIF(0 IN (IIF([j].[Value1] IS NULL, 0, [j].[Value1]), 5), 'y', 'n'),
-	IIF(0 IN (IIF([j].[Value1] IS NULL, 0, [j].[Value1]), 5), 'y', 'n'),
-	IIF(0 IN (IIF([j].[Value1] IS NULL, 0, [j].[Value1]), 5), 'y', 'n')
+	CASE
+		WHEN 0 IN (CASE
+			WHEN [j].[Value1] IS NULL THEN 0
+			ELSE [j].[Value1]
+		END, 5)
+			THEN 'y'
+		ELSE 'n'
+	END,
+	CASE
+		WHEN 0 IN (CASE
+			WHEN [j].[Value1] IS NULL THEN 0
+			ELSE [j].[Value1]
+		END, 5)
+			THEN 'y'
+		ELSE 'n'
+	END,
+	CASE
+		WHEN 0 IN (CASE
+			WHEN [j].[Value1] IS NULL THEN 0
+			ELSE [j].[Value1]
+		END, 5)
+			THEN 'y'
+		ELSE 'n'
+	END
 FROM
 	[MissedJoinEntity] [e]
 		LEFT JOIN [MissedJoinEntity] [j] ON ([j].[Id] = [e].[Id] + 1000)
@@ -21,9 +42,30 @@ FROM
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
 	[e].[Id],
-	IIF(0 IN (IIF([j].[Value1] IS NULL, 0, [j].[Value1]), 5), 'y', 'n'),
-	IIF(0 IN (IIF([j].[Value1] IS NULL, 0, [j].[Value1]), 5), 'y', 'n'),
-	IIF(0 IN (IIF([j].[Value1] IS NULL, 0, [j].[Value1]), 5), 'y', 'n')
+	CASE
+		WHEN 0 IN (CASE
+			WHEN [j].[Value1] IS NULL THEN 0
+			ELSE [j].[Value1]
+		END, 5)
+			THEN 'y'
+		ELSE 'n'
+	END,
+	CASE
+		WHEN 0 IN (CASE
+			WHEN [j].[Value1] IS NULL THEN 0
+			ELSE [j].[Value1]
+		END, 5)
+			THEN 'y'
+		ELSE 'n'
+	END,
+	CASE
+		WHEN 0 IN (CASE
+			WHEN [j].[Value1] IS NULL THEN 0
+			ELSE [j].[Value1]
+		END, 5)
+			THEN 'y'
+		ELSE 'n'
+	END
 FROM
 	[MissedJoinEntity] [e]
 		LEFT JOIN [MissedJoinEntity] [j] ON ([j].[Id] = [e].[Id] + 1000)

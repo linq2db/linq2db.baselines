@@ -2,7 +2,10 @@
 SELECT
 	[c_1].[ParentID],
 	[c_1].[ParentID] as [ID1_1],
-	IIF([c_1].[Value1] IS NULL, 0, [c_1].[Value1]) as [ID3]
+	CASE
+		WHEN [c_1].[Value1] IS NULL THEN 0
+		ELSE [c_1].[Value1]
+	END as [ID3]
 FROM
 	[Parent] [c_1]
 UNION ALL

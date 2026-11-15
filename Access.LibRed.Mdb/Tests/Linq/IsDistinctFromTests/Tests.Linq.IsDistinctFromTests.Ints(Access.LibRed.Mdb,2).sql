@@ -7,7 +7,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] <> @value
+	[s].[Int] IS DISTINCT FROM @value
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 DECLARE @value  -- Int32
@@ -18,7 +18,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[NullableInt] IS NULL OR [s].[NullableInt] <> @value
+	[s].[NullableInt] IS DISTINCT FROM @value
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 DECLARE @value  -- Int32
@@ -29,7 +29,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] = @value
+	[s].[Int] IS NOT DISTINCT FROM @value
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 DECLARE @value  -- Int32
@@ -40,5 +40,5 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	NOT ([s].[NullableInt] IS NULL OR [s].[NullableInt] <> @value)
+	[s].[NullableInt] IS NOT DISTINCT FROM @value
 

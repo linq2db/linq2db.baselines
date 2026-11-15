@@ -5,7 +5,11 @@ SELECT
 FROM
 	(
 		SELECT
-			IIF([g_1].[A] = [g_1].[B] OR [g_1].[A] IS NULL AND [g_1].[B] IS NULL, True, False) as [Key_1]
+			CASE
+				WHEN [g_1].[A] = [g_1].[B] OR [g_1].[A] IS NULL AND [g_1].[B] IS NULL
+					THEN True
+				ELSE False
+			END as [Key_1]
 		FROM
 			[NullableFlagTable] [g_1]
 	) [g_2]

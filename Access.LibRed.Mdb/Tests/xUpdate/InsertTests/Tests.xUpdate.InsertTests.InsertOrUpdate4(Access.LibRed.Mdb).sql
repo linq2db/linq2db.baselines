@@ -36,7 +36,10 @@ SET     @id = 5
 UPDATE
 	[Patient] [t1]
 SET
-	[t1].[Diagnosis] = IIF([t1].[Diagnosis] IS NOT NULL, CStr(Len([t1].[Diagnosis]) + @i), NULL)
+	[t1].[Diagnosis] = CASE
+		WHEN [t1].[Diagnosis] IS NOT NULL THEN CStr(Len([t1].[Diagnosis]) + @i)
+		ELSE NULL
+	END
 WHERE
 	[t1].[PersonID] = @id
 
@@ -68,7 +71,10 @@ SET     @id = 5
 UPDATE
 	[Patient] [t1]
 SET
-	[t1].[Diagnosis] = IIF([t1].[Diagnosis] IS NOT NULL, CStr(Len([t1].[Diagnosis]) + @i), NULL)
+	[t1].[Diagnosis] = CASE
+		WHEN [t1].[Diagnosis] IS NOT NULL THEN CStr(Len([t1].[Diagnosis]) + @i)
+		ELSE NULL
+	END
 WHERE
 	[t1].[PersonID] = @id
 
@@ -81,7 +87,10 @@ SET     @id = 5
 UPDATE
 	[Patient] [t1]
 SET
-	[t1].[Diagnosis] = IIF([t1].[Diagnosis] IS NOT NULL, CStr(Len([t1].[Diagnosis]) + @i), NULL)
+	[t1].[Diagnosis] = CASE
+		WHEN [t1].[Diagnosis] IS NOT NULL THEN CStr(Len([t1].[Diagnosis]) + @i)
+		ELSE NULL
+	END
 WHERE
 	[t1].[PersonID] = @id
 

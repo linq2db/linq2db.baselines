@@ -1,6 +1,9 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
-	IIF([s].[Int] = 2, NULL, [s].[Int])
+	CASE
+		WHEN [s].[Int] = 2 THEN NULL
+		ELSE [s].[Int]
+	END
 FROM
 	[Src] [s]
 ORDER BY
@@ -24,7 +27,10 @@ WHERE
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
-	IIF([s].[Int] = 4, NULL, [s].[Int])
+	CASE
+		WHEN [s].[Int] = 4 THEN NULL
+		ELSE [s].[Int]
+	END
 FROM
 	[Src] [s]
 ORDER BY
@@ -70,7 +76,10 @@ FROM
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
-	IIF([s].[NullableInt] = 2, NULL, [s].[NullableInt])
+	CASE
+		WHEN [s].[NullableInt] = 2 THEN NULL
+		ELSE [s].[NullableInt]
+	END
 FROM
 	[Src] [s]
 ORDER BY
@@ -94,7 +103,10 @@ WHERE
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
-	IIF([s].[NullableInt] = 4, NULL, [s].[NullableInt])
+	CASE
+		WHEN [s].[NullableInt] = 4 THEN NULL
+		ELSE [s].[NullableInt]
+	END
 FROM
 	[Src] [s]
 ORDER BY

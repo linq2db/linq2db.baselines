@@ -1,5 +1,10 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
-SELECT TOP 30
+DECLARE @skip  -- Int32
+SET     @skip = 20
+DECLARE @take  -- Int32
+SET     @take = 10
+
+SELECT
 	[x].[Id],
 	[x].[CarNo],
 	[x].[CarSelf],
@@ -47,6 +52,7 @@ FROM
 	) [x]
 ORDER BY
 	[x].[CarNo]
+OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT

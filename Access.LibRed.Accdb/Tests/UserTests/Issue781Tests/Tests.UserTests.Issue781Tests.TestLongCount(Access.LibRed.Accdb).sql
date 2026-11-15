@@ -4,7 +4,10 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			'test' + IIF([a_Patient].[Diagnosis] IS NULL, '', [a_Patient].[Diagnosis]) as [c1]
+			'test' + CASE
+				WHEN [a_Patient].[Diagnosis] IS NULL THEN ''
+				ELSE [a_Patient].[Diagnosis]
+			END as [c1]
 		FROM
 			[Person] [t1]
 				LEFT JOIN [Patient] [a_Patient] ON ([t1].[PersonID] = [a_Patient].[PersonID])
