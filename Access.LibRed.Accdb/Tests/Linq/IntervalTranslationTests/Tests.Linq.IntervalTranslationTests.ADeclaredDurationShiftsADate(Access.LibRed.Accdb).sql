@@ -29,8 +29,8 @@ VALUES
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT TOP 2
-	DateAdd('ms', Fix(([r].[InSeconds] * 10000000 MOD 10000000) / 10000), DateAdd('s', Fix(([r].[InSeconds] * 10000000 MOD 864000000000) / 10000000), DateAdd('d', Fix(([r].[InSeconds] * 10000000) / 864000000000), #2026-03-01#))),
-	DateAdd('ms', Fix((([r].[InSeconds] * 10000000) * -1 MOD 10000000) / 10000), DateAdd('s', Fix((([r].[InSeconds] * 10000000) * -1 MOD 864000000000) / 10000000), DateAdd('d', Fix((([r].[InSeconds] * 10000000) * -1) / 864000000000), #2026-03-01#))),
+	DateAdd('ms', Fix((([r].[InSeconds] * 10000000) MOD 10000000) / 10000), DateAdd('s', Fix((([r].[InSeconds] * 10000000) MOD 864000000000) / 10000000), DateAdd('d', Fix(([r].[InSeconds] * 10000000) / 864000000000), #2026-03-01#))),
+	DateAdd('ms', Fix(((([r].[InSeconds] * 10000000) * -1) MOD 10000000) / 10000), DateAdd('s', Fix(((([r].[InSeconds] * 10000000) * -1) MOD 864000000000) / 10000000), DateAdd('d', Fix((([r].[InSeconds] * 10000000) * -1) / 864000000000), #2026-03-01#))),
 	DateAdd('ms', Fix(([r].[InTicks] MOD 10000000) / 10000), DateAdd('s', Fix(([r].[InTicks] MOD 864000000000) / 10000000), DateAdd('d', Fix([r].[InTicks] / 864000000000), #2026-03-01#)))
 FROM
 	[DurationRow] [r]

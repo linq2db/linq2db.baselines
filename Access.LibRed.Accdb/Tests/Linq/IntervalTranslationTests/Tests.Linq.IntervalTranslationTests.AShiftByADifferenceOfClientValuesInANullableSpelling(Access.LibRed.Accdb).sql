@@ -88,7 +88,7 @@ DECLARE @Ticks  -- Int64
 SET     @Ticks = 36002500000
 
 SELECT TOP 2
-	DateAdd('ms', Fix((@Ticks * -1 MOD 10000000) / 10000), DateAdd('s', Fix((@Ticks * -1 MOD 864000000000) / 10000000), DateAdd('d', Fix((@Ticks * -1) / 864000000000), [r].[DueOn])))
+	DateAdd('ms', Fix(((@Ticks * -1) MOD 10000000) / 10000), DateAdd('s', Fix(((@Ticks * -1) MOD 864000000000) / 10000000), DateAdd('d', Fix((@Ticks * -1) / 864000000000), [r].[DueOn])))
 FROM
 	[OptionalDueRow] [r]
 WHERE

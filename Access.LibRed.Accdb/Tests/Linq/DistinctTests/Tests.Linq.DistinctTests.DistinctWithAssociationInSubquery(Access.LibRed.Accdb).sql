@@ -7,16 +7,11 @@ FROM
 WHERE
 	(
 		SELECT
-			COUNT(*)
+			COUNT(DISTINCT [a_Children].[ChildID])
 		FROM
-			(
-				SELECT DISTINCT
-					[a_Children].[ChildID]
-				FROM
-					[Child] [a_Children]
-				WHERE
-					[p].[ParentID] = [a_Children].[ParentID]
-			) [t1]
+			[Child] [a_Children]
+		WHERE
+			[p].[ParentID] = [a_Children].[ParentID]
 	) > 0
 ORDER BY
 	[p].[ParentID]

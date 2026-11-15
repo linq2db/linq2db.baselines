@@ -1,72 +1,31 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
-	[g_2].[Key_1],
-	[g_2].[Simple_1],
-	[g_2].[Projection],
-	[g_2].[Filter_1],
-	[g_2].[FilterProjection],
-	(
-		SELECT
-			AVG([t1].[Distinct_1])
-		FROM
-			(
-				SELECT DISTINCT
-					[t].[DataValue] as [Distinct_1]
-				FROM
-					[AggregationData] [t]
-				WHERE
-					[t].[DataValue] IS NOT NULL AND [g_2].[Key_1] = [t].[GroupId]
-			) [t1]
-	),
-	(
-		SELECT
-			AVG([t2].[FilterDistinct1])
-		FROM
-			(
-				SELECT DISTINCT
-					[t_1].[DataValue] as [FilterDistinct1]
-				FROM
-					[AggregationData] [t_1]
-				WHERE
-					[t_1].[DataValue] IS NOT NULL AND [g_2].[Key_1] = [t_1].[GroupId] AND
-					[t_1].[DataValue] MOD 2 = 0
-			) [t2]
-	),
-	(
-		SELECT
-			AVG([t3].[FilterDistinct2])
-		FROM
-			(
-				SELECT DISTINCT
-					[t_2].[DataValue] as [FilterDistinct2]
-				FROM
-					[AggregationData] [t_2]
-				WHERE
-					[t_2].[DataValue] IS NOT NULL AND [g_2].[Key_1] = [t_2].[GroupId] AND
-					[t_2].[DataValue] MOD 2 = 0
-			) [t3]
-	)
+	[g_1].[GroupId],
+	AVG([g_1].[DataValue]),
+	AVG([g_1].[DataValue]),
+	AVG(CASE
+		WHEN [g_1].[DataValue] MOD 2 = 0 THEN [g_1].[DataValue]
+		ELSE NULL
+	END),
+	AVG(CASE
+		WHEN [g_1].[DataValue] MOD 2 = 0 THEN [g_1].[DataValue]
+		ELSE NULL
+	END),
+	AVG(DISTINCT [g_1].[DataValue]),
+	AVG(DISTINCT CASE
+		WHEN [g_1].[DataValue] MOD 2 = 0 THEN [g_1].[DataValue]
+		ELSE NULL
+	END),
+	AVG(DISTINCT CASE
+		WHEN [g_1].[DataValue] MOD 2 = 0 THEN [g_1].[DataValue]
+		ELSE NULL
+	END)
 FROM
-	(
-		SELECT
-			[g_1].[GroupId] as [Key_1],
-			AVG([g_1].[DataValue]) as [Simple_1],
-			AVG([g_1].[DataValue]) as [Projection],
-			AVG(CASE
-				WHEN [g_1].[DataValue] MOD 2 = 0 THEN [g_1].[DataValue]
-				ELSE NULL
-			END) as [Filter_1],
-			AVG(CASE
-				WHEN [g_1].[DataValue] MOD 2 = 0 THEN [g_1].[DataValue]
-				ELSE NULL
-			END) as [FilterProjection]
-		FROM
-			[AggregationData] [g_1]
-		WHERE
-			[g_1].[DataValue] IS NOT NULL
-		GROUP BY
-			[g_1].[GroupId]
-	) [g_2]
+	[AggregationData] [g_1]
+WHERE
+	[g_1].[DataValue] IS NOT NULL
+GROUP BY
+	[g_1].[GroupId]
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT

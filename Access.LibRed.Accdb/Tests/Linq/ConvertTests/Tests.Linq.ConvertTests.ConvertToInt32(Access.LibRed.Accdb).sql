@@ -5,7 +5,7 @@ FROM
 	(
 		SELECT
 			CASE
-				WHEN ABS([t].[MoneyValue] * 10 MOD 10) = 5 AND [t].[MoneyValue] MOD 2 = 2
+				WHEN ABS(([t].[MoneyValue] * 10) MOD 10) = 5 AND [t].[MoneyValue] MOD 2 = 2
 					THEN [t].[MoneyValue]
 				ELSE ROUND([t].[MoneyValue])
 			END as [c1]

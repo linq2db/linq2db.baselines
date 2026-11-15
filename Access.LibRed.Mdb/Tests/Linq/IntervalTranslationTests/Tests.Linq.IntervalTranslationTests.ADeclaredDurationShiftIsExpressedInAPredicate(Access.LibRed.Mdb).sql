@@ -33,5 +33,5 @@ SELECT
 FROM
 	[DurationRow] [r]
 WHERE
-	DateAdd('ms', Fix(([r].[InSeconds] * 10000000 MOD 10000000) / 10000), DateAdd('s', Fix(([r].[InSeconds] * 10000000 MOD 864000000000) / 10000000), DateAdd('d', Fix(([r].[InSeconds] * 10000000) / 864000000000), #2026-03-01#))) > #2026-03-01 01:00:00#
+	DateAdd('ms', Fix((([r].[InSeconds] * 10000000) MOD 10000000) / 10000), DateAdd('s', Fix((([r].[InSeconds] * 10000000) MOD 864000000000) / 10000000), DateAdd('d', Fix(([r].[InSeconds] * 10000000) / 864000000000), #2026-03-01#))) > #2026-03-01 01:00:00#
 
