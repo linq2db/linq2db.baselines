@@ -11,7 +11,7 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	? = IIF([p].[PersonID] > 1000, 'M', [p].[Gender])
+	IIF([p].[PersonID] > 1000, 'M', [p].[Gender]) = ?
 
 -- Access.Ace.Odbc AccessODBC
 SELECT
