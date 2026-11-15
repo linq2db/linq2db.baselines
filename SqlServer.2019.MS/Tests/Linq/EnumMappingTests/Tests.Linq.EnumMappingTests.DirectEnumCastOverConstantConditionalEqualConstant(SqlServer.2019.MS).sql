@@ -1,7 +1,4 @@
 ﻿-- SqlServer.2019.MS SqlServer.2019
-DECLARE @p NChar(1) -- StringFixedLength
-SET     @p = N'F'
-
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],
@@ -11,7 +8,7 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	IIF([p].[PersonID] > 2, N'M', N'F') = @p
+	[p].[PersonID] <= 2
 
 -- SqlServer.2019.MS SqlServer.2019
 SELECT

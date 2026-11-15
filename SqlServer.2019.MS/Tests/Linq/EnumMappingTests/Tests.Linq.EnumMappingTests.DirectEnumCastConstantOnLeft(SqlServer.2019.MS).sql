@@ -1,7 +1,4 @@
 ﻿-- SqlServer.2019.MS SqlServer.2019
-DECLARE @Gender Char(1) -- AnsiStringFixedLength
-SET     @Gender = N'F'
-
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],
@@ -11,7 +8,7 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	@Gender = [p].[Gender]
+	'F' = [p].[Gender]
 
 -- SqlServer.2019.MS SqlServer.2019
 SELECT
