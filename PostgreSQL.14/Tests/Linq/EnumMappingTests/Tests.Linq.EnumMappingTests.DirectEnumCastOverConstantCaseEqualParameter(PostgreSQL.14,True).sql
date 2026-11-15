@@ -11,11 +11,11 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	:gender = CASE
+	CASE
 		WHEN p."PersonID" > 3 THEN 'M'
 		WHEN p."PersonID" > 2 THEN 'O'
 		ELSE 'F'
-	END
+	END = :gender
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
