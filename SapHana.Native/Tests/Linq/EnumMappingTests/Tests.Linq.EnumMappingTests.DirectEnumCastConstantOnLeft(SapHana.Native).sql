@@ -1,7 +1,4 @@
 ﻿-- SapHana.Native SapHana
-DECLARE @Gender VarChar(1) -- AnsiStringFixedLength
-SET     @Gender = 'F'
-
 SELECT
 	"p"."FirstName",
 	"p"."PersonID",
@@ -11,7 +8,7 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	:"Gender" = "p"."Gender"
+	'F' = "p"."Gender"
 
 -- SapHana.Native SapHana
 SELECT

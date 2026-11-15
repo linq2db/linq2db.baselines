@@ -11,10 +11,10 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	? = CASE
+	CASE
 		WHEN "p"."PersonID" > 2 THEN 'M'
 		ELSE 'F'
-	END
+	END = ?
 
 -- SapHana.Odbc SapHanaOdbc
 SELECT

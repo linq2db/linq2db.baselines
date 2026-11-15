@@ -11,10 +11,10 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	? = CASE
+	CASE
 		WHEN "p"."PersonID" > 1000 THEN 'M'
 		ELSE "p"."Gender"
-	END
+	END = ?
 
 -- SapHana.Odbc SapHanaOdbc
 SELECT
