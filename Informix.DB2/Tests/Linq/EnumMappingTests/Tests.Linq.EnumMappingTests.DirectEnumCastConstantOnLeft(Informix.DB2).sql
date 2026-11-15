@@ -1,7 +1,4 @@
 ﻿-- Informix.DB2 Informix
-DECLARE @Gender Char(1) -- StringFixedLength
-SET     @Gender = 'F'
-
 SELECT
 	p.FirstName,
 	p.PersonID,
@@ -11,7 +8,7 @@ SELECT
 FROM
 	Person p
 WHERE
-	@Gender = p.Gender
+	'F' = p.Gender
 
 -- Informix.DB2 Informix
 SELECT

@@ -1,7 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-DECLARE @Gender Char(1) -- StringFixedLength
-SET     @Gender = 'F'
-
 SELECT
 	"p"."FirstName",
 	"p"."PersonID",
@@ -11,7 +8,7 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	@Gender = "p"."Gender"
+	'F' = "p"."Gender"
 
 -- DB2 DB2.LUW DB2LUW
 SELECT

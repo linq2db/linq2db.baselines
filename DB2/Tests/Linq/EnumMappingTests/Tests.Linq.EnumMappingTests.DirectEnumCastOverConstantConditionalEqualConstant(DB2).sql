@@ -1,7 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-DECLARE @p Char(1) -- StringFixedLength
-SET     @p = 'F'
-
 SELECT
 	"p"."FirstName",
 	"p"."PersonID",
@@ -11,10 +8,7 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	CASE
-		WHEN "p"."PersonID" > 2 THEN 'M'
-		ELSE 'F'
-	END = @p
+	"p"."PersonID" <= 2
 
 -- DB2 DB2.LUW DB2LUW
 SELECT
