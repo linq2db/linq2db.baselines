@@ -11,7 +11,7 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	@gender = IIF([p].[PersonID] > 2, 'M', 'F')
+	IIF([p].[PersonID] > 2, 'M', 'F') = @gender
 
 -- Access.Ace.OleDb AccessOleDb
 SELECT
