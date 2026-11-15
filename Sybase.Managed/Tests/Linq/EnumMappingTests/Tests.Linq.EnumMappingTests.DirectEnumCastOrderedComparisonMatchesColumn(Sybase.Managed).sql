@@ -1,0 +1,20 @@
+﻿-- Sybase.Managed Sybase
+SELECT
+	[p].[PersonID]
+FROM
+	[Person] [p]
+WHERE
+	[p].[Gender] > 'F'
+ORDER BY
+	[p].[PersonID]
+
+-- Sybase.Managed Sybase
+SELECT
+	[p].[PersonID]
+FROM
+	[Person] [p]
+WHERE
+	[p].[Gender] > 'F'
+ORDER BY
+	[p].[PersonID]
+

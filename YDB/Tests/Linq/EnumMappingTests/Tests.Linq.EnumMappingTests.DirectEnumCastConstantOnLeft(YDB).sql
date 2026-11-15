@@ -1,7 +1,4 @@
 ﻿-- YDB Ydb
-DECLARE Gender Text(1) -- AnsiStringFixedLength
-SET     Gender = 'F'u
-
 SELECT
 	p.FirstName as FirstName,
 	p.PersonID as PersonID,
@@ -11,7 +8,7 @@ SELECT
 FROM
 	Person p
 WHERE
-	$Gender = p.Gender
+	'F'u = p.Gender
 
 -- YDB Ydb
 SELECT

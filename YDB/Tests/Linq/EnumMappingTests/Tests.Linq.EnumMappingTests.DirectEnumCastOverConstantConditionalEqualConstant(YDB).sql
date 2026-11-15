@@ -1,7 +1,4 @@
 ﻿-- YDB Ydb
-DECLARE p Text(1) -- StringFixedLength
-SET     p = 'F'u
-
 SELECT
 	p.FirstName as FirstName,
 	p.PersonID as PersonID,
@@ -11,10 +8,7 @@ SELECT
 FROM
 	Person p
 WHERE
-	CASE
-		WHEN p.PersonID > 2 THEN 'M'u
-		ELSE 'F'u
-	END = $p
+	p.PersonID <= 2
 
 -- YDB Ydb
 SELECT

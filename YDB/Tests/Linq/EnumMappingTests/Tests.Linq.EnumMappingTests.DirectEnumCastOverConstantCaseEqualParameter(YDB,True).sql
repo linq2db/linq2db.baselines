@@ -11,11 +11,11 @@ SELECT
 FROM
 	Person p
 WHERE
-	$gender = CASE
+	CASE
 		WHEN p.PersonID > 3 THEN 'M'u
 		WHEN p.PersonID > 2 THEN 'O'u
 		ELSE 'F'u
-	END
+	END = $gender
 
 -- YDB Ydb
 SELECT

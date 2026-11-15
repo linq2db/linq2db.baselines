@@ -1,7 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-DECLARE @Gender Char(1) -- AnsiStringFixedLength
-SET     @Gender = 'F'
-
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],
@@ -11,7 +8,7 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	@Gender = [p].[Gender]
+	'F' = [p].[Gender]
 
 -- Sybase.Managed Sybase
 SELECT
