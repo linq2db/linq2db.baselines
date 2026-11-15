@@ -11,10 +11,10 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	@gender = CASE
+	CASE
 		WHEN [p].[PersonID] > 1000 THEN 'M'
 		ELSE [p].[Gender]
-	END
+	END = @gender
 
 -- SqlServer.2005.MS SqlServer.2005
 SELECT
