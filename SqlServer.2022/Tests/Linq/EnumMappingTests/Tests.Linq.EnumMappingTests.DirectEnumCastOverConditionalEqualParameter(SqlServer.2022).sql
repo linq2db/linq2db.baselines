@@ -11,7 +11,7 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	@gender = IIF([p].[PersonID] > 1000, 'M', [p].[Gender])
+	IIF([p].[PersonID] > 1000, 'M', [p].[Gender]) = @gender
 
 -- SqlServer.2022
 SELECT
