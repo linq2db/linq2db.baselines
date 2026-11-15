@@ -125,7 +125,7 @@ SET     $FieldDecimal = 12345678.9012345678
 DECLARE $FieldDate TIMESTAMP -- DateTime2
 SET     $FieldDate = '2000-11-23 00:00:00.000000'::TIMESTAMP
 DECLARE $FieldTime TIME -- Time
-SET     $FieldTime = '09:44:34.000432'::TIME
+SET     $FieldTime = '09:44:34.653432'::TIME
 DECLARE $FieldEnumString NVarChar(5) -- String
 SET     $FieldEnumString = 'FIRST'
 DECLARE $FieldEnumNumber INTEGER -- Int32
@@ -212,7 +212,7 @@ SET     $FieldDecimal = -99999999.9999999999
 DECLARE $FieldDate TIMESTAMP -- DateTime2
 SET     $FieldDate = '2123-11-23 00:00:00.000000'::TIMESTAMP
 DECLARE $FieldTime TIME -- Time
-SET     $FieldTime = '00:44:34.000432'::TIME
+SET     $FieldTime = '00:44:34.641432'::TIME
 DECLARE $FieldEnumString NVarChar(1) -- String
 SET     $FieldEnumString = ''
 DECLARE $FieldEnumNumber INTEGER -- Int32
@@ -383,7 +383,7 @@ SET     $FieldDecimal = -0.123
 DECLARE $FieldDate TIMESTAMP -- DateTime2
 SET     $FieldDate = '2111-11-23 00:00:00.000000'::TIMESTAMP
 DECLARE $FieldTime TIME -- Time
-SET     $FieldTime = '23:59:59.000999'::TIME
+SET     $FieldTime = '23:59:59.999999'::TIME
 DECLARE $FieldEnumString NVarChar -- String
 SET     $FieldEnumString = NULL
 DECLARE $FieldEnumNumber INTEGER -- Int32
@@ -470,7 +470,7 @@ SET     $FieldDecimal = -99999999.9999999999
 DECLARE $FieldDate TIMESTAMP -- DateTime2
 SET     $FieldDate = '2123-11-23 00:00:00.000000'::TIMESTAMP
 DECLARE $FieldTime TIME -- Time
-SET     $FieldTime = '14:44:33'::TIME
+SET     $FieldTime = '14:44:33.234000'::TIME
 DECLARE $FieldEnumString NVarChar(1) -- String
 SET     $FieldEnumString = ''
 DECLARE $FieldEnumNumber INTEGER -- Int32
@@ -555,7 +555,7 @@ SET     $FieldDecimal = -0.123
 DECLARE $FieldDate TIMESTAMP -- DateTime2
 SET     $FieldDate = '2010-11-23 00:00:00.000000'::TIMESTAMP
 DECLARE $FieldTime TIME -- Time
-SET     $FieldTime = '23:59:59.000999'::TIME
+SET     $FieldTime = '23:59:59.999999'::TIME
 DECLARE $FieldEnumString NVarChar -- String
 SET     $FieldEnumString = NULL
 DECLARE $FieldEnumNumber INTEGER -- Int32
