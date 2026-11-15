@@ -11,11 +11,11 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	@gender = CASE
+	CASE
 		WHEN `p`.`PersonID` > 3 THEN 'M'
 		WHEN `p`.`PersonID` > 2 THEN 'O'
 		ELSE 'F'
-	END
+	END = @gender
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 SELECT

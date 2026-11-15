@@ -1,7 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @Gender String(1) -- AnsiStringFixedLength
-SET     @Gender = 'F'
-
 SELECT
 	`p`.`FirstName`,
 	`p`.`PersonID`,
@@ -11,7 +8,7 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	@Gender = `p`.`Gender`
+	'F' = `p`.`Gender`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 SELECT

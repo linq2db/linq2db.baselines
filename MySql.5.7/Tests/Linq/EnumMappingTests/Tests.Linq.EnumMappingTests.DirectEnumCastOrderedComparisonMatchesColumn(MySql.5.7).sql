@@ -1,0 +1,20 @@
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
+SELECT
+	`p`.`PersonID`
+FROM
+	`Person` `p`
+WHERE
+	`p`.`Gender` > 'F'
+ORDER BY
+	`p`.`PersonID`
+
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57
+SELECT
+	`p`.`PersonID`
+FROM
+	`Person` `p`
+WHERE
+	`p`.`Gender` > 'F'
+ORDER BY
+	`p`.`PersonID`
+

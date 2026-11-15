@@ -1,7 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-DECLARE @p String(1) -- StringFixedLength
-SET     @p = 'F'
-
 SELECT
 	`p`.`FirstName`,
 	`p`.`PersonID`,
@@ -11,10 +8,7 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	CASE
-		WHEN `p`.`PersonID` > 2 THEN 'M'
-		ELSE 'F'
-	END = @p
+	`p`.`PersonID` <= 2
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 SELECT

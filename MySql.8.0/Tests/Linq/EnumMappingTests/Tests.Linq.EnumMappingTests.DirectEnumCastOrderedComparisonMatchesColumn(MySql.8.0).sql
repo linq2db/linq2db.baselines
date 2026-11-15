@@ -1,0 +1,20 @@
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
+SELECT
+	`p`.`PersonID`
+FROM
+	`Person` `p`
+WHERE
+	`p`.`Gender` > 'F'
+ORDER BY
+	`p`.`PersonID`
+
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80
+SELECT
+	`p`.`PersonID`
+FROM
+	`Person` `p`
+WHERE
+	`p`.`Gender` > 'F'
+ORDER BY
+	`p`.`PersonID`
+

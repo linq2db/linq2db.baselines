@@ -11,11 +11,11 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	@gender = CASE
+	CASE
 		WHEN `p`.`PersonID` > 3 THEN 'M'
 		WHEN `p`.`PersonID` > 2 THEN 'O'
 		ELSE 'F'
-	END
+	END = @gender
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 SELECT

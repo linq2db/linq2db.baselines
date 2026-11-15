@@ -1,7 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @p String(1) -- StringFixedLength
-SET     @p = 'F'
-
 SELECT
 	`p`.`FirstName`,
 	`p`.`PersonID`,
@@ -11,10 +8,7 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	CASE
-		WHEN `p`.`PersonID` > 2 THEN 'M'
-		ELSE 'F'
-	END = @p
+	`p`.`PersonID` <= 2
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 SELECT

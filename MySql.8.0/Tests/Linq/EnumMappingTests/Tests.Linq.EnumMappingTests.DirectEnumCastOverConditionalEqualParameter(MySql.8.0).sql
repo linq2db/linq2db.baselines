@@ -11,10 +11,10 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	@gender = CASE
+	CASE
 		WHEN `p`.`PersonID` > 1000 THEN 'M'
 		ELSE `p`.`Gender`
-	END
+	END = @gender
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 SELECT
