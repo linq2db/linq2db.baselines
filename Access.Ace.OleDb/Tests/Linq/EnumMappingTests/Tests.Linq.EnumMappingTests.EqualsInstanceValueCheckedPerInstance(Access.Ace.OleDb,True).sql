@@ -9,3 +9,10 @@ FROM
 WHERE
 	[r].[Gender] = @Value
 
+-- Access.Ace.OleDb AccessOleDb
+SELECT
+	[t1].[Id],
+	[t1].[Gender]
+FROM
+	[ConvertedGenderRow] [t1]
+
