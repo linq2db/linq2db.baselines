@@ -9,3 +9,10 @@ FROM
 WHERE
 	[r].[Gender] = @Value
 
+-- Access.LibRed.Mdb Access.LibRed AccessLibRed
+SELECT
+	[t1].[Id],
+	[t1].[Gender]
+FROM
+	[ConvertedGenderRow] [t1]
+
