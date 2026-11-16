@@ -10,3 +10,13 @@ FROM
 WHERE
 	(("p"."PersonID" + 1) - BITAND("p"."PersonID", 1) * 2 + 2) - BITAND(("p"."PersonID" + 1) - BITAND("p"."PersonID", 1) * 2, 2) = 3
 
+-- SapHana.Native SapHana
+SELECT
+	"t1"."FirstName",
+	"t1"."PersonID",
+	"t1"."LastName",
+	"t1"."MiddleName",
+	"t1"."Gender"
+FROM
+	"Person" "t1"
+
