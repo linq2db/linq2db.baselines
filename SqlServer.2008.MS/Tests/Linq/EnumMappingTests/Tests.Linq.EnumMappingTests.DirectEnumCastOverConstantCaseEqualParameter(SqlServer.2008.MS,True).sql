@@ -11,11 +11,11 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	@gender = CASE
+	CASE
 		WHEN [p].[PersonID] > 3 THEN N'M'
 		WHEN [p].[PersonID] > 2 THEN N'O'
 		ELSE N'F'
-	END
+	END = @gender
 
 -- SqlServer.2008.MS SqlServer.2008
 SELECT

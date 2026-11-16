@@ -1,7 +1,4 @@
 ﻿-- SqlServer.2008
-DECLARE @p NChar(1) -- StringFixedLength
-SET     @p = N'F'
-
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],
@@ -11,10 +8,7 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	CASE
-		WHEN [p].[PersonID] > 2 THEN N'M'
-		ELSE N'F'
-	END = @p
+	[p].[PersonID] <= 2
 
 -- SqlServer.2008
 SELECT
