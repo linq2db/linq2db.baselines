@@ -6,3 +6,10 @@ FROM
 WHERE
 	r.Gender = 'Female'
 
+-- ClickHouse.Driver ClickHouse
+SELECT
+	t1.Id,
+	t1.Gender
+FROM
+	ConvertedGenderRow t1
+
