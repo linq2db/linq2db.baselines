@@ -9,3 +9,10 @@ FROM
 WHERE
 	`r`.`Gender` = @Value
 
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+SELECT
+	`t1`.`Id`,
+	`t1`.`Gender`
+FROM
+	`ConvertedGenderRow` `t1`
+
