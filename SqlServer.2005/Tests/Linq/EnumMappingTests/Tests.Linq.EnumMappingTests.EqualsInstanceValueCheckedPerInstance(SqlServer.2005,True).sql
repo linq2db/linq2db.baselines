@@ -9,3 +9,10 @@ FROM
 WHERE
 	[r].[Gender] = @Value
 
+-- SqlServer.2005
+SELECT
+	[t1].[Id],
+	[t1].[Gender]
+FROM
+	[ConvertedGenderRow] [t1]
+
