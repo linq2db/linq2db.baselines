@@ -9,3 +9,10 @@ FROM
 WHERE
 	[r].[Gender] = ?
 
+-- Access.Jet.Odbc AccessODBC
+SELECT
+	[t1].[Id],
+	[t1].[Gender]
+FROM
+	[ConvertedGenderRow] [t1]
+
