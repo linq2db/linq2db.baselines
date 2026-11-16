@@ -9,3 +9,10 @@ FROM
 WHERE
 	r.Gender = @Value
 
+-- Informix.DB2 Informix
+SELECT
+	t1.Id,
+	t1.Gender
+FROM
+	ConvertedGenderRow t1
+
