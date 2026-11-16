@@ -1,6 +1,6 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
-	Power([p].[ID] * 2, 2)
+	([p].[ID] * 2) ^ 2
 FROM
 	[LinqDataTypes] [p]
 ORDER BY
@@ -21,7 +21,7 @@ FROM
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
-	Power([p].[ID] + 1, 2)
+	([p].[ID] + 1) ^ 2
 FROM
 	[LinqDataTypes] [p]
 ORDER BY
@@ -42,7 +42,7 @@ FROM
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
-	Power(100 - [p].[ID], 2)
+	(100 - [p].[ID]) ^ 2
 FROM
 	[LinqDataTypes] [p]
 ORDER BY
@@ -63,7 +63,7 @@ FROM
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
-	Power(-[p].[ID], 2)
+	(-[p].[ID]) ^ 2
 FROM
 	[LinqDataTypes] [p]
 ORDER BY
@@ -84,7 +84,7 @@ FROM
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
-	-Power([p].[ID], 2)
+	-[p].[ID] ^ 2
 FROM
 	[LinqDataTypes] [p]
 ORDER BY

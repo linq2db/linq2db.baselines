@@ -4,10 +4,10 @@ SELECT
 FROM
 	(
 		SELECT
-			Int([p].[MoneyValue] * Power(10, 1) + CASE
+			Int([p].[MoneyValue] * 10 ^ 1 + CASE
 				WHEN [p].[MoneyValue] >= 0 THEN 0.5
 				ELSE -0.5
-			END) / Power(10, 1) as [c1]
+			END) / 10 ^ 1 as [c1]
 		FROM
 			[LinqDataTypes] [p]
 	) [t]

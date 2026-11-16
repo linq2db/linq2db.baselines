@@ -4,7 +4,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Int(Power([p].[MoneyValue], 3)) as [Value_1]
+			Int([p].[MoneyValue] ^ 3) as [Value_1]
 		FROM
 			[LinqDataTypes] [p]
 	) [t]

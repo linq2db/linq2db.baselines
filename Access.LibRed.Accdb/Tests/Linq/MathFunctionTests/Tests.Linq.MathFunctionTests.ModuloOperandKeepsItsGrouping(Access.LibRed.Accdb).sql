@@ -107,7 +107,7 @@ FROM
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
-	Power([p].[ID] MOD 3, 2)
+	([p].[ID] MOD 3) ^ 2
 FROM
 	[LinqDataTypes] [p]
 ORDER BY
@@ -128,7 +128,7 @@ FROM
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
-	Power(2, [p].[ID] MOD 3)
+	2 ^ ([p].[ID] MOD 3)
 FROM
 	[LinqDataTypes] [p]
 ORDER BY
