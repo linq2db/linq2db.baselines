@@ -9,3 +9,10 @@ FROM
 WHERE
 	r."Gender" = :Value
 
+-- Oracle.12.Managed Oracle.Managed Oracle12
+SELECT
+	t1."Id",
+	t1."Gender"
+FROM
+	"ConvertedGenderRow" t1
+
