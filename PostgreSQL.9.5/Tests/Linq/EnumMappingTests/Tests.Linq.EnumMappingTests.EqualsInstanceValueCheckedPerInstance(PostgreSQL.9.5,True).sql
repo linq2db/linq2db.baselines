@@ -9,3 +9,10 @@ FROM
 WHERE
 	r."Gender" = :Value
 
+-- PostgreSQL.9.5 PostgreSQL
+SELECT
+	t1."Id",
+	t1."Gender"
+FROM
+	"ConvertedGenderRow" t1
+
