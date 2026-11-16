@@ -9,3 +9,10 @@ FROM
 WHERE
 	r.Gender = $Value
 
+-- YDB Ydb
+SELECT
+	t1.Id as Id,
+	t1.Gender as Gender
+FROM
+	ConvertedGenderRow t1
+
