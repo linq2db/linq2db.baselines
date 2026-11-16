@@ -105,27 +105,6 @@ FROM
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 SELECT
-	Power(-2, CAST(`p`.`ID` % 3 + 1 AS DECIMAL(29, 10)))
-FROM
-	`LinqDataTypes` `p`
-ORDER BY
-	`p`.`ID`
-
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-SELECT
-	`t1`.`ID`,
-	`t1`.`MoneyValue`,
-	`t1`.`DateTimeValue`,
-	`t1`.`BoolValue`,
-	`t1`.`GuidValue`,
-	`t1`.`BinaryValue`,
-	`t1`.`SmallIntValue`,
-	`t1`.`StringValue`
-FROM
-	`LinqDataTypes` `t1`
-
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-SELECT
 	Power(CAST(`p`.`ID` AS DECIMAL(29, 10)), -1)
 FROM
 	`LinqDataTypes` `p`
