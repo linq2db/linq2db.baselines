@@ -9,3 +9,10 @@ FROM
 WHERE
 	"r"."Gender" = @Value
 
+-- Firebird.2.5 Firebird
+SELECT
+	"t1"."Id",
+	"t1"."Gender"
+FROM
+	"ConvertedGenderRow" "t1"
+
