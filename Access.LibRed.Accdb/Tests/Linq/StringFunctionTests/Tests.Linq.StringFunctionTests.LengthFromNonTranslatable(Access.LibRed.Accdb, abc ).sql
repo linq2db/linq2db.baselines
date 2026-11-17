@@ -2,7 +2,10 @@
 SELECT
 	[t].[Str],
 	Len([t].[Str]),
-	'original-' + IIF([t].[Str] IS NULL, '', [t].[Str])
+	'original-' + CASE
+		WHEN [t].[Str] IS NULL THEN ''
+		ELSE [t].[Str]
+	END
 FROM
 	[TestLengthModel] [t]
 

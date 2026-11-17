@@ -30,11 +30,16 @@ WHERE
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
-	COUNT(*) > 0
-FROM
-	[PlainAndConvertedUnicodeRow] [r]
-WHERE
-	([r].[Plain] + [r].[Conv]) = 'A-x:n1'
+	CASE
+		WHEN 'A-x:n1' IN (
+			SELECT
+				[r].[Plain] + [r].[Conv]
+			FROM
+				[PlainAndConvertedUnicodeRow] [r]
+		)
+			THEN True
+		ELSE False
+	END
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT

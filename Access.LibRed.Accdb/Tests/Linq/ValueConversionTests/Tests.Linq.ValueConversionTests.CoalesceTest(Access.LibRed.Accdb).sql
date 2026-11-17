@@ -1,6 +1,9 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
-	IIF([t1].[EnumNullable] IS NULL, [t1].[Enum], [t1].[EnumNullable])
+	CASE
+		WHEN [t1].[EnumNullable] IS NULL THEN [t1].[Enum]
+		ELSE [t1].[EnumNullable]
+	END
 FROM
 	[ValueConversion] [t1]
 

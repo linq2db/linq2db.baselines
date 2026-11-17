@@ -1,8 +1,10 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
+DECLARE @take  -- Int32
+SET     @take = 10
 DECLARE @pattern NVarChar(3) -- String
 SET     @pattern = '%1%'
 
-SELECT TOP 10
+SELECT TOP @take
 	[t1].[FirstName]
 FROM
 	(

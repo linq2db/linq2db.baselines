@@ -1,22 +1,24 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
-	IIF([t3].[x] < 0, 9, [t3].[x] + 8),
+	CASE
+		WHEN [t3].[x] < 0 THEN 9
+		ELSE [t3].[x] + 8
+	END,
 	[t3].[x] + [t3].[x]
 FROM
 	(
 		SELECT
-			IIF([t2].[x] IS NULL, 0, [t2].[x]) as [x]
+			CASE
+				WHEN [t2].[x] IS NULL THEN 0
+				ELSE [t2].[x]
+			END as [x]
 		FROM
-			(
-				SELECT
-					(
-						SELECT
-							SUM([t1].[MoneyValue])
-						FROM
-							[LinqDataTypes] [t1]
-					) as [x]
-				FROM
-					[LinqDataTypes] [q]
-			) [t2]
+			[LinqDataTypes] [q]
+				LEFT JOIN (
+					SELECT
+						SUM([t1].[MoneyValue]) as [x]
+					FROM
+						[LinqDataTypes] [t1]
+				) [t2] ON 1=1
 	) [t3]
 

@@ -12,7 +12,10 @@ SELECT
 FROM
 	[ComputedDecimalRow] [r]
 WHERE
-	IIF([r].[Id] > 0, [r].[Fine], -[r].[Fine]) = 1.000000000005
+	CASE
+		WHEN [r].[Id] > 0 THEN [r].[Fine]
+		ELSE -[r].[Fine]
+	END = 1.000000000005
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
@@ -43,7 +46,10 @@ SELECT
 FROM
 	[ComputedDecimalRow] [r]
 WHERE
-	IIF([r].[Id] > 0, [r].[Wide], -[r].[Wide]) = 12345678901234.50
+	CASE
+		WHEN [r].[Id] > 0 THEN [r].[Wide]
+		ELSE -[r].[Wide]
+	END = 12345678901234.50
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT

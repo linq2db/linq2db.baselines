@@ -13,8 +13,14 @@ FROM
 			[gr].[ParentID] < 4
 		UNION ALL
 		SELECT
-			IIF([g_1].[ParentID] IS NULL, 0, [g_1].[ParentID]) as [Key_1],
-			IIF([g_1].[GrandChildID] IS NULL, 0, [g_1].[GrandChildID]) as [ChildID]
+			CASE
+				WHEN [g_1].[ParentID] IS NULL THEN 0
+				ELSE [g_1].[ParentID]
+			END as [Key_1],
+			CASE
+				WHEN [g_1].[GrandChildID] IS NULL THEN 0
+				ELSE [g_1].[GrandChildID]
+			END as [ChildID]
 		FROM
 			[GrandChild] [g_1]
 		WHERE

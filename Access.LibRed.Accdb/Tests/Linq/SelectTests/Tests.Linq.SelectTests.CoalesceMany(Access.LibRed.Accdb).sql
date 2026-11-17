@@ -1,13 +1,67 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
-	IIF([t].[Nullable1] IS NULL, IIF([t].[Nullable2] IS NULL, IIF([t].[Nullable3] IS NULL, [t].[Id], [t].[Nullable3]), [t].[Nullable2]), [t].[Nullable1]),
-	IIF([t].[Nullable2] IS NULL, IIF([t].[Nullable1] IS NULL, IIF([t].[Nullable3] IS NULL, [t].[Id], [t].[Nullable3]), [t].[Nullable1]), [t].[Nullable2]),
-	IIF([t].[Nullable2] IS NULL, IIF([t].[Nullable3] IS NULL, IIF([t].[Nullable1] IS NULL, [t].[Id], [t].[Nullable1]), [t].[Nullable3]), [t].[Nullable2]),
-	IIF([t].[Nullable3] IS NULL, IIF([t].[Nullable1] IS NULL, IIF([t].[Nullable2] IS NULL, [t].[Id], [t].[Nullable2]), [t].[Nullable1]), [t].[Nullable3]),
-	IIF([t].[Nullable3] IS NULL, IIF([t].[Nullable2] IS NULL, IIF([t].[Nullable1] IS NULL, [t].[Id], [t].[Nullable1]), [t].[Nullable2]), [t].[Nullable3]),
+	CASE
+		WHEN [t].[Nullable1] IS NULL THEN CASE
+			WHEN [t].[Nullable2] IS NULL THEN CASE
+				WHEN [t].[Nullable3] IS NULL THEN [t].[Id]
+				ELSE [t].[Nullable3]
+			END
+			ELSE [t].[Nullable2]
+		END
+		ELSE [t].[Nullable1]
+	END,
+	CASE
+		WHEN [t].[Nullable2] IS NULL THEN CASE
+			WHEN [t].[Nullable1] IS NULL THEN CASE
+				WHEN [t].[Nullable3] IS NULL THEN [t].[Id]
+				ELSE [t].[Nullable3]
+			END
+			ELSE [t].[Nullable1]
+		END
+		ELSE [t].[Nullable2]
+	END,
+	CASE
+		WHEN [t].[Nullable2] IS NULL THEN CASE
+			WHEN [t].[Nullable3] IS NULL THEN CASE
+				WHEN [t].[Nullable1] IS NULL THEN [t].[Id]
+				ELSE [t].[Nullable1]
+			END
+			ELSE [t].[Nullable3]
+		END
+		ELSE [t].[Nullable2]
+	END,
+	CASE
+		WHEN [t].[Nullable3] IS NULL THEN CASE
+			WHEN [t].[Nullable1] IS NULL THEN CASE
+				WHEN [t].[Nullable2] IS NULL THEN [t].[Id]
+				ELSE [t].[Nullable2]
+			END
+			ELSE [t].[Nullable1]
+		END
+		ELSE [t].[Nullable3]
+	END,
+	CASE
+		WHEN [t].[Nullable3] IS NULL THEN CASE
+			WHEN [t].[Nullable2] IS NULL THEN CASE
+				WHEN [t].[Nullable1] IS NULL THEN [t].[Id]
+				ELSE [t].[Nullable1]
+			END
+			ELSE [t].[Nullable2]
+		END
+		ELSE [t].[Nullable3]
+	END,
 	[t].[Id],
-	IIF([t].[Nullable1] IS NULL, [t].[Id], [t].[Nullable1]),
-	IIF([t].[Nullable1] IS NULL, IIF([t].[Nullable2] IS NULL, [t].[Id], [t].[Nullable2]), [t].[Nullable1])
+	CASE
+		WHEN [t].[Nullable1] IS NULL THEN [t].[Id]
+		ELSE [t].[Nullable1]
+	END,
+	CASE
+		WHEN [t].[Nullable1] IS NULL THEN CASE
+			WHEN [t].[Nullable2] IS NULL THEN [t].[Id]
+			ELSE [t].[Nullable2]
+		END
+		ELSE [t].[Nullable1]
+	END
 FROM
 	[CoalesceNullableFields] [t]
 

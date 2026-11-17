@@ -1,23 +1,27 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
-SELECT DISTINCT
+SELECT
+	CStr('Discriminator') as [c1],
 	[a_Book].[Discriminator],
-	[a_Book].[BookName]
+	[a_Book].[BookName],
+	[a_Book].[BookName] as [BookName_1]
 FROM
 	([Author] [t1]
 		INNER JOIN [BookAuthor] [b] ON ([b].[FkAuthorId] = [t1].[AuthorId]))
 		LEFT JOIN [Book] [a_Book] ON ([b].[FkBookId] = [a_Book].[BookId])
 WHERE
-	[a_Book].[Discriminator] = 'Roman' AND EXISTS(
-		SELECT
-			*
-		FROM
-			([Author] [t2]
-				INNER JOIN [BookAuthor] [b_1] ON ([b_1].[FkAuthorId] = [t2].[AuthorId]))
-				LEFT JOIN [Book] [a_Book_1] ON ([b_1].[FkBookId] = [a_Book_1].[BookId])
-		WHERE
-			[a_Book_1].[Discriminator] = 'Novel' AND ([a_Book].[Discriminator] = [a_Book_1].[Discriminator] OR [a_Book].[Discriminator] IS NULL AND [a_Book_1].[Discriminator] IS NULL) AND
-			([a_Book].[BookName] = [a_Book_1].[BookName] OR [a_Book].[BookName] IS NULL AND [a_Book_1].[BookName] IS NULL)
-	)
+	[a_Book].[Discriminator] = 'Roman'
+INTERSECT
+SELECT
+	CStr('Discriminator') as [c1],
+	[a_Book_1].[Discriminator],
+	[a_Book_1].[BookName],
+	[a_Book_1].[BookName] as [BookName_1]
+FROM
+	([Author] [t2]
+		INNER JOIN [BookAuthor] [b_1] ON ([b_1].[FkAuthorId] = [t2].[AuthorId]))
+		LEFT JOIN [Book] [a_Book_1] ON ([b_1].[FkBookId] = [a_Book_1].[BookId])
+WHERE
+	[a_Book_1].[Discriminator] = 'Novel'
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT

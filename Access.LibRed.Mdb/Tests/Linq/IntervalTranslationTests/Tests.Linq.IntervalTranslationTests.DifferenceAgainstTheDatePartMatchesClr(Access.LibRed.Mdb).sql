@@ -21,7 +21,7 @@ VALUES
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT TOP 2
-	DateDiff('h', DateValue([r].[FinishedOn]), [r].[FinishedOn]) + (CDbl(DateDiff('d', DateAdd('h', DateDiff('h', DateValue([r].[FinishedOn]), [r].[FinishedOn]), DateValue([r].[FinishedOn])), [r].[FinishedOn])) * 86400 + DateDiff('s', DateAdd('d', DateDiff('d', DateAdd('h', DateDiff('h', DateValue([r].[FinishedOn]), [r].[FinishedOn]), DateValue([r].[FinishedOn])), [r].[FinishedOn]), DateAdd('h', DateDiff('h', DateValue([r].[FinishedOn]), [r].[FinishedOn]), DateValue([r].[FinishedOn]))), [r].[FinishedOn])) / 3600
+	DateDiff_Big('h', DateValue([r].[FinishedOn]), [r].[FinishedOn]) + DateDiff_Big('ms', DateAdd('h', DateDiff_Big('h', DateValue([r].[FinishedOn]), [r].[FinishedOn]), DateValue([r].[FinishedOn])), [r].[FinishedOn]) / 3600000
 FROM
 	[EventRow] [r]
 

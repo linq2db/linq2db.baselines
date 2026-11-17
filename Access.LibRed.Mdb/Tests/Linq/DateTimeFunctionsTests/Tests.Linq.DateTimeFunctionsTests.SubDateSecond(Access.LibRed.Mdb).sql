@@ -1,6 +1,6 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
-	CDbl(DateDiff('d', [t].[DateTimeValue], DateAdd('n', 100, [t].[DateTimeValue]))) * 86400 + DateDiff('s', DateAdd('d', DateDiff('d', [t].[DateTimeValue], DateAdd('n', 100, [t].[DateTimeValue])), [t].[DateTimeValue]), DateAdd('n', 100, [t].[DateTimeValue]))
+	DateDiff_Big('s', [t].[DateTimeValue], DateAdd('n', 100, [t].[DateTimeValue])) + DateDiff_Big('ms', DateAdd('s', DateDiff_Big('s', [t].[DateTimeValue], DateAdd('n', 100, [t].[DateTimeValue])), [t].[DateTimeValue]), DateAdd('n', 100, [t].[DateTimeValue])) / 1000
 FROM
 	[LinqDataTypes] [t]
 

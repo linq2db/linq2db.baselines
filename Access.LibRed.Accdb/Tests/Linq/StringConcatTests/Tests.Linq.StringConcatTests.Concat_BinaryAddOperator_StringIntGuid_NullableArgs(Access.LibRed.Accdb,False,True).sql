@@ -1,6 +1,13 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
-	[t].[Value1] + IIF([t].[Value2] IS NULL, '', IIF([t].[Value2] IS NOT NULL, CStr([t].[Value2]), NULL)) + IIF([t].[Value3] IS NULL, '', LCase(Mid(CStr([t].[Value3]), 2, 36)))
+	[t].[Value1] + CASE
+		WHEN [t].[Value2] IS NULL THEN ''
+		WHEN [t].[Value2] IS NOT NULL THEN CStr([t].[Value2])
+		ELSE NULL
+	END + CASE
+		WHEN [t].[Value3] IS NULL THEN ''
+		ELSE LCase(Mid(CStr([t].[Value3]), 2, 36))
+	END
 FROM
 	[StringConcatIntGuidNullEntity] [t]
 ORDER BY

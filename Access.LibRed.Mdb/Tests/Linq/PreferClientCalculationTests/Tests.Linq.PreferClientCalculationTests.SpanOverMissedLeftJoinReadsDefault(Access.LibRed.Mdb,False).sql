@@ -4,8 +4,22 @@ SET     @value = 00:00:00
 
 SELECT
 	[e].[Id],
-	IIF(IIF([j].[Span] IS NULL, @value, [j].[Span]) < [e].[Span], 'y', 'n'),
-	IIF(IIF([j].[Span] IS NULL, @value, [j].[Span]) = @value, 'y', 'n')
+	CASE
+		WHEN CASE
+			WHEN [j].[Span] IS NULL THEN @value
+			ELSE [j].[Span]
+		END < [e].[Span]
+			THEN 'y'
+		ELSE 'n'
+	END,
+	CASE
+		WHEN CASE
+			WHEN [j].[Span] IS NULL THEN @value
+			ELSE [j].[Span]
+		END = @value
+			THEN 'y'
+		ELSE 'n'
+	END
 FROM
 	[MissedSpanEntity] [e]
 		LEFT JOIN [MissedSpanEntity] [j] ON ([j].[Id] = [e].[Id] + 1000)

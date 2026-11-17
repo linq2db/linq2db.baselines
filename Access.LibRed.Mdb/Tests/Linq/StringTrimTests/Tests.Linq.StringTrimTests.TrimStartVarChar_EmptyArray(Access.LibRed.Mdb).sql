@@ -1,6 +1,9 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
-	LTRIM('   ' + IIF([t].[VarCharColumn] IS NULL, '', [t].[VarCharColumn]))
+	LTRIM('   ' + CASE
+		WHEN [t].[VarCharColumn] IS NULL THEN ''
+		ELSE [t].[VarCharColumn]
+	END)
 FROM
 	[StringTrimTable] [t]
 

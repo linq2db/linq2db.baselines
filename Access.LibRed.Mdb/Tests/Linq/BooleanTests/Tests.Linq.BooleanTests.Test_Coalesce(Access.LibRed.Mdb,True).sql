@@ -12,7 +12,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	IIF([r].[BooleanN] IS NULL, True, [r].[BooleanN])
+	CASE
+		WHEN [r].[BooleanN] IS NULL THEN True
+		ELSE [r].[BooleanN]
+	END
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
@@ -42,7 +45,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	IIF([r].[BooleanN] IS NULL, False, [r].[BooleanN])
+	CASE
+		WHEN [r].[BooleanN] IS NULL THEN False
+		ELSE [r].[BooleanN]
+	END
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
@@ -72,7 +78,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	IIF([r].[BooleanN] IS NULL, [r].[Id] MOD 2 = 1, [r].[BooleanN])
+	CASE
+		WHEN [r].[BooleanN] IS NULL THEN [r].[Id] MOD 2 = 1
+		ELSE [r].[BooleanN]
+	END
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT

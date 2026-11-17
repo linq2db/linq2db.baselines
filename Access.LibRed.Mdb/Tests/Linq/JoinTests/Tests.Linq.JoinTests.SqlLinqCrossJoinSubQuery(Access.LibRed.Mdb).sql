@@ -1,10 +1,15 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
+DECLARE @take  -- Int32
+SET     @take = 10
+DECLARE @take_1  -- Int32
+SET     @take_1 = 10
+
 SELECT
 	[p_1].[ParentID],
 	[t1].[ChildID]
 FROM
 	(
-		SELECT TOP 10
+		SELECT TOP @take
 			[p].[ParentID]
 		FROM
 			[Parent] [p]
@@ -12,7 +17,7 @@ FROM
 			[p].[ParentID] > 0
 	) [p_1],
 	(
-		SELECT TOP 10
+		SELECT TOP @take_1
 			[c_1].[ChildID]
 		FROM
 			[Child] [c_1]

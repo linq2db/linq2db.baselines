@@ -1,5 +1,8 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
-SELECT TOP 3
+DECLARE @take  -- Int32
+SET     @take = 3
+
+SELECT TOP @take
 	[g_1].[OrderData1] * 100 + [g_1].[OrderData2],
 	COUNT(*)
 FROM

@@ -21,22 +21,17 @@ FROM
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
 	[item_1].[Name],
-	(
-		SELECT TOP 1
-			[a_Children].[Name]
-		FROM
-			[Test3799Item] [a_Children]
-		WHERE
-			[item_1].[Id] = [a_Children].[ParentId]
-	),
-	(
-		SELECT TOP 1
-			[a_Children_1].[Id]
-		FROM
-			[Test3799Item] [a_Children_1]
-		WHERE
-			[item_1].[Id] = [a_Children_1].[ParentId]
-	)
+	[t1].[Name] as [Name_1],
+	[t1].[Id]
 FROM
 	[Test3799Item] [item_1]
+		OUTER APPLY (
+			SELECT TOP 1
+				[a_Children].[Name],
+				[a_Children].[Id]
+			FROM
+				[Test3799Item] [a_Children]
+			WHERE
+				[item_1].[Id] = [a_Children].[ParentId]
+		) [t1]
 

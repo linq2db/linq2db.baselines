@@ -1,13 +1,17 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT DISTINCT
-	IIF((
-		SELECT
-			AVG([a_Children].[ParentID])
-		FROM
-			[Child] [a_Children]
-		WHERE
-			[g_1].[ParentID] = [a_Children].[ParentID]
-	) > 3, True, False)
+	CASE
+		WHEN (
+			SELECT
+				AVG([a_Children].[ParentID])
+			FROM
+				[Child] [a_Children]
+			WHERE
+				[g_1].[ParentID] = [a_Children].[ParentID]
+		) > 3
+			THEN True
+		ELSE False
+	END
 FROM
 	[Parent] [g_1]
 WHERE

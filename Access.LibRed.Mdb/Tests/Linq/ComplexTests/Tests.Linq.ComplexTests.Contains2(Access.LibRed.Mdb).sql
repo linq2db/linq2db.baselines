@@ -5,7 +5,11 @@ SELECT
 	[gc_1].[ParentID] as [ParentID_1],
 	[gc_1].[ChildID],
 	[gc_1].[GrandChildID],
-	IIF([gc_1].[ParentID] IS NOT NULL AND [gc_1].[ChildID] IS NOT NULL AND [gc_1].[GrandChildID] IS NOT NULL, [gc_1].[ChildID], 2147483647) as [Value_1]
+	CASE
+		WHEN [gc_1].[ParentID] IS NOT NULL AND [gc_1].[ChildID] IS NOT NULL AND [gc_1].[GrandChildID] IS NOT NULL
+			THEN [gc_1].[ChildID]
+		ELSE 2147483647
+	END as [Value_1]
 FROM
 	([Child] [ch]
 		INNER JOIN [Parent] [p] ON ([ch].[ParentID] = [p].[ParentID]))

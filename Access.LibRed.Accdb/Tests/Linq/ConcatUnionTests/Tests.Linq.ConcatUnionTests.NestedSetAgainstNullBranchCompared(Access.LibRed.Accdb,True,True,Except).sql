@@ -1,5 +1,5 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
-SELECT DISTINCT
+SELECT
 	[t2].[ParentID],
 	[t2].[Child],
 	[t2].[ParentID_1],
@@ -23,18 +23,14 @@ FROM
 			[Parent] [t1]
 				LEFT JOIN [Child] [c_1] ON ([c_1].[ParentID] = [t1].[ParentID])
 	) [t2]
-WHERE
-	NOT EXISTS(
-		SELECT
-			*
-		FROM
-			[Parent] [p_1]
-		WHERE
-			[t2].[ParentID] = [p_1].[ParentID] AND
-			[t2].[Child] IS NULL AND
-			[t2].[ParentID_1] IS NULL AND
-			[t2].[ChildID] IS NULL
-	)
+EXCEPT
+SELECT
+	[p_1].[ParentID],
+	IIF(False, 0, NULL),
+	IIF(False, 0, NULL),
+	IIF(False, 0, NULL)
+FROM
+	[Parent] [p_1]
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT

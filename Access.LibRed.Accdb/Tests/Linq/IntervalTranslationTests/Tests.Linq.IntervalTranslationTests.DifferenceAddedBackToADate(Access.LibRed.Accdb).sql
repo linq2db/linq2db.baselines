@@ -21,8 +21,9 @@ VALUES
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT TOP 2
+	[r].[FinishedOn],
 	[r].[StartedOn],
-	[r].[FinishedOn]
+	DatePart('h', [r].[FinishedOn])
 FROM
 	[EventRow] [r]
 

@@ -4,7 +4,10 @@ SELECT
 FROM
 	[CoarseDayPairRow] [r]
 WHERE
-	IIF([r].[ClosedOn] IS NULL, [r].[OpenedOn], [r].[ClosedOn]) IN (#2026-06-01#)
+	CASE
+		WHEN [r].[ClosedOn] IS NULL THEN [r].[OpenedOn]
+		ELSE [r].[ClosedOn]
+	END IN (#2026-06-01#)
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
@@ -12,7 +15,10 @@ SELECT
 FROM
 	[CoarseDayPairRow] [r]
 WHERE
-	IIF([r].[ClosedOn] IS NULL, [r].[OpenedOn], [r].[ClosedOn]) IN (#2026-06-01#)
+	CASE
+		WHEN [r].[ClosedOn] IS NULL THEN [r].[OpenedOn]
+		ELSE [r].[ClosedOn]
+	END IN (#2026-06-01#)
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
@@ -28,5 +34,8 @@ SELECT
 FROM
 	[CoarseDayPairRow] [r]
 WHERE
-	IIF([r].[ClosedOn] IS NULL, [r].[OpenedOn], [r].[ClosedOn]) IN (#2026-06-01 10:00:00#)
+	CASE
+		WHEN [r].[ClosedOn] IS NULL THEN [r].[OpenedOn]
+		ELSE [r].[ClosedOn]
+	END IN (#2026-06-01 10:00:00#)
 

@@ -1,12 +1,18 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
-SELECT TOP 3
+DECLARE @take  -- Int32
+SET     @take = 3
+
+SELECT TOP @take
 	[t1].[Id],
 	[t1].[Grp],
 	[t1].[Value]
 FROM
 	[NullsTable] [t1]
 ORDER BY
-	IIF([t1].[Value] IS NULL, 0, 1),
+	CASE
+		WHEN [t1].[Value] IS NULL THEN 0
+		ELSE 1
+	END,
 	[t1].[Value] DESC,
 	[t1].[Id]
 

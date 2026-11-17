@@ -36,7 +36,11 @@ SELECT
 FROM
 	[ComputedDecimalRow] [r]
 WHERE
-	IIF([r].[Fine] * 2 = ROUND([r].[Fine] * 2, 2) AND [r].[Fine] <> ROUND([r].[Fine], 2), ROUND([r].[Fine] / 2, 2) * 2, ROUND([r].[Fine], 2)) = 1.004
+	CASE
+		WHEN [r].[Fine] * 2 = ROUND([r].[Fine] * 2, 2) AND [r].[Fine] <> ROUND([r].[Fine], 2)
+			THEN ROUND([r].[Fine] / 2, 2) * 2
+		ELSE ROUND([r].[Fine], 2)
+	END = 1.004
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
@@ -44,7 +48,11 @@ SELECT
 FROM
 	[ComputedDecimalRow] [r]
 WHERE
-	IIF([r].[Fine] * 2 = ROUND([r].[Fine] * 2, 2) AND [r].[Fine] <> ROUND([r].[Fine], 2), ROUND([r].[Fine] / 2, 2) * 2, ROUND([r].[Fine], 2)) IN (1.004)
+	CASE
+		WHEN [r].[Fine] * 2 = ROUND([r].[Fine] * 2, 2) AND [r].[Fine] <> ROUND([r].[Fine], 2)
+			THEN ROUND([r].[Fine] / 2, 2) * 2
+		ELSE ROUND([r].[Fine], 2)
+	END IN (1.004)
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
@@ -52,5 +60,9 @@ SELECT
 FROM
 	[ComputedDecimalRow] [r]
 WHERE
-	IIF([r].[Fine] * 2 = ROUND([r].[Fine] * 2, 2) AND [r].[Fine] <> ROUND([r].[Fine], 2), ROUND([r].[Fine] / 2, 2) * 2, ROUND([r].[Fine], 2)) IN (1.004)
+	CASE
+		WHEN [r].[Fine] * 2 = ROUND([r].[Fine] * 2, 2) AND [r].[Fine] <> ROUND([r].[Fine], 2)
+			THEN ROUND([r].[Fine] / 2, 2) * 2
+		ELSE ROUND([r].[Fine], 2)
+	END IN (1.004)
 

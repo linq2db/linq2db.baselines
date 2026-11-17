@@ -17,7 +17,13 @@ VALUES
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
 	[r].[Id],
-	IIF([r].[FirstName] IS NULL, '', [r].[FirstName]) + ' ' + IIF([r].[LastName] IS NULL, '', [r].[LastName])
+	CASE
+		WHEN [r].[FirstName] IS NULL THEN ''
+		ELSE [r].[FirstName]
+	END + ' ' + CASE
+		WHEN [r].[LastName] IS NULL THEN ''
+		ELSE [r].[LastName]
+	END
 FROM
 	[Issue3323Table] [r]
 UNION ALL
@@ -36,7 +42,13 @@ FROM
 UNION ALL
 SELECT
 	[r_1].[Id],
-	IIF([r_1].[FirstName] IS NULL, '', [r_1].[FirstName]) + ' ' + IIF([r_1].[LastName] IS NULL, '', [r_1].[LastName])
+	CASE
+		WHEN [r_1].[FirstName] IS NULL THEN ''
+		ELSE [r_1].[FirstName]
+	END + ' ' + CASE
+		WHEN [r_1].[LastName] IS NULL THEN ''
+		ELSE [r_1].[LastName]
+	END
 FROM
 	[Issue3323Table] [r_1]
 

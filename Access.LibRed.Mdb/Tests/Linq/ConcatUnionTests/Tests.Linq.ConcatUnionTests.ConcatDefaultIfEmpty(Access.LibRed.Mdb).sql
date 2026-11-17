@@ -4,30 +4,18 @@ SELECT
 	[t1].[ParentID] as [ParentID_1],
 	[t1].[ChildID]
 FROM
-	(
-		SELECT
-			(
-				SELECT TOP 1
-					[a_Children].[ParentID]
-				FROM
-					[Child] [a_Children]
-				WHERE
-					[p].[ParentID] = [a_Children].[ParentID]
-			) as [ParentID],
-			(
-				SELECT TOP 1
-					[a_Children_1].[ChildID]
-				FROM
-					[Child] [a_Children_1]
-				WHERE
-					[p].[ParentID] = [a_Children_1].[ParentID]
-			) as [ChildID],
-			[p].[ParentID] as [ParentID_1]
-		FROM
-			[Parent] [p]
-	) [t1]
+	[Parent] [p]
+		OUTER APPLY (
+			SELECT TOP 1
+				[a_Children].[ParentID],
+				[a_Children].[ChildID]
+			FROM
+				[Child] [a_Children]
+			WHERE
+				[p].[ParentID] = [a_Children].[ParentID]
+		) [t1]
 WHERE
-	[t1].[ParentID_1] = 1
+	[p].[ParentID] = 1
 UNION ALL
 SELECT
 	IIF(False, 0, NULL) as [ParentID],

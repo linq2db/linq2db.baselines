@@ -50,9 +50,12 @@ VALUES
 )
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
+DECLARE @take  -- Int32
+SET     @take = 2
+
 DELETE FROM
 	(
-		SELECT TOP 2
+		SELECT TOP @take
 			[c_1].[ParentID]
 		FROM
 			[Parent] [c_1]
@@ -61,7 +64,7 @@ DELETE FROM
 	) [p]
 WHERE
 	[p].[ParentID] IN (
-		SELECT TOP 2
+		SELECT TOP @take
 			[c_2].[ParentID]
 		FROM
 			[Parent] [c_2]

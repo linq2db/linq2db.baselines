@@ -33,11 +33,14 @@ DECLARE @test_1 NVarChar(6) -- String
 SET     @test_1 = '%Test%'
 
 SELECT
-	COUNT(*) > 0
-FROM
-	[SampleClass] [sampleClass_1]
-WHERE
-	[sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[SampleClass] [sampleClass_1]
+		WHERE
+			[sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1
+	)
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 DECLARE @test NVarChar(4) -- String
@@ -59,11 +62,14 @@ DECLARE @test_1 NVarChar(7) -- String
 SET     @test_1 = '%Value%'
 
 SELECT
-	COUNT(*) > 0
-FROM
-	[SampleClass] [sampleClass_1]
-WHERE
-	[sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[SampleClass] [sampleClass_1]
+		WHERE
+			[sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1
+	)
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 DECLARE @test NVarChar(5) -- String
@@ -85,11 +91,14 @@ DECLARE @test_1 NVarChar(7) -- String
 SET     @test_1 = '%Class%'
 
 SELECT
-	COUNT(*) > 0
-FROM
-	[SampleClass] [sampleClass_1]
-WHERE
-	[sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[SampleClass] [sampleClass_1]
+		WHERE
+			[sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1
+	)
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 DECLARE @test NVarChar(5) -- String

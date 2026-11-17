@@ -7,8 +7,8 @@ FROM
 			[g_1].[ParentID]
 		FROM
 			[Child] [g_1]
-	) [pmp],
-	[Child] [pmp1]
+	) [pmp]
+		CROSS JOIN [Child] [pmp1]
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT

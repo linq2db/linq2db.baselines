@@ -544,7 +544,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	IIF([r].[Value1] > [r].[Value4], [r].[Value5], 0) IS NULL
+	CASE
+		WHEN [r].[Value1] > [r].[Value4] THEN [r].[Value5]
+		ELSE 0
+	END IS NULL
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
@@ -566,7 +569,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	IIF([r].[Value1] > [r].[Value4], [r].[Value5], 0) IS NOT NULL
+	CASE
+		WHEN [r].[Value1] > [r].[Value4] THEN [r].[Value5]
+		ELSE 0
+	END IS NOT NULL
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
@@ -1207,7 +1213,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	IIF([r].[Value1] > [r].[Value4], 0, [r].[Value5]) IS NULL
+	CASE
+		WHEN [r].[Value1] > [r].[Value4] THEN 0
+		ELSE [r].[Value5]
+	END IS NULL
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
@@ -1229,7 +1238,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	IIF([r].[Value1] > [r].[Value4], 0, [r].[Value5]) IS NOT NULL
+	CASE
+		WHEN [r].[Value1] > [r].[Value4] THEN 0
+		ELSE [r].[Value5]
+	END IS NOT NULL
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT

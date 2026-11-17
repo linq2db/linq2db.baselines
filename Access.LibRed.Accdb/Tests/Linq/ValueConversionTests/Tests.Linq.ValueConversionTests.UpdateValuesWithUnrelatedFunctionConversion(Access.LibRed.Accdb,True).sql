@@ -2,7 +2,10 @@
 UPDATE
 	[TableWithConverterValue] [x]
 SET
-	[x].[Test1] = IIF(([x].[Id] > 0), 'X', NULL)
+	[x].[Test1] = CASE
+		WHEN ([x].[Id] > 0) THEN 'X'
+		ELSE NULL
+	END
 WHERE
 	[x].[Id] = 1
 

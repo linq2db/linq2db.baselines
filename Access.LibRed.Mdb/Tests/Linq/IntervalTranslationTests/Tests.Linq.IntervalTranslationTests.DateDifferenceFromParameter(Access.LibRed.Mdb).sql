@@ -49,7 +49,7 @@ SELECT
 FROM
 	[EventRow] [r]
 WHERE
-	DateDiff('h', [r].[StartedOn], @asOf) + (CDbl(DateDiff('d', DateAdd('h', DateDiff('h', [r].[StartedOn], @asOf), [r].[StartedOn]), @asOf)) * 86400 + DateDiff('s', DateAdd('d', DateDiff('d', DateAdd('h', DateDiff('h', [r].[StartedOn], @asOf), [r].[StartedOn]), @asOf), DateAdd('h', DateDiff('h', [r].[StartedOn], @asOf), [r].[StartedOn])), @asOf)) / 3600 > 24
+	DateDiff_Big('h', [r].[StartedOn], @asOf) + DateDiff_Big('ms', DateAdd('h', DateDiff_Big('h', [r].[StartedOn], @asOf), [r].[StartedOn]), @asOf) / 3600000 > 24
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 DECLARE @asOf  -- DateTime
@@ -60,7 +60,7 @@ SELECT
 FROM
 	[EventRow] [r]
 WHERE
-	DateDiff('h', @asOf, [r].[FinishedOn]) + (CDbl(DateDiff('d', DateAdd('h', DateDiff('h', @asOf, [r].[FinishedOn]), @asOf), [r].[FinishedOn])) * 86400 + DateDiff('s', DateAdd('d', DateDiff('d', DateAdd('h', DateDiff('h', @asOf, [r].[FinishedOn]), @asOf), [r].[FinishedOn]), DateAdd('h', DateDiff('h', @asOf, [r].[FinishedOn]), @asOf)), [r].[FinishedOn])) / 3600 > 24
+	DateDiff_Big('h', @asOf, [r].[FinishedOn]) + DateDiff_Big('ms', DateAdd('h', DateDiff_Big('h', @asOf, [r].[FinishedOn]), @asOf), [r].[FinishedOn]) / 3600000 > 24
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 DECLARE @asOf  -- DateTime
@@ -71,15 +71,75 @@ SELECT
 FROM
 	[EventRow] [r]
 ORDER BY
-	DateDiff('n', [r].[StartedOn], @asOf) + (CDbl(DateDiff('d', DateAdd('n', DateDiff('n', [r].[StartedOn], @asOf), [r].[StartedOn]), @asOf)) * 86400 + DateDiff('s', DateAdd('d', DateDiff('d', DateAdd('n', DateDiff('n', [r].[StartedOn], @asOf), [r].[StartedOn]), @asOf), DateAdd('n', DateDiff('n', [r].[StartedOn], @asOf), [r].[StartedOn])), @asOf)) / 60
+	DateDiff_Big('n', [r].[StartedOn], @asOf) + DateDiff_Big('ms', DateAdd('n', DateDiff_Big('n', [r].[StartedOn], @asOf), [r].[StartedOn]), @asOf) / 60000
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 DECLARE @asOf  -- DateTime
 SET     @asOf = #2026-01-03 13:30:00#
 
 SELECT TOP 2
-	DateDiff('d', [r].[StartedOn], CVar(@asOf)) + (CDbl(DateDiff('d', DateAdd('d', DateDiff('d', [r].[StartedOn], CVar(@asOf)), [r].[StartedOn]), CVar(@asOf))) * 86400 + DateDiff('s', DateAdd('d', DateDiff('d', DateAdd('d', DateDiff('d', [r].[StartedOn], CVar(@asOf)), [r].[StartedOn]), CVar(@asOf)), DateAdd('d', DateDiff('d', [r].[StartedOn], CVar(@asOf)), [r].[StartedOn])), CVar(@asOf))) / 86400,
-	IIF(CVar(@asOf) >= DateAdd('d', IIF(CVar(@asOf) >= [r].[StartedOn] AND DateAdd('d', DateDiff('d', [r].[StartedOn], CVar(@asOf)), [r].[StartedOn]) > CVar(@asOf), DateDiff('d', [r].[StartedOn], CVar(@asOf)) - 1, IIF(CVar(@asOf) < [r].[StartedOn] AND DateAdd('d', DateDiff('d', [r].[StartedOn], CVar(@asOf)), [r].[StartedOn]) < CVar(@asOf), DateDiff('d', [r].[StartedOn], CVar(@asOf)) + 1, DateDiff('d', [r].[StartedOn], CVar(@asOf)))), [r].[StartedOn]) AND DateAdd('h', DateDiff('h', DateAdd('d', IIF(CVar(@asOf) >= [r].[StartedOn] AND DateAdd('d', DateDiff('d', [r].[StartedOn], CVar(@asOf)), [r].[StartedOn]) > CVar(@asOf), DateDiff('d', [r].[StartedOn], CVar(@asOf)) - 1, IIF(CVar(@asOf) < [r].[StartedOn] AND DateAdd('d', DateDiff('d', [r].[StartedOn], CVar(@asOf)), [r].[StartedOn]) < CVar(@asOf), DateDiff('d', [r].[StartedOn], CVar(@asOf)) + 1, DateDiff('d', [r].[StartedOn], CVar(@asOf)))), [r].[StartedOn]), CVar(@asOf)), DateAdd('d', IIF(CVar(@asOf) >= [r].[StartedOn] AND DateAdd('d', DateDiff('d', [r].[StartedOn], CVar(@asOf)), [r].[StartedOn]) > CVar(@asOf), DateDiff('d', [r].[StartedOn], CVar(@asOf)) - 1, IIF(CVar(@asOf) < [r].[StartedOn] AND DateAdd('d', DateDiff('d', [r].[StartedOn], CVar(@asOf)), [r].[StartedOn]) < CVar(@asOf), DateDiff('d', [r].[StartedOn], CVar(@asOf)) + 1, DateDiff('d', [r].[StartedOn], CVar(@asOf)))), [r].[StartedOn])) > CVar(@asOf), DateDiff('h', DateAdd('d', IIF(CVar(@asOf) >= [r].[StartedOn] AND DateAdd('d', DateDiff('d', [r].[StartedOn], CVar(@asOf)), [r].[StartedOn]) > CVar(@asOf), DateDiff('d', [r].[StartedOn], CVar(@asOf)) - 1, IIF(CVar(@asOf) < [r].[StartedOn] AND DateAdd('d', DateDiff('d', [r].[StartedOn], CVar(@asOf)), [r].[StartedOn]) < CVar(@asOf), DateDiff('d', [r].[StartedOn], CVar(@asOf)) + 1, DateDiff('d', [r].[StartedOn], CVar(@asOf)))), [r].[StartedOn]), CVar(@asOf)) - 1, IIF(CVar(@asOf) < DateAdd('d', IIF(CVar(@asOf) >= [r].[StartedOn] AND DateAdd('d', DateDiff('d', [r].[StartedOn], CVar(@asOf)), [r].[StartedOn]) > CVar(@asOf), DateDiff('d', [r].[StartedOn], CVar(@asOf)) - 1, IIF(CVar(@asOf) < [r].[StartedOn] AND DateAdd('d', DateDiff('d', [r].[StartedOn], CVar(@asOf)), [r].[StartedOn]) < CVar(@asOf), DateDiff('d', [r].[StartedOn], CVar(@asOf)) + 1, DateDiff('d', [r].[StartedOn], CVar(@asOf)))), [r].[StartedOn]) AND DateAdd('h', DateDiff('h', DateAdd('d', IIF(CVar(@asOf) >= [r].[StartedOn] AND DateAdd('d', DateDiff('d', [r].[StartedOn], CVar(@asOf)), [r].[StartedOn]) > CVar(@asOf), DateDiff('d', [r].[StartedOn], CVar(@asOf)) - 1, IIF(CVar(@asOf) < [r].[StartedOn] AND DateAdd('d', DateDiff('d', [r].[StartedOn], CVar(@asOf)), [r].[StartedOn]) < CVar(@asOf), DateDiff('d', [r].[StartedOn], CVar(@asOf)) + 1, DateDiff('d', [r].[StartedOn], CVar(@asOf)))), [r].[StartedOn]), CVar(@asOf)), DateAdd('d', IIF(CVar(@asOf) >= [r].[StartedOn] AND DateAdd('d', DateDiff('d', [r].[StartedOn], CVar(@asOf)), [r].[StartedOn]) > CVar(@asOf), DateDiff('d', [r].[StartedOn], CVar(@asOf)) - 1, IIF(CVar(@asOf) < [r].[StartedOn] AND DateAdd('d', DateDiff('d', [r].[StartedOn], CVar(@asOf)), [r].[StartedOn]) < CVar(@asOf), DateDiff('d', [r].[StartedOn], CVar(@asOf)) + 1, DateDiff('d', [r].[StartedOn], CVar(@asOf)))), [r].[StartedOn])) < CVar(@asOf), DateDiff('h', DateAdd('d', IIF(CVar(@asOf) >= [r].[StartedOn] AND DateAdd('d', DateDiff('d', [r].[StartedOn], CVar(@asOf)), [r].[StartedOn]) > CVar(@asOf), DateDiff('d', [r].[StartedOn], CVar(@asOf)) - 1, IIF(CVar(@asOf) < [r].[StartedOn] AND DateAdd('d', DateDiff('d', [r].[StartedOn], CVar(@asOf)), [r].[StartedOn]) < CVar(@asOf), DateDiff('d', [r].[StartedOn], CVar(@asOf)) + 1, DateDiff('d', [r].[StartedOn], CVar(@asOf)))), [r].[StartedOn]), CVar(@asOf)) + 1, DateDiff('h', DateAdd('d', IIF(CVar(@asOf) >= [r].[StartedOn] AND DateAdd('d', DateDiff('d', [r].[StartedOn], CVar(@asOf)), [r].[StartedOn]) > CVar(@asOf), DateDiff('d', [r].[StartedOn], CVar(@asOf)) - 1, IIF(CVar(@asOf) < [r].[StartedOn] AND DateAdd('d', DateDiff('d', [r].[StartedOn], CVar(@asOf)), [r].[StartedOn]) < CVar(@asOf), DateDiff('d', [r].[StartedOn], CVar(@asOf)) + 1, DateDiff('d', [r].[StartedOn], CVar(@asOf)))), [r].[StartedOn]), CVar(@asOf)))) MOD 24
+	DateDiff_Big('d', [r].[StartedOn], CVar(@asOf)) + DateDiff_Big('ms', DateAdd('d', DateDiff_Big('d', [r].[StartedOn], CVar(@asOf)), [r].[StartedOn]), CVar(@asOf)) / 86400000,
+	CASE
+		WHEN CVar(@asOf) >= DateAdd('d', CASE
+			WHEN CVar(@asOf) >= [r].[StartedOn] AND DateAdd('d', DateDiff_Big('d', [r].[StartedOn], CVar(@asOf)), [r].[StartedOn]) > CVar(@asOf)
+				THEN DateDiff_Big('d', [r].[StartedOn], CVar(@asOf)) - 1
+			WHEN CVar(@asOf) < [r].[StartedOn] AND DateAdd('d', DateDiff_Big('d', [r].[StartedOn], CVar(@asOf)), [r].[StartedOn]) < CVar(@asOf)
+				THEN DateDiff_Big('d', [r].[StartedOn], CVar(@asOf)) + 1
+			ELSE DateDiff_Big('d', [r].[StartedOn], CVar(@asOf))
+		END, [r].[StartedOn]) AND DateAdd('h', DateDiff_Big('h', DateAdd('d', CASE
+			WHEN CVar(@asOf) >= [r].[StartedOn] AND DateAdd('d', DateDiff_Big('d', [r].[StartedOn], CVar(@asOf)), [r].[StartedOn]) > CVar(@asOf)
+				THEN DateDiff_Big('d', [r].[StartedOn], CVar(@asOf)) - 1
+			WHEN CVar(@asOf) < [r].[StartedOn] AND DateAdd('d', DateDiff_Big('d', [r].[StartedOn], CVar(@asOf)), [r].[StartedOn]) < CVar(@asOf)
+				THEN DateDiff_Big('d', [r].[StartedOn], CVar(@asOf)) + 1
+			ELSE DateDiff_Big('d', [r].[StartedOn], CVar(@asOf))
+		END, [r].[StartedOn]), CVar(@asOf)), DateAdd('d', CASE
+			WHEN CVar(@asOf) >= [r].[StartedOn] AND DateAdd('d', DateDiff_Big('d', [r].[StartedOn], CVar(@asOf)), [r].[StartedOn]) > CVar(@asOf)
+				THEN DateDiff_Big('d', [r].[StartedOn], CVar(@asOf)) - 1
+			WHEN CVar(@asOf) < [r].[StartedOn] AND DateAdd('d', DateDiff_Big('d', [r].[StartedOn], CVar(@asOf)), [r].[StartedOn]) < CVar(@asOf)
+				THEN DateDiff_Big('d', [r].[StartedOn], CVar(@asOf)) + 1
+			ELSE DateDiff_Big('d', [r].[StartedOn], CVar(@asOf))
+		END, [r].[StartedOn])) > CVar(@asOf)
+			THEN DateDiff_Big('h', DateAdd('d', CASE
+			WHEN CVar(@asOf) >= [r].[StartedOn] AND DateAdd('d', DateDiff_Big('d', [r].[StartedOn], CVar(@asOf)), [r].[StartedOn]) > CVar(@asOf)
+				THEN DateDiff_Big('d', [r].[StartedOn], CVar(@asOf)) - 1
+			WHEN CVar(@asOf) < [r].[StartedOn] AND DateAdd('d', DateDiff_Big('d', [r].[StartedOn], CVar(@asOf)), [r].[StartedOn]) < CVar(@asOf)
+				THEN DateDiff_Big('d', [r].[StartedOn], CVar(@asOf)) + 1
+			ELSE DateDiff_Big('d', [r].[StartedOn], CVar(@asOf))
+		END, [r].[StartedOn]), CVar(@asOf)) - 1
+		WHEN CVar(@asOf) < DateAdd('d', CASE
+			WHEN CVar(@asOf) >= [r].[StartedOn] AND DateAdd('d', DateDiff_Big('d', [r].[StartedOn], CVar(@asOf)), [r].[StartedOn]) > CVar(@asOf)
+				THEN DateDiff_Big('d', [r].[StartedOn], CVar(@asOf)) - 1
+			WHEN CVar(@asOf) < [r].[StartedOn] AND DateAdd('d', DateDiff_Big('d', [r].[StartedOn], CVar(@asOf)), [r].[StartedOn]) < CVar(@asOf)
+				THEN DateDiff_Big('d', [r].[StartedOn], CVar(@asOf)) + 1
+			ELSE DateDiff_Big('d', [r].[StartedOn], CVar(@asOf))
+		END, [r].[StartedOn]) AND DateAdd('h', DateDiff_Big('h', DateAdd('d', CASE
+			WHEN CVar(@asOf) >= [r].[StartedOn] AND DateAdd('d', DateDiff_Big('d', [r].[StartedOn], CVar(@asOf)), [r].[StartedOn]) > CVar(@asOf)
+				THEN DateDiff_Big('d', [r].[StartedOn], CVar(@asOf)) - 1
+			WHEN CVar(@asOf) < [r].[StartedOn] AND DateAdd('d', DateDiff_Big('d', [r].[StartedOn], CVar(@asOf)), [r].[StartedOn]) < CVar(@asOf)
+				THEN DateDiff_Big('d', [r].[StartedOn], CVar(@asOf)) + 1
+			ELSE DateDiff_Big('d', [r].[StartedOn], CVar(@asOf))
+		END, [r].[StartedOn]), CVar(@asOf)), DateAdd('d', CASE
+			WHEN CVar(@asOf) >= [r].[StartedOn] AND DateAdd('d', DateDiff_Big('d', [r].[StartedOn], CVar(@asOf)), [r].[StartedOn]) > CVar(@asOf)
+				THEN DateDiff_Big('d', [r].[StartedOn], CVar(@asOf)) - 1
+			WHEN CVar(@asOf) < [r].[StartedOn] AND DateAdd('d', DateDiff_Big('d', [r].[StartedOn], CVar(@asOf)), [r].[StartedOn]) < CVar(@asOf)
+				THEN DateDiff_Big('d', [r].[StartedOn], CVar(@asOf)) + 1
+			ELSE DateDiff_Big('d', [r].[StartedOn], CVar(@asOf))
+		END, [r].[StartedOn])) < CVar(@asOf)
+			THEN DateDiff_Big('h', DateAdd('d', CASE
+			WHEN CVar(@asOf) >= [r].[StartedOn] AND DateAdd('d', DateDiff_Big('d', [r].[StartedOn], CVar(@asOf)), [r].[StartedOn]) > CVar(@asOf)
+				THEN DateDiff_Big('d', [r].[StartedOn], CVar(@asOf)) - 1
+			WHEN CVar(@asOf) < [r].[StartedOn] AND DateAdd('d', DateDiff_Big('d', [r].[StartedOn], CVar(@asOf)), [r].[StartedOn]) < CVar(@asOf)
+				THEN DateDiff_Big('d', [r].[StartedOn], CVar(@asOf)) + 1
+			ELSE DateDiff_Big('d', [r].[StartedOn], CVar(@asOf))
+		END, [r].[StartedOn]), CVar(@asOf)) + 1
+		ELSE DateDiff_Big('h', DateAdd('d', CASE
+			WHEN CVar(@asOf) >= [r].[StartedOn] AND DateAdd('d', DateDiff_Big('d', [r].[StartedOn], CVar(@asOf)), [r].[StartedOn]) > CVar(@asOf)
+				THEN DateDiff_Big('d', [r].[StartedOn], CVar(@asOf)) - 1
+			WHEN CVar(@asOf) < [r].[StartedOn] AND DateAdd('d', DateDiff_Big('d', [r].[StartedOn], CVar(@asOf)), [r].[StartedOn]) < CVar(@asOf)
+				THEN DateDiff_Big('d', [r].[StartedOn], CVar(@asOf)) + 1
+			ELSE DateDiff_Big('d', [r].[StartedOn], CVar(@asOf))
+		END, [r].[StartedOn]), CVar(@asOf))
+	END MOD 24
 FROM
 	[EventRow] [r]
 WHERE

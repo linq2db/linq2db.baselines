@@ -4,13 +4,50 @@ SET     @bound = #2000-01-01#
 
 SELECT
 	[e].[Id],
-	IIF([j].[Value1] IS NULL, 0, [j].[Value1]) + 1,
-	IIF([j].[Value1] IS NULL OR [j].[Value1] < 5, 'a', 'b'),
-	Abs(IIF([j].[Value1] IS NULL, 0, [j].[Value1]) - 1),
-	IIF(IIF([j].[Date] IS NULL, #0100-01-01#, [j].[Date]) > CVar(@bound), 'y', 'n'),
-	IIF(IIF([j].[Date] IS NULL, #0100-01-01#, [j].[Date]) < CVar(@bound), 'y', 'n'),
-	IIF(IIF([j].[Date] IS NULL, #0100-01-01#, [j].[Date]) > [e].[Date], 'y', 'n'),
-	IIF(IIF([j].[Date] IS NULL, #0100-01-01#, [j].[Date]) <= [e].[Date], 'y', 'n')
+	CASE
+		WHEN [j].[Value1] IS NULL THEN 0
+		ELSE [j].[Value1]
+	END + 1,
+	CASE
+		WHEN [j].[Value1] IS NULL OR [j].[Value1] < 5 THEN 'a'
+		ELSE 'b'
+	END,
+	Abs(CASE
+		WHEN [j].[Value1] IS NULL THEN 0
+		ELSE [j].[Value1]
+	END - 1),
+	CASE
+		WHEN CASE
+			WHEN [j].[Date] IS NULL THEN #0100-01-01#
+			ELSE [j].[Date]
+		END > CVar(@bound)
+			THEN 'y'
+		ELSE 'n'
+	END,
+	CASE
+		WHEN CASE
+			WHEN [j].[Date] IS NULL THEN #0100-01-01#
+			ELSE [j].[Date]
+		END < CVar(@bound)
+			THEN 'y'
+		ELSE 'n'
+	END,
+	CASE
+		WHEN CASE
+			WHEN [j].[Date] IS NULL THEN #0100-01-01#
+			ELSE [j].[Date]
+		END > [e].[Date]
+			THEN 'y'
+		ELSE 'n'
+	END,
+	CASE
+		WHEN CASE
+			WHEN [j].[Date] IS NULL THEN #0100-01-01#
+			ELSE [j].[Date]
+		END <= [e].[Date]
+			THEN 'y'
+		ELSE 'n'
+	END
 FROM
 	[MissedJoinEntity] [e]
 		LEFT JOIN [MissedJoinEntity] [j] ON ([j].[Id] = [e].[Id] + 1000)
@@ -27,7 +64,10 @@ FROM
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
-	DatePart('yyyy', IIF([j].[Date] IS NULL, #0100-01-01#, [j].[Date]))
+	DatePart('yyyy', CASE
+		WHEN [j].[Date] IS NULL THEN #0100-01-01#
+		ELSE [j].[Date]
+	END)
 FROM
 	[MissedJoinEntity] [e]
 		LEFT JOIN [MissedJoinEntity] [j] ON ([j].[Id] = [e].[Id] + 1000)

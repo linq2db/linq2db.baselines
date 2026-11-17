@@ -4,5 +4,8 @@ SELECT
 FROM
 	[CoarseDayPairRow] [r]
 WHERE
-	IIF([r].[ClosedOn] IS NULL, [r].[OpenedOn], [r].[ClosedOn]) IN ([r].[OpenedOn])
+	CASE
+		WHEN [r].[ClosedOn] IS NULL THEN [r].[OpenedOn]
+		ELSE [r].[ClosedOn]
+	END IN ([r].[OpenedOn])
 

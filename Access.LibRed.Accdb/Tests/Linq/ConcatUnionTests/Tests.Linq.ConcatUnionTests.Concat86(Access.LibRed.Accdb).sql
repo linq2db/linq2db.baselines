@@ -8,7 +8,10 @@ FROM
 UNION ALL
 SELECT
 	[c_2].[ParentID],
-	IIF([c_2].[Value1] IS NULL, 0, [c_2].[Value1]),
+	CASE
+		WHEN [c_2].[Value1] IS NULL THEN 0
+		ELSE [c_2].[Value1]
+	END,
 	[c_2].[ParentID]
 FROM
 	[Parent] [c_2]

@@ -3,30 +3,24 @@ SELECT
 	[t3].[ParentID],
 	[t3].[ChildID]
 FROM
-	(
-		SELECT
-			[t2].[ParentID],
-			[t2].[ChildID],
-			(
-				SELECT
-					COUNT(*)
-				FROM
-					[Child] [a_Children]
-				WHERE
-					[a_Parent].[ParentID] = [a_Children].[ParentID]
-			) as [Count_1]
+	((
+		SELECT DISTINCT
+			[t1].[ParentID],
+			[t1].[ChildID]
 		FROM
-			(
-				SELECT DISTINCT
-					[t1].[ParentID],
-					[t1].[ChildID]
-				FROM
-					[Child] [t1]
-			) [t2]
-				LEFT JOIN [Parent] [a_Parent] ON ([t2].[ParentID] = [a_Parent].[ParentID])
+			[Child] [t1]
 	) [t3]
+		LEFT JOIN [Parent] [a_Parent] ON ([t3].[ParentID] = [a_Parent].[ParentID]))
+		OUTER APPLY (
+			SELECT
+				COUNT(*) as [Count_1]
+			FROM
+				[Child] [a_Children]
+			WHERE
+				[a_Parent].[ParentID] = [a_Children].[ParentID]
+		) [t2]
 ORDER BY
-	[t3].[Count_1]
+	[t2].[Count_1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT

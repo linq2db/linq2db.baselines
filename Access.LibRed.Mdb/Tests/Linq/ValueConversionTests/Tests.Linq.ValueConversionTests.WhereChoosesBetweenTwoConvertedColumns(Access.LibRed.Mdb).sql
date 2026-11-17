@@ -7,5 +7,8 @@ SELECT
 FROM
 	[ValueConversion] [t]
 WHERE
-	IIF([t].[EnumNullable] IS NOT NULL, [t].[EnumNullable], [t].[Enum]) = @EnumNullable
+	CASE
+		WHEN [t].[EnumNullable] IS NOT NULL THEN [t].[EnumNullable]
+		ELSE [t].[Enum]
+	END = @EnumNullable
 

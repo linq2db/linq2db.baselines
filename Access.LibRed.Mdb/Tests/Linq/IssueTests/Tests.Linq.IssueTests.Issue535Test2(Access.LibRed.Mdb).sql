@@ -8,7 +8,10 @@ SELECT
 	[q].[Id],
 	[q].[Name],
 	[q].[ContactEmail],
-	IIF([q].[Enabled] IS NULL, False, [q].[Enabled])
+	CASE
+		WHEN [q].[Enabled] IS NULL THEN False
+		ELSE [q].[Enabled]
+	END
 FROM
 	[CustomerBase] [q]
 WHERE

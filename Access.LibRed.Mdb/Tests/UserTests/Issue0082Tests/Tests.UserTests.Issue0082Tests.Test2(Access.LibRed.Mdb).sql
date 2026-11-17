@@ -1,30 +1,28 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
-	[t1].[ParentID],
+	[o].[ParentID],
 	(
 		SELECT
 			COUNT(*)
 		FROM
 			[Child] [a_Children_1]
 		WHERE
-			[t1].[ParentID] = [a_Children_1].[ParentID]
+			[o].[ParentID] = [a_Children_1].[ParentID]
 	),
-	IIF([t1].[SumResult] IS NULL, 0, [t1].[SumResult])
+	CASE
+		WHEN [t1].[SumResult] IS NULL THEN 0
+		ELSE [t1].[SumResult]
+	END
 FROM
-	(
-		SELECT
-			[o].[ParentID],
-			(
-				SELECT
-					SUM([a_Children].[ParentID])
-				FROM
-					[Child] [a_Children]
-				WHERE
-					[o].[ParentID] = [a_Children].[ParentID]
-			) as [SumResult]
-		FROM
-			[Parent] [o]
-	) [t1]
+	[Parent] [o]
+		OUTER APPLY (
+			SELECT
+				SUM([a_Children].[ParentID]) as [SumResult]
+			FROM
+				[Child] [a_Children]
+			WHERE
+				[o].[ParentID] = [a_Children].[ParentID]
+		) [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
@@ -46,25 +44,23 @@ FROM
 				FROM
 					[Child] [a_Children_1]
 				WHERE
-					[t1].[ParentID] = [a_Children_1].[ParentID]
+					[o].[ParentID] = [a_Children_1].[ParentID]
 			) as [CountResult],
-			[t1].[ParentID],
-			IIF([t1].[SumResult] IS NULL, 0, [t1].[SumResult]) as [SumResult]
+			[o].[ParentID],
+			CASE
+				WHEN [t1].[SumResult] IS NULL THEN 0
+				ELSE [t1].[SumResult]
+			END as [SumResult]
 		FROM
-			(
-				SELECT
-					[o].[ParentID],
-					(
-						SELECT
-							SUM([a_Children].[ParentID])
-						FROM
-							[Child] [a_Children]
-						WHERE
-							[o].[ParentID] = [a_Children].[ParentID]
-					) as [SumResult]
-				FROM
-					[Parent] [o]
-			) [t1]
+			[Parent] [o]
+				OUTER APPLY (
+					SELECT
+						SUM([a_Children].[ParentID]) as [SumResult]
+					FROM
+						[Child] [a_Children]
+					WHERE
+						[o].[ParentID] = [a_Children].[ParentID]
+				) [t1]
 	) [x]
 WHERE
 	[x].[CountResult] > 0

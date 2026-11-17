@@ -3,20 +3,30 @@ DECLARE @ParentID  -- Int32
 SET     @ParentID = 1
 
 SELECT
-	COUNT(*) > 0
-FROM
-	[Child] [c_1]
-WHERE
-	[c_1].[ParentID] = @ParentID
+	CASE
+		WHEN CVar(@ParentID) IN (
+			SELECT
+				[c_1].[ParentID]
+			FROM
+				[Child] [c_1]
+		)
+			THEN True
+		ELSE False
+	END
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 DECLARE @ParentID  -- Int32
 SET     @ParentID = -1
 
 SELECT
-	COUNT(*) > 0
-FROM
-	[Child] [c_1]
-WHERE
-	[c_1].[ParentID] = @ParentID
+	CASE
+		WHEN CVar(@ParentID) IN (
+			SELECT
+				[c_1].[ParentID]
+			FROM
+				[Child] [c_1]
+		)
+			THEN True
+		ELSE False
+	END
 

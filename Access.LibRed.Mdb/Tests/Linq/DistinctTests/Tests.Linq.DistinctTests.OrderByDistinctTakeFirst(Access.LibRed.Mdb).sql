@@ -1,4 +1,7 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
+DECLARE @take  -- Int32
+SET     @take = 5
+
 SELECT
 	[t3].[F2]
 FROM
@@ -8,7 +11,7 @@ FROM
 			[t2].[F2]
 		FROM
 			(
-				SELECT TOP 5
+				SELECT TOP @take
 					[t1].[F1],
 					[t1].[F2]
 				FROM

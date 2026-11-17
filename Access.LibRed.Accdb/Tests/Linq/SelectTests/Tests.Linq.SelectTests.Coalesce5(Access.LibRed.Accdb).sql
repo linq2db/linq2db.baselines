@@ -1,19 +1,17 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
-	IIF([t1].[Max_1] IS NULL, [t1].[Value1], [t1].[Max_1])
+	CASE
+		WHEN [t1].[Max_1] IS NULL THEN [p].[Value1]
+		ELSE [t1].[Max_1]
+	END
 FROM
-	(
-		SELECT
-			(
-				SELECT
-					MAX([a_Children].[ChildID])
-				FROM
-					[Child] [a_Children]
-				WHERE
-					[p].[ParentID] = [a_Children].[ParentID]
-			) as [Max_1],
-			[p].[Value1]
-		FROM
-			[Parent] [p]
-	) [t1]
+	[Parent] [p]
+		OUTER APPLY (
+			SELECT
+				MAX([a_Children].[ChildID]) as [Max_1]
+			FROM
+				[Child] [a_Children]
+			WHERE
+				[p].[ParentID] = [a_Children].[ParentID]
+		) [t1]
 

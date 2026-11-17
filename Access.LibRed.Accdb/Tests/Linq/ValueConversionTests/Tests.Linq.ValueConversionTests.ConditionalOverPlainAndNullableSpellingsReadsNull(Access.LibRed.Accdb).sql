@@ -1,6 +1,9 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
-	IIF([r].[Id] = 1, [r].[Plain], [r].[Date])
+	CASE
+		WHEN [r].[Id] = 1 THEN [r].[Plain]
+		ELSE [r].[Date]
+	END
 FROM
 	[Issue5975Row] [r]
 ORDER BY

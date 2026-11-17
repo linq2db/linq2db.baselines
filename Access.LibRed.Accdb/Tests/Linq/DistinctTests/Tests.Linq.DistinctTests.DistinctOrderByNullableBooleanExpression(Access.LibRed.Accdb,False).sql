@@ -5,7 +5,10 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			IIF([t].[ID] > 8, NULL, [t].[BoolValue]) as [Value_1],
+			CASE
+				WHEN [t].[ID] > 8 THEN NULL
+				ELSE [t].[BoolValue]
+			END as [Value_1],
 			[t].[ID]
 		FROM
 			[LinqDataTypes] [t]

@@ -18,14 +18,26 @@ VALUES
 SELECT
 	[t1].[Id],
 	[t1].[Text],
-	IIF([t1].[FirstName] IS NULL, '', [t1].[FirstName]) + ' ' + IIF([t1].[LastName] IS NULL, '', [t1].[LastName])
+	CASE
+		WHEN [t1].[FirstName] IS NULL THEN ''
+		ELSE [t1].[FirstName]
+	END + ' ' + CASE
+		WHEN [t1].[LastName] IS NULL THEN ''
+		ELSE [t1].[LastName]
+	END
 FROM
 	[Issue3323Table] [t1]
 UNION ALL
 SELECT
 	[t2].[Id],
 	[t2].[Text],
-	IIF([t2].[FirstName] IS NULL, '', [t2].[FirstName]) + ' ' + IIF([t2].[LastName] IS NULL, '', [t2].[LastName])
+	CASE
+		WHEN [t2].[FirstName] IS NULL THEN ''
+		ELSE [t2].[FirstName]
+	END + ' ' + CASE
+		WHEN [t2].[LastName] IS NULL THEN ''
+		ELSE [t2].[LastName]
+	END
 FROM
 	[Issue3323Table] [t2]
 

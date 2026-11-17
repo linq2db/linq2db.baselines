@@ -1,24 +1,14 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
-	[m_1].[Key_1],
-	[d].[Value]
-FROM
-	(
-		SELECT DISTINCT
-			[g_1].[GrpId] as [Key_1]
-		FROM
-			[ConcatGroupedEntity] [g_1]
-	) [m_1]
-		INNER JOIN [ConcatGroupedEntity] [d] ON ([m_1].[Key_1] = [d].[GrpId])
-ORDER BY
-	[d].[PK],
-	[m_1].[Key_1]
-
--- Access.LibRed.Mdb Access.LibRed AccessLibRed
-SELECT DISTINCT
-	[g_1].[GrpId]
+	[g_1].[GrpId],
+	STRING_AGG(CASE
+		WHEN [g_1].[Value] IS NULL THEN ''
+		ELSE [g_1].[Value]
+	END, '') WITHIN GROUP (ORDER BY [g_1].[PK])
 FROM
 	[ConcatGroupedEntity] [g_1]
+GROUP BY
+	[g_1].[GrpId]
 ORDER BY
 	[g_1].[GrpId]
 

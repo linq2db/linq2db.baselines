@@ -1,7 +1,11 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
 	[t].[Id],
-	IIF([t].[VarCharColumn] IS NULL OR Len([t].[VarCharColumn]) >= 8, [t].[VarCharColumn], STRING(8 - Len([t].[VarCharColumn]), 'Ж') + [t].[VarCharColumn])
+	CASE
+		WHEN [t].[VarCharColumn] IS NULL OR Len([t].[VarCharColumn]) >= 8
+			THEN [t].[VarCharColumn]
+		ELSE STRING(8 - Len([t].[VarCharColumn]), 'Ж') + [t].[VarCharColumn]
+	END
 FROM
 	[StringTypesTable] [t]
 

@@ -1,4 +1,7 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
+DECLARE @skip  -- Int32
+SET     @skip = 3
+
 SELECT
 	[ch].[ParentID],
 	[ch].[ChildID]
@@ -9,4 +12,5 @@ WHERE
 ORDER BY
 	[ch].[ParentID],
 	[ch].[ChildID]
+OFFSET @skip ROWS
 

@@ -8,5 +8,8 @@ GROUP BY
 	[a_Parent].[ParentID],
 	[a_Parent].[Value1]
 HAVING
-	COUNT(IIF([g_1].[ChildID] >= 20, 1, NULL)) > 2
+	COUNT(CASE
+		WHEN [g_1].[ChildID] >= 20 THEN 1
+		ELSE NULL
+	END) > 2
 

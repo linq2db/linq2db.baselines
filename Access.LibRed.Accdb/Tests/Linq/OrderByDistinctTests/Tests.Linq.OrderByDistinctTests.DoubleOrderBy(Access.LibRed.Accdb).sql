@@ -1,4 +1,7 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
+DECLARE @take  -- Int32
+SET     @take = 3
+
 SELECT
 	[q1].[Id],
 	[q1].[DuplicateData],
@@ -6,7 +9,7 @@ SELECT
 	[q1].[OrderData2]
 FROM
 	(
-		SELECT TOP 3
+		SELECT TOP @take
 			[t1].[Id]
 		FROM
 			[OrderByDistinctData] [t1]

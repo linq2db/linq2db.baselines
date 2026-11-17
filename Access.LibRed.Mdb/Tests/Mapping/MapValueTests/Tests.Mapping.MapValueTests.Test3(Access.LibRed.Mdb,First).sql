@@ -1,6 +1,11 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT TOP 1
-	IIF([t].[EnumValue] = 'S', 'Second', IIF([t].[EnumValue] = 'T', 'Third', IIF([t].[EnumValue] = 'F', 'First', [t].[EnumValue])))
+	CASE
+		WHEN [t].[EnumValue] = 'S' THEN 'Second'
+		WHEN [t].[EnumValue] = 'T' THEN 'Third'
+		WHEN [t].[EnumValue] = 'F' THEN 'First'
+		ELSE [t].[EnumValue]
+	END
 FROM
 	[MapValueTable] [t]
 

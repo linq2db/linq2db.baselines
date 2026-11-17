@@ -1,15 +1,18 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
 	[e].[Id],
-	IIF(0 IN (
-		SELECT
-			[t1].[item]
-		FROM
-			(
-				SELECT [j].[Value1] AS [item]
-				UNION ALL
-				SELECT 5) [t1]
-	), True, False)
+	CASE
+		WHEN 0 IN (
+			SELECT
+				[t1].[item]
+			FROM
+				(VALUES
+					([j].[Value1]), (5)
+				) [t1]([item])
+		)
+			THEN True
+		ELSE False
+	END
 FROM
 	[MissedJoinEntity] [e]
 		LEFT JOIN [MissedJoinEntity] [j] ON ([j].[Id] = [e].[Id] + 1000)

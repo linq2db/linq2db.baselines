@@ -7,7 +7,10 @@ SELECT
 FROM
 	[Parent] [x]
 WHERE
-	IIF([x].[Value1] IS NULL, @Value1, [x].[Value1]) > 10
+	CASE
+		WHEN [x].[Value1] IS NULL THEN @Value1
+		ELSE [x].[Value1]
+	END > 10
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT

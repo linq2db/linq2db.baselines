@@ -1,10 +1,25 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
-	COUNT(IIF([g_1].[ChildID] > 30, 1, NULL)),
-	SUM(IIF([g_1].[ChildID] > 30, [g_1].[ChildID], NULL)),
-	MIN(IIF([g_1].[ChildID] > 30, [g_1].[ChildID], NULL)),
-	MAX(IIF([g_1].[ChildID] > 30, [g_1].[ChildID], NULL)),
-	AVG(IIF([g_1].[ChildID] > 30, [g_1].[ChildID], NULL))
+	COUNT(CASE
+		WHEN [g_1].[ChildID] > 30 THEN 1
+		ELSE NULL
+	END),
+	SUM(CASE
+		WHEN [g_1].[ChildID] > 30 THEN [g_1].[ChildID]
+		ELSE NULL
+	END),
+	MIN(CASE
+		WHEN [g_1].[ChildID] > 30 THEN [g_1].[ChildID]
+		ELSE NULL
+	END),
+	MAX(CASE
+		WHEN [g_1].[ChildID] > 30 THEN [g_1].[ChildID]
+		ELSE NULL
+	END),
+	AVG(CASE
+		WHEN [g_1].[ChildID] > 30 THEN [g_1].[ChildID]
+		ELSE NULL
+	END)
 FROM
 	[Child] [g_1]
 WHERE

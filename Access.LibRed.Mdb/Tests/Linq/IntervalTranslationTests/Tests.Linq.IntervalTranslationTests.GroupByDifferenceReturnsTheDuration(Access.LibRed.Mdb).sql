@@ -75,15 +75,17 @@ VALUES
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
-	[g_1].[FinishedOn],
-	[g_1].[StartedOn],
+	[t1].[Key_1],
 	COUNT(*)
 FROM
-	[BudgetedTaskRow] [g_1]
+	(
+		SELECT
+			(DateDiff_Big('d', [g_1].[StartedOn], [g_1].[FinishedOn]) * 86400) * 10000000 + DateDiff_Big('ms', DateAdd('d', DateDiff_Big('d', [g_1].[StartedOn], [g_1].[FinishedOn]), [g_1].[StartedOn]), [g_1].[FinishedOn]) * 10000 as [Key_1]
+		FROM
+			[BudgetedTaskRow] [g_1]
+	) [t1]
 GROUP BY
-	[g_1].[FinishedOn],
-	[g_1].[StartedOn]
+	[t1].[Key_1]
 ORDER BY
-	[g_1].[FinishedOn],
-	[g_1].[StartedOn]
+	[t1].[Key_1]
 

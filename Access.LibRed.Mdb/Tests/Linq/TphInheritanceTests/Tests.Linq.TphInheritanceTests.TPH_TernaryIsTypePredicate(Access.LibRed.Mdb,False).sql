@@ -58,7 +58,11 @@ SELECT
 FROM
 	[Base] [e]
 WHERE
-	IIF([e].[Code] = 'BaseChild' OR [e].[Code] = 'Child' OR [e].[Code] = 'Child2', [e].[Id] <> 0, [e].[Id] = 0)
+	CASE
+		WHEN [e].[Code] = 'BaseChild' OR [e].[Code] = 'Child' OR [e].[Code] = 'Child2'
+			THEN [e].[Id] <> 0
+		ELSE [e].[Id] = 0
+	END
 ORDER BY
 	[e].[Id]
 

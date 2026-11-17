@@ -12,10 +12,10 @@ CREATE TABLE [TestTable]
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
-	[cross_1].[Id_1] as [Id],
-	[cross_1].[Value_1],
-	[cross_1].[Id] as [Id_1],
-	[cross_1].[Value_2],
+	[sub].[Id_1] as [Id],
+	[sub].[Value_1],
+	[sub].[Id] as [Id_1],
+	[sub].[Value_2],
 	[t3].[Id] as [Id_2],
 	[t3].[Value] as [Value_3]
 FROM
@@ -28,10 +28,10 @@ FROM
 		FROM
 			[TestTable] [t1],
 			[TestTable] [t2]
-	) [cross_1]
-		INNER JOIN [TestTable] [t3] ON ([cross_1].[Id] = [t3].[Id])
+	) [sub]
+		INNER JOIN [TestTable] [t3] ON ([sub].[Id] = [t3].[Id])
 WHERE
-	[cross_1].[Id_1] = [cross_1].[Id]
+	[sub].[Id_1] = [sub].[Id]
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 DROP TABLE [TestTable]

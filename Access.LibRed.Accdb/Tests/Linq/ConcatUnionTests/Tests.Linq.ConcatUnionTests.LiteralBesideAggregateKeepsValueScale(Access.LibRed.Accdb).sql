@@ -13,7 +13,10 @@ FROM
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
-	IIF([r].[Id] > 0, [r].[Value], [r].[Value] + 1)
+	CASE
+		WHEN [r].[Id] > 0 THEN [r].[Value]
+		ELSE [r].[Value] + 1
+	END
 FROM
 	[ScaledDecimalRow] [r]
 UNION ALL

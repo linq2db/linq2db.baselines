@@ -1,7 +1,8 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
-SELECT DISTINCT
+SELECT
 	[t1].[ParentID],
 	[t1].[ParentID_1],
+	[t1].[ParentID_1] as [ParentID_2],
 	[t1].[ChildID]
 FROM
 	(
@@ -19,16 +20,14 @@ FROM
 		FROM
 			[Parent] [p_1]
 	) [t1]
-WHERE
-	EXISTS(
-		SELECT
-			*
-		FROM
-			[Parent] [p_2]
-		WHERE
-			[t1].[ParentID] = [p_2].[ParentID] AND [t1].[ParentID_1] IS NULL AND
-			[t1].[ChildID] IS NULL
-	)
+INTERSECT
+SELECT
+	[p_2].[ParentID],
+	IIF(False, 0, NULL) as [ParentID_1],
+	IIF(False, 0, NULL) as [ParentID_2],
+	IIF(False, 0, NULL) as [ChildID]
+FROM
+	[Parent] [p_2]
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT

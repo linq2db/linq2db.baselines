@@ -4,15 +4,16 @@ SELECT
 	[c_2].[Value_1]
 FROM
 	[Parent] [p]
-		INNER JOIN (
+		CROSS APPLY (
 			SELECT
-				COUNT(*) as [Value_1],
-				[c_1].[ParentID]
+				COUNT(*) as [Value_1]
 			FROM
 				[Child] [c_1]
+			WHERE
+				[p].[ParentID] = [c_1].[ParentID]
 			GROUP BY
 				[c_1].[ParentID]
-		) [c_2] ON ([p].[ParentID] = [c_2].[ParentID])
+		) [c_2]
 WHERE
 	[c_2].[Value_1] > 0
 

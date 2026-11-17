@@ -1,6 +1,9 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
-	COUNT(*) > 0
-FROM
-	[Person] [t1]
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[Person] [t1]
+	)
 

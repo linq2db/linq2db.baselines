@@ -5,7 +5,10 @@ DECLARE @Value1  -- Int32
 SET     @Value1 = 4
 
 SELECT DISTINCT
-	IIF([p].[Value1] IS NULL, [p].[ParentID] + @ParentID, [p].[Value1]),
+	CASE
+		WHEN [p].[Value1] IS NULL THEN [p].[ParentID] + @ParentID
+		ELSE [p].[Value1]
+	END,
 	CVar(@Value1)
 FROM
 	[Parent] [p]

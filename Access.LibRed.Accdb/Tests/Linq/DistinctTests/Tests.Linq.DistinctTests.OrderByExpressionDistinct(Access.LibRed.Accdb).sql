@@ -6,13 +6,22 @@ FROM
 	(
 		SELECT DISTINCT
 			[x].[MiddleName],
-			IIF([x].[LastName] = 'Pupkin', NULL, [x].[LastName]) as [LastName]
+			CASE
+				WHEN [x].[LastName] = 'Pupkin' THEN NULL
+				ELSE [x].[LastName]
+			END as [LastName]
 		FROM
 			[Person] [x]
 	) [x_1]
 ORDER BY
-	IIF([x_1].[MiddleName] IS NULL, '-2', [x_1].[MiddleName]) DESC,
-	IIF([x_1].[LastName] IS NULL, '-1', [x_1].[LastName])
+	CASE
+		WHEN [x_1].[MiddleName] IS NULL THEN '-2'
+		ELSE [x_1].[MiddleName]
+	END DESC,
+	CASE
+		WHEN [x_1].[LastName] IS NULL THEN '-1'
+		ELSE [x_1].[LastName]
+	END
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT

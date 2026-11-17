@@ -1,10 +1,13 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
+DECLARE @take  -- Int32
+SET     @take = 10
+
 SELECT
 	[c_2].[Id],
 	[o].[Id] as [OrderId_1]
 FROM
 	(
-		SELECT TOP 10
+		SELECT TOP @take
 			[c_1].[Id]
 		FROM
 			[Customer] [c_1]

@@ -43,15 +43,13 @@ VALUES
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
 	[t1].[Id],
-	[t1].[FinishedOn],
-	[t1].[StartedOn]
+	[t1].[Taken]
 FROM
 	(
 		SELECT
-			[r].[FinishedOn],
-			[r].[StartedOn],
-			DateDiff('h', [r].[StartedOn], [r].[FinishedOn]) + (CDbl(DateDiff('d', DateAdd('h', DateDiff('h', [r].[StartedOn], [r].[FinishedOn]), [r].[StartedOn]), [r].[FinishedOn])) * 86400 + DateDiff('s', DateAdd('d', DateDiff('d', DateAdd('h', DateDiff('h', [r].[StartedOn], [r].[FinishedOn]), [r].[StartedOn]), [r].[FinishedOn]), DateAdd('h', DateDiff('h', [r].[StartedOn], [r].[FinishedOn]), [r].[StartedOn])), [r].[FinishedOn])) / 3600 as [TotalHours],
-			[r].[Id]
+			DateDiff_Big('h', [r].[StartedOn], [r].[FinishedOn]) + DateDiff_Big('ms', DateAdd('h', DateDiff_Big('h', [r].[StartedOn], [r].[FinishedOn]), [r].[StartedOn]), [r].[FinishedOn]) / 3600000 as [TotalHours],
+			[r].[Id],
+			(DateDiff_Big('d', [r].[StartedOn], [r].[FinishedOn]) * 86400) * 10000000 + DateDiff_Big('ms', DateAdd('d', DateDiff_Big('d', [r].[StartedOn], [r].[FinishedOn]), [r].[StartedOn]), [r].[FinishedOn]) * 10000 as [Taken]
 		FROM
 			[EventRow] [r]
 	) [t1]

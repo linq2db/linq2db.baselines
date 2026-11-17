@@ -1,10 +1,13 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
+DECLARE @take  -- Int32
+SET     @take = 1
+
 SELECT
 	[t2].[ParentID],
 	[t2].[Value1]
 FROM
 	(
-		SELECT TOP 1
+		SELECT TOP @take
 			[t1].[ParentID],
 			[t1].[Value1]
 		FROM

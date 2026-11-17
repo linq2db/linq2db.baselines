@@ -1,22 +1,20 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
-	[t1].[ParentID],
-	IIF([t1].[count_1] IS NULL, 0, [t1].[count_1])
+	[p].[ParentID],
+	CASE
+		WHEN [t1].[count_1] IS NULL THEN 0
+		ELSE [t1].[count_1]
+	END
 FROM
-	(
-		SELECT
-			[p].[ParentID],
-			(
-				SELECT
-					SUM([c_1].[ChildID])
-				FROM
-					[Child] [c_1]
-				WHERE
-					[p].[ParentID] = [c_1].[ParentID] AND [c_1].[ChildID] <> [p].[ParentID] * 10 + 1
-			) as [count_1]
-		FROM
-			[Parent] [p]
-	) [t1]
+	[Parent] [p]
+		OUTER APPLY (
+			SELECT
+				SUM([c_1].[ChildID]) as [count_1]
+			FROM
+				[Child] [c_1]
+			WHERE
+				[p].[ParentID] = [c_1].[ParentID] AND [c_1].[ChildID] <> [p].[ParentID] * 10 + 1
+		) [t1]
 WHERE
-	[t1].[ParentID] > 0
+	[p].[ParentID] > 0
 

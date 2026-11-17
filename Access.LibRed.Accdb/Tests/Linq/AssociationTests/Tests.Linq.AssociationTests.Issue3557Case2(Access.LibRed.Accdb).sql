@@ -1,7 +1,10 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
 	[t1].[Id],
-	IIF([t1].[Reason] IS NULL, '', [t1].[Reason])
+	CASE
+		WHEN [t1].[Reason] IS NULL THEN ''
+		ELSE [t1].[Reason]
+	END
 FROM
 	(
 		SELECT

@@ -5,7 +5,10 @@ SELECT
 FROM
 	(
 		SELECT
-			IIF([g_1].[ChildID] MOD 2 = 0, [g_1].[ParentID], NULL) as [Key_1]
+			CASE
+				WHEN [g_1].[ChildID] MOD 2 = 0 THEN [g_1].[ParentID]
+				ELSE NULL
+			END as [Key_1]
 		FROM
 			[Child] [g_1]
 	) [g_2]

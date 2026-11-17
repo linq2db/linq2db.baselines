@@ -4,7 +4,10 @@ SELECT
 FROM
 	(
 		SELECT
-			IIF([p].[MoneyValue] >= 0, Int([p].[MoneyValue] + 0.5), Int([p].[MoneyValue] - 0.5)) as [c1]
+			CASE
+				WHEN [p].[MoneyValue] >= 0 THEN Int([p].[MoneyValue] + 0.5)
+				ELSE Int([p].[MoneyValue] - 0.5)
+			END as [c1]
 		FROM
 			[LinqDataTypes] [p]
 	) [t]

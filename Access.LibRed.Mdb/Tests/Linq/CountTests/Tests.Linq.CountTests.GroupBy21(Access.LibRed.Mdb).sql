@@ -3,7 +3,10 @@ DECLARE @n  -- Int32
 SET     @n = 1
 
 SELECT
-	COUNT(IIF([g_2].[ParentID] < 3, 1, NULL))
+	COUNT(CASE
+		WHEN [g_2].[ParentID] < 3 THEN 1
+		ELSE NULL
+	END)
 FROM
 	(
 		SELECT

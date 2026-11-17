@@ -12,12 +12,15 @@ FROM
 	[LinqDataTypes] [t1]
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
+DECLARE @take  -- Int32
+SET     @take = 15
+
 SELECT
 	[e].[ID],
 	[p].[SmallIntValue]
 FROM
 	(
-		SELECT TOP 15
+		SELECT TOP @take
 			[t3].[ID]
 		FROM
 			(
@@ -33,7 +36,7 @@ FROM
 			) [t3]
 	) [e]
 		LEFT JOIN (
-			SELECT TOP 15
+			SELECT TOP @take
 				[t6].[ID],
 				[t6].[SmallIntValue]
 			FROM

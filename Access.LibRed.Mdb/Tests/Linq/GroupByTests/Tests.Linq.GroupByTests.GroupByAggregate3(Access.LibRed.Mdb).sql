@@ -4,14 +4,18 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			IIF((
-				SELECT
-					AVG([a_Children].[ParentID])
-				FROM
-					[Child] [a_Children]
-				WHERE
-					[g_1].[ParentID] = [a_Children].[ParentID]
-			) > 3, True, False) as [Key_1]
+			CASE
+				WHEN (
+					SELECT
+						AVG([a_Children].[ParentID])
+					FROM
+						[Child] [a_Children]
+					WHERE
+						[g_1].[ParentID] = [a_Children].[ParentID]
+				) > 3
+					THEN True
+				ELSE False
+			END as [Key_1]
 		FROM
 			[Parent] [g_1]
 	) [g_2]

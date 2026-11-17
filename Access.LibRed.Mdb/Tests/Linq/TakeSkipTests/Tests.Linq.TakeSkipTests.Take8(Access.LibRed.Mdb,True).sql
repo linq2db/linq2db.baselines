@@ -1,5 +1,8 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
-SELECT TOP 3
+DECLARE @n  -- Int32
+SET     @n = 3
+
+SELECT TOP @n
 	[t1].[ParentID],
 	[t1].[ChildID]
 FROM

@@ -9,4 +9,6 @@ FROM
 	`Position` `p`
 WHERE
 	`p`.`Group` = @group
+ORDER BY
+	`p`.`Order` DESC
 

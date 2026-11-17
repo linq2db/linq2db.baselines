@@ -1,28 +1,21 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
 	[m_1].[ParentID],
-	(
-		SELECT TOP 1
-			[c_1].[ChildID]
-		FROM
-			[Child] [c_1]
-		WHERE
-			[c_1].[ParentID] = [m_1].[ParentID]
-		ORDER BY
-			[c_1].[ChildID]
-	),
-	(
-		SELECT TOP 1
-			[c_2].[ParentID]
-		FROM
-			[Child] [c_2]
-		WHERE
-			[c_2].[ParentID] = [m_1].[ParentID]
-		ORDER BY
-			[c_2].[ChildID]
-	)
+	[t1].[ChildID],
+	[t1].[ParentID] as [ParentID_1]
 FROM
 	[Parent] [m_1]
+		OUTER APPLY (
+			SELECT TOP 1
+				[c_1].[ChildID],
+				[c_1].[ParentID]
+			FROM
+				[Child] [c_1]
+			WHERE
+				[c_1].[ParentID] = [m_1].[ParentID]
+			ORDER BY
+				[c_1].[ChildID]
+		) [t1]
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT

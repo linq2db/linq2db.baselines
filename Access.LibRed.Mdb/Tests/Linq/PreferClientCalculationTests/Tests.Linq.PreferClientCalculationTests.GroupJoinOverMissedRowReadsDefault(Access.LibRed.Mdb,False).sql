@@ -1,8 +1,14 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
 	[e].[Id],
-	CStr(IIF([j].[Value1] IS NULL, 0, [j].[Value1])),
-	IIF([j].[Value1] IS NULL, 0, [j].[Value1]) + 1
+	CStr(CASE
+		WHEN [j].[Value1] IS NULL THEN 0
+		ELSE [j].[Value1]
+	END),
+	CASE
+		WHEN [j].[Value1] IS NULL THEN 0
+		ELSE [j].[Value1]
+	END + 1
 FROM
 	[TranslatedMemberEntity] [e]
 		LEFT JOIN [TranslatedMemberEntity] [j] ON ([e].[Id] + 1000 = [j].[Id])

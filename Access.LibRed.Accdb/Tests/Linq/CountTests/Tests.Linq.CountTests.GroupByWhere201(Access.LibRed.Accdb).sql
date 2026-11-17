@@ -6,5 +6,8 @@ FROM
 GROUP BY
 	[g_1].[ParentID]
 HAVING
-	COUNT(IIF([g_1].[ChildID] > 20, 1, NULL)) > 2
+	COUNT(CASE
+		WHEN [g_1].[ChildID] > 20 THEN 1
+		ELSE NULL
+	END) > 2
 

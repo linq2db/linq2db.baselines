@@ -1,4 +1,7 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
+DECLARE @take  -- Int32
+SET     @take = 2
+
 SELECT
 	[t_1].[DuplicateData],
 	(
@@ -11,7 +14,7 @@ SELECT
 	)
 FROM
 	(
-		SELECT TOP 2
+		SELECT TOP @take
 			[t].[Id],
 			[t].[DuplicateData]
 		FROM

@@ -7,7 +7,13 @@ SELECT
 FROM
 	[PrefixedCodeWithTitleTable] [t]
 WHERE
-	(IIF([t].[Code] IS NULL, '', [t].[Code]) + IIF([t].[Title] IS NULL, '', [t].[Title])) LIKE @Code
+	(CASE
+		WHEN [t].[Code] IS NULL THEN ''
+		ELSE [t].[Code]
+	END + CASE
+		WHEN [t].[Title] IS NULL THEN ''
+		ELSE [t].[Title]
+	END) LIKE @Code
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 DECLARE @bound VarChar(4) -- AnsiString
@@ -18,7 +24,13 @@ SELECT
 FROM
 	[PrefixedCodeWithTitleTable] [t]
 WHERE
-	(IIF([t].[Code] IS NULL, '', [t].[Code]) + IIF([t].[Title] IS NULL, '', [t].[Title])) = @bound
+	(CASE
+		WHEN [t].[Code] IS NULL THEN ''
+		ELSE [t].[Code]
+	END + CASE
+		WHEN [t].[Title] IS NULL THEN ''
+		ELSE [t].[Title]
+	END) = @bound
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 DECLARE @bound VarChar(4) -- AnsiString
@@ -29,5 +41,11 @@ SELECT
 FROM
 	[PrefixedCodeWithTitleTable] [t]
 WHERE
-	(IIF([t].[Code] IS NULL, '', [t].[Code]) + IIF([t].[Title] IS NULL, '', [t].[Title])) = @bound
+	(CASE
+		WHEN [t].[Code] IS NULL THEN ''
+		ELSE [t].[Code]
+	END + CASE
+		WHEN [t].[Title] IS NULL THEN ''
+		ELSE [t].[Title]
+	END) = @bound
 

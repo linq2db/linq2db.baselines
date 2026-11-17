@@ -1,5 +1,8 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
-SELECT DISTINCT TOP 1
+DECLARE @take  -- Int32
+SET     @take = 1
+
+SELECT DISTINCT TOP @take
 	[t1].[ParentID],
 	[t1].[Value1]
 FROM

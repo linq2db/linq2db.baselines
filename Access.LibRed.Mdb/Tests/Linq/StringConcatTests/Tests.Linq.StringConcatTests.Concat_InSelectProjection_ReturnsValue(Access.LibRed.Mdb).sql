@@ -1,6 +1,12 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
-	IIF([e].[Str1] IS NULL, '', [e].[Str1]) + '/' + IIF([e].[StrReq] IS NULL, '', [e].[StrReq])
+	CASE
+		WHEN [e].[Str1] IS NULL THEN ''
+		ELSE [e].[Str1]
+	END + '/' + CASE
+		WHEN [e].[StrReq] IS NULL THEN ''
+		ELSE [e].[StrReq]
+	END
 FROM
 	[ConcatTestEntity] [e]
 ORDER BY

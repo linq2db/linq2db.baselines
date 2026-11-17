@@ -1,8 +1,21 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
 	[p].[ParentID],
-	IIF([p2].[ParentID] IS NOT NULL, [p2].[Value1], 5),
-	IIF(IIF([p2].[ParentID] IS NOT NULL, [p2].[Value1], 5) IS NOT NULL, IIF([p2].[ParentID] IS NOT NULL, [p2].[Value1], 5), -1)
+	CASE
+		WHEN [p2].[ParentID] IS NOT NULL THEN [p2].[Value1]
+		ELSE 5
+	END,
+	CASE
+		WHEN CASE
+			WHEN [p2].[ParentID] IS NOT NULL THEN [p2].[Value1]
+			ELSE 5
+		END IS NOT NULL
+			THEN CASE
+			WHEN [p2].[ParentID] IS NOT NULL THEN [p2].[Value1]
+			ELSE 5
+		END
+		ELSE -1
+	END
 FROM
 	[Parent] [p]
 		LEFT JOIN [Parent] [p2] ON ([p2].[ParentID] = [p].[ParentID] + 100)

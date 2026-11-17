@@ -4,7 +4,7 @@ SELECT
 FROM
 	[ClosedPeriodRow] [r]
 WHERE
-	DateDiff('d', [r].[ClosedOn], Now) + (CDbl(DateDiff('d', DateAdd('d', DateDiff('d', [r].[ClosedOn], Now), [r].[ClosedOn]), Now)) * 86400 + DateDiff('s', DateAdd('d', DateDiff('d', DateAdd('d', DateDiff('d', [r].[ClosedOn], Now), [r].[ClosedOn]), Now), DateAdd('d', DateDiff('d', [r].[ClosedOn], Now), [r].[ClosedOn])), Now)) / 86400 > 300
+	DateDiff_Big('d', [r].[ClosedOn], Now) + DateDiff_Big('ms', DateAdd('d', DateDiff_Big('d', [r].[ClosedOn], Now), [r].[ClosedOn]), Now) / 86400000 > 300
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
@@ -12,12 +12,72 @@ SELECT
 FROM
 	[ClosedPeriodRow] [r]
 ORDER BY
-	DateDiff('d', [r].[ClosedOn], Now) + (CDbl(DateDiff('d', DateAdd('d', DateDiff('d', [r].[ClosedOn], Now), [r].[ClosedOn]), Now)) * 86400 + DateDiff('s', DateAdd('d', DateDiff('d', DateAdd('d', DateDiff('d', [r].[ClosedOn], Now), [r].[ClosedOn]), Now), DateAdd('d', DateDiff('d', [r].[ClosedOn], Now), [r].[ClosedOn])), Now)) / 86400
+	DateDiff_Big('d', [r].[ClosedOn], Now) + DateDiff_Big('ms', DateAdd('d', DateDiff_Big('d', [r].[ClosedOn], Now), [r].[ClosedOn]), Now) / 86400000
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT TOP 2
-	DateDiff('d', [r].[ClosedOn], Now) + (CDbl(DateDiff('d', DateAdd('d', DateDiff('d', [r].[ClosedOn], Now), [r].[ClosedOn]), Now)) * 86400 + DateDiff('s', DateAdd('d', DateDiff('d', DateAdd('d', DateDiff('d', [r].[ClosedOn], Now), [r].[ClosedOn]), Now), DateAdd('d', DateDiff('d', [r].[ClosedOn], Now), [r].[ClosedOn])), Now)) / 86400,
-	IIF(Now >= DateAdd('d', IIF(Now >= [r].[ClosedOn] AND DateAdd('d', DateDiff('d', [r].[ClosedOn], Now), [r].[ClosedOn]) > Now, DateDiff('d', [r].[ClosedOn], Now) - 1, IIF(Now < [r].[ClosedOn] AND DateAdd('d', DateDiff('d', [r].[ClosedOn], Now), [r].[ClosedOn]) < Now, DateDiff('d', [r].[ClosedOn], Now) + 1, DateDiff('d', [r].[ClosedOn], Now))), [r].[ClosedOn]) AND DateAdd('h', DateDiff('h', DateAdd('d', IIF(Now >= [r].[ClosedOn] AND DateAdd('d', DateDiff('d', [r].[ClosedOn], Now), [r].[ClosedOn]) > Now, DateDiff('d', [r].[ClosedOn], Now) - 1, IIF(Now < [r].[ClosedOn] AND DateAdd('d', DateDiff('d', [r].[ClosedOn], Now), [r].[ClosedOn]) < Now, DateDiff('d', [r].[ClosedOn], Now) + 1, DateDiff('d', [r].[ClosedOn], Now))), [r].[ClosedOn]), Now), DateAdd('d', IIF(Now >= [r].[ClosedOn] AND DateAdd('d', DateDiff('d', [r].[ClosedOn], Now), [r].[ClosedOn]) > Now, DateDiff('d', [r].[ClosedOn], Now) - 1, IIF(Now < [r].[ClosedOn] AND DateAdd('d', DateDiff('d', [r].[ClosedOn], Now), [r].[ClosedOn]) < Now, DateDiff('d', [r].[ClosedOn], Now) + 1, DateDiff('d', [r].[ClosedOn], Now))), [r].[ClosedOn])) > Now, DateDiff('h', DateAdd('d', IIF(Now >= [r].[ClosedOn] AND DateAdd('d', DateDiff('d', [r].[ClosedOn], Now), [r].[ClosedOn]) > Now, DateDiff('d', [r].[ClosedOn], Now) - 1, IIF(Now < [r].[ClosedOn] AND DateAdd('d', DateDiff('d', [r].[ClosedOn], Now), [r].[ClosedOn]) < Now, DateDiff('d', [r].[ClosedOn], Now) + 1, DateDiff('d', [r].[ClosedOn], Now))), [r].[ClosedOn]), Now) - 1, IIF(Now < DateAdd('d', IIF(Now >= [r].[ClosedOn] AND DateAdd('d', DateDiff('d', [r].[ClosedOn], Now), [r].[ClosedOn]) > Now, DateDiff('d', [r].[ClosedOn], Now) - 1, IIF(Now < [r].[ClosedOn] AND DateAdd('d', DateDiff('d', [r].[ClosedOn], Now), [r].[ClosedOn]) < Now, DateDiff('d', [r].[ClosedOn], Now) + 1, DateDiff('d', [r].[ClosedOn], Now))), [r].[ClosedOn]) AND DateAdd('h', DateDiff('h', DateAdd('d', IIF(Now >= [r].[ClosedOn] AND DateAdd('d', DateDiff('d', [r].[ClosedOn], Now), [r].[ClosedOn]) > Now, DateDiff('d', [r].[ClosedOn], Now) - 1, IIF(Now < [r].[ClosedOn] AND DateAdd('d', DateDiff('d', [r].[ClosedOn], Now), [r].[ClosedOn]) < Now, DateDiff('d', [r].[ClosedOn], Now) + 1, DateDiff('d', [r].[ClosedOn], Now))), [r].[ClosedOn]), Now), DateAdd('d', IIF(Now >= [r].[ClosedOn] AND DateAdd('d', DateDiff('d', [r].[ClosedOn], Now), [r].[ClosedOn]) > Now, DateDiff('d', [r].[ClosedOn], Now) - 1, IIF(Now < [r].[ClosedOn] AND DateAdd('d', DateDiff('d', [r].[ClosedOn], Now), [r].[ClosedOn]) < Now, DateDiff('d', [r].[ClosedOn], Now) + 1, DateDiff('d', [r].[ClosedOn], Now))), [r].[ClosedOn])) < Now, DateDiff('h', DateAdd('d', IIF(Now >= [r].[ClosedOn] AND DateAdd('d', DateDiff('d', [r].[ClosedOn], Now), [r].[ClosedOn]) > Now, DateDiff('d', [r].[ClosedOn], Now) - 1, IIF(Now < [r].[ClosedOn] AND DateAdd('d', DateDiff('d', [r].[ClosedOn], Now), [r].[ClosedOn]) < Now, DateDiff('d', [r].[ClosedOn], Now) + 1, DateDiff('d', [r].[ClosedOn], Now))), [r].[ClosedOn]), Now) + 1, DateDiff('h', DateAdd('d', IIF(Now >= [r].[ClosedOn] AND DateAdd('d', DateDiff('d', [r].[ClosedOn], Now), [r].[ClosedOn]) > Now, DateDiff('d', [r].[ClosedOn], Now) - 1, IIF(Now < [r].[ClosedOn] AND DateAdd('d', DateDiff('d', [r].[ClosedOn], Now), [r].[ClosedOn]) < Now, DateDiff('d', [r].[ClosedOn], Now) + 1, DateDiff('d', [r].[ClosedOn], Now))), [r].[ClosedOn]), Now))) MOD 24
+	DateDiff_Big('d', [r].[ClosedOn], Now) + DateDiff_Big('ms', DateAdd('d', DateDiff_Big('d', [r].[ClosedOn], Now), [r].[ClosedOn]), Now) / 86400000,
+	CASE
+		WHEN Now >= DateAdd('d', CASE
+			WHEN Now >= [r].[ClosedOn] AND DateAdd('d', DateDiff_Big('d', [r].[ClosedOn], Now), [r].[ClosedOn]) > Now
+				THEN DateDiff_Big('d', [r].[ClosedOn], Now) - 1
+			WHEN Now < [r].[ClosedOn] AND DateAdd('d', DateDiff_Big('d', [r].[ClosedOn], Now), [r].[ClosedOn]) < Now
+				THEN DateDiff_Big('d', [r].[ClosedOn], Now) + 1
+			ELSE DateDiff_Big('d', [r].[ClosedOn], Now)
+		END, [r].[ClosedOn]) AND DateAdd('h', DateDiff_Big('h', DateAdd('d', CASE
+			WHEN Now >= [r].[ClosedOn] AND DateAdd('d', DateDiff_Big('d', [r].[ClosedOn], Now), [r].[ClosedOn]) > Now
+				THEN DateDiff_Big('d', [r].[ClosedOn], Now) - 1
+			WHEN Now < [r].[ClosedOn] AND DateAdd('d', DateDiff_Big('d', [r].[ClosedOn], Now), [r].[ClosedOn]) < Now
+				THEN DateDiff_Big('d', [r].[ClosedOn], Now) + 1
+			ELSE DateDiff_Big('d', [r].[ClosedOn], Now)
+		END, [r].[ClosedOn]), Now), DateAdd('d', CASE
+			WHEN Now >= [r].[ClosedOn] AND DateAdd('d', DateDiff_Big('d', [r].[ClosedOn], Now), [r].[ClosedOn]) > Now
+				THEN DateDiff_Big('d', [r].[ClosedOn], Now) - 1
+			WHEN Now < [r].[ClosedOn] AND DateAdd('d', DateDiff_Big('d', [r].[ClosedOn], Now), [r].[ClosedOn]) < Now
+				THEN DateDiff_Big('d', [r].[ClosedOn], Now) + 1
+			ELSE DateDiff_Big('d', [r].[ClosedOn], Now)
+		END, [r].[ClosedOn])) > Now
+			THEN DateDiff_Big('h', DateAdd('d', CASE
+			WHEN Now >= [r].[ClosedOn] AND DateAdd('d', DateDiff_Big('d', [r].[ClosedOn], Now), [r].[ClosedOn]) > Now
+				THEN DateDiff_Big('d', [r].[ClosedOn], Now) - 1
+			WHEN Now < [r].[ClosedOn] AND DateAdd('d', DateDiff_Big('d', [r].[ClosedOn], Now), [r].[ClosedOn]) < Now
+				THEN DateDiff_Big('d', [r].[ClosedOn], Now) + 1
+			ELSE DateDiff_Big('d', [r].[ClosedOn], Now)
+		END, [r].[ClosedOn]), Now) - 1
+		WHEN Now < DateAdd('d', CASE
+			WHEN Now >= [r].[ClosedOn] AND DateAdd('d', DateDiff_Big('d', [r].[ClosedOn], Now), [r].[ClosedOn]) > Now
+				THEN DateDiff_Big('d', [r].[ClosedOn], Now) - 1
+			WHEN Now < [r].[ClosedOn] AND DateAdd('d', DateDiff_Big('d', [r].[ClosedOn], Now), [r].[ClosedOn]) < Now
+				THEN DateDiff_Big('d', [r].[ClosedOn], Now) + 1
+			ELSE DateDiff_Big('d', [r].[ClosedOn], Now)
+		END, [r].[ClosedOn]) AND DateAdd('h', DateDiff_Big('h', DateAdd('d', CASE
+			WHEN Now >= [r].[ClosedOn] AND DateAdd('d', DateDiff_Big('d', [r].[ClosedOn], Now), [r].[ClosedOn]) > Now
+				THEN DateDiff_Big('d', [r].[ClosedOn], Now) - 1
+			WHEN Now < [r].[ClosedOn] AND DateAdd('d', DateDiff_Big('d', [r].[ClosedOn], Now), [r].[ClosedOn]) < Now
+				THEN DateDiff_Big('d', [r].[ClosedOn], Now) + 1
+			ELSE DateDiff_Big('d', [r].[ClosedOn], Now)
+		END, [r].[ClosedOn]), Now), DateAdd('d', CASE
+			WHEN Now >= [r].[ClosedOn] AND DateAdd('d', DateDiff_Big('d', [r].[ClosedOn], Now), [r].[ClosedOn]) > Now
+				THEN DateDiff_Big('d', [r].[ClosedOn], Now) - 1
+			WHEN Now < [r].[ClosedOn] AND DateAdd('d', DateDiff_Big('d', [r].[ClosedOn], Now), [r].[ClosedOn]) < Now
+				THEN DateDiff_Big('d', [r].[ClosedOn], Now) + 1
+			ELSE DateDiff_Big('d', [r].[ClosedOn], Now)
+		END, [r].[ClosedOn])) < Now
+			THEN DateDiff_Big('h', DateAdd('d', CASE
+			WHEN Now >= [r].[ClosedOn] AND DateAdd('d', DateDiff_Big('d', [r].[ClosedOn], Now), [r].[ClosedOn]) > Now
+				THEN DateDiff_Big('d', [r].[ClosedOn], Now) - 1
+			WHEN Now < [r].[ClosedOn] AND DateAdd('d', DateDiff_Big('d', [r].[ClosedOn], Now), [r].[ClosedOn]) < Now
+				THEN DateDiff_Big('d', [r].[ClosedOn], Now) + 1
+			ELSE DateDiff_Big('d', [r].[ClosedOn], Now)
+		END, [r].[ClosedOn]), Now) + 1
+		ELSE DateDiff_Big('h', DateAdd('d', CASE
+			WHEN Now >= [r].[ClosedOn] AND DateAdd('d', DateDiff_Big('d', [r].[ClosedOn], Now), [r].[ClosedOn]) > Now
+				THEN DateDiff_Big('d', [r].[ClosedOn], Now) - 1
+			WHEN Now < [r].[ClosedOn] AND DateAdd('d', DateDiff_Big('d', [r].[ClosedOn], Now), [r].[ClosedOn]) < Now
+				THEN DateDiff_Big('d', [r].[ClosedOn], Now) + 1
+			ELSE DateDiff_Big('d', [r].[ClosedOn], Now)
+		END, [r].[ClosedOn]), Now)
+	END MOD 24
 FROM
 	[ClosedPeriodRow] [r]
 WHERE

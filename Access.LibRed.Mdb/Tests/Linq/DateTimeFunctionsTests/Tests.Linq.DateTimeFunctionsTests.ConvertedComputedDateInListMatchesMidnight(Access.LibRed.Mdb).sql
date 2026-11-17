@@ -7,5 +7,8 @@ SELECT
 FROM
 	[ConvertedDayPairRow] [r]
 WHERE
-	IIF([r].[ClosedOn] IS NULL, [r].[OpenedOn], [r].[ClosedOn]) IN (@CoarseMidnight)
+	CASE
+		WHEN [r].[ClosedOn] IS NULL THEN [r].[OpenedOn]
+		ELSE [r].[ClosedOn]
+	END IN (@CoarseMidnight)
 

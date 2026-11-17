@@ -7,7 +7,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[String] IS NULL OR [s].[String] <> @value
+	[s].[String] IS DISTINCT FROM @value
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 DECLARE @value NVarChar(3) -- String
@@ -18,7 +18,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[NullableString] IS NULL OR [s].[NullableString] <> @value
+	[s].[NullableString] IS DISTINCT FROM @value
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 DECLARE @value NVarChar(3) -- String
@@ -29,7 +29,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	NOT ([s].[String] IS NULL OR [s].[String] <> @value)
+	[s].[String] IS NOT DISTINCT FROM @value
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 DECLARE @value NVarChar(3) -- String
@@ -40,5 +40,5 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	NOT ([s].[NullableString] IS NULL OR [s].[NullableString] <> @value)
+	[s].[NullableString] IS NOT DISTINCT FROM @value
 

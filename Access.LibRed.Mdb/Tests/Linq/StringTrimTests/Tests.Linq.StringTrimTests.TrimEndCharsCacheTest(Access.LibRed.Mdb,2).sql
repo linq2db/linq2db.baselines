@@ -1,6 +1,6 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
-	[t].[VarCharColumn]
+	RTrim([t].[VarCharColumn], 'ab')
 FROM
 	[StringTrimTable] [t]
 ORDER BY

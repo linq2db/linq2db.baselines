@@ -79,8 +79,7 @@ SELECT
 FROM
 	[BudgetedTaskRow] [r]
 ORDER BY
-	[r].[FinishedOn],
-	[r].[StartedOn]
+	(DateDiff_Big('d', [r].[StartedOn], [r].[FinishedOn]) * 86400) * 10000000 + DateDiff_Big('ms', DateAdd('d', DateDiff_Big('d', [r].[StartedOn], [r].[FinishedOn]), [r].[StartedOn]), [r].[FinishedOn]) * 10000
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
@@ -88,6 +87,5 @@ SELECT
 FROM
 	[BudgetedTaskRow] [r]
 ORDER BY
-	[r].[FinishedOn] DESC,
-	[r].[StartedOn] DESC
+	(DateDiff_Big('d', [r].[StartedOn], [r].[FinishedOn]) * 86400) * 10000000 + DateDiff_Big('ms', DateAdd('d', DateDiff_Big('d', [r].[StartedOn], [r].[FinishedOn]), [r].[StartedOn]), [r].[FinishedOn]) * 10000 DESC
 

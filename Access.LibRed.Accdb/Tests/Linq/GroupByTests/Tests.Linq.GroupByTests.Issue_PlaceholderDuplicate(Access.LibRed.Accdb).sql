@@ -1,5 +1,8 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
-SELECT TOP 100
+DECLARE @take  -- Int32
+SET     @take = 100
+
+SELECT TOP @take
 	[r].[PersonID]
 FROM
 	[Person] [r]

@@ -3,7 +3,10 @@ DECLARE @value  -- DateTime
 SET     @value = #2020-02-29 17:54:55#
 
 SELECT
-	COUNT(IIF([g_1].[TimeStamp] > @value, 1, NULL))
+	COUNT(CASE
+		WHEN [g_1].[TimeStamp] > @value THEN 1
+		ELSE NULL
+	END)
 FROM
 	[Issue680Table] [g_1]
 GROUP BY

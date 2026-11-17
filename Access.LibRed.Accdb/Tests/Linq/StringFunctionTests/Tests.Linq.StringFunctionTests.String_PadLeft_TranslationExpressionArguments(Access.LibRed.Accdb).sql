@@ -5,7 +5,10 @@ SELECT
 FROM
 	(
 		SELECT
-			IIF(Len([p].[FirstName]) >= [p].[PersonID], [p].[FirstName], STRING([p].[PersonID] - Len([p].[FirstName]), '.') + [p].[FirstName]) as [FirstName],
+			CASE
+				WHEN Len([p].[FirstName]) >= [p].[PersonID] THEN [p].[FirstName]
+				ELSE STRING([p].[PersonID] - Len([p].[FirstName]), '.') + [p].[FirstName]
+			END as [FirstName],
 			[p].[PersonID] as [ID]
 		FROM
 			[Person] [p]

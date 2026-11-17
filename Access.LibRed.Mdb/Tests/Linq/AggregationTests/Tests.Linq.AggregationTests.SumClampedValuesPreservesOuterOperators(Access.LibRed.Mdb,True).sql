@@ -1,22 +1,23 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
-	IIF([t1].[Sum_1] IS NULL, 0, [t1].[Sum_1])
+	CASE
+		WHEN [t1].[Sum_1] IS NULL THEN 0
+		ELSE [t1].[Sum_1]
+	END
 FROM
-	(
-		SELECT
-			(
-				SELECT
-					SUM(IIF(0 >= [row_1].[Value], 0, [row_1].[Value]))
-				FROM
-					[Row] [row_1]
-				WHERE
-					[row_1].[ParentId] = [parent].[Id] AND [row_1].[Value] > 3 AND
-					0 < [row_1].[Value]
-			) as [Sum_1],
-			[parent].[Id]
-		FROM
-			[ParentRow] [parent]
-	) [t1]
+	[ParentRow] [parent]
+		OUTER APPLY (
+			SELECT
+				SUM(CASE
+					WHEN 0 >= [row_1].[Value] THEN 0
+					ELSE [row_1].[Value]
+				END) as [Sum_1]
+			FROM
+				[Row] [row_1]
+			WHERE
+				[row_1].[ParentId] = [parent].[Id] AND [row_1].[Value] > 3 AND
+				0 < [row_1].[Value]
+		) [t1]
 ORDER BY
-	[t1].[Id]
+	[parent].[Id]
 

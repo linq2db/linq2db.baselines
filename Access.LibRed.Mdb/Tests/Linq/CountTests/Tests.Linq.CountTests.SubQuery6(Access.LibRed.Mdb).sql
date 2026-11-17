@@ -1,4 +1,7 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
+DECLARE @take  -- Int32
+SET     @take = 5
+
 SELECT
 	(
 		SELECT
@@ -10,7 +13,7 @@ SELECT
 	)
 FROM
 	(
-		SELECT TOP 5
+		SELECT TOP @take
 			[p].[ParentID]
 		FROM
 			[Parent] [p]

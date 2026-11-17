@@ -1,6 +1,9 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
-	COUNT(*) > 0
-FROM
-	[Child] [t1]
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[Child] [t1]
+	)
 

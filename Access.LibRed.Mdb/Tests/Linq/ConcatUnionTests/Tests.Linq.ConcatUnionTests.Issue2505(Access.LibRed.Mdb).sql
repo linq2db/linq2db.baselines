@@ -4,14 +4,20 @@ SELECT
 FROM
 	(
 		SELECT
-			IIF([i].[MiddleName] IS NULL, 'M', 'O') as [Gender],
+			CASE
+				WHEN [i].[MiddleName] IS NULL THEN 'M'
+				ELSE 'O'
+			END as [Gender],
 			[i].[FirstName],
 			[i].[LastName]
 		FROM
 			[Person] [i]
 		UNION ALL
 		SELECT
-			IIF([i_1].[MiddleName] IS NULL, 'M', 'O') as [Gender],
+			CASE
+				WHEN [i_1].[MiddleName] IS NULL THEN 'M'
+				ELSE 'O'
+			END as [Gender],
 			[i_1].[FirstName],
 			[i_1].[LastName]
 		FROM

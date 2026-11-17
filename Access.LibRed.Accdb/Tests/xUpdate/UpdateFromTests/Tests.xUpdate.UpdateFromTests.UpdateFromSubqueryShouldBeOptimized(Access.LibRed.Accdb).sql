@@ -9,8 +9,14 @@ UPDATE
 	[UpdateSubquerySourceTable] [x]
 		LEFT JOIN [UpdateSubquerySourceTable] [canChange] ON ([canChange].[Id] = [x].[Id] + 1)
 SET
-	[x].[FirstName] = IIF([canChange].[Id] IS NOT NULL, [canChange].[FirstName], [x].[FirstName]),
-	[x].[LastName] = IIF([canChange].[Id] IS NOT NULL, [canChange].[LastName], [x].[LastName])
+	[x].[FirstName] = CASE
+		WHEN [canChange].[Id] IS NOT NULL THEN [canChange].[FirstName]
+		ELSE [x].[FirstName]
+	END,
+	[x].[LastName] = CASE
+		WHEN [canChange].[Id] IS NOT NULL THEN [canChange].[LastName]
+		ELSE [x].[LastName]
+	END
 WHERE
 	[x].[Id] = 1
 

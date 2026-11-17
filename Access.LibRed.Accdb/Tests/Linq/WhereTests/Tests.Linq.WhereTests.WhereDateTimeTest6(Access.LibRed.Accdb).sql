@@ -13,5 +13,8 @@ SELECT
 FROM
 	[LinqDataTypes] [t1]
 WHERE
-	IIF([t1].[DateTimeValue] IS NOT NULL, DateValue([t1].[DateTimeValue]), NULL) = DateValue(DateSerial(2009, 9, 20))
+	CASE
+		WHEN [t1].[DateTimeValue] IS NOT NULL THEN DateValue([t1].[DateTimeValue])
+		ELSE NULL
+	END = DateValue(DateSerial(2009, 9, 20))
 

@@ -4,7 +4,11 @@ SELECT
 FROM
 	(
 		SELECT
-			IIF([p].[MoneyValue] * 2 = ROUND([p].[MoneyValue] * 2, 2) AND [p].[MoneyValue] <> ROUND([p].[MoneyValue], 2), ROUND([p].[MoneyValue] / 2, 2) * 2, ROUND([p].[MoneyValue], 2)) as [Value_1]
+			CASE
+				WHEN [p].[MoneyValue] * 2 = ROUND([p].[MoneyValue] * 2, 2) AND [p].[MoneyValue] <> ROUND([p].[MoneyValue], 2)
+					THEN ROUND([p].[MoneyValue] / 2, 2) * 2
+				ELSE ROUND([p].[MoneyValue], 2)
+			END as [Value_1]
 		FROM
 			[LinqDataTypes] [p]
 	) [pp]

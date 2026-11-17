@@ -1,6 +1,9 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
-	IIF([s].[String] = 'abc', NULL, [s].[String])
+	CASE
+		WHEN [s].[String] = 'abc' THEN NULL
+		ELSE [s].[String]
+	END
 FROM
 	[Src] [s]
 ORDER BY
@@ -24,7 +27,10 @@ WHERE
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
-	IIF([s].[String] = 'xyz', NULL, [s].[String])
+	CASE
+		WHEN [s].[String] = 'xyz' THEN NULL
+		ELSE [s].[String]
+	END
 FROM
 	[Src] [s]
 ORDER BY
@@ -72,7 +78,10 @@ WHERE
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
-	IIF([s].[NullableString] = 'abc', NULL, [s].[NullableString])
+	CASE
+		WHEN [s].[NullableString] = 'abc' THEN NULL
+		ELSE [s].[NullableString]
+	END
 FROM
 	[Src] [s]
 ORDER BY
@@ -96,7 +105,10 @@ WHERE
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
-	IIF([s].[NullableString] = 'xyz', NULL, [s].[NullableString])
+	CASE
+		WHEN [s].[NullableString] = 'xyz' THEN NULL
+		ELSE [s].[NullableString]
+	END
 FROM
 	[Src] [s]
 ORDER BY

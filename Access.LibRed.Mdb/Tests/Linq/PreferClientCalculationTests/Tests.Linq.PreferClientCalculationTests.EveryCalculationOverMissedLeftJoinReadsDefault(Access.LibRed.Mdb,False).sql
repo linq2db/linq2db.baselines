@@ -1,21 +1,85 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
 	[e].[Id],
-	IIF([j].[Value1] IS NULL, 0, [j].[Value1]) + 1,
-	IIF([j].[Value1] IS NULL, 0, [j].[Value1]) BOR 1,
-	IIF([j].[Value1] IS NULL OR [j].[Value1] < 5, 'a', 'b'),
-	IIF(IIF([j].[Value1] IS NULL, 0, [j].[Value1]) IN (0), 'y', 'n'),
-	IIF(0 IN (IIF([j].[Value1] IS NULL, 0, [j].[Value1]), 5), 'y', 'n'),
-	-IIF([j].[Value1] IS NULL, 0, [j].[Value1]) + 1,
-	IIF(NOT IIF([j].[Flag] IS NULL, False, [j].[Flag]), 't', 'f'),
-	IIF(NOT (IIF([j].[Flag] IS NULL, False, [j].[Flag]) OR [e].[Id] < 0), 't', 'f'),
-	Abs(IIF([j].[Value1] IS NULL, 0, [j].[Value1])) + 1,
-	'x' + CStr(IIF([j].[Value1] IS NULL, 0, [j].[Value1])),
-	ABS(IIF([j].[Value1] IS NULL, 0, [j].[Value1])) + 1,
-	IIF([j].[Value1] IS NULL, 0, [j].[Value1]) + 1,
-	IIF([e].[Id] > 0, IIF([j].[Value1] IS NULL, 0, [j].[Value1]), 5) + 1,
-	IIF([j].[Value1] IS NULL, 0, [j].[Value1]) + 1,
-	IIF([j].[Value1] IS NULL, 0, [j].[Value1]) + 1
+	CASE
+		WHEN [j].[Value1] IS NULL THEN 0
+		ELSE [j].[Value1]
+	END + 1,
+	CASE
+		WHEN [j].[Value1] IS NULL THEN 0
+		ELSE [j].[Value1]
+	END BOR 1,
+	CASE
+		WHEN [j].[Value1] IS NULL OR [j].[Value1] < 5 THEN 'a'
+		ELSE 'b'
+	END,
+	CASE
+		WHEN CASE
+			WHEN [j].[Value1] IS NULL THEN 0
+			ELSE [j].[Value1]
+		END IN (0)
+			THEN 'y'
+		ELSE 'n'
+	END,
+	CASE
+		WHEN 0 IN (CASE
+			WHEN [j].[Value1] IS NULL THEN 0
+			ELSE [j].[Value1]
+		END, 5)
+			THEN 'y'
+		ELSE 'n'
+	END,
+	-CASE
+		WHEN [j].[Value1] IS NULL THEN 0
+		ELSE [j].[Value1]
+	END + 1,
+	CASE
+		WHEN NOT CASE
+			WHEN [j].[Flag] IS NULL THEN False
+			ELSE [j].[Flag]
+		END
+			THEN 't'
+		ELSE 'f'
+	END,
+	CASE
+		WHEN NOT (CASE
+			WHEN [j].[Flag] IS NULL THEN False
+			ELSE [j].[Flag]
+		END OR [e].[Id] < 0)
+			THEN 't'
+		ELSE 'f'
+	END,
+	Abs(CASE
+		WHEN [j].[Value1] IS NULL THEN 0
+		ELSE [j].[Value1]
+	END) + 1,
+	'x' + CStr(CASE
+		WHEN [j].[Value1] IS NULL THEN 0
+		ELSE [j].[Value1]
+	END),
+	ABS(CASE
+		WHEN [j].[Value1] IS NULL THEN 0
+		ELSE [j].[Value1]
+	END) + 1,
+	CASE
+		WHEN [j].[Value1] IS NULL THEN 0
+		ELSE [j].[Value1]
+	END + 1,
+	CASE
+		WHEN [e].[Id] > 0 THEN CASE
+			WHEN [j].[Value1] IS NULL THEN 0
+			ELSE [j].[Value1]
+		END
+		ELSE 5
+	END + 1,
+	CASE
+		WHEN [j].[Value1] IS NULL THEN 0
+		ELSE [j].[Value1]
+	END + 1,
+	CASE
+		WHEN [j].[Value1] IS NULL THEN 0
+		ELSE [j].[Value1]
+	END + 1
 FROM
 	[MissedJoinEntity] [e]
 		LEFT JOIN [MissedJoinEntity] [j] ON ([j].[Id] = [e].[Id] + 1000)

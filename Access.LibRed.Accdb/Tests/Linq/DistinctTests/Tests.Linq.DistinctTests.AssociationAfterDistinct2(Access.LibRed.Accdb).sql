@@ -15,40 +15,32 @@ FROM
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
-	[r_2].[ParentID],
-	[r_2].[ChildID],
-	[r_2].[ParentID_1],
-	[r_2].[Value1],
-	[r_2].[Count_1]
+	[r_1].[ParentID],
+	[r_1].[ChildID],
+	[r_1].[ParentID_1],
+	[r_1].[Value1],
+	[t1].[Count_1]
 FROM
 	(
-		SELECT
-			[r_1].[ParentID],
-			[r_1].[ChildID],
-			[r_1].[ParentID_1],
-			[r_1].[Value1],
-			(
-				SELECT
-					COUNT(*)
-				FROM
-					[Child] [a_Children]
-				WHERE
-					[r_1].[ParentID_1] = [a_Children].[ParentID]
-			) as [Count_1]
+		SELECT DISTINCT
+			[r].[ParentID],
+			[r].[ChildID],
+			[a_Parent].[ParentID] as [ParentID_1],
+			[a_Parent].[Value1]
 		FROM
-			(
-				SELECT DISTINCT
-					[r].[ParentID],
-					[r].[ChildID],
-					[a_Parent].[ParentID] as [ParentID_1],
-					[a_Parent].[Value1]
-				FROM
-					[Child] [r]
-						LEFT JOIN [Parent] [a_Parent] ON ([r].[ParentID] = [a_Parent].[ParentID])
-			) [r_1]
-	) [r_2]
+			[Child] [r]
+				LEFT JOIN [Parent] [a_Parent] ON ([r].[ParentID] = [a_Parent].[ParentID])
+	) [r_1]
+		OUTER APPLY (
+			SELECT
+				COUNT(*) as [Count_1]
+			FROM
+				[Child] [a_Children]
+			WHERE
+				[r_1].[ParentID_1] = [a_Children].[ParentID]
+		) [t1]
 ORDER BY
-	[r_2].[Count_1]
+	[t1].[Count_1]
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT

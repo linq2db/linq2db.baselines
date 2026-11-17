@@ -5,7 +5,7 @@ SELECT DISTINCT
 FROM
 	[LinqDataTypes] [t]
 ORDER BY
-	([t].[BoolValue]) DESC,
+	-[t].[BoolValue],
 	[t].[ID]
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed

@@ -1,12 +1,18 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
 	[c_1].[ChildID],
-	IIF([x_1].[c1] IS NULL, NULL, [x_1].[ParentID])
+	CASE
+		WHEN [x_1].[c1] IS NULL THEN NULL
+		ELSE [x_1].[ParentID]
+	END
 FROM
 	[Child] [c_1]
 		LEFT JOIN (
 			SELECT
-				IIF([x].[Value1] = 1, True, False) as [c1],
+				CASE
+					WHEN [x].[Value1] = 1 THEN True
+					ELSE False
+				END as [c1],
 				[x].[ParentID]
 			FROM
 				[Parent] [x]
@@ -31,7 +37,10 @@ FROM
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
 	[x].[ParentID],
-	IIF([x].[Value1] <> 1 OR [x].[Value1] IS NULL, 1, 0)
+	CASE
+		WHEN [x].[Value1] <> 1 OR [x].[Value1] IS NULL THEN 1
+		ELSE 0
+	END
 FROM
 	[Parent] [x]
 

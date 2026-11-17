@@ -74,7 +74,10 @@ ORDER BY
 	[t2].[Id]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
-SELECT TOP 2
+DECLARE @skip  -- Int32
+SET     @skip = 1
+
+SELECT
 	[t1].[Value2]
 FROM
 	(
@@ -86,4 +89,5 @@ FROM
 	) [t1]
 ORDER BY
 	[t1].[Id]
+OFFSET @skip ROWS FETCH NEXT 1 ROWS ONLY 
 

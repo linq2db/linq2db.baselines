@@ -1,21 +1,20 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
-SELECT DISTINCT
+SELECT
 	[t1].[ParentID],
 	[c_1].[ParentID] as [ParentID_1],
+	[c_1].[ParentID] as [ParentID_2],
 	[c_1].[ChildID]
 FROM
 	[Parent] [t1]
 		LEFT JOIN [Child] [c_1] ON ([c_1].[ParentID] = [t1].[ParentID])
-WHERE
-	EXISTS(
-		SELECT
-			*
-		FROM
-			[Parent] [p]
-		WHERE
-			[t1].[ParentID] = [p].[ParentID] AND [c_1].[ParentID] IS NULL AND
-			[c_1].[ChildID] IS NULL
-	)
+INTERSECT
+SELECT
+	[p].[ParentID],
+	IIF(False, 0, NULL) as [ParentID_1],
+	IIF(False, 0, NULL) as [ParentID_2],
+	IIF(False, 0, NULL) as [ChildID]
+FROM
+	[Parent] [p]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT

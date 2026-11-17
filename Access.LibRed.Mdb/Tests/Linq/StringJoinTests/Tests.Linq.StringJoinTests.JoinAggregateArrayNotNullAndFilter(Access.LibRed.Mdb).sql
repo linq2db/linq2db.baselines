@@ -1,10 +1,34 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
-	Mid(IIF([x].[NullableValue] IS NULL OR [x].[NullableValue] NOT LIKE '%A%', '', ', ' + IIF([x].[NullableValue] LIKE '%A%', [x].[NullableValue], NULL)) + IIF([x].[NotNullableValue] NOT LIKE '%A%', '', ', ' + IIF([x].[NotNullableValue] LIKE '%A%', [x].[NotNullableValue], NULL)) + IIF([x].[VarcharValue] IS NULL OR [x].[VarcharValue] NOT LIKE '%A%', '', ', ' + IIF([x].[VarcharValue] LIKE '%A%', [x].[VarcharValue], NULL)) + IIF([x].[NVarcharValue] IS NULL OR [x].[NVarcharValue] NOT LIKE '%A%', '', ', ' + IIF([x].[NVarcharValue] LIKE '%A%', [x].[NVarcharValue], NULL)), 3)
+	CONCAT_WS(', ', CASE
+		WHEN [x].[NullableValue] LIKE '%A%' THEN [x].[NullableValue]
+		ELSE NULL
+	END, CASE
+		WHEN [x].[NotNullableValue] LIKE '%A%' THEN [x].[NotNullableValue]
+		ELSE NULL
+	END, CASE
+		WHEN [x].[VarcharValue] LIKE '%A%' THEN [x].[VarcharValue]
+		ELSE NULL
+	END, CASE
+		WHEN [x].[NVarcharValue] LIKE '%A%' THEN [x].[NVarcharValue]
+		ELSE NULL
+	END)
 FROM
 	[SampleClass] [x]
 WHERE
-	Len(Mid(IIF([x].[NullableValue] IS NULL OR [x].[NullableValue] NOT LIKE '%A%', '', ', ' + IIF([x].[NullableValue] LIKE '%A%', [x].[NullableValue], NULL)) + IIF([x].[NotNullableValue] NOT LIKE '%A%', '', ', ' + IIF([x].[NotNullableValue] LIKE '%A%', [x].[NotNullableValue], NULL)) + IIF([x].[VarcharValue] IS NULL OR [x].[VarcharValue] NOT LIKE '%A%', '', ', ' + IIF([x].[VarcharValue] LIKE '%A%', [x].[VarcharValue], NULL)) + IIF([x].[NVarcharValue] IS NULL OR [x].[NVarcharValue] NOT LIKE '%A%', '', ', ' + IIF([x].[NVarcharValue] LIKE '%A%', [x].[NVarcharValue], NULL)), 3)) <> 0
+	Len(CONCAT_WS(', ', CASE
+		WHEN [x].[NullableValue] LIKE '%A%' THEN [x].[NullableValue]
+		ELSE NULL
+	END, CASE
+		WHEN [x].[NotNullableValue] LIKE '%A%' THEN [x].[NotNullableValue]
+		ELSE NULL
+	END, CASE
+		WHEN [x].[VarcharValue] LIKE '%A%' THEN [x].[VarcharValue]
+		ELSE NULL
+	END, CASE
+		WHEN [x].[NVarcharValue] LIKE '%A%' THEN [x].[NVarcharValue]
+		ELSE NULL
+	END)) <> 0
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT

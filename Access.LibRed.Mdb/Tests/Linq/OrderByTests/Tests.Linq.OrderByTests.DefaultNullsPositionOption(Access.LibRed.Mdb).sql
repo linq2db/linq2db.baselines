@@ -1,20 +1,32 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
-SELECT TOP 3
+DECLARE @take  -- Int32
+SET     @take = 3
+
+SELECT TOP @take
 	[x].[Id]
 FROM
 	[NullsTable] [x]
 ORDER BY
-	IIF([x].[Value] IS NULL, 1, 0),
+	CASE
+		WHEN [x].[Value] IS NULL THEN 1
+		ELSE 0
+	END,
 	[x].[Value],
 	[x].[Id]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
-SELECT TOP 3
+DECLARE @take  -- Int32
+SET     @take = 3
+
+SELECT TOP @take
 	[x].[Id]
 FROM
 	[NullsTable] [x]
 ORDER BY
-	IIF([x].[Value] IS NULL, 1, 0),
+	CASE
+		WHEN [x].[Value] IS NULL THEN 1
+		ELSE 0
+	END,
 	[x].[Value],
 	[x].[Id]
 

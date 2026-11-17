@@ -2,7 +2,11 @@
 UPDATE
 	[NullableFlagTable] [t1]
 SET
-	[t1].[Flag] = IIF([t1].[A] = [t1].[B] OR [t1].[A] IS NULL AND [t1].[B] IS NULL, True, False)
+	[t1].[Flag] = CASE
+		WHEN [t1].[A] = [t1].[B] OR [t1].[A] IS NULL AND [t1].[B] IS NULL
+			THEN True
+		ELSE False
+	END
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT

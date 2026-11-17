@@ -1,11 +1,14 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
+DECLARE @take  -- Int32
+SET     @take = 2
+
 SELECT
 	[t1].[Id],
 	[t1].[CreationDate],
 	[t1].[Value_1]
 FROM
 	(
-		SELECT TOP 2
+		SELECT TOP @take
 			[x].[Id],
 			(
 				SELECT TOP 1

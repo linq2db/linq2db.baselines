@@ -1,4 +1,5 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* x => x.IntVlaue == 1 ? 3 : 4 == 3 */
 SELECT
 	[x].[Id],
 	[x].[IntVlaue],
@@ -25,6 +26,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* x_with_not => !(x_with_not.IntVlaue == 1 ? 3 : 4 == 3) */
 SELECT
 	[x_with_not].[Id],
 	[x_with_not].[IntVlaue],
@@ -51,6 +53,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* swap => 3 == swap.IntVlaue == 1 ? 3 : 4 */
 SELECT
 	[swap].[Id],
 	[swap].[IntVlaue],
@@ -77,6 +80,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* swap_with_not => !(3 == swap_with_not.IntVlaue == 1 ? 3 : 4) */
 SELECT
 	[swap_with_not].[Id],
 	[swap_with_not].[IntVlaue],
@@ -103,6 +107,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* x => x.IntVlaue == 1 ? null : (bool?)False == (bool?)True */
 SELECT
 	[x].[Id],
 	[x].[IntVlaue],
@@ -129,6 +134,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* x_with_not => !(x_with_not.IntVlaue == 1 ? null : (bool?)False == (bool?)True) */
 SELECT
 	[x_with_not].[Id],
 	[x_with_not].[IntVlaue],
@@ -153,6 +159,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* swap => (bool?)True == swap.IntVlaue == 1 ? null : (bool?)False */
 SELECT
 	[swap].[Id],
 	[swap].[IntVlaue],
@@ -179,6 +186,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* swap_with_not => !((bool?)True == swap_with_not.IntVlaue == 1 ? null : (bool?)False) */
 SELECT
 	[swap_with_not].[Id],
 	[swap_with_not].[IntVlaue],
@@ -203,6 +211,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* x => x.IntVlaue == 1 ? null : (bool?)True == (bool?)True */
 SELECT
 	[x].[Id],
 	[x].[IntVlaue],
@@ -229,6 +238,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* x_with_not => !(x_with_not.IntVlaue == 1 ? null : (bool?)True == (bool?)True) */
 SELECT
 	[x_with_not].[Id],
 	[x_with_not].[IntVlaue],
@@ -255,6 +265,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* swap => (bool?)True == swap.IntVlaue == 1 ? null : (bool?)True */
 SELECT
 	[swap].[Id],
 	[swap].[IntVlaue],
@@ -281,6 +292,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* swap_with_not => !((bool?)True == swap_with_not.IntVlaue == 1 ? null : (bool?)True) */
 SELECT
 	[swap_with_not].[Id],
 	[swap_with_not].[IntVlaue],
@@ -307,6 +319,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* x => x.BoolValue ? True : False == True */
 SELECT
 	[x].[Id],
 	[x].[IntVlaue],
@@ -333,6 +346,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* x_with_not => !(x_with_not.BoolValue ? True : False == True) */
 SELECT
 	[x_with_not].[Id],
 	[x_with_not].[IntVlaue],
@@ -359,6 +373,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* swap => True == swap.BoolValue ? True : False */
 SELECT
 	[swap].[Id],
 	[swap].[IntVlaue],
@@ -385,6 +400,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* swap_with_not => !(True == swap_with_not.BoolValue ? True : False) */
 SELECT
 	[swap_with_not].[Id],
 	[swap_with_not].[IntVlaue],
@@ -411,6 +427,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* x => x.BoolValue == True ? null : (bool?)True == (bool?)True */
 SELECT
 	[x].[Id],
 	[x].[IntVlaue],
@@ -437,6 +454,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* x_with_not => !(x_with_not.BoolValue == True ? null : (bool?)True == (bool?)True) */
 SELECT
 	[x_with_not].[Id],
 	[x_with_not].[IntVlaue],
@@ -463,6 +481,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* swap => (bool?)True == swap.BoolValue == True ? null : (bool?)True */
 SELECT
 	[swap].[Id],
 	[swap].[IntVlaue],
@@ -489,6 +508,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* swap_with_not => !((bool?)True == swap_with_not.BoolValue == True ? null : (bool?)True) */
 SELECT
 	[swap_with_not].[Id],
 	[swap_with_not].[IntVlaue],
@@ -515,6 +535,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* x => x.BoolValue == True ? True : False == True */
 SELECT
 	[x].[Id],
 	[x].[IntVlaue],
@@ -541,6 +562,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* x_with_not => !(x_with_not.BoolValue == True ? True : False == True) */
 SELECT
 	[x_with_not].[Id],
 	[x_with_not].[IntVlaue],
@@ -567,6 +589,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* swap => True == swap.BoolValue == True ? True : False */
 SELECT
 	[swap].[Id],
 	[swap].[IntVlaue],
@@ -593,6 +616,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* swap_with_not => !(True == swap_with_not.BoolValue == True ? True : False) */
 SELECT
 	[swap_with_not].[Id],
 	[swap_with_not].[IntVlaue],
@@ -619,6 +643,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* x => x.StringValueNullable ==   String.op_Equality(...)  null ? 1 : x.StringValueNullable !=   String.op_Inequality(...)  null ? 2 : 3 == 2 */
 SELECT
 	[x].[Id],
 	[x].[IntVlaue],
@@ -645,6 +670,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* x_with_not => !(x_with_not.StringValueNullable ==   String.op_Equality(...)  null ? 1 : x_with_not.StringValueNullable !=   String.op_Inequality(...)  null ? 2 : 3 == 2) */
 SELECT
 	[x_with_not].[Id],
 	[x_with_not].[IntVlaue],
@@ -671,6 +697,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* swap => 2 == swap.StringValueNullable ==   String.op_Equality(...)  null ? 1 : swap.StringValueNullable !=   String.op_Inequality(...)  null ? 2 : 3 */
 SELECT
 	[swap].[Id],
 	[swap].[IntVlaue],
@@ -697,6 +724,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* swap_with_not => !(2 == swap_with_not.StringValueNullable ==   String.op_Equality(...)  null ? 1 : swap_with_not.StringValueNullable !=   String.op_Inequality(...)  null ? 2 : 3) */
 SELECT
 	[swap_with_not].[Id],
 	[swap_with_not].[IntVlaue],
@@ -723,6 +751,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* x => x.StringValueNullable ==   String.op_Equality(...)  null ? 2 : x.StringValueNullable !=   String.op_Inequality(...)  null ? 1 : 3 == 2 */
 SELECT
 	[x].[Id],
 	[x].[IntVlaue],
@@ -749,6 +778,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* x_with_not => !(x_with_not.StringValueNullable ==   String.op_Equality(...)  null ? 2 : x_with_not.StringValueNullable !=   String.op_Inequality(...)  null ? 1 : 3 == 2) */
 SELECT
 	[x_with_not].[Id],
 	[x_with_not].[IntVlaue],
@@ -775,6 +805,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* swap => 2 == swap.StringValueNullable ==   String.op_Equality(...)  null ? 2 : swap.StringValueNullable !=   String.op_Inequality(...)  null ? 1 : 3 */
 SELECT
 	[swap].[Id],
 	[swap].[IntVlaue],
@@ -801,6 +832,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* swap_with_not => !(2 == swap_with_not.StringValueNullable ==   String.op_Equality(...)  null ? 2 : swap_with_not.StringValueNullable !=   String.op_Inequality(...)  null ? 1 : 3) */
 SELECT
 	[swap_with_not].[Id],
 	[swap_with_not].[IntVlaue],
@@ -827,6 +859,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* x => x.StringValueNullable ==   String.op_Equality(...)  null ? 2 : x.StringValueNullable !=   String.op_Inequality(...)  null ? 1 : 3 > 3 */
 SELECT
 	[x].[Id],
 	[x].[IntVlaue],
@@ -853,6 +886,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* x_with_not => !(x_with_not.StringValueNullable ==   String.op_Equality(...)  null ? 2 : x_with_not.StringValueNullable !=   String.op_Inequality(...)  null ? 1 : 3 > 3) */
 SELECT
 	[x_with_not].[Id],
 	[x_with_not].[IntVlaue],
@@ -877,6 +911,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* x => x.StringValueNullable ==   String.op_Equality(...)  null ? 2 : x.StringValueNullable !=   String.op_Inequality(...)  null ? 1 : 3 >= 1 */
 SELECT
 	[x].[Id],
 	[x].[IntVlaue],
@@ -901,6 +936,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* x_with_not => !(x_with_not.StringValueNullable ==   String.op_Equality(...)  null ? 2 : x_with_not.StringValueNullable !=   String.op_Inequality(...)  null ? 1 : 3 >= 1) */
 SELECT
 	[x_with_not].[Id],
 	[x_with_not].[IntVlaue],
@@ -927,6 +963,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* x => x.StringValueNullable ==   String.op_Equality(...)  null ? 2 : x.StringValueNullable !=   String.op_Inequality(...)  null ? 1 : 3 > 1 */
 SELECT
 	[x].[Id],
 	[x].[IntVlaue],
@@ -953,6 +990,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* x_with_not => !(x_with_not.StringValueNullable ==   String.op_Equality(...)  null ? 2 : x_with_not.StringValueNullable !=   String.op_Inequality(...)  null ? 1 : 3 > 1) */
 SELECT
 	[x_with_not].[Id],
 	[x_with_not].[IntVlaue],
@@ -979,6 +1017,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* x => x.StringValueNullable ==   String.op_Equality(...)  null ? 1 : x.StringValueNullable !=   String.op_Inequality(...)  null ? 2 : 3 != 2 */
 SELECT
 	[x].[Id],
 	[x].[IntVlaue],
@@ -1005,6 +1044,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* x_with_not => !(x_with_not.StringValueNullable ==   String.op_Equality(...)  null ? 1 : x_with_not.StringValueNullable !=   String.op_Inequality(...)  null ? 2 : 3 != 2) */
 SELECT
 	[x_with_not].[Id],
 	[x_with_not].[IntVlaue],
@@ -1031,6 +1071,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* swap => 2 != swap.StringValueNullable ==   String.op_Equality(...)  null ? 1 : swap.StringValueNullable !=   String.op_Inequality(...)  null ? 2 : 3 */
 SELECT
 	[swap].[Id],
 	[swap].[IntVlaue],
@@ -1057,6 +1098,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* swap_with_not => !(2 != swap_with_not.StringValueNullable ==   String.op_Equality(...)  null ? 1 : swap_with_not.StringValueNullable !=   String.op_Inequality(...)  null ? 2 : 3) */
 SELECT
 	[swap_with_not].[Id],
 	[swap_with_not].[IntVlaue],
@@ -1083,6 +1125,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* x => x.StringValueNullable !=   String.op_Inequality(...)  null ? x.StringValueNullable ==   String.op_Equality(...)  "2" ? 2 : 10 : x.StringValueNullable ==   String.op_Equality(...)  null ? 3 : 1 == 2 */
 SELECT
 	[x].[Id],
 	[x].[IntVlaue],
@@ -1094,7 +1137,14 @@ SELECT
 FROM
 	[OptimizationData] [x]
 WHERE
-	IIF([x].[StringValueNullable] IS NOT NULL, IIF([x].[StringValueNullable] = '2', 2, 10), IIF([x].[StringValueNullable] IS NULL, 3, 1)) = 2
+	CASE
+		WHEN [x].[StringValueNullable] IS NOT NULL THEN CASE
+			WHEN [x].[StringValueNullable] = '2' THEN 2
+			ELSE 10
+		END
+		WHEN [x].[StringValueNullable] IS NULL THEN 3
+		ELSE 1
+	END = 2
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
@@ -1109,6 +1159,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* x_with_not => !(x_with_not.StringValueNullable !=   String.op_Inequality(...)  null ? x_with_not.StringValueNullable ==   String.op_Equality(...)  "2" ? 2 : 10 : x_with_not.StringValueNullable ==   String.op_Equality(...)  null ? 3 : 1 == 2) */
 SELECT
 	[x_with_not].[Id],
 	[x_with_not].[IntVlaue],
@@ -1120,7 +1171,14 @@ SELECT
 FROM
 	[OptimizationData] [x_with_not]
 WHERE
-	IIF([x_with_not].[StringValueNullable] IS NOT NULL, IIF([x_with_not].[StringValueNullable] = '2', 2, 10), IIF([x_with_not].[StringValueNullable] IS NULL, 3, 1)) <> 2
+	CASE
+		WHEN [x_with_not].[StringValueNullable] IS NOT NULL THEN CASE
+			WHEN [x_with_not].[StringValueNullable] = '2' THEN 2
+			ELSE 10
+		END
+		WHEN [x_with_not].[StringValueNullable] IS NULL THEN 3
+		ELSE 1
+	END <> 2
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
@@ -1135,6 +1193,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* swap => 2 == swap.StringValueNullable !=   String.op_Inequality(...)  null ? swap.StringValueNullable ==   String.op_Equality(...)  "2" ? 2 : 10 : swap.StringValueNullable ==   String.op_Equality(...)  null ? 3 : 1 */
 SELECT
 	[swap].[Id],
 	[swap].[IntVlaue],
@@ -1146,7 +1205,14 @@ SELECT
 FROM
 	[OptimizationData] [swap]
 WHERE
-	2 = IIF([swap].[StringValueNullable] IS NOT NULL, IIF([swap].[StringValueNullable] = '2', 2, 10), IIF([swap].[StringValueNullable] IS NULL, 3, 1))
+	2 = CASE
+		WHEN [swap].[StringValueNullable] IS NOT NULL THEN CASE
+			WHEN [swap].[StringValueNullable] = '2' THEN 2
+			ELSE 10
+		END
+		WHEN [swap].[StringValueNullable] IS NULL THEN 3
+		ELSE 1
+	END
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
@@ -1161,6 +1227,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* swap_with_not => !(2 == swap_with_not.StringValueNullable !=   String.op_Inequality(...)  null ? swap_with_not.StringValueNullable ==   String.op_Equality(...)  "2" ? 2 : 10 : swap_with_not.StringValueNullable ==   String.op_Equality(...)  null ? 3 : 1) */
 SELECT
 	[swap_with_not].[Id],
 	[swap_with_not].[IntVlaue],
@@ -1172,7 +1239,14 @@ SELECT
 FROM
 	[OptimizationData] [swap_with_not]
 WHERE
-	2 <> IIF([swap_with_not].[StringValueNullable] IS NOT NULL, IIF([swap_with_not].[StringValueNullable] = '2', 2, 10), IIF([swap_with_not].[StringValueNullable] IS NULL, 3, 1))
+	2 <> CASE
+		WHEN [swap_with_not].[StringValueNullable] IS NOT NULL THEN CASE
+			WHEN [swap_with_not].[StringValueNullable] = '2' THEN 2
+			ELSE 10
+		END
+		WHEN [swap_with_not].[StringValueNullable] IS NULL THEN 3
+		ELSE 1
+	END
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
@@ -1187,6 +1261,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* x => x.IntVlaue < 4 ? 4 : x.IntVlaue == 0 */
 SELECT
 	[x].[Id],
 	[x].[IntVlaue],
@@ -1213,6 +1288,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* x => x.IntVlaue < 4 ? 4 : x.IntVlaue != 0 */
 SELECT
 	[x].[Id],
 	[x].[IntVlaue],
@@ -1239,6 +1315,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* x_with_not => !(x_with_not.IntVlaue < 4 ? 4 : x_with_not.IntVlaue != 0) */
 SELECT
 	[x_with_not].[Id],
 	[x_with_not].[IntVlaue],
@@ -1265,6 +1342,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* swap => 0 != swap.IntVlaue < 4 ? 4 : swap.IntVlaue */
 SELECT
 	[swap].[Id],
 	[swap].[IntVlaue],
@@ -1291,6 +1369,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* swap_with_not => !(0 != swap_with_not.IntVlaue < 4 ? 4 : swap_with_not.IntVlaue) */
 SELECT
 	[swap_with_not].[Id],
 	[swap_with_not].[IntVlaue],
@@ -1317,6 +1396,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* x => x.IntVlaue < 4 ? 4 : x.IntVlaue > 0 */
 SELECT
 	[x].[Id],
 	[x].[IntVlaue],
@@ -1343,6 +1423,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* x_with_not => !(x_with_not.IntVlaue < 4 ? 4 : x_with_not.IntVlaue > 0) */
 SELECT
 	[x_with_not].[Id],
 	[x_with_not].[IntVlaue],
@@ -1369,6 +1450,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* x => x.IntVlaue < 4 ? 4 : x.IntVlaue < 0 */
 SELECT
 	[x].[Id],
 	[x].[IntVlaue],
@@ -1395,6 +1477,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* x_with_not => !(x_with_not.IntVlaue < 4 ? 4 : x_with_not.IntVlaue < 0) */
 SELECT
 	[x_with_not].[Id],
 	[x_with_not].[IntVlaue],
@@ -1421,6 +1504,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* x => x.IntVlaue < 4 ? 4 : x.IntVlaue >= 0 */
 SELECT
 	[x].[Id],
 	[x].[IntVlaue],
@@ -1447,6 +1531,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* x_with_not => !(x_with_not.IntVlaue < 4 ? 4 : x_with_not.IntVlaue >= 0) */
 SELECT
 	[x_with_not].[Id],
 	[x_with_not].[IntVlaue],
@@ -1473,6 +1558,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* x => x.IntVlaue < 4 ? 4 : x.IntVlaue <= 0 */
 SELECT
 	[x].[Id],
 	[x].[IntVlaue],
@@ -1499,6 +1585,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* x_with_not => !(x_with_not.IntVlaue < 4 ? 4 : x_with_not.IntVlaue <= 0) */
 SELECT
 	[x_with_not].[Id],
 	[x_with_not].[IntVlaue],
@@ -1525,6 +1612,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* x => x.IntVlaue >= 4 ? x.IntVlaue : 4 == 0 */
 SELECT
 	[x].[Id],
 	[x].[IntVlaue],
@@ -1551,6 +1639,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* x_with_not => !(x_with_not.IntVlaue >= 4 ? x_with_not.IntVlaue : 4 == 0) */
 SELECT
 	[x_with_not].[Id],
 	[x_with_not].[IntVlaue],
@@ -1577,6 +1666,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* swap => 0 == swap.IntVlaue >= 4 ? swap.IntVlaue : 4 */
 SELECT
 	[swap].[Id],
 	[swap].[IntVlaue],
@@ -1603,6 +1693,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* swap_with_not => !(0 == swap_with_not.IntVlaue >= 4 ? swap_with_not.IntVlaue : 4) */
 SELECT
 	[swap_with_not].[Id],
 	[swap_with_not].[IntVlaue],
@@ -1629,6 +1720,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* x => x.IntVlaue >= 4 ? x.IntVlaue : 4 != 0 */
 SELECT
 	[x].[Id],
 	[x].[IntVlaue],
@@ -1655,6 +1747,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* x_with_not => !(x_with_not.IntVlaue >= 4 ? x_with_not.IntVlaue : 4 != 0) */
 SELECT
 	[x_with_not].[Id],
 	[x_with_not].[IntVlaue],
@@ -1681,6 +1774,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* swap => 0 != swap.IntVlaue >= 4 ? swap.IntVlaue : 4 */
 SELECT
 	[swap].[Id],
 	[swap].[IntVlaue],
@@ -1708,6 +1802,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* swap_with_not => !(0 != swap_with_not.IntVlaue >= 4 ? swap_with_not.IntVlaue : 4) */
 SELECT
 	[swap_with_not].[Id],
 	[swap_with_not].[IntVlaue],
@@ -1734,6 +1829,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* x => x.IntVlaue >= 4 ? x.IntVlaue : 4 > 0 */
 SELECT
 	[x].[Id],
 	[x].[IntVlaue],
@@ -1760,6 +1856,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* x_with_not => !(x_with_not.IntVlaue >= 4 ? x_with_not.IntVlaue : 4 > 0) */
 SELECT
 	[x_with_not].[Id],
 	[x_with_not].[IntVlaue],
@@ -1786,6 +1883,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* x => x.IntVlaue >= 4 ? x.IntVlaue : 4 < 0 */
 SELECT
 	[x].[Id],
 	[x].[IntVlaue],
@@ -1812,6 +1910,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* x_with_not => !(x_with_not.IntVlaue >= 4 ? x_with_not.IntVlaue : 4 < 0) */
 SELECT
 	[x_with_not].[Id],
 	[x_with_not].[IntVlaue],
@@ -1838,6 +1937,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* x => x.IntVlaue >= 4 ? x.IntVlaue : 4 >= 0 */
 SELECT
 	[x].[Id],
 	[x].[IntVlaue],
@@ -1864,6 +1964,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* x_with_not => !(x_with_not.IntVlaue >= 4 ? x_with_not.IntVlaue : 4 >= 0) */
 SELECT
 	[x_with_not].[Id],
 	[x_with_not].[IntVlaue],
@@ -1890,6 +1991,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* x => x.IntVlaue >= 4 ? x.IntVlaue : 4 <= 0 */
 SELECT
 	[x].[Id],
 	[x].[IntVlaue],
@@ -1916,6 +2018,7 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
+/* x_with_not => !(x_with_not.IntVlaue >= 4 ? x_with_not.IntVlaue : 4 <= 0) */
 SELECT
 	[x_with_not].[Id],
 	[x_with_not].[IntVlaue],

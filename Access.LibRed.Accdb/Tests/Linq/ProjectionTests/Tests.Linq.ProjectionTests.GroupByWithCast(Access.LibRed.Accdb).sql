@@ -1,5 +1,8 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
-SELECT TOP 1000
+DECLARE @take  -- Int32
+SET     @take = 1000
+
+SELECT TOP @take
 	[a_Patient].[Diagnosis],
 	[a_Patient].[PersonID],
 	AVG([auto16031].[PersonID])

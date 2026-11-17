@@ -1,5 +1,8 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
-SELECT TOP 1
+DECLARE @take  -- Int32
+SET     @take = 1
+
+SELECT TOP @take
 	COUNT(*),
 	1 + MIN([g_1].[ChildID]),
 	MAX([g_1].[ChildID])

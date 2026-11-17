@@ -1,6 +1,9 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
-	IIF([p].[Value1] IS NULL, 100, [p].[Value1]) + 50
+	CASE
+		WHEN [p].[Value1] IS NULL THEN 100
+		ELSE [p].[Value1]
+	END + 50
 FROM
 	[Parent] [p]
 

@@ -16,7 +16,10 @@ FROM
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
-	IIF([e].[Id] > 1, [e].[Value1], [e].[Value2])
+	CASE
+		WHEN [e].[Id] > 1 THEN [e].[Value1]
+		ELSE [e].[Value2]
+	END
 FROM
 	[ClientCalcEntity] [e]
 
@@ -62,7 +65,13 @@ FROM
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
 	[e].[Id],
-	IIF([e].[Name] IS NULL, '', [e].[Name]) + ' ' + IIF([e].[Name] IS NULL, '', [e].[Name])
+	CASE
+		WHEN [e].[Name] IS NULL THEN ''
+		ELSE [e].[Name]
+	END + ' ' + CASE
+		WHEN [e].[Name] IS NULL THEN ''
+		ELSE [e].[Name]
+	END
 FROM
 	[ClientCalcEntity] [e]
 

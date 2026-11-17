@@ -1,5 +1,5 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
-SELECT TOP 3
+SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],
 	[t1].[LastName],
@@ -9,9 +9,10 @@ FROM
 	[Person] [t1]
 ORDER BY
 	[t1].[LastName]
+OFFSET 2 ROWS FETCH NEXT 1 ROWS ONLY 
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
-SELECT TOP 3
+SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],
 	[t1].[LastName],
@@ -21,4 +22,5 @@ FROM
 	[Person] [t1]
 ORDER BY
 	[t1].[LastName]
+OFFSET 2 ROWS FETCH NEXT 1 ROWS ONLY 
 

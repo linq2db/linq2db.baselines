@@ -2,16 +2,33 @@
 SELECT
 	[x].[Id],
 	[x].[StringProp] = '1' OR [x].[StringProp] IS NULL,
-	IIF([x].[StringProp] = '2', True, False),
+	CASE
+		WHEN [x].[StringProp] = '2' THEN True
+		ELSE False
+	END,
 	[x].[StringProp],
 	1,
-	IIF([x].[StringProp] IS NULL, '', [x].[StringProp]) + '2',
+	CASE
+		WHEN [x].[StringProp] IS NULL THEN ''
+		ELSE [x].[StringProp]
+	END + '2',
 	2
 FROM
 	[ConditionalData] [x]
 WHERE
-	IIF([x].[StringProp] = '1' OR [x].[StringProp] IS NULL, '2', IIF([x].[StringProp] = '2', [x].[StringProp], IIF([x].[StringProp] IS NULL, '', [x].[StringProp]) + '2')) LIKE '%2' AND
-	IIF([x].[StringProp] = '1' OR [x].[StringProp] IS NULL, NULL, IIF([x].[StringProp] = '2', 1, 2)) = 2
+	CASE
+		WHEN [x].[StringProp] = '1' OR [x].[StringProp] IS NULL THEN '2'
+		WHEN [x].[StringProp] = '2' THEN [x].[StringProp]
+		ELSE CASE
+			WHEN [x].[StringProp] IS NULL THEN ''
+			ELSE [x].[StringProp]
+		END + '2'
+	END LIKE '%2' AND
+	CASE
+		WHEN [x].[StringProp] = '1' OR [x].[StringProp] IS NULL THEN NULL
+		WHEN [x].[StringProp] = '2' THEN 1
+		ELSE 2
+	END = 2
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT

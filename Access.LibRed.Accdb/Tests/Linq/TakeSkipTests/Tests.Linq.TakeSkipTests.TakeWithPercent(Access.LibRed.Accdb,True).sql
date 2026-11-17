@@ -1,5 +1,8 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
-SELECT TOP 50 PERCENT
+DECLARE @take  -- Int32
+SET     @take = 50
+
+SELECT TOP @take PERCENT
 	[t1].[FirstName],
 	[t1].[PersonID],
 	[t1].[LastName],

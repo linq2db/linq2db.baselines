@@ -2,7 +2,10 @@
 SELECT DISTINCT
 	[a_Ref4].[Field6],
 	[a_Ref3].[Field4],
-	IIF([a_Ref5].[Field8] IS NULL, '', [a_Ref5].[Field8])
+	CASE
+		WHEN [a_Ref5].[Field8] IS NULL THEN ''
+		ELSE [a_Ref5].[Field8]
+	END
 FROM
 	(((([Table1] [t1]
 		INNER JOIN [Table3] [a_Ref1] ON ([t1].[Field1] = [a_Ref1].[Field1]))
@@ -23,7 +26,10 @@ FROM
 		SELECT DISTINCT
 			[a_Ref4].[Field6],
 			[a_Ref3].[Field4],
-			IIF([a_Ref5].[Field8] IS NULL, '', [a_Ref5].[Field8]) as [Field1]
+			CASE
+				WHEN [a_Ref5].[Field8] IS NULL THEN ''
+				ELSE [a_Ref5].[Field8]
+			END as [Field1]
 		FROM
 			(((([Table1] [g_1]
 				INNER JOIN [Table3] [a_Ref1] ON ([g_1].[Field1] = [a_Ref1].[Field1]))

@@ -9,12 +9,14 @@ FROM
 			[p].[ParentID]
 		FROM
 			[Parent] [p]
-				INNER JOIN (
+				CROSS APPLY (
 					SELECT DISTINCT
 						[c_1].[ParentID] as [Key_1]
 					FROM
 						[Child] [c_1]
-				) [c_2] ON ([p].[ParentID] = [c_2].[Key_1])
+					WHERE
+						[p].[ParentID] = [c_1].[ParentID]
+				) [c_2]
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
@@ -25,15 +27,17 @@ SELECT
 	[c_2].[Value_1]
 FROM
 	[Parent] [p]
-		INNER JOIN (
+		CROSS APPLY (
 			SELECT
 				[c_1].[ParentID] as [Key_1],
 				COUNT(*) as [Value_1]
 			FROM
 				[Child] [c_1]
+			WHERE
+				[p].[ParentID] = [c_1].[ParentID]
 			GROUP BY
 				[c_1].[ParentID]
-		) [c_2] ON ([p].[ParentID] = [c_2].[Key_1])
+		) [c_2]
 ORDER BY
 	[c_2].[Key_1]
 

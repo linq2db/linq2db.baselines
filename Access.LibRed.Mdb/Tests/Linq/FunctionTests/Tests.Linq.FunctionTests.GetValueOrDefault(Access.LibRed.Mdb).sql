@@ -1,6 +1,9 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
-	IIF([p].[Value1] IS NOT NULL, [p].[Value1], 0)
+	CASE
+		WHEN [p].[Value1] IS NOT NULL THEN [p].[Value1]
+		ELSE 0
+	END
 FROM
 	[Parent] [p]
 WHERE

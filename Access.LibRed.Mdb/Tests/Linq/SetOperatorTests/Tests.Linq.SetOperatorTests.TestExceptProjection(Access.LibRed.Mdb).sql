@@ -1,25 +1,30 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
-SELECT DISTINCT
-	[r].[Value1]
+SELECT
+	[r_3].[Value_1]
 FROM
-	[SampleData] [r]
-WHERE
-	[r].[Id] MOD 2 = 0 AND NOT EXISTS(
+	(
 		SELECT
-			*
+			[r].[Id],
+			[r].[Value1] as [Value_1]
+		FROM
+			[SampleData] [r]
+		WHERE
+			[r].[Id] MOD 2 = 0
+		EXCEPT
+		SELECT
+			[r_1].[Id],
+			[r_1].[Value2] / 10 as [Value_1]
 		FROM
 			[SampleData] [r_1]
 		WHERE
-			[r_1].[Id] MOD 4 = 0 AND [r].[Id] = [r_1].[Id] AND
-			[r].[Value1] = [r_1].[Value2] / 10
-	) AND
-	NOT EXISTS(
+			[r_1].[Id] MOD 4 = 0
+		EXCEPT
 		SELECT
-			*
+			[r_2].[Id],
+			[r_2].[Value1] as [Value_1]
 		FROM
 			[SampleData] [r_2]
 		WHERE
-			[r_2].[Id] MOD 6 = 0 AND [r].[Id] = [r_2].[Id] AND
-			[r].[Value1] = [r_2].[Value1]
-	)
+			[r_2].[Id] MOD 6 = 0
+	) [r_3]
 

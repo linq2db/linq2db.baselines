@@ -1,7 +1,11 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
 	[x_1].[ParentID],
-	IIF([x_1].[Child] IS NULL, -1, IIF([x_1].[projection__set_id__] = 0, NULL, [x_1].[ChildID]))
+	CASE
+		WHEN [x_1].[Child] IS NULL THEN -1
+		WHEN [x_1].[projection__set_id__] = 0 THEN NULL
+		ELSE [x_1].[ChildID]
+	END
 FROM
 	(
 		SELECT

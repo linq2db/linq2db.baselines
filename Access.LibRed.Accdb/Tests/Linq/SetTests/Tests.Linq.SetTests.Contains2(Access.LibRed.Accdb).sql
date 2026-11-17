@@ -1,11 +1,15 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
-	IIF([p].[ParentID] IN (
-		SELECT
-			[c_1].[ParentID]
-		FROM
-			[Child] [c_1]
-	), True, False)
+	CASE
+		WHEN [p].[ParentID] IN (
+			SELECT
+				[c_1].[ParentID]
+			FROM
+				[Child] [c_1]
+		)
+			THEN True
+		ELSE False
+	END
 FROM
 	[Parent] [p]
 
