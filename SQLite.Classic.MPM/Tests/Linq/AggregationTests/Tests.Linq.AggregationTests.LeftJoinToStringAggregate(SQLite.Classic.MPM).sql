@@ -2,22 +2,25 @@
 SELECT
 	[u].[Id],
 	[u].[Name],
-	(
-		SELECT
-			GROUP_CONCAT([t1].[Name], ', ')
-		FROM
-			(
-				SELECT
-					[a_Machine].[Name]
-				FROM
-					[UserMachineAssignment] [uma]
-						INNER JOIN [Machine] [a_Machine] ON [uma].[MachineId] = [a_Machine].[Id] OR [uma].[MachineId] IS NULL AND [a_Machine].[Id] IS NULL
-				WHERE
-					[aq].[Key_1] = [uma].[UserId]
-				ORDER BY
-					[a_Machine].[Name]
-			) [t1]
-	),
+	CASE
+		WHEN [aq].[Key_1] IS NULL THEN NULL
+		ELSE (
+			SELECT
+				GROUP_CONCAT([t1].[Name], ', ')
+			FROM
+				(
+					SELECT
+						[a_Machine].[Name]
+					FROM
+						[UserMachineAssignment] [uma]
+							INNER JOIN [Machine] [a_Machine] ON [uma].[MachineId] = [a_Machine].[Id] OR [uma].[MachineId] IS NULL AND [a_Machine].[Id] IS NULL
+					WHERE
+						[aq].[Key_1] = [uma].[UserId]
+					ORDER BY
+						[a_Machine].[Name]
+				) [t1]
+		)
+	END,
 	[aq].[Count_1]
 FROM
 	[User] [u]
