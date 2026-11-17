@@ -2,22 +2,14 @@
 @p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (DbType = Int32), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (DbType = Int32), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (DbType = Int32), @p16='?' (Size = 4000), @p17='?' (Size = 4000), @p18='?' (Size = 4000), @p19='?' (DbType = Int32), @p20='?' (Size = 4000)
 
 INSERT INTO `Issue4783Records` (`NullableStatusConverter`, `NullableStatusRaw`, `NullableStatusString`, `Source`, `StatusConverter`, `StatusRaw`, `StatusString`)
-VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
-SELECT `Id`
-FROM `Issue4783Records`
-WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
-
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6)
+RETURNING `Id`;
 INSERT INTO `Issue4783Records` (`NullableStatusConverter`, `NullableStatusRaw`, `NullableStatusString`, `Source`, `StatusConverter`, `StatusRaw`, `StatusString`)
-VALUES (@p7, @p8, @p9, @p10, @p11, @p12, @p13);
-SELECT `Id`
-FROM `Issue4783Records`
-WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
-
+VALUES (@p7, @p8, @p9, @p10, @p11, @p12, @p13)
+RETURNING `Id`;
 INSERT INTO `Issue4783Records` (`NullableStatusConverter`, `NullableStatusRaw`, `NullableStatusString`, `Source`, `StatusConverter`, `StatusRaw`, `StatusString`)
-VALUES (@p14, @p15, @p16, @p17, @p18, @p19, @p20);
-SELECT `Id`
-FROM `Issue4783Records`
-WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+VALUES (@p14, @p15, @p16, @p17, @p18, @p19, @p20)
+RETURNING `Id`;
 
 
 -- MariaDB.10.MySqlConnector MariaDB

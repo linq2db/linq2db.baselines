@@ -2,34 +2,20 @@
 @p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32)
 
 INSERT INTO `IssueEnum` (`Value`)
-VALUES (@p0);
-SELECT `Id`
-FROM `IssueEnum`
-WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
-
+VALUES (@p0)
+RETURNING `Id`;
 INSERT INTO `IssueEnum` (`Value`)
-VALUES (@p1);
-SELECT `Id`
-FROM `IssueEnum`
-WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
-
+VALUES (@p1)
+RETURNING `Id`;
 INSERT INTO `IssueEnum` (`Value`)
-VALUES (@p2);
-SELECT `Id`
-FROM `IssueEnum`
-WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
-
+VALUES (@p2)
+RETURNING `Id`;
 INSERT INTO `IssueEnum` (`Value`)
-VALUES (@p3);
-SELECT `Id`
-FROM `IssueEnum`
-WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
-
+VALUES (@p3)
+RETURNING `Id`;
 INSERT INTO `IssueEnum` (`Value`)
-VALUES (@p4);
-SELECT `Id`
-FROM `IssueEnum`
-WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+VALUES (@p4)
+RETURNING `Id`;
 
 
 -- MariaDB.10.MySqlConnector MariaDB

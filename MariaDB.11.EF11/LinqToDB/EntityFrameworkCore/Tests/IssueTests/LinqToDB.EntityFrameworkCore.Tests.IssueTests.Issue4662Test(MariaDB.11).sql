@@ -1,11 +1,10 @@
 ﻿Parameters:
 @p0='?' (Size = 50)
 
+SET AUTOCOMMIT = 1;
 INSERT INTO `Issue4662` (`Value`)
-VALUES (@p0);
-SELECT `Id`
-FROM `Issue4662`
-WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+VALUES (@p0)
+RETURNING `Id`;
 
 
 -- MariaDB.10.MySqlConnector MariaDB

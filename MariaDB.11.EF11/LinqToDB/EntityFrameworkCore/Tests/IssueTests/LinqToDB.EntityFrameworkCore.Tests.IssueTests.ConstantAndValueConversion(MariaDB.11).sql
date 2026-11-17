@@ -2,16 +2,11 @@
 @p0='?' (DbType = Int16), @p1='?' (DbType = Int16)
 
 INSERT INTO `Issue5388Task` (`IsArchived`)
-VALUES (@p0);
-SELECT `Id`
-FROM `Issue5388Task`
-WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
-
+VALUES (@p0)
+RETURNING `Id`;
 INSERT INTO `Issue5388Task` (`IsArchived`)
-VALUES (@p1);
-SELECT `Id`
-FROM `Issue5388Task`
-WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+VALUES (@p1)
+RETURNING `Id`;
 
 
 -- MariaDB.10.MySqlConnector MariaDB
