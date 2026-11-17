@@ -71,7 +71,11 @@ FROM
 		INNER JOIN `Pr5EagerChild` `d` ON `m_1`.`Id` = `d`.`ParentId`
 WHERE
 	`m_1`.`Id` = @id
-;
+
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80
+DECLARE @id Int32
+SET     @id = 1
+
 SELECT
 	`p`.`Id`
 FROM
@@ -92,7 +96,11 @@ FROM
 		INNER JOIN `Pr5EagerChild` `d` ON `m_1`.`Id` = `d`.`ParentId`
 WHERE
 	`m_1`.`Id` = @id
-;
+
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80
+DECLARE @id Int32
+SET     @id = 2
+
 SELECT
 	`p`.`Id`
 FROM

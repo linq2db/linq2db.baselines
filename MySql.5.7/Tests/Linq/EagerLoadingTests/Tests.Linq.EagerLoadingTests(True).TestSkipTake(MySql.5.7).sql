@@ -12,7 +12,8 @@ FROM
 			`MasterClass` `m_1`
 	) `m_2`
 		INNER JOIN `DetailClass` `d` ON `m_2`.`Id1` = `d`.`MasterId`
-;
+
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
 	`m_2`.`Id1`,
 	`d`.`DetailId`,
@@ -28,7 +29,8 @@ FROM
 		INNER JOIN `DetailClass` `d` ON `m_2`.`Id1` = `d`.`MasterId`
 ORDER BY
 	`d`.`DetailId`
-;
+
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
 	`m_1`.`Id1`,
 	`m_1`.`Id2`,
@@ -51,7 +53,8 @@ FROM
 			`MasterClass` `t1`
 	) `m_1`
 		INNER JOIN `DetailClass` `d` ON `m_1`.`Id1` = `d`.`MasterId`
-;
+
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
 	`t1`.`Id1`,
 	`t1`.`Id2`,
