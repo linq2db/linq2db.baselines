@@ -124,3 +124,24 @@ SELECT
 FROM
 	LinqDataTypes t1
 
+-- ClickHouse.MySql ClickHouse
+SELECT
+	negate(Power(toFloat64(2), toFloat64(p.ID)))
+FROM
+	LinqDataTypes p
+ORDER BY
+	p.ID
+
+-- ClickHouse.MySql ClickHouse
+SELECT
+	t1.ID,
+	t1.MoneyValue,
+	t1.DateTimeValue,
+	t1.BoolValue,
+	t1.GuidValue,
+	t1.BinaryValue,
+	t1.SmallIntValue,
+	t1.StringValue
+FROM
+	LinqDataTypes t1
+
