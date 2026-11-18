@@ -2,24 +2,12 @@
 SELECT
 	`c_1`.`ChildID`,
 	CASE
-		WHEN ((
-			SELECT
-				`c_1`.`ChildID` <> `p`.`ParentID` * 10 + 1
-		)) OR ((
-			SELECT
-				NOT `p`.`Value1` <=> `c_1`.`ParentID`
-		))
+		WHEN `c_1`.`ChildID` <> `p`.`ParentID` * 10 + 1 OR NOT `p`.`Value1` <=> `c_1`.`ParentID`
 			THEN 5
 		ELSE 3
 	END,
 	CASE
-		WHEN ((
-			SELECT
-				`c_1`.`ChildID` <> `p`.`ParentID` * 10 + 1
-		)) OR ((
-			SELECT
-				NOT `p`.`Value1` <=> `c_1`.`ParentID`
-		))
+		WHEN `c_1`.`ChildID` <> `p`.`ParentID` * 10 + 1 OR NOT `p`.`Value1` <=> `c_1`.`ParentID`
 			THEN 'bad'
 		ELSE NULL
 	END
