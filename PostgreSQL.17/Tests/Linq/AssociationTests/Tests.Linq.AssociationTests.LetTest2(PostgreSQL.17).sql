@@ -1,0 +1,28 @@
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+SELECT
+	t."ParentID",
+	(
+		SELECT
+			COUNT(*)
+		FROM
+			"Child" "a_Children"
+		WHERE
+			t."ParentID" = "a_Children"."ParentID"
+	)
+FROM
+	"Parent" t
+
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+SELECT
+	t."ParentID",
+	(
+		SELECT
+			COUNT(*)
+		FROM
+			"Child" "a_Children"
+		WHERE
+			t."ParentID" = "a_Children"."ParentID"
+	)
+FROM
+	"Parent" t
+

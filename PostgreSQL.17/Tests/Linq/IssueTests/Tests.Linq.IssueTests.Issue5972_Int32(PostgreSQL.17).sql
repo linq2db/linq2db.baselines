@@ -1,0 +1,16 @@
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+SELECT
+	-2147483648
+
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+SELECT
+	2147483647
+
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+SELECT
+	-2147483648
+
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+SELECT
+	2147483647
+
