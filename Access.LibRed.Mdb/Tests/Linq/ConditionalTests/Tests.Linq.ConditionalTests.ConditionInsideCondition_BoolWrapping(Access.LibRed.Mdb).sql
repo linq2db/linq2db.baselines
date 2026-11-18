@@ -1,0 +1,31 @@
+﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
+SELECT
+	CASE
+		WHEN [p].[ParentID] MOD 2 = 0 THEN [p].[ParentID] MOD 3 = 0
+		WHEN [p].[ParentID] MOD 4 = 0 THEN [p].[ParentID] > 0
+		ELSE [p].[ParentID] < 5
+	END
+FROM
+	[Parent] [p]
+
+-- Access.LibRed.Mdb Access.LibRed AccessLibRed
+SELECT
+	[m_1].[ParentID],
+	[d].[ParentID] as [ParentID_1],
+	[d].[ChildID]
+FROM
+	(
+		SELECT DISTINCT
+			[t1].[ParentID]
+		FROM
+			[Parent] [t1]
+	) [m_1]
+		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
+
+-- Access.LibRed.Mdb Access.LibRed AccessLibRed
+SELECT
+	[t1].[ParentID],
+	[t1].[Value1]
+FROM
+	[Parent] [t1]
+

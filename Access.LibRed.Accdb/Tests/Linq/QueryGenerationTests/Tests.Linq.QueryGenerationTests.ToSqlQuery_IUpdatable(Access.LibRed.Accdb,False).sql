@@ -1,0 +1,29 @@
+﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
+DECLARE @Value  -- Int32
+SET     @Value = 1
+
+INSERT INTO [TableWithIdentity]
+(
+	[Value]
+)
+VALUES
+(
+	@Value
+)
+
+-- Access.LibRed.Accdb Access.LibRed AccessLibRed
+DECLARE @newValue  -- Int32
+SET     @newValue = 123
+
+UPDATE
+	[TableWithIdentity] [t1]
+SET
+	[t1].[Value] = @newValue
+
+-- Access.LibRed.Accdb Access.LibRed AccessLibRed
+SELECT TOP 2
+	[t1].[Id],
+	[t1].[Value]
+FROM
+	[TableWithIdentity] [t1]
+
