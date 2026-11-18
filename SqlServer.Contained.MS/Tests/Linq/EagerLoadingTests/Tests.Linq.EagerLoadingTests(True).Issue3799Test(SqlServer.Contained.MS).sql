@@ -1,4 +1,5 @@
 ﻿-- SqlServer.Contained.MS SqlServer.2025
+-- Command 1
 SELECT
 	[m_1].[Id],
 	[d].[Name]
@@ -17,7 +18,8 @@ FROM
 			[Test3799Item] [item_1]
 	) [m_1]
 		INNER JOIN [Test3799Item] [d] ON [m_1].[Id] = [d].[ParentId]
-;
+
+-- Command 2
 SELECT
 	[item_1].[Name],
 	[t1].[Name],
@@ -33,4 +35,3 @@ FROM
 			WHERE
 				[item_1].[Id] = [a_Children].[ParentId]
 		) [t1]
-

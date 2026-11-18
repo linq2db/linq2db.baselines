@@ -23,7 +23,7 @@ VALUES
 DECLARE @Ticks BigInt -- Int64
 SET     @Ticks = 1234
 DECLARE @TotalMilliseconds Float -- Double
-SET     @TotalMilliseconds = 0.12340000000000001
+SET     @TotalMilliseconds = 0.1234
 
 SELECT TOP (2)
 	@Ticks + [r].[Id],

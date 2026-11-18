@@ -1,4 +1,5 @@
 ﻿-- SqlServer.Contained.MS SqlServer.2025
+-- Command 1
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
@@ -13,7 +14,8 @@ FROM
 			[x].[ParentID] = 3
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
-;
+
+-- Command 2
 SELECT TOP (1)
 	[x].[ParentID],
 	[x].[Value1]
@@ -21,8 +23,8 @@ FROM
 	[Parent] [x]
 WHERE
 	[x].[ParentID] = 3
-
 -- SqlServer.Contained.MS SqlServer.2025
+-- Command 1
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
@@ -37,7 +39,8 @@ FROM
 			[x].[ParentID] = 3
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
-;
+
+-- Command 2
 SELECT TOP (1)
 	[x].[ParentID],
 	[x].[Value1]
@@ -45,8 +48,8 @@ FROM
 	[Parent] [x]
 WHERE
 	[x].[ParentID] = 3
-
 -- SqlServer.Contained.MS SqlServer.2025
+-- Command 1
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
@@ -61,7 +64,8 @@ FROM
 			[x].[ParentID] = 3
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
-;
+
+-- Command 2
 SELECT TOP (1)
 	[x].[ParentID],
 	[x].[Value1]
@@ -69,4 +73,3 @@ FROM
 	[Parent] [x]
 WHERE
 	[x].[ParentID] = 3
-
