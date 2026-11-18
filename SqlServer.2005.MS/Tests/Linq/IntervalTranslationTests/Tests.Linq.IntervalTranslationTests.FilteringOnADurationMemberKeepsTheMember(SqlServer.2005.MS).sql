@@ -1,0 +1,20 @@
+﻿-- SqlServer.2005.MS SqlServer.2005
+SELECT
+	[r].[Id]
+FROM
+	[OptionalDurationRow] [r]
+WHERE
+	[r].[Grace] > 1800
+ORDER BY
+	[r].[Id]
+
+-- SqlServer.2005.MS SqlServer.2005
+SELECT
+	[r].[Id]
+FROM
+	[OptionalDurationRow] [r]
+WHERE
+	[r].[Required] > 1800
+ORDER BY
+	[r].[Id]
+
