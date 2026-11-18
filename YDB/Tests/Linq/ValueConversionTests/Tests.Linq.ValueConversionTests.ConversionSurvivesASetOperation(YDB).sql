@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Span Int64
-SET     $Span = 5400l
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Span Int64
+SET     Span = 5400l
 
 INSERT INTO ScaledRow
 (

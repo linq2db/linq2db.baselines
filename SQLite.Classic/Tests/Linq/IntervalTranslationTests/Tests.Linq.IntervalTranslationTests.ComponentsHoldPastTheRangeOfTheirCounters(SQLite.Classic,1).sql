@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @StartedOn VarChar(23) -- AnsiString
 SET     @StartedOn = '1970-01-02 00:00:00.000'
@@ -20,7 +20,7 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @StartedOn VarChar(23) -- AnsiString
 SET     @StartedOn = '1970-01-02 00:00:00.000'

@@ -11,10 +11,10 @@ WHERE
 	Parent.ParentID > 1000
 
 -- YDB Ydb
-DECLARE $ParentID Int32
-SET     $ParentID = 1001
-DECLARE $Value1 Int32
-SET     $Value1 = 1001
+DECLARE ParentID Int32
+SET     ParentID = 1001
+DECLARE Value1 Int32
+SET     Value1 = 1001
 
 INSERT INTO Parent
 (
@@ -28,8 +28,8 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $id Int32
-SET     $id = 1001
+DECLARE id Int32
+SET     id = 1001
 
 INSERT INTO Child
 (
@@ -45,8 +45,8 @@ WHERE
 	p.ParentID = $id
 
 -- YDB Ydb
-DECLARE $id Int32
-SET     $id = 1001
+DECLARE id Int32
+SET     id = 1001
 
 SELECT
 	COUNT(*) as Count_1

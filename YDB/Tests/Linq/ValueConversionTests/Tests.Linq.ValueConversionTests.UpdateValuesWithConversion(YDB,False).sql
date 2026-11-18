@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $Test1 Text -- AnsiStringFixedLength
-SET     $Test1 = NULL
+DECLARE Test1 Text -- AnsiStringFixedLength
+SET     Test1 = NULL
 
 UPDATE
 	TableWithConverterValue
@@ -22,8 +22,8 @@ WHERE
 LIMIT 2
 
 -- YDB Ydb
-DECLARE $Test1 Text(1) -- AnsiStringFixedLength
-SET     $Test1 = 'X'u
+DECLARE Test1 Text(1) -- AnsiStringFixedLength
+SET     Test1 = 'X'u
 
 UPDATE
 	TableWithConverterValue
@@ -45,8 +45,8 @@ WHERE
 LIMIT 2
 
 -- YDB Ydb
-DECLARE $Test1 Text(1) -- AnsiStringFixedLength
-SET     $Test1 = 'X'u
+DECLARE Test1 Text(1) -- AnsiStringFixedLength
+SET     Test1 = 'X'u
 
 SELECT
 	x.Id as Id,

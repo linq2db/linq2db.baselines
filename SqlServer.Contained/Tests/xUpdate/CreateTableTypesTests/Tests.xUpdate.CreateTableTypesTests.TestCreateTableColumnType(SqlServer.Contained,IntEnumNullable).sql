@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @IntEnumNullable Int -- Int32
@@ -15,7 +15,7 @@ VALUES
 	@IntEnumNullable
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @IntEnumNullable Int -- Int32
@@ -32,7 +32,7 @@ VALUES
 	@IntEnumNullable
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[IntEnumNullable]

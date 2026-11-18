@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = 102
 
 DELETE FROM
@@ -20,7 +20,7 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-DECLARE @TestField  -- Int64
+DECLARE @TestField Integer -- Int64
 SET     @TestField = 12
 
 UPDATE
@@ -40,7 +40,7 @@ WHERE
 LIMIT 1
 
 -- SQLite.MS SQLite
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = 102
 
 DELETE FROM

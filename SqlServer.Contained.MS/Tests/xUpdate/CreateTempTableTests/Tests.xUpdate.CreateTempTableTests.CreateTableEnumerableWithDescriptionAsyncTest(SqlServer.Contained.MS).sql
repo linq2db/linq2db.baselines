@@ -1,7 +1,7 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DROP TABLE IF EXISTS [TempTable]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 IF (OBJECT_ID(N'[TempTable]', N'U') IS NULL)
 	CREATE TABLE [TempTable]
 	(
@@ -12,13 +12,13 @@ IF (OBJECT_ID(N'[TempTable]', N'U') IS NULL)
 
 INSERT ASYNC BULK [TempTable](Name)
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t].[Name]
 FROM
 	[Person] [p]
 		INNER JOIN [TempTable] [t] ON [p].[FirstName] = [t].[Name]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DROP TABLE IF EXISTS [TempTable]
 

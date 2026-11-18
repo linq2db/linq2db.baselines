@@ -1,11 +1,11 @@
 ﻿-- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Half  -- Int64
+DECLARE @Half Integer -- Int64
 SET     @Half = 900
-DECLARE @Whole  -- Int64
+DECLARE @Whole Integer -- Int64
 SET     @Whole = 1800
-DECLARE @WholeMs  -- Int64
+DECLARE @WholeMs Integer -- Int64
 SET     @WholeMs = 1800000
 
 INSERT INTO [RatioRow]

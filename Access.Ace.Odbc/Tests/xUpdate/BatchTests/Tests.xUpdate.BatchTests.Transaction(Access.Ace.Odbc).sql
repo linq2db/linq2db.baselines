@@ -102,7 +102,6 @@ VALUES
 	?
 )
 
-CommitTransaction
 -- Access.Ace.Odbc AccessODBC
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1111

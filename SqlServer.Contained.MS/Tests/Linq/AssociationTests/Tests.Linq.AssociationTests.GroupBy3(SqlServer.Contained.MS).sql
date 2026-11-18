@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT DISTINCT
 	DatePart(year, [a_Types].[DateTimeValue])
 FROM

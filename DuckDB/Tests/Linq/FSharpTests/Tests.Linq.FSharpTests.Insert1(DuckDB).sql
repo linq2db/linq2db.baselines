@@ -5,9 +5,9 @@ WHERE
 	c_1.ChildID > 1000
 
 -- DuckDB
-DECLARE $ParentID  -- Int32
+DECLARE $ParentID INTEGER -- Int32
 SET     $ParentID = 1
-DECLARE $ChildID  -- Int32
+DECLARE $ChildID INTEGER -- Int32
 SET     $ChildID = 1001
 
 INSERT INTO Child

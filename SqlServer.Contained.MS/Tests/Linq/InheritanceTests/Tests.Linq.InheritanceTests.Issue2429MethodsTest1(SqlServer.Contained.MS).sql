@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT TOP (1)
 	[x].[Id],
 	[x].[Value]
@@ -7,7 +7,7 @@ FROM
 WHERE
 	[x].[Id] = 1
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT TOP (1)
 	[x].[Id],
 	[x].[Value]

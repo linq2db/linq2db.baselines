@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $InstrumentId Int32
-SET     $InstrumentId = 1
-DECLARE $IndexId Int32
-SET     $IndexId = 1
+DECLARE InstrumentId Int32
+SET     InstrumentId = 1
+DECLARE IndexId Int32
+SET     IndexId = 1
 
 INSERT INTO T3
 (
@@ -16,10 +16,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $InstrumentId Int32
-SET     $InstrumentId = 2
-DECLARE $IndexId Int32
-SET     $IndexId = 1
+DECLARE InstrumentId Int32
+SET     InstrumentId = 2
+DECLARE IndexId Int32
+SET     IndexId = 1
 
 INSERT INTO T3
 (
@@ -33,10 +33,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $InstrumentId Int32
-SET     $InstrumentId = 3
-DECLARE $IndexId Int32
-SET     $IndexId = 1
+DECLARE InstrumentId Int32
+SET     InstrumentId = 3
+DECLARE IndexId Int32
+SET     IndexId = 1
 
 INSERT INTO T3
 (
@@ -50,10 +50,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $InstrumentId Int32
-SET     $InstrumentId = 1
-DECLARE $IndexId Int32
-SET     $IndexId = 1
+DECLARE InstrumentId Int32
+SET     InstrumentId = 1
+DECLARE IndexId Int32
+SET     IndexId = 1
 
 INSERT INTO T2
 (
@@ -67,10 +67,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $InstrumentId Int32
-SET     $InstrumentId = 2
-DECLARE $IndexId Int32
-SET     $IndexId = 1
+DECLARE InstrumentId Int32
+SET     InstrumentId = 2
+DECLARE IndexId Int32
+SET     IndexId = 1
 
 INSERT INTO T2
 (
@@ -84,14 +84,14 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $InstrumentId Int32
-SET     $InstrumentId = 1
-DECLARE $InstrumentCode Text(4) -- String
-SET     $InstrumentCode = 'aaa1'u
-DECLARE $CreateDate Timestamp -- DateTime2
-SET     $CreateDate = Timestamp('2020-02-28T17:54:55.123123Z')
-DECLARE $SourceInstrumentCode Text(7) -- String
-SET     $SourceInstrumentCode = 'NOTNULL'u
+DECLARE InstrumentId Int32
+SET     InstrumentId = 1
+DECLARE InstrumentCode Text(4) -- String
+SET     InstrumentCode = 'aaa1'u
+DECLARE CreateDate Timestamp -- DateTime2
+SET     CreateDate = Timestamp('2020-02-28T17:54:55.123123Z')
+DECLARE SourceInstrumentCode Text(7) -- String
+SET     SourceInstrumentCode = 'NOTNULL'u
 
 INSERT INTO T1
 (
@@ -109,14 +109,14 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $InstrumentId Int32
-SET     $InstrumentId = 2
-DECLARE $InstrumentCode Text(4) -- String
-SET     $InstrumentCode = 'aaa2'u
-DECLARE $CreateDate Timestamp -- DateTime2
-SET     $CreateDate = Timestamp('2020-02-28T17:54:55.123123Z')
-DECLARE $SourceInstrumentCode Text -- String
-SET     $SourceInstrumentCode = NULL
+DECLARE InstrumentId Int32
+SET     InstrumentId = 2
+DECLARE InstrumentCode Text(4) -- String
+SET     InstrumentCode = 'aaa2'u
+DECLARE CreateDate Timestamp -- DateTime2
+SET     CreateDate = Timestamp('2020-02-28T17:54:55.123123Z')
+DECLARE SourceInstrumentCode Text -- String
+SET     SourceInstrumentCode = NULL
 
 INSERT INTO T1
 (
@@ -134,10 +134,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $cond Text(4) -- String
-SET     $cond = 'aaa%'u
-DECLARE $uptoDate Timestamp -- DateTime2
-SET     $uptoDate = Timestamp('2020-02-29T17:54:55.123123Z')
+DECLARE cond Text(4) -- String
+SET     cond = 'aaa%'u
+DECLARE uptoDate Timestamp -- DateTime2
+SET     uptoDate = Timestamp('2020-02-29T17:54:55.123123Z')
 
 SELECT DISTINCT
 	ins.SourceInstrumentCode as SourceInstrumentCode

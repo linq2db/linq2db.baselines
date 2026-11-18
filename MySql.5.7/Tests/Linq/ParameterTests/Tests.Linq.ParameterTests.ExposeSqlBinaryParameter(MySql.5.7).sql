@@ -3,12 +3,12 @@ DECLARE @p Blob(3) -- Binary
 SET     @p = 0x000102
 
 SELECT
-	`t`.`DecimalDataType`,
-	`t`.`BinaryDataType`,
-	`t`.`VarBinaryDataType`,
-	`t`.`VarcharDataType`
+	`t`.`decimalDataType`,
+	`t`.`binaryDataType`,
+	`t`.`varbinaryDataType`,
+	`t`.`varcharDataType`
 FROM
 	`AllTypes` `t`
 WHERE
-	`t`.`BinaryDataType` = @p
+	`t`.`binaryDataType` = @p
 

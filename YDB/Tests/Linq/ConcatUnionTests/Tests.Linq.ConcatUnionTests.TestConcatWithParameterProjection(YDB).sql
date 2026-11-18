@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $someValue Int32
-SET     $someValue = 3
+DECLARE someValue Int32
+SET     someValue = 3
 
 SELECT
 	Unwrap(CAST($someValue AS Int32)) as Value_1,

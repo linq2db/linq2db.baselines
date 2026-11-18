@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $ts Interval -- Object
-SET     $ts = Interval('PT1H')
+DECLARE ts Interval -- Object
+SET     ts = Interval('PT1H')
 
 SELECT
 	t.Id as Id,

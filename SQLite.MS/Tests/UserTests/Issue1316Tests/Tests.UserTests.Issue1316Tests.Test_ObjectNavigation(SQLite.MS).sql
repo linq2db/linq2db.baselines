@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @ID  -- Int32
+DECLARE @ID Integer -- Int32
 SET     @ID = 5
 
 INSERT INTO [Issue1316Tests]
@@ -12,7 +12,7 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 5
 
 SELECT

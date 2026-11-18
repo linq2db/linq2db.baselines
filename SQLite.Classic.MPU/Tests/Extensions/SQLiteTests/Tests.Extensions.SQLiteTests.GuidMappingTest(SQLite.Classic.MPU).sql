@@ -107,7 +107,7 @@ DELETE FROM
 	[GuidMapping]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @NonReadonlyGuid1  -- Guid
+DECLARE @NonReadonlyGuid1 Blob -- Guid
 SET     @NonReadonlyGuid1 = X'3D667BBCDE0F27438F925D8CC3A11D11'
 
 INSERT INTO [GuidMapping]
@@ -147,7 +147,7 @@ DELETE FROM
 	[GuidMapping]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @NonReadonlyGuid1  -- Guid
+DECLARE @NonReadonlyGuid1 Blob -- Guid
 SET     @NonReadonlyGuid1 = X'3D667BBCDE0F27438F925D8CC3A11D11'
 
 INSERT INTO [GuidMapping]
@@ -167,7 +167,7 @@ DELETE FROM
 	[GuidMapping]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @NonReadonlyGuid1  -- Guid
+DECLARE @NonReadonlyGuid1 Blob -- Guid
 SET     @NonReadonlyGuid1 = X'3D667BBCDE0F27438F925D8CC3A11D11'
 
 INSERT INTO [GuidMapping]
@@ -296,13 +296,13 @@ DELETE FROM
 	[GuidMapping]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @BlobGuid1  -- Guid
+DECLARE @BlobGuid1 Blob -- Guid
 SET     @BlobGuid1 = X'3D667BBCDE0F27438F925D8CC3A11D11'
 DECLARE @BlobGuid2 Binary(16)
 SET     @BlobGuid2 = X'3D667BBCDE0F27438F925D8CC3A11D11'
-DECLARE @BlobGuid3  -- Guid
+DECLARE @BlobGuid3 Blob -- Guid
 SET     @BlobGuid3 = X'3D667BBCDE0F27438F925D8CC3A11D11'
-DECLARE @BlobGuid4  -- Guid
+DECLARE @BlobGuid4 Blob -- Guid
 SET     @BlobGuid4 = X'3D667BBCDE0F27438F925D8CC3A11D11'
 DECLARE @TextGuid1 NVarChar(36) -- String
 SET     @TextGuid1 = 'BC7B663D-0FDE-4327-8F92-5D8CC3A11D11'

@@ -1,7 +1,7 @@
 ﻿-- DuckDB
-DECLARE $ParentID  -- Int32
+DECLARE $ParentID INTEGER -- Int32
 SET     $ParentID = 1001
-DECLARE $Value1  -- Int32
+DECLARE $Value1 INTEGER -- Int32
 SET     $Value1 = NULL
 
 INSERT INTO Parent

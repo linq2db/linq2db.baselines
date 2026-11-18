@@ -1,7 +1,7 @@
 ﻿-- SQLite.Classic SQLite
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 2
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Integer -- Int32
 SET     @ChildID = 21
 
 SELECT

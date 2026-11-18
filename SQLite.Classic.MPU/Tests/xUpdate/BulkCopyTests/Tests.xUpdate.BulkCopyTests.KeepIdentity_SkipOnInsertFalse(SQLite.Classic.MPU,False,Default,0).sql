@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 0
 
 INSERT INTO [AllTypes]
@@ -12,7 +12,8 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-SELECT last_insert_rowid()
+SELECT
+	last_insert_rowid()
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 INSERT INTO [AllTypes]
@@ -24,7 +25,7 @@ VALUES
 (300)
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @lastId  -- Int32
+DECLARE @lastId Integer -- Int32
 SET     @lastId = 3
 
 SELECT
@@ -38,7 +39,7 @@ ORDER BY
 	[t1].[ID]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @lastId  -- Int32
+DECLARE @lastId Integer -- Int32
 SET     @lastId = 3
 
 DELETE FROM

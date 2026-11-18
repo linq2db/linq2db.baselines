@@ -7,7 +7,7 @@ WHERE (@ef_filter__p1 OR NOT ("e"."IsDeleted") OR NOT ("e"."IsDeleted")) AND "e"
 
 
 -- SQLite.MS SQLite
-DECLARE @test  -- Int32
+DECLARE @test Integer -- Int32
 SET     @test = 1
 
 SELECT

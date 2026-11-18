@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @month  -- Int32
+DECLARE @month Integer -- Int32
 SET     @month = 1
 
 SELECT

@@ -6,6 +6,86 @@ SELECT
 FROM
 	"TypeTable`2" r
 WHERE
+	r."Column" = '0'::BIGNUM AND r.ColumnNullable IS NULL
+
+-- DuckDB
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = '0'::BIGNUM AND r.ColumnNullable IS NULL
+
+-- DuckDB
+DELETE FROM
+	"TypeTable`2" t1
+
+-- DuckDB
+DECLARE $Id INTEGER -- Int32
+SET     $Id = 1
+
+INSERT INTO "TypeTable`2"
+(
+	Id,
+	"Column",
+	ColumnNullable
+)
+VALUES
+(
+	$Id,
+	'0'::BIGNUM,
+	NULL
+)
+
+-- DuckDB
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = '0'::BIGNUM AND r.ColumnNullable IS NULL
+
+-- DuckDB
+DELETE FROM
+	"TypeTable`2" t1
+
+-- DuckDB
+DECLARE $p1 INTEGER -- Int32
+SET     $p1 = 1
+DECLARE $p2 Decimal
+SET     $p2 = '0'::BIGNUM
+
+INSERT INTO "TypeTable`2"
+(
+	Id,
+	"Column",
+	ColumnNullable
+)
+VALUES
+($p1,$p2,NULL)
+
+-- DuckDB
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = '0'::BIGNUM AND r.ColumnNullable IS NULL
+
+-- DuckDB
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
 	r."Column" = '-340282366920938463463374607431768211455340282366920938463463374607431768211455'::BIGNUM AND
 	r.ColumnNullable = '340282366920938463463374607431768211455340282366920938463463374607431768211455'::BIGNUM
 
@@ -25,7 +105,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 
 INSERT INTO "TypeTable`2"
@@ -57,7 +137,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal
 SET     $p2 = '-340282366920938463463374607431768211455340282366920938463463374607431768211455'::BIGNUM
@@ -111,7 +191,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 
 INSERT INTO "TypeTable`2"
@@ -143,7 +223,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal
 SET     $p2 = '340282366920938463463374607431768211455340282366920938463463374607431768211455'::BIGNUM

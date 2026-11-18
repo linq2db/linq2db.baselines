@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $Column Uint8 -- Byte
-SET     $Column = 255ut
-DECLARE $ColumnNullable Uint8 -- Byte
-SET     $ColumnNullable = 2ut
+DECLARE Column Uint8 -- Byte
+SET     Column = 255ut
+DECLARE ColumnNullable Uint8 -- Byte
+SET     ColumnNullable = 2ut
 
 SELECT
 	r.Id as Id,
@@ -28,12 +28,12 @@ DELETE FROM
 	ByteTable
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Uint8 -- Byte
-SET     $Column = 1ut
-DECLARE $ColumnNullable Uint8 -- Byte
-SET     $ColumnNullable = NULL
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Uint8 -- Byte
+SET     Column = 1ut
+DECLARE ColumnNullable Uint8 -- Byte
+SET     ColumnNullable = NULL
 
 INSERT INTO ByteTable
 (
@@ -49,12 +49,12 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 2
-DECLARE $Column Uint8 -- Byte
-SET     $Column = 255ut
-DECLARE $ColumnNullable Uint8 -- Byte
-SET     $ColumnNullable = 2ut
+DECLARE Id Int32
+SET     Id = 2
+DECLARE Column Uint8 -- Byte
+SET     Column = 255ut
+DECLARE ColumnNullable Uint8 -- Byte
+SET     ColumnNullable = 2ut
 
 INSERT INTO ByteTable
 (

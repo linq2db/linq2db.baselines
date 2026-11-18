@@ -46,7 +46,6 @@ VALUES
 (3111,3111),
 (4111,4111)
 
-CommitTransaction
 -- PostgreSQL.9.3 PostgreSQL
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1111

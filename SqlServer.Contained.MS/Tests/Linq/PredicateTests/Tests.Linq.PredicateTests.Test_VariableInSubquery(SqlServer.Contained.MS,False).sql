@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @One Int -- Int32
 SET     @One = 1
 
@@ -20,7 +20,7 @@ WHERE
 			[s].[Id] > [r].[Id]
 	)
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -30,7 +30,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @Zero Int -- Int32
 SET     @Zero = 0
 
@@ -52,7 +52,7 @@ WHERE
 			[s].[Id] > [r].[Id]
 	)
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -62,7 +62,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @OneN Int -- Int32
 SET     @OneN = 1
 
@@ -84,7 +84,7 @@ WHERE
 			[s].[Id] > [r].[Id]
 	)
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -94,7 +94,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @ZeroN Int -- Int32
 SET     @ZeroN = 0
 
@@ -116,7 +116,7 @@ WHERE
 			[s].[Id] > [r].[Id]
 	)
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -126,7 +126,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @Null Int -- Int32
 SET     @Null = NULL
 
@@ -148,7 +148,7 @@ WHERE
 			[s].[Id] > [r].[Id]
 	)
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -158,7 +158,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @One Int -- Int32
 SET     @One = 1
 
@@ -180,7 +180,7 @@ WHERE
 			[s].[Id] > [r].[Id]
 	)
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -190,7 +190,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @Zero Int -- Int32
 SET     @Zero = 0
 
@@ -212,7 +212,7 @@ WHERE
 			[s].[Id] > [r].[Id]
 	)
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -222,7 +222,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @OneN Int -- Int32
 SET     @OneN = 1
 
@@ -244,7 +244,7 @@ WHERE
 			[s].[Id] > [r].[Id]
 	)
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -254,7 +254,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @ZeroN Int -- Int32
 SET     @ZeroN = 0
 
@@ -276,7 +276,7 @@ WHERE
 			[s].[Id] > [r].[Id]
 	)
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -286,7 +286,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -296,7 +296,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value1],

@@ -1,0 +1,3 @@
+﻿-- SqlServer.CS SqlServer.2025
+SELECT CURRENT_TIMESTAMP
+

@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $id Int32
-SET     $id = 1
+DECLARE id Int32
+SET     id = 1
 
 $CTE_1 = 	SELECT
 		t1.ParentID as ParentID

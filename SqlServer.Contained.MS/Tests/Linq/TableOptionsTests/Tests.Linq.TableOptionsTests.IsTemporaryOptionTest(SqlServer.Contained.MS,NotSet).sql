@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 CREATE TABLE [tempdb]..[#temp_table1]
 (
 	[ID]    Int NOT NULL,
@@ -9,7 +9,7 @@ CREATE TABLE [tempdb]..[#temp_table1]
 
 INSERT BULK [tempdb]..[#temp_table1](ID, Value)
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 CREATE TABLE [tempdb]..[#temp_table2]
 (
 	[ID]    Int NOT NULL,
@@ -18,7 +18,7 @@ CREATE TABLE [tempdb]..[#temp_table2]
 	PRIMARY KEY CLUSTERED ([ID])
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 INSERT INTO [tempdb]..[#temp_table2]
 (
 	[ID],
@@ -30,21 +30,21 @@ SELECT
 FROM
 	[tempdb]..[#temp_table1] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[ID],
 	[t1].[Value]
 FROM
 	[tempdb]..[#temp_table1] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[ID],
 	[t1].[Value]
 FROM
 	[tempdb]..[#temp_table2] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 INSERT INTO [tempdb]..[#temp_table1]
 (
 	[ID],
@@ -53,7 +53,7 @@ INSERT INTO [tempdb]..[#temp_table1]
 VALUES
 (2,3)
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @ID Int -- Int32
 SET     @ID = 3
 DECLARE @Value Int -- Int32
@@ -72,15 +72,15 @@ VALUES
 
 INSERT BULK [tempdb]..[#temp_table1](ID, Value)
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 TRUNCATE TABLE [tempdb]..[#temp_table1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 TRUNCATE TABLE [tempdb]..[#temp_table2]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DROP TABLE IF EXISTS [tempdb]..[#temp_table2]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DROP TABLE IF EXISTS [tempdb]..[#temp_table1]
 

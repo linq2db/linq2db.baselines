@@ -1,8 +1,8 @@
 ﻿BeginTransactionAsync
 -- DuckDB
-DECLARE $ParentID  -- Int32
+DECLARE $ParentID INTEGER -- Int32
 SET     $ParentID = 1010
-DECLARE $Value1  -- Int32
+DECLARE $Value1 INTEGER -- Int32
 SET     $Value1 = 1010
 
 INSERT INTO Parent
@@ -16,7 +16,6 @@ VALUES
 	$Value1
 )
 
-CommitTransactionAsync
 -- DuckDB
 DELETE FROM
 	Parent t1

@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $filterValue Int32
-SET     $filterValue = 2
+DECLARE filterValue Int32
+SET     filterValue = 2
 
 SELECT
 	x.Id as Id,

@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $ID Int32
-SET     $ID = 5
+DECLARE ID Int32
+SET     ID = 5
 
 INSERT INTO Issue1316Tests
 (
@@ -12,8 +12,8 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 5
+DECLARE Id Int32
+SET     Id = 5
 
 SELECT
 	t1.ID as ID

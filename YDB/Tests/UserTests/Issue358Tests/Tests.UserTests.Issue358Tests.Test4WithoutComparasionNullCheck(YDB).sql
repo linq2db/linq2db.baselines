@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $Ids0_1 Int64
-SET     $Ids0_1 = 2l
+DECLARE Ids0_1 Int64
+SET     Ids0_1 = 2l
 
 SELECT
 	t1.ID as ID,

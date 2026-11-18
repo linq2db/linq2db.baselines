@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @value  -- Int64
+DECLARE @value Integer -- Int64
 SET     @value = 0
 
 SELECT

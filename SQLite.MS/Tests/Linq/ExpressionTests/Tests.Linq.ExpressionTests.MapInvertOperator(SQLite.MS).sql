@@ -1,7 +1,7 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @addMask  -- Int32
+DECLARE @addMask Integer -- Int32
 SET     @addMask = 3
-DECLARE @removeMask  -- Int32
+DECLARE @removeMask Integer -- Int32
 SET     @removeMask = 12
 
 UPDATE

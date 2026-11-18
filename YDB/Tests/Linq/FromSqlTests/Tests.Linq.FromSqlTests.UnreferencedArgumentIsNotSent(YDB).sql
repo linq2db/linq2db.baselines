@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $In Int32
-SET     $In = 1
+DECLARE In Int32
+SET     In = 1
 
 $CTE_1 = 	SELECT
 		t1.`value` as value_1

@@ -1,0 +1,6 @@
+﻿-- Firebird.4 Firebird4
+SELECT
+	("e"."Value1" + 1) || ',' || "e"."Value1"
+FROM
+	"JoinProbeEntity" "e"
+

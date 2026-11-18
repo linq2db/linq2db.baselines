@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Country],
 	[t1].[Region]
@@ -24,7 +24,7 @@ WHERE
 ORDER BY
 	[t1].[Region]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[CustomerId],

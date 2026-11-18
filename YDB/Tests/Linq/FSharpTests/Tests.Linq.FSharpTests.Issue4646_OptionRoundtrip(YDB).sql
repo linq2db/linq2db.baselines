@@ -1,10 +1,10 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $IntValue Int32
-SET     $IntValue = 42
-DECLARE $StrValue Text(5) -- String
-SET     $StrValue = 'hello'u
+DECLARE Id Int32
+SET     Id = 1
+DECLARE IntValue Int32
+SET     IntValue = 42
+DECLARE StrValue Text(5) -- String
+SET     StrValue = 'hello'u
 
 INSERT INTO Issue4646Table
 (
@@ -20,12 +20,12 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 2
-DECLARE $IntValue Int32
-SET     $IntValue = NULL
-DECLARE $StrValue Text -- String
-SET     $StrValue = NULL
+DECLARE Id Int32
+SET     Id = 2
+DECLARE IntValue Int32
+SET     IntValue = NULL
+DECLARE StrValue Text -- String
+SET     StrValue = NULL
 
 INSERT INTO Issue4646Table
 (

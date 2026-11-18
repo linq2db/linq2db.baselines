@@ -30,8 +30,6 @@ WHERE
 
 
 
-
-
 -- SqlServer.2017
 SELECT
 	[e].[IsDeleted],
@@ -53,6 +51,8 @@ FROM
 	[Orders] [e]
 WHERE
 	[e].[IsDeleted] = 0
+
+
 
 
 

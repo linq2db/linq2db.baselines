@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @StrKey NVarChar(2) -- String
 SET     @StrKey = 'K1'
@@ -20,7 +20,7 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @StrKey NVarChar(2) -- String
 SET     @StrKey = 'K1'
@@ -41,7 +41,7 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @StrKey NVarChar(2) -- String
 SET     @StrKey = 'K1'
@@ -62,7 +62,7 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @StrKey NVarChar(2) -- String
 SET     @StrKey = 'K1'

@@ -1,10 +1,10 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	COUNT(*)
 FROM
 	[Person] [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @skip Int -- Int32
 SET     @skip = 1
 

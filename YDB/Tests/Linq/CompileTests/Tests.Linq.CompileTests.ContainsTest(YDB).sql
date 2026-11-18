@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $ParentID Int32
-SET     $ParentID = 1
+DECLARE ParentID Int32
+SET     ParentID = 1
 
 $CTE_1 = 	SELECT
 		c_1.ParentID as ParentID
@@ -21,8 +21,8 @@ SELECT
 	END as c1
 
 -- YDB Ydb
-DECLARE $ParentID Int32
-SET     $ParentID = -1
+DECLARE ParentID Int32
+SET     ParentID = -1
 
 $CTE_1 = 	SELECT
 		c_1.ParentID as ParentID

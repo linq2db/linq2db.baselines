@@ -1,9 +1,9 @@
 ﻿-- SQLite.Classic SQLite
-DECLARE @ID  -- Int32
+DECLARE @ID Integer -- Int32
 SET     @ID = 1001
 DECLARE @MoneyValue Decimal(4, 0)
 SET     @MoneyValue = 1000
-DECLARE @SmallIntValue  -- Int16
+DECLARE @SmallIntValue Integer -- Int16
 SET     @SmallIntValue = 100
 
 INSERT INTO [LinqDataTypes]
@@ -20,7 +20,7 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-DECLARE @ID  -- Int32
+DECLARE @ID Integer -- Int32
 SET     @ID = 1001
 
 UPDATE
@@ -32,7 +32,7 @@ WHERE
 	[LinqDataTypes].[ID] = @ID
 
 -- SQLite.Classic SQLite
-DECLARE @ID  -- Int32
+DECLARE @ID Integer -- Int32
 SET     @ID = 1001
 
 SELECT

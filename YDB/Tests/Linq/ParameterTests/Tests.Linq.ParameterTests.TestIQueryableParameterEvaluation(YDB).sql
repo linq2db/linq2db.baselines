@@ -1,10 +1,10 @@
 ﻿-- YDB Ydb
-DECLARE $paramCopy Int32
-SET     $paramCopy = 1
-DECLARE $p Int32
-SET     $p = 0
-DECLARE $p_1 Int32
-SET     $p_1 = 2
+DECLARE paramCopy Int32
+SET     paramCopy = 1
+DECLARE p Int32
+SET     p = 0
+DECLARE p_1 Int32
+SET     p_1 = 2
 
 $CTE_1 = 	SELECT
 		p.PersonID as ID
@@ -56,12 +56,12 @@ WHERE
 	))
 
 -- YDB Ydb
-DECLARE $p Int32
-SET     $p = 3
-DECLARE $paramCopy Int32
-SET     $paramCopy = 2
-DECLARE $p_1 Int32
-SET     $p_1 = 3
+DECLARE p Int32
+SET     p = 3
+DECLARE paramCopy Int32
+SET     paramCopy = 2
+DECLARE p_1 Int32
+SET     p_1 = 3
 
 $CTE_1 = 	SELECT
 		p.PersonID as ID
@@ -113,12 +113,12 @@ WHERE
 	))
 
 -- YDB Ydb
-DECLARE $p Int32
-SET     $p = 4
-DECLARE $p_1 Int32
-SET     $p_1 = 2
-DECLARE $paramCopy Int32
-SET     $paramCopy = 3
+DECLARE p Int32
+SET     p = 4
+DECLARE p_1 Int32
+SET     p_1 = 2
+DECLARE paramCopy Int32
+SET     paramCopy = 3
 
 $CTE_1 = 	SELECT
 		p.PersonID as ID
@@ -170,12 +170,12 @@ WHERE
 	))
 
 -- YDB Ydb
-DECLARE $paramCopy Int32
-SET     $paramCopy = 1
-DECLARE $p Int32
-SET     $p = 0
-DECLARE $p_1 Int32
-SET     $p_1 = 2
+DECLARE paramCopy Int32
+SET     paramCopy = 1
+DECLARE p Int32
+SET     p = 0
+DECLARE p_1 Int32
+SET     p_1 = 2
 
 $CTE_1 = 	SELECT
 		p.PersonID as ID
@@ -227,12 +227,12 @@ WHERE
 	))
 
 -- YDB Ydb
-DECLARE $p Int32
-SET     $p = 4
-DECLARE $p_1 Int32
-SET     $p_1 = 2
-DECLARE $paramCopy Int32
-SET     $paramCopy = 3
+DECLARE p Int32
+SET     p = 4
+DECLARE p_1 Int32
+SET     p_1 = 2
+DECLARE paramCopy Int32
+SET     paramCopy = 3
 
 $CTE_1 = 	SELECT
 		p.PersonID as ID
@@ -284,12 +284,12 @@ WHERE
 	))
 
 -- YDB Ydb
-DECLARE $p Int32
-SET     $p = 3
-DECLARE $paramCopy Int32
-SET     $paramCopy = 2
-DECLARE $p_1 Int32
-SET     $p_1 = 3
+DECLARE p Int32
+SET     p = 3
+DECLARE paramCopy Int32
+SET     paramCopy = 2
+DECLARE p_1 Int32
+SET     p_1 = 3
 
 $CTE_1 = 	SELECT
 		p.PersonID as ID

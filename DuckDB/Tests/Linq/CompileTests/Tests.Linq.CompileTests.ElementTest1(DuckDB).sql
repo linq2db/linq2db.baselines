@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $p  -- Int32
+DECLARE $p INTEGER -- Int32
 SET     $p = 1
 
 SELECT
@@ -12,7 +12,7 @@ WHERE
 LIMIT 1
 
 -- DuckDB
-DECLARE $p  -- Int32
+DECLARE $p INTEGER -- Int32
 SET     $p = 2
 
 SELECT

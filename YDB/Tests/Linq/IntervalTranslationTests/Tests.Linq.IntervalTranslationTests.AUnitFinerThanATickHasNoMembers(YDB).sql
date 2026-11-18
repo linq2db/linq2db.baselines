@@ -1,12 +1,12 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $InDays Int64
-SET     $InDays = 0l
-DECLARE $InMilliseconds Int64
-SET     $InMilliseconds = 0l
-DECLARE $InNanoseconds Int64
-SET     $InNanoseconds = 7000000000l
+DECLARE Id Int32
+SET     Id = 1
+DECLARE InDays Int64
+SET     InDays = 0l
+DECLARE InMilliseconds Int64
+SET     InMilliseconds = 0l
+DECLARE InNanoseconds Int64
+SET     InNanoseconds = 7000000000l
 
 INSERT INTO UnitSpreadRow
 (

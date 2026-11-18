@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Name Text(5) -- String
-SET     $Name = 'Smith'u
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Name Text(5) -- String
+SET     Name = 'Smith'u
 
 INSERT INTO PR_1598_Insert_Table
 (
@@ -27,10 +27,10 @@ WHERE
 LIMIT 1
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 2
-DECLARE $Name Text(5) -- String
-SET     $Name = 'Tommy'u
+DECLARE Id Int32
+SET     Id = 2
+DECLARE Name Text(5) -- String
+SET     Name = 'Tommy'u
 
 INSERT INTO PR_1598_Insert_Table
 (

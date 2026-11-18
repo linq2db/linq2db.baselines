@@ -1,7 +1,7 @@
 ﻿-- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @take  -- Int32
+DECLARE @take Integer -- Int32
 SET     @take = 10
-DECLARE @skip  -- Int32
+DECLARE @skip Integer -- Int32
 SET     @skip = 10
 
 SELECT

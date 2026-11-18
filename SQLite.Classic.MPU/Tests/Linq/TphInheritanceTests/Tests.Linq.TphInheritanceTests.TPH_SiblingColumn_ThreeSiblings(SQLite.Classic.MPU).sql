@@ -1,7 +1,7 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Kind NVarChar(2) -- String
 SET     @Kind = 'T1'
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Code NVarChar(1) -- String
 SET     @Code = 'a'
@@ -22,7 +22,7 @@ VALUES
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Kind NVarChar(2) -- String
 SET     @Kind = 'T2'
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Code NVarChar(1) -- String
 SET     @Code = 'b'
@@ -43,7 +43,7 @@ VALUES
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Kind NVarChar(2) -- String
 SET     @Kind = 'T3'
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 3
 DECLARE @Code NVarChar(1) -- String
 SET     @Code = 'c'

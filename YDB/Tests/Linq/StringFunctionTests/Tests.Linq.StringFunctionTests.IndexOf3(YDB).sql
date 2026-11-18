@@ -1,10 +1,10 @@
 ﻿-- YDB Ydb
-DECLARE $s Text(1) -- String
-SET     $s = 'e'u
-DECLARE $n2 Int32
-SET     $n2 = 5
-DECLARE $n1 Int32
-SET     $n1 = 2
+DECLARE s Text(1) -- String
+SET     s = 'e'u
+DECLARE n2 Int32
+SET     n2 = 5
+DECLARE n1 Int32
+SET     n1 = 2
 
 SELECT
 	p.FirstName as FirstName,

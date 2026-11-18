@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DECLARE @s NVarChar(4000) -- String
 SET     @s = N'123]456'
 DECLARE @toTest NVarChar(4000) -- String

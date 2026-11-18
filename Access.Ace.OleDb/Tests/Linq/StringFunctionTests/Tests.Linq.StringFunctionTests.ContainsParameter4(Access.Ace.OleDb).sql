@@ -20,5 +20,5 @@ FROM
 WHERE
 	[t1].[Field1]
 ORDER BY
-	[t1].[Field1]
+	([t1].[Field1]) DESC
 

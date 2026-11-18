@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic SQLite
-DECLARE @param  -- Int16
+DECLARE @param Integer -- Int16
 SET     @param = 1
 
 SELECT

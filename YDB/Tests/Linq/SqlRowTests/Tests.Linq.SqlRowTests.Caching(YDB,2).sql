@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $r3 Int32
-SET     $r3 = 2
+DECLARE r3 Int32
+SET     r3 = 2
 
 SELECT
 	COUNT(*) as Count_1

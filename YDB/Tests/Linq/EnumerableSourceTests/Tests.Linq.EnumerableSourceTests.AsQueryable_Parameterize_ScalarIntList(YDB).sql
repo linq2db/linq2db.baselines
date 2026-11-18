@@ -1,10 +1,10 @@
 ﻿-- YDB Ydb
-DECLARE $item Int32
-SET     $item = 10
-DECLARE $item_1 Int32
-SET     $item_1 = 20
-DECLARE $item_2 Int32
-SET     $item_2 = 30
+DECLARE item Int32
+SET     item = 10
+DECLARE item_1 Int32
+SET     item_1 = 20
+DECLARE item_2 Int32
+SET     item_2 = 30
 
 SELECT
 	t1.item as item_1

@@ -1,7 +1,7 @@
 ﻿-- SQLite.MS SQLite
 DECLARE @Data NVarChar(9) -- String
 SET     @Data = '***III***'
-DECLARE @ID  -- Int32
+DECLARE @ID Integer -- Int32
 SET     @ID = 3
 
 UPDATE

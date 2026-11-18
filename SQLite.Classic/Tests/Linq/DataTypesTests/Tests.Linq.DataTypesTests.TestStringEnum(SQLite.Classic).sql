@@ -28,7 +28,7 @@ DELETE FROM
 	[StringEnumTable]
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Column NVarChar(5) -- String
 SET     @Column = 'val=1'
@@ -49,7 +49,7 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Column NVarChar(7) -- String
 SET     @Column = 'value=2'

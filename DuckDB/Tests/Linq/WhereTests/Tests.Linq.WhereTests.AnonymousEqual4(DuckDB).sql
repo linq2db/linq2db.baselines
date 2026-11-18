@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $ParentID  -- Int32
+DECLARE $ParentID INTEGER -- Int32
 SET     $ParentID = 2
 
 SELECT

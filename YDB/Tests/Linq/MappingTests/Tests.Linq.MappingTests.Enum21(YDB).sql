@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $gender Text(1) -- AnsiStringFixedLength
-SET     $gender = 'M'u
+DECLARE gender Text(1) -- AnsiStringFixedLength
+SET     gender = 'M'u
 
 SELECT
 	p.FirstName as FirstName,

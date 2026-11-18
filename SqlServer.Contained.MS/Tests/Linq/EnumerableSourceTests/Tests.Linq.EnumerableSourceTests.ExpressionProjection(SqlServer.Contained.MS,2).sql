@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @ID Int -- Int32
 SET     @ID = 3
 DECLARE @ID_1 Int -- Int32

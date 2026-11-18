@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1111
 
 DELETE FROM
@@ -8,7 +8,7 @@ WHERE
 	[Parent].[ParentID] = @ParentID
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 2111
 
 DELETE FROM
@@ -17,7 +17,7 @@ WHERE
 	[Parent].[ParentID] = @ParentID
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 3111
 
 DELETE FROM
@@ -26,7 +26,7 @@ WHERE
 	[Parent].[ParentID] = @ParentID
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 4111
 
 DELETE FROM
@@ -46,9 +46,8 @@ VALUES
 (3111,3111),
 (4111,4111)
 
-CommitTransaction
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1111
 
 DELETE FROM
@@ -57,7 +56,7 @@ WHERE
 	[Parent].[ParentID] = @ParentID
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 2111
 
 DELETE FROM
@@ -66,7 +65,7 @@ WHERE
 	[Parent].[ParentID] = @ParentID
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 3111
 
 DELETE FROM
@@ -75,7 +74,7 @@ WHERE
 	[Parent].[ParentID] = @ParentID
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 4111
 
 DELETE FROM

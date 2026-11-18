@@ -1,10 +1,10 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Stamp Int32
-SET     $Stamp = -10
-DECLARE $Value Text(7) -- String
-SET     $Value = 'initial'u
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Stamp Int32
+SET     Stamp = -10
+DECLARE Value Text(7) -- String
+SET     Value = 'initial'u
 
 INSERT INTO ConcurrencyAutoIncrement
 (
@@ -28,12 +28,12 @@ FROM
 	ConcurrencyAutoIncrement t1
 
 -- YDB Ydb
-DECLARE $Value Text(7) -- String
-SET     $Value = 'value 1'u
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Stamp Int32
-SET     $Stamp = -10
+DECLARE Value Text(7) -- String
+SET     Value = 'value 1'u
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Stamp Int32
+SET     Stamp = -10
 
 UPDATE
 	ConcurrencyAutoIncrement
@@ -52,12 +52,12 @@ FROM
 	ConcurrencyAutoIncrement t1
 
 -- YDB Ydb
-DECLARE $Value Text(7) -- String
-SET     $Value = 'value 2'u
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Stamp Int32
-SET     $Stamp = -9
+DECLARE Value Text(7) -- String
+SET     Value = 'value 2'u
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Stamp Int32
+SET     Stamp = -9
 
 UPDATE
 	ConcurrencyAutoIncrement
@@ -76,12 +76,12 @@ FROM
 	ConcurrencyAutoIncrement t1
 
 -- YDB Ydb
-DECLARE $Value Text(7) -- String
-SET     $Value = 'value 3'u
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Stamp Int32
-SET     $Stamp = -9
+DECLARE Value Text(7) -- String
+SET     Value = 'value 3'u
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Stamp Int32
+SET     Stamp = -9
 
 UPDATE
 	ConcurrencyAutoIncrement
@@ -100,10 +100,10 @@ FROM
 	ConcurrencyAutoIncrement t1
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Stamp Int32
-SET     $Stamp = -9
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Stamp Int32
+SET     Stamp = -9
 
 DELETE FROM
 	ConcurrencyAutoIncrement
@@ -119,10 +119,10 @@ FROM
 	ConcurrencyAutoIncrement t1
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Stamp Int32
-SET     $Stamp = -8
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Stamp Int32
+SET     Stamp = -8
 
 DELETE FROM
 	ConcurrencyAutoIncrement

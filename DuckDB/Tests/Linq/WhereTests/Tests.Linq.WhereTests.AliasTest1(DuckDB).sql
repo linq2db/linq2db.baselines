@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $user  -- Int32
+DECLARE $user INTEGER -- Int32
 SET     $user = 3
 
 SELECT

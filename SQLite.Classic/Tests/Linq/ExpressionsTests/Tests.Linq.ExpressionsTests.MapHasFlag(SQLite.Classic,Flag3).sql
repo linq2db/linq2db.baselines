@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic SQLite
-DECLARE @flag  -- Int32
+DECLARE @flag Integer -- Int32
 SET     @flag = 4
 
 SELECT

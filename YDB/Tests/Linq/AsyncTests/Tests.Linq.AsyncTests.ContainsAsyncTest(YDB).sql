@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $ID Int32
-SET     $ID = 1
+DECLARE ID Int32
+SET     ID = 1
 
 $CTE_1 = 	SELECT
 		t1.PersonID as ID

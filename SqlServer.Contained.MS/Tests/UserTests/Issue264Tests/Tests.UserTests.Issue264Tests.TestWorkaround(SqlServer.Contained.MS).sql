@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	COUNT(*)
 FROM
@@ -10,7 +10,7 @@ FROM
 			[LinqDataTypes] [t1]
 	) [t2]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT DISTINCT
 	MONTH([t1].[DateTimeValue]),
 	YEAR([t1].[DateTimeValue])

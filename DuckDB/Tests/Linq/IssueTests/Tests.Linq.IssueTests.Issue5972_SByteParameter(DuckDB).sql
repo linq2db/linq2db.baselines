@@ -1,12 +1,12 @@
 ﻿-- DuckDB
-DECLARE $min  -- SByte
+DECLARE $min TINYINT -- SByte
 SET     $min = -128
 
 SELECT
 	$min
 
 -- DuckDB
-DECLARE $max  -- SByte
+DECLARE $max TINYINT -- SByte
 SET     $max = 127
 
 SELECT

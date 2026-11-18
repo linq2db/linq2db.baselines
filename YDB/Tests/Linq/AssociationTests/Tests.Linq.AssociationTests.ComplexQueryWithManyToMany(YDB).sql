@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $id Int32
-SET     $id = 3
-DECLARE $id1 Int32
-SET     $id1 = 3
+DECLARE id Int32
+SET     id = 3
+DECLARE id1 Int32
+SET     id1 = 3
 
 SELECT
 	t1.ChildID as ChildID

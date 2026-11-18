@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT TOP (1)
 	[r].[ID],
 	[r].[MoneyValue],
@@ -15,7 +15,7 @@ FROM
 WHERE
 	[r].[ID] = 1
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT TOP (1)
 	[r].[ID],
 	[r].[MoneyValue],
@@ -32,7 +32,7 @@ FROM
 WHERE
 	[r].[ID] = 1
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @MoneyValue Decimal(5, 4)
 SET     @MoneyValue = 1.1100
 DECLARE @DateTimeValue DateTime
@@ -69,7 +69,7 @@ SET
 WHERE
 	[LinqDataTypes].[ID] = @ID
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @ID Int -- Int32
 SET     @ID = 1
 
@@ -89,7 +89,7 @@ FROM
 WHERE
 	[r].[ID] = @ID
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @MoneyValue Decimal(5, 4)
 SET     @MoneyValue = 1.1100
 DECLARE @DateTimeValue DateTime
@@ -126,7 +126,7 @@ SET
 WHERE
 	[LinqDataTypes].[ID] = @ID
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT TOP (1)
 	[r].[ID],
 	[r].[MoneyValue],

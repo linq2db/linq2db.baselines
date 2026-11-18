@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @IntValue Int -- Int32
@@ -19,7 +19,7 @@ VALUES
 	@StrValue
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @IntValue Int -- Int32
@@ -40,7 +40,7 @@ VALUES
 	@StrValue
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT TOP (2)
 	[r].[Id],
 	[r].[IntValue],
@@ -50,7 +50,7 @@ FROM
 WHERE
 	[r].[Id] = 1
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT TOP (2)
 	[r].[Id],
 	[r].[IntValue],

@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic SQLite
-DECLARE @maxCompanyId  -- Int32
+DECLARE @maxCompanyId Integer -- Int32
 SET     @maxCompanyId = 1
 
 WITH [CTE_1] ([Id], [field], [Name])

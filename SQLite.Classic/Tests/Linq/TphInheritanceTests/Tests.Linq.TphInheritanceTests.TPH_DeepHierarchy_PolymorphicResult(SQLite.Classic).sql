@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Code NVarChar(10) -- String
 SET     @Code = 'GrandChild'

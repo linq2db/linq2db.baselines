@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DECLARE @param Int -- Int32
 SET     @param = 2
 
@@ -15,7 +15,7 @@ VALUES
 	@param
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT TOP (2)
 	[t1].[Id],
 	[t1].[SomeValue1],

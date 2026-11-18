@@ -1,24 +1,24 @@
 ﻿-- YDB Ydb
-DECLARE $ID Int32
-SET     $ID = 1000
-DECLARE $MoneyValue Decimal(6, 2)
-SET     $MoneyValue = Decimal('0', 22, 9)
-DECLARE $DateTimeValue Timestamp -- DateTime2
-SET     $DateTimeValue = NULL
-DECLARE $DateTimeValue2 Timestamp -- DateTime2
-SET     $DateTimeValue2 = NULL
-DECLARE $BoolValue Bool -- Boolean
-SET     $BoolValue = false
-DECLARE $GuidValue Uuid -- Guid
-SET     $GuidValue = NULL
-DECLARE $SmallIntValue Int16
-SET     $SmallIntValue = NULL
-DECLARE $IntValue Int32
-SET     $IntValue = NULL
-DECLARE $BigIntValue Int64
-SET     $BigIntValue = NULL
-DECLARE $StringValue Text -- String
-SET     $StringValue = NULL
+DECLARE ID Int32
+SET     ID = 1000
+DECLARE MoneyValue Decimal(6, 2)
+SET     MoneyValue = Decimal('0', 22, 9)
+DECLARE DateTimeValue Timestamp -- DateTime2
+SET     DateTimeValue = NULL
+DECLARE DateTimeValue2 Timestamp -- DateTime2
+SET     DateTimeValue2 = NULL
+DECLARE BoolValue Bool -- Boolean
+SET     BoolValue = false
+DECLARE GuidValue Uuid -- Guid
+SET     GuidValue = NULL
+DECLARE SmallIntValue Int16
+SET     SmallIntValue = NULL
+DECLARE IntValue Int32
+SET     IntValue = NULL
+DECLARE BigIntValue Int64
+SET     BigIntValue = NULL
+DECLARE StringValue Text -- String
+SET     StringValue = NULL
 
 INSERT INTO LinqDataTypes
 (

@@ -6,8 +6,8 @@ FROM
 	Parent t
 
 -- YDB Ydb
-DECLARE $param Int32
-SET     $param = 1
+DECLARE param Int32
+SET     param = 1
 
 SELECT
 	t.ParentID as ParentID,

@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $BlobValue Bytes(3) -- Binary
-SET     $BlobValue = '\x01\x02\x03's
+DECLARE Id Int32
+SET     Id = 1
+DECLARE BlobValue Bytes(3) -- Binary
+SET     BlobValue = '\x01\x02\x03's
 
 INSERT INTO BlobClass
 (
@@ -26,8 +26,8 @@ WHERE
 LIMIT 1
 
 -- YDB Ydb
-DECLARE $BlobValue Bytes(3) -- Binary
-SET     $BlobValue = '\x03\x02\x01's
+DECLARE BlobValue Bytes(3) -- Binary
+SET     BlobValue = '\x03\x02\x01's
 
 UPDATE
 	BlobClass

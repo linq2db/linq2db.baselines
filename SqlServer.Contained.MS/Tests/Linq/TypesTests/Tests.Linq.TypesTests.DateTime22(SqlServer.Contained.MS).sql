@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT TOP (1)
 	[t].[ID],
 	[t].[MoneyValue],
@@ -15,7 +15,7 @@ FROM
 WHERE
 	[t].[ID] = 1
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @dt DateTime2
 SET     @dt = DATETIME2FROMPARTS(2010, 12, 14, 5, 0, 7, 4250141, 7)
 
@@ -26,7 +26,7 @@ SET
 WHERE
 	[LinqDataTypes].[ID] = 1
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT TOP (1)
 	[t].[ID],
 	[t].[MoneyValue],
@@ -43,7 +43,7 @@ FROM
 WHERE
 	[t].[ID] = 1
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @pdt DateTime2
 SET     @pdt = NULL
 

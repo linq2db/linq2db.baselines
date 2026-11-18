@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $dt  -- DateTime2
+DECLARE $dt TIMESTAMP -- DateTime2
 SET     $dt = '2020-02-29 17:54:55.123123'::TIMESTAMP
 
 SELECT

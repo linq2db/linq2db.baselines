@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $Value1 Int32
-SET     $Value1 = 4
+DECLARE Value1 Int32
+SET     Value1 = 4
 
 SELECT DISTINCT
 	Coalesce(p.Value1, p.ParentID % 2) as ParentID,
@@ -16,8 +16,8 @@ FROM
 	Parent t1
 
 -- YDB Ydb
-DECLARE $Value1 Int32
-SET     $Value1 = 4
+DECLARE Value1 Int32
+SET     Value1 = 4
 
 SELECT DISTINCT
 	Coalesce(p.Value1, p.ParentID % 2) as ParentID,

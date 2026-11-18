@@ -24,7 +24,8 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-SELECT last_insert_rowid()
+SELECT
+	last_insert_rowid()
 
 -- SQLite.MS SQLite
 DECLARE @Gender NChar(1) -- StringFixedLength
@@ -52,10 +53,11 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-SELECT last_insert_rowid()
+SELECT
+	last_insert_rowid()
 
 -- SQLite.MS SQLite
-DECLARE @id1  -- Int32
+DECLARE @id1 Integer -- Int32
 SET     @id1 = 5
 
 SELECT
@@ -71,7 +73,7 @@ WHERE
 LIMIT 1
 
 -- SQLite.MS SQLite
-DECLARE @id2  -- Int32
+DECLARE @id2 Integer -- Int32
 SET     @id2 = 6
 
 SELECT

@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Value DateTime
@@ -23,7 +23,7 @@ VALUES
 	@Wide
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	COUNT(*)
 FROM
@@ -38,7 +38,7 @@ FROM
 WHERE
 	[t1].[In_1] IN (DATETIME2FROMPARTS(2026, 6, 1, 10, 0, 0, 5000000, 7))
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	COUNT(*)
 FROM
@@ -53,7 +53,7 @@ FROM
 WHERE
 	[t1].[Max_1] IN (DATETIME2FROMPARTS(2026, 6, 1, 10, 0, 0, 5000000, 7))
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	IIF(DATETIME2FROMPARTS(2026, 6, 1, 10, 0, 0, 5000000, 7) IN (
 		SELECT

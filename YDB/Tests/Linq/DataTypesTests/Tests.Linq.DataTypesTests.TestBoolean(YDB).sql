@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $Column Bool -- Boolean
-SET     $Column = false
-DECLARE $ColumnNullable Bool -- Boolean
-SET     $ColumnNullable = true
+DECLARE Column Bool -- Boolean
+SET     Column = false
+DECLARE ColumnNullable Bool -- Boolean
+SET     ColumnNullable = true
 
 SELECT
 	r.Id as Id,
@@ -28,12 +28,12 @@ DELETE FROM
 	BooleanTable
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Bool -- Boolean
-SET     $Column = true
-DECLARE $ColumnNullable Bool -- Boolean
-SET     $ColumnNullable = NULL
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Bool -- Boolean
+SET     Column = true
+DECLARE ColumnNullable Bool -- Boolean
+SET     ColumnNullable = NULL
 
 INSERT INTO BooleanTable
 (
@@ -49,12 +49,12 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 2
-DECLARE $Column Bool -- Boolean
-SET     $Column = false
-DECLARE $ColumnNullable Bool -- Boolean
-SET     $ColumnNullable = true
+DECLARE Id Int32
+SET     Id = 2
+DECLARE Column Bool -- Boolean
+SET     Column = false
+DECLARE ColumnNullable Bool -- Boolean
+SET     ColumnNullable = true
 
 INSERT INTO BooleanTable
 (

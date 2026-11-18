@@ -8,10 +8,10 @@ CREATE TABLE aa
 )
 
 -- YDB Ydb
-DECLARE $bb Int32
-SET     $bb = 99
-DECLARE $cc Text(5) -- String
-SET     $cc = 'hallo'u
+DECLARE bb Int32
+SET     bb = 99
+DECLARE cc Text(5) -- String
+SET     cc = 'hallo'u
 
 INSERT INTO aa
 (

@@ -3,12 +3,12 @@ DECLARE @p Decimal(6, 3)
 SET     @p = 123.456
 
 SELECT
-	`t`.`DecimalDataType`,
-	`t`.`BinaryDataType`,
-	`t`.`VarBinaryDataType`,
-	`t`.`VarcharDataType`
+	`t`.`decimalDataType`,
+	`t`.`binaryDataType`,
+	`t`.`varbinaryDataType`,
+	`t`.`varcharDataType`
 FROM
 	`AllTypes` `t`
 WHERE
-	`t`.`DecimalDataType` = @p
+	`t`.`decimalDataType` = @p
 

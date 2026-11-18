@@ -45,7 +45,6 @@ SELECT 2111,2111 FROM rdb$database UNION ALL
 SELECT 3111,3111 FROM rdb$database UNION ALL
 SELECT 4111,4111 FROM rdb$database
 
-CommitTransaction
 -- Firebird.3 Firebird3
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1111

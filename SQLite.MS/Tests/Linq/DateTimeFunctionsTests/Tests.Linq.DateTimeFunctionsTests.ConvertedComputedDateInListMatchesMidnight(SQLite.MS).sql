@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @CoarseMidnight  -- Date
+DECLARE @CoarseMidnight Text(23) -- Date
 SET     @CoarseMidnight = '2026-06-01 00:00:00.000'
 
 SELECT

@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $false_value Text(1) -- AnsiString
-SET     $false_value = 'N'u
+DECLARE false_value Text(1) -- AnsiString
+SET     false_value = 'N'u
 
 SELECT
 	t.Id as Id,

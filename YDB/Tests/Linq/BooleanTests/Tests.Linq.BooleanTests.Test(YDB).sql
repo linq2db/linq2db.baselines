@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $True Bool -- Boolean
-SET     $True = true
+DECLARE True Bool -- Boolean
+SET     True = true
 
 SELECT
 	r.Id as Id,
@@ -32,8 +32,8 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $False Bool -- Boolean
-SET     $False = false
+DECLARE False Bool -- Boolean
+SET     False = false
 
 SELECT
 	r.Id as Id,
@@ -65,8 +65,8 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $TrueN Bool -- Boolean
-SET     $TrueN = true
+DECLARE TrueN Bool -- Boolean
+SET     TrueN = true
 
 SELECT
 	r.Id as Id,
@@ -98,8 +98,8 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $FalseN Bool -- Boolean
-SET     $FalseN = false
+DECLARE FalseN Bool -- Boolean
+SET     FalseN = false
 
 SELECT
 	r.Id as Id,
@@ -161,8 +161,8 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $True Bool -- Boolean
-SET     $True = true
+DECLARE True Bool -- Boolean
+SET     True = true
 
 SELECT
 	r.Id as Id,
@@ -194,8 +194,8 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $False Bool -- Boolean
-SET     $False = false
+DECLARE False Bool -- Boolean
+SET     False = false
 
 SELECT
 	r.Id as Id,
@@ -227,8 +227,8 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $TrueN Bool -- Boolean
-SET     $TrueN = true
+DECLARE TrueN Bool -- Boolean
+SET     TrueN = true
 
 SELECT
 	r.Id as Id,
@@ -260,8 +260,8 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $FalseN Bool -- Boolean
-SET     $FalseN = false
+DECLARE FalseN Bool -- Boolean
+SET     FalseN = false
 
 SELECT
 	r.Id as Id,
@@ -323,8 +323,8 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $True Bool -- Boolean
-SET     $True = true
+DECLARE True Bool -- Boolean
+SET     True = true
 
 SELECT
 	r.Id as Id,
@@ -356,8 +356,8 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $False Bool -- Boolean
-SET     $False = false
+DECLARE False Bool -- Boolean
+SET     False = false
 
 SELECT
 	r.Id as Id,
@@ -389,8 +389,8 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $TrueN Bool -- Boolean
-SET     $TrueN = true
+DECLARE TrueN Bool -- Boolean
+SET     TrueN = true
 
 SELECT
 	r.Id as Id,
@@ -422,8 +422,8 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $FalseN Bool -- Boolean
-SET     $FalseN = false
+DECLARE FalseN Bool -- Boolean
+SET     FalseN = false
 
 SELECT
 	r.Id as Id,
@@ -483,8 +483,8 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $True Bool -- Boolean
-SET     $True = true
+DECLARE True Bool -- Boolean
+SET     True = true
 
 SELECT
 	r.Id as Id,
@@ -516,8 +516,8 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $False Bool -- Boolean
-SET     $False = false
+DECLARE False Bool -- Boolean
+SET     False = false
 
 SELECT
 	r.Id as Id,
@@ -549,8 +549,8 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $TrueN Bool -- Boolean
-SET     $TrueN = true
+DECLARE TrueN Bool -- Boolean
+SET     TrueN = true
 
 SELECT
 	r.Id as Id,
@@ -582,8 +582,8 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $FalseN Bool -- Boolean
-SET     $FalseN = false
+DECLARE FalseN Bool -- Boolean
+SET     FalseN = false
 
 SELECT
 	r.Id as Id,

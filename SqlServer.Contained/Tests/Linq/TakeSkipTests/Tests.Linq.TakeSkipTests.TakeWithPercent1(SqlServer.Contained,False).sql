@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT TOP (50) PERCENT
 	[t1].[FirstName],
 	[t1].[PersonID],

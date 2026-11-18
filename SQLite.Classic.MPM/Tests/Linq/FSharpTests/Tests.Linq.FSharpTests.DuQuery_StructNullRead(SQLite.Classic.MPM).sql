@@ -1,7 +1,7 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Key  -- Int32
+DECLARE @Key Integer -- Int32
 SET     @Key = 10
 
 INSERT INTO [StructDuRow]
@@ -16,9 +16,9 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Oid  -- Int32
+DECLARE @Oid Integer -- Int32
 SET     @Oid = 1
-DECLARE @RefId  -- Int32
+DECLARE @RefId Integer -- Int32
 SET     @RefId = 1
 
 INSERT INTO [DuOuter]
@@ -33,9 +33,9 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Oid  -- Int32
+DECLARE @Oid Integer -- Int32
 SET     @Oid = 2
-DECLARE @RefId  -- Int32
+DECLARE @RefId Integer -- Int32
 SET     @RefId = 99
 
 INSERT INTO [DuOuter]

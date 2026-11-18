@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @arr  -- Int32
+DECLARE @arr Integer -- Int32
 SET     @arr = 1
 
 SELECT
@@ -12,7 +12,7 @@ WHERE
 LIMIT 2
 
 -- SQLite.MS SQLite
-DECLARE @arr  -- Int32
+DECLARE @arr Integer -- Int32
 SET     @arr = 2
 
 SELECT

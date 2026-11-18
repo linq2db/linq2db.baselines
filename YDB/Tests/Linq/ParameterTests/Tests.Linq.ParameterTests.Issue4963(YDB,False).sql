@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $offset Int32
-SET     $offset = -1
+DECLARE offset Int32
+SET     offset = -1
 
 UPDATE
 	Issue4963Table

@@ -1,18 +1,18 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DELETE [t1]
 FROM
 	[Parent] [t1]
 WHERE
 	[t1].[ParentID] > 1000
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DELETE [t1]
 FROM
 	[Parent] [t1]
 WHERE
 	[t1].[ParentID] > 1000
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @values Int -- Int32
 SET     @values = 1001
 
@@ -27,7 +27,7 @@ VALUES
 	1
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @values Int -- Int32
 SET     @values = 1002
 
@@ -42,7 +42,7 @@ VALUES
 	1
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	COUNT(*)
 FROM
@@ -50,14 +50,14 @@ FROM
 WHERE
 	[t1].[ParentID] > 1000
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DELETE [t1]
 FROM
 	[Parent] [t1]
 WHERE
 	[t1].[ParentID] IN (1001, 1002)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	COUNT(*)
 FROM

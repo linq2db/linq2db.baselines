@@ -1,6 +1,6 @@
 ﻿
 
--- SqlServer.2019
+-- SqlServer.2025
 SELECT
 	[m_1].[OrderID],
 	[d].[IsDeleted],
@@ -30,9 +30,7 @@ WHERE
 
 
 
-
-
--- SqlServer.2019
+-- SqlServer.2025
 SELECT
 	[e].[IsDeleted],
 	[e].[OrderID],
@@ -53,6 +51,8 @@ FROM
 	[Orders] [e]
 WHERE
 	[e].[IsDeleted] = 0
+
+
 
 
 

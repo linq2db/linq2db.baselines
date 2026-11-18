@@ -1,7 +1,7 @@
 ﻿-- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
-DECLARE $Tests_xUpdate_MergeTests_IExplicitComplexProperty_  -- Boolean
+DECLARE $Tests_xUpdate_MergeTests_IExplicitComplexProperty_ BOOLEAN -- Boolean
 SET     $Tests_xUpdate_MergeTests_IExplicitComplexProperty_ = False
 
 INSERT INTO ExplicitComplexPropertyTarget

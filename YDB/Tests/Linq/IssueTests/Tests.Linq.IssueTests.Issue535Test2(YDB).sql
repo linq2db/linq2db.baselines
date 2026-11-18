@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $filter Text(6) -- String
-SET     $filter = '%test%'u
-DECLARE $filter_1 Text(6) -- String
-SET     $filter_1 = '%test%'u
+DECLARE filter Text(6) -- String
+SET     filter = '%test%'u
+DECLARE filter_1 Text(6) -- String
+SET     filter_1 = '%test%'u
 
 SELECT
 	q.Id as Id,

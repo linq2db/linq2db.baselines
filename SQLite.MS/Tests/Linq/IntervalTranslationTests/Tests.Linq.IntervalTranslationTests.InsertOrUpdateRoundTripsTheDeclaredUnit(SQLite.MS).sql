@@ -1,11 +1,11 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @value  -- Int64
+DECLARE @value Integer -- Int64
 SET     @value = 4567
-DECLARE @value_1  -- Int64
+DECLARE @value_1 Integer -- Int64
 SET     @value_1 = 45670000000
-DECLARE @value_2  -- Int64
+DECLARE @value_2 Integer -- Int64
 SET     @value_2 = 45670000000
-DECLARE @value_3  -- Int64
+DECLARE @value_3 Integer -- Int64
 SET     @value_3 = 4567
 
 INSERT INTO [DurationRow] AS [t1]
@@ -40,13 +40,13 @@ FROM
 LIMIT 2
 
 -- SQLite.MS SQLite
-DECLARE @value  -- Int64
+DECLARE @value Integer -- Int64
 SET     @value = 19260
-DECLARE @value_1  -- Int64
+DECLARE @value_1 Integer -- Int64
 SET     @value_1 = 192600000000
-DECLARE @value_2  -- Int64
+DECLARE @value_2 Integer -- Int64
 SET     @value_2 = 192600000000
-DECLARE @value_3  -- Int64
+DECLARE @value_3 Integer -- Int64
 SET     @value_3 = 19260
 
 INSERT INTO [DurationRow] AS [t1]

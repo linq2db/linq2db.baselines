@@ -1,11 +1,11 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DELETE [p]
 FROM
 	[Parent] [p]
 WHERE
 	[p].[Value1] = 11
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 INSERT INTO [Parent]
 (
 	[ParentID],
@@ -19,7 +19,7 @@ FROM
 WHERE
 	[c_1].[ChildID] = 11
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	COUNT(*)
 FROM
@@ -27,7 +27,7 @@ FROM
 WHERE
 	[p].[Value1] = 11
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DELETE [p]
 FROM
 	[Parent] [p]

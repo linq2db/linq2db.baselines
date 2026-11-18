@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $Value6 Int32
-SET     $Value6 = 7
-DECLARE $id Int32
-SET     $id = 1
+DECLARE Value6 Int32
+SET     Value6 = 7
+DECLARE id Int32
+SET     id = 1
 
 UPDATE
 	UpdateSetTest
@@ -12,8 +12,8 @@ WHERE
 	UpdateSetTest.Id = $id
 
 -- YDB Ydb
-DECLARE $id Int32
-SET     $id = 1
+DECLARE id Int32
+SET     id = 1
 
 SELECT
 	t1.Value6 as Value6
@@ -24,10 +24,10 @@ WHERE
 LIMIT 2
 
 -- YDB Ydb
-DECLARE $Value6 Int32
-SET     $Value6 = 8
-DECLARE $id Int32
-SET     $id = 1
+DECLARE Value6 Int32
+SET     Value6 = 8
+DECLARE id Int32
+SET     id = 1
 
 UPDATE
 	UpdateSetTest
@@ -37,8 +37,8 @@ WHERE
 	UpdateSetTest.Id = $id
 
 -- YDB Ydb
-DECLARE $id Int32
-SET     $id = 1
+DECLARE id Int32
+SET     id = 1
 
 SELECT
 	t1.Value6 as Value6

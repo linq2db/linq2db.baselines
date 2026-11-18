@@ -26,7 +26,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Binary(1)
 SET     $Column = '\x00'::BLOB
@@ -64,7 +64,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Binary(1)
 SET     $p2 = '\x00'::BLOB
@@ -185,7 +185,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Binary(6)
 SET     $Column = '\x00\x01\x02\x03\x04\x00'::BLOB
@@ -225,7 +225,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Binary(6)
 SET     $p2 = '\x00\x01\x02\x03\x04\x00'::BLOB
@@ -352,7 +352,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Binary(0)
 SET     $Column = ''::BLOB
@@ -390,7 +390,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Binary(0)
 SET     $p2 = ''::BLOB
@@ -511,7 +511,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Binary(3)
 SET     $Column = '\x01\x02\xFF'::BLOB
@@ -551,7 +551,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Binary(3)
 SET     $p2 = '\x01\x02\xFF'::BLOB

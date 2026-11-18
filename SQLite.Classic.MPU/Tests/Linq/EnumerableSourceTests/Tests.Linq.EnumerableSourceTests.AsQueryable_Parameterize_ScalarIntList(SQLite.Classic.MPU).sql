@@ -1,9 +1,9 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @item  -- Int32
+DECLARE @item Integer -- Int32
 SET     @item = 10
-DECLARE @item_1  -- Int32
+DECLARE @item_1 Integer -- Int32
 SET     @item_1 = 20
-DECLARE @item_2  -- Int32
+DECLARE @item_2 Integer -- Int32
 SET     @item_2 = 30
 
 SELECT

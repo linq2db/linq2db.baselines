@@ -5,8 +5,8 @@ WHERE
 	LinqDataTypes.ID > 1000
 
 -- YDB Ydb
-DECLARE $data Bytes -- Binary
-SET     $data = NULL
+DECLARE data Bytes -- Binary
+SET     data = NULL
 
 INSERT INTO LinqDataTypes
 (

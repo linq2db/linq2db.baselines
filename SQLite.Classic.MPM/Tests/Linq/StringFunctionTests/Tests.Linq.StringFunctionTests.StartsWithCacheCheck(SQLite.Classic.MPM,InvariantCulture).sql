@@ -10,7 +10,7 @@ LIMIT 2
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @nameToCheck NVarChar(4) -- String
 SET     @nameToCheck = 'Joh%'
-DECLARE @nameToCheck_1  -- Int32
+DECLARE @nameToCheck_1 Integer -- Int32
 SET     @nameToCheck_1 = 3
 DECLARE @nameToCheck_2 NVarChar(3) -- String
 SET     @nameToCheck_2 = 'Joh'
@@ -26,7 +26,7 @@ WHERE
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @nameToCheck NVarChar(4) -- String
 SET     @nameToCheck = 'Joh%'
-DECLARE @nameToCheck_1  -- Int32
+DECLARE @nameToCheck_1 Integer -- Int32
 SET     @nameToCheck_1 = 3
 DECLARE @nameToCheck_2 NVarChar(3) -- String
 SET     @nameToCheck_2 = 'Joh'
@@ -42,7 +42,7 @@ WHERE
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @nameToCheck NVarChar(4) -- String
 SET     @nameToCheck = 'JOH%'
-DECLARE @nameToCheck_1  -- Int32
+DECLARE @nameToCheck_1 Integer -- Int32
 SET     @nameToCheck_1 = 3
 DECLARE @nameToCheck_2 NVarChar(3) -- String
 SET     @nameToCheck_2 = 'JOH'
@@ -58,7 +58,7 @@ WHERE
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @nameToCheck NVarChar(4) -- String
 SET     @nameToCheck = 'JOH%'
-DECLARE @nameToCheck_1  -- Int32
+DECLARE @nameToCheck_1 Integer -- Int32
 SET     @nameToCheck_1 = 3
 DECLARE @nameToCheck_2 NVarChar(3) -- String
 SET     @nameToCheck_2 = 'JOH'

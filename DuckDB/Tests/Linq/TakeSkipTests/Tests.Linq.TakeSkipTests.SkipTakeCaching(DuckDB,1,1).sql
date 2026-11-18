@@ -1,7 +1,7 @@
 ﻿-- DuckDB
-DECLARE $take  -- Int32
+DECLARE $take INTEGER -- Int32
 SET     $take = 1
-DECLARE $skip  -- Int32
+DECLARE $skip INTEGER -- Int32
 SET     $skip = 1
 
 SELECT
@@ -14,9 +14,9 @@ ORDER BY
 LIMIT $take OFFSET $skip 
 
 -- DuckDB
-DECLARE $take  -- Int32
+DECLARE $take INTEGER -- Int32
 SET     $take = 1
-DECLARE $skip  -- Int32
+DECLARE $skip INTEGER -- Int32
 SET     $skip = 1
 
 SELECT

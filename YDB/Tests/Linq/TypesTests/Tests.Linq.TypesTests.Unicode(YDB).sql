@@ -1,12 +1,12 @@
 ﻿-- YDB Ydb
-DECLARE $FirstName Text(4) -- String
-SET     $FirstName = '擊敗奴隸'u
-DECLARE $LastName Text(9) -- String
-SET     $LastName = 'Юникодкин'u
-DECLARE $MiddleName Text -- String
-SET     $MiddleName = NULL
-DECLARE $Gender Text(1) -- AnsiStringFixedLength
-SET     $Gender = 'M'u
+DECLARE FirstName Text(4) -- String
+SET     FirstName = '擊敗奴隸'u
+DECLARE LastName Text(9) -- String
+SET     LastName = 'Юникодкин'u
+DECLARE MiddleName Text -- String
+SET     MiddleName = NULL
+DECLARE Gender Text(1) -- AnsiStringFixedLength
+SET     Gender = 'M'u
 
 INSERT INTO Person
 (

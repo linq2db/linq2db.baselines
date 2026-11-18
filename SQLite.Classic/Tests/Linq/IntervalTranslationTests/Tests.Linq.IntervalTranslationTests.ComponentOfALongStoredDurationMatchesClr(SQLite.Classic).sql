@@ -1,13 +1,13 @@
 ﻿-- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @InSeconds  -- Int64
+DECLARE @InSeconds Integer -- Int64
 SET     @InSeconds = 3000000005
-DECLARE @InTicks  -- Int64
+DECLARE @InTicks Integer -- Int64
 SET     @InTicks = 30000000050000000
-DECLARE @Undeclared  -- Int64
+DECLARE @Undeclared Integer -- Int64
 SET     @Undeclared = 30000000050000000
-DECLARE @UndeclaredSeconds  -- Int64
+DECLARE @UndeclaredSeconds Integer -- Int64
 SET     @UndeclaredSeconds = 3000000005
 
 INSERT INTO [DurationRow]
@@ -38,7 +38,7 @@ FROM
 LIMIT 2
 
 -- SQLite.Classic SQLite
-DECLARE @Seconds  -- Int32
+DECLARE @Seconds Integer -- Int32
 SET     @Seconds = 5
 
 SELECT

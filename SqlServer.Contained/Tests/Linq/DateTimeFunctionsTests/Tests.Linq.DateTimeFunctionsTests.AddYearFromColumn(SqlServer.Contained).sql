@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	CAST(DateAdd(year, [t].[SmallIntValue], [t].[DateTimeValue]) AS Date)
 FROM

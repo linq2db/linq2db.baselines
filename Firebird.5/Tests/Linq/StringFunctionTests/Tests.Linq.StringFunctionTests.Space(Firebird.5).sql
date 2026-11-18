@@ -8,6 +8,6 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	("p"."FirstName" || RPad(' ', "p"."PersonID" + 1, ' ') || '123') = 'John  123' AND
+	"p"."FirstName" || RPad(' ', "p"."PersonID" + 1, ' ') || '123' = 'John  123' AND
 	"p"."PersonID" = 1
 

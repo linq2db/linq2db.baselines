@@ -1,9 +1,9 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DELETE [t1]
 FROM
 	[AllTypes2] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 MERGE INTO [AllTypes2] [Target]
 USING (VALUES
 	(DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231232, 7),DATETIMEOFFSETFROMPARTS(2020, 2, 29, 17, 54, 55, 1231232, 0, 40, 7)),
@@ -29,7 +29,7 @@ VALUES
 )
 ;
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[ID],
 	[t1].[datetimeoffsetDataType],

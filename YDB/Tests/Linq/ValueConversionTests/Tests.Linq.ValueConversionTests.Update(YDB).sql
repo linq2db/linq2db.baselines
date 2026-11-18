@@ -1,10 +1,10 @@
 ﻿-- YDB Ydb
-DECLARE $Value2 Text(21) -- String
-SET     $Value2 = '[{"Value":"updated"}]'u
-DECLARE $EnumWithNull Text -- AnsiString
-SET     $EnumWithNull = NULL
-DECLARE $EnumWithNullDeclarative Text -- AnsiString
-SET     $EnumWithNullDeclarative = NULL
+DECLARE Value2 Text(21) -- String
+SET     Value2 = '[{"Value":"updated"}]'u
+DECLARE EnumWithNull Text -- AnsiString
+SET     EnumWithNull = NULL
+DECLARE EnumWithNullDeclarative Text -- AnsiString
+SET     EnumWithNullDeclarative = NULL
 
 UPDATE
 	ValueConversion
@@ -35,26 +35,26 @@ WHERE
 LIMIT 1
 
 -- YDB Ydb
-DECLARE $Value1 Text(20) -- String
-SET     $Value1 = '{"some":"updated2}"}'u
-DECLARE $Value2 Text(22) -- String
-SET     $Value2 = '[{"Value":"updated2"}]'u
-DECLARE $Enum Text(6) -- String
-SET     $Enum = 'Value1'u
-DECLARE $EnumNullable Text -- AnsiString
-SET     $EnumNullable = NULL
-DECLARE $EnumWithNull Text(6) -- AnsiString
-SET     $EnumWithNull = 'Value2'u
-DECLARE $EnumWithNullDeclarative Text(6) -- AnsiString
-SET     $EnumWithNullDeclarative = 'Value2'u
-DECLARE $BoolValue Text(1) -- AnsiString
-SET     $BoolValue = 'N'u
-DECLARE $AnotherBoolValue Text(1) -- AnsiString
-SET     $AnotherBoolValue = 'F'u
-DECLARE $DateTimeNullable Timestamp -- DateTime2
-SET     $DateTimeNullable = NULL
-DECLARE $Id Int32
-SET     $Id = 2
+DECLARE Value1 Text(20) -- String
+SET     Value1 = '{"some":"updated2}"}'u
+DECLARE Value2 Text(22) -- String
+SET     Value2 = '[{"Value":"updated2"}]'u
+DECLARE Enum Text(6) -- String
+SET     Enum = 'Value1'u
+DECLARE EnumNullable Text -- AnsiString
+SET     EnumNullable = NULL
+DECLARE EnumWithNull Text(6) -- AnsiString
+SET     EnumWithNull = 'Value2'u
+DECLARE EnumWithNullDeclarative Text(6) -- AnsiString
+SET     EnumWithNullDeclarative = 'Value2'u
+DECLARE BoolValue Text(1) -- AnsiString
+SET     BoolValue = 'N'u
+DECLARE AnotherBoolValue Text(1) -- AnsiString
+SET     AnotherBoolValue = 'F'u
+DECLARE DateTimeNullable Timestamp -- DateTime2
+SET     DateTimeNullable = NULL
+DECLARE Id Int32
+SET     Id = 2
 
 UPDATE
 	ValueConversion
@@ -90,26 +90,26 @@ WHERE
 LIMIT 1
 
 -- YDB Ydb
-DECLARE $Value1 Text -- String
-SET     $Value1 = NULL
-DECLARE $Value2 Text -- String
-SET     $Value2 = NULL
-DECLARE $Enum Text(6) -- String
-SET     $Enum = 'Value1'u
-DECLARE $EnumNullable Text -- AnsiString
-SET     $EnumNullable = NULL
-DECLARE $EnumWithNull Text -- AnsiString
-SET     $EnumWithNull = NULL
-DECLARE $EnumWithNullDeclarative Text -- AnsiString
-SET     $EnumWithNullDeclarative = NULL
-DECLARE $BoolValue Text(1) -- AnsiString
-SET     $BoolValue = 'N'u
-DECLARE $AnotherBoolValue Text(1) -- AnsiString
-SET     $AnotherBoolValue = 'F'u
-DECLARE $DateTimeNullable Timestamp -- DateTime2
-SET     $DateTimeNullable = NULL
-DECLARE $Id Int32
-SET     $Id = 3
+DECLARE Value1 Text -- String
+SET     Value1 = NULL
+DECLARE Value2 Text -- String
+SET     Value2 = NULL
+DECLARE Enum Text(6) -- String
+SET     Enum = 'Value1'u
+DECLARE EnumNullable Text -- AnsiString
+SET     EnumNullable = NULL
+DECLARE EnumWithNull Text -- AnsiString
+SET     EnumWithNull = NULL
+DECLARE EnumWithNullDeclarative Text -- AnsiString
+SET     EnumWithNullDeclarative = NULL
+DECLARE BoolValue Text(1) -- AnsiString
+SET     BoolValue = 'N'u
+DECLARE AnotherBoolValue Text(1) -- AnsiString
+SET     AnotherBoolValue = 'F'u
+DECLARE DateTimeNullable Timestamp -- DateTime2
+SET     DateTimeNullable = NULL
+DECLARE Id Int32
+SET     Id = 3
 
 UPDATE
 	ValueConversion

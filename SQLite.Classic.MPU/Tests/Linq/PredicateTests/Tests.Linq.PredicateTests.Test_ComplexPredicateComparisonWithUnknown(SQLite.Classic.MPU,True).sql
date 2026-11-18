@@ -7,7 +7,7 @@ WHERE
 	[r].[Value1] = 1
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @cnt  -- Int32
+DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
 
 SELECT
@@ -40,7 +40,7 @@ FROM
 	[BooleanTable] [t1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @cnt  -- Int32
+DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
 
 SELECT
@@ -73,7 +73,7 @@ FROM
 	[BooleanTable] [t1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @cnt  -- Int32
+DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
 
 SELECT
@@ -105,7 +105,7 @@ FROM
 	[BooleanTable] [t1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @cnt  -- Int32
+DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
 
 SELECT
@@ -137,7 +137,7 @@ FROM
 	[BooleanTable] [t1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @cnt  -- Int32
+DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
 
 SELECT
@@ -169,7 +169,7 @@ FROM
 	[BooleanTable] [t1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @cnt  -- Int32
+DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
 
 SELECT
@@ -201,7 +201,7 @@ FROM
 	[BooleanTable] [t1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @cnt  -- Int32
+DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
 
 SELECT
@@ -237,7 +237,7 @@ FROM
 	[BooleanTable] [t1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @cnt  -- Int32
+DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
 
 SELECT
@@ -273,7 +273,7 @@ FROM
 	[BooleanTable] [t1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @cnt  -- Int32
+DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
 
 SELECT
@@ -307,7 +307,7 @@ FROM
 	[BooleanTable] [t1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @cnt  -- Int32
+DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
 
 SELECT
@@ -341,7 +341,7 @@ FROM
 	[BooleanTable] [t1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @cnt  -- Int32
+DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
 
 SELECT
@@ -377,7 +377,7 @@ FROM
 	[BooleanTable] [t1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @cnt  -- Int32
+DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
 
 SELECT
@@ -413,7 +413,7 @@ FROM
 	[BooleanTable] [t1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @cnt  -- Int32
+DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
 
 SELECT
@@ -445,7 +445,7 @@ FROM
 	[BooleanTable] [t1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @cnt  -- Int32
+DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
 
 SELECT
@@ -477,7 +477,7 @@ FROM
 	[BooleanTable] [t1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @cnt  -- Int32
+DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
 
 SELECT
@@ -513,7 +513,7 @@ FROM
 	[BooleanTable] [t1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @cnt  -- Int32
+DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
 
 SELECT
@@ -549,7 +549,7 @@ FROM
 	[BooleanTable] [t1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @cnt  -- Int32
+DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
 
 SELECT
@@ -581,7 +581,7 @@ FROM
 	[BooleanTable] [t1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @cnt  -- Int32
+DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
 
 SELECT
@@ -613,7 +613,7 @@ FROM
 	[BooleanTable] [t1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @cnt  -- Int32
+DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
 
 SELECT
@@ -645,7 +645,7 @@ FROM
 	[BooleanTable] [t1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @cnt  -- Int32
+DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
 
 SELECT
@@ -677,7 +677,7 @@ FROM
 	[BooleanTable] [t1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @cnt  -- Int32
+DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
 
 SELECT
@@ -709,7 +709,7 @@ FROM
 	[BooleanTable] [t1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @cnt  -- Int32
+DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
 
 SELECT
@@ -741,7 +741,7 @@ FROM
 	[BooleanTable] [t1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @cnt  -- Int32
+DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
 
 SELECT
@@ -773,7 +773,7 @@ FROM
 	[BooleanTable] [t1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @cnt  -- Int32
+DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
 
 SELECT
@@ -805,7 +805,7 @@ FROM
 	[BooleanTable] [t1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @cnt  -- Int32
+DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
 
 SELECT
@@ -841,7 +841,7 @@ FROM
 	[BooleanTable] [t1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @cnt  -- Int32
+DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
 
 SELECT
@@ -877,7 +877,7 @@ FROM
 	[BooleanTable] [t1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @cnt  -- Int32
+DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
 
 SELECT
@@ -913,7 +913,7 @@ FROM
 	[BooleanTable] [t1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @cnt  -- Int32
+DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
 
 SELECT
@@ -949,7 +949,7 @@ FROM
 	[BooleanTable] [t1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @cnt  -- Int32
+DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
 
 SELECT
@@ -985,7 +985,7 @@ FROM
 	[BooleanTable] [t1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @cnt  -- Int32
+DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
 
 SELECT
@@ -1021,7 +1021,7 @@ FROM
 	[BooleanTable] [t1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @cnt  -- Int32
+DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
 
 SELECT
@@ -1057,7 +1057,7 @@ FROM
 	[BooleanTable] [t1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @cnt  -- Int32
+DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
 
 SELECT

@@ -1,10 +1,10 @@
 ﻿-- YDB Ydb
-DECLARE $Value Int32
-SET     $Value = 200
-DECLARE $value_1 Int32
-SET     $value_1 = 2
-DECLARE $ValueStr Text(8) -- String
-SET     $ValueStr = 'SomeStr2'u
+DECLARE Value Int32
+SET     Value = 200
+DECLARE value_1 Int32
+SET     value_1 = 2
+DECLARE ValueStr Text(8) -- String
+SET     ValueStr = 'SomeStr2'u
 
 INSERT INTO TableWithData
 (

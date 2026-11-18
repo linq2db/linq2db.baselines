@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $True  -- Boolean
+DECLARE $True BOOLEAN -- Boolean
 SET     $True = True
 
 SELECT
@@ -32,7 +32,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $False  -- Boolean
+DECLARE $False BOOLEAN -- Boolean
 SET     $False = False
 
 SELECT
@@ -65,7 +65,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $TrueN  -- Boolean
+DECLARE $TrueN BOOLEAN -- Boolean
 SET     $TrueN = True
 
 SELECT
@@ -98,7 +98,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $FalseN  -- Boolean
+DECLARE $FalseN BOOLEAN -- Boolean
 SET     $FalseN = False
 
 SELECT
@@ -161,7 +161,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $True  -- Boolean
+DECLARE $True BOOLEAN -- Boolean
 SET     $True = True
 
 SELECT
@@ -194,7 +194,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $False  -- Boolean
+DECLARE $False BOOLEAN -- Boolean
 SET     $False = False
 
 SELECT
@@ -227,7 +227,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $TrueN  -- Boolean
+DECLARE $TrueN BOOLEAN -- Boolean
 SET     $TrueN = True
 
 SELECT
@@ -260,7 +260,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $FalseN  -- Boolean
+DECLARE $FalseN BOOLEAN -- Boolean
 SET     $FalseN = False
 
 SELECT
@@ -323,7 +323,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $True  -- Boolean
+DECLARE $True BOOLEAN -- Boolean
 SET     $True = True
 
 SELECT
@@ -356,7 +356,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $False  -- Boolean
+DECLARE $False BOOLEAN -- Boolean
 SET     $False = False
 
 SELECT
@@ -389,7 +389,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $TrueN  -- Boolean
+DECLARE $TrueN BOOLEAN -- Boolean
 SET     $TrueN = True
 
 SELECT
@@ -422,7 +422,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $FalseN  -- Boolean
+DECLARE $FalseN BOOLEAN -- Boolean
 SET     $FalseN = False
 
 SELECT
@@ -483,7 +483,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $True  -- Boolean
+DECLARE $True BOOLEAN -- Boolean
 SET     $True = True
 
 SELECT
@@ -516,7 +516,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $False  -- Boolean
+DECLARE $False BOOLEAN -- Boolean
 SET     $False = False
 
 SELECT
@@ -549,7 +549,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $TrueN  -- Boolean
+DECLARE $TrueN BOOLEAN -- Boolean
 SET     $TrueN = True
 
 SELECT
@@ -582,7 +582,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $FalseN  -- Boolean
+DECLARE $FalseN BOOLEAN -- Boolean
 SET     $FalseN = False
 
 SELECT

@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @var1  -- Int32
+DECLARE @var1 Integer -- Int32
 SET     @var1 = 4
 
 SELECT
@@ -13,7 +13,7 @@ FROM
 	) [t1]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @var1  -- Int32
+DECLARE @var1 Integer -- Int32
 SET     @var1 = 4
 
 SELECT

@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $firstName Text(4) -- String
-SET     $firstName = 'John'u
+DECLARE firstName Text(4) -- String
+SET     firstName = 'John'u
 
 SELECT
 	p.FirstName as FirstName,
@@ -14,8 +14,8 @@ WHERE
 	p.FirstName = $firstName OR p.LastName = $firstName
 
 -- YDB Ydb
-DECLARE $firstName Text(4) -- String
-SET     $firstName = 'John'u
+DECLARE firstName Text(4) -- String
+SET     firstName = 'John'u
 
 SELECT
 	p.FirstName as FirstName,

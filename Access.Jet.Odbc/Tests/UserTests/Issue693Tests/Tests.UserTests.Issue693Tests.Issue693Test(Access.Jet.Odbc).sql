@@ -24,7 +24,8 @@ VALUES
 )
 
 -- Access.Jet.Odbc AccessODBC
-SELECT @@IDENTITY
+SELECT
+	@@IDENTITY
 
 -- Access.Jet.Odbc AccessODBC
 DECLARE @Gender NChar(1) -- StringFixedLength
@@ -52,7 +53,8 @@ VALUES
 )
 
 -- Access.Jet.Odbc AccessODBC
-SELECT @@IDENTITY
+SELECT
+	@@IDENTITY
 
 -- Access.Jet.Odbc AccessODBC
 DECLARE @id1 Int -- Int32

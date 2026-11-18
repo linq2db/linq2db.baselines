@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic SQLite
-DECLARE @id  -- Int32
+DECLARE @id Integer -- Int32
 SET     @id = 3
 
 SELECT
@@ -26,7 +26,7 @@ WHERE
 	)
 
 -- SQLite.Classic SQLite
-DECLARE @id  -- Int32
+DECLARE @id Integer -- Int32
 SET     @id = 4
 
 SELECT

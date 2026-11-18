@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DECLARE @is_deleted Bit -- Boolean
 SET     @is_deleted = 1
 
@@ -13,7 +13,7 @@ FROM
 WHERE
 	[ct].[id] = N'TestProcessService'
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[x].[id],
 	[x].[service_id],
@@ -23,7 +23,7 @@ FROM
 WHERE
 	[x].[is_deleted] = 1 AND [x].[service_id] = N'TestProcessService'
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[x].[id],
 	[x].[service_id],

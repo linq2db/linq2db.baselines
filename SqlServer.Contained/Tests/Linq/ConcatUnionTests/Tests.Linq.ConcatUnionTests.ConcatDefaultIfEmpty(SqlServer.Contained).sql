@@ -1,6 +1,5 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
-	CAST(0 AS Int),
 	[t1].[ParentID],
 	[t1].[ParentID],
 	[t1].[ChildID]
@@ -19,7 +18,6 @@ WHERE
 	[p].[ParentID] = 1
 UNION ALL
 SELECT
-	CAST(1 AS Int),
 	NULL,
 	NULL,
 	NULL
@@ -28,7 +26,7 @@ FROM
 WHERE
 	[p_1].[ParentID] <> 1
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
@@ -42,14 +40,14 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]
 FROM
 	[Parent] [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic SQLite
-DECLARE @Id  -- Guid
+DECLARE @Id Blob -- Guid
 SET     @Id = X'3D667BBCDE0F27438F925D8CC3A11D11'
 DECLARE @ResourceLabel NVarChar(1) -- String
 SET     @ResourceLabel = 'b'
@@ -16,11 +16,11 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Guid
+DECLARE @Id Blob -- Guid
 SET     @Id = X'0D6048A921DE744F8AC29516B287076E'
-DECLARE @Status  -- Int32
+DECLARE @Status Integer -- Int32
 SET     @Status = 40
-DECLARE @ResourceID  -- Guid
+DECLARE @ResourceID Blob -- Guid
 SET     @ResourceID = X'3D667BBCDE0F27438F925D8CC3A11D11'
 DECLARE @ModifiedTimeStamp VarChar(23) -- AnsiString
 SET     @ModifiedTimeStamp = '2020-02-29 15:54:55.123'
@@ -41,11 +41,11 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Guid
+DECLARE @Id Blob -- Guid
 SET     @Id = X'A57339BD2343D84D9F4FDF9F93E2A627'
-DECLARE @Status  -- Int32
+DECLARE @Status Integer -- Int32
 SET     @Status = 40
-DECLARE @ResourceID  -- Guid
+DECLARE @ResourceID Blob -- Guid
 SET     @ResourceID = X'3D667BBCDE0F27438F925D8CC3A11D11'
 DECLARE @ModifiedTimeStamp VarChar(23) -- AnsiString
 SET     @ModifiedTimeStamp = '2020-02-29 15:54:55.123'

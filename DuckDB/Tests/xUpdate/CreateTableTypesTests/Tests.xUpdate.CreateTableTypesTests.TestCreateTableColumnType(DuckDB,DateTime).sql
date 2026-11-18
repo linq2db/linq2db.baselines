@@ -1,7 +1,7 @@
 ﻿-- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
-DECLARE $DateTime  -- DateTime2
+DECLARE $DateTime TIMESTAMP -- DateTime2
 SET     $DateTime = '2000-01-01 00:00:00.000000'::TIMESTAMP
 
 INSERT INTO CreateTableTypes
@@ -16,9 +16,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 2
-DECLARE $DateTime  -- DateTime2
+DECLARE $DateTime TIMESTAMP -- DateTime2
 SET     $DateTime = '2018-11-24 01:02:03.000000'::TIMESTAMP
 
 INSERT INTO CreateTableTypes

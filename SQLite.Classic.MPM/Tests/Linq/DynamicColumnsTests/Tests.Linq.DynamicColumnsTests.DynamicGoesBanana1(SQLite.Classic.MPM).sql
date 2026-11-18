@@ -18,9 +18,9 @@ FROM
 	[BananaTable] [t1]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Property  -- Object
+DECLARE @Property Text -- Object
 SET     @Property = 'banana'
-DECLARE @filter  -- Object
+DECLARE @filter Integer -- Object
 SET     @filter = 1
 
 UPDATE

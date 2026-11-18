@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @z  -- Int32
+DECLARE @z Integer -- Int32
 SET     @z = 0
 
 SELECT

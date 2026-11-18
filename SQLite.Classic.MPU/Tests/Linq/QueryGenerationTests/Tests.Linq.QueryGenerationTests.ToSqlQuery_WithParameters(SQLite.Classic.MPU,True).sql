@@ -11,7 +11,7 @@ WHERE
 	[p].[PersonID] = 1
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @id  -- Int32
+DECLARE @id Integer -- Int32
 SET     @id = 1
 
 SELECT

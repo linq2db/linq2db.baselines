@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic SQLite
-DECLARE @Has  -- Boolean
+DECLARE @Has Integer -- Boolean
 SET     @Has = 1
 
 INSERT INTO [Issue1438]
@@ -12,10 +12,11 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-SELECT last_insert_rowid()
+SELECT
+	last_insert_rowid()
 
 -- SQLite.Classic SQLite
-DECLARE @id  -- Int32
+DECLARE @id Integer -- Int32
 SET     @id = 1
 
 SELECT

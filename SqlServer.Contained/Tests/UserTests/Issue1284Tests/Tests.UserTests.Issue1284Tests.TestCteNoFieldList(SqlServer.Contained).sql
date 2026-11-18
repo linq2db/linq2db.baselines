@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 WITH [cte]
 (
 	[FirstName],
@@ -27,7 +27,7 @@ SELECT
 FROM
 	[cte] [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[x].[FirstName],
 	[x].[PersonID],

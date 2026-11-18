@@ -1,7 +1,7 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DROP TABLE IF EXISTS [tempdb]..[#TestTable]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 CREATE TABLE [tempdb]..[#TestTable]
 (
 	[Id]    Int NOT NULL,
@@ -10,7 +10,7 @@ CREATE TABLE [tempdb]..[#TestTable]
 	PRIMARY KEY CLUSTERED ([Id])
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value],
@@ -21,6 +21,6 @@ SELECT
 FROM
 	[tempdb]..[#TestTable] [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DROP TABLE IF EXISTS [tempdb]..[#TestTable]
 

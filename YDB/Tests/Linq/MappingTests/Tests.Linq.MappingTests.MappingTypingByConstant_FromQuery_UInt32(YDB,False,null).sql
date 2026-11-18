@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $value Uint32 -- UInt32
-SET     $value = NULL
+DECLARE value Uint32 -- UInt32
+SET     value = NULL
 
 SELECT
 	t1.ID as ID,
@@ -15,8 +15,8 @@ FROM
 	) t1
 
 -- YDB Ydb
-DECLARE $value Uint32 -- UInt32
-SET     $value = 2147483648u
+DECLARE value Uint32 -- UInt32
+SET     value = 2147483648u
 
 SELECT
 	t1.ID as ID,

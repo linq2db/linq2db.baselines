@@ -5,14 +5,14 @@ WHERE
 	Person.FirstName LIKE 'Insert15%'u ESCAPE '~'s
 
 -- YDB Ydb
-DECLARE $Gender Text(1) -- StringFixedLength
-SET     $Gender = 'M'u
-DECLARE $Name_FirstName Text(8) -- String
-SET     $Name_FirstName = 'Insert15'u
-DECLARE $Name_MiddleName Text -- String
-SET     $Name_MiddleName = NULL
-DECLARE $Name_LastName Text(8) -- String
-SET     $Name_LastName = 'Insert15'u
+DECLARE Gender Text(1) -- StringFixedLength
+SET     Gender = 'M'u
+DECLARE Name_FirstName Text(8) -- String
+SET     Name_FirstName = 'Insert15'u
+DECLARE Name_MiddleName Text -- String
+SET     Name_MiddleName = NULL
+DECLARE Name_LastName Text(8) -- String
+SET     Name_LastName = 'Insert15'u
 
 INSERT INTO Person
 (

@@ -15,7 +15,7 @@ WHERE
 	CAST(Date_Diff('microsecond', r.OpenedOn, r.ClosedOnNullable) * 10 AS DOUBLE) / 36000000000 > 0
 
 -- DuckDB
-DECLARE $asOf  -- DateTime2
+DECLARE $asOf TIMESTAMP -- DateTime2
 SET     $asOf = '2026-01-03 13:30:00.000000'::TIMESTAMP
 
 SELECT

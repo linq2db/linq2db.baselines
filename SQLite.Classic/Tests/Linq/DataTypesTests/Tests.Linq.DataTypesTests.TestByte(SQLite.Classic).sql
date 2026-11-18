@@ -1,7 +1,7 @@
 ﻿-- SQLite.Classic SQLite
-DECLARE @Column  -- Byte
+DECLARE @Column Integer -- Byte
 SET     @Column = 255
-DECLARE @ColumnNullable  -- Byte
+DECLARE @ColumnNullable Integer -- Byte
 SET     @ColumnNullable = 2
 
 SELECT
@@ -28,11 +28,11 @@ DELETE FROM
 	[ByteTable]
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Column  -- Byte
+DECLARE @Column Integer -- Byte
 SET     @Column = 1
-DECLARE @ColumnNullable  -- Byte
+DECLARE @ColumnNullable Integer -- Byte
 SET     @ColumnNullable = NULL
 
 INSERT INTO [ByteTable]
@@ -49,11 +49,11 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Column  -- Byte
+DECLARE @Column Integer -- Byte
 SET     @Column = 255
-DECLARE @ColumnNullable  -- Byte
+DECLARE @ColumnNullable Integer -- Byte
 SET     @ColumnNullable = 2
 
 INSERT INTO [ByteTable]

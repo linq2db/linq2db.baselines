@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $Ids0_1 Text(5) -- String
-SET     $Ids0_1 = 'THREE'u
-DECLARE $Ids0_2 Text(4) -- String
-SET     $Ids0_2 = 'FOUR'u
+DECLARE Ids0_1 Text(5) -- String
+SET     Ids0_1 = 'THREE'u
+DECLARE Ids0_2 Text(4) -- String
+SET     Ids0_2 = 'FOUR'u
 
 SELECT
 	s.Id as Id
@@ -13,8 +13,8 @@ WHERE
 LIMIT 1
 
 -- YDB Ydb
-DECLARE $Ids0_1 Text(5) -- String
-SET     $Ids0_1 = 'THREE'u
+DECLARE Ids0_1 Text(5) -- String
+SET     Ids0_1 = 'THREE'u
 
 SELECT
 	s.Id as Id
@@ -25,10 +25,10 @@ WHERE
 LIMIT 1
 
 -- YDB Ydb
-DECLARE $Ids0_1 Text(5) -- String
-SET     $Ids0_1 = 'THREE'u
-DECLARE $Ids0_2 Text(3) -- String
-SET     $Ids0_2 = 'TWO'u
+DECLARE Ids0_1 Text(5) -- String
+SET     Ids0_1 = 'THREE'u
+DECLARE Ids0_2 Text(3) -- String
+SET     Ids0_2 = 'TWO'u
 
 SELECT
 	s.Id as Id
@@ -48,10 +48,10 @@ WHERE
 LIMIT 1
 
 -- YDB Ydb
-DECLARE $Ids0_1 Text(5) -- String
-SET     $Ids0_1 = 'THREE'u
-DECLARE $Ids0_2 Text(3) -- String
-SET     $Ids0_2 = 'TWO'u
+DECLARE Ids0_1 Text(5) -- String
+SET     Ids0_1 = 'THREE'u
+DECLARE Ids0_2 Text(3) -- String
+SET     Ids0_2 = 'TWO'u
 
 SELECT
 	s.Id as Id

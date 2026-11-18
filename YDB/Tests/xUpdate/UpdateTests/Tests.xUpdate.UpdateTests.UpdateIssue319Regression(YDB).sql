@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $ParentID Int32
-SET     $ParentID = 100500
-DECLARE $Value1 Int32
-SET     $Value1 = NULL
+DECLARE ParentID Int32
+SET     ParentID = 100500
+DECLARE Value1 Int32
+SET     Value1 = NULL
 
 INSERT INTO Parent
 (
@@ -16,8 +16,8 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $id Int32
-SET     $id = 100500
+DECLARE id Int32
+SET     id = 100500
 
 SELECT
 	p.ParentID as ParentID
@@ -28,10 +28,10 @@ WHERE
 LIMIT 1
 
 -- YDB Ydb
-DECLARE $id Int32
-SET     $id = 100500
-DECLARE $ParentID Int32
-SET     $ParentID = 100500
+DECLARE id Int32
+SET     id = 100500
+DECLARE ParentID Int32
+SET     ParentID = 100500
 
 $CTE_1 = 	SELECT
 		COUNT(*) as Count_1

@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Key Int32
-SET     $Key = 10
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Key Int32
+SET     Key = 10
 
 INSERT INTO StructDuRow
 (
@@ -16,10 +16,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Oid Int32
-SET     $Oid = 1
-DECLARE $RefId Int32
-SET     $RefId = 1
+DECLARE Oid Int32
+SET     Oid = 1
+DECLARE RefId Int32
+SET     RefId = 1
 
 INSERT INTO DuOuter
 (
@@ -33,10 +33,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Oid Int32
-SET     $Oid = 2
-DECLARE $RefId Int32
-SET     $RefId = 99
+DECLARE Oid Int32
+SET     Oid = 2
+DECLARE RefId Int32
+SET     RefId = 99
 
 INSERT INTO DuOuter
 (

@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $DeliveryCounterParty Text(3) -- String
-SET     $DeliveryCounterParty = '%C%'u
+DECLARE DeliveryCounterParty Text(3) -- String
+SET     DeliveryCounterParty = '%C%'u
 
 SELECT
 	al_group_3.Id as Id,

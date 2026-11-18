@@ -74,8 +74,8 @@ ORDER BY
 	t2.Id
 
 -- YDB Ydb
-DECLARE $skip Int32
-SET     $skip = 1
+DECLARE skip Int32
+SET     skip = 1
 
 SELECT
 	t1.Value2 as Value2

@@ -1,7 +1,7 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @code  -- Int32
+DECLARE @code Integer -- Int32
 SET     @code = 1
-DECLARE @site  -- Int32
+DECLARE @site Integer -- Int32
 SET     @site = 2
 
 SELECT

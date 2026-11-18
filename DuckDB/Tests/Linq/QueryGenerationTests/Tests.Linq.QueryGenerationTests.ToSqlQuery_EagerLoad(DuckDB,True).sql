@@ -8,7 +8,7 @@ WHERE
 	p.ParentID = 2
 
 -- DuckDB
-DECLARE $id  -- Int32
+DECLARE $id INTEGER -- Int32
 SET     $id = 2
 
 SELECT

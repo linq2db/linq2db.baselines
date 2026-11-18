@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 INSERT INTO [Parent]
 (
 	[ParentID],
@@ -10,7 +10,7 @@ VALUES
 	20000
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 INSERT INTO [Child]
 (
 	[ChildID],
@@ -22,7 +22,7 @@ VALUES
 	20000
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 UPDATE
 	[a_Parent]
 SET

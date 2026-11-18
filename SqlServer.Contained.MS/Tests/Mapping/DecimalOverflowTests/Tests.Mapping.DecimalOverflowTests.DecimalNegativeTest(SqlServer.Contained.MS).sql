@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 CREATE TABLE [tempdb]..[#dtmp]
 (
 	[Value] Decimal(38, 37) NOT NULL
@@ -6,12 +6,12 @@ CREATE TABLE [tempdb]..[#dtmp]
 
 INSERT BULK [tempdb]..[#dtmp](Value)
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Value]
 FROM
 	[tempdb]..[#dtmp] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DROP TABLE IF EXISTS [tempdb]..[#dtmp]
 

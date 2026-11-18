@@ -628,7 +628,7 @@ SELECT
 FROM
 	"OptimizationData" "swap_with_not"
 WHERE
-	"swap_with_not"."BoolValue" <> '1'
+	"swap_with_not"."BoolValue" = '0'
 
 -- Firebird.2.5 Firebird
 SELECT

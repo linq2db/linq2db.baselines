@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $S1 Text(2) -- String
-SET     $S1 = 's1'u
+DECLARE S1 Text(2) -- String
+SET     S1 = 's1'u
 
 INSERT INTO Projection1
 (
@@ -12,8 +12,8 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $S1 Text(2) -- String
-SET     $S1 = 's1'u
+DECLARE S1 Text(2) -- String
+SET     S1 = 's1'u
 
 INSERT INTO Projection2
 (

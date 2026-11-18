@@ -1,21 +1,21 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @ID  -- Int32
+DECLARE @ID Integer -- Int32
 SET     @ID = 1000
 DECLARE @MoneyValue Decimal(1, 0)
 SET     @MoneyValue = 0
-DECLARE @DateTimeValue  -- DateTime
+DECLARE @DateTimeValue Text -- DateTime
 SET     @DateTimeValue = NULL
-DECLARE @DateTimeValue2  -- DateTime
+DECLARE @DateTimeValue2 Text -- DateTime
 SET     @DateTimeValue2 = NULL
-DECLARE @BoolValue  -- Boolean
+DECLARE @BoolValue Integer -- Boolean
 SET     @BoolValue = 0
-DECLARE @GuidValue  -- Guid
+DECLARE @GuidValue Blob -- Guid
 SET     @GuidValue = NULL
-DECLARE @SmallIntValue  -- Int16
+DECLARE @SmallIntValue Integer -- Int16
 SET     @SmallIntValue = NULL
-DECLARE @IntValue  -- Int32
+DECLARE @IntValue Integer -- Int32
 SET     @IntValue = NULL
-DECLARE @BigIntValue  -- Int64
+DECLARE @BigIntValue Integer -- Int64
 SET     @BigIntValue = NULL
 DECLARE @StringValue NVarChar -- String
 SET     @StringValue = NULL

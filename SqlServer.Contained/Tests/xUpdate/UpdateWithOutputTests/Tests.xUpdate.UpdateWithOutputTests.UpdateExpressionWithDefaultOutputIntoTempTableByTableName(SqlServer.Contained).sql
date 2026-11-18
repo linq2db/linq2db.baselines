@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 CREATE TABLE [tempdb]..[#DestinationTable_destination]
 (
 	[Id]       Int          NOT NULL,
@@ -8,7 +8,7 @@ CREATE TABLE [tempdb]..[#DestinationTable_destination]
 	PRIMARY KEY CLUSTERED ([Id])
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 UPDATE
 	[t]
 SET
@@ -29,7 +29,7 @@ FROM
 	[TableWithData_source] [s]
 		INNER JOIN [DestinationTable_target] [t] ON [t].[Id] = [s].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value],
@@ -37,7 +37,7 @@ SELECT
 FROM
 	[DestinationTable_target] [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Value],
@@ -45,6 +45,6 @@ SELECT
 FROM
 	[tempdb]..[#DestinationTable_destination] [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DROP TABLE IF EXISTS [tempdb]..[#DestinationTable_destination]
 

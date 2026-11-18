@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $bound  -- DateTime2
+DECLARE $bound TIMESTAMP -- DateTime2
 SET     $bound = '2000-01-01 00:00:00.000000'::TIMESTAMP
 
 SELECT

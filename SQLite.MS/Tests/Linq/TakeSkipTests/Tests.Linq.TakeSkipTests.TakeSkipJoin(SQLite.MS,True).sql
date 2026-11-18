@@ -12,7 +12,7 @@ FROM
 	[LinqDataTypes] [t1]
 
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
+DECLARE @take Integer -- Int32
 SET     @take = 15
 
 SELECT

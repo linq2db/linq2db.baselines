@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $maxId  -- Int32
+DECLARE $maxId INTEGER -- Int32
 SET     $maxId = 2
 
 WITH CTE_1 (Id, field, Name)

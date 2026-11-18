@@ -1,7 +1,7 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @Value5  -- Int32
+DECLARE @Value5 Integer -- Int32
 SET     @Value5 = 11
-DECLARE @id  -- Int32
+DECLARE @id Integer -- Int32
 SET     @id = 1
 
 UPDATE
@@ -12,7 +12,7 @@ WHERE
 	[UpdateSetTest].[Id] = @id
 
 -- SQLite.MS SQLite
-DECLARE @id  -- Int32
+DECLARE @id Integer -- Int32
 SET     @id = 1
 
 SELECT
@@ -24,9 +24,9 @@ WHERE
 LIMIT 2
 
 -- SQLite.MS SQLite
-DECLARE @Value5  -- Int32
+DECLARE @Value5 Integer -- Int32
 SET     @Value5 = 12
-DECLARE @id  -- Int32
+DECLARE @id Integer -- Int32
 SET     @id = 1
 
 UPDATE
@@ -37,7 +37,7 @@ WHERE
 	[UpdateSetTest].[Id] = @id
 
 -- SQLite.MS SQLite
-DECLARE @id  -- Int32
+DECLARE @id Integer -- Int32
 SET     @id = 1
 
 SELECT

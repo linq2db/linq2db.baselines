@@ -1,12 +1,12 @@
 ﻿-- YDB Ydb
-DECLARE $id2 Int32
-SET     $id2 = 2
-DECLARE $id4 Int32
-SET     $id4 = 4
-DECLARE $id1 Int32
-SET     $id1 = 1
-DECLARE $id3 Int32
-SET     $id3 = 3
+DECLARE id2 Int32
+SET     id2 = 2
+DECLARE id4 Int32
+SET     id4 = 4
+DECLARE id1 Int32
+SET     id1 = 1
+DECLARE id3 Int32
+SET     id3 = 3
 
 $CTE_1 = 	SELECT
 		r.Value4 as Value1

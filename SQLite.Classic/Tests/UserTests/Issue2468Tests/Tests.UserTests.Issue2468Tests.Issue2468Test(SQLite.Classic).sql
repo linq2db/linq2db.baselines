@@ -1,11 +1,11 @@
 ﻿-- SQLite.Classic SQLite
-DECLARE @Id  -- Guid
+DECLARE @Id Blob -- Guid
 SET     @Id = X'3D667BBCDE0F27438F925D8CC3A11D11'
-DECLARE @Status  -- Int32
+DECLARE @Status Integer -- Int32
 SET     @Status = 1
-DECLARE @Color  -- Int32
+DECLARE @Color Integer -- Int32
 SET     @Color = 0
-DECLARE @CMYKColor  -- Int32
+DECLARE @CMYKColor Integer -- Int32
 SET     @CMYKColor = 0
 
 INSERT INTO [InventoryResourceDTO]

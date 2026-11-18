@@ -1,9 +1,9 @@
 ﻿-- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Code NVarChar(5) -- String
 SET     $Code = 'first'
-DECLARE $Nested_Field  -- Boolean
+DECLARE $Nested_Field BOOLEAN -- Boolean
 SET     $Nested_Field = False
 
 INSERT INTO ComplexPropertyTarget
@@ -20,11 +20,11 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 2
 DECLARE $Code NVarChar(7) -- String
 SET     $Code = 'skipped'
-DECLARE $Nested_Field  -- Boolean
+DECLARE $Nested_Field BOOLEAN -- Boolean
 SET     $Nested_Field = False
 
 INSERT INTO ComplexPropertyTarget

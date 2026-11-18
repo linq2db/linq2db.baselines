@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $value  -- UInt64
+DECLARE $value UBIGINT -- UInt64
 SET     $value = NULL
 
 SELECT
@@ -15,7 +15,7 @@ FROM
 	) t1
 
 -- DuckDB
-DECLARE $value  -- UInt64
+DECLARE $value UBIGINT -- UInt64
 SET     $value = 2147483648
 
 SELECT

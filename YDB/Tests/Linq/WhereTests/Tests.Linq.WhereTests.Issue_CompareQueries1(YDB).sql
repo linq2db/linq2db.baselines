@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $Ids0_1 Int32
-SET     $Ids0_1 = 1
-DECLARE $Ids0_2 Int32
-SET     $Ids0_2 = 2
+DECLARE Ids0_1 Int32
+SET     Ids0_1 = 1
+DECLARE Ids0_2 Int32
+SET     Ids0_2 = 2
 
 $CTE_1 = 	SELECT
 		p.PersonID as ID
@@ -26,10 +26,10 @@ WHERE
 LIMIT 2
 
 -- YDB Ydb
-DECLARE $Ids0_1 Int32
-SET     $Ids0_1 = 1
-DECLARE $Ids0_2 Int32
-SET     $Ids0_2 = 2
+DECLARE Ids0_1 Int32
+SET     Ids0_1 = 1
+DECLARE Ids0_2 Int32
+SET     Ids0_2 = 2
 
 $CTE_1 = 	SELECT
 		p.PersonID as ID

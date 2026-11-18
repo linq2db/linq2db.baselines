@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @fallback  -- DateTime
+DECLARE @fallback Text(23) -- DateTime
 SET     @fallback = '2026-05-25 09:00:00.000'
 
 SELECT

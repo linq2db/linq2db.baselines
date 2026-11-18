@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $take Int32
-SET     $take = 1
-DECLARE $skip Int32
-SET     $skip = 1
+DECLARE take Int32
+SET     take = 1
+DECLARE skip Int32
+SET     skip = 1
 
 SELECT
 	COUNT(*) OVER () as c1,

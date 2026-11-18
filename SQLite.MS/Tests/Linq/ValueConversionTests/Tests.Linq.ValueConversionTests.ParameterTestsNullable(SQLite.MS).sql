@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @testDate  -- DateTime
+DECLARE @testDate Text(23) -- DateTime
 SET     @testDate = '2020-02-29 00:00:00.000'
 
 SELECT
@@ -10,7 +10,7 @@ WHERE
 	strftime('%Y-%m-%d %H:%M:%f', @testDate) = strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeNullable])
 
 -- SQLite.MS SQLite
-DECLARE @testDate  -- DateTime
+DECLARE @testDate Text(23) -- DateTime
 SET     @testDate = '2020-02-29 00:00:00.000'
 
 SELECT

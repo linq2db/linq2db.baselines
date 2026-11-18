@@ -486,11 +486,11 @@ SELECT ID FROM [AllTypes] WHERE varcharDataType = ?
 SELECT textDataType FROM [AllTypes] WHERE ID = 1
 
 -- Access.Jet.Odbc AccessODBC
-DECLARE @p0 NVarChar -- String
+DECLARE @p0 Text -- AnsiString
 SET     @p0 = NULL
-DECLARE @p1 NVarChar -- String
+DECLARE @p1 Text -- AnsiString
 SET     @p1 = NULL
-DECLARE @p2 NVarChar -- String
+DECLARE @p2 Text -- AnsiString
 SET     @p2 = NULL
 
 SELECT ID FROM [AllTypes] WHERE ? IS NULL AND textDataType IS NULL OR ? IS NOT NULL AND textDataType = ?
@@ -509,7 +509,7 @@ SELECT ID FROM [AllTypes] WHERE ? IS NULL AND textDataType IS NULL OR ? IS NOT N
 SELECT textDataType FROM [AllTypes] WHERE ID = 2
 
 -- Access.Jet.Odbc AccessODBC
-DECLARE @p NVarChar(3) -- String
+DECLARE @p Text(3) -- AnsiString
 SET     @p = '567'
 
 SELECT ID FROM [AllTypes] WHERE textDataType = ?
@@ -618,11 +618,11 @@ SELECT ID FROM [AllTypes] WHERE nvarcharDataType = ?
 SELECT ntextDataType FROM [AllTypes] WHERE ID = 1
 
 -- Access.Jet.Odbc AccessODBC
-DECLARE @p0 NVarChar -- String
+DECLARE @p0 NText -- String
 SET     @p0 = NULL
-DECLARE @p1 NVarChar -- String
+DECLARE @p1 NText -- String
 SET     @p1 = NULL
-DECLARE @p2 NVarChar -- String
+DECLARE @p2 NText -- String
 SET     @p2 = NULL
 
 SELECT ID FROM [AllTypes] WHERE ? IS NULL AND ntextDataType IS NULL OR ? IS NOT NULL AND ntextDataType = ?
@@ -641,7 +641,7 @@ SELECT ID FROM [AllTypes] WHERE ? IS NULL AND ntextDataType IS NULL OR ? IS NOT 
 SELECT ntextDataType FROM [AllTypes] WHERE ID = 2
 
 -- Access.Jet.Odbc AccessODBC
-DECLARE @p NVarChar(3) -- String
+DECLARE @p NText(3) -- String
 SET     @p = '111'
 
 SELECT ID FROM [AllTypes] WHERE ntextDataType = ?

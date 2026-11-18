@@ -1,9 +1,9 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	[m_1].[Id],
 	[m_1].[Name],
 	[d].[Id],
-	Coalesce([m_1].[Name], N'') + N' / ' + Coalesce([d].[Name], N'')
+	Coalesce([m_1].[Name], N'') || N' / ' || Coalesce([d].[Name], N'')
 FROM
 	[Company] [m_1]
 		INNER JOIN [Department] [d] ON [d].[CompanyId] = [m_1].[Id]
@@ -11,7 +11,7 @@ ORDER BY
 	[d].[Id],
 	[m_1].[Id]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[c_1].[Id],
 	[c_1].[Name]

@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $take Int32
-SET     $take = 10
+DECLARE take Int32
+SET     take = 10
 
 SELECT
 	r.OrderPeriodId as OrderPeriodId,

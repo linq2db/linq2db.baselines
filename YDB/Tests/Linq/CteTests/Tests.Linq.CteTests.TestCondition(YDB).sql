@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $var3 Int32
-SET     $var3 = 1
+DECLARE var3 Int32
+SET     var3 = 1
 
 $CTE_1 = 	SELECT
 		t1.ChildID as ChildID,

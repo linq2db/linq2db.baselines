@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DECLARE @name Int -- Int32
 SET     @name = 4
 
@@ -11,7 +11,7 @@ FROM
 WHERE
 	[t].[Value] = CAST(@name AS NVarChar(11))
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @name Int -- Int32
 SET     @name = 4
 

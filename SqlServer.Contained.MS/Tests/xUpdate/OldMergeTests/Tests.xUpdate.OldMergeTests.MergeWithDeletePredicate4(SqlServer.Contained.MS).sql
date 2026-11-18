@@ -1,11 +1,11 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT TOP (1)
 	[t1].[PersonID],
 	[t1].[Diagnosis]
 FROM
 	[Patient] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @patient Int -- Int32
 SET     @patient = 2
 
@@ -65,7 +65,7 @@ WHEN NOT MATCHED BY SOURCE AND (
 ) = @patient THEN DELETE
 ;
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @patient Int -- Int32
 SET     @patient = 3
 

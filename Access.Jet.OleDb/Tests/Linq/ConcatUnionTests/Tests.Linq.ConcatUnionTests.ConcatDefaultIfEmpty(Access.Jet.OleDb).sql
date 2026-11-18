@@ -1,6 +1,5 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
 SELECT
-	0 as [projection__set_id__],
 	[t1].[ParentID],
 	[t1].[ParentID] as [ParentID_1],
 	[t1].[ChildID]
@@ -31,7 +30,6 @@ WHERE
 	[t1].[ParentID_1] = 1
 UNION ALL
 SELECT
-	1 as [projection__set_id__],
 	IIF(False, 0, NULL) as [ParentID],
 	IIF(False, 0, NULL) as [ParentID_1],
 	IIF(False, 0, NULL) as [ChildID]

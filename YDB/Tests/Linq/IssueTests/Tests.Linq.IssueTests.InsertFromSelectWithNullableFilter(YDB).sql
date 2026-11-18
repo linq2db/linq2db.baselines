@@ -21,8 +21,8 @@ FROM
 	) t2
 
 -- YDB Ydb
-DECLARE $p Int16
-SET     $p = 1234s
+DECLARE p Int16
+SET     p = 1234s
 
 INSERT INTO InsertIssueTest
 (

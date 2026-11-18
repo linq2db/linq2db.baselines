@@ -1,14 +1,14 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Name Text(5) -- String
-SET     $Name = 'async'u
-DECLARE $Version Int32
-SET     $Version = 3
-DECLARE $CreatedAt Timestamp -- DateTime2
-SET     $CreatedAt = NULL
-DECLARE $CreatedBy Text -- String
-SET     $CreatedBy = NULL
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Name Text(5) -- String
+SET     Name = 'async'u
+DECLARE Version Int32
+SET     Version = 3
+DECLARE CreatedAt Timestamp -- DateTime2
+SET     CreatedAt = NULL
+DECLARE CreatedBy Text -- String
+SET     CreatedBy = NULL
 
 INSERT INTO EntityInsertTest
 (

@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $Date  -- DateTime2
+DECLARE $Date TIMESTAMP -- DateTime2
 SET     $Date = '2009-09-20 00:00:00.000000'::TIMESTAMP
 
 SELECT

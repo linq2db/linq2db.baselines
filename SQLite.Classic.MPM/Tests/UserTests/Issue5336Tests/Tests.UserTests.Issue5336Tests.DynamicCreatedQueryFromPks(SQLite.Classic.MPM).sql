@@ -1,7 +1,7 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Guid
+DECLARE @Id Blob -- Guid
 SET     @Id = X'3D667BBCDE0F27438F925D8CC3A11D11'
-DECLARE @Number  -- Int32
+DECLARE @Number Integer -- Int32
 SET     @Number = 5
 DECLARE @Test NVarChar(3) -- String
 SET     @Test = 'aaa'

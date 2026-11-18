@@ -1,7 +1,7 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @structValue  -- Int32
+DECLARE @structValue Integer -- Int32
 SET     @structValue = 13
-DECLARE @classValue  -- Int32
+DECLARE @classValue Integer -- Int32
 SET     @classValue = 8
 
 INSERT INTO [Table]
@@ -27,9 +27,9 @@ FROM
 LIMIT 2
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @structValue  -- Int32
+DECLARE @structValue Integer -- Int32
 SET     @structValue = 1
-DECLARE @classValue  -- Int32
+DECLARE @classValue Integer -- Int32
 SET     @classValue = -8
 
 UPDATE

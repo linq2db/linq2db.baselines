@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @InDays BigInt -- Int64
@@ -23,7 +23,7 @@ VALUES
 	@InNanoseconds
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[r].[Id]
 FROM
@@ -36,7 +36,7 @@ WHERE
 			[UnitSpreadRow] [x]
 	)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[r].[Id]
 FROM

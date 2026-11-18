@@ -1,7 +1,7 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Name NVarChar(6) -- String
 SET     @Name = 'group1'
-DECLARE @Enabled  -- Boolean
+DECLARE @Enabled Integer -- Boolean
 SET     @Enabled = 1
 DECLARE @ImageFullUrl NVarChar(3) -- String
 SET     @ImageFullUrl = '123'
@@ -22,7 +22,7 @@ VALUES
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Name NVarChar(6) -- String
 SET     @Name = 'group1'
-DECLARE @Enabled  -- Boolean
+DECLARE @Enabled Integer -- Boolean
 SET     @Enabled = 1
 DECLARE @ImageFullUrl NVarChar(3) -- String
 SET     @ImageFullUrl = '123'
@@ -43,7 +43,7 @@ VALUES
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Name NVarChar(6) -- String
 SET     @Name = 'group2'
-DECLARE @Enabled  -- Boolean
+DECLARE @Enabled Integer -- Boolean
 SET     @Enabled = 1
 DECLARE @ImageFullUrl NVarChar(3) -- String
 SET     @ImageFullUrl = '123'

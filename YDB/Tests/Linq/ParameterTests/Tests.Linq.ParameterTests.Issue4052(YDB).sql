@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $ID Int32
-SET     $ID = 1
+DECLARE ID Int32
+SET     ID = 1
 
 SELECT
 	c_1.FirstName as FirstName,

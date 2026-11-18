@@ -1,7 +1,7 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Elapsed  -- Int64
+DECLARE @Elapsed Integer -- Int64
 SET     @Elapsed = 5400
 
 INSERT INTO [DynamicDurationRow]

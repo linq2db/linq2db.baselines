@@ -1,14 +1,14 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Name Text(5) -- String
-SET     $Name = 'first'u
-DECLARE $Version Int32
-SET     $Version = 11
-DECLARE $CreatedAt Timestamp -- DateTime2
-SET     $CreatedAt = NULL
-DECLARE $CreatedBy Text(2) -- String
-SET     $CreatedBy = 'u1'u
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Name Text(5) -- String
+SET     Name = 'first'u
+DECLARE Version Int32
+SET     Version = 11
+DECLARE CreatedAt Timestamp -- DateTime2
+SET     CreatedAt = NULL
+DECLARE CreatedBy Text(2) -- String
+SET     CreatedBy = 'u1'u
 
 INSERT INTO EntityInsertTest
 (
@@ -28,16 +28,16 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 2
-DECLARE $Name Text(6) -- String
-SET     $Name = 'second'u
-DECLARE $Version Int32
-SET     $Version = 21
-DECLARE $CreatedAt Timestamp -- DateTime2
-SET     $CreatedAt = NULL
-DECLARE $CreatedBy Text(2) -- String
-SET     $CreatedBy = 'u2'u
+DECLARE Id Int32
+SET     Id = 2
+DECLARE Name Text(6) -- String
+SET     Name = 'second'u
+DECLARE Version Int32
+SET     Version = 21
+DECLARE CreatedAt Timestamp -- DateTime2
+SET     CreatedAt = NULL
+DECLARE CreatedBy Text(2) -- String
+SET     CreatedBy = 'u2'u
 
 INSERT INTO EntityInsertTest
 (

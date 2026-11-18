@@ -61,9 +61,9 @@ VALUES
 (2,3)
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @ID  -- Int32
+DECLARE @ID Integer -- Int32
 SET     @ID = 3
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 3
 
 INSERT INTO temp.[temp_table1]

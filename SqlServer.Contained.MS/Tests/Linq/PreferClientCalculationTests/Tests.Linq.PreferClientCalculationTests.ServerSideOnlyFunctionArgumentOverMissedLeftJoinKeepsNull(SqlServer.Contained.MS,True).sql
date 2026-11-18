@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	ISNULL([j].[Value1], -1),
 	ISNULL([j].[Value1] + 1, -1)

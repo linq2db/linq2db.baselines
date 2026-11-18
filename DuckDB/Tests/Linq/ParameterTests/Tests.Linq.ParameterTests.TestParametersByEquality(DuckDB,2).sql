@@ -1,7 +1,7 @@
 ﻿-- DuckDB
-DECLARE $personId  -- Int32
+DECLARE $personId INTEGER -- Int32
 SET     $personId = 1
-DECLARE $personId_1  -- Int32
+DECLARE $personId_1 INTEGER -- Int32
 SET     $personId_1 = 1
 
 SELECT
@@ -21,9 +21,9 @@ WHERE
 	p.PersonID = $personId AND p.PersonID = $personId_1
 
 -- DuckDB
-DECLARE $personId  -- Int32
+DECLARE $personId INTEGER -- Int32
 SET     $personId = 1
-DECLARE $personId_1  -- Int32
+DECLARE $personId_1 INTEGER -- Int32
 SET     $personId_1 = 2
 
 SELECT

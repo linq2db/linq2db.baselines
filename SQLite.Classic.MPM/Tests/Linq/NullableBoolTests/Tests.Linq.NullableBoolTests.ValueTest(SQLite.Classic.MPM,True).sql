@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @value  -- Boolean
+DECLARE @value Integer -- Boolean
 SET     @value = 1
 
 SELECT
@@ -11,7 +11,7 @@ WHERE
 	[t].[Value] = @value
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @value  -- Boolean
+DECLARE @value Integer -- Boolean
 SET     @value = 1
 
 SELECT
@@ -23,7 +23,7 @@ WHERE
 	[t].[Value] = @value
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @value  -- Boolean
+DECLARE @value Integer -- Boolean
 SET     @value = 1
 
 SELECT
@@ -35,7 +35,7 @@ WHERE
 	[t].[Value] <> @value OR [t].[Value] IS NULL
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @value  -- Boolean
+DECLARE @value Integer -- Boolean
 SET     @value = 1
 
 SELECT

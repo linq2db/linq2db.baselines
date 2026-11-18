@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 INSERT INTO [TestBool]
 (
 	[Id],
@@ -10,14 +10,14 @@ VALUES
 	0
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT TOP (2)
 	[t1].[Id],
 	[t1].[Value]
 FROM
 	[TestBool] [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 UPDATE
 	[TestBool]
 SET
@@ -27,14 +27,14 @@ SET
 		ELSE NULL
 	END
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT TOP (2)
 	[t1].[Id],
 	[t1].[Value]
 FROM
 	[TestBool] [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 UPDATE
 	[TestBool]
 SET
@@ -42,7 +42,7 @@ SET
 WHERE
 	[TestBool].[Id] = 1
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT TOP (2)
 	[t1].[Id],
 	[t1].[Value]

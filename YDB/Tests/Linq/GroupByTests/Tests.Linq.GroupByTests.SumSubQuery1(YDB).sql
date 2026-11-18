@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $n Int32
-SET     $n = 1
+DECLARE n Int32
+SET     n = 1
 
 SELECT
 	SUM(g_2.ParentID - 3) as Sum_1

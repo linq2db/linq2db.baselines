@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @DateTime  -- DateTime
+DECLARE @DateTime Text(23) -- DateTime
 SET     @DateTime = '2040-02-29 11:12:13.456'
 
 INSERT INTO [DateTimeTable]

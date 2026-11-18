@@ -1,17 +1,17 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(6) -- String
 SET     @Name = 'ts-ins'
-DECLARE @Version  -- Int32
+DECLARE @Version Integer -- Int32
 SET     @Version = 1
 DECLARE @CreatedBy NVarChar -- String
 SET     @CreatedBy = NULL
-DECLARE @UpdatedAt  -- DateTime
+DECLARE @UpdatedAt Text -- DateTime
 SET     @UpdatedAt = NULL
 DECLARE @UpdatedBy NVarChar -- String
 SET     @UpdatedBy = NULL
-DECLARE @CreatedAt  -- DateTime
+DECLARE @CreatedAt Text -- DateTime
 SET     @CreatedAt = NULL
 
 INSERT INTO [UpsertTest] AS [t1]
@@ -58,17 +58,17 @@ WHERE
 LIMIT 2
 
 -- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(6) -- String
 SET     @Name = 'ts-upd'
-DECLARE @Version  -- Int32
+DECLARE @Version Integer -- Int32
 SET     @Version = 2
-DECLARE @CreatedAt  -- DateTime
+DECLARE @CreatedAt Text -- DateTime
 SET     @CreatedAt = NULL
 DECLARE @CreatedBy NVarChar -- String
 SET     @CreatedBy = NULL
-DECLARE @UpdatedAt  -- DateTime
+DECLARE @UpdatedAt Text -- DateTime
 SET     @UpdatedAt = NULL
 DECLARE @UpdatedBy NVarChar -- String
 SET     @UpdatedBy = NULL
@@ -117,15 +117,15 @@ WHERE
 LIMIT 2
 
 -- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Name NVarChar(7) -- String
 SET     @Name = 'root-ts'
-DECLARE @Version  -- Int32
+DECLARE @Version Integer -- Int32
 SET     @Version = 1
 DECLARE @CreatedBy NVarChar -- String
 SET     @CreatedBy = NULL
-DECLARE @UpdatedAt  -- DateTime
+DECLARE @UpdatedAt Text -- DateTime
 SET     @UpdatedAt = NULL
 DECLARE @UpdatedBy NVarChar -- String
 SET     @UpdatedBy = NULL

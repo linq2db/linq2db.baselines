@@ -1,7 +1,7 @@
 ﻿-- DuckDB
-DECLARE $EmptyCount  -- Int32
+DECLARE $EmptyCount INTEGER -- Int32
 SET     $EmptyCount = 0
-DECLARE $ItemsCount  -- Int32
+DECLARE $ItemsCount INTEGER -- Int32
 SET     $ItemsCount = 2
 
 INSERT INTO CountTarget

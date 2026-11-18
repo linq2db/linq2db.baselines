@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $test  -- DateTime2
+DECLARE $test TIMESTAMP -- DateTime2
 SET     $test = '2026-06-06 02:01:01.000000'::TIMESTAMP
 
 UPDATE

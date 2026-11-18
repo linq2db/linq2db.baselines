@@ -1,11 +1,11 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @StartedOn  -- DateTime
+DECLARE @StartedOn Text(23) -- DateTime
 SET     @StartedOn = '2026-01-01 10:00:00.000'
-DECLARE @FinishedOn  -- DateTime
+DECLARE @FinishedOn Text(23) -- DateTime
 SET     @FinishedOn = '2026-01-01 15:30:00.250'
-DECLARE @Due  -- DateTime
+DECLARE @Due Text(23) -- DateTime
 SET     @Due = '2026-01-01 10:00:00.000'
 
 INSERT INTO [ShiftTargetRow]

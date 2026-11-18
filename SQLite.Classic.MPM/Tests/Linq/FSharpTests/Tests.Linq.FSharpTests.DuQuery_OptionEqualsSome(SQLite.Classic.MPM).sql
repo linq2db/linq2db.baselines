@@ -1,7 +1,7 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Key  -- Int32
+DECLARE @Key Integer -- Int32
 SET     @Key = 10
 
 INSERT INTO [DuOptRow]
@@ -16,9 +16,9 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Key  -- Int32
+DECLARE @Key Integer -- Int32
 SET     @Key = NULL
 
 INSERT INTO [DuOptRow]
@@ -33,7 +33,7 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Key  -- Int32
+DECLARE @Key Integer -- Int32
 SET     @Key = 10
 
 SELECT

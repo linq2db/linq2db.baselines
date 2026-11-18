@@ -23,7 +23,6 @@ SET
 WHERE
 	"Parent"."ParentID" = 1010
 
-CommitTransaction
 -- PostgreSQL.9.5 PostgreSQL
 SELECT
 	t."ParentID",

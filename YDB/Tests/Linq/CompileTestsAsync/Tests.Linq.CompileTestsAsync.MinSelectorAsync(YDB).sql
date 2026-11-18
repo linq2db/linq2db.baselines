@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $p Int32
-SET     $p = 2
+DECLARE p Int32
+SET     p = 2
 
 SELECT
 	MIN(c_1.Id) as Min_1

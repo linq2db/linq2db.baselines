@@ -1,10 +1,10 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 0
-DECLARE $ClaimedKeyType Text(2) -- String
-SET     $ClaimedKeyType = 'EC'u
-DECLARE $ClaimedKeyTypeN Text -- String
-SET     $ClaimedKeyTypeN = NULL
+DECLARE Id Int32
+SET     Id = 0
+DECLARE ClaimedKeyType Text(2) -- String
+SET     ClaimedKeyType = 'EC'u
+DECLARE ClaimedKeyTypeN Text -- String
+SET     ClaimedKeyTypeN = NULL
 
 INSERT INTO Issue1554FluentTable
 (

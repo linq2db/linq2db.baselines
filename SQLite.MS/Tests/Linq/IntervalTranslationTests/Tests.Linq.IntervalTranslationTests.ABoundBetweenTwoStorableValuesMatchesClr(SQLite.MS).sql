@@ -1,13 +1,13 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @InSeconds  -- Int64
+DECLARE @InSeconds Integer -- Int64
 SET     @InSeconds = 1
-DECLARE @InTicks  -- Int64
+DECLARE @InTicks Integer -- Int64
 SET     @InTicks = 10000000
-DECLARE @Undeclared  -- Int64
+DECLARE @Undeclared Integer -- Int64
 SET     @Undeclared = 10000000
-DECLARE @UndeclaredSeconds  -- Int64
+DECLARE @UndeclaredSeconds Integer -- Int64
 SET     @UndeclaredSeconds = 1
 
 INSERT INTO [DurationRow]
@@ -28,15 +28,15 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @InSeconds  -- Int64
+DECLARE @InSeconds Integer -- Int64
 SET     @InSeconds = 2
-DECLARE @InTicks  -- Int64
+DECLARE @InTicks Integer -- Int64
 SET     @InTicks = 20000000
-DECLARE @Undeclared  -- Int64
+DECLARE @Undeclared Integer -- Int64
 SET     @Undeclared = 20000000
-DECLARE @UndeclaredSeconds  -- Int64
+DECLARE @UndeclaredSeconds Integer -- Int64
 SET     @UndeclaredSeconds = 2
 
 INSERT INTO [DurationRow]
@@ -57,15 +57,15 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 3
-DECLARE @InSeconds  -- Int64
+DECLARE @InSeconds Integer -- Int64
 SET     @InSeconds = 3
-DECLARE @InTicks  -- Int64
+DECLARE @InTicks Integer -- Int64
 SET     @InTicks = 30000000
-DECLARE @Undeclared  -- Int64
+DECLARE @Undeclared Integer -- Int64
 SET     @Undeclared = 30000000
-DECLARE @UndeclaredSeconds  -- Int64
+DECLARE @UndeclaredSeconds Integer -- Int64
 SET     @UndeclaredSeconds = 3
 
 INSERT INTO [DurationRow]
@@ -86,7 +86,7 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = 1
 
 SELECT
@@ -99,7 +99,7 @@ ORDER BY
 	[r].[Id]
 
 -- SQLite.MS SQLite
-DECLARE @p  -- Int64
+DECLARE @p Integer -- Int64
 SET     @p = 2
 
 SELECT
@@ -112,7 +112,7 @@ ORDER BY
 	[r].[Id]
 
 -- SQLite.MS SQLite
-DECLARE @p  -- Int64
+DECLARE @p Integer -- Int64
 SET     @p = 2
 
 SELECT
@@ -125,7 +125,7 @@ ORDER BY
 	[r].[Id]
 
 -- SQLite.MS SQLite
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = 1
 
 SELECT
@@ -138,9 +138,9 @@ ORDER BY
 	[r].[Id]
 
 -- SQLite.MS SQLite
-DECLARE @p  -- Int64
+DECLARE @p Integer -- Int64
 SET     @p = 2
-DECLARE @p_1  -- Int32
+DECLARE @p_1 Integer -- Int32
 SET     @p_1 = 1
 
 SELECT
@@ -153,7 +153,7 @@ ORDER BY
 	[r].[Id]
 
 -- SQLite.MS SQLite
-DECLARE @Ticks  -- Int64
+DECLARE @Ticks Integer -- Int64
 SET     @Ticks = 15000000
 
 SELECT
@@ -166,7 +166,7 @@ ORDER BY
 	[r].[Id]
 
 -- SQLite.MS SQLite
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = 1
 
 SELECT
@@ -179,7 +179,7 @@ ORDER BY
 	[r].[Id]
 
 -- SQLite.MS SQLite
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = 1
 
 SELECT
@@ -192,9 +192,9 @@ ORDER BY
 	[r].[Id]
 
 -- SQLite.MS SQLite
-DECLARE @p  -- Int64
+DECLARE @p Integer -- Int64
 SET     @p = 2
-DECLARE @p_1  -- Int32
+DECLARE @p_1 Integer -- Int32
 SET     @p_1 = 1
 
 SELECT
@@ -207,15 +207,15 @@ ORDER BY
 	[r].[Id]
 
 -- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @InSeconds  -- Int64
+DECLARE @InSeconds Integer -- Int64
 SET     @InSeconds = 1
-DECLARE @InTicks  -- Int64
+DECLARE @InTicks Integer -- Int64
 SET     @InTicks = 10000000
-DECLARE @Undeclared  -- Int64
+DECLARE @Undeclared Integer -- Int64
 SET     @Undeclared = 10000000
-DECLARE @UndeclaredSeconds  -- Int64
+DECLARE @UndeclaredSeconds Integer -- Int64
 SET     @UndeclaredSeconds = 1
 
 INSERT INTO [DurationRow]
@@ -236,15 +236,15 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @InSeconds  -- Int64
+DECLARE @InSeconds Integer -- Int64
 SET     @InSeconds = 2
-DECLARE @InTicks  -- Int64
+DECLARE @InTicks Integer -- Int64
 SET     @InTicks = 20000000
-DECLARE @Undeclared  -- Int64
+DECLARE @Undeclared Integer -- Int64
 SET     @Undeclared = 20000000
-DECLARE @UndeclaredSeconds  -- Int64
+DECLARE @UndeclaredSeconds Integer -- Int64
 SET     @UndeclaredSeconds = 2
 
 INSERT INTO [DurationRow]
@@ -265,15 +265,15 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 3
-DECLARE @InSeconds  -- Int64
+DECLARE @InSeconds Integer -- Int64
 SET     @InSeconds = 3
-DECLARE @InTicks  -- Int64
+DECLARE @InTicks Integer -- Int64
 SET     @InTicks = 30000000
-DECLARE @Undeclared  -- Int64
+DECLARE @Undeclared Integer -- Int64
 SET     @Undeclared = 30000000
-DECLARE @UndeclaredSeconds  -- Int64
+DECLARE @UndeclaredSeconds Integer -- Int64
 SET     @UndeclaredSeconds = 3
 
 INSERT INTO [DurationRow]
@@ -294,7 +294,7 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = 2
 
 SELECT
@@ -307,7 +307,7 @@ ORDER BY
 	[r].[Id]
 
 -- SQLite.MS SQLite
-DECLARE @p  -- Int64
+DECLARE @p Integer -- Int64
 SET     @p = 2
 
 SELECT
@@ -320,7 +320,7 @@ ORDER BY
 	[r].[Id]
 
 -- SQLite.MS SQLite
-DECLARE @p  -- Int64
+DECLARE @p Integer -- Int64
 SET     @p = 2
 
 SELECT
@@ -333,7 +333,7 @@ ORDER BY
 	[r].[Id]
 
 -- SQLite.MS SQLite
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = 2
 
 SELECT
@@ -346,9 +346,9 @@ ORDER BY
 	[r].[Id]
 
 -- SQLite.MS SQLite
-DECLARE @p  -- Int64
+DECLARE @p Integer -- Int64
 SET     @p = 2
-DECLARE @p_1  -- Int32
+DECLARE @p_1 Integer -- Int32
 SET     @p_1 = 2
 
 SELECT
@@ -361,7 +361,7 @@ ORDER BY
 	[r].[Id]
 
 -- SQLite.MS SQLite
-DECLARE @Ticks  -- Int64
+DECLARE @Ticks Integer -- Int64
 SET     @Ticks = 20000000
 
 SELECT
@@ -374,7 +374,7 @@ ORDER BY
 	[r].[Id]
 
 -- SQLite.MS SQLite
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = 2
 
 SELECT
@@ -387,7 +387,7 @@ ORDER BY
 	[r].[Id]
 
 -- SQLite.MS SQLite
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = 2
 
 SELECT
@@ -400,9 +400,9 @@ ORDER BY
 	[r].[Id]
 
 -- SQLite.MS SQLite
-DECLARE @p  -- Int64
+DECLARE @p Integer -- Int64
 SET     @p = 2
-DECLARE @p_1  -- Int32
+DECLARE @p_1 Integer -- Int32
 SET     @p_1 = 2
 
 SELECT

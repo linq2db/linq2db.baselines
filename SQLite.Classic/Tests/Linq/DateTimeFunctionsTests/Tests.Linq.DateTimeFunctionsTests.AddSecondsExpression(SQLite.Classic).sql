@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic SQLite
-DECLARE @Second  -- Int32
+DECLARE @Second Integer -- Int32
 SET     @Second = -35
 
 SELECT

@@ -1,9 +1,9 @@
 ﻿-- DuckDB
-DECLARE $ID  -- Int32
+DECLARE $ID INTEGER -- Int32
 SET     $ID = 1001
 DECLARE $MoneyValue Decimal(4, 0)
 SET     $MoneyValue = 1000
-DECLARE $SmallIntValue  -- Int16
+DECLARE $SmallIntValue SMALLINT -- Int16
 SET     $SmallIntValue = 100
 
 INSERT INTO LinqDataTypes
@@ -20,7 +20,7 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $ID  -- Int32
+DECLARE $ID INTEGER -- Int32
 SET     $ID = 1001
 
 UPDATE
@@ -32,7 +32,7 @@ WHERE
 	LinqDataTypes.ID = $ID
 
 -- DuckDB
-DECLARE $ID  -- Int32
+DECLARE $ID INTEGER -- Int32
 SET     $ID = 1001
 
 SELECT

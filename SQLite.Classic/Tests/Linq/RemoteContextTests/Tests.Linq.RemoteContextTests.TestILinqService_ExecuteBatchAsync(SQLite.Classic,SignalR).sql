@@ -11,4 +11,3 @@ DELETE FROM
 WHERE
 	[Person].[PersonID] = -2
 
-CommitTransactionAsync

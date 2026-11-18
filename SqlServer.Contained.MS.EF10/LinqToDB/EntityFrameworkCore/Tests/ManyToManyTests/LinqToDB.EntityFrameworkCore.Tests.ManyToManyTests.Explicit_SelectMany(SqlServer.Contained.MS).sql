@@ -7,7 +7,7 @@ INNER JOIN (
 ) AS [s] ON [o].[Id] = [s].[OrderId]
 
 
--- SqlServer.2019
+-- SqlServer.2025
 SELECT
 	[o].[Id]
 FROM

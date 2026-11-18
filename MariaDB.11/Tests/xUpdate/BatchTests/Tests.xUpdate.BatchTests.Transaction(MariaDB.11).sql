@@ -50,7 +50,6 @@ VALUES
 (3111,3111),
 (4111,4111)
 
-CommitTransaction
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @ParentID Int32
 SET     @ParentID = 1111

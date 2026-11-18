@@ -65,7 +65,7 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $minValue  -- Int32
+DECLARE $minValue INTEGER -- Int32
 SET     $minValue = 15
 
 SELECT

@@ -1,7 +1,7 @@
 ﻿-- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Type  -- Int32
+DECLARE @Type Integer -- Int32
 SET     @Type = 1
 DECLARE @Stored NVarChar(4) -- String
 SET     @Stored = 'John'

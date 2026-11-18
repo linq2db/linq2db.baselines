@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @StartedOn DateTime2
@@ -23,13 +23,13 @@ VALUES
 	@Budget
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT TOP (2)
 	[r].[StartedOn]
 FROM
 	[BudgetedTaskRow] [r]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT TOP (2)
 	DateAdd(nanosecond, CAST((CAST((DateDiff_Big(day, [r].[StartedOn], [r].[FinishedOn]) * 86400) * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r].[StartedOn], [r].[FinishedOn]) AS Int), [r].[StartedOn]), [r].[FinishedOn]) / 100 + [r].[Budget] * 10000000 AS BigInt) % 10000000) * 100 AS Int), DateAdd(second, CAST((CAST((DateDiff_Big(day, [r].[StartedOn], [r].[FinishedOn]) * 86400) * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r].[StartedOn], [r].[FinishedOn]) AS Int), [r].[StartedOn]), [r].[FinishedOn]) / 100 + [r].[Budget] * 10000000 AS BigInt) % 864000000000) / 10000000 AS Int), DateAdd(day, CAST(CAST((DateDiff_Big(day, [r].[StartedOn], [r].[FinishedOn]) * 86400) * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r].[StartedOn], [r].[FinishedOn]) AS Int), [r].[StartedOn]), [r].[FinishedOn]) / 100 + [r].[Budget] * 10000000 AS BigInt) / 864000000000 AS Int), CAST([r].[StartedOn] AS DateTime2)))),
 	DateAdd(nanosecond, CAST((CAST(CAST([r].[Budget] + [r].[Budget] AS BigInt) * 10000000 - ((DateDiff_Big(day, [r].[StartedOn], [r].[FinishedOn]) * 86400) * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r].[StartedOn], [r].[FinishedOn]) AS Int), [r].[StartedOn]), [r].[FinishedOn]) / 100) AS BigInt) % 10000000) * 100 AS Int), DateAdd(second, CAST((CAST(CAST([r].[Budget] + [r].[Budget] AS BigInt) * 10000000 - ((DateDiff_Big(day, [r].[StartedOn], [r].[FinishedOn]) * 86400) * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r].[StartedOn], [r].[FinishedOn]) AS Int), [r].[StartedOn]), [r].[FinishedOn]) / 100) AS BigInt) % 864000000000) / 10000000 AS Int), DateAdd(day, CAST(CAST(CAST([r].[Budget] + [r].[Budget] AS BigInt) * 10000000 - ((DateDiff_Big(day, [r].[StartedOn], [r].[FinishedOn]) * 86400) * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r].[StartedOn], [r].[FinishedOn]) AS Int), [r].[StartedOn]), [r].[FinishedOn]) / 100) AS BigInt) / 864000000000 AS Int), CAST([r].[StartedOn] AS DateTime2)))),

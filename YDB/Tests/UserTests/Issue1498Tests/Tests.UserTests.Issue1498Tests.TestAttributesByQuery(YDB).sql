@@ -1,10 +1,10 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 6
-DECLARE $Title Text(5) -- String
-SET     $Title = 'title'u
-DECLARE $Text Text(4) -- String
-SET     $Text = 'text'u
+DECLARE Id Int32
+SET     Id = 6
+DECLARE Title Text(5) -- String
+SET     Title = 'title'u
+DECLARE Text Text(4) -- String
+SET     Text = 'text'u
 
 INSERT INTO Topic
 (

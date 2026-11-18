@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $group  -- Int32
+DECLARE $group INTEGER -- Int32
 SET     $group = 7
 
 SELECT

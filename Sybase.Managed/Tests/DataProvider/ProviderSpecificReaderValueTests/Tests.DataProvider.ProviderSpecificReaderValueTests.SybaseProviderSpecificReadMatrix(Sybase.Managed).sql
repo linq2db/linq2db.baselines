@@ -11,12 +11,6 @@ SELECT CAST(1234567890123 AS BIGINT)
 SELECT CAST(1234567890123 AS BIGINT)
 
 -- Sybase.Managed Sybase
-SELECT CAST(123.45 AS DECIMAL(10,2))
-
--- Sybase.Managed Sybase
-SELECT CAST(123.45 AS DECIMAL(10,2))
-
--- Sybase.Managed Sybase
 SELECT CAST(1.25 AS REAL)
 
 -- Sybase.Managed Sybase
@@ -57,4 +51,10 @@ SELECT CAST(0x3039 AS BINARY(2))
 
 -- Sybase.Managed Sybase
 SELECT CAST(0x3039 AS BINARY(2))
+
+-- Sybase.Managed Sybase
+SELECT CAST(123.45 AS DECIMAL(10,2))
+
+-- Sybase.Managed Sybase
+SELECT CAST(123.45 AS DECIMAL(10,2))
 

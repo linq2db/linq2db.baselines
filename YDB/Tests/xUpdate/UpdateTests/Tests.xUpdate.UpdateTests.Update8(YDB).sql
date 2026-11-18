@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $ParentID Int32
-SET     $ParentID = 1001
-DECLARE $Value1 Int32
-SET     $Value1 = 1001
+DECLARE ParentID Int32
+SET     ParentID = 1001
+DECLARE Value1 Int32
+SET     Value1 = 1001
 
 INSERT INTO Parent
 (
@@ -16,10 +16,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Value1 Int32
-SET     $Value1 = 1002
-DECLARE $ParentID Int32
-SET     $ParentID = 1001
+DECLARE Value1 Int32
+SET     Value1 = 1002
+DECLARE ParentID Int32
+SET     ParentID = 1001
 
 UPDATE
 	Parent
@@ -29,8 +29,8 @@ WHERE
 	Parent.ParentID = $ParentID
 
 -- YDB Ydb
-DECLARE $ParentID Int32
-SET     $ParentID = 1001
+DECLARE ParentID Int32
+SET     ParentID = 1001
 
 SELECT
 	p.ParentID as ParentID,

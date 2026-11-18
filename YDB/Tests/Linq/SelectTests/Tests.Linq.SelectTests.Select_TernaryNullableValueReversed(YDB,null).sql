@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $value Int32
-SET     $value = NULL
+DECLARE value Int32
+SET     value = NULL
 
 SELECT
 	$value as c1

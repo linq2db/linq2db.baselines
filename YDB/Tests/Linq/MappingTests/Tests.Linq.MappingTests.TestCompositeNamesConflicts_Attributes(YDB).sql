@@ -1,10 +1,10 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Customer_Name Text(5) -- String
-SET     $Customer_Name = 'name1'u
-DECLARE $CustomerOther_Name Text(5) -- String
-SET     $CustomerOther_Name = 'name2'u
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Customer_Name Text(5) -- String
+SET     Customer_Name = 'name1'u
+DECLARE CustomerOther_Name Text(5) -- String
+SET     CustomerOther_Name = 'name2'u
 
 INSERT INTO Issue5266Table
 (

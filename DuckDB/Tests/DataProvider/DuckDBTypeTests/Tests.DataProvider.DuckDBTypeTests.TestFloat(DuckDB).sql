@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $value  -- Single
+DECLARE $value FLOAT -- Single
 SET     $value = '0'::FLOAT
 
 SELECT
@@ -26,11 +26,11 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
-DECLARE $Column  -- Single
+DECLARE $Column FLOAT -- Single
 SET     $Column = '0'::FLOAT
-DECLARE $ColumnNullable  -- Single
+DECLARE $ColumnNullable FLOAT -- Single
 SET     $ColumnNullable = NULL
 
 INSERT INTO "TypeTable`2"
@@ -47,7 +47,7 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $value  -- Single
+DECLARE $value FLOAT -- Single
 SET     $value = '0'::FLOAT
 
 SELECT
@@ -64,9 +64,9 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
-DECLARE $p2  -- Single
+DECLARE $p2 FLOAT -- Single
 SET     $p2 = '0'::FLOAT
 
 INSERT INTO "TypeTable`2"
@@ -79,7 +79,7 @@ VALUES
 ($p1,$p2,NULL)
 
 -- DuckDB
-DECLARE $value  -- Single
+DECLARE $value FLOAT -- Single
 SET     $value = '0'::FLOAT
 
 SELECT
@@ -111,7 +111,7 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-DECLARE $value  -- Single
+DECLARE $value FLOAT -- Single
 SET     $value = '0'::FLOAT
 
 SELECT
@@ -143,7 +143,7 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-DECLARE $value  -- Single
+DECLARE $value FLOAT -- Single
 SET     $value = '0'::FLOAT
 
 SELECT
@@ -156,9 +156,9 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable IS NULL
 
 -- DuckDB
-DECLARE $value  -- Single
+DECLARE $value FLOAT -- Single
 SET     $value = '-3.40282347E+38'::FLOAT
-DECLARE $nullableValue  -- Single
+DECLARE $nullableValue FLOAT -- Single
 SET     $nullableValue = '3.40282347E+38'::FLOAT
 
 SELECT
@@ -185,11 +185,11 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
-DECLARE $Column  -- Single
+DECLARE $Column FLOAT -- Single
 SET     $Column = '-3.40282347E+38'::FLOAT
-DECLARE $ColumnNullable  -- Single
+DECLARE $ColumnNullable FLOAT -- Single
 SET     $ColumnNullable = '3.40282347E+38'::FLOAT
 
 INSERT INTO "TypeTable`2"
@@ -206,9 +206,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $value  -- Single
+DECLARE $value FLOAT -- Single
 SET     $value = '-3.40282347E+38'::FLOAT
-DECLARE $nullableValue  -- Single
+DECLARE $nullableValue FLOAT -- Single
 SET     $nullableValue = '3.40282347E+38'::FLOAT
 
 SELECT
@@ -225,11 +225,11 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
-DECLARE $p2  -- Single
+DECLARE $p2 FLOAT -- Single
 SET     $p2 = '-3.40282347E+38'::FLOAT
-DECLARE $p3  -- Single
+DECLARE $p3 FLOAT -- Single
 SET     $p3 = '3.40282347E+38'::FLOAT
 
 INSERT INTO "TypeTable`2"
@@ -242,9 +242,9 @@ VALUES
 ($p1,$p2,$p3)
 
 -- DuckDB
-DECLARE $value  -- Single
+DECLARE $value FLOAT -- Single
 SET     $value = '-3.40282347E+38'::FLOAT
-DECLARE $nullableValue  -- Single
+DECLARE $nullableValue FLOAT -- Single
 SET     $nullableValue = '3.40282347E+38'::FLOAT
 
 SELECT
@@ -276,9 +276,9 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-DECLARE $value  -- Single
+DECLARE $value FLOAT -- Single
 SET     $value = '-3.40282347E+38'::FLOAT
-DECLARE $nullableValue  -- Single
+DECLARE $nullableValue FLOAT -- Single
 SET     $nullableValue = '3.40282347E+38'::FLOAT
 
 SELECT
@@ -310,9 +310,9 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-DECLARE $value  -- Single
+DECLARE $value FLOAT -- Single
 SET     $value = '-3.40282347E+38'::FLOAT
-DECLARE $nullableValue  -- Single
+DECLARE $nullableValue FLOAT -- Single
 SET     $nullableValue = '3.40282347E+38'::FLOAT
 
 SELECT
@@ -325,9 +325,9 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable = $nullableValue
 
 -- DuckDB
-DECLARE $value  -- Single
+DECLARE $value FLOAT -- Single
 SET     $value = '3.40282347E+38'::FLOAT
-DECLARE $nullableValue  -- Single
+DECLARE $nullableValue FLOAT -- Single
 SET     $nullableValue = '-3.40282347E+38'::FLOAT
 
 SELECT
@@ -354,11 +354,11 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
-DECLARE $Column  -- Single
+DECLARE $Column FLOAT -- Single
 SET     $Column = '3.40282347E+38'::FLOAT
-DECLARE $ColumnNullable  -- Single
+DECLARE $ColumnNullable FLOAT -- Single
 SET     $ColumnNullable = '-3.40282347E+38'::FLOAT
 
 INSERT INTO "TypeTable`2"
@@ -375,9 +375,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $value  -- Single
+DECLARE $value FLOAT -- Single
 SET     $value = '3.40282347E+38'::FLOAT
-DECLARE $nullableValue  -- Single
+DECLARE $nullableValue FLOAT -- Single
 SET     $nullableValue = '-3.40282347E+38'::FLOAT
 
 SELECT
@@ -394,11 +394,11 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
-DECLARE $p2  -- Single
+DECLARE $p2 FLOAT -- Single
 SET     $p2 = '3.40282347E+38'::FLOAT
-DECLARE $p3  -- Single
+DECLARE $p3 FLOAT -- Single
 SET     $p3 = '-3.40282347E+38'::FLOAT
 
 INSERT INTO "TypeTable`2"
@@ -411,9 +411,9 @@ VALUES
 ($p1,$p2,$p3)
 
 -- DuckDB
-DECLARE $value  -- Single
+DECLARE $value FLOAT -- Single
 SET     $value = '3.40282347E+38'::FLOAT
-DECLARE $nullableValue  -- Single
+DECLARE $nullableValue FLOAT -- Single
 SET     $nullableValue = '-3.40282347E+38'::FLOAT
 
 SELECT
@@ -445,9 +445,9 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-DECLARE $value  -- Single
+DECLARE $value FLOAT -- Single
 SET     $value = '3.40282347E+38'::FLOAT
-DECLARE $nullableValue  -- Single
+DECLARE $nullableValue FLOAT -- Single
 SET     $nullableValue = '-3.40282347E+38'::FLOAT
 
 SELECT
@@ -479,9 +479,9 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-DECLARE $value  -- Single
+DECLARE $value FLOAT -- Single
 SET     $value = '3.40282347E+38'::FLOAT
-DECLARE $nullableValue  -- Single
+DECLARE $nullableValue FLOAT -- Single
 SET     $nullableValue = '-3.40282347E+38'::FLOAT
 
 SELECT
@@ -494,7 +494,7 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable = $nullableValue
 
 -- DuckDB
-DECLARE $value  -- Single
+DECLARE $value FLOAT -- Single
 SET     $value = '1.40129846E-45'::FLOAT
 
 SELECT
@@ -521,11 +521,11 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
-DECLARE $Column  -- Single
+DECLARE $Column FLOAT -- Single
 SET     $Column = '1.40129846E-45'::FLOAT
-DECLARE $ColumnNullable  -- Single
+DECLARE $ColumnNullable FLOAT -- Single
 SET     $ColumnNullable = 'NaN'::FLOAT
 
 INSERT INTO "TypeTable`2"
@@ -542,7 +542,7 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $value  -- Single
+DECLARE $value FLOAT -- Single
 SET     $value = '1.40129846E-45'::FLOAT
 
 SELECT
@@ -559,11 +559,11 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
-DECLARE $p2  -- Single
+DECLARE $p2 FLOAT -- Single
 SET     $p2 = '1.40129846E-45'::FLOAT
-DECLARE $p3  -- Single
+DECLARE $p3 FLOAT -- Single
 SET     $p3 = 'NaN'::FLOAT
 
 INSERT INTO "TypeTable`2"
@@ -576,7 +576,7 @@ VALUES
 ($p1,$p2,$p3)
 
 -- DuckDB
-DECLARE $value  -- Single
+DECLARE $value FLOAT -- Single
 SET     $value = '1.40129846E-45'::FLOAT
 
 SELECT
@@ -608,7 +608,7 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-DECLARE $value  -- Single
+DECLARE $value FLOAT -- Single
 SET     $value = '1.40129846E-45'::FLOAT
 
 SELECT
@@ -640,7 +640,7 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-DECLARE $value  -- Single
+DECLARE $value FLOAT -- Single
 SET     $value = '1.40129846E-45'::FLOAT
 
 SELECT
@@ -653,7 +653,7 @@ WHERE
 	r."Column" = $value
 
 -- DuckDB
-DECLARE $nullableValue  -- Single
+DECLARE $nullableValue FLOAT -- Single
 SET     $nullableValue = '1.40129846E-45'::FLOAT
 
 SELECT
@@ -680,11 +680,11 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
-DECLARE $Column  -- Single
+DECLARE $Column FLOAT -- Single
 SET     $Column = 'NaN'::FLOAT
-DECLARE $ColumnNullable  -- Single
+DECLARE $ColumnNullable FLOAT -- Single
 SET     $ColumnNullable = '1.40129846E-45'::FLOAT
 
 INSERT INTO "TypeTable`2"
@@ -701,7 +701,7 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $nullableValue  -- Single
+DECLARE $nullableValue FLOAT -- Single
 SET     $nullableValue = '1.40129846E-45'::FLOAT
 
 SELECT
@@ -718,11 +718,11 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
-DECLARE $p2  -- Single
+DECLARE $p2 FLOAT -- Single
 SET     $p2 = 'NaN'::FLOAT
-DECLARE $p3  -- Single
+DECLARE $p3 FLOAT -- Single
 SET     $p3 = '1.40129846E-45'::FLOAT
 
 INSERT INTO "TypeTable`2"
@@ -735,7 +735,7 @@ VALUES
 ($p1,$p2,$p3)
 
 -- DuckDB
-DECLARE $nullableValue  -- Single
+DECLARE $nullableValue FLOAT -- Single
 SET     $nullableValue = '1.40129846E-45'::FLOAT
 
 SELECT
@@ -767,7 +767,7 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-DECLARE $nullableValue  -- Single
+DECLARE $nullableValue FLOAT -- Single
 SET     $nullableValue = '1.40129846E-45'::FLOAT
 
 SELECT
@@ -799,7 +799,7 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-DECLARE $nullableValue  -- Single
+DECLARE $nullableValue FLOAT -- Single
 SET     $nullableValue = '1.40129846E-45'::FLOAT
 
 SELECT
@@ -812,9 +812,9 @@ WHERE
 	r.ColumnNullable = $nullableValue
 
 -- DuckDB
-DECLARE $value  -- Single
+DECLARE $value FLOAT -- Single
 SET     $value = 'Infinity'::FLOAT
-DECLARE $nullableValue  -- Single
+DECLARE $nullableValue FLOAT -- Single
 SET     $nullableValue = '-Infinity'::FLOAT
 
 SELECT
@@ -841,11 +841,11 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
-DECLARE $Column  -- Single
+DECLARE $Column FLOAT -- Single
 SET     $Column = 'Infinity'::FLOAT
-DECLARE $ColumnNullable  -- Single
+DECLARE $ColumnNullable FLOAT -- Single
 SET     $ColumnNullable = '-Infinity'::FLOAT
 
 INSERT INTO "TypeTable`2"
@@ -862,9 +862,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $value  -- Single
+DECLARE $value FLOAT -- Single
 SET     $value = 'Infinity'::FLOAT
-DECLARE $nullableValue  -- Single
+DECLARE $nullableValue FLOAT -- Single
 SET     $nullableValue = '-Infinity'::FLOAT
 
 SELECT
@@ -881,11 +881,11 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
-DECLARE $p2  -- Single
+DECLARE $p2 FLOAT -- Single
 SET     $p2 = 'Infinity'::FLOAT
-DECLARE $p3  -- Single
+DECLARE $p3 FLOAT -- Single
 SET     $p3 = '-Infinity'::FLOAT
 
 INSERT INTO "TypeTable`2"
@@ -898,9 +898,9 @@ VALUES
 ($p1,$p2,$p3)
 
 -- DuckDB
-DECLARE $value  -- Single
+DECLARE $value FLOAT -- Single
 SET     $value = 'Infinity'::FLOAT
-DECLARE $nullableValue  -- Single
+DECLARE $nullableValue FLOAT -- Single
 SET     $nullableValue = '-Infinity'::FLOAT
 
 SELECT
@@ -932,9 +932,9 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-DECLARE $value  -- Single
+DECLARE $value FLOAT -- Single
 SET     $value = 'Infinity'::FLOAT
-DECLARE $nullableValue  -- Single
+DECLARE $nullableValue FLOAT -- Single
 SET     $nullableValue = '-Infinity'::FLOAT
 
 SELECT
@@ -966,9 +966,9 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-DECLARE $value  -- Single
+DECLARE $value FLOAT -- Single
 SET     $value = 'Infinity'::FLOAT
-DECLARE $nullableValue  -- Single
+DECLARE $nullableValue FLOAT -- Single
 SET     $nullableValue = '-Infinity'::FLOAT
 
 SELECT
@@ -981,9 +981,9 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable = $nullableValue
 
 -- DuckDB
-DECLARE $value  -- Single
+DECLARE $value FLOAT -- Single
 SET     $value = '-Infinity'::FLOAT
-DECLARE $nullableValue  -- Single
+DECLARE $nullableValue FLOAT -- Single
 SET     $nullableValue = 'Infinity'::FLOAT
 
 SELECT
@@ -1010,11 +1010,11 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
-DECLARE $Column  -- Single
+DECLARE $Column FLOAT -- Single
 SET     $Column = '-Infinity'::FLOAT
-DECLARE $ColumnNullable  -- Single
+DECLARE $ColumnNullable FLOAT -- Single
 SET     $ColumnNullable = 'Infinity'::FLOAT
 
 INSERT INTO "TypeTable`2"
@@ -1031,9 +1031,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $value  -- Single
+DECLARE $value FLOAT -- Single
 SET     $value = '-Infinity'::FLOAT
-DECLARE $nullableValue  -- Single
+DECLARE $nullableValue FLOAT -- Single
 SET     $nullableValue = 'Infinity'::FLOAT
 
 SELECT
@@ -1050,11 +1050,11 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
-DECLARE $p2  -- Single
+DECLARE $p2 FLOAT -- Single
 SET     $p2 = '-Infinity'::FLOAT
-DECLARE $p3  -- Single
+DECLARE $p3 FLOAT -- Single
 SET     $p3 = 'Infinity'::FLOAT
 
 INSERT INTO "TypeTable`2"
@@ -1067,9 +1067,9 @@ VALUES
 ($p1,$p2,$p3)
 
 -- DuckDB
-DECLARE $value  -- Single
+DECLARE $value FLOAT -- Single
 SET     $value = '-Infinity'::FLOAT
-DECLARE $nullableValue  -- Single
+DECLARE $nullableValue FLOAT -- Single
 SET     $nullableValue = 'Infinity'::FLOAT
 
 SELECT
@@ -1101,9 +1101,9 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-DECLARE $value  -- Single
+DECLARE $value FLOAT -- Single
 SET     $value = '-Infinity'::FLOAT
-DECLARE $nullableValue  -- Single
+DECLARE $nullableValue FLOAT -- Single
 SET     $nullableValue = 'Infinity'::FLOAT
 
 SELECT
@@ -1135,9 +1135,9 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-DECLARE $value  -- Single
+DECLARE $value FLOAT -- Single
 SET     $value = '-Infinity'::FLOAT
-DECLARE $nullableValue  -- Single
+DECLARE $nullableValue FLOAT -- Single
 SET     $nullableValue = 'Infinity'::FLOAT
 
 SELECT

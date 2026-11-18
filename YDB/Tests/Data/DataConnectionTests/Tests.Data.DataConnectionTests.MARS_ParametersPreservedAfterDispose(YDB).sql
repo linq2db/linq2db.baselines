@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $param Text(4) -- String
-SET     $param = 'test'u
+DECLARE param Text(4) -- String
+SET     param = 'test'u
 
 SELECT
 	t1.FirstName as FirstName,

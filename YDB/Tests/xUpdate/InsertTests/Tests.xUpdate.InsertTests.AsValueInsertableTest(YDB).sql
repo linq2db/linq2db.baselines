@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $ID Int32
-SET     $ID = 123
-DECLARE $FirstName Text(4) -- String
-SET     $FirstName = 'John'u
+DECLARE ID Int32
+SET     ID = 123
+DECLARE FirstName Text(4) -- String
+SET     FirstName = 'John'u
 
 INSERT INTO TestInsertOrReplaceTable
 (

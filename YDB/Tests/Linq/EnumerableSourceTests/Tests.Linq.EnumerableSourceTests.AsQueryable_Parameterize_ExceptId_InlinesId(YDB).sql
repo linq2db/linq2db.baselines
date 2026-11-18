@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $Data Text(9) -- String
-SET     $Data = 'Data 7777'u
-DECLARE $Data_1 Text(9) -- String
-SET     $Data_1 = 'Data 7778'u
+DECLARE Data Text(9) -- String
+SET     Data = 'Data 7777'u
+DECLARE Data_1 Text(9) -- String
+SET     Data_1 = 'Data 7778'u
 
 SELECT
 	t1.Id as Id,

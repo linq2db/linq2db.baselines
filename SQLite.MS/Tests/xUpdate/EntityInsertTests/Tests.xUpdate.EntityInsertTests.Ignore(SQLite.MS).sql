@@ -1,11 +1,11 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(1) -- String
 SET     @Name = 'n'
-DECLARE @Version  -- Int32
+DECLARE @Version Integer -- Int32
 SET     @Version = 1
-DECLARE @CreatedAt  -- DateTime
+DECLARE @CreatedAt Text -- DateTime
 SET     @CreatedAt = NULL
 
 INSERT INTO [EntityInsertTest]

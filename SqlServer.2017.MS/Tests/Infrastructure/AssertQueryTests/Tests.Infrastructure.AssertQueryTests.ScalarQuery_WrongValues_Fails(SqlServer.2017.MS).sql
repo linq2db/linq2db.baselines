@@ -1,0 +1,16 @@
+﻿-- SqlServer.2017.MS SqlServer.2017
+SELECT
+	[p].[PersonID] + 1
+FROM
+	[Person] [p]
+
+-- SqlServer.2017.MS SqlServer.2017
+SELECT
+	[t1].[FirstName],
+	[t1].[PersonID],
+	[t1].[LastName],
+	[t1].[MiddleName],
+	[t1].[Gender]
+FROM
+	[Person] [t1]
+

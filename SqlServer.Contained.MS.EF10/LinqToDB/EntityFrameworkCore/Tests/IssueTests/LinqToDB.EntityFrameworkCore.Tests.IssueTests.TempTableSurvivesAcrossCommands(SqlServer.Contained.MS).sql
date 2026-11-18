@@ -1,4 +1,4 @@
-﻿-- SqlServer.2019
+﻿-- SqlServer.2025
 CREATE TABLE [tempdb]..[#Identities]
 (
 	[Id]   int           NOT NULL IDENTITY,
@@ -13,7 +13,7 @@ INSERT BULK [tempdb]..[#Identities](Name)
 
 
 
--- SqlServer.2019
+-- SqlServer.2025
 SELECT
 	COUNT(*)
 FROM
@@ -21,7 +21,7 @@ FROM
 
 
 
--- SqlServer.2019
+-- SqlServer.2025
 SELECT
 	[e].[Name]
 FROM
@@ -31,7 +31,7 @@ ORDER BY
 
 
 
--- SqlServer.2019
+-- SqlServer.2025
 DROP TABLE IF EXISTS [tempdb]..[#Identities]
 
 

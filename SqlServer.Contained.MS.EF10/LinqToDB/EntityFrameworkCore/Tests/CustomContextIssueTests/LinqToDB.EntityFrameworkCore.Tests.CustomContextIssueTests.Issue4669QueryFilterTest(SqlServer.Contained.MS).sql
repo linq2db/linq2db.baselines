@@ -8,7 +8,7 @@ VALUES (@p0, @p1, @p2),
 (@p3, @p4, @p5);
 
 
--- SqlServer.2019
+-- SqlServer.2025
 SELECT
 	[p].[Id],
 	[p].[Name]

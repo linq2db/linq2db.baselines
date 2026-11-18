@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 WITH [CTE]
 (
 	[Level_1],
@@ -28,7 +28,7 @@ AS
 		[r].[Level_1] + 1,
 		[t1].[Id],
 		[t1].[ParentId],
-		Coalesce([r].[Label], N'') + N'/' + Coalesce([t1].[Label], N''),
+		Coalesce([r].[Label], N'') || N'/' || Coalesce([t1].[Label], N''),
 		[t1].[Id],
 		[t1].[Label],
 		[t1].[ParentId]

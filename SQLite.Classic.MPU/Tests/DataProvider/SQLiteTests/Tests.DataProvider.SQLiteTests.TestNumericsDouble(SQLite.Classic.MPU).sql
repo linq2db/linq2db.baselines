@@ -23,19 +23,19 @@ SELECT
 	CAST(-1.7900000000000002E+308 as 'real')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Double
+DECLARE @p Real -- Double
 SET     @p = -1.7900000000000002E+308
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Double
+DECLARE @p Real -- Double
 SET     @p = -1.7900000000000002E+308
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Double
+DECLARE @p Real -- Double
 SET     @p = -1.7900000000000002E+308
 
 SELECT @p
@@ -65,19 +65,19 @@ SELECT
 	CAST(-1.7900000000000008E+308 as 'real')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Double
+DECLARE @p Real -- Double
 SET     @p = -1.7900000000000008E+308
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Double
+DECLARE @p Real -- Double
 SET     @p = -1.7900000000000008E+308
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Double
+DECLARE @p Real -- Double
 SET     @p = -1.7900000000000008E+308
 
 SELECT @p
@@ -107,19 +107,19 @@ SELECT
 	CAST(1.7900000000000002E+308 as 'real')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Double
+DECLARE @p Real -- Double
 SET     @p = 1.7900000000000002E+308
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Double
+DECLARE @p Real -- Double
 SET     @p = 1.7900000000000002E+308
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Double
+DECLARE @p Real -- Double
 SET     @p = 1.7900000000000002E+308
 
 SELECT @p
@@ -149,19 +149,19 @@ SELECT
 	CAST(1.7900000000000008E+308 as 'real')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Double
+DECLARE @p Real -- Double
 SET     @p = 1.7900000000000008E+308
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Double
+DECLARE @p Real -- Double
 SET     @p = 1.7900000000000008E+308
 
 SELECT @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Double
+DECLARE @p Real -- Double
 SET     @p = 1.7900000000000008E+308
 
 SELECT @p

@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $id  -- Int32
+DECLARE $id INTEGER -- Int32
 SET     $id = 1001
 
 INSERT INTO Child
@@ -14,7 +14,7 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $id  -- Int32
+DECLARE $id INTEGER -- Int32
 SET     $id = 1001
 
 SELECT

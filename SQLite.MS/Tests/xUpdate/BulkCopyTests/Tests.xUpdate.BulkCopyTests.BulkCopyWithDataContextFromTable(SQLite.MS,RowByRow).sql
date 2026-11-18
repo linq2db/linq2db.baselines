@@ -15,7 +15,7 @@ VALUES
 (2)
 
 -- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 3
 
 INSERT INTO [SimpleBulkCopyTable]

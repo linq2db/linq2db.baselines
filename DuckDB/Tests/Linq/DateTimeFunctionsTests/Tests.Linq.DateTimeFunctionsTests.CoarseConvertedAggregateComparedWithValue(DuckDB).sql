@@ -6,7 +6,7 @@ FROM
 LIMIT 2
 
 -- DuckDB
-DECLARE $value  -- DateTime
+DECLARE $value TIMESTAMP -- DateTime
 SET     $value = '2026-06-01 09:00:00.000000'::TIMESTAMP
 
 SELECT
@@ -17,7 +17,7 @@ WHERE
 	r."Value" = $value
 
 -- DuckDB
-DECLARE $value  -- DateTime
+DECLARE $value TIMESTAMP -- DateTime
 SET     $value = '2026-06-01 09:00:00.000000'::TIMESTAMP
 
 SELECT
@@ -35,7 +35,7 @@ FROM
 	) t1
 
 -- DuckDB
-DECLARE $CoarseValue  -- DateTime
+DECLARE $CoarseValue TIMESTAMP -- DateTime
 SET     $CoarseValue = '2026-06-01 09:00:00.000000'::TIMESTAMP
 
 SELECT
@@ -53,7 +53,7 @@ FROM
 	) t1
 
 -- DuckDB
-DECLARE $day  -- Date
+DECLARE $day DATE -- Date
 SET     $day = '2026-05-31 00:00:00.000000'::TIMESTAMP
 
 SELECT
@@ -71,7 +71,7 @@ FROM
 	) t1
 
 -- DuckDB
-DECLARE $CoarseConvertedDay  -- Date
+DECLARE $CoarseConvertedDay DATE -- Date
 SET     $CoarseConvertedDay = '2026-05-31 00:00:00.000000'::TIMESTAMP
 
 SELECT

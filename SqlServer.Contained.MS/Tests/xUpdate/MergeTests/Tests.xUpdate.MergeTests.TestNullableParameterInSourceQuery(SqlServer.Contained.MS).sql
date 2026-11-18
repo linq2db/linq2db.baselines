@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 MERGE INTO [TestNullableParameterTarget] [Target]
 USING (
 	SELECT
@@ -28,7 +28,7 @@ VALUES
 )
 ;
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @id Int -- Int32
 SET     @id = 1
 

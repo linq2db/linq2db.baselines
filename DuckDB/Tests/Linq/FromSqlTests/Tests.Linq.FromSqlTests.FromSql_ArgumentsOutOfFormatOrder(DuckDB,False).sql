@@ -1,7 +1,7 @@
 ﻿-- DuckDB
 DECLARE $p NVarChar(1) -- String
 SET     $p = 'X'
-DECLARE $p_1  -- Int32
+DECLARE $p_1 INTEGER -- Int32
 SET     $p_1 = 1
 
 SELECT

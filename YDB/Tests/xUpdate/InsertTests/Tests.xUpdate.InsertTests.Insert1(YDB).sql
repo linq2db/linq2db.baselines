@@ -5,8 +5,8 @@ WHERE
 	Child.ChildID > 1000
 
 -- YDB Ydb
-DECLARE $id Int32
-SET     $id = 1001
+DECLARE id Int32
+SET     id = 1001
 
 INSERT INTO Child
 (
@@ -20,8 +20,8 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $id Int32
-SET     $id = 1001
+DECLARE id Int32
+SET     id = 1001
 
 SELECT
 	COUNT(*) as Count_1

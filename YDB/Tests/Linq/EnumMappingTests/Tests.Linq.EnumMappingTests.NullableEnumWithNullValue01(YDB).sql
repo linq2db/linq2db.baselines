@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $p Int32
-SET     $p = 104
+DECLARE p Int32
+SET     p = 104
 
 DELETE FROM
 	LinqDataTypes
@@ -8,10 +8,10 @@ WHERE
 	LinqDataTypes.ID >= 101 AND LinqDataTypes.ID < $p
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 101
-DECLARE $Value Int32
-SET     $Value = 11
+DECLARE Id Int32
+SET     Id = 101
+DECLARE Value Int32
+SET     Value = 11
 
 INSERT INTO LinqDataTypes
 (
@@ -25,10 +25,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 102
-DECLARE $Value Int32
-SET     $Value = 22
+DECLARE Id Int32
+SET     Id = 102
+DECLARE Value Int32
+SET     Value = 22
 
 INSERT INTO LinqDataTypes
 (
@@ -42,10 +42,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 103
-DECLARE $Value Int32
-SET     $Value = NULL
+DECLARE Id Int32
+SET     Id = 103
+DECLARE Value Int32
+SET     Value = NULL
 
 INSERT INTO LinqDataTypes
 (
@@ -82,8 +82,8 @@ ORDER BY
 	r.ID
 
 -- YDB Ydb
-DECLARE $p Int32
-SET     $p = 104
+DECLARE p Int32
+SET     p = 104
 
 DELETE FROM
 	LinqDataTypes

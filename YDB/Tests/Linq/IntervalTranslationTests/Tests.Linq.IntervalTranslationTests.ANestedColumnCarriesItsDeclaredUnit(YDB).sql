@@ -1,10 +1,10 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Declared_Elapsed Int64
-SET     $Declared_Elapsed = 5400l
-DECLARE $Converted_Elapsed Int64
-SET     $Converted_Elapsed = 5400l
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Declared_Elapsed Int64
+SET     Declared_Elapsed = 5400l
+DECLARE Converted_Elapsed Int64
+SET     Converted_Elapsed = 5400l
 
 INSERT INTO NestedDurationRow
 (

@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $separator Text(2) -- String
-SET     $separator = ', 'u
+DECLARE separator Text(2) -- String
+SET     separator = ', 'u
 
 SELECT
 	g_1.Id as Id,

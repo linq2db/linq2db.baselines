@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @StartedOn DateTime2
@@ -19,7 +19,7 @@ VALUES
 	@FinishedOn
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @Ticks BigInt -- Int64
 SET     @Ticks = 1234
 DECLARE @TotalMilliseconds Float -- Double
@@ -31,19 +31,19 @@ SELECT TOP (2)
 FROM
 	[EventRow] [r]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[r].[Id]
 FROM
 	[EventRow] [r]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[r].[Id]
 FROM
 	[EventRow] [r]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @FinishedOn DateTime2
 SET     @FinishedOn = DATETIME2FROMPARTS(2026, 1, 3, 13, 30, 0, 2468, 7)
 

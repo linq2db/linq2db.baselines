@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],
@@ -10,7 +10,7 @@ FROM
 WHERE
 	[p].[MiddleName] IS NULL
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @str NVarChar(4000) -- String
 SET     @str = N'123'
 

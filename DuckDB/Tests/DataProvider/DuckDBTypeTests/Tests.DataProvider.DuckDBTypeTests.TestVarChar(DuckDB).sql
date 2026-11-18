@@ -26,7 +26,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column NVarChar -- String
 SET     $Column = ''
@@ -64,7 +64,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 NVarChar -- String
 SET     $p2 = ''
@@ -185,7 +185,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column NVarChar(13) -- String
 SET     $Column = 'test string  '
@@ -225,7 +225,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 NVarChar(13) -- String
 SET     $p2 = 'test string  '
@@ -356,7 +356,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column NVarChar(26) -- String
 SET     $Column = 'with ''quotes'' and "double"'
@@ -398,7 +398,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 NVarChar(26) -- String
 SET     $p2 = 'with ''quotes'' and "double"'
@@ -593,7 +593,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column NVarChar(11) -- String
 SET     $Column = '1234567890x'
@@ -633,7 +633,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 NVarChar(10) -- String
 SET     $p2 = '1234567890x'
@@ -760,7 +760,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column NChar -- StringFixedLength
 SET     $Column = 'A'
@@ -798,7 +798,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 NChar(1) -- StringFixedLength
 SET     $p2 = 'A'
@@ -919,7 +919,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column NChar -- StringFixedLength
 SET     $Column = 'A'
@@ -959,7 +959,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 NChar(1) -- StringFixedLength
 SET     $p2 = 'A'

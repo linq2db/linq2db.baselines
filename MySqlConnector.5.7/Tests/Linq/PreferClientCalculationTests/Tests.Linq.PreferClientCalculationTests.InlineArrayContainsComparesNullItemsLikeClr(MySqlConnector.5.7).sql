@@ -172,7 +172,7 @@ SELECT
 FROM
 	`NullableItemEntity` `e`
 WHERE
-	NOT (8 = `e`.`Item` AND `e`.`Item` IS NOT NULL)
+	8 <> `e`.`Item` OR `e`.`Item` IS NULL
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 SELECT

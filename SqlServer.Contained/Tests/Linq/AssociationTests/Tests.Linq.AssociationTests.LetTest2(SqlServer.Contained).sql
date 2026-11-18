@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t].[ParentID],
 	(
@@ -12,7 +12,7 @@ SELECT
 FROM
 	[Parent] [t]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t].[ParentID],
 	(

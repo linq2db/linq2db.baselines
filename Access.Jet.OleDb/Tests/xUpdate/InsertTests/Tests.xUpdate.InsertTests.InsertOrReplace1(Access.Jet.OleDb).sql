@@ -24,7 +24,8 @@ VALUES
 )
 
 -- Access.Jet.OleDb AccessOleDb
-SELECT @@IDENTITY
+SELECT
+	@@IDENTITY
 
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @Diagnosis VarWChar(4) -- String

@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $VBLocal_SelectedValue Int32
-SET     $VBLocal_SelectedValue = 1
+DECLARE VBLocal_SelectedValue Int32
+SET     VBLocal_SelectedValue = 1
 
 SELECT
 	w.ParentID as ParentID,

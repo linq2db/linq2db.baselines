@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $bound Date
-SET     $bound = Date('2000-01-01')
+DECLARE bound Date
+SET     bound = Date('2000-01-01')
 
 SELECT
 	e.Id as Id,

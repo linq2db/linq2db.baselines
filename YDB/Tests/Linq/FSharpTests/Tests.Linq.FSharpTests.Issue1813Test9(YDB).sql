@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Name Text(5) -- String
-SET     $Name = 'name1'u
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Name Text(5) -- String
+SET     Name = 'name1'u
 
 INSERT INTO `Names`
 (
@@ -16,10 +16,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 2
-DECLARE $Name Text(5) -- String
-SET     $Name = 'name2'u
+DECLARE Id Int32
+SET     Id = 2
+DECLARE Name Text(5) -- String
+SET     Name = 'name2'u
 
 INSERT INTO `Names`
 (
@@ -33,10 +33,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Text Text(7) -- String
-SET     $Text = 'address'u
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Text Text(7) -- String
+SET     Text = 'address'u
 
 INSERT INTO Addresses
 (

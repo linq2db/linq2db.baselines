@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @StartedOn DateTime2
@@ -23,7 +23,7 @@ VALUES
 	@Budget
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @StartedOn DateTime2
@@ -48,7 +48,7 @@ VALUES
 	@Budget
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 3
 DECLARE @StartedOn DateTime2
@@ -73,7 +73,7 @@ VALUES
 	@Budget
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @Ticks BigInt -- Int64
 SET     @Ticks = 72000000000
 
@@ -84,7 +84,7 @@ FROM
 WHERE
 	(DateDiff_Big(day, [r].[StartedOn], [r].[FinishedOn]) * 86400) * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r].[StartedOn], [r].[FinishedOn]) AS Int), [r].[StartedOn]), [r].[FinishedOn]) / 100 > @Ticks
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @Ticks BigInt -- Int64
 SET     @Ticks = 72000000000
 

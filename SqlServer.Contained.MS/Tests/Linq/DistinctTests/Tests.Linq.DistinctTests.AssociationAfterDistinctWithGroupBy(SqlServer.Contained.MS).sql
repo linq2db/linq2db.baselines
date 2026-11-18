@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[a_Parent_1].[ParentID],
 	COUNT(*)
@@ -19,7 +19,7 @@ GROUP BY
 ORDER BY
 	[a_Parent_1].[ParentID]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID],

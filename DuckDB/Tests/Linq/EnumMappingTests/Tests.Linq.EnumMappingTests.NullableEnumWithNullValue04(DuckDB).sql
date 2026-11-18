@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $p  -- Int32
+DECLARE $p INTEGER -- Int32
 SET     $p = 105
 
 DELETE FROM
@@ -8,7 +8,7 @@ WHERE
 	r.ID >= 101 AND r.ID < $p
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 101
 DECLARE $Value NChar(2) -- StringFixedLength
 SET     $Value = '11'
@@ -25,7 +25,7 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 102
 DECLARE $Value NChar(2) -- StringFixedLength
 SET     $Value = '22'
@@ -42,7 +42,7 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 103
 DECLARE $Value NChar -- StringFixedLength
 SET     $Value = NULL
@@ -59,7 +59,7 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 104
 DECLARE $Value NChar -- StringFixedLength
 SET     $Value = NULL
@@ -99,7 +99,7 @@ ORDER BY
 	r.ID
 
 -- DuckDB
-DECLARE $p  -- Int32
+DECLARE $p INTEGER -- Int32
 SET     $p = 105
 
 DELETE FROM

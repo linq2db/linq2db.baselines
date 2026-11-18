@@ -1,10 +1,10 @@
 ﻿-- YDB Ydb
-DECLARE $Pk Int32
-SET     $Pk = 1
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $TargetName Text(12) -- String
-SET     $TargetName = 'bda.Requests'u
+DECLARE Pk Int32
+SET     Pk = 1
+DECLARE Id Int32
+SET     Id = 1
+DECLARE TargetName Text(12) -- String
+SET     TargetName = 'bda.Requests'u
 
 INSERT INTO Issue1096Task
 (
@@ -20,12 +20,12 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $TaskId Int32
-SET     $TaskId = 1
-DECLARE $Actual Bool -- Boolean
-SET     $Actual = true
+DECLARE Id Int32
+SET     Id = 1
+DECLARE TaskId Int32
+SET     TaskId = 1
+DECLARE Actual Bool -- Boolean
+SET     Actual = true
 
 INSERT INTO Issue1096TaskStage
 (

@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $ID Int32
-SET     $ID = 2
-DECLARE $ID_1 Int32
-SET     $ID_1 = 3
+DECLARE ID Int32
+SET     ID = 2
+DECLARE ID_1 Int32
+SET     ID_1 = 3
 
 SELECT
 	n.ID as ID,

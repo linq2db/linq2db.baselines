@@ -1,11 +1,11 @@
 ﻿-- DuckDB
-DECLARE $ID  -- Int32
+DECLARE $ID INTEGER -- Int32
 SET     $ID = 3
-DECLARE $DurationID  -- Int32
+DECLARE $DurationID INTEGER -- Int32
 SET     $DurationID = 2
-DECLARE $DurationInterval  -- Int32
+DECLARE $DurationInterval INTEGER -- Int32
 SET     $DurationInterval = 4
-DECLARE $PersonID  -- Int32
+DECLARE $PersonID INTEGER -- Int32
 SET     $PersonID = 1
 
 INSERT INTO BackgroundTask
@@ -24,7 +24,7 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $personId  -- Int32
+DECLARE $personId INTEGER -- Int32
 SET     $personId = 1
 
 SELECT

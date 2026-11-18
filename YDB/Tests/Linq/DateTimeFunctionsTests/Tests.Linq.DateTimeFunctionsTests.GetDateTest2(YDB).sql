@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $take Int32
-SET     $take = 5
+DECLARE take Int32
+SET     take = 5
 
 SELECT
 	g_2.Key_1 as Key_1,

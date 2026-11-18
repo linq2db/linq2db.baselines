@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	[p].[ParentID],
 	[p].[Value1]
@@ -7,7 +7,7 @@ FROM
 WHERE
 	([p].[Value1] NOT IN (1, 2, 3) OR [p].[Value1] IS NULL)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

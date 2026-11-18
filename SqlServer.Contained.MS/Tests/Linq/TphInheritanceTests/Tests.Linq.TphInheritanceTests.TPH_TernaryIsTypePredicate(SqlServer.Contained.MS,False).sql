@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @Code NVarChar(4000) -- String
 SET     @Code = N'Child'
 DECLARE @Id Int -- Int32
@@ -23,7 +23,7 @@ VALUES
 	@IsMale
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @Code NVarChar(4000) -- String
 SET     @Code = N'Child2'
 DECLARE @Id Int -- Int32
@@ -48,7 +48,7 @@ VALUES
 	@Age
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[e].[Code],
 	[e].[Id],

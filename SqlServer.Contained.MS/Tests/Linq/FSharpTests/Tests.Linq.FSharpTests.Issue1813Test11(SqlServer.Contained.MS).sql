@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @DealNumber Int -- Int32
@@ -23,7 +23,7 @@ VALUES
 	@ParcelID
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @DealNumber Int -- Int32
@@ -48,7 +48,7 @@ VALUES
 	@ParcelID
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 3
 DECLARE @DealNumber Int -- Int32
@@ -73,7 +73,7 @@ VALUES
 	@ParcelID
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 4
 DECLARE @DealNumber Int -- Int32
@@ -98,7 +98,7 @@ VALUES
 	@ParcelID
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @DeliveryDealNumber Int -- Int32
@@ -135,7 +135,7 @@ VALUES
 	@ReceiptParcelID
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @DeliveryDealNumber Int -- Int32
@@ -172,7 +172,7 @@ VALUES
 	@ReceiptParcelID
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 3
 DECLARE @DeliveryDealNumber Int -- Int32
@@ -209,7 +209,7 @@ VALUES
 	@ReceiptParcelID
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 4
 DECLARE @DeliveryDealNumber Int -- Int32
@@ -246,7 +246,7 @@ VALUES
 	@ReceiptParcelID
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @take Int -- Int32
 SET     @take = 90
 

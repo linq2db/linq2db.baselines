@@ -1,7 +1,7 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @DateTime  -- DateTime
+DECLARE @DateTime Text(23) -- DateTime
 SET     @DateTime = '2000-01-01 00:00:00.000'
 
 INSERT INTO [CreateTableTypes]
@@ -16,9 +16,9 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @DateTime  -- DateTime
+DECLARE @DateTime Text(23) -- DateTime
 SET     @DateTime = '2018-11-24 01:02:03.000'
 
 INSERT INTO [CreateTableTypes]

@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[p].[PK],
 	[p].[Id],
@@ -18,7 +18,7 @@ WHERE
 			) [t1]([item])
 	) > DATETIME2FROMPARTS(2023, 1, 1, 0, 0, 0, 0, 3)
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[p].[PK],
 	[p].[Id],

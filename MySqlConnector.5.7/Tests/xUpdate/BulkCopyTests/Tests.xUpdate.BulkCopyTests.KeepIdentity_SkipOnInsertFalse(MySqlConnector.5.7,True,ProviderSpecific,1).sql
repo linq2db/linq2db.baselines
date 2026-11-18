@@ -12,7 +12,8 @@ VALUES
 )
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-SELECT LAST_INSERT_ID()
+SELECT
+	LAST_INSERT_ID() as `c1`
 
 INSERT ASYNC BULK `KeepIdentityTest`(ID, Value)
 

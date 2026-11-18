@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Items Text(3) -- String
-SET     $Items = 'A;B'u
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Items Text(3) -- String
+SET     Items = 'A;B'u
 
 INSERT INTO Issue5540
 (

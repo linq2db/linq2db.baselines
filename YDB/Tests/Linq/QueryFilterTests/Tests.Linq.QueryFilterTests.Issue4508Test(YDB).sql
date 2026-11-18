@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $idCopy Int32
-SET     $idCopy = 0
+DECLARE idCopy Int32
+SET     idCopy = 0
 
 SELECT
 	p.FirstName as FirstName,
@@ -14,8 +14,8 @@ WHERE
 	p.PersonID > $idCopy
 
 -- YDB Ydb
-DECLARE $idCopy Int32
-SET     $idCopy = 1
+DECLARE idCopy Int32
+SET     idCopy = 1
 
 SELECT
 	p.FirstName as FirstName,
@@ -29,8 +29,8 @@ WHERE
 	p.PersonID > $idCopy
 
 -- YDB Ydb
-DECLARE $idCopy Int32
-SET     $idCopy = 0
+DECLARE idCopy Int32
+SET     idCopy = 0
 
 SELECT
 	p.FirstName as FirstName,
@@ -44,8 +44,8 @@ WHERE
 	p.PersonID > $idCopy
 
 -- YDB Ydb
-DECLARE $idCopy Int32
-SET     $idCopy = 1
+DECLARE idCopy Int32
+SET     idCopy = 1
 
 SELECT
 	p.FirstName as FirstName,
@@ -59,8 +59,8 @@ WHERE
 	p.PersonID > $idCopy
 
 -- YDB Ydb
-DECLARE $idCopy Int32
-SET     $idCopy = 0
+DECLARE idCopy Int32
+SET     idCopy = 0
 
 SELECT
 	p.FirstName as FirstName,
@@ -74,8 +74,8 @@ WHERE
 	p.PersonID > $idCopy
 
 -- YDB Ydb
-DECLARE $idCopy Int32
-SET     $idCopy = 1
+DECLARE idCopy Int32
+SET     idCopy = 1
 
 SELECT
 	p.FirstName as FirstName,
@@ -89,8 +89,8 @@ WHERE
 	p.PersonID > $idCopy
 
 -- YDB Ydb
-DECLARE $idCopy Int32
-SET     $idCopy = 0
+DECLARE idCopy Int32
+SET     idCopy = 0
 
 SELECT
 	p.FirstName as FirstName,
@@ -104,8 +104,8 @@ WHERE
 	p.PersonID > $idCopy
 
 -- YDB Ydb
-DECLARE $idCopy Int32
-SET     $idCopy = 1
+DECLARE idCopy Int32
+SET     idCopy = 1
 
 SELECT
 	p.FirstName as FirstName,

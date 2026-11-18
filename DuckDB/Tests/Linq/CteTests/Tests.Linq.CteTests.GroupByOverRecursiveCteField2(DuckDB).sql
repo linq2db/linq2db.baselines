@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $id  -- Int32
+DECLARE $id INTEGER -- Int32
 SET     $id = 1
 
 WITH RECURSIVE cte (Field1, Field2, Field3)
@@ -41,7 +41,7 @@ FROM
 		INNER JOIN cte d ON m_1.Key_1 = d.Field2
 
 -- DuckDB
-DECLARE $id  -- Int32
+DECLARE $id INTEGER -- Int32
 SET     $id = 1
 
 WITH RECURSIVE cte (Field2, Field3)

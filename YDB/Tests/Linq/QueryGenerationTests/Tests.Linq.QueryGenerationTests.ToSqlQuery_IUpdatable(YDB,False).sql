@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $Value Int32
-SET     $Value = 1
+DECLARE Value Int32
+SET     Value = 1
 
 INSERT INTO TableWithIdentity
 (
@@ -12,8 +12,8 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $newValue Int32
-SET     $newValue = 123
+DECLARE newValue Int32
+SET     newValue = 123
 
 UPDATE
 	TableWithIdentity

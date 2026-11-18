@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],
@@ -11,7 +11,7 @@ ORDER BY
 	[t1].[LastName]
 OFFSET 3 ROWS FETCH NEXT 1 ROWS ONLY 
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

@@ -1,10 +1,10 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $DogName Text(3) -- String
-SET     $DogName = 'Rex'u
-DECLARE $Meta_Kind Text(3) -- String
-SET     $Meta_Kind = 'Dog'u
+DECLARE Id Int32
+SET     Id = 1
+DECLARE DogName Text(3) -- String
+SET     DogName = 'Rex'u
+DECLARE Meta_Kind Text(3) -- String
+SET     Meta_Kind = 'Dog'u
 
 INSERT INTO NestedDiscriminator
 (
@@ -20,12 +20,12 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 2
-DECLARE $CatName Text(3) -- String
-SET     $CatName = 'Tom'u
-DECLARE $Meta_Kind Text(3) -- String
-SET     $Meta_Kind = 'Cat'u
+DECLARE Id Int32
+SET     Id = 2
+DECLARE CatName Text(3) -- String
+SET     CatName = 'Tom'u
+DECLARE Meta_Kind Text(3) -- String
+SET     Meta_Kind = 'Cat'u
 
 INSERT INTO NestedDiscriminator
 (

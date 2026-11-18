@@ -5,9 +5,9 @@ WHERE
 	[Child].[ChildID] > 1000
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @id  -- Int32
+DECLARE @id Integer -- Int32
 SET     @id = 1001
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1
 
 INSERT INTO [Child]
@@ -22,7 +22,7 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @id  -- Int32
+DECLARE @id Integer -- Int32
 SET     @id = 1001
 
 SELECT

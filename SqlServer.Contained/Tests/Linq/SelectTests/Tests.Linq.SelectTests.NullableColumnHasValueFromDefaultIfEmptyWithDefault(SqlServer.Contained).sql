@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	[p].[ParentID],
 	IIF([p2].[ParentID] IS NOT NULL, [p2].[Value1], 5),
@@ -7,7 +7,7 @@ FROM
 	[Parent] [p]
 		LEFT JOIN [Parent] [p2] ON [p2].[ParentID] = [p].[ParentID] + 100
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	COUNT(*)
 FROM

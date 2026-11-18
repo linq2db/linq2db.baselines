@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $s Text(7) -- String
-SET     $s = '123n456'u
-DECLARE $toTest Text(3) -- String
-SET     $toTest = '%n%'u
+DECLARE s Text(7) -- String
+SET     s = '123n456'u
+DECLARE toTest Text(3) -- String
+SET     toTest = '%n%'u
 
 SELECT
 	COUNT(*) as Count_1

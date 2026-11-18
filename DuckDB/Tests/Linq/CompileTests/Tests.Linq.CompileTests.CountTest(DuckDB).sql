@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $p  -- Int32
+DECLARE $p INTEGER -- Int32
 SET     $p = 1
 
 SELECT
@@ -10,7 +10,7 @@ WHERE
 	c_1.ParentID = $p
 
 -- DuckDB
-DECLARE $p  -- Int32
+DECLARE $p INTEGER -- Int32
 SET     $p = -1
 
 SELECT

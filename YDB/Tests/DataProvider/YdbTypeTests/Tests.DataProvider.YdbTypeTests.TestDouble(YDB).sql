@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
+DECLARE value Double
+SET     value = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -26,12 +26,12 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Double
-SET     $Column = Double('0')
-DECLARE $ColumnNullable Double
-SET     $ColumnNullable = NULL
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Double
+SET     Column = Double('0')
+DECLARE ColumnNullable Double
+SET     ColumnNullable = NULL
 
 INSERT INTO `TypeTable\`2`
 (
@@ -47,8 +47,8 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
+DECLARE value Double
+SET     value = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -81,8 +81,8 @@ VALUES
 ($p1,$p2,$p3)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
+DECLARE value Double
+SET     value = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -100,8 +100,8 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
+DECLARE value Double
+SET     value = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -119,8 +119,8 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
+DECLARE value Double
+SET     value = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -132,10 +132,10 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('-1.7976931348623157E+308')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('1.7976931348623157E+308')
+DECLARE value Double
+SET     value = Double('-1.7976931348623157E+308')
+DECLARE nullableValue Double
+SET     nullableValue = Double('1.7976931348623157E+308')
 
 SELECT
 	r.Id as Id,
@@ -162,12 +162,12 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Double
-SET     $Column = Double('-1.7976931348623157E+308')
-DECLARE $ColumnNullable Double
-SET     $ColumnNullable = Double('1.7976931348623157E+308')
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Double
+SET     Column = Double('-1.7976931348623157E+308')
+DECLARE ColumnNullable Double
+SET     ColumnNullable = Double('1.7976931348623157E+308')
 
 INSERT INTO `TypeTable\`2`
 (
@@ -183,10 +183,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('-1.7976931348623157E+308')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('1.7976931348623157E+308')
+DECLARE value Double
+SET     value = Double('-1.7976931348623157E+308')
+DECLARE nullableValue Double
+SET     nullableValue = Double('1.7976931348623157E+308')
 
 SELECT
 	r.Id as Id,
@@ -219,10 +219,10 @@ VALUES
 ($p1,$p2,$p3)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('-1.7976931348623157E+308')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('1.7976931348623157E+308')
+DECLARE value Double
+SET     value = Double('-1.7976931348623157E+308')
+DECLARE nullableValue Double
+SET     nullableValue = Double('1.7976931348623157E+308')
 
 SELECT
 	r.Id as Id,
@@ -240,10 +240,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('-1.7976931348623157E+308')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('1.7976931348623157E+308')
+DECLARE value Double
+SET     value = Double('-1.7976931348623157E+308')
+DECLARE nullableValue Double
+SET     nullableValue = Double('1.7976931348623157E+308')
 
 SELECT
 	r.Id as Id,
@@ -261,10 +261,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('-1.7976931348623157E+308')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('1.7976931348623157E+308')
+DECLARE value Double
+SET     value = Double('-1.7976931348623157E+308')
+DECLARE nullableValue Double
+SET     nullableValue = Double('1.7976931348623157E+308')
 
 SELECT
 	r.Id as Id,
@@ -276,10 +276,10 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('1.7976931348623157E+308')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('-1.7976931348623157E+308')
+DECLARE value Double
+SET     value = Double('1.7976931348623157E+308')
+DECLARE nullableValue Double
+SET     nullableValue = Double('-1.7976931348623157E+308')
 
 SELECT
 	r.Id as Id,
@@ -306,12 +306,12 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Double
-SET     $Column = Double('1.7976931348623157E+308')
-DECLARE $ColumnNullable Double
-SET     $ColumnNullable = Double('-1.7976931348623157E+308')
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Double
+SET     Column = Double('1.7976931348623157E+308')
+DECLARE ColumnNullable Double
+SET     ColumnNullable = Double('-1.7976931348623157E+308')
 
 INSERT INTO `TypeTable\`2`
 (
@@ -327,10 +327,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('1.7976931348623157E+308')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('-1.7976931348623157E+308')
+DECLARE value Double
+SET     value = Double('1.7976931348623157E+308')
+DECLARE nullableValue Double
+SET     nullableValue = Double('-1.7976931348623157E+308')
 
 SELECT
 	r.Id as Id,
@@ -363,10 +363,10 @@ VALUES
 ($p1,$p2,$p3)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('1.7976931348623157E+308')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('-1.7976931348623157E+308')
+DECLARE value Double
+SET     value = Double('1.7976931348623157E+308')
+DECLARE nullableValue Double
+SET     nullableValue = Double('-1.7976931348623157E+308')
 
 SELECT
 	r.Id as Id,
@@ -384,10 +384,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('1.7976931348623157E+308')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('-1.7976931348623157E+308')
+DECLARE value Double
+SET     value = Double('1.7976931348623157E+308')
+DECLARE nullableValue Double
+SET     nullableValue = Double('-1.7976931348623157E+308')
 
 SELECT
 	r.Id as Id,
@@ -405,10 +405,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('1.7976931348623157E+308')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('-1.7976931348623157E+308')
+DECLARE value Double
+SET     value = Double('1.7976931348623157E+308')
+DECLARE nullableValue Double
+SET     nullableValue = Double('-1.7976931348623157E+308')
 
 SELECT
 	r.Id as Id,
@@ -420,8 +420,8 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('4.9406564584124654E-324')
+DECLARE value Double
+SET     value = Double('4.9406564584124654E-324')
 
 SELECT
 	r.Id as Id,
@@ -447,12 +447,12 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Double
-SET     $Column = Double('4.9406564584124654E-324')
-DECLARE $ColumnNullable Double
-SET     $ColumnNullable = Double('NaN')
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Double
+SET     Column = Double('4.9406564584124654E-324')
+DECLARE ColumnNullable Double
+SET     ColumnNullable = Double('NaN')
 
 INSERT INTO `TypeTable\`2`
 (
@@ -468,8 +468,8 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('4.9406564584124654E-324')
+DECLARE value Double
+SET     value = Double('4.9406564584124654E-324')
 
 SELECT
 	r.Id as Id,
@@ -502,8 +502,8 @@ VALUES
 ($p1,$p2,$p3)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('4.9406564584124654E-324')
+DECLARE value Double
+SET     value = Double('4.9406564584124654E-324')
 
 SELECT
 	r.Id as Id,
@@ -521,8 +521,8 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('4.9406564584124654E-324')
+DECLARE value Double
+SET     value = Double('4.9406564584124654E-324')
 
 SELECT
 	r.Id as Id,
@@ -540,8 +540,8 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('4.9406564584124654E-324')
+DECLARE value Double
+SET     value = Double('4.9406564584124654E-324')
 
 SELECT
 	r.Id as Id,
@@ -553,8 +553,8 @@ WHERE
 	r.`Column` = $value
 
 -- YDB Ydb
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('4.9406564584124654E-324')
+DECLARE nullableValue Double
+SET     nullableValue = Double('4.9406564584124654E-324')
 
 SELECT
 	r.Id as Id,
@@ -580,12 +580,12 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Double
-SET     $Column = Double('NaN')
-DECLARE $ColumnNullable Double
-SET     $ColumnNullable = Double('4.9406564584124654E-324')
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Double
+SET     Column = Double('NaN')
+DECLARE ColumnNullable Double
+SET     ColumnNullable = Double('4.9406564584124654E-324')
 
 INSERT INTO `TypeTable\`2`
 (
@@ -601,8 +601,8 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('4.9406564584124654E-324')
+DECLARE nullableValue Double
+SET     nullableValue = Double('4.9406564584124654E-324')
 
 SELECT
 	r.Id as Id,
@@ -635,8 +635,8 @@ VALUES
 ($p1,$p2,$p3)
 
 -- YDB Ydb
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('4.9406564584124654E-324')
+DECLARE nullableValue Double
+SET     nullableValue = Double('4.9406564584124654E-324')
 
 SELECT
 	r.Id as Id,
@@ -654,8 +654,8 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('4.9406564584124654E-324')
+DECLARE nullableValue Double
+SET     nullableValue = Double('4.9406564584124654E-324')
 
 SELECT
 	r.Id as Id,
@@ -673,8 +673,8 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('4.9406564584124654E-324')
+DECLARE nullableValue Double
+SET     nullableValue = Double('4.9406564584124654E-324')
 
 SELECT
 	r.Id as Id,
@@ -686,10 +686,10 @@ WHERE
 	r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('inf')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('-inf')
+DECLARE value Double
+SET     value = Double('inf')
+DECLARE nullableValue Double
+SET     nullableValue = Double('-inf')
 
 SELECT
 	r.Id as Id,
@@ -715,12 +715,12 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Double
-SET     $Column = Double('inf')
-DECLARE $ColumnNullable Double
-SET     $ColumnNullable = Double('-inf')
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Double
+SET     Column = Double('inf')
+DECLARE ColumnNullable Double
+SET     ColumnNullable = Double('-inf')
 
 INSERT INTO `TypeTable\`2`
 (
@@ -736,10 +736,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('inf')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('-inf')
+DECLARE value Double
+SET     value = Double('inf')
+DECLARE nullableValue Double
+SET     nullableValue = Double('-inf')
 
 SELECT
 	r.Id as Id,
@@ -772,10 +772,10 @@ VALUES
 ($p1,$p2,$p3)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('inf')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('-inf')
+DECLARE value Double
+SET     value = Double('inf')
+DECLARE nullableValue Double
+SET     nullableValue = Double('-inf')
 
 SELECT
 	r.Id as Id,
@@ -793,10 +793,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('inf')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('-inf')
+DECLARE value Double
+SET     value = Double('inf')
+DECLARE nullableValue Double
+SET     nullableValue = Double('-inf')
 
 SELECT
 	r.Id as Id,
@@ -814,10 +814,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('inf')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('-inf')
+DECLARE value Double
+SET     value = Double('inf')
+DECLARE nullableValue Double
+SET     nullableValue = Double('-inf')
 
 SELECT
 	r.Id as Id,
@@ -829,10 +829,10 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('-inf')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('inf')
+DECLARE value Double
+SET     value = Double('-inf')
+DECLARE nullableValue Double
+SET     nullableValue = Double('inf')
 
 SELECT
 	r.Id as Id,
@@ -858,12 +858,12 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Double
-SET     $Column = Double('-inf')
-DECLARE $ColumnNullable Double
-SET     $ColumnNullable = Double('inf')
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Double
+SET     Column = Double('-inf')
+DECLARE ColumnNullable Double
+SET     ColumnNullable = Double('inf')
 
 INSERT INTO `TypeTable\`2`
 (
@@ -879,10 +879,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('-inf')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('inf')
+DECLARE value Double
+SET     value = Double('-inf')
+DECLARE nullableValue Double
+SET     nullableValue = Double('inf')
 
 SELECT
 	r.Id as Id,
@@ -915,10 +915,10 @@ VALUES
 ($p1,$p2,$p3)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('-inf')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('inf')
+DECLARE value Double
+SET     value = Double('-inf')
+DECLARE nullableValue Double
+SET     nullableValue = Double('inf')
 
 SELECT
 	r.Id as Id,
@@ -936,10 +936,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('-inf')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('inf')
+DECLARE value Double
+SET     value = Double('-inf')
+DECLARE nullableValue Double
+SET     nullableValue = Double('inf')
 
 SELECT
 	r.Id as Id,
@@ -957,10 +957,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('-inf')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('inf')
+DECLARE value Double
+SET     value = Double('-inf')
+DECLARE nullableValue Double
+SET     nullableValue = Double('inf')
 
 SELECT
 	r.Id as Id,
@@ -972,8 +972,8 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
+DECLARE value Double
+SET     value = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -999,12 +999,12 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Double
-SET     $Column = Double('0')
-DECLARE $ColumnNullable Double
-SET     $ColumnNullable = NULL
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Double
+SET     Column = Double('0')
+DECLARE ColumnNullable Double
+SET     ColumnNullable = NULL
 
 INSERT INTO `TypeTable\`2`
 (
@@ -1020,8 +1020,8 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
+DECLARE value Double
+SET     value = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -1054,8 +1054,8 @@ VALUES
 ($p1,$p2,$p3)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
+DECLARE value Double
+SET     value = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -1073,8 +1073,8 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
+DECLARE value Double
+SET     value = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -1092,8 +1092,8 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
+DECLARE value Double
+SET     value = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -1105,10 +1105,10 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('255')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('0')
+DECLARE value Double
+SET     value = Double('255')
+DECLARE nullableValue Double
+SET     nullableValue = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -1134,12 +1134,12 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Double
-SET     $Column = Double('255')
-DECLARE $ColumnNullable Double
-SET     $ColumnNullable = Double('0')
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Double
+SET     Column = Double('255')
+DECLARE ColumnNullable Double
+SET     ColumnNullable = Double('0')
 
 INSERT INTO `TypeTable\`2`
 (
@@ -1155,10 +1155,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('255')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('0')
+DECLARE value Double
+SET     value = Double('255')
+DECLARE nullableValue Double
+SET     nullableValue = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -1191,10 +1191,10 @@ VALUES
 ($p1,$p2,$p3)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('255')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('0')
+DECLARE value Double
+SET     value = Double('255')
+DECLARE nullableValue Double
+SET     nullableValue = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -1212,10 +1212,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('255')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('0')
+DECLARE value Double
+SET     value = Double('255')
+DECLARE nullableValue Double
+SET     nullableValue = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -1233,10 +1233,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('255')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('0')
+DECLARE value Double
+SET     value = Double('255')
+DECLARE nullableValue Double
+SET     nullableValue = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -1248,10 +1248,10 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('255')
+DECLARE value Double
+SET     value = Double('0')
+DECLARE nullableValue Double
+SET     nullableValue = Double('255')
 
 SELECT
 	r.Id as Id,
@@ -1277,12 +1277,12 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Double
-SET     $Column = Double('0')
-DECLARE $ColumnNullable Double
-SET     $ColumnNullable = Double('255')
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Double
+SET     Column = Double('0')
+DECLARE ColumnNullable Double
+SET     ColumnNullable = Double('255')
 
 INSERT INTO `TypeTable\`2`
 (
@@ -1298,10 +1298,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('255')
+DECLARE value Double
+SET     value = Double('0')
+DECLARE nullableValue Double
+SET     nullableValue = Double('255')
 
 SELECT
 	r.Id as Id,
@@ -1334,10 +1334,10 @@ VALUES
 ($p1,$p2,$p3)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('255')
+DECLARE value Double
+SET     value = Double('0')
+DECLARE nullableValue Double
+SET     nullableValue = Double('255')
 
 SELECT
 	r.Id as Id,
@@ -1355,10 +1355,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('255')
+DECLARE value Double
+SET     value = Double('0')
+DECLARE nullableValue Double
+SET     nullableValue = Double('255')
 
 SELECT
 	r.Id as Id,
@@ -1376,10 +1376,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('255')
+DECLARE value Double
+SET     value = Double('0')
+DECLARE nullableValue Double
+SET     nullableValue = Double('255')
 
 SELECT
 	r.Id as Id,
@@ -1391,8 +1391,8 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
+DECLARE value Double
+SET     value = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -1418,12 +1418,12 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Double
-SET     $Column = Double('0')
-DECLARE $ColumnNullable Double
-SET     $ColumnNullable = NULL
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Double
+SET     Column = Double('0')
+DECLARE ColumnNullable Double
+SET     ColumnNullable = NULL
 
 INSERT INTO `TypeTable\`2`
 (
@@ -1439,8 +1439,8 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
+DECLARE value Double
+SET     value = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -1473,8 +1473,8 @@ VALUES
 ($p1,$p2,$p3)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
+DECLARE value Double
+SET     value = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -1492,8 +1492,8 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
+DECLARE value Double
+SET     value = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -1511,8 +1511,8 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
+DECLARE value Double
+SET     value = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -1524,10 +1524,10 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('65535')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('0')
+DECLARE value Double
+SET     value = Double('65535')
+DECLARE nullableValue Double
+SET     nullableValue = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -1553,12 +1553,12 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Double
-SET     $Column = Double('65535')
-DECLARE $ColumnNullable Double
-SET     $ColumnNullable = Double('0')
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Double
+SET     Column = Double('65535')
+DECLARE ColumnNullable Double
+SET     ColumnNullable = Double('0')
 
 INSERT INTO `TypeTable\`2`
 (
@@ -1574,10 +1574,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('65535')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('0')
+DECLARE value Double
+SET     value = Double('65535')
+DECLARE nullableValue Double
+SET     nullableValue = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -1610,10 +1610,10 @@ VALUES
 ($p1,$p2,$p3)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('65535')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('0')
+DECLARE value Double
+SET     value = Double('65535')
+DECLARE nullableValue Double
+SET     nullableValue = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -1631,10 +1631,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('65535')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('0')
+DECLARE value Double
+SET     value = Double('65535')
+DECLARE nullableValue Double
+SET     nullableValue = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -1652,10 +1652,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('65535')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('0')
+DECLARE value Double
+SET     value = Double('65535')
+DECLARE nullableValue Double
+SET     nullableValue = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -1667,10 +1667,10 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('65535')
+DECLARE value Double
+SET     value = Double('0')
+DECLARE nullableValue Double
+SET     nullableValue = Double('65535')
 
 SELECT
 	r.Id as Id,
@@ -1696,12 +1696,12 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Double
-SET     $Column = Double('0')
-DECLARE $ColumnNullable Double
-SET     $ColumnNullable = Double('65535')
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Double
+SET     Column = Double('0')
+DECLARE ColumnNullable Double
+SET     ColumnNullable = Double('65535')
 
 INSERT INTO `TypeTable\`2`
 (
@@ -1717,10 +1717,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('65535')
+DECLARE value Double
+SET     value = Double('0')
+DECLARE nullableValue Double
+SET     nullableValue = Double('65535')
 
 SELECT
 	r.Id as Id,
@@ -1753,10 +1753,10 @@ VALUES
 ($p1,$p2,$p3)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('65535')
+DECLARE value Double
+SET     value = Double('0')
+DECLARE nullableValue Double
+SET     nullableValue = Double('65535')
 
 SELECT
 	r.Id as Id,
@@ -1774,10 +1774,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('65535')
+DECLARE value Double
+SET     value = Double('0')
+DECLARE nullableValue Double
+SET     nullableValue = Double('65535')
 
 SELECT
 	r.Id as Id,
@@ -1795,10 +1795,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('65535')
+DECLARE value Double
+SET     value = Double('0')
+DECLARE nullableValue Double
+SET     nullableValue = Double('65535')
 
 SELECT
 	r.Id as Id,
@@ -1810,8 +1810,8 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
+DECLARE value Double
+SET     value = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -1837,12 +1837,12 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Double
-SET     $Column = Double('0')
-DECLARE $ColumnNullable Double
-SET     $ColumnNullable = NULL
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Double
+SET     Column = Double('0')
+DECLARE ColumnNullable Double
+SET     ColumnNullable = NULL
 
 INSERT INTO `TypeTable\`2`
 (
@@ -1858,8 +1858,8 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
+DECLARE value Double
+SET     value = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -1892,8 +1892,8 @@ VALUES
 ($p1,$p2,$p3)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
+DECLARE value Double
+SET     value = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -1911,8 +1911,8 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
+DECLARE value Double
+SET     value = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -1930,8 +1930,8 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
+DECLARE value Double
+SET     value = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -1943,10 +1943,10 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('4294967295')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('0')
+DECLARE value Double
+SET     value = Double('4294967295')
+DECLARE nullableValue Double
+SET     nullableValue = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -1972,12 +1972,12 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Double
-SET     $Column = Double('4294967295')
-DECLARE $ColumnNullable Double
-SET     $ColumnNullable = Double('0')
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Double
+SET     Column = Double('4294967295')
+DECLARE ColumnNullable Double
+SET     ColumnNullable = Double('0')
 
 INSERT INTO `TypeTable\`2`
 (
@@ -1993,10 +1993,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('4294967295')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('0')
+DECLARE value Double
+SET     value = Double('4294967295')
+DECLARE nullableValue Double
+SET     nullableValue = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -2029,10 +2029,10 @@ VALUES
 ($p1,$p2,$p3)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('4294967295')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('0')
+DECLARE value Double
+SET     value = Double('4294967295')
+DECLARE nullableValue Double
+SET     nullableValue = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -2050,10 +2050,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('4294967295')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('0')
+DECLARE value Double
+SET     value = Double('4294967295')
+DECLARE nullableValue Double
+SET     nullableValue = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -2071,10 +2071,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('4294967295')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('0')
+DECLARE value Double
+SET     value = Double('4294967295')
+DECLARE nullableValue Double
+SET     nullableValue = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -2086,10 +2086,10 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('4294967295')
+DECLARE value Double
+SET     value = Double('0')
+DECLARE nullableValue Double
+SET     nullableValue = Double('4294967295')
 
 SELECT
 	r.Id as Id,
@@ -2115,12 +2115,12 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Double
-SET     $Column = Double('0')
-DECLARE $ColumnNullable Double
-SET     $ColumnNullable = Double('4294967295')
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Double
+SET     Column = Double('0')
+DECLARE ColumnNullable Double
+SET     ColumnNullable = Double('4294967295')
 
 INSERT INTO `TypeTable\`2`
 (
@@ -2136,10 +2136,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('4294967295')
+DECLARE value Double
+SET     value = Double('0')
+DECLARE nullableValue Double
+SET     nullableValue = Double('4294967295')
 
 SELECT
 	r.Id as Id,
@@ -2172,10 +2172,10 @@ VALUES
 ($p1,$p2,$p3)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('4294967295')
+DECLARE value Double
+SET     value = Double('0')
+DECLARE nullableValue Double
+SET     nullableValue = Double('4294967295')
 
 SELECT
 	r.Id as Id,
@@ -2193,10 +2193,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('4294967295')
+DECLARE value Double
+SET     value = Double('0')
+DECLARE nullableValue Double
+SET     nullableValue = Double('4294967295')
 
 SELECT
 	r.Id as Id,
@@ -2214,10 +2214,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('4294967295')
+DECLARE value Double
+SET     value = Double('0')
+DECLARE nullableValue Double
+SET     nullableValue = Double('4294967295')
 
 SELECT
 	r.Id as Id,
@@ -2229,8 +2229,8 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
+DECLARE value Double
+SET     value = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -2256,12 +2256,12 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Double
-SET     $Column = Double('0')
-DECLARE $ColumnNullable Double
-SET     $ColumnNullable = NULL
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Double
+SET     Column = Double('0')
+DECLARE ColumnNullable Double
+SET     ColumnNullable = NULL
 
 INSERT INTO `TypeTable\`2`
 (
@@ -2277,8 +2277,8 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
+DECLARE value Double
+SET     value = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -2311,8 +2311,8 @@ VALUES
 ($p1,$p2,$p3)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
+DECLARE value Double
+SET     value = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -2330,8 +2330,8 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
+DECLARE value Double
+SET     value = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -2349,8 +2349,8 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
+DECLARE value Double
+SET     value = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -2362,10 +2362,10 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('9007199254740991')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('0')
+DECLARE value Double
+SET     value = Double('9007199254740991')
+DECLARE nullableValue Double
+SET     nullableValue = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -2391,12 +2391,12 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Double
-SET     $Column = Double('9007199254740991')
-DECLARE $ColumnNullable Double
-SET     $ColumnNullable = Double('0')
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Double
+SET     Column = Double('9007199254740991')
+DECLARE ColumnNullable Double
+SET     ColumnNullable = Double('0')
 
 INSERT INTO `TypeTable\`2`
 (
@@ -2412,10 +2412,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('9007199254740991')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('0')
+DECLARE value Double
+SET     value = Double('9007199254740991')
+DECLARE nullableValue Double
+SET     nullableValue = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -2448,10 +2448,10 @@ VALUES
 ($p1,$p2,$p3)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('9007199254740991')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('0')
+DECLARE value Double
+SET     value = Double('9007199254740991')
+DECLARE nullableValue Double
+SET     nullableValue = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -2469,10 +2469,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('9007199254740991')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('0')
+DECLARE value Double
+SET     value = Double('9007199254740991')
+DECLARE nullableValue Double
+SET     nullableValue = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -2490,10 +2490,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('9007199254740991')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('0')
+DECLARE value Double
+SET     value = Double('9007199254740991')
+DECLARE nullableValue Double
+SET     nullableValue = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -2505,10 +2505,10 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('9007199254740991')
+DECLARE value Double
+SET     value = Double('0')
+DECLARE nullableValue Double
+SET     nullableValue = Double('9007199254740991')
 
 SELECT
 	r.Id as Id,
@@ -2534,12 +2534,12 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Double
-SET     $Column = Double('0')
-DECLARE $ColumnNullable Double
-SET     $ColumnNullable = Double('9007199254740991')
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Double
+SET     Column = Double('0')
+DECLARE ColumnNullable Double
+SET     ColumnNullable = Double('9007199254740991')
 
 INSERT INTO `TypeTable\`2`
 (
@@ -2555,10 +2555,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('9007199254740991')
+DECLARE value Double
+SET     value = Double('0')
+DECLARE nullableValue Double
+SET     nullableValue = Double('9007199254740991')
 
 SELECT
 	r.Id as Id,
@@ -2591,10 +2591,10 @@ VALUES
 ($p1,$p2,$p3)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('9007199254740991')
+DECLARE value Double
+SET     value = Double('0')
+DECLARE nullableValue Double
+SET     nullableValue = Double('9007199254740991')
 
 SELECT
 	r.Id as Id,
@@ -2612,10 +2612,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('9007199254740991')
+DECLARE value Double
+SET     value = Double('0')
+DECLARE nullableValue Double
+SET     nullableValue = Double('9007199254740991')
 
 SELECT
 	r.Id as Id,
@@ -2633,10 +2633,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('9007199254740991')
+DECLARE value Double
+SET     value = Double('0')
+DECLARE nullableValue Double
+SET     nullableValue = Double('9007199254740991')
 
 SELECT
 	r.Id as Id,
@@ -2648,8 +2648,8 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
+DECLARE value Double
+SET     value = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -2675,12 +2675,12 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Double
-SET     $Column = Double('0')
-DECLARE $ColumnNullable Double
-SET     $ColumnNullable = NULL
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Double
+SET     Column = Double('0')
+DECLARE ColumnNullable Double
+SET     ColumnNullable = NULL
 
 INSERT INTO `TypeTable\`2`
 (
@@ -2696,8 +2696,8 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
+DECLARE value Double
+SET     value = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -2730,8 +2730,8 @@ VALUES
 ($p1,$p2,$p3)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
+DECLARE value Double
+SET     value = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -2749,8 +2749,8 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
+DECLARE value Double
+SET     value = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -2768,8 +2768,8 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
+DECLARE value Double
+SET     value = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -2781,10 +2781,10 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('127')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('-128')
+DECLARE value Double
+SET     value = Double('127')
+DECLARE nullableValue Double
+SET     nullableValue = Double('-128')
 
 SELECT
 	r.Id as Id,
@@ -2810,12 +2810,12 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Double
-SET     $Column = Double('127')
-DECLARE $ColumnNullable Double
-SET     $ColumnNullable = Double('-128')
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Double
+SET     Column = Double('127')
+DECLARE ColumnNullable Double
+SET     ColumnNullable = Double('-128')
 
 INSERT INTO `TypeTable\`2`
 (
@@ -2831,10 +2831,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('127')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('-128')
+DECLARE value Double
+SET     value = Double('127')
+DECLARE nullableValue Double
+SET     nullableValue = Double('-128')
 
 SELECT
 	r.Id as Id,
@@ -2867,10 +2867,10 @@ VALUES
 ($p1,$p2,$p3)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('127')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('-128')
+DECLARE value Double
+SET     value = Double('127')
+DECLARE nullableValue Double
+SET     nullableValue = Double('-128')
 
 SELECT
 	r.Id as Id,
@@ -2888,10 +2888,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('127')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('-128')
+DECLARE value Double
+SET     value = Double('127')
+DECLARE nullableValue Double
+SET     nullableValue = Double('-128')
 
 SELECT
 	r.Id as Id,
@@ -2909,10 +2909,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('127')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('-128')
+DECLARE value Double
+SET     value = Double('127')
+DECLARE nullableValue Double
+SET     nullableValue = Double('-128')
 
 SELECT
 	r.Id as Id,
@@ -2924,10 +2924,10 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('-128')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('127')
+DECLARE value Double
+SET     value = Double('-128')
+DECLARE nullableValue Double
+SET     nullableValue = Double('127')
 
 SELECT
 	r.Id as Id,
@@ -2953,12 +2953,12 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Double
-SET     $Column = Double('-128')
-DECLARE $ColumnNullable Double
-SET     $ColumnNullable = Double('127')
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Double
+SET     Column = Double('-128')
+DECLARE ColumnNullable Double
+SET     ColumnNullable = Double('127')
 
 INSERT INTO `TypeTable\`2`
 (
@@ -2974,10 +2974,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('-128')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('127')
+DECLARE value Double
+SET     value = Double('-128')
+DECLARE nullableValue Double
+SET     nullableValue = Double('127')
 
 SELECT
 	r.Id as Id,
@@ -3010,10 +3010,10 @@ VALUES
 ($p1,$p2,$p3)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('-128')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('127')
+DECLARE value Double
+SET     value = Double('-128')
+DECLARE nullableValue Double
+SET     nullableValue = Double('127')
 
 SELECT
 	r.Id as Id,
@@ -3031,10 +3031,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('-128')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('127')
+DECLARE value Double
+SET     value = Double('-128')
+DECLARE nullableValue Double
+SET     nullableValue = Double('127')
 
 SELECT
 	r.Id as Id,
@@ -3052,10 +3052,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('-128')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('127')
+DECLARE value Double
+SET     value = Double('-128')
+DECLARE nullableValue Double
+SET     nullableValue = Double('127')
 
 SELECT
 	r.Id as Id,
@@ -3067,8 +3067,8 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
+DECLARE value Double
+SET     value = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -3094,12 +3094,12 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Double
-SET     $Column = Double('0')
-DECLARE $ColumnNullable Double
-SET     $ColumnNullable = NULL
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Double
+SET     Column = Double('0')
+DECLARE ColumnNullable Double
+SET     ColumnNullable = NULL
 
 INSERT INTO `TypeTable\`2`
 (
@@ -3115,8 +3115,8 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
+DECLARE value Double
+SET     value = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -3149,8 +3149,8 @@ VALUES
 ($p1,$p2,$p3)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
+DECLARE value Double
+SET     value = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -3168,8 +3168,8 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
+DECLARE value Double
+SET     value = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -3187,8 +3187,8 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
+DECLARE value Double
+SET     value = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -3200,10 +3200,10 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('32767')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('-32768')
+DECLARE value Double
+SET     value = Double('32767')
+DECLARE nullableValue Double
+SET     nullableValue = Double('-32768')
 
 SELECT
 	r.Id as Id,
@@ -3229,12 +3229,12 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Double
-SET     $Column = Double('32767')
-DECLARE $ColumnNullable Double
-SET     $ColumnNullable = Double('-32768')
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Double
+SET     Column = Double('32767')
+DECLARE ColumnNullable Double
+SET     ColumnNullable = Double('-32768')
 
 INSERT INTO `TypeTable\`2`
 (
@@ -3250,10 +3250,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('32767')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('-32768')
+DECLARE value Double
+SET     value = Double('32767')
+DECLARE nullableValue Double
+SET     nullableValue = Double('-32768')
 
 SELECT
 	r.Id as Id,
@@ -3286,10 +3286,10 @@ VALUES
 ($p1,$p2,$p3)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('32767')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('-32768')
+DECLARE value Double
+SET     value = Double('32767')
+DECLARE nullableValue Double
+SET     nullableValue = Double('-32768')
 
 SELECT
 	r.Id as Id,
@@ -3307,10 +3307,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('32767')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('-32768')
+DECLARE value Double
+SET     value = Double('32767')
+DECLARE nullableValue Double
+SET     nullableValue = Double('-32768')
 
 SELECT
 	r.Id as Id,
@@ -3328,10 +3328,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('32767')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('-32768')
+DECLARE value Double
+SET     value = Double('32767')
+DECLARE nullableValue Double
+SET     nullableValue = Double('-32768')
 
 SELECT
 	r.Id as Id,
@@ -3343,10 +3343,10 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('-32768')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('32767')
+DECLARE value Double
+SET     value = Double('-32768')
+DECLARE nullableValue Double
+SET     nullableValue = Double('32767')
 
 SELECT
 	r.Id as Id,
@@ -3372,12 +3372,12 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Double
-SET     $Column = Double('-32768')
-DECLARE $ColumnNullable Double
-SET     $ColumnNullable = Double('32767')
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Double
+SET     Column = Double('-32768')
+DECLARE ColumnNullable Double
+SET     ColumnNullable = Double('32767')
 
 INSERT INTO `TypeTable\`2`
 (
@@ -3393,10 +3393,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('-32768')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('32767')
+DECLARE value Double
+SET     value = Double('-32768')
+DECLARE nullableValue Double
+SET     nullableValue = Double('32767')
 
 SELECT
 	r.Id as Id,
@@ -3429,10 +3429,10 @@ VALUES
 ($p1,$p2,$p3)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('-32768')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('32767')
+DECLARE value Double
+SET     value = Double('-32768')
+DECLARE nullableValue Double
+SET     nullableValue = Double('32767')
 
 SELECT
 	r.Id as Id,
@@ -3450,10 +3450,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('-32768')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('32767')
+DECLARE value Double
+SET     value = Double('-32768')
+DECLARE nullableValue Double
+SET     nullableValue = Double('32767')
 
 SELECT
 	r.Id as Id,
@@ -3471,10 +3471,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('-32768')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('32767')
+DECLARE value Double
+SET     value = Double('-32768')
+DECLARE nullableValue Double
+SET     nullableValue = Double('32767')
 
 SELECT
 	r.Id as Id,
@@ -3486,8 +3486,8 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
+DECLARE value Double
+SET     value = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -3513,12 +3513,12 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Double
-SET     $Column = Double('0')
-DECLARE $ColumnNullable Double
-SET     $ColumnNullable = NULL
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Double
+SET     Column = Double('0')
+DECLARE ColumnNullable Double
+SET     ColumnNullable = NULL
 
 INSERT INTO `TypeTable\`2`
 (
@@ -3534,8 +3534,8 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
+DECLARE value Double
+SET     value = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -3568,8 +3568,8 @@ VALUES
 ($p1,$p2,$p3)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
+DECLARE value Double
+SET     value = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -3587,8 +3587,8 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
+DECLARE value Double
+SET     value = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -3606,8 +3606,8 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
+DECLARE value Double
+SET     value = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -3619,10 +3619,10 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('2147483647')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('-2147483648')
+DECLARE value Double
+SET     value = Double('2147483647')
+DECLARE nullableValue Double
+SET     nullableValue = Double('-2147483648')
 
 SELECT
 	r.Id as Id,
@@ -3648,12 +3648,12 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Double
-SET     $Column = Double('2147483647')
-DECLARE $ColumnNullable Double
-SET     $ColumnNullable = Double('-2147483648')
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Double
+SET     Column = Double('2147483647')
+DECLARE ColumnNullable Double
+SET     ColumnNullable = Double('-2147483648')
 
 INSERT INTO `TypeTable\`2`
 (
@@ -3669,10 +3669,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('2147483647')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('-2147483648')
+DECLARE value Double
+SET     value = Double('2147483647')
+DECLARE nullableValue Double
+SET     nullableValue = Double('-2147483648')
 
 SELECT
 	r.Id as Id,
@@ -3705,10 +3705,10 @@ VALUES
 ($p1,$p2,$p3)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('2147483647')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('-2147483648')
+DECLARE value Double
+SET     value = Double('2147483647')
+DECLARE nullableValue Double
+SET     nullableValue = Double('-2147483648')
 
 SELECT
 	r.Id as Id,
@@ -3726,10 +3726,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('2147483647')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('-2147483648')
+DECLARE value Double
+SET     value = Double('2147483647')
+DECLARE nullableValue Double
+SET     nullableValue = Double('-2147483648')
 
 SELECT
 	r.Id as Id,
@@ -3747,10 +3747,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('2147483647')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('-2147483648')
+DECLARE value Double
+SET     value = Double('2147483647')
+DECLARE nullableValue Double
+SET     nullableValue = Double('-2147483648')
 
 SELECT
 	r.Id as Id,
@@ -3762,10 +3762,10 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('-2147483648')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('2147483647')
+DECLARE value Double
+SET     value = Double('-2147483648')
+DECLARE nullableValue Double
+SET     nullableValue = Double('2147483647')
 
 SELECT
 	r.Id as Id,
@@ -3791,12 +3791,12 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Double
-SET     $Column = Double('-2147483648')
-DECLARE $ColumnNullable Double
-SET     $ColumnNullable = Double('2147483647')
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Double
+SET     Column = Double('-2147483648')
+DECLARE ColumnNullable Double
+SET     ColumnNullable = Double('2147483647')
 
 INSERT INTO `TypeTable\`2`
 (
@@ -3812,10 +3812,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('-2147483648')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('2147483647')
+DECLARE value Double
+SET     value = Double('-2147483648')
+DECLARE nullableValue Double
+SET     nullableValue = Double('2147483647')
 
 SELECT
 	r.Id as Id,
@@ -3848,10 +3848,10 @@ VALUES
 ($p1,$p2,$p3)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('-2147483648')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('2147483647')
+DECLARE value Double
+SET     value = Double('-2147483648')
+DECLARE nullableValue Double
+SET     nullableValue = Double('2147483647')
 
 SELECT
 	r.Id as Id,
@@ -3869,10 +3869,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('-2147483648')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('2147483647')
+DECLARE value Double
+SET     value = Double('-2147483648')
+DECLARE nullableValue Double
+SET     nullableValue = Double('2147483647')
 
 SELECT
 	r.Id as Id,
@@ -3890,10 +3890,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('-2147483648')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('2147483647')
+DECLARE value Double
+SET     value = Double('-2147483648')
+DECLARE nullableValue Double
+SET     nullableValue = Double('2147483647')
 
 SELECT
 	r.Id as Id,
@@ -3905,8 +3905,8 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
+DECLARE value Double
+SET     value = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -3932,12 +3932,12 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Double
-SET     $Column = Double('0')
-DECLARE $ColumnNullable Double
-SET     $ColumnNullable = NULL
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Double
+SET     Column = Double('0')
+DECLARE ColumnNullable Double
+SET     ColumnNullable = NULL
 
 INSERT INTO `TypeTable\`2`
 (
@@ -3953,8 +3953,8 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
+DECLARE value Double
+SET     value = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -3987,8 +3987,8 @@ VALUES
 ($p1,$p2,$p3)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
+DECLARE value Double
+SET     value = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -4006,8 +4006,8 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
+DECLARE value Double
+SET     value = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -4025,8 +4025,8 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
+DECLARE value Double
+SET     value = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -4038,10 +4038,10 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('9007199254740991')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('-9007199254740991')
+DECLARE value Double
+SET     value = Double('9007199254740991')
+DECLARE nullableValue Double
+SET     nullableValue = Double('-9007199254740991')
 
 SELECT
 	r.Id as Id,
@@ -4067,12 +4067,12 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Double
-SET     $Column = Double('9007199254740991')
-DECLARE $ColumnNullable Double
-SET     $ColumnNullable = Double('-9007199254740991')
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Double
+SET     Column = Double('9007199254740991')
+DECLARE ColumnNullable Double
+SET     ColumnNullable = Double('-9007199254740991')
 
 INSERT INTO `TypeTable\`2`
 (
@@ -4088,10 +4088,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('9007199254740991')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('-9007199254740991')
+DECLARE value Double
+SET     value = Double('9007199254740991')
+DECLARE nullableValue Double
+SET     nullableValue = Double('-9007199254740991')
 
 SELECT
 	r.Id as Id,
@@ -4124,10 +4124,10 @@ VALUES
 ($p1,$p2,$p3)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('9007199254740991')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('-9007199254740991')
+DECLARE value Double
+SET     value = Double('9007199254740991')
+DECLARE nullableValue Double
+SET     nullableValue = Double('-9007199254740991')
 
 SELECT
 	r.Id as Id,
@@ -4145,10 +4145,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('9007199254740991')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('-9007199254740991')
+DECLARE value Double
+SET     value = Double('9007199254740991')
+DECLARE nullableValue Double
+SET     nullableValue = Double('-9007199254740991')
 
 SELECT
 	r.Id as Id,
@@ -4166,10 +4166,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('9007199254740991')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('-9007199254740991')
+DECLARE value Double
+SET     value = Double('9007199254740991')
+DECLARE nullableValue Double
+SET     nullableValue = Double('-9007199254740991')
 
 SELECT
 	r.Id as Id,
@@ -4181,10 +4181,10 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('-9007199254740991')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('9007199254740991')
+DECLARE value Double
+SET     value = Double('-9007199254740991')
+DECLARE nullableValue Double
+SET     nullableValue = Double('9007199254740991')
 
 SELECT
 	r.Id as Id,
@@ -4210,12 +4210,12 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Double
-SET     $Column = Double('-9007199254740991')
-DECLARE $ColumnNullable Double
-SET     $ColumnNullable = Double('9007199254740991')
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Double
+SET     Column = Double('-9007199254740991')
+DECLARE ColumnNullable Double
+SET     ColumnNullable = Double('9007199254740991')
 
 INSERT INTO `TypeTable\`2`
 (
@@ -4231,10 +4231,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('-9007199254740991')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('9007199254740991')
+DECLARE value Double
+SET     value = Double('-9007199254740991')
+DECLARE nullableValue Double
+SET     nullableValue = Double('9007199254740991')
 
 SELECT
 	r.Id as Id,
@@ -4267,10 +4267,10 @@ VALUES
 ($p1,$p2,$p3)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('-9007199254740991')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('9007199254740991')
+DECLARE value Double
+SET     value = Double('-9007199254740991')
+DECLARE nullableValue Double
+SET     nullableValue = Double('9007199254740991')
 
 SELECT
 	r.Id as Id,
@@ -4288,10 +4288,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('-9007199254740991')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('9007199254740991')
+DECLARE value Double
+SET     value = Double('-9007199254740991')
+DECLARE nullableValue Double
+SET     nullableValue = Double('9007199254740991')
 
 SELECT
 	r.Id as Id,
@@ -4309,10 +4309,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('-9007199254740991')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('9007199254740991')
+DECLARE value Double
+SET     value = Double('-9007199254740991')
+DECLARE nullableValue Double
+SET     nullableValue = Double('9007199254740991')
 
 SELECT
 	r.Id as Id,
@@ -4324,8 +4324,8 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
+DECLARE value Double
+SET     value = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -4351,12 +4351,12 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Double
-SET     $Column = Double('0')
-DECLARE $ColumnNullable Double
-SET     $ColumnNullable = NULL
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Double
+SET     Column = Double('0')
+DECLARE ColumnNullable Double
+SET     ColumnNullable = NULL
 
 INSERT INTO `TypeTable\`2`
 (
@@ -4372,8 +4372,8 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
+DECLARE value Double
+SET     value = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -4406,8 +4406,8 @@ VALUES
 ($p1,$p2,$p3)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
+DECLARE value Double
+SET     value = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -4425,8 +4425,8 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
+DECLARE value Double
+SET     value = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -4444,8 +4444,8 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('0')
+DECLARE value Double
+SET     value = Double('0')
 
 SELECT
 	r.Id as Id,
@@ -4457,10 +4457,10 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('9007199254740990')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('-9007199254740990')
+DECLARE value Double
+SET     value = Double('9007199254740990')
+DECLARE nullableValue Double
+SET     nullableValue = Double('-9007199254740990')
 
 SELECT
 	r.Id as Id,
@@ -4486,12 +4486,12 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Double
-SET     $Column = Double('9007199254740990')
-DECLARE $ColumnNullable Double
-SET     $ColumnNullable = Double('-9007199254740990')
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Double
+SET     Column = Double('9007199254740990')
+DECLARE ColumnNullable Double
+SET     ColumnNullable = Double('-9007199254740990')
 
 INSERT INTO `TypeTable\`2`
 (
@@ -4507,10 +4507,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('9007199254740990')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('-9007199254740990')
+DECLARE value Double
+SET     value = Double('9007199254740990')
+DECLARE nullableValue Double
+SET     nullableValue = Double('-9007199254740990')
 
 SELECT
 	r.Id as Id,
@@ -4543,10 +4543,10 @@ VALUES
 ($p1,$p2,$p3)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('9007199254740990')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('-9007199254740990')
+DECLARE value Double
+SET     value = Double('9007199254740990')
+DECLARE nullableValue Double
+SET     nullableValue = Double('-9007199254740990')
 
 SELECT
 	r.Id as Id,
@@ -4564,10 +4564,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('9007199254740990')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('-9007199254740990')
+DECLARE value Double
+SET     value = Double('9007199254740990')
+DECLARE nullableValue Double
+SET     nullableValue = Double('-9007199254740990')
 
 SELECT
 	r.Id as Id,
@@ -4585,10 +4585,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('9007199254740990')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('-9007199254740990')
+DECLARE value Double
+SET     value = Double('9007199254740990')
+DECLARE nullableValue Double
+SET     nullableValue = Double('-9007199254740990')
 
 SELECT
 	r.Id as Id,
@@ -4600,10 +4600,10 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('-9007199254740990')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('9007199254740990')
+DECLARE value Double
+SET     value = Double('-9007199254740990')
+DECLARE nullableValue Double
+SET     nullableValue = Double('9007199254740990')
 
 SELECT
 	r.Id as Id,
@@ -4629,12 +4629,12 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Double
-SET     $Column = Double('-9007199254740990')
-DECLARE $ColumnNullable Double
-SET     $ColumnNullable = Double('9007199254740990')
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Double
+SET     Column = Double('-9007199254740990')
+DECLARE ColumnNullable Double
+SET     ColumnNullable = Double('9007199254740990')
 
 INSERT INTO `TypeTable\`2`
 (
@@ -4650,10 +4650,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('-9007199254740990')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('9007199254740990')
+DECLARE value Double
+SET     value = Double('-9007199254740990')
+DECLARE nullableValue Double
+SET     nullableValue = Double('9007199254740990')
 
 SELECT
 	r.Id as Id,
@@ -4686,10 +4686,10 @@ VALUES
 ($p1,$p2,$p3)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('-9007199254740990')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('9007199254740990')
+DECLARE value Double
+SET     value = Double('-9007199254740990')
+DECLARE nullableValue Double
+SET     nullableValue = Double('9007199254740990')
 
 SELECT
 	r.Id as Id,
@@ -4707,10 +4707,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('-9007199254740990')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('9007199254740990')
+DECLARE value Double
+SET     value = Double('-9007199254740990')
+DECLARE nullableValue Double
+SET     nullableValue = Double('9007199254740990')
 
 SELECT
 	r.Id as Id,
@@ -4728,10 +4728,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('-9007199254740990')
-DECLARE $nullableValue Double
-SET     $nullableValue = Double('9007199254740990')
+DECLARE value Double
+SET     value = Double('-9007199254740990')
+DECLARE nullableValue Double
+SET     nullableValue = Double('9007199254740990')
 
 SELECT
 	r.Id as Id,
@@ -4743,8 +4743,8 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Float('0')
+DECLARE value Double
+SET     value = Float('0')
 
 SELECT
 	r.Id as Id,
@@ -4770,12 +4770,12 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Double
-SET     $Column = Float('0')
-DECLARE $ColumnNullable Double
-SET     $ColumnNullable = NULL
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Double
+SET     Column = Float('0')
+DECLARE ColumnNullable Double
+SET     ColumnNullable = NULL
 
 INSERT INTO `TypeTable\`2`
 (
@@ -4791,8 +4791,8 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Float('0')
+DECLARE value Double
+SET     value = Float('0')
 
 SELECT
 	r.Id as Id,
@@ -4825,8 +4825,8 @@ VALUES
 ($p1,$p2,$p3)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Float('0')
+DECLARE value Double
+SET     value = Float('0')
 
 SELECT
 	r.Id as Id,
@@ -4844,8 +4844,8 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Float('0')
+DECLARE value Double
+SET     value = Float('0')
 
 SELECT
 	r.Id as Id,
@@ -4863,8 +4863,8 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Float('0')
+DECLARE value Double
+SET     value = Float('0')
 
 SELECT
 	r.Id as Id,
@@ -4876,10 +4876,10 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Float('3.40282347E+38')
-DECLARE $nullableValue Double
-SET     $nullableValue = Float('-3.40282347E+38')
+DECLARE value Double
+SET     value = Float('3.40282347E+38')
+DECLARE nullableValue Double
+SET     nullableValue = Float('-3.40282347E+38')
 
 SELECT
 	r.Id as Id,
@@ -4905,12 +4905,12 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Double
-SET     $Column = Float('3.40282347E+38')
-DECLARE $ColumnNullable Double
-SET     $ColumnNullable = Float('-3.40282347E+38')
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Double
+SET     Column = Float('3.40282347E+38')
+DECLARE ColumnNullable Double
+SET     ColumnNullable = Float('-3.40282347E+38')
 
 INSERT INTO `TypeTable\`2`
 (
@@ -4926,10 +4926,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Float('3.40282347E+38')
-DECLARE $nullableValue Double
-SET     $nullableValue = Float('-3.40282347E+38')
+DECLARE value Double
+SET     value = Float('3.40282347E+38')
+DECLARE nullableValue Double
+SET     nullableValue = Float('-3.40282347E+38')
 
 SELECT
 	r.Id as Id,
@@ -4962,10 +4962,10 @@ VALUES
 ($p1,$p2,$p3)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Float('3.40282347E+38')
-DECLARE $nullableValue Double
-SET     $nullableValue = Float('-3.40282347E+38')
+DECLARE value Double
+SET     value = Float('3.40282347E+38')
+DECLARE nullableValue Double
+SET     nullableValue = Float('-3.40282347E+38')
 
 SELECT
 	r.Id as Id,
@@ -4983,10 +4983,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Float('3.40282347E+38')
-DECLARE $nullableValue Double
-SET     $nullableValue = Float('-3.40282347E+38')
+DECLARE value Double
+SET     value = Float('3.40282347E+38')
+DECLARE nullableValue Double
+SET     nullableValue = Float('-3.40282347E+38')
 
 SELECT
 	r.Id as Id,
@@ -5004,10 +5004,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Float('3.40282347E+38')
-DECLARE $nullableValue Double
-SET     $nullableValue = Float('-3.40282347E+38')
+DECLARE value Double
+SET     value = Float('3.40282347E+38')
+DECLARE nullableValue Double
+SET     nullableValue = Float('-3.40282347E+38')
 
 SELECT
 	r.Id as Id,
@@ -5019,10 +5019,10 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Float('-3.40282347E+38')
-DECLARE $nullableValue Double
-SET     $nullableValue = Float('3.40282347E+38')
+DECLARE value Double
+SET     value = Float('-3.40282347E+38')
+DECLARE nullableValue Double
+SET     nullableValue = Float('3.40282347E+38')
 
 SELECT
 	r.Id as Id,
@@ -5049,12 +5049,12 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Double
-SET     $Column = Float('-3.40282347E+38')
-DECLARE $ColumnNullable Double
-SET     $ColumnNullable = Float('3.40282347E+38')
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Double
+SET     Column = Float('-3.40282347E+38')
+DECLARE ColumnNullable Double
+SET     ColumnNullable = Float('3.40282347E+38')
 
 INSERT INTO `TypeTable\`2`
 (
@@ -5070,10 +5070,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Float('-3.40282347E+38')
-DECLARE $nullableValue Double
-SET     $nullableValue = Float('3.40282347E+38')
+DECLARE value Double
+SET     value = Float('-3.40282347E+38')
+DECLARE nullableValue Double
+SET     nullableValue = Float('3.40282347E+38')
 
 SELECT
 	r.Id as Id,
@@ -5106,10 +5106,10 @@ VALUES
 ($p1,$p2,$p3)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Float('-3.40282347E+38')
-DECLARE $nullableValue Double
-SET     $nullableValue = Float('3.40282347E+38')
+DECLARE value Double
+SET     value = Float('-3.40282347E+38')
+DECLARE nullableValue Double
+SET     nullableValue = Float('3.40282347E+38')
 
 SELECT
 	r.Id as Id,
@@ -5127,10 +5127,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Float('-3.40282347E+38')
-DECLARE $nullableValue Double
-SET     $nullableValue = Float('3.40282347E+38')
+DECLARE value Double
+SET     value = Float('-3.40282347E+38')
+DECLARE nullableValue Double
+SET     nullableValue = Float('3.40282347E+38')
 
 SELECT
 	r.Id as Id,
@@ -5148,10 +5148,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Float('-3.40282347E+38')
-DECLARE $nullableValue Double
-SET     $nullableValue = Float('3.40282347E+38')
+DECLARE value Double
+SET     value = Float('-3.40282347E+38')
+DECLARE nullableValue Double
+SET     nullableValue = Float('3.40282347E+38')
 
 SELECT
 	r.Id as Id,

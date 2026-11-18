@@ -24,10 +24,11 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-SELECT last_insert_rowid()
+SELECT
+	last_insert_rowid()
 
 -- SQLite.MS SQLite
-DECLARE @PersonID  -- Int32
+DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 5
 DECLARE @Diagnosis NVarChar(4) -- String
 SET     @Diagnosis = 'abc0'
@@ -46,7 +47,7 @@ ON CONFLICT ([PersonID]) DO UPDATE SET
 	[Diagnosis] = @Diagnosis
 
 -- SQLite.MS SQLite
-DECLARE @PersonID  -- Int32
+DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 5
 DECLARE @Diagnosis NVarChar(4) -- String
 SET     @Diagnosis = 'abc1'
@@ -65,7 +66,7 @@ ON CONFLICT ([PersonID]) DO UPDATE SET
 	[Diagnosis] = @Diagnosis
 
 -- SQLite.MS SQLite
-DECLARE @PersonID  -- Int32
+DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 5
 DECLARE @Diagnosis NVarChar(4) -- String
 SET     @Diagnosis = 'abc2'
@@ -84,7 +85,7 @@ ON CONFLICT ([PersonID]) DO UPDATE SET
 	[Diagnosis] = @Diagnosis
 
 -- SQLite.MS SQLite
-DECLARE @id  -- Int32
+DECLARE @id Integer -- Int32
 SET     @id = 5
 
 SELECT

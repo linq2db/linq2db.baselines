@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 CREATE TABLE [aa]
 (
 	[bb] Int            NOT NULL,
@@ -7,7 +7,7 @@ CREATE TABLE [aa]
 	CONSTRAINT [PK_aa] PRIMARY KEY CLUSTERED ([bb])
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @bb Int -- Int32
 SET     @bb = 99
 DECLARE @cc NVarChar(4000) -- String
@@ -24,13 +24,13 @@ VALUES
 	@cc
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[bb],
 	[t1].[cc]
 FROM
 	[aa] [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DROP TABLE [aa]
 

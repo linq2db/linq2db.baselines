@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $value Int32
-SET     $value = 5
+DECLARE value Int32
+SET     value = 5
 
 SELECT
 	r.Id as Id,

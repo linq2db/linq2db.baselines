@@ -23,7 +23,6 @@ SET
 WHERE
 	[t].[ParentID] = 1010
 
-CommitTransaction
 -- Access.Jet.OleDb AccessOleDb
 SELECT TOP 1
 	[t].[ParentID],

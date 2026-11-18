@@ -1,10 +1,10 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Name Text(5) -- String
-SET     $Name = 'Jason'u
-DECLARE $Age Int32
-SET     $Age = 20
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Name Text(5) -- String
+SET     Name = 'Jason'u
+DECLARE Age Int32
+SET     Age = 20
 
 INSERT INTO PR_1598_Mixed_Table
 (
@@ -31,10 +31,10 @@ WHERE
 LIMIT 1
 
 -- YDB Ydb
-DECLARE $Age Int32
-SET     $Age = 20
-DECLARE $Id Int32
-SET     $Id = 1
+DECLARE Age Int32
+SET     Age = 20
+DECLARE Id Int32
+SET     Id = 1
 
 UPDATE
 	PR_1598_Mixed_Table
@@ -55,10 +55,10 @@ WHERE
 LIMIT 1
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 2
-DECLARE $Age Int32
-SET     $Age = 25
+DECLARE Id Int32
+SET     Id = 2
+DECLARE Age Int32
+SET     Age = 25
 
 INSERT INTO PR_1598_Mixed_Table
 (
@@ -83,12 +83,12 @@ WHERE
 LIMIT 1
 
 -- YDB Ydb
-DECLARE $Name Text(5) -- String
-SET     $Name = 'Jessy'u
-DECLARE $Age Int32
-SET     $Age = 25
-DECLARE $Id Int32
-SET     $Id = 2
+DECLARE Name Text(5) -- String
+SET     Name = 'Jessy'u
+DECLARE Age Int32
+SET     Age = 25
+DECLARE Id Int32
+SET     Id = 2
 
 UPDATE
 	PR_1598_Mixed_Table

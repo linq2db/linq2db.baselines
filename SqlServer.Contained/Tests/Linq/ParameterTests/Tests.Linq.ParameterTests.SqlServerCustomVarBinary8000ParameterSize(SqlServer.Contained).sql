@@ -1,13 +1,13 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DECLARE @p VarBinary -- Binary
 SET     @p = Tests.Linq.ParameterTests+VarBinary
 
 SELECT
-	[t].[VarBinaryDataType],
-	[t].[VarcharDataType],
-	[t].[NVarcharDataType]
+	[t].[varbinaryDataType],
+	[t].[varcharDataType],
+	[t].[nvarcharDataType]
 FROM
 	[AllTypes] [t]
 WHERE
-	[t].[VarBinaryDataType] = @p
+	[t].[varbinaryDataType] = @p
 

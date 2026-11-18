@@ -24,7 +24,8 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-SELECT last_insert_rowid()
+SELECT
+	last_insert_rowid()
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 UPDATE
@@ -35,7 +36,7 @@ WHERE
 	[Person].[FirstName] LIKE 'UpdateComplex%' ESCAPE '~'
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @id  -- Int32
+DECLARE @id Integer -- Int32
 SET     @id = 5
 
 SELECT

@@ -28,11 +28,11 @@ DELETE FROM
 	[DateOnlyTable]
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Column VarChar(10) -- AnsiString
 SET     @Column = '1980-01-01'
-DECLARE @ColumnNullable  -- Date
+DECLARE @ColumnNullable Text -- Date
 SET     @ColumnNullable = NULL
 
 INSERT INTO [DateOnlyTable]
@@ -49,7 +49,7 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Column VarChar(10) -- AnsiString
 SET     @Column = '2020-02-29'

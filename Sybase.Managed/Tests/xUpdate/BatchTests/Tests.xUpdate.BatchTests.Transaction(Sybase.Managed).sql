@@ -49,7 +49,6 @@ SELECT 2111,2111 UNION ALL
 SELECT 3111,3111 UNION ALL
 SELECT 4111,4111
 
-CommitTransaction
 -- Sybase.Managed Sybase
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1111

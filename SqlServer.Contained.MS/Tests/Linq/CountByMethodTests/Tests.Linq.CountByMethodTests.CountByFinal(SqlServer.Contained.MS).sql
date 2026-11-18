@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[g_1].[TestId],
 	COUNT(*)
@@ -9,7 +9,7 @@ GROUP BY
 ORDER BY
 	[g_1].[TestId]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[TestId]

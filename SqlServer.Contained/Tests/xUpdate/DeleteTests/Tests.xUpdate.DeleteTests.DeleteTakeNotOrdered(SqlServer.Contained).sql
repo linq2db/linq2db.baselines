@@ -1,11 +1,11 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DELETE [c_1]
 FROM
 	[Parent] [c_1]
 WHERE
 	[c_1].[ParentID] >= 1000
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1000
 DECLARE @Value1 Int -- Int32
@@ -22,7 +22,7 @@ VALUES
 	@Value1
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1001
 DECLARE @Value1 Int -- Int32
@@ -39,7 +39,7 @@ VALUES
 	@Value1
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1002
 DECLARE @Value1 Int -- Int32
@@ -56,7 +56,7 @@ VALUES
 	@Value1
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1003
 DECLARE @Value1 Int -- Int32
@@ -73,7 +73,7 @@ VALUES
 	@Value1
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1004
 DECLARE @Value1 Int -- Int32
@@ -90,7 +90,7 @@ VALUES
 	@Value1
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1005
 DECLARE @Value1 Int -- Int32
@@ -107,7 +107,7 @@ VALUES
 	@Value1
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1006
 DECLARE @Value1 Int -- Int32
@@ -124,7 +124,7 @@ VALUES
 	@Value1
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1007
 DECLARE @Value1 Int -- Int32
@@ -141,7 +141,7 @@ VALUES
 	@Value1
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1008
 DECLARE @Value1 Int -- Int32
@@ -158,7 +158,7 @@ VALUES
 	@Value1
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1009
 DECLARE @Value1 Int -- Int32
@@ -175,7 +175,7 @@ VALUES
 	@Value1
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @take Int -- Int32
 SET     @take = 5
 
@@ -185,7 +185,7 @@ FROM
 WHERE
 	[p].[ParentID] >= 1000
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DELETE [c_1]
 FROM
 	[Parent] [c_1]

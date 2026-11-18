@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 CREATE TABLE [tempdb]..[#MergeTemp]
 (
 	[ID]   Int          NOT NULL,
@@ -9,7 +9,7 @@ CREATE TABLE [tempdb]..[#MergeTemp]
 
 INSERT BULK [tempdb]..[#MergeTemp](ID, Name)
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 MERGE INTO [tempdb]..[#MergeTemp] [t1]
 USING (SELECT (
 	SELECT
@@ -46,6 +46,6 @@ WHEN NOT MATCHED THEN
 		N'John II'
 	);
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DROP TABLE IF EXISTS [tempdb]..[#MergeTemp]
 

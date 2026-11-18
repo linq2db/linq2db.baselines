@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $pattern Text(3) -- String
-SET     $pattern = '%1%'u
-DECLARE $take Int32
-SET     $take = 10
+DECLARE pattern Text(3) -- String
+SET     pattern = '%1%'u
+DECLARE take Int32
+SET     take = 10
 
 SELECT
 	t1.FirstName as FirstName

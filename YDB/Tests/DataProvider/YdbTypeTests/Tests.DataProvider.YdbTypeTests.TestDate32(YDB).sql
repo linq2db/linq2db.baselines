@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $value Date32 -- Object
-SET     $value = Date('2020-02-29')
+DECLARE value Date32 -- Object
+SET     value = Date('2020-02-29')
 
 SELECT
 	r.Id as Id,
@@ -26,12 +26,12 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Date32 -- Object
-SET     $Column = Date('2020-02-29')
-DECLARE $ColumnNullable Date32 -- Object
-SET     $ColumnNullable = NULL
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Date32 -- Object
+SET     Column = Date('2020-02-29')
+DECLARE ColumnNullable Date32 -- Object
+SET     ColumnNullable = NULL
 
 INSERT INTO `TypeTable\`2`
 (
@@ -47,8 +47,8 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $value Date32 -- Object
-SET     $value = Date('2020-02-29')
+DECLARE value Date32 -- Object
+SET     value = Date('2020-02-29')
 
 SELECT
 	r.Id as Id,
@@ -81,8 +81,8 @@ VALUES
 ($p1,$p2,$p3)
 
 -- YDB Ydb
-DECLARE $value Date32 -- Object
-SET     $value = Date('2020-02-29')
+DECLARE value Date32 -- Object
+SET     value = Date('2020-02-29')
 
 SELECT
 	r.Id as Id,
@@ -100,8 +100,8 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Date32 -- Object
-SET     $value = Date('2020-02-29')
+DECLARE value Date32 -- Object
+SET     value = Date('2020-02-29')
 
 SELECT
 	r.Id as Id,
@@ -119,8 +119,8 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Date32 -- Object
-SET     $value = Date('2020-02-29')
+DECLARE value Date32 -- Object
+SET     value = Date('2020-02-29')
 
 SELECT
 	r.Id as Id,
@@ -132,10 +132,10 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-DECLARE $value Date32 -- Object
-SET     $value = Date('0001-01-01')
-DECLARE $nullableValue Date32 -- Object
-SET     $nullableValue = Date('9999-12-31')
+DECLARE value Date32 -- Object
+SET     value = Date('0001-01-01')
+DECLARE nullableValue Date32 -- Object
+SET     nullableValue = Date('9999-12-31')
 
 SELECT
 	r.Id as Id,
@@ -161,12 +161,12 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Date32 -- Object
-SET     $Column = Date('0001-01-01')
-DECLARE $ColumnNullable Date32 -- Object
-SET     $ColumnNullable = Date('9999-12-31')
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Date32 -- Object
+SET     Column = Date('0001-01-01')
+DECLARE ColumnNullable Date32 -- Object
+SET     ColumnNullable = Date('9999-12-31')
 
 INSERT INTO `TypeTable\`2`
 (
@@ -182,10 +182,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $value Date32 -- Object
-SET     $value = Date('0001-01-01')
-DECLARE $nullableValue Date32 -- Object
-SET     $nullableValue = Date('9999-12-31')
+DECLARE value Date32 -- Object
+SET     value = Date('0001-01-01')
+DECLARE nullableValue Date32 -- Object
+SET     nullableValue = Date('9999-12-31')
 
 SELECT
 	r.Id as Id,
@@ -218,10 +218,10 @@ VALUES
 ($p1,$p2,$p3)
 
 -- YDB Ydb
-DECLARE $value Date32 -- Object
-SET     $value = Date('0001-01-01')
-DECLARE $nullableValue Date32 -- Object
-SET     $nullableValue = Date('9999-12-31')
+DECLARE value Date32 -- Object
+SET     value = Date('0001-01-01')
+DECLARE nullableValue Date32 -- Object
+SET     nullableValue = Date('9999-12-31')
 
 SELECT
 	r.Id as Id,
@@ -239,10 +239,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Date32 -- Object
-SET     $value = Date('0001-01-01')
-DECLARE $nullableValue Date32 -- Object
-SET     $nullableValue = Date('9999-12-31')
+DECLARE value Date32 -- Object
+SET     value = Date('0001-01-01')
+DECLARE nullableValue Date32 -- Object
+SET     nullableValue = Date('9999-12-31')
 
 SELECT
 	r.Id as Id,
@@ -260,10 +260,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Date32 -- Object
-SET     $value = Date('0001-01-01')
-DECLARE $nullableValue Date32 -- Object
-SET     $nullableValue = Date('9999-12-31')
+DECLARE value Date32 -- Object
+SET     value = Date('0001-01-01')
+DECLARE nullableValue Date32 -- Object
+SET     nullableValue = Date('9999-12-31')
 
 SELECT
 	r.Id as Id,
@@ -275,8 +275,8 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-DECLARE $value Date32 -- Object
-SET     $value = Timestamp('2020-02-29T00:00:00.000000Z')
+DECLARE value Date32 -- Object
+SET     value = Timestamp('2020-02-29T00:00:00.000000Z')
 
 SELECT
 	r.Id as Id,
@@ -302,12 +302,12 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Date32 -- Object
-SET     $Column = Timestamp('2020-02-29T00:00:00.000000Z')
-DECLARE $ColumnNullable Date32 -- Object
-SET     $ColumnNullable = NULL
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Date32 -- Object
+SET     Column = Timestamp('2020-02-29T00:00:00.000000Z')
+DECLARE ColumnNullable Date32 -- Object
+SET     ColumnNullable = NULL
 
 INSERT INTO `TypeTable\`2`
 (
@@ -323,8 +323,8 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $value Date32 -- Object
-SET     $value = Timestamp('2020-02-29T00:00:00.000000Z')
+DECLARE value Date32 -- Object
+SET     value = Timestamp('2020-02-29T00:00:00.000000Z')
 
 SELECT
 	r.Id as Id,
@@ -357,8 +357,8 @@ VALUES
 ($p1,$p2,$p3)
 
 -- YDB Ydb
-DECLARE $value Date32 -- Object
-SET     $value = Timestamp('2020-02-29T00:00:00.000000Z')
+DECLARE value Date32 -- Object
+SET     value = Timestamp('2020-02-29T00:00:00.000000Z')
 
 SELECT
 	r.Id as Id,
@@ -376,8 +376,8 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Date32 -- Object
-SET     $value = Timestamp('2020-02-29T00:00:00.000000Z')
+DECLARE value Date32 -- Object
+SET     value = Timestamp('2020-02-29T00:00:00.000000Z')
 
 SELECT
 	r.Id as Id,
@@ -395,8 +395,8 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Date32 -- Object
-SET     $value = Timestamp('2020-02-29T00:00:00.000000Z')
+DECLARE value Date32 -- Object
+SET     value = Timestamp('2020-02-29T00:00:00.000000Z')
 
 SELECT
 	r.Id as Id,
@@ -408,10 +408,10 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-DECLARE $value Date32 -- Object
-SET     $value = Timestamp('0001-01-01T00:00:00.000000Z')
-DECLARE $nullableValue Date32 -- Object
-SET     $nullableValue = Timestamp('9999-12-31T00:00:00.000000Z')
+DECLARE value Date32 -- Object
+SET     value = Timestamp('0001-01-01T00:00:00.000000Z')
+DECLARE nullableValue Date32 -- Object
+SET     nullableValue = Timestamp('9999-12-31T00:00:00.000000Z')
 
 SELECT
 	r.Id as Id,
@@ -437,12 +437,12 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Date32 -- Object
-SET     $Column = Timestamp('0001-01-01T00:00:00.000000Z')
-DECLARE $ColumnNullable Date32 -- Object
-SET     $ColumnNullable = Timestamp('9999-12-31T00:00:00.000000Z')
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Date32 -- Object
+SET     Column = Timestamp('0001-01-01T00:00:00.000000Z')
+DECLARE ColumnNullable Date32 -- Object
+SET     ColumnNullable = Timestamp('9999-12-31T00:00:00.000000Z')
 
 INSERT INTO `TypeTable\`2`
 (
@@ -458,10 +458,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $value Date32 -- Object
-SET     $value = Timestamp('0001-01-01T00:00:00.000000Z')
-DECLARE $nullableValue Date32 -- Object
-SET     $nullableValue = Timestamp('9999-12-31T00:00:00.000000Z')
+DECLARE value Date32 -- Object
+SET     value = Timestamp('0001-01-01T00:00:00.000000Z')
+DECLARE nullableValue Date32 -- Object
+SET     nullableValue = Timestamp('9999-12-31T00:00:00.000000Z')
 
 SELECT
 	r.Id as Id,
@@ -494,10 +494,10 @@ VALUES
 ($p1,$p2,$p3)
 
 -- YDB Ydb
-DECLARE $value Date32 -- Object
-SET     $value = Timestamp('0001-01-01T00:00:00.000000Z')
-DECLARE $nullableValue Date32 -- Object
-SET     $nullableValue = Timestamp('9999-12-31T00:00:00.000000Z')
+DECLARE value Date32 -- Object
+SET     value = Timestamp('0001-01-01T00:00:00.000000Z')
+DECLARE nullableValue Date32 -- Object
+SET     nullableValue = Timestamp('9999-12-31T00:00:00.000000Z')
 
 SELECT
 	r.Id as Id,
@@ -515,10 +515,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Date32 -- Object
-SET     $value = Timestamp('0001-01-01T00:00:00.000000Z')
-DECLARE $nullableValue Date32 -- Object
-SET     $nullableValue = Timestamp('9999-12-31T00:00:00.000000Z')
+DECLARE value Date32 -- Object
+SET     value = Timestamp('0001-01-01T00:00:00.000000Z')
+DECLARE nullableValue Date32 -- Object
+SET     nullableValue = Timestamp('9999-12-31T00:00:00.000000Z')
 
 SELECT
 	r.Id as Id,
@@ -536,10 +536,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Date32 -- Object
-SET     $value = Timestamp('0001-01-01T00:00:00.000000Z')
-DECLARE $nullableValue Date32 -- Object
-SET     $nullableValue = Timestamp('9999-12-31T00:00:00.000000Z')
+DECLARE value Date32 -- Object
+SET     value = Timestamp('0001-01-01T00:00:00.000000Z')
+DECLARE nullableValue Date32 -- Object
+SET     nullableValue = Timestamp('9999-12-31T00:00:00.000000Z')
 
 SELECT
 	r.Id as Id,
@@ -551,8 +551,8 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-DECLARE $value Date32 -- Object
-SET     $value = Timestamp('9999-12-30T00:00:00.000000Z')
+DECLARE value Date32 -- Object
+SET     value = Timestamp('9999-12-30T00:00:00.000000Z')
 
 SELECT
 	r.Id as Id,
@@ -578,12 +578,12 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Date32 -- Object
-SET     $Column = Timestamp('9999-12-30T00:00:00.000000Z')
-DECLARE $ColumnNullable Date32 -- Object
-SET     $ColumnNullable = NULL
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Date32 -- Object
+SET     Column = Timestamp('9999-12-30T00:00:00.000000Z')
+DECLARE ColumnNullable Date32 -- Object
+SET     ColumnNullable = NULL
 
 INSERT INTO `TypeTable\`2`
 (
@@ -599,8 +599,8 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $value Date32 -- Object
-SET     $value = Timestamp('9999-12-30T00:00:00.000000Z')
+DECLARE value Date32 -- Object
+SET     value = Timestamp('9999-12-30T00:00:00.000000Z')
 
 SELECT
 	r.Id as Id,
@@ -633,8 +633,8 @@ VALUES
 ($p1,$p2,$p3)
 
 -- YDB Ydb
-DECLARE $value Date32 -- Object
-SET     $value = Timestamp('9999-12-30T00:00:00.000000Z')
+DECLARE value Date32 -- Object
+SET     value = Timestamp('9999-12-30T00:00:00.000000Z')
 
 SELECT
 	r.Id as Id,
@@ -652,8 +652,8 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Date32 -- Object
-SET     $value = Timestamp('9999-12-30T00:00:00.000000Z')
+DECLARE value Date32 -- Object
+SET     value = Timestamp('9999-12-30T00:00:00.000000Z')
 
 SELECT
 	r.Id as Id,
@@ -671,8 +671,8 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Date32 -- Object
-SET     $value = Timestamp('9999-12-30T00:00:00.000000Z')
+DECLARE value Date32 -- Object
+SET     value = Timestamp('9999-12-30T00:00:00.000000Z')
 
 SELECT
 	r.Id as Id,
@@ -684,10 +684,10 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-DECLARE $value Date32 -- Object
-SET     $value = Timestamp('0001-01-02T00:00:00.000000Z')
-DECLARE $nullableValue Date32 -- Object
-SET     $nullableValue = Timestamp('9999-12-30T00:00:00.000000Z')
+DECLARE value Date32 -- Object
+SET     value = Timestamp('0001-01-02T00:00:00.000000Z')
+DECLARE nullableValue Date32 -- Object
+SET     nullableValue = Timestamp('9999-12-30T00:00:00.000000Z')
 
 SELECT
 	r.Id as Id,
@@ -713,12 +713,12 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Date32 -- Object
-SET     $Column = Timestamp('0001-01-02T00:00:00.000000Z')
-DECLARE $ColumnNullable Date32 -- Object
-SET     $ColumnNullable = Timestamp('9999-12-30T00:00:00.000000Z')
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Date32 -- Object
+SET     Column = Timestamp('0001-01-02T00:00:00.000000Z')
+DECLARE ColumnNullable Date32 -- Object
+SET     ColumnNullable = Timestamp('9999-12-30T00:00:00.000000Z')
 
 INSERT INTO `TypeTable\`2`
 (
@@ -734,10 +734,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $value Date32 -- Object
-SET     $value = Timestamp('0001-01-02T00:00:00.000000Z')
-DECLARE $nullableValue Date32 -- Object
-SET     $nullableValue = Timestamp('9999-12-30T00:00:00.000000Z')
+DECLARE value Date32 -- Object
+SET     value = Timestamp('0001-01-02T00:00:00.000000Z')
+DECLARE nullableValue Date32 -- Object
+SET     nullableValue = Timestamp('9999-12-30T00:00:00.000000Z')
 
 SELECT
 	r.Id as Id,
@@ -770,10 +770,10 @@ VALUES
 ($p1,$p2,$p3)
 
 -- YDB Ydb
-DECLARE $value Date32 -- Object
-SET     $value = Timestamp('0001-01-02T00:00:00.000000Z')
-DECLARE $nullableValue Date32 -- Object
-SET     $nullableValue = Timestamp('9999-12-30T00:00:00.000000Z')
+DECLARE value Date32 -- Object
+SET     value = Timestamp('0001-01-02T00:00:00.000000Z')
+DECLARE nullableValue Date32 -- Object
+SET     nullableValue = Timestamp('9999-12-30T00:00:00.000000Z')
 
 SELECT
 	r.Id as Id,
@@ -791,10 +791,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Date32 -- Object
-SET     $value = Timestamp('0001-01-02T00:00:00.000000Z')
-DECLARE $nullableValue Date32 -- Object
-SET     $nullableValue = Timestamp('9999-12-30T00:00:00.000000Z')
+DECLARE value Date32 -- Object
+SET     value = Timestamp('0001-01-02T00:00:00.000000Z')
+DECLARE nullableValue Date32 -- Object
+SET     nullableValue = Timestamp('9999-12-30T00:00:00.000000Z')
 
 SELECT
 	r.Id as Id,
@@ -812,10 +812,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Date32 -- Object
-SET     $value = Timestamp('0001-01-02T00:00:00.000000Z')
-DECLARE $nullableValue Date32 -- Object
-SET     $nullableValue = Timestamp('9999-12-30T00:00:00.000000Z')
+DECLARE value Date32 -- Object
+SET     value = Timestamp('0001-01-02T00:00:00.000000Z')
+DECLARE nullableValue Date32 -- Object
+SET     nullableValue = Timestamp('9999-12-30T00:00:00.000000Z')
 
 SELECT
 	r.Id as Id,
@@ -851,8 +851,8 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
+DECLARE Id Int32
+SET     Id = 1
 
 INSERT INTO `TypeTable\`2`
 (

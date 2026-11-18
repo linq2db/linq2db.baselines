@@ -8,6 +8,6 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	([p].[FirstName] || Space([p].[PersonID] + 1) || N'123') = N'John  123' AND
+	([p].[FirstName] || CAST(Space([p].[PersonID] + 1) AS NVarChar(Max)) || N'123') = N'John  123' AND
 	[p].[PersonID] = 1
 

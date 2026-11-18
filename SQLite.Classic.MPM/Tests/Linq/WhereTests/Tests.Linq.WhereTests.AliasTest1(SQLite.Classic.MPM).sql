@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @user  -- Int32
+DECLARE @user Integer -- Int32
 SET     @user = 3
 
 SELECT

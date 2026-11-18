@@ -1,7 +1,7 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @EmptyCount  -- Int32
+DECLARE @EmptyCount Integer -- Int32
 SET     @EmptyCount = 0
-DECLARE @ItemsCount  -- Int32
+DECLARE @ItemsCount Integer -- Int32
 SET     @ItemsCount = 2
 
 INSERT INTO [CountTarget]

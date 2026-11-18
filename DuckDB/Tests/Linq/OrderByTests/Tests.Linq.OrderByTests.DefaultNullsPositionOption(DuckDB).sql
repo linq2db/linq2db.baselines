@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $take  -- Int32
+DECLARE $take INTEGER -- Int32
 SET     $take = 3
 
 SELECT
@@ -12,7 +12,7 @@ ORDER BY
 LIMIT $take
 
 -- DuckDB
-DECLARE $take  -- Int32
+DECLARE $take INTEGER -- Int32
 SET     $take = 3
 
 SELECT

@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $ID  -- Int32
+DECLARE $ID INTEGER -- Int32
 SET     $ID = 1001
 
 INSERT INTO LinqDataTypes
@@ -16,7 +16,7 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $id  -- Int32
+DECLARE $id INTEGER -- Int32
 SET     $id = 1001
 
 UPDATE
@@ -28,7 +28,7 @@ WHERE
 	LinqDataTypes.ID = $id
 
 -- DuckDB
-DECLARE $id  -- Int32
+DECLARE $id INTEGER -- Int32
 SET     $id = 1001
 
 UPDATE
@@ -40,7 +40,7 @@ WHERE
 	LinqDataTypes.ID = $id
 
 -- DuckDB
-DECLARE $id  -- Int32
+DECLARE $id INTEGER -- Int32
 SET     $id = 1001
 
 SELECT

@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],
@@ -10,7 +10,7 @@ FROM
 WHERE
 	[t1].[PersonID] IN (2, 3, 4)
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

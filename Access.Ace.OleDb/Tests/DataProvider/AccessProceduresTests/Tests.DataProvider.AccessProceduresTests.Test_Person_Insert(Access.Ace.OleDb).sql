@@ -7,14 +7,14 @@ ORDER BY
 	[t1].[PersonID] DESC
 
 -- Access.Ace.OleDb AccessOleDb
-DECLARE @firstName VarChar(9) -- AnsiString
-SET     @firstName = 'new first'
-DECLARE @midleName VarChar(10) -- AnsiString
-SET     @midleName = 'new middle'
-DECLARE @lastName VarChar(8) -- AnsiString
-SET     @lastName = 'new last'
-DECLARE @gender Char(1) -- AnsiStringFixedLength
-SET     @gender = 'U'
+DECLARE @FirstName VarChar(9) -- AnsiString
+SET     @FirstName = 'new first'
+DECLARE @MiddleName VarChar(10) -- AnsiString
+SET     @MiddleName = 'new middle'
+DECLARE @LastName VarChar(8) -- AnsiString
+SET     @LastName = 'new last'
+DECLARE @Gender Char(1) -- AnsiStringFixedLength
+SET     @Gender = 'U'
 
 Person_Insert
 

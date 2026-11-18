@@ -13,5 +13,5 @@ FROM
 			[Person] [t1]
 	) [t2]
 ORDER BY
-	[t2].[flag]
+	([t2].[flag]) DESC
 

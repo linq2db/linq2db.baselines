@@ -50,7 +50,6 @@ VALUES
 (3111,3111),
 (4111,4111)
 
-CommitTransaction
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @ParentID Int32
 SET     @ParentID = 1111

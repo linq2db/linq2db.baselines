@@ -39,21 +39,21 @@ DECLARE @MoneyValue Decimal(3, 2)
 SET     @MoneyValue = 1.11
 DECLARE @DateTimeValue VarChar(23) -- AnsiString
 SET     @DateTimeValue = '2001-01-11 01:11:21.100'
-DECLARE @DateTimeValue2  -- DateTime
+DECLARE @DateTimeValue2 Text -- DateTime
 SET     @DateTimeValue2 = NULL
-DECLARE @BoolValue  -- Boolean
+DECLARE @BoolValue Integer -- Boolean
 SET     @BoolValue = 0
-DECLARE @GuidValue  -- Guid
+DECLARE @GuidValue Blob -- Guid
 SET     @GuidValue = X'659112EFFE6FF94DBB6BBB16E413C883'
-DECLARE @SmallIntValue  -- Int16
+DECLARE @SmallIntValue Integer -- Int16
 SET     @SmallIntValue = 1
-DECLARE @IntValue  -- Int32
+DECLARE @IntValue Integer -- Int32
 SET     @IntValue = NULL
-DECLARE @BigIntValue  -- Int64
+DECLARE @BigIntValue Integer -- Int64
 SET     @BigIntValue = 1
 DECLARE @StringValue NVarChar -- String
 SET     @StringValue = NULL
-DECLARE @ID  -- Int32
+DECLARE @ID Integer -- Int32
 SET     @ID = 1
 
 UPDATE
@@ -72,7 +72,7 @@ WHERE
 	[LinqDataTypes].[ID] = @ID
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @ID  -- Int32
+DECLARE @ID Integer -- Int32
 SET     @ID = 1
 
 SELECT
@@ -97,21 +97,21 @@ DECLARE @MoneyValue Decimal(3, 2)
 SET     @MoneyValue = 1.11
 DECLARE @DateTimeValue VarChar(23) -- AnsiString
 SET     @DateTimeValue = '2001-01-11 01:11:21.100'
-DECLARE @DateTimeValue2  -- DateTime
+DECLARE @DateTimeValue2 Text -- DateTime
 SET     @DateTimeValue2 = NULL
-DECLARE @BoolValue  -- Boolean
+DECLARE @BoolValue Integer -- Boolean
 SET     @BoolValue = 1
-DECLARE @GuidValue  -- Guid
+DECLARE @GuidValue Blob -- Guid
 SET     @GuidValue = X'659112EFFE6FF94DBB6BBB16E413C883'
-DECLARE @SmallIntValue  -- Int16
+DECLARE @SmallIntValue Integer -- Int16
 SET     @SmallIntValue = 1
-DECLARE @IntValue  -- Int32
+DECLARE @IntValue Integer -- Int32
 SET     @IntValue = NULL
-DECLARE @BigIntValue  -- Int64
+DECLARE @BigIntValue Integer -- Int64
 SET     @BigIntValue = 1
 DECLARE @StringValue NVarChar -- String
 SET     @StringValue = NULL
-DECLARE @ID  -- Int32
+DECLARE @ID Integer -- Int32
 SET     @ID = 1
 
 UPDATE

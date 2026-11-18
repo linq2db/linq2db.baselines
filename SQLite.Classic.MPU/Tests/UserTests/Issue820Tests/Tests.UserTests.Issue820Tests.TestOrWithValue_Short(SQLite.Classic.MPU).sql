@@ -5,7 +5,7 @@ FROM
 	[LinqDataTypes] [t1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @param  -- Int16
+DECLARE @param Integer -- Int16
 SET     @param = 1
 
 SELECT

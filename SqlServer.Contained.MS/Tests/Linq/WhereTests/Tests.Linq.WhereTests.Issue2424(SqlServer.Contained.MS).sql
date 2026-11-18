@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[i].[Pk],
 	[i].[Id],
@@ -9,7 +9,7 @@ FROM
 WHERE
 	[i].[StrValue] >= N'0'
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Pk],
 	[t1].[Id],
@@ -18,7 +18,7 @@ SELECT
 FROM
 	[Isue2424Table] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[i].[Pk],
 	[i].[Id],
@@ -29,7 +29,7 @@ FROM
 WHERE
 	[i].[StrValue] >= N'1'
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Pk],
 	[t1].[Id],
@@ -38,7 +38,7 @@ SELECT
 FROM
 	[Isue2424Table] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[i].[Pk],
 	[i].[Id],
@@ -49,7 +49,7 @@ FROM
 WHERE
 	[i].[StrValue] >= N'3'
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Pk],
 	[t1].[Id],
@@ -58,7 +58,7 @@ SELECT
 FROM
 	[Isue2424Table] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[i].[Pk],
 	[i].[Id],
@@ -69,7 +69,7 @@ FROM
 WHERE
 	[i].[StrValue] >= N'5'
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Pk],
 	[t1].[Id],
@@ -78,7 +78,7 @@ SELECT
 FROM
 	[Isue2424Table] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[i].[Pk],
 	[i].[Id],
@@ -89,7 +89,7 @@ FROM
 WHERE
 	[i].[StrValue] <= N'0'
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Pk],
 	[t1].[Id],
@@ -98,7 +98,7 @@ SELECT
 FROM
 	[Isue2424Table] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[i].[Pk],
 	[i].[Id],
@@ -109,7 +109,7 @@ FROM
 WHERE
 	[i].[StrValue] <= N'1'
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Pk],
 	[t1].[Id],
@@ -118,7 +118,7 @@ SELECT
 FROM
 	[Isue2424Table] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[i].[Pk],
 	[i].[Id],
@@ -129,7 +129,7 @@ FROM
 WHERE
 	[i].[StrValue] <= N'3'
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Pk],
 	[t1].[Id],
@@ -138,7 +138,7 @@ SELECT
 FROM
 	[Isue2424Table] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[i].[Pk],
 	[i].[Id],
@@ -149,7 +149,7 @@ FROM
 WHERE
 	[i].[StrValue] <= N'5'
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Pk],
 	[t1].[Id],
@@ -158,7 +158,7 @@ SELECT
 FROM
 	[Isue2424Table] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[i].[Pk],
 	[i].[Id],
@@ -169,7 +169,7 @@ FROM
 WHERE
 	[i].[StrValue] > N'0'
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Pk],
 	[t1].[Id],
@@ -178,7 +178,7 @@ SELECT
 FROM
 	[Isue2424Table] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[i].[Pk],
 	[i].[Id],
@@ -189,7 +189,7 @@ FROM
 WHERE
 	[i].[StrValue] > N'1'
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Pk],
 	[t1].[Id],
@@ -198,7 +198,7 @@ SELECT
 FROM
 	[Isue2424Table] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[i].[Pk],
 	[i].[Id],
@@ -209,7 +209,7 @@ FROM
 WHERE
 	[i].[StrValue] > N'3'
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Pk],
 	[t1].[Id],
@@ -218,7 +218,7 @@ SELECT
 FROM
 	[Isue2424Table] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[i].[Pk],
 	[i].[Id],
@@ -229,7 +229,7 @@ FROM
 WHERE
 	[i].[StrValue] > N'5'
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Pk],
 	[t1].[Id],
@@ -238,7 +238,7 @@ SELECT
 FROM
 	[Isue2424Table] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[i].[Pk],
 	[i].[Id],
@@ -249,7 +249,7 @@ FROM
 WHERE
 	[i].[StrValue] < N'0'
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Pk],
 	[t1].[Id],
@@ -258,7 +258,7 @@ SELECT
 FROM
 	[Isue2424Table] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[i].[Pk],
 	[i].[Id],
@@ -269,7 +269,7 @@ FROM
 WHERE
 	[i].[StrValue] < N'1'
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Pk],
 	[t1].[Id],
@@ -278,7 +278,7 @@ SELECT
 FROM
 	[Isue2424Table] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[i].[Pk],
 	[i].[Id],
@@ -289,7 +289,7 @@ FROM
 WHERE
 	[i].[StrValue] < N'3'
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Pk],
 	[t1].[Id],
@@ -298,7 +298,7 @@ SELECT
 FROM
 	[Isue2424Table] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[i].[Pk],
 	[i].[Id],
@@ -309,7 +309,7 @@ FROM
 WHERE
 	[i].[StrValue] < N'5'
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Pk],
 	[t1].[Id],
@@ -318,7 +318,7 @@ SELECT
 FROM
 	[Isue2424Table] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[i].[Pk],
 	[i].[Id],
@@ -329,7 +329,7 @@ FROM
 WHERE
 	[i].[StrValue] = N'0'
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Pk],
 	[t1].[Id],
@@ -338,7 +338,7 @@ SELECT
 FROM
 	[Isue2424Table] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[i].[Pk],
 	[i].[Id],
@@ -349,7 +349,7 @@ FROM
 WHERE
 	[i].[StrValue] = N'1'
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Pk],
 	[t1].[Id],
@@ -358,7 +358,7 @@ SELECT
 FROM
 	[Isue2424Table] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[i].[Pk],
 	[i].[Id],
@@ -369,7 +369,7 @@ FROM
 WHERE
 	[i].[StrValue] = N'3'
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Pk],
 	[t1].[Id],
@@ -378,7 +378,7 @@ SELECT
 FROM
 	[Isue2424Table] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[i].[Pk],
 	[i].[Id],
@@ -389,7 +389,7 @@ FROM
 WHERE
 	[i].[StrValue] = N'5'
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Pk],
 	[t1].[Id],
@@ -398,7 +398,7 @@ SELECT
 FROM
 	[Isue2424Table] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[i].[Pk],
 	[i].[Id],
@@ -409,7 +409,7 @@ FROM
 WHERE
 	[i].[StrValue] <> N'0'
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Pk],
 	[t1].[Id],
@@ -418,7 +418,7 @@ SELECT
 FROM
 	[Isue2424Table] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[i].[Pk],
 	[i].[Id],
@@ -429,7 +429,7 @@ FROM
 WHERE
 	[i].[StrValue] <> N'1'
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Pk],
 	[t1].[Id],
@@ -438,7 +438,7 @@ SELECT
 FROM
 	[Isue2424Table] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[i].[Pk],
 	[i].[Id],
@@ -449,7 +449,7 @@ FROM
 WHERE
 	[i].[StrValue] <> N'3'
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Pk],
 	[t1].[Id],
@@ -458,7 +458,7 @@ SELECT
 FROM
 	[Isue2424Table] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[i].[Pk],
 	[i].[Id],
@@ -469,7 +469,7 @@ FROM
 WHERE
 	[i].[StrValue] <> N'5'
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Pk],
 	[t1].[Id],

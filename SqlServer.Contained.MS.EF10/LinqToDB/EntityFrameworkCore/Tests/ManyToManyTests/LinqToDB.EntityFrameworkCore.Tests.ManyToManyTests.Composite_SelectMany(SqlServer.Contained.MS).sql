@@ -7,7 +7,7 @@ INNER JOIN (
 ) AS [s] ON [p].[OrgId] = [s].[OrgId] AND [p].[Code] = [s].[Code]
 
 
--- SqlServer.2019
+-- SqlServer.2025
 SELECT
 	[o].[Id]
 FROM

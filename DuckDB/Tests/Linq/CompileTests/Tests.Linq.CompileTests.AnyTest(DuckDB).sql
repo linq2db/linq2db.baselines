@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $p  -- Int32
+DECLARE $p INTEGER -- Int32
 SET     $p = 1
 
 SELECT
@@ -13,7 +13,7 @@ SELECT
 	)
 
 -- DuckDB
-DECLARE $p  -- Int32
+DECLARE $p INTEGER -- Int32
 SET     $p = -1
 
 SELECT

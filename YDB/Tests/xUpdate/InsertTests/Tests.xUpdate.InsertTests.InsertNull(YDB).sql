@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $ParentID Int32
-SET     $ParentID = 1001
-DECLARE $Value1 Int32
-SET     $Value1 = NULL
+DECLARE ParentID Int32
+SET     ParentID = 1001
+DECLARE Value1 Int32
+SET     Value1 = NULL
 
 INSERT INTO Parent
 (

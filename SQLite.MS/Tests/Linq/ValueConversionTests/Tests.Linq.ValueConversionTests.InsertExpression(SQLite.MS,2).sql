@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @iteration  -- Int32
+DECLARE @iteration Integer -- Int32
 SET     @iteration = 2
 DECLARE @Value1 NVarChar(2) -- String
 SET     @Value1 = '[]'
@@ -32,7 +32,7 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-DECLARE @iteration  -- Int32
+DECLARE @iteration Integer -- Int32
 SET     @iteration = 2
 
 SELECT

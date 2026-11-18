@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DECLARE @p Int -- Int32
 SET     @p = 105
 
@@ -8,7 +8,7 @@ FROM
 WHERE
 	[r].[ID] >= 101 AND [r].[ID] < @p
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 101
 DECLARE @Value Int -- Int32
@@ -25,7 +25,7 @@ VALUES
 	@Value
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 102
 DECLARE @Value Int -- Int32
@@ -42,7 +42,7 @@ VALUES
 	@Value
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 103
 DECLARE @Value Int -- Int32
@@ -59,7 +59,7 @@ VALUES
 	@Value
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 104
 DECLARE @Value Int -- Int32
@@ -76,7 +76,7 @@ VALUES
 	@Value
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[r].[ID],
 	[r].[IntValue]
@@ -87,7 +87,7 @@ WHERE
 ORDER BY
 	[r].[ID]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[r].[ID],
 	[r].[IntValue],
@@ -99,7 +99,7 @@ WHERE
 ORDER BY
 	[r].[ID]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @p Int -- Int32
 SET     @p = 105
 

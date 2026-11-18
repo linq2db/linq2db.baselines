@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @InSeconds BigInt -- Int64
@@ -27,7 +27,7 @@ VALUES
 	@UndeclaredSeconds
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @InSeconds BigInt -- Int64
@@ -56,7 +56,7 @@ VALUES
 	@UndeclaredSeconds
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 3
 DECLARE @InSeconds BigInt -- Int64
@@ -85,7 +85,7 @@ VALUES
 	@UndeclaredSeconds
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 WITH [self0]
 (
 	[Level_1],

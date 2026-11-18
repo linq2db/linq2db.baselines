@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 WITH [CTE_1]
 (
 	[entry_FirstName],
@@ -52,7 +52,7 @@ SELECT TOP (1)
 FROM
 	[CTE_1] [t1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT TOP (1)
 	[t1].[FirstName],
 	[t1].[ID],

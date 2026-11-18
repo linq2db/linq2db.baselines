@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @True  -- Boolean
+DECLARE @True Integer -- Boolean
 SET     @True = 1
 
 SELECT
@@ -32,7 +32,7 @@ FROM
 	[BooleanTable] [t1]
 
 -- SQLite.MS SQLite
-DECLARE @False  -- Boolean
+DECLARE @False Integer -- Boolean
 SET     @False = 0
 
 SELECT
@@ -65,7 +65,7 @@ FROM
 	[BooleanTable] [t1]
 
 -- SQLite.MS SQLite
-DECLARE @TrueN  -- Boolean
+DECLARE @TrueN Integer -- Boolean
 SET     @TrueN = 1
 
 SELECT
@@ -98,7 +98,7 @@ FROM
 	[BooleanTable] [t1]
 
 -- SQLite.MS SQLite
-DECLARE @FalseN  -- Boolean
+DECLARE @FalseN Integer -- Boolean
 SET     @FalseN = 0
 
 SELECT
@@ -161,7 +161,7 @@ FROM
 	[BooleanTable] [t1]
 
 -- SQLite.MS SQLite
-DECLARE @True  -- Boolean
+DECLARE @True Integer -- Boolean
 SET     @True = 1
 
 SELECT
@@ -194,7 +194,7 @@ FROM
 	[BooleanTable] [t1]
 
 -- SQLite.MS SQLite
-DECLARE @False  -- Boolean
+DECLARE @False Integer -- Boolean
 SET     @False = 0
 
 SELECT
@@ -227,7 +227,7 @@ FROM
 	[BooleanTable] [t1]
 
 -- SQLite.MS SQLite
-DECLARE @TrueN  -- Boolean
+DECLARE @TrueN Integer -- Boolean
 SET     @TrueN = 1
 
 SELECT
@@ -260,7 +260,7 @@ FROM
 	[BooleanTable] [t1]
 
 -- SQLite.MS SQLite
-DECLARE @FalseN  -- Boolean
+DECLARE @FalseN Integer -- Boolean
 SET     @FalseN = 0
 
 SELECT
@@ -323,7 +323,7 @@ FROM
 	[BooleanTable] [t1]
 
 -- SQLite.MS SQLite
-DECLARE @True  -- Boolean
+DECLARE @True Integer -- Boolean
 SET     @True = 1
 
 SELECT
@@ -356,7 +356,7 @@ FROM
 	[BooleanTable] [t1]
 
 -- SQLite.MS SQLite
-DECLARE @False  -- Boolean
+DECLARE @False Integer -- Boolean
 SET     @False = 0
 
 SELECT
@@ -389,7 +389,7 @@ FROM
 	[BooleanTable] [t1]
 
 -- SQLite.MS SQLite
-DECLARE @TrueN  -- Boolean
+DECLARE @TrueN Integer -- Boolean
 SET     @TrueN = 1
 
 SELECT
@@ -422,7 +422,7 @@ FROM
 	[BooleanTable] [t1]
 
 -- SQLite.MS SQLite
-DECLARE @FalseN  -- Boolean
+DECLARE @FalseN Integer -- Boolean
 SET     @FalseN = 0
 
 SELECT
@@ -483,7 +483,7 @@ FROM
 	[BooleanTable] [t1]
 
 -- SQLite.MS SQLite
-DECLARE @True  -- Boolean
+DECLARE @True Integer -- Boolean
 SET     @True = 1
 
 SELECT
@@ -516,7 +516,7 @@ FROM
 	[BooleanTable] [t1]
 
 -- SQLite.MS SQLite
-DECLARE @False  -- Boolean
+DECLARE @False Integer -- Boolean
 SET     @False = 0
 
 SELECT
@@ -549,7 +549,7 @@ FROM
 	[BooleanTable] [t1]
 
 -- SQLite.MS SQLite
-DECLARE @TrueN  -- Boolean
+DECLARE @TrueN Integer -- Boolean
 SET     @TrueN = 1
 
 SELECT
@@ -582,7 +582,7 @@ FROM
 	[BooleanTable] [t1]
 
 -- SQLite.MS SQLite
-DECLARE @FalseN  -- Boolean
+DECLARE @FalseN Integer -- Boolean
 SET     @FalseN = 0
 
 SELECT

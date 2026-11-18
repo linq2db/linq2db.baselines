@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $param Int32
-SET     $param = 200
-DECLARE $ValueStr Text(3) -- String
-SET     $ValueStr = '200'u
+DECLARE param Int32
+SET     param = 200
+DECLARE ValueStr Text(3) -- String
+SET     ValueStr = '200'u
 
 INSERT INTO DestinationTable
 (
@@ -24,10 +24,10 @@ RETURNING
 	ValueStr
 
 -- YDB Ydb
-DECLARE $param Int32
-SET     $param = 200
-DECLARE $ValueStr Text(3) -- String
-SET     $ValueStr = '200'u
+DECLARE param Int32
+SET     param = 200
+DECLARE ValueStr Text(3) -- String
+SET     ValueStr = '200'u
 
 SELECT
 	s.Id + $param as Id,

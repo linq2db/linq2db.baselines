@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $value Bytes(2) -- Binary
-SET     $value = '\x04\x05's
+DECLARE value Bytes(2) -- Binary
+SET     value = '\x04\x05's
 
 INSERT INTO Issue1303
 (
@@ -38,8 +38,8 @@ WHERE
 LIMIT 2
 
 -- YDB Ydb
-DECLARE $value Bytes(2) -- Binary
-SET     $value = '\x04\x05's
+DECLARE value Bytes(2) -- Binary
+SET     value = '\x04\x05's
 
 SELECT
 	t1.ID as ID,

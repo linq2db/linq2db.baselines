@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $user Int32
-SET     $user = 3
+DECLARE user Int32
+SET     user = 3
 
 SELECT
 	p.ParentID as ParentID,

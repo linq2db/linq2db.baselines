@@ -1,11 +1,11 @@
 ﻿-- SQLite.Classic SQLite
 DECLARE @Name NVarChar(5) -- String
 SET     @Name = 'alice'
-DECLARE @Version  -- Int32
+DECLARE @Version Integer -- Int32
 SET     @Version = 1
-DECLARE @UpdatedAt  -- DateTime
+DECLARE @UpdatedAt Text -- DateTime
 SET     @UpdatedAt = NULL
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
 UPDATE

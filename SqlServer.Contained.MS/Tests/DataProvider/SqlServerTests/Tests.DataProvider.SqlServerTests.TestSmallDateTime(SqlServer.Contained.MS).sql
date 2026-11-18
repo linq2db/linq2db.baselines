@@ -1,16 +1,16 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT Cast('2012-12-12 12:12:00' as smalldatetime)
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT Cast('2012-12-12 12:12:00' as smalldatetime)
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @p SmallDateTime -- DateTime
 SET     @p = DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 0, 0, 7)
 
 SELECT @p
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @p SmallDateTime -- DateTime
 SET     @p = DATETIME2FROMPARTS(2012, 12, 12, 12, 12, 0, 0, 7)
 

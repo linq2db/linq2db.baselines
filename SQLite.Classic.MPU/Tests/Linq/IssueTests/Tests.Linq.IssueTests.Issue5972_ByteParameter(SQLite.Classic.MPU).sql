@@ -1,12 +1,12 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @min  -- Byte
+DECLARE @min Integer -- Byte
 SET     @min = 0
 
 SELECT
 	@min
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @max  -- Byte
+DECLARE @max Integer -- Byte
 SET     @max = 255
 
 SELECT

@@ -7,10 +7,10 @@ WHERE
 INSERT ASYNC BULK Parent(ParentID, Value1)
 
 -- YDB Ydb
-DECLARE $Ids0_1 Int32
-SET     $Ids0_1 = 1000
-DECLARE $Ids0_2 Int32
-SET     $Ids0_2 = 1001
+DECLARE Ids0_1 Int32
+SET     Ids0_1 = 1000
+DECLARE Ids0_2 Int32
+SET     Ids0_2 = 1001
 
 DELETE FROM
 	Parent

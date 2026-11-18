@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $take Int32
-SET     $take = 3
+DECLARE take Int32
+SET     take = 3
 
 SELECT
 	x.Id as Id
@@ -12,8 +12,8 @@ ORDER BY
 LIMIT $take
 
 -- YDB Ydb
-DECLARE $take Int32
-SET     $take = 3
+DECLARE take Int32
+SET     take = 3
 
 SELECT
 	x.Id as Id

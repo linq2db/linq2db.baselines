@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @skip  -- Int32
+DECLARE @skip Integer -- Int32
 SET     @skip = 3
 
 SELECT
@@ -15,7 +15,7 @@ ORDER BY
 LIMIT 1 OFFSET @skip
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @skip  -- Int32
+DECLARE @skip Integer -- Int32
 SET     @skip = 3
 
 SELECT

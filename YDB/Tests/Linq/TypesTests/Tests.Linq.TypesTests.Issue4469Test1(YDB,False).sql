@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $param Int32
-SET     $param = 33
+DECLARE param Int32
+SET     param = 33
 
 SELECT
 	v.`Integer` / $param as Integer_1,

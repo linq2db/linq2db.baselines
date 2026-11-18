@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Key_1],
 	Coalesce((
@@ -41,7 +41,7 @@ FROM
 ORDER BY
 	[t1].[Key_1]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[PK],
 	[t1].[Id],

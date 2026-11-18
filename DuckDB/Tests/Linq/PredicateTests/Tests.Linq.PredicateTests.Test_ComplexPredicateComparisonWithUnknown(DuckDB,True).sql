@@ -7,7 +7,7 @@ WHERE
 	r.Value1 = 1
 
 -- DuckDB
-DECLARE $cnt  -- Int32
+DECLARE $cnt INTEGER -- Int32
 SET     $cnt = 18
 
 SELECT
@@ -40,7 +40,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $cnt  -- Int32
+DECLARE $cnt INTEGER -- Int32
 SET     $cnt = 18
 
 SELECT
@@ -73,7 +73,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $cnt  -- Int32
+DECLARE $cnt INTEGER -- Int32
 SET     $cnt = 18
 
 SELECT
@@ -105,7 +105,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $cnt  -- Int32
+DECLARE $cnt INTEGER -- Int32
 SET     $cnt = 18
 
 SELECT
@@ -137,7 +137,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $cnt  -- Int32
+DECLARE $cnt INTEGER -- Int32
 SET     $cnt = 18
 
 SELECT
@@ -169,7 +169,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $cnt  -- Int32
+DECLARE $cnt INTEGER -- Int32
 SET     $cnt = 18
 
 SELECT
@@ -201,7 +201,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $cnt  -- Int32
+DECLARE $cnt INTEGER -- Int32
 SET     $cnt = 18
 
 SELECT
@@ -237,7 +237,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $cnt  -- Int32
+DECLARE $cnt INTEGER -- Int32
 SET     $cnt = 18
 
 SELECT
@@ -273,7 +273,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $cnt  -- Int32
+DECLARE $cnt INTEGER -- Int32
 SET     $cnt = 18
 
 SELECT
@@ -306,7 +306,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $cnt  -- Int32
+DECLARE $cnt INTEGER -- Int32
 SET     $cnt = 18
 
 SELECT
@@ -339,7 +339,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $cnt  -- Int32
+DECLARE $cnt INTEGER -- Int32
 SET     $cnt = 18
 
 SELECT
@@ -375,7 +375,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $cnt  -- Int32
+DECLARE $cnt INTEGER -- Int32
 SET     $cnt = 18
 
 SELECT
@@ -411,7 +411,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $cnt  -- Int32
+DECLARE $cnt INTEGER -- Int32
 SET     $cnt = 18
 
 SELECT
@@ -443,7 +443,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $cnt  -- Int32
+DECLARE $cnt INTEGER -- Int32
 SET     $cnt = 18
 
 SELECT
@@ -475,7 +475,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $cnt  -- Int32
+DECLARE $cnt INTEGER -- Int32
 SET     $cnt = 18
 
 SELECT
@@ -511,7 +511,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $cnt  -- Int32
+DECLARE $cnt INTEGER -- Int32
 SET     $cnt = 18
 
 SELECT
@@ -547,7 +547,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $cnt  -- Int32
+DECLARE $cnt INTEGER -- Int32
 SET     $cnt = 18
 
 SELECT
@@ -579,7 +579,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $cnt  -- Int32
+DECLARE $cnt INTEGER -- Int32
 SET     $cnt = 18
 
 SELECT
@@ -611,7 +611,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $cnt  -- Int32
+DECLARE $cnt INTEGER -- Int32
 SET     $cnt = 18
 
 SELECT
@@ -643,7 +643,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $cnt  -- Int32
+DECLARE $cnt INTEGER -- Int32
 SET     $cnt = 18
 
 SELECT
@@ -675,7 +675,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $cnt  -- Int32
+DECLARE $cnt INTEGER -- Int32
 SET     $cnt = 18
 
 SELECT
@@ -707,7 +707,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $cnt  -- Int32
+DECLARE $cnt INTEGER -- Int32
 SET     $cnt = 18
 
 SELECT
@@ -739,7 +739,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $cnt  -- Int32
+DECLARE $cnt INTEGER -- Int32
 SET     $cnt = 18
 
 SELECT
@@ -771,7 +771,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $cnt  -- Int32
+DECLARE $cnt INTEGER -- Int32
 SET     $cnt = 18
 
 SELECT
@@ -803,7 +803,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $cnt  -- Int32
+DECLARE $cnt INTEGER -- Int32
 SET     $cnt = 18
 
 SELECT
@@ -839,7 +839,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $cnt  -- Int32
+DECLARE $cnt INTEGER -- Int32
 SET     $cnt = 18
 
 SELECT
@@ -875,7 +875,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $cnt  -- Int32
+DECLARE $cnt INTEGER -- Int32
 SET     $cnt = 18
 
 SELECT
@@ -911,7 +911,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $cnt  -- Int32
+DECLARE $cnt INTEGER -- Int32
 SET     $cnt = 18
 
 SELECT
@@ -947,7 +947,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $cnt  -- Int32
+DECLARE $cnt INTEGER -- Int32
 SET     $cnt = 18
 
 SELECT
@@ -983,7 +983,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $cnt  -- Int32
+DECLARE $cnt INTEGER -- Int32
 SET     $cnt = 18
 
 SELECT
@@ -1019,7 +1019,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $cnt  -- Int32
+DECLARE $cnt INTEGER -- Int32
 SET     $cnt = 18
 
 SELECT
@@ -1055,7 +1055,7 @@ FROM
 	BooleanTable t1
 
 -- DuckDB
-DECLARE $cnt  -- Int32
+DECLARE $cnt INTEGER -- Int32
 SET     $cnt = 18
 
 SELECT

@@ -8,8 +8,8 @@ WHERE
 LIMIT 1
 
 -- YDB Ydb
-DECLARE $p Text(4) -- String
-SET     $p = 'John'u
+DECLARE p Text(4) -- String
+SET     p = 'John'u
 
 SELECT
 	p.FirstName as FirstName

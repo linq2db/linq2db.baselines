@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $take Int32
-SET     $take = 3
+DECLARE take Int32
+SET     take = 3
 
 SELECT
 	MIN(t2.ParentID) as Min_1

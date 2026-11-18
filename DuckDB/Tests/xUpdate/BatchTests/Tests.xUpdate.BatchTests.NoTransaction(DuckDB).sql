@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $ParentID  -- Int32
+DECLARE $ParentID INTEGER -- Int32
 SET     $ParentID = 1111
 
 DELETE FROM
@@ -8,7 +8,7 @@ WHERE
 	p.ParentID = $ParentID
 
 -- DuckDB
-DECLARE $ParentID  -- Int32
+DECLARE $ParentID INTEGER -- Int32
 SET     $ParentID = 2111
 
 DELETE FROM
@@ -17,7 +17,7 @@ WHERE
 	p.ParentID = $ParentID
 
 -- DuckDB
-DECLARE $ParentID  -- Int32
+DECLARE $ParentID INTEGER -- Int32
 SET     $ParentID = 3111
 
 DELETE FROM
@@ -26,7 +26,7 @@ WHERE
 	p.ParentID = $ParentID
 
 -- DuckDB
-DECLARE $ParentID  -- Int32
+DECLARE $ParentID INTEGER -- Int32
 SET     $ParentID = 4111
 
 DELETE FROM
@@ -50,7 +50,7 @@ ORDER BY
 INSERT BULK Parent(ParentID, Value1)
 
 -- DuckDB
-DECLARE $ParentID  -- Int32
+DECLARE $ParentID INTEGER -- Int32
 SET     $ParentID = 1111
 
 DELETE FROM
@@ -59,7 +59,7 @@ WHERE
 	p.ParentID = $ParentID
 
 -- DuckDB
-DECLARE $ParentID  -- Int32
+DECLARE $ParentID INTEGER -- Int32
 SET     $ParentID = 2111
 
 DELETE FROM
@@ -68,7 +68,7 @@ WHERE
 	p.ParentID = $ParentID
 
 -- DuckDB
-DECLARE $ParentID  -- Int32
+DECLARE $ParentID INTEGER -- Int32
 SET     $ParentID = 3111
 
 DELETE FROM
@@ -77,7 +77,7 @@ WHERE
 	p.ParentID = $ParentID
 
 -- DuckDB
-DECLARE $ParentID  -- Int32
+DECLARE $ParentID INTEGER -- Int32
 SET     $ParentID = 4111
 
 DELETE FROM

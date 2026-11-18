@@ -1,13 +1,13 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(8) -- String
 SET     @Name = 'root-ins'
-DECLARE @Version  -- Int32
+DECLARE @Version Integer -- Int32
 SET     @Version = 1
-DECLARE @CreatedAt  -- DateTime
+DECLARE @CreatedAt Text -- DateTime
 SET     @CreatedAt = NULL
-DECLARE @modified  -- DateTime
+DECLARE @modified Text(23) -- DateTime
 SET     @modified = '2026-02-02 09:00:00.000'
 DECLARE @UpdatedBy NVarChar(12) -- String
 SET     @UpdatedBy = 'sys-root-ins'
@@ -51,15 +51,15 @@ FROM
 LIMIT 2
 
 -- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(8) -- String
 SET     @Name = 'root-upd'
-DECLARE @Version  -- Int32
+DECLARE @Version Integer -- Int32
 SET     @Version = 2
-DECLARE @CreatedAt  -- DateTime
+DECLARE @CreatedAt Text -- DateTime
 SET     @CreatedAt = NULL
-DECLARE @modified  -- DateTime
+DECLARE @modified Text(23) -- DateTime
 SET     @modified = '2026-02-02 09:00:00.000'
 DECLARE @UpdatedBy NVarChar(12) -- String
 SET     @UpdatedBy = 'sys-root-upd'

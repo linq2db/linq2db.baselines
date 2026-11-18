@@ -1,7 +1,7 @@
 ﻿-- SQLite.MS SQLite
 DECLARE @Last NVarChar(8) -- String
 SET     @Last = 'upd-last'
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
 UPDATE

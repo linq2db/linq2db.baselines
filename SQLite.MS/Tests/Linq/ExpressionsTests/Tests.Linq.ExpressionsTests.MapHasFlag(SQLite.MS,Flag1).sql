@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @flag  -- Int32
+DECLARE @flag Integer -- Int32
 SET     @flag = 1
 
 SELECT

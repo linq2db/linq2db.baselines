@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @dt  -- DateTime
+DECLARE @dt Text(23) -- DateTime
 SET     @dt = '2020-02-29 17:54:55.123'
 
 SELECT

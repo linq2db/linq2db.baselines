@@ -1,16 +1,16 @@
 ﻿-- YDB Ydb
-DECLARE $cpty Text(3) -- String
-SET     $cpty = '%C%'u
-DECLARE $cpty_1 Text(3) -- String
-SET     $cpty_1 = '%C%'u
-DECLARE $cpty_2 Text(3) -- String
-SET     $cpty_2 = '%C%'u
-DECLARE $cpty_3 Text(3) -- String
-SET     $cpty_3 = '%C%'u
-DECLARE $cpty_4 Text(3) -- String
-SET     $cpty_4 = '%C%'u
-DECLARE $cpty_5 Text(3) -- String
-SET     $cpty_5 = '%C%'u
+DECLARE cpty Text(3) -- String
+SET     cpty = '%C%'u
+DECLARE cpty_1 Text(3) -- String
+SET     cpty_1 = '%C%'u
+DECLARE cpty_2 Text(3) -- String
+SET     cpty_2 = '%C%'u
+DECLARE cpty_3 Text(3) -- String
+SET     cpty_3 = '%C%'u
+DECLARE cpty_4 Text(3) -- String
+SET     cpty_4 = '%C%'u
+DECLARE cpty_5 Text(3) -- String
+SET     cpty_5 = '%C%'u
 
 SELECT
 	al_group_3.Id as Id,

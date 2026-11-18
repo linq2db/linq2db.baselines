@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $parentId Int32
-SET     $parentId = 111
+DECLARE parentId Int32
+SET     parentId = 111
 
 SELECT
 	version_1.inIdMain as inIdMain

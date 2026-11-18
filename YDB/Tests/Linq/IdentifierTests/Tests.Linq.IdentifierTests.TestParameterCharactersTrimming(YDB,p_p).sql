@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $p_p Int32
-SET     $p_p = 2
+DECLARE p_p Int32
+SET     p_p = 2
 
 UPDATE
 	testparams

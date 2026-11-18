@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 100
 DECLARE $CharColumn Char -- AnsiStringFixedLength
 SET     $CharColumn = NULL

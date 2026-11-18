@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $p Int32
-SET     $p = 1
+DECLARE p Int32
+SET     p = 1
 
 SELECT
 	m_1.ParentID as ParentID,
@@ -19,8 +19,8 @@ FROM
 		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 -- YDB Ydb
-DECLARE $p Int32
-SET     $p = 1
+DECLARE p Int32
+SET     p = 1
 
 SELECT
 	p.ParentID as ParentID,
@@ -32,8 +32,8 @@ WHERE
 LIMIT 1
 
 -- YDB Ydb
-DECLARE $p Int32
-SET     $p = 2
+DECLARE p Int32
+SET     p = 2
 
 SELECT
 	m_1.ParentID as ParentID,
@@ -52,8 +52,8 @@ FROM
 		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 -- YDB Ydb
-DECLARE $p Int32
-SET     $p = 2
+DECLARE p Int32
+SET     p = 2
 
 SELECT
 	p.ParentID as ParentID,

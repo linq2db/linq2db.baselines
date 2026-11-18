@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $value  -- Boolean
+DECLARE $value BOOLEAN -- Boolean
 SET     $value = True
 
 SELECT
@@ -11,7 +11,7 @@ WHERE
 	t."Value" = $value
 
 -- DuckDB
-DECLARE $value  -- Boolean
+DECLARE $value BOOLEAN -- Boolean
 SET     $value = True
 
 SELECT
@@ -23,7 +23,7 @@ WHERE
 	t."Value" = $value
 
 -- DuckDB
-DECLARE $value  -- Boolean
+DECLARE $value BOOLEAN -- Boolean
 SET     $value = True
 
 SELECT
@@ -35,7 +35,7 @@ WHERE
 	t."Value" <> $value OR t."Value" IS NULL
 
 -- DuckDB
-DECLARE $value  -- Boolean
+DECLARE $value BOOLEAN -- Boolean
 SET     $value = True
 
 SELECT

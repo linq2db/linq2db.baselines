@@ -11,8 +11,8 @@ WHERE
 	p.FirstName = 'John'u OR p.LastName = 'John'u
 
 -- YDB Ydb
-DECLARE $firstName Text(4) -- String
-SET     $firstName = 'John'u
+DECLARE firstName Text(4) -- String
+SET     firstName = 'John'u
 
 SELECT
 	p.FirstName as FirstName,

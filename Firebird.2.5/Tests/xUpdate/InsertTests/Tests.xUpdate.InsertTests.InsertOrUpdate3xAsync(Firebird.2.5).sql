@@ -43,7 +43,7 @@ USING (SELECT CAST(@id2 AS Int) AS "PersonID" FROM rdb$database) "s" ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"Diagnosis" = CHAR_LENGTH("t1"."Diagnosis") + CAST(@i AS Int)
+		"Diagnosis" = (CHAR_LENGTH("t1"."Diagnosis") + CAST(@i AS Int))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -72,7 +72,7 @@ USING (SELECT CAST(@id2 AS Int) AS "PersonID" FROM rdb$database) "s" ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"Diagnosis" = CHAR_LENGTH("t1"."Diagnosis") + CAST(@i AS Int)
+		"Diagnosis" = (CHAR_LENGTH("t1"."Diagnosis") + CAST(@i AS Int))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -101,7 +101,7 @@ USING (SELECT CAST(@id2 AS Int) AS "PersonID" FROM rdb$database) "s" ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"Diagnosis" = CHAR_LENGTH("t1"."Diagnosis") + CAST(@i AS Int)
+		"Diagnosis" = (CHAR_LENGTH("t1"."Diagnosis") + CAST(@i AS Int))
 WHEN NOT MATCHED THEN
 	INSERT
 	(

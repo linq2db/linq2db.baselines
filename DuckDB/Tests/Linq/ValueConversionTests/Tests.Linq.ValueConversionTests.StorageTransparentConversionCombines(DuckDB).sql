@@ -1,9 +1,9 @@
 ﻿-- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
-DECLARE $Marked  -- Int32
+DECLARE $Marked INTEGER -- Int32
 SET     $Marked = 5
-DECLARE $Plain  -- Int32
+DECLARE $Plain INTEGER -- Int32
 SET     $Plain = 5
 
 INSERT INTO StorageTransparentRow
@@ -20,11 +20,11 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 2
-DECLARE $Marked  -- Int32
+DECLARE $Marked INTEGER -- Int32
 SET     $Marked = 6
-DECLARE $Plain  -- Int32
+DECLARE $Plain INTEGER -- Int32
 SET     $Plain = 7
 
 INSERT INTO StorageTransparentRow

@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS FluentTemp_Update
 )
 
 -- DuckDB
-DECLARE $ID  -- Int32
+DECLARE $ID INTEGER -- Int32
 SET     $ID = 1
 DECLARE $Name NVarChar(4) -- String
 SET     $Name = 'John'

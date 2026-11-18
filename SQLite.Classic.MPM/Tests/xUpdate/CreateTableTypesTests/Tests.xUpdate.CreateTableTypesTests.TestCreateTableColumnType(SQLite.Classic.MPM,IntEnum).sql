@@ -1,7 +1,7 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @IntEnum  -- Int32
+DECLARE @IntEnum Integer -- Int32
 SET     @IntEnum = 11
 
 INSERT INTO [CreateTableTypes]
@@ -16,9 +16,9 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @IntEnum  -- Int32
+DECLARE @IntEnum Integer -- Int32
 SET     @IntEnum = 60
 
 INSERT INTO [CreateTableTypes]

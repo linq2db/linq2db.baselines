@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $test Timestamp -- DateTime2
-SET     $test = Timestamp('2026-06-06T02:01:01.000000Z')
+DECLARE test Timestamp -- DateTime2
+SET     test = Timestamp('2026-06-06T02:01:01.000000Z')
 
 UPDATE
 	Issue5975Row

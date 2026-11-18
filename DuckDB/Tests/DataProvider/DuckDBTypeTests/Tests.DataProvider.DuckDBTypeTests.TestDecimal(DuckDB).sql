@@ -26,7 +26,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(1, 0)
 SET     $Column = 0
@@ -64,7 +64,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(1, 0)
 SET     $p2 = 0
@@ -185,7 +185,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(18, 3)
 SET     $Column = 999999999999999.999
@@ -225,7 +225,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(18, 3)
 SET     $p2 = 999999999999999.999
@@ -352,7 +352,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(1, 0)
 SET     $Column = 0
@@ -390,7 +390,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(1, 0)
 SET     $p2 = 0
@@ -511,7 +511,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(1, 0)
 SET     $Column = -9
@@ -551,7 +551,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(1, 0)
 SET     $p2 = -9
@@ -678,7 +678,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(1, 0)
 SET     $Column = 0
@@ -716,7 +716,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(1, 0)
 SET     $p2 = 0
@@ -837,7 +837,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(1, 1)
 SET     $Column = -0.9
@@ -877,7 +877,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(1, 1)
 SET     $p2 = -0.9
@@ -1004,7 +1004,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(1, 0)
 SET     $Column = 0
@@ -1042,7 +1042,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(1, 0)
 SET     $p2 = 0
@@ -1163,7 +1163,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(2, 0)
 SET     $Column = -99
@@ -1203,7 +1203,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(2, 0)
 SET     $p2 = -99
@@ -1330,7 +1330,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(1, 0)
 SET     $Column = 0
@@ -1368,7 +1368,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(1, 0)
 SET     $p2 = 0
@@ -1489,7 +1489,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(2, 1)
 SET     $Column = -9.9
@@ -1529,7 +1529,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(2, 1)
 SET     $p2 = -9.9
@@ -1656,7 +1656,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(1, 0)
 SET     $Column = 0
@@ -1694,7 +1694,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(1, 0)
 SET     $p2 = 0
@@ -1815,7 +1815,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(2, 2)
 SET     $Column = -0.99
@@ -1855,7 +1855,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(2, 2)
 SET     $p2 = -0.99
@@ -1982,7 +1982,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(1, 0)
 SET     $Column = 0
@@ -2020,7 +2020,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(1, 0)
 SET     $p2 = 0
@@ -2141,7 +2141,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(21, 0)
 SET     $Column = -999999999999999999999
@@ -2181,7 +2181,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(21, 0)
 SET     $p2 = -999999999999999999999
@@ -2308,7 +2308,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(1, 0)
 SET     $Column = 0
@@ -2346,7 +2346,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(1, 0)
 SET     $p2 = 0
@@ -2467,7 +2467,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(21, 1)
 SET     $Column = -99999999999999999999.9
@@ -2507,7 +2507,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(21, 1)
 SET     $p2 = -99999999999999999999.9
@@ -2634,7 +2634,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(1, 0)
 SET     $Column = 0
@@ -2672,7 +2672,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(1, 0)
 SET     $p2 = 0
@@ -2793,7 +2793,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(21, 9)
 SET     $Column = -999999999999.999999999
@@ -2833,7 +2833,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(21, 9)
 SET     $p2 = -999999999999.999999999
@@ -2960,7 +2960,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(1, 0)
 SET     $Column = 0
@@ -2998,7 +2998,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(1, 0)
 SET     $p2 = 0
@@ -3119,7 +3119,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(21, 20)
 SET     $Column = -9.99999999999999999999
@@ -3159,7 +3159,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(21, 20)
 SET     $p2 = -9.99999999999999999999
@@ -3286,7 +3286,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(1, 0)
 SET     $Column = 0
@@ -3324,7 +3324,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(1, 0)
 SET     $p2 = 0
@@ -3445,7 +3445,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(21, 21)
 SET     $Column = -0.999999999999999999999
@@ -3485,7 +3485,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(21, 21)
 SET     $p2 = -0.999999999999999999999
@@ -3612,7 +3612,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(1, 0)
 SET     $Column = 0
@@ -3650,7 +3650,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(1, 0)
 SET     $p2 = 0
@@ -3771,7 +3771,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(22, 0)
 SET     $Column = -9999999999999999999999
@@ -3811,7 +3811,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(22, 0)
 SET     $p2 = -9999999999999999999999
@@ -3938,7 +3938,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(1, 0)
 SET     $Column = 0
@@ -3976,7 +3976,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(1, 0)
 SET     $p2 = 0
@@ -4097,7 +4097,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(22, 1)
 SET     $Column = -999999999999999999999.9
@@ -4137,7 +4137,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(22, 1)
 SET     $p2 = -999999999999999999999.9
@@ -4264,7 +4264,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(1, 0)
 SET     $Column = 0
@@ -4302,7 +4302,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(1, 0)
 SET     $p2 = 0
@@ -4423,7 +4423,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(22, 9)
 SET     $Column = -9999999999999.999999999
@@ -4463,7 +4463,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(22, 9)
 SET     $p2 = -9999999999999.999999999
@@ -4590,7 +4590,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(1, 0)
 SET     $Column = 0
@@ -4628,7 +4628,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(1, 0)
 SET     $p2 = 0
@@ -4749,7 +4749,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(22, 21)
 SET     $Column = -9.999999999999999999999
@@ -4789,7 +4789,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(22, 21)
 SET     $p2 = -9.999999999999999999999
@@ -4916,7 +4916,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(1, 0)
 SET     $Column = 0
@@ -4954,7 +4954,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(1, 0)
 SET     $p2 = 0
@@ -5075,7 +5075,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(22, 22)
 SET     $Column = -0.9999999999999999999999
@@ -5115,7 +5115,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(22, 22)
 SET     $p2 = -0.9999999999999999999999
@@ -5242,7 +5242,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(1, 0)
 SET     $Column = 0
@@ -5280,7 +5280,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(1, 0)
 SET     $p2 = 0
@@ -5401,7 +5401,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(23, 0)
 SET     $Column = -99999999999999999999999
@@ -5441,7 +5441,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(23, 0)
 SET     $p2 = -99999999999999999999999
@@ -5568,7 +5568,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(1, 0)
 SET     $Column = 0
@@ -5606,7 +5606,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(1, 0)
 SET     $p2 = 0
@@ -5727,7 +5727,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(23, 1)
 SET     $Column = -9999999999999999999999.9
@@ -5767,7 +5767,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(23, 1)
 SET     $p2 = -9999999999999999999999.9
@@ -5894,7 +5894,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(1, 0)
 SET     $Column = 0
@@ -5932,7 +5932,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(1, 0)
 SET     $p2 = 0
@@ -6053,7 +6053,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(23, 9)
 SET     $Column = -99999999999999.999999999
@@ -6093,7 +6093,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(23, 9)
 SET     $p2 = -99999999999999.999999999
@@ -6220,7 +6220,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(1, 0)
 SET     $Column = 0
@@ -6258,7 +6258,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(1, 0)
 SET     $p2 = 0
@@ -6379,7 +6379,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(23, 22)
 SET     $Column = -9.9999999999999999999999
@@ -6419,7 +6419,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(23, 22)
 SET     $p2 = -9.9999999999999999999999
@@ -6546,7 +6546,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(1, 0)
 SET     $Column = 0
@@ -6584,7 +6584,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(1, 0)
 SET     $p2 = 0
@@ -6705,7 +6705,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(23, 23)
 SET     $Column = -0.99999999999999999999999
@@ -6745,7 +6745,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(23, 23)
 SET     $p2 = -0.99999999999999999999999
@@ -6872,7 +6872,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(1, 0)
 SET     $Column = 0
@@ -6910,7 +6910,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(1, 0)
 SET     $p2 = 0
@@ -7031,7 +7031,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(29, 0)
 SET     $Column = -79228162514264337593543950335
@@ -7071,7 +7071,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(29, 0)
 SET     $p2 = -79228162514264337593543950335
@@ -7198,7 +7198,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(1, 0)
 SET     $Column = 0
@@ -7236,7 +7236,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(1, 0)
 SET     $p2 = 0
@@ -7357,7 +7357,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(29, 1)
 SET     $Column = -7922816251426433759354395033.5
@@ -7397,7 +7397,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(29, 1)
 SET     $p2 = -7922816251426433759354395033.5
@@ -7524,7 +7524,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(1, 0)
 SET     $Column = 0
@@ -7562,7 +7562,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(1, 0)
 SET     $p2 = 0
@@ -7683,7 +7683,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(29, 9)
 SET     $Column = -79228162514264337593.543950335
@@ -7723,7 +7723,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(29, 9)
 SET     $p2 = -79228162514264337593.543950335
@@ -7850,7 +7850,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(1, 0)
 SET     $Column = 0
@@ -7888,7 +7888,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(1, 0)
 SET     $p2 = 0
@@ -8009,7 +8009,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(28, 28)
 SET     $Column = -0.0000000792281625142643375935
@@ -8049,7 +8049,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(28, 28)
 SET     $p2 = -0.0000000792281625142643375935
@@ -8176,7 +8176,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(1, 0)
 SET     $Column = 0
@@ -8214,7 +8214,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(1, 0)
 SET     $p2 = 0
@@ -8335,7 +8335,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(28, 28)
 SET     $Column = -0.0000000079228162514264337594
@@ -8375,7 +8375,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(28, 28)
 SET     $p2 = -0.0000000079228162514264337594
@@ -8502,7 +8502,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(1, 0)
 SET     $Column = 0
@@ -8540,7 +8540,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(1, 0)
 SET     $p2 = 0
@@ -8661,7 +8661,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(29, 0)
 SET     $Column = -79228162514264337593543950335
@@ -8701,7 +8701,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(29, 0)
 SET     $p2 = -79228162514264337593543950335
@@ -8828,7 +8828,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(1, 0)
 SET     $Column = 0
@@ -8866,7 +8866,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(1, 0)
 SET     $p2 = 0
@@ -8987,7 +8987,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(29, 1)
 SET     $Column = -7922816251426433759354395033.5
@@ -9027,7 +9027,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(29, 1)
 SET     $p2 = -7922816251426433759354395033.5
@@ -9154,7 +9154,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(1, 0)
 SET     $Column = 0
@@ -9192,7 +9192,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(1, 0)
 SET     $p2 = 0
@@ -9313,7 +9313,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(29, 9)
 SET     $Column = -79228162514264337593.543950335
@@ -9353,7 +9353,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(29, 9)
 SET     $p2 = -79228162514264337593.543950335
@@ -9480,7 +9480,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(1, 0)
 SET     $Column = 0
@@ -9518,7 +9518,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(1, 0)
 SET     $p2 = 0
@@ -9639,7 +9639,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(28, 28)
 SET     $Column = -0.0000000079228162514264337594
@@ -9679,7 +9679,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(28, 28)
 SET     $p2 = -0.0000000079228162514264337594
@@ -9806,7 +9806,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(1, 0)
 SET     $Column = 0
@@ -9844,7 +9844,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(1, 0)
 SET     $p2 = 0
@@ -9965,7 +9965,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Column Decimal(28, 28)
 SET     $Column = -0.0000000007922816251426433759
@@ -10005,7 +10005,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
 DECLARE $p2 Decimal(28, 28)
 SET     $p2 = -0.0000000007922816251426433759

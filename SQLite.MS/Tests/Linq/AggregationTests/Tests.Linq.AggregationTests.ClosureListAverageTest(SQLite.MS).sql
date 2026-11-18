@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @p  -- Double
+DECLARE @p Integer -- Double
 SET     @p = 0
 
 SELECT

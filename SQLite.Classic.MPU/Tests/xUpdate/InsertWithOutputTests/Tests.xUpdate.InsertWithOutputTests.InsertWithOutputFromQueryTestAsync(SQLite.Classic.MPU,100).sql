@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @param  -- Int32
+DECLARE @param Integer -- Int32
 SET     @param = 100
 DECLARE @ValueStr NVarChar(3) -- String
 SET     @ValueStr = '100'
@@ -24,7 +24,7 @@ RETURNING
 	[DestinationTable].[ValueStr]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @param  -- Int32
+DECLARE @param Integer -- Int32
 SET     @param = 100
 DECLARE @ValueStr NVarChar(3) -- String
 SET     @ValueStr = '100'

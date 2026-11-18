@@ -17,8 +17,8 @@ WHERE
 LIMIT 2
 
 -- YDB Ydb
-DECLARE $UserId Int32
-SET     $UserId = 2
+DECLARE UserId Int32
+SET     UserId = 2
 
 SELECT
 	x.Id as Id
@@ -29,8 +29,8 @@ WHERE
 LIMIT 2
 
 -- YDB Ydb
-DECLARE $UserId Int32
-SET     $UserId = 2
+DECLARE UserId Int32
+SET     UserId = 2
 
 SELECT
 	x.Id as Id

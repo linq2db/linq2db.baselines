@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $bound  -- Date
+DECLARE $bound DATE -- Date
 SET     $bound = '2000-01-01'::DATE
 
 SELECT

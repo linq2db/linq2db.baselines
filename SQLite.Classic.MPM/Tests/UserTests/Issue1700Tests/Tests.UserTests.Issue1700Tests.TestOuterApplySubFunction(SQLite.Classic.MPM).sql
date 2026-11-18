@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @groupId  -- Int32
+DECLARE @groupId Integer -- Int32
 SET     @groupId = 5
 
 SELECT

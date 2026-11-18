@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $fm Text(1) -- AnsiStringFixedLength
-SET     $fm = 'F'u
+DECLARE fm Text(1) -- AnsiStringFixedLength
+SET     fm = 'F'u
 
 SELECT
 	p.FirstName as FirstName,

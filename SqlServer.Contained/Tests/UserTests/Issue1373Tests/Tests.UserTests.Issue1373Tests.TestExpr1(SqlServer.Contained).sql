@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 INSERT INTO [Issue1373Tests]
 (
 	[Id],
@@ -10,7 +10,7 @@ VALUES
 	NULL
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 INSERT INTO [Issue1373Tests]
 (
 	[Id],
@@ -22,7 +22,7 @@ VALUES
 	NULL
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 INSERT INTO [Issue1373Tests]
 (
 	[Id],
@@ -34,7 +34,7 @@ VALUES
 	N'test'
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Field1]

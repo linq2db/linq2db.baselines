@@ -11,7 +11,7 @@ WHERE
 	t1.ParentID > 1000
 
 -- DuckDB
-DECLARE $values  -- Int32
+DECLARE $values INTEGER -- Int32
 SET     $values = 1001
 
 INSERT INTO Parent
@@ -26,7 +26,7 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $values  -- Int32
+DECLARE $values INTEGER -- Int32
 SET     $values = 1002
 
 INSERT INTO Parent

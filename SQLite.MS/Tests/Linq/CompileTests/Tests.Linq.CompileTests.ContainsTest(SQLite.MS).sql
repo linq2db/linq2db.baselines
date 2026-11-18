@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1
 
 SELECT
@@ -15,7 +15,7 @@ SELECT
 	END
 
 -- SQLite.MS SQLite
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Integer -- Int32
 SET     @ParentID = -1
 
 SELECT

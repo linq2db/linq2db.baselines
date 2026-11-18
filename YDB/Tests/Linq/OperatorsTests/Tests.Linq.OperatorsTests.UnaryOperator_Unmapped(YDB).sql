@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $value Int32
-SET     $value = -2
+DECLARE value Int32
+SET     value = -2
 
 SELECT
 	r.Id as Id,

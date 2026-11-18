@@ -30,8 +30,6 @@ WHERE
 
 
 
-
-
 -- MySql.8.0.MySqlConnector MySql80
 SELECT
 	`e`.`IsDeleted`,
@@ -53,6 +51,8 @@ FROM
 	`Orders` `e`
 WHERE
 	NOT `e`.`IsDeleted`
+
+
 
 
 

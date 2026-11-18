@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $ID Int32
-SET     $ID = 1
-DECLARE $Data Text(9) -- String
-SET     $Data = '***OOO***'u
+DECLARE ID Int32
+SET     ID = 1
+DECLARE Data Text(9) -- String
+SET     Data = '***OOO***'u
 
 INSERT INTO TrimTestTable
 (

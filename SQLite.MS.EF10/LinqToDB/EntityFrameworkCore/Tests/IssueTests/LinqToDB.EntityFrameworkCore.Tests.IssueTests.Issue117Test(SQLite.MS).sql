@@ -8,7 +8,7 @@ WHERE "p0"."PatentId" IS NULL OR "p0"."TechnicalReviewerId" <> @userId OR "p0"."
 
 
 -- SQLite.MS SQLite
-DECLARE @userId  -- Int32
+DECLARE @userId Integer -- Int32
 SET     @userId = 1
 
 SELECT

@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 MERGE INTO [Issue5289Table] [t1]
 USING (SELECT 1 AS [Id]) [s] ON
 (
@@ -22,7 +22,7 @@ WHEN NOT MATCHED THEN
 		0
 	);
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT TOP (2)
 	[r].[Id],
 	[r].[PictureId],
@@ -32,7 +32,7 @@ FROM
 WHERE
 	[r].[Deleted] = 0 AND [r].[Id] = 1
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 MERGE INTO [Issue5289Table] [t1]
 USING (SELECT 1 AS [Id]) [s] ON
 (
@@ -56,7 +56,7 @@ WHEN NOT MATCHED THEN
 		0
 	);
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT TOP (2)
 	[r].[Id],
 	[r].[PictureId],

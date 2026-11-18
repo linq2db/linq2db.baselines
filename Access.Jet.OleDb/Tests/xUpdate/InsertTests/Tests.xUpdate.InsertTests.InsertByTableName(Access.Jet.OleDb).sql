@@ -49,7 +49,8 @@ VALUES
 )
 
 -- Access.Jet.OleDb AccessOleDb
-SELECT @@IDENTITY
+SELECT
+	@@IDENTITY
 
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @FirstName VarWChar(6) -- String
@@ -77,7 +78,8 @@ VALUES
 )
 
 -- Access.Jet.OleDb AccessOleDb
-SELECT @@IDENTITY
+SELECT
+	@@IDENTITY
 
 -- Access.Jet.OleDb AccessOleDb
 SELECT

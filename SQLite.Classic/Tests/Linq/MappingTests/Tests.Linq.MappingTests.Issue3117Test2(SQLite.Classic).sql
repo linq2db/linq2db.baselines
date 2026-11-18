@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 5
 
 INSERT INTO [User]
@@ -12,7 +12,8 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-SELECT last_insert_rowid()
+SELECT
+	last_insert_rowid()
 
 -- SQLite.Classic SQLite
 SELECT
@@ -21,7 +22,7 @@ FROM
 	[User] [t1]
 
 -- SQLite.Classic SQLite
-DECLARE @userId  -- Int32
+DECLARE @userId Integer -- Int32
 SET     @userId = 5
 
 SELECT

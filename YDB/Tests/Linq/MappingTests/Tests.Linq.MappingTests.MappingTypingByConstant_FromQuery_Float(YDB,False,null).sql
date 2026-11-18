@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $value Float -- Single
-SET     $value = NULL
+DECLARE value Float -- Single
+SET     value = NULL
 
 SELECT
 	t1.ID as ID,
@@ -15,8 +15,8 @@ FROM
 	) t1
 
 -- YDB Ydb
-DECLARE $value Float -- Single
-SET     $value = Float('3.14748365E+09')
+DECLARE value Float -- Single
+SET     value = Float('3.14748365E+09')
 
 SELECT
 	t1.ID as ID,

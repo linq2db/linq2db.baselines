@@ -1,9 +1,9 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(6) -- String
 SET     @Name = 'Manuel'
-DECLARE @Age  -- Int32
+DECLARE @Age Integer -- Int32
 SET     @Age = 14
 
 INSERT INTO [PR_1598_Update_Table]
@@ -33,9 +33,9 @@ LIMIT 1
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @Name NVarChar(5) -- String
 SET     @Name = 'Jacob'
-DECLARE @Age  -- Int32
+DECLARE @Age Integer -- Int32
 SET     @Age = 15
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
 UPDATE
@@ -58,9 +58,9 @@ WHERE
 LIMIT 1
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Age  -- Int32
+DECLARE @Age Integer -- Int32
 SET     @Age = 22
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
 UPDATE

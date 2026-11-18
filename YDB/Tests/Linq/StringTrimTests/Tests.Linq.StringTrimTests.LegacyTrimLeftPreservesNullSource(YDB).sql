@@ -1,14 +1,14 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 100
-DECLARE $CharColumn Text -- AnsiStringFixedLength
-SET     $CharColumn = NULL
-DECLARE $NCharColumn Text -- StringFixedLength
-SET     $NCharColumn = NULL
-DECLARE $VarCharColumn Text -- AnsiString
-SET     $VarCharColumn = NULL
-DECLARE $NVarCharColumn Text -- String
-SET     $NVarCharColumn = NULL
+DECLARE Id Int32
+SET     Id = 100
+DECLARE CharColumn Text -- AnsiStringFixedLength
+SET     CharColumn = NULL
+DECLARE NCharColumn Text -- StringFixedLength
+SET     NCharColumn = NULL
+DECLARE VarCharColumn Text -- AnsiString
+SET     VarCharColumn = NULL
+DECLARE NVarCharColumn Text -- String
+SET     NVarCharColumn = NULL
 
 INSERT INTO StringTrimTable
 (

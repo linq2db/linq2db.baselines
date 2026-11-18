@@ -6,7 +6,8 @@ DELETE FROM
 INSERT INTO [TestIdentity] DEFAULT VALUES
 
 -- Access.Ace.Odbc AccessODBC
-SELECT @@IDENTITY
+SELECT
+	@@IDENTITY
 
 -- Access.Ace.Odbc AccessODBC
 DELETE FROM

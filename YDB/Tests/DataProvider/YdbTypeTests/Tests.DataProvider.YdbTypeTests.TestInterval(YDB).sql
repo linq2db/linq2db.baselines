@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $value Interval -- Object
-SET     $value = Interval('P49672DT23H59M59.999999S')
+DECLARE value Interval -- Object
+SET     value = Interval('P49672DT23H59M59.999999S')
 
 SELECT
 	r.Id as Id,
@@ -27,12 +27,12 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Interval -- Object
-SET     $Column = Interval('P49672DT23H59M59.999999S')
-DECLARE $ColumnNullable Interval -- Object
-SET     $ColumnNullable = NULL
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Interval -- Object
+SET     Column = Interval('P49672DT23H59M59.999999S')
+DECLARE ColumnNullable Interval -- Object
+SET     ColumnNullable = NULL
 
 INSERT INTO `TypeTable\`2`
 (
@@ -48,8 +48,8 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $value Interval -- Object
-SET     $value = Interval('P49672DT23H59M59.999999S')
+DECLARE value Interval -- Object
+SET     value = Interval('P49672DT23H59M59.999999S')
 
 SELECT
 	r.Id as Id,
@@ -82,8 +82,8 @@ VALUES
 ($p1,$p2,$p3)
 
 -- YDB Ydb
-DECLARE $value Interval -- Object
-SET     $value = Interval('P49672DT23H59M59.999999S')
+DECLARE value Interval -- Object
+SET     value = Interval('P49672DT23H59M59.999999S')
 
 SELECT
 	r.Id as Id,
@@ -101,8 +101,8 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Interval -- Object
-SET     $value = Interval('P49672DT23H59M59.999999S')
+DECLARE value Interval -- Object
+SET     value = Interval('P49672DT23H59M59.999999S')
 
 SELECT
 	r.Id as Id,
@@ -120,8 +120,8 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Interval -- Object
-SET     $value = Interval('P49672DT23H59M59.999999S')
+DECLARE value Interval -- Object
+SET     value = Interval('P49672DT23H59M59.999999S')
 
 SELECT
 	r.Id as Id,
@@ -133,10 +133,10 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-DECLARE $value Interval -- Object
-SET     $value = Interval('-P49672DT23H59M59.999999S')
-DECLARE $nullableValue Interval -- Object
-SET     $nullableValue = Interval('P49672DT23H59M59.999999S')
+DECLARE value Interval -- Object
+SET     value = Interval('-P49672DT23H59M59.999999S')
+DECLARE nullableValue Interval -- Object
+SET     nullableValue = Interval('P49672DT23H59M59.999999S')
 
 SELECT
 	r.Id as Id,
@@ -163,12 +163,12 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Interval -- Object
-SET     $Column = Interval('-P49672DT23H59M59.999999S')
-DECLARE $ColumnNullable Interval -- Object
-SET     $ColumnNullable = Interval('P49672DT23H59M59.999999S')
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Interval -- Object
+SET     Column = Interval('-P49672DT23H59M59.999999S')
+DECLARE ColumnNullable Interval -- Object
+SET     ColumnNullable = Interval('P49672DT23H59M59.999999S')
 
 INSERT INTO `TypeTable\`2`
 (
@@ -184,10 +184,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $value Interval -- Object
-SET     $value = Interval('-P49672DT23H59M59.999999S')
-DECLARE $nullableValue Interval -- Object
-SET     $nullableValue = Interval('P49672DT23H59M59.999999S')
+DECLARE value Interval -- Object
+SET     value = Interval('-P49672DT23H59M59.999999S')
+DECLARE nullableValue Interval -- Object
+SET     nullableValue = Interval('P49672DT23H59M59.999999S')
 
 SELECT
 	r.Id as Id,
@@ -220,10 +220,10 @@ VALUES
 ($p1,$p2,$p3)
 
 -- YDB Ydb
-DECLARE $value Interval -- Object
-SET     $value = Interval('-P49672DT23H59M59.999999S')
-DECLARE $nullableValue Interval -- Object
-SET     $nullableValue = Interval('P49672DT23H59M59.999999S')
+DECLARE value Interval -- Object
+SET     value = Interval('-P49672DT23H59M59.999999S')
+DECLARE nullableValue Interval -- Object
+SET     nullableValue = Interval('P49672DT23H59M59.999999S')
 
 SELECT
 	r.Id as Id,
@@ -241,10 +241,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Interval -- Object
-SET     $value = Interval('-P49672DT23H59M59.999999S')
-DECLARE $nullableValue Interval -- Object
-SET     $nullableValue = Interval('P49672DT23H59M59.999999S')
+DECLARE value Interval -- Object
+SET     value = Interval('-P49672DT23H59M59.999999S')
+DECLARE nullableValue Interval -- Object
+SET     nullableValue = Interval('P49672DT23H59M59.999999S')
 
 SELECT
 	r.Id as Id,
@@ -262,10 +262,10 @@ DELETE FROM
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-DECLARE $value Interval -- Object
-SET     $value = Interval('-P49672DT23H59M59.999999S')
-DECLARE $nullableValue Interval -- Object
-SET     $nullableValue = Interval('P49672DT23H59M59.999999S')
+DECLARE value Interval -- Object
+SET     value = Interval('-P49672DT23H59M59.999999S')
+DECLARE nullableValue Interval -- Object
+SET     nullableValue = Interval('P49672DT23H59M59.999999S')
 
 SELECT
 	r.Id as Id,

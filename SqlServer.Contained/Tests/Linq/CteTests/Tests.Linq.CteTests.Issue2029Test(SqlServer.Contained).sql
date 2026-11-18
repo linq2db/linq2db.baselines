@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DECLARE @ncCodeBo NVarChar(4000) -- String
 SET     @ncCodeBo = N'NCCodeBO:8110,SETUP_OSCILLOSCO'
 
@@ -13,9 +13,9 @@ AS
 		[NC_CODE] [ncCode]
 			INNER JOIN [NC_GROUP_MEMBER] [ncGroupMember] ON [ncCode].[HANDLE] = [ncGroupMember].[NC_CODE_OR_GROUP_GBO]
 	WHERE
-		[ncGroupMember].[NC_GROUP_BO] = (N'NCGroupBO:' + Coalesce([ncCode].[SITE], N'') + N',CATAN_AUTO') OR
-		[ncGroupMember].[NC_GROUP_BO] = (N'NCGroupBO:' + Coalesce([ncCode].[SITE], N'') + N',CATAN_MAN') OR
-		[ncGroupMember].[NC_GROUP_BO] = (N'NCGroupBO:' + Coalesce([ncCode].[SITE], N'') + N',CATAN_ALL')
+		[ncGroupMember].[NC_GROUP_BO] = (N'NCGroupBO:' || Coalesce([ncCode].[SITE], N'') || N',CATAN_AUTO') OR
+		[ncGroupMember].[NC_GROUP_BO] = (N'NCGroupBO:' || Coalesce([ncCode].[SITE], N'') || N',CATAN_MAN') OR
+		[ncGroupMember].[NC_GROUP_BO] = (N'NCGroupBO:' || Coalesce([ncCode].[SITE], N'') || N',CATAN_ALL')
 )
 SELECT
 	[item_1].[NcCodeBo],

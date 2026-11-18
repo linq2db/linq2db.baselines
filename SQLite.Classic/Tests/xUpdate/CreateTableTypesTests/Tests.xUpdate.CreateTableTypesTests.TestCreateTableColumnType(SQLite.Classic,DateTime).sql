@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @DateTime VarChar(23) -- AnsiString
 SET     @DateTime = '2000-01-01 00:00:00.000'
@@ -16,7 +16,7 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @DateTime VarChar(23) -- AnsiString
 SET     @DateTime = '2018-11-24 01:02:03.000'

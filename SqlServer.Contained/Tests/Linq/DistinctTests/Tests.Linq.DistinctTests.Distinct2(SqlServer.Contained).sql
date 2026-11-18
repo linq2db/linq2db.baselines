@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT DISTINCT
 	Coalesce([p].[Value1], [p].[ParentID] % 2)
 FROM

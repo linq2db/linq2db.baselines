@@ -1,17 +1,17 @@
 ﻿-- DuckDB
-DECLARE $ID  -- Int32
+DECLARE $ID INTEGER -- Int32
 SET     $ID = 5000
 DECLARE $MoneyValue Decimal(1, 0)
 SET     $MoneyValue = 0
-DECLARE $DateTimeValue  -- DateTime2
+DECLARE $DateTimeValue TIMESTAMP -- DateTime2
 SET     $DateTimeValue = '2018-01-03 00:00:00.000000'::TIMESTAMP
-DECLARE $BoolValue  -- Boolean
+DECLARE $BoolValue BOOLEAN -- Boolean
 SET     $BoolValue = False
-DECLARE $GuidValue  -- Guid
+DECLARE $GuidValue UUID -- Guid
 SET     $GuidValue = '00000000-0000-0000-0000-000000000000'::UUID
 DECLARE $BinaryValue Binary
 SET     $BinaryValue = NULL
-DECLARE $SmallIntValue  -- Int16
+DECLARE $SmallIntValue SMALLINT -- Int16
 SET     $SmallIntValue = -2
 DECLARE $StringValue NVarChar -- String
 SET     $StringValue = NULL
@@ -40,9 +40,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $part1  -- Int32
+DECLARE $part1 INTEGER -- Int32
 SET     $part1 = 4
-DECLARE $part2  -- Int32
+DECLARE $part2 INTEGER -- Int32
 SET     $part2 = 4
 
 SELECT

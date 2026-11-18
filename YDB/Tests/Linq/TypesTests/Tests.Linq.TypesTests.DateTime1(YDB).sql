@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $Date Timestamp -- DateTime2
-SET     $Date = Timestamp('2009-09-20T00:00:00.000000Z')
+DECLARE Date Timestamp -- DateTime2
+SET     Date = Timestamp('2009-09-20T00:00:00.000000Z')
 
 SELECT
 	t.ID as ID,

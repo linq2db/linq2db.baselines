@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Int64 Int64
-SET     $Int64 = 0l
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Int64 Int64
+SET     Int64 = 0l
 
 INSERT INTO CreateTableTypes
 (
@@ -16,10 +16,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 2
-DECLARE $Int64 Int64
-SET     $Int64 = 3l
+DECLARE Id Int32
+SET     Id = 2
+DECLARE Int64 Int64
+SET     Int64 = 3l
 
 INSERT INTO CreateTableTypes
 (

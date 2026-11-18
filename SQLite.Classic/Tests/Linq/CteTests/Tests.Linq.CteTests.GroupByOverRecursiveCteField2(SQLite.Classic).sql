@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic SQLite
-DECLARE @id  -- Int32
+DECLARE @id Integer -- Int32
 SET     @id = 1
 
 WITH [cte] ([Field1], [Field2], [Field3])
@@ -41,7 +41,7 @@ FROM
 		INNER JOIN [cte] [d] ON [m_1].[Key_1] = [d].[Field2]
 
 -- SQLite.Classic SQLite
-DECLARE @id  -- Int32
+DECLARE @id Integer -- Int32
 SET     @id = 1
 
 WITH [cte] ([Field2], [Field3])

@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $take Int32
-SET     $take = 4
-DECLARE $skip Int32
-SET     $skip = 1
+DECLARE take Int32
+SET     take = 4
+DECLARE skip Int32
+SET     skip = 1
 
 SELECT
 	t3.F2 as F2

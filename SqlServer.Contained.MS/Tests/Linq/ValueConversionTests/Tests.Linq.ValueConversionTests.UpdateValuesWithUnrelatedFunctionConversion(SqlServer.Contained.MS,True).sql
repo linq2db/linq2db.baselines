@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 UPDATE
 	[TableWithConverterValue]
 SET
@@ -6,7 +6,7 @@ SET
 WHERE
 	[TableWithConverterValue].[Id] = 1
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT TOP (2)
 	[x].[Id],
 	[x].[NoConversion],

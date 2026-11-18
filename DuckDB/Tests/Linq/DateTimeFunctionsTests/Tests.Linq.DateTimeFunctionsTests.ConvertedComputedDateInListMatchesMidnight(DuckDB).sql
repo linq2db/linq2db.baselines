@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $CoarseMidnight  -- Date
+DECLARE $CoarseMidnight DATE -- Date
 SET     $CoarseMidnight = '2026-06-01 00:00:00.000000'::TIMESTAMP
 
 SELECT

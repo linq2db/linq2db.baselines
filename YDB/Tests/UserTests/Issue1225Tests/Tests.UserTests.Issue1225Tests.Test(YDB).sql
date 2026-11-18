@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
+DECLARE Id Int32
+SET     Id = 1
 
 INSERT INTO `Task`
 (
@@ -12,8 +12,8 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 2
+DECLARE Id Int32
+SET     Id = 2
 
 INSERT INTO `Task`
 (
@@ -25,12 +25,12 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 2
-DECLARE $TaskId Int32
-SET     $TaskId = 1
-DECLARE $Actual Bool -- Boolean
-SET     $Actual = true
+DECLARE Id Int32
+SET     Id = 2
+DECLARE TaskId Int32
+SET     TaskId = 1
+DECLARE Actual Bool -- Boolean
+SET     Actual = true
 
 INSERT INTO TaskStage
 (

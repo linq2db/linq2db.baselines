@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @group  -- Int32
+DECLARE @group Integer -- Int32
 SET     @group = 7
 
 SELECT

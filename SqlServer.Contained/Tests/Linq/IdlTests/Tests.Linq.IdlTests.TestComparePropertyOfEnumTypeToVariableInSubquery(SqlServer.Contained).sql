@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DECLARE @gender Char(1) -- AnsiStringFixedLength
 SET     @gender = N'O'
 

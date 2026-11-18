@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Code NVarChar(50) -- String
@@ -19,7 +19,7 @@ VALUES
 	@Nested_Field
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Code NVarChar(50) -- String
@@ -40,7 +40,7 @@ VALUES
 	@Nested_Field
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 MERGE INTO [ComplexPropertyTarget] [Target]
 USING (VALUES
 	(1,N'alpha-new',1), (3,N'gamma',1)
@@ -73,7 +73,7 @@ VALUES
 )
 ;
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Code],

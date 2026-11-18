@@ -3,7 +3,7 @@ DECLARE @EntityType NVarChar(6) -- String
 SET     @EntityType = 'Type01'
 DECLARE @Name NVarChar(8) -- String
 SET     @Name = 'A-Entity'
-DECLARE @CreatedDate  -- DateTime
+DECLARE @CreatedDate Text(23) -- DateTime
 SET     @CreatedDate = '2020-02-29 00:00:00.000'
 DECLARE @Property01 NVarChar(5) -- String
 SET     @Property01 = 'Test1'
@@ -28,7 +28,7 @@ DECLARE @EntityType NVarChar(6) -- String
 SET     @EntityType = 'Type05'
 DECLARE @Name NVarChar(8) -- String
 SET     @Name = 'B-Entity'
-DECLARE @CreatedDate  -- DateTime
+DECLARE @CreatedDate Text(23) -- DateTime
 SET     @CreatedDate = '2020-03-05 00:00:00.000'
 DECLARE @Property05 NVarChar(5) -- String
 SET     @Property05 = 'Test5'
@@ -53,7 +53,7 @@ DECLARE @EntityType NVarChar(6) -- String
 SET     @EntityType = 'Type10'
 DECLARE @Name NVarChar(8) -- String
 SET     @Name = 'C-Entity'
-DECLARE @CreatedDate  -- DateTime
+DECLARE @CreatedDate Text(23) -- DateTime
 SET     @CreatedDate = '2020-03-10 00:00:00.000'
 DECLARE @Property10 NVarChar(6) -- String
 SET     @Property10 = 'Test10'
@@ -78,7 +78,7 @@ DECLARE @EntityType NVarChar(6) -- String
 SET     @EntityType = 'Type17'
 DECLARE @Name NVarChar(8) -- String
 SET     @Name = 'D-Entity'
-DECLARE @CreatedDate  -- DateTime
+DECLARE @CreatedDate Text(23) -- DateTime
 SET     @CreatedDate = '2020-03-17 00:00:00.000'
 DECLARE @Property17 NVarChar(6) -- String
 SET     @Property17 = 'Test17'
@@ -99,7 +99,7 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-DECLARE @baseDate  -- DateTime
+DECLARE @baseDate Text(23) -- DateTime
 SET     @baseDate = '2020-02-29 00:00:00.000'
 
 SELECT

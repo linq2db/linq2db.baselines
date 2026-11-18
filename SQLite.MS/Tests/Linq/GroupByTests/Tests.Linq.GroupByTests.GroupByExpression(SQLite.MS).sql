@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @defValue  -- Int32
+DECLARE @defValue Integer -- Int32
 SET     @defValue = 10
 
 SELECT

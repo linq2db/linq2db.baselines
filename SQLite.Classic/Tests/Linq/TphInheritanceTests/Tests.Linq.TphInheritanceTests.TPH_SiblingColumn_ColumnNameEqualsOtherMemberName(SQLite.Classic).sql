@@ -1,7 +1,7 @@
 ﻿-- SQLite.Classic SQLite
 DECLARE @Kind NVarChar(2) -- String
 SET     @Kind = 'N1'
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Shared NVarChar(6) -- String
 SET     @Shared = 'base-a'
@@ -26,7 +26,7 @@ VALUES
 -- SQLite.Classic SQLite
 DECLARE @Kind NVarChar(2) -- String
 SET     @Kind = 'N2'
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Shared NVarChar(6) -- String
 SET     @Shared = 'base-b'

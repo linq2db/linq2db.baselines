@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $ID  -- Int32
+DECLARE $ID INTEGER -- Int32
 SET     $ID = 0
 DECLARE $FirstName NVarChar(27) -- String
 SET     $FirstName = 'InsertOrReplaceColumnFilter'
@@ -43,7 +43,7 @@ WHERE
 LIMIT 1
 
 -- DuckDB
-DECLARE $ID  -- Int32
+DECLARE $ID INTEGER -- Int32
 SET     $ID = 0
 DECLARE $FirstName NVarChar(27) -- String
 SET     $FirstName = 'InsertOrReplaceColumnFilter'

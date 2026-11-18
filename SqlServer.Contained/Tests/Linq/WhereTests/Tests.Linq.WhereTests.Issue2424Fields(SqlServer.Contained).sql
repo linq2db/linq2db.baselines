@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	[i].[Id],
 	[i].[StrValue],
@@ -12,7 +12,7 @@ FROM
 WHERE
 	[i].[StrValue] >= [right_1].[StrValue]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[i].[Id],
 	[i].[StrValue],
@@ -26,7 +26,7 @@ FROM
 WHERE
 	[i].[StrValue] <= [right_1].[StrValue]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[i].[Id],
 	[i].[StrValue],
@@ -40,7 +40,7 @@ FROM
 WHERE
 	[i].[StrValue] > [right_1].[StrValue]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[i].[Id],
 	[i].[StrValue],
@@ -54,7 +54,7 @@ FROM
 WHERE
 	[i].[StrValue] < [right_1].[StrValue]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[i].[Id],
 	[i].[StrValue],
@@ -68,7 +68,7 @@ FROM
 WHERE
 	[i].[StrValue] = [right_1].[StrValue]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[i].[Id],
 	[i].[StrValue],
@@ -82,7 +82,7 @@ FROM
 WHERE
 	[i].[StrValue] <> [right_1].[StrValue]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[i].[Id],
 	[i].[StrValue],
@@ -96,7 +96,7 @@ FROM
 WHERE
 	[i].[StrValue] >= [right_1].[StrValueNullable] OR [right_1].[StrValueNullable] IS NULL
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[i].[Id],
 	[i].[StrValue],
@@ -110,7 +110,7 @@ FROM
 WHERE
 	[i].[StrValue] <= [right_1].[StrValueNullable]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[i].[Id],
 	[i].[StrValue],
@@ -124,7 +124,7 @@ FROM
 WHERE
 	[i].[StrValue] > [right_1].[StrValueNullable] OR [right_1].[StrValueNullable] IS NULL
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[i].[Id],
 	[i].[StrValue],
@@ -138,7 +138,7 @@ FROM
 WHERE
 	[i].[StrValue] < [right_1].[StrValueNullable]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[i].[Id],
 	[i].[StrValue],
@@ -152,7 +152,7 @@ FROM
 WHERE
 	[i].[StrValue] = [right_1].[StrValueNullable]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[i].[Id],
 	[i].[StrValue],
@@ -166,7 +166,7 @@ FROM
 WHERE
 	[i].[StrValue] <> [right_1].[StrValueNullable] OR [right_1].[StrValueNullable] IS NULL
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[i].[Id],
 	[i].[StrValue],
@@ -181,7 +181,7 @@ WHERE
 	[i].[StrValueNullable] >= [right_1].[StrValueNullable] OR
 	[right_1].[StrValueNullable] IS NULL
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[i].[Id],
 	[i].[StrValue],
@@ -196,7 +196,7 @@ WHERE
 	[i].[StrValueNullable] <= [right_1].[StrValueNullable] OR
 	[i].[StrValueNullable] IS NULL
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[i].[Id],
 	[i].[StrValue],
@@ -211,7 +211,7 @@ WHERE
 	[i].[StrValueNullable] > [right_1].[StrValueNullable] OR
 	[i].[StrValueNullable] IS NOT NULL AND [right_1].[StrValueNullable] IS NULL
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[i].[Id],
 	[i].[StrValue],
@@ -226,7 +226,7 @@ WHERE
 	[i].[StrValueNullable] < [right_1].[StrValueNullable] OR
 	[i].[StrValueNullable] IS NULL AND [right_1].[StrValueNullable] IS NOT NULL
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[i].[Id],
 	[i].[StrValue],
@@ -241,7 +241,7 @@ WHERE
 	[i].[StrValueNullable] = [right_1].[StrValueNullable] OR
 	[i].[StrValueNullable] IS NULL AND [right_1].[StrValueNullable] IS NULL
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[i].[Id],
 	[i].[StrValue],

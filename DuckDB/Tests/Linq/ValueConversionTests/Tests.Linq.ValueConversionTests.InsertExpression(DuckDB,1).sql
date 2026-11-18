@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $iteration  -- Int32
+DECLARE $iteration INTEGER -- Int32
 SET     $iteration = 1
 DECLARE $Value1 NVarChar(2) -- String
 SET     $Value1 = '[]'
@@ -32,7 +32,7 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $iteration  -- Int32
+DECLARE $iteration INTEGER -- Int32
 SET     $iteration = 1
 
 SELECT

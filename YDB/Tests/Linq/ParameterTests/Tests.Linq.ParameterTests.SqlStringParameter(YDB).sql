@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $p Text(4) -- String
-SET     $p = 'John'u
+DECLARE p Text(4) -- String
+SET     p = 'John'u
 
 SELECT
 	t.PersonID as PersonID,
@@ -15,8 +15,8 @@ WHERE
 LIMIT 2
 
 -- YDB Ydb
-DECLARE $p Text(6) -- String
-SET     $p = 'Tester'u
+DECLARE p Text(6) -- String
+SET     p = 'Tester'u
 
 SELECT
 	t.PersonID as PersonID,

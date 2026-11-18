@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $testedList Text(20) -- String
-SET     $testedList = '[{"Value":"Value1"}]'u
+DECLARE testedList Text(20) -- String
+SET     testedList = '[{"Value":"Value1"}]'u
 
 SELECT
 	t.Id as Id,

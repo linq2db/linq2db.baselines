@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DECLARE @iteration Int -- Int32
 SET     @iteration = 2
 DECLARE @Value1 NVarChar(200) -- String
@@ -31,7 +31,7 @@ VALUES
 	@boolValue_1
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DECLARE @iteration Int -- Int32
 SET     @iteration = 2
 

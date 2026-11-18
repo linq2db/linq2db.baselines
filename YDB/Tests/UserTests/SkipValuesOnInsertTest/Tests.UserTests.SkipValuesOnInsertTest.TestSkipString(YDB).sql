@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Age Int32
-SET     $Age = 14
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Age Int32
+SET     Age = 14
 
 INSERT INTO PR_1598_Insert_Table
 (
@@ -27,10 +27,10 @@ WHERE
 LIMIT 1
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 2
-DECLARE $Age Int32
-SET     $Age = 15
+DECLARE Id Int32
+SET     Id = 2
+DECLARE Age Int32
+SET     Age = 15
 
 INSERT INTO PR_1598_Insert_Table
 (

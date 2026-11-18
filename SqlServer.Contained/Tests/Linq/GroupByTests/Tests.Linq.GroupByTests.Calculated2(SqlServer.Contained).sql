@@ -1,6 +1,6 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
-	[p].[Key_1] + N'2'
+	[p].[Key_1] || N'2'
 FROM
 	(
 		SELECT DISTINCT
@@ -9,5 +9,5 @@ FROM
 			[Child] [g_1]
 	) [p]
 WHERE
-	([p].[Key_1] + N'2') = N'22'
+	([p].[Key_1] || N'2') = N'22'
 

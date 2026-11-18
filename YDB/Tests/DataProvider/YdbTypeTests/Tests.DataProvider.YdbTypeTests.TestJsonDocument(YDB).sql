@@ -19,12 +19,12 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column JsonDocument -- Object
-SET     $Column = '{}'u
-DECLARE $ColumnNullable JsonDocument -- Object
-SET     $ColumnNullable = NULL
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column JsonDocument -- Object
+SET     Column = '{}'u
+DECLARE ColumnNullable JsonDocument -- Object
+SET     ColumnNullable = NULL
 
 INSERT INTO `TypeTable\`2`
 (
@@ -125,12 +125,12 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column JsonDocument -- Object
-SET     $Column = 'null'u
-DECLARE $ColumnNullable JsonDocument -- Object
-SET     $ColumnNullable = 'null'u
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column JsonDocument -- Object
+SET     Column = 'null'u
+DECLARE ColumnNullable JsonDocument -- Object
+SET     ColumnNullable = 'null'u
 
 INSERT INTO `TypeTable\`2`
 (
@@ -231,12 +231,12 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column JsonDocument -- Object
-SET     $Column = 'false'u
-DECLARE $ColumnNullable JsonDocument -- Object
-SET     $ColumnNullable = 'true'u
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column JsonDocument -- Object
+SET     Column = 'false'u
+DECLARE ColumnNullable JsonDocument -- Object
+SET     ColumnNullable = 'true'u
 
 INSERT INTO `TypeTable\`2`
 (
@@ -337,12 +337,12 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column JsonDocument -- Object
-SET     $Column = '12.34'u
-DECLARE $ColumnNullable JsonDocument -- Object
-SET     $ColumnNullable = '123'u
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column JsonDocument -- Object
+SET     Column = '12.34'u
+DECLARE ColumnNullable JsonDocument -- Object
+SET     ColumnNullable = '123'u
 
 INSERT INTO `TypeTable\`2`
 (
@@ -443,12 +443,12 @@ DELETE FROM
 	`TypeTable\`2`
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column JsonDocument -- Object
-SET     $Column = '{"ы":1.23}'u
-DECLARE $ColumnNullable JsonDocument -- Object
-SET     $ColumnNullable = '{"prop":false}'u
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column JsonDocument -- Object
+SET     Column = '{"ы":1.23}'u
+DECLARE ColumnNullable JsonDocument -- Object
+SET     ColumnNullable = '{"prop":false}'u
 
 INSERT INTO `TypeTable\`2`
 (

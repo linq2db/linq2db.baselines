@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Type Int -- Int32
@@ -19,12 +19,12 @@ VALUES
 	@Stored
 )
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT TOP (2)
 	[t1].[Type],
 	[t1].[Id],
 	[t1].[Stored],
-	Coalesce([t1].[Stored], N'') + N'!'
+	Coalesce([t1].[Stored], N'') || N'!'
 FROM
 	[CalcSubtypeDual] [t1]
 

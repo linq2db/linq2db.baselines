@@ -5,7 +5,7 @@ FROM
 	LinqDataTypes t1
 
 -- DuckDB
-DECLARE $param  -- Int16
+DECLARE $param SMALLINT -- Int16
 SET     $param = 1
 
 SELECT

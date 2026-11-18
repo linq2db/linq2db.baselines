@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $personId Int32
-SET     $personId = 2
-DECLARE $personId_1 Int32
-SET     $personId_1 = 0
+DECLARE personId Int32
+SET     personId = 2
+DECLARE personId_1 Int32
+SET     personId_1 = 0
 
 $CTE_1 = 	SELECT
 		t1.PersonID as PersonID

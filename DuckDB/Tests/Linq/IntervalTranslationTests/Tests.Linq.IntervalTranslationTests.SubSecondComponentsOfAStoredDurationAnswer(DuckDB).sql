@@ -1,13 +1,13 @@
 ﻿-- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
-DECLARE $InSeconds  -- Int64
+DECLARE $InSeconds BIGINT -- Int64
 SET     $InSeconds = 1
-DECLARE $InTicks  -- Int64
+DECLARE $InTicks BIGINT -- Int64
 SET     $InTicks = 12345670
-DECLARE $Undeclared  -- Int64
+DECLARE $Undeclared BIGINT -- Int64
 SET     $Undeclared = 12345670
-DECLARE $UndeclaredSeconds  -- Int64
+DECLARE $UndeclaredSeconds BIGINT -- Int64
 SET     $UndeclaredSeconds = 1
 
 INSERT INTO DurationRow

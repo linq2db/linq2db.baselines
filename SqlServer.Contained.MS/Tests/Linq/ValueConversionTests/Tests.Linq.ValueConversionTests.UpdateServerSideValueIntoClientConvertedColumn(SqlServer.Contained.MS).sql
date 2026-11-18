@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @test DateTime2
 SET     @test = DATETIME2FROMPARTS(2026, 6, 6, 2, 1, 1, 0, 7)
 
@@ -7,7 +7,7 @@ UPDATE
 SET
 	[Date] = IIF([Issue5975Row].[Date] IS NOT NULL, @test, DateAdd(day, 1, [Issue5975Row].[Plain]))
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Plain],

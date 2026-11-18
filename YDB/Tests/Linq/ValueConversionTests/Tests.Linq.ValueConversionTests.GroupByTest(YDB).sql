@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $testedList Text(20) -- String
-SET     $testedList = '[{"Value":"Value1"}]'u
+DECLARE testedList Text(20) -- String
+SET     testedList = '[{"Value":"Value1"}]'u
 
 SELECT
 	m_1.Id as Id,
@@ -20,8 +20,8 @@ WHERE
 	$testedList = m_1.Value2
 
 -- YDB Ydb
-DECLARE $testedList Text(20) -- String
-SET     $testedList = '[{"Value":"Value1"}]'u
+DECLARE testedList Text(20) -- String
+SET     testedList = '[{"Value":"Value1"}]'u
 
 SELECT
 	g_1.Id as Id

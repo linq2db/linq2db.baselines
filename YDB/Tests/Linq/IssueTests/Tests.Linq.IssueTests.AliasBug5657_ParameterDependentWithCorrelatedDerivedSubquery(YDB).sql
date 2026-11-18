@@ -65,8 +65,8 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $minValue Int32
-SET     $minValue = 15
+DECLARE minValue Int32
+SET     minValue = 15
 
 SELECT
 	o.Id as Id,

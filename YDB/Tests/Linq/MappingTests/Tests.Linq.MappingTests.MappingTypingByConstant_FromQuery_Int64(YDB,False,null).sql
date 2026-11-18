@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $value Int64
-SET     $value = NULL
+DECLARE value Int64
+SET     value = NULL
 
 SELECT
 	t1.ID as ID,
@@ -15,8 +15,8 @@ FROM
 	) t1
 
 -- YDB Ydb
-DECLARE $value Int64
-SET     $value = 2147483648l
+DECLARE value Int64
+SET     value = 2147483648l
 
 SELECT
 	t1.ID as ID,

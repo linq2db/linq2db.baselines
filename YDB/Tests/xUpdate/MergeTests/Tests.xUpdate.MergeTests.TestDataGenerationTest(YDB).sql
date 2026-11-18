@@ -3,14 +3,14 @@ DELETE FROM
 	TestMerge1
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Field1 Int32
-SET     $Field1 = NULL
-DECLARE $Field2 Int32
-SET     $Field2 = NULL
-DECLARE $Field4 Int32
-SET     $Field4 = NULL
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Field1 Int32
+SET     Field1 = NULL
+DECLARE Field2 Int32
+SET     Field2 = NULL
+DECLARE Field4 Int32
+SET     Field4 = NULL
 
 INSERT INTO TestMerge1
 (
@@ -28,14 +28,14 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 2
-DECLARE $Field1 Int32
-SET     $Field1 = 2
-DECLARE $Field2 Int32
-SET     $Field2 = NULL
-DECLARE $Field4 Int32
-SET     $Field4 = NULL
+DECLARE Id Int32
+SET     Id = 2
+DECLARE Field1 Int32
+SET     Field1 = 2
+DECLARE Field2 Int32
+SET     Field2 = NULL
+DECLARE Field4 Int32
+SET     Field4 = NULL
 
 INSERT INTO TestMerge1
 (
@@ -53,14 +53,14 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 3
-DECLARE $Field1 Int32
-SET     $Field1 = NULL
-DECLARE $Field2 Int32
-SET     $Field2 = 3
-DECLARE $Field4 Int32
-SET     $Field4 = 203
+DECLARE Id Int32
+SET     Id = 3
+DECLARE Field1 Int32
+SET     Field1 = NULL
+DECLARE Field2 Int32
+SET     Field2 = 3
+DECLARE Field4 Int32
+SET     Field4 = 203
 
 INSERT INTO TestMerge1
 (
@@ -78,14 +78,14 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 4
-DECLARE $Field1 Int32
-SET     $Field1 = 5
-DECLARE $Field2 Int32
-SET     $Field2 = 6
-DECLARE $Field4 Int32
-SET     $Field4 = NULL
+DECLARE Id Int32
+SET     Id = 4
+DECLARE Field1 Int32
+SET     Field1 = 5
+DECLARE Field2 Int32
+SET     Field2 = 6
+DECLARE Field4 Int32
+SET     Field4 = NULL
 
 INSERT INTO TestMerge1
 (
@@ -107,14 +107,14 @@ DELETE FROM
 	TestMerge2
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 3
-DECLARE $Field1 Int32
-SET     $Field1 = NULL
-DECLARE $Field2 Int32
-SET     $Field2 = 3
-DECLARE $Field4 Int32
-SET     $Field4 = NULL
+DECLARE Id Int32
+SET     Id = 3
+DECLARE Field1 Int32
+SET     Field1 = NULL
+DECLARE Field2 Int32
+SET     Field2 = 3
+DECLARE Field4 Int32
+SET     Field4 = NULL
 
 INSERT INTO TestMerge2
 (
@@ -132,14 +132,14 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 4
-DECLARE $Field1 Int32
-SET     $Field1 = 5
-DECLARE $Field2 Int32
-SET     $Field2 = 7
-DECLARE $Field4 Int32
-SET     $Field4 = 214
+DECLARE Id Int32
+SET     Id = 4
+DECLARE Field1 Int32
+SET     Field1 = 5
+DECLARE Field2 Int32
+SET     Field2 = 7
+DECLARE Field4 Int32
+SET     Field4 = 214
 
 INSERT INTO TestMerge2
 (
@@ -157,14 +157,14 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 5
-DECLARE $Field1 Int32
-SET     $Field1 = 10
-DECLARE $Field2 Int32
-SET     $Field2 = 4
-DECLARE $Field4 Int32
-SET     $Field4 = NULL
+DECLARE Id Int32
+SET     Id = 5
+DECLARE Field1 Int32
+SET     Field1 = 10
+DECLARE Field2 Int32
+SET     Field2 = 4
+DECLARE Field4 Int32
+SET     Field4 = NULL
 
 INSERT INTO TestMerge2
 (
@@ -182,14 +182,14 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 6
-DECLARE $Field1 Int32
-SET     $Field1 = NULL
-DECLARE $Field2 Int32
-SET     $Field2 = NULL
-DECLARE $Field4 Int32
-SET     $Field4 = 216
+DECLARE Id Int32
+SET     Id = 6
+DECLARE Field1 Int32
+SET     Field1 = NULL
+DECLARE Field2 Int32
+SET     Field2 = NULL
+DECLARE Field4 Int32
+SET     Field4 = 216
 
 INSERT INTO TestMerge2
 (

@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $p Int32
-SET     $p = 1
+DECLARE p Int32
+SET     p = 1
 
 SELECT
 	m_1.ParentID as ParentID,
@@ -13,8 +13,8 @@ WHERE
 	m_1.ParentID = $p AND CurrentUtcTimestamp() > Timestamp('2020-02-29T00:00:00.000000Z')
 
 -- YDB Ydb
-DECLARE $p Int32
-SET     $p = 1
+DECLARE p Int32
+SET     p = 1
 
 SELECT
 	p.ParentID as ParentID,
@@ -25,8 +25,8 @@ WHERE
 	p.ParentID = $p AND CurrentUtcTimestamp() > Timestamp('2020-02-29T00:00:00.000000Z')
 
 -- YDB Ydb
-DECLARE $p Int32
-SET     $p = 2
+DECLARE p Int32
+SET     p = 2
 
 SELECT
 	m_1.ParentID as ParentID,
@@ -39,8 +39,8 @@ WHERE
 	m_1.ParentID = $p AND CurrentUtcTimestamp() > Timestamp('2020-02-29T00:00:00.000000Z')
 
 -- YDB Ydb
-DECLARE $p Int32
-SET     $p = 2
+DECLARE p Int32
+SET     p = 2
 
 SELECT
 	p.ParentID as ParentID,

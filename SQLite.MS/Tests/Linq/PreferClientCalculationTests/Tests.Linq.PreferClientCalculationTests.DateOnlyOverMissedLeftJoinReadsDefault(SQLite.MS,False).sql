@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @bound  -- Date
+DECLARE @bound Text -- Date
 SET     @bound = '2000-01-01'
 
 SELECT

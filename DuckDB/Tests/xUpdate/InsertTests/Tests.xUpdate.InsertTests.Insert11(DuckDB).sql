@@ -30,7 +30,7 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $id  -- Int32
+DECLARE $id INTEGER -- Int32
 SET     $id = 4
 
 SELECT

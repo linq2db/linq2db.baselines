@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID]
@@ -11,7 +11,7 @@ SELECT
 FROM
 	[Child] [t2]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID]
@@ -24,7 +24,7 @@ SELECT
 FROM
 	[Child] [t2]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t3].[ParentID],
 	[t3].[ChildID]

@@ -1,9 +1,9 @@
 ﻿-- DuckDB
-DECLARE $take  -- Int32
+DECLARE $take INTEGER -- Int32
 SET     $take = 7
-DECLARE $skip  -- Int32
+DECLARE $skip INTEGER -- Int32
 SET     $skip = 1
-DECLARE $skip_1  -- Int32
+DECLARE $skip_1 INTEGER -- Int32
 SET     $skip_1 = 2
 
 SELECT

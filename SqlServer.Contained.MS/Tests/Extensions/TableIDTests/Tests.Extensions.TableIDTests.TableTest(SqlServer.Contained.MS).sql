@@ -1,6 +1,6 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
-	'*** p ***' + N'4',
+	CAST('*** p ***' AS NVarChar(Max)) || N'4',
 	'*** p ***',
 	'*** [Parent] ***',
 	'*** p_1.p ***'

@@ -1,11 +1,11 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT DISTINCT
 	1,
 	IIF([it].[SmallIntValue] <> 0, 1, 0)
 FROM
 	[LinqDataTypes] [it]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[ID],
 	[t1].[MoneyValue],

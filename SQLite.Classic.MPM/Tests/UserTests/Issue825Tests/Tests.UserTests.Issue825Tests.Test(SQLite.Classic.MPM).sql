@@ -1,7 +1,7 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @userId  -- Int32
+DECLARE @userId Integer -- Int32
 SET     @userId = 32
-DECLARE @childId  -- Int32
+DECLARE @childId Integer -- Int32
 SET     @childId = 32
 
 SELECT

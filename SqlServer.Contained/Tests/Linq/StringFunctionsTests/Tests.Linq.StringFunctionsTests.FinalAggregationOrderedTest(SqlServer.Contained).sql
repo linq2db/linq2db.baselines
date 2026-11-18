@@ -1,22 +1,22 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	STRING_AGG([t1].[Value1], N' -> ') WITHIN GROUP (ORDER BY [t1].[Value1])
 FROM
 	[SampleClass] [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	STRING_AGG([t1].[Value1], N' -> ') WITHIN GROUP (ORDER BY [t1].[Value1])
 FROM
 	[SampleClass] [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	STRING_AGG([t1].[Value1], N' -> ') WITHIN GROUP (ORDER BY [t1].[Value1] DESC)
 FROM
 	[SampleClass] [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	STRING_AGG([t1].[Value1], N' -> ') WITHIN GROUP (ORDER BY [t1].[Value1] DESC)
 FROM

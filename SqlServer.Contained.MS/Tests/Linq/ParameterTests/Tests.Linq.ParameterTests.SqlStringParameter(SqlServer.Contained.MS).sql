@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @p NVarChar(4000) -- String
 SET     @p = N'John'
 
@@ -13,7 +13,7 @@ FROM
 WHERE
 	[t].[FirstName] = @p
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @p NVarChar(4000) -- String
 SET     @p = N'Tester'
 

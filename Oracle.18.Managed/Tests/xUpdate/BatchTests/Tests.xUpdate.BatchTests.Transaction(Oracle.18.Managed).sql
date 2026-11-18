@@ -42,7 +42,6 @@ INSERT ALL
 	INTO "Parent" ("ParentID", "Value1") VALUES (4111,4111)
 SELECT * FROM dual
 
-CommitTransaction
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @ParentID Int32
 SET     @ParentID = 1111

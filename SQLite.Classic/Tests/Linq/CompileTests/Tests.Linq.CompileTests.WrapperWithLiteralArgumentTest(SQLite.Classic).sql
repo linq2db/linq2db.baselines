@@ -1,7 +1,7 @@
 ﻿-- SQLite.Classic SQLite
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = 1
-DECLARE @take  -- Int32
+DECLARE @take Integer -- Int32
 SET     @take = 2
 
 SELECT
@@ -14,9 +14,9 @@ WHERE
 LIMIT @take
 
 -- SQLite.Classic SQLite
-DECLARE @p  -- Int32
+DECLARE @p Integer -- Int32
 SET     @p = 1
-DECLARE @take  -- Int32
+DECLARE @take Integer -- Int32
 SET     @take = 2
 
 SELECT

@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $p  -- Int32
+DECLARE $p INTEGER -- Int32
 SET     $p = 103
 
 DELETE FROM
@@ -20,7 +20,7 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $param  -- Int64
+DECLARE $param BIGINT -- Int64
 SET     $param = 11
 
 INSERT INTO LinqDataTypes
@@ -45,7 +45,7 @@ WHERE
 	r.ID = 102 AND r.BigIntValue = 11
 
 -- DuckDB
-DECLARE $p  -- Int32
+DECLARE $p INTEGER -- Int32
 SET     $p = 103
 
 DELETE FROM

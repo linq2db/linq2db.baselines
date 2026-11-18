@@ -8,7 +8,7 @@ CREATE TABLE [aa]
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @bb  -- Int32
+DECLARE @bb Integer -- Int32
 SET     @bb = 99
 DECLARE @cc NVarChar(5) -- String
 SET     @cc = 'hallo'

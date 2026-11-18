@@ -1,9 +1,9 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 0
 DECLARE @Data NVarChar(6) -- String
 SET     @Data = 'Data 0'
-DECLARE @Id_1  -- Int32
+DECLARE @Id_1 Integer -- Int32
 SET     @Id_1 = 1
 DECLARE @Data_1 NVarChar(6) -- String
 SET     @Data_1 = 'Data 1'

@@ -6,7 +6,8 @@ DELETE FROM
 INSERT INTO [TestIdentity] DEFAULT VALUES
 
 -- Access.Jet.OleDb AccessOleDb
-SELECT @@IDENTITY
+SELECT
+	@@IDENTITY
 
 -- Access.Jet.OleDb AccessOleDb
 DELETE FROM

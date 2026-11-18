@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID]
@@ -8,7 +8,7 @@ ORDER BY
 	[t1].[ChildID]
 OFFSET 3 ROWS FETCH NEXT 5 ROWS ONLY 
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID]

@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $ps Text(3) -- String
-SET     $ps = '%[%'u
+DECLARE ps Text(3) -- String
+SET     ps = '%[%'u
 
 SELECT
 	COUNT(*) as Count_1

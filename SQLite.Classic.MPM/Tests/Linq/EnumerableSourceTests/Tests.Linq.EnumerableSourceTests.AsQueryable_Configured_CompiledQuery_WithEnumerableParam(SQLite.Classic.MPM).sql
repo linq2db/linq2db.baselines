@@ -1,9 +1,9 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 0
 DECLARE @Data NVarChar(6) -- String
 SET     @Data = 'Data 0'
-DECLARE @Id_1  -- Int32
+DECLARE @Id_1 Integer -- Int32
 SET     @Id_1 = 1
 DECLARE @Data_1 NVarChar(6) -- String
 SET     @Data_1 = 'Data 1'
@@ -22,15 +22,15 @@ ORDER BY
 	[t1].[Id]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 100
 DECLARE @Data NVarChar(8) -- String
 SET     @Data = 'Data 100'
-DECLARE @Id_1  -- Int32
+DECLARE @Id_1 Integer -- Int32
 SET     @Id_1 = 101
 DECLARE @Data_1 NVarChar(8) -- String
 SET     @Data_1 = 'Data 101'
-DECLARE @Id_2  -- Int32
+DECLARE @Id_2 Integer -- Int32
 SET     @Id_2 = 102
 DECLARE @Data_2 NVarChar(8) -- String
 SET     @Data_2 = 'Data 102'

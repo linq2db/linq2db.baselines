@@ -1,11 +1,11 @@
 ﻿-- DuckDB
-DECLARE $int1  -- Int32
+DECLARE $int1 INTEGER -- Int32
 SET     $int1 = 11
-DECLARE $int2  -- Int32
+DECLARE $int2 INTEGER -- Int32
 SET     $int2 = 22
-DECLARE $int3  -- Int32
+DECLARE $int3 INTEGER -- Int32
 SET     $int3 = 33
-DECLARE $someId  -- Int32
+DECLARE $someId INTEGER -- Int32
 SET     $someId = 100
 
 UPDATE

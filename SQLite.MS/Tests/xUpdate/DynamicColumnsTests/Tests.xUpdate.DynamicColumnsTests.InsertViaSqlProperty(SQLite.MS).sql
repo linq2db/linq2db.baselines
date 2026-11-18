@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @id  -- Int32
+DECLARE @id Integer -- Int32
 SET     @id = 1001
 
 INSERT INTO [Child]
@@ -14,7 +14,7 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-DECLARE @id  -- Int32
+DECLARE @id Integer -- Int32
 SET     @id = 1001
 
 SELECT

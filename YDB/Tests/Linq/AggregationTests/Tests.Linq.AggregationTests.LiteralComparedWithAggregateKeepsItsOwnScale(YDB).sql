@@ -29,8 +29,8 @@ FROM
 	) t1
 
 -- YDB Ydb
-DECLARE $Ids0_1 Decimal(19, 3)
-SET     $Ids0_1 = Decimal('1.004', 22, 9)
+DECLARE Ids0_1 Decimal(19, 3)
+SET     Ids0_1 = Decimal('1.004', 22, 9)
 
 SELECT
 	COUNT(*) as Count_1

@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $param2 Bool -- Boolean
-SET     $param2 = false
+DECLARE param2 Bool -- Boolean
+SET     param2 = false
 
 SELECT
 	t.ID as ID,

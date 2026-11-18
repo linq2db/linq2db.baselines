@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
@@ -14,7 +14,7 @@ FROM
 ORDER BY
 	[m_1].[ParentID]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]
@@ -23,7 +23,7 @@ FROM
 ORDER BY
 	[t1].[ParentID]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
@@ -39,7 +39,7 @@ FROM
 ORDER BY
 	[m_1].[ParentID]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

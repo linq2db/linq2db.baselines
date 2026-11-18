@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 MERGE INTO [PKOnlyTable] [Target]
 USING (VALUES
 	(1), (2), (3)
@@ -19,7 +19,7 @@ VALUES
 )
 ;
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[ID]
 FROM

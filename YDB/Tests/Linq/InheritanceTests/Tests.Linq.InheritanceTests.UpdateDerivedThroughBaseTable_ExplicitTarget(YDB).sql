@@ -8,12 +8,12 @@ WHERE
 	InheritanceFilter.Id = 2
 
 -- YDB Ydb
-DECLARE $Ids0_1 Int32
-SET     $Ids0_1 = 22
-DECLARE $Ids0_2 Int32
-SET     $Ids0_2 = 21
-DECLARE $Ids0_3 Int32
-SET     $Ids0_3 = 2
+DECLARE Ids0_1 Int32
+SET     Ids0_1 = 22
+DECLARE Ids0_2 Int32
+SET     Ids0_2 = 21
+DECLARE Ids0_3 Int32
+SET     Ids0_3 = 2
 
 SELECT
 	c_1.Id as Id,

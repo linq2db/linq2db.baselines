@@ -5,8 +5,8 @@ WHERE
 	LinqDataTypes.ID > 1000
 
 -- YDB Ydb
-DECLARE $arr Bytes(4) -- Binary
-SET     $arr = '\x01\x02\x03\x04's
+DECLARE arr Bytes(4) -- Binary
+SET     arr = '\x01\x02\x03\x04's
 
 INSERT INTO LinqDataTypes
 (

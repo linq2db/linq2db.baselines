@@ -1,12 +1,12 @@
 ﻿-- YDB Ydb
-DECLARE $Code Text(5) -- String
-SET     $Code = 'Child'u
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Name Text(4) -- String
-SET     $Name = 'Jane'u
-DECLARE $IsMale Bool -- Boolean
-SET     $IsMale = false
+DECLARE Code Text(5) -- String
+SET     Code = 'Child'u
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Name Text(4) -- String
+SET     Name = 'Jane'u
+DECLARE IsMale Bool -- Boolean
+SET     IsMale = false
 
 INSERT INTO Base
 (
@@ -24,14 +24,14 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Code Text(6) -- String
-SET     $Code = 'Child2'u
-DECLARE $Id Int32
-SET     $Id = 2
-DECLARE $Name Text -- String
-SET     $Name = NULL
-DECLARE $Age Int32
-SET     $Age = 10
+DECLARE Code Text(6) -- String
+SET     Code = 'Child2'u
+DECLARE Id Int32
+SET     Id = 2
+DECLARE Name Text -- String
+SET     Name = NULL
+DECLARE Age Int32
+SET     Age = 10
 
 INSERT INTO Base
 (

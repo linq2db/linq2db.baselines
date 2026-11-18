@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $Field1 Text -- String
-SET     $Field1 = NULL
+DECLARE Field1 Text -- String
+SET     Field1 = NULL
 
 INSERT INTO Issue1373Tests
 (
@@ -14,8 +14,8 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Field1 Text -- String
-SET     $Field1 = NULL
+DECLARE Field1 Text -- String
+SET     Field1 = NULL
 
 INSERT INTO Issue1373Tests
 (
@@ -29,8 +29,8 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Field1 Text(4) -- String
-SET     $Field1 = 'test'u
+DECLARE Field1 Text(4) -- String
+SET     Field1 = 'test'u
 
 INSERT INTO Issue1373Tests
 (

@@ -1,17 +1,17 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @ID  -- Int32
+DECLARE @ID Integer -- Int32
 SET     @ID = 5000
 DECLARE @MoneyValue Decimal(1, 0)
 SET     @MoneyValue = 0
-DECLARE @DateTimeValue  -- DateTime
+DECLARE @DateTimeValue Text(23) -- DateTime
 SET     @DateTimeValue = '2018-01-03 00:00:00.000'
-DECLARE @BoolValue  -- Boolean
+DECLARE @BoolValue Integer -- Boolean
 SET     @BoolValue = 0
-DECLARE @GuidValue  -- Guid
+DECLARE @GuidValue Blob(16) -- Guid
 SET     @GuidValue = X'00000000000000000000000000000000'
 DECLARE @BinaryValue Binary
 SET     @BinaryValue = NULL
-DECLARE @SmallIntValue  -- Int16
+DECLARE @SmallIntValue Integer -- Int16
 SET     @SmallIntValue = -2
 DECLARE @StringValue NVarChar -- String
 SET     @StringValue = NULL
@@ -40,9 +40,9 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-DECLARE @part1  -- Int32
+DECLARE @part1 Integer -- Int32
 SET     @part1 = 4
-DECLARE @part2  -- Int32
+DECLARE @part2 Integer -- Int32
 SET     @part2 = 4
 
 SELECT

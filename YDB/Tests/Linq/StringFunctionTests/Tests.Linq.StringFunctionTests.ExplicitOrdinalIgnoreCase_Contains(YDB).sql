@@ -3,12 +3,12 @@ DELETE FROM
 	CollatedTable
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $CaseSensitive Text(10) -- String
-SET     $CaseSensitive = 'TestString'u
-DECLARE $CaseInsensitive Text(10) -- String
-SET     $CaseInsensitive = 'TestString'u
+DECLARE Id Int32
+SET     Id = 1
+DECLARE CaseSensitive Text(10) -- String
+SET     CaseSensitive = 'TestString'u
+DECLARE CaseInsensitive Text(10) -- String
+SET     CaseInsensitive = 'TestString'u
 
 INSERT INTO CollatedTable
 (

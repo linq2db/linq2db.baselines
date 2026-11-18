@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT DISTINCT
 	MONTH([t1].[DateTimeValue])
 FROM

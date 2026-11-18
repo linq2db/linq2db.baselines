@@ -17,7 +17,7 @@ WHERE
 LIMIT 2
 
 -- DuckDB
-DECLARE $UserId  -- Int32
+DECLARE $UserId INTEGER -- Int32
 SET     $UserId = 2
 
 SELECT
@@ -29,7 +29,7 @@ WHERE
 LIMIT 2
 
 -- DuckDB
-DECLARE $UserId  -- Int32
+DECLARE $UserId INTEGER -- Int32
 SET     $UserId = 2
 
 SELECT

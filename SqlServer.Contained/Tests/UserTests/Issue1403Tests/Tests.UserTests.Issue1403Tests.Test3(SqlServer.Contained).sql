@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 INSERT INTO [Issue1403Tests_3]
 (
 	[event_id],
@@ -10,7 +10,7 @@ VALUES
 	N'New event'
 )
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT TOP (1)
 	[t1].[event_id],
 	[t1].[event_description]

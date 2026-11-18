@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT TOP (1)
 	[p].[ParentID]
 FROM
@@ -6,7 +6,7 @@ FROM
 WHERE
 	[p].[ParentID] = 2
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT TOP (1)
 	[p].[ParentID]
 FROM
@@ -14,7 +14,7 @@ FROM
 WHERE
 	[p].[ParentID] = 2
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT TOP (1)
 	[p].[ParentID]
 FROM

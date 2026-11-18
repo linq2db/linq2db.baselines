@@ -1,13 +1,13 @@
 ﻿-- SQLite.MS SQLite
 DECLARE @Name NVarChar(1) -- String
 SET     @Name = 'n'
-DECLARE @Version  -- Int32
+DECLARE @Version Integer -- Int32
 SET     @Version = 3
-DECLARE @UpdatedAt  -- DateTime
+DECLARE @UpdatedAt Text -- DateTime
 SET     @UpdatedAt = NULL
 DECLARE @UpdatedBy NVarChar -- String
 SET     @UpdatedBy = NULL
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
 UPDATE

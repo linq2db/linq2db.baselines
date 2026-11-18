@@ -24,10 +24,11 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-SELECT last_insert_rowid()
+SELECT
+	last_insert_rowid()
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @id  -- Int32
+DECLARE @id Integer -- Int32
 SET     @id = 5
 
 INSERT INTO [Patient] AS [t1]
@@ -43,7 +44,7 @@ VALUES
 ON CONFLICT ([PersonID]) DO NOTHING
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @id  -- Int32
+DECLARE @id Integer -- Int32
 SET     @id = 5
 
 SELECT
@@ -55,7 +56,7 @@ WHERE
 	[p].[PersonID] = @id
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @id  -- Int32
+DECLARE @id Integer -- Int32
 SET     @id = 5
 
 INSERT INTO [Patient] AS [t1]
@@ -71,7 +72,7 @@ VALUES
 ON CONFLICT ([PersonID]) DO NOTHING
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @id  -- Int32
+DECLARE @id Integer -- Int32
 SET     @id = 5
 
 SELECT

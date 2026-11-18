@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 MERGE INTO [TrimTestTable] [Target]
 USING (VALUES
 	(1,N'***OOO***'), (2,N'***SSS***')
@@ -27,7 +27,7 @@ VALUES
 )
 ;
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 MERGE INTO [TrimTestTable] [Target]
 USING (VALUES
 	(3,N'***III***')
@@ -56,7 +56,7 @@ VALUES
 )
 ;
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[r].[ID],
 	[r].[Data]
@@ -65,7 +65,7 @@ FROM
 ORDER BY
 	[r].[ID]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[r].[ID],
 	[r].[Data]

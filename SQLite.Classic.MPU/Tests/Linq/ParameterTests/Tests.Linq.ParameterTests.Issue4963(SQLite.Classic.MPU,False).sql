@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @offset  -- Int32
+DECLARE @offset Integer -- Int32
 SET     @offset = -1
 
 UPDATE

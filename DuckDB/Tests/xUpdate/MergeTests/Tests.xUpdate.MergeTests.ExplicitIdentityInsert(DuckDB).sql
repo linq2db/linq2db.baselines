@@ -5,7 +5,7 @@ FROM
 	Person t1
 
 -- DuckDB
-DECLARE $ID  -- Int32
+DECLARE $ID INTEGER -- Int32
 SET     $ID = 8
 
 MERGE INTO Person Target

@@ -30,7 +30,8 @@ VALUES
 )
 
 -- Access.Jet.OleDb AccessOleDb
-SELECT @@IDENTITY
+SELECT
+	@@IDENTITY
 
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @p VarWChar(5) -- String
@@ -73,7 +74,8 @@ VALUES
 )
 
 -- Access.Jet.OleDb AccessOleDb
-SELECT @@IDENTITY
+SELECT
+	@@IDENTITY
 
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @p VarWChar(5) -- String

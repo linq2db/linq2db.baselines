@@ -1,9 +1,9 @@
 ﻿-- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 DECLARE $Name NVarChar(1) -- String
 SET     $Name = 'a'
-DECLARE $Age  -- Int32
+DECLARE $Age INTEGER -- Int32
 SET     $Age = 5
 
 INSERT INTO OptRow
@@ -20,11 +20,11 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 2
 DECLARE $Name NVarChar -- String
 SET     $Name = NULL
-DECLARE $Age  -- Int32
+DECLARE $Age INTEGER -- Int32
 SET     $Age = NULL
 
 INSERT INTO OptRow
@@ -41,11 +41,11 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 3
 DECLARE $Name NVarChar(1) -- String
 SET     $Name = 'b'
-DECLARE $Age  -- Int32
+DECLARE $Age INTEGER -- Int32
 SET     $Age = 7
 
 INSERT INTO OptRow

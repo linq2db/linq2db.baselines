@@ -1,11 +1,11 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	[o_1].[StrValue]
 FROM
 	[SomeEntity] [e]
 		CROSS APPLY (
 			SELECT TOP (1)
-				Coalesce([o].[StrValue], N'') + N'_A' as [StrValue]
+				Coalesce([o].[StrValue], N'') || N'_A' as [StrValue]
 			FROM
 				[SomeOtherEntity] [o]
 			WHERE

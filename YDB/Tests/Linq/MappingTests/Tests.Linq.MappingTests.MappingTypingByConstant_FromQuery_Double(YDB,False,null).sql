@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $value Double
-SET     $value = NULL
+DECLARE value Double
+SET     value = NULL
 
 SELECT
 	t1.ID as ID,
@@ -15,8 +15,8 @@ FROM
 	) t1
 
 -- YDB Ydb
-DECLARE $value Double
-SET     $value = Double('3147483648')
+DECLARE value Double
+SET     value = Double('3147483648')
 
 SELECT
 	t1.ID as ID,

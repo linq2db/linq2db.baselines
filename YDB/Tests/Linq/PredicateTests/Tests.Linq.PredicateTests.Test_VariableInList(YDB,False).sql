@@ -1,10 +1,10 @@
 ﻿-- YDB Ydb
-DECLARE $One Int32
-SET     $One = 1
-DECLARE $Ids0_1 Int32
-SET     $Ids0_1 = 0
-DECLARE $Ids0_2 Int32
-SET     $Ids0_2 = 1
+DECLARE One Int32
+SET     One = 1
+DECLARE Ids0_1 Int32
+SET     Ids0_1 = 0
+DECLARE Ids0_2 Int32
+SET     Ids0_2 = 1
 
 SELECT
 	r.Id as Id,
@@ -28,12 +28,12 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $Zero Int32
-SET     $Zero = 0
-DECLARE $Ids0_1 Int32
-SET     $Ids0_1 = 0
-DECLARE $Ids0_2 Int32
-SET     $Ids0_2 = 1
+DECLARE Zero Int32
+SET     Zero = 0
+DECLARE Ids0_1 Int32
+SET     Ids0_1 = 0
+DECLARE Ids0_2 Int32
+SET     Ids0_2 = 1
 
 SELECT
 	r.Id as Id,
@@ -57,12 +57,12 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $OneN Int32
-SET     $OneN = 1
-DECLARE $Ids0_1 Int32
-SET     $Ids0_1 = 0
-DECLARE $Ids0_2 Int32
-SET     $Ids0_2 = 1
+DECLARE OneN Int32
+SET     OneN = 1
+DECLARE Ids0_1 Int32
+SET     Ids0_1 = 0
+DECLARE Ids0_2 Int32
+SET     Ids0_2 = 1
 
 SELECT
 	r.Id as Id,
@@ -86,12 +86,12 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $ZeroN Int32
-SET     $ZeroN = 0
-DECLARE $Ids0_1 Int32
-SET     $Ids0_1 = 0
-DECLARE $Ids0_2 Int32
-SET     $Ids0_2 = 1
+DECLARE ZeroN Int32
+SET     ZeroN = 0
+DECLARE Ids0_1 Int32
+SET     Ids0_1 = 0
+DECLARE Ids0_2 Int32
+SET     Ids0_2 = 1
 
 SELECT
 	r.Id as Id,
@@ -115,12 +115,12 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $Null Int32
-SET     $Null = NULL
-DECLARE $Ids0_1 Int32
-SET     $Ids0_1 = 0
-DECLARE $Ids0_2 Int32
-SET     $Ids0_2 = 1
+DECLARE Null Int32
+SET     Null = NULL
+DECLARE Ids0_1 Int32
+SET     Ids0_1 = 0
+DECLARE Ids0_2 Int32
+SET     Ids0_2 = 1
 
 SELECT
 	r.Id as Id,
@@ -144,12 +144,12 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $One Int32
-SET     $One = 1
-DECLARE $Ids0_1 Int32
-SET     $Ids0_1 = 0
-DECLARE $Ids0_2 Int32
-SET     $Ids0_2 = 1
+DECLARE One Int32
+SET     One = 1
+DECLARE Ids0_1 Int32
+SET     Ids0_1 = 0
+DECLARE Ids0_2 Int32
+SET     Ids0_2 = 1
 
 SELECT
 	r.Id as Id,
@@ -173,12 +173,12 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $Zero Int32
-SET     $Zero = 0
-DECLARE $Ids0_1 Int32
-SET     $Ids0_1 = 0
-DECLARE $Ids0_2 Int32
-SET     $Ids0_2 = 1
+DECLARE Zero Int32
+SET     Zero = 0
+DECLARE Ids0_1 Int32
+SET     Ids0_1 = 0
+DECLARE Ids0_2 Int32
+SET     Ids0_2 = 1
 
 SELECT
 	r.Id as Id,
@@ -202,12 +202,12 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $OneN Int32
-SET     $OneN = 1
-DECLARE $Ids0_1 Int32
-SET     $Ids0_1 = 0
-DECLARE $Ids0_2 Int32
-SET     $Ids0_2 = 1
+DECLARE OneN Int32
+SET     OneN = 1
+DECLARE Ids0_1 Int32
+SET     Ids0_1 = 0
+DECLARE Ids0_2 Int32
+SET     Ids0_2 = 1
 
 SELECT
 	r.Id as Id,
@@ -231,12 +231,12 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $ZeroN Int32
-SET     $ZeroN = 0
-DECLARE $Ids0_1 Int32
-SET     $Ids0_1 = 0
-DECLARE $Ids0_2 Int32
-SET     $Ids0_2 = 1
+DECLARE ZeroN Int32
+SET     ZeroN = 0
+DECLARE Ids0_1 Int32
+SET     Ids0_1 = 0
+DECLARE Ids0_2 Int32
+SET     Ids0_2 = 1
 
 SELECT
 	r.Id as Id,
@@ -260,12 +260,12 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $Null Int32
-SET     $Null = NULL
-DECLARE $Ids0_1 Int32
-SET     $Ids0_1 = 0
-DECLARE $Ids0_2 Int32
-SET     $Ids0_2 = 1
+DECLARE Null Int32
+SET     Null = NULL
+DECLARE Ids0_1 Int32
+SET     Ids0_1 = 0
+DECLARE Ids0_2 Int32
+SET     Ids0_2 = 1
 
 SELECT
 	r.Id as Id,
@@ -289,12 +289,12 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $One Int32
-SET     $One = 1
-DECLARE $Ids0_1 Int32
-SET     $Ids0_1 = 0
-DECLARE $Ids0_2 Int32
-SET     $Ids0_2 = 1
+DECLARE One Int32
+SET     One = 1
+DECLARE Ids0_1 Int32
+SET     Ids0_1 = 0
+DECLARE Ids0_2 Int32
+SET     Ids0_2 = 1
 
 SELECT
 	r.Id as Id,
@@ -318,12 +318,12 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $Zero Int32
-SET     $Zero = 0
-DECLARE $Ids0_1 Int32
-SET     $Ids0_1 = 0
-DECLARE $Ids0_2 Int32
-SET     $Ids0_2 = 1
+DECLARE Zero Int32
+SET     Zero = 0
+DECLARE Ids0_1 Int32
+SET     Ids0_1 = 0
+DECLARE Ids0_2 Int32
+SET     Ids0_2 = 1
 
 SELECT
 	r.Id as Id,
@@ -347,12 +347,12 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $OneN Int32
-SET     $OneN = 1
-DECLARE $Ids0_1 Int32
-SET     $Ids0_1 = 0
-DECLARE $Ids0_2 Int32
-SET     $Ids0_2 = 1
+DECLARE OneN Int32
+SET     OneN = 1
+DECLARE Ids0_1 Int32
+SET     Ids0_1 = 0
+DECLARE Ids0_2 Int32
+SET     Ids0_2 = 1
 
 SELECT
 	r.Id as Id,
@@ -376,12 +376,12 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $ZeroN Int32
-SET     $ZeroN = 0
-DECLARE $Ids0_1 Int32
-SET     $Ids0_1 = 0
-DECLARE $Ids0_2 Int32
-SET     $Ids0_2 = 1
+DECLARE ZeroN Int32
+SET     ZeroN = 0
+DECLARE Ids0_1 Int32
+SET     Ids0_1 = 0
+DECLARE Ids0_2 Int32
+SET     Ids0_2 = 1
 
 SELECT
 	r.Id as Id,
@@ -405,12 +405,12 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $Null Int32
-SET     $Null = NULL
-DECLARE $Ids0_1 Int32
-SET     $Ids0_1 = 0
-DECLARE $Ids0_2 Int32
-SET     $Ids0_2 = 1
+DECLARE Null Int32
+SET     Null = NULL
+DECLARE Ids0_1 Int32
+SET     Ids0_1 = 0
+DECLARE Ids0_2 Int32
+SET     Ids0_2 = 1
 
 SELECT
 	r.Id as Id,
@@ -434,12 +434,12 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $One Int32
-SET     $One = 1
-DECLARE $Ids0_1 Int32
-SET     $Ids0_1 = 0
-DECLARE $Ids0_2 Int32
-SET     $Ids0_2 = 1
+DECLARE One Int32
+SET     One = 1
+DECLARE Ids0_1 Int32
+SET     Ids0_1 = 0
+DECLARE Ids0_2 Int32
+SET     Ids0_2 = 1
 
 SELECT
 	r.Id as Id,
@@ -463,12 +463,12 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $Zero Int32
-SET     $Zero = 0
-DECLARE $Ids0_1 Int32
-SET     $Ids0_1 = 0
-DECLARE $Ids0_2 Int32
-SET     $Ids0_2 = 1
+DECLARE Zero Int32
+SET     Zero = 0
+DECLARE Ids0_1 Int32
+SET     Ids0_1 = 0
+DECLARE Ids0_2 Int32
+SET     Ids0_2 = 1
 
 SELECT
 	r.Id as Id,
@@ -492,12 +492,12 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $OneN Int32
-SET     $OneN = 1
-DECLARE $Ids0_1 Int32
-SET     $Ids0_1 = 0
-DECLARE $Ids0_2 Int32
-SET     $Ids0_2 = 1
+DECLARE OneN Int32
+SET     OneN = 1
+DECLARE Ids0_1 Int32
+SET     Ids0_1 = 0
+DECLARE Ids0_2 Int32
+SET     Ids0_2 = 1
 
 SELECT
 	r.Id as Id,
@@ -521,12 +521,12 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $ZeroN Int32
-SET     $ZeroN = 0
-DECLARE $Ids0_1 Int32
-SET     $Ids0_1 = 0
-DECLARE $Ids0_2 Int32
-SET     $Ids0_2 = 1
+DECLARE ZeroN Int32
+SET     ZeroN = 0
+DECLARE Ids0_1 Int32
+SET     Ids0_1 = 0
+DECLARE Ids0_2 Int32
+SET     Ids0_2 = 1
 
 SELECT
 	r.Id as Id,
@@ -550,12 +550,12 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-DECLARE $Null Int32
-SET     $Null = NULL
-DECLARE $Ids0_1 Int32
-SET     $Ids0_1 = 0
-DECLARE $Ids0_2 Int32
-SET     $Ids0_2 = 1
+DECLARE Null Int32
+SET     Null = NULL
+DECLARE Ids0_1 Int32
+SET     Ids0_1 = 0
+DECLARE Ids0_2 Int32
+SET     Ids0_2 = 1
 
 SELECT
 	r.Id as Id,

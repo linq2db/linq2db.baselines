@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	[g_2].[Key_1],
 	COUNT(*)
@@ -12,7 +12,7 @@ FROM
 GROUP BY
 	[g_2].[Key_1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID]

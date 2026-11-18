@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @In VarChar(20) -- AnsiString
 SET     @In = NULL
 
@@ -9,7 +9,7 @@ FROM
 WHERE
 	[s].[CEnum] IN (@In, @In)
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 DECLARE @NotIn VarChar(20) -- AnsiString
 SET     @NotIn = NULL
 

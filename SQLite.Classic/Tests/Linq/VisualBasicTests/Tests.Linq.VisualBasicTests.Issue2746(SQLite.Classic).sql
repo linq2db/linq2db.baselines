@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic SQLite
-DECLARE @VBLocal_SelectedValue  -- Int32
+DECLARE @VBLocal_SelectedValue Integer -- Int32
 SET     @VBLocal_SelectedValue = 1
 
 SELECT

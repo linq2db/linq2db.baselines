@@ -1,7 +1,7 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Column  -- Boolean
+DECLARE @Column Integer -- Boolean
 SET     @Column = 0
-DECLARE @ColumnNullable  -- Boolean
+DECLARE @ColumnNullable Integer -- Boolean
 SET     @ColumnNullable = 1
 
 SELECT
@@ -28,11 +28,11 @@ DELETE FROM
 	[BooleanTable]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Column  -- Boolean
+DECLARE @Column Integer -- Boolean
 SET     @Column = 1
-DECLARE @ColumnNullable  -- Boolean
+DECLARE @ColumnNullable Integer -- Boolean
 SET     @ColumnNullable = NULL
 
 INSERT INTO [BooleanTable]
@@ -49,11 +49,11 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Column  -- Boolean
+DECLARE @Column Integer -- Boolean
 SET     @Column = 0
-DECLARE @ColumnNullable  -- Boolean
+DECLARE @ColumnNullable Integer -- Boolean
 SET     @ColumnNullable = 1
 
 INSERT INTO [BooleanTable]

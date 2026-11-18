@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @p  -- Boolean
+DECLARE @p Integer -- Boolean
 SET     @p = 1
 
 SELECT

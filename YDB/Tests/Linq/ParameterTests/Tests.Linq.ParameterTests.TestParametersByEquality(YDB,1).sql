@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $personId Int32
-SET     $personId = 1
-DECLARE $personId_1 Int32
-SET     $personId_1 = 1
+DECLARE personId Int32
+SET     personId = 1
+DECLARE personId_1 Int32
+SET     personId_1 = 1
 
 SELECT
 	p.FirstName as FirstName,
@@ -21,10 +21,10 @@ WHERE
 	p.PersonID = $personId AND p.PersonID = $personId_1
 
 -- YDB Ydb
-DECLARE $personId Int32
-SET     $personId = 1
-DECLARE $personId_1 Int32
-SET     $personId_1 = 2
+DECLARE personId Int32
+SET     personId = 1
+DECLARE personId_1 Int32
+SET     personId_1 = 2
 
 SELECT
 	p.FirstName as FirstName,

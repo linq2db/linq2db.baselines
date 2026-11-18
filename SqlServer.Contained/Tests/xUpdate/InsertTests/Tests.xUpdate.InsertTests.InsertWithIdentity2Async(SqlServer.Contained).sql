@@ -1,11 +1,11 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 DELETE [t1]
 FROM
 	[Person] [t1]
 WHERE
 	[t1].[PersonID] > 4
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 INSERT INTO [Person]
 (
 	[FirstName],
@@ -21,7 +21,7 @@ VALUES
 
 SELECT SCOPE_IDENTITY()
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT TOP (2)
 	[p].[FirstName],
 	[p].[PersonID],
@@ -33,7 +33,7 @@ FROM
 WHERE
 	[p].[FirstName] = N'John' AND [p].[LastName] = N'Shepard'
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 DELETE [t1]
 FROM
 	[Person] [t1]

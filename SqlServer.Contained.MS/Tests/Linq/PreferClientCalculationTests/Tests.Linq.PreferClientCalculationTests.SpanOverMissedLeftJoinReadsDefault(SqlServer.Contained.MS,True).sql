@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[e].[Id],
 	[j].[Span],
@@ -7,7 +7,7 @@ FROM
 	[MissedSpanEntity] [e]
 		LEFT JOIN [MissedSpanEntity] [j] ON [j].[Id] = [e].[Id] + 1000
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[Id],
 	[t1].[Span]

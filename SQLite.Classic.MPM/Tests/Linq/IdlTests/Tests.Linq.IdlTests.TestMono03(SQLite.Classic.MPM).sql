@@ -1,7 +1,7 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @p1 NVarChar(1) -- String
 SET     @p1 = 'A'
-DECLARE @p2  -- Int32
+DECLARE @p2 Integer -- Int32
 SET     @p2 = 1
 
 SELECT

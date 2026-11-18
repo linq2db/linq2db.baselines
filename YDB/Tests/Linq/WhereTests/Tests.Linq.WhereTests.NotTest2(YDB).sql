@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $n Int32
-SET     $n = 2
+DECLARE n Int32
+SET     n = 2
 
 SELECT
 	p.FirstName as FirstName,

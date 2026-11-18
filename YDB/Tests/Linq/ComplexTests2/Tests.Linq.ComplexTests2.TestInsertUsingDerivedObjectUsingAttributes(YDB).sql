@@ -1,12 +1,12 @@
 ﻿-- YDB Ydb
-DECLARE $FirstName Text(21) -- String
-SET     $FirstName = 'test_inherited_insert'u
-DECLARE $LastName Text(4) -- String
-SET     $LastName = 'test'u
-DECLARE $MiddleName Text(4) -- String
-SET     $MiddleName = 'test'u
-DECLARE $Gender Text(1) -- AnsiStringFixedLength
-SET     $Gender = 'U'u
+DECLARE FirstName Text(21) -- String
+SET     FirstName = 'test_inherited_insert'u
+DECLARE LastName Text(4) -- String
+SET     LastName = 'test'u
+DECLARE MiddleName Text(4) -- String
+SET     MiddleName = 'test'u
+DECLARE Gender Text(1) -- AnsiStringFixedLength
+SET     Gender = 'U'u
 
 INSERT INTO Person
 (
@@ -39,16 +39,16 @@ WHERE
 LIMIT 1
 
 -- YDB Ydb
-DECLARE $FirstName Text(21) -- String
-SET     $FirstName = 'test_inherited_insert'u
-DECLARE $LastName Text(4) -- String
-SET     $LastName = 'test'u
-DECLARE $MiddleName Text(4) -- String
-SET     $MiddleName = 'test'u
-DECLARE $Gender Text(1) -- AnsiStringFixedLength
-SET     $Gender = 'U'u
-DECLARE $ID Int32
-SET     $ID = 5
+DECLARE FirstName Text(21) -- String
+SET     FirstName = 'test_inherited_insert'u
+DECLARE LastName Text(4) -- String
+SET     LastName = 'test'u
+DECLARE MiddleName Text(4) -- String
+SET     MiddleName = 'test'u
+DECLARE Gender Text(1) -- AnsiStringFixedLength
+SET     Gender = 'U'u
+DECLARE ID Int32
+SET     ID = 5
 
 UPDATE
 	Person
@@ -74,8 +74,8 @@ WHERE
 LIMIT 1
 
 -- YDB Ydb
-DECLARE $ID Int32
-SET     $ID = 5
+DECLARE ID Int32
+SET     ID = 5
 
 DELETE FROM
 	Person

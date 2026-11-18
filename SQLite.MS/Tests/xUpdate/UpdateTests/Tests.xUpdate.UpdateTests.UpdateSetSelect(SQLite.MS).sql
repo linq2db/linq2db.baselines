@@ -22,7 +22,7 @@ WHERE
 	[Parent].[ParentID] = 1 AND [Parent].[ParentID] = [c_1].[ParentID]
 
 -- SQLite.MS SQLite
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1
 
 UPDATE

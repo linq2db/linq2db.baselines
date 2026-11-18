@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $take Int32
-SET     $take = 5
-DECLARE $skip Int32
-SET     $skip = 2
+DECLARE take Int32
+SET     take = 5
+DECLARE skip Int32
+SET     skip = 2
 
 SELECT
 	t1.ParentID as ParentID,
@@ -14,10 +14,10 @@ ORDER BY
 LIMIT $take OFFSET $skip 
 
 -- YDB Ydb
-DECLARE $take Int32
-SET     $take = 5
-DECLARE $skip Int32
-SET     $skip = 2
+DECLARE take Int32
+SET     take = 5
+DECLARE skip Int32
+SET     skip = 2
 
 SELECT
 	t1.ParentID as ParentID,

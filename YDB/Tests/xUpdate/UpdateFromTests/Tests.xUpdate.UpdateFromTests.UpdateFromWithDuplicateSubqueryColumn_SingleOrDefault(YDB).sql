@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $id1 Int32
-SET     $id1 = 1
+DECLARE id1 Int32
+SET     id1 = 1
 
 $CTE_1 = 	SELECT
 		r.Value3 as Value1

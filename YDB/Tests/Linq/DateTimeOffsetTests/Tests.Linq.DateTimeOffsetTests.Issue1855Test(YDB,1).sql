@@ -1,10 +1,10 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $SomeDateTimeOffset Timestamp -- DateTime2
-SET     $SomeDateTimeOffset = Timestamp('2019-08-08T08:08:08.000000Z')
-DECLARE $SomeNullableDateTimeOffset Timestamp -- DateTime2
-SET     $SomeNullableDateTimeOffset = Timestamp('2019-08-08T08:08:08.000000Z')
+DECLARE Id Int32
+SET     Id = 1
+DECLARE SomeDateTimeOffset Timestamp -- DateTime2
+SET     SomeDateTimeOffset = Timestamp('2019-08-08T08:08:08.000000Z')
+DECLARE SomeNullableDateTimeOffset Timestamp -- DateTime2
+SET     SomeNullableDateTimeOffset = Timestamp('2019-08-08T08:08:08.000000Z')
 
 INSERT INTO Issue1855Table
 (
@@ -20,10 +20,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 2
-DECLARE $SomeDateTimeOffset Timestamp -- DateTime2
-SET     $SomeDateTimeOffset = Timestamp('2019-08-08T08:08:08.000000Z')
+DECLARE Id Int32
+SET     Id = 2
+DECLARE SomeDateTimeOffset Timestamp -- DateTime2
+SET     SomeDateTimeOffset = Timestamp('2019-08-08T08:08:08.000000Z')
 
 INSERT INTO Issue1855Table
 (
@@ -37,10 +37,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $interval Int32
-SET     $interval = 10
-DECLARE $clientSideIn Timestamp -- DateTime2
-SET     $clientSideIn = Timestamp('2019-08-08T08:08:18.000000Z')
+DECLARE interval Int32
+SET     interval = 10
+DECLARE clientSideIn Timestamp -- DateTime2
+SET     clientSideIn = Timestamp('2019-08-08T08:08:18.000000Z')
 
 SELECT
 	r.Id as Id,

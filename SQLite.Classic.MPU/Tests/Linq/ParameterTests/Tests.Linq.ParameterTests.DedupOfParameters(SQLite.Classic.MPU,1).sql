@@ -1,13 +1,13 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Value  -- Boolean
+DECLARE @Value Integer -- Boolean
 SET     @Value = 1
-DECLARE @Value_1  -- Boolean
+DECLARE @Value_1 Integer -- Boolean
 SET     @Value_1 = 0
-DECLARE @Value_2  -- Boolean
+DECLARE @Value_2 Integer -- Boolean
 SET     @Value_2 = 1
-DECLARE @Value_3  -- Boolean
+DECLARE @Value_3 Integer -- Boolean
 SET     @Value_3 = 0
-DECLARE @Value_4  -- Boolean
+DECLARE @Value_4 Integer -- Boolean
 SET     @Value_4 = 0
 
 UPDATE
@@ -32,15 +32,15 @@ FROM
 LIMIT 2
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Value  -- Boolean
+DECLARE @Value Integer -- Boolean
 SET     @Value = 1
-DECLARE @Value_1  -- Boolean
+DECLARE @Value_1 Integer -- Boolean
 SET     @Value_1 = 0
-DECLARE @Value_2  -- Boolean
+DECLARE @Value_2 Integer -- Boolean
 SET     @Value_2 = 0
-DECLARE @Value_3  -- Boolean
+DECLARE @Value_3 Integer -- Boolean
 SET     @Value_3 = 1
-DECLARE @Value_4  -- Boolean
+DECLARE @Value_4 Integer -- Boolean
 SET     @Value_4 = 0
 
 UPDATE
@@ -65,15 +65,15 @@ FROM
 LIMIT 2
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Value  -- Boolean
+DECLARE @Value Integer -- Boolean
 SET     @Value = 0
-DECLARE @Value_1  -- Boolean
+DECLARE @Value_1 Integer -- Boolean
 SET     @Value_1 = 1
-DECLARE @Value_2  -- Boolean
+DECLARE @Value_2 Integer -- Boolean
 SET     @Value_2 = 0
-DECLARE @Value_3  -- Boolean
+DECLARE @Value_3 Integer -- Boolean
 SET     @Value_3 = 1
-DECLARE @Value_4  -- Boolean
+DECLARE @Value_4 Integer -- Boolean
 SET     @Value_4 = 0
 
 UPDATE
@@ -98,15 +98,15 @@ FROM
 LIMIT 2
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Value  -- Boolean
+DECLARE @Value Integer -- Boolean
 SET     @Value = 1
-DECLARE @Value_1  -- Boolean
+DECLARE @Value_1 Integer -- Boolean
 SET     @Value_1 = 1
-DECLARE @Value_2  -- Boolean
+DECLARE @Value_2 Integer -- Boolean
 SET     @Value_2 = 0
-DECLARE @Value_3  -- Boolean
+DECLARE @Value_3 Integer -- Boolean
 SET     @Value_3 = 1
-DECLARE @Value_4  -- Boolean
+DECLARE @Value_4 Integer -- Boolean
 SET     @Value_4 = 1
 
 UPDATE

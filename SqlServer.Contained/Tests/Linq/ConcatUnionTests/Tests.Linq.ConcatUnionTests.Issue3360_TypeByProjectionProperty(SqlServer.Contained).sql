@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	[p].[Id],
 	CAST('str1' AS VarChar(Max))
@@ -11,7 +11,7 @@ SELECT
 FROM
 	[Issue3360Table] [p_1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[p].[Id],
 	CAST('str2' AS VarChar(Max))

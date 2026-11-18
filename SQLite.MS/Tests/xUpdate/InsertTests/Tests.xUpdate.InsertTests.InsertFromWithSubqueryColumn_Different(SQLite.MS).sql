@@ -1,11 +1,11 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @id1  -- Int32
+DECLARE @id1 Integer -- Int32
 SET     @id1 = 1
-DECLARE @id3  -- Int32
+DECLARE @id3 Integer -- Int32
 SET     @id3 = 3
-DECLARE @id2  -- Int32
+DECLARE @id2 Integer -- Int32
 SET     @id2 = 2
-DECLARE @id4  -- Int32
+DECLARE @id4 Integer -- Int32
 SET     @id4 = 4
 
 INSERT INTO [InsertFromWithConstantsTable]

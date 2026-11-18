@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $Type Text(9) -- String
-SET     $Type = 'Child564A'u
-DECLARE $StringValue Text(9) -- String
-SET     $StringValue = 'SomeValue'u
+DECLARE Type Text(9) -- String
+SET     Type = 'Child564A'u
+DECLARE StringValue Text(9) -- String
+SET     StringValue = 'SomeValue'u
 
 INSERT INTO Parent564
 (
@@ -16,10 +16,10 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Type Text(9) -- String
-SET     $Type = 'Child564B'u
-DECLARE $IntValue Int32
-SET     $IntValue = 911
+DECLARE Type Text(9) -- String
+SET     Type = 'Child564B'u
+DECLARE IntValue Int32
+SET     IntValue = 911
 
 INSERT INTO Parent564
 (

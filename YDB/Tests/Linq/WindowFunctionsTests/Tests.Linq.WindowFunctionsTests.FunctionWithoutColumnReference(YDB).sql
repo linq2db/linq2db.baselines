@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $rowCount Int32
-SET     $rowCount = 9
-DECLARE $p Int32
-SET     $p = 10
+DECLARE rowCount Int32
+SET     rowCount = 9
+DECLARE p Int32
+SET     p = 10
 
 SELECT
 	COUNT(*) OVER () as c1,

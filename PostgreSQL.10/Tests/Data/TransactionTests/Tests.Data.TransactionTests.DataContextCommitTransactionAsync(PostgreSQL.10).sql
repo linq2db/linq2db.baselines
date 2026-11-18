@@ -16,7 +16,6 @@ VALUES
 	:Value1
 )
 
-CommitTransactionAsync
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 DELETE FROM
 	"Parent" t1

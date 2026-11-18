@@ -30,8 +30,6 @@ WHERE
 
 
 
-
-
 -- SQLite.MS SQLite
 SELECT
 	[e].[IsDeleted],
@@ -53,6 +51,8 @@ FROM
 	[Orders] [e]
 WHERE
 	NOT [e].[IsDeleted]
+
+
 
 
 

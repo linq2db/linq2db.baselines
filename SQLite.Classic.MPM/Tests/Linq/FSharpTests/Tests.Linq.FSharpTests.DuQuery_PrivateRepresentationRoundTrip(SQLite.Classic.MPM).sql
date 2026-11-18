@@ -1,7 +1,7 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Key  -- Int32
+DECLARE @Key Integer -- Int32
 SET     @Key = 7
 
 INSERT INTO [PrivateDuRow]

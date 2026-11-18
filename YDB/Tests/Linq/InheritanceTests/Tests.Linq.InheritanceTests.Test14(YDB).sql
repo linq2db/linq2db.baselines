@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $id Int32
-SET     $id = 10
+DECLARE id Int32
+SET     id = 10
 
 SELECT
 	c_1.ChildID as ChildID

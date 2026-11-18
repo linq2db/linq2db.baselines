@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $Ids0_1 Int32
-SET     $Ids0_1 = 20
+DECLARE Ids0_1 Int32
+SET     Ids0_1 = 20
 
 SELECT
 	t1.Id as Id,

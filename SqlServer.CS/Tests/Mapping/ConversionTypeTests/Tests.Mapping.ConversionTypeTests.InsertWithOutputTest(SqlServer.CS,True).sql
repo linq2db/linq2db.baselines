@@ -1,0 +1,33 @@
+﻿-- SqlServer.CS SqlServer.2025
+INSERT INTO [TrimTestTable]
+(
+	[ID],
+	[Data]
+)
+OUTPUT
+	INSERTED.[ID],
+	INSERTED.[Data]
+SELECT
+	[t1].[ID] + 1,
+	N'***HHH***'
+FROM
+	[TrimTestTable] [t1]
+
+-- SqlServer.CS SqlServer.2025
+SELECT
+	[r].[ID],
+	[r].[Data]
+FROM
+	[TrimTestTable] [r]
+ORDER BY
+	[r].[ID]
+
+-- SqlServer.CS SqlServer.2025
+SELECT
+	[r].[ID],
+	[r].[Data]
+FROM
+	[TrimTestTable] [r]
+ORDER BY
+	[r].[ID]
+

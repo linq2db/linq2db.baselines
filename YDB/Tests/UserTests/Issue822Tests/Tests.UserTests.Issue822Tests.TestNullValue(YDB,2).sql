@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $id Int32
-SET     $id = 3
+DECLARE id Int32
+SET     id = 3
 
 $CTE_1 = 	SELECT
 		t1.ID as ID
@@ -32,8 +32,8 @@ WHERE
 	)
 
 -- YDB Ydb
-DECLARE $id Int32
-SET     $id = 4
+DECLARE id Int32
+SET     id = 4
 
 $CTE_1 = 	SELECT
 		t1.ID as ID

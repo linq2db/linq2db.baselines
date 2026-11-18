@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $value Int32
-SET     $value = 123
+DECLARE value Int32
+SET     value = 123
 
 INSERT INTO TableWithIdentity
 (

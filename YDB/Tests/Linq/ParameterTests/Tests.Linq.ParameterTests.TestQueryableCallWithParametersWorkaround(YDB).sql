@@ -6,40 +6,40 @@ FROM
 	Child t1
 
 -- YDB Ydb
-DECLARE $Ids0_1 Int32
-SET     $Ids0_1 = 11
-DECLARE $Ids0_2 Int32
-SET     $Ids0_2 = 21
-DECLARE $Ids0_3 Int32
-SET     $Ids0_3 = 22
-DECLARE $Ids0_4 Int32
-SET     $Ids0_4 = 31
-DECLARE $Ids0_5 Int32
-SET     $Ids0_5 = 32
-DECLARE $Ids0_6 Int32
-SET     $Ids0_6 = 33
-DECLARE $Ids0_7 Int32
-SET     $Ids0_7 = 41
-DECLARE $Ids0_8 Int32
-SET     $Ids0_8 = 42
-DECLARE $Ids0_9 Int32
-SET     $Ids0_9 = 43
-DECLARE $Ids0_10 Int32
-SET     $Ids0_10 = 44
-DECLARE $Ids0_11 Int32
-SET     $Ids0_11 = 61
-DECLARE $Ids0_12 Int32
-SET     $Ids0_12 = 62
-DECLARE $Ids0_13 Int32
-SET     $Ids0_13 = 63
-DECLARE $Ids0_14 Int32
-SET     $Ids0_14 = 64
-DECLARE $Ids0_15 Int32
-SET     $Ids0_15 = 65
-DECLARE $Ids0_16 Int32
-SET     $Ids0_16 = 66
-DECLARE $Ids0_17 Int32
-SET     $Ids0_17 = 77
+DECLARE Ids0_1 Int32
+SET     Ids0_1 = 11
+DECLARE Ids0_2 Int32
+SET     Ids0_2 = 21
+DECLARE Ids0_3 Int32
+SET     Ids0_3 = 22
+DECLARE Ids0_4 Int32
+SET     Ids0_4 = 31
+DECLARE Ids0_5 Int32
+SET     Ids0_5 = 32
+DECLARE Ids0_6 Int32
+SET     Ids0_6 = 33
+DECLARE Ids0_7 Int32
+SET     Ids0_7 = 41
+DECLARE Ids0_8 Int32
+SET     Ids0_8 = 42
+DECLARE Ids0_9 Int32
+SET     Ids0_9 = 43
+DECLARE Ids0_10 Int32
+SET     Ids0_10 = 44
+DECLARE Ids0_11 Int32
+SET     Ids0_11 = 61
+DECLARE Ids0_12 Int32
+SET     Ids0_12 = 62
+DECLARE Ids0_13 Int32
+SET     Ids0_13 = 63
+DECLARE Ids0_14 Int32
+SET     Ids0_14 = 64
+DECLARE Ids0_15 Int32
+SET     Ids0_15 = 65
+DECLARE Ids0_16 Int32
+SET     Ids0_16 = 66
+DECLARE Ids0_17 Int32
+SET     Ids0_17 = 77
 
 $CTE_1 = 	SELECT
 		c_1.ParentID as ParentID

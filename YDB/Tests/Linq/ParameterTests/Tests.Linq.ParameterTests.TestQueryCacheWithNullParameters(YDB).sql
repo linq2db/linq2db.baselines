@@ -7,8 +7,8 @@ WHERE
 	1 = 0
 
 -- YDB Ydb
-DECLARE $id Int32
-SET     $id = 1
+DECLARE id Int32
+SET     id = 1
 
 SELECT
 	COUNT(*) as Count_1

@@ -1,5 +1,5 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @paramCopy  -- Int32
+DECLARE @paramCopy Integer -- Int32
 SET     @paramCopy = 1
 
 SELECT
@@ -21,7 +21,7 @@ WHERE
 	)
 
 -- SQLite.MS SQLite
-DECLARE @paramCopy  -- Int32
+DECLARE @paramCopy Integer -- Int32
 SET     @paramCopy = 2
 
 SELECT
@@ -43,7 +43,7 @@ WHERE
 	)
 
 -- SQLite.MS SQLite
-DECLARE @paramCopy  -- Int32
+DECLARE @paramCopy Integer -- Int32
 SET     @paramCopy = 3
 
 SELECT
@@ -65,7 +65,7 @@ WHERE
 	)
 
 -- SQLite.MS SQLite
-DECLARE @paramCopy  -- Int32
+DECLARE @paramCopy Integer -- Int32
 SET     @paramCopy = 4
 
 SELECT
@@ -87,7 +87,7 @@ WHERE
 	)
 
 -- SQLite.MS SQLite
-DECLARE @paramCopy  -- Int32
+DECLARE @paramCopy Integer -- Int32
 SET     @paramCopy = 1
 
 SELECT

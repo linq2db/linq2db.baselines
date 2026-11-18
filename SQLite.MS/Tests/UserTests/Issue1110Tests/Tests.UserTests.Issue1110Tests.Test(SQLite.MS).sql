@@ -1,7 +1,7 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 10
-DECLARE @TimeStamp  -- DateTime
+DECLARE @TimeStamp Text(23) -- DateTime
 SET     @TimeStamp = '2020-02-29 17:54:55.123'
 
 INSERT INTO [Issue1110TB]

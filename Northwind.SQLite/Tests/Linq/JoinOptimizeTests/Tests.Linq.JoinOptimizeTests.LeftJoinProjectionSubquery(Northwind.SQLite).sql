@@ -1,5 +1,5 @@
 ﻿-- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @take  -- Int32
+DECLARE @take Integer -- Int32
 SET     @take = 10
 
 SELECT
@@ -24,7 +24,7 @@ ORDER BY
 	[t1].[OrderID]
 
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @take  -- Int32
+DECLARE @take Integer -- Int32
 SET     @take = 10
 
 SELECT

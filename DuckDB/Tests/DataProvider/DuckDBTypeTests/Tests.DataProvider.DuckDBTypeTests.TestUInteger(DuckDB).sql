@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $value  -- UInt32
+DECLARE $value UINTEGER -- UInt32
 SET     $value = 0
 
 SELECT
@@ -26,11 +26,11 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
-DECLARE $Column  -- UInt32
+DECLARE $Column UINTEGER -- UInt32
 SET     $Column = 0
-DECLARE $ColumnNullable  -- UInt32
+DECLARE $ColumnNullable UINTEGER -- UInt32
 SET     $ColumnNullable = NULL
 
 INSERT INTO "TypeTable`2"
@@ -47,7 +47,7 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $value  -- UInt32
+DECLARE $value UINTEGER -- UInt32
 SET     $value = 0
 
 SELECT
@@ -64,9 +64,9 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
-DECLARE $p2  -- UInt32
+DECLARE $p2 UINTEGER -- UInt32
 SET     $p2 = 0
 
 INSERT INTO "TypeTable`2"
@@ -79,7 +79,7 @@ VALUES
 ($p1,$p2,NULL)
 
 -- DuckDB
-DECLARE $value  -- UInt32
+DECLARE $value UINTEGER -- UInt32
 SET     $value = 0
 
 SELECT
@@ -111,7 +111,7 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-DECLARE $value  -- UInt32
+DECLARE $value UINTEGER -- UInt32
 SET     $value = 0
 
 SELECT
@@ -143,7 +143,7 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-DECLARE $value  -- UInt32
+DECLARE $value UINTEGER -- UInt32
 SET     $value = 0
 
 SELECT
@@ -156,9 +156,9 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable IS NULL
 
 -- DuckDB
-DECLARE $value  -- UInt32
+DECLARE $value UINTEGER -- UInt32
 SET     $value = 0
-DECLARE $nullableValue  -- UInt32
+DECLARE $nullableValue UINTEGER -- UInt32
 SET     $nullableValue = 4294967295
 
 SELECT
@@ -185,11 +185,11 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
-DECLARE $Column  -- UInt32
+DECLARE $Column UINTEGER -- UInt32
 SET     $Column = 0
-DECLARE $ColumnNullable  -- UInt32
+DECLARE $ColumnNullable UINTEGER -- UInt32
 SET     $ColumnNullable = 4294967295
 
 INSERT INTO "TypeTable`2"
@@ -206,9 +206,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $value  -- UInt32
+DECLARE $value UINTEGER -- UInt32
 SET     $value = 0
-DECLARE $nullableValue  -- UInt32
+DECLARE $nullableValue UINTEGER -- UInt32
 SET     $nullableValue = 4294967295
 
 SELECT
@@ -225,11 +225,11 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
-DECLARE $p2  -- UInt32
+DECLARE $p2 UINTEGER -- UInt32
 SET     $p2 = 0
-DECLARE $p3  -- UInt32
+DECLARE $p3 UINTEGER -- UInt32
 SET     $p3 = 4294967295
 
 INSERT INTO "TypeTable`2"
@@ -242,9 +242,9 @@ VALUES
 ($p1,$p2,$p3)
 
 -- DuckDB
-DECLARE $value  -- UInt32
+DECLARE $value UINTEGER -- UInt32
 SET     $value = 0
-DECLARE $nullableValue  -- UInt32
+DECLARE $nullableValue UINTEGER -- UInt32
 SET     $nullableValue = 4294967295
 
 SELECT
@@ -276,9 +276,9 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-DECLARE $value  -- UInt32
+DECLARE $value UINTEGER -- UInt32
 SET     $value = 0
-DECLARE $nullableValue  -- UInt32
+DECLARE $nullableValue UINTEGER -- UInt32
 SET     $nullableValue = 4294967295
 
 SELECT
@@ -310,9 +310,9 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-DECLARE $value  -- UInt32
+DECLARE $value UINTEGER -- UInt32
 SET     $value = 0
-DECLARE $nullableValue  -- UInt32
+DECLARE $nullableValue UINTEGER -- UInt32
 SET     $nullableValue = 4294967295
 
 SELECT
@@ -325,9 +325,9 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable = $nullableValue
 
 -- DuckDB
-DECLARE $value  -- UInt32
+DECLARE $value UINTEGER -- UInt32
 SET     $value = 4294967295
-DECLARE $nullableValue  -- UInt32
+DECLARE $nullableValue UINTEGER -- UInt32
 SET     $nullableValue = 0
 
 SELECT
@@ -354,11 +354,11 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
-DECLARE $Column  -- UInt32
+DECLARE $Column UINTEGER -- UInt32
 SET     $Column = 4294967295
-DECLARE $ColumnNullable  -- UInt32
+DECLARE $ColumnNullable UINTEGER -- UInt32
 SET     $ColumnNullable = 0
 
 INSERT INTO "TypeTable`2"
@@ -375,9 +375,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $value  -- UInt32
+DECLARE $value UINTEGER -- UInt32
 SET     $value = 4294967295
-DECLARE $nullableValue  -- UInt32
+DECLARE $nullableValue UINTEGER -- UInt32
 SET     $nullableValue = 0
 
 SELECT
@@ -394,11 +394,11 @@ DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-DECLARE $p1  -- Int32
+DECLARE $p1 INTEGER -- Int32
 SET     $p1 = 1
-DECLARE $p2  -- UInt32
+DECLARE $p2 UINTEGER -- UInt32
 SET     $p2 = 4294967295
-DECLARE $p3  -- UInt32
+DECLARE $p3 UINTEGER -- UInt32
 SET     $p3 = 0
 
 INSERT INTO "TypeTable`2"
@@ -411,9 +411,9 @@ VALUES
 ($p1,$p2,$p3)
 
 -- DuckDB
-DECLARE $value  -- UInt32
+DECLARE $value UINTEGER -- UInt32
 SET     $value = 4294967295
-DECLARE $nullableValue  -- UInt32
+DECLARE $nullableValue UINTEGER -- UInt32
 SET     $nullableValue = 0
 
 SELECT
@@ -445,9 +445,9 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-DECLARE $value  -- UInt32
+DECLARE $value UINTEGER -- UInt32
 SET     $value = 4294967295
-DECLARE $nullableValue  -- UInt32
+DECLARE $nullableValue UINTEGER -- UInt32
 SET     $nullableValue = 0
 
 SELECT
@@ -479,9 +479,9 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-DECLARE $value  -- UInt32
+DECLARE $value UINTEGER -- UInt32
 SET     $value = 4294967295
-DECLARE $nullableValue  -- UInt32
+DECLARE $nullableValue UINTEGER -- UInt32
 SET     $nullableValue = 0
 
 SELECT

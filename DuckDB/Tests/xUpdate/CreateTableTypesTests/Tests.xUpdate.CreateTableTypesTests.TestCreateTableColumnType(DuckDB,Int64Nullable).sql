@@ -1,7 +1,7 @@
 ﻿-- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
-DECLARE $Int64Nullable  -- Int64
+DECLARE $Int64Nullable BIGINT -- Int64
 SET     $Int64Nullable = NULL
 
 INSERT INTO CreateTableTypes
@@ -16,9 +16,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $Id  -- Int32
+DECLARE $Id INTEGER -- Int32
 SET     $Id = 2
-DECLARE $Int64Nullable  -- Int64
+DECLARE $Int64Nullable BIGINT -- Int64
 SET     $Int64Nullable = 4
 
 INSERT INTO CreateTableTypes

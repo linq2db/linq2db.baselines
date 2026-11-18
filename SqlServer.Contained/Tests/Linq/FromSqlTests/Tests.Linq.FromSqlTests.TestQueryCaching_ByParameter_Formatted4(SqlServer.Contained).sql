@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Value1]
 FROM
@@ -6,7 +6,7 @@ FROM
 		SELECT NULL as Value1 /*TestQueryCaching_ByParameter_Formatted4*/
 	) [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Value1]
 FROM
@@ -14,7 +14,7 @@ FROM
 		SELECT NULL as Value1 /*TestQueryCaching_ByParameter_Formatted4*/
 	) [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Value1]
 FROM
@@ -22,7 +22,7 @@ FROM
 		SELECT NULL as Value1 /*TestQueryCaching_ByParameter_Formatted4*/
 	) [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Value1]
 FROM
@@ -30,7 +30,7 @@ FROM
 		SELECT NULL as Value1 /*TestQueryCaching_ByParameter_Formatted4*/
 	) [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[Value1]
 FROM

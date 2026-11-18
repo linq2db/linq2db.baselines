@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
-DECLARE $Column Date
-SET     $Column = Date('2020-02-29')
-DECLARE $ColumnNullable Date
-SET     $ColumnNullable = Date('2020-01-01')
+DECLARE Column Date
+SET     Column = Date('2020-02-29')
+DECLARE ColumnNullable Date
+SET     ColumnNullable = Date('2020-01-01')
 
 SELECT
 	r.Id as Id,
@@ -28,12 +28,12 @@ DELETE FROM
 	DateOnlyTable
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Column Date
-SET     $Column = Date('1980-01-01')
-DECLARE $ColumnNullable Date
-SET     $ColumnNullable = NULL
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Column Date
+SET     Column = Date('1980-01-01')
+DECLARE ColumnNullable Date
+SET     ColumnNullable = NULL
 
 INSERT INTO DateOnlyTable
 (
@@ -49,12 +49,12 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 2
-DECLARE $Column Date
-SET     $Column = Date('2020-02-29')
-DECLARE $ColumnNullable Date
-SET     $ColumnNullable = Date('2020-01-01')
+DECLARE Id Int32
+SET     Id = 2
+DECLARE Column Date
+SET     Column = Date('2020-02-29')
+DECLARE ColumnNullable Date
+SET     ColumnNullable = Date('2020-01-01')
 
 INSERT INTO DateOnlyTable
 (

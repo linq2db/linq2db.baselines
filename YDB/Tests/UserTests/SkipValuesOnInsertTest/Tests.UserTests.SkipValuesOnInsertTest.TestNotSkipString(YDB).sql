@@ -1,10 +1,10 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $Name Text(4) -- String
-SET     $Name = 'Paul'u
-DECLARE $Age Int32
-SET     $Age = 14
+DECLARE Id Int32
+SET     Id = 1
+DECLARE Name Text(4) -- String
+SET     Name = 'Paul'u
+DECLARE Age Int32
+SET     Age = 14
 
 INSERT INTO PR_1598_Insert_Table
 (
@@ -31,12 +31,12 @@ WHERE
 LIMIT 1
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 2
-DECLARE $Name Text(4) -- String
-SET     $Name = 'Mary'u
-DECLARE $Age Int32
-SET     $Age = 15
+DECLARE Id Int32
+SET     Id = 2
+DECLARE Name Text(4) -- String
+SET     Name = 'Mary'u
+DECLARE Age Int32
+SET     Age = 15
 
 INSERT INTO PR_1598_Insert_Table
 (

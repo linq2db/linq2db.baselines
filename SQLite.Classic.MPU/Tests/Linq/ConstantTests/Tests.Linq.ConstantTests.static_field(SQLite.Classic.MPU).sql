@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @GuidNonReadonly  -- Guid
+DECLARE @GuidNonReadonly Blob -- Guid
 SET     @GuidNonReadonly = X'3D667BBCDE0F27438F925D8CC3A11D11'
 
 SELECT

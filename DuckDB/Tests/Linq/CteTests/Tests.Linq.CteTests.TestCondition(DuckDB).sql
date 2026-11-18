@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $var3  -- Int32
+DECLARE $var3 INTEGER -- Int32
 SET     $var3 = 1
 
 WITH CTE_1 (ChildID, ParentID)

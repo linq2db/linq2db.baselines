@@ -1,7 +1,7 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @pattern NVarChar(3) -- String
 SET     @pattern = '%1%'
-DECLARE @take  -- Int32
+DECLARE @take Integer -- Int32
 SET     @take = 10
 
 SELECT

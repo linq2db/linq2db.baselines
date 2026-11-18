@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $id  -- Int32
+DECLARE $id INTEGER -- Int32
 SET     $id = 1
 DECLARE $name NVarChar(4) -- String
 SET     $name = 'John'

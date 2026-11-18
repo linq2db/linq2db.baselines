@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $arr Int32
-SET     $arr = 3
+DECLARE arr Int32
+SET     arr = 3
 
 INSERT INTO ArrayLengthTable
 (

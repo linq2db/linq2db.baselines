@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 SELECT
 	AVG([c_1].[ChildID]),
 	AVG([c_1].[ChildID]),
@@ -10,19 +10,19 @@ FROM
 GROUP BY
 	[g_1].[ParentID]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	AVG([t1].[ParentID])
 FROM
 	[Child] [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	AVG(ALL [t1].[ParentID])
 FROM
 	[Child] [t1]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	AVG(DISTINCT [t1].[ParentID])
 FROM

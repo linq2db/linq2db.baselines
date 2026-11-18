@@ -1,7 +1,7 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Stamp  -- Int32
+DECLARE @Stamp Integer -- Int32
 SET     @Stamp = 5
 DECLARE @Value NVarChar(7) -- String
 SET     @Value = 'initial'
@@ -22,9 +22,9 @@ VALUES
 -- SQLite.MS SQLite
 DECLARE @Value NVarChar(7) -- String
 SET     @Value = 'updated'
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Stamp  -- Int32
+DECLARE @Stamp Integer -- Int32
 SET     @Stamp = 5
 
 UPDATE

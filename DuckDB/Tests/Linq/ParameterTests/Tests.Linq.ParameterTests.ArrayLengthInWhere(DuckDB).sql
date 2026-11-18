@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $arr  -- Int32
+DECLARE $arr INTEGER -- Int32
 SET     $arr = 1
 
 SELECT

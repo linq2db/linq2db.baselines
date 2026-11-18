@@ -1,14 +1,14 @@
 ﻿-- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 1
-DECLARE $InSeconds Int64
-SET     $InSeconds = 5400l
-DECLARE $InTicks Int64
-SET     $InTicks = 54000000000l
-DECLARE $Undeclared Int64
-SET     $Undeclared = 54000000000l
-DECLARE $UndeclaredSeconds Int64
-SET     $UndeclaredSeconds = 5400l
+DECLARE Id Int32
+SET     Id = 1
+DECLARE InSeconds Int64
+SET     InSeconds = 5400l
+DECLARE InTicks Int64
+SET     InTicks = 54000000000l
+DECLARE Undeclared Int64
+SET     Undeclared = 54000000000l
+DECLARE UndeclaredSeconds Int64
+SET     UndeclaredSeconds = 5400l
 
 INSERT INTO DurationRow
 (
@@ -28,16 +28,16 @@ VALUES
 )
 
 -- YDB Ydb
-DECLARE $Id Int32
-SET     $Id = 2
-DECLARE $InSeconds Int64
-SET     $InSeconds = 1800l
-DECLARE $InTicks Int64
-SET     $InTicks = 18000000000l
-DECLARE $Undeclared Int64
-SET     $Undeclared = 18000000000l
-DECLARE $UndeclaredSeconds Int64
-SET     $UndeclaredSeconds = 1800l
+DECLARE Id Int32
+SET     Id = 2
+DECLARE InSeconds Int64
+SET     InSeconds = 1800l
+DECLARE InTicks Int64
+SET     InTicks = 18000000000l
+DECLARE Undeclared Int64
+SET     Undeclared = 18000000000l
+DECLARE UndeclaredSeconds Int64
+SET     UndeclaredSeconds = 1800l
 
 INSERT INTO DurationRow
 (

@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @CurrentUserId  -- Int32
+DECLARE @CurrentUserId Integer -- Int32
 SET     @CurrentUserId = 2
 
 SELECT

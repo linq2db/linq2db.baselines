@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $Value  -- Int32
+DECLARE $Value INTEGER -- Int32
 SET     $Value = 0
 
 INSERT INTO AllTypes
@@ -37,7 +37,7 @@ VALUES
 (23,300)
 
 -- DuckDB
-DECLARE $lastId  -- Int32
+DECLARE $lastId INTEGER -- Int32
 SET     $lastId = 3
 
 SELECT
@@ -51,7 +51,7 @@ ORDER BY
 	t1.ID
 
 -- DuckDB
-DECLARE $lastId  -- Int32
+DECLARE $lastId INTEGER -- Int32
 SET     $lastId = 3
 
 DELETE FROM

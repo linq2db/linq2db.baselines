@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $value Int32
-SET     $value = 2
+DECLARE value Int32
+SET     value = 2
 
 SELECT
 	COUNT(*) as Count_1
@@ -10,8 +10,8 @@ WHERE
 	s.`Int` IS DISTINCT FROM $value
 
 -- YDB Ydb
-DECLARE $value Int32
-SET     $value = 2
+DECLARE value Int32
+SET     value = 2
 
 SELECT
 	COUNT(*) as Count_1
@@ -21,8 +21,8 @@ WHERE
 	s.NullableInt IS DISTINCT FROM $value
 
 -- YDB Ydb
-DECLARE $value Int32
-SET     $value = 2
+DECLARE value Int32
+SET     value = 2
 
 SELECT
 	COUNT(*) as Count_1
@@ -32,8 +32,8 @@ WHERE
 	s.`Int` IS NOT DISTINCT FROM $value
 
 -- YDB Ydb
-DECLARE $value Int32
-SET     $value = 2
+DECLARE value Int32
+SET     value = 2
 
 SELECT
 	COUNT(*) as Count_1

@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $n Int32
-SET     $n = 1
+DECLARE n Int32
+SET     n = 1
 
 SELECT DISTINCT
 	g_1.ParentID + 1 as Key_1

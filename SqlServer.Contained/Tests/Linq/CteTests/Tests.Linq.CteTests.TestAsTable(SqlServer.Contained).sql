@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2025
 WITH [CTE1_] ([ParentID], [ChildID])
 AS
 (
@@ -14,7 +14,7 @@ SELECT
 FROM
 	[CTE1_] [t2]
 
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2025
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID]

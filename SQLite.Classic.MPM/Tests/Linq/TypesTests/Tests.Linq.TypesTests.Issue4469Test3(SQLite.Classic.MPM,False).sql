@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @param  -- Double
+DECLARE @param Real -- Double
 SET     @param = 33
 
 SELECT

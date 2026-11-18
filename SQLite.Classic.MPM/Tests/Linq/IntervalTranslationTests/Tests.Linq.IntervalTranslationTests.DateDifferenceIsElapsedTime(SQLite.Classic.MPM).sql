@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @StartedOn VarChar(23) -- AnsiString
 SET     @StartedOn = '2026-01-01 10:59:00.000'

@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $take Int32
-SET     $take = 1
+DECLARE take Int32
+SET     take = 1
 
 $CTE_1 = 	SELECT
 		item_1.`Value` as Key_1

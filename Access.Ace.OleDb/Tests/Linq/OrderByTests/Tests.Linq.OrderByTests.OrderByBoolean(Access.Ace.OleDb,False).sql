@@ -8,7 +8,7 @@ SELECT
 FROM
 	[Person] [t1]
 ORDER BY
-	Len([t1].[FirstName]) > 4
+	(Len([t1].[FirstName]) > 4) DESC
 
 -- Access.Ace.OleDb AccessOleDb
 SELECT

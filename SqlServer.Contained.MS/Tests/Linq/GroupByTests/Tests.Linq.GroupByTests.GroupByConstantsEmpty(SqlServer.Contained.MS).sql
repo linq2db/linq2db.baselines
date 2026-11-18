@@ -1,4 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[g_2].[ChildId],
 	[g_2].[ParentId],
@@ -17,7 +17,7 @@ GROUP BY
 	[g_2].[ChildId],
 	[g_2].[ParentId]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2025
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID]

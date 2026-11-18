@@ -1,7 +1,7 @@
 ﻿-- SQLite.MS SQLite
-DECLARE @Value  -- Int32
+DECLARE @Value Integer -- Int32
 SET     @Value = 100
-DECLARE @value_1  -- Int32
+DECLARE @value_1 Integer -- Int32
 SET     @value_1 = 1
 DECLARE @ValueStr NVarChar(8) -- String
 SET     @ValueStr = 'SomeStr1'

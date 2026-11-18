@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $input Text(6) -- String
-SET     $input = '%test%'u
+DECLARE input Text(6) -- String
+SET     input = '%test%'u
 
 SELECT
 	m_1.PersonID as PersonID,
@@ -13,8 +13,8 @@ WHERE
 	Unicode::ToLower(m_1.FirstName) LIKE $input ESCAPE '~'s
 
 -- YDB Ydb
-DECLARE $input Text(6) -- String
-SET     $input = '%test%'u
+DECLARE input Text(6) -- String
+SET     input = '%test%'u
 
 SELECT
 	p.FirstName as FirstName,

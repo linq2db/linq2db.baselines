@@ -1,9 +1,9 @@
 ﻿-- SQLite.MS SQLite
 DECLARE @Name NVarChar(4) -- String
 SET     @Name = 'new1'
-DECLARE @Version  -- Int32
+DECLARE @Version Integer -- Int32
 SET     @Version = 1
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
 UPDATE
@@ -17,9 +17,9 @@ WHERE
 -- SQLite.MS SQLite
 DECLARE @Name NVarChar(4) -- String
 SET     @Name = 'new2'
-DECLARE @Version  -- Int32
+DECLARE @Version Integer -- Int32
 SET     @Version = 2
-DECLARE @Id  -- Int32
+DECLARE @Id Integer -- Int32
 SET     @Id = 2
 
 UPDATE
