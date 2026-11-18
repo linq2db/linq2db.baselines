@@ -1,4 +1,5 @@
 ﻿-- SqlServer.2019.MS SqlServer.2019
+-- Command 1
 DECLARE @eventId Int -- Int32
 SET     @eventId = 1
 
@@ -13,11 +14,14 @@ FROM
 		LEFT JOIN [EventSchedulePerson] [a_Person] ON [d].[EventSchedulePersonId] = [a_Person].[Id]
 WHERE
 	[m_1].[EventId] = @eventId AND [m_1].[IsActive] = 1
-;
+
+-- Command 2
+DECLARE @eventId Int -- Int32
+SET     @eventId = 1
+
 SELECT
 	[p].[Id]
 FROM
 	[EventScheduleItem] [p]
 WHERE
 	[p].[EventId] = @eventId AND [p].[IsActive] = 1
-

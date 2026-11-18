@@ -1,4 +1,5 @@
 ﻿-- SqlServer.2019.MS SqlServer.2019
+-- Command 1
 SELECT
 	[m_1].[MasterId],
 	[d].[DetailId]
@@ -12,12 +13,12 @@ FROM
 		INNER JOIN [DetailClass] [d] ON [d].[MasterId] = [m_1].[MasterId] OR [d].[MasterId] IS NULL AND [m_1].[MasterId] IS NULL
 ORDER BY
 	[d].[DetailId]
-;
+
+-- Command 2
 SELECT DISTINCT
 	[g_1].[MasterId]
 FROM
 	[DetailClass] [g_1]
-
 -- SqlServer.2019.MS SqlServer.2019
 SELECT
 	[t1].[DetailId],

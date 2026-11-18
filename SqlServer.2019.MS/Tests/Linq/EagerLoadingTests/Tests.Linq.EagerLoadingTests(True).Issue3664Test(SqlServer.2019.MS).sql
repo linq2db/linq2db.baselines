@@ -12,6 +12,7 @@ VALUES
 )
 
 -- SqlServer.2019.MS SqlServer.2019
+-- Command 1
 DECLARE @id Int -- Int32
 SET     @id = 11
 
@@ -24,13 +25,14 @@ FROM
 		INNER JOIN [Test3664Item] [d] ON [m_1].[Id] = [d].[TestId]
 WHERE
 	[d].[Id] = @id
-;
+
+-- Command 2
 SELECT
 	[t1].[Id]
 FROM
 	[Test3664] [t1]
-
 -- SqlServer.2019.MS SqlServer.2019
+-- Command 1
 DECLARE @id Int -- Int32
 SET     @id = 12
 
@@ -43,9 +45,9 @@ FROM
 		INNER JOIN [Test3664Item] [d] ON [m_1].[Id] = [d].[TestId]
 WHERE
 	[d].[Id] = @id
-;
+
+-- Command 2
 SELECT
 	[t1].[Id]
 FROM
 	[Test3664] [t1]
-

@@ -1,4 +1,5 @@
 ﻿-- SqlServer.2019.MS SqlServer.2019
+-- Command 1
 WITH [CTE_1] ([Id])
 AS
 (
@@ -40,7 +41,8 @@ FROM
 				LEFT JOIN [CteChildTable] [d] ON [t1].[Value4] = [d].[Id]
 	) [m_1]
 		INNER JOIN [CteTable] [d_1] ON [m_1].[Id] = [d_1].[Value3]
-;
+
+-- Command 2
 WITH [CTE_1]
 (
 	[Id],
@@ -108,4 +110,3 @@ SELECT
 FROM
 	[CTE_3] [t1]
 		LEFT JOIN [CteChildTable] [d] ON [t1].[Value4] = [d].[Id]
-

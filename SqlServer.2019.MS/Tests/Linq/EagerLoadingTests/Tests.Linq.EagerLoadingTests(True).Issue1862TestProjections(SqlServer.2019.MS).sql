@@ -1,4 +1,5 @@
 ﻿-- SqlServer.2019.MS SqlServer.2019
+-- Command 1
 DECLARE @blogId Int -- Int32
 SET     @blogId = 1
 
@@ -30,7 +31,11 @@ WHERE
 ORDER BY
 	[d_1].[TagId],
 	[m_1].[Id]
-;
+
+-- Command 2
+DECLARE @blogId Int -- Int32
+SET     @blogId = 1
+
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -48,7 +53,11 @@ FROM
 		INNER JOIN [Post] [d] ON [m_1].[Id] = [d].[BlogId]
 ORDER BY
 	[d].[Id]
-;
+
+-- Command 3
+DECLARE @blogId Int -- Int32
+SET     @blogId = 1
+
 SELECT
 	[b].[Id],
 	[b].[Title]
@@ -56,4 +65,3 @@ FROM
 	[Blog] [b]
 WHERE
 	[b].[Id] = @blogId
-

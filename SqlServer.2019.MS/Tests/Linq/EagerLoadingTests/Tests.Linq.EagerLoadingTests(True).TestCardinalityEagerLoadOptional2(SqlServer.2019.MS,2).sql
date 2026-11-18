@@ -1,4 +1,5 @@
 ﻿-- SqlServer.2019.MS SqlServer.2019
+-- Command 1
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -10,11 +11,11 @@ FROM
 	[EntityMA] [m_1]
 		INNER JOIN [EntityMB] [d] ON [m_1].[Id] = [d].[FK]
 		LEFT JOIN [EntityMD] [a_ObjectD] ON [d].[FKD] = [a_ObjectD].[Id]
-;
+
+-- Command 2
 SELECT
 	[t1].[Id],
 	[t1].[FK],
 	[t1].[Id]
 FROM
 	[EntityMA] [t1]
-
