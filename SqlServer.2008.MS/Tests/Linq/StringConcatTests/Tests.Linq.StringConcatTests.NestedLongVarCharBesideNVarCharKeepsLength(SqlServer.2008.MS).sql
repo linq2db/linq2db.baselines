@@ -1,0 +1,9 @@
+﻿-- SqlServer.2008.MS SqlServer.2008
+SELECT TOP (2)
+	[p].[Title] + CAST([n].[Notes] + [n].[Sku] AS NVarChar(Max))
+FROM
+	[ConcatProduct] [p]
+		CROSS JOIN [LongVarCharKeyRow] [n]
+WHERE
+	[p].[Id] = 1
+
