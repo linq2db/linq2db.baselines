@@ -1,0 +1,36 @@
+﻿-- DuckDB
+DECLARE $Id INTEGER -- Int32
+SET     $Id = 1
+DECLARE $StartedOn TIMESTAMP -- DateTime
+SET     $StartedOn = '2026-06-01 10:00:00.000000'::TIMESTAMP
+DECLARE $FinishedOn TIMESTAMP -- DateTime
+SET     $FinishedOn = '2026-06-12 10:00:00.000000'::TIMESTAMP
+DECLARE $OpenedOn DATE -- Date
+SET     $OpenedOn = '2026-06-01 00:00:00.000000'::TIMESTAMP
+DECLARE $ClosedOn DATE -- Date
+SET     $ClosedOn = '2026-06-12 00:00:00.000000'::TIMESTAMP
+
+INSERT INTO CoarseEventRow
+(
+	Id,
+	StartedOn,
+	FinishedOn,
+	OpenedOn,
+	ClosedOn
+)
+VALUES
+(
+	$Id,
+	$StartedOn,
+	$FinishedOn,
+	$OpenedOn,
+	$ClosedOn
+)
+
+-- DuckDB
+SELECT
+	CAST('2026-06-20 00:00:00.000000'::TIMESTAMP AS TIMESTAMP) + To_Microseconds((Date_Diff('microsecond', r.OpenedOn, r.ClosedOn) * 10) // 10)
+FROM
+	CoarseEventRow r
+LIMIT 2
+

@@ -1,0 +1,978 @@
+﻿-- DuckDB
+DECLARE $value TIME -- Time
+SET     $value = '00:00:00'::TIME
+
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = $value AND r.ColumnNullable IS NULL
+
+-- DuckDB
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = '00:00:00+00:00'::TIMETZ AND r.ColumnNullable IS NULL
+
+-- DuckDB
+DELETE FROM
+	"TypeTable`2" t1
+
+-- DuckDB
+DECLARE $Id INTEGER -- Int32
+SET     $Id = 1
+DECLARE $Column TIME -- Time
+SET     $Column = '00:00:00'::TIME
+DECLARE $ColumnNullable NVarChar -- String
+SET     $ColumnNullable = NULL
+
+INSERT INTO "TypeTable`2"
+(
+	Id,
+	"Column",
+	ColumnNullable
+)
+VALUES
+(
+	$Id,
+	$Column,
+	$ColumnNullable
+)
+
+-- DuckDB
+DECLARE $value TIME -- Time
+SET     $value = '00:00:00'::TIME
+
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = $value AND r.ColumnNullable IS NULL
+
+-- DuckDB
+DELETE FROM
+	"TypeTable`2" t1
+
+-- DuckDB
+DECLARE $p1 INTEGER -- Int32
+SET     $p1 = 1
+DECLARE $p2 TIME -- Time
+SET     $p2 = '00:00:00'::TIME
+
+INSERT INTO "TypeTable`2"
+(
+	Id,
+	"Column",
+	ColumnNullable
+)
+VALUES
+($p1,$p2,NULL)
+
+-- DuckDB
+DECLARE $value TIME -- Time
+SET     $value = '00:00:00'::TIME
+
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = $value AND r.ColumnNullable IS NULL
+
+-- DuckDB
+DELETE FROM
+	"TypeTable`2" t1
+
+-- DuckDB
+DECLARE $tableName NVarChar(11) -- String
+SET     $tableName = 'TypeTable`2'
+
+SELECT
+	c_1."column_name"
+FROM
+	information_schema."columns" c_1
+WHERE
+	c_1."table_name" = $tableName
+ORDER BY
+	c_1.ordinal_position
+
+INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
+
+-- DuckDB
+DECLARE $value TIME -- Time
+SET     $value = '00:00:00'::TIME
+
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = $value AND r.ColumnNullable IS NULL
+
+-- DuckDB
+DELETE FROM
+	"TypeTable`2" t1
+
+-- DuckDB
+DECLARE $tableName NVarChar(11) -- String
+SET     $tableName = 'TypeTable`2'
+
+SELECT
+	c_1."column_name"
+FROM
+	information_schema."columns" c_1
+WHERE
+	c_1."table_name" = $tableName
+ORDER BY
+	c_1.ordinal_position
+
+INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
+
+-- DuckDB
+DECLARE $value TIME -- Time
+SET     $value = '00:00:00'::TIME
+
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = $value AND r.ColumnNullable IS NULL
+
+-- DuckDB
+DECLARE $value TIME -- Time
+SET     $value = '00:00:00'::TIME
+DECLARE $nullableValue TIME -- Time
+SET     $nullableValue = '23:59:59.999999'::TIME
+
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = $value AND r.ColumnNullable = $nullableValue
+
+-- DuckDB
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = '00:00:00+00:00'::TIMETZ AND r.ColumnNullable = '23:59:59.999999+00:00'::TIMETZ
+
+-- DuckDB
+DELETE FROM
+	"TypeTable`2" t1
+
+-- DuckDB
+DECLARE $Id INTEGER -- Int32
+SET     $Id = 1
+DECLARE $Column TIME -- Time
+SET     $Column = '00:00:00'::TIME
+DECLARE $ColumnNullable TIME -- Time
+SET     $ColumnNullable = '23:59:59.999999'::TIME
+
+INSERT INTO "TypeTable`2"
+(
+	Id,
+	"Column",
+	ColumnNullable
+)
+VALUES
+(
+	$Id,
+	$Column,
+	$ColumnNullable
+)
+
+-- DuckDB
+DECLARE $value TIME -- Time
+SET     $value = '00:00:00'::TIME
+DECLARE $nullableValue TIME -- Time
+SET     $nullableValue = '23:59:59.999999'::TIME
+
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = $value AND r.ColumnNullable = $nullableValue
+
+-- DuckDB
+DELETE FROM
+	"TypeTable`2" t1
+
+-- DuckDB
+DECLARE $p1 INTEGER -- Int32
+SET     $p1 = 1
+DECLARE $p2 TIME -- Time
+SET     $p2 = '00:00:00'::TIME
+DECLARE $p3 TIME -- Time
+SET     $p3 = '23:59:59.999999'::TIME
+
+INSERT INTO "TypeTable`2"
+(
+	Id,
+	"Column",
+	ColumnNullable
+)
+VALUES
+($p1,$p2,$p3)
+
+-- DuckDB
+DECLARE $value TIME -- Time
+SET     $value = '00:00:00'::TIME
+DECLARE $nullableValue TIME -- Time
+SET     $nullableValue = '23:59:59.999999'::TIME
+
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = $value AND r.ColumnNullable = $nullableValue
+
+-- DuckDB
+DELETE FROM
+	"TypeTable`2" t1
+
+-- DuckDB
+DECLARE $tableName NVarChar(11) -- String
+SET     $tableName = 'TypeTable`2'
+
+SELECT
+	c_1."column_name"
+FROM
+	information_schema."columns" c_1
+WHERE
+	c_1."table_name" = $tableName
+ORDER BY
+	c_1.ordinal_position
+
+INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
+
+-- DuckDB
+DECLARE $value TIME -- Time
+SET     $value = '00:00:00'::TIME
+DECLARE $nullableValue TIME -- Time
+SET     $nullableValue = '23:59:59.999999'::TIME
+
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = $value AND r.ColumnNullable = $nullableValue
+
+-- DuckDB
+DELETE FROM
+	"TypeTable`2" t1
+
+-- DuckDB
+DECLARE $tableName NVarChar(11) -- String
+SET     $tableName = 'TypeTable`2'
+
+SELECT
+	c_1."column_name"
+FROM
+	information_schema."columns" c_1
+WHERE
+	c_1."table_name" = $tableName
+ORDER BY
+	c_1.ordinal_position
+
+INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
+
+-- DuckDB
+DECLARE $value TIME -- Time
+SET     $value = '00:00:00'::TIME
+DECLARE $nullableValue TIME -- Time
+SET     $nullableValue = '23:59:59.999999'::TIME
+
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = $value AND r.ColumnNullable = $nullableValue
+
+-- DuckDB
+DECLARE $value TIMESTAMPTZ -- DateTimeOffset
+SET     $value = '0001-01-01 00:00:00+00'::TIMESTAMPTZ
+
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = $value AND r.ColumnNullable IS NULL
+
+-- DuckDB
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = '00:00:00+00:00'::TIMETZ AND r.ColumnNullable IS NULL
+
+-- DuckDB
+DELETE FROM
+	"TypeTable`2" t1
+
+-- DuckDB
+DECLARE $Id INTEGER -- Int32
+SET     $Id = 1
+DECLARE $Column TIMESTAMPTZ -- DateTimeOffset
+SET     $Column = '0001-01-01 00:00:00+00'::TIMESTAMPTZ
+DECLARE $ColumnNullable NVarChar -- String
+SET     $ColumnNullable = NULL
+
+INSERT INTO "TypeTable`2"
+(
+	Id,
+	"Column",
+	ColumnNullable
+)
+VALUES
+(
+	$Id,
+	$Column,
+	$ColumnNullable
+)
+
+-- DuckDB
+DECLARE $value TIMESTAMPTZ -- DateTimeOffset
+SET     $value = '0001-01-01 00:00:00+00'::TIMESTAMPTZ
+
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = $value AND r.ColumnNullable IS NULL
+
+-- DuckDB
+DELETE FROM
+	"TypeTable`2" t1
+
+-- DuckDB
+DECLARE $p1 INTEGER -- Int32
+SET     $p1 = 1
+DECLARE $p2 TIMESTAMPTZ -- DateTimeOffset
+SET     $p2 = '0001-01-01 00:00:00+00'::TIMESTAMPTZ
+
+INSERT INTO "TypeTable`2"
+(
+	Id,
+	"Column",
+	ColumnNullable
+)
+VALUES
+($p1,$p2,NULL)
+
+-- DuckDB
+DECLARE $value TIMESTAMPTZ -- DateTimeOffset
+SET     $value = '0001-01-01 00:00:00+00'::TIMESTAMPTZ
+
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = $value AND r.ColumnNullable IS NULL
+
+-- DuckDB
+DELETE FROM
+	"TypeTable`2" t1
+
+-- DuckDB
+DECLARE $tableName NVarChar(11) -- String
+SET     $tableName = 'TypeTable`2'
+
+SELECT
+	c_1."column_name"
+FROM
+	information_schema."columns" c_1
+WHERE
+	c_1."table_name" = $tableName
+ORDER BY
+	c_1.ordinal_position
+
+INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
+
+-- DuckDB
+DECLARE $value TIMESTAMPTZ -- DateTimeOffset
+SET     $value = '0001-01-01 00:00:00+00'::TIMESTAMPTZ
+
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = $value AND r.ColumnNullable IS NULL
+
+-- DuckDB
+DELETE FROM
+	"TypeTable`2" t1
+
+-- DuckDB
+DECLARE $tableName NVarChar(11) -- String
+SET     $tableName = 'TypeTable`2'
+
+SELECT
+	c_1."column_name"
+FROM
+	information_schema."columns" c_1
+WHERE
+	c_1."table_name" = $tableName
+ORDER BY
+	c_1.ordinal_position
+
+INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
+
+-- DuckDB
+DECLARE $value TIMESTAMPTZ -- DateTimeOffset
+SET     $value = '0001-01-01 00:00:00+00'::TIMESTAMPTZ
+
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = $value AND r.ColumnNullable IS NULL
+
+-- DuckDB
+DECLARE $value TIMESTAMPTZ -- DateTimeOffset
+SET     $value = '0001-01-01 01:02:03+00'::TIMESTAMPTZ
+DECLARE $nullableValue TIMESTAMPTZ -- DateTimeOffset
+SET     $nullableValue = '0001-01-01 23:59:59.999999+00'::TIMESTAMPTZ
+
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = $value AND r.ColumnNullable = $nullableValue
+
+-- DuckDB
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = '01:02:03+00:00'::TIMETZ AND r.ColumnNullable = '23:59:59.999999+00:00'::TIMETZ
+
+-- DuckDB
+DELETE FROM
+	"TypeTable`2" t1
+
+-- DuckDB
+DECLARE $Id INTEGER -- Int32
+SET     $Id = 1
+DECLARE $Column TIMESTAMPTZ -- DateTimeOffset
+SET     $Column = '0001-01-01 01:02:03+00'::TIMESTAMPTZ
+DECLARE $ColumnNullable TIMESTAMPTZ -- DateTimeOffset
+SET     $ColumnNullable = '0001-01-01 23:59:59.999999+00'::TIMESTAMPTZ
+
+INSERT INTO "TypeTable`2"
+(
+	Id,
+	"Column",
+	ColumnNullable
+)
+VALUES
+(
+	$Id,
+	$Column,
+	$ColumnNullable
+)
+
+-- DuckDB
+DECLARE $value TIMESTAMPTZ -- DateTimeOffset
+SET     $value = '0001-01-01 01:02:03+00'::TIMESTAMPTZ
+DECLARE $nullableValue TIMESTAMPTZ -- DateTimeOffset
+SET     $nullableValue = '0001-01-01 23:59:59.999999+00'::TIMESTAMPTZ
+
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = $value AND r.ColumnNullable = $nullableValue
+
+-- DuckDB
+DELETE FROM
+	"TypeTable`2" t1
+
+-- DuckDB
+DECLARE $p1 INTEGER -- Int32
+SET     $p1 = 1
+DECLARE $p2 TIMESTAMPTZ -- DateTimeOffset
+SET     $p2 = '0001-01-01 01:02:03+00'::TIMESTAMPTZ
+DECLARE $p3 TIMESTAMPTZ -- DateTimeOffset
+SET     $p3 = '0001-01-01 23:59:59.999999+00'::TIMESTAMPTZ
+
+INSERT INTO "TypeTable`2"
+(
+	Id,
+	"Column",
+	ColumnNullable
+)
+VALUES
+($p1,$p2,$p3)
+
+-- DuckDB
+DECLARE $value TIMESTAMPTZ -- DateTimeOffset
+SET     $value = '0001-01-01 01:02:03+00'::TIMESTAMPTZ
+DECLARE $nullableValue TIMESTAMPTZ -- DateTimeOffset
+SET     $nullableValue = '0001-01-01 23:59:59.999999+00'::TIMESTAMPTZ
+
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = $value AND r.ColumnNullable = $nullableValue
+
+-- DuckDB
+DELETE FROM
+	"TypeTable`2" t1
+
+-- DuckDB
+DECLARE $tableName NVarChar(11) -- String
+SET     $tableName = 'TypeTable`2'
+
+SELECT
+	c_1."column_name"
+FROM
+	information_schema."columns" c_1
+WHERE
+	c_1."table_name" = $tableName
+ORDER BY
+	c_1.ordinal_position
+
+INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
+
+-- DuckDB
+DECLARE $value TIMESTAMPTZ -- DateTimeOffset
+SET     $value = '0001-01-01 01:02:03+00'::TIMESTAMPTZ
+DECLARE $nullableValue TIMESTAMPTZ -- DateTimeOffset
+SET     $nullableValue = '0001-01-01 23:59:59.999999+00'::TIMESTAMPTZ
+
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = $value AND r.ColumnNullable = $nullableValue
+
+-- DuckDB
+DELETE FROM
+	"TypeTable`2" t1
+
+-- DuckDB
+DECLARE $tableName NVarChar(11) -- String
+SET     $tableName = 'TypeTable`2'
+
+SELECT
+	c_1."column_name"
+FROM
+	information_schema."columns" c_1
+WHERE
+	c_1."table_name" = $tableName
+ORDER BY
+	c_1.ordinal_position
+
+INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
+
+-- DuckDB
+DECLARE $value TIMESTAMPTZ -- DateTimeOffset
+SET     $value = '0001-01-01 01:02:03+00'::TIMESTAMPTZ
+DECLARE $nullableValue TIMESTAMPTZ -- DateTimeOffset
+SET     $nullableValue = '0001-01-01 23:59:59.999999+00'::TIMESTAMPTZ
+
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = $value AND r.ColumnNullable = $nullableValue
+
+-- DuckDB
+DECLARE $value TIMESTAMPTZ -- DateTimeOffset
+SET     $value = '0001-01-01 00:00:00+00'::TIMESTAMPTZ
+
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = $value AND r.ColumnNullable IS NULL
+
+-- DuckDB
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = '00:00:00.000000+00:00'::TIMETZ AND r.ColumnNullable IS NULL
+
+-- DuckDB
+DELETE FROM
+	"TypeTable`2" t1
+
+-- DuckDB
+DECLARE $Id INTEGER -- Int32
+SET     $Id = 1
+DECLARE $Column TIMESTAMPTZ -- DateTimeOffset
+SET     $Column = '0001-01-01 00:00:00+00'::TIMESTAMPTZ
+DECLARE $ColumnNullable NVarChar -- String
+SET     $ColumnNullable = NULL
+
+INSERT INTO "TypeTable`2"
+(
+	Id,
+	"Column",
+	ColumnNullable
+)
+VALUES
+(
+	$Id,
+	$Column,
+	$ColumnNullable
+)
+
+-- DuckDB
+DECLARE $value TIMESTAMPTZ -- DateTimeOffset
+SET     $value = '0001-01-01 00:00:00+00'::TIMESTAMPTZ
+
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = $value AND r.ColumnNullable IS NULL
+
+-- DuckDB
+DELETE FROM
+	"TypeTable`2" t1
+
+-- DuckDB
+DECLARE $p1 INTEGER -- Int32
+SET     $p1 = 1
+DECLARE $p2 TIMESTAMPTZ -- DateTimeOffset
+SET     $p2 = '0001-01-01 00:00:00+00'::TIMESTAMPTZ
+
+INSERT INTO "TypeTable`2"
+(
+	Id,
+	"Column",
+	ColumnNullable
+)
+VALUES
+($p1,$p2,NULL)
+
+-- DuckDB
+DECLARE $value TIMESTAMPTZ -- DateTimeOffset
+SET     $value = '0001-01-01 00:00:00+00'::TIMESTAMPTZ
+
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = $value AND r.ColumnNullable IS NULL
+
+-- DuckDB
+DELETE FROM
+	"TypeTable`2" t1
+
+-- DuckDB
+DECLARE $tableName NVarChar(11) -- String
+SET     $tableName = 'TypeTable`2'
+
+SELECT
+	c_1."column_name"
+FROM
+	information_schema."columns" c_1
+WHERE
+	c_1."table_name" = $tableName
+ORDER BY
+	c_1.ordinal_position
+
+INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
+
+-- DuckDB
+DECLARE $value TIMESTAMPTZ -- DateTimeOffset
+SET     $value = '0001-01-01 00:00:00+00'::TIMESTAMPTZ
+
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = $value AND r.ColumnNullable IS NULL
+
+-- DuckDB
+DELETE FROM
+	"TypeTable`2" t1
+
+-- DuckDB
+DECLARE $tableName NVarChar(11) -- String
+SET     $tableName = 'TypeTable`2'
+
+SELECT
+	c_1."column_name"
+FROM
+	information_schema."columns" c_1
+WHERE
+	c_1."table_name" = $tableName
+ORDER BY
+	c_1.ordinal_position
+
+INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
+
+-- DuckDB
+DECLARE $value TIMESTAMPTZ -- DateTimeOffset
+SET     $value = '0001-01-01 00:00:00+00'::TIMESTAMPTZ
+
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = $value AND r.ColumnNullable IS NULL
+
+-- DuckDB
+DECLARE $value TIMESTAMPTZ -- DateTimeOffset
+SET     $value = '0001-01-01 00:17:03.456789+00'::TIMESTAMPTZ
+DECLARE $nullableValue TIMESTAMPTZ -- DateTimeOffset
+SET     $nullableValue = '0001-01-01 05:47:03.456789+00'::TIMESTAMPTZ
+
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = $value AND r.ColumnNullable = $nullableValue
+
+-- DuckDB
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = '01:02:03.456789+00:45'::TIMETZ AND r.ColumnNullable = '05:02:03.456789-00:45'::TIMETZ
+
+-- DuckDB
+DELETE FROM
+	"TypeTable`2" t1
+
+-- DuckDB
+DECLARE $Id INTEGER -- Int32
+SET     $Id = 1
+DECLARE $Column TIMESTAMPTZ -- DateTimeOffset
+SET     $Column = '0001-01-01 00:17:03.456789+00'::TIMESTAMPTZ
+DECLARE $ColumnNullable TIMESTAMPTZ -- DateTimeOffset
+SET     $ColumnNullable = '0001-01-01 05:47:03.456789+00'::TIMESTAMPTZ
+
+INSERT INTO "TypeTable`2"
+(
+	Id,
+	"Column",
+	ColumnNullable
+)
+VALUES
+(
+	$Id,
+	$Column,
+	$ColumnNullable
+)
+
+-- DuckDB
+DECLARE $value TIMESTAMPTZ -- DateTimeOffset
+SET     $value = '0001-01-01 00:17:03.456789+00'::TIMESTAMPTZ
+DECLARE $nullableValue TIMESTAMPTZ -- DateTimeOffset
+SET     $nullableValue = '0001-01-01 05:47:03.456789+00'::TIMESTAMPTZ
+
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = $value AND r.ColumnNullable = $nullableValue
+
+-- DuckDB
+DELETE FROM
+	"TypeTable`2" t1
+
+-- DuckDB
+DECLARE $p1 INTEGER -- Int32
+SET     $p1 = 1
+DECLARE $p2 TIMESTAMPTZ -- DateTimeOffset
+SET     $p2 = '0001-01-01 00:17:03.456789+00'::TIMESTAMPTZ
+DECLARE $p3 TIMESTAMPTZ -- DateTimeOffset
+SET     $p3 = '0001-01-01 05:47:03.456789+00'::TIMESTAMPTZ
+
+INSERT INTO "TypeTable`2"
+(
+	Id,
+	"Column",
+	ColumnNullable
+)
+VALUES
+($p1,$p2,$p3)
+
+-- DuckDB
+DECLARE $value TIMESTAMPTZ -- DateTimeOffset
+SET     $value = '0001-01-01 00:17:03.456789+00'::TIMESTAMPTZ
+DECLARE $nullableValue TIMESTAMPTZ -- DateTimeOffset
+SET     $nullableValue = '0001-01-01 05:47:03.456789+00'::TIMESTAMPTZ
+
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = $value AND r.ColumnNullable = $nullableValue
+
+-- DuckDB
+DELETE FROM
+	"TypeTable`2" t1
+
+-- DuckDB
+DECLARE $tableName NVarChar(11) -- String
+SET     $tableName = 'TypeTable`2'
+
+SELECT
+	c_1."column_name"
+FROM
+	information_schema."columns" c_1
+WHERE
+	c_1."table_name" = $tableName
+ORDER BY
+	c_1.ordinal_position
+
+INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
+
+-- DuckDB
+DECLARE $value TIMESTAMPTZ -- DateTimeOffset
+SET     $value = '0001-01-01 00:17:03.456789+00'::TIMESTAMPTZ
+DECLARE $nullableValue TIMESTAMPTZ -- DateTimeOffset
+SET     $nullableValue = '0001-01-01 05:47:03.456789+00'::TIMESTAMPTZ
+
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = $value AND r.ColumnNullable = $nullableValue
+
+-- DuckDB
+DELETE FROM
+	"TypeTable`2" t1
+
+-- DuckDB
+DECLARE $tableName NVarChar(11) -- String
+SET     $tableName = 'TypeTable`2'
+
+SELECT
+	c_1."column_name"
+FROM
+	information_schema."columns" c_1
+WHERE
+	c_1."table_name" = $tableName
+ORDER BY
+	c_1.ordinal_position
+
+INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
+
+-- DuckDB
+DECLARE $value TIMESTAMPTZ -- DateTimeOffset
+SET     $value = '0001-01-01 00:17:03.456789+00'::TIMESTAMPTZ
+DECLARE $nullableValue TIMESTAMPTZ -- DateTimeOffset
+SET     $nullableValue = '0001-01-01 05:47:03.456789+00'::TIMESTAMPTZ
+
+SELECT
+	r.Id,
+	r."Column",
+	r.ColumnNullable
+FROM
+	"TypeTable`2" r
+WHERE
+	r."Column" = $value AND r.ColumnNullable = $nullableValue
+
