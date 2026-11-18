@@ -1,0 +1,18 @@
+﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
+SELECT TOP 1
+	[p].[ParentID],
+	[p].[Value1]
+FROM
+	[Parent] [p]
+WHERE
+	[p].[ParentID] = 1
+
+-- Access.LibRed.Mdb Access.LibRed AccessLibRed
+SELECT TOP 1
+	[p].[ParentID],
+	[p].[Value1]
+FROM
+	[Parent] [p]
+WHERE
+	[p].[ParentID] = 2
+

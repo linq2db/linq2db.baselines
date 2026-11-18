@@ -1,0 +1,11 @@
+﻿-- SqlServer.Contained SqlServer.2025
+SELECT
+	(
+		SELECT TOP (1)
+			[t1].[ChildID]
+		FROM
+			[Child] [t1]
+	)
+FROM
+	[Parent] [p]
+

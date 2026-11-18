@@ -1,0 +1,14 @@
+﻿-- SqlServer.CS SqlServer.2025
+SELECT
+	[p].[ParentID],
+	[p].[Value1]
+FROM
+	[Parent] [p]
+
+-- SqlServer.CS SqlServer.2025
+SELECT
+	[t1].[ParentID],
+	[t1].[Value1]
+FROM
+	[Parent] [t1]
+

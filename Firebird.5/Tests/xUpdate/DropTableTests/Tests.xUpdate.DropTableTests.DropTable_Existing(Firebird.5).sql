@@ -1,0 +1,11 @@
+﻿-- Firebird.5 Firebird4
+CREATE TABLE "Table"
+(
+	ID Int NOT NULL,
+
+	CONSTRAINT "PK_Table" PRIMARY KEY (ID)
+)
+
+-- Firebird.5 Firebird4
+DROP TABLE "Table"
+

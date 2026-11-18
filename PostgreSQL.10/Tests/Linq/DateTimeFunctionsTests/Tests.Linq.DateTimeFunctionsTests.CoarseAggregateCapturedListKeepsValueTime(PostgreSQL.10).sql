@@ -1,0 +1,55 @@
+﻿-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
+DECLARE @Value Timestamp -- DateTime2
+SET     @Value = '2026-06-01 10:00:00'::timestamp
+DECLARE @Day Date
+SET     @Day = '2026-06-01'::date
+DECLARE @Wide Timestamp -- DateTime2
+SET     @Wide = '2026-06-01 10:00:00'::timestamp
+
+INSERT INTO "CoarseDateShapesRow"
+(
+	"Id",
+	"Value",
+	"Day",
+	"Wide"
+)
+VALUES
+(
+	:Id,
+	:Value,
+	:Day,
+	:Wide
+)
+
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+SELECT
+	COUNT(*)
+FROM
+	(
+		SELECT
+			MAX(g_1."Value") as "Max_1"
+		FROM
+			"CoarseDateShapesRow" g_1
+		GROUP BY
+			g_1."Id"
+	) t1
+WHERE
+	t1."Max_1" IN ('2026-06-01 10:00:00.500'::timestamp)
+
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+SELECT
+	COUNT(*)
+FROM
+	(
+		SELECT
+			MAX(g_1."Value") as "Max_1"
+		FROM
+			"CoarseDateShapesRow" g_1
+		GROUP BY
+			g_1."Id"
+	) t1
+WHERE
+	t1."Max_1" IN ('2026-06-01 10:00:00'::timestamp)
+

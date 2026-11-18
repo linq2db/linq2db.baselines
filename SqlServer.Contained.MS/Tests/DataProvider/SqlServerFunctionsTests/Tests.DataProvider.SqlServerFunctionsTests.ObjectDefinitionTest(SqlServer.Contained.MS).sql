@@ -1,0 +1,4 @@
+﻿-- SqlServer.Contained.MS SqlServer.2025
+SELECT
+	OBJECT_DEFINITION(OBJECT_ID(N'PersonSearch'))
+

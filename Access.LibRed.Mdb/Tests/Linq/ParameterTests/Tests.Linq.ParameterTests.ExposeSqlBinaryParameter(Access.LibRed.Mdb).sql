@@ -1,0 +1,14 @@
+﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
+DECLARE @p Binary(3)
+SET     @p = 0x000102
+
+SELECT
+	[t].[decimalDataType],
+	[t].[binaryDataType],
+	[t].[varbinaryDataType],
+	[t].[varcharDataType]
+FROM
+	[AllTypes] [t]
+WHERE
+	[t].[binaryDataType] = @p
+

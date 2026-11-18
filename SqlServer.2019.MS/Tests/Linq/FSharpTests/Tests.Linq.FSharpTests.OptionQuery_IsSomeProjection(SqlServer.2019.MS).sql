@@ -1,0 +1,71 @@
+﻿-- SqlServer.2019.MS SqlServer.2019
+DECLARE @Id Int -- Int32
+SET     @Id = 1
+DECLARE @Name NVarChar(4000) -- String
+SET     @Name = N'a'
+DECLARE @Age Int -- Int32
+SET     @Age = 5
+
+INSERT INTO [OptRow]
+(
+	[Id],
+	[Name],
+	[Age]
+)
+VALUES
+(
+	@Id,
+	@Name,
+	@Age
+)
+
+-- SqlServer.2019.MS SqlServer.2019
+DECLARE @Id Int -- Int32
+SET     @Id = 2
+DECLARE @Name NVarChar(4000) -- String
+SET     @Name = NULL
+DECLARE @Age Int -- Int32
+SET     @Age = NULL
+
+INSERT INTO [OptRow]
+(
+	[Id],
+	[Name],
+	[Age]
+)
+VALUES
+(
+	@Id,
+	@Name,
+	@Age
+)
+
+-- SqlServer.2019.MS SqlServer.2019
+DECLARE @Id Int -- Int32
+SET     @Id = 3
+DECLARE @Name NVarChar(4000) -- String
+SET     @Name = N'b'
+DECLARE @Age Int -- Int32
+SET     @Age = 7
+
+INSERT INTO [OptRow]
+(
+	[Id],
+	[Name],
+	[Age]
+)
+VALUES
+(
+	@Id,
+	@Name,
+	@Age
+)
+
+-- SqlServer.2019.MS SqlServer.2019
+SELECT
+	IIF([x].[Name] IS NOT NULL, 1, 0)
+FROM
+	[OptRow] [x]
+ORDER BY
+	[x].[Id]
+

@@ -1,0 +1,16 @@
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
+SELECT
+	CAST(0 AS UNSIGNED) as `c1`
+
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57
+SELECT
+	CAST(18446744073709551615 AS UNSIGNED) as `c1`
+
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57
+SELECT
+	CAST(0 AS UNSIGNED) as `c1`
+
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57
+SELECT
+	CAST(18446744073709551615 AS UNSIGNED) as `c1`
+

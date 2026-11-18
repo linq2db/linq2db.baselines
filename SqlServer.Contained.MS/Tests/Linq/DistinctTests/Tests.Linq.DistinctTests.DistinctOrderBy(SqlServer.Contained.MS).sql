@@ -1,0 +1,8 @@
+﻿-- SqlServer.Contained.MS SqlServer.2025
+SELECT DISTINCT
+	[ch].[ParentID]
+FROM
+	[Child] [ch]
+ORDER BY
+	[ch].[ParentID]
+

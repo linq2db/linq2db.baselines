@@ -1,0 +1,30 @@
+﻿-- SQLite.MS SQLite
+DECLARE @p Integer -- Int32
+SET     @p = 1
+DECLARE @take Integer -- Int32
+SET     @take = 2
+
+SELECT
+	[p].[ParentID],
+	[p].[Value1]
+FROM
+	[Parent] [p]
+WHERE
+	[p].[ParentID] >= @p
+LIMIT @take
+
+-- SQLite.MS SQLite
+DECLARE @p Integer -- Int32
+SET     @p = 1
+DECLARE @take Integer -- Int32
+SET     @take = 2
+
+SELECT
+	[p].[ParentID],
+	[p].[Value1]
+FROM
+	[Parent] [p]
+WHERE
+	[p].[ParentID] >= @p
+LIMIT @take
+

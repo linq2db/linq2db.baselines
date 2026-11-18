@@ -1,0 +1,4 @@
+﻿-- SqlServer.Contained SqlServer.2025
+SELECT
+	CHARINDEX(N'34', N'123456')
+

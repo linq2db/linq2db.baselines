@@ -1,0 +1,32 @@
+﻿-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+DECLARE @suffix Text(3) -- String
+SET     @suffix = 'Жук'
+
+SELECT
+	CASE
+		WHEN 'A-100Жук' IN (
+			SELECT
+				p."Sku" || Coalesce(:suffix, '')
+			FROM
+				"ConcatProduct" p
+		)
+			THEN True
+		ELSE False
+	END
+
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+DECLARE @suffix Text(3) -- String
+SET     @suffix = 'Жук'
+
+SELECT
+	CASE
+		WHEN 'A-100Щит' IN (
+			SELECT
+				p."Sku" || Coalesce(:suffix, '')
+			FROM
+				"ConcatProduct" p
+		)
+			THEN True
+		ELSE False
+	END
+

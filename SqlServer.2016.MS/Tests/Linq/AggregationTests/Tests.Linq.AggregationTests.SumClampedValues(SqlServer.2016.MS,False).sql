@@ -1,0 +1,15 @@
+﻿-- SqlServer.2016.MS SqlServer.2016
+SELECT
+	Coalesce((
+		SELECT
+			SUM(IIF(0 >= [row_1].[Value], 0, [row_1].[Value]))
+		FROM
+			[Row] [row_1]
+		WHERE
+			[row_1].[ParentId] = [parent].[Id]
+	), 0)
+FROM
+	[ParentRow] [parent]
+ORDER BY
+	[parent].[Id]
+

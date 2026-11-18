@@ -1,0 +1,24 @@
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+DECLARE @p Int32
+SET     @p = 1
+
+SELECT
+	`p`.`ParentID`,
+	`p`.`Value1`
+FROM
+	`Parent` `p`
+WHERE
+	`p`.`ParentID` > 0 AND `p`.`ParentID` = @p
+
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+DECLARE @p Int32
+SET     @p = 2
+
+SELECT
+	`p`.`ParentID`,
+	`p`.`Value1`
+FROM
+	`Parent` `p`
+WHERE
+	`p`.`ParentID` > 0 AND `p`.`ParentID` = @p
+

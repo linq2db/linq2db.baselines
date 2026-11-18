@@ -1,0 +1,11 @@
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+SELECT
+	gr."FirstName",
+	gr."LastName",
+	SUM(gr."PersonID")
+FROM
+	"Person" gr
+GROUP BY
+	gr."FirstName",
+	gr."LastName"
+

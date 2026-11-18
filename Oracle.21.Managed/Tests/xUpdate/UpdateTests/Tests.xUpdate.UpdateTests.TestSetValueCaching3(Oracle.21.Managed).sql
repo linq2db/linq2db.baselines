@@ -1,0 +1,50 @@
+﻿-- Oracle.21.Managed Oracle.Managed Oracle12
+DECLARE @Value3 Int32
+SET     @Value3 = 7
+DECLARE @id Int32
+SET     @id = 1
+
+UPDATE
+	"UpdateSetTest" t1
+SET
+	"Value3" = :Value3
+WHERE
+	t1."Id" = :id
+
+-- Oracle.21.Managed Oracle.Managed Oracle12
+DECLARE @id Int32
+SET     @id = 1
+
+SELECT
+	t1."Value3"
+FROM
+	"UpdateSetTest" t1
+WHERE
+	t1."Id" = :id
+FETCH NEXT 2 ROWS ONLY
+
+-- Oracle.21.Managed Oracle.Managed Oracle12
+DECLARE @Value3 Int32
+SET     @Value3 = 8
+DECLARE @id Int32
+SET     @id = 1
+
+UPDATE
+	"UpdateSetTest" t1
+SET
+	"Value3" = :Value3
+WHERE
+	t1."Id" = :id
+
+-- Oracle.21.Managed Oracle.Managed Oracle12
+DECLARE @id Int32
+SET     @id = 1
+
+SELECT
+	t1."Value3"
+FROM
+	"UpdateSetTest" t1
+WHERE
+	t1."Id" = :id
+FETCH NEXT 2 ROWS ONLY
+

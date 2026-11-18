@@ -1,0 +1,42 @@
+﻿-- ClickHouse.Octonica ClickHouse
+INSERT INTO EventRow
+(
+	Id,
+	StartedOn,
+	FinishedOn
+)
+VALUES
+(
+	1,
+	toDateTime64('2026-01-03 13:30:00.0000000', 7),
+	toDateTime64('2026-01-03 14:30:00.0000000', 7)
+)
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	toInt64(1234) + r.Id,
+	toFloat64(0.1234) + toFloat64(r.Id)
+FROM
+	EventRow r
+LIMIT 2
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	r.Id
+FROM
+	EventRow r
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	r.Id
+FROM
+	EventRow r
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	r.Id
+FROM
+	EventRow r
+WHERE
+	r.FinishedOn > toDateTime64('2026-01-03 13:30:00.0002468', 7)
+

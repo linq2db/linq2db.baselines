@@ -1,0 +1,7 @@
+﻿-- SQLite.MS SQLite
+SELECT
+	Replace([t].[V4], 'a', 'bb')
+FROM
+	[ShortVarCharRow] [t]
+LIMIT 2
+

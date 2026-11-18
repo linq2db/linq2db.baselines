@@ -1,0 +1,13 @@
+﻿-- Firebird.5 Firebird4
+SET TIME ZONE '-05:00'
+
+-- Firebird.5 Firebird4
+SELECT
+	Extract(year from Coalesce("j"."Moment", TIMESTAMP '0001-01-01 00:00:00.0000'))
+FROM
+	"MissedMomentEntity" "e"
+		LEFT JOIN "MissedMomentEntity" "j" ON "j"."Id" = "e"."Id" + 1000
+
+-- Firebird.5 Firebird4
+SET TIME ZONE LOCAL
+

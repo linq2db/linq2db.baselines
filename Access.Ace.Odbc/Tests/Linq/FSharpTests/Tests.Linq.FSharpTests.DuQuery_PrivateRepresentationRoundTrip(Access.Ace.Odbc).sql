@@ -1,0 +1,25 @@
+﻿-- Access.Ace.Odbc AccessODBC
+DECLARE @Id Int -- Int32
+SET     @Id = 1
+DECLARE @Key Int -- Int32
+SET     @Key = 7
+
+INSERT INTO [PrivateDuRow]
+(
+	[Id],
+	[Key]
+)
+VALUES
+(
+	?,
+	?
+)
+
+-- Access.Ace.Odbc AccessODBC
+SELECT
+	[x].[Key]
+FROM
+	[PrivateDuRow] [x]
+ORDER BY
+	[x].[Id]
+

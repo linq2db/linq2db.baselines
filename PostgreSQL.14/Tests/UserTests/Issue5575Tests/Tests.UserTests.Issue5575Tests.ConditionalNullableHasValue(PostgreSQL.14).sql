@@ -1,0 +1,13 @@
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+SELECT
+	s."Id"
+FROM
+	"SomeTable" s
+
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+SELECT
+	t1."Id",
+	t1."Value"
+FROM
+	"SomeTable" t1
+

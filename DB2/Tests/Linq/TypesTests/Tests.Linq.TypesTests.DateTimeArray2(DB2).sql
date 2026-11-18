@@ -1,0 +1,17 @@
+﻿-- DB2 DB2.LUW DB2LUW
+SELECT
+	"t".ID,
+	"t"."MoneyValue",
+	"t"."DateTimeValue",
+	"t"."DateTimeValue2",
+	"t"."BoolValue",
+	"t"."GuidValue",
+	"t"."SmallIntValue",
+	"t"."IntValue",
+	"t"."BigIntValue",
+	"t"."StringValue"
+FROM
+	"LinqDataTypes" "t"
+WHERE
+	"t"."DateTimeValue" IN (CAST('2001-01-11-01.11.21.100000' AS TIMESTAMP(6)), CAST('2012-11-07-19.19.29.090000' AS TIMESTAMP(6)))
+

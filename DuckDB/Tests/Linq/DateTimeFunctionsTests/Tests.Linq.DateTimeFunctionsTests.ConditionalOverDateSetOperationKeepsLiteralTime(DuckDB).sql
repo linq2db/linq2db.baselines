@@ -1,0 +1,14 @@
+﻿-- DuckDB
+SELECT
+	CASE
+		WHEN r.Id > 0 THEN r.OpenedOn
+		ELSE r.ClosedOn
+	END
+FROM
+	CoarseDayPairRow r
+UNION ALL
+SELECT
+	CAST('2026-06-01 10:00:00.000000'::TIMESTAMP AS TIMESTAMP)
+FROM
+	CoarseDayPairRow r_1
+

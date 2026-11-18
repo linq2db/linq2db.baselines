@@ -1,0 +1,54 @@
+﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
+INSERT INTO [TrimTestTable]
+(
+	[ID],
+	[Data]
+)
+VALUES
+(
+	1,
+	'***OOO***'
+)
+
+-- Access.LibRed.Accdb Access.LibRed AccessLibRed
+INSERT INTO [TrimTestTable]
+(
+	[ID],
+	[Data]
+)
+VALUES
+(
+	2,
+	'***HHH***'
+)
+
+-- Access.LibRed.Accdb Access.LibRed AccessLibRed
+INSERT INTO [TrimTestTable]
+(
+	[ID],
+	[Data]
+)
+VALUES
+(
+	3,
+	'***VVV***'
+)
+
+-- Access.LibRed.Accdb Access.LibRed AccessLibRed
+SELECT
+	[r].[ID],
+	[r].[Data]
+FROM
+	[TrimTestTable] [r]
+ORDER BY
+	[r].[ID]
+
+-- Access.LibRed.Accdb Access.LibRed AccessLibRed
+SELECT
+	[r].[ID],
+	[r].[Data]
+FROM
+	[TrimTestTable] [r]
+ORDER BY
+	[r].[ID]
+

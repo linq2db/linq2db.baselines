@@ -1,0 +1,4 @@
+﻿-- SqlServer.Contained.MS SqlServer.2025
+SELECT
+	ROUND(12345, -3)
+

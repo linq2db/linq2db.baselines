@@ -1,0 +1,8 @@
+﻿-- SqlServer.CS SqlServer.2025
+SELECT
+	[p].[MoneyValue]
+FROM
+	[LinqDataTypes] [p]
+WHERE
+	CAST(Floor([p].[MoneyValue]) AS Decimal) > 0
+

@@ -1,0 +1,8 @@
+﻿-- SqlServer.Contained.MS SqlServer.2025
+SELECT
+	COUNT(*)
+FROM
+	[FeatureTable] [r]
+WHERE
+	[r].[False] = 1
+
