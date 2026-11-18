@@ -1,0 +1,11 @@
+﻿-- SqlServer.2012.MS SqlServer.2012
+DECLARE @flag Bit -- Boolean
+SET     @flag = 1
+
+SELECT
+	[t].[ID]
+FROM
+	[LinqDataTypes] [t]
+WHERE
+	@flag IN ([t].[BoolValue])
+

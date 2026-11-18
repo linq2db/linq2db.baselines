@@ -1,0 +1,4 @@
+﻿-- SqlServer.2012
+SELECT
+	ROWCOUNT_BIG()
+
