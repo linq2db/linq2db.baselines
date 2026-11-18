@@ -1,0 +1,154 @@
+﻿-- SapHana.Native SapHana
+DECLARE @InstrumentId Integer -- Int32
+SET     @InstrumentId = 1
+DECLARE @IndexId Integer -- Int32
+SET     @IndexId = 1
+
+INSERT INTO "T3"
+(
+	"InstrumentId",
+	"IndexId"
+)
+VALUES
+(
+	:"InstrumentId",
+	:"IndexId"
+)
+
+-- SapHana.Native SapHana
+DECLARE @InstrumentId Integer -- Int32
+SET     @InstrumentId = 2
+DECLARE @IndexId Integer -- Int32
+SET     @IndexId = 1
+
+INSERT INTO "T3"
+(
+	"InstrumentId",
+	"IndexId"
+)
+VALUES
+(
+	:"InstrumentId",
+	:"IndexId"
+)
+
+-- SapHana.Native SapHana
+DECLARE @InstrumentId Integer -- Int32
+SET     @InstrumentId = 3
+DECLARE @IndexId Integer -- Int32
+SET     @IndexId = 1
+
+INSERT INTO "T3"
+(
+	"InstrumentId",
+	"IndexId"
+)
+VALUES
+(
+	:"InstrumentId",
+	:"IndexId"
+)
+
+-- SapHana.Native SapHana
+DECLARE @InstrumentId Integer -- Int32
+SET     @InstrumentId = 1
+DECLARE @IndexId Integer -- Int32
+SET     @IndexId = 1
+
+INSERT INTO "T2"
+(
+	"InstrumentId",
+	"IndexId"
+)
+VALUES
+(
+	:"InstrumentId",
+	:"IndexId"
+)
+
+-- SapHana.Native SapHana
+DECLARE @InstrumentId Integer -- Int32
+SET     @InstrumentId = 2
+DECLARE @IndexId Integer -- Int32
+SET     @IndexId = 1
+
+INSERT INTO "T2"
+(
+	"InstrumentId",
+	"IndexId"
+)
+VALUES
+(
+	:"InstrumentId",
+	:"IndexId"
+)
+
+-- SapHana.Native SapHana
+DECLARE @InstrumentId Integer -- Int32
+SET     @InstrumentId = 1
+DECLARE @InstrumentCode NVarChar(4) -- String
+SET     @InstrumentCode = 'aaa1'
+DECLARE @CreateDate TimeStamp -- DateTime2
+SET     @CreateDate = TIMESTAMP '2020-02-28 17:54:55.1231234'
+DECLARE @SourceInstrumentCode NVarChar(7) -- String
+SET     @SourceInstrumentCode = 'NOTNULL'
+
+INSERT INTO "T1"
+(
+	"InstrumentId",
+	"InstrumentCode",
+	"CreateDate",
+	"SourceInstrumentCode"
+)
+VALUES
+(
+	:"InstrumentId",
+	:"InstrumentCode",
+	:"CreateDate",
+	:"SourceInstrumentCode"
+)
+
+-- SapHana.Native SapHana
+DECLARE @InstrumentId Integer -- Int32
+SET     @InstrumentId = 2
+DECLARE @InstrumentCode NVarChar(4) -- String
+SET     @InstrumentCode = 'aaa2'
+DECLARE @CreateDate TimeStamp -- DateTime2
+SET     @CreateDate = TIMESTAMP '2020-02-28 17:54:55.1231234'
+DECLARE @SourceInstrumentCode NVarChar -- String
+SET     @SourceInstrumentCode = NULL
+
+INSERT INTO "T1"
+(
+	"InstrumentId",
+	"InstrumentCode",
+	"CreateDate",
+	"SourceInstrumentCode"
+)
+VALUES
+(
+	:"InstrumentId",
+	:"InstrumentCode",
+	:"CreateDate",
+	:"SourceInstrumentCode"
+)
+
+-- SapHana.Native SapHana
+DECLARE @cond NVarChar(4) -- String
+SET     @cond = 'aaa%'
+DECLARE @uptoDate TimeStamp -- DateTime2
+SET     @uptoDate = TIMESTAMP '2020-02-29 17:54:55.1231234'
+
+SELECT DISTINCT
+	"ins"."SourceInstrumentCode"
+FROM
+	"T1" "t4"
+		INNER JOIN "T2" "idx" ON "t4"."InstrumentId" = "idx"."InstrumentId"
+		INNER JOIN "T3" "w" ON "idx"."IndexId" = "w"."IndexId"
+		INNER JOIN "T1" "ins" ON "w"."InstrumentId" = "ins"."InstrumentId"
+WHERE
+	"t4"."InstrumentCode" LIKE :"cond" ESCAPE '~' AND "t4"."CreateDate" <= :"uptoDate" AND
+	"ins"."SourceInstrumentCode" IS NOT NULL
+ORDER BY
+	"ins"."SourceInstrumentCode"
+
