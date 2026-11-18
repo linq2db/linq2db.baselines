@@ -1,0 +1,59 @@
+﻿-- ClickHouse.Octonica ClickHouse
+INSERT INTO EventRow
+(
+	Id,
+	StartedOn,
+	FinishedOn
+)
+VALUES
+(
+	1,
+	toDateTime64('1970-02-03 04:05:06.7800000', 7),
+	toDateTime64('1970-01-02 00:00:00.0000000', 7)
+)
+
+-- ClickHouse.Octonica ClickHouse
+INSERT INTO EventRow
+(
+	Id,
+	StartedOn,
+	FinishedOn
+)
+VALUES
+(
+	2,
+	toDateTime64('2045-06-05 04:03:02.3400000', 7),
+	toDateTime64('1970-01-02 00:00:00.0000000', 7)
+)
+
+-- ClickHouse.Octonica ClickHouse
+INSERT INTO EventRow
+(
+	Id,
+	StartedOn,
+	FinishedOn
+)
+VALUES
+(
+	3,
+	toDateTime64('1970-01-02 00:02:05.2500000', 7),
+	toDateTime64('1970-01-02 00:00:00.0000000', 7)
+)
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	r.StartedOn,
+	r.FinishedOn
+FROM
+	EventRow r
+ORDER BY
+	r.Id
+
+-- ClickHouse.Octonica ClickHouse
+SELECT
+	toInt32(intDiv(intDiv(toUnixTimestamp64Nano(toDateTime64(r.FinishedOn, 7)) - toUnixTimestamp64Nano(toDateTime64(r.StartedOn, 7)), toInt64(100)), toInt64(10000)) % toInt64(1000))
+FROM
+	EventRow r
+ORDER BY
+	r.Id
+

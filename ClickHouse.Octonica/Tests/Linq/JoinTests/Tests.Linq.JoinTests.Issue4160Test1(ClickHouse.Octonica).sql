@@ -1,0 +1,14 @@
+﻿-- ClickHouse.Octonica ClickHouse
+SELECT DISTINCT
+	t1.Value_1
+FROM
+	Issue4160Person pe
+		LEFT JOIN (
+			SELECT
+				cc.Name as Value_1,
+				ROW_NUMBER() OVER (PARTITION BY cc.Code ORDER BY cc.Code) as rn,
+				cc.Code as Code
+			FROM
+				Issue4160City cc
+		) t1 ON t1.Code = pe.Code AND t1.rn = 1
+
