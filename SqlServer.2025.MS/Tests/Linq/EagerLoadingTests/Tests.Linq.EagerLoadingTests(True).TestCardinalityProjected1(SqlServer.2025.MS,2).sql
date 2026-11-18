@@ -1,4 +1,5 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
+-- Command 1
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -12,11 +13,11 @@ FROM
 				INNER JOIN [EntityB] [a_ObjectB] ON [e].[FK] = [a_ObjectB].[Id]
 	) [m_1]
 		INNER JOIN [EntityD] [d] ON [m_1].[Id] = [d].[FK]
-;
+
+-- Command 2
 SELECT
 	[e].[Id],
 	[a_ObjectB].[Id]
 FROM
 	[EntityA] [e]
 		INNER JOIN [EntityB] [a_ObjectB] ON [e].[FK] = [a_ObjectB].[Id]
-

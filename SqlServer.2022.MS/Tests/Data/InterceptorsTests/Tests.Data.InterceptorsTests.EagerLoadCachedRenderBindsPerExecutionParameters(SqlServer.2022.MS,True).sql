@@ -59,6 +59,7 @@ VALUES
 )
 
 -- SqlServer.2022.MS SqlServer.2022
+-- Command 1
 DECLARE @id Int -- Int32
 SET     @id = 1
 
@@ -71,15 +72,19 @@ FROM
 		INNER JOIN [Pr5EagerChild] [d] ON [m_1].[Id] = [d].[ParentId]
 WHERE
 	[m_1].[Id] = @id
-;
+
+-- Command 2
+DECLARE @id Int -- Int32
+SET     @id = 1
+
 SELECT
 	[p].[Id]
 FROM
 	[Pr5EagerParent] [p]
 WHERE
 	[p].[Id] = @id
-
 -- SqlServer.2022.MS SqlServer.2022
+-- Command 1
 DECLARE @id Int -- Int32
 SET     @id = 2
 
@@ -92,11 +97,14 @@ FROM
 		INNER JOIN [Pr5EagerChild] [d] ON [m_1].[Id] = [d].[ParentId]
 WHERE
 	[m_1].[Id] = @id
-;
+
+-- Command 2
+DECLARE @id Int -- Int32
+SET     @id = 2
+
 SELECT
 	[p].[Id]
 FROM
 	[Pr5EagerParent] [p]
 WHERE
 	[p].[Id] = @id
-

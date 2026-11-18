@@ -1,4 +1,5 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
+-- Command 1
 DECLARE @take Int -- Int32
 SET     @take = 20
 
@@ -23,7 +24,11 @@ FROM
 				INNER JOIN [DetailClass] [dd] ON [t1].[Id1] = [dd].[MasterId]
 	) [m_2]
 		INNER JOIN [SubDetailClass] [d] ON [m_2].[DetailId] = [d].[DetailId]
-;
+
+-- Command 2
+DECLARE @take Int -- Int32
+SET     @take = 20
+
 SELECT
 	[m_2].[DetailId],
 	[d_1].[SubDetailId],
@@ -56,7 +61,11 @@ FROM
 			ORDER BY
 				[d].[SubDetailValue]
 		) [d_1]
-;
+
+-- Command 3
+DECLARE @take Int -- Int32
+SET     @take = 20
+
 SELECT
 	[m_2].[MasterId],
 	[d_1].[Id1],
@@ -91,7 +100,11 @@ FROM
 			ORDER BY
 				[d].[Value]
 		) [d_1]
-;
+
+-- Command 4
+DECLARE @take Int -- Int32
+SET     @take = 20
+
 SELECT
 	[t1].[Id1],
 	[t1].[Id2],
@@ -113,4 +126,3 @@ FROM
 			[m_1].[Id2] DESC
 	) [t1]
 		INNER JOIN [DetailClass] [dd] ON [t1].[Id1] = [dd].[MasterId]
-

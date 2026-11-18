@@ -1,4 +1,5 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
+-- Command 1
 SELECT
 	[m_1].[Id],
 	[m_1].[Id_1],
@@ -14,7 +15,8 @@ FROM
 				INNER JOIN [EntityMB] [d] ON [t1].[Id] = [d].[FK]
 	) [m_1]
 		INNER JOIN [EntityMC] [d_1] ON [m_1].[Id] = [d_1].[FK]
-;
+
+-- Command 2
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -24,11 +26,11 @@ SELECT
 FROM
 	[EntityMA] [m_1]
 		INNER JOIN [EntityMB] [d] ON [m_1].[Id] = [d].[FK]
-;
+
+-- Command 3
 SELECT
 	[t1].[Id],
 	[t1].[FK],
 	[t1].[Id]
 FROM
 	[EntityMA] [t1]
-

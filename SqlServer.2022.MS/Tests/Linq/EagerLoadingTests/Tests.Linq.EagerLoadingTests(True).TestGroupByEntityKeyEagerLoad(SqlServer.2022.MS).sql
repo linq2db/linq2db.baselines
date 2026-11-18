@@ -1,4 +1,5 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
+-- Command 1
 SELECT
 	[m_1].[Id1],
 	[d].[DetailId]
@@ -13,7 +14,8 @@ FROM
 		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
 ORDER BY
 	[d].[DetailId]
-;
+
+-- Command 2
 SELECT
 	[g_2].[Id1]
 FROM
@@ -25,8 +27,8 @@ FROM
 			[DetailClass] [g_1]
 				LEFT JOIN [MasterClass] [a_Master] ON [g_1].[MasterId] = [a_Master].[Id1]
 	) [g_2]
-
 -- SqlServer.2022.MS SqlServer.2022
+-- Command 1
 SELECT
 	[m_1].[Id1],
 	[d].[DetailId],
@@ -41,7 +43,8 @@ FROM
 				LEFT JOIN [MasterClass] [a_Master] ON [t1].[MasterId] = [a_Master].[Id1]
 	) [m_1]
 		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
-;
+
+-- Command 2
 SELECT
 	[t1].[DetailId],
 	[t1].[MasterId],
@@ -53,4 +56,3 @@ SELECT
 FROM
 	[DetailClass] [t1]
 		LEFT JOIN [MasterClass] [a_Master] ON [t1].[MasterId] = [a_Master].[Id1]
-
