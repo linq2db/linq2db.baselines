@@ -1,0 +1,26 @@
+﻿-- SqlServer.Contained.MS SqlServer.2025
+SELECT
+	[x].[FirstName],
+	[x].[PersonID],
+	[x].[LastName],
+	[x].[MiddleName],
+	[x].[Gender]
+FROM
+	[Person] [x]
+		CROSS JOIN [Person] [y]
+WHERE
+	1 = 0
+
+-- SqlServer.Contained.MS SqlServer.2025
+SELECT
+	[x].[FirstName],
+	[x].[PersonID],
+	[x].[LastName],
+	[x].[MiddleName],
+	[x].[Gender]
+FROM
+	[Person] [x]
+		CROSS JOIN [Person] [y]
+WHERE
+	1 = 0
+

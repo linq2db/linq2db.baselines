@@ -1,0 +1,4 @@
+﻿-- SqlServer.Contained SqlServer.2025
+SELECT
+	CEILING(123.45)
+

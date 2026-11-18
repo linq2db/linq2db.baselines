@@ -1,0 +1,9 @@
+﻿-- SqlServer.CS.MS SqlServer.2025
+SELECT
+	[p].[FirstName],
+	COUNT(*)
+FROM
+	[Person] [p]
+GROUP BY
+	[p].[FirstName]
+

@@ -1,0 +1,6 @@
+﻿-- SqlServer.CS.MS SqlServer.2025
+SELECT
+	DatePart(dayofyear, [t].[DateTimeValue]) % 7
+FROM
+	[LinqDataTypes] [t]
+

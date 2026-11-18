@@ -1,0 +1,4 @@
+﻿-- SqlServer.Contained.MS SqlServer.2025
+SELECT
+	COMPRESS(0x010203)
+

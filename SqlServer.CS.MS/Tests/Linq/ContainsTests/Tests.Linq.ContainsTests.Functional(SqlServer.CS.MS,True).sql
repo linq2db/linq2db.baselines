@@ -1,0 +1,40 @@
+﻿-- SqlServer.CS.MS SqlServer.2025
+SELECT TOP (1)
+	[s].[Id]
+FROM
+	[Src] [s]
+WHERE
+	[s].[Int] IN (-1, -2)
+
+-- SqlServer.CS.MS SqlServer.2025
+SELECT TOP (1)
+	[s].[Id]
+FROM
+	[Src] [s]
+WHERE
+	([s].[Int] IN (-1) OR [s].[Int] IS NULL)
+
+-- SqlServer.CS.MS SqlServer.2025
+SELECT TOP (1)
+	[s].[Id]
+FROM
+	[Src] [s]
+WHERE
+	[s].[Int] IN (-1, 2)
+
+-- SqlServer.CS.MS SqlServer.2025
+SELECT TOP (1)
+	[s].[Id]
+FROM
+	[Src] [s]
+WHERE
+	([s].[Int] NOT IN (2) AND [s].[Int] IS NOT NULL)
+
+-- SqlServer.CS.MS SqlServer.2025
+SELECT TOP (1)
+	[s].[Id]
+FROM
+	[Src] [s]
+WHERE
+	([s].[Int] NOT IN (-1, 2) OR [s].[Int] IS NULL)
+

@@ -1,0 +1,24 @@
+﻿-- SqlServer.CS SqlServer.2025
+SELECT
+	[p].[FirstName],
+	[p].[PersonID],
+	[p].[LastName],
+	[p].[MiddleName],
+	[p].[Gender]
+FROM
+	[Person] [p]
+WHERE
+	[p].[FirstName] = N'John'
+
+-- SqlServer.CS SqlServer.2025
+SELECT
+	[p].[FirstName],
+	[p].[PersonID],
+	[p].[LastName],
+	[p].[MiddleName],
+	[p].[Gender]
+FROM
+	[Person] [p]
+WHERE
+	[p].[FirstName] = N'John'
+

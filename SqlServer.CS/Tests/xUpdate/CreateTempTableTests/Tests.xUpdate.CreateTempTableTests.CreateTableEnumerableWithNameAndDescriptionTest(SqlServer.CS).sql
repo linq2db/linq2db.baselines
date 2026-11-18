@@ -1,0 +1,24 @@
+﻿-- SqlServer.CS SqlServer.2025
+DROP TABLE IF EXISTS [TempTable]
+
+-- SqlServer.CS SqlServer.2025
+IF (OBJECT_ID(N'[TempTable]', N'U') IS NULL)
+	CREATE TABLE [TempTable]
+	(
+		[Name] NVarChar(20) NOT NULL,
+
+		CONSTRAINT [PK_TempTable] PRIMARY KEY CLUSTERED ([Name])
+	)
+
+INSERT BULK [TempTable](Name)
+
+-- SqlServer.CS SqlServer.2025
+SELECT
+	[t].[Name]
+FROM
+	[Person] [p]
+		INNER JOIN [TempTable] [t] ON [p].[FirstName] = [t].[Name]
+
+-- SqlServer.CS SqlServer.2025
+DROP TABLE IF EXISTS [TempTable]
+

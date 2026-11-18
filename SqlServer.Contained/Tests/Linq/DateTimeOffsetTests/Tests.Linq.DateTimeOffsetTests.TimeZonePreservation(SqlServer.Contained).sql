@@ -1,0 +1,7 @@
+﻿-- SqlServer.Contained SqlServer.2025
+SELECT TOP (1)
+	[t1].[TransactionId],
+	[t1].[TransactionDate]
+FROM
+	[DateTimeOffsetTable] [t1]
+

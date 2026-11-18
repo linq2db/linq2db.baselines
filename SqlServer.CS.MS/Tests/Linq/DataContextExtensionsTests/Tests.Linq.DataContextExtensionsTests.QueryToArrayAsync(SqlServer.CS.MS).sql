@@ -1,0 +1,9 @@
+﻿-- SqlServer.CS.MS SqlServer.2025
+SELECT 1 UNION ALL SELECT 2
+
+-- SqlServer.CS.MS SqlServer.2025
+SELECT 1 UNION ALL SELECT 2
+
+-- SqlServer.CS.MS SqlServer.2025
+SELECT 1 UNION ALL SELECT 2
+

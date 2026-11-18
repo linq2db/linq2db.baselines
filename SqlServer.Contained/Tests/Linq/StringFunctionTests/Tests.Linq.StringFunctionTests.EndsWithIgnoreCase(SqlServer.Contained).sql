@@ -1,0 +1,16 @@
+﻿-- SqlServer.Contained SqlServer.2025
+SELECT
+	COUNT(*)
+FROM
+	[Person] [p]
+WHERE
+	[p].[FirstName] LIKE N'%JOHN' ESCAPE N'~' AND [p].[PersonID] = 1
+
+-- SqlServer.Contained SqlServer.2025
+SELECT
+	COUNT(*)
+FROM
+	[Person] [p]
+WHERE
+	[p].[FirstName] NOT LIKE N'%JOHN' ESCAPE N'~' AND [p].[PersonID] = 1
+

@@ -1,0 +1,11 @@
+﻿-- SqlServer.Contained.MS SqlServer.2025
+SELECT
+	[x].[PersonID],
+	[x].[FirstName],
+	[x].[LastName],
+	[x].[MiddleName]
+FROM
+	[Person] [x]
+WHERE
+	[x].[FirstName] = N'John'
+

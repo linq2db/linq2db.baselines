@@ -1,0 +1,4 @@
+﻿-- SqlServer.Contained SqlServer.2025
+SELECT
+	TIMEFROMPARTS(1, 1, 1, 0, 0)
+
