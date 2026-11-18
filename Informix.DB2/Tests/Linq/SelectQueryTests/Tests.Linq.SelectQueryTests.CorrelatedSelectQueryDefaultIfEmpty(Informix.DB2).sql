@@ -2,44 +2,28 @@
 SELECT
 	c_1.ChildID,
 	CASE
-		WHEN ((
+		WHEN c_1.ChildID <> p.ParentID * 10 + 1 OR NOT EXISTS(
 			SELECT
-				c_1.ChildID <> p.ParentID * 10 + 1
+				p.Value1
 			FROM table(set{1})
-		)) OR ((
+			INTERSECT
 			SELECT
-				NOT EXISTS(
-					SELECT
-						p.Value1
-					FROM table(set{1})
-					INTERSECT
-					SELECT
-						c_1.ParentID
-					FROM table(set{1})
-				)
+				c_1.ParentID
 			FROM table(set{1})
-		))
+		)
 			THEN 5
 		ELSE 3
 	END,
 	CASE
-		WHEN ((
+		WHEN c_1.ChildID <> p.ParentID * 10 + 1 OR NOT EXISTS(
 			SELECT
-				c_1.ChildID <> p.ParentID * 10 + 1
+				p.Value1
 			FROM table(set{1})
-		)) OR ((
+			INTERSECT
 			SELECT
-				NOT EXISTS(
-					SELECT
-						p.Value1
-					FROM table(set{1})
-					INTERSECT
-					SELECT
-						c_1.ParentID
-					FROM table(set{1})
-				)
+				c_1.ParentID
 			FROM table(set{1})
-		))
+		)
 			THEN 'bad'
 		ELSE NULL
 	END

@@ -2,28 +2,12 @@
 SELECT
 	"c_1"."ChildID",
 	CASE
-		WHEN ((
-			SELECT
-				CAST("c_1"."ChildID" <> "p"."ParentID" * 10 + 1 AS smallint)
-			FROM SYSIBM.SYSDUMMY1
-		)) OR ((
-			SELECT
-				CAST("p"."Value1" IS DISTINCT FROM "c_1"."ParentID" AS smallint)
-			FROM SYSIBM.SYSDUMMY1
-		))
+		WHEN "c_1"."ChildID" <> "p"."ParentID" * 10 + 1 OR "p"."Value1" IS DISTINCT FROM "c_1"."ParentID"
 			THEN 5
 		ELSE 3
 	END,
 	CASE
-		WHEN ((
-			SELECT
-				CAST("c_1"."ChildID" <> "p"."ParentID" * 10 + 1 AS smallint)
-			FROM SYSIBM.SYSDUMMY1
-		)) OR ((
-			SELECT
-				CAST("p"."Value1" IS DISTINCT FROM "c_1"."ParentID" AS smallint)
-			FROM SYSIBM.SYSDUMMY1
-		))
+		WHEN "c_1"."ChildID" <> "p"."ParentID" * 10 + 1 OR "p"."Value1" IS DISTINCT FROM "c_1"."ParentID"
 			THEN 'bad'
 		ELSE NULL
 	END
