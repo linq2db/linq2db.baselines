@@ -1,0 +1,11 @@
+﻿-- Firebird.5 Firebird4
+SELECT
+	"p"."PersonID",
+	"p"."FirstName",
+	"p"."LastName"
+FROM
+	"Person" "p"
+WHERE
+	"p"."LastName" = 'Pupkin' AND "p"."FirstName" = 'John'
+FETCH NEXT 2 ROWS ONLY
+
