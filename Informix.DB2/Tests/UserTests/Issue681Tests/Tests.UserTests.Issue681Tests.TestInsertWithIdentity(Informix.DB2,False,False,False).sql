@@ -1,0 +1,18 @@
+﻿-- Informix.DB2 Informix
+DECLARE @Value Integer(4) -- Int32
+SET     @Value = 10
+
+INSERT INTO Issue681Table4
+(
+	"Value"
+)
+VALUES
+(
+	@Value
+)
+
+-- Informix.DB2 Informix
+SELECT
+	DBINFO('sqlca.sqlerrd1')
+FROM table(set{1})
+
