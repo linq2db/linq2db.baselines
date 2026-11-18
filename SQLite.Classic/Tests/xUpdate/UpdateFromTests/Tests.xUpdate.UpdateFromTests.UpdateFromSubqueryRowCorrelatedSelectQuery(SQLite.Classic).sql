@@ -3,17 +3,11 @@ UPDATE
 	[UpdateRowDiagnostic]
 SET
 	([Status], [ErrorMessage]) = (CASE
-		WHEN ((
-			SELECT
-				[t1].[Field1] IS NOT [d].[Field1]
-		)) OR [t1].[Field2] IS NOT [d].[Field2]
+		WHEN [t1].[Field1] IS NOT [d].[Field1] OR [t1].[Field2] IS NOT [d].[Field2]
 			THEN 5
 		ELSE 3
 	END, CASE
-		WHEN ((
-			SELECT
-				[t1].[Field1] IS NOT [d].[Field1]
-		)) OR [t1].[Field2] IS NOT [d].[Field2]
+		WHEN [t1].[Field1] IS NOT [d].[Field1] OR [t1].[Field2] IS NOT [d].[Field2]
 			THEN 'bad'
 		ELSE NULL
 	END)
