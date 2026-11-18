@@ -1,0 +1,16 @@
+﻿-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+SELECT
+	(-9223372036854775808)::BigInt
+
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+SELECT
+	9223372036854775807::BigInt
+
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+SELECT
+	(-9223372036854775808)::BigInt
+
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+SELECT
+	9223372036854775807::BigInt
+

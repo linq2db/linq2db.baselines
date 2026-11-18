@@ -1,0 +1,20 @@
+﻿-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+SELECT
+	Coalesce((
+		SELECT
+			SUM("a_Children"."ChildID")
+		FROM
+			"Child" "a_Children"
+		WHERE
+			g_2."ParentID" = "a_Children"."ParentID"
+	), 0)
+FROM
+	(
+		SELECT DISTINCT
+			"a_Parent"."ParentID",
+			"a_Parent"."Value1"
+		FROM
+			"Child" g_1
+				LEFT JOIN "Parent" "a_Parent" ON g_1."ParentID" = "a_Parent"."ParentID"
+	) g_2
+

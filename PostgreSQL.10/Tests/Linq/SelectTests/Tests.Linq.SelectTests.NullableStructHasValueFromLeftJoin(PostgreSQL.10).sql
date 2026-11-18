@@ -1,0 +1,11 @@
+﻿-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+SELECT
+	p."ParentID",
+	c_1."ChildID",
+	c_1."ParentID"
+FROM
+	"Parent" p
+		LEFT JOIN "Child" c_1 ON c_1."ParentID" = p."ParentID"
+WHERE
+	p."ParentID" = 5
+
