@@ -1,0 +1,26 @@
+﻿-- Oracle.11.Managed Oracle11
+INSERT INTO "TestIdTrun"
+(
+	"Field1"
+)
+VALUES
+(
+	1
+)
+
+-- Oracle.11.Managed Oracle11
+DROP SEQUENCE "SIDENTITY_TestIdTrun"
+
+-- Oracle.11.Managed Oracle11
+TRUNCATE TABLE "TestIdTrun"
+
+-- Oracle.11.Managed Oracle11
+DECLARE
+	l_value number;
+BEGIN
+	EXECUTE IMMEDIATE 'SELECT "SIDENTITY_TestIdTrun".NEXTVAL FROM dual' INTO l_value;
+	EXECUTE IMMEDIATE 'ALTER SEQUENCE "SIDENTITY_TestIdTrun" INCREMENT BY -' || l_value || ' MINVALUE 0';
+	EXECUTE IMMEDIATE 'SELECT "SIDENTITY_TestIdTrun".NEXTVAL FROM dual' INTO l_value;
+	EXECUTE IMMEDIATE 'ALTER SEQUENCE "SIDENTITY_TestIdTrun" INCREMENT BY 1 MINVALUE 0';
+END;
+

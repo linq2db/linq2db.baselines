@@ -1,0 +1,32 @@
+﻿-- Oracle.11.Managed Oracle11
+SELECT
+	COUNT(*)
+FROM
+	"CoarseDayPairRow" r
+WHERE
+	Coalesce(r."ClosedOn", r."OpenedOn") IN (TIMESTAMP '2026-06-01 00:00:00.000000')
+
+-- Oracle.11.Managed Oracle11
+SELECT
+	COUNT(*)
+FROM
+	"CoarseDayPairRow" r
+WHERE
+	Coalesce(r."ClosedOn", r."OpenedOn") IN (TIMESTAMP '2026-06-01 00:00:00.000000')
+
+-- Oracle.11.Managed Oracle11
+SELECT
+	COUNT(*)
+FROM
+	"CoarseDayPairRow" r
+WHERE
+	Trunc(r."Value", 'DD') IN (TIMESTAMP '2026-06-01 00:00:00.000000')
+
+-- Oracle.11.Managed Oracle11
+SELECT
+	COUNT(*)
+FROM
+	"CoarseDayPairRow" r
+WHERE
+	Coalesce(r."ClosedOn", r."OpenedOn") IN (TIMESTAMP '2026-06-01 10:00:00.000000')
+
