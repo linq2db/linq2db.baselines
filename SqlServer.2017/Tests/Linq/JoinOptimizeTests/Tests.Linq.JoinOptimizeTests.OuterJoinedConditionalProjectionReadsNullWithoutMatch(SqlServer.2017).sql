@@ -21,7 +21,7 @@ FROM
 SELECT
 	[p].[ParentID],
 	CASE
-		WHEN [x].[c1] IS NULL THEN NULL
+		WHEN [x].[ParentID] IS NULL THEN NULL
 		WHEN [x].[Value1] IS NULL THEN N'none'
 		ELSE NULL
 	END
@@ -30,7 +30,6 @@ FROM
 		LEFT JOIN (
 			SELECT
 				[q].[Value1],
-				1 as [c1],
 				[q].[ParentID]
 			FROM
 				[Parent] [q]
