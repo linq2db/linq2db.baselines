@@ -1,0 +1,39 @@
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @DefaultNote NVarChar(4) -- String
+SET     @DefaultNote = 'note'
+
+INSERT INTO [StaticLetTable]
+(
+	[Id],
+	[Number],
+	[Text],
+	[Note]
+)
+VALUES
+(
+	1,
+	5,
+	'before',
+	@DefaultNote
+)
+
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+UPDATE
+	[StaticLetTable]
+SET
+	[Text] = 'after'
+WHERE
+	[StaticLetTable].[Id] = 1
+
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+SELECT
+	[r].[Id],
+	[r].[Number],
+	[r].[Text],
+	[r].[Note]
+FROM
+	[StaticLetTable] [r]
+WHERE
+	[r].[Id] = 1
+LIMIT 2
+
