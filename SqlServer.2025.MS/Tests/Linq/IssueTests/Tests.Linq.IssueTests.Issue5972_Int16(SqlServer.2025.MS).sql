@@ -1,0 +1,16 @@
+﻿-- SqlServer.2025.MS SqlServer.2025
+SELECT
+	-32768
+
+-- SqlServer.2025.MS SqlServer.2025
+SELECT
+	32767
+
+-- SqlServer.2025.MS SqlServer.2025
+SELECT
+	-32768
+
+-- SqlServer.2025.MS SqlServer.2025
+SELECT
+	32767
+

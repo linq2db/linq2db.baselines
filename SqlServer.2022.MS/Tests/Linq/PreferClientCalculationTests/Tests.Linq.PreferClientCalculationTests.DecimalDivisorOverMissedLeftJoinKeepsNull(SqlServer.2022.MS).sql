@@ -1,0 +1,7 @@
+﻿-- SqlServer.2022.MS SqlServer.2022
+SELECT
+	[e].[Dec] / [j].[Dec]
+FROM
+	[MissedDivisorEntity] [e]
+		LEFT JOIN [MissedDivisorEntity] [j] ON [j].[Id] = [e].[Id] + 1000
+
