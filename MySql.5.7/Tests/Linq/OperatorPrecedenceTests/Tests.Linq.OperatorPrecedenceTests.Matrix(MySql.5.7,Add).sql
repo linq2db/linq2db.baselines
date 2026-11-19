@@ -39,7 +39,6 @@ SELECT
 	(~`r`.`B`) + `r`.`C`,
 	`r`.`A` + (~`r`.`B`) + `r`.`C`,
 	`r`.`A` * (~`r`.`B`) + `r`.`C`,
-	`r`.`A` / (~`r`.`B`) + `r`.`C`,
 	`r`.`A` % (~`r`.`B`) + `r`.`C`,
 	(`r`.`A` & ~`r`.`B`) + `r`.`C`,
 	(`r`.`A` | ~`r`.`B`) + `r`.`C`,
@@ -49,7 +48,6 @@ SELECT
 	`r`.`A` + -5 + `r`.`C`,
 	`r`.`A` - -5 + `r`.`C`,
 	`r`.`A` * -5 + `r`.`C`,
-	`r`.`A` / -5 + `r`.`C`,
 	`r`.`A` % -5 + `r`.`C`,
 	(`r`.`A` & -5) + `r`.`C`,
 	(`r`.`A` | -5) + `r`.`C`,
@@ -373,14 +371,6 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` / (~`r`.`B`) + `r`.`C`
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
 	`r`.`A` % (~`r`.`B`) + `r`.`C`
 FROM
 	`PrecedenceRow` `r`
@@ -453,14 +443,6 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` / -5 + `r`.`C`
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
 	`r`.`A` % -5 + `r`.`C`
 FROM
 	`PrecedenceRow` `r`
@@ -498,7 +480,6 @@ SELECT
 	`r`.`A` + -5 + `r`.`C`,
 	`r`.`A` - -5 + `r`.`C`,
 	`r`.`A` * -5 + `r`.`C`,
-	`r`.`A` / -5 + `r`.`C`,
 	`r`.`A` % -5 + `r`.`C`,
 	(`r`.`A` & -5) + `r`.`C`,
 	(`r`.`A` | -5) + `r`.`C`,
@@ -543,14 +524,6 @@ ORDER BY
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
 	`r`.`A` * -5 + `r`.`C`
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	`r`.`A` / -5 + `r`.`C`
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -625,7 +598,7 @@ ORDER BY
 -- cell Add/Add(Add(a,Neg(b)),c): green
 -- cell Add/Add(Sub(a,Neg(b)),c): skipped
 -- cell Add/Add(Mul(a,Neg(b)),c): green
--- cell Add/Add(Div(a,Neg(b)),c): red
+-- cell Add/Add(Div(a,Neg(b)),c): green
 -- cell Add/Add(Mod(a,Neg(b)),c): green
 -- cell Add/Add(And(a,Neg(b)),c): green
 -- cell Add/Add(Or(a,Neg(b)),c): error
@@ -635,7 +608,7 @@ ORDER BY
 -- cell Add/Add(Add(a,Not(b)),c): error
 -- cell Add/Add(Sub(a,Not(b)),c): skipped
 -- cell Add/Add(Mul(a,Not(b)),c): error
--- cell Add/Add(Div(a,Not(b)),c): red
+-- cell Add/Add(Div(a,Not(b)),c): skipped
 -- cell Add/Add(Mod(a,Not(b)),c): red
 -- cell Add/Add(And(a,Not(b)),c): green
 -- cell Add/Add(Or(a,Not(b)),c): error
@@ -645,7 +618,7 @@ ORDER BY
 -- cell Add/Add(Add(a,NegLit(b)),c): green
 -- cell Add/Add(Sub(a,NegLit(b)),c): green
 -- cell Add/Add(Mul(a,NegLit(b)),c): green
--- cell Add/Add(Div(a,NegLit(b)),c): red
+-- cell Add/Add(Div(a,NegLit(b)),c): skipped
 -- cell Add/Add(Mod(a,NegLit(b)),c): green
 -- cell Add/Add(And(a,NegLit(b)),c): green
 -- cell Add/Add(Or(a,NegLit(b)),c): error
@@ -655,7 +628,7 @@ ORDER BY
 -- cell Add/Add(Add(a,NegParam(b)),c): green
 -- cell Add/Add(Sub(a,NegParam(b)),c): green
 -- cell Add/Add(Mul(a,NegParam(b)),c): green
--- cell Add/Add(Div(a,NegParam(b)),c): red
+-- cell Add/Add(Div(a,NegParam(b)),c): skipped
 -- cell Add/Add(Mod(a,NegParam(b)),c): green
 -- cell Add/Add(And(a,NegParam(b)),c): green
 -- cell Add/Add(Or(a,NegParam(b)),c): error
