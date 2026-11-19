@@ -39,7 +39,6 @@ SELECT
 	(~r."B") + r."C",
 	r."A" + (~r."B") + r."C",
 	r."A" * (~r."B") + r."C",
-	r."A" / (~r."B") + r."C",
 	Floor(r."A"::decimal % (~r."B"))::Int + r."C",
 	(r."A" & ~r."B") + r."C",
 	(r."A" | ~r."B") + r."C",
@@ -49,7 +48,6 @@ SELECT
 	r."A" + -5 + r."C",
 	r."A" - -5 + r."C",
 	r."A" * -5 + r."C",
-	r."A" / -5 + r."C",
 	Floor(r."A"::decimal % -5)::Int + r."C",
 	(r."A" & -5) + r."C",
 	(r."A" | -5) + r."C",
@@ -66,7 +64,6 @@ SELECT
 	r."A" + -5 + r."C",
 	r."A" - -5 + r."C",
 	r."A" * -5 + r."C",
-	r."A" / -5 + r."C",
 	Floor(r."A"::decimal % -5)::Int + r."C",
 	(r."A" & -5) + r."C",
 	(r."A" | -5) + r."C",
@@ -123,7 +120,7 @@ ORDER BY
 -- cell Add/Add(Add(a,Not(b)),c): green
 -- cell Add/Add(Sub(a,Not(b)),c): skipped
 -- cell Add/Add(Mul(a,Not(b)),c): green
--- cell Add/Add(Div(a,Not(b)),c): green
+-- cell Add/Add(Div(a,Not(b)),c): skipped
 -- cell Add/Add(Mod(a,Not(b)),c): green
 -- cell Add/Add(And(a,Not(b)),c): green
 -- cell Add/Add(Or(a,Not(b)),c): green
@@ -133,7 +130,7 @@ ORDER BY
 -- cell Add/Add(Add(a,NegLit(b)),c): green
 -- cell Add/Add(Sub(a,NegLit(b)),c): green
 -- cell Add/Add(Mul(a,NegLit(b)),c): green
--- cell Add/Add(Div(a,NegLit(b)),c): green
+-- cell Add/Add(Div(a,NegLit(b)),c): skipped
 -- cell Add/Add(Mod(a,NegLit(b)),c): green
 -- cell Add/Add(And(a,NegLit(b)),c): green
 -- cell Add/Add(Or(a,NegLit(b)),c): green
@@ -143,7 +140,7 @@ ORDER BY
 -- cell Add/Add(Add(a,NegParam(b)),c): green
 -- cell Add/Add(Sub(a,NegParam(b)),c): green
 -- cell Add/Add(Mul(a,NegParam(b)),c): green
--- cell Add/Add(Div(a,NegParam(b)),c): green
+-- cell Add/Add(Div(a,NegParam(b)),c): skipped
 -- cell Add/Add(Mod(a,NegParam(b)),c): green
 -- cell Add/Add(And(a,NegParam(b)),c): green
 -- cell Add/Add(Or(a,NegParam(b)),c): green
