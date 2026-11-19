@@ -4,6 +4,7 @@ SELECT
 	"p"."ParentID",
 	CASE
 		WHEN "p"."ParentID" IS NULL THEN NULL
+		WHEN "x"."c1" IS NULL THEN NULL
 		ELSE (
 			SELECT
 				"ch"."ChildID"
@@ -21,6 +22,7 @@ FROM
 		LEFT JOIN (
 			SELECT
 				"g_1"."ParentID",
+				1 as "c1",
 				ROW_NUMBER() OVER (PARTITION BY "g_1"."ChildID" ORDER BY "g_1"."GrandChildID") as "rn",
 				"g_1"."ChildID"
 			FROM
