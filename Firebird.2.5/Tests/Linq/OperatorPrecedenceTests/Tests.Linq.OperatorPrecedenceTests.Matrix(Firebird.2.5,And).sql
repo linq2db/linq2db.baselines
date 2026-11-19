@@ -12,9 +12,13 @@ SELECT
 	Bin_And("r".A, "r".B * "r".C),
 	Bin_And("r".A * "r".B, "r".C),
 	Bin_And("r".A, "r".B * "r".C),
+	Bin_And("r".A / "r".B, "r".C),
 	Bin_And("r".A, "r".B / "r".C),
+	Bin_And("r".A / "r".B, "r".C),
 	Bin_And("r".A, "r".B / "r".C),
+	Bin_And(Mod("r".A, "r".B), "r".C),
 	Bin_And("r".A, Mod("r".B, "r".C)),
+	Bin_And(Mod("r".A, "r".B), "r".C),
 	Bin_And("r".A, Mod("r".B, "r".C)),
 	Bin_And(Bin_Or("r".A, "r".B), "r".C),
 	Bin_And("r".A, Bin_Or("r".B, "r".C)),
@@ -29,6 +33,8 @@ SELECT
 	Bin_And("r".A - "r".B, "r".C),
 	Bin_And("r".A + "r".B, "r".C),
 	Bin_And("r".A * -"r".B, "r".C),
+	Bin_And("r".A / -"r".B, "r".C),
+	Bin_And(Mod("r".A, -"r".B), "r".C),
 	Bin_And(Bin_And("r".A, -"r".B), "r".C),
 	Bin_And(Bin_Or("r".A, -"r".B), "r".C),
 	Bin_And(Bin_Xor("r".A, -"r".B), "r".C),
@@ -37,7 +43,6 @@ SELECT
 	Bin_And("r".A + BIN_NOT("r".B), "r".C),
 	Bin_And("r".A - BIN_NOT("r".B), "r".C),
 	Bin_And("r".A * BIN_NOT("r".B), "r".C),
-	Bin_And("r".A / BIN_NOT("r".B), "r".C),
 	Bin_And(Mod("r".A, BIN_NOT("r".B)), "r".C),
 	Bin_And(Bin_And("r".A, BIN_NOT("r".B)), "r".C),
 	Bin_And(Bin_Or("r".A, BIN_NOT("r".B)), "r".C),
@@ -47,7 +52,6 @@ SELECT
 	Bin_And("r".A + -5, "r".C),
 	Bin_And("r".A - -5, "r".C),
 	Bin_And("r".A * -5, "r".C),
-	Bin_And("r".A / -5, "r".C),
 	Bin_And(Mod("r".A, -5), "r".C),
 	Bin_And(Bin_And("r".A, -5), "r".C),
 	Bin_And(Bin_Or("r".A, -5), "r".C),
@@ -64,7 +68,6 @@ SELECT
 	Bin_And("r".A + -5, "r".C),
 	Bin_And("r".A - -5, "r".C),
 	Bin_And("r".A * -5, "r".C),
-	Bin_And("r".A / -5, "r".C),
 	Bin_And(Mod("r".A, -5), "r".C),
 	Bin_And(Bin_And("r".A, -5), "r".C),
 	Bin_And(Bin_Or("r".A, -5), "r".C),
@@ -86,13 +89,13 @@ ORDER BY
 -- cell And/And(a,Mul(b,c)): green
 -- cell And/And(AsNotNull(Mul(a,b)),c): green
 -- cell And/And(a,AsNotNull(Mul(b,c))): green
--- cell And/And(Div(a,b),c): skipped
+-- cell And/And(Div(a,b),c): green
 -- cell And/And(a,Div(b,c)): green
--- cell And/And(AsNotNull(Div(a,b)),c): skipped
+-- cell And/And(AsNotNull(Div(a,b)),c): green
 -- cell And/And(a,AsNotNull(Div(b,c))): green
--- cell And/And(Mod(a,b),c): skipped
+-- cell And/And(Mod(a,b),c): green
 -- cell And/And(a,Mod(b,c)): green
--- cell And/And(AsNotNull(Mod(a,b)),c): skipped
+-- cell And/And(AsNotNull(Mod(a,b)),c): green
 -- cell And/And(a,AsNotNull(Mod(b,c))): green
 -- cell And/And(And(a,b),c): skipped
 -- cell And/And(a,And(b,c)): skipped
@@ -111,8 +114,8 @@ ORDER BY
 -- cell And/And(Add(a,Neg(b)),c): green
 -- cell And/And(Sub(a,Neg(b)),c): green
 -- cell And/And(Mul(a,Neg(b)),c): green
--- cell And/And(Div(a,Neg(b)),c): skipped
--- cell And/And(Mod(a,Neg(b)),c): skipped
+-- cell And/And(Div(a,Neg(b)),c): green
+-- cell And/And(Mod(a,Neg(b)),c): green
 -- cell And/And(And(a,Neg(b)),c): green
 -- cell And/And(Or(a,Neg(b)),c): green
 -- cell And/And(Xor(a,Neg(b)),c): green
@@ -121,7 +124,7 @@ ORDER BY
 -- cell And/And(Add(a,Not(b)),c): green
 -- cell And/And(Sub(a,Not(b)),c): green
 -- cell And/And(Mul(a,Not(b)),c): green
--- cell And/And(Div(a,Not(b)),c): green
+-- cell And/And(Div(a,Not(b)),c): skipped
 -- cell And/And(Mod(a,Not(b)),c): green
 -- cell And/And(And(a,Not(b)),c): green
 -- cell And/And(Or(a,Not(b)),c): green
@@ -131,7 +134,7 @@ ORDER BY
 -- cell And/And(Add(a,NegLit(b)),c): green
 -- cell And/And(Sub(a,NegLit(b)),c): green
 -- cell And/And(Mul(a,NegLit(b)),c): green
--- cell And/And(Div(a,NegLit(b)),c): green
+-- cell And/And(Div(a,NegLit(b)),c): skipped
 -- cell And/And(Mod(a,NegLit(b)),c): green
 -- cell And/And(And(a,NegLit(b)),c): green
 -- cell And/And(Or(a,NegLit(b)),c): green
@@ -141,7 +144,7 @@ ORDER BY
 -- cell And/And(Add(a,NegParam(b)),c): green
 -- cell And/And(Sub(a,NegParam(b)),c): green
 -- cell And/And(Mul(a,NegParam(b)),c): green
--- cell And/And(Div(a,NegParam(b)),c): green
+-- cell And/And(Div(a,NegParam(b)),c): skipped
 -- cell And/And(Mod(a,NegParam(b)),c): green
 -- cell And/And(And(a,NegParam(b)),c): green
 -- cell And/And(Or(a,NegParam(b)),c): green
