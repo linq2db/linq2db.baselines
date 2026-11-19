@@ -358,7 +358,7 @@ ORDER BY
 -- cell Predicate/Lt(c,Div(a,b)): green
 -- cell Predicate/Between(Div(a,b),c,a): green
 -- cell Predicate/Between(a,Div(b,c),a): green
--- cell Predicate/In(Div(a,b)): red
+-- cell Predicate/In(Div(a,b)): green
 -- cell Predicate/IsNull(Div(a,n)): green
 -- cell Predicate/Like(Concat(s,Div(a,b))): green
 -- cell Predicate/NotAnd(Div(a,b)): green
