@@ -30,8 +30,8 @@ ORDER BY
 -- cell Pow/Pow(Mul(b,c),2): green
 -- cell Pow/Pow(c,Mul(b,c)): green
 -- cell Pow/Mul(Pow(b,2),c): green
--- cell Pow/Pow(Div(b,c),2): red
--- cell Pow/Pow(c,Div(b,c)): red
+-- cell Pow/Pow(Div(b,c),2): green
+-- cell Pow/Pow(c,Div(b,c)): green
 -- cell Pow/Div(Pow(b,2),c): green
 -- cell Pow/Pow(Neg(b),2): green
 -- cell Pow/Neg(Pow(b,2)): green
