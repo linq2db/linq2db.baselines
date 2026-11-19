@@ -5,9 +5,7 @@ SELECT
 	`r`.`A` + `r`.`B` | `r`.`C`,
 	`r`.`A` | `r`.`B` + `r`.`C`,
 	`r`.`A` - `r`.`B` | `r`.`C`,
-	`r`.`A` | `r`.`B` - `r`.`C`,
 	`r`.`A` - `r`.`B` | `r`.`C`,
-	`r`.`A` | `r`.`B` - `r`.`C`,
 	`r`.`A` * `r`.`B` | `r`.`C`,
 	`r`.`A` | `r`.`B` * `r`.`C`,
 	`r`.`A` * `r`.`B` | `r`.`C`,
@@ -43,7 +41,6 @@ SELECT
 	`r`.`A` + (~`r`.`B`) | `r`.`C`,
 	`r`.`A` - (~`r`.`B`) | `r`.`C`,
 	`r`.`A` * (~`r`.`B`) | `r`.`C`,
-	`r`.`A` / (~`r`.`B`) | `r`.`C`,
 	`r`.`A` % (~`r`.`B`) | `r`.`C`,
 	`r`.`A` & ~`r`.`B` | `r`.`C`,
 	`r`.`A` | ~`r`.`B` | `r`.`C`,
@@ -53,7 +50,6 @@ SELECT
 	`r`.`A` + -5 | `r`.`C`,
 	`r`.`A` - -5 | `r`.`C`,
 	`r`.`A` * -5 | `r`.`C`,
-	`r`.`A` / -5 | `r`.`C`,
 	`r`.`A` % -5 | `r`.`C`,
 	`r`.`A` & -5 | `r`.`C`,
 	`r`.`A` | -5 | `r`.`C`,
@@ -105,23 +101,7 @@ ORDER BY
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 SELECT
-	`r`.`A` | `r`.`B` - `r`.`C`
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-SELECT
 	`r`.`A` - `r`.`B` | `r`.`C`
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-SELECT
-	`r`.`A` | `r`.`B` - `r`.`C`
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -409,14 +389,6 @@ ORDER BY
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 SELECT
-	`r`.`A` / (~`r`.`B`) | `r`.`C`
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-SELECT
 	`r`.`A` % (~`r`.`B`) | `r`.`C`
 FROM
 	`PrecedenceRow` `r`
@@ -489,14 +461,6 @@ ORDER BY
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 SELECT
-	`r`.`A` / -5 | `r`.`C`
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-SELECT
 	`r`.`A` % -5 | `r`.`C`
 FROM
 	`PrecedenceRow` `r`
@@ -534,7 +498,6 @@ SELECT
 	`r`.`A` + -5 | `r`.`C`,
 	`r`.`A` - -5 | `r`.`C`,
 	`r`.`A` * -5 | `r`.`C`,
-	`r`.`A` / -5 | `r`.`C`,
 	`r`.`A` % -5 | `r`.`C`,
 	`r`.`A` & -5 | `r`.`C`,
 	`r`.`A` | -5 | `r`.`C`,
@@ -586,14 +549,6 @@ ORDER BY
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 SELECT
-	`r`.`A` / -5 | `r`.`C`
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-SELECT
 	`r`.`A` % -5 | `r`.`C`
 FROM
 	`PrecedenceRow` `r`
@@ -629,9 +584,9 @@ ORDER BY
 -- cell Or/Or(AsNotNull(Add(a,b)),c): green
 -- cell Or/Or(a,AsNotNull(Add(b,c))): green
 -- cell Or/Or(Sub(a,b),c): green
--- cell Or/Or(a,Sub(b,c)): green
+-- cell Or/Or(a,Sub(b,c)): skipped
 -- cell Or/Or(AsNotNull(Sub(a,b)),c): green
--- cell Or/Or(a,AsNotNull(Sub(b,c))): green
+-- cell Or/Or(a,AsNotNull(Sub(b,c))): skipped
 -- cell Or/Or(Mul(a,b),c): green
 -- cell Or/Or(a,Mul(b,c)): green
 -- cell Or/Or(AsNotNull(Mul(a,b)),c): green
@@ -671,7 +626,7 @@ ORDER BY
 -- cell Or/Or(Add(a,Not(b)),c): error
 -- cell Or/Or(Sub(a,Not(b)),c): error
 -- cell Or/Or(Mul(a,Not(b)),c): error
--- cell Or/Or(Div(a,Not(b)),c): red
+-- cell Or/Or(Div(a,Not(b)),c): skipped
 -- cell Or/Or(Mod(a,Not(b)),c): red
 -- cell Or/Or(And(a,Not(b)),c): green
 -- cell Or/Or(Or(a,Not(b)),c): error
@@ -681,7 +636,7 @@ ORDER BY
 -- cell Or/Or(Add(a,NegLit(b)),c): green
 -- cell Or/Or(Sub(a,NegLit(b)),c): green
 -- cell Or/Or(Mul(a,NegLit(b)),c): error
--- cell Or/Or(Div(a,NegLit(b)),c): error
+-- cell Or/Or(Div(a,NegLit(b)),c): skipped
 -- cell Or/Or(Mod(a,NegLit(b)),c): green
 -- cell Or/Or(And(a,NegLit(b)),c): green
 -- cell Or/Or(Or(a,NegLit(b)),c): error
@@ -691,7 +646,7 @@ ORDER BY
 -- cell Or/Or(Add(a,NegParam(b)),c): green
 -- cell Or/Or(Sub(a,NegParam(b)),c): green
 -- cell Or/Or(Mul(a,NegParam(b)),c): error
--- cell Or/Or(Div(a,NegParam(b)),c): error
+-- cell Or/Or(Div(a,NegParam(b)),c): skipped
 -- cell Or/Or(Mod(a,NegParam(b)),c): green
 -- cell Or/Or(And(a,NegParam(b)),c): green
 -- cell Or/Or(Or(a,NegParam(b)),c): error
