@@ -12,9 +12,13 @@ SELECT
 	bitAnd(r.A, r.B * r.C),
 	bitAnd(r.A * r.B, r.C),
 	bitAnd(r.A, r.B * r.C),
+	bitAnd(r.A / r.B, r.C),
 	bitAnd(r.A, r.B / r.C),
+	bitAnd(r.A / r.B, r.C),
 	bitAnd(r.A, r.B / r.C),
+	bitAnd(r.A % r.B, r.C),
 	bitAnd(r.A, r.B % r.C),
+	bitAnd(r.A % r.B, r.C),
 	bitAnd(r.A, r.B % r.C),
 	bitAnd(bitOr(r.A, r.B), r.C),
 	bitAnd(r.A, bitOr(r.B, r.C)),
@@ -29,6 +33,8 @@ SELECT
 	bitAnd(r.A + negate(r.B), r.C),
 	bitAnd(r.A - negate(r.B), r.C),
 	bitAnd(r.A * negate(r.B), r.C),
+	bitAnd(r.A / negate(r.B), r.C),
+	bitAnd(r.A % negate(r.B), r.C),
 	bitAnd(bitAnd(r.A, negate(r.B)), r.C),
 	bitAnd(bitOr(r.A, negate(r.B)), r.C),
 	bitAnd(bitXor(r.A, negate(r.B)), r.C),
@@ -37,7 +43,6 @@ SELECT
 	bitAnd(r.A + bitNot(r.B), r.C),
 	bitAnd(r.A - bitNot(r.B), r.C),
 	bitAnd(r.A * bitNot(r.B), r.C),
-	bitAnd(r.A / bitNot(r.B), r.C),
 	bitAnd(r.A % bitNot(r.B), r.C),
 	bitAnd(bitAnd(r.A, bitNot(r.B)), r.C),
 	bitAnd(bitOr(r.A, bitNot(r.B)), r.C),
@@ -47,7 +52,6 @@ SELECT
 	bitAnd(r.A + -5, r.C),
 	bitAnd(r.A - -5, r.C),
 	bitAnd(r.A * -5, r.C),
-	bitAnd(r.A / -5, r.C),
 	bitAnd(r.A % -5, r.C),
 	bitAnd(bitAnd(r.A, -5), r.C),
 	bitAnd(bitOr(r.A, -5), r.C),
@@ -155,7 +159,7 @@ ORDER BY
 
 -- ClickHouse.MySql ClickHouse
 SELECT
-	bitAnd(r.A, r.B / r.C)
+	bitAnd(r.A / r.B, r.C)
 FROM
 	PrecedenceRow r
 ORDER BY
@@ -164,6 +168,30 @@ ORDER BY
 -- ClickHouse.MySql ClickHouse
 SELECT
 	bitAnd(r.A, r.B / r.C)
+FROM
+	PrecedenceRow r
+ORDER BY
+	r.Id
+
+-- ClickHouse.MySql ClickHouse
+SELECT
+	bitAnd(r.A / r.B, r.C)
+FROM
+	PrecedenceRow r
+ORDER BY
+	r.Id
+
+-- ClickHouse.MySql ClickHouse
+SELECT
+	bitAnd(r.A, r.B / r.C)
+FROM
+	PrecedenceRow r
+ORDER BY
+	r.Id
+
+-- ClickHouse.MySql ClickHouse
+SELECT
+	bitAnd(r.A % r.B, r.C)
 FROM
 	PrecedenceRow r
 ORDER BY
@@ -172,6 +200,14 @@ ORDER BY
 -- ClickHouse.MySql ClickHouse
 SELECT
 	bitAnd(r.A, r.B % r.C)
+FROM
+	PrecedenceRow r
+ORDER BY
+	r.Id
+
+-- ClickHouse.MySql ClickHouse
+SELECT
+	bitAnd(r.A % r.B, r.C)
 FROM
 	PrecedenceRow r
 ORDER BY
@@ -291,6 +327,22 @@ ORDER BY
 
 -- ClickHouse.MySql ClickHouse
 SELECT
+	bitAnd(r.A / negate(r.B), r.C)
+FROM
+	PrecedenceRow r
+ORDER BY
+	r.Id
+
+-- ClickHouse.MySql ClickHouse
+SELECT
+	bitAnd(r.A % negate(r.B), r.C)
+FROM
+	PrecedenceRow r
+ORDER BY
+	r.Id
+
+-- ClickHouse.MySql ClickHouse
+SELECT
 	bitAnd(bitAnd(r.A, negate(r.B)), r.C)
 FROM
 	PrecedenceRow r
@@ -348,14 +400,6 @@ ORDER BY
 -- ClickHouse.MySql ClickHouse
 SELECT
 	bitAnd(r.A * bitNot(r.B), r.C)
-FROM
-	PrecedenceRow r
-ORDER BY
-	r.Id
-
--- ClickHouse.MySql ClickHouse
-SELECT
-	bitAnd(r.A / bitNot(r.B), r.C)
 FROM
 	PrecedenceRow r
 ORDER BY
@@ -435,14 +479,6 @@ ORDER BY
 
 -- ClickHouse.MySql ClickHouse
 SELECT
-	bitAnd(r.A / -5, r.C)
-FROM
-	PrecedenceRow r
-ORDER BY
-	r.Id
-
--- ClickHouse.MySql ClickHouse
-SELECT
 	bitAnd(r.A % -5, r.C)
 FROM
 	PrecedenceRow r
@@ -480,90 +516,9 @@ SELECT
 	bitAnd(r.A + -5, r.C),
 	bitAnd(r.A - -5, r.C),
 	bitAnd(r.A * -5, r.C),
-	bitAnd(r.A / -5, r.C),
 	bitAnd(r.A % -5, r.C),
 	bitAnd(bitAnd(r.A, -5), r.C),
 	bitAnd(bitOr(r.A, -5), r.C),
-	bitAnd(bitXor(r.A, -5), r.C)
-FROM
-	PrecedenceRow r
-ORDER BY
-	r.Id
-
--- ClickHouse.MySql ClickHouse
-SELECT
-	bitAnd(r.A, -5)
-FROM
-	PrecedenceRow r
-ORDER BY
-	r.Id
-
--- ClickHouse.MySql ClickHouse
-SELECT
-	bitAnd(-5, r.C)
-FROM
-	PrecedenceRow r
-ORDER BY
-	r.Id
-
--- ClickHouse.MySql ClickHouse
-SELECT
-	bitAnd(r.A + -5, r.C)
-FROM
-	PrecedenceRow r
-ORDER BY
-	r.Id
-
--- ClickHouse.MySql ClickHouse
-SELECT
-	bitAnd(r.A - -5, r.C)
-FROM
-	PrecedenceRow r
-ORDER BY
-	r.Id
-
--- ClickHouse.MySql ClickHouse
-SELECT
-	bitAnd(r.A * -5, r.C)
-FROM
-	PrecedenceRow r
-ORDER BY
-	r.Id
-
--- ClickHouse.MySql ClickHouse
-SELECT
-	bitAnd(r.A / -5, r.C)
-FROM
-	PrecedenceRow r
-ORDER BY
-	r.Id
-
--- ClickHouse.MySql ClickHouse
-SELECT
-	bitAnd(r.A % -5, r.C)
-FROM
-	PrecedenceRow r
-ORDER BY
-	r.Id
-
--- ClickHouse.MySql ClickHouse
-SELECT
-	bitAnd(bitAnd(r.A, -5), r.C)
-FROM
-	PrecedenceRow r
-ORDER BY
-	r.Id
-
--- ClickHouse.MySql ClickHouse
-SELECT
-	bitAnd(bitOr(r.A, -5), r.C)
-FROM
-	PrecedenceRow r
-ORDER BY
-	r.Id
-
--- ClickHouse.MySql ClickHouse
-SELECT
 	bitAnd(bitXor(r.A, -5), r.C)
 FROM
 	PrecedenceRow r
@@ -582,13 +537,13 @@ ORDER BY
 -- cell And/And(a,Mul(b,c)): green
 -- cell And/And(AsNotNull(Mul(a,b)),c): green
 -- cell And/And(a,AsNotNull(Mul(b,c))): green
--- cell And/And(Div(a,b),c): skipped
+-- cell And/And(Div(a,b),c): error
 -- cell And/And(a,Div(b,c)): error
--- cell And/And(AsNotNull(Div(a,b)),c): skipped
+-- cell And/And(AsNotNull(Div(a,b)),c): error
 -- cell And/And(a,AsNotNull(Div(b,c))): error
--- cell And/And(Mod(a,b),c): skipped
+-- cell And/And(Mod(a,b),c): green
 -- cell And/And(a,Mod(b,c)): green
--- cell And/And(AsNotNull(Mod(a,b)),c): skipped
+-- cell And/And(AsNotNull(Mod(a,b)),c): green
 -- cell And/And(a,AsNotNull(Mod(b,c))): green
 -- cell And/And(And(a,b),c): skipped
 -- cell And/And(a,And(b,c)): skipped
@@ -607,8 +562,8 @@ ORDER BY
 -- cell And/And(Add(a,Neg(b)),c): green
 -- cell And/And(Sub(a,Neg(b)),c): green
 -- cell And/And(Mul(a,Neg(b)),c): green
--- cell And/And(Div(a,Neg(b)),c): skipped
--- cell And/And(Mod(a,Neg(b)),c): skipped
+-- cell And/And(Div(a,Neg(b)),c): error
+-- cell And/And(Mod(a,Neg(b)),c): green
 -- cell And/And(And(a,Neg(b)),c): green
 -- cell And/And(Or(a,Neg(b)),c): green
 -- cell And/And(Xor(a,Neg(b)),c): green
@@ -617,7 +572,7 @@ ORDER BY
 -- cell And/And(Add(a,Not(b)),c): green
 -- cell And/And(Sub(a,Not(b)),c): green
 -- cell And/And(Mul(a,Not(b)),c): green
--- cell And/And(Div(a,Not(b)),c): error
+-- cell And/And(Div(a,Not(b)),c): skipped
 -- cell And/And(Mod(a,Not(b)),c): green
 -- cell And/And(And(a,Not(b)),c): green
 -- cell And/And(Or(a,Not(b)),c): green
@@ -627,7 +582,7 @@ ORDER BY
 -- cell And/And(Add(a,NegLit(b)),c): green
 -- cell And/And(Sub(a,NegLit(b)),c): green
 -- cell And/And(Mul(a,NegLit(b)),c): green
--- cell And/And(Div(a,NegLit(b)),c): error
+-- cell And/And(Div(a,NegLit(b)),c): skipped
 -- cell And/And(Mod(a,NegLit(b)),c): green
 -- cell And/And(And(a,NegLit(b)),c): green
 -- cell And/And(Or(a,NegLit(b)),c): green
@@ -637,7 +592,7 @@ ORDER BY
 -- cell And/And(Add(a,NegParam(b)),c): green
 -- cell And/And(Sub(a,NegParam(b)),c): green
 -- cell And/And(Mul(a,NegParam(b)),c): green
--- cell And/And(Div(a,NegParam(b)),c): error
+-- cell And/And(Div(a,NegParam(b)),c): skipped
 -- cell And/And(Mod(a,NegParam(b)),c): green
 -- cell And/And(And(a,NegParam(b)),c): green
 -- cell And/And(Or(a,NegParam(b)),c): green
