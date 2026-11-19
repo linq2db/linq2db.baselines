@@ -5,9 +5,7 @@ SELECT
 	BitOr(r.A + r.B, r.C),
 	BitOr(r.A, r.B + r.C),
 	BitOr(r.A - r.B, r.C),
-	BitOr(r.A, r.B - r.C),
 	BitOr(r.A - r.B, r.C),
-	BitOr(r.A, r.B - r.C),
 	BitOr(r.A * r.B, r.C),
 	BitOr(r.A, r.B * r.C),
 	BitOr(r.A * r.B, r.C),
@@ -43,7 +41,6 @@ SELECT
 	BitOr(r.A + BITNOT(r.B), r.C),
 	BitOr(r.A - BITNOT(r.B), r.C),
 	BitOr(r.A * BITNOT(r.B), r.C),
-	BitOr(r.A / BITNOT(r.B), r.C),
 	BitOr(Mod(r.A, BITNOT(r.B)), r.C),
 	BitOr(BitAnd(r.A, BITNOT(r.B)), r.C),
 	BitOr(BitOr(r.A, BITNOT(r.B)), r.C),
@@ -53,7 +50,6 @@ SELECT
 	BitOr(r.A + -5, r.C),
 	BitOr(r.A - -5, r.C),
 	BitOr(r.A * -5, r.C),
-	BitOr(r.A / -5, r.C),
 	BitOr(Mod(r.A, -5), r.C),
 	BitOr(BitAnd(r.A, -5), r.C),
 	BitOr(BitOr(r.A, -5), r.C),
@@ -70,7 +66,6 @@ SELECT
 	BitOr(r.A + -5, r.C),
 	BitOr(r.A - -5, r.C),
 	BitOr(r.A * -5, r.C),
-	BitOr(r.A / -5, r.C),
 	BitOr(Mod(r.A, -5), r.C),
 	BitOr(BitAnd(r.A, -5), r.C),
 	BitOr(BitOr(r.A, -5), r.C),
@@ -85,9 +80,9 @@ ORDER BY
 -- cell Or/Or(AsNotNull(Add(a,b)),c): green
 -- cell Or/Or(a,AsNotNull(Add(b,c))): green
 -- cell Or/Or(Sub(a,b),c): green
--- cell Or/Or(a,Sub(b,c)): green
+-- cell Or/Or(a,Sub(b,c)): skipped
 -- cell Or/Or(AsNotNull(Sub(a,b)),c): green
--- cell Or/Or(a,AsNotNull(Sub(b,c))): green
+-- cell Or/Or(a,AsNotNull(Sub(b,c))): skipped
 -- cell Or/Or(Mul(a,b),c): green
 -- cell Or/Or(a,Mul(b,c)): green
 -- cell Or/Or(AsNotNull(Mul(a,b)),c): green
@@ -127,7 +122,7 @@ ORDER BY
 -- cell Or/Or(Add(a,Not(b)),c): green
 -- cell Or/Or(Sub(a,Not(b)),c): green
 -- cell Or/Or(Mul(a,Not(b)),c): green
--- cell Or/Or(Div(a,Not(b)),c): green
+-- cell Or/Or(Div(a,Not(b)),c): skipped
 -- cell Or/Or(Mod(a,Not(b)),c): green
 -- cell Or/Or(And(a,Not(b)),c): green
 -- cell Or/Or(Or(a,Not(b)),c): green
@@ -137,7 +132,7 @@ ORDER BY
 -- cell Or/Or(Add(a,NegLit(b)),c): green
 -- cell Or/Or(Sub(a,NegLit(b)),c): green
 -- cell Or/Or(Mul(a,NegLit(b)),c): green
--- cell Or/Or(Div(a,NegLit(b)),c): green
+-- cell Or/Or(Div(a,NegLit(b)),c): skipped
 -- cell Or/Or(Mod(a,NegLit(b)),c): green
 -- cell Or/Or(And(a,NegLit(b)),c): green
 -- cell Or/Or(Or(a,NegLit(b)),c): green
@@ -147,7 +142,7 @@ ORDER BY
 -- cell Or/Or(Add(a,NegParam(b)),c): green
 -- cell Or/Or(Sub(a,NegParam(b)),c): green
 -- cell Or/Or(Mul(a,NegParam(b)),c): green
--- cell Or/Or(Div(a,NegParam(b)),c): green
+-- cell Or/Or(Div(a,NegParam(b)),c): skipped
 -- cell Or/Or(Mod(a,NegParam(b)),c): green
 -- cell Or/Or(And(a,NegParam(b)),c): green
 -- cell Or/Or(Or(a,NegParam(b)),c): green
