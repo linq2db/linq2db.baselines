@@ -1,0 +1,16 @@
+﻿-- DB2 DB2.LUW DB2LUW
+SELECT
+	"p"."ParentID",
+	"x".X
+FROM
+	"Parent" "p"
+		LEFT JOIN (
+			SELECT
+				CAST(1 AS Int) as X
+			FROM SYSIBM.SYSDUMMY1
+			UNION ALL
+			SELECT
+				CAST(2 AS Int) as X
+			FROM SYSIBM.SYSDUMMY1
+		) "x" ON 1=1
+
