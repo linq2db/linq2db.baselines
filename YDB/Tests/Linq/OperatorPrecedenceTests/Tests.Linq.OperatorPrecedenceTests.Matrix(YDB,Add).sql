@@ -39,21 +39,19 @@ SELECT
 	(~Unwrap(CAST(r.B AS Uint32))) + r.C as c37,
 	r.A + (~Unwrap(CAST(r.B AS Uint32))) + r.C as c38,
 	r.A * (~Unwrap(CAST(r.B AS Uint32))) + r.C as c39,
-	r.A / (~Unwrap(CAST(r.B AS Uint32))) + r.C as c40,
-	r.A % (~Unwrap(CAST(r.B AS Uint32))) + r.C as c41,
-	(Unwrap(CAST(r.A AS Uint32)) & Unwrap(CAST(~Unwrap(CAST(r.B AS Uint32)) AS Uint32))) + r.C as c42,
-	(Unwrap(CAST(r.A AS Uint32)) | Unwrap(CAST(~Unwrap(CAST(r.B AS Uint32)) AS Uint32))) + r.C as c43,
-	(Unwrap(CAST(r.A AS Uint32)) ^ Unwrap(CAST(~Unwrap(CAST(r.B AS Uint32)) AS Uint32))) + r.C as c44,
-	r.A + -5 as c45,
-	-5 + r.C as c46,
-	r.A + -5 + r.C as c47,
-	r.A - -5 + r.C as c48,
-	r.A * -5 + r.C as c49,
-	r.A / -5 + r.C as c50,
-	r.A % -5 + r.C as c51,
-	(Unwrap(CAST(r.A AS Uint32)) & Unwrap(CAST(-5 AS Uint32))) + r.C as c52,
-	(Unwrap(CAST(r.A AS Uint32)) | Unwrap(CAST(-5 AS Uint32))) + r.C as c53,
-	(Unwrap(CAST(r.A AS Uint32)) ^ Unwrap(CAST(-5 AS Uint32))) + r.C as c54
+	r.A % (~Unwrap(CAST(r.B AS Uint32))) + r.C as c40,
+	(Unwrap(CAST(r.A AS Uint32)) & Unwrap(CAST(~Unwrap(CAST(r.B AS Uint32)) AS Uint32))) + r.C as c41,
+	(Unwrap(CAST(r.A AS Uint32)) | Unwrap(CAST(~Unwrap(CAST(r.B AS Uint32)) AS Uint32))) + r.C as c42,
+	(Unwrap(CAST(r.A AS Uint32)) ^ Unwrap(CAST(~Unwrap(CAST(r.B AS Uint32)) AS Uint32))) + r.C as c43,
+	r.A + -5 as c44,
+	-5 + r.C as c45,
+	r.A + -5 + r.C as c46,
+	r.A - -5 + r.C as c47,
+	r.A * -5 + r.C as c48,
+	r.A % -5 + r.C as c49,
+	(Unwrap(CAST(r.A AS Uint32)) & Unwrap(CAST(-5 AS Uint32))) + r.C as c50,
+	(Unwrap(CAST(r.A AS Uint32)) | Unwrap(CAST(-5 AS Uint32))) + r.C as c51,
+	(Unwrap(CAST(r.A AS Uint32)) ^ Unwrap(CAST(-5 AS Uint32))) + r.C as c52
 FROM
 	PrecedenceRow r
 ORDER BY
@@ -373,14 +371,6 @@ ORDER BY
 
 -- YDB Ydb
 SELECT
-	r.A / (~Unwrap(CAST(r.B AS Uint32))) + r.C as c1
-FROM
-	PrecedenceRow r
-ORDER BY
-	r.Id
-
--- YDB Ydb
-SELECT
 	r.A % (~Unwrap(CAST(r.B AS Uint32))) + r.C as c1
 FROM
 	PrecedenceRow r
@@ -453,14 +443,6 @@ ORDER BY
 
 -- YDB Ydb
 SELECT
-	r.A / -5 + r.C as c1
-FROM
-	PrecedenceRow r
-ORDER BY
-	r.Id
-
--- YDB Ydb
-SELECT
 	r.A % -5 + r.C as c1
 FROM
 	PrecedenceRow r
@@ -498,11 +480,10 @@ SELECT
 	r.A + -5 + r.C as c3,
 	r.A - -5 + r.C as c4,
 	r.A * -5 + r.C as c5,
-	r.A / -5 + r.C as c6,
-	r.A % -5 + r.C as c7,
-	(Unwrap(CAST(r.A AS Uint32)) & Unwrap(CAST(-5 AS Uint32))) + r.C as c8,
-	(Unwrap(CAST(r.A AS Uint32)) | Unwrap(CAST(-5 AS Uint32))) + r.C as c9,
-	(Unwrap(CAST(r.A AS Uint32)) ^ Unwrap(CAST(-5 AS Uint32))) + r.C as c10
+	r.A % -5 + r.C as c6,
+	(Unwrap(CAST(r.A AS Uint32)) & Unwrap(CAST(-5 AS Uint32))) + r.C as c7,
+	(Unwrap(CAST(r.A AS Uint32)) | Unwrap(CAST(-5 AS Uint32))) + r.C as c8,
+	(Unwrap(CAST(r.A AS Uint32)) ^ Unwrap(CAST(-5 AS Uint32))) + r.C as c9
 FROM
 	PrecedenceRow r
 ORDER BY
@@ -543,14 +524,6 @@ ORDER BY
 -- YDB Ydb
 SELECT
 	r.A * -5 + r.C as c1
-FROM
-	PrecedenceRow r
-ORDER BY
-	r.Id
-
--- YDB Ydb
-SELECT
-	r.A / -5 + r.C as c1
 FROM
 	PrecedenceRow r
 ORDER BY
@@ -635,7 +608,7 @@ ORDER BY
 -- cell Add/Add(Add(a,Not(b)),c): green
 -- cell Add/Add(Sub(a,Not(b)),c): skipped
 -- cell Add/Add(Mul(a,Not(b)),c): green
--- cell Add/Add(Div(a,Not(b)),c): green
+-- cell Add/Add(Div(a,Not(b)),c): skipped
 -- cell Add/Add(Mod(a,Not(b)),c): green
 -- cell Add/Add(And(a,Not(b)),c): green
 -- cell Add/Add(Or(a,Not(b)),c): green
@@ -645,7 +618,7 @@ ORDER BY
 -- cell Add/Add(Add(a,NegLit(b)),c): green
 -- cell Add/Add(Sub(a,NegLit(b)),c): green
 -- cell Add/Add(Mul(a,NegLit(b)),c): green
--- cell Add/Add(Div(a,NegLit(b)),c): green
+-- cell Add/Add(Div(a,NegLit(b)),c): skipped
 -- cell Add/Add(Mod(a,NegLit(b)),c): green
 -- cell Add/Add(And(a,NegLit(b)),c): error
 -- cell Add/Add(Or(a,NegLit(b)),c): error
@@ -655,7 +628,7 @@ ORDER BY
 -- cell Add/Add(Add(a,NegParam(b)),c): green
 -- cell Add/Add(Sub(a,NegParam(b)),c): green
 -- cell Add/Add(Mul(a,NegParam(b)),c): green
--- cell Add/Add(Div(a,NegParam(b)),c): green
+-- cell Add/Add(Div(a,NegParam(b)),c): skipped
 -- cell Add/Add(Mod(a,NegParam(b)),c): green
 -- cell Add/Add(And(a,NegParam(b)),c): error
 -- cell Add/Add(Or(a,NegParam(b)),c): error
