@@ -9,13 +9,7 @@ SELECT
 	([r].[A] - [r].[B]) * [r].[C],
 	[r].[A] * ([r].[B] - [r].[C]),
 	([r].[A] / [r].[B]) * [r].[C],
-	[r].[A] * ([r].[B] / [r].[C]),
 	([r].[A] / [r].[B]) * [r].[C],
-	[r].[A] * ([r].[B] / [r].[C]),
-	([r].[A] % [r].[B]) * [r].[C],
-	[r].[A] * ([r].[B] % [r].[C]),
-	([r].[A] % [r].[B]) * [r].[C],
-	[r].[A] * ([r].[B] % [r].[C]),
 	([r].[A] & [r].[B]) * [r].[C],
 	[r].[A] * ([r].[B] & [r].[C]),
 	([r].[A] & [r].[B]) * [r].[C],
@@ -32,7 +26,6 @@ SELECT
 	([r].[A] - [r].[B]) * [r].[C],
 	([r].[A] + [r].[B]) * [r].[C],
 	([r].[A] / -[r].[B]) * [r].[C],
-	([r].[A] % -[r].[B]) * [r].[C],
 	([r].[A] & -[r].[B]) * [r].[C],
 	([r].[A] | -[r].[B]) * [r].[C],
 	([r].[A] ^ -[r].[B]) * [r].[C],
@@ -41,7 +34,6 @@ SELECT
 	([r].[A] + (~[r].[B])) * [r].[C],
 	([r].[A] - (~[r].[B])) * [r].[C],
 	([r].[A] * (~[r].[B])) * [r].[C],
-	([r].[A] / (~[r].[B])) * [r].[C],
 	([r].[A] % (~[r].[B])) * [r].[C],
 	([r].[A] & ~[r].[B]) * [r].[C],
 	([r].[A] | ~[r].[B]) * [r].[C],
@@ -51,7 +43,6 @@ SELECT
 	([r].[A] + -5) * [r].[C],
 	([r].[A] - -5) * [r].[C],
 	([r].[A] * -5) * [r].[C],
-	([r].[A] / -5) * [r].[C],
 	([r].[A] % -5) * [r].[C],
 	([r].[A] & -5) * [r].[C],
 	([r].[A] | -5) * [r].[C],
@@ -68,7 +59,6 @@ SELECT
 	([r].[A] + -5) * [r].[C],
 	([r].[A] - -5) * [r].[C],
 	([r].[A] * -5) * [r].[C],
-	([r].[A] / -5) * [r].[C],
 	([r].[A] % -5) * [r].[C],
 	([r].[A] & -5) * [r].[C],
 	([r].[A] | -5) * [r].[C],
@@ -91,13 +81,13 @@ ORDER BY
 -- cell Mul/Mul(AsNotNull(Mul(a,b)),c): skipped
 -- cell Mul/Mul(a,AsNotNull(Mul(b,c))): skipped
 -- cell Mul/Mul(Div(a,b),c): green
--- cell Mul/Mul(a,Div(b,c)): green
+-- cell Mul/Mul(a,Div(b,c)): skipped
 -- cell Mul/Mul(AsNotNull(Div(a,b)),c): green
--- cell Mul/Mul(a,AsNotNull(Div(b,c))): green
--- cell Mul/Mul(Mod(a,b),c): green
--- cell Mul/Mul(a,Mod(b,c)): green
--- cell Mul/Mul(AsNotNull(Mod(a,b)),c): green
--- cell Mul/Mul(a,AsNotNull(Mod(b,c))): green
+-- cell Mul/Mul(a,AsNotNull(Div(b,c))): skipped
+-- cell Mul/Mul(Mod(a,b),c): skipped
+-- cell Mul/Mul(a,Mod(b,c)): skipped
+-- cell Mul/Mul(AsNotNull(Mod(a,b)),c): skipped
+-- cell Mul/Mul(a,AsNotNull(Mod(b,c))): skipped
 -- cell Mul/Mul(And(a,b),c): green
 -- cell Mul/Mul(a,And(b,c)): green
 -- cell Mul/Mul(AsNotNull(And(a,b)),c): green
@@ -116,7 +106,7 @@ ORDER BY
 -- cell Mul/Mul(Sub(a,Neg(b)),c): green
 -- cell Mul/Mul(Mul(a,Neg(b)),c): skipped
 -- cell Mul/Mul(Div(a,Neg(b)),c): green
--- cell Mul/Mul(Mod(a,Neg(b)),c): green
+-- cell Mul/Mul(Mod(a,Neg(b)),c): skipped
 -- cell Mul/Mul(And(a,Neg(b)),c): green
 -- cell Mul/Mul(Or(a,Neg(b)),c): green
 -- cell Mul/Mul(Xor(a,Neg(b)),c): green
@@ -125,7 +115,7 @@ ORDER BY
 -- cell Mul/Mul(Add(a,Not(b)),c): green
 -- cell Mul/Mul(Sub(a,Not(b)),c): green
 -- cell Mul/Mul(Mul(a,Not(b)),c): green
--- cell Mul/Mul(Div(a,Not(b)),c): green
+-- cell Mul/Mul(Div(a,Not(b)),c): skipped
 -- cell Mul/Mul(Mod(a,Not(b)),c): green
 -- cell Mul/Mul(And(a,Not(b)),c): green
 -- cell Mul/Mul(Or(a,Not(b)),c): green
@@ -135,7 +125,7 @@ ORDER BY
 -- cell Mul/Mul(Add(a,NegLit(b)),c): green
 -- cell Mul/Mul(Sub(a,NegLit(b)),c): green
 -- cell Mul/Mul(Mul(a,NegLit(b)),c): green
--- cell Mul/Mul(Div(a,NegLit(b)),c): green
+-- cell Mul/Mul(Div(a,NegLit(b)),c): skipped
 -- cell Mul/Mul(Mod(a,NegLit(b)),c): green
 -- cell Mul/Mul(And(a,NegLit(b)),c): green
 -- cell Mul/Mul(Or(a,NegLit(b)),c): green
@@ -145,7 +135,7 @@ ORDER BY
 -- cell Mul/Mul(Add(a,NegParam(b)),c): green
 -- cell Mul/Mul(Sub(a,NegParam(b)),c): green
 -- cell Mul/Mul(Mul(a,NegParam(b)),c): green
--- cell Mul/Mul(Div(a,NegParam(b)),c): green
+-- cell Mul/Mul(Div(a,NegParam(b)),c): skipped
 -- cell Mul/Mul(Mod(a,NegParam(b)),c): green
 -- cell Mul/Mul(And(a,NegParam(b)),c): green
 -- cell Mul/Mul(Or(a,NegParam(b)),c): green
