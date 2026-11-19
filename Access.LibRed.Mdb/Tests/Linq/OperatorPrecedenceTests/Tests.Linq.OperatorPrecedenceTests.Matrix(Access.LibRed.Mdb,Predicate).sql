@@ -347,7 +347,7 @@ ORDER BY
 -- cell Predicate/Eq(Add(a,b),c): green
 -- cell Predicate/Lt(c,Add(a,b)): green
 -- cell Predicate/Between(Add(a,b),c,a): green
--- cell Predicate/Between(a,Add(b,c),a): red
+-- cell Predicate/Between(a,Add(b,c),a): green
 -- cell Predicate/In(Add(a,b)): green
 -- cell Predicate/IsNull(Add(a,n)): green
 -- cell Predicate/Like(Concat(s,Add(a,b))): green
@@ -363,7 +363,7 @@ ORDER BY
 -- cell Predicate/Eq(Mul(a,b),c): green
 -- cell Predicate/Lt(c,Mul(a,b)): green
 -- cell Predicate/Between(Mul(a,b),c,a): green
--- cell Predicate/Between(a,Mul(b,c),a): red
+-- cell Predicate/Between(a,Mul(b,c),a): green
 -- cell Predicate/In(Mul(a,b)): green
 -- cell Predicate/IsNull(Mul(a,n)): green
 -- cell Predicate/Like(Concat(s,Mul(a,b))): green
@@ -372,7 +372,7 @@ ORDER BY
 -- cell Predicate/Lt(c,Div(a,b)): green
 -- cell Predicate/Between(Div(a,b),c,a): green
 -- cell Predicate/Between(a,Div(b,c),a): green
--- cell Predicate/In(Div(a,b)): red
+-- cell Predicate/In(Div(a,b)): green
 -- cell Predicate/IsNull(Div(a,n)): green
 -- cell Predicate/Like(Concat(s,Div(a,b))): green
 -- cell Predicate/NotAnd(Div(a,b)): green
