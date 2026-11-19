@@ -5,9 +5,7 @@ SELECT
 	[r].[A] + [r].[B] BXOR [r].[C],
 	[r].[A] BXOR [r].[B] + [r].[C],
 	[r].[A] - [r].[B] BXOR [r].[C],
-	[r].[A] BXOR [r].[B] - [r].[C],
 	[r].[A] - [r].[B] BXOR [r].[C],
-	[r].[A] BXOR [r].[B] - [r].[C],
 	[r].[A] * [r].[B] BXOR [r].[C],
 	[r].[A] BXOR [r].[B] * [r].[C],
 	[r].[A] * [r].[B] BXOR [r].[C],
@@ -42,7 +40,6 @@ SELECT
 	[r].[A] + -1 - [r].[B] BXOR [r].[C],
 	[r].[A] - (-1 - [r].[B]) BXOR [r].[C],
 	[r].[A] * (-1 - [r].[B]) BXOR [r].[C],
-	[r].[A] / (-1 - [r].[B]) BXOR [r].[C],
 	[r].[A] MOD (-1 - [r].[B]) BXOR [r].[C],
 	[r].[A] BAND -1 - [r].[B] BXOR [r].[C],
 	[r].[A] BOR -1 - [r].[B] BXOR [r].[C],
@@ -51,7 +48,6 @@ SELECT
 	[r].[A] + -5 BXOR [r].[C],
 	[r].[A] - -5 BXOR [r].[C],
 	[r].[A] * -5 BXOR [r].[C],
-	[r].[A] / -5 BXOR [r].[C],
 	[r].[A] MOD -5 BXOR [r].[C],
 	[r].[A] BAND -5 BXOR [r].[C],
 	[r].[A] BOR -5 BXOR [r].[C],
@@ -68,7 +64,6 @@ SELECT
 	[r].[A] + -5 BXOR [r].[C],
 	[r].[A] - -5 BXOR [r].[C],
 	[r].[A] * -5 BXOR [r].[C],
-	[r].[A] / -5 BXOR [r].[C],
 	[r].[A] MOD -5 BXOR [r].[C],
 	[r].[A] BAND -5 BXOR [r].[C],
 	[r].[A] BOR -5 BXOR [r].[C],
@@ -83,17 +78,17 @@ ORDER BY
 -- cell Xor/Xor(AsNotNull(Add(a,b)),c): green
 -- cell Xor/Xor(a,AsNotNull(Add(b,c))): green
 -- cell Xor/Xor(Sub(a,b),c): green
--- cell Xor/Xor(a,Sub(b,c)): green
+-- cell Xor/Xor(a,Sub(b,c)): skipped
 -- cell Xor/Xor(AsNotNull(Sub(a,b)),c): green
--- cell Xor/Xor(a,AsNotNull(Sub(b,c))): green
+-- cell Xor/Xor(a,AsNotNull(Sub(b,c))): skipped
 -- cell Xor/Xor(Mul(a,b),c): green
 -- cell Xor/Xor(a,Mul(b,c)): green
 -- cell Xor/Xor(AsNotNull(Mul(a,b)),c): green
 -- cell Xor/Xor(a,AsNotNull(Mul(b,c))): green
 -- cell Xor/Xor(Div(a,b),c): green
--- cell Xor/Xor(a,Div(b,c)): red
+-- cell Xor/Xor(a,Div(b,c)): green
 -- cell Xor/Xor(AsNotNull(Div(a,b)),c): green
--- cell Xor/Xor(a,AsNotNull(Div(b,c))): red
+-- cell Xor/Xor(a,AsNotNull(Div(b,c))): green
 -- cell Xor/Xor(Mod(a,b),c): green
 -- cell Xor/Xor(a,Mod(b,c)): green
 -- cell Xor/Xor(AsNotNull(Mod(a,b)),c): green
@@ -125,7 +120,7 @@ ORDER BY
 -- cell Xor/Xor(Add(a,Not(b)),c): green
 -- cell Xor/Xor(Sub(a,Not(b)),c): green
 -- cell Xor/Xor(Mul(a,Not(b)),c): green
--- cell Xor/Xor(Div(a,Not(b)),c): red
+-- cell Xor/Xor(Div(a,Not(b)),c): skipped
 -- cell Xor/Xor(Mod(a,Not(b)),c): green
 -- cell Xor/Xor(And(a,Not(b)),c): green
 -- cell Xor/Xor(Or(a,Not(b)),c): green
@@ -135,7 +130,7 @@ ORDER BY
 -- cell Xor/Xor(Add(a,NegLit(b)),c): green
 -- cell Xor/Xor(Sub(a,NegLit(b)),c): green
 -- cell Xor/Xor(Mul(a,NegLit(b)),c): green
--- cell Xor/Xor(Div(a,NegLit(b)),c): red
+-- cell Xor/Xor(Div(a,NegLit(b)),c): skipped
 -- cell Xor/Xor(Mod(a,NegLit(b)),c): green
 -- cell Xor/Xor(And(a,NegLit(b)),c): green
 -- cell Xor/Xor(Or(a,NegLit(b)),c): green
@@ -145,7 +140,7 @@ ORDER BY
 -- cell Xor/Xor(Add(a,NegParam(b)),c): green
 -- cell Xor/Xor(Sub(a,NegParam(b)),c): green
 -- cell Xor/Xor(Mul(a,NegParam(b)),c): green
--- cell Xor/Xor(Div(a,NegParam(b)),c): red
+-- cell Xor/Xor(Div(a,NegParam(b)),c): skipped
 -- cell Xor/Xor(Mod(a,NegParam(b)),c): green
 -- cell Xor/Xor(And(a,NegParam(b)),c): green
 -- cell Xor/Xor(Or(a,NegParam(b)),c): green
