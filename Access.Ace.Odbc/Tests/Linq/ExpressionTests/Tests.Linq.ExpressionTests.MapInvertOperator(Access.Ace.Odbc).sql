@@ -7,7 +7,7 @@ SET     @removeMask = 12
 UPDATE
 	[WarehouseTableDto] [t1]
 SET
-	[t1].[Value] = ([t1].[Value] BOR ?) BAND -1 - ?
+	[t1].[Value] = ([t1].[Value] BOR ?) BAND (-1 - ?)
 
 -- Access.Ace.Odbc AccessODBC
 SELECT TOP 2

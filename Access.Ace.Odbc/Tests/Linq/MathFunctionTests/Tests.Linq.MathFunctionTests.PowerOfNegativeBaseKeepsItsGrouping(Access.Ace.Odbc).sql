@@ -1,6 +1,6 @@
 ﻿-- Access.Ace.Odbc AccessODBC
 SELECT
-	-2 ^ ([p].[ID] MOD 3 + 1)
+	(-2) ^ ([p].[ID] MOD 3 + 1)
 FROM
 	[LinqDataTypes] [p]
 ORDER BY
