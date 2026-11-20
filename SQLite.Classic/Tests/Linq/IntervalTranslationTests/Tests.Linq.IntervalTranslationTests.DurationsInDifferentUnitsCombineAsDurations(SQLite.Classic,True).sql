@@ -37,7 +37,7 @@ SELECT
 	CAST(CAST([r].[InSeconds] * 10000000 + [r].[InTicks] AS INTEGER) + [r].[InSeconds] * 10000000 AS INTEGER),
 	CAST(CAST(-[r].[InSeconds] AS INTEGER) * 10000000 + [r].[InTicks] AS INTEGER),
 	CAST([r].[InSeconds] * 10000000 + [r].[InTicks] AS INTEGER),
-	CAST([r].[InSeconds] * 10000000 + [r].[InTicks] AS INTEGER) + [r].[InTicks] + [r].[InTicks],
+	CAST([r].[InSeconds] * 10000000 + [r].[InTicks] AS INTEGER) + ([r].[InTicks] + [r].[InTicks]),
 	CAST(CAST([r].[InSeconds] + [r].[InSeconds] AS INTEGER) * 10000000 + [r].[InTicks] AS INTEGER) - ([r].[InTicks] + [r].[InTicks]),
 	CAST(CAST(-[r].[InSeconds] AS INTEGER) * 10000000 - [r].[InTicks] AS INTEGER)
 FROM

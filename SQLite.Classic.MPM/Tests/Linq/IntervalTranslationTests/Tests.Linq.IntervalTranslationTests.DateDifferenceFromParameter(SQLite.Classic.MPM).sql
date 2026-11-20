@@ -79,7 +79,7 @@ SET     @asOf = '2026-01-03 13:30:00.000'
 
 SELECT
 	CAST(CAST(Round((JulianDay(@asOf) - JulianDay([r].[StartedOn])) * 86400000) AS INTEGER) * 10000 AS Float) / 864000000000,
-	CAST(((CAST(Round((JulianDay(@asOf) - JulianDay([r].[StartedOn])) * 86400000) AS INTEGER) * 10000) / 36000000000) % 24 AS INTEGER)
+	CAST(CAST(Round((JulianDay(@asOf) - JulianDay([r].[StartedOn])) * 86400000) AS INTEGER) * 10000 / 36000000000 % 24 AS INTEGER)
 FROM
 	[EventRow] [r]
 WHERE

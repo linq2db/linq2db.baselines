@@ -8,44 +8,59 @@ SELECT
 	[r].[A] % ([r].[B] - [r].[C]),
 	([r].[A] - [r].[B]) % [r].[C],
 	[r].[A] % ([r].[B] - [r].[C]),
-	([r].[A] / [r].[B]) % [r].[C],
-	([r].[A] / [r].[B]) % [r].[C],
-	([r].[A] % [r].[B]) % [r].[C],
-	([r].[A] % [r].[B]) % [r].[C],
+	[r].[A] / [r].[B] % [r].[C],
+	[r].[A] / [r].[B] % [r].[C],
+	[r].[A] % [r].[B] % [r].[C],
+	[r].[A] % [r].[B] % [r].[C],
 	([r].[A] & [r].[B]) % [r].[C],
 	([r].[A] & [r].[B]) % [r].[C],
 	([r].[A] | [r].[B]) % [r].[C],
 	[r].[A] % ([r].[B] | [r].[C]),
 	([r].[A] | [r].[B]) % [r].[C],
 	[r].[A] % ([r].[B] | [r].[C]),
-	(([r].[A] + [r].[B]) - ([r].[A] & [r].[B]) * 2) % [r].[C],
-	[r].[A] % (([r].[B] + [r].[C]) - ([r].[B] & [r].[C]) * 2),
-	(([r].[A] + [r].[B]) - ([r].[A] & [r].[B]) * 2) % [r].[C],
-	[r].[A] % (([r].[B] + [r].[C]) - ([r].[B] & [r].[C]) * 2),
+	([r].[A] + [r].[B] - ([r].[A] & [r].[B]) * 2) % [r].[C],
+	[r].[A] % ([r].[B] + [r].[C] - ([r].[B] & [r].[C]) * 2),
+	([r].[A] + [r].[B] - ([r].[A] & [r].[B]) * 2) % [r].[C],
+	[r].[A] % ([r].[B] + [r].[C] - ([r].[B] & [r].[C]) * 2),
+	([r].[A] + [r].[B]) % [r].[C],
+	[r].[A] % ([r].[B] + [r].[C]),
+	([r].[A] + -6) % [r].[C],
+	([r].[A] - [r].[B]) % [r].[C],
+	[r].[A] % ([r].[B] - [r].[C]),
+	([r].[A] - -6) % [r].[C],
+	([r].[A] * [r].[B]) % [r].[C],
+	[r].[A] % ([r].[B] * [r].[C]),
+	([r].[A] * -6) % [r].[C],
+	([r].[A] / [r].[B]) % [r].[C],
+	[r].[A] % ([r].[B] / [r].[C]),
+	([r].[A] / -6) % [r].[C],
+	([r].[A] + [r].[B]) % [r].[C],
+	[r].[A] % ([r].[B] + [r].[C]),
+	([r].[A] + -6) % [r].[C],
 	[r].[A] % -[r].[B],
 	([r].[A] - [r].[B]) % [r].[C],
 	([r].[A] + [r].[B]) % [r].[C],
-	([r].[A] / -[r].[B]) % [r].[C],
-	([r].[A] % -[r].[B]) % [r].[C],
+	[r].[A] / -[r].[B] % [r].[C],
+	[r].[A] % -[r].[B] % [r].[C],
 	([r].[A] | -[r].[B]) % [r].[C],
-	(([r].[A] - [r].[B]) - ([r].[A] & -[r].[B]) * 2) % [r].[C],
-	[r].[A] % (~[r].[B]),
-	([r].[A] + (~[r].[B])) % [r].[C],
-	([r].[A] - (~[r].[B])) % [r].[C],
-	([r].[A] * (~[r].[B])) % [r].[C],
-	([r].[A] % (~[r].[B])) % [r].[C],
+	([r].[A] - [r].[B] - ([r].[A] & -[r].[B]) * 2) % [r].[C],
+	[r].[A] % ~[r].[B],
+	([r].[A] + ~[r].[B]) % [r].[C],
+	([r].[A] - ~[r].[B]) % [r].[C],
+	[r].[A] * ~[r].[B] % [r].[C],
+	[r].[A] % ~[r].[B] % [r].[C],
 	([r].[A] & ~[r].[B]) % [r].[C],
 	([r].[A] | ~[r].[B]) % [r].[C],
-	(([r].[A] + (~[r].[B])) - ([r].[A] & ~[r].[B]) * 2) % [r].[C],
+	([r].[A] + ~[r].[B] - ([r].[A] & ~[r].[B]) * 2) % [r].[C],
 	[r].[A] % -5,
 	-5 % [r].[C],
 	([r].[A] + -5) % [r].[C],
 	([r].[A] - -5) % [r].[C],
-	([r].[A] * -5) % [r].[C],
-	([r].[A] % -5) % [r].[C],
+	[r].[A] * -5 % [r].[C],
+	[r].[A] % -5 % [r].[C],
 	([r].[A] & -5) % [r].[C],
 	([r].[A] | -5) % [r].[C],
-	(([r].[A] + -5) - ([r].[A] & -5) * 2) % [r].[C]
+	([r].[A] + -5 - ([r].[A] & -5) * 2) % [r].[C]
 FROM
 	[PrecedenceRow] [r]
 ORDER BY
@@ -57,11 +72,11 @@ SELECT
 	-5 % [r].[C],
 	([r].[A] + -5) % [r].[C],
 	([r].[A] - -5) % [r].[C],
-	([r].[A] * -5) % [r].[C],
-	([r].[A] % -5) % [r].[C],
+	[r].[A] * -5 % [r].[C],
+	[r].[A] % -5 % [r].[C],
 	([r].[A] & -5) % [r].[C],
 	([r].[A] | -5) % [r].[C],
-	(([r].[A] + -5) - ([r].[A] & -5) * 2) % [r].[C]
+	([r].[A] + -5 - ([r].[A] & -5) * 2) % [r].[C]
 FROM
 	[PrecedenceRow] [r]
 ORDER BY
@@ -99,6 +114,21 @@ ORDER BY
 -- cell Mod/Mod(a,Xor(b,c)): green
 -- cell Mod/Mod(AsNotNull(Xor(a,b)),c): green
 -- cell Mod/Mod(a,AsNotNull(Xor(b,c))): green
+-- cell Mod/Mod(TAdd(a,b),c): green
+-- cell Mod/Mod(a,TAdd(b,c)): green
+-- cell Mod/Mod(TAdd(a,NegLit),c): green
+-- cell Mod/Mod(TSub(a,b),c): green
+-- cell Mod/Mod(a,TSub(b,c)): green
+-- cell Mod/Mod(TSub(a,NegLit),c): green
+-- cell Mod/Mod(TMul(a,b),c): green
+-- cell Mod/Mod(a,TMul(b,c)): green
+-- cell Mod/Mod(TMul(a,NegLit),c): green
+-- cell Mod/Mod(TDiv(a,b),c): green
+-- cell Mod/Mod(a,TDiv(b,c)): green
+-- cell Mod/Mod(TDiv(a,NegLit),c): green
+-- cell Mod/Mod(TAddOffset(a,b),c): green
+-- cell Mod/Mod(a,TAddOffset(b,c)): green
+-- cell Mod/Mod(TAddOffset(a,NegLit),c): green
 -- cell Mod/Mod(a,Neg(b)): green
 -- cell Mod/Mod(Neg(b),c): skipped
 -- cell Mod/Mod(Add(a,Neg(b)),c): green

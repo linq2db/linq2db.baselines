@@ -8,11 +8,11 @@ SELECT
 	-([r].[A] & [r].[B]),
 	-([r].[A] | [r].[B]),
 	-([r].[A] | [r].[B]),
-	-(([r].[A] + [r].[B]) - ([r].[A] & [r].[B]) * 2),
-	-(([r].[A] + [r].[B]) - ([r].[A] & [r].[B]) * 2),
+	-([r].[A] + [r].[B] - ([r].[A] & [r].[B]) * 2),
+	-([r].[A] + [r].[B] - ([r].[A] & [r].[B]) * 2),
 	[r].[B],
 	-(~[r].[B]),
-	--5,
+	-(-5),
 	-(-5 * [r].[B])
 FROM
 	[PrecedenceRow] [r]
@@ -21,127 +21,7 @@ ORDER BY
 
 -- SQLite.MS SQLite
 SELECT
-	-([r].[A] + [r].[B])
-FROM
-	[PrecedenceRow] [r]
-ORDER BY
-	[r].[Id]
-
--- SQLite.MS SQLite
-SELECT
-	-([r].[A] + [r].[B])
-FROM
-	[PrecedenceRow] [r]
-ORDER BY
-	[r].[Id]
-
--- SQLite.MS SQLite
-SELECT
-	-([r].[A] - [r].[B])
-FROM
-	[PrecedenceRow] [r]
-ORDER BY
-	[r].[Id]
-
--- SQLite.MS SQLite
-SELECT
-	-([r].[A] - [r].[B])
-FROM
-	[PrecedenceRow] [r]
-ORDER BY
-	[r].[Id]
-
--- SQLite.MS SQLite
-SELECT
-	-([r].[A] & [r].[B])
-FROM
-	[PrecedenceRow] [r]
-ORDER BY
-	[r].[Id]
-
--- SQLite.MS SQLite
-SELECT
-	-([r].[A] & [r].[B])
-FROM
-	[PrecedenceRow] [r]
-ORDER BY
-	[r].[Id]
-
--- SQLite.MS SQLite
-SELECT
-	-([r].[A] | [r].[B])
-FROM
-	[PrecedenceRow] [r]
-ORDER BY
-	[r].[Id]
-
--- SQLite.MS SQLite
-SELECT
-	-([r].[A] | [r].[B])
-FROM
-	[PrecedenceRow] [r]
-ORDER BY
-	[r].[Id]
-
--- SQLite.MS SQLite
-SELECT
-	-(([r].[A] + [r].[B]) - ([r].[A] & [r].[B]) * 2)
-FROM
-	[PrecedenceRow] [r]
-ORDER BY
-	[r].[Id]
-
--- SQLite.MS SQLite
-SELECT
-	-(([r].[A] + [r].[B]) - ([r].[A] & [r].[B]) * 2)
-FROM
-	[PrecedenceRow] [r]
-ORDER BY
-	[r].[Id]
-
--- SQLite.MS SQLite
-SELECT
-	[r].[B]
-FROM
-	[PrecedenceRow] [r]
-ORDER BY
-	[r].[Id]
-
--- SQLite.MS SQLite
-SELECT
-	-(~[r].[B])
-FROM
-	[PrecedenceRow] [r]
-ORDER BY
-	[r].[Id]
-
--- SQLite.MS SQLite
-SELECT
-	--5
-FROM
-	[PrecedenceRow] [r]
-ORDER BY
-	[r].[Id]
-
--- SQLite.MS SQLite
-SELECT
-	-(-5 * [r].[B])
-FROM
-	[PrecedenceRow] [r]
-ORDER BY
-	[r].[Id]
-
--- SQLite.MS SQLite
-SELECT
-	--5
-FROM
-	[PrecedenceRow] [r]
-ORDER BY
-	[r].[Id]
-
--- SQLite.MS SQLite
-SELECT
-	--5
+	-(-5)
 FROM
 	[PrecedenceRow] [r]
 ORDER BY
@@ -165,6 +45,6 @@ ORDER BY
 -- cell Neg/Neg(AsNotNull(Xor(a,b))): green
 -- cell Neg/Neg(Neg(b)): green
 -- cell Neg/Neg(Not(b)): green
--- cell Neg/Neg(NegLit(b)): error
--- cell Neg/Neg(NegParam(b)): error
+-- cell Neg/Neg(NegLit(b)): green
+-- cell Neg/Neg(NegParam(b)): green
 -- cell Neg/Neg(Mul(NegLit,b)): green
