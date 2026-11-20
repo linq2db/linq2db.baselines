@@ -22,6 +22,21 @@ SELECT
 	Floor(r."A"::decimal % (r."B" # r."C"))::Int,
 	Floor((r."A" # r."B")::decimal % r."C")::Int,
 	Floor(r."A"::decimal % (r."B" # r."C"))::Int,
+	Floor((r."A" + r."B")::decimal % r."C")::Int,
+	Floor(r."A"::decimal % (r."B" + r."C"))::Int,
+	Floor((r."A" + -6)::decimal % r."C")::Int,
+	Floor((r."A" - r."B")::decimal % r."C")::Int,
+	Floor(r."A"::decimal % (r."B" - r."C"))::Int,
+	Floor((r."A" - -6)::decimal % r."C")::Int,
+	Floor((r."A" * r."B")::decimal % r."C")::Int,
+	Floor(r."A"::decimal % (r."B" * r."C"))::Int,
+	Floor((r."A" * -6)::decimal % r."C")::Int,
+	Floor((r."A" / r."B")::decimal % r."C")::Int,
+	Floor(r."A"::decimal % (r."B" / r."C"))::Int,
+	Floor((r."A" / -6)::decimal % r."C")::Int,
+	Floor((r."A" + r."B")::decimal % r."C")::Int,
+	Floor(r."A"::decimal % (r."B" + r."C"))::Int,
+	Floor((r."A" + -6)::decimal % r."C")::Int,
 	Floor(r."A"::decimal % -r."B")::Int,
 	Floor((r."A" - r."B")::decimal % r."C")::Int,
 	Floor((r."A" + r."B")::decimal % r."C")::Int,
@@ -34,9 +49,9 @@ SELECT
 	Floor((r."A" - (~r."B"))::decimal % r."C")::Int,
 	Floor((r."A" * (~r."B"))::decimal % r."C")::Int,
 	Floor(Floor(r."A"::decimal % (~r."B"))::Int::decimal % r."C")::Int,
-	Floor((r."A" & ~r."B")::decimal % r."C")::Int,
-	Floor((r."A" | ~r."B")::decimal % r."C")::Int,
-	Floor((r."A" # ~r."B")::decimal % r."C")::Int,
+	Floor((r."A" & (~r."B"))::decimal % r."C")::Int,
+	Floor((r."A" | (~r."B"))::decimal % r."C")::Int,
+	Floor((r."A" # (~r."B"))::decimal % r."C")::Int,
 	Floor(r."A"::decimal % -5)::Int,
 	Floor((-5)::decimal % r."C")::Int,
 	Floor((r."A" + -5)::decimal % r."C")::Int,
@@ -99,6 +114,21 @@ ORDER BY
 -- cell Mod/Mod(a,Xor(b,c)): green
 -- cell Mod/Mod(AsNotNull(Xor(a,b)),c): green
 -- cell Mod/Mod(a,AsNotNull(Xor(b,c))): green
+-- cell Mod/Mod(TAdd(a,b),c): green
+-- cell Mod/Mod(a,TAdd(b,c)): green
+-- cell Mod/Mod(TAdd(a,NegLit),c): green
+-- cell Mod/Mod(TSub(a,b),c): green
+-- cell Mod/Mod(a,TSub(b,c)): green
+-- cell Mod/Mod(TSub(a,NegLit),c): green
+-- cell Mod/Mod(TMul(a,b),c): green
+-- cell Mod/Mod(a,TMul(b,c)): green
+-- cell Mod/Mod(TMul(a,NegLit),c): green
+-- cell Mod/Mod(TDiv(a,b),c): green
+-- cell Mod/Mod(a,TDiv(b,c)): green
+-- cell Mod/Mod(TDiv(a,NegLit),c): green
+-- cell Mod/Mod(TAddOffset(a,b),c): green
+-- cell Mod/Mod(a,TAddOffset(b,c)): green
+-- cell Mod/Mod(TAddOffset(a,NegLit),c): green
 -- cell Mod/Mod(a,Neg(b)): green
 -- cell Mod/Mod(Neg(b),c): skipped
 -- cell Mod/Mod(Add(a,Neg(b)),c): green

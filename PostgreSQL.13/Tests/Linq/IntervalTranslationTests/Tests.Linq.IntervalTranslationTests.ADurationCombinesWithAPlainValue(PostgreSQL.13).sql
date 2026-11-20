@@ -31,9 +31,9 @@ SET     @Ticks = 3000000000
 
 SELECT
 	r."Budget" + :extra,
-	(Floor(Extract(day From (r."FinishedOn" - r."StartedOn")))::BigInt * 864000000000 + Floor(Extract(hour From (r."FinishedOn" - r."StartedOn")))::BigInt * 36000000000 + Floor(Extract(minute From (r."FinishedOn" - r."StartedOn")))::BigInt * 600000000 + Floor(Round(Extract(second From (r."FinishedOn" - r."StartedOn")) * 10000000))::BigInt + :Ticks)::BigInt,
-	(:Ticks + Floor(Extract(day From (r."FinishedOn" - r."StartedOn")))::BigInt * 864000000000 + Floor(Extract(hour From (r."FinishedOn" - r."StartedOn")))::BigInt * 36000000000 + Floor(Extract(minute From (r."FinishedOn" - r."StartedOn")))::BigInt * 600000000 + Floor(Round(Extract(second From (r."FinishedOn" - r."StartedOn")) * 10000000))::BigInt)::BigInt,
-	((Floor(Extract(day From (r."FinishedOn" - r."StartedOn")))::BigInt * 864000000000 + Floor(Extract(hour From (r."FinishedOn" - r."StartedOn")))::BigInt * 36000000000 + Floor(Extract(minute From (r."FinishedOn" - r."StartedOn")))::BigInt * 600000000 + Floor(Round(Extract(second From (r."FinishedOn" - r."StartedOn")) * 10000000))::BigInt) - :Ticks)::BigInt
+	(Floor(Extract(day From (r."FinishedOn" - r."StartedOn")))::BigInt * 864000000000 + (Floor(Extract(hour From (r."FinishedOn" - r."StartedOn")))::BigInt * 36000000000 + (Floor(Extract(minute From (r."FinishedOn" - r."StartedOn")))::BigInt * 600000000 + Floor(Round(Extract(second From (r."FinishedOn" - r."StartedOn")) * 10000000))::BigInt)) + :Ticks)::BigInt,
+	(:Ticks + (Floor(Extract(day From (r."FinishedOn" - r."StartedOn")))::BigInt * 864000000000 + (Floor(Extract(hour From (r."FinishedOn" - r."StartedOn")))::BigInt * 36000000000 + (Floor(Extract(minute From (r."FinishedOn" - r."StartedOn")))::BigInt * 600000000 + Floor(Round(Extract(second From (r."FinishedOn" - r."StartedOn")) * 10000000))::BigInt))))::BigInt,
+	(Floor(Extract(day From (r."FinishedOn" - r."StartedOn")))::BigInt * 864000000000 + (Floor(Extract(hour From (r."FinishedOn" - r."StartedOn")))::BigInt * 36000000000 + (Floor(Extract(minute From (r."FinishedOn" - r."StartedOn")))::BigInt * 600000000 + Floor(Round(Extract(second From (r."FinishedOn" - r."StartedOn")) * 10000000))::BigInt)) - :Ticks)::BigInt
 FROM
 	"BudgetedTaskRow" r
 LIMIT 2
