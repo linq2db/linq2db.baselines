@@ -23,7 +23,7 @@ VALUES
 DECLARE @Ticks Integer -- Int64
 SET     @Ticks = 1234
 DECLARE @TotalMilliseconds Real -- Double
-SET     @TotalMilliseconds = 0.12340000000000001
+SET     @TotalMilliseconds = 0.1234
 
 SELECT
 	@Ticks + [r].[Id],
