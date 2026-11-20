@@ -2,7 +2,7 @@
 UPDATE
 	"Issue4963Table" "t1"
 SET
-	"Field" = CAST(CAST("t1"."Field" AS Integer) + -1 AS TinyInt)
+	"Field" = CAST(CAST("t1"."Field" AS Integer) + (-1) AS TinyInt)
 
 -- SapHana.Odbc SapHanaOdbc
 SELECT

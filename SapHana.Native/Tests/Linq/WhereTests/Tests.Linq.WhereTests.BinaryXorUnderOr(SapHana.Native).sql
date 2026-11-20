@@ -8,7 +8,7 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	("p"."PersonID" + ("p"."PersonID" + 1) - BITAND("p"."PersonID", 1) * 2) - BITAND("p"."PersonID", ("p"."PersonID" + 1) - BITAND("p"."PersonID", 1) * 2) = "p"."PersonID"
+	"p"."PersonID" + ("p"."PersonID" + 1 - BITAND("p"."PersonID", 1) * 2) - BITAND("p"."PersonID", "p"."PersonID" + 1 - BITAND("p"."PersonID", 1) * 2) = "p"."PersonID"
 
 -- SapHana.Native SapHana
 SELECT
