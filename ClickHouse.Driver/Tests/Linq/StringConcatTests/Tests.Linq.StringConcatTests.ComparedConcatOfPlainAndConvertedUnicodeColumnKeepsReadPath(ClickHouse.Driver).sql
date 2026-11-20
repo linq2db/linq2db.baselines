@@ -13,7 +13,7 @@ SELECT
 FROM
 	PlainAndConvertedUnicodeRow r
 WHERE
-	(concat(r.Plain, r.Conv)) = 'A-x:n1'
+	concat(r.Plain, r.Conv) = 'A-x:n1'
 
 -- ClickHouse.Driver ClickHouse
 SELECT
@@ -21,7 +21,7 @@ SELECT
 FROM
 	PlainAndConvertedUnicodeRow r
 WHERE
-	(concat(r.Plain, r.Conv)) <> 'A-x:n1'
+	concat(r.Plain, r.Conv) <> 'A-x:n1'
 
 -- ClickHouse.Driver ClickHouse
 SELECT
@@ -42,5 +42,5 @@ SELECT
 FROM
 	PlainAndConvertedUnicodeRow r
 WHERE
-	(concat(r.Plain, r.Conv)) IN ('A-x:n1')
+	concat(r.Plain, r.Conv) IN ('A-x:n1')
 

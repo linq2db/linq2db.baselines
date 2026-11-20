@@ -8,10 +8,10 @@ SELECT
 	r.A % (r.B - r.C),
 	(r.A - r.B) % r.C,
 	r.A % (r.B - r.C),
-	(r.A / r.B) % r.C,
-	(r.A / r.B) % r.C,
-	(r.A % r.B) % r.C,
-	(r.A % r.B) % r.C,
+	r.A / r.B % r.C,
+	r.A / r.B % r.C,
+	r.A % r.B % r.C,
+	r.A % r.B % r.C,
 	bitAnd(r.A, r.B) % r.C,
 	bitAnd(r.A, r.B) % r.C,
 	bitOr(r.A, r.B) % r.C,
@@ -22,27 +22,42 @@ SELECT
 	r.A % bitXor(r.B, r.C),
 	bitXor(r.A, r.B) % r.C,
 	r.A % bitXor(r.B, r.C),
+	(r.A + r.B) % r.C,
+	r.A % (r.B + r.C),
+	(r.A + -6) % r.C,
+	(r.A - r.B) % r.C,
+	r.A % (r.B - r.C),
+	(r.A - -6) % r.C,
+	(r.A * r.B) % r.C,
+	r.A % (r.B * r.C),
+	(r.A * -6) % r.C,
+	(r.A / r.B) % r.C,
+	r.A % (r.B / r.C),
+	(r.A / -6) % r.C,
+	(r.A + r.B) % r.C,
+	r.A % (r.B + r.C),
+	(r.A + -6) % r.C,
 	r.A % negate(r.B),
 	(r.A + negate(r.B)) % r.C,
 	(r.A - negate(r.B)) % r.C,
-	(r.A / negate(r.B)) % r.C,
-	(r.A % negate(r.B)) % r.C,
+	r.A / negate(r.B) % r.C,
+	r.A % negate(r.B) % r.C,
 	bitOr(r.A, negate(r.B)) % r.C,
 	bitXor(r.A, negate(r.B)) % r.C,
 	r.A % bitNot(r.B),
 	(r.A + bitNot(r.B)) % r.C,
 	(r.A - bitNot(r.B)) % r.C,
-	(r.A * bitNot(r.B)) % r.C,
-	(r.A % bitNot(r.B)) % r.C,
+	r.A * bitNot(r.B) % r.C,
+	r.A % bitNot(r.B) % r.C,
 	bitAnd(r.A, bitNot(r.B)) % r.C,
 	bitOr(r.A, bitNot(r.B)) % r.C,
 	bitXor(r.A, bitNot(r.B)) % r.C,
-	r.A % -5,
-	-5 % r.C,
-	(r.A + -5) % r.C,
-	(r.A - -5) % r.C,
-	(r.A * -5) % r.C,
-	(r.A % -5) % r.C,
+	r.A % (-5),
+	(-5) % r.C,
+	(r.A + (-5)) % r.C,
+	(r.A - (-5)) % r.C,
+	r.A * (-5) % r.C,
+	r.A % (-5) % r.C,
 	bitAnd(r.A, -5) % r.C,
 	bitOr(r.A, -5) % r.C,
 	bitXor(r.A, -5) % r.C
@@ -53,12 +68,12 @@ ORDER BY
 
 -- ClickHouse.Driver ClickHouse
 SELECT
-	r.A % -5,
-	-5 % r.C,
-	(r.A + -5) % r.C,
-	(r.A - -5) % r.C,
-	(r.A * -5) % r.C,
-	(r.A % -5) % r.C,
+	r.A % (-5),
+	(-5) % r.C,
+	(r.A + (-5)) % r.C,
+	(r.A - (-5)) % r.C,
+	r.A * (-5) % r.C,
+	r.A % (-5) % r.C,
 	bitAnd(r.A, -5) % r.C,
 	bitOr(r.A, -5) % r.C,
 	bitXor(r.A, -5) % r.C
@@ -99,6 +114,21 @@ ORDER BY
 -- cell Mod/Mod(a,Xor(b,c)): green
 -- cell Mod/Mod(AsNotNull(Xor(a,b)),c): green
 -- cell Mod/Mod(a,AsNotNull(Xor(b,c))): green
+-- cell Mod/Mod(TAdd(a,b),c): green
+-- cell Mod/Mod(a,TAdd(b,c)): green
+-- cell Mod/Mod(TAdd(a,NegLit),c): green
+-- cell Mod/Mod(TSub(a,b),c): green
+-- cell Mod/Mod(a,TSub(b,c)): green
+-- cell Mod/Mod(TSub(a,NegLit),c): green
+-- cell Mod/Mod(TMul(a,b),c): green
+-- cell Mod/Mod(a,TMul(b,c)): green
+-- cell Mod/Mod(TMul(a,NegLit),c): green
+-- cell Mod/Mod(TDiv(a,b),c): green
+-- cell Mod/Mod(a,TDiv(b,c)): green
+-- cell Mod/Mod(TDiv(a,NegLit),c): green
+-- cell Mod/Mod(TAddOffset(a,b),c): green
+-- cell Mod/Mod(a,TAddOffset(b,c)): green
+-- cell Mod/Mod(TAddOffset(a,NegLit),c): green
 -- cell Mod/Mod(a,Neg(b)): green
 -- cell Mod/Mod(Neg(b),c): skipped
 -- cell Mod/Mod(Add(a,Neg(b)),c): green

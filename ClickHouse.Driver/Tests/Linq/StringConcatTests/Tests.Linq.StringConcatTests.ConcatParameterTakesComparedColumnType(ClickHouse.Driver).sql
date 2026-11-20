@@ -4,7 +4,7 @@ SELECT
 FROM
 	ConcatProduct p
 WHERE
-	p.Title = (concat(p.Sku, 'Жук'))
+	p.Title = concat(p.Sku, 'Жук')
 
 -- ClickHouse.Driver ClickHouse
 SELECT

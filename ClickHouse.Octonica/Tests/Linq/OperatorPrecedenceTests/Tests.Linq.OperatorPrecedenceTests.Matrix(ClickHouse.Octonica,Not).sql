@@ -15,7 +15,7 @@ SELECT
 	bitNot(negate(r.B)),
 	bitNot(bitNot(r.B)),
 	bitNot(-5),
-	bitNot(-5 * r.B)
+	bitNot((-5) * r.B)
 FROM
 	PrecedenceRow r
 ORDER BY
