@@ -1,21 +1,21 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 SELECT
-	~`r`.`A` + `r`.`B`,
-	~`r`.`A` + `r`.`B`,
-	~`r`.`A` - `r`.`B`,
-	~`r`.`A` - `r`.`B`,
-	~`r`.`A` * `r`.`B`,
-	~`r`.`A` * `r`.`B`,
-	~`r`.`A` / `r`.`B`,
-	~`r`.`A` / `r`.`B`,
-	~`r`.`A` & `r`.`B`,
-	~`r`.`A` & `r`.`B`,
+	~(`r`.`A` + `r`.`B`),
+	~(`r`.`A` + `r`.`B`),
+	~(`r`.`A` - `r`.`B`),
+	~(`r`.`A` - `r`.`B`),
+	~(`r`.`A` * `r`.`B`),
+	~(`r`.`A` * `r`.`B`),
+	~(`r`.`A` / `r`.`B`),
+	~(`r`.`A` / `r`.`B`),
+	~(`r`.`A` & `r`.`B`),
+	~(`r`.`A` & `r`.`B`),
 	~(`r`.`A` | `r`.`B`),
 	~(`r`.`A` | `r`.`B`),
-	~-`r`.`B`,
-	~~`r`.`B`,
-	~-5,
-	~-5 * `r`.`B`
+	~(-`r`.`B`),
+	~(~`r`.`B`),
+	~(-5),
+	~((-5) * `r`.`B`)
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -23,7 +23,7 @@ ORDER BY
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 SELECT
-	~`r`.`A` + `r`.`B`
+	~(`r`.`A` + `r`.`B`)
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -31,7 +31,7 @@ ORDER BY
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 SELECT
-	~`r`.`A` + `r`.`B`
+	~(`r`.`A` + `r`.`B`)
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -39,7 +39,7 @@ ORDER BY
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 SELECT
-	~`r`.`A` - `r`.`B`
+	~(`r`.`A` - `r`.`B`)
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -47,7 +47,7 @@ ORDER BY
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 SELECT
-	~`r`.`A` - `r`.`B`
+	~(`r`.`A` - `r`.`B`)
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -55,7 +55,7 @@ ORDER BY
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 SELECT
-	~`r`.`A` * `r`.`B`
+	~(`r`.`A` * `r`.`B`)
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -63,7 +63,7 @@ ORDER BY
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 SELECT
-	~`r`.`A` * `r`.`B`
+	~(`r`.`A` * `r`.`B`)
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -71,7 +71,7 @@ ORDER BY
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 SELECT
-	~`r`.`A` / `r`.`B`
+	~(`r`.`A` / `r`.`B`)
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -79,7 +79,7 @@ ORDER BY
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 SELECT
-	~`r`.`A` / `r`.`B`
+	~(`r`.`A` / `r`.`B`)
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -87,7 +87,7 @@ ORDER BY
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 SELECT
-	~`r`.`A` & `r`.`B`
+	~(`r`.`A` & `r`.`B`)
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -95,7 +95,7 @@ ORDER BY
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 SELECT
-	~`r`.`A` & `r`.`B`
+	~(`r`.`A` & `r`.`B`)
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -119,7 +119,7 @@ ORDER BY
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 SELECT
-	~-`r`.`B`
+	~(-`r`.`B`)
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -127,7 +127,7 @@ ORDER BY
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 SELECT
-	~~`r`.`B`
+	~(~`r`.`B`)
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -135,7 +135,7 @@ ORDER BY
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 SELECT
-	~-5
+	~(-5)
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -143,7 +143,7 @@ ORDER BY
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 SELECT
-	~-5 * `r`.`B`
+	~((-5) * `r`.`B`)
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -151,7 +151,7 @@ ORDER BY
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 SELECT
-	~-5
+	~(-5)
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -167,8 +167,8 @@ ORDER BY
 -- cell Not/Not(AsNotNull(Div(a,b))): error
 -- cell Not/Not(Mod(a,b)): skipped
 -- cell Not/Not(AsNotNull(Mod(a,b))): skipped
--- cell Not/Not(And(a,b)): red
--- cell Not/Not(AsNotNull(And(a,b))): red
+-- cell Not/Not(And(a,b)): error
+-- cell Not/Not(AsNotNull(And(a,b))): error
 -- cell Not/Not(Or(a,b)): error
 -- cell Not/Not(AsNotNull(Or(a,b))): error
 -- cell Not/Not(Xor(a,b)): skipped
@@ -177,4 +177,4 @@ ORDER BY
 -- cell Not/Not(Not(b)): green
 -- cell Not/Not(NegLit(b)): green
 -- cell Not/Not(NegParam(b)): green
--- cell Not/Not(Mul(NegLit,b)): red
+-- cell Not/Not(Mul(NegLit,b)): green

@@ -7,7 +7,7 @@ SELECT
 FROM
 	`ConcatProduct` `p`
 WHERE
-	(CONCAT(`p`.`Sku`, Coalesce(@suffix, ''))) IN ('A-100Щит', 'B-200Жук')
+	CONCAT(`p`.`Sku`, Coalesce(@suffix, '')) IN ('A-100Щит', 'B-200Жук')
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT

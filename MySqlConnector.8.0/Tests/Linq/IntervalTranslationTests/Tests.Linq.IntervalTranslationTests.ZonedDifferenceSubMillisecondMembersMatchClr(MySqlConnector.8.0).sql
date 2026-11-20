@@ -30,7 +30,7 @@ LIMIT 2
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 SELECT
 	CAST(((TimestampDiff(Microsecond, `r`.`StartedOn`, `r`.`FinishedOn`) * 10) DIV 10) % 1000 AS SIGNED),
-	CAST(((TimestampDiff(Microsecond, `r`.`StartedOn`, `r`.`FinishedOn`) * 10) % 10) * 100 AS SIGNED),
+	CAST(TimestampDiff(Microsecond, `r`.`StartedOn`, `r`.`FinishedOn`) * 10 % 10 * 100 AS SIGNED),
 	CAST(TimestampDiff(Microsecond, `r`.`StartedOn`, `r`.`FinishedOn`) * 10 AS DOUBLE) / 10,
 	CAST(TimestampDiff(Microsecond, `r`.`StartedOn`, `r`.`FinishedOn`) * 10 AS DOUBLE) * 100
 FROM

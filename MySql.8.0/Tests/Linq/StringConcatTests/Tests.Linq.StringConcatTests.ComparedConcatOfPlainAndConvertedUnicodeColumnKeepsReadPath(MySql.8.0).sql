@@ -16,7 +16,7 @@ SELECT
 FROM
 	`PlainAndConvertedUnicodeRow` `r`
 WHERE
-	(CONCAT(`r`.`Plain`, `r`.`Conv`)) = @read
+	CONCAT(`r`.`Plain`, `r`.`Conv`) = @read
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @read VarChar(6) -- String
@@ -27,7 +27,7 @@ SELECT
 FROM
 	`PlainAndConvertedUnicodeRow` `r`
 WHERE
-	(CONCAT(`r`.`Plain`, `r`.`Conv`)) <> @read
+	CONCAT(`r`.`Plain`, `r`.`Conv`) <> @read
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 SELECT
@@ -48,5 +48,5 @@ SELECT
 FROM
 	`PlainAndConvertedUnicodeRow` `r`
 WHERE
-	(CONCAT(`r`.`Plain`, `r`.`Conv`)) IN ('A-x:n1')
+	CONCAT(`r`.`Plain`, `r`.`Conv`) IN ('A-x:n1')
 

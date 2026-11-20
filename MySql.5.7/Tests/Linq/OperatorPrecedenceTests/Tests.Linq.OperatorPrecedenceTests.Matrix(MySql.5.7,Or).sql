@@ -1,59 +1,71 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` + `r`.`B` | `r`.`C`,
-	`r`.`A` | `r`.`B` + `r`.`C`,
-	`r`.`A` + `r`.`B` | `r`.`C`,
-	`r`.`A` | `r`.`B` + `r`.`C`,
-	`r`.`A` - `r`.`B` | `r`.`C`,
-	`r`.`A` - `r`.`B` | `r`.`C`,
-	`r`.`A` * `r`.`B` | `r`.`C`,
-	`r`.`A` | `r`.`B` * `r`.`C`,
-	`r`.`A` * `r`.`B` | `r`.`C`,
-	`r`.`A` | `r`.`B` * `r`.`C`,
-	`r`.`A` / `r`.`B` | `r`.`C`,
-	`r`.`A` | `r`.`B` / `r`.`C`,
-	`r`.`A` / `r`.`B` | `r`.`C`,
-	`r`.`A` | `r`.`B` / `r`.`C`,
-	`r`.`A` % `r`.`B` | `r`.`C`,
-	`r`.`A` | `r`.`B` % `r`.`C`,
-	`r`.`A` % `r`.`B` | `r`.`C`,
-	`r`.`A` | `r`.`B` % `r`.`C`,
-	`r`.`A` & `r`.`B` | `r`.`C`,
-	`r`.`A` | `r`.`B` & `r`.`C`,
-	`r`.`A` & `r`.`B` | `r`.`C`,
-	`r`.`A` | `r`.`B` & `r`.`C`,
-	`r`.`A` ^ `r`.`B` | `r`.`C`,
-	`r`.`A` | `r`.`B` ^ `r`.`C`,
-	`r`.`A` ^ `r`.`B` | `r`.`C`,
-	`r`.`A` | `r`.`B` ^ `r`.`C`,
-	`r`.`A` | -`r`.`B`,
-	-`r`.`B` | `r`.`C`,
-	`r`.`A` - `r`.`B` | `r`.`C`,
-	`r`.`A` + `r`.`B` | `r`.`C`,
-	`r`.`A` * -`r`.`B` | `r`.`C`,
-	`r`.`A` / -`r`.`B` | `r`.`C`,
-	`r`.`A` % -`r`.`B` | `r`.`C`,
-	`r`.`A` & -`r`.`B` | `r`.`C`,
-	`r`.`A` | -`r`.`B` | `r`.`C`,
-	`r`.`A` ^ -`r`.`B` | `r`.`C`,
-	`r`.`A` | ~`r`.`B`,
-	~`r`.`B` | `r`.`C`,
-	`r`.`A` + (~`r`.`B`) | `r`.`C`,
-	`r`.`A` - (~`r`.`B`) | `r`.`C`,
-	`r`.`A` * (~`r`.`B`) | `r`.`C`,
-	`r`.`A` % (~`r`.`B`) | `r`.`C`,
-	`r`.`A` & ~`r`.`B` | `r`.`C`,
-	`r`.`A` | ~`r`.`B` | `r`.`C`,
-	`r`.`A` ^ ~`r`.`B` | `r`.`C`,
-	`r`.`A` | -5,
-	-5 | `r`.`C`,
-	`r`.`A` + -5 | `r`.`C`,
-	`r`.`A` - -5 | `r`.`C`,
-	`r`.`A` * -5 | `r`.`C`,
-	`r`.`A` % -5 | `r`.`C`,
-	`r`.`A` & -5 | `r`.`C`,
-	`r`.`A` | -5 | `r`.`C`,
-	`r`.`A` ^ -5 | `r`.`C`
+	(`r`.`A` + `r`.`B`) | `r`.`C`,
+	`r`.`A` | (`r`.`B` + `r`.`C`),
+	(`r`.`A` + `r`.`B`) | `r`.`C`,
+	`r`.`A` | (`r`.`B` + `r`.`C`),
+	(`r`.`A` - `r`.`B`) | `r`.`C`,
+	(`r`.`A` - `r`.`B`) | `r`.`C`,
+	(`r`.`A` * `r`.`B`) | `r`.`C`,
+	`r`.`A` | (`r`.`B` * `r`.`C`),
+	(`r`.`A` * `r`.`B`) | `r`.`C`,
+	`r`.`A` | (`r`.`B` * `r`.`C`),
+	(`r`.`A` / `r`.`B`) | `r`.`C`,
+	`r`.`A` | (`r`.`B` / `r`.`C`),
+	(`r`.`A` / `r`.`B`) | `r`.`C`,
+	`r`.`A` | (`r`.`B` / `r`.`C`),
+	(`r`.`A` % `r`.`B`) | `r`.`C`,
+	`r`.`A` | (`r`.`B` % `r`.`C`),
+	(`r`.`A` % `r`.`B`) | `r`.`C`,
+	`r`.`A` | (`r`.`B` % `r`.`C`),
+	(`r`.`A` & `r`.`B`) | `r`.`C`,
+	`r`.`A` | (`r`.`B` & `r`.`C`),
+	(`r`.`A` & `r`.`B`) | `r`.`C`,
+	`r`.`A` | (`r`.`B` & `r`.`C`),
+	(`r`.`A` ^ `r`.`B`) | `r`.`C`,
+	`r`.`A` | (`r`.`B` ^ `r`.`C`),
+	(`r`.`A` ^ `r`.`B`) | `r`.`C`,
+	`r`.`A` | (`r`.`B` ^ `r`.`C`),
+	(`r`.`A` + `r`.`B`) | `r`.`C`,
+	`r`.`A` | (`r`.`B` + `r`.`C`),
+	(`r`.`A` + -6) | `r`.`C`,
+	(`r`.`A` - `r`.`B`) | `r`.`C`,
+	`r`.`A` | (`r`.`B` - `r`.`C`),
+	(`r`.`A` - -6) | `r`.`C`,
+	(`r`.`A` * `r`.`B`) | `r`.`C`,
+	`r`.`A` | (`r`.`B` * `r`.`C`),
+	(`r`.`A` * -6) | `r`.`C`,
+	(`r`.`A` + `r`.`B`) | `r`.`C`,
+	`r`.`A` | (`r`.`B` + `r`.`C`),
+	(`r`.`A` + -6) | `r`.`C`,
+	`r`.`A` | (-`r`.`B`),
+	(-`r`.`B`) | `r`.`C`,
+	(`r`.`A` - `r`.`B`) | `r`.`C`,
+	(`r`.`A` + `r`.`B`) | `r`.`C`,
+	(`r`.`A` * (-`r`.`B`)) | `r`.`C`,
+	(`r`.`A` / (-`r`.`B`)) | `r`.`C`,
+	(`r`.`A` % (-`r`.`B`)) | `r`.`C`,
+	(`r`.`A` & (-`r`.`B`)) | `r`.`C`,
+	`r`.`A` | (-`r`.`B`) | `r`.`C`,
+	(`r`.`A` ^ (-`r`.`B`)) | `r`.`C`,
+	`r`.`A` | (~`r`.`B`),
+	(~`r`.`B`) | `r`.`C`,
+	(`r`.`A` + (~`r`.`B`)) | `r`.`C`,
+	(`r`.`A` - (~`r`.`B`)) | `r`.`C`,
+	(`r`.`A` * (~`r`.`B`)) | `r`.`C`,
+	(`r`.`A` % (~`r`.`B`)) | `r`.`C`,
+	(`r`.`A` & (~`r`.`B`)) | `r`.`C`,
+	`r`.`A` | (~`r`.`B`) | `r`.`C`,
+	(`r`.`A` ^ (~`r`.`B`)) | `r`.`C`,
+	`r`.`A` | (-5),
+	(-5) | `r`.`C`,
+	(`r`.`A` + (-5)) | `r`.`C`,
+	(`r`.`A` - (-5)) | `r`.`C`,
+	(`r`.`A` * (-5)) | `r`.`C`,
+	(`r`.`A` % (-5)) | `r`.`C`,
+	(`r`.`A` & (-5)) | `r`.`C`,
+	`r`.`A` | (-5) | `r`.`C`,
+	(`r`.`A` ^ (-5)) | `r`.`C`
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -61,7 +73,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` + `r`.`B` | `r`.`C`
+	(`r`.`A` + `r`.`B`) | `r`.`C`
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -69,7 +81,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` | `r`.`B` + `r`.`C`
+	`r`.`A` | (`r`.`B` + `r`.`C`)
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -77,7 +89,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` + `r`.`B` | `r`.`C`
+	(`r`.`A` + `r`.`B`) | `r`.`C`
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -85,7 +97,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` | `r`.`B` + `r`.`C`
+	`r`.`A` | (`r`.`B` + `r`.`C`)
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -93,7 +105,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` - `r`.`B` | `r`.`C`
+	(`r`.`A` - `r`.`B`) | `r`.`C`
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -101,7 +113,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` - `r`.`B` | `r`.`C`
+	(`r`.`A` - `r`.`B`) | `r`.`C`
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -109,7 +121,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` * `r`.`B` | `r`.`C`
+	(`r`.`A` * `r`.`B`) | `r`.`C`
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -117,7 +129,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` | `r`.`B` * `r`.`C`
+	`r`.`A` | (`r`.`B` * `r`.`C`)
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -125,7 +137,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` * `r`.`B` | `r`.`C`
+	(`r`.`A` * `r`.`B`) | `r`.`C`
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -133,7 +145,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` | `r`.`B` * `r`.`C`
+	`r`.`A` | (`r`.`B` * `r`.`C`)
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -141,7 +153,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` / `r`.`B` | `r`.`C`
+	(`r`.`A` / `r`.`B`) | `r`.`C`
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -149,7 +161,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` | `r`.`B` / `r`.`C`
+	`r`.`A` | (`r`.`B` / `r`.`C`)
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -157,7 +169,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` / `r`.`B` | `r`.`C`
+	(`r`.`A` / `r`.`B`) | `r`.`C`
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -165,7 +177,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` | `r`.`B` / `r`.`C`
+	`r`.`A` | (`r`.`B` / `r`.`C`)
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -173,7 +185,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` % `r`.`B` | `r`.`C`
+	(`r`.`A` % `r`.`B`) | `r`.`C`
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -181,7 +193,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` | `r`.`B` % `r`.`C`
+	`r`.`A` | (`r`.`B` % `r`.`C`)
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -189,7 +201,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` % `r`.`B` | `r`.`C`
+	(`r`.`A` % `r`.`B`) | `r`.`C`
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -197,7 +209,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` | `r`.`B` % `r`.`C`
+	`r`.`A` | (`r`.`B` % `r`.`C`)
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -205,7 +217,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` & `r`.`B` | `r`.`C`
+	(`r`.`A` & `r`.`B`) | `r`.`C`
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -213,7 +225,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` | `r`.`B` & `r`.`C`
+	`r`.`A` | (`r`.`B` & `r`.`C`)
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -221,7 +233,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` & `r`.`B` | `r`.`C`
+	(`r`.`A` & `r`.`B`) | `r`.`C`
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -229,7 +241,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` | `r`.`B` & `r`.`C`
+	`r`.`A` | (`r`.`B` & `r`.`C`)
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -237,7 +249,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` ^ `r`.`B` | `r`.`C`
+	(`r`.`A` ^ `r`.`B`) | `r`.`C`
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -245,7 +257,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` | `r`.`B` ^ `r`.`C`
+	`r`.`A` | (`r`.`B` ^ `r`.`C`)
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -253,7 +265,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` ^ `r`.`B` | `r`.`C`
+	(`r`.`A` ^ `r`.`B`) | `r`.`C`
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -261,7 +273,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` | `r`.`B` ^ `r`.`C`
+	`r`.`A` | (`r`.`B` ^ `r`.`C`)
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -269,7 +281,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` | -`r`.`B`
+	(`r`.`A` + `r`.`B`) | `r`.`C`
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -277,7 +289,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	-`r`.`B` | `r`.`C`
+	`r`.`A` | (`r`.`B` + `r`.`C`)
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -285,7 +297,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` - `r`.`B` | `r`.`C`
+	(`r`.`A` + -6) | `r`.`C`
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -293,7 +305,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` + `r`.`B` | `r`.`C`
+	(`r`.`A` - `r`.`B`) | `r`.`C`
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -301,7 +313,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` * -`r`.`B` | `r`.`C`
+	`r`.`A` | (`r`.`B` - `r`.`C`)
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -309,7 +321,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` / -`r`.`B` | `r`.`C`
+	(`r`.`A` - -6) | `r`.`C`
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -317,7 +329,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` % -`r`.`B` | `r`.`C`
+	(`r`.`A` * `r`.`B`) | `r`.`C`
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -325,7 +337,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` & -`r`.`B` | `r`.`C`
+	`r`.`A` | (`r`.`B` * `r`.`C`)
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -333,7 +345,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` | -`r`.`B` | `r`.`C`
+	(`r`.`A` * -6) | `r`.`C`
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -341,7 +353,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` ^ -`r`.`B` | `r`.`C`
+	(`r`.`A` + `r`.`B`) | `r`.`C`
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -349,7 +361,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` | ~`r`.`B`
+	`r`.`A` | (`r`.`B` + `r`.`C`)
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -357,7 +369,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	~`r`.`B` | `r`.`C`
+	(`r`.`A` + -6) | `r`.`C`
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -365,7 +377,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` + (~`r`.`B`) | `r`.`C`
+	`r`.`A` | (-`r`.`B`)
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -373,7 +385,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` - (~`r`.`B`) | `r`.`C`
+	(-`r`.`B`) | `r`.`C`
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -381,7 +393,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` * (~`r`.`B`) | `r`.`C`
+	(`r`.`A` - `r`.`B`) | `r`.`C`
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -389,7 +401,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` % (~`r`.`B`) | `r`.`C`
+	(`r`.`A` + `r`.`B`) | `r`.`C`
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -397,7 +409,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` & ~`r`.`B` | `r`.`C`
+	(`r`.`A` * (-`r`.`B`)) | `r`.`C`
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -405,7 +417,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` | ~`r`.`B` | `r`.`C`
+	(`r`.`A` / (-`r`.`B`)) | `r`.`C`
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -413,7 +425,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` ^ ~`r`.`B` | `r`.`C`
+	(`r`.`A` % (-`r`.`B`)) | `r`.`C`
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -421,7 +433,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` | -5
+	(`r`.`A` & (-`r`.`B`)) | `r`.`C`
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -429,7 +441,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	-5 | `r`.`C`
+	`r`.`A` | (-`r`.`B`) | `r`.`C`
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -437,7 +449,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` + -5 | `r`.`C`
+	(`r`.`A` ^ (-`r`.`B`)) | `r`.`C`
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -445,7 +457,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` - -5 | `r`.`C`
+	`r`.`A` | (~`r`.`B`)
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -453,7 +465,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` * -5 | `r`.`C`
+	(~`r`.`B`) | `r`.`C`
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -461,7 +473,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` % -5 | `r`.`C`
+	(`r`.`A` + (~`r`.`B`)) | `r`.`C`
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -469,7 +481,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` & -5 | `r`.`C`
+	(`r`.`A` - (~`r`.`B`)) | `r`.`C`
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -477,7 +489,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` | -5 | `r`.`C`
+	(`r`.`A` * (~`r`.`B`)) | `r`.`C`
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -485,7 +497,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` ^ -5 | `r`.`C`
+	(`r`.`A` % (~`r`.`B`)) | `r`.`C`
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -493,15 +505,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` | -5,
-	-5 | `r`.`C`,
-	`r`.`A` + -5 | `r`.`C`,
-	`r`.`A` - -5 | `r`.`C`,
-	`r`.`A` * -5 | `r`.`C`,
-	`r`.`A` % -5 | `r`.`C`,
-	`r`.`A` & -5 | `r`.`C`,
-	`r`.`A` | -5 | `r`.`C`,
-	`r`.`A` ^ -5 | `r`.`C`
+	(`r`.`A` & (~`r`.`B`)) | `r`.`C`
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -509,7 +513,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` | -5
+	`r`.`A` | (~`r`.`B`) | `r`.`C`
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -517,7 +521,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	-5 | `r`.`C`
+	(`r`.`A` ^ (~`r`.`B`)) | `r`.`C`
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -525,7 +529,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` + -5 | `r`.`C`
+	`r`.`A` | (-5)
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -533,7 +537,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` - -5 | `r`.`C`
+	(-5) | `r`.`C`
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -541,7 +545,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` * -5 | `r`.`C`
+	(`r`.`A` + (-5)) | `r`.`C`
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -549,7 +553,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` % -5 | `r`.`C`
+	(`r`.`A` - (-5)) | `r`.`C`
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -557,7 +561,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` & -5 | `r`.`C`
+	(`r`.`A` * (-5)) | `r`.`C`
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -565,7 +569,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` | -5 | `r`.`C`
+	(`r`.`A` % (-5)) | `r`.`C`
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -573,7 +577,111 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`r`.`A` ^ -5 | `r`.`C`
+	(`r`.`A` & (-5)) | `r`.`C`
+FROM
+	`PrecedenceRow` `r`
+ORDER BY
+	`r`.`Id`
+
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57
+SELECT
+	`r`.`A` | (-5) | `r`.`C`
+FROM
+	`PrecedenceRow` `r`
+ORDER BY
+	`r`.`Id`
+
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57
+SELECT
+	(`r`.`A` ^ (-5)) | `r`.`C`
+FROM
+	`PrecedenceRow` `r`
+ORDER BY
+	`r`.`Id`
+
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57
+SELECT
+	`r`.`A` | (-5),
+	(-5) | `r`.`C`,
+	(`r`.`A` + (-5)) | `r`.`C`,
+	(`r`.`A` - (-5)) | `r`.`C`,
+	(`r`.`A` * (-5)) | `r`.`C`,
+	(`r`.`A` % (-5)) | `r`.`C`,
+	(`r`.`A` & (-5)) | `r`.`C`,
+	`r`.`A` | (-5) | `r`.`C`,
+	(`r`.`A` ^ (-5)) | `r`.`C`
+FROM
+	`PrecedenceRow` `r`
+ORDER BY
+	`r`.`Id`
+
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57
+SELECT
+	`r`.`A` | (-5)
+FROM
+	`PrecedenceRow` `r`
+ORDER BY
+	`r`.`Id`
+
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57
+SELECT
+	(-5) | `r`.`C`
+FROM
+	`PrecedenceRow` `r`
+ORDER BY
+	`r`.`Id`
+
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57
+SELECT
+	(`r`.`A` + (-5)) | `r`.`C`
+FROM
+	`PrecedenceRow` `r`
+ORDER BY
+	`r`.`Id`
+
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57
+SELECT
+	(`r`.`A` - (-5)) | `r`.`C`
+FROM
+	`PrecedenceRow` `r`
+ORDER BY
+	`r`.`Id`
+
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57
+SELECT
+	(`r`.`A` * (-5)) | `r`.`C`
+FROM
+	`PrecedenceRow` `r`
+ORDER BY
+	`r`.`Id`
+
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57
+SELECT
+	(`r`.`A` % (-5)) | `r`.`C`
+FROM
+	`PrecedenceRow` `r`
+ORDER BY
+	`r`.`Id`
+
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57
+SELECT
+	(`r`.`A` & (-5)) | `r`.`C`
+FROM
+	`PrecedenceRow` `r`
+ORDER BY
+	`r`.`Id`
+
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57
+SELECT
+	`r`.`A` | (-5) | `r`.`C`
+FROM
+	`PrecedenceRow` `r`
+ORDER BY
+	`r`.`Id`
+
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57
+SELECT
+	(`r`.`A` ^ (-5)) | `r`.`C`
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -611,6 +719,18 @@ ORDER BY
 -- cell Or/Or(a,Xor(b,c)): green
 -- cell Or/Or(AsNotNull(Xor(a,b)),c): green
 -- cell Or/Or(a,AsNotNull(Xor(b,c))): green
+-- cell Or/Or(TAdd(a,b),c): green
+-- cell Or/Or(a,TAdd(b,c)): green
+-- cell Or/Or(TAdd(a,NegLit),c): green
+-- cell Or/Or(TSub(a,b),c): green
+-- cell Or/Or(a,TSub(b,c)): green
+-- cell Or/Or(TSub(a,NegLit),c): green
+-- cell Or/Or(TMul(a,b),c): green
+-- cell Or/Or(a,TMul(b,c)): green
+-- cell Or/Or(TMul(a,NegLit),c): error
+-- cell Or/Or(TAddOffset(a,b),c): green
+-- cell Or/Or(a,TAddOffset(b,c)): green
+-- cell Or/Or(TAddOffset(a,NegLit),c): green
 -- cell Or/Or(a,Neg(b)): error
 -- cell Or/Or(Neg(b),c): error
 -- cell Or/Or(Add(a,Neg(b)),c): green

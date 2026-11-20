@@ -4,7 +4,7 @@ SELECT
 FROM
 	`ConcatTestEntity` `e`
 WHERE
-	(CONCAT(Coalesce(`e`.`StrReq`, ''), ' I')) = 'Programmer I'
+	CONCAT(Coalesce(`e`.`StrReq`, ''), ' I') = 'Programmer I'
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 SELECT

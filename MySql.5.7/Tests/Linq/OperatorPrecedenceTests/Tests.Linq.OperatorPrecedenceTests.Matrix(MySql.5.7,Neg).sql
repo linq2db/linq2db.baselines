@@ -12,8 +12,8 @@ SELECT
 	-(`r`.`A` ^ `r`.`B`),
 	`r`.`B`,
 	-(~`r`.`B`),
-	--5,
-	-(-5 * `r`.`B`)
+	-(-5),
+	-((-5) * `r`.`B`)
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -117,7 +117,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	--5
+	-(-5)
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -125,7 +125,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	-(-5 * `r`.`B`)
+	-((-5) * `r`.`B`)
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -133,7 +133,7 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	--5
+	-(-5)
 FROM
 	`PrecedenceRow` `r`
 ORDER BY

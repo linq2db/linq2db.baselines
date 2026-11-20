@@ -4,7 +4,7 @@ SELECT
 FROM
 	`ConcatTestEntity` `e`
 WHERE
-	(CONCAT(Coalesce(`e`.`Str1`, ''), ' ', Coalesce(`e`.`StrReq`, ''), '!')) = 'John Programmer!'
+	CONCAT(Coalesce(`e`.`Str1`, ''), ' ', Coalesce(`e`.`StrReq`, ''), '!') = 'John Programmer!'
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
