@@ -7,7 +7,7 @@ SELECT
 FROM
 	"ConcatProduct" p
 WHERE
-	(p."Sku" || p."Title") = :key
+	p."Sku" || p."Title" = :key
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 SELECT
