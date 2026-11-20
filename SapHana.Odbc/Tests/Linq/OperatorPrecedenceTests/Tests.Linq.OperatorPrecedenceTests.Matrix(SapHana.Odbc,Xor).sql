@@ -1,57 +1,69 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
 SELECT
-	("r"."A" + "r"."B" + "r"."C") - BITAND("r"."A" + "r"."B", "r"."C") * 2,
-	("r"."A" + "r"."B" + "r"."C") - BITAND("r"."A", "r"."B" + "r"."C") * 2,
-	("r"."A" + "r"."B" + "r"."C") - BITAND("r"."A" + "r"."B", "r"."C") * 2,
-	("r"."A" + "r"."B" + "r"."C") - BITAND("r"."A", "r"."B" + "r"."C") * 2,
-	("r"."A" - "r"."B" + "r"."C") - BITAND("r"."A" - "r"."B", "r"."C") * 2,
-	("r"."A" - "r"."B" + "r"."C") - BITAND("r"."A" - "r"."B", "r"."C") * 2,
-	("r"."A" * "r"."B" + "r"."C") - BITAND("r"."A" * "r"."B", "r"."C") * 2,
-	("r"."A" + "r"."B" * "r"."C") - BITAND("r"."A", "r"."B" * "r"."C") * 2,
-	("r"."A" * "r"."B" + "r"."C") - BITAND("r"."A" * "r"."B", "r"."C") * 2,
-	("r"."A" + "r"."B" * "r"."C") - BITAND("r"."A", "r"."B" * "r"."C") * 2,
-	("r"."A" / "r"."B" + "r"."C") - BITAND("r"."A" / "r"."B", "r"."C") * 2,
-	("r"."A" + "r"."B" / "r"."C") - BITAND("r"."A", "r"."B" / "r"."C") * 2,
-	("r"."A" / "r"."B" + "r"."C") - BITAND("r"."A" / "r"."B", "r"."C") * 2,
-	("r"."A" + "r"."B" / "r"."C") - BITAND("r"."A", "r"."B" / "r"."C") * 2,
-	(MOD("r"."A", "r"."B") + "r"."C") - BITAND(MOD("r"."A", "r"."B"), "r"."C") * 2,
-	("r"."A" + MOD("r"."B", "r"."C")) - BITAND("r"."A", MOD("r"."B", "r"."C")) * 2,
-	(MOD("r"."A", "r"."B") + "r"."C") - BITAND(MOD("r"."A", "r"."B"), "r"."C") * 2,
-	("r"."A" + MOD("r"."B", "r"."C")) - BITAND("r"."A", MOD("r"."B", "r"."C")) * 2,
-	(BITAND("r"."A", "r"."B") + "r"."C") - BITAND(BITAND("r"."A", "r"."B"), "r"."C") * 2,
-	("r"."A" + BITAND("r"."B", "r"."C")) - BITAND("r"."A", BITAND("r"."B", "r"."C")) * 2,
-	(BITAND("r"."A", "r"."B") + "r"."C") - BITAND(BITAND("r"."A", "r"."B"), "r"."C") * 2,
-	("r"."A" + BITAND("r"."B", "r"."C")) - BITAND("r"."A", BITAND("r"."B", "r"."C")) * 2,
-	(("r"."A" + "r"."B") - BITAND("r"."A", "r"."B") + "r"."C") - BITAND(("r"."A" + "r"."B") - BITAND("r"."A", "r"."B"), "r"."C") * 2,
-	("r"."A" + ("r"."B" + "r"."C") - BITAND("r"."B", "r"."C")) - BITAND("r"."A", ("r"."B" + "r"."C") - BITAND("r"."B", "r"."C")) * 2,
-	(("r"."A" + "r"."B") - BITAND("r"."A", "r"."B") + "r"."C") - BITAND(("r"."A" + "r"."B") - BITAND("r"."A", "r"."B"), "r"."C") * 2,
-	("r"."A" + ("r"."B" + "r"."C") - BITAND("r"."B", "r"."C")) - BITAND("r"."A", ("r"."B" + "r"."C") - BITAND("r"."B", "r"."C")) * 2,
-	("r"."A" - "r"."B") - BITAND("r"."A", -"r"."B") * 2,
-	(-"r"."B" + "r"."C") - BITAND(-"r"."B", "r"."C") * 2,
-	("r"."A" - "r"."B" + "r"."C") - BITAND("r"."A" - "r"."B", "r"."C") * 2,
-	("r"."A" + "r"."B" + "r"."C") - BITAND("r"."A" + "r"."B", "r"."C") * 2,
-	("r"."A" * -"r"."B" + "r"."C") - BITAND("r"."A" * -"r"."B", "r"."C") * 2,
-	("r"."A" / -"r"."B" + "r"."C") - BITAND("r"."A" / -"r"."B", "r"."C") * 2,
-	(MOD("r"."A", -"r"."B") + "r"."C") - BITAND(MOD("r"."A", -"r"."B"), "r"."C") * 2,
-	(BITAND("r"."A", -"r"."B") + "r"."C") - BITAND(BITAND("r"."A", -"r"."B"), "r"."C") * 2,
-	(("r"."A" - "r"."B") - BITAND("r"."A", -"r"."B") + "r"."C") - BITAND(("r"."A" - "r"."B") - BITAND("r"."A", -"r"."B"), "r"."C") * 2,
-	(("r"."A" - "r"."B") - BITAND("r"."A", -"r"."B") * 2 + "r"."C") - BITAND(("r"."A" - "r"."B") - BITAND("r"."A", -"r"."B") * 2, "r"."C") * 2,
-	("r"."A" + BITNOT("r"."B")) - BITAND("r"."A", BITNOT("r"."B")) * 2,
-	("r"."A" + BITNOT("r"."B") + "r"."C") - BITAND("r"."A" + BITNOT("r"."B"), "r"."C") * 2,
-	("r"."A" - BITNOT("r"."B") + "r"."C") - BITAND("r"."A" - BITNOT("r"."B"), "r"."C") * 2,
-	("r"."A" * BITNOT("r"."B") + "r"."C") - BITAND("r"."A" * BITNOT("r"."B"), "r"."C") * 2,
-	(MOD("r"."A", BITNOT("r"."B")) + "r"."C") - BITAND(MOD("r"."A", BITNOT("r"."B")), "r"."C") * 2,
-	(BITAND("r"."A", BITNOT("r"."B")) + "r"."C") - BITAND(BITAND("r"."A", BITNOT("r"."B")), "r"."C") * 2,
-	(("r"."A" + BITNOT("r"."B")) - BITAND("r"."A", BITNOT("r"."B")) + "r"."C") - BITAND(("r"."A" + BITNOT("r"."B")) - BITAND("r"."A", BITNOT("r"."B")), "r"."C") * 2,
-	("r"."A" + -5) - BITAND("r"."A", -5) * 2,
-	(-5 + "r"."C") - BITAND(-5, "r"."C") * 2,
-	("r"."A" + -5 + "r"."C") - BITAND("r"."A" + -5, "r"."C") * 2,
-	("r"."A" - -5 + "r"."C") - BITAND("r"."A" - -5, "r"."C") * 2,
-	("r"."A" * -5 + "r"."C") - BITAND("r"."A" * -5, "r"."C") * 2,
-	(MOD("r"."A", -5) + "r"."C") - BITAND(MOD("r"."A", -5), "r"."C") * 2,
-	(BITAND("r"."A", -5) + "r"."C") - BITAND(BITAND("r"."A", -5), "r"."C") * 2,
-	(("r"."A" + -5) - BITAND("r"."A", -5) + "r"."C") - BITAND(("r"."A" + -5) - BITAND("r"."A", -5), "r"."C") * 2,
-	(("r"."A" + -5) - BITAND("r"."A", -5) * 2 + "r"."C") - BITAND(("r"."A" + -5) - BITAND("r"."A", -5) * 2, "r"."C") * 2
+	"r"."A" + "r"."B" + "r"."C" - BITAND("r"."A" + "r"."B", "r"."C") * 2,
+	"r"."A" + ("r"."B" + "r"."C") - BITAND("r"."A", "r"."B" + "r"."C") * 2,
+	"r"."A" + "r"."B" + "r"."C" - BITAND("r"."A" + "r"."B", "r"."C") * 2,
+	"r"."A" + ("r"."B" + "r"."C") - BITAND("r"."A", "r"."B" + "r"."C") * 2,
+	"r"."A" - "r"."B" + "r"."C" - BITAND("r"."A" - "r"."B", "r"."C") * 2,
+	"r"."A" - "r"."B" + "r"."C" - BITAND("r"."A" - "r"."B", "r"."C") * 2,
+	"r"."A" * "r"."B" + "r"."C" - BITAND("r"."A" * "r"."B", "r"."C") * 2,
+	"r"."A" + "r"."B" * "r"."C" - BITAND("r"."A", "r"."B" * "r"."C") * 2,
+	"r"."A" * "r"."B" + "r"."C" - BITAND("r"."A" * "r"."B", "r"."C") * 2,
+	"r"."A" + "r"."B" * "r"."C" - BITAND("r"."A", "r"."B" * "r"."C") * 2,
+	"r"."A" / "r"."B" + "r"."C" - BITAND("r"."A" / "r"."B", "r"."C") * 2,
+	"r"."A" + "r"."B" / "r"."C" - BITAND("r"."A", "r"."B" / "r"."C") * 2,
+	"r"."A" / "r"."B" + "r"."C" - BITAND("r"."A" / "r"."B", "r"."C") * 2,
+	"r"."A" + "r"."B" / "r"."C" - BITAND("r"."A", "r"."B" / "r"."C") * 2,
+	MOD("r"."A", "r"."B") + "r"."C" - BITAND(MOD("r"."A", "r"."B"), "r"."C") * 2,
+	"r"."A" + MOD("r"."B", "r"."C") - BITAND("r"."A", MOD("r"."B", "r"."C")) * 2,
+	MOD("r"."A", "r"."B") + "r"."C" - BITAND(MOD("r"."A", "r"."B"), "r"."C") * 2,
+	"r"."A" + MOD("r"."B", "r"."C") - BITAND("r"."A", MOD("r"."B", "r"."C")) * 2,
+	BITAND("r"."A", "r"."B") + "r"."C" - BITAND(BITAND("r"."A", "r"."B"), "r"."C") * 2,
+	"r"."A" + BITAND("r"."B", "r"."C") - BITAND("r"."A", BITAND("r"."B", "r"."C")) * 2,
+	BITAND("r"."A", "r"."B") + "r"."C" - BITAND(BITAND("r"."A", "r"."B"), "r"."C") * 2,
+	"r"."A" + BITAND("r"."B", "r"."C") - BITAND("r"."A", BITAND("r"."B", "r"."C")) * 2,
+	"r"."A" + "r"."B" - BITAND("r"."A", "r"."B") + "r"."C" - BITAND("r"."A" + "r"."B" - BITAND("r"."A", "r"."B"), "r"."C") * 2,
+	"r"."A" + ("r"."B" + "r"."C" - BITAND("r"."B", "r"."C")) - BITAND("r"."A", "r"."B" + "r"."C" - BITAND("r"."B", "r"."C")) * 2,
+	"r"."A" + "r"."B" - BITAND("r"."A", "r"."B") + "r"."C" - BITAND("r"."A" + "r"."B" - BITAND("r"."A", "r"."B"), "r"."C") * 2,
+	"r"."A" + ("r"."B" + "r"."C" - BITAND("r"."B", "r"."C")) - BITAND("r"."A", "r"."B" + "r"."C" - BITAND("r"."B", "r"."C")) * 2,
+	("r"."A" + "r"."B") + "r"."C" - BITAND("r"."A" + "r"."B", "r"."C") * 2,
+	"r"."A" + ("r"."B" + "r"."C") - BITAND("r"."A", "r"."B" + "r"."C") * 2,
+	("r"."A" + -6) + "r"."C" - BITAND("r"."A" + -6, "r"."C") * 2,
+	("r"."A" - "r"."B") + "r"."C" - BITAND("r"."A" - "r"."B", "r"."C") * 2,
+	"r"."A" + ("r"."B" - "r"."C") - BITAND("r"."A", "r"."B" - "r"."C") * 2,
+	("r"."A" - -6) + "r"."C" - BITAND("r"."A" - -6, "r"."C") * 2,
+	"r"."A" * "r"."B" + "r"."C" - BITAND("r"."A" * "r"."B", "r"."C") * 2,
+	"r"."A" + "r"."B" * "r"."C" - BITAND("r"."A", "r"."B" * "r"."C") * 2,
+	"r"."A" * -6 + "r"."C" - BITAND("r"."A" * -6, "r"."C") * 2,
+	("r"."A" + "r"."B") + "r"."C" - BITAND("r"."A" + "r"."B", "r"."C") * 2,
+	"r"."A" + ("r"."B" + "r"."C") - BITAND("r"."A", "r"."B" + "r"."C") * 2,
+	("r"."A" + -6) + "r"."C" - BITAND("r"."A" + -6, "r"."C") * 2,
+	"r"."A" - "r"."B" - BITAND("r"."A", -"r"."B") * 2,
+	(-"r"."B") + "r"."C" - BITAND(-"r"."B", "r"."C") * 2,
+	"r"."A" - "r"."B" + "r"."C" - BITAND("r"."A" - "r"."B", "r"."C") * 2,
+	"r"."A" + "r"."B" + "r"."C" - BITAND("r"."A" + "r"."B", "r"."C") * 2,
+	"r"."A" * (-"r"."B") + "r"."C" - BITAND("r"."A" * (-"r"."B"), "r"."C") * 2,
+	"r"."A" / (-"r"."B") + "r"."C" - BITAND("r"."A" / (-"r"."B"), "r"."C") * 2,
+	MOD("r"."A", -"r"."B") + "r"."C" - BITAND(MOD("r"."A", -"r"."B"), "r"."C") * 2,
+	BITAND("r"."A", -"r"."B") + "r"."C" - BITAND(BITAND("r"."A", -"r"."B"), "r"."C") * 2,
+	"r"."A" - "r"."B" - BITAND("r"."A", -"r"."B") + "r"."C" - BITAND("r"."A" - "r"."B" - BITAND("r"."A", -"r"."B"), "r"."C") * 2,
+	"r"."A" - "r"."B" - BITAND("r"."A", -"r"."B") * 2 + "r"."C" - BITAND("r"."A" - "r"."B" - BITAND("r"."A", -"r"."B") * 2, "r"."C") * 2,
+	"r"."A" + BITNOT("r"."B") - BITAND("r"."A", BITNOT("r"."B")) * 2,
+	"r"."A" + BITNOT("r"."B") + "r"."C" - BITAND("r"."A" + BITNOT("r"."B"), "r"."C") * 2,
+	"r"."A" - BITNOT("r"."B") + "r"."C" - BITAND("r"."A" - BITNOT("r"."B"), "r"."C") * 2,
+	"r"."A" * BITNOT("r"."B") + "r"."C" - BITAND("r"."A" * BITNOT("r"."B"), "r"."C") * 2,
+	MOD("r"."A", BITNOT("r"."B")) + "r"."C" - BITAND(MOD("r"."A", BITNOT("r"."B")), "r"."C") * 2,
+	BITAND("r"."A", BITNOT("r"."B")) + "r"."C" - BITAND(BITAND("r"."A", BITNOT("r"."B")), "r"."C") * 2,
+	"r"."A" + BITNOT("r"."B") - BITAND("r"."A", BITNOT("r"."B")) + "r"."C" - BITAND("r"."A" + BITNOT("r"."B") - BITAND("r"."A", BITNOT("r"."B")), "r"."C") * 2,
+	"r"."A" + (-5) - BITAND("r"."A", -5) * 2,
+	(-5) + "r"."C" - BITAND(-5, "r"."C") * 2,
+	"r"."A" + (-5) + "r"."C" - BITAND("r"."A" + (-5), "r"."C") * 2,
+	"r"."A" - (-5) + "r"."C" - BITAND("r"."A" - (-5), "r"."C") * 2,
+	"r"."A" * (-5) + "r"."C" - BITAND("r"."A" * (-5), "r"."C") * 2,
+	MOD("r"."A", -5) + "r"."C" - BITAND(MOD("r"."A", -5), "r"."C") * 2,
+	BITAND("r"."A", -5) + "r"."C" - BITAND(BITAND("r"."A", -5), "r"."C") * 2,
+	"r"."A" + (-5) - BITAND("r"."A", -5) + "r"."C" - BITAND("r"."A" + (-5) - BITAND("r"."A", -5), "r"."C") * 2,
+	"r"."A" + (-5) - BITAND("r"."A", -5) * 2 + "r"."C" - BITAND("r"."A" + (-5) - BITAND("r"."A", -5) * 2, "r"."C") * 2
 FROM
 	"PrecedenceRow" "r"
 ORDER BY
@@ -59,15 +71,15 @@ ORDER BY
 
 -- SapHana.Odbc SapHanaOdbc
 SELECT
-	("r"."A" + -5) - BITAND("r"."A", -5) * 2,
-	(-5 + "r"."C") - BITAND(-5, "r"."C") * 2,
-	("r"."A" + -5 + "r"."C") - BITAND("r"."A" + -5, "r"."C") * 2,
-	("r"."A" - -5 + "r"."C") - BITAND("r"."A" - -5, "r"."C") * 2,
-	("r"."A" * -5 + "r"."C") - BITAND("r"."A" * -5, "r"."C") * 2,
-	(MOD("r"."A", -5) + "r"."C") - BITAND(MOD("r"."A", -5), "r"."C") * 2,
-	(BITAND("r"."A", -5) + "r"."C") - BITAND(BITAND("r"."A", -5), "r"."C") * 2,
-	(("r"."A" + -5) - BITAND("r"."A", -5) + "r"."C") - BITAND(("r"."A" + -5) - BITAND("r"."A", -5), "r"."C") * 2,
-	(("r"."A" + -5) - BITAND("r"."A", -5) * 2 + "r"."C") - BITAND(("r"."A" + -5) - BITAND("r"."A", -5) * 2, "r"."C") * 2
+	"r"."A" + (-5) - BITAND("r"."A", -5) * 2,
+	(-5) + "r"."C" - BITAND(-5, "r"."C") * 2,
+	"r"."A" + (-5) + "r"."C" - BITAND("r"."A" + (-5), "r"."C") * 2,
+	"r"."A" - (-5) + "r"."C" - BITAND("r"."A" - (-5), "r"."C") * 2,
+	"r"."A" * (-5) + "r"."C" - BITAND("r"."A" * (-5), "r"."C") * 2,
+	MOD("r"."A", -5) + "r"."C" - BITAND(MOD("r"."A", -5), "r"."C") * 2,
+	BITAND("r"."A", -5) + "r"."C" - BITAND(BITAND("r"."A", -5), "r"."C") * 2,
+	"r"."A" + (-5) - BITAND("r"."A", -5) + "r"."C" - BITAND("r"."A" + (-5) - BITAND("r"."A", -5), "r"."C") * 2,
+	"r"."A" + (-5) - BITAND("r"."A", -5) * 2 + "r"."C" - BITAND("r"."A" + (-5) - BITAND("r"."A", -5) * 2, "r"."C") * 2
 FROM
 	"PrecedenceRow" "r"
 ORDER BY
@@ -105,6 +117,18 @@ ORDER BY
 -- cell Xor/Xor(a,Xor(b,c)): skipped
 -- cell Xor/Xor(AsNotNull(Xor(a,b)),c): skipped
 -- cell Xor/Xor(a,AsNotNull(Xor(b,c))): skipped
+-- cell Xor/Xor(TAdd(a,b),c): green
+-- cell Xor/Xor(a,TAdd(b,c)): green
+-- cell Xor/Xor(TAdd(a,NegLit),c): green
+-- cell Xor/Xor(TSub(a,b),c): green
+-- cell Xor/Xor(a,TSub(b,c)): green
+-- cell Xor/Xor(TSub(a,NegLit),c): green
+-- cell Xor/Xor(TMul(a,b),c): green
+-- cell Xor/Xor(a,TMul(b,c)): green
+-- cell Xor/Xor(TMul(a,NegLit),c): green
+-- cell Xor/Xor(TAddOffset(a,b),c): green
+-- cell Xor/Xor(a,TAddOffset(b,c)): green
+-- cell Xor/Xor(TAddOffset(a,NegLit),c): green
 -- cell Xor/Xor(a,Neg(b)): green
 -- cell Xor/Xor(Neg(b),c): green
 -- cell Xor/Xor(Add(a,Neg(b)),c): green

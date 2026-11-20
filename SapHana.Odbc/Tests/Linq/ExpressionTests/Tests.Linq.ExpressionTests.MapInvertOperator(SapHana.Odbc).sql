@@ -9,7 +9,7 @@ SET     @removeMask = 12
 UPDATE
 	"WarehouseTableDto" "t1"
 SET
-	"Value" = BITAND(("t1"."Value" + ?) - BITAND("t1"."Value", ?), BITNOT(?))
+	"Value" = BITAND("t1"."Value" + ? - BITAND("t1"."Value", ?), BITNOT(?))
 
 -- SapHana.Odbc SapHanaOdbc
 SELECT

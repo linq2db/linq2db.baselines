@@ -8,45 +8,60 @@ SELECT
 	"r"."A" * ("r"."B" - "r"."C"),
 	("r"."A" - "r"."B") * "r"."C",
 	"r"."A" * ("r"."B" - "r"."C"),
-	("r"."A" / "r"."B") * "r"."C",
-	("r"."A" / "r"."B") * "r"."C",
+	"r"."A" / "r"."B" * "r"."C",
+	"r"."A" / "r"."B" * "r"."C",
 	BITAND("r"."A", "r"."B") * "r"."C",
 	"r"."A" * BITAND("r"."B", "r"."C"),
 	BITAND("r"."A", "r"."B") * "r"."C",
 	"r"."A" * BITAND("r"."B", "r"."C"),
-	(("r"."A" + "r"."B") - BITAND("r"."A", "r"."B")) * "r"."C",
-	"r"."A" * (("r"."B" + "r"."C") - BITAND("r"."B", "r"."C")),
-	(("r"."A" + "r"."B") - BITAND("r"."A", "r"."B")) * "r"."C",
-	"r"."A" * (("r"."B" + "r"."C") - BITAND("r"."B", "r"."C")),
-	(("r"."A" + "r"."B") - BITAND("r"."A", "r"."B") * 2) * "r"."C",
-	"r"."A" * (("r"."B" + "r"."C") - BITAND("r"."B", "r"."C") * 2),
-	(("r"."A" + "r"."B") - BITAND("r"."A", "r"."B") * 2) * "r"."C",
-	"r"."A" * (("r"."B" + "r"."C") - BITAND("r"."B", "r"."C") * 2),
-	"r"."A" * -"r"."B",
+	("r"."A" + "r"."B" - BITAND("r"."A", "r"."B")) * "r"."C",
+	"r"."A" * ("r"."B" + "r"."C" - BITAND("r"."B", "r"."C")),
+	("r"."A" + "r"."B" - BITAND("r"."A", "r"."B")) * "r"."C",
+	"r"."A" * ("r"."B" + "r"."C" - BITAND("r"."B", "r"."C")),
+	("r"."A" + "r"."B" - BITAND("r"."A", "r"."B") * 2) * "r"."C",
+	"r"."A" * ("r"."B" + "r"."C" - BITAND("r"."B", "r"."C") * 2),
+	("r"."A" + "r"."B" - BITAND("r"."A", "r"."B") * 2) * "r"."C",
+	"r"."A" * ("r"."B" + "r"."C" - BITAND("r"."B", "r"."C") * 2),
+	("r"."A" + "r"."B") * "r"."C",
+	"r"."A" * ("r"."B" + "r"."C"),
+	("r"."A" + -6) * "r"."C",
+	("r"."A" - "r"."B") * "r"."C",
+	"r"."A" * ("r"."B" - "r"."C"),
+	("r"."A" - -6) * "r"."C",
+	("r"."A" * "r"."B") * "r"."C",
+	"r"."A" * ("r"."B" * "r"."C"),
+	("r"."A" * -6) * "r"."C",
+	("r"."A" / "r"."B") * "r"."C",
+	"r"."A" * ("r"."B" / "r"."C"),
+	("r"."A" / -6) * "r"."C",
+	("r"."A" + "r"."B") * "r"."C",
+	"r"."A" * ("r"."B" + "r"."C"),
+	("r"."A" + -6) * "r"."C",
+	"r"."A" * (-"r"."B"),
 	("r"."A" - "r"."B") * "r"."C",
 	("r"."A" + "r"."B") * "r"."C",
-	("r"."A" / -"r"."B") * "r"."C",
+	"r"."A" / (-"r"."B") * "r"."C",
 	BITAND("r"."A", -"r"."B") * "r"."C",
-	(("r"."A" - "r"."B") - BITAND("r"."A", -"r"."B")) * "r"."C",
-	(("r"."A" - "r"."B") - BITAND("r"."A", -"r"."B") * 2) * "r"."C",
+	("r"."A" - "r"."B" - BITAND("r"."A", -"r"."B")) * "r"."C",
+	("r"."A" - "r"."B" - BITAND("r"."A", -"r"."B") * 2) * "r"."C",
 	"r"."A" * BITNOT("r"."B"),
 	BITNOT("r"."B") * "r"."C",
 	("r"."A" + BITNOT("r"."B")) * "r"."C",
 	("r"."A" - BITNOT("r"."B")) * "r"."C",
-	("r"."A" * BITNOT("r"."B")) * "r"."C",
+	"r"."A" * BITNOT("r"."B") * "r"."C",
 	MOD("r"."A", BITNOT("r"."B")) * "r"."C",
 	BITAND("r"."A", BITNOT("r"."B")) * "r"."C",
-	(("r"."A" + BITNOT("r"."B")) - BITAND("r"."A", BITNOT("r"."B"))) * "r"."C",
-	(("r"."A" + BITNOT("r"."B")) - BITAND("r"."A", BITNOT("r"."B")) * 2) * "r"."C",
-	"r"."A" * -5,
-	-5 * "r"."C",
-	("r"."A" + -5) * "r"."C",
-	("r"."A" - -5) * "r"."C",
-	("r"."A" * -5) * "r"."C",
+	("r"."A" + BITNOT("r"."B") - BITAND("r"."A", BITNOT("r"."B"))) * "r"."C",
+	("r"."A" + BITNOT("r"."B") - BITAND("r"."A", BITNOT("r"."B")) * 2) * "r"."C",
+	"r"."A" * (-5),
+	(-5) * "r"."C",
+	("r"."A" + (-5)) * "r"."C",
+	("r"."A" - (-5)) * "r"."C",
+	"r"."A" * (-5) * "r"."C",
 	MOD("r"."A", -5) * "r"."C",
 	BITAND("r"."A", -5) * "r"."C",
-	(("r"."A" + -5) - BITAND("r"."A", -5)) * "r"."C",
-	(("r"."A" + -5) - BITAND("r"."A", -5) * 2) * "r"."C"
+	("r"."A" + (-5) - BITAND("r"."A", -5)) * "r"."C",
+	("r"."A" + (-5) - BITAND("r"."A", -5) * 2) * "r"."C"
 FROM
 	"PrecedenceRow" "r"
 ORDER BY
@@ -54,15 +69,15 @@ ORDER BY
 
 -- SapHana.Native SapHana
 SELECT
-	"r"."A" * -5,
-	-5 * "r"."C",
-	("r"."A" + -5) * "r"."C",
-	("r"."A" - -5) * "r"."C",
-	("r"."A" * -5) * "r"."C",
+	"r"."A" * (-5),
+	(-5) * "r"."C",
+	("r"."A" + (-5)) * "r"."C",
+	("r"."A" - (-5)) * "r"."C",
+	"r"."A" * (-5) * "r"."C",
 	MOD("r"."A", -5) * "r"."C",
 	BITAND("r"."A", -5) * "r"."C",
-	(("r"."A" + -5) - BITAND("r"."A", -5)) * "r"."C",
-	(("r"."A" + -5) - BITAND("r"."A", -5) * 2) * "r"."C"
+	("r"."A" + (-5) - BITAND("r"."A", -5)) * "r"."C",
+	("r"."A" + (-5) - BITAND("r"."A", -5) * 2) * "r"."C"
 FROM
 	"PrecedenceRow" "r"
 ORDER BY
@@ -100,6 +115,21 @@ ORDER BY
 -- cell Mul/Mul(a,Xor(b,c)): green
 -- cell Mul/Mul(AsNotNull(Xor(a,b)),c): green
 -- cell Mul/Mul(a,AsNotNull(Xor(b,c))): green
+-- cell Mul/Mul(TAdd(a,b),c): green
+-- cell Mul/Mul(a,TAdd(b,c)): green
+-- cell Mul/Mul(TAdd(a,NegLit),c): green
+-- cell Mul/Mul(TSub(a,b),c): green
+-- cell Mul/Mul(a,TSub(b,c)): green
+-- cell Mul/Mul(TSub(a,NegLit),c): green
+-- cell Mul/Mul(TMul(a,b),c): green
+-- cell Mul/Mul(a,TMul(b,c)): green
+-- cell Mul/Mul(TMul(a,NegLit),c): green
+-- cell Mul/Mul(TDiv(a,b),c): green
+-- cell Mul/Mul(a,TDiv(b,c)): green
+-- cell Mul/Mul(TDiv(a,NegLit),c): green
+-- cell Mul/Mul(TAddOffset(a,b),c): green
+-- cell Mul/Mul(a,TAddOffset(b,c)): green
+-- cell Mul/Mul(TAddOffset(a,NegLit),c): green
 -- cell Mul/Mul(a,Neg(b)): green
 -- cell Mul/Mul(Neg(b),c): skipped
 -- cell Mul/Mul(Add(a,Neg(b)),c): green

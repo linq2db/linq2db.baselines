@@ -2,7 +2,7 @@
 SELECT
 	"e"."Id",
 	Coalesce("j"."Value1", 0) + 1,
-	(Coalesce("j"."Value1", 0) + 1) - BITAND(Coalesce("j"."Value1", 0), 1),
+	Coalesce("j"."Value1", 0) + 1 - BITAND(Coalesce("j"."Value1", 0), 1),
 	CASE
 		WHEN Coalesce("j"."Value1", 0) < 5 THEN 'a'
 		ELSE 'b'
@@ -15,7 +15,7 @@ SELECT
 		WHEN 0 IN (Coalesce("j"."Value1", 0), 5) THEN 'y'
 		ELSE 'n'
 	END,
-	-Coalesce("j"."Value1", 0) + 1,
+	(-Coalesce("j"."Value1", 0)) + 1,
 	CASE
 		WHEN Coalesce("j"."Flag", 0) = 0 THEN 't'
 		ELSE 'f'

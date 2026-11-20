@@ -35,7 +35,7 @@ UPDATE
 SET
 	"Value1" = (
 		SELECT
-			("t2"."Value1" * "t2"."Value1_1") * ?
+			"t2"."Value1" * "t2"."Value1_1" * ?
 		FROM
 			(
 				SELECT
@@ -56,7 +56,7 @@ SET
 	),
 	"Value2" = (
 		SELECT
-			("t3"."Value2" * "t3"."Value2_1") * ?
+			"t3"."Value2" * "t3"."Value2_1" * ?
 		FROM
 			(
 				SELECT
@@ -77,7 +77,7 @@ SET
 	),
 	"Value3" = (
 		SELECT
-			("t4"."Value3" * "t4"."Value3_1") * ?
+			"t4"."Value3" * "t4"."Value3_1" * ?
 		FROM
 			(
 				SELECT

@@ -5,7 +5,7 @@ DECLARE @part2 Integer -- Int32
 SET     @part2 = 4
 
 SELECT
-	To_Date(Add_Years("t"."DateTimeValue", ("t"."SmallIntValue" + :"part1") - :"part2"))
+	To_Date(Add_Years("t"."DateTimeValue", "t"."SmallIntValue" + :"part1" - :"part2"))
 FROM
 	"LinqDataTypes" "t"
 

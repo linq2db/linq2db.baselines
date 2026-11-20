@@ -5,7 +5,7 @@ DECLARE @part2 Int -- Int32
 SET     @part2 = 4
 
 SELECT
-	Add_Seconds("t"."DateTimeValue", ("t"."SmallIntValue" + ?) - ?)
+	Add_Seconds("t"."DateTimeValue", "t"."SmallIntValue" + ? - ?)
 FROM
 	"LinqDataTypes" "t"
 

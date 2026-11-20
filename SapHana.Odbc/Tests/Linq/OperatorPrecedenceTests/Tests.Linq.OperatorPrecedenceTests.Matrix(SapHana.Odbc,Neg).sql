@@ -6,14 +6,14 @@ SELECT
 	-("r"."A" - "r"."B"),
 	-BITAND("r"."A", "r"."B"),
 	-BITAND("r"."A", "r"."B"),
-	-(("r"."A" + "r"."B") - BITAND("r"."A", "r"."B")),
-	-(("r"."A" + "r"."B") - BITAND("r"."A", "r"."B")),
-	-(("r"."A" + "r"."B") - BITAND("r"."A", "r"."B") * 2),
-	-(("r"."A" + "r"."B") - BITAND("r"."A", "r"."B") * 2),
+	-("r"."A" + "r"."B" - BITAND("r"."A", "r"."B")),
+	-("r"."A" + "r"."B" - BITAND("r"."A", "r"."B")),
+	-("r"."A" + "r"."B" - BITAND("r"."A", "r"."B") * 2),
+	-("r"."A" + "r"."B" - BITAND("r"."A", "r"."B") * 2),
 	"r"."B",
 	-BITNOT("r"."B"),
-	--5,
-	-(-5 * "r"."B")
+	-(-5),
+	-((-5) * "r"."B")
 FROM
 	"PrecedenceRow" "r"
 ORDER BY
@@ -21,127 +21,7 @@ ORDER BY
 
 -- SapHana.Odbc SapHanaOdbc
 SELECT
-	-("r"."A" + "r"."B")
-FROM
-	"PrecedenceRow" "r"
-ORDER BY
-	"r"."Id"
-
--- SapHana.Odbc SapHanaOdbc
-SELECT
-	-("r"."A" + "r"."B")
-FROM
-	"PrecedenceRow" "r"
-ORDER BY
-	"r"."Id"
-
--- SapHana.Odbc SapHanaOdbc
-SELECT
-	-("r"."A" - "r"."B")
-FROM
-	"PrecedenceRow" "r"
-ORDER BY
-	"r"."Id"
-
--- SapHana.Odbc SapHanaOdbc
-SELECT
-	-("r"."A" - "r"."B")
-FROM
-	"PrecedenceRow" "r"
-ORDER BY
-	"r"."Id"
-
--- SapHana.Odbc SapHanaOdbc
-SELECT
-	-BITAND("r"."A", "r"."B")
-FROM
-	"PrecedenceRow" "r"
-ORDER BY
-	"r"."Id"
-
--- SapHana.Odbc SapHanaOdbc
-SELECT
-	-BITAND("r"."A", "r"."B")
-FROM
-	"PrecedenceRow" "r"
-ORDER BY
-	"r"."Id"
-
--- SapHana.Odbc SapHanaOdbc
-SELECT
-	-(("r"."A" + "r"."B") - BITAND("r"."A", "r"."B"))
-FROM
-	"PrecedenceRow" "r"
-ORDER BY
-	"r"."Id"
-
--- SapHana.Odbc SapHanaOdbc
-SELECT
-	-(("r"."A" + "r"."B") - BITAND("r"."A", "r"."B"))
-FROM
-	"PrecedenceRow" "r"
-ORDER BY
-	"r"."Id"
-
--- SapHana.Odbc SapHanaOdbc
-SELECT
-	-(("r"."A" + "r"."B") - BITAND("r"."A", "r"."B") * 2)
-FROM
-	"PrecedenceRow" "r"
-ORDER BY
-	"r"."Id"
-
--- SapHana.Odbc SapHanaOdbc
-SELECT
-	-(("r"."A" + "r"."B") - BITAND("r"."A", "r"."B") * 2)
-FROM
-	"PrecedenceRow" "r"
-ORDER BY
-	"r"."Id"
-
--- SapHana.Odbc SapHanaOdbc
-SELECT
-	"r"."B"
-FROM
-	"PrecedenceRow" "r"
-ORDER BY
-	"r"."Id"
-
--- SapHana.Odbc SapHanaOdbc
-SELECT
-	-BITNOT("r"."B")
-FROM
-	"PrecedenceRow" "r"
-ORDER BY
-	"r"."Id"
-
--- SapHana.Odbc SapHanaOdbc
-SELECT
-	--5
-FROM
-	"PrecedenceRow" "r"
-ORDER BY
-	"r"."Id"
-
--- SapHana.Odbc SapHanaOdbc
-SELECT
-	-(-5 * "r"."B")
-FROM
-	"PrecedenceRow" "r"
-ORDER BY
-	"r"."Id"
-
--- SapHana.Odbc SapHanaOdbc
-SELECT
-	--5
-FROM
-	"PrecedenceRow" "r"
-ORDER BY
-	"r"."Id"
-
--- SapHana.Odbc SapHanaOdbc
-SELECT
-	--5
+	-(-5)
 FROM
 	"PrecedenceRow" "r"
 ORDER BY
@@ -165,6 +45,6 @@ ORDER BY
 -- cell Neg/Neg(AsNotNull(Xor(a,b))): green
 -- cell Neg/Neg(Neg(b)): green
 -- cell Neg/Neg(Not(b)): green
--- cell Neg/Neg(NegLit(b)): error
--- cell Neg/Neg(NegParam(b)): error
+-- cell Neg/Neg(NegLit(b)): green
+-- cell Neg/Neg(NegParam(b)): green
 -- cell Neg/Neg(Mul(NegLit,b)): green
