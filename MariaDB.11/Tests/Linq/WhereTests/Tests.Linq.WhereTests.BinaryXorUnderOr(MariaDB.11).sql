@@ -8,7 +8,7 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	(`p`.`PersonID` | `p`.`PersonID` ^ 1) = `p`.`PersonID`
+	(`p`.`PersonID` | (`p`.`PersonID` ^ 1)) = `p`.`PersonID`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 SELECT

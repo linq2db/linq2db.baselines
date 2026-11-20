@@ -26,7 +26,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN (CONCAT(Coalesce(`r`.`S`, ''), CAST(`r`.`A` + `r`.`B` AS CHAR(10)))) LIKE 'x5%' ESCAPE '~'
+		WHEN CONCAT(Coalesce(`r`.`S`, ''), CAST(`r`.`A` + `r`.`B` AS CHAR(10))) LIKE 'x5%' ESCAPE '~'
 			THEN 1
 		ELSE 0
 	END,
@@ -60,7 +60,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN (CONCAT(Coalesce(`r`.`S`, ''), CAST(`r`.`A` - `r`.`B` AS CHAR(10)))) LIKE 'x5%' ESCAPE '~'
+		WHEN CONCAT(Coalesce(`r`.`S`, ''), CAST(`r`.`A` - `r`.`B` AS CHAR(10))) LIKE 'x5%' ESCAPE '~'
 			THEN 1
 		ELSE 0
 	END,
@@ -94,7 +94,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN (CONCAT(Coalesce(`r`.`S`, ''), CAST(`r`.`A` * `r`.`B` AS CHAR(10)))) LIKE 'x5%' ESCAPE '~'
+		WHEN CONCAT(Coalesce(`r`.`S`, ''), CAST(`r`.`A` * `r`.`B` AS CHAR(10))) LIKE 'x5%' ESCAPE '~'
 			THEN 1
 		ELSE 0
 	END,
@@ -128,7 +128,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN (CONCAT(Coalesce(`r`.`S`, ''), CAST(`r`.`A` / `r`.`B` AS CHAR(10)))) LIKE 'x5%' ESCAPE '~'
+		WHEN CONCAT(Coalesce(`r`.`S`, ''), CAST(`r`.`A` / `r`.`B` AS CHAR(10))) LIKE 'x5%' ESCAPE '~'
 			THEN 1
 		ELSE 0
 	END,
@@ -162,7 +162,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN (CONCAT(Coalesce(`r`.`S`, ''), CAST(`r`.`A` % `r`.`B` AS CHAR(10)))) LIKE 'x5%' ESCAPE '~'
+		WHEN CONCAT(Coalesce(`r`.`S`, ''), CAST(`r`.`A` % `r`.`B` AS CHAR(10))) LIKE 'x5%' ESCAPE '~'
 			THEN 1
 		ELSE 0
 	END,
@@ -196,7 +196,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN (CONCAT(Coalesce(`r`.`S`, ''), CAST(`r`.`A` & `r`.`B` AS CHAR(10)))) LIKE 'x5%' ESCAPE '~'
+		WHEN CONCAT(Coalesce(`r`.`S`, ''), CAST(`r`.`A` & `r`.`B` AS CHAR(10))) LIKE 'x5%' ESCAPE '~'
 			THEN 1
 		ELSE 0
 	END,
@@ -231,7 +231,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN (CONCAT(Coalesce(`r`.`S`, ''), CAST(`r`.`A` | `r`.`B` AS CHAR(10)))) LIKE 'x5%' ESCAPE '~'
+		WHEN CONCAT(Coalesce(`r`.`S`, ''), CAST(`r`.`A` | `r`.`B` AS CHAR(10))) LIKE 'x5%' ESCAPE '~'
 			THEN 1
 		ELSE 0
 	END,
@@ -266,7 +266,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN (CONCAT(Coalesce(`r`.`S`, ''), CAST(`r`.`A` ^ `r`.`B` AS CHAR(10)))) LIKE 'x5%' ESCAPE '~'
+		WHEN CONCAT(Coalesce(`r`.`S`, ''), CAST(`r`.`A` ^ `r`.`B` AS CHAR(10))) LIKE 'x5%' ESCAPE '~'
 			THEN 1
 		ELSE 0
 	END,

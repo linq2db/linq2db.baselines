@@ -16,7 +16,7 @@ SELECT
 FROM
 	`PlainAndConvertedUnicodeRow` `r`
 WHERE
-	(CONCAT(`r`.`Plain`, `r`.`Conv`)) = @read
+	CONCAT(`r`.`Plain`, `r`.`Conv`) = @read
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @read VarChar(6) -- String
@@ -27,7 +27,7 @@ SELECT
 FROM
 	`PlainAndConvertedUnicodeRow` `r`
 WHERE
-	(CONCAT(`r`.`Plain`, `r`.`Conv`)) <> @read
+	CONCAT(`r`.`Plain`, `r`.`Conv`) <> @read
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 SELECT
@@ -48,5 +48,5 @@ SELECT
 FROM
 	`PlainAndConvertedUnicodeRow` `r`
 WHERE
-	(CONCAT(`r`.`Plain`, `r`.`Conv`)) IN ('A-x:n1')
+	CONCAT(`r`.`Plain`, `r`.`Conv`) IN ('A-x:n1')
 

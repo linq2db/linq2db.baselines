@@ -7,7 +7,7 @@ SELECT
 FROM
 	`PrefixedCodeWithTitleTable` `t`
 WHERE
-	(CONCAT(Coalesce(`t`.`Code`, ''), Coalesce(`t`.`Title`, ''))) LIKE @Code
+	CONCAT(Coalesce(`t`.`Code`, ''), Coalesce(`t`.`Title`, '')) LIKE @Code
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @bound VarChar(4) -- AnsiString
@@ -18,7 +18,7 @@ SELECT
 FROM
 	`PrefixedCodeWithTitleTable` `t`
 WHERE
-	(CONCAT(Coalesce(`t`.`Code`, ''), Coalesce(`t`.`Title`, ''))) = @bound
+	CONCAT(Coalesce(`t`.`Code`, ''), Coalesce(`t`.`Title`, '')) = @bound
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @bound VarChar(4) -- AnsiString
@@ -29,5 +29,5 @@ SELECT
 FROM
 	`PrefixedCodeWithTitleTable` `t`
 WHERE
-	(CONCAT(Coalesce(`t`.`Code`, ''), Coalesce(`t`.`Title`, ''))) = @bound
+	CONCAT(Coalesce(`t`.`Code`, ''), Coalesce(`t`.`Title`, '')) = @bound
 

@@ -7,7 +7,7 @@ SELECT
 FROM
 	`ConcatProduct` `p`
 WHERE
-	`p`.`Title` = (CONCAT(`p`.`Sku`, Coalesce(@suffix, '')))
+	`p`.`Title` = CONCAT(`p`.`Sku`, Coalesce(@suffix, ''))
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 SELECT

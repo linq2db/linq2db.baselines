@@ -8,9 +8,9 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	(CONCAT('123', CASE
+	CONCAT('123', CASE
 		WHEN CHAR_LENGTH(`p`.`FirstName`) >= 6 THEN `p`.`FirstName`
 		ELSE LPAD(`p`.`FirstName`, 6, ' ')
-	END)) = '123  John' AND
+	END) = '123  John' AND
 	`p`.`PersonID` = 1
 
