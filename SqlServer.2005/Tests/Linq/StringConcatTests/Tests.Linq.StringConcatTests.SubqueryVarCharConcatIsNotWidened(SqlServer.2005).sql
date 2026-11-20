@@ -21,5 +21,5 @@ FROM
 			) [t1]
 	) [t2]
 WHERE
-	([t2].[Notes] + [t2].[Twice]) = [t2].[Sku]
+	[t2].[Notes] + [t2].[Twice] = [t2].[Sku]
 

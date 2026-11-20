@@ -22,9 +22,9 @@ FROM
 	[UpdatedEntities] [u],
 	(
 		SELECT
-			([c_1].[Value1] * [t].[Value1]) * @int1 as [c1],
-			([c_1].[Value2] * [t].[Value2]) * @int2 as [c2],
-			([c_1].[Value3] * [t].[Value3]) * @int3 as [c3],
+			[c_1].[Value1] * [t].[Value1] * @int1 as [c1],
+			[c_1].[Value2] * [t].[Value2] * @int2 as [c2],
+			[c_1].[Value3] * [t].[Value3] * @int3 as [c3],
 			ROW_NUMBER() OVER (ORDER BY [c_1].[id]) as [RN],
 			[c_1].[id]
 		FROM
@@ -34,7 +34,7 @@ FROM
 			[t].[id] <> @someId
 	) [t1]
 WHERE
-	[t1].[RN] > @skip AND [t1].[RN] <= (@skip + @take) AND
+	[t1].[RN] > @skip AND [t1].[RN] <= @skip + @take AND
 	[u].[id] = [t1].[id]
 
 -- SqlServer.2005

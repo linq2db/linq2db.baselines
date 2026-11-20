@@ -14,44 +14,59 @@ SELECT
 	[r].[A] + [r].[B] % [r].[C],
 	[r].[A] % [r].[B] + [r].[C],
 	[r].[A] + [r].[B] % [r].[C],
-	([r].[A] & [r].[B]) + [r].[C],
+	[r].[A] & [r].[B] + [r].[C],
 	[r].[A] + ([r].[B] & [r].[C]),
-	([r].[A] & [r].[B]) + [r].[C],
+	[r].[A] & [r].[B] + [r].[C],
 	[r].[A] + ([r].[B] & [r].[C]),
-	([r].[A] | [r].[B]) + [r].[C],
+	[r].[A] | [r].[B] + [r].[C],
 	[r].[A] + ([r].[B] | [r].[C]),
-	([r].[A] | [r].[B]) + [r].[C],
+	[r].[A] | [r].[B] + [r].[C],
 	[r].[A] + ([r].[B] | [r].[C]),
-	([r].[A] ^ [r].[B]) + [r].[C],
+	[r].[A] ^ [r].[B] + [r].[C],
 	[r].[A] + ([r].[B] ^ [r].[C]),
-	([r].[A] ^ [r].[B]) + [r].[C],
+	[r].[A] ^ [r].[B] + [r].[C],
 	[r].[A] + ([r].[B] ^ [r].[C]),
+	([r].[A] + [r].[B]) + [r].[C],
+	[r].[A] + ([r].[B] + [r].[C]),
+	([r].[A] + -6) + [r].[C],
+	([r].[A] - [r].[B]) + [r].[C],
+	[r].[A] + ([r].[B] - [r].[C]),
+	([r].[A] - -6) + [r].[C],
+	[r].[A] * [r].[B] + [r].[C],
+	[r].[A] + [r].[B] * [r].[C],
+	[r].[A] * -6 + [r].[C],
+	[r].[A] / [r].[B] + [r].[C],
+	[r].[A] + [r].[B] / [r].[C],
+	[r].[A] / -6 + [r].[C],
+	([r].[A] + [r].[B]) + [r].[C],
+	[r].[A] + ([r].[B] + [r].[C]),
+	([r].[A] + -6) + [r].[C],
 	[r].[A] - [r].[B],
 	-[r].[B] + [r].[C],
 	[r].[A] - [r].[B] + [r].[C],
-	[r].[A] * -[r].[B] + [r].[C],
-	[r].[A] / -[r].[B] + [r].[C],
-	[r].[A] % -[r].[B] + [r].[C],
-	([r].[A] & -[r].[B]) + [r].[C],
-	([r].[A] | -[r].[B]) + [r].[C],
-	([r].[A] ^ -[r].[B]) + [r].[C],
-	[r].[A] + (~[r].[B]),
-	(~[r].[B]) + [r].[C],
-	[r].[A] + (~[r].[B]) + [r].[C],
-	[r].[A] * (~[r].[B]) + [r].[C],
-	[r].[A] % (~[r].[B]) + [r].[C],
-	([r].[A] & ~[r].[B]) + [r].[C],
-	([r].[A] | ~[r].[B]) + [r].[C],
-	([r].[A] ^ ~[r].[B]) + [r].[C],
-	[r].[A] + -5,
+	[r].[A] * (-[r].[B]) + [r].[C],
+	[r].[A] / (-[r].[B]) + [r].[C],
+	[r].[A] % (-[r].[B]) + [r].[C],
+	[r].[A] & (-[r].[B]) + [r].[C],
+	[r].[A] | (-[r].[B]) + [r].[C],
+	[r].[A] ^ (-[r].[B]) + [r].[C],
+	[r].[A] + ~[r].[B],
+	~[r].[B] + [r].[C],
+	[r].[A] + ~[r].[B] + [r].[C],
+	[r].[A] * ~[r].[B] + [r].[C],
+	[r].[A] % ~[r].[B] + [r].[C],
+	[r].[A] & ~[r].[B] + [r].[C],
+	[r].[A] | ~[r].[B] + [r].[C],
+	[r].[A] ^ ~[r].[B] + [r].[C],
+	[r].[A] + (-5),
 	-5 + [r].[C],
-	[r].[A] + -5 + [r].[C],
-	[r].[A] - -5 + [r].[C],
-	[r].[A] * -5 + [r].[C],
-	[r].[A] % -5 + [r].[C],
-	([r].[A] & -5) + [r].[C],
-	([r].[A] | -5) + [r].[C],
-	([r].[A] ^ -5) + [r].[C]
+	[r].[A] + (-5) + [r].[C],
+	[r].[A] - (-5) + [r].[C],
+	[r].[A] * (-5) + [r].[C],
+	[r].[A] % (-5) + [r].[C],
+	[r].[A] & (-5) + [r].[C],
+	[r].[A] | (-5) + [r].[C],
+	[r].[A] ^ (-5) + [r].[C]
 FROM
 	[PrecedenceRow] [r]
 ORDER BY
@@ -59,15 +74,15 @@ ORDER BY
 
 -- SqlServer.2005
 SELECT
-	[r].[A] + -5,
+	[r].[A] + (-5),
 	-5 + [r].[C],
-	[r].[A] + -5 + [r].[C],
-	[r].[A] - -5 + [r].[C],
-	[r].[A] * -5 + [r].[C],
-	[r].[A] % -5 + [r].[C],
-	([r].[A] & -5) + [r].[C],
-	([r].[A] | -5) + [r].[C],
-	([r].[A] ^ -5) + [r].[C]
+	[r].[A] + (-5) + [r].[C],
+	[r].[A] - (-5) + [r].[C],
+	[r].[A] * (-5) + [r].[C],
+	[r].[A] % (-5) + [r].[C],
+	[r].[A] & (-5) + [r].[C],
+	[r].[A] | (-5) + [r].[C],
+	[r].[A] ^ (-5) + [r].[C]
 FROM
 	[PrecedenceRow] [r]
 ORDER BY
@@ -105,6 +120,21 @@ ORDER BY
 -- cell Add/Add(a,Xor(b,c)): green
 -- cell Add/Add(AsNotNull(Xor(a,b)),c): green
 -- cell Add/Add(a,AsNotNull(Xor(b,c))): green
+-- cell Add/Add(TAdd(a,b),c): green
+-- cell Add/Add(a,TAdd(b,c)): green
+-- cell Add/Add(TAdd(a,NegLit),c): green
+-- cell Add/Add(TSub(a,b),c): green
+-- cell Add/Add(a,TSub(b,c)): green
+-- cell Add/Add(TSub(a,NegLit),c): green
+-- cell Add/Add(TMul(a,b),c): green
+-- cell Add/Add(a,TMul(b,c)): green
+-- cell Add/Add(TMul(a,NegLit),c): green
+-- cell Add/Add(TDiv(a,b),c): green
+-- cell Add/Add(a,TDiv(b,c)): green
+-- cell Add/Add(TDiv(a,NegLit),c): green
+-- cell Add/Add(TAddOffset(a,b),c): green
+-- cell Add/Add(a,TAddOffset(b,c)): green
+-- cell Add/Add(TAddOffset(a,NegLit),c): green
 -- cell Add/Add(a,Neg(b)): green
 -- cell Add/Add(Neg(b),c): green
 -- cell Add/Add(Add(a,Neg(b)),c): green

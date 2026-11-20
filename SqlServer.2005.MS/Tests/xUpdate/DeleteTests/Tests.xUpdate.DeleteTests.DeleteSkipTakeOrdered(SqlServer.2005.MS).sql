@@ -197,7 +197,7 @@ FROM
 					[x].[ParentID] > 1000
 			) [t1]
 		WHERE
-			[t1].[RN] > @skip AND [t1].[RN] <= (@skip + @take)
+			[t1].[RN] > @skip AND [t1].[RN] <= @skip + @take
 	) [t2]
 
 -- SqlServer.2005.MS SqlServer.2005

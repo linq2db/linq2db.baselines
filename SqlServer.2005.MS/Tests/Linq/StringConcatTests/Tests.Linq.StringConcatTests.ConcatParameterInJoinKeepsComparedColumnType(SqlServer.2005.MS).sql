@@ -9,7 +9,7 @@ FROM
 	[ConcatProduct] [a],
 	[ConcatProduct] [b]
 WHERE
-	[b].[Sku] = ([a].[Sku] + Coalesce(@keySuffix, ''))
+	[b].[Sku] = [a].[Sku] + Coalesce(@keySuffix, '')
 
 -- SqlServer.2005.MS SqlServer.2005
 SELECT

@@ -21,5 +21,5 @@ FROM
 			) [t2]
 	) [t3]
 WHERE
-	[t3].[RN] > @skip AND [t3].[RN] <= (@skip + @take)
+	[t3].[RN] > @skip AND [t3].[RN] <= @skip + @take
 
