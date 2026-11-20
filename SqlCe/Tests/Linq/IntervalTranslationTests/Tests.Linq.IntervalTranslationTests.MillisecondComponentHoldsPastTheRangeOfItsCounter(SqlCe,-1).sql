@@ -72,7 +72,7 @@ ORDER BY
 
 -- SqlCe
 SELECT
-	CAST((((CAST(DateDiff(day, [r].[StartedOn], [r].[FinishedOn]) AS BigInt) * 86400) * 10000000 + CAST(DateDiff(millisecond, DateAdd(day, CAST(DateDiff(day, [r].[StartedOn], [r].[FinishedOn]) AS BigInt), [r].[StartedOn]), [r].[FinishedOn]) AS BigInt) * 10000) / CAST(10000 AS BigInt)) % CAST(1000 AS BigInt) AS Int)
+	CAST((CAST(DateDiff(day, [r].[StartedOn], [r].[FinishedOn]) AS BigInt) * 86400 * 10000000 + CAST(DateDiff(millisecond, DateAdd(day, CAST(DateDiff(day, [r].[StartedOn], [r].[FinishedOn]) AS BigInt), [r].[StartedOn]), [r].[FinishedOn]) AS BigInt) * 10000) / CAST(10000 AS BigInt) % CAST(1000 AS BigInt) AS Int)
 FROM
 	[EventRow] [r]
 ORDER BY

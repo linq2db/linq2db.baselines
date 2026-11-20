@@ -17,5 +17,5 @@ SELECT
 FROM
 	[Orders] [o]
 WHERE
-	IIF(([o].[Freight] / 10) * 2 = ROUND(([o].[Freight] / 10) * 2, 1) AND [o].[Freight] / 10 <> ROUND([o].[Freight] / 10, 1), ROUND(([o].[Freight] / 10) / 2, 1) * 2, ROUND([o].[Freight] / 10, 1)) = 6.5
+	IIF([o].[Freight] / 10 * 2 = ROUND([o].[Freight] / 10 * 2, 1) AND [o].[Freight] / 10 <> ROUND([o].[Freight] / 10, 1), ROUND([o].[Freight] / 10 / 2, 1) * 2, ROUND([o].[Freight] / 10, 1)) = 6.5
 

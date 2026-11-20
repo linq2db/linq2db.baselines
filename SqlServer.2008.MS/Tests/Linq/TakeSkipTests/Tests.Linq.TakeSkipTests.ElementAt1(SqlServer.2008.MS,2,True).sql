@@ -17,7 +17,7 @@ FROM
 			[p].[ParentID] > 1
 	) [t1]
 WHERE
-	[t1].[RN] > @skip AND [t1].[RN] <= (@skip + 1)
+	[t1].[RN] > @skip AND [t1].[RN] <= @skip + 1
 ORDER BY
 	[t1].[ParentID]
 

@@ -31,9 +31,9 @@ SET     @Ticks = 3000000000
 
 SELECT TOP (2)
 	[r].[Budget] + @extra,
-	CAST((DateDiff_Big(day, [r].[StartedOn], [r].[FinishedOn]) * 86400) * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r].[StartedOn], [r].[FinishedOn]) AS Int), [r].[StartedOn]), [r].[FinishedOn]) / 100 + @Ticks AS BigInt),
-	CAST(@Ticks + (DateDiff_Big(day, [r].[StartedOn], [r].[FinishedOn]) * 86400) * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r].[StartedOn], [r].[FinishedOn]) AS Int), [r].[StartedOn]), [r].[FinishedOn]) / 100 AS BigInt),
-	CAST(((DateDiff_Big(day, [r].[StartedOn], [r].[FinishedOn]) * 86400) * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r].[StartedOn], [r].[FinishedOn]) AS Int), [r].[StartedOn]), [r].[FinishedOn]) / 100) - @Ticks AS BigInt)
+	CAST(DateDiff_Big(day, [r].[StartedOn], [r].[FinishedOn]) * 86400 * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r].[StartedOn], [r].[FinishedOn]) AS Int), [r].[StartedOn]), [r].[FinishedOn]) / 100 + @Ticks AS BigInt),
+	CAST(@Ticks + (DateDiff_Big(day, [r].[StartedOn], [r].[FinishedOn]) * 86400 * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r].[StartedOn], [r].[FinishedOn]) AS Int), [r].[StartedOn]), [r].[FinishedOn]) / 100) AS BigInt),
+	CAST(DateDiff_Big(day, [r].[StartedOn], [r].[FinishedOn]) * 86400 * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r].[StartedOn], [r].[FinishedOn]) AS Int), [r].[StartedOn]), [r].[FinishedOn]) / 100 - @Ticks AS BigInt)
 FROM
 	[BudgetedTaskRow] [r]
 

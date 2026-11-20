@@ -204,7 +204,7 @@ WHERE
 									x."ParentID" > 1000
 							) t1
 						WHERE
-							ROWNUM <= (:skip + :take)
+							ROWNUM <= :skip + :take
 					) t2
 				WHERE
 					t2.RN > :skip

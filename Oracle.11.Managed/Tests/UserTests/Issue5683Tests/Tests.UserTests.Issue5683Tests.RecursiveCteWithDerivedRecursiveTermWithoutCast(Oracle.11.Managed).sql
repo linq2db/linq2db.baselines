@@ -43,7 +43,7 @@ AS
 								x."Name"
 						) t1
 					WHERE
-						ROWNUM <= (:skip + :take)
+						ROWNUM <= :skip + :take
 				) t2
 			WHERE
 				t2.RN > :skip

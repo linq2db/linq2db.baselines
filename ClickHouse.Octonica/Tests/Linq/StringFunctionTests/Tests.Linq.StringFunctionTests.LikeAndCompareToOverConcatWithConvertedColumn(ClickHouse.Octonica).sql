@@ -13,7 +13,7 @@ SELECT
 FROM
 	PlainAndConvertedUnicodeTable r
 WHERE
-	(concat(r.Plain, r.Conv)) LIKE 'A-x:n1'
+	concat(r.Plain, r.Conv) LIKE 'A-x:n1'
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
@@ -21,5 +21,5 @@ SELECT
 FROM
 	PlainAndConvertedUnicodeTable r
 WHERE
-	(concat(r.Plain, r.Conv)) = 'A-x:n1'
+	concat(r.Plain, r.Conv) = 'A-x:n1'
 

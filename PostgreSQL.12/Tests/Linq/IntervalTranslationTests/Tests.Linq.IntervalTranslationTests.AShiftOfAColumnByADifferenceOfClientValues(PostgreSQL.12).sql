@@ -24,7 +24,7 @@ DECLARE @Ticks Bigint -- Int64
 SET     @Ticks = 36002500000
 
 SELECT
-	r."StartedOn" + (:Ticks::BigInt / 10) * Interval '1 microsecond'
+	r."StartedOn" + :Ticks::BigInt / 10 * Interval '1 microsecond'
 FROM
 	"EventRow" r
 LIMIT 2
@@ -34,7 +34,7 @@ DECLARE @Ticks Bigint -- Int64
 SET     @Ticks = 36002500000
 
 SELECT
-	r."FinishedOn" - (:Ticks::BigInt / 10) * Interval '1 microsecond'
+	r."FinishedOn" - :Ticks::BigInt / 10 * Interval '1 microsecond'
 FROM
 	"EventRow" r
 LIMIT 2
@@ -48,7 +48,7 @@ SELECT
 FROM
 	"EventRow" r
 WHERE
-	r."StartedOn" + (:Ticks::BigInt / 10) * Interval '1 microsecond' < r."FinishedOn"
+	r."StartedOn" + :Ticks::BigInt / 10 * Interval '1 microsecond' < r."FinishedOn"
 
 -- PostgreSQL.12 PostgreSQL12
 DECLARE @Ticks Bigint -- Int64
@@ -59,5 +59,5 @@ SELECT
 FROM
 	"EventRow" r
 WHERE
-	r."FinishedOn" - (:Ticks::BigInt / 10) * Interval '1 microsecond' > r."StartedOn" + 1 * Interval '1 Hour'
+	r."FinishedOn" - :Ticks::BigInt / 10 * Interval '1 microsecond' > r."StartedOn" + 1 * Interval '1 Hour'
 

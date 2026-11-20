@@ -30,7 +30,7 @@ VALUES
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 SELECT
 	CAST([r].[InSeconds] AS Float) / 3600,
-	CAST(([r].[InSeconds] / 3600) % 24 AS INTEGER),
+	CAST([r].[InSeconds] / 3600 % 24 AS INTEGER),
 	CAST([r].[InTicks] AS Float) / 600000000
 FROM
 	[DurationRow] [r]

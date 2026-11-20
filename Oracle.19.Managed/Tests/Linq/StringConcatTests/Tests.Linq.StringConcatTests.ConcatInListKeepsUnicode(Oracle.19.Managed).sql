@@ -7,7 +7,7 @@ SELECT
 FROM
 	"ConcatProduct" p
 WHERE
-	(p."Sku" || :suffix) IN ('A-100Щит', 'B-200Жук')
+	p."Sku" || :suffix IN ('A-100Щит', 'B-200Жук')
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
 SELECT

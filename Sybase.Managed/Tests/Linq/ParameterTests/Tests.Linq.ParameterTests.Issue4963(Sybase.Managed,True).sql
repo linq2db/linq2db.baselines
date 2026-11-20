@@ -2,7 +2,7 @@
 UPDATE
 	[Issue4963Table]
 SET
-	[Field] = CAST(CAST([Issue4963Table].[Field] AS Int) + -1 AS TinyInt)
+	[Field] = CAST(CAST([Issue4963Table].[Field] AS Int) + (-1) AS TinyInt)
 
 -- Sybase.Managed Sybase
 SELECT TOP 2

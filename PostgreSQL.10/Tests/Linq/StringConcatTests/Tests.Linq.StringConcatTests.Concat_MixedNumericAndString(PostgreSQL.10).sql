@@ -4,7 +4,7 @@ SELECT
 FROM
 	"ConcatTestEntity" e
 WHERE
-	(e."Num"::text || '-' || Coalesce(e."StrReq", '')) = '100-Programmer'
+	e."Num"::text || '-' || Coalesce(e."StrReq", '') = '100-Programmer'
 
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 SELECT

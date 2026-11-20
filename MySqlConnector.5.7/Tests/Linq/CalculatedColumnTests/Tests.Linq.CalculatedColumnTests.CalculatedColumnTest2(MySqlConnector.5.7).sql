@@ -49,5 +49,5 @@ FROM
 			`Person` `i`
 	) `i_1`
 WHERE
-	(CONCAT(`i_1`.`LastName`, ', ', `i_1`.`FirstName`)) <> 'Pupkin, John'
+	CONCAT(`i_1`.`LastName`, ', ', `i_1`.`FirstName`) <> 'Pupkin, John'
 

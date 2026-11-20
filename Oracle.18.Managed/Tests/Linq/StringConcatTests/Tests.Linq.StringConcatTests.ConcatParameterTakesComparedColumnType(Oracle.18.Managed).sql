@@ -7,7 +7,7 @@ SELECT
 FROM
 	"ConcatProduct" p
 WHERE
-	p."Title" = (p."Sku" || :suffix)
+	p."Title" = p."Sku" || :suffix
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 SELECT

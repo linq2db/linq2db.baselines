@@ -21,7 +21,7 @@ VALUES
 
 -- DB2 DB2.LUW DB2LUW
 SELECT
-	CAST((CAST(Days("r"."FinishedOn") AS BigInt) - CAST(Days(DATE("r"."FinishedOn")) AS BigInt)) * 864000000000 + (CAST(Midnight_Seconds("r"."FinishedOn") AS BigInt) - CAST(Midnight_Seconds(DATE("r"."FinishedOn")) AS BigInt)) * 10000000 + (CAST(Microsecond("r"."FinishedOn") AS BigInt) - CAST(Microsecond(DATE("r"."FinishedOn")) AS BigInt)) * 10 AS Float) / 36000000000
+	CAST((CAST(Days("r"."FinishedOn") AS BigInt) - CAST(Days(DATE("r"."FinishedOn")) AS BigInt)) * 864000000000 + ((CAST(Midnight_Seconds("r"."FinishedOn") AS BigInt) - CAST(Midnight_Seconds(DATE("r"."FinishedOn")) AS BigInt)) * 10000000 + (CAST(Microsecond("r"."FinishedOn") AS BigInt) - CAST(Microsecond(DATE("r"."FinishedOn")) AS BigInt)) * 10) AS Float) / 36000000000
 FROM
 	"EventRow" "r"
 FETCH NEXT 2 ROWS ONLY

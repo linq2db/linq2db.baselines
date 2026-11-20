@@ -7,7 +7,7 @@ SELECT
 FROM
 	`PrefixedCodeWithTitleTable` `t`
 WHERE
-	(CONCAT(Coalesce(`t`.`Code`, ''), Coalesce(`t`.`Title`, ''))) LIKE @Code
+	CONCAT(Coalesce(`t`.`Code`, ''), Coalesce(`t`.`Title`, '')) LIKE @Code
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @bound VarChar(4) -- AnsiString
@@ -18,7 +18,7 @@ SELECT
 FROM
 	`PrefixedCodeWithTitleTable` `t`
 WHERE
-	(CONCAT(Coalesce(`t`.`Code`, ''), Coalesce(`t`.`Title`, ''))) = @bound
+	CONCAT(Coalesce(`t`.`Code`, ''), Coalesce(`t`.`Title`, '')) = @bound
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @bound VarChar(4) -- AnsiString
@@ -29,5 +29,5 @@ SELECT
 FROM
 	`PrefixedCodeWithTitleTable` `t`
 WHERE
-	(CONCAT(Coalesce(`t`.`Code`, ''), Coalesce(`t`.`Title`, ''))) = @bound
+	CONCAT(Coalesce(`t`.`Code`, ''), Coalesce(`t`.`Title`, '')) = @bound
 

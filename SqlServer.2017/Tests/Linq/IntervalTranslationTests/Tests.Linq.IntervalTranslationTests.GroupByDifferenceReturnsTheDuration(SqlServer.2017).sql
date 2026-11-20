@@ -80,7 +80,7 @@ SELECT
 FROM
 	(
 		SELECT
-			(DateDiff_Big(day, [g_1].[StartedOn], [g_1].[FinishedOn]) * 86400) * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [g_1].[StartedOn], [g_1].[FinishedOn]) AS Int), [g_1].[StartedOn]), [g_1].[FinishedOn]) / 100 as [Key_1]
+			DateDiff_Big(day, [g_1].[StartedOn], [g_1].[FinishedOn]) * 86400 * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [g_1].[StartedOn], [g_1].[FinishedOn]) AS Int), [g_1].[StartedOn]), [g_1].[FinishedOn]) / 100 as [Key_1]
 		FROM
 			[BudgetedTaskRow] [g_1]
 	) [t1]

@@ -30,7 +30,7 @@ VALUES
 -- YDB Ydb
 SELECT
 	Unwrap(CAST(r.InSeconds AS Double)) / Double('3600') as TotalHours,
-	Unwrap(CAST((r.InSeconds / 3600l) % 24l AS Int32)) as Hours,
+	Unwrap(CAST(r.InSeconds / 3600l % 24l AS Int32)) as Hours,
 	Unwrap(CAST(r.InTicks AS Double)) / Double('600000000') as TotalMinutes
 FROM
 	DurationRow r

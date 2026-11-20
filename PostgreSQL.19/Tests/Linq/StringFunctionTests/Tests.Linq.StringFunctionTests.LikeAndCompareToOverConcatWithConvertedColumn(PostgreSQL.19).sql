@@ -16,7 +16,7 @@ SELECT
 FROM
 	"PlainAndConvertedUnicodeTable" r
 WHERE
-	(r."Plain" || r."Conv") LIKE :read
+	r."Plain" || r."Conv" LIKE :read
 
 -- PostgreSQL.19 PostgreSQL12
 DECLARE @read Text(6) -- String
@@ -27,5 +27,5 @@ SELECT
 FROM
 	"PlainAndConvertedUnicodeTable" r
 WHERE
-	(r."Plain" || r."Conv") = :read
+	r."Plain" || r."Conv" = :read
 

@@ -54,7 +54,7 @@ SELECT
 FROM
 	EventRow x
 WHERE
-	Unwrap(CAST(((Unwrap(CAST(x.FinishedOn - x.StartedOn AS Int64)) * 10l) / 36000000000l) % 24l AS Int32)) = 1
+	Unwrap(CAST(Unwrap(CAST(x.FinishedOn - x.StartedOn AS Int64)) * 10l / 36000000000l % 24l AS Int32)) = 1
 
 -- YDB Ydb
 SELECT

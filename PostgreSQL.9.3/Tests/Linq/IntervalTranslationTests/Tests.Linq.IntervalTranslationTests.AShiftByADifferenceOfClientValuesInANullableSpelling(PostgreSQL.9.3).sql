@@ -66,7 +66,7 @@ DECLARE @Ticks Bigint -- Int64
 SET     @Ticks = 36002500000
 
 SELECT
-	r."DueOn" + (:Ticks::BigInt / 10) * Interval '1 microsecond'
+	r."DueOn" + :Ticks::BigInt / 10 * Interval '1 microsecond'
 FROM
 	"OptionalDueRow" r
 WHERE
@@ -78,7 +78,7 @@ DECLARE @Ticks Bigint -- Int64
 SET     @Ticks = 36002500000
 
 SELECT
-	r."StartedOn" + (:Ticks::BigInt / 10) * Interval '1 microsecond'
+	r."StartedOn" + :Ticks::BigInt / 10 * Interval '1 microsecond'
 FROM
 	"OptionalDueRow" r
 WHERE
@@ -90,7 +90,7 @@ DECLARE @Ticks Bigint -- Int64
 SET     @Ticks = 36002500000
 
 SELECT
-	r."DueOn" - (:Ticks::BigInt / 10) * Interval '1 microsecond'
+	r."DueOn" - :Ticks::BigInt / 10 * Interval '1 microsecond'
 FROM
 	"OptionalDueRow" r
 WHERE
@@ -99,7 +99,7 @@ LIMIT 2
 
 -- PostgreSQL.9.3 PostgreSQL
 SELECT
-	r."StartedOn" + (NULL::BigInt / 10) * Interval '1 microsecond'
+	r."StartedOn" + NULL::BigInt / 10 * Interval '1 microsecond'
 FROM
 	"OptionalDueRow" r
 WHERE
@@ -111,7 +111,7 @@ DECLARE @Ticks Bigint -- Int64
 SET     @Ticks = 36002500000
 
 SELECT
-	r."DueOn" + (:Ticks::BigInt / 10) * Interval '1 microsecond'
+	r."DueOn" + :Ticks::BigInt / 10 * Interval '1 microsecond'
 FROM
 	"OptionalDueRow" r
 ORDER BY
@@ -126,7 +126,7 @@ SELECT
 FROM
 	"OptionalDueRow" r
 WHERE
-	r."DueOn" + (:Ticks::BigInt / 10) * Interval '1 microsecond' > r."StartedOn" + 1 * Interval '1 Hour'
+	r."DueOn" + :Ticks::BigInt / 10 * Interval '1 microsecond' > r."StartedOn" + 1 * Interval '1 Hour'
 ORDER BY
 	r."Id"
 
@@ -139,14 +139,14 @@ SELECT
 FROM
 	"OptionalDueRow" r
 WHERE
-	r."Id" = 1 AND r."StartedOn" + (:Ticks::BigInt / 10) * Interval '1 microsecond' < r."StartedOn" + 1 * Interval '1 Hour'
+	r."Id" = 1 AND r."StartedOn" + :Ticks::BigInt / 10 * Interval '1 microsecond' < r."StartedOn" + 1 * Interval '1 Hour'
 
 -- PostgreSQL.9.3 PostgreSQL
 DECLARE @Ticks Bigint -- Int64
 SET     @Ticks = 36002500000
 
 SELECT
-	r."StartedOn" + (:Ticks::BigInt / 10) * Interval '1 microsecond'
+	r."StartedOn" + :Ticks::BigInt / 10 * Interval '1 microsecond'
 FROM
 	"OptionalDueRow" r
 WHERE
@@ -155,7 +155,7 @@ LIMIT 2
 
 -- PostgreSQL.9.3 PostgreSQL
 SELECT
-	r."StartedOn" + (NULL::BigInt / 10) * Interval '1 microsecond'
+	r."StartedOn" + NULL::BigInt / 10 * Interval '1 microsecond'
 FROM
 	"OptionalDueRow" r
 WHERE
@@ -167,7 +167,7 @@ DECLARE @Ticks Bigint -- Int64
 SET     @Ticks = 72002500000
 
 SELECT
-	r."StartedOn" + (:Ticks::BigInt / 10) * Interval '1 microsecond'
+	r."StartedOn" + :Ticks::BigInt / 10 * Interval '1 microsecond'
 FROM
 	"OptionalDueRow" r
 WHERE

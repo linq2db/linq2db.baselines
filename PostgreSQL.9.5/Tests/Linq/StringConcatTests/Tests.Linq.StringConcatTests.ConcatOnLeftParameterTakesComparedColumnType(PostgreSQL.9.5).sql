@@ -7,7 +7,7 @@ SELECT
 FROM
 	"ConcatProduct" p
 WHERE
-	(p."Sku" || Coalesce(:suffix, '')) = p."Title"
+	p."Sku" || Coalesce(:suffix, '') = p."Title"
 
 -- PostgreSQL.9.5 PostgreSQL
 SELECT

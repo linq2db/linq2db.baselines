@@ -9,7 +9,7 @@ FROM
 	"EntityWithArrays" m_1
 		INNER JOIN LATERAL UNNEST(m_1."Guids") g_1(value) ON 1=1
 WHERE
-	m_1."Guids" && :guids
+	(m_1."Guids" && :guids)
 
 
 

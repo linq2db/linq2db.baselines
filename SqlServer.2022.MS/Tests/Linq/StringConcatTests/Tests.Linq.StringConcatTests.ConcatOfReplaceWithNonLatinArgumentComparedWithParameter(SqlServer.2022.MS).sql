@@ -10,5 +10,5 @@ SELECT
 FROM
 	[SplitVarCharRow] [t]
 WHERE
-	(Coalesce(CAST(Replace([t].[Left], 'b', @replacement) AS NVarChar(Max)), N'') + [t].[Right]) = @expected
+	Coalesce(CAST(Replace([t].[Left], 'b', @replacement) AS NVarChar(Max)), N'') + [t].[Right] = @expected
 

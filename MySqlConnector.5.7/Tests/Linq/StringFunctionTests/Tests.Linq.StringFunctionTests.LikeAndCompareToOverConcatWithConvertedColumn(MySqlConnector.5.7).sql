@@ -16,7 +16,7 @@ SELECT
 FROM
 	`PlainAndConvertedUnicodeTable` `r`
 WHERE
-	(CONCAT(`r`.`Plain`, `r`.`Conv`)) LIKE @read
+	CONCAT(`r`.`Plain`, `r`.`Conv`) LIKE @read
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @read VarChar(6) -- String
@@ -27,5 +27,5 @@ SELECT
 FROM
 	`PlainAndConvertedUnicodeTable` `r`
 WHERE
-	(CONCAT(`r`.`Plain`, `r`.`Conv`)) = @read
+	CONCAT(`r`.`Plain`, `r`.`Conv`) = @read
 

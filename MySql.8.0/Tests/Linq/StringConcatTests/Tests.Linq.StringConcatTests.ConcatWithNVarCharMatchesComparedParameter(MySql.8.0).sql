@@ -7,7 +7,7 @@ SELECT
 FROM
 	`ConcatProduct` `p`
 WHERE
-	(CONCAT(`p`.`Sku`, `p`.`Title`)) = @key
+	CONCAT(`p`.`Sku`, `p`.`Title`) = @key
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 SELECT

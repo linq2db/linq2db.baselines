@@ -7,7 +7,7 @@ SELECT
 FROM
 	[PrefixedCodeWithTitleTable] [t]
 WHERE
-	(Coalesce([t].[Code], '') + Coalesce([t].[Title], N'')) LIKE @Code
+	Coalesce([t].[Code], '') + Coalesce([t].[Title], N'') LIKE @Code
 
 -- SqlServer.2005
 DECLARE @bound VarChar(20) -- AnsiString
@@ -18,7 +18,7 @@ SELECT
 FROM
 	[PrefixedCodeWithTitleTable] [t]
 WHERE
-	(Coalesce([t].[Code], '') + Coalesce([t].[Title], N'')) = @bound
+	Coalesce([t].[Code], '') + Coalesce([t].[Title], N'') = @bound
 
 -- SqlServer.2005
 DECLARE @bound VarChar(20) -- AnsiString
@@ -29,5 +29,5 @@ SELECT
 FROM
 	[PrefixedCodeWithTitleTable] [t]
 WHERE
-	(Coalesce([t].[Code], '') + Coalesce([t].[Title], N'')) = @bound
+	Coalesce([t].[Code], '') + Coalesce([t].[Title], N'') = @bound
 

@@ -35,7 +35,7 @@ FROM
 -- SqlCe
 SELECT TOP (2)
 	CAST([r].[InDays] * 24 AS Float),
-	CAST(([r].[InMilliseconds] / CAST(1000 AS BigInt)) % CAST(60 AS BigInt) AS Int)
+	CAST([r].[InMilliseconds] / CAST(1000 AS BigInt) % CAST(60 AS BigInt) AS Int)
 FROM
 	[UnitSpreadRow] [r]
 

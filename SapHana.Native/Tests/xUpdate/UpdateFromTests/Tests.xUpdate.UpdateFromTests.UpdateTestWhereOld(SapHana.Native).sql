@@ -19,7 +19,7 @@ UPDATE
 SET
 	"Value1" = (
 		SELECT
-			("c_2"."Value1" * "t_1"."Value1") * :"int1"
+			"c_2"."Value1" * "t_1"."Value1" * :"int1"
 		FROM
 			"UpdatedEntities" "c_2",
 			"NewEntities" "t_1"
@@ -29,7 +29,7 @@ SET
 	),
 	"Value2" = (
 		SELECT
-			("c_3"."Value2" * "t_2"."Value2") * :"int2"
+			"c_3"."Value2" * "t_2"."Value2" * :"int2"
 		FROM
 			"UpdatedEntities" "c_3",
 			"NewEntities" "t_2"
@@ -39,7 +39,7 @@ SET
 	),
 	"Value3" = (
 		SELECT
-			("c_4"."Value3" * "t_3"."Value3") * :"int3"
+			"c_4"."Value3" * "t_3"."Value3" * :"int3"
 		FROM
 			"UpdatedEntities" "c_4",
 			"NewEntities" "t_3"

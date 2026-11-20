@@ -9,7 +9,7 @@ ORDER BY
 
 -- YDB Ydb
 SELECT
-	CAST((CAST(b.FinishedOn - x.StartedOn AS Int64) * 10l) / 864000000000l AS Int32) as c1
+	CAST(CAST(b.FinishedOn - x.StartedOn AS Int64) * 10l / 864000000000l AS Int32) as c1
 FROM
 	OuterJoinLeft x
 		LEFT JOIN OuterJoinRight b ON b.Id = x.Id
@@ -18,7 +18,7 @@ ORDER BY
 
 -- YDB Ydb
 SELECT
-	CAST(((CAST(b.FinishedOn - x.StartedOn AS Int64) * 10l) / 36000000000l) % 24l AS Int32) as c1
+	CAST(CAST(b.FinishedOn - x.StartedOn AS Int64) * 10l / 36000000000l % 24l AS Int32) as c1
 FROM
 	OuterJoinLeft x
 		LEFT JOIN OuterJoinRight b ON b.Id = x.Id
@@ -27,7 +27,7 @@ ORDER BY
 
 -- YDB Ydb
 SELECT
-	CAST(((CAST(b.FinishedOn - x.StartedOn AS Int64) * 10l) / 600000000l) % 60l AS Int32) as c1
+	CAST(CAST(b.FinishedOn - x.StartedOn AS Int64) * 10l / 600000000l % 60l AS Int32) as c1
 FROM
 	OuterJoinLeft x
 		LEFT JOIN OuterJoinRight b ON b.Id = x.Id
@@ -36,7 +36,7 @@ ORDER BY
 
 -- YDB Ydb
 SELECT
-	CAST(((CAST(x.StartedOn - b.FinishedOn AS Int64) * 10l) / 36000000000l) % 24l AS Int32) as c1
+	CAST(CAST(x.StartedOn - b.FinishedOn AS Int64) * 10l / 36000000000l % 24l AS Int32) as c1
 FROM
 	OuterJoinLeft x
 		LEFT JOIN OuterJoinRight b ON b.Id = x.Id
@@ -71,7 +71,7 @@ FROM
 	OuterJoinLeft x
 		LEFT JOIN OuterJoinRight b ON b.Id = x.Id
 WHERE
-	CAST(((CAST(b.FinishedOn - x.StartedOn AS Int64) * 10l) / 36000000000l) % 24l AS Int32) = $Hours
+	CAST(CAST(b.FinishedOn - x.StartedOn AS Int64) * 10l / 36000000000l % 24l AS Int32) = $Hours
 
 -- YDB Ydb
 DECLARE Minutes Int32
@@ -83,7 +83,7 @@ FROM
 	OuterJoinLeft x
 		LEFT JOIN OuterJoinRight b ON b.Id = x.Id
 WHERE
-	CAST(((CAST(b.FinishedOn - x.StartedOn AS Int64) * 10l) / 600000000l) % 60l AS Int32) = $Minutes
+	CAST(CAST(b.FinishedOn - x.StartedOn AS Int64) * 10l / 600000000l % 60l AS Int32) = $Minutes
 
 -- YDB Ydb
 SELECT
@@ -104,5 +104,5 @@ FROM
 	OuterJoinLeft x
 		LEFT JOIN OuterJoinRight b ON b.Id = x.Id
 WHERE
-	CAST(((CAST(x.StartedOn - b.FinishedOn AS Int64) * 10l) / 36000000000l) % 24l AS Int32) = -$Hours
+	CAST(CAST(x.StartedOn - b.FinishedOn AS Int64) * 10l / 36000000000l % 24l AS Int32) = -$Hours
 

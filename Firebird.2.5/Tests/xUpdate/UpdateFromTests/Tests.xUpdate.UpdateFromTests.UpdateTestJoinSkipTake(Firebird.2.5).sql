@@ -17,7 +17,7 @@ UPDATE
 SET
 	"Value1" = (
 		SELECT
-			("t2"."Value1" * "t2"."Value1_1") * CAST(@int1 AS Int)
+			"t2"."Value1" * "t2"."Value1_1" * CAST(@int1 AS Int)
 		FROM
 			(
 				SELECT FIRST @take SKIP @skip
@@ -37,7 +37,7 @@ SET
 	),
 	"Value2" = (
 		SELECT
-			("t3"."Value2" * "t3"."Value2_1") * CAST(@int2 AS Int)
+			"t3"."Value2" * "t3"."Value2_1" * CAST(@int2 AS Int)
 		FROM
 			(
 				SELECT FIRST @take SKIP @skip
@@ -57,7 +57,7 @@ SET
 	),
 	"Value3" = (
 		SELECT
-			("t4"."Value3" * "t4"."Value3_1") * CAST(@int3 AS Int)
+			"t4"."Value3" * "t4"."Value3_1" * CAST(@int3 AS Int)
 		FROM
 			(
 				SELECT FIRST @take SKIP @skip

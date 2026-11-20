@@ -58,7 +58,7 @@ VALUES
 
 -- SqlServer.2012.MS SqlServer.2012
 SELECT TOP (2)
-	CAST(Floor(CAST((CAST(DateDiff(day, MIN([grp].[StartedOn]), MAX([grp].[StartedOn])) AS BigInt) * 86400) * 10000000 + CAST(DateDiff(second, CAST(DateAdd(day, CAST(CAST(DateDiff(day, MIN([grp].[StartedOn]), MAX([grp].[StartedOn])) AS BigInt) AS Int), MIN([grp].[StartedOn])) AS DateTime2), MAX([grp].[StartedOn])) AS BigInt) * 10000000 + CAST(DateDiff(nanosecond, DateAdd(second, CAST(CAST(DateDiff(second, CAST(DateAdd(day, CAST(CAST(DateDiff(day, MIN([grp].[StartedOn]), MAX([grp].[StartedOn])) AS BigInt) AS Int), MIN([grp].[StartedOn])) AS DateTime2), MAX([grp].[StartedOn])) AS BigInt) AS Int), CAST(DateAdd(day, CAST(CAST(DateDiff(day, MIN([grp].[StartedOn]), MAX([grp].[StartedOn])) AS BigInt) AS Int), MIN([grp].[StartedOn])) AS DateTime2)), MAX([grp].[StartedOn])) AS BigInt) / 100 AS Float) / 864000000000) AS Int) + 1
+	CAST(Floor(CAST(CAST(DateDiff(day, MIN([grp].[StartedOn]), MAX([grp].[StartedOn])) AS BigInt) * 86400 * 10000000 + CAST(DateDiff(second, CAST(DateAdd(day, CAST(CAST(DateDiff(day, MIN([grp].[StartedOn]), MAX([grp].[StartedOn])) AS BigInt) AS Int), MIN([grp].[StartedOn])) AS DateTime2), MAX([grp].[StartedOn])) AS BigInt) * 10000000 + CAST(DateDiff(nanosecond, DateAdd(second, CAST(CAST(DateDiff(second, CAST(DateAdd(day, CAST(CAST(DateDiff(day, MIN([grp].[StartedOn]), MAX([grp].[StartedOn])) AS BigInt) AS Int), MIN([grp].[StartedOn])) AS DateTime2), MAX([grp].[StartedOn])) AS BigInt) AS Int), CAST(DateAdd(day, CAST(CAST(DateDiff(day, MIN([grp].[StartedOn]), MAX([grp].[StartedOn])) AS BigInt) AS Int), MIN([grp].[StartedOn])) AS DateTime2)), MAX([grp].[StartedOn])) AS BigInt) / 100 AS Float) / 864000000000) AS Int) + 1
 FROM
 	[CoarseEventRow] [grp]
 

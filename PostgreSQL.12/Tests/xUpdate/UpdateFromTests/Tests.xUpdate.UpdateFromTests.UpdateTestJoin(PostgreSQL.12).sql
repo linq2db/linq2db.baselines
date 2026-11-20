@@ -11,9 +11,9 @@ SET     @someId = 100
 UPDATE
 	"UpdatedEntities"
 SET
-	"Value1" = ("UpdatedEntities"."Value1" * t."Value1") * :int1,
-	"Value2" = ("UpdatedEntities"."Value2" * t."Value2") * :int2,
-	"Value3" = ("UpdatedEntities"."Value3" * t."Value3") * :int3
+	"Value1" = "UpdatedEntities"."Value1" * t."Value1" * :int1,
+	"Value2" = "UpdatedEntities"."Value2" * t."Value2" * :int2,
+	"Value3" = "UpdatedEntities"."Value3" * t."Value3" * :int3
 FROM
 	"NewEntities" t
 WHERE

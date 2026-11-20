@@ -17,5 +17,5 @@ SELECT
 FROM
 	"AllTypesValueTable" t
 WHERE
-	t."GuidValue" = ANY(:arr)
+	(t."GuidValue" = ANY(:arr))
 

@@ -7,7 +7,7 @@ SELECT
 FROM
 	[ConcatProduct] [p]
 WHERE
-	[p].[Title] = ([p].[Sku] + Coalesce(@suffix, N''))
+	[p].[Title] = [p].[Sku] + Coalesce(@suffix, N'')
 
 -- SqlServer.2012
 SELECT

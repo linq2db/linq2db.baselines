@@ -7,7 +7,7 @@ SELECT
 FROM
 	`ConcatProduct` `p`
 WHERE
-	(CONCAT(`p`.`Sku`, Coalesce(@suffix, ''))) IN ('A-100Щит', 'B-200Жук')
+	CONCAT(`p`.`Sku`, Coalesce(@suffix, '')) IN ('A-100Щит', 'B-200Жук')
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 SELECT

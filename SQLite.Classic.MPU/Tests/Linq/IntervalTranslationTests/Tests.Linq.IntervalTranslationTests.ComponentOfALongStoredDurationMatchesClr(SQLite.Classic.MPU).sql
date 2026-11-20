@@ -30,8 +30,8 @@ VALUES
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 SELECT
 	CAST([r].[InSeconds] / 86400 AS INTEGER),
-	CAST(([r].[InSeconds] / 3600) % 24 AS INTEGER),
-	CAST(([r].[InSeconds] / 60) % 60 AS INTEGER),
+	CAST([r].[InSeconds] / 3600 % 24 AS INTEGER),
+	CAST([r].[InSeconds] / 60 % 60 AS INTEGER),
 	CAST([r].[InSeconds] % 60 AS INTEGER)
 FROM
 	[DurationRow] [r]

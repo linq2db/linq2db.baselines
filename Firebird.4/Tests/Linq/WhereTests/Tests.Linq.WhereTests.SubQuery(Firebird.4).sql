@@ -1,6 +1,6 @@
 ﻿-- Firebird.4 Firebird4
 SELECT
-	("t"."ParentID" * 1000) / 1000
+	"t"."ParentID" * 1000 / 1000
 FROM
 	"Child" "t"
 WHERE

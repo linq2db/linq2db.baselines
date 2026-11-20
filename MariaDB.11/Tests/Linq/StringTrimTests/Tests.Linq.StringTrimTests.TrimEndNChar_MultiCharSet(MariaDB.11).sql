@@ -1,6 +1,6 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 SELECT
-	REGEXP_REPLACE((CONCAT(Coalesce(`t`.`NCharColumn`, ''), '...++')), '(?-i)[.+]+$', '')
+	REGEXP_REPLACE(CONCAT(Coalesce(`t`.`NCharColumn`, ''), '...++'), '(?-i)[.+]+$', '')
 FROM
 	`StringTrimTable` `t`
 

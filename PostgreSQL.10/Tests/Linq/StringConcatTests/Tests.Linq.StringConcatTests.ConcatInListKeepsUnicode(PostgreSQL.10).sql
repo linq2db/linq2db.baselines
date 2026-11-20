@@ -7,7 +7,7 @@ SELECT
 FROM
 	"ConcatProduct" p
 WHERE
-	(p."Sku" || Coalesce(:suffix, '')) IN ('A-100Щит', 'B-200Жук')
+	p."Sku" || Coalesce(:suffix, '') IN ('A-100Щит', 'B-200Жук')
 
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 SELECT

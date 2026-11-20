@@ -29,8 +29,8 @@ VALUES
 
 -- SqlCe
 SELECT TOP (2)
-	CAST(([r].[InTicks] / CAST(10000 AS BigInt)) % CAST(1000 AS BigInt) AS Int),
-	CAST(([r].[InTicks] / CAST(10 AS BigInt)) % CAST(1000 AS BigInt) AS Int)
+	CAST([r].[InTicks] / CAST(10000 AS BigInt) % CAST(1000 AS BigInt) AS Int),
+	CAST([r].[InTicks] / CAST(10 AS BigInt) % CAST(1000 AS BigInt) AS Int)
 FROM
 	[DurationRow] [r]
 

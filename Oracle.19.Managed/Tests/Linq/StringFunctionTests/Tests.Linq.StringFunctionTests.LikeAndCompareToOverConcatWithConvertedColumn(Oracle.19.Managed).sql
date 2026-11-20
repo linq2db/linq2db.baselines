@@ -16,7 +16,7 @@ SELECT
 FROM
 	"PlainAndConvertedUnicodeTable" r
 WHERE
-	(r."Plain" || r."Conv") LIKE :read
+	r."Plain" || r."Conv" LIKE :read
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @read Varchar2(6) -- String
@@ -27,5 +27,5 @@ SELECT
 FROM
 	"PlainAndConvertedUnicodeTable" r
 WHERE
-	(r."Plain" || r."Conv") = :read
+	r."Plain" || r."Conv" = :read
 

@@ -72,7 +72,7 @@ ORDER BY
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 SELECT
-	CAST(((CAST(Round((JulianDay([r].[FinishedOn]) - JulianDay([r].[StartedOn])) * 86400000) AS INTEGER) * 10000) / 10000) % 1000 AS INTEGER)
+	CAST(CAST(Round((JulianDay([r].[FinishedOn]) - JulianDay([r].[StartedOn])) * 86400000) AS INTEGER) * 10000 / 10000 % 1000 AS INTEGER)
 FROM
 	[EventRow] [r]
 ORDER BY

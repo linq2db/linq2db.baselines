@@ -103,7 +103,7 @@ SET     @value_2 = 22:44:33
 
 MERGE INTO "TestMerge2" "Target"
 USING (VALUES
-	(3,-123,987::BigInt,NULL,'<>?/.,;''zZ":','`~!@#$%^&*()_+{}|[]\','','',-1.17549996E-38::Real,2.2250738585072014E-308::Float,'2098-10-12 21:14:15.907'::timestamp,'2001-11-22 13:14:14.123345-01:39'::timestamptz,E'\\xFFC864321400'::bytea,'ffffffff-ffff-ffff-ffff-ffffffffffff'::uuid,-0.123::decimal,'2111-11-23'::date,:value,NULL,-2147483647),
+	(3,-123,987::BigInt,NULL,'<>?/.,;''zZ":','`~!@#$%^&*()_+{}|[]\','','',(-1.17549996E-38)::Real,2.2250738585072014E-308::Float,'2098-10-12 21:14:15.907'::timestamp,'2001-11-22 13:14:14.123345-01:39'::timestamptz,E'\\xFFC864321400'::bytea,'ffffffff-ffff-ffff-ffff-ffffffffffff'::uuid,(-0.123)::decimal,'2111-11-23'::date,:value,NULL,-2147483647),
 	(4,2147483647,9223372036854775807,False,'test
 	','ЙЦУКЩывапрм
 q','1',' ',3.40282002E+38,1.7976931348623157E+308,'2001-10-12 21:14:15.167'::timestamp,'2001-11-22 13:14:15.321000-00:15'::timestamptz,E'\\x000102030004'::bytea,'ffffffff-ffff-ffff-ffff-ffffffffffff'::uuid,-99999999.9999999999,'2123-11-23'::date,:value_1,'',0),

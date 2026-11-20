@@ -8,5 +8,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	([p].[PersonID] & 3) = 1
+	[p].[PersonID] & 3 = 1
 

@@ -8,7 +8,7 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	((p."PersonID" + 1) - BITAND(p."PersonID", 1) * 2 + 2) - BITAND((p."PersonID" + 1) - BITAND(p."PersonID", 1) * 2, 2) = 3
+	p."PersonID" + 1 - BITAND(p."PersonID", 1) * 2 + 2 - BITAND(p."PersonID" + 1 - BITAND(p."PersonID", 1) * 2, 2) = 3
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 SELECT

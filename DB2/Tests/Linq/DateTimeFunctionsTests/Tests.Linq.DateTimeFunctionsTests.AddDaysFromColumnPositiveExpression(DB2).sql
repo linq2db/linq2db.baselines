@@ -50,7 +50,7 @@ SELECT
 FROM
 	"LinqDataTypes" "t"
 WHERE
-	"t".ID = 5000 AND "t"."DateTimeValue" + (("t"."SmallIntValue" + @part1) - @part2) DAY > CAST('2018-01-02' AS timestamp)
+	"t".ID = 5000 AND "t"."DateTimeValue" + ("t"."SmallIntValue" + @part1 - @part2) DAY > CAST('2018-01-02' AS timestamp)
 
 -- DB2 DB2.LUW DB2LUW
 DELETE FROM

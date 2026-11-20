@@ -42,7 +42,7 @@ FROM
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
-	-1 - ([p].[ID] + 1) BAND 3
+	(-1 - ([p].[ID] + 1)) BAND 3
 FROM
 	[LinqDataTypes] [p]
 ORDER BY
@@ -63,7 +63,7 @@ FROM
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
-	[p].[ID] + 6 BAND -1 - ([p].[ID] + 1)
+	([p].[ID] + 6) BAND (-1 - ([p].[ID] + 1))
 FROM
 	[LinqDataTypes] [p]
 ORDER BY
@@ -84,7 +84,7 @@ FROM
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
-	-1 - ([p].[ID] + 1) BOR 2
+	(-1 - ([p].[ID] + 1)) BOR 2
 FROM
 	[LinqDataTypes] [p]
 ORDER BY
@@ -105,7 +105,7 @@ FROM
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
-	[p].[ID] BOR -1 - ([p].[ID] + 1)
+	[p].[ID] BOR (-1 - ([p].[ID] + 1))
 FROM
 	[LinqDataTypes] [p]
 ORDER BY

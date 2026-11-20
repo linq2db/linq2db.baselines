@@ -37,7 +37,7 @@ SELECT
 	CAST(CAST(`r`.`InSeconds` * 10000000 + `r`.`InTicks` AS SIGNED) + `r`.`InSeconds` * 10000000 AS SIGNED),
 	CAST(CAST(-`r`.`InSeconds` AS SIGNED) * 10000000 + `r`.`InTicks` AS SIGNED),
 	CAST(`r`.`InSeconds` * 10000000 + `r`.`InTicks` AS SIGNED),
-	CAST(`r`.`InSeconds` * 10000000 + `r`.`InTicks` AS SIGNED) + `r`.`InTicks` + `r`.`InTicks`,
+	CAST(`r`.`InSeconds` * 10000000 + `r`.`InTicks` AS SIGNED) + (`r`.`InTicks` + `r`.`InTicks`),
 	CAST(CAST(`r`.`InSeconds` + `r`.`InSeconds` AS SIGNED) * 10000000 + `r`.`InTicks` AS SIGNED) - (`r`.`InTicks` + `r`.`InTicks`),
 	CAST(CAST(-`r`.`InSeconds` AS SIGNED) * 10000000 - `r`.`InTicks` AS SIGNED)
 FROM

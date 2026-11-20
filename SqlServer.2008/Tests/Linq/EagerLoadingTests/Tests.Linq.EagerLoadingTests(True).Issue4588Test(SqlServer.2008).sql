@@ -36,7 +36,7 @@ FROM
 									[x].[Name] LIKE N'cat%' ESCAPE N'~'
 							) [t1]
 						WHERE
-							[t1].[RN] > @skip AND [t1].[RN] <= (@skip + @take)
+							[t1].[RN] > @skip AND [t1].[RN] <= @skip + @take
 					) [t2]
 			) [t3]
 				INNER JOIN [SubOrder] [d] ON [t3].[Id] = [d].[OrderId]
@@ -66,7 +66,7 @@ FROM
 							[x].[Name] LIKE N'cat%' ESCAPE N'~'
 					) [t1]
 				WHERE
-					[t1].[RN] > @skip AND [t1].[RN] <= (@skip + @take)
+					[t1].[RN] > @skip AND [t1].[RN] <= @skip + @take
 			) [t2]
 	) [m_1]
 		INNER JOIN [SubOrder] [d] ON [m_1].[Id] = [d].[OrderId]
@@ -86,7 +86,7 @@ FROM
 			[x].[Name] LIKE N'cat%' ESCAPE N'~'
 	) [t1]
 WHERE
-	[t1].[RN] > @skip AND [t1].[RN] <= (@skip + @take)
+	[t1].[RN] > @skip AND [t1].[RN] <= @skip + @take
 ORDER BY
 	[t1].[Id]
 

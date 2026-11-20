@@ -8,7 +8,7 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	(([p].[PersonID] + 1) - ([p].[PersonID] & 1) * 2 | 2) = 3
+	[p].[PersonID] + 1 - ([p].[PersonID] & 1) * 2 | 2 = 3
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 SELECT

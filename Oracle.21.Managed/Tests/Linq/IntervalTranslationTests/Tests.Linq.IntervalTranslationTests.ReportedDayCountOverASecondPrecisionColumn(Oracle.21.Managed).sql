@@ -58,7 +58,7 @@ VALUES
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
 SELECT
-	CAST(Floor(CAST(CAST(Floor(Extract(Day From (CAST(MAX(grp."StartedOn") AS timestamp) - CAST(MIN(grp."StartedOn") AS timestamp)))) AS Number(19)) * 864000000000 + CAST(Floor(Extract(Hour From (CAST(MAX(grp."StartedOn") AS timestamp) - CAST(MIN(grp."StartedOn") AS timestamp)))) AS Number(19)) * 36000000000 + CAST(Floor(Extract(Minute From (CAST(MAX(grp."StartedOn") AS timestamp) - CAST(MIN(grp."StartedOn") AS timestamp)))) AS Number(19)) * 600000000 + CAST(Floor(Round(Extract(Second From (CAST(MAX(grp."StartedOn") AS timestamp) - CAST(MIN(grp."StartedOn") AS timestamp))) * 10000000D)) AS Number(19)) AS Float) / 864000000000D) AS Int) + 1 as "dayCount"
+	CAST(Floor(CAST(CAST(Floor(Extract(Day From (CAST(MAX(grp."StartedOn") AS timestamp) - CAST(MIN(grp."StartedOn") AS timestamp)))) AS Number(19)) * 864000000000 + (CAST(Floor(Extract(Hour From (CAST(MAX(grp."StartedOn") AS timestamp) - CAST(MIN(grp."StartedOn") AS timestamp)))) AS Number(19)) * 36000000000 + (CAST(Floor(Extract(Minute From (CAST(MAX(grp."StartedOn") AS timestamp) - CAST(MIN(grp."StartedOn") AS timestamp)))) AS Number(19)) * 600000000 + CAST(Floor(Round(Extract(Second From (CAST(MAX(grp."StartedOn") AS timestamp) - CAST(MIN(grp."StartedOn") AS timestamp))) * 10000000D)) AS Number(19)))) AS Float) / 864000000000D) AS Int) + 1 as "dayCount"
 FROM
 	"CoarseEventRow" grp
 FETCH NEXT 2 ROWS ONLY

@@ -5,9 +5,9 @@ SET     @suffix = 'Жук'
 SELECT
 	`t`.`Id`,
 	CASE
-		WHEN (CONCAT(Coalesce(`t`.`VarCharColumn`, ''), Coalesce(@suffix, ''))) > `t`.`NVarCharColumn` OR `t`.`NVarCharColumn` IS NULL
+		WHEN CONCAT(Coalesce(`t`.`VarCharColumn`, ''), Coalesce(@suffix, '')) > `t`.`NVarCharColumn` OR `t`.`NVarCharColumn` IS NULL
 			THEN 1
-		WHEN (CONCAT(Coalesce(`t`.`VarCharColumn`, ''), Coalesce(@suffix, ''))) = `t`.`NVarCharColumn`
+		WHEN CONCAT(Coalesce(`t`.`VarCharColumn`, ''), Coalesce(@suffix, '')) = `t`.`NVarCharColumn`
 			THEN 0
 		ELSE -1
 	END,
@@ -34,7 +34,7 @@ SELECT
 FROM
 	`StringTypesTable` `t`
 WHERE
-	(CONCAT(Coalesce(`t`.`VarCharColumn`, ''), Coalesce(@suffix, ''))) NOT LIKE '%?%'
+	CONCAT(Coalesce(`t`.`VarCharColumn`, ''), Coalesce(@suffix, '')) NOT LIKE '%?%'
 ORDER BY
 	`t`.`Id`
 

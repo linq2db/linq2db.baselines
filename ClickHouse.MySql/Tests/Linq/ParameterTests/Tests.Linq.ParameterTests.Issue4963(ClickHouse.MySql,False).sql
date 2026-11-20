@@ -2,7 +2,7 @@
 ALTER TABLE
 	Issue4963Table
 UPDATE
-	Field = toUInt8(toInt32(Field) + -1)
+	Field = toUInt8(toInt32(Field) + (-1))
 WHERE 1
 
 -- ClickHouse.MySql ClickHouse

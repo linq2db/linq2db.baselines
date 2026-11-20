@@ -30,8 +30,8 @@ VALUES
 -- SqlServer.CS.MS SqlServer.2025
 SELECT TOP (2)
 	CAST([r].[InSeconds] / 86400 AS Int),
-	CAST(([r].[InSeconds] / 3600) % 24 AS Int),
-	CAST(([r].[InSeconds] / 60) % 60 AS Int),
+	CAST([r].[InSeconds] / 3600 % 24 AS Int),
+	CAST([r].[InSeconds] / 60 % 60 AS Int),
 	CAST([r].[InSeconds] % 60 AS Int)
 FROM
 	[DurationRow] [r]

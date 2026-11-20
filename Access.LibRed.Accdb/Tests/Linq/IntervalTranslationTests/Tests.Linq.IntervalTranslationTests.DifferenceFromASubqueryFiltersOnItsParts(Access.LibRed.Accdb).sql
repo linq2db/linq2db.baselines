@@ -122,7 +122,7 @@ SELECT
 FROM
 	(
 		SELECT
-			(DateDiff_Big('d', [r].[StartedOn], [r].[FinishedOn]) * 86400) * 10000000 + DateDiff_Big('ms', DateAdd('d', DateDiff_Big('d', [r].[StartedOn], [r].[FinishedOn]), [r].[StartedOn]), [r].[FinishedOn]) * 10000 as [Taken],
+			DateDiff_Big('d', [r].[StartedOn], [r].[FinishedOn]) * 86400 * 10000000 + DateDiff_Big('ms', DateAdd('d', DateDiff_Big('d', [r].[StartedOn], [r].[FinishedOn]), [r].[StartedOn]), [r].[FinishedOn]) * 10000 as [Taken],
 			[r].[Id]
 		FROM
 			[EventRow] [r]
@@ -132,7 +132,7 @@ ORDER BY
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
-	(DateDiff_Big('d', [x].[StartedOn], [x].[FinishedOn]) * 86400) * 10000000 + DateDiff_Big('ms', DateAdd('d', DateDiff_Big('d', [x].[StartedOn], [x].[FinishedOn]), [x].[StartedOn]), [x].[FinishedOn]) * 10000
+	DateDiff_Big('d', [x].[StartedOn], [x].[FinishedOn]) * 86400 * 10000000 + DateDiff_Big('ms', DateAdd('d', DateDiff_Big('d', [x].[StartedOn], [x].[FinishedOn]), [x].[StartedOn]), [x].[FinishedOn]) * 10000
 FROM
 	[EventRow] [x]
 ORDER BY
@@ -141,7 +141,7 @@ ORDER BY
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
 	[r].[Id],
-	(DateDiff_Big('d', [r].[StartedOn], [r].[FinishedOn]) * 86400) * 10000000 + DateDiff_Big('ms', DateAdd('d', DateDiff_Big('d', [r].[StartedOn], [r].[FinishedOn]), [r].[StartedOn]), [r].[FinishedOn]) * 10000
+	DateDiff_Big('d', [r].[StartedOn], [r].[FinishedOn]) * 86400 * 10000000 + DateDiff_Big('ms', DateAdd('d', DateDiff_Big('d', [r].[StartedOn], [r].[FinishedOn]), [r].[StartedOn]), [r].[FinishedOn]) * 10000
 FROM
 	[EventRow] [r]
 ORDER BY

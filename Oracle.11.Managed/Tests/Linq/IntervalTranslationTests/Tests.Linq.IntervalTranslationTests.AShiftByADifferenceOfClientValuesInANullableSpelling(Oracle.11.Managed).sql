@@ -66,7 +66,7 @@ DECLARE @Ticks Int64
 SET     @Ticks = 36002500000
 
 SELECT
-	CAST(r."DueOn" AS timestamp(7)) + NumToDSInterval(Trunc(CAST(:Ticks AS Number(19)) / 864000000000), 'DAY') + NumToDSInterval(MOD(CAST(:Ticks AS Number(19)), 864000000000) / 10000000, 'SECOND')
+	CAST(r."DueOn" AS timestamp(7)) + (NumToDSInterval(Trunc(CAST(:Ticks AS Number(19)) / 864000000000), 'DAY') + NumToDSInterval(MOD(CAST(:Ticks AS Number(19)), 864000000000) / 10000000, 'SECOND'))
 FROM
 	"OptionalDueRow" r
 WHERE
@@ -77,7 +77,7 @@ DECLARE @Ticks Int64
 SET     @Ticks = 36002500000
 
 SELECT
-	CAST(r."StartedOn" AS timestamp(7)) + NumToDSInterval(Trunc(CAST(:Ticks AS Number(19)) / 864000000000), 'DAY') + NumToDSInterval(MOD(CAST(:Ticks AS Number(19)), 864000000000) / 10000000, 'SECOND')
+	CAST(r."StartedOn" AS timestamp(7)) + (NumToDSInterval(Trunc(CAST(:Ticks AS Number(19)) / 864000000000), 'DAY') + NumToDSInterval(MOD(CAST(:Ticks AS Number(19)), 864000000000) / 10000000, 'SECOND'))
 FROM
 	"OptionalDueRow" r
 WHERE
@@ -88,7 +88,7 @@ DECLARE @Ticks Int64
 SET     @Ticks = 36002500000
 
 SELECT
-	CAST(r."DueOn" AS timestamp(7)) + NumToDSInterval(Trunc((CAST(:Ticks AS Number(19)) * -1) / 864000000000), 'DAY') + NumToDSInterval(MOD(CAST(:Ticks AS Number(19)) * -1, 864000000000) / 10000000, 'SECOND')
+	CAST(r."DueOn" AS timestamp(7)) + (NumToDSInterval(Trunc(CAST(:Ticks AS Number(19)) * -1 / 864000000000), 'DAY') + NumToDSInterval(MOD(CAST(:Ticks AS Number(19)) * -1, 864000000000) / 10000000, 'SECOND'))
 FROM
 	"OptionalDueRow" r
 WHERE
@@ -96,7 +96,7 @@ WHERE
 
 -- Oracle.11.Managed Oracle11
 SELECT
-	CAST(r."StartedOn" AS timestamp(7)) + NumToDSInterval(Trunc(CAST(NULL AS Number(19)) / 864000000000), 'DAY') + NumToDSInterval(MOD(CAST(NULL AS Number(19)), 864000000000) / 10000000, 'SECOND')
+	CAST(r."StartedOn" AS timestamp(7)) + (NumToDSInterval(Trunc(CAST(NULL AS Number(19)) / 864000000000), 'DAY') + NumToDSInterval(MOD(CAST(NULL AS Number(19)), 864000000000) / 10000000, 'SECOND'))
 FROM
 	"OptionalDueRow" r
 WHERE
@@ -107,7 +107,7 @@ DECLARE @Ticks Int64
 SET     @Ticks = 36002500000
 
 SELECT
-	CAST(r."DueOn" AS timestamp(7)) + NumToDSInterval(Trunc(CAST(:Ticks AS Number(19)) / 864000000000), 'DAY') + NumToDSInterval(MOD(CAST(:Ticks AS Number(19)), 864000000000) / 10000000, 'SECOND')
+	CAST(r."DueOn" AS timestamp(7)) + (NumToDSInterval(Trunc(CAST(:Ticks AS Number(19)) / 864000000000), 'DAY') + NumToDSInterval(MOD(CAST(:Ticks AS Number(19)), 864000000000) / 10000000, 'SECOND'))
 FROM
 	"OptionalDueRow" r
 ORDER BY
@@ -122,7 +122,7 @@ SELECT
 FROM
 	"OptionalDueRow" r
 WHERE
-	CAST(r."DueOn" AS timestamp(7)) + NumToDSInterval(Trunc(CAST(:Ticks AS Number(19)) / 864000000000), 'DAY') + NumToDSInterval(MOD(CAST(:Ticks AS Number(19)), 864000000000) / 10000000, 'SECOND') > r."StartedOn" + 1D * INTERVAL '1' HOUR
+	CAST(r."DueOn" AS timestamp(7)) + (NumToDSInterval(Trunc(CAST(:Ticks AS Number(19)) / 864000000000), 'DAY') + NumToDSInterval(MOD(CAST(:Ticks AS Number(19)), 864000000000) / 10000000, 'SECOND')) > r."StartedOn" + 1D * INTERVAL '1' HOUR
 ORDER BY
 	r."Id"
 
@@ -135,14 +135,14 @@ SELECT
 FROM
 	"OptionalDueRow" r
 WHERE
-	r."Id" = 1 AND CAST(r."StartedOn" AS timestamp(7)) + NumToDSInterval(Trunc(CAST(:Ticks AS Number(19)) / 864000000000), 'DAY') + NumToDSInterval(MOD(CAST(:Ticks AS Number(19)), 864000000000) / 10000000, 'SECOND') < r."StartedOn" + 1D * INTERVAL '1' HOUR
+	r."Id" = 1 AND CAST(r."StartedOn" AS timestamp(7)) + (NumToDSInterval(Trunc(CAST(:Ticks AS Number(19)) / 864000000000), 'DAY') + NumToDSInterval(MOD(CAST(:Ticks AS Number(19)), 864000000000) / 10000000, 'SECOND')) < r."StartedOn" + 1D * INTERVAL '1' HOUR
 
 -- Oracle.11.Managed Oracle11
 DECLARE @Ticks Int64
 SET     @Ticks = 36002500000
 
 SELECT
-	CAST(r."StartedOn" AS timestamp(7)) + NumToDSInterval(Trunc(CAST(:Ticks AS Number(19)) / 864000000000), 'DAY') + NumToDSInterval(MOD(CAST(:Ticks AS Number(19)), 864000000000) / 10000000, 'SECOND')
+	CAST(r."StartedOn" AS timestamp(7)) + (NumToDSInterval(Trunc(CAST(:Ticks AS Number(19)) / 864000000000), 'DAY') + NumToDSInterval(MOD(CAST(:Ticks AS Number(19)), 864000000000) / 10000000, 'SECOND'))
 FROM
 	"OptionalDueRow" r
 WHERE
@@ -150,7 +150,7 @@ WHERE
 
 -- Oracle.11.Managed Oracle11
 SELECT
-	CAST(r."StartedOn" AS timestamp(7)) + NumToDSInterval(Trunc(CAST(NULL AS Number(19)) / 864000000000), 'DAY') + NumToDSInterval(MOD(CAST(NULL AS Number(19)), 864000000000) / 10000000, 'SECOND')
+	CAST(r."StartedOn" AS timestamp(7)) + (NumToDSInterval(Trunc(CAST(NULL AS Number(19)) / 864000000000), 'DAY') + NumToDSInterval(MOD(CAST(NULL AS Number(19)), 864000000000) / 10000000, 'SECOND'))
 FROM
 	"OptionalDueRow" r
 WHERE
@@ -161,7 +161,7 @@ DECLARE @Ticks Int64
 SET     @Ticks = 72002500000
 
 SELECT
-	CAST(r."StartedOn" AS timestamp(7)) + NumToDSInterval(Trunc(CAST(:Ticks AS Number(19)) / 864000000000), 'DAY') + NumToDSInterval(MOD(CAST(:Ticks AS Number(19)), 864000000000) / 10000000, 'SECOND')
+	CAST(r."StartedOn" AS timestamp(7)) + (NumToDSInterval(Trunc(CAST(:Ticks AS Number(19)) / 864000000000), 'DAY') + NumToDSInterval(MOD(CAST(:Ticks AS Number(19)), 864000000000) / 10000000, 'SECOND'))
 FROM
 	"OptionalDueRow" r
 WHERE
@@ -169,7 +169,7 @@ WHERE
 
 -- Oracle.11.Managed Oracle11
 SELECT
-	CAST(r."DueOn" AS timestamp(7)) + NumToDSInterval(Trunc((CAST(Floor(Extract(Day From (CAST(r."DueOn" AS timestamp) - CAST(r."StartedOn" AS timestamp)))) AS Number(19)) * 864000000000 + CAST(Floor(Extract(Hour From (CAST(r."DueOn" AS timestamp) - CAST(r."StartedOn" AS timestamp)))) AS Number(19)) * 36000000000 + CAST(Floor(Extract(Minute From (CAST(r."DueOn" AS timestamp) - CAST(r."StartedOn" AS timestamp)))) AS Number(19)) * 600000000 + CAST(Floor(Round(Extract(Second From (CAST(r."DueOn" AS timestamp) - CAST(r."StartedOn" AS timestamp))) * 10000000D)) AS Number(19))) / 864000000000), 'DAY') + NumToDSInterval(MOD(CAST(Floor(Extract(Day From (CAST(r."DueOn" AS timestamp) - CAST(r."StartedOn" AS timestamp)))) AS Number(19)) * 864000000000 + CAST(Floor(Extract(Hour From (CAST(r."DueOn" AS timestamp) - CAST(r."StartedOn" AS timestamp)))) AS Number(19)) * 36000000000 + CAST(Floor(Extract(Minute From (CAST(r."DueOn" AS timestamp) - CAST(r."StartedOn" AS timestamp)))) AS Number(19)) * 600000000 + CAST(Floor(Round(Extract(Second From (CAST(r."DueOn" AS timestamp) - CAST(r."StartedOn" AS timestamp))) * 10000000D)) AS Number(19)), 864000000000) / 10000000, 'SECOND')
+	CAST(r."DueOn" AS timestamp(7)) + (NumToDSInterval(Trunc((CAST(Floor(Extract(Day From (CAST(r."DueOn" AS timestamp) - CAST(r."StartedOn" AS timestamp)))) AS Number(19)) * 864000000000 + (CAST(Floor(Extract(Hour From (CAST(r."DueOn" AS timestamp) - CAST(r."StartedOn" AS timestamp)))) AS Number(19)) * 36000000000 + (CAST(Floor(Extract(Minute From (CAST(r."DueOn" AS timestamp) - CAST(r."StartedOn" AS timestamp)))) AS Number(19)) * 600000000 + CAST(Floor(Round(Extract(Second From (CAST(r."DueOn" AS timestamp) - CAST(r."StartedOn" AS timestamp))) * 10000000D)) AS Number(19))))) / 864000000000), 'DAY') + NumToDSInterval(MOD(CAST(Floor(Extract(Day From (CAST(r."DueOn" AS timestamp) - CAST(r."StartedOn" AS timestamp)))) AS Number(19)) * 864000000000 + (CAST(Floor(Extract(Hour From (CAST(r."DueOn" AS timestamp) - CAST(r."StartedOn" AS timestamp)))) AS Number(19)) * 36000000000 + (CAST(Floor(Extract(Minute From (CAST(r."DueOn" AS timestamp) - CAST(r."StartedOn" AS timestamp)))) AS Number(19)) * 600000000 + CAST(Floor(Round(Extract(Second From (CAST(r."DueOn" AS timestamp) - CAST(r."StartedOn" AS timestamp))) * 10000000D)) AS Number(19)))), 864000000000) / 10000000, 'SECOND'))
 FROM
 	"OptionalDueRow" r
 ORDER BY

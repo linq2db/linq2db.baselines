@@ -29,7 +29,7 @@ SELECT
 FROM
 	"CollatedTable" "r"
 WHERE
-	"r"."CaseSensitive" CONTAINING 'stSt'
+	("r"."CaseSensitive" CONTAINING 'stSt')
 
 -- Firebird.5 Firebird4
 SELECT
@@ -37,7 +37,7 @@ SELECT
 FROM
 	"CollatedTable" "r"
 WHERE
-	"r"."CaseInsensitive" CONTAINING 'stSt'
+	("r"."CaseInsensitive" CONTAINING 'stSt')
 
 -- Firebird.5 Firebird4
 SELECT
@@ -45,7 +45,7 @@ SELECT
 FROM
 	"CollatedTable" "r"
 WHERE
-	"r"."CaseSensitive" CONTAINING 'stst'
+	("r"."CaseSensitive" CONTAINING 'stst')
 
 -- Firebird.5 Firebird4
 SELECT
@@ -53,5 +53,5 @@ SELECT
 FROM
 	"CollatedTable" "r"
 WHERE
-	"r"."CaseInsensitive" CONTAINING 'stst'
+	("r"."CaseInsensitive" CONTAINING 'stst')
 

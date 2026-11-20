@@ -16,5 +16,5 @@ SELECT
 FROM
 	`ValueConversion` `t`
 WHERE
-	`t`.`Value2` = @testedList
+	(`t`.`Value2` = @testedList)
 

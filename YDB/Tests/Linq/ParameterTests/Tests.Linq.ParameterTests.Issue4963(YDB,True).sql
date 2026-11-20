@@ -2,7 +2,7 @@
 UPDATE
 	Issue4963Table
 SET
-	Field = Unwrap(CAST(Unwrap(CAST(Issue4963Table.Field AS Int32)) + -1 AS Uint8))
+	Field = Unwrap(CAST(Unwrap(CAST(Issue4963Table.Field AS Int32)) + (-1) AS Uint8))
 
 -- YDB Ydb
 SELECT

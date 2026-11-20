@@ -36,7 +36,7 @@ LIMIT 2
 -- YDB Ydb
 SELECT
 	Unwrap(CAST(r.InDays * 24l AS Double)) as DayHours,
-	Unwrap(CAST((r.InMilliseconds / 1000l) % 60l AS Int32)) as MillisecondSecond
+	Unwrap(CAST(r.InMilliseconds / 1000l % 60l AS Int32)) as MillisecondSecond
 FROM
 	UnitSpreadRow r
 LIMIT 2

@@ -12,7 +12,7 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	CAST("p"."FirstName" AS BLOB) STARTING WITH 'Joh' AND
+	(CAST("p"."FirstName" AS BLOB) STARTING WITH 'Joh') AND
 	"p"."PersonID" = 1
 
 -- Firebird.2.5 Firebird
@@ -21,7 +21,7 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	CAST("p"."FirstName" AS BLOB) NOT STARTING WITH 'Joh' AND
+	(CAST("p"."FirstName" AS BLOB) NOT STARTING WITH 'Joh') AND
 	"p"."PersonID" = 1
 
 -- Firebird.2.5 Firebird
@@ -30,7 +30,7 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	CAST("p"."FirstName" AS BLOB) STARTING WITH 'JOH' AND
+	(CAST("p"."FirstName" AS BLOB) STARTING WITH 'JOH') AND
 	"p"."PersonID" = 1
 
 -- Firebird.2.5 Firebird
@@ -39,6 +39,6 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	CAST("p"."FirstName" AS BLOB) NOT STARTING WITH 'JOH' AND
+	(CAST("p"."FirstName" AS BLOB) NOT STARTING WITH 'JOH') AND
 	"p"."PersonID" = 1
 

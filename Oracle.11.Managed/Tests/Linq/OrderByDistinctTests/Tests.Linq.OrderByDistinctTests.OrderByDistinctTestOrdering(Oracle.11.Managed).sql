@@ -19,7 +19,7 @@ FROM
 					"OrderByDistinctData" x
 			) t1
 		WHERE
-			ROWNUM <= (:skip + :take)
+			ROWNUM <= :skip + :take
 	) t2
 WHERE
 	t2.RN > :skip
@@ -47,7 +47,7 @@ FROM
 					x."OrderData1"
 			) t1
 		WHERE
-			ROWNUM <= (:skip + :take)
+			ROWNUM <= :skip + :take
 	) t2
 WHERE
 	t2.RN > :skip
@@ -73,7 +73,7 @@ FROM
 					"OrderByDistinctData" x
 			) t1
 		WHERE
-			ROWNUM <= (:skip + :take)
+			ROWNUM <= :skip + :take
 	) t2
 WHERE
 	t2.RN > :skip
@@ -101,7 +101,7 @@ FROM
 					x."OrderData1" DESC
 			) t1
 		WHERE
-			ROWNUM <= (:skip + :take)
+			ROWNUM <= :skip + :take
 	) t2
 WHERE
 	t2.RN > :skip
@@ -127,7 +127,7 @@ FROM
 					"OrderByDistinctData" x
 			) t1
 		WHERE
-			ROWNUM <= (:skip + :take)
+			ROWNUM <= :skip + :take
 	) t2
 WHERE
 	t2.RN > :skip
@@ -156,7 +156,7 @@ FROM
 					x."OrderData2"
 			) t1
 		WHERE
-			ROWNUM <= (:skip + :take)
+			ROWNUM <= :skip + :take
 	) t2
 WHERE
 	t2.RN > :skip
@@ -182,7 +182,7 @@ FROM
 					"OrderByDistinctData" x
 			) t1
 		WHERE
-			ROWNUM <= (:skip + :take)
+			ROWNUM <= :skip + :take
 	) t2
 WHERE
 	t2.RN > :skip
@@ -211,7 +211,7 @@ FROM
 					x."OrderData2" DESC
 			) t1
 		WHERE
-			ROWNUM <= (:skip + :take)
+			ROWNUM <= :skip + :take
 	) t2
 WHERE
 	t2.RN > :skip
@@ -237,7 +237,7 @@ FROM
 					"OrderByDistinctData" x
 			) t1
 		WHERE
-			ROWNUM <= (:skip + :take)
+			ROWNUM <= :skip + :take
 	) t2
 WHERE
 	t2.RN > :skip
@@ -266,7 +266,7 @@ FROM
 					x."OrderData2" DESC
 			) t1
 		WHERE
-			ROWNUM <= (:skip + :take)
+			ROWNUM <= :skip + :take
 	) t2
 WHERE
 	t2.RN > :skip
@@ -292,7 +292,7 @@ FROM
 					"OrderByDistinctData" x
 			) t1
 		WHERE
-			ROWNUM <= (:skip + :take)
+			ROWNUM <= :skip + :take
 	) t2
 WHERE
 	t2.RN > :skip
@@ -321,7 +321,7 @@ FROM
 					x."OrderData2" DESC
 			) t1
 		WHERE
-			ROWNUM <= (:skip + :take)
+			ROWNUM <= :skip + :take
 	) t2
 WHERE
 	t2.RN > :skip

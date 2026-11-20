@@ -24,7 +24,7 @@ FROM
 					t1."ChildID" DESC
 			) t2
 		WHERE
-			ROWNUM <= (:skip + :take - :skip)
+			ROWNUM <= :skip + (:take - :skip)
 	) t3
 WHERE
 	t3.RN > :skip
@@ -57,7 +57,7 @@ FROM
 					t1."ChildID" DESC
 			) t2
 		WHERE
-			ROWNUM <= (:skip + :take - :skip)
+			ROWNUM <= :skip + (:take - :skip)
 	) t3
 WHERE
 	t3.RN > :skip

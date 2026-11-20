@@ -4,5 +4,5 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	(CONCAT(`p`.`LastName`, ', ', `p`.`FirstName`)) = 'Pupkin, John'
+	CONCAT(`p`.`LastName`, ', ', `p`.`FirstName`) = 'Pupkin, John'
 
