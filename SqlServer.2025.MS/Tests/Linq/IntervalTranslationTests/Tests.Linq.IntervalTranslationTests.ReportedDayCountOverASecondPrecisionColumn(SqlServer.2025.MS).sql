@@ -58,7 +58,7 @@ VALUES
 
 -- SqlServer.2025.MS SqlServer.2025
 SELECT TOP (2)
-	CAST(Floor(CAST((DateDiff_Big(day, MIN([grp].[StartedOn]), MAX([grp].[StartedOn])) * 86400) * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, MIN([grp].[StartedOn]), MAX([grp].[StartedOn])) AS Int), MIN([grp].[StartedOn])), MAX([grp].[StartedOn])) / 100 AS Float) / 864000000000) AS Int) + 1
+	CAST(Floor(CAST(DateDiff_Big(day, MIN([grp].[StartedOn]), MAX([grp].[StartedOn])) * 86400 * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, MIN([grp].[StartedOn]), MAX([grp].[StartedOn])) AS Int), MIN([grp].[StartedOn])), MAX([grp].[StartedOn])) / 100 AS Float) / 864000000000) AS Int) + 1
 FROM
 	[CoarseEventRow] [grp]
 

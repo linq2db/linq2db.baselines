@@ -1,6 +1,6 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
 SELECT
-	([t].[ParentID] * 1000) / 1000
+	[t].[ParentID] * 1000 / 1000
 FROM
 	[Child] [t]
 WHERE

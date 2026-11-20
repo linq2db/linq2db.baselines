@@ -21,20 +21,20 @@ VALUES
 
 -- SqlServer.2022
 SELECT
-	CAST((((DateDiff_Big(day, [r].[StartedOn], [r].[FinishedOn]) * 86400) * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r].[StartedOn], [r].[FinishedOn]) AS Int), [r].[StartedOn]), [r].[FinishedOn]) / 100) / 10) % 1000 AS Int)
+	CAST((DateDiff_Big(day, [r].[StartedOn], [r].[FinishedOn]) * 86400 * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r].[StartedOn], [r].[FinishedOn]) AS Int), [r].[StartedOn]), [r].[FinishedOn]) / 100) / 10 % 1000 AS Int)
 FROM
 	[EventRow] [r]
 
 -- SqlServer.2022
 SELECT
-	CAST((((DateDiff_Big(day, [r].[StartedOn], [r].[FinishedOn]) * 86400) * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r].[StartedOn], [r].[FinishedOn]) AS Int), [r].[StartedOn]), [r].[FinishedOn]) / 100) / 10) % 1000 AS Int)
+	CAST((DateDiff_Big(day, [r].[StartedOn], [r].[FinishedOn]) * 86400 * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r].[StartedOn], [r].[FinishedOn]) AS Int), [r].[StartedOn]), [r].[FinishedOn]) / 100) / 10 % 1000 AS Int)
 FROM
 	[EventRow] [r]
 WHERE
 	[r].[Id] > 0
 UNION ALL
 SELECT
-	CAST((((DateDiff_Big(day, [r_1].[StartedOn], [r_1].[FinishedOn]) * 86400) * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r_1].[StartedOn], [r_1].[FinishedOn]) AS Int), [r_1].[StartedOn]), [r_1].[FinishedOn]) / 100) / 10) % 1000 AS Int)
+	CAST((DateDiff_Big(day, [r_1].[StartedOn], [r_1].[FinishedOn]) * 86400 * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r_1].[StartedOn], [r_1].[FinishedOn]) AS Int), [r_1].[StartedOn]), [r_1].[FinishedOn]) / 100) / 10 % 1000 AS Int)
 FROM
 	[EventRow] [r_1]
 WHERE
