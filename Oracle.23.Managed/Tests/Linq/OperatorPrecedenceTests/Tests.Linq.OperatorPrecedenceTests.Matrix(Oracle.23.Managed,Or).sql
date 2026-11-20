@@ -1,59 +1,71 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
 SELECT
-	(r.A + r.B + r.C) - BITAND(r.A + r.B, r.C),
-	(r.A + r.B + r.C) - BITAND(r.A, r.B + r.C),
-	(r.A + r.B + r.C) - BITAND(r.A + r.B, r.C),
-	(r.A + r.B + r.C) - BITAND(r.A, r.B + r.C),
-	(r.A - r.B + r.C) - BITAND(r.A - r.B, r.C),
-	(r.A - r.B + r.C) - BITAND(r.A - r.B, r.C),
-	(r.A * r.B + r.C) - BITAND(r.A * r.B, r.C),
-	(r.A + r.B * r.C) - BITAND(r.A, r.B * r.C),
-	(r.A * r.B + r.C) - BITAND(r.A * r.B, r.C),
-	(r.A + r.B * r.C) - BITAND(r.A, r.B * r.C),
-	(r.A / r.B + r.C) - BITAND(r.A / r.B, r.C),
-	(r.A + r.B / r.C) - BITAND(r.A, r.B / r.C),
-	(r.A / r.B + r.C) - BITAND(r.A / r.B, r.C),
-	(r.A + r.B / r.C) - BITAND(r.A, r.B / r.C),
-	(MOD(r.A, r.B) + r.C) - BITAND(MOD(r.A, r.B), r.C),
-	(r.A + MOD(r.B, r.C)) - BITAND(r.A, MOD(r.B, r.C)),
-	(MOD(r.A, r.B) + r.C) - BITAND(MOD(r.A, r.B), r.C),
-	(r.A + MOD(r.B, r.C)) - BITAND(r.A, MOD(r.B, r.C)),
-	(BITAND(r.A, r.B) + r.C) - BITAND(BITAND(r.A, r.B), r.C),
-	(r.A + BITAND(r.B, r.C)) - BITAND(r.A, BITAND(r.B, r.C)),
-	(BITAND(r.A, r.B) + r.C) - BITAND(BITAND(r.A, r.B), r.C),
-	(r.A + BITAND(r.B, r.C)) - BITAND(r.A, BITAND(r.B, r.C)),
-	((r.A + r.B) - BITAND(r.A, r.B) * 2 + r.C) - BITAND((r.A + r.B) - BITAND(r.A, r.B) * 2, r.C),
-	(r.A + (r.B + r.C) - BITAND(r.B, r.C) * 2) - BITAND(r.A, (r.B + r.C) - BITAND(r.B, r.C) * 2),
-	((r.A + r.B) - BITAND(r.A, r.B) * 2 + r.C) - BITAND((r.A + r.B) - BITAND(r.A, r.B) * 2, r.C),
-	(r.A + (r.B + r.C) - BITAND(r.B, r.C) * 2) - BITAND(r.A, (r.B + r.C) - BITAND(r.B, r.C) * 2),
-	(r.A - r.B) - BITAND(r.A, -r.B),
-	(-r.B + r.C) - BITAND(-r.B, r.C),
-	(r.A - r.B + r.C) - BITAND(r.A - r.B, r.C),
-	(r.A + r.B + r.C) - BITAND(r.A + r.B, r.C),
-	(r.A * -r.B + r.C) - BITAND(r.A * -r.B, r.C),
-	(r.A / -r.B + r.C) - BITAND(r.A / -r.B, r.C),
-	(MOD(r.A, -r.B) + r.C) - BITAND(MOD(r.A, -r.B), r.C),
-	(BITAND(r.A, -r.B) + r.C) - BITAND(BITAND(r.A, -r.B), r.C),
-	((r.A - r.B) - BITAND(r.A, -r.B) + r.C) - BITAND((r.A - r.B) - BITAND(r.A, -r.B), r.C),
-	((r.A - r.B) - BITAND(r.A, -r.B) * 2 + r.C) - BITAND((r.A - r.B) - BITAND(r.A, -r.B) * 2, r.C),
-	(r.A + (-1 - r.B)) - BITAND(r.A, -1 - r.B),
-	((-1 - r.B) + r.C) - BITAND(-1 - r.B, r.C),
-	(r.A + (-1 - r.B) + r.C) - BITAND(r.A + (-1 - r.B), r.C),
-	(r.A - (-1 - r.B) + r.C) - BITAND(r.A - (-1 - r.B), r.C),
-	(r.A * (-1 - r.B) + r.C) - BITAND(r.A * (-1 - r.B), r.C),
-	(MOD(r.A, -1 - r.B) + r.C) - BITAND(MOD(r.A, -1 - r.B), r.C),
-	(BITAND(r.A, -1 - r.B) + r.C) - BITAND(BITAND(r.A, -1 - r.B), r.C),
-	((r.A + (-1 - r.B)) - BITAND(r.A, -1 - r.B) + r.C) - BITAND((r.A + (-1 - r.B)) - BITAND(r.A, -1 - r.B), r.C),
-	((r.A + (-1 - r.B)) - BITAND(r.A, -1 - r.B) * 2 + r.C) - BITAND((r.A + (-1 - r.B)) - BITAND(r.A, -1 - r.B) * 2, r.C),
-	(r.A + -5) - BITAND(r.A, -5),
-	(-5 + r.C) - BITAND(-5, r.C),
-	(r.A + -5 + r.C) - BITAND(r.A + -5, r.C),
-	(r.A - -5 + r.C) - BITAND(r.A - -5, r.C),
-	(r.A * -5 + r.C) - BITAND(r.A * -5, r.C),
-	(MOD(r.A, -5) + r.C) - BITAND(MOD(r.A, -5), r.C),
-	(BITAND(r.A, -5) + r.C) - BITAND(BITAND(r.A, -5), r.C),
-	((r.A + -5) - BITAND(r.A, -5) + r.C) - BITAND((r.A + -5) - BITAND(r.A, -5), r.C),
-	((r.A + -5) - BITAND(r.A, -5) * 2 + r.C) - BITAND((r.A + -5) - BITAND(r.A, -5) * 2, r.C)
+	r.A + r.B + r.C - BITAND(r.A + r.B, r.C),
+	r.A + (r.B + r.C) - BITAND(r.A, r.B + r.C),
+	r.A + r.B + r.C - BITAND(r.A + r.B, r.C),
+	r.A + (r.B + r.C) - BITAND(r.A, r.B + r.C),
+	r.A - r.B + r.C - BITAND(r.A - r.B, r.C),
+	r.A - r.B + r.C - BITAND(r.A - r.B, r.C),
+	r.A * r.B + r.C - BITAND(r.A * r.B, r.C),
+	r.A + r.B * r.C - BITAND(r.A, r.B * r.C),
+	r.A * r.B + r.C - BITAND(r.A * r.B, r.C),
+	r.A + r.B * r.C - BITAND(r.A, r.B * r.C),
+	r.A / r.B + r.C - BITAND(r.A / r.B, r.C),
+	r.A + r.B / r.C - BITAND(r.A, r.B / r.C),
+	r.A / r.B + r.C - BITAND(r.A / r.B, r.C),
+	r.A + r.B / r.C - BITAND(r.A, r.B / r.C),
+	MOD(r.A, r.B) + r.C - BITAND(MOD(r.A, r.B), r.C),
+	r.A + MOD(r.B, r.C) - BITAND(r.A, MOD(r.B, r.C)),
+	MOD(r.A, r.B) + r.C - BITAND(MOD(r.A, r.B), r.C),
+	r.A + MOD(r.B, r.C) - BITAND(r.A, MOD(r.B, r.C)),
+	BITAND(r.A, r.B) + r.C - BITAND(BITAND(r.A, r.B), r.C),
+	r.A + BITAND(r.B, r.C) - BITAND(r.A, BITAND(r.B, r.C)),
+	BITAND(r.A, r.B) + r.C - BITAND(BITAND(r.A, r.B), r.C),
+	r.A + BITAND(r.B, r.C) - BITAND(r.A, BITAND(r.B, r.C)),
+	r.A + r.B - BITAND(r.A, r.B) * 2 + r.C - BITAND(r.A + r.B - BITAND(r.A, r.B) * 2, r.C),
+	r.A + (r.B + r.C - BITAND(r.B, r.C) * 2) - BITAND(r.A, r.B + r.C - BITAND(r.B, r.C) * 2),
+	r.A + r.B - BITAND(r.A, r.B) * 2 + r.C - BITAND(r.A + r.B - BITAND(r.A, r.B) * 2, r.C),
+	r.A + (r.B + r.C - BITAND(r.B, r.C) * 2) - BITAND(r.A, r.B + r.C - BITAND(r.B, r.C) * 2),
+	(r.A + r.B) + r.C - BITAND(r.A + r.B, r.C),
+	r.A + (r.B + r.C) - BITAND(r.A, r.B + r.C),
+	(r.A + -6) + r.C - BITAND(r.A + -6, r.C),
+	(r.A - r.B) + r.C - BITAND(r.A - r.B, r.C),
+	r.A + (r.B - r.C) - BITAND(r.A, r.B - r.C),
+	(r.A - -6) + r.C - BITAND(r.A - -6, r.C),
+	r.A * r.B + r.C - BITAND(r.A * r.B, r.C),
+	r.A + r.B * r.C - BITAND(r.A, r.B * r.C),
+	r.A * -6 + r.C - BITAND(r.A * -6, r.C),
+	(r.A + r.B) + r.C - BITAND(r.A + r.B, r.C),
+	r.A + (r.B + r.C) - BITAND(r.A, r.B + r.C),
+	(r.A + -6) + r.C - BITAND(r.A + -6, r.C),
+	r.A - r.B - BITAND(r.A, -r.B),
+	-r.B + r.C - BITAND(-r.B, r.C),
+	r.A - r.B + r.C - BITAND(r.A - r.B, r.C),
+	r.A + r.B + r.C - BITAND(r.A + r.B, r.C),
+	r.A * -r.B + r.C - BITAND(r.A * -r.B, r.C),
+	r.A / -r.B + r.C - BITAND(r.A / -r.B, r.C),
+	MOD(r.A, -r.B) + r.C - BITAND(MOD(r.A, -r.B), r.C),
+	BITAND(r.A, -r.B) + r.C - BITAND(BITAND(r.A, -r.B), r.C),
+	r.A - r.B - BITAND(r.A, -r.B) + r.C - BITAND(r.A - r.B - BITAND(r.A, -r.B), r.C),
+	r.A - r.B - BITAND(r.A, -r.B) * 2 + r.C - BITAND(r.A - r.B - BITAND(r.A, -r.B) * 2, r.C),
+	r.A + (-1 - r.B) - BITAND(r.A, -1 - r.B),
+	-1 - r.B + r.C - BITAND(-1 - r.B, r.C),
+	r.A + (-1 - r.B) + r.C - BITAND(r.A + (-1 - r.B), r.C),
+	r.A - (-1 - r.B) + r.C - BITAND(r.A - (-1 - r.B), r.C),
+	r.A * (-1 - r.B) + r.C - BITAND(r.A * (-1 - r.B), r.C),
+	MOD(r.A, -1 - r.B) + r.C - BITAND(MOD(r.A, -1 - r.B), r.C),
+	BITAND(r.A, -1 - r.B) + r.C - BITAND(BITAND(r.A, -1 - r.B), r.C),
+	r.A + (-1 - r.B) - BITAND(r.A, -1 - r.B) + r.C - BITAND(r.A + (-1 - r.B) - BITAND(r.A, -1 - r.B), r.C),
+	r.A + (-1 - r.B) - BITAND(r.A, -1 - r.B) * 2 + r.C - BITAND(r.A + (-1 - r.B) - BITAND(r.A, -1 - r.B) * 2, r.C),
+	r.A + -5 - BITAND(r.A, -5),
+	-5 + r.C - BITAND(-5, r.C),
+	r.A + -5 + r.C - BITAND(r.A + -5, r.C),
+	r.A - -5 + r.C - BITAND(r.A - -5, r.C),
+	r.A * -5 + r.C - BITAND(r.A * -5, r.C),
+	MOD(r.A, -5) + r.C - BITAND(MOD(r.A, -5), r.C),
+	BITAND(r.A, -5) + r.C - BITAND(BITAND(r.A, -5), r.C),
+	r.A + -5 - BITAND(r.A, -5) + r.C - BITAND(r.A + -5 - BITAND(r.A, -5), r.C),
+	r.A + -5 - BITAND(r.A, -5) * 2 + r.C - BITAND(r.A + -5 - BITAND(r.A, -5) * 2, r.C)
 FROM
 	"PrecedenceRow" r
 ORDER BY
@@ -61,15 +73,15 @@ ORDER BY
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 SELECT
-	(r.A + -5) - BITAND(r.A, -5),
-	(-5 + r.C) - BITAND(-5, r.C),
-	(r.A + -5 + r.C) - BITAND(r.A + -5, r.C),
-	(r.A - -5 + r.C) - BITAND(r.A - -5, r.C),
-	(r.A * -5 + r.C) - BITAND(r.A * -5, r.C),
-	(MOD(r.A, -5) + r.C) - BITAND(MOD(r.A, -5), r.C),
-	(BITAND(r.A, -5) + r.C) - BITAND(BITAND(r.A, -5), r.C),
-	((r.A + -5) - BITAND(r.A, -5) + r.C) - BITAND((r.A + -5) - BITAND(r.A, -5), r.C),
-	((r.A + -5) - BITAND(r.A, -5) * 2 + r.C) - BITAND((r.A + -5) - BITAND(r.A, -5) * 2, r.C)
+	r.A + -5 - BITAND(r.A, -5),
+	-5 + r.C - BITAND(-5, r.C),
+	r.A + -5 + r.C - BITAND(r.A + -5, r.C),
+	r.A - -5 + r.C - BITAND(r.A - -5, r.C),
+	r.A * -5 + r.C - BITAND(r.A * -5, r.C),
+	MOD(r.A, -5) + r.C - BITAND(MOD(r.A, -5), r.C),
+	BITAND(r.A, -5) + r.C - BITAND(BITAND(r.A, -5), r.C),
+	r.A + -5 - BITAND(r.A, -5) + r.C - BITAND(r.A + -5 - BITAND(r.A, -5), r.C),
+	r.A + -5 - BITAND(r.A, -5) * 2 + r.C - BITAND(r.A + -5 - BITAND(r.A, -5) * 2, r.C)
 FROM
 	"PrecedenceRow" r
 ORDER BY
@@ -107,6 +119,18 @@ ORDER BY
 -- cell Or/Or(a,Xor(b,c)): green
 -- cell Or/Or(AsNotNull(Xor(a,b)),c): green
 -- cell Or/Or(a,AsNotNull(Xor(b,c))): green
+-- cell Or/Or(TAdd(a,b),c): green
+-- cell Or/Or(a,TAdd(b,c)): green
+-- cell Or/Or(TAdd(a,NegLit),c): green
+-- cell Or/Or(TSub(a,b),c): green
+-- cell Or/Or(a,TSub(b,c)): green
+-- cell Or/Or(TSub(a,NegLit),c): green
+-- cell Or/Or(TMul(a,b),c): green
+-- cell Or/Or(a,TMul(b,c)): green
+-- cell Or/Or(TMul(a,NegLit),c): green
+-- cell Or/Or(TAddOffset(a,b),c): green
+-- cell Or/Or(a,TAddOffset(b,c)): green
+-- cell Or/Or(TAddOffset(a,NegLit),c): green
 -- cell Or/Or(a,Neg(b)): green
 -- cell Or/Or(Neg(b),c): green
 -- cell Or/Or(Add(a,Neg(b)),c): green

@@ -37,7 +37,7 @@ FETCH NEXT 2 ROWS ONLY
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
 SELECT
-	CAST(Floor(Extract(Day From (CAST(r."ClosedOn" AS timestamp) - CAST(r."OpenedOn" AS timestamp)))) AS Number(19)) * 864000000000 + CAST(Floor(Extract(Hour From (CAST(r."ClosedOn" AS timestamp) - CAST(r."OpenedOn" AS timestamp)))) AS Number(19)) * 36000000000 + CAST(Floor(Extract(Minute From (CAST(r."ClosedOn" AS timestamp) - CAST(r."OpenedOn" AS timestamp)))) AS Number(19)) * 600000000 + CAST(Floor(Round(Extract(Second From (CAST(r."ClosedOn" AS timestamp) - CAST(r."OpenedOn" AS timestamp))) * 10000000D)) AS Number(19)) as "c1"
+	CAST(Floor(Extract(Day From (CAST(r."ClosedOn" AS timestamp) - CAST(r."OpenedOn" AS timestamp)))) AS Number(19)) * 864000000000 + (CAST(Floor(Extract(Hour From (CAST(r."ClosedOn" AS timestamp) - CAST(r."OpenedOn" AS timestamp)))) AS Number(19)) * 36000000000 + (CAST(Floor(Extract(Minute From (CAST(r."ClosedOn" AS timestamp) - CAST(r."OpenedOn" AS timestamp)))) AS Number(19)) * 600000000 + CAST(Floor(Round(Extract(Second From (CAST(r."ClosedOn" AS timestamp) - CAST(r."OpenedOn" AS timestamp))) * 10000000D)) AS Number(19)))) as "c1"
 FROM
 	"CoarseEventRow" r
 FETCH NEXT 2 ROWS ONLY
