@@ -35,7 +35,7 @@ FROM
 		SELECT
 			CAST(1 AS Int) as "Source",
 			r."Budget" as "First_1",
-			CAST(Floor(Extract(Day From (CAST(r."FinishedOn" AS timestamp) - CAST(r."StartedOn" AS timestamp)))) AS Number(19)) * 864000000000 + CAST(Floor(Extract(Hour From (CAST(r."FinishedOn" AS timestamp) - CAST(r."StartedOn" AS timestamp)))) AS Number(19)) * 36000000000 + CAST(Floor(Extract(Minute From (CAST(r."FinishedOn" AS timestamp) - CAST(r."StartedOn" AS timestamp)))) AS Number(19)) * 600000000 + CAST(Floor(Round(Extract(Second From (CAST(r."FinishedOn" AS timestamp) - CAST(r."StartedOn" AS timestamp))) * 10000000D)) AS Number(19)) as "Second_1",
+			CAST(Floor(Extract(Day From (CAST(r."FinishedOn" AS timestamp) - CAST(r."StartedOn" AS timestamp)))) AS Number(19)) * 864000000000 + (CAST(Floor(Extract(Hour From (CAST(r."FinishedOn" AS timestamp) - CAST(r."StartedOn" AS timestamp)))) AS Number(19)) * 36000000000 + (CAST(Floor(Extract(Minute From (CAST(r."FinishedOn" AS timestamp) - CAST(r."StartedOn" AS timestamp)))) AS Number(19)) * 600000000 + CAST(Floor(Round(Extract(Second From (CAST(r."FinishedOn" AS timestamp) - CAST(r."StartedOn" AS timestamp))) * 10000000D)) AS Number(19)))) as "Second_1",
 			NULL as "First_2",
 			NULL as "Second_2"
 		FROM
@@ -45,7 +45,7 @@ FROM
 			CAST(2 AS Int) as "Source",
 			NULL as "First_1",
 			NULL as "Second_1",
-			CAST(Floor(Extract(Day From (CAST(r_1."FinishedOn" AS timestamp) - CAST(r_1."StartedOn" AS timestamp)))) AS Number(19)) * 864000000000 + CAST(Floor(Extract(Hour From (CAST(r_1."FinishedOn" AS timestamp) - CAST(r_1."StartedOn" AS timestamp)))) AS Number(19)) * 36000000000 + CAST(Floor(Extract(Minute From (CAST(r_1."FinishedOn" AS timestamp) - CAST(r_1."StartedOn" AS timestamp)))) AS Number(19)) * 600000000 + CAST(Floor(Round(Extract(Second From (CAST(r_1."FinishedOn" AS timestamp) - CAST(r_1."StartedOn" AS timestamp))) * 10000000D)) AS Number(19)) as "First_2",
+			CAST(Floor(Extract(Day From (CAST(r_1."FinishedOn" AS timestamp) - CAST(r_1."StartedOn" AS timestamp)))) AS Number(19)) * 864000000000 + (CAST(Floor(Extract(Hour From (CAST(r_1."FinishedOn" AS timestamp) - CAST(r_1."StartedOn" AS timestamp)))) AS Number(19)) * 36000000000 + (CAST(Floor(Extract(Minute From (CAST(r_1."FinishedOn" AS timestamp) - CAST(r_1."StartedOn" AS timestamp)))) AS Number(19)) * 600000000 + CAST(Floor(Round(Extract(Second From (CAST(r_1."FinishedOn" AS timestamp) - CAST(r_1."StartedOn" AS timestamp))) * 10000000D)) AS Number(19)))) as "First_2",
 			r_1."Budget" as "Second_2"
 		FROM
 			"BudgetedTaskRow" r_1
