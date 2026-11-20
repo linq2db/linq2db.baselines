@@ -97,7 +97,7 @@ FROM
 					x."CarNo"
 			) t1
 		WHERE
-			ROWNUM <= (:skip + :take)
+			ROWNUM <= :skip + :take
 	) t5
 WHERE
 	t5.RN > :skip

@@ -4,7 +4,7 @@ SELECT
 FROM
 	"ConcatTestEntity" e
 WHERE
-	(e."Str1" || ' ' || e."StrReq" || '!') = 'John Programmer!'
+	e."Str1" || ' ' || e."StrReq" || '!' = 'John Programmer!'
 
 -- Oracle.11.Managed Oracle11
 SELECT

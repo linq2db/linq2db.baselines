@@ -27,7 +27,7 @@ FROM
 							"Parent" t1
 					) t2
 				WHERE
-					ROWNUM <= (:skip + :take)
+					ROWNUM <= :skip + :take
 			) t3
 		WHERE
 			t3.RN > :skip

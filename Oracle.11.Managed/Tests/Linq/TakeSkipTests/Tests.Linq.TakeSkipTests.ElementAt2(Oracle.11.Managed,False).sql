@@ -24,7 +24,7 @@ FROM
 					p."ParentID"
 			) t1
 		WHERE
-			ROWNUM <= (:n + 1)
+			ROWNUM <= :n + 1
 	) t2
 WHERE
 	t2.RN > :n

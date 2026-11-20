@@ -7,7 +7,7 @@ SELECT
 FROM
 	"ConvertedConcatTitleRow" p
 WHERE
-	(p."Conv" || p."Title") = :bound
+	p."Conv" || p."Title" = :bound
 
 -- Oracle.11.Managed Oracle11
 DECLARE @bound Varchar2(5) -- String
@@ -18,7 +18,7 @@ SELECT
 FROM
 	"ConvertedConcatTitleRow" p
 WHERE
-	:bound = (p."Conv" || p."Title")
+	:bound = p."Conv" || p."Title"
 
 -- Oracle.11.Managed Oracle11
 SELECT
@@ -26,5 +26,5 @@ SELECT
 FROM
 	"ConvertedConcatTitleRow" p
 WHERE
-	(p."Conv" || p."Title") IN ('x:c1T')
+	p."Conv" || p."Title" IN ('x:c1T')
 
