@@ -6,9 +6,15 @@ SELECT
 	r.MaxCapacity,
 	r.Quantity,
 	r.MaxCapacity - r.Quantity,
-	COALESCE(t1.PeriodOrderLimit,0),
+	CASE
+		WHEN t1.Id IS NULL THEN NULL
+		ELSE COALESCE(t1.PeriodOrderLimit,0)
+	END,
 	vsopc.Quantity,
-	COALESCE(t1.PeriodOrderLimit,0) - Coalesce(vsopc.Quantity, 0)
+	CASE
+		WHEN t1.Id IS NULL THEN NULL
+		ELSE COALESCE(t1.PeriodOrderLimit,0) - Coalesce(vsopc.Quantity, 0)
+	END
 FROM
 	(
 		SELECT
@@ -16,7 +22,10 @@ FROM
 			vpc.CategoryId as CategoryId,
 			pop.ProductId as ProductId,
 			COALESCE(pcc.PeriodOrderLimit,0) as MaxCapacity,
-			COALESCE(COALESCE(vsp.Quantity,0),0) as Quantity
+			COALESCE(CASE
+				WHEN vsp.Id IS NULL THEN NULL
+				ELSE COALESCE(vsp.Quantity,0)
+			END,0) as Quantity
 		FROM
 			OrderPeriod op
 				INNER JOIN ProductsPerOrderPeriod pop ON op.Id = pop.OrderPeriodId
