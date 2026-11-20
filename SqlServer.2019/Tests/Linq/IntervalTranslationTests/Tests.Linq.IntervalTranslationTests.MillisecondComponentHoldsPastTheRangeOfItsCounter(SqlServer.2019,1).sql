@@ -72,7 +72,7 @@ ORDER BY
 
 -- SqlServer.2019
 SELECT
-	CAST((((DateDiff_Big(day, [r].[StartedOn], [r].[FinishedOn]) * 86400) * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r].[StartedOn], [r].[FinishedOn]) AS Int), [r].[StartedOn]), [r].[FinishedOn]) / 100) / 10000) % 1000 AS Int)
+	CAST((DateDiff_Big(day, [r].[StartedOn], [r].[FinishedOn]) * 86400 * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r].[StartedOn], [r].[FinishedOn]) AS Int), [r].[StartedOn]), [r].[FinishedOn]) / 100) / 10000 % 1000 AS Int)
 FROM
 	[EventRow] [r]
 ORDER BY
