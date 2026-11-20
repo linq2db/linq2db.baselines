@@ -1,6 +1,6 @@
 ﻿-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 SELECT
-	(t."ParentID" * 1000) / 1000
+	t."ParentID" * 1000 / 1000
 FROM
 	"Child" t
 WHERE

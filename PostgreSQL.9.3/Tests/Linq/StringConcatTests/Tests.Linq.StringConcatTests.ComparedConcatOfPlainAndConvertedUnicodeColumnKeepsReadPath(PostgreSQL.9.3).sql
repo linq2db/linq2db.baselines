@@ -16,7 +16,7 @@ SELECT
 FROM
 	"PlainAndConvertedUnicodeRow" r
 WHERE
-	(r."Plain" || r."Conv") = :read
+	r."Plain" || r."Conv" = :read
 
 -- PostgreSQL.9.3 PostgreSQL
 DECLARE @read Text(6) -- String
@@ -27,7 +27,7 @@ SELECT
 FROM
 	"PlainAndConvertedUnicodeRow" r
 WHERE
-	(r."Plain" || r."Conv") <> :read
+	r."Plain" || r."Conv" <> :read
 
 -- PostgreSQL.9.3 PostgreSQL
 SELECT
@@ -48,5 +48,5 @@ SELECT
 FROM
 	"PlainAndConvertedUnicodeRow" r
 WHERE
-	(r."Plain" || r."Conv") IN ('A-x:n1')
+	r."Plain" || r."Conv" IN ('A-x:n1')
 

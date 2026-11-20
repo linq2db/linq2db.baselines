@@ -17,5 +17,5 @@ SELECT
 FROM
 	"AllTypesValueTable" t
 WHERE
-	t."DecimalValue" = ANY(:arr)
+	(t."DecimalValue" = ANY(:arr))
 
