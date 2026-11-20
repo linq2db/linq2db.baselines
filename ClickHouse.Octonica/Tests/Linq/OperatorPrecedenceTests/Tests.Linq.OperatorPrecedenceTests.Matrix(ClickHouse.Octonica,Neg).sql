@@ -13,7 +13,7 @@ SELECT
 	negate(negate(r.B)),
 	negate(bitNot(r.B)),
 	negate(-5),
-	negate(-5 * r.B)
+	negate((-5) * r.B)
 FROM
 	PrecedenceRow r
 ORDER BY

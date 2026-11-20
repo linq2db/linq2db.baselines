@@ -4,7 +4,7 @@ SELECT
 FROM
 	FeatureTable r
 WHERE
-	(r.One = r.One) = FALSE
+	((r.One = r.One) = FALSE)
 
 -- ClickHouse.Driver ClickHouse
 SELECT
@@ -12,7 +12,7 @@ SELECT
 FROM
 	FeatureTable r
 WHERE
-	(r.Zero = r.Zero) = FALSE
+	((r.Zero = r.Zero) = FALSE)
 
 -- ClickHouse.Driver ClickHouse
 SELECT
@@ -20,7 +20,7 @@ SELECT
 FROM
 	FeatureTable r
 WHERE
-	(r.Null = r.Null) = FALSE
+	((r.Null = r.Null) = FALSE)
 
 -- ClickHouse.Driver ClickHouse
 SELECT
@@ -28,7 +28,7 @@ SELECT
 FROM
 	FeatureTable r
 WHERE
-	(r.One = r.Zero) = FALSE
+	((r.One = r.Zero) = FALSE)
 
 -- ClickHouse.Driver ClickHouse
 SELECT
@@ -36,7 +36,7 @@ SELECT
 FROM
 	FeatureTable r
 WHERE
-	(r.One = r.Null) = FALSE
+	((r.One = r.Null) = FALSE)
 
 -- ClickHouse.Driver ClickHouse
 SELECT
@@ -44,7 +44,7 @@ SELECT
 FROM
 	FeatureTable r
 WHERE
-	(r.Zero = r.Null) = FALSE
+	((r.Zero = r.Null) = FALSE)
 
 -- ClickHouse.Driver ClickHouse
 SELECT
@@ -52,7 +52,7 @@ SELECT
 FROM
 	FeatureTable r
 WHERE
-	(r.One = r.One) <> FALSE
+	((r.One = r.One) <> FALSE)
 
 -- ClickHouse.Driver ClickHouse
 SELECT
@@ -60,7 +60,7 @@ SELECT
 FROM
 	FeatureTable r
 WHERE
-	(r.Zero = r.Zero) <> FALSE
+	((r.Zero = r.Zero) <> FALSE)
 
 -- ClickHouse.Driver ClickHouse
 SELECT
@@ -68,7 +68,7 @@ SELECT
 FROM
 	FeatureTable r
 WHERE
-	(r.Null = r.Null) <> FALSE
+	((r.Null = r.Null) <> FALSE)
 
 -- ClickHouse.Driver ClickHouse
 SELECT
@@ -76,7 +76,7 @@ SELECT
 FROM
 	FeatureTable r
 WHERE
-	(r.One = r.Zero) <> FALSE
+	((r.One = r.Zero) <> FALSE)
 
 -- ClickHouse.Driver ClickHouse
 SELECT
@@ -84,7 +84,7 @@ SELECT
 FROM
 	FeatureTable r
 WHERE
-	(r.One = r.Null) <> FALSE
+	((r.One = r.Null) <> FALSE)
 
 -- ClickHouse.Driver ClickHouse
 SELECT
@@ -92,5 +92,5 @@ SELECT
 FROM
 	FeatureTable r
 WHERE
-	(r.Zero = r.Null) <> FALSE
+	((r.Zero = r.Null) <> FALSE)
 

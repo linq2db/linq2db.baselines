@@ -26,6 +26,18 @@ SELECT
 	bitXor(r.A, bitOr(r.B, r.C)),
 	bitXor(bitOr(r.A, r.B), r.C),
 	bitXor(r.A, bitOr(r.B, r.C)),
+	bitXor(r.A + r.B, r.C),
+	bitXor(r.A, r.B + r.C),
+	bitXor(r.A + -6, r.C),
+	bitXor(r.A - r.B, r.C),
+	bitXor(r.A, r.B - r.C),
+	bitXor(r.A - -6, r.C),
+	bitXor(r.A * r.B, r.C),
+	bitXor(r.A, r.B * r.C),
+	bitXor(r.A * -6, r.C),
+	bitXor(r.A + r.B, r.C),
+	bitXor(r.A, r.B + r.C),
+	bitXor(r.A + -6, r.C),
 	bitXor(r.A, negate(r.B)),
 	bitXor(negate(r.B), r.C),
 	bitXor(r.A + negate(r.B), r.C),
@@ -45,10 +57,10 @@ SELECT
 	bitXor(bitOr(r.A, bitNot(r.B)), r.C),
 	bitXor(r.A, -5),
 	bitXor(-5, r.C),
-	bitXor(r.A + -5, r.C),
-	bitXor(r.A - -5, r.C),
-	bitXor(r.A * -5, r.C),
-	bitXor(r.A % -5, r.C),
+	bitXor(r.A + (-5), r.C),
+	bitXor(r.A - (-5), r.C),
+	bitXor(r.A * (-5), r.C),
+	bitXor(r.A % (-5), r.C),
 	bitXor(bitAnd(r.A, -5), r.C),
 	bitXor(bitOr(r.A, -5), r.C),
 	bitXor(bitXor(r.A, -5), r.C)
@@ -260,6 +272,102 @@ ORDER BY
 -- ClickHouse.Driver ClickHouse
 SELECT
 	bitXor(r.A, bitOr(r.B, r.C))
+FROM
+	PrecedenceRow r
+ORDER BY
+	r.Id
+
+-- ClickHouse.Driver ClickHouse
+SELECT
+	bitXor(r.A + r.B, r.C)
+FROM
+	PrecedenceRow r
+ORDER BY
+	r.Id
+
+-- ClickHouse.Driver ClickHouse
+SELECT
+	bitXor(r.A, r.B + r.C)
+FROM
+	PrecedenceRow r
+ORDER BY
+	r.Id
+
+-- ClickHouse.Driver ClickHouse
+SELECT
+	bitXor(r.A + -6, r.C)
+FROM
+	PrecedenceRow r
+ORDER BY
+	r.Id
+
+-- ClickHouse.Driver ClickHouse
+SELECT
+	bitXor(r.A - r.B, r.C)
+FROM
+	PrecedenceRow r
+ORDER BY
+	r.Id
+
+-- ClickHouse.Driver ClickHouse
+SELECT
+	bitXor(r.A, r.B - r.C)
+FROM
+	PrecedenceRow r
+ORDER BY
+	r.Id
+
+-- ClickHouse.Driver ClickHouse
+SELECT
+	bitXor(r.A - -6, r.C)
+FROM
+	PrecedenceRow r
+ORDER BY
+	r.Id
+
+-- ClickHouse.Driver ClickHouse
+SELECT
+	bitXor(r.A * r.B, r.C)
+FROM
+	PrecedenceRow r
+ORDER BY
+	r.Id
+
+-- ClickHouse.Driver ClickHouse
+SELECT
+	bitXor(r.A, r.B * r.C)
+FROM
+	PrecedenceRow r
+ORDER BY
+	r.Id
+
+-- ClickHouse.Driver ClickHouse
+SELECT
+	bitXor(r.A * -6, r.C)
+FROM
+	PrecedenceRow r
+ORDER BY
+	r.Id
+
+-- ClickHouse.Driver ClickHouse
+SELECT
+	bitXor(r.A + r.B, r.C)
+FROM
+	PrecedenceRow r
+ORDER BY
+	r.Id
+
+-- ClickHouse.Driver ClickHouse
+SELECT
+	bitXor(r.A, r.B + r.C)
+FROM
+	PrecedenceRow r
+ORDER BY
+	r.Id
+
+-- ClickHouse.Driver ClickHouse
+SELECT
+	bitXor(r.A + -6, r.C)
 FROM
 	PrecedenceRow r
 ORDER BY
@@ -419,7 +527,7 @@ ORDER BY
 
 -- ClickHouse.Driver ClickHouse
 SELECT
-	bitXor(r.A + -5, r.C)
+	bitXor(r.A + (-5), r.C)
 FROM
 	PrecedenceRow r
 ORDER BY
@@ -427,7 +535,7 @@ ORDER BY
 
 -- ClickHouse.Driver ClickHouse
 SELECT
-	bitXor(r.A - -5, r.C)
+	bitXor(r.A - (-5), r.C)
 FROM
 	PrecedenceRow r
 ORDER BY
@@ -435,7 +543,7 @@ ORDER BY
 
 -- ClickHouse.Driver ClickHouse
 SELECT
-	bitXor(r.A * -5, r.C)
+	bitXor(r.A * (-5), r.C)
 FROM
 	PrecedenceRow r
 ORDER BY
@@ -443,7 +551,7 @@ ORDER BY
 
 -- ClickHouse.Driver ClickHouse
 SELECT
-	bitXor(r.A % -5, r.C)
+	bitXor(r.A % (-5), r.C)
 FROM
 	PrecedenceRow r
 ORDER BY
@@ -477,10 +585,10 @@ ORDER BY
 SELECT
 	bitXor(r.A, -5),
 	bitXor(-5, r.C),
-	bitXor(r.A + -5, r.C),
-	bitXor(r.A - -5, r.C),
-	bitXor(r.A * -5, r.C),
-	bitXor(r.A % -5, r.C),
+	bitXor(r.A + (-5), r.C),
+	bitXor(r.A - (-5), r.C),
+	bitXor(r.A * (-5), r.C),
+	bitXor(r.A % (-5), r.C),
 	bitXor(bitAnd(r.A, -5), r.C),
 	bitXor(bitOr(r.A, -5), r.C),
 	bitXor(bitXor(r.A, -5), r.C)
@@ -521,6 +629,18 @@ ORDER BY
 -- cell Xor/Xor(a,Xor(b,c)): skipped
 -- cell Xor/Xor(AsNotNull(Xor(a,b)),c): skipped
 -- cell Xor/Xor(a,AsNotNull(Xor(b,c))): skipped
+-- cell Xor/Xor(TAdd(a,b),c): green
+-- cell Xor/Xor(a,TAdd(b,c)): green
+-- cell Xor/Xor(TAdd(a,NegLit),c): green
+-- cell Xor/Xor(TSub(a,b),c): green
+-- cell Xor/Xor(a,TSub(b,c)): green
+-- cell Xor/Xor(TSub(a,NegLit),c): green
+-- cell Xor/Xor(TMul(a,b),c): green
+-- cell Xor/Xor(a,TMul(b,c)): green
+-- cell Xor/Xor(TMul(a,NegLit),c): green
+-- cell Xor/Xor(TAddOffset(a,b),c): green
+-- cell Xor/Xor(a,TAddOffset(b,c)): green
+-- cell Xor/Xor(TAddOffset(a,NegLit),c): green
 -- cell Xor/Xor(a,Neg(b)): green
 -- cell Xor/Xor(Neg(b),c): green
 -- cell Xor/Xor(Add(a,Neg(b)),c): green

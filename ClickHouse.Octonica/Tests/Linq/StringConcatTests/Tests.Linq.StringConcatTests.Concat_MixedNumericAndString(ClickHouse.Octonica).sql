@@ -4,7 +4,7 @@ SELECT
 FROM
 	ConcatTestEntity e
 WHERE
-	(concat(toString(e.Num), '-', Coalesce(e.StrReq, ''))) = '100-Programmer'
+	concat(toString(e.Num), '-', Coalesce(e.StrReq, '')) = '100-Programmer'
 
 -- ClickHouse.Octonica ClickHouse
 SELECT

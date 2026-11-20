@@ -4,7 +4,7 @@ SELECT
 FROM
 	PrefixedCodeWithTitleTable t
 WHERE
-	(concat(Coalesce(t.Code, ''), Coalesce(t.Title, ''))) LIKE 'x:AT'
+	concat(Coalesce(t.Code, ''), Coalesce(t.Title, '')) LIKE 'x:AT'
 
 -- ClickHouse.MySql ClickHouse
 SELECT
@@ -12,7 +12,7 @@ SELECT
 FROM
 	PrefixedCodeWithTitleTable t
 WHERE
-	(concat(Coalesce(t.Code, ''), Coalesce(t.Title, ''))) = 'x:AT'
+	concat(Coalesce(t.Code, ''), Coalesce(t.Title, '')) = 'x:AT'
 
 -- ClickHouse.MySql ClickHouse
 SELECT
@@ -20,5 +20,5 @@ SELECT
 FROM
 	PrefixedCodeWithTitleTable t
 WHERE
-	(concat(Coalesce(t.Code, ''), Coalesce(t.Title, ''))) = 'x:AT'
+	concat(Coalesce(t.Code, ''), Coalesce(t.Title, '')) = 'x:AT'
 
