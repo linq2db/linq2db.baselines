@@ -48,7 +48,7 @@ FROM
 			[TestIdTrun] [t1]
 	) [t2]
 WHERE
-	[t2].[RN] > @skip AND [t2].[RN] <= (@skip + 2)
+	[t2].[RN] > @skip AND [t2].[RN] <= @skip + 2
 ORDER BY
 	[t2].[ID]
 
@@ -92,7 +92,7 @@ FROM
 			[TestIdTrun] [t1]
 	) [t2]
 WHERE
-	[t2].[RN] > @skip AND [t2].[RN] <= (@skip + 2)
+	[t2].[RN] > @skip AND [t2].[RN] <= @skip + 2
 ORDER BY
 	[t2].[ID]
 

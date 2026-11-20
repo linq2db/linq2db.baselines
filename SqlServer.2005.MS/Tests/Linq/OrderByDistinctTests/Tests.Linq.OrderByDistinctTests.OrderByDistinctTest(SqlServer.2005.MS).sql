@@ -20,7 +20,7 @@ FROM
 			) [t1]
 	) [t2]
 WHERE
-	[t2].[RN] > @skip AND [t2].[RN] <= (@skip + @take)
+	[t2].[RN] > @skip AND [t2].[RN] <= @skip + @take
 
 -- SqlServer.2005.MS SqlServer.2005
 DECLARE @skip Int -- Int32
@@ -41,7 +41,7 @@ FROM
 			[x].[DuplicateData]
 	) [t1]
 WHERE
-	[t1].[RN] > @skip AND [t1].[RN] <= (@skip + @take)
+	[t1].[RN] > @skip AND [t1].[RN] <= @skip + @take
 
 -- SqlServer.2005.MS SqlServer.2005
 DECLARE @skip Int -- Int32
@@ -65,7 +65,7 @@ FROM
 			) [t1]
 	) [t2]
 WHERE
-	[t2].[RN] > @skip AND [t2].[RN] <= (@skip + @take)
+	[t2].[RN] > @skip AND [t2].[RN] <= @skip + @take
 
 -- SqlServer.2005.MS SqlServer.2005
 DECLARE @skip Int -- Int32
@@ -86,5 +86,5 @@ FROM
 			[x].[DuplicateData]
 	) [t1]
 WHERE
-	[t1].[RN] > @skip AND [t1].[RN] <= (@skip + @take)
+	[t1].[RN] > @skip AND [t1].[RN] <= @skip + @take
 
