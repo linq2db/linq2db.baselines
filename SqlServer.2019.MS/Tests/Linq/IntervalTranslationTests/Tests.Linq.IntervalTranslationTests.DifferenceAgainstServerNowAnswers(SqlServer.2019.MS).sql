@@ -25,5 +25,5 @@ SELECT
 FROM
 	[EventRow] [r]
 WHERE
-	CAST((DateDiff_Big(day, [r].[StartedOn], CURRENT_TIMESTAMP) * 86400) * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r].[StartedOn], CURRENT_TIMESTAMP) AS Int), [r].[StartedOn]), CURRENT_TIMESTAMP) / 100 AS Float) / 864000000000 > 1
+	CAST(DateDiff_Big(day, [r].[StartedOn], CURRENT_TIMESTAMP) * 86400 * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r].[StartedOn], CURRENT_TIMESTAMP) AS Int), [r].[StartedOn]), CURRENT_TIMESTAMP) / 100 AS Float) / 864000000000 > 1
 

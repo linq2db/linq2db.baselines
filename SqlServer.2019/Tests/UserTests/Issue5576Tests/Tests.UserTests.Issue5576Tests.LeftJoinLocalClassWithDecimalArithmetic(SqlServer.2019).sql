@@ -53,7 +53,7 @@ VALUES
 SELECT
 	[r].[Guid],
 	[lc].[Count],
-	IIF([lc].[Count] IS NOT NULL, (CAST([lc].[Count] AS Decimal(18, 10)) / [r].[Sold]) * 100, NULL)
+	IIF([lc].[Count] IS NOT NULL, CAST([lc].[Count] AS Decimal(18, 10)) / [r].[Sold] * 100, NULL)
 FROM
 	[Campaign] [r]
 		LEFT JOIN (VALUES

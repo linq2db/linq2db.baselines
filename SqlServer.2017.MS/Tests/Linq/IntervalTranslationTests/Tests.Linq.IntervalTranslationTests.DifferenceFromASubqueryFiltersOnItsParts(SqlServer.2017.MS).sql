@@ -46,7 +46,7 @@ SELECT
 FROM
 	[EventRow] [x]
 WHERE
-	CAST((DateDiff_Big(day, [x].[StartedOn], [x].[FinishedOn]) * 86400) * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [x].[StartedOn], [x].[FinishedOn]) AS Int), [x].[StartedOn]), [x].[FinishedOn]) / 100 AS Float) / 36000000000 > 3
+	CAST(DateDiff_Big(day, [x].[StartedOn], [x].[FinishedOn]) * 86400 * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [x].[StartedOn], [x].[FinishedOn]) AS Int), [x].[StartedOn]), [x].[FinishedOn]) / 100 AS Float) / 36000000000 > 3
 
 -- SqlServer.2017.MS SqlServer.2017
 SELECT
@@ -54,7 +54,7 @@ SELECT
 FROM
 	[EventRow] [x]
 WHERE
-	CAST((((DateDiff_Big(day, [x].[StartedOn], [x].[FinishedOn]) * 86400) * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [x].[StartedOn], [x].[FinishedOn]) AS Int), [x].[StartedOn]), [x].[FinishedOn]) / 100) / 36000000000) % 24 AS Int) = 1
+	CAST((DateDiff_Big(day, [x].[StartedOn], [x].[FinishedOn]) * 86400 * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [x].[StartedOn], [x].[FinishedOn]) AS Int), [x].[StartedOn]), [x].[FinishedOn]) / 100) / 36000000000 % 24 AS Int) = 1
 
 -- SqlServer.2017.MS SqlServer.2017
 SELECT
@@ -62,11 +62,11 @@ SELECT
 FROM
 	[EventRow] [x]
 ORDER BY
-	(DateDiff_Big(day, [x].[StartedOn], [x].[FinishedOn]) * 86400) * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [x].[StartedOn], [x].[FinishedOn]) AS Int), [x].[StartedOn]), [x].[FinishedOn]) / 100 DESC
+	DateDiff_Big(day, [x].[StartedOn], [x].[FinishedOn]) * 86400 * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [x].[StartedOn], [x].[FinishedOn]) AS Int), [x].[StartedOn]), [x].[FinishedOn]) / 100 DESC
 
 -- SqlServer.2017.MS SqlServer.2017
 SELECT
-	(DateDiff_Big(day, [x].[StartedOn], [x].[FinishedOn]) * 86400) * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [x].[StartedOn], [x].[FinishedOn]) AS Int), [x].[StartedOn]), [x].[FinishedOn]) / 100
+	DateDiff_Big(day, [x].[StartedOn], [x].[FinishedOn]) * 86400 * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [x].[StartedOn], [x].[FinishedOn]) AS Int), [x].[StartedOn]), [x].[FinishedOn]) / 100
 FROM
 	[EventRow] [x]
 ORDER BY
@@ -75,7 +75,7 @@ ORDER BY
 -- SqlServer.2017.MS SqlServer.2017
 SELECT
 	[r].[Id],
-	(DateDiff_Big(day, [r].[StartedOn], [r].[FinishedOn]) * 86400) * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r].[StartedOn], [r].[FinishedOn]) AS Int), [r].[StartedOn]), [r].[FinishedOn]) / 100
+	DateDiff_Big(day, [r].[StartedOn], [r].[FinishedOn]) * 86400 * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r].[StartedOn], [r].[FinishedOn]) AS Int), [r].[StartedOn]), [r].[FinishedOn]) / 100
 FROM
 	[EventRow] [r]
 ORDER BY

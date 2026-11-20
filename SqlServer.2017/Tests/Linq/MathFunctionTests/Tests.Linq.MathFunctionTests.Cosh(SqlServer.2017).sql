@@ -4,7 +4,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Floor(((Exp(CAST([p].[MoneyValue] AS Float) / 15) + Exp(-(CAST([p].[MoneyValue] AS Float) / 15))) / 2) * 15) as [Value_1]
+			Floor((Exp(CAST([p].[MoneyValue] AS Float) / 15) + Exp(-CAST([p].[MoneyValue] AS Float) / 15)) / 2 * 15) as [Value_1]
 		FROM
 			[LinqDataTypes] [p]
 	) [t]
