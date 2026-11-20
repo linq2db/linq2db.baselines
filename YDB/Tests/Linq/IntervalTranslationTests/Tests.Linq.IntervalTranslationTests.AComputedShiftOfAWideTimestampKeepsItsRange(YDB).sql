@@ -33,17 +33,17 @@ VALUES
 
 -- YDB Ydb
 SELECT
-	Unwrap(CAST(Unwrap(CAST(r.`On` AS Timestamp64)) + DateTime::IntervalFromMicroseconds((Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l) / 10l) AS Timestamp64)) as On_1,
-	Unwrap(CAST(Unwrap(CAST(r.Day32 AS Timestamp64)) + DateTime::IntervalFromMicroseconds((Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l) / 10l) AS Timestamp64)) as Day32,
-	Unwrap(CAST(Unwrap(CAST(r.On64 AS Timestamp64)) + DateTime::IntervalFromMicroseconds((Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l) / 10l) AS Timestamp64)) as On64
+	Unwrap(CAST(Unwrap(CAST(r.`On` AS Timestamp64)) + DateTime::IntervalFromMicroseconds(Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l / 10l) AS Timestamp64)) as On_1,
+	Unwrap(CAST(Unwrap(CAST(r.Day32 AS Timestamp64)) + DateTime::IntervalFromMicroseconds(Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l / 10l) AS Timestamp64)) as Day32,
+	Unwrap(CAST(Unwrap(CAST(r.On64 AS Timestamp64)) + DateTime::IntervalFromMicroseconds(Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l / 10l) AS Timestamp64)) as On64
 FROM
 	WideTimestampDeclaredRow r
 LIMIT 2
 
 -- YDB Ydb
 SELECT
-	Unwrap(CAST(Unwrap(CAST(r.Day32 AS Timestamp64)) + DateTime::IntervalFromMicroseconds((Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l) / 10l) AS Timestamp64)) as Day32,
-	Unwrap(CAST(Unwrap(CAST(r.On64 AS Timestamp64)) + DateTime::IntervalFromMicroseconds((Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l) / 10l) AS Timestamp64)) as On64
+	Unwrap(CAST(Unwrap(CAST(r.Day32 AS Timestamp64)) + DateTime::IntervalFromMicroseconds(Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l / 10l) AS Timestamp64)) as Day32,
+	Unwrap(CAST(Unwrap(CAST(r.On64 AS Timestamp64)) + DateTime::IntervalFromMicroseconds(Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l / 10l) AS Timestamp64)) as On64
 FROM
 	WideTimestampDeclaredRow r
 LIMIT 2
@@ -54,7 +54,7 @@ SELECT
 FROM
 	WideTimestampDeclaredRow r
 WHERE
-	Unwrap(CAST(Unwrap(CAST(r.`On` AS Timestamp64)) + DateTime::IntervalFromMicroseconds((Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l) / 10l) AS Timestamp64)) > r.`On`
+	Unwrap(CAST(Unwrap(CAST(r.`On` AS Timestamp64)) + DateTime::IntervalFromMicroseconds(Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l / 10l) AS Timestamp64)) > r.`On`
 
 -- YDB Ydb
 SELECT
@@ -62,7 +62,7 @@ SELECT
 FROM
 	WideTimestampDeclaredRow r
 WHERE
-	Unwrap(CAST(Unwrap(CAST(r.Day32 AS Timestamp64)) + DateTime::IntervalFromMicroseconds((Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l) / 10l) AS Timestamp64)) > r.Day32
+	Unwrap(CAST(Unwrap(CAST(r.Day32 AS Timestamp64)) + DateTime::IntervalFromMicroseconds(Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l / 10l) AS Timestamp64)) > r.Day32
 
 -- YDB Ydb
 SELECT
@@ -70,16 +70,16 @@ SELECT
 FROM
 	WideTimestampDeclaredRow r
 WHERE
-	Unwrap(CAST(Unwrap(CAST(r.On64 AS Timestamp64)) + DateTime::IntervalFromMicroseconds((Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l) / 10l) AS Timestamp64)) > r.On64 + DateTime::IntervalFromHours(Unwrap(CAST(Double('5') AS Int32))) + DateTime::IntervalFromMinutes(Unwrap(CAST(Double('30') AS Int32)))
+	Unwrap(CAST(Unwrap(CAST(r.On64 AS Timestamp64)) + DateTime::IntervalFromMicroseconds(Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l / 10l) AS Timestamp64)) > r.On64 + DateTime::IntervalFromHours(Unwrap(CAST(Double('5') AS Int32))) + DateTime::IntervalFromMinutes(Unwrap(CAST(Double('30') AS Int32)))
 
 -- YDB Ydb
 DECLARE Ticks Int64
 SET     Ticks = 198002500000l
 
 SELECT
-	Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(r.`On` AS Timestamp64)) + DateTime::IntervalFromMicroseconds((Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l) / 10l) AS Timestamp64)) AS Timestamp64)) + DateTime::IntervalFromMicroseconds((Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l) / 10l) AS Timestamp64)) as On_1,
-	Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(r.Day32 AS Timestamp64)) + DateTime::IntervalFromMicroseconds((Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l) / 10l) AS Timestamp64)) AS Timestamp64)) + DateTime::IntervalFromMicroseconds(Unwrap(CAST($Ticks AS Int64)) / 10l) AS Timestamp64)) as Day32,
-	Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(r.On64 AS Timestamp64)) + DateTime::IntervalFromMicroseconds(Unwrap(CAST($Ticks AS Int64)) / 10l) AS Timestamp64)) AS Timestamp64)) + DateTime::IntervalFromMicroseconds((Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l) / 10l) AS Timestamp64)) as On64
+	Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(r.`On` AS Timestamp64)) + DateTime::IntervalFromMicroseconds(Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l / 10l) AS Timestamp64)) AS Timestamp64)) + DateTime::IntervalFromMicroseconds(Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l / 10l) AS Timestamp64)) as On_1,
+	Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(r.Day32 AS Timestamp64)) + DateTime::IntervalFromMicroseconds(Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l / 10l) AS Timestamp64)) AS Timestamp64)) + DateTime::IntervalFromMicroseconds(Unwrap(CAST($Ticks AS Int64)) / 10l) AS Timestamp64)) as Day32,
+	Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(Unwrap(CAST(r.On64 AS Timestamp64)) + DateTime::IntervalFromMicroseconds(Unwrap(CAST($Ticks AS Int64)) / 10l) AS Timestamp64)) AS Timestamp64)) + DateTime::IntervalFromMicroseconds(Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l / 10l) AS Timestamp64)) as On64
 FROM
 	WideTimestampDeclaredRow r
 LIMIT 2

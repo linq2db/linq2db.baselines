@@ -26,32 +26,44 @@ SELECT
 	Unwrap(CAST(r.A AS Uint32)) ^ Unwrap(CAST(Unwrap(CAST(r.B AS Uint32)) | Unwrap(CAST(r.C AS Uint32)) AS Uint32)) as c24,
 	Unwrap(CAST(Unwrap(CAST(r.A AS Uint32)) | Unwrap(CAST(r.B AS Uint32)) AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c25,
 	Unwrap(CAST(r.A AS Uint32)) ^ Unwrap(CAST(Unwrap(CAST(r.B AS Uint32)) | Unwrap(CAST(r.C AS Uint32)) AS Uint32)) as c26,
-	Unwrap(CAST(r.A AS Uint32)) ^ Unwrap(CAST(-r.B AS Uint32)) as c27,
-	Unwrap(CAST(-r.B AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c28,
-	Unwrap(CAST(r.A - r.B AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c29,
-	Unwrap(CAST(r.A + r.B AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c30,
-	Unwrap(CAST(r.A * -r.B AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c31,
-	Unwrap(CAST(r.A / -r.B AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c32,
-	Unwrap(CAST(r.A % -r.B AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c33,
-	Unwrap(CAST(Unwrap(CAST(r.A AS Uint32)) & Unwrap(CAST(-r.B AS Uint32)) AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c34,
-	Unwrap(CAST(Unwrap(CAST(r.A AS Uint32)) | Unwrap(CAST(-r.B AS Uint32)) AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c35,
-	Unwrap(CAST(Unwrap(CAST(r.A AS Uint32)) ^ Unwrap(CAST(-r.B AS Uint32)) AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c36,
-	Unwrap(CAST(r.A AS Uint32)) ^ Unwrap(CAST(~Unwrap(CAST(r.B AS Uint32)) AS Uint32)) as c37,
-	Unwrap(CAST(r.A + (~Unwrap(CAST(r.B AS Uint32))) AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c38,
-	Unwrap(CAST(r.A - (~Unwrap(CAST(r.B AS Uint32))) AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c39,
-	Unwrap(CAST(r.A * (~Unwrap(CAST(r.B AS Uint32))) AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c40,
-	Unwrap(CAST(r.A % (~Unwrap(CAST(r.B AS Uint32))) AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c41,
-	Unwrap(CAST(Unwrap(CAST(r.A AS Uint32)) & Unwrap(CAST(~Unwrap(CAST(r.B AS Uint32)) AS Uint32)) AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c42,
-	Unwrap(CAST(Unwrap(CAST(r.A AS Uint32)) | Unwrap(CAST(~Unwrap(CAST(r.B AS Uint32)) AS Uint32)) AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c43,
-	Unwrap(CAST(r.A AS Uint32)) ^ Unwrap(CAST(-5 AS Uint32)) as c44,
-	Unwrap(CAST(-5 AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c45,
-	Unwrap(CAST(r.A + -5 AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c46,
-	Unwrap(CAST(r.A - -5 AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c47,
-	Unwrap(CAST(r.A * -5 AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c48,
-	Unwrap(CAST(r.A % -5 AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c49,
-	Unwrap(CAST(Unwrap(CAST(r.A AS Uint32)) & Unwrap(CAST(-5 AS Uint32)) AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c50,
-	Unwrap(CAST(Unwrap(CAST(r.A AS Uint32)) | Unwrap(CAST(-5 AS Uint32)) AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c51,
-	Unwrap(CAST(Unwrap(CAST(r.A AS Uint32)) ^ Unwrap(CAST(-5 AS Uint32)) AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c52
+	Unwrap(CAST(r.A + r.B AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c27,
+	Unwrap(CAST(r.A AS Uint32)) ^ Unwrap(CAST(r.B + r.C AS Uint32)) as c28,
+	Unwrap(CAST(r.A + -6 AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c29,
+	Unwrap(CAST(r.A - r.B AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c30,
+	Unwrap(CAST(r.A AS Uint32)) ^ Unwrap(CAST(r.B - r.C AS Uint32)) as c31,
+	Unwrap(CAST(r.A - -6 AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c32,
+	Unwrap(CAST(r.A * r.B AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c33,
+	Unwrap(CAST(r.A AS Uint32)) ^ Unwrap(CAST(r.B * r.C AS Uint32)) as c34,
+	Unwrap(CAST(r.A * -6 AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c35,
+	Unwrap(CAST(r.A + r.B AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c36,
+	Unwrap(CAST(r.A AS Uint32)) ^ Unwrap(CAST(r.B + r.C AS Uint32)) as c37,
+	Unwrap(CAST(r.A + -6 AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c38,
+	Unwrap(CAST(r.A AS Uint32)) ^ Unwrap(CAST(-r.B AS Uint32)) as c39,
+	Unwrap(CAST(-r.B AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c40,
+	Unwrap(CAST(r.A - r.B AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c41,
+	Unwrap(CAST(r.A + r.B AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c42,
+	Unwrap(CAST(r.A * (-r.B) AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c43,
+	Unwrap(CAST(r.A / (-r.B) AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c44,
+	Unwrap(CAST(r.A % (-r.B) AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c45,
+	Unwrap(CAST(Unwrap(CAST(r.A AS Uint32)) & Unwrap(CAST(-r.B AS Uint32)) AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c46,
+	Unwrap(CAST(Unwrap(CAST(r.A AS Uint32)) | Unwrap(CAST(-r.B AS Uint32)) AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c47,
+	Unwrap(CAST(Unwrap(CAST(r.A AS Uint32)) ^ Unwrap(CAST(-r.B AS Uint32)) AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c48,
+	Unwrap(CAST(r.A AS Uint32)) ^ Unwrap(CAST(~Unwrap(CAST(r.B AS Uint32)) AS Uint32)) as c49,
+	Unwrap(CAST(r.A + (~Unwrap(CAST(r.B AS Uint32))) AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c50,
+	Unwrap(CAST(r.A - (~Unwrap(CAST(r.B AS Uint32))) AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c51,
+	Unwrap(CAST(r.A * (~Unwrap(CAST(r.B AS Uint32))) AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c52,
+	Unwrap(CAST(r.A % (~Unwrap(CAST(r.B AS Uint32))) AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c53,
+	Unwrap(CAST(Unwrap(CAST(r.A AS Uint32)) & Unwrap(CAST(~Unwrap(CAST(r.B AS Uint32)) AS Uint32)) AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c54,
+	Unwrap(CAST(Unwrap(CAST(r.A AS Uint32)) | Unwrap(CAST(~Unwrap(CAST(r.B AS Uint32)) AS Uint32)) AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c55,
+	Unwrap(CAST(r.A AS Uint32)) ^ Unwrap(CAST(-5 AS Uint32)) as c56,
+	Unwrap(CAST(-5 AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c57,
+	Unwrap(CAST(r.A + (-5) AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c58,
+	Unwrap(CAST(r.A - (-5) AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c59,
+	Unwrap(CAST(r.A * (-5) AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c60,
+	Unwrap(CAST(r.A % (-5) AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c61,
+	Unwrap(CAST(Unwrap(CAST(r.A AS Uint32)) & Unwrap(CAST(-5 AS Uint32)) AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c62,
+	Unwrap(CAST(Unwrap(CAST(r.A AS Uint32)) | Unwrap(CAST(-5 AS Uint32)) AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c63,
+	Unwrap(CAST(Unwrap(CAST(r.A AS Uint32)) ^ Unwrap(CAST(-5 AS Uint32)) AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c64
 FROM
 	PrecedenceRow r
 ORDER BY
@@ -260,6 +272,102 @@ ORDER BY
 -- YDB Ydb
 SELECT
 	Unwrap(CAST(r.A AS Uint32)) ^ Unwrap(CAST(Unwrap(CAST(r.B AS Uint32)) | Unwrap(CAST(r.C AS Uint32)) AS Uint32)) as c1
+FROM
+	PrecedenceRow r
+ORDER BY
+	r.Id
+
+-- YDB Ydb
+SELECT
+	Unwrap(CAST(r.A + r.B AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c1
+FROM
+	PrecedenceRow r
+ORDER BY
+	r.Id
+
+-- YDB Ydb
+SELECT
+	Unwrap(CAST(r.A AS Uint32)) ^ Unwrap(CAST(r.B + r.C AS Uint32)) as c1
+FROM
+	PrecedenceRow r
+ORDER BY
+	r.Id
+
+-- YDB Ydb
+SELECT
+	Unwrap(CAST(r.A + -6 AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c1
+FROM
+	PrecedenceRow r
+ORDER BY
+	r.Id
+
+-- YDB Ydb
+SELECT
+	Unwrap(CAST(r.A - r.B AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c1
+FROM
+	PrecedenceRow r
+ORDER BY
+	r.Id
+
+-- YDB Ydb
+SELECT
+	Unwrap(CAST(r.A AS Uint32)) ^ Unwrap(CAST(r.B - r.C AS Uint32)) as c1
+FROM
+	PrecedenceRow r
+ORDER BY
+	r.Id
+
+-- YDB Ydb
+SELECT
+	Unwrap(CAST(r.A - -6 AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c1
+FROM
+	PrecedenceRow r
+ORDER BY
+	r.Id
+
+-- YDB Ydb
+SELECT
+	Unwrap(CAST(r.A * r.B AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c1
+FROM
+	PrecedenceRow r
+ORDER BY
+	r.Id
+
+-- YDB Ydb
+SELECT
+	Unwrap(CAST(r.A AS Uint32)) ^ Unwrap(CAST(r.B * r.C AS Uint32)) as c1
+FROM
+	PrecedenceRow r
+ORDER BY
+	r.Id
+
+-- YDB Ydb
+SELECT
+	Unwrap(CAST(r.A * -6 AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c1
+FROM
+	PrecedenceRow r
+ORDER BY
+	r.Id
+
+-- YDB Ydb
+SELECT
+	Unwrap(CAST(r.A + r.B AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c1
+FROM
+	PrecedenceRow r
+ORDER BY
+	r.Id
+
+-- YDB Ydb
+SELECT
+	Unwrap(CAST(r.A AS Uint32)) ^ Unwrap(CAST(r.B + r.C AS Uint32)) as c1
+FROM
+	PrecedenceRow r
+ORDER BY
+	r.Id
+
+-- YDB Ydb
+SELECT
+	Unwrap(CAST(r.A + -6 AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c1
 FROM
 	PrecedenceRow r
 ORDER BY
@@ -299,7 +407,7 @@ ORDER BY
 
 -- YDB Ydb
 SELECT
-	Unwrap(CAST(r.A * -r.B AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c1
+	Unwrap(CAST(r.A * (-r.B) AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c1
 FROM
 	PrecedenceRow r
 ORDER BY
@@ -307,7 +415,7 @@ ORDER BY
 
 -- YDB Ydb
 SELECT
-	Unwrap(CAST(r.A / -r.B AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c1
+	Unwrap(CAST(r.A / (-r.B) AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c1
 FROM
 	PrecedenceRow r
 ORDER BY
@@ -315,7 +423,7 @@ ORDER BY
 
 -- YDB Ydb
 SELECT
-	Unwrap(CAST(r.A % -r.B AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c1
+	Unwrap(CAST(r.A % (-r.B) AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c1
 FROM
 	PrecedenceRow r
 ORDER BY
@@ -419,7 +527,7 @@ ORDER BY
 
 -- YDB Ydb
 SELECT
-	Unwrap(CAST(r.A + -5 AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c1
+	Unwrap(CAST(r.A + (-5) AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c1
 FROM
 	PrecedenceRow r
 ORDER BY
@@ -427,7 +535,7 @@ ORDER BY
 
 -- YDB Ydb
 SELECT
-	Unwrap(CAST(r.A - -5 AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c1
+	Unwrap(CAST(r.A - (-5) AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c1
 FROM
 	PrecedenceRow r
 ORDER BY
@@ -435,7 +543,7 @@ ORDER BY
 
 -- YDB Ydb
 SELECT
-	Unwrap(CAST(r.A * -5 AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c1
+	Unwrap(CAST(r.A * (-5) AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c1
 FROM
 	PrecedenceRow r
 ORDER BY
@@ -443,7 +551,7 @@ ORDER BY
 
 -- YDB Ydb
 SELECT
-	Unwrap(CAST(r.A % -5 AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c1
+	Unwrap(CAST(r.A % (-5) AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c1
 FROM
 	PrecedenceRow r
 ORDER BY
@@ -477,10 +585,10 @@ ORDER BY
 SELECT
 	Unwrap(CAST(r.A AS Uint32)) ^ Unwrap(CAST(-5 AS Uint32)) as c1,
 	Unwrap(CAST(-5 AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c2,
-	Unwrap(CAST(r.A + -5 AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c3,
-	Unwrap(CAST(r.A - -5 AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c4,
-	Unwrap(CAST(r.A * -5 AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c5,
-	Unwrap(CAST(r.A % -5 AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c6,
+	Unwrap(CAST(r.A + (-5) AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c3,
+	Unwrap(CAST(r.A - (-5) AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c4,
+	Unwrap(CAST(r.A * (-5) AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c5,
+	Unwrap(CAST(r.A % (-5) AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c6,
 	Unwrap(CAST(Unwrap(CAST(r.A AS Uint32)) & Unwrap(CAST(-5 AS Uint32)) AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c7,
 	Unwrap(CAST(Unwrap(CAST(r.A AS Uint32)) | Unwrap(CAST(-5 AS Uint32)) AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c8,
 	Unwrap(CAST(Unwrap(CAST(r.A AS Uint32)) ^ Unwrap(CAST(-5 AS Uint32)) AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c9
@@ -507,7 +615,7 @@ ORDER BY
 
 -- YDB Ydb
 SELECT
-	Unwrap(CAST(r.A + -5 AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c1
+	Unwrap(CAST(r.A + (-5) AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c1
 FROM
 	PrecedenceRow r
 ORDER BY
@@ -515,7 +623,7 @@ ORDER BY
 
 -- YDB Ydb
 SELECT
-	Unwrap(CAST(r.A - -5 AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c1
+	Unwrap(CAST(r.A - (-5) AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c1
 FROM
 	PrecedenceRow r
 ORDER BY
@@ -523,7 +631,7 @@ ORDER BY
 
 -- YDB Ydb
 SELECT
-	Unwrap(CAST(r.A * -5 AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c1
+	Unwrap(CAST(r.A * (-5) AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c1
 FROM
 	PrecedenceRow r
 ORDER BY
@@ -531,7 +639,7 @@ ORDER BY
 
 -- YDB Ydb
 SELECT
-	Unwrap(CAST(r.A % -5 AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c1
+	Unwrap(CAST(r.A % (-5) AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)) as c1
 FROM
 	PrecedenceRow r
 ORDER BY
@@ -593,6 +701,18 @@ ORDER BY
 -- cell Xor/Xor(a,Xor(b,c)): skipped
 -- cell Xor/Xor(AsNotNull(Xor(a,b)),c): skipped
 -- cell Xor/Xor(a,AsNotNull(Xor(b,c))): skipped
+-- cell Xor/Xor(TAdd(a,b),c): green
+-- cell Xor/Xor(a,TAdd(b,c)): green
+-- cell Xor/Xor(TAdd(a,NegLit),c): green
+-- cell Xor/Xor(TSub(a,b),c): green
+-- cell Xor/Xor(a,TSub(b,c)): green
+-- cell Xor/Xor(TSub(a,NegLit),c): green
+-- cell Xor/Xor(TMul(a,b),c): green
+-- cell Xor/Xor(a,TMul(b,c)): green
+-- cell Xor/Xor(TMul(a,NegLit),c): error
+-- cell Xor/Xor(TAddOffset(a,b),c): green
+-- cell Xor/Xor(a,TAddOffset(b,c)): green
+-- cell Xor/Xor(TAddOffset(a,NegLit),c): green
 -- cell Xor/Xor(a,Neg(b)): error
 -- cell Xor/Xor(Neg(b),c): error
 -- cell Xor/Xor(Add(a,Neg(b)),c): green

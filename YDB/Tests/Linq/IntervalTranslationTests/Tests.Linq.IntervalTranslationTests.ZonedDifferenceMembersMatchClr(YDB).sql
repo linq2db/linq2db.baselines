@@ -21,10 +21,10 @@ VALUES
 
 -- YDB Ydb
 SELECT
-	Unwrap(CAST((Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l) / 864000000000l AS Int32)) as Days,
-	Unwrap(CAST(((Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l) / 36000000000l) % 24l AS Int32)) as Hours,
-	Unwrap(CAST(((Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l) / 600000000l) % 60l AS Int32)) as Minutes,
-	Unwrap(CAST(((Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l) / 10000000l) % 60l AS Int32)) as Seconds,
+	Unwrap(CAST(Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l / 864000000000l AS Int32)) as Days,
+	Unwrap(CAST(Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l / 36000000000l % 24l AS Int32)) as Hours,
+	Unwrap(CAST(Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l / 600000000l % 60l AS Int32)) as Minutes,
+	Unwrap(CAST(Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l / 10000000l % 60l AS Int32)) as Seconds,
 	Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l as Ticks,
 	Unwrap(CAST(Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l AS Double)) / Double('864000000000') as TotalDays,
 	Unwrap(CAST(Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l AS Double)) / Double('36000000000') as TotalHours,

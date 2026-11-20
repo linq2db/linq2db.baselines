@@ -18,7 +18,7 @@ SELECT
 		WHEN 0 IN (Coalesce(j.Value1, 0), 5) THEN 'y'u
 		ELSE 'n'u
 	END as ListItem,
-	-Coalesce(j.Value1, 0) + 1 as Negated,
+	(-Coalesce(j.Value1, 0)) + 1 as Negated,
 	CASE
 		WHEN NOT Coalesce(j.Flag, false) THEN 't'u
 		ELSE 'f'u

@@ -15,7 +15,7 @@ SELECT
 	~Unwrap(CAST(-r.B AS Uint32)) as c13,
 	~Unwrap(CAST(~Unwrap(CAST(r.B AS Uint32)) AS Uint32)) as c14,
 	~Unwrap(CAST(-5 AS Uint32)) as c15,
-	~Unwrap(CAST(-5 * r.B AS Uint32)) as c16
+	~Unwrap(CAST((-5) * r.B AS Uint32)) as c16
 FROM
 	PrecedenceRow r
 ORDER BY
@@ -143,7 +143,7 @@ ORDER BY
 
 -- YDB Ydb
 SELECT
-	~Unwrap(CAST(-5 * r.B AS Uint32)) as c1
+	~Unwrap(CAST((-5) * r.B AS Uint32)) as c1
 FROM
 	PrecedenceRow r
 ORDER BY

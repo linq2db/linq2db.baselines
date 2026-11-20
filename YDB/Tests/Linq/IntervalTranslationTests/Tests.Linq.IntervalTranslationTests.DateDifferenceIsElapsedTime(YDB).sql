@@ -22,7 +22,7 @@ VALUES
 -- YDB Ydb
 SELECT
 	Unwrap(CAST(Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l AS Double)) / Double('600000000') as TotalMinutes,
-	Unwrap(CAST(((Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l) / 600000000l) % 60l AS Int32)) as Minutes
+	Unwrap(CAST(Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l / 600000000l % 60l AS Int32)) as Minutes
 FROM
 	EventRow r
 LIMIT 2

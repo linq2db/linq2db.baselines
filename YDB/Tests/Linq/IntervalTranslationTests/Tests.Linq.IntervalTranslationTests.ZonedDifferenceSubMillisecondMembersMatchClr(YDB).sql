@@ -29,8 +29,8 @@ LIMIT 2
 
 -- YDB Ydb
 SELECT
-	Unwrap(CAST(((Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l) / 10l) % 1000l AS Int32)) as Microseconds,
-	Unwrap(CAST(((Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l) % 10l) * 100l AS Int32)) as Nanoseconds,
+	Unwrap(CAST(Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l / 10l % 1000l AS Int32)) as Microseconds,
+	Unwrap(CAST(Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l % 10l * 100l AS Int32)) as Nanoseconds,
 	Unwrap(CAST(Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l AS Double)) / Double('10') as TotalMicroseconds,
 	Unwrap(CAST(Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l AS Double)) * Double('100') as TotalNanoseconds
 FROM

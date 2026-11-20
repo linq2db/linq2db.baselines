@@ -79,7 +79,7 @@ SET     asOf = Timestamp('2026-01-03T13:30:00.000000Z')
 
 SELECT
 	Unwrap(CAST(Unwrap(CAST($asOf - r.StartedOn AS Int64)) * 10l AS Double)) / Double('864000000000') as TotalDays,
-	Unwrap(CAST(((Unwrap(CAST($asOf - r.StartedOn AS Int64)) * 10l) / 36000000000l) % 24l AS Int32)) as Hours
+	Unwrap(CAST(Unwrap(CAST($asOf - r.StartedOn AS Int64)) * 10l / 36000000000l % 24l AS Int32)) as Hours
 FROM
 	EventRow r
 WHERE
