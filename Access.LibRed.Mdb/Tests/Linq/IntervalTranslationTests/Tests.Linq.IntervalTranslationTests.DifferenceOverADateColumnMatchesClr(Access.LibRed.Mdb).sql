@@ -36,7 +36,7 @@ FROM
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT TOP 2
-	(DateDiff_Big('d', [r].[OpenedOn], [r].[ClosedOn]) * 86400) * 10000000 + DateDiff_Big('ms', DateAdd('d', DateDiff_Big('d', [r].[OpenedOn], [r].[ClosedOn]), [r].[OpenedOn]), [r].[ClosedOn]) * 10000
+	DateDiff_Big('d', [r].[OpenedOn], [r].[ClosedOn]) * 86400 * 10000000 + DateDiff_Big('ms', DateAdd('d', DateDiff_Big('d', [r].[OpenedOn], [r].[ClosedOn]), [r].[OpenedOn]), [r].[ClosedOn]) * 10000
 FROM
 	[CoarseEventRow] [r]
 

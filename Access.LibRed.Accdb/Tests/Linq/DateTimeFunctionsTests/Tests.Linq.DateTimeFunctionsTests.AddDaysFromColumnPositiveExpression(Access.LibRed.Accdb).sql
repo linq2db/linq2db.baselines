@@ -50,7 +50,7 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[ID] = 5000 AND DateAdd('d', ([t].[SmallIntValue] + @part1) - @part2, [t].[DateTimeValue]) > DateSerial(2018, 1, 2)
+	[t].[ID] = 5000 AND DateAdd('d', [t].[SmallIntValue] + @part1 - @part2, [t].[DateTimeValue]) > DateSerial(2018, 1, 2)
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 DELETE FROM

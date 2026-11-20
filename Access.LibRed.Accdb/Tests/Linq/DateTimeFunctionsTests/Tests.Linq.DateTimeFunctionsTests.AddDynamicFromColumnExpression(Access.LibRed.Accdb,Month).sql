@@ -5,7 +5,7 @@ DECLARE @part2  -- Int32
 SET     @part2 = 4
 
 SELECT
-	DateAdd('m', ([t].[SmallIntValue] + @part1) - @part2, [t].[DateTimeValue])
+	DateAdd('m', [t].[SmallIntValue] + @part1 - @part2, [t].[DateTimeValue])
 FROM
 	[LinqDataTypes] [t]
 

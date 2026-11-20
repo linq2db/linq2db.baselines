@@ -88,7 +88,7 @@ DECLARE @Ticks  -- Int64
 SET     @Ticks = 36002500000
 
 SELECT TOP 2
-	DateAdd('ms', Fix(((@Ticks * -1) MOD 10000000) / 10000), DateAdd('s', Fix(((@Ticks * -1) MOD 864000000000) / 10000000), DateAdd('d', Fix((@Ticks * -1) / 864000000000), [r].[DueOn])))
+	DateAdd('ms', Fix((@Ticks * -1 MOD 10000000) / 10000), DateAdd('s', Fix((@Ticks * -1 MOD 864000000000) / 10000000), DateAdd('d', Fix(@Ticks * -1 / 864000000000), [r].[DueOn])))
 FROM
 	[OptionalDueRow] [r]
 WHERE
@@ -169,7 +169,7 @@ WHERE
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
-	DateAdd('ms', Fix((((DateDiff_Big('d', [r].[StartedOn], [r].[DueOn]) * 86400) * 10000000 + DateDiff_Big('ms', DateAdd('d', DateDiff_Big('d', [r].[StartedOn], [r].[DueOn]), [r].[StartedOn]), [r].[DueOn]) * 10000) MOD 10000000) / 10000), DateAdd('s', Fix((((DateDiff_Big('d', [r].[StartedOn], [r].[DueOn]) * 86400) * 10000000 + DateDiff_Big('ms', DateAdd('d', DateDiff_Big('d', [r].[StartedOn], [r].[DueOn]), [r].[StartedOn]), [r].[DueOn]) * 10000) MOD 864000000000) / 10000000), DateAdd('d', Fix(((DateDiff_Big('d', [r].[StartedOn], [r].[DueOn]) * 86400) * 10000000 + DateDiff_Big('ms', DateAdd('d', DateDiff_Big('d', [r].[StartedOn], [r].[DueOn]), [r].[StartedOn]), [r].[DueOn]) * 10000) / 864000000000), [r].[DueOn])))
+	DateAdd('ms', Fix(((DateDiff_Big('d', [r].[StartedOn], [r].[DueOn]) * 86400 * 10000000 + DateDiff_Big('ms', DateAdd('d', DateDiff_Big('d', [r].[StartedOn], [r].[DueOn]), [r].[StartedOn]), [r].[DueOn]) * 10000) MOD 10000000) / 10000), DateAdd('s', Fix(((DateDiff_Big('d', [r].[StartedOn], [r].[DueOn]) * 86400 * 10000000 + DateDiff_Big('ms', DateAdd('d', DateDiff_Big('d', [r].[StartedOn], [r].[DueOn]), [r].[StartedOn]), [r].[DueOn]) * 10000) MOD 864000000000) / 10000000), DateAdd('d', Fix((DateDiff_Big('d', [r].[StartedOn], [r].[DueOn]) * 86400 * 10000000 + DateDiff_Big('ms', DateAdd('d', DateDiff_Big('d', [r].[StartedOn], [r].[DueOn]), [r].[StartedOn]), [r].[DueOn]) * 10000) / 864000000000), [r].[DueOn])))
 FROM
 	[OptionalDueRow] [r]
 ORDER BY

@@ -1,25 +1,25 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
-	[r].[A] + [r].[B] BAND [r].[C],
-	[r].[A] BAND [r].[B] + [r].[C],
-	[r].[A] + [r].[B] BAND [r].[C],
-	[r].[A] BAND [r].[B] + [r].[C],
-	[r].[A] - [r].[B] BAND [r].[C],
-	[r].[A] BAND [r].[B] - [r].[C],
-	[r].[A] - [r].[B] BAND [r].[C],
-	[r].[A] BAND [r].[B] - [r].[C],
-	[r].[A] * [r].[B] BAND [r].[C],
-	[r].[A] BAND [r].[B] * [r].[C],
-	[r].[A] * [r].[B] BAND [r].[C],
-	[r].[A] BAND [r].[B] * [r].[C],
-	[r].[A] / [r].[B] BAND [r].[C],
-	[r].[A] BAND [r].[B] / [r].[C],
-	[r].[A] / [r].[B] BAND [r].[C],
-	[r].[A] BAND [r].[B] / [r].[C],
-	[r].[A] MOD [r].[B] BAND [r].[C],
-	[r].[A] BAND [r].[B] MOD [r].[C],
-	[r].[A] MOD [r].[B] BAND [r].[C],
-	[r].[A] BAND [r].[B] MOD [r].[C],
+	([r].[A] + [r].[B]) BAND [r].[C],
+	[r].[A] BAND ([r].[B] + [r].[C]),
+	([r].[A] + [r].[B]) BAND [r].[C],
+	[r].[A] BAND ([r].[B] + [r].[C]),
+	([r].[A] - [r].[B]) BAND [r].[C],
+	[r].[A] BAND ([r].[B] - [r].[C]),
+	([r].[A] - [r].[B]) BAND [r].[C],
+	[r].[A] BAND ([r].[B] - [r].[C]),
+	([r].[A] * [r].[B]) BAND [r].[C],
+	[r].[A] BAND ([r].[B] * [r].[C]),
+	([r].[A] * [r].[B]) BAND [r].[C],
+	[r].[A] BAND ([r].[B] * [r].[C]),
+	([r].[A] / [r].[B]) BAND [r].[C],
+	[r].[A] BAND ([r].[B] / [r].[C]),
+	([r].[A] / [r].[B]) BAND [r].[C],
+	[r].[A] BAND ([r].[B] / [r].[C]),
+	([r].[A] MOD [r].[B]) BAND [r].[C],
+	[r].[A] BAND ([r].[B] MOD [r].[C]),
+	([r].[A] MOD [r].[B]) BAND [r].[C],
+	[r].[A] BAND ([r].[B] MOD [r].[C]),
 	([r].[A] BOR [r].[B]) BAND [r].[C],
 	[r].[A] BAND ([r].[B] BOR [r].[C]),
 	([r].[A] BOR [r].[B]) BAND [r].[C],
@@ -28,34 +28,46 @@ SELECT
 	[r].[A] BAND ([r].[B] BXOR [r].[C]),
 	([r].[A] BXOR [r].[B]) BAND [r].[C],
 	[r].[A] BAND ([r].[B] BXOR [r].[C]),
-	[r].[A] BAND -[r].[B],
-	-[r].[B] BAND [r].[C],
-	[r].[A] - [r].[B] BAND [r].[C],
-	[r].[A] + [r].[B] BAND [r].[C],
-	[r].[A] * -[r].[B] BAND [r].[C],
-	[r].[A] / -[r].[B] BAND [r].[C],
-	[r].[A] MOD -[r].[B] BAND [r].[C],
-	[r].[A] BAND -[r].[B] BAND [r].[C],
-	([r].[A] BOR -[r].[B]) BAND [r].[C],
-	([r].[A] BXOR -[r].[B]) BAND [r].[C],
-	[r].[A] BAND -1 - [r].[B],
-	-1 - [r].[B] BAND [r].[C],
-	[r].[A] + -1 - [r].[B] BAND [r].[C],
-	[r].[A] - (-1 - [r].[B]) BAND [r].[C],
-	[r].[A] * (-1 - [r].[B]) BAND [r].[C],
-	[r].[A] MOD (-1 - [r].[B]) BAND [r].[C],
-	[r].[A] BAND -1 - [r].[B] BAND [r].[C],
-	([r].[A] BOR -1 - [r].[B]) BAND [r].[C],
-	([r].[A] BXOR -1 - [r].[B]) BAND [r].[C],
-	[r].[A] BAND -5,
-	-5 BAND [r].[C],
-	[r].[A] + -5 BAND [r].[C],
-	[r].[A] - -5 BAND [r].[C],
-	[r].[A] * -5 BAND [r].[C],
-	[r].[A] MOD -5 BAND [r].[C],
-	[r].[A] BAND -5 BAND [r].[C],
-	([r].[A] BOR -5) BAND [r].[C],
-	([r].[A] BXOR -5) BAND [r].[C]
+	([r].[A] + [r].[B]) BAND [r].[C],
+	[r].[A] BAND ([r].[B] + [r].[C]),
+	([r].[A] + -6) BAND [r].[C],
+	([r].[A] - [r].[B]) BAND [r].[C],
+	[r].[A] BAND ([r].[B] - [r].[C]),
+	([r].[A] - -6) BAND [r].[C],
+	([r].[A] * [r].[B]) BAND [r].[C],
+	[r].[A] BAND ([r].[B] * [r].[C]),
+	([r].[A] * -6) BAND [r].[C],
+	([r].[A] + [r].[B]) BAND [r].[C],
+	[r].[A] BAND ([r].[B] + [r].[C]),
+	([r].[A] + -6) BAND [r].[C],
+	[r].[A] BAND (-[r].[B]),
+	(-[r].[B]) BAND [r].[C],
+	([r].[A] - [r].[B]) BAND [r].[C],
+	([r].[A] + [r].[B]) BAND [r].[C],
+	([r].[A] * -[r].[B]) BAND [r].[C],
+	([r].[A] / -[r].[B]) BAND [r].[C],
+	([r].[A] MOD -[r].[B]) BAND [r].[C],
+	[r].[A] BAND (-[r].[B]) BAND [r].[C],
+	([r].[A] BOR (-[r].[B])) BAND [r].[C],
+	([r].[A] BXOR (-[r].[B])) BAND [r].[C],
+	[r].[A] BAND (-1 - [r].[B]),
+	(-1 - [r].[B]) BAND [r].[C],
+	([r].[A] + (-1 - [r].[B])) BAND [r].[C],
+	([r].[A] - (-1 - [r].[B])) BAND [r].[C],
+	([r].[A] * (-1 - [r].[B])) BAND [r].[C],
+	([r].[A] MOD (-1 - [r].[B])) BAND [r].[C],
+	[r].[A] BAND (-1 - [r].[B]) BAND [r].[C],
+	([r].[A] BOR (-1 - [r].[B])) BAND [r].[C],
+	([r].[A] BXOR (-1 - [r].[B])) BAND [r].[C],
+	[r].[A] BAND (-5),
+	(-5) BAND [r].[C],
+	([r].[A] + -5) BAND [r].[C],
+	([r].[A] - -5) BAND [r].[C],
+	([r].[A] * -5) BAND [r].[C],
+	([r].[A] MOD -5) BAND [r].[C],
+	[r].[A] BAND (-5) BAND [r].[C],
+	([r].[A] BOR (-5)) BAND [r].[C],
+	([r].[A] BXOR (-5)) BAND [r].[C]
 FROM
 	[PrecedenceRow] [r]
 ORDER BY
@@ -63,15 +75,15 @@ ORDER BY
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
-	[r].[A] BAND -5,
-	-5 BAND [r].[C],
-	[r].[A] + -5 BAND [r].[C],
-	[r].[A] - -5 BAND [r].[C],
-	[r].[A] * -5 BAND [r].[C],
-	[r].[A] MOD -5 BAND [r].[C],
-	[r].[A] BAND -5 BAND [r].[C],
-	([r].[A] BOR -5) BAND [r].[C],
-	([r].[A] BXOR -5) BAND [r].[C]
+	[r].[A] BAND (-5),
+	(-5) BAND [r].[C],
+	([r].[A] + -5) BAND [r].[C],
+	([r].[A] - -5) BAND [r].[C],
+	([r].[A] * -5) BAND [r].[C],
+	([r].[A] MOD -5) BAND [r].[C],
+	[r].[A] BAND (-5) BAND [r].[C],
+	([r].[A] BOR (-5)) BAND [r].[C],
+	([r].[A] BXOR (-5)) BAND [r].[C]
 FROM
 	[PrecedenceRow] [r]
 ORDER BY
@@ -109,6 +121,18 @@ ORDER BY
 -- cell And/And(a,Xor(b,c)): green
 -- cell And/And(AsNotNull(Xor(a,b)),c): green
 -- cell And/And(a,AsNotNull(Xor(b,c))): green
+-- cell And/And(TAdd(a,b),c): green
+-- cell And/And(a,TAdd(b,c)): green
+-- cell And/And(TAdd(a,NegLit),c): green
+-- cell And/And(TSub(a,b),c): green
+-- cell And/And(a,TSub(b,c)): green
+-- cell And/And(TSub(a,NegLit),c): green
+-- cell And/And(TMul(a,b),c): green
+-- cell And/And(a,TMul(b,c)): green
+-- cell And/And(TMul(a,NegLit),c): green
+-- cell And/And(TAddOffset(a,b),c): green
+-- cell And/And(a,TAddOffset(b,c)): green
+-- cell And/And(TAddOffset(a,NegLit),c): green
 -- cell And/And(a,Neg(b)): green
 -- cell And/And(Neg(b),c): green
 -- cell And/And(Add(a,Neg(b)),c): green

@@ -105,7 +105,7 @@ FROM
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
-	[p].[ID] ^ -1
+	[p].[ID] ^ (-1)
 FROM
 	[LinqDataTypes] [p]
 ORDER BY
