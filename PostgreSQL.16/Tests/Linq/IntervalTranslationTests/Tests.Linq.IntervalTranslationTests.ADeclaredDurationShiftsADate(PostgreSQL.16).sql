@@ -29,9 +29,9 @@ VALUES
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
-	'2026-03-01'::date + ((r."InSeconds" * 10000000) / 10) * Interval '1 microsecond',
-	'2026-03-01'::date - ((r."InSeconds" * 10000000) / 10) * Interval '1 microsecond',
-	'2026-03-01'::date + (r."InTicks" / 10) * Interval '1 microsecond'
+	'2026-03-01'::date + r."InSeconds" * 10000000 / 10 * Interval '1 microsecond',
+	'2026-03-01'::date - r."InSeconds" * 10000000 / 10 * Interval '1 microsecond',
+	'2026-03-01'::date + r."InTicks" / 10 * Interval '1 microsecond'
 FROM
 	"DurationRow" r
 LIMIT 2

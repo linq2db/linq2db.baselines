@@ -37,7 +37,7 @@ SELECT
 	((r."InSeconds" * 10000000 + r."InTicks")::BigInt + r."InSeconds" * 10000000)::BigInt,
 	((-r."InSeconds")::BigInt * 10000000 + r."InTicks")::BigInt,
 	(r."InSeconds" * 10000000 + r."InTicks")::BigInt,
-	(r."InSeconds" * 10000000 + r."InTicks")::BigInt + r."InTicks" + r."InTicks",
+	(r."InSeconds" * 10000000 + r."InTicks")::BigInt + (r."InTicks" + r."InTicks"),
 	((r."InSeconds" + r."InSeconds")::BigInt * 10000000 + r."InTicks")::BigInt - (r."InTicks" + r."InTicks"),
 	((-r."InSeconds")::BigInt * 10000000 - r."InTicks")::BigInt
 FROM

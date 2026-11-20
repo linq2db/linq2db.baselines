@@ -8,7 +8,7 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	(p."PersonID" | (p."PersonID" # 1)) = p."PersonID"
+	p."PersonID" | (p."PersonID" # 1) = p."PersonID"
 
 -- PostgreSQL.13 PostgreSQL12
 SELECT
