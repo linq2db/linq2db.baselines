@@ -2,9 +2,9 @@
 SELECT
 	[r].[A] - ([r].[B] + [r].[C]),
 	[r].[A] - ([r].[B] + [r].[C]),
-	([r].[A] - [r].[B]) - [r].[C],
+	[r].[A] - [r].[B] - [r].[C],
 	[r].[A] - ([r].[B] - [r].[C]),
-	([r].[A] - [r].[B]) - [r].[C],
+	[r].[A] - [r].[B] - [r].[C],
 	[r].[A] - ([r].[B] - [r].[C]),
 	[r].[A] * [r].[B] - [r].[C],
 	[r].[A] - [r].[B] * [r].[C],
@@ -18,40 +18,55 @@ SELECT
 	[r].[A] - [r].[B] % [r].[C],
 	[r].[A] % [r].[B] - [r].[C],
 	[r].[A] - [r].[B] % [r].[C],
-	([r].[A] & [r].[B]) - [r].[C],
+	[r].[A] & [r].[B] - [r].[C],
 	[r].[A] - ([r].[B] & [r].[C]),
-	([r].[A] & [r].[B]) - [r].[C],
+	[r].[A] & [r].[B] - [r].[C],
 	[r].[A] - ([r].[B] & [r].[C]),
 	[r].[A] - ([r].[B] | [r].[C]),
 	[r].[A] - ([r].[B] | [r].[C]),
 	[r].[A] - ([r].[B] ^ [r].[C]),
 	[r].[A] - ([r].[B] ^ [r].[C]),
+	([r].[A] + [r].[B]) - [r].[C],
+	[r].[A] - ([r].[B] + [r].[C]),
+	([r].[A] + -6) - [r].[C],
+	([r].[A] - [r].[B]) - [r].[C],
+	[r].[A] - ([r].[B] - [r].[C]),
+	([r].[A] - -6) - [r].[C],
+	[r].[A] * [r].[B] - [r].[C],
+	[r].[A] - [r].[B] * [r].[C],
+	[r].[A] * -6 - [r].[C],
+	[r].[A] / [r].[B] - [r].[C],
+	[r].[A] - [r].[B] / [r].[C],
+	[r].[A] / -6 - [r].[C],
+	([r].[A] + [r].[B]) - [r].[C],
+	[r].[A] - ([r].[B] + [r].[C]),
+	([r].[A] + -6) - [r].[C],
 	[r].[A] + [r].[B],
 	-[r].[B] - [r].[C],
-	([r].[A] - [r].[B]) - [r].[C],
-	[r].[A] * -[r].[B] - [r].[C],
-	[r].[A] / -[r].[B] - [r].[C],
-	[r].[A] % -[r].[B] - [r].[C],
-	([r].[A] & -[r].[B]) - [r].[C],
-	([r].[A] | -[r].[B]) - [r].[C],
-	([r].[A] ^ -[r].[B]) - [r].[C],
-	[r].[A] - (~[r].[B]),
-	(~[r].[B]) - [r].[C],
-	([r].[A] + (~[r].[B])) - [r].[C],
-	[r].[A] * (~[r].[B]) - [r].[C],
-	[r].[A] % (~[r].[B]) - [r].[C],
-	([r].[A] & ~[r].[B]) - [r].[C],
-	([r].[A] | ~[r].[B]) - [r].[C],
-	([r].[A] ^ ~[r].[B]) - [r].[C],
-	[r].[A] - -5,
+	[r].[A] - [r].[B] - [r].[C],
+	[r].[A] * (-[r].[B]) - [r].[C],
+	[r].[A] / (-[r].[B]) - [r].[C],
+	[r].[A] % (-[r].[B]) - [r].[C],
+	[r].[A] & (-[r].[B]) - [r].[C],
+	[r].[A] | (-[r].[B]) - [r].[C],
+	[r].[A] ^ (-[r].[B]) - [r].[C],
+	[r].[A] - ~[r].[B],
+	~[r].[B] - [r].[C],
+	[r].[A] + ~[r].[B] - [r].[C],
+	[r].[A] * ~[r].[B] - [r].[C],
+	[r].[A] % ~[r].[B] - [r].[C],
+	[r].[A] & ~[r].[B] - [r].[C],
+	[r].[A] | ~[r].[B] - [r].[C],
+	[r].[A] ^ ~[r].[B] - [r].[C],
+	[r].[A] - (-5),
 	-5 - [r].[C],
-	([r].[A] + -5) - [r].[C],
-	([r].[A] - -5) - [r].[C],
-	[r].[A] * -5 - [r].[C],
-	[r].[A] % -5 - [r].[C],
-	([r].[A] & -5) - [r].[C],
-	([r].[A] | -5) - [r].[C],
-	([r].[A] ^ -5) - [r].[C]
+	[r].[A] + (-5) - [r].[C],
+	[r].[A] - (-5) - [r].[C],
+	[r].[A] * (-5) - [r].[C],
+	[r].[A] % (-5) - [r].[C],
+	[r].[A] & (-5) - [r].[C],
+	[r].[A] | (-5) - [r].[C],
+	[r].[A] ^ (-5) - [r].[C]
 FROM
 	[PrecedenceRow] [r]
 ORDER BY
@@ -59,15 +74,15 @@ ORDER BY
 
 -- SqlServer.2008
 SELECT
-	[r].[A] - -5,
+	[r].[A] - (-5),
 	-5 - [r].[C],
-	([r].[A] + -5) - [r].[C],
-	([r].[A] - -5) - [r].[C],
-	[r].[A] * -5 - [r].[C],
-	[r].[A] % -5 - [r].[C],
-	([r].[A] & -5) - [r].[C],
-	([r].[A] | -5) - [r].[C],
-	([r].[A] ^ -5) - [r].[C]
+	[r].[A] + (-5) - [r].[C],
+	[r].[A] - (-5) - [r].[C],
+	[r].[A] * (-5) - [r].[C],
+	[r].[A] % (-5) - [r].[C],
+	[r].[A] & (-5) - [r].[C],
+	[r].[A] | (-5) - [r].[C],
+	[r].[A] ^ (-5) - [r].[C]
 FROM
 	[PrecedenceRow] [r]
 ORDER BY
@@ -105,6 +120,21 @@ ORDER BY
 -- cell Sub/Sub(a,Xor(b,c)): green
 -- cell Sub/Sub(AsNotNull(Xor(a,b)),c): skipped
 -- cell Sub/Sub(a,AsNotNull(Xor(b,c))): green
+-- cell Sub/Sub(TAdd(a,b),c): green
+-- cell Sub/Sub(a,TAdd(b,c)): green
+-- cell Sub/Sub(TAdd(a,NegLit),c): green
+-- cell Sub/Sub(TSub(a,b),c): green
+-- cell Sub/Sub(a,TSub(b,c)): green
+-- cell Sub/Sub(TSub(a,NegLit),c): green
+-- cell Sub/Sub(TMul(a,b),c): green
+-- cell Sub/Sub(a,TMul(b,c)): green
+-- cell Sub/Sub(TMul(a,NegLit),c): green
+-- cell Sub/Sub(TDiv(a,b),c): green
+-- cell Sub/Sub(a,TDiv(b,c)): green
+-- cell Sub/Sub(TDiv(a,NegLit),c): green
+-- cell Sub/Sub(TAddOffset(a,b),c): green
+-- cell Sub/Sub(a,TAddOffset(b,c)): green
+-- cell Sub/Sub(TAddOffset(a,NegLit),c): green
 -- cell Sub/Sub(a,Neg(b)): green
 -- cell Sub/Sub(Neg(b),c): green
 -- cell Sub/Sub(Add(a,Neg(b)),c): green

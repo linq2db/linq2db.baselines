@@ -15,5 +15,5 @@ FROM
 			[Child] [g_1]
 	) [p]
 WHERE
-	([p].[Key_1] + N'2') = N'22'
+	[p].[Key_1] + N'2' = N'22'
 

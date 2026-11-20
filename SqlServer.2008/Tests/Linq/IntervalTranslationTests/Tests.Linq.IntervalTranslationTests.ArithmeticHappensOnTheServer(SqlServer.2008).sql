@@ -30,7 +30,7 @@ VALUES
 -- SqlServer.2008
 SELECT TOP (2)
 	CAST([r].[InSeconds] AS Float) / 3600,
-	CAST(([r].[InSeconds] / 3600) % 24 AS Int),
+	CAST([r].[InSeconds] / 3600 % 24 AS Int),
 	CAST([r].[InTicks] AS Float) / 600000000
 FROM
 	[DurationRow] [r]
