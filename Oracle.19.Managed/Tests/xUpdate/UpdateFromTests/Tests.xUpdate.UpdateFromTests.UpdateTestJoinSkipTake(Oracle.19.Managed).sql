@@ -17,9 +17,9 @@ UPDATE
 SET
 	("Value1", "Value2", "Value3") = (
 		SELECT
-			(t6."Value1" * t6."Value1_1") * :int1,
-			(t6."Value2" * t6."Value2_1") * :int2,
-			(t6."Value3" * t6."Value3_1") * :int3
+			t6."Value1" * t6."Value1_1" * :int1,
+			t6."Value2" * t6."Value2_1" * :int2,
+			t6."Value3" * t6."Value3_1" * :int3
 		FROM
 			(
 				SELECT
@@ -60,7 +60,7 @@ SET
 									c_2."id"
 							) t4
 						WHERE
-							ROWNUM <= (:skip + :take)
+							ROWNUM <= :skip + :take
 					) t5
 				WHERE
 					t5.RN > :skip
@@ -94,7 +94,7 @@ WHERE
 									c_1."id"
 							) t1
 						WHERE
-							ROWNUM <= (:skip + :take)
+							ROWNUM <= :skip + :take
 					) t2
 				WHERE
 					t2.RN > :skip
