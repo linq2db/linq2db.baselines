@@ -8,7 +8,7 @@ FROM
 	"table1" "row1"
 		INNER JOIN "table2" "row2" ON "row1"."Id" = "row2"."Table1Id"
 WHERE
-	"row2"."Field2" STARTING WITH 'test'
+	("row2"."Field2" STARTING WITH 'test')
 UNION
 SELECT
 	"row1_1"."Id"
@@ -23,7 +23,7 @@ SELECT
 FROM
 	"table1" "row1_2"
 WHERE
-	"row1_2"."Field1" STARTING WITH 'test'
+	("row1_2"."Field1" STARTING WITH 'test')
 
 -- Firebird.5 Firebird4
 DECLARE @search VarChar(4) -- String
@@ -35,7 +35,7 @@ FROM
 	"table1" "row1"
 		INNER JOIN "table2" "row2" ON "row1"."Id" = "row2"."Table1Id"
 WHERE
-	"row2"."Field2" STARTING WITH 'test'
+	("row2"."Field2" STARTING WITH 'test')
 UNION
 SELECT
 	"row1_1"."Id"
@@ -50,5 +50,5 @@ SELECT
 FROM
 	"table1" "row1_2"
 WHERE
-	"row1_2"."Field1" STARTING WITH 'test'
+	("row1_2"."Field1" STARTING WITH 'test')
 

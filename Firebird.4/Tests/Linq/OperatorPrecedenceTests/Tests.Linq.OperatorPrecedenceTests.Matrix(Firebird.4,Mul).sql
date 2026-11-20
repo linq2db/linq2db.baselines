@@ -8,8 +8,8 @@ SELECT
 	"r".A * ("r".B - "r".C),
 	("r".A - "r".B) * "r".C,
 	"r".A * ("r".B - "r".C),
-	("r".A / "r".B) * "r".C,
-	("r".A / "r".B) * "r".C,
+	"r".A / "r".B * "r".C,
+	"r".A / "r".B * "r".C,
 	Bin_And("r".A, "r".B) * "r".C,
 	"r".A * Bin_And("r".B, "r".C),
 	Bin_And("r".A, "r".B) * "r".C,
@@ -22,10 +22,25 @@ SELECT
 	"r".A * Bin_Xor("r".B, "r".C),
 	Bin_Xor("r".A, "r".B) * "r".C,
 	"r".A * Bin_Xor("r".B, "r".C),
-	"r".A * -"r".B,
+	("r".A + "r".B) * "r".C,
+	"r".A * ("r".B + "r".C),
+	("r".A + -6) * "r".C,
+	("r".A - "r".B) * "r".C,
+	"r".A * ("r".B - "r".C),
+	("r".A - -6) * "r".C,
+	("r".A * "r".B) * "r".C,
+	"r".A * ("r".B * "r".C),
+	("r".A * -6) * "r".C,
+	("r".A / "r".B) * "r".C,
+	"r".A * ("r".B / "r".C),
+	("r".A / -6) * "r".C,
+	("r".A + "r".B) * "r".C,
+	"r".A * ("r".B + "r".C),
+	("r".A + -6) * "r".C,
+	"r".A * (-"r".B),
 	("r".A - "r".B) * "r".C,
 	("r".A + "r".B) * "r".C,
-	("r".A / -"r".B) * "r".C,
+	"r".A / (-"r".B) * "r".C,
 	Bin_And("r".A, -"r".B) * "r".C,
 	Bin_Or("r".A, -"r".B) * "r".C,
 	Bin_Xor("r".A, -"r".B) * "r".C,
@@ -33,16 +48,16 @@ SELECT
 	BIN_NOT("r".B) * "r".C,
 	("r".A + BIN_NOT("r".B)) * "r".C,
 	("r".A - BIN_NOT("r".B)) * "r".C,
-	("r".A * BIN_NOT("r".B)) * "r".C,
+	"r".A * BIN_NOT("r".B) * "r".C,
 	Mod("r".A, BIN_NOT("r".B)) * "r".C,
 	Bin_And("r".A, BIN_NOT("r".B)) * "r".C,
 	Bin_Or("r".A, BIN_NOT("r".B)) * "r".C,
 	Bin_Xor("r".A, BIN_NOT("r".B)) * "r".C,
-	"r".A * -5,
-	-5 * "r".C,
-	("r".A + -5) * "r".C,
-	("r".A - -5) * "r".C,
-	("r".A * -5) * "r".C,
+	"r".A * (-5),
+	(-5) * "r".C,
+	("r".A + (-5)) * "r".C,
+	("r".A - (-5)) * "r".C,
+	"r".A * (-5) * "r".C,
 	Mod("r".A, -5) * "r".C,
 	Bin_And("r".A, -5) * "r".C,
 	Bin_Or("r".A, -5) * "r".C,
@@ -54,11 +69,11 @@ ORDER BY
 
 -- Firebird.4 Firebird4
 SELECT
-	"r".A * -5,
-	-5 * "r".C,
-	("r".A + -5) * "r".C,
-	("r".A - -5) * "r".C,
-	("r".A * -5) * "r".C,
+	"r".A * (-5),
+	(-5) * "r".C,
+	("r".A + (-5)) * "r".C,
+	("r".A - (-5)) * "r".C,
+	"r".A * (-5) * "r".C,
 	Mod("r".A, -5) * "r".C,
 	Bin_And("r".A, -5) * "r".C,
 	Bin_Or("r".A, -5) * "r".C,
@@ -100,6 +115,21 @@ ORDER BY
 -- cell Mul/Mul(a,Xor(b,c)): green
 -- cell Mul/Mul(AsNotNull(Xor(a,b)),c): green
 -- cell Mul/Mul(a,AsNotNull(Xor(b,c))): green
+-- cell Mul/Mul(TAdd(a,b),c): green
+-- cell Mul/Mul(a,TAdd(b,c)): green
+-- cell Mul/Mul(TAdd(a,NegLit),c): green
+-- cell Mul/Mul(TSub(a,b),c): green
+-- cell Mul/Mul(a,TSub(b,c)): green
+-- cell Mul/Mul(TSub(a,NegLit),c): green
+-- cell Mul/Mul(TMul(a,b),c): green
+-- cell Mul/Mul(a,TMul(b,c)): green
+-- cell Mul/Mul(TMul(a,NegLit),c): green
+-- cell Mul/Mul(TDiv(a,b),c): green
+-- cell Mul/Mul(a,TDiv(b,c)): green
+-- cell Mul/Mul(TDiv(a,NegLit),c): green
+-- cell Mul/Mul(TAddOffset(a,b),c): green
+-- cell Mul/Mul(a,TAddOffset(b,c)): green
+-- cell Mul/Mul(TAddOffset(a,NegLit),c): green
 -- cell Mul/Mul(a,Neg(b)): green
 -- cell Mul/Mul(Neg(b),c): skipped
 -- cell Mul/Mul(Add(a,Neg(b)),c): green

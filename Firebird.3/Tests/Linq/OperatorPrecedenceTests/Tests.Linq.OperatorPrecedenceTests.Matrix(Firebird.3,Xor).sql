@@ -26,12 +26,24 @@ SELECT
 	Bin_Xor("r".A, Bin_Or("r".B, "r".C)),
 	Bin_Xor(Bin_Or("r".A, "r".B), "r".C),
 	Bin_Xor("r".A, Bin_Or("r".B, "r".C)),
+	Bin_Xor("r".A + "r".B, "r".C),
+	Bin_Xor("r".A, "r".B + "r".C),
+	Bin_Xor("r".A + -6, "r".C),
+	Bin_Xor("r".A - "r".B, "r".C),
+	Bin_Xor("r".A, "r".B - "r".C),
+	Bin_Xor("r".A - -6, "r".C),
+	Bin_Xor("r".A * "r".B, "r".C),
+	Bin_Xor("r".A, "r".B * "r".C),
+	Bin_Xor("r".A * -6, "r".C),
+	Bin_Xor("r".A + "r".B, "r".C),
+	Bin_Xor("r".A, "r".B + "r".C),
+	Bin_Xor("r".A + -6, "r".C),
 	Bin_Xor("r".A, -"r".B),
 	Bin_Xor(-"r".B, "r".C),
 	Bin_Xor("r".A - "r".B, "r".C),
 	Bin_Xor("r".A + "r".B, "r".C),
-	Bin_Xor("r".A * -"r".B, "r".C),
-	Bin_Xor("r".A / -"r".B, "r".C),
+	Bin_Xor("r".A * (-"r".B), "r".C),
+	Bin_Xor("r".A / (-"r".B), "r".C),
 	Bin_Xor(Mod("r".A, -"r".B), "r".C),
 	Bin_Xor(Bin_And("r".A, -"r".B), "r".C),
 	Bin_Xor(Bin_Or("r".A, -"r".B), "r".C),
@@ -45,9 +57,9 @@ SELECT
 	Bin_Xor(Bin_Or("r".A, BIN_NOT("r".B)), "r".C),
 	Bin_Xor("r".A, -5),
 	Bin_Xor(-5, "r".C),
-	Bin_Xor("r".A + -5, "r".C),
-	Bin_Xor("r".A - -5, "r".C),
-	Bin_Xor("r".A * -5, "r".C),
+	Bin_Xor("r".A + (-5), "r".C),
+	Bin_Xor("r".A - (-5), "r".C),
+	Bin_Xor("r".A * (-5), "r".C),
 	Bin_Xor(Mod("r".A, -5), "r".C),
 	Bin_Xor(Bin_And("r".A, -5), "r".C),
 	Bin_Xor(Bin_Or("r".A, -5), "r".C),
@@ -61,9 +73,9 @@ ORDER BY
 SELECT
 	Bin_Xor("r".A, -5),
 	Bin_Xor(-5, "r".C),
-	Bin_Xor("r".A + -5, "r".C),
-	Bin_Xor("r".A - -5, "r".C),
-	Bin_Xor("r".A * -5, "r".C),
+	Bin_Xor("r".A + (-5), "r".C),
+	Bin_Xor("r".A - (-5), "r".C),
+	Bin_Xor("r".A * (-5), "r".C),
 	Bin_Xor(Mod("r".A, -5), "r".C),
 	Bin_Xor(Bin_And("r".A, -5), "r".C),
 	Bin_Xor(Bin_Or("r".A, -5), "r".C),
@@ -105,6 +117,18 @@ ORDER BY
 -- cell Xor/Xor(a,Xor(b,c)): skipped
 -- cell Xor/Xor(AsNotNull(Xor(a,b)),c): skipped
 -- cell Xor/Xor(a,AsNotNull(Xor(b,c))): skipped
+-- cell Xor/Xor(TAdd(a,b),c): green
+-- cell Xor/Xor(a,TAdd(b,c)): green
+-- cell Xor/Xor(TAdd(a,NegLit),c): green
+-- cell Xor/Xor(TSub(a,b),c): green
+-- cell Xor/Xor(a,TSub(b,c)): green
+-- cell Xor/Xor(TSub(a,NegLit),c): green
+-- cell Xor/Xor(TMul(a,b),c): green
+-- cell Xor/Xor(a,TMul(b,c)): green
+-- cell Xor/Xor(TMul(a,NegLit),c): green
+-- cell Xor/Xor(TAddOffset(a,b),c): green
+-- cell Xor/Xor(a,TAddOffset(b,c)): green
+-- cell Xor/Xor(TAddOffset(a,NegLit),c): green
 -- cell Xor/Xor(a,Neg(b)): green
 -- cell Xor/Xor(Neg(b),c): green
 -- cell Xor/Xor(Add(a,Neg(b)),c): green

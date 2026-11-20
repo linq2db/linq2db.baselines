@@ -25,7 +25,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce("r".S, '') || ("r".A + "r".B) STARTING WITH 'x5'
+		WHEN (Coalesce("r".S, '') || ("r".A + "r".B) STARTING WITH 'x5')
 			THEN 1
 		ELSE 0
 	END,
@@ -58,7 +58,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce("r".S, '') || ("r".A - "r".B) STARTING WITH 'x5'
+		WHEN (Coalesce("r".S, '') || ("r".A - "r".B) STARTING WITH 'x5')
 			THEN 1
 		ELSE 0
 	END,
@@ -91,7 +91,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce("r".S, '') || ("r".A * "r".B) STARTING WITH 'x5'
+		WHEN (Coalesce("r".S, '') || ("r".A * "r".B) STARTING WITH 'x5')
 			THEN 1
 		ELSE 0
 	END,
@@ -124,7 +124,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce("r".S, '') || ("r".A / "r".B) STARTING WITH 'x5'
+		WHEN (Coalesce("r".S, '') || ("r".A / "r".B) STARTING WITH 'x5')
 			THEN 1
 		ELSE 0
 	END,
@@ -158,7 +158,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce("r".S, '') || Mod("r".A, "r".B) STARTING WITH 'x5'
+		WHEN (Coalesce("r".S, '') || Mod("r".A, "r".B) STARTING WITH 'x5')
 			THEN 1
 		ELSE 0
 	END,
@@ -192,7 +192,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce("r".S, '') || Bin_And("r".A, "r".B) STARTING WITH 'x5'
+		WHEN (Coalesce("r".S, '') || Bin_And("r".A, "r".B) STARTING WITH 'x5')
 			THEN 1
 		ELSE 0
 	END,
@@ -226,7 +226,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce("r".S, '') || Bin_Or("r".A, "r".B) STARTING WITH 'x5'
+		WHEN (Coalesce("r".S, '') || Bin_Or("r".A, "r".B) STARTING WITH 'x5')
 			THEN 1
 		ELSE 0
 	END,
@@ -260,7 +260,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce("r".S, '') || Bin_Xor("r".A, "r".B) STARTING WITH 'x5'
+		WHEN (Coalesce("r".S, '') || Bin_Xor("r".A, "r".B) STARTING WITH 'x5')
 			THEN 1
 		ELSE 0
 	END,
