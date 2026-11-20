@@ -7,7 +7,7 @@ SELECT
 FROM
 	"TestConstantsData" e
 WHERE
-	Coalesce(e."StringValue", '') || '1' = 'StrValue1'
+	(Coalesce(e."StringValue", '') || '1') = 'StrValue1'
 
 -- PostgreSQL.9.3 PostgreSQL
 SELECT

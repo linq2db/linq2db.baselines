@@ -8,6 +8,6 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	p."FirstName" || Repeat(' ', p."PersonID" + 1) || '123' = 'John  123' AND
+	(p."FirstName" || Repeat(' ', p."PersonID" + 1) || '123') = 'John  123' AND
 	p."PersonID" = 1
 
