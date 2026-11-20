@@ -6,5 +6,5 @@ SELECT
 FROM
 	[PERSON_1900] [p]
 WHERE
-	([p].[OPTIONS] & 15) = 4 OR ([p].[OPTIONS] & 15) = 5
+	[p].[OPTIONS] & 15 = 4 OR [p].[OPTIONS] & 15 = 5
 

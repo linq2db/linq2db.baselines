@@ -29,8 +29,8 @@ VALUES
 
 -- SQLite.Classic SQLite
 SELECT
-	CAST(([r].[InTicks] / 10000) % 1000 AS INTEGER),
-	CAST(([r].[InTicks] / 10) % 1000 AS INTEGER)
+	CAST([r].[InTicks] / 10000 % 1000 AS INTEGER),
+	CAST([r].[InTicks] / 10 % 1000 AS INTEGER)
 FROM
 	[DurationRow] [r]
 LIMIT 2

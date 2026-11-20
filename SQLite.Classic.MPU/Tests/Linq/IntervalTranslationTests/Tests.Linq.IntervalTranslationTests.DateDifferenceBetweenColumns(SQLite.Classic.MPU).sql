@@ -19,8 +19,8 @@ SELECT
 	CAST(CAST(Round((JulianDay([r].[ClosedOn]) - JulianDay([r].[OpenedOn])) * 86400000) AS INTEGER) * 10000 AS Float) / 864000000000,
 	CAST(CAST(Round((JulianDay([r].[ClosedOn]) - JulianDay([r].[OpenedOn])) * 86400000) AS INTEGER) * 10000 AS Float) / 36000000000,
 	CAST(CAST(Round((JulianDay([r].[ClosedOn]) - JulianDay([r].[OpenedOn])) * 86400000) AS INTEGER) * 10000 AS Float) / 600000000,
-	CAST((CAST(Round((JulianDay([r].[ClosedOn]) - JulianDay([r].[OpenedOn])) * 86400000) AS INTEGER) * 10000) / 864000000000 AS INTEGER),
-	CAST(((CAST(Round((JulianDay([r].[ClosedOn]) - JulianDay([r].[OpenedOn])) * 86400000) AS INTEGER) * 10000) / 36000000000) % 24 AS INTEGER)
+	CAST(CAST(Round((JulianDay([r].[ClosedOn]) - JulianDay([r].[OpenedOn])) * 86400000) AS INTEGER) * 10000 / 864000000000 AS INTEGER),
+	CAST(CAST(Round((JulianDay([r].[ClosedOn]) - JulianDay([r].[OpenedOn])) * 86400000) AS INTEGER) * 10000 / 36000000000 % 24 AS INTEGER)
 FROM
 	[ClosedPeriodRow] [r]
 WHERE
