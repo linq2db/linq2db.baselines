@@ -6,5 +6,5 @@ SELECT FIRST 1
 FROM
 	"Person" "p"
 WHERE
-	"p"."FirstName" STARTING WITH 'J' AND ("p"."PersonID" = 1 OR "p"."LastName" = 'fail')
+	("p"."FirstName" STARTING WITH 'J') AND ("p"."PersonID" = 1 OR "p"."LastName" = 'fail')
 

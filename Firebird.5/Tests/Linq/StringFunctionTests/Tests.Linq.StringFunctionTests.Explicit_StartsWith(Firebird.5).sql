@@ -4,7 +4,7 @@ SELECT
 FROM
 	"Patient" "r"
 WHERE
-	CAST("r"."Diagnosis" AS BLOB) STARTING WITH 'Hall'
+	(CAST("r"."Diagnosis" AS BLOB) STARTING WITH 'Hall')
 
 -- Firebird.5 Firebird4
 SELECT
@@ -12,7 +12,7 @@ SELECT
 FROM
 	"Patient" "r"
 WHERE
-	CAST("r"."Diagnosis" AS BLOB) STARTING WITH 'hall'
+	(CAST("r"."Diagnosis" AS BLOB) STARTING WITH 'hall')
 
 -- Firebird.5 Firebird4
 SELECT
@@ -20,7 +20,7 @@ SELECT
 FROM
 	"Patient" "r"
 WHERE
-	Lower("r"."Diagnosis") STARTING WITH 'hall'
+	(Lower("r"."Diagnosis") STARTING WITH 'hall')
 
 -- Firebird.5 Firebird4
 SELECT
@@ -28,5 +28,5 @@ SELECT
 FROM
 	"Patient" "r"
 WHERE
-	Lower("r"."Diagnosis") STARTING WITH 'hall'
+	(Lower("r"."Diagnosis") STARTING WITH 'hall')
 

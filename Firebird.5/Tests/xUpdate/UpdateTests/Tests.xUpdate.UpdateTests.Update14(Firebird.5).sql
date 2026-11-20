@@ -34,7 +34,7 @@ UPDATE
 SET
 	"LastName" = (CAST(@name AS Int) + CAST(@idx AS Int))
 WHERE
-	"t1"."FirstName" STARTING WITH 'Update14'
+	("t1"."FirstName" STARTING WITH 'Update14')
 
 -- Firebird.5 Firebird4
 SELECT
@@ -42,5 +42,5 @@ SELECT
 FROM
 	"Person" "t1"
 WHERE
-	"t1"."FirstName" STARTING WITH 'Update14'
+	("t1"."FirstName" STARTING WITH 'Update14')
 

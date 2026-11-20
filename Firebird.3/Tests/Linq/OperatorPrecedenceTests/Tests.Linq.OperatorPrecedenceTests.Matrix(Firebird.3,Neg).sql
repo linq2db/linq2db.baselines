@@ -12,8 +12,8 @@ SELECT
 	-Bin_Xor("r".A, "r".B),
 	"r".B,
 	-BIN_NOT("r".B),
-	--5,
-	-(-5 * "r".B)
+	-(-5),
+	-((-5) * "r".B)
 FROM
 	"PrecedenceRow" "r"
 ORDER BY
@@ -21,127 +21,7 @@ ORDER BY
 
 -- Firebird.3 Firebird3
 SELECT
-	-("r".A + "r".B)
-FROM
-	"PrecedenceRow" "r"
-ORDER BY
-	"r"."Id"
-
--- Firebird.3 Firebird3
-SELECT
-	-("r".A + "r".B)
-FROM
-	"PrecedenceRow" "r"
-ORDER BY
-	"r"."Id"
-
--- Firebird.3 Firebird3
-SELECT
-	-("r".A - "r".B)
-FROM
-	"PrecedenceRow" "r"
-ORDER BY
-	"r"."Id"
-
--- Firebird.3 Firebird3
-SELECT
-	-("r".A - "r".B)
-FROM
-	"PrecedenceRow" "r"
-ORDER BY
-	"r"."Id"
-
--- Firebird.3 Firebird3
-SELECT
-	-Bin_And("r".A, "r".B)
-FROM
-	"PrecedenceRow" "r"
-ORDER BY
-	"r"."Id"
-
--- Firebird.3 Firebird3
-SELECT
-	-Bin_And("r".A, "r".B)
-FROM
-	"PrecedenceRow" "r"
-ORDER BY
-	"r"."Id"
-
--- Firebird.3 Firebird3
-SELECT
-	-Bin_Or("r".A, "r".B)
-FROM
-	"PrecedenceRow" "r"
-ORDER BY
-	"r"."Id"
-
--- Firebird.3 Firebird3
-SELECT
-	-Bin_Or("r".A, "r".B)
-FROM
-	"PrecedenceRow" "r"
-ORDER BY
-	"r"."Id"
-
--- Firebird.3 Firebird3
-SELECT
-	-Bin_Xor("r".A, "r".B)
-FROM
-	"PrecedenceRow" "r"
-ORDER BY
-	"r"."Id"
-
--- Firebird.3 Firebird3
-SELECT
-	-Bin_Xor("r".A, "r".B)
-FROM
-	"PrecedenceRow" "r"
-ORDER BY
-	"r"."Id"
-
--- Firebird.3 Firebird3
-SELECT
-	"r".B
-FROM
-	"PrecedenceRow" "r"
-ORDER BY
-	"r"."Id"
-
--- Firebird.3 Firebird3
-SELECT
-	-BIN_NOT("r".B)
-FROM
-	"PrecedenceRow" "r"
-ORDER BY
-	"r"."Id"
-
--- Firebird.3 Firebird3
-SELECT
-	--5
-FROM
-	"PrecedenceRow" "r"
-ORDER BY
-	"r"."Id"
-
--- Firebird.3 Firebird3
-SELECT
-	-(-5 * "r".B)
-FROM
-	"PrecedenceRow" "r"
-ORDER BY
-	"r"."Id"
-
--- Firebird.3 Firebird3
-SELECT
-	--5
-FROM
-	"PrecedenceRow" "r"
-ORDER BY
-	"r"."Id"
-
--- Firebird.3 Firebird3
-SELECT
-	--5
+	-(-5)
 FROM
 	"PrecedenceRow" "r"
 ORDER BY
@@ -165,6 +45,6 @@ ORDER BY
 -- cell Neg/Neg(AsNotNull(Xor(a,b))): green
 -- cell Neg/Neg(Neg(b)): green
 -- cell Neg/Neg(Not(b)): green
--- cell Neg/Neg(NegLit(b)): error
--- cell Neg/Neg(NegParam(b)): error
+-- cell Neg/Neg(NegLit(b)): green
+-- cell Neg/Neg(NegParam(b)): green
 -- cell Neg/Neg(Mul(NegLit,b)): green

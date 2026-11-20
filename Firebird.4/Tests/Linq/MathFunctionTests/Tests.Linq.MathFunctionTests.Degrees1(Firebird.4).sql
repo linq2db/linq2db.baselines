@@ -4,7 +4,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Floor(("p"."MoneyValue" * 180) / PI()) as "Value_1"
+			Floor("p"."MoneyValue" * 180 / PI()) as "Value_1"
 		FROM
 			"LinqDataTypes" "p"
 	) "t"

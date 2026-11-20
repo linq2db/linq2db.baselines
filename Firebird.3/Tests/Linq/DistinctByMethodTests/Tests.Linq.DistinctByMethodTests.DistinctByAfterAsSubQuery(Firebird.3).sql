@@ -22,7 +22,7 @@ FROM
 				FROM
 					"NullableKeyData" "c_1"
 				WHERE
-					"c_1"."CustomerId" STARTING WITH 'DST'
+					("c_1"."CustomerId" STARTING WITH 'DST')
 			) "e"
 	) "t1"
 WHERE

@@ -74,7 +74,7 @@ FROM
 		FROM
 			"Stone" "sG"
 		WHERE
-			"sG"."Enabled" = TRUE AND "sG"."Name" NOT STARTING WITH 'level - ' AND
+			"sG"."Enabled" = TRUE AND ("sG"."Name" NOT STARTING WITH 'level - ') AND
 			CHAR_LENGTH("sG"."ImageFullUrl") > 0
 	) "sG_1"
 		CROSS JOIN LATERAL (
@@ -87,7 +87,7 @@ FROM
 				"Stone" "s"
 			WHERE
 				"s"."Enabled" = TRUE AND
-				"s"."Name" NOT STARTING WITH 'level - ' AND
+				("s"."Name" NOT STARTING WITH 'level - ') AND
 				CHAR_LENGTH("s"."ImageFullUrl") > 0 AND
 				"sG_1"."Key_1" = "s"."Name"
 			FETCH NEXT 1 ROWS ONLY

@@ -29,7 +29,7 @@ SELECT
 FROM
 	"CollatedTable" "r"
 WHERE
-	Lower("r"."CaseSensitive") STARTING WITH 'testst'
+	(Lower("r"."CaseSensitive") STARTING WITH 'testst')
 
 -- Firebird.4 Firebird4
 SELECT
@@ -37,7 +37,7 @@ SELECT
 FROM
 	"CollatedTable" "r"
 WHERE
-	Lower("r"."CaseInsensitive") STARTING WITH 'testst'
+	(Lower("r"."CaseInsensitive") STARTING WITH 'testst')
 
 -- Firebird.4 Firebird4
 SELECT
@@ -45,7 +45,7 @@ SELECT
 FROM
 	"CollatedTable" "r"
 WHERE
-	Lower("r"."CaseSensitive") STARTING WITH 'testst'
+	(Lower("r"."CaseSensitive") STARTING WITH 'testst')
 
 -- Firebird.4 Firebird4
 SELECT
@@ -53,5 +53,5 @@ SELECT
 FROM
 	"CollatedTable" "r"
 WHERE
-	Lower("r"."CaseInsensitive") STARTING WITH 'testst'
+	(Lower("r"."CaseInsensitive") STARTING WITH 'testst')
 

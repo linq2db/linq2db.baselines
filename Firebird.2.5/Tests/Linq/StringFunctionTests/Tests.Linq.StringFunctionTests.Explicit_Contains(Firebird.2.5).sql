@@ -20,7 +20,7 @@ SELECT
 FROM
 	"Patient" "r"
 WHERE
-	"r"."Diagnosis" CONTAINING 'paranoid'
+	("r"."Diagnosis" CONTAINING 'paranoid')
 
 -- Firebird.2.5 Firebird
 SELECT
@@ -28,5 +28,5 @@ SELECT
 FROM
 	"Patient" "r"
 WHERE
-	"r"."Diagnosis" CONTAINING 'Paranoid'
+	("r"."Diagnosis" CONTAINING 'Paranoid')
 
