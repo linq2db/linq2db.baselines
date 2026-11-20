@@ -13,9 +13,9 @@ UPDATE
 SET
 	("Value1", "Value2", "Value3") = (
 		SELECT
-			("t2"."Value1" * "t2"."Value1_1") * @int1,
-			("t2"."Value2" * "t2"."Value2_1") * @int2,
-			("t2"."Value3" * "t2"."Value3_1") * @int3
+			"t2"."Value1" * "t2"."Value1_1" * @int1,
+			"t2"."Value2" * "t2"."Value2_1" * @int2,
+			"t2"."Value3" * "t2"."Value3_1" * @int3
 		FROM
 			(
 				SELECT

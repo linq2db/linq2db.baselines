@@ -58,7 +58,7 @@ VALUES
 
 -- DB2 DB2.LUW DB2LUW
 SELECT
-	CAST(Floor(CAST((CAST(Days(MAX("grp"."StartedOn")) AS BigInt) - CAST(Days(MIN("grp"."StartedOn")) AS BigInt)) * 864000000000 + (CAST(Midnight_Seconds(MAX("grp"."StartedOn")) AS BigInt) - CAST(Midnight_Seconds(MIN("grp"."StartedOn")) AS BigInt)) * 10000000 + (CAST(Microsecond(MAX("grp"."StartedOn")) AS BigInt) - CAST(Microsecond(MIN("grp"."StartedOn")) AS BigInt)) * 10 AS Float) / 864000000000) AS Int) + 1
+	CAST(Floor(CAST((CAST(Days(MAX("grp"."StartedOn")) AS BigInt) - CAST(Days(MIN("grp"."StartedOn")) AS BigInt)) * 864000000000 + ((CAST(Midnight_Seconds(MAX("grp"."StartedOn")) AS BigInt) - CAST(Midnight_Seconds(MIN("grp"."StartedOn")) AS BigInt)) * 10000000 + (CAST(Microsecond(MAX("grp"."StartedOn")) AS BigInt) - CAST(Microsecond(MIN("grp"."StartedOn")) AS BigInt)) * 10) AS Float) / 864000000000) AS Int) + 1
 FROM
 	"CoarseEventRow" "grp"
 FETCH NEXT 2 ROWS ONLY

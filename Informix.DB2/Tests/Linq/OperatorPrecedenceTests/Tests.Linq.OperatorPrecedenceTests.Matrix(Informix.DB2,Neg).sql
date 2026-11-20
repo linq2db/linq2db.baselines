@@ -12,8 +12,8 @@ SELECT
 	-BitXor(r.A, r.B),
 	r.B,
 	-BITNOT(r.B),
-	--5,
-	-(-5 * r.B)
+	-(-5),
+	-((-5) * r.B)
 FROM
 	PrecedenceRow r
 ORDER BY
@@ -21,127 +21,7 @@ ORDER BY
 
 -- Informix.DB2 Informix
 SELECT
-	-(r.A + r.B)
-FROM
-	PrecedenceRow r
-ORDER BY
-	r.Id
-
--- Informix.DB2 Informix
-SELECT
-	-(r.A + r.B)
-FROM
-	PrecedenceRow r
-ORDER BY
-	r.Id
-
--- Informix.DB2 Informix
-SELECT
-	-(r.A - r.B)
-FROM
-	PrecedenceRow r
-ORDER BY
-	r.Id
-
--- Informix.DB2 Informix
-SELECT
-	-(r.A - r.B)
-FROM
-	PrecedenceRow r
-ORDER BY
-	r.Id
-
--- Informix.DB2 Informix
-SELECT
-	-BitAnd(r.A, r.B)
-FROM
-	PrecedenceRow r
-ORDER BY
-	r.Id
-
--- Informix.DB2 Informix
-SELECT
-	-BitAnd(r.A, r.B)
-FROM
-	PrecedenceRow r
-ORDER BY
-	r.Id
-
--- Informix.DB2 Informix
-SELECT
-	-BitOr(r.A, r.B)
-FROM
-	PrecedenceRow r
-ORDER BY
-	r.Id
-
--- Informix.DB2 Informix
-SELECT
-	-BitOr(r.A, r.B)
-FROM
-	PrecedenceRow r
-ORDER BY
-	r.Id
-
--- Informix.DB2 Informix
-SELECT
-	-BitXor(r.A, r.B)
-FROM
-	PrecedenceRow r
-ORDER BY
-	r.Id
-
--- Informix.DB2 Informix
-SELECT
-	-BitXor(r.A, r.B)
-FROM
-	PrecedenceRow r
-ORDER BY
-	r.Id
-
--- Informix.DB2 Informix
-SELECT
-	r.B
-FROM
-	PrecedenceRow r
-ORDER BY
-	r.Id
-
--- Informix.DB2 Informix
-SELECT
-	-BITNOT(r.B)
-FROM
-	PrecedenceRow r
-ORDER BY
-	r.Id
-
--- Informix.DB2 Informix
-SELECT
-	--5
-FROM
-	PrecedenceRow r
-ORDER BY
-	r.Id
-
--- Informix.DB2 Informix
-SELECT
-	-(-5 * r.B)
-FROM
-	PrecedenceRow r
-ORDER BY
-	r.Id
-
--- Informix.DB2 Informix
-SELECT
-	--5
-FROM
-	PrecedenceRow r
-ORDER BY
-	r.Id
-
--- Informix.DB2 Informix
-SELECT
-	--5
+	-(-5)
 FROM
 	PrecedenceRow r
 ORDER BY
@@ -165,6 +45,6 @@ ORDER BY
 -- cell Neg/Neg(AsNotNull(Xor(a,b))): green
 -- cell Neg/Neg(Neg(b)): green
 -- cell Neg/Neg(Not(b)): green
--- cell Neg/Neg(NegLit(b)): error
--- cell Neg/Neg(NegParam(b)): error
+-- cell Neg/Neg(NegLit(b)): green
+-- cell Neg/Neg(NegParam(b)): green
 -- cell Neg/Neg(Mul(NegLit,b)): green

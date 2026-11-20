@@ -26,12 +26,24 @@ SELECT
 	BitOr("r".A, BitXor("r".B, "r".C)),
 	BitOr(BitXor("r".A, "r".B), "r".C),
 	BitOr("r".A, BitXor("r".B, "r".C)),
+	BitOr("r".A + "r".B, "r".C),
+	BitOr("r".A, "r".B + "r".C),
+	BitOr("r".A + -6, "r".C),
+	BitOr("r".A - "r".B, "r".C),
+	BitOr("r".A, "r".B - "r".C),
+	BitOr("r".A - -6, "r".C),
+	BitOr("r".A * "r".B, "r".C),
+	BitOr("r".A, "r".B * "r".C),
+	BitOr("r".A * -6, "r".C),
+	BitOr("r".A + "r".B, "r".C),
+	BitOr("r".A, "r".B + "r".C),
+	BitOr("r".A + -6, "r".C),
 	BitOr("r".A, -"r".B),
 	BitOr(-"r".B, "r".C),
 	BitOr("r".A - "r".B, "r".C),
 	BitOr("r".A + "r".B, "r".C),
-	BitOr("r".A * -"r".B, "r".C),
-	BitOr("r".A / -"r".B, "r".C),
+	BitOr("r".A * (-"r".B), "r".C),
+	BitOr("r".A / (-"r".B), "r".C),
 	BitOr(Mod("r".A, -"r".B), "r".C),
 	BitOr(BitAnd("r".A, -"r".B), "r".C),
 	BitOr(BitOr("r".A, -"r".B), "r".C),
@@ -47,9 +59,9 @@ SELECT
 	BitOr(BitXor("r".A, BITNOT("r".B)), "r".C),
 	BitOr("r".A, -5),
 	BitOr(-5, "r".C),
-	BitOr("r".A + -5, "r".C),
-	BitOr("r".A - -5, "r".C),
-	BitOr("r".A * -5, "r".C),
+	BitOr("r".A + (-5), "r".C),
+	BitOr("r".A - (-5), "r".C),
+	BitOr("r".A * (-5), "r".C),
 	BitOr(Mod("r".A, -5), "r".C),
 	BitOr(BitAnd("r".A, -5), "r".C),
 	BitOr(BitOr("r".A, -5), "r".C),
@@ -63,9 +75,9 @@ ORDER BY
 SELECT
 	BitOr("r".A, -5),
 	BitOr(-5, "r".C),
-	BitOr("r".A + -5, "r".C),
-	BitOr("r".A - -5, "r".C),
-	BitOr("r".A * -5, "r".C),
+	BitOr("r".A + (-5), "r".C),
+	BitOr("r".A - (-5), "r".C),
+	BitOr("r".A * (-5), "r".C),
 	BitOr(Mod("r".A, -5), "r".C),
 	BitOr(BitAnd("r".A, -5), "r".C),
 	BitOr(BitOr("r".A, -5), "r".C),
@@ -107,6 +119,18 @@ ORDER BY
 -- cell Or/Or(a,Xor(b,c)): green
 -- cell Or/Or(AsNotNull(Xor(a,b)),c): green
 -- cell Or/Or(a,AsNotNull(Xor(b,c))): green
+-- cell Or/Or(TAdd(a,b),c): green
+-- cell Or/Or(a,TAdd(b,c)): green
+-- cell Or/Or(TAdd(a,NegLit),c): green
+-- cell Or/Or(TSub(a,b),c): green
+-- cell Or/Or(a,TSub(b,c)): green
+-- cell Or/Or(TSub(a,NegLit),c): green
+-- cell Or/Or(TMul(a,b),c): green
+-- cell Or/Or(a,TMul(b,c)): green
+-- cell Or/Or(TMul(a,NegLit),c): green
+-- cell Or/Or(TAddOffset(a,b),c): green
+-- cell Or/Or(a,TAddOffset(b,c)): green
+-- cell Or/Or(TAddOffset(a,NegLit),c): green
 -- cell Or/Or(a,Neg(b)): green
 -- cell Or/Or(Neg(b),c): green
 -- cell Or/Or(Add(a,Neg(b)),c): green

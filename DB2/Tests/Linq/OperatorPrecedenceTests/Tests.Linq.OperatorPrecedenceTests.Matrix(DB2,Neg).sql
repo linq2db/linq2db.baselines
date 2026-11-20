@@ -12,8 +12,8 @@ SELECT
 	-BitXor("r".A, "r".B),
 	"r".B,
 	-BITNOT("r".B),
-	--5,
-	-(-5 * "r".B)
+	-(-5),
+	-((-5) * "r".B)
 FROM
 	"PrecedenceRow" "r"
 ORDER BY
@@ -21,127 +21,7 @@ ORDER BY
 
 -- DB2 DB2.LUW DB2LUW
 SELECT
-	-("r".A + "r".B)
-FROM
-	"PrecedenceRow" "r"
-ORDER BY
-	"r"."Id"
-
--- DB2 DB2.LUW DB2LUW
-SELECT
-	-("r".A + "r".B)
-FROM
-	"PrecedenceRow" "r"
-ORDER BY
-	"r"."Id"
-
--- DB2 DB2.LUW DB2LUW
-SELECT
-	-("r".A - "r".B)
-FROM
-	"PrecedenceRow" "r"
-ORDER BY
-	"r"."Id"
-
--- DB2 DB2.LUW DB2LUW
-SELECT
-	-("r".A - "r".B)
-FROM
-	"PrecedenceRow" "r"
-ORDER BY
-	"r"."Id"
-
--- DB2 DB2.LUW DB2LUW
-SELECT
-	-BitAnd("r".A, "r".B)
-FROM
-	"PrecedenceRow" "r"
-ORDER BY
-	"r"."Id"
-
--- DB2 DB2.LUW DB2LUW
-SELECT
-	-BitAnd("r".A, "r".B)
-FROM
-	"PrecedenceRow" "r"
-ORDER BY
-	"r"."Id"
-
--- DB2 DB2.LUW DB2LUW
-SELECT
-	-BitOr("r".A, "r".B)
-FROM
-	"PrecedenceRow" "r"
-ORDER BY
-	"r"."Id"
-
--- DB2 DB2.LUW DB2LUW
-SELECT
-	-BitOr("r".A, "r".B)
-FROM
-	"PrecedenceRow" "r"
-ORDER BY
-	"r"."Id"
-
--- DB2 DB2.LUW DB2LUW
-SELECT
-	-BitXor("r".A, "r".B)
-FROM
-	"PrecedenceRow" "r"
-ORDER BY
-	"r"."Id"
-
--- DB2 DB2.LUW DB2LUW
-SELECT
-	-BitXor("r".A, "r".B)
-FROM
-	"PrecedenceRow" "r"
-ORDER BY
-	"r"."Id"
-
--- DB2 DB2.LUW DB2LUW
-SELECT
-	"r".B
-FROM
-	"PrecedenceRow" "r"
-ORDER BY
-	"r"."Id"
-
--- DB2 DB2.LUW DB2LUW
-SELECT
-	-BITNOT("r".B)
-FROM
-	"PrecedenceRow" "r"
-ORDER BY
-	"r"."Id"
-
--- DB2 DB2.LUW DB2LUW
-SELECT
-	--5
-FROM
-	"PrecedenceRow" "r"
-ORDER BY
-	"r"."Id"
-
--- DB2 DB2.LUW DB2LUW
-SELECT
-	-(-5 * "r".B)
-FROM
-	"PrecedenceRow" "r"
-ORDER BY
-	"r"."Id"
-
--- DB2 DB2.LUW DB2LUW
-SELECT
-	--5
-FROM
-	"PrecedenceRow" "r"
-ORDER BY
-	"r"."Id"
-
--- DB2 DB2.LUW DB2LUW
-SELECT
-	--5
+	-(-5)
 FROM
 	"PrecedenceRow" "r"
 ORDER BY
@@ -165,6 +45,6 @@ ORDER BY
 -- cell Neg/Neg(AsNotNull(Xor(a,b))): green
 -- cell Neg/Neg(Neg(b)): green
 -- cell Neg/Neg(Not(b)): green
--- cell Neg/Neg(NegLit(b)): error
--- cell Neg/Neg(NegParam(b)): error
+-- cell Neg/Neg(NegLit(b)): green
+-- cell Neg/Neg(NegParam(b)): green
 -- cell Neg/Neg(Mul(NegLit,b)): green

@@ -4,7 +4,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Floor((Cos(p.MoneyValue::Float / 15) / Sin(p.MoneyValue::Float / 15)) * 15) as Value_1
+			Floor(Cos(p.MoneyValue::Float / 15) / Sin(p.MoneyValue::Float / 15) * 15) as Value_1
 		FROM
 			LinqDataTypes p
 	) t
