@@ -26,32 +26,47 @@ SELECT
 	[r].[A] + ([r].[B] BXOR [r].[C]),
 	([r].[A] BXOR [r].[B]) + [r].[C],
 	[r].[A] + ([r].[B] BXOR [r].[C]),
+	([r].[A] + [r].[B]) + [r].[C],
+	[r].[A] + ([r].[B] + [r].[C]),
+	([r].[A] + -6) + [r].[C],
+	([r].[A] - [r].[B]) + [r].[C],
+	[r].[A] + ([r].[B] - [r].[C]),
+	([r].[A] - -6) + [r].[C],
+	[r].[A] * [r].[B] + [r].[C],
+	[r].[A] + [r].[B] * [r].[C],
+	[r].[A] * -6 + [r].[C],
+	[r].[A] / [r].[B] + [r].[C],
+	[r].[A] + [r].[B] / [r].[C],
+	[r].[A] / -6 + [r].[C],
+	([r].[A] + [r].[B]) + [r].[C],
+	[r].[A] + ([r].[B] + [r].[C]),
+	([r].[A] + -6) + [r].[C],
 	[r].[A] - [r].[B],
 	-[r].[B] + [r].[C],
 	[r].[A] - [r].[B] + [r].[C],
 	[r].[A] * -[r].[B] + [r].[C],
 	[r].[A] / -[r].[B] + [r].[C],
 	[r].[A] MOD -[r].[B] + [r].[C],
-	([r].[A] BAND -[r].[B]) + [r].[C],
-	([r].[A] BOR -[r].[B]) + [r].[C],
-	([r].[A] BXOR -[r].[B]) + [r].[C],
-	[r].[A] + -1 - [r].[B],
+	([r].[A] BAND (-[r].[B])) + [r].[C],
+	([r].[A] BOR (-[r].[B])) + [r].[C],
+	([r].[A] BXOR (-[r].[B])) + [r].[C],
+	[r].[A] + (-1 - [r].[B]),
 	-1 - [r].[B] + [r].[C],
-	[r].[A] + -1 - [r].[B] + [r].[C],
+	[r].[A] + (-1 - [r].[B]) + [r].[C],
 	[r].[A] * (-1 - [r].[B]) + [r].[C],
 	[r].[A] MOD (-1 - [r].[B]) + [r].[C],
-	([r].[A] BAND -1 - [r].[B]) + [r].[C],
-	([r].[A] BOR -1 - [r].[B]) + [r].[C],
-	([r].[A] BXOR -1 - [r].[B]) + [r].[C],
+	([r].[A] BAND (-1 - [r].[B])) + [r].[C],
+	([r].[A] BOR (-1 - [r].[B])) + [r].[C],
+	([r].[A] BXOR (-1 - [r].[B])) + [r].[C],
 	[r].[A] + -5,
 	-5 + [r].[C],
 	[r].[A] + -5 + [r].[C],
 	[r].[A] - -5 + [r].[C],
 	[r].[A] * -5 + [r].[C],
 	[r].[A] MOD -5 + [r].[C],
-	([r].[A] BAND -5) + [r].[C],
-	([r].[A] BOR -5) + [r].[C],
-	([r].[A] BXOR -5) + [r].[C]
+	([r].[A] BAND (-5)) + [r].[C],
+	([r].[A] BOR (-5)) + [r].[C],
+	([r].[A] BXOR (-5)) + [r].[C]
 FROM
 	[PrecedenceRow] [r]
 ORDER BY
@@ -65,9 +80,9 @@ SELECT
 	[r].[A] - -5 + [r].[C],
 	[r].[A] * -5 + [r].[C],
 	[r].[A] MOD -5 + [r].[C],
-	([r].[A] BAND -5) + [r].[C],
-	([r].[A] BOR -5) + [r].[C],
-	([r].[A] BXOR -5) + [r].[C]
+	([r].[A] BAND (-5)) + [r].[C],
+	([r].[A] BOR (-5)) + [r].[C],
+	([r].[A] BXOR (-5)) + [r].[C]
 FROM
 	[PrecedenceRow] [r]
 ORDER BY
@@ -105,6 +120,21 @@ ORDER BY
 -- cell Add/Add(a,Xor(b,c)): green
 -- cell Add/Add(AsNotNull(Xor(a,b)),c): green
 -- cell Add/Add(a,AsNotNull(Xor(b,c))): green
+-- cell Add/Add(TAdd(a,b),c): green
+-- cell Add/Add(a,TAdd(b,c)): green
+-- cell Add/Add(TAdd(a,NegLit),c): green
+-- cell Add/Add(TSub(a,b),c): green
+-- cell Add/Add(a,TSub(b,c)): green
+-- cell Add/Add(TSub(a,NegLit),c): green
+-- cell Add/Add(TMul(a,b),c): green
+-- cell Add/Add(a,TMul(b,c)): green
+-- cell Add/Add(TMul(a,NegLit),c): green
+-- cell Add/Add(TDiv(a,b),c): green
+-- cell Add/Add(a,TDiv(b,c)): green
+-- cell Add/Add(TDiv(a,NegLit),c): green
+-- cell Add/Add(TAddOffset(a,b),c): green
+-- cell Add/Add(a,TAddOffset(b,c)): green
+-- cell Add/Add(TAddOffset(a,NegLit),c): green
 -- cell Add/Add(a,Neg(b)): green
 -- cell Add/Add(Neg(b),c): green
 -- cell Add/Add(Add(a,Neg(b)),c): green

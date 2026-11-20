@@ -8,8 +8,8 @@ SELECT
 	[r].[A] * ([r].[B] - [r].[C]),
 	([r].[A] - [r].[B]) * [r].[C],
 	[r].[A] * ([r].[B] - [r].[C]),
-	([r].[A] / [r].[B]) * [r].[C],
-	([r].[A] / [r].[B]) * [r].[C],
+	[r].[A] / [r].[B] * [r].[C],
+	[r].[A] / [r].[B] * [r].[C],
 	([r].[A] BAND [r].[B]) * [r].[C],
 	[r].[A] * ([r].[B] BAND [r].[C]),
 	([r].[A] BAND [r].[B]) * [r].[C],
@@ -22,31 +22,46 @@ SELECT
 	[r].[A] * ([r].[B] BXOR [r].[C]),
 	([r].[A] BXOR [r].[B]) * [r].[C],
 	[r].[A] * ([r].[B] BXOR [r].[C]),
+	([r].[A] + [r].[B]) * [r].[C],
+	[r].[A] * ([r].[B] + [r].[C]),
+	([r].[A] + -6) * [r].[C],
+	([r].[A] - [r].[B]) * [r].[C],
+	[r].[A] * ([r].[B] - [r].[C]),
+	([r].[A] - -6) * [r].[C],
+	([r].[A] * [r].[B]) * [r].[C],
+	[r].[A] * ([r].[B] * [r].[C]),
+	([r].[A] * -6) * [r].[C],
+	([r].[A] / [r].[B]) * [r].[C],
+	[r].[A] * ([r].[B] / [r].[C]),
+	([r].[A] / -6) * [r].[C],
+	([r].[A] + [r].[B]) * [r].[C],
+	[r].[A] * ([r].[B] + [r].[C]),
+	([r].[A] + -6) * [r].[C],
 	[r].[A] * -[r].[B],
 	([r].[A] - [r].[B]) * [r].[C],
 	([r].[A] + [r].[B]) * [r].[C],
-	([r].[A] / -[r].[B]) * [r].[C],
-	([r].[A] BAND -[r].[B]) * [r].[C],
-	([r].[A] BOR -[r].[B]) * [r].[C],
-	([r].[A] BXOR -[r].[B]) * [r].[C],
+	[r].[A] / -[r].[B] * [r].[C],
+	([r].[A] BAND (-[r].[B])) * [r].[C],
+	([r].[A] BOR (-[r].[B])) * [r].[C],
+	([r].[A] BXOR (-[r].[B])) * [r].[C],
 	[r].[A] * (-1 - [r].[B]),
 	(-1 - [r].[B]) * [r].[C],
-	([r].[A] + -1 - [r].[B]) * [r].[C],
+	([r].[A] + (-1 - [r].[B])) * [r].[C],
 	([r].[A] - (-1 - [r].[B])) * [r].[C],
-	([r].[A] * (-1 - [r].[B])) * [r].[C],
+	[r].[A] * (-1 - [r].[B]) * [r].[C],
 	([r].[A] MOD (-1 - [r].[B])) * [r].[C],
-	([r].[A] BAND -1 - [r].[B]) * [r].[C],
-	([r].[A] BOR -1 - [r].[B]) * [r].[C],
-	([r].[A] BXOR -1 - [r].[B]) * [r].[C],
+	([r].[A] BAND (-1 - [r].[B])) * [r].[C],
+	([r].[A] BOR (-1 - [r].[B])) * [r].[C],
+	([r].[A] BXOR (-1 - [r].[B])) * [r].[C],
 	[r].[A] * -5,
 	-5 * [r].[C],
 	([r].[A] + -5) * [r].[C],
 	([r].[A] - -5) * [r].[C],
-	([r].[A] * -5) * [r].[C],
+	[r].[A] * -5 * [r].[C],
 	([r].[A] MOD -5) * [r].[C],
-	([r].[A] BAND -5) * [r].[C],
-	([r].[A] BOR -5) * [r].[C],
-	([r].[A] BXOR -5) * [r].[C]
+	([r].[A] BAND (-5)) * [r].[C],
+	([r].[A] BOR (-5)) * [r].[C],
+	([r].[A] BXOR (-5)) * [r].[C]
 FROM
 	[PrecedenceRow] [r]
 ORDER BY
@@ -58,11 +73,11 @@ SELECT
 	-5 * [r].[C],
 	([r].[A] + -5) * [r].[C],
 	([r].[A] - -5) * [r].[C],
-	([r].[A] * -5) * [r].[C],
+	[r].[A] * -5 * [r].[C],
 	([r].[A] MOD -5) * [r].[C],
-	([r].[A] BAND -5) * [r].[C],
-	([r].[A] BOR -5) * [r].[C],
-	([r].[A] BXOR -5) * [r].[C]
+	([r].[A] BAND (-5)) * [r].[C],
+	([r].[A] BOR (-5)) * [r].[C],
+	([r].[A] BXOR (-5)) * [r].[C]
 FROM
 	[PrecedenceRow] [r]
 ORDER BY
@@ -100,6 +115,21 @@ ORDER BY
 -- cell Mul/Mul(a,Xor(b,c)): green
 -- cell Mul/Mul(AsNotNull(Xor(a,b)),c): green
 -- cell Mul/Mul(a,AsNotNull(Xor(b,c))): green
+-- cell Mul/Mul(TAdd(a,b),c): green
+-- cell Mul/Mul(a,TAdd(b,c)): green
+-- cell Mul/Mul(TAdd(a,NegLit),c): green
+-- cell Mul/Mul(TSub(a,b),c): green
+-- cell Mul/Mul(a,TSub(b,c)): green
+-- cell Mul/Mul(TSub(a,NegLit),c): green
+-- cell Mul/Mul(TMul(a,b),c): green
+-- cell Mul/Mul(a,TMul(b,c)): green
+-- cell Mul/Mul(TMul(a,NegLit),c): green
+-- cell Mul/Mul(TDiv(a,b),c): green
+-- cell Mul/Mul(a,TDiv(b,c)): green
+-- cell Mul/Mul(TDiv(a,NegLit),c): green
+-- cell Mul/Mul(TAddOffset(a,b),c): green
+-- cell Mul/Mul(a,TAddOffset(b,c)): green
+-- cell Mul/Mul(TAddOffset(a,NegLit),c): green
 -- cell Mul/Mul(a,Neg(b)): green
 -- cell Mul/Mul(Neg(b),c): skipped
 -- cell Mul/Mul(Add(a,Neg(b)),c): green
