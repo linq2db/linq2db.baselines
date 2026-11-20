@@ -15,7 +15,7 @@ SELECT
 FROM
 	[PlainAndConvertedUnicodeRow] [r]
 WHERE
-	([r].[Plain] + [r].[Conv]) = @read
+	[r].[Plain] + [r].[Conv] = @read
 
 -- SqlServer.2014
 DECLARE @read NVarChar(4000) -- String
@@ -26,7 +26,7 @@ SELECT
 FROM
 	[PlainAndConvertedUnicodeRow] [r]
 WHERE
-	([r].[Plain] + [r].[Conv]) <> @read
+	[r].[Plain] + [r].[Conv] <> @read
 
 -- SqlServer.2014
 SELECT
@@ -43,5 +43,5 @@ SELECT
 FROM
 	[PlainAndConvertedUnicodeRow] [r]
 WHERE
-	([r].[Plain] + [r].[Conv]) IN (N'A-x:n1')
+	[r].[Plain] + [r].[Conv] IN (N'A-x:n1')
 

@@ -37,7 +37,7 @@ SELECT TOP (2)
 	CAST(CAST([r].[InSeconds] * 10000000 + [r].[InTicks] AS BigInt) + [r].[InSeconds] * 10000000 AS BigInt),
 	CAST(CAST(-[r].[InSeconds] AS BigInt) * 10000000 + [r].[InTicks] AS BigInt),
 	CAST([r].[InSeconds] * 10000000 + [r].[InTicks] AS BigInt),
-	CAST([r].[InSeconds] * 10000000 + [r].[InTicks] AS BigInt) + [r].[InTicks] + [r].[InTicks],
+	CAST([r].[InSeconds] * 10000000 + [r].[InTicks] AS BigInt) + ([r].[InTicks] + [r].[InTicks]),
 	CAST(CAST([r].[InSeconds] + [r].[InSeconds] AS BigInt) * 10000000 + [r].[InTicks] AS BigInt) - ([r].[InTicks] + [r].[InTicks]),
 	CAST(CAST(-[r].[InSeconds] AS BigInt) * 10000000 - [r].[InTicks] AS BigInt)
 FROM

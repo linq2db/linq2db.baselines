@@ -5,7 +5,7 @@ SET     @asOf = DATETIME2FROMPARTS(2026, 1, 10, 8, 15, 30, 0, 7)
 UPDATE
 	[MeasuredPeriodRow]
 SET
-	[Elapsed] = CAST((CAST(DateDiff(day, [MeasuredPeriodRow].[ClosedOn], @asOf) AS BigInt) * 86400) * 10000000 + CAST(DateDiff(second, CAST(DateAdd(day, CAST(CAST(DateDiff(day, [MeasuredPeriodRow].[ClosedOn], @asOf) AS BigInt) AS Int), [MeasuredPeriodRow].[ClosedOn]) AS DateTime2), @asOf) AS BigInt) * 10000000 + CAST(DateDiff(nanosecond, DateAdd(second, CAST(CAST(DateDiff(second, CAST(DateAdd(day, CAST(CAST(DateDiff(day, [MeasuredPeriodRow].[ClosedOn], @asOf) AS BigInt) AS Int), [MeasuredPeriodRow].[ClosedOn]) AS DateTime2), @asOf) AS BigInt) AS Int), CAST(DateAdd(day, CAST(CAST(DateDiff(day, [MeasuredPeriodRow].[ClosedOn], @asOf) AS BigInt) AS Int), [MeasuredPeriodRow].[ClosedOn]) AS DateTime2)), @asOf) AS BigInt) / 100 AS Float) / 864000000000
+	[Elapsed] = CAST(CAST(DateDiff(day, [MeasuredPeriodRow].[ClosedOn], @asOf) AS BigInt) * 86400 * 10000000 + CAST(DateDiff(second, CAST(DateAdd(day, CAST(CAST(DateDiff(day, [MeasuredPeriodRow].[ClosedOn], @asOf) AS BigInt) AS Int), [MeasuredPeriodRow].[ClosedOn]) AS DateTime2), @asOf) AS BigInt) * 10000000 + CAST(DateDiff(nanosecond, DateAdd(second, CAST(CAST(DateDiff(second, CAST(DateAdd(day, CAST(CAST(DateDiff(day, [MeasuredPeriodRow].[ClosedOn], @asOf) AS BigInt) AS Int), [MeasuredPeriodRow].[ClosedOn]) AS DateTime2), @asOf) AS BigInt) AS Int), CAST(DateAdd(day, CAST(CAST(DateDiff(day, [MeasuredPeriodRow].[ClosedOn], @asOf) AS BigInt) AS Int), [MeasuredPeriodRow].[ClosedOn]) AS DateTime2)), @asOf) AS BigInt) / 100 AS Float) / 864000000000
 WHERE
 	[MeasuredPeriodRow].[Id] = 1
 
@@ -26,7 +26,7 @@ SELECT
 FROM
 	[MeasuredPeriodRow] [r]
 WHERE
-	[r].[Elapsed] < CAST((CAST(DateDiff(day, [r].[ClosedOn], @asOf) AS BigInt) * 86400) * 10000000 + CAST(DateDiff(second, CAST(DateAdd(day, CAST(CAST(DateDiff(day, [r].[ClosedOn], @asOf) AS BigInt) AS Int), [r].[ClosedOn]) AS DateTime2), @asOf) AS BigInt) * 10000000 + CAST(DateDiff(nanosecond, DateAdd(second, CAST(CAST(DateDiff(second, CAST(DateAdd(day, CAST(CAST(DateDiff(day, [r].[ClosedOn], @asOf) AS BigInt) AS Int), [r].[ClosedOn]) AS DateTime2), @asOf) AS BigInt) AS Int), CAST(DateAdd(day, CAST(CAST(DateDiff(day, [r].[ClosedOn], @asOf) AS BigInt) AS Int), [r].[ClosedOn]) AS DateTime2)), @asOf) AS BigInt) / 100 AS Float) / 36000000000
+	[r].[Elapsed] < CAST(CAST(DateDiff(day, [r].[ClosedOn], @asOf) AS BigInt) * 86400 * 10000000 + CAST(DateDiff(second, CAST(DateAdd(day, CAST(CAST(DateDiff(day, [r].[ClosedOn], @asOf) AS BigInt) AS Int), [r].[ClosedOn]) AS DateTime2), @asOf) AS BigInt) * 10000000 + CAST(DateDiff(nanosecond, DateAdd(second, CAST(CAST(DateDiff(second, CAST(DateAdd(day, CAST(CAST(DateDiff(day, [r].[ClosedOn], @asOf) AS BigInt) AS Int), [r].[ClosedOn]) AS DateTime2), @asOf) AS BigInt) AS Int), CAST(DateAdd(day, CAST(CAST(DateDiff(day, [r].[ClosedOn], @asOf) AS BigInt) AS Int), [r].[ClosedOn]) AS DateTime2)), @asOf) AS BigInt) / 100 AS Float) / 36000000000
 
 -- SqlServer.2014
 DECLARE @asOf DateTime2
@@ -35,7 +35,7 @@ SET     @asOf = DATETIME2FROMPARTS(2026, 1, 10, 8, 15, 30, 0, 7)
 UPDATE
 	[MeasuredPeriodRow]
 SET
-	[Elapsed] = CAST((CAST(DateDiff(day, @asOf, [MeasuredPeriodRow].[ClosedOn]) AS BigInt) * 86400) * 10000000 + CAST(DateDiff(second, CAST(DateAdd(day, CAST(CAST(DateDiff(day, @asOf, [MeasuredPeriodRow].[ClosedOn]) AS BigInt) AS Int), @asOf) AS DateTime2), [MeasuredPeriodRow].[ClosedOn]) AS BigInt) * 10000000 + CAST(DateDiff(nanosecond, DateAdd(second, CAST(CAST(DateDiff(second, CAST(DateAdd(day, CAST(CAST(DateDiff(day, @asOf, [MeasuredPeriodRow].[ClosedOn]) AS BigInt) AS Int), @asOf) AS DateTime2), [MeasuredPeriodRow].[ClosedOn]) AS BigInt) AS Int), CAST(DateAdd(day, CAST(CAST(DateDiff(day, @asOf, [MeasuredPeriodRow].[ClosedOn]) AS BigInt) AS Int), @asOf) AS DateTime2)), [MeasuredPeriodRow].[ClosedOn]) AS BigInt) / 100 AS Float) / 36000000000
+	[Elapsed] = CAST(CAST(DateDiff(day, @asOf, [MeasuredPeriodRow].[ClosedOn]) AS BigInt) * 86400 * 10000000 + CAST(DateDiff(second, CAST(DateAdd(day, CAST(CAST(DateDiff(day, @asOf, [MeasuredPeriodRow].[ClosedOn]) AS BigInt) AS Int), @asOf) AS DateTime2), [MeasuredPeriodRow].[ClosedOn]) AS BigInt) * 10000000 + CAST(DateDiff(nanosecond, DateAdd(second, CAST(CAST(DateDiff(second, CAST(DateAdd(day, CAST(CAST(DateDiff(day, @asOf, [MeasuredPeriodRow].[ClosedOn]) AS BigInt) AS Int), @asOf) AS DateTime2), [MeasuredPeriodRow].[ClosedOn]) AS BigInt) AS Int), CAST(DateAdd(day, CAST(CAST(DateDiff(day, @asOf, [MeasuredPeriodRow].[ClosedOn]) AS BigInt) AS Int), @asOf) AS DateTime2)), [MeasuredPeriodRow].[ClosedOn]) AS BigInt) / 100 AS Float) / 36000000000
 WHERE
 	[MeasuredPeriodRow].[Id] = 1
 
@@ -56,5 +56,5 @@ SELECT
 FROM
 	[MeasuredPeriodRow] [r]
 WHERE
-	[r].[Elapsed] < CAST((CAST(DateDiff(day, @asOf, [r].[ClosedOn]) AS BigInt) * 86400) * 10000000 + CAST(DateDiff(second, CAST(DateAdd(day, CAST(CAST(DateDiff(day, @asOf, [r].[ClosedOn]) AS BigInt) AS Int), @asOf) AS DateTime2), [r].[ClosedOn]) AS BigInt) * 10000000 + CAST(DateDiff(nanosecond, DateAdd(second, CAST(CAST(DateDiff(second, CAST(DateAdd(day, CAST(CAST(DateDiff(day, @asOf, [r].[ClosedOn]) AS BigInt) AS Int), @asOf) AS DateTime2), [r].[ClosedOn]) AS BigInt) AS Int), CAST(DateAdd(day, CAST(CAST(DateDiff(day, @asOf, [r].[ClosedOn]) AS BigInt) AS Int), @asOf) AS DateTime2)), [r].[ClosedOn]) AS BigInt) / 100 AS Float) / 864000000000
+	[r].[Elapsed] < CAST(CAST(DateDiff(day, @asOf, [r].[ClosedOn]) AS BigInt) * 86400 * 10000000 + CAST(DateDiff(second, CAST(DateAdd(day, CAST(CAST(DateDiff(day, @asOf, [r].[ClosedOn]) AS BigInt) AS Int), @asOf) AS DateTime2), [r].[ClosedOn]) AS BigInt) * 10000000 + CAST(DateDiff(nanosecond, DateAdd(second, CAST(CAST(DateDiff(second, CAST(DateAdd(day, CAST(CAST(DateDiff(day, @asOf, [r].[ClosedOn]) AS BigInt) AS Int), @asOf) AS DateTime2), [r].[ClosedOn]) AS BigInt) AS Int), CAST(DateAdd(day, CAST(CAST(DateDiff(day, @asOf, [r].[ClosedOn]) AS BigInt) AS Int), @asOf) AS DateTime2)), [r].[ClosedOn]) AS BigInt) / 100 AS Float) / 864000000000
 
