@@ -22,7 +22,7 @@ SELECT
 FROM
 	"PlainAndConvertedUnicodeRow" r
 WHERE
-	(r."Plain" || r."Conv") = :read
+	r."Plain" || r."Conv" = :read
 
 -- Oracle.11.Managed Oracle11
 DECLARE @read Varchar2(6) -- String
@@ -33,7 +33,7 @@ SELECT
 FROM
 	"PlainAndConvertedUnicodeRow" r
 WHERE
-	(r."Plain" || r."Conv") <> :read
+	r."Plain" || r."Conv" <> :read
 
 -- Oracle.11.Managed Oracle11
 SELECT
@@ -55,5 +55,5 @@ SELECT
 FROM
 	"PlainAndConvertedUnicodeRow" r
 WHERE
-	(r."Plain" || r."Conv") IN ('A-x:n1')
+	r."Plain" || r."Conv" IN ('A-x:n1')
 

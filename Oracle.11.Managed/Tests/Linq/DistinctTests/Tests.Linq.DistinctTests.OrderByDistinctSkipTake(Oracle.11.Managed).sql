@@ -27,7 +27,7 @@ FROM
 					t2.F1
 			) t3
 		WHERE
-			ROWNUM <= (:skip + :take)
+			ROWNUM <= :skip + :take
 	) t4
 WHERE
 	t4.RN > :skip

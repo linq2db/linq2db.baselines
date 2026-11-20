@@ -10,20 +10,35 @@ SELECT
 	r.A / (r.B - r.C),
 	r.A / (r.B * r.C),
 	r.A / (r.B * r.C),
+	r.A / r.B / r.C,
+	r.A / (r.B / r.C),
+	r.A / r.B / r.C,
+	r.A / (r.B / r.C),
+	r.A / (r.B + r.C - BITAND(r.B, r.C) * 2),
+	r.A / (r.B + r.C - BITAND(r.B, r.C) * 2),
+	(r.A + r.B) / r.C,
+	r.A / (r.B + r.C),
+	(r.A + -6) / r.C,
+	(r.A - r.B) / r.C,
+	r.A / (r.B - r.C),
+	(r.A - -6) / r.C,
+	(r.A * r.B) / r.C,
+	r.A / (r.B * r.C),
+	(r.A * -6) / r.C,
 	(r.A / r.B) / r.C,
 	r.A / (r.B / r.C),
-	(r.A / r.B) / r.C,
-	r.A / (r.B / r.C),
-	r.A / ((r.B + r.C) - BITAND(r.B, r.C) * 2),
-	r.A / ((r.B + r.C) - BITAND(r.B, r.C) * 2),
+	(r.A / -6) / r.C,
+	(r.A + r.B) / r.C,
+	r.A / (r.B + r.C),
+	(r.A + -6) / r.C,
 	r.A / -r.B,
 	(r.A - r.B) / r.C,
 	(r.A + r.B) / r.C,
-	(r.A / -r.B) / r.C,
+	r.A / -r.B / r.C,
 	BITAND(r.A, -r.B) / r.C,
-	((r.A - r.B) - BITAND(r.A, -r.B) * 2) / r.C,
-	(r.A * (-1 - r.B)) / r.C,
-	(r.A * -5) / r.C,
+	(r.A - r.B - BITAND(r.A, -r.B) * 2) / r.C,
+	r.A * (-1 - r.B) / r.C,
+	r.A * -5 / r.C,
 	BITAND(r.A, -5) / r.C
 FROM
 	"PrecedenceRow" r
@@ -32,7 +47,7 @@ ORDER BY
 
 -- Oracle.11.Managed Oracle11
 SELECT
-	(r.A * -5) / r.C,
+	r.A * -5 / r.C,
 	BITAND(r.A, -5) / r.C
 FROM
 	"PrecedenceRow" r
@@ -71,6 +86,21 @@ ORDER BY
 -- cell Div/Div(a,Xor(b,c)): green
 -- cell Div/Div(AsNotNull(Xor(a,b)),c): skipped
 -- cell Div/Div(a,AsNotNull(Xor(b,c))): green
+-- cell Div/Div(TAdd(a,b),c): green
+-- cell Div/Div(a,TAdd(b,c)): green
+-- cell Div/Div(TAdd(a,NegLit),c): green
+-- cell Div/Div(TSub(a,b),c): green
+-- cell Div/Div(a,TSub(b,c)): green
+-- cell Div/Div(TSub(a,NegLit),c): green
+-- cell Div/Div(TMul(a,b),c): green
+-- cell Div/Div(a,TMul(b,c)): green
+-- cell Div/Div(TMul(a,NegLit),c): green
+-- cell Div/Div(TDiv(a,b),c): green
+-- cell Div/Div(a,TDiv(b,c)): green
+-- cell Div/Div(TDiv(a,NegLit),c): green
+-- cell Div/Div(TAddOffset(a,b),c): green
+-- cell Div/Div(a,TAddOffset(b,c)): green
+-- cell Div/Div(TAddOffset(a,NegLit),c): green
 -- cell Div/Div(a,Neg(b)): green
 -- cell Div/Div(Neg(b),c): skipped
 -- cell Div/Div(Add(a,Neg(b)),c): green

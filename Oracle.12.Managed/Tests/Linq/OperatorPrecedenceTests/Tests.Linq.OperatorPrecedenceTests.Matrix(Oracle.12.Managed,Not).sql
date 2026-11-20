@@ -1,17 +1,17 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
 SELECT
-	-1 - r.A + r.B,
-	-1 - r.A + r.B,
-	-1 - r.A - r.B,
-	-1 - r.A - r.B,
+	-1 - (r.A + r.B),
+	-1 - (r.A + r.B),
+	-1 - (r.A - r.B),
+	-1 - (r.A - r.B),
 	-1 - r.A * r.B,
 	-1 - r.A * r.B,
 	-1 - r.A / r.B,
 	-1 - r.A / r.B,
 	-1 - BITAND(r.A, r.B),
 	-1 - BITAND(r.A, r.B),
-	-1 - (r.A + r.B) - BITAND(r.A, r.B),
-	-1 - (r.A + r.B) - BITAND(r.A, r.B),
+	-1 - (r.A + r.B - BITAND(r.A, r.B)),
+	-1 - (r.A + r.B - BITAND(r.A, r.B)),
 	-1 + r.B,
 	-1 - (-1 - r.B),
 	4,
@@ -29,10 +29,10 @@ FROM
 ORDER BY
 	r."Id"
 
--- cell Not/Not(Add(a,b)): red
--- cell Not/Not(AsNotNull(Add(a,b))): red
--- cell Not/Not(Sub(a,b)): red
--- cell Not/Not(AsNotNull(Sub(a,b))): red
+-- cell Not/Not(Add(a,b)): green
+-- cell Not/Not(AsNotNull(Add(a,b))): green
+-- cell Not/Not(Sub(a,b)): green
+-- cell Not/Not(AsNotNull(Sub(a,b))): green
 -- cell Not/Not(Mul(a,b)): green
 -- cell Not/Not(AsNotNull(Mul(a,b))): green
 -- cell Not/Not(Div(a,b)): green
@@ -41,8 +41,8 @@ ORDER BY
 -- cell Not/Not(AsNotNull(Mod(a,b))): skipped
 -- cell Not/Not(And(a,b)): green
 -- cell Not/Not(AsNotNull(And(a,b))): green
--- cell Not/Not(Or(a,b)): red
--- cell Not/Not(AsNotNull(Or(a,b))): red
+-- cell Not/Not(Or(a,b)): green
+-- cell Not/Not(AsNotNull(Or(a,b))): green
 -- cell Not/Not(Xor(a,b)): skipped
 -- cell Not/Not(AsNotNull(Xor(a,b))): skipped
 -- cell Not/Not(Neg(b)): green

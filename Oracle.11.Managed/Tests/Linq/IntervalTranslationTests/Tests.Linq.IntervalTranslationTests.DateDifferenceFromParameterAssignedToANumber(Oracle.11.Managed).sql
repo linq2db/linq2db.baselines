@@ -5,7 +5,7 @@ SET     @asOf = TIMESTAMP '2026-01-10 08:15:30.000000'
 UPDATE
 	"MeasuredPeriodRow" r
 SET
-	"Elapsed" = CAST(CAST(Floor(Extract(Day From (:asOf - r."ClosedOn"))) AS Number(19)) * 864000000000 + CAST(Floor(Extract(Hour From (:asOf - r."ClosedOn"))) AS Number(19)) * 36000000000 + CAST(Floor(Extract(Minute From (:asOf - r."ClosedOn"))) AS Number(19)) * 600000000 + CAST(Floor(Round(Extract(Second From (:asOf - r."ClosedOn")) * 10000000D)) AS Number(19)) AS Float) / 864000000000D
+	"Elapsed" = CAST(CAST(Floor(Extract(Day From (:asOf - r."ClosedOn"))) AS Number(19)) * 864000000000 + (CAST(Floor(Extract(Hour From (:asOf - r."ClosedOn"))) AS Number(19)) * 36000000000 + (CAST(Floor(Extract(Minute From (:asOf - r."ClosedOn"))) AS Number(19)) * 600000000 + CAST(Floor(Round(Extract(Second From (:asOf - r."ClosedOn")) * 10000000D)) AS Number(19)))) AS Float) / 864000000000D
 WHERE
 	r."Id" = 1
 
@@ -28,7 +28,7 @@ SELECT
 FROM
 	"MeasuredPeriodRow" r
 WHERE
-	r."Elapsed" < CAST(CAST(Floor(Extract(Day From (:asOf - r."ClosedOn"))) AS Number(19)) * 864000000000 + CAST(Floor(Extract(Hour From (:asOf - r."ClosedOn"))) AS Number(19)) * 36000000000 + CAST(Floor(Extract(Minute From (:asOf - r."ClosedOn"))) AS Number(19)) * 600000000 + CAST(Floor(Round(Extract(Second From (:asOf - r."ClosedOn")) * 10000000D)) AS Number(19)) AS Float) / 36000000000D
+	r."Elapsed" < CAST(CAST(Floor(Extract(Day From (:asOf - r."ClosedOn"))) AS Number(19)) * 864000000000 + (CAST(Floor(Extract(Hour From (:asOf - r."ClosedOn"))) AS Number(19)) * 36000000000 + (CAST(Floor(Extract(Minute From (:asOf - r."ClosedOn"))) AS Number(19)) * 600000000 + CAST(Floor(Round(Extract(Second From (:asOf - r."ClosedOn")) * 10000000D)) AS Number(19)))) AS Float) / 36000000000D
 
 -- Oracle.11.Managed Oracle11
 DECLARE @asOf TimeStamp -- DateTime
@@ -37,7 +37,7 @@ SET     @asOf = TIMESTAMP '2026-01-10 08:15:30.000000'
 UPDATE
 	"MeasuredPeriodRow" r
 SET
-	"Elapsed" = CAST(CAST(Floor(Extract(Day From (r."ClosedOn" - :asOf))) AS Number(19)) * 864000000000 + CAST(Floor(Extract(Hour From (r."ClosedOn" - :asOf))) AS Number(19)) * 36000000000 + CAST(Floor(Extract(Minute From (r."ClosedOn" - :asOf))) AS Number(19)) * 600000000 + CAST(Floor(Round(Extract(Second From (r."ClosedOn" - :asOf)) * 10000000D)) AS Number(19)) AS Float) / 36000000000D
+	"Elapsed" = CAST(CAST(Floor(Extract(Day From (r."ClosedOn" - :asOf))) AS Number(19)) * 864000000000 + (CAST(Floor(Extract(Hour From (r."ClosedOn" - :asOf))) AS Number(19)) * 36000000000 + (CAST(Floor(Extract(Minute From (r."ClosedOn" - :asOf))) AS Number(19)) * 600000000 + CAST(Floor(Round(Extract(Second From (r."ClosedOn" - :asOf)) * 10000000D)) AS Number(19)))) AS Float) / 36000000000D
 WHERE
 	r."Id" = 1
 
@@ -60,5 +60,5 @@ SELECT
 FROM
 	"MeasuredPeriodRow" r
 WHERE
-	r."Elapsed" < CAST(CAST(Floor(Extract(Day From (r."ClosedOn" - :asOf))) AS Number(19)) * 864000000000 + CAST(Floor(Extract(Hour From (r."ClosedOn" - :asOf))) AS Number(19)) * 36000000000 + CAST(Floor(Extract(Minute From (r."ClosedOn" - :asOf))) AS Number(19)) * 600000000 + CAST(Floor(Round(Extract(Second From (r."ClosedOn" - :asOf)) * 10000000D)) AS Number(19)) AS Float) / 864000000000D
+	r."Elapsed" < CAST(CAST(Floor(Extract(Day From (r."ClosedOn" - :asOf))) AS Number(19)) * 864000000000 + (CAST(Floor(Extract(Hour From (r."ClosedOn" - :asOf))) AS Number(19)) * 36000000000 + (CAST(Floor(Extract(Minute From (r."ClosedOn" - :asOf))) AS Number(19)) * 600000000 + CAST(Floor(Round(Extract(Second From (r."ClosedOn" - :asOf)) * 10000000D)) AS Number(19)))) AS Float) / 864000000000D
 

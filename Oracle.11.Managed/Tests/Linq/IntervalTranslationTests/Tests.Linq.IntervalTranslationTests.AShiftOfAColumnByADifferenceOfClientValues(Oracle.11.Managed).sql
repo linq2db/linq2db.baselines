@@ -24,7 +24,7 @@ DECLARE @Ticks Int64
 SET     @Ticks = 36002500000
 
 SELECT
-	CAST(r."StartedOn" AS timestamp(7)) + NumToDSInterval(Trunc(CAST(:Ticks AS Number(19)) / 864000000000), 'DAY') + NumToDSInterval(MOD(CAST(:Ticks AS Number(19)), 864000000000) / 10000000, 'SECOND')
+	CAST(r."StartedOn" AS timestamp(7)) + (NumToDSInterval(Trunc(CAST(:Ticks AS Number(19)) / 864000000000), 'DAY') + NumToDSInterval(MOD(CAST(:Ticks AS Number(19)), 864000000000) / 10000000, 'SECOND'))
 FROM
 	"EventRow" r
 WHERE
@@ -35,7 +35,7 @@ DECLARE @Ticks Int64
 SET     @Ticks = 36002500000
 
 SELECT
-	CAST(r."FinishedOn" AS timestamp(7)) + NumToDSInterval(Trunc((CAST(:Ticks AS Number(19)) * -1) / 864000000000), 'DAY') + NumToDSInterval(MOD(CAST(:Ticks AS Number(19)) * -1, 864000000000) / 10000000, 'SECOND')
+	CAST(r."FinishedOn" AS timestamp(7)) + (NumToDSInterval(Trunc(CAST(:Ticks AS Number(19)) * -1 / 864000000000), 'DAY') + NumToDSInterval(MOD(CAST(:Ticks AS Number(19)) * -1, 864000000000) / 10000000, 'SECOND'))
 FROM
 	"EventRow" r
 WHERE
@@ -50,7 +50,7 @@ SELECT
 FROM
 	"EventRow" r
 WHERE
-	CAST(r."StartedOn" AS timestamp(7)) + NumToDSInterval(Trunc(CAST(:Ticks AS Number(19)) / 864000000000), 'DAY') + NumToDSInterval(MOD(CAST(:Ticks AS Number(19)), 864000000000) / 10000000, 'SECOND') < r."FinishedOn"
+	CAST(r."StartedOn" AS timestamp(7)) + (NumToDSInterval(Trunc(CAST(:Ticks AS Number(19)) / 864000000000), 'DAY') + NumToDSInterval(MOD(CAST(:Ticks AS Number(19)), 864000000000) / 10000000, 'SECOND')) < r."FinishedOn"
 
 -- Oracle.11.Managed Oracle11
 DECLARE @Ticks Int64
@@ -61,5 +61,5 @@ SELECT
 FROM
 	"EventRow" r
 WHERE
-	CAST(r."FinishedOn" AS timestamp(7)) + NumToDSInterval(Trunc((CAST(:Ticks AS Number(19)) * -1) / 864000000000), 'DAY') + NumToDSInterval(MOD(CAST(:Ticks AS Number(19)) * -1, 864000000000) / 10000000, 'SECOND') > r."StartedOn" + 1D * INTERVAL '1' HOUR
+	CAST(r."FinishedOn" AS timestamp(7)) + (NumToDSInterval(Trunc(CAST(:Ticks AS Number(19)) * -1 / 864000000000), 'DAY') + NumToDSInterval(MOD(CAST(:Ticks AS Number(19)) * -1, 864000000000) / 10000000, 'SECOND')) > r."StartedOn" + 1D * INTERVAL '1' HOUR
 

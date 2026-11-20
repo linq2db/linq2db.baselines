@@ -4,7 +4,7 @@ SELECT
 FROM
 	"ConcatTestEntity" e
 WHERE
-	(CAST(e."Num" AS VarChar(255)) || '-' || e."StrReq") = '100-Programmer'
+	CAST(e."Num" AS VarChar(255)) || '-' || e."StrReq" = '100-Programmer'
 
 -- Oracle.11.Managed Oracle11
 SELECT

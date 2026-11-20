@@ -7,7 +7,7 @@ SET     @removeMask = 12
 UPDATE
 	"WarehouseTableDto" t1
 SET
-	"Value" = BITAND((t1."Value" + :addMask) - BITAND(t1."Value", :addMask), -1 - :removeMask)
+	"Value" = BITAND(t1."Value" + :addMask - BITAND(t1."Value", :addMask), -1 - :removeMask)
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
 SELECT
