@@ -7,7 +7,7 @@ SELECT
 FROM
 	[ConcatProduct] [p]
 WHERE
-	([p].[Sku] + [p].[Title]) = @key
+	[p].[Sku] + [p].[Title] = @key
 
 -- SqlServer.2008.MS SqlServer.2008
 SELECT

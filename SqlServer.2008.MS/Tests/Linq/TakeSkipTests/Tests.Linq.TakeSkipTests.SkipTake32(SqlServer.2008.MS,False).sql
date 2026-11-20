@@ -17,7 +17,7 @@ FROM
 			[Child] [t1]
 	) [t2]
 WHERE
-	[t2].[RN] > @skip AND [t2].[RN] <= (@skip + @take - @skip)
+	[t2].[RN] > @skip AND [t2].[RN] <= @skip + (@take - @skip)
 ORDER BY
 	[t2].[ChildID] DESC
 
@@ -40,7 +40,7 @@ FROM
 			[Child] [t1]
 	) [t2]
 WHERE
-	[t2].[RN] > @skip AND [t2].[RN] <= (@skip + @take - @skip)
+	[t2].[RN] > @skip AND [t2].[RN] <= @skip + (@take - @skip)
 ORDER BY
 	[t2].[ChildID] DESC
 
