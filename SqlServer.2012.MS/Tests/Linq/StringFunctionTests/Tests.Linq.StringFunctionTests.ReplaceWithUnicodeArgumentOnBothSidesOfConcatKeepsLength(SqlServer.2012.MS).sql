@@ -44,5 +44,5 @@ SELECT
 FROM
 	[SplitReplaceRow] [t]
 WHERE
-	(Coalesce(CAST(Replace([t].[Left], 'b', @replacement) AS NVarChar(Max)), N'') + Coalesce(Replace([t].[Right], 'c', @replacement), N'')) = @expected
+	Coalesce(CAST(Replace([t].[Left], 'b', @replacement) AS NVarChar(Max)), N'') + Coalesce(Replace([t].[Right], 'c', @replacement), N'') = @expected
 
