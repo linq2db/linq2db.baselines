@@ -3,7 +3,7 @@ SELECT TOP (1)
 	[x].[Id],
 	(
 		SELECT TOP (1)
-			(
+			IIF([a_UserGroup].[Id] IS NULL, NULL, (
 				SELECT TOP (1)
 					[a_FirstUsersWithLanguage_1].[Id]
 				FROM
@@ -11,7 +11,7 @@ SELECT TOP (1)
 				WHERE
 					[a_FirstUsersWithLanguage_1].[UserGroupId] = [a_UserGroup].[Id] AND
 					[a_FirstUsersWithLanguage_1].[LanguageId] = 2
-			)
+			))
 		FROM
 			[User] [a_FirstUsersWithLanguage]
 				LEFT JOIN [UserGroup] [a_UserGroup] ON [a_FirstUsersWithLanguage].[UserGroupId] = [a_UserGroup].[Id]
