@@ -8,7 +8,7 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	p."PersonID" # 1 | 2 = 3
+	(p."PersonID" # 1 | 2) = 3
 
 -- PostgreSQL.9.3 PostgreSQL
 SELECT
