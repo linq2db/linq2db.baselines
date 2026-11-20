@@ -36,7 +36,7 @@ FROM
 
 -- SqlServer.Contained SqlServer.2025
 SELECT TOP (2)
-	(DateDiff_Big(day, [r].[OpenedOn], [r].[ClosedOn]) * 86400) * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r].[OpenedOn], [r].[ClosedOn]) AS Int), [r].[OpenedOn]), [r].[ClosedOn]) / 100
+	DateDiff_Big(day, [r].[OpenedOn], [r].[ClosedOn]) * 86400 * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r].[OpenedOn], [r].[ClosedOn]) AS Int), [r].[OpenedOn]), [r].[ClosedOn]) / 100
 FROM
 	[CoarseEventRow] [r]
 

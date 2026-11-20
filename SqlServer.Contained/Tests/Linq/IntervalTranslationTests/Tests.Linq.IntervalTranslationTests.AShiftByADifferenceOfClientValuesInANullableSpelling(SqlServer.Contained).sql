@@ -66,7 +66,7 @@ DECLARE @Ticks BigInt -- Int64
 SET     @Ticks = 36002500000
 
 SELECT TOP (2)
-	DateAdd(nanosecond, CAST((CAST(@Ticks AS BigInt) % 10000000) * 100 AS Int), DateAdd(second, CAST((CAST(@Ticks AS BigInt) % 864000000000) / 10000000 AS Int), DateAdd(day, CAST(CAST(@Ticks AS BigInt) / 864000000000 AS Int), CAST([r].[DueOn] AS DateTime2))))
+	DateAdd(nanosecond, CAST(CAST(@Ticks AS BigInt) % 10000000 * 100 AS Int), DateAdd(second, CAST(CAST(@Ticks AS BigInt) % 864000000000 / 10000000 AS Int), DateAdd(day, CAST(CAST(@Ticks AS BigInt) / 864000000000 AS Int), CAST([r].[DueOn] AS DateTime2))))
 FROM
 	[OptionalDueRow] [r]
 WHERE
@@ -77,7 +77,7 @@ DECLARE @Ticks BigInt -- Int64
 SET     @Ticks = 36002500000
 
 SELECT TOP (2)
-	DateAdd(nanosecond, CAST((CAST(@Ticks AS BigInt) % 10000000) * 100 AS Int), DateAdd(second, CAST((CAST(@Ticks AS BigInt) % 864000000000) / 10000000 AS Int), DateAdd(day, CAST(CAST(@Ticks AS BigInt) / 864000000000 AS Int), CAST([r].[StartedOn] AS DateTime2))))
+	DateAdd(nanosecond, CAST(CAST(@Ticks AS BigInt) % 10000000 * 100 AS Int), DateAdd(second, CAST(CAST(@Ticks AS BigInt) % 864000000000 / 10000000 AS Int), DateAdd(day, CAST(CAST(@Ticks AS BigInt) / 864000000000 AS Int), CAST([r].[StartedOn] AS DateTime2))))
 FROM
 	[OptionalDueRow] [r]
 WHERE
@@ -88,7 +88,7 @@ DECLARE @Ticks BigInt -- Int64
 SET     @Ticks = 36002500000
 
 SELECT TOP (2)
-	DateAdd(nanosecond, CAST(((CAST(@Ticks AS BigInt) * -1) % 10000000) * 100 AS Int), DateAdd(second, CAST(((CAST(@Ticks AS BigInt) * -1) % 864000000000) / 10000000 AS Int), DateAdd(day, CAST((CAST(@Ticks AS BigInt) * -1) / 864000000000 AS Int), CAST([r].[DueOn] AS DateTime2))))
+	DateAdd(nanosecond, CAST(CAST(@Ticks AS BigInt) * (-1) % 10000000 * 100 AS Int), DateAdd(second, CAST(CAST(@Ticks AS BigInt) * (-1) % 864000000000 / 10000000 AS Int), DateAdd(day, CAST(CAST(@Ticks AS BigInt) * (-1) / 864000000000 AS Int), CAST([r].[DueOn] AS DateTime2))))
 FROM
 	[OptionalDueRow] [r]
 WHERE
@@ -96,7 +96,7 @@ WHERE
 
 -- SqlServer.Contained SqlServer.2025
 SELECT TOP (2)
-	DateAdd(nanosecond, CAST((CAST(NULL AS BigInt) % 10000000) * 100 AS Int), DateAdd(second, CAST((CAST(NULL AS BigInt) % 864000000000) / 10000000 AS Int), DateAdd(day, CAST(CAST(NULL AS BigInt) / 864000000000 AS Int), CAST([r].[StartedOn] AS DateTime2))))
+	DateAdd(nanosecond, CAST(CAST(NULL AS BigInt) % 10000000 * 100 AS Int), DateAdd(second, CAST(CAST(NULL AS BigInt) % 864000000000 / 10000000 AS Int), DateAdd(day, CAST(CAST(NULL AS BigInt) / 864000000000 AS Int), CAST([r].[StartedOn] AS DateTime2))))
 FROM
 	[OptionalDueRow] [r]
 WHERE
@@ -107,7 +107,7 @@ DECLARE @Ticks BigInt -- Int64
 SET     @Ticks = 36002500000
 
 SELECT
-	DateAdd(nanosecond, CAST((CAST(@Ticks AS BigInt) % 10000000) * 100 AS Int), DateAdd(second, CAST((CAST(@Ticks AS BigInt) % 864000000000) / 10000000 AS Int), DateAdd(day, CAST(CAST(@Ticks AS BigInt) / 864000000000 AS Int), CAST([r].[DueOn] AS DateTime2))))
+	DateAdd(nanosecond, CAST(CAST(@Ticks AS BigInt) % 10000000 * 100 AS Int), DateAdd(second, CAST(CAST(@Ticks AS BigInt) % 864000000000 / 10000000 AS Int), DateAdd(day, CAST(CAST(@Ticks AS BigInt) / 864000000000 AS Int), CAST([r].[DueOn] AS DateTime2))))
 FROM
 	[OptionalDueRow] [r]
 ORDER BY
@@ -122,7 +122,7 @@ SELECT
 FROM
 	[OptionalDueRow] [r]
 WHERE
-	DateAdd(nanosecond, CAST((CAST(@Ticks AS BigInt) % 10000000) * 100 AS Int), DateAdd(second, CAST((CAST(@Ticks AS BigInt) % 864000000000) / 10000000 AS Int), DateAdd(day, CAST(CAST(@Ticks AS BigInt) / 864000000000 AS Int), CAST([r].[DueOn] AS DateTime2)))) > DateAdd(hour, 1, [r].[StartedOn])
+	DateAdd(nanosecond, CAST(CAST(@Ticks AS BigInt) % 10000000 * 100 AS Int), DateAdd(second, CAST(CAST(@Ticks AS BigInt) % 864000000000 / 10000000 AS Int), DateAdd(day, CAST(CAST(@Ticks AS BigInt) / 864000000000 AS Int), CAST([r].[DueOn] AS DateTime2)))) > DateAdd(hour, 1, [r].[StartedOn])
 ORDER BY
 	[r].[Id]
 
@@ -135,14 +135,14 @@ SELECT
 FROM
 	[OptionalDueRow] [r]
 WHERE
-	[r].[Id] = 1 AND DateAdd(nanosecond, CAST((CAST(@Ticks AS BigInt) % 10000000) * 100 AS Int), DateAdd(second, CAST((CAST(@Ticks AS BigInt) % 864000000000) / 10000000 AS Int), DateAdd(day, CAST(CAST(@Ticks AS BigInt) / 864000000000 AS Int), CAST([r].[StartedOn] AS DateTime2)))) < DateAdd(hour, 1, [r].[StartedOn])
+	[r].[Id] = 1 AND DateAdd(nanosecond, CAST(CAST(@Ticks AS BigInt) % 10000000 * 100 AS Int), DateAdd(second, CAST(CAST(@Ticks AS BigInt) % 864000000000 / 10000000 AS Int), DateAdd(day, CAST(CAST(@Ticks AS BigInt) / 864000000000 AS Int), CAST([r].[StartedOn] AS DateTime2)))) < DateAdd(hour, 1, [r].[StartedOn])
 
 -- SqlServer.Contained SqlServer.2025
 DECLARE @Ticks BigInt -- Int64
 SET     @Ticks = 36002500000
 
 SELECT TOP (2)
-	DateAdd(nanosecond, CAST((CAST(@Ticks AS BigInt) % 10000000) * 100 AS Int), DateAdd(second, CAST((CAST(@Ticks AS BigInt) % 864000000000) / 10000000 AS Int), DateAdd(day, CAST(CAST(@Ticks AS BigInt) / 864000000000 AS Int), CAST([r].[StartedOn] AS DateTime2))))
+	DateAdd(nanosecond, CAST(CAST(@Ticks AS BigInt) % 10000000 * 100 AS Int), DateAdd(second, CAST(CAST(@Ticks AS BigInt) % 864000000000 / 10000000 AS Int), DateAdd(day, CAST(CAST(@Ticks AS BigInt) / 864000000000 AS Int), CAST([r].[StartedOn] AS DateTime2))))
 FROM
 	[OptionalDueRow] [r]
 WHERE
@@ -150,7 +150,7 @@ WHERE
 
 -- SqlServer.Contained SqlServer.2025
 SELECT TOP (2)
-	DateAdd(nanosecond, CAST((CAST(NULL AS BigInt) % 10000000) * 100 AS Int), DateAdd(second, CAST((CAST(NULL AS BigInt) % 864000000000) / 10000000 AS Int), DateAdd(day, CAST(CAST(NULL AS BigInt) / 864000000000 AS Int), CAST([r].[StartedOn] AS DateTime2))))
+	DateAdd(nanosecond, CAST(CAST(NULL AS BigInt) % 10000000 * 100 AS Int), DateAdd(second, CAST(CAST(NULL AS BigInt) % 864000000000 / 10000000 AS Int), DateAdd(day, CAST(CAST(NULL AS BigInt) / 864000000000 AS Int), CAST([r].[StartedOn] AS DateTime2))))
 FROM
 	[OptionalDueRow] [r]
 WHERE
@@ -161,7 +161,7 @@ DECLARE @Ticks BigInt -- Int64
 SET     @Ticks = 72002500000
 
 SELECT TOP (2)
-	DateAdd(nanosecond, CAST((CAST(@Ticks AS BigInt) % 10000000) * 100 AS Int), DateAdd(second, CAST((CAST(@Ticks AS BigInt) % 864000000000) / 10000000 AS Int), DateAdd(day, CAST(CAST(@Ticks AS BigInt) / 864000000000 AS Int), CAST([r].[StartedOn] AS DateTime2))))
+	DateAdd(nanosecond, CAST(CAST(@Ticks AS BigInt) % 10000000 * 100 AS Int), DateAdd(second, CAST(CAST(@Ticks AS BigInt) % 864000000000 / 10000000 AS Int), DateAdd(day, CAST(CAST(@Ticks AS BigInt) / 864000000000 AS Int), CAST([r].[StartedOn] AS DateTime2))))
 FROM
 	[OptionalDueRow] [r]
 WHERE
@@ -169,7 +169,7 @@ WHERE
 
 -- SqlServer.Contained SqlServer.2025
 SELECT
-	DateAdd(nanosecond, CAST((((DateDiff_Big(day, [r].[StartedOn], [r].[DueOn]) * 86400) * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r].[StartedOn], [r].[DueOn]) AS Int), [r].[StartedOn]), [r].[DueOn]) / 100) % 10000000) * 100 AS Int), DateAdd(second, CAST((((DateDiff_Big(day, [r].[StartedOn], [r].[DueOn]) * 86400) * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r].[StartedOn], [r].[DueOn]) AS Int), [r].[StartedOn]), [r].[DueOn]) / 100) % 864000000000) / 10000000 AS Int), DateAdd(day, CAST(((DateDiff_Big(day, [r].[StartedOn], [r].[DueOn]) * 86400) * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r].[StartedOn], [r].[DueOn]) AS Int), [r].[StartedOn]), [r].[DueOn]) / 100) / 864000000000 AS Int), CAST([r].[DueOn] AS DateTime2))))
+	DateAdd(nanosecond, CAST((DateDiff_Big(day, [r].[StartedOn], [r].[DueOn]) * 86400 * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r].[StartedOn], [r].[DueOn]) AS Int), [r].[StartedOn]), [r].[DueOn]) / 100) % 10000000 * 100 AS Int), DateAdd(second, CAST((DateDiff_Big(day, [r].[StartedOn], [r].[DueOn]) * 86400 * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r].[StartedOn], [r].[DueOn]) AS Int), [r].[StartedOn]), [r].[DueOn]) / 100) % 864000000000 / 10000000 AS Int), DateAdd(day, CAST((DateDiff_Big(day, [r].[StartedOn], [r].[DueOn]) * 86400 * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r].[StartedOn], [r].[DueOn]) AS Int), [r].[StartedOn]), [r].[DueOn]) / 100) / 864000000000 AS Int), CAST([r].[DueOn] AS DateTime2))))
 FROM
 	[OptionalDueRow] [r]
 ORDER BY
