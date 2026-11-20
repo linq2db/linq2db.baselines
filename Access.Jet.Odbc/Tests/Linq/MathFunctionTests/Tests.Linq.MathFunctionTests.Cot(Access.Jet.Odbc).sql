@@ -4,7 +4,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Int((Cos([p].[MoneyValue] / 15) / Sin([p].[MoneyValue] / 15)) * 15) as [Value_1]
+			Int(Cos([p].[MoneyValue] / 15) / Sin([p].[MoneyValue] / 15) * 15) as [Value_1]
 		FROM
 			[LinqDataTypes] [p]
 	) [t]
