@@ -37,7 +37,7 @@ LIMIT 2
 
 -- PostgreSQL.11 PostgreSQL
 SELECT
-	Floor(Extract(day From (r."ClosedOn"::TimeStamp - r."OpenedOn"::TimeStamp)))::BigInt * 864000000000 + Floor(Extract(hour From (r."ClosedOn"::TimeStamp - r."OpenedOn"::TimeStamp)))::BigInt * 36000000000 + Floor(Extract(minute From (r."ClosedOn"::TimeStamp - r."OpenedOn"::TimeStamp)))::BigInt * 600000000 + Floor(Round(Extract(second From (r."ClosedOn"::TimeStamp - r."OpenedOn"::TimeStamp)) * 10000000))::BigInt
+	Floor(Extract(day From (r."ClosedOn"::TimeStamp - r."OpenedOn"::TimeStamp)))::BigInt * 864000000000 + (Floor(Extract(hour From (r."ClosedOn"::TimeStamp - r."OpenedOn"::TimeStamp)))::BigInt * 36000000000 + (Floor(Extract(minute From (r."ClosedOn"::TimeStamp - r."OpenedOn"::TimeStamp)))::BigInt * 600000000 + Floor(Round(Extract(second From (r."ClosedOn"::TimeStamp - r."OpenedOn"::TimeStamp)) * 10000000))::BigInt))
 FROM
 	"CoarseEventRow" r
 LIMIT 2

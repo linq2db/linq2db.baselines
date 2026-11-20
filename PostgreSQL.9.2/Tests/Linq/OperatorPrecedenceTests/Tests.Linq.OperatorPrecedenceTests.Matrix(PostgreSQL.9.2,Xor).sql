@@ -19,13 +19,25 @@ SELECT
 	Floor(r."A"::decimal % r."B")::Int # r."C",
 	r."A" # Floor(r."B"::decimal % r."C")::Int,
 	r."A" & r."B" # r."C",
-	r."A" # r."B" & r."C",
+	r."A" # (r."B" & r."C"),
 	r."A" & r."B" # r."C",
-	r."A" # r."B" & r."C",
+	r."A" # (r."B" & r."C"),
 	r."A" | r."B" # r."C",
-	r."A" # r."B" | r."C",
+	r."A" # (r."B" | r."C"),
 	r."A" | r."B" # r."C",
-	r."A" # r."B" | r."C",
+	r."A" # (r."B" | r."C"),
+	r."A" + r."B" # r."C",
+	r."A" # r."B" + r."C",
+	r."A" + -6 # r."C",
+	r."A" - r."B" # r."C",
+	r."A" # r."B" - r."C",
+	r."A" - -6 # r."C",
+	r."A" * r."B" # r."C",
+	r."A" # r."B" * r."C",
+	r."A" * -6 # r."C",
+	r."A" + r."B" # r."C",
+	r."A" # r."B" + r."C",
+	r."A" + -6 # r."C",
 	r."A" # -r."B",
 	-r."B" # r."C",
 	r."A" - r."B" # r."C",
@@ -35,14 +47,14 @@ SELECT
 	Floor(r."A"::decimal % -r."B")::Int # r."C",
 	r."A" & -r."B" # r."C",
 	r."A" | -r."B" # r."C",
-	(r."A" # -r."B") # r."C",
-	r."A" # ~r."B",
+	r."A" # -r."B" # r."C",
+	r."A" # (~r."B"),
 	r."A" + (~r."B") # r."C",
 	r."A" - (~r."B") # r."C",
 	r."A" * (~r."B") # r."C",
 	Floor(r."A"::decimal % (~r."B"))::Int # r."C",
-	r."A" & ~r."B" # r."C",
-	r."A" | ~r."B" # r."C",
+	r."A" & (~r."B") # r."C",
+	r."A" | (~r."B") # r."C",
 	r."A" # -5,
 	-5 # r."C",
 	r."A" + -5 # r."C",
@@ -51,7 +63,7 @@ SELECT
 	Floor(r."A"::decimal % -5)::Int # r."C",
 	r."A" & -5 # r."C",
 	r."A" | -5 # r."C",
-	(r."A" # -5) # r."C"
+	r."A" # -5 # r."C"
 FROM
 	"PrecedenceRow" r
 ORDER BY
@@ -67,7 +79,7 @@ SELECT
 	Floor(r."A"::decimal % -5)::Int # r."C",
 	r."A" & -5 # r."C",
 	r."A" | -5 # r."C",
-	(r."A" # -5) # r."C"
+	r."A" # -5 # r."C"
 FROM
 	"PrecedenceRow" r
 ORDER BY
@@ -94,17 +106,29 @@ ORDER BY
 -- cell Xor/Xor(AsNotNull(Mod(a,b)),c): green
 -- cell Xor/Xor(a,AsNotNull(Mod(b,c))): green
 -- cell Xor/Xor(And(a,b),c): green
--- cell Xor/Xor(a,And(b,c)): red
+-- cell Xor/Xor(a,And(b,c)): green
 -- cell Xor/Xor(AsNotNull(And(a,b)),c): green
--- cell Xor/Xor(a,AsNotNull(And(b,c))): red
+-- cell Xor/Xor(a,AsNotNull(And(b,c))): green
 -- cell Xor/Xor(Or(a,b),c): green
--- cell Xor/Xor(a,Or(b,c)): red
+-- cell Xor/Xor(a,Or(b,c)): green
 -- cell Xor/Xor(AsNotNull(Or(a,b)),c): green
--- cell Xor/Xor(a,AsNotNull(Or(b,c))): red
+-- cell Xor/Xor(a,AsNotNull(Or(b,c))): green
 -- cell Xor/Xor(Xor(a,b),c): skipped
 -- cell Xor/Xor(a,Xor(b,c)): skipped
 -- cell Xor/Xor(AsNotNull(Xor(a,b)),c): skipped
 -- cell Xor/Xor(a,AsNotNull(Xor(b,c))): skipped
+-- cell Xor/Xor(TAdd(a,b),c): green
+-- cell Xor/Xor(a,TAdd(b,c)): green
+-- cell Xor/Xor(TAdd(a,NegLit),c): green
+-- cell Xor/Xor(TSub(a,b),c): green
+-- cell Xor/Xor(a,TSub(b,c)): green
+-- cell Xor/Xor(TSub(a,NegLit),c): green
+-- cell Xor/Xor(TMul(a,b),c): green
+-- cell Xor/Xor(a,TMul(b,c)): green
+-- cell Xor/Xor(TMul(a,NegLit),c): green
+-- cell Xor/Xor(TAddOffset(a,b),c): green
+-- cell Xor/Xor(a,TAddOffset(b,c)): green
+-- cell Xor/Xor(TAddOffset(a,NegLit),c): green
 -- cell Xor/Xor(a,Neg(b)): green
 -- cell Xor/Xor(Neg(b),c): green
 -- cell Xor/Xor(Add(a,Neg(b)),c): green

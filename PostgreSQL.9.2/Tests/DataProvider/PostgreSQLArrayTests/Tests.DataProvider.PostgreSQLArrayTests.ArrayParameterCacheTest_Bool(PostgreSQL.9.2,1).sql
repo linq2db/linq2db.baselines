@@ -17,5 +17,5 @@ SELECT
 FROM
 	"AllTypesValueTable" t
 WHERE
-	t."BoolValue" = ANY(:arr)
+	(t."BoolValue" = ANY(:arr))
 
