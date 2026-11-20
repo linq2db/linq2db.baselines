@@ -180,163 +180,157 @@ SELECT
 		ELSE 0
 	END as c8,
 	CASE
-		WHEN r.A - r.B = r.C THEN 1
+		WHEN r.A + r.B IS DISTINCT FROM r.N THEN 1
 		ELSE 0
 	END as c9,
 	CASE
-		WHEN r.C < r.A - r.B THEN 1
+		WHEN r.N IS DISTINCT FROM r.A + r.B THEN 1
 		ELSE 0
 	END as c10,
 	CASE
-		WHEN r.A - r.B BETWEEN r.C AND r.A THEN 1
+		WHEN r.A - r.B = r.C THEN 1
 		ELSE 0
 	END as c11,
 	CASE
-		WHEN r.A BETWEEN r.B - r.C AND r.A THEN 1
+		WHEN r.C < r.A - r.B THEN 1
 		ELSE 0
 	END as c12,
+	CASE
+		WHEN r.A - r.B BETWEEN r.C AND r.A THEN 1
+		ELSE 0
+	END as c13,
+	CASE
+		WHEN r.A BETWEEN r.B - r.C AND r.A THEN 1
+		ELSE 0
+	END as c14,
 	CASE
 		WHEN r.A - r.B IN ($Ids0_1_1, $Ids0_2_1, $Ids0_3_1, $Ids0_4_1, $Ids0_5_1, $Ids0_6_1, $Ids0_7_1, $Ids0_8_1, $Ids0_9_1)
 			THEN 1
 		ELSE 0
-	END as c13,
+	END as c15,
 	CASE
 		WHEN r.N IS NULL THEN 1
 		ELSE 0
-	END as c14,
+	END as c16,
 	CASE
 		WHEN (Coalesce(r.S, ''u) || Unwrap(CAST(r.A - r.B AS Text))) LIKE 'x5%'u ESCAPE '~'s
 			THEN 1
 		ELSE 0
-	END as c15,
+	END as c17,
 	CASE
 		WHEN r.A - r.B <= r.C AND r.B < r.A THEN 1
 		ELSE 0
-	END as c16,
-	CASE
-		WHEN r.A * r.B = r.C THEN 1
-		ELSE 0
-	END as c17,
-	CASE
-		WHEN r.C < r.A * r.B THEN 1
-		ELSE 0
 	END as c18,
 	CASE
-		WHEN r.A * r.B BETWEEN r.C AND r.A THEN 1
+		WHEN r.A - r.B IS DISTINCT FROM r.N THEN 1
 		ELSE 0
 	END as c19,
 	CASE
-		WHEN r.A BETWEEN r.B * r.C AND r.A THEN 1
+		WHEN r.N IS DISTINCT FROM r.A - r.B THEN 1
 		ELSE 0
 	END as c20,
+	CASE
+		WHEN r.A * r.B = r.C THEN 1
+		ELSE 0
+	END as c21,
+	CASE
+		WHEN r.C < r.A * r.B THEN 1
+		ELSE 0
+	END as c22,
+	CASE
+		WHEN r.A * r.B BETWEEN r.C AND r.A THEN 1
+		ELSE 0
+	END as c23,
+	CASE
+		WHEN r.A BETWEEN r.B * r.C AND r.A THEN 1
+		ELSE 0
+	END as c24,
 	CASE
 		WHEN r.A * r.B IN ($Ids0_1_2, $Ids0_2_2, $Ids0_3_2, $Ids0_4_2, $Ids0_5_2, $Ids0_6_2, $Ids0_7_2, $Ids0_8_2, $Ids0_9_2)
 			THEN 1
 		ELSE 0
-	END as c21,
+	END as c25,
 	CASE
 		WHEN r.N IS NULL THEN 1
 		ELSE 0
-	END as c22,
+	END as c26,
 	CASE
 		WHEN (Coalesce(r.S, ''u) || Unwrap(CAST(r.A * r.B AS Text))) LIKE 'x5%'u ESCAPE '~'s
 			THEN 1
 		ELSE 0
-	END as c23,
+	END as c27,
 	CASE
 		WHEN r.A * r.B <= r.C AND r.B < r.A THEN 1
 		ELSE 0
-	END as c24,
+	END as c28,
+	CASE
+		WHEN r.A * r.B IS DISTINCT FROM r.N THEN 1
+		ELSE 0
+	END as c29,
+	CASE
+		WHEN r.N IS DISTINCT FROM r.A * r.B THEN 1
+		ELSE 0
+	END as c30,
 	CASE
 		WHEN r.A / r.B = r.C THEN 1
 		ELSE 0
-	END as c25,
+	END as c31,
 	CASE
 		WHEN r.C < r.A / r.B THEN 1
 		ELSE 0
-	END as c26,
+	END as c32,
 	CASE
 		WHEN r.A / r.B BETWEEN r.C AND r.A THEN 1
 		ELSE 0
-	END as c27,
+	END as c33,
 	CASE
 		WHEN r.A BETWEEN r.B / r.C AND r.A THEN 1
 		ELSE 0
-	END as c28,
+	END as c34,
 	CASE
 		WHEN r.A / r.B IN ($Ids0_1_3, $Ids0_2_3, $Ids0_3_3, $Ids0_4_3, $Ids0_5_3, $Ids0_6_3, $Ids0_7_3, $Ids0_8_3, $Ids0_9_3)
 			THEN 1
 		ELSE 0
-	END as c29,
+	END as c35,
 	CASE
 		WHEN r.N IS NULL THEN 1
 		ELSE 0
-	END as c30,
+	END as c36,
 	CASE
 		WHEN (Coalesce(r.S, ''u) || Unwrap(CAST(r.A / r.B AS Text))) LIKE 'x5%'u ESCAPE '~'s
 			THEN 1
 		ELSE 0
-	END as c31,
+	END as c37,
 	CASE
 		WHEN r.A / r.B <= r.C AND r.B < r.A THEN 1
 		ELSE 0
-	END as c32,
-	CASE
-		WHEN r.A % r.B = r.C THEN 1
-		ELSE 0
-	END as c33,
-	CASE
-		WHEN r.C < r.A % r.B THEN 1
-		ELSE 0
-	END as c34,
-	CASE
-		WHEN r.A % r.B BETWEEN r.C AND r.A THEN 1
-		ELSE 0
-	END as c35,
-	CASE
-		WHEN r.A BETWEEN r.B % r.C AND r.A THEN 1
-		ELSE 0
-	END as c36,
-	CASE
-		WHEN r.A % r.B IN ($Ids0_1_4, $Ids0_2_4, $Ids0_3_4, $Ids0_4_4, $Ids0_5_4, $Ids0_6_4, $Ids0_7_4, $Ids0_8_4, $Ids0_9_4)
-			THEN 1
-		ELSE 0
-	END as c37,
-	CASE
-		WHEN r.N IS NULL THEN 1
-		ELSE 0
 	END as c38,
 	CASE
-		WHEN (Coalesce(r.S, ''u) || Unwrap(CAST(r.A % r.B AS Text))) LIKE 'x5%'u ESCAPE '~'s
-			THEN 1
+		WHEN r.A / r.B IS DISTINCT FROM r.N THEN 1
 		ELSE 0
 	END as c39,
 	CASE
-		WHEN r.A % r.B <= r.C AND r.B < r.A THEN 1
+		WHEN r.N IS DISTINCT FROM r.A / r.B THEN 1
 		ELSE 0
 	END as c40,
 	CASE
-		WHEN (Unwrap(CAST(r.A AS Uint32)) & Unwrap(CAST(r.B AS Uint32))) = r.C
-			THEN 1
+		WHEN r.A % r.B = r.C THEN 1
 		ELSE 0
 	END as c41,
 	CASE
-		WHEN r.C < (Unwrap(CAST(r.A AS Uint32)) & Unwrap(CAST(r.B AS Uint32)))
-			THEN 1
+		WHEN r.C < r.A % r.B THEN 1
 		ELSE 0
 	END as c42,
 	CASE
-		WHEN (Unwrap(CAST(r.A AS Uint32)) & Unwrap(CAST(r.B AS Uint32))) BETWEEN r.C AND r.A
-			THEN 1
+		WHEN r.A % r.B BETWEEN r.C AND r.A THEN 1
 		ELSE 0
 	END as c43,
 	CASE
-		WHEN r.A BETWEEN (Unwrap(CAST(r.B AS Uint32)) & Unwrap(CAST(r.C AS Uint32))) AND r.A
-			THEN 1
+		WHEN r.A BETWEEN r.B % r.C AND r.A THEN 1
 		ELSE 0
 	END as c44,
 	CASE
-		WHEN (Unwrap(CAST(r.A AS Uint32)) & Unwrap(CAST(r.B AS Uint32))) IN ($Ids0_1_5, $Ids0_2_5, $Ids0_3_5, $Ids0_4_5, $Ids0_5_5, $Ids0_6_5, $Ids0_7_5, $Ids0_8_5, $Ids0_9_5)
+		WHEN r.A % r.B IN ($Ids0_1_4, $Ids0_2_4, $Ids0_3_4, $Ids0_4_4, $Ids0_5_4, $Ids0_6_4, $Ids0_7_4, $Ids0_8_4, $Ids0_9_4)
 			THEN 1
 		ELSE 0
 	END as c45,
@@ -345,119 +339,195 @@ SELECT
 		ELSE 0
 	END as c46,
 	CASE
-		WHEN (Coalesce(r.S, ''u) || Unwrap(CAST(Unwrap(CAST(r.A AS Uint32)) & Unwrap(CAST(r.B AS Uint32)) AS Text))) LIKE 'x5%'u ESCAPE '~'s
+		WHEN (Coalesce(r.S, ''u) || Unwrap(CAST(r.A % r.B AS Text))) LIKE 'x5%'u ESCAPE '~'s
 			THEN 1
 		ELSE 0
 	END as c47,
 	CASE
-		WHEN (Unwrap(CAST(r.A AS Uint32)) & Unwrap(CAST(r.B AS Uint32))) <= r.C AND r.B < r.A
-			THEN 1
+		WHEN r.A % r.B <= r.C AND r.B < r.A THEN 1
 		ELSE 0
 	END as c48,
 	CASE
-		WHEN (Unwrap(CAST(r.A AS Uint32)) | Unwrap(CAST(r.B AS Uint32))) = r.C
-			THEN 1
+		WHEN r.A % r.B IS DISTINCT FROM r.N THEN 1
 		ELSE 0
 	END as c49,
 	CASE
-		WHEN r.C < (Unwrap(CAST(r.A AS Uint32)) | Unwrap(CAST(r.B AS Uint32)))
-			THEN 1
+		WHEN r.N IS DISTINCT FROM r.A % r.B THEN 1
 		ELSE 0
 	END as c50,
 	CASE
-		WHEN (Unwrap(CAST(r.A AS Uint32)) | Unwrap(CAST(r.B AS Uint32))) BETWEEN r.C AND r.A
+		WHEN (Unwrap(CAST(r.A AS Uint32)) & Unwrap(CAST(r.B AS Uint32))) = r.C
 			THEN 1
 		ELSE 0
 	END as c51,
 	CASE
-		WHEN r.A BETWEEN (Unwrap(CAST(r.B AS Uint32)) | Unwrap(CAST(r.C AS Uint32))) AND r.A
+		WHEN r.C < (Unwrap(CAST(r.A AS Uint32)) & Unwrap(CAST(r.B AS Uint32)))
 			THEN 1
 		ELSE 0
 	END as c52,
 	CASE
-		WHEN (Unwrap(CAST(r.A AS Uint32)) | Unwrap(CAST(r.B AS Uint32))) IN ($Ids0_1_6, $Ids0_2_6, $Ids0_3_6, $Ids0_4_6, $Ids0_5_6, $Ids0_6_6, $Ids0_7_6, $Ids0_8_6, $Ids0_9_6)
+		WHEN (Unwrap(CAST(r.A AS Uint32)) & Unwrap(CAST(r.B AS Uint32))) BETWEEN r.C AND r.A
 			THEN 1
 		ELSE 0
 	END as c53,
 	CASE
-		WHEN (Unwrap(CAST(r.A AS Uint32)) | CAST(r.N AS Uint32)) IS NULL
+		WHEN r.A BETWEEN (Unwrap(CAST(r.B AS Uint32)) & Unwrap(CAST(r.C AS Uint32))) AND r.A
 			THEN 1
 		ELSE 0
 	END as c54,
 	CASE
-		WHEN (Coalesce(r.S, ''u) || Unwrap(CAST(Unwrap(CAST(r.A AS Uint32)) | Unwrap(CAST(r.B AS Uint32)) AS Text))) LIKE 'x5%'u ESCAPE '~'s
+		WHEN (Unwrap(CAST(r.A AS Uint32)) & Unwrap(CAST(r.B AS Uint32))) IN ($Ids0_1_5, $Ids0_2_5, $Ids0_3_5, $Ids0_4_5, $Ids0_5_5, $Ids0_6_5, $Ids0_7_5, $Ids0_8_5, $Ids0_9_5)
 			THEN 1
 		ELSE 0
 	END as c55,
 	CASE
-		WHEN (Unwrap(CAST(r.A AS Uint32)) | Unwrap(CAST(r.B AS Uint32))) <= r.C AND r.B < r.A
-			THEN 1
+		WHEN r.N IS NULL THEN 1
 		ELSE 0
 	END as c56,
 	CASE
-		WHEN (Unwrap(CAST(r.A AS Uint32)) ^ Unwrap(CAST(r.B AS Uint32))) = r.C
+		WHEN (Coalesce(r.S, ''u) || Unwrap(CAST(Unwrap(CAST(r.A AS Uint32)) & Unwrap(CAST(r.B AS Uint32)) AS Text))) LIKE 'x5%'u ESCAPE '~'s
 			THEN 1
 		ELSE 0
 	END as c57,
 	CASE
-		WHEN r.C < (Unwrap(CAST(r.A AS Uint32)) ^ Unwrap(CAST(r.B AS Uint32)))
+		WHEN (Unwrap(CAST(r.A AS Uint32)) & Unwrap(CAST(r.B AS Uint32))) <= r.C AND r.B < r.A
 			THEN 1
 		ELSE 0
 	END as c58,
 	CASE
-		WHEN (Unwrap(CAST(r.A AS Uint32)) ^ Unwrap(CAST(r.B AS Uint32))) BETWEEN r.C AND r.A
+		WHEN (Unwrap(CAST(r.A AS Uint32)) & Unwrap(CAST(r.B AS Uint32))) IS DISTINCT FROM r.N
 			THEN 1
 		ELSE 0
 	END as c59,
 	CASE
-		WHEN r.A BETWEEN (Unwrap(CAST(r.B AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32))) AND r.A
+		WHEN r.N IS DISTINCT FROM (Unwrap(CAST(r.A AS Uint32)) & Unwrap(CAST(r.B AS Uint32)))
 			THEN 1
 		ELSE 0
 	END as c60,
 	CASE
-		WHEN (Unwrap(CAST(r.A AS Uint32)) ^ Unwrap(CAST(r.B AS Uint32))) IN ($Ids0_1_7, $Ids0_2_7, $Ids0_3_7, $Ids0_4_7, $Ids0_5_7, $Ids0_6_7, $Ids0_7_7, $Ids0_8_7, $Ids0_9_7)
+		WHEN (Unwrap(CAST(r.A AS Uint32)) | Unwrap(CAST(r.B AS Uint32))) = r.C
 			THEN 1
 		ELSE 0
 	END as c61,
 	CASE
-		WHEN (Unwrap(CAST(r.A AS Uint32)) ^ CAST(r.N AS Uint32)) IS NULL
+		WHEN r.C < (Unwrap(CAST(r.A AS Uint32)) | Unwrap(CAST(r.B AS Uint32)))
 			THEN 1
 		ELSE 0
 	END as c62,
 	CASE
-		WHEN (Coalesce(r.S, ''u) || Unwrap(CAST(Unwrap(CAST(r.A AS Uint32)) ^ Unwrap(CAST(r.B AS Uint32)) AS Text))) LIKE 'x5%'u ESCAPE '~'s
+		WHEN (Unwrap(CAST(r.A AS Uint32)) | Unwrap(CAST(r.B AS Uint32))) BETWEEN r.C AND r.A
 			THEN 1
 		ELSE 0
 	END as c63,
 	CASE
-		WHEN (Unwrap(CAST(r.A AS Uint32)) ^ Unwrap(CAST(r.B AS Uint32))) <= r.C AND r.B < r.A
+		WHEN r.A BETWEEN (Unwrap(CAST(r.B AS Uint32)) | Unwrap(CAST(r.C AS Uint32))) AND r.A
 			THEN 1
 		ELSE 0
 	END as c64,
 	CASE
-		WHEN -r.A = r.C THEN 1
+		WHEN (Unwrap(CAST(r.A AS Uint32)) | Unwrap(CAST(r.B AS Uint32))) IN ($Ids0_1_6, $Ids0_2_6, $Ids0_3_6, $Ids0_4_6, $Ids0_5_6, $Ids0_6_6, $Ids0_7_6, $Ids0_8_6, $Ids0_9_6)
+			THEN 1
 		ELSE 0
 	END as c65,
 	CASE
-		WHEN r.C = -r.A THEN 1
+		WHEN (Unwrap(CAST(r.A AS Uint32)) | CAST(r.N AS Uint32)) IS NULL
+			THEN 1
 		ELSE 0
 	END as c66,
 	CASE
-		WHEN (~Unwrap(CAST(r.A AS Uint32))) = r.C THEN 1
+		WHEN (Coalesce(r.S, ''u) || Unwrap(CAST(Unwrap(CAST(r.A AS Uint32)) | Unwrap(CAST(r.B AS Uint32)) AS Text))) LIKE 'x5%'u ESCAPE '~'s
+			THEN 1
 		ELSE 0
 	END as c67,
 	CASE
-		WHEN r.C = (~Unwrap(CAST(r.A AS Uint32))) THEN 1
+		WHEN (Unwrap(CAST(r.A AS Uint32)) | Unwrap(CAST(r.B AS Uint32))) <= r.C AND r.B < r.A
+			THEN 1
 		ELSE 0
 	END as c68,
 	CASE
-		WHEN -5 = r.C THEN 1
+		WHEN (Unwrap(CAST(r.A AS Uint32)) | Unwrap(CAST(r.B AS Uint32))) IS DISTINCT FROM r.N
+			THEN 1
 		ELSE 0
 	END as c69,
 	CASE
+		WHEN r.N IS DISTINCT FROM (Unwrap(CAST(r.A AS Uint32)) | Unwrap(CAST(r.B AS Uint32)))
+			THEN 1
+		ELSE 0
+	END as c70,
+	CASE
+		WHEN (Unwrap(CAST(r.A AS Uint32)) ^ Unwrap(CAST(r.B AS Uint32))) = r.C
+			THEN 1
+		ELSE 0
+	END as c71,
+	CASE
+		WHEN r.C < (Unwrap(CAST(r.A AS Uint32)) ^ Unwrap(CAST(r.B AS Uint32)))
+			THEN 1
+		ELSE 0
+	END as c72,
+	CASE
+		WHEN (Unwrap(CAST(r.A AS Uint32)) ^ Unwrap(CAST(r.B AS Uint32))) BETWEEN r.C AND r.A
+			THEN 1
+		ELSE 0
+	END as c73,
+	CASE
+		WHEN r.A BETWEEN (Unwrap(CAST(r.B AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32))) AND r.A
+			THEN 1
+		ELSE 0
+	END as c74,
+	CASE
+		WHEN (Unwrap(CAST(r.A AS Uint32)) ^ Unwrap(CAST(r.B AS Uint32))) IN ($Ids0_1_7, $Ids0_2_7, $Ids0_3_7, $Ids0_4_7, $Ids0_5_7, $Ids0_6_7, $Ids0_7_7, $Ids0_8_7, $Ids0_9_7)
+			THEN 1
+		ELSE 0
+	END as c75,
+	CASE
+		WHEN (Unwrap(CAST(r.A AS Uint32)) ^ CAST(r.N AS Uint32)) IS NULL
+			THEN 1
+		ELSE 0
+	END as c76,
+	CASE
+		WHEN (Coalesce(r.S, ''u) || Unwrap(CAST(Unwrap(CAST(r.A AS Uint32)) ^ Unwrap(CAST(r.B AS Uint32)) AS Text))) LIKE 'x5%'u ESCAPE '~'s
+			THEN 1
+		ELSE 0
+	END as c77,
+	CASE
+		WHEN (Unwrap(CAST(r.A AS Uint32)) ^ Unwrap(CAST(r.B AS Uint32))) <= r.C AND r.B < r.A
+			THEN 1
+		ELSE 0
+	END as c78,
+	CASE
+		WHEN (Unwrap(CAST(r.A AS Uint32)) ^ Unwrap(CAST(r.B AS Uint32))) IS DISTINCT FROM r.N
+			THEN 1
+		ELSE 0
+	END as c79,
+	CASE
+		WHEN r.N IS DISTINCT FROM (Unwrap(CAST(r.A AS Uint32)) ^ Unwrap(CAST(r.B AS Uint32)))
+			THEN 1
+		ELSE 0
+	END as c80,
+	CASE
+		WHEN -r.A = r.C THEN 1
+		ELSE 0
+	END as c81,
+	CASE
+		WHEN r.C = -r.A THEN 1
+		ELSE 0
+	END as c82,
+	CASE
+		WHEN (~Unwrap(CAST(r.A AS Uint32))) = r.C THEN 1
+		ELSE 0
+	END as c83,
+	CASE
+		WHEN r.C = (~Unwrap(CAST(r.A AS Uint32))) THEN 1
+		ELSE 0
+	END as c84,
+	CASE
+		WHEN -5 = r.C THEN 1
+		ELSE 0
+	END as c85,
+	CASE
 		WHEN r.C = -5 THEN 1
 		ELSE 0
-	END as c70
+	END as c86
 FROM
 	PrecedenceRow r
 ORDER BY
@@ -486,6 +556,8 @@ ORDER BY
 -- cell Predicate/IsNull(Add(a,n)): green
 -- cell Predicate/Like(Concat(s,Add(a,b))): green
 -- cell Predicate/NotAnd(Add(a,b)): green
+-- cell Predicate/Distinct(Add(a,b),n): green
+-- cell Predicate/Distinct(n,Add(a,b)): green
 -- cell Predicate/Eq(Sub(a,b),c): green
 -- cell Predicate/Lt(c,Sub(a,b)): green
 -- cell Predicate/Between(Sub(a,b),c,a): green
@@ -494,6 +566,8 @@ ORDER BY
 -- cell Predicate/IsNull(Sub(a,n)): green
 -- cell Predicate/Like(Concat(s,Sub(a,b))): green
 -- cell Predicate/NotAnd(Sub(a,b)): green
+-- cell Predicate/Distinct(Sub(a,b),n): green
+-- cell Predicate/Distinct(n,Sub(a,b)): green
 -- cell Predicate/Eq(Mul(a,b),c): green
 -- cell Predicate/Lt(c,Mul(a,b)): green
 -- cell Predicate/Between(Mul(a,b),c,a): green
@@ -502,6 +576,8 @@ ORDER BY
 -- cell Predicate/IsNull(Mul(a,n)): green
 -- cell Predicate/Like(Concat(s,Mul(a,b))): green
 -- cell Predicate/NotAnd(Mul(a,b)): green
+-- cell Predicate/Distinct(Mul(a,b),n): green
+-- cell Predicate/Distinct(n,Mul(a,b)): green
 -- cell Predicate/Eq(Div(a,b),c): green
 -- cell Predicate/Lt(c,Div(a,b)): green
 -- cell Predicate/Between(Div(a,b),c,a): green
@@ -510,6 +586,8 @@ ORDER BY
 -- cell Predicate/IsNull(Div(a,n)): green
 -- cell Predicate/Like(Concat(s,Div(a,b))): green
 -- cell Predicate/NotAnd(Div(a,b)): green
+-- cell Predicate/Distinct(Div(a,b),n): green
+-- cell Predicate/Distinct(n,Div(a,b)): green
 -- cell Predicate/Eq(Mod(a,b),c): green
 -- cell Predicate/Lt(c,Mod(a,b)): green
 -- cell Predicate/Between(Mod(a,b),c,a): green
@@ -518,6 +596,8 @@ ORDER BY
 -- cell Predicate/IsNull(Mod(a,n)): green
 -- cell Predicate/Like(Concat(s,Mod(a,b))): green
 -- cell Predicate/NotAnd(Mod(a,b)): green
+-- cell Predicate/Distinct(Mod(a,b),n): green
+-- cell Predicate/Distinct(n,Mod(a,b)): green
 -- cell Predicate/Eq(And(a,b),c): green
 -- cell Predicate/Lt(c,And(a,b)): green
 -- cell Predicate/Between(And(a,b),c,a): green
@@ -526,6 +606,8 @@ ORDER BY
 -- cell Predicate/IsNull(And(a,n)): green
 -- cell Predicate/Like(Concat(s,And(a,b))): green
 -- cell Predicate/NotAnd(And(a,b)): green
+-- cell Predicate/Distinct(And(a,b),n): green
+-- cell Predicate/Distinct(n,And(a,b)): green
 -- cell Predicate/Eq(Or(a,b),c): green
 -- cell Predicate/Lt(c,Or(a,b)): green
 -- cell Predicate/Between(Or(a,b),c,a): green
@@ -534,6 +616,8 @@ ORDER BY
 -- cell Predicate/IsNull(Or(a,n)): green
 -- cell Predicate/Like(Concat(s,Or(a,b))): green
 -- cell Predicate/NotAnd(Or(a,b)): green
+-- cell Predicate/Distinct(Or(a,b),n): green
+-- cell Predicate/Distinct(n,Or(a,b)): green
 -- cell Predicate/Eq(Xor(a,b),c): green
 -- cell Predicate/Lt(c,Xor(a,b)): green
 -- cell Predicate/Between(Xor(a,b),c,a): green
@@ -542,6 +626,8 @@ ORDER BY
 -- cell Predicate/IsNull(Xor(a,n)): green
 -- cell Predicate/Like(Concat(s,Xor(a,b))): green
 -- cell Predicate/NotAnd(Xor(a,b)): green
+-- cell Predicate/Distinct(Xor(a,b),n): green
+-- cell Predicate/Distinct(n,Xor(a,b)): green
 -- cell Predicate/Eq(Neg(a),c): green
 -- cell Predicate/Eq(c,Neg(a)): green
 -- cell Predicate/Eq(Not(a),c): green
