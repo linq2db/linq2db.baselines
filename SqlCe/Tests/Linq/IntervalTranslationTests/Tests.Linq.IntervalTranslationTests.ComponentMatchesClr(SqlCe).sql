@@ -30,8 +30,8 @@ VALUES
 -- SqlCe
 SELECT TOP (2)
 	CAST([r].[InSeconds] / CAST(86400 AS BigInt) AS Int),
-	CAST(([r].[InSeconds] / CAST(3600 AS BigInt)) % CAST(24 AS BigInt) AS Int),
-	CAST(([r].[InSeconds] / CAST(60 AS BigInt)) % CAST(60 AS BigInt) AS Int),
+	CAST([r].[InSeconds] / CAST(3600 AS BigInt) % CAST(24 AS BigInt) AS Int),
+	CAST([r].[InSeconds] / CAST(60 AS BigInt) % CAST(60 AS BigInt) AS Int),
 	CAST([r].[InSeconds] % CAST(60 AS BigInt) AS Int)
 FROM
 	[DurationRow] [r]

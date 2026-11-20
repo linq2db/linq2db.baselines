@@ -8,6 +8,6 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	([p].[FirstName] + Space([p].[PersonID] + 1) + '123') = 'John  123' AND
+	[p].[FirstName] + Space([p].[PersonID] + 1) + '123' = 'John  123' AND
 	[p].[PersonID] = 1
 

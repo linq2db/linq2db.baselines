@@ -57,19 +57,19 @@ FROM
 	[BudgetedTaskRow] [t7]
 		LEFT JOIN (
 			SELECT
-				MIN((CAST(DateDiff(day, [t1].[StartedOn], [t1].[FinishedOn]) AS BigInt) * 86400) * 10000000 + CAST(DateDiff(millisecond, DateAdd(day, CAST(DateDiff(day, [t1].[StartedOn], [t1].[FinishedOn]) AS BigInt), [t1].[StartedOn]), [t1].[FinishedOn]) AS BigInt) * 10000) as [Min_1]
+				MIN(CAST(DateDiff(day, [t1].[StartedOn], [t1].[FinishedOn]) AS BigInt) * 86400 * 10000000 + CAST(DateDiff(millisecond, DateAdd(day, CAST(DateDiff(day, [t1].[StartedOn], [t1].[FinishedOn]) AS BigInt), [t1].[StartedOn]), [t1].[FinishedOn]) AS BigInt) * 10000) as [Min_1]
 			FROM
 				[BudgetedTaskRow] [t1]
 		) [t2] ON 1=1
 		LEFT JOIN (
 			SELECT
-				MAX((CAST(DateDiff(day, [t3].[StartedOn], [t3].[FinishedOn]) AS BigInt) * 86400) * 10000000 + CAST(DateDiff(millisecond, DateAdd(day, CAST(DateDiff(day, [t3].[StartedOn], [t3].[FinishedOn]) AS BigInt), [t3].[StartedOn]), [t3].[FinishedOn]) AS BigInt) * 10000) as [Max_1]
+				MAX(CAST(DateDiff(day, [t3].[StartedOn], [t3].[FinishedOn]) AS BigInt) * 86400 * 10000000 + CAST(DateDiff(millisecond, DateAdd(day, CAST(DateDiff(day, [t3].[StartedOn], [t3].[FinishedOn]) AS BigInt), [t3].[StartedOn]), [t3].[FinishedOn]) AS BigInt) * 10000) as [Max_1]
 			FROM
 				[BudgetedTaskRow] [t3]
 		) [t4] ON 1=1
 		LEFT JOIN (
 			SELECT
-				SUM(CAST((CAST(DateDiff(day, [t5].[StartedOn], [t5].[FinishedOn]) AS BigInt) * 86400) * 10000000 + CAST(DateDiff(millisecond, DateAdd(day, CAST(DateDiff(day, [t5].[StartedOn], [t5].[FinishedOn]) AS BigInt), [t5].[StartedOn]), [t5].[FinishedOn]) AS BigInt) * 10000 AS Float) / 600000000) as [TotalMin]
+				SUM(CAST(CAST(DateDiff(day, [t5].[StartedOn], [t5].[FinishedOn]) AS BigInt) * 86400 * 10000000 + CAST(DateDiff(millisecond, DateAdd(day, CAST(DateDiff(day, [t5].[StartedOn], [t5].[FinishedOn]) AS BigInt), [t5].[StartedOn]), [t5].[FinishedOn]) AS BigInt) * 10000 AS Float) / 600000000) as [TotalMin]
 			FROM
 				[BudgetedTaskRow] [t5]
 		) [t6] ON 1=1
