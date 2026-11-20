@@ -22,10 +22,25 @@ SELECT
 	Mod(r.A, BitXor(r.B, r.C)),
 	Mod(BitXor(r.A, r.B), r.C),
 	Mod(r.A, BitXor(r.B, r.C)),
+	Mod(r.A + r.B, r.C),
+	Mod(r.A, r.B + r.C),
+	Mod(r.A + -6, r.C),
+	Mod(r.A - r.B, r.C),
+	Mod(r.A, r.B - r.C),
+	Mod(r.A - -6, r.C),
+	Mod(r.A * r.B, r.C),
+	Mod(r.A, r.B * r.C),
+	Mod(r.A * -6, r.C),
+	Mod(r.A / r.B, r.C),
+	Mod(r.A, r.B / r.C),
+	Mod(r.A / -6, r.C),
+	Mod(r.A + r.B, r.C),
+	Mod(r.A, r.B + r.C),
+	Mod(r.A + -6, r.C),
 	Mod(r.A, -r.B),
 	Mod(r.A - r.B, r.C),
 	Mod(r.A + r.B, r.C),
-	Mod(r.A / -r.B, r.C),
+	Mod(r.A / (-r.B), r.C),
 	Mod(Mod(r.A, -r.B), r.C),
 	Mod(BitOr(r.A, -r.B), r.C),
 	Mod(BitXor(r.A, -r.B), r.C),
@@ -39,9 +54,9 @@ SELECT
 	Mod(BitXor(r.A, BITNOT(r.B)), r.C),
 	Mod(r.A, -5),
 	Mod(-5, r.C),
-	Mod(r.A + -5, r.C),
-	Mod(r.A - -5, r.C),
-	Mod(r.A * -5, r.C),
+	Mod(r.A + (-5), r.C),
+	Mod(r.A - (-5), r.C),
+	Mod(r.A * (-5), r.C),
 	Mod(Mod(r.A, -5), r.C),
 	Mod(BitAnd(r.A, -5), r.C),
 	Mod(BitOr(r.A, -5), r.C),
@@ -55,9 +70,9 @@ ORDER BY
 SELECT
 	Mod(r.A, -5),
 	Mod(-5, r.C),
-	Mod(r.A + -5, r.C),
-	Mod(r.A - -5, r.C),
-	Mod(r.A * -5, r.C),
+	Mod(r.A + (-5), r.C),
+	Mod(r.A - (-5), r.C),
+	Mod(r.A * (-5), r.C),
 	Mod(Mod(r.A, -5), r.C),
 	Mod(BitAnd(r.A, -5), r.C),
 	Mod(BitOr(r.A, -5), r.C),
@@ -99,6 +114,21 @@ ORDER BY
 -- cell Mod/Mod(a,Xor(b,c)): green
 -- cell Mod/Mod(AsNotNull(Xor(a,b)),c): green
 -- cell Mod/Mod(a,AsNotNull(Xor(b,c))): green
+-- cell Mod/Mod(TAdd(a,b),c): green
+-- cell Mod/Mod(a,TAdd(b,c)): green
+-- cell Mod/Mod(TAdd(a,NegLit),c): green
+-- cell Mod/Mod(TSub(a,b),c): green
+-- cell Mod/Mod(a,TSub(b,c)): green
+-- cell Mod/Mod(TSub(a,NegLit),c): green
+-- cell Mod/Mod(TMul(a,b),c): green
+-- cell Mod/Mod(a,TMul(b,c)): green
+-- cell Mod/Mod(TMul(a,NegLit),c): green
+-- cell Mod/Mod(TDiv(a,b),c): green
+-- cell Mod/Mod(a,TDiv(b,c)): green
+-- cell Mod/Mod(TDiv(a,NegLit),c): green
+-- cell Mod/Mod(TAddOffset(a,b),c): green
+-- cell Mod/Mod(a,TAddOffset(b,c)): green
+-- cell Mod/Mod(TAddOffset(a,NegLit),c): green
 -- cell Mod/Mod(a,Neg(b)): green
 -- cell Mod/Mod(Neg(b),c): skipped
 -- cell Mod/Mod(Add(a,Neg(b)),c): green

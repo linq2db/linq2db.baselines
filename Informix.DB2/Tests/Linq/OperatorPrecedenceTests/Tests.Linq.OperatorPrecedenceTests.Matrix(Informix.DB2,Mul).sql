@@ -8,8 +8,8 @@ SELECT
 	r.A * (r.B - r.C),
 	(r.A - r.B) * r.C,
 	r.A * (r.B - r.C),
-	(r.A / r.B) * r.C,
-	(r.A / r.B) * r.C,
+	r.A / r.B * r.C,
+	r.A / r.B * r.C,
 	BitAnd(r.A, r.B) * r.C,
 	r.A * BitAnd(r.B, r.C),
 	BitAnd(r.A, r.B) * r.C,
@@ -22,10 +22,25 @@ SELECT
 	r.A * BitXor(r.B, r.C),
 	BitXor(r.A, r.B) * r.C,
 	r.A * BitXor(r.B, r.C),
-	r.A * -r.B,
+	(r.A + r.B) * r.C,
+	r.A * (r.B + r.C),
+	(r.A + -6) * r.C,
+	(r.A - r.B) * r.C,
+	r.A * (r.B - r.C),
+	(r.A - -6) * r.C,
+	(r.A * r.B) * r.C,
+	r.A * (r.B * r.C),
+	(r.A * -6) * r.C,
+	(r.A / r.B) * r.C,
+	r.A * (r.B / r.C),
+	(r.A / -6) * r.C,
+	(r.A + r.B) * r.C,
+	r.A * (r.B + r.C),
+	(r.A + -6) * r.C,
+	r.A * (-r.B),
 	(r.A - r.B) * r.C,
 	(r.A + r.B) * r.C,
-	(r.A / -r.B) * r.C,
+	r.A / (-r.B) * r.C,
 	BitAnd(r.A, -r.B) * r.C,
 	BitOr(r.A, -r.B) * r.C,
 	BitXor(r.A, -r.B) * r.C,
@@ -33,16 +48,16 @@ SELECT
 	BITNOT(r.B) * r.C,
 	(r.A + BITNOT(r.B)) * r.C,
 	(r.A - BITNOT(r.B)) * r.C,
-	(r.A * BITNOT(r.B)) * r.C,
+	r.A * BITNOT(r.B) * r.C,
 	Mod(r.A, BITNOT(r.B)) * r.C,
 	BitAnd(r.A, BITNOT(r.B)) * r.C,
 	BitOr(r.A, BITNOT(r.B)) * r.C,
 	BitXor(r.A, BITNOT(r.B)) * r.C,
-	r.A * -5,
-	-5 * r.C,
-	(r.A + -5) * r.C,
-	(r.A - -5) * r.C,
-	(r.A * -5) * r.C,
+	r.A * (-5),
+	(-5) * r.C,
+	(r.A + (-5)) * r.C,
+	(r.A - (-5)) * r.C,
+	r.A * (-5) * r.C,
 	Mod(r.A, -5) * r.C,
 	BitAnd(r.A, -5) * r.C,
 	BitOr(r.A, -5) * r.C,
@@ -54,11 +69,11 @@ ORDER BY
 
 -- Informix.DB2 Informix
 SELECT
-	r.A * -5,
-	-5 * r.C,
-	(r.A + -5) * r.C,
-	(r.A - -5) * r.C,
-	(r.A * -5) * r.C,
+	r.A * (-5),
+	(-5) * r.C,
+	(r.A + (-5)) * r.C,
+	(r.A - (-5)) * r.C,
+	r.A * (-5) * r.C,
 	Mod(r.A, -5) * r.C,
 	BitAnd(r.A, -5) * r.C,
 	BitOr(r.A, -5) * r.C,
@@ -100,6 +115,21 @@ ORDER BY
 -- cell Mul/Mul(a,Xor(b,c)): green
 -- cell Mul/Mul(AsNotNull(Xor(a,b)),c): green
 -- cell Mul/Mul(a,AsNotNull(Xor(b,c))): green
+-- cell Mul/Mul(TAdd(a,b),c): green
+-- cell Mul/Mul(a,TAdd(b,c)): green
+-- cell Mul/Mul(TAdd(a,NegLit),c): green
+-- cell Mul/Mul(TSub(a,b),c): green
+-- cell Mul/Mul(a,TSub(b,c)): green
+-- cell Mul/Mul(TSub(a,NegLit),c): green
+-- cell Mul/Mul(TMul(a,b),c): green
+-- cell Mul/Mul(a,TMul(b,c)): green
+-- cell Mul/Mul(TMul(a,NegLit),c): green
+-- cell Mul/Mul(TDiv(a,b),c): green
+-- cell Mul/Mul(a,TDiv(b,c)): green
+-- cell Mul/Mul(TDiv(a,NegLit),c): green
+-- cell Mul/Mul(TAddOffset(a,b),c): green
+-- cell Mul/Mul(a,TAddOffset(b,c)): green
+-- cell Mul/Mul(TAddOffset(a,NegLit),c): green
 -- cell Mul/Mul(a,Neg(b)): green
 -- cell Mul/Mul(Neg(b),c): skipped
 -- cell Mul/Mul(Add(a,Neg(b)),c): green

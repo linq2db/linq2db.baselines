@@ -1,60 +1,72 @@
 ﻿-- DuckDB
 SELECT
-	r.A + r.B & r."C",
-	r.A & r.B + r."C",
-	r.A + r.B & r."C",
-	r.A & r.B + r."C",
-	r.A - r.B & r."C",
-	r.A & r.B - r."C",
-	r.A - r.B & r."C",
-	r.A & r.B - r."C",
-	r.A * r.B & r."C",
-	r.A & r.B * r."C",
-	r.A * r.B & r."C",
-	r.A & r.B * r."C",
-	r.A // r.B & r."C",
-	r.A & r.B // r."C",
-	r.A // r.B & r."C",
-	r.A & r.B // r."C",
-	r.A % r.B & r."C",
-	r.A & r.B % r."C",
-	r.A % r.B & r."C",
-	r.A & r.B % r."C",
-	r.A | r.B & r."C",
-	r.A & r.B | r."C",
-	r.A | r.B & r."C",
-	r.A & r.B | r."C",
+	(r.A + r.B) & r."C",
+	r.A & (r.B + r."C"),
+	(r.A + r.B) & r."C",
+	r.A & (r.B + r."C"),
+	(r.A - r.B) & r."C",
+	r.A & (r.B - r."C"),
+	(r.A - r.B) & r."C",
+	r.A & (r.B - r."C"),
+	(r.A * r.B) & r."C",
+	r.A & (r.B * r."C"),
+	(r.A * r.B) & r."C",
+	r.A & (r.B * r."C"),
+	(r.A // r.B) & r."C",
+	r.A & (r.B // r."C"),
+	(r.A // r.B) & r."C",
+	r.A & (r.B // r."C"),
+	(r.A % r.B) & r."C",
+	r.A & (r.B % r."C"),
+	(r.A % r.B) & r."C",
+	r.A & (r.B % r."C"),
+	(r.A | r.B) & r."C",
+	r.A & (r.B | r."C"),
+	(r.A | r.B) & r."C",
+	r.A & (r.B | r."C"),
 	xor(r.A, r.B) & r."C",
 	r.A & xor(r.B, r."C"),
 	xor(r.A, r.B) & r."C",
 	r.A & xor(r.B, r."C"),
-	r.A & -r.B,
-	-r.B & r."C",
-	r.A - r.B & r."C",
-	r.A + r.B & r."C",
-	r.A * -r.B & r."C",
-	r.A // -r.B & r."C",
-	r.A % -r.B & r."C",
-	r.A & -r.B & r."C",
-	r.A | -r.B & r."C",
+	(r.A + r.B) & r."C",
+	r.A & (r.B + r."C"),
+	(r.A + -6) & r."C",
+	(r.A - r.B) & r."C",
+	r.A & (r.B - r."C"),
+	(r.A - -6) & r."C",
+	(r.A * r.B) & r."C",
+	r.A & (r.B * r."C"),
+	(r.A * -6) & r."C",
+	(r.A + r.B) & r."C",
+	r.A & (r.B + r."C"),
+	(r.A + -6) & r."C",
+	r.A & (-r.B),
+	(-r.B) & r."C",
+	(r.A - r.B) & r."C",
+	(r.A + r.B) & r."C",
+	(r.A * (-r.B)) & r."C",
+	(r.A // (-r.B)) & r."C",
+	(r.A % (-r.B)) & r."C",
+	r.A & (-r.B) & r."C",
+	(r.A | (-r.B)) & r."C",
 	xor(r.A, (-r.B)) & r."C",
-	r.A & ~r.B,
-	~r.B & r."C",
-	r.A + (~r.B) & r."C",
-	r.A - (~r.B) & r."C",
-	r.A * (~r.B) & r."C",
-	r.A % (~r.B) & r."C",
-	r.A & ~r.B & r."C",
-	r.A | ~r.B & r."C",
+	r.A & (~r.B),
+	(~r.B) & r."C",
+	(r.A + (~r.B)) & r."C",
+	(r.A - (~r.B)) & r."C",
+	(r.A * (~r.B)) & r."C",
+	(r.A % (~r.B)) & r."C",
+	r.A & (~r.B) & r."C",
+	(r.A | (~r.B)) & r."C",
 	xor(r.A, (~r.B)) & r."C",
-	r.A & -5,
-	-5 & r."C",
-	r.A + -5 & r."C",
-	r.A - -5 & r."C",
-	r.A * -5 & r."C",
-	r.A % -5 & r."C",
-	r.A & -5 & r."C",
-	r.A | -5 & r."C",
+	r.A & (-5),
+	(-5) & r."C",
+	(r.A + (-5)) & r."C",
+	(r.A - (-5)) & r."C",
+	(r.A * (-5)) & r."C",
+	(r.A % (-5)) & r."C",
+	r.A & (-5) & r."C",
+	(r.A | (-5)) & r."C",
 	xor(r.A, -5) & r."C"
 FROM
 	PrecedenceRow r
@@ -63,14 +75,14 @@ ORDER BY
 
 -- DuckDB
 SELECT
-	r.A & -5,
-	-5 & r."C",
-	r.A + -5 & r."C",
-	r.A - -5 & r."C",
-	r.A * -5 & r."C",
-	r.A % -5 & r."C",
-	r.A & -5 & r."C",
-	r.A | -5 & r."C",
+	r.A & (-5),
+	(-5) & r."C",
+	(r.A + (-5)) & r."C",
+	(r.A - (-5)) & r."C",
+	(r.A * (-5)) & r."C",
+	(r.A % (-5)) & r."C",
+	r.A & (-5) & r."C",
+	(r.A | (-5)) & r."C",
 	xor(r.A, -5) & r."C"
 FROM
 	PrecedenceRow r
@@ -102,13 +114,25 @@ ORDER BY
 -- cell And/And(AsNotNull(And(a,b)),c): skipped
 -- cell And/And(a,AsNotNull(And(b,c))): skipped
 -- cell And/And(Or(a,b),c): green
--- cell And/And(a,Or(b,c)): red
+-- cell And/And(a,Or(b,c)): green
 -- cell And/And(AsNotNull(Or(a,b)),c): green
--- cell And/And(a,AsNotNull(Or(b,c))): red
+-- cell And/And(a,AsNotNull(Or(b,c))): green
 -- cell And/And(Xor(a,b),c): green
 -- cell And/And(a,Xor(b,c)): green
 -- cell And/And(AsNotNull(Xor(a,b)),c): green
 -- cell And/And(a,AsNotNull(Xor(b,c))): green
+-- cell And/And(TAdd(a,b),c): green
+-- cell And/And(a,TAdd(b,c)): green
+-- cell And/And(TAdd(a,NegLit),c): green
+-- cell And/And(TSub(a,b),c): green
+-- cell And/And(a,TSub(b,c)): green
+-- cell And/And(TSub(a,NegLit),c): green
+-- cell And/And(TMul(a,b),c): green
+-- cell And/And(a,TMul(b,c)): green
+-- cell And/And(TMul(a,NegLit),c): green
+-- cell And/And(TAddOffset(a,b),c): green
+-- cell And/And(a,TAddOffset(b,c)): green
+-- cell And/And(TAddOffset(a,NegLit),c): green
 -- cell And/And(a,Neg(b)): green
 -- cell And/And(Neg(b),c): green
 -- cell And/And(Add(a,Neg(b)),c): green

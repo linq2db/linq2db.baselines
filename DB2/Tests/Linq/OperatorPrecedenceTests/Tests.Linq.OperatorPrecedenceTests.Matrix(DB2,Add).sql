@@ -26,11 +26,26 @@ SELECT
 	"r".A + BitXor("r".B, "r".C),
 	BitXor("r".A, "r".B) + "r".C,
 	"r".A + BitXor("r".B, "r".C),
+	("r".A + "r".B) + "r".C,
+	"r".A + ("r".B + "r".C),
+	("r".A + -6) + "r".C,
+	("r".A - "r".B) + "r".C,
+	"r".A + ("r".B - "r".C),
+	("r".A - -6) + "r".C,
+	"r".A * "r".B + "r".C,
+	"r".A + "r".B * "r".C,
+	"r".A * -6 + "r".C,
+	"r".A / "r".B + "r".C,
+	"r".A + "r".B / "r".C,
+	"r".A / -6 + "r".C,
+	("r".A + "r".B) + "r".C,
+	"r".A + ("r".B + "r".C),
+	("r".A + -6) + "r".C,
 	"r".A - "r".B,
-	-"r".B + "r".C,
+	(-"r".B) + "r".C,
 	"r".A - "r".B + "r".C,
-	"r".A * -"r".B + "r".C,
-	"r".A / -"r".B + "r".C,
+	"r".A * (-"r".B) + "r".C,
+	"r".A / (-"r".B) + "r".C,
 	Mod("r".A, -"r".B) + "r".C,
 	BitAnd("r".A, -"r".B) + "r".C,
 	BitOr("r".A, -"r".B) + "r".C,
@@ -43,11 +58,11 @@ SELECT
 	BitAnd("r".A, BITNOT("r".B)) + "r".C,
 	BitOr("r".A, BITNOT("r".B)) + "r".C,
 	BitXor("r".A, BITNOT("r".B)) + "r".C,
-	"r".A + -5,
-	-5 + "r".C,
-	"r".A + -5 + "r".C,
-	"r".A - -5 + "r".C,
-	"r".A * -5 + "r".C,
+	"r".A + (-5),
+	(-5) + "r".C,
+	"r".A + (-5) + "r".C,
+	"r".A - (-5) + "r".C,
+	"r".A * (-5) + "r".C,
 	Mod("r".A, -5) + "r".C,
 	BitAnd("r".A, -5) + "r".C,
 	BitOr("r".A, -5) + "r".C,
@@ -59,11 +74,11 @@ ORDER BY
 
 -- DB2 DB2.LUW DB2LUW
 SELECT
-	"r".A + -5,
-	-5 + "r".C,
-	"r".A + -5 + "r".C,
-	"r".A - -5 + "r".C,
-	"r".A * -5 + "r".C,
+	"r".A + (-5),
+	(-5) + "r".C,
+	"r".A + (-5) + "r".C,
+	"r".A - (-5) + "r".C,
+	"r".A * (-5) + "r".C,
 	Mod("r".A, -5) + "r".C,
 	BitAnd("r".A, -5) + "r".C,
 	BitOr("r".A, -5) + "r".C,
@@ -105,6 +120,21 @@ ORDER BY
 -- cell Add/Add(a,Xor(b,c)): green
 -- cell Add/Add(AsNotNull(Xor(a,b)),c): green
 -- cell Add/Add(a,AsNotNull(Xor(b,c))): green
+-- cell Add/Add(TAdd(a,b),c): green
+-- cell Add/Add(a,TAdd(b,c)): green
+-- cell Add/Add(TAdd(a,NegLit),c): green
+-- cell Add/Add(TSub(a,b),c): green
+-- cell Add/Add(a,TSub(b,c)): green
+-- cell Add/Add(TSub(a,NegLit),c): green
+-- cell Add/Add(TMul(a,b),c): green
+-- cell Add/Add(a,TMul(b,c)): green
+-- cell Add/Add(TMul(a,NegLit),c): green
+-- cell Add/Add(TDiv(a,b),c): green
+-- cell Add/Add(a,TDiv(b,c)): green
+-- cell Add/Add(TDiv(a,NegLit),c): green
+-- cell Add/Add(TAddOffset(a,b),c): green
+-- cell Add/Add(a,TAddOffset(b,c)): green
+-- cell Add/Add(TAddOffset(a,NegLit),c): green
 -- cell Add/Add(a,Neg(b)): green
 -- cell Add/Add(Neg(b),c): green
 -- cell Add/Add(Add(a,Neg(b)),c): green

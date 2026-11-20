@@ -26,31 +26,43 @@ SELECT
 	xor(r.A, (r.B | r."C")),
 	xor((r.A | r.B), r."C"),
 	xor(r.A, (r.B | r."C")),
+	xor((r.A + r.B), r."C"),
+	xor(r.A, (r.B + r."C")),
+	xor((r.A + -6), r."C"),
+	xor((r.A - r.B), r."C"),
+	xor(r.A, (r.B - r."C")),
+	xor((r.A - -6), r."C"),
+	xor((r.A * r.B), r."C"),
+	xor(r.A, (r.B * r."C")),
+	xor((r.A * -6), r."C"),
+	xor((r.A + r.B), r."C"),
+	xor(r.A, (r.B + r."C")),
+	xor((r.A + -6), r."C"),
 	xor(r.A, (-r.B)),
 	xor((-r.B), r."C"),
 	xor((r.A - r.B), r."C"),
 	xor((r.A + r.B), r."C"),
-	xor((r.A * -r.B), r."C"),
-	xor((r.A // -r.B), r."C"),
-	xor((r.A % -r.B), r."C"),
-	xor((r.A & -r.B), r."C"),
-	xor((r.A | -r.B), r."C"),
+	xor((r.A * (-r.B)), r."C"),
+	xor((r.A // (-r.B)), r."C"),
+	xor((r.A % (-r.B)), r."C"),
+	xor((r.A & (-r.B)), r."C"),
+	xor((r.A | (-r.B)), r."C"),
 	xor(xor(r.A, (-r.B)), r."C"),
 	xor(r.A, (~r.B)),
 	xor((r.A + (~r.B)), r."C"),
 	xor((r.A - (~r.B)), r."C"),
 	xor((r.A * (~r.B)), r."C"),
 	xor((r.A % (~r.B)), r."C"),
-	xor((r.A & ~r.B), r."C"),
-	xor((r.A | ~r.B), r."C"),
+	xor((r.A & (~r.B)), r."C"),
+	xor((r.A | (~r.B)), r."C"),
 	xor(r.A, -5),
 	xor(-5, r."C"),
-	xor((r.A + -5), r."C"),
-	xor((r.A - -5), r."C"),
-	xor((r.A * -5), r."C"),
-	xor((r.A % -5), r."C"),
-	xor((r.A & -5), r."C"),
-	xor((r.A | -5), r."C"),
+	xor((r.A + (-5)), r."C"),
+	xor((r.A - (-5)), r."C"),
+	xor((r.A * (-5)), r."C"),
+	xor((r.A % (-5)), r."C"),
+	xor((r.A & (-5)), r."C"),
+	xor((r.A | (-5)), r."C"),
 	xor(xor(r.A, -5), r."C")
 FROM
 	PrecedenceRow r
@@ -61,12 +73,12 @@ ORDER BY
 SELECT
 	xor(r.A, -5),
 	xor(-5, r."C"),
-	xor((r.A + -5), r."C"),
-	xor((r.A - -5), r."C"),
-	xor((r.A * -5), r."C"),
-	xor((r.A % -5), r."C"),
-	xor((r.A & -5), r."C"),
-	xor((r.A | -5), r."C"),
+	xor((r.A + (-5)), r."C"),
+	xor((r.A - (-5)), r."C"),
+	xor((r.A * (-5)), r."C"),
+	xor((r.A % (-5)), r."C"),
+	xor((r.A & (-5)), r."C"),
+	xor((r.A | (-5)), r."C"),
 	xor(xor(r.A, -5), r."C")
 FROM
 	PrecedenceRow r
@@ -105,6 +117,18 @@ ORDER BY
 -- cell Xor/Xor(a,Xor(b,c)): skipped
 -- cell Xor/Xor(AsNotNull(Xor(a,b)),c): skipped
 -- cell Xor/Xor(a,AsNotNull(Xor(b,c))): skipped
+-- cell Xor/Xor(TAdd(a,b),c): green
+-- cell Xor/Xor(a,TAdd(b,c)): green
+-- cell Xor/Xor(TAdd(a,NegLit),c): green
+-- cell Xor/Xor(TSub(a,b),c): green
+-- cell Xor/Xor(a,TSub(b,c)): green
+-- cell Xor/Xor(TSub(a,NegLit),c): green
+-- cell Xor/Xor(TMul(a,b),c): green
+-- cell Xor/Xor(a,TMul(b,c)): green
+-- cell Xor/Xor(TMul(a,NegLit),c): green
+-- cell Xor/Xor(TAddOffset(a,b),c): green
+-- cell Xor/Xor(a,TAddOffset(b,c)): green
+-- cell Xor/Xor(TAddOffset(a,NegLit),c): green
 -- cell Xor/Xor(a,Neg(b)): green
 -- cell Xor/Xor(Neg(b),c): green
 -- cell Xor/Xor(Add(a,Neg(b)),c): green

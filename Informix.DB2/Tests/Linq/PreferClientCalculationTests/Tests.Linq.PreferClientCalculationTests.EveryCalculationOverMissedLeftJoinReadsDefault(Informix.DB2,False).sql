@@ -15,7 +15,7 @@ SELECT
 		WHEN 0 IN (Nvl(j.Value1, 0), 5) THEN 'y'
 		ELSE 'n'
 	END,
-	-Nvl(j.Value1, 0) + 1,
+	(-Nvl(j.Value1, 0)) + 1,
 	CASE
 		WHEN NOT Nvl(j.Flag, 'f'::BOOLEAN) THEN 't'
 		ELSE 'f'

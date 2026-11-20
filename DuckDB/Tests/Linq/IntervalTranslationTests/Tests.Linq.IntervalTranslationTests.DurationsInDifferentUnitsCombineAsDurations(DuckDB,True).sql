@@ -37,7 +37,7 @@ SELECT
 	CAST(CAST(r.InSeconds * 10000000 + r.InTicks AS BIGINT) + r.InSeconds * 10000000 AS BIGINT),
 	CAST(CAST(-r.InSeconds AS BIGINT) * 10000000 + r.InTicks AS BIGINT),
 	CAST(r.InSeconds * 10000000 + r.InTicks AS BIGINT),
-	CAST(r.InSeconds * 10000000 + r.InTicks AS BIGINT) + r.InTicks + r.InTicks,
+	CAST(r.InSeconds * 10000000 + r.InTicks AS BIGINT) + (r.InTicks + r.InTicks),
 	CAST(CAST(r.InSeconds + r.InSeconds AS BIGINT) * 10000000 + r.InTicks AS BIGINT) - (r.InTicks + r.InTicks),
 	CAST(CAST(-r.InSeconds AS BIGINT) * 10000000 - r.InTicks AS BIGINT)
 FROM

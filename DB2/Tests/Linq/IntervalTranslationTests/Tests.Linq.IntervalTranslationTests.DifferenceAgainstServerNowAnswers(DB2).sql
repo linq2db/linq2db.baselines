@@ -25,5 +25,5 @@ SELECT
 FROM
 	"EventRow" "r"
 WHERE
-	CAST((CAST(Days(CURRENT_TIMESTAMP) AS BigInt) - CAST(Days("r"."StartedOn") AS BigInt)) * 864000000000 + (CAST(Midnight_Seconds(CURRENT_TIMESTAMP) AS BigInt) - CAST(Midnight_Seconds("r"."StartedOn") AS BigInt)) * 10000000 + (CAST(Microsecond(CURRENT_TIMESTAMP) AS BigInt) - CAST(Microsecond("r"."StartedOn") AS BigInt)) * 10 AS Float) / 864000000000 > 1
+	CAST((CAST(Days(CURRENT_TIMESTAMP) AS BigInt) - CAST(Days("r"."StartedOn") AS BigInt)) * 864000000000 + ((CAST(Midnight_Seconds(CURRENT_TIMESTAMP) AS BigInt) - CAST(Midnight_Seconds("r"."StartedOn") AS BigInt)) * 10000000 + (CAST(Microsecond(CURRENT_TIMESTAMP) AS BigInt) - CAST(Microsecond("r"."StartedOn") AS BigInt)) * 10) AS Float) / 864000000000 > 1
 

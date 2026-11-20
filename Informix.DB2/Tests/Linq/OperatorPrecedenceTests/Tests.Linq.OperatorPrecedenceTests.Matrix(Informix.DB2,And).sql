@@ -28,12 +28,24 @@ SELECT
 	BitAnd(r.A, BitXor(r.B, r.C)),
 	BitAnd(BitXor(r.A, r.B), r.C),
 	BitAnd(r.A, BitXor(r.B, r.C)),
+	BitAnd(r.A + r.B, r.C),
+	BitAnd(r.A, r.B + r.C),
+	BitAnd(r.A + -6, r.C),
+	BitAnd(r.A - r.B, r.C),
+	BitAnd(r.A, r.B - r.C),
+	BitAnd(r.A - -6, r.C),
+	BitAnd(r.A * r.B, r.C),
+	BitAnd(r.A, r.B * r.C),
+	BitAnd(r.A * -6, r.C),
+	BitAnd(r.A + r.B, r.C),
+	BitAnd(r.A, r.B + r.C),
+	BitAnd(r.A + -6, r.C),
 	BitAnd(r.A, -r.B),
 	BitAnd(-r.B, r.C),
 	BitAnd(r.A - r.B, r.C),
 	BitAnd(r.A + r.B, r.C),
-	BitAnd(r.A * -r.B, r.C),
-	BitAnd(r.A / -r.B, r.C),
+	BitAnd(r.A * (-r.B), r.C),
+	BitAnd(r.A / (-r.B), r.C),
 	BitAnd(Mod(r.A, -r.B), r.C),
 	BitAnd(BitAnd(r.A, -r.B), r.C),
 	BitAnd(BitOr(r.A, -r.B), r.C),
@@ -49,9 +61,9 @@ SELECT
 	BitAnd(BitXor(r.A, BITNOT(r.B)), r.C),
 	BitAnd(r.A, -5),
 	BitAnd(-5, r.C),
-	BitAnd(r.A + -5, r.C),
-	BitAnd(r.A - -5, r.C),
-	BitAnd(r.A * -5, r.C),
+	BitAnd(r.A + (-5), r.C),
+	BitAnd(r.A - (-5), r.C),
+	BitAnd(r.A * (-5), r.C),
 	BitAnd(Mod(r.A, -5), r.C),
 	BitAnd(BitAnd(r.A, -5), r.C),
 	BitAnd(BitOr(r.A, -5), r.C),
@@ -65,9 +77,9 @@ ORDER BY
 SELECT
 	BitAnd(r.A, -5),
 	BitAnd(-5, r.C),
-	BitAnd(r.A + -5, r.C),
-	BitAnd(r.A - -5, r.C),
-	BitAnd(r.A * -5, r.C),
+	BitAnd(r.A + (-5), r.C),
+	BitAnd(r.A - (-5), r.C),
+	BitAnd(r.A * (-5), r.C),
 	BitAnd(Mod(r.A, -5), r.C),
 	BitAnd(BitAnd(r.A, -5), r.C),
 	BitAnd(BitOr(r.A, -5), r.C),
@@ -109,6 +121,18 @@ ORDER BY
 -- cell And/And(a,Xor(b,c)): green
 -- cell And/And(AsNotNull(Xor(a,b)),c): green
 -- cell And/And(a,AsNotNull(Xor(b,c))): green
+-- cell And/And(TAdd(a,b),c): green
+-- cell And/And(a,TAdd(b,c)): green
+-- cell And/And(TAdd(a,NegLit),c): green
+-- cell And/And(TSub(a,b),c): green
+-- cell And/And(a,TSub(b,c)): green
+-- cell And/And(TSub(a,NegLit),c): green
+-- cell And/And(TMul(a,b),c): green
+-- cell And/And(a,TMul(b,c)): green
+-- cell And/And(TMul(a,NegLit),c): green
+-- cell And/And(TAddOffset(a,b),c): green
+-- cell And/And(a,TAddOffset(b,c)): green
+-- cell And/And(TAddOffset(a,NegLit),c): green
 -- cell And/And(a,Neg(b)): green
 -- cell And/And(Neg(b),c): green
 -- cell And/And(Add(a,Neg(b)),c): green

@@ -1,58 +1,70 @@
 ﻿-- DuckDB
 SELECT
-	r.A + r.B | r."C",
-	r.A | r.B + r."C",
-	r.A + r.B | r."C",
-	r.A | r.B + r."C",
-	r.A - r.B | r."C",
-	r.A - r.B | r."C",
-	r.A * r.B | r."C",
-	r.A | r.B * r."C",
-	r.A * r.B | r."C",
-	r.A | r.B * r."C",
-	r.A // r.B | r."C",
-	r.A | r.B // r."C",
-	r.A // r.B | r."C",
-	r.A | r.B // r."C",
-	r.A % r.B | r."C",
-	r.A | r.B % r."C",
-	r.A % r.B | r."C",
-	r.A | r.B % r."C",
-	r.A & r.B | r."C",
-	r.A | r.B & r."C",
-	r.A & r.B | r."C",
-	r.A | r.B & r."C",
+	(r.A + r.B) | r."C",
+	r.A | (r.B + r."C"),
+	(r.A + r.B) | r."C",
+	r.A | (r.B + r."C"),
+	(r.A - r.B) | r."C",
+	(r.A - r.B) | r."C",
+	(r.A * r.B) | r."C",
+	r.A | (r.B * r."C"),
+	(r.A * r.B) | r."C",
+	r.A | (r.B * r."C"),
+	(r.A // r.B) | r."C",
+	r.A | (r.B // r."C"),
+	(r.A // r.B) | r."C",
+	r.A | (r.B // r."C"),
+	(r.A % r.B) | r."C",
+	r.A | (r.B % r."C"),
+	(r.A % r.B) | r."C",
+	r.A | (r.B % r."C"),
+	(r.A & r.B) | r."C",
+	r.A | (r.B & r."C"),
+	(r.A & r.B) | r."C",
+	r.A | (r.B & r."C"),
 	xor(r.A, r.B) | r."C",
 	r.A | xor(r.B, r."C"),
 	xor(r.A, r.B) | r."C",
 	r.A | xor(r.B, r."C"),
-	r.A | -r.B,
-	-r.B | r."C",
-	r.A - r.B | r."C",
-	r.A + r.B | r."C",
-	r.A * -r.B | r."C",
-	r.A // -r.B | r."C",
-	r.A % -r.B | r."C",
-	r.A & -r.B | r."C",
-	r.A | -r.B | r."C",
+	(r.A + r.B) | r."C",
+	r.A | (r.B + r."C"),
+	(r.A + -6) | r."C",
+	(r.A - r.B) | r."C",
+	r.A | (r.B - r."C"),
+	(r.A - -6) | r."C",
+	(r.A * r.B) | r."C",
+	r.A | (r.B * r."C"),
+	(r.A * -6) | r."C",
+	(r.A + r.B) | r."C",
+	r.A | (r.B + r."C"),
+	(r.A + -6) | r."C",
+	r.A | (-r.B),
+	(-r.B) | r."C",
+	(r.A - r.B) | r."C",
+	(r.A + r.B) | r."C",
+	(r.A * (-r.B)) | r."C",
+	(r.A // (-r.B)) | r."C",
+	(r.A % (-r.B)) | r."C",
+	(r.A & (-r.B)) | r."C",
+	r.A | (-r.B) | r."C",
 	xor(r.A, (-r.B)) | r."C",
-	r.A | ~r.B,
-	~r.B | r."C",
-	r.A + (~r.B) | r."C",
-	r.A - (~r.B) | r."C",
-	r.A * (~r.B) | r."C",
-	r.A % (~r.B) | r."C",
-	r.A & ~r.B | r."C",
-	r.A | ~r.B | r."C",
+	r.A | (~r.B),
+	(~r.B) | r."C",
+	(r.A + (~r.B)) | r."C",
+	(r.A - (~r.B)) | r."C",
+	(r.A * (~r.B)) | r."C",
+	(r.A % (~r.B)) | r."C",
+	(r.A & (~r.B)) | r."C",
+	r.A | (~r.B) | r."C",
 	xor(r.A, (~r.B)) | r."C",
-	r.A | -5,
-	-5 | r."C",
-	r.A + -5 | r."C",
-	r.A - -5 | r."C",
-	r.A * -5 | r."C",
-	r.A % -5 | r."C",
-	r.A & -5 | r."C",
-	r.A | -5 | r."C",
+	r.A | (-5),
+	(-5) | r."C",
+	(r.A + (-5)) | r."C",
+	(r.A - (-5)) | r."C",
+	(r.A * (-5)) | r."C",
+	(r.A % (-5)) | r."C",
+	(r.A & (-5)) | r."C",
+	r.A | (-5) | r."C",
 	xor(r.A, -5) | r."C"
 FROM
 	PrecedenceRow r
@@ -61,14 +73,14 @@ ORDER BY
 
 -- DuckDB
 SELECT
-	r.A | -5,
-	-5 | r."C",
-	r.A + -5 | r."C",
-	r.A - -5 | r."C",
-	r.A * -5 | r."C",
-	r.A % -5 | r."C",
-	r.A & -5 | r."C",
-	r.A | -5 | r."C",
+	r.A | (-5),
+	(-5) | r."C",
+	(r.A + (-5)) | r."C",
+	(r.A - (-5)) | r."C",
+	(r.A * (-5)) | r."C",
+	(r.A % (-5)) | r."C",
+	(r.A & (-5)) | r."C",
+	r.A | (-5) | r."C",
 	xor(r.A, -5) | r."C"
 FROM
 	PrecedenceRow r
@@ -96,9 +108,9 @@ ORDER BY
 -- cell Or/Or(AsNotNull(Mod(a,b)),c): green
 -- cell Or/Or(a,AsNotNull(Mod(b,c))): green
 -- cell Or/Or(And(a,b),c): green
--- cell Or/Or(a,And(b,c)): red
+-- cell Or/Or(a,And(b,c)): green
 -- cell Or/Or(AsNotNull(And(a,b)),c): green
--- cell Or/Or(a,AsNotNull(And(b,c))): red
+-- cell Or/Or(a,AsNotNull(And(b,c))): green
 -- cell Or/Or(Or(a,b),c): skipped
 -- cell Or/Or(a,Or(b,c)): skipped
 -- cell Or/Or(AsNotNull(Or(a,b)),c): skipped
@@ -107,6 +119,18 @@ ORDER BY
 -- cell Or/Or(a,Xor(b,c)): green
 -- cell Or/Or(AsNotNull(Xor(a,b)),c): green
 -- cell Or/Or(a,AsNotNull(Xor(b,c))): green
+-- cell Or/Or(TAdd(a,b),c): green
+-- cell Or/Or(a,TAdd(b,c)): green
+-- cell Or/Or(TAdd(a,NegLit),c): green
+-- cell Or/Or(TSub(a,b),c): green
+-- cell Or/Or(a,TSub(b,c)): green
+-- cell Or/Or(TSub(a,NegLit),c): green
+-- cell Or/Or(TMul(a,b),c): green
+-- cell Or/Or(a,TMul(b,c)): green
+-- cell Or/Or(TMul(a,NegLit),c): green
+-- cell Or/Or(TAddOffset(a,b),c): green
+-- cell Or/Or(a,TAddOffset(b,c)): green
+-- cell Or/Or(TAddOffset(a,NegLit),c): green
 -- cell Or/Or(a,Neg(b)): green
 -- cell Or/Or(Neg(b),c): green
 -- cell Or/Or(Add(a,Neg(b)),c): green
