@@ -36,7 +36,7 @@ FROM
 
 -- SqlCe
 SELECT TOP (2)
-	(CAST(DateDiff(day, [r].[OpenedOn], [r].[ClosedOn]) AS BigInt) * 86400) * 10000000 + CAST(DateDiff(millisecond, DateAdd(day, CAST(DateDiff(day, [r].[OpenedOn], [r].[ClosedOn]) AS BigInt), [r].[OpenedOn]), [r].[ClosedOn]) AS BigInt) * 10000
+	CAST(DateDiff(day, [r].[OpenedOn], [r].[ClosedOn]) AS BigInt) * 86400 * 10000000 + CAST(DateDiff(millisecond, DateAdd(day, CAST(DateDiff(day, [r].[OpenedOn], [r].[ClosedOn]) AS BigInt), [r].[OpenedOn]), [r].[ClosedOn]) AS BigInt) * 10000
 FROM
 	[CoarseEventRow] [r]
 
