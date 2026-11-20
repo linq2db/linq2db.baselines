@@ -40,7 +40,7 @@ SELECT
 FROM
 	ClosedPeriodRow r
 WHERE
-	CAST((CAST(r.ClosedOnNullable - r.OpenedOn AS Int64) * 10l) / 864000000000l AS Int32) > 0
+	CAST(CAST(r.ClosedOnNullable - r.OpenedOn AS Int64) * 10l / 864000000000l AS Int32) > 0
 
 -- YDB Ydb
 SELECT
@@ -48,12 +48,12 @@ SELECT
 FROM
 	ClosedPeriodRow r
 WHERE
-	CAST(((CAST(r.ClosedOnNullable - r.OpenedOn AS Int64) * 10l) / 36000000000l) % 24l AS Int32) > 0
+	CAST(CAST(r.ClosedOnNullable - r.OpenedOn AS Int64) * 10l / 36000000000l % 24l AS Int32) > 0
 
 -- YDB Ydb
 SELECT
-	CAST((CAST(r.ClosedOnNullable - r.OpenedOn AS Int64) * 10l) / 864000000000l AS Int32) as Days,
-	CAST(((CAST(r.ClosedOnNullable - r.OpenedOn AS Int64) * 10l) / 36000000000l) % 24l AS Int32) as Hours
+	CAST(CAST(r.ClosedOnNullable - r.OpenedOn AS Int64) * 10l / 864000000000l AS Int32) as Days,
+	CAST(CAST(r.ClosedOnNullable - r.OpenedOn AS Int64) * 10l / 36000000000l % 24l AS Int32) as Hours
 FROM
 	ClosedPeriodRow r
 ORDER BY

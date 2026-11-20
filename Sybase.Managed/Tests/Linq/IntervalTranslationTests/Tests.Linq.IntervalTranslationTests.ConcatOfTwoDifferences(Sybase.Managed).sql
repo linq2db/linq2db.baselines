@@ -31,13 +31,13 @@ FROM
 	(
 		SELECT
 			CAST(1 AS Int) as [Source],
-			(CAST(DateDiff(day, [r].[StartedOn], [r].[FinishedOn]) AS BigInt) * 86400) * 10000000 + CAST(DateDiff(millisecond, DateAdd(day, CAST(DateDiff(day, [r].[StartedOn], [r].[FinishedOn]) AS BigInt), [r].[StartedOn]), [r].[FinishedOn]) AS BigInt) * 10000 as [Duration]
+			CAST(DateDiff(day, [r].[StartedOn], [r].[FinishedOn]) AS BigInt) * 86400 * 10000000 + CAST(DateDiff(millisecond, DateAdd(day, CAST(DateDiff(day, [r].[StartedOn], [r].[FinishedOn]) AS BigInt), [r].[StartedOn]), [r].[FinishedOn]) AS BigInt) * 10000 as [Duration]
 		FROM
 			[BudgetedTaskRow] [r]
 		UNION ALL
 		SELECT
 			CAST(2 AS Int) as [Source],
-			(CAST(DateDiff(day, [r_1].[StartedOn], [r_1].[FinishedOn]) AS BigInt) * 86400) * 10000000 + CAST(DateDiff(millisecond, DateAdd(day, CAST(DateDiff(day, [r_1].[StartedOn], [r_1].[FinishedOn]) AS BigInt), [r_1].[StartedOn]), [r_1].[FinishedOn]) AS BigInt) * 10000 as [Duration]
+			CAST(DateDiff(day, [r_1].[StartedOn], [r_1].[FinishedOn]) AS BigInt) * 86400 * 10000000 + CAST(DateDiff(millisecond, DateAdd(day, CAST(DateDiff(day, [r_1].[StartedOn], [r_1].[FinishedOn]) AS BigInt), [r_1].[StartedOn]), [r_1].[FinishedOn]) AS BigInt) * 10000 as [Duration]
 		FROM
 			[BudgetedTaskRow] [r_1]
 	) [t1]

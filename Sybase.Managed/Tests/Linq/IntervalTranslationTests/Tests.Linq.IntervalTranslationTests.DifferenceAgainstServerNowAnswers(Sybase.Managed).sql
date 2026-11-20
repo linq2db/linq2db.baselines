@@ -25,5 +25,5 @@ SELECT
 FROM
 	[EventRow] [r]
 WHERE
-	CAST((CAST(DateDiff(day, [r].[StartedOn], GetDate()) AS BigInt) * 86400) * 10000000 + CAST(DateDiff(millisecond, DateAdd(day, CAST(DateDiff(day, [r].[StartedOn], GetDate()) AS BigInt), [r].[StartedOn]), GetDate()) AS BigInt) * 10000 AS Float) / 864000000000 > 1
+	CAST(CAST(DateDiff(day, [r].[StartedOn], GetDate()) AS BigInt) * 86400 * 10000000 + CAST(DateDiff(millisecond, DateAdd(day, CAST(DateDiff(day, [r].[StartedOn], GetDate()) AS BigInt), [r].[StartedOn]), GetDate()) AS BigInt) * 10000 AS Float) / 864000000000 > 1
 

@@ -21,7 +21,7 @@ VALUES
 
 -- YDB Ydb
 SELECT
-	Unwrap(CAST(r.FinishedOn + DateTime::IntervalFromMicroseconds((Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l) / 10l) AS Timestamp)) as c1
+	Unwrap(CAST(r.FinishedOn + DateTime::IntervalFromMicroseconds(Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l / 10l) AS Timestamp)) as c1
 FROM
 	ZonedEventRow r
 LIMIT 2

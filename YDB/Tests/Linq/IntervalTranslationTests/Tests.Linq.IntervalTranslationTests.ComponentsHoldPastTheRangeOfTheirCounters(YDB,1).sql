@@ -42,7 +42,7 @@ VALUES
 
 -- YDB Ydb
 SELECT
-	Unwrap(CAST(((Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l) / 36000000000l) % 24l AS Int32)) as c1
+	Unwrap(CAST(Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l / 36000000000l % 24l AS Int32)) as c1
 FROM
 	EventRow r
 ORDER BY
@@ -50,7 +50,7 @@ ORDER BY
 
 -- YDB Ydb
 SELECT
-	Unwrap(CAST(((Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l) / 600000000l) % 60l AS Int32)) as c1
+	Unwrap(CAST(Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l / 600000000l % 60l AS Int32)) as c1
 FROM
 	EventRow r
 ORDER BY
@@ -58,7 +58,7 @@ ORDER BY
 
 -- YDB Ydb
 SELECT
-	Unwrap(CAST(((Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l) / 10000000l) % 60l AS Int32)) as c1
+	Unwrap(CAST(Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l / 10000000l % 60l AS Int32)) as c1
 FROM
 	EventRow r
 ORDER BY

@@ -12,8 +12,8 @@ SELECT
 	-(Unwrap(CAST(r.A AS Uint32)) ^ Unwrap(CAST(r.B AS Uint32))) as c10,
 	r.B as B,
 	-(~Unwrap(CAST(r.B AS Uint32))) as c11,
-	--5 as c12,
-	-(-5 * r.B) as c13
+	-(-5) as c12,
+	-((-5) * r.B) as c13
 FROM
 	PrecedenceRow r
 ORDER BY
@@ -117,7 +117,7 @@ ORDER BY
 
 -- YDB Ydb
 SELECT
-	--5 as c1
+	-(-5) as c1
 FROM
 	PrecedenceRow r
 ORDER BY
@@ -125,7 +125,7 @@ ORDER BY
 
 -- YDB Ydb
 SELECT
-	-(-5 * r.B) as c1
+	-((-5) * r.B) as c1
 FROM
 	PrecedenceRow r
 ORDER BY
@@ -133,15 +133,7 @@ ORDER BY
 
 -- YDB Ydb
 SELECT
-	--5 as c1
-FROM
-	PrecedenceRow r
-ORDER BY
-	r.Id
-
--- YDB Ydb
-SELECT
-	--5 as c1
+	-(-5) as c1
 FROM
 	PrecedenceRow r
 ORDER BY
@@ -165,6 +157,6 @@ ORDER BY
 -- cell Neg/Neg(AsNotNull(Xor(a,b))): error
 -- cell Neg/Neg(Neg(b)): green
 -- cell Neg/Neg(Not(b)): green
--- cell Neg/Neg(NegLit(b)): error
--- cell Neg/Neg(NegParam(b)): error
+-- cell Neg/Neg(NegLit(b)): green
+-- cell Neg/Neg(NegParam(b)): green
 -- cell Neg/Neg(Mul(NegLit,b)): green

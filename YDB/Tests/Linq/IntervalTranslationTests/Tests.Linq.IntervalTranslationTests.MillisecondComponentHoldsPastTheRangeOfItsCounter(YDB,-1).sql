@@ -72,7 +72,7 @@ ORDER BY
 
 -- YDB Ydb
 SELECT
-	Unwrap(CAST(((Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l) / 10000l) % 1000l AS Int32)) as c1
+	Unwrap(CAST(Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l / 10000l % 1000l AS Int32)) as c1
 FROM
 	EventRow r
 ORDER BY

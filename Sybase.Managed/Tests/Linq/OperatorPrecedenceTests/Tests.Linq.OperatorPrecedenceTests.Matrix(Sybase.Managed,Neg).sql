@@ -11,9 +11,9 @@ SELECT
 	-([r].[A] ^ [r].[B]),
 	-([r].[A] ^ [r].[B]),
 	[r].[B],
-	-(~[r].[B]),
-	--5,
-	-(-5 * [r].[B])
+	-~[r].[B],
+	-(-5),
+	-(-5) * [r].[B]
 FROM
 	[PrecedenceRow] [r]
 ORDER BY
@@ -109,7 +109,7 @@ ORDER BY
 
 -- Sybase.Managed Sybase
 SELECT
-	-(~[r].[B])
+	-~[r].[B]
 FROM
 	[PrecedenceRow] [r]
 ORDER BY
@@ -117,7 +117,7 @@ ORDER BY
 
 -- Sybase.Managed Sybase
 SELECT
-	--5
+	-(-5)
 FROM
 	[PrecedenceRow] [r]
 ORDER BY
@@ -125,7 +125,7 @@ ORDER BY
 
 -- Sybase.Managed Sybase
 SELECT
-	-(-5 * [r].[B])
+	-(-5) * [r].[B]
 FROM
 	[PrecedenceRow] [r]
 ORDER BY
@@ -133,15 +133,7 @@ ORDER BY
 
 -- Sybase.Managed Sybase
 SELECT
-	--5
-FROM
-	[PrecedenceRow] [r]
-ORDER BY
-	[r].[Id]
-
--- Sybase.Managed Sybase
-SELECT
-	--5
+	-(-5)
 FROM
 	[PrecedenceRow] [r]
 ORDER BY
@@ -164,7 +156,7 @@ ORDER BY
 -- cell Neg/Neg(Xor(a,b)): green
 -- cell Neg/Neg(AsNotNull(Xor(a,b))): green
 -- cell Neg/Neg(Neg(b)): green
--- cell Neg/Neg(Not(b)): green
--- cell Neg/Neg(NegLit(b)): error
--- cell Neg/Neg(NegParam(b)): error
+-- cell Neg/Neg(Not(b)): error
+-- cell Neg/Neg(NegLit(b)): green
+-- cell Neg/Neg(NegParam(b)): green
 -- cell Neg/Neg(Mul(NegLit,b)): green

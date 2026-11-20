@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
 SELECT
-	(Unwrap(CAST(g_2.CountPercents AS Double)) * Double('100')) / SUM(g_2.CountPercents) OVER () as CountPercents,
+	Unwrap(CAST(g_2.CountPercents AS Double)) * Double('100') / SUM(g_2.CountPercents) OVER () as CountPercents,
 	g_2.Sum_1 as Sum_1
 FROM
 	(

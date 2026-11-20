@@ -19,8 +19,8 @@ SELECT
 	Unwrap(CAST(Unwrap(CAST(r.ClosedOn - r.OpenedOn AS Int64)) * 10l AS Double)) / Double('864000000000') as TotalDays,
 	Unwrap(CAST(Unwrap(CAST(r.ClosedOn - r.OpenedOn AS Int64)) * 10l AS Double)) / Double('36000000000') as TotalHours,
 	Unwrap(CAST(Unwrap(CAST(r.ClosedOn - r.OpenedOn AS Int64)) * 10l AS Double)) / Double('600000000') as TotalMinutes,
-	Unwrap(CAST((Unwrap(CAST(r.ClosedOn - r.OpenedOn AS Int64)) * 10l) / 864000000000l AS Int32)) as Days,
-	Unwrap(CAST(((Unwrap(CAST(r.ClosedOn - r.OpenedOn AS Int64)) * 10l) / 36000000000l) % 24l AS Int32)) as Hours
+	Unwrap(CAST(Unwrap(CAST(r.ClosedOn - r.OpenedOn AS Int64)) * 10l / 864000000000l AS Int32)) as Days,
+	Unwrap(CAST(Unwrap(CAST(r.ClosedOn - r.OpenedOn AS Int64)) * 10l / 36000000000l % 24l AS Int32)) as Hours
 FROM
 	ClosedPeriodRow r
 WHERE
