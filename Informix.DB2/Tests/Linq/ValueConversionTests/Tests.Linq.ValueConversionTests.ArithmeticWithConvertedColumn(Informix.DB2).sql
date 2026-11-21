@@ -25,7 +25,7 @@ DECLARE @operand Integer(4) -- Int32
 SET     @operand = 2
 
 SELECT FIRST 2
-	SUM(g_1.Cents) / @operand::Int
+	(SUM(g_1.Cents) / @operand::Int)::Int
 FROM
 	ConvertedAmount g_1
 GROUP BY

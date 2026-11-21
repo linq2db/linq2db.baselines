@@ -29,8 +29,8 @@ VALUES
 
 -- Informix.DB2 Informix
 SELECT FIRST 2
-	Mod(r.InTicks / 10000, 1000)::Int,
-	Mod(r.InTicks / 10, 1000)::Int
+	Mod((r.InTicks / 10000)::BigInt, 1000)::Int,
+	Mod((r.InTicks / 10)::BigInt, 1000)::Int
 FROM
 	DurationRow r
 

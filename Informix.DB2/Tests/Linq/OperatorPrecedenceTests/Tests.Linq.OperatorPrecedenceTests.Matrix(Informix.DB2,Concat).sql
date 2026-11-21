@@ -12,10 +12,10 @@ SELECT
 	To_Char(r.A * r.B) || Nvl(r.S, ''),
 	Nvl(r.S, '') || ',' || (r.B * r.C) || ',' || r.C,
 	Nvl(r.S, '') || Nvl(r.S, '') || To_Char(r.A * r.B),
-	Nvl(r.S, '') || To_Char(r.A / r.B),
-	To_Char(r.A / r.B) || Nvl(r.S, ''),
-	Nvl(r.S, '') || ',' || (r.B / r.C) || ',' || r.C,
-	Nvl(r.S, '') || Nvl(r.S, '') || To_Char(r.A / r.B),
+	Nvl(r.S, '') || To_Char((r.A / r.B)::Int),
+	To_Char((r.A / r.B)::Int) || Nvl(r.S, ''),
+	Nvl(r.S, '') || ',' || (r.B / r.C)::Int || ',' || r.C,
+	Nvl(r.S, '') || Nvl(r.S, '') || To_Char((r.A / r.B)::Int),
 	Nvl(r.S, '') || To_Char(Mod(r.A, r.B)),
 	To_Char(Mod(r.A, r.B)) || Nvl(r.S, ''),
 	Nvl(r.S, '') || ',' || Mod(r.B, r.C) || ',' || r.C,
@@ -64,10 +64,10 @@ ORDER BY
 -- cell Concat/Concat(Mul(a,b),s): green
 -- cell Concat/Join(s,Mul(b,c),c): green
 -- cell Concat/Concat(s,Concat(s,Mul(a,b))): green
--- cell Concat/Concat(s,Div(a,b)): red
--- cell Concat/Concat(Div(a,b),s): red
--- cell Concat/Join(s,Div(b,c),c): red
--- cell Concat/Concat(s,Concat(s,Div(a,b))): red
+-- cell Concat/Concat(s,Div(a,b)): green
+-- cell Concat/Concat(Div(a,b),s): green
+-- cell Concat/Join(s,Div(b,c),c): green
+-- cell Concat/Concat(s,Concat(s,Div(a,b))): green
 -- cell Concat/Concat(s,Mod(a,b)): green
 -- cell Concat/Concat(Mod(a,b),s): green
 -- cell Concat/Join(s,Mod(b,c),c): green

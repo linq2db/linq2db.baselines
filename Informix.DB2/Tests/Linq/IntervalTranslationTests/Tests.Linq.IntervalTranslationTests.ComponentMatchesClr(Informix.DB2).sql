@@ -29,9 +29,9 @@ VALUES
 
 -- Informix.DB2 Informix
 SELECT FIRST 2
-	(r.InSeconds / 86400)::Int,
-	Mod(r.InSeconds / 3600, 24)::Int,
-	Mod(r.InSeconds / 60, 60)::Int,
+	(r.InSeconds / 86400)::BigInt::Int,
+	Mod((r.InSeconds / 3600)::BigInt, 24)::Int,
+	Mod((r.InSeconds / 60)::BigInt, 60)::Int,
 	Mod(r.InSeconds, 60)::Int
 FROM
 	DurationRow r
