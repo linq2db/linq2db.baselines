@@ -5,7 +5,7 @@ SELECT
 FROM
 	(
 		SELECT
-			IIF([t1].[Sum_1] IS NULL, 0, [t1].[Sum_1]) / 2 as [Sum_1],
+			Fix(IIF([t1].[Sum_1] IS NULL, 0, [t1].[Sum_1]) / 2) as [Sum_1],
 			[t1].[ParentID]
 		FROM
 			(
