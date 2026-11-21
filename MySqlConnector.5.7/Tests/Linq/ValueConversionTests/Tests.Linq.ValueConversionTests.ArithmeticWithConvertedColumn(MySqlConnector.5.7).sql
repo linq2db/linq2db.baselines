@@ -27,7 +27,7 @@ DECLARE @operand Int32
 SET     @operand = 2
 
 SELECT
-	SUM(`g_1`.`Cents`) / @operand
+	SUM(`g_1`.`Cents`) DIV @operand
 FROM
 	`ConvertedAmount` `g_1`
 GROUP BY

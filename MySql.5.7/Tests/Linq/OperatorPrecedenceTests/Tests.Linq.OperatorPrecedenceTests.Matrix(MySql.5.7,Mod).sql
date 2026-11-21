@@ -8,20 +8,20 @@ SELECT
 	`r`.`A` % (`r`.`B` - `r`.`C`),
 	(`r`.`A` - `r`.`B`) % `r`.`C`,
 	`r`.`A` % (`r`.`B` - `r`.`C`),
-	`r`.`A` / `r`.`B` % `r`.`C`,
-	`r`.`A` / `r`.`B` % `r`.`C`,
+	(`r`.`A` DIV `r`.`B`) % `r`.`C`,
+	(`r`.`A` DIV `r`.`B`) % `r`.`C`,
 	`r`.`A` % `r`.`B` % `r`.`C`,
 	`r`.`A` % `r`.`B` % `r`.`C`,
-	(`r`.`A` & `r`.`B`) % `r`.`C`,
-	(`r`.`A` & `r`.`B`) % `r`.`C`,
-	(`r`.`A` | `r`.`B`) % `r`.`C`,
-	`r`.`A` % (`r`.`B` | `r`.`C`),
-	(`r`.`A` | `r`.`B`) % `r`.`C`,
-	`r`.`A` % (`r`.`B` | `r`.`C`),
-	(`r`.`A` ^ `r`.`B`) % `r`.`C`,
-	`r`.`A` % (`r`.`B` ^ `r`.`C`),
-	(`r`.`A` ^ `r`.`B`) % `r`.`C`,
-	`r`.`A` % (`r`.`B` ^ `r`.`C`),
+	CAST(`r`.`A` & `r`.`B` AS SIGNED) % `r`.`C`,
+	CAST(`r`.`A` & `r`.`B` AS SIGNED) % `r`.`C`,
+	CAST(`r`.`A` | `r`.`B` AS SIGNED) % `r`.`C`,
+	`r`.`A` % CAST(`r`.`B` | `r`.`C` AS SIGNED),
+	CAST(`r`.`A` | `r`.`B` AS SIGNED) % `r`.`C`,
+	`r`.`A` % CAST(`r`.`B` | `r`.`C` AS SIGNED),
+	CAST(`r`.`A` ^ `r`.`B` AS SIGNED) % `r`.`C`,
+	`r`.`A` % CAST(`r`.`B` ^ `r`.`C` AS SIGNED),
+	CAST(`r`.`A` ^ `r`.`B` AS SIGNED) % `r`.`C`,
+	`r`.`A` % CAST(`r`.`B` ^ `r`.`C` AS SIGNED),
 	(`r`.`A` + `r`.`B`) % `r`.`C`,
 	`r`.`A` % (`r`.`B` + `r`.`C`),
 	(`r`.`A` + -6) % `r`.`C`,
@@ -40,515 +40,27 @@ SELECT
 	`r`.`A` % (-`r`.`B`),
 	(`r`.`A` - `r`.`B`) % `r`.`C`,
 	(`r`.`A` + `r`.`B`) % `r`.`C`,
-	`r`.`A` / (-`r`.`B`) % `r`.`C`,
+	(`r`.`A` DIV (-`r`.`B`)) % `r`.`C`,
 	`r`.`A` % (-`r`.`B`) % `r`.`C`,
-	(`r`.`A` | (-`r`.`B`)) % `r`.`C`,
-	(`r`.`A` ^ (-`r`.`B`)) % `r`.`C`,
-	`r`.`A` % (~`r`.`B`),
-	(`r`.`A` + (~`r`.`B`)) % `r`.`C`,
-	(`r`.`A` - (~`r`.`B`)) % `r`.`C`,
-	`r`.`A` * (~`r`.`B`) % `r`.`C`,
-	`r`.`A` % (~`r`.`B`) % `r`.`C`,
-	(`r`.`A` & (~`r`.`B`)) % `r`.`C`,
-	(`r`.`A` | (~`r`.`B`)) % `r`.`C`,
-	(`r`.`A` ^ (~`r`.`B`)) % `r`.`C`,
+	CAST(`r`.`A` | (-`r`.`B`) AS SIGNED) % `r`.`C`,
+	CAST(`r`.`A` ^ (-`r`.`B`) AS SIGNED) % `r`.`C`,
+	`r`.`A` % CAST(~`r`.`B` AS SIGNED),
+	(`r`.`A` + CAST(~`r`.`B` AS SIGNED)) % `r`.`C`,
+	(`r`.`A` - CAST(~`r`.`B` AS SIGNED)) % `r`.`C`,
+	`r`.`A` * CAST(~`r`.`B` AS SIGNED) % `r`.`C`,
+	`r`.`A` % CAST(~`r`.`B` AS SIGNED) % `r`.`C`,
+	CAST(`r`.`A` & CAST(~`r`.`B` AS SIGNED) AS SIGNED) % `r`.`C`,
+	CAST(`r`.`A` | CAST(~`r`.`B` AS SIGNED) AS SIGNED) % `r`.`C`,
+	CAST(`r`.`A` ^ CAST(~`r`.`B` AS SIGNED) AS SIGNED) % `r`.`C`,
 	`r`.`A` % (-5),
 	(-5) % `r`.`C`,
 	(`r`.`A` + (-5)) % `r`.`C`,
 	(`r`.`A` - (-5)) % `r`.`C`,
 	`r`.`A` * (-5) % `r`.`C`,
 	`r`.`A` % (-5) % `r`.`C`,
-	(`r`.`A` & (-5)) % `r`.`C`,
-	(`r`.`A` | (-5)) % `r`.`C`,
-	(`r`.`A` ^ (-5)) % `r`.`C`
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	(`r`.`A` + `r`.`B`) % `r`.`C`
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	`r`.`A` % (`r`.`B` + `r`.`C`)
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	(`r`.`A` + `r`.`B`) % `r`.`C`
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	`r`.`A` % (`r`.`B` + `r`.`C`)
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	(`r`.`A` - `r`.`B`) % `r`.`C`
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	`r`.`A` % (`r`.`B` - `r`.`C`)
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	(`r`.`A` - `r`.`B`) % `r`.`C`
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	`r`.`A` % (`r`.`B` - `r`.`C`)
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	`r`.`A` / `r`.`B` % `r`.`C`
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	`r`.`A` / `r`.`B` % `r`.`C`
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	`r`.`A` % `r`.`B` % `r`.`C`
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	`r`.`A` % `r`.`B` % `r`.`C`
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	(`r`.`A` & `r`.`B`) % `r`.`C`
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	(`r`.`A` & `r`.`B`) % `r`.`C`
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	(`r`.`A` | `r`.`B`) % `r`.`C`
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	`r`.`A` % (`r`.`B` | `r`.`C`)
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	(`r`.`A` | `r`.`B`) % `r`.`C`
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	`r`.`A` % (`r`.`B` | `r`.`C`)
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	(`r`.`A` ^ `r`.`B`) % `r`.`C`
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	`r`.`A` % (`r`.`B` ^ `r`.`C`)
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	(`r`.`A` ^ `r`.`B`) % `r`.`C`
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	`r`.`A` % (`r`.`B` ^ `r`.`C`)
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	(`r`.`A` + `r`.`B`) % `r`.`C`
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	`r`.`A` % (`r`.`B` + `r`.`C`)
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	(`r`.`A` + -6) % `r`.`C`
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	(`r`.`A` - `r`.`B`) % `r`.`C`
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	`r`.`A` % (`r`.`B` - `r`.`C`)
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	(`r`.`A` - -6) % `r`.`C`
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	(`r`.`A` * `r`.`B`) % `r`.`C`
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	`r`.`A` % (`r`.`B` * `r`.`C`)
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	(`r`.`A` * -6) % `r`.`C`
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	(`r`.`A` / `r`.`B`) % `r`.`C`
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	`r`.`A` % (`r`.`B` / `r`.`C`)
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	(`r`.`A` / -6) % `r`.`C`
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	(`r`.`A` + `r`.`B`) % `r`.`C`
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	`r`.`A` % (`r`.`B` + `r`.`C`)
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	(`r`.`A` + -6) % `r`.`C`
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	`r`.`A` % (-`r`.`B`)
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	(`r`.`A` - `r`.`B`) % `r`.`C`
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	(`r`.`A` + `r`.`B`) % `r`.`C`
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	`r`.`A` / (-`r`.`B`) % `r`.`C`
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	`r`.`A` % (-`r`.`B`) % `r`.`C`
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	(`r`.`A` | (-`r`.`B`)) % `r`.`C`
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	(`r`.`A` ^ (-`r`.`B`)) % `r`.`C`
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	`r`.`A` % (~`r`.`B`)
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	(`r`.`A` + (~`r`.`B`)) % `r`.`C`
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	(`r`.`A` - (~`r`.`B`)) % `r`.`C`
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	`r`.`A` * (~`r`.`B`) % `r`.`C`
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	`r`.`A` % (~`r`.`B`) % `r`.`C`
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	(`r`.`A` & (~`r`.`B`)) % `r`.`C`
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	(`r`.`A` | (~`r`.`B`)) % `r`.`C`
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	(`r`.`A` ^ (~`r`.`B`)) % `r`.`C`
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	`r`.`A` % (-5)
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	(-5) % `r`.`C`
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	(`r`.`A` + (-5)) % `r`.`C`
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	(`r`.`A` - (-5)) % `r`.`C`
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	`r`.`A` * (-5) % `r`.`C`
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	`r`.`A` % (-5) % `r`.`C`
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	(`r`.`A` & (-5)) % `r`.`C`
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	(`r`.`A` | (-5)) % `r`.`C`
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-SELECT
-	(`r`.`A` ^ (-5)) % `r`.`C`
+	CAST(`r`.`A` & (-5) AS SIGNED) % `r`.`C`,
+	CAST(`r`.`A` | (-5) AS SIGNED) % `r`.`C`,
+	CAST(`r`.`A` ^ (-5) AS SIGNED) % `r`.`C`
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -562,9 +74,9 @@ SELECT
 	(`r`.`A` - (-5)) % `r`.`C`,
 	`r`.`A` * (-5) % `r`.`C`,
 	`r`.`A` % (-5) % `r`.`C`,
-	(`r`.`A` & (-5)) % `r`.`C`,
-	(`r`.`A` | (-5)) % `r`.`C`,
-	(`r`.`A` ^ (-5)) % `r`.`C`
+	CAST(`r`.`A` & (-5) AS SIGNED) % `r`.`C`,
+	CAST(`r`.`A` | (-5) AS SIGNED) % `r`.`C`,
+	CAST(`r`.`A` ^ (-5) AS SIGNED) % `r`.`C`
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -625,18 +137,18 @@ ORDER BY
 -- cell Mod/Mod(Div(a,Neg(b)),c): green
 -- cell Mod/Mod(Mod(a,Neg(b)),c): green
 -- cell Mod/Mod(And(a,Neg(b)),c): skipped
--- cell Mod/Mod(Or(a,Neg(b)),c): red
--- cell Mod/Mod(Xor(a,Neg(b)),c): red
--- cell Mod/Mod(a,Not(b)): red
+-- cell Mod/Mod(Or(a,Neg(b)),c): green
+-- cell Mod/Mod(Xor(a,Neg(b)),c): green
+-- cell Mod/Mod(a,Not(b)): green
 -- cell Mod/Mod(Not(b),c): skipped
--- cell Mod/Mod(Add(a,Not(b)),c): error
--- cell Mod/Mod(Sub(a,Not(b)),c): error
--- cell Mod/Mod(Mul(a,Not(b)),c): error
+-- cell Mod/Mod(Add(a,Not(b)),c): green
+-- cell Mod/Mod(Sub(a,Not(b)),c): green
+-- cell Mod/Mod(Mul(a,Not(b)),c): green
 -- cell Mod/Mod(Div(a,Not(b)),c): skipped
--- cell Mod/Mod(Mod(a,Not(b)),c): red
+-- cell Mod/Mod(Mod(a,Not(b)),c): green
 -- cell Mod/Mod(And(a,Not(b)),c): green
--- cell Mod/Mod(Or(a,Not(b)),c): red
--- cell Mod/Mod(Xor(a,Not(b)),c): red
+-- cell Mod/Mod(Or(a,Not(b)),c): green
+-- cell Mod/Mod(Xor(a,Not(b)),c): green
 -- cell Mod/Mod(a,NegLit(b)): green
 -- cell Mod/Mod(NegLit(b),c): green
 -- cell Mod/Mod(Add(a,NegLit(b)),c): green
@@ -645,8 +157,8 @@ ORDER BY
 -- cell Mod/Mod(Div(a,NegLit(b)),c): skipped
 -- cell Mod/Mod(Mod(a,NegLit(b)),c): green
 -- cell Mod/Mod(And(a,NegLit(b)),c): green
--- cell Mod/Mod(Or(a,NegLit(b)),c): red
--- cell Mod/Mod(Xor(a,NegLit(b)),c): red
+-- cell Mod/Mod(Or(a,NegLit(b)),c): green
+-- cell Mod/Mod(Xor(a,NegLit(b)),c): green
 -- cell Mod/Mod(a,NegParam(b)): green
 -- cell Mod/Mod(NegParam(b),c): green
 -- cell Mod/Mod(Add(a,NegParam(b)),c): green
@@ -655,5 +167,5 @@ ORDER BY
 -- cell Mod/Mod(Div(a,NegParam(b)),c): skipped
 -- cell Mod/Mod(Mod(a,NegParam(b)),c): green
 -- cell Mod/Mod(And(a,NegParam(b)),c): green
--- cell Mod/Mod(Or(a,NegParam(b)),c): red
--- cell Mod/Mod(Xor(a,NegParam(b)),c): red
+-- cell Mod/Mod(Or(a,NegParam(b)),c): green
+-- cell Mod/Mod(Xor(a,NegParam(b)),c): green

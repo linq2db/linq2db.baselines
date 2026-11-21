@@ -1,21 +1,21 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 SELECT
-	~(`r`.`A` + `r`.`B`),
-	~(`r`.`A` + `r`.`B`),
-	~(`r`.`A` - `r`.`B`),
-	~(`r`.`A` - `r`.`B`),
-	~(`r`.`A` * `r`.`B`),
-	~(`r`.`A` * `r`.`B`),
-	~(`r`.`A` / `r`.`B`),
-	~(`r`.`A` / `r`.`B`),
-	~(`r`.`A` & `r`.`B`),
-	~(`r`.`A` & `r`.`B`),
-	~(`r`.`A` | `r`.`B`),
-	~(`r`.`A` | `r`.`B`),
-	~(-`r`.`B`),
-	~(~`r`.`B`),
-	~(-5),
-	~((-5) * `r`.`B`)
+	CAST(~(`r`.`A` + `r`.`B`) AS SIGNED),
+	CAST(~(`r`.`A` + `r`.`B`) AS SIGNED),
+	CAST(~(`r`.`A` - `r`.`B`) AS SIGNED),
+	CAST(~(`r`.`A` - `r`.`B`) AS SIGNED),
+	CAST(~(`r`.`A` * `r`.`B`) AS SIGNED),
+	CAST(~(`r`.`A` * `r`.`B`) AS SIGNED),
+	CAST(~(`r`.`A` DIV `r`.`B`) AS SIGNED),
+	CAST(~(`r`.`A` DIV `r`.`B`) AS SIGNED),
+	CAST(~CAST(`r`.`A` & `r`.`B` AS SIGNED) AS SIGNED),
+	CAST(~CAST(`r`.`A` & `r`.`B` AS SIGNED) AS SIGNED),
+	CAST(~CAST(`r`.`A` | `r`.`B` AS SIGNED) AS SIGNED),
+	CAST(~CAST(`r`.`A` | `r`.`B` AS SIGNED) AS SIGNED),
+	CAST(~(-`r`.`B`) AS SIGNED),
+	CAST(~CAST(~`r`.`B` AS SIGNED) AS SIGNED),
+	CAST(~(-5) AS SIGNED),
+	CAST(~((-5) * `r`.`B`) AS SIGNED)
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
@@ -23,154 +23,26 @@ ORDER BY
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 SELECT
-	~(`r`.`A` + `r`.`B`)
+	CAST(~(-5) AS SIGNED)
 FROM
 	`PrecedenceRow` `r`
 ORDER BY
 	`r`.`Id`
 
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-SELECT
-	~(`r`.`A` + `r`.`B`)
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-SELECT
-	~(`r`.`A` - `r`.`B`)
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-SELECT
-	~(`r`.`A` - `r`.`B`)
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-SELECT
-	~(`r`.`A` * `r`.`B`)
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-SELECT
-	~(`r`.`A` * `r`.`B`)
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-SELECT
-	~(`r`.`A` / `r`.`B`)
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-SELECT
-	~(`r`.`A` / `r`.`B`)
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-SELECT
-	~(`r`.`A` & `r`.`B`)
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-SELECT
-	~(`r`.`A` & `r`.`B`)
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-SELECT
-	~(`r`.`A` | `r`.`B`)
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-SELECT
-	~(`r`.`A` | `r`.`B`)
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-SELECT
-	~(-`r`.`B`)
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-SELECT
-	~(~`r`.`B`)
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-SELECT
-	~(-5)
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-SELECT
-	~((-5) * `r`.`B`)
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-SELECT
-	~(-5)
-FROM
-	`PrecedenceRow` `r`
-ORDER BY
-	`r`.`Id`
-
--- cell Not/Not(Add(a,b)): error
--- cell Not/Not(AsNotNull(Add(a,b))): error
--- cell Not/Not(Sub(a,b)): error
--- cell Not/Not(AsNotNull(Sub(a,b))): error
--- cell Not/Not(Mul(a,b)): error
--- cell Not/Not(AsNotNull(Mul(a,b))): error
--- cell Not/Not(Div(a,b)): error
--- cell Not/Not(AsNotNull(Div(a,b))): error
+-- cell Not/Not(Add(a,b)): green
+-- cell Not/Not(AsNotNull(Add(a,b))): green
+-- cell Not/Not(Sub(a,b)): green
+-- cell Not/Not(AsNotNull(Sub(a,b))): green
+-- cell Not/Not(Mul(a,b)): green
+-- cell Not/Not(AsNotNull(Mul(a,b))): green
+-- cell Not/Not(Div(a,b)): green
+-- cell Not/Not(AsNotNull(Div(a,b))): green
 -- cell Not/Not(Mod(a,b)): skipped
 -- cell Not/Not(AsNotNull(Mod(a,b))): skipped
--- cell Not/Not(And(a,b)): error
--- cell Not/Not(AsNotNull(And(a,b))): error
--- cell Not/Not(Or(a,b)): error
--- cell Not/Not(AsNotNull(Or(a,b))): error
+-- cell Not/Not(And(a,b)): green
+-- cell Not/Not(AsNotNull(And(a,b))): green
+-- cell Not/Not(Or(a,b)): green
+-- cell Not/Not(AsNotNull(Or(a,b))): green
 -- cell Not/Not(Xor(a,b)): skipped
 -- cell Not/Not(AsNotNull(Xor(a,b))): skipped
 -- cell Not/Not(Neg(b)): green

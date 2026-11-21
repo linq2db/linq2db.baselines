@@ -9,5 +9,5 @@ SELECT
 FROM
 	`MappingTestClass` `t`
 WHERE
-	(`t`.`Flags` & @flag) = @flag
+	CAST(`t`.`Flags` & @flag AS SIGNED) = @flag
 

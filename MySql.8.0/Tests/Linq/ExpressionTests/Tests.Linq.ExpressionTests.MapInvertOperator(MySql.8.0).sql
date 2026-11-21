@@ -7,7 +7,7 @@ SET     @removeMask = 12
 UPDATE
 	`WarehouseTableDto` `t1`
 SET
-	`t1`.`Value` = (`t1`.`Value` | @addMask) & (~@removeMask)
+	`t1`.`Value` = CAST(CAST(`t1`.`Value` | @addMask AS SIGNED) & CAST(~@removeMask AS SIGNED) AS SIGNED)
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 SELECT

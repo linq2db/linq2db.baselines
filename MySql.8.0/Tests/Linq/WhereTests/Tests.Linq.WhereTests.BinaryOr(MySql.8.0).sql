@@ -8,5 +8,5 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	(`p`.`PersonID` | 2) = 3
+	CAST(`p`.`PersonID` | 2 AS SIGNED) = 3
 
