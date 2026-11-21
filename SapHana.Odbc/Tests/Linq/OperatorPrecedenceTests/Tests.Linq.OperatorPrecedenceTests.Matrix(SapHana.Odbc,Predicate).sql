@@ -181,23 +181,25 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN "r"."A" / "r"."B" = "r"."C" THEN 1
+		WHEN CAST("r"."A" / "r"."B" AS Integer) = "r"."C" THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN "r"."C" < "r"."A" / "r"."B" THEN 1
+		WHEN "r"."C" < CAST("r"."A" / "r"."B" AS Integer) THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN "r"."A" / "r"."B" BETWEEN "r"."C" AND "r"."A" THEN 1
+		WHEN CAST("r"."A" / "r"."B" AS Integer) BETWEEN "r"."C" AND "r"."A"
+			THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN "r"."A" BETWEEN "r"."B" / "r"."C" AND "r"."A" THEN 1
+		WHEN "r"."A" BETWEEN CAST("r"."B" / "r"."C" AS Integer) AND "r"."A"
+			THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN "r"."A" / "r"."B" IN (52, 96, 2, 192, 15, 12, 0, 4, 1)
+		WHEN CAST("r"."A" / "r"."B" AS Integer) IN (52, 96, 2, 192, 15, 12, 0, 4, 1)
 			THEN 1
 		ELSE 0
 	END,
@@ -206,18 +208,19 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN (Coalesce("r"."S", '') || CAST("r"."A" / "r"."B" AS NVarChar(10))) LIKE 'x5%' ESCAPE '~'
+		WHEN (Coalesce("r"."S", '') || CAST(CAST("r"."A" / "r"."B" AS Integer) AS NVarChar(10))) LIKE 'x5%' ESCAPE '~'
 			THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN "r"."A" / "r"."B" <= "r"."C" AND "r"."B" < "r"."A" THEN 1
+		WHEN CAST("r"."A" / "r"."B" AS Integer) <= "r"."C" AND "r"."B" < "r"."A"
+			THEN 1
 		ELSE 0
 	END,
 	CASE
 		WHEN NOT EXISTS(
 			SELECT
-				"r"."A" / "r"."B"
+				CAST("r"."A" / "r"."B" AS Integer)
 			FROM DUMMY
 			INTERSECT
 			SELECT
@@ -234,7 +237,7 @@ SELECT
 			FROM DUMMY
 			INTERSECT
 			SELECT
-				"r"."A" / "r"."B"
+				CAST("r"."A" / "r"."B" AS Integer)
 			FROM DUMMY
 		)
 			THEN 1

@@ -29,9 +29,9 @@ VALUES
 
 -- SapHana.Native SapHana
 SELECT
-	CAST("r"."InSeconds" / 86400 AS Integer),
-	CAST(MOD("r"."InSeconds" / 3600, 24) AS Integer),
-	CAST(MOD("r"."InSeconds" / 60, 60) AS Integer),
+	CAST(CAST("r"."InSeconds" / 86400 AS BigInt) AS Integer),
+	CAST(MOD(CAST("r"."InSeconds" / 3600 AS BigInt), 24) AS Integer),
+	CAST(MOD(CAST("r"."InSeconds" / 60 AS BigInt), 60) AS Integer),
 	CAST(MOD("r"."InSeconds", 60) AS Integer)
 FROM
 	"DurationRow" "r"

@@ -7,7 +7,7 @@ DECLARE @param_2 Integer -- Int32
 SET     @param_2 = 33
 
 SELECT
-	"v"."Integer" / :"param",
+	CAST("v"."Integer" / :"param" AS Integer),
 	"v"."Decimal" / :"param_1",
 	"v"."Double" / :"param_2"
 FROM

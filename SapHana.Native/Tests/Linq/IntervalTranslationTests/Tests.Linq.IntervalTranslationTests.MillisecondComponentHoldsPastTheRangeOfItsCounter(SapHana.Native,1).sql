@@ -72,7 +72,7 @@ ORDER BY
 
 -- SapHana.Native SapHana
 SELECT
-	CAST(MOD(Nano100_Between("r"."StartedOn", "r"."FinishedOn") / 10000, 1000) AS Integer)
+	CAST(MOD(CAST(Nano100_Between("r"."StartedOn", "r"."FinishedOn") / 10000 AS BigInt), 1000) AS Integer)
 FROM
 	"EventRow" "r"
 ORDER BY

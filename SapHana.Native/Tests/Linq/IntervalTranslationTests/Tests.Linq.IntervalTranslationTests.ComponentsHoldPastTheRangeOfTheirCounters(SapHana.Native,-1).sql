@@ -42,7 +42,7 @@ VALUES
 
 -- SapHana.Native SapHana
 SELECT
-	CAST(MOD(Nano100_Between("r"."StartedOn", "r"."FinishedOn") / 36000000000, 24) AS Integer)
+	CAST(MOD(CAST(Nano100_Between("r"."StartedOn", "r"."FinishedOn") / 36000000000 AS BigInt), 24) AS Integer)
 FROM
 	"EventRow" "r"
 ORDER BY
@@ -50,7 +50,7 @@ ORDER BY
 
 -- SapHana.Native SapHana
 SELECT
-	CAST(MOD(Nano100_Between("r"."StartedOn", "r"."FinishedOn") / 600000000, 60) AS Integer)
+	CAST(MOD(CAST(Nano100_Between("r"."StartedOn", "r"."FinishedOn") / 600000000 AS BigInt), 60) AS Integer)
 FROM
 	"EventRow" "r"
 ORDER BY
@@ -58,7 +58,7 @@ ORDER BY
 
 -- SapHana.Native SapHana
 SELECT
-	CAST(MOD(Nano100_Between("r"."StartedOn", "r"."FinishedOn") / 10000000, 60) AS Integer)
+	CAST(MOD(CAST(Nano100_Between("r"."StartedOn", "r"."FinishedOn") / 10000000 AS BigInt), 60) AS Integer)
 FROM
 	"EventRow" "r"
 ORDER BY

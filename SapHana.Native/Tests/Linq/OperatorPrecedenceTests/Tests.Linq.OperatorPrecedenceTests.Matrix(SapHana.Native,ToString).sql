@@ -3,7 +3,7 @@ SELECT
 	CAST("r"."A" + "r"."B" AS NVarChar(11)),
 	CAST("r"."A" - "r"."B" AS NVarChar(11)),
 	CAST("r"."A" * "r"."B" AS NVarChar(11)),
-	CAST("r"."A" / "r"."B" AS NVarChar(11)),
+	CAST(CAST("r"."A" / "r"."B" AS Integer) AS NVarChar(11)),
 	CAST(MOD("r"."A", "r"."B") AS NVarChar(11)),
 	CAST(BITAND("r"."A", "r"."B") AS NVarChar(11)),
 	CAST("r"."A" + "r"."B" - BITAND("r"."A", "r"."B") AS NVarChar(11)),
@@ -18,7 +18,7 @@ ORDER BY
 -- cell ToString/ToString(Add(a,b)): green
 -- cell ToString/ToString(Sub(a,b)): green
 -- cell ToString/ToString(Mul(a,b)): green
--- cell ToString/ToString(Div(a,b)): red
+-- cell ToString/ToString(Div(a,b)): green
 -- cell ToString/ToString(Mod(a,b)): green
 -- cell ToString/ToString(And(a,b)): green
 -- cell ToString/ToString(Or(a,b)): green
