@@ -124,23 +124,24 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN r.A / r.B = r.C THEN 1
+		WHEN Trunc(r.A / r.B) = r.C THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN r.C < r.A / r.B THEN 1
+		WHEN r.C < Trunc(r.A / r.B) THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN r.A / r.B BETWEEN r.C AND r.A THEN 1
+		WHEN Trunc(r.A / r.B) BETWEEN r.C AND r.A THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN r.A BETWEEN r.B / r.C AND r.A THEN 1
+		WHEN r.A BETWEEN Trunc(r.B / r.C) AND r.A THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN r.A / r.B IN (52, 96, 2, 192, 15, 12, 0, 4, 1) THEN 1
+		WHEN Trunc(r.A / r.B) IN (52, 96, 2, 192, 15, 12, 0, 4, 1)
+			THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -148,20 +149,20 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN r.S || CAST(r.A / r.B AS VarChar(255)) LIKE 'x5%' ESCAPE '~'
+		WHEN r.S || CAST(Trunc(r.A / r.B) AS VarChar(255)) LIKE 'x5%' ESCAPE '~'
 			THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN r.A / r.B <= r.C AND r.B < r.A THEN 1
+		WHEN Trunc(r.A / r.B) <= r.C AND r.B < r.A THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN DECODE(r.A / r.B, r.N, 0, 1) = 1 THEN 1
+		WHEN DECODE(Trunc(r.A / r.B), r.N, 0, 1) = 1 THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN DECODE(r.N, r.A / r.B, 0, 1) = 1 THEN 1
+		WHEN DECODE(r.N, Trunc(r.A / r.B), 0, 1) = 1 THEN 1
 		ELSE 0
 	END,
 	CASE
