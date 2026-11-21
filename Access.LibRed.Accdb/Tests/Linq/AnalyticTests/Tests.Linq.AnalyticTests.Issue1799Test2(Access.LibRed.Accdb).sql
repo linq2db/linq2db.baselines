@@ -6,7 +6,7 @@ SELECT TOP @take
 	[g_1].[User_1],
 	[p].[ProcessName],
 	[u].[UserGroups],
-	SUM([g_1].[Diff]) / 60
+	Fix(SUM([g_1].[Diff]) / 60)
 FROM
 	((
 		SELECT

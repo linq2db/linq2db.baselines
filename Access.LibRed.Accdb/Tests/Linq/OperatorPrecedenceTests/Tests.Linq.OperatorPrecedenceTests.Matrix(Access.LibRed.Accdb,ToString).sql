@@ -3,7 +3,7 @@ SELECT
 	CStr([r].[A] + [r].[B]),
 	CStr([r].[A] - [r].[B]),
 	CStr([r].[A] * [r].[B]),
-	CStr([r].[A] / [r].[B]),
+	CStr(Fix([r].[A] / [r].[B])),
 	CStr([r].[A] MOD [r].[B]),
 	CStr([r].[A] BAND [r].[B]),
 	CStr([r].[A] BOR [r].[B]),

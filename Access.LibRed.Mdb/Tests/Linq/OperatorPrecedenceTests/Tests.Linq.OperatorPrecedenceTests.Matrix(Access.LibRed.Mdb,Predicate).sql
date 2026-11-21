@@ -136,23 +136,23 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN [r].[A] / [r].[B] = [r].[C] THEN 1
+		WHEN Fix([r].[A] / [r].[B]) = [r].[C] THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN [r].[C] < [r].[A] / [r].[B] THEN 1
+		WHEN [r].[C] < Fix([r].[A] / [r].[B]) THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN ([r].[A] / [r].[B]) BETWEEN [r].[C] AND [r].[A] THEN 1
+		WHEN Fix([r].[A] / [r].[B]) BETWEEN [r].[C] AND [r].[A] THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN [r].[A] BETWEEN ([r].[B] / [r].[C]) AND [r].[A] THEN 1
+		WHEN [r].[A] BETWEEN Fix([r].[B] / [r].[C]) AND [r].[A] THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN [r].[A] / [r].[B] IN (52, 96, 2, 192, 15, 12, 0, 4, 1)
+		WHEN Fix([r].[A] / [r].[B]) IN (52, 96, 2, 192, 15, 12, 0, 4, 1)
 			THEN 1
 		ELSE 0
 	END,
@@ -164,20 +164,21 @@ SELECT
 		WHEN (CASE
 			WHEN [r].[S] IS NULL THEN ''
 			ELSE [r].[S]
-		END + CStr([r].[A] / [r].[B])) LIKE 'x5%'
+		END + CStr(Fix([r].[A] / [r].[B]))) LIKE 'x5%'
 			THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN [r].[A] / [r].[B] <= [r].[C] AND [r].[B] < [r].[A] THEN 1
+		WHEN Fix([r].[A] / [r].[B]) <= [r].[C] AND [r].[B] < [r].[A]
+			THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN [r].[A] / [r].[B] IS DISTINCT FROM [r].[N] THEN 1
+		WHEN Fix([r].[A] / [r].[B]) IS DISTINCT FROM [r].[N] THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN [r].[N] IS DISTINCT FROM [r].[A] / [r].[B] THEN 1
+		WHEN [r].[N] IS DISTINCT FROM Fix([r].[A] / [r].[B]) THEN 1
 		ELSE 0
 	END,
 	CASE

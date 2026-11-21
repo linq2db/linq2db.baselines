@@ -1,6 +1,6 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT TOP 2
-	[v].[Integer] / 33,
+	Fix([v].[Integer] / 33),
 	[v].[Decimal] / 33,
 	[v].[Double] / 33
 FROM

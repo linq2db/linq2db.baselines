@@ -60,22 +60,22 @@ SELECT
 	CASE
 		WHEN [r].[S] IS NULL THEN ''
 		ELSE [r].[S]
-	END + CStr([r].[A] / [r].[B]),
-	CStr([r].[A] / [r].[B]) + CASE
+	END + CStr(Fix([r].[A] / [r].[B])),
+	CStr(Fix([r].[A] / [r].[B])) + CASE
 		WHEN [r].[S] IS NULL THEN ''
 		ELSE [r].[S]
 	END,
 	CONCAT_WS(',', CASE
 		WHEN [r].[S] IS NULL THEN ''
 		ELSE [r].[S]
-	END, [r].[B] / [r].[C], [r].[C]),
+	END, Fix([r].[B] / [r].[C]), [r].[C]),
 	CASE
 		WHEN [r].[S] IS NULL THEN ''
 		ELSE [r].[S]
 	END + CASE
 		WHEN [r].[S] IS NULL THEN ''
 		ELSE [r].[S]
-	END + CStr([r].[A] / [r].[B]),
+	END + CStr(Fix([r].[A] / [r].[B])),
 	CASE
 		WHEN [r].[S] IS NULL THEN ''
 		ELSE [r].[S]
