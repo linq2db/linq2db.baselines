@@ -3,7 +3,7 @@ SELECT
 	CAST(r.A + r.B AS VarChar(255)),
 	CAST(r.A - r.B AS VarChar(255)),
 	CAST(r.A * r.B AS VarChar(255)),
-	CAST(r.A / r.B AS VarChar(255)),
+	CAST(Trunc(r.A / r.B) AS VarChar(255)),
 	CAST(MOD(r.A, r.B) AS VarChar(255)),
 	CAST(BITAND(r.A, r.B) AS VarChar(255)),
 	CAST(r.A + r.B - BITAND(r.A, r.B) AS VarChar(255)),
