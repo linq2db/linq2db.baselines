@@ -18,7 +18,7 @@ LIMIT 2
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
-	SUM(g_1.Cents) / 2
+	intDiv(SUM(g_1.Cents), 2)
 FROM
 	ConvertedAmount g_1
 GROUP BY

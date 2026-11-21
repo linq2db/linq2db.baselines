@@ -3,7 +3,7 @@ SELECT
 	toString(r.A + r.B),
 	toString(r.A - r.B),
 	toString(r.A * r.B),
-	toString(r.A / r.B),
+	toString(intDiv(r.A, r.B)),
 	toString(r.A % r.B),
 	toString(bitAnd(r.A, r.B)),
 	toString(bitOr(r.A, r.B)),

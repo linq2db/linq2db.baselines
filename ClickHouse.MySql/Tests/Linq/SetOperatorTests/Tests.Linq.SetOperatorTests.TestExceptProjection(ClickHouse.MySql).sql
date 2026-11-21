@@ -13,7 +13,7 @@ FROM
 		EXCEPT DISTINCT
 		SELECT
 			r_1.Id as Id,
-			r_1.Value2 / 10 as Value_1
+			intDiv(r_1.Value2, 10) as Value_1
 		FROM
 			SampleData r_1
 		WHERE

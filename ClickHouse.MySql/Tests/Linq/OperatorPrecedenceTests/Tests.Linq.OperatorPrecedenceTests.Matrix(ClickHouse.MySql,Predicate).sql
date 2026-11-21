@@ -124,23 +124,24 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN r.A / r.B = r.C THEN 1
+		WHEN intDiv(r.A, r.B) = r.C THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN r.C < r.A / r.B THEN 1
+		WHEN r.C < intDiv(r.A, r.B) THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN r.A / r.B BETWEEN r.C AND r.A THEN 1
+		WHEN intDiv(r.A, r.B) BETWEEN r.C AND r.A THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN r.A BETWEEN r.B / r.C AND r.A THEN 1
+		WHEN r.A BETWEEN intDiv(r.B, r.C) AND r.A THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN r.A / r.B IN (52, 96, 2, 192, 15, 12, 0, 4, 1) THEN 1
+		WHEN intDiv(r.A, r.B) IN (52, 96, 2, 192, 15, 12, 0, 4, 1)
+			THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -148,20 +149,20 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN startsWith(concat(Coalesce(r.S, ''), toString(r.A / r.B)), 'x5')
+		WHEN startsWith(concat(Coalesce(r.S, ''), toString(intDiv(r.A, r.B))), 'x5')
 			THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN r.A / r.B <= r.C AND r.B < r.A THEN 1
+		WHEN intDiv(r.A, r.B) <= r.C AND r.B < r.A THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN r.N IS NULL OR r.A / r.B <> r.N THEN 1
+		WHEN r.N IS NULL OR intDiv(r.A, r.B) <> r.N THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN r.N IS NULL OR r.N <> r.A / r.B THEN 1
+		WHEN r.N IS NULL OR r.N <> intDiv(r.A, r.B) THEN 1
 		ELSE 0
 	END,
 	CASE
