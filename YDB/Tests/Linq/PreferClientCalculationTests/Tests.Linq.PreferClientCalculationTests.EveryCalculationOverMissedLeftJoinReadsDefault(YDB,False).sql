@@ -5,7 +5,7 @@ SET     Ids0_1 = 0
 SELECT
 	e.Id as Id,
 	Coalesce(j.Value1, 0) + 1 as Plus,
-	Unwrap(CAST(Coalesce(j.Value1, 0) AS Uint32)) | Unwrap(CAST(1 AS Uint32)) as Bitwise,
+	BitCast((BitCast(Coalesce(j.Value1, 0) AS Uint32) | BitCast(1 AS Uint32)) AS Int32) as Bitwise,
 	CASE
 		WHEN Coalesce(j.Value1, 0) < 5 THEN 'a'u
 		ELSE 'b'u

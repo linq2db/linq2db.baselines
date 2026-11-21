@@ -8,7 +8,7 @@ SELECT
 FROM
 	Person p
 WHERE
-	(Unwrap(CAST(Unwrap(CAST(p.PersonID AS Uint32)) ^ Unwrap(CAST(1 AS Uint32)) AS Uint32)) | Unwrap(CAST(2 AS Uint32))) = 3
+	BitCast((BitCast(BitCast((BitCast(p.PersonID AS Uint32) ^ BitCast(1 AS Uint32)) AS Int32) AS Uint32) | BitCast(2 AS Uint32)) AS Int32) = 3
 
 -- YDB Ydb
 SELECT

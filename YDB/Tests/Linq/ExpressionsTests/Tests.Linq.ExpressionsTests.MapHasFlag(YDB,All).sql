@@ -9,5 +9,5 @@ SELECT
 FROM
 	MappingTestClass t
 WHERE
-	(Unwrap(CAST(t.Flags AS Uint32)) & Unwrap(CAST($flag AS Uint32))) = $flag
+	BitCast((BitCast(t.Flags AS Uint32) & BitCast($flag AS Uint32)) AS Int32) = $flag
 

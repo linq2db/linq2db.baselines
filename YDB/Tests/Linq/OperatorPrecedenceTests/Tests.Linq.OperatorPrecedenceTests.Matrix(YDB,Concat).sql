@@ -20,22 +20,22 @@ SELECT
 	Unwrap(CAST(r.A % r.B AS Text)) || Coalesce(r.S, ''u) as c18,
 	ListConcat(ListNotNull(AsList(Coalesce(r.S, ''u), r.B % r.C, r.C)), ','u) as c19,
 	Coalesce(r.S, ''u) || Coalesce(r.S, ''u) || Unwrap(CAST(r.A % r.B AS Text)) as c20,
-	Coalesce(r.S, ''u) || Unwrap(CAST(Unwrap(CAST(r.A AS Uint32)) & Unwrap(CAST(r.B AS Uint32)) AS Text)) as c21,
-	Unwrap(CAST(Unwrap(CAST(r.A AS Uint32)) & Unwrap(CAST(r.B AS Uint32)) AS Text)) || Coalesce(r.S, ''u) as c22,
-	ListConcat(ListNotNull(AsList(Coalesce(r.S, ''u), Unwrap(CAST(r.B AS Uint32)) & Unwrap(CAST(r.C AS Uint32)), r.C)), ','u) as c23,
-	Coalesce(r.S, ''u) || Coalesce(r.S, ''u) || Unwrap(CAST(Unwrap(CAST(r.A AS Uint32)) & Unwrap(CAST(r.B AS Uint32)) AS Text)) as c24,
-	Coalesce(r.S, ''u) || Unwrap(CAST(Unwrap(CAST(r.A AS Uint32)) | Unwrap(CAST(r.B AS Uint32)) AS Text)) as c25,
-	Unwrap(CAST(Unwrap(CAST(r.A AS Uint32)) | Unwrap(CAST(r.B AS Uint32)) AS Text)) || Coalesce(r.S, ''u) as c26,
-	ListConcat(ListNotNull(AsList(Coalesce(r.S, ''u), Unwrap(CAST(r.B AS Uint32)) | Unwrap(CAST(r.C AS Uint32)), r.C)), ','u) as c27,
-	Coalesce(r.S, ''u) || Coalesce(r.S, ''u) || Unwrap(CAST(Unwrap(CAST(r.A AS Uint32)) | Unwrap(CAST(r.B AS Uint32)) AS Text)) as c28,
-	Coalesce(r.S, ''u) || Unwrap(CAST(Unwrap(CAST(r.A AS Uint32)) ^ Unwrap(CAST(r.B AS Uint32)) AS Text)) as c29,
-	Unwrap(CAST(Unwrap(CAST(r.A AS Uint32)) ^ Unwrap(CAST(r.B AS Uint32)) AS Text)) || Coalesce(r.S, ''u) as c30,
-	ListConcat(ListNotNull(AsList(Coalesce(r.S, ''u), Unwrap(CAST(r.B AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)), r.C)), ','u) as c31,
-	Coalesce(r.S, ''u) || Coalesce(r.S, ''u) || Unwrap(CAST(Unwrap(CAST(r.A AS Uint32)) ^ Unwrap(CAST(r.B AS Uint32)) AS Text)) as c32,
+	Coalesce(r.S, ''u) || Unwrap(CAST(BitCast((BitCast(r.A AS Uint32) & BitCast(r.B AS Uint32)) AS Int32) AS Text)) as c21,
+	Unwrap(CAST(BitCast((BitCast(r.A AS Uint32) & BitCast(r.B AS Uint32)) AS Int32) AS Text)) || Coalesce(r.S, ''u) as c22,
+	ListConcat(ListNotNull(AsList(Coalesce(r.S, ''u), BitCast((BitCast(r.B AS Uint32) & BitCast(r.C AS Uint32)) AS Int32), r.C)), ','u) as c23,
+	Coalesce(r.S, ''u) || Coalesce(r.S, ''u) || Unwrap(CAST(BitCast((BitCast(r.A AS Uint32) & BitCast(r.B AS Uint32)) AS Int32) AS Text)) as c24,
+	Coalesce(r.S, ''u) || Unwrap(CAST(BitCast((BitCast(r.A AS Uint32) | BitCast(r.B AS Uint32)) AS Int32) AS Text)) as c25,
+	Unwrap(CAST(BitCast((BitCast(r.A AS Uint32) | BitCast(r.B AS Uint32)) AS Int32) AS Text)) || Coalesce(r.S, ''u) as c26,
+	ListConcat(ListNotNull(AsList(Coalesce(r.S, ''u), BitCast((BitCast(r.B AS Uint32) | BitCast(r.C AS Uint32)) AS Int32), r.C)), ','u) as c27,
+	Coalesce(r.S, ''u) || Coalesce(r.S, ''u) || Unwrap(CAST(BitCast((BitCast(r.A AS Uint32) | BitCast(r.B AS Uint32)) AS Int32) AS Text)) as c28,
+	Coalesce(r.S, ''u) || Unwrap(CAST(BitCast((BitCast(r.A AS Uint32) ^ BitCast(r.B AS Uint32)) AS Int32) AS Text)) as c29,
+	Unwrap(CAST(BitCast((BitCast(r.A AS Uint32) ^ BitCast(r.B AS Uint32)) AS Int32) AS Text)) || Coalesce(r.S, ''u) as c30,
+	ListConcat(ListNotNull(AsList(Coalesce(r.S, ''u), BitCast((BitCast(r.B AS Uint32) ^ BitCast(r.C AS Uint32)) AS Int32), r.C)), ','u) as c31,
+	Coalesce(r.S, ''u) || Coalesce(r.S, ''u) || Unwrap(CAST(BitCast((BitCast(r.A AS Uint32) ^ BitCast(r.B AS Uint32)) AS Int32) AS Text)) as c32,
 	Coalesce(r.S, ''u) || Unwrap(CAST(-r.A AS Text)) as c33,
 	Unwrap(CAST(-r.A AS Text)) || Coalesce(r.S, ''u) as c34,
-	Coalesce(r.S, ''u) || Unwrap(CAST(~Unwrap(CAST(r.A AS Uint32)) AS Text)) as c35,
-	Unwrap(CAST(~Unwrap(CAST(r.A AS Uint32)) AS Text)) || Coalesce(r.S, ''u) as c36,
+	Coalesce(r.S, ''u) || Unwrap(CAST(BitCast((~BitCast(r.A AS Uint32)) AS Int32) AS Text)) as c35,
+	Unwrap(CAST(BitCast((~BitCast(r.A AS Uint32)) AS Int32) AS Text)) || Coalesce(r.S, ''u) as c36,
 	Coalesce(r.S, ''u) || '-5'u as c37,
 	'-5'u || Coalesce(r.S, ''u) as c38
 FROM
@@ -205,7 +205,7 @@ ORDER BY
 
 -- YDB Ydb
 SELECT
-	Coalesce(r.S, ''u) || Unwrap(CAST(Unwrap(CAST(r.A AS Uint32)) & Unwrap(CAST(r.B AS Uint32)) AS Text)) as c1
+	Coalesce(r.S, ''u) || Unwrap(CAST(BitCast((BitCast(r.A AS Uint32) & BitCast(r.B AS Uint32)) AS Int32) AS Text)) as c1
 FROM
 	PrecedenceRow r
 ORDER BY
@@ -213,7 +213,7 @@ ORDER BY
 
 -- YDB Ydb
 SELECT
-	Unwrap(CAST(Unwrap(CAST(r.A AS Uint32)) & Unwrap(CAST(r.B AS Uint32)) AS Text)) || Coalesce(r.S, ''u) as c1
+	Unwrap(CAST(BitCast((BitCast(r.A AS Uint32) & BitCast(r.B AS Uint32)) AS Int32) AS Text)) || Coalesce(r.S, ''u) as c1
 FROM
 	PrecedenceRow r
 ORDER BY
@@ -221,7 +221,7 @@ ORDER BY
 
 -- YDB Ydb
 SELECT
-	ListConcat(ListNotNull(AsList(Coalesce(r.S, ''u), Unwrap(CAST(r.B AS Uint32)) & Unwrap(CAST(r.C AS Uint32)), r.C)), ','u) as c1
+	ListConcat(ListNotNull(AsList(Coalesce(r.S, ''u), BitCast((BitCast(r.B AS Uint32) & BitCast(r.C AS Uint32)) AS Int32), r.C)), ','u) as c1
 FROM
 	PrecedenceRow r
 ORDER BY
@@ -229,7 +229,7 @@ ORDER BY
 
 -- YDB Ydb
 SELECT
-	Coalesce(r.S, ''u) || Coalesce(r.S, ''u) || Unwrap(CAST(Unwrap(CAST(r.A AS Uint32)) & Unwrap(CAST(r.B AS Uint32)) AS Text)) as c1
+	Coalesce(r.S, ''u) || Coalesce(r.S, ''u) || Unwrap(CAST(BitCast((BitCast(r.A AS Uint32) & BitCast(r.B AS Uint32)) AS Int32) AS Text)) as c1
 FROM
 	PrecedenceRow r
 ORDER BY
@@ -237,7 +237,7 @@ ORDER BY
 
 -- YDB Ydb
 SELECT
-	Coalesce(r.S, ''u) || Unwrap(CAST(Unwrap(CAST(r.A AS Uint32)) | Unwrap(CAST(r.B AS Uint32)) AS Text)) as c1
+	Coalesce(r.S, ''u) || Unwrap(CAST(BitCast((BitCast(r.A AS Uint32) | BitCast(r.B AS Uint32)) AS Int32) AS Text)) as c1
 FROM
 	PrecedenceRow r
 ORDER BY
@@ -245,7 +245,7 @@ ORDER BY
 
 -- YDB Ydb
 SELECT
-	Unwrap(CAST(Unwrap(CAST(r.A AS Uint32)) | Unwrap(CAST(r.B AS Uint32)) AS Text)) || Coalesce(r.S, ''u) as c1
+	Unwrap(CAST(BitCast((BitCast(r.A AS Uint32) | BitCast(r.B AS Uint32)) AS Int32) AS Text)) || Coalesce(r.S, ''u) as c1
 FROM
 	PrecedenceRow r
 ORDER BY
@@ -253,7 +253,7 @@ ORDER BY
 
 -- YDB Ydb
 SELECT
-	ListConcat(ListNotNull(AsList(Coalesce(r.S, ''u), Unwrap(CAST(r.B AS Uint32)) | Unwrap(CAST(r.C AS Uint32)), r.C)), ','u) as c1
+	ListConcat(ListNotNull(AsList(Coalesce(r.S, ''u), BitCast((BitCast(r.B AS Uint32) | BitCast(r.C AS Uint32)) AS Int32), r.C)), ','u) as c1
 FROM
 	PrecedenceRow r
 ORDER BY
@@ -261,7 +261,7 @@ ORDER BY
 
 -- YDB Ydb
 SELECT
-	Coalesce(r.S, ''u) || Coalesce(r.S, ''u) || Unwrap(CAST(Unwrap(CAST(r.A AS Uint32)) | Unwrap(CAST(r.B AS Uint32)) AS Text)) as c1
+	Coalesce(r.S, ''u) || Coalesce(r.S, ''u) || Unwrap(CAST(BitCast((BitCast(r.A AS Uint32) | BitCast(r.B AS Uint32)) AS Int32) AS Text)) as c1
 FROM
 	PrecedenceRow r
 ORDER BY
@@ -269,7 +269,7 @@ ORDER BY
 
 -- YDB Ydb
 SELECT
-	Coalesce(r.S, ''u) || Unwrap(CAST(Unwrap(CAST(r.A AS Uint32)) ^ Unwrap(CAST(r.B AS Uint32)) AS Text)) as c1
+	Coalesce(r.S, ''u) || Unwrap(CAST(BitCast((BitCast(r.A AS Uint32) ^ BitCast(r.B AS Uint32)) AS Int32) AS Text)) as c1
 FROM
 	PrecedenceRow r
 ORDER BY
@@ -277,7 +277,7 @@ ORDER BY
 
 -- YDB Ydb
 SELECT
-	Unwrap(CAST(Unwrap(CAST(r.A AS Uint32)) ^ Unwrap(CAST(r.B AS Uint32)) AS Text)) || Coalesce(r.S, ''u) as c1
+	Unwrap(CAST(BitCast((BitCast(r.A AS Uint32) ^ BitCast(r.B AS Uint32)) AS Int32) AS Text)) || Coalesce(r.S, ''u) as c1
 FROM
 	PrecedenceRow r
 ORDER BY
@@ -285,7 +285,7 @@ ORDER BY
 
 -- YDB Ydb
 SELECT
-	ListConcat(ListNotNull(AsList(Coalesce(r.S, ''u), Unwrap(CAST(r.B AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32)), r.C)), ','u) as c1
+	ListConcat(ListNotNull(AsList(Coalesce(r.S, ''u), BitCast((BitCast(r.B AS Uint32) ^ BitCast(r.C AS Uint32)) AS Int32), r.C)), ','u) as c1
 FROM
 	PrecedenceRow r
 ORDER BY
@@ -293,7 +293,7 @@ ORDER BY
 
 -- YDB Ydb
 SELECT
-	Coalesce(r.S, ''u) || Coalesce(r.S, ''u) || Unwrap(CAST(Unwrap(CAST(r.A AS Uint32)) ^ Unwrap(CAST(r.B AS Uint32)) AS Text)) as c1
+	Coalesce(r.S, ''u) || Coalesce(r.S, ''u) || Unwrap(CAST(BitCast((BitCast(r.A AS Uint32) ^ BitCast(r.B AS Uint32)) AS Int32) AS Text)) as c1
 FROM
 	PrecedenceRow r
 ORDER BY
@@ -317,7 +317,7 @@ ORDER BY
 
 -- YDB Ydb
 SELECT
-	Coalesce(r.S, ''u) || Unwrap(CAST(~Unwrap(CAST(r.A AS Uint32)) AS Text)) as c1
+	Coalesce(r.S, ''u) || Unwrap(CAST(BitCast((~BitCast(r.A AS Uint32)) AS Int32) AS Text)) as c1
 FROM
 	PrecedenceRow r
 ORDER BY
@@ -325,7 +325,7 @@ ORDER BY
 
 -- YDB Ydb
 SELECT
-	Unwrap(CAST(~Unwrap(CAST(r.A AS Uint32)) AS Text)) || Coalesce(r.S, ''u) as c1
+	Unwrap(CAST(BitCast((~BitCast(r.A AS Uint32)) AS Int32) AS Text)) || Coalesce(r.S, ''u) as c1
 FROM
 	PrecedenceRow r
 ORDER BY
@@ -390,8 +390,8 @@ ORDER BY
 -- cell Concat/Concat(s,Concat(s,Xor(a,b))): green
 -- cell Concat/Concat(s,Neg(a)): green
 -- cell Concat/Concat(Neg(a),s): green
--- cell Concat/Concat(s,Not(a)): red
--- cell Concat/Concat(Not(a),s): red
+-- cell Concat/Concat(s,Not(a)): green
+-- cell Concat/Concat(Not(a),s): green
 -- cell Concat/Concat(s,NegLit(a)): green
 -- cell Concat/Concat(NegLit(a),s): green
 -- cell Concat/Concat(s,NegParam(a)): green

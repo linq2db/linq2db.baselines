@@ -5,11 +5,11 @@ SELECT
 	Unwrap(CAST(r.A * r.B AS Text)) as c3,
 	Unwrap(CAST(r.A / r.B AS Text)) as c4,
 	Unwrap(CAST(r.A % r.B AS Text)) as c5,
-	Unwrap(CAST(Unwrap(CAST(r.A AS Uint32)) & Unwrap(CAST(r.B AS Uint32)) AS Text)) as c6,
-	Unwrap(CAST(Unwrap(CAST(r.A AS Uint32)) | Unwrap(CAST(r.B AS Uint32)) AS Text)) as c7,
-	Unwrap(CAST(Unwrap(CAST(r.A AS Uint32)) ^ Unwrap(CAST(r.B AS Uint32)) AS Text)) as c8,
+	Unwrap(CAST(BitCast((BitCast(r.A AS Uint32) & BitCast(r.B AS Uint32)) AS Int32) AS Text)) as c6,
+	Unwrap(CAST(BitCast((BitCast(r.A AS Uint32) | BitCast(r.B AS Uint32)) AS Int32) AS Text)) as c7,
+	Unwrap(CAST(BitCast((BitCast(r.A AS Uint32) ^ BitCast(r.B AS Uint32)) AS Int32) AS Text)) as c8,
 	Unwrap(CAST(-r.A AS Text)) as c9,
-	Unwrap(CAST(~Unwrap(CAST(r.A AS Uint32)) AS Text)) as c10
+	Unwrap(CAST(BitCast((~BitCast(r.A AS Uint32)) AS Int32) AS Text)) as c10
 FROM
 	PrecedenceRow r
 ORDER BY
@@ -24,4 +24,4 @@ ORDER BY
 -- cell ToString/ToString(Or(a,b)): green
 -- cell ToString/ToString(Xor(a,b)): green
 -- cell ToString/ToString(Neg(a)): green
--- cell ToString/ToString(Not(a)): red
+-- cell ToString/ToString(Not(a)): green

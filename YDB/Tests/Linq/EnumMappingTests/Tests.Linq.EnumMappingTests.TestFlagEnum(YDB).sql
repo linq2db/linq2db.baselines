@@ -5,5 +5,5 @@ SELECT
 FROM
 	TestTable5 t
 WHERE
-	(Unwrap(CAST(t.IntValue AS Uint32)) & Unwrap(CAST(1 AS Uint32))) <> 0
+	BitCast((BitCast(t.IntValue AS Uint32) & BitCast(1 AS Uint32)) AS Int32) <> 0
 

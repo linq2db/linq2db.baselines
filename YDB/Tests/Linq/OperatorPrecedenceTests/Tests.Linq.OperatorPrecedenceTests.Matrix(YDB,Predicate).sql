@@ -356,27 +356,27 @@ SELECT
 		ELSE 0
 	END as c50,
 	CASE
-		WHEN (Unwrap(CAST(r.A AS Uint32)) & Unwrap(CAST(r.B AS Uint32))) = r.C
+		WHEN BitCast((BitCast(r.A AS Uint32) & BitCast(r.B AS Uint32)) AS Int32) = r.C
 			THEN 1
 		ELSE 0
 	END as c51,
 	CASE
-		WHEN r.C < (Unwrap(CAST(r.A AS Uint32)) & Unwrap(CAST(r.B AS Uint32)))
+		WHEN r.C < BitCast((BitCast(r.A AS Uint32) & BitCast(r.B AS Uint32)) AS Int32)
 			THEN 1
 		ELSE 0
 	END as c52,
 	CASE
-		WHEN (Unwrap(CAST(r.A AS Uint32)) & Unwrap(CAST(r.B AS Uint32))) BETWEEN r.C AND r.A
+		WHEN BitCast((BitCast(r.A AS Uint32) & BitCast(r.B AS Uint32)) AS Int32) BETWEEN r.C AND r.A
 			THEN 1
 		ELSE 0
 	END as c53,
 	CASE
-		WHEN r.A BETWEEN (Unwrap(CAST(r.B AS Uint32)) & Unwrap(CAST(r.C AS Uint32))) AND r.A
+		WHEN r.A BETWEEN BitCast((BitCast(r.B AS Uint32) & BitCast(r.C AS Uint32)) AS Int32) AND r.A
 			THEN 1
 		ELSE 0
 	END as c54,
 	CASE
-		WHEN (Unwrap(CAST(r.A AS Uint32)) & Unwrap(CAST(r.B AS Uint32))) IN ($Ids0_1_5, $Ids0_2_5, $Ids0_3_5, $Ids0_4_5, $Ids0_5_5, $Ids0_6_5, $Ids0_7_5, $Ids0_8_5, $Ids0_9_5)
+		WHEN BitCast((BitCast(r.A AS Uint32) & BitCast(r.B AS Uint32)) AS Int32) IN ($Ids0_1_5, $Ids0_2_5, $Ids0_3_5, $Ids0_4_5, $Ids0_5_5, $Ids0_6_5, $Ids0_7_5, $Ids0_8_5, $Ids0_9_5)
 			THEN 1
 		ELSE 0
 	END as c55,
@@ -385,122 +385,114 @@ SELECT
 		ELSE 0
 	END as c56,
 	CASE
-		WHEN (Coalesce(r.S, ''u) || Unwrap(CAST(Unwrap(CAST(r.A AS Uint32)) & Unwrap(CAST(r.B AS Uint32)) AS Text))) LIKE 'x5%'u ESCAPE '~'s
+		WHEN (Coalesce(r.S, ''u) || Unwrap(CAST(BitCast((BitCast(r.A AS Uint32) & BitCast(r.B AS Uint32)) AS Int32) AS Text))) LIKE 'x5%'u ESCAPE '~'s
 			THEN 1
 		ELSE 0
 	END as c57,
 	CASE
-		WHEN (Unwrap(CAST(r.A AS Uint32)) & Unwrap(CAST(r.B AS Uint32))) <= r.C AND r.B < r.A
+		WHEN BitCast((BitCast(r.A AS Uint32) & BitCast(r.B AS Uint32)) AS Int32) <= r.C AND r.B < r.A
 			THEN 1
 		ELSE 0
 	END as c58,
 	CASE
-		WHEN (Unwrap(CAST(r.A AS Uint32)) & Unwrap(CAST(r.B AS Uint32))) IS DISTINCT FROM r.N
+		WHEN BitCast((BitCast(r.A AS Uint32) & BitCast(r.B AS Uint32)) AS Int32) IS DISTINCT FROM r.N
 			THEN 1
 		ELSE 0
 	END as c59,
 	CASE
-		WHEN r.N IS DISTINCT FROM (Unwrap(CAST(r.A AS Uint32)) & Unwrap(CAST(r.B AS Uint32)))
+		WHEN r.N IS DISTINCT FROM BitCast((BitCast(r.A AS Uint32) & BitCast(r.B AS Uint32)) AS Int32)
 			THEN 1
 		ELSE 0
 	END as c60,
 	CASE
-		WHEN (Unwrap(CAST(r.A AS Uint32)) | Unwrap(CAST(r.B AS Uint32))) = r.C
+		WHEN BitCast((BitCast(r.A AS Uint32) | BitCast(r.B AS Uint32)) AS Int32) = r.C
 			THEN 1
 		ELSE 0
 	END as c61,
 	CASE
-		WHEN r.C < (Unwrap(CAST(r.A AS Uint32)) | Unwrap(CAST(r.B AS Uint32)))
+		WHEN r.C < BitCast((BitCast(r.A AS Uint32) | BitCast(r.B AS Uint32)) AS Int32)
 			THEN 1
 		ELSE 0
 	END as c62,
 	CASE
-		WHEN (Unwrap(CAST(r.A AS Uint32)) | Unwrap(CAST(r.B AS Uint32))) BETWEEN r.C AND r.A
+		WHEN BitCast((BitCast(r.A AS Uint32) | BitCast(r.B AS Uint32)) AS Int32) BETWEEN r.C AND r.A
 			THEN 1
 		ELSE 0
 	END as c63,
 	CASE
-		WHEN r.A BETWEEN (Unwrap(CAST(r.B AS Uint32)) | Unwrap(CAST(r.C AS Uint32))) AND r.A
+		WHEN r.A BETWEEN BitCast((BitCast(r.B AS Uint32) | BitCast(r.C AS Uint32)) AS Int32) AND r.A
 			THEN 1
 		ELSE 0
 	END as c64,
 	CASE
-		WHEN (Unwrap(CAST(r.A AS Uint32)) | Unwrap(CAST(r.B AS Uint32))) IN ($Ids0_1_6, $Ids0_2_6, $Ids0_3_6, $Ids0_4_6, $Ids0_5_6, $Ids0_6_6, $Ids0_7_6, $Ids0_8_6, $Ids0_9_6)
+		WHEN BitCast((BitCast(r.A AS Uint32) | BitCast(r.B AS Uint32)) AS Int32) IN ($Ids0_1_6, $Ids0_2_6, $Ids0_3_6, $Ids0_4_6, $Ids0_5_6, $Ids0_6_6, $Ids0_7_6, $Ids0_8_6, $Ids0_9_6)
 			THEN 1
 		ELSE 0
 	END as c65,
+	0 as c66,
 	CASE
-		WHEN (Unwrap(CAST(r.A AS Uint32)) | CAST(r.N AS Uint32)) IS NULL
-			THEN 1
-		ELSE 0
-	END as c66,
-	CASE
-		WHEN (Coalesce(r.S, ''u) || Unwrap(CAST(Unwrap(CAST(r.A AS Uint32)) | Unwrap(CAST(r.B AS Uint32)) AS Text))) LIKE 'x5%'u ESCAPE '~'s
+		WHEN (Coalesce(r.S, ''u) || Unwrap(CAST(BitCast((BitCast(r.A AS Uint32) | BitCast(r.B AS Uint32)) AS Int32) AS Text))) LIKE 'x5%'u ESCAPE '~'s
 			THEN 1
 		ELSE 0
 	END as c67,
 	CASE
-		WHEN (Unwrap(CAST(r.A AS Uint32)) | Unwrap(CAST(r.B AS Uint32))) <= r.C AND r.B < r.A
+		WHEN BitCast((BitCast(r.A AS Uint32) | BitCast(r.B AS Uint32)) AS Int32) <= r.C AND r.B < r.A
 			THEN 1
 		ELSE 0
 	END as c68,
 	CASE
-		WHEN (Unwrap(CAST(r.A AS Uint32)) | Unwrap(CAST(r.B AS Uint32))) IS DISTINCT FROM r.N
+		WHEN BitCast((BitCast(r.A AS Uint32) | BitCast(r.B AS Uint32)) AS Int32) IS DISTINCT FROM r.N
 			THEN 1
 		ELSE 0
 	END as c69,
 	CASE
-		WHEN r.N IS DISTINCT FROM (Unwrap(CAST(r.A AS Uint32)) | Unwrap(CAST(r.B AS Uint32)))
+		WHEN r.N IS DISTINCT FROM BitCast((BitCast(r.A AS Uint32) | BitCast(r.B AS Uint32)) AS Int32)
 			THEN 1
 		ELSE 0
 	END as c70,
 	CASE
-		WHEN (Unwrap(CAST(r.A AS Uint32)) ^ Unwrap(CAST(r.B AS Uint32))) = r.C
+		WHEN BitCast((BitCast(r.A AS Uint32) ^ BitCast(r.B AS Uint32)) AS Int32) = r.C
 			THEN 1
 		ELSE 0
 	END as c71,
 	CASE
-		WHEN r.C < (Unwrap(CAST(r.A AS Uint32)) ^ Unwrap(CAST(r.B AS Uint32)))
+		WHEN r.C < BitCast((BitCast(r.A AS Uint32) ^ BitCast(r.B AS Uint32)) AS Int32)
 			THEN 1
 		ELSE 0
 	END as c72,
 	CASE
-		WHEN (Unwrap(CAST(r.A AS Uint32)) ^ Unwrap(CAST(r.B AS Uint32))) BETWEEN r.C AND r.A
+		WHEN BitCast((BitCast(r.A AS Uint32) ^ BitCast(r.B AS Uint32)) AS Int32) BETWEEN r.C AND r.A
 			THEN 1
 		ELSE 0
 	END as c73,
 	CASE
-		WHEN r.A BETWEEN (Unwrap(CAST(r.B AS Uint32)) ^ Unwrap(CAST(r.C AS Uint32))) AND r.A
+		WHEN r.A BETWEEN BitCast((BitCast(r.B AS Uint32) ^ BitCast(r.C AS Uint32)) AS Int32) AND r.A
 			THEN 1
 		ELSE 0
 	END as c74,
 	CASE
-		WHEN (Unwrap(CAST(r.A AS Uint32)) ^ Unwrap(CAST(r.B AS Uint32))) IN ($Ids0_1_7, $Ids0_2_7, $Ids0_3_7, $Ids0_4_7, $Ids0_5_7, $Ids0_6_7, $Ids0_7_7, $Ids0_8_7, $Ids0_9_7)
+		WHEN BitCast((BitCast(r.A AS Uint32) ^ BitCast(r.B AS Uint32)) AS Int32) IN ($Ids0_1_7, $Ids0_2_7, $Ids0_3_7, $Ids0_4_7, $Ids0_5_7, $Ids0_6_7, $Ids0_7_7, $Ids0_8_7, $Ids0_9_7)
 			THEN 1
 		ELSE 0
 	END as c75,
+	0 as c76,
 	CASE
-		WHEN (Unwrap(CAST(r.A AS Uint32)) ^ CAST(r.N AS Uint32)) IS NULL
-			THEN 1
-		ELSE 0
-	END as c76,
-	CASE
-		WHEN (Coalesce(r.S, ''u) || Unwrap(CAST(Unwrap(CAST(r.A AS Uint32)) ^ Unwrap(CAST(r.B AS Uint32)) AS Text))) LIKE 'x5%'u ESCAPE '~'s
+		WHEN (Coalesce(r.S, ''u) || Unwrap(CAST(BitCast((BitCast(r.A AS Uint32) ^ BitCast(r.B AS Uint32)) AS Int32) AS Text))) LIKE 'x5%'u ESCAPE '~'s
 			THEN 1
 		ELSE 0
 	END as c77,
 	CASE
-		WHEN (Unwrap(CAST(r.A AS Uint32)) ^ Unwrap(CAST(r.B AS Uint32))) <= r.C AND r.B < r.A
+		WHEN BitCast((BitCast(r.A AS Uint32) ^ BitCast(r.B AS Uint32)) AS Int32) <= r.C AND r.B < r.A
 			THEN 1
 		ELSE 0
 	END as c78,
 	CASE
-		WHEN (Unwrap(CAST(r.A AS Uint32)) ^ Unwrap(CAST(r.B AS Uint32))) IS DISTINCT FROM r.N
+		WHEN BitCast((BitCast(r.A AS Uint32) ^ BitCast(r.B AS Uint32)) AS Int32) IS DISTINCT FROM r.N
 			THEN 1
 		ELSE 0
 	END as c79,
 	CASE
-		WHEN r.N IS DISTINCT FROM (Unwrap(CAST(r.A AS Uint32)) ^ Unwrap(CAST(r.B AS Uint32)))
+		WHEN r.N IS DISTINCT FROM BitCast((BitCast(r.A AS Uint32) ^ BitCast(r.B AS Uint32)) AS Int32)
 			THEN 1
 		ELSE 0
 	END as c80,
@@ -513,11 +505,11 @@ SELECT
 		ELSE 0
 	END as c82,
 	CASE
-		WHEN (~Unwrap(CAST(r.A AS Uint32))) = r.C THEN 1
+		WHEN BitCast((~BitCast(r.A AS Uint32)) AS Int32) = r.C THEN 1
 		ELSE 0
 	END as c83,
 	CASE
-		WHEN r.C = (~Unwrap(CAST(r.A AS Uint32))) THEN 1
+		WHEN r.C = BitCast((~BitCast(r.A AS Uint32)) AS Int32) THEN 1
 		ELSE 0
 	END as c84,
 	CASE
@@ -613,7 +605,7 @@ ORDER BY
 -- cell Predicate/Between(Or(a,b),c,a): green
 -- cell Predicate/Between(a,Or(b,c),a): green
 -- cell Predicate/In(Or(a,b)): green
--- cell Predicate/IsNull(Or(a,n)): green
+-- cell Predicate/IsNull(Or(a,n)): red
 -- cell Predicate/Like(Concat(s,Or(a,b))): green
 -- cell Predicate/NotAnd(Or(a,b)): green
 -- cell Predicate/Distinct(Or(a,b),n): green
@@ -623,7 +615,7 @@ ORDER BY
 -- cell Predicate/Between(Xor(a,b),c,a): green
 -- cell Predicate/Between(a,Xor(b,c),a): green
 -- cell Predicate/In(Xor(a,b)): green
--- cell Predicate/IsNull(Xor(a,n)): green
+-- cell Predicate/IsNull(Xor(a,n)): red
 -- cell Predicate/Like(Concat(s,Xor(a,b))): green
 -- cell Predicate/NotAnd(Xor(a,b)): green
 -- cell Predicate/Distinct(Xor(a,b),n): green
