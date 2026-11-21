@@ -20,7 +20,7 @@ FROM
 				(
 					SELECT
 						[g_2].[Month_1] as [Key_1],
-						SUM([g_2].[Qty]) / SUM(IIF([g_2].[Ok], 0, [g_2].[Qty])) as [c1]
+						Fix(SUM([g_2].[Qty]) / SUM(IIF([g_2].[Ok], 0, [g_2].[Qty]))) as [c1]
 					FROM
 						(
 							SELECT
