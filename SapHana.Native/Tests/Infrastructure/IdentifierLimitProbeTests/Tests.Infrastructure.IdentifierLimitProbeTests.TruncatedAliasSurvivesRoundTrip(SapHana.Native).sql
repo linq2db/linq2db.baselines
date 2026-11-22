@@ -1,0 +1,3 @@
+﻿-- SapHana.Native SapHana
+SELECT 1 AS "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" FROM "Person"
+
