@@ -15,14 +15,6 @@ DECLARE @low Date
 SET     @low = TIMESTAMP '2020-01-01 00:30:00.0000000'
 DECLARE @high Date
 SET     @high = TIMESTAMP '2020-01-03 00:30:00.0000000'
-DECLARE @low Date
-SET     @low = TIMESTAMP '2020-01-01 00:30:00.0000000'
-DECLARE @high Date
-SET     @high = TIMESTAMP '2020-01-03 00:30:00.0000000'
-DECLARE @low Date
-SET     @low = TIMESTAMP '2020-01-01 00:30:00.0000000'
-DECLARE @high Date
-SET     @high = TIMESTAMP '2020-01-03 00:30:00.0000000'
 DECLARE @low DateTime
 SET     @low = TIMESTAMP '2020-01-01 00:30:00.0000000'
 DECLARE @high DateTime
@@ -100,14 +92,6 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN "t1"."Subquery" BETWEEN ? AND ? THEN 1
-		ELSE 0
-	END,
-	CASE
-		WHEN "t1"."Subquery" >= ? AND "t1"."Subquery" <= ? THEN 1
-		ELSE 0
-	END,
-	CASE
 		WHEN "r"."Stamp" BETWEEN ? AND ? THEN 1
 		ELSE 0
 	END,
@@ -118,14 +102,6 @@ SELECT
 FROM
 	"BetweenDayRow" "r"
 		LEFT JOIN "BetweenDayRow" "d" ON "d"."Id" = "r"."Id" - 1
-		LEFT JOIN LATERAL (
-			SELECT
-				MAX("x"."Day") as "Subquery"
-			FROM
-				"BetweenDayRow" "x"
-			WHERE
-				"x"."Id" = "r"."Id"
-		) "t1" ON 1=1
 
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @low Date

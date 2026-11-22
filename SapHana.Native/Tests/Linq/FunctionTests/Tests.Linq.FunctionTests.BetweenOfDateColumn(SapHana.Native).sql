@@ -15,22 +15,14 @@ DECLARE @low_3 Date
 SET     @low_3 = TIMESTAMP '2020-01-01 00:30:00.0000000'
 DECLARE @high_3 Date
 SET     @high_3 = TIMESTAMP '2020-01-03 00:30:00.0000000'
-DECLARE @low_4 Date
+DECLARE @low_4 TimeStamp -- DateTime2
 SET     @low_4 = TIMESTAMP '2020-01-01 00:30:00.0000000'
-DECLARE @high_4 Date
+DECLARE @high_4 TimeStamp -- DateTime2
 SET     @high_4 = TIMESTAMP '2020-01-03 00:30:00.0000000'
-DECLARE @low_5 Date
+DECLARE @low_5 TimeStamp -- DateTime2
 SET     @low_5 = TIMESTAMP '2020-01-01 00:30:00.0000000'
-DECLARE @high_5 Date
+DECLARE @high_5 TimeStamp -- DateTime2
 SET     @high_5 = TIMESTAMP '2020-01-03 00:30:00.0000000'
-DECLARE @low_6 TimeStamp -- DateTime2
-SET     @low_6 = TIMESTAMP '2020-01-01 00:30:00.0000000'
-DECLARE @high_6 TimeStamp -- DateTime2
-SET     @high_6 = TIMESTAMP '2020-01-03 00:30:00.0000000'
-DECLARE @low_7 TimeStamp -- DateTime2
-SET     @low_7 = TIMESTAMP '2020-01-01 00:30:00.0000000'
-DECLARE @high_7 TimeStamp -- DateTime2
-SET     @high_7 = TIMESTAMP '2020-01-03 00:30:00.0000000'
 
 SELECT
 	CASE
@@ -100,34 +92,17 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN "t1"."Subquery" BETWEEN :"low_4" AND :"high_4" THEN 1
+		WHEN "r"."Stamp" BETWEEN :"low_4" AND :"high_4" THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN "t1"."Subquery" >= :"low_5" AND "t1"."Subquery" <= :"high_5"
-			THEN 1
-		ELSE 0
-	END,
-	CASE
-		WHEN "r"."Stamp" BETWEEN :"low_6" AND :"high_6" THEN 1
-		ELSE 0
-	END,
-	CASE
-		WHEN "r"."Stamp" >= :"low_7" AND "r"."Stamp" <= :"high_7"
+		WHEN "r"."Stamp" >= :"low_5" AND "r"."Stamp" <= :"high_5"
 			THEN 1
 		ELSE 0
 	END
 FROM
 	"BetweenDayRow" "r"
 		LEFT JOIN "BetweenDayRow" "d" ON "d"."Id" = "r"."Id" - 1
-		LEFT JOIN LATERAL (
-			SELECT
-				MAX("x"."Day") as "Subquery"
-			FROM
-				"BetweenDayRow" "x"
-			WHERE
-				"x"."Id" = "r"."Id"
-		) "t1" ON 1=1
 
 -- SapHana.Native SapHana
 DECLARE @low Date
