@@ -23,28 +23,11 @@ SELECT
 	`r`.`Day` < '2020-01-01 00:30:00' OR `r`.`Day` > '2020-01-03 00:30:00',
 	Coalesce(`d`.`Day`, '0001-01-01') NOT BETWEEN '2020-01-01 00:30:00' AND '2020-01-03 00:30:00',
 	Coalesce(`d`.`Day`, '0001-01-01') < '2020-01-01 00:30:00' OR Coalesce(`d`.`Day`, '0001-01-01') > '2020-01-03 00:30:00',
-	CASE
-		WHEN `t1`.`Subquery` BETWEEN @low AND @high THEN 1
-		ELSE 0
-	END,
-	CASE
-		WHEN `t1`.`Subquery` >= @low AND `t1`.`Subquery` <= @high
-			THEN 1
-		ELSE 0
-	END,
 	`r`.`Stamp` BETWEEN @low_1 AND @high_1,
 	`r`.`Stamp` >= @low_1 AND `r`.`Stamp` <= @high_1
 FROM
 	`BetweenDayRow` `r`
 		LEFT JOIN `BetweenDayRow` `d` ON `d`.`Id` = `r`.`Id` - 1
-		LEFT JOIN LATERAL (
-			SELECT
-				MAX(`x`.`Day`) as `Subquery`
-			FROM
-				`BetweenDayRow` `x`
-			WHERE
-				`x`.`Id` = `r`.`Id`
-		) `t1` ON 1=1
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @low Datetime -- DateTime
