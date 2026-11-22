@@ -8,6 +8,6 @@ SELECT
 FROM
 	Person p
 WHERE
-	(Unicode::Substring(p.FirstName, 0, 2 - 1) || ''u || Unicode::Substring(p.FirstName, 2 + 2 - 1)) = 'Jn'u AND
+	Unicode::Substring(p.FirstName, 0, 2 - 1) || ''u || Unicode::Substring(p.FirstName, 2 + 2 - 1) = 'Jn'u AND
 	p.PersonID = 1
 

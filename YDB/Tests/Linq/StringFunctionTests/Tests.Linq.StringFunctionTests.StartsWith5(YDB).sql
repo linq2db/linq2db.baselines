@@ -9,5 +9,5 @@ FROM
 	Person p1
 		CROSS JOIN Person p2
 WHERE
-	p1.PersonID = p2.PersonID AND Unicode::ReplaceAll(p1.FirstName, 'J'u, '%'u) LIKE (Unicode::ReplaceAll(Unicode::ReplaceAll(Unicode::ReplaceAll(Unicode::ReplaceAll(p2.FirstName, 'J'u, '%'u), '~'s, '~~'u), '%'u, '~%'u), '_'u, '~_'u) || '%'u) ESCAPE '~'s
+	p1.PersonID = p2.PersonID AND Unicode::ReplaceAll(p1.FirstName, 'J'u, '%'u) LIKE Unicode::ReplaceAll(Unicode::ReplaceAll(Unicode::ReplaceAll(Unicode::ReplaceAll(p2.FirstName, 'J'u, '%'u), '~'s, '~~'u), '%'u, '~%'u), '_'u, '~_'u) || '%'u ESCAPE '~'s
 

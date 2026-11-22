@@ -4,7 +4,7 @@ SELECT
 FROM
 	ConcatTestEntity e
 WHERE
-	(Coalesce(e.StrReq, ''u) || ' I'u) = 'Programmer I'u
+	Coalesce(e.StrReq, ''u) || ' I'u = 'Programmer I'u
 
 -- YDB Ydb
 SELECT

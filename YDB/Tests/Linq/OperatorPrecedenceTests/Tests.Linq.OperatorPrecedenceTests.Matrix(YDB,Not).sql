@@ -15,7 +15,7 @@ SELECT
 	BitCast((~BitCast((-r.B) AS Uint32)) AS Int32) as c13,
 	BitCast((~BitCast(BitCast((~BitCast(r.B AS Uint32)) AS Int32) AS Uint32)) AS Int32) as c14,
 	BitCast((~BitCast(-5 AS Uint32)) AS Int32) as c15,
-	BitCast((~BitCast(((-5) * r.B) AS Uint32)) AS Int32) as c16
+	BitCast((~BitCast((-5 * r.B) AS Uint32)) AS Int32) as c16
 FROM
 	PrecedenceRow r
 ORDER BY

@@ -31,14 +31,14 @@ SELECT
 	(r.A + r.B) / r.C as c29,
 	r.A / (r.B + r.C) as c30,
 	(r.A + -6) / r.C as c31,
-	r.A / (-r.B) as c32,
+	r.A / -r.B as c32,
 	(r.A - r.B) / r.C as c33,
 	(r.A + r.B) / r.C as c34,
-	r.A / (-r.B) / r.C as c35,
+	r.A / -r.B / r.C as c35,
 	BitCast((BitCast(r.A AS Uint32) & BitCast((-r.B) AS Uint32)) AS Int32) / r.C as c36,
 	BitCast((BitCast(r.A AS Uint32) ^ BitCast((-r.B) AS Uint32)) AS Int32) / r.C as c37,
 	r.A * BitCast((~BitCast(r.B AS Uint32)) AS Int32) / r.C as c38,
-	r.A * (-5) / r.C as c39,
+	r.A * -5 / r.C as c39,
 	BitCast((BitCast(r.A AS Uint32) & BitCast(-5 AS Uint32)) AS Int32) / r.C as c40
 FROM
 	PrecedenceRow r
@@ -47,7 +47,7 @@ ORDER BY
 
 -- YDB Ydb
 SELECT
-	r.A * (-5) / r.C as c1,
+	r.A * -5 / r.C as c1,
 	BitCast((BitCast(r.A AS Uint32) & BitCast(-5 AS Uint32)) AS Int32) / r.C as c2
 FROM
 	PrecedenceRow r

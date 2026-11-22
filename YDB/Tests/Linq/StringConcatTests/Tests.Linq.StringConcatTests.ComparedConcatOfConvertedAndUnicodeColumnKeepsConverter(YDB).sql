@@ -7,7 +7,7 @@ SELECT
 FROM
 	ConvertedConcatTitleRow p
 WHERE
-	(p.Conv || p.Title) = $bound
+	p.Conv || p.Title = $bound
 
 -- YDB Ydb
 DECLARE bound Text(5) -- AnsiString
@@ -18,7 +18,7 @@ SELECT
 FROM
 	ConvertedConcatTitleRow p
 WHERE
-	$bound = (p.Conv || p.Title)
+	$bound = p.Conv || p.Title
 
 -- YDB Ydb
 DECLARE Ids0_1 Text(5) -- String
@@ -29,5 +29,5 @@ SELECT
 FROM
 	ConvertedConcatTitleRow p
 WHERE
-	(p.Conv || p.Title) IN ($Ids0_1)
+	p.Conv || p.Title IN ($Ids0_1)
 

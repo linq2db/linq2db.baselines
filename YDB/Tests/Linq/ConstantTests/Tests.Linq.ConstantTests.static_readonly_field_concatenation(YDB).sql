@@ -7,7 +7,7 @@ SELECT
 FROM
 	TestConstantsData e
 WHERE
-	(Coalesce(e.StringValue, ''u) || '1'u) = 'StrValue1'u
+	Coalesce(e.StringValue, ''u) || '1'u = 'StrValue1'u
 
 -- YDB Ydb
 SELECT

@@ -15,5 +15,5 @@ FROM
 			Child g_1
 	) p
 WHERE
-	(p.Key_1 || '2'u) = '22'u
+	p.Key_1 || '2'u = '22'u
 

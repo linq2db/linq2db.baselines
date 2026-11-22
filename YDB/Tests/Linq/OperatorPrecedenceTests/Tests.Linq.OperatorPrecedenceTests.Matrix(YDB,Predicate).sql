@@ -171,7 +171,7 @@ SELECT
 		ELSE 0
 	END as c6,
 	CASE
-		WHEN (Coalesce(r.S, ''u) || Unwrap(CAST(r.A + r.B AS Text))) LIKE 'x5%'u ESCAPE '~'s
+		WHEN Coalesce(r.S, ''u) || Unwrap(CAST(r.A + r.B AS Text)) LIKE 'x5%'u ESCAPE '~'s
 			THEN 1
 		ELSE 0
 	END as c7,
@@ -213,7 +213,7 @@ SELECT
 		ELSE 0
 	END as c16,
 	CASE
-		WHEN (Coalesce(r.S, ''u) || Unwrap(CAST(r.A - r.B AS Text))) LIKE 'x5%'u ESCAPE '~'s
+		WHEN Coalesce(r.S, ''u) || Unwrap(CAST(r.A - r.B AS Text)) LIKE 'x5%'u ESCAPE '~'s
 			THEN 1
 		ELSE 0
 	END as c17,
@@ -255,7 +255,7 @@ SELECT
 		ELSE 0
 	END as c26,
 	CASE
-		WHEN (Coalesce(r.S, ''u) || Unwrap(CAST(r.A * r.B AS Text))) LIKE 'x5%'u ESCAPE '~'s
+		WHEN Coalesce(r.S, ''u) || Unwrap(CAST(r.A * r.B AS Text)) LIKE 'x5%'u ESCAPE '~'s
 			THEN 1
 		ELSE 0
 	END as c27,
@@ -297,7 +297,7 @@ SELECT
 		ELSE 0
 	END as c36,
 	CASE
-		WHEN (Coalesce(r.S, ''u) || Unwrap(CAST(r.A / r.B AS Text))) LIKE 'x5%'u ESCAPE '~'s
+		WHEN Coalesce(r.S, ''u) || Unwrap(CAST(r.A / r.B AS Text)) LIKE 'x5%'u ESCAPE '~'s
 			THEN 1
 		ELSE 0
 	END as c37,
@@ -339,7 +339,7 @@ SELECT
 		ELSE 0
 	END as c46,
 	CASE
-		WHEN (Coalesce(r.S, ''u) || Unwrap(CAST(r.A % r.B AS Text))) LIKE 'x5%'u ESCAPE '~'s
+		WHEN Coalesce(r.S, ''u) || Unwrap(CAST(r.A % r.B AS Text)) LIKE 'x5%'u ESCAPE '~'s
 			THEN 1
 		ELSE 0
 	END as c47,
@@ -385,7 +385,7 @@ SELECT
 		ELSE 0
 	END as c56,
 	CASE
-		WHEN (Coalesce(r.S, ''u) || Unwrap(CAST(BitCast((BitCast(r.A AS Uint32) & BitCast(r.B AS Uint32)) AS Int32) AS Text))) LIKE 'x5%'u ESCAPE '~'s
+		WHEN Coalesce(r.S, ''u) || Unwrap(CAST(BitCast((BitCast(r.A AS Uint32) & BitCast(r.B AS Uint32)) AS Int32) AS Text)) LIKE 'x5%'u ESCAPE '~'s
 			THEN 1
 		ELSE 0
 	END as c57,
@@ -429,9 +429,13 @@ SELECT
 			THEN 1
 		ELSE 0
 	END as c65,
-	0 as c66,
 	CASE
-		WHEN (Coalesce(r.S, ''u) || Unwrap(CAST(BitCast((BitCast(r.A AS Uint32) | BitCast(r.B AS Uint32)) AS Int32) AS Text))) LIKE 'x5%'u ESCAPE '~'s
+		WHEN BitCast(r.A AS Uint32) | BitCast(r.N AS Uint32) IS NULL
+			THEN 1
+		ELSE 0
+	END as c66,
+	CASE
+		WHEN Coalesce(r.S, ''u) || Unwrap(CAST(BitCast((BitCast(r.A AS Uint32) | BitCast(r.B AS Uint32)) AS Int32) AS Text)) LIKE 'x5%'u ESCAPE '~'s
 			THEN 1
 		ELSE 0
 	END as c67,
@@ -475,9 +479,13 @@ SELECT
 			THEN 1
 		ELSE 0
 	END as c75,
-	0 as c76,
 	CASE
-		WHEN (Coalesce(r.S, ''u) || Unwrap(CAST(BitCast((BitCast(r.A AS Uint32) ^ BitCast(r.B AS Uint32)) AS Int32) AS Text))) LIKE 'x5%'u ESCAPE '~'s
+		WHEN BitCast(r.A AS Uint32) ^ BitCast(r.N AS Uint32) IS NULL
+			THEN 1
+		ELSE 0
+	END as c76,
+	CASE
+		WHEN Coalesce(r.S, ''u) || Unwrap(CAST(BitCast((BitCast(r.A AS Uint32) ^ BitCast(r.B AS Uint32)) AS Int32) AS Text)) LIKE 'x5%'u ESCAPE '~'s
 			THEN 1
 		ELSE 0
 	END as c77,
@@ -605,7 +613,7 @@ ORDER BY
 -- cell Predicate/Between(Or(a,b),c,a): green
 -- cell Predicate/Between(a,Or(b,c),a): green
 -- cell Predicate/In(Or(a,b)): green
--- cell Predicate/IsNull(Or(a,n)): red
+-- cell Predicate/IsNull(Or(a,n)): green
 -- cell Predicate/Like(Concat(s,Or(a,b))): green
 -- cell Predicate/NotAnd(Or(a,b)): green
 -- cell Predicate/Distinct(Or(a,b),n): green
@@ -615,7 +623,7 @@ ORDER BY
 -- cell Predicate/Between(Xor(a,b),c,a): green
 -- cell Predicate/Between(a,Xor(b,c),a): green
 -- cell Predicate/In(Xor(a,b)): green
--- cell Predicate/IsNull(Xor(a,n)): red
+-- cell Predicate/IsNull(Xor(a,n)): green
 -- cell Predicate/Like(Concat(s,Xor(a,b))): green
 -- cell Predicate/NotAnd(Xor(a,b)): green
 -- cell Predicate/Distinct(Xor(a,b),n): green

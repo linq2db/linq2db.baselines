@@ -13,7 +13,7 @@ SELECT
 	r.B as B,
 	-BitCast((~BitCast(r.B AS Uint32)) AS Int32) as c11,
 	-(-5) as c12,
-	-((-5) * r.B) as c13
+	-(-5 * r.B) as c13
 FROM
 	PrecedenceRow r
 ORDER BY

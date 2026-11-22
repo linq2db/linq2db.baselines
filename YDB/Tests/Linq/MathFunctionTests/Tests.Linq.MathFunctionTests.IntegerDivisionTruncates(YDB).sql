@@ -21,7 +21,7 @@ FROM
 
 -- YDB Ydb
 SELECT
-	(p.ID * (-7) - 1) / 2 as c1
+	(p.ID * -7 - 1) / 2 as c1
 FROM
 	LinqDataTypes p
 ORDER BY

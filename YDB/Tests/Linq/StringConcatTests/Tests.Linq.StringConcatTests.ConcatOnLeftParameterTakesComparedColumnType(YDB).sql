@@ -7,7 +7,7 @@ SELECT
 FROM
 	ConcatProduct p
 WHERE
-	(p.Sku || Coalesce($suffix, ''u)) = p.Title
+	p.Sku || Coalesce($suffix, ''u) = p.Title
 
 -- YDB Ydb
 SELECT
