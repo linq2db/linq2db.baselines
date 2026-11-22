@@ -1,9 +1,9 @@
 ﻿-- YDB Ydb
 SELECT
-	t1.ParentID as ParentID,
-	t1.Value1 as Value1
+	`тбл`.ParentID as ParentID,
+	`тбл`.Value1 as Value1
 FROM
-	Parent t1
+	Parent `тбл`
 WHERE
-	t1.ParentID = 3
+	`тбл`.ParentID = 3
 
