@@ -23,29 +23,11 @@ SELECT
 	"r"."Day" < DATE '2020-01-01' OR "r"."Day" > DATE '2020-01-03',
 	Coalesce("d"."Day", DATE '0001-01-01') NOT BETWEEN DATE '2020-01-01' AND DATE '2020-01-03',
 	Coalesce("d"."Day", DATE '0001-01-01') < DATE '2020-01-01' OR Coalesce("d"."Day", DATE '0001-01-01') > DATE '2020-01-03',
-	CASE
-		WHEN "t1"."Subquery" BETWEEN CAST(@low AS Date) AND CAST(@high AS Date)
-			THEN TRUE
-		ELSE FALSE
-	END,
-	CASE
-		WHEN "t1"."Subquery" >= CAST(@low AS Date) AND "t1"."Subquery" <= CAST(@high AS Date)
-			THEN TRUE
-		ELSE FALSE
-	END,
 	"r"."Stamp" BETWEEN CAST(@low_1 AS TimeStamp) AND CAST(@high_1 AS TimeStamp),
 	"r"."Stamp" >= CAST(@low_1 AS TimeStamp) AND "r"."Stamp" <= CAST(@high_1 AS TimeStamp)
 FROM
 	"BetweenDayRow" "r"
 		LEFT JOIN "BetweenDayRow" "d" ON "d"."Id" = "r"."Id" - 1
-		LEFT JOIN LATERAL (
-			SELECT
-				MAX("x"."Day") as "Subquery"
-			FROM
-				"BetweenDayRow" "x"
-			WHERE
-				"x"."Id" = "r"."Id"
-		) "t1" ON 1=1
 
 -- Firebird.5 Firebird4
 DECLARE @low Date
