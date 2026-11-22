@@ -63,7 +63,7 @@ FROM
 
 -- SapHana.Native SapHana
 SELECT
-	"p"."ID" + (-5) - BITAND("p"."ID", -5)
+	"p"."ID" + -5 - BITAND("p"."ID", -5)
 FROM
 	"LinqDataTypes" "p"
 ORDER BY
@@ -84,7 +84,7 @@ FROM
 
 -- SapHana.Native SapHana
 SELECT
-	CAST("p"."ID" AS BigInt) + (-6) - BITAND(CAST("p"."ID" AS BigInt), -6) * 2
+	CAST("p"."ID" AS BigInt) + -6 - BITAND(CAST("p"."ID" AS BigInt), -6) * 2
 FROM
 	"LinqDataTypes" "p"
 ORDER BY

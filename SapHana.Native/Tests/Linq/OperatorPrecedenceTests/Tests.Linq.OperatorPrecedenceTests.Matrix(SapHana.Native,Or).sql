@@ -39,11 +39,11 @@ SELECT
 	"r"."A" + ("r"."B" + "r"."C") - BITAND("r"."A", "r"."B" + "r"."C"),
 	("r"."A" + -6) + "r"."C" - BITAND("r"."A" + -6, "r"."C"),
 	"r"."A" - "r"."B" - BITAND("r"."A", -"r"."B"),
-	(-"r"."B") + "r"."C" - BITAND(-"r"."B", "r"."C"),
+	-"r"."B" + "r"."C" - BITAND(-"r"."B", "r"."C"),
 	"r"."A" - "r"."B" + "r"."C" - BITAND("r"."A" - "r"."B", "r"."C"),
 	"r"."A" + "r"."B" + "r"."C" - BITAND("r"."A" + "r"."B", "r"."C"),
-	"r"."A" * (-"r"."B") + "r"."C" - BITAND("r"."A" * (-"r"."B"), "r"."C"),
-	CAST("r"."A" / (-"r"."B") AS Integer) + "r"."C" - BITAND(CAST("r"."A" / (-"r"."B") AS Integer), "r"."C"),
+	"r"."A" * -"r"."B" + "r"."C" - BITAND("r"."A" * -"r"."B", "r"."C"),
+	CAST("r"."A" / -"r"."B" AS Integer) + "r"."C" - BITAND(CAST("r"."A" / -"r"."B" AS Integer), "r"."C"),
 	MOD("r"."A", -"r"."B") + "r"."C" - BITAND(MOD("r"."A", -"r"."B"), "r"."C"),
 	BITAND("r"."A", -"r"."B") + "r"."C" - BITAND(BITAND("r"."A", -"r"."B"), "r"."C"),
 	"r"."A" - "r"."B" - BITAND("r"."A", -"r"."B") + "r"."C" - BITAND("r"."A" - "r"."B" - BITAND("r"."A", -"r"."B"), "r"."C"),
@@ -57,15 +57,15 @@ SELECT
 	BITAND("r"."A", BITNOT("r"."B")) + "r"."C" - BITAND(BITAND("r"."A", BITNOT("r"."B")), "r"."C"),
 	"r"."A" + BITNOT("r"."B") - BITAND("r"."A", BITNOT("r"."B")) + "r"."C" - BITAND("r"."A" + BITNOT("r"."B") - BITAND("r"."A", BITNOT("r"."B")), "r"."C"),
 	"r"."A" + BITNOT("r"."B") - BITAND("r"."A", BITNOT("r"."B")) * 2 + "r"."C" - BITAND("r"."A" + BITNOT("r"."B") - BITAND("r"."A", BITNOT("r"."B")) * 2, "r"."C"),
-	"r"."A" + (-5) - BITAND("r"."A", -5),
-	(-5) + "r"."C" - BITAND(-5, "r"."C"),
-	"r"."A" + (-5) + "r"."C" - BITAND("r"."A" + (-5), "r"."C"),
-	"r"."A" - (-5) + "r"."C" - BITAND("r"."A" - (-5), "r"."C"),
-	"r"."A" * (-5) + "r"."C" - BITAND("r"."A" * (-5), "r"."C"),
+	"r"."A" + -5 - BITAND("r"."A", -5),
+	-5 + "r"."C" - BITAND(-5, "r"."C"),
+	"r"."A" + -5 + "r"."C" - BITAND("r"."A" + -5, "r"."C"),
+	"r"."A" - -5 + "r"."C" - BITAND("r"."A" - -5, "r"."C"),
+	"r"."A" * -5 + "r"."C" - BITAND("r"."A" * -5, "r"."C"),
 	MOD("r"."A", -5) + "r"."C" - BITAND(MOD("r"."A", -5), "r"."C"),
 	BITAND("r"."A", -5) + "r"."C" - BITAND(BITAND("r"."A", -5), "r"."C"),
-	"r"."A" + (-5) - BITAND("r"."A", -5) + "r"."C" - BITAND("r"."A" + (-5) - BITAND("r"."A", -5), "r"."C"),
-	"r"."A" + (-5) - BITAND("r"."A", -5) * 2 + "r"."C" - BITAND("r"."A" + (-5) - BITAND("r"."A", -5) * 2, "r"."C")
+	"r"."A" + -5 - BITAND("r"."A", -5) + "r"."C" - BITAND("r"."A" + -5 - BITAND("r"."A", -5), "r"."C"),
+	"r"."A" + -5 - BITAND("r"."A", -5) * 2 + "r"."C" - BITAND("r"."A" + -5 - BITAND("r"."A", -5) * 2, "r"."C")
 FROM
 	"PrecedenceRow" "r"
 ORDER BY
@@ -73,15 +73,15 @@ ORDER BY
 
 -- SapHana.Native SapHana
 SELECT
-	"r"."A" + (-5) - BITAND("r"."A", -5),
-	(-5) + "r"."C" - BITAND(-5, "r"."C"),
-	"r"."A" + (-5) + "r"."C" - BITAND("r"."A" + (-5), "r"."C"),
-	"r"."A" - (-5) + "r"."C" - BITAND("r"."A" - (-5), "r"."C"),
-	"r"."A" * (-5) + "r"."C" - BITAND("r"."A" * (-5), "r"."C"),
+	"r"."A" + -5 - BITAND("r"."A", -5),
+	-5 + "r"."C" - BITAND(-5, "r"."C"),
+	"r"."A" + -5 + "r"."C" - BITAND("r"."A" + -5, "r"."C"),
+	"r"."A" - -5 + "r"."C" - BITAND("r"."A" - -5, "r"."C"),
+	"r"."A" * -5 + "r"."C" - BITAND("r"."A" * -5, "r"."C"),
 	MOD("r"."A", -5) + "r"."C" - BITAND(MOD("r"."A", -5), "r"."C"),
 	BITAND("r"."A", -5) + "r"."C" - BITAND(BITAND("r"."A", -5), "r"."C"),
-	"r"."A" + (-5) - BITAND("r"."A", -5) + "r"."C" - BITAND("r"."A" + (-5) - BITAND("r"."A", -5), "r"."C"),
-	"r"."A" + (-5) - BITAND("r"."A", -5) * 2 + "r"."C" - BITAND("r"."A" + (-5) - BITAND("r"."A", -5) * 2, "r"."C")
+	"r"."A" + -5 - BITAND("r"."A", -5) + "r"."C" - BITAND("r"."A" + -5 - BITAND("r"."A", -5), "r"."C"),
+	"r"."A" + -5 - BITAND("r"."A", -5) * 2 + "r"."C" - BITAND("r"."A" + -5 - BITAND("r"."A", -5) * 2, "r"."C")
 FROM
 	"PrecedenceRow" "r"
 ORDER BY

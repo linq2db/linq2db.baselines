@@ -21,7 +21,7 @@ FROM
 
 -- SapHana.Odbc SapHanaOdbc
 SELECT
-	CAST(("p"."ID" * (-7) - 1) / 2 AS Integer)
+	CAST(("p"."ID" * -7 - 1) / 2 AS Integer)
 FROM
 	"LinqDataTypes" "p"
 ORDER BY

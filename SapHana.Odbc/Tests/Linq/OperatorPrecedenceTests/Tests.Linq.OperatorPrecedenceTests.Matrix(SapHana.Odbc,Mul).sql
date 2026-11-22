@@ -37,10 +37,10 @@ SELECT
 	("r"."A" + "r"."B") * "r"."C",
 	"r"."A" * ("r"."B" + "r"."C"),
 	("r"."A" + -6) * "r"."C",
-	"r"."A" * (-"r"."B"),
+	"r"."A" * -"r"."B",
 	("r"."A" - "r"."B") * "r"."C",
 	("r"."A" + "r"."B") * "r"."C",
-	CAST("r"."A" / (-"r"."B") AS Integer) * "r"."C",
+	CAST("r"."A" / -"r"."B" AS Integer) * "r"."C",
 	BITAND("r"."A", -"r"."B") * "r"."C",
 	("r"."A" - "r"."B" - BITAND("r"."A", -"r"."B")) * "r"."C",
 	("r"."A" - "r"."B" - BITAND("r"."A", -"r"."B") * 2) * "r"."C",
@@ -53,15 +53,15 @@ SELECT
 	BITAND("r"."A", BITNOT("r"."B")) * "r"."C",
 	("r"."A" + BITNOT("r"."B") - BITAND("r"."A", BITNOT("r"."B"))) * "r"."C",
 	("r"."A" + BITNOT("r"."B") - BITAND("r"."A", BITNOT("r"."B")) * 2) * "r"."C",
-	"r"."A" * (-5),
-	(-5) * "r"."C",
-	("r"."A" + (-5)) * "r"."C",
-	("r"."A" - (-5)) * "r"."C",
-	"r"."A" * (-5) * "r"."C",
+	"r"."A" * -5,
+	-5 * "r"."C",
+	("r"."A" + -5) * "r"."C",
+	("r"."A" - -5) * "r"."C",
+	"r"."A" * -5 * "r"."C",
 	MOD("r"."A", -5) * "r"."C",
 	BITAND("r"."A", -5) * "r"."C",
-	("r"."A" + (-5) - BITAND("r"."A", -5)) * "r"."C",
-	("r"."A" + (-5) - BITAND("r"."A", -5) * 2) * "r"."C"
+	("r"."A" + -5 - BITAND("r"."A", -5)) * "r"."C",
+	("r"."A" + -5 - BITAND("r"."A", -5) * 2) * "r"."C"
 FROM
 	"PrecedenceRow" "r"
 ORDER BY
@@ -69,15 +69,15 @@ ORDER BY
 
 -- SapHana.Odbc SapHanaOdbc
 SELECT
-	"r"."A" * (-5),
-	(-5) * "r"."C",
-	("r"."A" + (-5)) * "r"."C",
-	("r"."A" - (-5)) * "r"."C",
-	"r"."A" * (-5) * "r"."C",
+	"r"."A" * -5,
+	-5 * "r"."C",
+	("r"."A" + -5) * "r"."C",
+	("r"."A" - -5) * "r"."C",
+	"r"."A" * -5 * "r"."C",
 	MOD("r"."A", -5) * "r"."C",
 	BITAND("r"."A", -5) * "r"."C",
-	("r"."A" + (-5) - BITAND("r"."A", -5)) * "r"."C",
-	("r"."A" + (-5) - BITAND("r"."A", -5) * 2) * "r"."C"
+	("r"."A" + -5 - BITAND("r"."A", -5)) * "r"."C",
+	("r"."A" + -5 - BITAND("r"."A", -5) * 2) * "r"."C"
 FROM
 	"PrecedenceRow" "r"
 ORDER BY
