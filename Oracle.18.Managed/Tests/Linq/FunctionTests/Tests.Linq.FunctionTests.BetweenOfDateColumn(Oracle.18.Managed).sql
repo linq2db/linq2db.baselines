@@ -76,14 +76,6 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN t1."Subquery" BETWEEN :low AND :high THEN 1
-		ELSE 0
-	END,
-	CASE
-		WHEN t1."Subquery" >= :low AND t1."Subquery" <= :high THEN 1
-		ELSE 0
-	END,
-	CASE
 		WHEN r."Stamp" BETWEEN :low_1 AND :high_1 THEN 1
 		ELSE 0
 	END,
@@ -94,14 +86,6 @@ SELECT
 FROM
 	"BetweenDayRow" r
 		LEFT JOIN "BetweenDayRow" d ON d."Id" = r."Id" - 1
-		OUTER APPLY (
-			SELECT
-				MAX(x."Day") as "Subquery"
-			FROM
-				"BetweenDayRow" x
-			WHERE
-				x."Id" = r."Id"
-		) t1
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @low Date
