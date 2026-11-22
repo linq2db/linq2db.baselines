@@ -23,27 +23,11 @@ SELECT
 	r."Day" < '2020-01-01'::DATE OR r."Day" > '2020-01-03'::DATE,
 	Coalesce(d."Day", '0001-01-01'::DATE) NOT BETWEEN '2020-01-01'::DATE AND '2020-01-03'::DATE,
 	Coalesce(d."Day", '0001-01-01'::DATE) < '2020-01-01'::DATE OR Coalesce(d."Day", '0001-01-01'::DATE) > '2020-01-03'::DATE,
-	CASE
-		WHEN t1.Subquery BETWEEN $low AND $high THEN True
-		ELSE False
-	END,
-	CASE
-		WHEN t1.Subquery >= $low AND t1.Subquery <= $high THEN True
-		ELSE False
-	END,
 	r.Stamp BETWEEN $low_1 AND $high_1,
 	r.Stamp >= $low_1 AND r.Stamp <= $high_1
 FROM
 	BetweenDayRow r
 		LEFT JOIN BetweenDayRow d ON d.Id = r.Id - 1
-		LEFT JOIN LATERAL (
-			SELECT
-				MAX(x."Day") as Subquery
-			FROM
-				BetweenDayRow x
-			WHERE
-				x.Id = r.Id
-		) t1 ON 1=1
 
 -- DuckDB
 DECLARE $low DATE -- Date
