@@ -63,7 +63,7 @@ FROM
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	CAST(`p`.`ID` | (-5) AS SIGNED)
+	CAST(`p`.`ID` | -5 AS SIGNED)
 FROM
 	`LinqDataTypes` `p`
 ORDER BY
@@ -84,7 +84,7 @@ FROM
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	CAST(CAST(`p`.`ID` AS SIGNED) ^ (-6) AS SIGNED)
+	CAST(CAST(`p`.`ID` AS SIGNED) ^ -6 AS SIGNED)
 FROM
 	`LinqDataTypes` `p`
 ORDER BY
@@ -105,7 +105,7 @@ FROM
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	CAST(`p`.`ID` & (-3) AS SIGNED)
+	CAST(`p`.`ID` & -3 AS SIGNED)
 FROM
 	`LinqDataTypes` `p`
 ORDER BY
@@ -168,7 +168,7 @@ FROM
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	CAST(CAST(`p`.`ID` AS SIGNED) & (`p`.`ID` - 10) AS SIGNED)
+	CAST(CAST(`p`.`ID` AS SIGNED) & `p`.`ID` - 10 AS SIGNED)
 FROM
 	`LinqDataTypes` `p`
 ORDER BY

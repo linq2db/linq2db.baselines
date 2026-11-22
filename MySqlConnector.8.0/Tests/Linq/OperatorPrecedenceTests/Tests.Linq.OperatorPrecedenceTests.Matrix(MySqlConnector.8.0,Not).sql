@@ -15,7 +15,7 @@ SELECT
 	CAST(~(-`r`.`B`) AS SIGNED),
 	CAST(~CAST(~`r`.`B` AS SIGNED) AS SIGNED),
 	CAST(~(-5) AS SIGNED),
-	CAST(~((-5) * `r`.`B`) AS SIGNED)
+	CAST(~(-5 * `r`.`B`) AS SIGNED)
 FROM
 	`PrecedenceRow` `r`
 ORDER BY

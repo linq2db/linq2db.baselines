@@ -13,7 +13,7 @@ SELECT
 	`r`.`B`,
 	-CAST(~`r`.`B` AS SIGNED),
 	-(-5),
-	-((-5) * `r`.`B`)
+	-(-5 * `r`.`B`)
 FROM
 	`PrecedenceRow` `r`
 ORDER BY

@@ -280,7 +280,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN (`r`.`A` | `r`.`N`) IS NULL THEN 1
+		WHEN `r`.`A` | `r`.`N` IS NULL THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -325,7 +325,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN (`r`.`A` ^ `r`.`N`) IS NULL THEN 1
+		WHEN `r`.`A` ^ `r`.`N` IS NULL THEN 1
 		ELSE 0
 	END,
 	CASE

@@ -21,7 +21,7 @@ FROM
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 SELECT
-	(`p`.`ID` * (-7) - 1) DIV 2
+	(`p`.`ID` * -7 - 1) DIV 2
 FROM
 	`LinqDataTypes` `p`
 ORDER BY

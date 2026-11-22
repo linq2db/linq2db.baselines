@@ -1,6 +1,6 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 SELECT
-	CAST(CAST(~CAST(`p`.`ID` | (-5) AS SIGNED) AS SIGNED) & 7 AS SIGNED)
+	CAST(CAST(~CAST(`p`.`ID` | -5 AS SIGNED) AS SIGNED) & 7 AS SIGNED)
 FROM
 	`LinqDataTypes` `p`
 ORDER BY

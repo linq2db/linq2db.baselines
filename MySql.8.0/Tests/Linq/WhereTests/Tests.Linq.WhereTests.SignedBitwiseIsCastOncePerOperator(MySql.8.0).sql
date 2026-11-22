@@ -1,6 +1,6 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 SELECT
-	CAST(CAST(~CAST(`p`.`ID` | (-5) AS SIGNED) AS SIGNED) & 7 AS SIGNED)
+	CAST(CAST(~CAST(`p`.`ID` | -5 AS SIGNED) AS SIGNED) & 7 AS SIGNED)
 FROM
 	`LinqDataTypes` `p`
 ORDER BY

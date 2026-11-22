@@ -21,7 +21,7 @@ FROM
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 SELECT
-	(`p`.`ID` * (-7) - 1) DIV 2
+	(`p`.`ID` * -7 - 1) DIV 2
 FROM
 	`LinqDataTypes` `p`
 ORDER BY

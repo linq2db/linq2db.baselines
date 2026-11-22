@@ -1,6 +1,6 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 SELECT
-	CAST(CAST(~CAST(`p`.`ID` | (-5) AS SIGNED) AS SIGNED) & 7 AS SIGNED)
+	CAST(CAST(~CAST(`p`.`ID` | -5 AS SIGNED) AS SIGNED) & 7 AS SIGNED)
 FROM
 	`LinqDataTypes` `p`
 ORDER BY
