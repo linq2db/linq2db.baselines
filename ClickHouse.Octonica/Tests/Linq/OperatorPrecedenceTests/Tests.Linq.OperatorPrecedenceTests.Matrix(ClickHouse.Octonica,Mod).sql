@@ -52,12 +52,12 @@ SELECT
 	bitAnd(r.A, bitNot(r.B)) % r.C,
 	bitOr(r.A, bitNot(r.B)) % r.C,
 	bitXor(r.A, bitNot(r.B)) % r.C,
-	r.A % (-5),
-	(-5) % r.C,
-	(r.A + (-5)) % r.C,
-	(r.A - (-5)) % r.C,
-	r.A * (-5) % r.C,
-	r.A % (-5) % r.C,
+	r.A % -5,
+	-5 % r.C,
+	(r.A + -5) % r.C,
+	(r.A - -5) % r.C,
+	r.A * -5 % r.C,
+	r.A % -5 % r.C,
 	bitAnd(r.A, -5) % r.C,
 	bitOr(r.A, -5) % r.C,
 	bitXor(r.A, -5) % r.C
@@ -68,12 +68,12 @@ ORDER BY
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
-	r.A % (-5),
-	(-5) % r.C,
-	(r.A + (-5)) % r.C,
-	(r.A - (-5)) % r.C,
-	r.A * (-5) % r.C,
-	r.A % (-5) % r.C,
+	r.A % -5,
+	-5 % r.C,
+	(r.A + -5) % r.C,
+	(r.A - -5) % r.C,
+	r.A * -5 % r.C,
+	r.A % -5 % r.C,
 	bitAnd(r.A, -5) % r.C,
 	bitOr(r.A, -5) % r.C,
 	bitXor(r.A, -5) % r.C

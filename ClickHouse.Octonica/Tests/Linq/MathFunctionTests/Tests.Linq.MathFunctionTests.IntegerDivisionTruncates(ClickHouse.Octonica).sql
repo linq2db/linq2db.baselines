@@ -21,7 +21,7 @@ FROM
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
-	intDiv(p.ID * (-7) - 1, 2)
+	intDiv(p.ID * -7 - 1, 2)
 FROM
 	LinqDataTypes p
 ORDER BY
