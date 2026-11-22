@@ -1,0 +1,12 @@
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
+SELECT
+	-(-5 * `r`.`A`),
+	-(`r`.`A` * -5),
+	-(`r`.`A` - -5),
+	-(-5) + `r`.`A`,
+	-(-`r`.`A` + `r`.`B`)
+FROM
+	`PrecedenceRow` `r`
+ORDER BY
+	`r`.`Id`
+
