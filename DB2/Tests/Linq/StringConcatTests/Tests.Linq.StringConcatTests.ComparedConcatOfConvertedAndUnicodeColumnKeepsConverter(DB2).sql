@@ -7,7 +7,7 @@ SELECT
 FROM
 	"ConvertedConcatTitleRow" "p"
 WHERE
-	("p"."Conv" || "p"."Title") = @bound
+	"p"."Conv" || "p"."Title" = @bound
 
 -- DB2 DB2.LUW DB2LUW
 DECLARE @bound VarChar(5) -- String
@@ -18,7 +18,7 @@ SELECT
 FROM
 	"ConvertedConcatTitleRow" "p"
 WHERE
-	@bound = ("p"."Conv" || "p"."Title")
+	@bound = "p"."Conv" || "p"."Title"
 
 -- DB2 DB2.LUW DB2LUW
 SELECT
@@ -26,5 +26,5 @@ SELECT
 FROM
 	"ConvertedConcatTitleRow" "p"
 WHERE
-	("p"."Conv" || "p"."Title") IN ('x:c1T')
+	"p"."Conv" || "p"."Title" IN ('x:c1T')
 

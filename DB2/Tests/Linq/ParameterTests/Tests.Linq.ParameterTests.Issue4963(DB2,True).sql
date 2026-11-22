@@ -2,7 +2,7 @@
 UPDATE
 	"Issue4963Table" "t1"
 SET
-	"Field" = CAST(CAST("t1"."Field" AS Int) + (-1) AS SmallInt)
+	"Field" = CAST(CAST("t1"."Field" AS Int) + -1 AS SmallInt)
 
 -- DB2 DB2.LUW DB2LUW
 SELECT

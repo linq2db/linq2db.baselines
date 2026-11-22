@@ -16,7 +16,7 @@ SELECT
 FROM
 	"PlainAndConvertedUnicodeTable" "r"
 WHERE
-	("r"."Plain" || "r"."Conv") LIKE @read
+	"r"."Plain" || "r"."Conv" LIKE @read
 
 -- DB2 DB2.LUW DB2LUW
 DECLARE @read VarChar(6) -- String
@@ -27,5 +27,5 @@ SELECT
 FROM
 	"PlainAndConvertedUnicodeTable" "r"
 WHERE
-	("r"."Plain" || "r"."Conv") = @read
+	"r"."Plain" || "r"."Conv" = @read
 

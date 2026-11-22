@@ -21,7 +21,7 @@ FROM
 
 -- Informix.DB2 Informix
 SELECT
-	((p.ID * (-7) - 1) / 2)::Int
+	((p.ID * -7 - 1) / 2)::Int
 FROM
 	LinqDataTypes p
 ORDER BY

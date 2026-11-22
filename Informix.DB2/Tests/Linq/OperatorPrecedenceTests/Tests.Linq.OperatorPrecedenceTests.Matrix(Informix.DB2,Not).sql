@@ -15,7 +15,7 @@ SELECT
 	BITNOT(-r.B),
 	BITNOT(BITNOT(r.B)),
 	BITNOT(-5),
-	BITNOT((-5) * r.B)
+	BITNOT(-5 * r.B)
 FROM
 	PrecedenceRow r
 ORDER BY

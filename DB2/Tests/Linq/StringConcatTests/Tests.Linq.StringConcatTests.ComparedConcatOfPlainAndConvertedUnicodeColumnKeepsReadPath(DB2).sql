@@ -16,7 +16,7 @@ SELECT
 FROM
 	"PlainAndConvertedUnicodeRow" "r"
 WHERE
-	("r"."Plain" || "r"."Conv") = @read
+	"r"."Plain" || "r"."Conv" = @read
 
 -- DB2 DB2.LUW DB2LUW
 DECLARE @read VarChar(6) -- String
@@ -27,7 +27,7 @@ SELECT
 FROM
 	"PlainAndConvertedUnicodeRow" "r"
 WHERE
-	("r"."Plain" || "r"."Conv") <> @read
+	"r"."Plain" || "r"."Conv" <> @read
 
 -- DB2 DB2.LUW DB2LUW
 SELECT
@@ -49,5 +49,5 @@ SELECT
 FROM
 	"PlainAndConvertedUnicodeRow" "r"
 WHERE
-	("r"."Plain" || "r"."Conv") IN ('A-x:n1')
+	"r"."Plain" || "r"."Conv" IN ('A-x:n1')
 

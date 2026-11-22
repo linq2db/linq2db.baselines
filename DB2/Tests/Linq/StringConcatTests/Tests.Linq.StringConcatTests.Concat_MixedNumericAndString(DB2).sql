@@ -4,7 +4,7 @@ SELECT
 FROM
 	"ConcatTestEntity" "e"
 WHERE
-	(RTrim(Char("e"."Num")) || '-' || Coalesce("e"."StrReq", '')) = '100-Programmer'
+	RTrim(Char("e"."Num")) || '-' || Coalesce("e"."StrReq", '') = '100-Programmer'
 
 -- DB2 DB2.LUW DB2LUW
 SELECT

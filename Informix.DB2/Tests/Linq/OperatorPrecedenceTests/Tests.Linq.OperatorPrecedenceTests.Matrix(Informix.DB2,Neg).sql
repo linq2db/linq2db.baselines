@@ -13,7 +13,7 @@ SELECT
 	r.B,
 	-BITNOT(r.B),
 	-(-5),
-	-((-5) * r.B)
+	-(-5 * r.B)
 FROM
 	PrecedenceRow r
 ORDER BY

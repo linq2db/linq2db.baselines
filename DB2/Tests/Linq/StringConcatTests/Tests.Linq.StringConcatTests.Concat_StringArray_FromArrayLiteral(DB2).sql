@@ -4,7 +4,7 @@ SELECT
 FROM
 	"ConcatTestEntity" "e"
 WHERE
-	(Coalesce("e"."StrReq", '') || ' I') = 'Programmer I'
+	Coalesce("e"."StrReq", '') || ' I' = 'Programmer I'
 
 -- DB2 DB2.LUW DB2LUW
 SELECT

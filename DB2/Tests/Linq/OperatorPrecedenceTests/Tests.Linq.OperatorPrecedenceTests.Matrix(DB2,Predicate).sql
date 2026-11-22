@@ -25,7 +25,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN (Coalesce("r".S, '') || RTrim(Char("r".A + "r".B))) LIKE 'x5%' ESCAPE '~'
+		WHEN Coalesce("r".S, '') || RTrim(Char("r".A + "r".B)) LIKE 'x5%' ESCAPE '~'
 			THEN 1
 		ELSE 0
 	END,
@@ -66,7 +66,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN (Coalesce("r".S, '') || RTrim(Char("r".A - "r".B))) LIKE 'x5%' ESCAPE '~'
+		WHEN Coalesce("r".S, '') || RTrim(Char("r".A - "r".B)) LIKE 'x5%' ESCAPE '~'
 			THEN 1
 		ELSE 0
 	END,
@@ -107,7 +107,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN (Coalesce("r".S, '') || RTrim(Char("r".A * "r".B))) LIKE 'x5%' ESCAPE '~'
+		WHEN Coalesce("r".S, '') || RTrim(Char("r".A * "r".B)) LIKE 'x5%' ESCAPE '~'
 			THEN 1
 		ELSE 0
 	END,
@@ -148,7 +148,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN (Coalesce("r".S, '') || RTrim(Char("r".A / "r".B))) LIKE 'x5%' ESCAPE '~'
+		WHEN Coalesce("r".S, '') || RTrim(Char("r".A / "r".B)) LIKE 'x5%' ESCAPE '~'
 			THEN 1
 		ELSE 0
 	END,
@@ -190,7 +190,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN (Coalesce("r".S, '') || RTrim(Char(Mod("r".A, "r".B)))) LIKE 'x5%' ESCAPE '~'
+		WHEN Coalesce("r".S, '') || RTrim(Char(Mod("r".A, "r".B))) LIKE 'x5%' ESCAPE '~'
 			THEN 1
 		ELSE 0
 	END,
@@ -232,7 +232,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN (Coalesce("r".S, '') || RTrim(Char(BitAnd("r".A, "r".B)))) LIKE 'x5%' ESCAPE '~'
+		WHEN Coalesce("r".S, '') || RTrim(Char(BitAnd("r".A, "r".B))) LIKE 'x5%' ESCAPE '~'
 			THEN 1
 		ELSE 0
 	END,
@@ -274,7 +274,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN (Coalesce("r".S, '') || RTrim(Char(BitOr("r".A, "r".B)))) LIKE 'x5%' ESCAPE '~'
+		WHEN Coalesce("r".S, '') || RTrim(Char(BitOr("r".A, "r".B))) LIKE 'x5%' ESCAPE '~'
 			THEN 1
 		ELSE 0
 	END,
@@ -316,7 +316,7 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN (Coalesce("r".S, '') || RTrim(Char(BitXor("r".A, "r".B)))) LIKE 'x5%' ESCAPE '~'
+		WHEN Coalesce("r".S, '') || RTrim(Char(BitXor("r".A, "r".B))) LIKE 'x5%' ESCAPE '~'
 			THEN 1
 		ELSE 0
 	END,
