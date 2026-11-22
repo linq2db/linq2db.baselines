@@ -5,13 +5,13 @@ DECLARE @id1 Int32
 SET     @id1 = 3
 
 SELECT
-	t2."ChildID"
+	t1."ChildID"
 FROM
 	(
 		SELECT
-			t1."ChildID"
+			с."ChildID"
 		FROM
-			"GrandChild" t1
+			"GrandChild" с
 		WHERE
 			EXISTS(
 				SELECT
@@ -25,10 +25,10 @@ FROM
 					li."ParentID" = :id AND a_Parent."ParentID" = :id1
 			)
 		ORDER BY
-			t1."ChildID"
-	) t2
+			с."ChildID"
+	) t1
 WHERE
 	ROWNUM <= 1
 ORDER BY
-	t2."ChildID"
+	t1."ChildID"
 
