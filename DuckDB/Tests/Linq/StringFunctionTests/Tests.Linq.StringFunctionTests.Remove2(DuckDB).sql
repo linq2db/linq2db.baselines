@@ -8,6 +8,6 @@ SELECT
 FROM
 	Person p
 WHERE
-	(SUBSTR(p.FirstName, 1, 2 - 1) || '' || SUBSTR(p.FirstName, 2 + 2)) = 'Jn' AND
+	SUBSTR(p.FirstName, 1, 2 - 1) || '' || SUBSTR(p.FirstName, 2 + 2) = 'Jn' AND
 	p.PersonID = 1
 

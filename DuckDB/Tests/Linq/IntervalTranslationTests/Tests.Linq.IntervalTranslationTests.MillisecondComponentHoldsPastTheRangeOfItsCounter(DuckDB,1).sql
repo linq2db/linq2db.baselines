@@ -72,7 +72,7 @@ ORDER BY
 
 -- DuckDB
 SELECT
-	CAST(((Date_Diff('microsecond', r.StartedOn, r.FinishedOn) * 10) // 10000) % 1000 AS INTEGER)
+	CAST(Date_Diff('microsecond', r.StartedOn, r.FinishedOn) * 10 // 10000 % 1000 AS INTEGER)
 FROM
 	EventRow r
 ORDER BY

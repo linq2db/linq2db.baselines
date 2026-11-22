@@ -8,5 +8,5 @@ SELECT
 FROM
 	Person p
 WHERE
-	((p.PersonID + 9) // 10) = 1 AND p.PersonID = 1
+	(p.PersonID + 9) // 10 = 1 AND p.PersonID = 1
 

@@ -509,7 +509,7 @@ SELECT
 FROM
 	"TypeTable`2" r
 WHERE
-	r."Column" = ('1' || chr(0) || '2') AND r.ColumnNullable = ('3' || chr(1) || '4')
+	r."Column" = '1' || chr(0) || '2' AND r.ColumnNullable = '3' || chr(1) || '4'
 
 -- DuckDB
 DELETE FROM
@@ -537,7 +537,7 @@ SELECT
 FROM
 	"TypeTable`2" r
 WHERE
-	r."Column" = ('1' || chr(0) || '2') AND r.ColumnNullable = ('3' || chr(1) || '4')
+	r."Column" = '1' || chr(0) || '2' AND r.ColumnNullable = '3' || chr(1) || '4'
 
 -- DuckDB
 DELETE FROM
@@ -561,7 +561,7 @@ SELECT
 FROM
 	"TypeTable`2" r
 WHERE
-	r."Column" = ('1' || chr(0) || '2') AND r.ColumnNullable = ('3' || chr(1) || '4')
+	r."Column" = '1' || chr(0) || '2' AND r.ColumnNullable = '3' || chr(1) || '4'
 
 -- DuckDB
 DECLARE $value NVarChar(11) -- String

@@ -54,7 +54,7 @@ SELECT
 FROM
 	EventRow x
 WHERE
-	CAST(((Date_Diff('microsecond', x.StartedOn, x.FinishedOn) * 10) // 36000000000) % 24 AS INTEGER) = 1
+	CAST(Date_Diff('microsecond', x.StartedOn, x.FinishedOn) * 10 // 36000000000 % 24 AS INTEGER) = 1
 
 -- DuckDB
 SELECT

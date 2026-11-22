@@ -7,7 +7,7 @@ SELECT
 FROM
 	ConcatProduct p
 WHERE
-	(p.Sku || Coalesce($suffix, '')) IN ('A-100Жук', 'B-200Щит')
+	p.Sku || Coalesce($suffix, '') IN ('A-100Жук', 'B-200Щит')
 
 -- DuckDB
 SELECT
@@ -26,7 +26,7 @@ SELECT
 FROM
 	ConcatProduct p
 WHERE
-	(p.Sku || Coalesce($suffix, '')) IN (p.Title, 'B-200Жук')
+	p.Sku || Coalesce($suffix, '') IN (p.Title, 'B-200Жук')
 
 -- DuckDB
 SELECT

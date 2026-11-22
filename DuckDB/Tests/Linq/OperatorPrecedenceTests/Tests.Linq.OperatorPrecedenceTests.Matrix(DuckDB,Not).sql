@@ -1,13 +1,13 @@
 ﻿-- DuckDB
 SELECT
-	~(r.A + r.B),
-	~(r.A + r.B),
-	~(r.A - r.B),
-	~(r.A - r.B),
-	~(r.A * r.B),
-	~(r.A * r.B),
-	~(r.A // r.B),
-	~(r.A // r.B),
+	~r.A + r.B,
+	~r.A + r.B,
+	~r.A - r.B,
+	~r.A - r.B,
+	~r.A * r.B,
+	~r.A * r.B,
+	~r.A // r.B,
+	~r.A // r.B,
 	~(r.A & r.B),
 	~(r.A & r.B),
 	~(r.A | r.B),
@@ -15,7 +15,7 @@ SELECT
 	~(-r.B),
 	~(~r.B),
 	~(-5),
-	~((-5) * r.B)
+	~(-5 * r.B)
 FROM
 	PrecedenceRow r
 ORDER BY

@@ -21,10 +21,10 @@ VALUES
 
 -- DuckDB
 SELECT
-	CAST((Date_Diff('microsecond', r.StartedOn, r.FinishedOn) * 10) // 864000000000 AS INTEGER),
-	CAST(((Date_Diff('microsecond', r.StartedOn, r.FinishedOn) * 10) // 36000000000) % 24 AS INTEGER),
-	CAST(((Date_Diff('microsecond', r.StartedOn, r.FinishedOn) * 10) // 600000000) % 60 AS INTEGER),
-	CAST(((Date_Diff('microsecond', r.StartedOn, r.FinishedOn) * 10) // 10000000) % 60 AS INTEGER),
+	CAST(Date_Diff('microsecond', r.StartedOn, r.FinishedOn) * 10 // 864000000000 AS INTEGER),
+	CAST(Date_Diff('microsecond', r.StartedOn, r.FinishedOn) * 10 // 36000000000 % 24 AS INTEGER),
+	CAST(Date_Diff('microsecond', r.StartedOn, r.FinishedOn) * 10 // 600000000 % 60 AS INTEGER),
+	CAST(Date_Diff('microsecond', r.StartedOn, r.FinishedOn) * 10 // 10000000 % 60 AS INTEGER),
 	Date_Diff('microsecond', r.StartedOn, r.FinishedOn) * 10,
 	CAST(Date_Diff('microsecond', r.StartedOn, r.FinishedOn) * 10 AS DOUBLE) / 864000000000,
 	CAST(Date_Diff('microsecond', r.StartedOn, r.FinishedOn) * 10 AS DOUBLE) / 36000000000,

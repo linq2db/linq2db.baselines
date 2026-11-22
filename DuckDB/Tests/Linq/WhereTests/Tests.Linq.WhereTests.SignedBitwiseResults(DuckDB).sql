@@ -63,7 +63,7 @@ FROM
 
 -- DuckDB
 SELECT
-	p.ID | (-5)
+	p.ID | -5
 FROM
 	LinqDataTypes p
 ORDER BY
@@ -105,7 +105,7 @@ FROM
 
 -- DuckDB
 SELECT
-	p.ID & (-3)
+	p.ID & -3
 FROM
 	LinqDataTypes p
 ORDER BY
@@ -168,7 +168,7 @@ FROM
 
 -- DuckDB
 SELECT
-	CAST(p.ID AS BIGINT) & (p.ID - 10)
+	CAST(p.ID AS BIGINT) & p.ID - 10
 FROM
 	LinqDataTypes p
 ORDER BY

@@ -19,8 +19,8 @@ SELECT
 	CAST(Date_Diff('microsecond', r.OpenedOn, r.ClosedOn) * 10 AS DOUBLE) / 864000000000,
 	CAST(Date_Diff('microsecond', r.OpenedOn, r.ClosedOn) * 10 AS DOUBLE) / 36000000000,
 	CAST(Date_Diff('microsecond', r.OpenedOn, r.ClosedOn) * 10 AS DOUBLE) / 600000000,
-	CAST((Date_Diff('microsecond', r.OpenedOn, r.ClosedOn) * 10) // 864000000000 AS INTEGER),
-	CAST(((Date_Diff('microsecond', r.OpenedOn, r.ClosedOn) * 10) // 36000000000) % 24 AS INTEGER)
+	CAST(Date_Diff('microsecond', r.OpenedOn, r.ClosedOn) * 10 // 864000000000 AS INTEGER),
+	CAST(Date_Diff('microsecond', r.OpenedOn, r.ClosedOn) * 10 // 36000000000 % 24 AS INTEGER)
 FROM
 	ClosedPeriodRow r
 WHERE

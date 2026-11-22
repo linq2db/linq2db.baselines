@@ -2,7 +2,7 @@
 UPDATE
 	Issue4963Table
 SET
-	Field = CAST(CAST(Issue4963Table.Field AS INTEGER) + (-1) AS UTINYINT)
+	Field = CAST(CAST(Issue4963Table.Field AS INTEGER) + -1 AS UTINYINT)
 
 -- DuckDB
 SELECT

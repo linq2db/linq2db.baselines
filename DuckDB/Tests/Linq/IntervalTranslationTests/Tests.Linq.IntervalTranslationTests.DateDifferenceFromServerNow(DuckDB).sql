@@ -17,7 +17,7 @@ ORDER BY
 -- DuckDB
 SELECT
 	CAST(Date_Diff('microsecond', r.ClosedOn, current_localtimestamp()) * 10 AS DOUBLE) / 864000000000,
-	CAST(((Date_Diff('microsecond', r.ClosedOn, current_localtimestamp()) * 10) // 36000000000) % 24 AS INTEGER)
+	CAST(Date_Diff('microsecond', r.ClosedOn, current_localtimestamp()) * 10 // 36000000000 % 24 AS INTEGER)
 FROM
 	ClosedPeriodRow r
 WHERE

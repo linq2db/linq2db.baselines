@@ -21,7 +21,7 @@ FROM
 
 -- DuckDB
 SELECT
-	(p.ID * (-7) - 1) // 2
+	(p.ID * -7 - 1) // 2
 FROM
 	LinqDataTypes p
 ORDER BY
@@ -196,7 +196,7 @@ SELECT
 FROM
 	LinqDataTypes p
 WHERE
-	((p.ID * 7 + 1) // 2) * 2 = p.ID * 7 + 1
+	(p.ID * 7 + 1) // 2 * 2 = p.ID * 7 + 1
 ORDER BY
 	p.ID
 
