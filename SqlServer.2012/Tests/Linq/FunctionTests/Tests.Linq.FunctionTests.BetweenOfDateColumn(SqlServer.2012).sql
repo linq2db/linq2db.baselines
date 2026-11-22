@@ -23,21 +23,11 @@ SELECT
 	IIF([r].[Day] < DATEFROMPARTS(2020, 1, 1) OR [r].[Day] > DATEFROMPARTS(2020, 1, 3), 1, 0),
 	IIF(Coalesce([d].[Day], DATEFROMPARTS(1, 1, 1)) NOT BETWEEN DATEFROMPARTS(2020, 1, 1) AND DATEFROMPARTS(2020, 1, 3), 1, 0),
 	IIF(Coalesce([d].[Day], DATEFROMPARTS(1, 1, 1)) < DATEFROMPARTS(2020, 1, 1) OR Coalesce([d].[Day], DATEFROMPARTS(1, 1, 1)) > DATEFROMPARTS(2020, 1, 3), 1, 0),
-	IIF([t1].[Subquery] BETWEEN @low AND @high, 1, 0),
-	IIF([t1].[Subquery] >= @low AND [t1].[Subquery] <= @high, 1, 0),
 	IIF([r].[Stamp] BETWEEN @low_1 AND @high_1, 1, 0),
 	IIF([r].[Stamp] >= @low_1 AND [r].[Stamp] <= @high_1, 1, 0)
 FROM
 	[BetweenDayRow] [r]
 		LEFT JOIN [BetweenDayRow] [d] ON [d].[Id] = [r].[Id] - 1
-		OUTER APPLY (
-			SELECT
-				MAX([x].[Day]) as [Subquery]
-			FROM
-				[BetweenDayRow] [x]
-			WHERE
-				[x].[Id] = [r].[Id]
-		) [t1]
 
 -- SqlServer.2012
 DECLARE @low Date
