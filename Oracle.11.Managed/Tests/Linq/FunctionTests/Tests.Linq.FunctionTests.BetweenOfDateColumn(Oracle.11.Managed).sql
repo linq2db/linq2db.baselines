@@ -10,106 +10,82 @@ SET     @high_1 = TIMESTAMP '2020-01-03 00:30:00.000000'
 
 SELECT
 	CASE
-		WHEN t1."Day_1" BETWEEN DATE '2020-01-01' AND DATE '2020-01-03'
+		WHEN r."Day" BETWEEN DATE '2020-01-01' AND DATE '2020-01-03'
 			THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN t1."Day_1" >= DATE '2020-01-01' AND t1."Day_1" <= DATE '2020-01-03'
+		WHEN r."Day" >= DATE '2020-01-01' AND r."Day" <= DATE '2020-01-03'
 			THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(t1."Other", t1."Day_1") BETWEEN TIMESTAMP '2020-01-01 00:30:00.000000' AND TIMESTAMP '2020-01-03 00:30:00.000000'
+		WHEN Coalesce(r."Other", r."Day") BETWEEN TIMESTAMP '2020-01-01 00:30:00.000000' AND TIMESTAMP '2020-01-03 00:30:00.000000'
 			THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(t1."Other", t1."Day_1") >= TIMESTAMP '2020-01-01 00:30:00.000000' AND Coalesce(t1."Other", t1."Day_1") <= TIMESTAMP '2020-01-03 00:30:00.000000'
+		WHEN Coalesce(r."Other", r."Day") >= TIMESTAMP '2020-01-01 00:30:00.000000' AND Coalesce(r."Other", r."Day") <= TIMESTAMP '2020-01-03 00:30:00.000000'
 			THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN t1."Day_1" BETWEEN :low AND :high THEN 1
+		WHEN r."Day" BETWEEN :low AND :high THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN t1."Day_1" >= :low AND t1."Day_1" <= :high THEN 1
+		WHEN r."Day" >= :low AND r."Day" <= :high THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(t1."Day_2", DATE '0001-01-01') BETWEEN DATE '2020-01-01' AND DATE '2020-01-03'
+		WHEN Coalesce(d."Day", DATE '0001-01-01') BETWEEN DATE '2020-01-01' AND DATE '2020-01-03'
 			THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(t1."Day_2", DATE '0001-01-01') >= DATE '2020-01-01' AND Coalesce(t1."Day_2", DATE '0001-01-01') <= DATE '2020-01-03'
+		WHEN Coalesce(d."Day", DATE '0001-01-01') >= DATE '2020-01-01' AND Coalesce(d."Day", DATE '0001-01-01') <= DATE '2020-01-03'
 			THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN t1."Day_1" NOT BETWEEN :low AND :high THEN 1
+		WHEN r."Day" NOT BETWEEN :low AND :high THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN t1."Day_1" < :low OR t1."Day_1" > :high THEN 1
+		WHEN r."Day" < :low OR r."Day" > :high THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN t1."Day_1" NOT BETWEEN DATE '2020-01-01' AND DATE '2020-01-03'
+		WHEN r."Day" NOT BETWEEN DATE '2020-01-01' AND DATE '2020-01-03'
 			THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN t1."Day_1" < DATE '2020-01-01' OR t1."Day_1" > DATE '2020-01-03'
+		WHEN r."Day" < DATE '2020-01-01' OR r."Day" > DATE '2020-01-03'
 			THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(t1."Day_2", DATE '0001-01-01') NOT BETWEEN DATE '2020-01-01' AND DATE '2020-01-03'
+		WHEN Coalesce(d."Day", DATE '0001-01-01') NOT BETWEEN DATE '2020-01-01' AND DATE '2020-01-03'
 			THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(t1."Day_2", DATE '0001-01-01') < DATE '2020-01-01' OR Coalesce(t1."Day_2", DATE '0001-01-01') > DATE '2020-01-03'
+		WHEN Coalesce(d."Day", DATE '0001-01-01') < DATE '2020-01-01' OR Coalesce(d."Day", DATE '0001-01-01') > DATE '2020-01-03'
 			THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN t1."Subquery" BETWEEN :low AND :high THEN 1
+		WHEN r."Stamp" BETWEEN :low_1 AND :high_1 THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN t1."Subquery" >= :low AND t1."Subquery" <= :high THEN 1
-		ELSE 0
-	END,
-	CASE
-		WHEN t1."Stamp" BETWEEN :low_1 AND :high_1 THEN 1
-		ELSE 0
-	END,
-	CASE
-		WHEN t1."Stamp" >= :low_1 AND t1."Stamp" <= :high_1 THEN 1
+		WHEN r."Stamp" >= :low_1 AND r."Stamp" <= :high_1 THEN 1
 		ELSE 0
 	END
 FROM
-	(
-		SELECT
-			r."Day" as "Day_1",
-			r."Other",
-			d."Day" as "Day_2",
-			(
-				SELECT
-					MAX(x."Day")
-				FROM
-					"BetweenDayRow" x
-				WHERE
-					x."Id" = r."Id"
-			) as "Subquery",
-			r."Stamp"
-		FROM
-			"BetweenDayRow" r
-				LEFT JOIN "BetweenDayRow" d ON d."Id" = r."Id" - 1
-	) t1
+	"BetweenDayRow" r
+		LEFT JOIN "BetweenDayRow" d ON d."Id" = r."Id" - 1
 
 -- Oracle.11.Managed Oracle11
 DECLARE @low Date
