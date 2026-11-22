@@ -15,7 +15,7 @@ SELECT
 	BIN_NOT(-"r".B),
 	BIN_NOT(BIN_NOT("r".B)),
 	BIN_NOT(-5),
-	BIN_NOT((-5) * "r".B)
+	BIN_NOT(-5 * "r".B)
 FROM
 	"PrecedenceRow" "r"
 ORDER BY

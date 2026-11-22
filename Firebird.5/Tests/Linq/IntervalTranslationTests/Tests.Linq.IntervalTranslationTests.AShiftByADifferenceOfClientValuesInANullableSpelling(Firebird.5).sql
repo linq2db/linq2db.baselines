@@ -90,7 +90,7 @@ DECLARE @Ticks BigInt -- Int64
 SET     @Ticks = 36002500000
 
 SELECT
-	DateAdd(millisecond, CAST(Mod(CAST(@Ticks AS BigInt) * (-1), 864000000000) / 1000 AS Decimal(18, 1)) / 10, DateAdd(day, CAST(@Ticks AS BigInt) * (-1) / 864000000000, CAST("r"."DueOn" AS TimeStamp)))
+	DateAdd(millisecond, CAST(Mod(CAST(@Ticks AS BigInt) * -1, 864000000000) / 1000 AS Decimal(18, 1)) / 10, DateAdd(day, CAST(@Ticks AS BigInt) * -1 / 864000000000, CAST("r"."DueOn" AS TimeStamp)))
 FROM
 	"OptionalDueRow" "r"
 WHERE

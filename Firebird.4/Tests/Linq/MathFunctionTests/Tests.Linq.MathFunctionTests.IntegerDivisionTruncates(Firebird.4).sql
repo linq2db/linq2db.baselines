@@ -21,7 +21,7 @@ FROM
 
 -- Firebird.4 Firebird4
 SELECT
-	("p".ID * (-7) - 1) / 2
+	("p".ID * -7 - 1) / 2
 FROM
 	"LinqDataTypes" "p"
 ORDER BY
