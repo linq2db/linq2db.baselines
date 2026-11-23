@@ -51,11 +51,19 @@ SELECT
 		ELSE 0
 	END,
 	CASE
+		WHEN [r].[C] BETWEEN [r].[A] - [r].[B] AND [r].[A] THEN 1
+		ELSE 0
+	END,
+	CASE
 		WHEN ~[r].[N] IS NULL THEN 1
 		ELSE 0
 	END,
 	CASE
 		WHEN [r].[A] + ~[r].[B] BETWEEN [r].[C] AND [r].[A] THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN [r].[C] BETWEEN [r].[A] + ~[r].[B] AND [r].[A] THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -109,11 +117,19 @@ SELECT
 		ELSE 0
 	END,
 	CASE
+		WHEN [r].[C] BETWEEN [r].[A] + [r].[B] AND [r].[A] THEN 1
+		ELSE 0
+	END,
+	CASE
 		WHEN ~[r].[N] IS NULL THEN 1
 		ELSE 0
 	END,
 	CASE
 		WHEN [r].[A] - ~[r].[B] BETWEEN [r].[C] AND [r].[A] THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN [r].[C] BETWEEN [r].[A] - ~[r].[B] AND [r].[A] THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -167,11 +183,19 @@ SELECT
 		ELSE 0
 	END,
 	CASE
+		WHEN [r].[C] BETWEEN [r].[A] * -[r].[B] AND [r].[A] THEN 1
+		ELSE 0
+	END,
+	CASE
 		WHEN ~[r].[N] IS NULL THEN 1
 		ELSE 0
 	END,
 	CASE
 		WHEN [r].[A] * ~[r].[B] BETWEEN [r].[C] AND [r].[A] THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN [r].[C] BETWEEN [r].[A] * ~[r].[B] AND [r].[A] THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -222,6 +246,10 @@ SELECT
 	END,
 	CASE
 		WHEN [r].[A] / -[r].[B] BETWEEN [r].[C] AND [r].[A] THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN [r].[C] BETWEEN [r].[A] / -[r].[B] AND [r].[A] THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -279,11 +307,19 @@ SELECT
 		ELSE 0
 	END,
 	CASE
+		WHEN [r].[C] BETWEEN [r].[A] % -[r].[B] AND [r].[A] THEN 1
+		ELSE 0
+	END,
+	CASE
 		WHEN ~[r].[N] IS NULL THEN 1
 		ELSE 0
 	END,
 	CASE
 		WHEN [r].[A] % ~[r].[B] BETWEEN [r].[C] AND [r].[A] THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN [r].[C] BETWEEN [r].[A] % ~[r].[B] AND [r].[A] THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -337,11 +373,19 @@ SELECT
 		ELSE 0
 	END,
 	CASE
+		WHEN [r].[C] BETWEEN [r].[A] & -[r].[B] AND [r].[A] THEN 1
+		ELSE 0
+	END,
+	CASE
 		WHEN ~[r].[N] IS NULL THEN 1
 		ELSE 0
 	END,
 	CASE
 		WHEN [r].[A] & ~[r].[B] BETWEEN [r].[C] AND [r].[A] THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN [r].[C] BETWEEN [r].[A] & ~[r].[B] AND [r].[A] THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -395,11 +439,19 @@ SELECT
 		ELSE 0
 	END,
 	CASE
+		WHEN [r].[C] BETWEEN [r].[A] | -[r].[B] AND [r].[A] THEN 1
+		ELSE 0
+	END,
+	CASE
 		WHEN [r].[A] | ~[r].[N] IS NULL THEN 1
 		ELSE 0
 	END,
 	CASE
 		WHEN [r].[A] | ~[r].[B] BETWEEN [r].[C] AND [r].[A] THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN [r].[C] BETWEEN [r].[A] | ~[r].[B] AND [r].[A] THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -461,11 +513,21 @@ SELECT
 		ELSE 0
 	END,
 	CASE
+		WHEN [r].[C] BETWEEN [r].[A] - [r].[B] - ([r].[A] & -[r].[B]) * 2 AND [r].[A]
+			THEN 1
+		ELSE 0
+	END,
+	CASE
 		WHEN ~[r].[N] IS NULL THEN 1
 		ELSE 0
 	END,
 	CASE
 		WHEN [r].[A] + ~[r].[B] - ([r].[A] & ~[r].[B]) * 2 BETWEEN [r].[C] AND [r].[A]
+			THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN [r].[C] BETWEEN [r].[A] + ~[r].[B] - ([r].[A] & ~[r].[B]) * 2 AND [r].[A]
 			THEN 1
 		ELSE 0
 	END,
