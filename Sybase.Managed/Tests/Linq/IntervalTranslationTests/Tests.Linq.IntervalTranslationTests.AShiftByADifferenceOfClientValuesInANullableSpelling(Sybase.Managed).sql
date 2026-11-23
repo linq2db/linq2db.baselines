@@ -88,7 +88,7 @@ DECLARE @Ticks BigInt -- Int64
 SET     @Ticks = 36002500000
 
 SELECT TOP 2
-	DateAdd(millisecond, CAST(@Ticks AS BigInt) * (-1) % 10000000 / 10000, DateAdd(second, CAST(@Ticks AS BigInt) * (-1) % 864000000000 / 10000000, DateAdd(day, CAST(@Ticks AS BigInt) * (-1) / 864000000000, [r].[DueOn])))
+	DateAdd(millisecond, (CAST(@Ticks AS BigInt) * -1) % 10000000 / 10000, DateAdd(second, (CAST(@Ticks AS BigInt) * -1) % 864000000000 / 10000000, DateAdd(day, (CAST(@Ticks AS BigInt) * -1) / 864000000000, [r].[DueOn])))
 FROM
 	[OptionalDueRow] [r]
 WHERE

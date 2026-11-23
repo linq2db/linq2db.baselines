@@ -1,6 +1,6 @@
 ﻿-- Sybase.Managed Sybase
 SELECT
-	CAST([r].[A] AS DECIMAL(18, 10)) * (-5.5)
+	CAST([r].[A] AS DECIMAL(18, 10)) * -5.5
 FROM
 	[PrecedenceRow] [r]
 ORDER BY
@@ -38,7 +38,7 @@ FROM
 
 -- Sybase.Managed Sybase
 SELECT
-	CAST([r].[A] AS Float) * (-5.5)
+	CAST([r].[A] AS Float) * -5.5
 FROM
 	[PrecedenceRow] [r]
 ORDER BY
