@@ -27,6 +27,18 @@ SELECT
 		WHEN [r].[S] IS NULL THEN ''
 		ELSE [r].[S]
 	END, -1 - ([r].[B] + [r].[C]), [r].[C]),
+	CONCAT_WS(',', CASE
+		WHEN [r].[S] IS NULL THEN ''
+		ELSE [r].[S]
+	END, [r].[A] - [r].[B], [r].[C]),
+	CONCAT_WS(',', CASE
+		WHEN [r].[S] IS NULL THEN ''
+		ELSE [r].[S]
+	END, [r].[A] + (-1 - [r].[B]), [r].[C]),
+	CONCAT_WS(',', CASE
+		WHEN [r].[S] IS NULL THEN ''
+		ELSE [r].[S]
+	END, [r].[A] + -5, [r].[C]),
 	CASE
 		WHEN [r].[S] IS NULL THEN ''
 		ELSE [r].[S]
@@ -54,6 +66,18 @@ SELECT
 		WHEN [r].[S] IS NULL THEN ''
 		ELSE [r].[S]
 	END, -1 - ([r].[B] - [r].[C]), [r].[C]),
+	CONCAT_WS(',', CASE
+		WHEN [r].[S] IS NULL THEN ''
+		ELSE [r].[S]
+	END, [r].[A] + [r].[B], [r].[C]),
+	CONCAT_WS(',', CASE
+		WHEN [r].[S] IS NULL THEN ''
+		ELSE [r].[S]
+	END, [r].[A] - (-1 - [r].[B]), [r].[C]),
+	CONCAT_WS(',', CASE
+		WHEN [r].[S] IS NULL THEN ''
+		ELSE [r].[S]
+	END, [r].[A] - -5, [r].[C]),
 	CASE
 		WHEN [r].[S] IS NULL THEN ''
 		ELSE [r].[S]
@@ -81,6 +105,18 @@ SELECT
 		WHEN [r].[S] IS NULL THEN ''
 		ELSE [r].[S]
 	END, -1 - [r].[B] * [r].[C], [r].[C]),
+	CONCAT_WS(',', CASE
+		WHEN [r].[S] IS NULL THEN ''
+		ELSE [r].[S]
+	END, [r].[A] * -[r].[B], [r].[C]),
+	CONCAT_WS(',', CASE
+		WHEN [r].[S] IS NULL THEN ''
+		ELSE [r].[S]
+	END, [r].[A] * (-1 - [r].[B]), [r].[C]),
+	CONCAT_WS(',', CASE
+		WHEN [r].[S] IS NULL THEN ''
+		ELSE [r].[S]
+	END, [r].[A] * -5, [r].[C]),
 	CASE
 		WHEN [r].[S] IS NULL THEN ''
 		ELSE [r].[S]
@@ -108,6 +144,10 @@ SELECT
 		WHEN [r].[S] IS NULL THEN ''
 		ELSE [r].[S]
 	END, -1 - Fix([r].[B] / [r].[C]), [r].[C]),
+	CONCAT_WS(',', CASE
+		WHEN [r].[S] IS NULL THEN ''
+		ELSE [r].[S]
+	END, Fix([r].[A] / -[r].[B]), [r].[C]),
 	CASE
 		WHEN [r].[S] IS NULL THEN ''
 		ELSE [r].[S]
@@ -135,6 +175,18 @@ SELECT
 		WHEN [r].[S] IS NULL THEN ''
 		ELSE [r].[S]
 	END, -1 - [r].[B] MOD [r].[C], [r].[C]),
+	CONCAT_WS(',', CASE
+		WHEN [r].[S] IS NULL THEN ''
+		ELSE [r].[S]
+	END, [r].[A] MOD -[r].[B], [r].[C]),
+	CONCAT_WS(',', CASE
+		WHEN [r].[S] IS NULL THEN ''
+		ELSE [r].[S]
+	END, [r].[A] MOD (-1 - [r].[B]), [r].[C]),
+	CONCAT_WS(',', CASE
+		WHEN [r].[S] IS NULL THEN ''
+		ELSE [r].[S]
+	END, [r].[A] MOD -5, [r].[C]),
 	CASE
 		WHEN [r].[S] IS NULL THEN ''
 		ELSE [r].[S]
@@ -162,6 +214,18 @@ SELECT
 		WHEN [r].[S] IS NULL THEN ''
 		ELSE [r].[S]
 	END, -1 - ([r].[B] BAND [r].[C]), [r].[C]),
+	CONCAT_WS(',', CASE
+		WHEN [r].[S] IS NULL THEN ''
+		ELSE [r].[S]
+	END, [r].[A] BAND (-[r].[B]), [r].[C]),
+	CONCAT_WS(',', CASE
+		WHEN [r].[S] IS NULL THEN ''
+		ELSE [r].[S]
+	END, [r].[A] BAND (-1 - [r].[B]), [r].[C]),
+	CONCAT_WS(',', CASE
+		WHEN [r].[S] IS NULL THEN ''
+		ELSE [r].[S]
+	END, [r].[A] BAND (-5), [r].[C]),
 	CASE
 		WHEN [r].[S] IS NULL THEN ''
 		ELSE [r].[S]
@@ -189,6 +253,18 @@ SELECT
 		WHEN [r].[S] IS NULL THEN ''
 		ELSE [r].[S]
 	END, -1 - ([r].[B] BOR [r].[C]), [r].[C]),
+	CONCAT_WS(',', CASE
+		WHEN [r].[S] IS NULL THEN ''
+		ELSE [r].[S]
+	END, [r].[A] BOR (-[r].[B]), [r].[C]),
+	CONCAT_WS(',', CASE
+		WHEN [r].[S] IS NULL THEN ''
+		ELSE [r].[S]
+	END, [r].[A] BOR (-1 - [r].[B]), [r].[C]),
+	CONCAT_WS(',', CASE
+		WHEN [r].[S] IS NULL THEN ''
+		ELSE [r].[S]
+	END, [r].[A] BOR (-5), [r].[C]),
 	CASE
 		WHEN [r].[S] IS NULL THEN ''
 		ELSE [r].[S]
@@ -216,6 +292,18 @@ SELECT
 		WHEN [r].[S] IS NULL THEN ''
 		ELSE [r].[S]
 	END, -1 - ([r].[B] BXOR [r].[C]), [r].[C]),
+	CONCAT_WS(',', CASE
+		WHEN [r].[S] IS NULL THEN ''
+		ELSE [r].[S]
+	END, [r].[A] BXOR (-[r].[B]), [r].[C]),
+	CONCAT_WS(',', CASE
+		WHEN [r].[S] IS NULL THEN ''
+		ELSE [r].[S]
+	END, [r].[A] BXOR (-1 - [r].[B]), [r].[C]),
+	CONCAT_WS(',', CASE
+		WHEN [r].[S] IS NULL THEN ''
+		ELSE [r].[S]
+	END, [r].[A] BXOR (-5), [r].[C]),
 	CASE
 		WHEN [r].[S] IS NULL THEN ''
 		ELSE [r].[S]
@@ -247,6 +335,34 @@ ORDER BY
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
+	CONCAT_WS(',', CASE
+		WHEN [r].[S] IS NULL THEN ''
+		ELSE [r].[S]
+	END, [r].[A] + -5, [r].[C]),
+	CONCAT_WS(',', CASE
+		WHEN [r].[S] IS NULL THEN ''
+		ELSE [r].[S]
+	END, [r].[A] - -5, [r].[C]),
+	CONCAT_WS(',', CASE
+		WHEN [r].[S] IS NULL THEN ''
+		ELSE [r].[S]
+	END, [r].[A] * -5, [r].[C]),
+	CONCAT_WS(',', CASE
+		WHEN [r].[S] IS NULL THEN ''
+		ELSE [r].[S]
+	END, [r].[A] MOD -5, [r].[C]),
+	CONCAT_WS(',', CASE
+		WHEN [r].[S] IS NULL THEN ''
+		ELSE [r].[S]
+	END, [r].[A] BAND (-5), [r].[C]),
+	CONCAT_WS(',', CASE
+		WHEN [r].[S] IS NULL THEN ''
+		ELSE [r].[S]
+	END, [r].[A] BOR (-5), [r].[C]),
+	CONCAT_WS(',', CASE
+		WHEN [r].[S] IS NULL THEN ''
+		ELSE [r].[S]
+	END, [r].[A] BXOR (-5), [r].[C]),
 	CASE
 		WHEN [r].[S] IS NULL THEN ''
 		ELSE [r].[S]
