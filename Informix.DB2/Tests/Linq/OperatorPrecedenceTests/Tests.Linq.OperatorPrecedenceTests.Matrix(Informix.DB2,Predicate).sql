@@ -60,6 +60,22 @@ SELECT
 		ELSE 0
 	END,
 	CASE
+		WHEN -r.N IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN r.A - r.B BETWEEN r.C AND r.A THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN r.N IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN r.A + BITNOT(r.B) BETWEEN r.C AND r.A THEN 1
+		ELSE 0
+	END,
+	CASE
 		WHEN r.A - r.B = r.C THEN 1
 		ELSE 0
 	END,
@@ -119,6 +135,22 @@ SELECT
 		ELSE 0
 	END,
 	CASE
+		WHEN -r.N IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN r.A + r.B BETWEEN r.C AND r.A THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN r.N IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN r.A - BITNOT(r.B) BETWEEN r.C AND r.A THEN 1
+		ELSE 0
+	END,
+	CASE
 		WHEN r.A * r.B = r.C THEN 1
 		ELSE 0
 	END,
@@ -175,6 +207,22 @@ SELECT
 			FROM table(set{1})
 		)
 			THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN -r.N IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN r.A * -r.B BETWEEN r.C AND r.A THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN r.N IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN r.A * BITNOT(r.B) BETWEEN r.C AND r.A THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -238,6 +286,18 @@ SELECT
 		ELSE 0
 	END,
 	CASE
+		WHEN -r.N IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN (r.A / -r.B)::Int BETWEEN r.C AND r.A THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN r.N IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
 		WHEN Mod(r.A, r.B) = r.C THEN 1
 		ELSE 0
 	END,
@@ -294,6 +354,22 @@ SELECT
 			FROM table(set{1})
 		)
 			THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN -r.N IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN Mod(r.A, -r.B) BETWEEN r.C AND r.A THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN r.N IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN Mod(r.A, BITNOT(r.B)) BETWEEN r.C AND r.A THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -357,6 +433,22 @@ SELECT
 		ELSE 0
 	END,
 	CASE
+		WHEN -r.N IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN BitAnd(r.A, -r.B) BETWEEN r.C AND r.A THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN r.N IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN BitAnd(r.A, BITNOT(r.B)) BETWEEN r.C AND r.A THEN 1
+		ELSE 0
+	END,
+	CASE
 		WHEN BitOr(r.A, r.B) = r.C THEN 1
 		ELSE 0
 	END,
@@ -414,6 +506,22 @@ SELECT
 			FROM table(set{1})
 		)
 			THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN -r.N IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN BitOr(r.A, -r.B) BETWEEN r.C AND r.A THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN r.N IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN BitOr(r.A, BITNOT(r.B)) BETWEEN r.C AND r.A THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -476,6 +584,30 @@ SELECT
 			THEN 1
 		ELSE 0
 	END,
+	CASE
+		WHEN -r.N IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN BitXor(r.A, -r.B) BETWEEN r.C AND r.A THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN r.N IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN BitXor(r.A, BITNOT(r.B)) BETWEEN r.C AND r.A THEN 1
+		ELSE 0
+	END,
+	r.A * -r.B + r.C,
+	r.A * BITNOT(r.B) + r.C,
+	r.A * -r.B - r.C,
+	r.A * BITNOT(r.B) - r.C,
+	(r.A * -r.B) * r.C,
+	(r.A * BITNOT(r.B)) * r.C,
+	r.A * -r.B + r.C,
+	r.A * BITNOT(r.B) + r.C,
 	CASE
 		WHEN -r.A = r.C THEN 1
 		ELSE 0
