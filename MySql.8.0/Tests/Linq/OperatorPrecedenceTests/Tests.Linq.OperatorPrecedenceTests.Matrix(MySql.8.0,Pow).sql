@@ -15,6 +15,7 @@ SELECT
 	Power(CAST(-`r`.`B` AS DOUBLE), 2),
 	-Power(CAST(`r`.`B` AS DOUBLE), 2),
 	Power(CAST(`r`.`C` AS DOUBLE), Power(CAST(`r`.`C` AS DOUBLE), CAST(`r`.`C` AS DOUBLE))),
+	Power(Power(CAST(`r`.`C` AS DOUBLE), CAST(-`r`.`B` AS DOUBLE)), CAST(`r`.`C` AS DOUBLE)),
 	Power(CAST(`r`.`B` + `r`.`C` AS DOUBLE), 2)
 FROM
 	`PrecedenceRow` `r`
