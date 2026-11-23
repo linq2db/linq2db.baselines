@@ -6,6 +6,7 @@ SET     @end = '2023-06-15 12:00:00'::timestamp
 
 SELECT
 	(r."A" + r."B")::text,
+	r."S" || (r."A" * r."B")::text,
 	Lpad((r."A" + r."B")::text,5,'0'),
 	DATE_PART('year', ((:end + r."C" * Interval '1 Day') AT TIME ZONE 'UTC')::date) - DATE_PART('year', :start::date),
 	DATE_PART('year', :end::date) - DATE_PART('year', ((:start + r."C" * Interval '1 Day') AT TIME ZONE 'UTC')::date)
