@@ -13,5 +13,5 @@ SELECT
 FROM
 	ValueConversion t
 WHERE
-	(t.Value2 = '[{"Value":"Value1"}]')
+	t.Value2 = '[{"Value":"Value1"}]'
 
