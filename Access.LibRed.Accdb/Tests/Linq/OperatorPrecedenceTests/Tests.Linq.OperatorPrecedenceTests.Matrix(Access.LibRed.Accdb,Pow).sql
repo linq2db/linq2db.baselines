@@ -15,6 +15,7 @@ SELECT
 	(-[r].[B]) ^ 2,
 	-([r].[B] ^ 2),
 	[r].[C] ^ ([r].[C] ^ [r].[C]),
+	[r].[C] ^ (-[r].[B]) ^ [r].[C],
 	([r].[B] + [r].[C]) ^ 2
 FROM
 	[PrecedenceRow] [r]

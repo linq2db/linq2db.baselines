@@ -46,6 +46,23 @@ SELECT
 		ELSE 0
 	END,
 	CASE
+		WHEN -[r].[N] IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN ([r].[A] - [r].[B]) BETWEEN [r].[C] AND [r].[A] THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN [r].[N] IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN ([r].[A] + (-1 - [r].[B])) BETWEEN [r].[C] AND [r].[A]
+			THEN 1
+		ELSE 0
+	END,
+	CASE
 		WHEN [r].[A] - [r].[B] = [r].[C] THEN 1
 		ELSE 0
 	END,
@@ -91,6 +108,23 @@ SELECT
 		ELSE 0
 	END,
 	CASE
+		WHEN -[r].[N] IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN ([r].[A] + [r].[B]) BETWEEN [r].[C] AND [r].[A] THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN [r].[N] IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN ([r].[A] - (-1 - [r].[B])) BETWEEN [r].[C] AND [r].[A]
+			THEN 1
+		ELSE 0
+	END,
+	CASE
 		WHEN [r].[A] * [r].[B] = [r].[C] THEN 1
 		ELSE 0
 	END,
@@ -133,6 +167,23 @@ SELECT
 	END,
 	CASE
 		WHEN [r].[N] IS DISTINCT FROM [r].[A] * [r].[B] THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN -[r].[N] IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN ([r].[A] * -[r].[B]) BETWEEN [r].[C] AND [r].[A] THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN [r].[N] IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN ([r].[A] * (-1 - [r].[B])) BETWEEN [r].[C] AND [r].[A]
+			THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -182,6 +233,19 @@ SELECT
 		ELSE 0
 	END,
 	CASE
+		WHEN -[r].[N] IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN Fix([r].[A] / -[r].[B]) BETWEEN [r].[C] AND [r].[A]
+			THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN [r].[N] IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
 		WHEN [r].[A] MOD [r].[B] = [r].[C] THEN 1
 		ELSE 0
 	END,
@@ -225,6 +289,23 @@ SELECT
 	END,
 	CASE
 		WHEN [r].[N] IS DISTINCT FROM [r].[A] MOD [r].[B] THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN -[r].[N] IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN ([r].[A] MOD -[r].[B]) BETWEEN [r].[C] AND [r].[A] THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN [r].[N] IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN ([r].[A] MOD (-1 - [r].[B])) BETWEEN [r].[C] AND [r].[A]
+			THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -274,6 +355,24 @@ SELECT
 		ELSE 0
 	END,
 	CASE
+		WHEN -[r].[N] IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN ([r].[A] BAND (-[r].[B])) BETWEEN [r].[C] AND [r].[A]
+			THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN [r].[N] IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN ([r].[A] BAND (-1 - [r].[B])) BETWEEN [r].[C] AND [r].[A]
+			THEN 1
+		ELSE 0
+	END,
+	CASE
 		WHEN ([r].[A] BOR [r].[B]) = [r].[C] THEN 1
 		ELSE 0
 	END,
@@ -317,6 +416,24 @@ SELECT
 	END,
 	CASE
 		WHEN [r].[N] IS DISTINCT FROM ([r].[A] BOR [r].[B]) THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN ([r].[A] BOR (-[r].[N])) IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN ([r].[A] BOR (-[r].[B])) BETWEEN [r].[C] AND [r].[A]
+			THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN ([r].[A] BOR (-1 - [r].[N])) IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN ([r].[A] BOR (-1 - [r].[B])) BETWEEN [r].[C] AND [r].[A]
+			THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -365,6 +482,32 @@ SELECT
 		WHEN [r].[N] IS DISTINCT FROM ([r].[A] BXOR [r].[B]) THEN 1
 		ELSE 0
 	END,
+	CASE
+		WHEN ([r].[A] BXOR (-[r].[N])) IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN ([r].[A] BXOR (-[r].[B])) BETWEEN [r].[C] AND [r].[A]
+			THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN ([r].[A] BXOR (-1 - [r].[N])) IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN ([r].[A] BXOR (-1 - [r].[B])) BETWEEN [r].[C] AND [r].[A]
+			THEN 1
+		ELSE 0
+	END,
+	([r].[A] * -[r].[B]) + [r].[C],
+	[r].[A] * (-1 - [r].[B]) + [r].[C],
+	([r].[A] * -[r].[B]) - [r].[C],
+	[r].[A] * (-1 - [r].[B]) - [r].[C],
+	([r].[A] * -[r].[B]) * [r].[C],
+	([r].[A] * (-1 - [r].[B])) * [r].[C],
+	([r].[A] * -[r].[B]) + [r].[C],
+	[r].[A] * (-1 - [r].[B]) + [r].[C],
 	CASE
 		WHEN -[r].[A] = [r].[C] THEN 1
 		ELSE 0
