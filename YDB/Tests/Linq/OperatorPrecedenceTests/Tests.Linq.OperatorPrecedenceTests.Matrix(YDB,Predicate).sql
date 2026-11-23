@@ -196,484 +196,554 @@ SELECT
 		ELSE 0
 	END as c12,
 	CASE
-		WHEN ~BitCast(r.N AS Uint32) IS NULL THEN 1
+		WHEN r.C BETWEEN r.A - r.B AND r.A THEN 1
 		ELSE 0
 	END as c13,
+	CASE
+		WHEN ~BitCast(r.N AS Uint32) IS NULL THEN 1
+		ELSE 0
+	END as c14,
 	CASE
 		WHEN r.A + BitCast((~BitCast(r.B AS Uint32)) AS Int32) BETWEEN r.C AND r.A
 			THEN 1
 		ELSE 0
-	END as c14,
-	CASE
-		WHEN r.A - r.B = r.C THEN 1
-		ELSE 0
 	END as c15,
 	CASE
-		WHEN r.C < r.A - r.B THEN 1
+		WHEN r.C BETWEEN r.A + BitCast((~BitCast(r.B AS Uint32)) AS Int32) AND r.A
+			THEN 1
 		ELSE 0
 	END as c16,
 	CASE
-		WHEN r.A - r.B BETWEEN r.C AND r.A THEN 1
+		WHEN r.A - r.B = r.C THEN 1
 		ELSE 0
 	END as c17,
 	CASE
-		WHEN r.A BETWEEN r.B - r.C AND r.A THEN 1
+		WHEN r.C < r.A - r.B THEN 1
 		ELSE 0
 	END as c18,
+	CASE
+		WHEN r.A - r.B BETWEEN r.C AND r.A THEN 1
+		ELSE 0
+	END as c19,
+	CASE
+		WHEN r.A BETWEEN r.B - r.C AND r.A THEN 1
+		ELSE 0
+	END as c20,
 	CASE
 		WHEN r.A - r.B IN ($Ids0_1_1, $Ids0_2_1, $Ids0_3_1, $Ids0_4_1, $Ids0_5_1, $Ids0_6_1, $Ids0_7_1, $Ids0_8_1, $Ids0_9_1)
 			THEN 1
 		ELSE 0
-	END as c19,
+	END as c21,
 	CASE
 		WHEN r.N IS NULL THEN 1
 		ELSE 0
-	END as c20,
+	END as c22,
 	CASE
 		WHEN Coalesce(r.S, ''u) || Unwrap(CAST(r.A - r.B AS Text)) LIKE 'x5%'u ESCAPE '~'s
 			THEN 1
 		ELSE 0
-	END as c21,
+	END as c23,
 	CASE
 		WHEN r.A - r.B <= r.C AND r.B < r.A THEN 1
 		ELSE 0
-	END as c22,
+	END as c24,
 	CASE
 		WHEN r.A - r.B IS DISTINCT FROM r.N THEN 1
 		ELSE 0
-	END as c23,
+	END as c25,
 	CASE
 		WHEN r.N IS DISTINCT FROM r.A - r.B THEN 1
 		ELSE 0
-	END as c24,
+	END as c26,
 	CASE
 		WHEN -r.N IS NULL THEN 1
 		ELSE 0
-	END as c25,
+	END as c27,
 	CASE
 		WHEN r.A + r.B BETWEEN r.C AND r.A THEN 1
 		ELSE 0
-	END as c26,
+	END as c28,
+	CASE
+		WHEN r.C BETWEEN r.A + r.B AND r.A THEN 1
+		ELSE 0
+	END as c29,
 	CASE
 		WHEN ~BitCast(r.N AS Uint32) IS NULL THEN 1
 		ELSE 0
-	END as c27,
+	END as c30,
 	CASE
 		WHEN r.A - BitCast((~BitCast(r.B AS Uint32)) AS Int32) BETWEEN r.C AND r.A
 			THEN 1
 		ELSE 0
-	END as c28,
+	END as c31,
+	CASE
+		WHEN r.C BETWEEN r.A - BitCast((~BitCast(r.B AS Uint32)) AS Int32) AND r.A
+			THEN 1
+		ELSE 0
+	END as c32,
 	CASE
 		WHEN r.A * r.B = r.C THEN 1
 		ELSE 0
-	END as c29,
+	END as c33,
 	CASE
 		WHEN r.C < r.A * r.B THEN 1
 		ELSE 0
-	END as c30,
+	END as c34,
 	CASE
 		WHEN r.A * r.B BETWEEN r.C AND r.A THEN 1
 		ELSE 0
-	END as c31,
+	END as c35,
 	CASE
 		WHEN r.A BETWEEN r.B * r.C AND r.A THEN 1
 		ELSE 0
-	END as c32,
+	END as c36,
 	CASE
 		WHEN r.A * r.B IN ($Ids0_1_2, $Ids0_2_2, $Ids0_3_2, $Ids0_4_2, $Ids0_5_2, $Ids0_6_2, $Ids0_7_2, $Ids0_8_2, $Ids0_9_2)
 			THEN 1
 		ELSE 0
-	END as c33,
+	END as c37,
 	CASE
 		WHEN r.N IS NULL THEN 1
 		ELSE 0
-	END as c34,
+	END as c38,
 	CASE
 		WHEN Coalesce(r.S, ''u) || Unwrap(CAST(r.A * r.B AS Text)) LIKE 'x5%'u ESCAPE '~'s
 			THEN 1
 		ELSE 0
-	END as c35,
+	END as c39,
 	CASE
 		WHEN r.A * r.B <= r.C AND r.B < r.A THEN 1
 		ELSE 0
-	END as c36,
+	END as c40,
 	CASE
 		WHEN r.A * r.B IS DISTINCT FROM r.N THEN 1
 		ELSE 0
-	END as c37,
+	END as c41,
 	CASE
 		WHEN r.N IS DISTINCT FROM r.A * r.B THEN 1
 		ELSE 0
-	END as c38,
+	END as c42,
 	CASE
 		WHEN -r.N IS NULL THEN 1
 		ELSE 0
-	END as c39,
+	END as c43,
 	CASE
 		WHEN r.A * -r.B BETWEEN r.C AND r.A THEN 1
 		ELSE 0
-	END as c40,
+	END as c44,
+	CASE
+		WHEN r.C BETWEEN r.A * -r.B AND r.A THEN 1
+		ELSE 0
+	END as c45,
 	CASE
 		WHEN ~BitCast(r.N AS Uint32) IS NULL THEN 1
 		ELSE 0
-	END as c41,
+	END as c46,
 	CASE
 		WHEN r.A * BitCast((~BitCast(r.B AS Uint32)) AS Int32) BETWEEN r.C AND r.A
 			THEN 1
 		ELSE 0
-	END as c42,
+	END as c47,
+	CASE
+		WHEN r.C BETWEEN r.A * BitCast((~BitCast(r.B AS Uint32)) AS Int32) AND r.A
+			THEN 1
+		ELSE 0
+	END as c48,
 	CASE
 		WHEN r.A / r.B = r.C THEN 1
 		ELSE 0
-	END as c43,
+	END as c49,
 	CASE
 		WHEN r.C < r.A / r.B THEN 1
 		ELSE 0
-	END as c44,
+	END as c50,
 	CASE
 		WHEN r.A / r.B BETWEEN r.C AND r.A THEN 1
 		ELSE 0
-	END as c45,
+	END as c51,
 	CASE
 		WHEN r.A BETWEEN r.B / r.C AND r.A THEN 1
 		ELSE 0
-	END as c46,
+	END as c52,
 	CASE
 		WHEN r.A / r.B IN ($Ids0_1_3, $Ids0_2_3, $Ids0_3_3, $Ids0_4_3, $Ids0_5_3, $Ids0_6_3, $Ids0_7_3, $Ids0_8_3, $Ids0_9_3)
 			THEN 1
 		ELSE 0
-	END as c47,
+	END as c53,
 	CASE
 		WHEN r.N IS NULL THEN 1
 		ELSE 0
-	END as c48,
+	END as c54,
 	CASE
 		WHEN Coalesce(r.S, ''u) || Unwrap(CAST(r.A / r.B AS Text)) LIKE 'x5%'u ESCAPE '~'s
 			THEN 1
 		ELSE 0
-	END as c49,
+	END as c55,
 	CASE
 		WHEN r.A / r.B <= r.C AND r.B < r.A THEN 1
 		ELSE 0
-	END as c50,
+	END as c56,
 	CASE
 		WHEN r.A / r.B IS DISTINCT FROM r.N THEN 1
 		ELSE 0
-	END as c51,
+	END as c57,
 	CASE
 		WHEN r.N IS DISTINCT FROM r.A / r.B THEN 1
 		ELSE 0
-	END as c52,
+	END as c58,
 	CASE
 		WHEN -r.N IS NULL THEN 1
 		ELSE 0
-	END as c53,
+	END as c59,
 	CASE
 		WHEN r.A / -r.B BETWEEN r.C AND r.A THEN 1
 		ELSE 0
-	END as c54,
+	END as c60,
+	CASE
+		WHEN r.C BETWEEN r.A / -r.B AND r.A THEN 1
+		ELSE 0
+	END as c61,
 	CASE
 		WHEN ~BitCast(r.N AS Uint32) IS NULL THEN 1
 		ELSE 0
-	END as c55,
+	END as c62,
 	CASE
 		WHEN r.A % r.B = r.C THEN 1
 		ELSE 0
-	END as c56,
+	END as c63,
 	CASE
 		WHEN r.C < r.A % r.B THEN 1
 		ELSE 0
-	END as c57,
+	END as c64,
 	CASE
 		WHEN r.A % r.B BETWEEN r.C AND r.A THEN 1
 		ELSE 0
-	END as c58,
+	END as c65,
 	CASE
 		WHEN r.A BETWEEN r.B % r.C AND r.A THEN 1
 		ELSE 0
-	END as c59,
+	END as c66,
 	CASE
 		WHEN r.A % r.B IN ($Ids0_1_4, $Ids0_2_4, $Ids0_3_4, $Ids0_4_4, $Ids0_5_4, $Ids0_6_4, $Ids0_7_4, $Ids0_8_4, $Ids0_9_4)
 			THEN 1
 		ELSE 0
-	END as c60,
+	END as c67,
 	CASE
 		WHEN r.N IS NULL THEN 1
 		ELSE 0
-	END as c61,
+	END as c68,
 	CASE
 		WHEN Coalesce(r.S, ''u) || Unwrap(CAST(r.A % r.B AS Text)) LIKE 'x5%'u ESCAPE '~'s
 			THEN 1
 		ELSE 0
-	END as c62,
+	END as c69,
 	CASE
 		WHEN r.A % r.B <= r.C AND r.B < r.A THEN 1
 		ELSE 0
-	END as c63,
+	END as c70,
 	CASE
 		WHEN r.A % r.B IS DISTINCT FROM r.N THEN 1
 		ELSE 0
-	END as c64,
+	END as c71,
 	CASE
 		WHEN r.N IS DISTINCT FROM r.A % r.B THEN 1
 		ELSE 0
-	END as c65,
+	END as c72,
 	CASE
 		WHEN -r.N IS NULL THEN 1
 		ELSE 0
-	END as c66,
+	END as c73,
 	CASE
 		WHEN r.A % -r.B BETWEEN r.C AND r.A THEN 1
 		ELSE 0
-	END as c67,
+	END as c74,
+	CASE
+		WHEN r.C BETWEEN r.A % -r.B AND r.A THEN 1
+		ELSE 0
+	END as c75,
 	CASE
 		WHEN ~BitCast(r.N AS Uint32) IS NULL THEN 1
 		ELSE 0
-	END as c68,
+	END as c76,
 	CASE
 		WHEN r.A % BitCast((~BitCast(r.B AS Uint32)) AS Int32) BETWEEN r.C AND r.A
 			THEN 1
 		ELSE 0
-	END as c69,
-	CASE
-		WHEN BitCast((BitCast(r.A AS Uint32) & BitCast(r.B AS Uint32)) AS Int32) = r.C
-			THEN 1
-		ELSE 0
-	END as c70,
-	CASE
-		WHEN r.C < BitCast((BitCast(r.A AS Uint32) & BitCast(r.B AS Uint32)) AS Int32)
-			THEN 1
-		ELSE 0
-	END as c71,
-	CASE
-		WHEN BitCast((BitCast(r.A AS Uint32) & BitCast(r.B AS Uint32)) AS Int32) BETWEEN r.C AND r.A
-			THEN 1
-		ELSE 0
-	END as c72,
-	CASE
-		WHEN r.A BETWEEN BitCast((BitCast(r.B AS Uint32) & BitCast(r.C AS Uint32)) AS Int32) AND r.A
-			THEN 1
-		ELSE 0
-	END as c73,
-	CASE
-		WHEN BitCast((BitCast(r.A AS Uint32) & BitCast(r.B AS Uint32)) AS Int32) IN ($Ids0_1_5, $Ids0_2_5, $Ids0_3_5, $Ids0_4_5, $Ids0_5_5, $Ids0_6_5, $Ids0_7_5, $Ids0_8_5, $Ids0_9_5)
-			THEN 1
-		ELSE 0
-	END as c74,
-	CASE
-		WHEN r.N IS NULL THEN 1
-		ELSE 0
-	END as c75,
-	CASE
-		WHEN Coalesce(r.S, ''u) || Unwrap(CAST(BitCast((BitCast(r.A AS Uint32) & BitCast(r.B AS Uint32)) AS Int32) AS Text)) LIKE 'x5%'u ESCAPE '~'s
-			THEN 1
-		ELSE 0
-	END as c76,
-	CASE
-		WHEN BitCast((BitCast(r.A AS Uint32) & BitCast(r.B AS Uint32)) AS Int32) <= r.C AND r.B < r.A
-			THEN 1
-		ELSE 0
 	END as c77,
 	CASE
-		WHEN BitCast((BitCast(r.A AS Uint32) & BitCast(r.B AS Uint32)) AS Int32) IS DISTINCT FROM r.N
+		WHEN r.C BETWEEN r.A % BitCast((~BitCast(r.B AS Uint32)) AS Int32) AND r.A
 			THEN 1
 		ELSE 0
 	END as c78,
 	CASE
-		WHEN r.N IS DISTINCT FROM BitCast((BitCast(r.A AS Uint32) & BitCast(r.B AS Uint32)) AS Int32)
+		WHEN BitCast((BitCast(r.A AS Uint32) & BitCast(r.B AS Uint32)) AS Int32) = r.C
 			THEN 1
 		ELSE 0
 	END as c79,
 	CASE
-		WHEN -r.N IS NULL THEN 1
+		WHEN r.C < BitCast((BitCast(r.A AS Uint32) & BitCast(r.B AS Uint32)) AS Int32)
+			THEN 1
 		ELSE 0
 	END as c80,
 	CASE
-		WHEN BitCast((BitCast(r.A AS Uint32) & BitCast((-r.B) AS Uint32)) AS Int32) BETWEEN r.C AND r.A
+		WHEN BitCast((BitCast(r.A AS Uint32) & BitCast(r.B AS Uint32)) AS Int32) BETWEEN r.C AND r.A
 			THEN 1
 		ELSE 0
 	END as c81,
 	CASE
-		WHEN ~BitCast(r.N AS Uint32) IS NULL THEN 1
+		WHEN r.A BETWEEN BitCast((BitCast(r.B AS Uint32) & BitCast(r.C AS Uint32)) AS Int32) AND r.A
+			THEN 1
 		ELSE 0
 	END as c82,
 	CASE
-		WHEN BitCast((BitCast(r.A AS Uint32) & BitCast(BitCast((~BitCast(r.B AS Uint32)) AS Int32) AS Uint32)) AS Int32) BETWEEN r.C AND r.A
+		WHEN BitCast((BitCast(r.A AS Uint32) & BitCast(r.B AS Uint32)) AS Int32) IN ($Ids0_1_5, $Ids0_2_5, $Ids0_3_5, $Ids0_4_5, $Ids0_5_5, $Ids0_6_5, $Ids0_7_5, $Ids0_8_5, $Ids0_9_5)
 			THEN 1
 		ELSE 0
 	END as c83,
 	CASE
-		WHEN BitCast((BitCast(r.A AS Uint32) | BitCast(r.B AS Uint32)) AS Int32) = r.C
-			THEN 1
+		WHEN r.N IS NULL THEN 1
 		ELSE 0
 	END as c84,
 	CASE
-		WHEN r.C < BitCast((BitCast(r.A AS Uint32) | BitCast(r.B AS Uint32)) AS Int32)
+		WHEN Coalesce(r.S, ''u) || Unwrap(CAST(BitCast((BitCast(r.A AS Uint32) & BitCast(r.B AS Uint32)) AS Int32) AS Text)) LIKE 'x5%'u ESCAPE '~'s
 			THEN 1
 		ELSE 0
 	END as c85,
 	CASE
-		WHEN BitCast((BitCast(r.A AS Uint32) | BitCast(r.B AS Uint32)) AS Int32) BETWEEN r.C AND r.A
+		WHEN BitCast((BitCast(r.A AS Uint32) & BitCast(r.B AS Uint32)) AS Int32) <= r.C AND r.B < r.A
 			THEN 1
 		ELSE 0
 	END as c86,
 	CASE
-		WHEN r.A BETWEEN BitCast((BitCast(r.B AS Uint32) | BitCast(r.C AS Uint32)) AS Int32) AND r.A
+		WHEN BitCast((BitCast(r.A AS Uint32) & BitCast(r.B AS Uint32)) AS Int32) IS DISTINCT FROM r.N
 			THEN 1
 		ELSE 0
 	END as c87,
 	CASE
-		WHEN BitCast((BitCast(r.A AS Uint32) | BitCast(r.B AS Uint32)) AS Int32) IN ($Ids0_1_6, $Ids0_2_6, $Ids0_3_6, $Ids0_4_6, $Ids0_5_6, $Ids0_6_6, $Ids0_7_6, $Ids0_8_6, $Ids0_9_6)
+		WHEN r.N IS DISTINCT FROM BitCast((BitCast(r.A AS Uint32) & BitCast(r.B AS Uint32)) AS Int32)
 			THEN 1
 		ELSE 0
 	END as c88,
 	CASE
-		WHEN BitCast(r.A AS Uint32) | BitCast(r.N AS Uint32) IS NULL
-			THEN 1
+		WHEN -r.N IS NULL THEN 1
 		ELSE 0
 	END as c89,
 	CASE
-		WHEN Coalesce(r.S, ''u) || Unwrap(CAST(BitCast((BitCast(r.A AS Uint32) | BitCast(r.B AS Uint32)) AS Int32) AS Text)) LIKE 'x5%'u ESCAPE '~'s
+		WHEN BitCast((BitCast(r.A AS Uint32) & BitCast((-r.B) AS Uint32)) AS Int32) BETWEEN r.C AND r.A
 			THEN 1
 		ELSE 0
 	END as c90,
 	CASE
-		WHEN BitCast((BitCast(r.A AS Uint32) | BitCast(r.B AS Uint32)) AS Int32) <= r.C AND r.B < r.A
+		WHEN r.C BETWEEN BitCast((BitCast(r.A AS Uint32) & BitCast((-r.B) AS Uint32)) AS Int32) AND r.A
 			THEN 1
 		ELSE 0
 	END as c91,
 	CASE
-		WHEN BitCast((BitCast(r.A AS Uint32) | BitCast(r.B AS Uint32)) AS Int32) IS DISTINCT FROM r.N
-			THEN 1
+		WHEN ~BitCast(r.N AS Uint32) IS NULL THEN 1
 		ELSE 0
 	END as c92,
 	CASE
-		WHEN r.N IS DISTINCT FROM BitCast((BitCast(r.A AS Uint32) | BitCast(r.B AS Uint32)) AS Int32)
+		WHEN BitCast((BitCast(r.A AS Uint32) & BitCast(BitCast((~BitCast(r.B AS Uint32)) AS Int32) AS Uint32)) AS Int32) BETWEEN r.C AND r.A
 			THEN 1
 		ELSE 0
 	END as c93,
 	CASE
-		WHEN BitCast(r.A AS Uint32) | BitCast((-r.N) AS Uint32) IS NULL
+		WHEN r.C BETWEEN BitCast((BitCast(r.A AS Uint32) & BitCast(BitCast((~BitCast(r.B AS Uint32)) AS Int32) AS Uint32)) AS Int32) AND r.A
 			THEN 1
 		ELSE 0
 	END as c94,
 	CASE
-		WHEN BitCast((BitCast(r.A AS Uint32) | BitCast((-r.B) AS Uint32)) AS Int32) BETWEEN r.C AND r.A
+		WHEN BitCast((BitCast(r.A AS Uint32) | BitCast(r.B AS Uint32)) AS Int32) = r.C
 			THEN 1
 		ELSE 0
 	END as c95,
 	CASE
-		WHEN BitCast(r.A AS Uint32) | BitCast(BitCast((~BitCast(r.N AS Uint32)) AS Int32) AS Uint32) IS NULL
+		WHEN r.C < BitCast((BitCast(r.A AS Uint32) | BitCast(r.B AS Uint32)) AS Int32)
 			THEN 1
 		ELSE 0
 	END as c96,
 	CASE
-		WHEN BitCast((BitCast(r.A AS Uint32) | BitCast(BitCast((~BitCast(r.B AS Uint32)) AS Int32) AS Uint32)) AS Int32) BETWEEN r.C AND r.A
+		WHEN BitCast((BitCast(r.A AS Uint32) | BitCast(r.B AS Uint32)) AS Int32) BETWEEN r.C AND r.A
 			THEN 1
 		ELSE 0
 	END as c97,
 	CASE
-		WHEN BitCast((BitCast(r.A AS Uint32) ^ BitCast(r.B AS Uint32)) AS Int32) = r.C
+		WHEN r.A BETWEEN BitCast((BitCast(r.B AS Uint32) | BitCast(r.C AS Uint32)) AS Int32) AND r.A
 			THEN 1
 		ELSE 0
 	END as c98,
 	CASE
-		WHEN r.C < BitCast((BitCast(r.A AS Uint32) ^ BitCast(r.B AS Uint32)) AS Int32)
+		WHEN BitCast((BitCast(r.A AS Uint32) | BitCast(r.B AS Uint32)) AS Int32) IN ($Ids0_1_6, $Ids0_2_6, $Ids0_3_6, $Ids0_4_6, $Ids0_5_6, $Ids0_6_6, $Ids0_7_6, $Ids0_8_6, $Ids0_9_6)
 			THEN 1
 		ELSE 0
 	END as c99,
 	CASE
-		WHEN BitCast((BitCast(r.A AS Uint32) ^ BitCast(r.B AS Uint32)) AS Int32) BETWEEN r.C AND r.A
+		WHEN BitCast(r.A AS Uint32) | BitCast(r.N AS Uint32) IS NULL
 			THEN 1
 		ELSE 0
 	END as c100,
 	CASE
-		WHEN r.A BETWEEN BitCast((BitCast(r.B AS Uint32) ^ BitCast(r.C AS Uint32)) AS Int32) AND r.A
+		WHEN Coalesce(r.S, ''u) || Unwrap(CAST(BitCast((BitCast(r.A AS Uint32) | BitCast(r.B AS Uint32)) AS Int32) AS Text)) LIKE 'x5%'u ESCAPE '~'s
 			THEN 1
 		ELSE 0
 	END as c101,
 	CASE
-		WHEN BitCast((BitCast(r.A AS Uint32) ^ BitCast(r.B AS Uint32)) AS Int32) IN ($Ids0_1_7, $Ids0_2_7, $Ids0_3_7, $Ids0_4_7, $Ids0_5_7, $Ids0_6_7, $Ids0_7_7, $Ids0_8_7, $Ids0_9_7)
+		WHEN BitCast((BitCast(r.A AS Uint32) | BitCast(r.B AS Uint32)) AS Int32) <= r.C AND r.B < r.A
 			THEN 1
 		ELSE 0
 	END as c102,
 	CASE
-		WHEN BitCast(r.A AS Uint32) ^ BitCast(r.N AS Uint32) IS NULL
+		WHEN BitCast((BitCast(r.A AS Uint32) | BitCast(r.B AS Uint32)) AS Int32) IS DISTINCT FROM r.N
 			THEN 1
 		ELSE 0
 	END as c103,
 	CASE
-		WHEN Coalesce(r.S, ''u) || Unwrap(CAST(BitCast((BitCast(r.A AS Uint32) ^ BitCast(r.B AS Uint32)) AS Int32) AS Text)) LIKE 'x5%'u ESCAPE '~'s
+		WHEN r.N IS DISTINCT FROM BitCast((BitCast(r.A AS Uint32) | BitCast(r.B AS Uint32)) AS Int32)
 			THEN 1
 		ELSE 0
 	END as c104,
 	CASE
-		WHEN BitCast((BitCast(r.A AS Uint32) ^ BitCast(r.B AS Uint32)) AS Int32) <= r.C AND r.B < r.A
+		WHEN BitCast(r.A AS Uint32) | BitCast((-r.N) AS Uint32) IS NULL
 			THEN 1
 		ELSE 0
 	END as c105,
 	CASE
-		WHEN BitCast((BitCast(r.A AS Uint32) ^ BitCast(r.B AS Uint32)) AS Int32) IS DISTINCT FROM r.N
+		WHEN BitCast((BitCast(r.A AS Uint32) | BitCast((-r.B) AS Uint32)) AS Int32) BETWEEN r.C AND r.A
 			THEN 1
 		ELSE 0
 	END as c106,
 	CASE
-		WHEN r.N IS DISTINCT FROM BitCast((BitCast(r.A AS Uint32) ^ BitCast(r.B AS Uint32)) AS Int32)
+		WHEN r.C BETWEEN BitCast((BitCast(r.A AS Uint32) | BitCast((-r.B) AS Uint32)) AS Int32) AND r.A
 			THEN 1
 		ELSE 0
 	END as c107,
 	CASE
-		WHEN BitCast(r.A AS Uint32) ^ BitCast((-r.N) AS Uint32) IS NULL
+		WHEN BitCast(r.A AS Uint32) | BitCast(BitCast((~BitCast(r.N AS Uint32)) AS Int32) AS Uint32) IS NULL
 			THEN 1
 		ELSE 0
 	END as c108,
 	CASE
-		WHEN BitCast((BitCast(r.A AS Uint32) ^ BitCast((-r.B) AS Uint32)) AS Int32) BETWEEN r.C AND r.A
+		WHEN BitCast((BitCast(r.A AS Uint32) | BitCast(BitCast((~BitCast(r.B AS Uint32)) AS Int32) AS Uint32)) AS Int32) BETWEEN r.C AND r.A
 			THEN 1
 		ELSE 0
 	END as c109,
 	CASE
-		WHEN BitCast(r.A AS Uint32) ^ BitCast(BitCast((~BitCast(r.N AS Uint32)) AS Int32) AS Uint32) IS NULL
+		WHEN r.C BETWEEN BitCast((BitCast(r.A AS Uint32) | BitCast(BitCast((~BitCast(r.B AS Uint32)) AS Int32) AS Uint32)) AS Int32) AND r.A
 			THEN 1
 		ELSE 0
 	END as c110,
 	CASE
-		WHEN BitCast((BitCast(r.A AS Uint32) ^ BitCast(BitCast((~BitCast(r.B AS Uint32)) AS Int32) AS Uint32)) AS Int32) BETWEEN r.C AND r.A
+		WHEN BitCast((BitCast(r.A AS Uint32) ^ BitCast(r.B AS Uint32)) AS Int32) = r.C
 			THEN 1
 		ELSE 0
 	END as c111,
-	r.A * -r.B + r.C as c112,
-	r.A * BitCast((~BitCast(r.B AS Uint32)) AS Int32) + r.C as c113,
-	r.A * -r.B - r.C as c114,
-	r.A * BitCast((~BitCast(r.B AS Uint32)) AS Int32) - r.C as c115,
-	(r.A * -r.B) * r.C as c116,
-	(r.A * BitCast((~BitCast(r.B AS Uint32)) AS Int32)) * r.C as c117,
-	r.A * -r.B + r.C as c118,
-	r.A * BitCast((~BitCast(r.B AS Uint32)) AS Int32) + r.C as c119,
 	CASE
-		WHEN -r.A = r.C THEN 1
+		WHEN r.C < BitCast((BitCast(r.A AS Uint32) ^ BitCast(r.B AS Uint32)) AS Int32)
+			THEN 1
+		ELSE 0
+	END as c112,
+	CASE
+		WHEN BitCast((BitCast(r.A AS Uint32) ^ BitCast(r.B AS Uint32)) AS Int32) BETWEEN r.C AND r.A
+			THEN 1
+		ELSE 0
+	END as c113,
+	CASE
+		WHEN r.A BETWEEN BitCast((BitCast(r.B AS Uint32) ^ BitCast(r.C AS Uint32)) AS Int32) AND r.A
+			THEN 1
+		ELSE 0
+	END as c114,
+	CASE
+		WHEN BitCast((BitCast(r.A AS Uint32) ^ BitCast(r.B AS Uint32)) AS Int32) IN ($Ids0_1_7, $Ids0_2_7, $Ids0_3_7, $Ids0_4_7, $Ids0_5_7, $Ids0_6_7, $Ids0_7_7, $Ids0_8_7, $Ids0_9_7)
+			THEN 1
+		ELSE 0
+	END as c115,
+	CASE
+		WHEN BitCast(r.A AS Uint32) ^ BitCast(r.N AS Uint32) IS NULL
+			THEN 1
+		ELSE 0
+	END as c116,
+	CASE
+		WHEN Coalesce(r.S, ''u) || Unwrap(CAST(BitCast((BitCast(r.A AS Uint32) ^ BitCast(r.B AS Uint32)) AS Int32) AS Text)) LIKE 'x5%'u ESCAPE '~'s
+			THEN 1
+		ELSE 0
+	END as c117,
+	CASE
+		WHEN BitCast((BitCast(r.A AS Uint32) ^ BitCast(r.B AS Uint32)) AS Int32) <= r.C AND r.B < r.A
+			THEN 1
+		ELSE 0
+	END as c118,
+	CASE
+		WHEN BitCast((BitCast(r.A AS Uint32) ^ BitCast(r.B AS Uint32)) AS Int32) IS DISTINCT FROM r.N
+			THEN 1
+		ELSE 0
+	END as c119,
+	CASE
+		WHEN r.N IS DISTINCT FROM BitCast((BitCast(r.A AS Uint32) ^ BitCast(r.B AS Uint32)) AS Int32)
+			THEN 1
 		ELSE 0
 	END as c120,
 	CASE
-		WHEN r.C = -r.A THEN 1
+		WHEN BitCast(r.A AS Uint32) ^ BitCast((-r.N) AS Uint32) IS NULL
+			THEN 1
 		ELSE 0
 	END as c121,
 	CASE
-		WHEN BitCast((~BitCast(r.A AS Uint32)) AS Int32) = r.C THEN 1
+		WHEN BitCast((BitCast(r.A AS Uint32) ^ BitCast((-r.B) AS Uint32)) AS Int32) BETWEEN r.C AND r.A
+			THEN 1
 		ELSE 0
 	END as c122,
 	CASE
-		WHEN r.C = BitCast((~BitCast(r.A AS Uint32)) AS Int32) THEN 1
+		WHEN r.C BETWEEN BitCast((BitCast(r.A AS Uint32) ^ BitCast((-r.B) AS Uint32)) AS Int32) AND r.A
+			THEN 1
 		ELSE 0
 	END as c123,
 	CASE
-		WHEN -5 = r.C THEN 1
+		WHEN BitCast(r.A AS Uint32) ^ BitCast(BitCast((~BitCast(r.N AS Uint32)) AS Int32) AS Uint32) IS NULL
+			THEN 1
 		ELSE 0
 	END as c124,
 	CASE
+		WHEN BitCast((BitCast(r.A AS Uint32) ^ BitCast(BitCast((~BitCast(r.B AS Uint32)) AS Int32) AS Uint32)) AS Int32) BETWEEN r.C AND r.A
+			THEN 1
+		ELSE 0
+	END as c125,
+	CASE
+		WHEN r.C BETWEEN BitCast((BitCast(r.A AS Uint32) ^ BitCast(BitCast((~BitCast(r.B AS Uint32)) AS Int32) AS Uint32)) AS Int32) AND r.A
+			THEN 1
+		ELSE 0
+	END as c126,
+	r.A * -r.B + r.C as c127,
+	r.A * BitCast((~BitCast(r.B AS Uint32)) AS Int32) + r.C as c128,
+	r.A * -r.B - r.C as c129,
+	r.A * BitCast((~BitCast(r.B AS Uint32)) AS Int32) - r.C as c130,
+	(r.A * -r.B) * r.C as c131,
+	(r.A * BitCast((~BitCast(r.B AS Uint32)) AS Int32)) * r.C as c132,
+	r.A * -r.B + r.C as c133,
+	r.A * BitCast((~BitCast(r.B AS Uint32)) AS Int32) + r.C as c134,
+	CASE
+		WHEN -r.A = r.C THEN 1
+		ELSE 0
+	END as c135,
+	CASE
+		WHEN r.C = -r.A THEN 1
+		ELSE 0
+	END as c136,
+	CASE
+		WHEN BitCast((~BitCast(r.A AS Uint32)) AS Int32) = r.C THEN 1
+		ELSE 0
+	END as c137,
+	CASE
+		WHEN r.C = BitCast((~BitCast(r.A AS Uint32)) AS Int32) THEN 1
+		ELSE 0
+	END as c138,
+	CASE
+		WHEN -5 = r.C THEN 1
+		ELSE 0
+	END as c139,
+	CASE
 		WHEN r.C = -5 THEN 1
 		ELSE 0
-	END as c125
+	END as c140
 FROM
 	PrecedenceRow r
 ORDER BY
