@@ -11,5 +11,5 @@ SELECT
 FROM
 	"Warehouse" w
 WHERE
-	w."IsActive" = :isActive AND (w."ClearingWarehouseId" = ANY(:warehouseIds))
+	w."IsActive" = :isActive AND w."ClearingWarehouseId" = ANY(:warehouseIds)
 

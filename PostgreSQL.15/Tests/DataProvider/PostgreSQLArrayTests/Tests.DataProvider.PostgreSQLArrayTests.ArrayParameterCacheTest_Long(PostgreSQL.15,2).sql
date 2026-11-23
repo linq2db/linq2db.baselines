@@ -17,5 +17,5 @@ SELECT
 FROM
 	"AllTypesValueTable" t
 WHERE
-	(t."LongValue" = ANY(:arr))
+	t."LongValue" = ANY(:arr)
 

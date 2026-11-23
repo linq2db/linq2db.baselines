@@ -8,7 +8,7 @@ SELECT
 		FROM
 			"Issue155Table" r
 		WHERE
-			(e."Id" = ANY(r."Linked"))
+			e."Id" = ANY(r."Linked")
 	)
 FROM
 	"Issue155Table" e

@@ -8,7 +8,7 @@ SELECT
 FROM
 	"EntityWithArrays" m_1
 WHERE
-	(m_1."Guids" && :guids)
+	m_1."Guids" && :guids
 
 
 

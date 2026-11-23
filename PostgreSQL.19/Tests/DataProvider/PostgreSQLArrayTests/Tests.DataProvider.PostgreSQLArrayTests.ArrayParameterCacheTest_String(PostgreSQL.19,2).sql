@@ -17,5 +17,5 @@ SELECT
 FROM
 	"AllTypesValueTable" t
 WHERE
-	(t."StrValue" = ANY(:arr))
+	t."StrValue" = ANY(:arr)
 

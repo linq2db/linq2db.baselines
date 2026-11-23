@@ -9,7 +9,7 @@ SELECT
 FROM
 	"Events" e
 WHERE
-	((e."Duration" + e."Duration") * e."Duration" @> :date)
+	(e."Duration" + e."Duration") * e."Duration" @> :date
 
 
 
@@ -24,7 +24,7 @@ SELECT
 FROM
 	"Events" e
 WHERE
-	(e."Duration" - (e."Duration" + e."Duration") @> :date)
+	e."Duration" - (e."Duration" + e."Duration") @> :date
 
 
 
