@@ -22,5 +22,5 @@ FROM
 	) [t2]
 ORDER BY
 	[t2].[LanguageId],
-	([t2].[Count_1] * 10000) / [t2].[Count_1] DESC
+	[t2].[Count_1] * 10000 / [t2].[Count_1] DESC
 

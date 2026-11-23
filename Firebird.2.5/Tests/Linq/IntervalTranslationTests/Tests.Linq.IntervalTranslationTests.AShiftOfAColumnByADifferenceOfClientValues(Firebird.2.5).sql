@@ -33,7 +33,7 @@ DECLARE @Ticks BigInt -- Int64
 SET     @Ticks = 36002500000
 
 SELECT FIRST 2
-	DateAdd(millisecond, Mod(CAST(@Ticks AS BigInt) * -1, 864000000000) / 10000, DateAdd(day, (CAST(@Ticks AS BigInt) * -1) / 864000000000, CAST("r"."FinishedOn" AS TimeStamp)))
+	DateAdd(millisecond, Mod(CAST(@Ticks AS BigInt) * -1, 864000000000) / 10000, DateAdd(day, CAST(@Ticks AS BigInt) * -1 / 864000000000, CAST("r"."FinishedOn" AS TimeStamp)))
 FROM
 	"EventRow" "r"
 
@@ -57,5 +57,5 @@ SELECT
 FROM
 	"EventRow" "r"
 WHERE
-	DateAdd(millisecond, Mod(CAST(@Ticks AS BigInt) * -1, 864000000000) / 10000, DateAdd(day, (CAST(@Ticks AS BigInt) * -1) / 864000000000, CAST("r"."FinishedOn" AS TimeStamp))) > DateAdd(Hour, 1, "r"."StartedOn")
+	DateAdd(millisecond, Mod(CAST(@Ticks AS BigInt) * -1, 864000000000) / 10000, DateAdd(day, CAST(@Ticks AS BigInt) * -1 / 864000000000, CAST("r"."FinishedOn" AS TimeStamp))) > DateAdd(Hour, 1, "r"."StartedOn")
 

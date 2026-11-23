@@ -25,7 +25,7 @@ VALUES
 
 -- YDB Ydb
 SELECT
-	Unwrap(CAST(Unwrap(CAST(r.`Day` AS Timestamp)) + DateTime::IntervalFromMicroseconds((Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l) / 10l) AS Timestamp)) as c1
+	Unwrap(CAST(Unwrap(CAST(r.`Day` AS Timestamp)) + DateTime::IntervalFromMicroseconds(Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l / 10l) AS Timestamp)) as c1
 FROM
 	DatedEventRow r
 LIMIT 2
@@ -36,11 +36,11 @@ SELECT
 FROM
 	DatedEventRow r
 WHERE
-	Unwrap(CAST(Unwrap(CAST(r.`Day` AS Timestamp)) + DateTime::IntervalFromMicroseconds((Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l) / 10l) AS Timestamp)) > r.`Day`
+	Unwrap(CAST(Unwrap(CAST(r.`Day` AS Timestamp)) + DateTime::IntervalFromMicroseconds(Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l / 10l) AS Timestamp)) > r.`Day`
 
 -- YDB Ydb
 SELECT
-	Unwrap(CAST(Unwrap(CAST(r.`Day` AS Timestamp)) + DateTime::IntervalFromMicroseconds((Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l) / 10l) AS Timestamp)) as c1
+	Unwrap(CAST(Unwrap(CAST(r.`Day` AS Timestamp)) + DateTime::IntervalFromMicroseconds(Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l / 10l) AS Timestamp)) as c1
 FROM
 	DatedEventRow r
 LIMIT 2
@@ -51,5 +51,5 @@ SELECT
 FROM
 	DatedEventRow r
 WHERE
-	Unwrap(CAST(Unwrap(CAST(r.`Day` AS Timestamp)) + DateTime::IntervalFromMicroseconds((Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l) / 10l) AS Timestamp)) > r.`Day`
+	Unwrap(CAST(Unwrap(CAST(r.`Day` AS Timestamp)) + DateTime::IntervalFromMicroseconds(Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l / 10l) AS Timestamp)) > r.`Day`
 

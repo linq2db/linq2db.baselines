@@ -4,7 +4,7 @@ SELECT
 FROM
 	`ConcatTestEntity` `e`
 WHERE
-	(CONCAT(CAST(`e`.`Num` AS CHAR(11)), '-', Coalesce(`e`.`StrReq`, ''))) = '100-Programmer'
+	CONCAT(CAST(`e`.`Num` AS CHAR(11)), '-', Coalesce(`e`.`StrReq`, '')) = '100-Programmer'
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 SELECT

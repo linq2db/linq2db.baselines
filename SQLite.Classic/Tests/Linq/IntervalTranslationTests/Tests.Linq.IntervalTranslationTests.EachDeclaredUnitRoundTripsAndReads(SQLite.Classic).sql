@@ -36,7 +36,7 @@ LIMIT 2
 -- SQLite.Classic SQLite
 SELECT
 	CAST([r].[InDays] * 24 AS Float),
-	CAST(([r].[InMilliseconds] / 1000) % 60 AS INTEGER)
+	CAST([r].[InMilliseconds] / 1000 % 60 AS INTEGER)
 FROM
 	[UnitSpreadRow] [r]
 LIMIT 2

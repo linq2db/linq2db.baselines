@@ -5,7 +5,7 @@ DECLARE @part2 Int32
 SET     @part2 = 4
 
 SELECT
-	TRUNC(t."DateTimeValue" + ((CAST(t."SmallIntValue" AS Int) + :part1) - :part2) * INTERVAL '1' YEAR)
+	TRUNC(t."DateTimeValue" + (CAST(t."SmallIntValue" AS Int) + :part1 - :part2) * INTERVAL '1' YEAR)
 FROM
 	"LinqDataTypes" t
 

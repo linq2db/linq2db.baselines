@@ -28,8 +28,8 @@ LIMIT 2
 
 -- DuckDB
 SELECT
-	CAST(((Date_Diff('microsecond', r.StartedOn, r.FinishedOn) * 10) // 10000) % 1000 AS INTEGER),
-	CAST(((Date_Diff('microsecond', r.StartedOn, r.FinishedOn) * 10) // 10000000) % 60 AS INTEGER)
+	CAST(Date_Diff('microsecond', r.StartedOn, r.FinishedOn) * 10 // 10000 % 1000 AS INTEGER),
+	CAST(Date_Diff('microsecond', r.StartedOn, r.FinishedOn) * 10 // 10000000 % 60 AS INTEGER)
 FROM
 	EventRow r
 LIMIT 2

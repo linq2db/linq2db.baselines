@@ -4,7 +4,7 @@ SELECT
 FROM
 	[ClosedPeriodRow] [r]
 WHERE
-	CAST((DateDiff_Big(day, [r].[OpenedOn], [r].[ClosedOnNullable]) * 86400) * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r].[OpenedOn], [r].[ClosedOnNullable]) AS Int), [r].[OpenedOn]), [r].[ClosedOnNullable]) / 100 AS Float) / 864000000000 > 0
+	CAST(DateDiff_Big(day, [r].[OpenedOn], [r].[ClosedOnNullable]) * 86400 * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r].[OpenedOn], [r].[ClosedOnNullable]) AS Int), [r].[OpenedOn]), [r].[ClosedOnNullable]) / 100 AS Float) / 864000000000 > 0
 
 -- SqlServer.2017
 SELECT
@@ -12,7 +12,7 @@ SELECT
 FROM
 	[ClosedPeriodRow] [r]
 WHERE
-	CAST((DateDiff_Big(day, [r].[OpenedOn], [r].[ClosedOnNullable]) * 86400) * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r].[OpenedOn], [r].[ClosedOnNullable]) AS Int), [r].[OpenedOn]), [r].[ClosedOnNullable]) / 100 AS Float) / 36000000000 > 0
+	CAST(DateDiff_Big(day, [r].[OpenedOn], [r].[ClosedOnNullable]) * 86400 * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r].[OpenedOn], [r].[ClosedOnNullable]) AS Int), [r].[OpenedOn]), [r].[ClosedOnNullable]) / 100 AS Float) / 36000000000 > 0
 
 -- SqlServer.2017
 DECLARE @asOf DateTime2
@@ -23,11 +23,11 @@ SELECT
 FROM
 	[ClosedPeriodRow] [r]
 WHERE
-	CAST((DateDiff_Big(day, [r].[ClosedOnNullable], @asOf) * 86400) * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r].[ClosedOnNullable], @asOf) AS Int), [r].[ClosedOnNullable]), @asOf) / 100 AS Float) / 864000000000 > 0
+	CAST(DateDiff_Big(day, [r].[ClosedOnNullable], @asOf) * 86400 * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r].[ClosedOnNullable], @asOf) AS Int), [r].[ClosedOnNullable]), @asOf) / 100 AS Float) / 864000000000 > 0
 
 -- SqlServer.2017
 SELECT TOP (2)
-	CAST((DateDiff_Big(day, [r].[OpenedOn], [r].[ClosedOnNullable]) * 86400) * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r].[OpenedOn], [r].[ClosedOnNullable]) AS Int), [r].[OpenedOn]), [r].[ClosedOnNullable]) / 100 AS Float) / 36000000000
+	CAST(DateDiff_Big(day, [r].[OpenedOn], [r].[ClosedOnNullable]) * 86400 * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r].[OpenedOn], [r].[ClosedOnNullable]) AS Int), [r].[OpenedOn]), [r].[ClosedOnNullable]) / 100 AS Float) / 36000000000
 FROM
 	[ClosedPeriodRow] [r]
 WHERE
@@ -39,7 +39,7 @@ SELECT
 FROM
 	[ClosedPeriodRow] [r]
 WHERE
-	CAST(((DateDiff_Big(day, [r].[OpenedOn], [r].[ClosedOnNullable]) * 86400) * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r].[OpenedOn], [r].[ClosedOnNullable]) AS Int), [r].[OpenedOn]), [r].[ClosedOnNullable]) / 100) / 864000000000 AS Int) > 0
+	CAST((DateDiff_Big(day, [r].[OpenedOn], [r].[ClosedOnNullable]) * 86400 * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r].[OpenedOn], [r].[ClosedOnNullable]) AS Int), [r].[OpenedOn]), [r].[ClosedOnNullable]) / 100) / 864000000000 AS Int) > 0
 
 -- SqlServer.2017
 SELECT
@@ -47,12 +47,12 @@ SELECT
 FROM
 	[ClosedPeriodRow] [r]
 WHERE
-	CAST((((DateDiff_Big(day, [r].[OpenedOn], [r].[ClosedOnNullable]) * 86400) * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r].[OpenedOn], [r].[ClosedOnNullable]) AS Int), [r].[OpenedOn]), [r].[ClosedOnNullable]) / 100) / 36000000000) % 24 AS Int) > 0
+	CAST((DateDiff_Big(day, [r].[OpenedOn], [r].[ClosedOnNullable]) * 86400 * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r].[OpenedOn], [r].[ClosedOnNullable]) AS Int), [r].[OpenedOn]), [r].[ClosedOnNullable]) / 100) / 36000000000 % 24 AS Int) > 0
 
 -- SqlServer.2017
 SELECT
-	CAST(((DateDiff_Big(day, [r].[OpenedOn], [r].[ClosedOnNullable]) * 86400) * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r].[OpenedOn], [r].[ClosedOnNullable]) AS Int), [r].[OpenedOn]), [r].[ClosedOnNullable]) / 100) / 864000000000 AS Int),
-	CAST((((DateDiff_Big(day, [r].[OpenedOn], [r].[ClosedOnNullable]) * 86400) * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r].[OpenedOn], [r].[ClosedOnNullable]) AS Int), [r].[OpenedOn]), [r].[ClosedOnNullable]) / 100) / 36000000000) % 24 AS Int)
+	CAST((DateDiff_Big(day, [r].[OpenedOn], [r].[ClosedOnNullable]) * 86400 * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r].[OpenedOn], [r].[ClosedOnNullable]) AS Int), [r].[OpenedOn]), [r].[ClosedOnNullable]) / 100) / 864000000000 AS Int),
+	CAST((DateDiff_Big(day, [r].[OpenedOn], [r].[ClosedOnNullable]) * 86400 * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, [r].[OpenedOn], [r].[ClosedOnNullable]) AS Int), [r].[OpenedOn]), [r].[ClosedOnNullable]) / 100) / 36000000000 % 24 AS Int)
 FROM
 	[ClosedPeriodRow] [r]
 ORDER BY

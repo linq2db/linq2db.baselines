@@ -29,8 +29,8 @@ VALUES
 
 -- SqlServer.2014.MS SqlServer.2014
 SELECT TOP (2)
-	CAST(([r].[InTicks] / 10000) % 1000 AS Int),
-	CAST(([r].[InTicks] / 10) % 1000 AS Int)
+	CAST([r].[InTicks] / 10000 % 1000 AS Int),
+	CAST([r].[InTicks] / 10 % 1000 AS Int)
 FROM
 	[DurationRow] [r]
 

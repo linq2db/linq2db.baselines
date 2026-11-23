@@ -28,8 +28,8 @@ LIMIT 2
 
 -- YDB Ydb
 SELECT
-	Unwrap(CAST(((Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l) / 10000l) % 1000l AS Int32)) as Milliseconds,
-	Unwrap(CAST(((Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l) / 10000000l) % 60l AS Int32)) as Seconds
+	Unwrap(CAST(Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l / 10000l % 1000l AS Int32)) as Milliseconds,
+	Unwrap(CAST(Unwrap(CAST(r.FinishedOn - r.StartedOn AS Int64)) * 10l / 10000000l % 60l AS Int32)) as Seconds
 FROM
 	EventRow r
 LIMIT 2

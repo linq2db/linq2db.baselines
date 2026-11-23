@@ -35,7 +35,7 @@ FROM
 -- Sybase.Managed Sybase
 SELECT TOP 2
 	CAST([r].[InDays] * 24 AS Float),
-	CAST(([r].[InMilliseconds] / 1000) % 60 AS Int)
+	CAST([r].[InMilliseconds] / 1000 % 60 AS Int)
 FROM
 	[UnitSpreadRow] [r]
 

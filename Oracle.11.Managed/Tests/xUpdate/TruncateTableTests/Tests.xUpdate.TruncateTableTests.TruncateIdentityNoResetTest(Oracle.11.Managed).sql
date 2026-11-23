@@ -45,7 +45,7 @@ FROM
 					t1.ID
 			) t2
 		WHERE
-			ROWNUM <= (:skip + 2)
+			ROWNUM <= :skip + 2
 	) t3
 WHERE
 	t3.RN > :skip
@@ -99,7 +99,7 @@ FROM
 					t1.ID
 			) t2
 		WHERE
-			ROWNUM <= (:skip + 2)
+			ROWNUM <= :skip + 2
 	) t3
 WHERE
 	t3.RN > :skip

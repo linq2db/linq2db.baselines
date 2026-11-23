@@ -5,5 +5,5 @@ SELECT
 FROM
 	[TestTable5] [t]
 WHERE
-	([t].[IntValue] & 1) <> 0
+	[t].[IntValue] & 1 <> 0
 

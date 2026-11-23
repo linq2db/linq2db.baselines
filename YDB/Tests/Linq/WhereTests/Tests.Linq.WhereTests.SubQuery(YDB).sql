@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
 SELECT
-	(t.ParentID * 1000) / 1000 as c1
+	t.ParentID * 1000 / 1000 as c1
 FROM
 	Child t
 WHERE

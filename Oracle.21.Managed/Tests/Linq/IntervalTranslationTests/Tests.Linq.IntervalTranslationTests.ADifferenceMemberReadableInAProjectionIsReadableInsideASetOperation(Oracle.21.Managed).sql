@@ -21,20 +21,20 @@ VALUES
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
 SELECT
-	CAST(MOD(Trunc((CAST(Floor(Extract(Day From (CAST(r."FinishedOn" AS timestamp) - CAST(r."StartedOn" AS timestamp)))) AS Number(19)) * 864000000000 + CAST(Floor(Extract(Hour From (CAST(r."FinishedOn" AS timestamp) - CAST(r."StartedOn" AS timestamp)))) AS Number(19)) * 36000000000 + CAST(Floor(Extract(Minute From (CAST(r."FinishedOn" AS timestamp) - CAST(r."StartedOn" AS timestamp)))) AS Number(19)) * 600000000 + CAST(Floor(Round(Extract(Second From (CAST(r."FinishedOn" AS timestamp) - CAST(r."StartedOn" AS timestamp))) * 10000000D)) AS Number(19))) / 10), 1000) AS Int)
+	CAST(MOD(Trunc((CAST(Floor(Extract(Day From (CAST(r."FinishedOn" AS timestamp) - CAST(r."StartedOn" AS timestamp)))) AS Number(19)) * 864000000000 + (CAST(Floor(Extract(Hour From (CAST(r."FinishedOn" AS timestamp) - CAST(r."StartedOn" AS timestamp)))) AS Number(19)) * 36000000000 + (CAST(Floor(Extract(Minute From (CAST(r."FinishedOn" AS timestamp) - CAST(r."StartedOn" AS timestamp)))) AS Number(19)) * 600000000 + CAST(Floor(Round(Extract(Second From (CAST(r."FinishedOn" AS timestamp) - CAST(r."StartedOn" AS timestamp))) * 10000000D)) AS Number(19))))) / 10), 1000) AS Int)
 FROM
 	"EventRow" r
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
 SELECT
-	CAST(MOD(Trunc((CAST(Floor(Extract(Day From (CAST(r."FinishedOn" AS timestamp) - CAST(r."StartedOn" AS timestamp)))) AS Number(19)) * 864000000000 + CAST(Floor(Extract(Hour From (CAST(r."FinishedOn" AS timestamp) - CAST(r."StartedOn" AS timestamp)))) AS Number(19)) * 36000000000 + CAST(Floor(Extract(Minute From (CAST(r."FinishedOn" AS timestamp) - CAST(r."StartedOn" AS timestamp)))) AS Number(19)) * 600000000 + CAST(Floor(Round(Extract(Second From (CAST(r."FinishedOn" AS timestamp) - CAST(r."StartedOn" AS timestamp))) * 10000000D)) AS Number(19))) / 10), 1000) AS Int)
+	CAST(MOD(Trunc((CAST(Floor(Extract(Day From (CAST(r."FinishedOn" AS timestamp) - CAST(r."StartedOn" AS timestamp)))) AS Number(19)) * 864000000000 + (CAST(Floor(Extract(Hour From (CAST(r."FinishedOn" AS timestamp) - CAST(r."StartedOn" AS timestamp)))) AS Number(19)) * 36000000000 + (CAST(Floor(Extract(Minute From (CAST(r."FinishedOn" AS timestamp) - CAST(r."StartedOn" AS timestamp)))) AS Number(19)) * 600000000 + CAST(Floor(Round(Extract(Second From (CAST(r."FinishedOn" AS timestamp) - CAST(r."StartedOn" AS timestamp))) * 10000000D)) AS Number(19))))) / 10), 1000) AS Int)
 FROM
 	"EventRow" r
 WHERE
 	r."Id" > 0
 UNION ALL
 SELECT
-	CAST(MOD(Trunc((CAST(Floor(Extract(Day From (CAST(r_1."FinishedOn" AS timestamp) - CAST(r_1."StartedOn" AS timestamp)))) AS Number(19)) * 864000000000 + CAST(Floor(Extract(Hour From (CAST(r_1."FinishedOn" AS timestamp) - CAST(r_1."StartedOn" AS timestamp)))) AS Number(19)) * 36000000000 + CAST(Floor(Extract(Minute From (CAST(r_1."FinishedOn" AS timestamp) - CAST(r_1."StartedOn" AS timestamp)))) AS Number(19)) * 600000000 + CAST(Floor(Round(Extract(Second From (CAST(r_1."FinishedOn" AS timestamp) - CAST(r_1."StartedOn" AS timestamp))) * 10000000D)) AS Number(19))) / 10), 1000) AS Int)
+	CAST(MOD(Trunc((CAST(Floor(Extract(Day From (CAST(r_1."FinishedOn" AS timestamp) - CAST(r_1."StartedOn" AS timestamp)))) AS Number(19)) * 864000000000 + (CAST(Floor(Extract(Hour From (CAST(r_1."FinishedOn" AS timestamp) - CAST(r_1."StartedOn" AS timestamp)))) AS Number(19)) * 36000000000 + (CAST(Floor(Extract(Minute From (CAST(r_1."FinishedOn" AS timestamp) - CAST(r_1."StartedOn" AS timestamp)))) AS Number(19)) * 600000000 + CAST(Floor(Round(Extract(Second From (CAST(r_1."FinishedOn" AS timestamp) - CAST(r_1."StartedOn" AS timestamp))) * 10000000D)) AS Number(19))))) / 10), 1000) AS Int)
 FROM
 	"EventRow" r_1
 WHERE

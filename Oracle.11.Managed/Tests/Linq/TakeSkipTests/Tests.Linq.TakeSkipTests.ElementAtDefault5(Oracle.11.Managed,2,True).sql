@@ -31,7 +31,7 @@ FROM
 					t1."LastName"
 			) t2
 		WHERE
-			ROWNUM <= (:skip + 1)
+			ROWNUM <= :skip + 1
 	) t3
 WHERE
 	t3.RN > :skip
@@ -71,7 +71,7 @@ FROM
 					t1."LastName"
 			) t2
 		WHERE
-			ROWNUM <= (:skip + 1)
+			ROWNUM <= :skip + 1
 	) t3
 WHERE
 	t3.RN > :skip

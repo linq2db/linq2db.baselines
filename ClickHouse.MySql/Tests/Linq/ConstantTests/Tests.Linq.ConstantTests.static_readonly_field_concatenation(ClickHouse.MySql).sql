@@ -7,7 +7,7 @@ SELECT
 FROM
 	TestConstantsData e
 WHERE
-	(concat(Coalesce(e.StringValue, ''), '1')) = 'StrValue1'
+	concat(Coalesce(e.StringValue, ''), '1') = 'StrValue1'
 
 -- ClickHouse.MySql ClickHouse
 SELECT

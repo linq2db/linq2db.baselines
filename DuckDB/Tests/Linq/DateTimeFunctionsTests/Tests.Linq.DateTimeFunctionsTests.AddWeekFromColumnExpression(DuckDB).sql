@@ -5,7 +5,7 @@ DECLARE $part2 INTEGER -- Int32
 SET     $part2 = 4
 
 SELECT
-	CAST(t.DateTimeValue + (((t.SmallIntValue + $part1) - $part2) * Interval '1 Day') * 7 AS DATE)
+	CAST(t.DateTimeValue + (t.SmallIntValue + $part1 - $part2) * Interval '1 Day' * 7 AS DATE)
 FROM
 	LinqDataTypes t
 

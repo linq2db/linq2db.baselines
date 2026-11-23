@@ -1,0 +1,87 @@
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+SELECT
+	CAST((`r`.`A` + `r`.`B`) ^ `r`.`C` AS SIGNED),
+	CAST(`r`.`A` ^ (`r`.`B` + `r`.`C`) AS SIGNED),
+	CAST((`r`.`A` + `r`.`B`) ^ `r`.`C` AS SIGNED),
+	CAST(`r`.`A` ^ (`r`.`B` + `r`.`C`) AS SIGNED),
+	CAST((`r`.`A` - `r`.`B`) ^ `r`.`C` AS SIGNED),
+	CAST((`r`.`A` - `r`.`B`) ^ `r`.`C` AS SIGNED),
+	CAST((`r`.`A` * `r`.`B`) ^ `r`.`C` AS SIGNED),
+	CAST(`r`.`A` ^ (`r`.`B` * `r`.`C`) AS SIGNED),
+	CAST((`r`.`A` * `r`.`B`) ^ `r`.`C` AS SIGNED),
+	CAST(`r`.`A` ^ (`r`.`B` * `r`.`C`) AS SIGNED),
+	CAST((`r`.`A` DIV `r`.`B`) ^ `r`.`C` AS SIGNED),
+	CAST(`r`.`A` ^ (`r`.`B` DIV `r`.`C`) AS SIGNED),
+	CAST((`r`.`A` DIV `r`.`B`) ^ `r`.`C` AS SIGNED),
+	CAST(`r`.`A` ^ (`r`.`B` DIV `r`.`C`) AS SIGNED),
+	CAST((`r`.`A` % `r`.`B`) ^ `r`.`C` AS SIGNED),
+	CAST(`r`.`A` ^ (`r`.`B` % `r`.`C`) AS SIGNED),
+	CAST((`r`.`A` % `r`.`B`) ^ `r`.`C` AS SIGNED),
+	CAST(`r`.`A` ^ (`r`.`B` % `r`.`C`) AS SIGNED),
+	CAST(CAST(`r`.`A` & `r`.`B` AS SIGNED) ^ `r`.`C` AS SIGNED),
+	CAST(`r`.`A` ^ CAST(`r`.`B` & `r`.`C` AS SIGNED) AS SIGNED),
+	CAST(CAST(`r`.`A` & `r`.`B` AS SIGNED) ^ `r`.`C` AS SIGNED),
+	CAST(`r`.`A` ^ CAST(`r`.`B` & `r`.`C` AS SIGNED) AS SIGNED),
+	CAST(CAST(`r`.`A` | `r`.`B` AS SIGNED) ^ `r`.`C` AS SIGNED),
+	CAST(`r`.`A` ^ CAST(`r`.`B` | `r`.`C` AS SIGNED) AS SIGNED),
+	CAST(CAST(`r`.`A` | `r`.`B` AS SIGNED) ^ `r`.`C` AS SIGNED),
+	CAST(`r`.`A` ^ CAST(`r`.`B` | `r`.`C` AS SIGNED) AS SIGNED),
+	CAST((`r`.`A` + `r`.`B`) ^ `r`.`C` AS SIGNED),
+	CAST(`r`.`A` ^ (`r`.`B` + `r`.`C`) AS SIGNED),
+	CAST((`r`.`A` + -6) ^ `r`.`C` AS SIGNED),
+	CAST((`r`.`A` - `r`.`B`) ^ `r`.`C` AS SIGNED),
+	CAST(`r`.`A` ^ (`r`.`B` - `r`.`C`) AS SIGNED),
+	CAST((`r`.`A` - -6) ^ `r`.`C` AS SIGNED),
+	CAST((`r`.`A` * `r`.`B`) ^ `r`.`C` AS SIGNED),
+	CAST(`r`.`A` ^ (`r`.`B` * `r`.`C`) AS SIGNED),
+	CAST((`r`.`A` * -6) ^ `r`.`C` AS SIGNED),
+	CAST((`r`.`A` + `r`.`B`) ^ `r`.`C` AS SIGNED),
+	CAST(`r`.`A` ^ (`r`.`B` + `r`.`C`) AS SIGNED),
+	CAST((`r`.`A` + -6) ^ `r`.`C` AS SIGNED),
+	CAST(`r`.`A` ^ -`r`.`B` AS SIGNED),
+	CAST(-`r`.`B` ^ `r`.`C` AS SIGNED),
+	CAST((`r`.`A` - `r`.`B`) ^ `r`.`C` AS SIGNED),
+	CAST((`r`.`A` + `r`.`B`) ^ `r`.`C` AS SIGNED),
+	CAST((`r`.`A` * -`r`.`B`) ^ `r`.`C` AS SIGNED),
+	CAST((`r`.`A` DIV -`r`.`B`) ^ `r`.`C` AS SIGNED),
+	CAST((`r`.`A` % -`r`.`B`) ^ `r`.`C` AS SIGNED),
+	CAST(CAST(`r`.`A` & -`r`.`B` AS SIGNED) ^ `r`.`C` AS SIGNED),
+	CAST(CAST(`r`.`A` | -`r`.`B` AS SIGNED) ^ `r`.`C` AS SIGNED),
+	CAST(CAST(`r`.`A` ^ -`r`.`B` AS SIGNED) ^ `r`.`C` AS SIGNED),
+	CAST(`r`.`A` ^ CAST(~`r`.`B` AS SIGNED) AS SIGNED),
+	CAST((`r`.`A` + CAST(~`r`.`B` AS SIGNED)) ^ `r`.`C` AS SIGNED),
+	CAST((`r`.`A` - CAST(~`r`.`B` AS SIGNED)) ^ `r`.`C` AS SIGNED),
+	CAST((`r`.`A` * CAST(~`r`.`B` AS SIGNED)) ^ `r`.`C` AS SIGNED),
+	CAST((`r`.`A` % CAST(~`r`.`B` AS SIGNED)) ^ `r`.`C` AS SIGNED),
+	CAST(CAST(`r`.`A` & CAST(~`r`.`B` AS SIGNED) AS SIGNED) ^ `r`.`C` AS SIGNED),
+	CAST(CAST(`r`.`A` | CAST(~`r`.`B` AS SIGNED) AS SIGNED) ^ `r`.`C` AS SIGNED),
+	CAST(`r`.`A` ^ -5 AS SIGNED),
+	CAST(-5 ^ `r`.`C` AS SIGNED),
+	CAST((`r`.`A` + -5) ^ `r`.`C` AS SIGNED),
+	CAST((`r`.`A` - -5) ^ `r`.`C` AS SIGNED),
+	CAST((`r`.`A` * -5) ^ `r`.`C` AS SIGNED),
+	CAST((`r`.`A` % -5) ^ `r`.`C` AS SIGNED),
+	CAST(CAST(`r`.`A` & -5 AS SIGNED) ^ `r`.`C` AS SIGNED),
+	CAST(CAST(`r`.`A` | -5 AS SIGNED) ^ `r`.`C` AS SIGNED),
+	CAST(CAST(`r`.`A` ^ -5 AS SIGNED) ^ `r`.`C` AS SIGNED)
+FROM
+	`PrecedenceRow` `r`
+ORDER BY
+	`r`.`Id`
+
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+SELECT
+	CAST(`r`.`A` ^ -5 AS SIGNED),
+	CAST(-5 ^ `r`.`C` AS SIGNED),
+	CAST((`r`.`A` + -5) ^ `r`.`C` AS SIGNED),
+	CAST((`r`.`A` - -5) ^ `r`.`C` AS SIGNED),
+	CAST((`r`.`A` * -5) ^ `r`.`C` AS SIGNED),
+	CAST((`r`.`A` % -5) ^ `r`.`C` AS SIGNED),
+	CAST(CAST(`r`.`A` & -5 AS SIGNED) ^ `r`.`C` AS SIGNED),
+	CAST(CAST(`r`.`A` | -5 AS SIGNED) ^ `r`.`C` AS SIGNED),
+	CAST(CAST(`r`.`A` ^ -5 AS SIGNED) ^ `r`.`C` AS SIGNED)
+FROM
+	`PrecedenceRow` `r`
+ORDER BY
+	`r`.`Id`
+

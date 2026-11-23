@@ -1,0 +1,87 @@
+﻿-- DB2 DB2.LUW DB2LUW
+SELECT
+	BitXor("r".A + "r".B, "r".C),
+	BitXor("r".A, "r".B + "r".C),
+	BitXor("r".A + "r".B, "r".C),
+	BitXor("r".A, "r".B + "r".C),
+	BitXor("r".A - "r".B, "r".C),
+	BitXor("r".A - "r".B, "r".C),
+	BitXor("r".A * "r".B, "r".C),
+	BitXor("r".A, "r".B * "r".C),
+	BitXor("r".A * "r".B, "r".C),
+	BitXor("r".A, "r".B * "r".C),
+	BitXor("r".A / "r".B, "r".C),
+	BitXor("r".A, "r".B / "r".C),
+	BitXor("r".A / "r".B, "r".C),
+	BitXor("r".A, "r".B / "r".C),
+	BitXor(Mod("r".A, "r".B), "r".C),
+	BitXor("r".A, Mod("r".B, "r".C)),
+	BitXor(Mod("r".A, "r".B), "r".C),
+	BitXor("r".A, Mod("r".B, "r".C)),
+	BitXor(BitAnd("r".A, "r".B), "r".C),
+	BitXor("r".A, BitAnd("r".B, "r".C)),
+	BitXor(BitAnd("r".A, "r".B), "r".C),
+	BitXor("r".A, BitAnd("r".B, "r".C)),
+	BitXor(BitOr("r".A, "r".B), "r".C),
+	BitXor("r".A, BitOr("r".B, "r".C)),
+	BitXor(BitOr("r".A, "r".B), "r".C),
+	BitXor("r".A, BitOr("r".B, "r".C)),
+	BitXor("r".A + "r".B, "r".C),
+	BitXor("r".A, "r".B + "r".C),
+	BitXor("r".A + -6, "r".C),
+	BitXor("r".A - "r".B, "r".C),
+	BitXor("r".A, "r".B - "r".C),
+	BitXor("r".A - -6, "r".C),
+	BitXor("r".A * "r".B, "r".C),
+	BitXor("r".A, "r".B * "r".C),
+	BitXor("r".A * -6, "r".C),
+	BitXor("r".A + "r".B, "r".C),
+	BitXor("r".A, "r".B + "r".C),
+	BitXor("r".A + -6, "r".C),
+	BitXor("r".A, -"r".B),
+	BitXor(-"r".B, "r".C),
+	BitXor("r".A - "r".B, "r".C),
+	BitXor("r".A + "r".B, "r".C),
+	BitXor("r".A * -"r".B, "r".C),
+	BitXor("r".A / -"r".B, "r".C),
+	BitXor(Mod("r".A, -"r".B), "r".C),
+	BitXor(BitAnd("r".A, -"r".B), "r".C),
+	BitXor(BitOr("r".A, -"r".B), "r".C),
+	BitXor(BitXor("r".A, -"r".B), "r".C),
+	BitXor("r".A, BITNOT("r".B)),
+	BitXor("r".A + BITNOT("r".B), "r".C),
+	BitXor("r".A - BITNOT("r".B), "r".C),
+	BitXor("r".A * BITNOT("r".B), "r".C),
+	BitXor(Mod("r".A, BITNOT("r".B)), "r".C),
+	BitXor(BitAnd("r".A, BITNOT("r".B)), "r".C),
+	BitXor(BitOr("r".A, BITNOT("r".B)), "r".C),
+	BitXor("r".A, -5),
+	BitXor(-5, "r".C),
+	BitXor("r".A + -5, "r".C),
+	BitXor("r".A - -5, "r".C),
+	BitXor("r".A * -5, "r".C),
+	BitXor(Mod("r".A, -5), "r".C),
+	BitXor(BitAnd("r".A, -5), "r".C),
+	BitXor(BitOr("r".A, -5), "r".C),
+	BitXor(BitXor("r".A, -5), "r".C)
+FROM
+	"PrecedenceRow" "r"
+ORDER BY
+	"r"."Id"
+
+-- DB2 DB2.LUW DB2LUW
+SELECT
+	BitXor("r".A, -5),
+	BitXor(-5, "r".C),
+	BitXor("r".A + -5, "r".C),
+	BitXor("r".A - -5, "r".C),
+	BitXor("r".A * -5, "r".C),
+	BitXor(Mod("r".A, -5), "r".C),
+	BitXor(BitAnd("r".A, -5), "r".C),
+	BitXor(BitOr("r".A, -5), "r".C),
+	BitXor(BitXor("r".A, -5), "r".C)
+FROM
+	"PrecedenceRow" "r"
+ORDER BY
+	"r"."Id"
+

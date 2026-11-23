@@ -4,7 +4,7 @@ SELECT
 FROM
 	ConcatProduct p
 WHERE
-	(concat(p.Sku, 'Жук')) IN ('A-100Щит', 'B-200Жук')
+	concat(p.Sku, 'Жук') IN ('A-100Щит', 'B-200Жук')
 
 -- ClickHouse.Octonica ClickHouse
 SELECT

@@ -2,9 +2,9 @@
 SELECT
 	t.Id,
 	CASE
-		WHEN (concat(Coalesce(t.VarCharColumn, ''), 'Жук')) > t.NVarCharColumn OR t.NVarCharColumn IS NULL
+		WHEN concat(Coalesce(t.VarCharColumn, ''), 'Жук') > t.NVarCharColumn OR t.NVarCharColumn IS NULL
 			THEN 1
-		WHEN (concat(Coalesce(t.VarCharColumn, ''), 'Жук')) = t.NVarCharColumn
+		WHEN concat(Coalesce(t.VarCharColumn, ''), 'Жук') = t.NVarCharColumn
 			THEN 0
 		ELSE -1
 	END,
@@ -28,7 +28,7 @@ SELECT
 FROM
 	StringTypesTable t
 WHERE
-	(concat(Coalesce(t.VarCharColumn, ''), 'Жук')) NOT LIKE '%?%'
+	concat(Coalesce(t.VarCharColumn, ''), 'Жук') NOT LIKE '%?%'
 ORDER BY
 	t.Id
 

@@ -50,7 +50,7 @@ SELECT
 FROM
 	"LinqDataTypes" "t"
 WHERE
-	"t"."ID" = 5000 AND Add_Days("t"."DateTimeValue", ("t"."SmallIntValue" + :"part1") - :"part2") > To_Timestamp('2018-01-02 00:00:00.000')
+	"t"."ID" = 5000 AND Add_Days("t"."DateTimeValue", "t"."SmallIntValue" + :"part1" - :"part2") > To_Timestamp('2018-01-02 00:00:00.000')
 
 -- SapHana.Native SapHana
 DELETE FROM

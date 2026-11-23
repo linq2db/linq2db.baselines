@@ -84,7 +84,7 @@ FROM
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
-	([p].[ID] + 20) MOD ([p].[ID] * 3)
+	([p].[ID] + 20) MOD [p].[ID] * 3
 FROM
 	[LinqDataTypes] [p]
 WHERE

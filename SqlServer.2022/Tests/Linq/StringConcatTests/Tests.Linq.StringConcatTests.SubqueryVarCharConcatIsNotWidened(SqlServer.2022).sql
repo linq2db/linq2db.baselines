@@ -14,5 +14,5 @@ FROM
 			[LongVarCharKeyRow] [r]
 	) [t1]
 WHERE
-	([t1].[Notes] + [t1].[Twice]) = [t1].[Sku]
+	[t1].[Notes] + [t1].[Twice] = [t1].[Sku]
 

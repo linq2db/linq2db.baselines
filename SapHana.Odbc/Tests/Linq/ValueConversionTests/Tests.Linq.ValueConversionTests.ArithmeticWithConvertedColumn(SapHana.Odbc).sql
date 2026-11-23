@@ -27,7 +27,7 @@ DECLARE @operand Int -- Int32
 SET     @operand = 2
 
 SELECT
-	SUM("g_1"."Cents") / ?
+	CAST(SUM("g_1"."Cents") / ? AS Integer)
 FROM
 	"ConvertedAmount" "g_1"
 GROUP BY

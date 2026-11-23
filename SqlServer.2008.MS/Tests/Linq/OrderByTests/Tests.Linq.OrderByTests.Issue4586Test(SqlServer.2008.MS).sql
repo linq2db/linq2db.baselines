@@ -25,7 +25,7 @@ FROM
 			[x].[FirstName] LIKE N'J%' ESCAPE N'~'
 	) [t1]
 WHERE
-	[t1].[RN] > @skip AND [t1].[RN] <= (@skip + @take)
+	[t1].[RN] > @skip AND [t1].[RN] <= @skip + @take
 ORDER BY
 	[t1].[ID] DESC
 

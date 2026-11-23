@@ -20,7 +20,7 @@ SELECT
 	CAST(Nano100_Between("r"."OpenedOn", "r"."ClosedOn") AS Double) / 36000000000,
 	CAST(Nano100_Between("r"."OpenedOn", "r"."ClosedOn") AS Double) / 600000000,
 	CAST(Nano100_Between("r"."OpenedOn", "r"."ClosedOn") / 864000000000 AS Integer),
-	CAST(MOD(Nano100_Between("r"."OpenedOn", "r"."ClosedOn") / 36000000000, 24) AS Integer)
+	CAST(MOD(CAST(Nano100_Between("r"."OpenedOn", "r"."ClosedOn") / 36000000000 AS BigInt), 24) AS Integer)
 FROM
 	"ClosedPeriodRow" "r"
 WHERE

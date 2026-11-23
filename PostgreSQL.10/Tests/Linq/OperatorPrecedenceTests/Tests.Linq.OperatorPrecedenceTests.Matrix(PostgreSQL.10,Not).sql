@@ -1,0 +1,31 @@
+﻿-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+SELECT
+	~r."A" + r."B",
+	~r."A" + r."B",
+	~r."A" - r."B",
+	~r."A" - r."B",
+	~r."A" * r."B",
+	~r."A" * r."B",
+	~r."A" / r."B",
+	~r."A" / r."B",
+	~(r."A" & r."B"),
+	~(r."A" & r."B"),
+	~(r."A" | r."B"),
+	~(r."A" | r."B"),
+	~(-r."B"),
+	~(~r."B"),
+	~(-5),
+	~(-5 * r."B")
+FROM
+	"PrecedenceRow" r
+ORDER BY
+	r."Id"
+
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+SELECT
+	~(-5)
+FROM
+	"PrecedenceRow" r
+ORDER BY
+	r."Id"
+

@@ -7,7 +7,7 @@ SELECT
 FROM
 	PrefixedCodeWithTitleTable t
 WHERE
-	(Coalesce(t.Code, ''u) || Coalesce(t.Title, ''u)) LIKE $Code
+	Coalesce(t.Code, ''u) || Coalesce(t.Title, ''u) LIKE $Code
 
 -- YDB Ydb
 DECLARE bound Text(4) -- AnsiString
@@ -18,7 +18,7 @@ SELECT
 FROM
 	PrefixedCodeWithTitleTable t
 WHERE
-	(Coalesce(t.Code, ''u) || Coalesce(t.Title, ''u)) = $bound
+	Coalesce(t.Code, ''u) || Coalesce(t.Title, ''u) = $bound
 
 -- YDB Ydb
 DECLARE bound Text(4) -- AnsiString
@@ -29,5 +29,5 @@ SELECT
 FROM
 	PrefixedCodeWithTitleTable t
 WHERE
-	(Coalesce(t.Code, ''u) || Coalesce(t.Title, ''u)) = $bound
+	Coalesce(t.Code, ''u) || Coalesce(t.Title, ''u) = $bound
 

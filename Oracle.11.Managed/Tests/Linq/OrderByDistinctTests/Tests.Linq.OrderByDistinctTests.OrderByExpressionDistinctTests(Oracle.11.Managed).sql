@@ -19,7 +19,7 @@ FROM
 					"OrderByDistinctData" x
 			) t1
 		WHERE
-			ROWNUM <= (:skip + :take)
+			ROWNUM <= :skip + :take
 	) t2
 WHERE
 	t2.RN > :skip
@@ -49,7 +49,7 @@ FROM
 					MAX(MOD(x."OrderData1", 3))
 			) t1
 		WHERE
-			ROWNUM <= (:skip + :take)
+			ROWNUM <= :skip + :take
 	) t2
 WHERE
 	t2.RN > :skip

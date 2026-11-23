@@ -1,6 +1,6 @@
 ﻿-- SQLite.MS SQLite
 SELECT
-	(CAST([g_2].[CountPercents] AS Float) * 100) / SUM([g_2].[CountPercents]) OVER (),
+	CAST([g_2].[CountPercents] AS Float) * 100 / SUM([g_2].[CountPercents]) OVER (),
 	[g_2].[Sum_1]
 FROM
 	(

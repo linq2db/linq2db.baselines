@@ -25,7 +25,7 @@ SELECT
 	Trunc(Extract(hour From (r."FinishedOn" - r."StartedOn")))::Int,
 	Trunc(Extract(minute From (r."FinishedOn" - r."StartedOn")))::Int,
 	Trunc(Extract(second From (r."FinishedOn" - r."StartedOn")))::Int,
-	Floor(Extract(day From (r."FinishedOn" - r."StartedOn")))::BigInt * 864000000000 + Floor(Extract(hour From (r."FinishedOn" - r."StartedOn")))::BigInt * 36000000000 + Floor(Extract(minute From (r."FinishedOn" - r."StartedOn")))::BigInt * 600000000 + Floor(Round(Extract(second From (r."FinishedOn" - r."StartedOn")) * 10000000))::BigInt,
+	Floor(Extract(day From (r."FinishedOn" - r."StartedOn")))::BigInt * 864000000000 + (Floor(Extract(hour From (r."FinishedOn" - r."StartedOn")))::BigInt * 36000000000 + (Floor(Extract(minute From (r."FinishedOn" - r."StartedOn")))::BigInt * 600000000 + Floor(Round(Extract(second From (r."FinishedOn" - r."StartedOn")) * 10000000))::BigInt)),
 	Extract(epoch From (r."FinishedOn" - r."StartedOn")) / 86400,
 	Extract(epoch From (r."FinishedOn" - r."StartedOn")) / 3600,
 	Extract(epoch From (r."FinishedOn" - r."StartedOn")) / 60,

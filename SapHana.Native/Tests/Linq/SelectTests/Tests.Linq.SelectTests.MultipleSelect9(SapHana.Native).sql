@@ -1,6 +1,6 @@
 ﻿-- SapHana.Native SapHana
 SELECT
-	("p5"."PersonID" * 2) / 2,
+	CAST("p5"."PersonID" * 2 / 2 AS Integer),
 	"p5"."FirstName"
 FROM
 	"Person" "p5"

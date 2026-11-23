@@ -21,20 +21,20 @@ VALUES
 
 -- DB2 DB2.LUW DB2LUW
 SELECT
-	CAST(Mod(((CAST(Days("r"."FinishedOn") AS BigInt) - CAST(Days("r"."StartedOn") AS BigInt)) * 864000000000 + (CAST(Midnight_Seconds("r"."FinishedOn") AS BigInt) - CAST(Midnight_Seconds("r"."StartedOn") AS BigInt)) * 10000000 + (CAST(Microsecond("r"."FinishedOn") AS BigInt) - CAST(Microsecond("r"."StartedOn") AS BigInt)) * 10) / 10, 1000) AS Int)
+	CAST(Mod(((CAST(Days("r"."FinishedOn") AS BigInt) - CAST(Days("r"."StartedOn") AS BigInt)) * 864000000000 + ((CAST(Midnight_Seconds("r"."FinishedOn") AS BigInt) - CAST(Midnight_Seconds("r"."StartedOn") AS BigInt)) * 10000000 + (CAST(Microsecond("r"."FinishedOn") AS BigInt) - CAST(Microsecond("r"."StartedOn") AS BigInt)) * 10)) / 10, 1000) AS Int)
 FROM
 	"EventRow" "r"
 
 -- DB2 DB2.LUW DB2LUW
 SELECT
-	CAST(Mod(((CAST(Days("r"."FinishedOn") AS BigInt) - CAST(Days("r"."StartedOn") AS BigInt)) * 864000000000 + (CAST(Midnight_Seconds("r"."FinishedOn") AS BigInt) - CAST(Midnight_Seconds("r"."StartedOn") AS BigInt)) * 10000000 + (CAST(Microsecond("r"."FinishedOn") AS BigInt) - CAST(Microsecond("r"."StartedOn") AS BigInt)) * 10) / 10, 1000) AS Int)
+	CAST(Mod(((CAST(Days("r"."FinishedOn") AS BigInt) - CAST(Days("r"."StartedOn") AS BigInt)) * 864000000000 + ((CAST(Midnight_Seconds("r"."FinishedOn") AS BigInt) - CAST(Midnight_Seconds("r"."StartedOn") AS BigInt)) * 10000000 + (CAST(Microsecond("r"."FinishedOn") AS BigInt) - CAST(Microsecond("r"."StartedOn") AS BigInt)) * 10)) / 10, 1000) AS Int)
 FROM
 	"EventRow" "r"
 WHERE
 	"r"."Id" > 0
 UNION ALL
 SELECT
-	CAST(Mod(((CAST(Days("r_1"."FinishedOn") AS BigInt) - CAST(Days("r_1"."StartedOn") AS BigInt)) * 864000000000 + (CAST(Midnight_Seconds("r_1"."FinishedOn") AS BigInt) - CAST(Midnight_Seconds("r_1"."StartedOn") AS BigInt)) * 10000000 + (CAST(Microsecond("r_1"."FinishedOn") AS BigInt) - CAST(Microsecond("r_1"."StartedOn") AS BigInt)) * 10) / 10, 1000) AS Int)
+	CAST(Mod(((CAST(Days("r_1"."FinishedOn") AS BigInt) - CAST(Days("r_1"."StartedOn") AS BigInt)) * 864000000000 + ((CAST(Midnight_Seconds("r_1"."FinishedOn") AS BigInt) - CAST(Midnight_Seconds("r_1"."StartedOn") AS BigInt)) * 10000000 + (CAST(Microsecond("r_1"."FinishedOn") AS BigInt) - CAST(Microsecond("r_1"."StartedOn") AS BigInt)) * 10)) / 10, 1000) AS Int)
 FROM
 	"EventRow" "r_1"
 WHERE

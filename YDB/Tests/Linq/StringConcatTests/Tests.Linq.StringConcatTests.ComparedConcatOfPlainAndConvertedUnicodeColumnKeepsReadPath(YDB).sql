@@ -16,7 +16,7 @@ SELECT
 FROM
 	PlainAndConvertedUnicodeRow r
 WHERE
-	(r.Plain || r.Conv) = $read
+	r.Plain || r.Conv = $read
 
 -- YDB Ydb
 DECLARE read Text(6) -- String
@@ -27,7 +27,7 @@ SELECT
 FROM
 	PlainAndConvertedUnicodeRow r
 WHERE
-	(r.Plain || r.Conv) <> $read
+	r.Plain || r.Conv <> $read
 
 -- YDB Ydb
 $CTE_1 = 	SELECT
@@ -57,5 +57,5 @@ SELECT
 FROM
 	PlainAndConvertedUnicodeRow r
 WHERE
-	(r.Plain || r.Conv) IN ($Ids0_1)
+	r.Plain || r.Conv IN ($Ids0_1)
 

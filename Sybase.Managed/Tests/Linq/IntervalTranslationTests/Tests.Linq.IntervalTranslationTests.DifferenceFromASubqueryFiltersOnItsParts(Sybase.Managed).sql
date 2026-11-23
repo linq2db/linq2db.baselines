@@ -46,7 +46,7 @@ SELECT
 FROM
 	[EventRow] [x]
 WHERE
-	CAST((CAST(DateDiff(day, [x].[StartedOn], [x].[FinishedOn]) AS BigInt) * 86400) * 10000000 + CAST(DateDiff(millisecond, DateAdd(day, CAST(DateDiff(day, [x].[StartedOn], [x].[FinishedOn]) AS BigInt), [x].[StartedOn]), [x].[FinishedOn]) AS BigInt) * 10000 AS Float) / 36000000000 > 3
+	CAST(CAST(DateDiff(day, [x].[StartedOn], [x].[FinishedOn]) AS BigInt) * 86400 * 10000000 + CAST(DateDiff(millisecond, DateAdd(day, CAST(DateDiff(day, [x].[StartedOn], [x].[FinishedOn]) AS BigInt), [x].[StartedOn]), [x].[FinishedOn]) AS BigInt) * 10000 AS Float) / 36000000000 > 3
 
 -- Sybase.Managed Sybase
 SELECT
@@ -54,7 +54,7 @@ SELECT
 FROM
 	[EventRow] [x]
 WHERE
-	CAST((((CAST(DateDiff(day, [x].[StartedOn], [x].[FinishedOn]) AS BigInt) * 86400) * 10000000 + CAST(DateDiff(millisecond, DateAdd(day, CAST(DateDiff(day, [x].[StartedOn], [x].[FinishedOn]) AS BigInt), [x].[StartedOn]), [x].[FinishedOn]) AS BigInt) * 10000) / 36000000000) % 24 AS Int) = 1
+	CAST((CAST(DateDiff(day, [x].[StartedOn], [x].[FinishedOn]) AS BigInt) * 86400 * 10000000 + CAST(DateDiff(millisecond, DateAdd(day, CAST(DateDiff(day, [x].[StartedOn], [x].[FinishedOn]) AS BigInt), [x].[StartedOn]), [x].[FinishedOn]) AS BigInt) * 10000) / 36000000000 % 24 AS Int) = 1
 
 -- Sybase.Managed Sybase
 SELECT
@@ -62,11 +62,11 @@ SELECT
 FROM
 	[EventRow] [x]
 ORDER BY
-	(CAST(DateDiff(day, [x].[StartedOn], [x].[FinishedOn]) AS BigInt) * 86400) * 10000000 + CAST(DateDiff(millisecond, DateAdd(day, CAST(DateDiff(day, [x].[StartedOn], [x].[FinishedOn]) AS BigInt), [x].[StartedOn]), [x].[FinishedOn]) AS BigInt) * 10000 DESC
+	CAST(DateDiff(day, [x].[StartedOn], [x].[FinishedOn]) AS BigInt) * 86400 * 10000000 + CAST(DateDiff(millisecond, DateAdd(day, CAST(DateDiff(day, [x].[StartedOn], [x].[FinishedOn]) AS BigInt), [x].[StartedOn]), [x].[FinishedOn]) AS BigInt) * 10000 DESC
 
 -- Sybase.Managed Sybase
 SELECT
-	(CAST(DateDiff(day, [x].[StartedOn], [x].[FinishedOn]) AS BigInt) * 86400) * 10000000 + CAST(DateDiff(millisecond, DateAdd(day, CAST(DateDiff(day, [x].[StartedOn], [x].[FinishedOn]) AS BigInt), [x].[StartedOn]), [x].[FinishedOn]) AS BigInt) * 10000
+	CAST(DateDiff(day, [x].[StartedOn], [x].[FinishedOn]) AS BigInt) * 86400 * 10000000 + CAST(DateDiff(millisecond, DateAdd(day, CAST(DateDiff(day, [x].[StartedOn], [x].[FinishedOn]) AS BigInt), [x].[StartedOn]), [x].[FinishedOn]) AS BigInt) * 10000
 FROM
 	[EventRow] [x]
 ORDER BY
@@ -75,7 +75,7 @@ ORDER BY
 -- Sybase.Managed Sybase
 SELECT
 	[r].[Id],
-	(CAST(DateDiff(day, [r].[StartedOn], [r].[FinishedOn]) AS BigInt) * 86400) * 10000000 + CAST(DateDiff(millisecond, DateAdd(day, CAST(DateDiff(day, [r].[StartedOn], [r].[FinishedOn]) AS BigInt), [r].[StartedOn]), [r].[FinishedOn]) AS BigInt) * 10000
+	CAST(DateDiff(day, [r].[StartedOn], [r].[FinishedOn]) AS BigInt) * 86400 * 10000000 + CAST(DateDiff(millisecond, DateAdd(day, CAST(DateDiff(day, [r].[StartedOn], [r].[FinishedOn]) AS BigInt), [r].[StartedOn]), [r].[FinishedOn]) AS BigInt) * 10000
 FROM
 	[EventRow] [r]
 ORDER BY

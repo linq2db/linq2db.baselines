@@ -7,7 +7,7 @@ SET     @removeMask = 12
 UPDATE
 	`WarehouseTableDto` `t1`
 SET
-	`t1`.`Value` = (`t1`.`Value` | @addMask) & ~@removeMask
+	`t1`.`Value` = CAST(CAST(`t1`.`Value` | @addMask AS SIGNED) & CAST(~@removeMask AS SIGNED) AS SIGNED)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 SELECT

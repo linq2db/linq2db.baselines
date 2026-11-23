@@ -54,7 +54,7 @@ SELECT
 FROM
 	"EventRow" "x"
 WHERE
-	CAST(MOD(Nano100_Between("x"."StartedOn", "x"."FinishedOn") / 36000000000, 24) AS Integer) = 1
+	CAST(MOD(CAST(Nano100_Between("x"."StartedOn", "x"."FinishedOn") / 36000000000 AS BigInt), 24) AS Integer) = 1
 
 -- SapHana.Odbc SapHanaOdbc
 SELECT

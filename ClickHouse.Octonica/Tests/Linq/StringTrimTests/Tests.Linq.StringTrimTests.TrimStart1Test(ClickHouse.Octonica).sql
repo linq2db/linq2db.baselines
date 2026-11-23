@@ -1,6 +1,6 @@
 ﻿-- ClickHouse.Octonica ClickHouse
 SELECT
-	trim(LEADING '.' FROM (concat('...', Coalesce(t.VarCharColumn, ''))))
+	trim(LEADING '.' FROM concat('...', Coalesce(t.VarCharColumn, '')))
 FROM
 	StringTrimTable t
 

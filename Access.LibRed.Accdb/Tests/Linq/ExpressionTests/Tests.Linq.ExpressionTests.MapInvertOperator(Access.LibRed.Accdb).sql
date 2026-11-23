@@ -7,7 +7,7 @@ SET     @removeMask = 12
 UPDATE
 	[WarehouseTableDto] [t1]
 SET
-	[t1].[Value] = ([t1].[Value] BOR @addMask) BAND -1 - @removeMask
+	[t1].[Value] = ([t1].[Value] BOR @addMask) BAND (-1 - @removeMask)
 
 -- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT TOP 2

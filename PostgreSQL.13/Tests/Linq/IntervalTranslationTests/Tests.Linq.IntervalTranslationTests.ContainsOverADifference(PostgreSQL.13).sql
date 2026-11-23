@@ -84,7 +84,7 @@ SELECT
 FROM
 	"BudgetedTaskRow" r
 WHERE
-	(r."FinishedOn" - r."StartedOn") IN (:value, :value_1)
+	r."FinishedOn" - r."StartedOn" IN (:value, :value_1)
 ORDER BY
 	r."Id"
 

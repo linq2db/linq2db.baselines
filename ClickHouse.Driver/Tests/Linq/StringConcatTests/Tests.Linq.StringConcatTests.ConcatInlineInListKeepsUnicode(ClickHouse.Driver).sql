@@ -4,7 +4,7 @@ SELECT
 FROM
 	ConcatProduct p
 WHERE
-	(concat(p.Sku, 'Жук')) IN ('A-100Жук', 'B-200Щит')
+	concat(p.Sku, 'Жук') IN ('A-100Жук', 'B-200Щит')
 
 -- ClickHouse.Driver ClickHouse
 SELECT
@@ -20,7 +20,7 @@ SELECT
 FROM
 	ConcatProduct p
 WHERE
-	(concat(p.Sku, 'Жук')) IN (p.Title, 'B-200Жук')
+	concat(p.Sku, 'Жук') IN (p.Title, 'B-200Жук')
 
 -- ClickHouse.Driver ClickHouse
 SELECT

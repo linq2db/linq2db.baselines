@@ -2,7 +2,7 @@
 SELECT
 	"e"."Id",
 	Coalesce("j"."Value1", 0) + 1,
-	(Coalesce("j"."Value1", 0) + 1) - BITAND(Coalesce("j"."Value1", 0), 1),
+	Coalesce("j"."Value1", 0) + 1 - BITAND(Coalesce("j"."Value1", 0), 1),
 	CASE
 		WHEN Coalesce("j"."Value1", 0) < 5 THEN 'a'
 		ELSE 'b'

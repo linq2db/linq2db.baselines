@@ -4,7 +4,7 @@ SELECT
 FROM
 	ConcatTestEntity e
 WHERE
-	(Unwrap(CAST(e.Num AS Text)) || '-'u || Coalesce(e.StrReq, ''u)) = '100-Programmer'u
+	Unwrap(CAST(e.Num AS Text)) || '-'u || Coalesce(e.StrReq, ''u) = '100-Programmer'u
 
 -- YDB Ydb
 SELECT

@@ -30,7 +30,7 @@ VALUES
 -- SapHana.Odbc SapHanaOdbc
 SELECT
 	CAST("r"."InSeconds" AS Double) / 3600,
-	CAST(MOD("r"."InSeconds" / 3600, 24) AS Integer),
+	CAST(MOD(CAST("r"."InSeconds" / 3600 AS BigInt), 24) AS Integer),
 	CAST("r"."InTicks" AS Double) / 600000000
 FROM
 	"DurationRow" "r"

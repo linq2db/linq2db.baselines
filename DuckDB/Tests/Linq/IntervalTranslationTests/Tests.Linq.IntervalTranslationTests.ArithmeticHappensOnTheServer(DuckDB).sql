@@ -30,7 +30,7 @@ VALUES
 -- DuckDB
 SELECT
 	CAST(r.InSeconds AS DOUBLE) / 3600,
-	CAST((r.InSeconds // 3600) % 24 AS INTEGER),
+	CAST(r.InSeconds // 3600 % 24 AS INTEGER),
 	CAST(r.InTicks AS DOUBLE) / 600000000
 FROM
 	DurationRow r

@@ -7,7 +7,7 @@ SELECT
 FROM
 	"PrefixedCodeWithTitleTable" t
 WHERE
-	(t."Code" || t."Title") LIKE :Code
+	t."Code" || t."Title" LIKE :Code
 
 -- Oracle.11.Managed Oracle11
 DECLARE @bound Varchar2(4) -- String
@@ -18,7 +18,7 @@ SELECT
 FROM
 	"PrefixedCodeWithTitleTable" t
 WHERE
-	(t."Code" || t."Title") = :bound
+	t."Code" || t."Title" = :bound
 
 -- Oracle.11.Managed Oracle11
 DECLARE @bound Varchar2(4) -- String
@@ -29,5 +29,5 @@ SELECT
 FROM
 	"PrefixedCodeWithTitleTable" t
 WHERE
-	(t."Code" || t."Title") = :bound
+	t."Code" || t."Title" = :bound
 

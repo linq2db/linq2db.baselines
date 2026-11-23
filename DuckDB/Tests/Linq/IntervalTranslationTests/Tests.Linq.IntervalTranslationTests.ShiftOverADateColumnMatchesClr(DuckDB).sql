@@ -29,7 +29,7 @@ VALUES
 
 -- DuckDB
 SELECT
-	CAST('2026-06-20 00:00:00.000000'::TIMESTAMP AS TIMESTAMP) + To_Microseconds((Date_Diff('microsecond', r.OpenedOn, r.ClosedOn) * 10) // 10)
+	CAST('2026-06-20 00:00:00.000000'::TIMESTAMP AS TIMESTAMP) + To_Microseconds(Date_Diff('microsecond', r.OpenedOn, r.ClosedOn) * 10 // 10)
 FROM
 	CoarseEventRow r
 LIMIT 2

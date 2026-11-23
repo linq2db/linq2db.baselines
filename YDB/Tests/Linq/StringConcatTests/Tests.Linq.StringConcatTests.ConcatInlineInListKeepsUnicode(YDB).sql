@@ -11,7 +11,7 @@ SELECT
 FROM
 	ConcatProduct p
 WHERE
-	(p.Sku || Coalesce($suffix, ''u)) IN ($Ids0_1, $Ids0_2)
+	p.Sku || Coalesce($suffix, ''u) IN ($Ids0_1, $Ids0_2)
 
 -- YDB Ydb
 SELECT
@@ -30,7 +30,7 @@ SELECT
 FROM
 	ConcatProduct p
 WHERE
-	(p.Sku || Coalesce($suffix, ''u)) IN (p.Title, 'B-200Жук'u)
+	p.Sku || Coalesce($suffix, ''u) IN (p.Title, 'B-200Жук'u)
 
 -- YDB Ydb
 SELECT

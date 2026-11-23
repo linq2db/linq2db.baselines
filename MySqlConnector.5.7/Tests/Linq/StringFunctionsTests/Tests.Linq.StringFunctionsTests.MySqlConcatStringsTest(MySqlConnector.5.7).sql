@@ -20,5 +20,5 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	`p`.`FirstName` = (CONCAT('A', `p`.`FirstName`, 'B'))
+	`p`.`FirstName` = CONCAT('A', `p`.`FirstName`, 'B')
 

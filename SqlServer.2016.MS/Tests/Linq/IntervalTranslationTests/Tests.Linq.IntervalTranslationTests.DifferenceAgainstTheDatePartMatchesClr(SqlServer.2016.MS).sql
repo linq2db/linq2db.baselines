@@ -21,7 +21,7 @@ VALUES
 
 -- SqlServer.2016.MS SqlServer.2016
 SELECT TOP (2)
-	CAST((DateDiff_Big(day, CAST([r].[FinishedOn] AS Date), [r].[FinishedOn]) * 86400) * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, CAST([r].[FinishedOn] AS Date), [r].[FinishedOn]) AS Int), CAST([r].[FinishedOn] AS Date)), [r].[FinishedOn]) / 100 AS Float) / 36000000000
+	CAST(DateDiff_Big(day, CAST([r].[FinishedOn] AS Date), [r].[FinishedOn]) * 86400 * 10000000 + DateDiff_Big(nanosecond, DateAdd(day, CAST(DateDiff_Big(day, CAST([r].[FinishedOn] AS Date), [r].[FinishedOn]) AS Int), CAST([r].[FinishedOn] AS Date)), [r].[FinishedOn]) / 100 AS Float) / 36000000000
 FROM
 	[EventRow] [r]
 

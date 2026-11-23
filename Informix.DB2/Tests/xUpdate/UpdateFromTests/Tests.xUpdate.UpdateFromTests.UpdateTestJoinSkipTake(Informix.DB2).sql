@@ -17,7 +17,7 @@ UPDATE
 SET
 	Value1 = (
 		SELECT
-			(t2.Value1 * t2.Value1_1) * @int1::Int
+			t2.Value1 * t2.Value1_1 * @int1::Int
 		FROM
 			(
 				SELECT SKIP @skip FIRST @take
@@ -37,7 +37,7 @@ SET
 	),
 	Value2 = (
 		SELECT
-			(t3.Value2 * t3.Value2_1) * @int2::Int
+			t3.Value2 * t3.Value2_1 * @int2::Int
 		FROM
 			(
 				SELECT SKIP @skip FIRST @take
@@ -57,7 +57,7 @@ SET
 	),
 	Value3 = (
 		SELECT
-			(t4.Value3 * t4.Value3_1) * @int3::Int
+			t4.Value3 * t4.Value3_1 * @int3::Int
 		FROM
 			(
 				SELECT SKIP @skip FIRST @take

@@ -1,0 +1,84 @@
+﻿-- ClickHouse.Driver ClickHouse
+SELECT
+	(r.A + r.B) % r.C,
+	r.A % (r.B + r.C),
+	(r.A + r.B) % r.C,
+	r.A % (r.B + r.C),
+	(r.A - r.B) % r.C,
+	r.A % (r.B - r.C),
+	(r.A - r.B) % r.C,
+	r.A % (r.B - r.C),
+	intDiv(r.A, r.B) % r.C,
+	intDiv(r.A, r.B) % r.C,
+	r.A % r.B % r.C,
+	r.A % r.B % r.C,
+	bitAnd(r.A, r.B) % r.C,
+	bitAnd(r.A, r.B) % r.C,
+	bitOr(r.A, r.B) % r.C,
+	r.A % bitOr(r.B, r.C),
+	bitOr(r.A, r.B) % r.C,
+	r.A % bitOr(r.B, r.C),
+	bitXor(r.A, r.B) % r.C,
+	r.A % bitXor(r.B, r.C),
+	bitXor(r.A, r.B) % r.C,
+	r.A % bitXor(r.B, r.C),
+	(r.A + r.B) % r.C,
+	r.A % (r.B + r.C),
+	(r.A + -6) % r.C,
+	(r.A - r.B) % r.C,
+	r.A % (r.B - r.C),
+	(r.A - -6) % r.C,
+	(r.A * r.B) % r.C,
+	r.A % (r.B * r.C),
+	(r.A * -6) % r.C,
+	(r.A / r.B) % r.C,
+	r.A % (r.B / r.C),
+	(r.A / -6) % r.C,
+	(r.A + r.B) % r.C,
+	r.A % (r.B + r.C),
+	(r.A + -6) % r.C,
+	r.A % negate(r.B),
+	(r.A + negate(r.B)) % r.C,
+	(r.A - negate(r.B)) % r.C,
+	intDiv(r.A, negate(r.B)) % r.C,
+	r.A % negate(r.B) % r.C,
+	bitOr(r.A, negate(r.B)) % r.C,
+	bitXor(r.A, negate(r.B)) % r.C,
+	r.A % bitNot(r.B),
+	(r.A + bitNot(r.B)) % r.C,
+	(r.A - bitNot(r.B)) % r.C,
+	r.A * bitNot(r.B) % r.C,
+	r.A % bitNot(r.B) % r.C,
+	bitAnd(r.A, bitNot(r.B)) % r.C,
+	bitOr(r.A, bitNot(r.B)) % r.C,
+	bitXor(r.A, bitNot(r.B)) % r.C,
+	r.A % -5,
+	-5 % r.C,
+	(r.A + -5) % r.C,
+	(r.A - -5) % r.C,
+	r.A * -5 % r.C,
+	r.A % -5 % r.C,
+	bitAnd(r.A, -5) % r.C,
+	bitOr(r.A, -5) % r.C,
+	bitXor(r.A, -5) % r.C
+FROM
+	PrecedenceRow r
+ORDER BY
+	r.Id
+
+-- ClickHouse.Driver ClickHouse
+SELECT
+	r.A % -5,
+	-5 % r.C,
+	(r.A + -5) % r.C,
+	(r.A - -5) % r.C,
+	r.A * -5 % r.C,
+	r.A % -5 % r.C,
+	bitAnd(r.A, -5) % r.C,
+	bitOr(r.A, -5) % r.C,
+	bitXor(r.A, -5) % r.C
+FROM
+	PrecedenceRow r
+ORDER BY
+	r.Id
+

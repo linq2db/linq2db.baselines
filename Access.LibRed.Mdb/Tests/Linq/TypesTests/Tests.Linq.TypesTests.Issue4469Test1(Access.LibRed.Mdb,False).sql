@@ -3,7 +3,7 @@ DECLARE @param  -- Int32
 SET     @param = 33
 
 SELECT TOP 2
-	[v].[Integer] / @param,
+	Fix([v].[Integer] / @param),
 	[v].[Decimal] / @param,
 	[v].[Double] / @param
 FROM

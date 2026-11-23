@@ -7,7 +7,7 @@ SET     removeMask = 12
 UPDATE
 	WarehouseTableDto
 SET
-	`Value` = Unwrap(CAST(Unwrap(CAST(WarehouseTableDto.`Value` AS Uint32)) | Unwrap(CAST($addMask AS Uint32)) AS Uint32)) & Unwrap(CAST(~Unwrap(CAST($removeMask AS Uint32)) AS Uint32))
+	`Value` = BitCast((BitCast(BitCast((BitCast(WarehouseTableDto.`Value` AS Uint32) | BitCast($addMask AS Uint32)) AS Int32) AS Uint32) & BitCast(BitCast((~BitCast($removeMask AS Uint32)) AS Int32) AS Uint32)) AS Int32)
 
 -- YDB Ydb
 SELECT

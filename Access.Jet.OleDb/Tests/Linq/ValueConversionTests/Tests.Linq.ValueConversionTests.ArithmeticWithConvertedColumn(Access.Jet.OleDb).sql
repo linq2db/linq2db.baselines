@@ -25,7 +25,7 @@ DECLARE @operand Integer -- Int32
 SET     @operand = 2
 
 SELECT TOP 2
-	SUM([g_1].[Cents]) / @operand
+	Fix(SUM([g_1].[Cents]) / @operand)
 FROM
 	[ConvertedAmount] [g_1]
 GROUP BY

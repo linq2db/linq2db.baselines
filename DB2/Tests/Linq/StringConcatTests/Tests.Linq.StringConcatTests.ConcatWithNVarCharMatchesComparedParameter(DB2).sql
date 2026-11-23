@@ -7,7 +7,7 @@ SELECT
 FROM
 	"ConcatProduct" "p"
 WHERE
-	("p"."Sku" || "p"."Title") = @key
+	"p"."Sku" || "p"."Title" = @key
 
 -- DB2 DB2.LUW DB2LUW
 SELECT

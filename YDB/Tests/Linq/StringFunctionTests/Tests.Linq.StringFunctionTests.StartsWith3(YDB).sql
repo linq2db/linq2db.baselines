@@ -11,5 +11,5 @@ SELECT
 FROM
 	Person p
 WHERE
-	$str LIKE (Unicode::ReplaceAll(Unicode::ReplaceAll(Unicode::ReplaceAll(p.FirstName, '~'s, '~~'u), '%'u, '~%'u), '_'u, '~_'u) || '%'u) ESCAPE '~'s
+	$str LIKE Unicode::ReplaceAll(Unicode::ReplaceAll(Unicode::ReplaceAll(p.FirstName, '~'s, '~~'u), '%'u, '~%'u), '_'u, '~_'u) || '%'u ESCAPE '~'s
 

@@ -28,7 +28,7 @@ FROM
 					t1."Value"
 			) t2
 		WHERE
-			ROWNUM <= (:skip + :skip_1 + :skip_2 + :take - :skip_2)
+			ROWNUM <= :skip + :skip_1 + :skip_2 + (:take - :skip_2)
 	) t3
 WHERE
 	t3.RN > :skip + :skip_1 + :skip_2

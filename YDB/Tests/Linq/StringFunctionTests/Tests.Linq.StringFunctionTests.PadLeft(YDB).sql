@@ -8,6 +8,6 @@ SELECT
 FROM
 	Person p
 WHERE
-	('123'u || CAST(String::LeftPad(p.FirstName, 6, ' 'u) AS Utf8)) = '123  John'u AND
+	'123'u || CAST(String::LeftPad(p.FirstName, 6, ' 'u) AS Utf8) = '123  John'u AND
 	p.PersonID = 1
 

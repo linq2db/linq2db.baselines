@@ -176,7 +176,7 @@ LIMIT 2
 
 -- DuckDB
 SELECT
-	CAST(r.DueOn AS TIMESTAMP_NS) + To_Microseconds((Date_Diff('microsecond', r.StartedOn, r.DueOn) * 10) // 10)
+	CAST(r.DueOn AS TIMESTAMP_NS) + To_Microseconds(Date_Diff('microsecond', r.StartedOn, r.DueOn) * 10 // 10)
 FROM
 	OptionalDueRow r
 ORDER BY

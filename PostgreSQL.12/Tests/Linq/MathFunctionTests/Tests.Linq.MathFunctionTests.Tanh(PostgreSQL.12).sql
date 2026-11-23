@@ -4,7 +4,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Floor(((Exp(p."MoneyValue"::Float / 15) - Exp(-(p."MoneyValue"::Float / 15))) / (Exp(p."MoneyValue"::Float / 15) + Exp(-(p."MoneyValue"::Float / 15)))) * 15) as "Value_1"
+			Floor((Exp(p."MoneyValue"::Float / 15) - Exp(-(p."MoneyValue"::Float / 15))) / (Exp(p."MoneyValue"::Float / 15) + Exp(-(p."MoneyValue"::Float / 15))) * 15) as "Value_1"
 		FROM
 			"LinqDataTypes" p
 	) t

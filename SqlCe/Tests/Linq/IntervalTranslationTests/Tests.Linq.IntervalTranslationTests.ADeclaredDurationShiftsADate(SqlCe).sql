@@ -29,9 +29,9 @@ VALUES
 
 -- SqlCe
 SELECT TOP (2)
-	DateAdd(millisecond, (([r].[InSeconds] * 10000000) % CAST(10000000 AS BigInt)) / CAST(10000 AS BigInt), DateAdd(second, (([r].[InSeconds] * 10000000) % CAST(864000000000 AS BigInt)) / CAST(10000000 AS BigInt), DateAdd(day, ([r].[InSeconds] * 10000000) / CAST(864000000000 AS BigInt), '2026-03-01 00:00:00.000'))),
-	DateAdd(millisecond, ((([r].[InSeconds] * 10000000) * -1) % CAST(10000000 AS BigInt)) / CAST(10000 AS BigInt), DateAdd(second, ((([r].[InSeconds] * 10000000) * -1) % CAST(864000000000 AS BigInt)) / CAST(10000000 AS BigInt), DateAdd(day, (([r].[InSeconds] * 10000000) * -1) / CAST(864000000000 AS BigInt), '2026-03-01 00:00:00.000'))),
-	DateAdd(millisecond, ([r].[InTicks] % CAST(10000000 AS BigInt)) / CAST(10000 AS BigInt), DateAdd(second, ([r].[InTicks] % CAST(864000000000 AS BigInt)) / CAST(10000000 AS BigInt), DateAdd(day, [r].[InTicks] / CAST(864000000000 AS BigInt), '2026-03-01 00:00:00.000')))
+	DateAdd(millisecond, [r].[InSeconds] * 10000000 % CAST(10000000 AS BigInt) / CAST(10000 AS BigInt), DateAdd(second, [r].[InSeconds] * 10000000 % CAST(864000000000 AS BigInt) / CAST(10000000 AS BigInt), DateAdd(day, [r].[InSeconds] * 10000000 / CAST(864000000000 AS BigInt), '2026-03-01 00:00:00.000'))),
+	DateAdd(millisecond, ([r].[InSeconds] * 10000000 * -1) % CAST(10000000 AS BigInt) / CAST(10000 AS BigInt), DateAdd(second, ([r].[InSeconds] * 10000000 * -1) % CAST(864000000000 AS BigInt) / CAST(10000000 AS BigInt), DateAdd(day, ([r].[InSeconds] * 10000000 * -1) / CAST(864000000000 AS BigInt), '2026-03-01 00:00:00.000'))),
+	DateAdd(millisecond, [r].[InTicks] % CAST(10000000 AS BigInt) / CAST(10000 AS BigInt), DateAdd(second, [r].[InTicks] % CAST(864000000000 AS BigInt) / CAST(10000000 AS BigInt), DateAdd(day, [r].[InTicks] / CAST(864000000000 AS BigInt), '2026-03-01 00:00:00.000')))
 FROM
 	[DurationRow] [r]
 

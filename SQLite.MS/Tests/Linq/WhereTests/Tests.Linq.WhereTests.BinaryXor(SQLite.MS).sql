@@ -8,5 +8,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	([p].[PersonID] + 2) - ([p].[PersonID] & 2) * 2 = 3
+	[p].[PersonID] + 2 - ([p].[PersonID] & 2) * 2 = 3
 

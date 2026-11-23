@@ -1,0 +1,87 @@
+﻿-- SapHana.Native SapHana
+SELECT
+	"r"."A" + "r"."B" + "r"."C" - BITAND("r"."A" + "r"."B", "r"."C") * 2,
+	"r"."A" + ("r"."B" + "r"."C") - BITAND("r"."A", "r"."B" + "r"."C") * 2,
+	"r"."A" + "r"."B" + "r"."C" - BITAND("r"."A" + "r"."B", "r"."C") * 2,
+	"r"."A" + ("r"."B" + "r"."C") - BITAND("r"."A", "r"."B" + "r"."C") * 2,
+	"r"."A" - "r"."B" + "r"."C" - BITAND("r"."A" - "r"."B", "r"."C") * 2,
+	"r"."A" - "r"."B" + "r"."C" - BITAND("r"."A" - "r"."B", "r"."C") * 2,
+	"r"."A" * "r"."B" + "r"."C" - BITAND("r"."A" * "r"."B", "r"."C") * 2,
+	"r"."A" + "r"."B" * "r"."C" - BITAND("r"."A", "r"."B" * "r"."C") * 2,
+	"r"."A" * "r"."B" + "r"."C" - BITAND("r"."A" * "r"."B", "r"."C") * 2,
+	"r"."A" + "r"."B" * "r"."C" - BITAND("r"."A", "r"."B" * "r"."C") * 2,
+	CAST("r"."A" / "r"."B" AS Integer) + "r"."C" - BITAND(CAST("r"."A" / "r"."B" AS Integer), "r"."C") * 2,
+	"r"."A" + CAST("r"."B" / "r"."C" AS Integer) - BITAND("r"."A", CAST("r"."B" / "r"."C" AS Integer)) * 2,
+	CAST("r"."A" / "r"."B" AS Integer) + "r"."C" - BITAND(CAST("r"."A" / "r"."B" AS Integer), "r"."C") * 2,
+	"r"."A" + CAST("r"."B" / "r"."C" AS Integer) - BITAND("r"."A", CAST("r"."B" / "r"."C" AS Integer)) * 2,
+	MOD("r"."A", "r"."B") + "r"."C" - BITAND(MOD("r"."A", "r"."B"), "r"."C") * 2,
+	"r"."A" + MOD("r"."B", "r"."C") - BITAND("r"."A", MOD("r"."B", "r"."C")) * 2,
+	MOD("r"."A", "r"."B") + "r"."C" - BITAND(MOD("r"."A", "r"."B"), "r"."C") * 2,
+	"r"."A" + MOD("r"."B", "r"."C") - BITAND("r"."A", MOD("r"."B", "r"."C")) * 2,
+	BITAND("r"."A", "r"."B") + "r"."C" - BITAND(BITAND("r"."A", "r"."B"), "r"."C") * 2,
+	"r"."A" + BITAND("r"."B", "r"."C") - BITAND("r"."A", BITAND("r"."B", "r"."C")) * 2,
+	BITAND("r"."A", "r"."B") + "r"."C" - BITAND(BITAND("r"."A", "r"."B"), "r"."C") * 2,
+	"r"."A" + BITAND("r"."B", "r"."C") - BITAND("r"."A", BITAND("r"."B", "r"."C")) * 2,
+	"r"."A" + "r"."B" - BITAND("r"."A", "r"."B") + "r"."C" - BITAND("r"."A" + "r"."B" - BITAND("r"."A", "r"."B"), "r"."C") * 2,
+	"r"."A" + ("r"."B" + "r"."C" - BITAND("r"."B", "r"."C")) - BITAND("r"."A", "r"."B" + "r"."C" - BITAND("r"."B", "r"."C")) * 2,
+	"r"."A" + "r"."B" - BITAND("r"."A", "r"."B") + "r"."C" - BITAND("r"."A" + "r"."B" - BITAND("r"."A", "r"."B"), "r"."C") * 2,
+	"r"."A" + ("r"."B" + "r"."C" - BITAND("r"."B", "r"."C")) - BITAND("r"."A", "r"."B" + "r"."C" - BITAND("r"."B", "r"."C")) * 2,
+	("r"."A" + "r"."B") + "r"."C" - BITAND("r"."A" + "r"."B", "r"."C") * 2,
+	"r"."A" + ("r"."B" + "r"."C") - BITAND("r"."A", "r"."B" + "r"."C") * 2,
+	("r"."A" + -6) + "r"."C" - BITAND("r"."A" + -6, "r"."C") * 2,
+	("r"."A" - "r"."B") + "r"."C" - BITAND("r"."A" - "r"."B", "r"."C") * 2,
+	"r"."A" + ("r"."B" - "r"."C") - BITAND("r"."A", "r"."B" - "r"."C") * 2,
+	("r"."A" - -6) + "r"."C" - BITAND("r"."A" - -6, "r"."C") * 2,
+	"r"."A" * "r"."B" + "r"."C" - BITAND("r"."A" * "r"."B", "r"."C") * 2,
+	"r"."A" + "r"."B" * "r"."C" - BITAND("r"."A", "r"."B" * "r"."C") * 2,
+	"r"."A" * -6 + "r"."C" - BITAND("r"."A" * -6, "r"."C") * 2,
+	("r"."A" + "r"."B") + "r"."C" - BITAND("r"."A" + "r"."B", "r"."C") * 2,
+	"r"."A" + ("r"."B" + "r"."C") - BITAND("r"."A", "r"."B" + "r"."C") * 2,
+	("r"."A" + -6) + "r"."C" - BITAND("r"."A" + -6, "r"."C") * 2,
+	"r"."A" - "r"."B" - BITAND("r"."A", -"r"."B") * 2,
+	-"r"."B" + "r"."C" - BITAND(-"r"."B", "r"."C") * 2,
+	"r"."A" - "r"."B" + "r"."C" - BITAND("r"."A" - "r"."B", "r"."C") * 2,
+	"r"."A" + "r"."B" + "r"."C" - BITAND("r"."A" + "r"."B", "r"."C") * 2,
+	"r"."A" * -"r"."B" + "r"."C" - BITAND("r"."A" * -"r"."B", "r"."C") * 2,
+	CAST("r"."A" / -"r"."B" AS Integer) + "r"."C" - BITAND(CAST("r"."A" / -"r"."B" AS Integer), "r"."C") * 2,
+	MOD("r"."A", -"r"."B") + "r"."C" - BITAND(MOD("r"."A", -"r"."B"), "r"."C") * 2,
+	BITAND("r"."A", -"r"."B") + "r"."C" - BITAND(BITAND("r"."A", -"r"."B"), "r"."C") * 2,
+	"r"."A" - "r"."B" - BITAND("r"."A", -"r"."B") + "r"."C" - BITAND("r"."A" - "r"."B" - BITAND("r"."A", -"r"."B"), "r"."C") * 2,
+	"r"."A" - "r"."B" - BITAND("r"."A", -"r"."B") * 2 + "r"."C" - BITAND("r"."A" - "r"."B" - BITAND("r"."A", -"r"."B") * 2, "r"."C") * 2,
+	"r"."A" + BITNOT("r"."B") - BITAND("r"."A", BITNOT("r"."B")) * 2,
+	"r"."A" + BITNOT("r"."B") + "r"."C" - BITAND("r"."A" + BITNOT("r"."B"), "r"."C") * 2,
+	"r"."A" - BITNOT("r"."B") + "r"."C" - BITAND("r"."A" - BITNOT("r"."B"), "r"."C") * 2,
+	"r"."A" * BITNOT("r"."B") + "r"."C" - BITAND("r"."A" * BITNOT("r"."B"), "r"."C") * 2,
+	MOD("r"."A", BITNOT("r"."B")) + "r"."C" - BITAND(MOD("r"."A", BITNOT("r"."B")), "r"."C") * 2,
+	BITAND("r"."A", BITNOT("r"."B")) + "r"."C" - BITAND(BITAND("r"."A", BITNOT("r"."B")), "r"."C") * 2,
+	"r"."A" + BITNOT("r"."B") - BITAND("r"."A", BITNOT("r"."B")) + "r"."C" - BITAND("r"."A" + BITNOT("r"."B") - BITAND("r"."A", BITNOT("r"."B")), "r"."C") * 2,
+	"r"."A" + -5 - BITAND("r"."A", -5) * 2,
+	-5 + "r"."C" - BITAND(-5, "r"."C") * 2,
+	"r"."A" + -5 + "r"."C" - BITAND("r"."A" + -5, "r"."C") * 2,
+	"r"."A" - -5 + "r"."C" - BITAND("r"."A" - -5, "r"."C") * 2,
+	"r"."A" * -5 + "r"."C" - BITAND("r"."A" * -5, "r"."C") * 2,
+	MOD("r"."A", -5) + "r"."C" - BITAND(MOD("r"."A", -5), "r"."C") * 2,
+	BITAND("r"."A", -5) + "r"."C" - BITAND(BITAND("r"."A", -5), "r"."C") * 2,
+	"r"."A" + -5 - BITAND("r"."A", -5) + "r"."C" - BITAND("r"."A" + -5 - BITAND("r"."A", -5), "r"."C") * 2,
+	"r"."A" + -5 - BITAND("r"."A", -5) * 2 + "r"."C" - BITAND("r"."A" + -5 - BITAND("r"."A", -5) * 2, "r"."C") * 2
+FROM
+	"PrecedenceRow" "r"
+ORDER BY
+	"r"."Id"
+
+-- SapHana.Native SapHana
+SELECT
+	"r"."A" + -5 - BITAND("r"."A", -5) * 2,
+	-5 + "r"."C" - BITAND(-5, "r"."C") * 2,
+	"r"."A" + -5 + "r"."C" - BITAND("r"."A" + -5, "r"."C") * 2,
+	"r"."A" - -5 + "r"."C" - BITAND("r"."A" - -5, "r"."C") * 2,
+	"r"."A" * -5 + "r"."C" - BITAND("r"."A" * -5, "r"."C") * 2,
+	MOD("r"."A", -5) + "r"."C" - BITAND(MOD("r"."A", -5), "r"."C") * 2,
+	BITAND("r"."A", -5) + "r"."C" - BITAND(BITAND("r"."A", -5), "r"."C") * 2,
+	"r"."A" + -5 - BITAND("r"."A", -5) + "r"."C" - BITAND("r"."A" + -5 - BITAND("r"."A", -5), "r"."C") * 2,
+	"r"."A" + -5 - BITAND("r"."A", -5) * 2 + "r"."C" - BITAND("r"."A" + -5 - BITAND("r"."A", -5) * 2, "r"."C") * 2
+FROM
+	"PrecedenceRow" "r"
+ORDER BY
+	"r"."Id"
+

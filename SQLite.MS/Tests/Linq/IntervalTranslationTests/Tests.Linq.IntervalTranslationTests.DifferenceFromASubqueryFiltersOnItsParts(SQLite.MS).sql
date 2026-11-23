@@ -54,7 +54,7 @@ SELECT
 FROM
 	[EventRow] [x]
 WHERE
-	CAST(((CAST(Round((JulianDay([x].[FinishedOn]) - JulianDay([x].[StartedOn])) * 86400000) AS INTEGER) * 10000) / 36000000000) % 24 AS INTEGER) = 1
+	CAST(CAST(Round((JulianDay([x].[FinishedOn]) - JulianDay([x].[StartedOn])) * 86400000) AS INTEGER) * 10000 / 36000000000 % 24 AS INTEGER) = 1
 
 -- SQLite.MS SQLite
 SELECT

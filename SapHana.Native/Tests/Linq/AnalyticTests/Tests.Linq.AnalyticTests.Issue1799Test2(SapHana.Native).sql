@@ -6,13 +6,13 @@ SELECT
 	"g_1"."User_1",
 	"p"."ProcessName",
 	"u"."UserGroups",
-	SUM("g_1"."Diff") / 60
+	CAST(SUM("g_1"."Diff") / 60 AS Integer)
 FROM
 	(
 		SELECT
 			"x"."EventUser" as "User_1",
 			"x"."ProcessID",
-			Seconds_Between(LAG("x"."EventTime") OVER (PARTITION BY "x"."EventUser", "x"."ProcessID" ORDER BY "x"."EventTime"), "x"."EventTime") / 60 as "Diff"
+			CAST(Seconds_Between(LAG("x"."EventTime") OVER (PARTITION BY "x"."EventUser", "x"."ProcessID" ORDER BY "x"."EventTime"), "x"."EventTime") / 60 AS BigInt) as "Diff"
 		FROM
 			"Issue1799Table1" "x"
 	) "g_1"

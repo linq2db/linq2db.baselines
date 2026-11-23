@@ -34,7 +34,7 @@ DECLARE @Ticks BigInt -- Int64
 SET     @Ticks = 36002500000
 
 SELECT
-	DateAdd(millisecond, CAST(Mod(CAST(@Ticks AS BigInt) * -1, 864000000000) / 1000 AS Decimal(18, 1)) / 10, DateAdd(day, (CAST(@Ticks AS BigInt) * -1) / 864000000000, CAST("r"."FinishedOn" AS TimeStamp)))
+	DateAdd(millisecond, CAST(Mod(CAST(@Ticks AS BigInt) * -1, 864000000000) / 1000 AS Decimal(18, 1)) / 10, DateAdd(day, CAST(@Ticks AS BigInt) * -1 / 864000000000, CAST("r"."FinishedOn" AS TimeStamp)))
 FROM
 	"EventRow" "r"
 FETCH NEXT 2 ROWS ONLY
@@ -59,5 +59,5 @@ SELECT
 FROM
 	"EventRow" "r"
 WHERE
-	DateAdd(millisecond, CAST(Mod(CAST(@Ticks AS BigInt) * -1, 864000000000) / 1000 AS Decimal(18, 1)) / 10, DateAdd(day, (CAST(@Ticks AS BigInt) * -1) / 864000000000, CAST("r"."FinishedOn" AS TimeStamp))) > DateAdd(Hour, 1, "r"."StartedOn")
+	DateAdd(millisecond, CAST(Mod(CAST(@Ticks AS BigInt) * -1, 864000000000) / 1000 AS Decimal(18, 1)) / 10, DateAdd(day, CAST(@Ticks AS BigInt) * -1 / 864000000000, CAST("r"."FinishedOn" AS TimeStamp))) > DateAdd(Hour, 1, "r"."StartedOn")
 

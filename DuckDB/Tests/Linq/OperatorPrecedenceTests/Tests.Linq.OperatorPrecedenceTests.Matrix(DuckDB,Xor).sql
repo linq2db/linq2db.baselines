@@ -1,0 +1,87 @@
+﻿-- DuckDB
+SELECT
+	xor((r.A + r.B), r."C"),
+	xor(r.A, (r.B + r."C")),
+	xor((r.A + r.B), r."C"),
+	xor(r.A, (r.B + r."C")),
+	xor((r.A - r.B), r."C"),
+	xor((r.A - r.B), r."C"),
+	xor((r.A * r.B), r."C"),
+	xor(r.A, (r.B * r."C")),
+	xor((r.A * r.B), r."C"),
+	xor(r.A, (r.B * r."C")),
+	xor((r.A // r.B), r."C"),
+	xor(r.A, (r.B // r."C")),
+	xor((r.A // r.B), r."C"),
+	xor(r.A, (r.B // r."C")),
+	xor((r.A % r.B), r."C"),
+	xor(r.A, (r.B % r."C")),
+	xor((r.A % r.B), r."C"),
+	xor(r.A, (r.B % r."C")),
+	xor((r.A & r.B), r."C"),
+	xor(r.A, (r.B & r."C")),
+	xor((r.A & r.B), r."C"),
+	xor(r.A, (r.B & r."C")),
+	xor((r.A | r.B), r."C"),
+	xor(r.A, (r.B | r."C")),
+	xor((r.A | r.B), r."C"),
+	xor(r.A, (r.B | r."C")),
+	xor((r.A + r.B), r."C"),
+	xor(r.A, (r.B + r."C")),
+	xor((r.A + -6), r."C"),
+	xor((r.A - r.B), r."C"),
+	xor(r.A, (r.B - r."C")),
+	xor((r.A - -6), r."C"),
+	xor((r.A * r.B), r."C"),
+	xor(r.A, (r.B * r."C")),
+	xor((r.A * -6), r."C"),
+	xor((r.A + r.B), r."C"),
+	xor(r.A, (r.B + r."C")),
+	xor((r.A + -6), r."C"),
+	xor(r.A, (-r.B)),
+	xor((-r.B), r."C"),
+	xor((r.A - r.B), r."C"),
+	xor((r.A + r.B), r."C"),
+	xor((r.A * -r.B), r."C"),
+	xor((r.A // -r.B), r."C"),
+	xor((r.A % -r.B), r."C"),
+	xor((r.A & -r.B), r."C"),
+	xor((r.A | -r.B), r."C"),
+	xor(xor(r.A, (-r.B)), r."C"),
+	xor(r.A, (~r.B)),
+	xor((r.A + ~r.B), r."C"),
+	xor((r.A - ~r.B), r."C"),
+	xor((r.A * ~r.B), r."C"),
+	xor((r.A % ~r.B), r."C"),
+	xor((r.A & ~r.B), r."C"),
+	xor((r.A | ~r.B), r."C"),
+	xor(r.A, -5),
+	xor(-5, r."C"),
+	xor((r.A + -5), r."C"),
+	xor((r.A - -5), r."C"),
+	xor((r.A * -5), r."C"),
+	xor((r.A % -5), r."C"),
+	xor((r.A & -5), r."C"),
+	xor((r.A | -5), r."C"),
+	xor(xor(r.A, -5), r."C")
+FROM
+	PrecedenceRow r
+ORDER BY
+	r.Id
+
+-- DuckDB
+SELECT
+	xor(r.A, -5),
+	xor(-5, r."C"),
+	xor((r.A + -5), r."C"),
+	xor((r.A - -5), r."C"),
+	xor((r.A * -5), r."C"),
+	xor((r.A % -5), r."C"),
+	xor((r.A & -5), r."C"),
+	xor((r.A | -5), r."C"),
+	xor(xor(r.A, -5), r."C")
+FROM
+	PrecedenceRow r
+ORDER BY
+	r.Id
+

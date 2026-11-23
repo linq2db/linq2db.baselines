@@ -30,7 +30,7 @@ VALUES
 -- SqlServer.2005.MS SqlServer.2005
 SELECT TOP (2)
 	CAST(CAST(-[r].[InSeconds] AS BigInt) AS Float) / 3600,
-	CAST((CAST(-[r].[InSeconds] AS BigInt) / 3600) % 24 AS Int)
+	CAST(CAST(-[r].[InSeconds] AS BigInt) / 3600 % 24 AS Int)
 FROM
 	[DurationRow] [r]
 

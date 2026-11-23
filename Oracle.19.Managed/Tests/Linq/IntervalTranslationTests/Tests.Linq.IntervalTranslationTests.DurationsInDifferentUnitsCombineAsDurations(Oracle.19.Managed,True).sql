@@ -37,7 +37,7 @@ SELECT
 	CAST(CAST(r."InSeconds" * 10000000 + r."InTicks" AS Number(19)) + r."InSeconds" * 10000000 AS Number(19)) as "Nested",
 	CAST(CAST(-r."InSeconds" AS Number(19)) * 10000000 + r."InTicks" AS Number(19)) as "Negated",
 	CAST(r."InSeconds" * 10000000 + r."InTicks" AS Number(19)) as "Conditional",
-	CAST(r."InSeconds" * 10000000 + r."InTicks" AS Number(19)) + r."InTicks" + r."InTicks" as "BothComputed",
+	CAST(r."InSeconds" * 10000000 + r."InTicks" AS Number(19)) + (r."InTicks" + r."InTicks") as "BothComputed",
 	CAST(CAST(r."InSeconds" + r."InSeconds" AS Number(19)) * 10000000 + r."InTicks" AS Number(19)) - (r."InTicks" + r."InTicks") as "BothComputedSub",
 	CAST(CAST(-r."InSeconds" AS Number(19)) * 10000000 - r."InTicks" AS Number(19)) as "NegatedSub"
 FROM

@@ -9,7 +9,7 @@ DECLARE @n Integer -- Int32
 SET     @n = 2
 
 SELECT
-	([t].[Id] - @n) - @n + 1
+	[t].[Id] - @n - @n + 1
 FROM
 	[DataClass] [t]
 

@@ -1,0 +1,87 @@
+﻿-- YDB Ydb
+SELECT
+	BitCast((BitCast((r.A + r.B) AS Uint32) ^ BitCast(r.C AS Uint32)) AS Int32) as c1,
+	BitCast((BitCast(r.A AS Uint32) ^ BitCast((r.B + r.C) AS Uint32)) AS Int32) as c2,
+	BitCast((BitCast((r.A + r.B) AS Uint32) ^ BitCast(r.C AS Uint32)) AS Int32) as c3,
+	BitCast((BitCast(r.A AS Uint32) ^ BitCast((r.B + r.C) AS Uint32)) AS Int32) as c4,
+	BitCast((BitCast((r.A - r.B) AS Uint32) ^ BitCast(r.C AS Uint32)) AS Int32) as c5,
+	BitCast((BitCast((r.A - r.B) AS Uint32) ^ BitCast(r.C AS Uint32)) AS Int32) as c6,
+	BitCast((BitCast((r.A * r.B) AS Uint32) ^ BitCast(r.C AS Uint32)) AS Int32) as c7,
+	BitCast((BitCast(r.A AS Uint32) ^ BitCast((r.B * r.C) AS Uint32)) AS Int32) as c8,
+	BitCast((BitCast((r.A * r.B) AS Uint32) ^ BitCast(r.C AS Uint32)) AS Int32) as c9,
+	BitCast((BitCast(r.A AS Uint32) ^ BitCast((r.B * r.C) AS Uint32)) AS Int32) as c10,
+	BitCast((BitCast((r.A / r.B) AS Uint32) ^ BitCast(r.C AS Uint32)) AS Int32) as c11,
+	BitCast((BitCast(r.A AS Uint32) ^ BitCast((r.B / r.C) AS Uint32)) AS Int32) as c12,
+	BitCast((BitCast((r.A / r.B) AS Uint32) ^ BitCast(r.C AS Uint32)) AS Int32) as c13,
+	BitCast((BitCast(r.A AS Uint32) ^ BitCast((r.B / r.C) AS Uint32)) AS Int32) as c14,
+	BitCast((BitCast((r.A % r.B) AS Uint32) ^ BitCast(r.C AS Uint32)) AS Int32) as c15,
+	BitCast((BitCast(r.A AS Uint32) ^ BitCast((r.B % r.C) AS Uint32)) AS Int32) as c16,
+	BitCast((BitCast((r.A % r.B) AS Uint32) ^ BitCast(r.C AS Uint32)) AS Int32) as c17,
+	BitCast((BitCast(r.A AS Uint32) ^ BitCast((r.B % r.C) AS Uint32)) AS Int32) as c18,
+	BitCast((BitCast(BitCast((BitCast(r.A AS Uint32) & BitCast(r.B AS Uint32)) AS Int32) AS Uint32) ^ BitCast(r.C AS Uint32)) AS Int32) as c19,
+	BitCast((BitCast(r.A AS Uint32) ^ BitCast(BitCast((BitCast(r.B AS Uint32) & BitCast(r.C AS Uint32)) AS Int32) AS Uint32)) AS Int32) as c20,
+	BitCast((BitCast(BitCast((BitCast(r.A AS Uint32) & BitCast(r.B AS Uint32)) AS Int32) AS Uint32) ^ BitCast(r.C AS Uint32)) AS Int32) as c21,
+	BitCast((BitCast(r.A AS Uint32) ^ BitCast(BitCast((BitCast(r.B AS Uint32) & BitCast(r.C AS Uint32)) AS Int32) AS Uint32)) AS Int32) as c22,
+	BitCast((BitCast(BitCast((BitCast(r.A AS Uint32) | BitCast(r.B AS Uint32)) AS Int32) AS Uint32) ^ BitCast(r.C AS Uint32)) AS Int32) as c23,
+	BitCast((BitCast(r.A AS Uint32) ^ BitCast(BitCast((BitCast(r.B AS Uint32) | BitCast(r.C AS Uint32)) AS Int32) AS Uint32)) AS Int32) as c24,
+	BitCast((BitCast(BitCast((BitCast(r.A AS Uint32) | BitCast(r.B AS Uint32)) AS Int32) AS Uint32) ^ BitCast(r.C AS Uint32)) AS Int32) as c25,
+	BitCast((BitCast(r.A AS Uint32) ^ BitCast(BitCast((BitCast(r.B AS Uint32) | BitCast(r.C AS Uint32)) AS Int32) AS Uint32)) AS Int32) as c26,
+	BitCast((BitCast((r.A + r.B) AS Uint32) ^ BitCast(r.C AS Uint32)) AS Int32) as c27,
+	BitCast((BitCast(r.A AS Uint32) ^ BitCast((r.B + r.C) AS Uint32)) AS Int32) as c28,
+	BitCast((BitCast((r.A + -6) AS Uint32) ^ BitCast(r.C AS Uint32)) AS Int32) as c29,
+	BitCast((BitCast((r.A - r.B) AS Uint32) ^ BitCast(r.C AS Uint32)) AS Int32) as c30,
+	BitCast((BitCast(r.A AS Uint32) ^ BitCast((r.B - r.C) AS Uint32)) AS Int32) as c31,
+	BitCast((BitCast((r.A - -6) AS Uint32) ^ BitCast(r.C AS Uint32)) AS Int32) as c32,
+	BitCast((BitCast((r.A * r.B) AS Uint32) ^ BitCast(r.C AS Uint32)) AS Int32) as c33,
+	BitCast((BitCast(r.A AS Uint32) ^ BitCast((r.B * r.C) AS Uint32)) AS Int32) as c34,
+	BitCast((BitCast((r.A * -6) AS Uint32) ^ BitCast(r.C AS Uint32)) AS Int32) as c35,
+	BitCast((BitCast((r.A + r.B) AS Uint32) ^ BitCast(r.C AS Uint32)) AS Int32) as c36,
+	BitCast((BitCast(r.A AS Uint32) ^ BitCast((r.B + r.C) AS Uint32)) AS Int32) as c37,
+	BitCast((BitCast((r.A + -6) AS Uint32) ^ BitCast(r.C AS Uint32)) AS Int32) as c38,
+	BitCast((BitCast(r.A AS Uint32) ^ BitCast((-r.B) AS Uint32)) AS Int32) as c39,
+	BitCast((BitCast((-r.B) AS Uint32) ^ BitCast(r.C AS Uint32)) AS Int32) as c40,
+	BitCast((BitCast((r.A - r.B) AS Uint32) ^ BitCast(r.C AS Uint32)) AS Int32) as c41,
+	BitCast((BitCast((r.A + r.B) AS Uint32) ^ BitCast(r.C AS Uint32)) AS Int32) as c42,
+	BitCast((BitCast((r.A * -r.B) AS Uint32) ^ BitCast(r.C AS Uint32)) AS Int32) as c43,
+	BitCast((BitCast((r.A / -r.B) AS Uint32) ^ BitCast(r.C AS Uint32)) AS Int32) as c44,
+	BitCast((BitCast((r.A % -r.B) AS Uint32) ^ BitCast(r.C AS Uint32)) AS Int32) as c45,
+	BitCast((BitCast(BitCast((BitCast(r.A AS Uint32) & BitCast((-r.B) AS Uint32)) AS Int32) AS Uint32) ^ BitCast(r.C AS Uint32)) AS Int32) as c46,
+	BitCast((BitCast(BitCast((BitCast(r.A AS Uint32) | BitCast((-r.B) AS Uint32)) AS Int32) AS Uint32) ^ BitCast(r.C AS Uint32)) AS Int32) as c47,
+	BitCast((BitCast(BitCast((BitCast(r.A AS Uint32) ^ BitCast((-r.B) AS Uint32)) AS Int32) AS Uint32) ^ BitCast(r.C AS Uint32)) AS Int32) as c48,
+	BitCast((BitCast(r.A AS Uint32) ^ BitCast(BitCast((~BitCast(r.B AS Uint32)) AS Int32) AS Uint32)) AS Int32) as c49,
+	BitCast((BitCast((r.A + BitCast((~BitCast(r.B AS Uint32)) AS Int32)) AS Uint32) ^ BitCast(r.C AS Uint32)) AS Int32) as c50,
+	BitCast((BitCast((r.A - BitCast((~BitCast(r.B AS Uint32)) AS Int32)) AS Uint32) ^ BitCast(r.C AS Uint32)) AS Int32) as c51,
+	BitCast((BitCast((r.A * BitCast((~BitCast(r.B AS Uint32)) AS Int32)) AS Uint32) ^ BitCast(r.C AS Uint32)) AS Int32) as c52,
+	BitCast((BitCast((r.A % BitCast((~BitCast(r.B AS Uint32)) AS Int32)) AS Uint32) ^ BitCast(r.C AS Uint32)) AS Int32) as c53,
+	BitCast((BitCast(BitCast((BitCast(r.A AS Uint32) & BitCast(BitCast((~BitCast(r.B AS Uint32)) AS Int32) AS Uint32)) AS Int32) AS Uint32) ^ BitCast(r.C AS Uint32)) AS Int32) as c54,
+	BitCast((BitCast(BitCast((BitCast(r.A AS Uint32) | BitCast(BitCast((~BitCast(r.B AS Uint32)) AS Int32) AS Uint32)) AS Int32) AS Uint32) ^ BitCast(r.C AS Uint32)) AS Int32) as c55,
+	BitCast((BitCast(r.A AS Uint32) ^ BitCast(-5 AS Uint32)) AS Int32) as c56,
+	BitCast((BitCast(-5 AS Uint32) ^ BitCast(r.C AS Uint32)) AS Int32) as c57,
+	BitCast((BitCast((r.A + -5) AS Uint32) ^ BitCast(r.C AS Uint32)) AS Int32) as c58,
+	BitCast((BitCast((r.A - -5) AS Uint32) ^ BitCast(r.C AS Uint32)) AS Int32) as c59,
+	BitCast((BitCast((r.A * -5) AS Uint32) ^ BitCast(r.C AS Uint32)) AS Int32) as c60,
+	BitCast((BitCast((r.A % -5) AS Uint32) ^ BitCast(r.C AS Uint32)) AS Int32) as c61,
+	BitCast((BitCast(BitCast((BitCast(r.A AS Uint32) & BitCast(-5 AS Uint32)) AS Int32) AS Uint32) ^ BitCast(r.C AS Uint32)) AS Int32) as c62,
+	BitCast((BitCast(BitCast((BitCast(r.A AS Uint32) | BitCast(-5 AS Uint32)) AS Int32) AS Uint32) ^ BitCast(r.C AS Uint32)) AS Int32) as c63,
+	BitCast((BitCast(BitCast((BitCast(r.A AS Uint32) ^ BitCast(-5 AS Uint32)) AS Int32) AS Uint32) ^ BitCast(r.C AS Uint32)) AS Int32) as c64
+FROM
+	PrecedenceRow r
+ORDER BY
+	r.Id
+
+-- YDB Ydb
+SELECT
+	BitCast((BitCast(r.A AS Uint32) ^ BitCast(-5 AS Uint32)) AS Int32) as c1,
+	BitCast((BitCast(-5 AS Uint32) ^ BitCast(r.C AS Uint32)) AS Int32) as c2,
+	BitCast((BitCast((r.A + -5) AS Uint32) ^ BitCast(r.C AS Uint32)) AS Int32) as c3,
+	BitCast((BitCast((r.A - -5) AS Uint32) ^ BitCast(r.C AS Uint32)) AS Int32) as c4,
+	BitCast((BitCast((r.A * -5) AS Uint32) ^ BitCast(r.C AS Uint32)) AS Int32) as c5,
+	BitCast((BitCast((r.A % -5) AS Uint32) ^ BitCast(r.C AS Uint32)) AS Int32) as c6,
+	BitCast((BitCast(BitCast((BitCast(r.A AS Uint32) & BitCast(-5 AS Uint32)) AS Int32) AS Uint32) ^ BitCast(r.C AS Uint32)) AS Int32) as c7,
+	BitCast((BitCast(BitCast((BitCast(r.A AS Uint32) | BitCast(-5 AS Uint32)) AS Int32) AS Uint32) ^ BitCast(r.C AS Uint32)) AS Int32) as c8,
+	BitCast((BitCast(BitCast((BitCast(r.A AS Uint32) ^ BitCast(-5 AS Uint32)) AS Int32) AS Uint32) ^ BitCast(r.C AS Uint32)) AS Int32) as c9
+FROM
+	PrecedenceRow r
+ORDER BY
+	r.Id
+

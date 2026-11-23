@@ -84,7 +84,7 @@ FROM
 
 -- Access.Ace.Odbc AccessODBC
 SELECT
-	([p].[ID] + 20) MOD ([p].[ID] * 3)
+	([p].[ID] + 20) MOD [p].[ID] * 3
 FROM
 	[LinqDataTypes] [p]
 WHERE

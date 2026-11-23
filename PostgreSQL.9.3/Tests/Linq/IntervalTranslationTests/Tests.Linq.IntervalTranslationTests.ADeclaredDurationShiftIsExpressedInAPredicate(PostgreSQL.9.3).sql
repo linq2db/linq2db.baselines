@@ -33,5 +33,5 @@ SELECT
 FROM
 	"DurationRow" r
 WHERE
-	'2026-03-01'::date + ((r."InSeconds" * 10000000) / 10) * Interval '1 microsecond' > '2026-03-01 01:00:00'::timestamp
+	'2026-03-01'::date + r."InSeconds" * 10000000 / 10 * Interval '1 microsecond' > '2026-03-01 01:00:00'::timestamp
 

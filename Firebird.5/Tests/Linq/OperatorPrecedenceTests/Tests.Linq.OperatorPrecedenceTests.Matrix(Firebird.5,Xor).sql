@@ -1,0 +1,87 @@
+﻿-- Firebird.5 Firebird4
+SELECT
+	Bin_Xor("r".A + "r".B, "r".C),
+	Bin_Xor("r".A, "r".B + "r".C),
+	Bin_Xor("r".A + "r".B, "r".C),
+	Bin_Xor("r".A, "r".B + "r".C),
+	Bin_Xor("r".A - "r".B, "r".C),
+	Bin_Xor("r".A - "r".B, "r".C),
+	Bin_Xor("r".A * "r".B, "r".C),
+	Bin_Xor("r".A, "r".B * "r".C),
+	Bin_Xor("r".A * "r".B, "r".C),
+	Bin_Xor("r".A, "r".B * "r".C),
+	Bin_Xor("r".A / "r".B, "r".C),
+	Bin_Xor("r".A, "r".B / "r".C),
+	Bin_Xor("r".A / "r".B, "r".C),
+	Bin_Xor("r".A, "r".B / "r".C),
+	Bin_Xor(Mod("r".A, "r".B), "r".C),
+	Bin_Xor("r".A, Mod("r".B, "r".C)),
+	Bin_Xor(Mod("r".A, "r".B), "r".C),
+	Bin_Xor("r".A, Mod("r".B, "r".C)),
+	Bin_Xor(Bin_And("r".A, "r".B), "r".C),
+	Bin_Xor("r".A, Bin_And("r".B, "r".C)),
+	Bin_Xor(Bin_And("r".A, "r".B), "r".C),
+	Bin_Xor("r".A, Bin_And("r".B, "r".C)),
+	Bin_Xor(Bin_Or("r".A, "r".B), "r".C),
+	Bin_Xor("r".A, Bin_Or("r".B, "r".C)),
+	Bin_Xor(Bin_Or("r".A, "r".B), "r".C),
+	Bin_Xor("r".A, Bin_Or("r".B, "r".C)),
+	Bin_Xor("r".A + "r".B, "r".C),
+	Bin_Xor("r".A, "r".B + "r".C),
+	Bin_Xor("r".A + -6, "r".C),
+	Bin_Xor("r".A - "r".B, "r".C),
+	Bin_Xor("r".A, "r".B - "r".C),
+	Bin_Xor("r".A - -6, "r".C),
+	Bin_Xor("r".A * "r".B, "r".C),
+	Bin_Xor("r".A, "r".B * "r".C),
+	Bin_Xor("r".A * -6, "r".C),
+	Bin_Xor("r".A + "r".B, "r".C),
+	Bin_Xor("r".A, "r".B + "r".C),
+	Bin_Xor("r".A + -6, "r".C),
+	Bin_Xor("r".A, -"r".B),
+	Bin_Xor(-"r".B, "r".C),
+	Bin_Xor("r".A - "r".B, "r".C),
+	Bin_Xor("r".A + "r".B, "r".C),
+	Bin_Xor("r".A * -"r".B, "r".C),
+	Bin_Xor("r".A / -"r".B, "r".C),
+	Bin_Xor(Mod("r".A, -"r".B), "r".C),
+	Bin_Xor(Bin_And("r".A, -"r".B), "r".C),
+	Bin_Xor(Bin_Or("r".A, -"r".B), "r".C),
+	Bin_Xor(Bin_Xor("r".A, -"r".B), "r".C),
+	Bin_Xor("r".A, BIN_NOT("r".B)),
+	Bin_Xor("r".A + BIN_NOT("r".B), "r".C),
+	Bin_Xor("r".A - BIN_NOT("r".B), "r".C),
+	Bin_Xor("r".A * BIN_NOT("r".B), "r".C),
+	Bin_Xor(Mod("r".A, BIN_NOT("r".B)), "r".C),
+	Bin_Xor(Bin_And("r".A, BIN_NOT("r".B)), "r".C),
+	Bin_Xor(Bin_Or("r".A, BIN_NOT("r".B)), "r".C),
+	Bin_Xor("r".A, -5),
+	Bin_Xor(-5, "r".C),
+	Bin_Xor("r".A + -5, "r".C),
+	Bin_Xor("r".A - -5, "r".C),
+	Bin_Xor("r".A * -5, "r".C),
+	Bin_Xor(Mod("r".A, -5), "r".C),
+	Bin_Xor(Bin_And("r".A, -5), "r".C),
+	Bin_Xor(Bin_Or("r".A, -5), "r".C),
+	Bin_Xor(Bin_Xor("r".A, -5), "r".C)
+FROM
+	"PrecedenceRow" "r"
+ORDER BY
+	"r"."Id"
+
+-- Firebird.5 Firebird4
+SELECT
+	Bin_Xor("r".A, -5),
+	Bin_Xor(-5, "r".C),
+	Bin_Xor("r".A + -5, "r".C),
+	Bin_Xor("r".A - -5, "r".C),
+	Bin_Xor("r".A * -5, "r".C),
+	Bin_Xor(Mod("r".A, -5), "r".C),
+	Bin_Xor(Bin_And("r".A, -5), "r".C),
+	Bin_Xor(Bin_Or("r".A, -5), "r".C),
+	Bin_Xor(Bin_Xor("r".A, -5), "r".C)
+FROM
+	"PrecedenceRow" "r"
+ORDER BY
+	"r"."Id"
+

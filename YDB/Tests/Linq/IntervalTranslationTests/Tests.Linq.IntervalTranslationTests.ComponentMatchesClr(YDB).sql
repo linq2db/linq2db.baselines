@@ -30,8 +30,8 @@ VALUES
 -- YDB Ydb
 SELECT
 	Unwrap(CAST(r.InSeconds / 86400l AS Int32)) as Days,
-	Unwrap(CAST((r.InSeconds / 3600l) % 24l AS Int32)) as Hours,
-	Unwrap(CAST((r.InSeconds / 60l) % 60l AS Int32)) as Minutes,
+	Unwrap(CAST(r.InSeconds / 3600l % 24l AS Int32)) as Hours,
+	Unwrap(CAST(r.InSeconds / 60l % 60l AS Int32)) as Minutes,
 	Unwrap(CAST(r.InSeconds % 60l AS Int32)) as Seconds
 FROM
 	DurationRow r

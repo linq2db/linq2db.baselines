@@ -52,19 +52,19 @@ VALUES
 SELECT
 	(
 		SELECT
-			MIN(CAST(Floor(Extract(Day From (CAST(t2."FinishedOn" AS timestamp) - CAST(t2."StartedOn" AS timestamp)))) AS Number(19)) * 864000000000 + CAST(Floor(Extract(Hour From (CAST(t2."FinishedOn" AS timestamp) - CAST(t2."StartedOn" AS timestamp)))) AS Number(19)) * 36000000000 + CAST(Floor(Extract(Minute From (CAST(t2."FinishedOn" AS timestamp) - CAST(t2."StartedOn" AS timestamp)))) AS Number(19)) * 600000000 + CAST(Floor(Round(Extract(Second From (CAST(t2."FinishedOn" AS timestamp) - CAST(t2."StartedOn" AS timestamp))) * 10000000D)) AS Number(19)))
+			MIN(CAST(Floor(Extract(Day From (CAST(t2."FinishedOn" AS timestamp) - CAST(t2."StartedOn" AS timestamp)))) AS Number(19)) * 864000000000 + (CAST(Floor(Extract(Hour From (CAST(t2."FinishedOn" AS timestamp) - CAST(t2."StartedOn" AS timestamp)))) AS Number(19)) * 36000000000 + (CAST(Floor(Extract(Minute From (CAST(t2."FinishedOn" AS timestamp) - CAST(t2."StartedOn" AS timestamp)))) AS Number(19)) * 600000000 + CAST(Floor(Round(Extract(Second From (CAST(t2."FinishedOn" AS timestamp) - CAST(t2."StartedOn" AS timestamp))) * 10000000D)) AS Number(19)))))
 		FROM
 			"BudgetedTaskRow" t2
 	),
 	(
 		SELECT
-			MAX(CAST(Floor(Extract(Day From (CAST(t3."FinishedOn" AS timestamp) - CAST(t3."StartedOn" AS timestamp)))) AS Number(19)) * 864000000000 + CAST(Floor(Extract(Hour From (CAST(t3."FinishedOn" AS timestamp) - CAST(t3."StartedOn" AS timestamp)))) AS Number(19)) * 36000000000 + CAST(Floor(Extract(Minute From (CAST(t3."FinishedOn" AS timestamp) - CAST(t3."StartedOn" AS timestamp)))) AS Number(19)) * 600000000 + CAST(Floor(Round(Extract(Second From (CAST(t3."FinishedOn" AS timestamp) - CAST(t3."StartedOn" AS timestamp))) * 10000000D)) AS Number(19)))
+			MAX(CAST(Floor(Extract(Day From (CAST(t3."FinishedOn" AS timestamp) - CAST(t3."StartedOn" AS timestamp)))) AS Number(19)) * 864000000000 + (CAST(Floor(Extract(Hour From (CAST(t3."FinishedOn" AS timestamp) - CAST(t3."StartedOn" AS timestamp)))) AS Number(19)) * 36000000000 + (CAST(Floor(Extract(Minute From (CAST(t3."FinishedOn" AS timestamp) - CAST(t3."StartedOn" AS timestamp)))) AS Number(19)) * 600000000 + CAST(Floor(Round(Extract(Second From (CAST(t3."FinishedOn" AS timestamp) - CAST(t3."StartedOn" AS timestamp))) * 10000000D)) AS Number(19)))))
 		FROM
 			"BudgetedTaskRow" t3
 	),
 	Coalesce((
 		SELECT
-			SUM(CAST(CAST(Floor(Extract(Day From (CAST(t4."FinishedOn" AS timestamp) - CAST(t4."StartedOn" AS timestamp)))) AS Number(19)) * 864000000000 + CAST(Floor(Extract(Hour From (CAST(t4."FinishedOn" AS timestamp) - CAST(t4."StartedOn" AS timestamp)))) AS Number(19)) * 36000000000 + CAST(Floor(Extract(Minute From (CAST(t4."FinishedOn" AS timestamp) - CAST(t4."StartedOn" AS timestamp)))) AS Number(19)) * 600000000 + CAST(Floor(Round(Extract(Second From (CAST(t4."FinishedOn" AS timestamp) - CAST(t4."StartedOn" AS timestamp))) * 10000000D)) AS Number(19)) AS Float) / 600000000D)
+			SUM(CAST(CAST(Floor(Extract(Day From (CAST(t4."FinishedOn" AS timestamp) - CAST(t4."StartedOn" AS timestamp)))) AS Number(19)) * 864000000000 + (CAST(Floor(Extract(Hour From (CAST(t4."FinishedOn" AS timestamp) - CAST(t4."StartedOn" AS timestamp)))) AS Number(19)) * 36000000000 + (CAST(Floor(Extract(Minute From (CAST(t4."FinishedOn" AS timestamp) - CAST(t4."StartedOn" AS timestamp)))) AS Number(19)) * 600000000 + CAST(Floor(Round(Extract(Second From (CAST(t4."FinishedOn" AS timestamp) - CAST(t4."StartedOn" AS timestamp))) * 10000000D)) AS Number(19)))) AS Float) / 600000000D)
 		FROM
 			"BudgetedTaskRow" t4
 	), 0D)

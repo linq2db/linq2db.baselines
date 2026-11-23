@@ -8,7 +8,7 @@ SELECT
 FROM
 	Person p
 WHERE
-	(p.PersonID | xor(p.PersonID, 1)) = p.PersonID
+	p.PersonID | xor(p.PersonID, 1) = p.PersonID
 
 -- DuckDB
 SELECT

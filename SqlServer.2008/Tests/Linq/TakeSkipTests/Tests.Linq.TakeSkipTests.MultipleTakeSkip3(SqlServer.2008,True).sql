@@ -21,7 +21,7 @@ FROM
 			[TakeSkipClass] [t1]
 	) [t2]
 WHERE
-	[t2].[RN] > @skip + @skip_1 + @skip_2 AND [t2].[RN] <= (@skip + @skip_1 + @skip_2 + @take - @skip_2)
+	[t2].[RN] > @skip + @skip_1 + @skip_2 AND [t2].[RN] <= @skip + @skip_1 + @skip_2 + (@take - @skip_2)
 ORDER BY
 	[t2].[Value_1]
 

@@ -1,6 +1,6 @@
 ﻿-- ClickHouse.MySql ClickHouse
 SELECT
-	trim(TRAILING '.+' FROM (concat(Coalesce(t.VarCharColumn, ''), '...++')))
+	trim(TRAILING '.+' FROM concat(Coalesce(t.VarCharColumn, ''), '...++'))
 FROM
 	StringTrimTable t
 

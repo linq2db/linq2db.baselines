@@ -26,7 +26,7 @@ FROM
 					t1."ChildID"
 			) t2
 		WHERE
-			ROWNUM <= (:skip + :skip_1 + :take - :skip_1)
+			ROWNUM <= :skip + :skip_1 + (:take - :skip_1)
 	) t3
 WHERE
 	t3.RN > :skip + :skip_1
@@ -61,7 +61,7 @@ FROM
 					t1."ChildID"
 			) t2
 		WHERE
-			ROWNUM <= (:skip + :skip_1 + :take - :skip_1)
+			ROWNUM <= :skip + :skip_1 + (:take - :skip_1)
 	) t3
 WHERE
 	t3.RN > :skip + :skip_1

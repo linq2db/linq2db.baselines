@@ -10,7 +10,7 @@ SELECT
 FROM
 	TestConstantsData e
 WHERE
-	(Coalesce(e.StringValue, ''u) || '1'u) = $p
+	Coalesce(e.StringValue, ''u) || '1'u = $p
 
 -- YDB Ydb
 SELECT

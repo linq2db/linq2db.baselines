@@ -1,0 +1,87 @@
+﻿-- Oracle.11.Managed Oracle11
+SELECT
+	r.A + r.B + r.C - BITAND(r.A + r.B, r.C) * 2,
+	r.A + (r.B + r.C) - BITAND(r.A, r.B + r.C) * 2,
+	r.A + r.B + r.C - BITAND(r.A + r.B, r.C) * 2,
+	r.A + (r.B + r.C) - BITAND(r.A, r.B + r.C) * 2,
+	r.A - r.B + r.C - BITAND(r.A - r.B, r.C) * 2,
+	r.A - r.B + r.C - BITAND(r.A - r.B, r.C) * 2,
+	r.A * r.B + r.C - BITAND(r.A * r.B, r.C) * 2,
+	r.A + r.B * r.C - BITAND(r.A, r.B * r.C) * 2,
+	r.A * r.B + r.C - BITAND(r.A * r.B, r.C) * 2,
+	r.A + r.B * r.C - BITAND(r.A, r.B * r.C) * 2,
+	Trunc(r.A / r.B) + r.C - BITAND(Trunc(r.A / r.B), r.C) * 2,
+	r.A + Trunc(r.B / r.C) - BITAND(r.A, Trunc(r.B / r.C)) * 2,
+	Trunc(r.A / r.B) + r.C - BITAND(Trunc(r.A / r.B), r.C) * 2,
+	r.A + Trunc(r.B / r.C) - BITAND(r.A, Trunc(r.B / r.C)) * 2,
+	MOD(r.A, r.B) + r.C - BITAND(MOD(r.A, r.B), r.C) * 2,
+	r.A + MOD(r.B, r.C) - BITAND(r.A, MOD(r.B, r.C)) * 2,
+	MOD(r.A, r.B) + r.C - BITAND(MOD(r.A, r.B), r.C) * 2,
+	r.A + MOD(r.B, r.C) - BITAND(r.A, MOD(r.B, r.C)) * 2,
+	BITAND(r.A, r.B) + r.C - BITAND(BITAND(r.A, r.B), r.C) * 2,
+	r.A + BITAND(r.B, r.C) - BITAND(r.A, BITAND(r.B, r.C)) * 2,
+	BITAND(r.A, r.B) + r.C - BITAND(BITAND(r.A, r.B), r.C) * 2,
+	r.A + BITAND(r.B, r.C) - BITAND(r.A, BITAND(r.B, r.C)) * 2,
+	r.A + r.B - BITAND(r.A, r.B) + r.C - BITAND(r.A + r.B - BITAND(r.A, r.B), r.C) * 2,
+	r.A + (r.B + r.C - BITAND(r.B, r.C)) - BITAND(r.A, r.B + r.C - BITAND(r.B, r.C)) * 2,
+	r.A + r.B - BITAND(r.A, r.B) + r.C - BITAND(r.A + r.B - BITAND(r.A, r.B), r.C) * 2,
+	r.A + (r.B + r.C - BITAND(r.B, r.C)) - BITAND(r.A, r.B + r.C - BITAND(r.B, r.C)) * 2,
+	(r.A + r.B) + r.C - BITAND(r.A + r.B, r.C) * 2,
+	r.A + (r.B + r.C) - BITAND(r.A, r.B + r.C) * 2,
+	(r.A + -6) + r.C - BITAND(r.A + -6, r.C) * 2,
+	(r.A - r.B) + r.C - BITAND(r.A - r.B, r.C) * 2,
+	r.A + (r.B - r.C) - BITAND(r.A, r.B - r.C) * 2,
+	(r.A - -6) + r.C - BITAND(r.A - -6, r.C) * 2,
+	r.A * r.B + r.C - BITAND(r.A * r.B, r.C) * 2,
+	r.A + r.B * r.C - BITAND(r.A, r.B * r.C) * 2,
+	r.A * -6 + r.C - BITAND(r.A * -6, r.C) * 2,
+	(r.A + r.B) + r.C - BITAND(r.A + r.B, r.C) * 2,
+	r.A + (r.B + r.C) - BITAND(r.A, r.B + r.C) * 2,
+	(r.A + -6) + r.C - BITAND(r.A + -6, r.C) * 2,
+	r.A - r.B - BITAND(r.A, -r.B) * 2,
+	-r.B + r.C - BITAND(-r.B, r.C) * 2,
+	r.A - r.B + r.C - BITAND(r.A - r.B, r.C) * 2,
+	r.A + r.B + r.C - BITAND(r.A + r.B, r.C) * 2,
+	r.A * -r.B + r.C - BITAND(r.A * -r.B, r.C) * 2,
+	Trunc(r.A / -r.B) + r.C - BITAND(Trunc(r.A / -r.B), r.C) * 2,
+	MOD(r.A, -r.B) + r.C - BITAND(MOD(r.A, -r.B), r.C) * 2,
+	BITAND(r.A, -r.B) + r.C - BITAND(BITAND(r.A, -r.B), r.C) * 2,
+	r.A - r.B - BITAND(r.A, -r.B) + r.C - BITAND(r.A - r.B - BITAND(r.A, -r.B), r.C) * 2,
+	r.A - r.B - BITAND(r.A, -r.B) * 2 + r.C - BITAND(r.A - r.B - BITAND(r.A, -r.B) * 2, r.C) * 2,
+	r.A + (-1 - r.B) - BITAND(r.A, -1 - r.B) * 2,
+	r.A + (-1 - r.B) + r.C - BITAND(r.A + (-1 - r.B), r.C) * 2,
+	r.A - (-1 - r.B) + r.C - BITAND(r.A - (-1 - r.B), r.C) * 2,
+	r.A * (-1 - r.B) + r.C - BITAND(r.A * (-1 - r.B), r.C) * 2,
+	MOD(r.A, -1 - r.B) + r.C - BITAND(MOD(r.A, -1 - r.B), r.C) * 2,
+	BITAND(r.A, -1 - r.B) + r.C - BITAND(BITAND(r.A, -1 - r.B), r.C) * 2,
+	r.A + (-1 - r.B) - BITAND(r.A, -1 - r.B) + r.C - BITAND(r.A + (-1 - r.B) - BITAND(r.A, -1 - r.B), r.C) * 2,
+	r.A + -5 - BITAND(r.A, -5) * 2,
+	-5 + r.C - BITAND(-5, r.C) * 2,
+	r.A + -5 + r.C - BITAND(r.A + -5, r.C) * 2,
+	r.A - -5 + r.C - BITAND(r.A - -5, r.C) * 2,
+	r.A * -5 + r.C - BITAND(r.A * -5, r.C) * 2,
+	MOD(r.A, -5) + r.C - BITAND(MOD(r.A, -5), r.C) * 2,
+	BITAND(r.A, -5) + r.C - BITAND(BITAND(r.A, -5), r.C) * 2,
+	r.A + -5 - BITAND(r.A, -5) + r.C - BITAND(r.A + -5 - BITAND(r.A, -5), r.C) * 2,
+	r.A + -5 - BITAND(r.A, -5) * 2 + r.C - BITAND(r.A + -5 - BITAND(r.A, -5) * 2, r.C) * 2
+FROM
+	"PrecedenceRow" r
+ORDER BY
+	r."Id"
+
+-- Oracle.11.Managed Oracle11
+SELECT
+	r.A + -5 - BITAND(r.A, -5) * 2,
+	-5 + r.C - BITAND(-5, r.C) * 2,
+	r.A + -5 + r.C - BITAND(r.A + -5, r.C) * 2,
+	r.A - -5 + r.C - BITAND(r.A - -5, r.C) * 2,
+	r.A * -5 + r.C - BITAND(r.A * -5, r.C) * 2,
+	MOD(r.A, -5) + r.C - BITAND(MOD(r.A, -5), r.C) * 2,
+	BITAND(r.A, -5) + r.C - BITAND(BITAND(r.A, -5), r.C) * 2,
+	r.A + -5 - BITAND(r.A, -5) + r.C - BITAND(r.A + -5 - BITAND(r.A, -5), r.C) * 2,
+	r.A + -5 - BITAND(r.A, -5) * 2 + r.C - BITAND(r.A + -5 - BITAND(r.A, -5) * 2, r.C) * 2
+FROM
+	"PrecedenceRow" r
+ORDER BY
+	r."Id"
+

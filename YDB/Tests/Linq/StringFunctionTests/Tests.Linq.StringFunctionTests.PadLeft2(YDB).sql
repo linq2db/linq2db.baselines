@@ -8,6 +8,6 @@ SELECT
 FROM
 	Person p
 WHERE
-	('123'u || Unwrap(CAST(String::LeftPad(p.FirstName, 6, '*'u) AS Text))) = '123**John'u AND
+	'123'u || Unwrap(CAST(String::LeftPad(p.FirstName, 6, '*'u) AS Text)) = '123**John'u AND
 	p.PersonID = 1
 

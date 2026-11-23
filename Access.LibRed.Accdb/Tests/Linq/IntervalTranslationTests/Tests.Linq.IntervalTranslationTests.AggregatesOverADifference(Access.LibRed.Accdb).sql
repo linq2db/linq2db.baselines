@@ -52,13 +52,13 @@ VALUES
 SELECT TOP 1
 	(
 		SELECT
-			MIN((DateDiff_Big('d', [t4].[StartedOn], [t4].[FinishedOn]) * 86400) * 10000000 + DateDiff_Big('ms', DateAdd('d', DateDiff_Big('d', [t4].[StartedOn], [t4].[FinishedOn]), [t4].[StartedOn]), [t4].[FinishedOn]) * 10000)
+			MIN(DateDiff_Big('d', [t4].[StartedOn], [t4].[FinishedOn]) * 86400 * 10000000 + DateDiff_Big('ms', DateAdd('d', DateDiff_Big('d', [t4].[StartedOn], [t4].[FinishedOn]), [t4].[StartedOn]), [t4].[FinishedOn]) * 10000)
 		FROM
 			[BudgetedTaskRow] [t4]
 	),
 	(
 		SELECT
-			MAX((DateDiff_Big('d', [t5].[StartedOn], [t5].[FinishedOn]) * 86400) * 10000000 + DateDiff_Big('ms', DateAdd('d', DateDiff_Big('d', [t5].[StartedOn], [t5].[FinishedOn]), [t5].[StartedOn]), [t5].[FinishedOn]) * 10000)
+			MAX(DateDiff_Big('d', [t5].[StartedOn], [t5].[FinishedOn]) * 86400 * 10000000 + DateDiff_Big('ms', DateAdd('d', DateDiff_Big('d', [t5].[StartedOn], [t5].[FinishedOn]), [t5].[StartedOn]), [t5].[FinishedOn]) * 10000)
 		FROM
 			[BudgetedTaskRow] [t5]
 	),

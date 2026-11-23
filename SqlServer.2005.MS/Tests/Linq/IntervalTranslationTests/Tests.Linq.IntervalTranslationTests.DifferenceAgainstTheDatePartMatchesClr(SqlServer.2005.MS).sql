@@ -21,7 +21,7 @@ VALUES
 
 -- SqlServer.2005.MS SqlServer.2005
 SELECT TOP (2)
-	CAST((CAST(DateDiff(day, DateAdd(dd, DateDiff(dd, 0, [r].[FinishedOn]), 0), [r].[FinishedOn]) AS BigInt) * 86400) * 10000000 + CAST(DateDiff(millisecond, DateAdd(day, CAST(CAST(DateDiff(day, DateAdd(dd, DateDiff(dd, 0, [r].[FinishedOn]), 0), [r].[FinishedOn]) AS BigInt) AS Int), DateAdd(dd, DateDiff(dd, 0, [r].[FinishedOn]), 0)), [r].[FinishedOn]) AS BigInt) * 10000 AS Float) / 36000000000
+	CAST(CAST(DateDiff(day, DateAdd(dd, DateDiff(dd, 0, [r].[FinishedOn]), 0), [r].[FinishedOn]) AS BigInt) * 86400 * 10000000 + CAST(DateDiff(millisecond, DateAdd(day, CAST(CAST(DateDiff(day, DateAdd(dd, DateDiff(dd, 0, [r].[FinishedOn]), 0), [r].[FinishedOn]) AS BigInt) AS Int), DateAdd(dd, DateDiff(dd, 0, [r].[FinishedOn]), 0)), [r].[FinishedOn]) AS BigInt) * 10000 AS Float) / 36000000000
 FROM
 	[EventRow] [r]
 

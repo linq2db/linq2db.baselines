@@ -29,8 +29,8 @@ VALUES
 
 -- YDB Ydb
 SELECT
-	Unwrap(CAST((r.InTicks / 10000l) % 1000l AS Int32)) as Milliseconds,
-	Unwrap(CAST((r.InTicks / 10l) % 1000l AS Int32)) as Microseconds
+	Unwrap(CAST(r.InTicks / 10000l % 1000l AS Int32)) as Milliseconds,
+	Unwrap(CAST(r.InTicks / 10l % 1000l AS Int32)) as Microseconds
 FROM
 	DurationRow r
 LIMIT 2

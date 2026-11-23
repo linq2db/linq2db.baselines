@@ -34,7 +34,7 @@ DECLARE Ticks Int64
 SET     Ticks = 36002500000l
 
 SELECT
-	Unwrap(CAST(Unwrap(CAST(r.FinishedOn AS Timestamp)) + DateTime::IntervalFromMicroseconds((Unwrap(CAST($Ticks AS Int64)) * -1l) / 10l) AS Timestamp)) as c1
+	Unwrap(CAST(Unwrap(CAST(r.FinishedOn AS Timestamp)) + DateTime::IntervalFromMicroseconds(Unwrap(CAST($Ticks AS Int64)) * -1l / 10l) AS Timestamp)) as c1
 FROM
 	EventRow r
 LIMIT 2
@@ -59,5 +59,5 @@ SELECT
 FROM
 	EventRow r
 WHERE
-	Unwrap(CAST(Unwrap(CAST(r.FinishedOn AS Timestamp)) + DateTime::IntervalFromMicroseconds((Unwrap(CAST($Ticks AS Int64)) * -1l) / 10l) AS Timestamp)) > r.StartedOn + DateTime::IntervalFromHours(Unwrap(CAST(Double('1') AS Int32)))
+	Unwrap(CAST(Unwrap(CAST(r.FinishedOn AS Timestamp)) + DateTime::IntervalFromMicroseconds(Unwrap(CAST($Ticks AS Int64)) * -1l / 10l) AS Timestamp)) > r.StartedOn + DateTime::IntervalFromHours(Unwrap(CAST(Double('1') AS Int32)))
 

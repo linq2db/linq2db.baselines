@@ -27,7 +27,7 @@ SET     @late = TIMESTAMP '2100-01-01 00:00:00.0000'
 
 SELECT FIRST 2
 	DateAdd(millisecond, Mod(CAST(CAST(Floor(DateDiff(millisecond, "r"."StartedOn", "r"."FinishedOn") * 10) AS BigInt) * 1000 AS BigInt), 864000000000) / 10000, DateAdd(day, CAST(CAST(Floor(DateDiff(millisecond, "r"."StartedOn", "r"."FinishedOn") * 10) AS BigInt) * 1000 AS BigInt) / 864000000000, CAST(@early AS TimeStamp))),
-	DateAdd(millisecond, Mod(CAST(CAST(Floor(DateDiff(millisecond, "r"."StartedOn", "r"."FinishedOn") * 10) AS BigInt) * 1000 AS BigInt) * -1, 864000000000) / 10000, DateAdd(day, (CAST(CAST(Floor(DateDiff(millisecond, "r"."StartedOn", "r"."FinishedOn") * 10) AS BigInt) * 1000 AS BigInt) * -1) / 864000000000, CAST(@late AS TimeStamp)))
+	DateAdd(millisecond, Mod(CAST(CAST(Floor(DateDiff(millisecond, "r"."StartedOn", "r"."FinishedOn") * 10) AS BigInt) * 1000 AS BigInt) * -1, 864000000000) / 10000, DateAdd(day, CAST(CAST(Floor(DateDiff(millisecond, "r"."StartedOn", "r"."FinishedOn") * 10) AS BigInt) * 1000 AS BigInt) * -1 / 864000000000, CAST(@late AS TimeStamp)))
 FROM
 	"EventRow" "r"
 

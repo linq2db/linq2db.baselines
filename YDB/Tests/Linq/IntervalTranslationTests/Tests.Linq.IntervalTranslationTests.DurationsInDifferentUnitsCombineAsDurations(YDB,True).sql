@@ -37,7 +37,7 @@ SELECT
 	Unwrap(CAST(Unwrap(CAST(r.InSeconds * 10000000l + r.InTicks AS Int64)) + r.InSeconds * 10000000l AS Int64)) as Nested,
 	Unwrap(CAST(Unwrap(CAST(-r.InSeconds AS Int64)) * 10000000l + r.InTicks AS Int64)) as Negated,
 	Unwrap(CAST(r.InSeconds * 10000000l + r.InTicks AS Int64)) as Conditional,
-	Unwrap(CAST(r.InSeconds * 10000000l + r.InTicks AS Int64)) + r.InTicks + r.InTicks as BothComputed,
+	Unwrap(CAST(r.InSeconds * 10000000l + r.InTicks AS Int64)) + (r.InTicks + r.InTicks) as BothComputed,
 	Unwrap(CAST(Unwrap(CAST(r.InSeconds + r.InSeconds AS Int64)) * 10000000l + r.InTicks AS Int64)) - (r.InTicks + r.InTicks) as BothComputedSub,
 	Unwrap(CAST(Unwrap(CAST(-r.InSeconds AS Int64)) * 10000000l - r.InTicks AS Int64)) as NegatedSub
 FROM

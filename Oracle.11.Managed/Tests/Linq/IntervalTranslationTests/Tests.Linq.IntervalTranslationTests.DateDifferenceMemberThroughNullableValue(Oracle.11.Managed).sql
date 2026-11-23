@@ -4,7 +4,7 @@ SELECT
 FROM
 	"ClosedPeriodRow" r
 WHERE
-	CAST(CAST(Floor(Extract(Day From (r."ClosedOnNullable" - r."OpenedOn"))) AS Number(19)) * 864000000000 + CAST(Floor(Extract(Hour From (r."ClosedOnNullable" - r."OpenedOn"))) AS Number(19)) * 36000000000 + CAST(Floor(Extract(Minute From (r."ClosedOnNullable" - r."OpenedOn"))) AS Number(19)) * 600000000 + CAST(Floor(Round(Extract(Second From (r."ClosedOnNullable" - r."OpenedOn")) * 10000000D)) AS Number(19)) AS Float) / 864000000000D > 0D
+	CAST(CAST(Floor(Extract(Day From (r."ClosedOnNullable" - r."OpenedOn"))) AS Number(19)) * 864000000000 + (CAST(Floor(Extract(Hour From (r."ClosedOnNullable" - r."OpenedOn"))) AS Number(19)) * 36000000000 + (CAST(Floor(Extract(Minute From (r."ClosedOnNullable" - r."OpenedOn"))) AS Number(19)) * 600000000 + CAST(Floor(Round(Extract(Second From (r."ClosedOnNullable" - r."OpenedOn")) * 10000000D)) AS Number(19)))) AS Float) / 864000000000D > 0D
 
 -- Oracle.11.Managed Oracle11
 SELECT
@@ -12,7 +12,7 @@ SELECT
 FROM
 	"ClosedPeriodRow" r
 WHERE
-	CAST(CAST(Floor(Extract(Day From (r."ClosedOnNullable" - r."OpenedOn"))) AS Number(19)) * 864000000000 + CAST(Floor(Extract(Hour From (r."ClosedOnNullable" - r."OpenedOn"))) AS Number(19)) * 36000000000 + CAST(Floor(Extract(Minute From (r."ClosedOnNullable" - r."OpenedOn"))) AS Number(19)) * 600000000 + CAST(Floor(Round(Extract(Second From (r."ClosedOnNullable" - r."OpenedOn")) * 10000000D)) AS Number(19)) AS Float) / 36000000000D > 0D
+	CAST(CAST(Floor(Extract(Day From (r."ClosedOnNullable" - r."OpenedOn"))) AS Number(19)) * 864000000000 + (CAST(Floor(Extract(Hour From (r."ClosedOnNullable" - r."OpenedOn"))) AS Number(19)) * 36000000000 + (CAST(Floor(Extract(Minute From (r."ClosedOnNullable" - r."OpenedOn"))) AS Number(19)) * 600000000 + CAST(Floor(Round(Extract(Second From (r."ClosedOnNullable" - r."OpenedOn")) * 10000000D)) AS Number(19)))) AS Float) / 36000000000D > 0D
 
 -- Oracle.11.Managed Oracle11
 DECLARE @asOf TimeStamp -- DateTime
@@ -23,11 +23,11 @@ SELECT
 FROM
 	"ClosedPeriodRow" r
 WHERE
-	CAST(CAST(Floor(Extract(Day From (:asOf - r."ClosedOnNullable"))) AS Number(19)) * 864000000000 + CAST(Floor(Extract(Hour From (:asOf - r."ClosedOnNullable"))) AS Number(19)) * 36000000000 + CAST(Floor(Extract(Minute From (:asOf - r."ClosedOnNullable"))) AS Number(19)) * 600000000 + CAST(Floor(Round(Extract(Second From (:asOf - r."ClosedOnNullable")) * 10000000D)) AS Number(19)) AS Float) / 864000000000D > 0D
+	CAST(CAST(Floor(Extract(Day From (:asOf - r."ClosedOnNullable"))) AS Number(19)) * 864000000000 + (CAST(Floor(Extract(Hour From (:asOf - r."ClosedOnNullable"))) AS Number(19)) * 36000000000 + (CAST(Floor(Extract(Minute From (:asOf - r."ClosedOnNullable"))) AS Number(19)) * 600000000 + CAST(Floor(Round(Extract(Second From (:asOf - r."ClosedOnNullable")) * 10000000D)) AS Number(19)))) AS Float) / 864000000000D > 0D
 
 -- Oracle.11.Managed Oracle11
 SELECT
-	CAST(CAST(Floor(Extract(Day From (r."ClosedOnNullable" - r."OpenedOn"))) AS Number(19)) * 864000000000 + CAST(Floor(Extract(Hour From (r."ClosedOnNullable" - r."OpenedOn"))) AS Number(19)) * 36000000000 + CAST(Floor(Extract(Minute From (r."ClosedOnNullable" - r."OpenedOn"))) AS Number(19)) * 600000000 + CAST(Floor(Round(Extract(Second From (r."ClosedOnNullable" - r."OpenedOn")) * 10000000D)) AS Number(19)) AS Float) / 36000000000D
+	CAST(CAST(Floor(Extract(Day From (r."ClosedOnNullable" - r."OpenedOn"))) AS Number(19)) * 864000000000 + (CAST(Floor(Extract(Hour From (r."ClosedOnNullable" - r."OpenedOn"))) AS Number(19)) * 36000000000 + (CAST(Floor(Extract(Minute From (r."ClosedOnNullable" - r."OpenedOn"))) AS Number(19)) * 600000000 + CAST(Floor(Round(Extract(Second From (r."ClosedOnNullable" - r."OpenedOn")) * 10000000D)) AS Number(19)))) AS Float) / 36000000000D
 FROM
 	"ClosedPeriodRow" r
 WHERE
@@ -39,7 +39,7 @@ SELECT
 FROM
 	"ClosedPeriodRow" r
 WHERE
-	CAST(Trunc((CAST(Floor(Extract(Day From (r."ClosedOnNullable" - r."OpenedOn"))) AS Number(19)) * 864000000000 + CAST(Floor(Extract(Hour From (r."ClosedOnNullable" - r."OpenedOn"))) AS Number(19)) * 36000000000 + CAST(Floor(Extract(Minute From (r."ClosedOnNullable" - r."OpenedOn"))) AS Number(19)) * 600000000 + CAST(Floor(Round(Extract(Second From (r."ClosedOnNullable" - r."OpenedOn")) * 10000000D)) AS Number(19))) / 864000000000) AS Int) > 0
+	CAST(Trunc((CAST(Floor(Extract(Day From (r."ClosedOnNullable" - r."OpenedOn"))) AS Number(19)) * 864000000000 + (CAST(Floor(Extract(Hour From (r."ClosedOnNullable" - r."OpenedOn"))) AS Number(19)) * 36000000000 + (CAST(Floor(Extract(Minute From (r."ClosedOnNullable" - r."OpenedOn"))) AS Number(19)) * 600000000 + CAST(Floor(Round(Extract(Second From (r."ClosedOnNullable" - r."OpenedOn")) * 10000000D)) AS Number(19))))) / 864000000000) AS Int) > 0
 
 -- Oracle.11.Managed Oracle11
 SELECT
@@ -47,12 +47,12 @@ SELECT
 FROM
 	"ClosedPeriodRow" r
 WHERE
-	CAST(MOD(Trunc((CAST(Floor(Extract(Day From (r."ClosedOnNullable" - r."OpenedOn"))) AS Number(19)) * 864000000000 + CAST(Floor(Extract(Hour From (r."ClosedOnNullable" - r."OpenedOn"))) AS Number(19)) * 36000000000 + CAST(Floor(Extract(Minute From (r."ClosedOnNullable" - r."OpenedOn"))) AS Number(19)) * 600000000 + CAST(Floor(Round(Extract(Second From (r."ClosedOnNullable" - r."OpenedOn")) * 10000000D)) AS Number(19))) / 36000000000), 24) AS Int) > 0
+	CAST(MOD(Trunc((CAST(Floor(Extract(Day From (r."ClosedOnNullable" - r."OpenedOn"))) AS Number(19)) * 864000000000 + (CAST(Floor(Extract(Hour From (r."ClosedOnNullable" - r."OpenedOn"))) AS Number(19)) * 36000000000 + (CAST(Floor(Extract(Minute From (r."ClosedOnNullable" - r."OpenedOn"))) AS Number(19)) * 600000000 + CAST(Floor(Round(Extract(Second From (r."ClosedOnNullable" - r."OpenedOn")) * 10000000D)) AS Number(19))))) / 36000000000), 24) AS Int) > 0
 
 -- Oracle.11.Managed Oracle11
 SELECT
-	CAST(Trunc((CAST(Floor(Extract(Day From (r."ClosedOnNullable" - r."OpenedOn"))) AS Number(19)) * 864000000000 + CAST(Floor(Extract(Hour From (r."ClosedOnNullable" - r."OpenedOn"))) AS Number(19)) * 36000000000 + CAST(Floor(Extract(Minute From (r."ClosedOnNullable" - r."OpenedOn"))) AS Number(19)) * 600000000 + CAST(Floor(Round(Extract(Second From (r."ClosedOnNullable" - r."OpenedOn")) * 10000000D)) AS Number(19))) / 864000000000) AS Int),
-	CAST(MOD(Trunc((CAST(Floor(Extract(Day From (r."ClosedOnNullable" - r."OpenedOn"))) AS Number(19)) * 864000000000 + CAST(Floor(Extract(Hour From (r."ClosedOnNullable" - r."OpenedOn"))) AS Number(19)) * 36000000000 + CAST(Floor(Extract(Minute From (r."ClosedOnNullable" - r."OpenedOn"))) AS Number(19)) * 600000000 + CAST(Floor(Round(Extract(Second From (r."ClosedOnNullable" - r."OpenedOn")) * 10000000D)) AS Number(19))) / 36000000000), 24) AS Int)
+	CAST(Trunc((CAST(Floor(Extract(Day From (r."ClosedOnNullable" - r."OpenedOn"))) AS Number(19)) * 864000000000 + (CAST(Floor(Extract(Hour From (r."ClosedOnNullable" - r."OpenedOn"))) AS Number(19)) * 36000000000 + (CAST(Floor(Extract(Minute From (r."ClosedOnNullable" - r."OpenedOn"))) AS Number(19)) * 600000000 + CAST(Floor(Round(Extract(Second From (r."ClosedOnNullable" - r."OpenedOn")) * 10000000D)) AS Number(19))))) / 864000000000) AS Int),
+	CAST(MOD(Trunc((CAST(Floor(Extract(Day From (r."ClosedOnNullable" - r."OpenedOn"))) AS Number(19)) * 864000000000 + (CAST(Floor(Extract(Hour From (r."ClosedOnNullable" - r."OpenedOn"))) AS Number(19)) * 36000000000 + (CAST(Floor(Extract(Minute From (r."ClosedOnNullable" - r."OpenedOn"))) AS Number(19)) * 600000000 + CAST(Floor(Round(Extract(Second From (r."ClosedOnNullable" - r."OpenedOn")) * 10000000D)) AS Number(19))))) / 36000000000), 24) AS Int)
 FROM
 	"ClosedPeriodRow" r
 ORDER BY

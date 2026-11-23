@@ -8,7 +8,7 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	(`p`.`PersonID` ^ 1 | 2) = 3
+	CAST(CAST(`p`.`PersonID` ^ 1 AS SIGNED) | 2 AS SIGNED) = 3
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT

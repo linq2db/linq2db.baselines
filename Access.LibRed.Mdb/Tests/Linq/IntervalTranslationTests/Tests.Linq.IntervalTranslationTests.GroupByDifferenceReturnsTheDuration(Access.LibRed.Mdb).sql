@@ -80,7 +80,7 @@ SELECT
 FROM
 	(
 		SELECT
-			(DateDiff_Big('d', [g_1].[StartedOn], [g_1].[FinishedOn]) * 86400) * 10000000 + DateDiff_Big('ms', DateAdd('d', DateDiff_Big('d', [g_1].[StartedOn], [g_1].[FinishedOn]), [g_1].[StartedOn]), [g_1].[FinishedOn]) * 10000 as [Key_1]
+			DateDiff_Big('d', [g_1].[StartedOn], [g_1].[FinishedOn]) * 86400 * 10000000 + DateDiff_Big('ms', DateAdd('d', DateDiff_Big('d', [g_1].[StartedOn], [g_1].[FinishedOn]), [g_1].[StartedOn]), [g_1].[FinishedOn]) * 10000 as [Key_1]
 		FROM
 			[BudgetedTaskRow] [g_1]
 	) [t1]

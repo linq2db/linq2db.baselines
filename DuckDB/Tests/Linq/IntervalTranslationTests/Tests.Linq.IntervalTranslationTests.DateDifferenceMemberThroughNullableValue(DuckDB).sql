@@ -40,7 +40,7 @@ SELECT
 FROM
 	ClosedPeriodRow r
 WHERE
-	CAST((Date_Diff('microsecond', r.OpenedOn, r.ClosedOnNullable) * 10) // 864000000000 AS INTEGER) > 0
+	CAST(Date_Diff('microsecond', r.OpenedOn, r.ClosedOnNullable) * 10 // 864000000000 AS INTEGER) > 0
 
 -- DuckDB
 SELECT
@@ -48,12 +48,12 @@ SELECT
 FROM
 	ClosedPeriodRow r
 WHERE
-	CAST(((Date_Diff('microsecond', r.OpenedOn, r.ClosedOnNullable) * 10) // 36000000000) % 24 AS INTEGER) > 0
+	CAST(Date_Diff('microsecond', r.OpenedOn, r.ClosedOnNullable) * 10 // 36000000000 % 24 AS INTEGER) > 0
 
 -- DuckDB
 SELECT
-	CAST((Date_Diff('microsecond', r.OpenedOn, r.ClosedOnNullable) * 10) // 864000000000 AS INTEGER),
-	CAST(((Date_Diff('microsecond', r.OpenedOn, r.ClosedOnNullable) * 10) // 36000000000) % 24 AS INTEGER)
+	CAST(Date_Diff('microsecond', r.OpenedOn, r.ClosedOnNullable) * 10 // 864000000000 AS INTEGER),
+	CAST(Date_Diff('microsecond', r.OpenedOn, r.ClosedOnNullable) * 10 // 36000000000 % 24 AS INTEGER)
 FROM
 	ClosedPeriodRow r
 ORDER BY

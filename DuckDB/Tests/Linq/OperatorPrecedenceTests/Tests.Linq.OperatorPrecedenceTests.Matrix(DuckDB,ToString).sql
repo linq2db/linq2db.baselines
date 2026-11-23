@@ -1,0 +1,17 @@
+﻿-- DuckDB
+SELECT
+	CAST(r.A + r.B AS VARCHAR),
+	CAST(r.A - r.B AS VARCHAR),
+	CAST(r.A * r.B AS VARCHAR),
+	CAST(r.A // r.B AS VARCHAR),
+	CAST(r.A % r.B AS VARCHAR),
+	CAST(r.A & r.B AS VARCHAR),
+	CAST(r.A | r.B AS VARCHAR),
+	CAST(xor(r.A, r.B) AS VARCHAR),
+	CAST(-r.A AS VARCHAR),
+	CAST(~r.A AS VARCHAR)
+FROM
+	PrecedenceRow r
+ORDER BY
+	r.Id
+

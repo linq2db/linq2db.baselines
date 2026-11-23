@@ -80,7 +80,7 @@ SELECT
 FROM
 	(
 		SELECT
-			(CAST(Days("g_1"."FinishedOn") AS BigInt) - CAST(Days("g_1"."StartedOn") AS BigInt)) * 864000000000 + (CAST(Midnight_Seconds("g_1"."FinishedOn") AS BigInt) - CAST(Midnight_Seconds("g_1"."StartedOn") AS BigInt)) * 10000000 + (CAST(Microsecond("g_1"."FinishedOn") AS BigInt) - CAST(Microsecond("g_1"."StartedOn") AS BigInt)) * 10 as "Key_1"
+			(CAST(Days("g_1"."FinishedOn") AS BigInt) - CAST(Days("g_1"."StartedOn") AS BigInt)) * 864000000000 + ((CAST(Midnight_Seconds("g_1"."FinishedOn") AS BigInt) - CAST(Midnight_Seconds("g_1"."StartedOn") AS BigInt)) * 10000000 + (CAST(Microsecond("g_1"."FinishedOn") AS BigInt) - CAST(Microsecond("g_1"."StartedOn") AS BigInt)) * 10) as "Key_1"
 		FROM
 			"BudgetedTaskRow" "g_1"
 	) "t1"

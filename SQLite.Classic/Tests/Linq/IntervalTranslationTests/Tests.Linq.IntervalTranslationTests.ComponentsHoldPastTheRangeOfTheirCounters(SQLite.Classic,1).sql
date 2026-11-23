@@ -42,7 +42,7 @@ VALUES
 
 -- SQLite.Classic SQLite
 SELECT
-	CAST(((CAST(Round((JulianDay([r].[FinishedOn]) - JulianDay([r].[StartedOn])) * 86400000) AS INTEGER) * 10000) / 36000000000) % 24 AS INTEGER)
+	CAST(CAST(Round((JulianDay([r].[FinishedOn]) - JulianDay([r].[StartedOn])) * 86400000) AS INTEGER) * 10000 / 36000000000 % 24 AS INTEGER)
 FROM
 	[EventRow] [r]
 ORDER BY
@@ -50,7 +50,7 @@ ORDER BY
 
 -- SQLite.Classic SQLite
 SELECT
-	CAST(((CAST(Round((JulianDay([r].[FinishedOn]) - JulianDay([r].[StartedOn])) * 86400000) AS INTEGER) * 10000) / 600000000) % 60 AS INTEGER)
+	CAST(CAST(Round((JulianDay([r].[FinishedOn]) - JulianDay([r].[StartedOn])) * 86400000) AS INTEGER) * 10000 / 600000000 % 60 AS INTEGER)
 FROM
 	[EventRow] [r]
 ORDER BY
@@ -58,7 +58,7 @@ ORDER BY
 
 -- SQLite.Classic SQLite
 SELECT
-	CAST(((CAST(Round((JulianDay([r].[FinishedOn]) - JulianDay([r].[StartedOn])) * 86400000) AS INTEGER) * 10000) / 10000000) % 60 AS INTEGER)
+	CAST(CAST(Round((JulianDay([r].[FinishedOn]) - JulianDay([r].[StartedOn])) * 86400000) AS INTEGER) * 10000 / 10000000 % 60 AS INTEGER)
 FROM
 	[EventRow] [r]
 ORDER BY

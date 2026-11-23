@@ -90,7 +90,7 @@ DECLARE Ticks Int64
 SET     Ticks = 36002500000l
 
 SELECT
-	CAST(CAST(r.DueOn AS Timestamp) + DateTime::IntervalFromMicroseconds((Unwrap(CAST($Ticks AS Int64)) * -1l) / 10l) AS Timestamp) as c1
+	CAST(CAST(r.DueOn AS Timestamp) + DateTime::IntervalFromMicroseconds(Unwrap(CAST($Ticks AS Int64)) * -1l / 10l) AS Timestamp) as c1
 FROM
 	OptionalDueRow r
 WHERE
@@ -176,7 +176,7 @@ LIMIT 2
 
 -- YDB Ydb
 SELECT
-	CAST(CAST(r.DueOn AS Timestamp) + DateTime::IntervalFromMicroseconds((CAST(r.DueOn - r.StartedOn AS Int64) * 10l) / 10l) AS Timestamp) as c1
+	CAST(CAST(r.DueOn AS Timestamp) + DateTime::IntervalFromMicroseconds(CAST(r.DueOn - r.StartedOn AS Int64) * 10l / 10l) AS Timestamp) as c1
 FROM
 	OptionalDueRow r
 ORDER BY

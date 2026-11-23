@@ -17,5 +17,5 @@ SELECT
 FROM
 	[Orders] [o]
 WHERE
-	ROUND([o].[Freight] / 10, 1) = 6.5
+	ROUND(CAST([o].[Freight] AS Float) / 10, 1) = 6.5
 

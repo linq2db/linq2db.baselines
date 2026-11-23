@@ -7,7 +7,7 @@ SELECT
 FROM
 	[ConcatProduct] [p]
 WHERE
-	([p].[Sku] + Coalesce(@suffix, N'')) IN (N'A-100Щит', N'B-200Жук')
+	[p].[Sku] + Coalesce(@suffix, N'') IN (N'A-100Щит', N'B-200Жук')
 
 -- SqlServer.2012
 SELECT

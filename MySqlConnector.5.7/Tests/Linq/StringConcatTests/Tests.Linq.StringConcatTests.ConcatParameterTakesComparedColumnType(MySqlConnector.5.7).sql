@@ -7,7 +7,7 @@ SELECT
 FROM
 	`ConcatProduct` `p`
 WHERE
-	`p`.`Title` = (CONCAT(`p`.`Sku`, Coalesce(@suffix, '')))
+	`p`.`Title` = CONCAT(`p`.`Sku`, Coalesce(@suffix, ''))
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 SELECT

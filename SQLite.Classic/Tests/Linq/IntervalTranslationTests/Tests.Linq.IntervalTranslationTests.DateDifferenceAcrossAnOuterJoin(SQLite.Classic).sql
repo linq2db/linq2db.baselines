@@ -9,7 +9,7 @@ ORDER BY
 
 -- SQLite.Classic SQLite
 SELECT
-	CAST((CAST(Round((JulianDay([b].[FinishedOn]) - JulianDay([x].[StartedOn])) * 86400000) AS INTEGER) * 10000) / 864000000000 AS INTEGER)
+	CAST(CAST(Round((JulianDay([b].[FinishedOn]) - JulianDay([x].[StartedOn])) * 86400000) AS INTEGER) * 10000 / 864000000000 AS INTEGER)
 FROM
 	[OuterJoinLeft] [x]
 		LEFT JOIN [OuterJoinRight] [b] ON [b].[Id] = [x].[Id]
@@ -18,7 +18,7 @@ ORDER BY
 
 -- SQLite.Classic SQLite
 SELECT
-	CAST(((CAST(Round((JulianDay([b].[FinishedOn]) - JulianDay([x].[StartedOn])) * 86400000) AS INTEGER) * 10000) / 36000000000) % 24 AS INTEGER)
+	CAST(CAST(Round((JulianDay([b].[FinishedOn]) - JulianDay([x].[StartedOn])) * 86400000) AS INTEGER) * 10000 / 36000000000 % 24 AS INTEGER)
 FROM
 	[OuterJoinLeft] [x]
 		LEFT JOIN [OuterJoinRight] [b] ON [b].[Id] = [x].[Id]
@@ -27,7 +27,7 @@ ORDER BY
 
 -- SQLite.Classic SQLite
 SELECT
-	CAST(((CAST(Round((JulianDay([b].[FinishedOn]) - JulianDay([x].[StartedOn])) * 86400000) AS INTEGER) * 10000) / 600000000) % 60 AS INTEGER)
+	CAST(CAST(Round((JulianDay([b].[FinishedOn]) - JulianDay([x].[StartedOn])) * 86400000) AS INTEGER) * 10000 / 600000000 % 60 AS INTEGER)
 FROM
 	[OuterJoinLeft] [x]
 		LEFT JOIN [OuterJoinRight] [b] ON [b].[Id] = [x].[Id]
@@ -36,7 +36,7 @@ ORDER BY
 
 -- SQLite.Classic SQLite
 SELECT
-	CAST(((CAST(Round((JulianDay([x].[StartedOn]) - JulianDay([b].[FinishedOn])) * 86400000) AS INTEGER) * 10000) / 36000000000) % 24 AS INTEGER)
+	CAST(CAST(Round((JulianDay([x].[StartedOn]) - JulianDay([b].[FinishedOn])) * 86400000) AS INTEGER) * 10000 / 36000000000 % 24 AS INTEGER)
 FROM
 	[OuterJoinLeft] [x]
 		LEFT JOIN [OuterJoinRight] [b] ON [b].[Id] = [x].[Id]
@@ -71,7 +71,7 @@ FROM
 	[OuterJoinLeft] [x]
 		LEFT JOIN [OuterJoinRight] [b] ON [b].[Id] = [x].[Id]
 WHERE
-	CAST(((CAST(Round((JulianDay([b].[FinishedOn]) - JulianDay([x].[StartedOn])) * 86400000) AS INTEGER) * 10000) / 36000000000) % 24 AS INTEGER) = @Hours
+	CAST(CAST(Round((JulianDay([b].[FinishedOn]) - JulianDay([x].[StartedOn])) * 86400000) AS INTEGER) * 10000 / 36000000000 % 24 AS INTEGER) = @Hours
 
 -- SQLite.Classic SQLite
 DECLARE @Minutes Integer -- Int32
@@ -83,7 +83,7 @@ FROM
 	[OuterJoinLeft] [x]
 		LEFT JOIN [OuterJoinRight] [b] ON [b].[Id] = [x].[Id]
 WHERE
-	CAST(((CAST(Round((JulianDay([b].[FinishedOn]) - JulianDay([x].[StartedOn])) * 86400000) AS INTEGER) * 10000) / 600000000) % 60 AS INTEGER) = @Minutes
+	CAST(CAST(Round((JulianDay([b].[FinishedOn]) - JulianDay([x].[StartedOn])) * 86400000) AS INTEGER) * 10000 / 600000000 % 60 AS INTEGER) = @Minutes
 
 -- SQLite.Classic SQLite
 SELECT
@@ -104,5 +104,5 @@ FROM
 	[OuterJoinLeft] [x]
 		LEFT JOIN [OuterJoinRight] [b] ON [b].[Id] = [x].[Id]
 WHERE
-	CAST(((CAST(Round((JulianDay([x].[StartedOn]) - JulianDay([b].[FinishedOn])) * 86400000) AS INTEGER) * 10000) / 36000000000) % 24 AS INTEGER) = -@Hours
+	CAST(CAST(Round((JulianDay([x].[StartedOn]) - JulianDay([b].[FinishedOn])) * 86400000) AS INTEGER) * 10000 / 36000000000 % 24 AS INTEGER) = -@Hours
 

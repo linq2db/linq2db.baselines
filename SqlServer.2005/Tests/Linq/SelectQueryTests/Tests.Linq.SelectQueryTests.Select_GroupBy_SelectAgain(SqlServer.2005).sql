@@ -30,6 +30,6 @@ FROM
 					COUNT(*) > 5
 			) [t1]
 		WHERE
-			[t1].[RN] > @skip AND [t1].[RN] <= (@skip + @take)
+			[t1].[RN] > @skip AND [t1].[RN] <= @skip + @take
 	) [x]
 

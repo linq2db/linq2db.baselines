@@ -5,9 +5,9 @@ SET     suffix = 'Жук'u
 SELECT
 	t.Id as Id,
 	CASE
-		WHEN (Coalesce(t.VarCharColumn, ''u) || Coalesce($suffix, ''u)) > t.NVarCharColumn OR t.NVarCharColumn IS NULL
+		WHEN Coalesce(t.VarCharColumn, ''u) || Coalesce($suffix, ''u) > t.NVarCharColumn OR t.NVarCharColumn IS NULL
 			THEN 1
-		WHEN (Coalesce(t.VarCharColumn, ''u) || Coalesce($suffix, ''u)) = t.NVarCharColumn
+		WHEN Coalesce(t.VarCharColumn, ''u) || Coalesce($suffix, ''u) = t.NVarCharColumn
 			THEN 0
 		ELSE -1
 	END as Compared,
@@ -34,7 +34,7 @@ SELECT
 FROM
 	StringTypesTable t
 WHERE
-	(Coalesce(t.VarCharColumn, ''u) || Coalesce($suffix, ''u)) NOT LIKE '%?%'u
+	Coalesce(t.VarCharColumn, ''u) || Coalesce($suffix, ''u) NOT LIKE '%?%'u
 ORDER BY
 	t.Id
 

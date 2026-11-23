@@ -26,7 +26,7 @@ SELECT
 	toInt64(toInt64(r.InSeconds * toInt64(10000000) + r.InTicks) + r.InSeconds * toInt64(10000000)),
 	toInt64(negate(r.InSeconds) * toInt64(10000000) + r.InTicks),
 	toInt64(r.InSeconds * toInt64(10000000) + r.InTicks),
-	toInt64(r.InSeconds * toInt64(10000000) + r.InTicks) + r.InTicks + r.InTicks,
+	toInt64(r.InSeconds * toInt64(10000000) + r.InTicks) + (r.InTicks + r.InTicks),
 	toInt64(toInt64(r.InSeconds + r.InSeconds) * toInt64(10000000) + r.InTicks) - (r.InTicks + r.InTicks),
 	toInt64(negate(r.InSeconds) * toInt64(10000000) - r.InTicks)
 FROM

@@ -48,12 +48,12 @@ SELECT
 FROM
 	"ClosedPeriodRow" "r"
 WHERE
-	CAST(MOD(Nano100_Between("r"."OpenedOn", "r"."ClosedOnNullable") / 36000000000, 24) AS Integer) > 0
+	CAST(MOD(CAST(Nano100_Between("r"."OpenedOn", "r"."ClosedOnNullable") / 36000000000 AS BigInt), 24) AS Integer) > 0
 
 -- SapHana.Native SapHana
 SELECT
 	CAST(Nano100_Between("r"."OpenedOn", "r"."ClosedOnNullable") / 864000000000 AS Integer),
-	CAST(MOD(Nano100_Between("r"."OpenedOn", "r"."ClosedOnNullable") / 36000000000, 24) AS Integer)
+	CAST(MOD(CAST(Nano100_Between("r"."OpenedOn", "r"."ClosedOnNullable") / 36000000000 AS BigInt), 24) AS Integer)
 FROM
 	"ClosedPeriodRow" "r"
 ORDER BY

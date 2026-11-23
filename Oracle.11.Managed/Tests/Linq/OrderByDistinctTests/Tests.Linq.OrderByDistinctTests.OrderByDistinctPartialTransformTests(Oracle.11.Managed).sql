@@ -24,7 +24,7 @@ FROM
 					x."OrderData2" DESC
 			) t1
 		WHERE
-			ROWNUM <= (:skip + :take)
+			ROWNUM <= :skip + :take
 	) t2
 WHERE
 	t2.RN > :skip

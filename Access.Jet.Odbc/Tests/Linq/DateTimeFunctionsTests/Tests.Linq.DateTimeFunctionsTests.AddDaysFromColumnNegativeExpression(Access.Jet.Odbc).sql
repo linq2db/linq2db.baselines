@@ -50,7 +50,7 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[ID] = 5000 AND DateAdd('d', ([t].[SmallIntValue] + ?) - ?, [t].[DateTimeValue]) < DateSerial(2018, 1, 2)
+	[t].[ID] = 5000 AND DateAdd('d', [t].[SmallIntValue] + ? - ?, [t].[DateTimeValue]) < DateSerial(2018, 1, 2)
 
 -- Access.Jet.Odbc AccessODBC
 DELETE FROM

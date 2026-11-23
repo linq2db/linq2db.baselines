@@ -7,7 +7,7 @@ SELECT
 FROM
 	"ConcatProduct" p
 WHERE
-	(p."Sku" || p."Title") = :key
+	p."Sku" || p."Title" = :key
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT

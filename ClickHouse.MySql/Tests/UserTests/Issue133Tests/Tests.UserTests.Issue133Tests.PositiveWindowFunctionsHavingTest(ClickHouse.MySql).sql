@@ -1,6 +1,6 @@
 ﻿-- ClickHouse.MySql ClickHouse
 SELECT
-	(toFloat64(g_2.CountPercents) * toFloat64(100)) / SUM(g_2.CountPercents) OVER (),
+	toFloat64(g_2.CountPercents) * toFloat64(100) / SUM(g_2.CountPercents) OVER (),
 	g_2.Sum_1
 FROM
 	(

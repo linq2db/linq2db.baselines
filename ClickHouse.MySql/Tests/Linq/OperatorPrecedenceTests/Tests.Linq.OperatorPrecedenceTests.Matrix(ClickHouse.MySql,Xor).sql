@@ -1,0 +1,87 @@
+﻿-- ClickHouse.MySql ClickHouse
+SELECT
+	bitXor(r.A + r.B, r.C),
+	bitXor(r.A, r.B + r.C),
+	bitXor(r.A + r.B, r.C),
+	bitXor(r.A, r.B + r.C),
+	bitXor(r.A - r.B, r.C),
+	bitXor(r.A - r.B, r.C),
+	bitXor(r.A * r.B, r.C),
+	bitXor(r.A, r.B * r.C),
+	bitXor(r.A * r.B, r.C),
+	bitXor(r.A, r.B * r.C),
+	bitXor(intDiv(r.A, r.B), r.C),
+	bitXor(r.A, intDiv(r.B, r.C)),
+	bitXor(intDiv(r.A, r.B), r.C),
+	bitXor(r.A, intDiv(r.B, r.C)),
+	bitXor(r.A % r.B, r.C),
+	bitXor(r.A, r.B % r.C),
+	bitXor(r.A % r.B, r.C),
+	bitXor(r.A, r.B % r.C),
+	bitXor(bitAnd(r.A, r.B), r.C),
+	bitXor(r.A, bitAnd(r.B, r.C)),
+	bitXor(bitAnd(r.A, r.B), r.C),
+	bitXor(r.A, bitAnd(r.B, r.C)),
+	bitXor(bitOr(r.A, r.B), r.C),
+	bitXor(r.A, bitOr(r.B, r.C)),
+	bitXor(bitOr(r.A, r.B), r.C),
+	bitXor(r.A, bitOr(r.B, r.C)),
+	bitXor(r.A + r.B, r.C),
+	bitXor(r.A, r.B + r.C),
+	bitXor(r.A + -6, r.C),
+	bitXor(r.A - r.B, r.C),
+	bitXor(r.A, r.B - r.C),
+	bitXor(r.A - -6, r.C),
+	bitXor(r.A * r.B, r.C),
+	bitXor(r.A, r.B * r.C),
+	bitXor(r.A * -6, r.C),
+	bitXor(r.A + r.B, r.C),
+	bitXor(r.A, r.B + r.C),
+	bitXor(r.A + -6, r.C),
+	bitXor(r.A, negate(r.B)),
+	bitXor(negate(r.B), r.C),
+	bitXor(r.A + negate(r.B), r.C),
+	bitXor(r.A - negate(r.B), r.C),
+	bitXor(r.A * negate(r.B), r.C),
+	bitXor(intDiv(r.A, negate(r.B)), r.C),
+	bitXor(r.A % negate(r.B), r.C),
+	bitXor(bitAnd(r.A, negate(r.B)), r.C),
+	bitXor(bitOr(r.A, negate(r.B)), r.C),
+	bitXor(bitXor(r.A, negate(r.B)), r.C),
+	bitXor(r.A, bitNot(r.B)),
+	bitXor(r.A + bitNot(r.B), r.C),
+	bitXor(r.A - bitNot(r.B), r.C),
+	bitXor(r.A * bitNot(r.B), r.C),
+	bitXor(r.A % bitNot(r.B), r.C),
+	bitXor(bitAnd(r.A, bitNot(r.B)), r.C),
+	bitXor(bitOr(r.A, bitNot(r.B)), r.C),
+	bitXor(r.A, -5),
+	bitXor(-5, r.C),
+	bitXor(r.A + -5, r.C),
+	bitXor(r.A - -5, r.C),
+	bitXor(r.A * -5, r.C),
+	bitXor(r.A % -5, r.C),
+	bitXor(bitAnd(r.A, -5), r.C),
+	bitXor(bitOr(r.A, -5), r.C),
+	bitXor(bitXor(r.A, -5), r.C)
+FROM
+	PrecedenceRow r
+ORDER BY
+	r.Id
+
+-- ClickHouse.MySql ClickHouse
+SELECT
+	bitXor(r.A, -5),
+	bitXor(-5, r.C),
+	bitXor(r.A + -5, r.C),
+	bitXor(r.A - -5, r.C),
+	bitXor(r.A * -5, r.C),
+	bitXor(r.A % -5, r.C),
+	bitXor(bitAnd(r.A, -5), r.C),
+	bitXor(bitOr(r.A, -5), r.C),
+	bitXor(bitXor(r.A, -5), r.C)
+FROM
+	PrecedenceRow r
+ORDER BY
+	r.Id
+

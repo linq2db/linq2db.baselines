@@ -80,7 +80,7 @@ SELECT
 FROM
 	(
 		SELECT
-			CAST(Floor(Extract(Day From (CAST(g_1."FinishedOn" AS timestamp) - CAST(g_1."StartedOn" AS timestamp)))) AS Number(19)) * 864000000000 + CAST(Floor(Extract(Hour From (CAST(g_1."FinishedOn" AS timestamp) - CAST(g_1."StartedOn" AS timestamp)))) AS Number(19)) * 36000000000 + CAST(Floor(Extract(Minute From (CAST(g_1."FinishedOn" AS timestamp) - CAST(g_1."StartedOn" AS timestamp)))) AS Number(19)) * 600000000 + CAST(Floor(Round(Extract(Second From (CAST(g_1."FinishedOn" AS timestamp) - CAST(g_1."StartedOn" AS timestamp))) * 10000000D)) AS Number(19)) as "Key_1"
+			CAST(Floor(Extract(Day From (CAST(g_1."FinishedOn" AS timestamp) - CAST(g_1."StartedOn" AS timestamp)))) AS Number(19)) * 864000000000 + (CAST(Floor(Extract(Hour From (CAST(g_1."FinishedOn" AS timestamp) - CAST(g_1."StartedOn" AS timestamp)))) AS Number(19)) * 36000000000 + (CAST(Floor(Extract(Minute From (CAST(g_1."FinishedOn" AS timestamp) - CAST(g_1."StartedOn" AS timestamp)))) AS Number(19)) * 600000000 + CAST(Floor(Round(Extract(Second From (CAST(g_1."FinishedOn" AS timestamp) - CAST(g_1."StartedOn" AS timestamp))) * 10000000D)) AS Number(19)))) as "Key_1"
 		FROM
 			"BudgetedTaskRow" g_1
 	) t1

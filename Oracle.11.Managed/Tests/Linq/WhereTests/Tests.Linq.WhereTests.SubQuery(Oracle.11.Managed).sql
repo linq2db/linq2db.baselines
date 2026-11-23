@@ -1,6 +1,6 @@
 ﻿-- Oracle.11.Managed Oracle11
 SELECT
-	(t."ParentID" * 1000) / 1000
+	Trunc(t."ParentID" * 1000 / 1000)
 FROM
 	"Child" t
 WHERE

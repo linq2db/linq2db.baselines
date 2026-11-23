@@ -1,0 +1,85 @@
+﻿-- PostgreSQL.9.3 PostgreSQL
+SELECT
+	(r."A" + r."B") * r."C",
+	r."A" * (r."B" + r."C"),
+	(r."A" + r."B") * r."C",
+	r."A" * (r."B" + r."C"),
+	(r."A" - r."B") * r."C",
+	r."A" * (r."B" - r."C"),
+	(r."A" - r."B") * r."C",
+	r."A" * (r."B" - r."C"),
+	r."A" / r."B" * r."C",
+	r."A" / r."B" * r."C",
+	(r."A" & r."B") * r."C",
+	r."A" * (r."B" & r."C"),
+	(r."A" & r."B") * r."C",
+	r."A" * (r."B" & r."C"),
+	(r."A" | r."B") * r."C",
+	r."A" * (r."B" | r."C"),
+	(r."A" | r."B") * r."C",
+	r."A" * (r."B" | r."C"),
+	(r."A" # r."B") * r."C",
+	r."A" * (r."B" # r."C"),
+	(r."A" # r."B") * r."C",
+	r."A" * (r."B" # r."C"),
+	(r."A" + r."B") * r."C",
+	r."A" * (r."B" + r."C"),
+	(r."A" + -6) * r."C",
+	(r."A" - r."B") * r."C",
+	r."A" * (r."B" - r."C"),
+	(r."A" - -6) * r."C",
+	(r."A" * r."B") * r."C",
+	r."A" * (r."B" * r."C"),
+	(r."A" * -6) * r."C",
+	(r."A" / r."B") * r."C",
+	r."A" * (r."B" / r."C"),
+	(r."A" / -6) * r."C",
+	(r."A" + r."B") * r."C",
+	r."A" * (r."B" + r."C"),
+	(r."A" + -6) * r."C",
+	r."A" * -r."B",
+	(r."A" - r."B") * r."C",
+	(r."A" + r."B") * r."C",
+	r."A" / -r."B" * r."C",
+	(r."A" & -r."B") * r."C",
+	(r."A" | -r."B") * r."C",
+	(r."A" # -r."B") * r."C",
+	r."A" * ~r."B",
+	(~r."B") * r."C",
+	(r."A" + ~r."B") * r."C",
+	(r."A" - ~r."B") * r."C",
+	(r."A" * ~r."B") * r."C",
+	Floor(r."A"::decimal % ~r."B")::Int * r."C",
+	(r."A" & ~r."B") * r."C",
+	(r."A" | ~r."B") * r."C",
+	(r."A" # ~r."B") * r."C",
+	r."A" * -5,
+	-5 * r."C",
+	(r."A" + -5) * r."C",
+	(r."A" - -5) * r."C",
+	r."A" * -5 * r."C",
+	Floor(r."A"::decimal % -5)::Int * r."C",
+	(r."A" & -5) * r."C",
+	(r."A" | -5) * r."C",
+	(r."A" # -5) * r."C"
+FROM
+	"PrecedenceRow" r
+ORDER BY
+	r."Id"
+
+-- PostgreSQL.9.3 PostgreSQL
+SELECT
+	r."A" * -5,
+	-5 * r."C",
+	(r."A" + -5) * r."C",
+	(r."A" - -5) * r."C",
+	r."A" * -5 * r."C",
+	Floor(r."A"::decimal % -5)::Int * r."C",
+	(r."A" & -5) * r."C",
+	(r."A" | -5) * r."C",
+	(r."A" # -5) * r."C"
+FROM
+	"PrecedenceRow" r
+ORDER BY
+	r."Id"
+

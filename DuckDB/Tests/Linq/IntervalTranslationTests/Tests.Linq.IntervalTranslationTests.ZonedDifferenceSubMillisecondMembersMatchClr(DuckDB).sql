@@ -29,8 +29,8 @@ LIMIT 2
 
 -- DuckDB
 SELECT
-	CAST(((Date_Diff('microsecond', r.StartedOn, r.FinishedOn) * 10) // 10) % 1000 AS INTEGER),
-	CAST(((Date_Diff('microsecond', r.StartedOn, r.FinishedOn) * 10) % 10) * 100 AS INTEGER),
+	CAST(Date_Diff('microsecond', r.StartedOn, r.FinishedOn) * 10 // 10 % 1000 AS INTEGER),
+	CAST(Date_Diff('microsecond', r.StartedOn, r.FinishedOn) * 10 % 10 * 100 AS INTEGER),
 	CAST(Date_Diff('microsecond', r.StartedOn, r.FinishedOn) * 10 AS DOUBLE) / 10,
 	CAST(Date_Diff('microsecond', r.StartedOn, r.FinishedOn) * 10 AS DOUBLE) * 100
 FROM

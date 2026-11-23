@@ -54,7 +54,7 @@ SELECT
 	`r`.`Guid`,
 	`lc`.`Count`,
 	CASE
-		WHEN `lc`.`Count` IS NOT NULL THEN (CAST(`lc`.`Count` AS DECIMAL(29, 10)) / `r`.`Sold`) * 100
+		WHEN `lc`.`Count` IS NOT NULL THEN CAST(`lc`.`Count` AS DECIMAL(29, 10)) / `r`.`Sold` * 100
 		ELSE NULL
 	END
 FROM

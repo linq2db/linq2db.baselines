@@ -1,6 +1,6 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
-	([g_2].[CountPercents] * 100) / SUM([g_2].[CountPercents]) OVER (),
+	[g_2].[CountPercents] * 100 / SUM([g_2].[CountPercents]) OVER (),
 	[g_2].[Sum_1]
 FROM
 	(
