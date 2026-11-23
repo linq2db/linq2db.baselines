@@ -51,11 +51,20 @@ SELECT
 		ELSE 0
 	END,
 	CASE
+		WHEN `r`.`C` BETWEEN `r`.`A` - `r`.`B` AND `r`.`A` THEN 1
+		ELSE 0
+	END,
+	CASE
 		WHEN ~`r`.`N` IS NULL THEN 1
 		ELSE 0
 	END,
 	CASE
 		WHEN `r`.`A` + CAST(~`r`.`B` AS SIGNED) BETWEEN `r`.`C` AND `r`.`A`
+			THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN `r`.`C` BETWEEN `r`.`A` + CAST(~`r`.`B` AS SIGNED) AND `r`.`A`
 			THEN 1
 		ELSE 0
 	END,
@@ -110,11 +119,20 @@ SELECT
 		ELSE 0
 	END,
 	CASE
+		WHEN `r`.`C` BETWEEN `r`.`A` + `r`.`B` AND `r`.`A` THEN 1
+		ELSE 0
+	END,
+	CASE
 		WHEN ~`r`.`N` IS NULL THEN 1
 		ELSE 0
 	END,
 	CASE
 		WHEN `r`.`A` - CAST(~`r`.`B` AS SIGNED) BETWEEN `r`.`C` AND `r`.`A`
+			THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN `r`.`C` BETWEEN `r`.`A` - CAST(~`r`.`B` AS SIGNED) AND `r`.`A`
 			THEN 1
 		ELSE 0
 	END,
@@ -169,11 +187,20 @@ SELECT
 		ELSE 0
 	END,
 	CASE
+		WHEN `r`.`C` BETWEEN `r`.`A` * -`r`.`B` AND `r`.`A` THEN 1
+		ELSE 0
+	END,
+	CASE
 		WHEN ~`r`.`N` IS NULL THEN 1
 		ELSE 0
 	END,
 	CASE
 		WHEN `r`.`A` * CAST(~`r`.`B` AS SIGNED) BETWEEN `r`.`C` AND `r`.`A`
+			THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN `r`.`C` BETWEEN `r`.`A` * CAST(~`r`.`B` AS SIGNED) AND `r`.`A`
 			THEN 1
 		ELSE 0
 	END,
@@ -226,6 +253,10 @@ SELECT
 	END,
 	CASE
 		WHEN `r`.`A` DIV -`r`.`B` BETWEEN `r`.`C` AND `r`.`A` THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN `r`.`C` BETWEEN `r`.`A` DIV -`r`.`B` AND `r`.`A` THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -283,11 +314,20 @@ SELECT
 		ELSE 0
 	END,
 	CASE
+		WHEN `r`.`C` BETWEEN `r`.`A` % -`r`.`B` AND `r`.`A` THEN 1
+		ELSE 0
+	END,
+	CASE
 		WHEN ~`r`.`N` IS NULL THEN 1
 		ELSE 0
 	END,
 	CASE
 		WHEN `r`.`A` % CAST(~`r`.`B` AS SIGNED) BETWEEN `r`.`C` AND `r`.`A`
+			THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN `r`.`C` BETWEEN `r`.`A` % CAST(~`r`.`B` AS SIGNED) AND `r`.`A`
 			THEN 1
 		ELSE 0
 	END,
@@ -346,11 +386,21 @@ SELECT
 		ELSE 0
 	END,
 	CASE
+		WHEN `r`.`C` BETWEEN CAST(`r`.`A` & -`r`.`B` AS SIGNED) AND `r`.`A`
+			THEN 1
+		ELSE 0
+	END,
+	CASE
 		WHEN ~`r`.`N` IS NULL THEN 1
 		ELSE 0
 	END,
 	CASE
 		WHEN CAST(`r`.`A` & CAST(~`r`.`B` AS SIGNED) AS SIGNED) BETWEEN `r`.`C` AND `r`.`A`
+			THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN `r`.`C` BETWEEN CAST(`r`.`A` & CAST(~`r`.`B` AS SIGNED) AS SIGNED) AND `r`.`A`
 			THEN 1
 		ELSE 0
 	END,
@@ -409,11 +459,21 @@ SELECT
 		ELSE 0
 	END,
 	CASE
+		WHEN `r`.`C` BETWEEN CAST(`r`.`A` | -`r`.`B` AS SIGNED) AND `r`.`A`
+			THEN 1
+		ELSE 0
+	END,
+	CASE
 		WHEN `r`.`A` | CAST(~`r`.`N` AS SIGNED) IS NULL THEN 1
 		ELSE 0
 	END,
 	CASE
 		WHEN CAST(`r`.`A` | CAST(~`r`.`B` AS SIGNED) AS SIGNED) BETWEEN `r`.`C` AND `r`.`A`
+			THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN `r`.`C` BETWEEN CAST(`r`.`A` | CAST(~`r`.`B` AS SIGNED) AS SIGNED) AND `r`.`A`
 			THEN 1
 		ELSE 0
 	END,
@@ -472,11 +532,21 @@ SELECT
 		ELSE 0
 	END,
 	CASE
+		WHEN `r`.`C` BETWEEN CAST(`r`.`A` ^ -`r`.`B` AS SIGNED) AND `r`.`A`
+			THEN 1
+		ELSE 0
+	END,
+	CASE
 		WHEN `r`.`A` ^ CAST(~`r`.`N` AS SIGNED) IS NULL THEN 1
 		ELSE 0
 	END,
 	CASE
 		WHEN CAST(`r`.`A` ^ CAST(~`r`.`B` AS SIGNED) AS SIGNED) BETWEEN `r`.`C` AND `r`.`A`
+			THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN `r`.`C` BETWEEN CAST(`r`.`A` ^ CAST(~`r`.`B` AS SIGNED) AS SIGNED) AND `r`.`A`
 			THEN 1
 		ELSE 0
 	END,
