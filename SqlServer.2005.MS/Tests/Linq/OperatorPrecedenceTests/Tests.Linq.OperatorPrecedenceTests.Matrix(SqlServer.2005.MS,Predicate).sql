@@ -57,6 +57,22 @@ SELECT
 		ELSE 0
 	END,
 	CASE
+		WHEN -[r].[N] IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN [r].[A] - [r].[B] BETWEEN [r].[C] AND [r].[A] THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN ~[r].[N] IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN [r].[A] + ~[r].[B] BETWEEN [r].[C] AND [r].[A] THEN 1
+		ELSE 0
+	END,
+	CASE
 		WHEN [r].[A] - [r].[B] = [r].[C] THEN 1
 		ELSE 0
 	END,
@@ -110,6 +126,22 @@ SELECT
 				[r].[A] - [r].[B]
 		)
 			THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN -[r].[N] IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN [r].[A] + [r].[B] BETWEEN [r].[C] AND [r].[A] THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN ~[r].[N] IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN [r].[A] - ~[r].[B] BETWEEN [r].[C] AND [r].[A] THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -169,6 +201,22 @@ SELECT
 		ELSE 0
 	END,
 	CASE
+		WHEN -[r].[N] IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN [r].[A] * -[r].[B] BETWEEN [r].[C] AND [r].[A] THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN ~[r].[N] IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN [r].[A] * ~[r].[B] BETWEEN [r].[C] AND [r].[A] THEN 1
+		ELSE 0
+	END,
+	CASE
 		WHEN [r].[A] / [r].[B] = [r].[C] THEN 1
 		ELSE 0
 	END,
@@ -222,6 +270,18 @@ SELECT
 				[r].[A] / [r].[B]
 		)
 			THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN -[r].[N] IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN [r].[A] / -[r].[B] BETWEEN [r].[C] AND [r].[A] THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN ~[r].[N] IS NULL THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -281,6 +341,22 @@ SELECT
 		ELSE 0
 	END,
 	CASE
+		WHEN -[r].[N] IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN [r].[A] % -[r].[B] BETWEEN [r].[C] AND [r].[A] THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN ~[r].[N] IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN [r].[A] % ~[r].[B] BETWEEN [r].[C] AND [r].[A] THEN 1
+		ELSE 0
+	END,
+	CASE
 		WHEN [r].[A] & [r].[B] = [r].[C] THEN 1
 		ELSE 0
 	END,
@@ -334,6 +410,22 @@ SELECT
 				[r].[A] & [r].[B]
 		)
 			THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN -[r].[N] IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN [r].[A] & -[r].[B] BETWEEN [r].[C] AND [r].[A] THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN ~[r].[N] IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN [r].[A] & ~[r].[B] BETWEEN [r].[C] AND [r].[A] THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -393,6 +485,22 @@ SELECT
 		ELSE 0
 	END,
 	CASE
+		WHEN [r].[A] | -[r].[N] IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN [r].[A] | -[r].[B] BETWEEN [r].[C] AND [r].[A] THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN [r].[A] | ~[r].[N] IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN [r].[A] | ~[r].[B] BETWEEN [r].[C] AND [r].[A] THEN 1
+		ELSE 0
+	END,
+	CASE
 		WHEN [r].[A] ^ [r].[B] = [r].[C] THEN 1
 		ELSE 0
 	END,
@@ -448,6 +556,30 @@ SELECT
 			THEN 1
 		ELSE 0
 	END,
+	CASE
+		WHEN [r].[A] ^ -[r].[N] IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN [r].[A] ^ -[r].[B] BETWEEN [r].[C] AND [r].[A] THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN [r].[A] ^ ~[r].[N] IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN [r].[A] ^ ~[r].[B] BETWEEN [r].[C] AND [r].[A] THEN 1
+		ELSE 0
+	END,
+	[r].[A] * -[r].[B] + [r].[C],
+	[r].[A] * ~[r].[B] + [r].[C],
+	[r].[A] * -[r].[B] - [r].[C],
+	[r].[A] * ~[r].[B] - [r].[C],
+	([r].[A] * -[r].[B]) * [r].[C],
+	([r].[A] * ~[r].[B]) * [r].[C],
+	[r].[A] * -[r].[B] + [r].[C],
+	[r].[A] * ~[r].[B] + [r].[C],
 	CASE
 		WHEN -[r].[A] = [r].[C] THEN 1
 		ELSE 0
