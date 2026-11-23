@@ -21,7 +21,7 @@ FROM
 
 -- SqlServer.2017.MS SqlServer.2017
 SELECT
-	([p].[ID] * (-7) - 1) / 2
+	([p].[ID] * -7 - 1) / 2
 FROM
 	[LinqDataTypes] [p]
 ORDER BY

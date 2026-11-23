@@ -2,7 +2,7 @@
 UPDATE
 	[Issue4963Table]
 SET
-	[Field] = CAST(CAST([Issue4963Table].[Field] AS Int) + (-1) AS TinyInt)
+	[Field] = CAST(CAST([Issue4963Table].[Field] AS Int) + -1 AS TinyInt)
 
 -- SqlServer.2019.MS SqlServer.2019
 SELECT TOP (2)
