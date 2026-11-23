@@ -41,9 +41,9 @@ SELECT
 	([r].[A] - [r].[B]) * [r].[C],
 	([r].[A] + [r].[B]) * [r].[C],
 	Fix([r].[A] / -[r].[B]) * [r].[C],
-	([r].[A] BAND -[r].[B]) * [r].[C],
-	([r].[A] BOR -[r].[B]) * [r].[C],
-	([r].[A] BXOR -[r].[B]) * [r].[C],
+	([r].[A] BAND (-[r].[B])) * [r].[C],
+	([r].[A] BOR (-[r].[B])) * [r].[C],
+	([r].[A] BXOR (-[r].[B])) * [r].[C],
 	[r].[A] * (-1 - [r].[B]),
 	(-1 - [r].[B]) * [r].[C],
 	([r].[A] + (-1 - [r].[B])) * [r].[C],
@@ -59,9 +59,9 @@ SELECT
 	([r].[A] - -5) * [r].[C],
 	[r].[A] * -5 * [r].[C],
 	([r].[A] MOD -5) * [r].[C],
-	([r].[A] BAND -5) * [r].[C],
-	([r].[A] BOR -5) * [r].[C],
-	([r].[A] BXOR -5) * [r].[C]
+	([r].[A] BAND (-5)) * [r].[C],
+	([r].[A] BOR (-5)) * [r].[C],
+	([r].[A] BXOR (-5)) * [r].[C]
 FROM
 	[PrecedenceRow] [r]
 ORDER BY
@@ -75,9 +75,9 @@ SELECT
 	([r].[A] - -5) * [r].[C],
 	[r].[A] * -5 * [r].[C],
 	([r].[A] MOD -5) * [r].[C],
-	([r].[A] BAND -5) * [r].[C],
-	([r].[A] BOR -5) * [r].[C],
-	([r].[A] BXOR -5) * [r].[C]
+	([r].[A] BAND (-5)) * [r].[C],
+	([r].[A] BOR (-5)) * [r].[C],
+	([r].[A] BXOR (-5)) * [r].[C]
 FROM
 	[PrecedenceRow] [r]
 ORDER BY
