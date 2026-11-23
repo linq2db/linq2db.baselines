@@ -4,7 +4,7 @@ SELECT
 FROM
 	"FeatureTable" r
 WHERE
-	((r."One" = r."One") = (1=null))
+	(r."One" = r."One") = (1=null)
 
 -- PostgreSQL.11 PostgreSQL
 SELECT
@@ -12,7 +12,7 @@ SELECT
 FROM
 	"FeatureTable" r
 WHERE
-	((r."Zero" = r."Zero") = (1=null))
+	(r."Zero" = r."Zero") = (1=null)
 
 -- PostgreSQL.11 PostgreSQL
 SELECT
@@ -20,7 +20,7 @@ SELECT
 FROM
 	"FeatureTable" r
 WHERE
-	((r."Null" = r."Null") = (1=null))
+	(r."Null" = r."Null") = (1=null)
 
 -- PostgreSQL.11 PostgreSQL
 SELECT
@@ -28,7 +28,7 @@ SELECT
 FROM
 	"FeatureTable" r
 WHERE
-	((r."One" = r."Zero") = (1=null))
+	(r."One" = r."Zero") = (1=null)
 
 -- PostgreSQL.11 PostgreSQL
 SELECT
@@ -36,7 +36,7 @@ SELECT
 FROM
 	"FeatureTable" r
 WHERE
-	((r."One" = r."Null") = (1=null))
+	(r."One" = r."Null") = (1=null)
 
 -- PostgreSQL.11 PostgreSQL
 SELECT
@@ -44,7 +44,7 @@ SELECT
 FROM
 	"FeatureTable" r
 WHERE
-	((r."Zero" = r."Null") = (1=null))
+	(r."Zero" = r."Null") = (1=null)
 
 -- PostgreSQL.11 PostgreSQL
 SELECT
@@ -52,7 +52,7 @@ SELECT
 FROM
 	"FeatureTable" r
 WHERE
-	((r."One" = r."One") <> (1=null))
+	(r."One" = r."One") <> (1=null)
 
 -- PostgreSQL.11 PostgreSQL
 SELECT
@@ -60,7 +60,7 @@ SELECT
 FROM
 	"FeatureTable" r
 WHERE
-	((r."Zero" = r."Zero") <> (1=null))
+	(r."Zero" = r."Zero") <> (1=null)
 
 -- PostgreSQL.11 PostgreSQL
 SELECT
@@ -68,7 +68,7 @@ SELECT
 FROM
 	"FeatureTable" r
 WHERE
-	((r."Null" = r."Null") <> (1=null))
+	(r."Null" = r."Null") <> (1=null)
 
 -- PostgreSQL.11 PostgreSQL
 SELECT
@@ -76,7 +76,7 @@ SELECT
 FROM
 	"FeatureTable" r
 WHERE
-	((r."One" = r."Zero") <> (1=null))
+	(r."One" = r."Zero") <> (1=null)
 
 -- PostgreSQL.11 PostgreSQL
 SELECT
@@ -84,7 +84,7 @@ SELECT
 FROM
 	"FeatureTable" r
 WHERE
-	((r."One" = r."Null") <> (1=null))
+	(r."One" = r."Null") <> (1=null)
 
 -- PostgreSQL.11 PostgreSQL
 SELECT
@@ -92,5 +92,5 @@ SELECT
 FROM
 	"FeatureTable" r
 WHERE
-	((r."Zero" = r."Null") <> (1=null))
+	(r."Zero" = r."Null") <> (1=null)
 

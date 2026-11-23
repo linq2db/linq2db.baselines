@@ -17,5 +17,5 @@ SELECT
 FROM
 	"AllTypesValueTable" t
 WHERE
-	(t."FloatValue" = ANY(:arr))
+	t."FloatValue" = ANY(:arr)
 

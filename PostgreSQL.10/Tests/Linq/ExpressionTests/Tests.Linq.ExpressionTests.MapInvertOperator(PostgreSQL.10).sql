@@ -7,7 +7,7 @@ SET     @removeMask = 12
 UPDATE
 	"WarehouseTableDto"
 SET
-	"Value" = "WarehouseTableDto"."Value" | :addMask & (~:removeMask)
+	"Value" = "WarehouseTableDto"."Value" | :addMask & ~:removeMask
 
 -- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
 SELECT
