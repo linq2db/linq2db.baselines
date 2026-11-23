@@ -28,7 +28,7 @@ FROM
 						FROM
 							"Order" "x"
 						WHERE
-							("x"."Name" STARTING WITH 'cat')
+							"x"."Name" STARTING WITH 'cat'
 						ORDER BY
 							"x"."Id"
 					) "t1"
@@ -58,7 +58,7 @@ FROM
 				FROM
 					"Order" "x"
 				WHERE
-					("x"."Name" STARTING WITH 'cat')
+					"x"."Name" STARTING WITH 'cat'
 				ORDER BY
 					"x"."Id"
 			) "t1"
@@ -77,7 +77,7 @@ SELECT FIRST @take SKIP @skip
 FROM
 	"Order" "x"
 WHERE
-	("x"."Name" STARTING WITH 'cat')
+	"x"."Name" STARTING WITH 'cat'
 ORDER BY
 	"x"."Id"
 

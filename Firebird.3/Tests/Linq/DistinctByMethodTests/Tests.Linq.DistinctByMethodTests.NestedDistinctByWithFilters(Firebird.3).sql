@@ -23,7 +23,7 @@ FROM
 				FROM
 					"NullableKeyData" "e"
 				WHERE
-					("e"."CustomerId" STARTING WITH 'DST')
+					"e"."CustomerId" STARTING WITH 'DST'
 			) "e_1"
 		WHERE
 			"e_1"."RowNumber" = 1 AND "e_1"."Id" < 100

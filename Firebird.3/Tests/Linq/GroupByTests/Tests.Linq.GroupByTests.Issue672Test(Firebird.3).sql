@@ -74,7 +74,7 @@ FROM
 		FROM
 			"Stone" "sG"
 		WHERE
-			"sG"."Enabled" = TRUE AND ("sG"."Name" NOT STARTING WITH 'level - ') AND
+			"sG"."Enabled" = TRUE AND "sG"."Name" NOT STARTING WITH 'level - ' AND
 			CHAR_LENGTH("sG"."ImageFullUrl") > 0
 	) "sG_1"
 		INNER JOIN (
@@ -87,7 +87,7 @@ FROM
 			FROM
 				"Stone" "s"
 			WHERE
-				"s"."Enabled" = TRUE AND ("s"."Name" NOT STARTING WITH 'level - ') AND
+				"s"."Enabled" = TRUE AND "s"."Name" NOT STARTING WITH 'level - ' AND
 				CHAR_LENGTH("s"."ImageFullUrl") > 0
 		) "t1" ON "sG_1"."Key_1" = "t1"."Name" AND "t1"."rn" = 1
 

@@ -145,7 +145,7 @@ FROM
 		INNER JOIN T3 "w" ON "idx"."IndexId" = "w"."IndexId"
 		INNER JOIN T1 "ins" ON "w"."InstrumentId" = "ins"."InstrumentId"
 WHERE
-	("t4"."InstrumentCode" STARTING WITH 'aaa') AND "t4"."CreateDate" <= @uptoDate AND
+	"t4"."InstrumentCode" STARTING WITH 'aaa' AND "t4"."CreateDate" <= @uptoDate AND
 	"ins"."SourceInstrumentCode" IS NOT NULL
 ORDER BY
 	"ins"."SourceInstrumentCode"

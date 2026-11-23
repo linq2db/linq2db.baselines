@@ -8,5 +8,5 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	("p"."FirstName" STARTING WITH 'Jo')
+	"p"."FirstName" STARTING WITH 'Jo'
 

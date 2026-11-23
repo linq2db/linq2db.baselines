@@ -2,7 +2,7 @@
 DELETE FROM
 	"Person" "p"
 WHERE
-	("p"."FirstName" STARTING WITH 'Insert14')
+	"p"."FirstName" STARTING WITH 'Insert14'
 
 -- Firebird.3 Firebird3
 INSERT INTO "Person"
@@ -31,11 +31,11 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	("p"."FirstName" STARTING WITH 'Insert14')
+	"p"."FirstName" STARTING WITH 'Insert14'
 
 -- Firebird.3 Firebird3
 DELETE FROM
 	"Person" "p"
 WHERE
-	("p"."FirstName" STARTING WITH 'Insert14')
+	"p"."FirstName" STARTING WITH 'Insert14'
 

@@ -13,7 +13,7 @@ SELECT FIRST @take SKIP @skip
 FROM
 	"Person" "x"
 WHERE
-	("x"."FirstName" STARTING WITH 'J')
+	"x"."FirstName" STARTING WITH 'J'
 ORDER BY
 	"x"."PersonID" DESC
 

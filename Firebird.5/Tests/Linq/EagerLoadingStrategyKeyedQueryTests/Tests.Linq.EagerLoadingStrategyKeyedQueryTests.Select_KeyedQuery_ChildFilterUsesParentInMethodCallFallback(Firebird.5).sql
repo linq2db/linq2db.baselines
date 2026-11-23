@@ -8,7 +8,7 @@ SELECT
 	"d"."IsActive"
 FROM
 	"Company" "m_1"
-		INNER JOIN "Department" "d" ON "d"."CompanyId" = "m_1"."Id" AND ("d"."Name" STARTING WITH "m_1"."Name")
+		INNER JOIN "Department" "d" ON "d"."CompanyId" = "m_1"."Id" AND "d"."Name" STARTING WITH "m_1"."Name"
 ORDER BY
 	"d"."Id",
 	"m_1"."Id"

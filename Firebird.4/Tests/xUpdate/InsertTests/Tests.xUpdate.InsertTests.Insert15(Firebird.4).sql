@@ -2,7 +2,7 @@
 DELETE FROM
 	"Person" "t1"
 WHERE
-	("t1"."FirstName" STARTING WITH 'Insert15')
+	"t1"."FirstName" STARTING WITH 'Insert15'
 
 -- Firebird.4 Firebird4
 DECLARE @Gender Char(1) -- String
@@ -37,11 +37,11 @@ SELECT
 FROM
 	"Person" "t1"
 WHERE
-	("t1"."FirstName" STARTING WITH 'Insert15')
+	"t1"."FirstName" STARTING WITH 'Insert15'
 
 -- Firebird.4 Firebird4
 DELETE FROM
 	"Person" "t1"
 WHERE
-	("t1"."FirstName" STARTING WITH 'Insert15')
+	"t1"."FirstName" STARTING WITH 'Insert15'
 

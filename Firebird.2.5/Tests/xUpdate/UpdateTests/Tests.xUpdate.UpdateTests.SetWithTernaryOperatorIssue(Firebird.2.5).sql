@@ -38,7 +38,7 @@ UPDATE
 SET
 	"Gender" = CAST(@nullableGender AS CHAR(1))
 WHERE
-	("t1"."FirstName" STARTING WITH 'UpdateComplex')
+	"t1"."FirstName" STARTING WITH 'UpdateComplex'
 
 -- Firebird.2.5 Firebird
 DECLARE @id Integer -- Int32

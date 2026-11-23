@@ -15,7 +15,7 @@ FROM
 		FROM
 			"NullableKeyData" "e"
 		WHERE
-			("e"."CustomerId" STARTING WITH 'DST') AND "e"."Id" > 1
+			"e"."CustomerId" STARTING WITH 'DST' AND "e"."Id" > 1
 	) "t1"
 WHERE
 	"t1"."RowNumber" = 1

@@ -35,7 +35,7 @@ UPDATE
 SET
 	"LastName" = "t1"."FirstName"
 WHERE
-	("t1"."FirstName" STARTING WITH 'UpdateComplex')
+	"t1"."FirstName" STARTING WITH 'UpdateComplex'
 
 -- Firebird.5 Firebird4
 DECLARE @id Integer -- Int32

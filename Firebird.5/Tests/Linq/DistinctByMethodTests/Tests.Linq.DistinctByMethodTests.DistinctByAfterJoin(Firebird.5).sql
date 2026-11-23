@@ -15,7 +15,7 @@ FROM
 			"NullableKeyData" "e"
 				INNER JOIN "RelatedData" "r" ON "e"."Id" = "r"."OwnerId"
 		WHERE
-			("e"."CustomerId" STARTING WITH 'DST')
+			"e"."CustomerId" STARTING WITH 'DST'
 	) "t1"
 WHERE
 	"t1"."RowNumber" = 1

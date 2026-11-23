@@ -28,7 +28,7 @@ FROM
 						FROM
 							"Order" "x"
 						WHERE
-							("x"."Name" STARTING WITH 'cat')
+							"x"."Name" STARTING WITH 'cat'
 						ORDER BY
 							"x"."Id"
 						OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
@@ -59,7 +59,7 @@ FROM
 				FROM
 					"Order" "x"
 				WHERE
-					("x"."Name" STARTING WITH 'cat')
+					"x"."Name" STARTING WITH 'cat'
 				ORDER BY
 					"x"."Id"
 				OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
@@ -79,7 +79,7 @@ SELECT
 FROM
 	"Order" "x"
 WHERE
-	("x"."Name" STARTING WITH 'cat')
+	"x"."Name" STARTING WITH 'cat'
 ORDER BY
 	"x"."Id"
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
