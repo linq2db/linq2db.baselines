@@ -15,7 +15,8 @@ SELECT
 	Math::Pow(Unwrap(CAST(-r.B AS Double)), Double('2')) as c13,
 	-Math::Pow(Unwrap(CAST(r.B AS Double)), Double('2')) as c14,
 	Math::Pow(Unwrap(CAST(r.C AS Double)), Math::Pow(Unwrap(CAST(r.C AS Double)), Unwrap(CAST(r.C AS Double)))) as c15,
-	Math::Pow(Unwrap(CAST(r.B + r.C AS Double)), Double('2')) as c16
+	Math::Pow(Math::Pow(Unwrap(CAST(r.C AS Double)), Unwrap(CAST(-r.B AS Double))), Unwrap(CAST(r.C AS Double))) as c16,
+	Math::Pow(Unwrap(CAST(r.B + r.C AS Double)), Double('2')) as c17
 FROM
 	PrecedenceRow r
 ORDER BY
