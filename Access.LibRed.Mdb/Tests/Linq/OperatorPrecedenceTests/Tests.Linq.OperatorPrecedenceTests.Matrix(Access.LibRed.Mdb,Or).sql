@@ -38,16 +38,16 @@ SELECT
 	([r].[A] + [r].[B]) BOR [r].[C],
 	[r].[A] BOR ([r].[B] + [r].[C]),
 	([r].[A] + -6) BOR [r].[C],
-	[r].[A] BOR (-[r].[B]),
+	[r].[A] BOR -[r].[B],
 	(-[r].[B]) BOR [r].[C],
 	([r].[A] - [r].[B]) BOR [r].[C],
 	([r].[A] + [r].[B]) BOR [r].[C],
 	([r].[A] * -[r].[B]) BOR [r].[C],
 	Fix([r].[A] / -[r].[B]) BOR [r].[C],
 	([r].[A] MOD -[r].[B]) BOR [r].[C],
-	[r].[A] BAND (-[r].[B]) BOR [r].[C],
-	[r].[A] BOR (-[r].[B]) BOR [r].[C],
-	([r].[A] BXOR (-[r].[B])) BOR [r].[C],
+	([r].[A] BAND -[r].[B]) BOR [r].[C],
+	([r].[A] BOR -[r].[B]) BOR [r].[C],
+	([r].[A] BXOR -[r].[B]) BOR [r].[C],
 	[r].[A] BOR (-1 - [r].[B]),
 	(-1 - [r].[B]) BOR [r].[C],
 	([r].[A] + (-1 - [r].[B])) BOR [r].[C],
@@ -57,15 +57,15 @@ SELECT
 	[r].[A] BAND (-1 - [r].[B]) BOR [r].[C],
 	[r].[A] BOR (-1 - [r].[B]) BOR [r].[C],
 	([r].[A] BXOR (-1 - [r].[B])) BOR [r].[C],
-	[r].[A] BOR (-5),
+	[r].[A] BOR -5,
 	(-5) BOR [r].[C],
 	([r].[A] + -5) BOR [r].[C],
 	([r].[A] - -5) BOR [r].[C],
 	([r].[A] * -5) BOR [r].[C],
 	([r].[A] MOD -5) BOR [r].[C],
-	[r].[A] BAND (-5) BOR [r].[C],
-	[r].[A] BOR (-5) BOR [r].[C],
-	([r].[A] BXOR (-5)) BOR [r].[C]
+	([r].[A] BAND -5) BOR [r].[C],
+	([r].[A] BOR -5) BOR [r].[C],
+	([r].[A] BXOR -5) BOR [r].[C]
 FROM
 	[PrecedenceRow] [r]
 ORDER BY
@@ -73,15 +73,15 @@ ORDER BY
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
-	[r].[A] BOR (-5),
+	[r].[A] BOR -5,
 	(-5) BOR [r].[C],
 	([r].[A] + -5) BOR [r].[C],
 	([r].[A] - -5) BOR [r].[C],
 	([r].[A] * -5) BOR [r].[C],
 	([r].[A] MOD -5) BOR [r].[C],
-	[r].[A] BAND (-5) BOR [r].[C],
-	[r].[A] BOR (-5) BOR [r].[C],
-	([r].[A] BXOR (-5)) BOR [r].[C]
+	([r].[A] BAND -5) BOR [r].[C],
+	([r].[A] BOR -5) BOR [r].[C],
+	([r].[A] BXOR -5) BOR [r].[C]
 FROM
 	[PrecedenceRow] [r]
 ORDER BY
