@@ -63,7 +63,7 @@ FROM
 
 -- SqlServer.2022
 SELECT
-	[p].[ID] | (-5)
+	[p].[ID] | -5
 FROM
 	[LinqDataTypes] [p]
 ORDER BY
@@ -84,7 +84,7 @@ FROM
 
 -- SqlServer.2022
 SELECT
-	CAST([p].[ID] AS BigInt) ^ (-6)
+	CAST([p].[ID] AS BigInt) ^ -6
 FROM
 	[LinqDataTypes] [p]
 ORDER BY
@@ -105,7 +105,7 @@ FROM
 
 -- SqlServer.2022
 SELECT
-	[p].[ID] & (-3)
+	[p].[ID] & -3
 FROM
 	[LinqDataTypes] [p]
 ORDER BY
