@@ -22,6 +22,10 @@ SELECT
 		SELECT
 			[r].[A] + [r].[B]
 	), 1, 0),
+	IIF(-[r].[N] IS NULL, 1, 0),
+	IIF([r].[A] - [r].[B] BETWEEN [r].[C] AND [r].[A], 1, 0),
+	IIF(~[r].[N] IS NULL, 1, 0),
+	IIF([r].[A] + ~[r].[B] BETWEEN [r].[C] AND [r].[A], 1, 0),
 	IIF([r].[A] - [r].[B] = [r].[C], 1, 0),
 	IIF([r].[C] < [r].[A] - [r].[B], 1, 0),
 	IIF([r].[A] - [r].[B] BETWEEN [r].[C] AND [r].[A], 1, 0),
@@ -44,6 +48,10 @@ SELECT
 		SELECT
 			[r].[A] - [r].[B]
 	), 1, 0),
+	IIF(-[r].[N] IS NULL, 1, 0),
+	IIF([r].[A] + [r].[B] BETWEEN [r].[C] AND [r].[A], 1, 0),
+	IIF(~[r].[N] IS NULL, 1, 0),
+	IIF([r].[A] - ~[r].[B] BETWEEN [r].[C] AND [r].[A], 1, 0),
 	IIF([r].[A] * [r].[B] = [r].[C], 1, 0),
 	IIF([r].[C] < [r].[A] * [r].[B], 1, 0),
 	IIF([r].[A] * [r].[B] BETWEEN [r].[C] AND [r].[A], 1, 0),
@@ -66,6 +74,10 @@ SELECT
 		SELECT
 			[r].[A] * [r].[B]
 	), 1, 0),
+	IIF(-[r].[N] IS NULL, 1, 0),
+	IIF([r].[A] * -[r].[B] BETWEEN [r].[C] AND [r].[A], 1, 0),
+	IIF(~[r].[N] IS NULL, 1, 0),
+	IIF([r].[A] * ~[r].[B] BETWEEN [r].[C] AND [r].[A], 1, 0),
 	IIF([r].[A] / [r].[B] = [r].[C], 1, 0),
 	IIF([r].[C] < [r].[A] / [r].[B], 1, 0),
 	IIF([r].[A] / [r].[B] BETWEEN [r].[C] AND [r].[A], 1, 0),
@@ -88,6 +100,9 @@ SELECT
 		SELECT
 			[r].[A] / [r].[B]
 	), 1, 0),
+	IIF(-[r].[N] IS NULL, 1, 0),
+	IIF([r].[A] / -[r].[B] BETWEEN [r].[C] AND [r].[A], 1, 0),
+	IIF(~[r].[N] IS NULL, 1, 0),
 	IIF([r].[A] % [r].[B] = [r].[C], 1, 0),
 	IIF([r].[C] < [r].[A] % [r].[B], 1, 0),
 	IIF([r].[A] % [r].[B] BETWEEN [r].[C] AND [r].[A], 1, 0),
@@ -110,6 +125,10 @@ SELECT
 		SELECT
 			[r].[A] % [r].[B]
 	), 1, 0),
+	IIF(-[r].[N] IS NULL, 1, 0),
+	IIF([r].[A] % -[r].[B] BETWEEN [r].[C] AND [r].[A], 1, 0),
+	IIF(~[r].[N] IS NULL, 1, 0),
+	IIF([r].[A] % ~[r].[B] BETWEEN [r].[C] AND [r].[A], 1, 0),
 	IIF([r].[A] & [r].[B] = [r].[C], 1, 0),
 	IIF([r].[C] < [r].[A] & [r].[B], 1, 0),
 	IIF([r].[A] & [r].[B] BETWEEN [r].[C] AND [r].[A], 1, 0),
@@ -132,6 +151,10 @@ SELECT
 		SELECT
 			[r].[A] & [r].[B]
 	), 1, 0),
+	IIF(-[r].[N] IS NULL, 1, 0),
+	IIF([r].[A] & -[r].[B] BETWEEN [r].[C] AND [r].[A], 1, 0),
+	IIF(~[r].[N] IS NULL, 1, 0),
+	IIF([r].[A] & ~[r].[B] BETWEEN [r].[C] AND [r].[A], 1, 0),
 	IIF([r].[A] | [r].[B] = [r].[C], 1, 0),
 	IIF([r].[C] < [r].[A] | [r].[B], 1, 0),
 	IIF([r].[A] | [r].[B] BETWEEN [r].[C] AND [r].[A], 1, 0),
@@ -154,6 +177,10 @@ SELECT
 		SELECT
 			[r].[A] | [r].[B]
 	), 1, 0),
+	IIF([r].[A] | -[r].[N] IS NULL, 1, 0),
+	IIF([r].[A] | -[r].[B] BETWEEN [r].[C] AND [r].[A], 1, 0),
+	IIF([r].[A] | ~[r].[N] IS NULL, 1, 0),
+	IIF([r].[A] | ~[r].[B] BETWEEN [r].[C] AND [r].[A], 1, 0),
 	IIF([r].[A] ^ [r].[B] = [r].[C], 1, 0),
 	IIF([r].[C] < [r].[A] ^ [r].[B], 1, 0),
 	IIF([r].[A] ^ [r].[B] BETWEEN [r].[C] AND [r].[A], 1, 0),
@@ -176,6 +203,18 @@ SELECT
 		SELECT
 			[r].[A] ^ [r].[B]
 	), 1, 0),
+	IIF([r].[A] ^ -[r].[N] IS NULL, 1, 0),
+	IIF([r].[A] ^ -[r].[B] BETWEEN [r].[C] AND [r].[A], 1, 0),
+	IIF([r].[A] ^ ~[r].[N] IS NULL, 1, 0),
+	IIF([r].[A] ^ ~[r].[B] BETWEEN [r].[C] AND [r].[A], 1, 0),
+	[r].[A] * -[r].[B] + [r].[C],
+	[r].[A] * ~[r].[B] + [r].[C],
+	[r].[A] * -[r].[B] - [r].[C],
+	[r].[A] * ~[r].[B] - [r].[C],
+	([r].[A] * -[r].[B]) * [r].[C],
+	([r].[A] * ~[r].[B]) * [r].[C],
+	[r].[A] * -[r].[B] + [r].[C],
+	[r].[A] * ~[r].[B] + [r].[C],
 	IIF(-[r].[A] = [r].[C], 1, 0),
 	IIF([r].[C] = -[r].[A], 1, 0),
 	IIF(~[r].[A] = [r].[C], 1, 0),
