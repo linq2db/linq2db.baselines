@@ -50,11 +50,19 @@ SELECT
 		ELSE 0
 	END,
 	CASE
+		WHEN "r".C BETWEEN "r".A - "r".B AND "r".A THEN 1
+		ELSE 0
+	END,
+	CASE
 		WHEN "r".N IS NULL THEN 1
 		ELSE 0
 	END,
 	CASE
 		WHEN "r".A + BITNOT("r".B) BETWEEN "r".C AND "r".A THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN "r".C BETWEEN "r".A + BITNOT("r".B) AND "r".A THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -107,11 +115,19 @@ SELECT
 		ELSE 0
 	END,
 	CASE
+		WHEN "r".C BETWEEN "r".A + "r".B AND "r".A THEN 1
+		ELSE 0
+	END,
+	CASE
 		WHEN "r".N IS NULL THEN 1
 		ELSE 0
 	END,
 	CASE
 		WHEN "r".A - BITNOT("r".B) BETWEEN "r".C AND "r".A THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN "r".C BETWEEN "r".A - BITNOT("r".B) AND "r".A THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -164,11 +180,19 @@ SELECT
 		ELSE 0
 	END,
 	CASE
+		WHEN "r".C BETWEEN "r".A * -"r".B AND "r".A THEN 1
+		ELSE 0
+	END,
+	CASE
 		WHEN "r".N IS NULL THEN 1
 		ELSE 0
 	END,
 	CASE
 		WHEN "r".A * BITNOT("r".B) BETWEEN "r".C AND "r".A THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN "r".C BETWEEN "r".A * BITNOT("r".B) AND "r".A THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -218,6 +242,10 @@ SELECT
 	END,
 	CASE
 		WHEN "r".A / -"r".B BETWEEN "r".C AND "r".A THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN "r".C BETWEEN "r".A / -"r".B AND "r".A THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -275,11 +303,19 @@ SELECT
 		ELSE 0
 	END,
 	CASE
+		WHEN "r".C BETWEEN Mod("r".A, -"r".B) AND "r".A THEN 1
+		ELSE 0
+	END,
+	CASE
 		WHEN "r".N IS NULL THEN 1
 		ELSE 0
 	END,
 	CASE
 		WHEN Mod("r".A, BITNOT("r".B)) BETWEEN "r".C AND "r".A THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN "r".C BETWEEN Mod("r".A, BITNOT("r".B)) AND "r".A THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -333,11 +369,20 @@ SELECT
 		ELSE 0
 	END,
 	CASE
+		WHEN "r".C BETWEEN BitAnd("r".A, -"r".B) AND "r".A THEN 1
+		ELSE 0
+	END,
+	CASE
 		WHEN "r".N IS NULL THEN 1
 		ELSE 0
 	END,
 	CASE
 		WHEN BitAnd("r".A, BITNOT("r".B)) BETWEEN "r".C AND "r".A
+			THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN "r".C BETWEEN BitAnd("r".A, BITNOT("r".B)) AND "r".A
 			THEN 1
 		ELSE 0
 	END,
@@ -392,11 +437,20 @@ SELECT
 		ELSE 0
 	END,
 	CASE
+		WHEN "r".C BETWEEN BitOr("r".A, -"r".B) AND "r".A THEN 1
+		ELSE 0
+	END,
+	CASE
 		WHEN "r".N IS NULL THEN 1
 		ELSE 0
 	END,
 	CASE
 		WHEN BitOr("r".A, BITNOT("r".B)) BETWEEN "r".C AND "r".A
+			THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN "r".C BETWEEN BitOr("r".A, BITNOT("r".B)) AND "r".A
 			THEN 1
 		ELSE 0
 	END,
@@ -451,11 +505,20 @@ SELECT
 		ELSE 0
 	END,
 	CASE
+		WHEN "r".C BETWEEN BitXor("r".A, -"r".B) AND "r".A THEN 1
+		ELSE 0
+	END,
+	CASE
 		WHEN "r".N IS NULL THEN 1
 		ELSE 0
 	END,
 	CASE
 		WHEN BitXor("r".A, BITNOT("r".B)) BETWEEN "r".C AND "r".A
+			THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN "r".C BETWEEN BitXor("r".A, BITNOT("r".B)) AND "r".A
 			THEN 1
 		ELSE 0
 	END,
