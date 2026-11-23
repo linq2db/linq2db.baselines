@@ -42,6 +42,22 @@ SELECT
 		ELSE 0
 	END,
 	CASE
+		WHEN -"r".N IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN "r".A - "r".B BETWEEN "r".C AND "r".A THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN "r".N IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN "r".A + BIN_NOT("r".B) BETWEEN "r".C AND "r".A THEN 1
+		ELSE 0
+	END,
+	CASE
 		WHEN "r".A - "r".B = "r".C THEN 1
 		ELSE 0
 	END,
@@ -80,6 +96,22 @@ SELECT
 	END,
 	CASE
 		WHEN "r".N IS DISTINCT FROM "r".A - "r".B THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN -"r".N IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN "r".A + "r".B BETWEEN "r".C AND "r".A THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN "r".N IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN "r".A - BIN_NOT("r".B) BETWEEN "r".C AND "r".A THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -124,6 +156,22 @@ SELECT
 		ELSE 0
 	END,
 	CASE
+		WHEN -"r".N IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN "r".A * -"r".B BETWEEN "r".C AND "r".A THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN "r".N IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN "r".A * BIN_NOT("r".B) BETWEEN "r".C AND "r".A THEN 1
+		ELSE 0
+	END,
+	CASE
 		WHEN "r".A / "r".B = "r".C THEN 1
 		ELSE 0
 	END,
@@ -162,6 +210,18 @@ SELECT
 	END,
 	CASE
 		WHEN "r".N IS DISTINCT FROM "r".A / "r".B THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN -"r".N IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN "r".A / -"r".B BETWEEN "r".C AND "r".A THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN "r".N IS NULL THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -207,6 +267,22 @@ SELECT
 		ELSE 0
 	END,
 	CASE
+		WHEN -"r".N IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN Mod("r".A, -"r".B) BETWEEN "r".C AND "r".A THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN "r".N IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN Mod("r".A, BIN_NOT("r".B)) BETWEEN "r".C AND "r".A THEN 1
+		ELSE 0
+	END,
+	CASE
 		WHEN Bin_And("r".A, "r".B) = "r".C THEN 1
 		ELSE 0
 	END,
@@ -246,6 +322,23 @@ SELECT
 	END,
 	CASE
 		WHEN "r".N IS DISTINCT FROM Bin_And("r".A, "r".B) THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN -"r".N IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN Bin_And("r".A, -"r".B) BETWEEN "r".C AND "r".A THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN "r".N IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN Bin_And("r".A, BIN_NOT("r".B)) BETWEEN "r".C AND "r".A
+			THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -291,6 +384,23 @@ SELECT
 		ELSE 0
 	END,
 	CASE
+		WHEN -"r".N IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN Bin_Or("r".A, -"r".B) BETWEEN "r".C AND "r".A THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN "r".N IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN Bin_Or("r".A, BIN_NOT("r".B)) BETWEEN "r".C AND "r".A
+			THEN 1
+		ELSE 0
+	END,
+	CASE
 		WHEN Bin_Xor("r".A, "r".B) = "r".C THEN 1
 		ELSE 0
 	END,
@@ -332,6 +442,31 @@ SELECT
 		WHEN "r".N IS DISTINCT FROM Bin_Xor("r".A, "r".B) THEN 1
 		ELSE 0
 	END,
+	CASE
+		WHEN -"r".N IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN Bin_Xor("r".A, -"r".B) BETWEEN "r".C AND "r".A THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN "r".N IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN Bin_Xor("r".A, BIN_NOT("r".B)) BETWEEN "r".C AND "r".A
+			THEN 1
+		ELSE 0
+	END,
+	"r".A * -"r".B + "r".C,
+	"r".A * BIN_NOT("r".B) + "r".C,
+	"r".A * -"r".B - "r".C,
+	"r".A * BIN_NOT("r".B) - "r".C,
+	("r".A * -"r".B) * "r".C,
+	("r".A * BIN_NOT("r".B)) * "r".C,
+	"r".A * -"r".B + "r".C,
+	"r".A * BIN_NOT("r".B) + "r".C,
 	CASE
 		WHEN -"r".A = "r".C THEN 1
 		ELSE 0
