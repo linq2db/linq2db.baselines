@@ -1,6 +1,6 @@
 ﻿-- SqlServer.Contained SqlServer.2025
 SELECT
-	CAST([r].[A] AS Decimal(18, 10)) * (-5.5)
+	CAST([r].[A] AS Decimal(18, 10)) * -5.5
 FROM
 	[PrecedenceRow] [r]
 ORDER BY
@@ -38,7 +38,7 @@ FROM
 
 -- SqlServer.Contained SqlServer.2025
 SELECT
-	CAST([r].[A] AS Float) * (-5.5)
+	CAST([r].[A] AS Float) * -5.5
 FROM
 	[PrecedenceRow] [r]
 ORDER BY
