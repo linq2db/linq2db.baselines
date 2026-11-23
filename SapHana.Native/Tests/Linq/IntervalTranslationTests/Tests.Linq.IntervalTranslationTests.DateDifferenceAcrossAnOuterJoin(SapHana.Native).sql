@@ -9,7 +9,7 @@ ORDER BY
 
 -- SapHana.Native SapHana
 SELECT
-	CAST(CAST(Nano100_Between("x"."StartedOn", "b"."FinishedOn") / 864000000000 AS BigInt) AS Integer)
+	CAST(Nano100_Between("x"."StartedOn", "b"."FinishedOn") / 864000000000 AS Integer)
 FROM
 	"OuterJoinLeft" "x"
 		LEFT JOIN "OuterJoinRight" "b" ON "b"."Id" = "x"."Id"
