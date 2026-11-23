@@ -63,7 +63,7 @@ FROM
 
 -- Access.Jet.Odbc AccessODBC
 SELECT
-	[p].[ID] BOR (-5)
+	[p].[ID] BOR -5
 FROM
 	[LinqDataTypes] [p]
 ORDER BY
@@ -84,7 +84,7 @@ FROM
 
 -- Access.Jet.Odbc AccessODBC
 SELECT
-	[p].[ID] BXOR (-6)
+	[p].[ID] BXOR -6
 FROM
 	[LinqDataTypes] [p]
 ORDER BY
@@ -105,7 +105,7 @@ FROM
 
 -- Access.Jet.Odbc AccessODBC
 SELECT
-	[p].[ID] BAND (-3)
+	[p].[ID] BAND -3
 FROM
 	[LinqDataTypes] [p]
 ORDER BY
