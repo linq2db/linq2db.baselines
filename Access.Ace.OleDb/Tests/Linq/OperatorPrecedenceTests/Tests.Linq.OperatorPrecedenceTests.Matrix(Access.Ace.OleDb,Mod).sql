@@ -42,8 +42,8 @@ SELECT
 	([r].[A] + [r].[B]) MOD [r].[C],
 	Fix([r].[A] / -[r].[B]) MOD [r].[C],
 	[r].[A] MOD -[r].[B] MOD [r].[C],
-	([r].[A] BOR -[r].[B]) MOD [r].[C],
-	([r].[A] BXOR -[r].[B]) MOD [r].[C],
+	([r].[A] BOR (-[r].[B])) MOD [r].[C],
+	([r].[A] BXOR (-[r].[B])) MOD [r].[C],
 	[r].[A] MOD (-1 - [r].[B]),
 	([r].[A] + (-1 - [r].[B])) MOD [r].[C],
 	([r].[A] - (-1 - [r].[B])) MOD [r].[C],
@@ -58,9 +58,9 @@ SELECT
 	([r].[A] - -5) MOD [r].[C],
 	[r].[A] * -5 MOD [r].[C],
 	[r].[A] MOD -5 MOD [r].[C],
-	([r].[A] BAND -5) MOD [r].[C],
-	([r].[A] BOR -5) MOD [r].[C],
-	([r].[A] BXOR -5) MOD [r].[C]
+	([r].[A] BAND (-5)) MOD [r].[C],
+	([r].[A] BOR (-5)) MOD [r].[C],
+	([r].[A] BXOR (-5)) MOD [r].[C]
 FROM
 	[PrecedenceRow] [r]
 ORDER BY
@@ -74,9 +74,9 @@ SELECT
 	([r].[A] - -5) MOD [r].[C],
 	[r].[A] * -5 MOD [r].[C],
 	[r].[A] MOD -5 MOD [r].[C],
-	([r].[A] BAND -5) MOD [r].[C],
-	([r].[A] BOR -5) MOD [r].[C],
-	([r].[A] BXOR -5) MOD [r].[C]
+	([r].[A] BAND (-5)) MOD [r].[C],
+	([r].[A] BOR (-5)) MOD [r].[C],
+	([r].[A] BXOR (-5)) MOD [r].[C]
 FROM
 	[PrecedenceRow] [r]
 ORDER BY
