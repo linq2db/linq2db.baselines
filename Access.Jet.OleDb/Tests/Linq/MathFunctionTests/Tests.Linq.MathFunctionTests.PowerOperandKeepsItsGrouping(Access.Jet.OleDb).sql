@@ -105,7 +105,7 @@ FROM
 
 -- Access.Jet.OleDb AccessOleDb
 SELECT
-	[p].[ID] ^ -1
+	[p].[ID] ^ (-1)
 FROM
 	[LinqDataTypes] [p]
 ORDER BY
