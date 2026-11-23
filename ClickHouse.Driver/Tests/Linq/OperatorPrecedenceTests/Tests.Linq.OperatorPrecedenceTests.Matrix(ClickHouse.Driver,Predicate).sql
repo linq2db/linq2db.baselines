@@ -42,6 +42,22 @@ SELECT
 		ELSE 0
 	END,
 	CASE
+		WHEN r.N IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN r.A + negate(r.B) BETWEEN r.C AND r.A THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN r.N IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN r.A + bitNot(r.B) BETWEEN r.C AND r.A THEN 1
+		ELSE 0
+	END,
+	CASE
 		WHEN r.A - r.B = r.C THEN 1
 		ELSE 0
 	END,
@@ -83,6 +99,22 @@ SELECT
 		ELSE 0
 	END,
 	CASE
+		WHEN r.N IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN r.A - negate(r.B) BETWEEN r.C AND r.A THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN r.N IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN r.A - bitNot(r.B) BETWEEN r.C AND r.A THEN 1
+		ELSE 0
+	END,
+	CASE
 		WHEN r.A * r.B = r.C THEN 1
 		ELSE 0
 	END,
@@ -121,6 +153,22 @@ SELECT
 	END,
 	CASE
 		WHEN r.N IS NULL OR r.N <> r.A * r.B THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN r.N IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN r.A * negate(r.B) BETWEEN r.C AND r.A THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN r.N IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN r.A * bitNot(r.B) BETWEEN r.C AND r.A THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -166,6 +214,18 @@ SELECT
 		ELSE 0
 	END,
 	CASE
+		WHEN r.N IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN intDiv(r.A, negate(r.B)) BETWEEN r.C AND r.A THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN r.N IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
 		WHEN r.A % r.B = r.C THEN 1
 		ELSE 0
 	END,
@@ -204,6 +264,22 @@ SELECT
 	END,
 	CASE
 		WHEN r.N IS NULL OR r.N <> r.A % r.B THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN r.N IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN r.A % negate(r.B) BETWEEN r.C AND r.A THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN r.N IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN r.A % bitNot(r.B) BETWEEN r.C AND r.A THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -249,6 +325,22 @@ SELECT
 		ELSE 0
 	END,
 	CASE
+		WHEN r.N IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN bitAnd(r.A, negate(r.B)) BETWEEN r.C AND r.A THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN r.N IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN bitAnd(r.A, bitNot(r.B)) BETWEEN r.C AND r.A THEN 1
+		ELSE 0
+	END,
+	CASE
 		WHEN bitOr(r.A, r.B) = r.C THEN 1
 		ELSE 0
 	END,
@@ -288,6 +380,22 @@ SELECT
 	END,
 	CASE
 		WHEN r.N IS NULL OR r.N <> bitOr(r.A, r.B) THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN r.N IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN bitOr(r.A, negate(r.B)) BETWEEN r.C AND r.A THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN r.N IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN bitOr(r.A, bitNot(r.B)) BETWEEN r.C AND r.A THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -332,6 +440,30 @@ SELECT
 		WHEN r.N IS NULL OR r.N <> bitXor(r.A, r.B) THEN 1
 		ELSE 0
 	END,
+	CASE
+		WHEN r.N IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN bitXor(r.A, negate(r.B)) BETWEEN r.C AND r.A THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN r.N IS NULL THEN 1
+		ELSE 0
+	END,
+	CASE
+		WHEN bitXor(r.A, bitNot(r.B)) BETWEEN r.C AND r.A THEN 1
+		ELSE 0
+	END,
+	r.A * negate(r.B) + r.C,
+	r.A * bitNot(r.B) + r.C,
+	r.A * negate(r.B) - r.C,
+	r.A * bitNot(r.B) - r.C,
+	(r.A * negate(r.B)) * r.C,
+	(r.A * bitNot(r.B)) * r.C,
+	r.A * negate(r.B) + r.C,
+	r.A * bitNot(r.B) + r.C,
 	CASE
 		WHEN negate(r.A) = r.C THEN 1
 		ELSE 0
