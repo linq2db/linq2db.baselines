@@ -26,8 +26,8 @@ SELECT
 	CAST(Nano100_Between("r"."StartedOn", "r"."FinishedOn") AS Double) / 600000000,
 	CAST(Nano100_Between("r"."StartedOn", "r"."FinishedOn") AS Double) / 10000000,
 	CAST(Nano100_Between("r"."StartedOn", "r"."FinishedOn") / 864000000000 AS Integer),
-	CAST(MOD(Nano100_Between("r"."StartedOn", "r"."FinishedOn") / 36000000000, 24) AS Integer),
-	CAST(MOD(Nano100_Between("r"."StartedOn", "r"."FinishedOn") / 600000000, 60) AS Integer)
+	CAST(MOD(CAST(Nano100_Between("r"."StartedOn", "r"."FinishedOn") / 36000000000 AS BigInt), 24) AS Integer),
+	CAST(MOD(CAST(Nano100_Between("r"."StartedOn", "r"."FinishedOn") / 600000000 AS BigInt), 60) AS Integer)
 FROM
 	"EventRow" "r"
 LIMIT 2

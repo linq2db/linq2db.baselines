@@ -28,8 +28,8 @@ LIMIT 2
 
 -- SapHana.Odbc SapHanaOdbc
 SELECT
-	CAST(MOD(Nano100_Between("r"."StartedOn", "r"."FinishedOn") / 10000, 1000) AS Integer),
-	CAST(MOD(Nano100_Between("r"."StartedOn", "r"."FinishedOn") / 10000000, 60) AS Integer)
+	CAST(MOD(CAST(Nano100_Between("r"."StartedOn", "r"."FinishedOn") / 10000 AS BigInt), 1000) AS Integer),
+	CAST(MOD(CAST(Nano100_Between("r"."StartedOn", "r"."FinishedOn") / 10000000 AS BigInt), 60) AS Integer)
 FROM
 	"EventRow" "r"
 LIMIT 2

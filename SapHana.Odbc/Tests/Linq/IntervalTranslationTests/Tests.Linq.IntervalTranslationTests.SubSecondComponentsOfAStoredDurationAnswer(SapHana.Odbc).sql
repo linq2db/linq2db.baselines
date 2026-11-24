@@ -29,8 +29,8 @@ VALUES
 
 -- SapHana.Odbc SapHanaOdbc
 SELECT
-	CAST(MOD("r"."InTicks" / 10000, 1000) AS Integer),
-	CAST(MOD("r"."InTicks" / 10, 1000) AS Integer)
+	CAST(MOD(CAST("r"."InTicks" / 10000 AS BigInt), 1000) AS Integer),
+	CAST(MOD(CAST("r"."InTicks" / 10 AS BigInt), 1000) AS Integer)
 FROM
 	"DurationRow" "r"
 LIMIT 2
