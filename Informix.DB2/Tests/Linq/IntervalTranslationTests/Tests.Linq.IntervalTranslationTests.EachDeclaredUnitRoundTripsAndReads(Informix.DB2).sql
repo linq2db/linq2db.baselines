@@ -35,7 +35,7 @@ FROM
 -- Informix.DB2 Informix
 SELECT FIRST 2
 	(r.InDays * 24)::Float,
-	Mod(r.InMilliseconds / 1000, 60)::Int
+	Mod((r.InMilliseconds / 1000)::BigInt, 60)::Int
 FROM
 	UnitSpreadRow r
 
