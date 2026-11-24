@@ -5,5 +5,5 @@ SELECT
 FROM
 	`TestTable5` `t`
 WHERE
-	(`t`.`IntValue` & 1) <> 0
+	CAST(`t`.`IntValue` & 1 AS SIGNED) <> 0
 

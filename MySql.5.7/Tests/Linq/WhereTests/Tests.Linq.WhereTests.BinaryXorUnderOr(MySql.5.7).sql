@@ -8,7 +8,7 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	(`p`.`PersonID` | `p`.`PersonID` ^ 1) = `p`.`PersonID`
+	CAST(`p`.`PersonID` | CAST(`p`.`PersonID` ^ 1 AS SIGNED) AS SIGNED) = `p`.`PersonID`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
