@@ -5,10 +5,10 @@ SELECT
 FROM
 	(
 		SELECT
-			CASE
+			Fix(CASE
 				WHEN [t1].[Value1] IS NULL THEN 0
 				ELSE [t1].[Value1]
-			END / 2 as [Value1],
+			END / 2) as [Value1],
 			[p].[ParentID]
 		FROM
 			[Parent] [p]

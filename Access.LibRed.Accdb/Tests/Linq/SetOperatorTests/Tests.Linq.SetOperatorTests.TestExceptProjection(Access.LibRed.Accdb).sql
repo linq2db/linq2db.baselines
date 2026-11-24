@@ -13,7 +13,7 @@ FROM
 		EXCEPT
 		SELECT
 			[r_1].[Id],
-			[r_1].[Value2] / 10 as [Value_1]
+			Fix([r_1].[Value2] / 10) as [Value_1]
 		FROM
 			[SampleData] [r_1]
 		WHERE

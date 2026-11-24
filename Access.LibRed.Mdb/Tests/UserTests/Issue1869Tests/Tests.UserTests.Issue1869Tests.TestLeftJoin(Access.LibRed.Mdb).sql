@@ -20,10 +20,10 @@ FROM
 				(
 					SELECT
 						[g_2].[Month_1] as [Key_1],
-						SUM([g_2].[Qty]) / SUM(CASE
+						Fix(SUM([g_2].[Qty]) / SUM(CASE
 							WHEN [g_2].[Ok] THEN 0
 							ELSE [g_2].[Qty]
-						END) as [c1]
+						END)) as [c1]
 					FROM
 						(
 							SELECT
