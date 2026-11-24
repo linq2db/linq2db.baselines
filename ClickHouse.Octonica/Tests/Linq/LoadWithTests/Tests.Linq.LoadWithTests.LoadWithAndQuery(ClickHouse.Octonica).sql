@@ -13,7 +13,7 @@ FROM
 			m_1.Id > 1
 	) m_2
 		INNER JOIN SubItem1 d ON m_2.Id = d.ParentId
-		INNER JOIN MainItem2 mm ON d.Id / 10 = mm.Id
+		INNER JOIN MainItem2 mm ON intDiv(d.Id, 10) = mm.Id
 WHERE
 	d.Id % 2 = 0
 
