@@ -1,0 +1,13 @@
+﻿-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+SELECT
+	test_avg(g_1."Value1"::Float)
+FROM
+	"Parent" g_1
+LIMIT 2
+
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+SELECT
+	p."Value1"
+FROM
+	"Parent" p
+
