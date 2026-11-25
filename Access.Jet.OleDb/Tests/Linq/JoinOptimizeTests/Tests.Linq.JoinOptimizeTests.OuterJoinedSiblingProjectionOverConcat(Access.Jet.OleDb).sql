@@ -1,0 +1,58 @@
+﻿-- Access.Jet.OleDb AccessOleDb
+SELECT
+	[c_1].[ChildID],
+	IIF([v].[ParentID] IS NULL, NULL, IIF([v].[Value1] IS NULL, [c_1].[ChildID], NULL))
+FROM
+	[Child] [c_1]
+		LEFT JOIN (
+			SELECT
+				[q].[ParentID],
+				[q].[Value1]
+			FROM
+				[Parent] [q]
+			WHERE
+				[q].[ParentID] < 3
+			UNION ALL
+			SELECT
+				[p].[ParentID],
+				[p].[Value1]
+			FROM
+				[Parent] [p]
+			WHERE
+				[p].[ParentID] > 5
+		) [v] ON ([v].[ParentID] = [c_1].[ParentID])
+WHERE
+	[c_1].[ParentID] = 1 OR
+	[c_1].[ParentID] = 2 OR
+	[c_1].[ParentID] = 3 OR
+	[c_1].[ParentID] = 6
+
+-- Access.Jet.OleDb AccessOleDb
+SELECT
+	[c_1].[ChildID],
+	IIF([v].[ParentID] IS NULL, NULL, IIF([v].[Value1] IS NULL, [c_1].[ChildID], NULL))
+FROM
+	[Child] [c_1]
+		LEFT JOIN (
+			SELECT
+				[q].[ParentID],
+				[q].[Value1]
+			FROM
+				[Parent] [q]
+			WHERE
+				[q].[ParentID] < 3
+			UNION ALL
+			SELECT
+				[p].[ParentID],
+				[p].[Value1]
+			FROM
+				[Parent] [p]
+			WHERE
+				[p].[ParentID] > 5
+		) [v] ON ([v].[ParentID] >= [c_1].[ParentID] AND [v].[ParentID] <= [c_1].[ParentID])
+WHERE
+	[c_1].[ParentID] = 1 OR
+	[c_1].[ParentID] = 2 OR
+	[c_1].[ParentID] = 3 OR
+	[c_1].[ParentID] = 6
+
