@@ -1,6 +1,7 @@
 ﻿-- DB2 DB2.LUW DB2LUW
 SELECT
 	"t1"."PersonID",
+	"t1"."FirstName",
 	"a_Doctor"."PersonID",
 	"a_Doctor"."Taxonomy"
 FROM
