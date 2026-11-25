@@ -1,6 +1,7 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
 SELECT
 	"t1"."PersonID",
+	"t1"."FirstName",
 	"a_Doctor"."PersonID",
 	"a_Doctor"."Taxonomy"
 FROM
