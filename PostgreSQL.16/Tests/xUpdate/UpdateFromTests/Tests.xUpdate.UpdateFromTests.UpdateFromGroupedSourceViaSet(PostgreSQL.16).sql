@@ -1,0 +1,18 @@
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
+UPDATE
+	"GroupedUpdateTotal"
+SET
+	"Sum" = "GroupedUpdateTotal"."Sum" + t1."SumAggr"
+FROM
+	(
+		SELECT
+			SUM(eg."Sum") as "SumAggr",
+			eg."TotalId"
+		FROM
+			"GroupedUpdateEntry" eg
+		GROUP BY
+			eg."TotalId"
+	) t1
+WHERE
+	"GroupedUpdateTotal"."Id" = t1."TotalId"
+
