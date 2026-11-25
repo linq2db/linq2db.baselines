@@ -1,0 +1,94 @@
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+DECLARE @value Integer -- Int32
+SET     @value = 1
+DECLARE @value_1 Integer -- Int32
+SET     @value_1 = 2
+
+WITH "CTE_1" ("Value_1")
+AS
+(
+	INSERT INTO "InsertOutputQueryIdentity"
+	(
+		"Value"
+	)
+	VALUES
+	(
+		:value
+	)
+	RETURNING
+		"InsertOutputQueryIdentity"."Value"
+),
+"CTE_2" ("Value_1")
+AS
+(
+	INSERT INTO "InsertOutputQueryIdentity"
+	(
+		"Value"
+	)
+	VALUES
+	(
+		:value_1
+	)
+	RETURNING
+		"InsertOutputQueryIdentity"."Value"
+)
+SELECT
+	t3."Value_1"
+FROM
+	"CTE_1" t3
+UNION ALL
+SELECT
+	t4."Value_1"
+FROM
+	"CTE_2" t4
+
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+DECLARE @value Integer -- Int32
+SET     @value = 3
+DECLARE @value_1 Integer -- Int32
+SET     @value_1 = 4
+
+WITH "CTE_1" ("Value_1")
+AS
+(
+	INSERT INTO "InsertOutputQueryIdentity"
+	(
+		"Value"
+	)
+	VALUES
+	(
+		:value
+	)
+	RETURNING
+		"InsertOutputQueryIdentity"."Value"
+),
+"CTE_2" ("Value_1")
+AS
+(
+	INSERT INTO "InsertOutputQueryIdentity"
+	(
+		"Value"
+	)
+	VALUES
+	(
+		:value_1
+	)
+	RETURNING
+		"InsertOutputQueryIdentity"."Value"
+)
+SELECT
+	t3."Value_1"
+FROM
+	"CTE_1" t3
+UNION ALL
+SELECT
+	t4."Value_1"
+FROM
+	"CTE_2" t4
+
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+SELECT
+	COUNT(*)
+FROM
+	"InsertOutputQueryIdentity" t1
+
