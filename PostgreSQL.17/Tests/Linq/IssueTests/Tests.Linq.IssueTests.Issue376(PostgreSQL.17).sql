@@ -1,6 +1,7 @@
 ﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
 	t1."PersonID",
+	t1."FirstName",
 	"a_Doctor"."PersonID",
 	"a_Doctor"."Taxonomy"
 FROM
