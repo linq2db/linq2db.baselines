@@ -1,25 +1,38 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 SELECT
-	`r_1`.`Key_1`,
-	`r_1`.`Y2010`
+	`r`.`Category`
+FROM
+	`CategorySales` `r`
+GROUP BY
+	`r`.`Category`
+HAVING
+	SUM(CASE
+		WHEN `r`.`Year` = 2010 THEN `r`.`Amount`
+		ELSE NULL
+	END) > 16
+
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+SELECT
+	`r`.`Key_1`,
+	`r`.`Y2000`,
+	`r`.`Y2010`
 FROM
 	(
 		SELECT
 			SUM(CASE
-				WHEN `r`.`Year` = 2010 THEN `r`.`Amount`
+				WHEN `g_1`.`Year` = 2000 THEN `g_1`.`Amount`
 				ELSE NULL
-			END) as `Y2010`,
-			`r`.`Category` as `Key_1`
-		FROM
-			`CategorySales` `r`
-		GROUP BY
-			`r`.`Category`
-		HAVING
+			END) as `Y2000`,
+			`g_1`.`Category` as `Key_1`,
 			SUM(CASE
-				WHEN `r`.`Year` = 2010 THEN `r`.`Amount`
+				WHEN `g_1`.`Year` = 2010 THEN `g_1`.`Amount`
 				ELSE NULL
-			END) >= 15
-	) `r_1`
+			END) as `Y2010`
+		FROM
+			`CategorySales` `g_1`
+		GROUP BY
+			`g_1`.`Category`
+	) `r`
 ORDER BY
-	`r_1`.`Y2010` DESC
+	`r`.`Y2000`
 

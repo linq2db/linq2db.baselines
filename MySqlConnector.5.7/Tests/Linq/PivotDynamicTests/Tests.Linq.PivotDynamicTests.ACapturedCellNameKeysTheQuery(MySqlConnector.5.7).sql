@@ -1,0 +1,26 @@
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+SELECT
+	`r`.`Category`
+FROM
+	`CategorySales` `r`
+GROUP BY
+	`r`.`Category`
+HAVING
+	SUM(CASE
+		WHEN `r`.`Year` = 2000 THEN `r`.`Amount`
+		ELSE NULL
+	END) > 12
+
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+SELECT
+	`r`.`Category`
+FROM
+	`CategorySales` `r`
+GROUP BY
+	`r`.`Category`
+HAVING
+	SUM(CASE
+		WHEN `r`.`Year` = 2010 THEN `r`.`Amount`
+		ELSE NULL
+	END) > 12
+
