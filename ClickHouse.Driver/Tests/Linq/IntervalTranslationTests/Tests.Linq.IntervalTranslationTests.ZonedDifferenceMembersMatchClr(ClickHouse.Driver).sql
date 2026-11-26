@@ -8,8 +8,8 @@ INSERT INTO ZonedEventRow
 VALUES
 (
 	1,
-	toDateTime64('2026-01-01 10:00:00.000000', 6),
-	toDateTime64('2026-01-03 13:04:05.006000', 6)
+	toDateTime64('2026-01-01 10:00:00.000000', 6, 'UTC'),
+	toDateTime64('2026-01-03 13:04:05.006000', 6, 'UTC')
 )
 
 -- ClickHouse.Driver ClickHouse

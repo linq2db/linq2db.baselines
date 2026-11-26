@@ -2,12 +2,12 @@
 SELECT
 	e.Id,
 	CASE
-		WHEN Coalesce(j.Moment, toDateTime64('1900-01-01 00:00:00.0000000', 7)) > e.Moment
+		WHEN Coalesce(j.Moment, toDateTime64('1900-01-01 00:00:00.0000000', 7, 'UTC')) > e.Moment
 			THEN 'y'
 		ELSE 'n'
 	END,
 	CASE
-		WHEN Coalesce(j.Moment, toDateTime64('1900-01-01 00:00:00.0000000', 7)) <= e.Moment
+		WHEN Coalesce(j.Moment, toDateTime64('1900-01-01 00:00:00.0000000', 7, 'UTC')) <= e.Moment
 			THEN 'y'
 		ELSE 'n'
 	END
@@ -24,7 +24,7 @@ FROM
 
 -- ClickHouse.MySql ClickHouse
 SELECT
-	toYear(Coalesce(j.Moment, toDateTime64('1900-01-01 00:00:00.0000000', 7)))
+	toYear(Coalesce(j.Moment, toDateTime64('1900-01-01 00:00:00.0000000', 7, 'UTC')))
 FROM
 	MissedMomentEntity e
 		LEFT JOIN MissedMomentEntity j ON j.Id = e.Id + 1000
