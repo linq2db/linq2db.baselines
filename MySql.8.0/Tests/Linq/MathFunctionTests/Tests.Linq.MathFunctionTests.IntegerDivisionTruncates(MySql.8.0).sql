@@ -126,6 +126,29 @@ FROM
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 SELECT
+	`p`.`ID`
+FROM
+	`LinqDataTypes` `p`
+WHERE
+	((CAST(`p`.`ID` AS UNSIGNED) * 9 + 2) DIV 4) * 4 = CAST(`p`.`ID` AS UNSIGNED) * 9 + 2
+ORDER BY
+	`p`.`ID`
+
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80
+SELECT
+	`t1`.`ID`,
+	`t1`.`MoneyValue`,
+	`t1`.`DateTimeValue`,
+	`t1`.`BoolValue`,
+	`t1`.`GuidValue`,
+	`t1`.`BinaryValue`,
+	`t1`.`SmallIntValue`,
+	`t1`.`StringValue`
+FROM
+	`LinqDataTypes` `t1`
+
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80
+SELECT
 	(`p`.`ID` * 7 + 1) DIV 2
 FROM
 	`LinqDataTypes` `p`
