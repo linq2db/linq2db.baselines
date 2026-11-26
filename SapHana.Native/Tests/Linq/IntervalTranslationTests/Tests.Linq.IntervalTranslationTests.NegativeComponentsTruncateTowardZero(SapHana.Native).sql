@@ -29,7 +29,7 @@ VALUES
 
 -- SapHana.Native SapHana
 SELECT
-	CAST(CAST("r"."InSeconds" / 86400 AS BigInt) AS Integer),
+	CAST("r"."InSeconds" / 86400 AS Integer),
 	CAST(MOD(CAST("r"."InSeconds" / 3600 AS BigInt), 24) AS Integer),
 	CAST("r"."InSeconds" AS Double) / 3600
 FROM
