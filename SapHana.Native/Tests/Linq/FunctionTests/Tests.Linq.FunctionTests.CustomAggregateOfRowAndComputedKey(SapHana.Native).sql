@@ -2,7 +2,7 @@
 SELECT
 	"g_2"."Key_1",
 	SUM("g_2"."ChildID" + "g_2"."Key_1"),
-	SUM("g_2"."ChildID" + COALESCE("g_2"."Key_1", 0))
+	SUM("g_2"."ChildID" + Abs("g_2"."Key_1"))
 FROM
 	(
 		SELECT
