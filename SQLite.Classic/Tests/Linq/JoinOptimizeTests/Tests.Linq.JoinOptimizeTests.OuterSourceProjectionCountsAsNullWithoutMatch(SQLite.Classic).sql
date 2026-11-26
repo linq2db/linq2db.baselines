@@ -1,0 +1,44 @@
+﻿-- SQLite.Classic SQLite
+SELECT
+	[c_1].[ParentID],
+	COUNT(CASE
+		WHEN [v_1].[not_null] IS NULL THEN 1
+		ELSE NULL
+	END)
+FROM
+	[Parent] [gr]
+		CROSS JOIN [Child] [c_1]
+		LEFT JOIN (
+			SELECT
+				1 as [not_null],
+				[v].[ChildID]
+			FROM
+				[GrandChild] [v]
+		) [v_1] ON [v_1].[ChildID] = [c_1].[ChildID]
+WHERE
+	[c_1].[ParentID] = [gr].[ParentID]
+GROUP BY
+	[c_1].[ParentID]
+
+-- SQLite.Classic SQLite
+SELECT
+	[t1].[ParentID],
+	[t1].[Value1]
+FROM
+	[Parent] [t1]
+
+-- SQLite.Classic SQLite
+SELECT
+	[t1].[ParentID],
+	[t1].[ChildID]
+FROM
+	[Child] [t1]
+
+-- SQLite.Classic SQLite
+SELECT
+	[t1].[ParentID],
+	[t1].[ChildID],
+	[t1].[GrandChildID]
+FROM
+	[GrandChild] [t1]
+
