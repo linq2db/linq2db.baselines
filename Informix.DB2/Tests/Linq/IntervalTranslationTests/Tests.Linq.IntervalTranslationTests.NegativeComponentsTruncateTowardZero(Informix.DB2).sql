@@ -29,7 +29,7 @@ VALUES
 
 -- Informix.DB2 Informix
 SELECT FIRST 2
-	(r.InSeconds / 86400)::BigInt::Int,
+	(r.InSeconds / 86400)::Int,
 	Mod((r.InSeconds / 3600)::BigInt, 24)::Int,
 	r.InSeconds::Float / 3600
 FROM
