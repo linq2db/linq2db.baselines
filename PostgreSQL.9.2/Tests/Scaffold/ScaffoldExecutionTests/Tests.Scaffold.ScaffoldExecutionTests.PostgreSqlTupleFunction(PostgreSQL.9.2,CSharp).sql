@@ -1,9 +1,8 @@
 ﻿-- PostgreSQL.9.2 PostgreSQL
 SELECT
-	"TestFunctionParameters"(e."ParentID", e."ParentID")
+	"TestFunctionParameters"(e."ParentID", -100)
 FROM
 	"Parent" e
-LIMIT 1
 
 -- PostgreSQL.9.2 PostgreSQL
 SELECT
