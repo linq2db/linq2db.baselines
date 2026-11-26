@@ -1885,20 +1885,16 @@ DECLARE @InheritanceParentId Integer -- Int32
 SET     @InheritanceParentId = 1
 DECLARE @TypeDiscriminator Integer -- Int32
 SET     @TypeDiscriminator = NULL
-DECLARE @Name VarWChar -- String
-SET     @Name = NULL
 
 INSERT INTO [InheritanceParent]
 (
 	[InheritanceParentId],
-	[TypeDiscriminator],
-	[Name]
+	[TypeDiscriminator]
 )
 VALUES
 (
 	@InheritanceParentId,
-	@TypeDiscriminator,
-	@Name
+	@TypeDiscriminator
 )
 
 -- Access.Ace.OleDb AccessOleDb
@@ -1906,20 +1902,16 @@ DECLARE @InheritanceParentId Integer -- Int32
 SET     @InheritanceParentId = 2
 DECLARE @TypeDiscriminator Integer -- Int32
 SET     @TypeDiscriminator = 1
-DECLARE @Name VarWChar -- String
-SET     @Name = NULL
 
 INSERT INTO [InheritanceParent]
 (
 	[InheritanceParentId],
-	[TypeDiscriminator],
-	[Name]
+	[TypeDiscriminator]
 )
 VALUES
 (
 	@InheritanceParentId,
-	@TypeDiscriminator,
-	@Name
+	@TypeDiscriminator
 )
 
 -- Access.Ace.OleDb AccessOleDb
@@ -1950,22 +1942,18 @@ DECLARE @TypeDiscriminator Integer -- Int32
 SET     @TypeDiscriminator = NULL
 DECLARE @InheritanceParentId Integer -- Int32
 SET     @InheritanceParentId = 1
-DECLARE @Name VarWChar -- String
-SET     @Name = NULL
 
 INSERT INTO [InheritanceChild]
 (
 	[InheritanceChildId],
 	[TypeDiscriminator],
-	[InheritanceParentId],
-	[Name]
+	[InheritanceParentId]
 )
 VALUES
 (
 	@InheritanceChildId,
 	@TypeDiscriminator,
-	@InheritanceParentId,
-	@Name
+	@InheritanceParentId
 )
 
 -- Access.Ace.OleDb AccessOleDb
@@ -1975,22 +1963,18 @@ DECLARE @TypeDiscriminator Integer -- Int32
 SET     @TypeDiscriminator = 1
 DECLARE @InheritanceParentId Integer -- Int32
 SET     @InheritanceParentId = 2
-DECLARE @Name VarWChar -- String
-SET     @Name = NULL
 
 INSERT INTO [InheritanceChild]
 (
 	[InheritanceChildId],
 	[TypeDiscriminator],
-	[InheritanceParentId],
-	[Name]
+	[InheritanceParentId]
 )
 VALUES
 (
 	@InheritanceChildId,
 	@TypeDiscriminator,
-	@InheritanceParentId,
-	@Name
+	@InheritanceParentId
 )
 
 -- Access.Ace.OleDb AccessOleDb
@@ -3937,20 +3921,16 @@ DECLARE @InheritanceParentId Integer -- Int32
 SET     @InheritanceParentId = 1
 DECLARE @TypeDiscriminator Integer -- Int32
 SET     @TypeDiscriminator = NULL
-DECLARE @Name VarWChar -- String
-SET     @Name = NULL
 
 INSERT INTO [InheritanceParent]
 (
 	[InheritanceParentId],
-	[TypeDiscriminator],
-	[Name]
+	[TypeDiscriminator]
 )
 VALUES
 (
 	@InheritanceParentId,
-	@TypeDiscriminator,
-	@Name
+	@TypeDiscriminator
 )
 
 -- Access.Ace.OleDb.Data Access.Ace.OleDb AccessOleDb
@@ -3958,20 +3938,16 @@ DECLARE @InheritanceParentId Integer -- Int32
 SET     @InheritanceParentId = 2
 DECLARE @TypeDiscriminator Integer -- Int32
 SET     @TypeDiscriminator = 1
-DECLARE @Name VarWChar -- String
-SET     @Name = NULL
 
 INSERT INTO [InheritanceParent]
 (
 	[InheritanceParentId],
-	[TypeDiscriminator],
-	[Name]
+	[TypeDiscriminator]
 )
 VALUES
 (
 	@InheritanceParentId,
-	@TypeDiscriminator,
-	@Name
+	@TypeDiscriminator
 )
 
 -- Access.Ace.OleDb.Data Access.Ace.OleDb AccessOleDb
@@ -4002,22 +3978,18 @@ DECLARE @TypeDiscriminator Integer -- Int32
 SET     @TypeDiscriminator = NULL
 DECLARE @InheritanceParentId Integer -- Int32
 SET     @InheritanceParentId = 1
-DECLARE @Name VarWChar -- String
-SET     @Name = NULL
 
 INSERT INTO [InheritanceChild]
 (
 	[InheritanceChildId],
 	[TypeDiscriminator],
-	[InheritanceParentId],
-	[Name]
+	[InheritanceParentId]
 )
 VALUES
 (
 	@InheritanceChildId,
 	@TypeDiscriminator,
-	@InheritanceParentId,
-	@Name
+	@InheritanceParentId
 )
 
 -- Access.Ace.OleDb.Data Access.Ace.OleDb AccessOleDb
@@ -4027,22 +3999,18 @@ DECLARE @TypeDiscriminator Integer -- Int32
 SET     @TypeDiscriminator = 1
 DECLARE @InheritanceParentId Integer -- Int32
 SET     @InheritanceParentId = 2
-DECLARE @Name VarWChar -- String
-SET     @Name = NULL
 
 INSERT INTO [InheritanceChild]
 (
 	[InheritanceChildId],
 	[TypeDiscriminator],
-	[InheritanceParentId],
-	[Name]
+	[InheritanceParentId]
 )
 VALUES
 (
 	@InheritanceChildId,
 	@TypeDiscriminator,
-	@InheritanceParentId,
-	@Name
+	@InheritanceParentId
 )
 
 -- Access.Ace.OleDb.Data Access.Ace.OleDb AccessOleDb
