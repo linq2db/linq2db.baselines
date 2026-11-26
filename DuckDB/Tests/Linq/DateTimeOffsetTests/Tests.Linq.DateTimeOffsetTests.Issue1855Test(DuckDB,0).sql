@@ -49,5 +49,5 @@ SELECT
 FROM
 	Issue1855Table r
 WHERE
-	r.SomeDateTimeOffset + $interval * Interval '1 Second' >= $clientSideIn
+	(((r.SomeDateTimeOffset AT TIME ZONE 'UTC') + $interval * Interval '1 Second') AT TIME ZONE 'UTC') >= $clientSideIn
 
