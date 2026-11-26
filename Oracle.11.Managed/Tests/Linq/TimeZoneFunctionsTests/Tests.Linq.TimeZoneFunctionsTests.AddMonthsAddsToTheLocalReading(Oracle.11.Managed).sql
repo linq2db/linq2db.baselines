@@ -1,0 +1,8 @@
+﻿-- Oracle.11.Managed Oracle11
+SELECT
+	From_Tz(CAST(CAST(Add_Months(CAST(r."Dto" AS timestamp(7)), 1) - GreatEst(EXTRACT(DAY FROM Add_Months(CAST(r."Dto" AS timestamp(7)), 1)) - EXTRACT(DAY FROM CAST(r."Dto" AS timestamp(7))), 0) AS timestamp(7)) + NumToDsInterval(MOD(EXTRACT(SECOND FROM CAST(CAST(r."Dto" AS timestamp(7)) AS timestamp(7))), 1), 'SECOND') AS timestamp(7)), To_Char(r."Dto", 'TZH:TZM'))
+FROM
+	"ZonedRow" r
+WHERE
+	ROWNUM <= 2
+

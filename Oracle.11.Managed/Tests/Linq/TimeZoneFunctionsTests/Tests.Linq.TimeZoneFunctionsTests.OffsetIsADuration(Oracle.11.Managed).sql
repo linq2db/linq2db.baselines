@@ -1,0 +1,30 @@
+﻿-- Oracle.11.Managed Oracle11
+SELECT
+	r."Dto"
+FROM
+	"ZonedRow" r
+WHERE
+	ROWNUM <= 2
+
+-- Oracle.11.Managed Oracle11
+SELECT
+	CAST(CAST(EXTRACT(TIMEZONE_HOUR FROM r."Dto") * 60 + EXTRACT(TIMEZONE_MINUTE FROM r."Dto") AS Number(19)) * 600000000 AS Float) / 600000000D,
+	-(CAST(EXTRACT(TIMEZONE_HOUR FROM r."Dto") * 60 + EXTRACT(TIMEZONE_MINUTE FROM r."Dto") AS Number(19)) * 600000000)
+FROM
+	"ZonedRow" r
+WHERE
+	ROWNUM <= 2
+
+-- Oracle.11.Managed Oracle11
+DECLARE @Ticks Int64
+SET     @Ticks = 12000000000
+DECLARE @Ticks_1 Int64
+SET     @Ticks_1 = 36000000000
+
+SELECT
+	COUNT(*)
+FROM
+	"ZonedRow" r
+WHERE
+	CAST(CAST(EXTRACT(TIMEZONE_HOUR FROM r."Dto") * 60 + EXTRACT(TIMEZONE_MINUTE FROM r."Dto") AS Number(19)) * 600000000 + :Ticks AS Number(19)) = :Ticks_1
+
