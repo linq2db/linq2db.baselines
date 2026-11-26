@@ -1,0 +1,15 @@
+﻿-- SQLite.MS SQLite
+SELECT
+	(
+		SELECT
+			COUNT(*)
+		FROM
+			[BatchItem] [t1]
+	),
+	(
+		SELECT
+			MIN([t2].[Id])
+		FROM
+			[BatchItem] [t2]
+	)
+
