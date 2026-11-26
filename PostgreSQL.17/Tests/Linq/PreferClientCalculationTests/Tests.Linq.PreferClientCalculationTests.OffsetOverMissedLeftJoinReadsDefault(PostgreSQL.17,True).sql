@@ -16,7 +16,7 @@ FROM
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
-	Floor(Extract(year From Coalesce(j."Moment", '0001-01-01 00:00:00.000000+00:00'::timestamptz)))::Int
+	Floor(Extract(year From (Coalesce(j."Moment", '0001-01-01 00:00:00.000000+00:00'::timestamptz) AT TIME ZONE 'UTC')))::Int
 FROM
 	"MissedMomentEntity" e
 		LEFT JOIN "MissedMomentEntity" j ON j."Id" = e."Id" + 1000
