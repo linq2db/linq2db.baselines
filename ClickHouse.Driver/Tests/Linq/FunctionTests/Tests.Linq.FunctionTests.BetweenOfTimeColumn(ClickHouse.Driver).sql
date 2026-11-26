@@ -1,0 +1,20 @@
+﻿-- ClickHouse.Driver ClickHouse
+SELECT
+	r.Id
+FROM
+	BetweenTimeRow r
+WHERE
+	r.Value BETWEEN INTERVAL 5400 SECOND AND INTERVAL 10800 SECOND
+ORDER BY
+	r.Id
+
+-- ClickHouse.Driver ClickHouse
+SELECT
+	r.Id
+FROM
+	BetweenTimeRow r
+WHERE
+	r.Value NOT BETWEEN INTERVAL 5400 SECOND AND INTERVAL 10800 SECOND
+ORDER BY
+	r.Id
+
