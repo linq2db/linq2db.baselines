@@ -8,5 +8,5 @@ SELECT
 FROM
 	Person p
 WHERE
-	(Unwrap(CAST(p.PersonID AS Uint32)) & Unwrap(CAST(3 AS Uint32))) = 1
+	BitCast((BitCast(p.PersonID AS Uint32) & BitCast(3 AS Uint32)) AS Int32) = 1
 
