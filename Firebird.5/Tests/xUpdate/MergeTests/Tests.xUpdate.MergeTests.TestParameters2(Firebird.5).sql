@@ -229,13 +229,13 @@ SET     @Val2 = 2
 
 MERGE INTO "TestMerge1" "Target"
 USING (
-	SELECT 4 AS "Id" FROM rdb$database
+	SELECT 3 AS "Id" FROM rdb$database
+	UNION ALL
+	SELECT 4 FROM rdb$database
 	UNION ALL
 	SELECT 5 FROM rdb$database
 	UNION ALL
-	SELECT 6 FROM rdb$database
-	UNION ALL
-	SELECT 3 FROM rdb$database) "Source"
+	SELECT 6 FROM rdb$database) "Source"
 (
 	"Id"
 )
