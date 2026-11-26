@@ -19,7 +19,7 @@ FROM
 WHERE
 	CASE
 		WHEN (CAST([o].[Freight] AS Float) / 10) * 2 = ROUND((CAST([o].[Freight] AS Float) / 10) * 2, 1) AND CAST([o].[Freight] AS Float) / 10 <> ROUND(CAST([o].[Freight] AS Float) / 10, 1)
-			THEN ROUND(CAST(CAST([o].[Freight] AS Float) / 10 AS Float) / 2, 1) * 2
+			THEN ROUND((CAST([o].[Freight] AS Float) / 10) / 2, 1) * 2
 		ELSE ROUND(CAST([o].[Freight] AS Float) / 10, 1)
 	END = 6.5
 
