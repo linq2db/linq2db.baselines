@@ -1,0 +1,17 @@
+﻿-- PostgreSQL.9.2 PostgreSQL
+SELECT
+	r."Dto"
+FROM
+	"ZonedRow" r
+LIMIT 2
+
+-- PostgreSQL.9.2 PostgreSQL
+DECLARE @zone Text(13) -- String
+SET     @zone = 'Europe/Prague'
+
+SELECT
+	((r."Dto" AT TIME ZONE 'UTC') AT TIME ZONE :zone)
+FROM
+	"ZonedRow" r
+LIMIT 2
+

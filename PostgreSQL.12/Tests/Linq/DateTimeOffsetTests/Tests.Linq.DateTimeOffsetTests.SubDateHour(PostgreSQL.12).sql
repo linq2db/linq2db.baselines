@@ -1,6 +1,6 @@
 ﻿-- PostgreSQL.12 PostgreSQL12
 SELECT
-	Extract(epoch From (t."TransactionDate" + 100 * Interval '1 Hour' - t."TransactionDate")) / 3600
+	Extract(epoch From ((((t."TransactionDate" AT TIME ZONE 'UTC') + 100 * Interval '1 Hour') AT TIME ZONE 'UTC') - t."TransactionDate")) / 3600
 FROM
 	"Transactions" t
 

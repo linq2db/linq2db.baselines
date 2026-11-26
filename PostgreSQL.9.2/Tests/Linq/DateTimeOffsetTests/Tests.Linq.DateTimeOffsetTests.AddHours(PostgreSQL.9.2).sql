@@ -1,6 +1,6 @@
 ﻿-- PostgreSQL.9.2 PostgreSQL
 SELECT
-	Floor(Extract(hour From (t."TransactionDate" + 22 * Interval '1 Hour')))::Int
+	Floor(Extract(hour From ((t."TransactionDate" AT TIME ZONE 'UTC') + 22 * Interval '1 Hour')))::Int
 FROM
 	"Transactions" t
 

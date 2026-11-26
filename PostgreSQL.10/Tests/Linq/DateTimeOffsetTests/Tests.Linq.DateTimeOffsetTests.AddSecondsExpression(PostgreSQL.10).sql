@@ -3,7 +3,7 @@ DECLARE @Second Integer -- Int32
 SET     @Second = -35
 
 SELECT
-	Floor(Extract(second From (t."TransactionDate" + :Second * Interval '1 Second')))::Int
+	Floor(Extract(second From ((t."TransactionDate" AT TIME ZONE 'UTC') + :Second * Interval '1 Second')))::Int
 FROM
 	"Transactions" t
 
