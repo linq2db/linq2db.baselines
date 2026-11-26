@@ -1,0 +1,24 @@
+﻿-- SqlServer.2008
+SELECT
+	[g_1].[Category],
+	SUM(CASE
+		WHEN [g_1].[Year] = 2000 THEN [g_1].[Amount]
+		ELSE NULL
+	END),
+	SUM(CASE
+		WHEN [g_1].[Year] = 2010 THEN [g_1].[Amount]
+		ELSE NULL
+	END),
+	SUM(CASE
+		WHEN [g_1].[Region] = N'EU' THEN [g_1].[Amount]
+		ELSE NULL
+	END),
+	SUM(CASE
+		WHEN [g_1].[Region] = N'2000' THEN [g_1].[Amount]
+		ELSE NULL
+	END)
+FROM
+	[RegionSales] [g_1]
+GROUP BY
+	[g_1].[Category]
+
