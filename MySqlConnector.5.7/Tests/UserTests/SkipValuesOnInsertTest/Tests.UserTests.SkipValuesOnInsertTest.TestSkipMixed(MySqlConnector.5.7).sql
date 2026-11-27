@@ -6,7 +6,7 @@ SET     @Name = 'Jason'
 DECLARE @Age Int32
 SET     @Age = 20
 
-INSERT INTO `PR_1598_Mixed_Table`
+INSERT INTO `SkipOnInsertMixed`
 (
 	`Id`,
 	`Name`,
@@ -25,7 +25,7 @@ SELECT
 	`t`.`Name`,
 	`t`.`Age`
 FROM
-	`PR_1598_Mixed_Table` `t`
+	`SkipOnInsertMixed` `t`
 WHERE
 	`t`.`Id` = 1
 LIMIT 1
@@ -37,7 +37,7 @@ DECLARE @Id Int32
 SET     @Id = 1
 
 UPDATE
-	`PR_1598_Mixed_Table` `t1`
+	`SkipOnInsertMixed` `t1`
 SET
 	`t1`.`Age` = @Age
 WHERE
@@ -49,7 +49,7 @@ SELECT
 	`t`.`Name`,
 	`t`.`Age`
 FROM
-	`PR_1598_Mixed_Table` `t`
+	`SkipOnInsertMixed` `t`
 WHERE
 	`t`.`Id` = 1
 LIMIT 1
@@ -60,7 +60,7 @@ SET     @Id = 2
 DECLARE @Age Int32
 SET     @Age = 25
 
-INSERT INTO `PR_1598_Mixed_Table`
+INSERT INTO `SkipOnInsertMixed`
 (
 	`Id`,
 	`Age`
@@ -77,7 +77,7 @@ SELECT
 	`t`.`Name`,
 	`t`.`Age`
 FROM
-	`PR_1598_Mixed_Table` `t`
+	`SkipOnInsertMixed` `t`
 WHERE
 	`t`.`Id` = 2
 LIMIT 1
@@ -91,7 +91,7 @@ DECLARE @Id Int32
 SET     @Id = 2
 
 UPDATE
-	`PR_1598_Mixed_Table` `t1`
+	`SkipOnInsertMixed` `t1`
 SET
 	`t1`.`Name` = @Name,
 	`t1`.`Age` = @Age
@@ -104,7 +104,7 @@ SELECT
 	`t`.`Name`,
 	`t`.`Age`
 FROM
-	`PR_1598_Mixed_Table` `t`
+	`SkipOnInsertMixed` `t`
 WHERE
 	`t`.`Id` = 2
 LIMIT 1

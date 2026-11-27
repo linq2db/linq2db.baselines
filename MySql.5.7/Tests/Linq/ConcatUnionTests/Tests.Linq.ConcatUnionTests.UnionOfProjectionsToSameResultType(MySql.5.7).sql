@@ -1,0 +1,19 @@
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
+SELECT
+	CAST(`c_1`.`Id` AS CHAR(11)),
+	`c_1`.`Name`
+FROM
+	`UnionSourceCustomer` `c_1`
+UNION
+SELECT
+	CAST(`o`.`Id` AS CHAR(11)),
+	`o`.`ProductName`
+FROM
+	`UnionSourceOrder` `o`
+UNION
+SELECT
+	CAST(`p`.`Id` AS CHAR(11)),
+	`p`.`Name`
+FROM
+	`UnionSourceProduct` `p`
+

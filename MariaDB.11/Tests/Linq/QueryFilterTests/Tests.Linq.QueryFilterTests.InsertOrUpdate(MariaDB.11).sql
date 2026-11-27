@@ -1,5 +1,5 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-INSERT INTO `Issue5289Table`
+INSERT INTO `SoftDeletedPictureTable`
 (
 	`Id`,
 	`PictureId`,
@@ -20,13 +20,13 @@ SELECT
 	`r`.`PictureId`,
 	`r`.`Deleted`
 FROM
-	`Issue5289Table` `r`
+	`SoftDeletedPictureTable` `r`
 WHERE
 	NOT `r`.`Deleted` AND `r`.`Id` = 1
 LIMIT 2
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-INSERT INTO `Issue5289Table`
+INSERT INTO `SoftDeletedPictureTable`
 (
 	`Id`,
 	`PictureId`,
@@ -47,7 +47,7 @@ SELECT
 	`r`.`PictureId`,
 	`r`.`Deleted`
 FROM
-	`Issue5289Table` `r`
+	`SoftDeletedPictureTable` `r`
 WHERE
 	NOT `r`.`Deleted` AND `r`.`Id` = 1
 LIMIT 2

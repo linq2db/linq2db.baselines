@@ -1,5 +1,5 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-INSERT INTO `Issue5289Table`
+INSERT INTO `SoftDeletedPictureTable`
 (
 	`Id`,
 	`PictureId`,
@@ -20,13 +20,13 @@ SELECT
 	`r`.`PictureId`,
 	`r`.`Deleted`
 FROM
-	`Issue5289Table` `r`
+	`SoftDeletedPictureTable` `r`
 WHERE
 	NOT `r`.`Deleted` AND `r`.`Id` = 1
 LIMIT 2
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-INSERT INTO `Issue5289Table`
+INSERT INTO `SoftDeletedPictureTable`
 (
 	`Id`,
 	`PictureId`,
@@ -47,7 +47,7 @@ SELECT
 	`r`.`PictureId`,
 	`r`.`Deleted`
 FROM
-	`Issue5289Table` `r`
+	`SoftDeletedPictureTable` `r`
 WHERE
 	NOT `r`.`Deleted` AND `r`.`Id` = 1
 LIMIT 2

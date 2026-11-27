@@ -1,5 +1,5 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-INSERT INTO `Issue5975Row`
+INSERT INTO `ShiftedDateRow`
 (
 	`Id`,
 	`Plain`,
@@ -18,6 +18,6 @@ SELECT
 	`t1`.`Plain`,
 	`t1`.`Date`
 FROM
-	`Issue5975Row` `t1`
+	`ShiftedDateRow` `t1`
 LIMIT 2
 
