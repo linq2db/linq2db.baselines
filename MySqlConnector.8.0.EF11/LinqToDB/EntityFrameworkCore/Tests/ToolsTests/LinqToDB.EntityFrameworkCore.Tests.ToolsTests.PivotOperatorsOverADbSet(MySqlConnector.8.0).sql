@@ -65,3 +65,11 @@ FROM (
 ) AS `p0`
 
 
+Parameters:
+@ef_filter__p1='?' (DbType = Boolean), @ef_filter__p5='?' (DbType = Boolean)
+
+SELECT COUNT(*)
+FROM `Products` AS `p`
+WHERE ((@ef_filter__p1 OR (`p`.`ProductID` > 2)) AND (@ef_filter__p1 OR NOT (`p`.`Discontinued`))) AND ((@ef_filter__p5 OR NOT (`p`.`IsDeleted`)) OR NOT (`p`.`IsDeleted`))
+
+
