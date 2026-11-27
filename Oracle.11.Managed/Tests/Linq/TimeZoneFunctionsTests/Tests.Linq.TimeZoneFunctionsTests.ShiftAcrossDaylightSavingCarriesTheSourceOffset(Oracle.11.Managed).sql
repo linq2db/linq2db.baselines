@@ -1,0 +1,8 @@
+﻿-- Oracle.11.Managed Oracle11
+SELECT
+	From_Tz(CAST(CAST(Add_Months(CAST((r."Dto" AT TIME ZONE 'Europe/Prague') AS timestamp(7)), 6) - GreatEst(EXTRACT(DAY FROM Add_Months(CAST((r."Dto" AT TIME ZONE 'Europe/Prague') AS timestamp(7)), 6)) - EXTRACT(DAY FROM CAST((r."Dto" AT TIME ZONE 'Europe/Prague') AS timestamp(7))), 0) AS timestamp) + NumToDsInterval(MOD(EXTRACT(SECOND FROM CAST(CAST((r."Dto" AT TIME ZONE 'Europe/Prague') AS timestamp(7)) AS timestamp(7))), 1), 'SECOND') AS timestamp(7)), To_Char((r."Dto" AT TIME ZONE 'Europe/Prague'), 'TZH:TZM'))
+FROM
+	"ZonedRow" r
+WHERE
+	ROWNUM <= 2
+
