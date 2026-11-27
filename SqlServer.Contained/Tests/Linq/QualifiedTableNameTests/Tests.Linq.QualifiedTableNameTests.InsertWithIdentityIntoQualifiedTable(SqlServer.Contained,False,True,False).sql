@@ -1,0 +1,21 @@
+﻿-- SqlServer.Contained SqlServer.2025
+SELECT TOP (1)
+	DB_NAME()
+FROM
+	[LinqDataTypes] [t1]
+
+-- SqlServer.Contained SqlServer.2025
+DECLARE @Value Int -- Int32
+SET     @Value = 10
+
+INSERT INTO [TestDataContained]..[QualifiedIdTable]
+(
+	[Value]
+)
+VALUES
+(
+	@Value
+)
+
+SELECT SCOPE_IDENTITY()
+

@@ -1,0 +1,12 @@
+﻿-- SqlServer.Contained SqlServer.2025
+SELECT DISTINCT
+	CAST([g_1].[dt] AS Time)
+FROM
+	[DateTimeOffsetRecord] [g_1]
+
+-- SqlServer.Contained SqlServer.2025
+SELECT DISTINCT
+	CAST([r].[dt] AS Time)
+FROM
+	[DateTimeOffsetRecord] [r]
+
