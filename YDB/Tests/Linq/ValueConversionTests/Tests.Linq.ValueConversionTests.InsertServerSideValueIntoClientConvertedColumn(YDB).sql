@@ -1,5 +1,5 @@
 ﻿-- YDB Ydb
-INSERT INTO Issue5975Row
+INSERT INTO ShiftedDateRow
 (
 	Id,
 	Plain,
@@ -18,6 +18,6 @@ SELECT
 	t1.Plain as Plain,
 	t1.`Date` as Date_1
 FROM
-	Issue5975Row t1
+	ShiftedDateRow t1
 LIMIT 2
 

@@ -8,7 +8,7 @@ SET     Age = 20
 DECLARE Gender Text(4) -- String
 SET     Gender = 'Male'u
 
-INSERT INTO PR_1598_Insert_Enum_Table
+INSERT INTO SkipOnInsertEnum
 (
 	Id,
 	Name,
@@ -30,7 +30,7 @@ SELECT
 	t.Age as Age,
 	t.Gender as Gender
 FROM
-	PR_1598_Insert_Enum_Table t
+	SkipOnInsertEnum t
 WHERE
 	t.Id = 1
 LIMIT 1
@@ -43,7 +43,7 @@ SET     Name = 'Jenny'u
 DECLARE Age Int32
 SET     Age = 25
 
-INSERT INTO PR_1598_Insert_Enum_Table
+INSERT INTO SkipOnInsertEnum
 (
 	Id,
 	Name,
@@ -63,7 +63,7 @@ SELECT
 	t.Age as Age,
 	t.Gender as Gender
 FROM
-	PR_1598_Insert_Enum_Table t
+	SkipOnInsertEnum t
 WHERE
 	t.Id = 2
 LIMIT 1

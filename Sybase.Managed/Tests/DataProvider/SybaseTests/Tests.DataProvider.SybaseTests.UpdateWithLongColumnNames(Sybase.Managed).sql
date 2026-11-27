@@ -1,0 +1,14 @@
+﻿-- Sybase.Managed Sybase
+DECLARE @TPPSLT_QUOTE_DURATION_MULT Decimal(2, 0)
+SET     @TPPSLT_QUOTE_DURATION_MULT = 10
+DECLARE @TPPSLT_USER_ID UniVarChar(11) -- String
+SET     @TPPSLT_USER_ID = 'IamHandsome'
+
+UPDATE
+	[LongColumnNameRecord]
+SET
+	[TPPSLT_QUOTE_DURATION_MULTI] = @TPPSLT_QUOTE_DURATION_MULT,
+	[TPPSLT_USER_ID] = @TPPSLT_USER_ID
+WHERE
+	[LongColumnNameRecord].[TPPSLT_TYPE] = '4' AND [LongColumnNameRecord].[TPPSLT_KIND_ID] = 'AAA'
+

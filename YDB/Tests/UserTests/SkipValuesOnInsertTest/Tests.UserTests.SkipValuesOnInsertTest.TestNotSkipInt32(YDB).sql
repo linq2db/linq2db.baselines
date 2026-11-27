@@ -6,7 +6,7 @@ SET     Name = 'Smith'u
 DECLARE Age Int32
 SET     Age = 55
 
-INSERT INTO PR_1598_Insert_Table
+INSERT INTO SkipOnInsertTable
 (
 	Id,
 	Name,
@@ -25,7 +25,7 @@ SELECT
 	t.Name as Name,
 	t.Age as Age
 FROM
-	PR_1598_Insert_Table t
+	SkipOnInsertTable t
 WHERE
 	t.Id = 1
 LIMIT 1
@@ -38,7 +38,7 @@ SET     Name = 'Tommy'u
 DECLARE Age Int32
 SET     Age = 50
 
-INSERT INTO PR_1598_Insert_Table
+INSERT INTO SkipOnInsertTable
 (
 	Id,
 	Name,
@@ -57,7 +57,7 @@ SELECT
 	t.Name as Name,
 	t.Age as Age
 FROM
-	PR_1598_Insert_Table t
+	SkipOnInsertTable t
 WHERE
 	t.Id = 2
 LIMIT 1
