@@ -1,13 +1,13 @@
 ﻿-- SqlCe
 UPDATE
-	[Issue5289Table]
+	[SoftDeletedPictureTable]
 SET
 	[PictureId] = 3
 WHERE
-	[Issue5289Table].[Id] = 1
+	[SoftDeletedPictureTable].[Id] = 1
 
 -- SqlCe
-INSERT INTO [Issue5289Table]
+INSERT INTO [SoftDeletedPictureTable]
 (
 	[Id],
 	[PictureId],
@@ -26,17 +26,17 @@ SELECT TOP (2)
 	[r].[PictureId],
 	[r].[Deleted]
 FROM
-	[Issue5289Table] [r]
+	[SoftDeletedPictureTable] [r]
 WHERE
 	[r].[Deleted] = 0 AND [r].[Id] = 1
 
 -- SqlCe
 UPDATE
-	[Issue5289Table]
+	[SoftDeletedPictureTable]
 SET
 	[PictureId] = 3
 WHERE
-	[Issue5289Table].[Id] = 1
+	[SoftDeletedPictureTable].[Id] = 1
 
 -- SqlCe
 SELECT TOP (2)
@@ -44,7 +44,7 @@ SELECT TOP (2)
 	[r].[PictureId],
 	[r].[Deleted]
 FROM
-	[Issue5289Table] [r]
+	[SoftDeletedPictureTable] [r]
 WHERE
 	[r].[Deleted] = 0 AND [r].[Id] = 1
 
