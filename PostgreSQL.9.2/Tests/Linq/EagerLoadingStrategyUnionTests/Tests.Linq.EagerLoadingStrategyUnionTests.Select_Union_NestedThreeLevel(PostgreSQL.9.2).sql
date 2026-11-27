@@ -1,5 +1,5 @@
 ﻿-- PostgreSQL.9.2 PostgreSQL
-WITH "CTE_1" ("Id", field, "CompanyName")
+WITH "CTE_1" ("Id", field, "Name")
 AS
 (
 	SELECT
@@ -142,7 +142,7 @@ FROM
 			t7.field as "Item3",
 			t7."Id" as "Item2",
 			t7."Id" as "Item4",
-			t7."CompanyName" as "Item5",
+			t7."Name" as "Item5",
 			NULL::Int as "Item6",
 			NULL::Int as "Item7"
 		FROM
