@@ -1,0 +1,24 @@
+﻿-- SqlServer.2022.MS SqlServer.2022
+SELECT
+	SUM(IIF([r].[Year] = 2010, [r].[Amount], NULL))
+FROM
+	[Sales] [r]
+GROUP BY
+	[r].[Category]
+
+-- SqlServer.2022.MS SqlServer.2022
+SELECT
+	SUM(IIF([r].[Year] = 2010, [r].[Amount], NULL))
+FROM
+	[Sales] [r]
+GROUP BY
+	[r].[Category]
+
+-- SqlServer.2022.MS SqlServer.2022
+SELECT
+	CAST(Floor(SUM(IIF([r].[Year] = 2010, [r].[Amount], NULL))) AS Int)
+FROM
+	[Sales] [r]
+GROUP BY
+	[r].[Category]
+
