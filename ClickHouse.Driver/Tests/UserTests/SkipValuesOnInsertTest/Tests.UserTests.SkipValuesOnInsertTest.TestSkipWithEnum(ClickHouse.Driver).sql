@@ -1,5 +1,5 @@
 ﻿-- ClickHouse.Driver ClickHouse
-INSERT INTO PR_1598_Insert_Enum_Table
+INSERT INTO SkipOnInsertEnum
 (
 	Id,
 	Name,
@@ -21,13 +21,13 @@ SELECT
 	t.Age,
 	t.Gender
 FROM
-	PR_1598_Insert_Enum_Table t
+	SkipOnInsertEnum t
 WHERE
 	t.Id = 1
 LIMIT 1
 
 -- ClickHouse.Driver ClickHouse
-INSERT INTO PR_1598_Insert_Enum_Table
+INSERT INTO SkipOnInsertEnum
 (
 	Id,
 	Name,
@@ -47,7 +47,7 @@ SELECT
 	t.Age,
 	t.Gender
 FROM
-	PR_1598_Insert_Enum_Table t
+	SkipOnInsertEnum t
 WHERE
 	t.Id = 2
 LIMIT 1

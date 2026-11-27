@@ -1,5 +1,5 @@
 ﻿-- ClickHouse.MySql ClickHouse
-INSERT INTO PR_1598_Insert_Null_Table
+INSERT INTO SkipOnInsertNulls
 (
 	Id,
 	Name
@@ -16,7 +16,7 @@ SELECT
 	t.Name,
 	t.Age
 FROM
-	PR_1598_Insert_Null_Table t
+	SkipOnInsertNulls t
 WHERE
 	t.Id = 1
 LIMIT 1

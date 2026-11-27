@@ -1,5 +1,5 @@
 ﻿-- ClickHouse.Driver ClickHouse
-INSERT INTO PR_1598_Update_Null_Table
+INSERT INTO SkipOnUpdateNulls
 (
 	Id,
 	Name,
@@ -18,14 +18,14 @@ SELECT
 	t.Name,
 	t.Age
 FROM
-	PR_1598_Update_Null_Table t
+	SkipOnUpdateNulls t
 WHERE
 	t.Id = 1
 LIMIT 1
 
 -- ClickHouse.Driver ClickHouse
 ALTER TABLE
-	PR_1598_Update_Null_Table
+	SkipOnUpdateNulls
 UPDATE
 	Name = 'Jack',
 	Age = 2
@@ -38,14 +38,14 @@ SELECT
 	t.Name,
 	t.Age
 FROM
-	PR_1598_Update_Null_Table t
+	SkipOnUpdateNulls t
 WHERE
 	t.Id = 1
 LIMIT 1
 
 -- ClickHouse.Driver ClickHouse
 ALTER TABLE
-	PR_1598_Update_Null_Table
+	SkipOnUpdateNulls
 UPDATE
 	Name = 'Franki'
 WHERE
@@ -57,7 +57,7 @@ SELECT
 	t.Name,
 	t.Age
 FROM
-	PR_1598_Update_Null_Table t
+	SkipOnUpdateNulls t
 WHERE
 	t.Id = 1
 LIMIT 1

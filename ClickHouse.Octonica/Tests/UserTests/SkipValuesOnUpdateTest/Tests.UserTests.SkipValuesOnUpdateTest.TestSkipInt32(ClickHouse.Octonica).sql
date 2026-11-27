@@ -1,5 +1,5 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-INSERT INTO PR_1598_Update_Table
+INSERT INTO SkipOnUpdateTable
 (
 	Id,
 	Name,
@@ -18,14 +18,14 @@ SELECT
 	t.Name,
 	t.Age
 FROM
-	PR_1598_Update_Table t
+	SkipOnUpdateTable t
 WHERE
 	t.Id = 1
 LIMIT 1
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
-	PR_1598_Update_Table
+	SkipOnUpdateTable
 UPDATE
 	Name = 'Franki',
 	Age = 15
@@ -38,14 +38,14 @@ SELECT
 	t.Name,
 	t.Age
 FROM
-	PR_1598_Update_Table t
+	SkipOnUpdateTable t
 WHERE
 	t.Id = 1
 LIMIT 1
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
-	PR_1598_Update_Table
+	SkipOnUpdateTable
 UPDATE
 	Name = 'Jack'
 WHERE
@@ -57,7 +57,7 @@ SELECT
 	t.Name,
 	t.Age
 FROM
-	PR_1598_Update_Table t
+	SkipOnUpdateTable t
 WHERE
 	t.Id = 1
 LIMIT 1

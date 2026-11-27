@@ -1,5 +1,5 @@
 ﻿-- ClickHouse.Driver ClickHouse
-INSERT INTO PR_1598_Insert_Fluent_Table
+INSERT INTO SkipOnInsertFluent
 (
 	Id,
 	Name
@@ -16,7 +16,7 @@ SELECT
 	t.Name,
 	t.Age
 FROM
-	PR_1598_Insert_Fluent_Table t
+	SkipOnInsertFluent t
 WHERE
 	t.Id = 1
 LIMIT 1
