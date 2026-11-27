@@ -8,6 +8,9 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	Position('p' in Substring(p."LastName", 2, Length(p."LastName") - 2)) + 1 = 3 AND
+	CASE
+		WHEN Position('p' in Substring(p."LastName", 2)) = 0 THEN 0
+		ELSE Position('p' in Substring(p."LastName", 2)) + 1
+	END = 3 AND
 	p."PersonID" = 1
 

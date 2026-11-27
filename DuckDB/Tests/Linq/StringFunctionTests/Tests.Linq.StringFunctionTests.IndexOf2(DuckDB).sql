@@ -8,6 +8,9 @@ SELECT
 FROM
 	Person p
 WHERE
-	Position('e' in Substring(p.LastName, 3, Length(p.LastName) - 3)) + 2 = 5 AND
+	CASE
+		WHEN Position('e' in Substring(p.LastName, 3)) = 0 THEN 0
+		ELSE Position('e' in Substring(p.LastName, 3)) + 2
+	END = 5 AND
 	p.PersonID = 2
 

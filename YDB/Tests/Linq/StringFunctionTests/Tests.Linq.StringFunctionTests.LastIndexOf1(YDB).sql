@@ -8,6 +8,7 @@ SELECT
 FROM
 	Person p
 WHERE
-	Unwrap(CAST(Unicode::GetLength(p.LastName) AS Int32)) - (Unicode::Find(Unicode::Reverse(p.LastName), 'p'u) + 1) = 2 AND
-	Unicode::Find(p.LastName, 'p'u) + 1 <> 0 AND p.PersonID = 1
+	Unwrap(CAST(Unicode::GetLength(p.LastName) AS Int32)) - IF(Unicode::Reverse(p.LastName) IS NULL OR 'p'u IS NULL, NULL, Coalesce(CAST(Unicode::Find(Unicode::Reverse(p.LastName), Coalesce('p'u, ''u)) AS Int32) + 1, 0)) = 2 AND
+	IF(p.LastName IS NULL OR 'p'u IS NULL, NULL, Coalesce(CAST(Unicode::Find(p.LastName, Coalesce('p'u, ''u)) AS Int32) + 1, 0)) <> 0 AND
+	p.PersonID = 1
 
