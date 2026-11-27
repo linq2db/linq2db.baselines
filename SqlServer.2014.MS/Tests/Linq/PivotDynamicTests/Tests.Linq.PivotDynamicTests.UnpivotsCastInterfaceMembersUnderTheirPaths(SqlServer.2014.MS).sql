@@ -1,0 +1,35 @@
+﻿-- SqlServer.2014.MS SqlServer.2014
+SELECT
+	[t1].[Category],
+	CAST(N'Total.Y2000' AS NVarChar(4000)),
+	[t1].[Value_1]
+FROM
+	(
+		SELECT
+			SUM(IIF([g_1].[Year] = 2000, [g_1].[Amount], NULL)) as [Value_1],
+			[g_1].[Category]
+		FROM
+			[CategorySales] [g_1]
+		GROUP BY
+			[g_1].[Category]
+	) [t1]
+WHERE
+	[t1].[Value_1] IS NOT NULL
+UNION ALL
+SELECT
+	[t2].[Category],
+	CAST(N'Top.Y2000' AS NVarChar(4000)),
+	[t2].[Y2000]
+FROM
+	(
+		SELECT
+			MAX(IIF([g_2].[Year] = 2000, [g_2].[Amount], NULL)) as [Y2000],
+			[g_2].[Category]
+		FROM
+			[CategorySales] [g_2]
+		GROUP BY
+			[g_2].[Category]
+	) [t2]
+WHERE
+	[t2].[Y2000] IS NOT NULL
+
