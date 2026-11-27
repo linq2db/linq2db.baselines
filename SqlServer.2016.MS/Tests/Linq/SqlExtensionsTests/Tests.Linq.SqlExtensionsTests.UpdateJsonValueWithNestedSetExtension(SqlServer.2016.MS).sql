@@ -1,0 +1,52 @@
+﻿-- SqlServer.2016.MS SqlServer.2016
+DECLARE @Id UniqueIdentifier -- Guid
+SET     @Id = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
+DECLARE @Json NVarChar(4000) -- String
+SET     @Json = N'{"Number":1,"String":"Test"}'
+
+INSERT INTO [JsonPayloadTable]
+(
+	[Id],
+	[Json]
+)
+VALUES
+(
+	@Id,
+	@Json
+)
+
+-- SqlServer.2016.MS SqlServer.2016
+DECLARE @Id UniqueIdentifier -- Guid
+SET     @Id = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
+
+SELECT TOP (1)
+	[x].[Id],
+	[x].[Json]
+FROM
+	[JsonPayloadTable] [x]
+WHERE
+	[x].[Id] = @Id
+
+-- SqlServer.2016.MS SqlServer.2016
+DECLARE @Id UniqueIdentifier -- Guid
+SET     @Id = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
+
+UPDATE
+	[JsonPayloadTable]
+SET
+	[Json] = JSON_MODIFY(JSON_MODIFY([JsonPayloadTable].[Json], N'$.Number', 10), N'$.String', N'Test1')
+WHERE
+	[JsonPayloadTable].[Id] = @Id
+
+-- SqlServer.2016.MS SqlServer.2016
+DECLARE @Id UniqueIdentifier -- Guid
+SET     @Id = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
+
+SELECT TOP (1)
+	[x].[Id],
+	[x].[Json]
+FROM
+	[JsonPayloadTable] [x]
+WHERE
+	[x].[Id] = @Id
+
