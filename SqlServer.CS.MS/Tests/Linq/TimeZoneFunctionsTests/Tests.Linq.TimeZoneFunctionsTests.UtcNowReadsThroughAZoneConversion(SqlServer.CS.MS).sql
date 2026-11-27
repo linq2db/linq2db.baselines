@@ -1,0 +1,18 @@
+﻿-- SqlServer.CS.MS SqlServer.2025
+SELECT TOP (2)
+	CAST((SYSDATETIMEOFFSET() AT TIME ZONE 'UTC' AT TIME ZONE N'UTC') AS DateTime2)
+FROM
+	[ZonedRow] [r]
+
+-- SqlServer.CS.MS SqlServer.2025
+SELECT TOP (2)
+	CAST((SYSDATETIMEOFFSET() AT TIME ZONE 'UTC' AT TIME ZONE N'UTC') AS DateTime2)
+FROM
+	[ZonedRow] [r]
+
+-- SqlServer.CS.MS SqlServer.2025
+SELECT TOP (2)
+	SwitchOffset(SYSDATETIMEOFFSET() AT TIME ZONE 'UTC', N'+02:00')
+FROM
+	[ZonedRow] [r]
+
