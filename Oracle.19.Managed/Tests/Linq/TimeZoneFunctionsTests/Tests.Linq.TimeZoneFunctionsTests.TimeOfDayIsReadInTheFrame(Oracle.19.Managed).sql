@@ -7,7 +7,7 @@ FETCH NEXT 2 ROWS ONLY
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
 SELECT
-	TO_CHAR(CAST(r."Dto" AS timestamp(7)), 'HH24:MI:SS') as "c1"
+	TO_CHAR(CAST(r."Dto" AS timestamp(7)), 'HH24:MI:SS.FF7') as "c1"
 FROM
 	"ZonedRow" r
 FETCH NEXT 2 ROWS ONLY
