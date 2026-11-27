@@ -1,0 +1,14 @@
+﻿-- DuckDB
+DECLARE $min BIGINT -- Int64
+SET     $min = -9223372036854775808
+
+SELECT
+	$min
+
+-- DuckDB
+DECLARE $max BIGINT -- Int64
+SET     $max = 9223372036854775807
+
+SELECT
+	$max
+

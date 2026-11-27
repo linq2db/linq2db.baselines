@@ -3,11 +3,11 @@ DECLARE $test TIMESTAMP -- DateTime2
 SET     $test = '2026-06-06 02:01:01.000000'::TIMESTAMP
 
 UPDATE
-	Issue5975Row
+	ShiftedDateRow
 SET
 	"Date" = CASE
-		WHEN Issue5975Row."Date" IS NOT NULL THEN $test
-		ELSE Issue5975Row.Plain + Interval '1 Day'
+		WHEN ShiftedDateRow."Date" IS NOT NULL THEN $test
+		ELSE ShiftedDateRow.Plain + Interval '1 Day'
 	END
 
 -- DuckDB
@@ -16,7 +16,7 @@ SELECT
 	t1.Plain,
 	t1."Date"
 FROM
-	Issue5975Row t1
+	ShiftedDateRow t1
 ORDER BY
 	t1.Id
 

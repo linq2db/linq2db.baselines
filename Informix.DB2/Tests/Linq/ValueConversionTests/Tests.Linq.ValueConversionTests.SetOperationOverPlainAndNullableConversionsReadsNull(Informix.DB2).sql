@@ -8,13 +8,13 @@ FROM
 			r.Id,
 			NVL(r."Date", NULL) as Date_1
 		FROM
-			Issue5976RowC r
+			PlainConvertedDateRow r
 		UNION ALL
 		SELECT
 			r_1.Id,
 			r_1."Date" as Date_1
 		FROM
-			Issue5976RowA r_1
+			NullableConvertedDateRowA r_1
 	) t1
 ORDER BY
 	t1.Id

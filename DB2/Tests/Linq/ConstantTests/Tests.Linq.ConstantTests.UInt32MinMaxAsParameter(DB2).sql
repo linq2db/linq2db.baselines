@@ -1,0 +1,16 @@
+﻿-- DB2 DB2.LUW DB2LUW
+DECLARE @min BigInt(4) -- Int64
+SET     @min = 0
+
+SELECT
+	CAST(@min AS BigInt)
+FROM SYSIBM.SYSDUMMY1
+
+-- DB2 DB2.LUW DB2LUW
+DECLARE @max BigInt(4) -- Int64
+SET     @max = 4294967295
+
+SELECT
+	CAST(@max AS BigInt)
+FROM SYSIBM.SYSDUMMY1
+

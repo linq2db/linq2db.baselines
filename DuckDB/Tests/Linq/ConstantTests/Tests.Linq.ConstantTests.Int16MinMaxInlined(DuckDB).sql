@@ -1,0 +1,16 @@
+﻿-- DuckDB
+SELECT
+	-32768
+
+-- DuckDB
+SELECT
+	32767
+
+-- DuckDB
+SELECT
+	-32768
+
+-- DuckDB
+SELECT
+	32767
+

@@ -1,0 +1,12 @@
+﻿-- DuckDB
+DECLARE $take INTEGER -- Int32
+SET     $take = 100
+
+SELECT
+	r.PersonID
+FROM
+	Person r
+ORDER BY
+	r.PersonID
+LIMIT $take
+
