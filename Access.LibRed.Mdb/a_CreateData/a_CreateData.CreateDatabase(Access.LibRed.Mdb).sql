@@ -1885,20 +1885,16 @@ DECLARE @InheritanceParentId  -- Int32
 SET     @InheritanceParentId = 1
 DECLARE @TypeDiscriminator  -- Int32
 SET     @TypeDiscriminator = NULL
-DECLARE @Name NVarChar -- String
-SET     @Name = NULL
 
 INSERT INTO [InheritanceParent]
 (
 	[InheritanceParentId],
-	[TypeDiscriminator],
-	[Name]
+	[TypeDiscriminator]
 )
 VALUES
 (
 	@InheritanceParentId,
-	@TypeDiscriminator,
-	@Name
+	@TypeDiscriminator
 )
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
@@ -1906,20 +1902,16 @@ DECLARE @InheritanceParentId  -- Int32
 SET     @InheritanceParentId = 2
 DECLARE @TypeDiscriminator  -- Int32
 SET     @TypeDiscriminator = 1
-DECLARE @Name NVarChar -- String
-SET     @Name = NULL
 
 INSERT INTO [InheritanceParent]
 (
 	[InheritanceParentId],
-	[TypeDiscriminator],
-	[Name]
+	[TypeDiscriminator]
 )
 VALUES
 (
 	@InheritanceParentId,
-	@TypeDiscriminator,
-	@Name
+	@TypeDiscriminator
 )
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
@@ -1950,22 +1942,18 @@ DECLARE @TypeDiscriminator  -- Int32
 SET     @TypeDiscriminator = NULL
 DECLARE @InheritanceParentId  -- Int32
 SET     @InheritanceParentId = 1
-DECLARE @Name NVarChar -- String
-SET     @Name = NULL
 
 INSERT INTO [InheritanceChild]
 (
 	[InheritanceChildId],
 	[TypeDiscriminator],
-	[InheritanceParentId],
-	[Name]
+	[InheritanceParentId]
 )
 VALUES
 (
 	@InheritanceChildId,
 	@TypeDiscriminator,
-	@InheritanceParentId,
-	@Name
+	@InheritanceParentId
 )
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
@@ -1975,22 +1963,18 @@ DECLARE @TypeDiscriminator  -- Int32
 SET     @TypeDiscriminator = 1
 DECLARE @InheritanceParentId  -- Int32
 SET     @InheritanceParentId = 2
-DECLARE @Name NVarChar -- String
-SET     @Name = NULL
 
 INSERT INTO [InheritanceChild]
 (
 	[InheritanceChildId],
 	[TypeDiscriminator],
-	[InheritanceParentId],
-	[Name]
+	[InheritanceParentId]
 )
 VALUES
 (
 	@InheritanceChildId,
 	@TypeDiscriminator,
-	@InheritanceParentId,
-	@Name
+	@InheritanceParentId
 )
 
 -- Access.LibRed.Mdb Access.LibRed AccessLibRed
@@ -3937,20 +3921,16 @@ DECLARE @InheritanceParentId  -- Int32
 SET     @InheritanceParentId = 1
 DECLARE @TypeDiscriminator  -- Int32
 SET     @TypeDiscriminator = NULL
-DECLARE @Name NVarChar -- String
-SET     @Name = NULL
 
 INSERT INTO [InheritanceParent]
 (
 	[InheritanceParentId],
-	[TypeDiscriminator],
-	[Name]
+	[TypeDiscriminator]
 )
 VALUES
 (
 	@InheritanceParentId,
-	@TypeDiscriminator,
-	@Name
+	@TypeDiscriminator
 )
 
 -- Access.LibRed.Mdb.Data Access.LibRed AccessLibRed
@@ -3958,20 +3938,16 @@ DECLARE @InheritanceParentId  -- Int32
 SET     @InheritanceParentId = 2
 DECLARE @TypeDiscriminator  -- Int32
 SET     @TypeDiscriminator = 1
-DECLARE @Name NVarChar -- String
-SET     @Name = NULL
 
 INSERT INTO [InheritanceParent]
 (
 	[InheritanceParentId],
-	[TypeDiscriminator],
-	[Name]
+	[TypeDiscriminator]
 )
 VALUES
 (
 	@InheritanceParentId,
-	@TypeDiscriminator,
-	@Name
+	@TypeDiscriminator
 )
 
 -- Access.LibRed.Mdb.Data Access.LibRed AccessLibRed
@@ -4002,22 +3978,18 @@ DECLARE @TypeDiscriminator  -- Int32
 SET     @TypeDiscriminator = NULL
 DECLARE @InheritanceParentId  -- Int32
 SET     @InheritanceParentId = 1
-DECLARE @Name NVarChar -- String
-SET     @Name = NULL
 
 INSERT INTO [InheritanceChild]
 (
 	[InheritanceChildId],
 	[TypeDiscriminator],
-	[InheritanceParentId],
-	[Name]
+	[InheritanceParentId]
 )
 VALUES
 (
 	@InheritanceChildId,
 	@TypeDiscriminator,
-	@InheritanceParentId,
-	@Name
+	@InheritanceParentId
 )
 
 -- Access.LibRed.Mdb.Data Access.LibRed AccessLibRed
@@ -4027,22 +3999,18 @@ DECLARE @TypeDiscriminator  -- Int32
 SET     @TypeDiscriminator = 1
 DECLARE @InheritanceParentId  -- Int32
 SET     @InheritanceParentId = 2
-DECLARE @Name NVarChar -- String
-SET     @Name = NULL
 
 INSERT INTO [InheritanceChild]
 (
 	[InheritanceChildId],
 	[TypeDiscriminator],
-	[InheritanceParentId],
-	[Name]
+	[InheritanceParentId]
 )
 VALUES
 (
 	@InheritanceChildId,
 	@TypeDiscriminator,
-	@InheritanceParentId,
-	@Name
+	@InheritanceParentId
 )
 
 -- Access.LibRed.Mdb.Data Access.LibRed AccessLibRed

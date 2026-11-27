@@ -2264,18 +2264,14 @@ DECLARE @InheritanceParentId Int -- Int32
 SET     @InheritanceParentId = 1
 DECLARE @TypeDiscriminator Int -- Int32
 SET     @TypeDiscriminator = NULL
-DECLARE @Name NVarChar -- String
-SET     @Name = NULL
 
 INSERT INTO "InheritanceParent"
 (
 	"InheritanceParentId",
-	"TypeDiscriminator",
-	"Name"
+	"TypeDiscriminator"
 )
 VALUES
 (
-	?,
 	?,
 	?
 )
@@ -2285,18 +2281,14 @@ DECLARE @InheritanceParentId Int -- Int32
 SET     @InheritanceParentId = 2
 DECLARE @TypeDiscriminator Int -- Int32
 SET     @TypeDiscriminator = 1
-DECLARE @Name NVarChar -- String
-SET     @Name = NULL
 
 INSERT INTO "InheritanceParent"
 (
 	"InheritanceParentId",
-	"TypeDiscriminator",
-	"Name"
+	"TypeDiscriminator"
 )
 VALUES
 (
-	?,
 	?,
 	?
 )
@@ -2329,19 +2321,15 @@ DECLARE @TypeDiscriminator Int -- Int32
 SET     @TypeDiscriminator = NULL
 DECLARE @InheritanceParentId Int -- Int32
 SET     @InheritanceParentId = 1
-DECLARE @Name NVarChar -- String
-SET     @Name = NULL
 
 INSERT INTO "InheritanceChild"
 (
 	"InheritanceChildId",
 	"TypeDiscriminator",
-	"InheritanceParentId",
-	"Name"
+	"InheritanceParentId"
 )
 VALUES
 (
-	?,
 	?,
 	?,
 	?
@@ -2354,19 +2342,15 @@ DECLARE @TypeDiscriminator Int -- Int32
 SET     @TypeDiscriminator = 1
 DECLARE @InheritanceParentId Int -- Int32
 SET     @InheritanceParentId = 2
-DECLARE @Name NVarChar -- String
-SET     @Name = NULL
 
 INSERT INTO "InheritanceChild"
 (
 	"InheritanceChildId",
 	"TypeDiscriminator",
-	"InheritanceParentId",
-	"Name"
+	"InheritanceParentId"
 )
 VALUES
 (
-	?,
 	?,
 	?,
 	?
