@@ -5,17 +5,17 @@ DECLARE @Id Int -- Int32
 SET     @Id = 1
 
 UPDATE
-	[PR_1598_Insert_Table_Cache]
+	[SkipOnInsertCache]
 SET
 	[Name] = @Name
 FROM
-	[PR_1598_Insert_Table_Cache] [t1]
+	[SkipOnInsertCache] [t1]
 WHERE
 	[t1].[Id] = @Id
 
 IF @@ROWCOUNT = 0
 BEGIN
-	INSERT INTO [PR_1598_Insert_Table_Cache]
+	INSERT INTO [SkipOnInsertCache]
 	(
 		[Id],
 		[Name]
@@ -33,7 +33,7 @@ SELECT TOP (1)
 	[t].[Name],
 	[t].[Age]
 FROM
-	[PR_1598_Insert_Table_Cache] [t]
+	[SkipOnInsertCache] [t]
 WHERE
 	[t].[Id] = 1
 
@@ -44,17 +44,17 @@ DECLARE @Id Int -- Int32
 SET     @Id = 1
 
 UPDATE
-	[PR_1598_Insert_Table_Cache]
+	[SkipOnInsertCache]
 SET
 	[Name] = @Name
 FROM
-	[PR_1598_Insert_Table_Cache] [t1]
+	[SkipOnInsertCache] [t1]
 WHERE
 	[t1].[Id] = @Id
 
 IF @@ROWCOUNT = 0
 BEGIN
-	INSERT INTO [PR_1598_Insert_Table_Cache]
+	INSERT INTO [SkipOnInsertCache]
 	(
 		[Id],
 		[Name]
@@ -72,7 +72,7 @@ SELECT TOP (1)
 	[t].[Name],
 	[t].[Age]
 FROM
-	[PR_1598_Insert_Table_Cache] [t]
+	[SkipOnInsertCache] [t]
 WHERE
 	[t].[Id] = 1
 
