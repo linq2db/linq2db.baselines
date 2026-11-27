@@ -6,7 +6,7 @@ SET     @Name = NULL
 DECLARE @Age Integer -- Int32
 SET     @Age = 2
 
-INSERT INTO [PR_1598_Update_Fluent_Table]
+INSERT INTO [SkipOnUpdateFluent]
 (
 	[Id],
 	[Name],
@@ -25,7 +25,7 @@ SELECT
 	[t].[Name],
 	[t].[Age]
 FROM
-	[PR_1598_Update_Fluent_Table] [t]
+	[SkipOnUpdateFluent] [t]
 WHERE
 	[t].[Id] = 1
 LIMIT 1
@@ -39,12 +39,12 @@ DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
 UPDATE
-	[PR_1598_Update_Fluent_Table]
+	[SkipOnUpdateFluent]
 SET
 	[Name] = @Name,
 	[Age] = @Age
 WHERE
-	[PR_1598_Update_Fluent_Table].[Id] = @Id
+	[SkipOnUpdateFluent].[Id] = @Id
 
 -- SQLite.Classic SQLite
 SELECT
@@ -52,7 +52,7 @@ SELECT
 	[t].[Name],
 	[t].[Age]
 FROM
-	[PR_1598_Update_Fluent_Table] [t]
+	[SkipOnUpdateFluent] [t]
 WHERE
 	[t].[Id] = 1
 LIMIT 1
@@ -64,11 +64,11 @@ DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
 UPDATE
-	[PR_1598_Update_Fluent_Table]
+	[SkipOnUpdateFluent]
 SET
 	[Name] = @Name
 WHERE
-	[PR_1598_Update_Fluent_Table].[Id] = @Id
+	[SkipOnUpdateFluent].[Id] = @Id
 
 -- SQLite.Classic SQLite
 SELECT
@@ -76,7 +76,7 @@ SELECT
 	[t].[Name],
 	[t].[Age]
 FROM
-	[PR_1598_Update_Fluent_Table] [t]
+	[SkipOnUpdateFluent] [t]
 WHERE
 	[t].[Id] = 1
 LIMIT 1

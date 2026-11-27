@@ -10,7 +10,7 @@ FROM
 			SELECT
 				a."Id"
 			FROM
-				"Issue5285Table" a
+				"UnnestLateralTable" a
 			WHERE
 				a."Value" > i.value
 			ORDER BY

@@ -6,7 +6,7 @@ SET     @Name = N'John'
 DECLARE @Age Int -- Int32
 SET     @Age = 2
 
-MERGE INTO [PR_1598_Insert_Table_Cache] [t1]
+MERGE INTO [SkipOnInsertCache] [t1]
 USING (SELECT @Id AS [Id]) [s] ON
 (
 	[t1].[Id] = [s].[Id]
@@ -36,7 +36,7 @@ SELECT TOP (1)
 	[t].[Name],
 	[t].[Age]
 FROM
-	[PR_1598_Insert_Table_Cache] [t]
+	[SkipOnInsertCache] [t]
 WHERE
 	[t].[Id] = 1
 
@@ -48,7 +48,7 @@ SET     @Name = N'John'
 DECLARE @Age Int -- Int32
 SET     @Age = 2
 
-MERGE INTO [PR_1598_Insert_Table_Cache] [t1]
+MERGE INTO [SkipOnInsertCache] [t1]
 USING (SELECT @Id AS [Id]) [s] ON
 (
 	[t1].[Id] = [s].[Id]
@@ -78,7 +78,7 @@ SELECT TOP (1)
 	[t].[Name],
 	[t].[Age]
 FROM
-	[PR_1598_Insert_Table_Cache] [t]
+	[SkipOnInsertCache] [t]
 WHERE
 	[t].[Id] = 1
 

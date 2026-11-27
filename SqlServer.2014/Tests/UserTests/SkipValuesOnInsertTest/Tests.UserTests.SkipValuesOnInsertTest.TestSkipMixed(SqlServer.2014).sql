@@ -6,7 +6,7 @@ SET     @Name = N'Jason'
 DECLARE @Age Int -- Int32
 SET     @Age = 20
 
-INSERT INTO [PR_1598_Mixed_Table]
+INSERT INTO [SkipOnInsertMixed]
 (
 	[Id],
 	[Name],
@@ -25,7 +25,7 @@ SELECT TOP (1)
 	[t].[Name],
 	[t].[Age]
 FROM
-	[PR_1598_Mixed_Table] [t]
+	[SkipOnInsertMixed] [t]
 WHERE
 	[t].[Id] = 1
 
@@ -36,11 +36,11 @@ DECLARE @Id Int -- Int32
 SET     @Id = 1
 
 UPDATE
-	[PR_1598_Mixed_Table]
+	[SkipOnInsertMixed]
 SET
 	[Age] = @Age
 WHERE
-	[PR_1598_Mixed_Table].[Id] = @Id
+	[SkipOnInsertMixed].[Id] = @Id
 
 -- SqlServer.2014
 SELECT TOP (1)
@@ -48,7 +48,7 @@ SELECT TOP (1)
 	[t].[Name],
 	[t].[Age]
 FROM
-	[PR_1598_Mixed_Table] [t]
+	[SkipOnInsertMixed] [t]
 WHERE
 	[t].[Id] = 1
 
@@ -58,7 +58,7 @@ SET     @Id = 2
 DECLARE @Age Int -- Int32
 SET     @Age = 25
 
-INSERT INTO [PR_1598_Mixed_Table]
+INSERT INTO [SkipOnInsertMixed]
 (
 	[Id],
 	[Age]
@@ -75,7 +75,7 @@ SELECT TOP (1)
 	[t].[Name],
 	[t].[Age]
 FROM
-	[PR_1598_Mixed_Table] [t]
+	[SkipOnInsertMixed] [t]
 WHERE
 	[t].[Id] = 2
 
@@ -88,12 +88,12 @@ DECLARE @Id Int -- Int32
 SET     @Id = 2
 
 UPDATE
-	[PR_1598_Mixed_Table]
+	[SkipOnInsertMixed]
 SET
 	[Name] = @Name,
 	[Age] = @Age
 WHERE
-	[PR_1598_Mixed_Table].[Id] = @Id
+	[SkipOnInsertMixed].[Id] = @Id
 
 -- SqlServer.2014
 SELECT TOP (1)
@@ -101,7 +101,7 @@ SELECT TOP (1)
 	[t].[Name],
 	[t].[Age]
 FROM
-	[PR_1598_Mixed_Table] [t]
+	[SkipOnInsertMixed] [t]
 WHERE
 	[t].[Id] = 2
 

@@ -1,5 +1,5 @@
 ﻿-- ClickHouse.Driver ClickHouse
-INSERT INTO Issue5266Table
+INSERT INTO CompositeNamesAttributeTable
 (
 	Id,
 	child1_name,
@@ -18,6 +18,6 @@ SELECT
 	t1.child1_name,
 	t1.child2_name
 FROM
-	Issue5266Table t1
+	CompositeNamesAttributeTable t1
 LIMIT 2
 

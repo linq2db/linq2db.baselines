@@ -5,7 +5,7 @@ DECLARE @Id Int -- Int32
 SET     @Id = 1
 
 UPDATE
-	[PR_1598_Insert_Table_Cache] [t1]
+	[SkipOnInsertCache] [t1]
 SET
 	[t1].[Name] = ?
 WHERE
@@ -17,7 +17,7 @@ SET     @Id = 1
 DECLARE @Name NVarChar(4) -- String
 SET     @Name = 'John'
 
-INSERT INTO [PR_1598_Insert_Table_Cache]
+INSERT INTO [SkipOnInsertCache]
 (
 	[Id],
 	[Name]
@@ -34,7 +34,7 @@ SELECT TOP 1
 	[t].[Name],
 	[t].[Age]
 FROM
-	[PR_1598_Insert_Table_Cache] [t]
+	[SkipOnInsertCache] [t]
 WHERE
 	[t].[Id] = 1
 
@@ -45,7 +45,7 @@ DECLARE @Id Int -- Int32
 SET     @Id = 1
 
 UPDATE
-	[PR_1598_Insert_Table_Cache] [t1]
+	[SkipOnInsertCache] [t1]
 SET
 	[t1].[Name] = ?
 WHERE
@@ -57,7 +57,7 @@ SELECT TOP 1
 	[t].[Name],
 	[t].[Age]
 FROM
-	[PR_1598_Insert_Table_Cache] [t]
+	[SkipOnInsertCache] [t]
 WHERE
 	[t].[Id] = 1
 

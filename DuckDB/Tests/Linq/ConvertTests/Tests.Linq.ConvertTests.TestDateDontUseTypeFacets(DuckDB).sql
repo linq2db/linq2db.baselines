@@ -7,7 +7,7 @@ FROM
 		SELECT
 			CAST(g_1.CreatedOnUtc AS DATE) as Date_1
 		FROM
-			Issue5390Table g_1
+			DateTimePrecisionTable g_1
 	) g_2
 GROUP BY
 	g_2.Date_1
@@ -16,5 +16,5 @@ GROUP BY
 SELECT
 	t1.CreatedOnUtc
 FROM
-	Issue5390Table t1
+	DateTimePrecisionTable t1
 

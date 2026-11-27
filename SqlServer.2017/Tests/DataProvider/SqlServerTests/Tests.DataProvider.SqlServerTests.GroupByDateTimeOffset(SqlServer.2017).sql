@@ -1,0 +1,12 @@
+﻿-- SqlServer.2017
+SELECT DISTINCT
+	[g_1].[dt]
+FROM
+	[DateTimeOffsetRecord] [g_1]
+
+-- SqlServer.2017
+SELECT
+	[r].[dt]
+FROM
+	[DateTimeOffsetRecord] [r]
+

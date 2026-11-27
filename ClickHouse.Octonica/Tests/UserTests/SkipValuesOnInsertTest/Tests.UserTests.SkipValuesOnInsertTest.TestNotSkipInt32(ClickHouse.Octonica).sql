@@ -1,5 +1,5 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-INSERT INTO PR_1598_Insert_Table
+INSERT INTO SkipOnInsertTable
 (
 	Id,
 	Name,
@@ -18,13 +18,13 @@ SELECT
 	t.Name,
 	t.Age
 FROM
-	PR_1598_Insert_Table t
+	SkipOnInsertTable t
 WHERE
 	t.Id = 1
 LIMIT 1
 
 -- ClickHouse.Octonica ClickHouse
-INSERT INTO PR_1598_Insert_Table
+INSERT INTO SkipOnInsertTable
 (
 	Id,
 	Name,
@@ -43,7 +43,7 @@ SELECT
 	t.Name,
 	t.Age
 FROM
-	PR_1598_Insert_Table t
+	SkipOnInsertTable t
 WHERE
 	t.Id = 2
 LIMIT 1

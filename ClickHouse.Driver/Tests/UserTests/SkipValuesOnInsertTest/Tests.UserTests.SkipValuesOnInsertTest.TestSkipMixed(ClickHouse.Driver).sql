@@ -1,5 +1,5 @@
 ﻿-- ClickHouse.Driver ClickHouse
-INSERT INTO PR_1598_Mixed_Table
+INSERT INTO SkipOnInsertMixed
 (
 	Id,
 	Name,
@@ -18,14 +18,14 @@ SELECT
 	t.Name,
 	t.Age
 FROM
-	PR_1598_Mixed_Table t
+	SkipOnInsertMixed t
 WHERE
 	t.Id = 1
 LIMIT 1
 
 -- ClickHouse.Driver ClickHouse
 ALTER TABLE
-	PR_1598_Mixed_Table
+	SkipOnInsertMixed
 UPDATE
 	Age = 20
 WHERE
@@ -37,13 +37,13 @@ SELECT
 	t.Name,
 	t.Age
 FROM
-	PR_1598_Mixed_Table t
+	SkipOnInsertMixed t
 WHERE
 	t.Id = 1
 LIMIT 1
 
 -- ClickHouse.Driver ClickHouse
-INSERT INTO PR_1598_Mixed_Table
+INSERT INTO SkipOnInsertMixed
 (
 	Id,
 	Age
@@ -60,14 +60,14 @@ SELECT
 	t.Name,
 	t.Age
 FROM
-	PR_1598_Mixed_Table t
+	SkipOnInsertMixed t
 WHERE
 	t.Id = 2
 LIMIT 1
 
 -- ClickHouse.Driver ClickHouse
 ALTER TABLE
-	PR_1598_Mixed_Table
+	SkipOnInsertMixed
 UPDATE
 	Name = 'Jessy',
 	Age = 25
@@ -80,7 +80,7 @@ SELECT
 	t.Name,
 	t.Age
 FROM
-	PR_1598_Mixed_Table t
+	SkipOnInsertMixed t
 WHERE
 	t.Id = 2
 LIMIT 1

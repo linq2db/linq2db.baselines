@@ -1,0 +1,17 @@
+﻿-- ClickHouse.MySql ClickHouse
+DROP TABLE IF EXISTS QualifiedNameTable2
+
+-- ClickHouse.MySql ClickHouse
+CREATE TABLE QualifiedNameTable2
+(
+	ID    Int32,
+	Value Int32,
+
+	PRIMARY KEY (ID)
+)
+ENGINE = MergeTree()
+ORDER BY ID
+
+-- ClickHouse.MySql ClickHouse
+DROP TABLE IF EXISTS QualifiedNameTable2
+

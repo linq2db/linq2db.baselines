@@ -1,5 +1,5 @@
 ﻿-- Oracle.18.Managed Oracle.Managed Oracle12
-INSERT INTO "Issue5975Row"
+INSERT INTO "ShiftedDateRow"
 (
 	"Id",
 	"Plain",
@@ -18,6 +18,6 @@ SELECT
 	t1."Plain",
 	t1."Date" as "Date_1"
 FROM
-	"Issue5975Row" t1
+	"ShiftedDateRow" t1
 FETCH NEXT 2 ROWS ONLY
 

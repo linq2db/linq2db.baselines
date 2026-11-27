@@ -1,0 +1,3 @@
+﻿-- SqlCe
+SELECT 1
+

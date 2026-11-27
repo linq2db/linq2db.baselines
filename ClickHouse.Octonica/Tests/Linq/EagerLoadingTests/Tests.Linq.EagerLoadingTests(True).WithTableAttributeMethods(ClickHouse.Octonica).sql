@@ -1,5 +1,5 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-INSERT INTO UserIssue3128
+INSERT INTO LoadAsTableUser
 (
 	Id
 )
@@ -9,7 +9,7 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-INSERT INTO UserDetailsIssue3128
+INSERT INTO LoadAsTableUserDetails
 (
 	UserId,
 	Age
@@ -34,6 +34,6 @@ WHERE
 		SELECT
 			COUNT(*)
 		FROM
-			UserIssue3128 t1
+			LoadAsTableUser t1
 	) > 0
 

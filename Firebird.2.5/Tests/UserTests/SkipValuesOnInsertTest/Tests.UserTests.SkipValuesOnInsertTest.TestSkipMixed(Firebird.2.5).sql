@@ -6,7 +6,7 @@ SET     @Name = 'Jason'
 DECLARE @Age Integer -- Int32
 SET     @Age = 20
 
-INSERT INTO "PR_1598_Mixed_Table"
+INSERT INTO "SkipOnInsertMixed"
 (
 	"Id",
 	"Name",
@@ -25,7 +25,7 @@ SELECT FIRST 1
 	"t"."Name",
 	"t"."Age"
 FROM
-	"PR_1598_Mixed_Table" "t"
+	"SkipOnInsertMixed" "t"
 WHERE
 	"t"."Id" = 1
 
@@ -36,7 +36,7 @@ DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
 UPDATE
-	"PR_1598_Mixed_Table" "t1"
+	"SkipOnInsertMixed" "t1"
 SET
 	"Age" = CAST(@Age AS Int)
 WHERE
@@ -48,7 +48,7 @@ SELECT FIRST 1
 	"t"."Name",
 	"t"."Age"
 FROM
-	"PR_1598_Mixed_Table" "t"
+	"SkipOnInsertMixed" "t"
 WHERE
 	"t"."Id" = 1
 
@@ -58,7 +58,7 @@ SET     @Id = 2
 DECLARE @Age Integer -- Int32
 SET     @Age = 25
 
-INSERT INTO "PR_1598_Mixed_Table"
+INSERT INTO "SkipOnInsertMixed"
 (
 	"Id",
 	"Age"
@@ -75,7 +75,7 @@ SELECT FIRST 1
 	"t"."Name",
 	"t"."Age"
 FROM
-	"PR_1598_Mixed_Table" "t"
+	"SkipOnInsertMixed" "t"
 WHERE
 	"t"."Id" = 2
 
@@ -88,7 +88,7 @@ DECLARE @Id Integer -- Int32
 SET     @Id = 2
 
 UPDATE
-	"PR_1598_Mixed_Table" "t1"
+	"SkipOnInsertMixed" "t1"
 SET
 	"Name" = CAST(@Name AS VARCHAR(5)),
 	"Age" = CAST(@Age AS Int)
@@ -101,7 +101,7 @@ SELECT FIRST 1
 	"t"."Name",
 	"t"."Age"
 FROM
-	"PR_1598_Mixed_Table" "t"
+	"SkipOnInsertMixed" "t"
 WHERE
 	"t"."Id" = 2
 

@@ -4,7 +4,7 @@ SET     @Id = 1
 DECLARE @Name UniVarChar(5) -- String
 SET     @Name = 'Tommy'
 
-INSERT INTO [PR_1598_Insert_Null_Table]
+INSERT INTO [SkipOnInsertNulls]
 (
 	[Id],
 	[Name]
@@ -21,7 +21,7 @@ SELECT TOP 1
 	[t].[Name],
 	[t].[Age]
 FROM
-	[PR_1598_Insert_Null_Table] [t]
+	[SkipOnInsertNulls] [t]
 WHERE
 	[t].[Id] = 1
 

@@ -1,0 +1,20 @@
+﻿-- PostgreSQL.11 PostgreSQL
+SELECT
+	current_database()
+FROM
+	"LinqDataTypes" t1
+LIMIT 1
+
+-- PostgreSQL.11 PostgreSQL
+DECLARE @Value Integer -- Int32
+SET     @Value = 10
+DECLARE @ID Integer -- Int32
+SET     @ID = 5
+
+UPDATE
+	"QualifiedNameTable"
+SET
+	"Value" = :Value
+WHERE
+	"QualifiedNameTable"."ID" = :ID
+

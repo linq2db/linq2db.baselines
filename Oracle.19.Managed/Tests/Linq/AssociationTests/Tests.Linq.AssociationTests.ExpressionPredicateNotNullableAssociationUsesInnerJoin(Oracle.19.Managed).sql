@@ -1,0 +1,7 @@
+﻿-- Oracle.19.Managed Oracle.Managed Oracle12
+SELECT
+	a_Client1."Name"
+FROM
+	"ExpressionAssociationService" s
+		INNER JOIN "ExpressionAssociationClient" a_Client1 ON s."IdClient" = a_Client1."Id"
+

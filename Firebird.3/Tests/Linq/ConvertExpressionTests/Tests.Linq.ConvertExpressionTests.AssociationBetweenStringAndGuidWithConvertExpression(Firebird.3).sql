@@ -1,0 +1,9 @@
+﻿-- Firebird.3 Firebird3
+SELECT
+	"t1"."Id",
+	"t1"."OtherId",
+	"a_Association"."Id"
+FROM
+	"GuidConvertedOwner" "t1"
+		LEFT JOIN "GuidConvertedTarget" "a_Association" ON "t1"."OtherId" = CAST(Lower(UUID_TO_CHAR("a_Association"."Id")) AS VarChar(36) CHARACTER SET UNICODE_FSS)
+

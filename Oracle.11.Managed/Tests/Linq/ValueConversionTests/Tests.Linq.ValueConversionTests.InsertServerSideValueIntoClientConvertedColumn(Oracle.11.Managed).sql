@@ -1,5 +1,5 @@
 ﻿-- Oracle.11.Managed Oracle11
-INSERT INTO "Issue5975Row"
+INSERT INTO "ShiftedDateRow"
 (
 	"Id",
 	"Plain",
@@ -18,7 +18,7 @@ SELECT
 	t1."Plain",
 	t1."Date"
 FROM
-	"Issue5975Row" t1
+	"ShiftedDateRow" t1
 WHERE
 	ROWNUM <= 2
 

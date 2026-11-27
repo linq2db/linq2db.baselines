@@ -1,5 +1,5 @@
 ﻿-- Oracle.11.Managed Oracle11
-MERGE INTO "Issue5289Table" t1
+MERGE INTO "SoftDeletedPictureTable" t1
 USING (SELECT 1 AS "Id" FROM SYS.DUAL) s ON
 (
 	t1."Id" = s."Id"
@@ -28,12 +28,12 @@ SELECT
 	r."PictureId",
 	r."Deleted"
 FROM
-	"Issue5289Table" r
+	"SoftDeletedPictureTable" r
 WHERE
 	r."Deleted" = 0 AND r."Id" = 1 AND ROWNUM <= 2
 
 -- Oracle.11.Managed Oracle11
-MERGE INTO "Issue5289Table" t1
+MERGE INTO "SoftDeletedPictureTable" t1
 USING (SELECT 1 AS "Id" FROM SYS.DUAL) s ON
 (
 	t1."Id" = s."Id"
@@ -62,7 +62,7 @@ SELECT
 	r."PictureId",
 	r."Deleted"
 FROM
-	"Issue5289Table" r
+	"SoftDeletedPictureTable" r
 WHERE
 	r."Deleted" = 0 AND r."Id" = 1 AND ROWNUM <= 2
 

@@ -1,3 +1,3 @@
 ﻿-- SQLite.Classic SQLite
-select Value from Issue4043
+select Value from ValueObjectJsonConversion
 

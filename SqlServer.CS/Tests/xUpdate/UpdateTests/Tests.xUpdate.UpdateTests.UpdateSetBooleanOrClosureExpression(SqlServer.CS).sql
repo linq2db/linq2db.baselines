@@ -1,0 +1,8 @@
+﻿-- SqlServer.CS SqlServer.2025
+UPDATE
+	[LinqDataTypes]
+SET
+	[BoolValue] = 1
+WHERE
+	[LinqDataTypes].[ID] = -1
+

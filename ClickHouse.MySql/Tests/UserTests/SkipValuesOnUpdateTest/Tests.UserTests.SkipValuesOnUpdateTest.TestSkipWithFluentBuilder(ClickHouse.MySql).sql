@@ -1,5 +1,5 @@
 ﻿-- ClickHouse.MySql ClickHouse
-INSERT INTO PR_1598_Update_Fluent_Table
+INSERT INTO SkipOnUpdateFluent
 (
 	Id,
 	Name,
@@ -18,14 +18,14 @@ SELECT
 	t.Name,
 	t.Age
 FROM
-	PR_1598_Update_Fluent_Table t
+	SkipOnUpdateFluent t
 WHERE
 	t.Id = 1
 LIMIT 1
 
 -- ClickHouse.MySql ClickHouse
 ALTER TABLE
-	PR_1598_Update_Fluent_Table
+	SkipOnUpdateFluent
 UPDATE
 	Name = 'Franki',
 	Age = 18
@@ -38,14 +38,14 @@ SELECT
 	t.Name,
 	t.Age
 FROM
-	PR_1598_Update_Fluent_Table t
+	SkipOnUpdateFluent t
 WHERE
 	t.Id = 1
 LIMIT 1
 
 -- ClickHouse.MySql ClickHouse
 ALTER TABLE
-	PR_1598_Update_Fluent_Table
+	SkipOnUpdateFluent
 UPDATE
 	Name = 'Jack'
 WHERE
@@ -57,7 +57,7 @@ SELECT
 	t.Name,
 	t.Age
 FROM
-	PR_1598_Update_Fluent_Table t
+	SkipOnUpdateFluent t
 WHERE
 	t.Id = 1
 LIMIT 1

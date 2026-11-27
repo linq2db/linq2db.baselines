@@ -1,0 +1,43 @@
+﻿-- SqlServer.CS.MS SqlServer.2025
+DECLARE @Id Int -- Int32
+SET     @Id = 0
+DECLARE @ClaimedKeyType NVarChar(3) -- String
+SET     @ClaimedKeyType = N'RSA'
+DECLARE @ClaimedKeyTypeN NVarChar(3) -- String
+SET     @ClaimedKeyTypeN = N'RSA'
+
+INSERT INTO [MappedEnumKeyRecord]
+(
+	[Id],
+	[ClaimedKeyType],
+	[ClaimedKeyTypeN]
+)
+VALUES
+(
+	@Id,
+	@ClaimedKeyType,
+	@ClaimedKeyTypeN
+)
+
+-- SqlServer.CS.MS SqlServer.2025
+DECLARE @ClaimedKeyType NVarChar(3) -- String
+SET     @ClaimedKeyType = N'EC'
+DECLARE @ClaimedKeyTypeN NVarChar(3) -- String
+SET     @ClaimedKeyTypeN = N'EC'
+
+UPDATE
+	[MappedEnumKeyRecord]
+SET
+	[ClaimedKeyType] = @ClaimedKeyType,
+	[ClaimedKeyTypeN] = @ClaimedKeyTypeN
+WHERE
+	[MappedEnumKeyRecord].[Id] = 0
+
+-- SqlServer.CS.MS SqlServer.2025
+SELECT TOP (2)
+	[t1].[Id],
+	[t1].[ClaimedKeyType],
+	[t1].[ClaimedKeyTypeN]
+FROM
+	[MappedEnumKeyRecord] [t1]
+

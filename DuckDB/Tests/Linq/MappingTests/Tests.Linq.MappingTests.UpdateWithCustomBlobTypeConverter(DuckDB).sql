@@ -1,0 +1,13 @@
+﻿-- DuckDB
+DECLARE $Uid Binary(16)
+SET     $Uid = '\x3D\x66\x7B\xBC\xDE\x0F\x27\x43\x8F\x92\x5D\x8C\xC3\xA1\x1D\x11'::BLOB
+DECLARE $Id BIGINT -- Int64
+SET     $Id = 0
+
+UPDATE
+	Blob16AsGuidTable
+SET
+	"Uid" = $Uid
+WHERE
+	Blob16AsGuidTable.Id = $Id
+

@@ -1,5 +1,5 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-INSERT INTO PR_1598_Insert_Table_Cache
+INSERT INTO SkipOnInsertCache
 (
 	Id,
 	Name,
@@ -18,14 +18,14 @@ SELECT
 	t.Name,
 	t.Age
 FROM
-	PR_1598_Insert_Table_Cache t
+	SkipOnInsertCache t
 WHERE
 	t.Id = 1
 LIMIT 1
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
-	PR_1598_Insert_Table_Cache
+	SkipOnInsertCache
 UPDATE
 	Name = 'John',
 	Age = 2
@@ -38,7 +38,7 @@ SELECT
 	t.Name,
 	t.Age
 FROM
-	PR_1598_Insert_Table_Cache t
+	SkipOnInsertCache t
 WHERE
 	t.Id = 1
 LIMIT 1

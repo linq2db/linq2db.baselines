@@ -1,0 +1,15 @@
+﻿-- SqlServer.2008
+SELECT
+	CASE
+		WHEN EXISTS(
+			SELECT
+				*
+			FROM
+				[TimeOfDayTable] [t1]
+			WHERE
+				[t1].[Time] < CAST([t1].[DateTime] AS Time)
+		)
+			THEN 1
+		ELSE 0
+	END
+

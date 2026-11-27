@@ -5,7 +5,7 @@ SELECT
 		ELSE r.`Date`
 	END as c1
 FROM
-	Issue5975Row r
+	ShiftedDateRow r
 ORDER BY
 	r.Id
 

@@ -8,7 +8,7 @@ SET     @Age = 20
 DECLARE @Gender NVarChar(6) -- String
 SET     @Gender = 'Female'
 
-INSERT INTO "PR_1598_Update_Enum_Table"
+INSERT INTO "SkipOnUpdateEnum"
 (
 	"Id",
 	"Name",
@@ -30,7 +30,7 @@ SELECT
 	"t"."Age",
 	"t"."Gender"
 FROM
-	"PR_1598_Update_Enum_Table" "t"
+	"SkipOnUpdateEnum" "t"
 WHERE
 	"t"."Id" = 1
 LIMIT 1
@@ -46,7 +46,7 @@ DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
 UPDATE
-	"PR_1598_Update_Enum_Table" "t1"
+	"SkipOnUpdateEnum" "t1"
 SET
 	"Name" = :"Name",
 	"Age" = :"Age",
@@ -61,7 +61,7 @@ SELECT
 	"t"."Age",
 	"t"."Gender"
 FROM
-	"PR_1598_Update_Enum_Table" "t"
+	"SkipOnUpdateEnum" "t"
 WHERE
 	"t"."Id" = 1
 LIMIT 1
@@ -75,7 +75,7 @@ DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
 UPDATE
-	"PR_1598_Update_Enum_Table" "t1"
+	"SkipOnUpdateEnum" "t1"
 SET
 	"Name" = :"Name",
 	"Age" = :"Age"
@@ -89,7 +89,7 @@ SELECT
 	"t"."Age",
 	"t"."Gender"
 FROM
-	"PR_1598_Update_Enum_Table" "t"
+	"SkipOnUpdateEnum" "t"
 WHERE
 	"t"."Id" = 1
 LIMIT 1

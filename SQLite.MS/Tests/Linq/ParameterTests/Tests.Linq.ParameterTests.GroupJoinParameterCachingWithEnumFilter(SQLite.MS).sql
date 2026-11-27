@@ -1,0 +1,116 @@
+﻿-- SQLite.MS SQLite
+SELECT
+	[m_1].[Id],
+	[d].[Id],
+	[d].[Usage],
+	[d].[FirstTableId]
+FROM
+	[UsageOwner] [m_1]
+		INNER JOIN [EnumUsageDetail] [d] ON [m_1].[Id] = [d].[FirstTableId]
+
+-- SQLite.MS SQLite
+SELECT
+	[t1].[Id]
+FROM
+	[UsageOwner] [t1]
+
+-- SQLite.MS SQLite
+DECLARE @usage Integer -- Int32
+SET     @usage = 0
+
+SELECT
+	[m_1].[Id],
+	[d].[Id],
+	[d].[Usage],
+	[d].[FirstTableId]
+FROM
+	[UsageOwner] [m_1]
+		INNER JOIN [EnumUsageDetail] [d] ON [m_1].[Id] = [d].[FirstTableId]
+WHERE
+	[d].[Usage] = @usage
+
+-- SQLite.MS SQLite
+SELECT
+	[t1].[Id]
+FROM
+	[UsageOwner] [t1]
+
+-- SQLite.MS SQLite
+DECLARE @usage Integer -- Int32
+SET     @usage = 1
+
+SELECT
+	[m_1].[Id],
+	[d].[Id],
+	[d].[Usage],
+	[d].[FirstTableId]
+FROM
+	[UsageOwner] [m_1]
+		INNER JOIN [EnumUsageDetail] [d] ON [m_1].[Id] = [d].[FirstTableId]
+WHERE
+	[d].[Usage] = @usage
+
+-- SQLite.MS SQLite
+SELECT
+	[t1].[Id]
+FROM
+	[UsageOwner] [t1]
+
+-- SQLite.MS SQLite
+SELECT
+	[m_1].[Id],
+	[d].[Id],
+	[d].[Usage],
+	[d].[FirstTableId]
+FROM
+	[UsageOwner] [m_1]
+		INNER JOIN [EnumUsageDetail] [d] ON [m_1].[Id] = [d].[FirstTableId]
+
+-- SQLite.MS SQLite
+SELECT
+	[t1].[Id]
+FROM
+	[UsageOwner] [t1]
+
+-- SQLite.MS SQLite
+DECLARE @usage Integer -- Int32
+SET     @usage = 0
+
+SELECT
+	[m_1].[Id],
+	[d].[Id],
+	[d].[Usage],
+	[d].[FirstTableId]
+FROM
+	[UsageOwner] [m_1]
+		INNER JOIN [EnumUsageDetail] [d] ON [m_1].[Id] = [d].[FirstTableId]
+WHERE
+	[d].[Usage] = @usage
+
+-- SQLite.MS SQLite
+SELECT
+	[t1].[Id]
+FROM
+	[UsageOwner] [t1]
+
+-- SQLite.MS SQLite
+DECLARE @usage Integer -- Int32
+SET     @usage = 1
+
+SELECT
+	[m_1].[Id],
+	[d].[Id],
+	[d].[Usage],
+	[d].[FirstTableId]
+FROM
+	[UsageOwner] [m_1]
+		INNER JOIN [EnumUsageDetail] [d] ON [m_1].[Id] = [d].[FirstTableId]
+WHERE
+	[d].[Usage] = @usage
+
+-- SQLite.MS SQLite
+SELECT
+	[t1].[Id]
+FROM
+	[UsageOwner] [t1]
+

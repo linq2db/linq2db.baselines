@@ -4,7 +4,7 @@ SET     @Id = 1
 DECLARE @Name VarChar(4) -- String
 SET     @Name = 'John'
 
-MERGE INTO "PR_1598_Insert_Table_Cache" "t1"
+MERGE INTO "SkipOnInsertCache" "t1"
 USING (SELECT CAST(@Id AS Int) AS "Id" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
 (
 	"t1"."Id" = "s"."Id"
@@ -31,7 +31,7 @@ SELECT
 	"t"."Name",
 	"t"."Age"
 FROM
-	"PR_1598_Insert_Table_Cache" "t"
+	"SkipOnInsertCache" "t"
 WHERE
 	"t"."Id" = 1
 FETCH NEXT 1 ROWS ONLY
@@ -42,7 +42,7 @@ SET     @Id = 1
 DECLARE @Name VarChar(4) -- String
 SET     @Name = 'John'
 
-MERGE INTO "PR_1598_Insert_Table_Cache" "t1"
+MERGE INTO "SkipOnInsertCache" "t1"
 USING (SELECT CAST(@Id AS Int) AS "Id" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
 (
 	"t1"."Id" = "s"."Id"
@@ -69,7 +69,7 @@ SELECT
 	"t"."Name",
 	"t"."Age"
 FROM
-	"PR_1598_Insert_Table_Cache" "t"
+	"SkipOnInsertCache" "t"
 WHERE
 	"t"."Id" = 1
 FETCH NEXT 1 ROWS ONLY

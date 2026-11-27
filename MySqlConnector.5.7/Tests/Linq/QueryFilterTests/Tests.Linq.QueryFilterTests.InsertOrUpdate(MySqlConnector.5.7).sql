@@ -1,5 +1,5 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-INSERT INTO `Issue5289Table`
+INSERT INTO `SoftDeletedPictureTable`
 (
 	`Id`,
 	`PictureId`,
@@ -20,13 +20,13 @@ SELECT
 	`r`.`PictureId`,
 	`r`.`Deleted`
 FROM
-	`Issue5289Table` `r`
+	`SoftDeletedPictureTable` `r`
 WHERE
 	NOT `r`.`Deleted` AND `r`.`Id` = 1
 LIMIT 2
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-INSERT INTO `Issue5289Table`
+INSERT INTO `SoftDeletedPictureTable`
 (
 	`Id`,
 	`PictureId`,
@@ -47,7 +47,7 @@ SELECT
 	`r`.`PictureId`,
 	`r`.`Deleted`
 FROM
-	`Issue5289Table` `r`
+	`SoftDeletedPictureTable` `r`
 WHERE
 	NOT `r`.`Deleted` AND `r`.`Id` = 1
 LIMIT 2

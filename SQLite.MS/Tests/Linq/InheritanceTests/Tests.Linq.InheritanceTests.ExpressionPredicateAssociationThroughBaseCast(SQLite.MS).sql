@@ -1,0 +1,77 @@
+﻿-- SQLite.MS SQLite
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
+DECLARE @TargetName NVarChar(12) -- String
+SET     @TargetName = 'bda.Requests'
+
+INSERT INTO [DiscriminatedTaskBase]
+(
+	[Id],
+	[TargetName]
+)
+VALUES
+(
+	@Id,
+	@TargetName
+)
+
+-- SQLite.MS SQLite
+DECLARE @Id Integer -- Int32
+SET     @Id = 2
+DECLARE @TargetName NVarChar(4) -- String
+SET     @TargetName = 'None'
+
+INSERT INTO [DiscriminatedTaskBase]
+(
+	[Id],
+	[TargetName]
+)
+VALUES
+(
+	@Id,
+	@TargetName
+)
+
+-- SQLite.MS SQLite
+DECLARE @Id Integer -- Int32
+SET     @Id = 2
+DECLARE @TaskId Integer -- Int32
+SET     @TaskId = 1
+DECLARE @Actual Integer -- Boolean
+SET     @Actual = 1
+
+INSERT INTO [DiscriminatedTaskStage]
+(
+	[Id],
+	[TaskId],
+	[Actual]
+)
+VALUES
+(
+	@Id,
+	@TaskId,
+	@Actual
+)
+
+-- SQLite.MS SQLite
+SELECT
+	[p].[Id],
+	[p].[TargetName],
+	[a_ActualStage].[Id]
+FROM
+	[DiscriminatedTaskBase] [p]
+		LEFT JOIN [DiscriminatedTaskStage] [a_ActualStage] ON [p].[Id] = [a_ActualStage].[TaskId] AND [a_ActualStage].[Actual] = 1
+WHERE
+	[p].[TargetName] = 'bda.Requests'
+
+-- SQLite.MS SQLite
+SELECT
+	[p].[TargetName],
+	[p].[Id],
+	[a_ActualStage].[Id]
+FROM
+	[DiscriminatedTaskBase] [p]
+		LEFT JOIN [DiscriminatedTaskStage] [a_ActualStage] ON [p].[Id] = [a_ActualStage].[TaskId] AND [a_ActualStage].[Actual] = 1
+ORDER BY
+	[p].[Id]
+

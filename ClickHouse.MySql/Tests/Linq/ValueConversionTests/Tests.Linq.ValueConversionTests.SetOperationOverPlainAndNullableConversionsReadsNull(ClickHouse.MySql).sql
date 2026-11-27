@@ -8,13 +8,13 @@ FROM
 			r.Id as Id,
 			r.Date as Date_1
 		FROM
-			Issue5976RowC r
+			PlainConvertedDateRow r
 		UNION ALL
 		SELECT
 			r_1.Id as Id,
 			r_1.Date as Date_1
 		FROM
-			Issue5976RowA r_1
+			NullableConvertedDateRowA r_1
 	) t1
 ORDER BY
 	t1.Id

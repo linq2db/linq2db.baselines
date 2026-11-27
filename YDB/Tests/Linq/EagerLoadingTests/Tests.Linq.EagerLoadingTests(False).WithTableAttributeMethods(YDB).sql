@@ -2,7 +2,7 @@
 DECLARE Id Int32
 SET     Id = 10
 
-INSERT INTO UserIssue3128
+INSERT INTO LoadAsTableUser
 (
 	Id
 )
@@ -17,7 +17,7 @@ SET     UserId = 10
 DECLARE Age Int32
 SET     Age = 18
 
-INSERT INTO UserDetailsIssue3128
+INSERT INTO LoadAsTableUserDetails
 (
 	UserId,
 	Age
@@ -32,7 +32,7 @@ VALUES
 $CTE_1 = 	SELECT
 		COUNT(*) as Count_1
 	FROM
-		UserIssue3128 t1
+		LoadAsTableUser t1
 ;
 
 SELECT

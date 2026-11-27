@@ -6,7 +6,7 @@ SET     @Name = N'Smith'
 DECLARE @Age Int -- Int32
 SET     @Age = 55
 
-INSERT INTO [PR_1598_Insert_Table]
+INSERT INTO [SkipOnInsertTable]
 (
 	[Id],
 	[Name],
@@ -25,7 +25,7 @@ SELECT TOP (1)
 	[t].[Name],
 	[t].[Age]
 FROM
-	[PR_1598_Insert_Table] [t]
+	[SkipOnInsertTable] [t]
 WHERE
 	[t].[Id] = 1
 
@@ -37,7 +37,7 @@ SET     @Name = N'Tommy'
 DECLARE @Age Int -- Int32
 SET     @Age = 50
 
-INSERT INTO [PR_1598_Insert_Table]
+INSERT INTO [SkipOnInsertTable]
 (
 	[Id],
 	[Name],
@@ -56,7 +56,7 @@ SELECT TOP (1)
 	[t].[Name],
 	[t].[Age]
 FROM
-	[PR_1598_Insert_Table] [t]
+	[SkipOnInsertTable] [t]
 WHERE
 	[t].[Id] = 2
 

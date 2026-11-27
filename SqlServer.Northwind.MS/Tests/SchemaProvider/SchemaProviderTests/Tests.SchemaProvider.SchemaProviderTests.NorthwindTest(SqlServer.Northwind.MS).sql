@@ -189,7 +189,7 @@ SET     @params = N'@Beginning_Date datetime, @Ending_Date datetime'
 sp_describe_first_result_set
 
 -- SqlServer.Northwind.MS SqlServer.2019
-EXEC('SELECT * FROM [NorthwindMS].[dbo].[Issue449](NULL)')
+EXEC('SELECT * FROM [NorthwindMS].[dbo].[FullTextTableFunction](NULL)')
 
 -- SqlServer.Northwind.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String

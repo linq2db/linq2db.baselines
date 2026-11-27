@@ -1,0 +1,30 @@
+﻿-- Oracle.12.Managed Oracle.Managed Oracle12
+DECLARE @Has Int16
+SET     @Has = 1
+DECLARE @IDENTITY_PARAMETER Decimal
+SET     @IDENTITY_PARAMETER = NULL
+
+INSERT INTO "FluentIdentityClient"
+(
+	"Has"
+)
+VALUES
+(
+	:Has
+)
+RETURNING 
+	"Id" INTO :IDENTITY_PARAMETER
+
+-- Oracle.12.Managed Oracle.Managed Oracle12
+DECLARE @id Int32
+SET     @id = 1
+
+SELECT
+	t1."Id",
+	t1."Has"
+FROM
+	"FluentIdentityClient" t1
+WHERE
+	t1."Id" = :id
+FETCH NEXT 2 ROWS ONLY
+

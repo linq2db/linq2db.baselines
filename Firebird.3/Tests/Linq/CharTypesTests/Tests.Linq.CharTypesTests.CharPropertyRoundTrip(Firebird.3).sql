@@ -1,0 +1,21 @@
+﻿-- Firebird.3 Firebird3
+DECLARE @CharFld Char -- String
+SET     @CharFld = 'P'
+
+INSERT INTO "CharFieldRecord"
+(
+	"CharFld"
+)
+VALUES
+(
+	@CharFld
+)
+
+-- Firebird.3 Firebird3
+SELECT
+	"t1"."Id",
+	"t1"."CharFld"
+FROM
+	"CharFieldRecord" "t1"
+FETCH NEXT 1 ROWS ONLY
+

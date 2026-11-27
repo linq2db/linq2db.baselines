@@ -1,0 +1,202 @@
+﻿-- SqlServer.2008
+IF (OBJECT_ID(N'[param_name_item_categories]', N'U') IS NOT NULL)
+	DROP TABLE [param_name_item_categories]
+
+-- SqlServer.2008
+IF (OBJECT_ID(N'[param_name_item_shares]', N'U') IS NOT NULL)
+	DROP TABLE [param_name_item_shares]
+
+-- SqlServer.2008
+IF (OBJECT_ID(N'[param_name_items]', N'U') IS NOT NULL)
+	DROP TABLE [param_name_items]
+
+-- SqlServer.2008
+CREATE TABLE [param_name_items]
+(
+	[id] UniqueIdentifier NOT NULL,
+
+	CONSTRAINT [PK_param_name_items] PRIMARY KEY CLUSTERED ([id])
+)
+
+-- SqlServer.2008
+CREATE TABLE [param_name_item_shares]
+(
+	[id]            UniqueIdentifier NOT NULL,
+	[media_item_id] UniqueIdentifier NOT NULL,
+	[created_by_id] UniqueIdentifier NOT NULL,
+	[user_id]       UniqueIdentifier NOT NULL,
+	[expires_at]    DateTime2        NOT NULL,
+
+	CONSTRAINT [PK_param_name_item_shares] PRIMARY KEY CLUSTERED ([id])
+)
+
+-- SqlServer.2008
+CREATE TABLE [param_name_item_categories]
+(
+	[id]            UniqueIdentifier NOT NULL,
+	[category_id]   UniqueIdentifier NOT NULL,
+	[media_item_id] UniqueIdentifier NOT NULL,
+
+	CONSTRAINT [PK_param_name_item_categories] PRIMARY KEY CLUSTERED ([id])
+)
+
+-- SqlServer.2008
+DECLARE @userId UniqueIdentifier -- Guid
+SET     @userId = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
+DECLARE @now DateTime2
+SET     @now = CAST('2020-02-29T17:54:55.1231234' AS DATETIME2)
+
+SELECT
+	[m_1].[id],
+	[d].[category_id]
+FROM
+	[param_name_items] [m_1]
+		INNER JOIN [param_name_item_categories] [d] ON [m_1].[id] = [d].[media_item_id]
+WHERE
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[param_name_item_shares] [y]
+		WHERE
+			[m_1].[id] = [y].[media_item_id] AND [y].[user_id] = @userId AND
+			[y].[expires_at] > @now
+	) OR
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[param_name_item_shares] [y_1]
+		WHERE
+			[m_1].[id] = [y_1].[media_item_id] AND [y_1].[created_by_id] = @userId AND
+			[y_1].[expires_at] > @now
+	)
+
+-- SqlServer.2008
+DECLARE @now DateTime2
+SET     @now = CAST('2020-02-29T17:54:55.1231234' AS DATETIME2)
+DECLARE @userId UniqueIdentifier -- Guid
+SET     @userId = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
+
+SELECT
+	[x].[id],
+	CASE
+		WHEN EXISTS(
+			SELECT
+				*
+			FROM
+				[param_name_item_shares] [y]
+			WHERE
+				[x].[id] = [y].[media_item_id] AND [y].[expires_at] > @now
+		)
+			THEN 1
+		ELSE 0
+	END
+FROM
+	[param_name_items] [x]
+WHERE
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[param_name_item_shares] [y_1]
+		WHERE
+			[x].[id] = [y_1].[media_item_id] AND [y_1].[user_id] = @userId AND
+			[y_1].[expires_at] > @now
+	) OR
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[param_name_item_shares] [y_2]
+		WHERE
+			[x].[id] = [y_2].[media_item_id] AND [y_2].[created_by_id] = @userId AND
+			[y_2].[expires_at] > @now
+	)
+
+-- SqlServer.2008
+DECLARE @userId UniqueIdentifier -- Guid
+SET     @userId = 'a948600d-de21-4f74-8ac2-9516b287076e'
+DECLARE @now DateTime2
+SET     @now = CAST('2020-02-29T17:54:55.1230000' AS DATETIME2)
+
+SELECT
+	[m_1].[id],
+	[d].[category_id]
+FROM
+	[param_name_items] [m_1]
+		INNER JOIN [param_name_item_categories] [d] ON [m_1].[id] = [d].[media_item_id]
+WHERE
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[param_name_item_shares] [y]
+		WHERE
+			[m_1].[id] = [y].[media_item_id] AND [y].[user_id] = @userId AND
+			[y].[expires_at] > @now
+	) OR
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[param_name_item_shares] [y_1]
+		WHERE
+			[m_1].[id] = [y_1].[media_item_id] AND [y_1].[created_by_id] = @userId AND
+			[y_1].[expires_at] > @now
+	)
+
+-- SqlServer.2008
+DECLARE @now DateTime2
+SET     @now = CAST('2020-02-29T17:54:55.1230000' AS DATETIME2)
+DECLARE @userId UniqueIdentifier -- Guid
+SET     @userId = 'a948600d-de21-4f74-8ac2-9516b287076e'
+
+SELECT
+	[x].[id],
+	CASE
+		WHEN EXISTS(
+			SELECT
+				*
+			FROM
+				[param_name_item_shares] [y]
+			WHERE
+				[x].[id] = [y].[media_item_id] AND [y].[expires_at] > @now
+		)
+			THEN 1
+		ELSE 0
+	END
+FROM
+	[param_name_items] [x]
+WHERE
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[param_name_item_shares] [y_1]
+		WHERE
+			[x].[id] = [y_1].[media_item_id] AND [y_1].[user_id] = @userId AND
+			[y_1].[expires_at] > @now
+	) OR
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[param_name_item_shares] [y_2]
+		WHERE
+			[x].[id] = [y_2].[media_item_id] AND [y_2].[created_by_id] = @userId AND
+			[y_2].[expires_at] > @now
+	)
+
+-- SqlServer.2008
+IF (OBJECT_ID(N'[param_name_item_categories]', N'U') IS NOT NULL)
+	DROP TABLE [param_name_item_categories]
+
+-- SqlServer.2008
+IF (OBJECT_ID(N'[param_name_item_shares]', N'U') IS NOT NULL)
+	DROP TABLE [param_name_item_shares]
+
+-- SqlServer.2008
+IF (OBJECT_ID(N'[param_name_items]', N'U') IS NOT NULL)
+	DROP TABLE [param_name_items]
+

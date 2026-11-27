@@ -1,0 +1,61 @@
+﻿-- Oracle.11.Managed Oracle11
+DECLARE @take Int32
+SET     @take = 10
+
+SELECT
+	r."OrderPeriodId",
+	r."ProductId",
+	r."CategoryId",
+	r."MaxCapacity",
+	r."Quantity",
+	r."MaxCapacity" - r."Quantity",
+	COALESCE(CAST(vpcc."PeriodOrderLimit" AS Int),0),
+	vsopc."Quantity",
+	COALESCE(CAST(vpcc."PeriodOrderLimit" AS Int),0) - Coalesce(vsopc."Quantity", 0)
+FROM
+	(
+		SELECT
+			op."Id" as "OrderPeriodId",
+			vpc."CategoryId",
+			pop."ProductId",
+			COALESCE(CAST(pcc."PeriodOrderLimit" AS Int),0) as "MaxCapacity",
+			COALESCE(COALESCE(vsp."Quantity",0),0) as "Quantity"
+		FROM
+			"CapacityOrderPeriod" op
+				INNER JOIN "CapacityPeriodProduct" pop ON op."Id" = pop."OrderPeriodId"
+				LEFT JOIN "CapacityProduct" vpc ON vpc."Id" = pop."ProductId"
+				LEFT JOIN "CapacityProductCategory" pcc ON pcc."Id" = vpc."CategoryId"
+				LEFT JOIN (
+					SELECT
+						agroup."Id",
+						oi."ProductId",
+						SUM(CAST(COALESCE(oi."Quantity",0) AS Int)) as "Quantity"
+					FROM
+						"CapacityOrderPeriod" agroup
+							LEFT JOIN "CapacityOrderHeader" oh ON agroup."Id" = oh."PeriodId"
+							LEFT JOIN "CapacityOrderItem" oi ON oh."Id" = oi."OrderHeaderId"
+					GROUP BY
+						agroup."Id",
+						oi."ProductId"
+				) vsp ON vsp."Id" = op."Id" AND vsp."ProductId" = pop."ProductId"
+	) r
+		LEFT JOIN "CapacityOrderPeriod" v2
+			INNER JOIN "CapacityProductCategory" vpcc ON 1=1
+		ON v2."Id" = r."OrderPeriodId" AND vpcc."Id" = r."CategoryId"
+		LEFT JOIN (
+			SELECT
+				agroup_1."Id",
+				p."CategoryId",
+				SUM(CAST(oi_1."Quantity" AS Int)) as "Quantity"
+			FROM
+				"CapacityOrderPeriod" agroup_1
+					LEFT JOIN "CapacityOrderHeader" oh_1 ON agroup_1."Id" = oh_1."PeriodId"
+					LEFT JOIN "CapacityOrderItem" oi_1 ON oh_1."Id" = oi_1."OrderHeaderId"
+					LEFT JOIN "CapacityProduct" p ON p."Id" = oi_1."ProductId"
+			GROUP BY
+				agroup_1."Id",
+				p."CategoryId"
+		) vsopc ON vsopc."Id" = v2."Id" AND (vsopc."CategoryId" = vpcc."Id" OR vsopc."CategoryId" IS NULL AND vpcc."Id" IS NULL)
+WHERE
+	ROWNUM <= :take
+

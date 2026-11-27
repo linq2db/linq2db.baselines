@@ -1,0 +1,59 @@
+﻿-- SQLite.MS SQLite
+DECLARE @id Blob(16) -- Guid
+SET     @id = X'3D667BBCDE0F27438F925D8CC3A11D11'
+
+INSERT INTO [GuidSubqueryInsertRecord]
+(
+	[required_field],
+	[optional_field]
+)
+VALUES
+(
+	@id,
+	(
+		SELECT
+			[t1].[required_field]
+		FROM
+			[GuidSubqueryInsertRecord] [t1]
+		WHERE
+			1 = 0
+	)
+)
+
+-- SQLite.MS SQLite
+DECLARE @id Blob(16) -- Guid
+SET     @id = X'0D6048A921DE744F8AC29516B287076E'
+DECLARE @testId Blob(16) -- Guid
+SET     @testId = X'3D667BBCDE0F27438F925D8CC3A11D11'
+
+INSERT INTO [GuidSubqueryInsertRecord]
+(
+	[required_field],
+	[optional_field]
+)
+VALUES
+(
+	@id,
+	(
+		SELECT
+			[t1].[required_field]
+		FROM
+			[GuidSubqueryInsertRecord] [t1]
+		WHERE
+			[t1].[required_field] = @testId
+	)
+)
+
+-- SQLite.MS SQLite
+DECLARE @id2 Blob(16) -- Guid
+SET     @id2 = X'0D6048A921DE744F8AC29516B287076E'
+
+SELECT
+	[t1].[required_field],
+	[t1].[optional_field]
+FROM
+	[GuidSubqueryInsertRecord] [t1]
+WHERE
+	[t1].[required_field] = @id2
+LIMIT 2
+

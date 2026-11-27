@@ -1,5 +1,5 @@
 ﻿-- Firebird.2.5 Firebird
-INSERT INTO "Issue5975Row"
+INSERT INTO "ShiftedDateRow"
 (
 	"Id",
 	"Plain",
@@ -18,5 +18,5 @@ SELECT FIRST 2
 	"t1"."Plain",
 	"t1"."Date"
 FROM
-	"Issue5975Row" "t1"
+	"ShiftedDateRow" "t1"
 

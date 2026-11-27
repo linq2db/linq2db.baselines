@@ -1,0 +1,14 @@
+﻿-- DuckDB
+SELECT
+	a_Person.personid,
+	a_Person.personname,
+	MAX(f.added)
+FROM
+	vb_activity f
+		INNER JOIN vb_activity_person a_Person ON f.personid = a_Person.personid
+WHERE
+	f.added >= make_timestamp(2017, 1, 1, 0, 0, 0)
+GROUP BY
+	a_Person.personid,
+	a_Person.personname
+

@@ -1,0 +1,101 @@
+﻿-- Oracle.11.Managed Oracle11
+BEGIN
+	EXECUTE IMMEDIATE '
+		CREATE GLOBAL TEMPORARY TABLE "TempIdentityRowTMP"
+		(
+			"Id"    Int  NOT NULL,
+			"Value" Int  NOT NULL,
+
+			CONSTRAINT "PK_TempIdentityRowTMP" PRIMARY KEY ("Id")
+		)
+		ON COMMIT PRESERVE ROWS
+	';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -955 THEN
+			RAISE;
+		END IF;
+END;
+
+-- Oracle.11.Managed Oracle11
+CREATE SEQUENCE "SIDENTITY_TempIdentityRowTMP"
+
+-- Oracle.11.Managed Oracle11
+CREATE OR REPLACE TRIGGER "TIDENTITY_TempIdentityRowTMP"
+BEFORE INSERT ON "TempIdentityRowTMP" FOR EACH ROW
+BEGIN
+	SELECT "SIDENTITY_TempIdentityRowTMP".NEXTVAL INTO :NEW."Id" FROM dual;
+END;
+
+-- Oracle.11.Managed Oracle11
+INSERT INTO "TempIdentityRow"
+(
+	"Value"
+)
+VALUES
+(
+	1
+)
+
+-- Oracle.11.Managed Oracle11
+INSERT INTO "TempIdentityRowTMP"
+(
+	"Value"
+)
+VALUES
+(
+	2
+)
+
+-- Oracle.11.Managed Oracle11
+SELECT
+	t1."Id",
+	t1."Value"
+FROM
+	"TempIdentityRow" t1
+WHERE
+	ROWNUM <= 2
+
+-- Oracle.11.Managed Oracle11
+SELECT
+	t1."Id",
+	t1."Value"
+FROM
+	"TempIdentityRowTMP" t1
+WHERE
+	ROWNUM <= 2
+
+-- Oracle.11.Managed Oracle11
+BEGIN
+	BEGIN
+		EXECUTE IMMEDIATE 'TRUNCATE TABLE "TempIdentityRowTMP"';
+	EXCEPTION
+		WHEN OTHERS THEN
+			NULL;
+	END;
+	BEGIN
+		EXECUTE IMMEDIATE 'DROP TRIGGER "TIDENTITY_TempIdentityRowTMP"';
+	EXCEPTION
+		WHEN OTHERS THEN
+			IF SQLCODE != -4080 THEN
+				RAISE;
+			END IF;
+	END;
+	BEGIN
+		EXECUTE IMMEDIATE 'DROP SEQUENCE "SIDENTITY_TempIdentityRowTMP"';
+	EXCEPTION
+		WHEN OTHERS THEN
+			IF SQLCODE != -2289 THEN
+				RAISE;
+			END IF;
+	END;
+	BEGIN
+		EXECUTE IMMEDIATE 'DROP TABLE "TempIdentityRowTMP"';
+	EXCEPTION
+		WHEN OTHERS THEN
+			IF SQLCODE != -942 THEN
+				RAISE;
+			END IF;
+	END;
+END;
+

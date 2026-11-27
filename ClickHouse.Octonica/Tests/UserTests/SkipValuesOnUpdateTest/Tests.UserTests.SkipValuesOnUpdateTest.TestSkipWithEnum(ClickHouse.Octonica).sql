@@ -1,5 +1,5 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-INSERT INTO PR_1598_Update_Enum_Table
+INSERT INTO SkipOnUpdateEnum
 (
 	Id,
 	Name,
@@ -21,14 +21,14 @@ SELECT
 	t.Age,
 	t.Gender
 FROM
-	PR_1598_Update_Enum_Table t
+	SkipOnUpdateEnum t
 WHERE
 	t.Id = 1
 LIMIT 1
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
-	PR_1598_Update_Enum_Table
+	SkipOnUpdateEnum
 UPDATE
 	Name = 'Jack',
 	Age = 2,
@@ -43,14 +43,14 @@ SELECT
 	t.Age,
 	t.Gender
 FROM
-	PR_1598_Update_Enum_Table t
+	SkipOnUpdateEnum t
 WHERE
 	t.Id = 1
 LIMIT 1
 
 -- ClickHouse.Octonica ClickHouse
 ALTER TABLE
-	PR_1598_Update_Enum_Table
+	SkipOnUpdateEnum
 UPDATE
 	Name = 'Francine',
 	Age = 20
@@ -64,7 +64,7 @@ SELECT
 	t.Age,
 	t.Gender
 FROM
-	PR_1598_Update_Enum_Table t
+	SkipOnUpdateEnum t
 WHERE
 	t.Id = 1
 LIMIT 1
