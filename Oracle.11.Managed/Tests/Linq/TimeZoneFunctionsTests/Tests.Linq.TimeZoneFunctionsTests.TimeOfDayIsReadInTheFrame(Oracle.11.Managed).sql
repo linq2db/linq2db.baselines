@@ -8,7 +8,7 @@ WHERE
 
 -- Oracle.11.Managed Oracle11
 SELECT
-	TO_CHAR(CAST(r."Dto" AS timestamp(7)), 'HH24:MI:SS')
+	TO_CHAR(CAST(r."Dto" AS timestamp(7)), 'HH24:MI:SS.FF7')
 FROM
 	"ZonedRow" r
 WHERE
