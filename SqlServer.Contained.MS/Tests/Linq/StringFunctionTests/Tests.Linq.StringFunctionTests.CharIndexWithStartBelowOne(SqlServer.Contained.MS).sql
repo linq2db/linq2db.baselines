@@ -1,0 +1,36 @@
+﻿-- SqlServer.Contained.MS SqlServer.2025
+SELECT
+	CharIndex(N'J', [p].[FirstName], 0)
+FROM
+	[Person] [p]
+ORDER BY
+	[p].[PersonID]
+
+-- SqlServer.Contained.MS SqlServer.2025
+SELECT
+	[t1].[FirstName],
+	[t1].[PersonID],
+	[t1].[LastName],
+	[t1].[MiddleName],
+	[t1].[Gender]
+FROM
+	[Person] [t1]
+
+-- SqlServer.Contained.MS SqlServer.2025
+SELECT
+	CharIndex(N'J', [p].[FirstName], -1)
+FROM
+	[Person] [p]
+ORDER BY
+	[p].[PersonID]
+
+-- SqlServer.Contained.MS SqlServer.2025
+SELECT
+	[t1].[FirstName],
+	[t1].[PersonID],
+	[t1].[LastName],
+	[t1].[MiddleName],
+	[t1].[Gender]
+FROM
+	[Person] [t1]
+
