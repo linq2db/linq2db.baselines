@@ -1,13 +1,13 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
 UPDATE
-	"Issue5289Table" "t1"
+	"SoftDeletedPictureTable" "t1"
 SET
 	"PictureId" = 3
 WHERE
 	"t1"."Id" = 1
 
 -- SapHana.Odbc SapHanaOdbc
-INSERT INTO "Issue5289Table"
+INSERT INTO "SoftDeletedPictureTable"
 (
 	"Id",
 	"PictureId",
@@ -26,14 +26,14 @@ SELECT
 	"r"."PictureId",
 	"r"."Deleted"
 FROM
-	"Issue5289Table" "r"
+	"SoftDeletedPictureTable" "r"
 WHERE
 	"r"."Deleted" = 0 AND "r"."Id" = 1
 LIMIT 2
 
 -- SapHana.Odbc SapHanaOdbc
 UPDATE
-	"Issue5289Table" "t1"
+	"SoftDeletedPictureTable" "t1"
 SET
 	"PictureId" = 3
 WHERE
@@ -45,7 +45,7 @@ SELECT
 	"r"."PictureId",
 	"r"."Deleted"
 FROM
-	"Issue5289Table" "r"
+	"SoftDeletedPictureTable" "r"
 WHERE
 	"r"."Deleted" = 0 AND "r"."Id" = 1
 LIMIT 2

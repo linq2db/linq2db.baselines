@@ -1,0 +1,255 @@
+﻿-- SapHana.Native SapHana
+SELECT
+	COUNT(*)
+FROM
+	"AllTypes" "t1"
+
+-- SapHana.Native SapHana
+SELECT
+	current_schema
+FROM
+	"LinqDataTypes" "t1"
+LIMIT 1
+
+-- SapHana.Native SapHana
+SELECT CURRENT_SCHEMA FROM DUMMY
+
+-- SapHana.Native SapHana
+SELECT 1 FROM _SYS_BI.BIMC_ALL_CUBES LIMIT 1
+
+-- SapHana.Native SapHana
+SELECT
+	SCHEMA_NAME,
+	PROCEDURE_NAME,
+	0 AS IS_FUNCTION,
+	0 AS IS_TABLE_FUNCTION,
+	DEFINITION
+FROM PROCEDURES
+WHERE SCHEMA_NAME IN ('TESTDBNATIVE')
+UNION ALL
+SELECT
+	F.SCHEMA_NAME,
+	F.FUNCTION_NAME AS PROCEDURE_NAME,
+	1 AS IS_FUNCTION,
+	CASE WHEN F.FUNCTION_USAGE_TYPE = 'TABLE' THEN 1 ELSE 0 END AS IS_TABLE_FUNCTION,
+	DEFINITION
+FROM FUNCTIONS AS F
+WHERE F.SCHEMA_NAME IN ('TESTDBNATIVE')
+
+-- SapHana.Native SapHana
+SELECT
+	SCHEMA_NAME,
+	PROCEDURE_NAME,
+	PARAMETER_NAME,
+	DATA_TYPE_NAME,
+	POSITION,
+	PARAMETER_TYPE,
+	0 AS IS_RESULT,
+	LENGTH,
+	SCALE,
+	IS_NULLABLE
+FROM PROCEDURE_PARAMETERS
+WHERE SCHEMA_NAME IN ('TESTDBNATIVE')
+UNION ALL
+SELECT
+	SCHEMA_NAME,
+	FUNCTION_NAME AS PROCEDURE_NAME,
+	PARAMETER_NAME,
+	DATA_TYPE_NAME,
+	POSITION,
+	PARAMETER_TYPE,
+	CASE WHEN PARAMETER_TYPE = 'RETURN' THEN 1 ELSE 0 END AS IS_RESULT,
+	LENGTH,
+	SCALE,
+	IS_NULLABLE
+FROM FUNCTION_PARAMETERS
+WHERE NOT (PARAMETER_TYPE = 'RETURN' AND DATA_TYPE_NAME = 'TABLE_TYPE') AND SCHEMA_NAME IN ('TESTDBNATIVE')
+ORDER BY SCHEMA_NAME, PROCEDURE_NAME, POSITION
+
+-- SapHana.Native SapHana
+"TESTDBNATIVE"."AddIssue792Record"
+
+-- SapHana.Native SapHana
+DECLARE @TABLENAME VarChar(50) -- AnsiString
+SET     @TABLENAME = ''
+DECLARE @CONSTRAINTNAME VarChar(100) -- AnsiString
+SET     @CONSTRAINTNAME = ''
+DECLARE @SCHEMANAME VarChar(50) -- AnsiString
+SET     @SCHEMANAME = ''
+
+"TESTDBNATIVE"."DROPCONSTRAINTFROMTABLE"
+
+-- SapHana.Native SapHana
+DECLARE @FUNCTIONNAME VarChar(50) -- AnsiString
+SET     @FUNCTIONNAME = ''
+DECLARE @SCHEMANAME VarChar(50) -- AnsiString
+SET     @SCHEMANAME = ''
+
+"TESTDBNATIVE"."DROPEXISTINGFUNCTION"
+
+-- SapHana.Native SapHana
+DECLARE @PROCEDURENAME VarChar(50) -- AnsiString
+SET     @PROCEDURENAME = ''
+DECLARE @SCHEMANAME VarChar(50) -- AnsiString
+SET     @SCHEMANAME = ''
+
+"TESTDBNATIVE"."DROPEXISTINGPROCEDURE"
+
+-- SapHana.Native SapHana
+DECLARE @TABLENAME VarChar(50) -- AnsiString
+SET     @TABLENAME = ''
+DECLARE @SCHEMANAME VarChar(50) -- AnsiString
+SET     @SCHEMANAME = ''
+
+"TESTDBNATIVE"."DROPEXISTINGTABLE"
+
+-- SapHana.Native SapHana
+DECLARE @VIEWNAME VarChar(50) -- AnsiString
+SET     @VIEWNAME = ''
+DECLARE @SCHEMANAME VarChar(50) -- AnsiString
+SET     @SCHEMANAME = ''
+
+"TESTDBNATIVE"."DROPEXISTINGVIEW"
+
+-- SapHana.Native SapHana
+"TESTDBNATIVE"."DuplicateColumnNames"
+
+-- SapHana.Native SapHana
+DECLARE @STR VarChar(50) -- AnsiString
+SET     @STR = ''
+DECLARE @OUTPUTSTR VarChar(50) -- AnsiString
+SET     @OUTPUTSTR = ''
+DECLARE @INPUTOUTPUTSTR VarChar(50) -- AnsiString
+SET     @INPUTOUTPUTSTR = ''
+
+"TESTDBNATIVE"."OutRefEnumTest"
+
+-- SapHana.Native SapHana
+DECLARE @ID Integer(10) -- Int32
+SET     @ID = 0
+DECLARE @OUTPUTID Integer(10) -- Int32
+SET     @OUTPUTID = 0
+DECLARE @INPUTOUTPUTID Integer(10) -- Int32
+SET     @INPUTOUTPUTID = 0
+DECLARE @STR VarChar(50) -- AnsiString
+SET     @STR = ''
+DECLARE @OUTPUTSTR VarChar(50) -- AnsiString
+SET     @OUTPUTSTR = ''
+DECLARE @INPUTOUTPUTSTR VarChar(50) -- AnsiString
+SET     @INPUTOUTPUTSTR = ''
+
+"TESTDBNATIVE"."OutRefTest"
+
+-- SapHana.Native SapHana
+"TESTDBNATIVE"."Patient_SelectAll"
+
+-- SapHana.Native SapHana
+DECLARE @FIRSTNAME NVarChar(50) -- String
+SET     @FIRSTNAME = ''
+DECLARE @LASTNAME NVarChar(50) -- String
+SET     @LASTNAME = ''
+
+"TESTDBNATIVE"."Patient_SelectByName"
+
+-- SapHana.Native SapHana
+DECLARE @PERSONID Integer(10) -- Int32
+SET     @PERSONID = 0
+
+"TESTDBNATIVE"."Person_Delete"
+
+-- SapHana.Native SapHana
+DECLARE @FIRSTNAME NVarChar(50) -- String
+SET     @FIRSTNAME = ''
+DECLARE @LASTNAME NVarChar(50) -- String
+SET     @LASTNAME = ''
+DECLARE @MIDDLENAME NVarChar(50) -- String
+SET     @MIDDLENAME = ''
+DECLARE @GENDER VarChar(1) -- AnsiStringFixedLength
+SET     @GENDER = char(0)
+
+"TESTDBNATIVE"."Person_Insert"
+
+-- SapHana.Native SapHana
+DECLARE @FIRSTNAME NVarChar(50) -- String
+SET     @FIRSTNAME = ''
+DECLARE @LASTNAME NVarChar(50) -- String
+SET     @LASTNAME = ''
+DECLARE @MIDDLENAME NVarChar(50) -- String
+SET     @MIDDLENAME = ''
+DECLARE @GENDER VarChar(1) -- AnsiStringFixedLength
+SET     @GENDER = char(0)
+DECLARE @PERSONID Integer(10) -- Int32
+SET     @PERSONID = 0
+
+"TESTDBNATIVE"."Person_Insert_OutputParameter"
+
+-- SapHana.Native SapHana
+"TESTDBNATIVE"."Person_SelectAll"
+
+-- SapHana.Native SapHana
+DECLARE @ID Integer(10) -- Int32
+SET     @ID = 0
+
+"TESTDBNATIVE"."Person_SelectByKey"
+
+-- SapHana.Native SapHana
+DECLARE @FIRSTNAME NVarChar(50) -- String
+SET     @FIRSTNAME = ''
+DECLARE @LASTNAME NVarChar(50) -- String
+SET     @LASTNAME = ''
+
+"TESTDBNATIVE"."Person_SelectByName"
+
+-- SapHana.Native SapHana
+DECLARE @FIRSTNAME NVarChar(50) -- String
+SET     @FIRSTNAME = ''
+DECLARE @LASTNAME NVarChar(50) -- String
+SET     @LASTNAME = ''
+
+"TESTDBNATIVE"."Person_SelectListByName"
+
+-- SapHana.Native SapHana
+DECLARE @PERSONID Integer(10) -- Int32
+SET     @PERSONID = 0
+DECLARE @FIRSTNAME NVarChar(50) -- String
+SET     @FIRSTNAME = ''
+DECLARE @LASTNAME NVarChar(50) -- String
+SET     @LASTNAME = ''
+DECLARE @MIDDLENAME NVarChar(50) -- String
+SET     @MIDDLENAME = ''
+DECLARE @GENDER VarChar(1) -- AnsiStringFixedLength
+SET     @GENDER = char(0)
+
+"TESTDBNATIVE"."Person_Update"
+
+-- SapHana.Native SapHana
+"TESTDBNATIVE"."SelectImplicitColumn"
+
+-- SapHana.Native SapHana
+DECLARE @I Integer(10) -- Int32
+SET     @I = 0
+
+"TESTDBNATIVE"."TEST_PROCEDURE"
+
+-- SapHana.Native SapHana
+"TESTDBNATIVE"."prd.global.ecc/CV_MARAproc"
+
+-- SapHana.Native SapHana
+SELECT * FROM "TESTDBNATIVE"."GetParentByID"(0)
+
+-- SapHana.Native SapHana
+SELECT * FROM "TESTDBNATIVE"."TEST_TABLE_FUNCTION"(0)
+
+RollbackTransaction
+-- SapHana.Native SapHana
+SELECT
+	COUNT(*)
+FROM
+	"AllTypes" "t1"
+
+-- SapHana.Native SapHana
+DELETE FROM
+	"AllTypes" "t1"
+WHERE
+	"t1"."char20DataType" = 'issue792'
+
