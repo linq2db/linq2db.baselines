@@ -1,0 +1,72 @@
+﻿-- SQLite.Classic SQLite
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
+
+INSERT INTO [SumSubqueryPosition]
+(
+	[Id]
+)
+VALUES
+(
+	@Id
+)
+
+-- SQLite.Classic SQLite
+DECLARE @InfeedAdviceID Integer -- Int32
+SET     @InfeedAdviceID = 1
+DECLARE @Quantity Integer -- Int32
+SET     @Quantity = 9
+
+INSERT INTO [SumSubqueryInventory]
+(
+	[InfeedAdviceID],
+	[Quantity]
+)
+VALUES
+(
+	@InfeedAdviceID,
+	@Quantity
+)
+
+-- SQLite.Classic SQLite
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
+DECLARE @Nr Integer -- Int32
+SET     @Nr = 77
+
+INSERT INTO [SumSubqueryAddon]
+(
+	[Id],
+	[Nr]
+)
+VALUES
+(
+	@Id,
+	@Nr
+)
+
+-- SQLite.Classic SQLite
+SELECT
+	[infeed].[Id],
+	Coalesce((
+		SELECT
+			SUM([x].[Quantity])
+		FROM
+			[SumSubqueryInventory] [x]
+		WHERE
+			[x].[InfeedAdviceID] = [infeed].[Id]
+	), 0),
+	[t1].[Id],
+	[t1].[Nr]
+FROM
+	[SumSubqueryPosition] [infeed]
+		LEFT JOIN (
+			SELECT
+				[ir].[Id],
+				[ir].[Nr],
+				ROW_NUMBER() OVER (PARTITION BY [ir].[Id] ORDER BY [ir].[Id]) as [rn]
+			FROM
+				[SumSubqueryAddon] [ir]
+		) [t1] ON [t1].[Id] = [infeed].[Id] AND [t1].[rn] = 1
+LIMIT 1
+

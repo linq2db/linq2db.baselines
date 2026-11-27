@@ -3,11 +3,11 @@ DECLARE @test VarChar(23) -- AnsiString
 SET     @test = '2026-06-06 02:01:01.000'
 
 UPDATE
-	[Issue5975Row]
+	[ShiftedDateRow]
 SET
 	[Date] = CASE
-		WHEN [Issue5975Row].[Date] IS NOT NULL THEN @test
-		ELSE strftime('%Y-%m-%d %H:%M:%f', [Issue5975Row].[Plain], '1 Day')
+		WHEN [ShiftedDateRow].[Date] IS NOT NULL THEN @test
+		ELSE strftime('%Y-%m-%d %H:%M:%f', [ShiftedDateRow].[Plain], '1 Day')
 	END
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -16,7 +16,7 @@ SELECT
 	[t1].[Plain],
 	[t1].[Date]
 FROM
-	[Issue5975Row] [t1]
+	[ShiftedDateRow] [t1]
 ORDER BY
 	[t1].[Id]
 

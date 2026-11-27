@@ -2,7 +2,7 @@
 SELECT
 	[r].[Id]
 FROM
-	[Issue5975Row] [r]
+	[ShiftedDateRow] [r]
 WHERE
 	strftime('%Y-%m-%d %H:%M:%f', [r].[Plain]) = strftime('%Y-%m-%d %H:%M:%f', [r].[Date])
 

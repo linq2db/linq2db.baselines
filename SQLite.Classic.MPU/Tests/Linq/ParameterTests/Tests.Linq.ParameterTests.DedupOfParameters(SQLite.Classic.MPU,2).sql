@@ -11,7 +11,7 @@ DECLARE @Value_4 Integer -- Boolean
 SET     @Value_4 = 0
 
 UPDATE
-	[IssueDedup]
+	[BoolSetDedupTable]
 SET
 	[Value1] = @Value,
 	[Value2] = @Value_1,
@@ -28,7 +28,7 @@ SELECT
 	[t1].[Value4],
 	[t1].[Value5]
 FROM
-	[IssueDedup] [t1]
+	[BoolSetDedupTable] [t1]
 LIMIT 2
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -44,7 +44,7 @@ DECLARE @Value_4 Integer -- Boolean
 SET     @Value_4 = 0
 
 UPDATE
-	[IssueDedup]
+	[BoolSetDedupTable]
 SET
 	[Value1] = @Value,
 	[Value2] = @Value_1,
@@ -61,7 +61,7 @@ SELECT
 	[t1].[Value4],
 	[t1].[Value5]
 FROM
-	[IssueDedup] [t1]
+	[BoolSetDedupTable] [t1]
 LIMIT 2
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -77,7 +77,7 @@ DECLARE @Value_4 Integer -- Boolean
 SET     @Value_4 = 0
 
 UPDATE
-	[IssueDedup]
+	[BoolSetDedupTable]
 SET
 	[Value1] = @Value,
 	[Value2] = @Value_1,
@@ -94,7 +94,7 @@ SELECT
 	[t1].[Value4],
 	[t1].[Value5]
 FROM
-	[IssueDedup] [t1]
+	[BoolSetDedupTable] [t1]
 LIMIT 2
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -110,7 +110,7 @@ DECLARE @Value_4 Integer -- Boolean
 SET     @Value_4 = 1
 
 UPDATE
-	[IssueDedup]
+	[BoolSetDedupTable]
 SET
 	[Value1] = @Value,
 	[Value2] = @Value_1,
@@ -127,6 +127,6 @@ SELECT
 	[t1].[Value4],
 	[t1].[Value5]
 FROM
-	[IssueDedup] [t1]
+	[BoolSetDedupTable] [t1]
 LIMIT 2
 
