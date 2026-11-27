@@ -1,5 +1,5 @@
 ﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-WITH "CTE_1" ("Id", field, "CompanyName")
+WITH "CTE_1" ("Id", field, "Name")
 AS MATERIALIZED
 (
 	SELECT
@@ -142,7 +142,7 @@ FROM
 			t7.field as "Item3",
 			t7."Id" as "Item2",
 			t7."Id" as "Item4",
-			t7."CompanyName" as "Item5",
+			t7."Name" as "Item5",
 			NULL::Int as "Item6",
 			NULL::Int as "Item7"
 		FROM
