@@ -6,7 +6,7 @@ SET     @Name = NULL
 DECLARE @Age Int -- Int32
 SET     @Age = 2
 
-INSERT INTO [SkipOnUpdateFluent]
+INSERT INTO [PR_1598_Update_Fluent_Table]
 (
 	[Id],
 	[Name],
@@ -25,7 +25,7 @@ SELECT TOP 1
 	[t].[Name],
 	[t].[Age]
 FROM
-	[SkipOnUpdateFluent] [t]
+	[PR_1598_Update_Fluent_Table] [t]
 WHERE
 	[t].[Id] = 1
 
@@ -38,7 +38,7 @@ DECLARE @Id Int -- Int32
 SET     @Id = 1
 
 UPDATE
-	[SkipOnUpdateFluent] [t1]
+	[PR_1598_Update_Fluent_Table] [t1]
 SET
 	[t1].[Name] = ?,
 	[t1].[Age] = ?
@@ -51,7 +51,7 @@ SELECT TOP 1
 	[t].[Name],
 	[t].[Age]
 FROM
-	[SkipOnUpdateFluent] [t]
+	[PR_1598_Update_Fluent_Table] [t]
 WHERE
 	[t].[Id] = 1
 
@@ -62,7 +62,7 @@ DECLARE @Id Int -- Int32
 SET     @Id = 1
 
 UPDATE
-	[SkipOnUpdateFluent] [t1]
+	[PR_1598_Update_Fluent_Table] [t1]
 SET
 	[t1].[Name] = ?
 WHERE
@@ -74,7 +74,7 @@ SELECT TOP 1
 	[t].[Name],
 	[t].[Age]
 FROM
-	[SkipOnUpdateFluent] [t]
+	[PR_1598_Update_Fluent_Table] [t]
 WHERE
 	[t].[Id] = 1
 

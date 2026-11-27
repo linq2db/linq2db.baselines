@@ -4,5 +4,5 @@ SELECT
 	[d].[ParentID] as [ParentID_1]
 FROM
 	[Parent] [m_1]
-		INNER JOIN [NoSuchTable] [d] ON ([m_1].[ParentID] = [d].[ParentID])
+		INNER JOIN [NoSuchTable5891] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
