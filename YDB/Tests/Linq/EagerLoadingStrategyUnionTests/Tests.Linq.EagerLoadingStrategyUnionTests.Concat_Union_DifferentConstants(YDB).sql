@@ -68,7 +68,7 @@ FROM
 			t4.field as Item3,
 			t4.Id as Item2,
 			t4.Id as Item4,
-			t4.Id as Item5,
+			CAST(NULL AS Int32) as Item5,
 			t4.Label as Item6,
 			CAST(NULL AS Bool) as Item7,
 			t4.Name as Item1_1

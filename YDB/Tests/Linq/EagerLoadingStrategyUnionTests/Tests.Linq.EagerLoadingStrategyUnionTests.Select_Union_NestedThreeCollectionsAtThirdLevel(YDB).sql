@@ -2,7 +2,7 @@
 $CTE_1 = 	SELECT
 		c_1.Id as Id,
 		ROW_NUMBER() OVER (ORDER BY c_1.Id) as field,
-		c_1.Name as CompanyName
+		c_1.Name as Name
 	FROM
 		Company c_1
 	ORDER BY
@@ -143,7 +143,7 @@ FROM
 			t9.field as Item3,
 			t9.Id as Item2,
 			t9.Id as Item4,
-			t9.CompanyName as Item5,
+			t9.Name as Item5,
 			CAST(NULL AS Int32) as Item6,
 			CAST(NULL AS Int32) as Item7,
 			CAST(NULL AS Text) as Item1_1
