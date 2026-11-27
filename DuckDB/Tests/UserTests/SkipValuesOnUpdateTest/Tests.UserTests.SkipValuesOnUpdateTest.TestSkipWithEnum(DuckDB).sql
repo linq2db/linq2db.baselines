@@ -8,7 +8,7 @@ SET     $Age = 20
 DECLARE $Gender NVarChar(6) -- String
 SET     $Gender = 'Female'
 
-INSERT INTO SkipOnUpdateEnum
+INSERT INTO PR_1598_Update_Enum_Table
 (
 	Id,
 	Name,
@@ -30,7 +30,7 @@ SELECT
 	t.Age,
 	t.Gender
 FROM
-	SkipOnUpdateEnum t
+	PR_1598_Update_Enum_Table t
 WHERE
 	t.Id = 1
 LIMIT 1
@@ -46,13 +46,13 @@ DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 
 UPDATE
-	SkipOnUpdateEnum
+	PR_1598_Update_Enum_Table
 SET
 	Name = $Name,
 	Age = $Age,
 	Gender = $Gender
 WHERE
-	SkipOnUpdateEnum.Id = $Id
+	PR_1598_Update_Enum_Table.Id = $Id
 
 -- DuckDB
 SELECT
@@ -61,7 +61,7 @@ SELECT
 	t.Age,
 	t.Gender
 FROM
-	SkipOnUpdateEnum t
+	PR_1598_Update_Enum_Table t
 WHERE
 	t.Id = 1
 LIMIT 1
@@ -75,12 +75,12 @@ DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 
 UPDATE
-	SkipOnUpdateEnum
+	PR_1598_Update_Enum_Table
 SET
 	Name = $Name,
 	Age = $Age
 WHERE
-	SkipOnUpdateEnum.Id = $Id
+	PR_1598_Update_Enum_Table.Id = $Id
 
 -- DuckDB
 SELECT
@@ -89,7 +89,7 @@ SELECT
 	t.Age,
 	t.Gender
 FROM
-	SkipOnUpdateEnum t
+	PR_1598_Update_Enum_Table t
 WHERE
 	t.Id = 1
 LIMIT 1

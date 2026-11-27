@@ -6,7 +6,7 @@ SET     @Name = 'Smith'
 DECLARE @Age Integer(4) -- Int32
 SET     @Age = 2
 
-INSERT INTO SkipOnUpdateTable
+INSERT INTO PR_1598_Update_Table
 (
 	Id,
 	Name,
@@ -25,7 +25,7 @@ SELECT FIRST 1
 	t.Name,
 	t.Age
 FROM
-	SkipOnUpdateTable t
+	PR_1598_Update_Table t
 WHERE
 	t.Id = 1
 
@@ -38,7 +38,7 @@ DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 
 UPDATE
-	SkipOnUpdateTable t1
+	PR_1598_Update_Table t1
 SET
 	Name = @Name,
 	Age = @Age
@@ -51,7 +51,7 @@ SELECT FIRST 1
 	t.Name,
 	t.Age
 FROM
-	SkipOnUpdateTable t
+	PR_1598_Update_Table t
 WHERE
 	t.Id = 1
 
@@ -62,7 +62,7 @@ DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 
 UPDATE
-	SkipOnUpdateTable t1
+	PR_1598_Update_Table t1
 SET
 	Name = @Name
 WHERE
@@ -74,7 +74,7 @@ SELECT FIRST 1
 	t.Name,
 	t.Age
 FROM
-	SkipOnUpdateTable t
+	PR_1598_Update_Table t
 WHERE
 	t.Id = 1
 

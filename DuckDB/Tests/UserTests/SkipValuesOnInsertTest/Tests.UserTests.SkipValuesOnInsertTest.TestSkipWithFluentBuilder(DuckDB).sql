@@ -4,7 +4,7 @@ SET     $Id = 1
 DECLARE $Name NVarChar -- String
 SET     $Name = NULL
 
-INSERT INTO SkipOnInsertFluent
+INSERT INTO PR_1598_Insert_Fluent_Table
 (
 	Id,
 	Name
@@ -21,7 +21,7 @@ SELECT
 	t.Name,
 	t.Age
 FROM
-	SkipOnInsertFluent t
+	PR_1598_Insert_Fluent_Table t
 WHERE
 	t.Id = 1
 LIMIT 1

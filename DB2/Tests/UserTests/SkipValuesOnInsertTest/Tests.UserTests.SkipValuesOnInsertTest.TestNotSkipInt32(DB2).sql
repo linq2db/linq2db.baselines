@@ -6,7 +6,7 @@ SET     @Name = 'Smith'
 DECLARE @Age Integer(4) -- Int32
 SET     @Age = 55
 
-INSERT INTO "SkipOnInsertTable"
+INSERT INTO "PR_1598_Insert_Table"
 (
 	"Id",
 	"Name",
@@ -25,7 +25,7 @@ SELECT
 	"t"."Name",
 	"t"."Age"
 FROM
-	"SkipOnInsertTable" "t"
+	"PR_1598_Insert_Table" "t"
 WHERE
 	"t"."Id" = 1
 FETCH NEXT 1 ROWS ONLY
@@ -38,7 +38,7 @@ SET     @Name = 'Tommy'
 DECLARE @Age Integer(4) -- Int32
 SET     @Age = 50
 
-INSERT INTO "SkipOnInsertTable"
+INSERT INTO "PR_1598_Insert_Table"
 (
 	"Id",
 	"Name",
@@ -57,7 +57,7 @@ SELECT
 	"t"."Name",
 	"t"."Age"
 FROM
-	"SkipOnInsertTable" "t"
+	"PR_1598_Insert_Table" "t"
 WHERE
 	"t"."Id" = 2
 FETCH NEXT 1 ROWS ONLY

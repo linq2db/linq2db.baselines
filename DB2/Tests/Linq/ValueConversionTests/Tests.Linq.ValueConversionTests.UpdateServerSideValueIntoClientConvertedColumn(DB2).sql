@@ -3,7 +3,7 @@ DECLARE @test Timestamp(20) -- DateTime
 SET     @test = CAST('2026-06-06-02.01.01.000000' AS TIMESTAMP(6))
 
 UPDATE
-	"ShiftedDateRow" "t1"
+	"Issue5975Row" "t1"
 SET
 	"Date" = CASE
 		WHEN "t1"."Date" IS NOT NULL THEN CAST(@test AS timestamp)
@@ -16,7 +16,7 @@ SELECT
 	"t1"."Plain",
 	"t1"."Date"
 FROM
-	"ShiftedDateRow" "t1"
+	"Issue5975Row" "t1"
 ORDER BY
 	"t1"."Id"
 

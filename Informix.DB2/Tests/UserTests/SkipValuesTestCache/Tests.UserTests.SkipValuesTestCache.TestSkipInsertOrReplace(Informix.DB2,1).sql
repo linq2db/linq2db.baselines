@@ -5,7 +5,7 @@ DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 
 UPDATE
-	SkipOnInsertCache t1
+	PR_1598_Insert_Table_Cache t1
 SET
 	Name = @Name
 WHERE
@@ -17,7 +17,7 @@ SET     @Id = 1
 DECLARE @Name VarChar(4) -- String
 SET     @Name = 'John'
 
-INSERT INTO SkipOnInsertCache
+INSERT INTO PR_1598_Insert_Table_Cache
 (
 	Id,
 	Name
@@ -34,7 +34,7 @@ SELECT FIRST 1
 	t.Name,
 	t.Age
 FROM
-	SkipOnInsertCache t
+	PR_1598_Insert_Table_Cache t
 WHERE
 	t.Id = 1
 
@@ -45,7 +45,7 @@ DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 
 UPDATE
-	SkipOnInsertCache t1
+	PR_1598_Insert_Table_Cache t1
 SET
 	Name = @Name
 WHERE
@@ -57,7 +57,7 @@ SELECT FIRST 1
 	t.Name,
 	t.Age
 FROM
-	SkipOnInsertCache t
+	PR_1598_Insert_Table_Cache t
 WHERE
 	t.Id = 1
 

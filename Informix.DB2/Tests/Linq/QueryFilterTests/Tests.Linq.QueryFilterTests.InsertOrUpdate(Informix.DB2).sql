@@ -1,13 +1,13 @@
 ﻿-- Informix.DB2 Informix
 UPDATE
-	SoftDeletedPictureTable t1
+	Issue5289Table t1
 SET
 	PictureId = 3
 WHERE
 	t1.Id = 1
 
 -- Informix.DB2 Informix
-INSERT INTO SoftDeletedPictureTable
+INSERT INTO Issue5289Table
 (
 	Id,
 	PictureId,
@@ -26,13 +26,13 @@ SELECT FIRST 2
 	r.PictureId,
 	r.Deleted
 FROM
-	SoftDeletedPictureTable r
+	Issue5289Table r
 WHERE
 	NOT r.Deleted AND r.Id = 1
 
 -- Informix.DB2 Informix
 UPDATE
-	SoftDeletedPictureTable t1
+	Issue5289Table t1
 SET
 	PictureId = 3
 WHERE
@@ -44,7 +44,7 @@ SELECT FIRST 2
 	r.PictureId,
 	r.Deleted
 FROM
-	SoftDeletedPictureTable r
+	Issue5289Table r
 WHERE
 	NOT r.Deleted AND r.Id = 1
 

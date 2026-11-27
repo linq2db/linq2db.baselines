@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-INSERT INTO SoftDeletedPictureTable AS t1
+INSERT INTO Issue5289Table AS t1
 (
 	Id,
 	PictureId,
@@ -20,13 +20,13 @@ SELECT
 	r.PictureId,
 	r.Deleted
 FROM
-	SoftDeletedPictureTable r
+	Issue5289Table r
 WHERE
 	NOT r.Deleted AND r.Id = 1
 LIMIT 2
 
 -- DuckDB
-INSERT INTO SoftDeletedPictureTable AS t1
+INSERT INTO Issue5289Table AS t1
 (
 	Id,
 	PictureId,
@@ -47,7 +47,7 @@ SELECT
 	r.PictureId,
 	r.Deleted
 FROM
-	SoftDeletedPictureTable r
+	Issue5289Table r
 WHERE
 	NOT r.Deleted AND r.Id = 1
 LIMIT 2

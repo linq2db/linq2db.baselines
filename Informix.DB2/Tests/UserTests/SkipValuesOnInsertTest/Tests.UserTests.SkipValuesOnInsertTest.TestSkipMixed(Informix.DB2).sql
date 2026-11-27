@@ -6,7 +6,7 @@ SET     @Name = 'Jason'
 DECLARE @Age Integer(4) -- Int32
 SET     @Age = 20
 
-INSERT INTO SkipOnInsertMixed
+INSERT INTO PR_1598_Mixed_Table
 (
 	Id,
 	Name,
@@ -25,7 +25,7 @@ SELECT FIRST 1
 	t.Name,
 	t.Age
 FROM
-	SkipOnInsertMixed t
+	PR_1598_Mixed_Table t
 WHERE
 	t.Id = 1
 
@@ -36,7 +36,7 @@ DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 
 UPDATE
-	SkipOnInsertMixed t1
+	PR_1598_Mixed_Table t1
 SET
 	Age = @Age
 WHERE
@@ -48,7 +48,7 @@ SELECT FIRST 1
 	t.Name,
 	t.Age
 FROM
-	SkipOnInsertMixed t
+	PR_1598_Mixed_Table t
 WHERE
 	t.Id = 1
 
@@ -58,7 +58,7 @@ SET     @Id = 2
 DECLARE @Age Integer(4) -- Int32
 SET     @Age = 25
 
-INSERT INTO SkipOnInsertMixed
+INSERT INTO PR_1598_Mixed_Table
 (
 	Id,
 	Age
@@ -75,7 +75,7 @@ SELECT FIRST 1
 	t.Name,
 	t.Age
 FROM
-	SkipOnInsertMixed t
+	PR_1598_Mixed_Table t
 WHERE
 	t.Id = 2
 
@@ -88,7 +88,7 @@ DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
 
 UPDATE
-	SkipOnInsertMixed t1
+	PR_1598_Mixed_Table t1
 SET
 	Name = @Name,
 	Age = @Age
@@ -101,7 +101,7 @@ SELECT FIRST 1
 	t.Name,
 	t.Age
 FROM
-	SkipOnInsertMixed t
+	PR_1598_Mixed_Table t
 WHERE
 	t.Id = 2
 

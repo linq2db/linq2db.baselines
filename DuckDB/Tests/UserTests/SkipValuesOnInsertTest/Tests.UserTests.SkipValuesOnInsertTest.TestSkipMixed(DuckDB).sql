@@ -6,7 +6,7 @@ SET     $Name = 'Jason'
 DECLARE $Age INTEGER -- Int32
 SET     $Age = 20
 
-INSERT INTO SkipOnInsertMixed
+INSERT INTO PR_1598_Mixed_Table
 (
 	Id,
 	Name,
@@ -25,7 +25,7 @@ SELECT
 	t.Name,
 	t.Age
 FROM
-	SkipOnInsertMixed t
+	PR_1598_Mixed_Table t
 WHERE
 	t.Id = 1
 LIMIT 1
@@ -37,11 +37,11 @@ DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 
 UPDATE
-	SkipOnInsertMixed
+	PR_1598_Mixed_Table
 SET
 	Age = $Age
 WHERE
-	SkipOnInsertMixed.Id = $Id
+	PR_1598_Mixed_Table.Id = $Id
 
 -- DuckDB
 SELECT
@@ -49,7 +49,7 @@ SELECT
 	t.Name,
 	t.Age
 FROM
-	SkipOnInsertMixed t
+	PR_1598_Mixed_Table t
 WHERE
 	t.Id = 1
 LIMIT 1
@@ -60,7 +60,7 @@ SET     $Id = 2
 DECLARE $Age INTEGER -- Int32
 SET     $Age = 25
 
-INSERT INTO SkipOnInsertMixed
+INSERT INTO PR_1598_Mixed_Table
 (
 	Id,
 	Age
@@ -77,7 +77,7 @@ SELECT
 	t.Name,
 	t.Age
 FROM
-	SkipOnInsertMixed t
+	PR_1598_Mixed_Table t
 WHERE
 	t.Id = 2
 LIMIT 1
@@ -91,12 +91,12 @@ DECLARE $Id INTEGER -- Int32
 SET     $Id = 2
 
 UPDATE
-	SkipOnInsertMixed
+	PR_1598_Mixed_Table
 SET
 	Name = $Name,
 	Age = $Age
 WHERE
-	SkipOnInsertMixed.Id = $Id
+	PR_1598_Mixed_Table.Id = $Id
 
 -- DuckDB
 SELECT
@@ -104,7 +104,7 @@ SELECT
 	t.Name,
 	t.Age
 FROM
-	SkipOnInsertMixed t
+	PR_1598_Mixed_Table t
 WHERE
 	t.Id = 2
 LIMIT 1

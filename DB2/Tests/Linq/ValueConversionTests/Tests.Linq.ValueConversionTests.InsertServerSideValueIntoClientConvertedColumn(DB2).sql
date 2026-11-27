@@ -1,5 +1,5 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-INSERT INTO "ShiftedDateRow"
+INSERT INTO "Issue5975Row"
 (
 	"Id",
 	"Plain",
@@ -18,6 +18,6 @@ SELECT
 	"t1"."Plain",
 	"t1"."Date"
 FROM
-	"ShiftedDateRow" "t1"
+	"Issue5975Row" "t1"
 FETCH NEXT 2 ROWS ONLY
 
