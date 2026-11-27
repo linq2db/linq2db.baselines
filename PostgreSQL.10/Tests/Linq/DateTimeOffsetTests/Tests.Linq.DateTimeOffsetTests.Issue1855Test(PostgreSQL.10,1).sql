@@ -49,5 +49,5 @@ SELECT
 FROM
 	"Issue1855Table" r
 WHERE
-	r."SomeNullableDateTimeOffset" + :interval * Interval '1 Second' >= :clientSideIn
+	(((r."SomeNullableDateTimeOffset" AT TIME ZONE 'UTC') + :interval * Interval '1 Second') AT TIME ZONE 'UTC') >= :clientSideIn
 
