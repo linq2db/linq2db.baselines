@@ -4,9 +4,14 @@ SET     @defValue = 10
 
 SELECT
 	CASE
-		WHEN MIN([gr].[ParentID]) IS NULL THEN @defValue
-		ELSE MIN([gr].[ParentID])
+		WHEN [gr_1].[Min_1] IS NULL THEN @defValue
+		ELSE [gr_1].[Min_1]
 	END
 FROM
-	[Parent] [gr]
+	(
+		SELECT
+			MIN([gr].[ParentID]) as [Min_1]
+		FROM
+			[Parent] [gr]
+	) [gr_1]
 
