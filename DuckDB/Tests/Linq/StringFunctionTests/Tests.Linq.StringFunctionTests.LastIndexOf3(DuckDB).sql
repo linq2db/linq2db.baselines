@@ -6,5 +6,9 @@ FROM
 	Person p
 WHERE
 	p.PersonID = 1 AND 1 = Position('321' in Reverse(Substring('123' || p.FirstName || '0123451234', 6, 6))) AND
-	Position('123' in Substring(Left('123' || p.FirstName || '0123451234', 11), 6, Length(Left('123' || p.FirstName || '0123451234', 11)) - 6)) + 5 <> 0
+	CASE
+		WHEN Position('123' in Substring(Left('123' || p.FirstName || '0123451234', 11), 6)) = 0
+			THEN 0
+		ELSE Position('123' in Substring(Left('123' || p.FirstName || '0123451234', 11), 6)) + 5
+	END <> 0
 
