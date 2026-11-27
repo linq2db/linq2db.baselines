@@ -1,0 +1,24 @@
+﻿-- Oracle.11.Managed Oracle11
+DECLARE @Id Int32
+SET     @Id = 1
+DECLARE @Items NVarchar2(3) -- String
+SET     @Items = 'A;B'
+
+INSERT INTO "ExpressionMethodItemsEntity"
+(
+	"Id",
+	"Items"
+)
+VALUES
+(
+	:Id,
+	:Items
+)
+
+-- Oracle.11.Managed Oracle11
+SELECT
+	t1."Id",
+	t1."Items"
+FROM
+	"ExpressionMethodItemsEntity" t1
+

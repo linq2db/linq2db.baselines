@@ -22,7 +22,7 @@ SET     @DateTimeOffset_1 = 01/03/2020 04:05:06.7 +00:45
 DECLARE @DateTimeOffset_9 TimeStampTZ -- DateTimeOffset
 SET     @DateTimeOffset_9 = 01/03/2020 04:05:06.7891234 +00:45
 
-INSERT INTO "Test0431"
+INSERT INTO "OracleDateTimeTypes"
 (
 	"Date",
 	"DateTime",
@@ -65,7 +65,7 @@ SELECT
 	t1."DateTimeOffset_1",
 	t1."DateTimeOffset_9"
 FROM
-	"Test0431" t1
+	"OracleDateTimeTypes" t1
 
 -- Oracle.11.Managed Oracle11
 SELECT
@@ -81,7 +81,7 @@ SELECT
 	r."DateTimeOffset_1",
 	r."DateTimeOffset_9"
 FROM
-	"Test0431" r
+	"OracleDateTimeTypes" r
 WHERE
 	r."Date" = DATE '2020-01-03'
 
@@ -99,7 +99,7 @@ SELECT
 	r."DateTimeOffset_1",
 	r."DateTimeOffset_9"
 FROM
-	"Test0431" r
+	"OracleDateTimeTypes" r
 WHERE
 	r."DateTime" = TIMESTAMP '2020-01-03 04:05:06.789123'
 
@@ -117,7 +117,7 @@ SELECT
 	r."DateTimeOffset_1",
 	r."DateTimeOffset_9"
 FROM
-	"Test0431" r
+	"OracleDateTimeTypes" r
 WHERE
 	r."DateTime_" = TO_DATE('2020-01-03 04:05:06', 'YYYY-MM-DD HH24:MI:SS')
 
@@ -135,7 +135,7 @@ SELECT
 	r."DateTimeOffset_1",
 	r."DateTimeOffset_9"
 FROM
-	"Test0431" r
+	"OracleDateTimeTypes" r
 WHERE
 	r."DateTime2" = TIMESTAMP '2020-01-03 04:05:06.789123'
 
@@ -153,7 +153,7 @@ SELECT
 	r."DateTimeOffset_1",
 	r."DateTimeOffset_9"
 FROM
-	"Test0431" r
+	"OracleDateTimeTypes" r
 WHERE
 	r."DateTime2_0" = TIMESTAMP '2020-01-03 04:05:06'
 
@@ -171,7 +171,7 @@ SELECT
 	r."DateTimeOffset_1",
 	r."DateTimeOffset_9"
 FROM
-	"Test0431" r
+	"OracleDateTimeTypes" r
 WHERE
 	r."DateTime2_1" = TIMESTAMP '2020-01-03 04:05:06.7'
 
@@ -189,7 +189,7 @@ SELECT
 	r."DateTimeOffset_1",
 	r."DateTimeOffset_9"
 FROM
-	"Test0431" r
+	"OracleDateTimeTypes" r
 WHERE
 	r."DateTime2_9" = TIMESTAMP '2020-01-03 04:05:06.7891234'
 
@@ -207,7 +207,7 @@ SELECT
 	r."DateTimeOffset_1",
 	r."DateTimeOffset_9"
 FROM
-	"Test0431" r
+	"OracleDateTimeTypes" r
 WHERE
 	r."DateTimeOffset_" = TIMESTAMP '2020-01-03 04:05:06.789123 +00:45'
 
@@ -225,7 +225,7 @@ SELECT
 	r."DateTimeOffset_1",
 	r."DateTimeOffset_9"
 FROM
-	"Test0431" r
+	"OracleDateTimeTypes" r
 WHERE
 	r."DateTimeOffset_0" = TIMESTAMP '2020-01-03 04:05:06 +00:45'
 
@@ -243,7 +243,7 @@ SELECT
 	r."DateTimeOffset_1",
 	r."DateTimeOffset_9"
 FROM
-	"Test0431" r
+	"OracleDateTimeTypes" r
 WHERE
 	r."DateTimeOffset_1" = TIMESTAMP '2020-01-03 04:05:06.7 +00:45'
 
@@ -261,7 +261,7 @@ SELECT
 	r."DateTimeOffset_1",
 	r."DateTimeOffset_9"
 FROM
-	"Test0431" r
+	"OracleDateTimeTypes" r
 WHERE
 	r."DateTimeOffset_9" = TIMESTAMP '2020-01-03 04:05:06.7891234 +00:45'
 
