@@ -1,12 +1,10 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-DECLARE @n2 Int -- Int32
-SET     @n2 = 5
-DECLARE @n1 Int -- Int32
-SET     @n1 = 2
+DECLARE @Value Int -- Int32
+SET     @Value = 7
 DECLARE @s NVarChar(1) -- String
 SET     @s = 'e'
-DECLARE @n1 Int -- Int32
-SET     @n1 = 2
+DECLARE @Value Int -- Int32
+SET     @Value = 3
 
 SELECT
 	"p"."FirstName",
@@ -17,6 +15,5 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	(Locate(Substring(Left("p"."LastName", ?),? + 1),?) + ?) - 1 = 4 AND
-	"p"."PersonID" = 2
+	Locate(Left("p"."LastName", ?), ?, ?) - 1 = 4 AND "p"."PersonID" = 2
 

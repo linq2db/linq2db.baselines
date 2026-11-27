@@ -1,10 +1,8 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
 SELECT
-	(Locate(Substring("p"."FirstName",1 + 1),'o') + 1) * 2
+	Locate("p"."FirstName", 'o', 1) * 2
 FROM
 	"Person" "p"
-WHERE
-	"p"."FirstName" LIKE '%o%' ESCAPE '~'
 ORDER BY
 	"p"."PersonID"
 

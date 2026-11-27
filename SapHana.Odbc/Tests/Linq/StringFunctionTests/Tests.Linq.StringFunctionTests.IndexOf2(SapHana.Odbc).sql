@@ -8,6 +8,5 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	Locate(Substring("p"."LastName",3 + 1),'e') + 3 = 5 AND
-	"p"."PersonID" = 2
+	Locate("p"."LastName", 'e', 3) = 5 AND "p"."PersonID" = 2
 
