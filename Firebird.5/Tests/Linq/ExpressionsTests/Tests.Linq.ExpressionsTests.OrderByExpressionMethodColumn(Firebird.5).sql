@@ -1,0 +1,11 @@
+﻿-- Firebird.5 Firebird4
+SELECT
+	"t1"."Id",
+	"t1"."FirstName",
+	"t1"."LastName",
+	Coalesce("t1"."FirstName", '') || ' ' || Coalesce("t1"."LastName", '')
+FROM
+	"FullNameColumnTable" "t1"
+ORDER BY
+	Coalesce("t1"."FirstName", '') || ' ' || Coalesce("t1"."LastName", '')
+

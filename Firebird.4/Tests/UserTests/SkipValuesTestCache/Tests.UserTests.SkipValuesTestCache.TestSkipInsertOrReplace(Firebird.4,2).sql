@@ -6,7 +6,7 @@ SET     @Name = 'John'
 DECLARE @Age Integer -- Int32
 SET     @Age = 2
 
-MERGE INTO "PR_1598_Insert_Table_Cache" "t1"
+MERGE INTO "SkipOnInsertCache" "t1"
 USING (SELECT CAST(@Id AS Int) AS "Id" FROM rdb$database) "s" ON
 (
 	"t1"."Id" = "s"."Id"
@@ -36,7 +36,7 @@ SELECT
 	"t"."Name",
 	"t"."Age"
 FROM
-	"PR_1598_Insert_Table_Cache" "t"
+	"SkipOnInsertCache" "t"
 WHERE
 	"t"."Id" = 1
 FETCH NEXT 1 ROWS ONLY
@@ -49,7 +49,7 @@ SET     @Name = 'John'
 DECLARE @Age Integer -- Int32
 SET     @Age = 2
 
-MERGE INTO "PR_1598_Insert_Table_Cache" "t1"
+MERGE INTO "SkipOnInsertCache" "t1"
 USING (SELECT CAST(@Id AS Int) AS "Id" FROM rdb$database) "s" ON
 (
 	"t1"."Id" = "s"."Id"
@@ -79,7 +79,7 @@ SELECT
 	"t"."Name",
 	"t"."Age"
 FROM
-	"PR_1598_Insert_Table_Cache" "t"
+	"SkipOnInsertCache" "t"
 WHERE
 	"t"."Id" = 1
 FETCH NEXT 1 ROWS ONLY

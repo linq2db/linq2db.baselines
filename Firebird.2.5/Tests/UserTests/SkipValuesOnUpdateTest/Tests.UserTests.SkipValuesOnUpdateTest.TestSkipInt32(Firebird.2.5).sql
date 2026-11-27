@@ -6,7 +6,7 @@ SET     @Name = 'Smith'
 DECLARE @Age Integer -- Int32
 SET     @Age = 2
 
-INSERT INTO "PR_1598_Update_Table"
+INSERT INTO "SkipOnUpdateTable"
 (
 	"Id",
 	"Name",
@@ -25,7 +25,7 @@ SELECT FIRST 1
 	"t"."Name",
 	"t"."Age"
 FROM
-	"PR_1598_Update_Table" "t"
+	"SkipOnUpdateTable" "t"
 WHERE
 	"t"."Id" = 1
 
@@ -38,7 +38,7 @@ DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
 UPDATE
-	"PR_1598_Update_Table" "t1"
+	"SkipOnUpdateTable" "t1"
 SET
 	"Name" = CAST(@Name AS VARCHAR(6)),
 	"Age" = CAST(@Age AS Int)
@@ -51,7 +51,7 @@ SELECT FIRST 1
 	"t"."Name",
 	"t"."Age"
 FROM
-	"PR_1598_Update_Table" "t"
+	"SkipOnUpdateTable" "t"
 WHERE
 	"t"."Id" = 1
 
@@ -62,7 +62,7 @@ DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
 UPDATE
-	"PR_1598_Update_Table" "t1"
+	"SkipOnUpdateTable" "t1"
 SET
 	"Name" = CAST(@Name AS VARCHAR(4))
 WHERE
@@ -74,7 +74,7 @@ SELECT FIRST 1
 	"t"."Name",
 	"t"."Age"
 FROM
-	"PR_1598_Update_Table" "t"
+	"SkipOnUpdateTable" "t"
 WHERE
 	"t"."Id" = 1
 

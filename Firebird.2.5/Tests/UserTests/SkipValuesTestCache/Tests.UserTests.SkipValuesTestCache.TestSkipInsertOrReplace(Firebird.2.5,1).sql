@@ -4,7 +4,7 @@ SET     @Id = 1
 DECLARE @Name VarChar(4) -- String
 SET     @Name = 'John'
 
-MERGE INTO "PR_1598_Insert_Table_Cache" "t1"
+MERGE INTO "SkipOnInsertCache" "t1"
 USING (SELECT CAST(@Id AS Int) AS "Id" FROM rdb$database) "s" ON
 (
 	"t1"."Id" = "s"."Id"
@@ -31,7 +31,7 @@ SELECT FIRST 1
 	"t"."Name",
 	"t"."Age"
 FROM
-	"PR_1598_Insert_Table_Cache" "t"
+	"SkipOnInsertCache" "t"
 WHERE
 	"t"."Id" = 1
 
@@ -41,7 +41,7 @@ SET     @Id = 1
 DECLARE @Name VarChar(4) -- String
 SET     @Name = 'John'
 
-MERGE INTO "PR_1598_Insert_Table_Cache" "t1"
+MERGE INTO "SkipOnInsertCache" "t1"
 USING (SELECT CAST(@Id AS Int) AS "Id" FROM rdb$database) "s" ON
 (
 	"t1"."Id" = "s"."Id"
@@ -68,7 +68,7 @@ SELECT FIRST 1
 	"t"."Name",
 	"t"."Age"
 FROM
-	"PR_1598_Insert_Table_Cache" "t"
+	"SkipOnInsertCache" "t"
 WHERE
 	"t"."Id" = 1
 

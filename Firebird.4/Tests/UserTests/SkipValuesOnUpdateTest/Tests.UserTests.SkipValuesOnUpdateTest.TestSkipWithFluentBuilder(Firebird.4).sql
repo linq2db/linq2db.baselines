@@ -6,7 +6,7 @@ SET     @Name = NULL
 DECLARE @Age Integer -- Int32
 SET     @Age = 2
 
-INSERT INTO "PR_1598_Update_Fluent_Table"
+INSERT INTO "SkipOnUpdateFluent"
 (
 	"Id",
 	"Name",
@@ -25,7 +25,7 @@ SELECT
 	"t"."Name",
 	"t"."Age"
 FROM
-	"PR_1598_Update_Fluent_Table" "t"
+	"SkipOnUpdateFluent" "t"
 WHERE
 	"t"."Id" = 1
 FETCH NEXT 1 ROWS ONLY
@@ -39,7 +39,7 @@ DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
 UPDATE
-	"PR_1598_Update_Fluent_Table" "t1"
+	"SkipOnUpdateFluent" "t1"
 SET
 	"Name" = CAST(@Name AS VARCHAR(6)),
 	"Age" = CAST(@Age AS Int)
@@ -52,7 +52,7 @@ SELECT
 	"t"."Name",
 	"t"."Age"
 FROM
-	"PR_1598_Update_Fluent_Table" "t"
+	"SkipOnUpdateFluent" "t"
 WHERE
 	"t"."Id" = 1
 FETCH NEXT 1 ROWS ONLY
@@ -64,7 +64,7 @@ DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
 UPDATE
-	"PR_1598_Update_Fluent_Table" "t1"
+	"SkipOnUpdateFluent" "t1"
 SET
 	"Name" = CAST(@Name AS VARCHAR(4))
 WHERE
@@ -76,7 +76,7 @@ SELECT
 	"t"."Name",
 	"t"."Age"
 FROM
-	"PR_1598_Update_Fluent_Table" "t"
+	"SkipOnUpdateFluent" "t"
 WHERE
 	"t"."Id" = 1
 FETCH NEXT 1 ROWS ONLY

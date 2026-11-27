@@ -4,7 +4,7 @@ SET     @Id = 1
 DECLARE @Age Integer -- Int32
 SET     @Age = 14
 
-INSERT INTO "PR_1598_Insert_Table"
+INSERT INTO "SkipOnInsertTable"
 (
 	"Id",
 	"Age"
@@ -21,7 +21,7 @@ SELECT FIRST 1
 	"t"."Name",
 	"t"."Age"
 FROM
-	"PR_1598_Insert_Table" "t"
+	"SkipOnInsertTable" "t"
 WHERE
 	"t"."Id" = 1
 
@@ -31,7 +31,7 @@ SET     @Id = 2
 DECLARE @Age Integer -- Int32
 SET     @Age = 15
 
-INSERT INTO "PR_1598_Insert_Table"
+INSERT INTO "SkipOnInsertTable"
 (
 	"Id",
 	"Age"
@@ -48,7 +48,7 @@ SELECT FIRST 1
 	"t"."Name",
 	"t"."Age"
 FROM
-	"PR_1598_Insert_Table" "t"
+	"SkipOnInsertTable" "t"
 WHERE
 	"t"."Id" = 2
 
