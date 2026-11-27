@@ -5,11 +5,11 @@ DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
 UPDATE
-	"PR_1598_Insert_Table_Cache"
+	"SkipOnInsertCache"
 SET
 	"Name" = :Name
 WHERE
-	"PR_1598_Insert_Table_Cache"."Id" = :Id
+	"SkipOnInsertCache"."Id" = :Id
 
 -- PostgreSQL.9.2 PostgreSQL
 DECLARE @Id Integer -- Int32
@@ -17,7 +17,7 @@ SET     @Id = 1
 DECLARE @Name Text(4) -- String
 SET     @Name = 'John'
 
-INSERT INTO "PR_1598_Insert_Table_Cache"
+INSERT INTO "SkipOnInsertCache"
 (
 	"Id",
 	"Name"
@@ -34,7 +34,7 @@ SELECT
 	t."Name",
 	t."Age"
 FROM
-	"PR_1598_Insert_Table_Cache" t
+	"SkipOnInsertCache" t
 WHERE
 	t."Id" = 1
 LIMIT 1
@@ -46,11 +46,11 @@ DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
 UPDATE
-	"PR_1598_Insert_Table_Cache"
+	"SkipOnInsertCache"
 SET
 	"Name" = :Name
 WHERE
-	"PR_1598_Insert_Table_Cache"."Id" = :Id
+	"SkipOnInsertCache"."Id" = :Id
 
 -- PostgreSQL.9.2 PostgreSQL
 SELECT
@@ -58,7 +58,7 @@ SELECT
 	t."Name",
 	t."Age"
 FROM
-	"PR_1598_Insert_Table_Cache" t
+	"SkipOnInsertCache" t
 WHERE
 	t."Id" = 1
 LIMIT 1

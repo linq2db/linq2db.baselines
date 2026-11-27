@@ -6,7 +6,7 @@ SET     @Name = 'John'
 DECLARE @Age Integer -- Int32
 SET     @Age = 2
 
-INSERT INTO "PR_1598_Insert_Table_Cache" AS t1
+INSERT INTO "SkipOnInsertCache" AS t1
 (
 	"Id",
 	"Name",
@@ -28,7 +28,7 @@ SELECT
 	t."Name",
 	t."Age"
 FROM
-	"PR_1598_Insert_Table_Cache" t
+	"SkipOnInsertCache" t
 WHERE
 	t."Id" = 1
 LIMIT 1
@@ -41,7 +41,7 @@ SET     @Name = 'John'
 DECLARE @Age Integer -- Int32
 SET     @Age = 2
 
-INSERT INTO "PR_1598_Insert_Table_Cache" AS t1
+INSERT INTO "SkipOnInsertCache" AS t1
 (
 	"Id",
 	"Name",
@@ -63,7 +63,7 @@ SELECT
 	t."Name",
 	t."Age"
 FROM
-	"PR_1598_Insert_Table_Cache" t
+	"SkipOnInsertCache" t
 WHERE
 	t."Id" = 1
 LIMIT 1

@@ -1,13 +1,13 @@
 ﻿-- PostgreSQL.9.3 PostgreSQL
 UPDATE
-	"Issue5289Table"
+	"SoftDeletedPictureTable"
 SET
 	"PictureId" = 3
 WHERE
-	"Issue5289Table"."Id" = 1
+	"SoftDeletedPictureTable"."Id" = 1
 
 -- PostgreSQL.9.3 PostgreSQL
-INSERT INTO "Issue5289Table"
+INSERT INTO "SoftDeletedPictureTable"
 (
 	"Id",
 	"PictureId",
@@ -26,18 +26,18 @@ SELECT
 	r."PictureId",
 	r."Deleted"
 FROM
-	"Issue5289Table" r
+	"SoftDeletedPictureTable" r
 WHERE
 	NOT r."Deleted" AND r."Id" = 1
 LIMIT 2
 
 -- PostgreSQL.9.3 PostgreSQL
 UPDATE
-	"Issue5289Table"
+	"SoftDeletedPictureTable"
 SET
 	"PictureId" = 3
 WHERE
-	"Issue5289Table"."Id" = 1
+	"SoftDeletedPictureTable"."Id" = 1
 
 -- PostgreSQL.9.3 PostgreSQL
 SELECT
@@ -45,7 +45,7 @@ SELECT
 	r."PictureId",
 	r."Deleted"
 FROM
-	"Issue5289Table" r
+	"SoftDeletedPictureTable" r
 WHERE
 	NOT r."Deleted" AND r."Id" = 1
 LIMIT 2

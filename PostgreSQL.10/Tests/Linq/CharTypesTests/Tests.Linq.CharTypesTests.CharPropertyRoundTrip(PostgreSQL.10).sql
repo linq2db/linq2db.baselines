@@ -1,0 +1,21 @@
+﻿-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+DECLARE @CharFld Char -- String
+SET     @CharFld = 'P'
+
+INSERT INTO "CharFieldRecord"
+(
+	"CharFld"
+)
+VALUES
+(
+	:CharFld
+)
+
+-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+SELECT
+	t1."Id",
+	t1."CharFld"
+FROM
+	"CharFieldRecord" t1
+LIMIT 1
+

@@ -1,5 +1,5 @@
 ﻿-- PostgreSQL.11 PostgreSQL
-INSERT INTO "Issue5289Table" AS t1
+INSERT INTO "SoftDeletedPictureTable" AS t1
 (
 	"Id",
 	"PictureId",
@@ -20,13 +20,13 @@ SELECT
 	r."PictureId",
 	r."Deleted"
 FROM
-	"Issue5289Table" r
+	"SoftDeletedPictureTable" r
 WHERE
 	NOT r."Deleted" AND r."Id" = 1
 LIMIT 2
 
 -- PostgreSQL.11 PostgreSQL
-INSERT INTO "Issue5289Table" AS t1
+INSERT INTO "SoftDeletedPictureTable" AS t1
 (
 	"Id",
 	"PictureId",
@@ -47,7 +47,7 @@ SELECT
 	r."PictureId",
 	r."Deleted"
 FROM
-	"Issue5289Table" r
+	"SoftDeletedPictureTable" r
 WHERE
 	NOT r."Deleted" AND r."Id" = 1
 LIMIT 2
