@@ -1,0 +1,14 @@
+﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
+DECLARE @group  -- Int32
+SET     @group = 7
+
+SELECT
+	[p].[Id],
+	NTH_VALUE([p].[Id], 2) OVER (ORDER BY [p].[Order] DESC)
+FROM
+	[Position] [p]
+WHERE
+	[p].[Group] = @group
+ORDER BY
+	[p].[Order] DESC
+

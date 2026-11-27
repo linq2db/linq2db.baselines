@@ -1,0 +1,69 @@
+﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
+SELECT
+	[m_1].[Id],
+	[d].[ItemId],
+	[d].[UserId],
+	[d].[Score]
+FROM
+	[StockItem] [m_1]
+		INNER JOIN [Review] [d] ON ([d].[ItemId] = [m_1].[Id])
+WHERE
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[Review] [r]
+		WHERE
+			[r].[ItemId] = [m_1].[Id] AND [r].[Score] > 95
+	)
+ORDER BY
+	[d].[ItemId],
+	[d].[UserId]
+
+-- Access.LibRed.Accdb Access.LibRed AccessLibRed
+SELECT
+	[i].[Id],
+	(
+		SELECT
+			SUM([stock].[QuantityAvailable])
+		FROM
+			[WarehouseStock] [stock]
+		WHERE
+			[stock].[ItemId] = [i].[Id]
+		GROUP BY
+			[stock].[ItemId]
+	)
+FROM
+	[StockItem] [i]
+WHERE
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[Review] [r]
+		WHERE
+			[r].[ItemId] = [i].[Id] AND [r].[Score] > 95
+	)
+
+-- Access.LibRed.Accdb Access.LibRed AccessLibRed
+SELECT
+	[t1].[Id]
+FROM
+	[StockItem] [t1]
+
+-- Access.LibRed.Accdb Access.LibRed AccessLibRed
+SELECT
+	[t1].[ItemId],
+	[t1].[QuantityAvailable],
+	[t1].[WarehouseId]
+FROM
+	[WarehouseStock] [t1]
+
+-- Access.LibRed.Accdb Access.LibRed AccessLibRed
+SELECT
+	[t1].[ItemId],
+	[t1].[UserId],
+	[t1].[Score]
+FROM
+	[Review] [t1]
+

@@ -1,5 +1,5 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
-INSERT INTO [Issue5975Row]
+INSERT INTO [ShiftedDateRow]
 (
 	[Id],
 	[Plain],
@@ -18,5 +18,5 @@ SELECT TOP 2
 	[t1].[Plain],
 	[t1].[Date]
 FROM
-	[Issue5975Row] [t1]
+	[ShiftedDateRow] [t1]
 

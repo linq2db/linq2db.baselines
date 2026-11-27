@@ -1,0 +1,23 @@
+﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
+SELECT
+	[i].[Value],
+	[i].[Id]
+FROM
+	[EagerOrderItem] [i]
+ORDER BY
+	[i].[Id]
+
+-- Access.LibRed.Accdb Access.LibRed AccessLibRed
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[ItemId],
+	[d].[Log]
+FROM
+	(VALUES
+		(1), (2)
+	) [k_1]([item])
+		INNER JOIN [EagerOrderItemLog] [d] ON ([k_1].[item] = [d].[ItemId])
+ORDER BY
+	[d].[Id] DESC
+
