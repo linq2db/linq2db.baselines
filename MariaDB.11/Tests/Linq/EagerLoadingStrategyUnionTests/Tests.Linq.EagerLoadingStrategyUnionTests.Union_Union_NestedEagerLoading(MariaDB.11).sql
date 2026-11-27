@@ -113,7 +113,7 @@ FROM
 			`t6`.`Id` as `Item2`,
 			`t6`.`Id` as `Item4`,
 			`t6`.`Label` as `Item5`,
-			`t6`.`Id` as `Item6`,
+			NULL as `Item6`,
 			NULL as `Item7`
 		FROM
 			`CTE_1` `t6`
