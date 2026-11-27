@@ -3,7 +3,7 @@ DECLARE @test Date -- DateTime
 SET     @test = #2026-06-06 02:01:01#
 
 UPDATE
-	[Issue5975Row] [t1]
+	[ShiftedDateRow] [t1]
 SET
 	[t1].[Date] = IIF([t1].[Date] IS NOT NULL, @test, DateAdd('d', 1, [t1].[Plain]))
 
@@ -13,7 +13,7 @@ SELECT
 	[t1].[Plain],
 	[t1].[Date]
 FROM
-	[Issue5975Row] [t1]
+	[ShiftedDateRow] [t1]
 ORDER BY
 	[t1].[Id]
 
