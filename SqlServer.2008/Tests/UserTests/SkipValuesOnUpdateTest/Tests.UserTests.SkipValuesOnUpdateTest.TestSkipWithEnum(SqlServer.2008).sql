@@ -8,7 +8,7 @@ SET     @Age = 20
 DECLARE @Gender NVarChar(6) -- String
 SET     @Gender = N'Female'
 
-INSERT INTO [PR_1598_Update_Enum_Table]
+INSERT INTO [SkipOnUpdateEnum]
 (
 	[Id],
 	[Name],
@@ -30,7 +30,7 @@ SELECT TOP (1)
 	[t].[Age],
 	[t].[Gender]
 FROM
-	[PR_1598_Update_Enum_Table] [t]
+	[SkipOnUpdateEnum] [t]
 WHERE
 	[t].[Id] = 1
 
@@ -45,13 +45,13 @@ DECLARE @Id Int -- Int32
 SET     @Id = 1
 
 UPDATE
-	[PR_1598_Update_Enum_Table]
+	[SkipOnUpdateEnum]
 SET
 	[Name] = @Name,
 	[Age] = @Age,
 	[Gender] = @Gender
 WHERE
-	[PR_1598_Update_Enum_Table].[Id] = @Id
+	[SkipOnUpdateEnum].[Id] = @Id
 
 -- SqlServer.2008
 SELECT TOP (1)
@@ -60,7 +60,7 @@ SELECT TOP (1)
 	[t].[Age],
 	[t].[Gender]
 FROM
-	[PR_1598_Update_Enum_Table] [t]
+	[SkipOnUpdateEnum] [t]
 WHERE
 	[t].[Id] = 1
 
@@ -73,12 +73,12 @@ DECLARE @Id Int -- Int32
 SET     @Id = 1
 
 UPDATE
-	[PR_1598_Update_Enum_Table]
+	[SkipOnUpdateEnum]
 SET
 	[Name] = @Name,
 	[Age] = @Age
 WHERE
-	[PR_1598_Update_Enum_Table].[Id] = @Id
+	[SkipOnUpdateEnum].[Id] = @Id
 
 -- SqlServer.2008
 SELECT TOP (1)
@@ -87,7 +87,7 @@ SELECT TOP (1)
 	[t].[Age],
 	[t].[Gender]
 FROM
-	[PR_1598_Update_Enum_Table] [t]
+	[SkipOnUpdateEnum] [t]
 WHERE
 	[t].[Id] = 1
 
