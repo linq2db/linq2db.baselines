@@ -1,0 +1,106 @@
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
+SELECT DISTINCT
+	CAST([x].[Amount] AS INTEGER)
+FROM
+	[CategorySales] [x]
+WHERE
+	[x].[Year] = 2010 AND [x].[Category] = 'A'
+LIMIT 2
+
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @castOfA Integer -- Int32
+SET     @castOfA = 20
+
+SELECT
+	[u_1].[Key_1]
+FROM
+	(
+		SELECT
+			CAST(SUM(CASE
+				WHEN [u].[Year] = 2010 THEN [u].[Amount]
+				ELSE NULL
+			END) AS INTEGER) as [Value_1],
+			[u].[Category] as [Key_1]
+		FROM
+			[CategorySales] [u]
+		GROUP BY
+			[u].[Category]
+		UNION ALL
+		SELECT
+			CAST(SUM(CASE
+				WHEN [g_1].[Year] = 2020 THEN [g_1].[Amount]
+				ELSE NULL
+			END) AS INTEGER) as [Value_1],
+			[g_1].[Category] as [Key_1]
+		FROM
+			[CategorySales] [g_1]
+		GROUP BY
+			[g_1].[Category]
+	) [u_1]
+WHERE
+	[u_1].[Value_1] = @castOfA
+
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+SELECT
+	[u_1].[Value_1]
+FROM
+	(
+		SELECT
+			CAST('Y2010' AS NVarChar(255)) as [Name],
+			[u].[Category] as [Key_1],
+			CAST(SUM(CASE
+				WHEN [u].[Year] = 2010 THEN [u].[Amount]
+				ELSE NULL
+			END) AS INTEGER) as [Value_1]
+		FROM
+			[CategorySales] [u]
+		GROUP BY
+			[u].[Category]
+		UNION ALL
+		SELECT
+			CAST('Y2020' AS NVarChar(255)) as [Name],
+			[g_1].[Category] as [Key_1],
+			CAST(SUM(CASE
+				WHEN [g_1].[Year] = 2020 THEN [g_1].[Amount]
+				ELSE NULL
+			END) AS INTEGER) as [Value_1]
+		FROM
+			[CategorySales] [g_1]
+		GROUP BY
+			[g_1].[Category]
+	) [u_1]
+WHERE
+	[u_1].[Name] = 'Y2010'
+ORDER BY
+	[u_1].[Key_1]
+
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+SELECT
+	[u_1].[Value_1]
+FROM
+	(
+		SELECT
+			CAST('Y2010' AS NVarChar(255)) as [Name],
+			CAST(SUM(CASE
+				WHEN [u].[Year] = 2010 THEN [u].[Amount]
+				ELSE NULL
+			END) AS INTEGER) as [Value_1]
+		FROM
+			[CategorySales] [u]
+		GROUP BY
+			[u].[Category]
+		UNION ALL
+		SELECT
+			CAST('Y2020' AS NVarChar(255)) as [Name],
+			CAST(SUM(CASE
+				WHEN [g_1].[Year] = 2020 THEN [g_1].[Amount]
+				ELSE NULL
+			END) AS INTEGER) as [Value_1]
+		FROM
+			[CategorySales] [g_1]
+		GROUP BY
+			[g_1].[Category]
+	) [u_1]
+WHERE
+	[u_1].[Name] = 'Y2020'
+
