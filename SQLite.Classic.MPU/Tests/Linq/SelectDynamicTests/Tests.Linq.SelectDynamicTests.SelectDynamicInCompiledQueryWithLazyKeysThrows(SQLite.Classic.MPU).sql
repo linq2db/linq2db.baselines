@@ -1,0 +1,10 @@
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
+SELECT
+	[x].[Id],
+	[x].[Usd],
+	[x].[Eur]
+FROM
+	[Amounts] [x]
+WHERE
+	[x].[Id] = 1
+
