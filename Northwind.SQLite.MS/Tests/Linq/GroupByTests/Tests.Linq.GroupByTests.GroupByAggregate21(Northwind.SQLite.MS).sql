@@ -18,7 +18,7 @@ FROM
 			CASE
 				WHEN CASE
 					WHEN ([t2].[Average] * 2 = ROUND([t2].[Average] * 2, 2) OR [t2].[Average] IS NULL) AND [t2].[Average] <> ROUND([t2].[Average], 2)
-						THEN ROUND([t2].[Average] / 2, 2) * 2
+						THEN ROUND(CAST([t2].[Average] AS Float) / 2, 2) * 2
 					ELSE ROUND([t2].[Average], 2)
 				END = 33.25
 					THEN 1
@@ -43,35 +43,35 @@ FROM
 			WHEN CASE
 				WHEN ((
 					SELECT
-						AVG([a_Orders_1].[Freight]) as [Average]
+						CAST(AVG([a_Orders_1].[Freight]) AS Float) as [Average]
 					FROM
 						[Orders] [a_Orders_1]
 					WHERE
 						[d].[CustomerID] = [a_Orders_1].[CustomerID]
 				) * 2 = ROUND((
 					SELECT
-						AVG([a_Orders_1].[Freight]) as [Average]
+						CAST(AVG([a_Orders_1].[Freight]) AS Float) as [Average]
 					FROM
 						[Orders] [a_Orders_1]
 					WHERE
 						[d].[CustomerID] = [a_Orders_1].[CustomerID]
 				) * 2, 2) OR (
 					SELECT
-						AVG([a_Orders_1].[Freight]) as [Average]
+						CAST(AVG([a_Orders_1].[Freight]) AS Float) as [Average]
 					FROM
 						[Orders] [a_Orders_1]
 					WHERE
 						[d].[CustomerID] = [a_Orders_1].[CustomerID]
 				) IS NULL) AND (
 					SELECT
-						AVG([a_Orders_1].[Freight]) as [Average]
+						CAST(AVG([a_Orders_1].[Freight]) AS Float) as [Average]
 					FROM
 						[Orders] [a_Orders_1]
 					WHERE
 						[d].[CustomerID] = [a_Orders_1].[CustomerID]
 				) <> ROUND((
 					SELECT
-						AVG([a_Orders_1].[Freight]) as [Average]
+						CAST(AVG([a_Orders_1].[Freight]) AS Float) as [Average]
 					FROM
 						[Orders] [a_Orders_1]
 					WHERE
@@ -79,7 +79,7 @@ FROM
 				), 2)
 					THEN ROUND((
 					SELECT
-						AVG([a_Orders_1].[Freight]) as [Average]
+						CAST(AVG([a_Orders_1].[Freight]) AS Float) as [Average]
 					FROM
 						[Orders] [a_Orders_1]
 					WHERE
@@ -87,7 +87,7 @@ FROM
 				) / 2, 2) * 2
 				ELSE ROUND((
 					SELECT
-						AVG([a_Orders_1].[Freight]) as [Average]
+						CAST(AVG([a_Orders_1].[Freight]) AS Float) as [Average]
 					FROM
 						[Orders] [a_Orders_1]
 					WHERE
@@ -103,7 +103,7 @@ SELECT DISTINCT
 	CASE
 		WHEN CASE
 			WHEN ([t2].[Average] * 2 = ROUND([t2].[Average] * 2, 2) OR [t2].[Average] IS NULL) AND [t2].[Average] <> ROUND([t2].[Average], 2)
-				THEN ROUND([t2].[Average] / 2, 2) * 2
+				THEN ROUND(CAST([t2].[Average] AS Float) / 2, 2) * 2
 			ELSE ROUND([t2].[Average], 2)
 		END = 33.25
 			THEN 1

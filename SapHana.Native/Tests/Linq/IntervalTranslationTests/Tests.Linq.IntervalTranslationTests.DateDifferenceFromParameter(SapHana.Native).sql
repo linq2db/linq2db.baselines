@@ -81,7 +81,7 @@ SET     @asOf_1 = TIMESTAMP '2026-01-03 13:30:00.0000000'
 
 SELECT
 	CAST(Nano100_Between("r"."StartedOn", :"asOf") AS Double) / 864000000000,
-	CAST(MOD(Nano100_Between("r"."StartedOn", :"asOf_1") / 36000000000, 24) AS Integer)
+	CAST(MOD(CAST(Nano100_Between("r"."StartedOn", :"asOf_1") / 36000000000 AS BigInt), 24) AS Integer)
 FROM
 	"EventRow" "r"
 WHERE

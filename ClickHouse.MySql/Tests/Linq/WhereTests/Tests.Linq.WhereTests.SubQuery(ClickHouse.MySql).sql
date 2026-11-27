@@ -1,6 +1,6 @@
 ﻿-- ClickHouse.MySql ClickHouse
 SELECT
-	(t.ParentID * 1000) / 1000
+	intDiv(t.ParentID * 1000, 1000)
 FROM
 	Child t
 WHERE

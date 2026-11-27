@@ -1,6 +1,6 @@
 ﻿-- SQLite.MS SQLite
 SELECT
-	[e].[Dec] / [j].[Dec]
+	CAST([e].[Dec] AS Float) / [j].[Dec]
 FROM
 	[MissedDivisorEntity] [e]
 		LEFT JOIN [MissedDivisorEntity] [j] ON [j].[Id] = [e].[Id] + 1000

@@ -5,10 +5,10 @@ SELECT
 FROM
 	(
 		SELECT
-			CASE
+			Fix(CASE
 				WHEN [t1].[Sum_1] IS NULL THEN 0
 				ELSE [t1].[Sum_1]
-			END / 2 as [Sum_1],
+			END / 2) as [Sum_1],
 			[p].[ParentID]
 		FROM
 			[Parent] [p]

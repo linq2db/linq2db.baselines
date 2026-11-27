@@ -3,7 +3,7 @@ DECLARE @param Int32
 SET     @param = 33
 
 SELECT
-	v."Integer" / :param,
+	Trunc(v."Integer" / :param),
 	v."Decimal" / :param,
 	v."Double" / :param
 FROM

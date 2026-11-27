@@ -30,7 +30,7 @@ VALUES
 -- SapHana.Native SapHana
 SELECT
 	CAST("r"."InSeconds" / 86400 AS Integer),
-	CAST(MOD("r"."InSeconds" / 3600, 24) AS Integer),
+	CAST(MOD(CAST("r"."InSeconds" / 3600 AS BigInt), 24) AS Integer),
 	CAST("r"."InSeconds" AS Double) / 3600
 FROM
 	"DurationRow" "r"

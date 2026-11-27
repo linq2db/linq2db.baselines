@@ -6,7 +6,7 @@ SELECT
 	`g_1`.`User_1`,
 	`p`.`ProcessName`,
 	`u`.`UserGroups`,
-	SUM(`g_1`.`Diff`) / 60
+	SUM(`g_1`.`Diff`) DIV 60
 FROM
 	(
 		SELECT

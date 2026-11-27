@@ -36,7 +36,7 @@ LIMIT 2
 -- SapHana.Native SapHana
 SELECT
 	CAST("r"."InDays" * 24 AS Double),
-	CAST(MOD("r"."InMilliseconds" / 1000, 60) AS Integer)
+	CAST(MOD(CAST("r"."InMilliseconds" / 1000 AS BigInt), 60) AS Integer)
 FROM
 	"UnitSpreadRow" "r"
 LIMIT 2

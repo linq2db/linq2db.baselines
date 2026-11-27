@@ -1,6 +1,6 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
 SELECT
-	"v"."Integer" / 33,
+	CAST("v"."Integer" / 33 AS Integer),
 	"v"."Decimal" / 33,
 	"v"."Double" / 33
 FROM

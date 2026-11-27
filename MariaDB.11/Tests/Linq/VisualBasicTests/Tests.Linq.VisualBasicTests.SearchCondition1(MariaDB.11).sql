@@ -11,5 +11,5 @@ SELECT
 FROM
 	`LinqDataTypes` `t`
 WHERE
-	NOT `t`.`BoolValue` AND (`t`.`SmallIntValue` = 5 OR `t`.`SmallIntValue` = 7 OR (`t`.`SmallIntValue` | 2) = 10)
+	NOT `t`.`BoolValue` AND (`t`.`SmallIntValue` = 5 OR `t`.`SmallIntValue` = 7 OR CAST(`t`.`SmallIntValue` | 2 AS SIGNED) = 10)
 

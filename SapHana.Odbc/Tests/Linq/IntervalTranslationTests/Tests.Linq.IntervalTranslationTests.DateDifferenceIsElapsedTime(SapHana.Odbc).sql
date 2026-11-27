@@ -22,7 +22,7 @@ VALUES
 -- SapHana.Odbc SapHanaOdbc
 SELECT
 	CAST(Nano100_Between("r"."StartedOn", "r"."FinishedOn") AS Double) / 600000000,
-	CAST(MOD(Nano100_Between("r"."StartedOn", "r"."FinishedOn") / 600000000, 60) AS Integer)
+	CAST(MOD(CAST(Nano100_Between("r"."StartedOn", "r"."FinishedOn") / 600000000 AS BigInt), 60) AS Integer)
 FROM
 	"EventRow" "r"
 LIMIT 2

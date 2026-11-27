@@ -17,6 +17,6 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	Locate(Substring(Left("p"."LastName", ?),? + 1),?) + ? - 1 = 4 AND
+	(Locate(Substring(Left("p"."LastName", ?),? + 1),?) + ?) - 1 = 4 AND
 	"p"."PersonID" = 2
 

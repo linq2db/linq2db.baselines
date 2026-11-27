@@ -1,0 +1,140 @@
+﻿-- PostgreSQL.19 PostgreSQL12
+SELECT
+	t."X"::Int / 2
+FROM
+	"DecimalStoredIntegerTable" t
+ORDER BY
+	t."Id"
+
+-- PostgreSQL.19 PostgreSQL12
+SELECT
+	t1."Id",
+	t1."X",
+	t1."X2"
+FROM
+	"DecimalStoredIntegerTable" t1
+
+-- PostgreSQL.19 PostgreSQL12
+SELECT
+	t."Id"
+FROM
+	"DecimalStoredIntegerTable" t
+WHERE
+	t."X"::Int / 2 = -3
+ORDER BY
+	t."Id"
+
+-- PostgreSQL.19 PostgreSQL12
+SELECT
+	t1."Id",
+	t1."X",
+	t1."X2"
+FROM
+	"DecimalStoredIntegerTable" t1
+
+-- PostgreSQL.19 PostgreSQL12
+DECLARE @two Numeric -- Decimal
+SET     @two = 2
+
+SELECT
+	t."X"::Int / :two::Int
+FROM
+	"DecimalStoredIntegerTable" t
+ORDER BY
+	t."Id"
+
+-- PostgreSQL.19 PostgreSQL12
+SELECT
+	t1."Id",
+	t1."X",
+	t1."X2"
+FROM
+	"DecimalStoredIntegerTable" t1
+
+-- PostgreSQL.19 PostgreSQL12
+SELECT
+	(t."X" + 1)::Int / 2
+FROM
+	"DecimalStoredIntegerTable" t
+ORDER BY
+	t."Id"
+
+-- PostgreSQL.19 PostgreSQL12
+SELECT
+	t1."Id",
+	t1."X",
+	t1."X2"
+FROM
+	"DecimalStoredIntegerTable" t1
+
+-- PostgreSQL.19 PostgreSQL12
+SELECT
+	(-t."X")::Int / 2
+FROM
+	"DecimalStoredIntegerTable" t
+ORDER BY
+	t."Id"
+
+-- PostgreSQL.19 PostgreSQL12
+SELECT
+	t1."Id",
+	t1."X",
+	t1."X2"
+FROM
+	"DecimalStoredIntegerTable" t1
+
+-- PostgreSQL.19 PostgreSQL12
+SELECT
+	Abs(t."X")::Int / 2
+FROM
+	"DecimalStoredIntegerTable" t
+ORDER BY
+	t."Id"
+
+-- PostgreSQL.19 PostgreSQL12
+SELECT
+	t1."Id",
+	t1."X",
+	t1."X2"
+FROM
+	"DecimalStoredIntegerTable" t1
+
+-- PostgreSQL.19 PostgreSQL12
+SELECT
+	60 / t."X"::Int
+FROM
+	"DecimalStoredIntegerTable" t
+ORDER BY
+	t."Id"
+
+-- PostgreSQL.19 PostgreSQL12
+SELECT
+	t1."Id",
+	t1."X",
+	t1."X2"
+FROM
+	"DecimalStoredIntegerTable" t1
+
+-- PostgreSQL.19 PostgreSQL12
+SELECT
+	t."X"::Int / t."X2"::Int
+FROM
+	"DecimalStoredIntegerTable" t
+ORDER BY
+	t."Id"
+
+-- PostgreSQL.19 PostgreSQL12
+SELECT
+	t1."Id",
+	t1."X",
+	t1."X2"
+FROM
+	"DecimalStoredIntegerTable" t1
+
+-- PostgreSQL.19 PostgreSQL12
+SELECT
+	SUM(g_1."X")::Int / 2
+FROM
+	"DecimalStoredIntegerTable" g_1
+LIMIT 2
+

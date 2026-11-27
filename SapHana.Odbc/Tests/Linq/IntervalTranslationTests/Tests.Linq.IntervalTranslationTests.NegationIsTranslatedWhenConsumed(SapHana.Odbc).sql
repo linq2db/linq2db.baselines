@@ -30,7 +30,7 @@ VALUES
 -- SapHana.Odbc SapHanaOdbc
 SELECT
 	CAST(CAST(-"r"."InSeconds" AS BigInt) AS Double) / 3600,
-	CAST(MOD(CAST(-"r"."InSeconds" AS BigInt) / 3600, 24) AS Integer)
+	CAST(MOD(CAST(CAST(-"r"."InSeconds" AS BigInt) / 3600 AS BigInt), 24) AS Integer)
 FROM
 	"DurationRow" "r"
 LIMIT 2

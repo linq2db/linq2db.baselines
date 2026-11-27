@@ -30,7 +30,7 @@ VALUES
 -- Informix.DB2 Informix
 SELECT FIRST 2
 	r.InSeconds::Float / 3600,
-	Mod(r.InSeconds / 3600, 24)::Int,
+	Mod((r.InSeconds / 3600)::BigInt, 24)::Int,
 	r.InTicks::Float / 600000000
 FROM
 	DurationRow r

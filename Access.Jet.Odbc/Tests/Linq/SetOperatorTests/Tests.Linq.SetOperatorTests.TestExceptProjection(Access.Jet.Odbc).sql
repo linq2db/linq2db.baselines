@@ -11,7 +11,7 @@ WHERE
 			[SampleData] [r_1]
 		WHERE
 			[r_1].[Id] MOD 4 = 0 AND [r].[Id] = [r_1].[Id] AND
-			[r].[Value1] = [r_1].[Value2] / 10
+			[r].[Value1] = Fix([r_1].[Value2] / 10)
 	) AND
 	NOT EXISTS(
 		SELECT
