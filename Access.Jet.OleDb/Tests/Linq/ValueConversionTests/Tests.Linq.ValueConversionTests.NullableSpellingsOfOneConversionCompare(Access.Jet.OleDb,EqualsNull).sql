@@ -2,7 +2,7 @@
 SELECT
 	[r].[Id]
 FROM
-	[ShiftedDateRow] [r]
+	[Issue5975Row] [r]
 WHERE
 	[r].[Plain] = [r].[Date]
 
