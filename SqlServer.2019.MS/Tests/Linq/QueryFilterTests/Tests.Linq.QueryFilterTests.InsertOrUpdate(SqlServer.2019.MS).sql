@@ -1,5 +1,5 @@
 ﻿-- SqlServer.2019.MS SqlServer.2019
-MERGE INTO [Issue5289Table] [t1]
+MERGE INTO [SoftDeletedPictureTable] [t1]
 USING (SELECT 1 AS [Id]) [s] ON
 (
 	[t1].[Id] = [s].[Id]
@@ -28,12 +28,12 @@ SELECT TOP (2)
 	[r].[PictureId],
 	[r].[Deleted]
 FROM
-	[Issue5289Table] [r]
+	[SoftDeletedPictureTable] [r]
 WHERE
 	[r].[Deleted] = 0 AND [r].[Id] = 1
 
 -- SqlServer.2019.MS SqlServer.2019
-MERGE INTO [Issue5289Table] [t1]
+MERGE INTO [SoftDeletedPictureTable] [t1]
 USING (SELECT 1 AS [Id]) [s] ON
 (
 	[t1].[Id] = [s].[Id]
@@ -62,7 +62,7 @@ SELECT TOP (2)
 	[r].[PictureId],
 	[r].[Deleted]
 FROM
-	[Issue5289Table] [r]
+	[SoftDeletedPictureTable] [r]
 WHERE
 	[r].[Deleted] = 0 AND [r].[Id] = 1
 
