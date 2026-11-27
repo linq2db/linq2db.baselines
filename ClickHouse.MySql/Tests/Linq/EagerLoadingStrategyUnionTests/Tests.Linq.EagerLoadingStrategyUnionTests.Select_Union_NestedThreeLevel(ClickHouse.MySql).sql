@@ -4,7 +4,7 @@ WITH CTE_1 AS MATERIALIZED
 	SELECT
 		c_1.Id as Id,
 		toInt64(ROW_NUMBER() OVER (ORDER BY c_1.Id)) as field,
-		c_1.Name as CompanyName
+		c_1.Name as Name
 	FROM
 		Company c_1
 	ORDER BY
@@ -116,7 +116,7 @@ FROM
 			t7.field as Item3,
 			t7.Id as Item2,
 			t7.Id as Item4,
-			t7.CompanyName as Item5,
+			t7.Name as Item5,
 			toInt32(NULL) as Item6,
 			toInt32(NULL) as Item7
 		FROM
