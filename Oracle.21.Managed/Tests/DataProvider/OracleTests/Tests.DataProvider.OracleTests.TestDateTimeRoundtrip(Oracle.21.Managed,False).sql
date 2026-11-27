@@ -22,7 +22,7 @@ SET     @DateTimeOffset_1 = 01/03/2020 04:05:06.7 +00:45
 DECLARE @DateTimeOffset_9 TimeStampTZ -- DateTimeOffset
 SET     @DateTimeOffset_9 = 01/03/2020 04:05:06.7891234 +00:45
 
-INSERT INTO "Test0431"
+INSERT INTO "OracleDateTimeTypes"
 (
 	"Date",
 	"DateTime",
@@ -65,7 +65,7 @@ SELECT
 	t1."DateTimeOffset_1",
 	t1."DateTimeOffset_9"
 FROM
-	"Test0431" t1
+	"OracleDateTimeTypes" t1
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @pDate Date
@@ -84,7 +84,7 @@ SELECT
 	r."DateTimeOffset_1",
 	r."DateTimeOffset_9"
 FROM
-	"Test0431" r
+	"OracleDateTimeTypes" r
 WHERE
 	r."Date" = :pDate
 
@@ -105,7 +105,7 @@ SELECT
 	r."DateTimeOffset_1",
 	r."DateTimeOffset_9"
 FROM
-	"Test0431" r
+	"OracleDateTimeTypes" r
 WHERE
 	r."DateTime" = :pDateTime
 
@@ -126,7 +126,7 @@ SELECT
 	r."DateTimeOffset_1",
 	r."DateTimeOffset_9"
 FROM
-	"Test0431" r
+	"OracleDateTimeTypes" r
 WHERE
 	r."DateTime_" = :pDateTime
 
@@ -147,7 +147,7 @@ SELECT
 	r."DateTimeOffset_1",
 	r."DateTimeOffset_9"
 FROM
-	"Test0431" r
+	"OracleDateTimeTypes" r
 WHERE
 	r."DateTime2" = :pDateTime
 
@@ -168,7 +168,7 @@ SELECT
 	r."DateTimeOffset_1",
 	r."DateTimeOffset_9"
 FROM
-	"Test0431" r
+	"OracleDateTimeTypes" r
 WHERE
 	r."DateTime2_0" = :pDateTime
 
@@ -189,7 +189,7 @@ SELECT
 	r."DateTimeOffset_1",
 	r."DateTimeOffset_9"
 FROM
-	"Test0431" r
+	"OracleDateTimeTypes" r
 WHERE
 	r."DateTime2_1" = :pDateTime
 
@@ -210,7 +210,7 @@ SELECT
 	r."DateTimeOffset_1",
 	r."DateTimeOffset_9"
 FROM
-	"Test0431" r
+	"OracleDateTimeTypes" r
 WHERE
 	r."DateTime2_9" = :pDateTime
 
@@ -231,7 +231,7 @@ SELECT
 	r."DateTimeOffset_1",
 	r."DateTimeOffset_9"
 FROM
-	"Test0431" r
+	"OracleDateTimeTypes" r
 WHERE
 	r."DateTimeOffset_" = :pDateTimeOffset
 
@@ -252,7 +252,7 @@ SELECT
 	r."DateTimeOffset_1",
 	r."DateTimeOffset_9"
 FROM
-	"Test0431" r
+	"OracleDateTimeTypes" r
 WHERE
 	r."DateTimeOffset_0" = :pDateTimeOffset
 
@@ -273,7 +273,7 @@ SELECT
 	r."DateTimeOffset_1",
 	r."DateTimeOffset_9"
 FROM
-	"Test0431" r
+	"OracleDateTimeTypes" r
 WHERE
 	r."DateTimeOffset_1" = :pDateTimeOffset
 
@@ -294,7 +294,7 @@ SELECT
 	r."DateTimeOffset_1",
 	r."DateTimeOffset_9"
 FROM
-	"Test0431" r
+	"OracleDateTimeTypes" r
 WHERE
 	r."DateTimeOffset_9" = :pDateTimeOffset
 
