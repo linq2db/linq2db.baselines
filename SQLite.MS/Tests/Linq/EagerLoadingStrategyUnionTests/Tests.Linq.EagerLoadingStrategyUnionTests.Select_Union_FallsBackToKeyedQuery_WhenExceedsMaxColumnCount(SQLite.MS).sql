@@ -2,7 +2,6 @@
 SELECT
 	[p].[Id],
 	ROW_NUMBER() OVER (ORDER BY [p].[Id]),
-	[p].[Name],
 	[p].[Id],
 	[p].[Name]
 FROM
