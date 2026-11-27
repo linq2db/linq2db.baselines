@@ -11,7 +11,7 @@ FROM
 			g_1.Id
 	) t1
 WHERE
-	toDateTime64(t1.Max_1, 7) IN (toDateTime64('2026-06-01 10:00:00.0000000', 7))
+	toDateTime64(t1.Max_1, 7) IN (toDateTime64('2026-06-01 10:00:00.0000000', 7, 'UTC'))
 
 -- ClickHouse.Driver ClickHouse
 SELECT
@@ -26,5 +26,5 @@ FROM
 			g_1.Id
 	) t1
 WHERE
-	toDateTime64(t1.Max_1, 7) IN (toDateTime64('2026-06-01 10:00:00.5000000', 7))
+	toDateTime64(t1.Max_1, 7) IN (toDateTime64('2026-06-01 10:00:00.5000000', 7, 'UTC'))
 
