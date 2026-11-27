@@ -8,6 +8,7 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	CharIndex('e', Substring([p].[LastName], 3, Len([p].[LastName]))) = 3 AND
+	CHARINDEX('e', Substring([p].[LastName], 3, Len([p].[LastName]))) = 3 AND
+	CHARINDEX('e', Substring([p].[LastName], 3, Len([p].[LastName]))) <> 0 AND
 	[p].[PersonID] = 2
 

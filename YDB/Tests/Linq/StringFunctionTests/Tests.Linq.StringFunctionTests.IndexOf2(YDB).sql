@@ -8,5 +8,6 @@ SELECT
 FROM
 	Person p
 WHERE
-	Unicode::Find(p.LastName, 'e'u, 3) + 1 = 5 AND p.PersonID = 2
+	IF(p.LastName IS NULL OR 'e'u IS NULL OR 3 IS NULL, NULL, Coalesce(CAST(Unicode::Find(p.LastName, Coalesce('e'u, ''u), 3 - 1) AS Int32) + 1, 0)) = 5 AND
+	p.PersonID = 2
 

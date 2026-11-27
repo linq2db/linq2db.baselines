@@ -8,5 +8,6 @@ SELECT
 FROM
 	Person p
 WHERE
-	Unicode::Find(p.FirstName, 'oh'u) + 1 = 2 AND p.PersonID = 1
+	IF(p.FirstName IS NULL OR 'oh'u IS NULL, NULL, Coalesce(CAST(Unicode::Find(p.FirstName, Coalesce('oh'u, ''u)) AS Int32) + 1, 0)) = 2 AND
+	p.PersonID = 1
 
