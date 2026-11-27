@@ -16,7 +16,7 @@ FROM
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 SELECT
-	EXTRACT(YEAR FROM Coalesce(j."Moment", TIMESTAMP '0001-01-01 00:00:00.000000 +00:00'))
+	EXTRACT(YEAR FROM CAST(Coalesce(j."Moment", TIMESTAMP '0001-01-01 00:00:00.000000 +00:00') AS timestamp(7)))
 FROM
 	"MissedMomentEntity" e
 		LEFT JOIN "MissedMomentEntity" j ON j."Id" = e."Id" + 1000
