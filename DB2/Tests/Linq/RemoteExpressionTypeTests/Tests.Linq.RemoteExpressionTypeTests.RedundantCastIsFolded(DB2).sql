@@ -1,0 +1,7 @@
+﻿-- DB2 DB2.LUW DB2LUW
+SELECT
+	"r".A + "r".B
+FROM
+	"DecimalTable" "r"
+FETCH NEXT 2 ROWS ONLY
+
