@@ -1,0 +1,57 @@
+﻿-- Access.Ace.OleDb AccessOleDb
+SELECT DISTINCT
+	[x].[Amount]
+FROM
+	[CategorySales] [x]
+WHERE
+	[x].[Year] = 2010
+
+-- Access.Ace.OleDb AccessOleDb
+SELECT DISTINCT TOP 2
+	[x].[Amount]
+FROM
+	[CategorySales] [x]
+WHERE
+	[x].[Year] = 2010 AND [x].[Category] = 'A'
+
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @castOfA Integer -- Int32
+SET     @castOfA = 20
+
+SELECT
+	[x].[Category]
+FROM
+	[CategorySales] [x]
+WHERE
+	[x].[Year] = 2010 AND [x].[Amount] = @castOfA
+
+-- Access.Ace.OleDb AccessOleDb
+DECLARE @castOfA Integer -- Int32
+SET     @castOfA = 20
+
+SELECT
+	[r].[Category]
+FROM
+	[CategorySales] [r]
+GROUP BY
+	[r].[Category]
+HAVING
+	SUM(IIF([r].[Year] = 2010, [r].[Amount], NULL)) = @castOfA
+
+-- Access.Ace.OleDb AccessOleDb
+SELECT DISTINCT
+	SUM(IIF([g_1].[Year] = 2010, [g_1].[Amount], NULL))
+FROM
+	[CategorySales] [g_1]
+GROUP BY
+	[g_1].[Category]
+
+-- Access.Ace.OleDb AccessOleDb
+SELECT
+	SUM(IIF([r].[Year] = 2000, [r].[Amount], NULL)),
+	SUM(IIF([r].[Year] = 2010, [r].[Amount], NULL))
+FROM
+	[CategorySales] [r]
+GROUP BY
+	[r].[Category]
+
