@@ -5,8 +5,8 @@ FROM
 	(
 		SELECT
 			CASE
-				WHEN CAST([t1].[Value1] + [t1].[Count_1] AS Float) / 4 - FLOOR(CAST([t1].[Value1] + [t1].[Count_1] AS Float) / 4) = 0.5 AND FLOOR(CAST([t1].[Value1] + [t1].[Count_1] AS Float) / 4) % 2 = 0
-					THEN FLOOR(CAST([t1].[Value1] + [t1].[Count_1] AS Float) / 4)
+				WHEN CAST([t1].[Value1] + [t1].[Count_1] AS Float) / 4 - FLOOR(CAST([t1].[Value1] + [t1].[Count_1] AS Float) / 4) = 0.5
+					THEN ROUND((CAST([t1].[Value1] + [t1].[Count_1] AS Float) / 4) * 0.5, 0) * 2
 				ELSE ROUND(CAST([t1].[Value1] + [t1].[Count_1] AS Float) / 4, 0)
 			END as [c1]
 		FROM

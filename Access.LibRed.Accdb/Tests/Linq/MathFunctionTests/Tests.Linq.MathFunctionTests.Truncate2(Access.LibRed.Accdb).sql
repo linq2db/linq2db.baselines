@@ -1,16 +1,16 @@
 ﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
 SELECT
-	[t].[Value_1]
+	[t].[c1]
 FROM
 	(
 		SELECT
 			CASE
 				WHEN -[p].[MoneyValue] >= 0 THEN Int(-[p].[MoneyValue])
 				ELSE -Int([p].[MoneyValue])
-			END as [Value_1]
+			END as [c1]
 		FROM
 			[LinqDataTypes] [p]
 	) [t]
 WHERE
-	[t].[Value_1] <> 0.10000000000000001
+	[t].[c1] <> 0.10000000000000001
 

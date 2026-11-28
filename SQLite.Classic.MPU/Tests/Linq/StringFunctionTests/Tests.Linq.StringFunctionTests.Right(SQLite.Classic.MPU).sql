@@ -8,6 +8,6 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	SUBSTRING([p].[FirstName], LENGTH([p].[FirstName]) - 3 + 1) = 'ohn' AND
+	SUBSTRING([p].[FirstName], MAX(LENGTH([p].[FirstName]) - 2, 1)) = 'ohn' AND
 	[p].[PersonID] = 1
 

@@ -1,13 +1,13 @@
 ﻿-- DuckDB
 SELECT
-	t.Value_1
+	t.c1
 FROM
 	(
 		SELECT
-			Trunc(p.MoneyValue) as Value_1
+			Trunc(p.MoneyValue) as c1
 		FROM
 			LinqDataTypes p
 	) t
 WHERE
-	t.Value_1 <> 0.1
+	t.c1 <> 0.1
 

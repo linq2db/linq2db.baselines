@@ -4,10 +4,7 @@ SELECT
 FROM
 	(
 		SELECT
-			CASE
-				WHEN [p].[MoneyValue] >= 0 THEN Int([p].[MoneyValue] + 0.5)
-				ELSE Int([p].[MoneyValue] - 0.5)
-			END as [c1]
+			Sgn([p].[MoneyValue]) * (Int(Abs([p].[MoneyValue])) + Int((Abs([p].[MoneyValue]) - Int(Abs([p].[MoneyValue]))) * 2)) as [c1]
 		FROM
 			[LinqDataTypes] [p]
 	) [t]

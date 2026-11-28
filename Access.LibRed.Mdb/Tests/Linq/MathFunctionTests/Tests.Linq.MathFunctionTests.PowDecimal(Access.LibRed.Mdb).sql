@@ -4,7 +4,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Int([p].[MoneyValue] ^ 3) as [Value_1]
+			Int(CDec([p].[MoneyValue] ^ 3)) as [Value_1]
 		FROM
 			[LinqDataTypes] [p]
 	) [t]

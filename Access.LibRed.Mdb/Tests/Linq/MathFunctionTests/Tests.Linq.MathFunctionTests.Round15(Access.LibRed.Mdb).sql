@@ -1,10 +1,6 @@
 ﻿-- Access.LibRed.Mdb Access.LibRed AccessLibRed
 SELECT
-	CASE
-		WHEN [p].[MoneyValue] * 100000 - Int([p].[MoneyValue] * 100000) = 0.5 AND Int([p].[MoneyValue] * 100000) MOD 2 = 0
-			THEN -Int(-([p].[MoneyValue] * 100000))
-		ELSE Round([p].[MoneyValue] * 100000, 0)
-	END / 100000 + [p].[MoneyValue]
+	Sgn([p].[MoneyValue]) * ((Int(Abs([p].[MoneyValue]) * CDec(10 ^ 5)) + Int((Abs([p].[MoneyValue]) * CDec(10 ^ 5) - Int(Abs([p].[MoneyValue]) * CDec(10 ^ 5))) * 2)) / CDec(10 ^ 5)) + [p].[MoneyValue]
 FROM
 	[LinqDataTypes] [p]
 WHERE
