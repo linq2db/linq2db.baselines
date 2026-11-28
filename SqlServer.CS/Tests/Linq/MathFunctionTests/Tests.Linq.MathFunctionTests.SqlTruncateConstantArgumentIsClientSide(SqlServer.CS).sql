@@ -1,0 +1,16 @@
+﻿-- SqlServer.CS SqlServer.2025
+SELECT
+	1
+FROM
+	[Person] [p]
+WHERE
+	[p].[PersonID] = 1
+
+-- SqlServer.CS SqlServer.2025
+SELECT
+	COUNT(*)
+FROM
+	[Person] [p]
+WHERE
+	[p].[PersonID] = 1
+
