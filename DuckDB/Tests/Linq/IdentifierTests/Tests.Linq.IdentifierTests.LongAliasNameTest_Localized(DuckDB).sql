@@ -11,3 +11,17 @@ FROM
 WHERE
 	long親Long子Long孫LongVeryLongVeryVeryLongVeryVeryLongLongAliasNameTestParent.ParentID = $parentId
 
+-- DuckDB
+SELECT
+	t1.ParentID,
+	t1.Value1
+FROM
+	Parent t1
+
+-- DuckDB
+SELECT
+	t1.ParentID,
+	t1.ChildID
+FROM
+	Child t1
+

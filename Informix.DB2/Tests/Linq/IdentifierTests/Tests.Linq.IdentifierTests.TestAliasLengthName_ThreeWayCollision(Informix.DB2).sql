@@ -12,3 +12,25 @@ FROM
 WHERE
 	longLongLongLongVeryLongVeryVeryLongVeryVeryLongLongAliasNameTestParent.ParentID = @parentId
 
+-- Informix.DB2 Informix
+SELECT
+	t1.ParentID,
+	t1.Value1
+FROM
+	Parent t1
+
+-- Informix.DB2 Informix
+SELECT
+	t1.ParentID,
+	t1.ChildID
+FROM
+	Child t1
+
+-- Informix.DB2 Informix
+SELECT
+	t1.ParentID,
+	t1.ChildID,
+	t1.GrandChildID
+FROM
+	GrandChild t1
+
