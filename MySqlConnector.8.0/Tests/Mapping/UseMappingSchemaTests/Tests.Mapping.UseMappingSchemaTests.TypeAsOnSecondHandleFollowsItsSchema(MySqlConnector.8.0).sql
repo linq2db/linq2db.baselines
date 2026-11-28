@@ -1,0 +1,11 @@
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+SELECT
+	`s`.`Id`,
+	CASE
+		WHEN `s`.`Kind` = 'C1' THEN `s`.`Kind`
+		ELSE NULL
+	END
+FROM
+	`Parent` `x`
+		INNER JOIN `SourceSchemaShape` `s` ON `x`.`ParentID` = `s`.`Id`
+
