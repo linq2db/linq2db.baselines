@@ -11,3 +11,17 @@ FROM
 WHERE
 	親."ParentID" = :parentId
 
+-- PostgreSQL.9.2 PostgreSQL
+SELECT
+	t1."ParentID",
+	t1."Value1"
+FROM
+	"Parent" t1
+
+-- PostgreSQL.9.2 PostgreSQL
+SELECT
+	t1."ParentID",
+	t1."ChildID"
+FROM
+	"Child" t1
+
