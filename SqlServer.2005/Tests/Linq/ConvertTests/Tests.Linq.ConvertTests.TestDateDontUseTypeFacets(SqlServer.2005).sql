@@ -7,7 +7,7 @@ FROM
 		SELECT
 			DateAdd(dd, DateDiff(dd, 0, [g_1].[CreatedOnUtc]), 0) as [Date_1]
 		FROM
-			[DateTimePrecisionTable] [g_1]
+			[Issue5390Table] [g_1]
 	) [g_2]
 GROUP BY
 	[g_2].[Date_1]
@@ -16,5 +16,5 @@ GROUP BY
 SELECT
 	[t1].[CreatedOnUtc]
 FROM
-	[DateTimePrecisionTable] [t1]
+	[Issue5390Table] [t1]
 
