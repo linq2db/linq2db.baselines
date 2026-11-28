@@ -1,0 +1,27 @@
+﻿-- Oracle.12.Managed Oracle.Managed Oracle12
+DECLARE @parentId Int32
+SET     @parentId = 1
+
+SELECT
+	longLongLongLongVeryLongVeryVeryLongVeryVeryLongLongAliasNameTestParent."ParentID",
+	longLongLongLongVeryLongVeryVeryLongVeryVeryLongLongAliasNameTestParent."Value1"
+FROM
+	"Parent" longLongLongLongVeryLongVeryVeryLongVeryVeryLongLongAliasNameTestParent
+		INNER JOIN "Child" longLongLongLongVeryLongVeryVeryLongVeryVeryLongLongAliasNameTestChild ON longLongLongLongVeryLongVeryVeryLongVeryVeryLongLongAliasNameTestChild."ParentID" = longLongLongLongVeryLongVeryVeryLongVeryVeryLongLongAliasNameTestParent."ParentID"
+WHERE
+	longLongLongLongVeryLongVeryVeryLongVeryVeryLongLongAliasNameTestParent."ParentID" = :parentId
+
+-- Oracle.12.Managed Oracle.Managed Oracle12
+SELECT
+	t1."ParentID",
+	t1."Value1"
+FROM
+	"Parent" t1
+
+-- Oracle.12.Managed Oracle.Managed Oracle12
+SELECT
+	t1."ParentID",
+	t1."ChildID"
+FROM
+	"Child" t1
+

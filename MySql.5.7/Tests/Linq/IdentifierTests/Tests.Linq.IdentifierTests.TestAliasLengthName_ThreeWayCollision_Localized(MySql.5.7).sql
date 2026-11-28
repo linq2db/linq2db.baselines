@@ -1,0 +1,14 @@
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
+DECLARE @parentId Int32
+SET     @parentId = 1
+
+SELECT
+	`long親Long子Long孫LongVeryLongVeryVeryLongVeryVeryLongLongAliasNameTestParent`.`ParentID`,
+	`long親Long子Long孫LongVeryLongVeryVeryLongVeryVeryLongLongAliasNameTestParent`.`Value1`
+FROM
+	`Parent` `long親Long子Long孫LongVeryLongVeryVeryLongVeryVeryLongLongAliasNameTestParent`
+		INNER JOIN `Child` `long親Long子Long孫LongVeryLongVeryVeryLongVeryVeryLongLongAliasNameTestChild` ON `long親Long子Long孫LongVeryLongVeryVeryLongVeryVeryLongLongAliasNameTestChild`.`ParentID` = `long親Long子Long孫LongVeryLongVeryVeryLongVeryVeryLongLongAliasNameTestParent`.`ParentID`
+		INNER JOIN `GrandChild` `long親Long子Long孫LongVeryLongVeryVeryLongVeryVeryLongLongAliasNameTestGrand` ON `long親Long子Long孫LongVeryLongVeryVeryLongVeryVeryLongLongAliasNameTestGrand`.`ChildID` = `long親Long子Long孫LongVeryLongVeryVeryLongVeryVeryLongLongAliasNameTestChild`.`ChildID`
+WHERE
+	`long親Long子Long孫LongVeryLongVeryVeryLongVeryVeryLongLongAliasNameTestParent`.`ParentID` = @parentId
+

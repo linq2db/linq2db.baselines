@@ -1,0 +1,36 @@
+﻿-- SqlServer.CS SqlServer.2025
+DECLARE @parentId Int -- Int32
+SET     @parentId = 1
+
+SELECT
+	[long親Long子Long孫LongVeryLongVeryVeryLongVeryVeryLongLongAliasNameTestParent].[ParentID],
+	[long親Long子Long孫LongVeryLongVeryVeryLongVeryVeryLongLongAliasNameTestParent].[Value1]
+FROM
+	[Parent] [long親Long子Long孫LongVeryLongVeryVeryLongVeryVeryLongLongAliasNameTestParent]
+		INNER JOIN [Child] [long親Long子Long孫LongVeryLongVeryVeryLongVeryVeryLongLongAliasNameTestChild] ON [long親Long子Long孫LongVeryLongVeryVeryLongVeryVeryLongLongAliasNameTestChild].[ParentID] = [long親Long子Long孫LongVeryLongVeryVeryLongVeryVeryLongLongAliasNameTestParent].[ParentID]
+		INNER JOIN [GrandChild] [long親Long子Long孫LongVeryLongVeryVeryLongVeryVeryLongLongAliasNameTestGrand] ON [long親Long子Long孫LongVeryLongVeryVeryLongVeryVeryLongLongAliasNameTestGrand].[ChildID] = [long親Long子Long孫LongVeryLongVeryVeryLongVeryVeryLongLongAliasNameTestChild].[ChildID]
+WHERE
+	[long親Long子Long孫LongVeryLongVeryVeryLongVeryVeryLongLongAliasNameTestParent].[ParentID] = @parentId
+
+-- SqlServer.CS SqlServer.2025
+SELECT
+	[t1].[ParentID],
+	[t1].[Value1]
+FROM
+	[Parent] [t1]
+
+-- SqlServer.CS SqlServer.2025
+SELECT
+	[t1].[ParentID],
+	[t1].[ChildID]
+FROM
+	[Child] [t1]
+
+-- SqlServer.CS SqlServer.2025
+SELECT
+	[t1].[ParentID],
+	[t1].[ChildID],
+	[t1].[GrandChildID]
+FROM
+	[GrandChild] [t1]
+

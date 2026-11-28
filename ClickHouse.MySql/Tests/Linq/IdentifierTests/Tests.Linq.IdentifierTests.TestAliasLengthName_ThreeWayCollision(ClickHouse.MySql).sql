@@ -1,0 +1,33 @@
+﻿-- ClickHouse.MySql ClickHouse
+SELECT
+	longLongLongLongVeryLongVeryVeryLongVeryVeryLongLongAliasNameTestParent.ParentID,
+	longLongLongLongVeryLongVeryVeryLongVeryVeryLongLongAliasNameTestParent.Value1
+FROM
+	Parent longLongLongLongVeryLongVeryVeryLongVeryVeryLongLongAliasNameTestParent
+		INNER JOIN Child longLongLongLongVeryLongVeryVeryLongVeryVeryLongLongAliasNameTestChild ON longLongLongLongVeryLongVeryVeryLongVeryVeryLongLongAliasNameTestChild.ParentID = longLongLongLongVeryLongVeryVeryLongVeryVeryLongLongAliasNameTestParent.ParentID
+		INNER JOIN GrandChild longLongLongLongVeryLongVeryVeryLongVeryVeryLongLongAliasNameTestGrand ON longLongLongLongVeryLongVeryVeryLongVeryVeryLongLongAliasNameTestGrand.ChildID = longLongLongLongVeryLongVeryVeryLongVeryVeryLongLongAliasNameTestChild.ChildID
+WHERE
+	longLongLongLongVeryLongVeryVeryLongVeryVeryLongLongAliasNameTestParent.ParentID = 1
+
+-- ClickHouse.MySql ClickHouse
+SELECT
+	t1.ParentID,
+	t1.Value1
+FROM
+	Parent t1
+
+-- ClickHouse.MySql ClickHouse
+SELECT
+	t1.ParentID,
+	t1.ChildID
+FROM
+	Child t1
+
+-- ClickHouse.MySql ClickHouse
+SELECT
+	t1.ParentID,
+	t1.ChildID,
+	t1.GrandChildID
+FROM
+	GrandChild t1
+
