@@ -1,5 +1,5 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
-MERGE INTO [SoftDeletedPictureTable] [t1]
+MERGE INTO [Issue5289Table] [t1]
 USING (SELECT 1 AS [Id]) [s] ON
 (
 	[t1].[Id] = [s].[Id]
@@ -28,12 +28,12 @@ SELECT TOP (2)
 	[r].[PictureId],
 	[r].[Deleted]
 FROM
-	[SoftDeletedPictureTable] [r]
+	[Issue5289Table] [r]
 WHERE
 	[r].[Deleted] = 0 AND [r].[Id] = 1
 
 -- SqlServer.2008.MS SqlServer.2008
-MERGE INTO [SoftDeletedPictureTable] [t1]
+MERGE INTO [Issue5289Table] [t1]
 USING (SELECT 1 AS [Id]) [s] ON
 (
 	[t1].[Id] = [s].[Id]
@@ -62,7 +62,7 @@ SELECT TOP (2)
 	[r].[PictureId],
 	[r].[Deleted]
 FROM
-	[SoftDeletedPictureTable] [r]
+	[Issue5289Table] [r]
 WHERE
 	[r].[Deleted] = 0 AND [r].[Id] = 1
 
