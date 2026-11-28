@@ -1,0 +1,8 @@
+﻿-- DB2 DB2.LUW DB2LUW
+SELECT
+	"t1"."1COL",
+	"t1".COL1
+FROM
+	"DigitLeadingNames" "t1"
+FETCH NEXT 2 ROWS ONLY
+
