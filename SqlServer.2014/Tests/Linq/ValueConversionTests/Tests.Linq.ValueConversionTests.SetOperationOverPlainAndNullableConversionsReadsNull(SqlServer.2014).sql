@@ -8,13 +8,13 @@ FROM
 			[r].[Id],
 			[r].[Date] as [Date_1]
 		FROM
-			[PlainConvertedDateRow] [r]
+			[Issue5976RowC] [r]
 		UNION ALL
 		SELECT
 			[r_1].[Id],
 			[r_1].[Date] as [Date_1]
 		FROM
-			[NullableConvertedDateRowA] [r_1]
+			[Issue5976RowA] [r_1]
 	) [t1]
 ORDER BY
 	[t1].[Id]
