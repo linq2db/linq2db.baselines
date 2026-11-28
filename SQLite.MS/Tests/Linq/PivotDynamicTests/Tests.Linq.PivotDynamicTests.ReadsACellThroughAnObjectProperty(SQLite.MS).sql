@@ -1,5 +1,6 @@
 ﻿-- SQLite.MS SQLite
 SELECT
+	[r].[Category],
 	SUM(CASE
 		WHEN [r].[Year] = 2010 THEN [r].[Amount]
 		ELSE NULL
@@ -11,6 +12,7 @@ GROUP BY
 
 -- SQLite.MS SQLite
 SELECT
+	[r].[Category],
 	SUM(CASE
 		WHEN [r].[Year] = 2010 THEN [r].[Amount]
 		ELSE NULL
@@ -22,6 +24,7 @@ GROUP BY
 
 -- SQLite.MS SQLite
 SELECT
+	[r].[Category],
 	CAST(SUM(CASE
 		WHEN [r].[Year] = 2010 THEN [r].[Amount]
 		ELSE NULL

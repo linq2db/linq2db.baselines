@@ -20,6 +20,17 @@ DECLARE @castOfA Integer -- Int32
 SET     @castOfA = 20
 
 SELECT
+	[x].[Category]
+FROM
+	[CategorySales] [x]
+WHERE
+	[x].[Year] = 2010 AND CAST([x].[Amount] AS INTEGER) = @castOfA
+
+-- SQLite.MS SQLite
+DECLARE @castOfA Integer -- Int32
+SET     @castOfA = 20
+
+SELECT
 	[r].[Category]
 FROM
 	[CategorySales] [r]
