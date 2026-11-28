@@ -1,5 +1,5 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-WITH CTE_1 ("Id", "field", "CompanyName")
+WITH CTE_1 ("Id", "field", "Name")
 AS
 (
 	SELECT
@@ -187,7 +187,7 @@ FROM
 			"t9"."field" as "Item3",
 			"t9"."Id" as "Item2",
 			"t9"."Id" as "Item4",
-			"t9"."CompanyName" as "Item5",
+			"t9"."Name" as "Item5",
 			CAST(NULL AS Int) as "Item6",
 			CAST(NULL AS Int) as "Item7",
 			CAST(NULL AS NVarChar(255)) as "Item1_1"

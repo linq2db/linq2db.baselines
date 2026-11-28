@@ -6,7 +6,7 @@ SET     $Customer_Name = 'name1'
 DECLARE $CustomerOther_Name NVarChar(5) -- String
 SET     $CustomerOther_Name = 'name2'
 
-INSERT INTO CompositeNamesAttributeTable
+INSERT INTO Issue5266Table
 (
 	Id,
 	child1_name,
@@ -25,6 +25,6 @@ SELECT
 	t1.child1_name,
 	t1.child2_name
 FROM
-	CompositeNamesAttributeTable t1
+	Issue5266Table t1
 LIMIT 2
 

@@ -8,7 +8,7 @@ SET     @Age = 20
 DECLARE @Gender NVarChar(6) -- String
 SET     @Gender = N'Male'
 
-INSERT INTO [SkipOnInsertEnum]
+INSERT INTO [PR_1598_Insert_Enum_Table]
 (
 	[Id],
 	[Name],
@@ -30,7 +30,7 @@ SELECT TOP (1)
 	[t].[Age],
 	[t].[Gender]
 FROM
-	[SkipOnInsertEnum] [t]
+	[PR_1598_Insert_Enum_Table] [t]
 WHERE
 	[t].[Id] = 1
 
@@ -42,7 +42,7 @@ SET     @Name = N'Jenny'
 DECLARE @Age Int -- Int32
 SET     @Age = 25
 
-INSERT INTO [SkipOnInsertEnum]
+INSERT INTO [PR_1598_Insert_Enum_Table]
 (
 	[Id],
 	[Name],
@@ -62,7 +62,7 @@ SELECT TOP (1)
 	[t].[Age],
 	[t].[Gender]
 FROM
-	[SkipOnInsertEnum] [t]
+	[PR_1598_Insert_Enum_Table] [t]
 WHERE
 	[t].[Id] = 2
 

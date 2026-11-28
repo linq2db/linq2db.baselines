@@ -74,7 +74,6 @@ SELECT
 	t7.Item5,
 	t7.Item6,
 	t7.Item7,
-	t7.Item1_2,
 	t7.Item1_1,
 	t7.Item2
 FROM
@@ -87,8 +86,7 @@ FROM
 			t4.Detail_Id as Item4,
 			t4.Detail_CompanyId as Item5,
 			t4.Detail_Name as Item6,
-			t4.Detail_IsActive as Item7,
-			toString(NULL) as Item1_2
+			t4.Detail_IsActive as Item7
 		FROM
 			CTE_2 t4
 		UNION ALL
@@ -100,8 +98,7 @@ FROM
 			t5.Detail_Id as Item4,
 			t5.Detail_CompanyId as Item5,
 			t5.Detail_Name as Item6,
-			t5.Detail_IsActive as Item7,
-			toString(NULL) as Item1_2
+			t5.Detail_IsActive as Item7
 		FROM
 			CTE_3 t5
 		UNION ALL
@@ -111,10 +108,9 @@ FROM
 			t6.Id as Item1_1,
 			t6.Label as Item2,
 			t6.Id as Item4,
-			t6.Id as Item5,
+			toInt32(NULL) as Item5,
 			t6.Label as Item6,
-			t6.field_1 as Item7,
-			t6.Label as Item1_2
+			t6.field_1 as Item7
 		FROM
 			CTE_1 t6
 	) t7

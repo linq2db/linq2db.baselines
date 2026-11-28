@@ -1,5 +1,5 @@
 ﻿-- SqlServer.2008
-INSERT INTO [ShiftedDateRow]
+INSERT INTO [Issue5975Row]
 (
 	[Id],
 	[Plain],
@@ -18,5 +18,5 @@ SELECT TOP (2)
 	[t1].[Plain],
 	[t1].[Date]
 FROM
-	[ShiftedDateRow] [t1]
+	[Issue5975Row] [t1]
 

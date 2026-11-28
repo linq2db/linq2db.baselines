@@ -71,7 +71,7 @@ FROM
 			t4.field as Item3,
 			t4.Id as Item2,
 			t4.Id as Item4,
-			t4.Id as Item5,
+			toInt32(NULL) as Item5,
 			t4.Label as Item6,
 			toBool(NULL) as Item7,
 			t4.Name as Item1_1

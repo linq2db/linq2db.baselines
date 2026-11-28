@@ -6,7 +6,7 @@ SET     @Name = 'John'
 DECLARE @Age Integer(4) -- Int32
 SET     @Age = 15
 
-INSERT INTO "SkipCustomValuesTable"
+INSERT INTO "PR_1598_SkipCustom_Table"
 (
 	"Id",
 	"Name",
@@ -25,7 +25,7 @@ SELECT
 	"t"."Name",
 	"t"."Age"
 FROM
-	"SkipCustomValuesTable" "t"
+	"PR_1598_SkipCustom_Table" "t"
 WHERE
 	"t"."Id" = 1
 FETCH NEXT 1 ROWS ONLY
@@ -36,7 +36,7 @@ SET     @Id = 2
 DECLARE @Name VarChar(3) -- String
 SET     @Name = 'Max'
 
-INSERT INTO "SkipCustomValuesTable"
+INSERT INTO "PR_1598_SkipCustom_Table"
 (
 	"Id",
 	"Name"
@@ -53,7 +53,7 @@ SELECT
 	"t"."Name",
 	"t"."Age"
 FROM
-	"SkipCustomValuesTable" "t"
+	"PR_1598_SkipCustom_Table" "t"
 WHERE
 	"t"."Id" = 2
 FETCH NEXT 1 ROWS ONLY

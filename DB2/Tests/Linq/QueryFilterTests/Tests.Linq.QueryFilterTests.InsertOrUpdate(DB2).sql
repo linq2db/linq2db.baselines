@@ -1,5 +1,5 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-MERGE INTO "SoftDeletedPictureTable" "t1"
+MERGE INTO "Issue5289Table" "t1"
 USING (SELECT 1 AS "Id" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
 (
 	"t1"."Id" = "s"."Id"
@@ -28,13 +28,13 @@ SELECT
 	"r"."PictureId",
 	"r"."Deleted"
 FROM
-	"SoftDeletedPictureTable" "r"
+	"Issue5289Table" "r"
 WHERE
 	NOT "r"."Deleted" AND "r"."Id" = 1
 FETCH NEXT 2 ROWS ONLY
 
 -- DB2 DB2.LUW DB2LUW
-MERGE INTO "SoftDeletedPictureTable" "t1"
+MERGE INTO "Issue5289Table" "t1"
 USING (SELECT 1 AS "Id" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
 (
 	"t1"."Id" = "s"."Id"
@@ -63,7 +63,7 @@ SELECT
 	"r"."PictureId",
 	"r"."Deleted"
 FROM
-	"SoftDeletedPictureTable" "r"
+	"Issue5289Table" "r"
 WHERE
 	NOT "r"."Deleted" AND "r"."Id" = 1
 FETCH NEXT 2 ROWS ONLY

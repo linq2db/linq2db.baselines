@@ -87,7 +87,7 @@ FROM
 			t4.field as Item3,
 			t4.Id as Item2,
 			t4.Id as Item4,
-			t4.Id as Item5,
+			CAST(NULL AS INTEGER) as Item5,
 			t4.Label as Item6,
 			CAST(NULL AS BOOLEAN) as Item7,
 			t4.Name as Item1_1

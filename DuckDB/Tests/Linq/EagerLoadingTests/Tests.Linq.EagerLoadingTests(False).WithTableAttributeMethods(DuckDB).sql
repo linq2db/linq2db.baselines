@@ -2,7 +2,7 @@
 DECLARE $Id INTEGER -- Int32
 SET     $Id = 10
 
-INSERT INTO LoadAsTableUser
+INSERT INTO UserIssue3128
 (
 	Id
 )
@@ -17,7 +17,7 @@ SET     $UserId = 10
 DECLARE $Age INTEGER -- Int32
 SET     $Age = 18
 
-INSERT INTO LoadAsTableUserDetails
+INSERT INTO UserDetailsIssue3128
 (
 	UserId,
 	Age
@@ -42,6 +42,6 @@ WHERE
 		SELECT
 			COUNT(*)
 		FROM
-			LoadAsTableUser t1
+			UserIssue3128 t1
 	) > 0
 

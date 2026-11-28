@@ -75,7 +75,7 @@ FROM
 			t3.field as Item3,
 			t3.Key_1 as Item2,
 			t3.Detail_Id as Item4,
-			t3.Detail_CompanyId as Item5,
+			NVL(t3.Detail_CompanyId, NULL) as Item5,
 			t3.Detail_Name as Item6,
 			NVL(t3.Detail_IsActive, NULL) as Item7,
 			NULL::NVarChar(255) as Item1_1
@@ -87,7 +87,7 @@ FROM
 			t4.field as Item3,
 			t4.Id as Item2,
 			t4.Id as Item4,
-			t4.Id as Item5,
+			NULL::Int as Item5,
 			t4.Label as Item6,
 			NULL::BOOLEAN as Item7,
 			t4.Name as Item1_1

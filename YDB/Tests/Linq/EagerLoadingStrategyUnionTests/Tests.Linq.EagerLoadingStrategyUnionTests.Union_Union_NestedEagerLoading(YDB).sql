@@ -91,7 +91,7 @@ FROM
 			t6.Id as Item2,
 			t6.Id as Item4,
 			t6.Label as Item5,
-			t6.Id as Item6,
+			CAST(NULL AS Int32) as Item6,
 			CAST(NULL AS Int32) as Item7
 		FROM
 			$CTE_1 t6

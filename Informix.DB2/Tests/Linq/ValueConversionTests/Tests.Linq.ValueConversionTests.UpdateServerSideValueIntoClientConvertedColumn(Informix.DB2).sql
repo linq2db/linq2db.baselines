@@ -1,6 +1,6 @@
 ﻿-- Informix.DB2 Informix
 UPDATE
-	ShiftedDateRow t1
+	Issue5975Row t1
 SET
 	"Date" = CASE
 		WHEN t1."Date" IS NOT NULL THEN TO_DATE('2026-06-06 02:01:01', '%Y-%m-%d %H:%M:%S')
@@ -13,7 +13,7 @@ SELECT
 	t1.Plain,
 	t1."Date"
 FROM
-	ShiftedDateRow t1
+	Issue5975Row t1
 ORDER BY
 	t1.Id
 

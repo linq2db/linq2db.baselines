@@ -6,7 +6,7 @@ SET     $Name = 'Smith'
 DECLARE $Age INTEGER -- Int32
 SET     $Age = 2
 
-INSERT INTO SkipOnUpdateTable
+INSERT INTO PR_1598_Update_Table
 (
 	Id,
 	Name,
@@ -25,7 +25,7 @@ SELECT
 	t.Name,
 	t.Age
 FROM
-	SkipOnUpdateTable t
+	PR_1598_Update_Table t
 WHERE
 	t.Id = 1
 LIMIT 1
@@ -39,12 +39,12 @@ DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 
 UPDATE
-	SkipOnUpdateTable
+	PR_1598_Update_Table
 SET
 	Name = $Name,
 	Age = $Age
 WHERE
-	SkipOnUpdateTable.Id = $Id
+	PR_1598_Update_Table.Id = $Id
 
 -- DuckDB
 SELECT
@@ -52,7 +52,7 @@ SELECT
 	t.Name,
 	t.Age
 FROM
-	SkipOnUpdateTable t
+	PR_1598_Update_Table t
 WHERE
 	t.Id = 1
 LIMIT 1
@@ -64,11 +64,11 @@ DECLARE $Id INTEGER -- Int32
 SET     $Id = 1
 
 UPDATE
-	SkipOnUpdateTable
+	PR_1598_Update_Table
 SET
 	Name = $Name
 WHERE
-	SkipOnUpdateTable.Id = $Id
+	PR_1598_Update_Table.Id = $Id
 
 -- DuckDB
 SELECT
@@ -76,7 +76,7 @@ SELECT
 	t.Name,
 	t.Age
 FROM
-	SkipOnUpdateTable t
+	PR_1598_Update_Table t
 WHERE
 	t.Id = 1
 LIMIT 1

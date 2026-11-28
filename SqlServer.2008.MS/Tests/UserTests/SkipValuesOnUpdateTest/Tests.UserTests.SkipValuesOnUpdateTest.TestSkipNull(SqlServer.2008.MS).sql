@@ -6,7 +6,7 @@ SET     @Name = N'Tommy'
 DECLARE @Age Int -- Int32
 SET     @Age = NULL
 
-INSERT INTO [SkipOnUpdateNulls]
+INSERT INTO [PR_1598_Update_Null_Table]
 (
 	[Id],
 	[Name],
@@ -25,7 +25,7 @@ SELECT TOP (1)
 	[t].[Name],
 	[t].[Age]
 FROM
-	[SkipOnUpdateNulls] [t]
+	[PR_1598_Update_Null_Table] [t]
 WHERE
 	[t].[Id] = 1
 
@@ -38,12 +38,12 @@ DECLARE @Id Int -- Int32
 SET     @Id = 1
 
 UPDATE
-	[SkipOnUpdateNulls]
+	[PR_1598_Update_Null_Table]
 SET
 	[Name] = @Name,
 	[Age] = @Age
 WHERE
-	[SkipOnUpdateNulls].[Id] = @Id
+	[PR_1598_Update_Null_Table].[Id] = @Id
 
 -- SqlServer.2008.MS SqlServer.2008
 SELECT TOP (1)
@@ -51,7 +51,7 @@ SELECT TOP (1)
 	[t].[Name],
 	[t].[Age]
 FROM
-	[SkipOnUpdateNulls] [t]
+	[PR_1598_Update_Null_Table] [t]
 WHERE
 	[t].[Id] = 1
 
@@ -62,11 +62,11 @@ DECLARE @Id Int -- Int32
 SET     @Id = 1
 
 UPDATE
-	[SkipOnUpdateNulls]
+	[PR_1598_Update_Null_Table]
 SET
 	[Name] = @Name
 WHERE
-	[SkipOnUpdateNulls].[Id] = @Id
+	[PR_1598_Update_Null_Table].[Id] = @Id
 
 -- SqlServer.2008.MS SqlServer.2008
 SELECT TOP (1)
@@ -74,7 +74,7 @@ SELECT TOP (1)
 	[t].[Name],
 	[t].[Age]
 FROM
-	[SkipOnUpdateNulls] [t]
+	[PR_1598_Update_Null_Table] [t]
 WHERE
 	[t].[Id] = 1
 
