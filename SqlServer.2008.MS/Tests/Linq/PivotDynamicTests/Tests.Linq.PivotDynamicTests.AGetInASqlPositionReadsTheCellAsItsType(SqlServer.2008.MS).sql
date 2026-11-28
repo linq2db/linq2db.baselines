@@ -24,6 +24,17 @@ DECLARE @castOfA Int -- Int32
 SET     @castOfA = 20
 
 SELECT
+	[x].[Category]
+FROM
+	[CategorySales] [x]
+WHERE
+	[x].[Year] = 2010 AND CAST(Floor([x].[Amount]) AS Int) = @castOfA
+
+-- SqlServer.2008.MS SqlServer.2008
+DECLARE @castOfA Int -- Int32
+SET     @castOfA = 20
+
+SELECT
 	[r].[Category]
 FROM
 	[CategorySales] [r]
