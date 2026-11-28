@@ -12,3 +12,25 @@ FROM
 WHERE
 	"longLongLongLongVeryLongVeryVeryLongVeryVeryLongLongAliasNa_2"."ParentID" = @parentId
 
+-- Firebird.4 Firebird4
+SELECT
+	"t1"."ParentID",
+	"t1"."Value1"
+FROM
+	"Parent" "t1"
+
+-- Firebird.4 Firebird4
+SELECT
+	"t1"."ParentID",
+	"t1"."ChildID"
+FROM
+	"Child" "t1"
+
+-- Firebird.4 Firebird4
+SELECT
+	"t1"."ParentID",
+	"t1"."ChildID",
+	"t1"."GrandChildID"
+FROM
+	"GrandChild" "t1"
+

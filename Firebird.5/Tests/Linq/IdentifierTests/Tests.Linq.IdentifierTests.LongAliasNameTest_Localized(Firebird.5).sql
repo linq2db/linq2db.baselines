@@ -11,3 +11,17 @@ FROM
 WHERE
 	"long親Long子Long孫LongVeryLongVeryVeryLongVeryVeryLongLongAlia_1"."ParentID" = @parentId
 
+-- Firebird.5 Firebird4
+SELECT
+	"t1"."ParentID",
+	"t1"."Value1"
+FROM
+	"Parent" "t1"
+
+-- Firebird.5 Firebird4
+SELECT
+	"t1"."ParentID",
+	"t1"."ChildID"
+FROM
+	"Child" "t1"
+

@@ -11,3 +11,17 @@ FROM
 WHERE
 	"longLongLongLongVeryLongVer_1"."ParentID" = @parentId
 
+-- Firebird.2.5 Firebird
+SELECT
+	"t1"."ParentID",
+	"t1"."Value1"
+FROM
+	"Parent" "t1"
+
+-- Firebird.2.5 Firebird
+SELECT
+	"t1"."ParentID",
+	"t1"."ChildID"
+FROM
+	"Child" "t1"
+
