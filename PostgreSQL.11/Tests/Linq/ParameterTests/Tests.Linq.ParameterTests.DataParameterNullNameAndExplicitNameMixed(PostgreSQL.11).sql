@@ -1,8 +1,8 @@
 ﻿-- PostgreSQL.11 PostgreSQL
 DECLARE @p1 Varchar(3) -- String
 SET     @p1 = 'ONE'
-DECLARE @p2 Varchar(3) -- String
-SET     @p2 = 'two'
+DECLARE @p Varchar(3) -- String
+SET     @p = 'two'
 
 SELECT
 	x.id,
@@ -10,7 +10,7 @@ SELECT
 FROM
 	"NamedParameterItem" x
 WHERE
-	LOWER(value) = LOWER(:p1) OR LOWER(value) = LOWER(:p2)
+	LOWER(value) = LOWER(:p1) OR LOWER(value) = LOWER(:p)
 ORDER BY
 	x.id
 
