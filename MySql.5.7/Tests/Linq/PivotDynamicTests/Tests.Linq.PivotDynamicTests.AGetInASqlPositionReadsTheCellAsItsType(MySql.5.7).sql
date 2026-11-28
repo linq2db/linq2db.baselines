@@ -20,6 +20,17 @@ DECLARE @castOfA Int32
 SET     @castOfA = 20
 
 SELECT
+	`x`.`Category`
+FROM
+	`CategorySales` `x`
+WHERE
+	`x`.`Year` = 2010 AND CAST(Floor(`x`.`Amount`) AS SIGNED) = @castOfA
+
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57
+DECLARE @castOfA Int32
+SET     @castOfA = 20
+
+SELECT
 	`r`.`Category`
 FROM
 	`CategorySales` `r`
