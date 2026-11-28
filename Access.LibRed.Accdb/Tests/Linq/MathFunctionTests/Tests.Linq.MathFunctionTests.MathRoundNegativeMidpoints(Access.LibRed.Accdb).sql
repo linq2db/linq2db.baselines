@@ -1,0 +1,22 @@
+﻿-- Access.LibRed.Accdb Access.LibRed AccessLibRed
+SELECT
+	[r].[Id],
+	ROUND([r].[D]),
+	ROUND([r].[D]),
+	Sgn([r].[D]) * (Int(Abs([r].[D])) + Int((Abs([r].[D]) - Int(Abs([r].[D]))) * 2)),
+	ROUND([r].[F]),
+	ROUND([r].[F]),
+	Sgn([r].[F]) * (Int(Abs([r].[F])) + Int((Abs([r].[F]) - Int(Abs([r].[F]))) * 2))
+FROM
+	[MidpointValues] [r]
+ORDER BY
+	[r].[Id]
+
+-- Access.LibRed.Accdb Access.LibRed AccessLibRed
+SELECT
+	[t1].[Id],
+	[t1].[D],
+	[t1].[F]
+FROM
+	[MidpointValues] [t1]
+
