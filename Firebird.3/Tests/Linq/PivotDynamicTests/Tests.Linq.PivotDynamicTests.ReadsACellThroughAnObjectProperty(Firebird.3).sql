@@ -1,5 +1,6 @@
 ﻿-- Firebird.3 Firebird3
 SELECT
+	"r"."Category",
 	SUM(CASE
 		WHEN "r"."Year" = 2010 THEN "r"."Amount"
 		ELSE NULL
@@ -11,6 +12,7 @@ GROUP BY
 
 -- Firebird.3 Firebird3
 SELECT
+	"r"."Category",
 	SUM(CASE
 		WHEN "r"."Year" = 2010 THEN "r"."Amount"
 		ELSE NULL
@@ -22,6 +24,7 @@ GROUP BY
 
 -- Firebird.3 Firebird3
 SELECT
+	"r"."Category",
 	CAST(Floor(SUM(CASE
 		WHEN "r"."Year" = 2010 THEN "r"."Amount"
 		ELSE NULL

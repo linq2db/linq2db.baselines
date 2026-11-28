@@ -20,6 +20,17 @@ DECLARE @castOfA Integer -- Int32
 SET     @castOfA = 20
 
 SELECT
+	"x"."Category"
+FROM
+	"CategorySales" "x"
+WHERE
+	"x"."Year" = 2010 AND CAST(Floor("x"."Amount") AS Int) = @castOfA
+
+-- Firebird.3 Firebird3
+DECLARE @castOfA Integer -- Int32
+SET     @castOfA = 20
+
+SELECT
 	"r"."Category"
 FROM
 	"CategorySales" "r"
