@@ -1,0 +1,64 @@
+﻿SELECT [p].[ProductID]
+FROM [Products] AS [p]
+ORDER BY [p].[ProductID]
+
+
+-- SqlServer.2025
+SELECT
+	[p].[ProductID]
+FROM
+	[Products] [p]
+
+
+
+Parameters:
+@__limit_0='?' (DbType = Int32)
+
+SELECT [p].[ProductID]
+FROM [Products] AS [p]
+WHERE [p].[ProductID] <= @__limit_0
+ORDER BY [p].[ProductID]
+
+
+-- SqlServer.2025
+SELECT
+	[id].[ProductID]
+FROM
+	[Products] [id]
+WHERE
+	[id].[ProductID] <= 2
+
+
+
+SELECT [p].[ProductID]
+FROM [Products] AS [p]
+ORDER BY [p].[ProductID]
+
+
+-- SqlServer.2025
+SELECT
+	[p].[ProductID]
+FROM
+	[Products] [p]
+
+
+
+Parameters:
+@__limit_0='?' (DbType = Int32)
+
+SELECT [p].[ProductID]
+FROM [Products] AS [p]
+WHERE [p].[ProductID] <= @__limit_0
+ORDER BY [p].[ProductID]
+
+
+-- SqlServer.2025
+SELECT
+	[id].[ProductID]
+FROM
+	[Products] [id]
+WHERE
+	[id].[ProductID] <= 2
+
+
+

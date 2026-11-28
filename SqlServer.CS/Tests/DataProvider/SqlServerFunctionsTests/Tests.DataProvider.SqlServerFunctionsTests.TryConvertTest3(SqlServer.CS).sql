@@ -1,4 +1,4 @@
 ﻿-- SqlServer.CS SqlServer.2025
 SELECT
-	TRY_CONVERT(varchar(4), 123)
+	TRY_CONVERT(nvarchar(10), 123)
 
