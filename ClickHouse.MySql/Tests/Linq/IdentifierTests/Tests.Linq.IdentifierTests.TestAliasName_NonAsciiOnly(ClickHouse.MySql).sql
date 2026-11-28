@@ -8,3 +8,17 @@ FROM
 WHERE
 	`親`.ParentID = 1
 
+-- ClickHouse.MySql ClickHouse
+SELECT
+	t1.ParentID,
+	t1.Value1
+FROM
+	Parent t1
+
+-- ClickHouse.MySql ClickHouse
+SELECT
+	t1.ParentID,
+	t1.ChildID
+FROM
+	Child t1
+
