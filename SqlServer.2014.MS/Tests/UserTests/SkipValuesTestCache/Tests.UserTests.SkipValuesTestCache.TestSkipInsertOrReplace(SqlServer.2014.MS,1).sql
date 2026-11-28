@@ -4,7 +4,7 @@ SET     @Id = 1
 DECLARE @Name NVarChar(4000) -- String
 SET     @Name = N'John'
 
-MERGE INTO [SkipOnInsertCache] [t1]
+MERGE INTO [PR_1598_Insert_Table_Cache] [t1]
 USING (SELECT @Id AS [Id]) [s] ON
 (
 	[t1].[Id] = [s].[Id]
@@ -31,7 +31,7 @@ SELECT TOP (1)
 	[t].[Name],
 	[t].[Age]
 FROM
-	[SkipOnInsertCache] [t]
+	[PR_1598_Insert_Table_Cache] [t]
 WHERE
 	[t].[Id] = 1
 
@@ -41,7 +41,7 @@ SET     @Id = 1
 DECLARE @Name NVarChar(4000) -- String
 SET     @Name = N'John'
 
-MERGE INTO [SkipOnInsertCache] [t1]
+MERGE INTO [PR_1598_Insert_Table_Cache] [t1]
 USING (SELECT @Id AS [Id]) [s] ON
 (
 	[t1].[Id] = [s].[Id]
@@ -68,7 +68,7 @@ SELECT TOP (1)
 	[t].[Name],
 	[t].[Age]
 FROM
-	[SkipOnInsertCache] [t]
+	[PR_1598_Insert_Table_Cache] [t]
 WHERE
 	[t].[Id] = 1
 
