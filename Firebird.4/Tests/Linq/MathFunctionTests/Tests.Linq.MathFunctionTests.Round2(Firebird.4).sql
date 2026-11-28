@@ -5,8 +5,8 @@ FROM
 	(
 		SELECT
 			CASE
-				WHEN CAST("p"."MoneyValue" AS DOUBLE PRECISION) - FLOOR(CAST("p"."MoneyValue" AS DOUBLE PRECISION)) = 0.5 AND Mod(FLOOR(CAST("p"."MoneyValue" AS DOUBLE PRECISION)), 2) = 0
-					THEN FLOOR(CAST("p"."MoneyValue" AS DOUBLE PRECISION))
+				WHEN CAST("p"."MoneyValue" AS DOUBLE PRECISION) - FLOOR(CAST("p"."MoneyValue" AS DOUBLE PRECISION)) = 0.5
+					THEN ROUND(CAST("p"."MoneyValue" AS DOUBLE PRECISION) * 0.5, 0) * 2
 				ELSE ROUND(CAST("p"."MoneyValue" AS DOUBLE PRECISION), 0)
 			END as "c1"
 		FROM
