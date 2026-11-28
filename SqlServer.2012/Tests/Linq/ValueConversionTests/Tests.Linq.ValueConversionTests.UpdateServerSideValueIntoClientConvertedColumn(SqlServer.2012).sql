@@ -3,9 +3,9 @@ DECLARE @test DateTime2
 SET     @test = DATETIME2FROMPARTS(2026, 6, 6, 2, 1, 1, 0, 7)
 
 UPDATE
-	[ShiftedDateRow]
+	[Issue5975Row]
 SET
-	[Date] = IIF([ShiftedDateRow].[Date] IS NOT NULL, @test, DateAdd(day, 1, [ShiftedDateRow].[Plain]))
+	[Date] = IIF([Issue5975Row].[Date] IS NOT NULL, @test, DateAdd(day, 1, [Issue5975Row].[Plain]))
 
 -- SqlServer.2012
 SELECT
@@ -13,7 +13,7 @@ SELECT
 	[t1].[Plain],
 	[t1].[Date]
 FROM
-	[ShiftedDateRow] [t1]
+	[Issue5975Row] [t1]
 ORDER BY
 	[t1].[Id]
 

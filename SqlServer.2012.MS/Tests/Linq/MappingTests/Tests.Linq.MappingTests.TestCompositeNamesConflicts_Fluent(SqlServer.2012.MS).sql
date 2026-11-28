@@ -6,7 +6,7 @@ SET     @Customer_Name = N'name1'
 DECLARE @CustomerOther_Name NVarChar(4000) -- String
 SET     @CustomerOther_Name = N'name2'
 
-INSERT INTO [CompositeNamesFluentTable]
+INSERT INTO [Issue5266TableFluent]
 (
 	[Id],
 	[child1_name],
@@ -25,5 +25,5 @@ SELECT TOP (2)
 	[t1].[child1_name],
 	[t1].[child2_name]
 FROM
-	[CompositeNamesFluentTable] [t1]
+	[Issue5266TableFluent] [t1]
 
