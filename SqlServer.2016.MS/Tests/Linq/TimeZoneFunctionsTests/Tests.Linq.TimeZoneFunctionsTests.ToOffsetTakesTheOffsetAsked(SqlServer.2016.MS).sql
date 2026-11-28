@@ -1,0 +1,6 @@
+﻿-- SqlServer.2016.MS SqlServer.2016
+SELECT TOP (2)
+	SwitchOffset([r].[Dto], N'-01:30')
+FROM
+	[ZonedRow] [r]
+

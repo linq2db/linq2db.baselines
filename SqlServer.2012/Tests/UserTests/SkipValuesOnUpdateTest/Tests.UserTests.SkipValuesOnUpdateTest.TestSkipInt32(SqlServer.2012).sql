@@ -6,7 +6,7 @@ SET     @Name = N'Smith'
 DECLARE @Age Int -- Int32
 SET     @Age = 2
 
-INSERT INTO [SkipOnUpdateTable]
+INSERT INTO [PR_1598_Update_Table]
 (
 	[Id],
 	[Name],
@@ -25,7 +25,7 @@ SELECT TOP (1)
 	[t].[Name],
 	[t].[Age]
 FROM
-	[SkipOnUpdateTable] [t]
+	[PR_1598_Update_Table] [t]
 WHERE
 	[t].[Id] = 1
 
@@ -38,12 +38,12 @@ DECLARE @Id Int -- Int32
 SET     @Id = 1
 
 UPDATE
-	[SkipOnUpdateTable]
+	[PR_1598_Update_Table]
 SET
 	[Name] = @Name,
 	[Age] = @Age
 WHERE
-	[SkipOnUpdateTable].[Id] = @Id
+	[PR_1598_Update_Table].[Id] = @Id
 
 -- SqlServer.2012
 SELECT TOP (1)
@@ -51,7 +51,7 @@ SELECT TOP (1)
 	[t].[Name],
 	[t].[Age]
 FROM
-	[SkipOnUpdateTable] [t]
+	[PR_1598_Update_Table] [t]
 WHERE
 	[t].[Id] = 1
 
@@ -62,11 +62,11 @@ DECLARE @Id Int -- Int32
 SET     @Id = 1
 
 UPDATE
-	[SkipOnUpdateTable]
+	[PR_1598_Update_Table]
 SET
 	[Name] = @Name
 WHERE
-	[SkipOnUpdateTable].[Id] = @Id
+	[PR_1598_Update_Table].[Id] = @Id
 
 -- SqlServer.2012
 SELECT TOP (1)
@@ -74,7 +74,7 @@ SELECT TOP (1)
 	[t].[Name],
 	[t].[Age]
 FROM
-	[SkipOnUpdateTable] [t]
+	[PR_1598_Update_Table] [t]
 WHERE
 	[t].[Id] = 1
 

@@ -1,0 +1,29 @@
+﻿-- DuckDB
+SELECT
+	r.Dto
+FROM
+	ZonedRow r
+LIMIT 2
+
+-- DuckDB
+DECLARE $date TIMESTAMP -- DateTime2
+SET     $date = '2020-12-31 00:00:00.000000'::TIMESTAMP
+
+SELECT
+	COUNT(*)
+FROM
+	ZonedRow r
+WHERE
+	CAST(CAST((r.Dto AT TIME ZONE 'UTC') AS DATE) AS TIMESTAMP) = $date
+
+-- DuckDB
+DECLARE $later TIMESTAMP -- DateTime2
+SET     $later = '2020-12-31 01:00:00.000000'::TIMESTAMP
+
+SELECT
+	COUNT(*)
+FROM
+	ZonedRow r
+WHERE
+	CAST(CAST((r.Dto AT TIME ZONE 'UTC') AS DATE) AS TIMESTAMP) = $later
+

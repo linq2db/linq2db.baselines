@@ -16,7 +16,7 @@ FROM
 
 -- DuckDB
 SELECT
-	EXTRACT(year FROM Coalesce(j.Moment, '0001-01-01 00:00:00+00'::TIMESTAMPTZ))
+	EXTRACT(year FROM (Coalesce(j.Moment, '0001-01-01 00:00:00+00'::TIMESTAMPTZ) AT TIME ZONE 'UTC'))
 FROM
 	MissedMomentEntity e
 		LEFT JOIN MissedMomentEntity j ON j.Id = e.Id + 1000

@@ -1,6 +1,6 @@
 ﻿-- PostgreSQL.13 PostgreSQL12
 SELECT
-	Date_Trunc('day', (t."TransactionDate" + Interval '1 Year') AT TIME ZONE 'UTC')::Date
+	Date_Trunc('day', (t."TransactionDate" AT TIME ZONE 'UTC') + Interval '1 Year')
 FROM
 	"Transactions" t
 

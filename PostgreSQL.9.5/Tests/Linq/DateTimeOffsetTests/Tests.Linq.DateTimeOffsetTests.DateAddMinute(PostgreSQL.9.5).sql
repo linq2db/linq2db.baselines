@@ -1,6 +1,6 @@
 ﻿-- PostgreSQL.9.5 PostgreSQL
 SELECT
-	Floor(Extract(minute From (t."TransactionDate" + 5 * Interval '1 Minute')))::Int
+	Floor(Extract(minute From ((t."TransactionDate" AT TIME ZONE 'UTC') + 5 * Interval '1 Minute')))::Int
 FROM
 	"Transactions" t
 
