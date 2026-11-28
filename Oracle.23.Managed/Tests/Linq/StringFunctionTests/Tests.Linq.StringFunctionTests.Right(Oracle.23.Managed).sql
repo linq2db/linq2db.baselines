@@ -8,6 +8,9 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	Substr(p."FirstName", Length(p."FirstName") - 2, 3) = 'ohn' AND
+	Substr(p."FirstName", CASE
+		WHEN Length(p."FirstName") > 2 THEN Length(p."FirstName") - 2
+		ELSE 1
+	END, 3) = 'ohn' AND
 	p."PersonID" = 1
 
