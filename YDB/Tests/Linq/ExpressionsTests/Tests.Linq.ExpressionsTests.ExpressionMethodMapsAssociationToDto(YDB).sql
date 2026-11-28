@@ -1,6 +1,7 @@
 ﻿-- YDB Ydb
 SELECT
 	t1.PersonID as PersonID,
+	t1.FirstName as FirstName,
 	a_Doctor.PersonID as PersonID_1,
 	a_Doctor.Taxonomy as Taxonomy
 FROM
