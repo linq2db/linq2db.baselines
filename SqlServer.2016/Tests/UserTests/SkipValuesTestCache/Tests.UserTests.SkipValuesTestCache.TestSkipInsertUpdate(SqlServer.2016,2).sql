@@ -6,7 +6,7 @@ SET     @Name = N'John'
 DECLARE @Age Int -- Int32
 SET     @Age = 2
 
-INSERT INTO [SkipOnInsertCache]
+INSERT INTO [PR_1598_Insert_Table_Cache]
 (
 	[Id],
 	[Name],
@@ -25,7 +25,7 @@ SELECT TOP (1)
 	[t].[Name],
 	[t].[Age]
 FROM
-	[SkipOnInsertCache] [t]
+	[PR_1598_Insert_Table_Cache] [t]
 WHERE
 	[t].[Id] = 1
 
@@ -38,12 +38,12 @@ DECLARE @Id Int -- Int32
 SET     @Id = 1
 
 UPDATE
-	[SkipOnInsertCache]
+	[PR_1598_Insert_Table_Cache]
 SET
 	[Name] = @Name,
 	[Age] = @Age
 WHERE
-	[SkipOnInsertCache].[Id] = @Id
+	[PR_1598_Insert_Table_Cache].[Id] = @Id
 
 -- SqlServer.2016
 SELECT TOP (1)
@@ -51,7 +51,7 @@ SELECT TOP (1)
 	[t].[Name],
 	[t].[Age]
 FROM
-	[SkipOnInsertCache] [t]
+	[PR_1598_Insert_Table_Cache] [t]
 WHERE
 	[t].[Id] = 1
 
