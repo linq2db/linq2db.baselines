@@ -11,3 +11,17 @@ FROM
 WHERE
 	[long親Long子Long孫LongVeryLongVeryVeryLongVeryVeryLongLongAliasNameTestParent].[ParentID] = @parentId
 
+-- SqlServer.2014.MS SqlServer.2014
+SELECT
+	[t1].[ParentID],
+	[t1].[Value1]
+FROM
+	[Parent] [t1]
+
+-- SqlServer.2014.MS SqlServer.2014
+SELECT
+	[t1].[ParentID],
+	[t1].[ChildID]
+FROM
+	[Child] [t1]
+
