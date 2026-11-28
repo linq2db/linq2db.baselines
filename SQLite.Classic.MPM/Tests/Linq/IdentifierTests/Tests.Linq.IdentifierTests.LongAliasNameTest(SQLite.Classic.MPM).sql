@@ -11,3 +11,17 @@ FROM
 WHERE
 	[longLongLongLongVeryLongVeryVeryLongVeryVeryLongLongAliasNameTestParent].[ParentID] = @parentId
 
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+SELECT
+	[t1].[ParentID],
+	[t1].[Value1]
+FROM
+	[Parent] [t1]
+
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+SELECT
+	[t1].[ParentID],
+	[t1].[ChildID]
+FROM
+	[Child] [t1]
+
