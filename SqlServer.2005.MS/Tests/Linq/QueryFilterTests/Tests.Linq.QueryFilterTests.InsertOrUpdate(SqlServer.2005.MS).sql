@@ -1,16 +1,16 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
 UPDATE
-	[SoftDeletedPictureTable]
+	[Issue5289Table]
 SET
 	[PictureId] = 3
 FROM
-	[SoftDeletedPictureTable] [t1]
+	[Issue5289Table] [t1]
 WHERE
 	[t1].[Id] = 1
 
 IF @@ROWCOUNT = 0
 BEGIN
-	INSERT INTO [SoftDeletedPictureTable]
+	INSERT INTO [Issue5289Table]
 	(
 		[Id],
 		[PictureId],
@@ -30,23 +30,23 @@ SELECT TOP (2)
 	[r].[PictureId],
 	[r].[Deleted]
 FROM
-	[SoftDeletedPictureTable] [r]
+	[Issue5289Table] [r]
 WHERE
 	[r].[Deleted] = 0 AND [r].[Id] = 1
 
 -- SqlServer.2005.MS SqlServer.2005
 UPDATE
-	[SoftDeletedPictureTable]
+	[Issue5289Table]
 SET
 	[PictureId] = 3
 FROM
-	[SoftDeletedPictureTable] [t1]
+	[Issue5289Table] [t1]
 WHERE
 	[t1].[Id] = 1
 
 IF @@ROWCOUNT = 0
 BEGIN
-	INSERT INTO [SoftDeletedPictureTable]
+	INSERT INTO [Issue5289Table]
 	(
 		[Id],
 		[PictureId],
@@ -66,7 +66,7 @@ SELECT TOP (2)
 	[r].[PictureId],
 	[r].[Deleted]
 FROM
-	[SoftDeletedPictureTable] [r]
+	[Issue5289Table] [r]
 WHERE
 	[r].[Deleted] = 0 AND [r].[Id] = 1
 
