@@ -1,0 +1,34 @@
+﻿-- PostgreSQL.18 PostgreSQL12
+-- Command 1
+SELECT
+	s."Id"
+FROM
+	"InsertOutputQuerySource" s
+
+-- Command 2
+WITH "CTE_1" ("Id")
+AS
+(
+	INSERT INTO "InsertOutputQueryEvent"
+	(
+		"PersistenceId",
+		"SequenceNumber"
+	)
+	SELECT
+		t1."PersistenceId",
+		t1."SequenceNumber"
+	FROM
+		"InsertOutputQueryInput" t1
+	RETURNING
+		NEW."Id"
+)
+SELECT
+	e."Id"
+FROM
+	"CTE_1" e
+-- PostgreSQL.18 PostgreSQL12
+SELECT
+	COUNT(*)
+FROM
+	"InsertOutputQueryEvent" t1
+
