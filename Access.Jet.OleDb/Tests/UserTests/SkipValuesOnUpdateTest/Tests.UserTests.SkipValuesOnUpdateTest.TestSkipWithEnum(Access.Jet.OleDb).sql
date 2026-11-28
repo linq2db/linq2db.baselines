@@ -8,7 +8,7 @@ SET     @Age = 20
 DECLARE @Gender VarWChar(6) -- String
 SET     @Gender = 'Female'
 
-INSERT INTO [PR_1598_Update_Enum_Table]
+INSERT INTO [SkipOnUpdateEnum]
 (
 	[Id],
 	[Name],
@@ -30,7 +30,7 @@ SELECT TOP 1
 	[t].[Age],
 	[t].[Gender]
 FROM
-	[PR_1598_Update_Enum_Table] [t]
+	[SkipOnUpdateEnum] [t]
 WHERE
 	[t].[Id] = 1
 
@@ -45,7 +45,7 @@ DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
 UPDATE
-	[PR_1598_Update_Enum_Table] [t1]
+	[SkipOnUpdateEnum] [t1]
 SET
 	[t1].[Name] = @Name,
 	[t1].[Age] = @Age,
@@ -60,7 +60,7 @@ SELECT TOP 1
 	[t].[Age],
 	[t].[Gender]
 FROM
-	[PR_1598_Update_Enum_Table] [t]
+	[SkipOnUpdateEnum] [t]
 WHERE
 	[t].[Id] = 1
 
@@ -73,7 +73,7 @@ DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
 UPDATE
-	[PR_1598_Update_Enum_Table] [t1]
+	[SkipOnUpdateEnum] [t1]
 SET
 	[t1].[Name] = @Name,
 	[t1].[Age] = @Age
@@ -87,7 +87,7 @@ SELECT TOP 1
 	[t].[Age],
 	[t].[Gender]
 FROM
-	[PR_1598_Update_Enum_Table] [t]
+	[SkipOnUpdateEnum] [t]
 WHERE
 	[t].[Id] = 1
 
