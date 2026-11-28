@@ -7,7 +7,8 @@ SELECT
 	SUM(CASE
 		WHEN r."Year" = 2010 THEN r."Amount"
 		ELSE NULL
-	END)
+	END),
+	r."Category"
 FROM
 	"CategorySales" r
 GROUP BY
